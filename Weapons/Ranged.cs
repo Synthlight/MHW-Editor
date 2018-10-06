@@ -1,4 +1,8 @@
-﻿namespace MHW_Weapon_Editor.Weapons {
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using JetBrains.Annotations;
+
+namespace MHW_Weapon_Editor.Weapons {
     public class Ranged : IWeapon {
         public const int WEAPON_SIZE = 20;
         public const int WEAPON_OFFSET_INITIAL = 29;
@@ -18,7 +22,7 @@
         public byte HiddenElemDmg2 { get; set; }
         public byte ElderSeal { get; set; }
         public byte AmmoType { get; set; }
-        private byte Unknown { get; set; }
+        public byte Unknown { get; set; }
         public byte Deviation { get; set; }
         public byte Slots { get; set; }
         public byte Slot1Size { get; set; }
@@ -100,6 +104,13 @@
             public const int SLOT1_SIZE = 17;
             public const int SLOT2_SIZE = 18;
             public const int SLOT3_SIZE = 19;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [NotifyPropertyChangedInvocator]
+        public void OnPropertyChanged([CallerMemberName] string propertyName = null) {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

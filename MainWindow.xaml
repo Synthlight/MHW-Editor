@@ -13,22 +13,32 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0"
-                    Orientation="Horizontal">
-            <Button Name="btn_open"
-                    Margin="0,0,0,0"
-                    HorizontalAlignment="Left"
-                    Content="Open"/>
-            <Button Name="btn_slot_hack"
-                    Margin="8,0,0,0"
-                    HorizontalAlignment="Left"
-                    Content="Set Slots/Lvl to 3"/>
-            <Button Name="btn_save"
-                    Margin="8,0,0,0"
-                    HorizontalAlignment="Left"
-                    Content="Save"/>
-        </StackPanel>
-        <DataGrid Name="dg_weapons"
+        <DockPanel Grid.Row="0"
+                   VerticalAlignment="Stretch">
+            <StackPanel HorizontalAlignment="Left"
+                        Orientation="Horizontal">
+                <Button Name="btn_open"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Left"
+                        Content="Open"/>
+                <Button Name="btn_save"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Left"
+                        Content="Save"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <Button Name="btn_slot_hack"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Content="Set Slots/Lvl to 3"/>
+                <Button Name="btn_gem_hack"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Content="Set Gem Skill to lvl 10"/>
+            </StackPanel>
+        </DockPanel>
+        <DataGrid Name="dg_items"
                   Grid.Row="1"
                   CanUserAddRows="False"/>
     </Grid>

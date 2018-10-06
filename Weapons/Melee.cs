@@ -1,4 +1,8 @@
-﻿namespace MHW_Weapon_Editor.Weapons {
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using JetBrains.Annotations;
+
+namespace MHW_Weapon_Editor.Weapons {
     public class Melee : IWeapon {
         public const int WEAPON_SIZE = 20;
         public const int WEAPON_OFFSET_INITIAL = 25;
@@ -100,6 +104,13 @@
             public const int SLOT2_SIZE = 17;
             public const int SLOT3_SIZE = 18;
             public const int ABILITY = 19;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [NotifyPropertyChangedInvocator]
+        public void OnPropertyChanged([CallerMemberName] string propertyName = null) {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
