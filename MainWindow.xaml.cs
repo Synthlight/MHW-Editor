@@ -1,22 +1,17 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Windows;
 using MHW_Weapon_Editor.Weapons;
 using Microsoft.Win32;
 
 namespace MHW_Weapon_Editor {
     public partial class MainWindow {
-        protected internal const int WEAPON_SIZE = 20;
-        protected internal const int WEAPON_OFFSET_INITIAL = 25;
-        protected internal const int WEAPON_OFFSET_BETWEEN = 65;
-
-        private readonly List<Melee> weapons = new List<Melee>();
+        private readonly List<IWeapon> weapons = new List<IWeapon>();
         private string targetFile;
 
         public MainWindow() {
             InitializeComponent();
-
-            dg_weapons.ItemsSource = weapons;
 
             btn_open.Click += Btn_open_Click;
             btn_slot_hack.Click += Btn_slot_hack_Click;
@@ -27,7 +22,14 @@ namespace MHW_Weapon_Editor {
             Open();
             if (string.IsNullOrEmpty(targetFile)) return;
             Load();
-            dg_weapons.Items.Refresh();
+
+            // Cast cuz' it generates columns from the data type.
+            dg_weapons.ItemsSource = null;
+            if (IsMelee()) {
+                dg_weapons.ItemsSource = weapons.Cast<Melee>();
+            } else if (IsRanged()) {
+                dg_weapons.ItemsSource = weapons.Cast<Ranged>();
+            }
         }
 
         private void Btn_slot_hack_Click(object sender, RoutedEventArgs e) {
@@ -48,7 +50,7 @@ namespace MHW_Weapon_Editor {
 
         private void Open() {
             var ofdResult = new OpenFileDialog() {
-                Filter = "Melee Weapons (*.wp_dat)|*.wp_dat",
+                Filter = "Melee/Ranged Weapons (*.wp_dat/wp_dat_g)|*.wp_dat;*.wp_dat_g",
                 Multiselect = false
             };
             ofdResult.ShowDialog();
@@ -59,21 +61,45 @@ namespace MHW_Weapon_Editor {
         private void Load() {
             weapons.Clear();
 
+            int initialOffset;
+            int weaponSize;
+            int weaponBetweenOffset;
+
+            if (IsMelee()) {
+                initialOffset = Melee.WEAPON_OFFSET_INITIAL;
+                weaponSize = Melee.WEAPON_SIZE;
+                weaponBetweenOffset = Melee.WEAPON_OFFSET_BETWEEN;
+            } else if (IsRanged()) {
+                initialOffset = Ranged.WEAPON_OFFSET_INITIAL;
+                weaponSize = Ranged.WEAPON_SIZE;
+                weaponBetweenOffset = Ranged.WEAPON_OFFSET_BETWEEN;
+            } else {
+                return;
+            }
+
             using (var wpDat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
                 var len = wpDat.BaseStream.Length;
-                var offset = WEAPON_OFFSET_INITIAL;
+                var offset = initialOffset;
 
                 do {
-                    var buff = new byte[WEAPON_SIZE];
+                    var buff = new byte[weaponSize];
                     wpDat.BaseStream.Seek(offset, SeekOrigin.Begin);
-                    wpDat.Read(buff, 0, WEAPON_SIZE);
+                    wpDat.Read(buff, 0, weaponSize);
 
-                    var weapon = Melee.FromByteArray(buff);
-                    weapon.offset = offset;
+                    IWeapon weapon;
+                    if (IsMelee()) {
+                        weapon = Melee.FromByteArray(buff);
+                    } else if (IsRanged()) {
+                        weapon = Ranged.FromByteArray(buff);
+                    } else {
+                        return;
+                    }
+
+                    weapon.Offset = offset;
                     weapons.Add(weapon);
 
-                    offset += WEAPON_OFFSET_BETWEEN;
-                } while (offset + WEAPON_SIZE <= len);
+                    offset += weaponBetweenOffset;
+                } while (offset + weaponSize <= len);
             }
         }
 
@@ -81,14 +107,17 @@ namespace MHW_Weapon_Editor {
             using (var wpDat = new BinaryWriter(new FileStream(targetFile, FileMode.Open, FileAccess.Write))) {
                 foreach (var weapon in weapons) {
                     // First starts at 25, so should be safe.
-                    if (weapon.offset == 0) continue;
+                    if (weapon.Offset == 0) continue;
 
                     var buff = weapon.ToByteArray();
 
-                    wpDat.Seek(weapon.offset, SeekOrigin.Begin);
+                    wpDat.Seek(weapon.Offset, SeekOrigin.Begin);
                     wpDat.Write(buff);
                 }
             }
         }
+
+        private bool IsRanged() => Path.GetExtension(targetFile) == ".wp_dat_g";
+        private bool IsMelee() => Path.GetExtension(targetFile) == ".wp_dat";
     }
 }
