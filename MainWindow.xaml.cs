@@ -1,77 +1,94 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using MHW_Weapon_Editor.Weapons;
 using Microsoft.Win32;
 
 namespace MHW_Weapon_Editor {
     public partial class MainWindow {
+        protected internal const int WEAPON_SIZE = 20;
+        protected internal const int WEAPON_OFFSET_INITIAL = 25;
+        protected internal const int WEAPON_OFFSET_BETWEEN = 65;
+
         private readonly List<Melee> weapons = new List<Melee>();
+        private string targetFile;
 
         public MainWindow() {
             InitializeComponent();
 
+            dg_weapons.ItemsSource = weapons;
+
+            btn_open.Click += Btn_open_Click;
+            btn_slot_hack.Click += Btn_slot_hack_Click;
+            btn_save.Click += Btn_save_Click;
+        }
+
+        private void Btn_open_Click(object sender, RoutedEventArgs e) {
+            Open();
+            if (string.IsNullOrEmpty(targetFile)) return;
+            Load();
+            dg_weapons.Items.Refresh();
+        }
+
+        private void Btn_slot_hack_Click(object sender, RoutedEventArgs e) {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            foreach (var weapon in weapons) {
+                weapon.Slots = 3;
+                weapon.Slot1Size = 3;
+                weapon.Slot2Size = 3;
+                weapon.Slot3Size = 3;
+            }
+        }
+
+        private void Btn_save_Click(object sender, RoutedEventArgs e) {
+            if (string.IsNullOrEmpty(targetFile)) return;
+            Save();
+        }
+
+        private void Open() {
             var ofdResult = new OpenFileDialog() {
-                DefaultExt = ".wp_dat",
-                Multiselect = false,
-                InitialDirectory = @"C:\SteamLibrary\steamapps\common\Monster Hunter World\"
+                Filter = "Melee Weapons (*.wp_dat)|*.wp_dat",
+                Multiselect = false
             };
             ofdResult.ShowDialog();
 
-            if (string.IsNullOrEmpty(ofdResult.FileName)) {
-                Close();
-                return;
-            }
+            targetFile = ofdResult.FileName;
+        }
 
-            using (var wpDat = new BinaryReader(new FileStream(ofdResult.FileName, FileMode.Open))) {
+        private void Load() {
+            weapons.Clear();
+
+            using (var wpDat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
                 var len = wpDat.BaseStream.Length;
-                var offset = 0x19;
+                var offset = WEAPON_OFFSET_INITIAL;
 
                 do {
-                    var buff = new byte[20];
+                    var buff = new byte[WEAPON_SIZE];
                     wpDat.BaseStream.Seek(offset, SeekOrigin.Begin);
-                    wpDat.Read(buff, 0, 20);
+                    wpDat.Read(buff, 0, WEAPON_SIZE);
 
-                    weapons.Add(new Melee {
-                        offset = offset,
-                        Rarity = buff[0],
-                        SharpnessQuality = buff[1],
-                        SharpnessAmount = buff[2],
-                        Damage1 = buff[3],
-                        Damage2 = buff[4],
-                        Defense1 = buff[5],
-                        Defense2 = buff[6],
-                        Affinity = buff[7],
-                        ElemType = (Element) buff[8],
-                        ElemDmg1 = buff[9],
-                        ElemDmg2 = buff[10],
-                        HiddenElemType = buff[11],
-                        HiddenElemDmg1 = buff[12],
-                        HiddenElemDmg2 = buff[13],
-                        ElderSeal = buff[14],
-                        Slots = buff[15],
-                        Slot1Size = buff[16],
-                        Slot2Size = buff[17],
-                        Slot3Size = buff[18],
-                        Ability = buff[19]
-                    });
-                    offset += 0x41;
-                } while (offset + 20 <= len);
+                    var weapon = Melee.FromByteArray(buff);
+                    weapon.offset = offset;
+                    weapons.Add(weapon);
+
+                    offset += WEAPON_OFFSET_BETWEEN;
+                } while (offset + WEAPON_SIZE <= len);
             }
+        }
 
-            dg_weapons.ItemsSource = weapons;
+        private void Save() {
+            using (var wpDat = new BinaryWriter(new FileStream(targetFile, FileMode.Open, FileAccess.Write))) {
+                foreach (var weapon in weapons) {
+                    // First starts at 25, so should be safe.
+                    if (weapon.offset == 0) continue;
+
+                    var buff = weapon.ToByteArray();
+
+                    wpDat.Seek(weapon.offset, SeekOrigin.Begin);
+                    wpDat.Write(buff);
+                }
+            }
         }
     }
 }
