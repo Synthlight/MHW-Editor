@@ -3,10 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MHW_Weapon_Editor"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        xmlns:weapons="clr-namespace:MHW_Weapon_Editor.Weapons"
+        Title="MainWindow"
+        Width="1600"
+        Height="450"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <DataGrid Name="dg_weapons"/>
     </Grid>
 </Window>
