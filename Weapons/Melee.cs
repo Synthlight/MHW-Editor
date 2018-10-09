@@ -12,11 +12,11 @@ namespace MHW_Weapon_Editor.Weapons {
         }
         public byte SharpnessQuality {
             get => GetData(Offsets.SHARPNESS_QUALITY);
-            set => SetData(Offsets.SHARPNESS_QUALITY, value);
+            set => SetData(Offsets.SHARPNESS_QUALITY, value.Clamp((byte) 1, (byte) 118));
         }
         public byte SharpnessAmount {
             get => GetData(Offsets.SHARPNESS_AMOUNT);
-            set => SetData(Offsets.SHARPNESS_AMOUNT, value);
+            set => SetData(Offsets.SHARPNESS_AMOUNT, value.Clamp((byte) 1, (byte) 8));
         }
         public byte Damage1 {
             get => GetData(Offsets.DAMAGE1);

@@ -30,7 +30,7 @@ namespace MHW_Weapon_Editor.Weapons {
         }
         public sbyte Affinity {
             get => GetSData(Offsets.AFFINITY);
-            set => SetData(Offsets.AFFINITY, value);
+            set => SetData(Offsets.AFFINITY, value.Clamp((sbyte) -100, (sbyte) 100));
         }
         public Element ElemType {
             get => (Element) GetData(Offsets.ELEM_TYPE);
