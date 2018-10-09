@@ -58,6 +58,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Extensions.cs" />
     <Compile Include="Gems\Gem.cs" />
     <Compile Include="Gems\Gem.Offsets.cs">
       <DependentUpon>Gem.cs</DependentUpon>
