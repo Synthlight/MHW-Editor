@@ -5,5 +5,6 @@ namespace MHW_Weapon_Editor {
         byte[] Bytes { get; }
         int Offset { get; }
         string Name { get; }
+        bool Changed { get; }
     }
 }

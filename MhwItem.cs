@@ -7,8 +7,8 @@ namespace MHW_Weapon_Editor {
     public abstract class MhwItem : IMhwItem {
         public byte[] Bytes { get; private set; }
         public int Offset { get; private set; }
-
         public abstract string Name { get; }
+        public bool Changed { get; private set; }
 
         protected MhwItem(byte[] bytes, int offset) {
             Bytes = bytes;
@@ -27,12 +27,15 @@ namespace MHW_Weapon_Editor {
 
         protected void SetData(int offset, byte value) {
             Bytes[offset] = value;
+            Changed = true;
         }
 
         protected void SetData(int offset, sbyte value) {
             unchecked {
                 Bytes[offset] = (byte) value;
             }
+
+            Changed = true;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
