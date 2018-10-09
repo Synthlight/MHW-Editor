@@ -1,5 +1,6 @@
 ﻿namespace MHW_Weapon_Editor.Weapons {
     public enum Element {
+        NONE = 0,
         FIRE = 1,
         WATER,
         ICE,

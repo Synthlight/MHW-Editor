@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:weapons="clr-namespace:MHW_Weapon_Editor.Weapons"
         Title="MainWindow"
-        Width="1600"
-        Height="450"
+        Width="1800"
+        Height="500"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>

@@ -59,11 +59,21 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Gems\Gem.cs" />
+    <Compile Include="Gems\Gem.Offsets.cs">
+      <DependentUpon>Gem.cs</DependentUpon>
+    </Compile>
     <Compile Include="IMhwItem.cs" />
+    <Compile Include="MhwItem.cs" />
     <Compile Include="Weapons\Element.cs" />
     <Compile Include="Weapons\IWeapon.cs" />
-    <Compile Include="Weapons\Ranged.cs" />
     <Compile Include="Weapons\Melee.cs" />
+    <Compile Include="Weapons\Melee.Offsets.cs">
+      <DependentUpon>Melee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Weapons\Ranged.cs" />
+    <Compile Include="Weapons\Ranged.Offsets.cs">
+      <DependentUpon>Ranged.cs</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

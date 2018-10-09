@@ -3,108 +3,125 @@ using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 
 namespace MHW_Weapon_Editor.Gems {
-    public class Gem : IMhwItem {
+    public partial class Gem : MhwItem, IMhwItem {
         public const int GEM_SIZE = 28;
         public const int GEM_OFFSET_INITIAL = 6;
         public const int GEM_OFFSET_BETWEEN = GEM_SIZE;
 
-        public byte Unknown1 { get; set; }
-        public byte Unknown2 { get; set; }
-        public byte Unknown3 { get; set; }
-        public byte Unknown4 { get; set; }
-        public byte Unknown5 { get; set; }
-        public byte Unknown6 { get; set; }
-        public byte Unknown7 { get; set; }
-        public byte Unknown8 { get; set; }
-        public byte Unknown9 { get; set; }
-        public byte Unknown10 { get; set; }
-        public byte Unknown11 { get; set; }
-        public byte Unknown12 { get; set; }
-        public byte Unknown13 { get; set; }
-        public byte Unknown14 { get; set; }
-        public byte Unknown15 { get; set; }
-        public byte Unknown16 { get; set; }
-        public byte SkillLevel { get; set; }
-        public byte Unknown18 { get; set; }
-        public byte Unknown19 { get; set; }
-        public byte Unknown20 { get; set; }
-        public byte Unknown21 { get; set; }
-        public byte Unknown22 { get; set; }
-        public byte Unknown23 { get; set; }
-        public byte Unknown24 { get; set; }
-        public byte Unknown25 { get; set; }
-        public byte Unknown26 { get; set; }
-        public byte Unknown27 { get; set; }
-        public byte Unknown28 { get; set; }
-
-        public int Offset { get; set; }
-
-        public static Gem FromByteArray(byte[] buff) {
-            if (buff.Length < GEM_SIZE) return null;
-
-            return new Gem {
-                Unknown1 = buff[Offsets.UNKNOWN1],
-                Unknown2 = buff[Offsets.UNKNOWN2],
-                Unknown3 = buff[Offsets.UNKNOWN3],
-                Unknown4 = buff[Offsets.UNKNOWN4],
-                Unknown5 = buff[Offsets.UNKNOWN5],
-                Unknown6 = buff[Offsets.UNKNOWN6],
-                Unknown7 = buff[Offsets.UNKNOWN7],
-                Unknown8 = buff[Offsets.UNKNOWN8],
-                Unknown9 = buff[Offsets.UNKNOWN9],
-                Unknown10 = buff[Offsets.UNKNOWN10],
-                Unknown11 = buff[Offsets.UNKNOWN11],
-                Unknown12 = buff[Offsets.UNKNOWN12],
-                Unknown13 = buff[Offsets.UNKNOWN13],
-                Unknown14 = buff[Offsets.UNKNOWN14],
-                Unknown15 = buff[Offsets.UNKNOWN15],
-                Unknown16 = buff[Offsets.UNKNOWN16],
-                SkillLevel = buff[Offsets.SKILL_LEVEL],
-                Unknown18 = buff[Offsets.UNKNOWN18],
-                Unknown19 = buff[Offsets.UNKNOWN19],
-                Unknown20 = buff[Offsets.UNKNOWN20],
-                Unknown21 = buff[Offsets.UNKNOWN21],
-                Unknown22 = buff[Offsets.UNKNOWN22],
-                Unknown23 = buff[Offsets.UNKNOWN23],
-                Unknown24 = buff[Offsets.UNKNOWN24],
-                Unknown25 = buff[Offsets.UNKNOWN25],
-                Unknown26 = buff[Offsets.UNKNOWN26],
-                Unknown27 = buff[Offsets.UNKNOWN27],
-                Unknown28 = buff[Offsets.UNKNOWN28]
-            };
+        public byte Unknown1 {
+            get => GetData(Offsets.UNKNOWN1);
+            set => SetData(Offsets.UNKNOWN1, value);
+        }
+        public byte Unknown2 {
+            get => GetData(Offsets.UNKNOWN2);
+            set => SetData(Offsets.UNKNOWN2, value);
+        }
+        public byte Unknown3 {
+            get => GetData(Offsets.UNKNOWN3);
+            set => SetData(Offsets.UNKNOWN3, value);
+        }
+        public byte Unknown4 {
+            get => GetData(Offsets.UNKNOWN4);
+            set => SetData(Offsets.UNKNOWN4, value);
+        }
+        public byte Unknown5 {
+            get => GetData(Offsets.UNKNOWN5);
+            set => SetData(Offsets.UNKNOWN5, value);
+        }
+        public byte Unknown6 {
+            get => GetData(Offsets.UNKNOWN6);
+            set => SetData(Offsets.UNKNOWN6, value);
+        }
+        public byte Unknown7 {
+            get => GetData(Offsets.UNKNOWN7);
+            set => SetData(Offsets.UNKNOWN7, value);
+        }
+        public byte Unknown8 {
+            get => GetData(Offsets.UNKNOWN8);
+            set => SetData(Offsets.UNKNOWN8, value);
+        }
+        public byte Unknown9 {
+            get => GetData(Offsets.UNKNOWN9);
+            set => SetData(Offsets.UNKNOWN9, value);
+        }
+        public byte Unknown10 {
+            get => GetData(Offsets.UNKNOWN10);
+            set => SetData(Offsets.UNKNOWN10, value);
+        }
+        public byte Unknown11 {
+            get => GetData(Offsets.UNKNOWN11);
+            set => SetData(Offsets.UNKNOWN11, value);
+        }
+        public byte Unknown12 {
+            get => GetData(Offsets.UNKNOWN12);
+            set => SetData(Offsets.UNKNOWN12, value);
+        }
+        public byte Unknown13 {
+            get => GetData(Offsets.UNKNOWN13);
+            set => SetData(Offsets.UNKNOWN13, value);
+        }
+        public byte Unknown14 {
+            get => GetData(Offsets.UNKNOWN14);
+            set => SetData(Offsets.UNKNOWN14, value);
+        }
+        public byte Unknown15 {
+            get => GetData(Offsets.UNKNOWN15);
+            set => SetData(Offsets.UNKNOWN15, value);
+        }
+        public byte Unknown16 {
+            get => GetData(Offsets.UNKNOWN16);
+            set => SetData(Offsets.UNKNOWN16, value);
+        }
+        public byte SkillLevel {
+            get => GetData(Offsets.SKILL_LEVEL);
+            set => SetData(Offsets.SKILL_LEVEL, value);
+        }
+        public byte Unknown18 {
+            get => GetData(Offsets.UNKNOWN18);
+            set => SetData(Offsets.UNKNOWN18, value);
+        }
+        public byte Unknown19 {
+            get => GetData(Offsets.UNKNOWN19);
+            set => SetData(Offsets.UNKNOWN19, value);
+        }
+        public byte Unknown20 {
+            get => GetData(Offsets.UNKNOWN20);
+            set => SetData(Offsets.UNKNOWN20, value);
+        }
+        public byte Unknown21 {
+            get => GetData(Offsets.UNKNOWN21);
+            set => SetData(Offsets.UNKNOWN21, value);
+        }
+        public byte Unknown22 {
+            get => GetData(Offsets.UNKNOWN22);
+            set => SetData(Offsets.UNKNOWN22, value);
+        }
+        public byte Unknown23 {
+            get => GetData(Offsets.UNKNOWN23);
+            set => SetData(Offsets.UNKNOWN23, value);
+        }
+        public byte Unknown24 {
+            get => GetData(Offsets.UNKNOWN24);
+            set => SetData(Offsets.UNKNOWN24, value);
+        }
+        public byte Unknown25 {
+            get => GetData(Offsets.UNKNOWN25);
+            set => SetData(Offsets.UNKNOWN25, value);
+        }
+        public byte Unknown26 {
+            get => GetData(Offsets.UNKNOWN26);
+            set => SetData(Offsets.UNKNOWN26, value);
+        }
+        public byte Unknown27 {
+            get => GetData(Offsets.UNKNOWN27);
+            set => SetData(Offsets.UNKNOWN27, value);
+        }
+        public byte Unknown28 {
+            get => GetData(Offsets.UNKNOWN28);
+            set => SetData(Offsets.UNKNOWN28, value);
         }
 
-        public byte[] ToByteArray() {
-            var buff = new byte[GEM_SIZE];
-            buff[Offsets.UNKNOWN1] = Unknown1;
-            buff[Offsets.UNKNOWN2] = Unknown2;
-            buff[Offsets.UNKNOWN3] = Unknown3;
-            buff[Offsets.UNKNOWN4] = Unknown4;
-            buff[Offsets.UNKNOWN5] = Unknown5;
-            buff[Offsets.UNKNOWN6] = Unknown6;
-            buff[Offsets.UNKNOWN7] = Unknown7;
-            buff[Offsets.UNKNOWN8] = Unknown8;
-            buff[Offsets.UNKNOWN9] = Unknown9;
-            buff[Offsets.UNKNOWN10] = Unknown10;
-            buff[Offsets.UNKNOWN11] = Unknown11;
-            buff[Offsets.UNKNOWN12] = Unknown12;
-            buff[Offsets.UNKNOWN13] = Unknown13;
-            buff[Offsets.UNKNOWN14] = Unknown14;
-            buff[Offsets.UNKNOWN15] = Unknown15;
-            buff[Offsets.UNKNOWN16] = Unknown16;
-            buff[Offsets.SKILL_LEVEL] = SkillLevel;
-            buff[Offsets.UNKNOWN18] = Unknown18;
-            buff[Offsets.UNKNOWN19] = Unknown19;
-            buff[Offsets.UNKNOWN20] = Unknown20;
-            buff[Offsets.UNKNOWN21] = Unknown21;
-            buff[Offsets.UNKNOWN22] = Unknown22;
-            buff[Offsets.UNKNOWN23] = Unknown23;
-            buff[Offsets.UNKNOWN24] = Unknown24;
-            buff[Offsets.UNKNOWN25] = Unknown25;
-            buff[Offsets.UNKNOWN26] = Unknown26;
-            buff[Offsets.UNKNOWN27] = Unknown27;
-            buff[Offsets.UNKNOWN28] = Unknown28;
-            return buff;
+        public Gem(byte[] bytes, int offset) : base(bytes, offset) {
         }
 
         public static class Offsets {
@@ -136,13 +153,6 @@ namespace MHW_Weapon_Editor.Gems {
             public const int UNKNOWN26 = 25;
             public const int UNKNOWN27 = 26;
             public const int UNKNOWN28 = 27;
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        [NotifyPropertyChangedInvocator]
-        public void OnPropertyChanged([CallerMemberName] string propertyName = null) {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
