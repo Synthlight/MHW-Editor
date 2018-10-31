@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using MHW_Weapon_Editor.Armors;
 using MHW_Weapon_Editor.Gems;
 using MHW_Weapon_Editor.Weapons;
 using Microsoft.Win32;
@@ -55,15 +56,29 @@ namespace MHW_Weapon_Editor {
         private void Btn_slot_hack_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!IsMelee() && !IsRanged()) return;
+            if (!IsMelee() && !IsRanged() && !IsArmor()) return;
 
             foreach (var item in items) {
-                IWeapon weapon = item;
-                weapon.Slots = 3;
-                weapon.Slot1Size = 3;
-                weapon.Slot2Size = 3;
-                weapon.Slot3Size = 3;
-                ((dynamic) weapon).OnPropertyChanged();
+                ISlots itemWithSlots = item;
+                itemWithSlots.Slots = 3;
+                itemWithSlots.Slot1Size = 3;
+                itemWithSlots.Slot2Size = 3;
+                itemWithSlots.Slot3Size = 3;
+
+                if (item is Armor) {
+                    Armor armor = item;
+                    if (armor.Skill1 > 0) {
+                        armor.Skill1Lvl = 10;
+                    }
+                    if (armor.Skill2 > 0) {
+                        armor.Skill2Lvl = 10;
+                    }
+                    if (armor.Skill3 > 0) {
+                        armor.Skill3Lvl = 10;
+                    }
+                }
+
+                ((dynamic) itemWithSlots).OnPropertyChanged();
             }
         }
 
@@ -82,7 +97,7 @@ namespace MHW_Weapon_Editor {
         private void Open() {
             var ofdResult = new OpenFileDialog() {
                 // ReSharper disable StringLiteralTypo
-                Filter = "Weapons / Gems (*.wp_dat/_g, *.sgpa)|*.wp_dat;*.wp_dat_g;*.sgpa",
+                Filter = "Weapons / Armor / Gems (*.wp_dat/*.am_dat/_g, *.sgpa)|*.wp_dat;*.wp_dat_g;*.am_dat;*.sgpa",
                 Multiselect = false
             };
             ofdResult.ShowDialog();
@@ -105,6 +120,10 @@ namespace MHW_Weapon_Editor {
                 initialOffset = Ranged.WEAPON_OFFSET_INITIAL;
                 itemSize = Ranged.WEAPON_SIZE;
                 itemBetweenOffset = Ranged.WEAPON_OFFSET_BETWEEN;
+            } else if (IsArmor()) {
+                initialOffset = Armor.ARMOR_OFFSET_INITIAL;
+                itemSize = Armor.ARMOR_SIZE;
+                itemBetweenOffset = Armor.ARMOR_OFFSET_BETWEEN;
             } else if (IsGem()) {
                 initialOffset = Gem.GEM_OFFSET_INITIAL;
                 itemSize = Gem.GEM_SIZE;
@@ -122,18 +141,21 @@ namespace MHW_Weapon_Editor {
                     wpDat.BaseStream.Seek(offset, SeekOrigin.Begin);
                     wpDat.Read(buff, 0, itemSize);
 
-                    dynamic weapon;
+                    dynamic obj;
+
                     if (IsMelee()) {
-                        weapon = new Melee(buff, offset);
+                        obj = new Melee(buff, offset);
                     } else if (IsRanged()) {
-                        weapon = new Ranged(buff, offset);
+                        obj = new Ranged(buff, offset);
+                    } else if (IsArmor()) {
+                        obj = new Armor(buff, offset);
                     } else if (IsGem()) {
-                        weapon = new Gem(buff, offset);
+                        obj = new Gem(buff, offset);
                     } else {
                         return;
                     }
 
-                    items.Add(weapon);
+                    items.Add(obj);
 
                     offset += itemBetweenOffset;
                 } while (offset + itemSize <= len);
@@ -155,8 +177,9 @@ namespace MHW_Weapon_Editor {
             }
         }
 
-        private bool IsRanged() => Path.GetExtension(targetFile) == ".wp_dat_g";
         private bool IsMelee() => Path.GetExtension(targetFile) == ".wp_dat";
+        private bool IsRanged() => Path.GetExtension(targetFile) == ".wp_dat_g";
+        private bool IsArmor() => Path.GetExtension(targetFile) == ".am_dat";
         private bool IsGem() => Path.GetExtension(targetFile) == ".sgpa";
     }
 }

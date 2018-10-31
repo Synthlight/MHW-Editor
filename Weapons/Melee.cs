@@ -1,89 +1,71 @@
-﻿using System;
-
-namespace MHW_Weapon_Editor.Weapons {
-    public partial class Melee : MhwItem, IWeapon {
+﻿namespace MHW_Weapon_Editor.Weapons {
+    public partial class Melee : MhwItem, ISlots {
         public const int WEAPON_SIZE = 20;
         public const int WEAPON_OFFSET_INITIAL = 25;
         public const int WEAPON_OFFSET_BETWEEN = 65;
 
         public byte Rarity {
-            get => GetData(Offsets.RARITY);
+            get => GetData<byte>(Offsets.RARITY);
             set => SetData(Offsets.RARITY, value);
         }
         public byte SharpnessQuality {
-            get => GetData(Offsets.SHARPNESS_QUALITY);
+            get => GetData<byte>(Offsets.SHARPNESS_QUALITY);
             set => SetData(Offsets.SHARPNESS_QUALITY, value.Clamp((byte) 1, (byte) 118));
         }
         public byte SharpnessAmount {
-            get => GetData(Offsets.SHARPNESS_AMOUNT);
+            get => GetData<byte>(Offsets.SHARPNESS_AMOUNT);
             set => SetData(Offsets.SHARPNESS_AMOUNT, value.Clamp((byte) 1, (byte) 8));
         }
-        public byte Damage1 {
-            get => GetData(Offsets.DAMAGE1);
-            set => SetData(Offsets.DAMAGE1, value);
+        public ushort Damage {
+            get => GetData<ushort>(Offsets.DAMAGE);
+            set => SetData(Offsets.DAMAGE, value);
         }
-        public byte Damage2 {
-            get => GetData(Offsets.DAMAGE2);
-            set => SetData(Offsets.DAMAGE2, value);
-        }
-        public byte Defense1 {
-            get => GetData(Offsets.DEFENSE1);
-            set => SetData(Offsets.DEFENSE1, value);
-        }
-        public byte Defense2 {
-            get => GetData(Offsets.DEFENSE2);
-            set => SetData(Offsets.DEFENSE2, value);
+        public ushort Defense {
+            get => GetData<ushort>(Offsets.DEFENSE);
+            set => SetData(Offsets.DEFENSE, value);
         }
         public sbyte Affinity {
-            get => GetSData(Offsets.AFFINITY);
+            get => GetData<sbyte>(Offsets.AFFINITY);
             set => SetData(Offsets.AFFINITY, value.Clamp((sbyte) -100, (sbyte) 100));
         }
         public Element ElemType {
-            get => (Element) GetData(Offsets.ELEM_TYPE);
+            get => (Element) GetData<byte>(Offsets.ELEM_TYPE);
             set => SetData(Offsets.ELEM_TYPE, (byte) value);
         }
-        public byte ElemDmg1 {
-            get => GetData(Offsets.ELEM_DMG1);
-            set => SetData(Offsets.ELEM_DMG1, value);
-        }
-        public byte ElemDmg2 {
-            get => GetData(Offsets.ELEM_DMG2);
-            set => SetData(Offsets.ELEM_DMG2, value);
+        public ushort ElemDmg {
+            get => GetData<ushort>(Offsets.ELEM_DMG);
+            set => SetData(Offsets.ELEM_DMG, value);
         }
         public Element HiddenElemType {
-            get => (Element) GetData(Offsets.HIDDEN_ELEM_TYPE);
+            get => (Element) GetData<byte>(Offsets.HIDDEN_ELEM_TYPE);
             set => SetData(Offsets.HIDDEN_ELEM_TYPE, (byte) value);
         }
-        public byte HiddenElemDmg1 {
-            get => GetData(Offsets.HIDDEN_ELEM_DMG1);
-            set => SetData(Offsets.HIDDEN_ELEM_DMG1, value);
-        }
-        public byte HiddenElemDmg2 {
-            get => GetData(Offsets.HIDDEN_ELEM_DMG2);
-            set => SetData(Offsets.HIDDEN_ELEM_DMG2, value);
+        public ushort HiddenElemDmg {
+            get => GetData<ushort>(Offsets.HIDDEN_ELEM_DMG);
+            set => SetData(Offsets.HIDDEN_ELEM_DMG, value);
         }
         public byte ElderSeal {
-            get => GetData(Offsets.ELDER_SEAL);
+            get => GetData<byte>(Offsets.ELDER_SEAL);
             set => SetData(Offsets.ELDER_SEAL, value);
         }
         public byte Slots {
-            get => GetData(Offsets.SLOTS);
+            get => GetData<byte>(Offsets.SLOTS);
             set => SetData(Offsets.SLOTS, value);
         }
         public byte Slot1Size {
-            get => GetData(Offsets.SLOT1_SIZE);
+            get => GetData<byte>(Offsets.SLOT1_SIZE);
             set => SetData(Offsets.SLOT1_SIZE, value);
         }
         public byte Slot2Size {
-            get => GetData(Offsets.SLOT2_SIZE);
+            get => GetData<byte>(Offsets.SLOT2_SIZE);
             set => SetData(Offsets.SLOT2_SIZE, value);
         }
         public byte Slot3Size {
-            get => GetData(Offsets.SLOT3_SIZE);
+            get => GetData<byte>(Offsets.SLOT3_SIZE);
             set => SetData(Offsets.SLOT3_SIZE, value);
         }
         public byte Ability {
-            get => GetData(Offsets.ABILITY);
+            get => GetData<byte>(Offsets.ABILITY);
             set => SetData(Offsets.ABILITY, value);
         }
 
@@ -94,17 +76,13 @@ namespace MHW_Weapon_Editor.Weapons {
             public const int RARITY = 0;
             public const int SHARPNESS_QUALITY = 1;
             public const int SHARPNESS_AMOUNT = 2;
-            public const int DAMAGE1 = 3;
-            public const int DAMAGE2 = 4;
-            public const int DEFENSE1 = 5;
-            public const int DEFENSE2 = 6;
-            public const int AFFINITY = 7;
+            public const int DAMAGE = 3; // u2
+            public const int DEFENSE = 5; // u2
+            public const int AFFINITY = 7; // s1
             public const int ELEM_TYPE = 8;
-            public const int ELEM_DMG1 = 9;
-            public const int ELEM_DMG2 = 10;
+            public const int ELEM_DMG = 9; // u2
             public const int HIDDEN_ELEM_TYPE = 11;
-            public const int HIDDEN_ELEM_DMG1 = 12;
-            public const int HIDDEN_ELEM_DMG2 = 13;
+            public const int HIDDEN_ELEM_DMG = 12; // u2
             public const int ELDER_SEAL = 14;
             public const int SLOTS = 15;
             public const int SLOT1_SIZE = 16;

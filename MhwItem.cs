@@ -1,6 +1,7 @@
-﻿using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using JetBrains.Annotations;
 
 namespace MHW_Weapon_Editor {
@@ -15,25 +16,36 @@ namespace MHW_Weapon_Editor {
             Offset = offset;
         }
 
-        protected byte GetData(int offset) {
-            return Bytes[offset];
+        protected T GetData<T>(int offset) where T : struct {
+            return GetData<T>(offset, Marshal.SizeOf(default(T)));
         }
 
-        protected sbyte GetSData(int offset) {
-            unchecked {
-                return (sbyte) Bytes[offset];
+        protected T GetData<T>(int offset, int size) where T : struct {
+            var subsequence = Bytes.Subsequence(offset, size);
+            var handle = GCHandle.Alloc(subsequence, GCHandleType.Pinned);
+
+            try {
+                var rawDataPtr = handle.AddrOfPinnedObject();
+                return (T) Marshal.PtrToStructure(rawDataPtr, typeof(T));
+            } finally {
+                handle.Free();
             }
         }
 
-        protected void SetData(int offset, byte value) {
-            Bytes[offset] = value;
-            Changed = true;
-        }
+        protected void SetData<T>(int offset, T value) where T : struct {
+            var rawData = new byte[Marshal.SizeOf(value)];
+            var handle = GCHandle.Alloc(rawData, GCHandleType.Pinned);
 
-        protected void SetData(int offset, sbyte value) {
-            unchecked {
-                Bytes[offset] = (byte) value;
+            try {
+                var rawDataPtr = handle.AddrOfPinnedObject();
+                Marshal.StructureToPtr(value, rawDataPtr, false);
+            } finally {
+                handle.Free();
             }
+
+            // rawData is now a byte arr containing the value we want to save.
+            // Copy rawData to the right offset in bytes.
+            Array.Copy(rawData, 0, Bytes, offset, rawData.Length);
 
             Changed = true;
         }

@@ -15,5 +15,9 @@ namespace MHW_Weapon_Editor {
                 return val;
             }
         }
+
+        public static T[] Subsequence<T>(this IEnumerable<T> arr, int startIndex, int length) {
+            return arr.Skip(startIndex).Take(length).ToArray();
+        }
     }
 }
