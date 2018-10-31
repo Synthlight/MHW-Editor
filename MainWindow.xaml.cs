@@ -3,12 +3,12 @@ using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using MHW_Weapon_Editor.Armors;
-using MHW_Weapon_Editor.Gems;
-using MHW_Weapon_Editor.Weapons;
+using MHW_Editor.Armors;
+using MHW_Editor.Gems;
+using MHW_Editor.Weapons;
 using Microsoft.Win32;
 
-namespace MHW_Weapon_Editor {
+namespace MHW_Editor {
     public partial class MainWindow {
         private readonly List<dynamic> items = new List<dynamic>();
         private string targetFile;

@@ -1,4 +1,4 @@
-﻿namespace MHW_Weapon_Editor {
+﻿namespace MHW_Editor {
     public interface ISlots : IMhwItem {
         byte Slots { get; set; }
         byte Slot1Size { get; set; }

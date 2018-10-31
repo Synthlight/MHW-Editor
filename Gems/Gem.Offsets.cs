@@ -1,4 +1,4 @@
-﻿namespace MHW_Weapon_Editor.Gems {
+﻿namespace MHW_Editor.Gems {
     public partial class Gem {
         public override string Name {
             get {

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{32A6D364-5E41-4094-840E-F6B5F5A08C5C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MHW_Weapon_Editor</RootNamespace>
-    <AssemblyName>MHW-Weapon-Editor</AssemblyName>
+    <RootNamespace>MHW_Editor</RootNamespace>
+    <AssemblyName>MHW-Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

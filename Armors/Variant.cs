@@ -1,4 +1,4 @@
-﻿namespace MHW_Weapon_Editor.Armors {
+﻿namespace MHW_Editor.Armors {
     public enum Variant {
         LOW_RANK = 0,
         ALPHA = 1,

@@ -1,4 +1,4 @@
-﻿<Application x:Class="MHW_Weapon_Editor.App"
+﻿<Application x:Class="MHW_Editor.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">

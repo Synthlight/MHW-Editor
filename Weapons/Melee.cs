@@ -1,4 +1,4 @@
-﻿namespace MHW_Weapon_Editor.Weapons {
+﻿namespace MHW_Editor.Weapons {
     public partial class Melee : MhwItem, ISlots {
         public const int WEAPON_SIZE = 20;
         public const int WEAPON_OFFSET_INITIAL = 25;

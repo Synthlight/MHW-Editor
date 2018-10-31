@@ -1,4 +1,4 @@
-﻿namespace MHW_Weapon_Editor.Armors {
+﻿namespace MHW_Editor.Armors {
     public partial class Armor {
         public override string Name {
             get {

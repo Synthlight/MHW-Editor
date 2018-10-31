@@ -1,4 +1,4 @@
-﻿namespace MHW_Weapon_Editor.Armors {
+﻿namespace MHW_Editor.Armors {
     public partial class Armor : MhwItem, IMhwItem, ISlots {
         public const int ARMOR_SIZE = 60;
         public const int ARMOR_OFFSET_INITIAL = 6;

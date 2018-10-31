@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using JetBrains.Annotations;
 
-namespace MHW_Weapon_Editor {
+namespace MHW_Editor {
     public abstract class MhwItem : IMhwItem {
         public byte[] Bytes { get; private set; }
         public int Offset { get; private set; }

@@ -1,4 +1,4 @@
-﻿namespace MHW_Weapon_Editor.Armors {
+﻿namespace MHW_Editor.Armors {
     public enum EquipSlot {
         HEAD = 0,
         CHEST = 1,

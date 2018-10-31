@@ -1,4 +1,4 @@
-﻿namespace MHW_Weapon_Editor.Weapons {
+﻿namespace MHW_Editor.Weapons {
     public enum Element {
         NONE = 0,
         FIRE = 1,

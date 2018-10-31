@@ -1,4 +1,4 @@
-﻿namespace MHW_Weapon_Editor.Gems {
+﻿namespace MHW_Editor.Gems {
     public partial class Gem : MhwItem, IMhwItem {
         public const int GEM_SIZE = 28;
         public const int GEM_OFFSET_INITIAL = 6;

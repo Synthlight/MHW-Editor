@@ -1,4 +1,4 @@
-﻿namespace MHW_Weapon_Editor.Weapons {
+﻿namespace MHW_Editor.Weapons {
     public partial class Melee {
         public override string Name {
             get {
