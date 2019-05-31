@@ -52,9 +52,9 @@
             get => GetData<byte>(Offsets.UNKNOWN12);
             set => SetData(Offsets.UNKNOWN12, value);
         }
-        public byte Unknown13 {
-            get => GetData<byte>(Offsets.UNKNOWN13);
-            set => SetData(Offsets.UNKNOWN13, value);
+        public string Skill {
+            get => Skills.GetName(GetData<ushort>(Offsets.SKILL_ID));
+            set => SetData(Offsets.SKILL_ID, Skills.ToUShort(value));
         }
         public byte Unknown14 {
             get => GetData<byte>(Offsets.UNKNOWN14);
@@ -133,7 +133,7 @@
             public const int UNKNOWN10 = 9;
             public const int UNKNOWN11 = 10;
             public const int UNKNOWN12 = 11;
-            public const int UNKNOWN13 = 12;
+            public const int SKILL_ID = 12;
             public const int UNKNOWN14 = 13;
             public const int UNKNOWN15 = 14;
             public const int UNKNOWN16 = 15;

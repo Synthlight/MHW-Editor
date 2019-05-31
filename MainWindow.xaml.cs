@@ -67,13 +67,13 @@ namespace MHW_Editor {
 
                 if (item is Armor) {
                     Armor armor = item;
-                    if (armor.Skill1 > 0) {
+                    if (armor.Skill1Id > 0) {
                         armor.Skill1Lvl = 10;
                     }
-                    if (armor.Skill2 > 0) {
+                    if (armor.Skill2Id > 0) {
                         armor.Skill2Lvl = 10;
                     }
-                    if (armor.Skill3 > 0) {
+                    if (armor.Skill3Id > 0) {
                         armor.Skill3Lvl = 10;
                     }
                 }

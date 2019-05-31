@@ -1,4 +1,6 @@
-﻿namespace MHW_Editor.Armors {
+﻿using MHW_Editor.Gems;
+
+namespace MHW_Editor.Armors {
     public partial class Armor : MhwItem, IMhwItem, ISlots {
         public const int ARMOR_SIZE = 60;
         public const int ARMOR_OFFSET_INITIAL = 6;
@@ -76,42 +78,45 @@
             get => GetData<byte>(Offsets.SLOT3_SIZE);
             set => SetData(Offsets.SLOT3_SIZE, value);
         }
-        public short SetSkill1 {
-            get => GetData<short>(Offsets.SET_SKILL1);
-            set => SetData(Offsets.SET_SKILL1, value);
+        public string SetSkill1 {
+            get => Skills.GetName(GetData<ushort>(Offsets.SET_SKILL1));
+            set => SetData(Offsets.SET_SKILL1, Skills.ToUShort(value));
         }
         public byte SetSkill1Lvl {
             get => GetData<byte>(Offsets.SET_SKILL1_LVL);
             set => SetData(Offsets.SET_SKILL1_LVL, value);
         }
-        public short SetSkill2 {
-            get => GetData<short>(Offsets.SET_SKILL2);
-            set => SetData(Offsets.SET_SKILL2, value);
+        public string SetSkill2 {
+            get => Skills.GetName(GetData<ushort>(Offsets.SET_SKILL2));
+            set => SetData(Offsets.SET_SKILL2, Skills.ToUShort(value));
         }
         public byte SetSkill2Lvl {
             get => GetData<byte>(Offsets.SET_SKILL2_LVL);
             set => SetData(Offsets.SET_SKILL2_LVL, value);
         }
-        public short Skill1 {
-            get => GetData<short>(Offsets.SKILL1);
-            set => SetData(Offsets.SKILL1, value);
+        public string Skill1 {
+            get => Skills.GetName(GetData<ushort>(Offsets.SKILL1));
+            set => SetData(Offsets.SKILL1, Skills.ToUShort(value));
         }
+        public ushort Skill1Id => GetData<ushort>(Offsets.SKILL1);
         public byte Skill1Lvl {
             get => GetData<byte>(Offsets.SKILL1_LVL);
             set => SetData(Offsets.SKILL1_LVL, value);
         }
-        public short Skill2 {
-            get => GetData<short>(Offsets.SKILL2);
-            set => SetData(Offsets.SKILL2, value);
+        public string Skill2 {
+            get => Skills.GetName(GetData<ushort>(Offsets.SKILL2));
+            set => SetData(Offsets.SKILL2, Skills.ToUShort(value));
         }
+        public ushort Skill2Id => GetData<ushort>(Offsets.SKILL2);
         public byte Skill2Lvl {
             get => GetData<byte>(Offsets.SKILL2_LVL);
             set => SetData(Offsets.SKILL2_LVL, value);
         }
-        public short Skill3 {
-            get => GetData<short>(Offsets.SKILL3);
-            set => SetData(Offsets.SKILL3, value);
+        public string Skill3 {
+            get => Skills.GetName(GetData<ushort>(Offsets.SKILL3));
+            set => SetData(Offsets.SKILL3, Skills.ToUShort(value));
         }
+        public ushort Skill3Id => GetData<ushort>(Offsets.SKILL3);
         public byte Skill3Lvl {
             get => GetData<byte>(Offsets.SKILL3_LVL);
             set => SetData(Offsets.SKILL3_LVL, value);
