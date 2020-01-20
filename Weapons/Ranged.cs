@@ -28,9 +28,9 @@
             get => GetData<ushort>(Offsets.ELEM_DMG);
             set => SetData(Offsets.ELEM_DMG, value);
         }
-        public byte HiddenElemType {
-            get => GetData<byte>(Offsets.HIDDEN_ELEM_TYPE);
-            set => SetData(Offsets.HIDDEN_ELEM_TYPE, value);
+        public Element HiddenElemType {
+            get => (Element) GetData<byte>(Offsets.HIDDEN_ELEM_TYPE);
+            set => SetData(Offsets.HIDDEN_ELEM_TYPE, (byte) value);
         }
         public ushort HiddenElemDmg {
             get => GetData<ushort>(Offsets.HIDDEN_ELEM_DMG);
