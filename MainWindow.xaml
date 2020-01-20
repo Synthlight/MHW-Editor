@@ -31,7 +31,7 @@
                 <Button Name="btn_slot_hack"
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"
-                        Content="Set Slots/Lvl to 3"/>
+                        Content="Set Slots/Lvl to 4"/>
                 <Button Name="btn_gem_hack"
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"

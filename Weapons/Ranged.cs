@@ -1,8 +1,8 @@
 ﻿namespace MHW_Editor.Weapons {
     public partial class Ranged : MhwItem, ISlots {
         public const int WEAPON_SIZE = 20;
-        public const int WEAPON_OFFSET_INITIAL = 29;
-        public const int WEAPON_OFFSET_BETWEEN = 68;
+        public const int WEAPON_OFFSET_INITIAL = 34;
+        public const int WEAPON_OFFSET_BETWEEN = 69;
 
         public byte Rarity {
             get => GetData<byte>(Offsets.RARITY);

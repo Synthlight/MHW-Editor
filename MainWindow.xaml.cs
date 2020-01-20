@@ -61,18 +61,25 @@ namespace MHW_Editor {
             foreach (var item in items) {
                 ISlots itemWithSlots = item;
                 itemWithSlots.Slots = 3;
-                itemWithSlots.Slot1Size = 3;
-                itemWithSlots.Slot2Size = 3;
-                itemWithSlots.Slot3Size = 3;
+                itemWithSlots.Slot1Size = 4;
+                itemWithSlots.Slot2Size = 4;
+                itemWithSlots.Slot3Size = 4;
 
                 if (item is Armor) {
                     Armor armor = item;
+
+                    if (armor.SetSkill1Lvl > 0) {
+                        armor.SetSkill1Lvl = 5;
+                    }
+
                     if (armor.Skill1Id > 0) {
                         armor.Skill1Lvl = 10;
                     }
+
                     if (armor.Skill2Id > 0) {
                         armor.Skill2Lvl = 10;
                     }
+
                     if (armor.Skill3Id > 0) {
                         armor.Skill3Lvl = 10;
                     }
@@ -89,7 +96,11 @@ namespace MHW_Editor {
 
             foreach (var item in items) {
                 Gem gem = item;
-                gem.SkillLevel = 10;
+                gem.Skill1Level = 10;
+                if (gem.Skill2Level > 0) {
+                    gem.Skill2Level = 10;
+                }
+
                 ((dynamic) gem).OnPropertyChanged();
             }
         }
@@ -97,7 +108,7 @@ namespace MHW_Editor {
         private void Open() {
             var ofdResult = new OpenFileDialog() {
                 // ReSharper disable StringLiteralTypo
-                Filter = "Weapons / Armor / Gems (*.wp_dat/*.am_dat/_g, *.sgpa)|*.wp_dat;*.wp_dat_g;*.am_dat;*.sgpa",
+                Filter = "Weapons / Armor / Gems (*.wp_dat/*.am_dat/*.eq_crt/_g, *.sgpa)|*.wp_dat;*.wp_dat_g;*.am_dat;*.sgpa",
                 Multiselect = false
             };
             ofdResult.ShowDialog();
@@ -107,6 +118,7 @@ namespace MHW_Editor {
 
         private void Load() {
             items.Clear();
+            Title = Path.GetFileName(targetFile);
 
             int initialOffset;
             int itemSize;
@@ -179,7 +191,7 @@ namespace MHW_Editor {
 
         private bool IsMelee() => Path.GetExtension(targetFile) == ".wp_dat";
         private bool IsRanged() => Path.GetExtension(targetFile) == ".wp_dat_g";
-        private bool IsArmor() => Path.GetExtension(targetFile) == ".am_dat";
+        private bool IsArmor() => Path.GetExtension(targetFile) == ".am_dat" || Path.GetExtension(targetFile) == ".eq_crt";
         private bool IsGem() => Path.GetExtension(targetFile) == ".sgpa";
     }
 }

@@ -3,7 +3,7 @@
 namespace MHW_Editor.Armors {
     public partial class Armor : MhwItem, IMhwItem, ISlots {
         public const int ARMOR_SIZE = 60;
-        public const int ARMOR_OFFSET_INITIAL = 6;
+        public const int ARMOR_OFFSET_INITIAL = 10;
         public const int ARMOR_OFFSET_BETWEEN = ARMOR_SIZE;
 
         public ushort Index {
