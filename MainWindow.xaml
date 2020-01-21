@@ -28,14 +28,26 @@
             </StackPanel>
             <StackPanel HorizontalAlignment="Right"
                         Orientation="Horizontal">
-                <Button Name="btn_slot_hack"
+                <Button Name="btn_slot_cheat"
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"
-                        Content="Set Slots/Lvl to 4"/>
-                <Button Name="btn_gem_hack"
+                        Content="Max Slots/Size"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_set_bonus_cheat"
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"
-                        Content="Set Gem Skill to lvl 10"/>
+                        Content="Max Set Bonus"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_skill_level_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Content="Max Skills"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_zenny_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Content="Set Buy Prices to 1"
+                        Visibility="Collapsed"/>
             </StackPanel>
         </DockPanel>
         <DataGrid Name="dg_items"

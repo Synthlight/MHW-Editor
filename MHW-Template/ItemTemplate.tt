@@ -1,0 +1,41 @@
+﻿<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ output extension=".cs" #>
+
+<#@ import namespace="Microsoft.CSharp" #>
+
+<#@ parameter type="System.String" name="_namespace" #>
+<#@ parameter type="System.String" name="className" #>
+<#@ parameter type="MHW_Template.MhwStructData" name="structData" #>
+
+namespace <#= _namespace #> {
+    public partial class <#= className #> {
+        public const ushort StructSize = <#= structData.size #>;
+        public const ushort InitialOffset = <#= structData.offsetInitial #>;
+<#
+    var compiler = new CSharpCodeProvider();
+    foreach (var entry in structData.entries) {
+        var name = entry.name.Replace(" ", "_");
+        var typeString = compiler.GetTypeOutput(entry.type);
+        string returnString;
+        var setCast = "";
+        var getCast = "";
+
+        if (entry.enumReturn == null) {
+            returnString = typeString;
+        } else {
+            returnString = compiler.GetTypeOutput(entry.enumReturn);
+            getCast = $"({returnString}) ";
+            setCast = $"({typeString}) ";
+        }
+
+#>
+        public <#= returnString #> <#= name #> {
+            get => <#= getCast #>GetData<<#= typeString #>>(<#= entry.offset #>);
+            set => SetData(<#= entry.offset #>, <#= setCast #>value);
+        }
+<#
+    }
+#>
+    }
+}

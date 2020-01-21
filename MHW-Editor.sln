@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2041
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MHW-Editor", "MHW-Editor.csproj", "{32A6D364-5E41-4094-840E-F6B5F5A08C5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MHW-Template", "MHW-Template\MHW-Template.csproj", "{89C7CC4E-8A7B-45D0-95DE-FB945B1DEF4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MHW-Generator", "MHW-Generator\MHW-Generator.csproj", "{A9B24F96-DBC9-4E0B-8D11-4C985D7F97FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{32A6D364-5E41-4094-840E-F6B5F5A08C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32A6D364-5E41-4094-840E-F6B5F5A08C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32A6D364-5E41-4094-840E-F6B5F5A08C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C7CC4E-8A7B-45D0-95DE-FB945B1DEF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C7CC4E-8A7B-45D0-95DE-FB945B1DEF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C7CC4E-8A7B-45D0-95DE-FB945B1DEF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C7CC4E-8A7B-45D0-95DE-FB945B1DEF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9B24F96-DBC9-4E0B-8D11-4C985D7F97FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9B24F96-DBC9-4E0B-8D11-4C985D7F97FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9B24F96-DBC9-4E0B-8D11-4C985D7F97FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9B24F96-DBC9-4E0B-8D11-4C985D7F97FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

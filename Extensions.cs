@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MHW_Editor {
     public static class Extensions {
@@ -18,6 +16,10 @@ namespace MHW_Editor {
 
         public static T[] Subsequence<T>(this IEnumerable<T> arr, int startIndex, int length) {
             return arr.Skip(startIndex).Take(length).ToArray();
+        }
+
+        public static V TryGet<K, V>(this Dictionary<K, V> dict, K key, V defaultValue) {
+            return dict.ContainsKey(key) ? dict[key] : defaultValue;
         }
     }
 }

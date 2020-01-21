@@ -40,6 +40,9 @@
       <HintPath>packages\ReSharper.Annotations.7.1.3.130415\lib\net\JetBrains.Annotations.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -64,18 +67,31 @@
     <Compile Include="Armors\Armor.Offsets.cs">
       <DependentUpon>Armor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Armors\EquipSlot.cs" />
-    <Compile Include="Armors\Variant.cs" />
+    <Compile Include="Assets\Assets.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Assets.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DataHelper.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Gems\Gem.cs" />
     <Compile Include="Gems\Gem.Offsets.cs">
       <DependentUpon>Gem.cs</DependentUpon>
     </Compile>
     <Compile Include="Gems\Skills.cs" />
+    <Compile Include="Generated\MHW_Editor\Armors\Armor.cs" />
+    <Compile Include="Generated\MHW_Editor\Gems\Gem.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\Item.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\Melee.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\Ranged.cs" />
     <Compile Include="IMhwItem.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="Items\Item.Offsets.cs">
+      <DependentUpon>Item.cs</DependentUpon>
+    </Compile>
     <Compile Include="MhwItem.cs" />
-    <Compile Include="Weapons\Element.cs" />
     <Compile Include="ISlots.cs" />
+    <Compile Include="Weapons\BowGun.cs" />
     <Compile Include="Weapons\Melee.cs" />
     <Compile Include="Weapons\Melee.Offsets.cs">
       <DependentUpon>Melee.cs</DependentUpon>
@@ -111,10 +127,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Assets\Assets.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Assets.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Assets\armorData.json" />
+    <None Include="Assets\rawItems.json" />
+    <None Include="Assets\skillData.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -124,5 +147,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="MHW-Template\MHW-Template.csproj">
+      <Project>{89c7cc4e-8a7b-45d0-95de-fb945b1def4c}</Project>
+      <Name>MHW-Template</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

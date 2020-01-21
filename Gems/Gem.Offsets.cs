@@ -2,10 +2,10 @@
     public partial class Gem {
         public override string Name {
             get {
-                if (Skill2 != "0") {
-                    return Skill1 + " / " + Skill2;
+                if (Skill_2_Raw != 0) {
+                    return $"{Skill_1} / {Skill_2}";
                 } else {
-                    return Skill1;
+                    return Skill_1;
                 }
             }
         }
