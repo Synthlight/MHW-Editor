@@ -1,7 +1,7 @@
 ﻿using MHW_Editor.Gems;
 
 namespace MHW_Editor.Weapons {
-    public partial class Melee : MhwItem, ISlots {
+    public partial class Melee : MhwItem, IWeapon, ISlots {
         public Melee(byte[] bytes, int offset) : base(bytes, offset) {
         }
 

@@ -205,12 +205,37 @@ namespace MHW_Editor {
         private void Btn_zenny_cheat_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!IsItem()) return;
+            if (!IsItem() && !IsArmor() && !IsWeapon()) return;
 
-            foreach (var o in items) {
-                Item item = o;
-                if (item.Buy_Price > 0) {
-                    item.Buy_Price = 1;
+            foreach (var item in items) {
+                switch (item) {
+                    case Item _: {
+                        Item itm = item;
+
+                        if (itm.Buy_Price > 0) {
+                            itm.Buy_Price = 1;
+                        }
+
+                        break;
+                    }
+                    case Armor _: {
+                        Armor armor = item;
+
+                        if (armor.Cost > 0) {
+                            armor.Cost = 1;
+                        }
+
+                        break;
+                    }
+                    case IWeapon _: {
+                        IWeapon weapon = item;
+
+                        if (weapon.Cost > 0) {
+                            weapon.Cost = 1;
+                        }
+
+                        break;
+                    }
                 }
 
                 ((dynamic) item).OnPropertyChanged();
@@ -257,7 +282,7 @@ namespace MHW_Editor {
             btn_slot_cheat.Visibility = IsArmor() || IsWeapon() ? Visibility.Visible : Visibility.Collapsed;
             btn_skill_level_cheat.Visibility = IsGem() || IsArmor() ? Visibility.Visible : Visibility.Collapsed;
             btn_set_bonus_cheat.Visibility = IsArmor() ? Visibility.Visible : Visibility.Collapsed;
-            btn_zenny_cheat.Visibility = IsItem() ? Visibility.Visible : Visibility.Collapsed;
+            btn_zenny_cheat.Visibility = IsItem() || IsArmor() || IsWeapon() ? Visibility.Visible : Visibility.Collapsed;
 
             using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
                 var len = dat.BaseStream.Length;

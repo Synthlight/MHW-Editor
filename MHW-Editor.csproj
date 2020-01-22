@@ -92,6 +92,7 @@
     <Compile Include="MhwItem.cs" />
     <Compile Include="ISlots.cs" />
     <Compile Include="Weapons\BowGun.cs" />
+    <Compile Include="Weapons\IWeapon.cs" />
     <Compile Include="Weapons\Melee.cs" />
     <Compile Include="Weapons\Melee.Offsets.cs">
       <DependentUpon>Melee.cs</DependentUpon>

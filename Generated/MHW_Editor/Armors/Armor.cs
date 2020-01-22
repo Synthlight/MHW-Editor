@@ -37,8 +37,8 @@ namespace MHW_Editor.Armors {
             get => GetData<byte>(20);
             set => SetData(20, value);
         }
-        public ushort Cost {
-            get => GetData<ushort>(21);
+        public uint Cost {
+            get => GetData<uint>(21);
             set => SetData(21, value);
         }
         public sbyte Fire_Res {

@@ -57,7 +57,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Equip Slot", 10, typeof(byte), typeof(EquipSlot)),
                     new MhwStructData.Entry("Defense", 11, typeof(ushort)),
                     new MhwStructData.Entry("Rarity", 20, typeof(byte)),
-                    new MhwStructData.Entry("Cost", 21, typeof(ushort)),
+                    new MhwStructData.Entry("Cost", 21, typeof(uint)),
                     new MhwStructData.Entry("Fire Res", 25, typeof(sbyte)),
                     new MhwStructData.Entry("Water Res", 26, typeof(sbyte)),
                     new MhwStructData.Entry("Ice Res", 27, typeof(sbyte)),

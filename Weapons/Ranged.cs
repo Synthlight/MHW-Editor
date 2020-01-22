@@ -1,7 +1,7 @@
 ﻿using MHW_Editor.Gems;
 
 namespace MHW_Editor.Weapons {
-    public partial class Ranged : MhwItem, ISlots {
+    public partial class Ranged : MhwItem, IWeapon, ISlots {
         public Ranged(byte[] bytes, int offset) : base(bytes, offset) {
         }
 
