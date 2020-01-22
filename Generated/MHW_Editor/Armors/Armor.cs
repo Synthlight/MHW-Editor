@@ -76,7 +76,7 @@ namespace MHW_Editor.Armors {
             get => GetData<byte>(33);
             set => SetData(33, value);
         }
-        public ushort Set_Skill_1_Raw {
+        protected ushort Set_Skill_1_Raw {
             get => GetData<ushort>(34);
             set => SetData(34, value);
         }
@@ -84,7 +84,7 @@ namespace MHW_Editor.Armors {
             get => GetData<byte>(36);
             set => SetData(36, value);
         }
-        public ushort Set_Skill_2_Raw {
+        protected ushort Set_Skill_2_Raw {
             get => GetData<ushort>(37);
             set => SetData(37, value);
         }
@@ -92,7 +92,7 @@ namespace MHW_Editor.Armors {
             get => GetData<byte>(39);
             set => SetData(39, value);
         }
-        public ushort Skill_1_Raw {
+        protected ushort Skill_1_Raw {
             get => GetData<ushort>(40);
             set => SetData(40, value);
         }
@@ -100,7 +100,7 @@ namespace MHW_Editor.Armors {
             get => GetData<byte>(42);
             set => SetData(42, value);
         }
-        public ushort Skill_2_Raw {
+        protected ushort Skill_2_Raw {
             get => GetData<ushort>(43);
             set => SetData(43, value);
         }
@@ -108,7 +108,7 @@ namespace MHW_Editor.Armors {
             get => GetData<byte>(45);
             set => SetData(45, value);
         }
-        public ushort Skill_3_Raw {
+        protected ushort Skill_3_Raw {
             get => GetData<ushort>(46);
             set => SetData(46, value);
         }
@@ -124,7 +124,7 @@ namespace MHW_Editor.Armors {
             get => GetData<ushort>(53);
             set => SetData(53, value);
         }
-        public byte Is_Permanent_Raw {
+        protected byte Is_Permanent_Raw {
             get => GetData<byte>(59);
             set => SetData(59, value);
         }

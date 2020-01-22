@@ -5,7 +5,7 @@ namespace MHW_Editor.Weapons {
     public partial class Ranged {
         public const ushort StructSize = 69;
         public const ushort InitialOffset = 10;
-        public uint Index___ {
+        private uint Index {
             get => GetData<uint>(0);
         }
         public ushort Id {
@@ -23,7 +23,7 @@ namespace MHW_Editor.Weapons {
             get => GetData<short>(10);
             set => SetData(10, value);
         }
-        public byte Is_Fixed_Upgrade_Raw {
+        protected byte Is_Fixed_Upgrade_Raw {
             get => GetData<byte>(14);
             set => SetData(14, value);
         }
@@ -111,7 +111,7 @@ namespace MHW_Editor.Weapons {
             get => GetData<byte>(57);
             set => SetData(57, value);
         }
-        public ushort Skill_Raw {
+        protected ushort Skill_Raw {
             get => GetData<ushort>(65);
             set => SetData(65, value);
         }

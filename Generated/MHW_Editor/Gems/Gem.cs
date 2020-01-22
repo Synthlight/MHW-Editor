@@ -5,7 +5,7 @@ namespace MHW_Editor.Gems {
     public partial class Gem {
         public const ushort StructSize = 28;
         public const ushort InitialOffset = 10;
-        public ushort Index___ {
+        private ushort Index {
             get => GetData<ushort>(4);
         }
         public ushort Id {
@@ -15,7 +15,7 @@ namespace MHW_Editor.Gems {
             get => GetData<byte>(8);
             set => SetData(8, value);
         }
-        public ushort Skill_1_Raw {
+        protected ushort Skill_1_Raw {
             get => GetData<ushort>(12);
             set => SetData(12, value);
         }
@@ -23,7 +23,7 @@ namespace MHW_Editor.Gems {
             get => GetData<byte>(16);
             set => SetData(16, value);
         }
-        public ushort Skill_2_Raw {
+        protected ushort Skill_2_Raw {
             get => GetData<ushort>(20);
             set => SetData(20, value);
         }

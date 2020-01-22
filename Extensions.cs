@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Controls;
+using JetBrains.Annotations;
 
 namespace MHW_Editor {
     public static class Extensions {
@@ -25,7 +26,7 @@ namespace MHW_Editor {
         }
 
         public static DataGridColumn FindColumn(this IEnumerable<DataGridColumn> list, string name) {
-            return list.First(x => x.Header.ToString() == name);
+            return list.FirstOrDefault(x => x.Header.ToString() == name);
         }
     }
 }

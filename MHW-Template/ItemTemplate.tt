@@ -30,7 +30,7 @@ namespace <#= _namespace #> {
         }
 
 #>
-        public <#= returnString #> <#= name #> {
+        <#= entry.accessLevel #> <#= returnString #> <#= name #> {
             get => <#= getCast #>GetData<<#= typeString #>>(<#= entry.offset #>);
 <#
         if (!entry.readOnly) {

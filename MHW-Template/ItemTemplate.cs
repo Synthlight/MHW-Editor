@@ -80,7 +80,14 @@ namespace MHW_Template
             
             #line default
             #line hidden
-            this.Write("        public ");
+            this.Write("        ");
+            
+            #line 32 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(entry.accessLevel));
+            
+            #line default
+            #line hidden
+            this.Write(" ");
             
             #line 32 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(returnString));
