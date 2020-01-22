@@ -2,8 +2,8 @@
     public enum EquipSlot {
         Head = 0,
         Chest = 1,
-        Arms,
         Waist,
+        Arms,
         Legs,
         Charm
     }

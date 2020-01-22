@@ -1,13 +1,20 @@
-﻿using MHW_Editor.Gems;
+﻿using System;
+using MHW_Editor.Assets;
+using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons {
     public partial class Ranged : MhwItem, IWeapon, ISlots {
-        public Ranged(byte[] bytes, int offset) : base(bytes, offset) {
+        private readonly string weaponFilename;
+
+        public Ranged(byte[] bytes, int offset, string weaponFilename) : base(bytes, offset) {
+            this.weaponFilename = weaponFilename;
         }
 
-        public sbyte Affinity {
-            get => Affinity_Raw;
-            set => Affinity_Raw = value.Clamp((sbyte) -100, (sbyte) 100);
+        public override string Name => DataHelper.weaponData.TryGet(weaponFilename, DataHelper.dummyDict).TryGet(Id, "Unknown");
+
+        public bool Is_Fixed_Upgrade {
+            get => Convert.ToBoolean(Is_Fixed_Upgrade_Raw);
+            set => Is_Fixed_Upgrade_Raw = Convert.ToByte(value);
         }
 
         public string Skill {

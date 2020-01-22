@@ -8,7 +8,7 @@ using MHW_Template.Weapons;
 
 namespace MHW_Generator {
     public static class Program {
-        private const string ROOT_OUTPUT = @"R:\Games\Monster Hunter World\MHW-Editor\Generated";
+        private const string ROOT_OUTPUT = @"..\..\..\Generated";
 
         [STAThread]
         public static void Main() {
@@ -16,14 +16,14 @@ namespace MHW_Generator {
                 size = 32,
                 offsetInitial = 10,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint)),
+                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Sub Type", 4, typeof(byte), typeof(ItemSubType)),
                     new MhwStructData.Entry("Type", 5, typeof(uint), typeof(ItemType)),
                     new MhwStructData.Entry("Rarity", 9, typeof(byte)),
                     new MhwStructData.Entry("Carry Limit", 10, typeof(byte)),
-                    new MhwStructData.Entry("Unknown 1", 11, typeof(byte)),
+                    new MhwStructData.Entry("Unknown Limit", 11, typeof(byte)),
                     new MhwStructData.Entry("Sort Order", 12, typeof(ushort)),
-                    new MhwStructData.Entry("Unknown 2", 14, typeof(uint)),
+                    new MhwStructData.Entry("Flags", 14, typeof(uint)),
                     new MhwStructData.Entry("Icon Id", 18, typeof(uint)),
                     new MhwStructData.Entry("Icon Color Id", 22, typeof(ushort)),
                     new MhwStructData.Entry("Sell Price", 24, typeof(uint)),
@@ -35,8 +35,8 @@ namespace MHW_Generator {
                 size = 28,
                 offsetInitial = 10,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(ushort)),
-                    new MhwStructData.Entry("Index", 4, typeof(ushort)),
+                    new MhwStructData.Entry("Index___", 4, typeof(ushort), true),
+                    new MhwStructData.Entry("Id", 0, typeof(ushort), true),
                     new MhwStructData.Entry("Size", 8, typeof(byte)),
                     new MhwStructData.Entry("Skill 1 Raw", 12, typeof(ushort)),
                     new MhwStructData.Entry("Skill 1 Level", 16, typeof(byte)),
@@ -49,11 +49,11 @@ namespace MHW_Generator {
                 size = 60,
                 offsetInitial = 10,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Index", 0, typeof(uint)),
+                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Order", 4, typeof(ushort)),
                     new MhwStructData.Entry("Variant", 6, typeof(byte), typeof(Variant)),
                     new MhwStructData.Entry("Set Id", 7, typeof(ushort)),
-                    new MhwStructData.Entry("Type", 9, typeof(byte)),
+                    new MhwStructData.Entry("Type", 9, typeof(byte), typeof(ArmorType)),
                     new MhwStructData.Entry("Equip Slot", 10, typeof(byte), typeof(EquipSlot)),
                     new MhwStructData.Entry("Defense", 11, typeof(ushort)),
                     new MhwStructData.Entry("Rarity", 20, typeof(byte)),
@@ -77,8 +77,9 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Skill 2 Level", 45, typeof(byte)),
                     new MhwStructData.Entry("Skill 3 Raw", 46, typeof(ushort)),
                     new MhwStructData.Entry("Skill 3 Level", 48, typeof(byte)),
-                    new MhwStructData.Entry("Gender", 49, typeof(byte)),
-                    new MhwStructData.Entry("Set Group", 53, typeof(ushort))
+                    new MhwStructData.Entry("Gender", 49, typeof(byte), typeof(Gender)),
+                    new MhwStructData.Entry("Set Group", 53, typeof(ushort)),
+                    new MhwStructData.Entry("Is Permanent Raw", 59, typeof(byte))
                 }
             });
 
@@ -86,17 +87,19 @@ namespace MHW_Generator {
                 size = 66,
                 offsetInitial = 10,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Index", 0, typeof(uint)),
-                    new MhwStructData.Entry("Part 1 Id", 4, typeof(ushort)),
-                    new MhwStructData.Entry("Part 2 Id", 6, typeof(short)),
-                    new MhwStructData.Entry("Color", 8, typeof(sbyte)),
+                    new MhwStructData.Entry("Index___", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Id", 56, typeof(ushort), true),
+                    new MhwStructData.Entry("Base Model Id", 6, typeof(short)),
+                    new MhwStructData.Entry("Part 1 Id", 8, typeof(short)),
+                    new MhwStructData.Entry("Part 2 Id", 10, typeof(short)),
+                    new MhwStructData.Entry("Is Fixed Upgrade Raw", 14, typeof(byte)),
                     new MhwStructData.Entry("Cost", 16, typeof(uint)),
                     new MhwStructData.Entry("Rarity", 20, typeof(byte)),
-                    new MhwStructData.Entry("Sharpness Quality Raw", 21, typeof(byte)),
-                    new MhwStructData.Entry("Sharpness Amount Raw", 22, typeof(byte)),
+                    new MhwStructData.Entry("Sharpness Quality", 21, typeof(byte)),
+                    new MhwStructData.Entry("Sharpness Amount", 22, typeof(byte)),
                     new MhwStructData.Entry("Damage", 23, typeof(ushort)),
                     new MhwStructData.Entry("Defense", 25, typeof(ushort)),
-                    new MhwStructData.Entry("Affinity Raw", 27, typeof(sbyte)),
+                    new MhwStructData.Entry("Affinity", 27, typeof(sbyte), valueString: "value.Clamp((sbyte) -100, (sbyte) 100)"),
                     new MhwStructData.Entry("Element", 28, typeof(byte), typeof(Element)),
                     new MhwStructData.Entry("Element Damage", 29, typeof(ushort)),
                     new MhwStructData.Entry("Hidden Element", 31, typeof(byte), typeof(Element)),
@@ -105,7 +108,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Slot Count", 35, typeof(byte)),
                     new MhwStructData.Entry("Slot 1 Size", 36, typeof(byte)),
                     new MhwStructData.Entry("Slot 2 Size", 37, typeof(byte)),
-                    new MhwStructData.Entry("Slot 3 Size", 38, typeof(byte))
+                    new MhwStructData.Entry("Slot 3 Size", 38, typeof(byte)),
+                    new MhwStructData.Entry("Skill Raw", 62, typeof(ushort))
                 }
             });
 
@@ -113,22 +117,27 @@ namespace MHW_Generator {
                 size = 69,
                 offsetInitial = 10,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Index", 0, typeof(ushort)),
-                    new MhwStructData.Entry("Muzzle Type", 16, typeof(byte)),
-                    new MhwStructData.Entry("Barrel Type", 17, typeof(byte)),
-                    new MhwStructData.Entry("Magazine Type", 18, typeof(byte)),
-                    new MhwStructData.Entry("Scope Type", 19, typeof(byte)),
+                    new MhwStructData.Entry("Index___", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Id", 59, typeof(ushort), true),
+                    new MhwStructData.Entry("Base Model Id", 6, typeof(short)),
+                    new MhwStructData.Entry("Part 1 Id", 8, typeof(short)),
+                    new MhwStructData.Entry("Part 2 Id", 10, typeof(short)),
+                    new MhwStructData.Entry("Is Fixed Upgrade Raw", 14, typeof(byte)),
+                    new MhwStructData.Entry("Muzzle Type", 16, typeof(byte), typeof(MuzzleType)),
+                    new MhwStructData.Entry("Barrel Type", 17, typeof(byte), typeof(BarrelType)),
+                    new MhwStructData.Entry("Magazine Type", 18, typeof(byte), typeof(MagazineType)),
+                    new MhwStructData.Entry("Scope Type", 19, typeof(byte), typeof(ScopeType)),
                     new MhwStructData.Entry("Cost", 20, typeof(uint)),
                     new MhwStructData.Entry("Rarity", 24, typeof(byte)),
                     new MhwStructData.Entry("Damage", 25, typeof(ushort)),
                     new MhwStructData.Entry("Defense", 27, typeof(ushort)),
-                    new MhwStructData.Entry("Affinity Raw", 29, typeof(sbyte)),
+                    new MhwStructData.Entry("Affinity", 29, typeof(sbyte), valueString: "value.Clamp((sbyte) -100, (sbyte) 100)"),
                     new MhwStructData.Entry("Element", 30, typeof(byte), typeof(Element)),
                     new MhwStructData.Entry("Element Damage", 31, typeof(ushort)),
                     new MhwStructData.Entry("Hidden Element", 33, typeof(byte), typeof(Element)),
                     new MhwStructData.Entry("Hidden Element Damage", 34, typeof(ushort)),
                     new MhwStructData.Entry("Elderseal", 36, typeof(byte), typeof(Elderseal)),
-                    new MhwStructData.Entry("Ammo Type", 37, typeof(byte)),
+                    new MhwStructData.Entry("Shell Type Id", 37, typeof(byte)),
                     new MhwStructData.Entry("Deviation", 39, typeof(byte), typeof(Deviation)),
                     new MhwStructData.Entry("Slot Count", 40, typeof(byte)),
                     new MhwStructData.Entry("Slot 1 Size", 41, typeof(byte)),

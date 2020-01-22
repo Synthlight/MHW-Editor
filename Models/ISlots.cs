@@ -1,4 +1,4 @@
-﻿namespace MHW_Editor {
+﻿namespace MHW_Editor.Models {
     public interface ISlots : IMhwItem {
         byte Slot_Count { get; set; }
         byte Slot_1_Size { get; set; }

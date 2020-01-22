@@ -1,9 +1,13 @@
-﻿using MHW_Editor.Gems;
+﻿using System;
+using MHW_Editor.Assets;
+using MHW_Editor.Models;
 
 namespace MHW_Editor.Armors {
     public partial class Armor : MhwItem, IMhwItem, ISlots {
         public Armor(byte[] bytes, int offset) : base(bytes, offset) {
         }
+
+        public override string Name => DataHelper.armorData.TryGet(Set_Id, "Unknown");
 
         public string Set_Skill_1 {
             get => DataHelper.skillData.TryGet(Set_Skill_1_Raw, new Skill {name = Set_Skill_1_Raw.ToString()}).name;
@@ -43,6 +47,11 @@ namespace MHW_Editor.Armors {
                 Skill_3_Raw = DataHelper.skillDataNameLookup[value];
                 OnPropertyChanged(nameof(Skill_3_Raw));
             }
+        }
+
+        public bool Is_Permanent {
+            get => Convert.ToBoolean(Is_Permanent_Raw);
+            set => Is_Permanent_Raw = Convert.ToByte(value);
         }
     }
 }

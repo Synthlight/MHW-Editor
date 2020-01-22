@@ -64,43 +64,28 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Armors\Armor.cs" />
-    <Compile Include="Armors\Armor.Offsets.cs">
-      <DependentUpon>Armor.cs</DependentUpon>
-    </Compile>
     <Compile Include="Assets\Assets.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Assets.resx</DependentUpon>
     </Compile>
-    <Compile Include="DataHelper.cs" />
+    <Compile Include="Assets\DataHelper.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Gems\Gem.cs" />
-    <Compile Include="Gems\Gem.Offsets.cs">
-      <DependentUpon>Gem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gems\Skills.cs" />
+    <Compile Include="Models\Skills.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\Armor.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\Gem.cs" />
     <Compile Include="Generated\MHW_Editor\Items\Item.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Melee.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Ranged.cs" />
-    <Compile Include="IMhwItem.cs" />
+    <Compile Include="Models\IMhwItem.cs" />
     <Compile Include="Items\Item.cs" />
-    <Compile Include="Items\Item.Offsets.cs">
-      <DependentUpon>Item.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MhwItem.cs" />
-    <Compile Include="ISlots.cs" />
+    <Compile Include="Models\MhwItem.cs" />
+    <Compile Include="Models\ISlots.cs" />
     <Compile Include="Weapons\BowGun.cs" />
     <Compile Include="Weapons\IWeapon.cs" />
     <Compile Include="Weapons\Melee.cs" />
-    <Compile Include="Weapons\Melee.Offsets.cs">
-      <DependentUpon>Melee.cs</DependentUpon>
-    </Compile>
     <Compile Include="Weapons\Ranged.cs" />
-    <Compile Include="Weapons\Ranged.Offsets.cs">
-      <DependentUpon>Ranged.cs</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -139,6 +124,20 @@
     <None Include="Assets\armorData.json" />
     <None Include="Assets\rawItems.json" />
     <None Include="Assets\skillData.json" />
+    <None Include="Assets\WeaponData\w_sword.json" />
+    <None Include="Assets\WeaponData\whistle.json" />
+    <None Include="Assets\WeaponData\tachi.json" />
+    <None Include="Assets\WeaponData\sword.json" />
+    <None Include="Assets\WeaponData\s_axe.json" />
+    <None Include="Assets\WeaponData\rod.json" />
+    <None Include="Assets\WeaponData\lbg.json" />
+    <None Include="Assets\WeaponData\l_sword.json" />
+    <None Include="Assets\WeaponData\lance.json" />
+    <None Include="Assets\WeaponData\hbg.json" />
+    <None Include="Assets\WeaponData\hammer.json" />
+    <None Include="Assets\WeaponData\g_lance.json" />
+    <None Include="Assets\WeaponData\c_axe.json" />
+    <None Include="Assets\WeaponData\bow.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Controls;
 
 namespace MHW_Editor {
     public static class Extensions {
@@ -19,7 +20,12 @@ namespace MHW_Editor {
         }
 
         public static V TryGet<K, V>(this Dictionary<K, V> dict, K key, V defaultValue) {
+            if (dict == null) return defaultValue;
             return dict.ContainsKey(key) ? dict[key] : defaultValue;
+        }
+
+        public static DataGridColumn FindColumn(this IEnumerable<DataGridColumn> list, string name) {
+            return list.First(x => x.Header.ToString() == name);
         }
     }
 }

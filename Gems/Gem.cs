@@ -1,6 +1,19 @@
-﻿namespace MHW_Editor.Gems {
+﻿using MHW_Editor.Assets;
+using MHW_Editor.Models;
+
+namespace MHW_Editor.Gems {
     public partial class Gem : MhwItem, IMhwItem {
         public Gem(byte[] bytes, int offset) : base(bytes, offset) {
+        }
+
+        public override string Name {
+            get {
+                if (Skill_2_Raw != 0) {
+                    return $"{Skill_1} / {Skill_2}";
+                } else {
+                    return Skill_1;
+                }
+            }
         }
 
         public string Skill_1 {

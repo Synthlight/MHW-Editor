@@ -7,7 +7,6 @@ namespace MHW_Editor.Items {
         public const ushort InitialOffset = 10;
         public uint Id {
             get => GetData<uint>(0);
-            set => SetData(0, value);
         }
         public MHW_Template.Items.ItemSubType Sub_Type {
             get => (MHW_Template.Items.ItemSubType) GetData<byte>(4);
@@ -25,7 +24,7 @@ namespace MHW_Editor.Items {
             get => GetData<byte>(10);
             set => SetData(10, value);
         }
-        public byte Unknown_1 {
+        public byte Unknown_Limit {
             get => GetData<byte>(11);
             set => SetData(11, value);
         }
@@ -33,7 +32,7 @@ namespace MHW_Editor.Items {
             get => GetData<ushort>(12);
             set => SetData(12, value);
         }
-        public uint Unknown_2 {
+        public uint Flags {
             get => GetData<uint>(14);
             set => SetData(14, value);
         }

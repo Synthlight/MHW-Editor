@@ -13,11 +13,15 @@ namespace MHW_Template {
             public ulong offset;
             public CodeTypeReference type;
             public CodeTypeReference enumReturn = null;
+            public bool readOnly;
+            public string valueString;
 
-            public Entry(string name, ulong offset, Type type) {
+            public Entry(string name, ulong offset, Type type, bool readOnly = false, string valueString = "value") {
                 this.name = name;
                 this.offset = offset;
                 this.type = new CodeTypeReference(type);
+                this.readOnly = readOnly;
+                this.valueString = valueString;
             }
 
             public Entry(string name, ulong offset, Type type, Type enumReturn) : this(name, offset, type) {

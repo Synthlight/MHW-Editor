@@ -1,4 +1,4 @@
-﻿namespace MHW_Editor.Gems {
+﻿namespace MHW_Editor.Models {
     public struct Skill {
         public ushort value;
         public string name;

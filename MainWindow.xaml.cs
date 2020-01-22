@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using MHW_Editor.Armors;
+using MHW_Editor.Assets;
 using MHW_Editor.Gems;
 using MHW_Editor.Items;
+using MHW_Editor.Models;
 using MHW_Editor.Weapons;
 using Microsoft.Win32;
 
@@ -28,28 +31,41 @@ namespace MHW_Editor {
             btn_set_bonus_cheat.Click += Btn_set_bonus_cheat_Click;
             btn_skill_level_cheat.Click += Btn_skill_level_cheat_Click;
             btn_zenny_cheat.Click += Btn_zenny_cheat_Click;
+            btn_damage_cheat.Click += Btn_damage_cheat_Click;
         }
 
         private void Dg_items_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e) {
+            Debug.Assert(e.PropertyName != null, "e.PropertyName != null");
+
             // ReSharper disable once SwitchStatementMissingSomeCases
             switch (e.PropertyName) {
                 case nameof(IMhwItem.Bytes):
                 case nameof(IMhwItem.Changed):
                     e.Cancel = true;
-                    return;
+                    break;
+                case nameof(Ranged.Muzzle_Type):
+                case nameof(Ranged.Barrel_Type):
+                case nameof(Ranged.Magazine_Type):
+                case nameof(Ranged.Scope_Type):
+                case nameof(Ranged.Shell_Type_Id):
+                case nameof(Ranged.Deviation):
+                    e.Cancel = IsBow();
+                    break;
             }
 
-            if (e.PropertyName.EndsWith("Raw")) {
+            if (e.PropertyName.EndsWith("Raw") || e.PropertyName.EndsWith("___")) {
                 e.Cancel = true;
-                return;
             }
+
+            if (e.Cancel) return;
 
             switch (e.PropertyName) {
                 case nameof(Armor.Set_Skill_1):
                 case nameof(Armor.Set_Skill_2):
                 case nameof(Armor.Skill_1):
                 case nameof(Armor.Skill_2):
-                case nameof(Armor.Skill_3): {
+                case nameof(Armor.Skill_3):
+                case nameof(Melee.Skill): {
                     var cb = new DataGridComboBoxColumn {
                         Header = e.Column.Header,
                         ItemsSource = DataHelper.skillDataNameLookup.Keys,
@@ -68,36 +84,39 @@ namespace MHW_Editor {
             dg_items.Columns.First(x => x.Header.ToString() == nameof(IMhwItem.Name)).DisplayIndex = 0;
 
             if (IsGem()) {
-                var skill1LevelIndex = dg_items.Columns.First(x => x.Header.ToString() == nameof(Gem.Skill_1_Level)).DisplayIndex - 1;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Gem.Skill_1)).DisplayIndex = skill1LevelIndex;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Gem.Skill_2)).DisplayIndex = skill1LevelIndex + 1;
+                var skill1LevelIndex = dg_items.Columns.FindColumn(nameof(Gem.Skill_1_Level)).DisplayIndex - 1;
+                dg_items.Columns.FindColumn(nameof(Gem.Skill_1)).DisplayIndex = skill1LevelIndex;
+                dg_items.Columns.FindColumn(nameof(Gem.Skill_2)).DisplayIndex = skill1LevelIndex + 1;
             }
 
             if (IsArmor()) {
-                var slot3SizeIndex = dg_items.Columns.First(x => x.Header.ToString() == nameof(Armor.Set_Skill_1_Level)).DisplayIndex - 1;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Armor.Set_Skill_1)).DisplayIndex = slot3SizeIndex;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Armor.Set_Skill_2)).DisplayIndex = slot3SizeIndex + 1;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Armor.Skill_1)).DisplayIndex = slot3SizeIndex + 2;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Armor.Skill_2)).DisplayIndex = slot3SizeIndex + 3;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Armor.Skill_3)).DisplayIndex = slot3SizeIndex + 4;
+                var slot3SizeIndex = dg_items.Columns.FindColumn(nameof(Armor.Set_Skill_1_Level)).DisplayIndex - 1;
+                dg_items.Columns.FindColumn(nameof(Armor.Set_Skill_1)).DisplayIndex = slot3SizeIndex;
+                dg_items.Columns.FindColumn(nameof(Armor.Set_Skill_2)).DisplayIndex = slot3SizeIndex + 1;
+                dg_items.Columns.FindColumn(nameof(Armor.Skill_1)).DisplayIndex = slot3SizeIndex + 2;
+                dg_items.Columns.FindColumn(nameof(Armor.Skill_2)).DisplayIndex = slot3SizeIndex + 3;
+                dg_items.Columns.FindColumn(nameof(Armor.Skill_3)).DisplayIndex = slot3SizeIndex + 4;
+
+                var setGroupIndex = dg_items.Columns.FindColumn(nameof(Armor.Set_Group)).DisplayIndex;
+                dg_items.Columns.FindColumn(nameof(Armor.Is_Permanent)).DisplayIndex = setGroupIndex + 1;
             }
 
             if (IsMelee()) {
-                var rarityIndex = dg_items.Columns.First(x => x.Header.ToString() == nameof(Melee.Rarity)).DisplayIndex;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Melee.Sharpness_Quality)).DisplayIndex = rarityIndex + 1;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Melee.Sharpness_Amount)).DisplayIndex = rarityIndex + 2;
+                var part2Index = dg_items.Columns.FindColumn(nameof(Melee.Part_2_Id)).DisplayIndex;
+                dg_items.Columns.FindColumn(nameof(Melee.Is_Fixed_Upgrade)).DisplayIndex = part2Index + 1;
 
-                var defenseIndex = dg_items.Columns.First(x => x.Header.ToString() == nameof(Melee.Defense)).DisplayIndex;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Melee.Affinity)).DisplayIndex = defenseIndex + 1;
+                var rarityIndex = dg_items.Columns.FindColumn(nameof(Melee.Rarity)).DisplayIndex;
+                dg_items.Columns.FindColumn(nameof(Melee.Sharpness_Quality)).DisplayIndex = rarityIndex + 1;
+                dg_items.Columns.FindColumn(nameof(Melee.Sharpness_Amount)).DisplayIndex = rarityIndex + 2;
             }
 
             if (IsRanged()) {
-                var defenseIndex = dg_items.Columns.First(x => x.Header.ToString() == nameof(Ranged.Defense)).DisplayIndex;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Ranged.Affinity)).DisplayIndex = defenseIndex + 1;
+                var part2Index = dg_items.Columns.FindColumn(nameof(Melee.Part_2_Id)).DisplayIndex;
+                dg_items.Columns.FindColumn(nameof(Ranged.Is_Fixed_Upgrade)).DisplayIndex = part2Index + 1;
 
-                var slotSize3Index = dg_items.Columns.First(x => x.Header.ToString() == nameof(Ranged.Slot_3_Size)).DisplayIndex;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Ranged.Special_Ammo_Type)).DisplayIndex = slotSize3Index + 1;
-                dg_items.Columns.First(x => x.Header.ToString() == nameof(Ranged.Skill)).DisplayIndex = slotSize3Index + 1;
+                var slotSize3Index = dg_items.Columns.FindColumn(nameof(Ranged.Slot_3_Size)).DisplayIndex;
+                dg_items.Columns.FindColumn(nameof(Ranged.Special_Ammo_Type)).DisplayIndex = slotSize3Index + 1;
+                dg_items.Columns.FindColumn(nameof(Ranged.Skill)).DisplayIndex = slotSize3Index + 1;
             }
 
             foreach (var column in dg_items.Columns) {
@@ -112,6 +131,12 @@ namespace MHW_Editor {
                 }
 
                 column.Header = ((string) column.Header).Replace("_", " ");
+            }
+        }
+
+        private void dg_items_GotFocus(object sender, RoutedEventArgs e) {
+            if (sender is DataGridCell cell && !cell.IsReadOnly) {
+                cell.IsEditing = true;
             }
         }
 
@@ -238,7 +263,23 @@ namespace MHW_Editor {
                     }
                 }
 
-                ((dynamic) item).OnPropertyChanged();
+                item.OnPropertyChanged();
+            }
+        }
+
+        private void Btn_damage_cheat_Click(object sender, RoutedEventArgs e) {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            if (!IsWeapon()) return;
+
+            foreach (var item in items) {
+                IWeapon weapon = item;
+
+                if (weapon.Damage > 0) {
+                    weapon.Damage = 5000;
+                }
+
+                item.OnPropertyChanged();
             }
         }
 
@@ -283,6 +324,9 @@ namespace MHW_Editor {
             btn_skill_level_cheat.Visibility = IsGem() || IsArmor() ? Visibility.Visible : Visibility.Collapsed;
             btn_set_bonus_cheat.Visibility = IsArmor() ? Visibility.Visible : Visibility.Collapsed;
             btn_zenny_cheat.Visibility = IsItem() || IsArmor() || IsWeapon() ? Visibility.Visible : Visibility.Collapsed;
+            btn_damage_cheat.Visibility = IsWeapon() ? Visibility.Visible : Visibility.Collapsed;
+
+            var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 
             using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
                 var len = dat.BaseStream.Length;
@@ -296,12 +340,12 @@ namespace MHW_Editor {
                     dynamic obj = null;
 
                     if (IsMelee()) {
-                        obj = new Melee(buff, offset);
+                        obj = new Melee(buff, offset, weaponFilename);
                     } else if (IsRanged()) {
                         if (IsBow()) {
-                            obj = new Ranged(buff, offset);
+                            obj = new Ranged(buff, offset, weaponFilename);
                         } else if (IsBowGun()) {
-                            obj = new BowGun(buff, offset);
+                            obj = new BowGun(buff, offset, weaponFilename);
                         }
                     } else if (IsArmor()) {
                         obj = new Armor(buff, offset);

@@ -1,23 +1,28 @@
-﻿using MHW_Editor.Gems;
+﻿using System;
+using MHW_Editor.Assets;
+using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons {
     public partial class Melee : MhwItem, IWeapon, ISlots {
-        public Melee(byte[] bytes, int offset) : base(bytes, offset) {
+        private readonly string weaponFilename;
+
+        public Melee(byte[] bytes, int offset, string weaponFilename) : base(bytes, offset) {
+            this.weaponFilename = weaponFilename;
         }
 
-        public byte Sharpness_Quality {
-            get => Sharpness_Quality_Raw;
-            set => Sharpness_Quality_Raw = value.Clamp((byte) 1, (byte) 118);
+        public override string Name => DataHelper.weaponData.TryGet(weaponFilename, DataHelper.dummyDict).TryGet(Id, "Unknown");
+
+        public bool Is_Fixed_Upgrade {
+            get => Convert.ToBoolean(Is_Fixed_Upgrade_Raw);
+            set => Is_Fixed_Upgrade_Raw = Convert.ToByte(value);
         }
 
-        public byte Sharpness_Amount {
-            get => Sharpness_Amount_Raw;
-            set => Sharpness_Amount_Raw = value.Clamp((byte) 1, (byte) 8);
-        }
-
-        public sbyte Affinity {
-            get => Affinity_Raw;
-            set => Affinity_Raw = value.Clamp((sbyte) -100, (sbyte) 100);
+        public string Skill {
+            get => DataHelper.skillData.TryGet(Skill_Raw, new Skill {name = Skill_Raw.ToString()}).name;
+            set {
+                Skill_Raw = DataHelper.skillDataNameLookup[value];
+                OnPropertyChanged(nameof(Skill_Raw));
+            }
         }
     }
 }

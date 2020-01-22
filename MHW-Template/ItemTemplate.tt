@@ -32,7 +32,13 @@ namespace <#= _namespace #> {
 #>
         public <#= returnString #> <#= name #> {
             get => <#= getCast #>GetData<<#= typeString #>>(<#= entry.offset #>);
-            set => SetData(<#= entry.offset #>, <#= setCast #>value);
+<#
+        if (!entry.readOnly) {
+#>
+            set => SetData(<#= entry.offset #>, <#= setCast #><#= entry.valueString #>);
+<#
+        }
+#>
         }
 <#
     }

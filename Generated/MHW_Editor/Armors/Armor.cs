@@ -5,9 +5,8 @@ namespace MHW_Editor.Armors {
     public partial class Armor {
         public const ushort StructSize = 60;
         public const ushort InitialOffset = 10;
-        public uint Index {
+        public uint Id {
             get => GetData<uint>(0);
-            set => SetData(0, value);
         }
         public ushort Order {
             get => GetData<ushort>(4);
@@ -21,9 +20,9 @@ namespace MHW_Editor.Armors {
             get => GetData<ushort>(7);
             set => SetData(7, value);
         }
-        public byte Type {
-            get => GetData<byte>(9);
-            set => SetData(9, value);
+        public MHW_Template.Armors.ArmorType Type {
+            get => (MHW_Template.Armors.ArmorType) GetData<byte>(9);
+            set => SetData(9, (byte) value);
         }
         public MHW_Template.Armors.EquipSlot Equip_Slot {
             get => (MHW_Template.Armors.EquipSlot) GetData<byte>(10);
@@ -117,13 +116,17 @@ namespace MHW_Editor.Armors {
             get => GetData<byte>(48);
             set => SetData(48, value);
         }
-        public byte Gender {
-            get => GetData<byte>(49);
-            set => SetData(49, value);
+        public MHW_Template.Armors.Gender Gender {
+            get => (MHW_Template.Armors.Gender) GetData<byte>(49);
+            set => SetData(49, (byte) value);
         }
         public ushort Set_Group {
             get => GetData<ushort>(53);
             set => SetData(53, value);
+        }
+        public byte Is_Permanent_Raw {
+            get => GetData<byte>(59);
+            set => SetData(59, value);
         }
     }
 }

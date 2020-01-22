@@ -48,10 +48,22 @@
                         HorizontalAlignment="Right"
                         Content="Set Buy Prices to 1"
                         Visibility="Collapsed"/>
+                <Button Name="btn_damage_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Content="Set Damage to 5000"
+                        Visibility="Collapsed"/>
             </StackPanel>
         </DockPanel>
         <DataGrid Name="dg_items"
                   Grid.Row="1"
-                  CanUserAddRows="False"/>
+                  CanUserAddRows="False">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <EventSetter Event="GotFocus"
+                                 Handler="dg_items_GotFocus" />
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
     </Grid>
 </Window>

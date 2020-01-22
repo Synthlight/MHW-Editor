@@ -2,7 +2,7 @@
 
 namespace MHW_Editor.Weapons {
     public class BowGun : Ranged {
-        public BowGun(byte[] bytes, int offset) : base(bytes, offset) {
+        public BowGun(byte[] bytes, int offset, string weaponFilename) : base(bytes, offset, weaponFilename) {
         }
 
         public new SpecialAmmo Special_Ammo_Type {

@@ -5,13 +5,11 @@ namespace MHW_Editor.Gems {
     public partial class Gem {
         public const ushort StructSize = 28;
         public const ushort InitialOffset = 10;
+        public ushort Index___ {
+            get => GetData<ushort>(4);
+        }
         public ushort Id {
             get => GetData<ushort>(0);
-            set => SetData(0, value);
-        }
-        public ushort Index {
-            get => GetData<ushort>(4);
-            set => SetData(4, value);
         }
         public byte Size {
             get => GetData<byte>(8);

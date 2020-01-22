@@ -5,21 +5,27 @@ namespace MHW_Editor.Weapons {
     public partial class Melee {
         public const ushort StructSize = 66;
         public const ushort InitialOffset = 10;
-        public uint Index {
+        public uint Index___ {
             get => GetData<uint>(0);
-            set => SetData(0, value);
         }
-        public ushort Part_1_Id {
-            get => GetData<ushort>(4);
-            set => SetData(4, value);
+        public ushort Id {
+            get => GetData<ushort>(56);
         }
-        public short Part_2_Id {
+        public short Base_Model_Id {
             get => GetData<short>(6);
             set => SetData(6, value);
         }
-        public sbyte Color {
-            get => GetData<sbyte>(8);
+        public short Part_1_Id {
+            get => GetData<short>(8);
             set => SetData(8, value);
+        }
+        public short Part_2_Id {
+            get => GetData<short>(10);
+            set => SetData(10, value);
+        }
+        public byte Is_Fixed_Upgrade_Raw {
+            get => GetData<byte>(14);
+            set => SetData(14, value);
         }
         public uint Cost {
             get => GetData<uint>(16);
@@ -29,11 +35,11 @@ namespace MHW_Editor.Weapons {
             get => GetData<byte>(20);
             set => SetData(20, value);
         }
-        public byte Sharpness_Quality_Raw {
+        public byte Sharpness_Quality {
             get => GetData<byte>(21);
             set => SetData(21, value);
         }
-        public byte Sharpness_Amount_Raw {
+        public byte Sharpness_Amount {
             get => GetData<byte>(22);
             set => SetData(22, value);
         }
@@ -45,9 +51,9 @@ namespace MHW_Editor.Weapons {
             get => GetData<ushort>(25);
             set => SetData(25, value);
         }
-        public sbyte Affinity_Raw {
+        public sbyte Affinity {
             get => GetData<sbyte>(27);
-            set => SetData(27, value);
+            set => SetData(27, value.Clamp((sbyte) -100, (sbyte) 100));
         }
         public MHW_Template.Weapons.Element Element {
             get => (MHW_Template.Weapons.Element) GetData<byte>(28);
@@ -84,6 +90,10 @@ namespace MHW_Editor.Weapons {
         public byte Slot_3_Size {
             get => GetData<byte>(38);
             set => SetData(38, value);
+        }
+        public ushort Skill_Raw {
+            get => GetData<ushort>(62);
+            set => SetData(62, value);
         }
     }
 }

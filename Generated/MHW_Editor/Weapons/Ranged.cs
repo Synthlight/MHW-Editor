@@ -5,25 +5,43 @@ namespace MHW_Editor.Weapons {
     public partial class Ranged {
         public const ushort StructSize = 69;
         public const ushort InitialOffset = 10;
-        public ushort Index {
-            get => GetData<ushort>(0);
-            set => SetData(0, value);
+        public uint Index___ {
+            get => GetData<uint>(0);
         }
-        public byte Muzzle_Type {
-            get => GetData<byte>(16);
-            set => SetData(16, value);
+        public ushort Id {
+            get => GetData<ushort>(59);
         }
-        public byte Barrel_Type {
-            get => GetData<byte>(17);
-            set => SetData(17, value);
+        public short Base_Model_Id {
+            get => GetData<short>(6);
+            set => SetData(6, value);
         }
-        public byte Magazine_Type {
-            get => GetData<byte>(18);
-            set => SetData(18, value);
+        public short Part_1_Id {
+            get => GetData<short>(8);
+            set => SetData(8, value);
         }
-        public byte Scope_Type {
-            get => GetData<byte>(19);
-            set => SetData(19, value);
+        public short Part_2_Id {
+            get => GetData<short>(10);
+            set => SetData(10, value);
+        }
+        public byte Is_Fixed_Upgrade_Raw {
+            get => GetData<byte>(14);
+            set => SetData(14, value);
+        }
+        public MHW_Template.Weapons.MuzzleType Muzzle_Type {
+            get => (MHW_Template.Weapons.MuzzleType) GetData<byte>(16);
+            set => SetData(16, (byte) value);
+        }
+        public MHW_Template.Weapons.BarrelType Barrel_Type {
+            get => (MHW_Template.Weapons.BarrelType) GetData<byte>(17);
+            set => SetData(17, (byte) value);
+        }
+        public MHW_Template.Weapons.MagazineType Magazine_Type {
+            get => (MHW_Template.Weapons.MagazineType) GetData<byte>(18);
+            set => SetData(18, (byte) value);
+        }
+        public MHW_Template.Weapons.ScopeType Scope_Type {
+            get => (MHW_Template.Weapons.ScopeType) GetData<byte>(19);
+            set => SetData(19, (byte) value);
         }
         public uint Cost {
             get => GetData<uint>(20);
@@ -41,9 +59,9 @@ namespace MHW_Editor.Weapons {
             get => GetData<ushort>(27);
             set => SetData(27, value);
         }
-        public sbyte Affinity_Raw {
+        public sbyte Affinity {
             get => GetData<sbyte>(29);
-            set => SetData(29, value);
+            set => SetData(29, value.Clamp((sbyte) -100, (sbyte) 100));
         }
         public MHW_Template.Weapons.Element Element {
             get => (MHW_Template.Weapons.Element) GetData<byte>(30);
@@ -65,7 +83,7 @@ namespace MHW_Editor.Weapons {
             get => (MHW_Template.Weapons.Elderseal) GetData<byte>(36);
             set => SetData(36, (byte) value);
         }
-        public byte Ammo_Type {
+        public byte Shell_Type_Id {
             get => GetData<byte>(37);
             set => SetData(37, value);
         }
