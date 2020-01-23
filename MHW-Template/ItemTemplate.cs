@@ -26,7 +26,7 @@ namespace MHW_Template
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("\r\n\r\n");
+            this.Write("\r\n");
             this.Write("\r\nusing MHW_Template;\r\n\r\nnamespace ");
             
             #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
