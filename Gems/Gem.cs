@@ -7,15 +7,7 @@ namespace MHW_Editor.Gems {
         public Gem(byte[] bytes, int offset) : base(bytes, offset) {
         }
 
-        public override string Name {
-            get {
-                if (Skill_2_Raw != 0) {
-                    return $"{Skill_1} / {Skill_2}";
-                } else {
-                    return Skill_1;
-                }
-            }
-        }
+        public override string Name => DataHelper.itemData.TryGet((uint) (Id * 2), "Unknown");
 
         public string Skill_1 {
             get => DataHelper.skillData.TryGet(Skill_1_Raw, new Skill {name = Skill_1_Raw.ToString()}).name;
