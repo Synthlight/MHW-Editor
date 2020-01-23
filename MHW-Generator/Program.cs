@@ -35,12 +35,12 @@ namespace MHW_Generator {
                 size = 6,
                 offsetInitial = 10,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Close Range", 0, typeof(byte)),
-                    new MhwStructData.Entry("Power", 1, typeof(byte)),
-                    new MhwStructData.Entry("Paralysis", 2, typeof(byte)),
-                    new MhwStructData.Entry("Poison", 3, typeof(byte)),
-                    new MhwStructData.Entry("Sleep", 4, typeof(byte)),
-                    new MhwStructData.Entry("Blast", 5, typeof(byte))
+                    new MhwStructData.Entry("Close Range", 0, typeof(byte), typeof(CoatingType)),
+                    new MhwStructData.Entry("Power", 1, typeof(byte), typeof(CoatingType)),
+                    new MhwStructData.Entry("Paralysis", 2, typeof(byte), typeof(CoatingType)),
+                    new MhwStructData.Entry("Poison", 3, typeof(byte), typeof(CoatingType)),
+                    new MhwStructData.Entry("Sleep", 4, typeof(byte), typeof(CoatingType)),
+                    new MhwStructData.Entry("Blast", 5, typeof(byte), typeof(CoatingType))
                 }
             });
 

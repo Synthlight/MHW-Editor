@@ -53,6 +53,11 @@
                         HorizontalAlignment="Right"
                         Content="Set Damage to 5000"
                         Visibility="Collapsed"/>
+                <Button Name="btn_enable_all_coatings_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Content="Enable All Coatings"
+                        Visibility="Collapsed"/>
             </StackPanel>
         </DockPanel>
         <DataGrid Name="dg_items"
@@ -61,7 +66,7 @@
             <DataGrid.Resources>
                 <Style TargetType="{x:Type DataGridCell}">
                     <EventSetter Event="GotFocus"
-                                 Handler="dg_items_GotFocus" />
+                                 Handler="dg_items_GotFocus"/>
                 </Style>
             </DataGrid.Resources>
         </DataGrid>

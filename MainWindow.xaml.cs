@@ -11,12 +11,15 @@ using MHW_Editor.Gems;
 using MHW_Editor.Items;
 using MHW_Editor.Models;
 using MHW_Editor.Weapons;
+using MHW_Template.Weapons;
 using Microsoft.Win32;
 
 namespace MHW_Editor {
     public partial class MainWindow {
         private readonly List<dynamic> items = new List<dynamic>();
         private string targetFile;
+
+        private const bool ENABLE_CHEATS = true;
 
         public MainWindow() {
             InitializeComponent();
@@ -31,6 +34,7 @@ namespace MHW_Editor {
             btn_skill_level_cheat.Click += Btn_skill_level_cheat_Click;
             btn_zenny_cheat.Click += Btn_zenny_cheat_Click;
             btn_damage_cheat.Click += Btn_damage_cheat_Click;
+            btn_enable_all_coatings_cheat.Click += Btn_enable_all_coatings_cheat_Click;
         }
 
         private void Dg_items_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e) {
@@ -290,10 +294,29 @@ namespace MHW_Editor {
             }
         }
 
+        private void Btn_enable_all_coatings_cheat_Click(object sender, RoutedEventArgs e) {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            if (!IsBottleTable()) return;
+
+            foreach (var item in items) {
+                BottleTable bottleTable = item;
+
+                bottleTable.Close_Range = CoatingType.Yes;
+                bottleTable.Power = CoatingType.Yes;
+                bottleTable.Paralysis = CoatingType.Yes;
+                bottleTable.Poison = CoatingType.Yes;
+                bottleTable.Sleep = CoatingType.Yes;
+                bottleTable.Blast = CoatingType.Yes;
+
+                item.OnPropertyChanged();
+            }
+        }
+
         private void Open() {
             var ofdResult = new OpenFileDialog {
                 // ReSharper disable StringLiteralTypo
-                Filter = "Weapons / Armor / Gems / Items (*.wp_dat/_g, *.am_dat, *.sgpa, *.itm, *.bbtbl)|*.wp_dat;*.wp_dat_g;*.am_dat;*.sgpa;*.itm;*.bbtbl",
+                Filter = "Weapons / Armor / Gems / Items / BottleTable (*.wp_dat/_g, *.am_dat, *.sgpa, *.itm, *.bbtbl)|*.wp_dat;*.wp_dat_g;*.am_dat;*.sgpa;*.itm;*.bbtbl",
                 Multiselect = false
             };
             ofdResult.ShowDialog();
@@ -330,11 +353,14 @@ namespace MHW_Editor {
                 return;
             }
 
-            btn_slot_cheat.Visibility = IsArmor() || IsWeapon() ? Visibility.Visible : Visibility.Collapsed;
-            btn_skill_level_cheat.Visibility = IsGem() || IsArmor() ? Visibility.Visible : Visibility.Collapsed;
-            btn_set_bonus_cheat.Visibility = IsArmor() ? Visibility.Visible : Visibility.Collapsed;
-            btn_zenny_cheat.Visibility = IsItem() || IsArmor() || IsWeapon() ? Visibility.Visible : Visibility.Collapsed;
-            btn_damage_cheat.Visibility = IsWeapon() ? Visibility.Visible : Visibility.Collapsed;
+            if (ENABLE_CHEATS) {
+                btn_slot_cheat.Visibility = IsArmor() || IsWeapon() ? Visibility.Visible : Visibility.Collapsed;
+                btn_skill_level_cheat.Visibility = IsGem() || IsArmor() ? Visibility.Visible : Visibility.Collapsed;
+                btn_set_bonus_cheat.Visibility = IsArmor() ? Visibility.Visible : Visibility.Collapsed;
+                btn_zenny_cheat.Visibility = IsItem() || IsArmor() || IsWeapon() ? Visibility.Visible : Visibility.Collapsed;
+                btn_damage_cheat.Visibility = IsWeapon() ? Visibility.Visible : Visibility.Collapsed;
+                btn_enable_all_coatings_cheat.Visibility = IsBottleTable() ? Visibility.Visible : Visibility.Collapsed;
+            }
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 
