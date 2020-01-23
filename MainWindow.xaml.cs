@@ -35,6 +35,9 @@ namespace MHW_Editor {
             btn_zenny_cheat.Click += Btn_zenny_cheat_Click;
             btn_damage_cheat.Click += Btn_damage_cheat_Click;
             btn_enable_all_coatings_cheat.Click += Btn_enable_all_coatings_cheat_Click;
+
+            Width = SystemParameters.MaximizedPrimaryScreenWidth * 0.8;
+            Height = SystemParameters.MaximizedPrimaryScreenHeight * 0.5;
         }
 
         private void Dg_items_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e) {
