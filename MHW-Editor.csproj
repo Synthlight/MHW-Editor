@@ -71,7 +71,9 @@
     </Compile>
     <Compile Include="Assets\DataHelper.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="Gems\SkillDat.cs" />
     <Compile Include="Gems\Gem.cs" />
+    <Compile Include="Generated\MHW_Editor\Gems\SkillDat.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ArmUp.cs" />
     <Compile Include="Generated\MHW_Editor\Items\BottleTable.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Sharpness.cs" />

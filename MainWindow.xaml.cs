@@ -17,10 +17,21 @@ using Microsoft.Win32;
 
 namespace MHW_Editor {
     public partial class MainWindow {
+        private const bool ENABLE_CHEAT_BUTTONS = true;
+        private static readonly string[] FILE_TYPES = {
+            "*.wp_dat",
+            "*.wp_dat_g",
+            "*.am_dat",
+            "*.sgpa",
+            "*.itm",
+            "*.bbtbl",
+            "*.arm_up",
+            "*.kire",
+            "*.skl_dat"
+        };
+
         private readonly List<dynamic> items = new List<dynamic>();
         private string targetFile;
-
-        private const bool ENABLE_CHEAT_BUTTONS = true;
 
         public MainWindow() {
             InitializeComponent();
@@ -350,7 +361,7 @@ namespace MHW_Editor {
         private void Open() {
             var ofdResult = new OpenFileDialog {
                 // ReSharper disable StringLiteralTypo
-                Filter = "Weapons / Armor / Gems / Items / Coatings / Sharpness (*.wp_dat/_g, *.am_dat, *.sgpa, *.itm, *.bbtbl, *.kire)|*.wp_dat;*.wp_dat_g;*.am_dat;*.sgpa;*.itm;*.bbtbl;*.arm_up;*.kire",
+                Filter = $"MHW Data Files (*.wp_dat/_g, *.am_dat, *.sgpa, *.itm, *.bbtbl, *.kire)|{string.Join(";", FILE_TYPES)}",
                 Multiselect = false
             };
             ofdResult.ShowDialog();
@@ -389,6 +400,9 @@ namespace MHW_Editor {
             } else if (IsSharpness()) {
                 initialOffset = Sharpness.InitialOffset;
                 itemSize = Sharpness.StructSize;
+            } else if (IsSkillDat()) {
+                initialOffset = SkillDat.InitialOffset;
+                itemSize = SkillDat.StructSize;
             } else {
                 return;
             }
@@ -436,6 +450,8 @@ namespace MHW_Editor {
                         obj = new ArmUp(buff, offset);
                     } else if (IsSharpness()) {
                         obj = new Sharpness(buff, offset);
+                    } else if (IsSkillDat()) {
+                        obj = new SkillDat(buff, offset);
                     }
 
                     if (obj == null) return;
@@ -471,6 +487,7 @@ namespace MHW_Editor {
         private bool IsBottleTable() => Path.GetExtension(targetFile) == ".bbtbl";
         private bool IsArmUp() => Path.GetExtension(targetFile) == ".arm_up";
         private bool IsSharpness() => Path.GetExtension(targetFile) == ".kire";
+        private bool IsSkillDat() => Path.GetExtension(targetFile) == ".skl_dat";
         private bool HasName() => dg_items.Columns.FirstOrDefault(x => x.Header.ToString() == "Name") != null;
     }
 }

@@ -1,6 +1,3 @@
-
-
-
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {

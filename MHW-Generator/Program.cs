@@ -76,6 +76,23 @@ namespace MHW_Generator {
                 }
             });
 
+            GenerateItemProps("MHW_Editor.Gems", "SkillDat", new MhwStructData {
+                size = 19,
+                offsetInitial = 10,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id", 0, typeof(ushort), true),
+                    new MhwStructData.Entry("Level", 2, typeof(byte), true),
+                    new MhwStructData.Entry("Param 1", 3, typeof(ushort)),
+                    new MhwStructData.Entry("Param 2", 5, typeof(ushort)),
+                    new MhwStructData.Entry("Param 3", 7, typeof(ushort)),
+                    new MhwStructData.Entry("Param 4", 9, typeof(ushort)),
+                    new MhwStructData.Entry("Param 5", 11, typeof(ushort)),
+                    new MhwStructData.Entry("Param 6", 13, typeof(ushort)),
+                    new MhwStructData.Entry("Param 7", 15, typeof(ushort)),
+                    new MhwStructData.Entry("Param 8", 17, typeof(ushort))
+                }
+            });
+
             GenerateItemProps("MHW_Editor.Armors", "Armor", new MhwStructData {
                 size = 60,
                 offsetInitial = 10,
