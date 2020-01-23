@@ -1,16 +1,9 @@
-﻿using System.ComponentModel;
-
-namespace MHW_Template.Items {
+﻿namespace MHW_Template.Items {
     public enum ItemType {
-        [Description("Item")]
-        ITEM = 0,
-        [Description("Material")]
-        MATERIAL = 1,
-        [Description("Account Item")]
-        ACCOUNT_ITEM,
-        [Description("Ammo/Coating")]
-        AMMO_OR_COATING,
-        [Description("Decoration")]
-        DECORATION
+        Item = 0,
+        Material = 1,
+        Account_Item,
+        Ammo_or_Coating,
+        Decoration
     }
 }

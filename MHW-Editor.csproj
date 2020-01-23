@@ -124,7 +124,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Assets\armorData.json" />
-    <None Include="Assets\rawItems.json" />
+    <None Include="Assets\itemData.json" />
     <None Include="Assets\skillData.json" />
     <None Include="Assets\WeaponData\w_sword.json" />
     <None Include="Assets\WeaponData\whistle.json" />

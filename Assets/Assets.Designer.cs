@@ -123,6 +123,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] itemData {
+            get {
+                object obj = ResourceManager.GetObject("itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] l_sword {
             get {
                 object obj = ResourceManager.GetObject("l_sword", resourceCulture);
@@ -146,16 +156,6 @@ namespace MHW_Editor.Assets {
         internal static byte[] lbg {
             get {
                 object obj = ResourceManager.GetObject("lbg", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] rawItems {
-            get {
-                object obj = ResourceManager.GetObject("rawItems", resourceCulture);
                 return ((byte[])(obj));
             }
         }

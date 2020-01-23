@@ -7,6 +7,6 @@ namespace MHW_Editor.Items {
         public Item(byte[] bytes, int offset) : base(bytes, offset) {
         }
 
-        public override string Name => DataHelper.rawItems.TryGet(Id, "Unknown");
+        public override string Name => DataHelper.itemData.TryGet(Id * 2, "Unknown");
     }
 }

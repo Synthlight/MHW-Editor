@@ -7,7 +7,7 @@ using MHW_Name_Extractor.Structs;
 using MHW_Template;
 using Newtonsoft.Json;
 
-namespace MHW_Generator {
+namespace MHW_Name_Extractor {
     public static class Program {
         private const string ROOT_OUTPUT = @"..\..\..\Assets";
         private const string COMMON_TEXT_ROOT = @"V:\MHW\IB\chunk\common\text";
@@ -17,6 +17,7 @@ namespace MHW_Generator {
         public static void Main() {
             // ReSharper disable StringLiteralTypo
             GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\armor_eng.gmd", $@"{ROOT_OUTPUT}\armorData.json");
+            GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\item_eng.gmd", $@"{ROOT_OUTPUT}\itemData.json");
 
             foreach (var weapon in WEAPONS) {
                 GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\{weapon}_eng.gmd", $@"{ROOT_OUTPUT}\WeaponData\{weapon}.json");

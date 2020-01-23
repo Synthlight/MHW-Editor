@@ -136,6 +136,9 @@
   <data name="hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -144,9 +147,6 @@
   </data>
   <data name="l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rawItems" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>rawitems.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
