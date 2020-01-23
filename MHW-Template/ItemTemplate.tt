@@ -37,7 +37,10 @@ namespace <#= _namespace #> {
 <#
         if (!entry.readOnly) {
 #>
-            set => SetData(<#= entry.offset #>, <#= setCast #><#= entry.valueString #>);
+            set {
+                SetData(<#= entry.offset #>, <#= setCast #><#= entry.valueString #>);
+                OnPropertyChanged(nameof(<#= name #>));
+            }
 <#
         }
 #>
