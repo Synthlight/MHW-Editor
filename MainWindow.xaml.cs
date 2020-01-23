@@ -37,6 +37,7 @@ namespace MHW_Editor {
             btn_zenny_cheat.Click += Btn_zenny_cheat_Click;
             btn_damage_cheat.Click += Btn_damage_cheat_Click;
             btn_enable_all_coatings_cheat.Click += Btn_enable_all_coatings_cheat_Click;
+            btn_max_sharpness_cheat.Click += Btn_max_sharpness_cheat_Click;
 
             Width = SystemParameters.MaximizedPrimaryScreenWidth * 0.8;
             Height = SystemParameters.MaximizedPrimaryScreenHeight * 0.5;
@@ -175,14 +176,13 @@ namespace MHW_Editor {
 
             if (!IsMelee() && !IsRanged() && !IsArmor()) return;
 
-            foreach (var item in items) {
-                ISlots itemWithSlots = item;
-                itemWithSlots.Slot_Count = 3;
-                itemWithSlots.Slot_1_Size = 4;
-                itemWithSlots.Slot_2_Size = 4;
-                itemWithSlots.Slot_3_Size = 4;
+            foreach (ISlots item in items) {
+                item.Slot_Count = 3;
+                item.Slot_1_Size = 4;
+                item.Slot_2_Size = 4;
+                item.Slot_3_Size = 4;
 
-                item.OnPropertyChanged();
+                ((MhwItem) item).OnPropertyChanged();
             }
         }
 
@@ -191,11 +191,9 @@ namespace MHW_Editor {
 
             if (!IsArmor()) return;
 
-            foreach (var item in items) {
-                Armor armor = item;
-
-                if (armor.Set_Skill_1_Level > 0) {
-                    armor.Set_Skill_1_Level = 5;
+            foreach (Armor item in items) {
+                if (item.Set_Skill_1_Level > 0) {
+                    item.Set_Skill_1_Level = 5;
                 }
 
                 item.OnPropertyChanged();
@@ -288,14 +286,12 @@ namespace MHW_Editor {
 
             if (!IsWeapon()) return;
 
-            foreach (var item in items) {
-                IWeapon weapon = item;
-
-                if (weapon.Damage > 0) {
-                    weapon.Damage = 5000;
+            foreach (IWeapon item in items) {
+                if (item.Damage > 0) {
+                    item.Damage = 5000;
                 }
 
-                item.OnPropertyChanged();
+                ((MhwItem) item).OnPropertyChanged();
             }
         }
 
@@ -304,15 +300,48 @@ namespace MHW_Editor {
 
             if (!IsBottleTable()) return;
 
-            foreach (var item in items) {
-                BottleTable bottleTable = item;
+            foreach (BottleTable item in items) {
+                item.Close_Range = CoatingType.Yes;
+                item.Power = CoatingType.Yes;
+                item.Paralysis = CoatingType.Yes;
+                item.Poison = CoatingType.Yes;
+                item.Sleep = CoatingType.Yes;
+                item.Blast = CoatingType.Yes;
 
-                bottleTable.Close_Range = CoatingType.Yes;
-                bottleTable.Power = CoatingType.Yes;
-                bottleTable.Paralysis = CoatingType.Yes;
-                bottleTable.Poison = CoatingType.Yes;
-                bottleTable.Sleep = CoatingType.Yes;
-                bottleTable.Blast = CoatingType.Yes;
+                item.OnPropertyChanged();
+            }
+        }
+
+        private void Btn_max_sharpness_cheat_Click(object sender, RoutedEventArgs e) {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            if (!IsSharpness() && !IsMelee()) return;
+
+            foreach (var item in items) {
+                switch (item) {
+                    case Sharpness _: {
+                        Sharpness sharpness = item;
+
+                        sharpness.Red = 10;
+                        sharpness.Orange = 10;
+                        sharpness.Yellow = 10;
+                        sharpness.Green = 10;
+                        sharpness.Blue = 10;
+                        sharpness.White = 10;
+                        sharpness.Purple = 400;
+
+                        break;
+                    }
+                    case Melee _: {
+                        Melee weapon = item;
+
+                        if (weapon.Sharpness_Amount > 0) {
+                            weapon.Sharpness_Amount = 5;
+                        }
+
+                        break;
+                    }
+                }
 
                 item.OnPropertyChanged();
             }
@@ -371,6 +400,7 @@ namespace MHW_Editor {
                 btn_zenny_cheat.Visibility = IsItem() || IsArmor() || IsWeapon() ? Visibility.Visible : Visibility.Collapsed;
                 btn_damage_cheat.Visibility = IsWeapon() ? Visibility.Visible : Visibility.Collapsed;
                 btn_enable_all_coatings_cheat.Visibility = IsBottleTable() ? Visibility.Visible : Visibility.Collapsed;
+                btn_max_sharpness_cheat.Visibility = IsSharpness() || IsMelee() ? Visibility.Visible : Visibility.Collapsed;
             }
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);

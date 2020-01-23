@@ -58,6 +58,11 @@
                         HorizontalAlignment="Right"
                         Content="Enable All Coatings"
                         Visibility="Collapsed"/>
+                <Button Name="btn_max_sharpness_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Content="Set Sharpness to Max"
+                        Visibility="Collapsed"/>
             </StackPanel>
         </DockPanel>
         <DataGrid Name="dg_items"
