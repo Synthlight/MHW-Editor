@@ -19,7 +19,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public string Skill {
-            get => DataHelper.skillData.TryGet(Skill_Raw, new Skill {name = Skill_Raw.ToString()}).name;
+            get => DataHelper.skillData.TryGet(Skill_Raw, Skill_Raw.ToString());
             set {
                 Skill_Raw = DataHelper.skillDataNameLookup[value];
                 OnPropertyChanged(nameof(Skill_Raw));

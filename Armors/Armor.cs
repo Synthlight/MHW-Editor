@@ -11,7 +11,7 @@ namespace MHW_Editor.Armors {
         public override string Name => DataHelper.armorData.TryGet(GMD_Name_Index, "Unknown");
 
         public string Set_Skill_1 {
-            get => DataHelper.skillData.TryGet(Set_Skill_1_Raw, new Skill {name = Set_Skill_1_Raw.ToString()}).name;
+            get => DataHelper.skillData.TryGet(Set_Skill_1_Raw, Set_Skill_1_Raw.ToString());
             set {
                 Set_Skill_1_Raw = DataHelper.skillDataNameLookup[value];
                 OnPropertyChanged(nameof(Set_Skill_1_Raw));
@@ -19,7 +19,7 @@ namespace MHW_Editor.Armors {
         }
 
         public string Set_Skill_2 {
-            get => DataHelper.skillData.TryGet(Set_Skill_2_Raw, new Skill {name = Set_Skill_2_Raw.ToString()}).name;
+            get => DataHelper.skillData.TryGet(Set_Skill_2_Raw, Set_Skill_2_Raw.ToString());
             set {
                 Set_Skill_2_Raw = DataHelper.skillDataNameLookup[value];
                 OnPropertyChanged(nameof(Set_Skill_2_Raw));
@@ -27,7 +27,7 @@ namespace MHW_Editor.Armors {
         }
 
         public string Skill_1 {
-            get => DataHelper.skillData.TryGet(Skill_1_Raw, new Skill {name = Skill_1_Raw.ToString()}).name;
+            get => DataHelper.skillData.TryGet(Skill_1_Raw, Skill_1_Raw.ToString());
             set {
                 Skill_1_Raw = DataHelper.skillDataNameLookup[value];
                 OnPropertyChanged(nameof(Skill_1_Raw));
@@ -35,7 +35,7 @@ namespace MHW_Editor.Armors {
         }
 
         public string Skill_2 {
-            get => DataHelper.skillData.TryGet(Skill_2_Raw, new Skill {name = Skill_2_Raw.ToString()}).name;
+            get => DataHelper.skillData.TryGet(Skill_2_Raw, Skill_2_Raw.ToString());
             set {
                 Skill_2_Raw = DataHelper.skillDataNameLookup[value];
                 OnPropertyChanged(nameof(Skill_2_Raw));
@@ -43,7 +43,7 @@ namespace MHW_Editor.Armors {
         }
 
         public string Skill_3 {
-            get => DataHelper.skillData.TryGet(Skill_3_Raw, new Skill {name = Skill_3_Raw.ToString()}).name;
+            get => DataHelper.skillData.TryGet(Skill_3_Raw, Skill_3_Raw.ToString());
             set {
                 Skill_3_Raw = DataHelper.skillDataNameLookup[value];
                 OnPropertyChanged(nameof(Skill_3_Raw));

@@ -1,14 +1,12 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using MHW_Editor.Models;
 using Newtonsoft.Json;
 
 namespace MHW_Editor.Assets {
     public static class DataHelper {
         public static readonly Dictionary<uint, string> itemData;
-        public static readonly Dictionary<ushort, Skill> skillData;
-        public static readonly Dictionary<string, ushort> skillDataNameLookup;
+        public static readonly Dictionary<ushort, string> skillData = new Dictionary<ushort, string>();
+        public static readonly Dictionary<string, ushort> skillDataNameLookup = new Dictionary<string, ushort>();
         public static readonly Dictionary<ushort, string> armorData;
         public static readonly Dictionary<string, Dictionary<uint, string>> weaponData = new Dictionary<string, Dictionary<uint, string>>();
         public static readonly Dictionary<uint, string> dummyDict = new Dictionary<uint, string>();
@@ -16,10 +14,24 @@ namespace MHW_Editor.Assets {
         static DataHelper() {
             itemData = LoadDict<uint, string>(Assets.itemData);
 
-            var skillDataJson = Encoding.UTF8.GetString(Assets.skillData);
-            var skillDataList = JsonConvert.DeserializeObject<List<Skill>>(skillDataJson);
-            skillData = skillDataList.ToDictionary(skill => skill.value);
-            skillDataNameLookup = skillDataList.ToDictionary(skill => skill.name, skill => skill.value);
+            var skillDataTemp = LoadDict<uint, string>(Assets.skillData);
+            const uint step = 3;
+            ushort unknownIndex = 1;
+            for (uint index = 0; index < skillDataTemp.Count; index += step) {
+                var key = (ushort) (index / step);
+                var value = skillDataTemp[index];
+
+                if (skillDataNameLookup.ContainsKey(value)) {
+                    value += $" {unknownIndex++}";
+                }
+
+                skillData.Add(key, value);
+                skillDataNameLookup.Add(value, key);
+            }
+
+            skillData[0] = "--------";
+            skillDataNameLookup.Remove("Unavailable");
+            skillDataNameLookup.Add("--------", 0);
 
             armorData = LoadDict<ushort, string>(Assets.armorData);
 

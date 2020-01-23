@@ -18,6 +18,7 @@ namespace MHW_Name_Extractor {
             // ReSharper disable StringLiteralTypo
             GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\armor_eng.gmd", $@"{ROOT_OUTPUT}\armorData.json");
             GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\item_eng.gmd", $@"{ROOT_OUTPUT}\itemData.json");
+            GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\vfont\skill_pt_eng.gmd", $@"{ROOT_OUTPUT}\skillData.json");
 
             foreach (var weapon in WEAPONS) {
                 GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\{weapon}_eng.gmd", $@"{ROOT_OUTPUT}\WeaponData\{weapon}.json");

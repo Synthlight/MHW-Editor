@@ -1,1003 +1,653 @@
-[
-    {
-        "value": 0,
-        "name": "--------",
-        "set": false
-    },
-    {
-        "value": 1,
-        "name": "Poison Resistance",
-        "set": false
-    },
-    {
-        "value": 2,
-        "name": "Paralysis Resistance",
-        "set": false
-    },
-    {
-        "value": 3,
-        "name": "Sleep Resistance",
-        "set": false
-    },
-    {
-        "value": 4,
-        "name": "Stun Resistance",
-        "set": false
-    },
-    {
-        "value": 5,
-        "name": "Muck resistance",
-        "set": false
-    },
-    {
-        "value": 6,
-        "name": "Blast Resistance",
-        "set": false
-    },
-    {
-        "value": 7,
-        "name": "Bleeding Resistance",
-        "set": false
-    },
-    {
-        "value": 8,
-        "name": "Iron Skin",
-        "set": false
-    },
-    {
-        "value": 9,
-        "name": "Res Down Protection",
-        "set": false
-    },
-    {
-        "value": 11,
-        "name": "Ear Plugs",
-        "set": false
-    },
-    {
-        "value": 12,
-        "name": "Wind Proof",
-        "set": false
-    },
-    {
-        "value": 13,
-        "name": "Tremor Resistance",
-        "set": false
-    },
-    {
-        "value": 14,
-        "name": "Dung Master",
-        "set": false
-    },
-    {
-        "value": 16,
-        "name": "Effluvial Expert",
-        "set": false
-    },
-    {
-        "value": 17,
-        "name": "Heat Guard",
-        "set": false
-    },
-    {
-        "value": 19,
-        "name": "Attack Boost",
-        "set": false
-    },
-    {
-        "value": 20,
-        "name": "Defense Boost",
-        "set": false
-    },
-    {
-        "value": 21,
-        "name": "Health Boost",
-        "set": false
-    },
-    {
-        "value": 22,
-        "name": "Recovery Up",
-        "set": false
-    },
-    {
-        "value": 23,
-        "name": "Recovery Speed",
-        "set": false
-    },
-    {
-        "value": 24,
-        "name": "Fire Resistance",
-        "set": false
-    },
-    {
-        "value": 25,
-        "name": "Water Resistance",
-        "set": false
-    },
-    {
-        "value": 26,
-        "name": "Ice resistance",
-        "set": false
-    },
-    {
-        "value": 27,
-        "name": "Thunder Resistance",
-        "set": false
-    },
-    {
-        "value": 28,
-        "name": "Dragon Resistance",
-        "set": false
-    },
-    {
-        "value": 29,
-        "name": "Blight Resistance",
-        "set": false
-    },
-    {
-        "value": 30,
-        "name": "Fire Attack",
-        "set": false
-    },
-    {
-        "value": 31,
-        "name": "Water Attack",
-        "set": false
-    },
-    {
-        "value": 32,
-        "name": "Ice Attack",
-        "set": false
-    },
-    {
-        "value": 33,
-        "name": "Thunder Attack",
-        "set": false
-    },
-    {
-        "value": 34,
-        "name": "Dragon Attack",
-        "set": false
-    },
-    {
-        "value": 35,
-        "name": "Poison Attack",
-        "set": false
-    },
-    {
-        "value": 36,
-        "name": "Paralysis Attack",
-        "set": false
-    },
-    {
-        "value": 37,
-        "name": "Sleep Attack",
-        "set": false
-    },
-    {
-        "value": 38,
-        "name": "Blast Attack",
-        "set": false
-    },
-    {
-        "value": 39,
-        "name": "Normal Shots",
-        "set": false
-    },
-    {
-        "value": 40,
-        "name": "Piercing Shots",
-        "set": false
-    },
-    {
-        "value": 41,
-        "name": "Spread/Powershots",
-        "set": false
-    },
-    {
-        "value": 42,
-        "name": "Poison Functionality",
-        "set": false
-    },
-    {
-        "value": 43,
-        "name": "Para Functionality",
-        "set": false
-    },
-    {
-        "value": 44,
-        "name": "Sleep Functionality",
-        "set": false
-    },
-    {
-        "value": 45,
-        "name": "Power Functionality",
-        "set": false
-    },
-    {
-        "value": 46,
-        "name": "Blast Functionality",
-        "set": false
-    },
-    {
-        "value": 47,
-        "name": "Free Elem/Ammo Up",
-        "set": false
-    },
-    {
-        "value": 48,
-        "name": "Critical Eye",
-        "set": false
-    },
-    {
-        "value": 49,
-        "name": "Critical Boost",
-        "set": false
-    },
-    {
-        "value": 50,
-        "name": "Weakness Exploit",
-        "set": false
-    },
-    {
-        "value": 51,
-        "name": "Repeat Offender",
-        "set": false
-    },
-    {
-        "value": 52,
-        "name": "Focus",
-        "set": false
-    },
-    {
-        "value": 53,
-        "name": "Power Prolonger",
-        "set": false
-    },
-    {
-        "value": 54,
-        "name": "Handicraft",
-        "set": false
-    },
-    {
-        "value": 55,
-        "name": "Critical Draw",
-        "set": false
-    },
-    {
-        "value": 56,
-        "name": "PartBreaker",
-        "set": false
-    },
-    {
-        "value": 57,
-        "name": "Slugger",
-        "set": false
-    },
-    {
-        "value": 58,
-        "name": "Stamina Thief",
-        "set": false
-    },
-    {
-        "value": 59,
-        "name": "Master Mounter",
-        "set": false
-    },
-    {
-        "value": 60,
-        "name": "Airborne",
-        "set": false
-    },
-    {
-        "value": 61,
-        "name": "Latent Power",
-        "set": false
-    },
-    {
-        "value": 62,
-        "name": "Agitator",
-        "set": false
-    },
-    {
-        "value": 63,
-        "name": "Peak Performance",
-        "set": false
-    },
-    {
-        "value": 64,
-        "name": "Heroics",
-        "set": false
-    },
-    {
-        "value": 65,
-        "name": "Fortify",
-        "set": false
-    },
-    {
-        "value": 66,
-        "name": "Resentment",
-        "set": false
-    },
-    {
-        "value": 67,
-        "name": "Resuscitate",
-        "set": false
-    },
-    {
-        "value": 68,
-        "name": "Horn Maestro",
-        "set": false
-    },
-    {
-        "value": 69,
-        "name": "Capacity Boost",
-        "set": false
-    },
-    {
-        "value": 70,
-        "name": "Special Ammo Boost",
-        "set": false
-    },
-    {
-        "value": 71,
-        "name": "Artillery",
-        "set": false
-    },
-    {
-        "value": 72,
-        "name": "Heavy Artillery",
-        "set": false
-    },
-    {
-        "value": 73,
-        "name": "Marathon Runner",
-        "set": false
-    },
-    {
-        "value": 74,
-        "name": "Constitution",
-        "set": false
-    },
-    {
-        "value": 75,
-        "name": "Leap Of Faith",
-        "set": false
-    },
-    {
-        "value": 76,
-        "name": "Stamina Surge",
-        "set": false
-    },
-    {
-        "value": 77,
-        "name": "Hunger Resistance",
-        "set": false
-    },
-    {
-        "value": 78,
-        "name": "Evade Window",
-        "set": false
-    },
-    {
-        "value": 79,
-        "name": "Evade Extender",
-        "set": false
-    },
-    {
-        "value": 80,
-        "name": "Guard",
-        "set": false
-    },
-    {
-        "value": 81,
-        "name": "Quick Sheath",
-        "set": false
-    },
-    {
-        "value": 82,
-        "name": "Wide Range",
-        "set": false
-    },
-    {
-        "value": 83,
-        "name": "Item Prolonger",
-        "set": false
-    },
-    {
-        "value": 84,
-        "name": "Free Meal",
-        "set": false
-    },
-    {
-        "value": 85,
-        "name": "Speed Eating",
-        "set": false
-    },
-    {
-        "value": 86,
-        "name": "Speed Sharpening",
-        "set": false
-    },
-    {
-        "value": 88,
-        "name": "Bombardier",
-        "set": false
-    },
-    {
-        "value": 90,
-        "name": "Mushroomancer",
-        "set": false
-    },
-    {
-        "value": 91,
-        "name": "Master Fisher",
-        "set": false
-    },
-    {
-        "value": 92,
-        "name": "BBQ Master",
-        "set": false
-    },
-    {
-        "value": 93,
-        "name": "Pro Transporter",
-        "set": false
-    },
-    {
-        "value": 94,
-        "name": "Master Gatherer",
-        "set": false
-    },
-    {
-        "value": 95,
-        "name": "Honey Hunter",
-        "set": false
-    },
-    {
-        "value": 96,
-        "name": "Carving Pro",
-        "set": false
-    },
-    {
-        "value": 97,
-        "name": "Divine Blessing",
-        "set": false
-    },
-    {
-        "value": 98,
-        "name": "Palico Rally",
-        "set": false
-    },
-    {
-        "value": 99,
-        "name": "Botanist",
-        "set": false
-    },
-    {
-        "value": 100,
-        "name": "Geologist",
-        "set": false
-    },
-    {
-        "value": 101,
-        "name": "Maximum Might",
-        "set": false
-    },
-    {
-        "value": 102,
-        "name": "Slinger Capacity",
-        "set": false
-    },
-    {
-        "value": 103,
-        "name": "Stealth",
-        "set": false
-    },
-    {
-        "value": 104,
-        "name": "Flinch Free",
-        "set": false
-    },
-    {
-        "value": 105,
-        "name": "Scoutfly Range Up",
-        "set": false
-    },
-    {
-        "value": 106,
-        "name": "Speed Crawler",
-        "set": false
-    },
-    {
-        "value": 107,
-        "name": "Jump Master",
-        "set": false
-    },
-    {
-        "value": 108,
-        "name": "Sporepuff Expert",
-        "set": false
-    },
-    {
-        "value": 109,
-        "name": "Aquatic Expert",
-        "set": false
-    },
-    {
-        "value": 110,
-        "name": "Afishionado",
-        "set": false
-    },
-    {
-        "value": 111,
-        "name": "Cliffhanger",
-        "set": false
-    },
-    {
-        "value": 112,
-        "name": "Blindsider",
-        "set": false
-    },
-    {
-        "value": 114,
-        "name": "Scholar",
-        "set": false
-    },
-    {
-        "value": 115,
-        "name": "Entomologist",
-        "set": false
-    },
-    {
-        "value": 116,
-        "name": "Effluvia Resistance",
-        "set": false
-    },
-    {
-        "value": 117,
-        "name": "Scenthound",
-        "set": false
-    },
-    {
-        "value": 118,
-        "name": "Foragers Luck",
-        "set": false
-    },
-    {
-        "value": 119,
-        "name": "Detector",
-        "max": 10,
-        "set": false
-    },
-    {
-        "value": 120,
-        "name": "Tool Specialist",
-        "set": false
-    },
-    {
-        "value": 122,
-        "name": "Affinity Sliding",
-        "set": false
-    },
-    {
-        "value": 123,
-        "name": "Elderseal Boost",
-        "set": false
-    },
-    {
-        "value": 124,
-        "name": "Intimidator",
-        "set": false
-    },
-    {
-        "value": 125,
-        "name": "Anjanath Power",
-        "set": true
-    },
-    {
-        "value": 126,
-        "name": "Nergigante Hunger",
-        "set": true
-    },
-    {
-        "value": 127,
-        "name": "Vaal Hazak Vitality",
-        "set": true
-    },
-    {
-        "value": 128,
-        "name": "Rathalos Power",
-        "set": true
-    },
-    {
-        "value": 129,
-        "name": "Diablos Power",
-        "set": true
-    },
-    {
-        "value": 130,
-        "name": "Kirin Blessing",
-        "set": true
-    },
-    {
-        "value": 131,
-        "name": "Pink Rathian Mastery",
-        "set": true
-    },
-    {
-        "value": 132,
-        "name": "Anjanath Will",
-        "set": true
-    },
-    {
-        "value": 133,
-        "name": "Set Skill 133",
-        "set": true
-    },
-    {
-        "value": 134,
-        "name": "Set Skill 134",
-        "set": true
-    },
-    {
-        "value": 135,
-        "name": "Rathalos Mastery",
-        "set": true
-    },
-    {
-        "value": 136,
-        "name": "Diablos Mastery",
-        "set": true
-    },
-    {
-        "value": 137,
-        "name": "Kirin Favor",
-        "set": true
-    },
-    {
-        "value": 138,
-        "name": "Uragaan Protection",
-        "set": true
-    },
-    {
-        "value": 139,
-        "name": "Reserved Set Skill 139",
-        "set": true
-    },
-    {
-        "value": 140,
-        "name": "Reserved Set Skill 140",
-        "set": true
-    },
-    {
-        "value": 141,
-        "name": "Reserved Set Skill 141",
-        "set": true
-    },
-    {
-        "value": 142,
-        "name": "Bazelgeuse Protection",
-        "set": true
-    },
-    {
-        "value": 143,
-        "name": "Teostra Technique",
-        "set": true
-    },
-    {
-        "value": 144,
-        "name": "Kushala Daora Flight",
-        "set": true
-    },
-    {
-        "value": 145,
-        "name": "Xeno'Jiiva Divinity",
-        "set": true
-    },
-    {
-        "value": 146,
-        "name": "Reserved Set Skill 146",
-        "set": true
-    },
-    {
-        "value": 147,
-        "name": "Zorah Magdaros Mastery",
-        "set": true
-    },
-    {
-        "value": 148,
-        "name": "Hero's Protection",
-        "set": false
-    },
-    {
-        "value": 149,
-        "name": "Guild Guidance",
-        "set": true
-    },
-    {
-        "value": 150,
-        "name": "Commission Guidance",
-        "set": true
-    },
-    {
-        "value": 151,
-        "name": "Legiana Blessing",
-        "set": true
-    },
-    {
-        "value": 152,
-        "name": "Legiana Favor",
-        "set": true
-    },
-    {
-        "value": 153,
-        "name": "Odogaron Power",
-        "set": true
-    },
-    {
-        "value": 154,
-        "name": "Odogaron Mastery",
-        "set": true
-    },
-    {
-        "value": 155,
-        "name": "Bow Charge Plus",
-        "set": false
-    },
-    {
-        "value": 156,
-        "name": "Mind's Eye/Ballistics",
-        "set": false
-    },
-    {
-        "value": 157,
-        "name": "Guard Up",
-        "set": false
-    },
-    {
-        "value": 158,
-        "name": "Protective Polish",
-        "set": false
-    },
-    {
-        "value": 159,
-        "name": "Non-Elemental Boost",
-        "set": false
-    },
-    {
-        "value": 160,
-        "name": "Guts",
-        "set": false
-    },
-    {
-        "value": 161,
-        "name": "Hasten Recovery",
-        "set": false
-    },
-    {
-        "value": 162,
-        "name": "Razor Sharp/Spare Shot",
-        "set": false
-    },
-    {
-        "value": 163,
-        "name": "Lunastra Favor",
-        "set": true
-    },
-    {
-        "value": 164,
-        "name": "Soul of the Dragoon",
-        "set": true
-    },
-    {
-        "value": 165,
-        "name": "Critical Element",
-        "set": true
-    },
-    {
-        "value": 166,
-        "name": "Critical Status",
-        "set": true
-    },
-    {
-        "value": 167,
-        "name": "Witcher's Knowledge",
-        "set": true
-    },
-    {
-        "value": 168,
-        "name": "Astera Blessing",
-        "set": true
-    },
-    {
-        "value": 169,
-        "name": "Zinogre Essence",
-        "set": true
-    },
-    {
-        "value": 170,
-        "name": "Tigrex Essence",
-        "set": true
-    },
-    {
-        "value": 171,
-        "name": "Nargacuga Essence",
-        "set": true
-    },
-    {
-        "value": 172,
-        "name": "Brachydios Essence",
-        "set": true
-    },
-    {
-        "value": 173,
-        "name": "Glavenous Essence",
-        "set": true
-    },
-    {
-        "value": 174,
-        "name": "Silver Rathalos Essence",
-        "set": true
-    },
-    {
-        "value": 175,
-        "name": "Gold Rathian Essence",
-        "set": true
-    },
-    {
-        "value": 176,
-        "name": "Shara Ishvalda Divinity",
-        "set": true
-    },
-    {
-        "value": 177,
-        "name": "Namielle Divinity",
-        "set": true
-    },
-    {
-        "value": 178,
-        "name": "Velkhana Divinity",
-        "set": true
-    },
-    {
-        "value": 179,
-        "name": "Ancient Divinity",
-        "set": true
-    },
-    {
-        "value": 180,
-        "name": "Commission Alchemy",
-        "set": true
-    },
-    {
-        "value": 181,
-        "name": "Instructor's Guidance",
-        "set": true
-    },
-    {
-        "value": 182,
-        "name": "Anjanath Dominance",
-        "set": true
-    },
-    {
-        "value": 183,
-        "name": "Rathian Essence",
-        "set": true
-    },
-    {
-        "value": 184,
-        "name": "Provoker",
-        "set": false
-    },
-    {
-        "value": 185,
-        "name": "Offensive Guard",
-        "set": false
-    },
-    {
-        "value": 186,
-        "name": "Coalescence",
-        "set": false
-    },
-    {
-        "value": 187,
-        "name": "Safe Landing",
-        "set": false
-    },
-    {
-        "value": 188,
-        "name": "Barioth Hidden Art",
-        "set": true
-    },
-    {
-        "value": 189,
-        "name": "Rathalos Essence",
-        "set": true
-    },
-    {
-        "value": 190,
-        "name": "Diablos Ambition",
-        "set": true
-    },
-    {
-        "value": 191,
-        "name": "Legiana Ambition",
-        "set": true
-    },
-    {
-        "value": 192,
-        "name": "Odogaron Essence",
-        "set": true
-    },
-    {
-        "value": 193,
-        "name": "Uragaan Ambition",
-        "set": true
-    },
-    {
-        "value": 194,
-        "name": "Bazelgeuse Ambition",
-        "set": true
-    },
-    {
-        "value": 195,
-        "name": "Deviljho Essence",
-        "set": true
-    },
-    {
-        "value": 196,
-        "name": "Vaal Soulvein",
-        "set": true
-    },
-    {
-        "value": 199,
-        "name": "Kirin Divinity",
-        "set": true
-    },
-    {
-        "value": 200,
-        "name": "Guild Pride",
-        "set": true
-    },
-    {
-        "value": 201,
-        "name": "Zorah Magdaros Essence",
-        "set": true
-    },
-    {
-        "value": 202,
-        "name": "Lunastra Essence",
-        "set": true
-    },
-    {
-        "value": 203,
-        "name": "Nergigante Ambition",
-        "set": true
-    },
-    {
-        "value": 205,
-        "name": "Bludgeoner",
-        "set": false
-    },
-    {
-        "value": 206,
-        "name": "Adrenaline",
-        "set": false
-    },
-    {
-        "value": 207,
-        "name": "Coldproof",
-        "set": false
-    },
-    {
-        "value": 212,
-        "name": "Joyful Blessing",
-        "set": true
-    },
-    {
-        "value": 213,
-        "name": "Appreciation Blessing",
-        "set": true
-    }
-]
+{
+  "0": "Unavailable",
+  "1": "Unavailable",
+  "2": "Unavailable",
+  "3": "Poison Resistance",
+  "4": "Invalid Message",
+  "5": "Reduces damage while poisoned.",
+  "6": "Paralysis Resistance",
+  "7": "Invalid Message",
+  "8": "Reduces the duration of paralysis.",
+  "9": "Sleep Resistance",
+  "10": "Invalid Message",
+  "11": "Reduces the duration of sleep.",
+  "12": "Stun Resistance",
+  "13": "Invalid Message",
+  "14": "Reduces stun duration.",
+  "15": "Muck Resistance",
+  "16": "Invalid Message",
+  "17": "Reduces impairments to mobility\r\nwhile stuck in monster muck.",
+  "18": "Blast Resistance",
+  "19": "Invalid Message",
+  "20": "Grants protection against blastblight.",
+  "21": "Bleeding Resistance",
+  "22": "Invalid Message",
+  "23": "Grants protection against bleeding.",
+  "24": "Iron Skin",
+  "25": "Invalid Message",
+  "26": "Grants protection against\r\nDefense Down.",
+  "27": "Unavailable",
+  "28": "Unavailable",
+  "29": "Unavailable",
+  "30": "Unavailable",
+  "31": "Unavailable",
+  "32": "Unavailable",
+  "33": "Earplugs",
+  "34": "Invalid Message",
+  "35": "Grants protection from\r\nlarge monsters' roars.",
+  "36": "Windproof",
+  "37": "Invalid Message",
+  "38": "Grants protection against wind\r\npressure.",
+  "39": "Tremor Resistance",
+  "40": "Invalid Message",
+  "41": "Grants protection against ground\r\ntremors.",
+  "42": "Dungmaster",
+  "43": "Invalid Message",
+  "44": "Makes monsters hit with slinger\r\ndung pods more likely to run.",
+  "45": "Unavailable",
+  "46": "Unavailable",
+  "47": "Unavailable",
+  "48": "Effluvial Expert",
+  "49": "Invalid Message",
+  "50": "Nullifies or reduces environmental\r\ndamage in the Rotten Vale.",
+  "51": "Heat Guard",
+  "52": "Invalid Message",
+  "53": "Nullifies damage from heat.",
+  "54": "Unavailable",
+  "55": "Unavailable",
+  "56": "Unavailable",
+  "57": "Attack Boost",
+  "58": "Invalid Message",
+  "59": "Increases attack power.\r\nAlso improves affinity at\r\nhigher levels.",
+  "60": "Defense Boost",
+  "61": "Invalid Message",
+  "62": "Increases defense. Level up\r\nto improve resistances as well.",
+  "63": "Health Boost",
+  "64": "Invalid Message",
+  "65": "Increases health.",
+  "66": "Recovery Up",
+  "67": "Invalid Message",
+  "68": "Increases the amount recovered\r\nwhen restoring health.",
+  "69": "Recovery Speed",
+  "70": "Invalid Message",
+  "71": "Speeds healing of recoverable\r\ndamage (the red portion of the\r\nhealth gauge).",
+  "72": "Fire Resistance",
+  "73": "Invalid Message",
+  "74": "Increases fire resistance.\r\nAlso improves defense at\r\nhigher levels.",
+  "75": "Water Resistance",
+  "76": "Invalid Message",
+  "77": "Increases water resistance.\r\nAlso improves defense at\r\nhigher levels.",
+  "78": "Ice Resistance",
+  "79": "Invalid Message",
+  "80": "Increases ice resistance.\r\nAlso improves defense at\r\nhigher levels.",
+  "81": "Thunder Resistance",
+  "82": "Invalid Message",
+  "83": "Increases thunder resistance.\r\nAlso improves defense at\r\nhigher levels.",
+  "84": "Dragon Resistance",
+  "85": "Invalid Message",
+  "86": "Increases dragon resistance.\r\nAlso improves defense at\r\nhigher levels.",
+  "87": "Blight Resistance",
+  "88": "Invalid Message",
+  "89": "Grants protection against all\r\nelemental blights.",
+  "90": "Fire Attack",
+  "91": "Invalid Message",
+  "92": "Increases fire element attack power.\r\n<STYL MOJI_YELLOW_DEFAULT>(Elemental attack power has\r\na maximum limit.)</STYL>",
+  "93": "Water Attack",
+  "94": "Invalid Message",
+  "95": "Increases water element attack power.\r\n<STYL MOJI_YELLOW_DEFAULT>(Elemental attack power has\r\na maximum limit.)</STYL>",
+  "96": "Ice Attack",
+  "97": "Invalid Message",
+  "98": "Increases ice element attack power.\r\n<STYL MOJI_YELLOW_DEFAULT>(Elemental attack power has\r\na maximum limit.)</STYL>",
+  "99": "Thunder Attack",
+  "100": "Invalid Message",
+  "101": "Increases thunder element attack power.\r\n<STYL MOJI_YELLOW_DEFAULT>(Elemental attack power has\r\na maximum limit.)</STYL>",
+  "102": "Dragon Attack",
+  "103": "Invalid Message",
+  "104": "Increases dragon element attack power.\r\n<STYL MOJI_YELLOW_DEFAULT>(Elemental attack power has\r\na maximum limit.)</STYL>",
+  "105": "Poison Attack",
+  "106": "Invalid Message",
+  "107": "Increases the rate of poison buildup.\r\n<STYL MOJI_YELLOW_DEFAULT>(Elemental buildup has a maximum limit.)</STYL>",
+  "108": "Paralysis Attack",
+  "109": "Invalid Message",
+  "110": "Increases the rate of paralysis buildup.\r\n<STYL MOJI_YELLOW_DEFAULT>(Elemental buildup has a maximum limit.)</STYL>",
+  "111": "Sleep Attack",
+  "112": "Invalid Message",
+  "113": "Increases the rate of sleep buildup.\r\n<STYL MOJI_YELLOW_DEFAULT>(Elemental buildup has a maximum limit.)</STYL>",
+  "114": "Blast Attack",
+  "115": "Invalid Message",
+  "116": "Increases the rate of blast buildup.\r\n<STYL MOJI_YELLOW_DEFAULT>(Elemental buildup has a maximum limit.)</STYL>",
+  "117": "Normal Shots",
+  "118": "Invalid Message",
+  "119": "Increases the attack power\r\nof normal ammo and\r\nnormal arrows.",
+  "120": "Piercing Shots",
+  "121": "Invalid Message",
+  "122": "Increases the attack power\r\nof piercing ammo and Dragon\r\nPiercer.",
+  "123": "Spread/Power Shots",
+  "124": "Invalid Message",
+  "125": "Increases the attack power\r\nof spread ammo, power shot\r\narrows, and Thousand Dragons.",
+  "126": "Poison Functionality",
+  "127": "Invalid Message",
+  "128": "Allows you to apply poison\r\ncoatings.",
+  "129": "Para Functionality",
+  "130": "Invalid Message",
+  "131": "Allows you to apply paralysis\r\ncoatings.",
+  "132": "Sleep Functionality",
+  "133": "Invalid Message",
+  "134": "Allows you to apply sleep\r\ncoatings.",
+  "135": "Unavailable",
+  "136": "Unavailable",
+  "137": "Unavailable",
+  "138": "Blast Functionality",
+  "139": "Invalid Message",
+  "140": "Allows you to apply blast\r\ncoatings.",
+  "141": "Free Elem/Ammo Up",
+  "142": "Invalid Message",
+  "143": "Unlocks your weapon's hidden element.\r\nAlso increases bowgun loading capacity.\r\n<STYL MOJI_YELLOW_DEFAULT>(There is a cap to loading capacity.)</STYL>",
+  "144": "Critical Eye",
+  "145": "Invalid Message",
+  "146": "Increases affinity.",
+  "147": "Critical Boost",
+  "148": "Invalid Message",
+  "149": "Increases the damage of\r\ncritical hits.",
+  "150": "Weakness Exploit",
+  "151": "Invalid Message",
+  "152": "Increases the affinity of attacks\r\nthat exploit a monster weak spot.",
+  "153": "Unavailable",
+  "154": "Unavailable",
+  "155": "Unavailable",
+  "156": "Focus",
+  "157": "Invalid Message",
+  "158": "Increases the fill rate for weapons\r\nwith gauges and the charge rate\r\nfor weapons with charge attacks.",
+  "159": "Power Prolonger",
+  "160": "Invalid Message",
+  "161": "Allows long swords, dual blades, insect\r\nglaives, switch axes, and charge blades\r\nto stay powered up longer.",
+  "162": "Handicraft",
+  "163": "Invalid Message",
+  "164": "Extends the weapon sharpness gauge.\r\nHowever, it will not increase the gauge\r\npast its maximum.",
+  "165": "Critical Draw",
+  "166": "Invalid Message",
+  "167": "Increases affinity when\r\nperforming draw attacks.",
+  "168": "Partbreaker",
+  "169": "Invalid Message",
+  "170": "Makes it easier to break or\r\nsever parts of large monsters.",
+  "171": "Slugger",
+  "172": "Invalid Message",
+  "173": "Makes it easier to stun monsters.",
+  "174": "Stamina Thief",
+  "175": "Invalid Message",
+  "176": "Increases certain attacks'\r\nability to exhaust monsters.",
+  "177": "Master Mounter",
+  "178": "Invalid Message",
+  "179": "Makes it easier to mount monsters.",
+  "180": "Airborne",
+  "181": "Invalid Message",
+  "182": "Increases the damage caused by\r\njumping attacks.",
+  "183": "Latent Power",
+  "184": "Invalid Message",
+  "185": "Temporarily increases affinity and\r\nreduces stamina depletion when\r\ncertain conditions are met.",
+  "186": "Agitator",
+  "187": "Invalid Message",
+  "188": "Increases attack power and\r\naffinity when large monsters\r\nbecome enraged.",
+  "189": "Peak Performance",
+  "190": "Invalid Message",
+  "191": "Increases attack when\r\nyour health is full.",
+  "192": "Heroics",
+  "193": "Invalid Message",
+  "194": "Increases attack power and defense\r\nwhen health drops to 35% or lower.",
+  "195": "Fortify",
+  "196": "Invalid Message",
+  "197": "Temporarily increases your attack\r\nand defense every time you faint\r\n<STYL MOJI_YELLOW_DEFAULT>up to 2 times</STYL>.",
+  "198": "Resentment",
+  "199": "Invalid Message",
+  "200": "Increases attack when you have\r\nrecoverable damage (the red\r\nportion of your health gauge).",
+  "201": "Resuscitate",
+  "202": "Invalid Message",
+  "203": "Improves evasion and reduces\r\nstamina depletion when afflicted\r\nwith abnormal status effects.",
+  "204": "Horn Maestro",
+  "205": "Invalid Message",
+  "206": "Increases the effect duration of\r\nhunting horn melodies.",
+  "207": "Capacity Boost",
+  "208": "Invalid Message",
+  "209": "Increases the gunlance's\r\nshell capacity and charge\r\nblade's phial capacity.",
+  "210": "Special Ammo Boost",
+  "211": "Invalid Message",
+  "212": "Increases the power of bowgun\r\nspecial ammo, Dragon Piercer,\r\nand Thousand Dragons.",
+  "213": "Artillery",
+  "214": "Invalid Message",
+  "215": "Strengthens explosive attacks like\r\ngunlance shells, Wyvern's Fire, charge\r\nblade phial attacks, and sticky ammo.",
+  "216": "Heavy Artillery",
+  "217": "Invalid Message",
+  "218": "Increases the firepower of\r\nballistae and cannons.",
+  "219": "Marathon Runner",
+  "220": "Invalid Message",
+  "221": "Slows down stamina depletion\r\nfor actions which continuously\r\ndrain stamina (such as dashing).",
+  "222": "Constitution",
+  "223": "Invalid Message",
+  "224": "Reduces stamina depletion\r\nwhen performing stamina-draining\r\nmoves such as evading, etc.",
+  "225": "Leap of Faith",
+  "226": "Invalid Message",
+  "227": "Allows you to do a dive-evade when\r\nfacing towards large monsters, and\r\nextends the dive-evade distance.",
+  "228": "Stamina Surge",
+  "229": "Invalid Message",
+  "230": "Speeds up stamina recovery.",
+  "231": "Hunger Resistance",
+  "232": " ",
+  "233": "Reduces maximum stamina depletion over\r\ntime. However, does not work against\r\ncold environments that reduce stamina.",
+  "234": "Evade Window",
+  "235": "Invalid Message",
+  "236": "Extends the invulnerability\r\nperiod when evading.",
+  "237": "Evade Extender",
+  "238": "Invalid Message",
+  "239": "Increases evade distance.",
+  "240": "Guard",
+  "241": "Invalid Message",
+  "242": "Reduces knockbacks and stamina\r\ndepletion when guarding.",
+  "243": "Quick Sheath",
+  "244": "Invalid Message",
+  "245": "Speeds up weapon sheathing.",
+  "246": "Wide-Range",
+  "247": "Invalid Message",
+  "248": "Allows the effects of certain\r\nitems to also affect nearby allies.",
+  "249": "Item Prolonger",
+  "250": "Invalid Message",
+  "251": "Extends the duration\r\nof some item effects.",
+  "252": "Free Meal",
+  "253": "Invalid Message",
+  "254": "Gives you a predetermined\r\nchance of consuming a food\r\nor drink item for free.",
+  "255": "Speed Eating",
+  "256": "Invalid Message",
+  "257": "Increases meat-eating and\r\nitem-consumption speed.",
+  "258": "Speed Sharpening",
+  "259": "Invalid Message",
+  "260": "Speeds up weapon sharpening\r\nwhen using a whetstone.",
+  "261": "Unavailable",
+  "262": "Unavailable",
+  "263": "Unavailable",
+  "264": "Bombardier",
+  "265": "Invalid Message",
+  "266": "Increases the damage\r\nof explosive items.",
+  "267": "Unavailable",
+  "268": "Unavailable",
+  "269": "Unavailable",
+  "270": "Mushroomancer",
+  "271": "Invalid Message",
+  "272": "Lets you digest mushrooms that\r\nwould otherwise be inedible and\r\ngain their advantageous effects.",
+  "273": "Master Fisher",
+  "274": "Invalid Message",
+  "275": "Improves your skill at fishing.",
+  "276": "BBQ Master",
+  "277": "Invalid Message",
+  "278": "Improves your skill at cooking\r\nmeat.",
+  "279": "Pro Transporter",
+  "280": "Invalid Message",
+  "281": "Increases your speed while\r\ntransporting items and decreases\r\nthe likelihood of dropping them.",
+  "282": "Master Gatherer",
+  "283": "Invalid Message",
+  "284": "Allows you to gather more quickly,\r\nand also prevents attacks from\r\nknocking you back while gathering.",
+  "285": "Honey Hunter",
+  "286": "Invalid Message",
+  "287": "Increases the quantity of honey you\r\nreceive when gathering in the field.",
+  "288": "Carving Pro",
+  "289": "Invalid Message",
+  "290": "Prevents knockback from\r\nattacks while carving.",
+  "291": "Divine Blessing",
+  "292": "Invalid Message",
+  "293": "Has a predetermined chance of\r\nreducing the damage you take.",
+  "294": "Palico Rally",
+  "295": "Invalid Message",
+  "296": "Powers up Palicoes.",
+  "297": "Botanist",
+  "298": "Invalid Message",
+  "299": "Increases the quantity of herbs\r\nand other consumable items you\r\ngather.",
+  "300": "Geologist",
+  "301": "Invalid Message",
+  "302": "Increases the number of times\r\nyou can use a gathering point.",
+  "303": "Maximum Might",
+  "304": "Invalid Message",
+  "305": "Increases affinity as long as stamina\r\nis kept full for a period of time.",
+  "306": "Invalid Message",
+  "307": "Invalid Message",
+  "308": "Increases the loading capacity for\r\nslinger ammo obtained in the field.",
+  "309": "Stealth",
+  "310": "Invalid Message",
+  "311": "Makes it easier for monsters\r\nto lose sight of you.",
+  "312": "Flinch Free",
+  "313": "Invalid Message",
+  "314": "Prevents knockbacks and other\r\nreactions to small damage.",
+  "315": "Scoutfly Range Up",
+  "316": "Invalid Message",
+  "317": "Expands your scoutflies'\r\ndetection range.",
+  "318": "Speed Crawler",
+  "319": "Invalid Message",
+  "320": "Increases movement speed\r\nwhile crouching.",
+  "321": "Jump Master",
+  "322": "Invalid Message",
+  "323": "Prevents attacks from knocking\r\nyou back during a jump.",
+  "324": "Survival Expert",
+  "325": "Invalid Message",
+  "326": "Extra health is recovered from\r\nenvironmental interactables like\r\nSporepuffs or Wiggly Litchi.",
+  "327": "Aquatic/Polar Mobility",
+  "328": "Invalid Message",
+  "329": "Lets you move more freely in water.\r\nAlso prevents you from being slowed down\r\nby terrain effects, such as deep snow.",
+  "330": "Unavailable",
+  "331": "Unavailable",
+  "332": "Unavailable",
+  "333": "Cliffhanger",
+  "334": "Invalid Message",
+  "335": "Decreases stamina depletion when evading\r\nwhile clinging to walls or ivy, or when\r\nmoving while grappling onto an enemy.",
+  "336": "Blindsider",
+  "337": "Invalid Message",
+  "338": "Improves the effectiveness\r\nof flash attacks and items.",
+  "339": "Unavailable",
+  "340": "Unavailable",
+  "341": "Unavailable",
+  "342": "Scholar",
+  "343": "Invalid Message",
+  "344": "Speeds up progress on research levels\r\nand special investigations. <STYL MOJI_YELLOW_DEFAULT>(Effect is\r\napplied at the quest results screen.)</STYL>",
+  "345": "Entomologist",
+  "346": "Invalid Message",
+  "347": "Decreases the chances of destroying\r\nthe bodies of small insect monsters,\r\nallowing them to be carved.",
+  "348": "Effluvia Resistance",
+  "349": "Invalid Message",
+  "350": "Gain a resistance to effluvial\r\nbuildup.",
+  "351": "Scenthound",
+  "352": "Invalid Message",
+  "353": "Increases your scoutflies' gauge\r\nfill rate when you find tracks and\r\nother traces left by monsters.",
+  "354": "Forager's Luck",
+  "355": "Invalid Message",
+  "356": "Increases the chance of finding\r\nrare gathering points.",
+  "357": "Detector",
+  "358": "Invalid Message",
+  "359": "Shows rare gathering points on\r\nthe Wildlife Map.",
+  "360": "Tool Specialist",
+  "361": "Invalid Message",
+  "362": "Reduces the recharge time\r\nfor specialized tools.",
+  "363": "Unavailable",
+  "364": "Unavailable",
+  "365": "Unavailable",
+  "366": "Affinity Sliding",
+  "367": "Invalid Message",
+  "368": "Sliding increases your affinity\r\nfor a short time.",
+  "369": "Elderseal Boost",
+  "370": "Invalid Message",
+  "371": "Increases the Elderseal of\r\nweapons and dragon ammo.",
+  "372": "Intimidator",
+  "373": "Invalid Message",
+  "374": "Reduces the chances small monsters\r\nwill attack after spotting you.\r\n<STYL MOJI_YELLOW_DEFAULT>(No effect on certain monsters.)</STYL>",
+  "375": "Anjanath Power",
+  "376": "Invalid Message",
+  "377": "Unavailable",
+  "378": "Nergigante Hunger",
+  "379": "Invalid Message",
+  "380": "Unavailable",
+  "381": "Vaal Hazak Vitality",
+  "382": "Invalid Message",
+  "383": "Unavailable",
+  "384": "Rathalos Power",
+  "385": "Invalid Message",
+  "386": "Unavailable",
+  "387": "Diablos Power",
+  "388": "Invalid Message",
+  "389": "Unavailable",
+  "390": "Kirin Blessing",
+  "391": "Invalid Message",
+  "392": "Unavailable",
+  "393": "Pink Rathian Mastery",
+  "394": "Invalid Message",
+  "395": "Unavailable",
+  "396": "Anjanath Will",
+  "397": "Invalid Message",
+  "398": "Unavailable",
+  "399": "Unavailable",
+  "400": "Unavailable",
+  "401": "Unavailable",
+  "402": "Unavailable",
+  "403": "Unavailable",
+  "404": "Unavailable",
+  "405": "Rathalos Mastery",
+  "406": "Invalid Message",
+  "407": "Unavailable",
+  "408": "Diablos Mastery",
+  "409": "Invalid Message",
+  "410": "Unavailable",
+  "411": "Kirin Favor",
+  "412": "Invalid Message",
+  "413": "Unavailable",
+  "414": "Uragaan Protection",
+  "415": "Invalid Message",
+  "416": "Unavailable",
+  "417": "Unavailable",
+  "418": "Unavailable",
+  "419": "Unavailable",
+  "420": "Unavailable",
+  "421": "Unavailable",
+  "422": "Unavailable",
+  "423": "Unavailable",
+  "424": "Unavailable",
+  "425": "Unavailable",
+  "426": "Bazelgeuse Protection",
+  "427": "Invalid Message",
+  "428": "Unavailable",
+  "429": "Teostra Technique",
+  "430": "Invalid Message",
+  "431": "Unavailable",
+  "432": "Kushala Daora Flight",
+  "433": "Invalid Message",
+  "434": "Unavailable",
+  "435": "Xeno'jiiva Divinity",
+  "436": "Invalid Message",
+  "437": "Unavailable",
+  "438": "Unavailable",
+  "439": "Unavailable",
+  "440": "Unavailable",
+  "441": "Zorah Magdaros Mastery",
+  "442": "Invalid Message",
+  "443": "Unavailable",
+  "444": "Unavailable",
+  "445": "Unavailable",
+  "446": "Unavailable",
+  "447": "Guild Guidance",
+  "448": "Invalid Message",
+  "449": "Unavailable",
+  "450": "Commission Guidance",
+  "451": "Invalid Message",
+  "452": "Unavailable",
+  "453": "Legiana Blessing",
+  "454": "Invalid Message",
+  "455": "Unavailable",
+  "456": "Legiana Favor",
+  "457": "Invalid Message",
+  "458": "Unavailable",
+  "459": "Odogaron Power",
+  "460": "Invalid Message",
+  "461": "Unavailable",
+  "462": "Odogaron Mastery",
+  "463": "Invalid Message",
+  "464": "Unavailable",
+  "465": "Bow Charge Plus",
+  "466": "Bow Charge Plus",
+  "467": "Increases max bow charge\r\nlevel by one.",
+  "468": "Mind's Eye/Ballistics",
+  "469": "Mind's Eye/Ballistics",
+  "470": "Prevents attacks from being deflected.\r\nAlso shortens the distance before ammo\r\nand arrows reach maximum power.",
+  "471": "Guard Up",
+  "472": "Guard Up",
+  "473": "Allows you to guard against\r\nordinarily unblockable attacks.",
+  "474": "Protective Polish",
+  "475": "Protective Polish",
+  "476": "Weapon sharpness does not\r\ndecrease for a set time after\r\nsharpening.",
+  "477": "Non-elemental Boost",
+  "478": "Non-elemental Boost",
+  "479": "Powers up non-elemental\r\nweapons you have equipped.",
+  "480": "Guts",
+  "481": "Invalid Message",
+  "482": "Above a certain health threshold,\r\nyou withstand an attack that would\r\nnormally cart you (once only).",
+  "483": "Hasten Recovery",
+  "484": "Invalid Message",
+  "485": "Regenerates your health as you\r\ncontinually attack a monster.\r\nRecovery varies by weapon.",
+  "486": "Razor Sharp/Spare Shot",
+  "487": "Invalid Message",
+  "488": "Halves sharpness loss. For bows\r\nand bowguns, shots have a chance\r\nnot to expend coatings or ammo.",
+  "489": "Lunastra Favor",
+  "490": "Invalid Message",
+  "491": "Unavailable",
+  "492": "Soul of the Dragoon",
+  "493": "Invalid Message",
+  "494": "Unavailable",
+  "495": "Critical Element",
+  "496": "Invalid Message",
+  "497": "Increases elemental damage\r\n(fire, water, thunder, ice, dragon)\r\nwhen landing critical hits.",
+  "498": "Critical Status",
+  "499": "Invalid Message",
+  "500": "Increases abnormal status effect\r\ndamage (paralysis, poison, sleep,\r\nblast) when landing critical hits.",
+  "501": "Witcher's Knowledge",
+  "502": "Invalid Message",
+  "503": "Unavailable",
+  "504": "Astera Blessing",
+  "505": "Invalid Message",
+  "506": "Unavailable",
+  "507": "Zinogre Essence",
+  "508": "Invalid Message",
+  "509": "Unavailable",
+  "510": "Tigrex Essence",
+  "511": "Invalid Message",
+  "512": "Unavailable",
+  "513": "Nargacuga Essence",
+  "514": "Invalid Message",
+  "515": "Unavailable",
+  "516": "Brachydios Essence",
+  "517": "Invalid Message",
+  "518": "Unavailable",
+  "519": "Glavenus Essence",
+  "520": "Invalid Message",
+  "521": "Unavailable",
+  "522": "Silver Rathalos Essence",
+  "523": "Invalid Message",
+  "524": "Unavailable",
+  "525": "Gold Rathian Essence",
+  "526": "Invalid Message",
+  "527": "Unavailable",
+  "528": "Shara Ishvalda Divinity",
+  "529": "Invalid Message",
+  "530": "Unavailable",
+  "531": "Namielle Divinity",
+  "532": "Invalid Message",
+  "533": "Unavailable",
+  "534": "Velkhana Divinity",
+  "535": "Invalid Message",
+  "536": "Unavailable",
+  "537": "Ancient Divinity",
+  "538": "Invalid Message",
+  "539": "Unavailable",
+  "540": "Commission Alchemy",
+  "541": "Invalid Message",
+  "542": "Unavailable",
+  "543": "Instructor's Guidance",
+  "544": "Invalid Message",
+  "545": "Unavailable",
+  "546": "Anjanath Dominance",
+  "547": "Invalid Message",
+  "548": "Unavailable",
+  "549": "Rathian Essence",
+  "550": "Rathian Essence",
+  "551": "Unavailable",
+  "552": "Provoker",
+  "553": "Invalid Message",
+  "554": "Increases the attention drawn\r\nwhen attacking a monster.",
+  "555": "Offensive Guard",
+  "556": "Invalid Message",
+  "557": "Temporarily increases attack\r\npower after executing\r\na perfectly-timed guard.",
+  "558": "Coalescence",
+  "559": "Invalid Message",
+  "560": "Temporarily enhances attacks\r\nafter recovering from blights\r\nor abnormal status.",
+  "561": "Safe Landing",
+  "562": "Invalid Message",
+  "563": "Allows you to quickly recover from heavy\r\nattacks that blow you back when you\r\nhave your weapon unsheathed.",
+  "564": "Barioth Hidden Art",
+  "565": "Invalid Message",
+  "566": "Unavailable",
+  "567": "Rathalos Essence",
+  "568": "Invalid Message",
+  "569": "Unavailable",
+  "570": "Diablos Ambition",
+  "571": "Invalid Message",
+  "572": "Unavailable",
+  "573": "Legiana Ambition",
+  "574": "Invalid Message",
+  "575": "Unavailable",
+  "576": "Odogaron Essence",
+  "577": "Invalid Message",
+  "578": "Unavailable",
+  "579": "Uragaan Ambition",
+  "580": "Invalid Message",
+  "581": "Unavailable",
+  "582": "Bazelgeuse Ambition",
+  "583": "Invalid Message",
+  "584": "Unavailable",
+  "585": "Deviljho Essence",
+  "586": "Invalid Message",
+  "587": "Unavailable",
+  "588": "Vaal Soulvein",
+  "589": "Invalid Message",
+  "590": "Unavailable",
+  "591": "Unavailable",
+  "592": "Unavailable",
+  "593": "Unavailable",
+  "594": "Unavailable",
+  "595": "Unavailable",
+  "596": "Unavailable",
+  "597": "Kirin Divinity",
+  "598": "Invalid Message",
+  "599": "Unavailable",
+  "600": "Guild Pride",
+  "601": "Invalid Message",
+  "602": "Unavailable",
+  "603": "Zorah Magdaros Essence",
+  "604": "Invalid Message",
+  "605": "Unavailable",
+  "606": "Lunastra Essence",
+  "607": "Invalid Message",
+  "608": "Unavailable",
+  "609": "Nergigante Ambition",
+  "610": "Invalid Message",
+  "611": "Unavailable",
+  "612": "Unavailable",
+  "613": "Unavailable",
+  "614": "Unavailable",
+  "615": "Bludgeoner",
+  "616": "Invalid Message",
+  "617": "Raises attack as your weapon loses\r\nsharpness. Also boosts ranged weapon\r\nmelee attacks and odds of stunning.",
+  "618": "Adrenaline",
+  "619": "Invalid Message",
+  "620": "Temporarily reduces stamina\r\ndepletion when health is at 40%\r\nor lower.",
+  "621": "Coldproof",
+  "622": "Invalid Message",
+  "623": "Nullifies the effects of\r\ncold weather.",
+  "624": "Unavailable",
+  "625": "Unavailable",
+  "626": "Unavailable",
+  "627": "Unavailable",
+  "628": "Unavailable",
+  "629": "Unavailable",
+  "630": "Unavailable",
+  "631": "Unavailable",
+  "632": "Unavailable",
+  "633": "Unavailable",
+  "634": "Unavailable",
+  "635": "Unavailable",
+  "636": "Joyful Blessing",
+  "637": "Invalid Message",
+  "638": "Unavailable",
+  "639": "Appreciation Blessing",
+  "640": "Invalid Message",
+  "641": "Unavailable",
+  "642": "Unavailable",
+  "643": "Unavailable",
+  "644": "Unavailable",
+  "645": "Unavailable",
+  "646": "Unavailable",
+  "647": "Unavailable",
+  "648": "Unavailable",
+  "649": "Unavailable",
+  "650": "Unavailable"
+}
