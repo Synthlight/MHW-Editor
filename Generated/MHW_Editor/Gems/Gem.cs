@@ -1,6 +1,8 @@
 
 
 
+using MHW_Template;
+
 namespace MHW_Editor.Gems {
     public partial class Gem {
         public const ushort StructSize = 28;

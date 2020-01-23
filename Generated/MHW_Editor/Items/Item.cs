@@ -1,6 +1,8 @@
 
 
 
+using MHW_Template;
+
 namespace MHW_Editor.Items {
     public partial class Item {
         public const ushort StructSize = 32;

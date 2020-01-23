@@ -1,6 +1,8 @@
 
 
 
+using MHW_Template;
+
 namespace MHW_Editor.Armors {
     public partial class Armor {
         public const ushort StructSize = 60;
