@@ -44,6 +44,24 @@ namespace MHW_Generator {
                 }
             });
 
+            GenerateItemProps("MHW_Editor.Items", "ArmUp", new MhwStructData {
+                size = 22,
+                offsetInitial = 10,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Unk1", 0, typeof(short)),
+                    new MhwStructData.Entry("Unk2", 2, typeof(short)),
+                    new MhwStructData.Entry("Unk3", 4, typeof(short)),
+                    new MhwStructData.Entry("Unk4", 6, typeof(short)),
+                    new MhwStructData.Entry("Unk5", 8, typeof(short)),
+                    new MhwStructData.Entry("Unk6", 10, typeof(short)),
+                    new MhwStructData.Entry("Unk7", 12, typeof(short)),
+                    new MhwStructData.Entry("Unk8", 14, typeof(short)),
+                    new MhwStructData.Entry("Unk9", 16, typeof(short)),
+                    new MhwStructData.Entry("Unk10", 18, typeof(short)),
+                    new MhwStructData.Entry("Unk11", 20, typeof(short)),
+                }
+            });
+
             GenerateItemProps("MHW_Editor.Gems", "Gem", new MhwStructData {
                 size = 28,
                 offsetInitial = 10,
@@ -161,6 +179,21 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Special Ammo Type", 57, typeof(byte)),
                     new MhwStructData.Entry("Skill Raw", 65, typeof(ushort), accessLevel: "protected"),
                     new MhwStructData.Entry("GMD Name Index", 61, typeof(ushort), accessLevel: "protected")
+                }
+            });
+
+            GenerateItemProps("MHW_Editor.Weapons", "Sharpness", new MhwStructData {
+                size = 18,
+                offsetInitial = 10,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Red", 4, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwStructData.Entry("Orange", 6, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwStructData.Entry("Yellow", 8, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwStructData.Entry("Green", 10, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwStructData.Entry("Blue", 12, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwStructData.Entry("White", 14, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwStructData.Entry("Purple", 16, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
                 }
             });
         }
