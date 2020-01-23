@@ -128,5 +128,9 @@ namespace MHW_Editor.Armors {
             get => GetData<byte>(59);
             set => SetData(59, value);
         }
+        protected ushort GMD_Name_Index {
+            get => GetData<ushort>(55);
+            set => SetData(55, value);
+        }
     }
 }

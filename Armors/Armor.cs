@@ -1,13 +1,14 @@
 ﻿using System;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
+using MHW_Template;
 
 namespace MHW_Editor.Armors {
     public partial class Armor : MhwItem, IMhwItem, ISlots {
         public Armor(byte[] bytes, int offset) : base(bytes, offset) {
         }
 
-        public override string Name => DataHelper.armorData.TryGet(Set_Id, "Unknown");
+        public override string Name => DataHelper.armorData.TryGet(GMD_Name_Index, "Unknown");
 
         public string Set_Skill_1 {
             get => DataHelper.skillData.TryGet(Set_Skill_1_Raw, new Skill {name = Set_Skill_1_Raw.ToString()}).name;

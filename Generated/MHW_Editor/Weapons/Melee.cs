@@ -1,6 +1,8 @@
 
 
 
+using MHW_Template;
+
 namespace MHW_Editor.Weapons {
     public partial class Melee {
         public const ushort StructSize = 66;
@@ -94,6 +96,10 @@ namespace MHW_Editor.Weapons {
         protected ushort Skill_Raw {
             get => GetData<ushort>(62);
             set => SetData(62, value);
+        }
+        protected ushort GMD_Name_Index {
+            get => GetData<ushort>(58);
+            set => SetData(58, value);
         }
     }
 }

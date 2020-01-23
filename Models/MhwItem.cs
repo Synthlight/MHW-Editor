@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using JetBrains.Annotations;
+using MHW_Template;
 
 namespace MHW_Editor.Models {
     public abstract class MhwItem : IMhwItem {
@@ -17,19 +18,7 @@ namespace MHW_Editor.Models {
         }
 
         protected T GetData<T>(int offset) where T : struct {
-            return GetData<T>(offset, Marshal.SizeOf(default(T)));
-        }
-
-        protected T GetData<T>(int offset, int size) where T : struct {
-            var subsequence = Bytes.Subsequence(offset, size);
-            var handle = GCHandle.Alloc(subsequence, GCHandleType.Pinned);
-
-            try {
-                var rawDataPtr = handle.AddrOfPinnedObject();
-                return (T) Marshal.PtrToStructure(rawDataPtr, typeof(T));
-            } finally {
-                handle.Free();
-            }
+            return Bytes.GetData<T>(offset);
         }
 
         protected void SetData<T>(int offset, T value) where T : struct {

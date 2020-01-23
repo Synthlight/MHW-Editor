@@ -1,6 +1,8 @@
 
 
 
+using MHW_Template;
+
 namespace MHW_Editor.Weapons {
     public partial class Ranged {
         public const ushort StructSize = 69;
@@ -114,6 +116,10 @@ namespace MHW_Editor.Weapons {
         protected ushort Skill_Raw {
             get => GetData<ushort>(65);
             set => SetData(65, value);
+        }
+        protected ushort GMD_Name_Index {
+            get => GetData<ushort>(61);
+            set => SetData(61, value);
         }
     }
 }

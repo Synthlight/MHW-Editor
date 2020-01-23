@@ -45,6 +45,7 @@
     <Compile Include="Armors\ArmorType.cs" />
     <Compile Include="Armors\Gender.cs" />
     <Compile Include="Armors\Variant.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="Items\ItemSubType.cs" />
     <Compile Include="Items\ItemType.cs" />
     <Compile Include="ItemTemplate.cs">
