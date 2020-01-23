@@ -1,4 +1,5 @@
-﻿namespace MHW_Name_Extractor.Structs {
+﻿#pragma warning disable 169
+namespace MHW_Name_Extractor.Structs {
     public struct GmdInfoEntry {
         uint string_index;
         int hash_key_2x; // signed_crc32(key_value + key_value)
