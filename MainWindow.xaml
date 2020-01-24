@@ -67,6 +67,7 @@
         </DockPanel>
         <DataGrid Name="dg_items"
                   Grid.Row="1"
-                  CanUserAddRows="False"/>
+                  CanUserAddRows="False"
+                  SelectionUnit="Cell"/>
     </Grid>
 </Window>
