@@ -7,6 +7,6 @@ namespace MHW_Editor.Items {
 
         public override string Name => "None";
 
-        public int Id => (Offset - InitialOffset) / 6;
+        public int Index => (Offset - InitialOffset) / StructSize;
     }
 }

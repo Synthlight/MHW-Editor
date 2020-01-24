@@ -60,6 +60,7 @@
     <Compile Include="Weapons\Elderseal.cs" />
     <Compile Include="Weapons\Deviation.cs" />
     <Compile Include="Weapons\BarrelType.cs" />
+    <Compile Include="Weapons\Model\ShellTableTypes.cs" />
     <Compile Include="Weapons\MuzzleType.cs" />
     <Compile Include="Weapons\ScopeType.cs" />
     <Compile Include="Weapons\SpecialAmmo.cs" />

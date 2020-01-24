@@ -77,6 +77,7 @@
     <Compile Include="Generated\MHW_Editor\Items\ArmUp.cs" />
     <Compile Include="Generated\MHW_Editor\Items\BottleTable.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Sharpness.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\ShellTable.cs" />
     <Compile Include="Items\ArmUp.cs" />
     <Compile Include="Items\BottleTable.cs" />
     <Compile Include="Models\Skills.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Weapons\IWeapon.cs" />
     <Compile Include="Weapons\Melee.cs" />
     <Compile Include="Weapons\Ranged.cs" />
+    <Compile Include="Weapons\ShellTable.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

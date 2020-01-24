@@ -27,7 +27,8 @@ namespace MHW_Editor {
             "*.bbtbl",
             "*.arm_up",
             "*.kire",
-            "*.skl_dat"
+            "*.skl_dat",
+            "*.shl_tbl"
         };
 
         private readonly List<dynamic> items = new List<dynamic>();
@@ -71,7 +72,7 @@ namespace MHW_Editor {
                     e.Cancel = IsBow();
                     break;
                 case nameof(IMhwItem.Name):
-                    e.Cancel = IsBottleTable() || IsArmUp() || IsSharpness();
+                    e.Cancel = IsBottleTable() || IsArmUp() || IsSharpness() || IsShellTable();
                     break;
                 default:
                     e.Cancel = e.PropertyName.EndsWith("Raw") || e.PropertyName.EndsWith("___");
@@ -141,8 +142,8 @@ namespace MHW_Editor {
                 dg_items.Columns.FindColumn(nameof(Ranged.Skill)).DisplayIndex = slotSize3Index + 1;
             }
 
-            if (IsBottleTable()) {
-                dg_items.Columns.FindColumn(nameof(BottleTable.Id)).DisplayIndex = 0;
+            if (IsBottleTable() || IsShellTable()) {
+                dg_items.Columns.FindColumn(nameof(BottleTable.Index)).DisplayIndex = 0;
             }
 
             foreach (var column in dg_items.Columns) {
@@ -403,6 +404,9 @@ namespace MHW_Editor {
             } else if (IsSkillDat()) {
                 initialOffset = SkillDat.InitialOffset;
                 itemSize = SkillDat.StructSize;
+            } else if (IsShellTable()) {
+                initialOffset = ShellTable.InitialOffset;
+                itemSize = ShellTable.StructSize;
             } else {
                 return;
             }
@@ -452,6 +456,8 @@ namespace MHW_Editor {
                         obj = new Sharpness(buff, offset);
                     } else if (IsSkillDat()) {
                         obj = new SkillDat(buff, offset);
+                    } else if (IsShellTable()) {
+                        obj = new ShellTable(buff, offset);
                     }
 
                     if (obj == null) return;
@@ -488,6 +494,7 @@ namespace MHW_Editor {
         private bool IsArmUp() => Path.GetExtension(targetFile) == ".arm_up";
         private bool IsSharpness() => Path.GetExtension(targetFile) == ".kire";
         private bool IsSkillDat() => Path.GetExtension(targetFile) == ".skl_dat";
+        private bool IsShellTable() => Path.GetExtension(targetFile) == ".shl_tbl";
         private bool HasName() => dg_items.Columns.FirstOrDefault(x => x.Header.ToString() == "Name") != null;
     }
 }
