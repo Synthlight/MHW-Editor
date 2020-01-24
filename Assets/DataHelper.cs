@@ -16,21 +16,16 @@ namespace MHW_Editor.Assets {
 
             var skillDataTemp = LoadDict<uint, string>(Assets.skillData);
             const uint step = 3;
-            ushort unknownIndex = 1;
             for (uint index = 0; index < skillDataTemp.Count; index += step) {
                 var key = (ushort) (index / step);
-                var value = skillDataTemp[index];
-
-                if (skillDataNameLookup.ContainsKey(value)) {
-                    value += $" {unknownIndex++}";
-                }
+                var value = $"{key}: {skillDataTemp[index]}";
 
                 skillData.Add(key, value);
                 skillDataNameLookup.Add(value, key);
             }
 
             skillData[0] = "--------";
-            skillDataNameLookup.Remove("Unavailable");
+            skillDataNameLookup.Remove("0: Unavailable");
             skillDataNameLookup.Add("--------", 0);
 
             armorData = LoadDict<ushort, string>(Assets.armorData);
