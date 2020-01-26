@@ -12,7 +12,7 @@ namespace MHW_Editor.Gems {
         public SkillDat(byte[] bytes, int offset) : base(bytes, offset) {
         }
 
-        public Skill Name_ => DataHelper.skillData.TryGet(Id, Skill.DEFAULT);
+        public Skill Name_And_Id => DataHelper.skillData.TryGet(Id, Skill.DEFAULT);
         public override string Name => "None";
 
         public string Description => DataHelper.skillDataDescriptions.TryGet(Id, "Unknown");
@@ -24,7 +24,7 @@ namespace MHW_Editor.Gems {
 
         public int Compare(object x, object y) {
             if (x is SkillDat x1 && y is SkillDat y1) {
-                var idCompare = x1.Name_.id.CompareTo(y1.Name_.id) * (direction == ListSortDirection.Ascending ? 1 : -1);
+                var idCompare = x1.Name_And_Id.id.CompareTo(y1.Name_And_Id.id) * (direction == ListSortDirection.Ascending ? 1 : -1);
                 var levelCompare = x1.Level.CompareTo(y1.Level) * (direction == ListSortDirection.Ascending ? 1 : -1);
 
                 return idCompare == 0 ? levelCompare : idCompare;

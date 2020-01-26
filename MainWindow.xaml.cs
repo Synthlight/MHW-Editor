@@ -104,8 +104,8 @@ namespace MHW_Editor {
                     e.Column = cb;
                     break;
                 }
-                case nameof(SkillDat.Name_):
-                    e.Column.Header = nameof(SkillDat.Name);
+                case nameof(SkillDat.Name_And_Id):
+                    e.Column.Header = "Name/ID";
                     e.Column.CanUserSort = true;
                     break;
             }
@@ -172,7 +172,7 @@ namespace MHW_Editor {
         }
 
         private void Dg_items_Sorting(object sender, DataGridSortingEventArgs e) {
-            if (IsSkillDat() && (string) e.Column.Header == nameof(SkillDat.Name)) {
+            if (IsSkillDat() && (string) e.Column.Header == "Name/ID") {
                 var column = (DataGridTextColumn) e.Column;
                 var direction = (column.SortDirection != ListSortDirection.Ascending) ? ListSortDirection.Ascending : ListSortDirection.Descending;
                 SkillDatSorter.INSTANCE.direction = direction;
