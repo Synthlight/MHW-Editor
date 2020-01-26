@@ -127,7 +127,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Slot 2 Size", 42, typeof(byte)),
                     new MhwStructData.Entry("Slot 3 Size", 43, typeof(byte)),
                     new MhwStructData.Entry("Special Ammo Type", 57, typeof(byte)),
-                    new MhwStructData.Entry("Skill Raw", 65, typeof(ushort), accessLevel: "protected"),
+                    new MhwStructData.Entry("Skill", 65, typeof(ushort)),
                     new MhwStructData.Entry("GMD Name Index", 61, typeof(ushort), accessLevel: "protected")
                 }
             });
@@ -160,7 +160,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Slot 1 Size", 36, typeof(byte)),
                     new MhwStructData.Entry("Slot 2 Size", 37, typeof(byte)),
                     new MhwStructData.Entry("Slot 3 Size", 38, typeof(byte)),
-                    new MhwStructData.Entry("Skill Raw", 62, typeof(ushort), accessLevel: "protected"),
+                    new MhwStructData.Entry("Skill", 62, typeof(ushort)),
                     new MhwStructData.Entry("GMD Name Index", 58, typeof(ushort), accessLevel: "protected")
                 }
             });
@@ -189,15 +189,15 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Slot 1 Size", 31, typeof(byte)),
                     new MhwStructData.Entry("Slot 2 Size", 32, typeof(byte)),
                     new MhwStructData.Entry("Slot 3 Size", 33, typeof(byte)),
-                    new MhwStructData.Entry("Set Skill 1 Raw", 34, typeof(ushort), accessLevel: "protected"),
+                    new MhwStructData.Entry("Set Skill 1", 34, typeof(ushort)),
                     new MhwStructData.Entry("Set Skill 1 Level", 36, typeof(byte)),
-                    new MhwStructData.Entry("Set Skill 2 Raw", 37, typeof(ushort), accessLevel: "protected"),
+                    new MhwStructData.Entry("Set Skill 2", 37, typeof(ushort)),
                     new MhwStructData.Entry("Set Skill 2 Level", 39, typeof(byte)),
-                    new MhwStructData.Entry("Skill 1 Raw", 40, typeof(ushort), accessLevel: "protected"),
+                    new MhwStructData.Entry("Skill 1", 40, typeof(ushort)),
                     new MhwStructData.Entry("Skill 1 Level", 42, typeof(byte)),
-                    new MhwStructData.Entry("Skill 2 Raw", 43, typeof(ushort), accessLevel: "protected"),
+                    new MhwStructData.Entry("Skill 2", 43, typeof(ushort)),
                     new MhwStructData.Entry("Skill 2 Level", 45, typeof(byte)),
-                    new MhwStructData.Entry("Skill 3 Raw", 46, typeof(ushort), accessLevel: "protected"),
+                    new MhwStructData.Entry("Skill 3", 46, typeof(ushort)),
                     new MhwStructData.Entry("Skill 3 Level", 48, typeof(byte)),
                     new MhwStructData.Entry("Gender", 49, typeof(byte), typeof(Gender)),
                     new MhwStructData.Entry("Set Group", 53, typeof(ushort)),
@@ -234,9 +234,9 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Index", 4, typeof(ushort), true, accessLevel: "private"),
                     new MhwStructData.Entry("Id", 0, typeof(ushort), true),
                     new MhwStructData.Entry("Size", 8, typeof(byte)),
-                    new MhwStructData.Entry("Skill 1 Raw", 12, typeof(ushort), accessLevel: "protected"),
+                    new MhwStructData.Entry("Skill 1", 12, typeof(ushort)),
                     new MhwStructData.Entry("Skill 1 Level", 16, typeof(byte)),
-                    new MhwStructData.Entry("Skill 2 Raw", 20, typeof(ushort), accessLevel: "protected"),
+                    new MhwStructData.Entry("Skill 2", 20, typeof(ushort)),
                     new MhwStructData.Entry("Skill 2 Level", 24, typeof(byte))
                 }
             });

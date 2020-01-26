@@ -7,7 +7,7 @@ namespace MHW_Editor.Weapons {
         public byte Normal_1_Mag_Cnt {
             get => GetData<byte>(0);
             set {
-                SetData(0, value);
+                SetData(0, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Normal_1_Mag_Cnt));
             }
         }
@@ -28,7 +28,7 @@ namespace MHW_Editor.Weapons {
         public byte Normal_2_Mag_Cnt {
             get => GetData<byte>(3);
             set {
-                SetData(3, value);
+                SetData(3, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Normal_2_Mag_Cnt));
             }
         }
@@ -49,7 +49,7 @@ namespace MHW_Editor.Weapons {
         public byte Normal_3_Mag_Cnt {
             get => GetData<byte>(6);
             set {
-                SetData(6, value);
+                SetData(6, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Normal_3_Mag_Cnt));
             }
         }
@@ -70,7 +70,7 @@ namespace MHW_Editor.Weapons {
         public byte Pierce_1_Mag_Cnt {
             get => GetData<byte>(9);
             set {
-                SetData(9, value);
+                SetData(9, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Pierce_1_Mag_Cnt));
             }
         }
@@ -91,7 +91,7 @@ namespace MHW_Editor.Weapons {
         public byte Pierce_2_Mag_Cnt {
             get => GetData<byte>(12);
             set {
-                SetData(12, value);
+                SetData(12, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Pierce_2_Mag_Cnt));
             }
         }
@@ -112,7 +112,7 @@ namespace MHW_Editor.Weapons {
         public byte Pierce_3_Mag_Cnt {
             get => GetData<byte>(15);
             set {
-                SetData(15, value);
+                SetData(15, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Pierce_3_Mag_Cnt));
             }
         }
@@ -133,7 +133,7 @@ namespace MHW_Editor.Weapons {
         public byte Spread_1_Mag_Cnt {
             get => GetData<byte>(18);
             set {
-                SetData(18, value);
+                SetData(18, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Spread_1_Mag_Cnt));
             }
         }
@@ -154,7 +154,7 @@ namespace MHW_Editor.Weapons {
         public byte Spread_2_Mag_Cnt {
             get => GetData<byte>(21);
             set {
-                SetData(21, value);
+                SetData(21, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Spread_2_Mag_Cnt));
             }
         }
@@ -175,7 +175,7 @@ namespace MHW_Editor.Weapons {
         public byte Spread_3_Mag_Cnt {
             get => GetData<byte>(24);
             set {
-                SetData(24, value);
+                SetData(24, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Spread_3_Mag_Cnt));
             }
         }
@@ -196,7 +196,7 @@ namespace MHW_Editor.Weapons {
         public byte Cluster_1_Mag_Cnt {
             get => GetData<byte>(27);
             set {
-                SetData(27, value);
+                SetData(27, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Cluster_1_Mag_Cnt));
             }
         }
@@ -217,7 +217,7 @@ namespace MHW_Editor.Weapons {
         public byte Cluster_2_Mag_Cnt {
             get => GetData<byte>(30);
             set {
-                SetData(30, value);
+                SetData(30, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Cluster_2_Mag_Cnt));
             }
         }
@@ -238,7 +238,7 @@ namespace MHW_Editor.Weapons {
         public byte Cluster_3_Mag_Cnt {
             get => GetData<byte>(33);
             set {
-                SetData(33, value);
+                SetData(33, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Cluster_3_Mag_Cnt));
             }
         }
@@ -259,7 +259,7 @@ namespace MHW_Editor.Weapons {
         public byte Wyvern_Mag_Cnt {
             get => GetData<byte>(36);
             set {
-                SetData(36, value);
+                SetData(36, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Wyvern_Mag_Cnt));
             }
         }
@@ -280,7 +280,7 @@ namespace MHW_Editor.Weapons {
         public byte Sticky_1_Mag_Cnt {
             get => GetData<byte>(39);
             set {
-                SetData(39, value);
+                SetData(39, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Sticky_1_Mag_Cnt));
             }
         }
@@ -301,7 +301,7 @@ namespace MHW_Editor.Weapons {
         public byte Sticky_2_Mag_Cnt {
             get => GetData<byte>(42);
             set {
-                SetData(42, value);
+                SetData(42, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Sticky_2_Mag_Cnt));
             }
         }
@@ -322,7 +322,7 @@ namespace MHW_Editor.Weapons {
         public byte Sticky_3_Mag_Cnt {
             get => GetData<byte>(45);
             set {
-                SetData(45, value);
+                SetData(45, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Sticky_3_Mag_Cnt));
             }
         }
@@ -343,7 +343,7 @@ namespace MHW_Editor.Weapons {
         public byte Slicing_Mag_Cnt {
             get => GetData<byte>(48);
             set {
-                SetData(48, value);
+                SetData(48, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Slicing_Mag_Cnt));
             }
         }
@@ -364,7 +364,7 @@ namespace MHW_Editor.Weapons {
         public byte Flaming_Mag_Cnt {
             get => GetData<byte>(51);
             set {
-                SetData(51, value);
+                SetData(51, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Flaming_Mag_Cnt));
             }
         }
@@ -385,7 +385,7 @@ namespace MHW_Editor.Weapons {
         public byte Water_Mag_Cnt {
             get => GetData<byte>(54);
             set {
-                SetData(54, value);
+                SetData(54, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Water_Mag_Cnt));
             }
         }
@@ -406,7 +406,7 @@ namespace MHW_Editor.Weapons {
         public byte Freeze_Mag_Cnt {
             get => GetData<byte>(57);
             set {
-                SetData(57, value);
+                SetData(57, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Freeze_Mag_Cnt));
             }
         }
@@ -427,7 +427,7 @@ namespace MHW_Editor.Weapons {
         public byte Thunder_Mag_Cnt {
             get => GetData<byte>(60);
             set {
-                SetData(60, value);
+                SetData(60, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Thunder_Mag_Cnt));
             }
         }
@@ -448,7 +448,7 @@ namespace MHW_Editor.Weapons {
         public byte Dragon_Mag_Cnt {
             get => GetData<byte>(63);
             set {
-                SetData(63, value);
+                SetData(63, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Dragon_Mag_Cnt));
             }
         }
@@ -469,7 +469,7 @@ namespace MHW_Editor.Weapons {
         public byte Poison_1_Mag_Cnt {
             get => GetData<byte>(66);
             set {
-                SetData(66, value);
+                SetData(66, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Poison_1_Mag_Cnt));
             }
         }
@@ -490,7 +490,7 @@ namespace MHW_Editor.Weapons {
         public byte Poison_2_Mag_Cnt {
             get => GetData<byte>(69);
             set {
-                SetData(69, value);
+                SetData(69, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Poison_2_Mag_Cnt));
             }
         }
@@ -511,7 +511,7 @@ namespace MHW_Editor.Weapons {
         public byte Paralysis_1_Mag_Cnt {
             get => GetData<byte>(72);
             set {
-                SetData(72, value);
+                SetData(72, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Paralysis_1_Mag_Cnt));
             }
         }
@@ -532,7 +532,7 @@ namespace MHW_Editor.Weapons {
         public byte Paralysis_2_Mag_Cnt {
             get => GetData<byte>(75);
             set {
-                SetData(75, value);
+                SetData(75, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Paralysis_2_Mag_Cnt));
             }
         }
@@ -553,7 +553,7 @@ namespace MHW_Editor.Weapons {
         public byte Sleep_1_Mag_Cnt {
             get => GetData<byte>(78);
             set {
-                SetData(78, value);
+                SetData(78, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Sleep_1_Mag_Cnt));
             }
         }
@@ -574,7 +574,7 @@ namespace MHW_Editor.Weapons {
         public byte Sleep_2_Mag_Cnt {
             get => GetData<byte>(81);
             set {
-                SetData(81, value);
+                SetData(81, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Sleep_2_Mag_Cnt));
             }
         }
@@ -595,7 +595,7 @@ namespace MHW_Editor.Weapons {
         public byte Exhaust_1_Mag_Cnt {
             get => GetData<byte>(84);
             set {
-                SetData(84, value);
+                SetData(84, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Exhaust_1_Mag_Cnt));
             }
         }
@@ -616,7 +616,7 @@ namespace MHW_Editor.Weapons {
         public byte Exhaust_2_Mag_Cnt {
             get => GetData<byte>(87);
             set {
-                SetData(87, value);
+                SetData(87, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Exhaust_2_Mag_Cnt));
             }
         }
@@ -637,7 +637,7 @@ namespace MHW_Editor.Weapons {
         public byte Recover_1_Mag_Cnt {
             get => GetData<byte>(90);
             set {
-                SetData(90, value);
+                SetData(90, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Recover_1_Mag_Cnt));
             }
         }
@@ -658,7 +658,7 @@ namespace MHW_Editor.Weapons {
         public byte Recover_2_Mag_Cnt {
             get => GetData<byte>(93);
             set {
-                SetData(93, value);
+                SetData(93, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Recover_2_Mag_Cnt));
             }
         }
@@ -679,7 +679,7 @@ namespace MHW_Editor.Weapons {
         public byte Demon_Mag_Cnt {
             get => GetData<byte>(96);
             set {
-                SetData(96, value);
+                SetData(96, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Demon_Mag_Cnt));
             }
         }
@@ -700,7 +700,7 @@ namespace MHW_Editor.Weapons {
         public byte Armor_Mag_Cnt {
             get => GetData<byte>(99);
             set {
-                SetData(99, value);
+                SetData(99, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Armor_Mag_Cnt));
             }
         }
@@ -721,7 +721,7 @@ namespace MHW_Editor.Weapons {
         public byte Tranq_Mag_Cnt {
             get => GetData<byte>(108);
             set {
-                SetData(108, value);
+                SetData(108, value.Clamp((byte) 0, (byte) 10));
                 OnPropertyChanged(nameof(Tranq_Mag_Cnt));
             }
         }

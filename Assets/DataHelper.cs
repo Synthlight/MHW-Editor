@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Text;
+using MHW_Editor.Models;
 using Newtonsoft.Json;
 
 namespace MHW_Editor.Assets {
     public static class DataHelper {
         public static readonly Dictionary<uint, string> itemData;
-        public static readonly Dictionary<ushort, string> skillData = new Dictionary<ushort, string>();
-        public static readonly Dictionary<string, ushort> skillDataNameLookup = new Dictionary<string, ushort>();
+        public static readonly Dictionary<ushort, Skill> skillData = new Dictionary<ushort, Skill>();
+        public static readonly Dictionary<Skill, ushort> skillDataNameLookup = new Dictionary<Skill, ushort>();
         public static readonly Dictionary<ushort, string> armorData;
         public static readonly Dictionary<string, Dictionary<uint, string>> weaponData = new Dictionary<string, Dictionary<uint, string>>();
         public static readonly Dictionary<uint, string> dummyDict = new Dictionary<uint, string>();
@@ -18,15 +19,11 @@ namespace MHW_Editor.Assets {
             const uint step = 3;
             for (uint index = 0; index < skillDataTemp.Count; index += step) {
                 var key = (ushort) (index / step);
-                var value = $"{key}: {skillDataTemp[index]}";
+                var value = new Skill(key, key == 0 ? "--------" : skillDataTemp[index]);
 
                 skillData.Add(key, value);
                 skillDataNameLookup.Add(value, key);
             }
-
-            skillData[0] = "--------";
-            skillDataNameLookup.Remove("0: Unavailable");
-            skillDataNameLookup.Add("--------", 0);
 
             armorData = LoadDict<ushort, string>(Assets.armorData);
 

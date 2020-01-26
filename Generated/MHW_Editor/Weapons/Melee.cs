@@ -150,11 +150,11 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Slot_3_Size));
             }
         }
-        protected ushort Skill_Raw {
+        public ushort Skill {
             get => GetData<ushort>(62);
             set {
                 SetData(62, value);
-                OnPropertyChanged(nameof(Skill_Raw));
+                OnPropertyChanged(nameof(Skill));
             }
         }
         protected ushort GMD_Name_Index {

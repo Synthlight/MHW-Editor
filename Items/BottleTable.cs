@@ -1,7 +1,7 @@
 ﻿using MHW_Editor.Models;
 
 namespace MHW_Editor.Items {
-    public partial class BottleTable : MhwItem, IMhwItem {
+    public partial class BottleTable : MhwItem {
         public BottleTable(byte[] bytes, int offset) : base(bytes, offset) {
         }
 

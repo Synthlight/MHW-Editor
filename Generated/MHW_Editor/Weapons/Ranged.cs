@@ -185,11 +185,11 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Special_Ammo_Type));
             }
         }
-        protected ushort Skill_Raw {
+        public ushort Skill {
             get => GetData<ushort>(65);
             set {
                 SetData(65, value);
-                OnPropertyChanged(nameof(Skill_Raw));
+                OnPropertyChanged(nameof(Skill));
             }
         }
         protected ushort GMD_Name_Index {

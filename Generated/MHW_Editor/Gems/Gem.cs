@@ -17,11 +17,11 @@ namespace MHW_Editor.Gems {
                 OnPropertyChanged(nameof(Size));
             }
         }
-        protected ushort Skill_1_Raw {
+        public ushort Skill_1 {
             get => GetData<ushort>(12);
             set {
                 SetData(12, value);
-                OnPropertyChanged(nameof(Skill_1_Raw));
+                OnPropertyChanged(nameof(Skill_1));
             }
         }
         public byte Skill_1_Level {
@@ -31,11 +31,11 @@ namespace MHW_Editor.Gems {
                 OnPropertyChanged(nameof(Skill_1_Level));
             }
         }
-        protected ushort Skill_2_Raw {
+        public ushort Skill_2 {
             get => GetData<ushort>(20);
             set {
                 SetData(20, value);
-                OnPropertyChanged(nameof(Skill_2_Raw));
+                OnPropertyChanged(nameof(Skill_2));
             }
         }
         public byte Skill_2_Level {

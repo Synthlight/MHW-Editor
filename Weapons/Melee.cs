@@ -17,13 +17,5 @@ namespace MHW_Editor.Weapons {
             get => Convert.ToBoolean(Is_Fixed_Upgrade_Raw);
             set => Is_Fixed_Upgrade_Raw = Convert.ToByte(value);
         }
-
-        public string Skill {
-            get => DataHelper.skillData.TryGet(Skill_Raw, Skill_Raw.ToString());
-            set {
-                Skill_Raw = DataHelper.skillDataNameLookup[value];
-                OnPropertyChanged(nameof(Skill_Raw));
-            }
-        }
     }
 }

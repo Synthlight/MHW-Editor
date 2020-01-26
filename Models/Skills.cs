@@ -1,11 +1,49 @@
 ﻿namespace MHW_Editor.Models {
     public struct Skill {
-        public ushort value;
-        public string name;
-        public bool set;
+        public static readonly Skill DEFAULT = new Skill(0, "Unknown");
+        public readonly ushort id;
+        public readonly string name;
+
+        public Skill(ushort id, string name) {
+            this.id = id;
+            this.name = name;
+        }
 
         public override string ToString() {
-            return name;
+            return $"{id}: {name}";
+        }
+
+        public bool Equals(Skill other) {
+            return id == other.id;
+        }
+
+        public bool Equals(ushort other) {
+            return id == other;
+        }
+
+        public override bool Equals(object obj) {
+            return obj is Skill other1 && this == other1
+                   || obj is ushort other2 && this == other2;
+        }
+
+        public override int GetHashCode() {
+            return id.GetHashCode();
+        }
+
+        public static bool operator ==(Skill left, Skill right) {
+            return left.id == right.id;
+        }
+
+        public static bool operator !=(Skill left, Skill right) {
+            return left.id != right.id;
+        }
+
+        public static bool operator ==(Skill left, ushort right) {
+            return left.id == right;
+        }
+
+        public static bool operator !=(Skill left, ushort right) {
+            return left.id != right;
         }
     }
 }

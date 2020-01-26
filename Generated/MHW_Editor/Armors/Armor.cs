@@ -126,11 +126,11 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Slot_3_Size));
             }
         }
-        protected ushort Set_Skill_1_Raw {
+        public ushort Set_Skill_1 {
             get => GetData<ushort>(34);
             set {
                 SetData(34, value);
-                OnPropertyChanged(nameof(Set_Skill_1_Raw));
+                OnPropertyChanged(nameof(Set_Skill_1));
             }
         }
         public byte Set_Skill_1_Level {
@@ -140,11 +140,11 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Skill_1_Level));
             }
         }
-        protected ushort Set_Skill_2_Raw {
+        public ushort Set_Skill_2 {
             get => GetData<ushort>(37);
             set {
                 SetData(37, value);
-                OnPropertyChanged(nameof(Set_Skill_2_Raw));
+                OnPropertyChanged(nameof(Set_Skill_2));
             }
         }
         public byte Set_Skill_2_Level {
@@ -154,11 +154,11 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Skill_2_Level));
             }
         }
-        protected ushort Skill_1_Raw {
+        public ushort Skill_1 {
             get => GetData<ushort>(40);
             set {
                 SetData(40, value);
-                OnPropertyChanged(nameof(Skill_1_Raw));
+                OnPropertyChanged(nameof(Skill_1));
             }
         }
         public byte Skill_1_Level {
@@ -168,11 +168,11 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_1_Level));
             }
         }
-        protected ushort Skill_2_Raw {
+        public ushort Skill_2 {
             get => GetData<ushort>(43);
             set {
                 SetData(43, value);
-                OnPropertyChanged(nameof(Skill_2_Raw));
+                OnPropertyChanged(nameof(Skill_2));
             }
         }
         public byte Skill_2_Level {
@@ -182,11 +182,11 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_2_Level));
             }
         }
-        protected ushort Skill_3_Raw {
+        public ushort Skill_3 {
             get => GetData<ushort>(46);
             set {
                 SetData(46, value);
-                OnPropertyChanged(nameof(Skill_3_Raw));
+                OnPropertyChanged(nameof(Skill_3));
             }
         }
         public byte Skill_3_Level {
