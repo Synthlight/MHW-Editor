@@ -14,20 +14,23 @@ namespace MHW_Editor.Gems {
 
         public Skill Name_ => DataHelper.skillData.TryGet(Id, Skill.DEFAULT);
         public override string Name => "None";
+
+        public string Description => DataHelper.skillDataDescriptions.TryGet(Id, "Unknown");
     }
 
     public class SkillDatSorter : IComparer {
-        public static SkillDatSorter instance = new SkillDatSorter();
+        public static readonly SkillDatSorter INSTANCE = new SkillDatSorter();
         public ListSortDirection? direction = ListSortDirection.Ascending;
 
-        public SkillDatSorter() {
-        }
-
         public int Compare(object x, object y) {
-            switch (x) {
-                case SkillDat x1 when y is SkillDat y1: return x1.Name_.id.CompareTo(y1.Name_.id) * (direction == ListSortDirection.Ascending ? 1 : -1);
-                default: throw new Exception("Compared objects are not both SkillDats.");
+            if (x is SkillDat x1 && y is SkillDat y1) {
+                var idCompare = x1.Name_.id.CompareTo(y1.Name_.id) * (direction == ListSortDirection.Ascending ? 1 : -1);
+                var levelCompare = x1.Level.CompareTo(y1.Level) * (direction == ListSortDirection.Ascending ? 1 : -1);
+
+                return idCompare == 0 ? levelCompare : idCompare;
             }
+
+            throw new Exception("Compared objects are not both SkillDats.");
         }
     }
 }

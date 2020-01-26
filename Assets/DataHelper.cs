@@ -7,6 +7,7 @@ namespace MHW_Editor.Assets {
     public static class DataHelper {
         public static readonly Dictionary<uint, string> itemData;
         public static readonly Dictionary<ushort, Skill> skillData = new Dictionary<ushort, Skill>();
+        public static readonly Dictionary<ushort, string> skillDataDescriptions = new Dictionary<ushort, string>();
         public static readonly Dictionary<Skill, ushort> skillDataNameLookup = new Dictionary<Skill, ushort>();
         public static readonly Dictionary<ushort, string> armorData;
         public static readonly Dictionary<string, Dictionary<uint, string>> weaponData = new Dictionary<string, Dictionary<uint, string>>();
@@ -20,8 +21,10 @@ namespace MHW_Editor.Assets {
             for (uint index = 0; index < skillDataTemp.Count; index += step) {
                 var key = (ushort) (index / step);
                 var value = new Skill(key, key == 0 ? "--------" : skillDataTemp[index]);
+                var desc = skillDataTemp[index + 2].Replace("\r\n", " ");
 
                 skillData.Add(key, value);
+                skillDataDescriptions.Add(key, desc);
                 skillDataNameLookup.Add(value, key);
             }
 

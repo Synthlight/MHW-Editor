@@ -76,6 +76,9 @@ namespace MHW_Editor {
                 case nameof(IMhwItem.Name):
                     e.Cancel = IsBottleTable() || IsArmUp() || IsSharpness() || IsShellTable() || IsSkillDat();
                     break;
+                case nameof(SkillDat.Id):
+                    e.Cancel = IsSkillDat();
+                    break;
                 default:
                     e.Cancel = e.PropertyName.EndsWith("Raw") || e.PropertyName.EndsWith("___");
                     break;
@@ -141,6 +144,10 @@ namespace MHW_Editor {
                 dg_items.Columns.FindColumn(nameof(BottleTable.Index)).DisplayIndex = 0;
             }
 
+            if (IsSkillDat()) {
+                dg_items.Columns.FindColumn(nameof(SkillDat.Description)).DisplayIndex = dg_items.Columns.Count - 1;
+            }
+
             foreach (var column in dg_items.Columns) {
                 switch (column.Header.ToString()) {
                     case nameof(Armor.Set_Id):
@@ -168,11 +175,11 @@ namespace MHW_Editor {
             if (IsSkillDat() && (string) e.Column.Header == nameof(SkillDat.Name)) {
                 var column = (DataGridTextColumn) e.Column;
                 var direction = (column.SortDirection != ListSortDirection.Ascending) ? ListSortDirection.Ascending : ListSortDirection.Descending;
-                SkillDatSorter.instance.direction = direction;
+                SkillDatSorter.INSTANCE.direction = direction;
                 column.SortDirection = direction;
 
                 var listColView = (ListCollectionView) dg_items.ItemsSource;
-                listColView.CustomSort = SkillDatSorter.instance;
+                listColView.CustomSort = SkillDatSorter.INSTANCE;
 
                 e.Handled = true;
             }
