@@ -63,11 +63,16 @@
                         HorizontalAlignment="Right"
                         Content="Set Sharpness to Max"
                         Visibility="Collapsed"/>
+                <Button Name="btn_sort_jewel_order_by_name"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Content="Resort All Gems by Gem Name (Changes Box Sort)"
+                        Visibility="Collapsed"/>
             </StackPanel>
         </DockPanel>
         <DataGrid Name="dg_items"
                   Grid.Row="1"
                   CanUserAddRows="False"
-                  SelectionUnit="Cell"/>
+                  SelectionUnit="CellOrRowHeader"/>
     </Grid>
 </Window>

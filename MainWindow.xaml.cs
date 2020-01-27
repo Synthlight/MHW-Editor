@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -54,6 +55,7 @@ namespace MHW_Editor {
             btn_damage_cheat.Click += Btn_damage_cheat_Click;
             btn_enable_all_coatings_cheat.Click += Btn_enable_all_coatings_cheat_Click;
             btn_max_sharpness_cheat.Click += Btn_max_sharpness_cheat_Click;
+            btn_sort_jewel_order_by_name.Click += Btn_sort_jewel_order_by_name_Click;
 
             Width = SystemParameters.MaximizedPrimaryScreenWidth * 0.8;
             Height = SystemParameters.MaximizedPrimaryScreenHeight * 0.5;
@@ -377,6 +379,32 @@ namespace MHW_Editor {
             }
         }
 
+        private void Btn_sort_jewel_order_by_name_Click(object sender, RoutedEventArgs e) {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            if (!targetFileType.Is(typeof(Item))) return;
+
+            var rawList = new List<GemData>();
+            for (var i = 0; i < items.Count; i++) {
+                Item item = items[i];
+                if (item.Name.Contains(" Jewel")) {
+                    rawList.Add(new GemData {index = i, itemName = item.Name, sortOrder = item.Sort_Order});
+                }
+            }
+
+            var sortedSortIndexes = new List<GemData>(rawList);
+            sortedSortIndexes.Sort((g1, g2) => g1.sortOrder.CompareTo(g2.sortOrder));
+            var sortedGemNameIndexes = new List<GemData>(rawList);
+            sortedGemNameIndexes.Sort((g1, g2) => string.Compare(g1.itemName, g2.itemName, StringComparison.Ordinal));
+ 
+            for (var i = 0; i < sortedSortIndexes.Count; i++) {
+                var index = sortedGemNameIndexes[i].index;
+                var newSortIndex = sortedSortIndexes[i].sortOrder;
+                Item item = items[index];
+                item.Sort_Order = newSortIndex;
+            }
+        }
+
         private string Open() {
             var ofdResult = new OpenFileDialog {
                 // ReSharper disable StringLiteralTypo
@@ -409,6 +437,8 @@ namespace MHW_Editor {
                 btn_enable_all_coatings_cheat.Visibility = targetFileType.Is(typeof(BottleTable)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_max_sharpness_cheat.Visibility = targetFileType.Is(typeof(Sharpness), typeof(Melee)) ? Visibility.Visible : Visibility.Collapsed;
             }
+
+            btn_sort_jewel_order_by_name.Visibility = targetFileType.Is(typeof(Item)) ? Visibility.Visible : Visibility.Collapsed;
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 

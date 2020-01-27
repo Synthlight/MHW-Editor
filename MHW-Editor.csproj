@@ -80,6 +80,7 @@
     <Compile Include="Generated\MHW_Editor\Weapons\ShellTable.cs" />
     <Compile Include="Items\ArmUp.cs" />
     <Compile Include="Items\BottleTable.cs" />
+    <Compile Include="Models\GemData.cs" />
     <Compile Include="Models\Skills.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\Armor.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\Gem.cs" />
