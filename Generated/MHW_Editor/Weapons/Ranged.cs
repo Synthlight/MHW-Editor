@@ -2,8 +2,9 @@ using MHW_Template;
 
 namespace MHW_Editor.Weapons {
     public partial class Ranged {
-        public const ushort StructSize = 69;
-        public const ushort InitialOffset = 10;
+        public const uint StructSize = 69;
+        public const ulong InitialOffset = 10;
+        public const long EntryCountOffset = 6;
         private uint Index {
             get => GetData<uint>(0);
         }

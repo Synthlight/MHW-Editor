@@ -2,8 +2,9 @@ using MHW_Template;
 
 namespace MHW_Editor.Weapons {
     public partial class ShellTable {
-        public const ushort StructSize = 111;
-        public const ushort InitialOffset = 10;
+        public const uint StructSize = 111;
+        public const ulong InitialOffset = 10;
+        public const long EntryCountOffset = 6;
         public byte Normal_1_Mag_Cnt {
             get => GetData<byte>(0);
             set {

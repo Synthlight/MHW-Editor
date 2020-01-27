@@ -4,7 +4,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Items {
     public partial class Item : MhwItem {
-        public Item(byte[] bytes, int offset) : base(bytes, offset) {
+        public Item(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
         public override string Name => DataHelper.itemData.TryGet(Id * 2, "Unknown");

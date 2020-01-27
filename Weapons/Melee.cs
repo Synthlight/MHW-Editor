@@ -7,7 +7,7 @@ namespace MHW_Editor.Weapons {
     public partial class Melee : MhwItem, IWeapon, ISlots {
         private readonly string weaponFilename;
 
-        public Melee(byte[] bytes, int offset, string weaponFilename) : base(bytes, offset) {
+        public Melee(byte[] bytes, ulong offset, string weaponFilename) : base(bytes, offset) {
             this.weaponFilename = weaponFilename;
         }
 

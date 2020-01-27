@@ -90,6 +90,7 @@
     <Compile Include="Items\Item.cs" />
     <Compile Include="Models\MhwItem.cs" />
     <Compile Include="Models\ISlots.cs" />
+    <Compile Include="Weapons\Bow.cs" />
     <Compile Include="Weapons\Sharpness.cs" />
     <Compile Include="Weapons\BowGun.cs" />
     <Compile Include="Weapons\IWeapon.cs" />

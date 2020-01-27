@@ -2,7 +2,7 @@
 
 namespace MHW_Editor.Items {
     public partial class ArmUp : MhwItem {
-        public ArmUp(byte[] bytes, int offset) : base(bytes, offset) {
+        public ArmUp(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
         public override string Name => "None";

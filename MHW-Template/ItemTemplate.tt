@@ -10,8 +10,9 @@ using MHW_Template;
 
 namespace <#= _namespace #> {
     public partial class <#= className #> {
-        public const ushort StructSize = <#= structData.size #>;
-        public const ushort InitialOffset = <#= structData.offsetInitial #>;
+        public const uint StructSize = <#= structData.size #>;
+        public const ulong InitialOffset = <#= structData.offsetInitial #>;
+        public const long EntryCountOffset = <#= structData.entryCountOffset #>;
 <#
     var compiler = new CSharpCodeProvider();
     foreach (var entry in structData.entries) {

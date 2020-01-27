@@ -7,6 +7,7 @@ namespace MHW_Template {
         public List<Entry> entries;
         public ulong size;
         public ulong offsetInitial;
+        public long entryCountOffset = -1;
 
         public class Entry {
             public readonly string name;

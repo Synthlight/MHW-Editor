@@ -74,6 +74,7 @@ namespace MHW_Generator {
             GenerateItemProps("MHW_Editor.Weapons", "ShellTable", new MhwStructData {
                 size = 111,
                 offsetInitial = 10,
+                entryCountOffset = 6,
                 entries = entries
             });
         }
@@ -82,6 +83,7 @@ namespace MHW_Generator {
             GenerateItemProps("MHW_Editor.Weapons", "Sharpness", new MhwStructData {
                 size = 18,
                 offsetInitial = 10,
+                entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Red", 4, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
@@ -99,6 +101,7 @@ namespace MHW_Generator {
             GenerateItemProps("MHW_Editor.Weapons", "Ranged", new MhwStructData {
                 size = 69,
                 offsetInitial = 10,
+                entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true, accessLevel: "private"),
                     new MhwStructData.Entry("Id", 59, typeof(ushort), true),
@@ -137,6 +140,7 @@ namespace MHW_Generator {
             GenerateItemProps("MHW_Editor.Weapons", "Melee", new MhwStructData {
                 size = 66,
                 offsetInitial = 10,
+                entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true, accessLevel: "private"),
                     new MhwStructData.Entry("Id", 56, typeof(ushort), true),
@@ -170,6 +174,7 @@ namespace MHW_Generator {
             GenerateItemProps("MHW_Editor.Armors", "Armor", new MhwStructData {
                 size = 60,
                 offsetInitial = 10,
+                entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Order", 4, typeof(ushort)),
@@ -211,6 +216,7 @@ namespace MHW_Generator {
             GenerateItemProps("MHW_Editor.Gems", "SkillDat", new MhwStructData {
                 size = 19,
                 offsetInitial = 10,
+                entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(ushort), true),
                     new MhwStructData.Entry("Level", 2, typeof(byte), true),
@@ -230,6 +236,7 @@ namespace MHW_Generator {
             GenerateItemProps("MHW_Editor.Gems", "Gem", new MhwStructData {
                 size = 28,
                 offsetInitial = 10,
+                entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 4, typeof(ushort), true, accessLevel: "private"),
                     new MhwStructData.Entry("Id", 0, typeof(ushort), true),
@@ -246,6 +253,7 @@ namespace MHW_Generator {
             GenerateItemProps("MHW_Editor.Items", "ArmUp", new MhwStructData {
                 size = 22,
                 offsetInitial = 10,
+                entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Unk1", 0, typeof(short)),
                     new MhwStructData.Entry("Unk2", 2, typeof(short)),
@@ -266,6 +274,7 @@ namespace MHW_Generator {
             GenerateItemProps("MHW_Editor.Items", "BottleTable", new MhwStructData {
                 size = 6,
                 offsetInitial = 10,
+                entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Close Range", 0, typeof(byte), typeof(CoatingType)),
                     new MhwStructData.Entry("Power", 1, typeof(byte), typeof(CoatingType)),
@@ -281,6 +290,7 @@ namespace MHW_Generator {
             GenerateItemProps("MHW_Editor.Items", "Item", new MhwStructData {
                 size = 32,
                 offsetInitial = 10,
+                entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Sub Type", 4, typeof(byte), typeof(ItemSubType)),

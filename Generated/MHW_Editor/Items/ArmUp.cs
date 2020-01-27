@@ -2,8 +2,9 @@ using MHW_Template;
 
 namespace MHW_Editor.Items {
     public partial class ArmUp {
-        public const ushort StructSize = 22;
-        public const ushort InitialOffset = 10;
+        public const uint StructSize = 22;
+        public const ulong InitialOffset = 10;
+        public const long EntryCountOffset = 6;
         public short Unk1 {
             get => GetData<short>(0);
             set {

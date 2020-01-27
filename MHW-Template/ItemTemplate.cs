@@ -40,23 +40,30 @@ namespace MHW_Template
             
             #line default
             #line hidden
-            this.Write(" {\r\n        public const ushort StructSize = ");
+            this.Write(" {\r\n        public const uint StructSize = ");
             
             #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.size));
             
             #line default
             #line hidden
-            this.Write(";\r\n        public const ushort InitialOffset = ");
+            this.Write(";\r\n        public const ulong InitialOffset = ");
             
             #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.offsetInitial));
             
             #line default
             #line hidden
-            this.Write(";\r\n");
+            this.Write(";\r\n        public const long EntryCountOffset = ");
             
             #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(structData.entryCountOffset));
+            
+            #line default
+            #line hidden
+            this.Write(";\r\n");
+            
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
 
     var compiler = new CSharpCodeProvider();
     foreach (var entry in structData.entries) {
@@ -80,49 +87,49 @@ namespace MHW_Template
             #line hidden
             this.Write("        ");
             
-            #line 33 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 34 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.accessLevel));
             
             #line default
             #line hidden
             this.Write(" ");
             
-            #line 33 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 34 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(returnString));
             
             #line default
             #line hidden
             this.Write(" ");
             
-            #line 33 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 34 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(name));
             
             #line default
             #line hidden
             this.Write(" {\r\n            get => ");
             
-            #line 34 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 35 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(getCast));
             
             #line default
             #line hidden
             this.Write("GetData<");
             
-            #line 34 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 35 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(typeString));
             
             #line default
             #line hidden
             this.Write(">(");
             
-            #line 34 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 35 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.offset));
             
             #line default
             #line hidden
             this.Write(");\r\n");
             
-            #line 35 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 36 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
 
         if (!entry.readOnly) {
 
@@ -131,34 +138,34 @@ namespace MHW_Template
             #line hidden
             this.Write("            set {\r\n                SetData(");
             
-            #line 39 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 40 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.offset));
             
             #line default
             #line hidden
             this.Write(", ");
             
-            #line 39 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 40 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(setCast));
             
             #line default
             #line hidden
             
-            #line 39 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 40 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.valueString));
             
             #line default
             #line hidden
             this.Write(");\r\n                OnPropertyChanged(nameof(");
             
-            #line 40 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 41 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(name));
             
             #line default
             #line hidden
             this.Write("));\r\n            }\r\n");
             
-            #line 42 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 43 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
 
         }
 
@@ -167,7 +174,7 @@ namespace MHW_Template
             #line hidden
             this.Write("        }\r\n");
             
-            #line 46 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 47 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
 
     }
 

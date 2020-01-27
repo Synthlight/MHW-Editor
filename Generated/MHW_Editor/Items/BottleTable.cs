@@ -2,8 +2,9 @@ using MHW_Template;
 
 namespace MHW_Editor.Items {
     public partial class BottleTable {
-        public const ushort StructSize = 6;
-        public const ushort InitialOffset = 10;
+        public const uint StructSize = 6;
+        public const ulong InitialOffset = 10;
+        public const long EntryCountOffset = 6;
         public MHW_Template.Weapons.CoatingType Close_Range {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(0);
             set {

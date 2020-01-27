@@ -2,11 +2,11 @@
 
 namespace MHW_Editor.Items {
     public partial class BottleTable : MhwItem {
-        public BottleTable(byte[] bytes, int offset) : base(bytes, offset) {
+        public BottleTable(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
         public override string Name => "None";
 
-        public int Index => (Offset - InitialOffset) / StructSize;
+        public ulong Index => (Offset - InitialOffset) / StructSize;
     }
 }

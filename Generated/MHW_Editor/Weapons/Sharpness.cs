@@ -2,8 +2,9 @@ using MHW_Template;
 
 namespace MHW_Editor.Weapons {
     public partial class Sharpness {
-        public const ushort StructSize = 18;
-        public const ushort InitialOffset = 10;
+        public const uint StructSize = 18;
+        public const ulong InitialOffset = 10;
+        public const long EntryCountOffset = 6;
         public uint Id {
             get => GetData<uint>(0);
         }

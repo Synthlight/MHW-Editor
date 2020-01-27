@@ -8,11 +8,11 @@ using MHW_Template;
 namespace MHW_Editor.Models {
     public abstract class MhwItem : IMhwItem {
         public byte[] Bytes { get; private set; }
-        public int Offset { get; private set; }
+        public ulong Offset { get; private set; }
         public abstract string Name { get; }
         public bool Changed { get; private set; }
 
-        protected MhwItem(byte[] bytes, int offset) {
+        protected MhwItem(byte[] bytes, ulong offset) {
             Bytes = bytes;
             Offset = offset;
         }

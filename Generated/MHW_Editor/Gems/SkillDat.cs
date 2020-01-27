@@ -2,8 +2,9 @@ using MHW_Template;
 
 namespace MHW_Editor.Gems {
     public partial class SkillDat {
-        public const ushort StructSize = 19;
-        public const ushort InitialOffset = 10;
+        public const uint StructSize = 19;
+        public const ulong InitialOffset = 10;
+        public const long EntryCountOffset = 6;
         public ushort Id {
             get => GetData<ushort>(0);
         }

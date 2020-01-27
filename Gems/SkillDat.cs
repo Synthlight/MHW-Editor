@@ -9,7 +9,7 @@ namespace MHW_Editor.Gems {
     public partial class SkillDat : MhwItem {
         public static readonly SkillDat DEFAULT = new SkillDat(new byte[0], 0);
 
-        public SkillDat(byte[] bytes, int offset) : base(bytes, offset) {
+        public SkillDat(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
         public Skill Name_And_Id => DataHelper.skillData.TryGet(Id, Skill.DEFAULT);

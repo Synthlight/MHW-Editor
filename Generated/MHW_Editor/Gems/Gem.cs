@@ -2,8 +2,9 @@ using MHW_Template;
 
 namespace MHW_Editor.Gems {
     public partial class Gem {
-        public const ushort StructSize = 28;
-        public const ushort InitialOffset = 10;
+        public const uint StructSize = 28;
+        public const ulong InitialOffset = 10;
+        public const long EntryCountOffset = 6;
         private ushort Index {
             get => GetData<ushort>(4);
         }

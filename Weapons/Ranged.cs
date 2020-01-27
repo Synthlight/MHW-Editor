@@ -7,7 +7,7 @@ namespace MHW_Editor.Weapons {
     public partial class Ranged : MhwItem, IWeapon, ISlots {
         private readonly string weaponFilename;
 
-        public Ranged(byte[] bytes, int offset, string weaponFilename) : base(bytes, offset) {
+        public Ranged(byte[] bytes, ulong offset, string weaponFilename) : base(bytes, offset) {
             this.weaponFilename = weaponFilename;
         }
 

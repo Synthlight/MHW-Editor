@@ -5,7 +5,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Armors {
     public partial class Armor : MhwItem, ISlots {
-        public Armor(byte[] bytes, int offset) : base(bytes, offset) {
+        public Armor(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
         public override string Name => DataHelper.armorData.TryGet(GMD_Name_Index, "Unknown");
