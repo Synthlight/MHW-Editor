@@ -148,7 +148,7 @@ namespace MHW_Editor {
                 case nameof(Melee.Skill): {
                     var cb = new DataGridComboBoxColumn {
                         Header = e.Column.Header,
-                        ItemsSource = DataHelper.skillData,
+                        ItemsSource = DataHelper.skillData[locale],
                         SelectedValueBinding = new Binding(e.PropertyName),
                         SelectedValuePath = "Key",
                         DisplayMemberPath = "Value",
