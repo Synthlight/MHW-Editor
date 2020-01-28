@@ -7,10 +7,10 @@ using MHW_Template;
 
 namespace MHW_Editor.Models {
     public abstract class MhwItem : IMhwItem {
-        public byte[] Bytes { get; private set; }
-        public ulong Offset { get; private set; }
+        public byte[] Bytes { get; }
+        public ulong Offset { get; }
         public abstract string Name { get; }
-        public bool Changed { get; private set; }
+        public bool Changed { get; set; }
 
         public string Raw_Data => BitConverter.ToString(Bytes).Replace("-", ", ");
 

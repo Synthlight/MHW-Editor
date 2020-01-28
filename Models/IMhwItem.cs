@@ -5,6 +5,6 @@ namespace MHW_Editor.Models {
         byte[] Bytes { get; }
         ulong Offset { get; }
         string Name { get; }
-        bool Changed { get; }
+        bool Changed { get; set; }
     }
 }

@@ -23,8 +23,13 @@ using Microsoft.Win32;
 
 namespace MHW_Editor {
     public partial class MainWindow {
+#if DEBUG
         private const bool ENABLE_CHEAT_BUTTONS = true;
         private const bool SHOW_RAW_BYTES = true;
+#else
+        private const bool ENABLE_CHEAT_BUTTONS = false;
+        private const bool SHOW_RAW_BYTES = false;
+#endif
         private static readonly string[] FILE_TYPES = {
             "*.wp_dat",
             "*.wp_dat_g",
@@ -175,7 +180,12 @@ namespace MHW_Editor {
                 dg_items.Columns.FindColumn(nameof(SkillDat.Description)).DisplayIndex = dg_items.Columns.Count - 1;
             }
 
-            dg_items.Columns.FindColumn(nameof(MhwItem.Raw_Data)).DisplayIndex = dg_items.Columns.Count - 1;
+            // ReSharper disable ConditionIsAlwaysTrueOrFalse
+#pragma warning disable 162
+            if (SHOW_RAW_BYTES) {
+                dg_items.Columns.FindColumn(nameof(MhwItem.Raw_Data)).DisplayIndex = dg_items.Columns.Count - 1;
+            }
+#pragma warning restore 162
 
             foreach (var column in dg_items.Columns) {
                 switch (column.Header.ToString()) {
@@ -453,6 +463,7 @@ namespace MHW_Editor {
             var entryCountOffset = (long) targetFileType.GetField(nameof(Armor.EntryCountOffset), flags).GetValue(null);
 
             // ReSharper disable ConditionIsAlwaysTrueOrFalse
+#pragma warning disable 162
             if (ENABLE_CHEAT_BUTTONS) {
                 btn_slot_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(IWeapon)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_skill_level_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Gem)) ? Visibility.Visible : Visibility.Collapsed;
@@ -462,6 +473,7 @@ namespace MHW_Editor {
                 btn_enable_all_coatings_cheat.Visibility = targetFileType.Is(typeof(BottleTable)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_max_sharpness_cheat.Visibility = targetFileType.Is(typeof(Sharpness), typeof(Melee)) ? Visibility.Visible : Visibility.Collapsed;
             }
+#pragma warning restore 162
 
             btn_sort_jewel_order_by_name.Visibility = targetFileType.Is(typeof(Item)) ? Visibility.Visible : Visibility.Collapsed;
 
@@ -529,6 +541,8 @@ namespace MHW_Editor {
 
                     dat.BaseStream.Seek((long) item.Offset, SeekOrigin.Begin);
                     dat.Write(item.Bytes);
+
+                    item.Changed = false;
                     changesSaved = true;
                 }
             }
