@@ -1,6 +1,6 @@
 using MHW_Template;
 
-namespace MHW_Editor.Gems {
+namespace MHW_Editor.Skills {
     public partial class SkillDat {
         public const uint StructSize = 19;
         public const ulong InitialOffset = 10;

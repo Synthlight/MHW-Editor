@@ -71,11 +71,14 @@
     </Compile>
     <Compile Include="Assets\DataHelper.cs" />
     <Compile Include="Extensions.cs" />
-    <Compile Include="Gems\SkillDat.cs" />
+    <Compile Include="Generated\MHW_Editor\Skills\ASkill.cs" />
+    <Compile Include="Skills\ASkill.cs" />
+    <Compile Include="Skills\SkillDat.cs" />
     <Compile Include="Gems\Gem.cs" />
-    <Compile Include="Generated\MHW_Editor\Gems\SkillDat.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ArmUp.cs" />
     <Compile Include="Generated\MHW_Editor\Items\BottleTable.cs" />
+    <Compile Include="Generated\MHW_Editor\Skills\SkillDat.cs" />
+    <Compile Include="Generated\MHW_Editor\Skills\SkillPointData.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Sharpness.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\ShellTable.cs" />
@@ -96,6 +99,7 @@
     <Compile Include="Items\Item.cs" />
     <Compile Include="Models\MhwItem.cs" />
     <Compile Include="Models\ISlots.cs" />
+    <Compile Include="Skills\SkillPointData.cs" />
     <Compile Include="Weapons\Bow.cs" />
     <Compile Include="Weapons\Sharpness.cs" />
     <Compile Include="Weapons\BowGun.cs" />

@@ -17,6 +17,7 @@ using MHW_Editor.Assets;
 using MHW_Editor.Gems;
 using MHW_Editor.Items;
 using MHW_Editor.Models;
+using MHW_Editor.Skills;
 using MHW_Editor.Weapons;
 using MHW_Template;
 using MHW_Template.Weapons;
@@ -46,7 +47,9 @@ namespace MHW_Editor {
             "*.wep_wsd",
             "*.wep_wsl",
             "*.wep_glan",
-            "*.wep_saxe"
+            "*.wep_saxe",
+            "*.skl_pt_dat",
+            "*.ask"
         };
 
         private readonly ObservableCollection<dynamic> items = new ObservableCollection<dynamic>();
@@ -122,7 +125,9 @@ namespace MHW_Editor {
                                                  typeof(NewLimitBreak),
                                                  typeof(WeaponWSword),
                                                  typeof(WeaponWhistle),
-                                                 typeof(WeaponGunLance));
+                                                 typeof(WeaponGunLance),
+                                                 typeof(SkillPointData),
+                                                 typeof(ASkill));
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
@@ -641,6 +646,14 @@ namespace MHW_Editor {
 
             if (fileName.EndsWith(".wep_saxe")) {
                 return typeof(WeaponSwitchAxe);
+            }
+
+            if (fileName.EndsWith(".skl_pt_dat")) {
+                return typeof(SkillPointData);
+            }
+
+            if (fileName.EndsWith(".ask")) {
+                return typeof(ASkill);
             }
 
             throw new Exception($"No type found for: {fileName}");

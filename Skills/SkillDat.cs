@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
 
-namespace MHW_Editor.Gems {
+namespace MHW_Editor.Skills {
     public partial class SkillDat : MhwItem {
         public static readonly SkillDat DEFAULT = new SkillDat(new byte[0], 0);
 
@@ -30,7 +29,7 @@ namespace MHW_Editor.Gems {
                 return idCompare == 0 ? levelCompare : idCompare;
             }
 
-            throw new Exception("Compared objects are not both SkillDats.");
+            return 0;
         }
     }
 }

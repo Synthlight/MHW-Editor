@@ -29,6 +29,40 @@ namespace MHW_Generator {
             GenWeaponWhistle();
             GenWeaponGunLance();
             GenWeaponSwitchAxe();
+            GenSkillPointData();
+            GenASkill();
+        }
+
+        private static void GenASkill() {
+            GenerateItemProps("MHW_Editor.Skills", "ASkill", new MhwStructData {
+                size = 28,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Mantle Id", 16, typeof(uint)),
+                    new MhwStructData.Entry("uint32 1", 0, typeof(uint)),
+                    new MhwStructData.Entry("uint32 2", 4, typeof(uint)),
+                    new MhwStructData.Entry("uint32 3", 8, typeof(uint)),
+                    new MhwStructData.Entry("uint32 4", 12, typeof(uint)),
+                    new MhwStructData.Entry("Unlock Flag", 20, typeof(uint)),
+                    new MhwStructData.Entry("Deco Count", 24, typeof(byte)),
+                    new MhwStructData.Entry("Deco Lvl 1", 25, typeof(byte)),
+                    new MhwStructData.Entry("Deco Lvl 2", 26, typeof(byte)),
+                    new MhwStructData.Entry("Deco Lvl 3", 27, typeof(byte))
+                }
+            });
+        }
+
+        private static void GenSkillPointData() {
+            GenerateItemProps("MHW_Editor.Skills", "SkillPointData", new MhwStructData {
+                size = 2,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Unk 1", 0, typeof(byte)),
+                    new MhwStructData.Entry("Unk 2", 1, typeof(byte))
+                }
+            });
         }
 
         private static void GenWeaponSwitchAxe() {
@@ -302,7 +336,7 @@ namespace MHW_Generator {
         }
 
         private static void GenSkillDat() {
-            GenerateItemProps("MHW_Editor.Gems", "SkillDat", new MhwStructData {
+            GenerateItemProps("MHW_Editor.Skills", "SkillDat", new MhwStructData {
                 size = 19,
                 offsetInitial = 10,
                 entryCountOffset = 6,
