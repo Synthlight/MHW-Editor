@@ -11,7 +11,7 @@ namespace MHW_Editor.Weapons {
             this.weaponFilename = weaponFilename;
         }
 
-        public override string Name => DataHelper.weaponData.TryGet(weaponFilename, DataHelper.dummyDict).TryGet(GMD_Name_Index, "Unknown");
+        public override string Name => DataHelper.weaponData[MainWindow.locale].TryGet(weaponFilename, DataHelper.dummyDict).TryGet(GMD_Name_Index, "Unknown");
 
         public bool Is_Fixed_Upgrade {
             get => Convert.ToBoolean(Is_Fixed_Upgrade_Raw);

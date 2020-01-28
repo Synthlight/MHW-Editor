@@ -15,18 +15,24 @@ namespace MHW_Name_Extractor {
 
         [STAThread]
         public static void Main() {
-            // ReSharper disable StringLiteralTypo
-            GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\armor_eng.gmd", $@"{ROOT_OUTPUT}\armorData.json");
-            GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\item_eng.gmd", $@"{ROOT_OUTPUT}\itemData.json");
-            GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\vfont\skill_pt_eng.gmd", $@"{ROOT_OUTPUT}\skillData.json");
+            foreach (var lang in Global.LANGUAGES) {
+                // ReSharper disable once StringLiteralTypo
+                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\armor_{lang}.gmd", $@"{ROOT_OUTPUT}\ArmorData\{lang}_armorData.json");
+                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\item_{lang}.gmd", $@"{ROOT_OUTPUT}\ItemData\{lang}_itemData.json");
+                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\vfont\skill_pt_{lang}.gmd", $@"{ROOT_OUTPUT}\SkillData\{lang}_skillData.json");
 
-            foreach (var weapon in WEAPONS) {
-                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\{weapon}_eng.gmd", $@"{ROOT_OUTPUT}\WeaponData\{weapon}.json");
+                foreach (var weapon in WEAPONS) {
+                    GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\{weapon}_{lang}.gmd", $@"{ROOT_OUTPUT}\WeaponData\{lang}_{weapon}.json");
+                }
             }
         }
 
         private static void GetAndWriteGmdStringsAsJson(string targetFile, string destFile) {
             var gmdStrings = GetGmdStrings(targetFile);
+            var dir = Path.GetDirectoryName(destFile);
+            if (!Directory.Exists(dir)) {
+                Directory.CreateDirectory(dir);
+            }
             File.WriteAllText(destFile, JsonConvert.SerializeObject(gmdStrings, Formatting.Indented));
         }
 

@@ -4,9 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:weapons="clr-namespace:MHW_Editor.Weapons"
+        Name="this"
         Title="MainWindow"
         Width="1800"
         Height="500"
+        DataContext="{x:Reference this}"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
@@ -78,6 +80,13 @@
                         HorizontalAlignment="Right"
                         Content="Resort All Gems by Gem Name (Changes Box Sort)"
                         Visibility="Collapsed"/>
+                <ComboBox Name="cbx_localization"
+                          Margin="8,0,0,0"
+                          HorizontalAlignment="Right"
+                          DisplayMemberPath="Value"
+                          SelectedValue="{Binding Locale}"
+                          SelectedValuePath="Key"
+                          Visibility="Visible"/>
             </StackPanel>
         </DockPanel>
         <DataGrid Name="dg_items"

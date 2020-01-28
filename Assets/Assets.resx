@@ -118,55 +118,667 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\ara_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\ara_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\ara_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>weapondata\w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ara_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ara_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\chs_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\chs_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\chs_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\chs_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\cht_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\cht_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\cht_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\cht_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\eng_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\eng_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\eng_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\eng_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\fre_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\fre_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\fre_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\fre_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\ger_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\ger_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\ger_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ger_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\ita_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\ita_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\ita_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ita_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\jpn_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\jpn_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\jpn_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\jpn_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\kor_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\kor_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\kor_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\kor_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\pol_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\pol_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\pol_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\pol_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\ptb_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\ptb_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\ptb_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\ptb_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\rus_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\rus_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\rus_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\rus_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>armordata\spa_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_hammer.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>itemdata\spa_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_lbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_lbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_skillData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>skilldata\spa_skilldata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_s_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_s_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weapondata\spa_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

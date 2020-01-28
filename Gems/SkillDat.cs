@@ -12,10 +12,10 @@ namespace MHW_Editor.Gems {
         public SkillDat(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public Skill Name_And_Id => DataHelper.skillData.TryGet(Id, Skill.DEFAULT);
+        public Skill Name_And_Id => DataHelper.skillData[MainWindow.locale].TryGet(Id, Skill.DEFAULT);
         public override string Name => "None";
 
-        public string Description => DataHelper.skillDataDescriptions.TryGet(Id, "Unknown");
+        public string Description => DataHelper.skillDataDescriptions[MainWindow.locale].TryGet(Id, "Unknown");
     }
 
     public class SkillDatSorter : IComparer {

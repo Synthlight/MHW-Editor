@@ -63,9 +63,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] armorData {
+        internal static byte[] ara_armorData {
             get {
-                object obj = ResourceManager.GetObject("armorData", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_armorData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] bow {
+        internal static byte[] ara_bow {
             get {
-                object obj = ResourceManager.GetObject("bow", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_bow", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] c_axe {
+        internal static byte[] ara_c_axe {
             get {
-                object obj = ResourceManager.GetObject("c_axe", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_c_axe", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] g_lance {
+        internal static byte[] ara_g_lance {
             get {
-                object obj = ResourceManager.GetObject("g_lance", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_g_lance", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] hammer {
+        internal static byte[] ara_hammer {
             get {
-                object obj = ResourceManager.GetObject("hammer", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_hammer", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] hbg {
+        internal static byte[] ara_hbg {
             get {
-                object obj = ResourceManager.GetObject("hbg", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_hbg", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] itemData {
+        internal static byte[] ara_itemData {
             get {
-                object obj = ResourceManager.GetObject("itemData", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_itemData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] l_sword {
+        internal static byte[] ara_l_sword {
             get {
-                object obj = ResourceManager.GetObject("l_sword", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_l_sword", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] lance {
+        internal static byte[] ara_lance {
             get {
-                object obj = ResourceManager.GetObject("lance", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_lance", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] lbg {
+        internal static byte[] ara_lbg {
             get {
-                object obj = ResourceManager.GetObject("lbg", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_lbg", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] rod {
+        internal static byte[] ara_rod {
             get {
-                object obj = ResourceManager.GetObject("rod", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_rod", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] s_axe {
+        internal static byte[] ara_s_axe {
             get {
-                object obj = ResourceManager.GetObject("s_axe", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_s_axe", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -183,9 +183,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] skillData {
+        internal static byte[] ara_skillData {
             get {
-                object obj = ResourceManager.GetObject("skillData", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_skillData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -193,9 +193,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] sword {
+        internal static byte[] ara_sword {
             get {
-                object obj = ResourceManager.GetObject("sword", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_sword", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -203,9 +203,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] tachi {
+        internal static byte[] ara_tachi {
             get {
-                object obj = ResourceManager.GetObject("tachi", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_tachi", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -213,9 +213,9 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] w_sword {
+        internal static byte[] ara_w_sword {
             get {
-                object obj = ResourceManager.GetObject("w_sword", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_w_sword", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -223,9 +223,2049 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] whistle {
+        internal static byte[] ara_whistle {
             get {
-                object obj = ResourceManager.GetObject("whistle", resourceCulture);
+                object obj = ResourceManager.GetObject("ara_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_armorData {
+            get {
+                object obj = ResourceManager.GetObject("chS_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_bow {
+            get {
+                object obj = ResourceManager.GetObject("chS_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("chS_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("chS_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_hammer {
+            get {
+                object obj = ResourceManager.GetObject("chS_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_hbg {
+            get {
+                object obj = ResourceManager.GetObject("chS_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_itemData {
+            get {
+                object obj = ResourceManager.GetObject("chS_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("chS_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_lance {
+            get {
+                object obj = ResourceManager.GetObject("chS_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_lbg {
+            get {
+                object obj = ResourceManager.GetObject("chS_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_rod {
+            get {
+                object obj = ResourceManager.GetObject("chS_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("chS_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_skillData {
+            get {
+                object obj = ResourceManager.GetObject("chS_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_sword {
+            get {
+                object obj = ResourceManager.GetObject("chS_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_tachi {
+            get {
+                object obj = ResourceManager.GetObject("chS_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("chS_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_whistle {
+            get {
+                object obj = ResourceManager.GetObject("chS_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_armorData {
+            get {
+                object obj = ResourceManager.GetObject("chT_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_bow {
+            get {
+                object obj = ResourceManager.GetObject("chT_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("chT_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("chT_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_hammer {
+            get {
+                object obj = ResourceManager.GetObject("chT_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_hbg {
+            get {
+                object obj = ResourceManager.GetObject("chT_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_itemData {
+            get {
+                object obj = ResourceManager.GetObject("chT_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("chT_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_lance {
+            get {
+                object obj = ResourceManager.GetObject("chT_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_lbg {
+            get {
+                object obj = ResourceManager.GetObject("chT_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_rod {
+            get {
+                object obj = ResourceManager.GetObject("chT_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("chT_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_skillData {
+            get {
+                object obj = ResourceManager.GetObject("chT_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_sword {
+            get {
+                object obj = ResourceManager.GetObject("chT_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_tachi {
+            get {
+                object obj = ResourceManager.GetObject("chT_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("chT_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_whistle {
+            get {
+                object obj = ResourceManager.GetObject("chT_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_armorData {
+            get {
+                object obj = ResourceManager.GetObject("eng_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_bow {
+            get {
+                object obj = ResourceManager.GetObject("eng_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("eng_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("eng_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_hammer {
+            get {
+                object obj = ResourceManager.GetObject("eng_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_hbg {
+            get {
+                object obj = ResourceManager.GetObject("eng_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_itemData {
+            get {
+                object obj = ResourceManager.GetObject("eng_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("eng_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_lance {
+            get {
+                object obj = ResourceManager.GetObject("eng_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_lbg {
+            get {
+                object obj = ResourceManager.GetObject("eng_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_rod {
+            get {
+                object obj = ResourceManager.GetObject("eng_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("eng_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_skillData {
+            get {
+                object obj = ResourceManager.GetObject("eng_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_sword {
+            get {
+                object obj = ResourceManager.GetObject("eng_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_tachi {
+            get {
+                object obj = ResourceManager.GetObject("eng_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("eng_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_whistle {
+            get {
+                object obj = ResourceManager.GetObject("eng_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_armorData {
+            get {
+                object obj = ResourceManager.GetObject("fre_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_bow {
+            get {
+                object obj = ResourceManager.GetObject("fre_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("fre_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("fre_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_hammer {
+            get {
+                object obj = ResourceManager.GetObject("fre_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_hbg {
+            get {
+                object obj = ResourceManager.GetObject("fre_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_itemData {
+            get {
+                object obj = ResourceManager.GetObject("fre_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("fre_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_lance {
+            get {
+                object obj = ResourceManager.GetObject("fre_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_lbg {
+            get {
+                object obj = ResourceManager.GetObject("fre_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_rod {
+            get {
+                object obj = ResourceManager.GetObject("fre_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("fre_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_skillData {
+            get {
+                object obj = ResourceManager.GetObject("fre_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_sword {
+            get {
+                object obj = ResourceManager.GetObject("fre_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_tachi {
+            get {
+                object obj = ResourceManager.GetObject("fre_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("fre_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_whistle {
+            get {
+                object obj = ResourceManager.GetObject("fre_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_armorData {
+            get {
+                object obj = ResourceManager.GetObject("ger_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_bow {
+            get {
+                object obj = ResourceManager.GetObject("ger_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("ger_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("ger_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_hammer {
+            get {
+                object obj = ResourceManager.GetObject("ger_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_hbg {
+            get {
+                object obj = ResourceManager.GetObject("ger_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_itemData {
+            get {
+                object obj = ResourceManager.GetObject("ger_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("ger_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_lance {
+            get {
+                object obj = ResourceManager.GetObject("ger_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_lbg {
+            get {
+                object obj = ResourceManager.GetObject("ger_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_rod {
+            get {
+                object obj = ResourceManager.GetObject("ger_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("ger_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_skillData {
+            get {
+                object obj = ResourceManager.GetObject("ger_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_sword {
+            get {
+                object obj = ResourceManager.GetObject("ger_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_tachi {
+            get {
+                object obj = ResourceManager.GetObject("ger_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("ger_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_whistle {
+            get {
+                object obj = ResourceManager.GetObject("ger_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_armorData {
+            get {
+                object obj = ResourceManager.GetObject("ita_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_bow {
+            get {
+                object obj = ResourceManager.GetObject("ita_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("ita_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("ita_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_hammer {
+            get {
+                object obj = ResourceManager.GetObject("ita_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_hbg {
+            get {
+                object obj = ResourceManager.GetObject("ita_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_itemData {
+            get {
+                object obj = ResourceManager.GetObject("ita_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("ita_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_lance {
+            get {
+                object obj = ResourceManager.GetObject("ita_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_lbg {
+            get {
+                object obj = ResourceManager.GetObject("ita_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_rod {
+            get {
+                object obj = ResourceManager.GetObject("ita_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("ita_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_skillData {
+            get {
+                object obj = ResourceManager.GetObject("ita_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_sword {
+            get {
+                object obj = ResourceManager.GetObject("ita_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_tachi {
+            get {
+                object obj = ResourceManager.GetObject("ita_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("ita_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_whistle {
+            get {
+                object obj = ResourceManager.GetObject("ita_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_armorData {
+            get {
+                object obj = ResourceManager.GetObject("jpn_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_bow {
+            get {
+                object obj = ResourceManager.GetObject("jpn_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("jpn_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("jpn_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_hammer {
+            get {
+                object obj = ResourceManager.GetObject("jpn_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_hbg {
+            get {
+                object obj = ResourceManager.GetObject("jpn_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_itemData {
+            get {
+                object obj = ResourceManager.GetObject("jpn_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("jpn_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_lance {
+            get {
+                object obj = ResourceManager.GetObject("jpn_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_lbg {
+            get {
+                object obj = ResourceManager.GetObject("jpn_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_rod {
+            get {
+                object obj = ResourceManager.GetObject("jpn_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("jpn_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_skillData {
+            get {
+                object obj = ResourceManager.GetObject("jpn_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_sword {
+            get {
+                object obj = ResourceManager.GetObject("jpn_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_tachi {
+            get {
+                object obj = ResourceManager.GetObject("jpn_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("jpn_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_whistle {
+            get {
+                object obj = ResourceManager.GetObject("jpn_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_armorData {
+            get {
+                object obj = ResourceManager.GetObject("kor_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_bow {
+            get {
+                object obj = ResourceManager.GetObject("kor_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("kor_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("kor_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_hammer {
+            get {
+                object obj = ResourceManager.GetObject("kor_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_hbg {
+            get {
+                object obj = ResourceManager.GetObject("kor_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_itemData {
+            get {
+                object obj = ResourceManager.GetObject("kor_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("kor_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_lance {
+            get {
+                object obj = ResourceManager.GetObject("kor_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_lbg {
+            get {
+                object obj = ResourceManager.GetObject("kor_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_rod {
+            get {
+                object obj = ResourceManager.GetObject("kor_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("kor_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_skillData {
+            get {
+                object obj = ResourceManager.GetObject("kor_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_sword {
+            get {
+                object obj = ResourceManager.GetObject("kor_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_tachi {
+            get {
+                object obj = ResourceManager.GetObject("kor_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("kor_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_whistle {
+            get {
+                object obj = ResourceManager.GetObject("kor_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_armorData {
+            get {
+                object obj = ResourceManager.GetObject("pol_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_bow {
+            get {
+                object obj = ResourceManager.GetObject("pol_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("pol_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("pol_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_hammer {
+            get {
+                object obj = ResourceManager.GetObject("pol_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_hbg {
+            get {
+                object obj = ResourceManager.GetObject("pol_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_itemData {
+            get {
+                object obj = ResourceManager.GetObject("pol_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("pol_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_lance {
+            get {
+                object obj = ResourceManager.GetObject("pol_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_lbg {
+            get {
+                object obj = ResourceManager.GetObject("pol_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_rod {
+            get {
+                object obj = ResourceManager.GetObject("pol_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("pol_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_skillData {
+            get {
+                object obj = ResourceManager.GetObject("pol_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_sword {
+            get {
+                object obj = ResourceManager.GetObject("pol_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_tachi {
+            get {
+                object obj = ResourceManager.GetObject("pol_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("pol_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_whistle {
+            get {
+                object obj = ResourceManager.GetObject("pol_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_armorData {
+            get {
+                object obj = ResourceManager.GetObject("ptB_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_bow {
+            get {
+                object obj = ResourceManager.GetObject("ptB_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("ptB_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("ptB_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_hammer {
+            get {
+                object obj = ResourceManager.GetObject("ptB_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_hbg {
+            get {
+                object obj = ResourceManager.GetObject("ptB_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_itemData {
+            get {
+                object obj = ResourceManager.GetObject("ptB_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("ptB_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_lance {
+            get {
+                object obj = ResourceManager.GetObject("ptB_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_lbg {
+            get {
+                object obj = ResourceManager.GetObject("ptB_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_rod {
+            get {
+                object obj = ResourceManager.GetObject("ptB_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("ptB_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_skillData {
+            get {
+                object obj = ResourceManager.GetObject("ptB_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_sword {
+            get {
+                object obj = ResourceManager.GetObject("ptB_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_tachi {
+            get {
+                object obj = ResourceManager.GetObject("ptB_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("ptB_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_whistle {
+            get {
+                object obj = ResourceManager.GetObject("ptB_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_armorData {
+            get {
+                object obj = ResourceManager.GetObject("rus_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_bow {
+            get {
+                object obj = ResourceManager.GetObject("rus_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("rus_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("rus_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_hammer {
+            get {
+                object obj = ResourceManager.GetObject("rus_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_hbg {
+            get {
+                object obj = ResourceManager.GetObject("rus_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_itemData {
+            get {
+                object obj = ResourceManager.GetObject("rus_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("rus_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_lance {
+            get {
+                object obj = ResourceManager.GetObject("rus_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_lbg {
+            get {
+                object obj = ResourceManager.GetObject("rus_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_rod {
+            get {
+                object obj = ResourceManager.GetObject("rus_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("rus_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_skillData {
+            get {
+                object obj = ResourceManager.GetObject("rus_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_sword {
+            get {
+                object obj = ResourceManager.GetObject("rus_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_tachi {
+            get {
+                object obj = ResourceManager.GetObject("rus_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("rus_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_whistle {
+            get {
+                object obj = ResourceManager.GetObject("rus_whistle", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_armorData {
+            get {
+                object obj = ResourceManager.GetObject("spa_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_bow {
+            get {
+                object obj = ResourceManager.GetObject("spa_bow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_c_axe {
+            get {
+                object obj = ResourceManager.GetObject("spa_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_g_lance {
+            get {
+                object obj = ResourceManager.GetObject("spa_g_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_hammer {
+            get {
+                object obj = ResourceManager.GetObject("spa_hammer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_hbg {
+            get {
+                object obj = ResourceManager.GetObject("spa_hbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_itemData {
+            get {
+                object obj = ResourceManager.GetObject("spa_itemData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_l_sword {
+            get {
+                object obj = ResourceManager.GetObject("spa_l_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_lance {
+            get {
+                object obj = ResourceManager.GetObject("spa_lance", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_lbg {
+            get {
+                object obj = ResourceManager.GetObject("spa_lbg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_rod {
+            get {
+                object obj = ResourceManager.GetObject("spa_rod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_s_axe {
+            get {
+                object obj = ResourceManager.GetObject("spa_s_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_skillData {
+            get {
+                object obj = ResourceManager.GetObject("spa_skillData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_sword {
+            get {
+                object obj = ResourceManager.GetObject("spa_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_tachi {
+            get {
+                object obj = ResourceManager.GetObject("spa_tachi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_w_sword {
+            get {
+                object obj = ResourceManager.GetObject("spa_w_sword", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_whistle {
+            get {
+                object obj = ResourceManager.GetObject("spa_whistle", resourceCulture);
                 return ((byte[])(obj));
             }
         }
