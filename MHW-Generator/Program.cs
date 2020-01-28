@@ -10,6 +10,7 @@ using MHW_Template.Weapons.Model;
 namespace MHW_Generator {
     public static class Program {
         private const string ROOT_OUTPUT = @"..\..\..\Generated";
+        private const string ROOT_STRUCT_OUTPUT = @"..\..\..\Structs";
 
         [STAThread]
         public static void Main() {
@@ -24,6 +25,65 @@ namespace MHW_Generator {
             GenSharpness();
             GenShellTable();
             GenNewLimitBreak();
+            GenWeaponWSword();
+            GenWeaponWhistle();
+            GenWeaponGunLance();
+            GenWeaponSwitchAxe();
+        }
+
+        private static void GenWeaponSwitchAxe() {
+            GenerateItemProps("MHW_Editor.Weapons", "WeaponSwitchAxe", new MhwStructData {
+                size = 7,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Unknown 1", 4, typeof(byte)),
+                    new MhwStructData.Entry("Unknown 2", 5, typeof(ushort))
+                }
+            });
+        }
+
+        private static void GenWeaponGunLance() {
+            GenerateItemProps("MHW_Editor.Weapons", "WeaponGunLance", new MhwStructData {
+                size = 8,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Shell Type", 4, typeof(ushort), typeof(ShellType)),
+                    new MhwStructData.Entry("Shell Level", 6, typeof(ushort))
+                }
+            });
+        }
+
+        private static void GenWeaponWhistle() {
+            GenerateItemProps("MHW_Editor.Weapons", "WeaponWhistle", new MhwStructData {
+                size = 7,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Note 1", 4, typeof(byte), typeof(Note)),
+                    new MhwStructData.Entry("Note 2", 4, typeof(byte), typeof(Note)),
+                    new MhwStructData.Entry("Note 3", 4, typeof(byte), typeof(Note))
+                }
+            });
+        }
+
+        private static void GenWeaponWSword() {
+            GenerateItemProps("MHW_Editor.Weapons", "WeaponWSword", new MhwStructData {
+                size = 10,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Element 1 Type", 4, typeof(byte), typeof(Element)),
+                    new MhwStructData.Entry("Element 1 Dmg", 5, typeof(short)),
+                    new MhwStructData.Entry("Element 2 Type", 7, typeof(byte), typeof(Element)),
+                    new MhwStructData.Entry("Element 2 Dmg", 8, typeof(short))
+                }
+            });
         }
 
         private static void GenNewLimitBreak() {
@@ -32,8 +92,8 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id 1", 0, typeof(ushort)),
-                    new MhwStructData.Entry("Id 2", 2, typeof(ushort)),
+                    new MhwStructData.Entry("Id 1", 0, typeof(ushort), true),
+                    new MhwStructData.Entry("Id 2", 2, typeof(ushort), true),
                     new MhwStructData.Entry("Needed Item Id to Unlock", 4, typeof(ushort)),
                     new MhwStructData.Entry("Activated 1", 6, typeof(sbyte), accessLevel: "protected"),
                     new MhwStructData.Entry("Activated 2", 7, typeof(sbyte), accessLevel: "protected"),
@@ -47,13 +107,13 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Mat 3 Quantity", 22, typeof(byte)),
                     new MhwStructData.Entry("Mat 4", 23, typeof(ushort)),
                     new MhwStructData.Entry("Mat 4 Quantity", 24, typeof(byte)),
-                    new MhwStructData.Entry("Id 3", 37, typeof(byte)),
+                    new MhwStructData.Entry("Id 3", 37, typeof(byte), true)
                 }
             });
         }
 
         private static void GenShellTable() {
-            var types = new List<ShellTableTypes>() {
+            var types = new List<ShellTableTypes> {
                 new ShellTableTypes("Normal", 3),
                 new ShellTableTypes("Pierce", 3),
                 new ShellTableTypes("Spread", 3),
@@ -119,7 +179,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Green", 10, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
                     new MhwStructData.Entry("Blue", 12, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
                     new MhwStructData.Entry("White", 14, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
-                    new MhwStructData.Entry("Purple", 16, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwStructData.Entry("Purple", 16, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)")
                 }
             });
         }
@@ -135,7 +195,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Base Model Id", 6, typeof(short)),
                     new MhwStructData.Entry("Part 1 Id", 8, typeof(short)),
                     new MhwStructData.Entry("Part 2 Id", 10, typeof(short)),
-                    new MhwStructData.Entry("Is Fixed Upgrade Raw", 14, typeof(byte), accessLevel: "protected"),
+                    new MhwStructData.Entry("Is Fixed Upgrade Raw", 15, typeof(byte), accessLevel: "protected"),
                     new MhwStructData.Entry("Muzzle Type", 16, typeof(byte), typeof(MuzzleType)),
                     new MhwStructData.Entry("Barrel Type", 17, typeof(byte), typeof(BarrelType)),
                     new MhwStructData.Entry("Magazine Type", 18, typeof(byte), typeof(MagazineType)),
@@ -174,7 +234,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Base Model Id", 6, typeof(short)),
                     new MhwStructData.Entry("Part 1 Id", 8, typeof(short)),
                     new MhwStructData.Entry("Part 2 Id", 10, typeof(short)),
-                    new MhwStructData.Entry("Is Fixed Upgrade Raw", 14, typeof(byte), accessLevel: "protected"),
+                    new MhwStructData.Entry("Is Fixed Upgrade Raw", 15, typeof(byte), accessLevel: "protected"),
                     new MhwStructData.Entry("Cost", 16, typeof(uint)),
                     new MhwStructData.Entry("Rarity", 20, typeof(byte)),
                     new MhwStructData.Entry("Sharpness Quality", 21, typeof(byte)),
@@ -191,6 +251,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Slot 1 Size", 36, typeof(byte)),
                     new MhwStructData.Entry("Slot 2 Size", 37, typeof(byte)),
                     new MhwStructData.Entry("Slot 3 Size", 38, typeof(byte)),
+                    new MhwStructData.Entry("Special Ability 1 ID", 39, typeof(ushort)),
+                    new MhwStructData.Entry("Special Ability 2 ID", 41, typeof(ushort)),
                     new MhwStructData.Entry("Skill", 62, typeof(ushort)),
                     new MhwStructData.Entry("GMD Name Index", 58, typeof(ushort), accessLevel: "protected")
                 }
@@ -292,7 +354,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Unk8", 14, typeof(short)),
                     new MhwStructData.Entry("Unk9", 16, typeof(short)),
                     new MhwStructData.Entry("Unk10", 18, typeof(short)),
-                    new MhwStructData.Entry("Unk11", 20, typeof(short)),
+                    new MhwStructData.Entry("Unk11", 20, typeof(short))
                 }
             });
         }
@@ -350,6 +412,22 @@ namespace MHW_Generator {
             }
 
             File.WriteAllText($"{dir}\\{className}.cs", itemTemplate.TransformText());
+
+
+            var structTemplate = new RawStructTemplate {
+                Session = new Dictionary<string, object> {
+                    {"_namespace", @namespace},
+                    {"className", className},
+                    {"structData", structData}
+                }
+            };
+            structTemplate.Initialize();
+            dir = $"{ROOT_STRUCT_OUTPUT}\\{@namespace.Replace(".", "\\")}";
+            if (!Directory.Exists(dir)) {
+                Directory.CreateDirectory(dir);
+            }
+
+            File.WriteAllText($"{dir}\\{className}.cs", structTemplate.TransformText());
         }
     }
 }

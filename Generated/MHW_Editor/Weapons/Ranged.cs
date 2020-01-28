@@ -33,9 +33,9 @@ namespace MHW_Editor.Weapons {
             }
         }
         protected byte Is_Fixed_Upgrade_Raw {
-            get => GetData<byte>(14);
+            get => GetData<byte>(15);
             set {
-                SetData(14, value);
+                SetData(15, value);
                 OnPropertyChanged(nameof(Is_Fixed_Upgrade_Raw));
             }
         }

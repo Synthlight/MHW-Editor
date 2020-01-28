@@ -79,6 +79,10 @@
     <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Sharpness.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\ShellTable.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\WeaponGunLance.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\WeaponSwitchAxe.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\WeaponWhistle.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\WeaponWSword.cs" />
     <Compile Include="Items\ArmUp.cs" />
     <Compile Include="Items\BottleTable.cs" />
     <Compile Include="Models\GemData.cs" />
@@ -100,6 +104,10 @@
     <Compile Include="Weapons\Ranged.cs" />
     <Compile Include="Weapons\NewLimitBreak.cs" />
     <Compile Include="Weapons\ShellTable.cs" />
+    <Compile Include="Weapons\WeaponSwitchAxe.cs" />
+    <Compile Include="Weapons\WeaponWhistle.cs" />
+    <Compile Include="Weapons\WeaponGunLance.cs" />
+    <Compile Include="Weapons\WeaponWSword.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -7,17 +7,9 @@ namespace MHW_Editor.Weapons {
         public const long EntryCountOffset = 6;
         public ushort Id_1 {
             get => GetData<ushort>(0);
-            set {
-                SetData(0, value);
-                OnPropertyChanged(nameof(Id_1));
-            }
         }
         public ushort Id_2 {
             get => GetData<ushort>(2);
-            set {
-                SetData(2, value);
-                OnPropertyChanged(nameof(Id_2));
-            }
         }
         public ushort Needed_Item_Id_to_Unlock {
             get => GetData<ushort>(4);
@@ -112,10 +104,6 @@ namespace MHW_Editor.Weapons {
         }
         public byte Id_3 {
             get => GetData<byte>(37);
-            set {
-                SetData(37, value);
-                OnPropertyChanged(nameof(Id_3));
-            }
         }
     }
 }

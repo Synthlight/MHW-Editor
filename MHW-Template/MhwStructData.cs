@@ -13,18 +13,19 @@ namespace MHW_Template {
             public readonly string name;
             public readonly ulong offset;
             public readonly CodeTypeReference type;
-            public readonly CodeTypeReference enumReturn = null;
+            public readonly CodeTypeReference enumReturn;
             public readonly bool readOnly;
             public readonly string valueString;
             public readonly string accessLevel;
 
-            public Entry(string name, ulong offset, Type type, bool readOnly = false, string valueString = "value", string accessLevel = "public") {
+            public Entry(string name, ulong offset, Type type, bool readOnly = false, Type enumReturn = null, string valueString = "value", string accessLevel = "public") {
                 this.name = name;
                 this.offset = offset;
                 this.type = new CodeTypeReference(type);
                 this.readOnly = readOnly;
                 this.valueString = valueString;
                 this.accessLevel = accessLevel;
+                this.enumReturn = enumReturn == null ? null : new CodeTypeReference(enumReturn);
             }
 
             public Entry(string name, ulong offset, Type type, Type enumReturn) : this(name, offset, type) {

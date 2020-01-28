@@ -33,9 +33,9 @@ namespace MHW_Editor.Weapons {
             }
         }
         protected byte Is_Fixed_Upgrade_Raw {
-            get => GetData<byte>(14);
+            get => GetData<byte>(15);
             set {
-                SetData(14, value);
+                SetData(15, value);
                 OnPropertyChanged(nameof(Is_Fixed_Upgrade_Raw));
             }
         }
@@ -149,6 +149,20 @@ namespace MHW_Editor.Weapons {
             set {
                 SetData(38, value);
                 OnPropertyChanged(nameof(Slot_3_Size));
+            }
+        }
+        public ushort Special_Ability_1_ID {
+            get => GetData<ushort>(39);
+            set {
+                SetData(39, value);
+                OnPropertyChanged(nameof(Special_Ability_1_ID));
+            }
+        }
+        public ushort Special_Ability_2_ID {
+            get => GetData<ushort>(41);
+            set {
+                SetData(41, value);
+                OnPropertyChanged(nameof(Special_Ability_2_ID));
             }
         }
         public ushort Skill {

@@ -36,7 +36,11 @@ namespace MHW_Editor {
             "*.kire",
             "*.skl_dat",
             "*.shl_tbl",
-            "*.new_lbr"
+            "*.new_lbr",
+            "*.wep_wsd",
+            "*.wep_wsl",
+            "*.wep_glan",
+            "*.wep_saxe"
         };
 
         private readonly ObservableCollection<dynamic> items = new ObservableCollection<dynamic>();
@@ -89,7 +93,15 @@ namespace MHW_Editor {
                     e.Cancel = targetFileType.Is(typeof(Bow));
                     break;
                 case nameof(IMhwItem.Name):
-                    e.Cancel = targetFileType.Is(typeof(BottleTable), typeof(ArmUp), typeof(Sharpness), typeof(ShellTable), typeof(SkillDat), typeof(NewLimitBreak));
+                    e.Cancel = targetFileType.Is(typeof(BottleTable),
+                                                 typeof(ArmUp),
+                                                 typeof(Sharpness),
+                                                 typeof(ShellTable),
+                                                 typeof(SkillDat),
+                                                 typeof(NewLimitBreak),
+                                                 typeof(WeaponWSword),
+                                                 typeof(WeaponWhistle),
+                                                 typeof(WeaponGunLance));
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
@@ -421,7 +433,7 @@ namespace MHW_Editor {
         private string Open() {
             var ofdResult = new OpenFileDialog {
                 // ReSharper disable StringLiteralTypo
-                Filter = $"MHW Data Files (*.wp_dat/_g, *.am_dat, *.sgpa, *.itm, *.bbtbl, *.kire)|{string.Join(";", FILE_TYPES)}",
+                Filter = $"MHW Data Files (See mod description for full list.)|{string.Join(";", FILE_TYPES)}",
                 Multiselect = false
             };
             ofdResult.ShowDialog();
@@ -584,6 +596,22 @@ namespace MHW_Editor {
 
             if (fileName.EndsWith(".new_lbr")) {
                 return typeof(NewLimitBreak);
+            }
+
+            if (fileName.EndsWith(".wep_wsd")) {
+                return typeof(WeaponWSword);
+            }
+
+            if (fileName.EndsWith(".wep_wsl")) {
+                return typeof(WeaponWhistle);
+            }
+
+            if (fileName.EndsWith(".wep_glan")) {
+                return typeof(WeaponGunLance);
+            }
+
+            if (fileName.EndsWith(".wep_saxe")) {
+                return typeof(WeaponSwitchAxe);
             }
 
             throw new Exception($"No type found for: {fileName}");

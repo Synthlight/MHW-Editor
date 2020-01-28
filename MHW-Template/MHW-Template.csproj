@@ -48,6 +48,11 @@
     <Compile Include="Extensions.cs" />
     <Compile Include="Items\ItemSubType.cs" />
     <Compile Include="Items\ItemType.cs" />
+    <Compile Include="RawStructTemplate.cs">
+      <DependentUpon>RawStructTemplate.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="ItemTemplate.cs">
       <DependentUpon>ItemTemplate.tt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -62,11 +67,17 @@
     <Compile Include="Weapons\BarrelType.cs" />
     <Compile Include="Weapons\Model\ShellTableTypes.cs" />
     <Compile Include="Weapons\MuzzleType.cs" />
+    <Compile Include="Weapons\Note.cs" />
+    <Compile Include="Weapons\ShellType.cs" />
     <Compile Include="Weapons\ScopeType.cs" />
     <Compile Include="Weapons\SpecialAmmo.cs" />
     <Compile Include="Weapons\Element.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="RawStructTemplate.tt">
+      <Generator>TextTemplatingFilePreProcessor</Generator>
+      <LastGenOutput>RawStructTemplate.cs</LastGenOutput>
+    </Content>
     <Content Include="ItemTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>ItemTemplate.cs</LastGenOutput>
