@@ -6,9 +6,12 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
+using JetBrains.Annotations;
 using MHW_Editor.Armors;
 using MHW_Editor.Assets;
 using MHW_Editor.Gems;
@@ -21,6 +24,7 @@ using Microsoft.Win32;
 namespace MHW_Editor {
     public partial class MainWindow {
         private const bool ENABLE_CHEAT_BUTTONS = true;
+        private const bool SHOW_RAW_BYTES = true;
         private static readonly string[] FILE_TYPES = {
             "*.wp_dat",
             "*.wp_dat_g",
@@ -31,12 +35,16 @@ namespace MHW_Editor {
             "*.arm_up",
             "*.kire",
             "*.skl_dat",
-            "*.shl_tbl"
+            "*.shl_tbl",
+            "*.new_lbr"
         };
 
         private readonly ObservableCollection<dynamic> items = new ObservableCollection<dynamic>();
         private string targetFile;
         private Type targetFileType;
+
+        [CanBeNull]
+        private CancellationTokenSource savedTimer;
 
         public MainWindow() {
             InitializeComponent();
@@ -69,6 +77,9 @@ namespace MHW_Editor {
                 case nameof(IMhwItem.Changed):
                     e.Cancel = true;
                     break;
+                case nameof(MhwItem.Raw_Data):
+                    e.Cancel = !SHOW_RAW_BYTES;
+                    break;
                 case nameof(Ranged.Muzzle_Type):
                 case nameof(Ranged.Barrel_Type):
                 case nameof(Ranged.Magazine_Type):
@@ -78,7 +89,7 @@ namespace MHW_Editor {
                     e.Cancel = targetFileType.Is(typeof(Bow));
                     break;
                 case nameof(IMhwItem.Name):
-                    e.Cancel = targetFileType.Is(typeof(BottleTable), typeof(ArmUp), typeof(Sharpness), typeof(ShellTable), typeof(SkillDat));
+                    e.Cancel = targetFileType.Is(typeof(BottleTable), typeof(ArmUp), typeof(Sharpness), typeof(ShellTable), typeof(SkillDat), typeof(NewLimitBreak));
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
@@ -151,6 +162,8 @@ namespace MHW_Editor {
             if (targetFileType.Is(typeof(SkillDat))) {
                 dg_items.Columns.FindColumn(nameof(SkillDat.Description)).DisplayIndex = dg_items.Columns.Count - 1;
             }
+
+            dg_items.Columns.FindColumn(nameof(MhwItem.Raw_Data)).DisplayIndex = dg_items.Columns.Count - 1;
 
             foreach (var column in dg_items.Columns) {
                 switch (column.Header.ToString()) {
@@ -396,7 +409,7 @@ namespace MHW_Editor {
             sortedSortIndexes.Sort((g1, g2) => g1.sortOrder.CompareTo(g2.sortOrder));
             var sortedGemNameIndexes = new List<GemData>(rawList);
             sortedGemNameIndexes.Sort((g1, g2) => string.Compare(g1.itemName, g2.itemName, StringComparison.Ordinal));
- 
+
             for (var i = 0; i < sortedSortIndexes.Count; i++) {
                 var index = sortedGemNameIndexes[i].index;
                 var newSortIndex = sortedSortIndexes[i].sortOrder;
@@ -496,14 +509,26 @@ namespace MHW_Editor {
             } while (offset + structSize <= len);
         }
 
-        private void Save() {
+        private async void Save() {
+            var changesSaved = false;
             using (var dat = new BinaryWriter(new FileStream(targetFile, FileMode.Open, FileAccess.Write))) {
                 foreach (IMhwItem item in items) {
                     if (item.Offset == 0 || !item.Changed) continue;
 
                     dat.BaseStream.Seek((long) item.Offset, SeekOrigin.Begin);
                     dat.Write(item.Bytes);
+                    changesSaved = true;
                 }
+            }
+
+            savedTimer?.Cancel();
+            savedTimer = new CancellationTokenSource();
+            lbl_saved.Visibility = changesSaved ? Visibility.Visible : Visibility.Collapsed;
+            lbl_no_changes.Visibility = changesSaved ? Visibility.Collapsed : Visibility.Visible;
+            try {
+                await Task.Delay(3000, savedTimer.Token);
+                lbl_saved.Visibility = lbl_no_changes.Visibility = Visibility.Hidden;
+            } catch (TaskCanceledException) {
             }
         }
 
@@ -555,6 +580,10 @@ namespace MHW_Editor {
 
             if (fileName.EndsWith(".shl_tbl")) {
                 return typeof(ShellTable);
+            }
+
+            if (fileName.EndsWith(".new_lbr")) {
+                return typeof(NewLimitBreak);
             }
 
             throw new Exception($"No type found for: {fileName}");

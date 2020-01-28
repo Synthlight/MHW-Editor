@@ -76,6 +76,7 @@
     <Compile Include="Generated\MHW_Editor\Gems\SkillDat.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ArmUp.cs" />
     <Compile Include="Generated\MHW_Editor\Items\BottleTable.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Sharpness.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\ShellTable.cs" />
     <Compile Include="Items\ArmUp.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Weapons\IWeapon.cs" />
     <Compile Include="Weapons\Melee.cs" />
     <Compile Include="Weapons\Ranged.cs" />
+    <Compile Include="Weapons\NewLimitBreak.cs" />
     <Compile Include="Weapons\ShellTable.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

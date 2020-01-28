@@ -25,6 +25,16 @@
                         Margin="8,0,0,0"
                         HorizontalAlignment="Left"
                         Content="Save"/>
+                <Label Name="lbl_saved"
+                       Margin="8,0,0,0"
+                       HorizontalAlignment="Left"
+                       Content="—Saved"
+                       Visibility="Collapsed"/>
+                <Label Name="lbl_no_changes"
+                       Margin="8,0,0,0"
+                       HorizontalAlignment="Left"
+                       Content="—No Changes to Save"
+                       Visibility="Collapsed"/>
             </StackPanel>
             <StackPanel HorizontalAlignment="Right"
                         Orientation="Horizontal">

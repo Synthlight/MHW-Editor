@@ -23,6 +23,33 @@ namespace MHW_Generator {
             GenRanged();
             GenSharpness();
             GenShellTable();
+            GenNewLimitBreak();
+        }
+
+        private static void GenNewLimitBreak() {
+            GenerateItemProps("MHW_Editor.Weapons", "NewLimitBreak", new MhwStructData {
+                size = 38,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id 1", 0, typeof(ushort)),
+                    new MhwStructData.Entry("Id 2", 2, typeof(ushort)),
+                    new MhwStructData.Entry("Needed Item Id to Unlock", 4, typeof(ushort)),
+                    new MhwStructData.Entry("Activated 1", 6, typeof(sbyte), accessLevel: "protected"),
+                    new MhwStructData.Entry("Activated 2", 7, typeof(sbyte), accessLevel: "protected"),
+                    new MhwStructData.Entry("Activated 3", 8, typeof(sbyte), accessLevel: "protected"),
+                    new MhwStructData.Entry("Activated 4", 9, typeof(sbyte), accessLevel: "protected"),
+                    new MhwStructData.Entry("Mat 1", 14, typeof(ushort)),
+                    new MhwStructData.Entry("Mat 1 Quantity", 16, typeof(byte)),
+                    new MhwStructData.Entry("Mat 2", 17, typeof(ushort)),
+                    new MhwStructData.Entry("Mat 2 Quantity", 19, typeof(byte)),
+                    new MhwStructData.Entry("Mat 3", 20, typeof(ushort)),
+                    new MhwStructData.Entry("Mat 3 Quantity", 22, typeof(byte)),
+                    new MhwStructData.Entry("Mat 4", 23, typeof(ushort)),
+                    new MhwStructData.Entry("Mat 4 Quantity", 24, typeof(byte)),
+                    new MhwStructData.Entry("Id 3", 37, typeof(byte)),
+                }
+            });
         }
 
         private static void GenShellTable() {

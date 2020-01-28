@@ -12,6 +12,8 @@ namespace MHW_Editor.Models {
         public abstract string Name { get; }
         public bool Changed { get; private set; }
 
+        public string Raw_Data => BitConverter.ToString(Bytes).Replace("-", ", ");
+
         protected MhwItem(byte[] bytes, ulong offset) {
             Bytes = bytes;
             Offset = offset;
