@@ -33,11 +33,11 @@ namespace MHW_Editor.Skills {
                 OnPropertyChanged(nameof(uint32_3));
             }
         }
-        public uint uint32_4 {
+        public uint Mantle_Item_Id {
             get => GetData<uint>(12);
             set {
                 SetData(12, value);
-                OnPropertyChanged(nameof(uint32_4));
+                OnPropertyChanged(nameof(Mantle_Item_Id));
             }
         }
         public uint Unlock_Flag {

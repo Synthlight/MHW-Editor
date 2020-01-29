@@ -201,6 +201,13 @@ namespace MHW_Editor {
                 dg_items.Columns.FindColumn(nameof(SkillDat.Description)).DisplayIndex = dg_items.Columns.Count - 1;
             }
 
+            if (targetFileType.Is(typeof(Item))) {
+                var sortOrderIndex = dg_items.Columns.FindColumn(nameof(Item.Sort_Order)).DisplayIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Flags)).DisplayIndex = sortOrderIndex + 1;
+                dg_items.Columns.FindColumn(nameof(Item.Is_Infinite_Use)).DisplayIndex = sortOrderIndex + 2;
+                dg_items.Columns.FindColumn(nameof(Item.Is_Account_Item)).DisplayIndex = sortOrderIndex + 3;
+            }
+
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
 #pragma warning disable 162
             if (SHOW_RAW_BYTES) {

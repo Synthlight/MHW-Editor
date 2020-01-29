@@ -50,11 +50,11 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Sort_Order));
             }
         }
-        public uint Flags {
+        private uint Flags_Raw {
             get => GetData<uint>(14);
             set {
                 SetData(14, value);
-                OnPropertyChanged(nameof(Flags));
+                OnPropertyChanged(nameof(Flags_Raw));
             }
         }
         public uint Icon_Id {
