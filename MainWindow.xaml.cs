@@ -396,12 +396,12 @@ namespace MHW_Editor {
             if (!targetFileType.Is(typeof(BottleTable))) return;
 
             foreach (BottleTable item in items) {
-                item.Close_Range = CoatingType.Yes;
-                item.Power = CoatingType.Yes;
-                item.Paralysis = CoatingType.Yes;
-                item.Poison = CoatingType.Yes;
-                item.Sleep = CoatingType.Yes;
-                item.Blast = CoatingType.Yes;
+                item.Close_Range = CoatingType.On;
+                item.Power = CoatingType.On;
+                item.Paralysis = CoatingType.On;
+                item.Poison = CoatingType.On;
+                item.Sleep = CoatingType.On;
+                item.Blast = CoatingType.On;
 
                 item.OnPropertyChanged();
             }
