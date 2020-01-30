@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Text;
-using MHW_Editor.Models;
+using MHW_Editor.Skills;
 using MHW_Template;
 using Newtonsoft.Json;
 

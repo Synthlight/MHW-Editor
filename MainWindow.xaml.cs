@@ -69,6 +69,18 @@ namespace MHW_Editor {
             }
         }
 
+        public static bool showSkillIdFirst = true;
+        public bool ShowSkillIdFirst {
+            get => showSkillIdFirst;
+            set {
+                showSkillIdFirst = value;
+                foreach (MhwItem item in items) {
+                    item.OnPropertyChanged(nameof(Gem.Skill_1));
+                    item.OnPropertyChanged(nameof(Gem.Skill_2));
+                }
+            }
+        }
+
         public bool SingleClickToEditMode { get; set; } = true;
 
         [CanBeNull]
@@ -255,11 +267,12 @@ namespace MHW_Editor {
         }
 
         private void Dg_items_Sorting(object sender, DataGridSortingEventArgs e) {
+            // || targetFileType.Is(typeof(Gem)) && (string) e.Column.Header == "Skill 1"
+            // || targetFileType.Is(typeof(Gem)) && (string) e.Column.Header == "Skill 2"
             if (targetFileType.Is(typeof(SkillDat)) && (string) e.Column.Header == "Name/ID") {
-                var column = (DataGridTextColumn) e.Column;
-                var direction = (column.SortDirection != ListSortDirection.Ascending) ? ListSortDirection.Ascending : ListSortDirection.Descending;
+                var direction = (e.Column.SortDirection != ListSortDirection.Ascending) ? ListSortDirection.Ascending : ListSortDirection.Descending;
                 SkillDatSorter.INSTANCE.direction = direction;
-                column.SortDirection = direction;
+                e.Column.SortDirection = direction;
 
                 var listColView = (ListCollectionView) dg_items.ItemsSource;
                 listColView.CustomSort = SkillDatSorter.INSTANCE;
@@ -313,6 +326,66 @@ namespace MHW_Editor {
                     }
                     case Armor _: {
                         Armor armor = item;
+
+                        // 386: Guildwork Head α+
+                        if (armor.Id == 368) {
+                            armor.Skill_1 = 16; // Effluvial Expert
+                            armor.Skill_1_Level = 10;
+                            armor.Skill_2 = 114; // Scholar
+                            armor.Skill_2_Level = 10;
+                            armor.Skill_3 = 109; // Aquatic/Polar Mobility
+                            armor.Skill_3_Level = 10;
+                        }
+
+                        // 811: Shara Ishvalda Mail α+
+                        if (armor.Id == 811) {
+                            armor.Skill_1 = 155;
+                            armor.Skill_1_Level = 10;
+                            armor.Skill_2 = 207;
+                            armor.Skill_2_Level = 10;
+                            armor.Skill_3 = 20;
+                            armor.Skill_3_Level = 10;
+                        }
+
+                        // 1009: Kirin Longarms α+
+                        if (armor.Id == 1221) {
+                            armor.Skill_1 = 116;
+                            armor.Skill_1_Level = 10;
+                            armor.Skill_2 = 52;
+                            armor.Skill_2_Level = 10;
+                            armor.Skill_3 = 84;
+                            armor.Skill_3_Level = 10;
+                        }
+
+                        // 1632: Fellshroud Coil α+
+                        if (armor.Id == 1632) {
+                            armor.Skill_1 = 80;
+                            armor.Skill_1_Level = 10;
+                            armor.Skill_2 = 157;
+                            armor.Skill_2_Level = 10;
+                            armor.Skill_3 = 17;
+                            armor.Skill_3_Level = 10;
+                        }
+
+                        // 2050: Rimeguard Greaves α+
+                        if (armor.Id == 2050) {
+                            armor.Skill_1 = 77;
+                            armor.Skill_1_Level = 10;
+                            armor.Skill_2 = 101;
+                            armor.Skill_2_Level = 10;
+                            armor.Skill_3 = 156; // Mind's Eye/Ballistics
+                            armor.Skill_3_Level = 10;
+                        }
+
+                        // 2473: Critical Charm II
+                        if (armor.Id == 2473) {
+                            armor.Skill_1 = 159;
+                            armor.Skill_1_Level = 10;
+                            armor.Skill_2 = 53;
+                            armor.Skill_2_Level = 10;
+                            armor.Skill_3 = 81;
+                            armor.Skill_3_Level = 10;
+                        }
 
                         break;
                     }

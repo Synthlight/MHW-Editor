@@ -1,4 +1,4 @@
-﻿namespace MHW_Editor.Models {
+﻿namespace MHW_Editor.Skills {
     public struct Skill {
         public static readonly Skill DEFAULT = new Skill(0, "Unknown");
         public readonly ushort id;
@@ -10,7 +10,11 @@
         }
 
         public override string ToString() {
-            return $"{id}: {name}";
+            if (MainWindow.showSkillIdFirst) {
+                return $"{id}: {name}";
+            } else {
+                return $"{name}: {id}";
+            }
         }
 
         public bool Equals(Skill other) {
