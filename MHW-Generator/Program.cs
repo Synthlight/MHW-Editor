@@ -41,10 +41,10 @@ namespace MHW_Generator {
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Mantle Id", 16, typeof(uint)),
                     new MhwStructData.Entry("uint32 1", 0, typeof(uint)),
-                    new MhwStructData.Entry("uint32 2", 4, typeof(uint)),
-                    new MhwStructData.Entry("uint32 3", 8, typeof(uint)),
+                    new MhwStructData.Entry("Color", 4, typeof(uint)),
+                    new MhwStructData.Entry("Sort Order", 8, typeof(uint)),
                     new MhwStructData.Entry("Mantle Item Id", 12, typeof(uint)),
-                    new MhwStructData.Entry("Unlock Flag", 20, typeof(uint)),
+                    new MhwStructData.Entry("Unlock Flag or Item Id", 20, typeof(uint)),
                     new MhwStructData.Entry("Deco Count", 24, typeof(byte)),
                     new MhwStructData.Entry("Deco Lvl 1", 25, typeof(byte)),
                     new MhwStructData.Entry("Deco Lvl 2", 26, typeof(byte)),

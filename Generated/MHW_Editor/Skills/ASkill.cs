@@ -19,18 +19,18 @@ namespace MHW_Editor.Skills {
                 OnPropertyChanged(nameof(uint32_1));
             }
         }
-        public uint uint32_2 {
+        public uint Color {
             get => GetData<uint>(4);
             set {
                 SetData(4, value);
-                OnPropertyChanged(nameof(uint32_2));
+                OnPropertyChanged(nameof(Color));
             }
         }
-        public uint uint32_3 {
+        public uint Sort_Order {
             get => GetData<uint>(8);
             set {
                 SetData(8, value);
-                OnPropertyChanged(nameof(uint32_3));
+                OnPropertyChanged(nameof(Sort_Order));
             }
         }
         public uint Mantle_Item_Id {
@@ -40,11 +40,11 @@ namespace MHW_Editor.Skills {
                 OnPropertyChanged(nameof(Mantle_Item_Id));
             }
         }
-        public uint Unlock_Flag {
+        public uint Unlock_Flag_or_Item_Id {
             get => GetData<uint>(20);
             set {
                 SetData(20, value);
-                OnPropertyChanged(nameof(Unlock_Flag));
+                OnPropertyChanged(nameof(Unlock_Flag_or_Item_Id));
             }
         }
         public byte Deco_Count {

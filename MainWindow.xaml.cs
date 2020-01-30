@@ -69,6 +69,8 @@ namespace MHW_Editor {
             }
         }
 
+        public bool SingleClickToEditMode { get; set; } = true;
+
         [CanBeNull]
         private CancellationTokenSource savedTimer;
 
@@ -84,6 +86,7 @@ namespace MHW_Editor {
 
             btn_open.Click += Btn_open_Click;
             btn_save.Click += Btn_save_Click;
+            btn_customize.Click += Btn_customize_Click;
             btn_slot_cheat.Click += Btn_slot_cheat_Click;
             btn_set_bonus_cheat.Click += Btn_set_bonus_cheat_Click;
             btn_skill_level_cheat.Click += Btn_skill_level_cheat_Click;
@@ -91,6 +94,7 @@ namespace MHW_Editor {
             btn_damage_cheat.Click += Btn_damage_cheat_Click;
             btn_enable_all_coatings_cheat.Click += Btn_enable_all_coatings_cheat_Click;
             btn_max_sharpness_cheat.Click += Btn_max_sharpness_cheat_Click;
+            btn_unlock_skill_limit_cheat.Click += Btn_unlock_skill_limit_cheat_Click;
             btn_sort_jewel_order_by_name.Click += Btn_sort_jewel_order_by_name_Click;
 
             Width = SystemParameters.MaximizedPrimaryScreenWidth * 0.8;
@@ -173,24 +177,24 @@ namespace MHW_Editor {
 
             if (targetFileType.Is(typeof(Armor))) {
                 var setGroupIndex = dg_items.Columns.FindColumn(nameof(Armor.Set_Group)).DisplayIndex;
-                dg_items.Columns.FindColumn(nameof(Armor.Is_Permanent)).DisplayIndex = setGroupIndex + 1;
+                dg_items.Columns.FindColumn(nameof(Armor.Is_Permanent)).DisplayIndex = ++setGroupIndex;
             }
 
             if (targetFileType.Is(typeof(Melee))) {
                 var part2Index = dg_items.Columns.FindColumn(nameof(Melee.Part_2_Id)).DisplayIndex;
-                dg_items.Columns.FindColumn(nameof(Melee.Is_Fixed_Upgrade)).DisplayIndex = part2Index + 1;
+                dg_items.Columns.FindColumn(nameof(Melee.Is_Fixed_Upgrade)).DisplayIndex = ++part2Index;
 
                 var rarityIndex = dg_items.Columns.FindColumn(nameof(Melee.Rarity)).DisplayIndex;
-                dg_items.Columns.FindColumn(nameof(Melee.Sharpness_Quality)).DisplayIndex = rarityIndex + 1;
-                dg_items.Columns.FindColumn(nameof(Melee.Sharpness_Amount)).DisplayIndex = rarityIndex + 2;
+                dg_items.Columns.FindColumn(nameof(Melee.Sharpness_Quality)).DisplayIndex = ++rarityIndex;
+                dg_items.Columns.FindColumn(nameof(Melee.Sharpness_Amount)).DisplayIndex = ++rarityIndex;
             }
 
             if (targetFileType.Is(typeof(Ranged))) {
                 var part2Index = dg_items.Columns.FindColumn(nameof(Melee.Part_2_Id)).DisplayIndex;
-                dg_items.Columns.FindColumn(nameof(Ranged.Is_Fixed_Upgrade)).DisplayIndex = part2Index + 1;
+                dg_items.Columns.FindColumn(nameof(Ranged.Is_Fixed_Upgrade)).DisplayIndex = ++part2Index;
 
                 var slotSize3Index = dg_items.Columns.FindColumn(nameof(Ranged.Slot_3_Size)).DisplayIndex;
-                dg_items.Columns.FindColumn(nameof(Ranged.Special_Ammo_Type)).DisplayIndex = slotSize3Index + 1;
+                dg_items.Columns.FindColumn(nameof(Ranged.Special_Ammo_Type)).DisplayIndex = ++slotSize3Index;
             }
 
             if (targetFileType.Is(typeof(BottleTable), typeof(ShellTable))) {
@@ -203,9 +207,21 @@ namespace MHW_Editor {
 
             if (targetFileType.Is(typeof(Item))) {
                 var sortOrderIndex = dg_items.Columns.FindColumn(nameof(Item.Sort_Order)).DisplayIndex;
-                dg_items.Columns.FindColumn(nameof(Item.Flags)).DisplayIndex = sortOrderIndex + 1;
-                dg_items.Columns.FindColumn(nameof(Item.Is_Infinite_Use)).DisplayIndex = sortOrderIndex + 2;
-                dg_items.Columns.FindColumn(nameof(Item.Is_Account_Item)).DisplayIndex = sortOrderIndex + 3;
+                dg_items.Columns.FindColumn(nameof(Item.Flags)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Has_Infinity_Symbol)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Is_Supply_Item)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Unknown)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Is_Consumable)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Is_Fey_or_Streamstone)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Is_Infinite_Use)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Has_Star)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Has_New_Palico_Gadget_Symbol)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Is_Level_1)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Is_Level_2)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Is_Level_3)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Is_Shiny)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Is_Huge_Carriable)).DisplayIndex = ++sortOrderIndex;
+                dg_items.Columns.FindColumn(nameof(Item.Not_Storable_as_an_Item)).DisplayIndex = ++sortOrderIndex;
             }
 
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
@@ -232,7 +248,7 @@ namespace MHW_Editor {
 
         private void Dg_items_GotFocus(object sender, RoutedEventArgs e) {
             // Lookup for the source to be DataGridCell
-            if (e.OriginalSource.GetType() == typeof(DataGridCell)) {
+            if (SingleClickToEditMode && e.OriginalSource.GetType() == typeof(DataGridCell)) {
                 // Starts the Edit on the row;
                 dg_items.BeginEdit(e);
             }
@@ -266,18 +282,72 @@ namespace MHW_Editor {
             Save();
         }
 
+        private void Btn_customize_Click(object sender, RoutedEventArgs e) {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            if (!targetFileType.Is(typeof(SkillDat), typeof(Armor))) return;
+
+            foreach (var item in items) {
+                switch (item) {
+                    case SkillDat _: {
+                        SkillDat skillDat = item;
+
+                        // 114: Scholar
+                        // 117: Scenthound
+                        if (skillDat.Id == 114 || skillDat.Id == 117) {
+                            skillDat.Param_5 = 5000;
+                        }
+
+                        // 120: Tool Specialist
+                        if (skillDat.Id == 120) {
+                            skillDat.Param_1 = 0;
+                            skillDat.Param_5 = 1;
+                        }
+
+                        // 83: Item Prolonger
+                        if (skillDat.Id == 83) {
+                            skillDat.Param_5 = 5000;
+                        }
+
+                        break;
+                    }
+                    case Armor _: {
+                        Armor armor = item;
+
+                        break;
+                    }
+                }
+
+                item.OnPropertyChanged();
+            }
+        }
+
         private void Btn_slot_cheat_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!targetFileType.Is(typeof(IWeapon), typeof(Armor))) return;
+            if (!targetFileType.Is(typeof(IWeapon), typeof(Armor), typeof(ASkill))) return;
 
-            foreach (ISlots item in items) {
-                item.Slot_Count = 3;
-                item.Slot_1_Size = 4;
-                item.Slot_2_Size = 4;
-                item.Slot_3_Size = 4;
+            foreach (var item in items) {
+                switch (item) {
+                    case ISlots _: {
+                        item.Slot_Count = 3;
+                        item.Slot_1_Size = 4;
+                        item.Slot_2_Size = 4;
+                        item.Slot_3_Size = 4;
 
-                ((MhwItem) item).OnPropertyChanged();
+                        break;
+                    }
+                    case ASkill _: {
+                        ASkill aSkill = item;
+                        aSkill.Deco_Count = 2;
+                        aSkill.Deco_Lvl_1 = 4;
+                        aSkill.Deco_Lvl_2 = 4;
+
+                        break;
+                    }
+                }
+
+                item.OnPropertyChanged();
             }
         }
 
@@ -442,6 +512,21 @@ namespace MHW_Editor {
             }
         }
 
+        private void Btn_unlock_skill_limit_cheat_Click(object sender, RoutedEventArgs e) {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            if (!targetFileType.Is(typeof(SkillDat))) return;
+
+            foreach (SkillDat item in items) {
+                item.Param_1 = 0;
+                item.Param_2 = 0;
+                item.Param_3 = 0;
+                item.Param_4 = 0;
+
+                item.OnPropertyChanged();
+            }
+        }
+
         private void Btn_sort_jewel_order_by_name_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
@@ -492,13 +577,15 @@ namespace MHW_Editor {
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
 #pragma warning disable 162
             if (ENABLE_CHEAT_BUTTONS) {
-                btn_slot_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(IWeapon)) ? Visibility.Visible : Visibility.Collapsed;
+                btn_customize.Visibility = targetFileType.Is(typeof(Armor), typeof(SkillDat)) ? Visibility.Visible : Visibility.Collapsed;
+                btn_slot_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(IWeapon), typeof(ASkill)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_skill_level_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Gem)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_set_bonus_cheat.Visibility = targetFileType.Is(typeof(Armor)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_zenny_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Item), typeof(IWeapon)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_damage_cheat.Visibility = targetFileType.Is(typeof(IWeapon)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_enable_all_coatings_cheat.Visibility = targetFileType.Is(typeof(BottleTable)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_max_sharpness_cheat.Visibility = targetFileType.Is(typeof(Sharpness), typeof(Melee)) ? Visibility.Visible : Visibility.Collapsed;
+                btn_unlock_skill_limit_cheat.Visibility = targetFileType.Is(typeof(SkillDat)) ? Visibility.Visible : Visibility.Collapsed;
             }
 #pragma warning restore 162
 
@@ -561,27 +648,31 @@ namespace MHW_Editor {
         }
 
         private async void Save() {
-            var changesSaved = false;
-            using (var dat = new BinaryWriter(new FileStream(targetFile, FileMode.Open, FileAccess.Write))) {
-                foreach (IMhwItem item in items) {
-                    if (item.Offset == 0 || !item.Changed) continue;
-
-                    dat.BaseStream.Seek((long) item.Offset, SeekOrigin.Begin);
-                    dat.Write(item.Bytes);
-
-                    item.Changed = false;
-                    changesSaved = true;
-                }
-            }
-
-            savedTimer?.Cancel();
-            savedTimer = new CancellationTokenSource();
-            lbl_saved.Visibility = changesSaved ? Visibility.Visible : Visibility.Collapsed;
-            lbl_no_changes.Visibility = changesSaved ? Visibility.Collapsed : Visibility.Visible;
             try {
-                await Task.Delay(3000, savedTimer.Token);
-                lbl_saved.Visibility = lbl_no_changes.Visibility = Visibility.Hidden;
-            } catch (TaskCanceledException) {
+                var changesSaved = false;
+                using (var dat = new BinaryWriter(new FileStream(targetFile, FileMode.Open, FileAccess.Write))) {
+                    foreach (IMhwItem item in items) {
+                        if (item.Offset == 0 || !item.Changed) continue;
+
+                        dat.BaseStream.Seek((long) item.Offset, SeekOrigin.Begin);
+                        dat.Write(item.Bytes);
+
+                        item.Changed = false;
+                        changesSaved = true;
+                    }
+                }
+
+                savedTimer?.Cancel();
+                savedTimer = new CancellationTokenSource();
+                lbl_saved.Visibility = changesSaved ? Visibility.Visible : Visibility.Collapsed;
+                lbl_no_changes.Visibility = changesSaved ? Visibility.Collapsed : Visibility.Visible;
+                try {
+                    await Task.Delay(3000, savedTimer.Token);
+                    lbl_saved.Visibility = lbl_no_changes.Visibility = Visibility.Hidden;
+                } catch (TaskCanceledException) {
+                }
+            } catch (Exception e) {
+                MessageBox.Show(this, e.Message, "Save Error");
             }
         }
 

@@ -14,8 +14,76 @@ namespace MHW_Editor.Items {
             get => Flags_Raw;
             set {
                 Flags_Raw = value;
+                OnPropertyChanged(nameof(Has_Infinity_Symbol));
+                OnPropertyChanged(nameof(Is_Supply_Item));
+                OnPropertyChanged(nameof(Is_Consumable));
                 OnPropertyChanged(nameof(Is_Infinite_Use));
-                OnPropertyChanged(nameof(Is_Account_Item));
+                OnPropertyChanged(nameof(Has_Star));
+            }
+        }
+
+        public bool Has_Infinity_Symbol {
+            get => ((ItemFlags) Flags & ItemFlags.Infinity_Symbol) != 0;
+            set {
+                if (value) {
+                    Flags |= (uint) ItemFlags.Infinity_Symbol;
+                } else {
+                    Flags &= ~(uint) ItemFlags.Infinity_Symbol;
+                }
+
+                OnPropertyChanged(nameof(Flags));
+            }
+        }
+
+        public bool Is_Supply_Item {
+            get => ((ItemFlags) Flags & ItemFlags.Supply_Item) != 0;
+            set {
+                if (value) {
+                    Flags |= (uint) ItemFlags.Supply_Item;
+                } else {
+                    Flags &= ~(uint) ItemFlags.Supply_Item;
+                }
+
+                OnPropertyChanged(nameof(Flags));
+            }
+        }
+
+        public bool Unknown {
+            get => ((ItemFlags) Flags & ItemFlags.Unknown) != 0;
+            set {
+                if (value) {
+                    Flags |= (uint) ItemFlags.Unknown;
+                } else {
+                    Flags &= ~(uint) ItemFlags.Unknown;
+                }
+
+                OnPropertyChanged(nameof(Flags));
+            }
+        }
+
+        public bool Is_Consumable {
+            get => ((ItemFlags) Flags & ItemFlags.Consumable) != 0;
+            set {
+                if (value) {
+                    Flags |= (uint) ItemFlags.Consumable;
+                } else {
+                    Flags &= ~(uint) ItemFlags.Consumable;
+                }
+
+                OnPropertyChanged(nameof(Flags));
+            }
+        }
+
+        public bool Is_Fey_or_Streamstone {
+            get => ((ItemFlags) Flags & ItemFlags.Fey_or_Streamstone) != 0;
+            set {
+                if (value) {
+                    Flags |= (uint) ItemFlags.Fey_or_Streamstone;
+                } else {
+                    Flags &= ~(uint) ItemFlags.Fey_or_Streamstone;
+                }
+
+                OnPropertyChanged(nameof(Flags));
             }
         }
 
@@ -32,13 +100,104 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public bool Is_Account_Item {
-            get => ((ItemFlags) Flags & ItemFlags.Account_Item) != 0;
+        public bool Has_Star {
+            get => ((ItemFlags) Flags & ItemFlags.Star) != 0;
             set {
                 if (value) {
-                    Flags |= (uint) ItemFlags.Account_Item;
+                    Flags |= (uint) ItemFlags.Star;
                 } else {
-                    Flags &= ~(uint) ItemFlags.Account_Item;
+                    Flags &= ~(uint) ItemFlags.Star;
+                }
+
+                OnPropertyChanged(nameof(Flags));
+            }
+        }
+
+        public bool Has_New_Palico_Gadget_Symbol {
+            get => ((ItemFlags) Flags & ItemFlags.New_Palico_Gadget_Symbol) != 0;
+            set {
+                if (value) {
+                    Flags |= (uint) ItemFlags.New_Palico_Gadget_Symbol;
+                } else {
+                    Flags &= ~(uint) ItemFlags.New_Palico_Gadget_Symbol;
+                }
+
+                OnPropertyChanged(nameof(Flags));
+            }
+        }
+
+        public bool Is_Level_1 {
+            get => ((ItemFlags) Flags & ItemFlags.Level_1) != 0;
+            set {
+                if (value) {
+                    Flags |= (uint) ItemFlags.Level_1;
+                } else {
+                    Flags &= ~(uint) ItemFlags.Level_1;
+                }
+
+                OnPropertyChanged(nameof(Flags));
+            }
+        }
+
+        public bool Is_Level_2 {
+            get => ((ItemFlags) Flags & ItemFlags.Level_2) != 0;
+            set {
+                if (value) {
+                    Flags |= (uint) ItemFlags.Level_2;
+                } else {
+                    Flags &= ~(uint) ItemFlags.Level_2;
+                }
+
+                OnPropertyChanged(nameof(Flags));
+            }
+        }
+
+        public bool Is_Level_3 {
+            get => ((ItemFlags) Flags & ItemFlags.Level_3) != 0;
+            set {
+                if (value) {
+                    Flags |= (uint) ItemFlags.Level_3;
+                } else {
+                    Flags &= ~(uint) ItemFlags.Level_3;
+                }
+
+                OnPropertyChanged(nameof(Flags));
+            }
+        }
+
+        public bool Is_Shiny {
+            get => ((ItemFlags) Flags & ItemFlags.Shiny) != 0;
+            set {
+                if (value) {
+                    Flags |= (uint) ItemFlags.Shiny;
+                } else {
+                    Flags &= ~(uint) ItemFlags.Shiny;
+                }
+
+                OnPropertyChanged(nameof(Flags));
+            }
+        }
+
+        public bool Is_Huge_Carriable {
+            get => ((ItemFlags) Flags & ItemFlags.Huge_Carriable) != 0;
+            set {
+                if (value) {
+                    Flags |= (uint) ItemFlags.Huge_Carriable;
+                } else {
+                    Flags &= ~(uint) ItemFlags.Huge_Carriable;
+                }
+
+                OnPropertyChanged(nameof(Flags));
+            }
+        }
+
+        public bool Not_Storable_as_an_Item {
+            get => ((ItemFlags) Flags & ItemFlags.Not_Storable_as_an_Item) != 0;
+            set {
+                if (value) {
+                    Flags |= (uint) ItemFlags.Not_Storable_as_an_Item;
+                } else {
+                    Flags &= ~(uint) ItemFlags.Not_Storable_as_an_Item;
                 }
 
                 OnPropertyChanged(nameof(Flags));

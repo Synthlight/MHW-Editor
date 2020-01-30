@@ -15,9 +15,15 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
         <DockPanel Grid.Row="0"
+                   Grid.Column="0"
                    VerticalAlignment="Stretch">
-            <StackPanel HorizontalAlignment="Left"
+            <StackPanel HorizontalAlignment="Right"
                         Orientation="Horizontal">
                 <Button Name="btn_open"
                         Margin="0,0,0,0"
@@ -38,8 +44,30 @@
                        Content="—No Changes to Save"
                        Visibility="Collapsed"/>
             </StackPanel>
+        </DockPanel>
+        <DockPanel Grid.Row="0"
+                   Grid.Column="1"
+                   VerticalAlignment="Stretch">
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <ToggleButton Name="tb_single_click_edit"
+                              Margin="0,0,0,0"
+                              HorizontalAlignment="Right"
+                              Content="Single Click to Edit Mode"
+                              IsChecked="{Binding SingleClickToEditMode}"/>
+            </StackPanel>
+        </DockPanel>
+        <DockPanel Grid.Row="0"
+                   Grid.Column="2"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Stretch">
             <StackPanel HorizontalAlignment="Right"
                         Orientation="Horizontal">
+                <Button Name="btn_customize"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Content="GMod"
+                        Visibility="Collapsed"/>
                 <Button Name="btn_slot_cheat"
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"
@@ -75,6 +103,11 @@
                         HorizontalAlignment="Right"
                         Content="Set Sharpness to Max"
                         Visibility="Collapsed"/>
+                <Button Name="btn_unlock_skill_limit_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Content="Remove Skill Limits"
+                        Visibility="Collapsed"/>
                 <Button Name="btn_sort_jewel_order_by_name"
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"
@@ -91,6 +124,8 @@
         </DockPanel>
         <DataGrid Name="dg_items"
                   Grid.Row="1"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="3"
                   CanUserAddRows="False"
                   SelectionUnit="CellOrRowHeader"/>
     </Grid>
