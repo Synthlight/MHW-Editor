@@ -1,3 +1,5 @@
+
+using System.ComponentModel;
 using MHW_Template;
 
 namespace MHW_Editor.Armors {
@@ -5,9 +7,11 @@ namespace MHW_Editor.Armors {
         public const uint StructSize = 60;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        [DisplayName("Id")]
         public uint Id {
             get => GetData<uint>(0);
         }
+        [DisplayName("Order")]
         public ushort Order {
             get => GetData<ushort>(4);
             set {
@@ -15,6 +19,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Order));
             }
         }
+        [DisplayName("Variant")]
         public MHW_Template.Armors.Variant Variant {
             get => (MHW_Template.Armors.Variant) GetData<byte>(6);
             set {
@@ -22,6 +27,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Variant));
             }
         }
+        [DisplayName("Set Id")]
         public ushort Set_Id {
             get => GetData<ushort>(7);
             set {
@@ -29,6 +35,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Id));
             }
         }
+        [DisplayName("Type")]
         public MHW_Template.Armors.ArmorType Type {
             get => (MHW_Template.Armors.ArmorType) GetData<byte>(9);
             set {
@@ -36,6 +43,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Type));
             }
         }
+        [DisplayName("Equip Slot")]
         public MHW_Template.Armors.EquipSlot Equip_Slot {
             get => (MHW_Template.Armors.EquipSlot) GetData<byte>(10);
             set {
@@ -43,6 +51,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Equip_Slot));
             }
         }
+        [DisplayName("Defense")]
         public ushort Defense {
             get => GetData<ushort>(11);
             set {
@@ -50,6 +59,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Defense));
             }
         }
+        [DisplayName("Rarity")]
         public byte Rarity {
             get => GetData<byte>(20);
             set {
@@ -57,6 +67,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Rarity));
             }
         }
+        [DisplayName("Cost")]
         public uint Cost {
             get => GetData<uint>(21);
             set {
@@ -64,6 +75,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Cost));
             }
         }
+        [DisplayName("Fire Res")]
         public sbyte Fire_Res {
             get => GetData<sbyte>(25);
             set {
@@ -71,6 +83,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Fire_Res));
             }
         }
+        [DisplayName("Water Res")]
         public sbyte Water_Res {
             get => GetData<sbyte>(26);
             set {
@@ -78,6 +91,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Water_Res));
             }
         }
+        [DisplayName("Ice Res")]
         public sbyte Ice_Res {
             get => GetData<sbyte>(27);
             set {
@@ -85,6 +99,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Ice_Res));
             }
         }
+        [DisplayName("Thunder Res")]
         public sbyte Thunder_Res {
             get => GetData<sbyte>(28);
             set {
@@ -92,6 +107,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Thunder_Res));
             }
         }
+        [DisplayName("Dragon Res")]
         public sbyte Dragon_Res {
             get => GetData<sbyte>(29);
             set {
@@ -99,6 +115,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Dragon_Res));
             }
         }
+        [DisplayName("Slot Count")]
         public byte Slot_Count {
             get => GetData<byte>(30);
             set {
@@ -106,6 +123,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Slot_Count));
             }
         }
+        [DisplayName("Slot 1 Size")]
         public byte Slot_1_Size {
             get => GetData<byte>(31);
             set {
@@ -113,6 +131,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Slot_1_Size));
             }
         }
+        [DisplayName("Slot 2 Size")]
         public byte Slot_2_Size {
             get => GetData<byte>(32);
             set {
@@ -120,6 +139,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Slot_2_Size));
             }
         }
+        [DisplayName("Slot 3 Size")]
         public byte Slot_3_Size {
             get => GetData<byte>(33);
             set {
@@ -127,6 +147,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Slot_3_Size));
             }
         }
+        [DisplayName("Set Skill 1")]
         public ushort Set_Skill_1 {
             get => GetData<ushort>(34);
             set {
@@ -134,6 +155,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Skill_1));
             }
         }
+        [DisplayName("Set Skill 1 Level")]
         public byte Set_Skill_1_Level {
             get => GetData<byte>(36);
             set {
@@ -141,6 +163,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Skill_1_Level));
             }
         }
+        [DisplayName("Set Skill 2")]
         public ushort Set_Skill_2 {
             get => GetData<ushort>(37);
             set {
@@ -148,6 +171,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Skill_2));
             }
         }
+        [DisplayName("Set Skill 2 Level")]
         public byte Set_Skill_2_Level {
             get => GetData<byte>(39);
             set {
@@ -155,6 +179,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Skill_2_Level));
             }
         }
+        [DisplayName("Skill 1")]
         public ushort Skill_1 {
             get => GetData<ushort>(40);
             set {
@@ -162,6 +187,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_1));
             }
         }
+        [DisplayName("Skill 1 Level")]
         public byte Skill_1_Level {
             get => GetData<byte>(42);
             set {
@@ -169,6 +195,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_1_Level));
             }
         }
+        [DisplayName("Skill 2")]
         public ushort Skill_2 {
             get => GetData<ushort>(43);
             set {
@@ -176,6 +203,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_2));
             }
         }
+        [DisplayName("Skill 2 Level")]
         public byte Skill_2_Level {
             get => GetData<byte>(45);
             set {
@@ -183,6 +211,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_2_Level));
             }
         }
+        [DisplayName("Skill 3")]
         public ushort Skill_3 {
             get => GetData<ushort>(46);
             set {
@@ -190,6 +219,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_3));
             }
         }
+        [DisplayName("Skill 3 Level")]
         public byte Skill_3_Level {
             get => GetData<byte>(48);
             set {
@@ -197,6 +227,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_3_Level));
             }
         }
+        [DisplayName("Gender")]
         public MHW_Template.Armors.Gender Gender {
             get => (MHW_Template.Armors.Gender) GetData<byte>(49);
             set {
@@ -204,6 +235,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Gender));
             }
         }
+        [DisplayName("Set Group")]
         public ushort Set_Group {
             get => GetData<ushort>(53);
             set {
@@ -211,6 +243,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Group));
             }
         }
+        [DisplayName("Is Permanent Raw")]
         protected byte Is_Permanent_Raw {
             get => GetData<byte>(59);
             set {
@@ -218,6 +251,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Is_Permanent_Raw));
             }
         }
+        [DisplayName("GMD Name Index")]
         protected ushort GMD_Name_Index {
             get => GetData<ushort>(55);
             set {

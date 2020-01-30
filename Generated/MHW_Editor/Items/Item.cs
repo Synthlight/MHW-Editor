@@ -1,3 +1,5 @@
+
+using System.ComponentModel;
 using MHW_Template;
 
 namespace MHW_Editor.Items {
@@ -5,9 +7,11 @@ namespace MHW_Editor.Items {
         public const uint StructSize = 32;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        [DisplayName("Id")]
         public uint Id {
             get => GetData<uint>(0);
         }
+        [DisplayName("Sub Type")]
         public MHW_Template.Items.ItemSubType Sub_Type {
             get => (MHW_Template.Items.ItemSubType) GetData<byte>(4);
             set {
@@ -15,6 +19,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Sub_Type));
             }
         }
+        [DisplayName("Type")]
         public MHW_Template.Items.ItemType Type {
             get => (MHW_Template.Items.ItemType) GetData<uint>(5);
             set {
@@ -22,6 +27,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Type));
             }
         }
+        [DisplayName("Rarity")]
         public byte Rarity {
             get => GetData<byte>(9);
             set {
@@ -29,6 +35,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Rarity));
             }
         }
+        [DisplayName("Carry Limit")]
         public byte Carry_Limit {
             get => GetData<byte>(10);
             set {
@@ -36,13 +43,15 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Carry_Limit));
             }
         }
-        public byte Unknown_Limit {
+        [DisplayName("Unknown (uint16)")]
+        public byte Unknown_uint16_ {
             get => GetData<byte>(11);
             set {
                 SetData(11, value);
-                OnPropertyChanged(nameof(Unknown_Limit));
+                OnPropertyChanged(nameof(Unknown_uint16_));
             }
         }
+        [DisplayName("Sort Order")]
         public ushort Sort_Order {
             get => GetData<ushort>(12);
             set {
@@ -50,6 +59,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Sort_Order));
             }
         }
+        [DisplayName("Flags Raw")]
         private uint Flags_Raw {
             get => GetData<uint>(14);
             set {
@@ -57,6 +67,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Flags_Raw));
             }
         }
+        [DisplayName("Icon Id")]
         public uint Icon_Id {
             get => GetData<uint>(18);
             set {
@@ -64,6 +75,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Icon_Id));
             }
         }
+        [DisplayName("Icon Color Id")]
         public ushort Icon_Color_Id {
             get => GetData<ushort>(22);
             set {
@@ -71,6 +83,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Icon_Color_Id));
             }
         }
+        [DisplayName("Sell Price")]
         public uint Sell_Price {
             get => GetData<uint>(24);
             set {
@@ -78,6 +91,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Sell_Price));
             }
         }
+        [DisplayName("Buy Price")]
         public uint Buy_Price {
             get => GetData<uint>(28);
             set {

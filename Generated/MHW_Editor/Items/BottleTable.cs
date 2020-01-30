@@ -1,3 +1,5 @@
+
+using System.ComponentModel;
 using MHW_Template;
 
 namespace MHW_Editor.Items {
@@ -5,6 +7,7 @@ namespace MHW_Editor.Items {
         public const uint StructSize = 6;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        [DisplayName("Close Range")]
         public MHW_Template.Weapons.CoatingType Close_Range {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(0);
             set {
@@ -12,6 +15,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Close_Range));
             }
         }
+        [DisplayName("Power")]
         public MHW_Template.Weapons.CoatingType Power {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(1);
             set {
@@ -19,6 +23,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Power));
             }
         }
+        [DisplayName("Paralysis")]
         public MHW_Template.Weapons.CoatingType Paralysis {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(2);
             set {
@@ -26,6 +31,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Paralysis));
             }
         }
+        [DisplayName("Poison")]
         public MHW_Template.Weapons.CoatingType Poison {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(3);
             set {
@@ -33,6 +39,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Poison));
             }
         }
+        [DisplayName("Sleep")]
         public MHW_Template.Weapons.CoatingType Sleep {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(4);
             set {
@@ -40,6 +47,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Sleep));
             }
         }
+        [DisplayName("Blast")]
         public MHW_Template.Weapons.CoatingType Blast {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(5);
             set {

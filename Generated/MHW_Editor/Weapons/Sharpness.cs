@@ -1,3 +1,5 @@
+
+using System.ComponentModel;
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
@@ -5,9 +7,11 @@ namespace MHW_Editor.Weapons {
         public const uint StructSize = 18;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        [DisplayName("Id")]
         public uint Id {
             get => GetData<uint>(0);
         }
+        [DisplayName("Red")]
         public ushort Red {
             get => GetData<ushort>(4);
             set {
@@ -15,6 +19,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Red));
             }
         }
+        [DisplayName("Orange")]
         public ushort Orange {
             get => GetData<ushort>(6);
             set {
@@ -22,6 +27,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Orange));
             }
         }
+        [DisplayName("Yellow")]
         public ushort Yellow {
             get => GetData<ushort>(8);
             set {
@@ -29,6 +35,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Yellow));
             }
         }
+        [DisplayName("Green")]
         public ushort Green {
             get => GetData<ushort>(10);
             set {
@@ -36,6 +43,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Green));
             }
         }
+        [DisplayName("Blue")]
         public ushort Blue {
             get => GetData<ushort>(12);
             set {
@@ -43,6 +51,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Blue));
             }
         }
+        [DisplayName("White")]
         public ushort White {
             get => GetData<ushort>(14);
             set {
@@ -50,6 +59,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(White));
             }
         }
+        [DisplayName("Purple")]
         public ushort Purple {
             get => GetData<ushort>(16);
             set {

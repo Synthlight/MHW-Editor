@@ -40,11 +40,11 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Mantle Id", 16, typeof(uint)),
-                    new MhwStructData.Entry("uint32 1", 0, typeof(uint)),
+                    new MhwStructData.Entry("Unknown (uint32)", 0, typeof(uint)),
                     new MhwStructData.Entry("Color", 4, typeof(uint)),
                     new MhwStructData.Entry("Sort Order", 8, typeof(uint)),
                     new MhwStructData.Entry("Mantle Item Id", 12, typeof(uint)),
-                    new MhwStructData.Entry("Unlock Flag or Item Id", 20, typeof(uint)),
+                    new MhwStructData.Entry("Unlock Flag or Item Id?", 20, typeof(uint)),
                     new MhwStructData.Entry("Deco Count", 24, typeof(byte)),
                     new MhwStructData.Entry("Deco Lvl 1", 25, typeof(byte)),
                     new MhwStructData.Entry("Deco Lvl 2", 26, typeof(byte)),
@@ -59,8 +59,8 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Unk 1", 0, typeof(byte)),
-                    new MhwStructData.Entry("Unk 2", 1, typeof(byte))
+                    new MhwStructData.Entry("Unknown (uint8) 1", 0, typeof(byte)),
+                    new MhwStructData.Entry("Unknown (uint8) 2", 1, typeof(byte))
                 }
             });
         }
@@ -72,8 +72,8 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Unknown 1", 4, typeof(byte)),
-                    new MhwStructData.Entry("Unknown 2", 5, typeof(ushort))
+                    new MhwStructData.Entry("Unknown 1 (uint8)", 4, typeof(byte)),
+                    new MhwStructData.Entry("Unknown 2 (uint16)", 5, typeof(ushort))
                 }
             });
         }
@@ -241,8 +241,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Affinity", 29, typeof(sbyte), valueString: "value.Clamp((sbyte) -100, (sbyte) 100)"),
                     new MhwStructData.Entry("Element", 30, typeof(byte), typeof(Element)),
                     new MhwStructData.Entry("Element Damage", 31, typeof(ushort)),
-                    new MhwStructData.Entry("Hidden Element", 33, typeof(byte), typeof(Element)),
-                    new MhwStructData.Entry("Hidden Element Damage", 34, typeof(ushort)),
+                    new MhwStructData.Entry("Element (Hidden)", 33, typeof(byte), typeof(Element)),
+                    new MhwStructData.Entry("Element (Hidden) Damage", 34, typeof(ushort)),
                     new MhwStructData.Entry("Elderseal", 36, typeof(byte), typeof(Elderseal)),
                     new MhwStructData.Entry("Shell Type Id", 37, typeof(byte)),
                     new MhwStructData.Entry("Deviation", 39, typeof(byte), typeof(Deviation)),
@@ -278,8 +278,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Affinity", 27, typeof(sbyte), valueString: "value.Clamp((sbyte) -100, (sbyte) 100)"),
                     new MhwStructData.Entry("Element", 28, typeof(byte), typeof(Element)),
                     new MhwStructData.Entry("Element Damage", 29, typeof(ushort)),
-                    new MhwStructData.Entry("Hidden Element", 31, typeof(byte), typeof(Element)),
-                    new MhwStructData.Entry("Hidden Element Damage", 32, typeof(ushort)),
+                    new MhwStructData.Entry("Element (Hidden)", 31, typeof(byte), typeof(Element)),
+                    new MhwStructData.Entry("Element (Hidden) Damage", 32, typeof(ushort)),
                     new MhwStructData.Entry("Elderseal", 34, typeof(byte), typeof(Elderseal)),
                     new MhwStructData.Entry("Slot Count", 35, typeof(byte)),
                     new MhwStructData.Entry("Slot 1 Size", 36, typeof(byte)),
@@ -302,7 +302,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Order", 4, typeof(ushort)),
                     new MhwStructData.Entry("Variant", 6, typeof(byte), typeof(Variant)),
-                    new MhwStructData.Entry("Set Id", 7, typeof(ushort)),
+                    new MhwStructData.Entry("Set (Layered) Id", 7, typeof(ushort)),
                     new MhwStructData.Entry("Type", 9, typeof(byte), typeof(ArmorType)),
                     new MhwStructData.Entry("Equip Slot", 10, typeof(byte), typeof(EquipSlot)),
                     new MhwStructData.Entry("Defense", 11, typeof(ushort)),
@@ -378,17 +378,17 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Unk1", 0, typeof(short)),
-                    new MhwStructData.Entry("Unk2", 2, typeof(short)),
-                    new MhwStructData.Entry("Unk3", 4, typeof(short)),
-                    new MhwStructData.Entry("Unk4", 6, typeof(short)),
-                    new MhwStructData.Entry("Unk5", 8, typeof(short)),
-                    new MhwStructData.Entry("Unk6", 10, typeof(short)),
-                    new MhwStructData.Entry("Unk7", 12, typeof(short)),
-                    new MhwStructData.Entry("Unk8", 14, typeof(short)),
-                    new MhwStructData.Entry("Unk9", 16, typeof(short)),
-                    new MhwStructData.Entry("Unk10", 18, typeof(short)),
-                    new MhwStructData.Entry("Unk11", 20, typeof(short))
+                    new MhwStructData.Entry("Unknown (uint16) 1", 0, typeof(short)),
+                    new MhwStructData.Entry("Unknown (uint16) 2", 2, typeof(short)),
+                    new MhwStructData.Entry("Unknown (uint16) 3", 4, typeof(short)),
+                    new MhwStructData.Entry("Unknown (uint16) 4", 6, typeof(short)),
+                    new MhwStructData.Entry("Unknown (uint16) 5", 8, typeof(short)),
+                    new MhwStructData.Entry("Unknown (uint16) 6", 10, typeof(short)),
+                    new MhwStructData.Entry("Unknown (uint16) 7", 12, typeof(short)),
+                    new MhwStructData.Entry("Unknown (uint16) 8", 14, typeof(short)),
+                    new MhwStructData.Entry("Unknown (uint16) 9", 16, typeof(short)),
+                    new MhwStructData.Entry("Unknown (uint16) 10", 18, typeof(short)),
+                    new MhwStructData.Entry("Unknown (uint16) 11", 20, typeof(short))
                 }
             });
         }
@@ -420,7 +420,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Type", 5, typeof(uint), typeof(ItemType)),
                     new MhwStructData.Entry("Rarity", 9, typeof(byte)),
                     new MhwStructData.Entry("Carry Limit", 10, typeof(byte)),
-                    new MhwStructData.Entry("Unknown Limit", 11, typeof(byte)),
+                    new MhwStructData.Entry("Unknown (uint16)", 11, typeof(byte)),
                     new MhwStructData.Entry("Sort Order", 12, typeof(ushort)),
                     new MhwStructData.Entry("Flags Raw", 14, typeof(uint), accessLevel: "private"),
                     new MhwStructData.Entry("Icon Id", 18, typeof(uint)),

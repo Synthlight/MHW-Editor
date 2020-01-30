@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -13,6 +14,7 @@ namespace MHW_Editor.Weapons {
 
         public override string Name => DataHelper.weaponData[MainWindow.locale].TryGet(weaponFilename, DataHelper.dummyDict).TryGet(GMD_Name_Index, "Unknown");
 
+        [DisplayName("Is Fixed Upgrade")]
         public bool Is_Fixed_Upgrade {
             get => Convert.ToBoolean(Is_Fixed_Upgrade_Raw);
             set => Is_Fixed_Upgrade_Raw = Convert.ToByte(value);

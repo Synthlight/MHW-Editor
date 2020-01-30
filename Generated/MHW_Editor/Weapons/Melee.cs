@@ -1,3 +1,5 @@
+
+using System.ComponentModel;
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
@@ -5,12 +7,15 @@ namespace MHW_Editor.Weapons {
         public const uint StructSize = 66;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        [DisplayName("Index")]
         private uint Index {
             get => GetData<uint>(0);
         }
+        [DisplayName("Id")]
         public ushort Id {
             get => GetData<ushort>(56);
         }
+        [DisplayName("Base Model Id")]
         public short Base_Model_Id {
             get => GetData<short>(6);
             set {
@@ -18,6 +23,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Base_Model_Id));
             }
         }
+        [DisplayName("Part 1 Id")]
         public short Part_1_Id {
             get => GetData<short>(8);
             set {
@@ -25,6 +31,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Part_1_Id));
             }
         }
+        [DisplayName("Part 2 Id")]
         public short Part_2_Id {
             get => GetData<short>(10);
             set {
@@ -32,6 +39,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Part_2_Id));
             }
         }
+        [DisplayName("Is Fixed Upgrade Raw")]
         protected byte Is_Fixed_Upgrade_Raw {
             get => GetData<byte>(15);
             set {
@@ -39,6 +47,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Is_Fixed_Upgrade_Raw));
             }
         }
+        [DisplayName("Cost")]
         public uint Cost {
             get => GetData<uint>(16);
             set {
@@ -46,6 +55,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Cost));
             }
         }
+        [DisplayName("Rarity")]
         public byte Rarity {
             get => GetData<byte>(20);
             set {
@@ -53,6 +63,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Rarity));
             }
         }
+        [DisplayName("Sharpness Quality")]
         public byte Sharpness_Quality {
             get => GetData<byte>(21);
             set {
@@ -60,6 +71,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sharpness_Quality));
             }
         }
+        [DisplayName("Sharpness Amount")]
         public byte Sharpness_Amount {
             get => GetData<byte>(22);
             set {
@@ -67,6 +79,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sharpness_Amount));
             }
         }
+        [DisplayName("Damage")]
         public ushort Damage {
             get => GetData<ushort>(23);
             set {
@@ -74,6 +87,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Damage));
             }
         }
+        [DisplayName("Defense")]
         public ushort Defense {
             get => GetData<ushort>(25);
             set {
@@ -81,6 +95,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Defense));
             }
         }
+        [DisplayName("Affinity")]
         public sbyte Affinity {
             get => GetData<sbyte>(27);
             set {
@@ -88,6 +103,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Affinity));
             }
         }
+        [DisplayName("Element")]
         public MHW_Template.Weapons.Element Element {
             get => (MHW_Template.Weapons.Element) GetData<byte>(28);
             set {
@@ -95,6 +111,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Element));
             }
         }
+        [DisplayName("Element Damage")]
         public ushort Element_Damage {
             get => GetData<ushort>(29);
             set {
@@ -102,20 +119,23 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Element_Damage));
             }
         }
-        public MHW_Template.Weapons.Element Hidden_Element {
+        [DisplayName("Element (Hidden)")]
+        public MHW_Template.Weapons.Element Element_Hidden_ {
             get => (MHW_Template.Weapons.Element) GetData<byte>(31);
             set {
                 SetData(31, (byte) value);
-                OnPropertyChanged(nameof(Hidden_Element));
+                OnPropertyChanged(nameof(Element_Hidden_));
             }
         }
-        public ushort Hidden_Element_Damage {
+        [DisplayName("Element (Hidden) Damage")]
+        public ushort Element_Hidden_Damage {
             get => GetData<ushort>(32);
             set {
                 SetData(32, value);
-                OnPropertyChanged(nameof(Hidden_Element_Damage));
+                OnPropertyChanged(nameof(Element_Hidden_Damage));
             }
         }
+        [DisplayName("Elderseal")]
         public MHW_Template.Weapons.Elderseal Elderseal {
             get => (MHW_Template.Weapons.Elderseal) GetData<byte>(34);
             set {
@@ -123,6 +143,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Elderseal));
             }
         }
+        [DisplayName("Slot Count")]
         public byte Slot_Count {
             get => GetData<byte>(35);
             set {
@@ -130,6 +151,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Slot_Count));
             }
         }
+        [DisplayName("Slot 1 Size")]
         public byte Slot_1_Size {
             get => GetData<byte>(36);
             set {
@@ -137,6 +159,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Slot_1_Size));
             }
         }
+        [DisplayName("Slot 2 Size")]
         public byte Slot_2_Size {
             get => GetData<byte>(37);
             set {
@@ -144,6 +167,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Slot_2_Size));
             }
         }
+        [DisplayName("Slot 3 Size")]
         public byte Slot_3_Size {
             get => GetData<byte>(38);
             set {
@@ -151,6 +175,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Slot_3_Size));
             }
         }
+        [DisplayName("Special Ability 1 ID")]
         public ushort Special_Ability_1_ID {
             get => GetData<ushort>(39);
             set {
@@ -158,6 +183,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Special_Ability_1_ID));
             }
         }
+        [DisplayName("Special Ability 2 ID")]
         public ushort Special_Ability_2_ID {
             get => GetData<ushort>(41);
             set {
@@ -165,6 +191,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Special_Ability_2_ID));
             }
         }
+        [DisplayName("Skill")]
         public ushort Skill {
             get => GetData<ushort>(62);
             set {
@@ -172,6 +199,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Skill));
             }
         }
+        [DisplayName("GMD Name Index")]
         protected ushort GMD_Name_Index {
             get => GetData<ushort>(58);
             set {

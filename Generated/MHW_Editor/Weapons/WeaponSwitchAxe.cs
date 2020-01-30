@@ -1,3 +1,5 @@
+
+using System.ComponentModel;
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
@@ -5,21 +7,24 @@ namespace MHW_Editor.Weapons {
         public const uint StructSize = 7;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        [DisplayName("Id")]
         public uint Id {
             get => GetData<uint>(0);
         }
-        public byte Unknown_1 {
+        [DisplayName("Unknown 1 (uint8)")]
+        public byte Unknown_1_uint8_ {
             get => GetData<byte>(4);
             set {
                 SetData(4, value);
-                OnPropertyChanged(nameof(Unknown_1));
+                OnPropertyChanged(nameof(Unknown_1_uint8_));
             }
         }
-        public ushort Unknown_2 {
+        [DisplayName("Unknown 2 (uint16)")]
+        public ushort Unknown_2_uint16_ {
             get => GetData<ushort>(5);
             set {
                 SetData(5, value);
-                OnPropertyChanged(nameof(Unknown_2));
+                OnPropertyChanged(nameof(Unknown_2_uint16_));
             }
         }
     }

@@ -1,3 +1,5 @@
+
+using System.ComponentModel;
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
@@ -5,6 +7,7 @@ namespace MHW_Editor.Weapons {
         public const uint StructSize = 111;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        [DisplayName("Normal 1 Mag Cnt")]
         public byte Normal_1_Mag_Cnt {
             get => GetData<byte>(0);
             set {
@@ -12,6 +15,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Normal_1_Mag_Cnt));
             }
         }
+        [DisplayName("Normal 1 Rec Amnt")]
         public byte Normal_1_Rec_Amnt {
             get => GetData<byte>(1);
             set {
@@ -19,6 +23,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Normal_1_Rec_Amnt));
             }
         }
+        [DisplayName("Normal 1 Rel Spd")]
         public byte Normal_1_Rel_Spd {
             get => GetData<byte>(2);
             set {
@@ -26,6 +31,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Normal_1_Rel_Spd));
             }
         }
+        [DisplayName("Normal 2 Mag Cnt")]
         public byte Normal_2_Mag_Cnt {
             get => GetData<byte>(3);
             set {
@@ -33,6 +39,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Normal_2_Mag_Cnt));
             }
         }
+        [DisplayName("Normal 2 Rec Amnt")]
         public byte Normal_2_Rec_Amnt {
             get => GetData<byte>(4);
             set {
@@ -40,6 +47,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Normal_2_Rec_Amnt));
             }
         }
+        [DisplayName("Normal 2 Rel Spd")]
         public byte Normal_2_Rel_Spd {
             get => GetData<byte>(5);
             set {
@@ -47,6 +55,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Normal_2_Rel_Spd));
             }
         }
+        [DisplayName("Normal 3 Mag Cnt")]
         public byte Normal_3_Mag_Cnt {
             get => GetData<byte>(6);
             set {
@@ -54,6 +63,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Normal_3_Mag_Cnt));
             }
         }
+        [DisplayName("Normal 3 Rec Amnt")]
         public byte Normal_3_Rec_Amnt {
             get => GetData<byte>(7);
             set {
@@ -61,6 +71,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Normal_3_Rec_Amnt));
             }
         }
+        [DisplayName("Normal 3 Rel Spd")]
         public byte Normal_3_Rel_Spd {
             get => GetData<byte>(8);
             set {
@@ -68,6 +79,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Normal_3_Rel_Spd));
             }
         }
+        [DisplayName("Pierce 1 Mag Cnt")]
         public byte Pierce_1_Mag_Cnt {
             get => GetData<byte>(9);
             set {
@@ -75,6 +87,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Pierce_1_Mag_Cnt));
             }
         }
+        [DisplayName("Pierce 1 Rec Amnt")]
         public byte Pierce_1_Rec_Amnt {
             get => GetData<byte>(10);
             set {
@@ -82,6 +95,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Pierce_1_Rec_Amnt));
             }
         }
+        [DisplayName("Pierce 1 Rel Spd")]
         public byte Pierce_1_Rel_Spd {
             get => GetData<byte>(11);
             set {
@@ -89,6 +103,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Pierce_1_Rel_Spd));
             }
         }
+        [DisplayName("Pierce 2 Mag Cnt")]
         public byte Pierce_2_Mag_Cnt {
             get => GetData<byte>(12);
             set {
@@ -96,6 +111,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Pierce_2_Mag_Cnt));
             }
         }
+        [DisplayName("Pierce 2 Rec Amnt")]
         public byte Pierce_2_Rec_Amnt {
             get => GetData<byte>(13);
             set {
@@ -103,6 +119,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Pierce_2_Rec_Amnt));
             }
         }
+        [DisplayName("Pierce 2 Rel Spd")]
         public byte Pierce_2_Rel_Spd {
             get => GetData<byte>(14);
             set {
@@ -110,6 +127,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Pierce_2_Rel_Spd));
             }
         }
+        [DisplayName("Pierce 3 Mag Cnt")]
         public byte Pierce_3_Mag_Cnt {
             get => GetData<byte>(15);
             set {
@@ -117,6 +135,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Pierce_3_Mag_Cnt));
             }
         }
+        [DisplayName("Pierce 3 Rec Amnt")]
         public byte Pierce_3_Rec_Amnt {
             get => GetData<byte>(16);
             set {
@@ -124,6 +143,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Pierce_3_Rec_Amnt));
             }
         }
+        [DisplayName("Pierce 3 Rel Spd")]
         public byte Pierce_3_Rel_Spd {
             get => GetData<byte>(17);
             set {
@@ -131,6 +151,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Pierce_3_Rel_Spd));
             }
         }
+        [DisplayName("Spread 1 Mag Cnt")]
         public byte Spread_1_Mag_Cnt {
             get => GetData<byte>(18);
             set {
@@ -138,6 +159,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Spread_1_Mag_Cnt));
             }
         }
+        [DisplayName("Spread 1 Rec Amnt")]
         public byte Spread_1_Rec_Amnt {
             get => GetData<byte>(19);
             set {
@@ -145,6 +167,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Spread_1_Rec_Amnt));
             }
         }
+        [DisplayName("Spread 1 Rel Spd")]
         public byte Spread_1_Rel_Spd {
             get => GetData<byte>(20);
             set {
@@ -152,6 +175,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Spread_1_Rel_Spd));
             }
         }
+        [DisplayName("Spread 2 Mag Cnt")]
         public byte Spread_2_Mag_Cnt {
             get => GetData<byte>(21);
             set {
@@ -159,6 +183,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Spread_2_Mag_Cnt));
             }
         }
+        [DisplayName("Spread 2 Rec Amnt")]
         public byte Spread_2_Rec_Amnt {
             get => GetData<byte>(22);
             set {
@@ -166,6 +191,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Spread_2_Rec_Amnt));
             }
         }
+        [DisplayName("Spread 2 Rel Spd")]
         public byte Spread_2_Rel_Spd {
             get => GetData<byte>(23);
             set {
@@ -173,6 +199,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Spread_2_Rel_Spd));
             }
         }
+        [DisplayName("Spread 3 Mag Cnt")]
         public byte Spread_3_Mag_Cnt {
             get => GetData<byte>(24);
             set {
@@ -180,6 +207,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Spread_3_Mag_Cnt));
             }
         }
+        [DisplayName("Spread 3 Rec Amnt")]
         public byte Spread_3_Rec_Amnt {
             get => GetData<byte>(25);
             set {
@@ -187,6 +215,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Spread_3_Rec_Amnt));
             }
         }
+        [DisplayName("Spread 3 Rel Spd")]
         public byte Spread_3_Rel_Spd {
             get => GetData<byte>(26);
             set {
@@ -194,6 +223,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Spread_3_Rel_Spd));
             }
         }
+        [DisplayName("Cluster 1 Mag Cnt")]
         public byte Cluster_1_Mag_Cnt {
             get => GetData<byte>(27);
             set {
@@ -201,6 +231,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Cluster_1_Mag_Cnt));
             }
         }
+        [DisplayName("Cluster 1 Rec Amnt")]
         public byte Cluster_1_Rec_Amnt {
             get => GetData<byte>(28);
             set {
@@ -208,6 +239,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Cluster_1_Rec_Amnt));
             }
         }
+        [DisplayName("Cluster 1 Rel Spd")]
         public byte Cluster_1_Rel_Spd {
             get => GetData<byte>(29);
             set {
@@ -215,6 +247,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Cluster_1_Rel_Spd));
             }
         }
+        [DisplayName("Cluster 2 Mag Cnt")]
         public byte Cluster_2_Mag_Cnt {
             get => GetData<byte>(30);
             set {
@@ -222,6 +255,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Cluster_2_Mag_Cnt));
             }
         }
+        [DisplayName("Cluster 2 Rec Amnt")]
         public byte Cluster_2_Rec_Amnt {
             get => GetData<byte>(31);
             set {
@@ -229,6 +263,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Cluster_2_Rec_Amnt));
             }
         }
+        [DisplayName("Cluster 2 Rel Spd")]
         public byte Cluster_2_Rel_Spd {
             get => GetData<byte>(32);
             set {
@@ -236,6 +271,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Cluster_2_Rel_Spd));
             }
         }
+        [DisplayName("Cluster 3 Mag Cnt")]
         public byte Cluster_3_Mag_Cnt {
             get => GetData<byte>(33);
             set {
@@ -243,6 +279,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Cluster_3_Mag_Cnt));
             }
         }
+        [DisplayName("Cluster 3 Rec Amnt")]
         public byte Cluster_3_Rec_Amnt {
             get => GetData<byte>(34);
             set {
@@ -250,6 +287,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Cluster_3_Rec_Amnt));
             }
         }
+        [DisplayName("Cluster 3 Rel Spd")]
         public byte Cluster_3_Rel_Spd {
             get => GetData<byte>(35);
             set {
@@ -257,6 +295,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Cluster_3_Rel_Spd));
             }
         }
+        [DisplayName("Wyvern Mag Cnt")]
         public byte Wyvern_Mag_Cnt {
             get => GetData<byte>(36);
             set {
@@ -264,6 +303,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Wyvern_Mag_Cnt));
             }
         }
+        [DisplayName("Wyvern Rec Amnt")]
         public byte Wyvern_Rec_Amnt {
             get => GetData<byte>(37);
             set {
@@ -271,6 +311,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Wyvern_Rec_Amnt));
             }
         }
+        [DisplayName("Wyvern Rel Spd")]
         public byte Wyvern_Rel_Spd {
             get => GetData<byte>(38);
             set {
@@ -278,6 +319,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Wyvern_Rel_Spd));
             }
         }
+        [DisplayName("Sticky 1 Mag Cnt")]
         public byte Sticky_1_Mag_Cnt {
             get => GetData<byte>(39);
             set {
@@ -285,6 +327,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sticky_1_Mag_Cnt));
             }
         }
+        [DisplayName("Sticky 1 Rec Amnt")]
         public byte Sticky_1_Rec_Amnt {
             get => GetData<byte>(40);
             set {
@@ -292,6 +335,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sticky_1_Rec_Amnt));
             }
         }
+        [DisplayName("Sticky 1 Rel Spd")]
         public byte Sticky_1_Rel_Spd {
             get => GetData<byte>(41);
             set {
@@ -299,6 +343,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sticky_1_Rel_Spd));
             }
         }
+        [DisplayName("Sticky 2 Mag Cnt")]
         public byte Sticky_2_Mag_Cnt {
             get => GetData<byte>(42);
             set {
@@ -306,6 +351,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sticky_2_Mag_Cnt));
             }
         }
+        [DisplayName("Sticky 2 Rec Amnt")]
         public byte Sticky_2_Rec_Amnt {
             get => GetData<byte>(43);
             set {
@@ -313,6 +359,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sticky_2_Rec_Amnt));
             }
         }
+        [DisplayName("Sticky 2 Rel Spd")]
         public byte Sticky_2_Rel_Spd {
             get => GetData<byte>(44);
             set {
@@ -320,6 +367,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sticky_2_Rel_Spd));
             }
         }
+        [DisplayName("Sticky 3 Mag Cnt")]
         public byte Sticky_3_Mag_Cnt {
             get => GetData<byte>(45);
             set {
@@ -327,6 +375,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sticky_3_Mag_Cnt));
             }
         }
+        [DisplayName("Sticky 3 Rec Amnt")]
         public byte Sticky_3_Rec_Amnt {
             get => GetData<byte>(46);
             set {
@@ -334,6 +383,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sticky_3_Rec_Amnt));
             }
         }
+        [DisplayName("Sticky 3 Rel Spd")]
         public byte Sticky_3_Rel_Spd {
             get => GetData<byte>(47);
             set {
@@ -341,6 +391,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sticky_3_Rel_Spd));
             }
         }
+        [DisplayName("Slicing Mag Cnt")]
         public byte Slicing_Mag_Cnt {
             get => GetData<byte>(48);
             set {
@@ -348,6 +399,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Slicing_Mag_Cnt));
             }
         }
+        [DisplayName("Slicing Rec Amnt")]
         public byte Slicing_Rec_Amnt {
             get => GetData<byte>(49);
             set {
@@ -355,6 +407,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Slicing_Rec_Amnt));
             }
         }
+        [DisplayName("Slicing Rel Spd")]
         public byte Slicing_Rel_Spd {
             get => GetData<byte>(50);
             set {
@@ -362,6 +415,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Slicing_Rel_Spd));
             }
         }
+        [DisplayName("Flaming Mag Cnt")]
         public byte Flaming_Mag_Cnt {
             get => GetData<byte>(51);
             set {
@@ -369,6 +423,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Flaming_Mag_Cnt));
             }
         }
+        [DisplayName("Flaming Rec Amnt")]
         public byte Flaming_Rec_Amnt {
             get => GetData<byte>(52);
             set {
@@ -376,6 +431,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Flaming_Rec_Amnt));
             }
         }
+        [DisplayName("Flaming Rel Spd")]
         public byte Flaming_Rel_Spd {
             get => GetData<byte>(53);
             set {
@@ -383,6 +439,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Flaming_Rel_Spd));
             }
         }
+        [DisplayName("Water Mag Cnt")]
         public byte Water_Mag_Cnt {
             get => GetData<byte>(54);
             set {
@@ -390,6 +447,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Water_Mag_Cnt));
             }
         }
+        [DisplayName("Water Rec Amnt")]
         public byte Water_Rec_Amnt {
             get => GetData<byte>(55);
             set {
@@ -397,6 +455,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Water_Rec_Amnt));
             }
         }
+        [DisplayName("Water Rel Spd")]
         public byte Water_Rel_Spd {
             get => GetData<byte>(56);
             set {
@@ -404,6 +463,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Water_Rel_Spd));
             }
         }
+        [DisplayName("Freeze Mag Cnt")]
         public byte Freeze_Mag_Cnt {
             get => GetData<byte>(57);
             set {
@@ -411,6 +471,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Freeze_Mag_Cnt));
             }
         }
+        [DisplayName("Freeze Rec Amnt")]
         public byte Freeze_Rec_Amnt {
             get => GetData<byte>(58);
             set {
@@ -418,6 +479,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Freeze_Rec_Amnt));
             }
         }
+        [DisplayName("Freeze Rel Spd")]
         public byte Freeze_Rel_Spd {
             get => GetData<byte>(59);
             set {
@@ -425,6 +487,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Freeze_Rel_Spd));
             }
         }
+        [DisplayName("Thunder Mag Cnt")]
         public byte Thunder_Mag_Cnt {
             get => GetData<byte>(60);
             set {
@@ -432,6 +495,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Thunder_Mag_Cnt));
             }
         }
+        [DisplayName("Thunder Rec Amnt")]
         public byte Thunder_Rec_Amnt {
             get => GetData<byte>(61);
             set {
@@ -439,6 +503,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Thunder_Rec_Amnt));
             }
         }
+        [DisplayName("Thunder Rel Spd")]
         public byte Thunder_Rel_Spd {
             get => GetData<byte>(62);
             set {
@@ -446,6 +511,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Thunder_Rel_Spd));
             }
         }
+        [DisplayName("Dragon Mag Cnt")]
         public byte Dragon_Mag_Cnt {
             get => GetData<byte>(63);
             set {
@@ -453,6 +519,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Dragon_Mag_Cnt));
             }
         }
+        [DisplayName("Dragon Rec Amnt")]
         public byte Dragon_Rec_Amnt {
             get => GetData<byte>(64);
             set {
@@ -460,6 +527,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Dragon_Rec_Amnt));
             }
         }
+        [DisplayName("Dragon Rel Spd")]
         public byte Dragon_Rel_Spd {
             get => GetData<byte>(65);
             set {
@@ -467,6 +535,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Dragon_Rel_Spd));
             }
         }
+        [DisplayName("Poison 1 Mag Cnt")]
         public byte Poison_1_Mag_Cnt {
             get => GetData<byte>(66);
             set {
@@ -474,6 +543,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Poison_1_Mag_Cnt));
             }
         }
+        [DisplayName("Poison 1 Rec Amnt")]
         public byte Poison_1_Rec_Amnt {
             get => GetData<byte>(67);
             set {
@@ -481,6 +551,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Poison_1_Rec_Amnt));
             }
         }
+        [DisplayName("Poison 1 Rel Spd")]
         public byte Poison_1_Rel_Spd {
             get => GetData<byte>(68);
             set {
@@ -488,6 +559,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Poison_1_Rel_Spd));
             }
         }
+        [DisplayName("Poison 2 Mag Cnt")]
         public byte Poison_2_Mag_Cnt {
             get => GetData<byte>(69);
             set {
@@ -495,6 +567,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Poison_2_Mag_Cnt));
             }
         }
+        [DisplayName("Poison 2 Rec Amnt")]
         public byte Poison_2_Rec_Amnt {
             get => GetData<byte>(70);
             set {
@@ -502,6 +575,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Poison_2_Rec_Amnt));
             }
         }
+        [DisplayName("Poison 2 Rel Spd")]
         public byte Poison_2_Rel_Spd {
             get => GetData<byte>(71);
             set {
@@ -509,6 +583,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Poison_2_Rel_Spd));
             }
         }
+        [DisplayName("Paralysis 1 Mag Cnt")]
         public byte Paralysis_1_Mag_Cnt {
             get => GetData<byte>(72);
             set {
@@ -516,6 +591,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Paralysis_1_Mag_Cnt));
             }
         }
+        [DisplayName("Paralysis 1 Rec Amnt")]
         public byte Paralysis_1_Rec_Amnt {
             get => GetData<byte>(73);
             set {
@@ -523,6 +599,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Paralysis_1_Rec_Amnt));
             }
         }
+        [DisplayName("Paralysis 1 Rel Spd")]
         public byte Paralysis_1_Rel_Spd {
             get => GetData<byte>(74);
             set {
@@ -530,6 +607,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Paralysis_1_Rel_Spd));
             }
         }
+        [DisplayName("Paralysis 2 Mag Cnt")]
         public byte Paralysis_2_Mag_Cnt {
             get => GetData<byte>(75);
             set {
@@ -537,6 +615,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Paralysis_2_Mag_Cnt));
             }
         }
+        [DisplayName("Paralysis 2 Rec Amnt")]
         public byte Paralysis_2_Rec_Amnt {
             get => GetData<byte>(76);
             set {
@@ -544,6 +623,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Paralysis_2_Rec_Amnt));
             }
         }
+        [DisplayName("Paralysis 2 Rel Spd")]
         public byte Paralysis_2_Rel_Spd {
             get => GetData<byte>(77);
             set {
@@ -551,6 +631,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Paralysis_2_Rel_Spd));
             }
         }
+        [DisplayName("Sleep 1 Mag Cnt")]
         public byte Sleep_1_Mag_Cnt {
             get => GetData<byte>(78);
             set {
@@ -558,6 +639,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sleep_1_Mag_Cnt));
             }
         }
+        [DisplayName("Sleep 1 Rec Amnt")]
         public byte Sleep_1_Rec_Amnt {
             get => GetData<byte>(79);
             set {
@@ -565,6 +647,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sleep_1_Rec_Amnt));
             }
         }
+        [DisplayName("Sleep 1 Rel Spd")]
         public byte Sleep_1_Rel_Spd {
             get => GetData<byte>(80);
             set {
@@ -572,6 +655,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sleep_1_Rel_Spd));
             }
         }
+        [DisplayName("Sleep 2 Mag Cnt")]
         public byte Sleep_2_Mag_Cnt {
             get => GetData<byte>(81);
             set {
@@ -579,6 +663,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sleep_2_Mag_Cnt));
             }
         }
+        [DisplayName("Sleep 2 Rec Amnt")]
         public byte Sleep_2_Rec_Amnt {
             get => GetData<byte>(82);
             set {
@@ -586,6 +671,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sleep_2_Rec_Amnt));
             }
         }
+        [DisplayName("Sleep 2 Rel Spd")]
         public byte Sleep_2_Rel_Spd {
             get => GetData<byte>(83);
             set {
@@ -593,6 +679,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Sleep_2_Rel_Spd));
             }
         }
+        [DisplayName("Exhaust 1 Mag Cnt")]
         public byte Exhaust_1_Mag_Cnt {
             get => GetData<byte>(84);
             set {
@@ -600,6 +687,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Exhaust_1_Mag_Cnt));
             }
         }
+        [DisplayName("Exhaust 1 Rec Amnt")]
         public byte Exhaust_1_Rec_Amnt {
             get => GetData<byte>(85);
             set {
@@ -607,6 +695,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Exhaust_1_Rec_Amnt));
             }
         }
+        [DisplayName("Exhaust 1 Rel Spd")]
         public byte Exhaust_1_Rel_Spd {
             get => GetData<byte>(86);
             set {
@@ -614,6 +703,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Exhaust_1_Rel_Spd));
             }
         }
+        [DisplayName("Exhaust 2 Mag Cnt")]
         public byte Exhaust_2_Mag_Cnt {
             get => GetData<byte>(87);
             set {
@@ -621,6 +711,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Exhaust_2_Mag_Cnt));
             }
         }
+        [DisplayName("Exhaust 2 Rec Amnt")]
         public byte Exhaust_2_Rec_Amnt {
             get => GetData<byte>(88);
             set {
@@ -628,6 +719,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Exhaust_2_Rec_Amnt));
             }
         }
+        [DisplayName("Exhaust 2 Rel Spd")]
         public byte Exhaust_2_Rel_Spd {
             get => GetData<byte>(89);
             set {
@@ -635,6 +727,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Exhaust_2_Rel_Spd));
             }
         }
+        [DisplayName("Recover 1 Mag Cnt")]
         public byte Recover_1_Mag_Cnt {
             get => GetData<byte>(90);
             set {
@@ -642,6 +735,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Recover_1_Mag_Cnt));
             }
         }
+        [DisplayName("Recover 1 Rec Amnt")]
         public byte Recover_1_Rec_Amnt {
             get => GetData<byte>(91);
             set {
@@ -649,6 +743,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Recover_1_Rec_Amnt));
             }
         }
+        [DisplayName("Recover 1 Rel Spd")]
         public byte Recover_1_Rel_Spd {
             get => GetData<byte>(92);
             set {
@@ -656,6 +751,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Recover_1_Rel_Spd));
             }
         }
+        [DisplayName("Recover 2 Mag Cnt")]
         public byte Recover_2_Mag_Cnt {
             get => GetData<byte>(93);
             set {
@@ -663,6 +759,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Recover_2_Mag_Cnt));
             }
         }
+        [DisplayName("Recover 2 Rec Amnt")]
         public byte Recover_2_Rec_Amnt {
             get => GetData<byte>(94);
             set {
@@ -670,6 +767,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Recover_2_Rec_Amnt));
             }
         }
+        [DisplayName("Recover 2 Rel Spd")]
         public byte Recover_2_Rel_Spd {
             get => GetData<byte>(95);
             set {
@@ -677,6 +775,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Recover_2_Rel_Spd));
             }
         }
+        [DisplayName("Demon Mag Cnt")]
         public byte Demon_Mag_Cnt {
             get => GetData<byte>(96);
             set {
@@ -684,6 +783,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Demon_Mag_Cnt));
             }
         }
+        [DisplayName("Demon Rec Amnt")]
         public byte Demon_Rec_Amnt {
             get => GetData<byte>(97);
             set {
@@ -691,6 +791,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Demon_Rec_Amnt));
             }
         }
+        [DisplayName("Demon Rel Spd")]
         public byte Demon_Rel_Spd {
             get => GetData<byte>(98);
             set {
@@ -698,6 +799,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Demon_Rel_Spd));
             }
         }
+        [DisplayName("Armor Mag Cnt")]
         public byte Armor_Mag_Cnt {
             get => GetData<byte>(99);
             set {
@@ -705,6 +807,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Armor_Mag_Cnt));
             }
         }
+        [DisplayName("Armor Rec Amnt")]
         public byte Armor_Rec_Amnt {
             get => GetData<byte>(100);
             set {
@@ -712,6 +815,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Armor_Rec_Amnt));
             }
         }
+        [DisplayName("Armor Rel Spd")]
         public byte Armor_Rel_Spd {
             get => GetData<byte>(101);
             set {
@@ -719,6 +823,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Armor_Rel_Spd));
             }
         }
+        [DisplayName("Tranq Mag Cnt")]
         public byte Tranq_Mag_Cnt {
             get => GetData<byte>(108);
             set {
@@ -726,6 +831,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Tranq_Mag_Cnt));
             }
         }
+        [DisplayName("Tranq Rec Amnt")]
         public byte Tranq_Rec_Amnt {
             get => GetData<byte>(109);
             set {
@@ -733,6 +839,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Tranq_Rec_Amnt));
             }
         }
+        [DisplayName("Tranq Rel Spd")]
         public byte Tranq_Rel_Spd {
             get => GetData<byte>(110);
             set {
