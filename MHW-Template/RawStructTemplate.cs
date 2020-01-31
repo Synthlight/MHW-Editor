@@ -11,6 +11,7 @@ namespace MHW_Template
 {
     using Microsoft.CSharp;
     using System.Collections.Generic;
+    using System.Text.RegularExpressions;
     using System;
     
     /// <summary>
@@ -27,6 +28,7 @@ namespace MHW_Template
         /// </summary>
         public virtual string TransformText()
         {
+            this.Write("\n");
             this.Write("\n");
             this.Write("using MHW_Template;\r\n\r\nnamespace ");
             
@@ -51,7 +53,7 @@ namespace MHW_Template
     newList.Sort((entry1, entry2) => entry1.offset.CompareTo(entry2.offset));
 
     foreach (var entry in newList) {
-        var name = entry.displayName.Replace(" ", "_");
+        var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
         var typeString = compiler.GetTypeOutput(entry.type);
 
             
