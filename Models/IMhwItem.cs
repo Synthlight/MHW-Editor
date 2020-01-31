@@ -6,5 +6,6 @@ namespace MHW_Editor.Models {
         ulong Offset { get; }
         string Name { get; }
         bool Changed { get; set; }
+        string Raw_Data { get; }
     }
 }

@@ -122,7 +122,7 @@ namespace MHW_Editor {
                 case nameof(IMhwItem.Changed):
                     e.Cancel = true;
                     break;
-                case nameof(MhwItem.Raw_Data):
+                case nameof(IMhwItem.Raw_Data):
                     e.Cancel = !SHOW_RAW_BYTES;
                     break;
                 case nameof(Ranged.Muzzle_Type):
@@ -228,28 +228,29 @@ namespace MHW_Editor {
             }
 
             if (targetFileType.Is(typeof(Item))) {
-                var sortOrderIndex = columnMap[nameof(Item.Sort_Order)].DisplayIndex;
-                columnMap[nameof(Item.Flags)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Has_Infinity_Symbol)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Is_Supply_Item)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Unknown)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Is_Consumable)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Is_Fey_or_Streamstone)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Is_Infinite_Use)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Has_Star)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Has_New_Palico_Gadget_Symbol)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Is_Level_1)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Is_Level_2)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Is_Level_3)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Is_Shiny)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Is_Huge_Carriable)].DisplayIndex = ++sortOrderIndex;
-                columnMap[nameof(Item.Not_Storable_as_an_Item)].DisplayIndex = ++sortOrderIndex;
+                var buyPriceIndex = columnMap[nameof(Item.Buy_Price)].DisplayIndex;
+                columnMap[nameof(Item.Flags)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Has_Infinity_Symbol)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Is_Supply_Item)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Unknown)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Is_Consumable)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Is_Fey_or_Streamstone)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Is_Infinite_Use)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Has_Star)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Has_New_Palico_Gadget_Symbol)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Is_Level_1)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Is_Level_2)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Is_Level_3)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Is_Shiny)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Is_Huge_Carriable)].DisplayIndex = ++buyPriceIndex;
+                columnMap[nameof(Item.Not_Storable_as_an_Item)].DisplayIndex = ++buyPriceIndex;
             }
 
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
 #pragma warning disable 162
             if (SHOW_RAW_BYTES) {
-                columnMap[nameof(MhwItem.Raw_Data)].DisplayIndex = dg_items.Columns.Count - 1;
+                columnMap[nameof(IMhwItem.Offset)].DisplayIndex = dg_items.Columns.Count - 1;
+                columnMap[nameof(IMhwItem.Raw_Data)].DisplayIndex = dg_items.Columns.Count - 1;
             }
 #pragma warning restore 162
         }
@@ -334,8 +335,8 @@ namespace MHW_Editor {
                             armor.Skill_3_Level = 10;
                         }
 
-                        // 811: Shara Ishvalda Mail α+
-                        if (armor.Id == 811) {
+                        // 797: Kushala Cista α+
+                        if (armor.Id == 797) {
                             armor.Skill_1 = 155;
                             armor.Skill_1_Level = 10;
                             armor.Skill_2 = 207;
@@ -536,12 +537,12 @@ namespace MHW_Editor {
             if (!targetFileType.Is(typeof(BottleTable))) return;
 
             foreach (BottleTable item in items) {
-                item.Close_Range = CoatingType.On;
-                item.Power = CoatingType.On;
-                item.Paralysis = CoatingType.On;
-                item.Poison = CoatingType.On;
-                item.Sleep = CoatingType.On;
-                item.Blast = CoatingType.On;
+                item.Close_Range = CoatingType.Plus;
+                item.Power = CoatingType.Plus;
+                item.Paralysis = CoatingType.Plus;
+                item.Poison = CoatingType.Plus;
+                item.Sleep = CoatingType.Plus;
+                item.Blast = CoatingType.Plus;
 
                 item.OnPropertyChanged();
             }

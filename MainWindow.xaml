@@ -50,11 +50,12 @@
                    VerticalAlignment="Stretch">
             <StackPanel HorizontalAlignment="Center"
                         Orientation="Horizontal">
-                <ToggleButton Name="tb_single_click_edit"
-                              Margin="0,0,0,0"
-                              HorizontalAlignment="Right"
-                              Content="Single Click to Edit Mode"
-                              IsChecked="{Binding SingleClickToEditMode}"/>
+                <CheckBox Name="cb_single_click_edit"
+                          Margin="8,0,0,0"
+                          HorizontalAlignment="Right"
+                          VerticalAlignment="Center"
+                          Content="Single Click to Edit Mode"
+                          IsChecked="{Binding SingleClickToEditMode}"/>
             </StackPanel>
         </DockPanel>
         <DockPanel Grid.Row="0"
@@ -64,7 +65,7 @@
             <StackPanel HorizontalAlignment="Right"
                         Orientation="Horizontal">
                 <Button Name="btn_customize"
-                        Margin="8,0,0,0"
+                        Margin="0,0,0,0"
                         HorizontalAlignment="Right"
                         Content="GMod"
                         Visibility="Collapsed"/>
