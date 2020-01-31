@@ -2,6 +2,6 @@
     public enum CoatingType {
         Off = 0,
         On = 1,
-        Disabled
+        Plus
     }
 }
