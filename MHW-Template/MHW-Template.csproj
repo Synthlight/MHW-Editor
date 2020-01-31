@@ -50,6 +50,11 @@
     <Compile Include="Items\ItemFlags.cs" />
     <Compile Include="Items\ItemSubType.cs" />
     <Compile Include="Items\ItemType.cs" />
+    <Compile Include="ValueClassTemplate.cs">
+      <DependentUpon>ValueClassTemplate.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="RawStructTemplate.cs">
       <DependentUpon>RawStructTemplate.tt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -62,6 +67,7 @@
     </Compile>
     <Compile Include="MhwStructData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\DataValuePair.cs" />
     <Compile Include="Weapons\CoatingType.cs" />
     <Compile Include="Weapons\MagazineType.cs" />
     <Compile Include="Weapons\Elderseal.cs" />
@@ -76,6 +82,10 @@
     <Compile Include="Weapons\Element.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ValueClassTemplate.tt">
+      <Generator>TextTemplatingFilePreProcessor</Generator>
+      <LastGenOutput>ValueClassTemplate.cs</LastGenOutput>
+    </Content>
     <Content Include="RawStructTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>RawStructTemplate.cs</LastGenOutput>

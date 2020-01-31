@@ -206,9 +206,12 @@ namespace MHW_Editor {
 
         private void Dg_items_GotFocus(object sender, RoutedEventArgs e) {
             // Lookup for the source to be DataGridCell
-            if (SingleClickToEditMode && e.OriginalSource.GetType() == typeof(DataGridCell)) {
+            if (SingleClickToEditMode && e.OriginalSource is DataGridCell cell) {
                 // Starts the Edit on the row;
                 dg_items.BeginEdit(e);
+                if (cell.Content is ComboBox cbx) {
+                    cbx.IsDropDownOpen = true;
+                }
             }
         }
 
@@ -275,62 +278,62 @@ namespace MHW_Editor {
                         Armor armor = item;
 
                         // 386: Guildwork Head α+
-                        if (armor.Id == 368) {
-                            armor.Skill_1 = 16; // Effluvial Expert
+                        if (armor.Id == 386) {
+                            armor.Skill_1 = SkillDataValueClass.Effluvial_Expert;
                             armor.Skill_1_Level = 10;
-                            armor.Skill_2 = 114; // Scholar
+                            armor.Skill_2 = SkillDataValueClass.Scholar;
                             armor.Skill_2_Level = 10;
-                            armor.Skill_3 = 109; // Aquatic/Polar Mobility
+                            armor.Skill_3 = SkillDataValueClass.Aquatic_Polar_Mobility;
                             armor.Skill_3_Level = 10;
                         }
 
                         // 797: Kushala Cista α+
                         if (armor.Id == 797) {
-                            armor.Skill_1 = 155;
+                            armor.Skill_1 = SkillDataValueClass.Bow_Charge_Plus;
                             armor.Skill_1_Level = 10;
-                            armor.Skill_2 = 207;
+                            armor.Skill_2 = SkillDataValueClass.Coldproof;
                             armor.Skill_2_Level = 10;
-                            armor.Skill_3 = 20;
+                            armor.Skill_3 = SkillDataValueClass.Defense_Boost;
                             armor.Skill_3_Level = 10;
                         }
 
                         // 1009: Kirin Longarms α+
                         if (armor.Id == 1221) {
-                            armor.Skill_1 = 116;
+                            armor.Skill_1 = SkillDataValueClass.Effluvia_Resistance;
                             armor.Skill_1_Level = 10;
-                            armor.Skill_2 = 52;
+                            armor.Skill_2 = SkillDataValueClass.Focus;
                             armor.Skill_2_Level = 10;
-                            armor.Skill_3 = 84;
+                            armor.Skill_3 = SkillDataValueClass.Free_Meal;
                             armor.Skill_3_Level = 10;
                         }
 
                         // 1632: Fellshroud Coil α+
                         if (armor.Id == 1632) {
-                            armor.Skill_1 = 80;
+                            armor.Skill_1 = SkillDataValueClass.Guard;
                             armor.Skill_1_Level = 10;
-                            armor.Skill_2 = 157;
+                            armor.Skill_2 = SkillDataValueClass.Guard_Up;
                             armor.Skill_2_Level = 10;
-                            armor.Skill_3 = 17;
+                            armor.Skill_3 = SkillDataValueClass.Heat_Guard;
                             armor.Skill_3_Level = 10;
                         }
 
                         // 2050: Rimeguard Greaves α+
                         if (armor.Id == 2050) {
-                            armor.Skill_1 = 77;
+                            armor.Skill_1 = SkillDataValueClass.Hunger_Resistance;
                             armor.Skill_1_Level = 10;
-                            armor.Skill_2 = 101;
+                            armor.Skill_2 = SkillDataValueClass.Maximum_Might;
                             armor.Skill_2_Level = 10;
-                            armor.Skill_3 = 156; // Mind's Eye/Ballistics
+                            armor.Skill_3 = SkillDataValueClass.Mind_s_Eye_Ballistics;
                             armor.Skill_3_Level = 10;
                         }
 
                         // 2473: Critical Charm II
                         if (armor.Id == 2473) {
-                            armor.Skill_1 = 159;
+                            armor.Skill_1 = SkillDataValueClass.Non_elemental_Boost;
                             armor.Skill_1_Level = 10;
-                            armor.Skill_2 = 53;
+                            armor.Skill_2 = SkillDataValueClass.Power_Prolonger;
                             armor.Skill_2_Level = 10;
-                            armor.Skill_3 = 81;
+                            armor.Skill_3 = SkillDataValueClass.Quick_Sheath;
                             armor.Skill_3_Level = 10;
                         }
 

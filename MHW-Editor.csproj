@@ -70,6 +70,7 @@
       <DependentUpon>Assets.resx</DependentUpon>
     </Compile>
     <Compile Include="Assets\DataHelper.cs" />
+    <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
     <Compile Include="Models\ColumnHolder.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\ASkill.cs" />

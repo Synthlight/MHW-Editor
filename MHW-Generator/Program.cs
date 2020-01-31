@@ -1,19 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
 using MHW_Template;
 using MHW_Template.Armors;
 using MHW_Template.Items;
+using MHW_Template.Models;
 using MHW_Template.Weapons;
 using MHW_Template.Weapons.Model;
+using Newtonsoft.Json;
 
 namespace MHW_Generator {
     public static class Program {
         private const string ROOT_OUTPUT = @"..\..\..\Generated";
         private const string ROOT_STRUCT_OUTPUT = @"..\..\..\Structs";
+        private const string ROOT_ASSETS = @"..\..\..\Assets";
 
         [STAThread]
         public static void Main() {
+            CreateSkillDataValueClass();
+            // TODO: Generate armor name list. Needs to use armor data to avoid m/f duplicates and to get the GMD key.
+            //CreateArmorDataValueClass();
+
             GenItem();
             GenBottleTable();
             GenArmUp();
@@ -431,37 +440,90 @@ namespace MHW_Generator {
             });
         }
 
+        private static void CreateSkillDataValueClass() {
+            var json = File.ReadAllText($@"{ROOT_ASSETS}\SkillData\eng_skillData.json");
+            var rawSkillData = JsonConvert.DeserializeObject<Dictionary<uint, string>>(json);
+
+            var values = new List<DataValuePair>();
+
+            const uint step = 3;
+            for (uint index = 0; index < rawSkillData.Count; index += step) {
+                var value = (ushort) (index / step);
+                var name = Regex.Replace(rawSkillData[index], @"[^\w\d]+", "_");
+                var desc = rawSkillData[index + 2].Replace("\r\n", " ");
+
+                if (name == "Unavailable") continue;
+                if (desc == "Unavailable") desc = null;
+
+                values.Add(new DataValuePair(value, name, desc));
+            }
+
+            const string @namespace = "MHW_Editor.Skills";
+            const string className = "SkillDataValueClass";
+
+            WriteResult($"{ROOT_OUTPUT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ValueClassTemplate {
+                Session = new Dictionary<string, object> {
+                    {"_namespace", @namespace},
+                    {"className", className},
+                    {"valueDataPairs", values}
+                }
+            });
+        }
+
+        private static void CreateArmorDataValueClass() {
+            var json = File.ReadAllText($@"{ROOT_ASSETS}\ArmorData\eng_armorData.json");
+            var armorData = JsonConvert.DeserializeObject<Dictionary<ushort, string>>(json);
+
+            var values = new List<DataValuePair>();
+            foreach (var pair in armorData) {
+                var name = Regex.Replace(pair.Value, @"[^\w\d]+", "_")
+                                .Replace('α', 'a')
+                                .Replace('β', 'b')
+                                .Replace('γ', 'y');
+
+                if (name == "Unavailable" || name == "HARDUMMY" || name.Length > 25) continue;
+                if (values.Contains(new DataValuePair(0, name, null))) continue;
+
+                values.Add(new DataValuePair(pair.Key, name, null));
+            }
+
+            const string @namespace = "MHW_Editor.Armors";
+            const string className = "ArmorDataValueClass";
+
+            WriteResult($"{ROOT_OUTPUT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ValueClassTemplate {
+                Session = new Dictionary<string, object> {
+                    {"_namespace", @namespace},
+                    {"className", className},
+                    {"valueDataPairs", values}
+                }
+            });
+        }
+
         public static void GenerateItemProps(string @namespace, string className, MhwStructData structData) {
-            var itemTemplate = new ItemTemplate {
+            WriteResult($"{ROOT_OUTPUT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ItemTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
                     {"structData", structData}
                 }
-            };
-            itemTemplate.Initialize();
-            var dir = $"{ROOT_OUTPUT}\\{@namespace.Replace(".", "\\")}";
-            if (!Directory.Exists(dir)) {
-                Directory.CreateDirectory(dir);
-            }
+            });
 
-            File.WriteAllText($"{dir}\\{className}.cs", itemTemplate.TransformText());
-
-
-            var structTemplate = new RawStructTemplate {
+            WriteResult($"{ROOT_STRUCT_OUTPUT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new RawStructTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
                     {"structData", structData}
                 }
-            };
-            structTemplate.Initialize();
-            dir = $"{ROOT_STRUCT_OUTPUT}\\{@namespace.Replace(".", "\\")}";
+            });
+        }
+
+        private static void WriteResult(string dir, string @namespace, string className, dynamic template) {
+            template.Initialize();
             if (!Directory.Exists(dir)) {
                 Directory.CreateDirectory(dir);
             }
 
-            File.WriteAllText($"{dir}\\{className}.cs", structTemplate.TransformText());
+            File.WriteAllText($"{dir}\\{className}.cs", (string) template.TransformText());
         }
     }
 }
