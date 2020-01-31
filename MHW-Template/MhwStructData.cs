@@ -10,7 +10,7 @@ namespace MHW_Template {
         public long entryCountOffset = -1;
 
         public class Entry {
-            public readonly string name;
+            public readonly string displayName;
             public readonly ulong offset;
             public readonly CodeTypeReference type;
             public readonly CodeTypeReference enumReturn;
@@ -18,8 +18,8 @@ namespace MHW_Template {
             public readonly string valueString;
             public readonly string accessLevel;
 
-            public Entry(string name, ulong offset, Type type, bool readOnly = false, Type enumReturn = null, string valueString = "value", string accessLevel = "public") {
-                this.name = name;
+            public Entry(string displayName, ulong offset, Type type, bool readOnly = false, Type enumReturn = null, string valueString = "value", string accessLevel = "public") {
+                this.displayName = displayName;
                 this.offset = offset;
                 this.type = new CodeTypeReference(type);
                 this.readOnly = readOnly;

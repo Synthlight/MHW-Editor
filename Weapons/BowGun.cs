@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using MHW_Editor.Models;
 using MHW_Template.Weapons;
 
 namespace MHW_Editor.Weapons {
@@ -6,7 +7,8 @@ namespace MHW_Editor.Weapons {
         public BowGun(byte[] bytes, ulong offset, string weaponFilename) : base(bytes, offset, weaponFilename) {
         }
 
-        [DisplayName("Special Ammo Type")]
+        [SortOrder(Special_Ammo_Type_sortIndex)]
+        [DisplayName(Special_Ammo_Type_displayName)]
         public new SpecialAmmo Special_Ammo_Type {
             get => (SpecialAmmo) base.Special_Ammo_Type;
             set => base.Special_Ammo_Type = (byte) value;

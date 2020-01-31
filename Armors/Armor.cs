@@ -11,6 +11,7 @@ namespace MHW_Editor.Armors {
 
         public override string Name => DataHelper.armorData[MainWindow.locale].TryGet(GMD_Name_Index, "Unknown");
 
+        [SortOrder(Set_Group_sortIndex + 1)]
         [DisplayName("Is Permanent")]
         public bool Is_Permanent {
             get => Convert.ToBoolean(Is_Permanent_Raw);

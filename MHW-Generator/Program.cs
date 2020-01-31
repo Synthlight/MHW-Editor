@@ -378,17 +378,17 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Unknown (uint16) 1", 0, typeof(short)),
-                    new MhwStructData.Entry("Unknown (uint16) 2", 2, typeof(short)),
-                    new MhwStructData.Entry("Unknown (uint16) 3", 4, typeof(short)),
-                    new MhwStructData.Entry("Unknown (uint16) 4", 6, typeof(short)),
-                    new MhwStructData.Entry("Unknown (uint16) 5", 8, typeof(short)),
-                    new MhwStructData.Entry("Unknown (uint16) 6", 10, typeof(short)),
-                    new MhwStructData.Entry("Unknown (uint16) 7", 12, typeof(short)),
-                    new MhwStructData.Entry("Unknown (uint16) 8", 14, typeof(short)),
-                    new MhwStructData.Entry("Unknown (uint16) 9", 16, typeof(short)),
-                    new MhwStructData.Entry("Unknown (uint16) 10", 18, typeof(short)),
-                    new MhwStructData.Entry("Unknown (uint16) 11", 20, typeof(short))
+                    new MhwStructData.Entry("Unknown (int16) 1", 0, typeof(short)),
+                    new MhwStructData.Entry("Unknown (int16) 2", 2, typeof(short)),
+                    new MhwStructData.Entry("Unknown (int16) 3", 4, typeof(short)),
+                    new MhwStructData.Entry("Unknown (int16) 4", 6, typeof(short)),
+                    new MhwStructData.Entry("Unknown (int16) 5", 8, typeof(short)),
+                    new MhwStructData.Entry("Unknown (int16) 6", 10, typeof(short)),
+                    new MhwStructData.Entry("Unknown (int16) 7", 12, typeof(short)),
+                    new MhwStructData.Entry("Unknown (int16) 8", 14, typeof(short)),
+                    new MhwStructData.Entry("Unknown (int16) 9", 16, typeof(short)),
+                    new MhwStructData.Entry("Unknown (int16) 10", 18, typeof(short)),
+                    new MhwStructData.Entry("Unknown (int16) 11", 20, typeof(short))
                 }
             });
         }
@@ -420,13 +420,13 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Type", 5, typeof(uint), typeof(ItemType)),
                     new MhwStructData.Entry("Rarity", 9, typeof(byte)),
                     new MhwStructData.Entry("Carry Limit", 10, typeof(byte)),
-                    new MhwStructData.Entry("Unknown (uint16)", 11, typeof(byte)),
+                    new MhwStructData.Entry("Unknown (uint8)", 11, typeof(byte)),
                     new MhwStructData.Entry("Sort Order", 12, typeof(ushort)),
-                    new MhwStructData.Entry("Flags Raw", 14, typeof(uint), accessLevel: "private"),
                     new MhwStructData.Entry("Icon Id", 18, typeof(uint)),
                     new MhwStructData.Entry("Icon Color Id", 22, typeof(ushort)),
                     new MhwStructData.Entry("Sell Price", 24, typeof(uint)),
-                    new MhwStructData.Entry("Buy Price", 28, typeof(uint))
+                    new MhwStructData.Entry("Buy Price", 28, typeof(uint)),
+                    new MhwStructData.Entry("Flags Raw", 14, typeof(uint), accessLevel: "private")
                 }
             });
         }

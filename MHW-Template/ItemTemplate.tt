@@ -8,6 +8,7 @@
 <#@ import namespace="Microsoft.CSharp" #>
 <#@ import namespace="System.Text.RegularExpressions" #>
 using System.ComponentModel;
+using MHW_Editor.Models;
 using MHW_Template;
 
 namespace <#= _namespace #> {
@@ -17,8 +18,10 @@ namespace <#= _namespace #> {
         public const long EntryCountOffset = <#= structData.entryCountOffset #>;
 <#
     var compiler = new CSharpCodeProvider();
+    var sortIndex = 50;
+
     foreach (var entry in structData.entries) {
-        var name = Regex.Replace(entry.name, @"[^\w\d]+", "_");
+        var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
         var typeString = compiler.GetTypeOutput(entry.type);
         string returnString;
         var setCast = "";
@@ -31,9 +34,11 @@ namespace <#= _namespace #> {
             getCast = $"({returnString}) ";
             setCast = $"({typeString}) ";
         }
-
 #>
-        [DisplayName("<#= entry.name #>")]
+        protected const string <#= name #>_displayName = "<#= entry.displayName #>";
+        protected const int <#= name #>_sortIndex = <#= sortIndex #>;
+        [SortOrder(<#= name #>_sortIndex)]
+        [DisplayName(<#= name #>_displayName)]
         <#= entry.accessLevel #> <#= returnString #> <#= name #> {
             get => <#= getCast #>GetData<<#= typeString #>>(<#= entry.offset #>);
 <#
@@ -48,6 +53,7 @@ namespace <#= _namespace #> {
 #>
         }
 <#
+        sortIndex += 50;
     }
 #>
     }

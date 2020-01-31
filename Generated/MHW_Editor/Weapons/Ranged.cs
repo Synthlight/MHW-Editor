@@ -1,5 +1,6 @@
 
 using System.ComponentModel;
+using MHW_Editor.Models;
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
@@ -7,15 +8,24 @@ namespace MHW_Editor.Weapons {
         public const uint StructSize = 69;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
-        [DisplayName("Index")]
+        protected const string Index_displayName = "Index";
+        protected const int Index_sortIndex = 50;
+        [SortOrder(Index_sortIndex)]
+        [DisplayName(Index_displayName)]
         private uint Index {
             get => GetData<uint>(0);
         }
-        [DisplayName("Id")]
+        protected const string Id_displayName = "Id";
+        protected const int Id_sortIndex = 100;
+        [SortOrder(Id_sortIndex)]
+        [DisplayName(Id_displayName)]
         public ushort Id {
             get => GetData<ushort>(59);
         }
-        [DisplayName("Base Model Id")]
+        protected const string Base_Model_Id_displayName = "Base Model Id";
+        protected const int Base_Model_Id_sortIndex = 150;
+        [SortOrder(Base_Model_Id_sortIndex)]
+        [DisplayName(Base_Model_Id_displayName)]
         public short Base_Model_Id {
             get => GetData<short>(6);
             set {
@@ -23,7 +33,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Base_Model_Id));
             }
         }
-        [DisplayName("Part 1 Id")]
+        protected const string Part_1_Id_displayName = "Part 1 Id";
+        protected const int Part_1_Id_sortIndex = 200;
+        [SortOrder(Part_1_Id_sortIndex)]
+        [DisplayName(Part_1_Id_displayName)]
         public short Part_1_Id {
             get => GetData<short>(8);
             set {
@@ -31,7 +44,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Part_1_Id));
             }
         }
-        [DisplayName("Part 2 Id")]
+        protected const string Part_2_Id_displayName = "Part 2 Id";
+        protected const int Part_2_Id_sortIndex = 250;
+        [SortOrder(Part_2_Id_sortIndex)]
+        [DisplayName(Part_2_Id_displayName)]
         public short Part_2_Id {
             get => GetData<short>(10);
             set {
@@ -39,7 +55,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Part_2_Id));
             }
         }
-        [DisplayName("Is Fixed Upgrade Raw")]
+        protected const string Is_Fixed_Upgrade_Raw_displayName = "Is Fixed Upgrade Raw";
+        protected const int Is_Fixed_Upgrade_Raw_sortIndex = 300;
+        [SortOrder(Is_Fixed_Upgrade_Raw_sortIndex)]
+        [DisplayName(Is_Fixed_Upgrade_Raw_displayName)]
         protected byte Is_Fixed_Upgrade_Raw {
             get => GetData<byte>(15);
             set {
@@ -47,7 +66,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Is_Fixed_Upgrade_Raw));
             }
         }
-        [DisplayName("Muzzle Type")]
+        protected const string Muzzle_Type_displayName = "Muzzle Type";
+        protected const int Muzzle_Type_sortIndex = 350;
+        [SortOrder(Muzzle_Type_sortIndex)]
+        [DisplayName(Muzzle_Type_displayName)]
         public MHW_Template.Weapons.MuzzleType Muzzle_Type {
             get => (MHW_Template.Weapons.MuzzleType) GetData<byte>(16);
             set {
@@ -55,7 +77,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Muzzle_Type));
             }
         }
-        [DisplayName("Barrel Type")]
+        protected const string Barrel_Type_displayName = "Barrel Type";
+        protected const int Barrel_Type_sortIndex = 400;
+        [SortOrder(Barrel_Type_sortIndex)]
+        [DisplayName(Barrel_Type_displayName)]
         public MHW_Template.Weapons.BarrelType Barrel_Type {
             get => (MHW_Template.Weapons.BarrelType) GetData<byte>(17);
             set {
@@ -63,7 +88,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Barrel_Type));
             }
         }
-        [DisplayName("Magazine Type")]
+        protected const string Magazine_Type_displayName = "Magazine Type";
+        protected const int Magazine_Type_sortIndex = 450;
+        [SortOrder(Magazine_Type_sortIndex)]
+        [DisplayName(Magazine_Type_displayName)]
         public MHW_Template.Weapons.MagazineType Magazine_Type {
             get => (MHW_Template.Weapons.MagazineType) GetData<byte>(18);
             set {
@@ -71,7 +99,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Magazine_Type));
             }
         }
-        [DisplayName("Scope Type")]
+        protected const string Scope_Type_displayName = "Scope Type";
+        protected const int Scope_Type_sortIndex = 500;
+        [SortOrder(Scope_Type_sortIndex)]
+        [DisplayName(Scope_Type_displayName)]
         public MHW_Template.Weapons.ScopeType Scope_Type {
             get => (MHW_Template.Weapons.ScopeType) GetData<byte>(19);
             set {
@@ -79,7 +110,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Scope_Type));
             }
         }
-        [DisplayName("Cost")]
+        protected const string Cost_displayName = "Cost";
+        protected const int Cost_sortIndex = 550;
+        [SortOrder(Cost_sortIndex)]
+        [DisplayName(Cost_displayName)]
         public uint Cost {
             get => GetData<uint>(20);
             set {
@@ -87,7 +121,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Cost));
             }
         }
-        [DisplayName("Rarity")]
+        protected const string Rarity_displayName = "Rarity";
+        protected const int Rarity_sortIndex = 600;
+        [SortOrder(Rarity_sortIndex)]
+        [DisplayName(Rarity_displayName)]
         public byte Rarity {
             get => GetData<byte>(24);
             set {
@@ -95,7 +132,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Rarity));
             }
         }
-        [DisplayName("Damage")]
+        protected const string Damage_displayName = "Damage";
+        protected const int Damage_sortIndex = 650;
+        [SortOrder(Damage_sortIndex)]
+        [DisplayName(Damage_displayName)]
         public ushort Damage {
             get => GetData<ushort>(25);
             set {
@@ -103,7 +143,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Damage));
             }
         }
-        [DisplayName("Defense")]
+        protected const string Defense_displayName = "Defense";
+        protected const int Defense_sortIndex = 700;
+        [SortOrder(Defense_sortIndex)]
+        [DisplayName(Defense_displayName)]
         public ushort Defense {
             get => GetData<ushort>(27);
             set {
@@ -111,7 +154,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Defense));
             }
         }
-        [DisplayName("Affinity")]
+        protected const string Affinity_displayName = "Affinity";
+        protected const int Affinity_sortIndex = 750;
+        [SortOrder(Affinity_sortIndex)]
+        [DisplayName(Affinity_displayName)]
         public sbyte Affinity {
             get => GetData<sbyte>(29);
             set {
@@ -119,7 +165,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Affinity));
             }
         }
-        [DisplayName("Element")]
+        protected const string Element_displayName = "Element";
+        protected const int Element_sortIndex = 800;
+        [SortOrder(Element_sortIndex)]
+        [DisplayName(Element_displayName)]
         public MHW_Template.Weapons.Element Element {
             get => (MHW_Template.Weapons.Element) GetData<byte>(30);
             set {
@@ -127,7 +176,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Element));
             }
         }
-        [DisplayName("Element Damage")]
+        protected const string Element_Damage_displayName = "Element Damage";
+        protected const int Element_Damage_sortIndex = 850;
+        [SortOrder(Element_Damage_sortIndex)]
+        [DisplayName(Element_Damage_displayName)]
         public ushort Element_Damage {
             get => GetData<ushort>(31);
             set {
@@ -135,7 +187,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Element_Damage));
             }
         }
-        [DisplayName("Element (Hidden)")]
+        protected const string Element_Hidden__displayName = "Element (Hidden)";
+        protected const int Element_Hidden__sortIndex = 900;
+        [SortOrder(Element_Hidden__sortIndex)]
+        [DisplayName(Element_Hidden__displayName)]
         public MHW_Template.Weapons.Element Element_Hidden_ {
             get => (MHW_Template.Weapons.Element) GetData<byte>(33);
             set {
@@ -143,7 +198,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Element_Hidden_));
             }
         }
-        [DisplayName("Element (Hidden) Damage")]
+        protected const string Element_Hidden_Damage_displayName = "Element (Hidden) Damage";
+        protected const int Element_Hidden_Damage_sortIndex = 950;
+        [SortOrder(Element_Hidden_Damage_sortIndex)]
+        [DisplayName(Element_Hidden_Damage_displayName)]
         public ushort Element_Hidden_Damage {
             get => GetData<ushort>(34);
             set {
@@ -151,7 +209,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Element_Hidden_Damage));
             }
         }
-        [DisplayName("Elderseal")]
+        protected const string Elderseal_displayName = "Elderseal";
+        protected const int Elderseal_sortIndex = 1000;
+        [SortOrder(Elderseal_sortIndex)]
+        [DisplayName(Elderseal_displayName)]
         public MHW_Template.Weapons.Elderseal Elderseal {
             get => (MHW_Template.Weapons.Elderseal) GetData<byte>(36);
             set {
@@ -159,7 +220,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Elderseal));
             }
         }
-        [DisplayName("Shell Type Id")]
+        protected const string Shell_Type_Id_displayName = "Shell Type Id";
+        protected const int Shell_Type_Id_sortIndex = 1050;
+        [SortOrder(Shell_Type_Id_sortIndex)]
+        [DisplayName(Shell_Type_Id_displayName)]
         public byte Shell_Type_Id {
             get => GetData<byte>(37);
             set {
@@ -167,7 +231,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Shell_Type_Id));
             }
         }
-        [DisplayName("Deviation")]
+        protected const string Deviation_displayName = "Deviation";
+        protected const int Deviation_sortIndex = 1100;
+        [SortOrder(Deviation_sortIndex)]
+        [DisplayName(Deviation_displayName)]
         public MHW_Template.Weapons.Deviation Deviation {
             get => (MHW_Template.Weapons.Deviation) GetData<byte>(39);
             set {
@@ -175,7 +242,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Deviation));
             }
         }
-        [DisplayName("Slot Count")]
+        protected const string Slot_Count_displayName = "Slot Count";
+        protected const int Slot_Count_sortIndex = 1150;
+        [SortOrder(Slot_Count_sortIndex)]
+        [DisplayName(Slot_Count_displayName)]
         public byte Slot_Count {
             get => GetData<byte>(40);
             set {
@@ -183,7 +253,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Slot_Count));
             }
         }
-        [DisplayName("Slot 1 Size")]
+        protected const string Slot_1_Size_displayName = "Slot 1 Size";
+        protected const int Slot_1_Size_sortIndex = 1200;
+        [SortOrder(Slot_1_Size_sortIndex)]
+        [DisplayName(Slot_1_Size_displayName)]
         public byte Slot_1_Size {
             get => GetData<byte>(41);
             set {
@@ -191,7 +264,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Slot_1_Size));
             }
         }
-        [DisplayName("Slot 2 Size")]
+        protected const string Slot_2_Size_displayName = "Slot 2 Size";
+        protected const int Slot_2_Size_sortIndex = 1250;
+        [SortOrder(Slot_2_Size_sortIndex)]
+        [DisplayName(Slot_2_Size_displayName)]
         public byte Slot_2_Size {
             get => GetData<byte>(42);
             set {
@@ -199,7 +275,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Slot_2_Size));
             }
         }
-        [DisplayName("Slot 3 Size")]
+        protected const string Slot_3_Size_displayName = "Slot 3 Size";
+        protected const int Slot_3_Size_sortIndex = 1300;
+        [SortOrder(Slot_3_Size_sortIndex)]
+        [DisplayName(Slot_3_Size_displayName)]
         public byte Slot_3_Size {
             get => GetData<byte>(43);
             set {
@@ -207,7 +286,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Slot_3_Size));
             }
         }
-        [DisplayName("Special Ammo Type")]
+        protected const string Special_Ammo_Type_displayName = "Special Ammo Type";
+        protected const int Special_Ammo_Type_sortIndex = 1350;
+        [SortOrder(Special_Ammo_Type_sortIndex)]
+        [DisplayName(Special_Ammo_Type_displayName)]
         public byte Special_Ammo_Type {
             get => GetData<byte>(57);
             set {
@@ -215,7 +297,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Special_Ammo_Type));
             }
         }
-        [DisplayName("Skill")]
+        protected const string Skill_displayName = "Skill";
+        protected const int Skill_sortIndex = 1400;
+        [SortOrder(Skill_sortIndex)]
+        [DisplayName(Skill_displayName)]
         public ushort Skill {
             get => GetData<ushort>(65);
             set {
@@ -223,7 +308,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Skill));
             }
         }
-        [DisplayName("GMD Name Index")]
+        protected const string GMD_Name_Index_displayName = "GMD Name Index";
+        protected const int GMD_Name_Index_sortIndex = 1450;
+        [SortOrder(GMD_Name_Index_sortIndex)]
+        [DisplayName(GMD_Name_Index_displayName)]
         protected ushort GMD_Name_Index {
             get => GetData<ushort>(61);
             set {

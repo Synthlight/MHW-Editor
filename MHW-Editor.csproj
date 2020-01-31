@@ -70,9 +70,11 @@
       <DependentUpon>Assets.resx</DependentUpon>
     </Compile>
     <Compile Include="Assets\DataHelper.cs" />
+    <Compile Include="Models\ColumnHolder.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\ASkill.cs" />
     <Compile Include="Armors\ASkill.cs" />
+    <Compile Include="Models\SortOrderAttribute.cs" />
     <Compile Include="Skills\SkillDat.cs" />
     <Compile Include="Gems\Gem.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ArmUp.cs" />
@@ -89,7 +91,7 @@
     <Compile Include="Items\ArmUp.cs" />
     <Compile Include="Items\BottleTable.cs" />
     <Compile Include="Models\GemData.cs" />
-    <Compile Include="Skills\Skills.cs" />
+    <Compile Include="Skills\Skill.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\Armor.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\Gem.cs" />
     <Compile Include="Generated\MHW_Editor\Items\Item.cs" />

@@ -8,10 +8,14 @@ using MHW_Template;
 namespace MHW_Editor.Models {
     public abstract class MhwItem : IMhwItem {
         public byte[] Bytes { get; }
+
+        [SortOrder(999999998)]
         public ulong Offset { get; }
+
         public abstract string Name { get; }
         public bool Changed { get; set; }
 
+        [SortOrder(999999999)]
         [DisplayName("Raw Data")]
         public string Raw_Data => BitConverter.ToString(Bytes).Replace("-", ", ");
 

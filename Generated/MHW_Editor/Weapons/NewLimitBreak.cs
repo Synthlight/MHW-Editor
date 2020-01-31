@@ -1,5 +1,6 @@
 
 using System.ComponentModel;
+using MHW_Editor.Models;
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
@@ -7,15 +8,24 @@ namespace MHW_Editor.Weapons {
         public const uint StructSize = 38;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
-        [DisplayName("Id 1")]
+        protected const string Id_1_displayName = "Id 1";
+        protected const int Id_1_sortIndex = 50;
+        [SortOrder(Id_1_sortIndex)]
+        [DisplayName(Id_1_displayName)]
         public ushort Id_1 {
             get => GetData<ushort>(0);
         }
-        [DisplayName("Id 2")]
+        protected const string Id_2_displayName = "Id 2";
+        protected const int Id_2_sortIndex = 100;
+        [SortOrder(Id_2_sortIndex)]
+        [DisplayName(Id_2_displayName)]
         public ushort Id_2 {
             get => GetData<ushort>(2);
         }
-        [DisplayName("Needed Item Id to Unlock")]
+        protected const string Needed_Item_Id_to_Unlock_displayName = "Needed Item Id to Unlock";
+        protected const int Needed_Item_Id_to_Unlock_sortIndex = 150;
+        [SortOrder(Needed_Item_Id_to_Unlock_sortIndex)]
+        [DisplayName(Needed_Item_Id_to_Unlock_displayName)]
         public ushort Needed_Item_Id_to_Unlock {
             get => GetData<ushort>(4);
             set {
@@ -23,7 +33,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Needed_Item_Id_to_Unlock));
             }
         }
-        [DisplayName("Activated 1")]
+        protected const string Activated_1_displayName = "Activated 1";
+        protected const int Activated_1_sortIndex = 200;
+        [SortOrder(Activated_1_sortIndex)]
+        [DisplayName(Activated_1_displayName)]
         protected sbyte Activated_1 {
             get => GetData<sbyte>(6);
             set {
@@ -31,7 +44,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Activated_1));
             }
         }
-        [DisplayName("Activated 2")]
+        protected const string Activated_2_displayName = "Activated 2";
+        protected const int Activated_2_sortIndex = 250;
+        [SortOrder(Activated_2_sortIndex)]
+        [DisplayName(Activated_2_displayName)]
         protected sbyte Activated_2 {
             get => GetData<sbyte>(7);
             set {
@@ -39,7 +55,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Activated_2));
             }
         }
-        [DisplayName("Activated 3")]
+        protected const string Activated_3_displayName = "Activated 3";
+        protected const int Activated_3_sortIndex = 300;
+        [SortOrder(Activated_3_sortIndex)]
+        [DisplayName(Activated_3_displayName)]
         protected sbyte Activated_3 {
             get => GetData<sbyte>(8);
             set {
@@ -47,7 +66,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Activated_3));
             }
         }
-        [DisplayName("Activated 4")]
+        protected const string Activated_4_displayName = "Activated 4";
+        protected const int Activated_4_sortIndex = 350;
+        [SortOrder(Activated_4_sortIndex)]
+        [DisplayName(Activated_4_displayName)]
         protected sbyte Activated_4 {
             get => GetData<sbyte>(9);
             set {
@@ -55,7 +77,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Activated_4));
             }
         }
-        [DisplayName("Mat 1")]
+        protected const string Mat_1_displayName = "Mat 1";
+        protected const int Mat_1_sortIndex = 400;
+        [SortOrder(Mat_1_sortIndex)]
+        [DisplayName(Mat_1_displayName)]
         public ushort Mat_1 {
             get => GetData<ushort>(14);
             set {
@@ -63,7 +88,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_1));
             }
         }
-        [DisplayName("Mat 1 Quantity")]
+        protected const string Mat_1_Quantity_displayName = "Mat 1 Quantity";
+        protected const int Mat_1_Quantity_sortIndex = 450;
+        [SortOrder(Mat_1_Quantity_sortIndex)]
+        [DisplayName(Mat_1_Quantity_displayName)]
         public byte Mat_1_Quantity {
             get => GetData<byte>(16);
             set {
@@ -71,7 +99,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_1_Quantity));
             }
         }
-        [DisplayName("Mat 2")]
+        protected const string Mat_2_displayName = "Mat 2";
+        protected const int Mat_2_sortIndex = 500;
+        [SortOrder(Mat_2_sortIndex)]
+        [DisplayName(Mat_2_displayName)]
         public ushort Mat_2 {
             get => GetData<ushort>(17);
             set {
@@ -79,7 +110,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_2));
             }
         }
-        [DisplayName("Mat 2 Quantity")]
+        protected const string Mat_2_Quantity_displayName = "Mat 2 Quantity";
+        protected const int Mat_2_Quantity_sortIndex = 550;
+        [SortOrder(Mat_2_Quantity_sortIndex)]
+        [DisplayName(Mat_2_Quantity_displayName)]
         public byte Mat_2_Quantity {
             get => GetData<byte>(19);
             set {
@@ -87,7 +121,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_2_Quantity));
             }
         }
-        [DisplayName("Mat 3")]
+        protected const string Mat_3_displayName = "Mat 3";
+        protected const int Mat_3_sortIndex = 600;
+        [SortOrder(Mat_3_sortIndex)]
+        [DisplayName(Mat_3_displayName)]
         public ushort Mat_3 {
             get => GetData<ushort>(20);
             set {
@@ -95,7 +132,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_3));
             }
         }
-        [DisplayName("Mat 3 Quantity")]
+        protected const string Mat_3_Quantity_displayName = "Mat 3 Quantity";
+        protected const int Mat_3_Quantity_sortIndex = 650;
+        [SortOrder(Mat_3_Quantity_sortIndex)]
+        [DisplayName(Mat_3_Quantity_displayName)]
         public byte Mat_3_Quantity {
             get => GetData<byte>(22);
             set {
@@ -103,7 +143,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_3_Quantity));
             }
         }
-        [DisplayName("Mat 4")]
+        protected const string Mat_4_displayName = "Mat 4";
+        protected const int Mat_4_sortIndex = 700;
+        [SortOrder(Mat_4_sortIndex)]
+        [DisplayName(Mat_4_displayName)]
         public ushort Mat_4 {
             get => GetData<ushort>(23);
             set {
@@ -111,7 +154,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_4));
             }
         }
-        [DisplayName("Mat 4 Quantity")]
+        protected const string Mat_4_Quantity_displayName = "Mat 4 Quantity";
+        protected const int Mat_4_Quantity_sortIndex = 750;
+        [SortOrder(Mat_4_Quantity_sortIndex)]
+        [DisplayName(Mat_4_Quantity_displayName)]
         public byte Mat_4_Quantity {
             get => GetData<byte>(24);
             set {
@@ -119,7 +165,10 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_4_Quantity));
             }
         }
-        [DisplayName("Id 3")]
+        protected const string Id_3_displayName = "Id 3";
+        protected const int Id_3_sortIndex = 800;
+        [SortOrder(Id_3_sortIndex)]
+        [DisplayName(Id_3_displayName)]
         public byte Id_3 {
             get => GetData<byte>(37);
         }

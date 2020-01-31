@@ -51,7 +51,7 @@ namespace MHW_Template
     newList.Sort((entry1, entry2) => entry1.offset.CompareTo(entry2.offset));
 
     foreach (var entry in newList) {
-        var name = entry.name.Replace(" ", "_");
+        var name = entry.displayName.Replace(" ", "_");
         var typeString = compiler.GetTypeOutput(entry.type);
 
             

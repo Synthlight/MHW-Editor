@@ -11,6 +11,7 @@ namespace MHW_Editor.Items {
 
         public override string Name => DataHelper.itemData[MainWindow.locale].TryGet(Id * 2, "Unknown");
 
+        [SortOrder(Flags_Raw_sortIndex)]
         public uint Flags {
             get => Flags_Raw;
             set {
@@ -32,6 +33,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 1)]
         [DisplayName("Has Infinity Symbol")]
         public bool Has_Infinity_Symbol {
             get => ((ItemFlags) Flags & ItemFlags.Infinity_Symbol) != 0;
@@ -46,6 +48,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 2)]
         [DisplayName("Is Supply Item")]
         public bool Is_Supply_Item {
             get => ((ItemFlags) Flags & ItemFlags.Supply_Item) != 0;
@@ -60,6 +63,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 3)]
         [DisplayName("Unknown")]
         public bool Unknown {
             get => ((ItemFlags) Flags & ItemFlags.Unknown) != 0;
@@ -74,6 +78,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 4)]
         [DisplayName("Is Consumable")]
         public bool Is_Consumable {
             get => ((ItemFlags) Flags & ItemFlags.Consumable) != 0;
@@ -88,6 +93,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 5)]
         [DisplayName("Is Fey or Streamstone")]
         public bool Is_Fey_or_Streamstone {
             get => ((ItemFlags) Flags & ItemFlags.Fey_or_Streamstone) != 0;
@@ -102,6 +108,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 6)]
         [DisplayName("Is Infinite Use")]
         public bool Is_Infinite_Use {
             get => ((ItemFlags) Flags & ItemFlags.Infinite_Use) != 0;
@@ -116,6 +123,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 7)]
         [DisplayName("Has Star")]
         public bool Has_Star {
             get => ((ItemFlags) Flags & ItemFlags.Star) != 0;
@@ -130,6 +138,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 8)]
         [DisplayName("Has New Palico Gadget Symbol")]
         public bool Has_New_Palico_Gadget_Symbol {
             get => ((ItemFlags) Flags & ItemFlags.New_Palico_Gadget_Symbol) != 0;
@@ -144,6 +153,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 9)]
         [DisplayName("Is Level 1")]
         public bool Is_Level_1 {
             get => ((ItemFlags) Flags & ItemFlags.Level_1) != 0;
@@ -158,6 +168,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 10)]
         [DisplayName("Is Level 2")]
         public bool Is_Level_2 {
             get => ((ItemFlags) Flags & ItemFlags.Level_2) != 0;
@@ -172,6 +183,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 11)]
         [DisplayName("Is Level 3")]
         public bool Is_Level_3 {
             get => ((ItemFlags) Flags & ItemFlags.Level_3) != 0;
@@ -186,6 +198,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 12)]
         [DisplayName("Is Shiny")]
         public bool Is_Shiny {
             get => ((ItemFlags) Flags & ItemFlags.Shiny) != 0;
@@ -200,6 +213,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 13)]
         [DisplayName("Is Huge Carriable")]
         public bool Is_Huge_Carriable {
             get => ((ItemFlags) Flags & ItemFlags.Huge_Carriable) != 0;
@@ -214,6 +228,7 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Flags_Raw_sortIndex + 14)]
         [DisplayName("Not Storable as an Item")]
         public bool Not_Storable_as_an_Item {
             get => ((ItemFlags) Flags & ItemFlags.Not_Storable_as_an_Item) != 0;
