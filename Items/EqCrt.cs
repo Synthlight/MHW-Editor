@@ -24,19 +24,19 @@ namespace MHW_Editor.Items {
             i = 0;
             categoryLookup["weapon"] = new Dictionary<byte, IdNamePair> {
                 {i, new IdNamePair(i++, "Greatsword")},
+                {i, new IdNamePair(i++, "Sword & Shield")},
+                {i, new IdNamePair(i++, "Dual Blades")},
                 {i, new IdNamePair(i++, "Longsword")},
-                {i, new IdNamePair(i++, "Unknown")},
-                {i, new IdNamePair(i++, "Unknown")},
-                {i, new IdNamePair(i++, "Unknown")},
-                {i, new IdNamePair(i++, "Unknown")},
-                {i, new IdNamePair(i++, "Unknown")},
-                {i, new IdNamePair(i++, "Unknown")},
-                {i, new IdNamePair(i++, "Unknown")},
-                {i, new IdNamePair(i++, "Unknown")},
-                {i, new IdNamePair(i++, "Unknown")},
-                {i, new IdNamePair(i++, "Unknown")},
-                {i, new IdNamePair(i++, "Unknown")},
-                {i, new IdNamePair(i, "Unknown")}
+                {i, new IdNamePair(i++, "Hammer")},
+                {i, new IdNamePair(i++, "Hunting Horn")},
+                {i, new IdNamePair(i++, "Lance")},
+                {i, new IdNamePair(i++, "Gunlance")},
+                {i, new IdNamePair(i++, "Switch Axe")},
+                {i, new IdNamePair(i++, "Charge Blade")},
+                {i, new IdNamePair(i++, "Insect Glaive")},
+                {i, new IdNamePair(i++, "Bow")},
+                {i, new IdNamePair(i++, "Light Bowgun")},
+                {i, new IdNamePair(i, "Heavy Bowgun")}
             };
         }
 
