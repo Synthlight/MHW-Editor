@@ -79,11 +79,11 @@ namespace MHW_Editor {
             }
         }
 
-        public static bool showSkillIdFirst = true;
-        public bool ShowSkillIdFirst {
-            get => showSkillIdFirst;
+        public static bool showIdBeforeName = true;
+        public bool ShowIdBeforeName {
+            get => showIdBeforeName;
             set {
-                showSkillIdFirst = value;
+                showIdBeforeName = value;
                 foreach (MhwItem item in items) {
                     item.OnPropertyChanged(nameof(Gem.Skill_1), nameof(Gem.Skill_2));
                 }
@@ -177,6 +177,27 @@ namespace MHW_Editor {
                     var cb = new DataGridComboBoxColumn {
                         Header = e.Column.Header,
                         ItemsSource = DataHelper.skillData[locale],
+                        SelectedValueBinding = new Binding(e.PropertyName),
+                        SelectedValuePath = "Key",
+                        DisplayMemberPath = "Value",
+                        CanUserSort = true
+                    };
+                    e.Column = cb;
+                    break;
+                }
+                case nameof(EqCrt.Mat_1_Id):
+                case nameof(EqCrt.Mat_2_Id):
+                case nameof(EqCrt.Mat_3_Id):
+                case nameof(EqCrt.Mat_4_Id):
+                case nameof(NewLimitBreak.Needed_Item_Id_to_Unlock):
+                case nameof(NewLimitBreak.Mat_1):
+                case nameof(NewLimitBreak.Mat_2):
+                case nameof(NewLimitBreak.Mat_3):
+                case nameof(NewLimitBreak.Mat_4):
+                case nameof(ASkill.Mantle_Item_Id): {
+                    var cb = new DataGridComboBoxColumn {
+                        Header = e.Column.Header,
+                        ItemsSource = DataHelper.itemData[locale],
                         SelectedValueBinding = new Binding(e.PropertyName),
                         SelectedValuePath = "Key",
                         DisplayMemberPath = "Value",

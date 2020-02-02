@@ -1,23 +1,23 @@
-﻿namespace MHW_Editor.Skills {
-    public struct Skill {
-        public static readonly Skill DEFAULT = new Skill(0, "Unknown");
+﻿namespace MHW_Editor.Models {
+    public struct IdNamePair {
+        public static readonly IdNamePair DEFAULT = new IdNamePair(0, "Unknown");
         public readonly ushort id;
         public readonly string name;
 
-        public Skill(ushort id, string name) {
+        public IdNamePair(ushort id, string name) {
             this.id = id;
             this.name = name;
         }
 
         public override string ToString() {
-            if (MainWindow.showSkillIdFirst) {
+            if (MainWindow.showIdBeforeName) {
                 return $"{id}: {name}";
             } else {
                 return $"{name}: {id}";
             }
         }
 
-        public bool Equals(Skill other) {
+        public bool Equals(IdNamePair other) {
             return id == other.id;
         }
 
@@ -26,7 +26,7 @@
         }
 
         public override bool Equals(object obj) {
-            return obj is Skill other1 && this == other1
+            return obj is IdNamePair other1 && this == other1
                    || obj is ushort other2 && this == other2;
         }
 
@@ -34,19 +34,19 @@
             return id.GetHashCode();
         }
 
-        public static bool operator ==(Skill left, Skill right) {
+        public static bool operator ==(IdNamePair left, IdNamePair right) {
             return left.id == right.id;
         }
 
-        public static bool operator !=(Skill left, Skill right) {
+        public static bool operator !=(IdNamePair left, IdNamePair right) {
             return left.id != right.id;
         }
 
-        public static bool operator ==(Skill left, ushort right) {
+        public static bool operator ==(IdNamePair left, ushort right) {
             return left.id == right;
         }
 
-        public static bool operator !=(Skill left, ushort right) {
+        public static bool operator !=(IdNamePair left, ushort right) {
             return left.id != right;
         }
     }

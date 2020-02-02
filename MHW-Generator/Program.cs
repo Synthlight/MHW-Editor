@@ -53,7 +53,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Item Id", 1, typeof(ushort)),
                     new MhwStructData.Entry("Item Class", 3, typeof(ushort)),
                     new MhwStructData.Entry("Unknown (int32)", 5, typeof(int)),
-                    new MhwStructData.Entry("Event/Update Ref", 9, typeof(uint)),
+                    new MhwStructData.Entry("Unlock Flag", 9, typeof(uint)),
                     new MhwStructData.Entry("Unknown (uint32)", 13, typeof(uint)),
                     new MhwStructData.Entry("Item Rank", 17, typeof(uint)),
                     new MhwStructData.Entry("Mat 1 Id", 21, typeof(ushort)),

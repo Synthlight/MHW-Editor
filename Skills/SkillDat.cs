@@ -14,7 +14,7 @@ namespace MHW_Editor.Skills {
 
         [SortOrder(0)]
         [DisplayName("Name/Id")]
-        public Skill Name_And_Id => DataHelper.skillData[MainWindow.locale].TryGet(Id, Skill.DEFAULT);
+        public IdNamePair Name_And_Id => DataHelper.skillData[MainWindow.locale].TryGet(Id, IdNamePair.DEFAULT);
 
         public override string Name => "None";
 
@@ -28,7 +28,7 @@ namespace MHW_Editor.Skills {
 
         public int Compare(object x, object y) {
             if (x is SkillDat x1 && y is SkillDat x2) {
-                if (MainWindow.showSkillIdFirst) {
+                if (MainWindow.showIdBeforeName) {
                     var idCompare = x1.Name_And_Id.id.CompareTo(x2.Name_And_Id.id) * (direction == ListSortDirection.Ascending ? 1 : -1);
                     var levelCompare = x1.Level.CompareTo(x2.Level) * (direction == ListSortDirection.Ascending ? 1 : -1);
 
