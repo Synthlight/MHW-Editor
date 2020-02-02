@@ -208,10 +208,24 @@ namespace MHW_Editor {
                     e.Column = cb;
                     break;
                 }
-                default:
-                    e.Column.CanUserSort = true;
+                case nameof(EqCrt.Item_Category): {
+                    var fileName = Path.GetFileNameWithoutExtension(targetFile);
+                    if (!EqCrt.categoryLookup.ContainsKey(fileName)) break;
+
+                    var cb = new DataGridComboBoxColumn {
+                        Header = e.Column.Header,
+                        ItemsSource = EqCrt.categoryLookup[fileName],
+                        SelectedValueBinding = new Binding(e.PropertyName),
+                        SelectedValuePath = "Key",
+                        DisplayMemberPath = "Value",
+                        CanUserSort = true
+                    };
+                    e.Column = cb;
                     break;
+                }
             }
+
+            e.Column.CanUserSort = true;
 
             // Use [DisplayName] attribute for the column header text.
             Type sourceClassType = ((dynamic) e.PropertyDescriptor).ComponentType;
