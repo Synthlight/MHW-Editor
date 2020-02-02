@@ -63,9 +63,16 @@ namespace MHW_Editor {
             set {
                 locale = value;
                 foreach (MhwItem item in items) {
-                    item.OnPropertyChanged(nameof(IMhwItem.Name));
-                    item.OnPropertyChanged(nameof(SkillDat.Name_And_Id));
-                    item.OnPropertyChanged(nameof(SkillDat.Description));
+                    item.OnPropertyChanged(nameof(IMhwItem.Name),
+                                           nameof(SkillDat.Name_And_Id),
+                                           nameof(SkillDat.Description));
+                    // Won't work for skills as they need to be rebound to the right dictionary.
+                    //nameof(Armor.Set_Skill_1),
+                    //nameof(Armor.Set_Skill_2),
+                    //nameof(Armor.Skill_1),
+                    //nameof(Armor.Skill_2),
+                    //nameof(Armor.Skill_3),
+                    //nameof(Melee.Skill));
                 }
             }
         }
@@ -76,8 +83,7 @@ namespace MHW_Editor {
             set {
                 showSkillIdFirst = value;
                 foreach (MhwItem item in items) {
-                    item.OnPropertyChanged(nameof(Gem.Skill_1));
-                    item.OnPropertyChanged(nameof(Gem.Skill_2));
+                    item.OnPropertyChanged(nameof(Gem.Skill_1), nameof(Gem.Skill_2));
                 }
             }
         }
@@ -255,21 +261,20 @@ namespace MHW_Editor {
                     case SkillDat _: {
                         SkillDat skillDat = item;
 
-                        // 114: Scholar
-                        // 117: Scenthound
-                        if (skillDat.Id == 114 || skillDat.Id == 117) {
-                            skillDat.Param_5 = 5000;
-                        }
-
-                        // 120: Tool Specialist
-                        if (skillDat.Id == 120) {
-                            skillDat.Param_1 = 0;
-                            skillDat.Param_5 = 1;
-                        }
-
-                        // 83: Item Prolonger
-                        if (skillDat.Id == 83) {
-                            skillDat.Param_5 = 5000;
+                        switch (skillDat.Id) {
+                            case SkillDataValueClass.Scholar:
+                            case SkillDataValueClass.Scenthound:
+                                skillDat.Param_5 = 5000;
+                                break;
+                            case SkillDataValueClass.Tool_Specialist:
+                                skillDat.Param_5 = 1;
+                                break;
+                            case SkillDataValueClass.Item_Prolonger:
+                                skillDat.Param_5 = 5000;
+                                break;
+                            case SkillDataValueClass.Focus:
+                                skillDat.Param_6 = 1;
+                                break;
                         }
 
                         break;
@@ -563,14 +568,20 @@ namespace MHW_Editor {
                 }
             }
 
-            var sortedSortIndexes = new List<GemData>(rawList);
-            sortedSortIndexes.Sort((g1, g2) => g1.sortOrder.CompareTo(g2.sortOrder));
-            var sortedGemNameIndexes = new List<GemData>(rawList);
-            sortedGemNameIndexes.Sort((g1, g2) => string.Compare(g1.itemName, g2.itemName, StringComparison.Ordinal));
+            // One list of the sorted "sortOrder"s.
+            var sortedSortIndexes = new List<GemData>(rawList)
+                                    .OrderBy(data => data.sortOrder)
+                                    .Select(data => data.sortOrder)
+                                    .ToList();
+            // And another list of item indexes, sorted by gem name.
+            var sortedGemNameIndexes = new List<GemData>(rawList)
+                                       .OrderBy(data => data.itemName)
+                                       .Select(data => data.index)
+                                       .ToList();
 
             for (var i = 0; i < sortedSortIndexes.Count; i++) {
-                var index = sortedGemNameIndexes[i].index;
-                var newSortIndex = sortedSortIndexes[i].sortOrder;
+                var index = sortedGemNameIndexes[i];
+                var newSortIndex = sortedSortIndexes[i];
                 Item item = items[index];
                 item.Sort_Order = newSortIndex;
             }

@@ -52,5 +52,11 @@ namespace MHW_Editor.Models {
         public virtual void OnPropertyChanged([CallerMemberName] string propertyName = null) {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        public void OnPropertyChanged(params string[] propertyName) {
+            foreach (var name in propertyName) {
+                OnPropertyChanged(name);
+            }
+        }
     }
 }
