@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text.RegularExpressions;
 using MHW_Template;
 using MHW_Template.Armors;
@@ -34,12 +33,43 @@ namespace MHW_Generator {
             GenSharpness();
             GenShellTable();
             GenNewLimitBreak();
+            GenNewLimitBreak2();
             GenWeaponWSword();
             GenWeaponWhistle();
             GenWeaponGunLance();
             GenWeaponSwitchAxe();
             GenSkillPointData();
             GenASkill();
+            GenEqCrt();
+        }
+
+        private static void GenEqCrt() {
+            GenerateItemProps("MHW_Editor.Items", "EqCrt", new MhwStructData {
+                size = 37,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Item Category", 0, typeof(byte)),
+                    new MhwStructData.Entry("Item Id", 1, typeof(ushort)),
+                    new MhwStructData.Entry("Item Class", 3, typeof(ushort)),
+                    new MhwStructData.Entry("Unknown (int32)", 5, typeof(int)),
+                    new MhwStructData.Entry("Event/Update Ref", 9, typeof(uint)),
+                    new MhwStructData.Entry("Unknown (uint32)", 13, typeof(uint)),
+                    new MhwStructData.Entry("Item Rank", 17, typeof(uint)),
+                    new MhwStructData.Entry("Mat 1 Id", 21, typeof(ushort)),
+                    new MhwStructData.Entry("Mat 1 Count", 23, typeof(byte)),
+                    new MhwStructData.Entry("Mat 2 Id", 24, typeof(ushort)),
+                    new MhwStructData.Entry("Mat 2 Count", 26, typeof(byte)),
+                    new MhwStructData.Entry("Mat 3 Id", 27, typeof(ushort)),
+                    new MhwStructData.Entry("Mat 3 Count", 29, typeof(byte)),
+                    new MhwStructData.Entry("Mat 4 Id", 30, typeof(ushort)),
+                    new MhwStructData.Entry("Mat 4 Count", 32, typeof(byte)),
+                    new MhwStructData.Entry("Unknown (uint8) 1", 33, typeof(byte)),
+                    new MhwStructData.Entry("Unknown (uint8) 2", 34, typeof(byte)),
+                    new MhwStructData.Entry("Unknown (uint8) 3", 35, typeof(byte)),
+                    new MhwStructData.Entry("Unknown (uint8) 4", 36, typeof(byte))
+                }
+            });
         }
 
         private static void GenASkill() {
@@ -129,7 +159,23 @@ namespace MHW_Generator {
             });
         }
 
-        private static void GenNewLimitBreak() {
+        private static void GenNewLimitBreak2() { // .new_lb
+            GenerateItemProps("MHW_Editor.Weapons", "NewLimitBreak2", new MhwStructData {
+                size = 24,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Aug Category", 0, typeof(uint), typeof(AugmentationCategory)),
+                    new MhwStructData.Entry("Aug Level", 4, typeof(uint)),
+                    new MhwStructData.Entry("Aug Slot Cost", 8, typeof(uint)),
+                    new MhwStructData.Entry("Research Cost (r10)", 12, typeof(uint)),
+                    new MhwStructData.Entry("Research Cost (r11)", 16, typeof(uint)),
+                    new MhwStructData.Entry("Research Cost (r12)", 20, typeof(uint))
+                }
+            });
+        }
+
+        private static void GenNewLimitBreak() { // .new_lbr
             GenerateItemProps("MHW_Editor.Weapons", "NewLimitBreak", new MhwStructData {
                 size = 38,
                 offsetInitial = 10,

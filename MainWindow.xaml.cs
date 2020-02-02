@@ -33,23 +33,25 @@ namespace MHW_Editor {
         private const bool SHOW_RAW_BYTES = false;
 #endif
         private static readonly string[] FILE_TYPES = {
-            "*.wp_dat",
-            "*.wp_dat_g",
             "*.am_dat",
-            "*.sgpa",
-            "*.itm",
-            "*.bbtbl",
             "*.arm_up",
+            "*.ask",
+            "*.bbtbl",
+            "*.eq_crt",
+            "*.itm",
             "*.kire",
-            "*.skl_dat",
-            "*.shl_tbl",
+            "*.new_lb",
             "*.new_lbr",
-            "*.wep_wsd",
-            "*.wep_wsl",
+            "*.sgpa",
+            "*.shl_tbl",
+            "*.skl_dat",
+            "*.skl_pt_dat",
             "*.wep_glan",
             "*.wep_saxe",
-            "*.skl_pt_dat",
-            "*.ask"
+            "*.wep_wsd",
+            "*.wep_wsl",
+            "*.wp_dat",
+            "*.wp_dat_g",
         };
 
         private readonly ObservableCollection<dynamic> items = new ObservableCollection<dynamic>();
@@ -147,11 +149,13 @@ namespace MHW_Editor {
                                                  typeof(ShellTable),
                                                  typeof(SkillDat),
                                                  typeof(NewLimitBreak),
+                                                 typeof(NewLimitBreak2),
                                                  typeof(WeaponWSword),
                                                  typeof(WeaponWhistle),
                                                  typeof(WeaponGunLance),
                                                  typeof(SkillPointData),
-                                                 typeof(ASkill));
+                                                 typeof(ASkill),
+                                                 typeof(EqCrt));
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
@@ -764,6 +768,10 @@ namespace MHW_Editor {
                 return typeof(NewLimitBreak);
             }
 
+            if (fileName.EndsWith(".new_lb")) {
+                return typeof(NewLimitBreak2);
+            }
+
             if (fileName.EndsWith(".wep_wsd")) {
                 return typeof(WeaponWSword);
             }
@@ -786,6 +794,10 @@ namespace MHW_Editor {
 
             if (fileName.EndsWith(".ask")) {
                 return typeof(ASkill);
+            }
+
+            if (fileName.EndsWith(".eq_crt")) {
+                return typeof(EqCrt);
             }
 
             throw new Exception($"No type found for: {fileName}");

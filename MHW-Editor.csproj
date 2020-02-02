@@ -70,7 +70,10 @@
       <DependentUpon>Assets.resx</DependentUpon>
     </Compile>
     <Compile Include="Assets\DataHelper.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\EqCrt.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak2.cs" />
+    <Compile Include="Items\EqCrt.cs" />
     <Compile Include="Models\ColumnHolder.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\ASkill.cs" />
@@ -104,6 +107,7 @@
     <Compile Include="Models\ISlots.cs" />
     <Compile Include="Skills\SkillPointData.cs" />
     <Compile Include="Weapons\Bow.cs" />
+    <Compile Include="Weapons\NewLimitBreak2.cs" />
     <Compile Include="Weapons\Sharpness.cs" />
     <Compile Include="Weapons\BowGun.cs" />
     <Compile Include="Weapons\IWeapon.cs" />
