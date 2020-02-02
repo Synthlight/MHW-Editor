@@ -52,15 +52,15 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Unknown_int32_));
             }
         }
-        protected const string Unlock_Flag_displayName = "Unlock Flag";
-        protected const int Unlock_Flag_sortIndex = 250;
-        [SortOrder(Unlock_Flag_sortIndex)]
-        [DisplayName(Unlock_Flag_displayName)]
-        public uint Unlock_Flag {
+        protected const string Story_Unlock_displayName = "Story Unlock";
+        protected const int Story_Unlock_sortIndex = 250;
+        [SortOrder(Story_Unlock_sortIndex)]
+        [DisplayName(Story_Unlock_displayName)]
+        public uint Story_Unlock {
             get => GetData<uint>(9);
             set {
                 SetData(9, value);
-                OnPropertyChanged(nameof(Unlock_Flag));
+                OnPropertyChanged(nameof(Story_Unlock));
             }
         }
         protected const string Unknown_uint32__displayName = "Unknown (uint32)";

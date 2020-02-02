@@ -38,6 +38,7 @@ namespace MHW_Editor {
             "*.ask",
             "*.bbtbl",
             "*.eq_crt",
+            "*.eq_cus",
             "*.itm",
             "*.kire",
             "*.new_lb",
@@ -155,7 +156,8 @@ namespace MHW_Editor {
                                                  typeof(WeaponGunLance),
                                                  typeof(SkillPointData),
                                                  typeof(ASkill),
-                                                 typeof(EqCrt));
+                                                 typeof(EqCrt),
+                                                 typeof(EqCus));
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
@@ -819,6 +821,10 @@ namespace MHW_Editor {
 
             if (fileName.EndsWith(".eq_crt")) {
                 return typeof(EqCrt);
+            }
+
+            if (fileName.EndsWith(".eq_cus")) {
+                return typeof(EqCus);
             }
 
             throw new Exception($"No type found for: {fileName}");
