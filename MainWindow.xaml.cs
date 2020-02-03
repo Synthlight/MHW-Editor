@@ -211,52 +211,6 @@ namespace MHW_Editor {
                     e.Column = cb;
                     break;
                 }
-                case nameof(EqCrt.Mat_1_Id):
-                case nameof(EqCrt.Mat_2_Id):
-                case nameof(EqCrt.Mat_3_Id):
-                case nameof(EqCrt.Mat_4_Id):
-                case nameof(NewLimitBreak.Needed_Item_Id_to_Unlock):
-                case nameof(NewLimitBreak.Mat_1):
-                case nameof(NewLimitBreak.Mat_2):
-                case nameof(NewLimitBreak.Mat_3):
-                case nameof(NewLimitBreak.Mat_4):
-                case nameof(ASkill.Mantle_Item_Id): { // Not hit right now as they are cancelled in favor of a string display.
-                    var cb = new DataGridComboBoxColumn {
-                        Header = e.Column.Header,
-                        ItemsSource = DataHelper.itemData[locale],
-                        SelectedValueBinding = new Binding(e.PropertyName),
-                        SelectedValuePath = "Key",
-                        DisplayMemberPath = "Value",
-                        CanUserSort = true
-                    };
-
-                    //var templateString = new StringBuilder();
-                    //templateString.AppendLine("<DataTemplate xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"");
-                    //templateString.AppendLine("              xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\">");
-                    //templateString.AppendLine("    <ComboBox DisplayMemberPath=\"Value\"");
-                    //templateString.AppendLine("              ItemsSource=\"{Binding itemDataProxy}\"");
-                    //templateString.AppendLine($"              SelectedValue=\"{{Binding {e.PropertyName}}}\"");
-                    //templateString.AppendLine("              SelectedValuePath=\"Key\">");
-                    //templateString.AppendLine("        <ComboBox.ItemsPanel>");
-                    //templateString.AppendLine("            <ItemsPanelTemplate>");
-                    //templateString.AppendLine("                <VirtualizingStackPanel/>");
-                    //templateString.AppendLine("            </ItemsPanelTemplate>");
-                    //templateString.AppendLine("        </ComboBox.ItemsPanel>");
-                    //templateString.AppendLine("    </ComboBox>");
-                    //templateString.AppendLine("</DataTemplate>");
-
-                    //var cb = new DataGridTemplateColumn {
-                    //    Header = e.Column.Header,
-                    //    CellTemplate = (DataTemplate) XamlReader.Parse(templateString.ToString()),
-                    //    CellEditingTemplate = (DataTemplate) XamlReader.Parse(templateString.ToString()),
-                    //    CanUserSort = true
-                    //};
-
-                    // new ComboBox().ItemTemplate = (DataTemplate) cell.FindResource("CustomTemplate")
-
-                    e.Column = cb;
-                    break;
-                }
                 case nameof(EqCrt.Item_Category): {
                     var fileName = Path.GetFileNameWithoutExtension(targetFile);
                     if (!EqCrt.categoryLookup.ContainsKey(fileName)) break;

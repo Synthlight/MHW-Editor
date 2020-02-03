@@ -2,7 +2,6 @@
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
-using MHW_Template;
 
 namespace MHW_Editor.Weapons {
     public partial class Melee : MhwItem, IWeapon, ISlots {
@@ -12,7 +11,7 @@ namespace MHW_Editor.Weapons {
             this.weaponFilename = weaponFilename;
         }
 
-        public override string Name => DataHelper.weaponData[MainWindow.locale].TryGet(weaponFilename, DataHelper.dummyDict).TryGet(GMD_Name_Index, "Unknown");
+        public override string Name => DataHelper.weaponData[MainWindow.locale][weaponFilename][GMD_Name_Index];
 
         [SortOrder(Is_Fixed_Upgrade_Raw_sortIndex)]
         [DisplayName("Is Fixed Upgrade")]

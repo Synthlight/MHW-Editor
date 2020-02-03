@@ -10,20 +10,6 @@
         Height="500"
         DataContext="{x:Reference this}"
         WindowStartupLocation="CenterScreen">
-    <Window.Resources>
-        <DataTemplate x:Key="CustomTemplate">
-            <ComboBox DisplayMemberPath="Value"
-                      ItemsSource="{Binding itemDataProxy}"
-                      SelectedValue="{Binding e.PropertyName}"
-                      SelectedValuePath="Key">
-                <ComboBox.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <VirtualizingStackPanel/>
-                    </ItemsPanelTemplate>
-                </ComboBox.ItemsPanel>
-            </ComboBox>
-        </DataTemplate>
-    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -141,23 +127,9 @@
                   Grid.Row="1"
                   Grid.Column="0"
                   Grid.ColumnSpan="3"
+                  AutoGenerateColumns="True"
                   CanUserAddRows="False"
                   CanUserDeleteRows="False"
-                  SelectionUnit="CellOrRowHeader">
-            <DataGrid.Resources>
-                <DataTemplate x:Key="CustomTemplate">
-                    <ComboBox DisplayMemberPath="Value"
-                              ItemsSource="{Binding itemDataProxy}"
-                              SelectedValue="{Binding e.PropertyName}"
-                              SelectedValuePath="Key">
-                        <ComboBox.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <VirtualizingStackPanel/>
-                            </ItemsPanelTemplate>
-                        </ComboBox.ItemsPanel>
-                    </ComboBox>
-                </DataTemplate>
-            </DataGrid.Resources>
-        </DataGrid>
+                  SelectionUnit="CellOrRowHeader"/>
     </Grid>
 </Window>

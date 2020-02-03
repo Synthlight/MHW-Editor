@@ -3,7 +3,6 @@ using System.Collections;
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
-using MHW_Template;
 
 namespace MHW_Editor.Skills {
     public partial class SkillDat : MhwItem {
@@ -14,12 +13,12 @@ namespace MHW_Editor.Skills {
 
         [SortOrder(0)]
         [DisplayName("Name/Id")]
-        public IdNamePair Name_And_Id => DataHelper.skillData[MainWindow.locale].TryGet(Id, IdNamePair.DEFAULT);
+        public IdNamePair Name_And_Id => DataHelper.skillData[MainWindow.locale][Id];
 
         public override string Name => "None";
 
         [SortOrder(Param_8_sortIndex + 1)]
-        public string Description => DataHelper.skillDataDescriptions[MainWindow.locale].TryGet(Id, "Unknown");
+        public string Description => DataHelper.skillDataDescriptions[MainWindow.locale][Id];
     }
 
     public class SkillDatSorter : IComparer {
