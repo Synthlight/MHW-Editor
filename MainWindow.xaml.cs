@@ -68,7 +68,17 @@ namespace MHW_Editor {
                 foreach (MhwItem item in items) {
                     item.OnPropertyChanged(nameof(IMhwItem.Name),
                                            nameof(SkillDat.Name_And_Id),
-                                           nameof(SkillDat.Description));
+                                           nameof(SkillDat.Description),
+                                           nameof(EqCrt.Mat_1_Id_button),
+                                           nameof(EqCrt.Mat_2_Id_button),
+                                           nameof(EqCrt.Mat_3_Id_button),
+                                           nameof(EqCrt.Mat_4_Id_button),
+                                           nameof(NewLimitBreak.Needed_Item_Id_to_Unlock_button),
+                                           nameof(NewLimitBreak.Mat_1_button),
+                                           nameof(NewLimitBreak.Mat_2_button),
+                                           nameof(NewLimitBreak.Mat_3_button),
+                                           nameof(NewLimitBreak.Mat_4_button),
+                                           nameof(ASkill.Mantle_Item_Id_button));
                     // Won't work for skills as they need to be rebound to the right dictionary.
                     //nameof(Armor.Set_Skill_1),
                     //nameof(Armor.Set_Skill_2),
@@ -92,6 +102,8 @@ namespace MHW_Editor {
         }
 
         public bool SingleClickToEditMode { get; set; } = true;
+
+        public Dictionary<ushort, IdNamePair> itemDataProxy => DataHelper.itemData[locale];
 
         [CanBeNull]
         private CancellationTokenSource savedTimer;
@@ -129,11 +141,11 @@ namespace MHW_Editor {
             switch (e.PropertyName) {
                 case nameof(IMhwItem.Bytes):
                 case nameof(IMhwItem.Changed):
-                    e.Cancel = true;
+                    e.Cancel = true; // Internal.
                     break;
                 case nameof(IMhwItem.Offset):
                 case nameof(IMhwItem.Raw_Data):
-                    e.Cancel = !SHOW_RAW_BYTES;
+                    e.Cancel = !SHOW_RAW_BYTES; // Only for debug builds.
                     break;
                 case nameof(Ranged.Muzzle_Type):
                 case nameof(Ranged.Barrel_Type):
@@ -143,7 +155,7 @@ namespace MHW_Editor {
                 case nameof(Ranged.Deviation):
                     e.Cancel = targetFileType.Is(typeof(Bow));
                     break;
-                case nameof(IMhwItem.Name):
+                case nameof(IMhwItem.Name): // None of the following have names.
                     e.Cancel = targetFileType.Is(typeof(BottleTable),
                                                  typeof(ArmUp),
                                                  typeof(Sharpness),
@@ -161,6 +173,18 @@ namespace MHW_Editor {
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
+                    break;
+                case nameof(EqCrt.Mat_1_Id):
+                case nameof(EqCrt.Mat_2_Id):
+                case nameof(EqCrt.Mat_3_Id):
+                case nameof(EqCrt.Mat_4_Id):
+                case nameof(NewLimitBreak.Needed_Item_Id_to_Unlock):
+                case nameof(NewLimitBreak.Mat_1):
+                case nameof(NewLimitBreak.Mat_2):
+                case nameof(NewLimitBreak.Mat_3):
+                case nameof(NewLimitBreak.Mat_4):
+                case nameof(ASkill.Mantle_Item_Id):
+                    e.Cancel = true; // Cancel for itemId columns as we will use a text version with onClick opening a selector.
                     break;
                 default:
                     e.Cancel = e.PropertyName.EndsWith("Raw");
@@ -196,7 +220,7 @@ namespace MHW_Editor {
                 case nameof(NewLimitBreak.Mat_2):
                 case nameof(NewLimitBreak.Mat_3):
                 case nameof(NewLimitBreak.Mat_4):
-                case nameof(ASkill.Mantle_Item_Id): {
+                case nameof(ASkill.Mantle_Item_Id): { // Not hit right now as they are cancelled in favor of a string display.
                     var cb = new DataGridComboBoxColumn {
                         Header = e.Column.Header,
                         ItemsSource = DataHelper.itemData[locale],
@@ -205,6 +229,31 @@ namespace MHW_Editor {
                         DisplayMemberPath = "Value",
                         CanUserSort = true
                     };
+
+                    //var templateString = new StringBuilder();
+                    //templateString.AppendLine("<DataTemplate xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"");
+                    //templateString.AppendLine("              xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\">");
+                    //templateString.AppendLine("    <ComboBox DisplayMemberPath=\"Value\"");
+                    //templateString.AppendLine("              ItemsSource=\"{Binding itemDataProxy}\"");
+                    //templateString.AppendLine($"              SelectedValue=\"{{Binding {e.PropertyName}}}\"");
+                    //templateString.AppendLine("              SelectedValuePath=\"Key\">");
+                    //templateString.AppendLine("        <ComboBox.ItemsPanel>");
+                    //templateString.AppendLine("            <ItemsPanelTemplate>");
+                    //templateString.AppendLine("                <VirtualizingStackPanel/>");
+                    //templateString.AppendLine("            </ItemsPanelTemplate>");
+                    //templateString.AppendLine("        </ComboBox.ItemsPanel>");
+                    //templateString.AppendLine("    </ComboBox>");
+                    //templateString.AppendLine("</DataTemplate>");
+
+                    //var cb = new DataGridTemplateColumn {
+                    //    Header = e.Column.Header,
+                    //    CellTemplate = (DataTemplate) XamlReader.Parse(templateString.ToString()),
+                    //    CellEditingTemplate = (DataTemplate) XamlReader.Parse(templateString.ToString()),
+                    //    CanUserSort = true
+                    //};
+
+                    // new ComboBox().ItemTemplate = (DataTemplate) cell.FindResource("CustomTemplate")
+
                     e.Column = cb;
                     break;
                 }
