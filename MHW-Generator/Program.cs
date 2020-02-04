@@ -66,7 +66,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Mat 4 Count", 28, typeof(byte)),
                     new MhwStructData.Entry("Child index 1", 29, typeof(ushort)),
                     new MhwStructData.Entry("Child index 2", 31, typeof(ushort)),
-                    new MhwStructData.Entry("Child index 3", 33, typeof(ushort))
+                    new MhwStructData.Entry("Child index 3", 33, typeof(ushort)),
+                    new MhwStructData.Entry("Child index 4", 35, typeof(ushort))
                 }
             });
         }

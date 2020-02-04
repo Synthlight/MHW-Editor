@@ -45,6 +45,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -74,6 +76,9 @@
     <Compile Include="Generated\MHW_Editor\Items\EqCus.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak2.cs" />
+    <Compile Include="GetNewItemId.xaml.cs">
+      <DependentUpon>GetNewItemId.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Items\EqCus.cs" />
     <Compile Include="Items\EqCrt.cs" />
     <Compile Include="Models\ColumnHolder.cs" />
@@ -121,6 +126,10 @@
     <Compile Include="Weapons\WeaponWhistle.cs" />
     <Compile Include="Weapons\WeaponGunLance.cs" />
     <Compile Include="Weapons\WeaponWSword.cs" />
+    <Page Include="GetNewItemId.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

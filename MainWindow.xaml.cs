@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
+using System.Windows.Input;
 using JetBrains.Annotations;
 using MHW_Editor.Armors;
 using MHW_Editor.Assets;
@@ -102,8 +103,6 @@ namespace MHW_Editor {
         }
 
         public bool SingleClickToEditMode { get; set; } = true;
-
-        public Dictionary<ushort, IdNamePair> itemDataProxy => DataHelper.itemData[locale];
 
         [CanBeNull]
         private CancellationTokenSource savedTimer;
@@ -257,11 +256,48 @@ namespace MHW_Editor {
         private void Dg_items_GotFocus(object sender, RoutedEventArgs e) {
             // Lookup for the source to be DataGridCell
             if (SingleClickToEditMode && e.OriginalSource is DataGridCell cell) {
+                if (cell.Content is TextBlock) {
+                    dg_items_cell_MouseClick(cell, null);
+                    return;
+                }
+
                 // Starts the Edit on the row;
                 dg_items.BeginEdit(e);
+
                 if (cell.Content is ComboBox cbx) {
                     cbx.IsDropDownOpen = true;
                 }
+            }
+        }
+
+        private void dg_items_cell_MouseClick(object sender, MouseButtonEventArgs e) {
+            if (sender is DataGridCell cell) {
+                // We come here on both single & double click. If we don't check for focus, this hijacks the click and prevents focusing.
+                if (e?.ClickCount == 1 && !cell.IsFocused) return;
+
+                // Have to loop though our column list to file the original property name.
+                foreach (var propertyName in columnMap.Keys.Where(key => key.Contains("_button"))) {
+                    if (cell.Column != columnMap[propertyName].column) continue;
+
+                    EditSelectedItemId(cell, propertyName);
+                    break;
+                }
+            }
+        }
+
+        private void EditSelectedItemId(FrameworkElement cell, string propertyName) {
+            var obj = (MhwItem) cell.DataContext;
+            var property = obj.GetType().GetProperty(propertyName.Replace("_button", ""), BindingFlags.Public | BindingFlags.Instance);
+            Debug.Assert(property != null, nameof(property) + " != null");
+
+            var value = (ushort) Convert.ChangeType(property.GetValue(obj), TypeCode.UInt16);
+
+            var getNewItemId = new GetNewItemId(value);
+            getNewItemId.ShowDialog();
+
+            if (!getNewItemId.cancelled) {
+                property.SetValue(obj, getNewItemId.currentItem);
+                obj.OnPropertyChanged(propertyName);
             }
         }
 

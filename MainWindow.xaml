@@ -130,6 +130,15 @@
                   AutoGenerateColumns="True"
                   CanUserAddRows="False"
                   CanUserDeleteRows="False"
-                  SelectionUnit="CellOrRowHeader"/>
+                  SelectionUnit="CellOrRowHeader">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <EventSetter Event="PreviewMouseLeftButtonDown"
+                                 Handler="dg_items_cell_MouseClick"/>
+                    <EventSetter Event="MouseDoubleClick"
+                                 Handler="dg_items_cell_MouseClick"/>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
     </Grid>
 </Window>

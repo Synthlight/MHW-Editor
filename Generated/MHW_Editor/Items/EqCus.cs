@@ -195,5 +195,16 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Child_index_3));
             }
         }
+        protected const string Child_index_4_displayName = "Child index 4";
+        protected const int Child_index_4_sortIndex = 900;
+        [SortOrder(Child_index_4_sortIndex)]
+        [DisplayName(Child_index_4_displayName)]
+        public ushort Child_index_4 {
+            get => GetData<ushort>(35);
+            set {
+                SetData(35, value);
+                OnPropertyChanged(nameof(Child_index_4));
+            }
+        }
     }
 }
