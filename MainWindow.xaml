@@ -134,9 +134,9 @@
             <DataGrid.Resources>
                 <Style TargetType="{x:Type DataGridCell}">
                     <EventSetter Event="PreviewMouseLeftButtonDown"
-                                 Handler="dg_items_cell_MouseClick"/>
+                                 Handler="Dg_items_cell_MouseClick"/>
                     <EventSetter Event="MouseDoubleClick"
-                                 Handler="dg_items_cell_MouseClick"/>
+                                 Handler="Dg_items_cell_MouseClick"/>
                 </Style>
             </DataGrid.Resources>
         </DataGrid>

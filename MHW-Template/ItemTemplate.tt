@@ -10,6 +10,7 @@
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
+using MHW_Template.Models;
 
 namespace <#= _namespace #> {
     public partial class <#= className #> {
@@ -39,6 +40,13 @@ namespace <#= _namespace #> {
         protected const int <#= name #>_sortIndex = <#= sortIndex #>;
         [SortOrder(<#= name #>_sortIndex)]
         [DisplayName(<#= name #>_displayName)]
+<#
+        if (entry.dataSourceType != null) {
+#>
+        [DataSource(DataSourceType.<#= entry.dataSourceType #>)]
+<#
+        }
+#>
         <#= entry.accessLevel #> <#= returnString #> <#= name #> {
             get => <#= getCast #>GetData<<#= typeString #>>(<#= entry.offset #>);
 <#

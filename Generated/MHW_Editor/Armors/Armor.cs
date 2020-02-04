@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
+using MHW_Template.Models;
 
 namespace MHW_Editor.Armors {
     public partial class Armor {
@@ -206,6 +207,7 @@ namespace MHW_Editor.Armors {
         protected const int Set_Skill_1_sortIndex = 950;
         [SortOrder(Set_Skill_1_sortIndex)]
         [DisplayName(Set_Skill_1_displayName)]
+        [DataSource(DataSourceType.Skills)]
         public ushort Set_Skill_1 {
             get => GetData<ushort>(34);
             set {
@@ -228,6 +230,7 @@ namespace MHW_Editor.Armors {
         protected const int Set_Skill_2_sortIndex = 1050;
         [SortOrder(Set_Skill_2_sortIndex)]
         [DisplayName(Set_Skill_2_displayName)]
+        [DataSource(DataSourceType.Skills)]
         public ushort Set_Skill_2 {
             get => GetData<ushort>(37);
             set {
@@ -250,6 +253,7 @@ namespace MHW_Editor.Armors {
         protected const int Skill_1_sortIndex = 1150;
         [SortOrder(Skill_1_sortIndex)]
         [DisplayName(Skill_1_displayName)]
+        [DataSource(DataSourceType.Skills)]
         public ushort Skill_1 {
             get => GetData<ushort>(40);
             set {
@@ -272,6 +276,7 @@ namespace MHW_Editor.Armors {
         protected const int Skill_2_sortIndex = 1250;
         [SortOrder(Skill_2_sortIndex)]
         [DisplayName(Skill_2_displayName)]
+        [DataSource(DataSourceType.Skills)]
         public ushort Skill_2 {
             get => GetData<ushort>(43);
             set {
@@ -294,6 +299,7 @@ namespace MHW_Editor.Armors {
         protected const int Skill_3_sortIndex = 1350;
         [SortOrder(Skill_3_sortIndex)]
         [DisplayName(Skill_3_displayName)]
+        [DataSource(DataSourceType.Skills)]
         public ushort Skill_3 {
             get => GetData<ushort>(46);
             set {

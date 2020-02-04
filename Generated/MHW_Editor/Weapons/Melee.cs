@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
+using MHW_Template.Models;
 
 namespace MHW_Editor.Weapons {
     public partial class Melee {
@@ -268,6 +269,7 @@ namespace MHW_Editor.Weapons {
         protected const int Skill_sortIndex = 1250;
         [SortOrder(Skill_sortIndex)]
         [DisplayName(Skill_displayName)]
+        [DataSource(DataSourceType.Skills)]
         public ushort Skill {
             get => GetData<ushort>(62);
             set {

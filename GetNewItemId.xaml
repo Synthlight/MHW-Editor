@@ -30,7 +30,7 @@
                                        IsDropDownOpen="True"
                                        IsEditable="True"
                                        IsTextSearchEnabled="False"
-                                       ItemsSource="{Binding itemDataProxy}"
+                                       ItemsSource="{Binding dataProxy}"
                                        SelectedValue="{Binding currentItem}"
                                        SelectedValuePath="Key"
                                        StaysOpenOnEdit="True">
@@ -43,10 +43,10 @@
         <Button Name="btn_ok"
                 Grid.Row="1"
                 Grid.Column="0"
-                Content="Ok"/>
+                Content="Ok (Enter)"/>
         <Button Name="btn_cancel"
                 Grid.Row="1"
                 Grid.Column="1"
-                Content="Cancel"/>
+                Content="Cancel (Esc)"/>
     </Grid>
 </Window>

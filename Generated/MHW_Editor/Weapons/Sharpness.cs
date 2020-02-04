@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
+using MHW_Template.Models;
 
 namespace MHW_Editor.Weapons {
     public partial class Sharpness {

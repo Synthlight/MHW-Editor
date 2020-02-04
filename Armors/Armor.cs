@@ -2,7 +2,6 @@
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
-using MHW_Template;
 
 namespace MHW_Editor.Armors {
     public partial class Armor : MhwItem, ISlots {
@@ -17,5 +16,25 @@ namespace MHW_Editor.Armors {
             get => Convert.ToBoolean(Is_Permanent_Raw);
             set => Is_Permanent_Raw = Convert.ToByte(value);
         }
+
+        [SortOrder(Set_Skill_1_sortIndex)]
+        [DisplayName(Set_Skill_1_displayName)]
+        public string Set_Skill_1_button => DataHelper.skillData[MainWindow.locale][Set_Skill_1].ToString();
+
+        [SortOrder(Set_Skill_2_sortIndex)]
+        [DisplayName(Set_Skill_2_displayName)]
+        public string Set_Skill_2_button => DataHelper.skillData[MainWindow.locale][Set_Skill_2].ToString();
+
+        [SortOrder(Skill_1_sortIndex)]
+        [DisplayName(Skill_1_displayName)]
+        public string Skill_1_button => DataHelper.skillData[MainWindow.locale][Skill_1].ToString();
+
+        [SortOrder(Skill_2_sortIndex)]
+        [DisplayName(Skill_2_displayName)]
+        public string Skill_2_button => DataHelper.skillData[MainWindow.locale][Skill_2].ToString();
+
+        [SortOrder(Skill_3_sortIndex)]
+        [DisplayName(Skill_3_displayName)]
+        public string Skill_3_button => DataHelper.skillData[MainWindow.locale][Skill_3].ToString();
     }
 }

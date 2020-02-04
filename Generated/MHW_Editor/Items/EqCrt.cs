@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
+using MHW_Template.Models;
 
 namespace MHW_Editor.Items {
     public partial class EqCrt {
@@ -89,6 +90,7 @@ namespace MHW_Editor.Items {
         protected const int Mat_1_Id_sortIndex = 400;
         [SortOrder(Mat_1_Id_sortIndex)]
         [DisplayName(Mat_1_Id_displayName)]
+        [DataSource(DataSourceType.Items)]
         public ushort Mat_1_Id {
             get => GetData<ushort>(21);
             set {
@@ -111,6 +113,7 @@ namespace MHW_Editor.Items {
         protected const int Mat_2_Id_sortIndex = 500;
         [SortOrder(Mat_2_Id_sortIndex)]
         [DisplayName(Mat_2_Id_displayName)]
+        [DataSource(DataSourceType.Items)]
         public ushort Mat_2_Id {
             get => GetData<ushort>(24);
             set {
@@ -133,6 +136,7 @@ namespace MHW_Editor.Items {
         protected const int Mat_3_Id_sortIndex = 600;
         [SortOrder(Mat_3_Id_sortIndex)]
         [DisplayName(Mat_3_Id_displayName)]
+        [DataSource(DataSourceType.Items)]
         public ushort Mat_3_Id {
             get => GetData<ushort>(27);
             set {
@@ -155,6 +159,7 @@ namespace MHW_Editor.Items {
         protected const int Mat_4_Id_sortIndex = 700;
         [SortOrder(Mat_4_Id_sortIndex)]
         [DisplayName(Mat_4_Id_displayName)]
+        [DataSource(DataSourceType.Items)]
         public ushort Mat_4_Id {
             get => GetData<ushort>(30);
             set {

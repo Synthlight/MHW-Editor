@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
+using MHW_Template.Models;
 
 namespace MHW_Editor.Skills {
     public partial class ASkill {
@@ -56,6 +57,7 @@ namespace MHW_Editor.Skills {
         protected const int Mantle_Item_Id_sortIndex = 250;
         [SortOrder(Mantle_Item_Id_sortIndex)]
         [DisplayName(Mantle_Item_Id_displayName)]
+        [DataSource(DataSourceType.Items)]
         public uint Mantle_Item_Id {
             get => GetData<uint>(12);
             set {

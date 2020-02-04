@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
+using MHW_Template.Models;
 
 namespace MHW_Editor.Weapons {
     public partial class NewLimitBreak {
@@ -26,6 +27,7 @@ namespace MHW_Editor.Weapons {
         protected const int Needed_Item_Id_to_Unlock_sortIndex = 150;
         [SortOrder(Needed_Item_Id_to_Unlock_sortIndex)]
         [DisplayName(Needed_Item_Id_to_Unlock_displayName)]
+        [DataSource(DataSourceType.Items)]
         public ushort Needed_Item_Id_to_Unlock {
             get => GetData<ushort>(4);
             set {
@@ -77,92 +79,96 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Activated_4));
             }
         }
-        protected const string Mat_1_displayName = "Mat 1";
-        protected const int Mat_1_sortIndex = 400;
-        [SortOrder(Mat_1_sortIndex)]
-        [DisplayName(Mat_1_displayName)]
-        public ushort Mat_1 {
+        protected const string Mat_1_Id_displayName = "Mat 1 Id";
+        protected const int Mat_1_Id_sortIndex = 400;
+        [SortOrder(Mat_1_Id_sortIndex)]
+        [DisplayName(Mat_1_Id_displayName)]
+        [DataSource(DataSourceType.Items)]
+        public ushort Mat_1_Id {
             get => GetData<ushort>(14);
             set {
                 SetData(14, value);
-                OnPropertyChanged(nameof(Mat_1));
+                OnPropertyChanged(nameof(Mat_1_Id));
             }
         }
-        protected const string Mat_1_Quantity_displayName = "Mat 1 Quantity";
-        protected const int Mat_1_Quantity_sortIndex = 450;
-        [SortOrder(Mat_1_Quantity_sortIndex)]
-        [DisplayName(Mat_1_Quantity_displayName)]
-        public byte Mat_1_Quantity {
+        protected const string Mat_1_Count_displayName = "Mat 1 Count";
+        protected const int Mat_1_Count_sortIndex = 450;
+        [SortOrder(Mat_1_Count_sortIndex)]
+        [DisplayName(Mat_1_Count_displayName)]
+        public byte Mat_1_Count {
             get => GetData<byte>(16);
             set {
                 SetData(16, value);
-                OnPropertyChanged(nameof(Mat_1_Quantity));
+                OnPropertyChanged(nameof(Mat_1_Count));
             }
         }
-        protected const string Mat_2_displayName = "Mat 2";
-        protected const int Mat_2_sortIndex = 500;
-        [SortOrder(Mat_2_sortIndex)]
-        [DisplayName(Mat_2_displayName)]
-        public ushort Mat_2 {
+        protected const string Mat_2_Id_displayName = "Mat 2 Id";
+        protected const int Mat_2_Id_sortIndex = 500;
+        [SortOrder(Mat_2_Id_sortIndex)]
+        [DisplayName(Mat_2_Id_displayName)]
+        [DataSource(DataSourceType.Items)]
+        public ushort Mat_2_Id {
             get => GetData<ushort>(17);
             set {
                 SetData(17, value);
-                OnPropertyChanged(nameof(Mat_2));
+                OnPropertyChanged(nameof(Mat_2_Id));
             }
         }
-        protected const string Mat_2_Quantity_displayName = "Mat 2 Quantity";
-        protected const int Mat_2_Quantity_sortIndex = 550;
-        [SortOrder(Mat_2_Quantity_sortIndex)]
-        [DisplayName(Mat_2_Quantity_displayName)]
-        public byte Mat_2_Quantity {
+        protected const string Mat_2_Count_displayName = "Mat 2 Count";
+        protected const int Mat_2_Count_sortIndex = 550;
+        [SortOrder(Mat_2_Count_sortIndex)]
+        [DisplayName(Mat_2_Count_displayName)]
+        public byte Mat_2_Count {
             get => GetData<byte>(19);
             set {
                 SetData(19, value);
-                OnPropertyChanged(nameof(Mat_2_Quantity));
+                OnPropertyChanged(nameof(Mat_2_Count));
             }
         }
-        protected const string Mat_3_displayName = "Mat 3";
-        protected const int Mat_3_sortIndex = 600;
-        [SortOrder(Mat_3_sortIndex)]
-        [DisplayName(Mat_3_displayName)]
-        public ushort Mat_3 {
+        protected const string Mat_3_Id_displayName = "Mat 3 Id";
+        protected const int Mat_3_Id_sortIndex = 600;
+        [SortOrder(Mat_3_Id_sortIndex)]
+        [DisplayName(Mat_3_Id_displayName)]
+        [DataSource(DataSourceType.Items)]
+        public ushort Mat_3_Id {
             get => GetData<ushort>(20);
             set {
                 SetData(20, value);
-                OnPropertyChanged(nameof(Mat_3));
+                OnPropertyChanged(nameof(Mat_3_Id));
             }
         }
-        protected const string Mat_3_Quantity_displayName = "Mat 3 Quantity";
-        protected const int Mat_3_Quantity_sortIndex = 650;
-        [SortOrder(Mat_3_Quantity_sortIndex)]
-        [DisplayName(Mat_3_Quantity_displayName)]
-        public byte Mat_3_Quantity {
+        protected const string Mat_3_Count_displayName = "Mat 3 Count";
+        protected const int Mat_3_Count_sortIndex = 650;
+        [SortOrder(Mat_3_Count_sortIndex)]
+        [DisplayName(Mat_3_Count_displayName)]
+        public byte Mat_3_Count {
             get => GetData<byte>(22);
             set {
                 SetData(22, value);
-                OnPropertyChanged(nameof(Mat_3_Quantity));
+                OnPropertyChanged(nameof(Mat_3_Count));
             }
         }
-        protected const string Mat_4_displayName = "Mat 4";
-        protected const int Mat_4_sortIndex = 700;
-        [SortOrder(Mat_4_sortIndex)]
-        [DisplayName(Mat_4_displayName)]
-        public ushort Mat_4 {
+        protected const string Mat_4_Id_displayName = "Mat 4 Id";
+        protected const int Mat_4_Id_sortIndex = 700;
+        [SortOrder(Mat_4_Id_sortIndex)]
+        [DisplayName(Mat_4_Id_displayName)]
+        [DataSource(DataSourceType.Items)]
+        public ushort Mat_4_Id {
             get => GetData<ushort>(23);
             set {
                 SetData(23, value);
-                OnPropertyChanged(nameof(Mat_4));
+                OnPropertyChanged(nameof(Mat_4_Id));
             }
         }
-        protected const string Mat_4_Quantity_displayName = "Mat 4 Quantity";
-        protected const int Mat_4_Quantity_sortIndex = 750;
-        [SortOrder(Mat_4_Quantity_sortIndex)]
-        [DisplayName(Mat_4_Quantity_displayName)]
-        public byte Mat_4_Quantity {
+        protected const string Mat_4_Count_displayName = "Mat 4 Count";
+        protected const int Mat_4_Count_sortIndex = 750;
+        [SortOrder(Mat_4_Count_sortIndex)]
+        [DisplayName(Mat_4_Count_displayName)]
+        public byte Mat_4_Count {
             get => GetData<byte>(24);
             set {
                 SetData(24, value);
-                OnPropertyChanged(nameof(Mat_4_Quantity));
+                OnPropertyChanged(nameof(Mat_4_Count));
             }
         }
         protected const string Id_3_displayName = "Id 3";

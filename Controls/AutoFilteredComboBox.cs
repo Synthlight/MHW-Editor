@@ -107,7 +107,7 @@ namespace MHW_Editor.Controls {
             if (CurrentFilter.Length == 0) return true;
 
             if (value is KeyValuePair<ushort, IdNamePair> obj) {
-                return obj.Value.name.ToLower().Contains(CurrentFilter);
+                return obj.Value.name.ToLower().Contains(CurrentFilter) || obj.Value.id.ToString().ToLower().Contains(CurrentFilter);
             }
 
             return value.ToString().ToLower().Contains(CurrentFilter);

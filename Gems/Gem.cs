@@ -1,4 +1,5 @@
-﻿using MHW_Editor.Assets;
+﻿using System.ComponentModel;
+using MHW_Editor.Assets;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Gems {
@@ -7,5 +8,13 @@ namespace MHW_Editor.Gems {
         }
 
         public override string Name => DataHelper.itemData[MainWindow.locale][Id].name;
+
+        [SortOrder(Skill_1_sortIndex)]
+        [DisplayName(Skill_1_displayName)]
+        public string Skill_1_button => DataHelper.skillData[MainWindow.locale][Skill_1].ToString();
+
+        [SortOrder(Skill_2_sortIndex)]
+        [DisplayName(Skill_2_displayName)]
+        public string Skill_2_button => DataHelper.skillData[MainWindow.locale][Skill_2].ToString();
     }
 }

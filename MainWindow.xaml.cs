@@ -21,6 +21,7 @@ using MHW_Editor.Models;
 using MHW_Editor.Skills;
 using MHW_Editor.Weapons;
 using MHW_Template;
+using MHW_Template.Models;
 using MHW_Template.Weapons;
 using Microsoft.Win32;
 
@@ -75,18 +76,13 @@ namespace MHW_Editor {
                                            nameof(EqCrt.Mat_3_Id_button),
                                            nameof(EqCrt.Mat_4_Id_button),
                                            nameof(NewLimitBreak.Needed_Item_Id_to_Unlock_button),
-                                           nameof(NewLimitBreak.Mat_1_button),
-                                           nameof(NewLimitBreak.Mat_2_button),
-                                           nameof(NewLimitBreak.Mat_3_button),
-                                           nameof(NewLimitBreak.Mat_4_button),
-                                           nameof(ASkill.Mantle_Item_Id_button));
-                    // Won't work for skills as they need to be rebound to the right dictionary.
-                    //nameof(Armor.Set_Skill_1),
-                    //nameof(Armor.Set_Skill_2),
-                    //nameof(Armor.Skill_1),
-                    //nameof(Armor.Skill_2),
-                    //nameof(Armor.Skill_3),
-                    //nameof(Melee.Skill));
+                                           nameof(ASkill.Mantle_Item_Id_button),
+                                           nameof(Armor.Set_Skill_1_button),
+                                           nameof(Armor.Set_Skill_2_button),
+                                           nameof(Armor.Skill_1_button),
+                                           nameof(Armor.Skill_2_button),
+                                           nameof(Armor.Skill_3_button),
+                                           nameof(Melee.Skill_button));
                 }
             }
         }
@@ -97,7 +93,7 @@ namespace MHW_Editor {
             set {
                 showIdBeforeName = value;
                 foreach (MhwItem item in items) {
-                    item.OnPropertyChanged(nameof(Gem.Skill_1), nameof(Gem.Skill_2));
+                    item.OnPropertyChanged(nameof(Gem.Skill_1_button), nameof(Gem.Skill_2_button));
                 }
             }
         }
@@ -178,12 +174,14 @@ namespace MHW_Editor {
                 case nameof(EqCrt.Mat_3_Id):
                 case nameof(EqCrt.Mat_4_Id):
                 case nameof(NewLimitBreak.Needed_Item_Id_to_Unlock):
-                case nameof(NewLimitBreak.Mat_1):
-                case nameof(NewLimitBreak.Mat_2):
-                case nameof(NewLimitBreak.Mat_3):
-                case nameof(NewLimitBreak.Mat_4):
                 case nameof(ASkill.Mantle_Item_Id):
-                    e.Cancel = true; // Cancel for itemId columns as we will use a text version with onClick opening a selector.
+                case nameof(Armor.Set_Skill_1):
+                case nameof(Armor.Set_Skill_2):
+                case nameof(Armor.Skill_1):
+                case nameof(Armor.Skill_2):
+                case nameof(Armor.Skill_3):
+                case nameof(Melee.Skill):
+                    e.Cancel = true; // Cancel for itemId/skillId columns as we will use a text version with onClick opening a selector.
                     break;
                 default:
                     e.Cancel = e.PropertyName.EndsWith("Raw");
@@ -193,23 +191,6 @@ namespace MHW_Editor {
             if (e.Cancel) return;
 
             switch (e.PropertyName) {
-                case nameof(Armor.Set_Skill_1):
-                case nameof(Armor.Set_Skill_2):
-                case nameof(Armor.Skill_1):
-                case nameof(Armor.Skill_2):
-                case nameof(Armor.Skill_3):
-                case nameof(Melee.Skill): {
-                    var cb = new DataGridComboBoxColumn {
-                        Header = e.Column.Header,
-                        ItemsSource = DataHelper.skillData[locale],
-                        SelectedValueBinding = new Binding(e.PropertyName),
-                        SelectedValuePath = "Key",
-                        DisplayMemberPath = "Value",
-                        CanUserSort = true
-                    };
-                    e.Column = cb;
-                    break;
-                }
                 case nameof(EqCrt.Item_Category): {
                     var fileName = Path.GetFileNameWithoutExtension(targetFile);
                     if (!EqCrt.categoryLookup.ContainsKey(fileName)) break;
@@ -257,7 +238,7 @@ namespace MHW_Editor {
             // Lookup for the source to be DataGridCell
             if (SingleClickToEditMode && e.OriginalSource is DataGridCell cell) {
                 if (cell.Content is TextBlock) {
-                    dg_items_cell_MouseClick(cell, null);
+                    Dg_items_cell_MouseClick(cell, null);
                     return;
                 }
 
@@ -270,7 +251,7 @@ namespace MHW_Editor {
             }
         }
 
-        private void dg_items_cell_MouseClick(object sender, MouseButtonEventArgs e) {
+        private void Dg_items_cell_MouseClick(object sender, MouseButtonEventArgs e) {
             if (sender is DataGridCell cell) {
                 // We come here on both single & double click. If we don't check for focus, this hijacks the click and prevents focusing.
                 if (e?.ClickCount == 1 && !cell.IsFocused) return;
@@ -287,12 +268,24 @@ namespace MHW_Editor {
 
         private void EditSelectedItemId(FrameworkElement cell, string propertyName) {
             var obj = (MhwItem) cell.DataContext;
-            var property = obj.GetType().GetProperty(propertyName.Replace("_button", ""), BindingFlags.Public | BindingFlags.Instance);
+            var property = obj.GetType().GetProperty(propertyName.Replace("_button", ""), BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
             Debug.Assert(property != null, nameof(property) + " != null");
 
             var value = (ushort) Convert.ChangeType(property.GetValue(obj), TypeCode.UInt16);
+            var dataSourceType = ((DataSourceAttribute) property.GetCustomAttribute(typeof(DataSourceAttribute), true))?.dataType;
 
-            var getNewItemId = new GetNewItemId(value);
+            Dictionary<ushort, IdNamePair> dataSource;
+            switch (dataSourceType) {
+                case DataSourceType.Items:
+                    dataSource = DataHelper.itemData[locale];
+                    break;
+                case DataSourceType.Skills:
+                    dataSource = DataHelper.skillData[locale];
+                    break;
+                default: throw new ArgumentOutOfRangeException();
+            }
+
+            var getNewItemId = new GetNewItemId(value, dataSource);
             getNewItemId.ShowDialog();
 
             if (!getNewItemId.cancelled) {

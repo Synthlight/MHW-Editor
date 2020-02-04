@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
+using MHW_Template.Models;
 
 namespace MHW_Editor.Gems {
     public partial class Gem {
@@ -37,6 +38,7 @@ namespace MHW_Editor.Gems {
         protected const int Skill_1_sortIndex = 200;
         [SortOrder(Skill_1_sortIndex)]
         [DisplayName(Skill_1_displayName)]
+        [DataSource(DataSourceType.Skills)]
         public ushort Skill_1 {
             get => GetData<ushort>(12);
             set {
@@ -59,6 +61,7 @@ namespace MHW_Editor.Gems {
         protected const int Skill_2_sortIndex = 300;
         [SortOrder(Skill_2_sortIndex)]
         [DisplayName(Skill_2_displayName)]
+        [DataSource(DataSourceType.Skills)]
         public ushort Skill_2 {
             get => GetData<ushort>(20);
             set {

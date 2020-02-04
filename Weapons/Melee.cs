@@ -19,5 +19,9 @@ namespace MHW_Editor.Weapons {
             get => Convert.ToBoolean(Is_Fixed_Upgrade_Raw);
             set => Is_Fixed_Upgrade_Raw = Convert.ToByte(value);
         }
+
+        [SortOrder(Skill_sortIndex)]
+        [DisplayName(Skill_displayName)]
+        public string Skill_button => DataHelper.skillData[MainWindow.locale][Skill].ToString();
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Input;
-using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using Application = System.Windows.Application;
 using Control = System.Windows.Forms.Control;
@@ -12,10 +11,11 @@ namespace MHW_Editor {
         public bool cancelled { get; private set; }
 
         // ReSharper disable once MemberCanBeMadeStatic.Global
-        public Dictionary<ushort, IdNamePair> itemDataProxy => DataHelper.itemData[MainWindow.locale];
+        public Dictionary<ushort, IdNamePair> dataProxy { get; }
 
-        public GetNewItemId(ushort currentItem) {
+        public GetNewItemId(ushort currentItem, Dictionary<ushort, IdNamePair> data) {
             this.currentItem = currentItem;
+            dataProxy = data;
 
             InitializeComponent();
 

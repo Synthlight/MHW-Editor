@@ -13,20 +13,20 @@ namespace MHW_Editor.Weapons {
         [DisplayName(Needed_Item_Id_to_Unlock_displayName)]
         public string Needed_Item_Id_to_Unlock_button => DataHelper.itemData[MainWindow.locale][Needed_Item_Id_to_Unlock].ToString();
 
-        [SortOrder(Mat_1_sortIndex)]
-        [DisplayName(Mat_1_displayName)]
-        public string Mat_1_button => DataHelper.itemData[MainWindow.locale][Mat_1].ToString();
+        [SortOrder(Mat_1_Id_sortIndex)]
+        [DisplayName(Mat_1_Id_displayName)]
+        public string Mat_1_Id_button => DataHelper.itemData[MainWindow.locale][Mat_1_Id].ToString();
 
-        [SortOrder(Mat_2_sortIndex)]
-        [DisplayName(Mat_2_displayName)]
-        public string Mat_2_button => DataHelper.itemData[MainWindow.locale][Mat_2].ToString();
+        [SortOrder(Mat_2_Id_sortIndex)]
+        [DisplayName(Mat_2_Id_displayName)]
+        public string Mat_2_Id_button => DataHelper.itemData[MainWindow.locale][Mat_2_Id].ToString();
 
-        [SortOrder(Mat_3_sortIndex)]
-        [DisplayName(Mat_3_displayName)]
-        public string Mat_3_button => DataHelper.itemData[MainWindow.locale][Mat_3].ToString();
+        [SortOrder(Mat_3_Id_sortIndex)]
+        [DisplayName(Mat_3_Id_displayName)]
+        public string Mat_3_Id_button => DataHelper.itemData[MainWindow.locale][Mat_3_Id].ToString();
 
-        [SortOrder(Mat_4_sortIndex)]
-        [DisplayName(Mat_4_displayName)]
-        public string Mat_4_button => DataHelper.itemData[MainWindow.locale][Mat_4].ToString();
+        [SortOrder(Mat_4_Id_sortIndex)]
+        [DisplayName(Mat_4_Id_displayName)]
+        public string Mat_4_Id_button => DataHelper.itemData[MainWindow.locale][Mat_4_Id].ToString();
     }
 }

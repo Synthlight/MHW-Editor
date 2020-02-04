@@ -1,6 +1,7 @@
 ﻿using System;
 using System.CodeDom;
 using System.Collections.Generic;
+using MHW_Template.Models;
 
 namespace MHW_Template {
     public class MhwStructData {
@@ -17,8 +18,9 @@ namespace MHW_Template {
             public readonly bool readOnly;
             public readonly string valueString;
             public readonly string accessLevel;
+            public readonly DataSourceType? dataSourceType;
 
-            public Entry(string displayName, ulong offset, Type type, bool readOnly = false, Type enumReturn = null, string valueString = "value", string accessLevel = "public") {
+            public Entry(string displayName, ulong offset, Type type, bool readOnly = false, Type enumReturn = null, string valueString = "value", string accessLevel = "public", DataSourceType? dataSourceType = null) {
                 this.displayName = displayName;
                 this.offset = offset;
                 this.type = new CodeTypeReference(type);
@@ -26,6 +28,7 @@ namespace MHW_Template {
                 this.valueString = valueString;
                 this.accessLevel = accessLevel;
                 this.enumReturn = enumReturn == null ? null : new CodeTypeReference(enumReturn);
+                this.dataSourceType = dataSourceType;
             }
 
             public Entry(string name, ulong offset, Type type, Type enumReturn) : this(name, offset, type) {
