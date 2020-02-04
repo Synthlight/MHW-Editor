@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Windows;
+using System.Windows.Forms;
 using System.Windows.Input;
 using MHW_Editor.Models;
 using Application = System.Windows.Application;
-using Control = System.Windows.Forms.Control;
+using KeyEventArgs = System.Windows.Input.KeyEventArgs;
 
 namespace MHW_Editor {
     public partial class GetNewItemId {
