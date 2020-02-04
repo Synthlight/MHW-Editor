@@ -45,6 +45,8 @@ namespace MHW_Editor {
             "*.kire",
             "*.new_lb",
             "*.new_lbr",
+            "*.plfe",
+            "*.plit",
             "*.sgpa",
             "*.shl_tbl",
             "*.skl_dat",
@@ -82,7 +84,8 @@ namespace MHW_Editor {
                                            nameof(Armor.Skill_1_button),
                                            nameof(Armor.Skill_2_button),
                                            nameof(Armor.Skill_3_button),
-                                           nameof(Melee.Skill_button));
+                                           nameof(Melee.Skill_button),
+                                           nameof(Plit.Item_button));
                 }
             }
         }
@@ -164,7 +167,9 @@ namespace MHW_Editor {
                                                  typeof(SkillPointData),
                                                  typeof(ASkill),
                                                  typeof(EqCrt),
-                                                 typeof(EqCus));
+                                                 typeof(EqCus),
+                                                 typeof(Plfe),
+                                                 typeof(Plit));
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
@@ -181,6 +186,7 @@ namespace MHW_Editor {
                 case nameof(Armor.Skill_2):
                 case nameof(Armor.Skill_3):
                 case nameof(Melee.Skill):
+                case nameof(Plit.Item):
                     e.Cancel = true; // Cancel for itemId/skillId columns as we will use a text version with onClick opening a selector.
                     break;
                 default:
@@ -871,6 +877,14 @@ namespace MHW_Editor {
 
             if (fileName.EndsWith(".eq_cus")) {
                 return typeof(EqCus);
+            }
+
+            if (fileName.EndsWith(".plfe")) {
+                return typeof(Plfe);
+            }
+
+            if (fileName.EndsWith(".plit")) {
+                return typeof(Plit);
             }
 
             throw new Exception($"No type found for: {fileName}");

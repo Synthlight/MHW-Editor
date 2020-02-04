@@ -75,11 +75,15 @@
     <Compile Include="Controls\AutoFilteredComboBox.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCrt.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCus.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\Plfe.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\Plit.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak2.cs" />
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Items\Plfe.cs" />
+    <Compile Include="Items\Plit.cs" />
     <Compile Include="Items\EqCus.cs" />
     <Compile Include="Items\EqCrt.cs" />
     <Compile Include="Models\ColumnHolder.cs" />

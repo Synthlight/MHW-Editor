@@ -47,6 +47,8 @@
     <Compile Include="Armors\Variant.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Global.cs" />
+    <Compile Include="Items\CultivationCategory.cs" />
+    <Compile Include="Items\Fertilizer.cs" />
     <Compile Include="Items\ItemFlags.cs" />
     <Compile Include="Items\ItemSubType.cs" />
     <Compile Include="Items\ItemType.cs" />
