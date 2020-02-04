@@ -54,7 +54,7 @@ namespace MHW_Editor {
             "*.wep_wsd",
             "*.wep_wsl",
             "*.wp_dat",
-            "*.wp_dat_g",
+            "*.wp_dat_g"
         };
 
         private readonly ObservableCollection<dynamic> items = new ObservableCollection<dynamic>();
@@ -294,7 +294,7 @@ namespace MHW_Editor {
             }
         }
 
-        private void Dg_items_Sorting(object sender, DataGridSortingEventArgs e) {
+        private void Dg_items_Sorting(object sender, DataGridSortingEventArgs e) { // TODO: Fix sorting for skill/item id columns.
             // || targetFileType.Is(typeof(Gem)) && (string) e.Column.Header == "Skill 1"
             // || targetFileType.Is(typeof(Gem)) && (string) e.Column.Header == "Skill 2"
             if (targetFileType.Is(typeof(SkillDat)) && e.Column == columnMap[nameof(SkillDat.Name_And_Id)].column) {
