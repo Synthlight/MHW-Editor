@@ -415,6 +415,58 @@ namespace MHW_Editor {
                             armor.Skill_3_Level = 10;
                         }
 
+                        // Gathering Set
+
+                        // 817: Guildwork Body α+
+                        if (armor.Id == 817) {
+                            armor.Skill_1 = SkillDataValueClass.Cliffhanger;
+                            armor.Skill_1_Level = 10;
+                            armor.Skill_2 = SkillDataValueClass.Quick_Sheath;
+                            armor.Skill_2_Level = 10;
+                            armor.Skill_3 = SkillDataValueClass.Recovery_Speed;
+                            armor.Skill_3_Level = 10;
+                        }
+
+                        // 1239: Guildwork Braces α+
+                        if (armor.Id == 1239) {
+                            armor.Skill_1 = SkillDataValueClass.Honey_Hunter;
+                            armor.Skill_1_Level = 10;
+                            armor.Skill_2 = SkillDataValueClass.Master_Gatherer;
+                            armor.Skill_2_Level = 10;
+                            armor.Skill_3 = SkillDataValueClass.Pro_Transporter;
+                            armor.Skill_3_Level = 10;
+                        }
+
+                        // 1656: Guildwork Waist α+
+                        if (armor.Id == 1656) {
+                            armor.Skill_1 = SkillDataValueClass.Scoutfly_Range_Up;
+                            armor.Skill_1_Level = 10;
+                            armor.Skill_2 = SkillDataValueClass.Coldproof;
+                            armor.Skill_2_Level = 10;
+                            armor.Skill_3 = SkillDataValueClass.Heat_Guard;
+                            armor.Skill_3_Level = 10;
+                        }
+
+                        // 2078: Guildwork Feet α+
+                        if (armor.Id == 2078) {
+                            armor.Skill_1 = SkillDataValueClass.Hunger_Resistance;
+                            armor.Skill_1_Level = 10;
+                            armor.Skill_2 = SkillDataValueClass.Item_Prolonger;
+                            armor.Skill_2_Level = 10;
+                            armor.Skill_3 = SkillDataValueClass.Paralysis_Resistance;
+                            armor.Skill_3_Level = 10;
+                        }
+
+                        // 2399: Geomancy Charm
+                        if (armor.Id == 2399) {
+                            armor.Skill_1 = SkillDataValueClass.Forager_s_Luck;
+                            armor.Skill_1_Level = 10;
+                            armor.Skill_2 = SkillDataValueClass.Detector;
+                            armor.Skill_2_Level = 10;
+                            armor.Skill_3 = SkillDataValueClass.Scenthound;
+                            armor.Skill_3_Level = 10;
+                        }
+
                         break;
                     }
                 }
