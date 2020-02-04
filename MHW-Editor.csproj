@@ -72,6 +72,7 @@
       <DependentUpon>Assets.resx</DependentUpon>
     </Compile>
     <Compile Include="Assets\DataHelper.cs" />
+    <Compile Include="Controls\AutoFilteredComboBox.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCrt.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCus.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />

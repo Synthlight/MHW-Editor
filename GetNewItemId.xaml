@@ -1,6 +1,7 @@
 ﻿<Window x:Class="MHW_Editor.GetNewItemId"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:MHW_Editor.Controls"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:MHW_Editor"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -22,18 +23,23 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <ComboBox Grid.ColumnSpan="2"
-                  DisplayMemberPath="Value"
-                  DockPanel.Dock="Top"
-                  ItemsSource="{Binding itemDataProxy}"
-                  SelectedValue="{Binding currentItem}"
-                  SelectedValuePath="Key">
-            <ComboBox.ItemsPanel>
+        <controls:AutoFilteredComboBox x:Name="cbx_current_item"
+                                       Grid.ColumnSpan="2"
+                                       DisplayMemberPath="Value"
+                                       DockPanel.Dock="Top"
+                                       IsDropDownOpen="True"
+                                       IsEditable="True"
+                                       IsTextSearchEnabled="False"
+                                       ItemsSource="{Binding itemDataProxy}"
+                                       SelectedValue="{Binding currentItem}"
+                                       SelectedValuePath="Key"
+                                       StaysOpenOnEdit="True">
+            <controls:AutoFilteredComboBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <VirtualizingStackPanel/>
                 </ItemsPanelTemplate>
-            </ComboBox.ItemsPanel>
-        </ComboBox>
+            </controls:AutoFilteredComboBox.ItemsPanel>
+        </controls:AutoFilteredComboBox>
         <Button Name="btn_ok"
                 Grid.Row="1"
                 Grid.Column="0"
