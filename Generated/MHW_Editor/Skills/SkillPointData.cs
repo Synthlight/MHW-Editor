@@ -9,6 +9,8 @@ namespace MHW_Editor.Skills {
         public const uint StructSize = 2;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Unknown_uint8_1_displayName = "Unknown (uint8) 1";
         protected const int Unknown_uint8_1_sortIndex = 50;
         [SortOrder(Unknown_uint8_1_sortIndex)]
@@ -21,6 +23,7 @@ namespace MHW_Editor.Skills {
                 OnPropertyChanged(nameof(Unknown_uint8_1));
             }
         }
+
         protected const string Unknown_uint8_2_displayName = "Unknown (uint8) 2";
         protected const int Unknown_uint8_2_sortIndex = 100;
         [SortOrder(Unknown_uint8_2_sortIndex)]

@@ -9,6 +9,8 @@ namespace MHW_Editor.Gems {
         public const uint StructSize = 28;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Index_displayName = "Index";
         protected const int Index_sortIndex = 50;
         [SortOrder(Index_sortIndex)]
@@ -16,6 +18,7 @@ namespace MHW_Editor.Gems {
         private ushort Index {
             get => GetData<ushort>(4);
         }
+
         protected const string Id_displayName = "Id";
         protected const int Id_sortIndex = 100;
         [SortOrder(Id_sortIndex)]
@@ -23,6 +26,7 @@ namespace MHW_Editor.Gems {
         public ushort Id {
             get => GetData<ushort>(0);
         }
+
         protected const string Size_displayName = "Size";
         protected const int Size_sortIndex = 150;
         [SortOrder(Size_sortIndex)]
@@ -35,6 +39,7 @@ namespace MHW_Editor.Gems {
                 OnPropertyChanged(nameof(Size));
             }
         }
+
         protected const string Skill_1_displayName = "Skill 1";
         protected const int Skill_1_sortIndex = 200;
         [SortOrder(Skill_1_sortIndex)]
@@ -48,6 +53,7 @@ namespace MHW_Editor.Gems {
                 OnPropertyChanged(nameof(Skill_1));
             }
         }
+
         protected const string Skill_1_Level_displayName = "Skill 1 Level";
         protected const int Skill_1_Level_sortIndex = 250;
         [SortOrder(Skill_1_Level_sortIndex)]
@@ -60,6 +66,7 @@ namespace MHW_Editor.Gems {
                 OnPropertyChanged(nameof(Skill_1_Level));
             }
         }
+
         protected const string Skill_2_displayName = "Skill 2";
         protected const int Skill_2_sortIndex = 300;
         [SortOrder(Skill_2_sortIndex)]
@@ -73,6 +80,7 @@ namespace MHW_Editor.Gems {
                 OnPropertyChanged(nameof(Skill_2));
             }
         }
+
         protected const string Skill_2_Level_displayName = "Skill 2 Level";
         protected const int Skill_2_Level_sortIndex = 350;
         [SortOrder(Skill_2_Level_sortIndex)]

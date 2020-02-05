@@ -9,6 +9,8 @@ namespace MHW_Editor.Items {
         public const uint StructSize = 37;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Cultivation_category_displayName = "Cultivation category";
         protected const int Cultivation_category_sortIndex = 50;
         [SortOrder(Cultivation_category_sortIndex)]
@@ -21,6 +23,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Cultivation_category));
             }
         }
+
         protected const string Unlocked_from_start_Raw_displayName = "Unlocked from start Raw";
         protected const int Unlocked_from_start_Raw_sortIndex = 100;
         [SortOrder(Unlocked_from_start_Raw_sortIndex)]
@@ -33,6 +36,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Unlocked_from_start_Raw));
             }
         }
+
         protected const string Item_displayName = "Item";
         protected const int Item_sortIndex = 150;
         [SortOrder(Item_sortIndex)]
@@ -46,6 +50,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Item));
             }
         }
+
         protected const string Required_time_displayName = "Required time";
         protected const int Required_time_sortIndex = 200;
         [SortOrder(Required_time_sortIndex)]
@@ -58,6 +63,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Required_time));
             }
         }
+
         protected const string Catalyst_time_bonus_displayName = "Catalyst time bonus";
         protected const int Catalyst_time_bonus_sortIndex = 250;
         [SortOrder(Catalyst_time_bonus_sortIndex)]
@@ -70,6 +76,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Catalyst_time_bonus));
             }
         }
+
         protected const string Amount_Base__displayName = "Amount (Base)";
         protected const int Amount_Base__sortIndex = 300;
         [SortOrder(Amount_Base__sortIndex)]
@@ -82,6 +89,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Amount_Base_));
             }
         }
+
         protected const string Amount_1__displayName = "Amount (+1)";
         protected const int Amount_1__sortIndex = 350;
         [SortOrder(Amount_1__sortIndex)]
@@ -94,6 +102,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Amount_1_));
             }
         }
+
         protected const string Amount_2__displayName = "Amount (+2)";
         protected const int Amount_2__sortIndex = 400;
         [SortOrder(Amount_2__sortIndex)]
@@ -106,6 +115,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Amount_2_));
             }
         }
+
         protected const string Unknown_int32_1_displayName = "Unknown (int32) 1";
         protected const int Unknown_int32_1_sortIndex = 450;
         [SortOrder(Unknown_int32_1_sortIndex)]

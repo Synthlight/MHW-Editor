@@ -9,6 +9,7 @@ namespace MHW_Template {
         public ulong size;
         public ulong offsetInitial;
         public long entryCountOffset = -1;
+        public string encryptionKey = null;
 
         public class Entry {
             public readonly string displayName;

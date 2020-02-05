@@ -9,6 +9,8 @@ namespace MHW_Editor.Items {
         public const uint StructSize = 6;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Close_Range_displayName = "Close Range";
         protected const int Close_Range_sortIndex = 50;
         [SortOrder(Close_Range_sortIndex)]
@@ -21,6 +23,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Close_Range));
             }
         }
+
         protected const string Power_displayName = "Power";
         protected const int Power_sortIndex = 100;
         [SortOrder(Power_sortIndex)]
@@ -33,6 +36,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Power));
             }
         }
+
         protected const string Paralysis_displayName = "Paralysis";
         protected const int Paralysis_sortIndex = 150;
         [SortOrder(Paralysis_sortIndex)]
@@ -45,6 +49,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Paralysis));
             }
         }
+
         protected const string Poison_displayName = "Poison";
         protected const int Poison_sortIndex = 200;
         [SortOrder(Poison_sortIndex)]
@@ -57,6 +62,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Poison));
             }
         }
+
         protected const string Sleep_displayName = "Sleep";
         protected const int Sleep_sortIndex = 250;
         [SortOrder(Sleep_sortIndex)]
@@ -69,6 +75,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Sleep));
             }
         }
+
         protected const string Blast_displayName = "Blast";
         protected const int Blast_sortIndex = 300;
         [SortOrder(Blast_sortIndex)]

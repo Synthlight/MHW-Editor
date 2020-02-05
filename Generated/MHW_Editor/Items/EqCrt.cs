@@ -9,6 +9,8 @@ namespace MHW_Editor.Items {
         public const uint StructSize = 37;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Item_Category_displayName = "Item Category";
         protected const int Item_Category_sortIndex = 50;
         [SortOrder(Item_Category_sortIndex)]
@@ -21,6 +23,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Item_Category));
             }
         }
+
         protected const string Item_Id_displayName = "Item Id";
         protected const int Item_Id_sortIndex = 100;
         [SortOrder(Item_Id_sortIndex)]
@@ -33,6 +36,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Item_Id));
             }
         }
+
         protected const string Item_Class_displayName = "Item Class";
         protected const int Item_Class_sortIndex = 150;
         [SortOrder(Item_Class_sortIndex)]
@@ -45,6 +49,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Item_Class));
             }
         }
+
         protected const string Unknown_int32__displayName = "Unknown (int32)";
         protected const int Unknown_int32__sortIndex = 200;
         [SortOrder(Unknown_int32__sortIndex)]
@@ -57,6 +62,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Unknown_int32_));
             }
         }
+
         protected const string Story_Unlock_displayName = "Story Unlock";
         protected const int Story_Unlock_sortIndex = 250;
         [SortOrder(Story_Unlock_sortIndex)]
@@ -69,6 +75,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Story_Unlock));
             }
         }
+
         protected const string Unknown_uint32__displayName = "Unknown (uint32)";
         protected const int Unknown_uint32__sortIndex = 300;
         [SortOrder(Unknown_uint32__sortIndex)]
@@ -81,6 +88,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Unknown_uint32_));
             }
         }
+
         protected const string Item_Rank_displayName = "Item Rank";
         protected const int Item_Rank_sortIndex = 350;
         [SortOrder(Item_Rank_sortIndex)]
@@ -93,6 +101,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Item_Rank));
             }
         }
+
         protected const string Mat_1_Id_displayName = "Mat 1 Id";
         protected const int Mat_1_Id_sortIndex = 400;
         [SortOrder(Mat_1_Id_sortIndex)]
@@ -106,6 +115,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Mat_1_Id));
             }
         }
+
         protected const string Mat_1_Count_displayName = "Mat 1 Count";
         protected const int Mat_1_Count_sortIndex = 450;
         [SortOrder(Mat_1_Count_sortIndex)]
@@ -118,6 +128,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Mat_1_Count));
             }
         }
+
         protected const string Mat_2_Id_displayName = "Mat 2 Id";
         protected const int Mat_2_Id_sortIndex = 500;
         [SortOrder(Mat_2_Id_sortIndex)]
@@ -131,6 +142,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Mat_2_Id));
             }
         }
+
         protected const string Mat_2_Count_displayName = "Mat 2 Count";
         protected const int Mat_2_Count_sortIndex = 550;
         [SortOrder(Mat_2_Count_sortIndex)]
@@ -143,6 +155,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Mat_2_Count));
             }
         }
+
         protected const string Mat_3_Id_displayName = "Mat 3 Id";
         protected const int Mat_3_Id_sortIndex = 600;
         [SortOrder(Mat_3_Id_sortIndex)]
@@ -156,6 +169,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Mat_3_Id));
             }
         }
+
         protected const string Mat_3_Count_displayName = "Mat 3 Count";
         protected const int Mat_3_Count_sortIndex = 650;
         [SortOrder(Mat_3_Count_sortIndex)]
@@ -168,6 +182,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Mat_3_Count));
             }
         }
+
         protected const string Mat_4_Id_displayName = "Mat 4 Id";
         protected const int Mat_4_Id_sortIndex = 700;
         [SortOrder(Mat_4_Id_sortIndex)]
@@ -181,6 +196,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Mat_4_Id));
             }
         }
+
         protected const string Mat_4_Count_displayName = "Mat 4 Count";
         protected const int Mat_4_Count_sortIndex = 750;
         [SortOrder(Mat_4_Count_sortIndex)]
@@ -193,6 +209,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Mat_4_Count));
             }
         }
+
         protected const string Unknown_uint8_1_displayName = "Unknown (uint8) 1";
         protected const int Unknown_uint8_1_sortIndex = 800;
         [SortOrder(Unknown_uint8_1_sortIndex)]
@@ -205,6 +222,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Unknown_uint8_1));
             }
         }
+
         protected const string Unknown_uint8_2_displayName = "Unknown (uint8) 2";
         protected const int Unknown_uint8_2_sortIndex = 850;
         [SortOrder(Unknown_uint8_2_sortIndex)]
@@ -217,6 +235,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Unknown_uint8_2));
             }
         }
+
         protected const string Unknown_uint8_3_displayName = "Unknown (uint8) 3";
         protected const int Unknown_uint8_3_sortIndex = 900;
         [SortOrder(Unknown_uint8_3_sortIndex)]
@@ -229,6 +248,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Unknown_uint8_3));
             }
         }
+
         protected const string Unknown_uint8_4_displayName = "Unknown (uint8) 4";
         protected const int Unknown_uint8_4_sortIndex = 950;
         [SortOrder(Unknown_uint8_4_sortIndex)]

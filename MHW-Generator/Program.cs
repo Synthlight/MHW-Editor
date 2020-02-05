@@ -42,11 +42,39 @@ namespace MHW_Generator {
             GenASkill();
             GenEqCrt();
             GenEqCus();
-            GenPlfe();
-            GenPlit();
+            GenPlantFertilizer();
+            GenPlantItem();
+            GenOtomoWeaponDat();
         }
 
-        private static void GenPlfe() {
+        private static void GenOtomoWeaponDat() {
+            GenerateItemProps("MHW_Editor.Weapons", "OtomoWeaponDat", new MhwStructData { // .owp_dat
+                size = 37,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                encryptionKey = EncryptionKeys.OWP_DAT_KEY,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id", 0, typeof(uint)),
+                    new MhwStructData.Entry("Set Id", 4, typeof(ushort)),
+                    new MhwStructData.Entry("Element", 6, typeof(byte), typeof(Element)),
+                    new MhwStructData.Entry("Attack Type", 7, typeof(byte), typeof(OtomoAttackType)),
+                    new MhwStructData.Entry("Melee Damage", 9, typeof(ushort)),
+                    new MhwStructData.Entry("Ranged Damage", 11, typeof(ushort)),
+                    new MhwStructData.Entry("Elemental Damage", 13, typeof(ushort)),
+                    new MhwStructData.Entry("Affinity", 15, typeof(short)),
+                    new MhwStructData.Entry("Defense", 17, typeof(ushort)),
+                    new MhwStructData.Entry("Elderseal", 19, typeof(byte)),
+                    new MhwStructData.Entry("Rarity", 20, typeof(byte)),
+                    new MhwStructData.Entry("Order", 21, typeof(ushort)),
+                    new MhwStructData.Entry("Cost", 27, typeof(uint)),
+                    new MhwStructData.Entry("Set Group", 31, typeof(ushort)),
+                    new MhwStructData.Entry("GMD Name Index", 33, typeof(ushort), accessLevel: "protected"),
+                    new MhwStructData.Entry("GMD Description Index", 35, typeof(ushort), accessLevel: "protected")
+                }
+            });
+        }
+
+        private static void GenPlantFertilizer() {
             GenerateItemProps("MHW_Editor.Items", "PlantFertilizer", new MhwStructData {
                 size = 24,
                 offsetInitial = 10,
@@ -62,7 +90,7 @@ namespace MHW_Generator {
             });
         }
 
-        private static void GenPlit() {
+        private static void GenPlantItem() {
             GenerateItemProps("MHW_Editor.Items", "PlantItem", new MhwStructData {
                 size = 37,
                 offsetInitial = 10,

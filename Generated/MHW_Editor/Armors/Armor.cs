@@ -9,6 +9,8 @@ namespace MHW_Editor.Armors {
         public const uint StructSize = 60;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Id_displayName = "Id";
         protected const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
@@ -16,6 +18,7 @@ namespace MHW_Editor.Armors {
         public uint Id {
             get => GetData<uint>(0);
         }
+
         protected const string Order_displayName = "Order";
         protected const int Order_sortIndex = 100;
         [SortOrder(Order_sortIndex)]
@@ -28,6 +31,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Order));
             }
         }
+
         protected const string Variant_displayName = "Variant";
         protected const int Variant_sortIndex = 150;
         [SortOrder(Variant_sortIndex)]
@@ -40,6 +44,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Variant));
             }
         }
+
         protected const string Set_Layered_Id_displayName = "Set (Layered) Id";
         protected const int Set_Layered_Id_sortIndex = 200;
         [SortOrder(Set_Layered_Id_sortIndex)]
@@ -52,6 +57,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Layered_Id));
             }
         }
+
         protected const string Type_displayName = "Type";
         protected const int Type_sortIndex = 250;
         [SortOrder(Type_sortIndex)]
@@ -64,6 +70,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Type));
             }
         }
+
         protected const string Equip_Slot_displayName = "Equip Slot";
         protected const int Equip_Slot_sortIndex = 300;
         [SortOrder(Equip_Slot_sortIndex)]
@@ -76,6 +83,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Equip_Slot));
             }
         }
+
         protected const string Defense_displayName = "Defense";
         protected const int Defense_sortIndex = 350;
         [SortOrder(Defense_sortIndex)]
@@ -88,6 +96,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Defense));
             }
         }
+
         protected const string Rarity_displayName = "Rarity";
         protected const int Rarity_sortIndex = 400;
         [SortOrder(Rarity_sortIndex)]
@@ -100,6 +109,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Rarity));
             }
         }
+
         protected const string Cost_displayName = "Cost";
         protected const int Cost_sortIndex = 450;
         [SortOrder(Cost_sortIndex)]
@@ -112,6 +122,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Cost));
             }
         }
+
         protected const string Fire_Res_displayName = "Fire Res";
         protected const int Fire_Res_sortIndex = 500;
         [SortOrder(Fire_Res_sortIndex)]
@@ -124,6 +135,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Fire_Res));
             }
         }
+
         protected const string Water_Res_displayName = "Water Res";
         protected const int Water_Res_sortIndex = 550;
         [SortOrder(Water_Res_sortIndex)]
@@ -136,6 +148,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Water_Res));
             }
         }
+
         protected const string Ice_Res_displayName = "Ice Res";
         protected const int Ice_Res_sortIndex = 600;
         [SortOrder(Ice_Res_sortIndex)]
@@ -148,6 +161,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Ice_Res));
             }
         }
+
         protected const string Thunder_Res_displayName = "Thunder Res";
         protected const int Thunder_Res_sortIndex = 650;
         [SortOrder(Thunder_Res_sortIndex)]
@@ -160,6 +174,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Thunder_Res));
             }
         }
+
         protected const string Dragon_Res_displayName = "Dragon Res";
         protected const int Dragon_Res_sortIndex = 700;
         [SortOrder(Dragon_Res_sortIndex)]
@@ -172,6 +187,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Dragon_Res));
             }
         }
+
         protected const string Slot_Count_displayName = "Slot Count";
         protected const int Slot_Count_sortIndex = 750;
         [SortOrder(Slot_Count_sortIndex)]
@@ -184,6 +200,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Slot_Count));
             }
         }
+
         protected const string Slot_1_Size_displayName = "Slot 1 Size";
         protected const int Slot_1_Size_sortIndex = 800;
         [SortOrder(Slot_1_Size_sortIndex)]
@@ -196,6 +213,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Slot_1_Size));
             }
         }
+
         protected const string Slot_2_Size_displayName = "Slot 2 Size";
         protected const int Slot_2_Size_sortIndex = 850;
         [SortOrder(Slot_2_Size_sortIndex)]
@@ -208,6 +226,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Slot_2_Size));
             }
         }
+
         protected const string Slot_3_Size_displayName = "Slot 3 Size";
         protected const int Slot_3_Size_sortIndex = 900;
         [SortOrder(Slot_3_Size_sortIndex)]
@@ -220,6 +239,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Slot_3_Size));
             }
         }
+
         protected const string Set_Skill_1_displayName = "Set Skill 1";
         protected const int Set_Skill_1_sortIndex = 950;
         [SortOrder(Set_Skill_1_sortIndex)]
@@ -233,6 +253,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Skill_1));
             }
         }
+
         protected const string Set_Skill_1_Level_displayName = "Set Skill 1 Level";
         protected const int Set_Skill_1_Level_sortIndex = 1000;
         [SortOrder(Set_Skill_1_Level_sortIndex)]
@@ -245,6 +266,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Skill_1_Level));
             }
         }
+
         protected const string Set_Skill_2_displayName = "Set Skill 2";
         protected const int Set_Skill_2_sortIndex = 1050;
         [SortOrder(Set_Skill_2_sortIndex)]
@@ -258,6 +280,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Skill_2));
             }
         }
+
         protected const string Set_Skill_2_Level_displayName = "Set Skill 2 Level";
         protected const int Set_Skill_2_Level_sortIndex = 1100;
         [SortOrder(Set_Skill_2_Level_sortIndex)]
@@ -270,6 +293,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Skill_2_Level));
             }
         }
+
         protected const string Skill_1_displayName = "Skill 1";
         protected const int Skill_1_sortIndex = 1150;
         [SortOrder(Skill_1_sortIndex)]
@@ -283,6 +307,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_1));
             }
         }
+
         protected const string Skill_1_Level_displayName = "Skill 1 Level";
         protected const int Skill_1_Level_sortIndex = 1200;
         [SortOrder(Skill_1_Level_sortIndex)]
@@ -295,6 +320,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_1_Level));
             }
         }
+
         protected const string Skill_2_displayName = "Skill 2";
         protected const int Skill_2_sortIndex = 1250;
         [SortOrder(Skill_2_sortIndex)]
@@ -308,6 +334,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_2));
             }
         }
+
         protected const string Skill_2_Level_displayName = "Skill 2 Level";
         protected const int Skill_2_Level_sortIndex = 1300;
         [SortOrder(Skill_2_Level_sortIndex)]
@@ -320,6 +347,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_2_Level));
             }
         }
+
         protected const string Skill_3_displayName = "Skill 3";
         protected const int Skill_3_sortIndex = 1350;
         [SortOrder(Skill_3_sortIndex)]
@@ -333,6 +361,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_3));
             }
         }
+
         protected const string Skill_3_Level_displayName = "Skill 3 Level";
         protected const int Skill_3_Level_sortIndex = 1400;
         [SortOrder(Skill_3_Level_sortIndex)]
@@ -345,6 +374,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_3_Level));
             }
         }
+
         protected const string Gender_displayName = "Gender";
         protected const int Gender_sortIndex = 1450;
         [SortOrder(Gender_sortIndex)]
@@ -357,6 +387,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Gender));
             }
         }
+
         protected const string Set_Group_displayName = "Set Group";
         protected const int Set_Group_sortIndex = 1500;
         [SortOrder(Set_Group_sortIndex)]
@@ -369,6 +400,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Group));
             }
         }
+
         protected const string Is_Permanent_Raw_displayName = "Is Permanent Raw";
         protected const int Is_Permanent_Raw_sortIndex = 1550;
         [SortOrder(Is_Permanent_Raw_sortIndex)]
@@ -381,6 +413,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Is_Permanent_Raw));
             }
         }
+
         protected const string GMD_Name_Index_displayName = "GMD Name Index";
         protected const int GMD_Name_Index_sortIndex = 1600;
         [SortOrder(GMD_Name_Index_sortIndex)]

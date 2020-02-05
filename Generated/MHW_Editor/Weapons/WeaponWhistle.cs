@@ -9,6 +9,8 @@ namespace MHW_Editor.Weapons {
         public const uint StructSize = 7;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Id_displayName = "Id";
         protected const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
@@ -16,6 +18,7 @@ namespace MHW_Editor.Weapons {
         public uint Id {
             get => GetData<uint>(0);
         }
+
         protected const string Note_1_displayName = "Note 1";
         protected const int Note_1_sortIndex = 100;
         [SortOrder(Note_1_sortIndex)]
@@ -28,6 +31,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Note_1));
             }
         }
+
         protected const string Note_2_displayName = "Note 2";
         protected const int Note_2_sortIndex = 150;
         [SortOrder(Note_2_sortIndex)]
@@ -40,6 +44,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Note_2));
             }
         }
+
         protected const string Note_3_displayName = "Note 3";
         protected const int Note_3_sortIndex = 200;
         [SortOrder(Note_3_sortIndex)]

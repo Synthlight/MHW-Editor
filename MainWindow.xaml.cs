@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
@@ -45,6 +46,7 @@ namespace MHW_Editor {
             "*.kire",
             "*.new_lb",
             "*.new_lbr",
+            "*.owp_dat",
             "*.plfe",
             "*.plit",
             "*.sgpa",
@@ -744,10 +746,14 @@ namespace MHW_Editor {
             items.Clear();
             Title = Path.GetFileName(targetFile);
 
+            Debug.Assert(targetFile != null, nameof(targetFile) + " != null");
+
             const BindingFlags flags = BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy;
+            // ReSharper disable PossibleNullReferenceException
             var initialOffset = (ulong) targetFileType.GetField(nameof(Armor.InitialOffset), flags).GetValue(null);
             var structSize = (uint) targetFileType.GetField(nameof(Armor.StructSize), flags).GetValue(null);
             var entryCountOffset = (long) targetFileType.GetField(nameof(Armor.EntryCountOffset), flags).GetValue(null);
+            var encryptionKey = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), flags).GetValue(null);
 
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
 #pragma warning disable 162
@@ -769,12 +775,38 @@ namespace MHW_Editor {
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 
-            using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
-                if (entryCountOffset >= 0) {
-                    ReadStructsAsKnownLength(dat, structSize, initialOffset, weaponFilename, entryCountOffset);
+            try {
+                if (encryptionKey != null) {
+                    // Read & decrypt file.
+                    var encryptedBytes = File.ReadAllBytes(targetFile);
+                    var decryptedBytes = EncryptionHelper.Decrypt(encryptionKey, encryptedBytes);
+
+                    using (var dat = new MemoryStream()) {
+                        // Write to a stream for the loader. Leave base stream OPEN.
+                        using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
+                            writer.Write(decryptedBytes);
+                        }
+
+                        // Load as normal.
+                        using (var reader = new BinaryReader(dat)) {
+                            ReadStructs(reader, structSize, initialOffset, weaponFilename, entryCountOffset);
+                        }
+                    }
                 } else {
-                    ReadStructsAsUnknownLength(dat, structSize, initialOffset, weaponFilename);
+                    using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
+                        ReadStructs(dat, structSize, initialOffset, weaponFilename, entryCountOffset);
+                    }
                 }
+            } catch (Exception e) {
+                MessageBox.Show(this, e.Message, "Load Error");
+            }
+        }
+
+        private void ReadStructs(BinaryReader dat, uint structSize, ulong initialOffset, string weaponFilename, long entryCountOffset) {
+            if (entryCountOffset >= 0) {
+                ReadStructsAsKnownLength(dat, structSize, initialOffset, weaponFilename, entryCountOffset);
+            } else {
+                ReadStructsAsUnknownLength(dat, structSize, initialOffset, weaponFilename);
             }
         }
 
@@ -948,6 +980,10 @@ namespace MHW_Editor {
 
             if (fileName.EndsWith(".plit")) {
                 return typeof(PlantItem);
+            }
+
+            if (fileName.EndsWith(".owp_dat")) {
+                return typeof(OtomoWeaponDat);
             }
 
             throw new Exception($"No type found for: {fileName}");

@@ -9,6 +9,8 @@ namespace MHW_Editor.Weapons {
         public const uint StructSize = 38;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Id_1_displayName = "Id 1";
         protected const int Id_1_sortIndex = 50;
         [SortOrder(Id_1_sortIndex)]
@@ -16,6 +18,7 @@ namespace MHW_Editor.Weapons {
         public ushort Id_1 {
             get => GetData<ushort>(0);
         }
+
         protected const string Id_2_displayName = "Id 2";
         protected const int Id_2_sortIndex = 100;
         [SortOrder(Id_2_sortIndex)]
@@ -23,6 +26,7 @@ namespace MHW_Editor.Weapons {
         public ushort Id_2 {
             get => GetData<ushort>(2);
         }
+
         protected const string Needed_Item_Id_to_Unlock_displayName = "Needed Item Id to Unlock";
         protected const int Needed_Item_Id_to_Unlock_sortIndex = 150;
         [SortOrder(Needed_Item_Id_to_Unlock_sortIndex)]
@@ -36,6 +40,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Needed_Item_Id_to_Unlock));
             }
         }
+
         protected const string Activated_1_displayName = "Activated 1";
         protected const int Activated_1_sortIndex = 200;
         [SortOrder(Activated_1_sortIndex)]
@@ -48,6 +53,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Activated_1));
             }
         }
+
         protected const string Activated_2_displayName = "Activated 2";
         protected const int Activated_2_sortIndex = 250;
         [SortOrder(Activated_2_sortIndex)]
@@ -60,6 +66,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Activated_2));
             }
         }
+
         protected const string Activated_3_displayName = "Activated 3";
         protected const int Activated_3_sortIndex = 300;
         [SortOrder(Activated_3_sortIndex)]
@@ -72,6 +79,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Activated_3));
             }
         }
+
         protected const string Activated_4_displayName = "Activated 4";
         protected const int Activated_4_sortIndex = 350;
         [SortOrder(Activated_4_sortIndex)]
@@ -84,6 +92,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Activated_4));
             }
         }
+
         protected const string Mat_1_Id_displayName = "Mat 1 Id";
         protected const int Mat_1_Id_sortIndex = 400;
         [SortOrder(Mat_1_Id_sortIndex)]
@@ -97,6 +106,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_1_Id));
             }
         }
+
         protected const string Mat_1_Count_displayName = "Mat 1 Count";
         protected const int Mat_1_Count_sortIndex = 450;
         [SortOrder(Mat_1_Count_sortIndex)]
@@ -109,6 +119,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_1_Count));
             }
         }
+
         protected const string Mat_2_Id_displayName = "Mat 2 Id";
         protected const int Mat_2_Id_sortIndex = 500;
         [SortOrder(Mat_2_Id_sortIndex)]
@@ -122,6 +133,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_2_Id));
             }
         }
+
         protected const string Mat_2_Count_displayName = "Mat 2 Count";
         protected const int Mat_2_Count_sortIndex = 550;
         [SortOrder(Mat_2_Count_sortIndex)]
@@ -134,6 +146,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_2_Count));
             }
         }
+
         protected const string Mat_3_Id_displayName = "Mat 3 Id";
         protected const int Mat_3_Id_sortIndex = 600;
         [SortOrder(Mat_3_Id_sortIndex)]
@@ -147,6 +160,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_3_Id));
             }
         }
+
         protected const string Mat_3_Count_displayName = "Mat 3 Count";
         protected const int Mat_3_Count_sortIndex = 650;
         [SortOrder(Mat_3_Count_sortIndex)]
@@ -159,6 +173,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_3_Count));
             }
         }
+
         protected const string Mat_4_Id_displayName = "Mat 4 Id";
         protected const int Mat_4_Id_sortIndex = 700;
         [SortOrder(Mat_4_Id_sortIndex)]
@@ -172,6 +187,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_4_Id));
             }
         }
+
         protected const string Mat_4_Count_displayName = "Mat 4 Count";
         protected const int Mat_4_Count_sortIndex = 750;
         [SortOrder(Mat_4_Count_sortIndex)]
@@ -184,6 +200,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Mat_4_Count));
             }
         }
+
         protected const string Id_3_displayName = "Id 3";
         protected const int Id_3_sortIndex = 800;
         [SortOrder(Id_3_sortIndex)]

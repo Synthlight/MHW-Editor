@@ -9,6 +9,8 @@ namespace MHW_Editor.Items {
         public const uint StructSize = 32;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Id_displayName = "Id";
         protected const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
@@ -16,6 +18,7 @@ namespace MHW_Editor.Items {
         public uint Id {
             get => GetData<uint>(0);
         }
+
         protected const string Sub_Type_displayName = "Sub Type";
         protected const int Sub_Type_sortIndex = 100;
         [SortOrder(Sub_Type_sortIndex)]
@@ -28,6 +31,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Sub_Type));
             }
         }
+
         protected const string Type_displayName = "Type";
         protected const int Type_sortIndex = 150;
         [SortOrder(Type_sortIndex)]
@@ -40,6 +44,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Type));
             }
         }
+
         protected const string Rarity_displayName = "Rarity";
         protected const int Rarity_sortIndex = 200;
         [SortOrder(Rarity_sortIndex)]
@@ -52,6 +57,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Rarity));
             }
         }
+
         protected const string Carry_Limit_displayName = "Carry Limit";
         protected const int Carry_Limit_sortIndex = 250;
         [SortOrder(Carry_Limit_sortIndex)]
@@ -64,6 +70,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Carry_Limit));
             }
         }
+
         protected const string Unknown_uint8__displayName = "Unknown (uint8)";
         protected const int Unknown_uint8__sortIndex = 300;
         [SortOrder(Unknown_uint8__sortIndex)]
@@ -76,6 +83,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Unknown_uint8_));
             }
         }
+
         protected const string Sort_Order_displayName = "Sort Order";
         protected const int Sort_Order_sortIndex = 350;
         [SortOrder(Sort_Order_sortIndex)]
@@ -88,6 +96,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Sort_Order));
             }
         }
+
         protected const string Icon_Id_displayName = "Icon Id";
         protected const int Icon_Id_sortIndex = 400;
         [SortOrder(Icon_Id_sortIndex)]
@@ -100,6 +109,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Icon_Id));
             }
         }
+
         protected const string Icon_Color_Id_displayName = "Icon Color Id";
         protected const int Icon_Color_Id_sortIndex = 450;
         [SortOrder(Icon_Color_Id_sortIndex)]
@@ -112,6 +122,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Icon_Color_Id));
             }
         }
+
         protected const string Sell_Price_displayName = "Sell Price";
         protected const int Sell_Price_sortIndex = 500;
         [SortOrder(Sell_Price_sortIndex)]
@@ -124,6 +135,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Sell_Price));
             }
         }
+
         protected const string Buy_Price_displayName = "Buy Price";
         protected const int Buy_Price_sortIndex = 550;
         [SortOrder(Buy_Price_sortIndex)]
@@ -136,6 +148,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Buy_Price));
             }
         }
+
         protected const string Flags_Raw_displayName = "Flags Raw";
         protected const int Flags_Raw_sortIndex = 600;
         [SortOrder(Flags_Raw_sortIndex)]

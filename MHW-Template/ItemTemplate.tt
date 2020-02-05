@@ -17,6 +17,7 @@ namespace <#= _namespace #> {
         public const uint StructSize = <#= structData.size #>;
         public const ulong InitialOffset = <#= structData.offsetInitial #>;
         public const long EntryCountOffset = <#= structData.entryCountOffset #>;
+        public const string EncryptionKey = <#= structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\"" #>;
 <#
     var compiler = new CSharpCodeProvider();
     var sortIndex = 50;
@@ -42,6 +43,7 @@ namespace <#= _namespace #> {
             setCast = $"({typeString}) ";
         }
 #>
+
         protected const string <#= name #>_displayName = "<#= entry.displayName #>";
         protected const int <#= name #>_sortIndex = <#= sortIndex #>;
         [SortOrder(<#= name #>_sortIndex)]

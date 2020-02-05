@@ -9,6 +9,8 @@ namespace MHW_Editor.Weapons {
         public const uint StructSize = 24;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Aug_Category_displayName = "Aug Category";
         protected const int Aug_Category_sortIndex = 50;
         [SortOrder(Aug_Category_sortIndex)]
@@ -21,6 +23,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Aug_Category));
             }
         }
+
         protected const string Aug_Level_displayName = "Aug Level";
         protected const int Aug_Level_sortIndex = 100;
         [SortOrder(Aug_Level_sortIndex)]
@@ -33,6 +36,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Aug_Level));
             }
         }
+
         protected const string Aug_Slot_Cost_displayName = "Aug Slot Cost";
         protected const int Aug_Slot_Cost_sortIndex = 150;
         [SortOrder(Aug_Slot_Cost_sortIndex)]
@@ -45,6 +49,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Aug_Slot_Cost));
             }
         }
+
         protected const string Research_Cost_r10__displayName = "Research Cost (r10)";
         protected const int Research_Cost_r10__sortIndex = 200;
         [SortOrder(Research_Cost_r10__sortIndex)]
@@ -57,6 +62,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Research_Cost_r10_));
             }
         }
+
         protected const string Research_Cost_r11__displayName = "Research Cost (r11)";
         protected const int Research_Cost_r11__sortIndex = 250;
         [SortOrder(Research_Cost_r11__sortIndex)]
@@ -69,6 +75,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Research_Cost_r11_));
             }
         }
+
         protected const string Research_Cost_r12__displayName = "Research Cost (r12)";
         protected const int Research_Cost_r12__sortIndex = 300;
         [SortOrder(Research_Cost_r12__sortIndex)]

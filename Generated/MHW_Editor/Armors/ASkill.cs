@@ -9,6 +9,8 @@ namespace MHW_Editor.Armors {
         public const uint StructSize = 28;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Mantle_Id_displayName = "Mantle Id";
         protected const int Mantle_Id_sortIndex = 50;
         [SortOrder(Mantle_Id_sortIndex)]
@@ -21,6 +23,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Mantle_Id));
             }
         }
+
         protected const string Unknown_uint32__displayName = "Unknown (uint32)";
         protected const int Unknown_uint32__sortIndex = 100;
         [SortOrder(Unknown_uint32__sortIndex)]
@@ -33,6 +36,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Unknown_uint32_));
             }
         }
+
         protected const string Color_displayName = "Color";
         protected const int Color_sortIndex = 150;
         [SortOrder(Color_sortIndex)]
@@ -45,6 +49,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Color));
             }
         }
+
         protected const string Sort_Order_displayName = "Sort Order";
         protected const int Sort_Order_sortIndex = 200;
         [SortOrder(Sort_Order_sortIndex)]
@@ -57,6 +62,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Sort_Order));
             }
         }
+
         protected const string Mantle_Item_Id_displayName = "Mantle Item Id";
         protected const int Mantle_Item_Id_sortIndex = 250;
         [SortOrder(Mantle_Item_Id_sortIndex)]
@@ -70,6 +76,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Mantle_Item_Id));
             }
         }
+
         protected const string Unlock_Flag_or_Item_Id__displayName = "Unlock Flag or Item Id?";
         protected const int Unlock_Flag_or_Item_Id__sortIndex = 300;
         [SortOrder(Unlock_Flag_or_Item_Id__sortIndex)]
@@ -82,6 +89,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Unlock_Flag_or_Item_Id_));
             }
         }
+
         protected const string Deco_Count_displayName = "Deco Count";
         protected const int Deco_Count_sortIndex = 350;
         [SortOrder(Deco_Count_sortIndex)]
@@ -94,6 +102,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Deco_Count));
             }
         }
+
         protected const string Deco_Lvl_1_displayName = "Deco Lvl 1";
         protected const int Deco_Lvl_1_sortIndex = 400;
         [SortOrder(Deco_Lvl_1_sortIndex)]
@@ -106,6 +115,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Deco_Lvl_1));
             }
         }
+
         protected const string Deco_Lvl_2_displayName = "Deco Lvl 2";
         protected const int Deco_Lvl_2_sortIndex = 450;
         [SortOrder(Deco_Lvl_2_sortIndex)]
@@ -118,6 +128,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Deco_Lvl_2));
             }
         }
+
         protected const string Deco_Lvl_3_displayName = "Deco Lvl 3";
         protected const int Deco_Lvl_3_sortIndex = 500;
         [SortOrder(Deco_Lvl_3_sortIndex)]

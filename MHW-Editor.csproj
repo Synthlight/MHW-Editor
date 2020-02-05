@@ -83,6 +83,7 @@
     <Compile Include="Generated\MHW_Editor\Items\PlantItem.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak2.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\OtomoWeaponDat.cs" />
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
@@ -127,6 +128,7 @@
     <Compile Include="Skills\SkillPointData.cs" />
     <Compile Include="Weapons\Bow.cs" />
     <Compile Include="Weapons\NewLimitBreak2.cs" />
+    <Compile Include="Weapons\OtomoWeaponDat.cs" />
     <Compile Include="Weapons\Sharpness.cs" />
     <Compile Include="Weapons\BowGun.cs" />
     <Compile Include="Weapons\IWeapon.cs" />

@@ -9,6 +9,8 @@ namespace MHW_Editor.Weapons {
         public const uint StructSize = 18;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Id_displayName = "Id";
         protected const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
@@ -16,6 +18,7 @@ namespace MHW_Editor.Weapons {
         public uint Id {
             get => GetData<uint>(0);
         }
+
         protected const string Red_displayName = "Red";
         protected const int Red_sortIndex = 100;
         [SortOrder(Red_sortIndex)]
@@ -28,6 +31,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Red));
             }
         }
+
         protected const string Orange_displayName = "Orange";
         protected const int Orange_sortIndex = 150;
         [SortOrder(Orange_sortIndex)]
@@ -40,6 +44,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Orange));
             }
         }
+
         protected const string Yellow_displayName = "Yellow";
         protected const int Yellow_sortIndex = 200;
         [SortOrder(Yellow_sortIndex)]
@@ -52,6 +57,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Yellow));
             }
         }
+
         protected const string Green_displayName = "Green";
         protected const int Green_sortIndex = 250;
         [SortOrder(Green_sortIndex)]
@@ -64,6 +70,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Green));
             }
         }
+
         protected const string Blue_displayName = "Blue";
         protected const int Blue_sortIndex = 300;
         [SortOrder(Blue_sortIndex)]
@@ -76,6 +83,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Blue));
             }
         }
+
         protected const string White_displayName = "White";
         protected const int White_sortIndex = 350;
         [SortOrder(White_sortIndex)]
@@ -88,6 +96,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(White));
             }
         }
+
         protected const string Purple_displayName = "Purple";
         protected const int Purple_sortIndex = 400;
         [SortOrder(Purple_sortIndex)]

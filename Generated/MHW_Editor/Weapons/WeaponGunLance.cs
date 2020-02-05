@@ -9,6 +9,8 @@ namespace MHW_Editor.Weapons {
         public const uint StructSize = 8;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
+        public const string EncryptionKey = null;
+
         protected const string Id_displayName = "Id";
         protected const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
@@ -16,6 +18,7 @@ namespace MHW_Editor.Weapons {
         public uint Id {
             get => GetData<uint>(0);
         }
+
         protected const string Shell_Type_displayName = "Shell Type";
         protected const int Shell_Type_sortIndex = 100;
         [SortOrder(Shell_Type_sortIndex)]
@@ -28,6 +31,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Shell_Type));
             }
         }
+
         protected const string Shell_Level_displayName = "Shell Level";
         protected const int Shell_Level_sortIndex = 150;
         [SortOrder(Shell_Level_sortIndex)]
