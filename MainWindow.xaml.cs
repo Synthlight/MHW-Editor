@@ -620,14 +620,33 @@ namespace MHW_Editor {
         private void Btn_damage_cheat_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!targetFileType.Is(typeof(IWeapon))) return;
+            if (!targetFileType.Is(typeof(IWeapon), typeof(OtomoWeaponDat))) return;
 
-            foreach (IWeapon item in items) {
-                if (item.Damage > 0) {
-                    item.Damage = 5000;
+            foreach (var item in items) {
+                switch (item) {
+                    case OtomoWeaponDat _: {
+                        OtomoWeaponDat otomoWeapon = item;
+
+                        if (otomoWeapon.Melee_Damage > 0) {
+                            otomoWeapon.Melee_Damage = 50000;
+                        }
+
+                        if (otomoWeapon.Ranged_Damage > 0) {
+                            otomoWeapon.Ranged_Damage = 50000;
+                        }
+
+                        break;
+                    }
+                    case IWeapon _: {
+                        if (item.Damage > 0) {
+                            item.Damage = 50000;
+                        }
+
+                        break;
+                    }
                 }
 
-                ((MhwItem) item).OnPropertyChanged();
+                item.OnPropertyChanged();
             }
         }
 
@@ -763,7 +782,7 @@ namespace MHW_Editor {
                 btn_skill_level_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Gem)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_set_bonus_cheat.Visibility = targetFileType.Is(typeof(Armor)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_zenny_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Item), typeof(IWeapon)) ? Visibility.Visible : Visibility.Collapsed;
-                btn_damage_cheat.Visibility = targetFileType.Is(typeof(IWeapon)) ? Visibility.Visible : Visibility.Collapsed;
+                btn_damage_cheat.Visibility = targetFileType.Is(typeof(IWeapon), typeof(OtomoWeaponDat)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_enable_all_coatings_cheat.Visibility = targetFileType.Is(typeof(BottleTable)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_max_sharpness_cheat.Visibility = targetFileType.Is(typeof(Sharpness), typeof(Melee)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_unlock_skill_limit_cheat.Visibility = targetFileType.Is(typeof(SkillDat)) ? Visibility.Visible : Visibility.Collapsed;
@@ -792,7 +811,7 @@ namespace MHW_Editor {
                             ReadStructs(reader, structSize, initialOffset, weaponFilename, entryCountOffset);
                         }
                     }
-                } else {
+                } else { // No encryption, just open, read, & close.
                     using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
                         ReadStructs(dat, structSize, initialOffset, weaponFilename, entryCountOffset);
                     }
@@ -857,16 +876,36 @@ namespace MHW_Editor {
 
         private async void Save() {
             try {
-                var changesSaved = false;
-                using (var dat = new BinaryWriter(new FileStream(targetFile, FileMode.Open, FileAccess.Write))) {
-                    foreach (IMhwItem item in items) {
-                        if (item.Offset == 0 || !item.Changed) continue;
+                bool changesSaved;
+                var encryptionKey = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy).GetValue(null);
 
-                        dat.BaseStream.Seek((long) item.Offset, SeekOrigin.Begin);
-                        dat.Write(item.Bytes);
+                if (encryptionKey != null) {
+                    // Read & decrypt file.
+                    var encryptedBytes = File.ReadAllBytes(targetFile);
+                    var decryptedBytes = EncryptionHelper.Decrypt(encryptionKey, encryptedBytes);
 
-                        item.Changed = false;
-                        changesSaved = true;
+                    using (var dat = new MemoryStream()) {
+                        // Write to a stream for the loader. Leave base stream OPEN.
+                        using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
+                            writer.Write(decryptedBytes);
+                        }
+
+                        // Save as normal. Leave base stream OPEN.
+                        using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
+                            changesSaved = WriteChanges(writer);
+                        }
+
+                        // If there are no changes, then we don't need to write the result back out.
+                        if (changesSaved) {
+                            // Re-encrypt and write it back out.
+                            decryptedBytes = dat.ToArray();
+                            encryptedBytes = EncryptionHelper.Encrypt(encryptionKey, decryptedBytes);
+                            File.WriteAllBytes(targetFile, encryptedBytes);
+                        }
+                    }
+                } else { // No encryption, just open, write, & close.
+                    using (var dat = new BinaryWriter(new FileStream(targetFile, FileMode.Open, FileAccess.Write))) {
+                        changesSaved = WriteChanges(dat);
                     }
                 }
 
@@ -882,6 +921,22 @@ namespace MHW_Editor {
             } catch (Exception e) {
                 MessageBox.Show(this, e.Message, "Save Error");
             }
+        }
+
+        private bool WriteChanges(BinaryWriter dat) {
+            var changesSaved = false;
+
+            foreach (IMhwItem item in items) {
+                if (item.Offset == 0 || !item.Changed) continue;
+
+                dat.BaseStream.Seek((long) item.Offset, SeekOrigin.Begin);
+                dat.Write(item.Bytes);
+
+                item.Changed = false;
+                changesSaved = true;
+            }
+
+            return changesSaved;
         }
 
         private Type GetFileType() {

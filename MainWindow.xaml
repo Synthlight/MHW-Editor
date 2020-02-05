@@ -99,7 +99,7 @@
                 <Button Name="btn_damage_cheat"
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"
-                        Content="Set Damage to 5000"
+                        Content="Set Damage to 50000"
                         Visibility="Collapsed"/>
                 <Button Name="btn_enable_all_coatings_cheat"
                         Margin="8,0,0,0"
