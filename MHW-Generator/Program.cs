@@ -47,7 +47,7 @@ namespace MHW_Generator {
         }
 
         private static void GenPlfe() {
-            GenerateItemProps("MHW_Editor.Items", "Plfe", new MhwStructData {
+            GenerateItemProps("MHW_Editor.Items", "PlantFertilizer", new MhwStructData {
                 size = 24,
                 offsetInitial = 10,
                 entryCountOffset = 6,
@@ -63,7 +63,7 @@ namespace MHW_Generator {
         }
 
         private static void GenPlit() {
-            GenerateItemProps("MHW_Editor.Items", "Plit", new MhwStructData {
+            GenerateItemProps("MHW_Editor.Items", "PlantItem", new MhwStructData {
                 size = 37,
                 offsetInitial = 10,
                 entryCountOffset = 6,
@@ -139,7 +139,7 @@ namespace MHW_Generator {
         }
 
         private static void GenASkill() {
-            GenerateItemProps("MHW_Editor.Skills", "ASkill", new MhwStructData {
+            GenerateItemProps("MHW_Editor.Armors", "ASkill", new MhwStructData {
                 size = 28,
                 offsetInitial = 10,
                 entryCountOffset = 6,

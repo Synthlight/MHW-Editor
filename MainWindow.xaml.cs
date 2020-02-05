@@ -85,7 +85,7 @@ namespace MHW_Editor {
                                            nameof(Armor.Skill_2_button),
                                            nameof(Armor.Skill_3_button),
                                            nameof(Melee.Skill_button),
-                                           nameof(Plit.Item_button));
+                                           nameof(PlantItem.Item_button));
                 }
             }
         }
@@ -96,7 +96,7 @@ namespace MHW_Editor {
             set {
                 showIdBeforeName = value;
                 foreach (MhwItem item in items) {
-                    item.OnPropertyChanged(nameof(Gem.Skill_1_button), nameof(Gem.Skill_2_button));
+                    item.OnPropertyChanged(nameof(SkillDat.Name_And_Id));
                 }
             }
         }
@@ -168,8 +168,8 @@ namespace MHW_Editor {
                                                  typeof(ASkill),
                                                  typeof(EqCrt),
                                                  typeof(EqCus),
-                                                 typeof(Plfe),
-                                                 typeof(Plit));
+                                                 typeof(PlantFertilizer),
+                                                 typeof(PlantItem));
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
@@ -186,7 +186,7 @@ namespace MHW_Editor {
                 case nameof(Armor.Skill_2):
                 case nameof(Armor.Skill_3):
                 case nameof(Melee.Skill):
-                case nameof(Plit.Item):
+                case nameof(PlantItem.Item):
                     e.Cancel = true; // Cancel for itemId/skillId columns as we will use a text version with onClick opening a selector.
                     break;
                 default:
@@ -218,17 +218,27 @@ namespace MHW_Editor {
 
             // Use [DisplayName] attribute for the column header text.
             // Use [SortOrder] attribute to control the position. Generated fields have spacing so it's easy to say 'generated_field_sortOrder + 1'.
+            // Use [CustomSorter] to define an IComparer class to control sorting.
             Type sourceClassType = ((dynamic) e.PropertyDescriptor).ComponentType;
             var propertyInfo = sourceClassType.GetProperties().FirstOrDefault(info => info.Name == e.PropertyName);
 
             var displayName = ((DisplayNameAttribute) propertyInfo?.GetCustomAttribute(typeof(DisplayNameAttribute), true))?.DisplayName;
             var sortOrder = ((SortOrderAttribute) propertyInfo?.GetCustomAttribute(typeof(SortOrderAttribute), true))?.sortOrder;
+            var customSorterType = ((CustomSorterAttribute) propertyInfo?.GetCustomAttribute(typeof(CustomSorterAttribute), true))?.customSorterType;
+            ICustomSorter customSorter = null;
 
             if (displayName != null) {
                 e.Column.Header = displayName;
             }
 
-            columnMap[e.PropertyName] = new ColumnHolder(e.Column, sortOrder ?? -1);
+            if (customSorterType != null) {
+                customSorter = (ICustomSorter) Activator.CreateInstance(customSorterType);
+                if (customSorter is ICustomSorterWithPropertyName csWithName) {
+                    csWithName.PropertyName = e.PropertyName;
+                }
+            }
+
+            columnMap[e.PropertyName] = new ColumnHolder(e.Column, sortOrder ?? -1, customSorter);
 
             // TODO: Fix enum value display at some point.
         }
@@ -301,19 +311,18 @@ namespace MHW_Editor {
             }
         }
 
-        private void Dg_items_Sorting(object sender, DataGridSortingEventArgs e) { // TODO: Fix sorting for skill/item id columns.
-            // || targetFileType.Is(typeof(Gem)) && (string) e.Column.Header == "Skill 1"
-            // || targetFileType.Is(typeof(Gem)) && (string) e.Column.Header == "Skill 2"
-            if (targetFileType.Is(typeof(SkillDat)) && e.Column == columnMap[nameof(SkillDat.Name_And_Id)].column) {
-                var direction = (e.Column.SortDirection != ListSortDirection.Ascending) ? ListSortDirection.Ascending : ListSortDirection.Descending;
-                SkillDatSorter.INSTANCE.direction = direction;
-                e.Column.SortDirection = direction;
+        private void Dg_items_Sorting(object sender, DataGridSortingEventArgs e) {
+            // Does the column we're sorting define a custom sorter?
+            var matches = columnMap.Where(pair => pair.Value.column == e.Column && pair.Value.customSorter != null).ToList();
+            if (!matches.Any()) return;
+            var customSorter = matches.First().Value.customSorter;
 
-                var listColView = (ListCollectionView) dg_items.ItemsSource;
-                listColView.CustomSort = SkillDatSorter.INSTANCE;
+            e.Column.SortDirection = customSorter.SortDirection = (e.Column.SortDirection != ListSortDirection.Ascending) ? ListSortDirection.Ascending : ListSortDirection.Descending;
 
-                e.Handled = true;
-            }
+            var listColView = (ListCollectionView) dg_items.ItemsSource;
+            listColView.CustomSort = customSorter;
+
+            e.Handled = true;
         }
 
         private void Btn_open_Click(object sender, RoutedEventArgs e) {
@@ -756,6 +765,7 @@ namespace MHW_Editor {
 #pragma warning restore 162
 
             btn_sort_jewel_order_by_name.Visibility = targetFileType.Is(typeof(Item)) ? Visibility.Visible : Visibility.Collapsed;
+            cb_show_id_before_name.Visibility = targetFileType.Is(typeof(SkillDat)) ? Visibility.Visible : Visibility.Collapsed;
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 
@@ -933,11 +943,11 @@ namespace MHW_Editor {
             }
 
             if (fileName.EndsWith(".plfe")) {
-                return typeof(Plfe);
+                return typeof(PlantFertilizer);
             }
 
             if (fileName.EndsWith(".plit")) {
-                return typeof(Plit);
+                return typeof(PlantItem);
             }
 
             throw new Exception($"No type found for: {fileName}");

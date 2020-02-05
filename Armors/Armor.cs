@@ -19,22 +19,27 @@ namespace MHW_Editor.Armors {
 
         [SortOrder(Set_Skill_1_sortIndex)]
         [DisplayName(Set_Skill_1_displayName)]
+        [CustomSorter(typeof(UInt16Sorter), true)]
         public string Set_Skill_1_button => DataHelper.skillData[MainWindow.locale][Set_Skill_1].ToString();
 
         [SortOrder(Set_Skill_2_sortIndex)]
         [DisplayName(Set_Skill_2_displayName)]
+        [CustomSorter(typeof(UInt16Sorter), true)]
         public string Set_Skill_2_button => DataHelper.skillData[MainWindow.locale][Set_Skill_2].ToString();
 
         [SortOrder(Skill_1_sortIndex)]
         [DisplayName(Skill_1_displayName)]
+        [CustomSorter(typeof(UInt16Sorter), true)]
         public string Skill_1_button => DataHelper.skillData[MainWindow.locale][Skill_1].ToString();
 
         [SortOrder(Skill_2_sortIndex)]
         [DisplayName(Skill_2_displayName)]
+        [CustomSorter(typeof(UInt16Sorter), true)]
         public string Skill_2_button => DataHelper.skillData[MainWindow.locale][Skill_2].ToString();
 
         [SortOrder(Skill_3_sortIndex)]
         [DisplayName(Skill_3_displayName)]
+        [CustomSorter(typeof(UInt16Sorter), true)]
         public string Skill_3_button => DataHelper.skillData[MainWindow.locale][Skill_3].ToString();
     }
 }

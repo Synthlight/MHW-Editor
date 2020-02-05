@@ -4,7 +4,7 @@ using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
 
-namespace MHW_Editor.Skills {
+namespace MHW_Editor.Armors {
     public partial class ASkill {
         public const uint StructSize = 28;
         public const ulong InitialOffset = 10;

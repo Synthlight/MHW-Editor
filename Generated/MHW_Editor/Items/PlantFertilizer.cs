@@ -5,7 +5,7 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Items {
-    public partial class Plfe {
+    public partial class PlantFertilizer {
         public const uint StructSize = 24;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;

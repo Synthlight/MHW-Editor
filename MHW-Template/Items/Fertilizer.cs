@@ -8,6 +8,6 @@
         Choice_Mushroom_Subtrate,
         Thick_Summoner_Jelly,
         Ancient_Catalyst,
-        Soft_Soil,
+        Soft_Soil
     }
 }

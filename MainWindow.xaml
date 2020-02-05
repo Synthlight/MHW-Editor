@@ -56,6 +56,13 @@
                           VerticalAlignment="Center"
                           Content="Single Click to Edit Mode"
                           IsChecked="{Binding SingleClickToEditMode}"/>
+                <CheckBox Name="cb_show_id_before_name"
+                          Margin="8,0,0,0"
+                          HorizontalAlignment="Right"
+                          VerticalAlignment="Center"
+                          Content="Show Id Before Name"
+                          IsChecked="{Binding ShowIdBeforeName}"
+                          Visibility="Collapsed"/>
             </StackPanel>
         </DockPanel>
         <DockPanel Grid.Row="0"

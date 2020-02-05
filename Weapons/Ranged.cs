@@ -22,6 +22,7 @@ namespace MHW_Editor.Weapons {
 
         [SortOrder(Skill_sortIndex)]
         [DisplayName(Skill_displayName)]
+        [CustomSorter(typeof(UInt16Sorter), true)]
         public string Skill_button => DataHelper.skillData[MainWindow.locale][Skill].ToString();
     }
 }
