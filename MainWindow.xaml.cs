@@ -47,6 +47,7 @@ namespace MHW_Editor {
             "*.new_lb",
             "*.new_lbr",
             "*.owp_dat",
+            "*.oam_dat",
             "*.plfe",
             "*.plit",
             "*.sgpa",
@@ -831,7 +832,7 @@ namespace MHW_Editor {
 
         private void ReadStructsAsKnownLength(BinaryReader dat, uint structSize, ulong initialOffset, string weaponFilename, long entryCountOffset) {
             dat.BaseStream.Seek(entryCountOffset, SeekOrigin.Begin);
-            var count = dat.ReadInt32();
+            var count = dat.ReadUInt32();
 
             dat.BaseStream.Seek((long) initialOffset, SeekOrigin.Begin);
 
@@ -1039,6 +1040,10 @@ namespace MHW_Editor {
 
             if (fileName.EndsWith(".owp_dat")) {
                 return typeof(OtomoWeaponDat);
+            }
+
+            if (fileName.EndsWith(".oam_dat")) {
+                return typeof(OtomoArmorDat);
             }
 
             throw new Exception($"No type found for: {fileName}");

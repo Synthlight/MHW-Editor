@@ -45,6 +45,35 @@ namespace MHW_Generator {
             GenPlantFertilizer();
             GenPlantItem();
             GenOtomoWeaponDat();
+            GenOtomoArmorDat();
+        }
+
+        private static void GenOtomoArmorDat() {
+            GenerateItemProps("MHW_Editor.Armors", "OtomoArmorDat", new MhwStructData { // .owp_dat
+                size = 42,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id", 0, typeof(uint)),
+                    new MhwStructData.Entry("Set Id", 4, typeof(ushort)),
+                    new MhwStructData.Entry("Equip Slot", 6, typeof(byte), typeof(EquipSlot)),
+                    new MhwStructData.Entry("Is Full Set Raw", 7, typeof(byte), accessLevel: "protected"),
+                    new MhwStructData.Entry("Defense", 8, typeof(uint)),
+                    new MhwStructData.Entry("Rarity", 12, typeof(byte)),
+                    new MhwStructData.Entry("Order", 13, typeof(ushort)),
+                    new MhwStructData.Entry("Model Id", 15, typeof(uint)),
+                    new MhwStructData.Entry("Cost", 19, typeof(uint)),
+                    new MhwStructData.Entry("Variant", 23, typeof(byte)),
+                    new MhwStructData.Entry("Fire Res", 27, typeof(sbyte)),
+                    new MhwStructData.Entry("Water Res", 28, typeof(sbyte)),
+                    new MhwStructData.Entry("Ice Res", 29, typeof(sbyte)),
+                    new MhwStructData.Entry("Thunder Res", 30, typeof(sbyte)),
+                    new MhwStructData.Entry("Dragon Res", 31, typeof(sbyte)),
+                    new MhwStructData.Entry("Set Group", 36, typeof(ushort)),
+                    new MhwStructData.Entry("GMD Name Index", 38, typeof(ushort), accessLevel: "protected"),
+                    new MhwStructData.Entry("GMD Description Index", 40, typeof(ushort), accessLevel: "protected")
+                }
+            });
         }
 
         private static void GenOtomoWeaponDat() {

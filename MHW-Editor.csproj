@@ -69,6 +69,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Armors\Armor.cs" />
+    <Compile Include="Armors\OtomoArmorDat.cs" />
     <Compile Include="Assets\Assets.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -77,6 +78,7 @@
     <Compile Include="Assets\DataHelper.cs" />
     <Compile Include="Controls\AutoFilteredComboBox.cs" />
     <Compile Include="EncryptionHelper.cs" />
+    <Compile Include="Generated\MHW_Editor\Armors\OtomoArmorDat.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCrt.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCus.cs" />
     <Compile Include="Generated\MHW_Editor\Items\PlantFertilizer.cs" />
