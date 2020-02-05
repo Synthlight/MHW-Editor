@@ -24,6 +24,10 @@ namespace MHW_Name_Extractor {
                 foreach (var weapon in WEAPONS) {
                     GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\{weapon}_{lang}.gmd", $@"{ROOT_OUTPUT}\WeaponData\{lang}_{weapon}.json");
                 }
+
+                // Otomo
+                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\ot_weapon_{lang}.gmd", $@"{ROOT_OUTPUT}\OtomoData\{lang}_otomo_weaponData.json");
+                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\ot_armor_{lang}.gmd", $@"{ROOT_OUTPUT}\OtomoData\{lang}_otomo_armorData.json");
             }
         }
 

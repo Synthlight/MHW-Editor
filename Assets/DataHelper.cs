@@ -11,6 +11,8 @@ namespace MHW_Editor.Assets {
         public static readonly Dictionary<string, Dictionary<ushort, string>> skillDataDescriptions = new Dictionary<string, Dictionary<ushort, string>>();
         public static readonly Dictionary<string, Dictionary<ushort, string>> armorData = new Dictionary<string, Dictionary<ushort, string>>();
         public static readonly Dictionary<string, Dictionary<string, Dictionary<uint, string>>> weaponData = new Dictionary<string, Dictionary<string, Dictionary<uint, string>>>();
+        public static readonly Dictionary<string, Dictionary<ushort, string>> otomoArmorData = new Dictionary<string, Dictionary<ushort, string>>();
+        public static readonly Dictionary<string, Dictionary<ushort, string>> otomoWeaponData = new Dictionary<string, Dictionary<ushort, string>>();
         public static readonly Dictionary<uint, string> dummyDict = new Dictionary<uint, string>();
 
         static DataHelper() {
@@ -19,6 +21,8 @@ namespace MHW_Editor.Assets {
                 ParseSkillData(lang);
 
                 armorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_armorData"));
+                otomoArmorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_otomo_armorData"));
+                otomoWeaponData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_otomo_weaponData"));
 
                 weaponData[lang] = new Dictionary<string, Dictionary<uint, string>>();
                 foreach (var weapon in Global.WEAPONS) {
