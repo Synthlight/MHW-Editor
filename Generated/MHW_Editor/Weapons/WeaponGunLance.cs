@@ -23,6 +23,7 @@ namespace MHW_Editor.Weapons {
         public MHW_Template.Weapons.ShellType Shell_Type {
             get => (MHW_Template.Weapons.ShellType) GetData<ushort>(4);
             set {
+                if ((MHW_Template.Weapons.ShellType) GetData<ushort>(4) == value) return;
                 SetData(4, (ushort) value);
                 OnPropertyChanged(nameof(Shell_Type));
             }
@@ -34,6 +35,7 @@ namespace MHW_Editor.Weapons {
         public ushort Shell_Level {
             get => GetData<ushort>(6);
             set {
+                if (GetData<ushort>(6) == value) return;
                 SetData(6, value);
                 OnPropertyChanged(nameof(Shell_Level));
             }

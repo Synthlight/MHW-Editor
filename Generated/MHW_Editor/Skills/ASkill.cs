@@ -16,6 +16,7 @@ namespace MHW_Editor.Skills {
         public uint Mantle_Id {
             get => GetData<uint>(16);
             set {
+                if (GetData<uint>(16) == value) return;
                 SetData(16, value);
                 OnPropertyChanged(nameof(Mantle_Id));
             }
@@ -27,6 +28,7 @@ namespace MHW_Editor.Skills {
         public uint Unknown_uint32_ {
             get => GetData<uint>(0);
             set {
+                if (GetData<uint>(0) == value) return;
                 SetData(0, value);
                 OnPropertyChanged(nameof(Unknown_uint32_));
             }
@@ -38,6 +40,7 @@ namespace MHW_Editor.Skills {
         public uint Color {
             get => GetData<uint>(4);
             set {
+                if (GetData<uint>(4) == value) return;
                 SetData(4, value);
                 OnPropertyChanged(nameof(Color));
             }
@@ -49,6 +52,7 @@ namespace MHW_Editor.Skills {
         public uint Sort_Order {
             get => GetData<uint>(8);
             set {
+                if (GetData<uint>(8) == value) return;
                 SetData(8, value);
                 OnPropertyChanged(nameof(Sort_Order));
             }
@@ -61,6 +65,7 @@ namespace MHW_Editor.Skills {
         public uint Mantle_Item_Id {
             get => GetData<uint>(12);
             set {
+                if (GetData<uint>(12) == value) return;
                 SetData(12, value);
                 OnPropertyChanged(nameof(Mantle_Item_Id));
             }
@@ -72,6 +77,7 @@ namespace MHW_Editor.Skills {
         public uint Unlock_Flag_or_Item_Id_ {
             get => GetData<uint>(20);
             set {
+                if (GetData<uint>(20) == value) return;
                 SetData(20, value);
                 OnPropertyChanged(nameof(Unlock_Flag_or_Item_Id_));
             }
@@ -83,6 +89,7 @@ namespace MHW_Editor.Skills {
         public byte Deco_Count {
             get => GetData<byte>(24);
             set {
+                if (GetData<byte>(24) == value) return;
                 SetData(24, value);
                 OnPropertyChanged(nameof(Deco_Count));
             }
@@ -94,6 +101,7 @@ namespace MHW_Editor.Skills {
         public byte Deco_Lvl_1 {
             get => GetData<byte>(25);
             set {
+                if (GetData<byte>(25) == value) return;
                 SetData(25, value);
                 OnPropertyChanged(nameof(Deco_Lvl_1));
             }
@@ -105,6 +113,7 @@ namespace MHW_Editor.Skills {
         public byte Deco_Lvl_2 {
             get => GetData<byte>(26);
             set {
+                if (GetData<byte>(26) == value) return;
                 SetData(26, value);
                 OnPropertyChanged(nameof(Deco_Lvl_2));
             }
@@ -116,6 +125,7 @@ namespace MHW_Editor.Skills {
         public byte Deco_Lvl_3 {
             get => GetData<byte>(27);
             set {
+                if (GetData<byte>(27) == value) return;
                 SetData(27, value);
                 OnPropertyChanged(nameof(Deco_Lvl_3));
             }

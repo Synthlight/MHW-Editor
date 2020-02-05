@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 namespace MHW_Name_Extractor {
     public static class Program {
         private const string ROOT_OUTPUT = @"..\..\..\Assets";
-        private const string COMMON_TEXT_ROOT = @"V:\MHW\IB\chunk\common\text";
+        private const string COMMON_TEXT_ROOT = @"V:\MHW\IB\chunk_combined\common\text";
         private static readonly List<string> WEAPONS = new List<string> {"bow", "c_axe", "g_lance", "hammer", "hbg", "lance", "lbg", "l_sword", "rod", "sword", "s_axe", "tachi", "whistle", "w_sword"};
 
         [STAThread]

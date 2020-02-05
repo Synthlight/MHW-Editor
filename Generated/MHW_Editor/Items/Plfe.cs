@@ -16,6 +16,7 @@ namespace MHW_Editor.Items {
         public MHW_Template.Items.Fertilizer Fertilizer_Id {
             get => (MHW_Template.Items.Fertilizer) GetData<uint>(0);
             set {
+                if ((MHW_Template.Items.Fertilizer) GetData<uint>(0) == value) return;
                 SetData(0, (uint) value);
                 OnPropertyChanged(nameof(Fertilizer_Id));
             }
@@ -27,6 +28,7 @@ namespace MHW_Editor.Items {
         public uint Prize {
             get => GetData<uint>(4);
             set {
+                if (GetData<uint>(4) == value) return;
                 SetData(4, value);
                 OnPropertyChanged(nameof(Prize));
             }
@@ -38,6 +40,7 @@ namespace MHW_Editor.Items {
         public uint Base_duration {
             get => GetData<uint>(8);
             set {
+                if (GetData<uint>(8) == value) return;
                 SetData(8, value);
                 OnPropertyChanged(nameof(Base_duration));
             }
@@ -49,6 +52,7 @@ namespace MHW_Editor.Items {
         public uint Unknown_int32_1 {
             get => GetData<uint>(12);
             set {
+                if (GetData<uint>(12) == value) return;
                 SetData(12, value);
                 OnPropertyChanged(nameof(Unknown_int32_1));
             }
@@ -60,6 +64,7 @@ namespace MHW_Editor.Items {
         public uint Unknown_int32_2 {
             get => GetData<uint>(16);
             set {
+                if (GetData<uint>(16) == value) return;
                 SetData(16, value);
                 OnPropertyChanged(nameof(Unknown_int32_2));
             }
@@ -71,6 +76,7 @@ namespace MHW_Editor.Items {
         public uint Unknown_int32_3 {
             get => GetData<uint>(20);
             set {
+                if (GetData<uint>(20) == value) return;
                 SetData(20, value);
                 OnPropertyChanged(nameof(Unknown_int32_3));
             }

@@ -16,6 +16,7 @@ namespace MHW_Editor.Items {
         public MHW_Template.Weapons.CoatingType Close_Range {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(0);
             set {
+                if ((MHW_Template.Weapons.CoatingType) GetData<byte>(0) == value) return;
                 SetData(0, (byte) value);
                 OnPropertyChanged(nameof(Close_Range));
             }
@@ -27,6 +28,7 @@ namespace MHW_Editor.Items {
         public MHW_Template.Weapons.CoatingType Power {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(1);
             set {
+                if ((MHW_Template.Weapons.CoatingType) GetData<byte>(1) == value) return;
                 SetData(1, (byte) value);
                 OnPropertyChanged(nameof(Power));
             }
@@ -38,6 +40,7 @@ namespace MHW_Editor.Items {
         public MHW_Template.Weapons.CoatingType Paralysis {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(2);
             set {
+                if ((MHW_Template.Weapons.CoatingType) GetData<byte>(2) == value) return;
                 SetData(2, (byte) value);
                 OnPropertyChanged(nameof(Paralysis));
             }
@@ -49,6 +52,7 @@ namespace MHW_Editor.Items {
         public MHW_Template.Weapons.CoatingType Poison {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(3);
             set {
+                if ((MHW_Template.Weapons.CoatingType) GetData<byte>(3) == value) return;
                 SetData(3, (byte) value);
                 OnPropertyChanged(nameof(Poison));
             }
@@ -60,6 +64,7 @@ namespace MHW_Editor.Items {
         public MHW_Template.Weapons.CoatingType Sleep {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(4);
             set {
+                if ((MHW_Template.Weapons.CoatingType) GetData<byte>(4) == value) return;
                 SetData(4, (byte) value);
                 OnPropertyChanged(nameof(Sleep));
             }
@@ -71,6 +76,7 @@ namespace MHW_Editor.Items {
         public MHW_Template.Weapons.CoatingType Blast {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(5);
             set {
+                if ((MHW_Template.Weapons.CoatingType) GetData<byte>(5) == value) return;
                 SetData(5, (byte) value);
                 OnPropertyChanged(nameof(Blast));
             }

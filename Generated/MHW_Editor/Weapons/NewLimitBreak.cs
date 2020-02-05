@@ -31,6 +31,7 @@ namespace MHW_Editor.Weapons {
         public ushort Needed_Item_Id_to_Unlock {
             get => GetData<ushort>(4);
             set {
+                if (GetData<ushort>(4) == value) return;
                 SetData(4, value);
                 OnPropertyChanged(nameof(Needed_Item_Id_to_Unlock));
             }
@@ -42,6 +43,7 @@ namespace MHW_Editor.Weapons {
         protected sbyte Activated_1 {
             get => GetData<sbyte>(6);
             set {
+                if (GetData<sbyte>(6) == value) return;
                 SetData(6, value);
                 OnPropertyChanged(nameof(Activated_1));
             }
@@ -53,6 +55,7 @@ namespace MHW_Editor.Weapons {
         protected sbyte Activated_2 {
             get => GetData<sbyte>(7);
             set {
+                if (GetData<sbyte>(7) == value) return;
                 SetData(7, value);
                 OnPropertyChanged(nameof(Activated_2));
             }
@@ -64,6 +67,7 @@ namespace MHW_Editor.Weapons {
         protected sbyte Activated_3 {
             get => GetData<sbyte>(8);
             set {
+                if (GetData<sbyte>(8) == value) return;
                 SetData(8, value);
                 OnPropertyChanged(nameof(Activated_3));
             }
@@ -75,6 +79,7 @@ namespace MHW_Editor.Weapons {
         protected sbyte Activated_4 {
             get => GetData<sbyte>(9);
             set {
+                if (GetData<sbyte>(9) == value) return;
                 SetData(9, value);
                 OnPropertyChanged(nameof(Activated_4));
             }
@@ -87,6 +92,7 @@ namespace MHW_Editor.Weapons {
         public ushort Mat_1_Id {
             get => GetData<ushort>(14);
             set {
+                if (GetData<ushort>(14) == value) return;
                 SetData(14, value);
                 OnPropertyChanged(nameof(Mat_1_Id));
             }
@@ -98,6 +104,7 @@ namespace MHW_Editor.Weapons {
         public byte Mat_1_Count {
             get => GetData<byte>(16);
             set {
+                if (GetData<byte>(16) == value) return;
                 SetData(16, value);
                 OnPropertyChanged(nameof(Mat_1_Count));
             }
@@ -110,6 +117,7 @@ namespace MHW_Editor.Weapons {
         public ushort Mat_2_Id {
             get => GetData<ushort>(17);
             set {
+                if (GetData<ushort>(17) == value) return;
                 SetData(17, value);
                 OnPropertyChanged(nameof(Mat_2_Id));
             }
@@ -121,6 +129,7 @@ namespace MHW_Editor.Weapons {
         public byte Mat_2_Count {
             get => GetData<byte>(19);
             set {
+                if (GetData<byte>(19) == value) return;
                 SetData(19, value);
                 OnPropertyChanged(nameof(Mat_2_Count));
             }
@@ -133,6 +142,7 @@ namespace MHW_Editor.Weapons {
         public ushort Mat_3_Id {
             get => GetData<ushort>(20);
             set {
+                if (GetData<ushort>(20) == value) return;
                 SetData(20, value);
                 OnPropertyChanged(nameof(Mat_3_Id));
             }
@@ -144,6 +154,7 @@ namespace MHW_Editor.Weapons {
         public byte Mat_3_Count {
             get => GetData<byte>(22);
             set {
+                if (GetData<byte>(22) == value) return;
                 SetData(22, value);
                 OnPropertyChanged(nameof(Mat_3_Count));
             }
@@ -156,6 +167,7 @@ namespace MHW_Editor.Weapons {
         public ushort Mat_4_Id {
             get => GetData<ushort>(23);
             set {
+                if (GetData<ushort>(23) == value) return;
                 SetData(23, value);
                 OnPropertyChanged(nameof(Mat_4_Id));
             }
@@ -167,6 +179,7 @@ namespace MHW_Editor.Weapons {
         public byte Mat_4_Count {
             get => GetData<byte>(24);
             set {
+                if (GetData<byte>(24) == value) return;
                 SetData(24, value);
                 OnPropertyChanged(nameof(Mat_4_Count));
             }

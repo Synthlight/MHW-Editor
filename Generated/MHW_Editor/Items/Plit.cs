@@ -16,6 +16,7 @@ namespace MHW_Editor.Items {
         public MHW_Template.Items.CultivationCategory Cultivation_category {
             get => (MHW_Template.Items.CultivationCategory) GetData<uint>(0);
             set {
+                if ((MHW_Template.Items.CultivationCategory) GetData<uint>(0) == value) return;
                 SetData(0, (uint) value);
                 OnPropertyChanged(nameof(Cultivation_category));
             }
@@ -27,6 +28,7 @@ namespace MHW_Editor.Items {
         protected byte Unlocked_from_start_Raw {
             get => GetData<byte>(8);
             set {
+                if (GetData<byte>(8) == value) return;
                 SetData(8, value);
                 OnPropertyChanged(nameof(Unlocked_from_start_Raw));
             }
@@ -39,6 +41,7 @@ namespace MHW_Editor.Items {
         public ushort Item {
             get => GetData<ushort>(9);
             set {
+                if (GetData<ushort>(9) == value) return;
                 SetData(9, value);
                 OnPropertyChanged(nameof(Item));
             }
@@ -50,6 +53,7 @@ namespace MHW_Editor.Items {
         public uint Required_time {
             get => GetData<uint>(13);
             set {
+                if (GetData<uint>(13) == value) return;
                 SetData(13, value);
                 OnPropertyChanged(nameof(Required_time));
             }
@@ -61,6 +65,7 @@ namespace MHW_Editor.Items {
         public uint Catalyst_time_bonus {
             get => GetData<uint>(17);
             set {
+                if (GetData<uint>(17) == value) return;
                 SetData(17, value);
                 OnPropertyChanged(nameof(Catalyst_time_bonus));
             }
@@ -72,6 +77,7 @@ namespace MHW_Editor.Items {
         public uint Amount_Base_ {
             get => GetData<uint>(25);
             set {
+                if (GetData<uint>(25) == value) return;
                 SetData(25, value);
                 OnPropertyChanged(nameof(Amount_Base_));
             }
@@ -83,6 +89,7 @@ namespace MHW_Editor.Items {
         public uint Amount_1_ {
             get => GetData<uint>(29);
             set {
+                if (GetData<uint>(29) == value) return;
                 SetData(29, value);
                 OnPropertyChanged(nameof(Amount_1_));
             }
@@ -94,6 +101,7 @@ namespace MHW_Editor.Items {
         public uint Amount_2_ {
             get => GetData<uint>(33);
             set {
+                if (GetData<uint>(33) == value) return;
                 SetData(33, value);
                 OnPropertyChanged(nameof(Amount_2_));
             }
@@ -105,6 +113,7 @@ namespace MHW_Editor.Items {
         public uint Unknown_int32_1 {
             get => GetData<uint>(4);
             set {
+                if (GetData<uint>(4) == value) return;
                 SetData(4, value);
                 OnPropertyChanged(nameof(Unknown_int32_1));
             }

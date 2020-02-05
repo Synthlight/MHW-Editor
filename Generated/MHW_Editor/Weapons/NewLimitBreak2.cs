@@ -16,6 +16,7 @@ namespace MHW_Editor.Weapons {
         public MHW_Template.Weapons.AugmentationCategory Aug_Category {
             get => (MHW_Template.Weapons.AugmentationCategory) GetData<uint>(0);
             set {
+                if ((MHW_Template.Weapons.AugmentationCategory) GetData<uint>(0) == value) return;
                 SetData(0, (uint) value);
                 OnPropertyChanged(nameof(Aug_Category));
             }
@@ -27,6 +28,7 @@ namespace MHW_Editor.Weapons {
         public uint Aug_Level {
             get => GetData<uint>(4);
             set {
+                if (GetData<uint>(4) == value) return;
                 SetData(4, value);
                 OnPropertyChanged(nameof(Aug_Level));
             }
@@ -38,6 +40,7 @@ namespace MHW_Editor.Weapons {
         public uint Aug_Slot_Cost {
             get => GetData<uint>(8);
             set {
+                if (GetData<uint>(8) == value) return;
                 SetData(8, value);
                 OnPropertyChanged(nameof(Aug_Slot_Cost));
             }
@@ -49,6 +52,7 @@ namespace MHW_Editor.Weapons {
         public uint Research_Cost_r10_ {
             get => GetData<uint>(12);
             set {
+                if (GetData<uint>(12) == value) return;
                 SetData(12, value);
                 OnPropertyChanged(nameof(Research_Cost_r10_));
             }
@@ -60,6 +64,7 @@ namespace MHW_Editor.Weapons {
         public uint Research_Cost_r11_ {
             get => GetData<uint>(16);
             set {
+                if (GetData<uint>(16) == value) return;
                 SetData(16, value);
                 OnPropertyChanged(nameof(Research_Cost_r11_));
             }
@@ -71,6 +76,7 @@ namespace MHW_Editor.Weapons {
         public uint Research_Cost_r12_ {
             get => GetData<uint>(20);
             set {
+                if (GetData<uint>(20) == value) return;
                 SetData(20, value);
                 OnPropertyChanged(nameof(Research_Cost_r12_));
             }

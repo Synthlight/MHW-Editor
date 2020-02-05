@@ -23,6 +23,7 @@ namespace MHW_Editor.Items {
         public MHW_Template.Items.ItemSubType Sub_Type {
             get => (MHW_Template.Items.ItemSubType) GetData<byte>(4);
             set {
+                if ((MHW_Template.Items.ItemSubType) GetData<byte>(4) == value) return;
                 SetData(4, (byte) value);
                 OnPropertyChanged(nameof(Sub_Type));
             }
@@ -34,6 +35,7 @@ namespace MHW_Editor.Items {
         public MHW_Template.Items.ItemType Type {
             get => (MHW_Template.Items.ItemType) GetData<uint>(5);
             set {
+                if ((MHW_Template.Items.ItemType) GetData<uint>(5) == value) return;
                 SetData(5, (uint) value);
                 OnPropertyChanged(nameof(Type));
             }
@@ -45,6 +47,7 @@ namespace MHW_Editor.Items {
         public byte Rarity {
             get => GetData<byte>(9);
             set {
+                if (GetData<byte>(9) == value) return;
                 SetData(9, value);
                 OnPropertyChanged(nameof(Rarity));
             }
@@ -56,6 +59,7 @@ namespace MHW_Editor.Items {
         public byte Carry_Limit {
             get => GetData<byte>(10);
             set {
+                if (GetData<byte>(10) == value) return;
                 SetData(10, value);
                 OnPropertyChanged(nameof(Carry_Limit));
             }
@@ -67,6 +71,7 @@ namespace MHW_Editor.Items {
         public byte Unknown_uint8_ {
             get => GetData<byte>(11);
             set {
+                if (GetData<byte>(11) == value) return;
                 SetData(11, value);
                 OnPropertyChanged(nameof(Unknown_uint8_));
             }
@@ -78,6 +83,7 @@ namespace MHW_Editor.Items {
         public ushort Sort_Order {
             get => GetData<ushort>(12);
             set {
+                if (GetData<ushort>(12) == value) return;
                 SetData(12, value);
                 OnPropertyChanged(nameof(Sort_Order));
             }
@@ -89,6 +95,7 @@ namespace MHW_Editor.Items {
         public uint Icon_Id {
             get => GetData<uint>(18);
             set {
+                if (GetData<uint>(18) == value) return;
                 SetData(18, value);
                 OnPropertyChanged(nameof(Icon_Id));
             }
@@ -100,6 +107,7 @@ namespace MHW_Editor.Items {
         public ushort Icon_Color_Id {
             get => GetData<ushort>(22);
             set {
+                if (GetData<ushort>(22) == value) return;
                 SetData(22, value);
                 OnPropertyChanged(nameof(Icon_Color_Id));
             }
@@ -111,6 +119,7 @@ namespace MHW_Editor.Items {
         public uint Sell_Price {
             get => GetData<uint>(24);
             set {
+                if (GetData<uint>(24) == value) return;
                 SetData(24, value);
                 OnPropertyChanged(nameof(Sell_Price));
             }
@@ -122,6 +131,7 @@ namespace MHW_Editor.Items {
         public uint Buy_Price {
             get => GetData<uint>(28);
             set {
+                if (GetData<uint>(28) == value) return;
                 SetData(28, value);
                 OnPropertyChanged(nameof(Buy_Price));
             }
@@ -133,6 +143,7 @@ namespace MHW_Editor.Items {
         private uint Flags_Raw {
             get => GetData<uint>(14);
             set {
+                if (GetData<uint>(14) == value) return;
                 SetData(14, value);
                 OnPropertyChanged(nameof(Flags_Raw));
             }

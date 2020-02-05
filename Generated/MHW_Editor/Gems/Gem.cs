@@ -30,6 +30,7 @@ namespace MHW_Editor.Gems {
         public byte Size {
             get => GetData<byte>(8);
             set {
+                if (GetData<byte>(8) == value) return;
                 SetData(8, value);
                 OnPropertyChanged(nameof(Size));
             }
@@ -42,6 +43,7 @@ namespace MHW_Editor.Gems {
         public ushort Skill_1 {
             get => GetData<ushort>(12);
             set {
+                if (GetData<ushort>(12) == value) return;
                 SetData(12, value);
                 OnPropertyChanged(nameof(Skill_1));
             }
@@ -53,6 +55,7 @@ namespace MHW_Editor.Gems {
         public byte Skill_1_Level {
             get => GetData<byte>(16);
             set {
+                if (GetData<byte>(16) == value) return;
                 SetData(16, value);
                 OnPropertyChanged(nameof(Skill_1_Level));
             }
@@ -65,6 +68,7 @@ namespace MHW_Editor.Gems {
         public ushort Skill_2 {
             get => GetData<ushort>(20);
             set {
+                if (GetData<ushort>(20) == value) return;
                 SetData(20, value);
                 OnPropertyChanged(nameof(Skill_2));
             }
@@ -76,6 +80,7 @@ namespace MHW_Editor.Gems {
         public byte Skill_2_Level {
             get => GetData<byte>(24);
             set {
+                if (GetData<byte>(24) == value) return;
                 SetData(24, value);
                 OnPropertyChanged(nameof(Skill_2_Level));
             }

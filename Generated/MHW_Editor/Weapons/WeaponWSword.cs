@@ -23,6 +23,7 @@ namespace MHW_Editor.Weapons {
         public MHW_Template.Weapons.Element Element_1_Type {
             get => (MHW_Template.Weapons.Element) GetData<byte>(4);
             set {
+                if ((MHW_Template.Weapons.Element) GetData<byte>(4) == value) return;
                 SetData(4, (byte) value);
                 OnPropertyChanged(nameof(Element_1_Type));
             }
@@ -34,6 +35,7 @@ namespace MHW_Editor.Weapons {
         public short Element_1_Dmg {
             get => GetData<short>(5);
             set {
+                if (GetData<short>(5) == value) return;
                 SetData(5, value);
                 OnPropertyChanged(nameof(Element_1_Dmg));
             }
@@ -45,6 +47,7 @@ namespace MHW_Editor.Weapons {
         public MHW_Template.Weapons.Element Element_2_Type {
             get => (MHW_Template.Weapons.Element) GetData<byte>(7);
             set {
+                if ((MHW_Template.Weapons.Element) GetData<byte>(7) == value) return;
                 SetData(7, (byte) value);
                 OnPropertyChanged(nameof(Element_2_Type));
             }
@@ -56,6 +59,7 @@ namespace MHW_Editor.Weapons {
         public short Element_2_Dmg {
             get => GetData<short>(8);
             set {
+                if (GetData<short>(8) == value) return;
                 SetData(8, value);
                 OnPropertyChanged(nameof(Element_2_Dmg));
             }

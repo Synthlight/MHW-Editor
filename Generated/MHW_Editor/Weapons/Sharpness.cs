@@ -23,6 +23,7 @@ namespace MHW_Editor.Weapons {
         public ushort Red {
             get => GetData<ushort>(4);
             set {
+                if (GetData<ushort>(4) == value.Clamp((ushort) 0, (ushort) 400)) return;
                 SetData(4, value.Clamp((ushort) 0, (ushort) 400));
                 OnPropertyChanged(nameof(Red));
             }
@@ -34,6 +35,7 @@ namespace MHW_Editor.Weapons {
         public ushort Orange {
             get => GetData<ushort>(6);
             set {
+                if (GetData<ushort>(6) == value.Clamp((ushort) 0, (ushort) 400)) return;
                 SetData(6, value.Clamp((ushort) 0, (ushort) 400));
                 OnPropertyChanged(nameof(Orange));
             }
@@ -45,6 +47,7 @@ namespace MHW_Editor.Weapons {
         public ushort Yellow {
             get => GetData<ushort>(8);
             set {
+                if (GetData<ushort>(8) == value.Clamp((ushort) 0, (ushort) 400)) return;
                 SetData(8, value.Clamp((ushort) 0, (ushort) 400));
                 OnPropertyChanged(nameof(Yellow));
             }
@@ -56,6 +59,7 @@ namespace MHW_Editor.Weapons {
         public ushort Green {
             get => GetData<ushort>(10);
             set {
+                if (GetData<ushort>(10) == value.Clamp((ushort) 0, (ushort) 400)) return;
                 SetData(10, value.Clamp((ushort) 0, (ushort) 400));
                 OnPropertyChanged(nameof(Green));
             }
@@ -67,6 +71,7 @@ namespace MHW_Editor.Weapons {
         public ushort Blue {
             get => GetData<ushort>(12);
             set {
+                if (GetData<ushort>(12) == value.Clamp((ushort) 0, (ushort) 400)) return;
                 SetData(12, value.Clamp((ushort) 0, (ushort) 400));
                 OnPropertyChanged(nameof(Blue));
             }
@@ -78,6 +83,7 @@ namespace MHW_Editor.Weapons {
         public ushort White {
             get => GetData<ushort>(14);
             set {
+                if (GetData<ushort>(14) == value.Clamp((ushort) 0, (ushort) 400)) return;
                 SetData(14, value.Clamp((ushort) 0, (ushort) 400));
                 OnPropertyChanged(nameof(White));
             }
@@ -89,6 +95,7 @@ namespace MHW_Editor.Weapons {
         public ushort Purple {
             get => GetData<ushort>(16);
             set {
+                if (GetData<ushort>(16) == value.Clamp((ushort) 0, (ushort) 400)) return;
                 SetData(16, value.Clamp((ushort) 0, (ushort) 400));
                 OnPropertyChanged(nameof(Purple));
             }

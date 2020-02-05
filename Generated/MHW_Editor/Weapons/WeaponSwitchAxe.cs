@@ -23,6 +23,7 @@ namespace MHW_Editor.Weapons {
         public byte Unknown_1_uint8_ {
             get => GetData<byte>(4);
             set {
+                if (GetData<byte>(4) == value) return;
                 SetData(4, value);
                 OnPropertyChanged(nameof(Unknown_1_uint8_));
             }
@@ -34,6 +35,7 @@ namespace MHW_Editor.Weapons {
         public ushort Unknown_2_uint16_ {
             get => GetData<ushort>(5);
             set {
+                if (GetData<ushort>(5) == value) return;
                 SetData(5, value);
                 OnPropertyChanged(nameof(Unknown_2_uint16_));
             }

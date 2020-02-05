@@ -69,7 +69,7 @@ namespace MHW_Editor {
             get => locale;
             set {
                 locale = value;
-                foreach (MhwItem item in items) {
+                foreach (MhwItem item in items) { // Won't warn about duplicate names, but avoid them nonetheless.
                     item.OnPropertyChanged(nameof(IMhwItem.Name),
                                            nameof(SkillDat.Name_And_Id),
                                            nameof(SkillDat.Description),
@@ -217,6 +217,7 @@ namespace MHW_Editor {
             e.Column.CanUserSort = true;
 
             // Use [DisplayName] attribute for the column header text.
+            // Use [SortOrder] attribute to control the position. Generated fields have spacing so it's easy to say 'generated_field_sortOrder + 1'.
             Type sourceClassType = ((dynamic) e.PropertyDescriptor).ComponentType;
             var propertyInfo = sourceClassType.GetProperties().FirstOrDefault(info => info.Name == e.PropertyName);
 
@@ -463,8 +464,8 @@ namespace MHW_Editor {
                             armor.Skill_3_Level = 10;
                         }
 
-                        // 2399: Geomancy Charm
-                        if (armor.Id == 2399) {
+                        // 2454: Tremor Charm III
+                        if (armor.Id == 2454) {
                             armor.Skill_1 = SkillDataValueClass.Forager_s_Luck;
                             armor.Skill_1_Level = 10;
                             armor.Skill_2 = SkillDataValueClass.Detector;

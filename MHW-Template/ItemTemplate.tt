@@ -45,24 +45,31 @@ namespace <#= _namespace #> {
 #>
         [DataSource(DataSourceType.<#= entry.dataSourceType #>)]
 <#
-        }
+        } // End dataSource check.
 #>
-        <#= entry.accessLevel #> <#= returnString #> <#= name #> {
-            get => <#= getCast #>GetData<<#= typeString #>>(<#= entry.offset #>);
+        <#= entry.accessLevel #> <#= returnString #> <#= name #> {<# // Property definition. #>
+
+            get => <#= getCast #>GetData<<#= typeString #>>(<#= entry.offset #>);<# // Getter. #>
+
 <#
         if (!entry.readOnly) {
 #>
-            set {
+            set {<# // Setter. #>
+
+                if (<#= getCast #>GetData<<#= typeString #>>(<#= entry.offset #>) == <#= entry.valueString #>) return;<# // Do nothing if the value is the same. #>
+
                 SetData(<#= entry.offset #>, <#= setCast #><#= entry.valueString #>);
                 OnPropertyChanged(nameof(<#= name #>));
             }
 <#
-        }
+        } // End readOnly check.
 #>
-        }
+        }<# // End property block. #>
+
 <#
         sortIndex += 50;
-    }
+    } // End loop.
 #>
-    }
+    }<# // End class. #>
+
 }
