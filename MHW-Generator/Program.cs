@@ -42,6 +42,43 @@ namespace MHW_Generator {
             GenASkill();
             GenEqCrt();
             GenEqCus();
+            GenPlfe();
+            GenPlit();
+        }
+
+        private static void GenPlfe() {
+            GenerateItemProps("MHW_Editor.Items", "Plfe", new MhwStructData {
+                size = 24,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Fertilizer Id", 0, typeof(uint), typeof(Fertilizer)),
+                    new MhwStructData.Entry("Prize", 4, typeof(uint)),
+                    new MhwStructData.Entry("Base duration", 8, typeof(uint)),
+                    new MhwStructData.Entry("Unknown (int32) 1", 12, typeof(uint)),
+                    new MhwStructData.Entry("Unknown (int32) 2", 16, typeof(uint)),
+                    new MhwStructData.Entry("Unknown (int32) 3", 20, typeof(uint))
+                }
+            });
+        }
+
+        private static void GenPlit() {
+            GenerateItemProps("MHW_Editor.Items", "Plit", new MhwStructData {
+                size = 37,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Cultivation category", 0, typeof(uint), typeof(CultivationCategory)),
+                    new MhwStructData.Entry("Unlocked from start Raw", 8, typeof(byte), accessLevel: "protected"),
+                    new MhwStructData.Entry("Item", 9, typeof(ushort), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Required time", 13, typeof(uint)),
+                    new MhwStructData.Entry("Catalyst time bonus", 17, typeof(uint)),
+                    new MhwStructData.Entry("Amount (Base)", 25, typeof(uint)),
+                    new MhwStructData.Entry("Amount (+1)", 29, typeof(uint)),
+                    new MhwStructData.Entry("Amount (+2)", 33, typeof(uint)),
+                    new MhwStructData.Entry("Unknown (int32) 1", 4, typeof(uint))
+                }
+            });
         }
 
         private static void GenEqCus() {
