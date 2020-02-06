@@ -5,7 +5,7 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Gems {
-    public partial class DecoIot {
+    public partial class DecoLottery {
         public const uint StructSize = 52;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;

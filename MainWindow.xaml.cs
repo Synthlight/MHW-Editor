@@ -40,6 +40,7 @@ namespace MHW_Editor {
             "*.arm_up",
             "*.ask",
             "*.bbtbl",
+            "*.dglt",
             "*.diot",
             "*.eq_crt",
             "*.eq_cus",
@@ -163,7 +164,8 @@ namespace MHW_Editor {
                                                  typeof(Sharpness),
                                                  typeof(ShellTable),
                                                  typeof(SkillDat),
-                                                 typeof(DecoIot),
+                                                 typeof(DecoLottery),
+                                                 typeof(DecoGradeLottery),
                                                  typeof(NewLimitBreak),
                                                  typeof(NewLimitBreak2),
                                                  typeof(WeaponWSword),
@@ -179,8 +181,8 @@ namespace MHW_Editor {
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
                     break;
-                case nameof(DecoIot.Item_Id):
-                    e.Cancel = targetFileType.Is(typeof(DecoIot));
+                case nameof(DecoLottery.Item_Id):
+                    e.Cancel = targetFileType.Is(typeof(DecoLottery), typeof(DecoGradeLottery));
                     break;
                 case nameof(EqCrt.Mat_1_Id):
                 case nameof(EqCrt.Mat_2_Id):
@@ -767,7 +769,7 @@ namespace MHW_Editor {
 #pragma warning restore 162
 
             btn_sort_jewel_order_by_name.Visibility = targetFileType.Is(typeof(Item)) ? Visibility.Visible : Visibility.Collapsed;
-            cb_show_id_before_name.Visibility = targetFileType.Is(typeof(SkillDat), typeof(DecoIot)) ? Visibility.Visible : Visibility.Collapsed;
+            cb_show_id_before_name.Visibility = targetFileType.Is(typeof(SkillDat), typeof(DecoLottery), typeof(DecoGradeLottery)) ? Visibility.Visible : Visibility.Collapsed;
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 
@@ -1023,7 +1025,11 @@ namespace MHW_Editor {
             }
 
             if (fileName.EndsWith(".diot")) {
-                return typeof(DecoIot);
+                return typeof(DecoLottery);
+            }
+
+            if (fileName.EndsWith(".dglt")) {
+                return typeof(DecoGradeLottery);
             }
 
             throw new Exception($"No type found for: {fileName}");

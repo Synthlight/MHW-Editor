@@ -47,11 +47,35 @@ namespace MHW_Generator {
             GenOtomoWeaponDat();
             GenOtomoArmorDat();
             GenOtomoArmorDat();
-            GenDecoIot();
+            GenDecoLot();
+            GenDecoGradeIot();
         }
 
-        private static void GenDecoIot() { // .diot
-            GenerateItemProps("MHW_Editor.Gems", "DecoIot", new MhwStructData { // .owp_dat
+        private static void GenDecoGradeIot() { // .dglt
+            GenerateItemProps("MHW_Editor.Gems", "DecoGradeLottery", new MhwStructData { // .owp_dat
+                size = 52,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Index", 0, typeof(uint), true, accessLevel: "private"),
+                    new MhwStructData.Entry("Item Id", 4, typeof(uint), true),
+                    new MhwStructData.Entry("R5", 8, typeof(uint)),
+                    new MhwStructData.Entry("R6", 12, typeof(uint)),
+                    new MhwStructData.Entry("R7", 16, typeof(uint)),
+                    new MhwStructData.Entry("R8", 20, typeof(uint)),
+                    new MhwStructData.Entry("R9", 24, typeof(uint)),
+                    new MhwStructData.Entry("R10", 28, typeof(uint)),
+                    new MhwStructData.Entry("R11", 32, typeof(uint)),
+                    new MhwStructData.Entry("R12", 36, typeof(uint)),
+                    new MhwStructData.Entry("R13", 40, typeof(uint)),
+                    new MhwStructData.Entry("Unknown (uint32) 1", 44, typeof(uint)),
+                    new MhwStructData.Entry("Unknown (uint32) 2", 48, typeof(uint))
+                }
+            });
+        }
+
+        private static void GenDecoLot() { // .diot
+            GenerateItemProps("MHW_Editor.Gems", "DecoLottery", new MhwStructData { // .owp_dat
                 size = 52,
                 offsetInitial = 10,
                 entryCountOffset = 6,
