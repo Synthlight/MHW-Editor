@@ -78,7 +78,9 @@
     <Compile Include="Assets\DataHelper.cs" />
     <Compile Include="Controls\AutoFilteredComboBox.cs" />
     <Compile Include="EncryptionHelper.cs" />
+    <Compile Include="Gems\DecoIot.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\OtomoArmorDat.cs" />
+    <Compile Include="Generated\MHW_Editor\Gems\DecoIot.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCrt.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCus.cs" />
     <Compile Include="Generated\MHW_Editor\Items\PlantFertilizer.cs" />

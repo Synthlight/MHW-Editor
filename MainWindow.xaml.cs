@@ -40,6 +40,7 @@ namespace MHW_Editor {
             "*.arm_up",
             "*.ask",
             "*.bbtbl",
+            "*.diot",
             "*.eq_crt",
             "*.eq_cus",
             "*.itm",
@@ -162,6 +163,7 @@ namespace MHW_Editor {
                                                  typeof(Sharpness),
                                                  typeof(ShellTable),
                                                  typeof(SkillDat),
+                                                 typeof(DecoIot),
                                                  typeof(NewLimitBreak),
                                                  typeof(NewLimitBreak2),
                                                  typeof(WeaponWSword),
@@ -176,6 +178,9 @@ namespace MHW_Editor {
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
+                    break;
+                case nameof(DecoIot.Item_Id):
+                    e.Cancel = targetFileType.Is(typeof(DecoIot));
                     break;
                 case nameof(EqCrt.Mat_1_Id):
                 case nameof(EqCrt.Mat_2_Id):
@@ -762,7 +767,7 @@ namespace MHW_Editor {
 #pragma warning restore 162
 
             btn_sort_jewel_order_by_name.Visibility = targetFileType.Is(typeof(Item)) ? Visibility.Visible : Visibility.Collapsed;
-            cb_show_id_before_name.Visibility = targetFileType.Is(typeof(SkillDat)) ? Visibility.Visible : Visibility.Collapsed;
+            cb_show_id_before_name.Visibility = targetFileType.Is(typeof(SkillDat), typeof(DecoIot)) ? Visibility.Visible : Visibility.Collapsed;
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 
@@ -1015,6 +1020,10 @@ namespace MHW_Editor {
 
             if (fileName.EndsWith(".oam_dat")) {
                 return typeof(OtomoArmorDat);
+            }
+
+            if (fileName.EndsWith(".diot")) {
+                return typeof(DecoIot);
             }
 
             throw new Exception($"No type found for: {fileName}");

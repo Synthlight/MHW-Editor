@@ -333,11 +333,6 @@ namespace MHW_Editor.Weapons {
         [DisplayName(GMD_Name_Index_displayName)]
         protected ushort GMD_Name_Index {
             get => GetData<ushort>(58);
-            set {
-                if (GetData<ushort>(58) == value) return;
-                SetData(58, value);
-                OnPropertyChanged(nameof(GMD_Name_Index));
-            }
         }
     }
 }

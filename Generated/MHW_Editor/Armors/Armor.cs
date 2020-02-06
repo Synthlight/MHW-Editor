@@ -420,11 +420,6 @@ namespace MHW_Editor.Armors {
         [DisplayName(GMD_Name_Index_displayName)]
         protected ushort GMD_Name_Index {
             get => GetData<ushort>(55);
-            set {
-                if (GetData<ushort>(55) == value) return;
-                SetData(55, value);
-                OnPropertyChanged(nameof(GMD_Name_Index));
-            }
         }
     }
 }

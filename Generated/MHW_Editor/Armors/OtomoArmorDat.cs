@@ -225,11 +225,6 @@ namespace MHW_Editor.Armors {
         [DisplayName(GMD_Name_Index_displayName)]
         protected ushort GMD_Name_Index {
             get => GetData<ushort>(38);
-            set {
-                if (GetData<ushort>(38) == value) return;
-                SetData(38, value);
-                OnPropertyChanged(nameof(GMD_Name_Index));
-            }
         }
 
         protected const string GMD_Description_Index_displayName = "GMD Description Index";
@@ -238,11 +233,6 @@ namespace MHW_Editor.Armors {
         [DisplayName(GMD_Description_Index_displayName)]
         protected ushort GMD_Description_Index {
             get => GetData<ushort>(40);
-            set {
-                if (GetData<ushort>(40) == value) return;
-                SetData(40, value);
-                OnPropertyChanged(nameof(GMD_Description_Index));
-            }
         }
     }
 }

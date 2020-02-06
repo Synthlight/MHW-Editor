@@ -46,6 +46,31 @@ namespace MHW_Generator {
             GenPlantItem();
             GenOtomoWeaponDat();
             GenOtomoArmorDat();
+            GenOtomoArmorDat();
+            GenDecoIot();
+        }
+
+        private static void GenDecoIot() { // .diot
+            GenerateItemProps("MHW_Editor.Gems", "DecoIot", new MhwStructData { // .owp_dat
+                size = 52,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Index", 0, typeof(uint), true, accessLevel: "private"),
+                    new MhwStructData.Entry("Item Id", 4, typeof(uint), true),
+                    new MhwStructData.Entry("R5", 8, typeof(uint)),
+                    new MhwStructData.Entry("R6", 12, typeof(uint)),
+                    new MhwStructData.Entry("R7", 16, typeof(uint)),
+                    new MhwStructData.Entry("R8", 20, typeof(uint)),
+                    new MhwStructData.Entry("R9", 24, typeof(uint)),
+                    new MhwStructData.Entry("R10", 28, typeof(uint)),
+                    new MhwStructData.Entry("R11", 32, typeof(uint)),
+                    new MhwStructData.Entry("R12", 36, typeof(uint)),
+                    new MhwStructData.Entry("R13", 40, typeof(uint)),
+                    new MhwStructData.Entry("Unknown (uint32) 1", 44, typeof(uint)),
+                    new MhwStructData.Entry("Unknown (uint32) 2", 48, typeof(uint))
+                }
+            });
         }
 
         private static void GenOtomoArmorDat() {
@@ -70,8 +95,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Thunder Res", 30, typeof(sbyte)),
                     new MhwStructData.Entry("Dragon Res", 31, typeof(sbyte)),
                     new MhwStructData.Entry("Set Group", 36, typeof(ushort)),
-                    new MhwStructData.Entry("GMD Name Index", 38, typeof(ushort), accessLevel: "protected"),
-                    new MhwStructData.Entry("GMD Description Index", 40, typeof(ushort), accessLevel: "protected")
+                    new MhwStructData.Entry("GMD Name Index", 38, typeof(ushort), true, accessLevel: "protected"),
+                    new MhwStructData.Entry("GMD Description Index", 40, typeof(ushort), true, accessLevel: "protected")
                 }
             });
         }
@@ -98,8 +123,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Cost", 27, typeof(uint)),
                     new MhwStructData.Entry("Unknown (byte) 1", 31, typeof(byte)),
                     new MhwStructData.Entry("Set Group", 32, typeof(ushort)),
-                    new MhwStructData.Entry("GMD Name Index", 34, typeof(ushort), accessLevel: "protected"),
-                    new MhwStructData.Entry("GMD Description Index", 36, typeof(ushort), accessLevel: "protected")
+                    new MhwStructData.Entry("GMD Name Index", 34, typeof(ushort), true, accessLevel: "protected"),
+                    new MhwStructData.Entry("GMD Description Index", 36, typeof(ushort), true, accessLevel: "protected")
                 }
             });
         }
@@ -431,7 +456,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Slot 3 Size", 43, typeof(byte)),
                     new MhwStructData.Entry("Special Ammo Type", 57, typeof(byte)),
                     new MhwStructData.Entry("Skill", 65, typeof(ushort), dataSourceType: DataSourceType.Skills),
-                    new MhwStructData.Entry("GMD Name Index", 61, typeof(ushort), accessLevel: "protected")
+                    new MhwStructData.Entry("GMD Name Index", 61, typeof(ushort), true, accessLevel: "protected")
                 }
             });
         }
@@ -467,7 +492,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Special Ability 1 ID", 39, typeof(ushort)),
                     new MhwStructData.Entry("Special Ability 2 ID", 41, typeof(ushort)),
                     new MhwStructData.Entry("Skill", 62, typeof(ushort), dataSourceType: DataSourceType.Skills),
-                    new MhwStructData.Entry("GMD Name Index", 58, typeof(ushort), accessLevel: "protected")
+                    new MhwStructData.Entry("GMD Name Index", 58, typeof(ushort), true, accessLevel: "protected")
                 }
             });
         }
@@ -509,7 +534,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Gender", 49, typeof(byte), typeof(Gender)),
                     new MhwStructData.Entry("Set Group", 53, typeof(ushort)),
                     new MhwStructData.Entry("Is Permanent Raw", 59, typeof(byte), accessLevel: "protected"),
-                    new MhwStructData.Entry("GMD Name Index", 55, typeof(ushort), accessLevel: "protected")
+                    new MhwStructData.Entry("GMD Name Index", 55, typeof(ushort), true, accessLevel: "protected")
                 }
             });
         }
