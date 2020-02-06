@@ -125,7 +125,7 @@ namespace MHW_Editor {
             btn_slot_cheat.Click += Btn_slot_cheat_Click;
             btn_set_bonus_cheat.Click += Btn_set_bonus_cheat_Click;
             btn_skill_level_cheat.Click += Btn_skill_level_cheat_Click;
-            btn_zenny_cheat.Click += Btn_zenny_cheat_Click;
+            btn_cost_cheat.Click += Btn_cost_cheat_Click;
             btn_damage_cheat.Click += Btn_damage_cheat_Click;
             btn_enable_all_coatings_cheat.Click += Btn_enable_all_coatings_cheat_Click;
             btn_max_sharpness_cheat.Click += Btn_max_sharpness_cheat_Click;
@@ -529,9 +529,7 @@ namespace MHW_Editor {
             if (!targetFileType.Is(typeof(Armor))) return;
 
             foreach (Armor item in items) {
-                if (item.Set_Skill_1_Level > 0) {
-                    item.Set_Skill_1_Level = 5;
-                }
+                if (item.Set_Skill_1_Level > 0) item.Set_Skill_1_Level = 5;
 
                 item.OnPropertyChanged();
             }
@@ -546,30 +544,15 @@ namespace MHW_Editor {
                 switch (item) {
                     case Gem _: {
                         Gem gem = item;
-
                         gem.Skill_1_Level = 10;
-
-                        if (gem.Skill_2_Level > 0) {
-                            gem.Skill_2_Level = 10;
-                        }
-
+                        if (gem.Skill_2_Level > 0) gem.Skill_2_Level = 10;
                         break;
                     }
                     case Armor _: {
                         Armor armor = item;
-
-                        if (armor.Skill_1_Level > 0) {
-                            armor.Skill_1_Level = 10;
-                        }
-
-                        if (armor.Skill_2_Level > 0) {
-                            armor.Skill_2_Level = 10;
-                        }
-
-                        if (armor.Skill_3_Level > 0) {
-                            armor.Skill_3_Level = 10;
-                        }
-
+                        if (armor.Skill_1_Level > 0) armor.Skill_1_Level = 10;
+                        if (armor.Skill_2_Level > 0) armor.Skill_2_Level = 10;
+                        if (armor.Skill_3_Level > 0) armor.Skill_3_Level = 10;
                         break;
                     }
                 }
@@ -578,38 +561,42 @@ namespace MHW_Editor {
             }
         }
 
-        private void Btn_zenny_cheat_Click(object sender, RoutedEventArgs e) {
+        private void Btn_cost_cheat_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!targetFileType.Is(typeof(Item), typeof(Armor), typeof(IWeapon))) return;
+            if (!targetFileType.Is(typeof(Item), typeof(Armor), typeof(IWeapon), typeof(EqCrt), typeof(EqCus))) return;
 
             foreach (var item in items) {
                 switch (item) {
                     case Item _: {
                         Item itm = item;
-
-                        if (itm.Buy_Price > 0) {
-                            itm.Buy_Price = 1;
-                        }
-
+                        if (itm.Buy_Price > 0) itm.Buy_Price = 1;
                         break;
                     }
                     case Armor _: {
                         Armor armor = item;
-
-                        if (armor.Cost > 0) {
-                            armor.Cost = 1;
-                        }
-
+                        if (armor.Cost > 0) armor.Cost = 1;
                         break;
                     }
                     case IWeapon _: {
                         IWeapon weapon = item;
-
-                        if (weapon.Cost > 0) {
-                            weapon.Cost = 1;
-                        }
-
+                        if (weapon.Cost > 0) weapon.Cost = 1;
+                        break;
+                    }
+                    case EqCrt _: {
+                        EqCrt eqCrt = item;
+                        if (eqCrt.Mat_1_Count > 0) eqCrt.Mat_1_Count = 1;
+                        if (eqCrt.Mat_2_Count > 0) eqCrt.Mat_2_Count = 1;
+                        if (eqCrt.Mat_3_Count > 0) eqCrt.Mat_3_Count = 1;
+                        if (eqCrt.Mat_4_Count > 0) eqCrt.Mat_4_Count = 1;
+                        break;
+                    }
+                    case EqCus _: {
+                        EqCus eqCus = item;
+                        if (eqCus.Mat_1_Count > 0) eqCus.Mat_1_Count = 1;
+                        if (eqCus.Mat_2_Count > 0) eqCus.Mat_2_Count = 1;
+                        if (eqCus.Mat_3_Count > 0) eqCus.Mat_3_Count = 1;
+                        if (eqCus.Mat_4_Count > 0) eqCus.Mat_4_Count = 1;
                         break;
                     }
                 }
@@ -627,22 +614,12 @@ namespace MHW_Editor {
                 switch (item) {
                     case OtomoWeaponDat _: {
                         OtomoWeaponDat otomoWeapon = item;
-
-                        if (otomoWeapon.Melee_Damage > 0) {
-                            otomoWeapon.Melee_Damage = 50000;
-                        }
-
-                        if (otomoWeapon.Ranged_Damage > 0) {
-                            otomoWeapon.Ranged_Damage = 50000;
-                        }
-
+                        if (otomoWeapon.Melee_Damage > 0) otomoWeapon.Melee_Damage = 50000;
+                        if (otomoWeapon.Ranged_Damage > 0) otomoWeapon.Ranged_Damage = 50000;
                         break;
                     }
                     case IWeapon _: {
-                        if (item.Damage > 0) {
-                            item.Damage = 50000;
-                        }
-
+                        if (item.Damage > 0) item.Damage = 50000;
                         break;
                     }
                 }
@@ -677,7 +654,6 @@ namespace MHW_Editor {
                 switch (item) {
                     case Sharpness _: {
                         Sharpness sharpness = item;
-
                         sharpness.Red = 10;
                         sharpness.Orange = 10;
                         sharpness.Yellow = 10;
@@ -685,16 +661,11 @@ namespace MHW_Editor {
                         sharpness.Blue = 10;
                         sharpness.White = 10;
                         sharpness.Purple = 400;
-
                         break;
                     }
                     case Melee _: {
                         Melee weapon = item;
-
-                        if (weapon.Sharpness_Amount > 0) {
-                            weapon.Sharpness_Amount = 5;
-                        }
-
+                        if (weapon.Sharpness_Amount > 0) weapon.Sharpness_Amount = 5;
                         break;
                     }
                 }
@@ -782,7 +753,7 @@ namespace MHW_Editor {
                 btn_slot_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(IWeapon), typeof(ASkill)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_skill_level_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Gem)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_set_bonus_cheat.Visibility = targetFileType.Is(typeof(Armor)) ? Visibility.Visible : Visibility.Collapsed;
-                btn_zenny_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Item), typeof(IWeapon)) ? Visibility.Visible : Visibility.Collapsed;
+                btn_cost_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Item), typeof(IWeapon), typeof(EqCrt), typeof(EqCus)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_damage_cheat.Visibility = targetFileType.Is(typeof(IWeapon), typeof(OtomoWeaponDat)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_enable_all_coatings_cheat.Visibility = targetFileType.Is(typeof(BottleTable)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_max_sharpness_cheat.Visibility = targetFileType.Is(typeof(Sharpness), typeof(Melee)) ? Visibility.Visible : Visibility.Collapsed;

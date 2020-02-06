@@ -91,10 +91,10 @@
                         HorizontalAlignment="Right"
                         Content="Max Skills"
                         Visibility="Collapsed"/>
-                <Button Name="btn_zenny_cheat"
+                <Button Name="btn_cost_cheat"
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"
-                        Content="Set Buy Prices to 1"
+                        Content="Set Cost to 1"
                         Visibility="Collapsed"/>
                 <Button Name="btn_enable_all_coatings_cheat"
                         Margin="8,0,0,0"
