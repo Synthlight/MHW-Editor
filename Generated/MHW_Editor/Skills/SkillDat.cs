@@ -6,7 +6,7 @@ using MHW_Template.Models;
 
 namespace MHW_Editor.Skills {
     public partial class SkillDat {
-        public const uint StructSize = 19;
+        public const uint StructSize = 27;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
@@ -123,11 +123,50 @@ namespace MHW_Editor.Skills {
         [SortOrder(Param_8_sortIndex)]
         [DisplayName(Param_8_displayName)]
         public ushort Param_8 {
-            get => GetData<ushort>(17);
+            get => GetData<ushort>(19);
             set {
-                if (GetData<ushort>(17) == value) return;
-                SetData(17, value);
+                if (GetData<ushort>(19) == value) return;
+                SetData(19, value);
                 OnPropertyChanged(nameof(Param_8));
+            }
+        }
+
+        protected const string Param_9_displayName = "Param 9";
+        protected const int Param_9_sortIndex = 550;
+        [SortOrder(Param_9_sortIndex)]
+        [DisplayName(Param_9_displayName)]
+        public ushort Param_9 {
+            get => GetData<ushort>(21);
+            set {
+                if (GetData<ushort>(21) == value) return;
+                SetData(21, value);
+                OnPropertyChanged(nameof(Param_9));
+            }
+        }
+
+        protected const string Param_10_displayName = "Param 10";
+        protected const int Param_10_sortIndex = 600;
+        [SortOrder(Param_10_sortIndex)]
+        [DisplayName(Param_10_displayName)]
+        public ushort Param_10 {
+            get => GetData<ushort>(23);
+            set {
+                if (GetData<ushort>(23) == value) return;
+                SetData(23, value);
+                OnPropertyChanged(nameof(Param_10));
+            }
+        }
+
+        protected const string Param_11_displayName = "Param 11";
+        protected const int Param_11_sortIndex = 650;
+        [SortOrder(Param_11_sortIndex)]
+        [DisplayName(Param_11_displayName)]
+        public ushort Param_11 {
+            get => GetData<ushort>(25);
+            set {
+                if (GetData<ushort>(25) == value) return;
+                SetData(25, value);
+                OnPropertyChanged(nameof(Param_11));
             }
         }
     }

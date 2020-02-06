@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
+using MHW_Template;
 
 namespace MHW_Editor.Weapons {
     public partial class Melee : MhwItem, IWeapon, ISlots {
@@ -11,7 +12,7 @@ namespace MHW_Editor.Weapons {
             this.weaponFilename = weaponFilename;
         }
 
-        public override string Name => DataHelper.weaponData[MainWindow.locale][weaponFilename][GMD_Name_Index];
+        public override string Name => DataHelper.weaponData[MainWindow.locale][weaponFilename].TryGet(GMD_Name_Index, "Unknown");
 
         [SortOrder(Is_Fixed_Upgrade_Raw_sortIndex)]
         [DisplayName("Is Fixed Upgrade")]
@@ -23,6 +24,6 @@ namespace MHW_Editor.Weapons {
         [SortOrder(Skill_sortIndex)]
         [DisplayName(Skill_displayName)]
         [CustomSorter(typeof(UInt16Sorter), true)]
-        public string Skill_button => DataHelper.skillData[MainWindow.locale][Skill].ToString();
+        public string Skill_button => DataHelper.skillData[MainWindow.locale].TryGet(Skill, IdNamePair.Unknown(Skill)).ToString();
     }
 }

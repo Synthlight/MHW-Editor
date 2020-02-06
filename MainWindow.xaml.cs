@@ -356,16 +356,16 @@ namespace MHW_Editor {
                         switch (skillDat.Id) {
                             case SkillDataValueClass.Scholar:
                             case SkillDataValueClass.Scenthound:
-                                skillDat.Param_5 = 5000;
+                                skillDat.Param_8 = 5000;
                                 break;
                             case SkillDataValueClass.Tool_Specialist:
-                                skillDat.Param_5 = 1;
+                                skillDat.Param_8 = 1;
                                 break;
                             case SkillDataValueClass.Item_Prolonger:
-                                skillDat.Param_5 = 5000;
+                                skillDat.Param_8 = 5000;
                                 break;
                             case SkillDataValueClass.Focus:
-                                skillDat.Param_6 = 1;
+                                skillDat.Param_9 = 1;
                                 break;
                         }
 

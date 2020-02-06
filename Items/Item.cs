@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
+using MHW_Template;
 using MHW_Template.Items;
 
 namespace MHW_Editor.Items {
@@ -8,7 +9,7 @@ namespace MHW_Editor.Items {
         public Item(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string Name => DataHelper.itemData[MainWindow.locale][(ushort) Id].name;
+        public override string Name => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Id, IdNamePair.Unknown((ushort) Id)).name;
 
         [SortOrder(Flags_Raw_sortIndex)]
         public uint Flags {

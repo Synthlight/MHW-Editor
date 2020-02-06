@@ -96,11 +96,6 @@
                         HorizontalAlignment="Right"
                         Content="Set Buy Prices to 1"
                         Visibility="Collapsed"/>
-                <Button Name="btn_damage_cheat"
-                        Margin="8,0,0,0"
-                        HorizontalAlignment="Right"
-                        Content="Set Damage to 50000"
-                        Visibility="Collapsed"/>
                 <Button Name="btn_enable_all_coatings_cheat"
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"
@@ -120,6 +115,11 @@
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"
                         Content="Resort All Gems by Gem Name (Changes Box Sort)"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_damage_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Content="Set Damage to 50000"
                         Visibility="Collapsed"/>
                 <ComboBox Name="cbx_localization"
                           Margin="8,0,0,0"

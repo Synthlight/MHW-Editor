@@ -1,12 +1,15 @@
 ﻿namespace MHW_Editor.Models {
     public struct IdNamePair {
-        public static readonly IdNamePair DEFAULT = new IdNamePair(0, "Unknown");
         public readonly ushort id;
         public readonly string name;
 
         public IdNamePair(ushort id, string name) {
             this.id = id;
             this.name = name;
+        }
+
+        public static IdNamePair Unknown(ushort id) {
+            return new IdNamePair(id, "Unknown");
         }
 
         public override string ToString() {

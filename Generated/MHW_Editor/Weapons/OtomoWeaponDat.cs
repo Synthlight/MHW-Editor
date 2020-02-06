@@ -6,7 +6,7 @@ using MHW_Template.Models;
 
 namespace MHW_Editor.Weapons {
     public partial class OtomoWeaponDat {
-        public const uint StructSize = 37;
+        public const uint StructSize = 38;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = "FZoS8QLyOyeFmkdrz73P9Fh2N4NcTwy3QQPjc1YRII5KWovK6yFuU8SL";
@@ -180,41 +180,54 @@ namespace MHW_Editor.Weapons {
             }
         }
 
+        protected const string Unknown_byte_1_displayName = "Unknown (byte) 1";
+        protected const int Unknown_byte_1_sortIndex = 700;
+        [SortOrder(Unknown_byte_1_sortIndex)]
+        [DisplayName(Unknown_byte_1_displayName)]
+        public byte Unknown_byte_1 {
+            get => GetData<byte>(31);
+            set {
+                if (GetData<byte>(31) == value) return;
+                SetData(31, value);
+                OnPropertyChanged(nameof(Unknown_byte_1));
+            }
+        }
+
         protected const string Set_Group_displayName = "Set Group";
-        protected const int Set_Group_sortIndex = 700;
+        protected const int Set_Group_sortIndex = 750;
         [SortOrder(Set_Group_sortIndex)]
         [DisplayName(Set_Group_displayName)]
         public ushort Set_Group {
-            get => GetData<ushort>(31);
+            get => GetData<ushort>(32);
             set {
-                if (GetData<ushort>(31) == value) return;
-                SetData(31, value);
+                if (GetData<ushort>(32) == value) return;
+                SetData(32, value);
                 OnPropertyChanged(nameof(Set_Group));
             }
         }
 
         protected const string GMD_Name_Index_displayName = "GMD Name Index";
-        protected const int GMD_Name_Index_sortIndex = 750;
+        protected const int GMD_Name_Index_sortIndex = 800;
         [SortOrder(GMD_Name_Index_sortIndex)]
         [DisplayName(GMD_Name_Index_displayName)]
         protected ushort GMD_Name_Index {
-            get => GetData<ushort>(33);
+            get => GetData<ushort>(34);
             set {
-                if (GetData<ushort>(33) == value) return;
-                SetData(33, value);
+                if (GetData<ushort>(34) == value) return;
+                SetData(34, value);
                 OnPropertyChanged(nameof(GMD_Name_Index));
             }
         }
 
         protected const string GMD_Description_Index_displayName = "GMD Description Index";
-        protected const int GMD_Description_Index_sortIndex = 800;
+        protected const int GMD_Description_Index_sortIndex = 850;
         [SortOrder(GMD_Description_Index_sortIndex)]
         [DisplayName(GMD_Description_Index_displayName)]
         protected ushort GMD_Description_Index {
-            get => GetData<ushort>(35);
+            get => GetData<ushort>(36);
             set {
-                if (GetData<ushort>(35) == value) return;
-                SetData(35, value);
+                if (GetData<ushort>(36) == value) return;
+                SetData(36, value);
                 OnPropertyChanged(nameof(GMD_Description_Index));
             }
         }

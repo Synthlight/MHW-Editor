@@ -78,7 +78,7 @@ namespace MHW_Generator {
 
         private static void GenOtomoWeaponDat() {
             GenerateItemProps("MHW_Editor.Weapons", "OtomoWeaponDat", new MhwStructData { // .owp_dat
-                size = 37,
+                size = 38,
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 encryptionKey = EncryptionKeys.OWP_DAT_KEY,
@@ -96,9 +96,10 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Rarity", 20, typeof(byte)),
                     new MhwStructData.Entry("Order", 21, typeof(ushort)),
                     new MhwStructData.Entry("Cost", 27, typeof(uint)),
-                    new MhwStructData.Entry("Set Group", 31, typeof(ushort)),
-                    new MhwStructData.Entry("GMD Name Index", 33, typeof(ushort), accessLevel: "protected"),
-                    new MhwStructData.Entry("GMD Description Index", 35, typeof(ushort), accessLevel: "protected")
+                    new MhwStructData.Entry("Unknown (byte) 1", 31, typeof(byte)),
+                    new MhwStructData.Entry("Set Group", 32, typeof(ushort)),
+                    new MhwStructData.Entry("GMD Name Index", 34, typeof(ushort), accessLevel: "protected"),
+                    new MhwStructData.Entry("GMD Description Index", 36, typeof(ushort), accessLevel: "protected")
                 }
             });
         }
@@ -515,7 +516,7 @@ namespace MHW_Generator {
 
         private static void GenSkillDat() {
             GenerateItemProps("MHW_Editor.Skills", "SkillDat", new MhwStructData {
-                size = 19,
+                size = 27,
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
@@ -528,7 +529,10 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Param 5", 11, typeof(ushort)),
                     new MhwStructData.Entry("Param 6", 13, typeof(ushort)),
                     new MhwStructData.Entry("Param 7", 15, typeof(ushort)),
-                    new MhwStructData.Entry("Param 8", 17, typeof(ushort))
+                    new MhwStructData.Entry("Param 8", 19, typeof(ushort)),
+                    new MhwStructData.Entry("Param 9", 21, typeof(ushort)),
+                    new MhwStructData.Entry("Param 10", 23, typeof(ushort)),
+                    new MhwStructData.Entry("Param 11", 25, typeof(ushort)),
                 }
             });
         }
