@@ -19,8 +19,7 @@ namespace MHW_Generator {
         [STAThread]
         public static void Main() {
             CreateSkillDataValueClass();
-            // TODO: Generate armor name list. Needs to use armor data to avoid m/f duplicates and to get the GMD key.
-            //CreateArmorDataValueClass();
+            CreateArmorDataValueClass();
 
             GenItem();
             GenBottleTable();
@@ -691,19 +690,22 @@ namespace MHW_Generator {
 
         private static void CreateArmorDataValueClass() {
             var json = File.ReadAllText($@"{ROOT_ASSETS}\ArmorData\eng_armorData.json");
-            var armorData = JsonConvert.DeserializeObject<Dictionary<ushort, string>>(json);
+            var armorGmdData = JsonConvert.DeserializeObject<Dictionary<ushort, string>>(json);
+            var armorData = ArmorReader.GetArmor();
 
             var values = new List<DataValuePair>();
-            foreach (var pair in armorData) {
-                var name = Regex.Replace(pair.Value, @"[^\w\d]+", "_")
+            foreach (var armor in armorData.Keys) {
+                var id = armor.Id;
+                var name = Regex.Replace(armorGmdData[armorData[armor]], @"[^\w\d\+]+", "_")
                                 .Replace('α', 'a')
                                 .Replace('β', 'b')
-                                .Replace('γ', 'y');
+                                .Replace('γ', 'y')
+                                .Replace("+", "_plus");
 
                 if (name == "Unavailable" || name == "HARDUMMY" || name.Length > 25) continue;
                 if (values.Contains(new DataValuePair(0, name, null))) continue;
 
-                values.Add(new DataValuePair(pair.Key, name, null));
+                values.Add(new DataValuePair((ushort) id, name, null));
             }
 
             const string @namespace = "MHW_Editor.Armors";

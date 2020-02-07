@@ -467,116 +467,96 @@ namespace MHW_Editor {
                     case Armor _: {
                         Armor armor = item;
 
-                        // 386: Guildwork Head α+
-                        if (armor.Id == 386) {
-                            armor.Skill_1 = SkillDataValueClass.Effluvial_Expert;
-                            armor.Skill_1_Level = 10;
-                            armor.Skill_2 = SkillDataValueClass.Scholar;
-                            armor.Skill_2_Level = 10;
-                            armor.Skill_3 = SkillDataValueClass.Aquatic_Polar_Mobility;
-                            armor.Skill_3_Level = 10;
-                        }
-
-                        // 797: Kushala Cista α+
-                        if (armor.Id == 797) {
-                            armor.Skill_1 = SkillDataValueClass.Bow_Charge_Plus;
-                            armor.Skill_1_Level = 10;
-                            armor.Skill_2 = SkillDataValueClass.Coldproof;
-                            armor.Skill_2_Level = 10;
-                            armor.Skill_3 = SkillDataValueClass.Defense_Boost;
-                            armor.Skill_3_Level = 10;
-                        }
-
-                        // 1009: Kirin Longarms α+
-                        if (armor.Id == 1221) {
-                            armor.Skill_1 = SkillDataValueClass.Effluvia_Resistance;
-                            armor.Skill_1_Level = 10;
-                            armor.Skill_2 = SkillDataValueClass.Focus;
-                            armor.Skill_2_Level = 10;
-                            armor.Skill_3 = SkillDataValueClass.Free_Meal;
-                            armor.Skill_3_Level = 10;
-                        }
-
-                        // 1632: Fellshroud Coil α+
-                        if (armor.Id == 1632) {
-                            armor.Skill_1 = SkillDataValueClass.Guard;
-                            armor.Skill_1_Level = 10;
-                            armor.Skill_2 = SkillDataValueClass.Guard_Up;
-                            armor.Skill_2_Level = 10;
-                            armor.Skill_3 = SkillDataValueClass.Heat_Guard;
-                            armor.Skill_3_Level = 10;
-                        }
-
-                        // 2050: Rimeguard Greaves α+
-                        if (armor.Id == 2050) {
-                            armor.Skill_1 = SkillDataValueClass.Hunger_Resistance;
-                            armor.Skill_1_Level = 10;
-                            armor.Skill_2 = SkillDataValueClass.Maximum_Might;
-                            armor.Skill_2_Level = 10;
-                            armor.Skill_3 = SkillDataValueClass.Mind_s_Eye_Ballistics;
-                            armor.Skill_3_Level = 10;
-                        }
-
-                        // 2473: Critical Charm II
-                        if (armor.Id == 2473) {
-                            armor.Skill_1 = SkillDataValueClass.Non_elemental_Boost;
-                            armor.Skill_1_Level = 10;
-                            armor.Skill_2 = SkillDataValueClass.Power_Prolonger;
-                            armor.Skill_2_Level = 10;
-                            armor.Skill_3 = SkillDataValueClass.Quick_Sheath;
-                            armor.Skill_3_Level = 10;
-                        }
-
-                        // Gathering Set
-
-                        // 817: Guildwork Body α+
-                        if (armor.Id == 817) {
-                            armor.Skill_1 = SkillDataValueClass.Cliffhanger;
-                            armor.Skill_1_Level = 10;
-                            armor.Skill_2 = SkillDataValueClass.Quick_Sheath;
-                            armor.Skill_2_Level = 10;
-                            armor.Skill_3 = SkillDataValueClass.Recovery_Speed;
-                            armor.Skill_3_Level = 10;
-                        }
-
-                        // 1239: Guildwork Braces α+
-                        if (armor.Id == 1239) {
-                            armor.Skill_1 = SkillDataValueClass.Honey_Hunter;
-                            armor.Skill_1_Level = 10;
-                            armor.Skill_2 = SkillDataValueClass.Master_Gatherer;
-                            armor.Skill_2_Level = 10;
-                            armor.Skill_3 = SkillDataValueClass.Pro_Transporter;
-                            armor.Skill_3_Level = 10;
-                        }
-
-                        // 1656: Guildwork Waist α+
-                        if (armor.Id == 1656) {
-                            armor.Skill_1 = SkillDataValueClass.Scoutfly_Range_Up;
-                            armor.Skill_1_Level = 10;
-                            armor.Skill_2 = SkillDataValueClass.Coldproof;
-                            armor.Skill_2_Level = 10;
-                            armor.Skill_3 = SkillDataValueClass.Heat_Guard;
-                            armor.Skill_3_Level = 10;
-                        }
-
-                        // 2078: Guildwork Feet α+
-                        if (armor.Id == 2078) {
-                            armor.Skill_1 = SkillDataValueClass.Hunger_Resistance;
-                            armor.Skill_1_Level = 10;
-                            armor.Skill_2 = SkillDataValueClass.Item_Prolonger;
-                            armor.Skill_2_Level = 10;
-                            armor.Skill_3 = SkillDataValueClass.Paralysis_Resistance;
-                            armor.Skill_3_Level = 10;
-                        }
-
-                        // 2454: Tremor Charm III
-                        if (armor.Id == 2454) {
-                            armor.Skill_1 = SkillDataValueClass.Forager_s_Luck;
-                            armor.Skill_1_Level = 10;
-                            armor.Skill_2 = SkillDataValueClass.Detector;
-                            armor.Skill_2_Level = 10;
-                            armor.Skill_3 = SkillDataValueClass.Scenthound;
-                            armor.Skill_3_Level = 10;
+                        switch (armor.Id) {
+                            case ArmorDataValueClass.Guildwork_Head_a_plus:
+                                armor.Skill_1 = SkillDataValueClass.Effluvial_Expert;
+                                armor.Skill_1_Level = 10;
+                                armor.Skill_2 = SkillDataValueClass.Scholar;
+                                armor.Skill_2_Level = 10;
+                                armor.Skill_3 = SkillDataValueClass.Aquatic_Polar_Mobility;
+                                armor.Skill_3_Level = 10;
+                                break;
+                            case ArmorDataValueClass.Kushala_Cista_a_plus:
+                                armor.Skill_1 = SkillDataValueClass.Bow_Charge_Plus;
+                                armor.Skill_1_Level = 10;
+                                armor.Skill_2 = SkillDataValueClass.Coldproof;
+                                armor.Skill_2_Level = 10;
+                                armor.Skill_3 = SkillDataValueClass.Defense_Boost;
+                                armor.Skill_3_Level = 10;
+                                break;
+                            case ArmorDataValueClass.Kirin_Longarms_a_plus:
+                                armor.Skill_1 = SkillDataValueClass.Effluvia_Resistance;
+                                armor.Skill_1_Level = 10;
+                                armor.Skill_2 = SkillDataValueClass.Focus;
+                                armor.Skill_2_Level = 10;
+                                armor.Skill_3 = SkillDataValueClass.Free_Meal;
+                                armor.Skill_3_Level = 10;
+                                break;
+                            case ArmorDataValueClass.Fellshroud_Coil_a_plus:
+                                armor.Skill_1 = SkillDataValueClass.Guard;
+                                armor.Skill_1_Level = 10;
+                                armor.Skill_2 = SkillDataValueClass.Guard_Up;
+                                armor.Skill_2_Level = 10;
+                                armor.Skill_3 = SkillDataValueClass.Heat_Guard;
+                                armor.Skill_3_Level = 10;
+                                break;
+                            case ArmorDataValueClass.Rimeguard_Greaves_a_plus:
+                                armor.Skill_1 = SkillDataValueClass.Hunger_Resistance;
+                                armor.Skill_1_Level = 10;
+                                armor.Skill_2 = SkillDataValueClass.Maximum_Might;
+                                armor.Skill_2_Level = 10;
+                                armor.Skill_3 = SkillDataValueClass.Mind_s_Eye_Ballistics;
+                                armor.Skill_3_Level = 10;
+                                break;
+                            case ArmorDataValueClass.Critical_Charm_II:
+                                armor.Skill_1 = SkillDataValueClass.Non_elemental_Boost;
+                                armor.Skill_1_Level = 10;
+                                armor.Skill_2 = SkillDataValueClass.Power_Prolonger;
+                                armor.Skill_2_Level = 10;
+                                armor.Skill_3 = SkillDataValueClass.Quick_Sheath;
+                                armor.Skill_3_Level = 10;
+                                break;
+                            // Gathering Set
+                            case ArmorDataValueClass.Guildwork_Body_a_plus:
+                                armor.Skill_1 = SkillDataValueClass.Cliffhanger;
+                                armor.Skill_1_Level = 10;
+                                armor.Skill_2 = SkillDataValueClass.Quick_Sheath;
+                                armor.Skill_2_Level = 10;
+                                armor.Skill_3 = SkillDataValueClass.Recovery_Speed;
+                                armor.Skill_3_Level = 10;
+                                break;
+                            case ArmorDataValueClass.Guildwork_Braces_a_plus:
+                                armor.Skill_1 = SkillDataValueClass.Honey_Hunter;
+                                armor.Skill_1_Level = 10;
+                                armor.Skill_2 = SkillDataValueClass.Master_Gatherer;
+                                armor.Skill_2_Level = 10;
+                                armor.Skill_3 = SkillDataValueClass.Pro_Transporter;
+                                armor.Skill_3_Level = 10;
+                                break;
+                            case ArmorDataValueClass.Guildwork_Waist_a_plus:
+                                armor.Skill_1 = SkillDataValueClass.Scoutfly_Range_Up;
+                                armor.Skill_1_Level = 10;
+                                armor.Skill_2 = SkillDataValueClass.Coldproof;
+                                armor.Skill_2_Level = 10;
+                                armor.Skill_3 = SkillDataValueClass.Heat_Guard;
+                                armor.Skill_3_Level = 10;
+                                break;
+                            case ArmorDataValueClass.Guildwork_Feet_a_plus:
+                                armor.Skill_1 = SkillDataValueClass.Hunger_Resistance;
+                                armor.Skill_1_Level = 10;
+                                armor.Skill_2 = SkillDataValueClass.Item_Prolonger;
+                                armor.Skill_2_Level = 10;
+                                armor.Skill_3 = SkillDataValueClass.Paralysis_Resistance;
+                                armor.Skill_3_Level = 10;
+                                break;
+                            case ArmorDataValueClass.Tremor_Charm_III:
+                                armor.Skill_1 = SkillDataValueClass.Forager_s_Luck;
+                                armor.Skill_1_Level = 10;
+                                armor.Skill_2 = SkillDataValueClass.Detector;
+                                armor.Skill_2_Level = 10;
+                                armor.Skill_3 = SkillDataValueClass.Scenthound;
+                                armor.Skill_3_Level = 10;
+                                break;
                         }
 
                         break;

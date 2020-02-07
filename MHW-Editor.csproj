@@ -81,6 +81,7 @@
     <Compile Include="Gems\DecoGradeLottery.cs" />
     <Compile Include="Gems\DecoLottery.cs" />
     <Compile Include="Gems\DecoPercent.cs" />
+    <Compile Include="Generated\MHW_Editor\Armors\ArmorDataValueClass.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\OtomoArmorDat.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoGradeLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoLottery.cs" />

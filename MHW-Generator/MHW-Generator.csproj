@@ -40,9 +40,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArmorReader.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MHW-Editor.csproj">
+      <Project>{32a6d364-5e41-4094-840e-f6b5f5a08c5c}</Project>
+      <Name>MHW-Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MHW-Template\MHW-Template.csproj">
       <Project>{89c7cc4e-8a7b-45d0-95de-fb945b1def4c}</Project>
       <Name>MHW-Template</Name>
