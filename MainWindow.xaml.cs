@@ -1003,126 +1003,37 @@ namespace MHW_Editor {
             var fileName = Path.GetFileName(targetFile);
             Debug.Assert(fileName != null, nameof(fileName) + " != null");
 
-            if (fileName.EndsWith(".wp_dat")) {
-                return typeof(Melee);
-            }
-
+            if (fileName.EndsWith(".am_dat")) return typeof(Armor);
+            if (fileName.EndsWith(".arm_up")) return typeof(ArmUp);
+            if (fileName.EndsWith(".ask")) return typeof(ASkill);
+            if (fileName.EndsWith(".bbtbl")) return typeof(BottleTable);
+            if (fileName.EndsWith(".dglt")) return typeof(DecoGradeLottery);
+            if (fileName.EndsWith(".diot")) return typeof(DecoLottery);
+            if (fileName.EndsWith(".eq_crt")) return typeof(EqCrt);
+            if (fileName.EndsWith(".eq_cus")) return typeof(EqCus);
+            if (fileName.EndsWith(".itm")) return typeof(Item);
+            if (fileName.EndsWith(".kire")) return typeof(Sharpness);
+            if (fileName.EndsWith(".mkex")) return typeof(MelderExchange);
+            if (fileName.EndsWith(".mkit")) return typeof(MelderItem);
+            if (fileName.EndsWith(".msk")) return typeof(MusicSkill);
+            if (fileName.EndsWith(".new_lb")) return typeof(NewLimitBreak2);
+            if (fileName.EndsWith(".new_lbr")) return typeof(NewLimitBreak);
+            if (fileName.EndsWith(".oam_dat")) return typeof(OtomoArmorDat);
+            if (fileName.EndsWith(".owp_dat")) return typeof(OtomoWeaponDat);
+            if (fileName.EndsWith(".plfe")) return typeof(PlantFertilizer);
+            if (fileName.EndsWith(".plit")) return typeof(PlantItem);
+            if (fileName.EndsWith(".sgpa")) return typeof(Gem);
+            if (fileName.EndsWith(".shl_tbl")) return typeof(ShellTable);
+            if (fileName.EndsWith(".skl_dat")) return typeof(SkillDat);
+            if (fileName.EndsWith(".skl_pt_dat")) return typeof(SkillPointData);
+            if (fileName.EndsWith(".wep_glan")) return typeof(WeaponGunLance);
+            if (fileName.EndsWith(".wep_saxe")) return typeof(WeaponSwitchAxe);
+            if (fileName.EndsWith(".wep_wsd")) return typeof(WeaponWSword);
+            if (fileName.EndsWith(".wep_wsl")) return typeof(WeaponWhistle);
+            if (fileName.EndsWith(".wp_dat")) return typeof(Melee);
             if (fileName.EndsWith(".wp_dat_g")) {
-                if (fileName.StartsWith("bow")) {
-                    return typeof(Bow);
-                }
-
-                if (fileName.StartsWith("lbg") || fileName.StartsWith("hbg")) {
-                    return typeof(BowGun);
-                }
-            }
-
-            if (fileName.EndsWith(".am_dat")) {
-                return typeof(Armor);
-            }
-
-            if (fileName.EndsWith(".sgpa")) {
-                return typeof(Gem);
-            }
-
-            if (fileName.EndsWith(".itm")) {
-                return typeof(Item);
-            }
-
-            if (fileName.EndsWith(".bbtbl")) {
-                return typeof(BottleTable);
-            }
-
-            if (fileName.EndsWith(".arm_up")) {
-                return typeof(ArmUp);
-            }
-
-            if (fileName.EndsWith(".kire")) {
-                return typeof(Sharpness);
-            }
-
-            if (fileName.EndsWith(".skl_dat")) {
-                return typeof(SkillDat);
-            }
-
-            if (fileName.EndsWith(".shl_tbl")) {
-                return typeof(ShellTable);
-            }
-
-            if (fileName.EndsWith(".new_lbr")) {
-                return typeof(NewLimitBreak);
-            }
-
-            if (fileName.EndsWith(".new_lb")) {
-                return typeof(NewLimitBreak2);
-            }
-
-            if (fileName.EndsWith(".wep_wsd")) {
-                return typeof(WeaponWSword);
-            }
-
-            if (fileName.EndsWith(".wep_wsl")) {
-                return typeof(WeaponWhistle);
-            }
-
-            if (fileName.EndsWith(".wep_glan")) {
-                return typeof(WeaponGunLance);
-            }
-
-            if (fileName.EndsWith(".wep_saxe")) {
-                return typeof(WeaponSwitchAxe);
-            }
-
-            if (fileName.EndsWith(".skl_pt_dat")) {
-                return typeof(SkillPointData);
-            }
-
-            if (fileName.EndsWith(".ask")) {
-                return typeof(ASkill);
-            }
-
-            if (fileName.EndsWith(".eq_crt")) {
-                return typeof(EqCrt);
-            }
-
-            if (fileName.EndsWith(".eq_cus")) {
-                return typeof(EqCus);
-            }
-
-            if (fileName.EndsWith(".plfe")) {
-                return typeof(PlantFertilizer);
-            }
-
-            if (fileName.EndsWith(".plit")) {
-                return typeof(PlantItem);
-            }
-
-            if (fileName.EndsWith(".owp_dat")) {
-                return typeof(OtomoWeaponDat);
-            }
-
-            if (fileName.EndsWith(".oam_dat")) {
-                return typeof(OtomoArmorDat);
-            }
-
-            if (fileName.EndsWith(".diot")) {
-                return typeof(DecoLottery);
-            }
-
-            if (fileName.EndsWith(".dglt")) {
-                return typeof(DecoGradeLottery);
-            }
-
-            if (fileName.EndsWith(".msk")) {
-                return typeof(MusicSkill);
-            }
-
-            if (fileName.EndsWith(".mkex")) {
-                return typeof(MelderExchange);
-            }
-
-            if (fileName.EndsWith(".mkit")) {
-                return typeof(MelderItem);
+                if (fileName.StartsWith("bow")) return typeof(Bow);
+                if (fileName.StartsWith("lbg") || fileName.StartsWith("hbg")) return typeof(BowGun);
             }
 
             throw new Exception($"No type found for: {fileName}");
