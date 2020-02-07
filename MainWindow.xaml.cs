@@ -46,6 +46,8 @@ namespace MHW_Editor {
             "*.eq_cus",
             "*.itm",
             "*.kire",
+            "*.mkex",
+            "*.mkit",
             "*.msk",
             "*.new_lb",
             "*.new_lbr",
@@ -93,7 +95,9 @@ namespace MHW_Editor {
                                            nameof(Armor.Skill_2_button),
                                            nameof(Armor.Skill_3_button),
                                            nameof(Melee.Skill_button),
-                                           nameof(PlantItem.Item_button));
+                                           nameof(PlantItem.Item_button),
+                                           nameof(MelderItem.Result_Item_Id),
+                                           nameof(MelderExchange.Source_Item_Id));
                 }
             }
         }
@@ -182,7 +186,9 @@ namespace MHW_Editor {
                                                  typeof(EqCus),
                                                  typeof(PlantFertilizer),
                                                  typeof(PlantItem),
-                                                 typeof(MusicSkill));
+                                                 typeof(MusicSkill),
+                                                 typeof(MelderExchange),
+                                                 typeof(MelderItem));
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
@@ -215,6 +221,8 @@ namespace MHW_Editor {
                 case nameof(SkillDat.Unlock_Skill_2):
                 case nameof(SkillDat.Unlock_Skill_3):
                 case nameof(SkillDat.Unlock_Skill_4):
+                case nameof(MelderExchange.Source_Item_Id):
+                case nameof(MelderItem.Result_Item_Id):
                     e.Cancel = true; // Cancel for itemId/skillId columns as we will use a text version with onClick opening a selector.
                     break;
                 default:
@@ -294,7 +302,7 @@ namespace MHW_Editor {
         private void Dg_items_GotFocus(object sender, RoutedEventArgs e) {
             // Lookup for the source to be DataGridCell
             if (SingleClickToEditMode && e.OriginalSource is DataGridCell cell) {
-                if (cell.Content is TextBlock && cell.Column.Header.ToString().EndsWith("_button")) {
+                if (cell.Content is TextBlock && cell.Column is DataGridTextColumn) {
                     Dg_items_cell_MouseClick(cell, null);
                     return;
                 }
@@ -1107,6 +1115,14 @@ namespace MHW_Editor {
 
             if (fileName.EndsWith(".msk")) {
                 return typeof(MusicSkill);
+            }
+
+            if (fileName.EndsWith(".mkex")) {
+                return typeof(MelderExchange);
+            }
+
+            if (fileName.EndsWith(".mkit")) {
+                return typeof(MelderItem);
             }
 
             throw new Exception($"No type found for: {fileName}");

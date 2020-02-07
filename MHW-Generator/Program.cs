@@ -49,6 +49,44 @@ namespace MHW_Generator {
             GenDecoLottery();
             GenDecoGradeLottery();
             GenMusicSkill();
+            GenMelderItem();
+            GenMelderExchange();
+        }
+
+        private static void GenMelderExchange() {
+            const ulong size = 430;
+            var entries = new List<MhwStructData.Entry> {
+                new MhwStructData.Entry("Source Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
+                new MhwStructData.Entry("Unknown (int32) 1", 4, typeof(int))
+            };
+
+            var index = 1;
+            for (ulong i = 8; i < size; i += 2) {
+                entries.Add(new MhwStructData.Entry($"Un {++index}", i, typeof(ushort)));
+            }
+
+            GenerateItemProps("MHW_Editor.Items", "MelderExchange", new MhwStructData { // .mkex
+                size = size,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = entries
+            });
+        }
+
+        private static void GenMelderItem() {
+            GenerateItemProps("MHW_Editor.Items", "MelderItem", new MhwStructData { // .mkit
+                size = 21,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Result Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Research Points", 4, typeof(uint)),
+                    new MhwStructData.Entry("Melding Points", 8, typeof(uint)),
+                    new MhwStructData.Entry("Category", 12, typeof(uint), typeof(ItemCategory)),
+                    new MhwStructData.Entry("Unlock Flag", 16, typeof(uint)),
+                    new MhwStructData.Entry("Unknown (uint8)", 20, typeof(byte))
+                }
+            });
         }
 
         private static void GenMusicSkill() {

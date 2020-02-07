@@ -87,6 +87,8 @@
     <Compile Include="Generated\MHW_Editor\Gems\DecoLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCrt.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCus.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\MelderExchange.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\MelderItem.cs" />
     <Compile Include="Generated\MHW_Editor\Items\PlantFertilizer.cs" />
     <Compile Include="Generated\MHW_Editor\Items\PlantItem.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\MusicSkill.cs" />
@@ -96,6 +98,8 @@
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Items\MelderExchange.cs" />
+    <Compile Include="Items\MelderItem.cs" />
     <Compile Include="Items\PlantFertilizer.cs" />
     <Compile Include="Items\PlantItem.cs" />
     <Compile Include="Items\EqCus.cs" />

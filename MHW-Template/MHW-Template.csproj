@@ -52,6 +52,7 @@
     <Compile Include="Items\Fertilizer.cs" />
     <Compile Include="Items\ItemFlags.cs" />
     <Compile Include="Items\ItemSubType.cs" />
+    <Compile Include="Items\ItemCategory.cs" />
     <Compile Include="Items\ItemType.cs" />
     <Compile Include="Models\DataSourceAttribute.cs" />
     <Compile Include="ValueClassTemplate.cs">
