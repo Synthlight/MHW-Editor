@@ -14,7 +14,7 @@ namespace MHW_Editor.Weapons {
         public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
-        public uint Id {
+        public virtual uint Id {
             get => GetData<uint>(0);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Weapons {
         public const int Note_1_sortIndex = 100;
         [SortOrder(Note_1_sortIndex)]
         [DisplayName(Note_1_displayName)]
-        public MHW_Template.Weapons.Note Note_1 {
+        public virtual MHW_Template.Weapons.Note Note_1 {
             get => (MHW_Template.Weapons.Note) GetData<byte>(4);
             set {
                 if ((MHW_Template.Weapons.Note) GetData<byte>(4) == value) return;
@@ -35,7 +35,7 @@ namespace MHW_Editor.Weapons {
         public const int Note_2_sortIndex = 150;
         [SortOrder(Note_2_sortIndex)]
         [DisplayName(Note_2_displayName)]
-        public MHW_Template.Weapons.Note Note_2 {
+        public virtual MHW_Template.Weapons.Note Note_2 {
             get => (MHW_Template.Weapons.Note) GetData<byte>(4);
             set {
                 if ((MHW_Template.Weapons.Note) GetData<byte>(4) == value) return;
@@ -48,7 +48,7 @@ namespace MHW_Editor.Weapons {
         public const int Note_3_sortIndex = 200;
         [SortOrder(Note_3_sortIndex)]
         [DisplayName(Note_3_displayName)]
-        public MHW_Template.Weapons.Note Note_3 {
+        public virtual MHW_Template.Weapons.Note Note_3 {
             get => (MHW_Template.Weapons.Note) GetData<byte>(4);
             set {
                 if ((MHW_Template.Weapons.Note) GetData<byte>(4) == value) return;
@@ -56,5 +56,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Note_3));
             }
         }
+
+        public const int lastSortIndex = 250;
     }
 }

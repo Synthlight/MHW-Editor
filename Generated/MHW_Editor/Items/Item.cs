@@ -14,7 +14,7 @@ namespace MHW_Editor.Items {
         public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
-        public uint Id {
+        public virtual uint Id {
             get => GetData<uint>(0);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Items {
         public const int Sub_Type_sortIndex = 100;
         [SortOrder(Sub_Type_sortIndex)]
         [DisplayName(Sub_Type_displayName)]
-        public MHW_Template.Items.ItemSubType Sub_Type {
+        public virtual MHW_Template.Items.ItemSubType Sub_Type {
             get => (MHW_Template.Items.ItemSubType) GetData<byte>(4);
             set {
                 if ((MHW_Template.Items.ItemSubType) GetData<byte>(4) == value) return;
@@ -35,7 +35,7 @@ namespace MHW_Editor.Items {
         public const int Type_sortIndex = 150;
         [SortOrder(Type_sortIndex)]
         [DisplayName(Type_displayName)]
-        public MHW_Template.Items.ItemType Type {
+        public virtual MHW_Template.Items.ItemType Type {
             get => (MHW_Template.Items.ItemType) GetData<uint>(5);
             set {
                 if ((MHW_Template.Items.ItemType) GetData<uint>(5) == value) return;
@@ -48,7 +48,7 @@ namespace MHW_Editor.Items {
         public const int Rarity_sortIndex = 200;
         [SortOrder(Rarity_sortIndex)]
         [DisplayName(Rarity_displayName)]
-        public byte Rarity {
+        public virtual byte Rarity {
             get => GetData<byte>(9);
             set {
                 if (GetData<byte>(9) == value) return;
@@ -61,7 +61,7 @@ namespace MHW_Editor.Items {
         public const int Carry_Limit_sortIndex = 250;
         [SortOrder(Carry_Limit_sortIndex)]
         [DisplayName(Carry_Limit_displayName)]
-        public byte Carry_Limit {
+        public virtual byte Carry_Limit {
             get => GetData<byte>(10);
             set {
                 if (GetData<byte>(10) == value) return;
@@ -74,7 +74,7 @@ namespace MHW_Editor.Items {
         public const int Unknown_uint8__sortIndex = 300;
         [SortOrder(Unknown_uint8__sortIndex)]
         [DisplayName(Unknown_uint8__displayName)]
-        public byte Unknown_uint8_ {
+        public virtual byte Unknown_uint8_ {
             get => GetData<byte>(11);
             set {
                 if (GetData<byte>(11) == value) return;
@@ -87,7 +87,7 @@ namespace MHW_Editor.Items {
         public const int Sort_Order_sortIndex = 350;
         [SortOrder(Sort_Order_sortIndex)]
         [DisplayName(Sort_Order_displayName)]
-        public ushort Sort_Order {
+        public virtual ushort Sort_Order {
             get => GetData<ushort>(12);
             set {
                 if (GetData<ushort>(12) == value) return;
@@ -100,7 +100,7 @@ namespace MHW_Editor.Items {
         public const int Icon_Id_sortIndex = 400;
         [SortOrder(Icon_Id_sortIndex)]
         [DisplayName(Icon_Id_displayName)]
-        public uint Icon_Id {
+        public virtual uint Icon_Id {
             get => GetData<uint>(18);
             set {
                 if (GetData<uint>(18) == value) return;
@@ -113,7 +113,7 @@ namespace MHW_Editor.Items {
         public const int Icon_Color_Id_sortIndex = 450;
         [SortOrder(Icon_Color_Id_sortIndex)]
         [DisplayName(Icon_Color_Id_displayName)]
-        public ushort Icon_Color_Id {
+        public virtual ushort Icon_Color_Id {
             get => GetData<ushort>(22);
             set {
                 if (GetData<ushort>(22) == value) return;
@@ -126,7 +126,7 @@ namespace MHW_Editor.Items {
         public const int Sell_Price_sortIndex = 500;
         [SortOrder(Sell_Price_sortIndex)]
         [DisplayName(Sell_Price_displayName)]
-        public uint Sell_Price {
+        public virtual uint Sell_Price {
             get => GetData<uint>(24);
             set {
                 if (GetData<uint>(24) == value) return;
@@ -139,7 +139,7 @@ namespace MHW_Editor.Items {
         public const int Buy_Price_sortIndex = 550;
         [SortOrder(Buy_Price_sortIndex)]
         [DisplayName(Buy_Price_displayName)]
-        public uint Buy_Price {
+        public virtual uint Buy_Price {
             get => GetData<uint>(28);
             set {
                 if (GetData<uint>(28) == value) return;
@@ -160,5 +160,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Flags_Raw));
             }
         }
+
+        public const int lastSortIndex = 650;
     }
 }

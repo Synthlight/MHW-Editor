@@ -11,7 +11,10 @@ namespace MHW_Editor.Weapons {
         [DisplayName(Special_Ammo_Type_displayName)]
         public new SpecialAmmo Special_Ammo_Type {
             get => (SpecialAmmo) base.Special_Ammo_Type;
-            set => base.Special_Ammo_Type = (byte) value;
+            set {
+                base.Special_Ammo_Type = (byte) value;
+                OnPropertyChanged(nameof(Special_Ammo_Type));
+            }
         }
     }
 }

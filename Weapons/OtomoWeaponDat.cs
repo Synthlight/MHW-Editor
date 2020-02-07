@@ -10,7 +10,7 @@ namespace MHW_Editor.Weapons {
 
         public override string Name => DataHelper.otomoWeaponData[MainWindow.locale].TryGet(GMD_Name_Index, "Unknown");
 
-        [SortOrder(Set_Group_sortIndex + 1)]
+        [SortOrder(lastSortIndex + 1)]
         [DisplayName("Description")]
         public string Description => DataHelper.otomoWeaponData[MainWindow.locale].TryGet(GMD_Description_Index, "Unknown").Replace("\r\n", " ");
     }

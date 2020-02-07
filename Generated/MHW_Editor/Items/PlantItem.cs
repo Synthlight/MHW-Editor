@@ -14,7 +14,7 @@ namespace MHW_Editor.Items {
         public const int Cultivation_category_sortIndex = 50;
         [SortOrder(Cultivation_category_sortIndex)]
         [DisplayName(Cultivation_category_displayName)]
-        public MHW_Template.Items.CultivationCategory Cultivation_category {
+        public virtual MHW_Template.Items.CultivationCategory Cultivation_category {
             get => (MHW_Template.Items.CultivationCategory) GetData<uint>(0);
             set {
                 if ((MHW_Template.Items.CultivationCategory) GetData<uint>(0) == value) return;
@@ -27,7 +27,7 @@ namespace MHW_Editor.Items {
         public const int Unlocked_from_start_Raw_sortIndex = 100;
         [SortOrder(Unlocked_from_start_Raw_sortIndex)]
         [DisplayName(Unlocked_from_start_Raw_displayName)]
-        protected byte Unlocked_from_start_Raw {
+        private byte Unlocked_from_start_Raw {
             get => GetData<byte>(8);
             set {
                 if (GetData<byte>(8) == value) return;
@@ -41,12 +41,13 @@ namespace MHW_Editor.Items {
         [SortOrder(Item_sortIndex)]
         [DisplayName(Item_displayName)]
         [DataSource(DataSourceType.Items)]
-        public ushort Item {
+        public virtual ushort Item {
             get => GetData<ushort>(9);
             set {
                 if (GetData<ushort>(9) == value) return;
                 SetData(9, value);
                 OnPropertyChanged(nameof(Item));
+                OnPropertyChanged("Item_button");
             }
         }
 
@@ -54,7 +55,7 @@ namespace MHW_Editor.Items {
         public const int Required_time_sortIndex = 200;
         [SortOrder(Required_time_sortIndex)]
         [DisplayName(Required_time_displayName)]
-        public uint Required_time {
+        public virtual uint Required_time {
             get => GetData<uint>(13);
             set {
                 if (GetData<uint>(13) == value) return;
@@ -67,7 +68,7 @@ namespace MHW_Editor.Items {
         public const int Catalyst_time_bonus_sortIndex = 250;
         [SortOrder(Catalyst_time_bonus_sortIndex)]
         [DisplayName(Catalyst_time_bonus_displayName)]
-        public uint Catalyst_time_bonus {
+        public virtual uint Catalyst_time_bonus {
             get => GetData<uint>(17);
             set {
                 if (GetData<uint>(17) == value) return;
@@ -80,7 +81,7 @@ namespace MHW_Editor.Items {
         public const int Amount_Base__sortIndex = 300;
         [SortOrder(Amount_Base__sortIndex)]
         [DisplayName(Amount_Base__displayName)]
-        public uint Amount_Base_ {
+        public virtual uint Amount_Base_ {
             get => GetData<uint>(25);
             set {
                 if (GetData<uint>(25) == value) return;
@@ -93,7 +94,7 @@ namespace MHW_Editor.Items {
         public const int Amount_1__sortIndex = 350;
         [SortOrder(Amount_1__sortIndex)]
         [DisplayName(Amount_1__displayName)]
-        public uint Amount_1_ {
+        public virtual uint Amount_1_ {
             get => GetData<uint>(29);
             set {
                 if (GetData<uint>(29) == value) return;
@@ -106,7 +107,7 @@ namespace MHW_Editor.Items {
         public const int Amount_2__sortIndex = 400;
         [SortOrder(Amount_2__sortIndex)]
         [DisplayName(Amount_2__displayName)]
-        public uint Amount_2_ {
+        public virtual uint Amount_2_ {
             get => GetData<uint>(33);
             set {
                 if (GetData<uint>(33) == value) return;
@@ -119,7 +120,7 @@ namespace MHW_Editor.Items {
         public const int Unknown_int32_1_sortIndex = 450;
         [SortOrder(Unknown_int32_1_sortIndex)]
         [DisplayName(Unknown_int32_1_displayName)]
-        public uint Unknown_int32_1 {
+        public virtual uint Unknown_int32_1 {
             get => GetData<uint>(4);
             set {
                 if (GetData<uint>(4) == value) return;
@@ -127,5 +128,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Unknown_int32_1));
             }
         }
+
+        public const int lastSortIndex = 500;
     }
 }

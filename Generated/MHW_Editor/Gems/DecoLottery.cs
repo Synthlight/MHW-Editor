@@ -14,7 +14,7 @@ namespace MHW_Editor.Gems {
         public const int Index_sortIndex = 50;
         [SortOrder(Index_sortIndex)]
         [DisplayName(Index_displayName)]
-        private uint Index {
+        public virtual uint Index {
             get => GetData<uint>(0);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Gems {
         public const int Item_Id_sortIndex = 100;
         [SortOrder(Item_Id_sortIndex)]
         [DisplayName(Item_Id_displayName)]
-        public uint Item_Id {
+        public virtual uint Item_Id {
             get => GetData<uint>(4);
         }
 
@@ -30,7 +30,7 @@ namespace MHW_Editor.Gems {
         public const int R5_sortIndex = 150;
         [SortOrder(R5_sortIndex)]
         [DisplayName(R5_displayName)]
-        public uint R5 {
+        public virtual uint R5 {
             get => GetData<uint>(8);
             set {
                 if (GetData<uint>(8) == value) return;
@@ -43,7 +43,7 @@ namespace MHW_Editor.Gems {
         public const int R6_sortIndex = 200;
         [SortOrder(R6_sortIndex)]
         [DisplayName(R6_displayName)]
-        public uint R6 {
+        public virtual uint R6 {
             get => GetData<uint>(12);
             set {
                 if (GetData<uint>(12) == value) return;
@@ -56,7 +56,7 @@ namespace MHW_Editor.Gems {
         public const int R7_sortIndex = 250;
         [SortOrder(R7_sortIndex)]
         [DisplayName(R7_displayName)]
-        public uint R7 {
+        public virtual uint R7 {
             get => GetData<uint>(16);
             set {
                 if (GetData<uint>(16) == value) return;
@@ -69,7 +69,7 @@ namespace MHW_Editor.Gems {
         public const int R8_sortIndex = 300;
         [SortOrder(R8_sortIndex)]
         [DisplayName(R8_displayName)]
-        public uint R8 {
+        public virtual uint R8 {
             get => GetData<uint>(20);
             set {
                 if (GetData<uint>(20) == value) return;
@@ -82,7 +82,7 @@ namespace MHW_Editor.Gems {
         public const int R9_sortIndex = 350;
         [SortOrder(R9_sortIndex)]
         [DisplayName(R9_displayName)]
-        public uint R9 {
+        public virtual uint R9 {
             get => GetData<uint>(24);
             set {
                 if (GetData<uint>(24) == value) return;
@@ -95,7 +95,7 @@ namespace MHW_Editor.Gems {
         public const int R10_sortIndex = 400;
         [SortOrder(R10_sortIndex)]
         [DisplayName(R10_displayName)]
-        public uint R10 {
+        public virtual uint R10 {
             get => GetData<uint>(28);
             set {
                 if (GetData<uint>(28) == value) return;
@@ -108,7 +108,7 @@ namespace MHW_Editor.Gems {
         public const int R11_sortIndex = 450;
         [SortOrder(R11_sortIndex)]
         [DisplayName(R11_displayName)]
-        public uint R11 {
+        public virtual uint R11 {
             get => GetData<uint>(32);
             set {
                 if (GetData<uint>(32) == value) return;
@@ -121,7 +121,7 @@ namespace MHW_Editor.Gems {
         public const int R12_sortIndex = 500;
         [SortOrder(R12_sortIndex)]
         [DisplayName(R12_displayName)]
-        public uint R12 {
+        public virtual uint R12 {
             get => GetData<uint>(36);
             set {
                 if (GetData<uint>(36) == value) return;
@@ -134,7 +134,7 @@ namespace MHW_Editor.Gems {
         public const int R13_sortIndex = 550;
         [SortOrder(R13_sortIndex)]
         [DisplayName(R13_displayName)]
-        public uint R13 {
+        public virtual uint R13 {
             get => GetData<uint>(40);
             set {
                 if (GetData<uint>(40) == value) return;
@@ -147,7 +147,7 @@ namespace MHW_Editor.Gems {
         public const int Unknown_uint32_1_sortIndex = 600;
         [SortOrder(Unknown_uint32_1_sortIndex)]
         [DisplayName(Unknown_uint32_1_displayName)]
-        public uint Unknown_uint32_1 {
+        public virtual uint Unknown_uint32_1 {
             get => GetData<uint>(44);
             set {
                 if (GetData<uint>(44) == value) return;
@@ -160,7 +160,7 @@ namespace MHW_Editor.Gems {
         public const int Unknown_uint32_2_sortIndex = 650;
         [SortOrder(Unknown_uint32_2_sortIndex)]
         [DisplayName(Unknown_uint32_2_displayName)]
-        public uint Unknown_uint32_2 {
+        public virtual uint Unknown_uint32_2 {
             get => GetData<uint>(48);
             set {
                 if (GetData<uint>(48) == value) return;
@@ -168,5 +168,7 @@ namespace MHW_Editor.Gems {
                 OnPropertyChanged(nameof(Unknown_uint32_2));
             }
         }
+
+        public const int lastSortIndex = 700;
     }
 }

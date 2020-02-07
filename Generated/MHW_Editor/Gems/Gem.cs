@@ -14,7 +14,7 @@ namespace MHW_Editor.Gems {
         public const int Index_sortIndex = 50;
         [SortOrder(Index_sortIndex)]
         [DisplayName(Index_displayName)]
-        private ushort Index {
+        public virtual ushort Index {
             get => GetData<ushort>(4);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Gems {
         public const int Id_sortIndex = 100;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
-        public ushort Id {
+        public virtual ushort Id {
             get => GetData<ushort>(0);
         }
 
@@ -30,7 +30,7 @@ namespace MHW_Editor.Gems {
         public const int Size_sortIndex = 150;
         [SortOrder(Size_sortIndex)]
         [DisplayName(Size_displayName)]
-        public byte Size {
+        public virtual byte Size {
             get => GetData<byte>(8);
             set {
                 if (GetData<byte>(8) == value) return;
@@ -44,12 +44,13 @@ namespace MHW_Editor.Gems {
         [SortOrder(Skill_1_sortIndex)]
         [DisplayName(Skill_1_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public ushort Skill_1 {
+        public virtual ushort Skill_1 {
             get => GetData<ushort>(12);
             set {
                 if (GetData<ushort>(12) == value) return;
                 SetData(12, value);
                 OnPropertyChanged(nameof(Skill_1));
+                OnPropertyChanged("Skill_1_button");
             }
         }
 
@@ -57,7 +58,7 @@ namespace MHW_Editor.Gems {
         public const int Skill_1_Level_sortIndex = 250;
         [SortOrder(Skill_1_Level_sortIndex)]
         [DisplayName(Skill_1_Level_displayName)]
-        public byte Skill_1_Level {
+        public virtual byte Skill_1_Level {
             get => GetData<byte>(16);
             set {
                 if (GetData<byte>(16) == value) return;
@@ -71,12 +72,13 @@ namespace MHW_Editor.Gems {
         [SortOrder(Skill_2_sortIndex)]
         [DisplayName(Skill_2_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public ushort Skill_2 {
+        public virtual ushort Skill_2 {
             get => GetData<ushort>(20);
             set {
                 if (GetData<ushort>(20) == value) return;
                 SetData(20, value);
                 OnPropertyChanged(nameof(Skill_2));
+                OnPropertyChanged("Skill_2_button");
             }
         }
 
@@ -84,7 +86,7 @@ namespace MHW_Editor.Gems {
         public const int Skill_2_Level_sortIndex = 350;
         [SortOrder(Skill_2_Level_sortIndex)]
         [DisplayName(Skill_2_Level_displayName)]
-        public byte Skill_2_Level {
+        public virtual byte Skill_2_Level {
             get => GetData<byte>(24);
             set {
                 if (GetData<byte>(24) == value) return;
@@ -92,5 +94,7 @@ namespace MHW_Editor.Gems {
                 OnPropertyChanged(nameof(Skill_2_Level));
             }
         }
+
+        public const int lastSortIndex = 400;
     }
 }

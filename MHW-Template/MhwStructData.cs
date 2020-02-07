@@ -20,8 +20,9 @@ namespace MHW_Template {
             public readonly string valueString;
             public readonly string accessLevel;
             public readonly DataSourceType? dataSourceType;
+            public readonly string[] extraOnPropertyChanged;
 
-            public Entry(string displayName, ulong offset, Type type, bool readOnly = false, Type enumReturn = null, string valueString = "value", string accessLevel = "public", DataSourceType? dataSourceType = null) {
+            public Entry(string displayName, ulong offset, Type type, bool readOnly = false, Type enumReturn = null, string valueString = "value", string accessLevel = "public", DataSourceType? dataSourceType = null, string[] extraOnPropertyChanged = null) {
                 this.displayName = displayName;
                 this.offset = offset;
                 this.type = new CodeTypeReference(type);
@@ -30,6 +31,7 @@ namespace MHW_Template {
                 this.accessLevel = accessLevel;
                 this.enumReturn = enumReturn == null ? null : new CodeTypeReference(enumReturn);
                 this.dataSourceType = dataSourceType;
+                this.extraOnPropertyChanged = extraOnPropertyChanged;
             }
 
             public Entry(string name, ulong offset, Type type, Type enumReturn) : this(name, offset, type) {

@@ -31,9 +31,9 @@ namespace <#= _namespace #> {
         var getCast = "";
 
         // Don't need now, but uncomment in the future if we need to override a generated property.
-        //if (accessLevel != "private") {
-        //    accessLevel += " virtual";
-        //}
+        if (accessLevel != "private") {
+            accessLevel += " virtual";
+        }
 
         if (entry.enumReturn == null) {
             returnString = typeString;
@@ -68,6 +68,13 @@ namespace <#= _namespace #> {
 
                 SetData(<#= entry.offset #>, <#= setCast #><#= entry.valueString #>);
                 OnPropertyChanged(nameof(<#= name #>));
+<#
+            if (entry.dataSourceType != null) {
+#>
+                OnPropertyChanged("<#= name #>_button");
+<#
+            } // End extra OnPropertyChanged check.
+#>
             }
 <#
         } // End readOnly check.
@@ -78,6 +85,8 @@ namespace <#= _namespace #> {
         sortIndex += 50;
     } // End loop.
 #>
+
+        public const int lastSortIndex = <#= sortIndex #>;
     }<# // End class. #>
 
 }

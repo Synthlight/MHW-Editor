@@ -148,6 +148,8 @@ namespace MHW_Editor {
             switch (e.PropertyName) {
                 case nameof(IMhwItem.Bytes):
                 case nameof(IMhwItem.Changed):
+                case nameof(Melee.GMD_Name_Index):
+                case nameof(Melee.GMD_Description_Index):
                     e.Cancel = true; // Internal.
                     break;
                 case nameof(IMhwItem.Offset):
@@ -189,7 +191,12 @@ namespace MHW_Editor {
                     e.Cancel = targetFileType.Is(typeof(DecoPercent));
                     break;
                 case nameof(SkillDat.Index):
-                    e.Cancel = targetFileType.Is(typeof(SkillDat));
+                    e.Cancel = targetFileType.Is(typeof(SkillDat),
+                                                 typeof(DecoGradeLottery),
+                                                 typeof(DecoLottery),
+                                                 typeof(Gem),
+                                                 typeof(Melee),
+                                                 typeof(Ranged));
                     break;
                 case nameof(EqCrt.Mat_1_Id):
                 case nameof(EqCrt.Mat_2_Id):
@@ -564,8 +571,6 @@ namespace MHW_Editor {
                         break;
                     }
                 }
-
-                item.OnPropertyChanged();
             }
         }
 
@@ -593,8 +598,6 @@ namespace MHW_Editor {
                         break;
                     }
                 }
-
-                item.OnPropertyChanged();
             }
         }
 
@@ -605,8 +608,6 @@ namespace MHW_Editor {
 
             foreach (Armor item in items) {
                 if (item.Set_Skill_1_Level > 0) item.Set_Skill_1_Level = 5;
-
-                item.OnPropertyChanged();
             }
         }
 
@@ -631,8 +632,6 @@ namespace MHW_Editor {
                         break;
                     }
                 }
-
-                item.OnPropertyChanged();
             }
         }
 
@@ -690,8 +689,6 @@ namespace MHW_Editor {
                         break;
                     }
                 }
-
-                item.OnPropertyChanged();
             }
         }
 
@@ -709,12 +706,11 @@ namespace MHW_Editor {
                         break;
                     }
                     case IWeapon _: {
-                        if (item.Damage > 0) item.Damage = 50000;
+                        IWeapon weapon = item;
+                        if (weapon.Damage > 0) weapon.Damage = 50000;
                         break;
                     }
                 }
-
-                item.OnPropertyChanged();
             }
         }
 
@@ -730,8 +726,6 @@ namespace MHW_Editor {
                 item.Poison = CoatingType.Plus;
                 item.Sleep = CoatingType.Plus;
                 item.Blast = CoatingType.Plus;
-
-                item.OnPropertyChanged();
             }
         }
 
@@ -744,12 +738,12 @@ namespace MHW_Editor {
                 switch (item) {
                     case Sharpness _: {
                         Sharpness sharpness = item;
-                        sharpness.Red = 10;
-                        sharpness.Orange = 10;
-                        sharpness.Yellow = 10;
-                        sharpness.Green = 10;
-                        sharpness.Blue = 10;
-                        sharpness.White = 10;
+                        sharpness.Red = 1;
+                        sharpness.Orange = 1;
+                        sharpness.Yellow = 1;
+                        sharpness.Green = 1;
+                        sharpness.Blue = 1;
+                        sharpness.White = 1;
                         sharpness.Purple = 400;
                         break;
                     }
@@ -759,8 +753,6 @@ namespace MHW_Editor {
                         break;
                     }
                 }
-
-                item.OnPropertyChanged();
             }
         }
 
@@ -774,8 +766,6 @@ namespace MHW_Editor {
                 item.Unlock_Skill_2 = 0;
                 item.Unlock_Skill_3 = 0;
                 item.Unlock_Skill_4 = 0;
-
-                item.OnPropertyChanged();
             }
         }
 

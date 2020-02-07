@@ -14,7 +14,7 @@ namespace MHW_Editor.Weapons {
         public const int Index_sortIndex = 50;
         [SortOrder(Index_sortIndex)]
         [DisplayName(Index_displayName)]
-        private uint Index {
+        public virtual uint Index {
             get => GetData<uint>(0);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Weapons {
         public const int Id_sortIndex = 100;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
-        public ushort Id {
+        public virtual ushort Id {
             get => GetData<ushort>(59);
         }
 
@@ -30,7 +30,7 @@ namespace MHW_Editor.Weapons {
         public const int Base_Model_Id_sortIndex = 150;
         [SortOrder(Base_Model_Id_sortIndex)]
         [DisplayName(Base_Model_Id_displayName)]
-        public short Base_Model_Id {
+        public virtual short Base_Model_Id {
             get => GetData<short>(6);
             set {
                 if (GetData<short>(6) == value) return;
@@ -43,7 +43,7 @@ namespace MHW_Editor.Weapons {
         public const int Part_1_Id_sortIndex = 200;
         [SortOrder(Part_1_Id_sortIndex)]
         [DisplayName(Part_1_Id_displayName)]
-        public short Part_1_Id {
+        public virtual short Part_1_Id {
             get => GetData<short>(8);
             set {
                 if (GetData<short>(8) == value) return;
@@ -56,7 +56,7 @@ namespace MHW_Editor.Weapons {
         public const int Part_2_Id_sortIndex = 250;
         [SortOrder(Part_2_Id_sortIndex)]
         [DisplayName(Part_2_Id_displayName)]
-        public short Part_2_Id {
+        public virtual short Part_2_Id {
             get => GetData<short>(10);
             set {
                 if (GetData<short>(10) == value) return;
@@ -69,7 +69,7 @@ namespace MHW_Editor.Weapons {
         public const int Is_Fixed_Upgrade_Raw_sortIndex = 300;
         [SortOrder(Is_Fixed_Upgrade_Raw_sortIndex)]
         [DisplayName(Is_Fixed_Upgrade_Raw_displayName)]
-        protected byte Is_Fixed_Upgrade_Raw {
+        private byte Is_Fixed_Upgrade_Raw {
             get => GetData<byte>(15);
             set {
                 if (GetData<byte>(15) == value) return;
@@ -82,7 +82,7 @@ namespace MHW_Editor.Weapons {
         public const int Muzzle_Type_sortIndex = 350;
         [SortOrder(Muzzle_Type_sortIndex)]
         [DisplayName(Muzzle_Type_displayName)]
-        public MHW_Template.Weapons.MuzzleType Muzzle_Type {
+        public virtual MHW_Template.Weapons.MuzzleType Muzzle_Type {
             get => (MHW_Template.Weapons.MuzzleType) GetData<byte>(16);
             set {
                 if ((MHW_Template.Weapons.MuzzleType) GetData<byte>(16) == value) return;
@@ -95,7 +95,7 @@ namespace MHW_Editor.Weapons {
         public const int Barrel_Type_sortIndex = 400;
         [SortOrder(Barrel_Type_sortIndex)]
         [DisplayName(Barrel_Type_displayName)]
-        public MHW_Template.Weapons.BarrelType Barrel_Type {
+        public virtual MHW_Template.Weapons.BarrelType Barrel_Type {
             get => (MHW_Template.Weapons.BarrelType) GetData<byte>(17);
             set {
                 if ((MHW_Template.Weapons.BarrelType) GetData<byte>(17) == value) return;
@@ -108,7 +108,7 @@ namespace MHW_Editor.Weapons {
         public const int Magazine_Type_sortIndex = 450;
         [SortOrder(Magazine_Type_sortIndex)]
         [DisplayName(Magazine_Type_displayName)]
-        public MHW_Template.Weapons.MagazineType Magazine_Type {
+        public virtual MHW_Template.Weapons.MagazineType Magazine_Type {
             get => (MHW_Template.Weapons.MagazineType) GetData<byte>(18);
             set {
                 if ((MHW_Template.Weapons.MagazineType) GetData<byte>(18) == value) return;
@@ -121,7 +121,7 @@ namespace MHW_Editor.Weapons {
         public const int Scope_Type_sortIndex = 500;
         [SortOrder(Scope_Type_sortIndex)]
         [DisplayName(Scope_Type_displayName)]
-        public MHW_Template.Weapons.ScopeType Scope_Type {
+        public virtual MHW_Template.Weapons.ScopeType Scope_Type {
             get => (MHW_Template.Weapons.ScopeType) GetData<byte>(19);
             set {
                 if ((MHW_Template.Weapons.ScopeType) GetData<byte>(19) == value) return;
@@ -134,7 +134,7 @@ namespace MHW_Editor.Weapons {
         public const int Cost_sortIndex = 550;
         [SortOrder(Cost_sortIndex)]
         [DisplayName(Cost_displayName)]
-        public uint Cost {
+        public virtual uint Cost {
             get => GetData<uint>(20);
             set {
                 if (GetData<uint>(20) == value) return;
@@ -147,7 +147,7 @@ namespace MHW_Editor.Weapons {
         public const int Rarity_sortIndex = 600;
         [SortOrder(Rarity_sortIndex)]
         [DisplayName(Rarity_displayName)]
-        public byte Rarity {
+        public virtual byte Rarity {
             get => GetData<byte>(24);
             set {
                 if (GetData<byte>(24) == value) return;
@@ -160,7 +160,7 @@ namespace MHW_Editor.Weapons {
         public const int Damage_sortIndex = 650;
         [SortOrder(Damage_sortIndex)]
         [DisplayName(Damage_displayName)]
-        public ushort Damage {
+        public virtual ushort Damage {
             get => GetData<ushort>(25);
             set {
                 if (GetData<ushort>(25) == value) return;
@@ -173,7 +173,7 @@ namespace MHW_Editor.Weapons {
         public const int Defense_sortIndex = 700;
         [SortOrder(Defense_sortIndex)]
         [DisplayName(Defense_displayName)]
-        public ushort Defense {
+        public virtual ushort Defense {
             get => GetData<ushort>(27);
             set {
                 if (GetData<ushort>(27) == value) return;
@@ -186,7 +186,7 @@ namespace MHW_Editor.Weapons {
         public const int Affinity_sortIndex = 750;
         [SortOrder(Affinity_sortIndex)]
         [DisplayName(Affinity_displayName)]
-        public sbyte Affinity {
+        public virtual sbyte Affinity {
             get => GetData<sbyte>(29);
             set {
                 if (GetData<sbyte>(29) == value.Clamp((sbyte) -100, (sbyte) 100)) return;
@@ -199,7 +199,7 @@ namespace MHW_Editor.Weapons {
         public const int Element_sortIndex = 800;
         [SortOrder(Element_sortIndex)]
         [DisplayName(Element_displayName)]
-        public MHW_Template.Weapons.Element Element {
+        public virtual MHW_Template.Weapons.Element Element {
             get => (MHW_Template.Weapons.Element) GetData<byte>(30);
             set {
                 if ((MHW_Template.Weapons.Element) GetData<byte>(30) == value) return;
@@ -212,7 +212,7 @@ namespace MHW_Editor.Weapons {
         public const int Element_Damage_sortIndex = 850;
         [SortOrder(Element_Damage_sortIndex)]
         [DisplayName(Element_Damage_displayName)]
-        public ushort Element_Damage {
+        public virtual ushort Element_Damage {
             get => GetData<ushort>(31);
             set {
                 if (GetData<ushort>(31) == value) return;
@@ -225,7 +225,7 @@ namespace MHW_Editor.Weapons {
         public const int Element_Hidden__sortIndex = 900;
         [SortOrder(Element_Hidden__sortIndex)]
         [DisplayName(Element_Hidden__displayName)]
-        public MHW_Template.Weapons.Element Element_Hidden_ {
+        public virtual MHW_Template.Weapons.Element Element_Hidden_ {
             get => (MHW_Template.Weapons.Element) GetData<byte>(33);
             set {
                 if ((MHW_Template.Weapons.Element) GetData<byte>(33) == value) return;
@@ -238,7 +238,7 @@ namespace MHW_Editor.Weapons {
         public const int Element_Hidden_Damage_sortIndex = 950;
         [SortOrder(Element_Hidden_Damage_sortIndex)]
         [DisplayName(Element_Hidden_Damage_displayName)]
-        public ushort Element_Hidden_Damage {
+        public virtual ushort Element_Hidden_Damage {
             get => GetData<ushort>(34);
             set {
                 if (GetData<ushort>(34) == value) return;
@@ -251,7 +251,7 @@ namespace MHW_Editor.Weapons {
         public const int Elderseal_sortIndex = 1000;
         [SortOrder(Elderseal_sortIndex)]
         [DisplayName(Elderseal_displayName)]
-        public MHW_Template.Weapons.Elderseal Elderseal {
+        public virtual MHW_Template.Weapons.Elderseal Elderseal {
             get => (MHW_Template.Weapons.Elderseal) GetData<byte>(36);
             set {
                 if ((MHW_Template.Weapons.Elderseal) GetData<byte>(36) == value) return;
@@ -264,7 +264,7 @@ namespace MHW_Editor.Weapons {
         public const int Shell_Type_Id_sortIndex = 1050;
         [SortOrder(Shell_Type_Id_sortIndex)]
         [DisplayName(Shell_Type_Id_displayName)]
-        public byte Shell_Type_Id {
+        public virtual byte Shell_Type_Id {
             get => GetData<byte>(37);
             set {
                 if (GetData<byte>(37) == value) return;
@@ -277,7 +277,7 @@ namespace MHW_Editor.Weapons {
         public const int Deviation_sortIndex = 1100;
         [SortOrder(Deviation_sortIndex)]
         [DisplayName(Deviation_displayName)]
-        public MHW_Template.Weapons.Deviation Deviation {
+        public virtual MHW_Template.Weapons.Deviation Deviation {
             get => (MHW_Template.Weapons.Deviation) GetData<byte>(39);
             set {
                 if ((MHW_Template.Weapons.Deviation) GetData<byte>(39) == value) return;
@@ -290,7 +290,7 @@ namespace MHW_Editor.Weapons {
         public const int Slot_Count_sortIndex = 1150;
         [SortOrder(Slot_Count_sortIndex)]
         [DisplayName(Slot_Count_displayName)]
-        public byte Slot_Count {
+        public virtual byte Slot_Count {
             get => GetData<byte>(40);
             set {
                 if (GetData<byte>(40) == value) return;
@@ -303,7 +303,7 @@ namespace MHW_Editor.Weapons {
         public const int Slot_1_Size_sortIndex = 1200;
         [SortOrder(Slot_1_Size_sortIndex)]
         [DisplayName(Slot_1_Size_displayName)]
-        public byte Slot_1_Size {
+        public virtual byte Slot_1_Size {
             get => GetData<byte>(41);
             set {
                 if (GetData<byte>(41) == value) return;
@@ -316,7 +316,7 @@ namespace MHW_Editor.Weapons {
         public const int Slot_2_Size_sortIndex = 1250;
         [SortOrder(Slot_2_Size_sortIndex)]
         [DisplayName(Slot_2_Size_displayName)]
-        public byte Slot_2_Size {
+        public virtual byte Slot_2_Size {
             get => GetData<byte>(42);
             set {
                 if (GetData<byte>(42) == value) return;
@@ -329,7 +329,7 @@ namespace MHW_Editor.Weapons {
         public const int Slot_3_Size_sortIndex = 1300;
         [SortOrder(Slot_3_Size_sortIndex)]
         [DisplayName(Slot_3_Size_displayName)]
-        public byte Slot_3_Size {
+        public virtual byte Slot_3_Size {
             get => GetData<byte>(43);
             set {
                 if (GetData<byte>(43) == value) return;
@@ -342,7 +342,7 @@ namespace MHW_Editor.Weapons {
         public const int Special_Ammo_Type_sortIndex = 1350;
         [SortOrder(Special_Ammo_Type_sortIndex)]
         [DisplayName(Special_Ammo_Type_displayName)]
-        public byte Special_Ammo_Type {
+        public virtual byte Special_Ammo_Type {
             get => GetData<byte>(57);
             set {
                 if (GetData<byte>(57) == value) return;
@@ -356,12 +356,13 @@ namespace MHW_Editor.Weapons {
         [SortOrder(Skill_sortIndex)]
         [DisplayName(Skill_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public ushort Skill {
+        public virtual ushort Skill {
             get => GetData<ushort>(65);
             set {
                 if (GetData<ushort>(65) == value) return;
                 SetData(65, value);
                 OnPropertyChanged(nameof(Skill));
+                OnPropertyChanged("Skill_button");
             }
         }
 
@@ -369,8 +370,18 @@ namespace MHW_Editor.Weapons {
         public const int GMD_Name_Index_sortIndex = 1450;
         [SortOrder(GMD_Name_Index_sortIndex)]
         [DisplayName(GMD_Name_Index_displayName)]
-        protected ushort GMD_Name_Index {
+        public virtual ushort GMD_Name_Index {
             get => GetData<ushort>(61);
         }
+
+        public const string GMD_Description_Index_displayName = "GMD Description Index";
+        public const int GMD_Description_Index_sortIndex = 1500;
+        [SortOrder(GMD_Description_Index_sortIndex)]
+        [DisplayName(GMD_Description_Index_displayName)]
+        public virtual ushort GMD_Description_Index {
+            get => GetData<ushort>(63);
+        }
+
+        public const int lastSortIndex = 1550;
     }
 }

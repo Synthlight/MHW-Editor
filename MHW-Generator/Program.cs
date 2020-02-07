@@ -46,8 +46,8 @@ namespace MHW_Generator {
             GenOtomoWeaponDat();
             GenOtomoArmorDat();
             GenOtomoArmorDat();
-            GenDecoLot();
-            GenDecoGradeIot();
+            GenDecoLottery();
+            GenDecoGradeLottery();
             GenMusicSkill();
         }
 
@@ -58,7 +58,7 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 encryptionKey = EncryptionKeys.MSK_KEY,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Song Id Raw", 0, typeof(uint), true, accessLevel: "private"),
+                    new MhwStructData.Entry("Song Id Raw", 0, typeof(uint), true),
                     new MhwStructData.Entry("Note 1", 4, typeof(int), typeof(NoteColor)),
                     new MhwStructData.Entry("Note 2", 8, typeof(int), typeof(NoteColor)),
                     new MhwStructData.Entry("Note 3", 12, typeof(int), typeof(NoteColor)),
@@ -67,13 +67,13 @@ namespace MHW_Generator {
             });
         }
 
-        private static void GenDecoGradeIot() { // .dglt
+        private static void GenDecoGradeLottery() { // .dglt
             GenerateItemProps("MHW_Editor.Gems", "DecoGradeLottery", new MhwStructData { // .owp_dat
                 size = 52,
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Index", 0, typeof(uint), true, accessLevel: "private"),
+                    new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Item Id", 4, typeof(uint), true),
                     new MhwStructData.Entry("R5", 8, typeof(uint)),
                     new MhwStructData.Entry("R6", 12, typeof(uint)),
@@ -90,13 +90,13 @@ namespace MHW_Generator {
             });
         }
 
-        private static void GenDecoLot() { // .diot
+        private static void GenDecoLottery() { // .diot
             GenerateItemProps("MHW_Editor.Gems", "DecoLottery", new MhwStructData { // .owp_dat
                 size = 52,
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Index", 0, typeof(uint), true, accessLevel: "private"),
+                    new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Item Id", 4, typeof(uint), true),
                     new MhwStructData.Entry("R5", 8, typeof(uint)),
                     new MhwStructData.Entry("R6", 12, typeof(uint)),
@@ -122,7 +122,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Id", 0, typeof(uint)),
                     new MhwStructData.Entry("Set Id", 4, typeof(ushort)),
                     new MhwStructData.Entry("Equip Slot", 6, typeof(byte), typeof(EquipSlot)),
-                    new MhwStructData.Entry("Is Full Set Raw", 7, typeof(byte), accessLevel: "protected"),
+                    new MhwStructData.Entry("Is Full Set Raw", 7, typeof(byte), accessLevel: "private"),
                     new MhwStructData.Entry("Defense", 8, typeof(uint)),
                     new MhwStructData.Entry("Rarity", 12, typeof(byte)),
                     new MhwStructData.Entry("Order", 13, typeof(ushort)),
@@ -135,8 +135,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Thunder Res", 30, typeof(sbyte)),
                     new MhwStructData.Entry("Dragon Res", 31, typeof(sbyte)),
                     new MhwStructData.Entry("Set Group", 36, typeof(ushort)),
-                    new MhwStructData.Entry("GMD Name Index", 38, typeof(ushort), true, accessLevel: "protected"),
-                    new MhwStructData.Entry("GMD Description Index", 40, typeof(ushort), true, accessLevel: "protected")
+                    new MhwStructData.Entry("GMD Name Index", 38, typeof(ushort), true),
+                    new MhwStructData.Entry("GMD Description Index", 40, typeof(ushort), true)
                 }
             });
         }
@@ -163,8 +163,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Cost", 27, typeof(uint)),
                     new MhwStructData.Entry("Unknown (byte) 1", 31, typeof(byte)),
                     new MhwStructData.Entry("Set Group", 32, typeof(ushort)),
-                    new MhwStructData.Entry("GMD Name Index", 34, typeof(ushort), true, accessLevel: "protected"),
-                    new MhwStructData.Entry("GMD Description Index", 36, typeof(ushort), true, accessLevel: "protected")
+                    new MhwStructData.Entry("GMD Name Index", 34, typeof(ushort), true),
+                    new MhwStructData.Entry("GMD Description Index", 36, typeof(ushort), true)
                 }
             });
         }
@@ -192,7 +192,7 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Cultivation category", 0, typeof(uint), typeof(CultivationCategory)),
-                    new MhwStructData.Entry("Unlocked from start Raw", 8, typeof(byte), accessLevel: "protected"),
+                    new MhwStructData.Entry("Unlocked from start Raw", 8, typeof(byte), accessLevel: "private"),
                     new MhwStructData.Entry("Item", 9, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Required time", 13, typeof(uint)),
                     new MhwStructData.Entry("Catalyst time bonus", 17, typeof(uint)),
@@ -468,12 +468,12 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Index", 0, typeof(uint), true, accessLevel: "private"),
+                    new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Id", 59, typeof(ushort), true),
                     new MhwStructData.Entry("Base Model Id", 6, typeof(short)),
                     new MhwStructData.Entry("Part 1 Id", 8, typeof(short)),
                     new MhwStructData.Entry("Part 2 Id", 10, typeof(short)),
-                    new MhwStructData.Entry("Is Fixed Upgrade Raw", 15, typeof(byte), accessLevel: "protected"),
+                    new MhwStructData.Entry("Is Fixed Upgrade Raw", 15, typeof(byte), accessLevel: "private"),
                     new MhwStructData.Entry("Muzzle Type", 16, typeof(byte), typeof(MuzzleType)),
                     new MhwStructData.Entry("Barrel Type", 17, typeof(byte), typeof(BarrelType)),
                     new MhwStructData.Entry("Magazine Type", 18, typeof(byte), typeof(MagazineType)),
@@ -496,7 +496,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Slot 3 Size", 43, typeof(byte)),
                     new MhwStructData.Entry("Special Ammo Type", 57, typeof(byte)),
                     new MhwStructData.Entry("Skill", 65, typeof(ushort), dataSourceType: DataSourceType.Skills),
-                    new MhwStructData.Entry("GMD Name Index", 61, typeof(ushort), true, accessLevel: "protected")
+                    new MhwStructData.Entry("GMD Name Index", 61, typeof(ushort), true),
+                    new MhwStructData.Entry("GMD Description Index", 63, typeof(ushort), true)
                 }
             });
         }
@@ -507,12 +508,12 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Index", 0, typeof(uint), true, accessLevel: "private"),
+                    new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Id", 56, typeof(ushort), true),
                     new MhwStructData.Entry("Base Model Id", 6, typeof(short)),
                     new MhwStructData.Entry("Part 1 Id", 8, typeof(short)),
                     new MhwStructData.Entry("Part 2 Id", 10, typeof(short)),
-                    new MhwStructData.Entry("Is Fixed Upgrade Raw", 15, typeof(byte), accessLevel: "protected"),
+                    new MhwStructData.Entry("Is Fixed Upgrade Raw", 15, typeof(byte), accessLevel: "private"),
                     new MhwStructData.Entry("Cost", 16, typeof(uint)),
                     new MhwStructData.Entry("Rarity", 20, typeof(byte)),
                     new MhwStructData.Entry("Sharpness Quality", 21, typeof(byte)),
@@ -532,7 +533,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Special Ability 1 ID", 39, typeof(ushort)),
                     new MhwStructData.Entry("Special Ability 2 ID", 41, typeof(ushort)),
                     new MhwStructData.Entry("Skill", 62, typeof(ushort), dataSourceType: DataSourceType.Skills),
-                    new MhwStructData.Entry("GMD Name Index", 58, typeof(ushort), true, accessLevel: "protected")
+                    new MhwStructData.Entry("GMD Name Index", 58, typeof(ushort), true),
+                    new MhwStructData.Entry("GMD Description Index", 60, typeof(ushort), true)
                 }
             });
         }
@@ -573,8 +575,9 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Skill 3 Level", 48, typeof(byte)),
                     new MhwStructData.Entry("Gender", 49, typeof(byte), typeof(Gender)),
                     new MhwStructData.Entry("Set Group", 53, typeof(ushort)),
-                    new MhwStructData.Entry("Is Permanent Raw", 59, typeof(byte), accessLevel: "protected"),
-                    new MhwStructData.Entry("GMD Name Index", 55, typeof(ushort), true, accessLevel: "protected")
+                    new MhwStructData.Entry("Is Permanent Raw", 59, typeof(byte), accessLevel: "private"),
+                    new MhwStructData.Entry("GMD Name Index", 55, typeof(ushort), true),
+                    new MhwStructData.Entry("GMD Description Index", 57, typeof(ushort), true)
                 }
             });
         }
@@ -605,7 +608,7 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Index", 4, typeof(ushort), true, accessLevel: "private"),
+                    new MhwStructData.Entry("Index", 4, typeof(ushort), true),
                     new MhwStructData.Entry("Id", 0, typeof(ushort), true),
                     new MhwStructData.Entry("Size", 8, typeof(byte)),
                     new MhwStructData.Entry("Skill 1", 12, typeof(ushort), dataSourceType: DataSourceType.Skills),
@@ -708,12 +711,12 @@ namespace MHW_Generator {
         private static void CreateArmorDataValueClass() {
             var json = File.ReadAllText($@"{ROOT_ASSETS}\ArmorData\eng_armorData.json");
             var armorGmdData = JsonConvert.DeserializeObject<Dictionary<ushort, string>>(json);
-            var armorData = ArmorReader.GetArmor();
+            var armors = ArmorReader.GetArmor();
 
             var values = new List<DataValuePair>();
-            foreach (var armor in armorData.Keys) {
+            foreach (var armor in armors) {
                 var id = armor.Id;
-                var name = Regex.Replace(armorGmdData[armorData[armor]], @"[^\w\d\+]+", "_")
+                var name = Regex.Replace(armorGmdData[armor.GMD_Name_Index], @"[^\w\d\+]+", "_")
                                 .Replace('α', 'a')
                                 .Replace('β', 'b')
                                 .Replace('γ', 'y')

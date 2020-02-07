@@ -14,7 +14,7 @@ namespace MHW_Editor.Weapons {
         public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
-        public uint Id {
+        public virtual uint Id {
             get => GetData<uint>(0);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Weapons {
         public const int Unknown_1_uint8__sortIndex = 100;
         [SortOrder(Unknown_1_uint8__sortIndex)]
         [DisplayName(Unknown_1_uint8__displayName)]
-        public byte Unknown_1_uint8_ {
+        public virtual byte Unknown_1_uint8_ {
             get => GetData<byte>(4);
             set {
                 if (GetData<byte>(4) == value) return;
@@ -35,7 +35,7 @@ namespace MHW_Editor.Weapons {
         public const int Unknown_2_uint16__sortIndex = 150;
         [SortOrder(Unknown_2_uint16__sortIndex)]
         [DisplayName(Unknown_2_uint16__displayName)]
-        public ushort Unknown_2_uint16_ {
+        public virtual ushort Unknown_2_uint16_ {
             get => GetData<ushort>(5);
             set {
                 if (GetData<ushort>(5) == value) return;
@@ -43,5 +43,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Unknown_2_uint16_));
             }
         }
+
+        public const int lastSortIndex = 200;
     }
 }

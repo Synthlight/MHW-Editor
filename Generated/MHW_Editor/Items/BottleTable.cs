@@ -14,7 +14,7 @@ namespace MHW_Editor.Items {
         public const int Close_Range_sortIndex = 50;
         [SortOrder(Close_Range_sortIndex)]
         [DisplayName(Close_Range_displayName)]
-        public MHW_Template.Weapons.CoatingType Close_Range {
+        public virtual MHW_Template.Weapons.CoatingType Close_Range {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(0);
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(0) == value) return;
@@ -27,7 +27,7 @@ namespace MHW_Editor.Items {
         public const int Power_sortIndex = 100;
         [SortOrder(Power_sortIndex)]
         [DisplayName(Power_displayName)]
-        public MHW_Template.Weapons.CoatingType Power {
+        public virtual MHW_Template.Weapons.CoatingType Power {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(1);
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(1) == value) return;
@@ -40,7 +40,7 @@ namespace MHW_Editor.Items {
         public const int Paralysis_sortIndex = 150;
         [SortOrder(Paralysis_sortIndex)]
         [DisplayName(Paralysis_displayName)]
-        public MHW_Template.Weapons.CoatingType Paralysis {
+        public virtual MHW_Template.Weapons.CoatingType Paralysis {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(2);
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(2) == value) return;
@@ -53,7 +53,7 @@ namespace MHW_Editor.Items {
         public const int Poison_sortIndex = 200;
         [SortOrder(Poison_sortIndex)]
         [DisplayName(Poison_displayName)]
-        public MHW_Template.Weapons.CoatingType Poison {
+        public virtual MHW_Template.Weapons.CoatingType Poison {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(3);
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(3) == value) return;
@@ -66,7 +66,7 @@ namespace MHW_Editor.Items {
         public const int Sleep_sortIndex = 250;
         [SortOrder(Sleep_sortIndex)]
         [DisplayName(Sleep_displayName)]
-        public MHW_Template.Weapons.CoatingType Sleep {
+        public virtual MHW_Template.Weapons.CoatingType Sleep {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(4);
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(4) == value) return;
@@ -79,7 +79,7 @@ namespace MHW_Editor.Items {
         public const int Blast_sortIndex = 300;
         [SortOrder(Blast_sortIndex)]
         [DisplayName(Blast_displayName)]
-        public MHW_Template.Weapons.CoatingType Blast {
+        public virtual MHW_Template.Weapons.CoatingType Blast {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(5);
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(5) == value) return;
@@ -87,5 +87,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Blast));
             }
         }
+
+        public const int lastSortIndex = 350;
     }
 }

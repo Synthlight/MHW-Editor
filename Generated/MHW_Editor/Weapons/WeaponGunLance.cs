@@ -14,7 +14,7 @@ namespace MHW_Editor.Weapons {
         public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
-        public uint Id {
+        public virtual uint Id {
             get => GetData<uint>(0);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Weapons {
         public const int Shell_Type_sortIndex = 100;
         [SortOrder(Shell_Type_sortIndex)]
         [DisplayName(Shell_Type_displayName)]
-        public MHW_Template.Weapons.ShellType Shell_Type {
+        public virtual MHW_Template.Weapons.ShellType Shell_Type {
             get => (MHW_Template.Weapons.ShellType) GetData<ushort>(4);
             set {
                 if ((MHW_Template.Weapons.ShellType) GetData<ushort>(4) == value) return;
@@ -35,7 +35,7 @@ namespace MHW_Editor.Weapons {
         public const int Shell_Level_sortIndex = 150;
         [SortOrder(Shell_Level_sortIndex)]
         [DisplayName(Shell_Level_displayName)]
-        public ushort Shell_Level {
+        public virtual ushort Shell_Level {
             get => GetData<ushort>(6);
             set {
                 if (GetData<ushort>(6) == value) return;
@@ -43,5 +43,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Shell_Level));
             }
         }
+
+        public const int lastSortIndex = 200;
     }
 }

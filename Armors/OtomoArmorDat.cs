@@ -11,7 +11,7 @@ namespace MHW_Editor.Armors {
 
         public override string Name => DataHelper.otomoArmorData[MainWindow.locale].TryGet(GMD_Name_Index, "Unknown");
 
-        [SortOrder(Set_Group_sortIndex + 1)]
+        [SortOrder(lastSortIndex + 1)]
         [DisplayName("Description")]
         public string Description => DataHelper.otomoArmorData[MainWindow.locale].TryGet(GMD_Description_Index, "Unknown").Replace("\r\n", " ");
 
@@ -19,7 +19,10 @@ namespace MHW_Editor.Armors {
         [DisplayName("Is Full Set")]
         public bool Is_Full_Set {
             get => Convert.ToBoolean(Is_Full_Set_Raw);
-            set => Is_Full_Set_Raw = Convert.ToByte(value);
+            set {
+                Is_Full_Set_Raw = Convert.ToByte(value);
+                OnPropertyChanged(nameof(Is_Full_Set));
+            }
         }
     }
 }

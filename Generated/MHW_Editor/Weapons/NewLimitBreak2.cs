@@ -14,7 +14,7 @@ namespace MHW_Editor.Weapons {
         public const int Aug_Category_sortIndex = 50;
         [SortOrder(Aug_Category_sortIndex)]
         [DisplayName(Aug_Category_displayName)]
-        public MHW_Template.Weapons.AugmentationCategory Aug_Category {
+        public virtual MHW_Template.Weapons.AugmentationCategory Aug_Category {
             get => (MHW_Template.Weapons.AugmentationCategory) GetData<uint>(0);
             set {
                 if ((MHW_Template.Weapons.AugmentationCategory) GetData<uint>(0) == value) return;
@@ -27,7 +27,7 @@ namespace MHW_Editor.Weapons {
         public const int Aug_Level_sortIndex = 100;
         [SortOrder(Aug_Level_sortIndex)]
         [DisplayName(Aug_Level_displayName)]
-        public uint Aug_Level {
+        public virtual uint Aug_Level {
             get => GetData<uint>(4);
             set {
                 if (GetData<uint>(4) == value) return;
@@ -40,7 +40,7 @@ namespace MHW_Editor.Weapons {
         public const int Aug_Slot_Cost_sortIndex = 150;
         [SortOrder(Aug_Slot_Cost_sortIndex)]
         [DisplayName(Aug_Slot_Cost_displayName)]
-        public uint Aug_Slot_Cost {
+        public virtual uint Aug_Slot_Cost {
             get => GetData<uint>(8);
             set {
                 if (GetData<uint>(8) == value) return;
@@ -53,7 +53,7 @@ namespace MHW_Editor.Weapons {
         public const int Research_Cost_r10__sortIndex = 200;
         [SortOrder(Research_Cost_r10__sortIndex)]
         [DisplayName(Research_Cost_r10__displayName)]
-        public uint Research_Cost_r10_ {
+        public virtual uint Research_Cost_r10_ {
             get => GetData<uint>(12);
             set {
                 if (GetData<uint>(12) == value) return;
@@ -66,7 +66,7 @@ namespace MHW_Editor.Weapons {
         public const int Research_Cost_r11__sortIndex = 250;
         [SortOrder(Research_Cost_r11__sortIndex)]
         [DisplayName(Research_Cost_r11__displayName)]
-        public uint Research_Cost_r11_ {
+        public virtual uint Research_Cost_r11_ {
             get => GetData<uint>(16);
             set {
                 if (GetData<uint>(16) == value) return;
@@ -79,7 +79,7 @@ namespace MHW_Editor.Weapons {
         public const int Research_Cost_r12__sortIndex = 300;
         [SortOrder(Research_Cost_r12__sortIndex)]
         [DisplayName(Research_Cost_r12__displayName)]
-        public uint Research_Cost_r12_ {
+        public virtual uint Research_Cost_r12_ {
             get => GetData<uint>(20);
             set {
                 if (GetData<uint>(20) == value) return;
@@ -87,5 +87,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Research_Cost_r12_));
             }
         }
+
+        public const int lastSortIndex = 350;
     }
 }

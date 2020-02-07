@@ -14,7 +14,7 @@ namespace MHW_Editor.Armors {
         public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
-        public uint Id {
+        public virtual uint Id {
             get => GetData<uint>(0);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Armors {
         public const int Order_sortIndex = 100;
         [SortOrder(Order_sortIndex)]
         [DisplayName(Order_displayName)]
-        public ushort Order {
+        public virtual ushort Order {
             get => GetData<ushort>(4);
             set {
                 if (GetData<ushort>(4) == value) return;
@@ -35,7 +35,7 @@ namespace MHW_Editor.Armors {
         public const int Variant_sortIndex = 150;
         [SortOrder(Variant_sortIndex)]
         [DisplayName(Variant_displayName)]
-        public MHW_Template.Armors.Variant Variant {
+        public virtual MHW_Template.Armors.Variant Variant {
             get => (MHW_Template.Armors.Variant) GetData<byte>(6);
             set {
                 if ((MHW_Template.Armors.Variant) GetData<byte>(6) == value) return;
@@ -48,7 +48,7 @@ namespace MHW_Editor.Armors {
         public const int Set_Layered_Id_sortIndex = 200;
         [SortOrder(Set_Layered_Id_sortIndex)]
         [DisplayName(Set_Layered_Id_displayName)]
-        public ushort Set_Layered_Id {
+        public virtual ushort Set_Layered_Id {
             get => GetData<ushort>(7);
             set {
                 if (GetData<ushort>(7) == value) return;
@@ -61,7 +61,7 @@ namespace MHW_Editor.Armors {
         public const int Type_sortIndex = 250;
         [SortOrder(Type_sortIndex)]
         [DisplayName(Type_displayName)]
-        public MHW_Template.Armors.ArmorType Type {
+        public virtual MHW_Template.Armors.ArmorType Type {
             get => (MHW_Template.Armors.ArmorType) GetData<byte>(9);
             set {
                 if ((MHW_Template.Armors.ArmorType) GetData<byte>(9) == value) return;
@@ -74,7 +74,7 @@ namespace MHW_Editor.Armors {
         public const int Equip_Slot_sortIndex = 300;
         [SortOrder(Equip_Slot_sortIndex)]
         [DisplayName(Equip_Slot_displayName)]
-        public MHW_Template.Armors.EquipSlot Equip_Slot {
+        public virtual MHW_Template.Armors.EquipSlot Equip_Slot {
             get => (MHW_Template.Armors.EquipSlot) GetData<byte>(10);
             set {
                 if ((MHW_Template.Armors.EquipSlot) GetData<byte>(10) == value) return;
@@ -87,7 +87,7 @@ namespace MHW_Editor.Armors {
         public const int Defense_sortIndex = 350;
         [SortOrder(Defense_sortIndex)]
         [DisplayName(Defense_displayName)]
-        public ushort Defense {
+        public virtual ushort Defense {
             get => GetData<ushort>(11);
             set {
                 if (GetData<ushort>(11) == value) return;
@@ -100,7 +100,7 @@ namespace MHW_Editor.Armors {
         public const int Rarity_sortIndex = 400;
         [SortOrder(Rarity_sortIndex)]
         [DisplayName(Rarity_displayName)]
-        public byte Rarity {
+        public virtual byte Rarity {
             get => GetData<byte>(20);
             set {
                 if (GetData<byte>(20) == value) return;
@@ -113,7 +113,7 @@ namespace MHW_Editor.Armors {
         public const int Cost_sortIndex = 450;
         [SortOrder(Cost_sortIndex)]
         [DisplayName(Cost_displayName)]
-        public uint Cost {
+        public virtual uint Cost {
             get => GetData<uint>(21);
             set {
                 if (GetData<uint>(21) == value) return;
@@ -126,7 +126,7 @@ namespace MHW_Editor.Armors {
         public const int Fire_Res_sortIndex = 500;
         [SortOrder(Fire_Res_sortIndex)]
         [DisplayName(Fire_Res_displayName)]
-        public sbyte Fire_Res {
+        public virtual sbyte Fire_Res {
             get => GetData<sbyte>(25);
             set {
                 if (GetData<sbyte>(25) == value) return;
@@ -139,7 +139,7 @@ namespace MHW_Editor.Armors {
         public const int Water_Res_sortIndex = 550;
         [SortOrder(Water_Res_sortIndex)]
         [DisplayName(Water_Res_displayName)]
-        public sbyte Water_Res {
+        public virtual sbyte Water_Res {
             get => GetData<sbyte>(26);
             set {
                 if (GetData<sbyte>(26) == value) return;
@@ -152,7 +152,7 @@ namespace MHW_Editor.Armors {
         public const int Ice_Res_sortIndex = 600;
         [SortOrder(Ice_Res_sortIndex)]
         [DisplayName(Ice_Res_displayName)]
-        public sbyte Ice_Res {
+        public virtual sbyte Ice_Res {
             get => GetData<sbyte>(27);
             set {
                 if (GetData<sbyte>(27) == value) return;
@@ -165,7 +165,7 @@ namespace MHW_Editor.Armors {
         public const int Thunder_Res_sortIndex = 650;
         [SortOrder(Thunder_Res_sortIndex)]
         [DisplayName(Thunder_Res_displayName)]
-        public sbyte Thunder_Res {
+        public virtual sbyte Thunder_Res {
             get => GetData<sbyte>(28);
             set {
                 if (GetData<sbyte>(28) == value) return;
@@ -178,7 +178,7 @@ namespace MHW_Editor.Armors {
         public const int Dragon_Res_sortIndex = 700;
         [SortOrder(Dragon_Res_sortIndex)]
         [DisplayName(Dragon_Res_displayName)]
-        public sbyte Dragon_Res {
+        public virtual sbyte Dragon_Res {
             get => GetData<sbyte>(29);
             set {
                 if (GetData<sbyte>(29) == value) return;
@@ -191,7 +191,7 @@ namespace MHW_Editor.Armors {
         public const int Slot_Count_sortIndex = 750;
         [SortOrder(Slot_Count_sortIndex)]
         [DisplayName(Slot_Count_displayName)]
-        public byte Slot_Count {
+        public virtual byte Slot_Count {
             get => GetData<byte>(30);
             set {
                 if (GetData<byte>(30) == value) return;
@@ -204,7 +204,7 @@ namespace MHW_Editor.Armors {
         public const int Slot_1_Size_sortIndex = 800;
         [SortOrder(Slot_1_Size_sortIndex)]
         [DisplayName(Slot_1_Size_displayName)]
-        public byte Slot_1_Size {
+        public virtual byte Slot_1_Size {
             get => GetData<byte>(31);
             set {
                 if (GetData<byte>(31) == value) return;
@@ -217,7 +217,7 @@ namespace MHW_Editor.Armors {
         public const int Slot_2_Size_sortIndex = 850;
         [SortOrder(Slot_2_Size_sortIndex)]
         [DisplayName(Slot_2_Size_displayName)]
-        public byte Slot_2_Size {
+        public virtual byte Slot_2_Size {
             get => GetData<byte>(32);
             set {
                 if (GetData<byte>(32) == value) return;
@@ -230,7 +230,7 @@ namespace MHW_Editor.Armors {
         public const int Slot_3_Size_sortIndex = 900;
         [SortOrder(Slot_3_Size_sortIndex)]
         [DisplayName(Slot_3_Size_displayName)]
-        public byte Slot_3_Size {
+        public virtual byte Slot_3_Size {
             get => GetData<byte>(33);
             set {
                 if (GetData<byte>(33) == value) return;
@@ -244,12 +244,13 @@ namespace MHW_Editor.Armors {
         [SortOrder(Set_Skill_1_sortIndex)]
         [DisplayName(Set_Skill_1_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public ushort Set_Skill_1 {
+        public virtual ushort Set_Skill_1 {
             get => GetData<ushort>(34);
             set {
                 if (GetData<ushort>(34) == value) return;
                 SetData(34, value);
                 OnPropertyChanged(nameof(Set_Skill_1));
+                OnPropertyChanged("Set_Skill_1_button");
             }
         }
 
@@ -257,7 +258,7 @@ namespace MHW_Editor.Armors {
         public const int Set_Skill_1_Level_sortIndex = 1000;
         [SortOrder(Set_Skill_1_Level_sortIndex)]
         [DisplayName(Set_Skill_1_Level_displayName)]
-        public byte Set_Skill_1_Level {
+        public virtual byte Set_Skill_1_Level {
             get => GetData<byte>(36);
             set {
                 if (GetData<byte>(36) == value) return;
@@ -271,12 +272,13 @@ namespace MHW_Editor.Armors {
         [SortOrder(Set_Skill_2_sortIndex)]
         [DisplayName(Set_Skill_2_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public ushort Set_Skill_2 {
+        public virtual ushort Set_Skill_2 {
             get => GetData<ushort>(37);
             set {
                 if (GetData<ushort>(37) == value) return;
                 SetData(37, value);
                 OnPropertyChanged(nameof(Set_Skill_2));
+                OnPropertyChanged("Set_Skill_2_button");
             }
         }
 
@@ -284,7 +286,7 @@ namespace MHW_Editor.Armors {
         public const int Set_Skill_2_Level_sortIndex = 1100;
         [SortOrder(Set_Skill_2_Level_sortIndex)]
         [DisplayName(Set_Skill_2_Level_displayName)]
-        public byte Set_Skill_2_Level {
+        public virtual byte Set_Skill_2_Level {
             get => GetData<byte>(39);
             set {
                 if (GetData<byte>(39) == value) return;
@@ -298,12 +300,13 @@ namespace MHW_Editor.Armors {
         [SortOrder(Skill_1_sortIndex)]
         [DisplayName(Skill_1_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public ushort Skill_1 {
+        public virtual ushort Skill_1 {
             get => GetData<ushort>(40);
             set {
                 if (GetData<ushort>(40) == value) return;
                 SetData(40, value);
                 OnPropertyChanged(nameof(Skill_1));
+                OnPropertyChanged("Skill_1_button");
             }
         }
 
@@ -311,7 +314,7 @@ namespace MHW_Editor.Armors {
         public const int Skill_1_Level_sortIndex = 1200;
         [SortOrder(Skill_1_Level_sortIndex)]
         [DisplayName(Skill_1_Level_displayName)]
-        public byte Skill_1_Level {
+        public virtual byte Skill_1_Level {
             get => GetData<byte>(42);
             set {
                 if (GetData<byte>(42) == value) return;
@@ -325,12 +328,13 @@ namespace MHW_Editor.Armors {
         [SortOrder(Skill_2_sortIndex)]
         [DisplayName(Skill_2_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public ushort Skill_2 {
+        public virtual ushort Skill_2 {
             get => GetData<ushort>(43);
             set {
                 if (GetData<ushort>(43) == value) return;
                 SetData(43, value);
                 OnPropertyChanged(nameof(Skill_2));
+                OnPropertyChanged("Skill_2_button");
             }
         }
 
@@ -338,7 +342,7 @@ namespace MHW_Editor.Armors {
         public const int Skill_2_Level_sortIndex = 1300;
         [SortOrder(Skill_2_Level_sortIndex)]
         [DisplayName(Skill_2_Level_displayName)]
-        public byte Skill_2_Level {
+        public virtual byte Skill_2_Level {
             get => GetData<byte>(45);
             set {
                 if (GetData<byte>(45) == value) return;
@@ -352,12 +356,13 @@ namespace MHW_Editor.Armors {
         [SortOrder(Skill_3_sortIndex)]
         [DisplayName(Skill_3_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public ushort Skill_3 {
+        public virtual ushort Skill_3 {
             get => GetData<ushort>(46);
             set {
                 if (GetData<ushort>(46) == value) return;
                 SetData(46, value);
                 OnPropertyChanged(nameof(Skill_3));
+                OnPropertyChanged("Skill_3_button");
             }
         }
 
@@ -365,7 +370,7 @@ namespace MHW_Editor.Armors {
         public const int Skill_3_Level_sortIndex = 1400;
         [SortOrder(Skill_3_Level_sortIndex)]
         [DisplayName(Skill_3_Level_displayName)]
-        public byte Skill_3_Level {
+        public virtual byte Skill_3_Level {
             get => GetData<byte>(48);
             set {
                 if (GetData<byte>(48) == value) return;
@@ -378,7 +383,7 @@ namespace MHW_Editor.Armors {
         public const int Gender_sortIndex = 1450;
         [SortOrder(Gender_sortIndex)]
         [DisplayName(Gender_displayName)]
-        public MHW_Template.Armors.Gender Gender {
+        public virtual MHW_Template.Armors.Gender Gender {
             get => (MHW_Template.Armors.Gender) GetData<byte>(49);
             set {
                 if ((MHW_Template.Armors.Gender) GetData<byte>(49) == value) return;
@@ -391,7 +396,7 @@ namespace MHW_Editor.Armors {
         public const int Set_Group_sortIndex = 1500;
         [SortOrder(Set_Group_sortIndex)]
         [DisplayName(Set_Group_displayName)]
-        public ushort Set_Group {
+        public virtual ushort Set_Group {
             get => GetData<ushort>(53);
             set {
                 if (GetData<ushort>(53) == value) return;
@@ -404,7 +409,7 @@ namespace MHW_Editor.Armors {
         public const int Is_Permanent_Raw_sortIndex = 1550;
         [SortOrder(Is_Permanent_Raw_sortIndex)]
         [DisplayName(Is_Permanent_Raw_displayName)]
-        protected byte Is_Permanent_Raw {
+        private byte Is_Permanent_Raw {
             get => GetData<byte>(59);
             set {
                 if (GetData<byte>(59) == value) return;
@@ -417,8 +422,18 @@ namespace MHW_Editor.Armors {
         public const int GMD_Name_Index_sortIndex = 1600;
         [SortOrder(GMD_Name_Index_sortIndex)]
         [DisplayName(GMD_Name_Index_displayName)]
-        protected ushort GMD_Name_Index {
+        public virtual ushort GMD_Name_Index {
             get => GetData<ushort>(55);
         }
+
+        public const string GMD_Description_Index_displayName = "GMD Description Index";
+        public const int GMD_Description_Index_sortIndex = 1650;
+        [SortOrder(GMD_Description_Index_sortIndex)]
+        [DisplayName(GMD_Description_Index_displayName)]
+        public virtual ushort GMD_Description_Index {
+            get => GetData<ushort>(57);
+        }
+
+        public const int lastSortIndex = 1700;
     }
 }

@@ -14,7 +14,7 @@ namespace MHW_Editor.Items {
         public const int Fertilizer_Id_sortIndex = 50;
         [SortOrder(Fertilizer_Id_sortIndex)]
         [DisplayName(Fertilizer_Id_displayName)]
-        public MHW_Template.Items.Fertilizer Fertilizer_Id {
+        public virtual MHW_Template.Items.Fertilizer Fertilizer_Id {
             get => (MHW_Template.Items.Fertilizer) GetData<uint>(0);
             set {
                 if ((MHW_Template.Items.Fertilizer) GetData<uint>(0) == value) return;
@@ -27,7 +27,7 @@ namespace MHW_Editor.Items {
         public const int Prize_sortIndex = 100;
         [SortOrder(Prize_sortIndex)]
         [DisplayName(Prize_displayName)]
-        public uint Prize {
+        public virtual uint Prize {
             get => GetData<uint>(4);
             set {
                 if (GetData<uint>(4) == value) return;
@@ -40,7 +40,7 @@ namespace MHW_Editor.Items {
         public const int Base_duration_sortIndex = 150;
         [SortOrder(Base_duration_sortIndex)]
         [DisplayName(Base_duration_displayName)]
-        public uint Base_duration {
+        public virtual uint Base_duration {
             get => GetData<uint>(8);
             set {
                 if (GetData<uint>(8) == value) return;
@@ -53,7 +53,7 @@ namespace MHW_Editor.Items {
         public const int Unknown_int32_1_sortIndex = 200;
         [SortOrder(Unknown_int32_1_sortIndex)]
         [DisplayName(Unknown_int32_1_displayName)]
-        public uint Unknown_int32_1 {
+        public virtual uint Unknown_int32_1 {
             get => GetData<uint>(12);
             set {
                 if (GetData<uint>(12) == value) return;
@@ -66,7 +66,7 @@ namespace MHW_Editor.Items {
         public const int Unknown_int32_2_sortIndex = 250;
         [SortOrder(Unknown_int32_2_sortIndex)]
         [DisplayName(Unknown_int32_2_displayName)]
-        public uint Unknown_int32_2 {
+        public virtual uint Unknown_int32_2 {
             get => GetData<uint>(16);
             set {
                 if (GetData<uint>(16) == value) return;
@@ -79,7 +79,7 @@ namespace MHW_Editor.Items {
         public const int Unknown_int32_3_sortIndex = 300;
         [SortOrder(Unknown_int32_3_sortIndex)]
         [DisplayName(Unknown_int32_3_displayName)]
-        public uint Unknown_int32_3 {
+        public virtual uint Unknown_int32_3 {
             get => GetData<uint>(20);
             set {
                 if (GetData<uint>(20) == value) return;
@@ -87,5 +87,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Unknown_int32_3));
             }
         }
+
+        public const int lastSortIndex = 350;
     }
 }

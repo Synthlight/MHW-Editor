@@ -14,7 +14,7 @@ namespace MHW_Editor.Skills {
         public const int Unknown_uint8_1_sortIndex = 50;
         [SortOrder(Unknown_uint8_1_sortIndex)]
         [DisplayName(Unknown_uint8_1_displayName)]
-        public byte Unknown_uint8_1 {
+        public virtual byte Unknown_uint8_1 {
             get => GetData<byte>(0);
             set {
                 if (GetData<byte>(0) == value) return;
@@ -27,7 +27,7 @@ namespace MHW_Editor.Skills {
         public const int Unknown_uint8_2_sortIndex = 100;
         [SortOrder(Unknown_uint8_2_sortIndex)]
         [DisplayName(Unknown_uint8_2_displayName)]
-        public byte Unknown_uint8_2 {
+        public virtual byte Unknown_uint8_2 {
             get => GetData<byte>(1);
             set {
                 if (GetData<byte>(1) == value) return;
@@ -35,5 +35,7 @@ namespace MHW_Editor.Skills {
                 OnPropertyChanged(nameof(Unknown_uint8_2));
             }
         }
+
+        public const int lastSortIndex = 150;
     }
 }

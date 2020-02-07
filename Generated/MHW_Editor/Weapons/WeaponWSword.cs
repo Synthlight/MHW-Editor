@@ -14,7 +14,7 @@ namespace MHW_Editor.Weapons {
         public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
-        public uint Id {
+        public virtual uint Id {
             get => GetData<uint>(0);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Weapons {
         public const int Element_1_Type_sortIndex = 100;
         [SortOrder(Element_1_Type_sortIndex)]
         [DisplayName(Element_1_Type_displayName)]
-        public MHW_Template.Weapons.Element Element_1_Type {
+        public virtual MHW_Template.Weapons.Element Element_1_Type {
             get => (MHW_Template.Weapons.Element) GetData<byte>(4);
             set {
                 if ((MHW_Template.Weapons.Element) GetData<byte>(4) == value) return;
@@ -35,7 +35,7 @@ namespace MHW_Editor.Weapons {
         public const int Element_1_Dmg_sortIndex = 150;
         [SortOrder(Element_1_Dmg_sortIndex)]
         [DisplayName(Element_1_Dmg_displayName)]
-        public short Element_1_Dmg {
+        public virtual short Element_1_Dmg {
             get => GetData<short>(5);
             set {
                 if (GetData<short>(5) == value) return;
@@ -48,7 +48,7 @@ namespace MHW_Editor.Weapons {
         public const int Element_2_Type_sortIndex = 200;
         [SortOrder(Element_2_Type_sortIndex)]
         [DisplayName(Element_2_Type_displayName)]
-        public MHW_Template.Weapons.Element Element_2_Type {
+        public virtual MHW_Template.Weapons.Element Element_2_Type {
             get => (MHW_Template.Weapons.Element) GetData<byte>(7);
             set {
                 if ((MHW_Template.Weapons.Element) GetData<byte>(7) == value) return;
@@ -61,7 +61,7 @@ namespace MHW_Editor.Weapons {
         public const int Element_2_Dmg_sortIndex = 250;
         [SortOrder(Element_2_Dmg_sortIndex)]
         [DisplayName(Element_2_Dmg_displayName)]
-        public short Element_2_Dmg {
+        public virtual short Element_2_Dmg {
             get => GetData<short>(8);
             set {
                 if (GetData<short>(8) == value) return;
@@ -69,5 +69,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Element_2_Dmg));
             }
         }
+
+        public const int lastSortIndex = 300;
     }
 }

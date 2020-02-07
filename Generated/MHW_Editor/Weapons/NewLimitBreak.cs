@@ -14,7 +14,7 @@ namespace MHW_Editor.Weapons {
         public const int Id_1_sortIndex = 50;
         [SortOrder(Id_1_sortIndex)]
         [DisplayName(Id_1_displayName)]
-        public ushort Id_1 {
+        public virtual ushort Id_1 {
             get => GetData<ushort>(0);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Weapons {
         public const int Id_2_sortIndex = 100;
         [SortOrder(Id_2_sortIndex)]
         [DisplayName(Id_2_displayName)]
-        public ushort Id_2 {
+        public virtual ushort Id_2 {
             get => GetData<ushort>(2);
         }
 
@@ -31,12 +31,13 @@ namespace MHW_Editor.Weapons {
         [SortOrder(Needed_Item_Id_to_Unlock_sortIndex)]
         [DisplayName(Needed_Item_Id_to_Unlock_displayName)]
         [DataSource(DataSourceType.Items)]
-        public ushort Needed_Item_Id_to_Unlock {
+        public virtual ushort Needed_Item_Id_to_Unlock {
             get => GetData<ushort>(4);
             set {
                 if (GetData<ushort>(4) == value) return;
                 SetData(4, value);
                 OnPropertyChanged(nameof(Needed_Item_Id_to_Unlock));
+                OnPropertyChanged("Needed_Item_Id_to_Unlock_button");
             }
         }
 
@@ -44,7 +45,7 @@ namespace MHW_Editor.Weapons {
         public const int Activated_1_sortIndex = 200;
         [SortOrder(Activated_1_sortIndex)]
         [DisplayName(Activated_1_displayName)]
-        protected sbyte Activated_1 {
+        protected virtual sbyte Activated_1 {
             get => GetData<sbyte>(6);
             set {
                 if (GetData<sbyte>(6) == value) return;
@@ -57,7 +58,7 @@ namespace MHW_Editor.Weapons {
         public const int Activated_2_sortIndex = 250;
         [SortOrder(Activated_2_sortIndex)]
         [DisplayName(Activated_2_displayName)]
-        protected sbyte Activated_2 {
+        protected virtual sbyte Activated_2 {
             get => GetData<sbyte>(7);
             set {
                 if (GetData<sbyte>(7) == value) return;
@@ -70,7 +71,7 @@ namespace MHW_Editor.Weapons {
         public const int Activated_3_sortIndex = 300;
         [SortOrder(Activated_3_sortIndex)]
         [DisplayName(Activated_3_displayName)]
-        protected sbyte Activated_3 {
+        protected virtual sbyte Activated_3 {
             get => GetData<sbyte>(8);
             set {
                 if (GetData<sbyte>(8) == value) return;
@@ -83,7 +84,7 @@ namespace MHW_Editor.Weapons {
         public const int Activated_4_sortIndex = 350;
         [SortOrder(Activated_4_sortIndex)]
         [DisplayName(Activated_4_displayName)]
-        protected sbyte Activated_4 {
+        protected virtual sbyte Activated_4 {
             get => GetData<sbyte>(9);
             set {
                 if (GetData<sbyte>(9) == value) return;
@@ -97,12 +98,13 @@ namespace MHW_Editor.Weapons {
         [SortOrder(Mat_1_Id_sortIndex)]
         [DisplayName(Mat_1_Id_displayName)]
         [DataSource(DataSourceType.Items)]
-        public ushort Mat_1_Id {
+        public virtual ushort Mat_1_Id {
             get => GetData<ushort>(14);
             set {
                 if (GetData<ushort>(14) == value) return;
                 SetData(14, value);
                 OnPropertyChanged(nameof(Mat_1_Id));
+                OnPropertyChanged("Mat_1_Id_button");
             }
         }
 
@@ -110,7 +112,7 @@ namespace MHW_Editor.Weapons {
         public const int Mat_1_Count_sortIndex = 450;
         [SortOrder(Mat_1_Count_sortIndex)]
         [DisplayName(Mat_1_Count_displayName)]
-        public byte Mat_1_Count {
+        public virtual byte Mat_1_Count {
             get => GetData<byte>(16);
             set {
                 if (GetData<byte>(16) == value) return;
@@ -124,12 +126,13 @@ namespace MHW_Editor.Weapons {
         [SortOrder(Mat_2_Id_sortIndex)]
         [DisplayName(Mat_2_Id_displayName)]
         [DataSource(DataSourceType.Items)]
-        public ushort Mat_2_Id {
+        public virtual ushort Mat_2_Id {
             get => GetData<ushort>(17);
             set {
                 if (GetData<ushort>(17) == value) return;
                 SetData(17, value);
                 OnPropertyChanged(nameof(Mat_2_Id));
+                OnPropertyChanged("Mat_2_Id_button");
             }
         }
 
@@ -137,7 +140,7 @@ namespace MHW_Editor.Weapons {
         public const int Mat_2_Count_sortIndex = 550;
         [SortOrder(Mat_2_Count_sortIndex)]
         [DisplayName(Mat_2_Count_displayName)]
-        public byte Mat_2_Count {
+        public virtual byte Mat_2_Count {
             get => GetData<byte>(19);
             set {
                 if (GetData<byte>(19) == value) return;
@@ -151,12 +154,13 @@ namespace MHW_Editor.Weapons {
         [SortOrder(Mat_3_Id_sortIndex)]
         [DisplayName(Mat_3_Id_displayName)]
         [DataSource(DataSourceType.Items)]
-        public ushort Mat_3_Id {
+        public virtual ushort Mat_3_Id {
             get => GetData<ushort>(20);
             set {
                 if (GetData<ushort>(20) == value) return;
                 SetData(20, value);
                 OnPropertyChanged(nameof(Mat_3_Id));
+                OnPropertyChanged("Mat_3_Id_button");
             }
         }
 
@@ -164,7 +168,7 @@ namespace MHW_Editor.Weapons {
         public const int Mat_3_Count_sortIndex = 650;
         [SortOrder(Mat_3_Count_sortIndex)]
         [DisplayName(Mat_3_Count_displayName)]
-        public byte Mat_3_Count {
+        public virtual byte Mat_3_Count {
             get => GetData<byte>(22);
             set {
                 if (GetData<byte>(22) == value) return;
@@ -178,12 +182,13 @@ namespace MHW_Editor.Weapons {
         [SortOrder(Mat_4_Id_sortIndex)]
         [DisplayName(Mat_4_Id_displayName)]
         [DataSource(DataSourceType.Items)]
-        public ushort Mat_4_Id {
+        public virtual ushort Mat_4_Id {
             get => GetData<ushort>(23);
             set {
                 if (GetData<ushort>(23) == value) return;
                 SetData(23, value);
                 OnPropertyChanged(nameof(Mat_4_Id));
+                OnPropertyChanged("Mat_4_Id_button");
             }
         }
 
@@ -191,7 +196,7 @@ namespace MHW_Editor.Weapons {
         public const int Mat_4_Count_sortIndex = 750;
         [SortOrder(Mat_4_Count_sortIndex)]
         [DisplayName(Mat_4_Count_displayName)]
-        public byte Mat_4_Count {
+        public virtual byte Mat_4_Count {
             get => GetData<byte>(24);
             set {
                 if (GetData<byte>(24) == value) return;
@@ -204,8 +209,10 @@ namespace MHW_Editor.Weapons {
         public const int Id_3_sortIndex = 800;
         [SortOrder(Id_3_sortIndex)]
         [DisplayName(Id_3_displayName)]
-        public byte Id_3 {
+        public virtual byte Id_3 {
             get => GetData<byte>(37);
         }
+
+        public const int lastSortIndex = 850;
     }
 }

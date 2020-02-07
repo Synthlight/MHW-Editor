@@ -14,7 +14,7 @@ namespace MHW_Editor.Skills {
         public const int Song_Id_Raw_sortIndex = 50;
         [SortOrder(Song_Id_Raw_sortIndex)]
         [DisplayName(Song_Id_Raw_displayName)]
-        private uint Song_Id_Raw {
+        public virtual uint Song_Id_Raw {
             get => GetData<uint>(0);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Skills {
         public const int Note_1_sortIndex = 100;
         [SortOrder(Note_1_sortIndex)]
         [DisplayName(Note_1_displayName)]
-        public MHW_Template.Weapons.NoteColor Note_1 {
+        public virtual MHW_Template.Weapons.NoteColor Note_1 {
             get => (MHW_Template.Weapons.NoteColor) GetData<int>(4);
             set {
                 if ((MHW_Template.Weapons.NoteColor) GetData<int>(4) == value) return;
@@ -35,7 +35,7 @@ namespace MHW_Editor.Skills {
         public const int Note_2_sortIndex = 150;
         [SortOrder(Note_2_sortIndex)]
         [DisplayName(Note_2_displayName)]
-        public MHW_Template.Weapons.NoteColor Note_2 {
+        public virtual MHW_Template.Weapons.NoteColor Note_2 {
             get => (MHW_Template.Weapons.NoteColor) GetData<int>(8);
             set {
                 if ((MHW_Template.Weapons.NoteColor) GetData<int>(8) == value) return;
@@ -48,7 +48,7 @@ namespace MHW_Editor.Skills {
         public const int Note_3_sortIndex = 200;
         [SortOrder(Note_3_sortIndex)]
         [DisplayName(Note_3_displayName)]
-        public MHW_Template.Weapons.NoteColor Note_3 {
+        public virtual MHW_Template.Weapons.NoteColor Note_3 {
             get => (MHW_Template.Weapons.NoteColor) GetData<int>(12);
             set {
                 if ((MHW_Template.Weapons.NoteColor) GetData<int>(12) == value) return;
@@ -61,7 +61,7 @@ namespace MHW_Editor.Skills {
         public const int Note_4_sortIndex = 250;
         [SortOrder(Note_4_sortIndex)]
         [DisplayName(Note_4_displayName)]
-        public MHW_Template.Weapons.NoteColor Note_4 {
+        public virtual MHW_Template.Weapons.NoteColor Note_4 {
             get => (MHW_Template.Weapons.NoteColor) GetData<int>(16);
             set {
                 if ((MHW_Template.Weapons.NoteColor) GetData<int>(16) == value) return;
@@ -69,5 +69,7 @@ namespace MHW_Editor.Skills {
                 OnPropertyChanged(nameof(Note_4));
             }
         }
+
+        public const int lastSortIndex = 300;
     }
 }

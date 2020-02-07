@@ -14,7 +14,7 @@ namespace MHW_Editor.Armors {
         public const int Mantle_Id_sortIndex = 50;
         [SortOrder(Mantle_Id_sortIndex)]
         [DisplayName(Mantle_Id_displayName)]
-        public uint Mantle_Id {
+        public virtual uint Mantle_Id {
             get => GetData<uint>(16);
             set {
                 if (GetData<uint>(16) == value) return;
@@ -27,7 +27,7 @@ namespace MHW_Editor.Armors {
         public const int Unknown_uint32__sortIndex = 100;
         [SortOrder(Unknown_uint32__sortIndex)]
         [DisplayName(Unknown_uint32__displayName)]
-        public uint Unknown_uint32_ {
+        public virtual uint Unknown_uint32_ {
             get => GetData<uint>(0);
             set {
                 if (GetData<uint>(0) == value) return;
@@ -40,7 +40,7 @@ namespace MHW_Editor.Armors {
         public const int Color_sortIndex = 150;
         [SortOrder(Color_sortIndex)]
         [DisplayName(Color_displayName)]
-        public uint Color {
+        public virtual uint Color {
             get => GetData<uint>(4);
             set {
                 if (GetData<uint>(4) == value) return;
@@ -53,7 +53,7 @@ namespace MHW_Editor.Armors {
         public const int Sort_Order_sortIndex = 200;
         [SortOrder(Sort_Order_sortIndex)]
         [DisplayName(Sort_Order_displayName)]
-        public uint Sort_Order {
+        public virtual uint Sort_Order {
             get => GetData<uint>(8);
             set {
                 if (GetData<uint>(8) == value) return;
@@ -67,12 +67,13 @@ namespace MHW_Editor.Armors {
         [SortOrder(Mantle_Item_Id_sortIndex)]
         [DisplayName(Mantle_Item_Id_displayName)]
         [DataSource(DataSourceType.Items)]
-        public uint Mantle_Item_Id {
+        public virtual uint Mantle_Item_Id {
             get => GetData<uint>(12);
             set {
                 if (GetData<uint>(12) == value) return;
                 SetData(12, value);
                 OnPropertyChanged(nameof(Mantle_Item_Id));
+                OnPropertyChanged("Mantle_Item_Id_button");
             }
         }
 
@@ -80,7 +81,7 @@ namespace MHW_Editor.Armors {
         public const int Unlock_Flag_or_Item_Id__sortIndex = 300;
         [SortOrder(Unlock_Flag_or_Item_Id__sortIndex)]
         [DisplayName(Unlock_Flag_or_Item_Id__displayName)]
-        public uint Unlock_Flag_or_Item_Id_ {
+        public virtual uint Unlock_Flag_or_Item_Id_ {
             get => GetData<uint>(20);
             set {
                 if (GetData<uint>(20) == value) return;
@@ -93,7 +94,7 @@ namespace MHW_Editor.Armors {
         public const int Deco_Count_sortIndex = 350;
         [SortOrder(Deco_Count_sortIndex)]
         [DisplayName(Deco_Count_displayName)]
-        public byte Deco_Count {
+        public virtual byte Deco_Count {
             get => GetData<byte>(24);
             set {
                 if (GetData<byte>(24) == value) return;
@@ -106,7 +107,7 @@ namespace MHW_Editor.Armors {
         public const int Deco_Lvl_1_sortIndex = 400;
         [SortOrder(Deco_Lvl_1_sortIndex)]
         [DisplayName(Deco_Lvl_1_displayName)]
-        public byte Deco_Lvl_1 {
+        public virtual byte Deco_Lvl_1 {
             get => GetData<byte>(25);
             set {
                 if (GetData<byte>(25) == value) return;
@@ -119,7 +120,7 @@ namespace MHW_Editor.Armors {
         public const int Deco_Lvl_2_sortIndex = 450;
         [SortOrder(Deco_Lvl_2_sortIndex)]
         [DisplayName(Deco_Lvl_2_displayName)]
-        public byte Deco_Lvl_2 {
+        public virtual byte Deco_Lvl_2 {
             get => GetData<byte>(26);
             set {
                 if (GetData<byte>(26) == value) return;
@@ -132,7 +133,7 @@ namespace MHW_Editor.Armors {
         public const int Deco_Lvl_3_sortIndex = 500;
         [SortOrder(Deco_Lvl_3_sortIndex)]
         [DisplayName(Deco_Lvl_3_displayName)]
-        public byte Deco_Lvl_3 {
+        public virtual byte Deco_Lvl_3 {
             get => GetData<byte>(27);
             set {
                 if (GetData<byte>(27) == value) return;
@@ -140,5 +141,7 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Deco_Lvl_3));
             }
         }
+
+        public const int lastSortIndex = 550;
     }
 }

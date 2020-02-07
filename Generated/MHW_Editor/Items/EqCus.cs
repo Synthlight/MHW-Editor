@@ -14,7 +14,7 @@ namespace MHW_Editor.Items {
         public const int Item_Category_sortIndex = 50;
         [SortOrder(Item_Category_sortIndex)]
         [DisplayName(Item_Category_displayName)]
-        public byte Item_Category {
+        public virtual byte Item_Category {
             get => GetData<byte>(0);
             set {
                 if (GetData<byte>(0) == value) return;
@@ -27,7 +27,7 @@ namespace MHW_Editor.Items {
         public const int External_Item_Index_sortIndex = 100;
         [SortOrder(External_Item_Index_sortIndex)]
         [DisplayName(External_Item_Index_displayName)]
-        public ushort External_Item_Index {
+        public virtual ushort External_Item_Index {
             get => GetData<ushort>(1);
             set {
                 if (GetData<ushort>(1) == value) return;
@@ -40,7 +40,7 @@ namespace MHW_Editor.Items {
         public const int Unknown_uint16_1_sortIndex = 150;
         [SortOrder(Unknown_uint16_1_sortIndex)]
         [DisplayName(Unknown_uint16_1_displayName)]
-        public ushort Unknown_uint16_1 {
+        public virtual ushort Unknown_uint16_1 {
             get => GetData<ushort>(3);
             set {
                 if (GetData<ushort>(3) == value) return;
@@ -53,7 +53,7 @@ namespace MHW_Editor.Items {
         public const int Unknown_int32_2_sortIndex = 200;
         [SortOrder(Unknown_int32_2_sortIndex)]
         [DisplayName(Unknown_int32_2_displayName)]
-        public int Unknown_int32_2 {
+        public virtual int Unknown_int32_2 {
             get => GetData<int>(5);
             set {
                 if (GetData<int>(5) == value) return;
@@ -66,7 +66,7 @@ namespace MHW_Editor.Items {
         public const int Story_Unlock_sortIndex = 250;
         [SortOrder(Story_Unlock_sortIndex)]
         [DisplayName(Story_Unlock_displayName)]
-        public uint Story_Unlock {
+        public virtual uint Story_Unlock {
             get => GetData<uint>(9);
             set {
                 if (GetData<uint>(9) == value) return;
@@ -79,7 +79,7 @@ namespace MHW_Editor.Items {
         public const int Item_Rank_sortIndex = 300;
         [SortOrder(Item_Rank_sortIndex)]
         [DisplayName(Item_Rank_displayName)]
-        public uint Item_Rank {
+        public virtual uint Item_Rank {
             get => GetData<uint>(13);
             set {
                 if (GetData<uint>(13) == value) return;
@@ -93,12 +93,13 @@ namespace MHW_Editor.Items {
         [SortOrder(Mat_1_Id_sortIndex)]
         [DisplayName(Mat_1_Id_displayName)]
         [DataSource(DataSourceType.Items)]
-        public ushort Mat_1_Id {
+        public virtual ushort Mat_1_Id {
             get => GetData<ushort>(17);
             set {
                 if (GetData<ushort>(17) == value) return;
                 SetData(17, value);
                 OnPropertyChanged(nameof(Mat_1_Id));
+                OnPropertyChanged("Mat_1_Id_button");
             }
         }
 
@@ -106,7 +107,7 @@ namespace MHW_Editor.Items {
         public const int Mat_1_Count_sortIndex = 400;
         [SortOrder(Mat_1_Count_sortIndex)]
         [DisplayName(Mat_1_Count_displayName)]
-        public byte Mat_1_Count {
+        public virtual byte Mat_1_Count {
             get => GetData<byte>(19);
             set {
                 if (GetData<byte>(19) == value) return;
@@ -120,12 +121,13 @@ namespace MHW_Editor.Items {
         [SortOrder(Mat_2_Id_sortIndex)]
         [DisplayName(Mat_2_Id_displayName)]
         [DataSource(DataSourceType.Items)]
-        public ushort Mat_2_Id {
+        public virtual ushort Mat_2_Id {
             get => GetData<ushort>(20);
             set {
                 if (GetData<ushort>(20) == value) return;
                 SetData(20, value);
                 OnPropertyChanged(nameof(Mat_2_Id));
+                OnPropertyChanged("Mat_2_Id_button");
             }
         }
 
@@ -133,7 +135,7 @@ namespace MHW_Editor.Items {
         public const int Mat_2_Count_sortIndex = 500;
         [SortOrder(Mat_2_Count_sortIndex)]
         [DisplayName(Mat_2_Count_displayName)]
-        public byte Mat_2_Count {
+        public virtual byte Mat_2_Count {
             get => GetData<byte>(22);
             set {
                 if (GetData<byte>(22) == value) return;
@@ -147,12 +149,13 @@ namespace MHW_Editor.Items {
         [SortOrder(Mat_3_Id_sortIndex)]
         [DisplayName(Mat_3_Id_displayName)]
         [DataSource(DataSourceType.Items)]
-        public ushort Mat_3_Id {
+        public virtual ushort Mat_3_Id {
             get => GetData<ushort>(23);
             set {
                 if (GetData<ushort>(23) == value) return;
                 SetData(23, value);
                 OnPropertyChanged(nameof(Mat_3_Id));
+                OnPropertyChanged("Mat_3_Id_button");
             }
         }
 
@@ -160,7 +163,7 @@ namespace MHW_Editor.Items {
         public const int Mat_3_Count_sortIndex = 600;
         [SortOrder(Mat_3_Count_sortIndex)]
         [DisplayName(Mat_3_Count_displayName)]
-        public byte Mat_3_Count {
+        public virtual byte Mat_3_Count {
             get => GetData<byte>(25);
             set {
                 if (GetData<byte>(25) == value) return;
@@ -174,12 +177,13 @@ namespace MHW_Editor.Items {
         [SortOrder(Mat_4_Id_sortIndex)]
         [DisplayName(Mat_4_Id_displayName)]
         [DataSource(DataSourceType.Items)]
-        public ushort Mat_4_Id {
+        public virtual ushort Mat_4_Id {
             get => GetData<ushort>(26);
             set {
                 if (GetData<ushort>(26) == value) return;
                 SetData(26, value);
                 OnPropertyChanged(nameof(Mat_4_Id));
+                OnPropertyChanged("Mat_4_Id_button");
             }
         }
 
@@ -187,7 +191,7 @@ namespace MHW_Editor.Items {
         public const int Mat_4_Count_sortIndex = 700;
         [SortOrder(Mat_4_Count_sortIndex)]
         [DisplayName(Mat_4_Count_displayName)]
-        public byte Mat_4_Count {
+        public virtual byte Mat_4_Count {
             get => GetData<byte>(28);
             set {
                 if (GetData<byte>(28) == value) return;
@@ -200,7 +204,7 @@ namespace MHW_Editor.Items {
         public const int Child_index_1_sortIndex = 750;
         [SortOrder(Child_index_1_sortIndex)]
         [DisplayName(Child_index_1_displayName)]
-        public ushort Child_index_1 {
+        public virtual ushort Child_index_1 {
             get => GetData<ushort>(29);
             set {
                 if (GetData<ushort>(29) == value) return;
@@ -213,7 +217,7 @@ namespace MHW_Editor.Items {
         public const int Child_index_2_sortIndex = 800;
         [SortOrder(Child_index_2_sortIndex)]
         [DisplayName(Child_index_2_displayName)]
-        public ushort Child_index_2 {
+        public virtual ushort Child_index_2 {
             get => GetData<ushort>(31);
             set {
                 if (GetData<ushort>(31) == value) return;
@@ -226,7 +230,7 @@ namespace MHW_Editor.Items {
         public const int Child_index_3_sortIndex = 850;
         [SortOrder(Child_index_3_sortIndex)]
         [DisplayName(Child_index_3_displayName)]
-        public ushort Child_index_3 {
+        public virtual ushort Child_index_3 {
             get => GetData<ushort>(33);
             set {
                 if (GetData<ushort>(33) == value) return;
@@ -239,7 +243,7 @@ namespace MHW_Editor.Items {
         public const int Child_index_4_sortIndex = 900;
         [SortOrder(Child_index_4_sortIndex)]
         [DisplayName(Child_index_4_displayName)]
-        public ushort Child_index_4 {
+        public virtual ushort Child_index_4 {
             get => GetData<ushort>(35);
             set {
                 if (GetData<ushort>(35) == value) return;
@@ -247,5 +251,7 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Child_index_4));
             }
         }
+
+        public const int lastSortIndex = 950;
     }
 }

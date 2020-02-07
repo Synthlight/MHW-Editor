@@ -86,9 +86,9 @@ namespace MHW_Template
         var getCast = "";
 
         // Don't need now, but uncomment in the future if we need to override a generated property.
-        //if (accessLevel != "private") {
-        //    accessLevel += " virtual";
-        //}
+        if (accessLevel != "private") {
+            accessLevel += " virtual";
+        }
 
         if (entry.enumReturn == null) {
             returnString = typeString;
@@ -302,9 +302,34 @@ namespace MHW_Template
             
             #line default
             #line hidden
-            this.Write("));\r\n            }\r\n");
+            this.Write("));\r\n");
             
-            #line 72 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 71 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+
+            if (entry.dataSourceType != null) {
+
+            
+            #line default
+            #line hidden
+            this.Write("                OnPropertyChanged(\"");
+            
+            #line 74 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(name));
+            
+            #line default
+            #line hidden
+            this.Write("_button\");\r\n");
+            
+            #line 75 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+
+            } // End extra OnPropertyChanged check.
+
+            
+            #line default
+            #line hidden
+            this.Write("            }\r\n");
+            
+            #line 79 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
 
         } // End readOnly check.
 
@@ -313,14 +338,14 @@ namespace MHW_Template
             #line hidden
             this.Write("        }");
             
-            #line 75 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 82 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
  // End property block. 
             
             #line default
             #line hidden
             this.Write("\r\n");
             
-            #line 77 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 84 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
 
         sortIndex += 50;
     } // End loop.
@@ -328,9 +353,16 @@ namespace MHW_Template
             
             #line default
             #line hidden
-            this.Write("    }");
+            this.Write("\r\n        public const int lastSortIndex = ");
             
-            #line 81 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 89 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(sortIndex));
+            
+            #line default
+            #line hidden
+            this.Write(";\r\n    }");
+            
+            #line 90 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
  // End class. 
             
             #line default

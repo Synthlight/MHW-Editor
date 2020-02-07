@@ -14,7 +14,7 @@ namespace MHW_Editor.Weapons {
         public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
-        public uint Id {
+        public virtual uint Id {
             get => GetData<uint>(0);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Weapons {
         public const int Red_sortIndex = 100;
         [SortOrder(Red_sortIndex)]
         [DisplayName(Red_displayName)]
-        public ushort Red {
+        public virtual ushort Red {
             get => GetData<ushort>(4);
             set {
                 if (GetData<ushort>(4) == value.Clamp((ushort) 0, (ushort) 400)) return;
@@ -35,7 +35,7 @@ namespace MHW_Editor.Weapons {
         public const int Orange_sortIndex = 150;
         [SortOrder(Orange_sortIndex)]
         [DisplayName(Orange_displayName)]
-        public ushort Orange {
+        public virtual ushort Orange {
             get => GetData<ushort>(6);
             set {
                 if (GetData<ushort>(6) == value.Clamp((ushort) 0, (ushort) 400)) return;
@@ -48,7 +48,7 @@ namespace MHW_Editor.Weapons {
         public const int Yellow_sortIndex = 200;
         [SortOrder(Yellow_sortIndex)]
         [DisplayName(Yellow_displayName)]
-        public ushort Yellow {
+        public virtual ushort Yellow {
             get => GetData<ushort>(8);
             set {
                 if (GetData<ushort>(8) == value.Clamp((ushort) 0, (ushort) 400)) return;
@@ -61,7 +61,7 @@ namespace MHW_Editor.Weapons {
         public const int Green_sortIndex = 250;
         [SortOrder(Green_sortIndex)]
         [DisplayName(Green_displayName)]
-        public ushort Green {
+        public virtual ushort Green {
             get => GetData<ushort>(10);
             set {
                 if (GetData<ushort>(10) == value.Clamp((ushort) 0, (ushort) 400)) return;
@@ -74,7 +74,7 @@ namespace MHW_Editor.Weapons {
         public const int Blue_sortIndex = 300;
         [SortOrder(Blue_sortIndex)]
         [DisplayName(Blue_displayName)]
-        public ushort Blue {
+        public virtual ushort Blue {
             get => GetData<ushort>(12);
             set {
                 if (GetData<ushort>(12) == value.Clamp((ushort) 0, (ushort) 400)) return;
@@ -87,7 +87,7 @@ namespace MHW_Editor.Weapons {
         public const int White_sortIndex = 350;
         [SortOrder(White_sortIndex)]
         [DisplayName(White_displayName)]
-        public ushort White {
+        public virtual ushort White {
             get => GetData<ushort>(14);
             set {
                 if (GetData<ushort>(14) == value.Clamp((ushort) 0, (ushort) 400)) return;
@@ -100,7 +100,7 @@ namespace MHW_Editor.Weapons {
         public const int Purple_sortIndex = 400;
         [SortOrder(Purple_sortIndex)]
         [DisplayName(Purple_displayName)]
-        public ushort Purple {
+        public virtual ushort Purple {
             get => GetData<ushort>(16);
             set {
                 if (GetData<ushort>(16) == value.Clamp((ushort) 0, (ushort) 400)) return;
@@ -108,5 +108,7 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Purple));
             }
         }
+
+        public const int lastSortIndex = 450;
     }
 }

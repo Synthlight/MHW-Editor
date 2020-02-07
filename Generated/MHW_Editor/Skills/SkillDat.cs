@@ -14,7 +14,7 @@ namespace MHW_Editor.Skills {
         public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
-        public ushort Id {
+        public virtual ushort Id {
             get => GetData<ushort>(0);
         }
 
@@ -22,7 +22,7 @@ namespace MHW_Editor.Skills {
         public const int Level_sortIndex = 100;
         [SortOrder(Level_sortIndex)]
         [DisplayName(Level_displayName)]
-        public byte Level {
+        public virtual byte Level {
             get => GetData<byte>(2);
         }
 
@@ -31,12 +31,13 @@ namespace MHW_Editor.Skills {
         [SortOrder(Unlock_Skill_1_sortIndex)]
         [DisplayName(Unlock_Skill_1_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public uint Unlock_Skill_1 {
+        public virtual uint Unlock_Skill_1 {
             get => GetData<uint>(3);
             set {
                 if (GetData<uint>(3) == value) return;
                 SetData(3, value);
                 OnPropertyChanged(nameof(Unlock_Skill_1));
+                OnPropertyChanged("Unlock_Skill_1_button");
             }
         }
 
@@ -45,12 +46,13 @@ namespace MHW_Editor.Skills {
         [SortOrder(Unlock_Skill_2_sortIndex)]
         [DisplayName(Unlock_Skill_2_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public uint Unlock_Skill_2 {
+        public virtual uint Unlock_Skill_2 {
             get => GetData<uint>(7);
             set {
                 if (GetData<uint>(7) == value) return;
                 SetData(7, value);
                 OnPropertyChanged(nameof(Unlock_Skill_2));
+                OnPropertyChanged("Unlock_Skill_2_button");
             }
         }
 
@@ -59,12 +61,13 @@ namespace MHW_Editor.Skills {
         [SortOrder(Unlock_Skill_3_sortIndex)]
         [DisplayName(Unlock_Skill_3_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public uint Unlock_Skill_3 {
+        public virtual uint Unlock_Skill_3 {
             get => GetData<uint>(11);
             set {
                 if (GetData<uint>(11) == value) return;
                 SetData(11, value);
                 OnPropertyChanged(nameof(Unlock_Skill_3));
+                OnPropertyChanged("Unlock_Skill_3_button");
             }
         }
 
@@ -73,12 +76,13 @@ namespace MHW_Editor.Skills {
         [SortOrder(Unlock_Skill_4_sortIndex)]
         [DisplayName(Unlock_Skill_4_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public uint Unlock_Skill_4 {
+        public virtual uint Unlock_Skill_4 {
             get => GetData<uint>(15);
             set {
                 if (GetData<uint>(15) == value) return;
                 SetData(15, value);
                 OnPropertyChanged(nameof(Unlock_Skill_4));
+                OnPropertyChanged("Unlock_Skill_4_button");
             }
         }
 
@@ -86,7 +90,7 @@ namespace MHW_Editor.Skills {
         public const int Param_5_sortIndex = 350;
         [SortOrder(Param_5_sortIndex)]
         [DisplayName(Param_5_displayName)]
-        public ushort Param_5 {
+        public virtual ushort Param_5 {
             get => GetData<ushort>(19);
             set {
                 if (GetData<ushort>(19) == value) return;
@@ -99,7 +103,7 @@ namespace MHW_Editor.Skills {
         public const int Param_6_sortIndex = 400;
         [SortOrder(Param_6_sortIndex)]
         [DisplayName(Param_6_displayName)]
-        public ushort Param_6 {
+        public virtual ushort Param_6 {
             get => GetData<ushort>(21);
             set {
                 if (GetData<ushort>(21) == value) return;
@@ -112,7 +116,7 @@ namespace MHW_Editor.Skills {
         public const int Param_7_sortIndex = 450;
         [SortOrder(Param_7_sortIndex)]
         [DisplayName(Param_7_displayName)]
-        public ushort Param_7 {
+        public virtual ushort Param_7 {
             get => GetData<ushort>(23);
             set {
                 if (GetData<ushort>(23) == value) return;
@@ -125,7 +129,7 @@ namespace MHW_Editor.Skills {
         public const int Param_8_sortIndex = 500;
         [SortOrder(Param_8_sortIndex)]
         [DisplayName(Param_8_displayName)]
-        public ushort Param_8 {
+        public virtual ushort Param_8 {
             get => GetData<ushort>(25);
             set {
                 if (GetData<ushort>(25) == value) return;
@@ -133,5 +137,7 @@ namespace MHW_Editor.Skills {
                 OnPropertyChanged(nameof(Param_8));
             }
         }
+
+        public const int lastSortIndex = 550;
     }
 }
