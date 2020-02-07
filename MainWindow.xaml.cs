@@ -12,7 +12,6 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Forms;
 using System.Windows.Input;
 using JetBrains.Annotations;
 using MHW_Editor.Armors;
@@ -25,11 +24,7 @@ using MHW_Editor.Weapons;
 using MHW_Template;
 using MHW_Template.Models;
 using MHW_Template.Weapons;
-using Binding = System.Windows.Data.Binding;
-using ComboBox = System.Windows.Controls.ComboBox;
-using DataGridCell = System.Windows.Controls.DataGridCell;
-using MessageBox = System.Windows.MessageBox;
-using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
+using Microsoft.Win32;
 
 namespace MHW_Editor {
     public partial class MainWindow {
@@ -74,6 +69,7 @@ namespace MHW_Editor {
         private Type targetFileType;
         private Dictionary<string, ColumnHolder> columnMap;
         private bool isManualEditCommit;
+        public static Dictionary<ushort, IdNamePair> skillDatLookup = new Dictionary<ushort, IdNamePair>();
 
         public static string locale = "eng";
         public string Locale {
@@ -190,6 +186,9 @@ namespace MHW_Editor {
                 case nameof(DecoLottery.Item_Id):
                     e.Cancel = targetFileType.Is(typeof(DecoPercent));
                     break;
+                case nameof(SkillDat.Index):
+                    e.Cancel = targetFileType.Is(typeof(SkillDat));
+                    break;
                 case nameof(EqCrt.Mat_1_Id):
                 case nameof(EqCrt.Mat_2_Id):
                 case nameof(EqCrt.Mat_3_Id):
@@ -203,6 +202,10 @@ namespace MHW_Editor {
                 case nameof(Armor.Skill_3):
                 case nameof(Melee.Skill):
                 case nameof(PlantItem.Item):
+                case nameof(SkillDat.Unlock_Skill_1):
+                case nameof(SkillDat.Unlock_Skill_2):
+                case nameof(SkillDat.Unlock_Skill_3):
+                case nameof(SkillDat.Unlock_Skill_4):
                     e.Cancel = true; // Cancel for itemId/skillId columns as we will use a text version with onClick opening a selector.
                     break;
                 default:
@@ -327,6 +330,9 @@ namespace MHW_Editor {
                 case DataSourceType.Skills:
                     dataSource = DataHelper.skillData[locale];
                     break;
+                case DataSourceType.SkillDat:
+                    dataSource = skillDatLookup;
+                    break;
                 default: throw new ArgumentOutOfRangeException();
             }
 
@@ -354,14 +360,18 @@ namespace MHW_Editor {
         }
 
         private void Dg_items_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e) {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
             // Commit as cell edit ends instead of DG waiting till we leave the row.
             if (!isManualEditCommit) {
                 isManualEditCommit = true;
                 dg_items.CommitEdit(DataGridEditingUnit.Row, true);
                 isManualEditCommit = false;
             }
+
+            CalculatePercents();
+        }
+
+        private void CalculatePercents() {
+            if (string.IsNullOrEmpty(targetFile)) return;
 
             if (!targetFileType.Is(typeof(DecoPercent))) return;
 
@@ -395,17 +405,29 @@ namespace MHW_Editor {
             }
         }
 
+        private void FillSkillDatDictionary() {
+            // Makes the lookup table for skill dat unlock columns which reference themselves by index.
+            skillDatLookup = new Dictionary<ushort, IdNamePair>();
+            foreach (SkillDat item in items) {
+                skillDatLookup[(ushort) item.Index] = new IdNamePair((ushort) item.Index, item.Name_And_Id.name);
+            }
+        }
+
         private void Btn_open_Click(object sender, RoutedEventArgs e) {
             var target = Open();
             if (string.IsNullOrEmpty(target)) return;
             Load(target);
+
+            if (targetFileType.Is(typeof(SkillDat))) {
+                FillSkillDatDictionary();
+            }
 
             columnMap = new Dictionary<string, ColumnHolder>();
             dg_items.ItemsSource = null;
             dg_items.ItemsSource = new ListCollectionView(items);
 
             if (targetFileType.Is(typeof(DecoPercent))) {
-                Dg_items_CellEditEnding(null, null);
+                CalculatePercents();
             }
         }
 
@@ -751,10 +773,10 @@ namespace MHW_Editor {
             if (!targetFileType.Is(typeof(SkillDat))) return;
 
             foreach (SkillDat item in items) {
-                item.Param_1 = 0;
-                item.Param_2 = 0;
-                item.Param_3 = 0;
-                item.Param_4 = 0;
+                item.Unlock_Skill_1 = 0;
+                item.Unlock_Skill_2 = 0;
+                item.Unlock_Skill_3 = 0;
+                item.Unlock_Skill_4 = 0;
 
                 item.OnPropertyChanged();
             }

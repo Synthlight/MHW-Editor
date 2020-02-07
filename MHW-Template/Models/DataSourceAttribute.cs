@@ -11,6 +11,7 @@ namespace MHW_Template.Models {
 
     public enum DataSourceType {
         Items,
-        Skills
+        Skills,
+        SkillDat
     }
 }

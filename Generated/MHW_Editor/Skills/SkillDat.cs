@@ -26,55 +26,59 @@ namespace MHW_Editor.Skills {
             get => GetData<byte>(2);
         }
 
-        public const string Param_1_displayName = "Param 1";
-        public const int Param_1_sortIndex = 150;
-        [SortOrder(Param_1_sortIndex)]
-        [DisplayName(Param_1_displayName)]
-        public uint Param_1 {
+        public const string Unlock_Skill_1_displayName = "Unlock Skill 1";
+        public const int Unlock_Skill_1_sortIndex = 150;
+        [SortOrder(Unlock_Skill_1_sortIndex)]
+        [DisplayName(Unlock_Skill_1_displayName)]
+        [DataSource(DataSourceType.Skills)]
+        public uint Unlock_Skill_1 {
             get => GetData<uint>(3);
             set {
                 if (GetData<uint>(3) == value) return;
                 SetData(3, value);
-                OnPropertyChanged(nameof(Param_1));
+                OnPropertyChanged(nameof(Unlock_Skill_1));
             }
         }
 
-        public const string Param_2_displayName = "Param 2";
-        public const int Param_2_sortIndex = 200;
-        [SortOrder(Param_2_sortIndex)]
-        [DisplayName(Param_2_displayName)]
-        public uint Param_2 {
+        public const string Unlock_Skill_2_displayName = "Unlock Skill 2";
+        public const int Unlock_Skill_2_sortIndex = 200;
+        [SortOrder(Unlock_Skill_2_sortIndex)]
+        [DisplayName(Unlock_Skill_2_displayName)]
+        [DataSource(DataSourceType.Skills)]
+        public uint Unlock_Skill_2 {
             get => GetData<uint>(7);
             set {
                 if (GetData<uint>(7) == value) return;
                 SetData(7, value);
-                OnPropertyChanged(nameof(Param_2));
+                OnPropertyChanged(nameof(Unlock_Skill_2));
             }
         }
 
-        public const string Param_3_displayName = "Param 3";
-        public const int Param_3_sortIndex = 250;
-        [SortOrder(Param_3_sortIndex)]
-        [DisplayName(Param_3_displayName)]
-        public uint Param_3 {
+        public const string Unlock_Skill_3_displayName = "Unlock Skill 3";
+        public const int Unlock_Skill_3_sortIndex = 250;
+        [SortOrder(Unlock_Skill_3_sortIndex)]
+        [DisplayName(Unlock_Skill_3_displayName)]
+        [DataSource(DataSourceType.Skills)]
+        public uint Unlock_Skill_3 {
             get => GetData<uint>(11);
             set {
                 if (GetData<uint>(11) == value) return;
                 SetData(11, value);
-                OnPropertyChanged(nameof(Param_3));
+                OnPropertyChanged(nameof(Unlock_Skill_3));
             }
         }
 
-        public const string Param_4_displayName = "Param 4";
-        public const int Param_4_sortIndex = 300;
-        [SortOrder(Param_4_sortIndex)]
-        [DisplayName(Param_4_displayName)]
-        public uint Param_4 {
+        public const string Unlock_Skill_4_displayName = "Unlock Skill 4";
+        public const int Unlock_Skill_4_sortIndex = 300;
+        [SortOrder(Unlock_Skill_4_sortIndex)]
+        [DisplayName(Unlock_Skill_4_displayName)]
+        [DataSource(DataSourceType.Skills)]
+        public uint Unlock_Skill_4 {
             get => GetData<uint>(15);
             set {
                 if (GetData<uint>(15) == value) return;
                 SetData(15, value);
-                OnPropertyChanged(nameof(Param_4));
+                OnPropertyChanged(nameof(Unlock_Skill_4));
             }
         }
 
