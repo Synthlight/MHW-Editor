@@ -18,7 +18,7 @@ namespace MHW_Editor.Skills {
 
         public override string Name => "None";
 
-        [SortOrder(Param_11_sortIndex + 1)]
+        [SortOrder(Param_8_sortIndex + 1)]
         public string Description => DataHelper.skillDataDescriptions[MainWindow.locale].TryGet(Id, "Unknown");
     }
 

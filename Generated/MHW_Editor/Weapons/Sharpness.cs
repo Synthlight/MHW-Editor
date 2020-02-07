@@ -1,4 +1,3 @@
-
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -11,16 +10,16 @@ namespace MHW_Editor.Weapons {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        protected const string Id_displayName = "Id";
-        protected const int Id_sortIndex = 50;
+        public const string Id_displayName = "Id";
+        public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
         public uint Id {
             get => GetData<uint>(0);
         }
 
-        protected const string Red_displayName = "Red";
-        protected const int Red_sortIndex = 100;
+        public const string Red_displayName = "Red";
+        public const int Red_sortIndex = 100;
         [SortOrder(Red_sortIndex)]
         [DisplayName(Red_displayName)]
         public ushort Red {
@@ -32,8 +31,8 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        protected const string Orange_displayName = "Orange";
-        protected const int Orange_sortIndex = 150;
+        public const string Orange_displayName = "Orange";
+        public const int Orange_sortIndex = 150;
         [SortOrder(Orange_sortIndex)]
         [DisplayName(Orange_displayName)]
         public ushort Orange {
@@ -45,8 +44,8 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        protected const string Yellow_displayName = "Yellow";
-        protected const int Yellow_sortIndex = 200;
+        public const string Yellow_displayName = "Yellow";
+        public const int Yellow_sortIndex = 200;
         [SortOrder(Yellow_sortIndex)]
         [DisplayName(Yellow_displayName)]
         public ushort Yellow {
@@ -58,8 +57,8 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        protected const string Green_displayName = "Green";
-        protected const int Green_sortIndex = 250;
+        public const string Green_displayName = "Green";
+        public const int Green_sortIndex = 250;
         [SortOrder(Green_sortIndex)]
         [DisplayName(Green_displayName)]
         public ushort Green {
@@ -71,8 +70,8 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        protected const string Blue_displayName = "Blue";
-        protected const int Blue_sortIndex = 300;
+        public const string Blue_displayName = "Blue";
+        public const int Blue_sortIndex = 300;
         [SortOrder(Blue_sortIndex)]
         [DisplayName(Blue_displayName)]
         public ushort Blue {
@@ -84,8 +83,8 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        protected const string White_displayName = "White";
-        protected const int White_sortIndex = 350;
+        public const string White_displayName = "White";
+        public const int White_sortIndex = 350;
         [SortOrder(White_sortIndex)]
         [DisplayName(White_displayName)]
         public ushort White {
@@ -97,8 +96,8 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        protected const string Purple_displayName = "Purple";
-        protected const int Purple_sortIndex = 400;
+        public const string Purple_displayName = "Purple";
+        public const int Purple_sortIndex = 400;
         [SortOrder(Purple_sortIndex)]
         [DisplayName(Purple_displayName)]
         public ushort Purple {

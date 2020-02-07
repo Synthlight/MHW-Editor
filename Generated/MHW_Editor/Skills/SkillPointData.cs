@@ -1,4 +1,3 @@
-
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -11,8 +10,8 @@ namespace MHW_Editor.Skills {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        protected const string Unknown_uint8_1_displayName = "Unknown (uint8) 1";
-        protected const int Unknown_uint8_1_sortIndex = 50;
+        public const string Unknown_uint8_1_displayName = "Unknown (uint8) 1";
+        public const int Unknown_uint8_1_sortIndex = 50;
         [SortOrder(Unknown_uint8_1_sortIndex)]
         [DisplayName(Unknown_uint8_1_displayName)]
         public byte Unknown_uint8_1 {
@@ -24,8 +23,8 @@ namespace MHW_Editor.Skills {
             }
         }
 
-        protected const string Unknown_uint8_2_displayName = "Unknown (uint8) 2";
-        protected const int Unknown_uint8_2_sortIndex = 100;
+        public const string Unknown_uint8_2_displayName = "Unknown (uint8) 2";
+        public const int Unknown_uint8_2_sortIndex = 100;
         [SortOrder(Unknown_uint8_2_sortIndex)]
         [DisplayName(Unknown_uint8_2_displayName)]
         public byte Unknown_uint8_2 {

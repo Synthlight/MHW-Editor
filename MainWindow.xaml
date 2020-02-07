@@ -143,7 +143,7 @@
                     <EventSetter Event="PreviewMouseLeftButtonDown"
                                  Handler="Dg_items_cell_MouseClick"/>
                     <EventSetter Event="MouseDoubleClick"
-                                 Handler="Dg_items_cell_MouseClick"/>
+                                 Handler="Dg_items_cell_MouseClick" />
                 </Style>
             </DataGrid.Resources>
         </DataGrid>

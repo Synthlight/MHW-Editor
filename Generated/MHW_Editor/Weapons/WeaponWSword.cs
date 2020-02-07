@@ -1,4 +1,3 @@
-
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -11,16 +10,16 @@ namespace MHW_Editor.Weapons {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        protected const string Id_displayName = "Id";
-        protected const int Id_sortIndex = 50;
+        public const string Id_displayName = "Id";
+        public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
         public uint Id {
             get => GetData<uint>(0);
         }
 
-        protected const string Element_1_Type_displayName = "Element 1 Type";
-        protected const int Element_1_Type_sortIndex = 100;
+        public const string Element_1_Type_displayName = "Element 1 Type";
+        public const int Element_1_Type_sortIndex = 100;
         [SortOrder(Element_1_Type_sortIndex)]
         [DisplayName(Element_1_Type_displayName)]
         public MHW_Template.Weapons.Element Element_1_Type {
@@ -32,8 +31,8 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        protected const string Element_1_Dmg_displayName = "Element 1 Dmg";
-        protected const int Element_1_Dmg_sortIndex = 150;
+        public const string Element_1_Dmg_displayName = "Element 1 Dmg";
+        public const int Element_1_Dmg_sortIndex = 150;
         [SortOrder(Element_1_Dmg_sortIndex)]
         [DisplayName(Element_1_Dmg_displayName)]
         public short Element_1_Dmg {
@@ -45,8 +44,8 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        protected const string Element_2_Type_displayName = "Element 2 Type";
-        protected const int Element_2_Type_sortIndex = 200;
+        public const string Element_2_Type_displayName = "Element 2 Type";
+        public const int Element_2_Type_sortIndex = 200;
         [SortOrder(Element_2_Type_sortIndex)]
         [DisplayName(Element_2_Type_displayName)]
         public MHW_Template.Weapons.Element Element_2_Type {
@@ -58,8 +57,8 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        protected const string Element_2_Dmg_displayName = "Element 2 Dmg";
-        protected const int Element_2_Dmg_sortIndex = 250;
+        public const string Element_2_Dmg_displayName = "Element 2 Dmg";
+        public const int Element_2_Dmg_sortIndex = 250;
         [SortOrder(Element_2_Dmg_sortIndex)]
         [DisplayName(Element_2_Dmg_displayName)]
         public short Element_2_Dmg {

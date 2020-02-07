@@ -1,4 +1,3 @@
-
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -11,8 +10,8 @@ namespace MHW_Editor.Items {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        protected const string Unknown_int16_1_displayName = "Unknown (int16) 1";
-        protected const int Unknown_int16_1_sortIndex = 50;
+        public const string Unknown_int16_1_displayName = "Unknown (int16) 1";
+        public const int Unknown_int16_1_sortIndex = 50;
         [SortOrder(Unknown_int16_1_sortIndex)]
         [DisplayName(Unknown_int16_1_displayName)]
         public short Unknown_int16_1 {
@@ -24,8 +23,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_int16_2_displayName = "Unknown (int16) 2";
-        protected const int Unknown_int16_2_sortIndex = 100;
+        public const string Unknown_int16_2_displayName = "Unknown (int16) 2";
+        public const int Unknown_int16_2_sortIndex = 100;
         [SortOrder(Unknown_int16_2_sortIndex)]
         [DisplayName(Unknown_int16_2_displayName)]
         public short Unknown_int16_2 {
@@ -37,8 +36,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_int16_3_displayName = "Unknown (int16) 3";
-        protected const int Unknown_int16_3_sortIndex = 150;
+        public const string Unknown_int16_3_displayName = "Unknown (int16) 3";
+        public const int Unknown_int16_3_sortIndex = 150;
         [SortOrder(Unknown_int16_3_sortIndex)]
         [DisplayName(Unknown_int16_3_displayName)]
         public short Unknown_int16_3 {
@@ -50,8 +49,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_int16_4_displayName = "Unknown (int16) 4";
-        protected const int Unknown_int16_4_sortIndex = 200;
+        public const string Unknown_int16_4_displayName = "Unknown (int16) 4";
+        public const int Unknown_int16_4_sortIndex = 200;
         [SortOrder(Unknown_int16_4_sortIndex)]
         [DisplayName(Unknown_int16_4_displayName)]
         public short Unknown_int16_4 {
@@ -63,8 +62,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_int16_5_displayName = "Unknown (int16) 5";
-        protected const int Unknown_int16_5_sortIndex = 250;
+        public const string Unknown_int16_5_displayName = "Unknown (int16) 5";
+        public const int Unknown_int16_5_sortIndex = 250;
         [SortOrder(Unknown_int16_5_sortIndex)]
         [DisplayName(Unknown_int16_5_displayName)]
         public short Unknown_int16_5 {
@@ -76,8 +75,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_int16_6_displayName = "Unknown (int16) 6";
-        protected const int Unknown_int16_6_sortIndex = 300;
+        public const string Unknown_int16_6_displayName = "Unknown (int16) 6";
+        public const int Unknown_int16_6_sortIndex = 300;
         [SortOrder(Unknown_int16_6_sortIndex)]
         [DisplayName(Unknown_int16_6_displayName)]
         public short Unknown_int16_6 {
@@ -89,8 +88,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_int16_7_displayName = "Unknown (int16) 7";
-        protected const int Unknown_int16_7_sortIndex = 350;
+        public const string Unknown_int16_7_displayName = "Unknown (int16) 7";
+        public const int Unknown_int16_7_sortIndex = 350;
         [SortOrder(Unknown_int16_7_sortIndex)]
         [DisplayName(Unknown_int16_7_displayName)]
         public short Unknown_int16_7 {
@@ -102,8 +101,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_int16_8_displayName = "Unknown (int16) 8";
-        protected const int Unknown_int16_8_sortIndex = 400;
+        public const string Unknown_int16_8_displayName = "Unknown (int16) 8";
+        public const int Unknown_int16_8_sortIndex = 400;
         [SortOrder(Unknown_int16_8_sortIndex)]
         [DisplayName(Unknown_int16_8_displayName)]
         public short Unknown_int16_8 {
@@ -115,8 +114,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_int16_9_displayName = "Unknown (int16) 9";
-        protected const int Unknown_int16_9_sortIndex = 450;
+        public const string Unknown_int16_9_displayName = "Unknown (int16) 9";
+        public const int Unknown_int16_9_sortIndex = 450;
         [SortOrder(Unknown_int16_9_sortIndex)]
         [DisplayName(Unknown_int16_9_displayName)]
         public short Unknown_int16_9 {
@@ -128,8 +127,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_int16_10_displayName = "Unknown (int16) 10";
-        protected const int Unknown_int16_10_sortIndex = 500;
+        public const string Unknown_int16_10_displayName = "Unknown (int16) 10";
+        public const int Unknown_int16_10_sortIndex = 500;
         [SortOrder(Unknown_int16_10_sortIndex)]
         [DisplayName(Unknown_int16_10_displayName)]
         public short Unknown_int16_10 {
@@ -141,8 +140,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_int16_11_displayName = "Unknown (int16) 11";
-        protected const int Unknown_int16_11_sortIndex = 550;
+        public const string Unknown_int16_11_displayName = "Unknown (int16) 11";
+        public const int Unknown_int16_11_sortIndex = 550;
         [SortOrder(Unknown_int16_11_sortIndex)]
         [DisplayName(Unknown_int16_11_displayName)]
         public short Unknown_int16_11 {

@@ -5,7 +5,7 @@ using MHW_Editor.Models;
 using MHW_Template;
 
 namespace MHW_Editor.Gems {
-    public partial class DecoGradeLottery : MhwItem {
+    public partial class DecoGradeLottery : DecoPercent {
         public DecoGradeLottery(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 

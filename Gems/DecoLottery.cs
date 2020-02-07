@@ -5,7 +5,7 @@ using MHW_Editor.Models;
 using MHW_Template;
 
 namespace MHW_Editor.Gems {
-    public partial class DecoLottery : MhwItem {
+    public partial class DecoLottery : DecoPercent {
         public DecoLottery(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 

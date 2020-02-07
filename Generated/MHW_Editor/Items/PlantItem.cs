@@ -1,4 +1,3 @@
-
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -11,8 +10,8 @@ namespace MHW_Editor.Items {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        protected const string Cultivation_category_displayName = "Cultivation category";
-        protected const int Cultivation_category_sortIndex = 50;
+        public const string Cultivation_category_displayName = "Cultivation category";
+        public const int Cultivation_category_sortIndex = 50;
         [SortOrder(Cultivation_category_sortIndex)]
         [DisplayName(Cultivation_category_displayName)]
         public MHW_Template.Items.CultivationCategory Cultivation_category {
@@ -24,8 +23,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unlocked_from_start_Raw_displayName = "Unlocked from start Raw";
-        protected const int Unlocked_from_start_Raw_sortIndex = 100;
+        public const string Unlocked_from_start_Raw_displayName = "Unlocked from start Raw";
+        public const int Unlocked_from_start_Raw_sortIndex = 100;
         [SortOrder(Unlocked_from_start_Raw_sortIndex)]
         [DisplayName(Unlocked_from_start_Raw_displayName)]
         protected byte Unlocked_from_start_Raw {
@@ -37,8 +36,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Item_displayName = "Item";
-        protected const int Item_sortIndex = 150;
+        public const string Item_displayName = "Item";
+        public const int Item_sortIndex = 150;
         [SortOrder(Item_sortIndex)]
         [DisplayName(Item_displayName)]
         [DataSource(DataSourceType.Items)]
@@ -51,8 +50,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Required_time_displayName = "Required time";
-        protected const int Required_time_sortIndex = 200;
+        public const string Required_time_displayName = "Required time";
+        public const int Required_time_sortIndex = 200;
         [SortOrder(Required_time_sortIndex)]
         [DisplayName(Required_time_displayName)]
         public uint Required_time {
@@ -64,8 +63,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Catalyst_time_bonus_displayName = "Catalyst time bonus";
-        protected const int Catalyst_time_bonus_sortIndex = 250;
+        public const string Catalyst_time_bonus_displayName = "Catalyst time bonus";
+        public const int Catalyst_time_bonus_sortIndex = 250;
         [SortOrder(Catalyst_time_bonus_sortIndex)]
         [DisplayName(Catalyst_time_bonus_displayName)]
         public uint Catalyst_time_bonus {
@@ -77,8 +76,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Amount_Base__displayName = "Amount (Base)";
-        protected const int Amount_Base__sortIndex = 300;
+        public const string Amount_Base__displayName = "Amount (Base)";
+        public const int Amount_Base__sortIndex = 300;
         [SortOrder(Amount_Base__sortIndex)]
         [DisplayName(Amount_Base__displayName)]
         public uint Amount_Base_ {
@@ -90,8 +89,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Amount_1__displayName = "Amount (+1)";
-        protected const int Amount_1__sortIndex = 350;
+        public const string Amount_1__displayName = "Amount (+1)";
+        public const int Amount_1__sortIndex = 350;
         [SortOrder(Amount_1__sortIndex)]
         [DisplayName(Amount_1__displayName)]
         public uint Amount_1_ {
@@ -103,8 +102,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Amount_2__displayName = "Amount (+2)";
-        protected const int Amount_2__sortIndex = 400;
+        public const string Amount_2__displayName = "Amount (+2)";
+        public const int Amount_2__sortIndex = 400;
         [SortOrder(Amount_2__sortIndex)]
         [DisplayName(Amount_2__displayName)]
         public uint Amount_2_ {
@@ -116,8 +115,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_int32_1_displayName = "Unknown (int32) 1";
-        protected const int Unknown_int32_1_sortIndex = 450;
+        public const string Unknown_int32_1_displayName = "Unknown (int32) 1";
+        public const int Unknown_int32_1_sortIndex = 450;
         [SortOrder(Unknown_int32_1_sortIndex)]
         [DisplayName(Unknown_int32_1_displayName)]
         public uint Unknown_int32_1 {

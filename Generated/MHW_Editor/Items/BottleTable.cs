@@ -1,4 +1,3 @@
-
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -11,8 +10,8 @@ namespace MHW_Editor.Items {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        protected const string Close_Range_displayName = "Close Range";
-        protected const int Close_Range_sortIndex = 50;
+        public const string Close_Range_displayName = "Close Range";
+        public const int Close_Range_sortIndex = 50;
         [SortOrder(Close_Range_sortIndex)]
         [DisplayName(Close_Range_displayName)]
         public MHW_Template.Weapons.CoatingType Close_Range {
@@ -24,8 +23,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Power_displayName = "Power";
-        protected const int Power_sortIndex = 100;
+        public const string Power_displayName = "Power";
+        public const int Power_sortIndex = 100;
         [SortOrder(Power_sortIndex)]
         [DisplayName(Power_displayName)]
         public MHW_Template.Weapons.CoatingType Power {
@@ -37,8 +36,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Paralysis_displayName = "Paralysis";
-        protected const int Paralysis_sortIndex = 150;
+        public const string Paralysis_displayName = "Paralysis";
+        public const int Paralysis_sortIndex = 150;
         [SortOrder(Paralysis_sortIndex)]
         [DisplayName(Paralysis_displayName)]
         public MHW_Template.Weapons.CoatingType Paralysis {
@@ -50,8 +49,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Poison_displayName = "Poison";
-        protected const int Poison_sortIndex = 200;
+        public const string Poison_displayName = "Poison";
+        public const int Poison_sortIndex = 200;
         [SortOrder(Poison_sortIndex)]
         [DisplayName(Poison_displayName)]
         public MHW_Template.Weapons.CoatingType Poison {
@@ -63,8 +62,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Sleep_displayName = "Sleep";
-        protected const int Sleep_sortIndex = 250;
+        public const string Sleep_displayName = "Sleep";
+        public const int Sleep_sortIndex = 250;
         [SortOrder(Sleep_sortIndex)]
         [DisplayName(Sleep_displayName)]
         public MHW_Template.Weapons.CoatingType Sleep {
@@ -76,8 +75,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Blast_displayName = "Blast";
-        protected const int Blast_sortIndex = 300;
+        public const string Blast_displayName = "Blast";
+        public const int Blast_sortIndex = 300;
         [SortOrder(Blast_sortIndex)]
         [DisplayName(Blast_displayName)]
         public MHW_Template.Weapons.CoatingType Blast {

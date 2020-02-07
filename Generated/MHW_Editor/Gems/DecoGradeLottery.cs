@@ -1,4 +1,3 @@
-
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -11,24 +10,24 @@ namespace MHW_Editor.Gems {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        protected const string Index_displayName = "Index";
-        protected const int Index_sortIndex = 50;
+        public const string Index_displayName = "Index";
+        public const int Index_sortIndex = 50;
         [SortOrder(Index_sortIndex)]
         [DisplayName(Index_displayName)]
         private uint Index {
             get => GetData<uint>(0);
         }
 
-        protected const string Item_Id_displayName = "Item Id";
-        protected const int Item_Id_sortIndex = 100;
+        public const string Item_Id_displayName = "Item Id";
+        public const int Item_Id_sortIndex = 100;
         [SortOrder(Item_Id_sortIndex)]
         [DisplayName(Item_Id_displayName)]
         public uint Item_Id {
             get => GetData<uint>(4);
         }
 
-        protected const string R5_displayName = "R5";
-        protected const int R5_sortIndex = 150;
+        public const string R5_displayName = "R5";
+        public const int R5_sortIndex = 150;
         [SortOrder(R5_sortIndex)]
         [DisplayName(R5_displayName)]
         public uint R5 {
@@ -40,8 +39,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string R6_displayName = "R6";
-        protected const int R6_sortIndex = 200;
+        public const string R6_displayName = "R6";
+        public const int R6_sortIndex = 200;
         [SortOrder(R6_sortIndex)]
         [DisplayName(R6_displayName)]
         public uint R6 {
@@ -53,8 +52,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string R7_displayName = "R7";
-        protected const int R7_sortIndex = 250;
+        public const string R7_displayName = "R7";
+        public const int R7_sortIndex = 250;
         [SortOrder(R7_sortIndex)]
         [DisplayName(R7_displayName)]
         public uint R7 {
@@ -66,8 +65,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string R8_displayName = "R8";
-        protected const int R8_sortIndex = 300;
+        public const string R8_displayName = "R8";
+        public const int R8_sortIndex = 300;
         [SortOrder(R8_sortIndex)]
         [DisplayName(R8_displayName)]
         public uint R8 {
@@ -79,8 +78,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string R9_displayName = "R9";
-        protected const int R9_sortIndex = 350;
+        public const string R9_displayName = "R9";
+        public const int R9_sortIndex = 350;
         [SortOrder(R9_sortIndex)]
         [DisplayName(R9_displayName)]
         public uint R9 {
@@ -92,8 +91,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string R10_displayName = "R10";
-        protected const int R10_sortIndex = 400;
+        public const string R10_displayName = "R10";
+        public const int R10_sortIndex = 400;
         [SortOrder(R10_sortIndex)]
         [DisplayName(R10_displayName)]
         public uint R10 {
@@ -105,8 +104,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string R11_displayName = "R11";
-        protected const int R11_sortIndex = 450;
+        public const string R11_displayName = "R11";
+        public const int R11_sortIndex = 450;
         [SortOrder(R11_sortIndex)]
         [DisplayName(R11_displayName)]
         public uint R11 {
@@ -118,8 +117,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string R12_displayName = "R12";
-        protected const int R12_sortIndex = 500;
+        public const string R12_displayName = "R12";
+        public const int R12_sortIndex = 500;
         [SortOrder(R12_sortIndex)]
         [DisplayName(R12_displayName)]
         public uint R12 {
@@ -131,8 +130,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string R13_displayName = "R13";
-        protected const int R13_sortIndex = 550;
+        public const string R13_displayName = "R13";
+        public const int R13_sortIndex = 550;
         [SortOrder(R13_sortIndex)]
         [DisplayName(R13_displayName)]
         public uint R13 {
@@ -144,8 +143,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string Unknown_uint32_1_displayName = "Unknown (uint32) 1";
-        protected const int Unknown_uint32_1_sortIndex = 600;
+        public const string Unknown_uint32_1_displayName = "Unknown (uint32) 1";
+        public const int Unknown_uint32_1_sortIndex = 600;
         [SortOrder(Unknown_uint32_1_sortIndex)]
         [DisplayName(Unknown_uint32_1_displayName)]
         public uint Unknown_uint32_1 {
@@ -157,8 +156,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string Unknown_uint32_2_displayName = "Unknown (uint32) 2";
-        protected const int Unknown_uint32_2_sortIndex = 650;
+        public const string Unknown_uint32_2_displayName = "Unknown (uint32) 2";
+        public const int Unknown_uint32_2_sortIndex = 650;
         [SortOrder(Unknown_uint32_2_sortIndex)]
         [DisplayName(Unknown_uint32_2_displayName)]
         public uint Unknown_uint32_2 {

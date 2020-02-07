@@ -1,4 +1,3 @@
-
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -11,8 +10,8 @@ namespace MHW_Editor.Items {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        protected const string Item_Category_displayName = "Item Category";
-        protected const int Item_Category_sortIndex = 50;
+        public const string Item_Category_displayName = "Item Category";
+        public const int Item_Category_sortIndex = 50;
         [SortOrder(Item_Category_sortIndex)]
         [DisplayName(Item_Category_displayName)]
         public byte Item_Category {
@@ -24,8 +23,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string External_Item_Index_displayName = "External Item Index";
-        protected const int External_Item_Index_sortIndex = 100;
+        public const string External_Item_Index_displayName = "External Item Index";
+        public const int External_Item_Index_sortIndex = 100;
         [SortOrder(External_Item_Index_sortIndex)]
         [DisplayName(External_Item_Index_displayName)]
         public ushort External_Item_Index {
@@ -37,8 +36,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_uint16_1_displayName = "Unknown (uint16) 1";
-        protected const int Unknown_uint16_1_sortIndex = 150;
+        public const string Unknown_uint16_1_displayName = "Unknown (uint16) 1";
+        public const int Unknown_uint16_1_sortIndex = 150;
         [SortOrder(Unknown_uint16_1_sortIndex)]
         [DisplayName(Unknown_uint16_1_displayName)]
         public ushort Unknown_uint16_1 {
@@ -50,8 +49,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_int32_2_displayName = "Unknown (int32) 2";
-        protected const int Unknown_int32_2_sortIndex = 200;
+        public const string Unknown_int32_2_displayName = "Unknown (int32) 2";
+        public const int Unknown_int32_2_sortIndex = 200;
         [SortOrder(Unknown_int32_2_sortIndex)]
         [DisplayName(Unknown_int32_2_displayName)]
         public int Unknown_int32_2 {
@@ -63,8 +62,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Story_Unlock_displayName = "Story Unlock";
-        protected const int Story_Unlock_sortIndex = 250;
+        public const string Story_Unlock_displayName = "Story Unlock";
+        public const int Story_Unlock_sortIndex = 250;
         [SortOrder(Story_Unlock_sortIndex)]
         [DisplayName(Story_Unlock_displayName)]
         public uint Story_Unlock {
@@ -76,8 +75,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Item_Rank_displayName = "Item Rank";
-        protected const int Item_Rank_sortIndex = 300;
+        public const string Item_Rank_displayName = "Item Rank";
+        public const int Item_Rank_sortIndex = 300;
         [SortOrder(Item_Rank_sortIndex)]
         [DisplayName(Item_Rank_displayName)]
         public uint Item_Rank {
@@ -89,8 +88,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Mat_1_Id_displayName = "Mat 1 Id";
-        protected const int Mat_1_Id_sortIndex = 350;
+        public const string Mat_1_Id_displayName = "Mat 1 Id";
+        public const int Mat_1_Id_sortIndex = 350;
         [SortOrder(Mat_1_Id_sortIndex)]
         [DisplayName(Mat_1_Id_displayName)]
         [DataSource(DataSourceType.Items)]
@@ -103,8 +102,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Mat_1_Count_displayName = "Mat 1 Count";
-        protected const int Mat_1_Count_sortIndex = 400;
+        public const string Mat_1_Count_displayName = "Mat 1 Count";
+        public const int Mat_1_Count_sortIndex = 400;
         [SortOrder(Mat_1_Count_sortIndex)]
         [DisplayName(Mat_1_Count_displayName)]
         public byte Mat_1_Count {
@@ -116,8 +115,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Mat_2_Id_displayName = "Mat 2 Id";
-        protected const int Mat_2_Id_sortIndex = 450;
+        public const string Mat_2_Id_displayName = "Mat 2 Id";
+        public const int Mat_2_Id_sortIndex = 450;
         [SortOrder(Mat_2_Id_sortIndex)]
         [DisplayName(Mat_2_Id_displayName)]
         [DataSource(DataSourceType.Items)]
@@ -130,8 +129,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Mat_2_Count_displayName = "Mat 2 Count";
-        protected const int Mat_2_Count_sortIndex = 500;
+        public const string Mat_2_Count_displayName = "Mat 2 Count";
+        public const int Mat_2_Count_sortIndex = 500;
         [SortOrder(Mat_2_Count_sortIndex)]
         [DisplayName(Mat_2_Count_displayName)]
         public byte Mat_2_Count {
@@ -143,8 +142,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Mat_3_Id_displayName = "Mat 3 Id";
-        protected const int Mat_3_Id_sortIndex = 550;
+        public const string Mat_3_Id_displayName = "Mat 3 Id";
+        public const int Mat_3_Id_sortIndex = 550;
         [SortOrder(Mat_3_Id_sortIndex)]
         [DisplayName(Mat_3_Id_displayName)]
         [DataSource(DataSourceType.Items)]
@@ -157,8 +156,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Mat_3_Count_displayName = "Mat 3 Count";
-        protected const int Mat_3_Count_sortIndex = 600;
+        public const string Mat_3_Count_displayName = "Mat 3 Count";
+        public const int Mat_3_Count_sortIndex = 600;
         [SortOrder(Mat_3_Count_sortIndex)]
         [DisplayName(Mat_3_Count_displayName)]
         public byte Mat_3_Count {
@@ -170,8 +169,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Mat_4_Id_displayName = "Mat 4 Id";
-        protected const int Mat_4_Id_sortIndex = 650;
+        public const string Mat_4_Id_displayName = "Mat 4 Id";
+        public const int Mat_4_Id_sortIndex = 650;
         [SortOrder(Mat_4_Id_sortIndex)]
         [DisplayName(Mat_4_Id_displayName)]
         [DataSource(DataSourceType.Items)]
@@ -184,8 +183,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Mat_4_Count_displayName = "Mat 4 Count";
-        protected const int Mat_4_Count_sortIndex = 700;
+        public const string Mat_4_Count_displayName = "Mat 4 Count";
+        public const int Mat_4_Count_sortIndex = 700;
         [SortOrder(Mat_4_Count_sortIndex)]
         [DisplayName(Mat_4_Count_displayName)]
         public byte Mat_4_Count {
@@ -197,8 +196,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Child_index_1_displayName = "Child index 1";
-        protected const int Child_index_1_sortIndex = 750;
+        public const string Child_index_1_displayName = "Child index 1";
+        public const int Child_index_1_sortIndex = 750;
         [SortOrder(Child_index_1_sortIndex)]
         [DisplayName(Child_index_1_displayName)]
         public ushort Child_index_1 {
@@ -210,8 +209,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Child_index_2_displayName = "Child index 2";
-        protected const int Child_index_2_sortIndex = 800;
+        public const string Child_index_2_displayName = "Child index 2";
+        public const int Child_index_2_sortIndex = 800;
         [SortOrder(Child_index_2_sortIndex)]
         [DisplayName(Child_index_2_displayName)]
         public ushort Child_index_2 {
@@ -223,8 +222,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Child_index_3_displayName = "Child index 3";
-        protected const int Child_index_3_sortIndex = 850;
+        public const string Child_index_3_displayName = "Child index 3";
+        public const int Child_index_3_sortIndex = 850;
         [SortOrder(Child_index_3_sortIndex)]
         [DisplayName(Child_index_3_displayName)]
         public ushort Child_index_3 {
@@ -236,8 +235,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Child_index_4_displayName = "Child index 4";
-        protected const int Child_index_4_sortIndex = 900;
+        public const string Child_index_4_displayName = "Child index 4";
+        public const int Child_index_4_sortIndex = 900;
         [SortOrder(Child_index_4_sortIndex)]
         [DisplayName(Child_index_4_displayName)]
         public ushort Child_index_4 {

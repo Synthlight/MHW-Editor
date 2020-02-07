@@ -1,4 +1,3 @@
-
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -11,16 +10,16 @@ namespace MHW_Editor.Items {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        protected const string Id_displayName = "Id";
-        protected const int Id_sortIndex = 50;
+        public const string Id_displayName = "Id";
+        public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
         public uint Id {
             get => GetData<uint>(0);
         }
 
-        protected const string Sub_Type_displayName = "Sub Type";
-        protected const int Sub_Type_sortIndex = 100;
+        public const string Sub_Type_displayName = "Sub Type";
+        public const int Sub_Type_sortIndex = 100;
         [SortOrder(Sub_Type_sortIndex)]
         [DisplayName(Sub_Type_displayName)]
         public MHW_Template.Items.ItemSubType Sub_Type {
@@ -32,8 +31,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Type_displayName = "Type";
-        protected const int Type_sortIndex = 150;
+        public const string Type_displayName = "Type";
+        public const int Type_sortIndex = 150;
         [SortOrder(Type_sortIndex)]
         [DisplayName(Type_displayName)]
         public MHW_Template.Items.ItemType Type {
@@ -45,8 +44,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Rarity_displayName = "Rarity";
-        protected const int Rarity_sortIndex = 200;
+        public const string Rarity_displayName = "Rarity";
+        public const int Rarity_sortIndex = 200;
         [SortOrder(Rarity_sortIndex)]
         [DisplayName(Rarity_displayName)]
         public byte Rarity {
@@ -58,8 +57,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Carry_Limit_displayName = "Carry Limit";
-        protected const int Carry_Limit_sortIndex = 250;
+        public const string Carry_Limit_displayName = "Carry Limit";
+        public const int Carry_Limit_sortIndex = 250;
         [SortOrder(Carry_Limit_sortIndex)]
         [DisplayName(Carry_Limit_displayName)]
         public byte Carry_Limit {
@@ -71,8 +70,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Unknown_uint8__displayName = "Unknown (uint8)";
-        protected const int Unknown_uint8__sortIndex = 300;
+        public const string Unknown_uint8__displayName = "Unknown (uint8)";
+        public const int Unknown_uint8__sortIndex = 300;
         [SortOrder(Unknown_uint8__sortIndex)]
         [DisplayName(Unknown_uint8__displayName)]
         public byte Unknown_uint8_ {
@@ -84,8 +83,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Sort_Order_displayName = "Sort Order";
-        protected const int Sort_Order_sortIndex = 350;
+        public const string Sort_Order_displayName = "Sort Order";
+        public const int Sort_Order_sortIndex = 350;
         [SortOrder(Sort_Order_sortIndex)]
         [DisplayName(Sort_Order_displayName)]
         public ushort Sort_Order {
@@ -97,8 +96,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Icon_Id_displayName = "Icon Id";
-        protected const int Icon_Id_sortIndex = 400;
+        public const string Icon_Id_displayName = "Icon Id";
+        public const int Icon_Id_sortIndex = 400;
         [SortOrder(Icon_Id_sortIndex)]
         [DisplayName(Icon_Id_displayName)]
         public uint Icon_Id {
@@ -110,8 +109,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Icon_Color_Id_displayName = "Icon Color Id";
-        protected const int Icon_Color_Id_sortIndex = 450;
+        public const string Icon_Color_Id_displayName = "Icon Color Id";
+        public const int Icon_Color_Id_sortIndex = 450;
         [SortOrder(Icon_Color_Id_sortIndex)]
         [DisplayName(Icon_Color_Id_displayName)]
         public ushort Icon_Color_Id {
@@ -123,8 +122,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Sell_Price_displayName = "Sell Price";
-        protected const int Sell_Price_sortIndex = 500;
+        public const string Sell_Price_displayName = "Sell Price";
+        public const int Sell_Price_sortIndex = 500;
         [SortOrder(Sell_Price_sortIndex)]
         [DisplayName(Sell_Price_displayName)]
         public uint Sell_Price {
@@ -136,8 +135,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Buy_Price_displayName = "Buy Price";
-        protected const int Buy_Price_sortIndex = 550;
+        public const string Buy_Price_displayName = "Buy Price";
+        public const int Buy_Price_sortIndex = 550;
         [SortOrder(Buy_Price_sortIndex)]
         [DisplayName(Buy_Price_displayName)]
         public uint Buy_Price {
@@ -149,8 +148,8 @@ namespace MHW_Editor.Items {
             }
         }
 
-        protected const string Flags_Raw_displayName = "Flags Raw";
-        protected const int Flags_Raw_sortIndex = 600;
+        public const string Flags_Raw_displayName = "Flags Raw";
+        public const int Flags_Raw_sortIndex = 600;
         [SortOrder(Flags_Raw_sortIndex)]
         [DisplayName(Flags_Raw_displayName)]
         private uint Flags_Raw {

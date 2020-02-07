@@ -1,4 +1,3 @@
-
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -11,24 +10,24 @@ namespace MHW_Editor.Gems {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        protected const string Index_displayName = "Index";
-        protected const int Index_sortIndex = 50;
+        public const string Index_displayName = "Index";
+        public const int Index_sortIndex = 50;
         [SortOrder(Index_sortIndex)]
         [DisplayName(Index_displayName)]
         private ushort Index {
             get => GetData<ushort>(4);
         }
 
-        protected const string Id_displayName = "Id";
-        protected const int Id_sortIndex = 100;
+        public const string Id_displayName = "Id";
+        public const int Id_sortIndex = 100;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
         public ushort Id {
             get => GetData<ushort>(0);
         }
 
-        protected const string Size_displayName = "Size";
-        protected const int Size_sortIndex = 150;
+        public const string Size_displayName = "Size";
+        public const int Size_sortIndex = 150;
         [SortOrder(Size_sortIndex)]
         [DisplayName(Size_displayName)]
         public byte Size {
@@ -40,8 +39,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string Skill_1_displayName = "Skill 1";
-        protected const int Skill_1_sortIndex = 200;
+        public const string Skill_1_displayName = "Skill 1";
+        public const int Skill_1_sortIndex = 200;
         [SortOrder(Skill_1_sortIndex)]
         [DisplayName(Skill_1_displayName)]
         [DataSource(DataSourceType.Skills)]
@@ -54,8 +53,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string Skill_1_Level_displayName = "Skill 1 Level";
-        protected const int Skill_1_Level_sortIndex = 250;
+        public const string Skill_1_Level_displayName = "Skill 1 Level";
+        public const int Skill_1_Level_sortIndex = 250;
         [SortOrder(Skill_1_Level_sortIndex)]
         [DisplayName(Skill_1_Level_displayName)]
         public byte Skill_1_Level {
@@ -67,8 +66,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string Skill_2_displayName = "Skill 2";
-        protected const int Skill_2_sortIndex = 300;
+        public const string Skill_2_displayName = "Skill 2";
+        public const int Skill_2_sortIndex = 300;
         [SortOrder(Skill_2_sortIndex)]
         [DisplayName(Skill_2_displayName)]
         [DataSource(DataSourceType.Skills)]
@@ -81,8 +80,8 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        protected const string Skill_2_Level_displayName = "Skill 2 Level";
-        protected const int Skill_2_Level_sortIndex = 350;
+        public const string Skill_2_Level_displayName = "Skill 2 Level";
+        public const int Skill_2_Level_sortIndex = 350;
         [SortOrder(Skill_2_Level_sortIndex)]
         [DisplayName(Skill_2_Level_displayName)]
         public byte Skill_2_Level {

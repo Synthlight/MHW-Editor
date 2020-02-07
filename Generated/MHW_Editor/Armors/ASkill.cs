@@ -1,4 +1,3 @@
-
 using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -11,8 +10,8 @@ namespace MHW_Editor.Armors {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        protected const string Mantle_Id_displayName = "Mantle Id";
-        protected const int Mantle_Id_sortIndex = 50;
+        public const string Mantle_Id_displayName = "Mantle Id";
+        public const int Mantle_Id_sortIndex = 50;
         [SortOrder(Mantle_Id_sortIndex)]
         [DisplayName(Mantle_Id_displayName)]
         public uint Mantle_Id {
@@ -24,8 +23,8 @@ namespace MHW_Editor.Armors {
             }
         }
 
-        protected const string Unknown_uint32__displayName = "Unknown (uint32)";
-        protected const int Unknown_uint32__sortIndex = 100;
+        public const string Unknown_uint32__displayName = "Unknown (uint32)";
+        public const int Unknown_uint32__sortIndex = 100;
         [SortOrder(Unknown_uint32__sortIndex)]
         [DisplayName(Unknown_uint32__displayName)]
         public uint Unknown_uint32_ {
@@ -37,8 +36,8 @@ namespace MHW_Editor.Armors {
             }
         }
 
-        protected const string Color_displayName = "Color";
-        protected const int Color_sortIndex = 150;
+        public const string Color_displayName = "Color";
+        public const int Color_sortIndex = 150;
         [SortOrder(Color_sortIndex)]
         [DisplayName(Color_displayName)]
         public uint Color {
@@ -50,8 +49,8 @@ namespace MHW_Editor.Armors {
             }
         }
 
-        protected const string Sort_Order_displayName = "Sort Order";
-        protected const int Sort_Order_sortIndex = 200;
+        public const string Sort_Order_displayName = "Sort Order";
+        public const int Sort_Order_sortIndex = 200;
         [SortOrder(Sort_Order_sortIndex)]
         [DisplayName(Sort_Order_displayName)]
         public uint Sort_Order {
@@ -63,8 +62,8 @@ namespace MHW_Editor.Armors {
             }
         }
 
-        protected const string Mantle_Item_Id_displayName = "Mantle Item Id";
-        protected const int Mantle_Item_Id_sortIndex = 250;
+        public const string Mantle_Item_Id_displayName = "Mantle Item Id";
+        public const int Mantle_Item_Id_sortIndex = 250;
         [SortOrder(Mantle_Item_Id_sortIndex)]
         [DisplayName(Mantle_Item_Id_displayName)]
         [DataSource(DataSourceType.Items)]
@@ -77,8 +76,8 @@ namespace MHW_Editor.Armors {
             }
         }
 
-        protected const string Unlock_Flag_or_Item_Id__displayName = "Unlock Flag or Item Id?";
-        protected const int Unlock_Flag_or_Item_Id__sortIndex = 300;
+        public const string Unlock_Flag_or_Item_Id__displayName = "Unlock Flag or Item Id?";
+        public const int Unlock_Flag_or_Item_Id__sortIndex = 300;
         [SortOrder(Unlock_Flag_or_Item_Id__sortIndex)]
         [DisplayName(Unlock_Flag_or_Item_Id__displayName)]
         public uint Unlock_Flag_or_Item_Id_ {
@@ -90,8 +89,8 @@ namespace MHW_Editor.Armors {
             }
         }
 
-        protected const string Deco_Count_displayName = "Deco Count";
-        protected const int Deco_Count_sortIndex = 350;
+        public const string Deco_Count_displayName = "Deco Count";
+        public const int Deco_Count_sortIndex = 350;
         [SortOrder(Deco_Count_sortIndex)]
         [DisplayName(Deco_Count_displayName)]
         public byte Deco_Count {
@@ -103,8 +102,8 @@ namespace MHW_Editor.Armors {
             }
         }
 
-        protected const string Deco_Lvl_1_displayName = "Deco Lvl 1";
-        protected const int Deco_Lvl_1_sortIndex = 400;
+        public const string Deco_Lvl_1_displayName = "Deco Lvl 1";
+        public const int Deco_Lvl_1_sortIndex = 400;
         [SortOrder(Deco_Lvl_1_sortIndex)]
         [DisplayName(Deco_Lvl_1_displayName)]
         public byte Deco_Lvl_1 {
@@ -116,8 +115,8 @@ namespace MHW_Editor.Armors {
             }
         }
 
-        protected const string Deco_Lvl_2_displayName = "Deco Lvl 2";
-        protected const int Deco_Lvl_2_sortIndex = 450;
+        public const string Deco_Lvl_2_displayName = "Deco Lvl 2";
+        public const int Deco_Lvl_2_sortIndex = 450;
         [SortOrder(Deco_Lvl_2_sortIndex)]
         [DisplayName(Deco_Lvl_2_displayName)]
         public byte Deco_Lvl_2 {
@@ -129,8 +128,8 @@ namespace MHW_Editor.Armors {
             }
         }
 
-        protected const string Deco_Lvl_3_displayName = "Deco Lvl 3";
-        protected const int Deco_Lvl_3_sortIndex = 500;
+        public const string Deco_Lvl_3_displayName = "Deco Lvl 3";
+        public const int Deco_Lvl_3_sortIndex = 500;
         [SortOrder(Deco_Lvl_3_sortIndex)]
         [DisplayName(Deco_Lvl_3_displayName)]
         public byte Deco_Lvl_3 {
