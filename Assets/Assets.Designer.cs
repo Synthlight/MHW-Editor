@@ -2343,6 +2343,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] songData {
+            get {
+                object obj = ResourceManager.GetObject("songData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] spa_armorData {
             get {
                 object obj = ResourceManager.GetObject("spa_armorData", resourceCulture);

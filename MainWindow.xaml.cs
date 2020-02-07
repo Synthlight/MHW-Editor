@@ -46,6 +46,7 @@ namespace MHW_Editor {
             "*.eq_cus",
             "*.itm",
             "*.kire",
+            "*.msk",
             "*.new_lb",
             "*.new_lbr",
             "*.owp_dat",
@@ -103,7 +104,7 @@ namespace MHW_Editor {
             set {
                 showIdBeforeName = value;
                 foreach (MhwItem item in items) {
-                    item.OnPropertyChanged(nameof(SkillDat.Name_And_Id));
+                    item.OnPropertyChanged(nameof(SkillDat.Name_And_Id), nameof(MusicSkill.Song_Id));
                 }
             }
         }
@@ -178,7 +179,8 @@ namespace MHW_Editor {
                                                  typeof(EqCrt),
                                                  typeof(EqCus),
                                                  typeof(PlantFertilizer),
-                                                 typeof(PlantItem));
+                                                 typeof(PlantItem),
+                                                 typeof(MusicSkill));
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
@@ -850,7 +852,7 @@ namespace MHW_Editor {
 #pragma warning restore 162
 
             btn_sort_jewel_order_by_name.Visibility = targetFileType.Is(typeof(Item)) ? Visibility.Visible : Visibility.Collapsed;
-            cb_show_id_before_name.Visibility = targetFileType.Is(typeof(SkillDat), typeof(DecoPercent)) ? Visibility.Visible : Visibility.Collapsed;
+            cb_show_id_before_name.Visibility = targetFileType.Is(typeof(SkillDat), typeof(DecoPercent), typeof(MusicSkill)) ? Visibility.Visible : Visibility.Collapsed;
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 
@@ -1111,6 +1113,10 @@ namespace MHW_Editor {
 
             if (fileName.EndsWith(".dglt")) {
                 return typeof(DecoGradeLottery);
+            }
+
+            if (fileName.EndsWith(".msk")) {
+                return typeof(MusicSkill);
             }
 
             throw new Exception($"No type found for: {fileName}");

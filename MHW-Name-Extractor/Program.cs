@@ -20,14 +20,14 @@ namespace MHW_Name_Extractor {
                 GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\armor_{lang}.gmd", $@"{ROOT_OUTPUT}\ArmorData\{lang}_armorData.json");
                 GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\item_{lang}.gmd", $@"{ROOT_OUTPUT}\ItemData\{lang}_itemData.json");
                 GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\vfont\skill_pt_{lang}.gmd", $@"{ROOT_OUTPUT}\SkillData\{lang}_skillData.json");
+                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\ot_weapon_{lang}.gmd", $@"{ROOT_OUTPUT}\OtomoData\{lang}_otomo_weaponData.json");
+                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\ot_armor_{lang}.gmd", $@"{ROOT_OUTPUT}\OtomoData\{lang}_otomo_armorData.json");
+                // Not sure how it connects to skill id.
+                //GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\vfont\music_skill_{lang}.gmd", $@"{ROOT_OUTPUT}\MusicSkillData\{lang}_musicSkillData.json");
 
                 foreach (var weapon in WEAPONS) {
                     GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\{weapon}_{lang}.gmd", $@"{ROOT_OUTPUT}\WeaponData\{lang}_{weapon}.json");
                 }
-
-                // Otomo
-                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\ot_weapon_{lang}.gmd", $@"{ROOT_OUTPUT}\OtomoData\{lang}_otomo_weaponData.json");
-                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\ot_armor_{lang}.gmd", $@"{ROOT_OUTPUT}\OtomoData\{lang}_otomo_armorData.json");
             }
         }
 
@@ -37,6 +37,7 @@ namespace MHW_Name_Extractor {
             if (!Directory.Exists(dir)) {
                 Directory.CreateDirectory(dir);
             }
+
             File.WriteAllText(destFile, JsonConvert.SerializeObject(gmdStrings, Formatting.Indented));
         }
 

@@ -48,6 +48,23 @@ namespace MHW_Generator {
             GenOtomoArmorDat();
             GenDecoLot();
             GenDecoGradeIot();
+            GenMusicSkill();
+        }
+
+        private static void GenMusicSkill() {
+            GenerateItemProps("MHW_Editor.Skills", "MusicSkill", new MhwStructData { // .msk
+                size = 20,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                encryptionKey = EncryptionKeys.MSK_KEY,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Song Id Raw", 0, typeof(uint), true, accessLevel: "private"),
+                    new MhwStructData.Entry("Note 1", 4, typeof(int), typeof(NoteColor)),
+                    new MhwStructData.Entry("Note 2", 8, typeof(int), typeof(NoteColor)),
+                    new MhwStructData.Entry("Note 3", 12, typeof(int), typeof(NoteColor)),
+                    new MhwStructData.Entry("Note 4", 16, typeof(int), typeof(NoteColor))
+                }
+            });
         }
 
         private static void GenDecoGradeIot() { // .dglt

@@ -13,12 +13,13 @@ namespace MHW_Editor.Assets {
         public static readonly Dictionary<string, Dictionary<string, Dictionary<uint, string>>> weaponData = new Dictionary<string, Dictionary<string, Dictionary<uint, string>>>();
         public static readonly Dictionary<string, Dictionary<ushort, string>> otomoArmorData = new Dictionary<string, Dictionary<ushort, string>>();
         public static readonly Dictionary<string, Dictionary<ushort, string>> otomoWeaponData = new Dictionary<string, Dictionary<ushort, string>>();
-        public static readonly Dictionary<uint, string> dummyDict = new Dictionary<uint, string>();
+        public static readonly Dictionary<ushort, IdNamePair> songData = new Dictionary<ushort, IdNamePair>();
 
         static DataHelper() {
             foreach (var lang in Global.LANGUAGES) {
                 ParseItemData(lang);
                 ParseSkillData(lang);
+                ParseSongData();
 
                 armorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_armorData"));
                 otomoArmorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_otomo_armorData"));
@@ -61,6 +62,14 @@ namespace MHW_Editor.Assets {
 
                 skillData[lang][key] = value;
                 skillDataDescriptions[lang][key] = desc;
+            }
+        }
+
+        private static void ParseSongData() {
+            var rawSongData = LoadDict<ushort, string>(GetAsset("songData"));
+
+            foreach (var pair in rawSongData) {
+                songData[pair.Key] = new IdNamePair(pair.Key, pair.Value);
             }
         }
 
