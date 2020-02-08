@@ -422,7 +422,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Mat 3 Id", 20, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Mat 3 Count", 22, typeof(byte)),
                     new MhwStructData.Entry("Mat 4 Id", 23, typeof(ushort), dataSourceType: DataSourceType.Items),
-                    new MhwStructData.Entry("Mat 4 Count", 24, typeof(byte)),
+                    new MhwStructData.Entry("Mat 4 Count", 25, typeof(byte)),
                     new MhwStructData.Entry("Id 3", 37, typeof(byte), true)
                 }
             });

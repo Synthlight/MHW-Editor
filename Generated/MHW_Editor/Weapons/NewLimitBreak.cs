@@ -197,10 +197,10 @@ namespace MHW_Editor.Weapons {
         [SortOrder(Mat_4_Count_sortIndex)]
         [DisplayName(Mat_4_Count_displayName)]
         public virtual byte Mat_4_Count {
-            get => GetData<byte>(24);
+            get => GetData<byte>(25);
             set {
-                if (GetData<byte>(24) == value) return;
-                SetData(24, value);
+                if (GetData<byte>(25) == value) return;
+                SetData(25, value);
                 OnPropertyChanged(nameof(Mat_4_Count));
             }
         }
