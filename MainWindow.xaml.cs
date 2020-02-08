@@ -41,6 +41,8 @@ namespace MHW_Editor {
             "*.arm_up",
             "*.ask",
             "*.bbtbl",
+            "*.cus_pa",
+            "*.cus_par",
             "*.dglt",
             "*.diot",
             "*.eq_crt",
@@ -122,7 +124,7 @@ namespace MHW_Editor {
 
         public MainWindow() {
 #pragma warning disable 162
-            // ReSharper disable once HeuristicUnreachableCode
+            // ReSharper disable HeuristicUnreachableCode
             if (false) {
                 // ReSharper disable StringLiteralTypo
                 const string chunk = @"V:\MHW\IB\chunk_combined";
@@ -166,14 +168,16 @@ namespace MHW_Editor {
                 case nameof(IMhwItem.Name): // None of the following have names.
                     e.Cancel = targetFileType.Is(typeof(ArmUp),
                                                  typeof(ASkill),
+                                                 typeof(CustomParts),
+                                                 typeof(CustomPartsR),
                                                  typeof(DecoPercent),
                                                  typeof(EqCrt),
                                                  typeof(EqCus),
                                                  typeof(MelderExchange),
                                                  typeof(MelderItem),
                                                  typeof(MusicSkill),
-                                                 typeof(NewLimitBreakR),
                                                  typeof(NewLimitBreak),
+                                                 typeof(NewLimitBreakR),
                                                  typeof(PlantFertilizer),
                                                  typeof(PlantItem),
                                                  typeof(Sharpness),
@@ -487,21 +491,54 @@ namespace MHW_Editor {
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
 #pragma warning disable 162
             if (ENABLE_CHEAT_BUTTONS) {
-                btn_customize.Visibility = targetFileType.Is(typeof(Armor), typeof(SkillDat)) ? Visibility.Visible : Visibility.Collapsed;
-                btn_slot_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(IWeapon), typeof(ASkill)) ? Visibility.Visible : Visibility.Collapsed;
-                btn_skill_level_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Gem)) ? Visibility.Visible : Visibility.Collapsed;
-                btn_set_bonus_cheat.Visibility = targetFileType.Is(typeof(Armor)) ? Visibility.Visible : Visibility.Collapsed;
-                btn_cost_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Item), typeof(IWeapon), typeof(EqCrt), typeof(EqCus), typeof(NewLimitBreakR), typeof(NewLimitBreak)) ? Visibility.Visible : Visibility.Collapsed;
-                btn_damage_cheat.Visibility = targetFileType.Is(typeof(IWeapon), typeof(OtomoWeaponDat)) ? Visibility.Visible : Visibility.Collapsed;
-                btn_enable_all_coatings_cheat.Visibility = targetFileType.Is(typeof(BottleTable)) ? Visibility.Visible : Visibility.Collapsed;
-                btn_max_sharpness_cheat.Visibility = targetFileType.Is(typeof(Sharpness), typeof(Melee)) ? Visibility.Visible : Visibility.Collapsed;
-                btn_unlock_skill_limit_cheat.Visibility = targetFileType.Is(typeof(SkillDat)) ? Visibility.Visible : Visibility.Collapsed;
-                btn_fast_reload_rapid_fire_cheat.Visibility = targetFileType.Is(typeof(ShellTable)) ? Visibility.Visible : Visibility.Collapsed;
+                btn_customize.Visibility = targetFileType.Is(typeof(Armor),
+                                                             typeof(SkillDat))
+                                                         .VisibleIfTrue();
+
+                btn_slot_cheat.Visibility = targetFileType.Is(typeof(Armor),
+                                                              typeof(ASkill),
+                                                              typeof(IWeapon))
+                                                          .VisibleIfTrue();
+
+                btn_skill_level_cheat.Visibility = targetFileType.Is(typeof(Armor),
+                                                                     typeof(Gem))
+                                                                 .VisibleIfTrue();
+
+                btn_set_bonus_cheat.Visibility = targetFileType.Is(typeof(Armor)).VisibleIfTrue();
+
+                btn_cost_cheat.Visibility = targetFileType.Is(typeof(Armor),
+                                                              typeof(CustomParts),
+                                                              typeof(CustomPartsR),
+                                                              typeof(EqCrt),
+                                                              typeof(EqCus),
+                                                              typeof(Item),
+                                                              typeof(IWeapon),
+                                                              typeof(NewLimitBreak),
+                                                              typeof(NewLimitBreakR))
+                                                          .VisibleIfTrue();
+
+                btn_damage_cheat.Visibility = targetFileType.Is(typeof(IWeapon),
+                                                                typeof(OtomoWeaponDat))
+                                                            .VisibleIfTrue();
+
+                btn_enable_all_coatings_cheat.Visibility = targetFileType.Is(typeof(BottleTable)).VisibleIfTrue();
+
+                btn_max_sharpness_cheat.Visibility = targetFileType.Is(typeof(Melee),
+                                                                       typeof(Sharpness))
+                                                                   .VisibleIfTrue();
+
+                btn_unlock_skill_limit_cheat.Visibility = targetFileType.Is(typeof(SkillDat)).VisibleIfTrue();
+
+                btn_fast_reload_rapid_fire_cheat.Visibility = targetFileType.Is(typeof(ShellTable)).VisibleIfTrue();
             }
 #pragma warning restore 162
 
-            btn_sort_jewel_order_by_name.Visibility = targetFileType.Is(typeof(Item)) ? Visibility.Visible : Visibility.Collapsed;
-            cb_show_id_before_name.Visibility = targetFileType.Is(typeof(SkillDat), typeof(DecoPercent), typeof(MusicSkill)) ? Visibility.Visible : Visibility.Collapsed;
+            btn_sort_jewel_order_by_name.Visibility = targetFileType.Is(typeof(Item)).VisibleIfTrue();
+
+            cb_show_id_before_name.Visibility = targetFileType.Is(typeof(DecoPercent),
+                                                                  typeof(MusicSkill),
+                                                                  typeof(SkillDat))
+                                                              .VisibleIfTrue();
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 
@@ -624,7 +661,7 @@ namespace MHW_Editor {
 
                 savedTimer?.Cancel();
                 savedTimer = new CancellationTokenSource();
-                lbl_saved.Visibility = changesSaved ? Visibility.Visible : Visibility.Collapsed;
+                lbl_saved.Visibility = changesSaved.VisibleIfTrue();
                 lbl_no_changes.Visibility = changesSaved ? Visibility.Collapsed : Visibility.Visible;
                 try {
                     await Task.Delay(3000, savedTimer.Token);
@@ -653,13 +690,15 @@ namespace MHW_Editor {
         }
 
         private Type GetFileType() {
-            var fileName = Path.GetFileName(targetFile);
+            var fileName = Path.GetFileName(targetFile).ToLower();
             Debug.Assert(fileName != null, nameof(fileName) + " != null");
 
             if (fileName.EndsWith(".am_dat")) return typeof(Armor);
             if (fileName.EndsWith(".arm_up")) return typeof(ArmUp);
             if (fileName.EndsWith(".ask")) return typeof(ASkill);
             if (fileName.EndsWith(".bbtbl")) return typeof(BottleTable);
+            if (fileName.EndsWith(".cus_pa")) return typeof(CustomParts);
+            if (fileName.EndsWith(".cus_par")) return typeof(CustomPartsR);
             if (fileName.EndsWith(".dglt")) return typeof(DecoGradeLottery);
             if (fileName.EndsWith(".diot")) return typeof(DecoLottery);
             if (fileName.EndsWith(".eq_crt")) return typeof(EqCrt);

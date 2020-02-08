@@ -93,6 +93,8 @@
     <Compile Include="Generated\MHW_Editor\Items\PlantItem.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\MusicSkill.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\CustomParts.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\CustomPartsR.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\OtomoWeaponDat.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\RodInsect.cs" />
@@ -145,6 +147,8 @@
     <Compile Include="Models\ISlots.cs" />
     <Compile Include="Skills\SkillPointData.cs" />
     <Compile Include="Weapons\Bow.cs" />
+    <Compile Include="Weapons\CustomPartsR.cs" />
+    <Compile Include="Weapons\CustomParts.cs" />
     <Compile Include="Weapons\NewLimitBreak.cs" />
     <Compile Include="Weapons\OtomoWeaponDat.cs" />
     <Compile Include="Weapons\RodInsect.cs" />

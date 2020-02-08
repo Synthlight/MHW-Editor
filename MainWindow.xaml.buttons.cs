@@ -14,7 +14,10 @@ namespace MHW_Editor {
         private void Btn_customize_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!targetFileType.Is(typeof(SkillDat), typeof(Armor))) return;
+            if (!targetFileType.Is(typeof(Armor),
+                                   typeof(SkillDat))) {
+                return;
+            }
 
             foreach (var item in items) {
                 switch (item) {
@@ -143,7 +146,11 @@ namespace MHW_Editor {
         private void Btn_slot_cheat_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!targetFileType.Is(typeof(IWeapon), typeof(Armor), typeof(ASkill))) return;
+            if (!targetFileType.Is(typeof(Armor),
+                                   typeof(ASkill),
+                                   typeof(IWeapon))) {
+                return;
+            }
 
             foreach (var item in items) {
                 switch (item) {
@@ -180,7 +187,10 @@ namespace MHW_Editor {
         private void Btn_skill_level_cheat_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!targetFileType.Is(typeof(Gem), typeof(Armor))) return;
+            if (!targetFileType.Is(typeof(Armor),
+                                   typeof(Gem))) {
+                return;
+            }
 
             foreach (var item in items) {
                 switch (item) {
@@ -204,7 +214,17 @@ namespace MHW_Editor {
         private void Btn_cost_cheat_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!targetFileType.Is(typeof(Item), typeof(Armor), typeof(IWeapon), typeof(EqCrt), typeof(EqCus), typeof(NewLimitBreakR), typeof(NewLimitBreak))) return;
+            if (!targetFileType.Is(typeof(Armor),
+                                   typeof(CustomParts),
+                                   typeof(CustomPartsR),
+                                   typeof(EqCrt),
+                                   typeof(EqCus),
+                                   typeof(Item),
+                                   typeof(IWeapon),
+                                   typeof(NewLimitBreak),
+                                   typeof(NewLimitBreakR))) {
+                return;
+            }
 
             foreach (var item in items) {
                 switch (item) {
@@ -254,6 +274,19 @@ namespace MHW_Editor {
                         if (newLimitBreak.Research_Cost_r12_ > 0) newLimitBreak.Research_Cost_r12_ = 1;
                         break;
                     }
+                    case CustomParts _: {
+                        CustomParts customParts = item;
+                        if (customParts.Craft_Cost > 0) customParts.Craft_Cost = 1;
+                        break;
+                    }
+                    case CustomPartsR _: {
+                        CustomPartsR customPartsR = item;
+                        if (customPartsR.Mat_1_Count > 0) customPartsR.Mat_1_Count = 1;
+                        if (customPartsR.Mat_2_Count > 0) customPartsR.Mat_2_Count = 1;
+                        if (customPartsR.Mat_3_Count > 0) customPartsR.Mat_3_Count = 1;
+                        if (customPartsR.Mat_4_Count > 0) customPartsR.Mat_4_Count = 1;
+                        break;
+                    }
                 }
             }
         }
@@ -261,7 +294,10 @@ namespace MHW_Editor {
         private void Btn_damage_cheat_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!targetFileType.Is(typeof(IWeapon), typeof(OtomoWeaponDat))) return;
+            if (!targetFileType.Is(typeof(IWeapon),
+                                   typeof(OtomoWeaponDat))) {
+                return;
+            }
 
             foreach (var item in items) {
                 switch (item) {
@@ -298,7 +334,10 @@ namespace MHW_Editor {
         private void Btn_max_sharpness_cheat_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!targetFileType.Is(typeof(Sharpness), typeof(Melee))) return;
+            if (!targetFileType.Is(typeof(Melee),
+                                   typeof(Sharpness))) {
+                return;
+            }
 
             foreach (var item in items) {
                 switch (item) {
