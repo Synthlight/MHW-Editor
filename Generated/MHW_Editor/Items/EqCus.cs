@@ -19,6 +19,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<byte>(0) == value) return;
                 SetData(0, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Item_Category));
             }
         }
@@ -32,6 +33,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<ushort>(1) == value) return;
                 SetData(1, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(External_Item_Index));
             }
         }
@@ -45,6 +47,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<ushort>(3) == value) return;
                 SetData(3, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_uint16_1));
             }
         }
@@ -58,6 +61,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<int>(5) == value) return;
                 SetData(5, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int32_2));
             }
         }
@@ -71,6 +75,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<uint>(9) == value) return;
                 SetData(9, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Story_Unlock));
             }
         }
@@ -84,6 +89,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<uint>(13) == value) return;
                 SetData(13, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Item_Rank));
             }
         }
@@ -98,6 +104,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<ushort>(17) == value) return;
                 SetData(17, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_1_Id));
                 OnPropertyChanged("Mat_1_Id_button");
             }
@@ -112,6 +119,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<byte>(19) == value) return;
                 SetData(19, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_1_Count));
             }
         }
@@ -126,6 +134,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<ushort>(20) == value) return;
                 SetData(20, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_2_Id));
                 OnPropertyChanged("Mat_2_Id_button");
             }
@@ -140,6 +149,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<byte>(22) == value) return;
                 SetData(22, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_2_Count));
             }
         }
@@ -154,6 +164,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<ushort>(23) == value) return;
                 SetData(23, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_3_Id));
                 OnPropertyChanged("Mat_3_Id_button");
             }
@@ -168,6 +179,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<byte>(25) == value) return;
                 SetData(25, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_3_Count));
             }
         }
@@ -182,6 +194,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<ushort>(26) == value) return;
                 SetData(26, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_4_Id));
                 OnPropertyChanged("Mat_4_Id_button");
             }
@@ -196,6 +209,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<byte>(28) == value) return;
                 SetData(28, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_4_Count));
             }
         }
@@ -209,6 +223,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<ushort>(29) == value) return;
                 SetData(29, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Child_index_1));
             }
         }
@@ -222,6 +237,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<ushort>(31) == value) return;
                 SetData(31, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Child_index_2));
             }
         }
@@ -235,6 +251,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<ushort>(33) == value) return;
                 SetData(33, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Child_index_3));
             }
         }
@@ -248,6 +265,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<ushort>(35) == value) return;
                 SetData(35, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Child_index_4));
             }
         }

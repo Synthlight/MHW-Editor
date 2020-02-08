@@ -27,6 +27,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if ((MHW_Template.Weapons.ShellType) GetData<ushort>(4) == value) return;
                 SetData(4, (ushort) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Shell_Type));
             }
         }
@@ -40,6 +41,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(6) == value) return;
                 SetData(6, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Shell_Level));
             }
         }

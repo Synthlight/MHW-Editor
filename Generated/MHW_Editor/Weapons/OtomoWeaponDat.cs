@@ -19,6 +19,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<uint>(0) == value) return;
                 SetData(0, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Id));
             }
         }
@@ -32,6 +33,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(4) == value) return;
                 SetData(4, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Set_Id));
             }
         }
@@ -45,6 +47,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if ((MHW_Template.Weapons.Element) GetData<byte>(6) == value) return;
                 SetData(6, (byte) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Element));
             }
         }
@@ -58,6 +61,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if ((MHW_Template.Weapons.OtomoAttackType) GetData<byte>(7) == value) return;
                 SetData(7, (byte) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Attack_Type));
             }
         }
@@ -71,6 +75,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(9) == value) return;
                 SetData(9, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Melee_Damage));
             }
         }
@@ -84,6 +89,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(11) == value) return;
                 SetData(11, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Ranged_Damage));
             }
         }
@@ -97,6 +103,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(13) == value) return;
                 SetData(13, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Elemental_Damage));
             }
         }
@@ -110,6 +117,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<short>(15) == value) return;
                 SetData(15, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Affinity));
             }
         }
@@ -123,6 +131,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(17) == value) return;
                 SetData(17, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Defense));
             }
         }
@@ -136,6 +145,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<byte>(19) == value) return;
                 SetData(19, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Elderseal));
             }
         }
@@ -149,6 +159,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<byte>(20) == value) return;
                 SetData(20, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Rarity));
             }
         }
@@ -162,6 +173,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(21) == value) return;
                 SetData(21, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Order));
             }
         }
@@ -175,6 +187,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<uint>(27) == value) return;
                 SetData(27, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Cost));
             }
         }
@@ -188,6 +201,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<byte>(31) == value) return;
                 SetData(31, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_byte_1));
             }
         }
@@ -201,6 +215,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(32) == value) return;
                 SetData(32, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Set_Group));
             }
         }

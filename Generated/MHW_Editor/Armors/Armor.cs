@@ -27,6 +27,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<ushort>(4) == value) return;
                 SetData(4, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Order));
             }
         }
@@ -40,6 +41,7 @@ namespace MHW_Editor.Armors {
             set {
                 if ((MHW_Template.Armors.Variant) GetData<byte>(6) == value) return;
                 SetData(6, (byte) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Variant));
             }
         }
@@ -53,6 +55,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<ushort>(7) == value) return;
                 SetData(7, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Set_Layered_Id));
             }
         }
@@ -66,6 +69,7 @@ namespace MHW_Editor.Armors {
             set {
                 if ((MHW_Template.Armors.ArmorType) GetData<byte>(9) == value) return;
                 SetData(9, (byte) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Type));
             }
         }
@@ -79,6 +83,7 @@ namespace MHW_Editor.Armors {
             set {
                 if ((MHW_Template.Armors.EquipSlot) GetData<byte>(10) == value) return;
                 SetData(10, (byte) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Equip_Slot));
             }
         }
@@ -92,6 +97,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<ushort>(11) == value) return;
                 SetData(11, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Defense));
             }
         }
@@ -105,6 +111,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<byte>(20) == value) return;
                 SetData(20, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Rarity));
             }
         }
@@ -118,6 +125,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<uint>(21) == value) return;
                 SetData(21, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Cost));
             }
         }
@@ -131,6 +139,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<sbyte>(25) == value) return;
                 SetData(25, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Fire_Res));
             }
         }
@@ -144,6 +153,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<sbyte>(26) == value) return;
                 SetData(26, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Water_Res));
             }
         }
@@ -157,6 +167,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<sbyte>(27) == value) return;
                 SetData(27, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Ice_Res));
             }
         }
@@ -170,6 +181,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<sbyte>(28) == value) return;
                 SetData(28, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Thunder_Res));
             }
         }
@@ -183,6 +195,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<sbyte>(29) == value) return;
                 SetData(29, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Dragon_Res));
             }
         }
@@ -196,6 +209,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<byte>(30) == value) return;
                 SetData(30, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Slot_Count));
             }
         }
@@ -209,6 +223,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<byte>(31) == value) return;
                 SetData(31, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Slot_1_Size));
             }
         }
@@ -222,6 +237,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<byte>(32) == value) return;
                 SetData(32, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Slot_2_Size));
             }
         }
@@ -235,6 +251,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<byte>(33) == value) return;
                 SetData(33, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Slot_3_Size));
             }
         }
@@ -249,6 +266,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<ushort>(34) == value) return;
                 SetData(34, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Set_Skill_1));
                 OnPropertyChanged("Set_Skill_1_button");
             }
@@ -263,6 +281,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<byte>(36) == value) return;
                 SetData(36, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Set_Skill_1_Level));
             }
         }
@@ -277,6 +296,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<ushort>(37) == value) return;
                 SetData(37, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Set_Skill_2));
                 OnPropertyChanged("Set_Skill_2_button");
             }
@@ -291,6 +311,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<byte>(39) == value) return;
                 SetData(39, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Set_Skill_2_Level));
             }
         }
@@ -305,6 +326,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<ushort>(40) == value) return;
                 SetData(40, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_1));
                 OnPropertyChanged("Skill_1_button");
             }
@@ -319,6 +341,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<byte>(42) == value) return;
                 SetData(42, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_1_Level));
             }
         }
@@ -333,6 +356,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<ushort>(43) == value) return;
                 SetData(43, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_2));
                 OnPropertyChanged("Skill_2_button");
             }
@@ -347,6 +371,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<byte>(45) == value) return;
                 SetData(45, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_2_Level));
             }
         }
@@ -361,6 +386,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<ushort>(46) == value) return;
                 SetData(46, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_3));
                 OnPropertyChanged("Skill_3_button");
             }
@@ -375,6 +401,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<byte>(48) == value) return;
                 SetData(48, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_3_Level));
             }
         }
@@ -388,6 +415,7 @@ namespace MHW_Editor.Armors {
             set {
                 if ((MHW_Template.Armors.Gender) GetData<byte>(49) == value) return;
                 SetData(49, (byte) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Gender));
             }
         }
@@ -401,6 +429,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<ushort>(53) == value) return;
                 SetData(53, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Set_Group));
             }
         }
@@ -414,6 +443,7 @@ namespace MHW_Editor.Armors {
             set {
                 if (GetData<byte>(59) == value) return;
                 SetData(59, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Is_Permanent_Raw));
             }
         }

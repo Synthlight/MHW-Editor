@@ -19,6 +19,7 @@ namespace MHW_Editor.Items {
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(0) == value) return;
                 SetData(0, (byte) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Close_Range));
             }
         }
@@ -32,6 +33,7 @@ namespace MHW_Editor.Items {
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(1) == value) return;
                 SetData(1, (byte) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Power));
             }
         }
@@ -45,6 +47,7 @@ namespace MHW_Editor.Items {
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(2) == value) return;
                 SetData(2, (byte) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Paralysis));
             }
         }
@@ -58,6 +61,7 @@ namespace MHW_Editor.Items {
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(3) == value) return;
                 SetData(3, (byte) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Poison));
             }
         }
@@ -71,6 +75,7 @@ namespace MHW_Editor.Items {
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(4) == value) return;
                 SetData(4, (byte) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Sleep));
             }
         }
@@ -84,6 +89,7 @@ namespace MHW_Editor.Items {
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(5) == value) return;
                 SetData(5, (byte) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Blast));
             }
         }

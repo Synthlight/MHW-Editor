@@ -36,6 +36,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(4) == value) return;
                 SetData(4, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Needed_Item_Id_to_Unlock));
                 OnPropertyChanged("Needed_Item_Id_to_Unlock_button");
             }
@@ -50,6 +51,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<sbyte>(6) == value) return;
                 SetData(6, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Activated_1));
             }
         }
@@ -63,6 +65,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<sbyte>(7) == value) return;
                 SetData(7, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Activated_2));
             }
         }
@@ -76,6 +79,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<sbyte>(8) == value) return;
                 SetData(8, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Activated_3));
             }
         }
@@ -89,6 +93,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<sbyte>(9) == value) return;
                 SetData(9, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Activated_4));
             }
         }
@@ -103,6 +108,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(14) == value) return;
                 SetData(14, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_1_Id));
                 OnPropertyChanged("Mat_1_Id_button");
             }
@@ -117,6 +123,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<byte>(16) == value) return;
                 SetData(16, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_1_Count));
             }
         }
@@ -131,6 +138,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(17) == value) return;
                 SetData(17, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_2_Id));
                 OnPropertyChanged("Mat_2_Id_button");
             }
@@ -145,6 +153,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<byte>(19) == value) return;
                 SetData(19, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_2_Count));
             }
         }
@@ -159,6 +168,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(20) == value) return;
                 SetData(20, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_3_Id));
                 OnPropertyChanged("Mat_3_Id_button");
             }
@@ -173,6 +183,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<byte>(22) == value) return;
                 SetData(22, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_3_Count));
             }
         }
@@ -187,6 +198,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<ushort>(23) == value) return;
                 SetData(23, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_4_Id));
                 OnPropertyChanged("Mat_4_Id_button");
             }
@@ -201,6 +213,7 @@ namespace MHW_Editor.Weapons {
             set {
                 if (GetData<byte>(25) == value) return;
                 SetData(25, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_4_Count));
             }
         }

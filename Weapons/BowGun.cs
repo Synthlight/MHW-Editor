@@ -13,6 +13,7 @@ namespace MHW_Editor.Weapons {
             get => (SpecialAmmo) base.Special_Ammo_Type;
             set {
                 base.Special_Ammo_Type = (byte) value;
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Special_Ammo_Type));
             }
         }

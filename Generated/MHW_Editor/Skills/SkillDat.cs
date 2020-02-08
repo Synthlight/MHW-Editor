@@ -36,6 +36,7 @@ namespace MHW_Editor.Skills {
             set {
                 if (GetData<uint>(3) == value) return;
                 SetData(3, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unlock_Skill_1));
                 OnPropertyChanged("Unlock_Skill_1_button");
             }
@@ -51,6 +52,7 @@ namespace MHW_Editor.Skills {
             set {
                 if (GetData<uint>(7) == value) return;
                 SetData(7, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unlock_Skill_2));
                 OnPropertyChanged("Unlock_Skill_2_button");
             }
@@ -66,6 +68,7 @@ namespace MHW_Editor.Skills {
             set {
                 if (GetData<uint>(11) == value) return;
                 SetData(11, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unlock_Skill_3));
                 OnPropertyChanged("Unlock_Skill_3_button");
             }
@@ -81,6 +84,7 @@ namespace MHW_Editor.Skills {
             set {
                 if (GetData<uint>(15) == value) return;
                 SetData(15, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unlock_Skill_4));
                 OnPropertyChanged("Unlock_Skill_4_button");
             }
@@ -95,6 +99,7 @@ namespace MHW_Editor.Skills {
             set {
                 if (GetData<ushort>(19) == value) return;
                 SetData(19, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Param_5));
             }
         }
@@ -108,6 +113,7 @@ namespace MHW_Editor.Skills {
             set {
                 if (GetData<ushort>(21) == value) return;
                 SetData(21, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Param_6));
             }
         }
@@ -121,6 +127,7 @@ namespace MHW_Editor.Skills {
             set {
                 if (GetData<ushort>(23) == value) return;
                 SetData(23, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Param_7));
             }
         }
@@ -134,6 +141,7 @@ namespace MHW_Editor.Skills {
             set {
                 if (GetData<ushort>(25) == value) return;
                 SetData(25, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Param_8));
             }
         }

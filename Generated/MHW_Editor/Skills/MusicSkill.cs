@@ -27,6 +27,7 @@ namespace MHW_Editor.Skills {
             set {
                 if ((MHW_Template.Weapons.NoteColor) GetData<int>(4) == value) return;
                 SetData(4, (int) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_1));
             }
         }
@@ -40,6 +41,7 @@ namespace MHW_Editor.Skills {
             set {
                 if ((MHW_Template.Weapons.NoteColor) GetData<int>(8) == value) return;
                 SetData(8, (int) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_2));
             }
         }
@@ -53,6 +55,7 @@ namespace MHW_Editor.Skills {
             set {
                 if ((MHW_Template.Weapons.NoteColor) GetData<int>(12) == value) return;
                 SetData(12, (int) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_3));
             }
         }
@@ -66,6 +69,7 @@ namespace MHW_Editor.Skills {
             set {
                 if ((MHW_Template.Weapons.NoteColor) GetData<int>(16) == value) return;
                 SetData(16, (int) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_4));
             }
         }

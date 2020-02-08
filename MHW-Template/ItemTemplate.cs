@@ -295,16 +295,17 @@ namespace MHW_Template
             
             #line default
             #line hidden
-            this.Write(");\r\n                OnPropertyChanged(nameof(");
+            this.Write(");\r\n                OnPropertyChanged(nameof(Raw_Data));\r\n                OnPrope" +
+                    "rtyChanged(nameof(");
             
-            #line 70 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 71 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(name));
             
             #line default
             #line hidden
             this.Write("));\r\n");
             
-            #line 71 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 72 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
 
             if (entry.dataSourceType != null) {
 
@@ -313,14 +314,14 @@ namespace MHW_Template
             #line hidden
             this.Write("                OnPropertyChanged(\"");
             
-            #line 74 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 75 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(name));
             
             #line default
             #line hidden
             this.Write("_button\");\r\n");
             
-            #line 75 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 76 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
 
             } // End extra OnPropertyChanged check.
 
@@ -329,7 +330,7 @@ namespace MHW_Template
             #line hidden
             this.Write("            }\r\n");
             
-            #line 79 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 80 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
 
         } // End readOnly check.
 
@@ -338,14 +339,14 @@ namespace MHW_Template
             #line hidden
             this.Write("        }");
             
-            #line 82 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 83 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
  // End property block. 
             
             #line default
             #line hidden
             this.Write("\r\n");
             
-            #line 84 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 85 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
 
         sortIndex += 50;
     } // End loop.
@@ -355,14 +356,14 @@ namespace MHW_Template
             #line hidden
             this.Write("\r\n        public const int lastSortIndex = ");
             
-            #line 89 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 90 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(sortIndex));
             
             #line default
             #line hidden
             this.Write(";\r\n    }");
             
-            #line 90 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 91 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
  // End class. 
             
             #line default

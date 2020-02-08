@@ -20,6 +20,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<uint>(0) == value) return;
                 SetData(0, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Result_Item_Id));
                 OnPropertyChanged("Result_Item_Id_button");
             }
@@ -34,6 +35,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<uint>(4) == value) return;
                 SetData(4, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Research_Points));
             }
         }
@@ -47,6 +49,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<uint>(8) == value) return;
                 SetData(8, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Melding_Points));
             }
         }
@@ -60,6 +63,7 @@ namespace MHW_Editor.Items {
             set {
                 if ((MHW_Template.Items.ItemCategory) GetData<uint>(12) == value) return;
                 SetData(12, (uint) value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Category));
             }
         }
@@ -73,6 +77,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<uint>(16) == value) return;
                 SetData(16, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unlock_Flag));
             }
         }
@@ -86,6 +91,7 @@ namespace MHW_Editor.Items {
             set {
                 if (GetData<byte>(20) == value) return;
                 SetData(20, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_uint8_));
             }
         }

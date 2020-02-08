@@ -19,6 +19,7 @@ namespace MHW_Editor.Skills {
             set {
                 if (GetData<byte>(0) == value) return;
                 SetData(0, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_uint8_1));
             }
         }
@@ -32,6 +33,7 @@ namespace MHW_Editor.Skills {
             set {
                 if (GetData<byte>(1) == value) return;
                 SetData(1, value);
+                OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_uint8_2));
             }
         }
