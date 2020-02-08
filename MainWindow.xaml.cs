@@ -24,7 +24,6 @@ using MHW_Editor.Skills;
 using MHW_Editor.Weapons;
 using MHW_Template;
 using MHW_Template.Models;
-using MHW_Template.Weapons;
 using Microsoft.Win32;
 
 namespace MHW_Editor {
@@ -123,6 +122,7 @@ namespace MHW_Editor {
 
         public MainWindow() {
 #pragma warning disable 162
+            // ReSharper disable once HeuristicUnreachableCode
             if (false) {
                 // ReSharper disable StringLiteralTypo
                 const string chunk = @"V:\MHW\IB\chunk_combined";
@@ -249,7 +249,7 @@ namespace MHW_Editor {
             switch (e.PropertyName) {
                 case nameof(EqCrt.Item_Category): {
                     var fileName = Path.GetFileNameWithoutExtension(targetFile);
-                    if (!EqCrt.categoryLookup.ContainsKey(fileName)) break;
+                    if (!EqCrt.categoryLookup.ContainsKey(fileName ?? throw new InvalidOperationException())) break;
 
                     var cb = new DataGridComboBoxColumn {
                         Header = e.Column.Header,
@@ -473,362 +473,6 @@ namespace MHW_Editor {
             Save();
         }
 
-        private void Btn_customize_Click(object sender, RoutedEventArgs e) {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            if (!targetFileType.Is(typeof(SkillDat), typeof(Armor))) return;
-
-            foreach (var item in items) {
-                switch (item) {
-                    case SkillDat _: {
-                        SkillDat skillDat = item;
-
-                        switch (skillDat.Id) {
-                            case SkillDataValueClass.Scholar:
-                            case SkillDataValueClass.Scenthound:
-                                skillDat.Param_5 = 5000;
-                                break;
-                            case SkillDataValueClass.Tool_Specialist:
-                                skillDat.Param_5 = 1;
-                                break;
-                            case SkillDataValueClass.Item_Prolonger:
-                                skillDat.Param_5 = 5000;
-                                break;
-                            case SkillDataValueClass.Focus:
-                                skillDat.Param_6 = 1;
-                                break;
-                        }
-
-                        break;
-                    }
-                    case Armor _: {
-                        Armor armor = item;
-
-                        switch (armor.Id) {
-                            case ArmorDataValueClass.Guildwork_Head_a_plus:
-                                armor.Skill_1 = SkillDataValueClass.Effluvial_Expert;
-                                armor.Skill_1_Level = 10;
-                                armor.Skill_2 = SkillDataValueClass.Scholar;
-                                armor.Skill_2_Level = 10;
-                                armor.Skill_3 = SkillDataValueClass.Aquatic_Polar_Mobility;
-                                armor.Skill_3_Level = 10;
-                                break;
-                            case ArmorDataValueClass.Kushala_Cista_a_plus:
-                                armor.Skill_1 = SkillDataValueClass.Bow_Charge_Plus;
-                                armor.Skill_1_Level = 10;
-                                armor.Skill_2 = SkillDataValueClass.Coldproof;
-                                armor.Skill_2_Level = 10;
-                                armor.Skill_3 = SkillDataValueClass.Defense_Boost;
-                                armor.Skill_3_Level = 10;
-                                break;
-                            case ArmorDataValueClass.Kirin_Longarms_a_plus:
-                                armor.Skill_1 = SkillDataValueClass.Effluvia_Resistance;
-                                armor.Skill_1_Level = 10;
-                                armor.Skill_2 = SkillDataValueClass.Focus;
-                                armor.Skill_2_Level = 10;
-                                armor.Skill_3 = SkillDataValueClass.Free_Meal;
-                                armor.Skill_3_Level = 10;
-                                break;
-                            case ArmorDataValueClass.Fellshroud_Coil_a_plus:
-                                armor.Skill_1 = SkillDataValueClass.Guard;
-                                armor.Skill_1_Level = 10;
-                                armor.Skill_2 = SkillDataValueClass.Guard_Up;
-                                armor.Skill_2_Level = 10;
-                                armor.Skill_3 = SkillDataValueClass.Heat_Guard;
-                                armor.Skill_3_Level = 10;
-                                break;
-                            case ArmorDataValueClass.Rimeguard_Greaves_a_plus:
-                                armor.Skill_1 = SkillDataValueClass.Hunger_Resistance;
-                                armor.Skill_1_Level = 10;
-                                armor.Skill_2 = SkillDataValueClass.Maximum_Might;
-                                armor.Skill_2_Level = 10;
-                                armor.Skill_3 = SkillDataValueClass.Mind_s_Eye_Ballistics;
-                                armor.Skill_3_Level = 10;
-                                break;
-                            case ArmorDataValueClass.Critical_Charm_II:
-                                armor.Skill_1 = SkillDataValueClass.Non_elemental_Boost;
-                                armor.Skill_1_Level = 10;
-                                armor.Skill_2 = SkillDataValueClass.Power_Prolonger;
-                                armor.Skill_2_Level = 10;
-                                armor.Skill_3 = SkillDataValueClass.Quick_Sheath;
-                                armor.Skill_3_Level = 10;
-                                break;
-                            // Gathering Set
-                            case ArmorDataValueClass.Guildwork_Body_a_plus:
-                                armor.Skill_1 = SkillDataValueClass.Cliffhanger;
-                                armor.Skill_1_Level = 10;
-                                armor.Skill_2 = SkillDataValueClass.Quick_Sheath;
-                                armor.Skill_2_Level = 10;
-                                armor.Skill_3 = SkillDataValueClass.Recovery_Speed;
-                                armor.Skill_3_Level = 10;
-                                break;
-                            case ArmorDataValueClass.Guildwork_Braces_a_plus:
-                                armor.Skill_1 = SkillDataValueClass.Honey_Hunter;
-                                armor.Skill_1_Level = 10;
-                                armor.Skill_2 = SkillDataValueClass.Master_Gatherer;
-                                armor.Skill_2_Level = 10;
-                                armor.Skill_3 = SkillDataValueClass.Pro_Transporter;
-                                armor.Skill_3_Level = 10;
-                                break;
-                            case ArmorDataValueClass.Guildwork_Waist_a_plus:
-                                armor.Skill_1 = SkillDataValueClass.Scoutfly_Range_Up;
-                                armor.Skill_1_Level = 10;
-                                armor.Skill_2 = SkillDataValueClass.Coldproof;
-                                armor.Skill_2_Level = 10;
-                                armor.Skill_3 = SkillDataValueClass.Heat_Guard;
-                                armor.Skill_3_Level = 10;
-                                break;
-                            case ArmorDataValueClass.Guildwork_Feet_a_plus:
-                                armor.Skill_1 = SkillDataValueClass.Hunger_Resistance;
-                                armor.Skill_1_Level = 10;
-                                armor.Skill_2 = SkillDataValueClass.Item_Prolonger;
-                                armor.Skill_2_Level = 10;
-                                armor.Skill_3 = SkillDataValueClass.Paralysis_Resistance;
-                                armor.Skill_3_Level = 10;
-                                break;
-                            case ArmorDataValueClass.Tremor_Charm_III:
-                                armor.Skill_1 = SkillDataValueClass.Forager_s_Luck;
-                                armor.Skill_1_Level = 10;
-                                armor.Skill_2 = SkillDataValueClass.Detector;
-                                armor.Skill_2_Level = 10;
-                                armor.Skill_3 = SkillDataValueClass.Scenthound;
-                                armor.Skill_3_Level = 10;
-                                break;
-                        }
-
-                        break;
-                    }
-                }
-            }
-        }
-
-        private void Btn_slot_cheat_Click(object sender, RoutedEventArgs e) {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            if (!targetFileType.Is(typeof(IWeapon), typeof(Armor), typeof(ASkill))) return;
-
-            foreach (var item in items) {
-                switch (item) {
-                    case ISlots _: {
-                        item.Slot_Count = 3;
-                        item.Slot_1_Size = 4;
-                        item.Slot_2_Size = 4;
-                        item.Slot_3_Size = 4;
-
-                        break;
-                    }
-                    case ASkill _: {
-                        ASkill aSkill = item;
-                        aSkill.Deco_Count = 2;
-                        aSkill.Deco_Lvl_1 = 4;
-                        aSkill.Deco_Lvl_2 = 4;
-
-                        break;
-                    }
-                }
-            }
-        }
-
-        private void Btn_set_bonus_cheat_Click(object sender, RoutedEventArgs e) {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            if (!targetFileType.Is(typeof(Armor))) return;
-
-            foreach (Armor item in items) {
-                if (item.Set_Skill_1_Level > 0) item.Set_Skill_1_Level = 5;
-            }
-        }
-
-        private void Btn_skill_level_cheat_Click(object sender, RoutedEventArgs e) {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            if (!targetFileType.Is(typeof(Gem), typeof(Armor))) return;
-
-            foreach (var item in items) {
-                switch (item) {
-                    case Gem _: {
-                        Gem gem = item;
-                        gem.Skill_1_Level = 10;
-                        if (gem.Skill_2_Level > 0) gem.Skill_2_Level = 10;
-                        break;
-                    }
-                    case Armor _: {
-                        Armor armor = item;
-                        if (armor.Skill_1_Level > 0) armor.Skill_1_Level = 10;
-                        if (armor.Skill_2_Level > 0) armor.Skill_2_Level = 10;
-                        if (armor.Skill_3_Level > 0) armor.Skill_3_Level = 10;
-                        break;
-                    }
-                }
-            }
-        }
-
-        private void Btn_cost_cheat_Click(object sender, RoutedEventArgs e) {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            if (!targetFileType.Is(typeof(Item), typeof(Armor), typeof(IWeapon), typeof(EqCrt), typeof(EqCus), typeof(NewLimitBreak), typeof(NewLimitBreak2))) return;
-
-            foreach (var item in items) {
-                switch (item) {
-                    case Item _: {
-                        Item itm = item;
-                        if (itm.Buy_Price > 0) itm.Buy_Price = 1;
-                        break;
-                    }
-                    case Armor _: {
-                        Armor armor = item;
-                        if (armor.Cost > 0) armor.Cost = 1;
-                        break;
-                    }
-                    case IWeapon _: {
-                        IWeapon weapon = item;
-                        if (weapon.Cost > 0) weapon.Cost = 1;
-                        break;
-                    }
-                    case EqCrt _: {
-                        EqCrt eqCrt = item;
-                        if (eqCrt.Mat_1_Count > 0) eqCrt.Mat_1_Count = 1;
-                        if (eqCrt.Mat_2_Count > 0) eqCrt.Mat_2_Count = 1;
-                        if (eqCrt.Mat_3_Count > 0) eqCrt.Mat_3_Count = 1;
-                        if (eqCrt.Mat_4_Count > 0) eqCrt.Mat_4_Count = 1;
-                        break;
-                    }
-                    case EqCus _: {
-                        EqCus eqCus = item;
-                        if (eqCus.Mat_1_Count > 0) eqCus.Mat_1_Count = 1;
-                        if (eqCus.Mat_2_Count > 0) eqCus.Mat_2_Count = 1;
-                        if (eqCus.Mat_3_Count > 0) eqCus.Mat_3_Count = 1;
-                        if (eqCus.Mat_4_Count > 0) eqCus.Mat_4_Count = 1;
-                        break;
-                    }
-                    case NewLimitBreak _: {
-                        NewLimitBreak newLimitBreak = item;
-                        if (newLimitBreak.Mat_1_Count > 0) newLimitBreak.Mat_1_Count = 1;
-                        if (newLimitBreak.Mat_2_Count > 0) newLimitBreak.Mat_2_Count = 1;
-                        if (newLimitBreak.Mat_3_Count > 0) newLimitBreak.Mat_3_Count = 1;
-                        if (newLimitBreak.Mat_4_Count > 0) newLimitBreak.Mat_4_Count = 1;
-                        break;
-                    }
-                    case NewLimitBreak2 _: {
-                        NewLimitBreak2 newLimitBreak2 = item;
-                        if (newLimitBreak2.Research_Cost_r10_ > 0) newLimitBreak2.Research_Cost_r10_ = 1;
-                        if (newLimitBreak2.Research_Cost_r11_ > 0) newLimitBreak2.Research_Cost_r11_ = 1;
-                        if (newLimitBreak2.Research_Cost_r12_ > 0) newLimitBreak2.Research_Cost_r12_ = 1;
-                        break;
-                    }
-                }
-            }
-        }
-
-        private void Btn_damage_cheat_Click(object sender, RoutedEventArgs e) {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            if (!targetFileType.Is(typeof(IWeapon), typeof(OtomoWeaponDat))) return;
-
-            foreach (var item in items) {
-                switch (item) {
-                    case OtomoWeaponDat _: {
-                        OtomoWeaponDat otomoWeapon = item;
-                        if (otomoWeapon.Melee_Damage > 0) otomoWeapon.Melee_Damage = 50000;
-                        if (otomoWeapon.Ranged_Damage > 0) otomoWeapon.Ranged_Damage = 50000;
-                        break;
-                    }
-                    case IWeapon _: {
-                        IWeapon weapon = item;
-                        if (weapon.Damage > 0) weapon.Damage = 50000;
-                        break;
-                    }
-                }
-            }
-        }
-
-        private void Btn_enable_all_coatings_cheat_Click(object sender, RoutedEventArgs e) {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            if (!targetFileType.Is(typeof(BottleTable))) return;
-
-            foreach (BottleTable item in items) {
-                item.Close_Range = CoatingType.Plus;
-                item.Power = CoatingType.Plus;
-                item.Paralysis = CoatingType.Plus;
-                item.Poison = CoatingType.Plus;
-                item.Sleep = CoatingType.Plus;
-                item.Blast = CoatingType.Plus;
-            }
-        }
-
-        private void Btn_max_sharpness_cheat_Click(object sender, RoutedEventArgs e) {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            if (!targetFileType.Is(typeof(Sharpness), typeof(Melee))) return;
-
-            foreach (var item in items) {
-                switch (item) {
-                    case Sharpness _: {
-                        Sharpness sharpness = item;
-                        sharpness.Red = 1;
-                        sharpness.Orange = 1;
-                        sharpness.Yellow = 1;
-                        sharpness.Green = 1;
-                        sharpness.Blue = 1;
-                        sharpness.White = 1;
-                        sharpness.Purple = 400;
-                        break;
-                    }
-                    case Melee _: {
-                        Melee weapon = item;
-                        if (weapon.Sharpness_Amount > 0) weapon.Sharpness_Amount = 5;
-                        break;
-                    }
-                }
-            }
-        }
-
-        private void Btn_unlock_skill_limit_cheat_Click(object sender, RoutedEventArgs e) {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            if (!targetFileType.Is(typeof(SkillDat))) return;
-
-            foreach (SkillDat item in items) {
-                item.Unlock_Skill_1 = 0;
-                item.Unlock_Skill_2 = 0;
-                item.Unlock_Skill_3 = 0;
-                item.Unlock_Skill_4 = 0;
-            }
-        }
-
-        private void Btn_sort_jewel_order_by_name_Click(object sender, RoutedEventArgs e) {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            if (!targetFileType.Is(typeof(Item))) return;
-
-            var rawList = new List<GemData>();
-            for (var i = 0; i < items.Count; i++) {
-                Item item = items[i];
-                if (item.Name.Contains(" Jewel")) {
-                    rawList.Add(new GemData {index = i, itemName = item.Name, sortOrder = item.Sort_Order});
-                }
-            }
-
-            // One list of the sorted "sortOrder"s.
-            var sortedSortIndexes = new List<GemData>(rawList)
-                                    .OrderBy(data => data.sortOrder)
-                                    .Select(data => data.sortOrder)
-                                    .ToList();
-            // And another list of item indexes, sorted by gem name.
-            var sortedGemNameIndexes = new List<GemData>(rawList)
-                                       .OrderBy(data => data.itemName)
-                                       .Select(data => data.index)
-                                       .ToList();
-
-            for (var i = 0; i < sortedSortIndexes.Count; i++) {
-                var index = sortedGemNameIndexes[i];
-                var newSortIndex = sortedSortIndexes[i];
-                Item item = items[index];
-                item.Sort_Order = newSortIndex;
-            }
-        }
-
         private string Open() {
             var ofdResult = new OpenFileDialog {
                 Filter = $"MHW Data Files (See mod description for full list.)|{string.Join(";", FILE_TYPES)}",
@@ -920,6 +564,7 @@ namespace MHW_Editor {
                 var buff = dat.ReadBytes((int) structSize);
 
                 object obj;
+                // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
                 if (targetFileType.Is(typeof(IWeapon))) {
                     obj = Activator.CreateInstance(targetFileType, buff, (ulong) position, weaponFilename);
                 } else {
@@ -940,6 +585,7 @@ namespace MHW_Editor {
                 dat.Read(buff, 0, (int) structSize);
 
                 object obj;
+                // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
                 if (targetFileType.Is(typeof(IWeapon))) {
                     obj = Activator.CreateInstance(targetFileType, buff, offset, weaponFilename);
                 } else {

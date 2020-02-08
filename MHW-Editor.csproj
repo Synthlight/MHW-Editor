@@ -105,6 +105,9 @@
     <Compile Include="Items\PlantItem.cs" />
     <Compile Include="Items\EqCus.cs" />
     <Compile Include="Items\EqCrt.cs" />
+    <Compile Include="MainWindow.xaml.buttons.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\ColumnHolder.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\ASkill.cs" />
