@@ -62,7 +62,7 @@ namespace MHW_Generator {
                 encryptionKey = EncryptionKeys.ROD_INSE_KEY,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Attack Type", 4, typeof(byte), typeof(OtomoAttackType)),
+                    new MhwStructData.Entry("Attack Type", 4, typeof(byte), typeof(AttackType)),
                     new MhwStructData.Entry("Id", 5, typeof(byte), true),
                     new MhwStructData.Entry("Tree Position Id", 6, typeof(byte)),
                     new MhwStructData.Entry("Base Model Id", 7, typeof(ushort)),
@@ -216,7 +216,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Id", 0, typeof(uint)),
                     new MhwStructData.Entry("Set Id", 4, typeof(ushort)),
                     new MhwStructData.Entry("Element", 6, typeof(byte), typeof(Element)),
-                    new MhwStructData.Entry("Attack Type", 7, typeof(byte), typeof(OtomoAttackType)),
+                    new MhwStructData.Entry("Attack Type", 7, typeof(byte), typeof(AttackType)),
                     new MhwStructData.Entry("Melee Damage", 9, typeof(ushort)),
                     new MhwStructData.Entry("Ranged Damage", 11, typeof(ushort)),
                     new MhwStructData.Entry("Elemental Damage", 13, typeof(ushort)),

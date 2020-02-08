@@ -56,10 +56,10 @@ namespace MHW_Editor.Weapons {
         public const int Attack_Type_sortIndex = 200;
         [SortOrder(Attack_Type_sortIndex)]
         [DisplayName(Attack_Type_displayName)]
-        public virtual MHW_Template.Weapons.OtomoAttackType Attack_Type {
-            get => (MHW_Template.Weapons.OtomoAttackType) GetData<byte>(7);
+        public virtual MHW_Template.Weapons.AttackType Attack_Type {
+            get => (MHW_Template.Weapons.AttackType) GetData<byte>(7);
             set {
-                if ((MHW_Template.Weapons.OtomoAttackType) GetData<byte>(7) == value) return;
+                if ((MHW_Template.Weapons.AttackType) GetData<byte>(7) == value) return;
                 SetData(7, (byte) value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Attack_Type));
