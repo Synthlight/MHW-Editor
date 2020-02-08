@@ -55,6 +55,7 @@ namespace MHW_Editor {
             "*.oam_dat",
             "*.plfe",
             "*.plit",
+            "*.rod_inse",
             "*.sgpa",
             "*.shl_tbl",
             "*.skl_dat",
@@ -119,6 +120,15 @@ namespace MHW_Editor {
         private CancellationTokenSource savedTimer;
 
         public MainWindow() {
+#pragma warning disable 162
+            if (false) {
+                // ReSharper disable StringLiteralTypo
+                const string chunk = @"V:\MHW\IB\chunk_combined";
+                EncryptionHelper.Decrypt(EncryptionKeys.ROD_INSE_KEY, $@"{chunk}\common\equip\rod_insect.rod_inse", $@"{chunk}\common\equip\rod_insect.decrypted.rod_inse");
+                Close();
+                return;
+            }
+
             InitializeComponent();
 
             cbx_localization.ItemsSource = Global.LANGUAGE_NAME_LOOKUP;
@@ -144,6 +154,7 @@ namespace MHW_Editor {
 
             Width = SystemParameters.MaximizedPrimaryScreenWidth * 0.8;
             Height = SystemParameters.MaximizedPrimaryScreenHeight * 0.5;
+#pragma warning restore 162
         }
 
         private void Dg_items_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e) {
@@ -188,7 +199,8 @@ namespace MHW_Editor {
                                                  typeof(PlantItem),
                                                  typeof(MusicSkill),
                                                  typeof(MelderExchange),
-                                                 typeof(MelderItem));
+                                                 typeof(MelderItem),
+                                                 typeof(RodInsect));
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
@@ -302,10 +314,8 @@ namespace MHW_Editor {
         private void Dg_items_GotFocus(object sender, RoutedEventArgs e) {
             // Lookup for the source to be DataGridCell
             if (SingleClickToEditMode && e.OriginalSource is DataGridCell cell) {
-                if (cell.Content is TextBlock && cell.Column is DataGridTextColumn) {
-                    Dg_items_cell_MouseClick(cell, null);
-                    return;
-                }
+                // Needs to only happen when it's a button. If not, we stop regular fields from working.
+                if (CheckCellForButtonTypeAndHandleClick(cell)) return;
 
                 // Starts the Edit on the row;
                 dg_items.BeginEdit(e);
@@ -321,14 +331,22 @@ namespace MHW_Editor {
                 // We come here on both single & double click. If we don't check for focus, this hijacks the click and prevents focusing.
                 if (e?.ClickCount == 1 && !cell.IsFocused) return;
 
-                // Have to loop though our column list to file the original property name.
-                foreach (var propertyName in columnMap.Keys.Where(key => key.Contains("_button"))) {
-                    if (cell.Column != columnMap[propertyName].column) continue;
-
-                    EditSelectedItemId(cell, propertyName);
-                    break;
-                }
+                CheckCellForButtonTypeAndHandleClick(cell);
             }
+        }
+
+        private bool CheckCellForButtonTypeAndHandleClick(DataGridCell cell) {
+            if (!(cell.Content is TextBlock)) return false;
+
+            // Have to loop though our column list to file the original property name.
+            foreach (var propertyName in columnMap.Keys.Where(key => key.Contains("_button"))) {
+                if (cell.Column != columnMap[propertyName].column) continue;
+
+                EditSelectedItemId(cell, propertyName);
+                return true;
+            }
+
+            return false;
         }
 
         private void EditSelectedItemId(FrameworkElement cell, string propertyName) {
@@ -1022,6 +1040,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".owp_dat")) return typeof(OtomoWeaponDat);
             if (fileName.EndsWith(".plfe")) return typeof(PlantFertilizer);
             if (fileName.EndsWith(".plit")) return typeof(PlantItem);
+            if (fileName.EndsWith(".rod_inse")) return typeof(RodInsect);
             if (fileName.EndsWith(".sgpa")) return typeof(Gem);
             if (fileName.EndsWith(".shl_tbl")) return typeof(ShellTable);
             if (fileName.EndsWith(".skl_dat")) return typeof(SkillDat);

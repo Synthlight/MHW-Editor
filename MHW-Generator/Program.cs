@@ -51,6 +51,33 @@ namespace MHW_Generator {
             GenMusicSkill();
             GenMelderItem();
             GenMelderExchange();
+            GenRodInsect();
+        }
+
+        private static void GenRodInsect() {
+            GenerateItemProps("MHW_Editor.Weapons", "RodInsect", new MhwStructData { // .rod_inse
+                size = 28,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                encryptionKey = EncryptionKeys.ROD_INSE_KEY,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Index", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Attack Type", 4, typeof(byte), typeof(OtomoAttackType)),
+                    new MhwStructData.Entry("Id", 5, typeof(byte)),
+                    new MhwStructData.Entry("Tree Position Id", 6, typeof(byte)),
+                    new MhwStructData.Entry("Base Model Id", 7, typeof(ushort)),
+                    new MhwStructData.Entry("Tree Id", 9, typeof(byte)),
+                    new MhwStructData.Entry("Craft Cost", 10, typeof(uint)),
+                    new MhwStructData.Entry("Rarity", 14, typeof(byte)),
+                    new MhwStructData.Entry("Power", 15, typeof(ushort)),
+                    new MhwStructData.Entry("Speed", 17, typeof(ushort)),
+                    new MhwStructData.Entry("Heal", 19, typeof(ushort)),
+                    new MhwStructData.Entry("Element", 21, typeof(ushort)),
+                    new MhwStructData.Entry("Dust Effect", 23, typeof(ushort)),
+                    new MhwStructData.Entry("Tree Pos", 25, typeof(byte)),
+                    new MhwStructData.Entry("Equip Id", 26, typeof(ushort))
+                }
+            });
         }
 
         private static void GenMelderExchange() {
