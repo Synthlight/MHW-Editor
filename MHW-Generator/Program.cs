@@ -581,7 +581,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Is Fixed Upgrade Raw", 15, typeof(byte), accessLevel: "private"),
                     new MhwStructData.Entry("Cost", 16, typeof(uint)),
                     new MhwStructData.Entry("Rarity", 20, typeof(byte)),
-                    new MhwStructData.Entry("Sharpness Quality", 21, typeof(byte)),
+                    new MhwStructData.Entry("Sharpness (.kire) Id", 21, typeof(byte)),
                     new MhwStructData.Entry("Sharpness Amount", 22, typeof(byte)),
                     new MhwStructData.Entry("Damage", 23, typeof(ushort)),
                     new MhwStructData.Entry("Defense", 25, typeof(ushort)),

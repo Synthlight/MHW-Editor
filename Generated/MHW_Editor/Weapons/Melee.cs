@@ -110,17 +110,17 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const string Sharpness_Quality_displayName = "Sharpness Quality";
-        public const int Sharpness_Quality_sortIndex = 450;
-        [SortOrder(Sharpness_Quality_sortIndex)]
-        [DisplayName(Sharpness_Quality_displayName)]
-        public virtual byte Sharpness_Quality {
+        public const string Sharpness_kire_Id_displayName = "Sharpness (.kire) Id";
+        public const int Sharpness_kire_Id_sortIndex = 450;
+        [SortOrder(Sharpness_kire_Id_sortIndex)]
+        [DisplayName(Sharpness_kire_Id_displayName)]
+        public virtual byte Sharpness_kire_Id {
             get => GetData<byte>(21);
             set {
                 if (GetData<byte>(21) == value) return;
                 SetData(21, value);
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Sharpness_Quality));
+                OnPropertyChanged(nameof(Sharpness_kire_Id));
             }
         }
 
