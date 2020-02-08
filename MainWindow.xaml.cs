@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -35,6 +36,7 @@ namespace MHW_Editor {
         private const bool ENABLE_CHEAT_BUTTONS = false;
         private const bool SHOW_RAW_BYTES = false;
 #endif
+        [SuppressMessage("ReSharper", "StringLiteralTypo")]
         private static readonly string[] FILE_TYPES = {
             "*.am_dat",
             "*.arm_up",
@@ -171,36 +173,36 @@ namespace MHW_Editor {
                 case nameof(IMhwItem.Raw_Data):
                     e.Cancel = !SHOW_RAW_BYTES; // Only for debug builds.
                     break;
-                case nameof(Ranged.Muzzle_Type):
                 case nameof(Ranged.Barrel_Type):
+                case nameof(Ranged.Deviation):
                 case nameof(Ranged.Magazine_Type):
+                case nameof(Ranged.Muzzle_Type):
                 case nameof(Ranged.Scope_Type):
                 case nameof(Ranged.Shell_Type_Id):
-                case nameof(Ranged.Deviation):
                     e.Cancel = targetFileType.Is(typeof(Bow));
                     break;
                 case nameof(IMhwItem.Name): // None of the following have names.
-                    e.Cancel = targetFileType.Is(typeof(BottleTable),
-                                                 typeof(ArmUp),
+                    e.Cancel = targetFileType.Is(typeof(ArmUp),
+                                                 typeof(ASkill),
+                                                 typeof(DecoPercent),
+                                                 typeof(EqCrt),
+                                                 typeof(EqCus),
+                                                 typeof(MelderExchange),
+                                                 typeof(MelderItem),
+                                                 typeof(MusicSkill),
+                                                 typeof(NewLimitBreak),
+                                                 typeof(NewLimitBreak2),
+                                                 typeof(PlantFertilizer),
+                                                 typeof(PlantItem),
+                                                 typeof(RodInsect),
                                                  typeof(Sharpness),
                                                  typeof(ShellTable),
                                                  typeof(SkillDat),
-                                                 typeof(DecoPercent),
-                                                 typeof(NewLimitBreak),
-                                                 typeof(NewLimitBreak2),
-                                                 typeof(WeaponWSword),
-                                                 typeof(WeaponWhistle),
-                                                 typeof(WeaponGunLance),
                                                  typeof(SkillPointData),
-                                                 typeof(ASkill),
-                                                 typeof(EqCrt),
-                                                 typeof(EqCus),
-                                                 typeof(PlantFertilizer),
-                                                 typeof(PlantItem),
-                                                 typeof(MusicSkill),
-                                                 typeof(MelderExchange),
-                                                 typeof(MelderItem),
-                                                 typeof(RodInsect));
+                                                 typeof(WeaponGunLance),
+                                                 typeof(WeaponWhistle),
+                                                 typeof(WeaponWSword),
+                                                 typeof(BottleTable));
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
@@ -209,32 +211,32 @@ namespace MHW_Editor {
                     e.Cancel = targetFileType.Is(typeof(DecoPercent));
                     break;
                 case nameof(SkillDat.Index):
-                    e.Cancel = targetFileType.Is(typeof(SkillDat),
-                                                 typeof(DecoGradeLottery),
+                    e.Cancel = targetFileType.Is(typeof(DecoGradeLottery),
                                                  typeof(DecoLottery),
                                                  typeof(Gem),
                                                  typeof(Melee),
-                                                 typeof(Ranged));
+                                                 typeof(Ranged),
+                                                 typeof(SkillDat));
                     break;
-                case nameof(EqCrt.Mat_1_Id):
-                case nameof(EqCrt.Mat_2_Id):
-                case nameof(EqCrt.Mat_3_Id):
-                case nameof(EqCrt.Mat_4_Id):
-                case nameof(NewLimitBreak.Needed_Item_Id_to_Unlock):
-                case nameof(ASkill.Mantle_Item_Id):
                 case nameof(Armor.Set_Skill_1):
                 case nameof(Armor.Set_Skill_2):
                 case nameof(Armor.Skill_1):
                 case nameof(Armor.Skill_2):
                 case nameof(Armor.Skill_3):
+                case nameof(ASkill.Mantle_Item_Id):
+                case nameof(EqCrt.Mat_1_Id):
+                case nameof(EqCrt.Mat_2_Id):
+                case nameof(EqCrt.Mat_3_Id):
+                case nameof(EqCrt.Mat_4_Id):
+                case nameof(MelderExchange.Source_Item_Id):
+                case nameof(MelderItem.Result_Item_Id):
                 case nameof(Melee.Skill):
+                case nameof(NewLimitBreak.Needed_Item_Id_to_Unlock):
                 case nameof(PlantItem.Item):
                 case nameof(SkillDat.Unlock_Skill_1):
                 case nameof(SkillDat.Unlock_Skill_2):
                 case nameof(SkillDat.Unlock_Skill_3):
                 case nameof(SkillDat.Unlock_Skill_4):
-                case nameof(MelderExchange.Source_Item_Id):
-                case nameof(MelderItem.Result_Item_Id):
                     e.Cancel = true; // Cancel for itemId/skillId columns as we will use a text version with onClick opening a selector.
                     break;
                 default:

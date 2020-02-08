@@ -37,11 +37,6 @@ namespace MHW_Editor.Weapons {
         [DisplayName(Id_displayName)]
         public virtual byte Id {
             get => GetData<byte>(5);
-            set {
-                if (GetData<byte>(5) == value) return;
-                SetData(5, value);
-                OnPropertyChanged(nameof(Id));
-            }
         }
 
         public const string Tree_Position_Id_displayName = "Tree Position Id";

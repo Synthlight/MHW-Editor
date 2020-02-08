@@ -63,7 +63,7 @@ namespace MHW_Generator {
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Attack Type", 4, typeof(byte), typeof(OtomoAttackType)),
-                    new MhwStructData.Entry("Id", 5, typeof(byte)),
+                    new MhwStructData.Entry("Id", 5, typeof(byte), true),
                     new MhwStructData.Entry("Tree Position Id", 6, typeof(byte)),
                     new MhwStructData.Entry("Base Model Id", 7, typeof(ushort)),
                     new MhwStructData.Entry("Tree Id", 9, typeof(byte)),
