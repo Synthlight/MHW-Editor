@@ -73,7 +73,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Speed", 17, typeof(ushort)),
                     new MhwStructData.Entry("Heal", 19, typeof(ushort)),
                     new MhwStructData.Entry("Element", 21, typeof(ushort)),
-                    new MhwStructData.Entry("Dust Effect", 23, typeof(ushort)),
+                    new MhwStructData.Entry("Dust Effect", 23, typeof(ushort), typeof(DustEffect)),
                     new MhwStructData.Entry("Tree Pos", 25, typeof(byte)),
                     new MhwStructData.Entry("Equip Id", 26, typeof(ushort))
                 }

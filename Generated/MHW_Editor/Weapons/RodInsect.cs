@@ -170,11 +170,11 @@ namespace MHW_Editor.Weapons {
         public const int Dust_Effect_sortIndex = 650;
         [SortOrder(Dust_Effect_sortIndex)]
         [DisplayName(Dust_Effect_displayName)]
-        public virtual ushort Dust_Effect {
-            get => GetData<ushort>(23);
+        public virtual MHW_Template.Weapons.DustEffect Dust_Effect {
+            get => (MHW_Template.Weapons.DustEffect) GetData<ushort>(23);
             set {
-                if (GetData<ushort>(23) == value) return;
-                SetData(23, value);
+                if ((MHW_Template.Weapons.DustEffect) GetData<ushort>(23) == value) return;
+                SetData(23, (ushort) value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Dust_Effect));
             }
