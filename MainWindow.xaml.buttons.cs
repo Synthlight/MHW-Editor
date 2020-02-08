@@ -204,7 +204,7 @@ namespace MHW_Editor {
         private void Btn_cost_cheat_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!targetFileType.Is(typeof(Item), typeof(Armor), typeof(IWeapon), typeof(EqCrt), typeof(EqCus), typeof(NewLimitBreak), typeof(NewLimitBreak2))) return;
+            if (!targetFileType.Is(typeof(Item), typeof(Armor), typeof(IWeapon), typeof(EqCrt), typeof(EqCus), typeof(NewLimitBreakR), typeof(NewLimitBreak))) return;
 
             foreach (var item in items) {
                 switch (item) {
@@ -239,19 +239,19 @@ namespace MHW_Editor {
                         if (eqCus.Mat_4_Count > 0) eqCus.Mat_4_Count = 1;
                         break;
                     }
-                    case NewLimitBreak _: {
-                        NewLimitBreak newLimitBreak = item;
-                        if (newLimitBreak.Mat_1_Count > 0) newLimitBreak.Mat_1_Count = 1;
-                        if (newLimitBreak.Mat_2_Count > 0) newLimitBreak.Mat_2_Count = 1;
-                        if (newLimitBreak.Mat_3_Count > 0) newLimitBreak.Mat_3_Count = 1;
-                        if (newLimitBreak.Mat_4_Count > 0) newLimitBreak.Mat_4_Count = 1;
+                    case NewLimitBreakR _: {
+                        NewLimitBreakR newLimitBreakR = item;
+                        if (newLimitBreakR.Mat_1_Count > 0) newLimitBreakR.Mat_1_Count = 1;
+                        if (newLimitBreakR.Mat_2_Count > 0) newLimitBreakR.Mat_2_Count = 1;
+                        if (newLimitBreakR.Mat_3_Count > 0) newLimitBreakR.Mat_3_Count = 1;
+                        if (newLimitBreakR.Mat_4_Count > 0) newLimitBreakR.Mat_4_Count = 1;
                         break;
                     }
-                    case NewLimitBreak2 _: {
-                        NewLimitBreak2 newLimitBreak2 = item;
-                        if (newLimitBreak2.Research_Cost_r10_ > 0) newLimitBreak2.Research_Cost_r10_ = 1;
-                        if (newLimitBreak2.Research_Cost_r11_ > 0) newLimitBreak2.Research_Cost_r11_ = 1;
-                        if (newLimitBreak2.Research_Cost_r12_ > 0) newLimitBreak2.Research_Cost_r12_ = 1;
+                    case NewLimitBreak _: {
+                        NewLimitBreak newLimitBreak = item;
+                        if (newLimitBreak.Research_Cost_r10_ > 0) newLimitBreak.Research_Cost_r10_ = 1;
+                        if (newLimitBreak.Research_Cost_r11_ > 0) newLimitBreak.Research_Cost_r11_ = 1;
+                        if (newLimitBreak.Research_Cost_r12_ > 0) newLimitBreak.Research_Cost_r12_ = 1;
                         break;
                     }
                 }

@@ -93,7 +93,7 @@
     <Compile Include="Generated\MHW_Editor\Items\PlantItem.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\MusicSkill.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
-    <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak2.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\OtomoWeaponDat.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\RodInsect.cs" />
     <Compile Include="GetNewItemId.xaml.cs">
@@ -124,7 +124,7 @@
     <Compile Include="Generated\MHW_Editor\Items\BottleTable.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDat.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillPointData.cs" />
-    <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreakR.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Sharpness.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\ShellTable.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\WeaponGunLance.cs" />
@@ -145,7 +145,7 @@
     <Compile Include="Models\ISlots.cs" />
     <Compile Include="Skills\SkillPointData.cs" />
     <Compile Include="Weapons\Bow.cs" />
-    <Compile Include="Weapons\NewLimitBreak2.cs" />
+    <Compile Include="Weapons\NewLimitBreak.cs" />
     <Compile Include="Weapons\OtomoWeaponDat.cs" />
     <Compile Include="Weapons\RodInsect.cs" />
     <Compile Include="Weapons\Sharpness.cs" />
@@ -153,7 +153,7 @@
     <Compile Include="Weapons\IWeapon.cs" />
     <Compile Include="Weapons\Melee.cs" />
     <Compile Include="Weapons\Ranged.cs" />
-    <Compile Include="Weapons\NewLimitBreak.cs" />
+    <Compile Include="Weapons\NewLimitBreakR.cs" />
     <Compile Include="Weapons\ShellTable.cs" />
     <Compile Include="Weapons\WeaponSwitchAxe.cs" />
     <Compile Include="Weapons\WeaponWhistle.cs" />

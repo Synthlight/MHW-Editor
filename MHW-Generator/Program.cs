@@ -31,8 +31,8 @@ namespace MHW_Generator {
             GenRanged();
             GenSharpness();
             GenShellTable();
+            GenNewLimitBreakR();
             GenNewLimitBreak();
-            GenNewLimitBreak2();
             GenWeaponWSword();
             GenWeaponWhistle();
             GenWeaponGunLance();
@@ -413,8 +413,8 @@ namespace MHW_Generator {
             });
         }
 
-        private static void GenNewLimitBreak2() { // .new_lb
-            GenerateItemProps("MHW_Editor.Weapons", "NewLimitBreak2", new MhwStructData {
+        private static void GenNewLimitBreak() { // .new_lb
+            GenerateItemProps("MHW_Editor.Weapons", "NewLimitBreak", new MhwStructData {
                 size = 24,
                 offsetInitial = 10,
                 entryCountOffset = 6,
@@ -429,8 +429,8 @@ namespace MHW_Generator {
             });
         }
 
-        private static void GenNewLimitBreak() { // .new_lbr
-            GenerateItemProps("MHW_Editor.Weapons", "NewLimitBreak", new MhwStructData {
+        private static void GenNewLimitBreakR() { // .new_lbr
+            GenerateItemProps("MHW_Editor.Weapons", "NewLimitBreakR", new MhwStructData {
                 size = 38,
                 offsetInitial = 10,
                 entryCountOffset = 6,

@@ -89,7 +89,7 @@ namespace MHW_Editor {
                                            nameof(EqCrt.Mat_2_Id_button),
                                            nameof(EqCrt.Mat_3_Id_button),
                                            nameof(EqCrt.Mat_4_Id_button),
-                                           nameof(NewLimitBreak.Needed_Item_Id_to_Unlock_button),
+                                           nameof(NewLimitBreakR.Needed_Item_Id_to_Unlock_button),
                                            nameof(ASkill.Mantle_Item_Id_button),
                                            nameof(Armor.Set_Skill_1_button),
                                            nameof(Armor.Set_Skill_2_button),
@@ -126,7 +126,8 @@ namespace MHW_Editor {
             if (false) {
                 // ReSharper disable StringLiteralTypo
                 const string chunk = @"V:\MHW\IB\chunk_combined";
-                EncryptionHelper.Decrypt(EncryptionKeys.ROD_INSE_KEY, $@"{chunk}\common\equip\rod_insect.rod_inse", $@"{chunk}\common\equip\rod_insect.decrypted.rod_inse");
+                EncryptionHelper.Decrypt(EncryptionKeys.CUS_PAR_KEY, $@"{chunk}\common\equip\customParts.cus_pa", $@"{chunk}\common\equip\customParts.decrypted.cus_pa");
+                EncryptionHelper.Decrypt(EncryptionKeys.CUS_PAR_KEY, $@"{chunk}\common\equip\customParts.cus_par", $@"{chunk}\common\equip\customParts.decrypted.cus_par");
                 Close();
                 return;
             }
@@ -171,8 +172,8 @@ namespace MHW_Editor {
                                                  typeof(MelderExchange),
                                                  typeof(MelderItem),
                                                  typeof(MusicSkill),
+                                                 typeof(NewLimitBreakR),
                                                  typeof(NewLimitBreak),
-                                                 typeof(NewLimitBreak2),
                                                  typeof(PlantFertilizer),
                                                  typeof(PlantItem),
                                                  typeof(Sharpness),
@@ -212,7 +213,7 @@ namespace MHW_Editor {
                 case nameof(MelderExchange.Source_Item_Id):
                 case nameof(MelderItem.Result_Item_Id):
                 case nameof(Melee.Skill):
-                case nameof(NewLimitBreak.Needed_Item_Id_to_Unlock):
+                case nameof(NewLimitBreakR.Needed_Item_Id_to_Unlock):
                 case nameof(PlantItem.Item):
                 case nameof(SkillDat.Unlock_Skill_1):
                 case nameof(SkillDat.Unlock_Skill_2):
@@ -490,7 +491,7 @@ namespace MHW_Editor {
                 btn_slot_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(IWeapon), typeof(ASkill)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_skill_level_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Gem)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_set_bonus_cheat.Visibility = targetFileType.Is(typeof(Armor)) ? Visibility.Visible : Visibility.Collapsed;
-                btn_cost_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Item), typeof(IWeapon), typeof(EqCrt), typeof(EqCus), typeof(NewLimitBreak), typeof(NewLimitBreak2)) ? Visibility.Visible : Visibility.Collapsed;
+                btn_cost_cheat.Visibility = targetFileType.Is(typeof(Armor), typeof(Item), typeof(IWeapon), typeof(EqCrt), typeof(EqCus), typeof(NewLimitBreakR), typeof(NewLimitBreak)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_damage_cheat.Visibility = targetFileType.Is(typeof(IWeapon), typeof(OtomoWeaponDat)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_enable_all_coatings_cheat.Visibility = targetFileType.Is(typeof(BottleTable)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_max_sharpness_cheat.Visibility = targetFileType.Is(typeof(Sharpness), typeof(Melee)) ? Visibility.Visible : Visibility.Collapsed;
@@ -668,8 +669,8 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".mkex")) return typeof(MelderExchange);
             if (fileName.EndsWith(".mkit")) return typeof(MelderItem);
             if (fileName.EndsWith(".msk")) return typeof(MusicSkill);
-            if (fileName.EndsWith(".new_lb")) return typeof(NewLimitBreak2);
-            if (fileName.EndsWith(".new_lbr")) return typeof(NewLimitBreak);
+            if (fileName.EndsWith(".new_lb")) return typeof(NewLimitBreak);
+            if (fileName.EndsWith(".new_lbr")) return typeof(NewLimitBreakR);
             if (fileName.EndsWith(".oam_dat")) return typeof(OtomoArmorDat);
             if (fileName.EndsWith(".owp_dat")) return typeof(OtomoWeaponDat);
             if (fileName.EndsWith(".plfe")) return typeof(PlantFertilizer);
