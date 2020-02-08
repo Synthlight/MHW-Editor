@@ -491,6 +491,7 @@ namespace MHW_Editor {
                 btn_enable_all_coatings_cheat.Visibility = targetFileType.Is(typeof(BottleTable)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_max_sharpness_cheat.Visibility = targetFileType.Is(typeof(Sharpness), typeof(Melee)) ? Visibility.Visible : Visibility.Collapsed;
                 btn_unlock_skill_limit_cheat.Visibility = targetFileType.Is(typeof(SkillDat)) ? Visibility.Visible : Visibility.Collapsed;
+                btn_fast_reload_rapid_fire_cheat.Visibility = targetFileType.Is(typeof(ShellTable)) ? Visibility.Visible : Visibility.Collapsed;
             }
 #pragma warning restore 162
 

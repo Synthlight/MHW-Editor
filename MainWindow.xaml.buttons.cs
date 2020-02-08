@@ -340,7 +340,80 @@ namespace MHW_Editor {
 
             if (!targetFileType.Is(typeof(ShellTable))) return;
 
+            const int reloadSpeed = 17;
+            const int recoilAmount = 28;
+
             foreach (ShellTable item in items) {
+                item.Normal_1_Rel_Spd = reloadSpeed;
+                item.Normal_1_Rec_Amnt = recoilAmount;
+                item.Normal_2_Rel_Spd = reloadSpeed;
+                item.Normal_2_Rec_Amnt = recoilAmount;
+                item.Normal_3_Rel_Spd = reloadSpeed;
+                item.Normal_3_Rec_Amnt = recoilAmount;
+                item.Pierce_1_Rel_Spd = reloadSpeed;
+                item.Pierce_1_Rec_Amnt = recoilAmount;
+                item.Pierce_2_Rel_Spd = reloadSpeed;
+                item.Pierce_2_Rec_Amnt = recoilAmount;
+                item.Pierce_3_Rel_Spd = reloadSpeed;
+                item.Pierce_3_Rec_Amnt = recoilAmount;
+                item.Spread_1_Rel_Spd = reloadSpeed;
+                item.Spread_1_Rec_Amnt = recoilAmount;
+                item.Spread_2_Rel_Spd = reloadSpeed;
+                item.Spread_2_Rec_Amnt = recoilAmount;
+                item.Spread_3_Rel_Spd = reloadSpeed;
+                item.Spread_3_Rec_Amnt = recoilAmount;
+                item.Cluster_1_Rel_Spd = reloadSpeed;
+                //item.Cluster_1_Rec_Amnt = recoilAmount;
+                item.Cluster_2_Rel_Spd = reloadSpeed;
+                //item.Cluster_2_Rec_Amnt = recoilAmount;
+                item.Cluster_3_Rel_Spd = reloadSpeed;
+                //item.Cluster_3_Rec_Amnt = recoilAmount;
+                item.Wyvern_Rel_Spd = reloadSpeed;
+                //item.Wyvern_Rec_Amnt = recoilAmount;
+                item.Sticky_1_Rel_Spd = reloadSpeed;
+                item.Sticky_1_Rec_Amnt = recoilAmount;
+                item.Sticky_2_Rel_Spd = reloadSpeed;
+                item.Sticky_2_Rec_Amnt = recoilAmount;
+                item.Sticky_3_Rel_Spd = reloadSpeed;
+                item.Sticky_3_Rec_Amnt = recoilAmount;
+                item.Slicing_Rel_Spd = reloadSpeed;
+                item.Slicing_Rec_Amnt = recoilAmount;
+                item.Flaming_Rel_Spd = reloadSpeed;
+                item.Flaming_Rec_Amnt = recoilAmount;
+                item.Water_Rel_Spd = reloadSpeed;
+                item.Water_Rec_Amnt = recoilAmount;
+                item.Freeze_Rel_Spd = reloadSpeed;
+                item.Freeze_Rec_Amnt = recoilAmount;
+                item.Thunder_Rel_Spd = reloadSpeed;
+                item.Thunder_Rec_Amnt = recoilAmount;
+                item.Dragon_Rel_Spd = reloadSpeed;
+                item.Dragon_Rec_Amnt = recoilAmount;
+                item.Poison_1_Rel_Spd = reloadSpeed;
+                item.Poison_1_Rec_Amnt = recoilAmount;
+                item.Poison_2_Rel_Spd = reloadSpeed;
+                item.Poison_2_Rec_Amnt = recoilAmount;
+                item.Paralysis_1_Rel_Spd = reloadSpeed;
+                item.Paralysis_1_Rec_Amnt = recoilAmount;
+                item.Paralysis_2_Rel_Spd = reloadSpeed;
+                item.Paralysis_2_Rec_Amnt = recoilAmount;
+                item.Sleep_1_Rel_Spd = reloadSpeed;
+                item.Sleep_1_Rec_Amnt = recoilAmount;
+                item.Sleep_2_Rel_Spd = reloadSpeed;
+                item.Sleep_2_Rec_Amnt = recoilAmount;
+                item.Exhaust_1_Rel_Spd = reloadSpeed;
+                item.Exhaust_1_Rec_Amnt = recoilAmount;
+                item.Exhaust_2_Rel_Spd = reloadSpeed;
+                item.Exhaust_2_Rec_Amnt = recoilAmount;
+                item.Recover_1_Rel_Spd = reloadSpeed;
+                item.Recover_1_Rec_Amnt = recoilAmount;
+                item.Recover_2_Rel_Spd = reloadSpeed;
+                item.Recover_2_Rec_Amnt = recoilAmount;
+                item.Demon_Rel_Spd = reloadSpeed;
+                item.Demon_Rec_Amnt = recoilAmount;
+                item.Armor_Rel_Spd = reloadSpeed;
+                item.Armor_Rec_Amnt = recoilAmount;
+                item.Tranq_Rel_Spd = reloadSpeed;
+                item.Tranq_Rec_Amnt = recoilAmount;
             }
         }
 

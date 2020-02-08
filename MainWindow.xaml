@@ -125,7 +125,7 @@
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"
                         Click="Btn_fast_reload_rapid_fire_Click"
-                        Content="Remove Skill Limits"
+                        Content="Fast Reload &amp; Rapid Fire"
                         Visibility="Collapsed"/>
                 <Button Name="btn_sort_jewel_order_by_name"
                         Margin="8,0,0,0"
