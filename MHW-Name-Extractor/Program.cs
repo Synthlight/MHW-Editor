@@ -22,6 +22,7 @@ namespace MHW_Name_Extractor {
                 GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\vfont\skill_pt_{lang}.gmd", $@"{ROOT_OUTPUT}\SkillData\{lang}_skillData.json");
                 GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\ot_weapon_{lang}.gmd", $@"{ROOT_OUTPUT}\OtomoData\{lang}_otomo_weaponData.json");
                 GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\ot_armor_{lang}.gmd", $@"{ROOT_OUTPUT}\OtomoData\{lang}_otomo_armorData.json");
+                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\vfont\rod_insect_{lang}.gmd", $@"{ROOT_OUTPUT}\InsectData\{lang}_insectData.json");
                 // Not sure how it connects to skill id.
                 //GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\vfont\music_skill_{lang}.gmd", $@"{ROOT_OUTPUT}\MusicSkillData\{lang}_musicSkillData.json");
 

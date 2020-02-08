@@ -14,6 +14,7 @@ namespace MHW_Editor.Assets {
         public static readonly Dictionary<string, Dictionary<ushort, string>> otomoArmorData = new Dictionary<string, Dictionary<ushort, string>>();
         public static readonly Dictionary<string, Dictionary<ushort, string>> otomoWeaponData = new Dictionary<string, Dictionary<ushort, string>>();
         public static readonly Dictionary<ushort, IdNamePair> songData = new Dictionary<ushort, IdNamePair>();
+        public static readonly Dictionary<string, Dictionary<byte, string>> insectData = new Dictionary<string, Dictionary<byte, string>>();
 
         static DataHelper() {
             foreach (var lang in Global.LANGUAGES) {
@@ -24,6 +25,7 @@ namespace MHW_Editor.Assets {
                 armorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_armorData"));
                 otomoArmorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_otomo_armorData"));
                 otomoWeaponData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_otomo_weaponData"));
+                insectData[lang] = LoadDict<byte, string>(GetAsset($"{lang}_insectData"));
 
                 weaponData[lang] = new Dictionary<string, Dictionary<uint, string>>();
                 foreach (var weapon in Global.WEAPONS) {

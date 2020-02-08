@@ -75,6 +75,7 @@
     <Compile Include="Models\DataValuePair.cs" />
     <Compile Include="Weapons\AugmentationCategory.cs" />
     <Compile Include="Weapons\CoatingType.cs" />
+    <Compile Include="Weapons\DustEffect.cs" />
     <Compile Include="Weapons\NoteColor.cs" />
     <Compile Include="Weapons\AttackType.cs" />
     <Compile Include="Weapons\MagazineType.cs" />

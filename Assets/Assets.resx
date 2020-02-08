@@ -136,6 +136,9 @@
   <data name="ara_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ara_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ara_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\ara_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ara_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\ara_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -192,6 +195,9 @@
   </data>
   <data name="chS_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\chs_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\chs_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chS_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\chs_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -250,6 +256,9 @@
   <data name="chT_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="chT_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\cht_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chT_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\cht_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -306,6 +315,9 @@
   </data>
   <data name="eng_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\eng_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\eng_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="eng_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\eng_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -364,6 +376,9 @@
   <data name="fre_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\fre_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="fre_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\fre_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="fre_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\fre_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -420,6 +435,9 @@
   </data>
   <data name="ger_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ger_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\ger_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ger_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\ger_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -478,6 +496,9 @@
   <data name="ita_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ita_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ita_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\ita_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ita_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\ita_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -534,6 +555,9 @@
   </data>
   <data name="jpn_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\jpn_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\jpn_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="jpn_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\jpn_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -592,6 +616,9 @@
   <data name="kor_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\kor_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="kor_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\kor_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="kor_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\kor_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -648,6 +675,9 @@
   </data>
   <data name="pol_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\pol_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\pol_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pol_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\pol_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -706,6 +736,9 @@
   <data name="ptB_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ptb_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ptB_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\ptb_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ptB_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\ptb_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -762,6 +795,9 @@
   </data>
   <data name="rus_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rus_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\rus_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rus_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\rus_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -822,6 +858,9 @@
   </data>
   <data name="spa_hbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_hbg.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_insectData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>insectdata\spa_insectdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="spa_itemData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>itemdata\spa_itemdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

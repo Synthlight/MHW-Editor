@@ -335,6 +335,15 @@ namespace MHW_Editor {
             }
         }
 
+        private void Btn_fast_reload_rapid_fire_Click(object sender, RoutedEventArgs e) {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            if (!targetFileType.Is(typeof(ShellTable))) return;
+
+            foreach (ShellTable item in items) {
+            }
+        }
+
         private void Btn_sort_jewel_order_by_name_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
