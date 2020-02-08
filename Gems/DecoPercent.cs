@@ -114,5 +114,29 @@ namespace MHW_Editor.Gems {
                 OnPropertyChanged(nameof(R13_percent));
             }
         }
+
+        private float streamR6Percent;
+
+        [SortOrder(DecoLottery.Stream_R6__sortIndex + 1)]
+        [DisplayName(DecoLottery.Stream_R6__displayName + "%")]
+        public float Stream_R6_percent {
+            get => streamR6Percent;
+            set {
+                streamR6Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Stream_R6_percent));
+            }
+        }
+
+        private float streamR8Percent;
+
+        [SortOrder(DecoLottery.Stream_R8__sortIndex + 1)]
+        [DisplayName(DecoLottery.Stream_R8__displayName + "%")]
+        public float Stream_R8_percent {
+            get => streamR8Percent;
+            set {
+                streamR8Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Stream_R8_percent));
+            }
+        }
     }
 }

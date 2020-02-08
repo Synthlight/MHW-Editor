@@ -144,13 +144,13 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("R6", 12, typeof(uint)),
                     new MhwStructData.Entry("R7", 16, typeof(uint)),
                     new MhwStructData.Entry("R8", 20, typeof(uint)),
-                    new MhwStructData.Entry("R9", 24, typeof(uint)),
-                    new MhwStructData.Entry("R10", 28, typeof(uint)),
-                    new MhwStructData.Entry("R11", 32, typeof(uint)),
-                    new MhwStructData.Entry("R12", 36, typeof(uint)),
-                    new MhwStructData.Entry("R13", 40, typeof(uint)),
-                    new MhwStructData.Entry("Unknown (uint32) 1", 44, typeof(uint)),
-                    new MhwStructData.Entry("Unknown (uint32) 2", 48, typeof(uint))
+                    new MhwStructData.Entry("R9", 32, typeof(uint)),
+                    new MhwStructData.Entry("R10", 36, typeof(uint)),
+                    new MhwStructData.Entry("R11", 40, typeof(uint)),
+                    new MhwStructData.Entry("R12", 44, typeof(uint)),
+                    new MhwStructData.Entry("R13", 48, typeof(uint)),
+                    new MhwStructData.Entry("Stream (R6)", 24, typeof(uint)),
+                    new MhwStructData.Entry("Stream (R8)", 28, typeof(uint))
                 }
             });
         }
@@ -167,13 +167,13 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("R6", 12, typeof(uint)),
                     new MhwStructData.Entry("R7", 16, typeof(uint)),
                     new MhwStructData.Entry("R8", 20, typeof(uint)),
-                    new MhwStructData.Entry("R9", 24, typeof(uint)),
-                    new MhwStructData.Entry("R10", 28, typeof(uint)),
-                    new MhwStructData.Entry("R11", 32, typeof(uint)),
-                    new MhwStructData.Entry("R12", 36, typeof(uint)),
-                    new MhwStructData.Entry("R13", 40, typeof(uint)),
-                    new MhwStructData.Entry("Unknown (uint32) 1", 44, typeof(uint)),
-                    new MhwStructData.Entry("Unknown (uint32) 2", 48, typeof(uint))
+                    new MhwStructData.Entry("R9", 32, typeof(uint)),
+                    new MhwStructData.Entry("R10", 36, typeof(uint)),
+                    new MhwStructData.Entry("R11", 40, typeof(uint)),
+                    new MhwStructData.Entry("R12", 44, typeof(uint)),
+                    new MhwStructData.Entry("R13", 48, typeof(uint)),
+                    new MhwStructData.Entry("Stream (R6)", 24, typeof(uint)),
+                    new MhwStructData.Entry("Stream (R8)", 28, typeof(uint))
                 }
             });
         }

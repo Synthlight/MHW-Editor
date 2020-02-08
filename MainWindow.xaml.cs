@@ -394,7 +394,7 @@ namespace MHW_Editor {
             if (!targetFileType.Is(typeof(DecoPercent))) return;
 
             var dict = new Dictionary<int, uint>();
-            for (var i = 5; i <= 13; i++) {
+            for (var i = 5; i <= 15; i++) {
                 dict[i] = 0;
             }
 
@@ -408,6 +408,8 @@ namespace MHW_Editor {
                 dict[11] += item.R11;
                 dict[12] += item.R12;
                 dict[13] += item.R13;
+                dict[14] += item.Stream_R6_;
+                dict[15] += item.Stream_R8_;
             }
 
             foreach (var item in items) {
@@ -420,6 +422,8 @@ namespace MHW_Editor {
                 item.R11_percent = item.R11 > 0f ? (float) item.R11 / dict[11] : 0f;
                 item.R12_percent = item.R12 > 0f ? (float) item.R12 / dict[12] : 0f;
                 item.R13_percent = item.R13 > 0f ? (float) item.R13 / dict[13] : 0f;
+                item.Stream_R6_percent = item.Stream_R6_ > 0f ? (float) item.Stream_R6_ / dict[14] : 0f;
+                item.Stream_R8_percent = item.Stream_R8_ > 0f ? (float) item.Stream_R8_ / dict[15] : 0f;
             }
         }
 

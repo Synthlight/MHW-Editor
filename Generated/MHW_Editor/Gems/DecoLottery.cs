@@ -87,10 +87,10 @@ namespace MHW_Editor.Gems {
         [SortOrder(R9_sortIndex)]
         [DisplayName(R9_displayName)]
         public virtual uint R9 {
-            get => GetData<uint>(24);
+            get => GetData<uint>(32);
             set {
-                if (GetData<uint>(24) == value) return;
-                SetData(24, value);
+                if (GetData<uint>(32) == value) return;
+                SetData(32, value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R9));
             }
@@ -101,10 +101,10 @@ namespace MHW_Editor.Gems {
         [SortOrder(R10_sortIndex)]
         [DisplayName(R10_displayName)]
         public virtual uint R10 {
-            get => GetData<uint>(28);
+            get => GetData<uint>(36);
             set {
-                if (GetData<uint>(28) == value) return;
-                SetData(28, value);
+                if (GetData<uint>(36) == value) return;
+                SetData(36, value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R10));
             }
@@ -115,10 +115,10 @@ namespace MHW_Editor.Gems {
         [SortOrder(R11_sortIndex)]
         [DisplayName(R11_displayName)]
         public virtual uint R11 {
-            get => GetData<uint>(32);
+            get => GetData<uint>(40);
             set {
-                if (GetData<uint>(32) == value) return;
-                SetData(32, value);
+                if (GetData<uint>(40) == value) return;
+                SetData(40, value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R11));
             }
@@ -129,10 +129,10 @@ namespace MHW_Editor.Gems {
         [SortOrder(R12_sortIndex)]
         [DisplayName(R12_displayName)]
         public virtual uint R12 {
-            get => GetData<uint>(36);
+            get => GetData<uint>(44);
             set {
-                if (GetData<uint>(36) == value) return;
-                SetData(36, value);
+                if (GetData<uint>(44) == value) return;
+                SetData(44, value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R12));
             }
@@ -143,40 +143,40 @@ namespace MHW_Editor.Gems {
         [SortOrder(R13_sortIndex)]
         [DisplayName(R13_displayName)]
         public virtual uint R13 {
-            get => GetData<uint>(40);
-            set {
-                if (GetData<uint>(40) == value) return;
-                SetData(40, value);
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(R13));
-            }
-        }
-
-        public const string Unknown_uint32_1_displayName = "Unknown (uint32) 1";
-        public const int Unknown_uint32_1_sortIndex = 600;
-        [SortOrder(Unknown_uint32_1_sortIndex)]
-        [DisplayName(Unknown_uint32_1_displayName)]
-        public virtual uint Unknown_uint32_1 {
-            get => GetData<uint>(44);
-            set {
-                if (GetData<uint>(44) == value) return;
-                SetData(44, value);
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_uint32_1));
-            }
-        }
-
-        public const string Unknown_uint32_2_displayName = "Unknown (uint32) 2";
-        public const int Unknown_uint32_2_sortIndex = 650;
-        [SortOrder(Unknown_uint32_2_sortIndex)]
-        [DisplayName(Unknown_uint32_2_displayName)]
-        public virtual uint Unknown_uint32_2 {
             get => GetData<uint>(48);
             set {
                 if (GetData<uint>(48) == value) return;
                 SetData(48, value);
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_uint32_2));
+                OnPropertyChanged(nameof(R13));
+            }
+        }
+
+        public const string Stream_R6__displayName = "Stream (R6)";
+        public const int Stream_R6__sortIndex = 600;
+        [SortOrder(Stream_R6__sortIndex)]
+        [DisplayName(Stream_R6__displayName)]
+        public virtual uint Stream_R6_ {
+            get => GetData<uint>(24);
+            set {
+                if (GetData<uint>(24) == value) return;
+                SetData(24, value);
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Stream_R6_));
+            }
+        }
+
+        public const string Stream_R8__displayName = "Stream (R8)";
+        public const int Stream_R8__sortIndex = 650;
+        [SortOrder(Stream_R8__sortIndex)]
+        [DisplayName(Stream_R8__displayName)]
+        public virtual uint Stream_R8_ {
+            get => GetData<uint>(28);
+            set {
+                if (GetData<uint>(28) == value) return;
+                SetData(28, value);
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Stream_R8_));
             }
         }
 
