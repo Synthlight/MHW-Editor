@@ -80,6 +80,9 @@ namespace MHW_Editor {
         private DataGridRow coloredRow;
         private bool isManualEditCommit;
         public static Dictionary<ushort, IdNamePair> skillDatLookup = new Dictionary<ushort, IdNamePair>();
+        [CanBeNull]
+        private CancellationTokenSource savedTimer;
+        private readonly Brush backgroundBrush = (Brush) new BrushConverter().ConvertFrom("#c0e1fb");
 
         public static string locale = "eng";
         public string Locale {
@@ -122,9 +125,6 @@ namespace MHW_Editor {
         }
 
         public bool SingleClickToEditMode { get; set; } = true;
-
-        [CanBeNull]
-        private CancellationTokenSource savedTimer;
 
         public MainWindow() {
 #pragma warning disable 162
@@ -401,7 +401,7 @@ namespace MHW_Editor {
                 if (coloredRow != null) coloredRow.Background = Brushes.White;
                 coloredRow = cell.GetParent<DataGridRow>();
                 // ReSharper disable once PossibleNullReferenceException
-                coloredRow.Background = (Brush) new BrushConverter().ConvertFrom("#c0e1fb"); //Brushes.LightSteelBlue;
+                coloredRow.Background = backgroundBrush;
 
                 if (SingleClickToEditMode) {
                     // Needs to only happen when it's a button. If not, we stop regular fields from working.

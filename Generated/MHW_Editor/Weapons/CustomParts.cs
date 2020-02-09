@@ -18,31 +18,31 @@ namespace MHW_Editor.Weapons {
             get => GetData<uint>(0);
         }
 
-        public const string Unk1_displayName = "Unk1";
-        public const int Unk1_sortIndex = 100;
-        [SortOrder(Unk1_sortIndex)]
-        [DisplayName(Unk1_displayName)]
-        public virtual uint Unk1 {
-            get => GetData<uint>(4);
+        public const string Weapon_Type_displayName = "Weapon Type";
+        public const int Weapon_Type_sortIndex = 100;
+        [SortOrder(Weapon_Type_sortIndex)]
+        [DisplayName(Weapon_Type_displayName)]
+        public virtual MHW_Template.Weapons.WeaponType Weapon_Type {
+            get => (MHW_Template.Weapons.WeaponType) GetData<uint>(4);
             set {
-                if (GetData<uint>(4) == value) return;
-                SetData(4, value);
+                if ((MHW_Template.Weapons.WeaponType) GetData<uint>(4) == value) return;
+                SetData(4, (uint) value);
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk1));
+                OnPropertyChanged(nameof(Weapon_Type));
             }
         }
 
-        public const string Unk2_displayName = "Unk2";
-        public const int Unk2_sortIndex = 150;
-        [SortOrder(Unk2_sortIndex)]
-        [DisplayName(Unk2_displayName)]
-        public virtual uint Unk2 {
+        public const string Augment_Id_displayName = "Augment Id";
+        public const int Augment_Id_sortIndex = 150;
+        [SortOrder(Augment_Id_sortIndex)]
+        [DisplayName(Augment_Id_displayName)]
+        public virtual uint Augment_Id {
             get => GetData<uint>(8);
             set {
                 if (GetData<uint>(8) == value) return;
                 SetData(8, value);
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk2));
+                OnPropertyChanged(nameof(Augment_Id));
             }
         }
 
@@ -74,59 +74,59 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const string Unk4_displayName = "Unk4";
-        public const int Unk4_sortIndex = 300;
-        [SortOrder(Unk4_sortIndex)]
-        [DisplayName(Unk4_displayName)]
-        public virtual ushort Unk4 {
+        public const string Attack_displayName = "Attack";
+        public const int Attack_sortIndex = 300;
+        [SortOrder(Attack_sortIndex)]
+        [DisplayName(Attack_displayName)]
+        public virtual ushort Attack {
             get => GetData<ushort>(17);
             set {
                 if (GetData<ushort>(17) == value) return;
                 SetData(17, value);
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk4));
+                OnPropertyChanged(nameof(Attack));
             }
         }
 
-        public const string Unk5_displayName = "Unk5";
-        public const int Unk5_sortIndex = 350;
-        [SortOrder(Unk5_sortIndex)]
-        [DisplayName(Unk5_displayName)]
-        public virtual ushort Unk5 {
+        public const string Defense_displayName = "Defense";
+        public const int Defense_sortIndex = 350;
+        [SortOrder(Defense_sortIndex)]
+        [DisplayName(Defense_displayName)]
+        public virtual ushort Defense {
             get => GetData<ushort>(19);
             set {
                 if (GetData<ushort>(19) == value) return;
                 SetData(19, value);
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk5));
+                OnPropertyChanged(nameof(Defense));
             }
         }
 
-        public const string Unk6_displayName = "Unk6";
-        public const int Unk6_sortIndex = 400;
-        [SortOrder(Unk6_sortIndex)]
-        [DisplayName(Unk6_displayName)]
-        public virtual byte Unk6 {
+        public const string Affinity_displayName = "Affinity";
+        public const int Affinity_sortIndex = 400;
+        [SortOrder(Affinity_sortIndex)]
+        [DisplayName(Affinity_displayName)]
+        public virtual byte Affinity {
             get => GetData<byte>(21);
             set {
                 if (GetData<byte>(21) == value) return;
                 SetData(21, value);
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk6));
+                OnPropertyChanged(nameof(Affinity));
             }
         }
 
-        public const string Unk7_displayName = "Unk7";
-        public const int Unk7_sortIndex = 450;
-        [SortOrder(Unk7_sortIndex)]
-        [DisplayName(Unk7_displayName)]
-        public virtual byte Unk7 {
+        public const string Element_displayName = "Element";
+        public const int Element_sortIndex = 450;
+        [SortOrder(Element_sortIndex)]
+        [DisplayName(Element_displayName)]
+        public virtual byte Element {
             get => GetData<byte>(22);
             set {
                 if (GetData<byte>(22) == value) return;
                 SetData(22, value);
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk7));
+                OnPropertyChanged(nameof(Element));
             }
         }
 

@@ -272,6 +272,7 @@ namespace MHW_Editor {
                         if (newLimitBreak.Research_Cost_r10_ > 0) newLimitBreak.Research_Cost_r10_ = 1;
                         if (newLimitBreak.Research_Cost_r11_ > 0) newLimitBreak.Research_Cost_r11_ = 1;
                         if (newLimitBreak.Research_Cost_r12_ > 0) newLimitBreak.Research_Cost_r12_ = 1;
+                        if (newLimitBreak.Aug_Slot_Cost > 1) newLimitBreak.Aug_Slot_Cost = 1;
                         break;
                     }
                     case CustomParts _: {

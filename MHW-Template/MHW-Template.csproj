@@ -89,6 +89,7 @@
     <Compile Include="Weapons\ScopeType.cs" />
     <Compile Include="Weapons\SpecialAmmo.cs" />
     <Compile Include="Weapons\Element.cs" />
+    <Compile Include="Weapons\WeaponType.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ValueClassTemplate.tt">
