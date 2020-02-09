@@ -30,7 +30,7 @@ namespace MHW_Editor.Skills {
         public const int Unlock_Skill_1_sortIndex = 150;
         [SortOrder(Unlock_Skill_1_sortIndex)]
         [DisplayName(Unlock_Skill_1_displayName)]
-        [DataSource(DataSourceType.Skills)]
+        [DataSource(DataSourceType.SkillDat)]
         public virtual uint Unlock_Skill_1 {
             get => GetData<uint>(3);
             set {
@@ -46,7 +46,7 @@ namespace MHW_Editor.Skills {
         public const int Unlock_Skill_2_sortIndex = 200;
         [SortOrder(Unlock_Skill_2_sortIndex)]
         [DisplayName(Unlock_Skill_2_displayName)]
-        [DataSource(DataSourceType.Skills)]
+        [DataSource(DataSourceType.SkillDat)]
         public virtual uint Unlock_Skill_2 {
             get => GetData<uint>(7);
             set {
@@ -62,7 +62,7 @@ namespace MHW_Editor.Skills {
         public const int Unlock_Skill_3_sortIndex = 250;
         [SortOrder(Unlock_Skill_3_sortIndex)]
         [DisplayName(Unlock_Skill_3_displayName)]
-        [DataSource(DataSourceType.Skills)]
+        [DataSource(DataSourceType.SkillDat)]
         public virtual uint Unlock_Skill_3 {
             get => GetData<uint>(11);
             set {
@@ -78,7 +78,7 @@ namespace MHW_Editor.Skills {
         public const int Unlock_Skill_4_sortIndex = 300;
         [SortOrder(Unlock_Skill_4_sortIndex)]
         [DisplayName(Unlock_Skill_4_displayName)]
-        [DataSource(DataSourceType.Skills)]
+        [DataSource(DataSourceType.SkillDat)]
         public virtual uint Unlock_Skill_4 {
             get => GetData<uint>(15);
             set {
