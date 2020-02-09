@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace MHW_Editor {
     public static class Extensions {
@@ -16,6 +17,14 @@ namespace MHW_Editor {
 
         public static Visibility VisibleIfTrue(this bool b) {
             return b ? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        public static T GetParent<T>(this DependencyObject d) where T : class {
+            while (d != null && !(d is T)) {
+                d = VisualTreeHelper.GetParent(d);
+            }
+
+            return d as T;
         }
     }
 }

@@ -14,6 +14,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
+using System.Windows.Media;
 using JetBrains.Annotations;
 using MHW_Editor.Armors;
 using MHW_Editor.Assets;
@@ -75,6 +76,8 @@ namespace MHW_Editor {
         private string targetFile;
         private Type targetFileType;
         private Dictionary<string, ColumnHolder> columnMap;
+        [CanBeNull]
+        private DataGridRow coloredRow;
         private bool isManualEditCommit;
         public static Dictionary<ushort, IdNamePair> skillDatLookup = new Dictionary<ushort, IdNamePair>();
 
@@ -394,15 +397,22 @@ namespace MHW_Editor {
 
         private void Dg_items_GotFocus(object sender, RoutedEventArgs e) {
             // Lookup for the source to be DataGridCell
-            if (SingleClickToEditMode && e.OriginalSource is DataGridCell cell) {
-                // Needs to only happen when it's a button. If not, we stop regular fields from working.
-                if (CheckCellForButtonTypeAndHandleClick(cell)) return;
+            if (e.OriginalSource is DataGridCell cell) {
+                if (coloredRow != null) coloredRow.Background = Brushes.White;
+                coloredRow = cell.GetParent<DataGridRow>();
+                // ReSharper disable once PossibleNullReferenceException
+                coloredRow.Background = (Brush) new BrushConverter().ConvertFrom("#c0e1fb"); //Brushes.LightSteelBlue;
 
-                // Starts the Edit on the row;
-                dg_items.BeginEdit(e);
+                if (SingleClickToEditMode) {
+                    // Needs to only happen when it's a button. If not, we stop regular fields from working.
+                    if (CheckCellForButtonTypeAndHandleClick(cell)) return;
 
-                if (cell.Content is ComboBox cbx) {
-                    cbx.IsDropDownOpen = true;
+                    // Starts the Edit on the row;
+                    dg_items.BeginEdit(e);
+
+                    if (cell.Content is ComboBox cbx) {
+                        cbx.IsDropDownOpen = true;
+                    }
                 }
             }
         }
@@ -543,6 +553,7 @@ namespace MHW_Editor {
             }
 
             columnMap = new Dictionary<string, ColumnHolder>();
+            coloredRow = null;
             dg_items.ItemsSource = null;
             dg_items.ItemsSource = new ListCollectionView(items);
 
