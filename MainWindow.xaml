@@ -131,7 +131,7 @@
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"
                         Click="Btn_sort_jewel_order_by_name_Click"
-                        Content="Resort All Gems by Gem Name (Changes Box Sort)"
+                        Content="Resort All Gems by Gem Name"
                         Visibility="Collapsed"/>
                 <Button Name="btn_damage_cheat"
                         Margin="8,0,0,0"
