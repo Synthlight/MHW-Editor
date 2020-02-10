@@ -9,12 +9,12 @@
         public const string ROD_INSE_KEY = "SFghFQVFJycHnypExurPwut98ZZq1cwvm7lpDpASeP4biRhstQgULzlb"; // mMoneyItemTbl
         public const string CUS_PAR_KEY = "PCEBFfRCbwIdy6AZIoNA5lXV6FEki0yBEyW4FPXZUyWgeauqY8PYeZkM"; // rCharmData
 
-        // The rest are untested.
+        // The rest are untested and/or unused.
         public const string SAVE_FILE_KEY = "xieZjoe#P2134-3zmaghgpqoe0z8$3azeq";
         public const string UNKNOWN_KEY_2 = "ZduEVAgrFnd8jpnwHF2ur64BHcd37gEYDQwRbeBwMt6dGRK3tUwm2wx5"; // rSpecialTraceLotData
         public const string UNKNOWN_KEY_3 = "b71AMFJuw63cUTlDt5ntSAtaAvwLKizNtapy4W0QAsC39QXPr6b78Asz"; // cRomPacketSysSyncStart
-        public const string UNKNOWN_KEY_4 = "Nb06gpPJ9WtbO6FF1ZYqm5NbLREsCzuqAY0G25ug2Ei5XkkAtVXD5Uda"; // rASkillData
-        public const string UNKNOWN_KEY_5 = "D7N88VEGEnRl0HEHTO0xMQkbeMb37arJF488lREp90WYojAONkLoxfMt"; // rItemData
+        public const string ASKILLP_KEY = "Nb06gpPJ9WtbO6FF1ZYqm5NbLREsCzuqAY0G25ug2Ei5XkkAtVXD5Uda"; // rASkillData askill_param.asp
+        public const string ITLOT_KEY = "D7N88VEGEnRl0HEHTO0xMQkbeMb37arJF488lREp90WYojAONkLoxfMt"; // rItemData .itlot
         public const string UNKNOWN_KEY_6 = "TZNgJfzyD2WKiuV4SglmI6oN5jP2hhRJcBwzUooyfIUTM4ptDYGjuRTP";
     }
 }
