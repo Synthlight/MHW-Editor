@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Text;
 using System.Threading;
@@ -15,6 +16,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Threading;
 using JetBrains.Annotations;
 using MHW_Editor.Armors;
 using MHW_Editor.Assets;
@@ -26,6 +28,7 @@ using MHW_Editor.Weapons;
 using MHW_Template;
 using MHW_Template.Models;
 using Microsoft.Win32;
+using Newtonsoft.Json;
 
 namespace MHW_Editor {
     public partial class MainWindow {
@@ -71,6 +74,7 @@ namespace MHW_Editor {
             "*.wp_dat",
             "*.wp_dat_g"
         };
+        private const string NEXUS_LINK = "https://www.nexusmods.com/monsterhunterworld/mods/2068";
 
         private readonly ObservableCollection<dynamic> items = new ObservableCollection<dynamic>();
         private string targetFile;
@@ -144,7 +148,47 @@ namespace MHW_Editor {
 
             Width = SystemParameters.MaximizedPrimaryScreenWidth * 0.8;
             Height = SystemParameters.MaximizedPrimaryScreenHeight * 0.5;
+
+            DoUpdateCheck();
 #pragma warning restore 162
+        }
+
+        private async void DoUpdateCheck() {
+            await Task.Run(() => {
+                try {
+                    var json = GetHttpText("http://brutsches.com/MHW-Editor.version.json");
+                    var currentVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+                    var newestVersion = JsonConvert.DeserializeObject<VersionCheck>(json).latest;
+
+                    if (currentVersion != newestVersion) {
+                        RunOnUiThread(() => {
+                            var result = MessageBox.Show("A newer version has been detected.\r\n" +
+                                                         $"Your Version: {currentVersion} --- Newer Version: {newestVersion}\r\n" +
+                                                         $"Go to {NEXUS_LINK}?", "Update Available", MessageBoxButton.YesNo, MessageBoxImage.Information);
+                            if (result == MessageBoxResult.Yes) {
+                                Process.Start(NEXUS_LINK);
+                            }
+                        });
+                    }
+                } catch (Exception e) {
+                    Console.Error.Write(e);
+                }
+            });
+        }
+
+        private DispatcherOperation RunOnUiThread(Action action) {
+            return Dispatcher?.InvokeAsync(action);
+        }
+
+        private string GetHttpText(string url) {
+            var request = (HttpWebRequest) WebRequest.Create(url);
+            request.Method = "GET";
+
+            using (var response = (HttpWebResponse) request.GetResponse()) {
+                using (var reader = new StreamReader(response.GetResponseStream())) {
+                    return reader.ReadToEnd();
+                }
+            }
         }
 
         private void Dg_items_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e) {

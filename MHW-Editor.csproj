@@ -119,6 +119,7 @@
     <Compile Include="Models\IdNamePair.cs" />
     <Compile Include="Models\SortOrderAttribute.cs" />
     <Compile Include="Models\UInt16Sorter.cs" />
+    <Compile Include="Models\VersionCheck.cs" />
     <Compile Include="Skills\MusicSkill.cs" />
     <Compile Include="Skills\SkillDat.cs" />
     <Compile Include="Gems\Gem.cs" />
