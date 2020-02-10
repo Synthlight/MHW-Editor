@@ -76,7 +76,7 @@
     <Compile Include="Weapons\AugmentationCategory.cs" />
     <Compile Include="Weapons\CoatingType.cs" />
     <Compile Include="Weapons\DustEffect.cs" />
-    <Compile Include="Weapons\NoteColor.cs" />
+    <Compile Include="Weapons\NoteColorWithDisabled.cs" />
     <Compile Include="Weapons\AttackType.cs" />
     <Compile Include="Weapons\MagazineType.cs" />
     <Compile Include="Weapons\Elderseal.cs" />
@@ -84,7 +84,7 @@
     <Compile Include="Weapons\BarrelType.cs" />
     <Compile Include="Weapons\Model\ShellTableTypes.cs" />
     <Compile Include="Weapons\MuzzleType.cs" />
-    <Compile Include="Weapons\Note.cs" />
+    <Compile Include="Weapons\NoteColor.cs" />
     <Compile Include="Weapons\ShellType.cs" />
     <Compile Include="Weapons\ScopeType.cs" />
     <Compile Include="Weapons\SpecialAmmo.cs" />

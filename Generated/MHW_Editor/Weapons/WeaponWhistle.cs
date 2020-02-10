@@ -22,10 +22,10 @@ namespace MHW_Editor.Weapons {
         public const int Note_1_sortIndex = 100;
         [SortOrder(Note_1_sortIndex)]
         [DisplayName(Note_1_displayName)]
-        public virtual MHW_Template.Weapons.Note Note_1 {
-            get => (MHW_Template.Weapons.Note) GetData<byte>(4);
+        public virtual MHW_Template.Weapons.NoteColor Note_1 {
+            get => (MHW_Template.Weapons.NoteColor) GetData<byte>(4);
             set {
-                if ((MHW_Template.Weapons.Note) GetData<byte>(4) == value) return;
+                if ((MHW_Template.Weapons.NoteColor) GetData<byte>(4) == value) return;
                 SetData(4, (byte) value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_1));
@@ -36,10 +36,10 @@ namespace MHW_Editor.Weapons {
         public const int Note_2_sortIndex = 150;
         [SortOrder(Note_2_sortIndex)]
         [DisplayName(Note_2_displayName)]
-        public virtual MHW_Template.Weapons.Note Note_2 {
-            get => (MHW_Template.Weapons.Note) GetData<byte>(4);
+        public virtual MHW_Template.Weapons.NoteColor Note_2 {
+            get => (MHW_Template.Weapons.NoteColor) GetData<byte>(4);
             set {
-                if ((MHW_Template.Weapons.Note) GetData<byte>(4) == value) return;
+                if ((MHW_Template.Weapons.NoteColor) GetData<byte>(4) == value) return;
                 SetData(4, (byte) value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_2));
@@ -50,10 +50,10 @@ namespace MHW_Editor.Weapons {
         public const int Note_3_sortIndex = 200;
         [SortOrder(Note_3_sortIndex)]
         [DisplayName(Note_3_displayName)]
-        public virtual MHW_Template.Weapons.Note Note_3 {
-            get => (MHW_Template.Weapons.Note) GetData<byte>(4);
+        public virtual MHW_Template.Weapons.NoteColor Note_3 {
+            get => (MHW_Template.Weapons.NoteColor) GetData<byte>(4);
             set {
-                if ((MHW_Template.Weapons.Note) GetData<byte>(4) == value) return;
+                if ((MHW_Template.Weapons.NoteColor) GetData<byte>(4) == value) return;
                 SetData(4, (byte) value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_3));

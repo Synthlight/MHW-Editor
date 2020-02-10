@@ -1,8 +1,9 @@
 ﻿namespace MHW_Template.Weapons {
-    public enum NoteColor {
+    public enum NoteColorWithDisabled {
+        Disabled = -1,
         Purple = 0,
         Red = 1,
-        Orange = 2,
+        Orange,
         Yellow,
         Green,
         Dark_Blue,

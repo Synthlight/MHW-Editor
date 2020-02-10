@@ -22,10 +22,10 @@ namespace MHW_Editor.Skills {
         public const int Note_1_sortIndex = 100;
         [SortOrder(Note_1_sortIndex)]
         [DisplayName(Note_1_displayName)]
-        public virtual MHW_Template.Weapons.NoteColor Note_1 {
-            get => (MHW_Template.Weapons.NoteColor) GetData<int>(4);
+        public virtual MHW_Template.Weapons.NoteColorWithDisabled Note_1 {
+            get => (MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(4);
             set {
-                if ((MHW_Template.Weapons.NoteColor) GetData<int>(4) == value) return;
+                if ((MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(4) == value) return;
                 SetData(4, (int) value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_1));
@@ -36,10 +36,10 @@ namespace MHW_Editor.Skills {
         public const int Note_2_sortIndex = 150;
         [SortOrder(Note_2_sortIndex)]
         [DisplayName(Note_2_displayName)]
-        public virtual MHW_Template.Weapons.NoteColor Note_2 {
-            get => (MHW_Template.Weapons.NoteColor) GetData<int>(8);
+        public virtual MHW_Template.Weapons.NoteColorWithDisabled Note_2 {
+            get => (MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(8);
             set {
-                if ((MHW_Template.Weapons.NoteColor) GetData<int>(8) == value) return;
+                if ((MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(8) == value) return;
                 SetData(8, (int) value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_2));
@@ -50,10 +50,10 @@ namespace MHW_Editor.Skills {
         public const int Note_3_sortIndex = 200;
         [SortOrder(Note_3_sortIndex)]
         [DisplayName(Note_3_displayName)]
-        public virtual MHW_Template.Weapons.NoteColor Note_3 {
-            get => (MHW_Template.Weapons.NoteColor) GetData<int>(12);
+        public virtual MHW_Template.Weapons.NoteColorWithDisabled Note_3 {
+            get => (MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(12);
             set {
-                if ((MHW_Template.Weapons.NoteColor) GetData<int>(12) == value) return;
+                if ((MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(12) == value) return;
                 SetData(12, (int) value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_3));
@@ -64,10 +64,10 @@ namespace MHW_Editor.Skills {
         public const int Note_4_sortIndex = 250;
         [SortOrder(Note_4_sortIndex)]
         [DisplayName(Note_4_displayName)]
-        public virtual MHW_Template.Weapons.NoteColor Note_4 {
-            get => (MHW_Template.Weapons.NoteColor) GetData<int>(16);
+        public virtual MHW_Template.Weapons.NoteColorWithDisabled Note_4 {
+            get => (MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(16);
             set {
-                if ((MHW_Template.Weapons.NoteColor) GetData<int>(16) == value) return;
+                if ((MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(16) == value) return;
                 SetData(16, (int) value);
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_4));

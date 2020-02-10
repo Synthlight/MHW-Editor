@@ -174,10 +174,10 @@ namespace MHW_Generator {
                 encryptionKey = EncryptionKeys.MSK_KEY,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Song Id Raw", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Note 1", 4, typeof(int), typeof(NoteColor)),
-                    new MhwStructData.Entry("Note 2", 8, typeof(int), typeof(NoteColor)),
-                    new MhwStructData.Entry("Note 3", 12, typeof(int), typeof(NoteColor)),
-                    new MhwStructData.Entry("Note 4", 16, typeof(int), typeof(NoteColor))
+                    new MhwStructData.Entry("Note 1", 4, typeof(int), typeof(NoteColorWithDisabled)),
+                    new MhwStructData.Entry("Note 2", 8, typeof(int), typeof(NoteColorWithDisabled)),
+                    new MhwStructData.Entry("Note 3", 12, typeof(int), typeof(NoteColorWithDisabled)),
+                    new MhwStructData.Entry("Note 4", 16, typeof(int), typeof(NoteColorWithDisabled))
                 }
             });
         }
@@ -441,9 +441,9 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Note 1", 4, typeof(byte), typeof(Note)),
-                    new MhwStructData.Entry("Note 2", 4, typeof(byte), typeof(Note)),
-                    new MhwStructData.Entry("Note 3", 4, typeof(byte), typeof(Note))
+                    new MhwStructData.Entry("Note 1", 4, typeof(byte), typeof(NoteColor)),
+                    new MhwStructData.Entry("Note 2", 4, typeof(byte), typeof(NoteColor)),
+                    new MhwStructData.Entry("Note 3", 4, typeof(byte), typeof(NoteColor))
                 }
             });
         }
