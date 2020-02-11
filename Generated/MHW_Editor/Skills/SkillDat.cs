@@ -38,7 +38,7 @@ namespace MHW_Editor.Skills {
                 SetData(3, value, nameof(Unlock_Skill_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unlock_Skill_1));
-                OnPropertyChanged("Unlock_Skill_1_button");
+                OnPropertyChanged(nameof(Unlock_Skill_1_button));
             }
         }
 
@@ -54,7 +54,7 @@ namespace MHW_Editor.Skills {
                 SetData(7, value, nameof(Unlock_Skill_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unlock_Skill_2));
-                OnPropertyChanged("Unlock_Skill_2_button");
+                OnPropertyChanged(nameof(Unlock_Skill_2_button));
             }
         }
 
@@ -70,7 +70,7 @@ namespace MHW_Editor.Skills {
                 SetData(11, value, nameof(Unlock_Skill_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unlock_Skill_3));
-                OnPropertyChanged("Unlock_Skill_3_button");
+                OnPropertyChanged(nameof(Unlock_Skill_3_button));
             }
         }
 
@@ -86,7 +86,7 @@ namespace MHW_Editor.Skills {
                 SetData(15, value, nameof(Unlock_Skill_4));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unlock_Skill_4));
-                OnPropertyChanged("Unlock_Skill_4_button");
+                OnPropertyChanged(nameof(Unlock_Skill_4_button));
             }
         }
 

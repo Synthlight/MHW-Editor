@@ -44,7 +44,7 @@ namespace MHW_Editor.Weapons {
                 SetData(5, value, nameof(Needed_Item_Id_to_Unlock));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Needed_Item_Id_to_Unlock));
-                OnPropertyChanged("Needed_Item_Id_to_Unlock_button");
+                OnPropertyChanged(nameof(Needed_Item_Id_to_Unlock_button));
             }
         }
 
@@ -74,7 +74,7 @@ namespace MHW_Editor.Weapons {
                 SetData(15, value, nameof(Mat_1_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_1_Id));
-                OnPropertyChanged("Mat_1_Id_button");
+                OnPropertyChanged(nameof(Mat_1_Id_button));
             }
         }
 
@@ -104,7 +104,7 @@ namespace MHW_Editor.Weapons {
                 SetData(18, value, nameof(Mat_2_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_2_Id));
-                OnPropertyChanged("Mat_2_Id_button");
+                OnPropertyChanged(nameof(Mat_2_Id_button));
             }
         }
 
@@ -134,7 +134,7 @@ namespace MHW_Editor.Weapons {
                 SetData(21, value, nameof(Mat_3_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_3_Id));
-                OnPropertyChanged("Mat_3_Id_button");
+                OnPropertyChanged(nameof(Mat_3_Id_button));
             }
         }
 
@@ -164,7 +164,7 @@ namespace MHW_Editor.Weapons {
                 SetData(24, value, nameof(Mat_4_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_4_Id));
-                OnPropertyChanged("Mat_4_Id_button");
+                OnPropertyChanged(nameof(Mat_4_Id_button));
             }
         }
 

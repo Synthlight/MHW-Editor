@@ -45,6 +45,7 @@ namespace MHW_Editor.Armors {
                 SetData(7, value, nameof(Is_Full_Set_Raw));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Is_Full_Set_Raw));
+                OnPropertyChanged(nameof(Is_Full_Set));
             }
         }
 

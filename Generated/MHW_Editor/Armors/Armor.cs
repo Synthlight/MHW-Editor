@@ -244,7 +244,7 @@ namespace MHW_Editor.Armors {
                 SetData(34, value, nameof(Set_Skill_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Set_Skill_1));
-                OnPropertyChanged("Set_Skill_1_button");
+                OnPropertyChanged(nameof(Set_Skill_1_button));
             }
         }
 
@@ -274,7 +274,7 @@ namespace MHW_Editor.Armors {
                 SetData(37, value, nameof(Set_Skill_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Set_Skill_2));
-                OnPropertyChanged("Set_Skill_2_button");
+                OnPropertyChanged(nameof(Set_Skill_2_button));
             }
         }
 
@@ -304,7 +304,7 @@ namespace MHW_Editor.Armors {
                 SetData(40, value, nameof(Skill_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_1));
-                OnPropertyChanged("Skill_1_button");
+                OnPropertyChanged(nameof(Skill_1_button));
             }
         }
 
@@ -334,7 +334,7 @@ namespace MHW_Editor.Armors {
                 SetData(43, value, nameof(Skill_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_2));
-                OnPropertyChanged("Skill_2_button");
+                OnPropertyChanged(nameof(Skill_2_button));
             }
         }
 
@@ -364,7 +364,7 @@ namespace MHW_Editor.Armors {
                 SetData(46, value, nameof(Skill_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_3));
-                OnPropertyChanged("Skill_3_button");
+                OnPropertyChanged(nameof(Skill_3_button));
             }
         }
 
@@ -421,6 +421,7 @@ namespace MHW_Editor.Armors {
                 SetData(59, value, nameof(Is_Permanent_Raw));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Is_Permanent_Raw));
+                OnPropertyChanged(nameof(Is_Permanent));
             }
         }
 

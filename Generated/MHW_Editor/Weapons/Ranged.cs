@@ -79,6 +79,7 @@ namespace MHW_Editor.Weapons {
                 SetData(15, value, nameof(Is_Fixed_Upgrade_Raw));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Is_Fixed_Upgrade_Raw));
+                OnPropertyChanged(nameof(Is_Fixed_Upgrade));
             }
         }
 
@@ -388,7 +389,7 @@ namespace MHW_Editor.Weapons {
                 SetData(65, value, nameof(Skill));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill));
-                OnPropertyChanged("Skill_button");
+                OnPropertyChanged(nameof(Skill_button));
             }
         }
 

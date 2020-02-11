@@ -35,6 +35,7 @@ namespace MHW_Editor.Items {
                 SetData(8, value, nameof(Unlocked_from_start_Raw));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unlocked_from_start_Raw));
+                OnPropertyChanged(nameof(Unlocked_from_start));
             }
         }
 
@@ -50,7 +51,7 @@ namespace MHW_Editor.Items {
                 SetData(9, value, nameof(Item));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Item));
-                OnPropertyChanged("Item_button");
+                OnPropertyChanged(nameof(Item_button));
             }
         }
 

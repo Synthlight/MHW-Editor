@@ -52,7 +52,7 @@ namespace MHW_Editor.Gems {
                 SetData(12, value, nameof(Skill_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_1));
-                OnPropertyChanged("Skill_1_button");
+                OnPropertyChanged(nameof(Skill_1_button));
             }
         }
 
@@ -82,7 +82,7 @@ namespace MHW_Editor.Gems {
                 SetData(20, value, nameof(Skill_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_2));
-                OnPropertyChanged("Skill_2_button");
+                OnPropertyChanged(nameof(Skill_2_button));
             }
         }
 

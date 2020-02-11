@@ -72,7 +72,7 @@ namespace MHW_Editor.Armors {
                 SetData(12, value, nameof(Mantle_Item_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mantle_Item_Id));
-                OnPropertyChanged("Mantle_Item_Id_button");
+                OnPropertyChanged(nameof(Mantle_Item_Id_button));
             }
         }
 

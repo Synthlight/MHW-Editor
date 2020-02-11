@@ -72,9 +72,18 @@ namespace <#= _namespace #> {
 <#
             if (entry.dataSourceType != null) {
 #>
-                OnPropertyChanged("<#= name #>_button");
+                OnPropertyChanged(nameof(<#= name #>_button));
 <#
-            } // End extra OnPropertyChanged check.
+            } // End extra OnPropertyChanged/dataSourceType check.
+
+            if (entry.extraOnPropertyChanged != null) {
+                foreach (var propertyToChange in entry.extraOnPropertyChanged) {
+                    var propertyToChangeName = Regex.Replace(propertyToChange, @"[^\w\d]+", "_");
+#>
+                OnPropertyChanged(nameof(<#= propertyToChangeName #>));
+<#
+                }
+            } // End extra OnPropertyChanged/extraOnPropertyChanged check.
 #>
             }
 <#

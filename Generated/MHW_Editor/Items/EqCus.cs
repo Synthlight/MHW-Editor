@@ -38,7 +38,7 @@ namespace MHW_Editor.Items {
                 SetData(3, value, nameof(Needed_Item_Id_to_Unlock));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Needed_Item_Id_to_Unlock));
-                OnPropertyChanged("Needed_Item_Id_to_Unlock_button");
+                OnPropertyChanged(nameof(Needed_Item_Id_to_Unlock_button));
             }
         }
 
@@ -96,7 +96,7 @@ namespace MHW_Editor.Items {
                 SetData(17, value, nameof(Mat_1_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_1_Id));
-                OnPropertyChanged("Mat_1_Id_button");
+                OnPropertyChanged(nameof(Mat_1_Id_button));
             }
         }
 
@@ -126,7 +126,7 @@ namespace MHW_Editor.Items {
                 SetData(20, value, nameof(Mat_2_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_2_Id));
-                OnPropertyChanged("Mat_2_Id_button");
+                OnPropertyChanged(nameof(Mat_2_Id_button));
             }
         }
 
@@ -156,7 +156,7 @@ namespace MHW_Editor.Items {
                 SetData(23, value, nameof(Mat_3_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_3_Id));
-                OnPropertyChanged("Mat_3_Id_button");
+                OnPropertyChanged(nameof(Mat_3_Id_button));
             }
         }
 
@@ -186,7 +186,7 @@ namespace MHW_Editor.Items {
                 SetData(26, value, nameof(Mat_4_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_4_Id));
-                OnPropertyChanged("Mat_4_Id_button");
+                OnPropertyChanged(nameof(Mat_4_Id_button));
             }
         }
 

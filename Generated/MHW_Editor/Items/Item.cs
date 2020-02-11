@@ -169,6 +169,7 @@ namespace MHW_Editor.Items {
                 SetData(14, value, nameof(Flags_Raw));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Flags_Raw));
+                OnPropertyChanged(nameof(Flags));
             }
         }
 
