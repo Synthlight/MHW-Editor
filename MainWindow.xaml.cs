@@ -29,6 +29,9 @@ using MHW_Template;
 using MHW_Template.Models;
 using Microsoft.Win32;
 using Newtonsoft.Json;
+using NotifyIcon = System.Windows.Forms.NotifyIcon;
+using SystemIcons = System.Drawing.SystemIcons;
+using ToolTipIcon = System.Windows.Forms.ToolTipIcon;
 
 namespace MHW_Editor {
     public partial class MainWindow {
@@ -87,6 +90,8 @@ namespace MHW_Editor {
         [CanBeNull]
         private CancellationTokenSource savedTimer;
         private readonly Brush backgroundBrush = (Brush) new BrushConverter().ConvertFrom("#c0e1fb");
+        [CanBeNull]
+        private NotifyIcon notifyIcon;
 
         public static string locale = "eng";
         public string Locale {
@@ -161,12 +166,20 @@ namespace MHW_Editor {
 
                     if (currentVersion != newestVersion) {
                         RunOnUiThread(() => {
-                            var result = MessageBox.Show("A newer version has been detected.\r\n" +
-                                                         $"Your Version: {currentVersion} --- Newer Version: {newestVersion}\r\n" +
-                                                         $"Go to {NEXUS_LINK}?", "Update Available", MessageBoxButton.YesNo, MessageBoxImage.Information);
-                            if (result == MessageBoxResult.Yes) {
-                                Process.Start(NEXUS_LINK);
-                            }
+                            notifyIcon = new NotifyIcon {
+                                Icon = SystemIcons.Application,
+                                Visible = false,
+                                Text = "MHW Editor\r\n" +
+                                       "Update Available.\r\n" +
+                                       "Click to go to the mod page."
+                            };
+                            //notifyIcon.BalloonTipClosed += (s, e) => notifyIcon.Visible = false;
+                            notifyIcon.MouseClick += (sender, args) => { Process.Start(NEXUS_LINK); };
+
+                            notifyIcon.Visible = true;
+                            notifyIcon.ShowBalloonTip(10000, "Update Available", "A newer version has been detected.\r\n" +
+                                                                                 $"Your Version: {currentVersion}\r\n" +
+                                                                                 $"Newer Version: {newestVersion}", ToolTipIcon.Info);
                         });
                     }
                 } catch (Exception e) {
@@ -980,6 +993,15 @@ namespace MHW_Editor {
             }
 
             throw new Exception($"No type found for: {fileName}");
+        }
+
+        protected override void OnClosed(EventArgs e) {
+            if (notifyIcon != null) {
+                notifyIcon.Visible = false;
+                notifyIcon.Dispose();
+            }
+
+            base.OnClosed(e);
         }
     }
 }
