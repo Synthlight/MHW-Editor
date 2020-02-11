@@ -239,7 +239,8 @@ namespace MHW_Editor {
                                                  typeof(BottleTable));
                     break;
                 case nameof(SkillDat.Id):
-                    e.Cancel = targetFileType.Is(typeof(SkillDat));
+                    e.Cancel = targetFileType.Is(typeof(SkillDat),
+                                                 typeof(SkillPointData));
                     break;
                 case nameof(DecoLottery.Item_Id):
                     e.Cancel = targetFileType.Is(typeof(DecoPercent));
@@ -679,7 +680,8 @@ namespace MHW_Editor {
 
             cb_show_id_before_name.Visibility = targetFileType.Is(typeof(DecoPercent),
                                                                   typeof(MusicSkill),
-                                                                  typeof(SkillDat))
+                                                                  typeof(SkillDat),
+                                                                  typeof(SkillPointData))
                                                               .VisibleIfTrue();
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);

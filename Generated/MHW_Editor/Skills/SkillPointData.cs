@@ -9,7 +9,7 @@ namespace MHW_Editor.Skills {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
-        public override string UniqueId => $"{Index}";
+        public override string UniqueId => $"{Id}";
 
         public const string Is_Set_Bonus_Raw_displayName = "Is Set Bonus Raw";
         public const int Is_Set_Bonus_Raw_sortIndex = 50;

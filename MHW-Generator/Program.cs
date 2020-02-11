@@ -410,7 +410,7 @@ namespace MHW_Generator {
                 size = 2,
                 offsetInitial = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
+                uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Is Set Bonus Raw", 0, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Is Set Bonus"}),
                     new MhwStructData.Entry("Icon Color Id", 1, typeof(byte))
