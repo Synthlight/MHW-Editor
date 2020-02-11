@@ -42,17 +42,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Unknown_int32__displayName = "Unknown (int32)";
-        public const int Unknown_int32__sortIndex = 200;
-        [SortOrder(Unknown_int32__sortIndex)]
-        [DisplayName(Unknown_int32__displayName)]
-        public virtual int Unknown_int32_ {
+        public const string Monster_Unlock_displayName = "Monster Unlock";
+        public const int Monster_Unlock_sortIndex = 200;
+        [SortOrder(Monster_Unlock_sortIndex)]
+        [DisplayName(Monster_Unlock_displayName)]
+        public virtual int Monster_Unlock {
             get => GetData<int>(5);
             set {
                 if (GetData<int>(5) == value) return;
-                SetData(5, value, nameof(Unknown_int32_));
+                SetData(5, value, nameof(Monster_Unlock));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_int32_));
+                OnPropertyChanged(nameof(Monster_Unlock));
             }
         }
 

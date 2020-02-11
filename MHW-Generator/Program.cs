@@ -57,8 +57,8 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 encryptionKey = EncryptionKeys.CUS_PAR_KEY,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Index", 1, typeof(uint), true),
-                    new MhwStructData.Entry("Level", 0, typeof(byte)),
+                    new MhwStructData.Entry("Id", 1, typeof(uint), true),
+                    new MhwStructData.Entry("Weapon Type", 0, typeof(byte), true, typeof(WeaponType)),
                     new MhwStructData.Entry("Needed Item Id to Unlock", 5, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Unk2", 7, typeof(int)),
                     new MhwStructData.Entry("Mat 1 Id", 15, typeof(ushort), dataSourceType: DataSourceType.Items),
@@ -85,10 +85,10 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 encryptionKey = EncryptionKeys.CUS_PAR_KEY,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Index", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Weapon Type", 4, typeof(uint), typeof(WeaponType)),
-                    new MhwStructData.Entry("Augment Id", 8, typeof(uint)),
-                    new MhwStructData.Entry("Unk3", 12, typeof(byte)),
+                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Weapon Type", 4, typeof(uint), true, typeof(WeaponType)),
+                    new MhwStructData.Entry("Part 1 Id", 8, typeof(uint)),
+                    new MhwStructData.Entry("Unk (uint8)", 12, typeof(byte)),
                     new MhwStructData.Entry("Craft Cost", 13, typeof(uint)),
                     new MhwStructData.Entry("Attack", 17, typeof(ushort)),
                     new MhwStructData.Entry("Defense", 19, typeof(ushort)),
@@ -321,8 +321,8 @@ namespace MHW_Generator {
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Item Category", 0, typeof(byte), true),
                     new MhwStructData.Entry("Item Id", 1, typeof(ushort), true),
-                    new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items), // TODO: Confirm
-                    new MhwStructData.Entry("Unknown (int32) 2", 5, typeof(int)),
+                    new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Monster Unlock", 5, typeof(int)),
                     new MhwStructData.Entry("Story Unlock", 9, typeof(uint)),
                     new MhwStructData.Entry("Item Rank", 13, typeof(uint)),
                     new MhwStructData.Entry("Mat 1 Id", 17, typeof(ushort), dataSourceType: DataSourceType.Items),
@@ -349,8 +349,8 @@ namespace MHW_Generator {
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Item Category", 0, typeof(byte), true),
                     new MhwStructData.Entry("Item Id", 1, typeof(ushort), true),
-                    new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items), // TODO: Confirm
-                    new MhwStructData.Entry("Unknown (int32)", 5, typeof(int)),
+                    new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Monster Unlock", 5, typeof(int)),
                     new MhwStructData.Entry("Story Unlock", 9, typeof(uint)),
                     new MhwStructData.Entry("Unknown (uint32)", 13, typeof(uint)),
                     new MhwStructData.Entry("Item Rank", 17, typeof(uint)),
@@ -377,7 +377,7 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Mantle Id", 16, typeof(uint), true),
-                    new MhwStructData.Entry("Unknown (uint32)", 0, typeof(uint)),
+                    new MhwStructData.Entry("Icon Id", 0, typeof(uint)),
                     new MhwStructData.Entry("Color", 4, typeof(uint)),
                     new MhwStructData.Entry("Sort Order", 8, typeof(uint)),
                     new MhwStructData.Entry("Mantle Item Id", 12, typeof(uint), dataSourceType: DataSourceType.Items),
@@ -396,8 +396,8 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Unknown (uint8) 1", 0, typeof(byte)),
-                    new MhwStructData.Entry("Unknown (uint8) 2", 1, typeof(byte))
+                    new MhwStructData.Entry("Is Set Bonus Raw", 0, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Is Set Bonus"}),
+                    new MhwStructData.Entry("Icon Color Id", 1, typeof(byte))
                 }
             });
         }
@@ -734,17 +734,17 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Unknown (int16) 1", 0, typeof(short)),
-                    new MhwStructData.Entry("Unknown (int16) 2", 2, typeof(short)),
-                    new MhwStructData.Entry("Unknown (int16) 3", 4, typeof(short)),
-                    new MhwStructData.Entry("Unknown (int16) 4", 6, typeof(short)),
-                    new MhwStructData.Entry("Unknown (int16) 5", 8, typeof(short)),
-                    new MhwStructData.Entry("Unknown (int16) 6", 10, typeof(short)),
-                    new MhwStructData.Entry("Unknown (int16) 7", 12, typeof(short)),
-                    new MhwStructData.Entry("Unknown (int16) 8", 14, typeof(short)),
-                    new MhwStructData.Entry("Unknown (int16) 9", 16, typeof(short)),
-                    new MhwStructData.Entry("Unknown (int16) 10", 18, typeof(short)),
-                    new MhwStructData.Entry("Unknown (int16) 11", 20, typeof(short))
+                    new MhwStructData.Entry("Quest Progress 1", 0, typeof(short)),
+                    new MhwStructData.Entry("Quest Progress 2", 2, typeof(short)),
+                    new MhwStructData.Entry("Quest Progress 3", 4, typeof(short)),
+                    new MhwStructData.Entry("Quest Progress 4", 6, typeof(short)),
+                    new MhwStructData.Entry("Quest Progress 5", 8, typeof(short)),
+                    new MhwStructData.Entry("Quest Progress 6", 10, typeof(short)),
+                    new MhwStructData.Entry("Quest Progress 7", 12, typeof(short)),
+                    new MhwStructData.Entry("Quest Progress 8", 14, typeof(short)),
+                    new MhwStructData.Entry("Quest Progress 9", 16, typeof(short)),
+                    new MhwStructData.Entry("Quest Progress 10", 18, typeof(short)),
+                    new MhwStructData.Entry("Quest Progress 11", 20, typeof(short))
                 }
             });
         }

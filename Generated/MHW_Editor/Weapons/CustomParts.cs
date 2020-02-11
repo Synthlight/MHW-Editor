@@ -10,11 +10,11 @@ namespace MHW_Editor.Weapons {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = "PCEBFfRCbwIdy6AZIoNA5lXV6FEki0yBEyW4FPXZUyWgeauqY8PYeZkM";
 
-        public const string Index_displayName = "Index";
-        public const int Index_sortIndex = 50;
-        [SortOrder(Index_sortIndex)]
-        [DisplayName(Index_displayName)]
-        public virtual uint Index {
+        public const string Id_displayName = "Id";
+        public const int Id_sortIndex = 50;
+        [SortOrder(Id_sortIndex)]
+        [DisplayName(Id_displayName)]
+        public virtual uint Id {
             get => GetData<uint>(0);
         }
 
@@ -24,39 +24,33 @@ namespace MHW_Editor.Weapons {
         [DisplayName(Weapon_Type_displayName)]
         public virtual MHW_Template.Weapons.WeaponType Weapon_Type {
             get => (MHW_Template.Weapons.WeaponType) GetData<uint>(4);
-            set {
-                if ((MHW_Template.Weapons.WeaponType) GetData<uint>(4) == value) return;
-                SetData(4, (uint) value, nameof(Weapon_Type));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Weapon_Type));
-            }
         }
 
-        public const string Augment_Id_displayName = "Augment Id";
-        public const int Augment_Id_sortIndex = 150;
-        [SortOrder(Augment_Id_sortIndex)]
-        [DisplayName(Augment_Id_displayName)]
-        public virtual uint Augment_Id {
+        public const string Part_1_Id_displayName = "Part 1 Id";
+        public const int Part_1_Id_sortIndex = 150;
+        [SortOrder(Part_1_Id_sortIndex)]
+        [DisplayName(Part_1_Id_displayName)]
+        public virtual uint Part_1_Id {
             get => GetData<uint>(8);
             set {
                 if (GetData<uint>(8) == value) return;
-                SetData(8, value, nameof(Augment_Id));
+                SetData(8, value, nameof(Part_1_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Augment_Id));
+                OnPropertyChanged(nameof(Part_1_Id));
             }
         }
 
-        public const string Unk3_displayName = "Unk3";
-        public const int Unk3_sortIndex = 200;
-        [SortOrder(Unk3_sortIndex)]
-        [DisplayName(Unk3_displayName)]
-        public virtual byte Unk3 {
+        public const string Unk_uint8__displayName = "Unk (uint8)";
+        public const int Unk_uint8__sortIndex = 200;
+        [SortOrder(Unk_uint8__sortIndex)]
+        [DisplayName(Unk_uint8__displayName)]
+        public virtual byte Unk_uint8_ {
             get => GetData<byte>(12);
             set {
                 if (GetData<byte>(12) == value) return;
-                SetData(12, value, nameof(Unk3));
+                SetData(12, value, nameof(Unk_uint8_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk3));
+                OnPropertyChanged(nameof(Unk_uint8_));
             }
         }
 

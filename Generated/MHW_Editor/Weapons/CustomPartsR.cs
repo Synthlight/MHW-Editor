@@ -10,26 +10,20 @@ namespace MHW_Editor.Weapons {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = "PCEBFfRCbwIdy6AZIoNA5lXV6FEki0yBEyW4FPXZUyWgeauqY8PYeZkM";
 
-        public const string Index_displayName = "Index";
-        public const int Index_sortIndex = 50;
-        [SortOrder(Index_sortIndex)]
-        [DisplayName(Index_displayName)]
-        public virtual uint Index {
+        public const string Id_displayName = "Id";
+        public const int Id_sortIndex = 50;
+        [SortOrder(Id_sortIndex)]
+        [DisplayName(Id_displayName)]
+        public virtual uint Id {
             get => GetData<uint>(1);
         }
 
-        public const string Level_displayName = "Level";
-        public const int Level_sortIndex = 100;
-        [SortOrder(Level_sortIndex)]
-        [DisplayName(Level_displayName)]
-        public virtual byte Level {
-            get => GetData<byte>(0);
-            set {
-                if (GetData<byte>(0) == value) return;
-                SetData(0, value, nameof(Level));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Level));
-            }
+        public const string Weapon_Type_displayName = "Weapon Type";
+        public const int Weapon_Type_sortIndex = 100;
+        [SortOrder(Weapon_Type_sortIndex)]
+        [DisplayName(Weapon_Type_displayName)]
+        public virtual MHW_Template.Weapons.WeaponType Weapon_Type {
+            get => (MHW_Template.Weapons.WeaponType) GetData<byte>(0);
         }
 
         public const string Needed_Item_Id_to_Unlock_displayName = "Needed Item Id to Unlock";

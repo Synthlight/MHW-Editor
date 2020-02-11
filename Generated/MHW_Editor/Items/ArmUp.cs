@@ -10,157 +10,157 @@ namespace MHW_Editor.Items {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        public const string Unknown_int16_1_displayName = "Unknown (int16) 1";
-        public const int Unknown_int16_1_sortIndex = 50;
-        [SortOrder(Unknown_int16_1_sortIndex)]
-        [DisplayName(Unknown_int16_1_displayName)]
-        public virtual short Unknown_int16_1 {
+        public const string Quest_Progress_1_displayName = "Quest Progress 1";
+        public const int Quest_Progress_1_sortIndex = 50;
+        [SortOrder(Quest_Progress_1_sortIndex)]
+        [DisplayName(Quest_Progress_1_displayName)]
+        public virtual short Quest_Progress_1 {
             get => GetData<short>(0);
             set {
                 if (GetData<short>(0) == value) return;
-                SetData(0, value, nameof(Unknown_int16_1));
+                SetData(0, value, nameof(Quest_Progress_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_int16_1));
+                OnPropertyChanged(nameof(Quest_Progress_1));
             }
         }
 
-        public const string Unknown_int16_2_displayName = "Unknown (int16) 2";
-        public const int Unknown_int16_2_sortIndex = 100;
-        [SortOrder(Unknown_int16_2_sortIndex)]
-        [DisplayName(Unknown_int16_2_displayName)]
-        public virtual short Unknown_int16_2 {
+        public const string Quest_Progress_2_displayName = "Quest Progress 2";
+        public const int Quest_Progress_2_sortIndex = 100;
+        [SortOrder(Quest_Progress_2_sortIndex)]
+        [DisplayName(Quest_Progress_2_displayName)]
+        public virtual short Quest_Progress_2 {
             get => GetData<short>(2);
             set {
                 if (GetData<short>(2) == value) return;
-                SetData(2, value, nameof(Unknown_int16_2));
+                SetData(2, value, nameof(Quest_Progress_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_int16_2));
+                OnPropertyChanged(nameof(Quest_Progress_2));
             }
         }
 
-        public const string Unknown_int16_3_displayName = "Unknown (int16) 3";
-        public const int Unknown_int16_3_sortIndex = 150;
-        [SortOrder(Unknown_int16_3_sortIndex)]
-        [DisplayName(Unknown_int16_3_displayName)]
-        public virtual short Unknown_int16_3 {
+        public const string Quest_Progress_3_displayName = "Quest Progress 3";
+        public const int Quest_Progress_3_sortIndex = 150;
+        [SortOrder(Quest_Progress_3_sortIndex)]
+        [DisplayName(Quest_Progress_3_displayName)]
+        public virtual short Quest_Progress_3 {
             get => GetData<short>(4);
             set {
                 if (GetData<short>(4) == value) return;
-                SetData(4, value, nameof(Unknown_int16_3));
+                SetData(4, value, nameof(Quest_Progress_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_int16_3));
+                OnPropertyChanged(nameof(Quest_Progress_3));
             }
         }
 
-        public const string Unknown_int16_4_displayName = "Unknown (int16) 4";
-        public const int Unknown_int16_4_sortIndex = 200;
-        [SortOrder(Unknown_int16_4_sortIndex)]
-        [DisplayName(Unknown_int16_4_displayName)]
-        public virtual short Unknown_int16_4 {
+        public const string Quest_Progress_4_displayName = "Quest Progress 4";
+        public const int Quest_Progress_4_sortIndex = 200;
+        [SortOrder(Quest_Progress_4_sortIndex)]
+        [DisplayName(Quest_Progress_4_displayName)]
+        public virtual short Quest_Progress_4 {
             get => GetData<short>(6);
             set {
                 if (GetData<short>(6) == value) return;
-                SetData(6, value, nameof(Unknown_int16_4));
+                SetData(6, value, nameof(Quest_Progress_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_int16_4));
+                OnPropertyChanged(nameof(Quest_Progress_4));
             }
         }
 
-        public const string Unknown_int16_5_displayName = "Unknown (int16) 5";
-        public const int Unknown_int16_5_sortIndex = 250;
-        [SortOrder(Unknown_int16_5_sortIndex)]
-        [DisplayName(Unknown_int16_5_displayName)]
-        public virtual short Unknown_int16_5 {
+        public const string Quest_Progress_5_displayName = "Quest Progress 5";
+        public const int Quest_Progress_5_sortIndex = 250;
+        [SortOrder(Quest_Progress_5_sortIndex)]
+        [DisplayName(Quest_Progress_5_displayName)]
+        public virtual short Quest_Progress_5 {
             get => GetData<short>(8);
             set {
                 if (GetData<short>(8) == value) return;
-                SetData(8, value, nameof(Unknown_int16_5));
+                SetData(8, value, nameof(Quest_Progress_5));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_int16_5));
+                OnPropertyChanged(nameof(Quest_Progress_5));
             }
         }
 
-        public const string Unknown_int16_6_displayName = "Unknown (int16) 6";
-        public const int Unknown_int16_6_sortIndex = 300;
-        [SortOrder(Unknown_int16_6_sortIndex)]
-        [DisplayName(Unknown_int16_6_displayName)]
-        public virtual short Unknown_int16_6 {
+        public const string Quest_Progress_6_displayName = "Quest Progress 6";
+        public const int Quest_Progress_6_sortIndex = 300;
+        [SortOrder(Quest_Progress_6_sortIndex)]
+        [DisplayName(Quest_Progress_6_displayName)]
+        public virtual short Quest_Progress_6 {
             get => GetData<short>(10);
             set {
                 if (GetData<short>(10) == value) return;
-                SetData(10, value, nameof(Unknown_int16_6));
+                SetData(10, value, nameof(Quest_Progress_6));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_int16_6));
+                OnPropertyChanged(nameof(Quest_Progress_6));
             }
         }
 
-        public const string Unknown_int16_7_displayName = "Unknown (int16) 7";
-        public const int Unknown_int16_7_sortIndex = 350;
-        [SortOrder(Unknown_int16_7_sortIndex)]
-        [DisplayName(Unknown_int16_7_displayName)]
-        public virtual short Unknown_int16_7 {
+        public const string Quest_Progress_7_displayName = "Quest Progress 7";
+        public const int Quest_Progress_7_sortIndex = 350;
+        [SortOrder(Quest_Progress_7_sortIndex)]
+        [DisplayName(Quest_Progress_7_displayName)]
+        public virtual short Quest_Progress_7 {
             get => GetData<short>(12);
             set {
                 if (GetData<short>(12) == value) return;
-                SetData(12, value, nameof(Unknown_int16_7));
+                SetData(12, value, nameof(Quest_Progress_7));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_int16_7));
+                OnPropertyChanged(nameof(Quest_Progress_7));
             }
         }
 
-        public const string Unknown_int16_8_displayName = "Unknown (int16) 8";
-        public const int Unknown_int16_8_sortIndex = 400;
-        [SortOrder(Unknown_int16_8_sortIndex)]
-        [DisplayName(Unknown_int16_8_displayName)]
-        public virtual short Unknown_int16_8 {
+        public const string Quest_Progress_8_displayName = "Quest Progress 8";
+        public const int Quest_Progress_8_sortIndex = 400;
+        [SortOrder(Quest_Progress_8_sortIndex)]
+        [DisplayName(Quest_Progress_8_displayName)]
+        public virtual short Quest_Progress_8 {
             get => GetData<short>(14);
             set {
                 if (GetData<short>(14) == value) return;
-                SetData(14, value, nameof(Unknown_int16_8));
+                SetData(14, value, nameof(Quest_Progress_8));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_int16_8));
+                OnPropertyChanged(nameof(Quest_Progress_8));
             }
         }
 
-        public const string Unknown_int16_9_displayName = "Unknown (int16) 9";
-        public const int Unknown_int16_9_sortIndex = 450;
-        [SortOrder(Unknown_int16_9_sortIndex)]
-        [DisplayName(Unknown_int16_9_displayName)]
-        public virtual short Unknown_int16_9 {
+        public const string Quest_Progress_9_displayName = "Quest Progress 9";
+        public const int Quest_Progress_9_sortIndex = 450;
+        [SortOrder(Quest_Progress_9_sortIndex)]
+        [DisplayName(Quest_Progress_9_displayName)]
+        public virtual short Quest_Progress_9 {
             get => GetData<short>(16);
             set {
                 if (GetData<short>(16) == value) return;
-                SetData(16, value, nameof(Unknown_int16_9));
+                SetData(16, value, nameof(Quest_Progress_9));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_int16_9));
+                OnPropertyChanged(nameof(Quest_Progress_9));
             }
         }
 
-        public const string Unknown_int16_10_displayName = "Unknown (int16) 10";
-        public const int Unknown_int16_10_sortIndex = 500;
-        [SortOrder(Unknown_int16_10_sortIndex)]
-        [DisplayName(Unknown_int16_10_displayName)]
-        public virtual short Unknown_int16_10 {
+        public const string Quest_Progress_10_displayName = "Quest Progress 10";
+        public const int Quest_Progress_10_sortIndex = 500;
+        [SortOrder(Quest_Progress_10_sortIndex)]
+        [DisplayName(Quest_Progress_10_displayName)]
+        public virtual short Quest_Progress_10 {
             get => GetData<short>(18);
             set {
                 if (GetData<short>(18) == value) return;
-                SetData(18, value, nameof(Unknown_int16_10));
+                SetData(18, value, nameof(Quest_Progress_10));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_int16_10));
+                OnPropertyChanged(nameof(Quest_Progress_10));
             }
         }
 
-        public const string Unknown_int16_11_displayName = "Unknown (int16) 11";
-        public const int Unknown_int16_11_sortIndex = 550;
-        [SortOrder(Unknown_int16_11_sortIndex)]
-        [DisplayName(Unknown_int16_11_displayName)]
-        public virtual short Unknown_int16_11 {
+        public const string Quest_Progress_11_displayName = "Quest Progress 11";
+        public const int Quest_Progress_11_sortIndex = 550;
+        [SortOrder(Quest_Progress_11_sortIndex)]
+        [DisplayName(Quest_Progress_11_displayName)]
+        public virtual short Quest_Progress_11 {
             get => GetData<short>(20);
             set {
                 if (GetData<short>(20) == value) return;
-                SetData(20, value, nameof(Unknown_int16_11));
+                SetData(20, value, nameof(Quest_Progress_11));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_int16_11));
+                OnPropertyChanged(nameof(Quest_Progress_11));
             }
         }
 

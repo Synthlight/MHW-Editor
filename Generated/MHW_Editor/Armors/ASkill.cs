@@ -18,17 +18,17 @@ namespace MHW_Editor.Armors {
             get => GetData<uint>(16);
         }
 
-        public const string Unknown_uint32__displayName = "Unknown (uint32)";
-        public const int Unknown_uint32__sortIndex = 100;
-        [SortOrder(Unknown_uint32__sortIndex)]
-        [DisplayName(Unknown_uint32__displayName)]
-        public virtual uint Unknown_uint32_ {
+        public const string Icon_Id_displayName = "Icon Id";
+        public const int Icon_Id_sortIndex = 100;
+        [SortOrder(Icon_Id_sortIndex)]
+        [DisplayName(Icon_Id_displayName)]
+        public virtual uint Icon_Id {
             get => GetData<uint>(0);
             set {
                 if (GetData<uint>(0) == value) return;
-                SetData(0, value, nameof(Unknown_uint32_));
+                SetData(0, value, nameof(Icon_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_uint32_));
+                OnPropertyChanged(nameof(Icon_Id));
             }
         }
 

@@ -10,31 +10,32 @@ namespace MHW_Editor.Skills {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        public const string Unknown_uint8_1_displayName = "Unknown (uint8) 1";
-        public const int Unknown_uint8_1_sortIndex = 50;
-        [SortOrder(Unknown_uint8_1_sortIndex)]
-        [DisplayName(Unknown_uint8_1_displayName)]
-        public virtual byte Unknown_uint8_1 {
+        public const string Is_Set_Bonus_Raw_displayName = "Is Set Bonus Raw";
+        public const int Is_Set_Bonus_Raw_sortIndex = 50;
+        [SortOrder(Is_Set_Bonus_Raw_sortIndex)]
+        [DisplayName(Is_Set_Bonus_Raw_displayName)]
+        private byte Is_Set_Bonus_Raw {
             get => GetData<byte>(0);
             set {
                 if (GetData<byte>(0) == value) return;
-                SetData(0, value, nameof(Unknown_uint8_1));
+                SetData(0, value, nameof(Is_Set_Bonus_Raw));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_uint8_1));
+                OnPropertyChanged(nameof(Is_Set_Bonus_Raw));
+                OnPropertyChanged(nameof(Is_Set_Bonus));
             }
         }
 
-        public const string Unknown_uint8_2_displayName = "Unknown (uint8) 2";
-        public const int Unknown_uint8_2_sortIndex = 100;
-        [SortOrder(Unknown_uint8_2_sortIndex)]
-        [DisplayName(Unknown_uint8_2_displayName)]
-        public virtual byte Unknown_uint8_2 {
+        public const string Icon_Color_Id_displayName = "Icon Color Id";
+        public const int Icon_Color_Id_sortIndex = 100;
+        [SortOrder(Icon_Color_Id_sortIndex)]
+        [DisplayName(Icon_Color_Id_displayName)]
+        public virtual byte Icon_Color_Id {
             get => GetData<byte>(1);
             set {
                 if (GetData<byte>(1) == value) return;
-                SetData(1, value, nameof(Unknown_uint8_2));
+                SetData(1, value, nameof(Icon_Color_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_uint8_2));
+                OnPropertyChanged(nameof(Icon_Color_Id));
             }
         }
 
