@@ -9,6 +9,7 @@ namespace MHW_Editor.Items {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
+        public override string UniqueId => $"{Index}";
 
         public const string Close_Range_displayName = "Close Range";
         public const int Close_Range_sortIndex = 50;

@@ -8,8 +8,6 @@ namespace MHW_Editor.Weapons {
         public NewLimitBreakR(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string UniqueId => $"{Id_1}|{Id_2}";
-
         public override string Name => "None";
 
         [SortOrder(Needed_Item_Id_to_Unlock_sortIndex)]

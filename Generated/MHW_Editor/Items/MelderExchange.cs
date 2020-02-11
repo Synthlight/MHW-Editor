@@ -9,6 +9,7 @@ namespace MHW_Editor.Items {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
+        public override string UniqueId => $"{Source_Item_Id}";
 
         public const string Source_Item_Id_displayName = "Source Item Id";
         public const int Source_Item_Id_sortIndex = 50;

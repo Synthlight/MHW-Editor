@@ -5,8 +5,6 @@ namespace MHW_Editor.Weapons {
         public NewLimitBreak(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string UniqueId => $"{Aug_Category}|{Aug_Level}";
-
         public override string Name => "None";
     }
 }

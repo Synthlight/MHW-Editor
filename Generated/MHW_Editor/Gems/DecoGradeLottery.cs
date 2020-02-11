@@ -9,6 +9,7 @@ namespace MHW_Editor.Gems {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
+        public override string UniqueId => $"{Item_Id}";
 
         public const string Index_displayName = "Index";
         public const int Index_sortIndex = 50;

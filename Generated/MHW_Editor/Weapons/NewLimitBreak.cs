@@ -9,6 +9,7 @@ namespace MHW_Editor.Weapons {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
+        public override string UniqueId => $"{Aug_Category}|{Aug_Level}";
 
         public const string Aug_Category_displayName = "Aug Category";
         public const int Aug_Category_sortIndex = 50;

@@ -18,6 +18,7 @@ namespace <#= _namespace #> {
         public const ulong InitialOffset = <#= structData.offsetInitial #>;
         public const long EntryCountOffset = <#= structData.entryCountOffset #>;
         public const string EncryptionKey = <#= structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\"" #>;
+        public override string UniqueId => $"<#= structData.uniqueIdFormula #>";
 <#
     var compiler = new CSharpCodeProvider();
     var sortIndex = 50;

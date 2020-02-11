@@ -56,6 +56,7 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 encryptionKey = EncryptionKeys.CUS_PAR_KEY,
+                uniqueIdFormula = "{Id}|{Weapon_Type}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 1, typeof(uint), true),
                     new MhwStructData.Entry("Weapon Type", 0, typeof(byte), true, typeof(WeaponType)),
@@ -84,6 +85,7 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 encryptionKey = EncryptionKeys.CUS_PAR_KEY,
+                uniqueIdFormula = "{Id}|{Weapon_Type}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Weapon Type", 4, typeof(uint), true, typeof(WeaponType)),
@@ -104,6 +106,7 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 encryptionKey = EncryptionKeys.ROD_INSE_KEY,
+                uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Attack Type", 4, typeof(byte), typeof(AttackType)),
@@ -140,6 +143,7 @@ namespace MHW_Generator {
                 size = size,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Source_Item_Id}",
                 entries = entries
             });
         }
@@ -149,6 +153,7 @@ namespace MHW_Generator {
                 size = 21,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Result_Item_Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Result Item Id", 0, typeof(uint), true, dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Research Points", 4, typeof(uint)),
@@ -166,6 +171,7 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 encryptionKey = EncryptionKeys.MSK_KEY,
+                uniqueIdFormula = "{Song_Id_Raw}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Song Id Raw", 0, typeof(uint), true),
                     new MhwStructData.Entry("Note 1", 4, typeof(int), typeof(NoteColorWithDisabled)),
@@ -181,6 +187,7 @@ namespace MHW_Generator {
                 size = 52,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Item_Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Item Id", 4, typeof(uint), true),
@@ -204,6 +211,7 @@ namespace MHW_Generator {
                 size = 52,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Item_Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Item Id", 4, typeof(uint), true),
@@ -227,6 +235,7 @@ namespace MHW_Generator {
                 size = 42,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Set_Id}|{Variant}|{Equip_Slot}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Set Id", 4, typeof(ushort), true),
@@ -256,6 +265,7 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 encryptionKey = EncryptionKeys.OWP_DAT_KEY,
+                uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint)),
                     new MhwStructData.Entry("Id", 32, typeof(ushort)),
@@ -283,6 +293,7 @@ namespace MHW_Generator {
                 size = 24,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Fertilizer_Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Fertilizer Id", 0, typeof(uint), typeof(Fertilizer)),
                     new MhwStructData.Entry("Prize", 4, typeof(uint)),
@@ -299,6 +310,7 @@ namespace MHW_Generator {
                 size = 37,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Item}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Cultivation category", 0, typeof(uint), typeof(CultivationCategory)),
                     new MhwStructData.Entry("Unlocked from start Raw", 8, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Unlocked from start"}),
@@ -318,6 +330,7 @@ namespace MHW_Generator {
                 size = 41,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Item_Category}|{Item_Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Item Category", 0, typeof(byte), true),
                     new MhwStructData.Entry("Item Id", 1, typeof(ushort), true),
@@ -346,6 +359,7 @@ namespace MHW_Generator {
                 size = 37,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Item_Category}|{Item_Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Item Category", 0, typeof(byte), true),
                     new MhwStructData.Entry("Item Id", 1, typeof(ushort), true),
@@ -375,6 +389,7 @@ namespace MHW_Generator {
                 size = 28,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Mantle_Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Mantle Id", 16, typeof(uint), true),
                     new MhwStructData.Entry("Icon Id", 0, typeof(uint)),
@@ -395,6 +410,7 @@ namespace MHW_Generator {
                 size = 2,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Is Set Bonus Raw", 0, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Is Set Bonus"}),
                     new MhwStructData.Entry("Icon Color Id", 1, typeof(byte))
@@ -407,6 +423,7 @@ namespace MHW_Generator {
                 size = 7,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Unknown 1 (uint8)", 4, typeof(byte)),
@@ -420,6 +437,7 @@ namespace MHW_Generator {
                 size = 8,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Shell Type", 4, typeof(ushort), typeof(ShellType)),
@@ -433,6 +451,7 @@ namespace MHW_Generator {
                 size = 7,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Note 1", 4, typeof(byte), typeof(NoteColor)),
@@ -447,6 +466,7 @@ namespace MHW_Generator {
                 size = 10,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Element 1 Type", 4, typeof(byte), typeof(Element)),
@@ -462,6 +482,7 @@ namespace MHW_Generator {
                 size = 24,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Aug_Category}|{Aug_Level}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Aug Category", 0, typeof(uint), true, typeof(AugmentationCategory)),
                     new MhwStructData.Entry("Aug Level", 4, typeof(uint), true),
@@ -478,6 +499,7 @@ namespace MHW_Generator {
                 size = 38,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Id_1}|{Id_2}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id 1", 0, typeof(ushort), true),
                     new MhwStructData.Entry("Id 2", 2, typeof(ushort), true),
@@ -549,6 +571,7 @@ namespace MHW_Generator {
                 size = 111,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
                 entries = entries
             });
         }
@@ -558,6 +581,7 @@ namespace MHW_Generator {
                 size = 18,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Red", 4, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
@@ -576,6 +600,7 @@ namespace MHW_Generator {
                 size = 69,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Id", 59, typeof(ushort), true),
@@ -616,6 +641,7 @@ namespace MHW_Generator {
                 size = 66,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Id", 56, typeof(ushort), true),
@@ -653,6 +679,7 @@ namespace MHW_Generator {
                 size = 60,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Set_Layered_Id}|{Variant}|{Type}|{Equip_Slot}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Order", 4, typeof(ushort)),
@@ -696,6 +723,7 @@ namespace MHW_Generator {
                 size = 27,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Id}|{Level}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(ushort), true),
                     new MhwStructData.Entry("Level", 2, typeof(byte), true),
@@ -716,6 +744,7 @@ namespace MHW_Generator {
                 size = 28,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 4, typeof(ushort), true),
                     new MhwStructData.Entry("Id", 0, typeof(ushort), true),
@@ -733,6 +762,7 @@ namespace MHW_Generator {
                 size = 22,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Rarity}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Quest Progress 1", 0, typeof(short)),
                     new MhwStructData.Entry("Quest Progress 2", 2, typeof(short)),
@@ -754,6 +784,7 @@ namespace MHW_Generator {
                 size = 6,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Close Range", 0, typeof(byte), typeof(CoatingType)),
                     new MhwStructData.Entry("Power", 1, typeof(byte), typeof(CoatingType)),
@@ -770,6 +801,7 @@ namespace MHW_Generator {
                 size = 32,
                 offsetInitial = 10,
                 entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Sub Type", 4, typeof(byte), typeof(ItemSubType)),

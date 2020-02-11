@@ -9,6 +9,7 @@ namespace MHW_Editor.Items {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
+        public override string UniqueId => $"{Fertilizer_Id}";
 
         public const string Fertilizer_Id_displayName = "Fertilizer Id";
         public const int Fertilizer_Id_sortIndex = 50;

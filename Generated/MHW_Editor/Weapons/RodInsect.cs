@@ -9,6 +9,7 @@ namespace MHW_Editor.Weapons {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = "SFghFQVFJycHnypExurPwut98ZZq1cwvm7lpDpASeP4biRhstQgULzlb";
+        public override string UniqueId => $"{Id}";
 
         public const string Index_displayName = "Index";
         public const int Index_sortIndex = 50;

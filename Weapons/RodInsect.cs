@@ -7,8 +7,6 @@ namespace MHW_Editor.Weapons {
         public RodInsect(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string UniqueId => $"{Id}";
-
         public override string Name => DataHelper.insectData[MainWindow.locale].TryGet(Id, "Unknown");
     }
 }

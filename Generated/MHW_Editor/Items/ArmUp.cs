@@ -9,6 +9,7 @@ namespace MHW_Editor.Items {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
+        public override string UniqueId => $"{Rarity}";
 
         public const string Quest_Progress_1_displayName = "Quest Progress 1";
         public const int Quest_Progress_1_sortIndex = 50;

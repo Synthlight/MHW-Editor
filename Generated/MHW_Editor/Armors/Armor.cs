@@ -9,6 +9,7 @@ namespace MHW_Editor.Armors {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
+        public override string UniqueId => $"{Set_Layered_Id}|{Variant}|{Type}|{Equip_Slot}";
 
         public const string Index_displayName = "Index";
         public const int Index_sortIndex = 50;

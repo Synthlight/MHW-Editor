@@ -9,8 +9,6 @@ namespace MHW_Editor.Items {
         public Item(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string UniqueId => $"{Id}";
-
         public override string Name => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Id, IdNamePair.Unknown((ushort) Id)).name;
 
         [SortOrder(Flags_Raw_sortIndex)]

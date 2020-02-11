@@ -233,6 +233,7 @@ namespace MHW_Editor {
                                                  typeof(SkillDat),
                                                  typeof(SkillPointData),
                                                  typeof(WeaponGunLance),
+                                                 typeof(WeaponSwitchAxe),
                                                  typeof(WeaponWhistle),
                                                  typeof(WeaponWSword),
                                                  typeof(BottleTable));
@@ -840,7 +841,7 @@ namespace MHW_Editor {
             if (string.IsNullOrEmpty(targetFile)) return;
 
             try {
-                var target = GetOpenTarget("JSON|*.json");
+                var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
                 if (string.IsNullOrEmpty(target)) return;
 
                 var json = File.ReadAllText(target);
@@ -856,10 +857,15 @@ namespace MHW_Editor {
 
                     var id = item.UniqueId;
                     var changedItems = changesToLoad.changes.TryGet(id, null);
-                    if (changedItems == null) continue;
+                    if (changedItems == null) {
+                        // Try for wildcard option.
+                        changedItems = changesToLoad.changes.TryGet("*", null);
+                        if (changedItems == null) continue;
+                    }
 
                     foreach (var changedItem in changedItems) {
                         var propertyInfo = item.GetType().GetProperty(changedItem.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+
                         if (propertyInfo.PropertyType.IsEnum) {
                             var value = Enum.ToObject(propertyInfo.PropertyType, changedItem.Value);
                             propertyInfo.SetValue(item, value);
@@ -922,8 +928,9 @@ namespace MHW_Editor {
 
         private string GetSaveTarget() {
             var sfdResult = new SaveFileDialog {
-                Filter = "JSON|*.json",
-                FileName = $"{Path.GetFileName(targetFile)}.json"
+                Filter = $"JSON|*{Path.GetExtension(targetFile)}.json",
+                FileName = $"{Path.GetFileNameWithoutExtension(targetFile)}",
+                AddExtension = true
             };
             sfdResult.ShowDialog();
 

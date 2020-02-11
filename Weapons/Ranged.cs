@@ -12,8 +12,6 @@ namespace MHW_Editor.Weapons {
             this.weaponFilename = weaponFilename;
         }
 
-        public override string UniqueId => $"{Id}";
-
         public override string Name => DataHelper.weaponData[MainWindow.locale][weaponFilename].TryGet(GMD_Name_Index, "Unknown");
 
         [SortOrder(lastSortIndex + 1)]

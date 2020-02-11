@@ -9,6 +9,7 @@ namespace MHW_Editor.Armors {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
+        public override string UniqueId => $"{Mantle_Id}";
 
         public const string Mantle_Id_displayName = "Mantle Id";
         public const int Mantle_Id_sortIndex = 50;

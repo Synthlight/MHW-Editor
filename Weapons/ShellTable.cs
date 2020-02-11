@@ -58,11 +58,9 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public override string UniqueId => $"{Index}";
-
         public override string Name => "None";
 
         [SortOrder(0)]
-        public ulong Index => (Offset - InitialOffset) / StructSize;
+        public ulong Id => (Offset - InitialOffset) / StructSize;
     }
 }

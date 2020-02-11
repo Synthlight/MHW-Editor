@@ -9,8 +9,6 @@ namespace MHW_Editor.Armors {
         public Armor(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string UniqueId => $"{Set_Layered_Id}|{Variant}|{Type}|{Equip_Slot}";
-
         public override string Name => DataHelper.armorData[MainWindow.locale].TryGet(GMD_Name_Index, "Unknown");
 
         [SortOrder(lastSortIndex + 1)]

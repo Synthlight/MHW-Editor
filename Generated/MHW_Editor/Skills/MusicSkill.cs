@@ -9,6 +9,7 @@ namespace MHW_Editor.Skills {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = "qm7psvaMXQoay7kARXpNPcLNWqsbqcOyI4lqHtxFh26HSuE6RHNq7J4e";
+        public override string UniqueId => $"{Song_Id_Raw}";
 
         public const string Song_Id_Raw_displayName = "Song Id Raw";
         public const int Song_Id_Raw_sortIndex = 50;

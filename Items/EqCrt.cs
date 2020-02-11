@@ -46,8 +46,6 @@ namespace MHW_Editor.Items {
         public EqCrt(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string UniqueId => $"{Item_Category}|{Item_Id}";
-
         public override string Name => "None";
 
         [SortOrder(Needed_Item_Id_to_Unlock_sortIndex)]

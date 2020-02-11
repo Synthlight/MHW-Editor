@@ -9,6 +9,7 @@ namespace MHW_Editor.Items {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
+        public override string UniqueId => $"{Item_Category}|{Item_Id}";
 
         public const string Item_Category_displayName = "Item Category";
         public const int Item_Category_sortIndex = 50;

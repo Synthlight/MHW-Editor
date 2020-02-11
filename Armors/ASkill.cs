@@ -8,8 +8,6 @@ namespace MHW_Editor.Armors {
         public ASkill(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string UniqueId => $"{Mantle_Id}";
-
         public override string Name => "None";
 
         [SortOrder(Mantle_Item_Id_sortIndex)]
