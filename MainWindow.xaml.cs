@@ -848,6 +848,9 @@ namespace MHW_Editor {
 
                 if (!changesToLoad.changes.Any()) return;
 
+                var currentType = Path.GetFileName(targetFile);
+                if (currentType != changesToLoad.targetFile) return;
+
                 foreach (MhwItem item in items) {
                     if (item.Offset == 0) continue;
 
@@ -876,7 +879,7 @@ namespace MHW_Editor {
 
             try {
                 // <ID, <Column Name, Value>>
-                var changesToSave = new JsonChanges {targetFile = Path.GetFileNameWithoutExtension(targetFile)};
+                var changesToSave = new JsonChanges {targetFile = Path.GetFileName(targetFile)};
 
                 foreach (MhwItem item in items) {
                     if (item.Offset == 0 || item.changed.Count == 0) continue;
