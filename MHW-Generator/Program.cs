@@ -1,26 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text.RegularExpressions;
 using MHW_Template;
 using MHW_Template.Armors;
 using MHW_Template.Items;
 using MHW_Template.Models;
 using MHW_Template.Weapons;
 using MHW_Template.Weapons.Model;
-using Newtonsoft.Json;
 
 namespace MHW_Generator {
     public static class Program {
-        private const string ROOT_OUTPUT = @"..\..\..\Generated";
-        private const string ROOT_STRUCT_OUTPUT = @"..\..\..\Structs";
-        private const string ROOT_ASSETS = @"..\..\..\Assets";
+        public const string ROOT_OUTPUT = @"..\..\..\Generated";
+        public const string ROOT_STRUCT_OUTPUT = @"..\..\..\Structs";
+        public const string ROOT_ASSETS = @"..\..\..\Assets";
 
         [STAThread]
         public static void Main() {
-            CreateSkillDataValueClass();
-            CreateArmorDataValueClass();
-
             GenItem();
             GenBottleTable();
             GenArmUp();
@@ -45,7 +40,6 @@ namespace MHW_Generator {
             GenPlantItem();
             GenOtomoWeaponDat();
             GenOtomoArmorDat();
-            GenOtomoArmorDat();
             GenDecoLottery();
             GenDecoGradeLottery();
             GenMusicSkill();
@@ -64,8 +58,8 @@ namespace MHW_Generator {
                 encryptionKey = EncryptionKeys.CUS_PAR_KEY,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 1, typeof(uint), true),
-                    new MhwStructData.Entry("Unk1", 0, typeof(byte)),
-                    new MhwStructData.Entry("Needed Item Id to Unlock", 5, typeof(ushort)),
+                    new MhwStructData.Entry("Level", 0, typeof(byte)),
+                    new MhwStructData.Entry("Needed Item Id to Unlock", 5, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Unk2", 7, typeof(int)),
                     new MhwStructData.Entry("Mat 1 Id", 15, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Mat 1 Count", 17, typeof(byte)),
@@ -133,7 +127,7 @@ namespace MHW_Generator {
         private static void GenMelderExchange() {
             const ulong size = 430;
             var entries = new List<MhwStructData.Entry> {
-                new MhwStructData.Entry("Source Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
+                new MhwStructData.Entry("Source Item Id", 0, typeof(uint), true, dataSourceType: DataSourceType.Items),
                 new MhwStructData.Entry("Unknown (int32) 1", 4, typeof(int))
             };
 
@@ -156,7 +150,7 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Result Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Result Item Id", 0, typeof(uint), true, dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Research Points", 4, typeof(uint)),
                     new MhwStructData.Entry("Melding Points", 8, typeof(uint)),
                     new MhwStructData.Entry("Category", 12, typeof(uint), typeof(ItemCategory)),
@@ -234,16 +228,16 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint)),
-                    new MhwStructData.Entry("Set Id", 4, typeof(ushort)),
-                    new MhwStructData.Entry("Equip Slot", 6, typeof(byte), typeof(EquipSlot)),
+                    new MhwStructData.Entry("Index", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Set Id", 4, typeof(ushort), true),
+                    new MhwStructData.Entry("Equip Slot", 6, typeof(byte), true, typeof(EquipSlot)),
                     new MhwStructData.Entry("Is Full Set Raw", 7, typeof(byte), accessLevel: "private"),
                     new MhwStructData.Entry("Defense", 8, typeof(uint)),
                     new MhwStructData.Entry("Rarity", 12, typeof(byte)),
                     new MhwStructData.Entry("Order", 13, typeof(ushort)),
                     new MhwStructData.Entry("Model Id", 15, typeof(uint)),
                     new MhwStructData.Entry("Cost", 19, typeof(uint)),
-                    new MhwStructData.Entry("Variant", 23, typeof(byte)),
+                    new MhwStructData.Entry("Variant", 23, typeof(byte), typeof(Variant)),
                     new MhwStructData.Entry("Fire Res", 27, typeof(sbyte)),
                     new MhwStructData.Entry("Water Res", 28, typeof(sbyte)),
                     new MhwStructData.Entry("Ice Res", 29, typeof(sbyte)),
@@ -263,7 +257,8 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 encryptionKey = EncryptionKeys.OWP_DAT_KEY,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint)),
+                    new MhwStructData.Entry("Index", 0, typeof(uint)),
+                    new MhwStructData.Entry("Id", 32, typeof(ushort)),
                     new MhwStructData.Entry("Set Id", 4, typeof(ushort)),
                     new MhwStructData.Entry("Element", 6, typeof(byte), typeof(Element)),
                     new MhwStructData.Entry("Attack Type", 7, typeof(byte), typeof(AttackType)),
@@ -277,7 +272,6 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Order", 21, typeof(ushort)),
                     new MhwStructData.Entry("Cost", 27, typeof(uint)),
                     new MhwStructData.Entry("Unknown (byte) 1", 31, typeof(byte)),
-                    new MhwStructData.Entry("Set Group", 32, typeof(ushort)),
                     new MhwStructData.Entry("GMD Name Index", 34, typeof(ushort), true),
                     new MhwStructData.Entry("GMD Description Index", 36, typeof(ushort), true)
                 }
@@ -325,9 +319,9 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Item Category", 0, typeof(byte)),
-                    new MhwStructData.Entry("External Item Index", 1, typeof(ushort)),
-                    new MhwStructData.Entry("Unknown (uint16) 1", 3, typeof(ushort)),
+                    new MhwStructData.Entry("Item Category", 0, typeof(byte), true),
+                    new MhwStructData.Entry("Item Id", 1, typeof(ushort), true),
+                    new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items), // TODO: Confirm
                     new MhwStructData.Entry("Unknown (int32) 2", 5, typeof(int)),
                     new MhwStructData.Entry("Story Unlock", 9, typeof(uint)),
                     new MhwStructData.Entry("Item Rank", 13, typeof(uint)),
@@ -353,9 +347,9 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Item Category", 0, typeof(byte)),
-                    new MhwStructData.Entry("Item Id", 1, typeof(ushort)),
-                    new MhwStructData.Entry("Item Class", 3, typeof(ushort)),
+                    new MhwStructData.Entry("Item Category", 0, typeof(byte), true),
+                    new MhwStructData.Entry("Item Id", 1, typeof(ushort), true),
+                    new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items), // TODO: Confirm
                     new MhwStructData.Entry("Unknown (int32)", 5, typeof(int)),
                     new MhwStructData.Entry("Story Unlock", 9, typeof(uint)),
                     new MhwStructData.Entry("Unknown (uint32)", 13, typeof(uint)),
@@ -382,7 +376,7 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Mantle Id", 16, typeof(uint)),
+                    new MhwStructData.Entry("Mantle Id", 16, typeof(uint), true),
                     new MhwStructData.Entry("Unknown (uint32)", 0, typeof(uint)),
                     new MhwStructData.Entry("Color", 4, typeof(uint)),
                     new MhwStructData.Entry("Sort Order", 8, typeof(uint)),
@@ -469,8 +463,8 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Aug Category", 0, typeof(uint), typeof(AugmentationCategory)),
-                    new MhwStructData.Entry("Aug Level", 4, typeof(uint)),
+                    new MhwStructData.Entry("Aug Category", 0, typeof(uint), true, typeof(AugmentationCategory)),
+                    new MhwStructData.Entry("Aug Level", 4, typeof(uint), true),
                     new MhwStructData.Entry("Aug Slot Cost", 8, typeof(uint)),
                     new MhwStructData.Entry("Research Cost (r10)", 12, typeof(uint)),
                     new MhwStructData.Entry("Research Cost (r11)", 16, typeof(uint)),
@@ -660,12 +654,12 @@ namespace MHW_Generator {
                 offsetInitial = 10,
                 entryCountOffset = 6,
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Order", 4, typeof(ushort)),
-                    new MhwStructData.Entry("Variant", 6, typeof(byte), typeof(Variant)),
-                    new MhwStructData.Entry("Set (Layered) Id", 7, typeof(ushort)),
-                    new MhwStructData.Entry("Type", 9, typeof(byte), typeof(ArmorType)),
-                    new MhwStructData.Entry("Equip Slot", 10, typeof(byte), typeof(EquipSlot)),
+                    new MhwStructData.Entry("Variant", 6, typeof(byte), true, typeof(Variant)),
+                    new MhwStructData.Entry("Set (Layered) Id", 7, typeof(ushort), true),
+                    new MhwStructData.Entry("Type", 9, typeof(byte), true, typeof(ArmorType)),
+                    new MhwStructData.Entry("Equip Slot", 10, typeof(byte), true, typeof(EquipSlot)),
                     new MhwStructData.Entry("Defense", 11, typeof(ushort)),
                     new MhwStructData.Entry("Rarity", 20, typeof(byte)),
                     new MhwStructData.Entry("Cost", 21, typeof(uint)),
@@ -793,68 +787,6 @@ namespace MHW_Generator {
             });
         }
 
-        private static void CreateSkillDataValueClass() {
-            var json = File.ReadAllText($@"{ROOT_ASSETS}\SkillData\eng_skillData.json");
-            var rawSkillData = JsonConvert.DeserializeObject<Dictionary<uint, string>>(json);
-
-            var values = new List<DataValuePair>();
-
-            const uint step = 3;
-            for (uint index = 0; index < rawSkillData.Count; index += step) {
-                var value = (ushort) (index / step);
-                var name = Regex.Replace(rawSkillData[index], @"[^\w\d]+", "_");
-                var desc = rawSkillData[index + 2].Replace("\r\n", " ");
-
-                if (name == "Unavailable") continue;
-                if (desc == "Unavailable") desc = null;
-
-                values.Add(new DataValuePair(value, name, desc));
-            }
-
-            const string @namespace = "MHW_Editor.Skills";
-            const string className = "SkillDataValueClass";
-
-            WriteResult($"{ROOT_OUTPUT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ValueClassTemplate {
-                Session = new Dictionary<string, object> {
-                    {"_namespace", @namespace},
-                    {"className", className},
-                    {"valueDataPairs", values}
-                }
-            });
-        }
-
-        private static void CreateArmorDataValueClass() {
-            var json = File.ReadAllText($@"{ROOT_ASSETS}\ArmorData\eng_armorData.json");
-            var armorGmdData = JsonConvert.DeserializeObject<Dictionary<ushort, string>>(json);
-            var armors = ArmorReader.GetArmor();
-
-            var values = new List<DataValuePair>();
-            foreach (var armor in armors) {
-                var id = armor.Id;
-                var name = Regex.Replace(armorGmdData[armor.GMD_Name_Index], @"[^\w\d\+]+", "_")
-                                .Replace('α', 'a')
-                                .Replace('β', 'b')
-                                .Replace('γ', 'y')
-                                .Replace("+", "_plus");
-
-                if (name == "Unavailable" || name == "HARDUMMY" || name.Length > 25) continue;
-                if (values.Contains(new DataValuePair(0, name, null))) continue;
-
-                values.Add(new DataValuePair((ushort) id, name, null));
-            }
-
-            const string @namespace = "MHW_Editor.Armors";
-            const string className = "ArmorDataValueClass";
-
-            WriteResult($"{ROOT_OUTPUT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ValueClassTemplate {
-                Session = new Dictionary<string, object> {
-                    {"_namespace", @namespace},
-                    {"className", className},
-                    {"valueDataPairs", values}
-                }
-            });
-        }
-
         public static void GenerateItemProps(string @namespace, string className, MhwStructData structData) {
             WriteResult($"{ROOT_OUTPUT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ItemTemplate {
                 Session = new Dictionary<string, object> {
@@ -873,7 +805,7 @@ namespace MHW_Generator {
             });
         }
 
-        private static void WriteResult(string dir, string @namespace, string className, dynamic template) {
+        public static void WriteResult(string dir, string @namespace, string className, dynamic template) {
             template.Initialize();
             if (!Directory.Exists(dir)) {
                 Directory.CreateDirectory(dir);

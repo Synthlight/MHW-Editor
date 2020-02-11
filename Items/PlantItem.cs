@@ -9,6 +9,8 @@ namespace MHW_Editor.Items {
         public PlantItem(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
+        public override string UniqueId => $"{Item}";
+
         public override string Name => "None";
 
         [SortOrder(Item_sortIndex)]

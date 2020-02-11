@@ -18,7 +18,7 @@ namespace MHW_Editor.Items {
             get => (MHW_Template.Items.Fertilizer) GetData<uint>(0);
             set {
                 if ((MHW_Template.Items.Fertilizer) GetData<uint>(0) == value) return;
-                SetData(0, (uint) value);
+                SetData(0, (uint) value, nameof(Fertilizer_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Fertilizer_Id));
             }
@@ -32,7 +32,7 @@ namespace MHW_Editor.Items {
             get => GetData<uint>(4);
             set {
                 if (GetData<uint>(4) == value) return;
-                SetData(4, value);
+                SetData(4, value, nameof(Prize));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Prize));
             }
@@ -46,7 +46,7 @@ namespace MHW_Editor.Items {
             get => GetData<uint>(8);
             set {
                 if (GetData<uint>(8) == value) return;
-                SetData(8, value);
+                SetData(8, value, nameof(Base_duration));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Base_duration));
             }
@@ -60,7 +60,7 @@ namespace MHW_Editor.Items {
             get => GetData<uint>(12);
             set {
                 if (GetData<uint>(12) == value) return;
-                SetData(12, value);
+                SetData(12, value, nameof(Unknown_int32_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int32_1));
             }
@@ -74,7 +74,7 @@ namespace MHW_Editor.Items {
             get => GetData<uint>(16);
             set {
                 if (GetData<uint>(16) == value) return;
-                SetData(16, value);
+                SetData(16, value, nameof(Unknown_int32_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int32_2));
             }
@@ -88,7 +88,7 @@ namespace MHW_Editor.Items {
             get => GetData<uint>(20);
             set {
                 if (GetData<uint>(20) == value) return;
-                SetData(20, value);
+                SetData(20, value, nameof(Unknown_int32_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int32_3));
             }

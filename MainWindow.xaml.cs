@@ -136,8 +136,7 @@ namespace MHW_Editor {
             if (false) {
                 // ReSharper disable StringLiteralTypo
                 const string chunk = @"V:\MHW\IB\chunk_combined";
-                EncryptionHelper.Decrypt(EncryptionKeys.CUS_PAR_KEY, $@"{chunk}\common\equip\customParts.cus_pa", $@"{chunk}\common\equip\customParts.decrypted.cus_pa");
-                EncryptionHelper.Decrypt(EncryptionKeys.CUS_PAR_KEY, $@"{chunk}\common\equip\customParts.cus_par", $@"{chunk}\common\equip\customParts.decrypted.cus_par");
+                EncryptionHelper.Decrypt(EncryptionKeys.ASKILLP_KEY, $@"{chunk}\common\pl\askill_param.asp", $@"{chunk}\common\pl\askill_param.decrypted.asp");
                 Close();
                 return;
             }
@@ -176,6 +175,7 @@ namespace MHW_Editor {
             });
         }
 
+        // ReSharper disable once UnusedMethodReturnValue.Local
         private DispatcherOperation RunOnUiThread(Action action) {
             return Dispatcher?.InvokeAsync(action);
         }
@@ -185,7 +185,7 @@ namespace MHW_Editor {
             request.Method = "GET";
 
             using (var response = (HttpWebResponse) request.GetResponse()) {
-                using (var reader = new StreamReader(response.GetResponseStream())) {
+                using (var reader = new StreamReader(response.GetResponseStream() ?? throw new InvalidOperationException())) {
                     return reader.ReadToEnd();
                 }
             }
@@ -196,7 +196,7 @@ namespace MHW_Editor {
 
             switch (e.PropertyName) {
                 case nameof(IMhwItem.Bytes):
-                case nameof(IMhwItem.Changed):
+                case nameof(IMhwItem.UniqueId):
                 case nameof(Melee.GMD_Name_Index):
                 case nameof(Melee.GMD_Description_Index):
                     e.Cancel = true; // Internal.
@@ -244,10 +244,13 @@ namespace MHW_Editor {
                     e.Cancel = targetFileType.Is(typeof(DecoPercent));
                     break;
                 case nameof(SkillDat.Index):
-                    e.Cancel = targetFileType.Is(typeof(DecoGradeLottery),
+                    e.Cancel = targetFileType.Is(typeof(Armor),
+                                                 typeof(DecoGradeLottery),
                                                  typeof(DecoLottery),
                                                  typeof(Gem),
                                                  typeof(Melee),
+                                                 typeof(OtomoArmorDat),
+                                                 typeof(OtomoWeaponDat),
                                                  typeof(Ranged),
                                                  typeof(RodInsect),
                                                  typeof(SkillDat));
@@ -288,7 +291,9 @@ namespace MHW_Editor {
                     var cb = new DataGridComboBoxColumn {
                         Header = e.Column.Header,
                         ItemsSource = EqCrt.categoryLookup[fileName],
-                        SelectedValueBinding = new Binding(e.PropertyName),
+                        SelectedValueBinding = new Binding(e.PropertyName) {
+                            Mode = BindingMode.OneWay
+                        },
                         SelectedValuePath = "Key",
                         DisplayMemberPath = "Value",
                         CanUserSort = true
@@ -451,6 +456,9 @@ namespace MHW_Editor {
                     // Needs to only happen when it's a button. If not, we stop regular fields from working.
                     if (CheckCellForButtonTypeAndHandleClick(cell)) return;
 
+                    // We're past the _button check, now we just want to avoid a normal drop-down set to read only.
+                    if (cell.IsReadOnly) return;
+
                     // Starts the Edit on the row;
                     dg_items.BeginEdit(e);
 
@@ -587,10 +595,10 @@ namespace MHW_Editor {
             }
         }
 
-        private void Btn_open_Click(object sender, RoutedEventArgs e) {
-            var target = Open();
+        private void Load() {
+            var target = GetOpenTarget($"MHW Data Files (See mod description for full list.)|{string.Join(";", FILE_TYPES)}");
             if (string.IsNullOrEmpty(target)) return;
-            Load(target);
+            LoadFile(target);
 
             if (targetFileType.Is(typeof(SkillDat))) {
                 FillSkillDatDictionary();
@@ -606,22 +614,7 @@ namespace MHW_Editor {
             }
         }
 
-        private void Btn_save_Click(object sender, RoutedEventArgs e) {
-            if (string.IsNullOrEmpty(targetFile)) return;
-            Save();
-        }
-
-        private string Open() {
-            var ofdResult = new OpenFileDialog {
-                Filter = $"MHW Data Files (See mod description for full list.)|{string.Join(";", FILE_TYPES)}",
-                Multiselect = false
-            };
-            ofdResult.ShowDialog();
-
-            return ofdResult.FileName;
-        }
-
-        private void Load(string target) {
+        private void LoadFile(string target) {
             targetFile = target;
             targetFileType = GetFileType();
             items.Clear();
@@ -773,6 +766,8 @@ namespace MHW_Editor {
         }
 
         private async void Save() {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
             try {
                 bool changesSaved;
                 var encryptionKey = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy).GetValue(null);
@@ -807,34 +802,129 @@ namespace MHW_Editor {
                     }
                 }
 
-                savedTimer?.Cancel();
-                savedTimer = new CancellationTokenSource();
-                lbl_saved.Visibility = changesSaved.VisibleIfTrue();
-                lbl_no_changes.Visibility = changesSaved ? Visibility.Collapsed : Visibility.Visible;
-                try {
-                    await Task.Delay(3000, savedTimer.Token);
-                    lbl_saved.Visibility = lbl_no_changes.Visibility = Visibility.Hidden;
-                } catch (TaskCanceledException) {
-                }
+                await ShowChangesSaved(changesSaved);
             } catch (Exception e) {
                 MessageBox.Show(this, e.Message, "Save Error");
+            }
+        }
+
+        private async Task ShowChangesSaved(bool changesSaved) {
+            savedTimer?.Cancel();
+            savedTimer = new CancellationTokenSource();
+            lbl_saved.Visibility = changesSaved.VisibleIfTrue();
+            lbl_no_changes.Visibility = changesSaved ? Visibility.Collapsed : Visibility.Visible;
+            try {
+                await Task.Delay(3000, savedTimer.Token);
+                lbl_saved.Visibility = lbl_no_changes.Visibility = Visibility.Hidden;
+            } catch (TaskCanceledException) {
             }
         }
 
         private bool WriteChanges(BinaryWriter dat) {
             var changesSaved = false;
 
-            foreach (IMhwItem item in items) {
-                if (item.Offset == 0 || !item.Changed) continue;
+            foreach (MhwItem item in items) {
+                if (item.Offset == 0 || item.changed.Count == 0) continue;
 
                 dat.BaseStream.Seek((long) item.Offset, SeekOrigin.Begin);
                 dat.Write(item.Bytes);
 
-                item.Changed = false;
+                item.changed.Clear();
                 changesSaved = true;
             }
 
             return changesSaved;
+        }
+
+        private void LoadJson() {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            try {
+                var target = GetOpenTarget("JSON|*.json");
+                if (string.IsNullOrEmpty(target)) return;
+
+                var json = File.ReadAllText(target);
+                var changesToLoad = JsonConvert.DeserializeObject<JsonChanges>(json);
+
+                if (!changesToLoad.changes.Any()) return;
+
+                foreach (MhwItem item in items) {
+                    if (item.Offset == 0) continue;
+
+                    var id = item.UniqueId;
+                    var changedItems = changesToLoad.changes.TryGet(id, null);
+                    if (changedItems == null) continue;
+
+                    foreach (var changedItem in changedItems) {
+                        var propertyInfo = item.GetType().GetProperty(changedItem.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+                        if (propertyInfo.PropertyType.IsEnum) {
+                            var value = Enum.ToObject(propertyInfo.PropertyType, changedItem.Value);
+                            propertyInfo.SetValue(item, value);
+                        } else {
+                            var value = Convert.ChangeType(changedItem.Value, propertyInfo.PropertyType);
+                            propertyInfo.SetValue(item, value);
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                MessageBox.Show(this, e.Message, "Load Error");
+            }
+        }
+
+        private async void SaveJson() {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            try {
+                // <ID, <Column Name, Value>>
+                var changesToSave = new JsonChanges {targetFile = Path.GetFileNameWithoutExtension(targetFile)};
+
+                foreach (MhwItem item in items) {
+                    if (item.Offset == 0 || item.changed.Count == 0) continue;
+
+                    var id = item.UniqueId;
+                    changesToSave.changes[id] = new Dictionary<string, object>();
+
+                    foreach (var changedItem in item.changed) {
+                        var value = item.GetType().GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
+                        changesToSave.changes[id][changedItem] = value;
+                    }
+                }
+
+                var changesSaved = changesToSave.changes.Any();
+
+                if (changesSaved) {
+                    // Get file after checking for what to save else we show a dialog even if there are no changes.
+                    var target = GetSaveTarget();
+                    if (string.IsNullOrEmpty(target)) return;
+
+                    var json = JsonConvert.SerializeObject(changesToSave, Formatting.Indented);
+                    File.WriteAllText(target, json);
+                }
+
+                await ShowChangesSaved(changesSaved);
+            } catch (Exception e) {
+                MessageBox.Show(this, e.Message, "Save Error");
+            }
+        }
+
+        private string GetOpenTarget(string filter) {
+            var ofdResult = new OpenFileDialog {
+                Filter = filter,
+                Multiselect = false
+            };
+            ofdResult.ShowDialog();
+
+            return ofdResult.FileName;
+        }
+
+        private string GetSaveTarget() {
+            var sfdResult = new SaveFileDialog {
+                Filter = "JSON|*.json",
+                FileName = $"{Path.GetFileName(targetFile)}.json"
+            };
+            sfdResult.ShowDialog();
+
+            return sfdResult.FileName;
         }
 
         private Type GetFileType() {

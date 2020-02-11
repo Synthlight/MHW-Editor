@@ -16,12 +16,6 @@ namespace MHW_Editor.Items {
         [DisplayName(Item_Category_displayName)]
         public virtual byte Item_Category {
             get => GetData<byte>(0);
-            set {
-                if (GetData<byte>(0) == value) return;
-                SetData(0, value);
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_Category));
-            }
         }
 
         public const string Item_Id_displayName = "Item Id";
@@ -30,25 +24,21 @@ namespace MHW_Editor.Items {
         [DisplayName(Item_Id_displayName)]
         public virtual ushort Item_Id {
             get => GetData<ushort>(1);
-            set {
-                if (GetData<ushort>(1) == value) return;
-                SetData(1, value);
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_Id));
-            }
         }
 
-        public const string Item_Class_displayName = "Item Class";
-        public const int Item_Class_sortIndex = 150;
-        [SortOrder(Item_Class_sortIndex)]
-        [DisplayName(Item_Class_displayName)]
-        public virtual ushort Item_Class {
+        public const string Needed_Item_Id_to_Unlock_displayName = "Needed Item Id to Unlock";
+        public const int Needed_Item_Id_to_Unlock_sortIndex = 150;
+        [SortOrder(Needed_Item_Id_to_Unlock_sortIndex)]
+        [DisplayName(Needed_Item_Id_to_Unlock_displayName)]
+        [DataSource(DataSourceType.Items)]
+        public virtual ushort Needed_Item_Id_to_Unlock {
             get => GetData<ushort>(3);
             set {
                 if (GetData<ushort>(3) == value) return;
-                SetData(3, value);
+                SetData(3, value, nameof(Needed_Item_Id_to_Unlock));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_Class));
+                OnPropertyChanged(nameof(Needed_Item_Id_to_Unlock));
+                OnPropertyChanged("Needed_Item_Id_to_Unlock_button");
             }
         }
 
@@ -60,7 +50,7 @@ namespace MHW_Editor.Items {
             get => GetData<int>(5);
             set {
                 if (GetData<int>(5) == value) return;
-                SetData(5, value);
+                SetData(5, value, nameof(Unknown_int32_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int32_));
             }
@@ -74,7 +64,7 @@ namespace MHW_Editor.Items {
             get => GetData<uint>(9);
             set {
                 if (GetData<uint>(9) == value) return;
-                SetData(9, value);
+                SetData(9, value, nameof(Story_Unlock));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Story_Unlock));
             }
@@ -88,7 +78,7 @@ namespace MHW_Editor.Items {
             get => GetData<uint>(13);
             set {
                 if (GetData<uint>(13) == value) return;
-                SetData(13, value);
+                SetData(13, value, nameof(Unknown_uint32_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_uint32_));
             }
@@ -102,7 +92,7 @@ namespace MHW_Editor.Items {
             get => GetData<uint>(17);
             set {
                 if (GetData<uint>(17) == value) return;
-                SetData(17, value);
+                SetData(17, value, nameof(Item_Rank));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Item_Rank));
             }
@@ -117,7 +107,7 @@ namespace MHW_Editor.Items {
             get => GetData<ushort>(21);
             set {
                 if (GetData<ushort>(21) == value) return;
-                SetData(21, value);
+                SetData(21, value, nameof(Mat_1_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_1_Id));
                 OnPropertyChanged("Mat_1_Id_button");
@@ -132,7 +122,7 @@ namespace MHW_Editor.Items {
             get => GetData<byte>(23);
             set {
                 if (GetData<byte>(23) == value) return;
-                SetData(23, value);
+                SetData(23, value, nameof(Mat_1_Count));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_1_Count));
             }
@@ -147,7 +137,7 @@ namespace MHW_Editor.Items {
             get => GetData<ushort>(24);
             set {
                 if (GetData<ushort>(24) == value) return;
-                SetData(24, value);
+                SetData(24, value, nameof(Mat_2_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_2_Id));
                 OnPropertyChanged("Mat_2_Id_button");
@@ -162,7 +152,7 @@ namespace MHW_Editor.Items {
             get => GetData<byte>(26);
             set {
                 if (GetData<byte>(26) == value) return;
-                SetData(26, value);
+                SetData(26, value, nameof(Mat_2_Count));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_2_Count));
             }
@@ -177,7 +167,7 @@ namespace MHW_Editor.Items {
             get => GetData<ushort>(27);
             set {
                 if (GetData<ushort>(27) == value) return;
-                SetData(27, value);
+                SetData(27, value, nameof(Mat_3_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_3_Id));
                 OnPropertyChanged("Mat_3_Id_button");
@@ -192,7 +182,7 @@ namespace MHW_Editor.Items {
             get => GetData<byte>(29);
             set {
                 if (GetData<byte>(29) == value) return;
-                SetData(29, value);
+                SetData(29, value, nameof(Mat_3_Count));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_3_Count));
             }
@@ -207,7 +197,7 @@ namespace MHW_Editor.Items {
             get => GetData<ushort>(30);
             set {
                 if (GetData<ushort>(30) == value) return;
-                SetData(30, value);
+                SetData(30, value, nameof(Mat_4_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_4_Id));
                 OnPropertyChanged("Mat_4_Id_button");
@@ -222,7 +212,7 @@ namespace MHW_Editor.Items {
             get => GetData<byte>(32);
             set {
                 if (GetData<byte>(32) == value) return;
-                SetData(32, value);
+                SetData(32, value, nameof(Mat_4_Count));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mat_4_Count));
             }
@@ -236,7 +226,7 @@ namespace MHW_Editor.Items {
             get => GetData<byte>(33);
             set {
                 if (GetData<byte>(33) == value) return;
-                SetData(33, value);
+                SetData(33, value, nameof(Unknown_uint8_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_uint8_1));
             }
@@ -250,7 +240,7 @@ namespace MHW_Editor.Items {
             get => GetData<byte>(34);
             set {
                 if (GetData<byte>(34) == value) return;
-                SetData(34, value);
+                SetData(34, value, nameof(Unknown_uint8_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_uint8_2));
             }
@@ -264,7 +254,7 @@ namespace MHW_Editor.Items {
             get => GetData<byte>(35);
             set {
                 if (GetData<byte>(35) == value) return;
-                SetData(35, value);
+                SetData(35, value, nameof(Unknown_uint8_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_uint8_3));
             }
@@ -278,7 +268,7 @@ namespace MHW_Editor.Items {
             get => GetData<byte>(36);
             set {
                 if (GetData<byte>(36) == value) return;
-                SetData(36, value);
+                SetData(36, value, nameof(Unknown_uint8_4));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_uint8_4));
             }

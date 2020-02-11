@@ -9,6 +9,8 @@ namespace MHW_Editor.Gems {
         public DecoGradeLottery(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
+        public override string UniqueId => $"{Item_Id}";
+
         [SortOrder(0)]
         [DisplayName("Name/Id")]
         [CustomSorter(typeof(DecoGradeLotteryNameIdSorter))]

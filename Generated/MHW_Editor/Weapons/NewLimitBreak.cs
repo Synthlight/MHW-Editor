@@ -16,12 +16,6 @@ namespace MHW_Editor.Weapons {
         [DisplayName(Aug_Category_displayName)]
         public virtual MHW_Template.Weapons.AugmentationCategory Aug_Category {
             get => (MHW_Template.Weapons.AugmentationCategory) GetData<uint>(0);
-            set {
-                if ((MHW_Template.Weapons.AugmentationCategory) GetData<uint>(0) == value) return;
-                SetData(0, (uint) value);
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Aug_Category));
-            }
         }
 
         public const string Aug_Level_displayName = "Aug Level";
@@ -30,12 +24,6 @@ namespace MHW_Editor.Weapons {
         [DisplayName(Aug_Level_displayName)]
         public virtual uint Aug_Level {
             get => GetData<uint>(4);
-            set {
-                if (GetData<uint>(4) == value) return;
-                SetData(4, value);
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Aug_Level));
-            }
         }
 
         public const string Aug_Slot_Cost_displayName = "Aug Slot Cost";
@@ -46,7 +34,7 @@ namespace MHW_Editor.Weapons {
             get => GetData<uint>(8);
             set {
                 if (GetData<uint>(8) == value) return;
-                SetData(8, value);
+                SetData(8, value, nameof(Aug_Slot_Cost));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Aug_Slot_Cost));
             }
@@ -60,7 +48,7 @@ namespace MHW_Editor.Weapons {
             get => GetData<uint>(12);
             set {
                 if (GetData<uint>(12) == value) return;
-                SetData(12, value);
+                SetData(12, value, nameof(Research_Cost_r10_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Research_Cost_r10_));
             }
@@ -74,7 +62,7 @@ namespace MHW_Editor.Weapons {
             get => GetData<uint>(16);
             set {
                 if (GetData<uint>(16) == value) return;
-                SetData(16, value);
+                SetData(16, value, nameof(Research_Cost_r11_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Research_Cost_r11_));
             }
@@ -88,7 +76,7 @@ namespace MHW_Editor.Weapons {
             get => GetData<uint>(20);
             set {
                 if (GetData<uint>(20) == value) return;
-                SetData(20, value);
+                SetData(20, value, nameof(Research_Cost_r12_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Research_Cost_r12_));
             }

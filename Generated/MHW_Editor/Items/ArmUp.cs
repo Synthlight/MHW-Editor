@@ -18,7 +18,7 @@ namespace MHW_Editor.Items {
             get => GetData<short>(0);
             set {
                 if (GetData<short>(0) == value) return;
-                SetData(0, value);
+                SetData(0, value, nameof(Unknown_int16_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int16_1));
             }
@@ -32,7 +32,7 @@ namespace MHW_Editor.Items {
             get => GetData<short>(2);
             set {
                 if (GetData<short>(2) == value) return;
-                SetData(2, value);
+                SetData(2, value, nameof(Unknown_int16_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int16_2));
             }
@@ -46,7 +46,7 @@ namespace MHW_Editor.Items {
             get => GetData<short>(4);
             set {
                 if (GetData<short>(4) == value) return;
-                SetData(4, value);
+                SetData(4, value, nameof(Unknown_int16_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int16_3));
             }
@@ -60,7 +60,7 @@ namespace MHW_Editor.Items {
             get => GetData<short>(6);
             set {
                 if (GetData<short>(6) == value) return;
-                SetData(6, value);
+                SetData(6, value, nameof(Unknown_int16_4));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int16_4));
             }
@@ -74,7 +74,7 @@ namespace MHW_Editor.Items {
             get => GetData<short>(8);
             set {
                 if (GetData<short>(8) == value) return;
-                SetData(8, value);
+                SetData(8, value, nameof(Unknown_int16_5));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int16_5));
             }
@@ -88,7 +88,7 @@ namespace MHW_Editor.Items {
             get => GetData<short>(10);
             set {
                 if (GetData<short>(10) == value) return;
-                SetData(10, value);
+                SetData(10, value, nameof(Unknown_int16_6));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int16_6));
             }
@@ -102,7 +102,7 @@ namespace MHW_Editor.Items {
             get => GetData<short>(12);
             set {
                 if (GetData<short>(12) == value) return;
-                SetData(12, value);
+                SetData(12, value, nameof(Unknown_int16_7));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int16_7));
             }
@@ -116,7 +116,7 @@ namespace MHW_Editor.Items {
             get => GetData<short>(14);
             set {
                 if (GetData<short>(14) == value) return;
-                SetData(14, value);
+                SetData(14, value, nameof(Unknown_int16_8));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int16_8));
             }
@@ -130,7 +130,7 @@ namespace MHW_Editor.Items {
             get => GetData<short>(16);
             set {
                 if (GetData<short>(16) == value) return;
-                SetData(16, value);
+                SetData(16, value, nameof(Unknown_int16_9));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int16_9));
             }
@@ -144,7 +144,7 @@ namespace MHW_Editor.Items {
             get => GetData<short>(18);
             set {
                 if (GetData<short>(18) == value) return;
-                SetData(18, value);
+                SetData(18, value, nameof(Unknown_int16_10));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int16_10));
             }
@@ -158,7 +158,7 @@ namespace MHW_Editor.Items {
             get => GetData<short>(20);
             set {
                 if (GetData<short>(20) == value) return;
-                SetData(20, value);
+                SetData(20, value, nameof(Unknown_int16_11));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_int16_11));
             }

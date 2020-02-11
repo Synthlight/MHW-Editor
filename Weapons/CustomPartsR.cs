@@ -8,6 +8,8 @@ namespace MHW_Editor.Weapons {
         public CustomPartsR(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
+        public override string UniqueId => $"{Index}";
+
         public override string Name => "None";
 
         [SortOrder(Needed_Item_Id_to_Unlock_sortIndex)]

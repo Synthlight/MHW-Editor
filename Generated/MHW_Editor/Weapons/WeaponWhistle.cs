@@ -26,7 +26,7 @@ namespace MHW_Editor.Weapons {
             get => (MHW_Template.Weapons.NoteColor) GetData<byte>(4);
             set {
                 if ((MHW_Template.Weapons.NoteColor) GetData<byte>(4) == value) return;
-                SetData(4, (byte) value);
+                SetData(4, (byte) value, nameof(Note_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_1));
             }
@@ -40,7 +40,7 @@ namespace MHW_Editor.Weapons {
             get => (MHW_Template.Weapons.NoteColor) GetData<byte>(4);
             set {
                 if ((MHW_Template.Weapons.NoteColor) GetData<byte>(4) == value) return;
-                SetData(4, (byte) value);
+                SetData(4, (byte) value, nameof(Note_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_2));
             }
@@ -54,7 +54,7 @@ namespace MHW_Editor.Weapons {
             get => (MHW_Template.Weapons.NoteColor) GetData<byte>(4);
             set {
                 if ((MHW_Template.Weapons.NoteColor) GetData<byte>(4) == value) return;
-                SetData(4, (byte) value);
+                SetData(4, (byte) value, nameof(Note_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_3));
             }

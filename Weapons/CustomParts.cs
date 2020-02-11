@@ -5,6 +5,8 @@ namespace MHW_Editor.Weapons {
         public CustomParts(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
+        public override string UniqueId => $"{Augment_Id}|{Weapon_Type}";
+
         public override string Name => "None";
     }
 }

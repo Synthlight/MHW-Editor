@@ -26,7 +26,7 @@ namespace MHW_Editor.Skills {
             get => (MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(4);
             set {
                 if ((MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(4) == value) return;
-                SetData(4, (int) value);
+                SetData(4, (int) value, nameof(Note_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_1));
             }
@@ -40,7 +40,7 @@ namespace MHW_Editor.Skills {
             get => (MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(8);
             set {
                 if ((MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(8) == value) return;
-                SetData(8, (int) value);
+                SetData(8, (int) value, nameof(Note_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_2));
             }
@@ -54,7 +54,7 @@ namespace MHW_Editor.Skills {
             get => (MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(12);
             set {
                 if ((MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(12) == value) return;
-                SetData(12, (int) value);
+                SetData(12, (int) value, nameof(Note_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_3));
             }
@@ -68,7 +68,7 @@ namespace MHW_Editor.Skills {
             get => (MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(16);
             set {
                 if ((MHW_Template.Weapons.NoteColorWithDisabled) GetData<int>(16) == value) return;
-                SetData(16, (int) value);
+                SetData(16, (int) value, nameof(Note_4));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_4));
             }

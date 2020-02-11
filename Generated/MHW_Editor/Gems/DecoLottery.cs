@@ -34,7 +34,7 @@ namespace MHW_Editor.Gems {
             get => GetData<uint>(8);
             set {
                 if (GetData<uint>(8) == value) return;
-                SetData(8, value);
+                SetData(8, value, nameof(R5));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R5));
             }
@@ -48,7 +48,7 @@ namespace MHW_Editor.Gems {
             get => GetData<uint>(12);
             set {
                 if (GetData<uint>(12) == value) return;
-                SetData(12, value);
+                SetData(12, value, nameof(R6));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R6));
             }
@@ -62,7 +62,7 @@ namespace MHW_Editor.Gems {
             get => GetData<uint>(16);
             set {
                 if (GetData<uint>(16) == value) return;
-                SetData(16, value);
+                SetData(16, value, nameof(R7));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R7));
             }
@@ -76,7 +76,7 @@ namespace MHW_Editor.Gems {
             get => GetData<uint>(20);
             set {
                 if (GetData<uint>(20) == value) return;
-                SetData(20, value);
+                SetData(20, value, nameof(R8));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R8));
             }
@@ -90,7 +90,7 @@ namespace MHW_Editor.Gems {
             get => GetData<uint>(32);
             set {
                 if (GetData<uint>(32) == value) return;
-                SetData(32, value);
+                SetData(32, value, nameof(R9));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R9));
             }
@@ -104,7 +104,7 @@ namespace MHW_Editor.Gems {
             get => GetData<uint>(36);
             set {
                 if (GetData<uint>(36) == value) return;
-                SetData(36, value);
+                SetData(36, value, nameof(R10));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R10));
             }
@@ -118,7 +118,7 @@ namespace MHW_Editor.Gems {
             get => GetData<uint>(40);
             set {
                 if (GetData<uint>(40) == value) return;
-                SetData(40, value);
+                SetData(40, value, nameof(R11));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R11));
             }
@@ -132,7 +132,7 @@ namespace MHW_Editor.Gems {
             get => GetData<uint>(44);
             set {
                 if (GetData<uint>(44) == value) return;
-                SetData(44, value);
+                SetData(44, value, nameof(R12));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R12));
             }
@@ -146,7 +146,7 @@ namespace MHW_Editor.Gems {
             get => GetData<uint>(48);
             set {
                 if (GetData<uint>(48) == value) return;
-                SetData(48, value);
+                SetData(48, value, nameof(R13));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(R13));
             }
@@ -160,7 +160,7 @@ namespace MHW_Editor.Gems {
             get => GetData<uint>(24);
             set {
                 if (GetData<uint>(24) == value) return;
-                SetData(24, value);
+                SetData(24, value, nameof(Stream_R6_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stream_R6_));
             }
@@ -174,7 +174,7 @@ namespace MHW_Editor.Gems {
             get => GetData<uint>(28);
             set {
                 if (GetData<uint>(28) == value) return;
-                SetData(28, value);
+                SetData(28, value, nameof(Stream_R8_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stream_R8_));
             }

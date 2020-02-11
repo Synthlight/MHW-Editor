@@ -17,13 +17,6 @@ namespace MHW_Editor.Items {
         [DataSource(DataSourceType.Items)]
         public virtual uint Result_Item_Id {
             get => GetData<uint>(0);
-            set {
-                if (GetData<uint>(0) == value) return;
-                SetData(0, value);
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Result_Item_Id));
-                OnPropertyChanged("Result_Item_Id_button");
-            }
         }
 
         public const string Research_Points_displayName = "Research Points";
@@ -34,7 +27,7 @@ namespace MHW_Editor.Items {
             get => GetData<uint>(4);
             set {
                 if (GetData<uint>(4) == value) return;
-                SetData(4, value);
+                SetData(4, value, nameof(Research_Points));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Research_Points));
             }
@@ -48,7 +41,7 @@ namespace MHW_Editor.Items {
             get => GetData<uint>(8);
             set {
                 if (GetData<uint>(8) == value) return;
-                SetData(8, value);
+                SetData(8, value, nameof(Melding_Points));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Melding_Points));
             }
@@ -62,7 +55,7 @@ namespace MHW_Editor.Items {
             get => (MHW_Template.Items.ItemCategory) GetData<uint>(12);
             set {
                 if ((MHW_Template.Items.ItemCategory) GetData<uint>(12) == value) return;
-                SetData(12, (uint) value);
+                SetData(12, (uint) value, nameof(Category));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Category));
             }
@@ -76,7 +69,7 @@ namespace MHW_Editor.Items {
             get => GetData<uint>(16);
             set {
                 if (GetData<uint>(16) == value) return;
-                SetData(16, value);
+                SetData(16, value, nameof(Unlock_Flag));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unlock_Flag));
             }
@@ -90,7 +83,7 @@ namespace MHW_Editor.Items {
             get => GetData<byte>(20);
             set {
                 if (GetData<byte>(20) == value) return;
-                SetData(20, value);
+                SetData(20, value, nameof(Unknown_uint8_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unknown_uint8_));
             }

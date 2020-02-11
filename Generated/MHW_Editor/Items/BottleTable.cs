@@ -18,7 +18,7 @@ namespace MHW_Editor.Items {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(0);
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(0) == value) return;
-                SetData(0, (byte) value);
+                SetData(0, (byte) value, nameof(Close_Range));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Close_Range));
             }
@@ -32,7 +32,7 @@ namespace MHW_Editor.Items {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(1);
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(1) == value) return;
-                SetData(1, (byte) value);
+                SetData(1, (byte) value, nameof(Power));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Power));
             }
@@ -46,7 +46,7 @@ namespace MHW_Editor.Items {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(2);
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(2) == value) return;
-                SetData(2, (byte) value);
+                SetData(2, (byte) value, nameof(Paralysis));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Paralysis));
             }
@@ -60,7 +60,7 @@ namespace MHW_Editor.Items {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(3);
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(3) == value) return;
-                SetData(3, (byte) value);
+                SetData(3, (byte) value, nameof(Poison));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Poison));
             }
@@ -74,7 +74,7 @@ namespace MHW_Editor.Items {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(4);
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(4) == value) return;
-                SetData(4, (byte) value);
+                SetData(4, (byte) value, nameof(Sleep));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Sleep));
             }
@@ -88,7 +88,7 @@ namespace MHW_Editor.Items {
             get => (MHW_Template.Weapons.CoatingType) GetData<byte>(5);
             set {
                 if ((MHW_Template.Weapons.CoatingType) GetData<byte>(5) == value) return;
-                SetData(5, (byte) value);
+                SetData(5, (byte) value, nameof(Blast));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Blast));
             }

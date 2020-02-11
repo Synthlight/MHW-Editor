@@ -8,6 +8,8 @@ namespace MHW_Editor.Items {
         public MelderExchange(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
+        public override string UniqueId => $"{Source_Item_Id}";
+
         public override string Name => "None";
 
         [SortOrder(Source_Item_Id_sortIndex)]

@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:weapons="clr-namespace:MHW_Editor.Weapons"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         Name="this"
         Title="MainWindow"
         Width="1800"
@@ -25,16 +26,32 @@
                    VerticalAlignment="Stretch">
             <StackPanel HorizontalAlignment="Right"
                         Orientation="Horizontal">
-                <Button Name="btn_open"
-                        Margin="0,0,0,0"
-                        HorizontalAlignment="Left"
-                        Click="Btn_open_Click"
-                        Content="Open"/>
-                <Button Name="btn_save"
-                        Margin="8,0,0,0"
-                        HorizontalAlignment="Left"
-                        Click="Btn_save_Click"
-                        Content="Save"/>
+                <xctk:SplitButton Name="btn_open"
+                                  Margin="0,0,0,0"
+                                  HorizontalAlignment="Left"
+                                  Click="Btn_open_Click"
+                                  Content="Open">
+                    <xctk:SplitButton.DropDownContent>
+                        <Button Name="btn_open_as_json"
+                                Margin="0,0,0,0"
+                                HorizontalAlignment="Left"
+                                Click="Btn_open_as_json_Click"
+                                Content="Import JSON Changes"/>
+                    </xctk:SplitButton.DropDownContent>
+                </xctk:SplitButton>
+                <xctk:SplitButton Name="btn_save"
+                                  Margin="8,0,0,0"
+                                  HorizontalAlignment="Left"
+                                  Click="Btn_save_Click"
+                                  Content="Save">
+                    <xctk:SplitButton.DropDownContent>
+                        <Button Name="btn_save_as_json"
+                                Margin="0,0,0,0"
+                                HorizontalAlignment="Left"
+                                Click="Btn_save_as_json_Click"
+                                Content="Save Changes (Since Last Save) as JSON"/>
+                    </xctk:SplitButton.DropDownContent>
+                </xctk:SplitButton>
                 <Label Name="lbl_saved"
                        Margin="8,0,0,0"
                        HorizontalAlignment="Left"

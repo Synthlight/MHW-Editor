@@ -9,6 +9,8 @@ namespace MHW_Editor.Skills {
         public MusicSkill(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
+        public override string UniqueId => $"{Song_Id_Raw}";
+
         public override string Name => "None";
 
         [SortOrder(Song_Id_Raw_sortIndex)]

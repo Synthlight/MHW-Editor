@@ -66,7 +66,7 @@ namespace <#= _namespace #> {
 
                 if (<#= getCast #>GetData<<#= typeString #>>(<#= entry.offset #>) == <#= entry.valueString #>) return;<# // Do nothing if the value is the same. #>
 
-                SetData(<#= entry.offset #>, <#= setCast #><#= entry.valueString #>);
+                SetData(<#= entry.offset #>, <#= setCast #><#= entry.valueString #>, nameof(<#= name #>));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(<#= name #>));
 <#

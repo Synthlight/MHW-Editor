@@ -11,6 +11,22 @@ using MHW_Template.Weapons;
 
 namespace MHW_Editor {
     public partial class MainWindow {
+        private void Btn_open_Click(object sender, RoutedEventArgs e) {
+            Load();
+        }
+
+        private void Btn_open_as_json_Click(object sender, RoutedEventArgs e) {
+            LoadJson();
+        }
+
+        private void Btn_save_Click(object sender, RoutedEventArgs e) {
+            Save();
+        }
+
+        private void Btn_save_as_json_Click(object sender, RoutedEventArgs e) {
+            SaveJson();
+        }
+
         private void Btn_customize_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
@@ -45,7 +61,7 @@ namespace MHW_Editor {
                     case Armor _: {
                         Armor armor = item;
 
-                        switch (armor.Id) {
+                        switch (armor.Index) {
                             case ArmorDataValueClass.Guildwork_Head_a_plus:
                                 armor.Skill_1 = SkillDataValueClass.Effluvial_Expert;
                                 armor.Skill_1_Level = 10;

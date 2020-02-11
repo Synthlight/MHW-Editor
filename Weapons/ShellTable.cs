@@ -58,6 +58,8 @@ namespace MHW_Editor.Weapons {
             }
         }
 
+        public override string UniqueId => $"{Index}";
+
         public override string Name => "None";
 
         [SortOrder(0)]

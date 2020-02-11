@@ -8,7 +8,14 @@ namespace MHW_Editor.Items {
         public EqCus(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
+        public override string UniqueId => $"{Item_Category}|{Item_Id}";
+
         public override string Name => "None";
+
+        [SortOrder(Needed_Item_Id_to_Unlock_sortIndex)]
+        [DisplayName(Needed_Item_Id_to_Unlock_displayName)]
+        [CustomSorter(typeof(UInt16Sorter), true)]
+        public string Needed_Item_Id_to_Unlock_button => DataHelper.itemData[MainWindow.locale].TryGet(Needed_Item_Id_to_Unlock, IdNamePair.Unknown(Needed_Item_Id_to_Unlock)).ToString();
 
         [SortOrder(Mat_1_Id_sortIndex)]
         [DisplayName(Mat_1_Id_displayName)]

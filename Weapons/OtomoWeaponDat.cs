@@ -8,6 +8,8 @@ namespace MHW_Editor.Weapons {
         public OtomoWeaponDat(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
+        public override string UniqueId => $"{Id}";
+
         public override string Name => DataHelper.otomoWeaponData[MainWindow.locale].TryGet(GMD_Name_Index, "Unknown");
 
         [SortOrder(lastSortIndex + 1)]

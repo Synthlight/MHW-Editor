@@ -9,6 +9,8 @@ namespace MHW_Editor.Armors {
         public OtomoArmorDat(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
+        public override string UniqueId => $"{Set_Id}|{Variant}|{Equip_Slot}";
+
         public override string Name => DataHelper.otomoArmorData[MainWindow.locale].TryGet(GMD_Name_Index, "Unknown");
 
         [SortOrder(lastSortIndex + 1)]

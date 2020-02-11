@@ -34,7 +34,7 @@ namespace MHW_Editor.Gems {
             get => GetData<byte>(8);
             set {
                 if (GetData<byte>(8) == value) return;
-                SetData(8, value);
+                SetData(8, value, nameof(Size));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Size));
             }
@@ -49,7 +49,7 @@ namespace MHW_Editor.Gems {
             get => GetData<ushort>(12);
             set {
                 if (GetData<ushort>(12) == value) return;
-                SetData(12, value);
+                SetData(12, value, nameof(Skill_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_1));
                 OnPropertyChanged("Skill_1_button");
@@ -64,7 +64,7 @@ namespace MHW_Editor.Gems {
             get => GetData<byte>(16);
             set {
                 if (GetData<byte>(16) == value) return;
-                SetData(16, value);
+                SetData(16, value, nameof(Skill_1_Level));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_1_Level));
             }
@@ -79,7 +79,7 @@ namespace MHW_Editor.Gems {
             get => GetData<ushort>(20);
             set {
                 if (GetData<ushort>(20) == value) return;
-                SetData(20, value);
+                SetData(20, value, nameof(Skill_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_2));
                 OnPropertyChanged("Skill_2_button");
@@ -94,7 +94,7 @@ namespace MHW_Editor.Gems {
             get => GetData<byte>(24);
             set {
                 if (GetData<byte>(24) == value) return;
-                SetData(24, value);
+                SetData(24, value, nameof(Skill_2_Level));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Skill_2_Level));
             }

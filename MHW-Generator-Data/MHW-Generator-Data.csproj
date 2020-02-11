@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A9B24F96-DBC9-4E0B-8D11-4C985D7F97FA}</ProjectGuid>
+    <ProjectGuid>{B38AA48E-3A63-4334-B7D5-76E9369854CB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MHW_Generator</RootNamespace>
-    <AssemblyName>MHW-Generator</AssemblyName>
+    <RootNamespace>MHW_Generator_Data</RootNamespace>
+    <AssemblyName>MHW-Generator-Data</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -40,9 +40,18 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArmorReader.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MHW-Editor.csproj">
+      <Project>{32a6d364-5e41-4094-840e-f6b5f5a08c5c}</Project>
+      <Name>MHW-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MHW-Generator\MHW-Generator.csproj">
+      <Project>{a9b24f96-dbc9-4e0b-8d11-4c985d7f97fa}</Project>
+      <Name>MHW-Generator</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MHW-Template\MHW-Template.csproj">
       <Project>{89c7cc4e-8a7b-45d0-95de-fb945b1def4c}</Project>
       <Name>MHW-Template</Name>

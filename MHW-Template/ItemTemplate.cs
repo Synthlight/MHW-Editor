@@ -295,8 +295,15 @@ namespace MHW_Template
             
             #line default
             #line hidden
-            this.Write(");\r\n                OnPropertyChanged(nameof(Raw_Data));\r\n                OnPrope" +
-                    "rtyChanged(nameof(");
+            this.Write(", nameof(");
+            
+            #line 69 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(name));
+            
+            #line default
+            #line hidden
+            this.Write("));\r\n                OnPropertyChanged(nameof(Raw_Data));\r\n                OnProp" +
+                    "ertyChanged(nameof(");
             
             #line 71 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(name));

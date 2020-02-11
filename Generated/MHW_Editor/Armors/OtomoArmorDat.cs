@@ -10,18 +10,12 @@ namespace MHW_Editor.Armors {
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
 
-        public const string Id_displayName = "Id";
-        public const int Id_sortIndex = 50;
-        [SortOrder(Id_sortIndex)]
-        [DisplayName(Id_displayName)]
-        public virtual uint Id {
+        public const string Index_displayName = "Index";
+        public const int Index_sortIndex = 50;
+        [SortOrder(Index_sortIndex)]
+        [DisplayName(Index_displayName)]
+        public virtual uint Index {
             get => GetData<uint>(0);
-            set {
-                if (GetData<uint>(0) == value) return;
-                SetData(0, value);
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Id));
-            }
         }
 
         public const string Set_Id_displayName = "Set Id";
@@ -30,12 +24,6 @@ namespace MHW_Editor.Armors {
         [DisplayName(Set_Id_displayName)]
         public virtual ushort Set_Id {
             get => GetData<ushort>(4);
-            set {
-                if (GetData<ushort>(4) == value) return;
-                SetData(4, value);
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Set_Id));
-            }
         }
 
         public const string Equip_Slot_displayName = "Equip Slot";
@@ -44,12 +32,6 @@ namespace MHW_Editor.Armors {
         [DisplayName(Equip_Slot_displayName)]
         public virtual MHW_Template.Armors.EquipSlot Equip_Slot {
             get => (MHW_Template.Armors.EquipSlot) GetData<byte>(6);
-            set {
-                if ((MHW_Template.Armors.EquipSlot) GetData<byte>(6) == value) return;
-                SetData(6, (byte) value);
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Equip_Slot));
-            }
         }
 
         public const string Is_Full_Set_Raw_displayName = "Is Full Set Raw";
@@ -60,7 +42,7 @@ namespace MHW_Editor.Armors {
             get => GetData<byte>(7);
             set {
                 if (GetData<byte>(7) == value) return;
-                SetData(7, value);
+                SetData(7, value, nameof(Is_Full_Set_Raw));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Is_Full_Set_Raw));
             }
@@ -74,7 +56,7 @@ namespace MHW_Editor.Armors {
             get => GetData<uint>(8);
             set {
                 if (GetData<uint>(8) == value) return;
-                SetData(8, value);
+                SetData(8, value, nameof(Defense));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Defense));
             }
@@ -88,7 +70,7 @@ namespace MHW_Editor.Armors {
             get => GetData<byte>(12);
             set {
                 if (GetData<byte>(12) == value) return;
-                SetData(12, value);
+                SetData(12, value, nameof(Rarity));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Rarity));
             }
@@ -102,7 +84,7 @@ namespace MHW_Editor.Armors {
             get => GetData<ushort>(13);
             set {
                 if (GetData<ushort>(13) == value) return;
-                SetData(13, value);
+                SetData(13, value, nameof(Order));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Order));
             }
@@ -116,7 +98,7 @@ namespace MHW_Editor.Armors {
             get => GetData<uint>(15);
             set {
                 if (GetData<uint>(15) == value) return;
-                SetData(15, value);
+                SetData(15, value, nameof(Model_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Model_Id));
             }
@@ -130,7 +112,7 @@ namespace MHW_Editor.Armors {
             get => GetData<uint>(19);
             set {
                 if (GetData<uint>(19) == value) return;
-                SetData(19, value);
+                SetData(19, value, nameof(Cost));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Cost));
             }
@@ -140,11 +122,11 @@ namespace MHW_Editor.Armors {
         public const int Variant_sortIndex = 500;
         [SortOrder(Variant_sortIndex)]
         [DisplayName(Variant_displayName)]
-        public virtual byte Variant {
-            get => GetData<byte>(23);
+        public virtual MHW_Template.Armors.Variant Variant {
+            get => (MHW_Template.Armors.Variant) GetData<byte>(23);
             set {
-                if (GetData<byte>(23) == value) return;
-                SetData(23, value);
+                if ((MHW_Template.Armors.Variant) GetData<byte>(23) == value) return;
+                SetData(23, (byte) value, nameof(Variant));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Variant));
             }
@@ -158,7 +140,7 @@ namespace MHW_Editor.Armors {
             get => GetData<sbyte>(27);
             set {
                 if (GetData<sbyte>(27) == value) return;
-                SetData(27, value);
+                SetData(27, value, nameof(Fire_Res));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Fire_Res));
             }
@@ -172,7 +154,7 @@ namespace MHW_Editor.Armors {
             get => GetData<sbyte>(28);
             set {
                 if (GetData<sbyte>(28) == value) return;
-                SetData(28, value);
+                SetData(28, value, nameof(Water_Res));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Water_Res));
             }
@@ -186,7 +168,7 @@ namespace MHW_Editor.Armors {
             get => GetData<sbyte>(29);
             set {
                 if (GetData<sbyte>(29) == value) return;
-                SetData(29, value);
+                SetData(29, value, nameof(Ice_Res));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Ice_Res));
             }
@@ -200,7 +182,7 @@ namespace MHW_Editor.Armors {
             get => GetData<sbyte>(30);
             set {
                 if (GetData<sbyte>(30) == value) return;
-                SetData(30, value);
+                SetData(30, value, nameof(Thunder_Res));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Thunder_Res));
             }
@@ -214,7 +196,7 @@ namespace MHW_Editor.Armors {
             get => GetData<sbyte>(31);
             set {
                 if (GetData<sbyte>(31) == value) return;
-                SetData(31, value);
+                SetData(31, value, nameof(Dragon_Res));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Dragon_Res));
             }
@@ -228,7 +210,7 @@ namespace MHW_Editor.Armors {
             get => GetData<ushort>(36);
             set {
                 if (GetData<ushort>(36) == value) return;
-                SetData(36, value);
+                SetData(36, value, nameof(Set_Group));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Set_Group));
             }

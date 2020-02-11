@@ -11,6 +11,8 @@ namespace MHW_Editor.Skills {
         public SkillDat(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
+        public override string UniqueId => $"{Id}|{Level}";
+
         [SortOrder(0)]
         public ulong Index => (Offset - InitialOffset) / StructSize;
 
