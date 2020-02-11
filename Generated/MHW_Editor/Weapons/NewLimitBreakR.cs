@@ -43,64 +43,22 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const string Activated_1_displayName = "Activated 1";
-        public const int Activated_1_sortIndex = 200;
-        [SortOrder(Activated_1_sortIndex)]
-        [DisplayName(Activated_1_displayName)]
-        protected virtual sbyte Activated_1 {
-            get => GetData<sbyte>(6);
+        public const string Unk1_displayName = "Unk1";
+        public const int Unk1_sortIndex = 200;
+        [SortOrder(Unk1_sortIndex)]
+        [DisplayName(Unk1_displayName)]
+        public virtual int Unk1 {
+            get => GetData<int>(6);
             set {
-                if (GetData<sbyte>(6) == value) return;
-                SetData(6, value, nameof(Activated_1));
+                if (GetData<int>(6) == value) return;
+                SetData(6, value, nameof(Unk1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Activated_1));
-            }
-        }
-
-        public const string Activated_2_displayName = "Activated 2";
-        public const int Activated_2_sortIndex = 250;
-        [SortOrder(Activated_2_sortIndex)]
-        [DisplayName(Activated_2_displayName)]
-        protected virtual sbyte Activated_2 {
-            get => GetData<sbyte>(7);
-            set {
-                if (GetData<sbyte>(7) == value) return;
-                SetData(7, value, nameof(Activated_2));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Activated_2));
-            }
-        }
-
-        public const string Activated_3_displayName = "Activated 3";
-        public const int Activated_3_sortIndex = 300;
-        [SortOrder(Activated_3_sortIndex)]
-        [DisplayName(Activated_3_displayName)]
-        protected virtual sbyte Activated_3 {
-            get => GetData<sbyte>(8);
-            set {
-                if (GetData<sbyte>(8) == value) return;
-                SetData(8, value, nameof(Activated_3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Activated_3));
-            }
-        }
-
-        public const string Activated_4_displayName = "Activated 4";
-        public const int Activated_4_sortIndex = 350;
-        [SortOrder(Activated_4_sortIndex)]
-        [DisplayName(Activated_4_displayName)]
-        protected virtual sbyte Activated_4 {
-            get => GetData<sbyte>(9);
-            set {
-                if (GetData<sbyte>(9) == value) return;
-                SetData(9, value, nameof(Activated_4));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Activated_4));
+                OnPropertyChanged(nameof(Unk1));
             }
         }
 
         public const string Mat_1_Id_displayName = "Mat 1 Id";
-        public const int Mat_1_Id_sortIndex = 400;
+        public const int Mat_1_Id_sortIndex = 250;
         [SortOrder(Mat_1_Id_sortIndex)]
         [DisplayName(Mat_1_Id_displayName)]
         [DataSource(DataSourceType.Items)]
@@ -116,7 +74,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Mat_1_Count_displayName = "Mat 1 Count";
-        public const int Mat_1_Count_sortIndex = 450;
+        public const int Mat_1_Count_sortIndex = 300;
         [SortOrder(Mat_1_Count_sortIndex)]
         [DisplayName(Mat_1_Count_displayName)]
         public virtual byte Mat_1_Count {
@@ -130,7 +88,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Mat_2_Id_displayName = "Mat 2 Id";
-        public const int Mat_2_Id_sortIndex = 500;
+        public const int Mat_2_Id_sortIndex = 350;
         [SortOrder(Mat_2_Id_sortIndex)]
         [DisplayName(Mat_2_Id_displayName)]
         [DataSource(DataSourceType.Items)]
@@ -146,7 +104,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Mat_2_Count_displayName = "Mat 2 Count";
-        public const int Mat_2_Count_sortIndex = 550;
+        public const int Mat_2_Count_sortIndex = 400;
         [SortOrder(Mat_2_Count_sortIndex)]
         [DisplayName(Mat_2_Count_displayName)]
         public virtual byte Mat_2_Count {
@@ -160,7 +118,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Mat_3_Id_displayName = "Mat 3 Id";
-        public const int Mat_3_Id_sortIndex = 600;
+        public const int Mat_3_Id_sortIndex = 450;
         [SortOrder(Mat_3_Id_sortIndex)]
         [DisplayName(Mat_3_Id_displayName)]
         [DataSource(DataSourceType.Items)]
@@ -176,7 +134,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Mat_3_Count_displayName = "Mat 3 Count";
-        public const int Mat_3_Count_sortIndex = 650;
+        public const int Mat_3_Count_sortIndex = 500;
         [SortOrder(Mat_3_Count_sortIndex)]
         [DisplayName(Mat_3_Count_displayName)]
         public virtual byte Mat_3_Count {
@@ -190,7 +148,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Mat_4_Id_displayName = "Mat 4 Id";
-        public const int Mat_4_Id_sortIndex = 700;
+        public const int Mat_4_Id_sortIndex = 550;
         [SortOrder(Mat_4_Id_sortIndex)]
         [DisplayName(Mat_4_Id_displayName)]
         [DataSource(DataSourceType.Items)]
@@ -206,7 +164,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Mat_4_Count_displayName = "Mat 4 Count";
-        public const int Mat_4_Count_sortIndex = 750;
+        public const int Mat_4_Count_sortIndex = 600;
         [SortOrder(Mat_4_Count_sortIndex)]
         [DisplayName(Mat_4_Count_displayName)]
         public virtual byte Mat_4_Count {
@@ -220,13 +178,13 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Id_3_displayName = "Id 3";
-        public const int Id_3_sortIndex = 800;
+        public const int Id_3_sortIndex = 650;
         [SortOrder(Id_3_sortIndex)]
         [DisplayName(Id_3_displayName)]
         public virtual byte Id_3 {
             get => GetData<byte>(37);
         }
 
-        public const int lastSortIndex = 850;
+        public const int lastSortIndex = 700;
     }
 }

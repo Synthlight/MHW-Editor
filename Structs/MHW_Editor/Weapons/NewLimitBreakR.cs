@@ -6,10 +6,7 @@ namespace MHW_Editor.Weapons {
         public ushort Id_1; // Offset: 0
         public ushort Id_2; // Offset: 2
         public ushort Needed_Item_Id_to_Unlock; // Offset: 4
-        public sbyte Activated_1; // Offset: 6
-        public sbyte Activated_2; // Offset: 7
-        public sbyte Activated_3; // Offset: 8
-        public sbyte Activated_4; // Offset: 9
+        public int Unk1; // Offset: 6
         public ushort Mat_1_Id; // Offset: 14
         public byte Mat_1_Count; // Offset: 16
         public ushort Mat_2_Id; // Offset: 17
