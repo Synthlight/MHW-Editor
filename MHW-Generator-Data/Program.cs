@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
 using MHW_Template;
 using MHW_Template.Models;
@@ -26,6 +27,9 @@ namespace MHW_Generator_Data {
                     }
                 }
             }
+
+            map = map.OrderBy(pair => pair.Key)
+                     .ToDictionary(pair => pair.Key, pair => pair.Value);
 
             const string @namespace = "MHW_Editor";
             const string className = "FileSizes";
