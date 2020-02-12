@@ -48,6 +48,7 @@ namespace MHW_Editor {
             "*.arm_up",
             "*.ask",
             "*.bbtbl",
+            "*.ch_dat",
             "*.cus_pa",
             "*.cus_par",
             "*.dglt",
@@ -66,6 +67,7 @@ namespace MHW_Editor {
             "*.plfe",
             "*.plit",
             "*.rod_inse",
+            "*.sed",
             "*.sgpa",
             "*.shl_tbl",
             "*.skl_dat",
@@ -229,6 +231,7 @@ namespace MHW_Editor {
                 case nameof(IMhwItem.Name): // None of the following have names.
                     e.Cancel = targetFileType.Is(typeof(ArmUp),
                                                  typeof(ASkill),
+                                                 typeof(CharmDat),
                                                  typeof(CustomParts),
                                                  typeof(CustomPartsR),
                                                  typeof(DecoPercent),
@@ -243,6 +246,7 @@ namespace MHW_Editor {
                                                  typeof(PlantItem),
                                                  typeof(Sharpness),
                                                  typeof(ShellTable),
+                                                 typeof(ShopSed),
                                                  typeof(SkillDat),
                                                  typeof(SkillPointData),
                                                  typeof(WeaponGunLance),
@@ -960,6 +964,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".arm_up")) return typeof(ArmUp);
             if (fileName.EndsWith(".ask")) return typeof(ASkill);
             if (fileName.EndsWith(".bbtbl")) return typeof(BottleTable);
+            if (fileName.EndsWith(".ch_dat")) return typeof(CharmDat);
             if (fileName.EndsWith(".cus_pa")) return typeof(CustomParts);
             if (fileName.EndsWith(".cus_par")) return typeof(CustomPartsR);
             if (fileName.EndsWith(".dglt")) return typeof(DecoGradeLottery);
@@ -978,6 +983,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".plfe")) return typeof(PlantFertilizer);
             if (fileName.EndsWith(".plit")) return typeof(PlantItem);
             if (fileName.EndsWith(".rod_inse")) return typeof(RodInsect);
+            if (fileName.EndsWith(".sed")) return typeof(ShopSed);
             if (fileName.EndsWith(".sgpa")) return typeof(Gem);
             if (fileName.EndsWith(".shl_tbl")) return typeof(ShellTable);
             if (fileName.EndsWith(".skl_dat")) return typeof(SkillDat);

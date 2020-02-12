@@ -88,6 +88,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Armors\Armor.cs" />
+    <Compile Include="Armors\CharmDat.cs" />
     <Compile Include="Armors\OtomoArmorDat.cs" />
     <Compile Include="Assets\Assets.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -101,6 +102,7 @@
     <Compile Include="Gems\DecoLottery.cs" />
     <Compile Include="Gems\DecoPercent.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\ArmorDataValueClass.cs" />
+    <Compile Include="Generated\MHW_Editor\Armors\CharmDat.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\OtomoArmorDat.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoGradeLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoLottery.cs" />
@@ -110,6 +112,7 @@
     <Compile Include="Generated\MHW_Editor\Items\MelderItem.cs" />
     <Compile Include="Generated\MHW_Editor\Items\PlantFertilizer.cs" />
     <Compile Include="Generated\MHW_Editor\Items\PlantItem.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\ShopSed.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\MusicSkill.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\CustomParts.cs" />
@@ -126,6 +129,7 @@
     <Compile Include="Items\PlantItem.cs" />
     <Compile Include="Items\EqCus.cs" />
     <Compile Include="Items\EqCrt.cs" />
+    <Compile Include="Items\ShopSed.cs" />
     <Compile Include="MainWindow.xaml.buttons.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>

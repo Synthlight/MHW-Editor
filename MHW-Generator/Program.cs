@@ -48,6 +48,45 @@ namespace MHW_Generator {
             GenRodInsect();
             GenCustomParts();
             GenCustomPartsR();
+            GenShopSed();
+            GenCharmDat();
+        }
+
+        private static void GenCharmDat() {
+            GenerateItemProps("MHW_Editor.Armors", "CharmDat", new MhwStructData { // .ch_dat
+                size = 27,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Unk1", 4, typeof(byte)),
+                    new MhwStructData.Entry("Unk2", 5, typeof(byte)),
+                    new MhwStructData.Entry("Unk3", 6, typeof(byte)),
+                    new MhwStructData.Entry("Unk4", 7, typeof(byte)),
+                    new MhwStructData.Entry("Unk5", 8, typeof(byte)),
+                    new MhwStructData.Entry("Unk6", 9, typeof(ushort)),
+                    new MhwStructData.Entry("Unk7", 11, typeof(ushort)),
+                    new MhwStructData.Entry("Unk8", 13, typeof(byte)),
+                    new MhwStructData.Entry("Unk9", 14, typeof(byte)),
+                    new MhwStructData.Entry("Cost", 15, typeof(uint)),
+                    new MhwStructData.Entry("Unk10", 19, typeof(int))
+                }
+            });
+        }
+
+        private static void GenShopSed() {
+            GenerateItemProps("MHW_Editor.Items", "ShopSed", new MhwStructData { // .sed
+                size = 12,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Unk1", 0, typeof(uint)),
+                    new MhwStructData.Entry("Unk2", 4, typeof(uint)),
+                    new MhwStructData.Entry("Story Unlock", 8, typeof(uint))
+                }
+            });
         }
 
         private static void GenCustomPartsR() {
