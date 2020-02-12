@@ -200,6 +200,8 @@ namespace MHW_Editor {
                                                  typeof(DecoPercent),
                                                  typeof(EqCrt),
                                                  typeof(EqCus),
+                                                 typeof(GunnerReload),
+                                                 typeof(GunnerShoot),
                                                  typeof(MelderExchange),
                                                  typeof(MelderItem),
                                                  typeof(MusicSkill),
@@ -367,6 +369,29 @@ namespace MHW_Editor {
                     var cb = new DataGridComboBoxColumn {
                         Header = e.Column.Header,
                         ItemsSource = ShellTable.reloadLookup,
+                        SelectedValueBinding = new Binding(e.PropertyName),
+                        SelectedValuePath = "Key",
+                        DisplayMemberPath = "Value",
+                        CanUserSort = true
+                    };
+                    e.Column = cb;
+                    break;
+                }
+                case nameof(GunnerReload.No_Mods):
+                case nameof(GunnerReload.Mod_1):
+                case nameof(GunnerReload.Mod_2):
+                case nameof(GunnerReload.Mod_3):
+                case nameof(GunnerReload.Mod_4): {
+                    Dictionary<byte, IdNamePair> source = null;
+                    if (targetFileType.Is(typeof(GunnerReload))) {
+                        source = GunnerReload.reloadLookup;
+                    } else if (targetFileType.Is(typeof(GunnerShoot))) {
+                        source = GunnerShoot.recoilLookup;
+                    }
+
+                    var cb = new DataGridComboBoxColumn {
+                        Header = e.Column.Header,
+                        ItemsSource = source,
                         SelectedValueBinding = new Binding(e.PropertyName),
                         SelectedValuePath = "Key",
                         DisplayMemberPath = "Value",
@@ -946,6 +971,8 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".diot")) return typeof(DecoLottery);
             if (fileName.EndsWith(".eq_crt")) return typeof(EqCrt);
             if (fileName.EndsWith(".eq_cus")) return typeof(EqCus);
+            if (fileName.EndsWith(".gun_rd")) return typeof(GunnerReload);
+            if (fileName.EndsWith(".gun_sd")) return typeof(GunnerShoot);
             if (fileName.EndsWith(".itm")) return typeof(Item);
             if (fileName.EndsWith(".kire")) return typeof(Sharpness);
             if (fileName.EndsWith(".mkex")) return typeof(MelderExchange);

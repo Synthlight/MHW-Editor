@@ -46,6 +46,40 @@ namespace MHW_Generator {
             GenCustomPartsR();
             GenShopSed();
             GenCharmDat();
+            GenGunnerReload();
+            GenGunnerShoot();
+        }
+
+        private static void GenGunnerShoot() {
+            GenerateItemProps("MHW_Editor.Weapons", "GunnerShoot", new MhwStructData { // .gun_sd
+                size = 5,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("No Mods", 0, typeof(byte)),
+                    new MhwStructData.Entry("Mod 1", 1, typeof(byte)),
+                    new MhwStructData.Entry("Mod 2", 2, typeof(byte)),
+                    new MhwStructData.Entry("Mod 3", 3, typeof(byte)),
+                    new MhwStructData.Entry("Mod 4", 4, typeof(byte))
+                }
+            });
+        }
+
+        private static void GenGunnerReload() {
+            GenerateItemProps("MHW_Editor.Weapons", "GunnerReload", new MhwStructData { // .gun_rd
+                size = 5,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("No Mods", 0, typeof(byte)),
+                    new MhwStructData.Entry("Mod 1", 1, typeof(byte)),
+                    new MhwStructData.Entry("Mod 2", 2, typeof(byte)),
+                    new MhwStructData.Entry("Mod 3", 3, typeof(byte)),
+                    new MhwStructData.Entry("Mod 4", 4, typeof(byte))
+                }
+            });
         }
 
         private static void GenCharmDat() {

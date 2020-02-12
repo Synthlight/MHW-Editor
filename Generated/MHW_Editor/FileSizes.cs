@@ -17,6 +17,8 @@ namespace MHW_Editor {
             {"deco_grade_lot.dglt", 686},
             {"deco_lot.diot", 21538},
             {"equip_custom.eq_cus", 11859},
+            {"gunner_reload.gun_rd", 115},
+            {"gunner_shoot.gun_sd", 195},
             {"g_lance.wp_dat", 18886},
             {"hammer.wp_dat", 19348},
             {"hbg.wp_dat_g", 19882},

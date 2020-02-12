@@ -48,6 +48,8 @@ namespace MHW_Template {
             "*.diot",
             "*.eq_crt",
             "*.eq_cus",
+            "*.gun_rd",
+            "*.gun_sd",
             "*.itm",
             "*.kire",
             "*.mkex",
