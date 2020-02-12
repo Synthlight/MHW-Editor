@@ -9,25 +9,21 @@ using Newtonsoft.Json;
 
 namespace MHW_Name_Extractor {
     public static class Program {
-        private const string ROOT_OUTPUT = @"..\..\..\Assets";
-        private const string COMMON_TEXT_ROOT = @"V:\MHW\IB\chunk_combined\common\text";
-        private static readonly List<string> WEAPONS = new List<string> {"bow", "c_axe", "g_lance", "hammer", "hbg", "lance", "lbg", "l_sword", "rod", "sword", "s_axe", "tachi", "whistle", "w_sword"};
-
         [STAThread]
         public static void Main() {
             foreach (var lang in Global.LANGUAGES) {
                 // ReSharper disable once StringLiteralTypo
-                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\armor_{lang}.gmd", $@"{ROOT_OUTPUT}\ArmorData\{lang}_armorData.json");
-                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\item_{lang}.gmd", $@"{ROOT_OUTPUT}\ItemData\{lang}_itemData.json");
-                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\vfont\skill_pt_{lang}.gmd", $@"{ROOT_OUTPUT}\SkillData\{lang}_skillData.json");
-                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\ot_weapon_{lang}.gmd", $@"{ROOT_OUTPUT}\OtomoData\{lang}_otomo_weaponData.json");
-                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\ot_armor_{lang}.gmd", $@"{ROOT_OUTPUT}\OtomoData\{lang}_otomo_armorData.json");
-                GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\vfont\rod_insect_{lang}.gmd", $@"{ROOT_OUTPUT}\InsectData\{lang}_insectData.json");
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\armor_{lang}.gmd", $@"{Global.ASSETS_ROOT}\ArmorData\{lang}_armorData.json");
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\item_{lang}.gmd", $@"{Global.ASSETS_ROOT}\ItemData\{lang}_itemData.json");
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\skill_pt_{lang}.gmd", $@"{Global.ASSETS_ROOT}\SkillData\{lang}_skillData.json");
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\ot_weapon_{lang}.gmd", $@"{Global.ASSETS_ROOT}\OtomoData\{lang}_otomo_weaponData.json");
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\ot_armor_{lang}.gmd", $@"{Global.ASSETS_ROOT}\OtomoData\{lang}_otomo_armorData.json");
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\rod_insect_{lang}.gmd", $@"{Global.ASSETS_ROOT}\InsectData\{lang}_insectData.json");
                 // Not sure how it connects to skill id.
                 //GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\vfont\music_skill_{lang}.gmd", $@"{ROOT_OUTPUT}\MusicSkillData\{lang}_musicSkillData.json");
 
-                foreach (var weapon in WEAPONS) {
-                    GetAndWriteGmdStringsAsJson($@"{COMMON_TEXT_ROOT}\steam\{weapon}_{lang}.gmd", $@"{ROOT_OUTPUT}\WeaponData\{lang}_{weapon}.json");
+                foreach (var weapon in Global.WEAPONS) {
+                    GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\{weapon}_{lang}.gmd", $@"{Global.ASSETS_ROOT}\WeaponData\{lang}_{weapon}.json");
                 }
             }
         }

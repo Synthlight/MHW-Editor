@@ -55,6 +55,11 @@
     <Compile Include="Items\ItemCategory.cs" />
     <Compile Include="Items\ItemType.cs" />
     <Compile Include="Models\DataSourceAttribute.cs" />
+    <Compile Include="FileSizeTemplate.cs">
+      <DependentUpon>FileSizeTemplate.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="ValueClassTemplate.cs">
       <DependentUpon>ValueClassTemplate.tt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -92,6 +97,10 @@
     <Compile Include="Weapons\WeaponType.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FileSizeTemplate.tt">
+      <Generator>TextTemplatingFilePreProcessor</Generator>
+      <LastGenOutput>FileSizeTemplate.cs</LastGenOutput>
+    </Content>
     <Content Include="ValueClassTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>ValueClassTemplate.cs</LastGenOutput>

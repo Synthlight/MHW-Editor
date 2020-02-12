@@ -104,6 +104,7 @@
     <Compile Include="Generated\MHW_Editor\Armors\ArmorDataValueClass.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\CharmDat.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\OtomoArmorDat.cs" />
+    <Compile Include="Generated\MHW_Editor\FileSizes.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoGradeLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCrt.cs" />

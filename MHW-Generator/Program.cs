@@ -10,10 +10,6 @@ using MHW_Template.Weapons.Model;
 
 namespace MHW_Generator {
     public static class Program {
-        public const string ROOT_OUTPUT = @"..\..\..\Generated";
-        public const string ROOT_STRUCT_OUTPUT = @"..\..\..\Structs";
-        public const string ROOT_ASSETS = @"..\..\..\Assets";
-
         [STAThread]
         public static void Main() {
             GenItem();
@@ -860,7 +856,7 @@ namespace MHW_Generator {
         }
 
         public static void GenerateItemProps(string @namespace, string className, MhwStructData structData) {
-            WriteResult($"{ROOT_OUTPUT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ItemTemplate {
+            WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ItemTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
@@ -868,7 +864,7 @@ namespace MHW_Generator {
                 }
             });
 
-            WriteResult($"{ROOT_STRUCT_OUTPUT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new RawStructTemplate {
+            WriteResult($"{Global.STRUCT_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new RawStructTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},

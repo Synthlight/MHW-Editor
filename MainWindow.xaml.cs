@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -42,44 +41,8 @@ namespace MHW_Editor {
         private const bool ENABLE_CHEAT_BUTTONS = false;
         private const bool SHOW_RAW_BYTES = false;
 #endif
-        [SuppressMessage("ReSharper", "StringLiteralTypo")]
-        private static readonly string[] FILE_TYPES = {
-            "*.am_dat",
-            "*.arm_up",
-            "*.ask",
-            "*.bbtbl",
-            "*.ch_dat",
-            "*.cus_pa",
-            "*.cus_par",
-            "*.dglt",
-            "*.diot",
-            "*.eq_crt",
-            "*.eq_cus",
-            "*.itm",
-            "*.kire",
-            "*.mkex",
-            "*.mkit",
-            "*.msk",
-            "*.new_lb",
-            "*.new_lbr",
-            "*.owp_dat",
-            "*.oam_dat",
-            "*.plfe",
-            "*.plit",
-            "*.rod_inse",
-            "*.sed",
-            "*.sgpa",
-            "*.shl_tbl",
-            "*.skl_dat",
-            "*.skl_pt_dat",
-            "*.wep_glan",
-            "*.wep_saxe",
-            "*.wep_wsd",
-            "*.wep_wsl",
-            "*.wp_dat",
-            "*.wp_dat_g"
-        };
         private const string NEXUS_LINK = "https://www.nexusmods.com/monsterhunterworld/mods/2068";
+        private const string CURRENT_GAME_VERSION = "11.50.00";
 
         private readonly ObservableCollection<dynamic> items = new ObservableCollection<dynamic>();
         private string targetFile;
@@ -615,7 +578,7 @@ namespace MHW_Editor {
         }
 
         private void Load() {
-            var target = GetOpenTarget($"MHW Data Files (See mod description for full list.)|{string.Join(";", FILE_TYPES)}");
+            var target = GetOpenTarget($"MHW Data Files (See mod description for full list.)|{string.Join(";", Global.FILE_TYPES)}");
             if (string.IsNullOrEmpty(target)) return;
             LoadFile(target);
 
@@ -704,6 +667,18 @@ namespace MHW_Editor {
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 
             try {
+                using (var file = File.OpenRead(targetFile)) {
+                    var ourLength = (ulong) file.Length;
+                    var properLength = FileSizes.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
+
+                    if (ourLength != properLength) {
+                        MessageBox.Show($"The file size of {Title} does not match the known file size in v{CURRENT_GAME_VERSION}.\r\n" +
+                                        $"Expected: {ourLength}\r\n" +
+                                        $"Found: {properLength}\r\n" +
+                                        "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                    }
+                }
+
                 if (encryptionKey != null) {
                     // Read & decrypt file.
                     var encryptedBytes = File.ReadAllBytes(targetFile);

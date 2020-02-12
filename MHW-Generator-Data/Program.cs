@@ -10,12 +10,37 @@ namespace MHW_Generator_Data {
     public static class Program {
         [STAThread]
         public static void Main() {
-            CreateSkillDataValueClass();
             CreateArmorDataValueClass();
+            CreateSkillDataValueClass();
+            GenKnownLengths();
+        }
+
+        private static void GenKnownLengths() {
+            var map = new Dictionary<string, ulong>();
+            foreach (var path in Directory.EnumerateFiles(Global.COMMON_ROOT, "*.*", SearchOption.AllDirectories)) {
+                foreach (var fileType in Global.FILE_TYPES) {
+                    if (!path.EndsWith(fileType.Substring(1))) continue;
+
+                    using (var file = File.OpenRead(path)) {
+                        map[Path.GetFileName(path)] = (ulong) file.Length;
+                    }
+                }
+            }
+
+            const string @namespace = "MHW_Editor";
+            const string className = "FileSizes";
+
+            MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new FileSizeTemplate {
+                Session = new Dictionary<string, object> {
+                    {"_namespace", @namespace},
+                    {"className", className},
+                    {"map", map}
+                }
+            });
         }
 
         private static void CreateSkillDataValueClass() {
-            var json = File.ReadAllText($@"{MHW_Generator.Program.ROOT_ASSETS}\SkillData\eng_skillData.json");
+            var json = File.ReadAllText($@"{Global.ASSETS_ROOT}\SkillData\eng_skillData.json");
             var rawSkillData = JsonConvert.DeserializeObject<Dictionary<uint, string>>(json);
 
             var values = new List<DataValuePair>();
@@ -35,7 +60,7 @@ namespace MHW_Generator_Data {
             const string @namespace = "MHW_Editor.Skills";
             const string className = "SkillDataValueClass";
 
-            MHW_Generator.Program.WriteResult($"{MHW_Generator.Program.ROOT_OUTPUT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ValueClassTemplate {
+            MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ValueClassTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
@@ -45,7 +70,7 @@ namespace MHW_Generator_Data {
         }
 
         private static void CreateArmorDataValueClass() {
-            var json = File.ReadAllText($@"{MHW_Generator.Program.ROOT_ASSETS}\ArmorData\eng_armorData.json");
+            var json = File.ReadAllText($@"{Global.ASSETS_ROOT}\ArmorData\eng_armorData.json");
             var armorGmdData = JsonConvert.DeserializeObject<Dictionary<ushort, string>>(json);
             var armors = ArmorReader.GetArmor();
 
@@ -67,7 +92,7 @@ namespace MHW_Generator_Data {
             const string @namespace = "MHW_Editor.Armors";
             const string className = "ArmorDataValueClass";
 
-            MHW_Generator.Program.WriteResult($"{MHW_Generator.Program.ROOT_OUTPUT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ValueClassTemplate {
+            MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ValueClassTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
