@@ -784,7 +784,7 @@ namespace MHW_Generator {
                 size = 60,
                 offsetInitial = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Set_Layered_Id}|{Variant}|{Type}|{Equip_Slot}",
+                uniqueIdFormula = "{Set_Group}|{Variant}|{Type}|{Equip_Slot}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Order", 4, typeof(ushort)),
@@ -815,7 +815,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Skill 3", 46, typeof(ushort), dataSourceType: DataSourceType.Skills),
                     new MhwStructData.Entry("Skill 3 Level", 48, typeof(byte)),
                     new MhwStructData.Entry("Gender", 49, typeof(byte), typeof(Gender)),
-                    new MhwStructData.Entry("Set Group", 53, typeof(ushort)),
+                    new MhwStructData.Entry("Set Group", 53, typeof(ushort), true),
                     new MhwStructData.Entry("Is Permanent Raw", 59, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Is Permanent"}),
                     new MhwStructData.Entry("GMD Name Index", 55, typeof(ushort), true),
                     new MhwStructData.Entry("GMD Description Index", 57, typeof(ushort), true)

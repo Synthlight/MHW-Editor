@@ -137,6 +137,7 @@
     <Compile Include="Items\EqCus.cs" />
     <Compile Include="Items\EqCrt.cs" />
     <Compile Include="Items\ShopSed.cs" />
+    <Compile Include="JsonMigrations.cs" />
     <Compile Include="MainWindow.xaml.buttons.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>

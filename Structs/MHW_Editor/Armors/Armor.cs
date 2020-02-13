@@ -1,7 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Armors {
-    // Unique Id Formula: "{Set_Layered_Id}|{Variant}|{Type}|{Equip_Slot}"
+    // Unique Id Formula: "{Set_Group}|{Variant}|{Type}|{Equip_Slot}"
     public struct Armor {
         public uint Index; // Offset: 0
         public ushort Order; // Offset: 4

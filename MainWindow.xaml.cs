@@ -867,13 +867,13 @@ namespace MHW_Editor {
                 var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
                 if (string.IsNullOrEmpty(target)) return;
 
+                var fileName = Path.GetFileName(targetFile);
+
                 var json = File.ReadAllText(target);
-                var changesToLoad = JsonConvert.DeserializeObject<JsonChanges>(json);
+                var changesToLoad = JsonMigrations.Migrate(json, fileName, items);
 
                 if (!changesToLoad.changes.Any()) return;
-
-                var currentType = Path.GetFileName(targetFile);
-                if (currentType != changesToLoad.targetFile) return;
+                if (fileName != changesToLoad.targetFile) return;
 
                 foreach (MhwItem item in items) {
                     if (item.Offset == 0) continue;
@@ -907,8 +907,11 @@ namespace MHW_Editor {
             if (string.IsNullOrEmpty(targetFile)) return;
 
             try {
-                // <ID, <Column Name, Value>>
-                var changesToSave = new JsonChanges {targetFile = Path.GetFileName(targetFile)};
+                var fileName = Path.GetFileName(targetFile);
+                var changesToSave = new JsonChanges {
+                    targetFile = fileName,
+                    version = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1)
+                };
 
                 foreach (MhwItem item in items) {
                     if (item.Offset == 0 || item.changed.Count == 0) continue;

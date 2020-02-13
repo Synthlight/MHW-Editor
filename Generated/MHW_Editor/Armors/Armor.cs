@@ -9,7 +9,7 @@ namespace MHW_Editor.Armors {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
-        public override string UniqueId => $"{Set_Layered_Id}|{Variant}|{Type}|{Equip_Slot}";
+        public override string UniqueId => $"{Set_Group}|{Variant}|{Type}|{Equip_Slot}";
 
         public const string Index_displayName = "Index";
         public const int Index_sortIndex = 50;
@@ -403,12 +403,6 @@ namespace MHW_Editor.Armors {
         [DisplayName(Set_Group_displayName)]
         public virtual ushort Set_Group {
             get => GetData<ushort>(53);
-            set {
-                if (GetData<ushort>(53) == value) return;
-                SetData(53, value, nameof(Set_Group));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Set_Group));
-            }
         }
 
         public const string Is_Permanent_Raw_displayName = "Is Permanent Raw";
