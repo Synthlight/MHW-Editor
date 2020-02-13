@@ -16,6 +16,8 @@ namespace MHW_Editor {
             {"customParts.cus_par", 15728},
             {"deco_grade_lot.dglt", 686},
             {"deco_lot.diot", 21538},
+            {"default_box_item.itlist", 154},
+            {"default_pouch_item.itlist", 170},
             {"equip_custom.eq_cus", 11859},
             {"g_lance.wp_dat", 18886},
             {"gunner_reload.gun_rd", 115},

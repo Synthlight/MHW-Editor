@@ -9,21 +9,21 @@ namespace MHW_Editor.Items {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
-        public override string UniqueId => $"{Item_Category}|{Item_Id}";
+        public override string UniqueId => $"{Equipment_Category}|{Equipment_Id}";
 
-        public const string Item_Category_displayName = "Item Category";
-        public const int Item_Category_sortIndex = 50;
-        [SortOrder(Item_Category_sortIndex)]
-        [DisplayName(Item_Category_displayName)]
-        public virtual byte Item_Category {
+        public const string Equipment_Category_displayName = "Equipment Category";
+        public const int Equipment_Category_sortIndex = 50;
+        [SortOrder(Equipment_Category_sortIndex)]
+        [DisplayName(Equipment_Category_displayName)]
+        public virtual byte Equipment_Category {
             get => GetData<byte>(0);
         }
 
-        public const string Item_Id_displayName = "Item Id";
-        public const int Item_Id_sortIndex = 100;
-        [SortOrder(Item_Id_sortIndex)]
-        [DisplayName(Item_Id_displayName)]
-        public virtual ushort Item_Id {
+        public const string Equipment_Id_displayName = "Equipment Id";
+        public const int Equipment_Id_sortIndex = 100;
+        [SortOrder(Equipment_Id_sortIndex)]
+        [DisplayName(Equipment_Id_displayName)]
+        public virtual ushort Equipment_Id {
             get => GetData<ushort>(1);
         }
 

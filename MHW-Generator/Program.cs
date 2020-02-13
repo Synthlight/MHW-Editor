@@ -49,6 +49,20 @@ namespace MHW_Generator {
             GenGunnerReload();
             GenGunnerShoot();
             GenItemMake();
+            GenItemList();
+        }
+
+        private static void GenItemList() {
+            GenerateItemProps("MHW_Editor.Items", "ItemList", new MhwStructData { // .itlist
+                size = 8,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Quantity", 4, typeof(uint))
+                }
+            });
         }
 
         private static void GenItemMake() {
@@ -58,13 +72,13 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint)),
+                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Unk1", 4, typeof(ushort)),
                     new MhwStructData.Entry("Mat 1 Id", 6, typeof(uint), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Mat 2 Id", 10, typeof(uint), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Result Id", 14, typeof(uint), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Quantity", 18, typeof(uint)),
-                    new MhwStructData.Entry("Unknown", 22, typeof(uint)),
+                    new MhwStructData.Entry("Unk2", 22, typeof(uint)),
                     new MhwStructData.Entry("Category", 26, typeof(uint), typeof(ItemCategory)),
                     new MhwStructData.Entry("Can Auto-Craft Raw", 30, typeof(byte))
                 }
@@ -420,10 +434,10 @@ namespace MHW_Generator {
                 size = 41,
                 offsetInitial = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Item_Category}|{Item_Id}",
+                uniqueIdFormula = "{Equipment_Category}|{Equipment_Id}",
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Item Category", 0, typeof(byte), true),
-                    new MhwStructData.Entry("Item Id", 1, typeof(ushort), true),
+                    new MhwStructData.Entry("Equipment Category", 0, typeof(byte), true),
+                    new MhwStructData.Entry("Equipment Id", 1, typeof(ushort), true),
                     new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Monster Unlock", 5, typeof(int)),
                     new MhwStructData.Entry("Story Unlock", 9, typeof(uint)),
@@ -449,10 +463,10 @@ namespace MHW_Generator {
                 size = 37,
                 offsetInitial = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Item_Category}|{Item_Id}",
+                uniqueIdFormula = "{Equipment_Category}|{Equipment_Id}",
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Item Category", 0, typeof(byte), true),
-                    new MhwStructData.Entry("Item Id", 1, typeof(ushort), true),
+                    new MhwStructData.Entry("Equipment Category", 0, typeof(byte), true),
+                    new MhwStructData.Entry("Equipment Id", 1, typeof(ushort), true),
                     new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Monster Unlock", 5, typeof(int)),
                     new MhwStructData.Entry("Story Unlock", 9, typeof(uint)),

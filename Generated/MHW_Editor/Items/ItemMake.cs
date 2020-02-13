@@ -17,12 +17,6 @@ namespace MHW_Editor.Items {
         [DisplayName(Id_displayName)]
         public virtual uint Id {
             get => GetData<uint>(0);
-            set {
-                if (GetData<uint>(0) == value) return;
-                SetData(0, value, nameof(Id));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Id));
-            }
         }
 
         public const string Unk1_displayName = "Unk1";
@@ -101,17 +95,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Unknown_displayName = "Unknown";
-        public const int Unknown_sortIndex = 350;
-        [SortOrder(Unknown_sortIndex)]
-        [DisplayName(Unknown_displayName)]
-        public virtual uint Unknown {
+        public const string Unk2_displayName = "Unk2";
+        public const int Unk2_sortIndex = 350;
+        [SortOrder(Unk2_sortIndex)]
+        [DisplayName(Unk2_displayName)]
+        public virtual uint Unk2 {
             get => GetData<uint>(22);
             set {
                 if (GetData<uint>(22) == value) return;
-                SetData(22, value, nameof(Unknown));
+                SetData(22, value, nameof(Unk2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown));
+                OnPropertyChanged(nameof(Unk2));
             }
         }
 
