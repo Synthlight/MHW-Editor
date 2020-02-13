@@ -71,6 +71,7 @@ namespace MHW_Editor {
                                            nameof(EqCrt.Mat_2_Id_button),
                                            nameof(EqCrt.Mat_3_Id_button),
                                            nameof(EqCrt.Mat_4_Id_button),
+                                           nameof(ItemMake.Result_Id),
                                            nameof(NewLimitBreakR.Needed_Item_Id_to_Unlock_button),
                                            nameof(ASkill.Mantle_Item_Id_button),
                                            nameof(Armor.Set_Skill_1_button),
@@ -202,6 +203,7 @@ namespace MHW_Editor {
                                                  typeof(EqCus),
                                                  typeof(GunnerReload),
                                                  typeof(GunnerShoot),
+                                                 typeof(ItemMake),
                                                  typeof(MelderExchange),
                                                  typeof(MelderItem),
                                                  typeof(MusicSkill),
@@ -249,6 +251,7 @@ namespace MHW_Editor {
                 case nameof(EqCrt.Mat_2_Id):
                 case nameof(EqCrt.Mat_3_Id):
                 case nameof(EqCrt.Mat_4_Id):
+                case nameof(ItemMake.Result_Id):
                 case nameof(MelderExchange.Source_Item_Id):
                 case nameof(MelderItem.Result_Item_Id):
                 case nameof(Melee.Skill):
@@ -973,6 +976,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".eq_cus")) return typeof(EqCus);
             if (fileName.EndsWith(".gun_rd")) return typeof(GunnerReload);
             if (fileName.EndsWith(".gun_sd")) return typeof(GunnerShoot);
+            if (fileName.EndsWith(".imk")) return typeof(ItemMake);
             if (fileName.EndsWith(".itm")) return typeof(Item);
             if (fileName.EndsWith(".kire")) return typeof(Sharpness);
             if (fileName.EndsWith(".mkex")) return typeof(MelderExchange);

@@ -25,6 +25,8 @@ namespace MHW_Editor {
             {"insect.eq_cus", 4356},
             {"insect_element.eq_cus", 256},
             {"itemData.itm", 88810},
+            {"itemMake.imk", 3141},
+            {"itemMake_show.imk", 2707},
             {"kireaji.kire", 4618},
             {"l_sword.wp_dat", 19810},
             {"lance.wp_dat", 19282},

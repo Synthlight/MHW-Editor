@@ -50,6 +50,7 @@ namespace MHW_Template {
             "*.eq_cus",
             "*.gun_rd",
             "*.gun_sd",
+            "*.imk",
             "*.itm",
             "*.kire",
             "*.mkex",

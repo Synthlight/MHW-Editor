@@ -48,6 +48,27 @@ namespace MHW_Generator {
             GenCharmDat();
             GenGunnerReload();
             GenGunnerShoot();
+            GenItemMake();
+        }
+
+        private static void GenItemMake() {
+            GenerateItemProps("MHW_Editor.Items", "ItemMake", new MhwStructData { // .imk
+                size = 31,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id", 0, typeof(uint)),
+                    new MhwStructData.Entry("Unk1", 4, typeof(ushort)),
+                    new MhwStructData.Entry("Mat 1 Id", 6, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Mat 2 Id", 10, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Result Id", 14, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Quantity", 18, typeof(uint)),
+                    new MhwStructData.Entry("Unknown", 22, typeof(uint)),
+                    new MhwStructData.Entry("Category", 26, typeof(uint), typeof(ItemCategory)),
+                    new MhwStructData.Entry("Can Auto-Craft Raw", 30, typeof(byte))
+                }
+            });
         }
 
         private static void GenGunnerShoot() {
