@@ -672,7 +672,8 @@ namespace MHW_Editor {
                                                               typeof(Item),
                                                               typeof(IWeapon),
                                                               typeof(NewLimitBreak),
-                                                              typeof(NewLimitBreakR))
+                                                              typeof(NewLimitBreakR),
+                                                              typeof(RodInsect))
                                                           .VisibleIfTrue();
 
                 btn_damage_cheat.Visibility = targetFileType.Is(typeof(IWeapon),

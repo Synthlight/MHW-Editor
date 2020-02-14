@@ -238,7 +238,8 @@ namespace MHW_Editor {
                                    typeof(Item),
                                    typeof(IWeapon),
                                    typeof(NewLimitBreak),
-                                   typeof(NewLimitBreakR))) {
+                                   typeof(NewLimitBreakR),
+                                   typeof(RodInsect))) {
                 return;
             }
 
@@ -302,6 +303,11 @@ namespace MHW_Editor {
                         if (customPartsR.Mat_2_Count > 0) customPartsR.Mat_2_Count = 1;
                         if (customPartsR.Mat_3_Count > 0) customPartsR.Mat_3_Count = 1;
                         if (customPartsR.Mat_4_Count > 0) customPartsR.Mat_4_Count = 1;
+                        break;
+                    }
+                    case RodInsect _: {
+                        RodInsect rodInsect = item;
+                        if (rodInsect.Craft_Cost > 0) rodInsect.Craft_Cost = 1;
                         break;
                     }
                 }
