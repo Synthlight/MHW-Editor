@@ -43,6 +43,7 @@ namespace MHW_Editor {
 #endif
         private const string NEXUS_LINK = "https://www.nexusmods.com/monsterhunterworld/mods/2068";
         private const string CURRENT_GAME_VERSION = "11.50.00";
+        private const string TITLE = "MHW Editor";
 
         private readonly ObservableCollection<dynamic> items = new ObservableCollection<dynamic>();
         private string targetFile;
@@ -114,6 +115,7 @@ namespace MHW_Editor {
             }
 
             InitializeComponent();
+            Title = TITLE;
 
             cbx_localization.ItemsSource = Global.LANGUAGE_NAME_LOOKUP;
 
@@ -706,15 +708,33 @@ namespace MHW_Editor {
                 using (var file = File.OpenRead(targetFile)) {
                     var ourLength = (ulong) file.Length;
                     var properLength = FileSizes.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
+                    var sha512 = file.SHA512();
 
+                    // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
+                    foreach (var pair in FileHashes.BAD_FILE_HASH_MAP) {
+                        // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
+                        foreach (var fileAndHash in pair.Value) {
+                            if (Title == fileAndHash.Key && sha512 == fileAndHash.Value) {
+                                var newChunk = FileHashes.GOOD_CHUNK_MAP.TryGet(Title, "Unknown");
+                                MessageBox.Show($"This file ({Title}) is from {pair.Key} and is obsolete.\r\n" +
+                                                $"The newest version of the file is in {newChunk}.\r\n\r\n" +
+                                                "Using obsolete files is known to cause anything from blackscreens to crashes or incorrect data.", "Obsolete File Detected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                                goto skipOut;
+                            }
+                        }
+                    }
+
+                    // Length check as a fallback.
                     if (ourLength != properLength) {
                         MessageBox.Show($"The file size of {Title} does not match the known file size in v{CURRENT_GAME_VERSION}.\r\n" +
                                         $"Expected: {ourLength}\r\n" +
                                         $"Found: {properLength}\r\n" +
-                                        "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                                        "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        goto skipOut;
                     }
                 }
 
+                skipOut:
                 if (encryptionKey != null) {
                     // Read & decrypt file.
                     var encryptedBytes = File.ReadAllBytes(targetFile);

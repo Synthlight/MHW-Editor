@@ -36,6 +36,8 @@ namespace MHW_Template {
             "w_sword",
             "whistle"
         };
+        // Keep the regex up to date & sorted so it's easy to re-extract from earlier chunks when we need to as we add files.
+        // NoChunk regex: ^(.*\.((am_dat|arm_up|ask|bbtbl|ch_dat|cus_pa|cus_par|dglt|diot|eq_crt|eq_cus|gun_rd|gun_sd|imk|itlist|itm|kire|mkex|mkit|msk|new_lb|new_lbr|owp_dat|oam_dat|plfe|plit|rod_inse|sed|sgpa|shl_tbl|skl_dat|skl_pt_dat|swer|swpc|swpi|swpn|trdr|trsr|wep_glan|wep_saxe|wep_wsd|wep_wsl|wp_dat|wp_dat_g)$))?[^.]*$
         public static readonly string[] FILE_TYPES = {
             "*.am_dat",
             "*.arm_up",
@@ -85,6 +87,7 @@ namespace MHW_Template {
         public const string ASSETS_ROOT = @"..\..\..\Assets";
         public const string GENERATED_ROOT = @"..\..\..\Generated";
         public const string STRUCT_OUTPUT_ROOT = @"..\..\..\Structs";
+        public const string CHUNK_HASHING_ROOT = @"V:\MHW\IB\For Hashing";
         public const string CHUNK_ROOT = @"V:\MHW\IB\chunk_combined";
         public const string COMMON_TEXT_ROOT = CHUNK_ROOT + @"\common\text";
         public const string COMMON_ROOT = CHUNK_ROOT + @"\common";

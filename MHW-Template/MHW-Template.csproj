@@ -47,6 +47,11 @@
     <Compile Include="Armors\Variant.cs" />
     <Compile Include="EncryptionKeys.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="FileHashesTemplate.cs">
+      <DependentUpon>FileHashesTemplate.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Items\CultivationCategory.cs" />
     <Compile Include="Items\Fertilizer.cs" />
@@ -97,6 +102,10 @@
     <Compile Include="Weapons\WeaponType.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FileHashesTemplate.tt">
+      <Generator>TextTemplatingFilePreProcessor</Generator>
+      <LastGenOutput>FileHashesTemplate.cs</LastGenOutput>
+    </Content>
     <Content Include="FileSizeTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>FileSizeTemplate.cs</LastGenOutput>

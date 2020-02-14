@@ -1,0 +1,45 @@
+﻿<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="$(TargetDir)\MHW-Template.dll" #>
+<#@ parameter type="System.String" name="_namespace" #>
+<#@ parameter type="System.String" name="className" #>
+<#@ parameter type="System.Collections.Generic.Dictionary<string, Dictionary<string, string>>" name="hashMap" #>
+<#@ parameter type="System.Collections.Generic.Dictionary<string, string>" name="goodChunkMap" #>
+<#@ import namespace="Microsoft.CSharp" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#@ import namespace="MHW_Template.Models" #>
+using System.Collections.Generic;
+
+namespace <#= _namespace #> {
+    public static class <#= className #> {
+        public static readonly Dictionary<string, Dictionary<string, string>> BAD_FILE_HASH_MAP = new Dictionary<string, Dictionary<string, string>> {
+<#
+    foreach (var tldPair in hashMap) {
+#>
+            {"<#= tldPair.Key #>", new Dictionary<string, string> {
+<#
+        foreach (var entry in tldPair.Value) {
+#>
+                {"<#= entry.Key #>", "<#= entry.Value #>"},
+<#
+        }
+#>
+            }},
+<#
+    }
+#>
+        };
+
+        public static readonly Dictionary<string, string> GOOD_CHUNK_MAP = new Dictionary<string, string> {
+<#
+    foreach (var entry in goodChunkMap) {
+#>
+            {"<#= entry.Key #>", "<#= entry.Value #>"},
+<#
+    }
+#>
+        };
+    }
+}

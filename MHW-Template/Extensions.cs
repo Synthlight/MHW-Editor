@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 
@@ -42,6 +43,42 @@ namespace MHW_Template {
             } finally {
                 handle.Free();
             }
+        }
+
+        public static string SHA512(this string fileName) {
+            using (var file = File.OpenRead(fileName)) {
+                return file.SHA512();
+            }
+        }
+
+        public static string SHA512(this Stream stream) {
+            using (var sha512 = System.Security.Cryptography.SHA512.Create()) {
+                var hash = sha512.ComputeHash(stream);
+                return BitConverter.ToString(hash).Replace("-", "");
+            }
+        }
+
+        public static string SHA512(this byte[] bytes) {
+            using (var sha512 = System.Security.Cryptography.SHA512.Create()) {
+                var hash = sha512.ComputeHash(bytes);
+                return BitConverter.ToString(hash).Replace("-", "");
+            }
+        }
+
+        public static Dictionary<K, V> Sort<K, V, O>(this Dictionary<K, V> dict, Func<KeyValuePair<K, V>, O> keySelector) {
+            return dict.OrderBy(keySelector)
+                       .ToDictionary(pair => pair.Key, pair => pair.Value);
+        }
+
+        public static Dictionary<K, V> SortDescending<K, V, O>(this Dictionary<K, V> dict, Func<KeyValuePair<K, V>, O> keySelector) {
+            return dict.OrderByDescending(keySelector)
+                       .ToDictionary(pair => pair.Key, pair => pair.Value);
+        }
+
+        public static Dictionary<K2, V> GetOrCreate<K1, K2, V>(this Dictionary<K1, Dictionary<K2, V>> dict, K1 key) {
+            if (dict.ContainsKey(key)) return dict[key];
+            dict[key] = new Dictionary<K2, V>();
+            return dict[key];
         }
     }
 }
