@@ -50,6 +50,122 @@ namespace MHW_Generator {
             GenGunnerShoot();
             GenItemMake();
             GenItemList();
+            GenSwapItem();
+            GenSwapEnemyRate();
+            GenSwapN();
+            GenSwapC();
+            GenTreasure();
+            GenValueTrader();
+        }
+
+        private static void GenValueTrader() {
+            GenerateItemProps("MHW_Editor.Items", "ValueTrader", new MhwStructData { // .trdr
+                size = 56,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Item Id", 4, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Unk3", 8, typeof(uint)),
+                    new MhwStructData.Entry("Unk4", 12, typeof(uint)),
+                    new MhwStructData.Entry("Unk5", 16, typeof(uint)),
+                    new MhwStructData.Entry("Unk6", 20, typeof(uint)),
+                    new MhwStructData.Entry("Unk7", 24, typeof(uint)),
+                    new MhwStructData.Entry("Unk8", 28, typeof(uint)),
+                    new MhwStructData.Entry("Unk9", 32, typeof(uint)),
+                    new MhwStructData.Entry("Unk10", 36, typeof(uint)),
+                    new MhwStructData.Entry("Unk11", 40, typeof(uint)),
+                    new MhwStructData.Entry("Unk12", 44, typeof(uint)),
+                    new MhwStructData.Entry("Unk13", 48, typeof(uint)),
+                    new MhwStructData.Entry("Unk14", 52, typeof(uint))
+                }
+            });
+        }
+
+        private static void GenTreasure() {
+            GenerateItemProps("MHW_Editor.Items", "Treasure", new MhwStructData { // .trsr
+                size = 56,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Unk2", 4, typeof(uint)),
+                    new MhwStructData.Entry("Unk3", 8, typeof(uint)),
+                    new MhwStructData.Entry("Unk4", 12, typeof(uint)),
+                    new MhwStructData.Entry("Unk5", 16, typeof(uint)),
+                    new MhwStructData.Entry("Unk6", 20, typeof(uint)),
+                    new MhwStructData.Entry("Unk7", 24, typeof(uint)),
+                    new MhwStructData.Entry("Unk8", 28, typeof(uint)),
+                    new MhwStructData.Entry("Unk9", 32, typeof(uint)),
+                    new MhwStructData.Entry("Unk10", 36, typeof(uint)),
+                    new MhwStructData.Entry("Unk11", 40, typeof(uint)),
+                    new MhwStructData.Entry("Unk12", 44, typeof(uint)),
+                    new MhwStructData.Entry("Unk13", 48, typeof(uint)),
+                    new MhwStructData.Entry("Unk14", 52, typeof(uint))
+                }
+            });
+        }
+
+        private static void GenSwapC() {
+            GenerateItemProps("MHW_Editor.Items", "SwapC", new MhwStructData { // .swpc
+                size = 16,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Unk1", 0, typeof(uint)),
+                    new MhwStructData.Entry("Unk2", 4, typeof(uint)),
+                    new MhwStructData.Entry("Unk3", 8, typeof(uint)),
+                    new MhwStructData.Entry("Unk4", 12, typeof(uint))
+                }
+            });
+        }
+
+        private static void GenSwapN() {
+            GenerateItemProps("MHW_Editor.Items", "SwapN", new MhwStructData { // .swpn
+                size = 12,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Unk1", 0, typeof(uint)),
+                    new MhwStructData.Entry("Item Id", 4, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Unk2", 8, typeof(uint))
+                }
+            });
+        }
+
+        private static void GenSwapEnemyRate() {
+            GenerateItemProps("MHW_Editor.Items", "SwapEnemyRate", new MhwStructData { // .swer
+                size = 12,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Unk1", 4, typeof(uint)),
+                    new MhwStructData.Entry("Unk2", 8, typeof(uint))
+                }
+            });
+        }
+
+        private static void GenSwapItem() {
+            GenerateItemProps("MHW_Editor.Items", "SwapItem", new MhwStructData { // .swpi
+                size = 26,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Unk1", 0, typeof(uint)),
+                    new MhwStructData.Entry("Item Id", 4, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Unk2", 16, typeof(ushort)),
+                    new MhwStructData.Entry("Unk3", 18, typeof(ushort)),
+                    new MhwStructData.Entry("Unk4", 20, typeof(ushort)),
+                    new MhwStructData.Entry("Unk5", 22, typeof(ushort)),
+                    new MhwStructData.Entry("Unk6", 24, typeof(ushort))
+                }
+            });
         }
 
         private static void GenItemList() {

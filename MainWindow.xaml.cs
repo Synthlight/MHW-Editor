@@ -218,6 +218,12 @@ namespace MHW_Editor {
                                                  typeof(ShopSed),
                                                  typeof(SkillDat),
                                                  typeof(SkillPointData),
+                                                 typeof(SwapEnemyRate),
+                                                 typeof(SwapC),
+                                                 typeof(SwapItem),
+                                                 typeof(SwapN),
+                                                 typeof(Treasure),
+                                                 typeof(ValueTrader),
                                                  typeof(WeaponGunLance),
                                                  typeof(WeaponSwitchAxe),
                                                  typeof(WeaponWhistle),
@@ -999,6 +1005,12 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".shl_tbl")) return typeof(ShellTable);
             if (fileName.EndsWith(".skl_dat")) return typeof(SkillDat);
             if (fileName.EndsWith(".skl_pt_dat")) return typeof(SkillPointData);
+            if (fileName.EndsWith(".swer")) return typeof(SwapEnemyRate);
+            if (fileName.EndsWith(".swpc")) return typeof(SwapC);
+            if (fileName.EndsWith(".swpi")) return typeof(SwapItem);
+            if (fileName.EndsWith(".swpn")) return typeof(SwapN);
+            if (fileName.EndsWith(".trdr")) return typeof(ValueTrader);
+            if (fileName.EndsWith(".trsr")) return typeof(Treasure);
             if (fileName.EndsWith(".wep_glan")) return typeof(WeaponGunLance);
             if (fileName.EndsWith(".wep_saxe")) return typeof(WeaponSwitchAxe);
             if (fileName.EndsWith(".wep_wsd")) return typeof(WeaponWSword);

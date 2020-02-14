@@ -116,6 +116,12 @@
     <Compile Include="Generated\MHW_Editor\Items\PlantFertilizer.cs" />
     <Compile Include="Generated\MHW_Editor\Items\PlantItem.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ShopSed.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\SwapC.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\SwapEnemyRate.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\SwapItem.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\SwapN.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\Treasure.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\ValueTrader.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\MusicSkill.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\CustomParts.cs" />
@@ -128,6 +134,12 @@
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Items\ValueTrader.cs" />
+    <Compile Include="Items\Treasure.cs" />
+    <Compile Include="Items\SwapEnemyRate.cs" />
+    <Compile Include="Items\SwapC.cs" />
+    <Compile Include="Items\SwapN.cs" />
+    <Compile Include="Items\SwapItem.cs" />
     <Compile Include="Items\ItemList.cs" />
     <Compile Include="Items\MelderExchange.cs" />
     <Compile Include="Items\MelderItem.cs" />
