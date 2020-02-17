@@ -39,6 +39,7 @@ namespace MHW_Editor {
             {"maka_item.mkit", 4441},
             {"material.trdr", 5666},
             {"material_rare.trdr", 2866},
+            {"music_skill.msk", 1632},
             {"new_limit_break.new_lb", 682},
             {"new_limit_break.new_lbr", 3126},
             {"ot_equip.eq_crt", 17733},

@@ -80,7 +80,13 @@ namespace MHW_Generator_Data {
         private static void GenKnownLengths() {
             var map = new Dictionary<string, ulong>();
 
-            foreach (var path in GetMatchingFiles(Global.COMMON_ROOT)) {
+            // Limit the roots so we don't spend forever searching the whole thing.
+            var rootsToSearch = new List<string> {
+                $@"{Global.CHUNK_ROOT}\common",
+                $@"{Global.CHUNK_ROOT}\hm"
+            };
+
+            foreach (var path in rootsToSearch.SelectMany(GetMatchingFiles)) {
                 using (var file = File.OpenRead(path)) {
                     map[Path.GetFileName(path)] = (ulong) file.Length;
                 }

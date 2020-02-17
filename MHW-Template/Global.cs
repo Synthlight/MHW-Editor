@@ -90,6 +90,5 @@ namespace MHW_Template {
         public const string CHUNK_HASHING_ROOT = @"V:\MHW\IB\For Hashing";
         public const string CHUNK_ROOT = @"V:\MHW\IB\chunk_combined";
         public const string COMMON_TEXT_ROOT = CHUNK_ROOT + @"\common\text";
-        public const string COMMON_ROOT = CHUNK_ROOT + @"\common";
     }
 }
