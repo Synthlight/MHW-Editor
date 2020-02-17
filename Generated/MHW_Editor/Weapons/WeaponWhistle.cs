@@ -38,10 +38,10 @@ namespace MHW_Editor.Weapons {
         [SortOrder(Note_2_sortIndex)]
         [DisplayName(Note_2_displayName)]
         public virtual MHW_Template.Weapons.NoteColor Note_2 {
-            get => (MHW_Template.Weapons.NoteColor) GetData<byte>(4);
+            get => (MHW_Template.Weapons.NoteColor) GetData<byte>(5);
             set {
-                if ((MHW_Template.Weapons.NoteColor) GetData<byte>(4) == value) return;
-                SetData(4, (byte) value, nameof(Note_2));
+                if ((MHW_Template.Weapons.NoteColor) GetData<byte>(5) == value) return;
+                SetData(5, (byte) value, nameof(Note_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_2));
             }
@@ -52,10 +52,10 @@ namespace MHW_Editor.Weapons {
         [SortOrder(Note_3_sortIndex)]
         [DisplayName(Note_3_displayName)]
         public virtual MHW_Template.Weapons.NoteColor Note_3 {
-            get => (MHW_Template.Weapons.NoteColor) GetData<byte>(4);
+            get => (MHW_Template.Weapons.NoteColor) GetData<byte>(6);
             set {
-                if ((MHW_Template.Weapons.NoteColor) GetData<byte>(4) == value) return;
-                SetData(4, (byte) value, nameof(Note_3));
+                if ((MHW_Template.Weapons.NoteColor) GetData<byte>(6) == value) return;
+                SetData(6, (byte) value, nameof(Note_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Note_3));
             }
