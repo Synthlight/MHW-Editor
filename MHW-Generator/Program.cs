@@ -57,6 +57,31 @@ namespace MHW_Generator {
             GenTreasure();
             GenValueTrader();
             GenOdr();
+            GenQuestReward();
+        }
+
+        private static void GenQuestReward() {
+            var entries = new List<MhwStructData.Entry> {
+                new MhwStructData.Entry("Id", 0, typeof(uint), true)
+            };
+
+            const ulong itemIdStart = 8;
+            const ulong itemCountStart = 72;
+            const ulong itemWeightStart = 88;
+
+            for (ulong i = 0; i <= 15; i++) {
+                entries.Add(new MhwStructData.Entry($"Item {i + 1} Id", itemIdStart + i * 4, typeof(uint)));
+                entries.Add(new MhwStructData.Entry($"Item {i + 1} Cnt", itemCountStart + i, typeof(byte)));
+                entries.Add(new MhwStructData.Entry($"Item {i + 1} Wt", itemWeightStart + i, typeof(byte)));
+            }
+
+            GenerateItemProps("MHW_Editor.Items", "QuestReward", new MhwStructData { // .odr
+                size = 104,
+                offsetInitial = 10,
+                entryCountOffset = -1,
+                uniqueIdFormula = "{Id}",
+                entries = entries
+            });
         }
 
         private static void GenOdr() {

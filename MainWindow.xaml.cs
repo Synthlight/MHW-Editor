@@ -217,6 +217,8 @@ namespace MHW_Editor {
                                                  typeof(Odr),
                                                  typeof(PlantFertilizer),
                                                  typeof(PlantItem),
+                                                 typeof(QuestReward),
+                                                 typeof(QuestReward.QuestRewardInternal),
                                                  typeof(Sharpness),
                                                  typeof(ShellTable),
                                                  typeof(ShopSed),
@@ -628,7 +630,13 @@ namespace MHW_Editor {
             columnMap = new Dictionary<string, ColumnHolder>();
             coloredRow = null;
             dg_items.ItemsSource = null;
-            dg_items.ItemsSource = new ListCollectionView(items);
+
+            // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
+            if (targetFileType.Is(typeof(QuestReward))) {
+                dg_items.ItemsSource = new ListCollectionView(((QuestReward) items[0]).GetCustomView());
+            } else {
+                dg_items.ItemsSource = new ListCollectionView(items);
+            }
 
             if (targetFileType.Is(typeof(DecoPercent))) {
                 CalculatePercents();
@@ -706,61 +714,65 @@ namespace MHW_Editor {
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 
+#if !DEBUG
             try {
-                using (var file = File.OpenRead(targetFile)) {
-                    var ourLength = (ulong) file.Length;
-                    var properLength = FileSizes.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
-                    var sha512 = file.SHA512();
+#endif
+            using (var file = File.OpenRead(targetFile)) {
+                var ourLength = (ulong) file.Length;
+                var properLength = FileSizes.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
+                var sha512 = file.SHA512();
 
-                    // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
-                    foreach (var pair in FileHashes.BAD_FILE_HASH_MAP) {
-                        // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
-                        foreach (var fileAndHash in pair.Value) {
-                            if (Title == fileAndHash.Key && sha512 == fileAndHash.Value) {
-                                var newChunk = FileHashes.GOOD_CHUNK_MAP.TryGet(Title, "Unknown");
-                                MessageBox.Show($"This file ({Title}) is from {pair.Key} and is obsolete.\r\n" +
-                                                $"The newest version of the file is in {newChunk}.\r\n\r\n" +
-                                                "Using obsolete files is known to cause anything from blackscreens to crashes or incorrect data.", "Obsolete File Detected", MessageBoxButton.OK, MessageBoxImage.Warning);
-                                goto skipOut;
-                            }
+                // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
+                foreach (var pair in FileHashes.BAD_FILE_HASH_MAP) {
+                    // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
+                    foreach (var fileAndHash in pair.Value) {
+                        if (Title == fileAndHash.Key && sha512 == fileAndHash.Value) {
+                            var newChunk = FileHashes.GOOD_CHUNK_MAP.TryGet(Title, "Unknown");
+                            MessageBox.Show($"This file ({Title}) is from {pair.Key} and is obsolete.\r\n" +
+                                            $"The newest version of the file is in {newChunk}.\r\n\r\n" +
+                                            "Using obsolete files is known to cause anything from blackscreens to crashes or incorrect data.", "Obsolete File Detected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                            goto skipOut;
                         }
-                    }
-
-                    // Length check as a fallback.
-                    if (ourLength != properLength) {
-                        MessageBox.Show($"The file size of {Title} does not match the known file size in v{CURRENT_GAME_VERSION}.\r\n" +
-                                        $"Expected: {ourLength}\r\n" +
-                                        $"Found: {properLength}\r\n" +
-                                        "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
-                        goto skipOut;
                     }
                 }
 
-                skipOut:
-                if (encryptionKey != null) {
-                    // Read & decrypt file.
-                    var encryptedBytes = File.ReadAllBytes(targetFile);
-                    var decryptedBytes = EncryptionHelper.Decrypt(encryptionKey, encryptedBytes);
+                // Length check as a fallback.
+                if (ourLength != properLength) {
+                    MessageBox.Show($"The file size of {Title} does not match the known file size in v{CURRENT_GAME_VERSION}.\r\n" +
+                                    $"Expected: {ourLength}\r\n" +
+                                    $"Found: {properLength}\r\n" +
+                                    "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    goto skipOut;
+                }
+            }
 
-                    using (var dat = new MemoryStream()) {
-                        // Write to a stream for the loader. Leave base stream OPEN.
-                        using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
-                            writer.Write(decryptedBytes);
-                        }
+            skipOut:
+            if (encryptionKey != null) {
+                // Read & decrypt file.
+                var encryptedBytes = File.ReadAllBytes(targetFile);
+                var decryptedBytes = EncryptionHelper.Decrypt(encryptionKey, encryptedBytes);
 
-                        // Load as normal.
-                        using (var reader = new BinaryReader(dat)) {
-                            ReadStructs(reader, structSize, initialOffset, weaponFilename, entryCountOffset);
-                        }
+                using (var dat = new MemoryStream()) {
+                    // Write to a stream for the loader. Leave base stream OPEN.
+                    using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
+                        writer.Write(decryptedBytes);
                     }
-                } else { // No encryption, just open, read, & close.
-                    using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
-                        ReadStructs(dat, structSize, initialOffset, weaponFilename, entryCountOffset);
+
+                    // Load as normal.
+                    using (var reader = new BinaryReader(dat)) {
+                        ReadStructs(reader, structSize, initialOffset, weaponFilename, entryCountOffset);
                     }
                 }
+            } else { // No encryption, just open, read, & close.
+                using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
+                    ReadStructs(dat, structSize, initialOffset, weaponFilename, entryCountOffset);
+                }
+            }
+#if !DEBUG
             } catch (Exception e) {
                 MessageBox.Show(this, e.Message, "Load Error");
             }
+#endif
         }
 
         private void ReadStructs(BinaryReader dat, uint structSize, ulong initialOffset, string weaponFilename, long entryCountOffset) {
@@ -821,44 +833,48 @@ namespace MHW_Editor {
         private async void Save() {
             if (string.IsNullOrEmpty(targetFile)) return;
 
+#if !DEBUG
             try {
-                bool changesSaved;
-                var encryptionKey = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy).GetValue(null);
+#endif
+            bool changesSaved;
+            var encryptionKey = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy).GetValue(null);
 
-                if (encryptionKey != null) {
-                    // Read & decrypt file.
-                    var encryptedBytes = File.ReadAllBytes(targetFile);
-                    var decryptedBytes = EncryptionHelper.Decrypt(encryptionKey, encryptedBytes);
+            if (encryptionKey != null) {
+                // Read & decrypt file.
+                var encryptedBytes = File.ReadAllBytes(targetFile);
+                var decryptedBytes = EncryptionHelper.Decrypt(encryptionKey, encryptedBytes);
 
-                    using (var dat = new MemoryStream()) {
-                        // Write to a stream for the loader. Leave base stream OPEN.
-                        using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
-                            writer.Write(decryptedBytes);
-                        }
-
-                        // Save as normal. Leave base stream OPEN.
-                        using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
-                            changesSaved = WriteChanges(writer);
-                        }
-
-                        // If there are no changes, then we don't need to write the result back out.
-                        if (changesSaved) {
-                            // Re-encrypt and write it back out.
-                            decryptedBytes = dat.ToArray();
-                            encryptedBytes = EncryptionHelper.Encrypt(encryptionKey, decryptedBytes);
-                            File.WriteAllBytes(targetFile, encryptedBytes);
-                        }
+                using (var dat = new MemoryStream()) {
+                    // Write to a stream for the loader. Leave base stream OPEN.
+                    using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
+                        writer.Write(decryptedBytes);
                     }
-                } else { // No encryption, just open, write, & close.
-                    using (var dat = new BinaryWriter(new FileStream(targetFile, FileMode.Open, FileAccess.Write))) {
-                        changesSaved = WriteChanges(dat);
+
+                    // Save as normal. Leave base stream OPEN.
+                    using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
+                        changesSaved = WriteChanges(writer);
+                    }
+
+                    // If there are no changes, then we don't need to write the result back out.
+                    if (changesSaved) {
+                        // Re-encrypt and write it back out.
+                        decryptedBytes = dat.ToArray();
+                        encryptedBytes = EncryptionHelper.Encrypt(encryptionKey, decryptedBytes);
+                        File.WriteAllBytes(targetFile, encryptedBytes);
                     }
                 }
+            } else { // No encryption, just open, write, & close.
+                using (var dat = new BinaryWriter(new FileStream(targetFile, FileMode.Open, FileAccess.Write))) {
+                    changesSaved = WriteChanges(dat);
+                }
+            }
 
-                await ShowChangesSaved(changesSaved);
+            await ShowChangesSaved(changesSaved);
+#if !DEBUG
             } catch (Exception e) {
                 MessageBox.Show(this, e.Message, "Save Error");
             }
+#endif
         }
 
         private async Task ShowChangesSaved(bool changesSaved) {
@@ -892,83 +908,95 @@ namespace MHW_Editor {
         private void LoadJson() {
             if (string.IsNullOrEmpty(targetFile)) return;
 
+#if !DEBUG
             try {
-                var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
-                if (string.IsNullOrEmpty(target)) return;
+#endif
+            var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
+            if (string.IsNullOrEmpty(target)) return;
 
-                var fileName = Path.GetFileName(targetFile);
+            var fileName = Path.GetFileName(targetFile);
 
-                var json = File.ReadAllText(target);
-                var changesToLoad = JsonMigrations.Migrate(json, fileName, items);
+            var json = File.ReadAllText(target);
+            var changesToLoad = JsonMigrations.Migrate(json, fileName, items);
 
-                if (!changesToLoad.changes.Any()) return;
-                if (fileName != changesToLoad.targetFile) return;
+            if (!changesToLoad.changes.Any()) return;
+            if (fileName != changesToLoad.targetFile && changesToLoad.targetFile != "*") return;
 
-                foreach (MhwItem item in items) {
-                    if (item.Offset == 0) continue;
+            foreach (MhwItem item in items) {
+                if (item.Offset == 0) continue;
 
-                    var id = item.UniqueId;
-                    var changedItems = changesToLoad.changes.TryGet(id, null);
-                    if (changedItems == null) {
-                        // Try for wildcard option.
-                        changedItems = changesToLoad.changes.TryGet("*", null);
-                        if (changedItems == null) continue;
-                    }
+                var id = item.UniqueId;
+                var changedItems = changesToLoad.changes.TryGet(id, null);
+                if (changedItems == null) {
+                    // Try for wildcard option.
+                    changedItems = changesToLoad.changes.TryGet("*", null);
+                    if (changedItems == null) continue;
+                }
 
-                    foreach (var changedItem in changedItems) {
-                        var propertyInfo = item.GetType().GetProperty(changedItem.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+                foreach (var changedItem in changedItems) {
+                    var propertyInfo = item.GetType().GetProperty(changedItem.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
 
-                        if (propertyInfo.PropertyType.IsEnum) {
-                            var value = Enum.ToObject(propertyInfo.PropertyType, changedItem.Value);
-                            propertyInfo.SetValue(item, value);
-                        } else {
-                            var value = Convert.ChangeType(changedItem.Value, propertyInfo.PropertyType);
-                            propertyInfo.SetValue(item, value);
-                        }
+                    if (propertyInfo.PropertyType.IsEnum) {
+                        var value = Enum.ToObject(propertyInfo.PropertyType, changedItem.Value);
+                        propertyInfo.SetValue(item, value);
+                    } else {
+                        var value = Convert.ChangeType(changedItem.Value, propertyInfo.PropertyType);
+                        propertyInfo.SetValue(item, value);
                     }
                 }
+            }
+
+            if (targetFileType.Is(typeof(QuestReward))) {
+                ((ListCollectionView) dg_items.ItemsSource).Refresh();
+            }
+#if !DEBUG
             } catch (Exception e) {
                 MessageBox.Show(this, e.Message, "Load Error");
             }
+#endif
         }
 
         private async void SaveJson() {
             if (string.IsNullOrEmpty(targetFile)) return;
 
+#if !DEBUG
             try {
-                var fileName = Path.GetFileName(targetFile);
-                var changesToSave = new JsonChanges {
-                    targetFile = fileName,
-                    version = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1)
-                };
+#endif
+            var fileName = Path.GetFileName(targetFile);
+            var changesToSave = new JsonChanges {
+                targetFile = fileName,
+                version = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1)
+            };
 
-                foreach (MhwItem item in items) {
-                    if (item.Offset == 0 || item.changed.Count == 0) continue;
+            foreach (MhwItem item in items) {
+                if (item.Offset == 0 || item.changed.Count == 0) continue;
 
-                    var id = item.UniqueId;
-                    changesToSave.changes[id] = new Dictionary<string, object>();
+                var id = item.UniqueId;
+                changesToSave.changes[id] = new Dictionary<string, object>();
 
-                    foreach (var changedItem in item.changed) {
-                        var value = item.GetType().GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
-                        changesToSave.changes[id][changedItem] = value;
-                    }
+                foreach (var changedItem in item.changed) {
+                    var value = item.GetType().GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
+                    changesToSave.changes[id][changedItem] = value;
                 }
+            }
 
-                var changesSaved = changesToSave.changes.Any();
+            var changesSaved = changesToSave.changes.Any();
 
-                if (changesSaved) {
-                    // Get file after checking for what to save else we show a dialog even if there are no changes.
-                    var target = GetSaveTarget();
-                    if (string.IsNullOrEmpty(target)) return;
+            if (changesSaved) {
+                // Get file after checking for what to save else we show a dialog even if there are no changes.
+                var target = GetSaveTarget();
+                if (string.IsNullOrEmpty(target)) return;
 
-                    var json = JsonConvert.SerializeObject(changesToSave, Formatting.Indented);
-                    File.WriteAllText(target, json);
-                }
+                var json = JsonConvert.SerializeObject(changesToSave, Formatting.Indented);
+                File.WriteAllText(target, json);
+            }
 
-                await ShowChangesSaved(changesSaved);
+            await ShowChangesSaved(changesSaved);
+#if !DEBUG
             } catch (Exception e) {
                 MessageBox.Show(this, e.Message, "Save Error");
             }
+#endif
         }
 
         private string GetOpenTarget(string filter) {
@@ -1024,6 +1052,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".plfe")) return typeof(PlantFertilizer);
             if (fileName.EndsWith(".plit")) return typeof(PlantItem);
             if (fileName.EndsWith(".rod_inse")) return typeof(RodInsect);
+            if (fileName.EndsWith(".rem")) return typeof(QuestReward);
             if (fileName.EndsWith(".sed")) return typeof(ShopSed);
             if (fileName.EndsWith(".sgpa")) return typeof(Gem);
             if (fileName.EndsWith(".shl_tbl")) return typeof(ShellTable);
