@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading;
 using MHW_Template;
 using MHW_Template.Models;
 using Newtonsoft.Json;
@@ -20,6 +22,8 @@ namespace MHW_Generator_Data {
         }
 
         private static void GenOutdatedHashes() {
+            ExtractFilesToHash();
+
             var allFilesMap = new Dictionary<string, List<string>>();
 
             // Get all known editable files in all chunks.
@@ -75,6 +79,40 @@ namespace MHW_Generator_Data {
                     {"goodChunkMap", foundGoodFiles}
                 }
             });
+        }
+
+        private static void ExtractFilesToHash() {
+            // Clear old files first.
+            DeleteDirectories(Global.CHUNK_HASHING_ROOT);
+
+            const string mhwNoChunkRoot = @"..\..\..\..\MHWNoChunk\MHWNoChunk\bin\x64\Release";
+
+            var startInfo = new ProcessStartInfo($@"{mhwNoChunkRoot}\MHWNoChunk.exe") {
+                WorkingDirectory = mhwNoChunkRoot,
+                Arguments = $"^(.*\\.(({string.Join("|", Global.FILE_TYPES.ToList().Select(s => s.Replace("*.", "")))})$))?[^.]*$",
+                UseShellExecute = false
+            };
+
+            Process.Start(startInfo)?.WaitForExit();
+        }
+
+        private static void DeleteDirectories(string startLocation) {
+            foreach (var directory in Directory.GetDirectories(startLocation)) {
+                DeleteDirectories(directory);
+                foreach (var file in Directory.EnumerateFiles(directory)) {
+                    File.Delete(file);
+                }
+
+                try {
+                    Directory.Delete(directory);
+                } catch (Exception) {
+                    // https://stackoverflow.com/a/47398010
+                    // HACK because the recursive delete will throw with an "Directory is not empty" exception after it deletes all the contents of the directory
+                    // if the directory is open in the left nav of Windows's explorer tree. This appears to be a caching or queuing latency issue.
+                    Thread.Sleep(2000);
+                    Directory.Delete(directory);
+                }
+            }
         }
 
         private static void GenKnownLengths() {
