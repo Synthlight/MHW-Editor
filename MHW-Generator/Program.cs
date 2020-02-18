@@ -56,6 +56,38 @@ namespace MHW_Generator {
             GenSwapC();
             GenTreasure();
             GenValueTrader();
+            GenOdr();
+        }
+
+        private static void GenOdr() {
+            GenerateItemProps("MHW_Editor.Items", "Odr", new MhwStructData { // .odr
+                size = 77,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Id}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
+                    new MhwStructData.Entry("Unk1", 4, typeof(uint)),
+                    new MhwStructData.Entry("Unk2", 8, typeof(byte)),
+                    new MhwStructData.Entry("Unk3", 9, typeof(uint)),
+                    new MhwStructData.Entry("Unk4", 13, typeof(uint)),
+                    new MhwStructData.Entry("Unk5", 17, typeof(int)),
+                    new MhwStructData.Entry("Unk6", 21, typeof(uint)),
+                    new MhwStructData.Entry("Unk7", 25, typeof(uint)),
+                    new MhwStructData.Entry("Unk8", 29, typeof(uint)),
+                    new MhwStructData.Entry("Unk9", 33, typeof(int)),
+                    new MhwStructData.Entry("Unk10", 37, typeof(uint)),
+                    new MhwStructData.Entry("Unk11", 41, typeof(uint)),
+                    new MhwStructData.Entry("Unk12", 45, typeof(uint)),
+                    new MhwStructData.Entry("Unk13", 49, typeof(uint)),
+                    new MhwStructData.Entry("Unk14", 53, typeof(uint)),
+                    new MhwStructData.Entry("Unk15", 57, typeof(uint)),
+                    new MhwStructData.Entry("Unk16", 61, typeof(uint)),
+                    new MhwStructData.Entry("Unk17", 65, typeof(uint)),
+                    new MhwStructData.Entry("Unk18", 69, typeof(uint)),
+                    new MhwStructData.Entry("Unk19", 72, typeof(uint))
+                }
+            });
         }
 
         private static void GenValueTrader() {

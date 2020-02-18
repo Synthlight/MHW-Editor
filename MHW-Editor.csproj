@@ -114,6 +114,7 @@
     <Compile Include="Generated\MHW_Editor\Items\ItemMake.cs" />
     <Compile Include="Generated\MHW_Editor\Items\MelderExchange.cs" />
     <Compile Include="Generated\MHW_Editor\Items\MelderItem.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\Odr.cs" />
     <Compile Include="Generated\MHW_Editor\Items\PlantFertilizer.cs" />
     <Compile Include="Generated\MHW_Editor\Items\PlantItem.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ShopSed.cs" />
@@ -135,6 +136,7 @@
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Items\Odr.cs" />
     <Compile Include="Items\ValueTrader.cs" />
     <Compile Include="Items\Treasure.cs" />
     <Compile Include="Items\SwapEnemyRate.cs" />

@@ -214,6 +214,7 @@ namespace MHW_Editor {
                                                  typeof(MusicSkill),
                                                  typeof(NewLimitBreak),
                                                  typeof(NewLimitBreakR),
+                                                 typeof(Odr),
                                                  typeof(PlantFertilizer),
                                                  typeof(PlantItem),
                                                  typeof(Sharpness),
@@ -1017,6 +1018,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".msk")) return typeof(MusicSkill);
             if (fileName.EndsWith(".new_lb")) return typeof(NewLimitBreak);
             if (fileName.EndsWith(".new_lbr")) return typeof(NewLimitBreakR);
+            if (fileName.EndsWith(".odr")) return typeof(Odr);
             if (fileName.EndsWith(".oam_dat")) return typeof(OtomoArmorDat);
             if (fileName.EndsWith(".owp_dat")) return typeof(OtomoWeaponDat);
             if (fileName.EndsWith(".plfe")) return typeof(PlantFertilizer);

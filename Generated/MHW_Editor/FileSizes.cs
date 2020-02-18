@@ -32,6 +32,7 @@ namespace MHW_Editor {
             {"itemMake.imk", 3141},
             {"itemMake_show.imk", 2707},
             {"kireaji.kire", 4618},
+            {"l_mission.odr", 14178},
             {"l_sword.wp_dat", 19810},
             {"lance.wp_dat", 19282},
             {"lbg.wp_dat_g", 20227},

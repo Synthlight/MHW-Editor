@@ -76,6 +76,7 @@ namespace MHW_Editor {
             {"itemMake.imk", "chunkG1"},
             {"itemMake_show.imk", "chunkG0"},
             {"kireaji.kire", "chunkG1"},
+            {"l_mission.odr", "chunkG0"},
             {"l_sword.wp_dat", "chunkG1"},
             {"lance.wp_dat", "chunkG1"},
             {"lbg.wp_dat_g", "chunkG1"},
