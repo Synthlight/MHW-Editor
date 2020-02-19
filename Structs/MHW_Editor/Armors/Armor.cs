@@ -10,6 +10,10 @@ namespace MHW_Editor.Armors {
         public byte Type; // Offset: 9
         public byte Equip_Slot; // Offset: 10
         public ushort Defense; // Offset: 11
+        public ushort Model_Id_1; // Offset: 13
+        public ushort Model_Id_2; // Offset: 15
+        public ushort Unk1; // Offset: 17
+        public byte Unk2; // Offset: 19
         public byte Rarity; // Offset: 20
         public uint Cost; // Offset: 21
         public sbyte Fire_Res; // Offset: 25
@@ -31,7 +35,7 @@ namespace MHW_Editor.Armors {
         public byte Skill_2_Level; // Offset: 45
         public ushort Skill_3; // Offset: 46
         public byte Skill_3_Level; // Offset: 48
-        public byte Gender; // Offset: 49
+        public uint Gender; // Offset: 49
         public ushort Set_Group; // Offset: 53
         public ushort GMD_Name_Index; // Offset: 55
         public ushort GMD_Description_Index; // Offset: 57
