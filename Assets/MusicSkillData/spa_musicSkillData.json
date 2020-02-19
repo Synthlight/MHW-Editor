@@ -1,0 +1,398 @@
+{
+  "0": [
+    "HUD_HUE_00",
+    "Automejora"
+  ],
+  "1": [
+    "HUD_HUE_00_S",
+    "Movimiento veloz"
+  ],
+  "2": [
+    "HUD_HUE_00_W",
+    "Anti rebote de ataques y ataque mejorado"
+  ],
+  "3": [
+    "HUD_HUE_01",
+    "Mejora de ataque (P)"
+  ],
+  "4": [
+    "HUD_HUE_02",
+    "Mejora de ataque (G)"
+  ],
+  "5": [
+    "HUD_HUE_02_W",
+    "Mejora de ataque (XG)"
+  ],
+  "6": [
+    "HUD_HUE_03",
+    "Bonus salud (P)"
+  ],
+  "7": [
+    "HUD_HUE_04",
+    "Bonus salud (G)"
+  ],
+  "8": [
+    "HUD_HUE_04_W",
+    "Bonus salud extend."
+  ],
+  "9": [
+    "HUD_HUE_05",
+    "Anti gasto de resistencia (P)"
+  ],
+  "10": [
+    "HUD_HUE_06",
+    "Anti gasto de resistencia (G)"
+  ],
+  "11": [
+    "HUD_HUE_06_W",
+    "Anti gasto de resistencia extend."
+  ],
+  "12": [
+    "HUD_HUE_07",
+    "Niega ráfagas de viento"
+  ],
+  "13": [
+    "HUD_HUE_08",
+    "Niega toda ráfaga de viento"
+  ],
+  "14": [
+    "HUD_HUE_08_W",
+    "Niega toda ráfaga de viento extend."
+  ],
+  "15": [
+    "HUD_HUE_09",
+    "Mejora de defensa (P)"
+  ],
+  "16": [
+    "HUD_HUE_10",
+    "Mejora de defensa (G)"
+  ],
+  "17": [
+    "HUD_HUE_10_W",
+    "Mejora de defensa (XG)"
+  ],
+  "18": [
+    "HUD_HUE_11",
+    "Uso reducido herramienta (P)"
+  ],
+  "19": [
+    "HUD_HUE_12",
+    "Uso reducido herramienta (G)"
+  ],
+  "20": [
+    "HUD_HUE_12_W",
+    "Uso reducido herramienta extend."
+  ],
+  "21": [
+    "HUD_HUE_13",
+    "Recuperación salud (P)"
+  ],
+  "22": [
+    "HUD_HUE_14",
+    "Recuperación salud (G)"
+  ],
+  "23": [
+    "HUD_HUE_15",
+    "Recup. salud (P) + antídoto"
+  ],
+  "24": [
+    "HUD_HUE_16",
+    "Recup. salud (M) + antídoto"
+  ],
+  "25": [
+    "HUD_HUE_17",
+    "Recuperación rápida (P)"
+  ],
+  "26": [
+    "HUD_HUE_18",
+    "Recuperación rápida (G)"
+  ],
+  "27": [
+    "HUD_HUE_18_W",
+    "Recuperación rápida extend."
+  ],
+  "28": [
+    "HUD_HUE_19",
+    "Protección divina"
+  ],
+  "29": [
+    "HUD_HUE_19_W",
+    "Protección divina extendida"
+  ],
+  "30": [
+    "HUD_HUE_20",
+    "Mejora de Lafarillos"
+  ],
+  "31": [
+    "HUD_HUE_20_S",
+    "Nv. de Lafarillos +1"
+  ],
+  "32": [
+    "HUD_HUE_20_W",
+    "Nv. de Lafarillos +1 extendido"
+  ],
+  "33": [
+    "HUD_HUE_21",
+    "Anti fango"
+  ],
+  "34": [
+    "HUD_HUE_21_W",
+    "Anti fango extendido"
+  ],
+  "35": [
+    "HUD_HUE_22",
+    "Niega daño entorno"
+  ],
+  "36": [
+    "HUD_HUE_22_W",
+    "Niega daño entorno extend."
+  ],
+  "37": [
+    "HUD_HUE_23",
+    "Anti rugidos (P)"
+  ],
+  "38": [
+    "HUD_HUE_24",
+    "Anti rugidos (G)"
+  ],
+  "39": [
+    "HUD_HUE_24_W",
+    "Anti rugidos (G) extendido"
+  ],
+  "40": [
+    "HUD_HUE_25",
+    "Niega aturdimiento"
+  ],
+  "41": [
+    "HUD_HUE_25_W",
+    "Niega aturdimiento extendido"
+  ],
+  "42": [
+    "HUD_HUE_26",
+    "Niega parálisis"
+  ],
+  "43": [
+    "HUD_HUE_26_W",
+    "Niega parálisis extendido"
+  ],
+  "44": [
+    "HUD_HUE_27",
+    "Niega temblores"
+  ],
+  "45": [
+    "HUD_HUE_27_W",
+    "Niega temblores extendido"
+  ],
+  "46": [
+    "HUD_HUE_28",
+    "Bonus resistencia al fuego (P)"
+  ],
+  "47": [
+    "HUD_HUE_29",
+    "Bonus resistencia al fuego (G)"
+  ],
+  "48": [
+    "HUD_HUE_29_W",
+    "Bonus resistencia al fuego (XG)"
+  ],
+  "49": [
+    "HUD_HUE_30",
+    "Bonus resistencia al agua (P)"
+  ],
+  "50": [
+    "HUD_HUE_31",
+    "Bonus resistencia al agua (G)"
+  ],
+  "51": [
+    "HUD_HUE_31_W",
+    "Bonus resistencia al agua (XG)"
+  ],
+  "52": [
+    "HUD_HUE_32",
+    "Bonus resistencia al rayo (P)"
+  ],
+  "53": [
+    "HUD_HUE_33",
+    "Bonus resistencia al rayo (G)"
+  ],
+  "54": [
+    "HUD_HUE_33_W",
+    "Bonus resistencia al rayo (XG)"
+  ],
+  "55": [
+    "HUD_HUE_34",
+    "Bonus resistencia al hielo (P)"
+  ],
+  "56": [
+    "HUD_HUE_35",
+    "Bonus resistencia al hielo (G)"
+  ],
+  "57": [
+    "HUD_HUE_35_W",
+    "Bonus resistencia al hielo (XG)"
+  ],
+  "58": [
+    "HUD_HUE_36",
+    "Bonus resistencia al draco (P)"
+  ],
+  "59": [
+    "HUD_HUE_37",
+    "Bonus resistencia al draco (G)"
+  ],
+  "60": [
+    "HUD_HUE_37_W",
+    "Bonus resistencia al draco (XG)"
+  ],
+  "61": [
+    "HUD_HUE_38",
+    "Bonus ataques elementales"
+  ],
+  "62": [
+    "HUD_HUE_38_S",
+    "Bonus ataques elementales (P)"
+  ],
+  "63": [
+    "HUD_HUE_38_W",
+    "Bonus ataques elementales (G)"
+  ],
+  "64": [
+    "HUD_HUE_39",
+    "Ondas sónicas"
+  ],
+  "65": [
+    "HUD_HUE_40",
+    "Efecto de melodías extendido"
+  ],
+  "66": [
+    "HUD_HUE_41",
+    "Anti empuje al recibir ataques"
+  ],
+  "67": [
+    "HUD_HUE_42",
+    "Mejora ataque/defensa (P)"
+  ],
+  "68": [
+    "HUD_HUE_42_S",
+    "Mejora ataque/defensa (P)"
+  ],
+  "69": [
+    "HUD_HUE_42_W",
+    "Mejora ataque (G)/defensa (G)"
+  ],
+  "70": [
+    "HUD_HUE_43",
+    "Recup. afinidad/salud (P)"
+  ],
+  "71": [
+    "HUD_HUE_43_S",
+    "Recup. afinidad (P)/salud (P)"
+  ],
+  "72": [
+    "HUD_HUE_43_W",
+    "Recup. afinidad (G)/salud (P)"
+  ],
+  "73": [
+    "HUD_HUE_44",
+    "Mejora ataques estados alterados"
+  ],
+  "74": [
+    "HUD_HUE_44_S",
+    "Mejora ataq. estado alterado (P)"
+  ],
+  "75": [
+    "HUD_HUE_44_W",
+    "Mejora ataq. estado alterado (G)"
+  ],
+  "76": [
+    "HUD_HUE_45",
+    "Anti estados alterados"
+  ],
+  "77": [
+    "HUD_HUE_45_W",
+    "Anti estados alterados extend."
+  ],
+  "78": [
+    "HUD_HUE_46",
+    "Mejora la resistencia a plagas"
+  ],
+  "79": [
+    "HUD_HUE_46_S",
+    "Mejora resistencia a plagas (P)"
+  ],
+  "80": [
+    "HUD_HUE_46_W",
+    "Mejora resistencia a plagas (G)"
+  ],
+  "81": [
+    "HUD_HUE_47",
+    "Niega plagas"
+  ],
+  "82": [
+    "HUD_HUE_47_W",
+    "Anti plagas extendido"
+  ],
+  "83": [
+    "HUD_HUE_48",
+    "Anti rugidos (P)/Niega ráfagas viento"
+  ],
+  "84": [
+    "HUD_HUE_48_S",
+    "Anti rugidos (P)/Niega ráfagas viento"
+  ],
+  "85": [
+    "HUD_HUE_48_W",
+    "Anti rugidos (P)/Niega viento extend."
+  ],
+  "86": [
+    "HUD_HUE_49",
+    "Recupera salud (M)"
+  ],
+  "87": [
+    "HUD_HUE_23_W",
+    "Anti rugidos (P) extendido"
+  ],
+  "88": [
+    "HUD_HUE_07_W",
+    "Niega ráfagas de viento extend."
+  ],
+  "89": [
+    "HUD_HUE_41_W",
+    "Anti empujes extendido"
+  ],
+  "90": [
+    "HUD_HUE_50",
+    "Onda sónica de impacto"
+  ],
+  "91": [
+    "HUD_HUE_51",
+    "Onda sónica \"Dragón\""
+  ],
+  "92": [
+    "HUD_HUE_52",
+    "Recuperación + resistencia máxima+"
+  ],
+  "93": [
+    "HUD_HUE_53",
+    "Recuperación de salud extendida"
+  ],
+  "94": [
+    "HUD_HUE_54",
+    "Bonus velocidad + int. de evasión+"
+  ],
+  "95": [
+    "HUD_HUE_55",
+    "Efectividad elemental+"
+  ],
+  "96": [
+    "HUD_HUE_56",
+    "Intervalo de evasión+"
+  ],
+  "97": [
+    "HUD_HUE_21_G",
+    "Anti fango/agua/nieve profunda"
+  ],
+  "98": [
+    "HUD_HUE_21_W_G",
+    "Anti fango/agua/nieve profunda ext."
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "0": [
+    "HUD_HUE_00",
+    "Autoaprimoramento"
+  ],
+  "1": [
+    "HUD_HUE_00_S",
+    "Mais Velocidade de Movimento"
+  ],
+  "2": [
+    "HUD_HUE_00_W",
+    "Mais Ataque + Prev. de Deflexão de Atq."
+  ],
+  "3": [
+    "HUD_HUE_01",
+    "Mais Ataque (P)"
+  ],
+  "4": [
+    "HUD_HUE_02",
+    "Mais Ataque (G)"
+  ],
+  "5": [
+    "HUD_HUE_02_W",
+    "Mais Ataque (XG)"
+  ],
+  "6": [
+    "HUD_HUE_03",
+    "Reforço de Vida (P)"
+  ],
+  "7": [
+    "HUD_HUE_04",
+    "Reforço de Vida (G)"
+  ],
+  "8": [
+    "HUD_HUE_04_W",
+    "Reforço de Vida Estendido"
+  ],
+  "9": [
+    "HUD_HUE_05",
+    "Gasto de Vigor Reduzido (P)"
+  ],
+  "10": [
+    "HUD_HUE_06",
+    "Gasto de Vigor Reduzido (G)"
+  ],
+  "11": [
+    "HUD_HUE_06_W",
+    "Gasto de Vigor Reduzido Estendido"
+  ],
+  "12": [
+    "HUD_HUE_07",
+    "Pressão de Vento Negada"
+  ],
+  "13": [
+    "HUD_HUE_08",
+    "Toda a Pressão de Vento Negada"
+  ],
+  "14": [
+    "HUD_HUE_08_W",
+    "Toda a Pressão de Vento Negada Estendida"
+  ],
+  "15": [
+    "HUD_HUE_09",
+    "Mais Defesa (P)"
+  ],
+  "16": [
+    "HUD_HUE_10",
+    "Mais Defesa (G)"
+  ],
+  "17": [
+    "HUD_HUE_10_W",
+    "Mais Defesa (XG)"
+  ],
+  "18": [
+    "HUD_HUE_11",
+    "Uso de Ferramenta Reduzido (P)"
+  ],
+  "19": [
+    "HUD_HUE_12",
+    "Uso de Ferramenta Reduzido (G)"
+  ],
+  "20": [
+    "HUD_HUE_12_W",
+    "Uso de Ferramenta Reduzido Estendido"
+  ],
+  "21": [
+    "HUD_HUE_13",
+    "Regeneração de Vida (P)"
+  ],
+  "22": [
+    "HUD_HUE_14",
+    "Regeneração de Vida (G)"
+  ],
+  "23": [
+    "HUD_HUE_15",
+    "Reg. de Vida (P) + Antídoto"
+  ],
+  "24": [
+    "HUD_HUE_16",
+    "Reg. de Vida (M) + Antídoto"
+  ],
+  "25": [
+    "HUD_HUE_17",
+    "Velocidade Regeneração (P)"
+  ],
+  "26": [
+    "HUD_HUE_18",
+    "Velocidade Regeneração (G)"
+  ],
+  "27": [
+    "HUD_HUE_18_W",
+    "Velocidade Regeneração Estendida"
+  ],
+  "28": [
+    "HUD_HUE_19",
+    "Proteção Divina"
+  ],
+  "29": [
+    "HUD_HUE_19_W",
+    "Proteção Divina Estendida"
+  ],
+  "30": [
+    "HUD_HUE_20",
+    "Fortalecimento de Guialumes"
+  ],
+  "31": [
+    "HUD_HUE_20_S",
+    "Nível de Guialumes +1"
+  ],
+  "32": [
+    "HUD_HUE_20_W",
+    "Nível de Guialumes +1 Estendido"
+  ],
+  "33": [
+    "HUD_HUE_21",
+    "Resistência a Muco"
+  ],
+  "34": [
+    "HUD_HUE_21_W",
+    "Resistência a Esterco Estendida"
+  ],
+  "35": [
+    "HUD_HUE_22",
+    "Dano de Ambiente Negado"
+  ],
+  "36": [
+    "HUD_HUE_22_W",
+    "Dano de Ambiente Negado Estendido"
+  ],
+  "37": [
+    "HUD_HUE_23",
+    "Tampões (P)"
+  ],
+  "38": [
+    "HUD_HUE_24",
+    "Tampões (G)"
+  ],
+  "39": [
+    "HUD_HUE_24_W",
+    "Tampões (G) Estendido"
+  ],
+  "40": [
+    "HUD_HUE_25",
+    "Atordoamento Negado"
+  ],
+  "41": [
+    "HUD_HUE_25_W",
+    "Negação de Atordoamento Estendida"
+  ],
+  "42": [
+    "HUD_HUE_26",
+    "Paralisia Negada"
+  ],
+  "43": [
+    "HUD_HUE_26_W",
+    "Negação de Paralisia Estendida"
+  ],
+  "44": [
+    "HUD_HUE_27",
+    "Tremores Negados"
+  ],
+  "45": [
+    "HUD_HUE_27_W",
+    "Negação de Tremores Estendida"
+  ],
+  "46": [
+    "HUD_HUE_28",
+    "Reforço Resistência a Fogo (P)"
+  ],
+  "47": [
+    "HUD_HUE_29",
+    "Reforço Resistência a Fogo (G)"
+  ],
+  "48": [
+    "HUD_HUE_29_W",
+    "Reforço Resistência a Fogo (XG)"
+  ],
+  "49": [
+    "HUD_HUE_30",
+    "Reforço Resistência a Água (P)"
+  ],
+  "50": [
+    "HUD_HUE_31",
+    "Reforço Resistência a Água (G)"
+  ],
+  "51": [
+    "HUD_HUE_31_W",
+    "Reforço Resistência a Água (XG)"
+  ],
+  "52": [
+    "HUD_HUE_32",
+    "Reforço Resistência a Raio (P)"
+  ],
+  "53": [
+    "HUD_HUE_33",
+    "Reforço Resistência a Raio (G)"
+  ],
+  "54": [
+    "HUD_HUE_33_W",
+    "Reforço Resistência a Raio (XG)"
+  ],
+  "55": [
+    "HUD_HUE_34",
+    "Reforço Resistência a Gelo (P)"
+  ],
+  "56": [
+    "HUD_HUE_35",
+    "Reforço Resistência a Gelo (G)"
+  ],
+  "57": [
+    "HUD_HUE_35_W",
+    "Reforço Resistência a Gelo (XG)"
+  ],
+  "58": [
+    "HUD_HUE_36",
+    "Reforço Resistência Dragão (P)"
+  ],
+  "59": [
+    "HUD_HUE_37",
+    "Reforço Resistência Dragão (G)"
+  ],
+  "60": [
+    "HUD_HUE_37_W",
+    "Reforço Resistência Dragão (XG)"
+  ],
+  "61": [
+    "HUD_HUE_38",
+    "Reforço de Ataque Elemental"
+  ],
+  "62": [
+    "HUD_HUE_38_S",
+    "Reforço de Ataque Elemental (P)"
+  ],
+  "63": [
+    "HUD_HUE_38_W",
+    "Reforço de Ataque Elemental (G)"
+  ],
+  "64": [
+    "HUD_HUE_39",
+    "Ondas Sônicas"
+  ],
+  "65": [
+    "HUD_HUE_40",
+    "Todos Efeitos de Melodia Est."
+  ],
+  "66": [
+    "HUD_HUE_41",
+    "Empurrões Negados"
+  ],
+  "67": [
+    "HUD_HUE_42",
+    "Mais Ataque e Defesa (P)"
+  ],
+  "68": [
+    "HUD_HUE_42_S",
+    "Mais Ataque e Defesa (P)"
+  ],
+  "69": [
+    "HUD_HUE_42_W",
+    "Mais Ataque (G)/Defesa (G)"
+  ],
+  "70": [
+    "HUD_HUE_43",
+    "Mais Afinidade/Reg. Vida (P)"
+  ],
+  "71": [
+    "HUD_HUE_43_S",
+    "Mais Afinidade (P)/Reg. de Vida (P)"
+  ],
+  "72": [
+    "HUD_HUE_43_W",
+    "Mais Afinidade (G)/Reg. de Vida (P)"
+  ],
+  "73": [
+    "HUD_HUE_44",
+    "Status Anormais de Ataque Aum."
+  ],
+  "74": [
+    "HUD_HUE_44_S",
+    "Mais Status Anormais de Ataque (P)"
+  ],
+  "75": [
+    "HUD_HUE_44_W",
+    "Mais Status Anormais de Ataque (G)"
+  ],
+  "76": [
+    "HUD_HUE_45",
+    "Todo Efeito Negativo Negado"
+  ],
+  "77": [
+    "HUD_HUE_45_W",
+    "Negação de Efeito Negativo Estendida"
+  ],
+  "78": [
+    "HUD_HUE_46",
+    "Mais Resistência a Flagelo"
+  ],
+  "79": [
+    "HUD_HUE_46_S",
+    "Mais Resistência a Flagelo (P)"
+  ],
+  "80": [
+    "HUD_HUE_46_W",
+    "Mais Resistência a Flagelo (G)"
+  ],
+  "81": [
+    "HUD_HUE_47",
+    "Flagelos Negados"
+  ],
+  "82": [
+    "HUD_HUE_47_W",
+    "Negação de Flagelo Estendida"
+  ],
+  "83": [
+    "HUD_HUE_48",
+    "Tampões (S)/Pr. de Vento Neg."
+  ],
+  "84": [
+    "HUD_HUE_48_S",
+    "Tampões (S) / Pressão de Vento Negada"
+  ],
+  "85": [
+    "HUD_HUE_48_W",
+    "Tampões (S) / Pr. de Vento Negada Est."
+  ],
+  "86": [
+    "HUD_HUE_49",
+    "Regeneração de Vida (M)"
+  ],
+  "87": [
+    "HUD_HUE_23_W",
+    "Tampões (P) Estendidos"
+  ],
+  "88": [
+    "HUD_HUE_07_W",
+    "Pressão de Vento Negação Est."
+  ],
+  "89": [
+    "HUD_HUE_41_W",
+    "Negação de Empurrão Estendida"
+  ],
+  "90": [
+    "HUD_HUE_50",
+    "Onda de Eco de Impacto"
+  ],
+  "91": [
+    "HUD_HUE_51",
+    "Onda de Eco \"Dragão\""
+  ],
+  "92": [
+    "HUD_HUE_52",
+    "Aumento Vigor Máximo + Recuperação"
+  ],
+  "93": [
+    "HUD_HUE_53",
+    "Regeneração de Vida Estendida"
+  ],
+  "94": [
+    "HUD_HUE_54",
+    "Ref. Velocid. + Mais Tempo Esquiva"
+  ],
+  "95": [
+    "HUD_HUE_55",
+    "Mais Eficácia Elemental"
+  ],
+  "96": [
+    "HUD_HUE_56",
+    "Mais Tempo de Esquiva"
+  ],
+  "97": [
+    "HUD_HUE_21_G",
+    "Res. Muco/Água/Neve Prof."
+  ],
+  "98": [
+    "HUD_HUE_21_W_G",
+    "Res. Muco/Água/Neve Prof. Estend."
+  ]
+}

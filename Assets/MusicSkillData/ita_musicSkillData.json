@@ -1,0 +1,398 @@
+{
+  "0": [
+    "HUD_HUE_00",
+    "Automiglioramento"
+  ],
+  "1": [
+    "HUD_HUE_00_S",
+    "Aumenta velocità movimenti"
+  ],
+  "2": [
+    "HUD_HUE_00_W",
+    "Aumenta attacco / Annulla respinta attacchi"
+  ],
+  "3": [
+    "HUD_HUE_01",
+    "Aumenta attacco (S)"
+  ],
+  "4": [
+    "HUD_HUE_02",
+    "Aumenta attacco (L)"
+  ],
+  "5": [
+    "HUD_HUE_02_W",
+    "Aumenta attacco (XL)"
+  ],
+  "6": [
+    "HUD_HUE_03",
+    "Aumenta salute (S)"
+  ],
+  "7": [
+    "HUD_HUE_04",
+    "Aumenta salute (L)"
+  ],
+  "8": [
+    "HUD_HUE_04_W",
+    "Aumenta salute (estensione)"
+  ],
+  "9": [
+    "HUD_HUE_05",
+    "Riduce consumo resistenza (S)"
+  ],
+  "10": [
+    "HUD_HUE_06",
+    "Riduce consumo resistenza (L)"
+  ],
+  "11": [
+    "HUD_HUE_06_W",
+    "Riduce consumo resistenza (estensione)"
+  ],
+  "12": [
+    "HUD_HUE_07",
+    "Annulla pressione vento"
+  ],
+  "13": [
+    "HUD_HUE_08",
+    "Annulla pressione vento totale"
+  ],
+  "14": [
+    "HUD_HUE_08_W",
+    "Annulla pressione vento totale (estensione)"
+  ],
+  "15": [
+    "HUD_HUE_09",
+    "Aumenta DIF Fisica (S)"
+  ],
+  "16": [
+    "HUD_HUE_10",
+    "Aumenta DIF Fisica (L)"
+  ],
+  "17": [
+    "HUD_HUE_10_W",
+    "Aumenta DIF Fisica (XL)"
+  ],
+  "18": [
+    "HUD_HUE_11",
+    "Riduzione consumo strumenti (S)"
+  ],
+  "19": [
+    "HUD_HUE_12",
+    "Riduzione consumo strumenti (L)"
+  ],
+  "20": [
+    "HUD_HUE_12_W",
+    "Riduce consumo strumenti (estensione)"
+  ],
+  "21": [
+    "HUD_HUE_13",
+    "Recupero salute (S)"
+  ],
+  "22": [
+    "HUD_HUE_14",
+    "Recupero salute (L)"
+  ],
+  "23": [
+    "HUD_HUE_15",
+    "Recupero salute (S) + Resistenza veleno"
+  ],
+  "24": [
+    "HUD_HUE_16",
+    "Recupero salute (M) + Resistenza veleno"
+  ],
+  "25": [
+    "HUD_HUE_17",
+    "Velocità di recupero (S)"
+  ],
+  "26": [
+    "HUD_HUE_18",
+    "Velocità di recupero (L)"
+  ],
+  "27": [
+    "HUD_HUE_18_W",
+    "Velocità di recupero (estensione)"
+  ],
+  "28": [
+    "HUD_HUE_19",
+    "Protezione divina"
+  ],
+  "29": [
+    "HUD_HUE_19_W",
+    "Protezione divina (estensione)"
+  ],
+  "30": [
+    "HUD_HUE_20",
+    "Potenzia insetti guida"
+  ],
+  "31": [
+    "HUD_HUE_20_S",
+    "Livello insetti guida +1"
+  ],
+  "32": [
+    "HUD_HUE_20_W",
+    "Livello insetti guida +1 (estensione)"
+  ],
+  "33": [
+    "HUD_HUE_21",
+    "Resistenza melma"
+  ],
+  "34": [
+    "HUD_HUE_21_W",
+    "Resistenza melma (estensione)"
+  ],
+  "35": [
+    "HUD_HUE_22",
+    "Annulla danni ambientali"
+  ],
+  "36": [
+    "HUD_HUE_22_W",
+    "Annulla danni ambientali (estensione)"
+  ],
+  "37": [
+    "HUD_HUE_23",
+    "Protezione udito (S)"
+  ],
+  "38": [
+    "HUD_HUE_24",
+    "Protezione udito (L)"
+  ],
+  "39": [
+    "HUD_HUE_24_W",
+    "Protezione udito (L) (estensione)"
+  ],
+  "40": [
+    "HUD_HUE_25",
+    "Annulla stordimento"
+  ],
+  "41": [
+    "HUD_HUE_25_W",
+    "Annulla stordimento (estensione)"
+  ],
+  "42": [
+    "HUD_HUE_26",
+    "Annulla paralisi"
+  ],
+  "43": [
+    "HUD_HUE_26_W",
+    "Annulla paralisi (estensione)"
+  ],
+  "44": [
+    "HUD_HUE_27",
+    "Annulla sisma"
+  ],
+  "45": [
+    "HUD_HUE_27_W",
+    "Annulla sisma (estensione)"
+  ],
+  "46": [
+    "HUD_HUE_28",
+    "Aumenta DIF Fuoco (S)"
+  ],
+  "47": [
+    "HUD_HUE_29",
+    "Aumenta DIF Fuoco (L)"
+  ],
+  "48": [
+    "HUD_HUE_29_W",
+    "Aumenta DIF Fuoco (XL)"
+  ],
+  "49": [
+    "HUD_HUE_30",
+    "Aumenta DIF Acqua (S)"
+  ],
+  "50": [
+    "HUD_HUE_31",
+    "Aumenta DIF Acqua (L)"
+  ],
+  "51": [
+    "HUD_HUE_31_W",
+    "Aumenta DIF Acqua (XL)"
+  ],
+  "52": [
+    "HUD_HUE_32",
+    "Aumenta DIF Tuono (S)"
+  ],
+  "53": [
+    "HUD_HUE_33",
+    "Aumenta DIF Tuono (L)"
+  ],
+  "54": [
+    "HUD_HUE_33_W",
+    "Aumenta DIF Tuono (XL)"
+  ],
+  "55": [
+    "HUD_HUE_34",
+    "Aumenta DIF Ghiaccio (S)"
+  ],
+  "56": [
+    "HUD_HUE_35",
+    "Aumenta DIF Ghiaccio (L)"
+  ],
+  "57": [
+    "HUD_HUE_35_W",
+    "Aumenta DIF Ghiaccio (XL)"
+  ],
+  "58": [
+    "HUD_HUE_36",
+    "Aumenta DIF Drago (S)"
+  ],
+  "59": [
+    "HUD_HUE_37",
+    "Aumenta DIF Drago (L)"
+  ],
+  "60": [
+    "HUD_HUE_37_W",
+    "Aumenta DIF Drago (XL)"
+  ],
+  "61": [
+    "HUD_HUE_38",
+    "Aumenta attacco elementale"
+  ],
+  "62": [
+    "HUD_HUE_38_S",
+    "Aumenta attacco elementale (S)"
+  ],
+  "63": [
+    "HUD_HUE_38_W",
+    "Aumenta attacco elementale (L)"
+  ],
+  "64": [
+    "HUD_HUE_39",
+    "Onde sonore"
+  ],
+  "65": [
+    "HUD_HUE_40",
+    "Estensione effetti melodie"
+  ],
+  "66": [
+    "HUD_HUE_41",
+    "Annulla respinta"
+  ],
+  "67": [
+    "HUD_HUE_42",
+    "Aumenta attacco e difesa (S)"
+  ],
+  "68": [
+    "HUD_HUE_42_S",
+    "Aumenta attacco e difesa (S)"
+  ],
+  "69": [
+    "HUD_HUE_42_W",
+    "Aumenta attacco (L) / difesa (L)"
+  ],
+  "70": [
+    "HUD_HUE_43",
+    "Aumenta affinità / Recupero salute (S)"
+  ],
+  "71": [
+    "HUD_HUE_43_S",
+    "Aumenta affinità (S) / Recupero salute (S)"
+  ],
+  "72": [
+    "HUD_HUE_43_W",
+    "Aumenta affinità (L) / Recupero salute (S)"
+  ],
+  "73": [
+    "HUD_HUE_44",
+    "Aumenta attacco stato"
+  ],
+  "74": [
+    "HUD_HUE_44_S",
+    "Aumenta attacco stato (S)"
+  ],
+  "75": [
+    "HUD_HUE_44_W",
+    "Aumenta attacco stato (L)"
+  ],
+  "76": [
+    "HUD_HUE_45",
+    "Annulla alterazioni di stato"
+  ],
+  "77": [
+    "HUD_HUE_45_W",
+    "Annulla alterazioni di stato (estensione)"
+  ],
+  "78": [
+    "HUD_HUE_46",
+    "Aumenta resistenza malus"
+  ],
+  "79": [
+    "HUD_HUE_46_S",
+    "Aumenta resistenza malus (S)"
+  ],
+  "80": [
+    "HUD_HUE_46_W",
+    "Aumenta resistenza malus (L)"
+  ],
+  "81": [
+    "HUD_HUE_47",
+    "Annulla malus"
+  ],
+  "82": [
+    "HUD_HUE_47_W",
+    "Annulla malus (estensione)"
+  ],
+  "83": [
+    "HUD_HUE_48",
+    "Protezione udito (S) / Annulla pressione vento"
+  ],
+  "84": [
+    "HUD_HUE_48_S",
+    "Protezione udito (S) / Annulla pressione vento"
+  ],
+  "85": [
+    "HUD_HUE_48_W",
+    "Protezione udito (S) / Annulla pressione vento"
+  ],
+  "86": [
+    "HUD_HUE_49",
+    "Recupero salute (M)"
+  ],
+  "87": [
+    "HUD_HUE_23_W",
+    "Protezione udito (S) (estensione)"
+  ],
+  "88": [
+    "HUD_HUE_07_W",
+    "Annulla pressione vento (estensione)"
+  ],
+  "89": [
+    "HUD_HUE_41_W",
+    "Annulla respinta (estensione)"
+  ],
+  "90": [
+    "HUD_HUE_50",
+    "Onda eco impatto"
+  ],
+  "91": [
+    "HUD_HUE_51",
+    "Onda eco \"drago”"
+  ],
+  "92": [
+    "HUD_HUE_52",
+    "Bonus resistenza massima + recupero"
+  ],
+  "93": [
+    "HUD_HUE_53",
+    "Recupero salute (estensione)"
+  ],
+  "94": [
+    "HUD_HUE_54",
+    "Bonus velocità + schivata"
+  ],
+  "95": [
+    "HUD_HUE_55",
+    "Bonus efficacia elementale"
+  ],
+  "96": [
+    "HUD_HUE_56",
+    "Bonus schivata"
+  ],
+  "97": [
+    "HUD_HUE_21_G",
+    "Resistenza melma/acqua/neve"
+  ],
+  "98": [
+    "HUD_HUE_21_W_G",
+    "Resistenza melma/acqua/neve (estensione)"
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "0": [
+    "HUD_HUE_00",
+    "Auto-amélioration"
+  ],
+  "1": [
+    "HUD_HUE_00_S",
+    "Vitesse de déplacement +"
+  ],
+  "2": [
+    "HUD_HUE_00_W",
+    "Annule déviation attaque / Bonus attaque"
+  ],
+  "3": [
+    "HUD_HUE_01",
+    "Bonus attaque (P)"
+  ],
+  "4": [
+    "HUD_HUE_02",
+    "Bonus attaque (G)"
+  ],
+  "5": [
+    "HUD_HUE_02_W",
+    "Bonus attaque (MAX)"
+  ],
+  "6": [
+    "HUD_HUE_03",
+    "Bonus vie (P)"
+  ],
+  "7": [
+    "HUD_HUE_04",
+    "Bonus vie (G)"
+  ],
+  "8": [
+    "HUD_HUE_04_W",
+    "Bonus vie : durée étendue"
+  ],
+  "9": [
+    "HUD_HUE_05",
+    "Endurance illimitée (P)"
+  ],
+  "10": [
+    "HUD_HUE_06",
+    "Endurance illimitée (G)"
+  ],
+  "11": [
+    "HUD_HUE_06_W",
+    "Endurance illimitée : durée étendue"
+  ],
+  "12": [
+    "HUD_HUE_07",
+    "Anti-bourrasque"
+  ],
+  "13": [
+    "HUD_HUE_08",
+    "Anti-bourrasque total"
+  ],
+  "14": [
+    "HUD_HUE_08_W",
+    "Anti-bourrasque total : durée étendue"
+  ],
+  "15": [
+    "HUD_HUE_09",
+    "Bonus défense (P)"
+  ],
+  "16": [
+    "HUD_HUE_10",
+    "Bonus défense (G)"
+  ],
+  "17": [
+    "HUD_HUE_10_W",
+    "Bonus défense (MAX)"
+  ],
+  "18": [
+    "HUD_HUE_11",
+    "Durabilité outils (P)"
+  ],
+  "19": [
+    "HUD_HUE_12",
+    "Durabilité outils (G)"
+  ],
+  "20": [
+    "HUD_HUE_12_W",
+    "Durabilité outils : durée étendue"
+  ],
+  "21": [
+    "HUD_HUE_13",
+    "Récupération vie (P)"
+  ],
+  "22": [
+    "HUD_HUE_14",
+    "Récupération vie (G)"
+  ],
+  "23": [
+    "HUD_HUE_15",
+    "Récup. vie (P) / Antidote"
+  ],
+  "24": [
+    "HUD_HUE_16",
+    "Récup. vie (M) / Antidote"
+  ],
+  "25": [
+    "HUD_HUE_17",
+    "Vitesse récupération (P)"
+  ],
+  "26": [
+    "HUD_HUE_18",
+    "Vitesse récupération (G)"
+  ],
+  "27": [
+    "HUD_HUE_18_W",
+    "Vitesse récupération : durée étendue"
+  ],
+  "28": [
+    "HUD_HUE_19",
+    "Protection divine"
+  ],
+  "29": [
+    "HUD_HUE_19_W",
+    "Protection divine : durée étendue"
+  ],
+  "30": [
+    "HUD_HUE_20",
+    "Bonus naviciole"
+  ],
+  "31": [
+    "HUD_HUE_20_S",
+    "Niveau naviciole +1"
+  ],
+  "32": [
+    "HUD_HUE_20_W",
+    "Niveau naviciole +1 : durée étendue"
+  ],
+  "33": [
+    "HUD_HUE_21",
+    "Immunité à la boue"
+  ],
+  "34": [
+    "HUD_HUE_21_W",
+    "Immunité à la boue : durée étendue"
+  ],
+  "35": [
+    "HUD_HUE_22",
+    "Dégâts environ. annulés"
+  ],
+  "36": [
+    "HUD_HUE_22_W",
+    "Dégâts environ. annulés : durée étendue"
+  ],
+  "37": [
+    "HUD_HUE_23",
+    "Protection ouïe (P)"
+  ],
+  "38": [
+    "HUD_HUE_24",
+    "Protection ouïe (G)"
+  ],
+  "39": [
+    "HUD_HUE_24_W",
+    "Protection ouïe (G) : durée étendue"
+  ],
+  "40": [
+    "HUD_HUE_25",
+    "Anti-étourdissement"
+  ],
+  "41": [
+    "HUD_HUE_25_W",
+    "Anti-étourdissement : durée étendue"
+  ],
+  "42": [
+    "HUD_HUE_26",
+    "Anti-paralysie"
+  ],
+  "43": [
+    "HUD_HUE_26_W",
+    "Anti-paralysie : durée étendue"
+  ],
+  "44": [
+    "HUD_HUE_27",
+    "Anti-séisme"
+  ],
+  "45": [
+    "HUD_HUE_27_W",
+    "Anti-séisme : durée étendue"
+  ],
+  "46": [
+    "HUD_HUE_28",
+    "Bonus résistance feu (P)"
+  ],
+  "47": [
+    "HUD_HUE_29",
+    "Bonus résistance feu (G)"
+  ],
+  "48": [
+    "HUD_HUE_29_W",
+    "Bonus résistance feu (MAX)"
+  ],
+  "49": [
+    "HUD_HUE_30",
+    "Bonus résistance eau (P)"
+  ],
+  "50": [
+    "HUD_HUE_31",
+    "Bonus résistance eau (G)"
+  ],
+  "51": [
+    "HUD_HUE_31_W",
+    "Bonus résistance eau (MAX)"
+  ],
+  "52": [
+    "HUD_HUE_32",
+    "Bonus résistance foudre (P)"
+  ],
+  "53": [
+    "HUD_HUE_33",
+    "Bonus résistance foudre (G)"
+  ],
+  "54": [
+    "HUD_HUE_33_W",
+    "Bonus résistance foudre (MAX)"
+  ],
+  "55": [
+    "HUD_HUE_34",
+    "Bonus résistance glace (P)"
+  ],
+  "56": [
+    "HUD_HUE_35",
+    "Bonus résistance glace (G)"
+  ],
+  "57": [
+    "HUD_HUE_35_W",
+    "Bonus résistance glace (MAX)"
+  ],
+  "58": [
+    "HUD_HUE_36",
+    "Bonus résistance dragon (P)"
+  ],
+  "59": [
+    "HUD_HUE_37",
+    "Bonus résistance dragon (G)"
+  ],
+  "60": [
+    "HUD_HUE_37_W",
+    "Bonus résistance dragon (MAX)"
+  ],
+  "61": [
+    "HUD_HUE_38",
+    "Bonus attaque élémentaire"
+  ],
+  "62": [
+    "HUD_HUE_38_S",
+    "Bonus attaque élémentaire (P)"
+  ],
+  "63": [
+    "HUD_HUE_38_W",
+    "Bonus attaque élémentaire (G)"
+  ],
+  "64": [
+    "HUD_HUE_39",
+    "Ondes soniques"
+  ],
+  "65": [
+    "HUD_HUE_40",
+    "Bonus durée des mélodies"
+  ],
+  "66": [
+    "HUD_HUE_41",
+    "Anti-chutes"
+  ],
+  "67": [
+    "HUD_HUE_42",
+    "Bonus attaque + défense (P)"
+  ],
+  "68": [
+    "HUD_HUE_42_S",
+    "Bonus attaque + défense (P)"
+  ],
+  "69": [
+    "HUD_HUE_42_W",
+    "Bonus attaque + défense (G)"
+  ],
+  "70": [
+    "HUD_HUE_43",
+    "Bonus affinité / Récup. vie (P)"
+  ],
+  "71": [
+    "HUD_HUE_43_S",
+    "Bonus affinité (P) / Récup. vie (P)"
+  ],
+  "72": [
+    "HUD_HUE_43_W",
+    "Bonus affinité (G) / Récup. vie (P)"
+  ],
+  "73": [
+    "HUD_HUE_44",
+    "Bonus afflictions"
+  ],
+  "74": [
+    "HUD_HUE_44_S",
+    "Bonus afflictions (P)"
+  ],
+  "75": [
+    "HUD_HUE_44_W",
+    "Bonus afflictions (G)"
+  ],
+  "76": [
+    "HUD_HUE_45",
+    "Anti-afflictions"
+  ],
+  "77": [
+    "HUD_HUE_45_W",
+    "Anti-afflictions : durée étendue"
+  ],
+  "78": [
+    "HUD_HUE_46",
+    "Bonus résistance fléaux"
+  ],
+  "79": [
+    "HUD_HUE_46_S",
+    "Bonus résistance fléaux (P)"
+  ],
+  "80": [
+    "HUD_HUE_46_W",
+    "Bonus résistance fléaux (G)"
+  ],
+  "81": [
+    "HUD_HUE_47",
+    "Anti-fléau"
+  ],
+  "82": [
+    "HUD_HUE_47_W",
+    "Anti-fléau : durée étendue"
+  ],
+  "83": [
+    "HUD_HUE_48",
+    "Protection ouïe (P) / Anti-bourrasque"
+  ],
+  "84": [
+    "HUD_HUE_48_S",
+    "Protection ouïe (P) / Anti-bourrasque"
+  ],
+  "85": [
+    "HUD_HUE_48_W",
+    "Protection ouïe (P) / Anti-bourrasque : durée étendue"
+  ],
+  "86": [
+    "HUD_HUE_49",
+    "Récupération vie (M)"
+  ],
+  "87": [
+    "HUD_HUE_23_W",
+    "Protection ouïe (P) : durée étendue"
+  ],
+  "88": [
+    "HUD_HUE_07_W",
+    "Anti-bourrasque : durée étendue"
+  ],
+  "89": [
+    "HUD_HUE_41_W",
+    "Anti-chutes : durée étendue"
+  ],
+  "90": [
+    "HUD_HUE_50",
+    "Onde d'écho à impact"
+  ],
+  "91": [
+    "HUD_HUE_51",
+    "Onde d'écho \"Dragon\""
+  ],
+  "92": [
+    "HUD_HUE_52",
+    "Bonus : endurance max / récupération vie"
+  ],
+  "93": [
+    "HUD_HUE_53",
+    "Récupération vie : durée étendue"
+  ],
+  "94": [
+    "HUD_HUE_54",
+    "Bonus : vitesse / invulnérabilité"
+  ],
+  "95": [
+    "HUD_HUE_55",
+    "Bonus : efficacité élémentaire"
+  ],
+  "96": [
+    "HUD_HUE_56",
+    "Bonus : invulnérabilité"
+  ],
+  "97": [
+    "HUD_HUE_21_G",
+    "Immunité boue/eau/neige"
+  ],
+  "98": [
+    "HUD_HUE_21_W_G",
+    "Immunité boue/eau/neige : durée étendue"
+  ]
+}

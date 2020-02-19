@@ -21,7 +21,7 @@ namespace MHW_Name_Extractor {
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\rod_insect_{lang}.gmd", $@"{Global.ASSETS_ROOT}\InsectData\{lang}_insectData.json"); // .rod_inse
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\l_mission_{lang}.gmd", $@"{Global.ASSETS_ROOT}\BountyData\{lang}_bountyData.json"); // .odr
                 // Not sure how it connects to skill id.
-                //GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\music_skill_{lang}.gmd", $@"{Global.ASSETS_ROOT}\MusicSkillData\{lang}_musicSkillData.json");
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\music_skill_{lang}.gmd", $@"{Global.ASSETS_ROOT}\MusicSkillData\{lang}_musicSkillData.json", true);
 
                 foreach (var weapon in Global.WEAPONS) {
                     GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\{weapon}_{lang}.gmd", $@"{Global.ASSETS_ROOT}\WeaponData\{lang}_{weapon}.json");
@@ -29,8 +29,14 @@ namespace MHW_Name_Extractor {
             }
         }
 
-        private static void GetAndWriteGmdStringsAsJson(string targetFile, string destFile) {
-            var gmdStrings = GetGmdStrings(targetFile);
+        private static void GetAndWriteGmdStringsAsJson(string targetFile, string destFile, bool includeKeys = false) {
+            object gmdStrings;
+            if (includeKeys) {
+                gmdStrings = GetGmdStringsWithKeys(targetFile);
+            } else {
+                gmdStrings = GetGmdStrings(targetFile);
+            }
+
             var dir = Path.GetDirectoryName(destFile);
             if (!Directory.Exists(dir)) {
                 Directory.CreateDirectory(dir);
@@ -76,6 +82,52 @@ namespace MHW_Name_Extractor {
                                               .Replace("<ICON ALPHA>", " α")
                                               .Replace("<ICON BETA>", " β")
                                               .Replace("<ICON GAMMA>", " γ"));
+                }
+
+                return dictionary;
+            }
+        }
+
+        private static Dictionary<ulong, List<string>> GetGmdStringsWithKeys(string targetFile) {
+            using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
+                var len = dat.BaseStream.Length;
+
+                // Header
+                dat.BaseStream.Seek(20, SeekOrigin.Begin);
+                var keyCount = dat.ReadInt32();
+                var stringCount = dat.ReadInt32();
+                var keyBlockSize = dat.ReadInt32();
+                var stringBlockSize = dat.ReadInt32();
+                var fileName = Encoding.UTF8.GetString(dat.ReadBytes(dat.ReadInt32()));
+
+                dat.BaseStream.Seek(1, SeekOrigin.Current);
+
+                var gmdInfoEntrySize = Marshal.SizeOf(typeof(GmdInfoEntry));
+                var gmdInfoEntries = new List<GmdInfoEntry>();
+                for (var i = 0; i < keyCount; i++) {
+                    gmdInfoEntries.Add(dat.ReadBytes(gmdInfoEntrySize).GetData<GmdInfoEntry>());
+                }
+
+                var buckets = new ulong[256];
+                for (var i = 0; i < buckets.Length; i++) {
+                    buckets[i] = dat.ReadUInt64();
+                }
+
+                var keyBlocks = Encoding.UTF8.GetString(dat.ReadBytes(keyBlockSize)).Split('\0');
+                Array.Resize(ref keyBlocks, keyCount); // Last null-term becomes an extra entry.
+
+                var stringBlocks = Encoding.UTF8.GetString(dat.ReadBytes(stringBlockSize)).Split('\0');
+                Array.Resize(ref stringBlocks, stringCount); // Last null-term becomes an extra entry.
+
+                var dictionary = new Dictionary<ulong, List<string>>();
+                for (long i = 0; i < stringBlocks.LongLength; i++) {
+                    dictionary.Add((ulong) i, new List<string> {
+                        keyBlocks[i],
+                        stringBlocks[i]
+                            .Replace("<ICON ALPHA>", " α")
+                            .Replace("<ICON BETA>", " β")
+                            .Replace("<ICON GAMMA>", " γ")
+                    });
                 }
 
                 return dictionary;

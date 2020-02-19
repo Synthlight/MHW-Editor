@@ -14,7 +14,7 @@ namespace MHW_Editor.Skills {
         [SortOrder(Song_Id_Raw_sortIndex)]
         [DisplayName("Song/Id")]
         [CustomSorter(typeof(MusicSkillSorter), true)]
-        public IdNamePair Song_Id => DataHelper.songData.TryGet((ushort) Song_Id_Raw, IdNamePair.Unknown((ushort) Song_Id_Raw));
+        public IdNamePair Song_Id => DataHelper.songData[MainWindow.locale].TryGet((ushort) Song_Id_Raw, IdNamePair.Unknown((ushort) Song_Id_Raw));
     }
 
     public class MusicSkillSorter : ICustomSorterWithPropertyName {

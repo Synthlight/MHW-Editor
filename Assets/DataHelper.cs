@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 using MHW_Editor.Models;
 using MHW_Template;
 using Newtonsoft.Json;
@@ -13,16 +14,18 @@ namespace MHW_Editor.Assets {
         public static readonly Dictionary<string, Dictionary<string, Dictionary<uint, string>>> weaponData = new Dictionary<string, Dictionary<string, Dictionary<uint, string>>>();
         public static readonly Dictionary<string, Dictionary<ushort, string>> otomoArmorData = new Dictionary<string, Dictionary<ushort, string>>();
         public static readonly Dictionary<string, Dictionary<ushort, string>> otomoWeaponData = new Dictionary<string, Dictionary<ushort, string>>();
-        public static readonly Dictionary<ushort, IdNamePair> songData = new Dictionary<ushort, IdNamePair>();
+        public static readonly Dictionary<string, Dictionary<ushort, IdNamePair>> songData = new Dictionary<string, Dictionary<ushort, IdNamePair>>();
         public static readonly Dictionary<string, Dictionary<byte, string>> insectData = new Dictionary<string, Dictionary<byte, string>>();
         public static readonly Dictionary<string, Dictionary<uint, string>> bountyData = new Dictionary<string, Dictionary<uint, string>>();
         public static readonly Dictionary<string, Dictionary<uint, string>> bountyDataDescriptions = new Dictionary<string, Dictionary<uint, string>>();
+
+        private static readonly Regex songMatch = new Regex("^HUD_HUE_(\\d+)$");
 
         static DataHelper() {
             foreach (var lang in Global.LANGUAGES) {
                 ParseItemData(lang);
                 ParseSkillData(lang);
-                ParseSongData();
+                ParseSongData(lang);
                 ParseBountyData(lang);
 
                 armorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_armorData"));
@@ -70,11 +73,18 @@ namespace MHW_Editor.Assets {
             }
         }
 
-        private static void ParseSongData() {
-            var rawSongData = LoadDict<ushort, string>(GetAsset("songData"));
+        private static void ParseSongData(string lang) {
+            var rawSongData = LoadDict<ushort, List<string>>(GetAsset($"{lang}_musicSkillData"));
+
+            songData[lang] = new Dictionary<ushort, IdNamePair>();
 
             foreach (var pair in rawSongData) {
-                songData[pair.Key] = new IdNamePair(pair.Key, pair.Value);
+                var match = songMatch.Match(pair.Value[0]);
+                if (!match.Success) continue;
+                var key = ushort.Parse(match.Captures[0].Value.Replace("HUD_HUE_", ""));
+                if (key >= 17) key++;
+
+                songData[lang][key] = new IdNamePair(key, pair.Value[1]);
             }
         }
 

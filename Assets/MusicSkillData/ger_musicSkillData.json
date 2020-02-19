@@ -1,0 +1,398 @@
+{
+  "0": [
+    "HUD_HUE_00",
+    "Selbstverbesserung"
+  ],
+  "1": [
+    "HUD_HUE_00_S",
+    "Bewegungsgeschwindigkeit hoch"
+  ],
+  "2": [
+    "HUD_HUE_00_W",
+    "Angriff hoch + Angriffsablenkungsschutz"
+  ],
+  "3": [
+    "HUD_HUE_01",
+    "Angriff hoch (S)"
+  ],
+  "4": [
+    "HUD_HUE_02",
+    "Angriff hoch (L)"
+  ],
+  "5": [
+    "HUD_HUE_02_W",
+    "Angriff hoch (XL)"
+  ],
+  "6": [
+    "HUD_HUE_03",
+    "Gesundheitsboost (S)"
+  ],
+  "7": [
+    "HUD_HUE_04",
+    "Gesundheitsboost (L)"
+  ],
+  "8": [
+    "HUD_HUE_04_W",
+    "Gesundheitsboost Zeitbonus"
+  ],
+  "9": [
+    "HUD_HUE_05",
+    "Ausdauernutzung reduziert (S)"
+  ],
+  "10": [
+    "HUD_HUE_06",
+    "Ausdauernutzung reduziert (L)"
+  ],
+  "11": [
+    "HUD_HUE_06_W",
+    "Ausdauernutzung reduziert Zeitbonus"
+  ],
+  "12": [
+    "HUD_HUE_07",
+    "Winddruck negiert"
+  ],
+  "13": [
+    "HUD_HUE_08",
+    "Jeden Winddruck negiert"
+  ],
+  "14": [
+    "HUD_HUE_08_W",
+    "Jeden Winddruck negiert Zeitbonus"
+  ],
+  "15": [
+    "HUD_HUE_09",
+    "Verteidigung hoch (S)"
+  ],
+  "16": [
+    "HUD_HUE_10",
+    "Verteidigung hoch (L)"
+  ],
+  "17": [
+    "HUD_HUE_10_W",
+    "Verteidigung hoch (XL)"
+  ],
+  "18": [
+    "HUD_HUE_11",
+    "Werkzeugverbrauch reduziert (S)"
+  ],
+  "19": [
+    "HUD_HUE_12",
+    "Werkzeugverbrauch reduziert (L)"
+  ],
+  "20": [
+    "HUD_HUE_12_W",
+    "Werkzeugverbrauch reduziert Zeitbonus"
+  ],
+  "21": [
+    "HUD_HUE_13",
+    "Gesundheitserholung (S)"
+  ],
+  "22": [
+    "HUD_HUE_14",
+    "Gesundheitserholung (L)"
+  ],
+  "23": [
+    "HUD_HUE_15",
+    "Gesundheitserholung (S) + Gegengift"
+  ],
+  "24": [
+    "HUD_HUE_16",
+    "Gesundheitserholung (M) + Gegengift"
+  ],
+  "25": [
+    "HUD_HUE_17",
+    "Erholungsgeschwindigkeit (S)"
+  ],
+  "26": [
+    "HUD_HUE_18",
+    "Erholungsgeschwindigkeit (L)"
+  ],
+  "27": [
+    "HUD_HUE_18_W",
+    "Erholungsgeschwindigkeit Zeitbonus"
+  ],
+  "28": [
+    "HUD_HUE_19",
+    "Göttlicher Schutz"
+  ],
+  "29": [
+    "HUD_HUE_19_W",
+    "Göttlicher Schutz Zeitbonus"
+  ],
+  "30": [
+    "HUD_HUE_20",
+    "Spähkäfer-Kraft hoch"
+  ],
+  "31": [
+    "HUD_HUE_20_S",
+    "Spähkäfer-Stufe +1"
+  ],
+  "32": [
+    "HUD_HUE_20_W",
+    "Spähkäfer-Stufe +1 Zeitbonus"
+  ],
+  "33": [
+    "HUD_HUE_21",
+    "Schlamm-Widerstand"
+  ],
+  "34": [
+    "HUD_HUE_21_W",
+    "Schlamm-Widerstand Zeitbonus"
+  ],
+  "35": [
+    "HUD_HUE_22",
+    "Umgebungsschaden negiert"
+  ],
+  "36": [
+    "HUD_HUE_22_W",
+    "Umgebungsschaden negiert Zeitbonus"
+  ],
+  "37": [
+    "HUD_HUE_23",
+    "Ohrstöpsel (S)"
+  ],
+  "38": [
+    "HUD_HUE_24",
+    "Ohrstöpsel (L)"
+  ],
+  "39": [
+    "HUD_HUE_24_W",
+    "Ohrstöpsel (L) Zeitbonus"
+  ],
+  "40": [
+    "HUD_HUE_25",
+    "Betäuben negiert"
+  ],
+  "41": [
+    "HUD_HUE_25_W",
+    "Betäuben negiert Zeitbonus"
+  ],
+  "42": [
+    "HUD_HUE_26",
+    "Lähmung negiert"
+  ],
+  "43": [
+    "HUD_HUE_26_W",
+    "Lähmung negiert Zeitbonus"
+  ],
+  "44": [
+    "HUD_HUE_27",
+    "Erschütterungen negiert"
+  ],
+  "45": [
+    "HUD_HUE_27_W",
+    "Erschütterungen negiert Zeitbonus"
+  ],
+  "46": [
+    "HUD_HUE_28",
+    "Feuerwiderstand-Boost (S)"
+  ],
+  "47": [
+    "HUD_HUE_29",
+    "Feuerwiderstand-Boost (L)"
+  ],
+  "48": [
+    "HUD_HUE_29_W",
+    "Feuerwiderstand-Boost (XL)"
+  ],
+  "49": [
+    "HUD_HUE_30",
+    "Wasserwiderstand-Boost (S)"
+  ],
+  "50": [
+    "HUD_HUE_31",
+    "Wasserwiderstand-Boost (L)"
+  ],
+  "51": [
+    "HUD_HUE_31_W",
+    "Wasserwiderstand-Boost (XL)"
+  ],
+  "52": [
+    "HUD_HUE_32",
+    "Donnerwiderstand-Boost (S)"
+  ],
+  "53": [
+    "HUD_HUE_33",
+    "Donnerwiderstand-Boost (L)"
+  ],
+  "54": [
+    "HUD_HUE_33_W",
+    "Donnerwiderstand-Boost (XL)"
+  ],
+  "55": [
+    "HUD_HUE_34",
+    "Eiswiderstand-Boost (S)"
+  ],
+  "56": [
+    "HUD_HUE_35",
+    "Eiswiderstand-Boost (L)"
+  ],
+  "57": [
+    "HUD_HUE_35_W",
+    "Eiswiderstand-Boost (XL)"
+  ],
+  "58": [
+    "HUD_HUE_36",
+    "Drachenwiderstand-Boost (S)"
+  ],
+  "59": [
+    "HUD_HUE_37",
+    "Drachenwiderstand-Boost (L)"
+  ],
+  "60": [
+    "HUD_HUE_37_W",
+    "Drachenwiderstand-Boost (XL)"
+  ],
+  "61": [
+    "HUD_HUE_38",
+    "Elementangriff-Boost"
+  ],
+  "62": [
+    "HUD_HUE_38_S",
+    "Elementangriff-Boost (S)"
+  ],
+  "63": [
+    "HUD_HUE_38_W",
+    "Elementangriff-Boost (L)"
+  ],
+  "64": [
+    "HUD_HUE_39",
+    "Schallwellen"
+  ],
+  "65": [
+    "HUD_HUE_40",
+    "Alle Medodie-Effekte Zeitbonus"
+  ],
+  "66": [
+    "HUD_HUE_41",
+    "Rückschläge negiert"
+  ],
+  "67": [
+    "HUD_HUE_42",
+    "Angriff und Verteidigung hoch (S)"
+  ],
+  "68": [
+    "HUD_HUE_42_S",
+    "Angriff und Verteidigung hoch (S)"
+  ],
+  "69": [
+    "HUD_HUE_42_W",
+    "Angriff hoch (L) / Verteidigung hoch (L)"
+  ],
+  "70": [
+    "HUD_HUE_43",
+    "Affinität hoch / Gesundheitserholung (S)"
+  ],
+  "71": [
+    "HUD_HUE_43_S",
+    "Affinität hoch (S) / Gesundheitserholung (S)"
+  ],
+  "72": [
+    "HUD_HUE_43_W",
+    "Affinität hoch (L) / Gesundheitserholung (S)"
+  ],
+  "73": [
+    "HUD_HUE_44",
+    "Anormaler Statusangriff verbessert"
+  ],
+  "74": [
+    "HUD_HUE_44_S",
+    "Anormaler Statusangriff hoch (S)"
+  ],
+  "75": [
+    "HUD_HUE_44_W",
+    "Anormaler Statusangriff hoch (L)"
+  ],
+  "76": [
+    "HUD_HUE_45",
+    "Alle anorm. Status negiert"
+  ],
+  "77": [
+    "HUD_HUE_45_W",
+    "Anorm. Status negiert Zeitbonus"
+  ],
+  "78": [
+    "HUD_HUE_46",
+    "Pestwiderstand hoch"
+  ],
+  "79": [
+    "HUD_HUE_46_S",
+    "Pestwiderstand hoch (S)"
+  ],
+  "80": [
+    "HUD_HUE_46_W",
+    "Pestwiderstand hoch (L)"
+  ],
+  "81": [
+    "HUD_HUE_47",
+    "Pest negiert"
+  ],
+  "82": [
+    "HUD_HUE_47_W",
+    "Pest negiert Zeitbonus"
+  ],
+  "83": [
+    "HUD_HUE_48",
+    "Ohrstöpsel (S) / Winddruck negiert"
+  ],
+  "84": [
+    "HUD_HUE_48_S",
+    "Ohrstöpsel (S) / Winddruck negiert"
+  ],
+  "85": [
+    "HUD_HUE_48_W",
+    "Ohrstöpsel (S) / Winddruck negiert Zeitbonus"
+  ],
+  "86": [
+    "HUD_HUE_49",
+    "Gesundheitserholung (M)"
+  ],
+  "87": [
+    "HUD_HUE_23_W",
+    "Ohrstöpsel (S) Zeitbonus"
+  ],
+  "88": [
+    "HUD_HUE_07_W",
+    "Winddruck negiert Zeitbonus"
+  ],
+  "89": [
+    "HUD_HUE_41_W",
+    "Rückschläge negiert Zeitbonus"
+  ],
+  "90": [
+    "HUD_HUE_50",
+    "Einschlagsecho-Welle"
+  ],
+  "91": [
+    "HUD_HUE_51",
+    "Echo-Welle \"Drachen\""
+  ],
+  "92": [
+    "HUD_HUE_52",
+    "Max. Ausdauer hoch + Erholung"
+  ],
+  "93": [
+    "HUD_HUE_53",
+    "Verbesserte Gesundheitserholung"
+  ],
+  "94": [
+    "HUD_HUE_54",
+    "Geschw-Boost + Unverwundbarkeit hoch"
+  ],
+  "95": [
+    "HUD_HUE_55",
+    "Elementeffektivität hoch"
+  ],
+  "96": [
+    "HUD_HUE_56",
+    "Unverwundbarkeit hoch"
+  ],
+  "97": [
+    "HUD_HUE_21_G",
+    "Schlamm/Wasser/Schnee-Widerstand"
+  ],
+  "98": [
+    "HUD_HUE_21_W_G",
+    "Schlamm/Wasser/Schnee-Widerstand-Zeitbonus"
+  ]
+}

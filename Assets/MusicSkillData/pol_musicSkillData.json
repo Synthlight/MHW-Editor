@@ -1,0 +1,398 @@
+{
+  "0": [
+    "HUD_HUE_00",
+    "Samodoskonalenie"
+  ],
+  "1": [
+    "HUD_HUE_00_S",
+    "Szybszy Ruch"
+  ],
+  "2": [
+    "HUD_HUE_00_W",
+    "Wzrost Ataku + Zapobieganie Odbijaniu Ataków"
+  ],
+  "3": [
+    "HUD_HUE_01",
+    "Wzrost Ataku (M)"
+  ],
+  "4": [
+    "HUD_HUE_02",
+    "Wzrost Ataku (D)"
+  ],
+  "5": [
+    "HUD_HUE_02_W",
+    "Wzrost Ataku (BD)"
+  ],
+  "6": [
+    "HUD_HUE_03",
+    "Wzmocnienie Zdrowia (M)"
+  ],
+  "7": [
+    "HUD_HUE_04",
+    "Wzmocnienie Zdrowia (D)"
+  ],
+  "8": [
+    "HUD_HUE_04_W",
+    "Przedłużone Wzmocnienie Zdrowia"
+  ],
+  "9": [
+    "HUD_HUE_05",
+    "Mniejsze Zużycie Wytrz. (M)"
+  ],
+  "10": [
+    "HUD_HUE_06",
+    "Mniejsze Zużycie Wytrz. (D)"
+  ],
+  "11": [
+    "HUD_HUE_06_W",
+    "Przedłużone Mniejsze Zużycie Wytrz."
+  ],
+  "12": [
+    "HUD_HUE_07",
+    "Neutralizacja Wiatru"
+  ],
+  "13": [
+    "HUD_HUE_08",
+    "Neutralizacja Wiatru"
+  ],
+  "14": [
+    "HUD_HUE_08_W",
+    "Długa Neutralizacja Wiatru"
+  ],
+  "15": [
+    "HUD_HUE_09",
+    "Wzrost Obrony (M)"
+  ],
+  "16": [
+    "HUD_HUE_10",
+    "Wzrost Obrony (D)"
+  ],
+  "17": [
+    "HUD_HUE_10_W",
+    "Wzrost Obrony (BD)"
+  ],
+  "18": [
+    "HUD_HUE_11",
+    "Mniejsze Zużycie Narzędzi (M)"
+  ],
+  "19": [
+    "HUD_HUE_12",
+    "Mniejsze Zużycie Narzędzi (D)"
+  ],
+  "20": [
+    "HUD_HUE_12_W",
+    "Przedłużone Mniejsze Zużycie Narzędzi"
+  ],
+  "21": [
+    "HUD_HUE_13",
+    "Regeneracja Zdrowia (M)"
+  ],
+  "22": [
+    "HUD_HUE_14",
+    "Regeneracja Zdrowia (D)"
+  ],
+  "23": [
+    "HUD_HUE_15",
+    "Reg. Zdrowia (M) + Antidotum"
+  ],
+  "24": [
+    "HUD_HUE_16",
+    "Reg. Zdrowia (D) + Antidotum"
+  ],
+  "25": [
+    "HUD_HUE_17",
+    "Szybkość Regeneracji (M)"
+  ],
+  "26": [
+    "HUD_HUE_18",
+    "Szybkość Regeneracji (D)"
+  ],
+  "27": [
+    "HUD_HUE_18_W",
+    "Przedłużona Szybkość Regeneracji"
+  ],
+  "28": [
+    "HUD_HUE_19",
+    "Boska Ochrona"
+  ],
+  "29": [
+    "HUD_HUE_19_W",
+    "Przedłużona Boska Ochrona"
+  ],
+  "30": [
+    "HUD_HUE_20",
+    "Mocniejszy Zwiad"
+  ],
+  "31": [
+    "HUD_HUE_20_S",
+    "Poziom Świetlików Zwiadowczych +1"
+  ],
+  "32": [
+    "HUD_HUE_20_W",
+    "Przedłużony Poz. Świetlików Zwiad. +1"
+  ],
+  "33": [
+    "HUD_HUE_21",
+    "Odporność na Wydzieliny"
+  ],
+  "34": [
+    "HUD_HUE_21_W",
+    "Przedłużona Odporność na Wydzieliny"
+  ],
+  "35": [
+    "HUD_HUE_22",
+    "Neutralizacja Środowiska"
+  ],
+  "36": [
+    "HUD_HUE_22_W",
+    "Przedłużona Neutralizacja Środowiska"
+  ],
+  "37": [
+    "HUD_HUE_23",
+    "Zatyczki do Uszu (M)"
+  ],
+  "38": [
+    "HUD_HUE_24",
+    "Zatyczki do Uszu (D)"
+  ],
+  "39": [
+    "HUD_HUE_24_W",
+    "Trwające Zatyczki do Uszu (D)"
+  ],
+  "40": [
+    "HUD_HUE_25",
+    "Neutralizacja Ogłuszenia"
+  ],
+  "41": [
+    "HUD_HUE_25_W",
+    "Przedłużona Neutralizacja Ogłuszenia"
+  ],
+  "42": [
+    "HUD_HUE_26",
+    "Neutralizacja Paraliżu"
+  ],
+  "43": [
+    "HUD_HUE_26_W",
+    "Przedłużona Neutralizacja Paraliżu"
+  ],
+  "44": [
+    "HUD_HUE_27",
+    "Neutralizacja Wstrząsów"
+  ],
+  "45": [
+    "HUD_HUE_27_W",
+    "Przedłużona Neutralizacja Wstrząsów"
+  ],
+  "46": [
+    "HUD_HUE_28",
+    "Wzmocnienie Odp. na Ogień (M)"
+  ],
+  "47": [
+    "HUD_HUE_29",
+    "Wzmocnienie Odp. na Ogień (D)"
+  ],
+  "48": [
+    "HUD_HUE_29_W",
+    "Wzmocnienie Odp. na Ogień (BD)"
+  ],
+  "49": [
+    "HUD_HUE_30",
+    "Wzmocnienie Odp. na Wodę (M)"
+  ],
+  "50": [
+    "HUD_HUE_31",
+    "Wzmocnienie Odp. na Wodę (D)"
+  ],
+  "51": [
+    "HUD_HUE_31_W",
+    "Wzmocnienie Odp. na Wodę (BD)"
+  ],
+  "52": [
+    "HUD_HUE_32",
+    "Wzmoc. Odp. na Pioruny (M)"
+  ],
+  "53": [
+    "HUD_HUE_33",
+    "Wzmoc. Odp. na Pioruny (D)"
+  ],
+  "54": [
+    "HUD_HUE_33_W",
+    "Wzmoc. Odp. na Pioruny (BD)"
+  ],
+  "55": [
+    "HUD_HUE_34",
+    "Wzmocnienie Odp. na Lód (M)"
+  ],
+  "56": [
+    "HUD_HUE_35",
+    "Wzmocnienie Odp. na Lód (D)"
+  ],
+  "57": [
+    "HUD_HUE_35_W",
+    "Wzmocnienie Odp. na Lód (BD)"
+  ],
+  "58": [
+    "HUD_HUE_36",
+    "Wzmocnienie Odp. na Smoki (M)"
+  ],
+  "59": [
+    "HUD_HUE_37",
+    "Wzmocnienie Odp. na Smoki (D)"
+  ],
+  "60": [
+    "HUD_HUE_37_W",
+    "Wzmocnienie Odp. na Smoki (BD)"
+  ],
+  "61": [
+    "HUD_HUE_38",
+    "Wzmocnienie Ataku Żywiołowego"
+  ],
+  "62": [
+    "HUD_HUE_38_S",
+    "Wzmocnienie Ataku Żywiołowego (M)"
+  ],
+  "63": [
+    "HUD_HUE_38_W",
+    "Wzmocnienie Ataku Żywiołowego (D)"
+  ],
+  "64": [
+    "HUD_HUE_39",
+    "Fale Akustyczne"
+  ],
+  "65": [
+    "HUD_HUE_40",
+    "Przedłużenie Efektów Melodii"
+  ],
+  "66": [
+    "HUD_HUE_41",
+    "Neutralizacja Odepchnięć"
+  ],
+  "67": [
+    "HUD_HUE_42",
+    "Wzrost Ataku i Obrony (M)"
+  ],
+  "68": [
+    "HUD_HUE_42_S",
+    "Wzrost Ataku i Obrony (M)"
+  ],
+  "69": [
+    "HUD_HUE_42_W",
+    "Wzrost Ataku (D) / Wzrost Obrony (D)"
+  ],
+  "70": [
+    "HUD_HUE_43",
+    "Wzr. Zgodn. i Reg. Zdrowia (M)"
+  ],
+  "71": [
+    "HUD_HUE_43_S",
+    "Wzrost Zgodności (M) / Reg. Zdrowia (M)"
+  ],
+  "72": [
+    "HUD_HUE_43_W",
+    "Wzrost Zgodności (D) / Reg. Zdrowia (M)"
+  ],
+  "73": [
+    "HUD_HUE_44",
+    "Mocniejsze Szkodliwe Efekty"
+  ],
+  "74": [
+    "HUD_HUE_44_S",
+    "Mocniejsze Szkodliwe Efekty Ataków (M)"
+  ],
+  "75": [
+    "HUD_HUE_44_W",
+    "Mocniejsze Szkodliwe Efekty Ataków (D)"
+  ],
+  "76": [
+    "HUD_HUE_45",
+    "Neutralizacja Szk. Efektów"
+  ],
+  "77": [
+    "HUD_HUE_45_W",
+    "Przedłużona Neutralizacja Szk. Efektów"
+  ],
+  "78": [
+    "HUD_HUE_46",
+    "Wzmocnienie Odp. na Plagę"
+  ],
+  "79": [
+    "HUD_HUE_46_S",
+    "Wzmocnienie Odporności na Plagę (M)"
+  ],
+  "80": [
+    "HUD_HUE_46_W",
+    "Wzmocnienie Odporności na Plagę (D)"
+  ],
+  "81": [
+    "HUD_HUE_47",
+    "Neutralizacja Plagi"
+  ],
+  "82": [
+    "HUD_HUE_47_W",
+    "Przedłużona Neutralizacja Plagi"
+  ],
+  "83": [
+    "HUD_HUE_48",
+    "Zatyczki (M) / Neutr. Wiatru (M)"
+  ],
+  "84": [
+    "HUD_HUE_48_S",
+    "Zatyczki (M) / Neutr. Wiatru (M)"
+  ],
+  "85": [
+    "HUD_HUE_48_W",
+    "Zatyczki (M) / Długa Neutr. Wiatru"
+  ],
+  "86": [
+    "HUD_HUE_49",
+    "Regeneracja zdrowia (Ś)"
+  ],
+  "87": [
+    "HUD_HUE_23_W",
+    "Trwające Zatyczki do Uszu (M)"
+  ],
+  "88": [
+    "HUD_HUE_07_W",
+    "Długa Neutralizacja Wiatru"
+  ],
+  "89": [
+    "HUD_HUE_41_W",
+    "Przedł. Neutr. Odepchnięcia"
+  ],
+  "90": [
+    "HUD_HUE_50",
+    "Fala uderzeniowa echa"
+  ],
+  "91": [
+    "HUD_HUE_51",
+    "Fala echa \"Smok\""
+  ],
+  "92": [
+    "HUD_HUE_52",
+    "Maks. wytrzymałość + regeneracja"
+  ],
+  "93": [
+    "HUD_HUE_53",
+    "Przedłużona regeneracja zdrowia"
+  ],
+  "94": [
+    "HUD_HUE_54",
+    "Wzmoc. szybkości + dł. okres uniku"
+  ],
+  "95": [
+    "HUD_HUE_55",
+    "Wzmocnienie skuteczności żywiołów"
+  ],
+  "96": [
+    "HUD_HUE_56",
+    "Dłuższy okres uniku"
+  ],
+  "97": [
+    "HUD_HUE_21_G",
+    "Odporność na błoto/wodę/śnieg"
+  ],
+  "98": [
+    "HUD_HUE_21_W_G",
+    "Przedłuż. odp. na błoto/wodę/śnieg"
+  ]
+}

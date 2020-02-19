@@ -1,0 +1,398 @@
+{
+  "0": [
+    "HUD_HUE_00",
+    "Self-improvement"
+  ],
+  "1": [
+    "HUD_HUE_00_S",
+    "Movement Speed Up"
+  ],
+  "2": [
+    "HUD_HUE_00_W",
+    "Attack Up + Deflected Attack Prevention"
+  ],
+  "3": [
+    "HUD_HUE_01",
+    "Attack Up (S)"
+  ],
+  "4": [
+    "HUD_HUE_02",
+    "Attack Up (L)"
+  ],
+  "5": [
+    "HUD_HUE_02_W",
+    "Attack Up (XL)"
+  ],
+  "6": [
+    "HUD_HUE_03",
+    "Health Boost (S)"
+  ],
+  "7": [
+    "HUD_HUE_04",
+    "Health Boost (L)"
+  ],
+  "8": [
+    "HUD_HUE_04_W",
+    "Health Boost Extended"
+  ],
+  "9": [
+    "HUD_HUE_05",
+    "Stamina Use Reduced (S)"
+  ],
+  "10": [
+    "HUD_HUE_06",
+    "Stamina Use Reduced (L)"
+  ],
+  "11": [
+    "HUD_HUE_06_W",
+    "Stamina Use Reduction Extended"
+  ],
+  "12": [
+    "HUD_HUE_07",
+    "Wind Pressure Negated"
+  ],
+  "13": [
+    "HUD_HUE_08",
+    "All Wind Pressure Negated"
+  ],
+  "14": [
+    "HUD_HUE_08_W",
+    "All Wind Pressure Negation Extended"
+  ],
+  "15": [
+    "HUD_HUE_09",
+    "Defense Up (S)"
+  ],
+  "16": [
+    "HUD_HUE_10",
+    "Defense Up (L)"
+  ],
+  "17": [
+    "HUD_HUE_10_W",
+    "Defense Up (XL)"
+  ],
+  "18": [
+    "HUD_HUE_11",
+    "Tool Use Drain Reduced (S)"
+  ],
+  "19": [
+    "HUD_HUE_12",
+    "Tool Use Drain Reduced (L)"
+  ],
+  "20": [
+    "HUD_HUE_12_W",
+    "Tool Use Drain Reduction Extended"
+  ],
+  "21": [
+    "HUD_HUE_13",
+    "Health Rec. (S)"
+  ],
+  "22": [
+    "HUD_HUE_14",
+    "Health Rec. (L)"
+  ],
+  "23": [
+    "HUD_HUE_15",
+    "Health Rec. (S) + Antidote"
+  ],
+  "24": [
+    "HUD_HUE_16",
+    "Health Rec. (M) + Antidote"
+  ],
+  "25": [
+    "HUD_HUE_17",
+    "Recovery Speed (S)"
+  ],
+  "26": [
+    "HUD_HUE_18",
+    "Recovery Speed (L)"
+  ],
+  "27": [
+    "HUD_HUE_18_W",
+    "Recovery Speed Extended"
+  ],
+  "28": [
+    "HUD_HUE_19",
+    "Divine Protection"
+  ],
+  "29": [
+    "HUD_HUE_19_W",
+    "Divine Protection Extended"
+  ],
+  "30": [
+    "HUD_HUE_20",
+    "Scoutfly Power Up"
+  ],
+  "31": [
+    "HUD_HUE_20_S",
+    "Scoutfly Level +1"
+  ],
+  "32": [
+    "HUD_HUE_20_W",
+    "Scoutfly Level +1 Extended"
+  ],
+  "33": [
+    "HUD_HUE_21",
+    "Muck Res"
+  ],
+  "34": [
+    "HUD_HUE_21_W",
+    "Muck Res Extended"
+  ],
+  "35": [
+    "HUD_HUE_22",
+    "Envir. Damage Negated"
+  ],
+  "36": [
+    "HUD_HUE_22_W",
+    "Envir. Damage Negation Extended"
+  ],
+  "37": [
+    "HUD_HUE_23",
+    "Earplugs (S)"
+  ],
+  "38": [
+    "HUD_HUE_24",
+    "Earplugs (L)"
+  ],
+  "39": [
+    "HUD_HUE_24_W",
+    "Earplugs (L) Extended"
+  ],
+  "40": [
+    "HUD_HUE_25",
+    "Stun Negated"
+  ],
+  "41": [
+    "HUD_HUE_25_W",
+    "Stun Negation Extended"
+  ],
+  "42": [
+    "HUD_HUE_26",
+    "Paralysis Negated"
+  ],
+  "43": [
+    "HUD_HUE_26_W",
+    "Paralysis Negation Extended"
+  ],
+  "44": [
+    "HUD_HUE_27",
+    "Tremors Negated"
+  ],
+  "45": [
+    "HUD_HUE_27_W",
+    "Tremor Negation Extended"
+  ],
+  "46": [
+    "HUD_HUE_28",
+    "Fire Res Boost (S)"
+  ],
+  "47": [
+    "HUD_HUE_29",
+    "Fire Res Boost (L)"
+  ],
+  "48": [
+    "HUD_HUE_29_W",
+    "Fire Res Boost (XL)"
+  ],
+  "49": [
+    "HUD_HUE_30",
+    "Water Res Boost (S)"
+  ],
+  "50": [
+    "HUD_HUE_31",
+    "Water Res Boost (L)"
+  ],
+  "51": [
+    "HUD_HUE_31_W",
+    "Water Res Boost (XL)"
+  ],
+  "52": [
+    "HUD_HUE_32",
+    "Thunder Res Boost (S)"
+  ],
+  "53": [
+    "HUD_HUE_33",
+    "Thunder Res Boost (L)"
+  ],
+  "54": [
+    "HUD_HUE_33_W",
+    "Thunder Res Boost (XL)"
+  ],
+  "55": [
+    "HUD_HUE_34",
+    "Ice Res Boost (S)"
+  ],
+  "56": [
+    "HUD_HUE_35",
+    "Ice Res Boost (L)"
+  ],
+  "57": [
+    "HUD_HUE_35_W",
+    "Ice Res Boost (XL)"
+  ],
+  "58": [
+    "HUD_HUE_36",
+    "Dragon Res Boost (S)"
+  ],
+  "59": [
+    "HUD_HUE_37",
+    "Dragon Res Boost (L)"
+  ],
+  "60": [
+    "HUD_HUE_37_W",
+    "Dragon Res Boost (XL)"
+  ],
+  "61": [
+    "HUD_HUE_38",
+    "Elemental Attack Boost"
+  ],
+  "62": [
+    "HUD_HUE_38_S",
+    "Elemental Attack Boost (S)"
+  ],
+  "63": [
+    "HUD_HUE_38_W",
+    "Elemental Attack Boost (L)"
+  ],
+  "64": [
+    "HUD_HUE_39",
+    "Sonic Waves"
+  ],
+  "65": [
+    "HUD_HUE_40",
+    "All Melody Effects Extended"
+  ],
+  "66": [
+    "HUD_HUE_41",
+    "Knockbacks Negated"
+  ],
+  "67": [
+    "HUD_HUE_42",
+    "Attack and Defense Up (S)"
+  ],
+  "68": [
+    "HUD_HUE_42_S",
+    "Attack and Defense Up (S)"
+  ],
+  "69": [
+    "HUD_HUE_42_W",
+    "Attack Up (L) / Defense Up (L)"
+  ],
+  "70": [
+    "HUD_HUE_43",
+    "Affinity Up and Health Rec. (S)"
+  ],
+  "71": [
+    "HUD_HUE_43_S",
+    "Affinity Up (S) / Health Rec. (S)"
+  ],
+  "72": [
+    "HUD_HUE_43_W",
+    "Affinity Up (L) / Health Rec. (S)"
+  ],
+  "73": [
+    "HUD_HUE_44",
+    "Abnormal Status Atk. Increased"
+  ],
+  "74": [
+    "HUD_HUE_44_S",
+    "Abnormal Status Atk. Up (S)"
+  ],
+  "75": [
+    "HUD_HUE_44_W",
+    "Abnormal Status Atk. Up (L)"
+  ],
+  "76": [
+    "HUD_HUE_45",
+    "All Ailments Negated"
+  ],
+  "77": [
+    "HUD_HUE_45_W",
+    "Ailment Negation Extended"
+  ],
+  "78": [
+    "HUD_HUE_46",
+    "Blight Res Up"
+  ],
+  "79": [
+    "HUD_HUE_46_S",
+    "Blight Res Up (S)"
+  ],
+  "80": [
+    "HUD_HUE_46_W",
+    "Blight Res Up (L)"
+  ],
+  "81": [
+    "HUD_HUE_47",
+    "Blight Negated"
+  ],
+  "82": [
+    "HUD_HUE_47_W",
+    "Blight Negation Extended"
+  ],
+  "83": [
+    "HUD_HUE_48",
+    "Earplugs (S) / Wind Pressure Negated"
+  ],
+  "84": [
+    "HUD_HUE_48_S",
+    "Earplugs (S) / Wind Pressure Negated"
+  ],
+  "85": [
+    "HUD_HUE_48_W",
+    "Earplugs (S) / Wind Pressure Negation Extended"
+  ],
+  "86": [
+    "HUD_HUE_49",
+    "Health Recovery (M)"
+  ],
+  "87": [
+    "HUD_HUE_23_W",
+    "Earplugs (S) Extended"
+  ],
+  "88": [
+    "HUD_HUE_07_W",
+    "Wind Pressure Negation Extended"
+  ],
+  "89": [
+    "HUD_HUE_41_W",
+    "Knockback Negation Extended"
+  ],
+  "90": [
+    "HUD_HUE_50",
+    "Impact Echo Wave"
+  ],
+  "91": [
+    "HUD_HUE_51",
+    "Echo Wave \"Dragon\""
+  ],
+  "92": [
+    "HUD_HUE_52",
+    "Max Stamina Up + Recovery"
+  ],
+  "93": [
+    "HUD_HUE_53",
+    "Extended Health Recovery"
+  ],
+  "94": [
+    "HUD_HUE_54",
+    "Speed Boost + Evade Window Up"
+  ],
+  "95": [
+    "HUD_HUE_55",
+    "Elemental Effectiveness Up"
+  ],
+  "96": [
+    "HUD_HUE_56",
+    "Evade Window Up"
+  ],
+  "97": [
+    "HUD_HUE_21_G",
+    "Muck/Water/Deep Snow Res"
+  ],
+  "98": [
+    "HUD_HUE_21_W_G",
+    "Muck/Water/Deep Snow Res Extended"
+  ]
+}
