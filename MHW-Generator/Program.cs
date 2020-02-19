@@ -75,7 +75,7 @@ namespace MHW_Generator {
                 entries.Add(new MhwStructData.Entry($"Item {i + 1} Wt", itemWeightStart + i, typeof(byte)));
             }
 
-            GenerateItemProps("MHW_Editor.Items", "QuestReward", new MhwStructData { // .odr
+            GenerateItemProps("MHW_Editor.Items", "QuestReward", new MhwStructData { // .rem
                 size = 104,
                 offsetInitial = 10,
                 entryCountOffset = -1,
@@ -85,7 +85,7 @@ namespace MHW_Generator {
         }
 
         private static void GenOdr() {
-            GenerateItemProps("MHW_Editor.Items", "Odr", new MhwStructData { // .odr
+            GenerateItemProps("MHW_Editor.Items", "Bounty", new MhwStructData { // .odr
                 size = 77,
                 offsetInitial = 10,
                 entryCountOffset = 6,
@@ -97,20 +97,20 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Unk3", 9, typeof(uint)),
                     new MhwStructData.Entry("Unk4", 13, typeof(uint)),
                     new MhwStructData.Entry("Unk5", 17, typeof(int)),
-                    new MhwStructData.Entry("Unk6", 21, typeof(uint)),
-                    new MhwStructData.Entry("Unk7", 25, typeof(uint)),
+                    new MhwStructData.Entry("Rank", 21, typeof(uint), typeof(RankType)),
+                    new MhwStructData.Entry("Type", 25, typeof(uint), typeof (BountyType)),
                     new MhwStructData.Entry("Unk8", 29, typeof(uint)),
-                    new MhwStructData.Entry("Unk9", 33, typeof(int)),
+                    new MhwStructData.Entry("Monster Type", 33, typeof(int), typeof(MonsterType)),
                     new MhwStructData.Entry("Unk10", 37, typeof(uint)),
-                    new MhwStructData.Entry("Unk11", 41, typeof(uint)),
-                    new MhwStructData.Entry("Unk12", 45, typeof(uint)),
-                    new MhwStructData.Entry("Unk13", 49, typeof(uint)),
-                    new MhwStructData.Entry("Unk14", 53, typeof(uint)),
-                    new MhwStructData.Entry("Unk15", 57, typeof(uint)),
-                    new MhwStructData.Entry("Unk16", 61, typeof(uint)),
-                    new MhwStructData.Entry("Unk17", 65, typeof(uint)),
-                    new MhwStructData.Entry("Unk18", 69, typeof(uint)),
-                    new MhwStructData.Entry("Unk19", 72, typeof(uint))
+                    new MhwStructData.Entry("Map", 41, typeof(uint), typeof(Location)),
+                    new MhwStructData.Entry("Target Count", 45, typeof(uint)),
+                    new MhwStructData.Entry("Item Id 1", 49, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Item Id 1 Cnt", 61, typeof(uint)),
+                    new MhwStructData.Entry("Item Id 2", 53, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Item Id 2 Cnt", 65, typeof(uint)),
+                    new MhwStructData.Entry("Item Id 3", 57, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Item Id 3 Cnt", 69, typeof(uint)),
+                    new MhwStructData.Entry("Research Points", 72, typeof(uint))
                 }
             });
         }

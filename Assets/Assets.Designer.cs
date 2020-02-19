@@ -73,6 +73,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ara_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("ara_bountyData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ara_bow {
             get {
                 object obj = ResourceManager.GetObject("ara_bow", resourceCulture);
@@ -266,6 +276,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] chS_armorData {
             get {
                 object obj = ResourceManager.GetObject("chS_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("chS_bountyData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -473,6 +493,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] chT_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("chT_bountyData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] chT_bow {
             get {
                 object obj = ResourceManager.GetObject("chT_bow", resourceCulture);
@@ -666,6 +696,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] eng_armorData {
             get {
                 object obj = ResourceManager.GetObject("eng_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("eng_bountyData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -873,6 +913,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] fre_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("fre_bountyData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] fre_bow {
             get {
                 object obj = ResourceManager.GetObject("fre_bow", resourceCulture);
@@ -1066,6 +1116,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] ger_armorData {
             get {
                 object obj = ResourceManager.GetObject("ger_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("ger_bountyData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1273,6 +1333,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ita_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("ita_bountyData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ita_bow {
             get {
                 object obj = ResourceManager.GetObject("ita_bow", resourceCulture);
@@ -1466,6 +1536,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] jpn_armorData {
             get {
                 object obj = ResourceManager.GetObject("jpn_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("jpn_bountyData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1673,6 +1753,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] kor_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("kor_bountyData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] kor_bow {
             get {
                 object obj = ResourceManager.GetObject("kor_bow", resourceCulture);
@@ -1866,6 +1956,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] pol_armorData {
             get {
                 object obj = ResourceManager.GetObject("pol_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("pol_bountyData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -2073,6 +2173,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ptB_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("ptB_bountyData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ptB_bow {
             get {
                 object obj = ResourceManager.GetObject("ptB_bow", resourceCulture);
@@ -2266,6 +2376,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] rus_armorData {
             get {
                 object obj = ResourceManager.GetObject("rus_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("rus_bountyData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -2476,6 +2596,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] spa_armorData {
             get {
                 object obj = ResourceManager.GetObject("spa_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_bountyData {
+            get {
+                object obj = ResourceManager.GetObject("spa_bountyData", resourceCulture);
                 return ((byte[])(obj));
             }
         }

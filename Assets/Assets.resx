@@ -121,6 +121,9 @@
   <data name="ara_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\ara_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ara_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\ara_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ara_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ara_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -180,6 +183,9 @@
   </data>
   <data name="chS_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\chs_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\chs_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chS_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\chs_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -241,6 +247,9 @@
   <data name="chT_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\cht_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="chT_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\cht_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chT_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -300,6 +309,9 @@
   </data>
   <data name="eng_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\eng_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\eng_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="eng_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\eng_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -361,6 +373,9 @@
   <data name="fre_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\fre_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="fre_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\fre_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="fre_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\fre_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -420,6 +435,9 @@
   </data>
   <data name="ger_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\ger_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\ger_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ger_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ger_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -481,6 +499,9 @@
   <data name="ita_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\ita_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ita_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\ita_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ita_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ita_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -540,6 +561,9 @@
   </data>
   <data name="jpn_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\jpn_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\jpn_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="jpn_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\jpn_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -601,6 +625,9 @@
   <data name="kor_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\kor_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="kor_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\kor_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="kor_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\kor_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -660,6 +687,9 @@
   </data>
   <data name="pol_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\pol_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\pol_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pol_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\pol_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -721,6 +751,9 @@
   <data name="ptB_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\ptb_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ptB_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\ptb_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ptB_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ptb_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -780,6 +813,9 @@
   </data>
   <data name="rus_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\rus_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\rus_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rus_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rus_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -843,6 +879,9 @@
   </data>
   <data name="spa_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\spa_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bountydata\spa_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="spa_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

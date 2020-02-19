@@ -15,12 +15,15 @@ namespace MHW_Editor.Assets {
         public static readonly Dictionary<string, Dictionary<ushort, string>> otomoWeaponData = new Dictionary<string, Dictionary<ushort, string>>();
         public static readonly Dictionary<ushort, IdNamePair> songData = new Dictionary<ushort, IdNamePair>();
         public static readonly Dictionary<string, Dictionary<byte, string>> insectData = new Dictionary<string, Dictionary<byte, string>>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> bountyData = new Dictionary<string, Dictionary<uint, string>>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> bountyDataDescriptions = new Dictionary<string, Dictionary<uint, string>>();
 
         static DataHelper() {
             foreach (var lang in Global.LANGUAGES) {
                 ParseItemData(lang);
                 ParseSkillData(lang);
                 ParseSongData();
+                ParseBountyData(lang);
 
                 armorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_armorData"));
                 otomoArmorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_otomo_armorData"));
@@ -72,6 +75,21 @@ namespace MHW_Editor.Assets {
 
             foreach (var pair in rawSongData) {
                 songData[pair.Key] = new IdNamePair(pair.Key, pair.Value);
+            }
+        }
+
+        private static void ParseBountyData(string lang) {
+            bountyData[lang] = new Dictionary<uint, string>();
+            bountyDataDescriptions[lang] = new Dictionary<uint, string>();
+
+            var rawItemData = LoadDict<uint, string>(GetAsset($"{lang}_bountyData"));
+
+            const uint step = 2;
+            for (uint index = 0; index < rawItemData.Count; index += step) {
+                var key = index / step;
+
+                bountyData[lang][key] = rawItemData[index];
+                bountyDataDescriptions[lang][key] = rawItemData[index + 1];
             }
         }
 

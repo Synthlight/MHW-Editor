@@ -73,6 +73,9 @@ namespace MHW_Editor {
                                            nameof(EqCrt.Mat_3_Id_button),
                                            nameof(EqCrt.Mat_4_Id_button),
                                            nameof(ItemList.Item_Id),
+                                           nameof(Bounty.Item_Id_1),
+                                           nameof(Bounty.Item_Id_2),
+                                           nameof(Bounty.Item_Id_3),
                                            nameof(ItemMake.Result_Id),
                                            nameof(NewLimitBreakR.Needed_Item_Id_to_Unlock_button),
                                            nameof(ASkill.Mantle_Item_Id_button),
@@ -214,7 +217,6 @@ namespace MHW_Editor {
                                                  typeof(MusicSkill),
                                                  typeof(NewLimitBreak),
                                                  typeof(NewLimitBreakR),
-                                                 typeof(Odr),
                                                  typeof(PlantFertilizer),
                                                  typeof(PlantItem),
                                                  typeof(QuestReward),
@@ -264,6 +266,9 @@ namespace MHW_Editor {
                 case nameof(EqCrt.Mat_3_Id):
                 case nameof(EqCrt.Mat_4_Id):
                 case nameof(ItemList.Item_Id):
+                case nameof(Bounty.Item_Id_1):
+                case nameof(Bounty.Item_Id_2):
+                case nameof(Bounty.Item_Id_3):
                 case nameof(ItemMake.Result_Id):
                 case nameof(MelderExchange.Source_Item_Id):
                 case nameof(MelderItem.Result_Item_Id):
@@ -742,7 +747,6 @@ namespace MHW_Editor {
                                     $"Expected: {ourLength}\r\n" +
                                     $"Found: {properLength}\r\n" +
                                     "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    goto skipOut;
                 }
             }
 
@@ -1046,7 +1050,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".msk")) return typeof(MusicSkill);
             if (fileName.EndsWith(".new_lb")) return typeof(NewLimitBreak);
             if (fileName.EndsWith(".new_lbr")) return typeof(NewLimitBreakR);
-            if (fileName.EndsWith(".odr")) return typeof(Odr);
+            if (fileName.EndsWith(".odr")) return typeof(Bounty);
             if (fileName.EndsWith(".oam_dat")) return typeof(OtomoArmorDat);
             if (fileName.EndsWith(".owp_dat")) return typeof(OtomoWeaponDat);
             if (fileName.EndsWith(".plfe")) return typeof(PlantFertilizer);

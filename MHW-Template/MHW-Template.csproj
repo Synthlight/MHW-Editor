@@ -53,6 +53,10 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="Items\BountyType.cs" />
+    <Compile Include="Items\MonsterType.cs" />
+    <Compile Include="Items\Location.cs" />
+    <Compile Include="Items\RankType.cs" />
     <Compile Include="Items\CultivationCategory.cs" />
     <Compile Include="Items\Fertilizer.cs" />
     <Compile Include="Items\ItemFlags.cs" />
