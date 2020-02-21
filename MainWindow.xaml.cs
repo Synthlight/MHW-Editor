@@ -121,9 +121,8 @@ namespace MHW_Editor {
             // ReSharper disable HeuristicUnreachableCode
             if (false) {
                 // ReSharper disable StringLiteralTypo
-                const string chunk = @"V:\MHW\IB\chunk_combined";
-                //EncryptionHelper.Decrypt(EncryptionKeys.ASKILLP_KEY, $@"{chunk}\common\pl\askill_param.asp", $@"{chunk}\common\pl\askill_param.decrypted.asp");
-                //EncryptionHelper.Decrypt(EncryptionKeys.OWP_DAT_KEY, $@"{chunk}\hm\wp\wp12\shell\data\hbg_00_normal_1.shlp", $@"{chunk}\hm\wp\wp12\shell\data\hbg_00_normal_1.decrypted.asp");
+                //EncryptionHelper.Decrypt(EncryptionKeys.ASKILLP_KEY, $@"{Global.CHUNK_ROOT}\common\pl\askill_param.asp", $@"{Global.CHUNK_ROOT}\common\pl\askill_param.decrypted.asp");
+                //EncryptionHelper.Decrypt(EncryptionKeys.OWP_DAT_KEY, $@"{Global.CHUNK_ROOT}\hm\wp\wp12\shell\data\hbg_00_normal_1.shlp", $@"{Global.CHUNK_ROOT}\hm\wp\wp12\shell\data\hbg_00_normal_1.decrypted.asp");
                 Close();
                 return;
             }
