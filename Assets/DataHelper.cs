@@ -71,7 +71,7 @@ namespace MHW_Editor.Assets {
         }
 
         private static void ParseSongData() {
-            var rawSongData = LoadDict<ushort, string>(GetAsset("songData"));
+            var rawSongData = LoadDict<ushort, string>(Assets.songData);
 
             foreach (var pair in rawSongData) {
                 songData[pair.Key] = new IdNamePair(pair.Key, pair.Value);

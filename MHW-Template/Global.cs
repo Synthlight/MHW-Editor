@@ -52,6 +52,7 @@ namespace MHW_Template {
             "*.gun_sd",
             "*.imk",
             "*.itlist",
+            "*.itlot",
             "*.itm",
             "*.kire",
             "*.mkex",

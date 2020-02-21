@@ -85,6 +85,16 @@ namespace MHW_Editor {
                                            nameof(Armor.Skill_2_button),
                                            nameof(Armor.Skill_3_button),
                                            nameof(Melee.Skill_button),
+                                           nameof(ItemLottery.Item_1_Id),
+                                           nameof(ItemLottery.Item_2_Id),
+                                           nameof(ItemLottery.Item_3_Id),
+                                           nameof(ItemLottery.Item_4_Id),
+                                           nameof(ItemLottery.Item_5_Id),
+                                           nameof(ItemLottery.Item_6_Id),
+                                           nameof(ItemLottery.Item_7_Id),
+                                           nameof(ItemLottery.Item_8_Id),
+                                           nameof(ItemLottery.Item_9_Id),
+                                           nameof(ItemLottery.Item_10_Id),
                                            nameof(PlantItem.Item_button),
                                            nameof(MelderItem.Result_Item_Id),
                                            nameof(MelderExchange.Source_Item_Id));
@@ -112,8 +122,8 @@ namespace MHW_Editor {
             if (false) {
                 // ReSharper disable StringLiteralTypo
                 const string chunk = @"V:\MHW\IB\chunk_combined";
-                EncryptionHelper.Decrypt(EncryptionKeys.ASKILLP_KEY, $@"{chunk}\common\pl\askill_param.asp", $@"{chunk}\common\pl\askill_param.decrypted.asp");
-                EncryptionHelper.Decrypt(EncryptionKeys.OWP_DAT_KEY, $@"{chunk}\hm\wp\wp12\shell\data\hbg_00_normal_1.shlp", $@"{chunk}\hm\wp\wp12\shell\data\hbg_00_normal_1.decrypted.asp");
+                //EncryptionHelper.Decrypt(EncryptionKeys.ASKILLP_KEY, $@"{chunk}\common\pl\askill_param.asp", $@"{chunk}\common\pl\askill_param.decrypted.asp");
+                //EncryptionHelper.Decrypt(EncryptionKeys.OWP_DAT_KEY, $@"{chunk}\hm\wp\wp12\shell\data\hbg_00_normal_1.shlp", $@"{chunk}\hm\wp\wp12\shell\data\hbg_00_normal_1.decrypted.asp");
                 Close();
                 return;
             }
@@ -211,6 +221,7 @@ namespace MHW_Editor {
                                                  typeof(GunnerReload),
                                                  typeof(GunnerShoot),
                                                  typeof(ItemList),
+                                                 typeof(ItemLottery),
                                                  typeof(ItemMake),
                                                  typeof(MelderExchange),
                                                  typeof(MelderItem),
@@ -275,6 +286,16 @@ namespace MHW_Editor {
                 case nameof(Melee.Skill):
                 case nameof(NewLimitBreakR.Needed_Item_Id_to_Unlock):
                 case nameof(PlantItem.Item):
+                case nameof(ItemLottery.Item_1_Id):
+                case nameof(ItemLottery.Item_2_Id):
+                case nameof(ItemLottery.Item_3_Id):
+                case nameof(ItemLottery.Item_4_Id):
+                case nameof(ItemLottery.Item_5_Id):
+                case nameof(ItemLottery.Item_6_Id):
+                case nameof(ItemLottery.Item_7_Id):
+                case nameof(ItemLottery.Item_8_Id):
+                case nameof(ItemLottery.Item_9_Id):
+                case nameof(ItemLottery.Item_10_Id):
                 case nameof(SkillDat.Unlock_Skill_1):
                 case nameof(SkillDat.Unlock_Skill_2):
                 case nameof(SkillDat.Unlock_Skill_3):
@@ -1043,6 +1064,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".gun_sd")) return typeof(GunnerShoot);
             if (fileName.EndsWith(".imk")) return typeof(ItemMake);
             if (fileName.EndsWith(".itlist")) return typeof(ItemList);
+            if (fileName.EndsWith(".itlot")) return typeof(ItemLottery);
             if (fileName.EndsWith(".itm")) return typeof(Item);
             if (fileName.EndsWith(".kire")) return typeof(Sharpness);
             if (fileName.EndsWith(".mkex")) return typeof(MelderExchange);

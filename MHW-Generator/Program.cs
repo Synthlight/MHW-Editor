@@ -58,6 +58,32 @@ namespace MHW_Generator {
             GenValueTrader();
             GenOdr();
             GenQuestReward();
+            GenItemLottery();
+        }
+
+        private static void GenItemLottery() {
+            var entries = new List<MhwStructData.Entry>();
+
+            const ulong itemIdStart = 0;
+            const ulong itemCountStart = 20;
+            const ulong itemWeightStart = 30;
+            const ulong itemUnkStart = 40;
+
+            for (ulong i = 0; i < 10; i++) {
+                entries.Add(new MhwStructData.Entry($"Item {i + 1} Id", itemIdStart + i * 2, typeof(ushort), dataSourceType: DataSourceType.Items));
+                entries.Add(new MhwStructData.Entry($"Item {i + 1} Cnt", itemCountStart + i, typeof(byte)));
+                entries.Add(new MhwStructData.Entry($"Item {i + 1} %", itemWeightStart + i, typeof(byte), valueString: "value.Clamp((byte) 0, (byte) 100)"));
+                entries.Add(new MhwStructData.Entry($"Item {i + 1} Unk", itemUnkStart + i, typeof(byte)));
+            }
+
+            GenerateItemProps("MHW_Editor.Items", "ItemLottery", new MhwStructData { // .itlot
+                size = 50,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                encryptionKey = EncryptionKeys.ITLOT_KEY,
+                uniqueIdFormula = "{Index}",
+                entries = entries
+            });
         }
 
         private static void GenQuestReward() {
@@ -98,7 +124,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Unk4", 13, typeof(uint)),
                     new MhwStructData.Entry("Unk5", 17, typeof(int)),
                     new MhwStructData.Entry("Rank", 21, typeof(uint), typeof(RankType)),
-                    new MhwStructData.Entry("Type", 25, typeof(uint), typeof (BountyType)),
+                    new MhwStructData.Entry("Type", 25, typeof(uint), typeof(BountyType)),
                     new MhwStructData.Entry("Unk8", 29, typeof(uint)),
                     new MhwStructData.Entry("Monster Type", 33, typeof(int), typeof(MonsterType)),
                     new MhwStructData.Entry("Unk10", 37, typeof(uint)),

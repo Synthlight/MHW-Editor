@@ -122,7 +122,8 @@ namespace MHW_Generator_Data {
             var rootsToSearch = new List<string> {
                 $@"{Global.CHUNK_ROOT}\common",
                 $@"{Global.CHUNK_ROOT}\hm",
-                $@"{Global.CHUNK_ROOT}\quest"
+                $@"{Global.CHUNK_ROOT}\quest",
+                $@"{Global.CHUNK_ROOT}\stage"
             };
 
             foreach (var path in rootsToSearch.SelectMany(GetMatchingFiles)) {
