@@ -125,10 +125,10 @@ namespace MHW_Editor.Armors {
         [SortOrder(Variant_sortIndex)]
         [DisplayName(Variant_displayName)]
         public virtual MHW_Template.Armors.Variant Variant {
-            get => (MHW_Template.Armors.Variant) GetData<byte>(23);
+            get => (MHW_Template.Armors.Variant) GetData<uint>(23);
             set {
-                if ((MHW_Template.Armors.Variant) GetData<byte>(23) == value) return;
-                SetData(23, (byte) value, nameof(Variant));
+                if ((MHW_Template.Armors.Variant) GetData<uint>(23) == value) return;
+                SetData(23, (uint) value, nameof(Variant));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Variant));
             }
@@ -204,8 +204,22 @@ namespace MHW_Editor.Armors {
             }
         }
 
+        public const string Unk_displayName = "Unk";
+        public const int Unk_sortIndex = 800;
+        [SortOrder(Unk_sortIndex)]
+        [DisplayName(Unk_displayName)]
+        public virtual uint Unk {
+            get => GetData<uint>(32);
+            set {
+                if (GetData<uint>(32) == value) return;
+                SetData(32, value, nameof(Unk));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk));
+            }
+        }
+
         public const string Set_Group_displayName = "Set Group";
-        public const int Set_Group_sortIndex = 800;
+        public const int Set_Group_sortIndex = 850;
         [SortOrder(Set_Group_sortIndex)]
         [DisplayName(Set_Group_displayName)]
         public virtual ushort Set_Group {
@@ -219,7 +233,7 @@ namespace MHW_Editor.Armors {
         }
 
         public const string GMD_Name_Index_displayName = "GMD Name Index";
-        public const int GMD_Name_Index_sortIndex = 850;
+        public const int GMD_Name_Index_sortIndex = 900;
         [SortOrder(GMD_Name_Index_sortIndex)]
         [DisplayName(GMD_Name_Index_displayName)]
         public virtual ushort GMD_Name_Index {
@@ -227,13 +241,13 @@ namespace MHW_Editor.Armors {
         }
 
         public const string GMD_Description_Index_displayName = "GMD Description Index";
-        public const int GMD_Description_Index_sortIndex = 900;
+        public const int GMD_Description_Index_sortIndex = 950;
         [SortOrder(GMD_Description_Index_sortIndex)]
         [DisplayName(GMD_Description_Index_displayName)]
         public virtual ushort GMD_Description_Index {
             get => GetData<ushort>(40);
         }
 
-        public const int lastSortIndex = 950;
+        public const int lastSortIndex = 1000;
     }
 }

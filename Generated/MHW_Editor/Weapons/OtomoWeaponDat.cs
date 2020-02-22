@@ -72,10 +72,10 @@ namespace MHW_Editor.Weapons {
         [SortOrder(Attack_Type_sortIndex)]
         [DisplayName(Attack_Type_displayName)]
         public virtual MHW_Template.Weapons.AttackType Attack_Type {
-            get => (MHW_Template.Weapons.AttackType) GetData<byte>(7);
+            get => (MHW_Template.Weapons.AttackType) GetData<ushort>(7);
             set {
-                if ((MHW_Template.Weapons.AttackType) GetData<byte>(7) == value) return;
-                SetData(7, (byte) value, nameof(Attack_Type));
+                if ((MHW_Template.Weapons.AttackType) GetData<ushort>(7) == value) return;
+                SetData(7, (ushort) value, nameof(Attack_Type));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Attack_Type));
             }
@@ -193,8 +193,22 @@ namespace MHW_Editor.Weapons {
             }
         }
 
+        public const string Unk_displayName = "Unk";
+        public const int Unk_sortIndex = 700;
+        [SortOrder(Unk_sortIndex)]
+        [DisplayName(Unk_displayName)]
+        public virtual uint Unk {
+            get => GetData<uint>(23);
+            set {
+                if (GetData<uint>(23) == value) return;
+                SetData(23, value, nameof(Unk));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk));
+            }
+        }
+
         public const string Cost_displayName = "Cost";
-        public const int Cost_sortIndex = 700;
+        public const int Cost_sortIndex = 750;
         [SortOrder(Cost_sortIndex)]
         [DisplayName(Cost_displayName)]
         public virtual uint Cost {
@@ -208,7 +222,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Unknown_byte_1_displayName = "Unknown (byte) 1";
-        public const int Unknown_byte_1_sortIndex = 750;
+        public const int Unknown_byte_1_sortIndex = 800;
         [SortOrder(Unknown_byte_1_sortIndex)]
         [DisplayName(Unknown_byte_1_displayName)]
         public virtual byte Unknown_byte_1 {
@@ -222,7 +236,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string GMD_Name_Index_displayName = "GMD Name Index";
-        public const int GMD_Name_Index_sortIndex = 800;
+        public const int GMD_Name_Index_sortIndex = 850;
         [SortOrder(GMD_Name_Index_sortIndex)]
         [DisplayName(GMD_Name_Index_displayName)]
         public virtual ushort GMD_Name_Index {
@@ -230,13 +244,13 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string GMD_Description_Index_displayName = "GMD Description Index";
-        public const int GMD_Description_Index_sortIndex = 850;
+        public const int GMD_Description_Index_sortIndex = 900;
         [SortOrder(GMD_Description_Index_sortIndex)]
         [DisplayName(GMD_Description_Index_displayName)]
         public virtual ushort GMD_Description_Index {
             get => GetData<ushort>(36);
         }
 
-        public const int lastSortIndex = 900;
+        public const int lastSortIndex = 950;
     }
 }
