@@ -13,20 +13,5 @@ namespace MHW_Editor.Items {
         [SortOrder(lastSortIndex + 1)]
         [DisplayName("Description")]
         public string Description => DataHelper.bountyDataDescriptions[MainWindow.locale].TryGet(Id, "Unknown").Replace("\r\n", " ");
-
-        [SortOrder(Item_Id_1_sortIndex)]
-        [DisplayName(Item_Id_1_displayName)]
-        [CustomSorter(typeof(UInt16Sorter), true)]
-        public string Item_Id_1_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item_Id_1, IdNamePair.Unknown((ushort) Item_Id_1)).ToString();
-
-        [SortOrder(Item_Id_2_sortIndex)]
-        [DisplayName(Item_Id_2_displayName)]
-        [CustomSorter(typeof(UInt16Sorter), true)]
-        public string Item_Id_2_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item_Id_2, IdNamePair.Unknown((ushort) Item_Id_2)).ToString();
-
-        [SortOrder(Item_Id_3_sortIndex)]
-        [DisplayName(Item_Id_3_displayName)]
-        [CustomSorter(typeof(UInt16Sorter), true)]
-        public string Item_Id_3_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item_Id_3, IdNamePair.Unknown((ushort) Item_Id_3)).ToString();
     }
 }

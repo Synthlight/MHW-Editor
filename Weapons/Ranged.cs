@@ -27,10 +27,5 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Is_Fixed_Upgrade));
             }
         }
-
-        [SortOrder(Skill_sortIndex)]
-        [DisplayName(Skill_displayName)]
-        [CustomSorter(typeof(UInt16Sorter), true)]
-        public string Skill_button => DataHelper.skillData[MainWindow.locale].TryGet(Skill, IdNamePair.Unknown(Skill)).ToString();
     }
 }

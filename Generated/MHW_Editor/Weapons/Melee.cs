@@ -1,4 +1,6 @@
+
 using System.ComponentModel;
+using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
@@ -407,6 +409,11 @@ namespace MHW_Editor.Weapons {
                 OnPropertyChanged(nameof(Skill_button));
             }
         }
+
+        [SortOrder(Skill_sortIndex)]
+        [DisplayName(Skill_displayName)]
+        [CustomSorter(typeof(UInt16Sorter))]
+        public string Skill_button => DataHelper.skillData[MainWindow.locale].TryGet((ushort) Skill, IdNamePair.Unknown((ushort) Skill)).ToString();
 
         public const string GMD_Name_Index_displayName = "GMD Name Index";
         public const int GMD_Name_Index_sortIndex = 1500;

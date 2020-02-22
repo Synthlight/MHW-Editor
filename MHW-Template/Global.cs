@@ -72,6 +72,7 @@ namespace MHW_Template {
             "*.shl_tbl",
             "*.skl_dat",
             "*.skl_pt_dat",
+            "*.stmp",
             "*.swer",
             "*.swpc",
             "*.swpi",

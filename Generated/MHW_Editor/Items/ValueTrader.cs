@@ -1,4 +1,6 @@
+
 using System.ComponentModel;
+using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
@@ -26,6 +28,11 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Item_Id_button));
             }
         }
+
+        [SortOrder(Item_Id_sortIndex)]
+        [DisplayName(Item_Id_displayName)]
+        [CustomSorter(typeof(UInt16Sorter))]
+        public string Item_Id_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item_Id, IdNamePair.Unknown((ushort) Item_Id)).ToString();
 
         public const string Unk3_displayName = "Unk3";
         public const int Unk3_sortIndex = 100;

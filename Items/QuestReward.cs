@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -12,8 +13,8 @@ namespace MHW_Editor.Items {
 
         public override string Name => "None";
 
-        public List<QuestRewardInternal> GetCustomView() {
-            var itemList = new List<QuestRewardInternal>();
+        public ObservableCollection<QuestRewardInternal> GetCustomView() {
+            var itemList = new ObservableCollection<QuestRewardInternal>();
 
             for (var i = 0; i <= 15; i++) {
                 itemList.Add(new QuestRewardInternal(this, i, Bytes, Offset));
@@ -55,9 +56,10 @@ namespace MHW_Editor.Items {
                 }
             }
 
+            // TODO: This doesn't update when lang is changed.
             [SortOrder(100)]
             [DisplayName("Item Id")]
-            [CustomSorter(typeof(UInt16Sorter), true)]
+            [CustomSorter(typeof(UInt16Sorter))]
             public string Item_Id_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item_Id, IdNamePair.Unknown((ushort) Item_Id)).ToString();
 
             private const int countBaseOffset = 72;

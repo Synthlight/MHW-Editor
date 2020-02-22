@@ -1,4 +1,6 @@
+
 using System.ComponentModel;
+using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
@@ -55,6 +57,11 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Item_button));
             }
         }
+
+        [SortOrder(Item_sortIndex)]
+        [DisplayName(Item_displayName)]
+        [CustomSorter(typeof(UInt16Sorter))]
+        public string Item_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item, IdNamePair.Unknown((ushort) Item)).ToString();
 
         public const string Required_time_displayName = "Required time";
         public const int Required_time_sortIndex = 200;

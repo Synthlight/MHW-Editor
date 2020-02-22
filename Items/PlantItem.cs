@@ -1,8 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
-using MHW_Editor.Assets;
 using MHW_Editor.Models;
-using MHW_Template;
 
 namespace MHW_Editor.Items {
     public partial class PlantItem : MhwItem {
@@ -10,11 +8,6 @@ namespace MHW_Editor.Items {
         }
 
         public override string Name => "None";
-
-        [SortOrder(Item_sortIndex)]
-        [DisplayName(Item_displayName)]
-        [CustomSorter(typeof(UInt16Sorter), true)]
-        public string Item_button => DataHelper.itemData[MainWindow.locale].TryGet(Item, IdNamePair.Unknown(Item)).ToString();
 
         [SortOrder(Unlocked_from_start_Raw_sortIndex)]
         [DisplayName("Unlocked from start")]

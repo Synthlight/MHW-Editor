@@ -110,6 +110,7 @@
     <Compile Include="Generated\MHW_Editor\Gems\DecoLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCrt.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCus.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\ItemDelivery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemList.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemMake.cs" />
@@ -138,6 +139,7 @@
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Items\ItemDelivery.cs" />
     <Compile Include="Items\ItemLottery.cs" />
     <Compile Include="Items\QuestReward.cs" />
     <Compile Include="Items\Bounty.cs" />

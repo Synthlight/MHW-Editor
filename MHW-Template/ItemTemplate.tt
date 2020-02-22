@@ -7,7 +7,9 @@
 <#@ parameter type="MHW_Template.MhwStructData" name="structData" #>
 <#@ import namespace="Microsoft.CSharp" #>
 <#@ import namespace="System.Text.RegularExpressions" #>
+<#@ import namespace="MHW_Template.Models" #>
 using System.ComponentModel;
+using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
@@ -93,6 +95,31 @@ namespace <#= _namespace #> {
         }<# // End property block. #>
 
 <#
+        if (entry.dataSourceType != null) {
+            string dataSourceLookup;
+
+            switch (entry.dataSourceType) {
+                case DataSourceType.Items:
+                    dataSourceLookup = "DataHelper.itemData[MainWindow.locale]";
+                    break;
+                case DataSourceType.Skills:
+                    dataSourceLookup = "DataHelper.skillData[MainWindow.locale]";
+                    break;
+                case DataSourceType.SkillDat:
+                    dataSourceLookup = "MainWindow.skillDatLookup";
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+#>
+
+        [SortOrder(<#= name #>_sortIndex)]
+        [DisplayName(<#= name #>_displayName)]
+        [CustomSorter(typeof(<#= entry.dataSourceCustomSorter #>))]
+        public string <#= name #>_button => <#= dataSourceLookup #>.TryGet((ushort) <#= name #>, IdNamePair.Unknown((ushort) <#= name #>)).ToString();
+<#
+        } // End data source / button generation check.
+
         sortIndex += 50;
     } // End loop.
 #>

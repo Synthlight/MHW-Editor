@@ -1,4 +1,6 @@
+
 using System.ComponentModel;
+using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
@@ -305,6 +307,11 @@ namespace MHW_Editor.Armors {
             }
         }
 
+        [SortOrder(Set_Skill_1_sortIndex)]
+        [DisplayName(Set_Skill_1_displayName)]
+        [CustomSorter(typeof(UInt16Sorter))]
+        public string Set_Skill_1_button => DataHelper.skillData[MainWindow.locale].TryGet((ushort) Set_Skill_1, IdNamePair.Unknown((ushort) Set_Skill_1)).ToString();
+
         public const string Set_Skill_1_Level_displayName = "Set Skill 1 Level";
         public const int Set_Skill_1_Level_sortIndex = 1200;
         [SortOrder(Set_Skill_1_Level_sortIndex)]
@@ -334,6 +341,11 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Set_Skill_2_button));
             }
         }
+
+        [SortOrder(Set_Skill_2_sortIndex)]
+        [DisplayName(Set_Skill_2_displayName)]
+        [CustomSorter(typeof(UInt16Sorter))]
+        public string Set_Skill_2_button => DataHelper.skillData[MainWindow.locale].TryGet((ushort) Set_Skill_2, IdNamePair.Unknown((ushort) Set_Skill_2)).ToString();
 
         public const string Set_Skill_2_Level_displayName = "Set Skill 2 Level";
         public const int Set_Skill_2_Level_sortIndex = 1300;
@@ -365,6 +377,11 @@ namespace MHW_Editor.Armors {
             }
         }
 
+        [SortOrder(Skill_1_sortIndex)]
+        [DisplayName(Skill_1_displayName)]
+        [CustomSorter(typeof(UInt16Sorter))]
+        public string Skill_1_button => DataHelper.skillData[MainWindow.locale].TryGet((ushort) Skill_1, IdNamePair.Unknown((ushort) Skill_1)).ToString();
+
         public const string Skill_1_Level_displayName = "Skill 1 Level";
         public const int Skill_1_Level_sortIndex = 1400;
         [SortOrder(Skill_1_Level_sortIndex)]
@@ -395,6 +412,11 @@ namespace MHW_Editor.Armors {
             }
         }
 
+        [SortOrder(Skill_2_sortIndex)]
+        [DisplayName(Skill_2_displayName)]
+        [CustomSorter(typeof(UInt16Sorter))]
+        public string Skill_2_button => DataHelper.skillData[MainWindow.locale].TryGet((ushort) Skill_2, IdNamePair.Unknown((ushort) Skill_2)).ToString();
+
         public const string Skill_2_Level_displayName = "Skill 2 Level";
         public const int Skill_2_Level_sortIndex = 1500;
         [SortOrder(Skill_2_Level_sortIndex)]
@@ -424,6 +446,11 @@ namespace MHW_Editor.Armors {
                 OnPropertyChanged(nameof(Skill_3_button));
             }
         }
+
+        [SortOrder(Skill_3_sortIndex)]
+        [DisplayName(Skill_3_displayName)]
+        [CustomSorter(typeof(UInt16Sorter))]
+        public string Skill_3_button => DataHelper.skillData[MainWindow.locale].TryGet((ushort) Skill_3, IdNamePair.Unknown((ushort) Skill_3)).ToString();
 
         public const string Skill_3_Level_displayName = "Skill 3 Level";
         public const int Skill_3_Level_sortIndex = 1600;

@@ -1,4 +1,6 @@
+
 using System.ComponentModel;
+using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
@@ -203,6 +205,11 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Item_Id_1_sortIndex)]
+        [DisplayName(Item_Id_1_displayName)]
+        [CustomSorter(typeof(UInt16Sorter))]
+        public string Item_Id_1_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item_Id_1, IdNamePair.Unknown((ushort) Item_Id_1)).ToString();
+
         public const string Item_Id_1_Cnt_displayName = "Item Id 1 Cnt";
         public const int Item_Id_1_Cnt_sortIndex = 750;
         [SortOrder(Item_Id_1_Cnt_sortIndex)]
@@ -233,6 +240,11 @@ namespace MHW_Editor.Items {
             }
         }
 
+        [SortOrder(Item_Id_2_sortIndex)]
+        [DisplayName(Item_Id_2_displayName)]
+        [CustomSorter(typeof(UInt16Sorter))]
+        public string Item_Id_2_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item_Id_2, IdNamePair.Unknown((ushort) Item_Id_2)).ToString();
+
         public const string Item_Id_2_Cnt_displayName = "Item Id 2 Cnt";
         public const int Item_Id_2_Cnt_sortIndex = 850;
         [SortOrder(Item_Id_2_Cnt_sortIndex)]
@@ -262,6 +274,11 @@ namespace MHW_Editor.Items {
                 OnPropertyChanged(nameof(Item_Id_3_button));
             }
         }
+
+        [SortOrder(Item_Id_3_sortIndex)]
+        [DisplayName(Item_Id_3_displayName)]
+        [CustomSorter(typeof(UInt16Sorter))]
+        public string Item_Id_3_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item_Id_3, IdNamePair.Unknown((ushort) Item_Id_3)).ToString();
 
         public const string Item_Id_3_Cnt_displayName = "Item Id 3 Cnt";
         public const int Item_Id_3_Cnt_sortIndex = 950;

@@ -107,7 +107,7 @@ namespace MHW_Generator_Data {
                     Directory.Delete(directory);
                 } catch (Exception) {
                     // https://stackoverflow.com/a/47398010
-                    // HACK because the recursive delete will throw with an "Directory is not empty" exception after it deletes all the contents of the directory
+                    // Workaround because the recursive delete will throw with an "Directory is not empty" exception after it deletes all the contents of the directory
                     // if the directory is open in the left nav of Windows's explorer tree. This appears to be a caching or queuing latency issue.
                     Thread.Sleep(2000);
                     Directory.Delete(directory);

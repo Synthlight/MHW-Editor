@@ -1,4 +1,6 @@
+
 using System.ComponentModel;
+using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
@@ -19,6 +21,11 @@ namespace MHW_Editor.Items {
         public virtual uint Result_Item_Id {
             get => GetData<uint>(0);
         }
+
+        [SortOrder(Result_Item_Id_sortIndex)]
+        [DisplayName(Result_Item_Id_displayName)]
+        [CustomSorter(typeof(UInt16Sorter))]
+        public string Result_Item_Id_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Result_Item_Id, IdNamePair.Unknown((ushort) Result_Item_Id)).ToString();
 
         public const string Research_Points_displayName = "Research Points";
         public const int Research_Points_sortIndex = 100;
