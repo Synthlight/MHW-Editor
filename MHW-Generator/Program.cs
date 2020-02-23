@@ -492,7 +492,7 @@ namespace MHW_Generator {
         private static void GenMelderExchange() {
             const ulong size = 430;
             var entries = new List<MhwStructData.Entry> {
-                new MhwStructData.Entry("Source Item Id", 0, typeof(uint), true, dataSourceType: DataSourceType.Items),
+                new MhwStructData.Entry("Source Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
                 new MhwStructData.Entry("Unknown (int32) 1", 4, typeof(int))
             };
 
@@ -505,7 +505,7 @@ namespace MHW_Generator {
                 size = size,
                 offsetInitial = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Source_Item_Id}",
+                uniqueIdFormula = "{Index}",
                 entries = entries
             });
         }
@@ -515,9 +515,9 @@ namespace MHW_Generator {
                 size = 21,
                 offsetInitial = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Result_Item_Id}",
+                uniqueIdFormula = "{Index}",
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Result Item Id", 0, typeof(uint), true, dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Result Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Research Points", 4, typeof(uint)),
                     new MhwStructData.Entry("Melding Points", 8, typeof(uint)),
                     new MhwStructData.Entry("Category", 12, typeof(uint), typeof(ItemCategory)),

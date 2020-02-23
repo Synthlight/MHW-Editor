@@ -6,5 +6,8 @@ namespace MHW_Editor.Items {
         }
 
         public override string Name => "None";
+
+        [SortOrder(0)]
+        public ulong Index => (Offset - InitialOffset) / StructSize;
     }
 }

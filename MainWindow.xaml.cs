@@ -234,7 +234,6 @@ namespace MHW_Editor {
                                                  typeof(DecoGradeLottery),
                                                  typeof(DecoLottery),
                                                  typeof(Gem),
-                                                 typeof(ItemList),
                                                  typeof(Melee),
                                                  typeof(OtomoArmorDat),
                                                  typeof(OtomoWeaponDat),

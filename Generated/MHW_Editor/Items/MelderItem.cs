@@ -10,7 +10,7 @@ namespace MHW_Editor.Items {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
-        public override string UniqueId => $"{Result_Item_Id}";
+        public override string UniqueId => $"{Index}";
 
         public const string Result_Item_Id_displayName = "Result Item Id";
         public const int Result_Item_Id_sortIndex = 50;
@@ -19,6 +19,13 @@ namespace MHW_Editor.Items {
         [DataSource(DataSourceType.Items)]
         public virtual uint Result_Item_Id {
             get => GetData<uint>(0);
+            set {
+                if (GetData<uint>(0) == value) return;
+                SetData(0, value, nameof(Result_Item_Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Result_Item_Id));
+                OnPropertyChanged(nameof(Result_Item_Id_button));
+            }
         }
 
         [SortOrder(Result_Item_Id_sortIndex)]
