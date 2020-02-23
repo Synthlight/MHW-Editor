@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows;
 using MHW_Editor.Armors;
@@ -521,6 +523,14 @@ namespace MHW_Editor {
                 var newSortIndex = sortedSortIndexes[i];
                 Item item = items[index];
                 item.Sort_Order = newSortIndex;
+            }
+        }
+
+        private void Btn_open_wiki_OnClick(object sender, RoutedEventArgs e) {
+            try {
+                Process.Start("https://github.com/Synthlight/MHW-Editor/wiki");
+            } catch (Exception err) {
+                Console.Error.WriteLine(err);
             }
         }
     }

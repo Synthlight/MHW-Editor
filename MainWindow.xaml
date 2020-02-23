@@ -150,6 +150,11 @@
                         Click="Btn_sort_jewel_order_by_name_Click"
                         Content="Resort All Gems by Gem Name"
                         Visibility="Collapsed"/>
+                <Button Name="btn_open_wiki"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_open_wiki_OnClick"
+                        Content="Wiki"/>
                 <Button Name="btn_damage_cheat"
                         Margin="8,0,0,0"
                         HorizontalAlignment="Right"
