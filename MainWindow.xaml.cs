@@ -197,6 +197,8 @@ namespace MHW_Editor {
                                                  typeof(ItemList),
                                                  typeof(ItemLottery),
                                                  typeof(ItemMake),
+                                                 typeof(LimitBreakMaterialBase),
+                                                 typeof(LimitBreakMaterialSkill),
                                                  typeof(MelderExchange),
                                                  typeof(MelderItem),
                                                  typeof(MusicSkill),
@@ -240,46 +242,14 @@ namespace MHW_Editor {
                                                  typeof(RodInsect),
                                                  typeof(SkillDat));
                     break;
-                case nameof(Armor.Set_Skill_1):
-                case nameof(Armor.Set_Skill_2):
-                case nameof(Armor.Skill_1):
-                case nameof(Armor.Skill_2):
-                case nameof(Armor.Skill_3):
-                case nameof(ASkill.Mantle_Item_Id):
-                case nameof(EqCrt.Mat_1_Id):
-                case nameof(EqCrt.Mat_2_Id):
-                case nameof(EqCrt.Mat_3_Id):
-                case nameof(EqCrt.Mat_4_Id):
-                case nameof(ItemList.Item_Id):
-                case nameof(Bounty.Item_Id_1):
-                case nameof(Bounty.Item_Id_2):
-                case nameof(Bounty.Item_Id_3):
-                case nameof(ItemMake.Result_Id):
-                case nameof(MelderExchange.Source_Item_Id):
-                case nameof(MelderItem.Result_Item_Id):
-                case nameof(Melee.Skill):
-                case nameof(NewLimitBreakR.Needed_Item_Id_to_Unlock):
-                case nameof(ItemDelivery.Decoration_Reward):
-                case nameof(PlantItem.Item):
-                case nameof(ItemLottery.Item_1_Id):
-                case nameof(ItemLottery.Item_2_Id):
-                case nameof(ItemLottery.Item_3_Id):
-                case nameof(ItemLottery.Item_4_Id):
-                case nameof(ItemLottery.Item_5_Id):
-                case nameof(ItemLottery.Item_6_Id):
-                case nameof(ItemLottery.Item_7_Id):
-                case nameof(ItemLottery.Item_8_Id):
-                case nameof(ItemLottery.Item_9_Id):
-                case nameof(ItemLottery.Item_10_Id):
-                case nameof(SkillDat.Unlock_Skill_1):
-                case nameof(SkillDat.Unlock_Skill_2):
-                case nameof(SkillDat.Unlock_Skill_3):
-                case nameof(SkillDat.Unlock_Skill_4):
-                    e.Cancel = true; // Cancel for itemId/skillId columns as we will use a text version with onClick opening a selector.
-                    break;
                 default:
                     e.Cancel = e.PropertyName.EndsWith("Raw");
                     break;
+            }
+
+            // Cancel for _button columns as we will use a text version with onClick opening a selector.
+            if (ButtonTypeInfo.BUTTON_BASE_NAMES.Contains(e.PropertyName)) {
+                e.Cancel = true;
             }
 
             if (e.Cancel) return;
@@ -1046,6 +1016,8 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".itlot")) return typeof(ItemLottery);
             if (fileName.EndsWith(".itm")) return typeof(Item);
             if (fileName.EndsWith(".kire")) return typeof(Sharpness);
+            if (fileName.EndsWith(".lbm_base")) return typeof(LimitBreakMaterialBase);
+            if (fileName.EndsWith(".lbm_skill")) return typeof(LimitBreakMaterialSkill);
             if (fileName.EndsWith(".mkex")) return typeof(MelderExchange);
             if (fileName.EndsWith(".mkit")) return typeof(MelderItem);
             if (fileName.EndsWith(".msk")) return typeof(MusicSkill);

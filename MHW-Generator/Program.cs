@@ -60,6 +60,42 @@ namespace MHW_Generator {
             GenQuestReward();
             GenItemLottery();
             GenItemDelivery();
+            GenLimitBreakMaterialBase();
+            GenLimitBreakMaterialSkill();
+        }
+
+        private static void GenLimitBreakMaterialSkill() {
+            GenerateItemProps("MHW_Editor.Weapons", "LimitBreakMaterialSkill", new MhwStructData { // .lbm_skill
+                size = 10,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Rarity", 0, typeof(byte)),
+                    new MhwStructData.Entry("Augment Type", 1, typeof(byte)),
+                    new MhwStructData.Entry("Item 1 Id", 2, typeof(ushort), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Item 1 Cnt", 4, typeof(ushort)),
+                    new MhwStructData.Entry("Unk", 6, typeof(uint))
+                }
+            });
+        }
+
+        private static void GenLimitBreakMaterialBase() {
+            GenerateItemProps("MHW_Editor.Weapons", "LimitBreakMaterialBase", new MhwStructData { // .lbm_base
+                size = 14,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Rarity", 0, typeof(byte)),
+                    new MhwStructData.Entry("Equip Type", 1, typeof(byte)),
+                    new MhwStructData.Entry("Cost", 2, typeof(uint)),
+                    new MhwStructData.Entry("Item 1 Id", 6, typeof(ushort), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Item 1 Cnt", 8, typeof(ushort)),
+                    new MhwStructData.Entry("Item 2 Id", 10, typeof(ushort), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Item 2 Cnt", 12, typeof(ushort))
+                }
+            });
         }
 
         private static void GenItemDelivery() {

@@ -134,6 +134,8 @@
     <Compile Include="Generated\MHW_Editor\Weapons\CustomPartsR.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\GunnerReload.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\GunnerShoot.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\LimitBreakMaterialBase.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\LimitBreakMaterialSkill.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\OtomoWeaponDat.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\RodInsect.cs" />
@@ -205,6 +207,8 @@
     <Compile Include="Weapons\CustomPartsR.cs" />
     <Compile Include="Weapons\CustomParts.cs" />
     <Compile Include="Weapons\GunnerReload.cs" />
+    <Compile Include="Weapons\LimitBreakMaterialSkill.cs" />
+    <Compile Include="Weapons\LimitBreakMaterialBase.cs" />
     <Compile Include="Weapons\GunnerShoot.cs" />
     <Compile Include="Weapons\NewLimitBreak.cs" />
     <Compile Include="Weapons\OtomoWeaponDat.cs" />

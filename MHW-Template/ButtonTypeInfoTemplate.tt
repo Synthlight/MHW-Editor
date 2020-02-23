@@ -29,5 +29,15 @@ namespace <#= _namespace #> {
     }
 #>
         };
+
+        public static readonly List<string> BUTTON_BASE_NAMES = new List<string> {
+<#
+    foreach (var entry in buttonNames) {
+#>
+            "<#= entry.Replace("_button", "") #>",
+<#
+    }
+#>
+        };
     }
 }

@@ -91,6 +91,32 @@ namespace MHW_Template
             
             #line default
             #line hidden
+            this.Write("        };\r\n\r\n        public static readonly List<string> BUTTON_BASE_NAMES = new" +
+                    " List<string> {\r\n");
+            
+            #line 34 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+
+    foreach (var entry in buttonNames) {
+
+            
+            #line default
+            #line hidden
+            this.Write("            \"");
+            
+            #line 37 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(entry.Replace("_button", "")));
+            
+            #line default
+            #line hidden
+            this.Write("\",\r\n");
+            
+            #line 38 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+
+    }
+
+            
+            #line default
+            #line hidden
             this.Write("        };\r\n    }\r\n}");
             return this.GenerationEnvironment.ToString();
         }

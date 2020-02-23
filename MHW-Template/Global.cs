@@ -55,6 +55,8 @@ namespace MHW_Template {
             "*.itlot",
             "*.itm",
             "*.kire",
+            "*.lbm_base",
+            "*.lbm_skill",
             "*.mkex",
             "*.mkit",
             "*.msk",

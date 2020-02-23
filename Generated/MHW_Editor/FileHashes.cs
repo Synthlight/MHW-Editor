@@ -189,6 +189,8 @@ namespace MHW_Editor {
             {"l_sword.wp_dat", "chunkG1"},
             {"lance.wp_dat", "chunkG1"},
             {"lbg.wp_dat_g", "chunkG1"},
+            {"limit_break_mat_base.lbm_base", "chunkG0"},
+            {"limit_break_mat_skill.lbm_skill", "chunkG0"},
             {"maka_exchange.mkex", "chunkG1"},
             {"maka_item.mkit", "chunkG1"},
             {"material.trdr", "chunkG0"},

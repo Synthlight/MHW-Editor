@@ -128,6 +128,8 @@ namespace MHW_Editor {
             {"l_sword.wp_dat", 19810},
             {"lance.wp_dat", 19282},
             {"lbg.wp_dat_g", 20227},
+            {"limit_break_mat_base.lbm_base", 1438},
+            {"limit_break_mat_skill.lbm_skill", 160},
             {"maka_exchange.mkex", 156100},
             {"maka_item.mkit", 4441},
             {"material.trdr", 5666},
