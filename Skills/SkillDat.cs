@@ -23,8 +23,6 @@ namespace MHW_Editor.Skills {
 
         [SortOrder(Param_8_sortIndex + 1)]
         public string Description => DataHelper.skillDataDescriptions[MainWindow.locale].TryGet(Id, "Unknown");
-
-        // TODO: Unlock skill buttons do not use lang and thus don't translate.
     }
 
     public class SkillDatNameIdSorter : ICustomSorter {

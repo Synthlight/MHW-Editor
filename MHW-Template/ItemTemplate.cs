@@ -395,7 +395,7 @@ namespace MHW_Template
                     dataSourceLookup = "DataHelper.skillData[MainWindow.locale]";
                     break;
                 case DataSourceType.SkillDat:
-                    dataSourceLookup = "MainWindow.skillDatLookup";
+                    dataSourceLookup = "MainWindow.skillDatLookup[MainWindow.locale]";
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

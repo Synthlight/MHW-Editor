@@ -52,7 +52,7 @@ namespace MHW_Editor {
         [CanBeNull]
         private DataGridRow coloredRow;
         private bool isManualEditCommit;
-        public static Dictionary<ushort, IdNamePair> skillDatLookup = new Dictionary<ushort, IdNamePair>();
+        public static Dictionary<string, Dictionary<ushort, IdNamePair>> skillDatLookup = new Dictionary<string, Dictionary<ushort, IdNamePair>>();
         [CanBeNull]
         private CancellationTokenSource savedTimer;
         private readonly Brush backgroundBrush = (Brush) new BrushConverter().ConvertFrom("#c0e1fb");
@@ -533,7 +533,7 @@ namespace MHW_Editor {
                     dataSource = DataHelper.skillData[locale];
                     break;
                 case DataSourceType.SkillDat:
-                    dataSource = skillDatLookup;
+                    dataSource = skillDatLookup[locale];
                     break;
                 default: throw new ArgumentOutOfRangeException();
             }
@@ -613,9 +613,13 @@ namespace MHW_Editor {
 
         private void FillSkillDatDictionary() {
             // Makes the lookup table for skill dat unlock columns which reference themselves by index.
-            skillDatLookup = new Dictionary<ushort, IdNamePair>();
-            foreach (SkillDat item in items) {
-                skillDatLookup[(ushort) item.Index] = new IdNamePair((ushort) item.Index, item.Name_And_Id.name);
+            skillDatLookup = new Dictionary<string, Dictionary<ushort, IdNamePair>>();
+            foreach (var lang in Global.LANGUAGES) {
+                skillDatLookup[lang] = new Dictionary<ushort, IdNamePair>();
+                foreach (SkillDat item in items) {
+                    var name = DataHelper.skillData[lang].TryGet(item.Id, IdNamePair.Unknown(item.Id)).name;
+                    skillDatLookup[lang][(ushort) item.Index] = new IdNamePair((ushort) item.Index, name);
+                }
             }
         }
 
