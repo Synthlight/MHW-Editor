@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Skills {
+    // Struct Size: "27"
     // Unique Id Formula: "{Id}|{Level}"
     public struct SkillDat {
         public ushort Id; // Offset: 0

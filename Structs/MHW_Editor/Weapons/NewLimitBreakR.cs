@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
+    // Struct Size: "38"
     // Unique Id Formula: "{Id_1}|{Id_2}"
     public struct NewLimitBreakR {
         public ushort Id_1; // Offset: 0

@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
+    // Struct Size: "51"
     // Unique Id Formula: "{Id}|{Weapon_Type}"
     public struct CustomPartsR {
         public byte Weapon_Type; // Offset: 0

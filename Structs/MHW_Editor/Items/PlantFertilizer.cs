@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Items {
+    // Struct Size: "24"
     // Unique Id Formula: "{Fertilizer_Id}"
     public struct PlantFertilizer {
         public uint Fertilizer_Id; // Offset: 0

@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Items {
+    // Struct Size: "6"
     // Unique Id Formula: "{Index}"
     public struct BottleTable {
         public byte Close_Range; // Offset: 0

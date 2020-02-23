@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Items {
+    // Struct Size: "22"
     // Unique Id Formula: "{Rarity}"
     public struct ArmUp {
         public short Quest_Progress_1; // Offset: 0

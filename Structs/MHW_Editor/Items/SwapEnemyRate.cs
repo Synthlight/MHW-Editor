@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Items {
+    // Struct Size: "12"
     // Unique Id Formula: "{Id}"
     public struct SwapEnemyRate {
         public uint Id; // Offset: 0

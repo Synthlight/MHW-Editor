@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
+    // Struct Size: "111"
     // Unique Id Formula: "{Id}"
     public struct ShellTable {
         public byte Normal_1_Mag_Cnt; // Offset: 0

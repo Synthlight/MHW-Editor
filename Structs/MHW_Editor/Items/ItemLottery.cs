@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Items {
+    // Struct Size: "50"
     // Unique Id Formula: "{Index}"
     public struct ItemLottery {
         public ushort Item_1_Id; // Offset: 0

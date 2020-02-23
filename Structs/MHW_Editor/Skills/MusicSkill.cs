@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Skills {
+    // Struct Size: "20"
     // Unique Id Formula: "{Song_Id_Raw}"
     public struct MusicSkill {
         public uint Song_Id_Raw; // Offset: 0

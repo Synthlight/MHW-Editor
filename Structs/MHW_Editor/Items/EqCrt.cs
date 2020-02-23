@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Items {
+    // Struct Size: "37"
     // Unique Id Formula: "{Equipment_Category}|{Equipment_Id}"
     public struct EqCrt {
         public byte Equipment_Category; // Offset: 0

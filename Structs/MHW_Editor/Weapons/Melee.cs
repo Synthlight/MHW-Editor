@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
+    // Struct Size: "66"
     // Unique Id Formula: "{Id}"
     public struct Melee {
         public uint Index; // Offset: 0

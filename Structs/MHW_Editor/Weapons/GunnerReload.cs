@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
+    // Struct Size: "5"
     // Unique Id Formula: "{Id}"
     public struct GunnerReload {
         public byte No_Mods; // Offset: 0

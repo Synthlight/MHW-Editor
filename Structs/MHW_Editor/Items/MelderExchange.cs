@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Items {
+    // Struct Size: "430"
     // Unique Id Formula: "{Source_Item_Id}"
     public struct MelderExchange {
         public uint Source_Item_Id; // Offset: 0

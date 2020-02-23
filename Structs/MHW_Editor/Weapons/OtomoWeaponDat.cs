@@ -1,6 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
+    // Struct Size: "38"
     // Unique Id Formula: "{Id}"
     public struct OtomoWeaponDat {
         public uint Index; // Offset: 0
