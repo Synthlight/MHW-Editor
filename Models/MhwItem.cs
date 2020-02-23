@@ -66,6 +66,12 @@ namespace MHW_Editor.Models {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        public void OnPropertyChanged(IEnumerable<string> propertyName) {
+            foreach (var name in propertyName) {
+                OnPropertyChanged(name);
+            }
+        }
+
         public void OnPropertyChanged(params string[] propertyName) {
             foreach (var name in propertyName) {
                 OnPropertyChanged(name);

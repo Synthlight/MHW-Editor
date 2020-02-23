@@ -5,6 +5,8 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
+using MHW_Editor;
+using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
 using Newtonsoft.Json;
@@ -17,8 +19,46 @@ namespace MHW_Generator_Data {
         public static void Main() {
             CreateArmorDataValueClass();
             CreateSkillDataValueClass();
+            GenButtonLocalizationAndIdList();
             GenKnownLengths();
-            GenOutdatedHashes();
+            GenOutdatedHashes(); // This takes a while as it does extraction.
+        }
+
+        private static void GenButtonLocalizationAndIdList() {
+            var types = AppDomain.CurrentDomain.GetAssemblies()
+                                 .SelectMany(s => s.GetTypes())
+                                 .Where(p => p.Is(typeof(MhwItem)));
+
+            var typesWithButtons = new SortedSet<string>();
+            var buttonNames = new SortedSet<string>();
+
+            foreach (var type in types) {
+                var propertyNames = type.GetProperties()
+                                        .Select(p => p.Name)
+                                        .ToList();
+
+                var buttons = propertyNames.Where(name => name.EndsWith("_button") && propertyNames.Contains(name.Replace("_button", ""))).ToList();
+
+                if (buttons.Any()) {
+                    typesWithButtons.Add(type.Name);
+                }
+
+                foreach (var button in buttons) {
+                    buttonNames.Add(button);
+                }
+            }
+
+            const string @namespace = "MHW_Editor";
+            const string className = "ButtonTypeInfo";
+
+            MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ButtonTypeInfoTemplate {
+                Session = new Dictionary<string, object> {
+                    {"_namespace", @namespace},
+                    {"className", className},
+                    {"typesWithButtons", typesWithButtons},
+                    {"buttonNames", buttonNames}
+                }
+            });
         }
 
         private static void GenOutdatedHashes() {

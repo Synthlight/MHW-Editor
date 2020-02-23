@@ -65,45 +65,11 @@ namespace MHW_Editor {
             set {
                 locale = value;
                 foreach (MhwItem item in items) { // Won't warn about duplicate names, but avoid them nonetheless.
-                    item.OnPropertyChanged(nameof(IMhwItem.Name), // TODO: Replace with some generated list 'cuz this is getting ridiculous.
+                    item.OnPropertyChanged(nameof(IMhwItem.Name),
                                            nameof(SkillDat.Name_And_Id),
-                                           nameof(SkillDat.Description),
-                                           nameof(EqCrt.Mat_1_Id_button),
-                                           nameof(EqCrt.Mat_2_Id_button),
-                                           nameof(EqCrt.Mat_3_Id_button),
-                                           nameof(EqCrt.Mat_4_Id_button),
-                                           nameof(ItemList.Item_Id_button),
-                                           nameof(Bounty.Item_Id_1_button),
-                                           nameof(Bounty.Item_Id_2_button),
-                                           nameof(Bounty.Item_Id_3_button),
-                                           nameof(ItemMake.Result_Id_button),
-                                           nameof(NewLimitBreakR.Needed_Item_Id_to_Unlock_button),
-                                           nameof(ItemDelivery.Decoration_Reward_button),
-                                           nameof(ASkill.Mantle_Item_Id_button),
-                                           nameof(Armor.Set_Skill_1_button),
-                                           nameof(Armor.Set_Skill_2_button),
-                                           nameof(Armor.Skill_1_button),
-                                           nameof(Armor.Skill_2_button),
-                                           nameof(Armor.Skill_3_button),
-                                           nameof(Melee.Skill_button),
-                                           nameof(MusicSkill.Song_Id),
-                                           nameof(ItemLottery.Item_1_Id_button),
-                                           nameof(ItemLottery.Item_2_Id_button),
-                                           nameof(ItemLottery.Item_3_Id_button),
-                                           nameof(ItemLottery.Item_4_Id_button),
-                                           nameof(ItemLottery.Item_5_Id_button),
-                                           nameof(ItemLottery.Item_6_Id_button),
-                                           nameof(ItemLottery.Item_7_Id_button),
-                                           nameof(ItemLottery.Item_8_Id_button),
-                                           nameof(ItemLottery.Item_9_Id_button),
-                                           nameof(ItemLottery.Item_10_Id_button),
-                                           nameof(SkillDat.Unlock_Skill_1_button),
-                                           nameof(SkillDat.Unlock_Skill_2_button),
-                                           nameof(SkillDat.Unlock_Skill_3_button),
-                                           nameof(SkillDat.Unlock_Skill_4_button),
-                                           nameof(PlantItem.Item_button),
-                                           nameof(MelderItem.Result_Item_Id_button),
-                                           nameof(MelderExchange.Source_Item_Id_button));
+                                           nameof(SkillDat.Description));
+
+                    item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
                 }
             }
         }
@@ -115,42 +81,9 @@ namespace MHW_Editor {
                 showIdBeforeName = value;
                 foreach (MhwItem item in items) { // Won't warn about duplicate names, but avoid them nonetheless.
                     item.OnPropertyChanged(nameof(SkillDat.Name_And_Id),
-                                           nameof(EqCrt.Mat_1_Id_button),
-                                           nameof(EqCrt.Mat_2_Id_button),
-                                           nameof(EqCrt.Mat_3_Id_button),
-                                           nameof(EqCrt.Mat_4_Id_button),
-                                           nameof(ItemList.Item_Id_button),
-                                           nameof(Bounty.Item_Id_1_button),
-                                           nameof(Bounty.Item_Id_2_button),
-                                           nameof(Bounty.Item_Id_3_button),
-                                           nameof(ItemMake.Result_Id_button),
-                                           nameof(NewLimitBreakR.Needed_Item_Id_to_Unlock_button),
-                                           nameof(ItemDelivery.Decoration_Reward_button),
-                                           nameof(ASkill.Mantle_Item_Id_button),
-                                           nameof(Armor.Set_Skill_1_button),
-                                           nameof(Armor.Set_Skill_2_button),
-                                           nameof(Armor.Skill_1_button),
-                                           nameof(Armor.Skill_2_button),
-                                           nameof(Armor.Skill_3_button),
-                                           nameof(Melee.Skill_button),
-                                           nameof(MusicSkill.Song_Id),
-                                           nameof(ItemLottery.Item_1_Id_button),
-                                           nameof(ItemLottery.Item_2_Id_button),
-                                           nameof(ItemLottery.Item_3_Id_button),
-                                           nameof(ItemLottery.Item_4_Id_button),
-                                           nameof(ItemLottery.Item_5_Id_button),
-                                           nameof(ItemLottery.Item_6_Id_button),
-                                           nameof(ItemLottery.Item_7_Id_button),
-                                           nameof(ItemLottery.Item_8_Id_button),
-                                           nameof(ItemLottery.Item_9_Id_button),
-                                           nameof(ItemLottery.Item_10_Id_button),
-                                           nameof(SkillDat.Unlock_Skill_1_button),
-                                           nameof(SkillDat.Unlock_Skill_2_button),
-                                           nameof(SkillDat.Unlock_Skill_3_button),
-                                           nameof(SkillDat.Unlock_Skill_4_button),
-                                           nameof(PlantItem.Item_button),
-                                           nameof(MelderItem.Result_Item_Id_button),
-                                           nameof(MelderExchange.Source_Item_Id_button));
+                                           nameof(MusicSkill.Song_Id));
+
+                    item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
                 }
             }
         }
@@ -774,11 +707,11 @@ namespace MHW_Editor {
 
             btn_sort_jewel_order_by_name.Visibility = targetFileType.Is(typeof(Item)).VisibleIfTrue();
 
-            cb_show_id_before_name.Visibility = targetFileType.Is(typeof(DecoPercent),
-                                                                  typeof(MusicSkill),
-                                                                  typeof(SkillDat),
-                                                                  typeof(SkillPointData))
-                                                              .VisibleIfTrue();
+            cb_show_id_before_name.Visibility = (targetFileType.Is(typeof(DecoPercent),
+                                                                   typeof(MusicSkill),
+                                                                   typeof(SkillDat),
+                                                                   typeof(SkillPointData))
+                                                 || ButtonTypeInfo.TYPES_WITH_BUTTONS.Contains(targetFileType.Name)).VisibleIfTrue();
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 

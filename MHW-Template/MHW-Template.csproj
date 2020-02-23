@@ -52,6 +52,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="ButtonTypeInfoTemplate.cs">
+      <DependentUpon>ButtonTypeInfoTemplate.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Items\BountyType.cs" />
     <Compile Include="Items\MonsterType.cs" />
@@ -109,6 +114,10 @@
     <Content Include="FileHashesTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>FileHashesTemplate.cs</LastGenOutput>
+    </Content>
+    <Content Include="ButtonTypeInfoTemplate.tt">
+      <Generator>TextTemplatingFilePreProcessor</Generator>
+      <LastGenOutput>ButtonTypeInfoTemplate.cs</LastGenOutput>
     </Content>
     <Content Include="FileSizeTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>

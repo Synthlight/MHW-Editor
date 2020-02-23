@@ -1,0 +1,33 @@
+﻿<#@ template language="C#" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(TargetDir)\MHW-Template.dll" #>
+<#@ parameter type="System.String" name="_namespace" #>
+<#@ parameter type="System.String" name="className" #>
+<#@ parameter type="System.Collections.Generic.SortedSet<string>" name="typesWithButtons" #>
+<#@ parameter type="System.Collections.Generic.SortedSet<string>" name="buttonNames" #>
+using System.Collections.Generic;
+
+namespace <#= _namespace #> {
+    public static class <#= className #> {
+        public static readonly List<string> TYPES_WITH_BUTTONS = new List<string> {
+<#
+    foreach (var entry in typesWithButtons) {
+#>
+            "<#= entry #>",
+<#
+    }
+#>
+        };
+
+        public static readonly List<string> BUTTON_NAMES = new List<string> {
+<#
+    foreach (var entry in buttonNames) {
+#>
+            "<#= entry #>",
+<#
+    }
+#>
+        };
+    }
+}
