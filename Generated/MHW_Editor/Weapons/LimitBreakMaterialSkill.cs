@@ -30,11 +30,11 @@ namespace MHW_Editor.Weapons {
         public const int Augment_Type_sortIndex = 100;
         [SortOrder(Augment_Type_sortIndex)]
         [DisplayName(Augment_Type_displayName)]
-        public virtual byte Augment_Type {
-            get => GetData<byte>(1);
+        public virtual MHW_Template.Weapons.AugmentationType Augment_Type {
+            get => (MHW_Template.Weapons.AugmentationType) GetData<byte>(1);
             set {
-                if (GetData<byte>(1) == value) return;
-                SetData(1, value, nameof(Augment_Type));
+                if ((MHW_Template.Weapons.AugmentationType) GetData<byte>(1) == value) return;
+                SetData(1, (byte) value, nameof(Augment_Type));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Augment_Type));
             }

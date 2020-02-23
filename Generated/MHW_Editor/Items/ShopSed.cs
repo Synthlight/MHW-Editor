@@ -12,31 +12,31 @@ namespace MHW_Editor.Items {
         public const string EncryptionKey = null;
         public override string UniqueId => $"{Index}";
 
-        public const string Unk1_displayName = "Unk1";
-        public const int Unk1_sortIndex = 50;
-        [SortOrder(Unk1_sortIndex)]
-        [DisplayName(Unk1_displayName)]
-        public virtual uint Unk1 {
-            get => GetData<uint>(0);
+        public const string Equip_Type_displayName = "Equip Type";
+        public const int Equip_Type_sortIndex = 50;
+        [SortOrder(Equip_Type_sortIndex)]
+        [DisplayName(Equip_Type_displayName)]
+        public virtual MHW_Template.Weapons.WeaponType Equip_Type {
+            get => (MHW_Template.Weapons.WeaponType) GetData<uint>(0);
             set {
-                if (GetData<uint>(0) == value) return;
-                SetData(0, value, nameof(Unk1));
+                if ((MHW_Template.Weapons.WeaponType) GetData<uint>(0) == value) return;
+                SetData(0, (uint) value, nameof(Equip_Type));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk1));
+                OnPropertyChanged(nameof(Equip_Type));
             }
         }
 
-        public const string Unk2_displayName = "Unk2";
-        public const int Unk2_sortIndex = 100;
-        [SortOrder(Unk2_sortIndex)]
-        [DisplayName(Unk2_displayName)]
-        public virtual uint Unk2 {
+        public const string Equip_Id_displayName = "Equip Id";
+        public const int Equip_Id_sortIndex = 100;
+        [SortOrder(Equip_Id_sortIndex)]
+        [DisplayName(Equip_Id_displayName)]
+        public virtual uint Equip_Id {
             get => GetData<uint>(4);
             set {
                 if (GetData<uint>(4) == value) return;
-                SetData(4, value, nameof(Unk2));
+                SetData(4, value, nameof(Equip_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk2));
+                OnPropertyChanged(nameof(Equip_Id));
             }
         }
 

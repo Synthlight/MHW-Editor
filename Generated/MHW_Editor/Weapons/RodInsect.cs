@@ -42,22 +42,8 @@ namespace MHW_Editor.Weapons {
             get => GetData<byte>(5);
         }
 
-        public const string Tree_Position_Id_displayName = "Tree Position Id";
-        public const int Tree_Position_Id_sortIndex = 200;
-        [SortOrder(Tree_Position_Id_sortIndex)]
-        [DisplayName(Tree_Position_Id_displayName)]
-        public virtual byte Tree_Position_Id {
-            get => GetData<byte>(6);
-            set {
-                if (GetData<byte>(6) == value) return;
-                SetData(6, value, nameof(Tree_Position_Id));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Tree_Position_Id));
-            }
-        }
-
         public const string Base_Model_Id_displayName = "Base Model Id";
-        public const int Base_Model_Id_sortIndex = 250;
+        public const int Base_Model_Id_sortIndex = 200;
         [SortOrder(Base_Model_Id_sortIndex)]
         [DisplayName(Base_Model_Id_displayName)]
         public virtual ushort Base_Model_Id {
@@ -70,22 +56,8 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const string Tree_Id_displayName = "Tree Id";
-        public const int Tree_Id_sortIndex = 300;
-        [SortOrder(Tree_Id_sortIndex)]
-        [DisplayName(Tree_Id_displayName)]
-        public virtual byte Tree_Id {
-            get => GetData<byte>(9);
-            set {
-                if (GetData<byte>(9) == value) return;
-                SetData(9, value, nameof(Tree_Id));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Tree_Id));
-            }
-        }
-
         public const string Craft_Cost_displayName = "Craft Cost";
-        public const int Craft_Cost_sortIndex = 350;
+        public const int Craft_Cost_sortIndex = 250;
         [SortOrder(Craft_Cost_sortIndex)]
         [DisplayName(Craft_Cost_displayName)]
         public virtual uint Craft_Cost {
@@ -99,7 +71,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Rarity_displayName = "Rarity";
-        public const int Rarity_sortIndex = 400;
+        public const int Rarity_sortIndex = 300;
         [SortOrder(Rarity_sortIndex)]
         [DisplayName(Rarity_displayName)]
         public virtual byte Rarity {
@@ -113,7 +85,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Power_displayName = "Power";
-        public const int Power_sortIndex = 450;
+        public const int Power_sortIndex = 350;
         [SortOrder(Power_sortIndex)]
         [DisplayName(Power_displayName)]
         public virtual ushort Power {
@@ -127,7 +99,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Speed_displayName = "Speed";
-        public const int Speed_sortIndex = 500;
+        public const int Speed_sortIndex = 400;
         [SortOrder(Speed_sortIndex)]
         [DisplayName(Speed_displayName)]
         public virtual ushort Speed {
@@ -141,7 +113,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Heal_displayName = "Heal";
-        public const int Heal_sortIndex = 550;
+        public const int Heal_sortIndex = 450;
         [SortOrder(Heal_sortIndex)]
         [DisplayName(Heal_displayName)]
         public virtual ushort Heal {
@@ -155,7 +127,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Element_displayName = "Element";
-        public const int Element_sortIndex = 600;
+        public const int Element_sortIndex = 500;
         [SortOrder(Element_sortIndex)]
         [DisplayName(Element_displayName)]
         public virtual ushort Element {
@@ -169,7 +141,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Dust_Effect_displayName = "Dust Effect";
-        public const int Dust_Effect_sortIndex = 650;
+        public const int Dust_Effect_sortIndex = 550;
         [SortOrder(Dust_Effect_sortIndex)]
         [DisplayName(Dust_Effect_displayName)]
         public virtual MHW_Template.Weapons.DustEffect Dust_Effect {
@@ -182,17 +154,45 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const string Tree_Pos_displayName = "Tree Pos";
-        public const int Tree_Pos_sortIndex = 700;
-        [SortOrder(Tree_Pos_sortIndex)]
-        [DisplayName(Tree_Pos_displayName)]
-        public virtual byte Tree_Pos {
+        public const string Tree_Position_Id_displayName = "Tree Position Id";
+        public const int Tree_Position_Id_sortIndex = 600;
+        [SortOrder(Tree_Position_Id_sortIndex)]
+        [DisplayName(Tree_Position_Id_displayName)]
+        public virtual byte Tree_Position_Id {
+            get => GetData<byte>(6);
+            set {
+                if (GetData<byte>(6) == value) return;
+                SetData(6, value, nameof(Tree_Position_Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Tree_Position_Id));
+            }
+        }
+
+        public const string Tree_Id_displayName = "Tree Id";
+        public const int Tree_Id_sortIndex = 650;
+        [SortOrder(Tree_Id_sortIndex)]
+        [DisplayName(Tree_Id_displayName)]
+        public virtual byte Tree_Id {
+            get => GetData<byte>(9);
+            set {
+                if (GetData<byte>(9) == value) return;
+                SetData(9, value, nameof(Tree_Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Tree_Id));
+            }
+        }
+
+        public const string Tree_Position_displayName = "Tree Position";
+        public const int Tree_Position_sortIndex = 700;
+        [SortOrder(Tree_Position_sortIndex)]
+        [DisplayName(Tree_Position_displayName)]
+        public virtual byte Tree_Position {
             get => GetData<byte>(25);
             set {
                 if (GetData<byte>(25) == value) return;
-                SetData(25, value, nameof(Tree_Pos));
+                SetData(25, value, nameof(Tree_Position));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Tree_Pos));
+                OnPropertyChanged(nameof(Tree_Position));
             }
         }
 

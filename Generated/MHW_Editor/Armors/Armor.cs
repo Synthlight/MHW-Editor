@@ -108,31 +108,31 @@ namespace MHW_Editor.Armors {
             }
         }
 
-        public const string Unk1_displayName = "Unk1";
-        public const int Unk1_sortIndex = 500;
-        [SortOrder(Unk1_sortIndex)]
-        [DisplayName(Unk1_displayName)]
-        public virtual ushort Unk1 {
+        public const string Icon_Color_displayName = "Icon Color";
+        public const int Icon_Color_sortIndex = 500;
+        [SortOrder(Icon_Color_sortIndex)]
+        [DisplayName(Icon_Color_displayName)]
+        public virtual ushort Icon_Color {
             get => GetData<ushort>(17);
             set {
                 if (GetData<ushort>(17) == value) return;
-                SetData(17, value, nameof(Unk1));
+                SetData(17, value, nameof(Icon_Color));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk1));
+                OnPropertyChanged(nameof(Icon_Color));
             }
         }
 
-        public const string Unk2_displayName = "Unk2";
-        public const int Unk2_sortIndex = 550;
-        [SortOrder(Unk2_sortIndex)]
-        [DisplayName(Unk2_displayName)]
-        public virtual byte Unk2 {
+        public const string Icon_Effect_displayName = "Icon Effect";
+        public const int Icon_Effect_sortIndex = 550;
+        [SortOrder(Icon_Effect_sortIndex)]
+        [DisplayName(Icon_Effect_displayName)]
+        public virtual byte Icon_Effect {
             get => GetData<byte>(19);
             set {
                 if (GetData<byte>(19) == value) return;
-                SetData(19, value, nameof(Unk2));
+                SetData(19, value, nameof(Icon_Effect));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk2));
+                OnPropertyChanged(nameof(Icon_Effect));
             }
         }
 

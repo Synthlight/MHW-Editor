@@ -70,8 +70,22 @@ namespace MHW_Editor.Weapons {
             }
         }
 
+        public const string Color_displayName = "Color";
+        public const int Color_sortIndex = 300;
+        [SortOrder(Color_sortIndex)]
+        [DisplayName(Color_displayName)]
+        public virtual byte Color {
+            get => GetData<byte>(13);
+            set {
+                if (GetData<byte>(13) == value) return;
+                SetData(13, value, nameof(Color));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Color));
+            }
+        }
+
         public const string Is_Fixed_Upgrade_Raw_displayName = "Is Fixed Upgrade Raw";
-        public const int Is_Fixed_Upgrade_Raw_sortIndex = 300;
+        public const int Is_Fixed_Upgrade_Raw_sortIndex = 350;
         [SortOrder(Is_Fixed_Upgrade_Raw_sortIndex)]
         [DisplayName(Is_Fixed_Upgrade_Raw_displayName)]
         private byte Is_Fixed_Upgrade_Raw {
@@ -86,7 +100,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Muzzle_Type_displayName = "Muzzle Type";
-        public const int Muzzle_Type_sortIndex = 350;
+        public const int Muzzle_Type_sortIndex = 400;
         [SortOrder(Muzzle_Type_sortIndex)]
         [DisplayName(Muzzle_Type_displayName)]
         public virtual MHW_Template.Weapons.MuzzleType Muzzle_Type {
@@ -100,7 +114,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Barrel_Type_displayName = "Barrel Type";
-        public const int Barrel_Type_sortIndex = 400;
+        public const int Barrel_Type_sortIndex = 450;
         [SortOrder(Barrel_Type_sortIndex)]
         [DisplayName(Barrel_Type_displayName)]
         public virtual MHW_Template.Weapons.BarrelType Barrel_Type {
@@ -114,7 +128,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Magazine_Type_displayName = "Magazine Type";
-        public const int Magazine_Type_sortIndex = 450;
+        public const int Magazine_Type_sortIndex = 500;
         [SortOrder(Magazine_Type_sortIndex)]
         [DisplayName(Magazine_Type_displayName)]
         public virtual MHW_Template.Weapons.MagazineType Magazine_Type {
@@ -128,7 +142,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Scope_Type_displayName = "Scope Type";
-        public const int Scope_Type_sortIndex = 500;
+        public const int Scope_Type_sortIndex = 550;
         [SortOrder(Scope_Type_sortIndex)]
         [DisplayName(Scope_Type_displayName)]
         public virtual MHW_Template.Weapons.ScopeType Scope_Type {
@@ -142,7 +156,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Cost_displayName = "Cost";
-        public const int Cost_sortIndex = 550;
+        public const int Cost_sortIndex = 600;
         [SortOrder(Cost_sortIndex)]
         [DisplayName(Cost_displayName)]
         public virtual uint Cost {
@@ -156,7 +170,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Rarity_displayName = "Rarity";
-        public const int Rarity_sortIndex = 600;
+        public const int Rarity_sortIndex = 650;
         [SortOrder(Rarity_sortIndex)]
         [DisplayName(Rarity_displayName)]
         public virtual byte Rarity {
@@ -170,7 +184,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Damage_displayName = "Damage";
-        public const int Damage_sortIndex = 650;
+        public const int Damage_sortIndex = 700;
         [SortOrder(Damage_sortIndex)]
         [DisplayName(Damage_displayName)]
         public virtual ushort Damage {
@@ -184,7 +198,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Defense_displayName = "Defense";
-        public const int Defense_sortIndex = 700;
+        public const int Defense_sortIndex = 750;
         [SortOrder(Defense_sortIndex)]
         [DisplayName(Defense_displayName)]
         public virtual ushort Defense {
@@ -198,7 +212,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Affinity_displayName = "Affinity";
-        public const int Affinity_sortIndex = 750;
+        public const int Affinity_sortIndex = 800;
         [SortOrder(Affinity_sortIndex)]
         [DisplayName(Affinity_displayName)]
         public virtual sbyte Affinity {
@@ -212,7 +226,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Element_displayName = "Element";
-        public const int Element_sortIndex = 800;
+        public const int Element_sortIndex = 850;
         [SortOrder(Element_sortIndex)]
         [DisplayName(Element_displayName)]
         public virtual MHW_Template.Weapons.Element Element {
@@ -226,7 +240,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Element_Damage_displayName = "Element Damage";
-        public const int Element_Damage_sortIndex = 850;
+        public const int Element_Damage_sortIndex = 900;
         [SortOrder(Element_Damage_sortIndex)]
         [DisplayName(Element_Damage_displayName)]
         public virtual ushort Element_Damage {
@@ -240,7 +254,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Element_Hidden__displayName = "Element (Hidden)";
-        public const int Element_Hidden__sortIndex = 900;
+        public const int Element_Hidden__sortIndex = 950;
         [SortOrder(Element_Hidden__sortIndex)]
         [DisplayName(Element_Hidden__displayName)]
         public virtual MHW_Template.Weapons.Element Element_Hidden_ {
@@ -254,7 +268,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Element_Hidden_Damage_displayName = "Element (Hidden) Damage";
-        public const int Element_Hidden_Damage_sortIndex = 950;
+        public const int Element_Hidden_Damage_sortIndex = 1000;
         [SortOrder(Element_Hidden_Damage_sortIndex)]
         [DisplayName(Element_Hidden_Damage_displayName)]
         public virtual ushort Element_Hidden_Damage {
@@ -268,7 +282,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Elderseal_displayName = "Elderseal";
-        public const int Elderseal_sortIndex = 1000;
+        public const int Elderseal_sortIndex = 1050;
         [SortOrder(Elderseal_sortIndex)]
         [DisplayName(Elderseal_displayName)]
         public virtual MHW_Template.Weapons.Elderseal Elderseal {
@@ -282,7 +296,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Shell_Type_Id_displayName = "Shell Type Id";
-        public const int Shell_Type_Id_sortIndex = 1050;
+        public const int Shell_Type_Id_sortIndex = 1100;
         [SortOrder(Shell_Type_Id_sortIndex)]
         [DisplayName(Shell_Type_Id_displayName)]
         public virtual byte Shell_Type_Id {
@@ -296,7 +310,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Deviation_displayName = "Deviation";
-        public const int Deviation_sortIndex = 1100;
+        public const int Deviation_sortIndex = 1150;
         [SortOrder(Deviation_sortIndex)]
         [DisplayName(Deviation_displayName)]
         public virtual MHW_Template.Weapons.Deviation Deviation {
@@ -310,7 +324,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Slot_Count_displayName = "Slot Count";
-        public const int Slot_Count_sortIndex = 1150;
+        public const int Slot_Count_sortIndex = 1200;
         [SortOrder(Slot_Count_sortIndex)]
         [DisplayName(Slot_Count_displayName)]
         public virtual byte Slot_Count {
@@ -324,7 +338,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Slot_1_Size_displayName = "Slot 1 Size";
-        public const int Slot_1_Size_sortIndex = 1200;
+        public const int Slot_1_Size_sortIndex = 1250;
         [SortOrder(Slot_1_Size_sortIndex)]
         [DisplayName(Slot_1_Size_displayName)]
         public virtual byte Slot_1_Size {
@@ -338,7 +352,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Slot_2_Size_displayName = "Slot 2 Size";
-        public const int Slot_2_Size_sortIndex = 1250;
+        public const int Slot_2_Size_sortIndex = 1300;
         [SortOrder(Slot_2_Size_sortIndex)]
         [DisplayName(Slot_2_Size_displayName)]
         public virtual byte Slot_2_Size {
@@ -352,7 +366,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Slot_3_Size_displayName = "Slot 3 Size";
-        public const int Slot_3_Size_sortIndex = 1300;
+        public const int Slot_3_Size_sortIndex = 1350;
         [SortOrder(Slot_3_Size_sortIndex)]
         [DisplayName(Slot_3_Size_displayName)]
         public virtual byte Slot_3_Size {
@@ -366,7 +380,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Special_Ammo_Type_displayName = "Special Ammo Type";
-        public const int Special_Ammo_Type_sortIndex = 1350;
+        public const int Special_Ammo_Type_sortIndex = 1400;
         [SortOrder(Special_Ammo_Type_sortIndex)]
         [DisplayName(Special_Ammo_Type_displayName)]
         public virtual byte Special_Ammo_Type {
@@ -379,8 +393,36 @@ namespace MHW_Editor.Weapons {
             }
         }
 
+        public const string Tree_Id_displayName = "Tree Id";
+        public const int Tree_Id_sortIndex = 1450;
+        [SortOrder(Tree_Id_sortIndex)]
+        [DisplayName(Tree_Id_displayName)]
+        public virtual byte Tree_Id {
+            get => GetData<byte>(14);
+            set {
+                if (GetData<byte>(14) == value) return;
+                SetData(14, value, nameof(Tree_Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Tree_Id));
+            }
+        }
+
+        public const string Tree_Position_displayName = "Tree Position";
+        public const int Tree_Position_sortIndex = 1500;
+        [SortOrder(Tree_Position_sortIndex)]
+        [DisplayName(Tree_Position_displayName)]
+        public virtual byte Tree_Position {
+            get => GetData<byte>(58);
+            set {
+                if (GetData<byte>(58) == value) return;
+                SetData(58, value, nameof(Tree_Position));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Tree_Position));
+            }
+        }
+
         public const string Skill_displayName = "Skill";
-        public const int Skill_sortIndex = 1400;
+        public const int Skill_sortIndex = 1550;
         [SortOrder(Skill_sortIndex)]
         [DisplayName(Skill_displayName)]
         [DataSource(DataSourceType.Skills)]
@@ -401,7 +443,7 @@ namespace MHW_Editor.Weapons {
         public string Skill_button => DataHelper.skillData[MainWindow.locale].TryGet((ushort) Skill, IdNamePair.Unknown((ushort) Skill)).ToString();
 
         public const string GMD_Name_Index_displayName = "GMD Name Index";
-        public const int GMD_Name_Index_sortIndex = 1450;
+        public const int GMD_Name_Index_sortIndex = 1600;
         [SortOrder(GMD_Name_Index_sortIndex)]
         [DisplayName(GMD_Name_Index_displayName)]
         public virtual ushort GMD_Name_Index {
@@ -409,13 +451,13 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string GMD_Description_Index_displayName = "GMD Description Index";
-        public const int GMD_Description_Index_sortIndex = 1500;
+        public const int GMD_Description_Index_sortIndex = 1650;
         [SortOrder(GMD_Description_Index_sortIndex)]
         [DisplayName(GMD_Description_Index_displayName)]
         public virtual ushort GMD_Description_Index {
             get => GetData<ushort>(63);
         }
 
-        public const int lastSortIndex = 1550;
+        public const int lastSortIndex = 1700;
     }
 }

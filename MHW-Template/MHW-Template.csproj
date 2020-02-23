@@ -92,6 +92,7 @@
     <Compile Include="MhwStructData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\DataValuePair.cs" />
+    <Compile Include="Weapons\AugmentationType.cs" />
     <Compile Include="Weapons\AugmentationCategory.cs" />
     <Compile Include="Weapons\CoatingType.cs" />
     <Compile Include="Weapons\DustEffect.cs" />

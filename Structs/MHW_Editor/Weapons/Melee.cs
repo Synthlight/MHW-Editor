@@ -9,8 +9,8 @@ namespace MHW_Editor.Weapons {
         public short Base_Model_Id; // Offset: 6
         public short Part_1_Id; // Offset: 8
         public short Part_2_Id; // Offset: 10
-        public byte Unk2; // Offset: 13
-        public byte Unk3; // Offset: 14
+        public byte Color; // Offset: 13
+        public byte Tree_Id; // Offset: 14
         public byte Is_Fixed_Upgrade_Raw; // Offset: 15
         public uint Cost; // Offset: 16
         public byte Rarity; // Offset: 20
@@ -30,7 +30,7 @@ namespace MHW_Editor.Weapons {
         public byte Slot_3_Size; // Offset: 38
         public ushort Special_Ability_1_ID; // Offset: 39
         public ushort Special_Ability_2_ID; // Offset: 41
-        public byte Unk4; // Offset: 55
+        public byte Tree_Position; // Offset: 55
         public ushort Id; // Offset: 56
         public ushort GMD_Name_Index; // Offset: 58
         public ushort GMD_Description_Index; // Offset: 60

@@ -14,5 +14,11 @@
         Bow,
         Light_Bowgun,
         Heavy_Bowgun,
+        Armor_Head,
+        Armor_Chest,
+        Armor_Arms,
+        Armor_Waist,
+        Armor_Legs,
+        Armor_Charm,
     }
 }

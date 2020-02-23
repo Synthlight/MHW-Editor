@@ -17,7 +17,7 @@ namespace MHW_Editor.Weapons {
         public ushort Heal; // Offset: 19
         public ushort Element; // Offset: 21
         public ushort Dust_Effect; // Offset: 23
-        public byte Tree_Pos; // Offset: 25
+        public byte Tree_Position; // Offset: 25
         public ushort Equip_Id; // Offset: 26
     }
 }

@@ -30,11 +30,11 @@ namespace MHW_Editor.Weapons {
         public const int Equip_Type_sortIndex = 100;
         [SortOrder(Equip_Type_sortIndex)]
         [DisplayName(Equip_Type_displayName)]
-        public virtual byte Equip_Type {
-            get => GetData<byte>(1);
+        public virtual MHW_Template.Weapons.WeaponType Equip_Type {
+            get => (MHW_Template.Weapons.WeaponType) GetData<byte>(1);
             set {
-                if (GetData<byte>(1) == value) return;
-                SetData(1, value, nameof(Equip_Type));
+                if ((MHW_Template.Weapons.WeaponType) GetData<byte>(1) == value) return;
+                SetData(1, (byte) value, nameof(Equip_Type));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Equip_Type));
             }

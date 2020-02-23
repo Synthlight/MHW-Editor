@@ -72,7 +72,7 @@ namespace MHW_Generator {
                 uniqueIdFormula = "{Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Rarity", 0, typeof(byte)),
-                    new MhwStructData.Entry("Augment Type", 1, typeof(byte)),
+                    new MhwStructData.Entry("Augment Type", 1, typeof(byte), typeof(AugmentationType)),
                     new MhwStructData.Entry("Item 1 Id", 2, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Item 1 Cnt", 4, typeof(ushort)),
                     new MhwStructData.Entry("Unk", 6, typeof(uint))
@@ -88,7 +88,7 @@ namespace MHW_Generator {
                 uniqueIdFormula = "{Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Rarity", 0, typeof(byte)),
-                    new MhwStructData.Entry("Equip Type", 1, typeof(byte)),
+                    new MhwStructData.Entry("Equip Type", 1, typeof(byte), typeof(WeaponType)),
                     new MhwStructData.Entry("Cost", 2, typeof(uint)),
                     new MhwStructData.Entry("Item 1 Id", 6, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Item 1 Cnt", 8, typeof(ushort)),
@@ -405,8 +405,8 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 uniqueIdFormula = "{Index}",
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Unk1", 0, typeof(uint)),
-                    new MhwStructData.Entry("Unk2", 4, typeof(uint)),
+                    new MhwStructData.Entry("Equip Type", 0, typeof(uint), typeof(WeaponType)),
+                    new MhwStructData.Entry("Equip Id", 4, typeof(uint)),
                     new MhwStructData.Entry("Story Unlock", 8, typeof(uint))
                 }
             });
@@ -473,9 +473,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Attack Type", 4, typeof(byte), typeof(AttackType)),
                     new MhwStructData.Entry("Id", 5, typeof(byte), true),
-                    new MhwStructData.Entry("Tree Position Id", 6, typeof(byte)),
                     new MhwStructData.Entry("Base Model Id", 7, typeof(ushort)),
-                    new MhwStructData.Entry("Tree Id", 9, typeof(byte)),
                     new MhwStructData.Entry("Craft Cost", 10, typeof(uint)),
                     new MhwStructData.Entry("Rarity", 14, typeof(byte)),
                     new MhwStructData.Entry("Power", 15, typeof(ushort)),
@@ -483,7 +481,9 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Heal", 19, typeof(ushort)),
                     new MhwStructData.Entry("Element", 21, typeof(ushort)),
                     new MhwStructData.Entry("Dust Effect", 23, typeof(ushort), typeof(DustEffect)),
-                    new MhwStructData.Entry("Tree Pos", 25, typeof(byte)),
+                    new MhwStructData.Entry("Tree Position Id", 6, typeof(byte)),
+                    new MhwStructData.Entry("Tree Id", 9, typeof(byte)),
+                    new MhwStructData.Entry("Tree Position", 25, typeof(byte)),
                     new MhwStructData.Entry("Equip Id", 26, typeof(ushort))
                 }
             });
@@ -968,6 +968,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Base Model Id", 6, typeof(short)),
                     new MhwStructData.Entry("Part 1 Id", 8, typeof(short)),
                     new MhwStructData.Entry("Part 2 Id", 10, typeof(short)),
+                    new MhwStructData.Entry("Color", 13, typeof(byte)),
                     new MhwStructData.Entry("Is Fixed Upgrade Raw", 15, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Is Fixed Upgrade"}),
                     new MhwStructData.Entry("Muzzle Type", 16, typeof(byte), typeof(MuzzleType)),
                     new MhwStructData.Entry("Barrel Type", 17, typeof(byte), typeof(BarrelType)),
@@ -990,6 +991,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Slot 2 Size", 42, typeof(byte)),
                     new MhwStructData.Entry("Slot 3 Size", 43, typeof(byte)),
                     new MhwStructData.Entry("Special Ammo Type", 57, typeof(byte)),
+                    new MhwStructData.Entry("Tree Id", 14, typeof(byte)),
+                    new MhwStructData.Entry("Tree Position", 58, typeof(byte)),
                     new MhwStructData.Entry("Skill", 65, typeof(ushort), dataSourceType: DataSourceType.Skills),
                     new MhwStructData.Entry("GMD Name Index", 61, typeof(ushort), true),
                     new MhwStructData.Entry("GMD Description Index", 63, typeof(ushort), true)
@@ -1010,8 +1013,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Base Model Id", 6, typeof(short)),
                     new MhwStructData.Entry("Part 1 Id", 8, typeof(short)),
                     new MhwStructData.Entry("Part 2 Id", 10, typeof(short)),
-                    new MhwStructData.Entry("Unk2", 13, typeof(byte)),
-                    new MhwStructData.Entry("Unk3", 14, typeof(byte)),
+                    new MhwStructData.Entry("Color", 13, typeof(byte)),
                     new MhwStructData.Entry("Is Fixed Upgrade Raw", 15, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Is Fixed Upgrade"}),
                     new MhwStructData.Entry("Cost", 16, typeof(uint)),
                     new MhwStructData.Entry("Rarity", 20, typeof(byte)),
@@ -1031,7 +1033,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Slot 3 Size", 38, typeof(byte)),
                     new MhwStructData.Entry("Special Ability 1 ID", 39, typeof(ushort)),
                     new MhwStructData.Entry("Special Ability 2 ID", 41, typeof(ushort)),
-                    new MhwStructData.Entry("Unk4", 55, typeof(byte)),
+                    new MhwStructData.Entry("Tree Id", 14, typeof(byte)),
+                    new MhwStructData.Entry("Tree Position", 55, typeof(byte)),
                     new MhwStructData.Entry("Skill", 62, typeof(ushort), dataSourceType: DataSourceType.Skills),
                     new MhwStructData.Entry("GMD Name Index", 58, typeof(ushort), true),
                     new MhwStructData.Entry("GMD Description Index", 60, typeof(ushort), true)
@@ -1055,8 +1058,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Defense", 11, typeof(ushort)),
                     new MhwStructData.Entry("Model Id 1", 13, typeof(ushort)),
                     new MhwStructData.Entry("Model Id 2", 15, typeof(ushort)),
-                    new MhwStructData.Entry("Unk1", 17, typeof(ushort)),
-                    new MhwStructData.Entry("Unk2", 19, typeof(byte)),
+                    new MhwStructData.Entry("Icon Color", 17, typeof(ushort)),
+                    new MhwStructData.Entry("Icon Effect", 19, typeof(byte)),
                     new MhwStructData.Entry("Rarity", 20, typeof(byte)),
                     new MhwStructData.Entry("Cost", 21, typeof(uint)),
                     new MhwStructData.Entry("Fire Res", 25, typeof(sbyte)),

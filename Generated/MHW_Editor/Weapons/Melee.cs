@@ -84,36 +84,22 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const string Unk2_displayName = "Unk2";
-        public const int Unk2_sortIndex = 350;
-        [SortOrder(Unk2_sortIndex)]
-        [DisplayName(Unk2_displayName)]
-        public virtual byte Unk2 {
+        public const string Color_displayName = "Color";
+        public const int Color_sortIndex = 350;
+        [SortOrder(Color_sortIndex)]
+        [DisplayName(Color_displayName)]
+        public virtual byte Color {
             get => GetData<byte>(13);
             set {
                 if (GetData<byte>(13) == value) return;
-                SetData(13, value, nameof(Unk2));
+                SetData(13, value, nameof(Color));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk2));
-            }
-        }
-
-        public const string Unk3_displayName = "Unk3";
-        public const int Unk3_sortIndex = 400;
-        [SortOrder(Unk3_sortIndex)]
-        [DisplayName(Unk3_displayName)]
-        public virtual byte Unk3 {
-            get => GetData<byte>(14);
-            set {
-                if (GetData<byte>(14) == value) return;
-                SetData(14, value, nameof(Unk3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk3));
+                OnPropertyChanged(nameof(Color));
             }
         }
 
         public const string Is_Fixed_Upgrade_Raw_displayName = "Is Fixed Upgrade Raw";
-        public const int Is_Fixed_Upgrade_Raw_sortIndex = 450;
+        public const int Is_Fixed_Upgrade_Raw_sortIndex = 400;
         [SortOrder(Is_Fixed_Upgrade_Raw_sortIndex)]
         [DisplayName(Is_Fixed_Upgrade_Raw_displayName)]
         private byte Is_Fixed_Upgrade_Raw {
@@ -128,7 +114,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Cost_displayName = "Cost";
-        public const int Cost_sortIndex = 500;
+        public const int Cost_sortIndex = 450;
         [SortOrder(Cost_sortIndex)]
         [DisplayName(Cost_displayName)]
         public virtual uint Cost {
@@ -142,7 +128,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Rarity_displayName = "Rarity";
-        public const int Rarity_sortIndex = 550;
+        public const int Rarity_sortIndex = 500;
         [SortOrder(Rarity_sortIndex)]
         [DisplayName(Rarity_displayName)]
         public virtual byte Rarity {
@@ -156,7 +142,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Sharpness_kire_Id_displayName = "Sharpness (.kire) Id";
-        public const int Sharpness_kire_Id_sortIndex = 600;
+        public const int Sharpness_kire_Id_sortIndex = 550;
         [SortOrder(Sharpness_kire_Id_sortIndex)]
         [DisplayName(Sharpness_kire_Id_displayName)]
         public virtual byte Sharpness_kire_Id {
@@ -170,7 +156,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Sharpness_Amount_displayName = "Sharpness Amount";
-        public const int Sharpness_Amount_sortIndex = 650;
+        public const int Sharpness_Amount_sortIndex = 600;
         [SortOrder(Sharpness_Amount_sortIndex)]
         [DisplayName(Sharpness_Amount_displayName)]
         public virtual byte Sharpness_Amount {
@@ -184,7 +170,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Damage_displayName = "Damage";
-        public const int Damage_sortIndex = 700;
+        public const int Damage_sortIndex = 650;
         [SortOrder(Damage_sortIndex)]
         [DisplayName(Damage_displayName)]
         public virtual ushort Damage {
@@ -198,7 +184,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Defense_displayName = "Defense";
-        public const int Defense_sortIndex = 750;
+        public const int Defense_sortIndex = 700;
         [SortOrder(Defense_sortIndex)]
         [DisplayName(Defense_displayName)]
         public virtual ushort Defense {
@@ -212,7 +198,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Affinity_displayName = "Affinity";
-        public const int Affinity_sortIndex = 800;
+        public const int Affinity_sortIndex = 750;
         [SortOrder(Affinity_sortIndex)]
         [DisplayName(Affinity_displayName)]
         public virtual sbyte Affinity {
@@ -226,7 +212,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Element_displayName = "Element";
-        public const int Element_sortIndex = 850;
+        public const int Element_sortIndex = 800;
         [SortOrder(Element_sortIndex)]
         [DisplayName(Element_displayName)]
         public virtual MHW_Template.Weapons.Element Element {
@@ -240,7 +226,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Element_Damage_displayName = "Element Damage";
-        public const int Element_Damage_sortIndex = 900;
+        public const int Element_Damage_sortIndex = 850;
         [SortOrder(Element_Damage_sortIndex)]
         [DisplayName(Element_Damage_displayName)]
         public virtual ushort Element_Damage {
@@ -254,7 +240,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Element_Hidden__displayName = "Element (Hidden)";
-        public const int Element_Hidden__sortIndex = 950;
+        public const int Element_Hidden__sortIndex = 900;
         [SortOrder(Element_Hidden__sortIndex)]
         [DisplayName(Element_Hidden__displayName)]
         public virtual MHW_Template.Weapons.Element Element_Hidden_ {
@@ -268,7 +254,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Element_Hidden_Damage_displayName = "Element (Hidden) Damage";
-        public const int Element_Hidden_Damage_sortIndex = 1000;
+        public const int Element_Hidden_Damage_sortIndex = 950;
         [SortOrder(Element_Hidden_Damage_sortIndex)]
         [DisplayName(Element_Hidden_Damage_displayName)]
         public virtual ushort Element_Hidden_Damage {
@@ -282,7 +268,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Elderseal_displayName = "Elderseal";
-        public const int Elderseal_sortIndex = 1050;
+        public const int Elderseal_sortIndex = 1000;
         [SortOrder(Elderseal_sortIndex)]
         [DisplayName(Elderseal_displayName)]
         public virtual MHW_Template.Weapons.Elderseal Elderseal {
@@ -296,7 +282,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Slot_Count_displayName = "Slot Count";
-        public const int Slot_Count_sortIndex = 1100;
+        public const int Slot_Count_sortIndex = 1050;
         [SortOrder(Slot_Count_sortIndex)]
         [DisplayName(Slot_Count_displayName)]
         public virtual byte Slot_Count {
@@ -310,7 +296,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Slot_1_Size_displayName = "Slot 1 Size";
-        public const int Slot_1_Size_sortIndex = 1150;
+        public const int Slot_1_Size_sortIndex = 1100;
         [SortOrder(Slot_1_Size_sortIndex)]
         [DisplayName(Slot_1_Size_displayName)]
         public virtual byte Slot_1_Size {
@@ -324,7 +310,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Slot_2_Size_displayName = "Slot 2 Size";
-        public const int Slot_2_Size_sortIndex = 1200;
+        public const int Slot_2_Size_sortIndex = 1150;
         [SortOrder(Slot_2_Size_sortIndex)]
         [DisplayName(Slot_2_Size_displayName)]
         public virtual byte Slot_2_Size {
@@ -338,7 +324,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Slot_3_Size_displayName = "Slot 3 Size";
-        public const int Slot_3_Size_sortIndex = 1250;
+        public const int Slot_3_Size_sortIndex = 1200;
         [SortOrder(Slot_3_Size_sortIndex)]
         [DisplayName(Slot_3_Size_displayName)]
         public virtual byte Slot_3_Size {
@@ -352,7 +338,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Special_Ability_1_ID_displayName = "Special Ability 1 ID";
-        public const int Special_Ability_1_ID_sortIndex = 1300;
+        public const int Special_Ability_1_ID_sortIndex = 1250;
         [SortOrder(Special_Ability_1_ID_sortIndex)]
         [DisplayName(Special_Ability_1_ID_displayName)]
         public virtual ushort Special_Ability_1_ID {
@@ -366,7 +352,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string Special_Ability_2_ID_displayName = "Special Ability 2 ID";
-        public const int Special_Ability_2_ID_sortIndex = 1350;
+        public const int Special_Ability_2_ID_sortIndex = 1300;
         [SortOrder(Special_Ability_2_ID_sortIndex)]
         [DisplayName(Special_Ability_2_ID_displayName)]
         public virtual ushort Special_Ability_2_ID {
@@ -379,17 +365,31 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const string Unk4_displayName = "Unk4";
-        public const int Unk4_sortIndex = 1400;
-        [SortOrder(Unk4_sortIndex)]
-        [DisplayName(Unk4_displayName)]
-        public virtual byte Unk4 {
+        public const string Tree_Id_displayName = "Tree Id";
+        public const int Tree_Id_sortIndex = 1350;
+        [SortOrder(Tree_Id_sortIndex)]
+        [DisplayName(Tree_Id_displayName)]
+        public virtual byte Tree_Id {
+            get => GetData<byte>(14);
+            set {
+                if (GetData<byte>(14) == value) return;
+                SetData(14, value, nameof(Tree_Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Tree_Id));
+            }
+        }
+
+        public const string Tree_Position_displayName = "Tree Position";
+        public const int Tree_Position_sortIndex = 1400;
+        [SortOrder(Tree_Position_sortIndex)]
+        [DisplayName(Tree_Position_displayName)]
+        public virtual byte Tree_Position {
             get => GetData<byte>(55);
             set {
                 if (GetData<byte>(55) == value) return;
-                SetData(55, value, nameof(Unk4));
+                SetData(55, value, nameof(Tree_Position));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk4));
+                OnPropertyChanged(nameof(Tree_Position));
             }
         }
 

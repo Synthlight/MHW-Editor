@@ -13,8 +13,8 @@ namespace MHW_Editor.Armors {
         public ushort Defense; // Offset: 11
         public ushort Model_Id_1; // Offset: 13
         public ushort Model_Id_2; // Offset: 15
-        public ushort Unk1; // Offset: 17
-        public byte Unk2; // Offset: 19
+        public ushort Icon_Color; // Offset: 17
+        public byte Icon_Effect; // Offset: 19
         public byte Rarity; // Offset: 20
         public uint Cost; // Offset: 21
         public sbyte Fire_Res; // Offset: 25
