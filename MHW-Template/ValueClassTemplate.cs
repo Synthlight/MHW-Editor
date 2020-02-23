@@ -9,9 +9,6 @@
 // ------------------------------------------------------------------------------
 namespace MHW_Template
 {
-    using Microsoft.CSharp;
-    using System.Collections.Generic;
-    using System.Text.RegularExpressions;
     using MHW_Template.Models;
     using System;
     
@@ -29,26 +26,23 @@ namespace MHW_Template
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("\n");
-            this.Write("\n");
-            this.Write("\n");
-            this.Write("\nusing MHW_Template;\r\n\r\nnamespace ");
+            this.Write("using MHW_Template;\r\n\r\nnamespace ");
             
-            #line 10 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
+            #line 11 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public static class ");
             
-            #line 11 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
+            #line 12 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
             #line hidden
             this.Write(" {\r\n");
             
-            #line 12 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
+            #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
 
     foreach (var entry in valueDataPairs) {
 
@@ -57,28 +51,28 @@ namespace MHW_Template
             #line hidden
             this.Write("        public const ushort ");
             
-            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.name));
             
             #line default
             #line hidden
             this.Write(" = ");
             
-            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.value));
             
             #line default
             #line hidden
             this.Write(";");
             
-            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.description == null ? "" : $" // {entry.description}"));
             
             #line default
             #line hidden
             this.Write("\r\n");
             
-            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
+            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
 
     }
 

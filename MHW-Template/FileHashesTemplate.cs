@@ -9,10 +9,7 @@
 // ------------------------------------------------------------------------------
 namespace MHW_Template
 {
-    using Microsoft.CSharp;
     using System.Collections.Generic;
-    using System.Text.RegularExpressions;
-    using MHW_Template.Models;
     using System;
     
     /// <summary>
@@ -31,14 +28,14 @@ namespace MHW_Template
         {
             this.Write("using System.Collections.Generic;\r\n\r\nnamespace ");
             
-            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 12 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public static class ");
             
-            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
@@ -46,7 +43,7 @@ namespace MHW_Template
             this.Write(" {\r\n        public static readonly Dictionary<string, Dictionary<string, string>>" +
                     " BAD_FILE_HASH_MAP = new Dictionary<string, Dictionary<string, string>> {\r\n");
             
-            #line 18 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
 
     foreach (var tldPair in hashMap) {
 
@@ -55,14 +52,14 @@ namespace MHW_Template
             #line hidden
             this.Write("            {\"");
             
-            #line 21 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 18 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(tldPair.Key));
             
             #line default
             #line hidden
             this.Write("\", new Dictionary<string, string> {\r\n");
             
-            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 19 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
 
         foreach (var entry in tldPair.Value) {
 
@@ -71,21 +68,21 @@ namespace MHW_Template
             #line hidden
             this.Write("                {\"");
             
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.Key));
             
             #line default
             #line hidden
             this.Write("\", \"");
             
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.Value));
             
             #line default
             #line hidden
             this.Write("\"},\r\n");
             
-            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
 
         }
 
@@ -94,7 +91,7 @@ namespace MHW_Template
             #line hidden
             this.Write("            }},\r\n");
             
-            #line 30 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
 
     }
 
@@ -104,7 +101,7 @@ namespace MHW_Template
             this.Write("        };\r\n\r\n        public static readonly Dictionary<string, string> GOOD_CHUN" +
                     "K_MAP = new Dictionary<string, string> {\r\n");
             
-            #line 36 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 33 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
 
     foreach (var entry in goodChunkMap) {
 
@@ -113,21 +110,21 @@ namespace MHW_Template
             #line hidden
             this.Write("            {\"");
             
-            #line 39 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 36 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.Key));
             
             #line default
             #line hidden
             this.Write("\", \"");
             
-            #line 39 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 36 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.Value));
             
             #line default
             #line hidden
             this.Write("\"},\r\n");
             
-            #line 40 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 37 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
 
     }
 

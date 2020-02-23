@@ -1,6 +1,6 @@
 ﻿<#@ template language="C#" #>
-<#@ assembly name="System.Core" #>
 <#@ output extension=".cs" #>
+<#@ assembly name="System.Core" #>
 <#@ assembly name="$(TargetDir)\MHW-Template.dll" #>
 <#@ parameter type="System.String" name="_namespace" #>
 <#@ parameter type="System.String" name="className" #>

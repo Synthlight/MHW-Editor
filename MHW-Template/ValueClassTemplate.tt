@@ -1,13 +1,10 @@
 ﻿<#@ template language="C#" #>
-<#@ assembly name="System.Core" #>
 <#@ output extension=".cs" #>
+<#@ assembly name="System.Core" #>
 <#@ assembly name="$(TargetDir)\MHW-Template.dll" #>
 <#@ parameter type="System.String" name="_namespace" #>
 <#@ parameter type="System.String" name="className" #>
 <#@ parameter type="System.Collections.Generic.List<DataValuePair>" name="valueDataPairs" #>
-<#@ import namespace="Microsoft.CSharp" #>
-<#@ import namespace="System.Collections.Generic" #>
-<#@ import namespace="System.Text.RegularExpressions" #>
 <#@ import namespace="MHW_Template.Models" #>
 using MHW_Template;
 

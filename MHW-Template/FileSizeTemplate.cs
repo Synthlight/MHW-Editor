@@ -9,10 +9,6 @@
 // ------------------------------------------------------------------------------
 namespace MHW_Template
 {
-    using Microsoft.CSharp;
-    using System.Collections.Generic;
-    using System.Text.RegularExpressions;
-    using MHW_Template.Models;
     using System;
     
     /// <summary>
@@ -31,14 +27,14 @@ namespace MHW_Template
         {
             this.Write("using System.Collections.Generic;\r\n\r\nnamespace ");
             
-            #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
+            #line 10 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public static class ");
             
-            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
+            #line 11 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
@@ -46,7 +42,7 @@ namespace MHW_Template
             this.Write(" {\r\n        public static readonly Dictionary<string, ulong> FILE_SIZE_MAP = new " +
                     "Dictionary<string, ulong> {\r\n");
             
-            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
+            #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
 
     foreach (var entry in map) {
 
@@ -55,21 +51,21 @@ namespace MHW_Template
             #line hidden
             this.Write("            {\"");
             
-            #line 20 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.Key));
             
             #line default
             #line hidden
             this.Write("\", ");
             
-            #line 20 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.Value));
             
             #line default
             #line hidden
             this.Write("},\r\n");
             
-            #line 21 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
+            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
 
     }
 
