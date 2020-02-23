@@ -56,7 +56,6 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            // TODO: This doesn't update when lang is changed.
             [SortOrder(100)]
             [DisplayName("Item Id")]
             [CustomSorter(typeof(UInt16Sorter))]

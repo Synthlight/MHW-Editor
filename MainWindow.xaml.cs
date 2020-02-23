@@ -64,7 +64,7 @@ namespace MHW_Editor {
             get => locale;
             set {
                 locale = value;
-                foreach (MhwItem item in items) { // Won't warn about duplicate names, but avoid them nonetheless.
+                foreach (MhwItem item in dg_items.Items) {
                     item.OnPropertyChanged(nameof(IMhwItem.Name),
                                            nameof(SkillDat.Name_And_Id),
                                            nameof(SkillDat.Description));
@@ -79,7 +79,7 @@ namespace MHW_Editor {
             get => showIdBeforeName;
             set {
                 showIdBeforeName = value;
-                foreach (MhwItem item in items) { // Won't warn about duplicate names, but avoid them nonetheless.
+                foreach (MhwItem item in dg_items.Items) {
                     item.OnPropertyChanged(nameof(SkillDat.Name_And_Id),
                                            nameof(MusicSkill.Song_Id));
 
