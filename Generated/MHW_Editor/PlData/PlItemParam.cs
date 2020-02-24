@@ -12,17 +12,17 @@ namespace MHW_Editor.PlData {
         public const string EncryptionKey = "j1P15gEkgVa7NdFxiqwCPitykHctY2nZPjSaElvqb0eSwcLO1cOlTqqv";
         public override string UniqueId => $"0";
 
-        public const string Unk1_displayName = "Unk1";
-        public const int Unk1_sortIndex = 50;
-        [SortOrder(Unk1_sortIndex)]
-        [DisplayName(Unk1_displayName)]
-        public virtual float Unk1 {
+        public const string Powder_Radius_displayName = "Powder Radius";
+        public const int Powder_Radius_sortIndex = 50;
+        [SortOrder(Powder_Radius_sortIndex)]
+        [DisplayName(Powder_Radius_displayName)]
+        public virtual float Powder_Radius {
             get => GetData<float>(8);
             set {
                 if (GetData<float>(8) == value) return;
-                SetData(8, value, nameof(Unk1));
+                SetData(8, value, nameof(Powder_Radius));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk1));
+                OnPropertyChanged(nameof(Powder_Radius));
             }
         }
 
@@ -544,17 +544,17 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Herbal_Powder_Power_displayName = "Herbal Powder Power";
-        public const int Herbal_Powder_Power_sortIndex = 1950;
-        [SortOrder(Herbal_Powder_Power_sortIndex)]
-        [DisplayName(Herbal_Powder_Power_displayName)]
-        public virtual ushort Herbal_Powder_Power {
+        public const string Unk16_displayName = "Unk16";
+        public const int Unk16_sortIndex = 1950;
+        [SortOrder(Unk16_sortIndex)]
+        [DisplayName(Unk16_displayName)]
+        public virtual ushort Unk16 {
             get => GetData<ushort>(110);
             set {
                 if (GetData<ushort>(110) == value) return;
-                SetData(110, value, nameof(Herbal_Powder_Power));
+                SetData(110, value, nameof(Unk16));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Herbal_Powder_Power));
+                OnPropertyChanged(nameof(Unk16));
             }
         }
 
@@ -586,17 +586,17 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Unk16_displayName = "Unk16";
-        public const int Unk16_sortIndex = 2100;
-        [SortOrder(Unk16_sortIndex)]
-        [DisplayName(Unk16_displayName)]
-        public virtual ushort Unk16 {
+        public const string Herbal_Powder_Power_displayName = "Herbal Powder Power";
+        public const int Herbal_Powder_Power_sortIndex = 2100;
+        [SortOrder(Herbal_Powder_Power_sortIndex)]
+        [DisplayName(Herbal_Powder_Power_displayName)]
+        public virtual ushort Herbal_Powder_Power {
             get => GetData<ushort>(116);
             set {
                 if (GetData<ushort>(116) == value) return;
-                SetData(116, value, nameof(Unk16));
+                SetData(116, value, nameof(Herbal_Powder_Power));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk16));
+                OnPropertyChanged(nameof(Herbal_Powder_Power));
             }
         }
 
@@ -782,17 +782,17 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Unk25_displayName = "Unk25";
-        public const int Unk25_sortIndex = 2800;
-        [SortOrder(Unk25_sortIndex)]
-        [DisplayName(Unk25_displayName)]
-        public virtual ushort Unk25 {
+        public const string Burnt_Meat_Stamina_Recovery_displayName = "Burnt Meat Stamina Recovery";
+        public const int Burnt_Meat_Stamina_Recovery_sortIndex = 2800;
+        [SortOrder(Burnt_Meat_Stamina_Recovery_sortIndex)]
+        [DisplayName(Burnt_Meat_Stamina_Recovery_displayName)]
+        public virtual ushort Burnt_Meat_Stamina_Recovery {
             get => GetData<ushort>(152);
             set {
                 if (GetData<ushort>(152) == value) return;
-                SetData(152, value, nameof(Unk25));
+                SetData(152, value, nameof(Burnt_Meat_Stamina_Recovery));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk25));
+                OnPropertyChanged(nameof(Burnt_Meat_Stamina_Recovery));
             }
         }
 
@@ -978,87 +978,87 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Unk39_displayName = "Unk39";
-        public const int Unk39_sortIndex = 3500;
-        [SortOrder(Unk39_sortIndex)]
-        [DisplayName(Unk39_displayName)]
-        public virtual uint Unk39 {
+        public const string Whetstone_Sharpness_Restored_displayName = "Whetstone Sharpness Restored";
+        public const int Whetstone_Sharpness_Restored_sortIndex = 3500;
+        [SortOrder(Whetstone_Sharpness_Restored_sortIndex)]
+        [DisplayName(Whetstone_Sharpness_Restored_displayName)]
+        public virtual uint Whetstone_Sharpness_Restored {
             get => GetData<uint>(201);
             set {
                 if (GetData<uint>(201) == value) return;
-                SetData(201, value, nameof(Unk39));
+                SetData(201, value, nameof(Whetstone_Sharpness_Restored));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk39));
+                OnPropertyChanged(nameof(Whetstone_Sharpness_Restored));
             }
         }
 
-        public const string Unk40_displayName = "Unk40";
-        public const int Unk40_sortIndex = 3550;
-        [SortOrder(Unk40_sortIndex)]
-        [DisplayName(Unk40_displayName)]
-        public virtual uint Unk40 {
+        public const string Whetstone_Cycles_displayName = "Whetstone Cycles";
+        public const int Whetstone_Cycles_sortIndex = 3550;
+        [SortOrder(Whetstone_Cycles_sortIndex)]
+        [DisplayName(Whetstone_Cycles_displayName)]
+        public virtual uint Whetstone_Cycles {
             get => GetData<uint>(205);
             set {
                 if (GetData<uint>(205) == value) return;
-                SetData(205, value, nameof(Unk40));
+                SetData(205, value, nameof(Whetstone_Cycles));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk40));
+                OnPropertyChanged(nameof(Whetstone_Cycles));
             }
         }
 
-        public const string Unk41_displayName = "Unk41";
-        public const int Unk41_sortIndex = 3600;
-        [SortOrder(Unk41_sortIndex)]
-        [DisplayName(Unk41_displayName)]
-        public virtual uint Unk41 {
+        public const string Whetfish_Scale_Sharpness_Restored_displayName = "Whetfish Scale Sharpness Restored";
+        public const int Whetfish_Scale_Sharpness_Restored_sortIndex = 3600;
+        [SortOrder(Whetfish_Scale_Sharpness_Restored_sortIndex)]
+        [DisplayName(Whetfish_Scale_Sharpness_Restored_displayName)]
+        public virtual uint Whetfish_Scale_Sharpness_Restored {
             get => GetData<uint>(209);
             set {
                 if (GetData<uint>(209) == value) return;
-                SetData(209, value, nameof(Unk41));
+                SetData(209, value, nameof(Whetfish_Scale_Sharpness_Restored));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk41));
+                OnPropertyChanged(nameof(Whetfish_Scale_Sharpness_Restored));
             }
         }
 
-        public const string Unk42_displayName = "Unk42";
-        public const int Unk42_sortIndex = 3650;
-        [SortOrder(Unk42_sortIndex)]
-        [DisplayName(Unk42_displayName)]
-        public virtual byte Unk42 {
+        public const string Whetfish_Scale_Cycles_displayName = "Whetfish Scale Cycles";
+        public const int Whetfish_Scale_Cycles_sortIndex = 3650;
+        [SortOrder(Whetfish_Scale_Cycles_sortIndex)]
+        [DisplayName(Whetfish_Scale_Cycles_displayName)]
+        public virtual byte Whetfish_Scale_Cycles {
             get => GetData<byte>(213);
             set {
                 if (GetData<byte>(213) == value) return;
-                SetData(213, value, nameof(Unk42));
+                SetData(213, value, nameof(Whetfish_Scale_Cycles));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk42));
+                OnPropertyChanged(nameof(Whetfish_Scale_Cycles));
             }
         }
 
-        public const string Unk43_displayName = "Unk43";
-        public const int Unk43_sortIndex = 3700;
-        [SortOrder(Unk43_sortIndex)]
-        [DisplayName(Unk43_displayName)]
-        public virtual byte Unk43 {
+        public const string Whetfish_Scale_Plus_Cycles_displayName = "Whetfish Scale Plus Cycles";
+        public const int Whetfish_Scale_Plus_Cycles_sortIndex = 3700;
+        [SortOrder(Whetfish_Scale_Plus_Cycles_sortIndex)]
+        [DisplayName(Whetfish_Scale_Plus_Cycles_displayName)]
+        public virtual byte Whetfish_Scale_Plus_Cycles {
             get => GetData<byte>(214);
             set {
                 if (GetData<byte>(214) == value) return;
-                SetData(214, value, nameof(Unk43));
+                SetData(214, value, nameof(Whetfish_Scale_Plus_Cycles));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk43));
+                OnPropertyChanged(nameof(Whetfish_Scale_Plus_Cycles));
             }
         }
 
-        public const string Unk44_displayName = "Unk44";
-        public const int Unk44_sortIndex = 3750;
-        [SortOrder(Unk44_sortIndex)]
-        [DisplayName(Unk44_displayName)]
-        public virtual byte Unk44 {
+        public const string Whetfish_Scale_Consume__displayName = "Whetfish Scale Consume %";
+        public const int Whetfish_Scale_Consume__sortIndex = 3750;
+        [SortOrder(Whetfish_Scale_Consume__sortIndex)]
+        [DisplayName(Whetfish_Scale_Consume__displayName)]
+        public virtual byte Whetfish_Scale_Consume_ {
             get => GetData<byte>(215);
             set {
                 if (GetData<byte>(215) == value) return;
-                SetData(215, value, nameof(Unk44));
+                SetData(215, value, nameof(Whetfish_Scale_Consume_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk44));
+                OnPropertyChanged(nameof(Whetfish_Scale_Consume_));
             }
         }
 
@@ -1916,45 +1916,45 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Unk106_displayName = "Unk106";
-        public const int Unk106_sortIndex = 6850;
-        [SortOrder(Unk106_sortIndex)]
-        [DisplayName(Unk106_displayName)]
-        public virtual byte Unk106 {
+        public const string Deathcream_455_499_are_fishing_rumble_displayName = "Deathcream: 455-499 are fishing rumble";
+        public const int Deathcream_455_499_are_fishing_rumble_sortIndex = 6850;
+        [SortOrder(Deathcream_455_499_are_fishing_rumble_sortIndex)]
+        [DisplayName(Deathcream_455_499_are_fishing_rumble_displayName)]
+        public virtual byte Deathcream_455_499_are_fishing_rumble {
             get => GetData<byte>(445);
             set {
                 if (GetData<byte>(445) == value) return;
-                SetData(445, value, nameof(Unk106));
+                SetData(445, value, nameof(Deathcream_455_499_are_fishing_rumble));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Deathcream_455_499_are_fishing_rumble));
+            }
+        }
+
+        public const string and_skipped_for_now__displayName = "and skipped for now.";
+        public const int and_skipped_for_now__sortIndex = 6900;
+        [SortOrder(and_skipped_for_now__sortIndex)]
+        [DisplayName(and_skipped_for_now__displayName)]
+        public virtual uint and_skipped_for_now_ {
+            get => GetData<uint>(446);
+            set {
+                if (GetData<uint>(446) == value) return;
+                SetData(446, value, nameof(and_skipped_for_now_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(and_skipped_for_now_));
+            }
+        }
+
+        public const string Unk106_displayName = "Unk106";
+        public const int Unk106_sortIndex = 6950;
+        [SortOrder(Unk106_sortIndex)]
+        [DisplayName(Unk106_displayName)]
+        public virtual float Unk106 {
+            get => GetData<float>(500);
+            set {
+                if (GetData<float>(500) == value) return;
+                SetData(500, value, nameof(Unk106));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk106));
-            }
-        }
-
-        public const string Getting_lost_here__displayName = "Getting lost here.";
-        public const int Getting_lost_here__sortIndex = 6900;
-        [SortOrder(Getting_lost_here__sortIndex)]
-        [DisplayName(Getting_lost_here__displayName)]
-        public virtual byte Getting_lost_here_ {
-            get => GetData<byte>(446);
-            set {
-                if (GetData<byte>(446) == value) return;
-                SetData(446, value, nameof(Getting_lost_here_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Getting_lost_here_));
-            }
-        }
-
-        public const string Some_ints_now__displayName = "Some ints now?";
-        public const int Some_ints_now__sortIndex = 6950;
-        [SortOrder(Some_ints_now__sortIndex)]
-        [DisplayName(Some_ints_now__displayName)]
-        public virtual byte Some_ints_now_ {
-            get => GetData<byte>(447);
-            set {
-                if (GetData<byte>(447) == value) return;
-                SetData(447, value, nameof(Some_ints_now_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Some_ints_now_));
             }
         }
 
@@ -1962,11 +1962,11 @@ namespace MHW_Editor.PlData {
         public const int Unk107_sortIndex = 7000;
         [SortOrder(Unk107_sortIndex)]
         [DisplayName(Unk107_displayName)]
-        public virtual byte Unk107 {
-            get => GetData<byte>(448);
+        public virtual float Unk107 {
+            get => GetData<float>(504);
             set {
-                if (GetData<byte>(448) == value) return;
-                SetData(448, value, nameof(Unk107));
+                if (GetData<float>(504) == value) return;
+                SetData(504, value, nameof(Unk107));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk107));
             }
@@ -1976,30 +1976,16 @@ namespace MHW_Editor.PlData {
         public const int Unk108_sortIndex = 7050;
         [SortOrder(Unk108_sortIndex)]
         [DisplayName(Unk108_displayName)]
-        public virtual byte Unk108 {
-            get => GetData<byte>(449);
+        public virtual float Unk108 {
+            get => GetData<float>(508);
             set {
-                if (GetData<byte>(449) == value) return;
-                SetData(449, value, nameof(Unk108));
+                if (GetData<float>(508) == value) return;
+                SetData(508, value, nameof(Unk108));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk108));
             }
         }
 
-        public const string Skipping_last_62_for_now__displayName = "Skipping last 62 for now.";
-        public const int Skipping_last_62_for_now__sortIndex = 7100;
-        [SortOrder(Skipping_last_62_for_now__sortIndex)]
-        [DisplayName(Skipping_last_62_for_now__displayName)]
-        public virtual float Skipping_last_62_for_now_ {
-            get => GetData<float>(450);
-            set {
-                if (GetData<float>(450) == value) return;
-                SetData(450, value, nameof(Skipping_last_62_for_now_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Skipping_last_62_for_now_));
-            }
-        }
-
-        public const int lastSortIndex = 7150;
+        public const int lastSortIndex = 7100;
     }
 }

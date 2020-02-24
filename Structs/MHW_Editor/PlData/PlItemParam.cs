@@ -4,7 +4,7 @@ namespace MHW_Editor.PlData {
     // Struct Size: "512"
     // Unique Id Formula: "0"
     public struct PlItemParam {
-        public float Unk1; // Offset: 8
+        public float Powder_Radius; // Offset: 8
         public uint Potion_Power; // Offset: 12
         public float Unk2; // Offset: 16
         public float Unk3; // Offset: 20
@@ -42,10 +42,10 @@ namespace MHW_Editor.PlData {
         public byte Mega_Demondrug_Power; // Offset: 107
         public byte Armorskin_Power; // Offset: 108
         public byte Mega_Armorskin_Power; // Offset: 109
-        public ushort Herbal_Powder_Power; // Offset: 110
+        public ushort Unk16; // Offset: 110
         public ushort Lifepowder_Power; // Offset: 112
         public ushort Dust_of_Life_Power; // Offset: 114
-        public ushort Unk16; // Offset: 116
+        public ushort Herbal_Powder_Power; // Offset: 116
         public ushort Demon_Powder_Power; // Offset: 118
         public ushort Demon_Powder_Duration; // Offset: 120
         public ushort Hardshell_Powder_Power; // Offset: 122
@@ -59,7 +59,7 @@ namespace MHW_Editor.PlData {
         public float Unk22; // Offset: 140
         public float Unk23; // Offset: 144
         public float Unk24; // Offset: 148
-        public ushort Unk25; // Offset: 152
+        public ushort Burnt_Meat_Stamina_Recovery; // Offset: 152
         public short Unk26; // Offset: 154
         public byte Unk27; // Offset: 156
         public float Unk28; // Offset: 157
@@ -73,12 +73,12 @@ namespace MHW_Editor.PlData {
         public float Unk36; // Offset: 189
         public float Unk37; // Offset: 193
         public float Unk38; // Offset: 197
-        public uint Unk39; // Offset: 201
-        public uint Unk40; // Offset: 205
-        public uint Unk41; // Offset: 209
-        public byte Unk42; // Offset: 213
-        public byte Unk43; // Offset: 214
-        public byte Unk44; // Offset: 215
+        public uint Whetstone_Sharpness_Restored; // Offset: 201
+        public uint Whetstone_Cycles; // Offset: 205
+        public uint Whetfish_Scale_Sharpness_Restored; // Offset: 209
+        public byte Whetfish_Scale_Cycles; // Offset: 213
+        public byte Whetfish_Scale_Plus_Cycles; // Offset: 214
+        public byte Whetfish_Scale_Consume_; // Offset: 215
         public byte Powertalon_Power; // Offset: 216
         public byte Powercharm_Power; // Offset: 217
         public byte Armortalon_Power; // Offset: 218
@@ -140,11 +140,10 @@ namespace MHW_Editor.PlData {
         public float Unk103; // Offset: 433
         public float Unk104; // Offset: 437
         public float Unk105; // Offset: 441
-        public byte Unk106; // Offset: 445
-        public byte Getting_lost_here_; // Offset: 446
-        public byte Some_ints_now_; // Offset: 447
-        public byte Unk107; // Offset: 448
-        public byte Unk108; // Offset: 449
-        public float Skipping_last_62_for_now_; // Offset: 450
+        public byte Deathcream_455_499_are_fishing_rumble; // Offset: 445
+        public uint and_skipped_for_now_; // Offset: 446
+        public float Unk106; // Offset: 500
+        public float Unk107; // Offset: 504
+        public float Unk108; // Offset: 508
     }
 }
