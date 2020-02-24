@@ -12,6 +12,6 @@ namespace MHW_Editor.Items {
 
         [SortOrder(lastSortIndex + 1)]
         [DisplayName("Description")]
-        public string Description => DataHelper.bountyDataDescriptions[MainWindow.locale].TryGet(Id, "Unknown").Replace("\r\n", " ");
+        public string Description => DataHelper.bountyDataDescriptions[MainWindow.locale].TryGet(Id, "Unknown");
     }
 }

@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 namespace MHW_Editor.Assets {
     public static class DataHelper {
         public static readonly Dictionary<string, Dictionary<ushort, IdNamePair>> itemData = new Dictionary<string, Dictionary<ushort, IdNamePair>>();
+        public static readonly Dictionary<string, Dictionary<ushort, string>> itemDataDescriptions = new Dictionary<string, Dictionary<ushort, string>>();
         public static readonly Dictionary<string, Dictionary<ushort, IdNamePair>> skillData = new Dictionary<string, Dictionary<ushort, IdNamePair>>();
         public static readonly Dictionary<string, Dictionary<ushort, string>> skillDataDescriptions = new Dictionary<string, Dictionary<ushort, string>>();
         public static readonly Dictionary<string, Dictionary<ushort, string>> armorData = new Dictionary<string, Dictionary<ushort, string>>();
@@ -42,6 +43,7 @@ namespace MHW_Editor.Assets {
 
         private static void ParseItemData(string lang) {
             itemData[lang] = new Dictionary<ushort, IdNamePair>();
+            itemDataDescriptions[lang] = new Dictionary<ushort, string>();
 
             var rawItemData = LoadDict<uint, string>(GetAsset($"{lang}_itemData"));
             rawItemData[0] = "--------";
@@ -52,6 +54,7 @@ namespace MHW_Editor.Assets {
                 var value = new IdNamePair(key, rawItemData[index]);
 
                 itemData[lang][key] = value;
+                itemDataDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
             }
         }
 
@@ -66,10 +69,9 @@ namespace MHW_Editor.Assets {
             for (uint index = 0; index < rawSkillData.Count; index += step) {
                 var key = (ushort) (index / step);
                 var value = new IdNamePair(key, rawSkillData[index]);
-                var desc = rawSkillData[index + 2].Replace("\r\n", " ");
 
                 skillData[lang][key] = value;
-                skillDataDescriptions[lang][key] = desc;
+                skillDataDescriptions[lang][key] = rawSkillData[index + 2].Replace("\r\n", " ");
             }
         }
 
@@ -92,7 +94,7 @@ namespace MHW_Editor.Assets {
                 var key = index / step;
 
                 bountyData[lang][key] = rawItemData[index];
-                bountyDataDescriptions[lang][key] = rawItemData[index + 1];
+                bountyDataDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
             }
         }
 
@@ -107,7 +109,7 @@ namespace MHW_Editor.Assets {
                 var key = index / step;
 
                 mantleData[lang][key] = rawItemData[index];
-                mantleDataDescriptions[lang][key] = rawItemData[index + 1];
+                mantleDataDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
             }
         }
 

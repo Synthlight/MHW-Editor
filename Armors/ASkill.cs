@@ -12,7 +12,7 @@ namespace MHW_Editor.Armors {
 
         [SortOrder(lastSortIndex + 1)]
         [DisplayName("Description")]
-        public string Description => DataHelper.mantleDataDescriptions[MainWindow.locale].TryGet((ushort) Index, "Unknown").Replace("\r\n", " ");
+        public string Description => DataHelper.mantleDataDescriptions[MainWindow.locale].TryGet((ushort) Index, "Unknown");
 
         [SortOrder(0)]
         public ulong Index => (Offset - InitialOffset) / StructSize;

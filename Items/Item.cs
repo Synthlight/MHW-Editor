@@ -11,6 +11,10 @@ namespace MHW_Editor.Items {
 
         public override string Name => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Id, IdNamePair.Unknown((ushort) Id)).name;
 
+        [SortOrder(lastSortIndex + 1)]
+        [DisplayName("Description")]
+        public string Description => DataHelper.itemDataDescriptions[MainWindow.locale].TryGet((ushort) Id, "Unknown");
+
         [SortOrder(Flags_Raw_sortIndex)]
         public uint Flags {
             get => Flags_Raw;
