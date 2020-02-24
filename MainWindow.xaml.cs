@@ -868,7 +868,7 @@ namespace MHW_Editor {
             var changesSaved = false;
 
             foreach (MhwItem item in items) {
-                if (item.Offset == 0 || item.changed.Count == 0) continue;
+                if (item.changed.Count == 0) continue;
 
                 dat.BaseStream.Seek((long) item.Offset, SeekOrigin.Begin);
                 dat.Write(item.Bytes);
@@ -898,8 +898,6 @@ namespace MHW_Editor {
             if (fileName != changesToLoad.targetFile && changesToLoad.targetFile != "*") return;
 
             foreach (MhwItem item in items) {
-                if (item.Offset == 0) continue;
-
                 var id = item.UniqueId;
                 var changedItems = changesToLoad.changes.TryGet(id, null);
                 if (changedItems == null) {
@@ -921,7 +919,7 @@ namespace MHW_Editor {
                 }
             }
 
-            if (targetFileType.Is(typeof(QuestReward))) {
+            if (targetFileType.IsGeneric(typeof(IHasCustomView<>))) {
                 ((ListCollectionView) dg_items.ItemsSource).Refresh();
             }
 #if !DEBUG
@@ -944,7 +942,7 @@ namespace MHW_Editor {
             };
 
             foreach (MhwItem item in items) {
-                if (item.Offset == 0 || item.changed.Count == 0) continue;
+                if (item.changed.Count == 0) continue;
 
                 var id = item.UniqueId;
                 changesToSave.changes[id] = new Dictionary<string, object>();
