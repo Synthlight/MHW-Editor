@@ -9,7 +9,7 @@ using MHW_Template.Weapons;
 using MHW_Template.Weapons.Model;
 
 namespace MHW_Generator {
-    public static class Program {
+    public static partial class Program {
         [STAThread]
         public static void Main() {
             GenItem();
@@ -62,6 +62,8 @@ namespace MHW_Generator {
             GenItemDelivery();
             GenLimitBreakMaterialBase();
             GenLimitBreakMaterialSkill();
+
+            GenCommonPl();
         }
 
         private static void GenLimitBreakMaterialSkill() {

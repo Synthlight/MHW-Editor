@@ -15,6 +15,21 @@ namespace MHW_Editor {
             return types.Any(type => type.IsAssignableFrom(source));
         }
 
+        public static bool IsGeneric(this Type source, Type genericType) {
+            while (source != null && source != typeof(object)) {
+                var cur = source.IsGenericType ? source.GetGenericTypeDefinition() : source;
+                if (genericType == cur) {
+                    return true;
+                }
+
+                if (source.GetInterfaces().Any(@interface => @interface.IsGeneric(genericType))) return true;
+
+                source = source.BaseType;
+            }
+
+            return false;
+        }
+
         public static Visibility VisibleIfTrue(this bool b) {
             return b ? Visibility.Visible : Visibility.Collapsed;
         }

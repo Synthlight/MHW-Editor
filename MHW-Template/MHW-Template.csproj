@@ -68,6 +68,11 @@
     <Compile Include="Items\ItemSubType.cs" />
     <Compile Include="Items\ItemCategory.cs" />
     <Compile Include="Items\ItemType.cs" />
+    <Compile Include="PlDataItemTemplate.cs">
+      <DependentUpon>PlDataItemTemplate.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Models\DataSourceAttribute.cs" />
     <Compile Include="FileSizeTemplate.cs">
       <DependentUpon>FileSizeTemplate.tt</DependentUpon>
@@ -123,6 +128,10 @@
     <Content Include="FileSizeTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>FileSizeTemplate.cs</LastGenOutput>
+    </Content>
+    <Content Include="PlDataItemTemplate.tt">
+      <Generator>TextTemplatingFilePreProcessor</Generator>
+      <LastGenOutput>PlDataItemTemplate.cs</LastGenOutput>
     </Content>
     <Content Include="ValueClassTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>

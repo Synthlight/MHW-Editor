@@ -7,7 +7,7 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Items {
-    public partial class QuestReward : MhwItem {
+    public partial class QuestReward : MhwItem, IHasCustomView<QuestReward.QuestRewardInternal> {
         public QuestReward(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 

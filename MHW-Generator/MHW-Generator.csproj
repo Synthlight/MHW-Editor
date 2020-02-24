@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="Program.pl.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MHW-Template\MHW-Template.csproj">

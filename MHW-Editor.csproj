@@ -128,6 +128,8 @@
     <Compile Include="Generated\MHW_Editor\Items\SwapN.cs" />
     <Compile Include="Generated\MHW_Editor\Items\Treasure.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ValueTrader.cs" />
+    <Compile Include="Generated\MHW_Editor\PlData\PlItemParam.cs" />
+    <Compile Include="Generated\MHW_Editor\PlData\PlItemParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\MusicSkill.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\CustomParts.cs" />
@@ -172,10 +174,13 @@
     <Compile Include="Models\CustomSorterAttribute.cs" />
     <Compile Include="Models\ICustomSorter.cs" />
     <Compile Include="Models\IdNamePair.cs" />
+    <Compile Include="Models\IHasCustomView.cs" />
     <Compile Include="Models\JsonChanges.cs" />
+    <Compile Include="Models\PlItemCustomView.cs" />
     <Compile Include="Models\SortOrderAttribute.cs" />
     <Compile Include="Models\UInt16Sorter.cs" />
     <Compile Include="Models\VersionCheck.cs" />
+    <Compile Include="PlData\PlItemParam.cs" />
     <Compile Include="Skills\MusicSkill.cs" />
     <Compile Include="Skills\SkillDat.cs" />
     <Compile Include="Gems\Gem.cs" />

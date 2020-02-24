@@ -1,0 +1,33 @@
+﻿<#@ template language="C#" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(TargetDir)\MHW-Template.dll" #>
+<#@ parameter type="System.String" name="_namespace" #>
+<#@ parameter type="System.String" name="className" #>
+<#@ parameter type="MHW_Template.MhwStructData" name="structData" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+using System.Collections.ObjectModel;
+using MHW_Editor.Models;
+
+namespace <#= _namespace #> {
+    public partial class <#= className #> {
+        public ObservableCollection<PlItemCustomView> GetCustomView() {
+            return new ObservableCollection<PlItemCustomView> {
+<#
+    foreach (var entry in structData.entries) {
+        var accessLevel = entry.accessLevel;
+        var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+
+        // Don't need now, but uncomment in the future if we need to override a generated property.
+        if (accessLevel == "private") continue;
+
+#>
+                new PlItemCustomView(this, "<#= entry.displayName #>", "<#= name #>", Bytes, Offset),
+<#
+    } // End loop.
+#>
+            };
+        }
+    }<# // End class. #>
+
+}

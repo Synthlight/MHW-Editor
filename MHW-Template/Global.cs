@@ -66,6 +66,7 @@ namespace MHW_Template {
             "*.owp_dat",
             "*.oam_dat",
             "*.plfe",
+            "*.plip",
             "*.plit",
             "*.rem",
             "*.rod_inse",

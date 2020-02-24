@@ -22,6 +22,7 @@ using MHW_Editor.Assets;
 using MHW_Editor.Gems;
 using MHW_Editor.Items;
 using MHW_Editor.Models;
+using MHW_Editor.PlData;
 using MHW_Editor.Skills;
 using MHW_Editor.Weapons;
 using MHW_Template;
@@ -97,7 +98,7 @@ namespace MHW_Editor {
                 // ReSharper disable StringLiteralTypo
                 //EncryptionHelper.Decrypt(EncryptionKeys.ASKILLP_KEY, $@"{Global.CHUNK_ROOT}\common\pl\askill_param.asp", $@"{Global.CHUNK_ROOT}\common\pl\askill_param.decrypted.asp");
                 //EncryptionHelper.Decrypt(EncryptionKeys.OWP_DAT_KEY, $@"{Global.CHUNK_ROOT}\hm\wp\wp12\shell\data\hbg_00_normal_1.shlp", $@"{Global.CHUNK_ROOT}\hm\wp\wp12\shell\data\hbg_00_normal_1.decrypted.asp");
-                //EncryptionHelper.Decrypt(EncryptionKeys.PL_PARAM_KEY, $@"{Global.CHUNK_ROOT}\common\pl\pl_item_param.plip", $@"{Global.CHUNK_ROOT}\common\pl\pl_item_param.decrypted.asp");
+                //EncryptionHelper.Decrypt(EncryptionKeys.PL_PARAM_KEY, $@"{Global.CHUNK_ROOT}\common\pl\pl_item_param.plip", $@"{Global.CHUNK_ROOT}\common\pl\pl_item_param.decrypted.plip");
                 Close();
                 return;
             }
@@ -607,8 +608,8 @@ namespace MHW_Editor {
             dg_items.ItemsSource = null;
 
             // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
-            if (targetFileType.Is(typeof(QuestReward))) {
-                dg_items.ItemsSource = new ListCollectionView(((QuestReward) items[0]).GetCustomView());
+            if (targetFileType.IsGeneric(typeof(IHasCustomView<>))) {
+                dg_items.ItemsSource = new ListCollectionView(items[0].GetCustomView());
             } else {
                 dg_items.ItemsSource = new ListCollectionView(items);
             }
@@ -1027,6 +1028,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".oam_dat")) return typeof(OtomoArmorDat);
             if (fileName.EndsWith(".owp_dat")) return typeof(OtomoWeaponDat);
             if (fileName.EndsWith(".plfe")) return typeof(PlantFertilizer);
+            if (fileName.EndsWith(".plip")) return typeof(PlItemParam);
             if (fileName.EndsWith(".plit")) return typeof(PlantItem);
             if (fileName.EndsWith(".rod_inse")) return typeof(RodInsect);
             if (fileName.EndsWith(".rem")) return typeof(QuestReward);
