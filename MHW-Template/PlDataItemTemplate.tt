@@ -22,7 +22,7 @@ namespace <#= _namespace #> {
         if (accessLevel == "private") continue;
 
 #>
-                new PlItemCustomView(this, "<#= entry.displayName #>", "<#= name #>", Bytes, Offset),
+                new PlItemCustomView(this, "<#= entry.displayName #>", "<#= name #>", Bytes, <#= entry.offset #>),
 <#
     } // End loop.
 #>

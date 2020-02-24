@@ -70,7 +70,14 @@ namespace MHW_Template
             
             #line default
             #line hidden
-            this.Write("\", Bytes, Offset),\r\n");
+            this.Write("\", Bytes, ");
+            
+            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(entry.offset));
+            
+            #line default
+            #line hidden
+            this.Write("),\r\n");
             
             #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
 

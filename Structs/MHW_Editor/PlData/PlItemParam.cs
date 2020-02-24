@@ -13,21 +13,21 @@ namespace MHW_Editor.PlData {
         public float Unk5; // Offset: 32
         public float Unk6; // Offset: 36
         public float Unk7; // Offset: 40
-        public byte Unk8; // Offset: 44
+        public byte Nutrients_Power; // Offset: 44
         public byte Mega_Nutrients_Power; // Offset: 45
         public byte Unk9; // Offset: 46
         public float Mega_Dash_Juice_Stamina_Power; // Offset: 47
         public float Dash_Juice_Stamina_Power; // Offset: 51
         public ushort Both_Dash_Juice_Duration; // Offset: 55
         public byte Both_Dash_Juice_Power; // Offset: 57
-        public float Unk10; // Offset: 58
-        public ushort Unk11; // Offset: 62
+        public float Immunizer_Power; // Offset: 58
+        public ushort Immunizer_Duration; // Offset: 62
         public float Astera_Jerky_Power; // Offset: 64
         public ushort Astera_Jerky_Duration; // Offset: 68
-        public ushort Unk12; // Offset: 70
-        public uint Unk13; // Offset: 72
-        public uint Unk14; // Offset: 76
-        public float Unk15; // Offset: 80
+        public ushort Herbal_Medicine_Power; // Offset: 70
+        public uint Sushifish_Scale_Power; // Offset: 72
+        public uint Great_Sushifish_Scale_Power; // Offset: 76
+        public float Great_Sushifish_Scale_Duration; // Offset: 80
         public ushort Cool_Drink_Duration; // Offset: 84
         public ushort Hot_Drink_Duration; // Offset: 86
         public ushort Might_Seed_Duration; // Offset: 88
@@ -42,20 +42,20 @@ namespace MHW_Editor.PlData {
         public byte Mega_Demondrug_Power; // Offset: 107
         public byte Armorskin_Power; // Offset: 108
         public byte Mega_Armorskin_Power; // Offset: 109
-        public ushort Lifepowder_Power; // Offset: 110
-        public ushort Dustof_Life_Power; // Offset: 112
-        public ushort Herbal_Powder_Power; // Offset: 114
-        public ushort Demon_Powder_Power; // Offset: 116
-        public ushort Demon_Powder_Duration; // Offset: 118
-        public ushort Hardshell_Powder_Power; // Offset: 120
-        public ushort Hardshell_Powder_Duration; // Offset: 122
-        public ushort Unk16; // Offset: 124
+        public ushort Herbal_Powder_Power; // Offset: 110
+        public ushort Lifepowder_Power; // Offset: 112
+        public ushort Dust_of_Life_Power; // Offset: 114
+        public ushort Unk16; // Offset: 116
+        public ushort Demon_Powder_Power; // Offset: 118
+        public ushort Demon_Powder_Duration; // Offset: 120
+        public ushort Hardshell_Powder_Power; // Offset: 122
+        public ushort Hardshell_Powder_Duration; // Offset: 124
         public ushort Unk17; // Offset: 126
         public ushort Unk18; // Offset: 128
         public ushort Unk19; // Offset: 130
         public ushort Unk20; // Offset: 132
-        public ushort Unk21; // Offset: 134
-        public uint Well_Done_Steak_Something; // Offset: 136
+        public ushort Ration_Power; // Offset: 134
+        public uint Well_Done_Steak_Multiplier; // Offset: 136
         public float Unk22; // Offset: 140
         public float Unk23; // Offset: 144
         public float Unk24; // Offset: 148
@@ -76,5 +76,75 @@ namespace MHW_Editor.PlData {
         public uint Unk39; // Offset: 201
         public uint Unk40; // Offset: 205
         public uint Unk41; // Offset: 209
+        public byte Unk42; // Offset: 213
+        public byte Unk43; // Offset: 214
+        public byte Unk44; // Offset: 215
+        public byte Powertalon_Power; // Offset: 216
+        public byte Powercharm_Power; // Offset: 217
+        public byte Armortalon_Power; // Offset: 218
+        public byte Armorcharm_Power; // Offset: 219
+        public byte Unk49; // Offset: 220
+        public float Unk50; // Offset: 221
+        public float Unk51; // Offset: 225
+        public float Unk52; // Offset: 229
+        public float Unk53; // Offset: 233
+        public float Unk54; // Offset: 237
+        public float Unk55; // Offset: 241
+        public float Unk56; // Offset: 245
+        public float Unk57; // Offset: 249
+        public float Unk58; // Offset: 253
+        public float Unk59; // Offset: 257
+        public float Unk60; // Offset: 261
+        public float Unk61; // Offset: 265
+        public float Unk62; // Offset: 269
+        public float Unk63; // Offset: 273
+        public float Unk64; // Offset: 277
+        public float Unk65; // Offset: 281
+        public float Unk66; // Offset: 285
+        public float Unk67; // Offset: 289
+        public float Unk68; // Offset: 293
+        public float Unk69; // Offset: 297
+        public float Unk70; // Offset: 301
+        public float Unk71; // Offset: 305
+        public float Unk72; // Offset: 309
+        public float Unk73; // Offset: 313
+        public float Unk74; // Offset: 317
+        public float Unk75; // Offset: 321
+        public float Unk76; // Offset: 325
+        public float Unk77; // Offset: 329
+        public float Unk78; // Offset: 337
+        public float Unk79; // Offset: 341
+        public float Unk80; // Offset: 345
+        public float Unk81; // Offset: 349
+        public float Unk82; // Offset: 353
+        public float Unk83; // Offset: 357
+        public float Unk84; // Offset: 361
+        public float Unk85; // Offset: 365
+        public float Unk86; // Offset: 369
+        public float Unk87; // Offset: 373
+        public float Unk88; // Offset: 377
+        public float Unk89; // Offset: 381
+        public float Unk90; // Offset: 385
+        public float Unk91; // Offset: 389
+        public float Unk92; // Offset: 393
+        public float Unk93; // Offset: 397
+        public float Unk94; // Offset: 401
+        public float Unk95; // Offset: 405
+        public float Unk96; // Offset: 409
+        public float Unk97; // Offset: 413
+        public float Unk98; // Offset: 417
+        public float Unk99; // Offset: 417
+        public float Unk100; // Offset: 421
+        public float Unk101; // Offset: 425
+        public float Unk102; // Offset: 429
+        public float Unk103; // Offset: 433
+        public float Unk104; // Offset: 437
+        public float Unk105; // Offset: 441
+        public byte Unk106; // Offset: 445
+        public byte Getting_lost_here_; // Offset: 446
+        public byte Some_ints_now_; // Offset: 447
+        public byte Unk107; // Offset: 448
+        public byte Unk108; // Offset: 449
+        public float Skipping_last_62_for_now_; // Offset: 450
     }
 }
