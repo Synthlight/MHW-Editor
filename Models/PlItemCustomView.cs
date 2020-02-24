@@ -44,6 +44,22 @@ namespace MHW_Editor.Models {
 
         [SortOrder(50)]
         [DisplayName("Type")]
-        public string Type => propertyType.Name;
+        public string Type {
+            get {
+                switch (System.Type.GetTypeCode(propertyType)) {
+                    case TypeCode.Single: return "float";
+                    case TypeCode.Double: return "double";
+                    case TypeCode.Byte: return "uInt8";
+                    case TypeCode.SByte: return "sInt8";
+                    case TypeCode.UInt16: return "uInt16";
+                    case TypeCode.Int16: return "sInt16";
+                    case TypeCode.UInt32: return "uInt32";
+                    case TypeCode.Int32: return "sInt32";
+                    case TypeCode.Int64: return "sInt64";
+                    case TypeCode.UInt64: return "sInt64";
+                    default: throw new ArgumentOutOfRangeException();
+                }
+            }
+        }
     }
 }
