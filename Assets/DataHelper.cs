@@ -17,6 +17,8 @@ namespace MHW_Editor.Assets {
         public static readonly Dictionary<string, Dictionary<byte, string>> insectData = new Dictionary<string, Dictionary<byte, string>>();
         public static readonly Dictionary<string, Dictionary<uint, string>> bountyData = new Dictionary<string, Dictionary<uint, string>>();
         public static readonly Dictionary<string, Dictionary<uint, string>> bountyDataDescriptions = new Dictionary<string, Dictionary<uint, string>>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> mantleData = new Dictionary<string, Dictionary<uint, string>>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> mantleDataDescriptions = new Dictionary<string, Dictionary<uint, string>>();
 
         static DataHelper() {
             foreach (var lang in Global.LANGUAGES) {
@@ -24,6 +26,7 @@ namespace MHW_Editor.Assets {
                 ParseSkillData(lang);
                 ParseSongData();
                 ParseBountyData(lang);
+                ParseMantleData(lang);
 
                 armorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_armorData"));
                 otomoArmorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_otomo_armorData"));
@@ -90,6 +93,21 @@ namespace MHW_Editor.Assets {
 
                 bountyData[lang][key] = rawItemData[index];
                 bountyDataDescriptions[lang][key] = rawItemData[index + 1];
+            }
+        }
+
+        private static void ParseMantleData(string lang) {
+            mantleData[lang] = new Dictionary<uint, string>();
+            mantleDataDescriptions[lang] = new Dictionary<uint, string>();
+
+            var rawItemData = LoadDict<uint, string>(GetAsset($"{lang}_mantleData"));
+
+            const uint step = 4;
+            for (uint index = 0; index < rawItemData.Count; index += step) {
+                var key = index / step;
+
+                mantleData[lang][key] = rawItemData[index];
+                mantleDataDescriptions[lang][key] = rawItemData[index + 1];
             }
         }
 

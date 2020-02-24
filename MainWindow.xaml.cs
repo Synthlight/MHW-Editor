@@ -186,7 +186,6 @@ namespace MHW_Editor {
                     break;
                 case nameof(IMhwItem.Name): // None of the following have names.
                     e.Cancel = targetFileType.Is(typeof(ArmUp),
-                                                 typeof(ASkill),
                                                  typeof(CharmDat),
                                                  typeof(CustomParts),
                                                  typeof(CustomPartsR),
@@ -233,6 +232,7 @@ namespace MHW_Editor {
                     break;
                 case nameof(SkillDat.Index):
                     e.Cancel = targetFileType.Is(typeof(Armor),
+                                                 typeof(ASkill),
                                                  typeof(DecoGradeLottery),
                                                  typeof(DecoLottery),
                                                  typeof(Gem),

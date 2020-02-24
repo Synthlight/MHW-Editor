@@ -154,6 +154,9 @@
   <data name="ara_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ara_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ara_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\ara_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ara_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\ara_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -216,6 +219,9 @@
   </data>
   <data name="chS_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\chs_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\chs_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chS_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\chs_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -280,6 +286,9 @@
   <data name="chT_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="chT_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\cht_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chT_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\cht_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -342,6 +351,9 @@
   </data>
   <data name="eng_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\eng_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\eng_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="eng_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\eng_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -406,6 +418,9 @@
   <data name="fre_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\fre_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="fre_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\fre_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="fre_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\fre_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -468,6 +483,9 @@
   </data>
   <data name="ger_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ger_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\ger_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ger_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\ger_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -532,6 +550,9 @@
   <data name="ita_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ita_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ita_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\ita_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ita_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\ita_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -594,6 +615,9 @@
   </data>
   <data name="jpn_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\jpn_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\jpn_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="jpn_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\jpn_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -658,6 +682,9 @@
   <data name="kor_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\kor_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="kor_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\kor_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="kor_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\kor_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -720,6 +747,9 @@
   </data>
   <data name="pol_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\pol_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\pol_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pol_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\pol_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -784,6 +814,9 @@
   <data name="ptB_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ptb_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ptB_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\ptb_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ptB_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\ptb_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -846,6 +879,9 @@
   </data>
   <data name="rus_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rus_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\rus_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rus_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\rus_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -912,6 +948,9 @@
   </data>
   <data name="spa_l_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_l_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_mantleData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>mantledata\spa_mantledata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="spa_otomo_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>otomodata\spa_otomo_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
