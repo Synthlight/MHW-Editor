@@ -496,9 +496,9 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Unknown (int32) 1", 4, typeof(int))
             };
 
-            var index = 1;
+            var index = 0;
             for (ulong i = 8; i < size; i += 2) {
-                entries.Add(new MhwStructData.Entry($"Un {++index}", i, typeof(ushort)));
+                entries.Add(new MhwStructData.Entry($"It {index++}", i, typeof(ushort)));
             }
 
             GenerateItemProps("MHW_Editor.Items", "MelderExchange", new MhwStructData { // .mkex

@@ -97,6 +97,7 @@ namespace MHW_Editor {
                 // ReSharper disable StringLiteralTypo
                 //EncryptionHelper.Decrypt(EncryptionKeys.ASKILLP_KEY, $@"{Global.CHUNK_ROOT}\common\pl\askill_param.asp", $@"{Global.CHUNK_ROOT}\common\pl\askill_param.decrypted.asp");
                 //EncryptionHelper.Decrypt(EncryptionKeys.OWP_DAT_KEY, $@"{Global.CHUNK_ROOT}\hm\wp\wp12\shell\data\hbg_00_normal_1.shlp", $@"{Global.CHUNK_ROOT}\hm\wp\wp12\shell\data\hbg_00_normal_1.decrypted.asp");
+                //EncryptionHelper.Decrypt(EncryptionKeys.PL_PARAM_KEY, $@"{Global.CHUNK_ROOT}\common\pl\pl_item_param.plip", $@"{Global.CHUNK_ROOT}\common\pl\pl_item_param.decrypted.asp");
                 Close();
                 return;
             }
