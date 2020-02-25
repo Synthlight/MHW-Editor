@@ -15,7 +15,7 @@ namespace MHW_Editor.Gems {
         public string Name_And_Id => Name.ToStringWithId(Item_Id);
 
         [DisplayName("")]
-        public override string Name => DataHelper.itemData[MainWindow.locale].TryGet(Item_Id);
+        public override string Name => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id);
     }
 
     public class DecoGradeLotteryNameIdSorter : ICustomSorter {

@@ -60,7 +60,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Item_sortIndex)]
         [DisplayName(Item_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Item_button => DataHelper.itemData[MainWindow.locale].TryGet(Item).ToStringWithId(Item);
+        public string Item_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item).ToStringWithId(Item);
 
         public const string Required_time_displayName = "Required time";
         public const int Required_time_sortIndex = 200;

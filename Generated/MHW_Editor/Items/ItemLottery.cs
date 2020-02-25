@@ -31,7 +31,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Item_1_Id_sortIndex)]
         [DisplayName(Item_1_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Item_1_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_1_Id).ToStringWithId(Item_1_Id);
+        public string Item_1_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_1_Id).ToStringWithId(Item_1_Id);
 
         public const string Item_1_Cnt_displayName = "Item 1 Cnt";
         public const int Item_1_Cnt_sortIndex = 100;
@@ -94,7 +94,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Item_2_Id_sortIndex)]
         [DisplayName(Item_2_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Item_2_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_2_Id).ToStringWithId(Item_2_Id);
+        public string Item_2_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_2_Id).ToStringWithId(Item_2_Id);
 
         public const string Item_2_Cnt_displayName = "Item 2 Cnt";
         public const int Item_2_Cnt_sortIndex = 300;
@@ -157,7 +157,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Item_3_Id_sortIndex)]
         [DisplayName(Item_3_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Item_3_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_3_Id).ToStringWithId(Item_3_Id);
+        public string Item_3_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_3_Id).ToStringWithId(Item_3_Id);
 
         public const string Item_3_Cnt_displayName = "Item 3 Cnt";
         public const int Item_3_Cnt_sortIndex = 500;
@@ -220,7 +220,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Item_4_Id_sortIndex)]
         [DisplayName(Item_4_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Item_4_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_4_Id).ToStringWithId(Item_4_Id);
+        public string Item_4_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_4_Id).ToStringWithId(Item_4_Id);
 
         public const string Item_4_Cnt_displayName = "Item 4 Cnt";
         public const int Item_4_Cnt_sortIndex = 700;
@@ -283,7 +283,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Item_5_Id_sortIndex)]
         [DisplayName(Item_5_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Item_5_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_5_Id).ToStringWithId(Item_5_Id);
+        public string Item_5_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_5_Id).ToStringWithId(Item_5_Id);
 
         public const string Item_5_Cnt_displayName = "Item 5 Cnt";
         public const int Item_5_Cnt_sortIndex = 900;
@@ -346,7 +346,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Item_6_Id_sortIndex)]
         [DisplayName(Item_6_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Item_6_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_6_Id).ToStringWithId(Item_6_Id);
+        public string Item_6_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_6_Id).ToStringWithId(Item_6_Id);
 
         public const string Item_6_Cnt_displayName = "Item 6 Cnt";
         public const int Item_6_Cnt_sortIndex = 1100;
@@ -409,7 +409,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Item_7_Id_sortIndex)]
         [DisplayName(Item_7_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Item_7_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_7_Id).ToStringWithId(Item_7_Id);
+        public string Item_7_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_7_Id).ToStringWithId(Item_7_Id);
 
         public const string Item_7_Cnt_displayName = "Item 7 Cnt";
         public const int Item_7_Cnt_sortIndex = 1300;
@@ -472,7 +472,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Item_8_Id_sortIndex)]
         [DisplayName(Item_8_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Item_8_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_8_Id).ToStringWithId(Item_8_Id);
+        public string Item_8_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_8_Id).ToStringWithId(Item_8_Id);
 
         public const string Item_8_Cnt_displayName = "Item 8 Cnt";
         public const int Item_8_Cnt_sortIndex = 1500;
@@ -535,7 +535,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Item_9_Id_sortIndex)]
         [DisplayName(Item_9_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Item_9_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_9_Id).ToStringWithId(Item_9_Id);
+        public string Item_9_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_9_Id).ToStringWithId(Item_9_Id);
 
         public const string Item_9_Cnt_displayName = "Item 9 Cnt";
         public const int Item_9_Cnt_sortIndex = 1700;
@@ -598,7 +598,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Item_10_Id_sortIndex)]
         [DisplayName(Item_10_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Item_10_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_10_Id).ToStringWithId(Item_10_Id);
+        public string Item_10_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_10_Id).ToStringWithId(Item_10_Id);
 
         public const string Item_10_Cnt_displayName = "Item 10 Cnt";
         public const int Item_10_Cnt_sortIndex = 1900;

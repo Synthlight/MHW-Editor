@@ -9,10 +9,10 @@ namespace MHW_Editor.Items {
         public Item(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string Name => DataHelper.itemData[MainWindow.locale].TryGet(Id);
+        public override string Name => DataHelper.itemNames[MainWindow.locale].TryGet(Id);
 
         [SortOrder(lastSortIndex + 1)]
-        public string Description => DataHelper.itemDataDescriptions[MainWindow.locale].TryGet(Id);
+        public string Description => DataHelper.itemDescriptions[MainWindow.locale].TryGet(Id);
 
         [SortOrder(Flags_Raw_sortIndex)]
         public uint Flags {

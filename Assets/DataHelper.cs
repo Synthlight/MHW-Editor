@@ -6,19 +6,19 @@ using Newtonsoft.Json;
 namespace MHW_Editor.Assets {
     public static class DataHelper {
         public static readonly LangMap armorData = new LangMap(); // Uses GMD reference.
-        public static readonly LangMap bountyData = new LangMap();
-        public static readonly LangMap bountyDataDescriptions = new LangMap();
-        public static readonly LangMap itemData = new LangMap();
-        public static readonly LangMap itemDataDescriptions = new LangMap();
-        public static readonly LangMap kinsectData = new LangMap();
-        public static readonly LangMap mantleData = new LangMap();
-        public static readonly LangMap mantleDataDescriptions = new LangMap();
+        public static readonly LangMap bountyNames = new LangMap();
+        public static readonly LangMap bountyDescriptions = new LangMap();
+        public static readonly LangMap itemNames = new LangMap();
+        public static readonly LangMap itemDescriptions = new LangMap();
+        public static readonly LangMap kinsectNames = new LangMap();
+        public static readonly LangMap mantleNames = new LangMap();
+        public static readonly LangMap mantleDescriptions = new LangMap();
         public static readonly LangMap otomoArmorData = new LangMap(); // Uses GMD reference.
         public static readonly LangMap otomoWeaponData = new LangMap(); // Uses GMD reference.
-        public static readonly LangMap pendantData = new LangMap();
-        public static readonly LangMap skillData = new LangMap();
-        public static readonly LangMap skillDataDescriptions = new LangMap();
-        public static readonly Dictionary<uint, string> songData = new Dictionary<uint, string>(); // Has no lang.
+        public static readonly LangMap pendantNames = new LangMap();
+        public static readonly LangMap skillNames = new LangMap();
+        public static readonly LangMap skillDescriptions = new LangMap();
+        public static readonly Dictionary<uint, string> songNames = new Dictionary<uint, string>(); // Has no lang.
         public static readonly Dictionary<string, LangMap> weaponData = new Dictionary<string, LangMap>(); // Has wp file name too. Uses GMD reference.
 
         static DataHelper() {
@@ -32,8 +32,8 @@ namespace MHW_Editor.Assets {
                 armorData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_armorData"));
                 otomoArmorData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_otomo_armorData"));
                 otomoWeaponData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_otomo_weaponData"));
-                kinsectData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_insectData"));
-                pendantData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_pendantData"));
+                kinsectNames[lang] = LoadDict<uint, string>(GetAsset($"{lang}_insectData"));
+                pendantNames[lang] = LoadDict<uint, string>(GetAsset($"{lang}_pendantData"));
 
                 weaponData[lang] = new LangMap();
                 foreach (var weapon in Global.WEAPONS) {
@@ -43,8 +43,8 @@ namespace MHW_Editor.Assets {
         }
 
         private static void ParseItemData(string lang) {
-            itemData[lang] = new Dictionary<uint, string>();
-            itemDataDescriptions[lang] = new Dictionary<uint, string>();
+            itemNames[lang] = new Dictionary<uint, string>();
+            itemDescriptions[lang] = new Dictionary<uint, string>();
 
             var rawItemData = LoadDict<uint, string>(GetAsset($"{lang}_itemData"));
             rawItemData[0] = "--------";
@@ -53,14 +53,14 @@ namespace MHW_Editor.Assets {
             for (uint index = 0; index < rawItemData.Count; index += step) {
                 var key = index / step;
 
-                itemData[lang][key] = rawItemData[index];
-                itemDataDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
+                itemNames[lang][key] = rawItemData[index];
+                itemDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
             }
         }
 
         private static void ParseSkillData(string lang) {
-            skillData[lang] = new Dictionary<uint, string>();
-            skillDataDescriptions[lang] = new Dictionary<uint, string>();
+            skillNames[lang] = new Dictionary<uint, string>();
+            skillDescriptions[lang] = new Dictionary<uint, string>();
 
             var rawSkillData = LoadDict<uint, string>(GetAsset($"{lang}_skillData"));
             rawSkillData[0] = "--------";
@@ -69,8 +69,8 @@ namespace MHW_Editor.Assets {
             for (uint index = 0; index < rawSkillData.Count; index += step) {
                 var key = index / step;
 
-                skillData[lang][key] = rawSkillData[index];
-                skillDataDescriptions[lang][key] = rawSkillData[index + 2].Replace("\r\n", " ");
+                skillNames[lang][key] = rawSkillData[index];
+                skillDescriptions[lang][key] = rawSkillData[index + 2].Replace("\r\n", " ");
             }
         }
 
@@ -78,13 +78,13 @@ namespace MHW_Editor.Assets {
             var rawSongData = LoadDict<uint, string>(Assets.songData);
 
             foreach (var pair in rawSongData) {
-                songData[pair.Key] = pair.Value;
+                songNames[pair.Key] = pair.Value;
             }
         }
 
         private static void ParseBountyData(string lang) {
-            bountyData[lang] = new Dictionary<uint, string>();
-            bountyDataDescriptions[lang] = new Dictionary<uint, string>();
+            bountyNames[lang] = new Dictionary<uint, string>();
+            bountyDescriptions[lang] = new Dictionary<uint, string>();
 
             var rawItemData = LoadDict<uint, string>(GetAsset($"{lang}_bountyData"));
 
@@ -92,14 +92,14 @@ namespace MHW_Editor.Assets {
             for (uint index = 0; index < rawItemData.Count; index += step) {
                 var key = index / step;
 
-                bountyData[lang][key] = rawItemData[index];
-                bountyDataDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
+                bountyNames[lang][key] = rawItemData[index];
+                bountyDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
             }
         }
 
         private static void ParseMantleData(string lang) {
-            mantleData[lang] = new Dictionary<uint, string>();
-            mantleDataDescriptions[lang] = new Dictionary<uint, string>();
+            mantleNames[lang] = new Dictionary<uint, string>();
+            mantleDescriptions[lang] = new Dictionary<uint, string>();
 
             var rawItemData = LoadDict<uint, string>(GetAsset($"{lang}_mantleData"));
 
@@ -107,8 +107,8 @@ namespace MHW_Editor.Assets {
             for (uint index = 0; index < rawItemData.Count; index += step) {
                 var key = index / step;
 
-                mantleData[lang][key] = rawItemData[index];
-                mantleDataDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
+                mantleNames[lang][key] = rawItemData[index];
+                mantleDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
             }
         }
 

@@ -15,7 +15,7 @@ namespace MHW_Editor.Skills {
         public string Song_And_Id => Name.ToStringWithId(Song_Id_Raw);
 
         [DisplayName("")]
-        public override string Name => DataHelper.songData.TryGet(Song_Id_Raw);
+        public override string Name => DataHelper.songNames.TryGet(Song_Id_Raw);
     }
 
     public class MusicSkillSorter : ICustomSorterWithPropertyName {

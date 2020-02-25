@@ -31,7 +31,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Result_Item_Id_sortIndex)]
         [DisplayName(Result_Item_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Result_Item_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Result_Item_Id).ToStringWithId(Result_Item_Id);
+        public string Result_Item_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Result_Item_Id).ToStringWithId(Result_Item_Id);
 
         public const string Research_Points_displayName = "Research Points";
         public const int Research_Points_sortIndex = 100;

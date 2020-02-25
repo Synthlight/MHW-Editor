@@ -309,7 +309,7 @@ namespace MHW_Editor.Armors {
         [SortOrder(Set_Skill_1_sortIndex)]
         [DisplayName(Set_Skill_1_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Set_Skill_1_button => DataHelper.skillData[MainWindow.locale].TryGet(Set_Skill_1).ToStringWithId(Set_Skill_1);
+        public string Set_Skill_1_button => DataHelper.skillNames[MainWindow.locale].TryGet(Set_Skill_1).ToStringWithId(Set_Skill_1);
 
         public const string Set_Skill_1_Level_displayName = "Set Skill 1 Level";
         public const int Set_Skill_1_Level_sortIndex = 1200;
@@ -344,7 +344,7 @@ namespace MHW_Editor.Armors {
         [SortOrder(Set_Skill_2_sortIndex)]
         [DisplayName(Set_Skill_2_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Set_Skill_2_button => DataHelper.skillData[MainWindow.locale].TryGet(Set_Skill_2).ToStringWithId(Set_Skill_2);
+        public string Set_Skill_2_button => DataHelper.skillNames[MainWindow.locale].TryGet(Set_Skill_2).ToStringWithId(Set_Skill_2);
 
         public const string Set_Skill_2_Level_displayName = "Set Skill 2 Level";
         public const int Set_Skill_2_Level_sortIndex = 1300;
@@ -379,7 +379,7 @@ namespace MHW_Editor.Armors {
         [SortOrder(Skill_1_sortIndex)]
         [DisplayName(Skill_1_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Skill_1_button => DataHelper.skillData[MainWindow.locale].TryGet(Skill_1).ToStringWithId(Skill_1);
+        public string Skill_1_button => DataHelper.skillNames[MainWindow.locale].TryGet(Skill_1).ToStringWithId(Skill_1);
 
         public const string Skill_1_Level_displayName = "Skill 1 Level";
         public const int Skill_1_Level_sortIndex = 1400;
@@ -414,7 +414,7 @@ namespace MHW_Editor.Armors {
         [SortOrder(Skill_2_sortIndex)]
         [DisplayName(Skill_2_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Skill_2_button => DataHelper.skillData[MainWindow.locale].TryGet(Skill_2).ToStringWithId(Skill_2);
+        public string Skill_2_button => DataHelper.skillNames[MainWindow.locale].TryGet(Skill_2).ToStringWithId(Skill_2);
 
         public const string Skill_2_Level_displayName = "Skill 2 Level";
         public const int Skill_2_Level_sortIndex = 1500;
@@ -449,7 +449,7 @@ namespace MHW_Editor.Armors {
         [SortOrder(Skill_3_sortIndex)]
         [DisplayName(Skill_3_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Skill_3_button => DataHelper.skillData[MainWindow.locale].TryGet(Skill_3).ToStringWithId(Skill_3);
+        public string Skill_3_button => DataHelper.skillNames[MainWindow.locale].TryGet(Skill_3).ToStringWithId(Skill_3);
 
         public const string Skill_3_Level_displayName = "Skill 3 Level";
         public const int Skill_3_Level_sortIndex = 1600;

@@ -50,7 +50,7 @@ namespace MHW_Editor.Items {
         public EqCrt(byte[] bytes, ulong offset, string filename) : base(bytes, offset) {
             switch (filename) {
                 case "charm":
-                    nameLookup = DataHelper.pendantData;
+                    nameLookup = DataHelper.pendantNames;
                     break;
                 default:
                     nameLookup = new Dictionary<string, Dictionary<uint, string>>();

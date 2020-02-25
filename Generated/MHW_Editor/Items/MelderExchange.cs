@@ -31,7 +31,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Source_Item_Id_sortIndex)]
         [DisplayName(Source_Item_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Source_Item_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Source_Item_Id).ToStringWithId(Source_Item_Id);
+        public string Source_Item_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Source_Item_Id).ToStringWithId(Source_Item_Id);
 
         public const string Unknown_int32_1_displayName = "Unknown (int32) 1";
         public const int Unknown_int32_1_sortIndex = 100;

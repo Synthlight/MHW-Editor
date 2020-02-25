@@ -484,8 +484,8 @@ namespace MHW_Editor {
             var dataSourceType = ((DataSourceAttribute) property.GetCustomAttribute(typeof(DataSourceAttribute), true))?.dataType;
 
             dynamic dataSource = dataSourceType switch {
-                DataSourceType.Items => DataHelper.itemData[locale],
-                DataSourceType.Skills => DataHelper.skillData[locale],
+                DataSourceType.Items => DataHelper.itemNames[locale],
+                DataSourceType.Skills => DataHelper.skillNames[locale],
                 DataSourceType.SkillDat => skillDatLookup[locale],
                 _ => throw new ArgumentOutOfRangeException()
             };
@@ -570,7 +570,7 @@ namespace MHW_Editor {
             foreach (var lang in Global.LANGUAGES) {
                 skillDatLookup[lang] = new Dictionary<uint, string>();
                 foreach (SkillDat item in items) {
-                    var name = DataHelper.skillData[lang].TryGet(item.Id);
+                    var name = DataHelper.skillNames[lang].TryGet(item.Id);
                     skillDatLookup[lang][(uint) item.Index] = name;
                 }
             }

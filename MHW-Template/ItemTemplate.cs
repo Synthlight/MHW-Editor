@@ -389,10 +389,10 @@ namespace MHW_Template
 
             switch (entry.dataSourceType) {
                 case DataSourceType.Items:
-                    dataSourceLookup = "DataHelper.itemData[MainWindow.locale]";
+                    dataSourceLookup = "DataHelper.itemNames[MainWindow.locale]";
                     break;
                 case DataSourceType.Skills:
-                    dataSourceLookup = "DataHelper.skillData[MainWindow.locale]";
+                    dataSourceLookup = "DataHelper.skillNames[MainWindow.locale]";
                     break;
                 case DataSourceType.SkillDat:
                     dataSourceLookup = "MainWindow.skillDatLookup[MainWindow.locale]";

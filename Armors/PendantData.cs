@@ -8,7 +8,7 @@ namespace MHW_Editor.Armors {
         public PendantData(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string Name => DataHelper.pendantData[MainWindow.locale].TryGet(Id);
+        public override string Name => DataHelper.pendantNames[MainWindow.locale].TryGet(Id);
 
         [SortOrder(0)]
         [DisplayName("")]

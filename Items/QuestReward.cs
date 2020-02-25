@@ -61,7 +61,7 @@ namespace MHW_Editor.Items {
             [SortOrder(100)]
             [DisplayName("Item Id")]
             [CustomSorter(typeof(ButtonSorter))]
-            public string Item_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_Id).ToStringWithId(Item_Id);
+            public string Item_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id).ToStringWithId(Item_Id);
 
             private const int countBaseOffset = 72;
             private int countOffset => countBaseOffset + index;

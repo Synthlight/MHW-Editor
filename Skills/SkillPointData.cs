@@ -15,7 +15,7 @@ namespace MHW_Editor.Skills {
         public string Name_And_Id => Name.ToStringWithId(Id);
 
         [DisplayName("")]
-        public override string Name => DataHelper.skillData[MainWindow.locale].TryGet((uint) Id);
+        public override string Name => DataHelper.skillNames[MainWindow.locale].TryGet((uint) Id);
 
         [SortOrder(0)]
         [DisplayName("")]

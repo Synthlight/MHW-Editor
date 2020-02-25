@@ -15,10 +15,10 @@ namespace MHW_Editor.Skills {
         public string Name_And_Id => Name.ToStringWithId(Id);
 
         [DisplayName("")]
-        public override string Name => DataHelper.skillData[MainWindow.locale].TryGet(Id);
+        public override string Name => DataHelper.skillNames[MainWindow.locale].TryGet(Id);
 
         [SortOrder(Param_8_sortIndex + 1)]
-        public string Description => DataHelper.skillDataDescriptions[MainWindow.locale].TryGet(Id);
+        public string Description => DataHelper.skillDescriptions[MainWindow.locale].TryGet(Id);
 
         [SortOrder(0)]
         [DisplayName("")]
