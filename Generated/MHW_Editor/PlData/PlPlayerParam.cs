@@ -1846,31 +1846,31 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Quest_Level_HR_Fix_Attack_Rate_displayName = "Quest Level HR Fix Attack Rate";
-        public const int Quest_Level_HR_Fix_Attack_Rate_sortIndex = 6600;
-        [SortOrder(Quest_Level_HR_Fix_Attack_Rate_sortIndex)]
-        [DisplayName(Quest_Level_HR_Fix_Attack_Rate_displayName)]
-        public virtual float Quest_Level_HR_Fix_Attack_Rate {
+        public const string Explosive_HR_Fixed_Attack_Rate_displayName = "Explosive HR Fixed Attack Rate";
+        public const int Explosive_HR_Fixed_Attack_Rate_sortIndex = 6600;
+        [SortOrder(Explosive_HR_Fixed_Attack_Rate_sortIndex)]
+        [DisplayName(Explosive_HR_Fixed_Attack_Rate_displayName)]
+        public virtual float Explosive_HR_Fixed_Attack_Rate {
             get => GetData<float>(664);
             set {
                 if (GetData<float>(664) == value) return;
-                SetData(664, value, nameof(Quest_Level_HR_Fix_Attack_Rate));
+                SetData(664, value, nameof(Explosive_HR_Fixed_Attack_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Quest_Level_HR_Fix_Attack_Rate));
+                OnPropertyChanged(nameof(Explosive_HR_Fixed_Attack_Rate));
             }
         }
 
-        public const string Quest_Level_MR_Fix_Attack_Rate_displayName = "Quest Level MR Fix Attack Rate";
-        public const int Quest_Level_MR_Fix_Attack_Rate_sortIndex = 6650;
-        [SortOrder(Quest_Level_MR_Fix_Attack_Rate_sortIndex)]
-        [DisplayName(Quest_Level_MR_Fix_Attack_Rate_displayName)]
-        public virtual float Quest_Level_MR_Fix_Attack_Rate {
+        public const string Explosive_MR_Fixed_Attack_Rate_displayName = "Explosive MR Fixed Attack Rate";
+        public const int Explosive_MR_Fixed_Attack_Rate_sortIndex = 6650;
+        [SortOrder(Explosive_MR_Fixed_Attack_Rate_sortIndex)]
+        [DisplayName(Explosive_MR_Fixed_Attack_Rate_displayName)]
+        public virtual float Explosive_MR_Fixed_Attack_Rate {
             get => GetData<float>(668);
             set {
                 if (GetData<float>(668) == value) return;
-                SetData(668, value, nameof(Quest_Level_MR_Fix_Attack_Rate));
+                SetData(668, value, nameof(Explosive_MR_Fixed_Attack_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Quest_Level_MR_Fix_Attack_Rate));
+                OnPropertyChanged(nameof(Explosive_MR_Fixed_Attack_Rate));
             }
         }
 

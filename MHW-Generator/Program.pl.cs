@@ -161,8 +161,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry($"Unk{i++}", 652, typeof(float)),
                     new MhwStructData.Entry($"Unk{i++}", 656, typeof(float)),
                     new MhwStructData.Entry($"Unk{i++}", 660, typeof(float)),
-                    new MhwStructData.Entry("Quest Level HR Fix Attack Rate", 664, typeof(float)),
-                    new MhwStructData.Entry("Quest Level MR Fix Attack Rate", 668, typeof(float)),
+                    new MhwStructData.Entry("Explosive HR Fixed Attack Rate", 664, typeof(float)),
+                    new MhwStructData.Entry("Explosive MR Fixed Attack Rate", 668, typeof(float)),
                     new MhwStructData.Entry("Critical Attack Rate", 672, typeof(float)),
                     new MhwStructData.Entry("Bad Critical Attack Rate", 676, typeof(float)),
 

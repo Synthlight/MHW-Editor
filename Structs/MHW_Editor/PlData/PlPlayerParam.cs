@@ -135,8 +135,8 @@ namespace MHW_Editor.PlData {
         public float Unk67; // Offset: 652
         public float Unk68; // Offset: 656
         public float Unk69; // Offset: 660
-        public float Quest_Level_HR_Fix_Attack_Rate; // Offset: 664
-        public float Quest_Level_MR_Fix_Attack_Rate; // Offset: 668
+        public float Explosive_HR_Fixed_Attack_Rate; // Offset: 664
+        public float Explosive_MR_Fixed_Attack_Rate; // Offset: 668
         public float Critical_Attack_Rate; // Offset: 672
         public float Bad_Critical_Attack_Rate; // Offset: 676
         public byte Sharpness_Recoil_Reduction_; // Offset: 680
