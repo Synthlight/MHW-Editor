@@ -50,13 +50,13 @@ namespace MHW_Editor.PlData {
         public ushort Demon_Powder_Duration; // Offset: 120
         public ushort Hardshell_Powder_Power; // Offset: 122
         public ushort Hardshell_Powder_Duration; // Offset: 124
-        public ushort Unk17; // Offset: 126
-        public ushort Unk18; // Offset: 128
-        public ushort Unk19; // Offset: 130
-        public ushort Unk20; // Offset: 132
+        public ushort Demon_Ammo_Power; // Offset: 126
+        public ushort Demon_Ammo_Duration; // Offset: 128
+        public ushort Armor_Ammo_Power; // Offset: 130
+        public ushort Armor_Ammo_Duration; // Offset: 132
         public ushort Ration_Power; // Offset: 134
         public uint Well_Done_Steak_Multiplier; // Offset: 136
-        public float Unk22; // Offset: 140
+        public float Well_Done_Steak_Stamina_Bonus; // Offset: 140
         public float Unk23; // Offset: 144
         public float Unk24; // Offset: 148
         public ushort Burnt_Meat_Stamina_Recovery; // Offset: 152

@@ -656,59 +656,59 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Unk17_displayName = "Unk17";
-        public const int Unk17_sortIndex = 2350;
-        [SortOrder(Unk17_sortIndex)]
-        [DisplayName(Unk17_displayName)]
-        public virtual ushort Unk17 {
+        public const string Demon_Ammo_Power_displayName = "Demon Ammo Power";
+        public const int Demon_Ammo_Power_sortIndex = 2350;
+        [SortOrder(Demon_Ammo_Power_sortIndex)]
+        [DisplayName(Demon_Ammo_Power_displayName)]
+        public virtual ushort Demon_Ammo_Power {
             get => GetData<ushort>(126);
             set {
                 if (GetData<ushort>(126) == value) return;
-                SetData(126, value, nameof(Unk17));
+                SetData(126, value, nameof(Demon_Ammo_Power));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk17));
+                OnPropertyChanged(nameof(Demon_Ammo_Power));
             }
         }
 
-        public const string Unk18_displayName = "Unk18";
-        public const int Unk18_sortIndex = 2400;
-        [SortOrder(Unk18_sortIndex)]
-        [DisplayName(Unk18_displayName)]
-        public virtual ushort Unk18 {
+        public const string Demon_Ammo_Duration_displayName = "Demon Ammo Duration";
+        public const int Demon_Ammo_Duration_sortIndex = 2400;
+        [SortOrder(Demon_Ammo_Duration_sortIndex)]
+        [DisplayName(Demon_Ammo_Duration_displayName)]
+        public virtual ushort Demon_Ammo_Duration {
             get => GetData<ushort>(128);
             set {
                 if (GetData<ushort>(128) == value) return;
-                SetData(128, value, nameof(Unk18));
+                SetData(128, value, nameof(Demon_Ammo_Duration));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk18));
+                OnPropertyChanged(nameof(Demon_Ammo_Duration));
             }
         }
 
-        public const string Unk19_displayName = "Unk19";
-        public const int Unk19_sortIndex = 2450;
-        [SortOrder(Unk19_sortIndex)]
-        [DisplayName(Unk19_displayName)]
-        public virtual ushort Unk19 {
+        public const string Armor_Ammo_Power_displayName = "Armor Ammo Power";
+        public const int Armor_Ammo_Power_sortIndex = 2450;
+        [SortOrder(Armor_Ammo_Power_sortIndex)]
+        [DisplayName(Armor_Ammo_Power_displayName)]
+        public virtual ushort Armor_Ammo_Power {
             get => GetData<ushort>(130);
             set {
                 if (GetData<ushort>(130) == value) return;
-                SetData(130, value, nameof(Unk19));
+                SetData(130, value, nameof(Armor_Ammo_Power));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk19));
+                OnPropertyChanged(nameof(Armor_Ammo_Power));
             }
         }
 
-        public const string Unk20_displayName = "Unk20";
-        public const int Unk20_sortIndex = 2500;
-        [SortOrder(Unk20_sortIndex)]
-        [DisplayName(Unk20_displayName)]
-        public virtual ushort Unk20 {
+        public const string Armor_Ammo_Duration_displayName = "Armor Ammo Duration";
+        public const int Armor_Ammo_Duration_sortIndex = 2500;
+        [SortOrder(Armor_Ammo_Duration_sortIndex)]
+        [DisplayName(Armor_Ammo_Duration_displayName)]
+        public virtual ushort Armor_Ammo_Duration {
             get => GetData<ushort>(132);
             set {
                 if (GetData<ushort>(132) == value) return;
-                SetData(132, value, nameof(Unk20));
+                SetData(132, value, nameof(Armor_Ammo_Duration));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk20));
+                OnPropertyChanged(nameof(Armor_Ammo_Duration));
             }
         }
 
@@ -740,17 +740,17 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Unk22_displayName = "Unk22";
-        public const int Unk22_sortIndex = 2650;
-        [SortOrder(Unk22_sortIndex)]
-        [DisplayName(Unk22_displayName)]
-        public virtual float Unk22 {
+        public const string Well_Done_Steak_Stamina_Bonus_displayName = "Well Done Steak Stamina Bonus";
+        public const int Well_Done_Steak_Stamina_Bonus_sortIndex = 2650;
+        [SortOrder(Well_Done_Steak_Stamina_Bonus_sortIndex)]
+        [DisplayName(Well_Done_Steak_Stamina_Bonus_displayName)]
+        public virtual float Well_Done_Steak_Stamina_Bonus {
             get => GetData<float>(140);
             set {
                 if (GetData<float>(140) == value) return;
-                SetData(140, value, nameof(Unk22));
+                SetData(140, value, nameof(Well_Done_Steak_Stamina_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk22));
+                OnPropertyChanged(nameof(Well_Done_Steak_Stamina_Bonus));
             }
         }
 
