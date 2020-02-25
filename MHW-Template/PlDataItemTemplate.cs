@@ -40,8 +40,8 @@ namespace MHW_Template
             
             #line default
             #line hidden
-            this.Write(" {\r\n        public ObservableCollection<PlItemCustomView> GetCustomView() {\r\n    " +
-                    "        return new ObservableCollection<PlItemCustomView> {\r\n");
+            this.Write(" {\r\n        public ObservableCollection<PlDataItemCustomView> GetCustomView() {\r\n" +
+                    "            return new ObservableCollection<PlDataItemCustomView> {\r\n");
             
             #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
 
@@ -56,7 +56,7 @@ namespace MHW_Template
             
             #line default
             #line hidden
-            this.Write("                new PlItemCustomView(this, \"");
+            this.Write("                new PlDataItemCustomView(this, \"");
             
             #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.displayName));

@@ -180,7 +180,7 @@
     <Compile Include="Models\IdNamePair.cs" />
     <Compile Include="Models\IHasCustomView.cs" />
     <Compile Include="Models\JsonChanges.cs" />
-    <Compile Include="Models\PlItemCustomView.cs" />
+    <Compile Include="Models\PlDataItemCustomView.cs" />
     <Compile Include="Models\SortOrderAttribute.cs" />
     <Compile Include="Models\ButtonSorter.cs" />
     <Compile Include="Models\VersionCheck.cs" />

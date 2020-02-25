@@ -11,8 +11,8 @@ using MHW_Editor.Models;
 
 namespace <#= _namespace #> {
     public partial class <#= className #> {
-        public ObservableCollection<PlItemCustomView> GetCustomView() {
-            return new ObservableCollection<PlItemCustomView> {
+        public ObservableCollection<PlDataItemCustomView> GetCustomView() {
+            return new ObservableCollection<PlDataItemCustomView> {
 <#
     foreach (var entry in structData.entries) {
         var accessLevel = entry.accessLevel;
@@ -22,7 +22,7 @@ namespace <#= _namespace #> {
         if (accessLevel == "private") continue;
 
 #>
-                new PlItemCustomView(this, "<#= entry.displayName #>", "<#= name #>", Bytes, <#= entry.offset #>),
+                new PlDataItemCustomView(this, "<#= entry.displayName #>", "<#= name #>", Bytes, <#= entry.offset #>),
 <#
     } // End loop.
 #>

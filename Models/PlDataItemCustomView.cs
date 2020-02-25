@@ -2,16 +2,15 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Reflection;
-using MHW_Editor.PlData;
 
 namespace MHW_Editor.Models {
-    public class PlItemCustomView : MhwItem {
-        private readonly PlItemParam parent;
+    public class PlDataItemCustomView : MhwItem {
+        private readonly IHasCustomView<PlDataItemCustomView> parent;
         private readonly MethodInfo getMethod;
         private readonly MethodInfo setMethod;
         private readonly Type propertyType;
 
-        public PlItemCustomView(PlItemParam parent, string name, string propertyName, byte[] bytes, ulong offset) : base(bytes, offset) {
+        public PlDataItemCustomView(IHasCustomView<PlDataItemCustomView> parent, string name, string propertyName, byte[] bytes, ulong offset) : base(bytes, offset) {
             this.parent = parent;
             Name = name;
 
@@ -46,19 +45,20 @@ namespace MHW_Editor.Models {
         [DisplayName("Type")]
         public string Type {
             get {
-                switch (System.Type.GetTypeCode(propertyType)) {
-                    case TypeCode.Single: return "float";
-                    case TypeCode.Double: return "double";
-                    case TypeCode.Byte: return "uInt8";
-                    case TypeCode.SByte: return "sInt8";
-                    case TypeCode.UInt16: return "uInt16";
-                    case TypeCode.Int16: return "sInt16";
-                    case TypeCode.UInt32: return "uInt32";
-                    case TypeCode.Int32: return "sInt32";
-                    case TypeCode.Int64: return "sInt64";
-                    case TypeCode.UInt64: return "sInt64";
-                    default: throw new ArgumentOutOfRangeException();
-                }
+                // ReSharper disable once SwitchExpressionHandlesSomeKnownEnumValuesWithExceptionInDefault
+                return System.Type.GetTypeCode(propertyType) switch {
+                    TypeCode.Single => "float",
+                    TypeCode.Double => "double",
+                    TypeCode.Byte => "uInt8",
+                    TypeCode.SByte => "sInt8",
+                    TypeCode.UInt16 => "uInt16",
+                    TypeCode.Int16 => "sInt16",
+                    TypeCode.UInt32 => "uInt32",
+                    TypeCode.Int32 => "sInt32",
+                    TypeCode.Int64 => "sInt64",
+                    TypeCode.UInt64 => "sInt64",
+                    _ => throw new ArgumentOutOfRangeException()
+                };
             }
         }
     }
