@@ -967,6 +967,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".cus_par")) return typeof(CustomPartsR);
             if (fileName.EndsWith(".dglt")) return typeof(DecoGradeLottery);
             if (fileName.EndsWith(".diot")) return typeof(DecoLottery);
+            if (fileName.EndsWith(".emst")) return typeof(EnemySort);
             if (fileName.EndsWith(".eq_crt")) return typeof(EqCrt);
             if (fileName.EndsWith(".eq_cus")) return typeof(EqCus);
             if (fileName.EndsWith(".gun_rd")) return typeof(GunnerReload);

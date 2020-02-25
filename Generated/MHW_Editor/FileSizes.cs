@@ -109,6 +109,7 @@ namespace MHW_Editor {
             {"ems061_01.itlot", 368},
             {"ems063.itlot", 112},
             {"ems064.itlot", 112},
+            {"enemy_sort.emst", 3930},
             {"equip_custom.eq_cus", 11859},
             {"g_lance.wp_dat", 18886},
             {"goods.trdr", 2250},

@@ -13,7 +13,8 @@ namespace MHW_Name_Extractor {
         public static void Main() {
             foreach (var lang in Global.LANGUAGES) {
                 // ReSharper disable once StringLiteralTypo
-                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\charm_{lang}.gmd", $@"{Global.ASSETS_ROOT}\PendantData\{lang}_pendantData.json"); // .odr
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\charm_{lang}.gmd", $@"{Global.ASSETS_ROOT}\PendantData\{lang}_pendantData.json"); // .ch_dat
+                //GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\l_delivery_{lang}.gmd", $@"{Global.ASSETS_ROOT}\DeliveryData\{lang}_deliveryData.json"); // .stmp
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\l_mission_{lang}.gmd", $@"{Global.ASSETS_ROOT}\BountyData\{lang}_bountyData.json"); // .odr
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\armor_{lang}.gmd", $@"{Global.ASSETS_ROOT}\ArmorData\{lang}_armorData.json"); // .am_dat
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\item_{lang}.gmd", $@"{Global.ASSETS_ROOT}\ItemData\{lang}_itemData.json"); // .itm
@@ -33,13 +34,17 @@ namespace MHW_Name_Extractor {
         }
 
         private static void GetAndWriteGmdStringsAsJson(string targetFile, string destFile) {
-            var gmdStrings = GetGmdStrings(targetFile);
-            var dir = Path.GetDirectoryName(destFile);
-            if (!Directory.Exists(dir)) {
-                Directory.CreateDirectory(dir);
-            }
+            try {
+                var gmdStrings = GetGmdStrings(targetFile);
+                var dir = Path.GetDirectoryName(destFile);
+                if (!Directory.Exists(dir)) {
+                    Directory.CreateDirectory(dir);
+                }
 
-            File.WriteAllText(destFile, JsonConvert.SerializeObject(gmdStrings, Formatting.Indented));
+                File.WriteAllText(destFile, JsonConvert.SerializeObject(gmdStrings, Formatting.Indented));
+            } catch (FileNotFoundException) { // If the file doesn't exist we write empty json.
+                File.WriteAllText(destFile, JsonConvert.SerializeObject(new Dictionary<ulong, string>(), Formatting.Indented));
+            }
         }
 
         private static Dictionary<ulong, string> GetGmdStrings(string targetFile) {
