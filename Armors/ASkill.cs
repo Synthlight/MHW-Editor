@@ -8,13 +8,13 @@ namespace MHW_Editor.Armors {
         public ASkill(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string Name => DataHelper.mantleData[MainWindow.locale].TryGet((ushort) Index, "Unknown");
+        public override string Name => DataHelper.mantleData[MainWindow.locale].TryGet((ushort) Index);
 
         [SortOrder(lastSortIndex + 1)]
-        [DisplayName("Description")]
-        public string Description => DataHelper.mantleDataDescriptions[MainWindow.locale].TryGet((ushort) Index, "Unknown");
+        public string Description => DataHelper.mantleDataDescriptions[MainWindow.locale].TryGet((ushort) Index);
 
         [SortOrder(0)]
+        [DisplayName("")]
         public ulong Index => (Offset - InitialOffset) / StructSize;
     }
 }

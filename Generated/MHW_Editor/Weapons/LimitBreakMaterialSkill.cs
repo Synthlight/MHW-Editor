@@ -58,8 +58,8 @@ namespace MHW_Editor.Weapons {
 
         [SortOrder(Item_1_Id_sortIndex)]
         [DisplayName(Item_1_Id_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Item_1_Id_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item_1_Id, IdNamePair.Unknown((ushort) Item_1_Id)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Item_1_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_1_Id).ToStringWithId(Item_1_Id);
 
         public const string Item_1_Cnt_displayName = "Item 1 Cnt";
         public const int Item_1_Cnt_sortIndex = 200;

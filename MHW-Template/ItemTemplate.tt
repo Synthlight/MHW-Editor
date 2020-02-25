@@ -116,7 +116,7 @@ namespace <#= _namespace #> {
         [SortOrder(<#= name #>_sortIndex)]
         [DisplayName(<#= name #>_displayName)]
         [CustomSorter(typeof(<#= entry.dataSourceCustomSorter #>))]
-        public string <#= name #>_button => <#= dataSourceLookup #>.TryGet((ushort) <#= name #>, IdNamePair.Unknown((ushort) <#= name #>)).ToString();
+        public string <#= name #>_button => <#= dataSourceLookup #>.TryGet(<#= name #>).ToStringWithId(<#= name #>);
 <#
         } // End data source / button generation check.
 

@@ -439,21 +439,21 @@ namespace MHW_Template
             
             #line default
             #line hidden
-            this.Write(".TryGet((ushort) ");
+            this.Write(".TryGet(");
             
             #line 119 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(name));
             
             #line default
             #line hidden
-            this.Write(", IdNamePair.Unknown((ushort) ");
+            this.Write(").ToStringWithId(");
             
             #line 119 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(name));
             
             #line default
             #line hidden
-            this.Write(")).ToString();\r\n");
+            this.Write(");\r\n");
             
             #line 120 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
 

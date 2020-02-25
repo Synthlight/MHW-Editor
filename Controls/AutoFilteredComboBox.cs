@@ -106,7 +106,13 @@ namespace MHW_Editor.Controls {
             if (value == null) return false;
             if (CurrentFilter.Length == 0) return true;
 
-            if (value is KeyValuePair<ushort, IdNamePair> obj) {
+            if (value is KeyValuePair<ushort, IdNamePair<ushort>>
+                || value is KeyValuePair<short, IdNamePair<short>>
+                || value is KeyValuePair<uint, IdNamePair<uint>>
+                || value is KeyValuePair<int, IdNamePair<int>>
+                || value is KeyValuePair<byte, IdNamePair<byte>>
+                || value is KeyValuePair<sbyte, IdNamePair<sbyte>>) {
+                dynamic obj = value;
                 return obj.Value.name.ToLower().Contains(CurrentFilter) || obj.Value.id.ToString().ToLower().Contains(CurrentFilter);
             }
 

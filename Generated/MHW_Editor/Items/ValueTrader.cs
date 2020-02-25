@@ -30,8 +30,8 @@ namespace MHW_Editor.Items {
 
         [SortOrder(Item_Id_sortIndex)]
         [DisplayName(Item_Id_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Item_Id_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item_Id, IdNamePair.Unknown((ushort) Item_Id)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Item_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_Id).ToStringWithId(Item_Id);
 
         public const string Unk3_displayName = "Unk3";
         public const int Unk3_sortIndex = 100;

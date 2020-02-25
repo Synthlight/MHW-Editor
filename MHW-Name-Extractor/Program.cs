@@ -13,6 +13,7 @@ namespace MHW_Name_Extractor {
         public static void Main() {
             foreach (var lang in Global.LANGUAGES) {
                 // ReSharper disable once StringLiteralTypo
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\charm_{lang}.gmd", $@"{Global.ASSETS_ROOT}\PendantData\{lang}_pendantData.json"); // .odr
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\l_mission_{lang}.gmd", $@"{Global.ASSETS_ROOT}\BountyData\{lang}_bountyData.json"); // .odr
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\armor_{lang}.gmd", $@"{Global.ASSETS_ROOT}\ArmorData\{lang}_armorData.json"); // .am_dat
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\item_{lang}.gmd", $@"{Global.ASSETS_ROOT}\ItemData\{lang}_itemData.json"); // .itm

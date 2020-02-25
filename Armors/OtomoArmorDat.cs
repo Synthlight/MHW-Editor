@@ -9,11 +9,10 @@ namespace MHW_Editor.Armors {
         public OtomoArmorDat(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string Name => DataHelper.otomoArmorData[MainWindow.locale].TryGet(GMD_Name_Index, "Unknown");
+        public override string Name => DataHelper.otomoArmorData[MainWindow.locale].TryGet(GMD_Name_Index);
 
         [SortOrder(lastSortIndex + 1)]
-        [DisplayName("Description")]
-        public string Description => DataHelper.otomoArmorData[MainWindow.locale].TryGet(GMD_Description_Index, "Unknown").Replace("\r\n", " ");
+        public string Description => DataHelper.otomoArmorData[MainWindow.locale].TryGet(GMD_Description_Index).Replace("\r\n", " ");
 
         [SortOrder(Is_Full_Set_Raw_sortIndex)]
         [DisplayName("Is Full Set")]

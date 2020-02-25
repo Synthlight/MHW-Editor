@@ -60,8 +60,8 @@ namespace MHW_Editor.Gems {
 
         [SortOrder(Skill_1_sortIndex)]
         [DisplayName(Skill_1_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Skill_1_button => DataHelper.skillData[MainWindow.locale].TryGet((ushort) Skill_1, IdNamePair.Unknown((ushort) Skill_1)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Skill_1_button => DataHelper.skillData[MainWindow.locale].TryGet(Skill_1).ToStringWithId(Skill_1);
 
         public const string Skill_1_Level_displayName = "Skill 1 Level";
         public const int Skill_1_Level_sortIndex = 250;
@@ -95,8 +95,8 @@ namespace MHW_Editor.Gems {
 
         [SortOrder(Skill_2_sortIndex)]
         [DisplayName(Skill_2_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Skill_2_button => DataHelper.skillData[MainWindow.locale].TryGet((ushort) Skill_2, IdNamePair.Unknown((ushort) Skill_2)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Skill_2_button => DataHelper.skillData[MainWindow.locale].TryGet(Skill_2).ToStringWithId(Skill_2);
 
         public const string Skill_2_Level_displayName = "Skill 2 Level";
         public const int Skill_2_Level_sortIndex = 350;

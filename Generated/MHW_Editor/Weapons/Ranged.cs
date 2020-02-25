@@ -439,8 +439,8 @@ namespace MHW_Editor.Weapons {
 
         [SortOrder(Skill_sortIndex)]
         [DisplayName(Skill_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Skill_button => DataHelper.skillData[MainWindow.locale].TryGet((ushort) Skill, IdNamePair.Unknown((ushort) Skill)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Skill_button => DataHelper.skillData[MainWindow.locale].TryGet(Skill).ToStringWithId(Skill);
 
         public const string GMD_Name_Index_displayName = "GMD Name Index";
         public const int GMD_Name_Index_sortIndex = 1600;

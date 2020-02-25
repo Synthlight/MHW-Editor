@@ -3,7 +3,7 @@ using MHW_Template;
 namespace MHW_Editor.Armors {
     // Struct Size: "27"
     // Unique Id Formula: "{Id}"
-    public struct CharmDat {
+    public struct PendantData {
         public uint Id; // Offset: 0
         public byte Unk1; // Offset: 4
         public byte Unk2; // Offset: 5

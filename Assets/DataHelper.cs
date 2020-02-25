@@ -1,25 +1,25 @@
 ﻿using System.Collections.Generic;
 using System.Text;
-using MHW_Editor.Models;
 using MHW_Template;
 using Newtonsoft.Json;
 
 namespace MHW_Editor.Assets {
     public static class DataHelper {
-        public static readonly Dictionary<string, Dictionary<ushort, IdNamePair>> itemData = new Dictionary<string, Dictionary<ushort, IdNamePair>>();
-        public static readonly Dictionary<string, Dictionary<ushort, string>> itemDataDescriptions = new Dictionary<string, Dictionary<ushort, string>>();
-        public static readonly Dictionary<string, Dictionary<ushort, IdNamePair>> skillData = new Dictionary<string, Dictionary<ushort, IdNamePair>>();
-        public static readonly Dictionary<string, Dictionary<ushort, string>> skillDataDescriptions = new Dictionary<string, Dictionary<ushort, string>>();
-        public static readonly Dictionary<string, Dictionary<ushort, string>> armorData = new Dictionary<string, Dictionary<ushort, string>>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> itemData = new Dictionary<string, Dictionary<uint, string>>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> itemDataDescriptions = new Dictionary<string, Dictionary<uint, string>>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> skillData = new Dictionary<string, Dictionary<uint, string>>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> skillDataDescriptions = new Dictionary<string, Dictionary<uint, string>>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> armorData = new Dictionary<string, Dictionary<uint, string>>();
         public static readonly Dictionary<string, Dictionary<string, Dictionary<uint, string>>> weaponData = new Dictionary<string, Dictionary<string, Dictionary<uint, string>>>();
-        public static readonly Dictionary<string, Dictionary<ushort, string>> otomoArmorData = new Dictionary<string, Dictionary<ushort, string>>();
-        public static readonly Dictionary<string, Dictionary<ushort, string>> otomoWeaponData = new Dictionary<string, Dictionary<ushort, string>>();
-        public static readonly Dictionary<ushort, IdNamePair> songData = new Dictionary<ushort, IdNamePair>();
-        public static readonly Dictionary<string, Dictionary<byte, string>> insectData = new Dictionary<string, Dictionary<byte, string>>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> otomoArmorData = new Dictionary<string, Dictionary<uint, string>>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> otomoWeaponData = new Dictionary<string, Dictionary<uint, string>>();
+        public static readonly Dictionary<uint, string> songData = new Dictionary<uint, string>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> insectData = new Dictionary<string, Dictionary<uint, string>>();
         public static readonly Dictionary<string, Dictionary<uint, string>> bountyData = new Dictionary<string, Dictionary<uint, string>>();
         public static readonly Dictionary<string, Dictionary<uint, string>> bountyDataDescriptions = new Dictionary<string, Dictionary<uint, string>>();
         public static readonly Dictionary<string, Dictionary<uint, string>> mantleData = new Dictionary<string, Dictionary<uint, string>>();
         public static readonly Dictionary<string, Dictionary<uint, string>> mantleDataDescriptions = new Dictionary<string, Dictionary<uint, string>>();
+        public static readonly Dictionary<string, Dictionary<uint, string>> pendantData = new Dictionary<string, Dictionary<uint, string>>();
 
         static DataHelper() {
             foreach (var lang in Global.LANGUAGES) {
@@ -29,10 +29,11 @@ namespace MHW_Editor.Assets {
                 ParseBountyData(lang);
                 ParseMantleData(lang);
 
-                armorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_armorData"));
-                otomoArmorData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_otomo_armorData"));
-                otomoWeaponData[lang] = LoadDict<ushort, string>(GetAsset($"{lang}_otomo_weaponData"));
-                insectData[lang] = LoadDict<byte, string>(GetAsset($"{lang}_insectData"));
+                armorData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_armorData"));
+                otomoArmorData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_otomo_armorData"));
+                otomoWeaponData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_otomo_weaponData"));
+                insectData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_insectData"));
+                pendantData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_pendantData"));
 
                 weaponData[lang] = new Dictionary<string, Dictionary<uint, string>>();
                 foreach (var weapon in Global.WEAPONS) {
@@ -42,44 +43,42 @@ namespace MHW_Editor.Assets {
         }
 
         private static void ParseItemData(string lang) {
-            itemData[lang] = new Dictionary<ushort, IdNamePair>();
-            itemDataDescriptions[lang] = new Dictionary<ushort, string>();
+            itemData[lang] = new Dictionary<uint, string>();
+            itemDataDescriptions[lang] = new Dictionary<uint, string>();
 
             var rawItemData = LoadDict<uint, string>(GetAsset($"{lang}_itemData"));
             rawItemData[0] = "--------";
 
             const uint step = 2;
             for (uint index = 0; index < rawItemData.Count; index += step) {
-                var key = (ushort) (index / step);
-                var value = new IdNamePair(key, rawItemData[index]);
+                var key = index / step;
 
-                itemData[lang][key] = value;
+                itemData[lang][key] = rawItemData[index];
                 itemDataDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
             }
         }
 
         private static void ParseSkillData(string lang) {
-            skillData[lang] = new Dictionary<ushort, IdNamePair>();
-            skillDataDescriptions[lang] = new Dictionary<ushort, string>();
+            skillData[lang] = new Dictionary<uint, string>();
+            skillDataDescriptions[lang] = new Dictionary<uint, string>();
 
             var rawSkillData = LoadDict<uint, string>(GetAsset($"{lang}_skillData"));
             rawSkillData[0] = "--------";
 
             const uint step = 3;
             for (uint index = 0; index < rawSkillData.Count; index += step) {
-                var key = (ushort) (index / step);
-                var value = new IdNamePair(key, rawSkillData[index]);
+                var key = index / step;
 
-                skillData[lang][key] = value;
+                skillData[lang][key] = rawSkillData[index];
                 skillDataDescriptions[lang][key] = rawSkillData[index + 2].Replace("\r\n", " ");
             }
         }
 
         private static void ParseSongData() {
-            var rawSongData = LoadDict<ushort, string>(Assets.songData);
+            var rawSongData = LoadDict<uint, string>(Assets.songData);
 
             foreach (var pair in rawSongData) {
-                songData[pair.Key] = new IdNamePair(pair.Key, pair.Value);
+                songData[pair.Key] = pair.Value;
             }
         }
 

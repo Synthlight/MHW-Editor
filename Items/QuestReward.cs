@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -11,6 +10,7 @@ namespace MHW_Editor.Items {
         public QuestReward(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
+        [DisplayName("")]
         public override string Name => "None";
 
         public ObservableCollection<QuestRewardInternal> GetCustomView() {
@@ -37,6 +37,8 @@ namespace MHW_Editor.Items {
             }
 
             public override string UniqueId => null;
+
+            [DisplayName("")]
             public override string Name => "None";
 
             private const int idBaseOffset = 8;
@@ -58,8 +60,8 @@ namespace MHW_Editor.Items {
 
             [SortOrder(100)]
             [DisplayName("Item Id")]
-            [CustomSorter(typeof(UInt16Sorter))]
-            public string Item_Id_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item_Id, IdNamePair.Unknown((ushort) Item_Id)).ToString();
+            [CustomSorter(typeof(ButtonSorter))]
+            public string Item_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Item_Id).ToStringWithId(Item_Id);
 
             private const int countBaseOffset = 72;
             private int countOffset => countBaseOffset + index;

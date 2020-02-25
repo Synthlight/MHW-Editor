@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Forms;
 using System.Windows.Input;
@@ -7,16 +8,17 @@ using Application = System.Windows.Application;
 using KeyEventArgs = System.Windows.Input.KeyEventArgs;
 
 namespace MHW_Editor {
+    // A fuck ton of dynamic because we can't make an xaml window generic.
     public partial class GetNewItemId {
-        public ushort currentItem { get; set; }
-        public bool cancelled { get; private set; }
+        public dynamic CurrentItem { get; set; }
+        public bool Cancelled { get; private set; }
 
         // ReSharper disable once MemberCanBeMadeStatic.Global
-        public Dictionary<ushort, IdNamePair> dataProxy { get; }
+        public dynamic dataProxy { get; }
 
-        public GetNewItemId(ushort currentItem, Dictionary<ushort, IdNamePair> data) {
-            this.currentItem = currentItem;
-            dataProxy = data;
+        public GetNewItemId(dynamic currentItem, dynamic data) {
+            this.CurrentItem = currentItem;
+            dataProxy = ConvertToIdAndNamePair(data);
 
             InitializeComponent();
 
@@ -30,6 +32,20 @@ namespace MHW_Editor {
             cbx_current_item.Loaded += (sender, args) => cbx_current_item.EditableTextBox.Focus(); // Focus & highlight the text.
             btn_ok.Click += (sender, args) => Ok();
             btn_cancel.Click += (sender, args) => Cancel();
+        }
+
+        private static Dictionary<T, IdNamePair<T>> ConvertToIdAndNamePair<T>(Dictionary<T, string> data) where T : struct {
+            var dict = new Dictionary<T, IdNamePair<T>>();
+            using var enumerator = data.GetEnumerator();
+            enumerator.MoveNext();
+            var type = enumerator.Current.Key.GetType();
+            var genericType = typeof(IdNamePair<>).MakeGenericType(type);
+
+            foreach (var key in data.Keys) {
+                dict[key] = (IdNamePair<T>) Activator.CreateInstance(genericType, key, data[key]);
+            }
+
+            return dict;
         }
 
         private void Cbx_current_item_KeyUp(object sender, KeyEventArgs e) {
@@ -47,12 +63,12 @@ namespace MHW_Editor {
         }
 
         private void Ok() {
-            cancelled = false;
+            Cancelled = false;
             Close();
         }
 
         private void Cancel() {
-            cancelled = true;
+            Cancelled = true;
             Close();
         }
 

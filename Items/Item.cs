@@ -9,11 +9,10 @@ namespace MHW_Editor.Items {
         public Item(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string Name => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Id, IdNamePair.Unknown((ushort) Id)).name;
+        public override string Name => DataHelper.itemData[MainWindow.locale].TryGet(Id);
 
         [SortOrder(lastSortIndex + 1)]
-        [DisplayName("Description")]
-        public string Description => DataHelper.itemDataDescriptions[MainWindow.locale].TryGet((ushort) Id, "Unknown");
+        public string Description => DataHelper.itemDataDescriptions[MainWindow.locale].TryGet(Id);
 
         [SortOrder(Flags_Raw_sortIndex)]
         public uint Flags {

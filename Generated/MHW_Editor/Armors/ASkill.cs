@@ -80,8 +80,8 @@ namespace MHW_Editor.Armors {
 
         [SortOrder(Mantle_Item_Id_sortIndex)]
         [DisplayName(Mantle_Item_Id_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Mantle_Item_Id_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Mantle_Item_Id, IdNamePair.Unknown((ushort) Mantle_Item_Id)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Mantle_Item_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Mantle_Item_Id).ToStringWithId(Mantle_Item_Id);
 
         public const string Unlock_Flag_or_Item_Id__displayName = "Unlock Flag or Item Id?";
         public const int Unlock_Flag_or_Item_Id__sortIndex = 300;

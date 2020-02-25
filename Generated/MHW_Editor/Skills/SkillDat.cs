@@ -46,8 +46,8 @@ namespace MHW_Editor.Skills {
 
         [SortOrder(Unlock_Skill_1_sortIndex)]
         [DisplayName(Unlock_Skill_1_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Unlock_Skill_1_button => MainWindow.skillDatLookup[MainWindow.locale].TryGet((ushort) Unlock_Skill_1, IdNamePair.Unknown((ushort) Unlock_Skill_1)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Unlock_Skill_1_button => MainWindow.skillDatLookup[MainWindow.locale].TryGet(Unlock_Skill_1).ToStringWithId(Unlock_Skill_1);
 
         public const string Unlock_Skill_2_displayName = "Unlock Skill 2";
         public const int Unlock_Skill_2_sortIndex = 200;
@@ -67,8 +67,8 @@ namespace MHW_Editor.Skills {
 
         [SortOrder(Unlock_Skill_2_sortIndex)]
         [DisplayName(Unlock_Skill_2_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Unlock_Skill_2_button => MainWindow.skillDatLookup[MainWindow.locale].TryGet((ushort) Unlock_Skill_2, IdNamePair.Unknown((ushort) Unlock_Skill_2)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Unlock_Skill_2_button => MainWindow.skillDatLookup[MainWindow.locale].TryGet(Unlock_Skill_2).ToStringWithId(Unlock_Skill_2);
 
         public const string Unlock_Skill_3_displayName = "Unlock Skill 3";
         public const int Unlock_Skill_3_sortIndex = 250;
@@ -88,8 +88,8 @@ namespace MHW_Editor.Skills {
 
         [SortOrder(Unlock_Skill_3_sortIndex)]
         [DisplayName(Unlock_Skill_3_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Unlock_Skill_3_button => MainWindow.skillDatLookup[MainWindow.locale].TryGet((ushort) Unlock_Skill_3, IdNamePair.Unknown((ushort) Unlock_Skill_3)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Unlock_Skill_3_button => MainWindow.skillDatLookup[MainWindow.locale].TryGet(Unlock_Skill_3).ToStringWithId(Unlock_Skill_3);
 
         public const string Unlock_Skill_4_displayName = "Unlock Skill 4";
         public const int Unlock_Skill_4_sortIndex = 300;
@@ -109,8 +109,8 @@ namespace MHW_Editor.Skills {
 
         [SortOrder(Unlock_Skill_4_sortIndex)]
         [DisplayName(Unlock_Skill_4_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Unlock_Skill_4_button => MainWindow.skillDatLookup[MainWindow.locale].TryGet((ushort) Unlock_Skill_4, IdNamePair.Unknown((ushort) Unlock_Skill_4)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Unlock_Skill_4_button => MainWindow.skillDatLookup[MainWindow.locale].TryGet(Unlock_Skill_4).ToStringWithId(Unlock_Skill_4);
 
         public const string Param_5_displayName = "Param 5";
         public const int Param_5_sortIndex = 350;

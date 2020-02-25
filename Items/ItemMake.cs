@@ -7,6 +7,7 @@ namespace MHW_Editor.Items {
         public ItemMake(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
+        [DisplayName("")]
         public override string Name => "None";
 
         [SortOrder(Can_Auto_Craft_Raw_sortIndex)]

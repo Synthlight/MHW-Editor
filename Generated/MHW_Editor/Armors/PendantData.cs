@@ -5,7 +5,7 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Armors {
-    public partial class CharmDat {
+    public partial class PendantData {
         public const uint StructSize = 27;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;

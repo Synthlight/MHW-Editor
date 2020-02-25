@@ -5,18 +5,17 @@ using MHW_Editor.Models;
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
-    public partial class Ranged : MhwItem, IWeapon, ISlots {
+    public abstract partial class Ranged : MhwItem, IWeapon, ISlots {
         private readonly string weaponFilename;
 
-        public Ranged(byte[] bytes, ulong offset, string weaponFilename) : base(bytes, offset) {
+        protected Ranged(byte[] bytes, ulong offset, string weaponFilename) : base(bytes, offset) {
             this.weaponFilename = weaponFilename;
         }
 
-        public override string Name => DataHelper.weaponData[MainWindow.locale][weaponFilename].TryGet(GMD_Name_Index, "Unknown");
+        public override string Name => DataHelper.weaponData[MainWindow.locale][weaponFilename].TryGet(GMD_Name_Index);
 
         [SortOrder(lastSortIndex + 1)]
-        [DisplayName("Description")]
-        public string Description => DataHelper.weaponData[MainWindow.locale][weaponFilename].TryGet(GMD_Description_Index, "Unknown").Replace("\r\n", " ");
+        public string Description => DataHelper.weaponData[MainWindow.locale][weaponFilename].TryGet(GMD_Description_Index).Replace("\r\n", " ");
 
         [SortOrder(Is_Fixed_Upgrade_Raw_sortIndex)]
         [DisplayName("Is Fixed Upgrade")]

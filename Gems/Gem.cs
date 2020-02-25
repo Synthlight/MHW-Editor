@@ -7,6 +7,6 @@ namespace MHW_Editor.Gems {
         public Gem(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string Name => DataHelper.itemData[MainWindow.locale].TryGet(Id, IdNamePair.Unknown(Id)).name;
+        public override string Name => DataHelper.itemData[MainWindow.locale].TryGet(Id);
     }
 }

@@ -12,11 +12,10 @@ namespace MHW_Editor.Weapons {
             this.weaponFilename = weaponFilename;
         }
 
-        public override string Name => DataHelper.weaponData[MainWindow.locale][weaponFilename].TryGet(GMD_Name_Index, "Unknown");
+        public override string Name => DataHelper.weaponData[MainWindow.locale][weaponFilename].TryGet(GMD_Name_Index);
 
         [SortOrder(lastSortIndex + 1)]
-        [DisplayName("Description")]
-        public string Description => DataHelper.weaponData[MainWindow.locale][weaponFilename].TryGet(GMD_Description_Index, "Unknown").Replace("\r\n", " ");
+        public string Description => DataHelper.weaponData[MainWindow.locale][weaponFilename].TryGet(GMD_Description_Index).Replace("\r\n", " ");
 
         [SortOrder(Is_Fixed_Upgrade_Raw_sortIndex)]
         [DisplayName("Is Fixed Upgrade")]

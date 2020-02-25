@@ -25,6 +25,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +35,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
@@ -88,7 +90,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Armors\Armor.cs" />
-    <Compile Include="Armors\CharmDat.cs" />
+    <Compile Include="Armors\PendantData.cs" />
     <Compile Include="Armors\OtomoArmorDat.cs" />
     <Compile Include="Assets\Assets.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -102,7 +104,7 @@
     <Compile Include="Gems\DecoLottery.cs" />
     <Compile Include="Gems\DecoPercent.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\ArmorDataValueClass.cs" />
-    <Compile Include="Generated\MHW_Editor\Armors\CharmDat.cs" />
+    <Compile Include="Generated\MHW_Editor\Armors\PendantData.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\OtomoArmorDat.cs" />
     <Compile Include="Generated\MHW_Editor\ButtonTypeInfo.cs" />
     <Compile Include="Generated\MHW_Editor\FileHashes.cs" />
@@ -178,7 +180,7 @@
     <Compile Include="Models\JsonChanges.cs" />
     <Compile Include="Models\PlItemCustomView.cs" />
     <Compile Include="Models\SortOrderAttribute.cs" />
-    <Compile Include="Models\UInt16Sorter.cs" />
+    <Compile Include="Models\ButtonSorter.cs" />
     <Compile Include="Models\VersionCheck.cs" />
     <Compile Include="PlData\PlItemParam.cs" />
     <Compile Include="Skills\MusicSkill.cs" />
@@ -361,6 +363,19 @@
     <None Include="Assets\OtomoData\rus_otomo_weaponData.json" />
     <None Include="Assets\OtomoData\spa_otomo_armorData.json" />
     <None Include="Assets\OtomoData\spa_otomo_weaponData.json" />
+    <None Include="Assets\PendantData\ara_pendantData.json" />
+    <None Include="Assets\PendantData\chS_pendantData.json" />
+    <None Include="Assets\PendantData\chT_pendantData.json" />
+    <None Include="Assets\PendantData\eng_pendantData.json" />
+    <None Include="Assets\PendantData\fre_pendantData.json" />
+    <None Include="Assets\PendantData\ger_pendantData.json" />
+    <None Include="Assets\PendantData\ita_pendantData.json" />
+    <None Include="Assets\PendantData\jpn_pendantData.json" />
+    <None Include="Assets\PendantData\kor_pendantData.json" />
+    <None Include="Assets\PendantData\pol_pendantData.json" />
+    <None Include="Assets\PendantData\ptB_pendantData.json" />
+    <None Include="Assets\PendantData\rus_pendantData.json" />
+    <None Include="Assets\PendantData\spa_pendantData.json" />
     <None Include="Assets\SkillData\ara_skillData.json" />
     <None Include="Assets\SkillData\chS_skillData.json" />
     <None Include="Assets\SkillData\chT_skillData.json" />

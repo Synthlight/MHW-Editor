@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Reflection;
 
 namespace MHW_Editor.Models {
-    public class UInt32Sorter : ICustomSorterWithPropertyName {
+    public class ButtonSorter : ICustomSorterWithPropertyName {
         public ListSortDirection SortDirection { get; set; } = ListSortDirection.Ascending;
         public string PropertyName { get; set; }
 

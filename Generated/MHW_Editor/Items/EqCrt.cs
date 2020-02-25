@@ -46,8 +46,8 @@ namespace MHW_Editor.Items {
 
         [SortOrder(Needed_Item_Id_to_Unlock_sortIndex)]
         [DisplayName(Needed_Item_Id_to_Unlock_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Needed_Item_Id_to_Unlock_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Needed_Item_Id_to_Unlock, IdNamePair.Unknown((ushort) Needed_Item_Id_to_Unlock)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Needed_Item_Id_to_Unlock_button => DataHelper.itemData[MainWindow.locale].TryGet(Needed_Item_Id_to_Unlock).ToStringWithId(Needed_Item_Id_to_Unlock);
 
         public const string Monster_Unlock_displayName = "Monster Unlock";
         public const int Monster_Unlock_sortIndex = 200;
@@ -123,8 +123,8 @@ namespace MHW_Editor.Items {
 
         [SortOrder(Mat_1_Id_sortIndex)]
         [DisplayName(Mat_1_Id_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Mat_1_Id_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Mat_1_Id, IdNamePair.Unknown((ushort) Mat_1_Id)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Mat_1_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Mat_1_Id).ToStringWithId(Mat_1_Id);
 
         public const string Mat_1_Count_displayName = "Mat 1 Count";
         public const int Mat_1_Count_sortIndex = 450;
@@ -158,8 +158,8 @@ namespace MHW_Editor.Items {
 
         [SortOrder(Mat_2_Id_sortIndex)]
         [DisplayName(Mat_2_Id_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Mat_2_Id_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Mat_2_Id, IdNamePair.Unknown((ushort) Mat_2_Id)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Mat_2_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Mat_2_Id).ToStringWithId(Mat_2_Id);
 
         public const string Mat_2_Count_displayName = "Mat 2 Count";
         public const int Mat_2_Count_sortIndex = 550;
@@ -193,8 +193,8 @@ namespace MHW_Editor.Items {
 
         [SortOrder(Mat_3_Id_sortIndex)]
         [DisplayName(Mat_3_Id_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Mat_3_Id_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Mat_3_Id, IdNamePair.Unknown((ushort) Mat_3_Id)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Mat_3_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Mat_3_Id).ToStringWithId(Mat_3_Id);
 
         public const string Mat_3_Count_displayName = "Mat 3 Count";
         public const int Mat_3_Count_sortIndex = 650;
@@ -228,8 +228,8 @@ namespace MHW_Editor.Items {
 
         [SortOrder(Mat_4_Id_sortIndex)]
         [DisplayName(Mat_4_Id_displayName)]
-        [CustomSorter(typeof(UInt16Sorter))]
-        public string Mat_4_Id_button => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Mat_4_Id, IdNamePair.Unknown((ushort) Mat_4_Id)).ToString();
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Mat_4_Id_button => DataHelper.itemData[MainWindow.locale].TryGet(Mat_4_Id).ToStringWithId(Mat_4_Id);
 
         public const string Mat_4_Count_displayName = "Mat 4 Count";
         public const int Mat_4_Count_sortIndex = 750;

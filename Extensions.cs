@@ -30,6 +30,25 @@ namespace MHW_Editor {
             return false;
         }
 
+        public static bool IsSigned(this Type type) {
+            // ReSharper disable once SwitchExpressionHandlesSomeKnownEnumValuesWithExceptionInDefault
+            return Type.GetTypeCode(type) switch {
+                TypeCode.Byte => false,
+                TypeCode.UInt16 => false,
+                TypeCode.UInt32 => false,
+                TypeCode.UInt64 => false,
+                TypeCode.SByte => true,
+                TypeCode.Int16 => true,
+                TypeCode.Int32 => true,
+                TypeCode.Int64 => true,
+                _ => throw new ArgumentOutOfRangeException()
+            };
+        }
+
+        public static string ToStringWithId<T>(this string name, T id) where T : struct {
+            return MainWindow.showIdBeforeName ? $"{id}: {name}" : $"{name}: {id}";
+        }
+
         public static Visibility VisibleIfTrue(this bool b) {
             return b ? Visibility.Visible : Visibility.Collapsed;
         }

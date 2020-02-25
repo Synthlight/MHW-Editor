@@ -45,7 +45,7 @@ namespace MHW_Generator {
             GenCustomParts();
             GenCustomPartsR();
             GenShopSed();
-            GenCharmDat();
+            GenPendantData();
             GenGunnerReload();
             GenGunnerShoot();
             GenItemMake();
@@ -377,8 +377,8 @@ namespace MHW_Generator {
             });
         }
 
-        private static void GenCharmDat() {
-            GenerateItemProps("MHW_Editor.Armors", "CharmDat", new MhwStructData { // .ch_dat
+        private static void GenPendantData() {
+            GenerateItemProps("MHW_Editor.Armors", "PendantData", new MhwStructData { // .ch_dat
                 size = 27,
                 offsetInitial = 10,
                 entryCountOffset = 6,

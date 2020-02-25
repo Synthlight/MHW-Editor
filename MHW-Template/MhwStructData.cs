@@ -31,7 +31,7 @@ namespace MHW_Template {
                          string accessLevel = "public",
                          DataSourceType? dataSourceType = null,
                          string[] extraOnPropertyChanged = null,
-                         string dataSourceCustomSorter = "UInt16Sorter") {
+                         string dataSourceCustomSorter = "ButtonSorter") {
                 this.displayName = displayName;
                 this.offset = offset;
                 this.type = new CodeTypeReference(type);

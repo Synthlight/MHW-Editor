@@ -8,10 +8,9 @@ namespace MHW_Editor.Items {
         public Bounty(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
-        public override string Name => DataHelper.bountyData[MainWindow.locale].TryGet(Id, "Unknown");
+        public override string Name => DataHelper.bountyData[MainWindow.locale].TryGet(Id);
 
         [SortOrder(lastSortIndex + 1)]
-        [DisplayName("Description")]
-        public string Description => DataHelper.bountyDataDescriptions[MainWindow.locale].TryGet(Id, "Unknown");
+        public string Description => DataHelper.bountyDataDescriptions[MainWindow.locale].TryGet(Id);
     }
 }

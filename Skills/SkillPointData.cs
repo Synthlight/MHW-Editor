@@ -12,11 +12,13 @@ namespace MHW_Editor.Skills {
         [SortOrder(0)]
         [DisplayName("Name/Id")]
         [CustomSorter(typeof(SkillPointDataNameIdSorter))]
-        public IdNamePair Name_And_Id => DataHelper.skillData[MainWindow.locale].TryGet((ushort) Id, IdNamePair.Unknown((ushort) Id));
+        public string Name_And_Id => Name.ToStringWithId(Id);
 
-        public override string Name => "None";
+        [DisplayName("")]
+        public override string Name => DataHelper.skillData[MainWindow.locale].TryGet((uint) Id);
 
         [SortOrder(0)]
+        [DisplayName("")]
         public ulong Id => (Offset - InitialOffset) / StructSize;
 
         [SortOrder(Is_Set_Bonus_Raw_sortIndex)]
@@ -36,9 +38,9 @@ namespace MHW_Editor.Skills {
         public int Compare(object x, object y) {
             if (x is SkillPointData x1 && y is SkillPointData x2) {
                 if (MainWindow.showIdBeforeName) {
-                    return x1.Name_And_Id.id.CompareTo(x2.Name_And_Id.id) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
+                    return x1.Id.CompareTo(x2.Id) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
                 } else {
-                    return string.Compare(x1.Name_And_Id.name, x2.Name_And_Id.name, StringComparison.Ordinal) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
+                    return string.Compare(x1.Name, x2.Name, StringComparison.Ordinal) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
                 }
             }
 

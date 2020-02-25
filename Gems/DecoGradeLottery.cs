@@ -12,20 +12,21 @@ namespace MHW_Editor.Gems {
         [SortOrder(0)]
         [DisplayName("Name/Id")]
         [CustomSorter(typeof(DecoGradeLotteryNameIdSorter))]
-        public IdNamePair Name_And_Id => DataHelper.itemData[MainWindow.locale].TryGet((ushort) Item_Id, IdNamePair.Unknown((ushort) Item_Id));
+        public string Name_And_Id => Name.ToStringWithId(Item_Id);
 
-        public override string Name => "None";
+        [DisplayName("")]
+        public override string Name => DataHelper.itemData[MainWindow.locale].TryGet(Item_Id);
     }
 
     public class DecoGradeLotteryNameIdSorter : ICustomSorter {
         public ListSortDirection SortDirection { get; set; } = ListSortDirection.Ascending;
 
         public int Compare(object x, object y) {
-            if (x is DecoLottery x1 && y is DecoLottery x2) {
+            if (x is DecoGradeLottery x1 && y is DecoGradeLottery x2) {
                 if (MainWindow.showIdBeforeName) {
-                    return x1.Name_And_Id.id.CompareTo(x2.Name_And_Id.id) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
+                    return x1.Item_Id.CompareTo(x2.Item_Id) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
                 } else {
-                    return string.Compare(x1.Name_And_Id.name, x2.Name_And_Id.name, StringComparison.Ordinal) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
+                    return string.Compare(x1.Name, x2.Name, StringComparison.Ordinal) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
                 }
             }
 

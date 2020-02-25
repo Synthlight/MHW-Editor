@@ -25,6 +25,11 @@ namespace MHW_Template {
             return dict.ContainsKey(key) ? dict[key] : defaultValue;
         }
 
+        public static string TryGet<K>(this IDictionary<K, string> dict, K key, string defaultValue = "Unknown") {
+            if (dict == null) return defaultValue;
+            return dict.ContainsKey(key) ? dict[key] : defaultValue;
+        }
+
         public static T GetData<T>(this IEnumerable<byte> bytes) where T : struct {
             return bytes.GetData<T>(0, Marshal.SizeOf(default(T)));
         }

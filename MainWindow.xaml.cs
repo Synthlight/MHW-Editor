@@ -53,7 +53,7 @@ namespace MHW_Editor {
         [CanBeNull]
         private DataGridRow coloredRow;
         private bool isManualEditCommit;
-        public static Dictionary<string, Dictionary<ushort, IdNamePair>> skillDatLookup = new Dictionary<string, Dictionary<ushort, IdNamePair>>();
+        public static Dictionary<string, Dictionary<uint, string>> skillDatLookup = new Dictionary<string, Dictionary<uint, string>>();
         [CanBeNull]
         private CancellationTokenSource savedTimer;
         private readonly Brush backgroundBrush = (Brush) new BrushConverter().ConvertFrom("#c0e1fb");
@@ -67,8 +67,9 @@ namespace MHW_Editor {
                 locale = value;
                 foreach (MhwItem item in dg_items.Items) {
                     item.OnPropertyChanged(nameof(IMhwItem.Name),
+                                           nameof(SkillDat.Description),
                                            nameof(SkillDat.Name_And_Id),
-                                           nameof(SkillDat.Description));
+                                           nameof(MusicSkill.Song_And_Id));
 
                     item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
                 }
@@ -82,7 +83,7 @@ namespace MHW_Editor {
                 showIdBeforeName = value;
                 foreach (MhwItem item in dg_items.Items) {
                     item.OnPropertyChanged(nameof(SkillDat.Name_And_Id),
-                                           nameof(MusicSkill.Song_Id));
+                                           nameof(MusicSkill.Song_And_Id));
 
                     item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
                 }
@@ -155,15 +156,14 @@ namespace MHW_Editor {
             var request = (HttpWebRequest) WebRequest.Create(url);
             request.Method = "GET";
 
-            using (var response = (HttpWebResponse) request.GetResponse()) {
-                using (var reader = new StreamReader(response.GetResponseStream() ?? throw new InvalidOperationException())) {
-                    return reader.ReadToEnd();
-                }
-            }
+            using var response = (HttpWebResponse) request.GetResponse();
+            using var reader = new StreamReader(response.GetResponseStream() ?? throw new InvalidOperationException());
+            return reader.ReadToEnd();
         }
 
         private void Dg_items_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e) {
             Debug.Assert(e.PropertyName != null, "e.PropertyName != null");
+            var fileName = Path.GetFileNameWithoutExtension(targetFile);
 
             switch (e.PropertyName) {
                 case nameof(IMhwItem.Bytes):
@@ -184,55 +184,18 @@ namespace MHW_Editor {
                 case nameof(Ranged.Shell_Type_Id):
                     e.Cancel = targetFileType.Is(typeof(Bow));
                     break;
-                case nameof(IMhwItem.Name): // None of the following have names.
-                    e.Cancel = targetFileType.Is(typeof(ArmUp),
-                                                 typeof(CharmDat),
-                                                 typeof(CustomParts),
-                                                 typeof(CustomPartsR),
-                                                 typeof(DecoPercent),
-                                                 typeof(EqCrt),
-                                                 typeof(EqCus),
-                                                 typeof(GunnerReload),
-                                                 typeof(GunnerShoot),
-                                                 typeof(ItemDelivery),
-                                                 typeof(ItemList),
-                                                 typeof(ItemLottery),
-                                                 typeof(ItemMake),
-                                                 typeof(LimitBreakMaterialBase),
-                                                 typeof(LimitBreakMaterialSkill),
-                                                 typeof(MelderExchange),
-                                                 typeof(MelderItem),
-                                                 typeof(MusicSkill),
-                                                 typeof(NewLimitBreak),
-                                                 typeof(NewLimitBreakR),
-                                                 typeof(PlantFertilizer),
-                                                 typeof(PlantItem),
-                                                 typeof(QuestReward),
-                                                 typeof(QuestReward.QuestRewardInternal),
-                                                 typeof(Sharpness),
-                                                 typeof(ShellTable),
-                                                 typeof(ShopSed),
-                                                 typeof(SkillDat),
-                                                 typeof(SkillPointData),
-                                                 typeof(SwapEnemyRate),
-                                                 typeof(SwapC),
-                                                 typeof(SwapItem),
-                                                 typeof(SwapN),
-                                                 typeof(Treasure),
-                                                 typeof(ValueTrader),
-                                                 typeof(WeaponGunLance),
-                                                 typeof(WeaponSwitchAxe),
-                                                 typeof(WeaponWhistle),
-                                                 typeof(WeaponWSword),
-                                                 typeof(BottleTable));
+                case nameof(IMhwItem.Name):
+                    if (targetFileType.Is(typeof(EqCrt))) {
+                        if (fileName != "charm") {
+                            e.Cancel = true;
+                        }
+                    }
                     break;
                 case nameof(SkillDat.Id):
-                    e.Cancel = targetFileType.Is(typeof(SkillDat),
-                                                 typeof(SkillPointData));
+                    e.Cancel = targetFileType.Is(typeof(SkillDat));
                     break;
                 case nameof(SkillDat.Index):
                     e.Cancel = targetFileType.Is(typeof(Armor),
-                                                 typeof(ASkill),
                                                  typeof(DecoGradeLottery),
                                                  typeof(DecoLottery),
                                                  typeof(Gem),
@@ -240,8 +203,7 @@ namespace MHW_Editor {
                                                  typeof(OtomoArmorDat),
                                                  typeof(OtomoWeaponDat),
                                                  typeof(Ranged),
-                                                 typeof(RodInsect),
-                                                 typeof(SkillDat));
+                                                 typeof(RodInsect));
                     break;
                 default:
                     e.Cancel = e.PropertyName.EndsWith("Raw");
@@ -257,7 +219,6 @@ namespace MHW_Editor {
 
             switch (e.PropertyName) {
                 case nameof(EqCrt.Equipment_Category): {
-                    var fileName = Path.GetFileNameWithoutExtension(targetFile);
                     if (!EqCrt.categoryLookup.ContainsKey(fileName ?? throw new InvalidOperationException())) break;
 
                     var cb = new DataGridComboBoxColumn {
@@ -370,7 +331,7 @@ namespace MHW_Editor {
                 case nameof(GunnerReload.Mod_2):
                 case nameof(GunnerReload.Mod_3):
                 case nameof(GunnerReload.Mod_4): {
-                    Dictionary<byte, IdNamePair> source = null;
+                    Dictionary<byte, IdNamePair<byte>> source = null;
                     if (targetFileType.Is(typeof(GunnerReload))) {
                         source = GunnerReload.reloadLookup;
                     } else if (targetFileType.Is(typeof(GunnerShoot))) {
@@ -416,6 +377,11 @@ namespace MHW_Editor {
             ICustomSorter customSorter = null;
 
             if (displayName != null) {
+                if (displayName == "") { // Use empty DisplayName as a way to hide columns.
+                    e.Cancel = true;
+                    return;
+                }
+
                 e.Column.Header = displayName;
             }
 
@@ -491,29 +457,23 @@ namespace MHW_Editor {
             var obj = (MhwItem) cell.DataContext;
             var property = obj.GetType().GetProperty(propertyName.Replace("_button", ""), BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
             Debug.Assert(property != null, nameof(property) + " != null");
-
-            var value = (ushort) Convert.ChangeType(property.GetValue(obj), TypeCode.UInt16);
+            var propertyType = property.PropertyType;
+            var value = property.GetValue(obj);
             var dataSourceType = ((DataSourceAttribute) property.GetCustomAttribute(typeof(DataSourceAttribute), true))?.dataType;
 
-            Dictionary<ushort, IdNamePair> dataSource;
-            switch (dataSourceType) {
-                case DataSourceType.Items:
-                    dataSource = DataHelper.itemData[locale];
-                    break;
-                case DataSourceType.Skills:
-                    dataSource = DataHelper.skillData[locale];
-                    break;
-                case DataSourceType.SkillDat:
-                    dataSource = skillDatLookup[locale];
-                    break;
-                default: throw new ArgumentOutOfRangeException();
-            }
+            dynamic dataSource = dataSourceType switch {
+                DataSourceType.Items => DataHelper.itemData[locale],
+                DataSourceType.Skills => DataHelper.skillData[locale],
+                DataSourceType.SkillDat => skillDatLookup[locale],
+                _ => throw new ArgumentOutOfRangeException()
+            };
 
             var getNewItemId = new GetNewItemId(value, dataSource);
+
             getNewItemId.ShowDialog();
 
-            if (!getNewItemId.cancelled) {
-                property.SetValue(obj, getNewItemId.currentItem);
+            if (!getNewItemId.Cancelled) {
+                property.SetValue(obj, Convert.ChangeType(getNewItemId.CurrentItem, propertyType));
                 obj.OnPropertyChanged(propertyName);
             }
         }
@@ -584,12 +544,12 @@ namespace MHW_Editor {
 
         private void FillSkillDatDictionary() {
             // Makes the lookup table for skill dat unlock columns which reference themselves by index.
-            skillDatLookup = new Dictionary<string, Dictionary<ushort, IdNamePair>>();
+            skillDatLookup = new Dictionary<string, Dictionary<uint, string>>();
             foreach (var lang in Global.LANGUAGES) {
-                skillDatLookup[lang] = new Dictionary<ushort, IdNamePair>();
+                skillDatLookup[lang] = new Dictionary<uint, string>();
                 foreach (SkillDat item in items) {
-                    var name = DataHelper.skillData[lang].TryGet(item.Id, IdNamePair.Unknown(item.Id)).name;
-                    skillDatLookup[lang][(ushort) item.Index] = new IdNamePair((ushort) item.Index, name);
+                    var name = DataHelper.skillData[lang].TryGet(item.Id);
+                    skillDatLookup[lang][(uint) item.Index] = name;
                 }
             }
         }
@@ -684,6 +644,7 @@ namespace MHW_Editor {
 
             cb_show_id_before_name.Visibility = (targetFileType.Is(typeof(DecoPercent),
                                                                    typeof(MusicSkill),
+                                                                   typeof(QuestReward),
                                                                    typeof(SkillDat),
                                                                    typeof(SkillPointData))
                                                  || ButtonTypeInfo.TYPES_WITH_BUTTONS.Contains(targetFileType.Name)).VisibleIfTrue();
@@ -703,7 +664,7 @@ namespace MHW_Editor {
                     // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
                     foreach (var fileAndHash in pair.Value) {
                         if (Title == fileAndHash.Key && sha512 == fileAndHash.Value) {
-                            var newChunk = FileHashes.GOOD_CHUNK_MAP.TryGet(Title, "Unknown");
+                            var newChunk = FileHashes.GOOD_CHUNK_MAP.TryGet(Title);
                             MessageBox.Show($"This file ({Title}) is from {pair.Key} and is obsolete.\r\n" +
                                             $"The newest version of the file is in {newChunk}.\r\n\r\n" +
                                             "Using obsolete files is known to cause anything from blackscreens to crashes or incorrect data.", "Obsolete File Detected", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -770,7 +731,7 @@ namespace MHW_Editor {
 
                 object obj;
                 // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
-                if (targetFileType.Is(typeof(IWeapon))) {
+                if (targetFileType.Is(typeof(IWeapon), typeof(EqCrt))) {
                     obj = Activator.CreateInstance(targetFileType, buff, (ulong) position, weaponFilename);
                 } else {
                     obj = Activator.CreateInstance(targetFileType, buff, (ulong) position);
@@ -791,7 +752,7 @@ namespace MHW_Editor {
 
                 object obj;
                 // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
-                if (targetFileType.Is(typeof(IWeapon))) {
+                if (targetFileType.Is(typeof(IWeapon), typeof(EqCrt))) {
                     obj = Activator.CreateInstance(targetFileType, buff, offset, weaponFilename);
                 } else {
                     obj = Activator.CreateInstance(targetFileType, buff, offset);
@@ -1001,7 +962,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".arm_up")) return typeof(ArmUp);
             if (fileName.EndsWith(".ask")) return typeof(ASkill);
             if (fileName.EndsWith(".bbtbl")) return typeof(BottleTable);
-            if (fileName.EndsWith(".ch_dat")) return typeof(CharmDat);
+            if (fileName.EndsWith(".ch_dat")) return typeof(PendantData);
             if (fileName.EndsWith(".cus_pa")) return typeof(CustomParts);
             if (fileName.EndsWith(".cus_par")) return typeof(CustomPartsR);
             if (fileName.EndsWith(".dglt")) return typeof(DecoGradeLottery);

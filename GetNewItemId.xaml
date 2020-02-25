@@ -31,7 +31,7 @@
                                        IsEditable="True"
                                        IsTextSearchEnabled="False"
                                        ItemsSource="{Binding dataProxy}"
-                                       SelectedValue="{Binding currentItem}"
+                                       SelectedValue="{Binding CurrentItem}"
                                        SelectedValuePath="Key"
                                        StaysOpenOnEdit="True">
             <controls:AutoFilteredComboBox.ItemsPanel>
