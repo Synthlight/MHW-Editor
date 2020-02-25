@@ -93,14 +93,35 @@ namespace MHW_Editor {
         public bool SingleClickToEditMode { get; set; } = true;
 
         public MainWindow() {
-#pragma warning disable 162
-            // ReSharper disable HeuristicUnreachableCode
-            if (false) {
-                // ReSharper disable StringLiteralTypo
-                //EncryptionHelper.Decrypt(EncryptionKeys.ASKILLP_KEY, $@"{Global.CHUNK_ROOT}\common\pl\askill_param.asp", $@"{Global.CHUNK_ROOT}\common\pl\askill_param.decrypted.asp");
-                //EncryptionHelper.Decrypt(EncryptionKeys.OWP_DAT_KEY, $@"{Global.CHUNK_ROOT}\hm\wp\wp12\shell\data\hbg_00_normal_1.shlp", $@"{Global.CHUNK_ROOT}\hm\wp\wp12\shell\data\hbg_00_normal_1.decrypted.asp");
-                //EncryptionHelper.Decrypt(EncryptionKeys.PL_PARAM_KEY, $@"{Global.CHUNK_ROOT}\common\pl\pl_item_param.plip", $@"{Global.CHUNK_ROOT}\common\pl\pl_item_param.decrypted.plip");
-                //EncryptionHelper.Decrypt(EncryptionKeys.PL_PARAM_KEY, $@"{Global.CHUNK_ROOT}\common\pl\pl_param.plp", $@"{Global.CHUNK_ROOT}\common\pl\pl_param.decrypted.plp");
+            var args = Environment.GetCommandLineArgs();
+
+            if (args.Length >= 4) {
+                try {
+                    var action = args[1].ToLower();
+                    var inFile = args[2];
+                    var outFile = args[3];
+
+                    var ext = Path.GetExtension(inFile);
+                    var key = args.Length == 5 ? args[4] : EncryptionKeys.FILE_EXT_KEY_LOOKUP.TryGet(ext, null);
+
+                    if (key == null) {
+                        MessageBox.Show($"Unknown Key for: {ext}", "Unknown Key", MessageBoxButton.OK, MessageBoxImage.Error);
+                        Close();
+                        return;
+                    }
+
+                    switch (action) {
+                        case "-decrypt":
+                            EncryptionHelper.Decrypt(key, inFile, outFile);
+                            break;
+                        case "-encrypt":
+                            EncryptionHelper.Encrypt(key, inFile, outFile);
+                            break;
+                    }
+                } catch (Exception e) {
+                    MessageBox.Show($"Error: {e}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+
                 Close();
                 return;
             }
@@ -114,7 +135,6 @@ namespace MHW_Editor {
             Height = SystemParameters.MaximizedPrimaryScreenHeight * 0.5;
 
             DoUpdateCheck();
-#pragma warning restore 162
         }
 
         private async void DoUpdateCheck() {

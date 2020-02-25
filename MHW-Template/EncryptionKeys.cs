@@ -1,4 +1,6 @@
-﻿namespace MHW_Template {
+﻿using System.Collections.Generic;
+
+namespace MHW_Template {
     public static class EncryptionKeys {
         // ReSharper disable IdentifierTypo
         public const string PL_PARAM_KEY = "j1P15gEkgVa7NdFxiqwCPitykHctY2nZPjSaElvqb0eSwcLO1cOlTqqv"; // mParam
@@ -16,5 +18,21 @@
         public const string UNKNOWN_KEY_2 = "ZduEVAgrFnd8jpnwHF2ur64BHcd37gEYDQwRbeBwMt6dGRK3tUwm2wx5"; // rSpecialTraceLotData
         public const string UNKNOWN_KEY_3 = "b71AMFJuw63cUTlDt5ntSAtaAvwLKizNtapy4W0QAsC39QXPr6b78Asz"; // cRomPacketSysSyncStart
         public const string UNKNOWN_KEY_6 = "TZNgJfzyD2WKiuV4SglmI6oN5jP2hhRJcBwzUooyfIUTM4ptDYGjuRTP";
+
+        public static readonly Dictionary<string, string> FILE_EXT_KEY_LOOKUP = new Dictionary<string, string> {
+            {".aeq", UNKNOWN_KEY_3},
+            {".asp", ASKILLP_KEY},
+            {".cus_pa", CUS_PAR_KEY},
+            {".cus_par", CUS_PAR_KEY},
+            {".dtt_eda", DTT_EDA_KEY},
+            {".dtt_epg", DTT_EPG_KEY},
+            {".itlot", ITLOT_KEY},
+            {".msk", MSK_KEY},
+            {".owp_dat", OWP_DAT_KEY},
+            {".plip", PL_PARAM_KEY},
+            {".plp", PL_PARAM_KEY},
+            {".rod_inse", ROD_INSE_KEY},
+            {".shlp", OWP_DAT_KEY},
+        };
     }
 }
