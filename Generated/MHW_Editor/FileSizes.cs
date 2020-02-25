@@ -142,6 +142,7 @@ namespace MHW_Editor {
             {"otomoArmor.oam_dat", 13576},
             {"otomoWeapon.owp_dat", 6288},
             {"pl_item_param.plip", 512},
+            {"pl_param.plp", 20640},
             {"plant_fertilizer.plfe", 226},
             {"plant_item.plit", 1416},
             {"remData_.rem", 114},

@@ -100,6 +100,7 @@ namespace MHW_Editor {
                 //EncryptionHelper.Decrypt(EncryptionKeys.ASKILLP_KEY, $@"{Global.CHUNK_ROOT}\common\pl\askill_param.asp", $@"{Global.CHUNK_ROOT}\common\pl\askill_param.decrypted.asp");
                 //EncryptionHelper.Decrypt(EncryptionKeys.OWP_DAT_KEY, $@"{Global.CHUNK_ROOT}\hm\wp\wp12\shell\data\hbg_00_normal_1.shlp", $@"{Global.CHUNK_ROOT}\hm\wp\wp12\shell\data\hbg_00_normal_1.decrypted.asp");
                 //EncryptionHelper.Decrypt(EncryptionKeys.PL_PARAM_KEY, $@"{Global.CHUNK_ROOT}\common\pl\pl_item_param.plip", $@"{Global.CHUNK_ROOT}\common\pl\pl_item_param.decrypted.plip");
+                //EncryptionHelper.Decrypt(EncryptionKeys.PL_PARAM_KEY, $@"{Global.CHUNK_ROOT}\common\pl\pl_param.plp", $@"{Global.CHUNK_ROOT}\common\pl\pl_param.decrypted.plp");
                 Close();
                 return;
             }
@@ -190,6 +191,7 @@ namespace MHW_Editor {
                             e.Cancel = true;
                         }
                     }
+
                     break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
@@ -990,6 +992,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".plfe")) return typeof(PlantFertilizer);
             if (fileName.EndsWith(".plip")) return typeof(PlItemParam);
             if (fileName.EndsWith(".plit")) return typeof(PlantItem);
+            if (fileName.EndsWith(".plp")) return typeof(PlPlayerParam);
             if (fileName.EndsWith(".rod_inse")) return typeof(RodInsect);
             if (fileName.EndsWith(".rem")) return typeof(QuestReward);
             if (fileName.EndsWith(".sed")) return typeof(ShopSed);
