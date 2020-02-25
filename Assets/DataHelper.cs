@@ -5,21 +5,21 @@ using Newtonsoft.Json;
 
 namespace MHW_Editor.Assets {
     public static class DataHelper {
-        public static readonly Dictionary<string, Dictionary<uint, string>> itemData = new Dictionary<string, Dictionary<uint, string>>();
-        public static readonly Dictionary<string, Dictionary<uint, string>> itemDataDescriptions = new Dictionary<string, Dictionary<uint, string>>();
-        public static readonly Dictionary<string, Dictionary<uint, string>> skillData = new Dictionary<string, Dictionary<uint, string>>();
-        public static readonly Dictionary<string, Dictionary<uint, string>> skillDataDescriptions = new Dictionary<string, Dictionary<uint, string>>();
-        public static readonly Dictionary<string, Dictionary<uint, string>> armorData = new Dictionary<string, Dictionary<uint, string>>();
-        public static readonly Dictionary<string, Dictionary<string, Dictionary<uint, string>>> weaponData = new Dictionary<string, Dictionary<string, Dictionary<uint, string>>>();
-        public static readonly Dictionary<string, Dictionary<uint, string>> otomoArmorData = new Dictionary<string, Dictionary<uint, string>>();
-        public static readonly Dictionary<string, Dictionary<uint, string>> otomoWeaponData = new Dictionary<string, Dictionary<uint, string>>();
-        public static readonly Dictionary<uint, string> songData = new Dictionary<uint, string>();
-        public static readonly Dictionary<string, Dictionary<uint, string>> insectData = new Dictionary<string, Dictionary<uint, string>>();
-        public static readonly Dictionary<string, Dictionary<uint, string>> bountyData = new Dictionary<string, Dictionary<uint, string>>();
-        public static readonly Dictionary<string, Dictionary<uint, string>> bountyDataDescriptions = new Dictionary<string, Dictionary<uint, string>>();
-        public static readonly Dictionary<string, Dictionary<uint, string>> mantleData = new Dictionary<string, Dictionary<uint, string>>();
-        public static readonly Dictionary<string, Dictionary<uint, string>> mantleDataDescriptions = new Dictionary<string, Dictionary<uint, string>>();
-        public static readonly Dictionary<string, Dictionary<uint, string>> pendantData = new Dictionary<string, Dictionary<uint, string>>();
+        public static readonly LangMap armorData = new LangMap(); // Uses GMD reference.
+        public static readonly LangMap bountyData = new LangMap();
+        public static readonly LangMap bountyDataDescriptions = new LangMap();
+        public static readonly LangMap itemData = new LangMap();
+        public static readonly LangMap itemDataDescriptions = new LangMap();
+        public static readonly LangMap kinsectData = new LangMap();
+        public static readonly LangMap mantleData = new LangMap();
+        public static readonly LangMap mantleDataDescriptions = new LangMap();
+        public static readonly LangMap otomoArmorData = new LangMap(); // Uses GMD reference.
+        public static readonly LangMap otomoWeaponData = new LangMap(); // Uses GMD reference.
+        public static readonly LangMap pendantData = new LangMap();
+        public static readonly LangMap skillData = new LangMap();
+        public static readonly LangMap skillDataDescriptions = new LangMap();
+        public static readonly Dictionary<uint, string> songData = new Dictionary<uint, string>(); // Has no lang.
+        public static readonly Dictionary<string, LangMap> weaponData = new Dictionary<string, LangMap>(); // Has wp file name too. Uses GMD reference.
 
         static DataHelper() {
             foreach (var lang in Global.LANGUAGES) {
@@ -32,10 +32,10 @@ namespace MHW_Editor.Assets {
                 armorData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_armorData"));
                 otomoArmorData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_otomo_armorData"));
                 otomoWeaponData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_otomo_weaponData"));
-                insectData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_insectData"));
+                kinsectData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_insectData"));
                 pendantData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_pendantData"));
 
-                weaponData[lang] = new Dictionary<string, Dictionary<uint, string>>();
+                weaponData[lang] = new LangMap();
                 foreach (var weapon in Global.WEAPONS) {
                     weaponData[lang][weapon] = LoadDict<uint, string>(GetAsset($"{lang}_{weapon}"));
                 }

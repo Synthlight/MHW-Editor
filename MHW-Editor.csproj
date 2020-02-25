@@ -98,6 +98,7 @@
       <DependentUpon>Assets.resx</DependentUpon>
     </Compile>
     <Compile Include="Assets\DataHelper.cs" />
+    <Compile Include="Assets\LangMap.cs" />
     <Compile Include="Controls\AutoFilteredComboBox.cs" />
     <Compile Include="EncryptionHelper.cs" />
     <Compile Include="Gems\DecoGradeLottery.cs" />

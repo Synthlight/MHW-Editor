@@ -53,7 +53,7 @@ namespace MHW_Editor {
         [CanBeNull]
         private DataGridRow coloredRow;
         private bool isManualEditCommit;
-        public static Dictionary<string, Dictionary<uint, string>> skillDatLookup = new Dictionary<string, Dictionary<uint, string>>();
+        public static LangMap skillDatLookup = new LangMap();
         [CanBeNull]
         private CancellationTokenSource savedTimer;
         private readonly Brush backgroundBrush = (Brush) new BrushConverter().ConvertFrom("#c0e1fb");
@@ -546,7 +546,7 @@ namespace MHW_Editor {
 
         private void FillSkillDatDictionary() {
             // Makes the lookup table for skill dat unlock columns which reference themselves by index.
-            skillDatLookup = new Dictionary<string, Dictionary<uint, string>>();
+            skillDatLookup = new LangMap();
             foreach (var lang in Global.LANGUAGES) {
                 skillDatLookup[lang] = new Dictionary<uint, string>();
                 foreach (SkillDat item in items) {
