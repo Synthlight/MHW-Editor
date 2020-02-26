@@ -142,6 +142,8 @@
     <Compile Include="Generated\MHW_Editor\PlData\PlMantleParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlPlayerParam.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlPlayerParamInternal.cs" />
+    <Compile Include="Generated\MHW_Editor\PlData\PlSkillParam.cs" />
+    <Compile Include="Generated\MHW_Editor\PlData\PlSkillParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\MusicSkill.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\CustomParts.cs" />
@@ -194,6 +196,7 @@
     <Compile Include="Models\SortOrderAttribute.cs" />
     <Compile Include="Models\ButtonSorter.cs" />
     <Compile Include="Models\VersionCheck.cs" />
+    <Compile Include="PlData\PlSkillParam.cs" />
     <Compile Include="PlData\PlMantleParam.cs" />
     <Compile Include="PlData\PlPlayerParam.cs" />
     <Compile Include="PlData\PlItemParam.cs" />

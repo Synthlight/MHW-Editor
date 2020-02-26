@@ -1014,6 +1014,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".plip")) return typeof(PlItemParam);
             if (fileName.EndsWith(".plit")) return typeof(PlantItem);
             if (fileName.EndsWith(".plp")) return typeof(PlPlayerParam);
+            if (fileName.EndsWith(".plsp")) return typeof(PlSkillParam);
             if (fileName.EndsWith(".rod_inse")) return typeof(RodInsect);
             if (fileName.EndsWith(".rem")) return typeof(QuestReward);
             if (fileName.EndsWith(".sed")) return typeof(ShopSed);

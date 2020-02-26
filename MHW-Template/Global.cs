@@ -71,6 +71,7 @@ namespace MHW_Template {
             "*.plip",
             "*.plit",
             "*.plp",
+            "*.plsp",
             "*.rem",
             "*.rod_inse",
             "*.sed",

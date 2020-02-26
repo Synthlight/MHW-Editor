@@ -9,6 +9,22 @@ namespace MHW_Generator {
             GenPlItemParam();
             GenPlPlayerParam();
             GenPlMantleParam();
+            GenPlSkillParam();
+        }
+
+        private static void GenPlSkillParam() {
+            var entries = new List<MhwStructData.Entry> {
+                new MhwStructData.Entry("A", 8, typeof(float)),
+            };
+
+            GeneratePlDataProps("MHW_Editor.PlData", "PlSkillParam", new MhwStructData { // .plsp
+                size = 2256,
+                offsetInitial = 0,
+                entryCountOffset = -1,
+                uniqueIdFormula = "0",
+                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plsp"],
+                entries = entries
+            });
         }
 
         private static void GenPlMantleParam() {
@@ -201,12 +217,12 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Assassin's Hood: Cooldown", 455, typeof(float)),
                 new MhwStructData.Entry("Assassin's Hood: Duration", 459, typeof(float)),
                 new MhwStructData.Entry("Assassin's Hood: Sneak Attack Multiplier", 463, typeof(float)),
-                new MhwStructData.Entry($"Assassin's Hood: Speed Multiplier 1", 467, typeof(float)),
+                new MhwStructData.Entry("Assassin's Hood: Speed Multiplier 1", 467, typeof(float)),
                 new MhwStructData.Entry($"Assassin's Hood: Unk{n++}", 471, typeof(float)),
-                new MhwStructData.Entry($"Assassin's Hood: Speed Multiplier 2", 475, typeof(float)),
-                new MhwStructData.Entry($"Assassin's Hood: Speed Multiplier 3", 479, typeof(float)),
-                new MhwStructData.Entry($"Assassin's Hood: Speed Multiplier 4", 483, typeof(float)),
-                new MhwStructData.Entry($"Assassin's Hood: Speed Multiplier 5", 487, typeof(float)),
+                new MhwStructData.Entry("Assassin's Hood: Speed Multiplier 2", 475, typeof(float)),
+                new MhwStructData.Entry("Assassin's Hood: Speed Multiplier 3", 479, typeof(float)),
+                new MhwStructData.Entry("Assassin's Hood: Speed Multiplier 4", 483, typeof(float)),
+                new MhwStructData.Entry("Assassin's Hood: Speed Multiplier 5", 487, typeof(float)),
                 new MhwStructData.Entry($"Assassin's Hood: Unk{n++}", 491, typeof(float)),
                 new MhwStructData.Entry($"Assassin's Hood: Unk{n++}", 495, typeof(float)),
                 new MhwStructData.Entry($"Assassin's Hood: Unk{n++}", 499, typeof(float)),
@@ -229,7 +245,7 @@ namespace MHW_Generator {
                 offsetInitial = 0,
                 entryCountOffset = -1,
                 uniqueIdFormula = "0",
-                encryptionKey = EncryptionKeys.ASKILLP_KEY,
+                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".asp"],
                 entries = entries
             });
         }
@@ -543,7 +559,7 @@ namespace MHW_Generator {
                 offsetInitial = 0,
                 entryCountOffset = -1,
                 uniqueIdFormula = "0",
-                encryptionKey = EncryptionKeys.PL_PARAM_KEY,
+                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plp"],
                 entries = entries
             });
         }
@@ -554,7 +570,7 @@ namespace MHW_Generator {
                 offsetInitial = 0,
                 entryCountOffset = -1,
                 uniqueIdFormula = "0",
-                encryptionKey = EncryptionKeys.PL_PARAM_KEY,
+                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plip"],
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Powder Radius", 8, typeof(float)),
                     new MhwStructData.Entry("Potion Power", 12, typeof(uint)),
