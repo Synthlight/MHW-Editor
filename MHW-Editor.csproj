@@ -101,6 +101,9 @@
     <Compile Include="Assets\LangMap.cs" />
     <Compile Include="Controls\AutoFilteredComboBox.cs" />
     <Compile Include="EncryptionHelper.cs" />
+    <Compile Include="FindFileInChunk.xaml.cs">
+      <DependentUpon>FindFileInChunk.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Gems\DecoGradeLottery.cs" />
     <Compile Include="Gems\DecoLottery.cs" />
     <Compile Include="Gems\DecoPercent.cs" />
@@ -237,6 +240,10 @@
     <Compile Include="Weapons\WeaponWhistle.cs" />
     <Compile Include="Weapons\WeaponGunLance.cs" />
     <Compile Include="Weapons\WeaponWSword.cs" />
+    <Page Include="FindFileInChunk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GetNewItemId.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -253,6 +260,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Resources\FindInFile\FindInFile_16x.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\IconDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

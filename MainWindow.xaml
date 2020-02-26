@@ -52,6 +52,12 @@
                                 Content="Save Changes (Since Last Save) as JSON"/>
                     </xctk:SplitButton.DropDownContent>
                 </xctk:SplitButton>
+                <Button Margin="8,0,0,0"
+                        HorizontalAlignment="Left"
+                        Click="Btn_chunk_search_Click">
+                    <ContentControl Content="{StaticResource FindInFile_16x}"
+                                    ToolTip="Find which chunk a file is in."/>
+                </Button>
                 <Label Name="lbl_saved"
                        Margin="8,0,0,0"
                        HorizontalAlignment="Left"

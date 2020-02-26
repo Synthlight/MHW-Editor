@@ -29,6 +29,10 @@ namespace MHW_Editor {
             SaveJson();
         }
 
+        private void Btn_chunk_search_Click(object sender, RoutedEventArgs e) {
+            new FindFileInChunk().ShowDialog();
+        }
+
         private void Btn_customize_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
