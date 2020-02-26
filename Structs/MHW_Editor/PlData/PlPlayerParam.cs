@@ -181,13 +181,13 @@ namespace MHW_Editor.PlData {
         public float Dodge_IFrames_Sword_Shield_Back_Step_Evasion_4; // Offset: 1229
         public float Dodge_IFrames_Sword_Shield_Back_Step_Evasion_5; // Offset: 1233
         public float Dodge_IFrames_Sword_Shield_Back_Step_Evasion_Mantle; // Offset: 1237
-        public float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_0; // Offset: 1241
-        public float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_1; // Offset: 1245
-        public float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_2; // Offset: 1249
-        public float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_3; // Offset: 1253
-        public float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_4; // Offset: 1257
-        public float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_5; // Offset: 1261
-        public float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_Mantle; // Offset: 1265
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0; // Offset: 1241
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1; // Offset: 1245
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2; // Offset: 1249
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3; // Offset: 1253
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4; // Offset: 1257
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5; // Offset: 1261
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle; // Offset: 1265
         public float Dodge_IFrames_Long_Sword_Counter_Evasion_0; // Offset: 1269
         public float Dodge_IFrames_Long_Sword_Counter_Evasion_1; // Offset: 1273
         public float Dodge_IFrames_Long_Sword_Counter_Evasion_2; // Offset: 1277
@@ -216,20 +216,20 @@ namespace MHW_Editor.PlData {
         public float Dodge_IFrames_LBG_Side_Dodge_Evasion_4; // Offset: 1369
         public float Dodge_IFrames_LBG_Side_Dodge_Evasion_5; // Offset: 1373
         public float Dodge_IFrames_LBG_Side_Dodge_Evasion_Mantle; // Offset: 1377
-        public float Dodge_IFrames_IB_Unk1_Evasion_0; // Offset: 1381
-        public float Dodge_IFrames_IB_Unk1_Evasion_1; // Offset: 1385
-        public float Dodge_IFrames_IB_Unk1_Evasion_2; // Offset: 1389
-        public float Dodge_IFrames_IB_Unk1_Evasion_3; // Offset: 1393
-        public float Dodge_IFrames_IB_Unk1_Evasion_4; // Offset: 1397
-        public float Dodge_IFrames_IB_Unk1_Evasion_5; // Offset: 1401
-        public float Dodge_IFrames_IB_Unk1_Evasion_Mantle; // Offset: 1405
-        public float Dodge_IFrames_IB_Unk2_Evasion_0; // Offset: 1409
-        public float Dodge_IFrames_IB_Unk2_Evasion_1; // Offset: 1413
-        public float Dodge_IFrames_IB_Unk2_Evasion_2; // Offset: 1417
-        public float Dodge_IFrames_IB_Unk2_Evasion_3; // Offset: 1421
-        public float Dodge_IFrames_IB_Unk2_Evasion_4; // Offset: 1425
-        public float Dodge_IFrames_IB_Unk2_Evasion_5; // Offset: 1429
-        public float Dodge_IFrames_IB_Unk2_Evasion_Mantle; // Offset: 1433
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0; // Offset: 1381
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1; // Offset: 1385
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2; // Offset: 1389
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3; // Offset: 1393
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4; // Offset: 1397
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5; // Offset: 1401
+        public float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle; // Offset: 1405
+        public float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0; // Offset: 1409
+        public float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1; // Offset: 1413
+        public float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2; // Offset: 1417
+        public float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3; // Offset: 1421
+        public float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4; // Offset: 1425
+        public float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5; // Offset: 1429
+        public float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle; // Offset: 1433
         public float Evade_Normal_Distance_1; // Offset: 1437
         public float Evade_Normal_Distance_2; // Offset: 1441
         public float Evade_Normal_Distance_3; // Offset: 1445
@@ -257,12 +257,12 @@ namespace MHW_Editor.PlData {
         public float Evade_LBG_Side_Dodge_Distance_1; // Offset: 1533
         public float Evade_LBG_Side_Dodge_Distance_2; // Offset: 1537
         public float Evade_LBG_Side_Dodge_Distance_3; // Offset: 1541
-        public float Evade_IB_Unk1_Distance_1; // Offset: 1545
-        public float Evade_IB_Unk1_Distance_2; // Offset: 1549
-        public float Evade_IB_Unk1_Distance_3; // Offset: 1553
-        public float Evade_IB_Unk2_Distance_1; // Offset: 1557
-        public float Evade_IB_Unk2_Distance_2; // Offset: 1561
-        public float Evade_IB_Unk2_Distance_3; // Offset: 1565
+        public float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1; // Offset: 1545
+        public float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2; // Offset: 1549
+        public float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3; // Offset: 1553
+        public float Evade_Dual_Blades_Slinger_Evade_Distance_1; // Offset: 1557
+        public float Evade_Dual_Blades_Slinger_Evade_Distance_2; // Offset: 1561
+        public float Evade_Dual_Blades_Slinger_Evade_Distance_3; // Offset: 1565
         public float _Skipping_ahead_3_; // Offset: 1569
         public byte Wp_HR_Augment_Attack_Add_1_; // Offset: 8571
         public byte Wp_HR_Augment_Attack_Add_2_; // Offset: 8572

@@ -2490,101 +2490,101 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_0_displayName = "Dodge IFrames: Dual Blades DemonMode Step: Evasion 0";
-        public const int Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_0_sortIndex = 8900;
-        [SortOrder(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_0_sortIndex)]
-        [DisplayName(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_0_displayName)]
-        public virtual float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_0 {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion 0";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0_sortIndex = 8900;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0 {
             get => GetData<float>(1241);
             set {
                 if (GetData<float>(1241) == value) return;
-                SetData(1241, value, nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_0));
+                SetData(1241, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_0));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0));
             }
         }
 
-        public const string Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_1_displayName = "Dodge IFrames: Dual Blades DemonMode Step: Evasion 1";
-        public const int Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_1_sortIndex = 8950;
-        [SortOrder(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_1_sortIndex)]
-        [DisplayName(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_1_displayName)]
-        public virtual float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_1 {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion 1";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1_sortIndex = 8950;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1 {
             get => GetData<float>(1245);
             set {
                 if (GetData<float>(1245) == value) return;
-                SetData(1245, value, nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_1));
+                SetData(1245, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_1));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1));
             }
         }
 
-        public const string Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_2_displayName = "Dodge IFrames: Dual Blades DemonMode Step: Evasion 2";
-        public const int Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_2_sortIndex = 9000;
-        [SortOrder(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_2_sortIndex)]
-        [DisplayName(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_2_displayName)]
-        public virtual float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_2 {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion 2";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2_sortIndex = 9000;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2 {
             get => GetData<float>(1249);
             set {
                 if (GetData<float>(1249) == value) return;
-                SetData(1249, value, nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_2));
+                SetData(1249, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_2));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2));
             }
         }
 
-        public const string Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_3_displayName = "Dodge IFrames: Dual Blades DemonMode Step: Evasion 3";
-        public const int Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_3_sortIndex = 9050;
-        [SortOrder(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_3_sortIndex)]
-        [DisplayName(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_3_displayName)]
-        public virtual float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_3 {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion 3";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3_sortIndex = 9050;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3 {
             get => GetData<float>(1253);
             set {
                 if (GetData<float>(1253) == value) return;
-                SetData(1253, value, nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_3));
+                SetData(1253, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_3));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3));
             }
         }
 
-        public const string Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_4_displayName = "Dodge IFrames: Dual Blades DemonMode Step: Evasion 4";
-        public const int Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_4_sortIndex = 9100;
-        [SortOrder(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_4_sortIndex)]
-        [DisplayName(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_4_displayName)]
-        public virtual float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_4 {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion 4";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4_sortIndex = 9100;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4 {
             get => GetData<float>(1257);
             set {
                 if (GetData<float>(1257) == value) return;
-                SetData(1257, value, nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_4));
+                SetData(1257, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_4));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4));
             }
         }
 
-        public const string Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_5_displayName = "Dodge IFrames: Dual Blades DemonMode Step: Evasion 5";
-        public const int Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_5_sortIndex = 9150;
-        [SortOrder(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_5_sortIndex)]
-        [DisplayName(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_5_displayName)]
-        public virtual float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_5 {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion 5";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5_sortIndex = 9150;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5 {
             get => GetData<float>(1261);
             set {
                 if (GetData<float>(1261) == value) return;
-                SetData(1261, value, nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_5));
+                SetData(1261, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_5));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5));
             }
         }
 
-        public const string Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_Mantle_displayName = "Dodge IFrames: Dual Blades DemonMode Step: Evasion Mantle";
-        public const int Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_Mantle_sortIndex = 9200;
-        [SortOrder(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_Mantle_sortIndex)]
-        [DisplayName(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_Mantle_displayName)]
-        public virtual float Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_Mantle {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion Mantle";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle_sortIndex = 9200;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle {
             get => GetData<float>(1265);
             set {
                 if (GetData<float>(1265) == value) return;
-                SetData(1265, value, nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_Mantle));
+                SetData(1265, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_DemonMode_Step_Evasion_Mantle));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle));
             }
         }
 
@@ -2980,199 +2980,199 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk1_Evasion_0_displayName = "Dodge IFrames: IB Unk1: Evasion 0";
-        public const int Dodge_IFrames_IB_Unk1_Evasion_0_sortIndex = 10650;
-        [SortOrder(Dodge_IFrames_IB_Unk1_Evasion_0_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk1_Evasion_0_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk1_Evasion_0 {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion 0";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0_sortIndex = 10650;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0 {
             get => GetData<float>(1381);
             set {
                 if (GetData<float>(1381) == value) return;
-                SetData(1381, value, nameof(Dodge_IFrames_IB_Unk1_Evasion_0));
+                SetData(1381, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk1_Evasion_0));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk1_Evasion_1_displayName = "Dodge IFrames: IB Unk1: Evasion 1";
-        public const int Dodge_IFrames_IB_Unk1_Evasion_1_sortIndex = 10700;
-        [SortOrder(Dodge_IFrames_IB_Unk1_Evasion_1_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk1_Evasion_1_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk1_Evasion_1 {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion 1";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1_sortIndex = 10700;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1 {
             get => GetData<float>(1385);
             set {
                 if (GetData<float>(1385) == value) return;
-                SetData(1385, value, nameof(Dodge_IFrames_IB_Unk1_Evasion_1));
+                SetData(1385, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk1_Evasion_1));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk1_Evasion_2_displayName = "Dodge IFrames: IB Unk1: Evasion 2";
-        public const int Dodge_IFrames_IB_Unk1_Evasion_2_sortIndex = 10750;
-        [SortOrder(Dodge_IFrames_IB_Unk1_Evasion_2_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk1_Evasion_2_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk1_Evasion_2 {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion 2";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2_sortIndex = 10750;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2 {
             get => GetData<float>(1389);
             set {
                 if (GetData<float>(1389) == value) return;
-                SetData(1389, value, nameof(Dodge_IFrames_IB_Unk1_Evasion_2));
+                SetData(1389, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk1_Evasion_2));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk1_Evasion_3_displayName = "Dodge IFrames: IB Unk1: Evasion 3";
-        public const int Dodge_IFrames_IB_Unk1_Evasion_3_sortIndex = 10800;
-        [SortOrder(Dodge_IFrames_IB_Unk1_Evasion_3_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk1_Evasion_3_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk1_Evasion_3 {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion 3";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3_sortIndex = 10800;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3 {
             get => GetData<float>(1393);
             set {
                 if (GetData<float>(1393) == value) return;
-                SetData(1393, value, nameof(Dodge_IFrames_IB_Unk1_Evasion_3));
+                SetData(1393, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk1_Evasion_3));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk1_Evasion_4_displayName = "Dodge IFrames: IB Unk1: Evasion 4";
-        public const int Dodge_IFrames_IB_Unk1_Evasion_4_sortIndex = 10850;
-        [SortOrder(Dodge_IFrames_IB_Unk1_Evasion_4_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk1_Evasion_4_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk1_Evasion_4 {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion 4";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4_sortIndex = 10850;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4 {
             get => GetData<float>(1397);
             set {
                 if (GetData<float>(1397) == value) return;
-                SetData(1397, value, nameof(Dodge_IFrames_IB_Unk1_Evasion_4));
+                SetData(1397, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk1_Evasion_4));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk1_Evasion_5_displayName = "Dodge IFrames: IB Unk1: Evasion 5";
-        public const int Dodge_IFrames_IB_Unk1_Evasion_5_sortIndex = 10900;
-        [SortOrder(Dodge_IFrames_IB_Unk1_Evasion_5_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk1_Evasion_5_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk1_Evasion_5 {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion 5";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5_sortIndex = 10900;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5 {
             get => GetData<float>(1401);
             set {
                 if (GetData<float>(1401) == value) return;
-                SetData(1401, value, nameof(Dodge_IFrames_IB_Unk1_Evasion_5));
+                SetData(1401, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk1_Evasion_5));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk1_Evasion_Mantle_displayName = "Dodge IFrames: IB Unk1: Evasion Mantle";
-        public const int Dodge_IFrames_IB_Unk1_Evasion_Mantle_sortIndex = 10950;
-        [SortOrder(Dodge_IFrames_IB_Unk1_Evasion_Mantle_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk1_Evasion_Mantle_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk1_Evasion_Mantle {
+        public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion Mantle";
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle_sortIndex = 10950;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle {
             get => GetData<float>(1405);
             set {
                 if (GetData<float>(1405) == value) return;
-                SetData(1405, value, nameof(Dodge_IFrames_IB_Unk1_Evasion_Mantle));
+                SetData(1405, value, nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk1_Evasion_Mantle));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk2_Evasion_0_displayName = "Dodge IFrames: IB Unk2: Evasion 0";
-        public const int Dodge_IFrames_IB_Unk2_Evasion_0_sortIndex = 11000;
-        [SortOrder(Dodge_IFrames_IB_Unk2_Evasion_0_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk2_Evasion_0_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk2_Evasion_0 {
+        public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion 0";
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0_sortIndex = 11000;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0 {
             get => GetData<float>(1409);
             set {
                 if (GetData<float>(1409) == value) return;
-                SetData(1409, value, nameof(Dodge_IFrames_IB_Unk2_Evasion_0));
+                SetData(1409, value, nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk2_Evasion_0));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk2_Evasion_1_displayName = "Dodge IFrames: IB Unk2: Evasion 1";
-        public const int Dodge_IFrames_IB_Unk2_Evasion_1_sortIndex = 11050;
-        [SortOrder(Dodge_IFrames_IB_Unk2_Evasion_1_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk2_Evasion_1_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk2_Evasion_1 {
+        public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion 1";
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1_sortIndex = 11050;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1 {
             get => GetData<float>(1413);
             set {
                 if (GetData<float>(1413) == value) return;
-                SetData(1413, value, nameof(Dodge_IFrames_IB_Unk2_Evasion_1));
+                SetData(1413, value, nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk2_Evasion_1));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk2_Evasion_2_displayName = "Dodge IFrames: IB Unk2: Evasion 2";
-        public const int Dodge_IFrames_IB_Unk2_Evasion_2_sortIndex = 11100;
-        [SortOrder(Dodge_IFrames_IB_Unk2_Evasion_2_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk2_Evasion_2_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk2_Evasion_2 {
+        public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion 2";
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2_sortIndex = 11100;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2 {
             get => GetData<float>(1417);
             set {
                 if (GetData<float>(1417) == value) return;
-                SetData(1417, value, nameof(Dodge_IFrames_IB_Unk2_Evasion_2));
+                SetData(1417, value, nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk2_Evasion_2));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk2_Evasion_3_displayName = "Dodge IFrames: IB Unk2: Evasion 3";
-        public const int Dodge_IFrames_IB_Unk2_Evasion_3_sortIndex = 11150;
-        [SortOrder(Dodge_IFrames_IB_Unk2_Evasion_3_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk2_Evasion_3_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk2_Evasion_3 {
+        public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion 3";
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3_sortIndex = 11150;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3 {
             get => GetData<float>(1421);
             set {
                 if (GetData<float>(1421) == value) return;
-                SetData(1421, value, nameof(Dodge_IFrames_IB_Unk2_Evasion_3));
+                SetData(1421, value, nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk2_Evasion_3));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk2_Evasion_4_displayName = "Dodge IFrames: IB Unk2: Evasion 4";
-        public const int Dodge_IFrames_IB_Unk2_Evasion_4_sortIndex = 11200;
-        [SortOrder(Dodge_IFrames_IB_Unk2_Evasion_4_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk2_Evasion_4_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk2_Evasion_4 {
+        public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion 4";
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4_sortIndex = 11200;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4 {
             get => GetData<float>(1425);
             set {
                 if (GetData<float>(1425) == value) return;
-                SetData(1425, value, nameof(Dodge_IFrames_IB_Unk2_Evasion_4));
+                SetData(1425, value, nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk2_Evasion_4));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk2_Evasion_5_displayName = "Dodge IFrames: IB Unk2: Evasion 5";
-        public const int Dodge_IFrames_IB_Unk2_Evasion_5_sortIndex = 11250;
-        [SortOrder(Dodge_IFrames_IB_Unk2_Evasion_5_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk2_Evasion_5_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk2_Evasion_5 {
+        public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion 5";
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5_sortIndex = 11250;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5 {
             get => GetData<float>(1429);
             set {
                 if (GetData<float>(1429) == value) return;
-                SetData(1429, value, nameof(Dodge_IFrames_IB_Unk2_Evasion_5));
+                SetData(1429, value, nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk2_Evasion_5));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5));
             }
         }
 
-        public const string Dodge_IFrames_IB_Unk2_Evasion_Mantle_displayName = "Dodge IFrames: IB Unk2: Evasion Mantle";
-        public const int Dodge_IFrames_IB_Unk2_Evasion_Mantle_sortIndex = 11300;
-        [SortOrder(Dodge_IFrames_IB_Unk2_Evasion_Mantle_sortIndex)]
-        [DisplayName(Dodge_IFrames_IB_Unk2_Evasion_Mantle_displayName)]
-        public virtual float Dodge_IFrames_IB_Unk2_Evasion_Mantle {
+        public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion Mantle";
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle_sortIndex = 11300;
+        [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle_sortIndex)]
+        [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle_displayName)]
+        public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle {
             get => GetData<float>(1433);
             set {
                 if (GetData<float>(1433) == value) return;
-                SetData(1433, value, nameof(Dodge_IFrames_IB_Unk2_Evasion_Mantle));
+                SetData(1433, value, nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Dodge_IFrames_IB_Unk2_Evasion_Mantle));
+                OnPropertyChanged(nameof(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle));
             }
         }
 
@@ -3554,87 +3554,87 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Evade_IB_Unk1_Distance_1_displayName = "Evade: IB Unk1: Distance 1";
-        public const int Evade_IB_Unk1_Distance_1_sortIndex = 12700;
-        [SortOrder(Evade_IB_Unk1_Distance_1_sortIndex)]
-        [DisplayName(Evade_IB_Unk1_Distance_1_displayName)]
-        public virtual float Evade_IB_Unk1_Distance_1 {
+        public const string Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_displayName = "Evade: Dual Blades Demon Mode Slinger Evade: Distance 1";
+        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_sortIndex = 12700;
+        [SortOrder(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_sortIndex)]
+        [DisplayName(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_displayName)]
+        public virtual float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1 {
             get => GetData<float>(1545);
             set {
                 if (GetData<float>(1545) == value) return;
-                SetData(1545, value, nameof(Evade_IB_Unk1_Distance_1));
+                SetData(1545, value, nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Evade_IB_Unk1_Distance_1));
+                OnPropertyChanged(nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1));
             }
         }
 
-        public const string Evade_IB_Unk1_Distance_2_displayName = "Evade: IB Unk1: Distance 2";
-        public const int Evade_IB_Unk1_Distance_2_sortIndex = 12750;
-        [SortOrder(Evade_IB_Unk1_Distance_2_sortIndex)]
-        [DisplayName(Evade_IB_Unk1_Distance_2_displayName)]
-        public virtual float Evade_IB_Unk1_Distance_2 {
+        public const string Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_displayName = "Evade: Dual Blades Demon Mode Slinger Evade: Distance 2";
+        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_sortIndex = 12750;
+        [SortOrder(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_sortIndex)]
+        [DisplayName(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_displayName)]
+        public virtual float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2 {
             get => GetData<float>(1549);
             set {
                 if (GetData<float>(1549) == value) return;
-                SetData(1549, value, nameof(Evade_IB_Unk1_Distance_2));
+                SetData(1549, value, nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Evade_IB_Unk1_Distance_2));
+                OnPropertyChanged(nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2));
             }
         }
 
-        public const string Evade_IB_Unk1_Distance_3_displayName = "Evade: IB Unk1: Distance 3";
-        public const int Evade_IB_Unk1_Distance_3_sortIndex = 12800;
-        [SortOrder(Evade_IB_Unk1_Distance_3_sortIndex)]
-        [DisplayName(Evade_IB_Unk1_Distance_3_displayName)]
-        public virtual float Evade_IB_Unk1_Distance_3 {
+        public const string Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_displayName = "Evade: Dual Blades Demon Mode Slinger Evade: Distance 3";
+        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_sortIndex = 12800;
+        [SortOrder(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_sortIndex)]
+        [DisplayName(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_displayName)]
+        public virtual float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3 {
             get => GetData<float>(1553);
             set {
                 if (GetData<float>(1553) == value) return;
-                SetData(1553, value, nameof(Evade_IB_Unk1_Distance_3));
+                SetData(1553, value, nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Evade_IB_Unk1_Distance_3));
+                OnPropertyChanged(nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3));
             }
         }
 
-        public const string Evade_IB_Unk2_Distance_1_displayName = "Evade: IB Unk2: Distance 1";
-        public const int Evade_IB_Unk2_Distance_1_sortIndex = 12850;
-        [SortOrder(Evade_IB_Unk2_Distance_1_sortIndex)]
-        [DisplayName(Evade_IB_Unk2_Distance_1_displayName)]
-        public virtual float Evade_IB_Unk2_Distance_1 {
+        public const string Evade_Dual_Blades_Slinger_Evade_Distance_1_displayName = "Evade: Dual Blades Slinger Evade: Distance 1";
+        public const int Evade_Dual_Blades_Slinger_Evade_Distance_1_sortIndex = 12850;
+        [SortOrder(Evade_Dual_Blades_Slinger_Evade_Distance_1_sortIndex)]
+        [DisplayName(Evade_Dual_Blades_Slinger_Evade_Distance_1_displayName)]
+        public virtual float Evade_Dual_Blades_Slinger_Evade_Distance_1 {
             get => GetData<float>(1557);
             set {
                 if (GetData<float>(1557) == value) return;
-                SetData(1557, value, nameof(Evade_IB_Unk2_Distance_1));
+                SetData(1557, value, nameof(Evade_Dual_Blades_Slinger_Evade_Distance_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Evade_IB_Unk2_Distance_1));
+                OnPropertyChanged(nameof(Evade_Dual_Blades_Slinger_Evade_Distance_1));
             }
         }
 
-        public const string Evade_IB_Unk2_Distance_2_displayName = "Evade: IB Unk2: Distance 2";
-        public const int Evade_IB_Unk2_Distance_2_sortIndex = 12900;
-        [SortOrder(Evade_IB_Unk2_Distance_2_sortIndex)]
-        [DisplayName(Evade_IB_Unk2_Distance_2_displayName)]
-        public virtual float Evade_IB_Unk2_Distance_2 {
+        public const string Evade_Dual_Blades_Slinger_Evade_Distance_2_displayName = "Evade: Dual Blades Slinger Evade: Distance 2";
+        public const int Evade_Dual_Blades_Slinger_Evade_Distance_2_sortIndex = 12900;
+        [SortOrder(Evade_Dual_Blades_Slinger_Evade_Distance_2_sortIndex)]
+        [DisplayName(Evade_Dual_Blades_Slinger_Evade_Distance_2_displayName)]
+        public virtual float Evade_Dual_Blades_Slinger_Evade_Distance_2 {
             get => GetData<float>(1561);
             set {
                 if (GetData<float>(1561) == value) return;
-                SetData(1561, value, nameof(Evade_IB_Unk2_Distance_2));
+                SetData(1561, value, nameof(Evade_Dual_Blades_Slinger_Evade_Distance_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Evade_IB_Unk2_Distance_2));
+                OnPropertyChanged(nameof(Evade_Dual_Blades_Slinger_Evade_Distance_2));
             }
         }
 
-        public const string Evade_IB_Unk2_Distance_3_displayName = "Evade: IB Unk2: Distance 3";
-        public const int Evade_IB_Unk2_Distance_3_sortIndex = 12950;
-        [SortOrder(Evade_IB_Unk2_Distance_3_sortIndex)]
-        [DisplayName(Evade_IB_Unk2_Distance_3_displayName)]
-        public virtual float Evade_IB_Unk2_Distance_3 {
+        public const string Evade_Dual_Blades_Slinger_Evade_Distance_3_displayName = "Evade: Dual Blades Slinger Evade: Distance 3";
+        public const int Evade_Dual_Blades_Slinger_Evade_Distance_3_sortIndex = 12950;
+        [SortOrder(Evade_Dual_Blades_Slinger_Evade_Distance_3_sortIndex)]
+        [DisplayName(Evade_Dual_Blades_Slinger_Evade_Distance_3_displayName)]
+        public virtual float Evade_Dual_Blades_Slinger_Evade_Distance_3 {
             get => GetData<float>(1565);
             set {
                 if (GetData<float>(1565) == value) return;
-                SetData(1565, value, nameof(Evade_IB_Unk2_Distance_3));
+                SetData(1565, value, nameof(Evade_Dual_Blades_Slinger_Evade_Distance_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Evade_IB_Unk2_Distance_3));
+                OnPropertyChanged(nameof(Evade_Dual_Blades_Slinger_Evade_Distance_3));
             }
         }
 

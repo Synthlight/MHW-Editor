@@ -193,13 +193,13 @@ namespace MHW_Generator {
                 "Normal",
                 "Step",
                 "Sword & Shield Back Step",
-                "Dual Blades DemonMode Step",
+                "Dual Blades Demon Mode Step",
                 "Long Sword Counter",
                 "Bow Charge Step",
                 "HBG Roll Dodge",
                 "LBG Side Dodge",
-                "IB Unk1",
-                "IB Unk2"
+                "Dual Blades Demon Mode Slinger Evade",
+                "Dual Blades Slinger Evade"
             };
 
             var iFrameSubEntries = new List<string> {
@@ -230,8 +230,8 @@ namespace MHW_Generator {
                 "Bow Charge Step",
                 "HBG Roll Dodge",
                 "LBG Side Dodge",
-                "IB Unk1",
-                "IB Unk2"
+                "Dual Blades Demon Mode Slinger Evade",
+                "Dual Blades Slinger Evade"
             };
 
             var evadeDistanceSubEntries = new List<string> {
@@ -249,6 +249,7 @@ namespace MHW_Generator {
             entries.Add(new MhwStructData.Entry($"------Skipping ahead {o++}.", 1569, typeof(float)));
 
             entries.AddRange(new List<MhwStructData.Entry> {
+                // HR Augment.
                 new MhwStructData.Entry("Wp HR Augment Attack Add (1)", 8571, typeof(byte)),
                 new MhwStructData.Entry("Wp HR Augment Attack Add (2)", 8572, typeof(byte)),
                 new MhwStructData.Entry("Wp HR Augment Attack Add (3)", 8573, typeof(byte)),
@@ -270,6 +271,7 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Wp HR Augment IB Unk", 8607, typeof(float)),
                 new MhwStructData.Entry("Wp HR Augment Lifesteal Cooldown", 8611, typeof(float)),
 
+                // MR Augment now.
                 new MhwStructData.Entry("Wp MR Augment Attack (1)", 8615, typeof(byte)),
                 new MhwStructData.Entry("Wp MR Augment Attack (2)", 8616, typeof(byte)),
                 new MhwStructData.Entry("Wp MR Augment Attack (3)", 8617, typeof(byte)),
