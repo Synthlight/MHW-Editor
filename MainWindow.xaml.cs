@@ -983,6 +983,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".am_dat")) return typeof(Armor);
             if (fileName.EndsWith(".arm_up")) return typeof(ArmUp);
             if (fileName.EndsWith(".ask")) return typeof(ASkill);
+            if (fileName.EndsWith(".asp")) return typeof(PlMantleParam);
             if (fileName.EndsWith(".bbtbl")) return typeof(BottleTable);
             if (fileName.EndsWith(".ch_dat")) return typeof(PendantData);
             if (fileName.EndsWith(".cus_pa")) return typeof(CustomParts);

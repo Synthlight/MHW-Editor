@@ -35,6 +35,7 @@ namespace MHW_Editor.Models {
                 return (float) Convert.ChangeType(value, typeof(float));
             }
             set {
+                if (setMethod == null) return;
                 var returnValue = Convert.ChangeType(value, propertyType);
                 setMethod.Invoke(parent, new[] {returnValue});
                 OnPropertyChanged(nameof(Data));

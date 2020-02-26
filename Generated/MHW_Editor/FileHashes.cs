@@ -71,6 +71,7 @@ namespace MHW_Editor {
             {"arm_upgrade.arm_up", "chunkG0"},
             {"armor.am_dat", "chunkG1"},
             {"armor.eq_crt", "chunkG1"},
+            {"askill_param.asp", "chunkG0"},
             {"bottle_table.bbtbl", "chunkG0"},
             {"bow.wp_dat_g", "chunkG1"},
             {"c_axe.wp_dat", "chunkG1"},

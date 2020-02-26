@@ -40,6 +40,7 @@ namespace MHW_Template {
             "*.am_dat",
             "*.arm_up",
             "*.ask",
+            "*.asp",
             "*.bbtbl",
             "*.ch_dat",
             "*.cus_pa",
