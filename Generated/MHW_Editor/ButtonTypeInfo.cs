@@ -26,6 +26,7 @@ namespace MHW_Editor {
             "QuestRewardInternal",
             "Ranged",
             "SkillDat",
+            "SteamRewardList",
             "SwapItem",
             "SwapN",
             "Treasure",

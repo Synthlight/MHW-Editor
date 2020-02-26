@@ -129,6 +129,7 @@
     <Compile Include="Generated\MHW_Editor\Items\PlantItem.cs" />
     <Compile Include="Generated\MHW_Editor\Items\QuestReward.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ShopSed.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\SteamRewardList.cs" />
     <Compile Include="Generated\MHW_Editor\Items\SwapC.cs" />
     <Compile Include="Generated\MHW_Editor\Items\SwapEnemyRate.cs" />
     <Compile Include="Generated\MHW_Editor\Items\SwapItem.cs" />
@@ -155,6 +156,7 @@
     </Compile>
     <Compile Include="Items\ItemDelivery.cs" />
     <Compile Include="Items\EnemySort.cs" />
+    <Compile Include="Items\SteamRewardList.cs" />
     <Compile Include="Items\ItemLottery.cs" />
     <Compile Include="Items\QuestReward.cs" />
     <Compile Include="Items\Bounty.cs" />
