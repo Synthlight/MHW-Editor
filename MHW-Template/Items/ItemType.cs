@@ -4,6 +4,7 @@
         Material = 1,
         Account_Item,
         Ammo_or_Coating,
-        Decoration
+        Jewel,
+        Room_Decoration
     }
 }
