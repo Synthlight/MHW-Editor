@@ -2182,22 +2182,78 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _Skipping_ahead_2__displayName = "------Skipping ahead 2.";
-        public const int _Skipping_ahead_2__sortIndex = 7800;
-        [SortOrder(_Skipping_ahead_2__sortIndex)]
-        [DisplayName(_Skipping_ahead_2__displayName)]
-        public virtual float _Skipping_ahead_2_ {
+        public const string Lava_Damage_Interval_Time_displayName = "Lava Damage Interval Time";
+        public const int Lava_Damage_Interval_Time_sortIndex = 7800;
+        [SortOrder(Lava_Damage_Interval_Time_sortIndex)]
+        [DisplayName(Lava_Damage_Interval_Time_displayName)]
+        public virtual float Lava_Damage_Interval_Time {
             get => GetData<float>(751);
             set {
                 if (GetData<float>(751) == value) return;
-                SetData(751, value, nameof(_Skipping_ahead_2_));
+                SetData(751, value, nameof(Lava_Damage_Interval_Time));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Lava_Damage_Interval_Time));
+            }
+        }
+
+        public const string Lava_Damage_Damage_displayName = "Lava Damage Damage";
+        public const int Lava_Damage_Damage_sortIndex = 7850;
+        [SortOrder(Lava_Damage_Damage_sortIndex)]
+        [DisplayName(Lava_Damage_Damage_displayName)]
+        public virtual float Lava_Damage_Damage {
+            get => GetData<float>(755);
+            set {
+                if (GetData<float>(755) == value) return;
+                SetData(755, value, nameof(Lava_Damage_Damage));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Lava_Damage_Damage));
+            }
+        }
+
+        public const string Acid_Damage_Interval_Time_displayName = "Acid Damage Interval Time";
+        public const int Acid_Damage_Interval_Time_sortIndex = 7900;
+        [SortOrder(Acid_Damage_Interval_Time_sortIndex)]
+        [DisplayName(Acid_Damage_Interval_Time_displayName)]
+        public virtual float Acid_Damage_Interval_Time {
+            get => GetData<float>(759);
+            set {
+                if (GetData<float>(759) == value) return;
+                SetData(759, value, nameof(Acid_Damage_Interval_Time));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Acid_Damage_Interval_Time));
+            }
+        }
+
+        public const string Acid_Damage_Damage_displayName = "Acid Damage Damage";
+        public const int Acid_Damage_Damage_sortIndex = 7950;
+        [SortOrder(Acid_Damage_Damage_sortIndex)]
+        [DisplayName(Acid_Damage_Damage_displayName)]
+        public virtual float Acid_Damage_Damage {
+            get => GetData<float>(763);
+            set {
+                if (GetData<float>(763) == value) return;
+                SetData(763, value, nameof(Acid_Damage_Damage));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Acid_Damage_Damage));
+            }
+        }
+
+        public const string _Skipping_ahead_2__displayName = "------Skipping ahead 2.";
+        public const int _Skipping_ahead_2__sortIndex = 8000;
+        [SortOrder(_Skipping_ahead_2__sortIndex)]
+        [DisplayName(_Skipping_ahead_2__displayName)]
+        public virtual byte _Skipping_ahead_2_ {
+            get => GetData<byte>(764);
+            set {
+                if (GetData<byte>(764) == value) return;
+                SetData(764, value, nameof(_Skipping_ahead_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(_Skipping_ahead_2_));
             }
         }
 
         public const string Dodge_IFrames_Normal_Evasion_0_displayName = "Dodge IFrames: Normal: Evasion 0";
-        public const int Dodge_IFrames_Normal_Evasion_0_sortIndex = 7850;
+        public const int Dodge_IFrames_Normal_Evasion_0_sortIndex = 8050;
         [SortOrder(Dodge_IFrames_Normal_Evasion_0_sortIndex)]
         [DisplayName(Dodge_IFrames_Normal_Evasion_0_displayName)]
         public virtual float Dodge_IFrames_Normal_Evasion_0 {
@@ -2211,7 +2267,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Normal_Evasion_1_displayName = "Dodge IFrames: Normal: Evasion 1";
-        public const int Dodge_IFrames_Normal_Evasion_1_sortIndex = 7900;
+        public const int Dodge_IFrames_Normal_Evasion_1_sortIndex = 8100;
         [SortOrder(Dodge_IFrames_Normal_Evasion_1_sortIndex)]
         [DisplayName(Dodge_IFrames_Normal_Evasion_1_displayName)]
         public virtual float Dodge_IFrames_Normal_Evasion_1 {
@@ -2225,7 +2281,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Normal_Evasion_2_displayName = "Dodge IFrames: Normal: Evasion 2";
-        public const int Dodge_IFrames_Normal_Evasion_2_sortIndex = 7950;
+        public const int Dodge_IFrames_Normal_Evasion_2_sortIndex = 8150;
         [SortOrder(Dodge_IFrames_Normal_Evasion_2_sortIndex)]
         [DisplayName(Dodge_IFrames_Normal_Evasion_2_displayName)]
         public virtual float Dodge_IFrames_Normal_Evasion_2 {
@@ -2239,7 +2295,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Normal_Evasion_3_displayName = "Dodge IFrames: Normal: Evasion 3";
-        public const int Dodge_IFrames_Normal_Evasion_3_sortIndex = 8000;
+        public const int Dodge_IFrames_Normal_Evasion_3_sortIndex = 8200;
         [SortOrder(Dodge_IFrames_Normal_Evasion_3_sortIndex)]
         [DisplayName(Dodge_IFrames_Normal_Evasion_3_displayName)]
         public virtual float Dodge_IFrames_Normal_Evasion_3 {
@@ -2253,7 +2309,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Normal_Evasion_4_displayName = "Dodge IFrames: Normal: Evasion 4";
-        public const int Dodge_IFrames_Normal_Evasion_4_sortIndex = 8050;
+        public const int Dodge_IFrames_Normal_Evasion_4_sortIndex = 8250;
         [SortOrder(Dodge_IFrames_Normal_Evasion_4_sortIndex)]
         [DisplayName(Dodge_IFrames_Normal_Evasion_4_displayName)]
         public virtual float Dodge_IFrames_Normal_Evasion_4 {
@@ -2267,7 +2323,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Normal_Evasion_5_displayName = "Dodge IFrames: Normal: Evasion 5";
-        public const int Dodge_IFrames_Normal_Evasion_5_sortIndex = 8100;
+        public const int Dodge_IFrames_Normal_Evasion_5_sortIndex = 8300;
         [SortOrder(Dodge_IFrames_Normal_Evasion_5_sortIndex)]
         [DisplayName(Dodge_IFrames_Normal_Evasion_5_displayName)]
         public virtual float Dodge_IFrames_Normal_Evasion_5 {
@@ -2281,7 +2337,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Normal_Evasion_Mantle_displayName = "Dodge IFrames: Normal: Evasion Mantle";
-        public const int Dodge_IFrames_Normal_Evasion_Mantle_sortIndex = 8150;
+        public const int Dodge_IFrames_Normal_Evasion_Mantle_sortIndex = 8350;
         [SortOrder(Dodge_IFrames_Normal_Evasion_Mantle_sortIndex)]
         [DisplayName(Dodge_IFrames_Normal_Evasion_Mantle_displayName)]
         public virtual float Dodge_IFrames_Normal_Evasion_Mantle {
@@ -2295,7 +2351,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Step_Evasion_0_displayName = "Dodge IFrames: Step: Evasion 0";
-        public const int Dodge_IFrames_Step_Evasion_0_sortIndex = 8200;
+        public const int Dodge_IFrames_Step_Evasion_0_sortIndex = 8400;
         [SortOrder(Dodge_IFrames_Step_Evasion_0_sortIndex)]
         [DisplayName(Dodge_IFrames_Step_Evasion_0_displayName)]
         public virtual float Dodge_IFrames_Step_Evasion_0 {
@@ -2309,7 +2365,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Step_Evasion_1_displayName = "Dodge IFrames: Step: Evasion 1";
-        public const int Dodge_IFrames_Step_Evasion_1_sortIndex = 8250;
+        public const int Dodge_IFrames_Step_Evasion_1_sortIndex = 8450;
         [SortOrder(Dodge_IFrames_Step_Evasion_1_sortIndex)]
         [DisplayName(Dodge_IFrames_Step_Evasion_1_displayName)]
         public virtual float Dodge_IFrames_Step_Evasion_1 {
@@ -2323,7 +2379,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Step_Evasion_2_displayName = "Dodge IFrames: Step: Evasion 2";
-        public const int Dodge_IFrames_Step_Evasion_2_sortIndex = 8300;
+        public const int Dodge_IFrames_Step_Evasion_2_sortIndex = 8500;
         [SortOrder(Dodge_IFrames_Step_Evasion_2_sortIndex)]
         [DisplayName(Dodge_IFrames_Step_Evasion_2_displayName)]
         public virtual float Dodge_IFrames_Step_Evasion_2 {
@@ -2337,7 +2393,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Step_Evasion_3_displayName = "Dodge IFrames: Step: Evasion 3";
-        public const int Dodge_IFrames_Step_Evasion_3_sortIndex = 8350;
+        public const int Dodge_IFrames_Step_Evasion_3_sortIndex = 8550;
         [SortOrder(Dodge_IFrames_Step_Evasion_3_sortIndex)]
         [DisplayName(Dodge_IFrames_Step_Evasion_3_displayName)]
         public virtual float Dodge_IFrames_Step_Evasion_3 {
@@ -2351,7 +2407,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Step_Evasion_4_displayName = "Dodge IFrames: Step: Evasion 4";
-        public const int Dodge_IFrames_Step_Evasion_4_sortIndex = 8400;
+        public const int Dodge_IFrames_Step_Evasion_4_sortIndex = 8600;
         [SortOrder(Dodge_IFrames_Step_Evasion_4_sortIndex)]
         [DisplayName(Dodge_IFrames_Step_Evasion_4_displayName)]
         public virtual float Dodge_IFrames_Step_Evasion_4 {
@@ -2365,7 +2421,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Step_Evasion_5_displayName = "Dodge IFrames: Step: Evasion 5";
-        public const int Dodge_IFrames_Step_Evasion_5_sortIndex = 8450;
+        public const int Dodge_IFrames_Step_Evasion_5_sortIndex = 8650;
         [SortOrder(Dodge_IFrames_Step_Evasion_5_sortIndex)]
         [DisplayName(Dodge_IFrames_Step_Evasion_5_displayName)]
         public virtual float Dodge_IFrames_Step_Evasion_5 {
@@ -2379,7 +2435,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Step_Evasion_Mantle_displayName = "Dodge IFrames: Step: Evasion Mantle";
-        public const int Dodge_IFrames_Step_Evasion_Mantle_sortIndex = 8500;
+        public const int Dodge_IFrames_Step_Evasion_Mantle_sortIndex = 8700;
         [SortOrder(Dodge_IFrames_Step_Evasion_Mantle_sortIndex)]
         [DisplayName(Dodge_IFrames_Step_Evasion_Mantle_displayName)]
         public virtual float Dodge_IFrames_Step_Evasion_Mantle {
@@ -2393,7 +2449,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Sword_Shield_Back_Step_Evasion_0_displayName = "Dodge IFrames: Sword & Shield Back Step: Evasion 0";
-        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_0_sortIndex = 8550;
+        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_0_sortIndex = 8750;
         [SortOrder(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_0_sortIndex)]
         [DisplayName(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_0_displayName)]
         public virtual float Dodge_IFrames_Sword_Shield_Back_Step_Evasion_0 {
@@ -2407,7 +2463,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Sword_Shield_Back_Step_Evasion_1_displayName = "Dodge IFrames: Sword & Shield Back Step: Evasion 1";
-        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_1_sortIndex = 8600;
+        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_1_sortIndex = 8800;
         [SortOrder(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_1_sortIndex)]
         [DisplayName(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_1_displayName)]
         public virtual float Dodge_IFrames_Sword_Shield_Back_Step_Evasion_1 {
@@ -2421,7 +2477,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Sword_Shield_Back_Step_Evasion_2_displayName = "Dodge IFrames: Sword & Shield Back Step: Evasion 2";
-        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_2_sortIndex = 8650;
+        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_2_sortIndex = 8850;
         [SortOrder(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_2_sortIndex)]
         [DisplayName(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_2_displayName)]
         public virtual float Dodge_IFrames_Sword_Shield_Back_Step_Evasion_2 {
@@ -2435,7 +2491,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Sword_Shield_Back_Step_Evasion_3_displayName = "Dodge IFrames: Sword & Shield Back Step: Evasion 3";
-        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_3_sortIndex = 8700;
+        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_3_sortIndex = 8900;
         [SortOrder(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_3_sortIndex)]
         [DisplayName(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_3_displayName)]
         public virtual float Dodge_IFrames_Sword_Shield_Back_Step_Evasion_3 {
@@ -2449,7 +2505,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Sword_Shield_Back_Step_Evasion_4_displayName = "Dodge IFrames: Sword & Shield Back Step: Evasion 4";
-        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_4_sortIndex = 8750;
+        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_4_sortIndex = 8950;
         [SortOrder(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_4_sortIndex)]
         [DisplayName(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_4_displayName)]
         public virtual float Dodge_IFrames_Sword_Shield_Back_Step_Evasion_4 {
@@ -2463,7 +2519,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Sword_Shield_Back_Step_Evasion_5_displayName = "Dodge IFrames: Sword & Shield Back Step: Evasion 5";
-        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_5_sortIndex = 8800;
+        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_5_sortIndex = 9000;
         [SortOrder(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_5_sortIndex)]
         [DisplayName(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_5_displayName)]
         public virtual float Dodge_IFrames_Sword_Shield_Back_Step_Evasion_5 {
@@ -2477,7 +2533,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Sword_Shield_Back_Step_Evasion_Mantle_displayName = "Dodge IFrames: Sword & Shield Back Step: Evasion Mantle";
-        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_Mantle_sortIndex = 8850;
+        public const int Dodge_IFrames_Sword_Shield_Back_Step_Evasion_Mantle_sortIndex = 9050;
         [SortOrder(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_Mantle_sortIndex)]
         [DisplayName(Dodge_IFrames_Sword_Shield_Back_Step_Evasion_Mantle_displayName)]
         public virtual float Dodge_IFrames_Sword_Shield_Back_Step_Evasion_Mantle {
@@ -2491,7 +2547,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion 0";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0_sortIndex = 8900;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0_sortIndex = 9100;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_0 {
@@ -2505,7 +2561,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion 1";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1_sortIndex = 8950;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1_sortIndex = 9150;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_1 {
@@ -2519,7 +2575,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion 2";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2_sortIndex = 9000;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2_sortIndex = 9200;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_2 {
@@ -2533,7 +2589,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion 3";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3_sortIndex = 9050;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3_sortIndex = 9250;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_3 {
@@ -2547,7 +2603,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion 4";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4_sortIndex = 9100;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4_sortIndex = 9300;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_4 {
@@ -2561,7 +2617,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion 5";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5_sortIndex = 9150;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5_sortIndex = 9350;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_5 {
@@ -2575,7 +2631,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle_displayName = "Dodge IFrames: Dual Blades Demon Mode Step: Evasion Mantle";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle_sortIndex = 9200;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle_sortIndex = 9400;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Step_Evasion_Mantle {
@@ -2589,7 +2645,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Long_Sword_Counter_Evasion_0_displayName = "Dodge IFrames: Long Sword Counter: Evasion 0";
-        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_0_sortIndex = 9250;
+        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_0_sortIndex = 9450;
         [SortOrder(Dodge_IFrames_Long_Sword_Counter_Evasion_0_sortIndex)]
         [DisplayName(Dodge_IFrames_Long_Sword_Counter_Evasion_0_displayName)]
         public virtual float Dodge_IFrames_Long_Sword_Counter_Evasion_0 {
@@ -2603,7 +2659,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Long_Sword_Counter_Evasion_1_displayName = "Dodge IFrames: Long Sword Counter: Evasion 1";
-        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_1_sortIndex = 9300;
+        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_1_sortIndex = 9500;
         [SortOrder(Dodge_IFrames_Long_Sword_Counter_Evasion_1_sortIndex)]
         [DisplayName(Dodge_IFrames_Long_Sword_Counter_Evasion_1_displayName)]
         public virtual float Dodge_IFrames_Long_Sword_Counter_Evasion_1 {
@@ -2617,7 +2673,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Long_Sword_Counter_Evasion_2_displayName = "Dodge IFrames: Long Sword Counter: Evasion 2";
-        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_2_sortIndex = 9350;
+        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_2_sortIndex = 9550;
         [SortOrder(Dodge_IFrames_Long_Sword_Counter_Evasion_2_sortIndex)]
         [DisplayName(Dodge_IFrames_Long_Sword_Counter_Evasion_2_displayName)]
         public virtual float Dodge_IFrames_Long_Sword_Counter_Evasion_2 {
@@ -2631,7 +2687,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Long_Sword_Counter_Evasion_3_displayName = "Dodge IFrames: Long Sword Counter: Evasion 3";
-        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_3_sortIndex = 9400;
+        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_3_sortIndex = 9600;
         [SortOrder(Dodge_IFrames_Long_Sword_Counter_Evasion_3_sortIndex)]
         [DisplayName(Dodge_IFrames_Long_Sword_Counter_Evasion_3_displayName)]
         public virtual float Dodge_IFrames_Long_Sword_Counter_Evasion_3 {
@@ -2645,7 +2701,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Long_Sword_Counter_Evasion_4_displayName = "Dodge IFrames: Long Sword Counter: Evasion 4";
-        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_4_sortIndex = 9450;
+        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_4_sortIndex = 9650;
         [SortOrder(Dodge_IFrames_Long_Sword_Counter_Evasion_4_sortIndex)]
         [DisplayName(Dodge_IFrames_Long_Sword_Counter_Evasion_4_displayName)]
         public virtual float Dodge_IFrames_Long_Sword_Counter_Evasion_4 {
@@ -2659,7 +2715,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Long_Sword_Counter_Evasion_5_displayName = "Dodge IFrames: Long Sword Counter: Evasion 5";
-        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_5_sortIndex = 9500;
+        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_5_sortIndex = 9700;
         [SortOrder(Dodge_IFrames_Long_Sword_Counter_Evasion_5_sortIndex)]
         [DisplayName(Dodge_IFrames_Long_Sword_Counter_Evasion_5_displayName)]
         public virtual float Dodge_IFrames_Long_Sword_Counter_Evasion_5 {
@@ -2673,7 +2729,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Long_Sword_Counter_Evasion_Mantle_displayName = "Dodge IFrames: Long Sword Counter: Evasion Mantle";
-        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_Mantle_sortIndex = 9550;
+        public const int Dodge_IFrames_Long_Sword_Counter_Evasion_Mantle_sortIndex = 9750;
         [SortOrder(Dodge_IFrames_Long_Sword_Counter_Evasion_Mantle_sortIndex)]
         [DisplayName(Dodge_IFrames_Long_Sword_Counter_Evasion_Mantle_displayName)]
         public virtual float Dodge_IFrames_Long_Sword_Counter_Evasion_Mantle {
@@ -2687,7 +2743,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Bow_Charge_Step_Evasion_0_displayName = "Dodge IFrames: Bow Charge Step: Evasion 0";
-        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_0_sortIndex = 9600;
+        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_0_sortIndex = 9800;
         [SortOrder(Dodge_IFrames_Bow_Charge_Step_Evasion_0_sortIndex)]
         [DisplayName(Dodge_IFrames_Bow_Charge_Step_Evasion_0_displayName)]
         public virtual float Dodge_IFrames_Bow_Charge_Step_Evasion_0 {
@@ -2701,7 +2757,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Bow_Charge_Step_Evasion_1_displayName = "Dodge IFrames: Bow Charge Step: Evasion 1";
-        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_1_sortIndex = 9650;
+        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_1_sortIndex = 9850;
         [SortOrder(Dodge_IFrames_Bow_Charge_Step_Evasion_1_sortIndex)]
         [DisplayName(Dodge_IFrames_Bow_Charge_Step_Evasion_1_displayName)]
         public virtual float Dodge_IFrames_Bow_Charge_Step_Evasion_1 {
@@ -2715,7 +2771,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Bow_Charge_Step_Evasion_2_displayName = "Dodge IFrames: Bow Charge Step: Evasion 2";
-        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_2_sortIndex = 9700;
+        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_2_sortIndex = 9900;
         [SortOrder(Dodge_IFrames_Bow_Charge_Step_Evasion_2_sortIndex)]
         [DisplayName(Dodge_IFrames_Bow_Charge_Step_Evasion_2_displayName)]
         public virtual float Dodge_IFrames_Bow_Charge_Step_Evasion_2 {
@@ -2729,7 +2785,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Bow_Charge_Step_Evasion_3_displayName = "Dodge IFrames: Bow Charge Step: Evasion 3";
-        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_3_sortIndex = 9750;
+        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_3_sortIndex = 9950;
         [SortOrder(Dodge_IFrames_Bow_Charge_Step_Evasion_3_sortIndex)]
         [DisplayName(Dodge_IFrames_Bow_Charge_Step_Evasion_3_displayName)]
         public virtual float Dodge_IFrames_Bow_Charge_Step_Evasion_3 {
@@ -2743,7 +2799,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Bow_Charge_Step_Evasion_4_displayName = "Dodge IFrames: Bow Charge Step: Evasion 4";
-        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_4_sortIndex = 9800;
+        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_4_sortIndex = 10000;
         [SortOrder(Dodge_IFrames_Bow_Charge_Step_Evasion_4_sortIndex)]
         [DisplayName(Dodge_IFrames_Bow_Charge_Step_Evasion_4_displayName)]
         public virtual float Dodge_IFrames_Bow_Charge_Step_Evasion_4 {
@@ -2757,7 +2813,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Bow_Charge_Step_Evasion_5_displayName = "Dodge IFrames: Bow Charge Step: Evasion 5";
-        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_5_sortIndex = 9850;
+        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_5_sortIndex = 10050;
         [SortOrder(Dodge_IFrames_Bow_Charge_Step_Evasion_5_sortIndex)]
         [DisplayName(Dodge_IFrames_Bow_Charge_Step_Evasion_5_displayName)]
         public virtual float Dodge_IFrames_Bow_Charge_Step_Evasion_5 {
@@ -2771,7 +2827,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Bow_Charge_Step_Evasion_Mantle_displayName = "Dodge IFrames: Bow Charge Step: Evasion Mantle";
-        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_Mantle_sortIndex = 9900;
+        public const int Dodge_IFrames_Bow_Charge_Step_Evasion_Mantle_sortIndex = 10100;
         [SortOrder(Dodge_IFrames_Bow_Charge_Step_Evasion_Mantle_sortIndex)]
         [DisplayName(Dodge_IFrames_Bow_Charge_Step_Evasion_Mantle_displayName)]
         public virtual float Dodge_IFrames_Bow_Charge_Step_Evasion_Mantle {
@@ -2785,7 +2841,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_HBG_Roll_Dodge_Evasion_0_displayName = "Dodge IFrames: HBG Roll Dodge: Evasion 0";
-        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_0_sortIndex = 9950;
+        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_0_sortIndex = 10150;
         [SortOrder(Dodge_IFrames_HBG_Roll_Dodge_Evasion_0_sortIndex)]
         [DisplayName(Dodge_IFrames_HBG_Roll_Dodge_Evasion_0_displayName)]
         public virtual float Dodge_IFrames_HBG_Roll_Dodge_Evasion_0 {
@@ -2799,7 +2855,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_HBG_Roll_Dodge_Evasion_1_displayName = "Dodge IFrames: HBG Roll Dodge: Evasion 1";
-        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_1_sortIndex = 10000;
+        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_1_sortIndex = 10200;
         [SortOrder(Dodge_IFrames_HBG_Roll_Dodge_Evasion_1_sortIndex)]
         [DisplayName(Dodge_IFrames_HBG_Roll_Dodge_Evasion_1_displayName)]
         public virtual float Dodge_IFrames_HBG_Roll_Dodge_Evasion_1 {
@@ -2813,7 +2869,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_HBG_Roll_Dodge_Evasion_2_displayName = "Dodge IFrames: HBG Roll Dodge: Evasion 2";
-        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_2_sortIndex = 10050;
+        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_2_sortIndex = 10250;
         [SortOrder(Dodge_IFrames_HBG_Roll_Dodge_Evasion_2_sortIndex)]
         [DisplayName(Dodge_IFrames_HBG_Roll_Dodge_Evasion_2_displayName)]
         public virtual float Dodge_IFrames_HBG_Roll_Dodge_Evasion_2 {
@@ -2827,7 +2883,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_HBG_Roll_Dodge_Evasion_3_displayName = "Dodge IFrames: HBG Roll Dodge: Evasion 3";
-        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_3_sortIndex = 10100;
+        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_3_sortIndex = 10300;
         [SortOrder(Dodge_IFrames_HBG_Roll_Dodge_Evasion_3_sortIndex)]
         [DisplayName(Dodge_IFrames_HBG_Roll_Dodge_Evasion_3_displayName)]
         public virtual float Dodge_IFrames_HBG_Roll_Dodge_Evasion_3 {
@@ -2841,7 +2897,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_HBG_Roll_Dodge_Evasion_4_displayName = "Dodge IFrames: HBG Roll Dodge: Evasion 4";
-        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_4_sortIndex = 10150;
+        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_4_sortIndex = 10350;
         [SortOrder(Dodge_IFrames_HBG_Roll_Dodge_Evasion_4_sortIndex)]
         [DisplayName(Dodge_IFrames_HBG_Roll_Dodge_Evasion_4_displayName)]
         public virtual float Dodge_IFrames_HBG_Roll_Dodge_Evasion_4 {
@@ -2855,7 +2911,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_HBG_Roll_Dodge_Evasion_5_displayName = "Dodge IFrames: HBG Roll Dodge: Evasion 5";
-        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_5_sortIndex = 10200;
+        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_5_sortIndex = 10400;
         [SortOrder(Dodge_IFrames_HBG_Roll_Dodge_Evasion_5_sortIndex)]
         [DisplayName(Dodge_IFrames_HBG_Roll_Dodge_Evasion_5_displayName)]
         public virtual float Dodge_IFrames_HBG_Roll_Dodge_Evasion_5 {
@@ -2869,7 +2925,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_HBG_Roll_Dodge_Evasion_Mantle_displayName = "Dodge IFrames: HBG Roll Dodge: Evasion Mantle";
-        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_Mantle_sortIndex = 10250;
+        public const int Dodge_IFrames_HBG_Roll_Dodge_Evasion_Mantle_sortIndex = 10450;
         [SortOrder(Dodge_IFrames_HBG_Roll_Dodge_Evasion_Mantle_sortIndex)]
         [DisplayName(Dodge_IFrames_HBG_Roll_Dodge_Evasion_Mantle_displayName)]
         public virtual float Dodge_IFrames_HBG_Roll_Dodge_Evasion_Mantle {
@@ -2883,7 +2939,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_LBG_Side_Dodge_Evasion_0_displayName = "Dodge IFrames: LBG Side Dodge: Evasion 0";
-        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_0_sortIndex = 10300;
+        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_0_sortIndex = 10500;
         [SortOrder(Dodge_IFrames_LBG_Side_Dodge_Evasion_0_sortIndex)]
         [DisplayName(Dodge_IFrames_LBG_Side_Dodge_Evasion_0_displayName)]
         public virtual float Dodge_IFrames_LBG_Side_Dodge_Evasion_0 {
@@ -2897,7 +2953,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_LBG_Side_Dodge_Evasion_1_displayName = "Dodge IFrames: LBG Side Dodge: Evasion 1";
-        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_1_sortIndex = 10350;
+        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_1_sortIndex = 10550;
         [SortOrder(Dodge_IFrames_LBG_Side_Dodge_Evasion_1_sortIndex)]
         [DisplayName(Dodge_IFrames_LBG_Side_Dodge_Evasion_1_displayName)]
         public virtual float Dodge_IFrames_LBG_Side_Dodge_Evasion_1 {
@@ -2911,7 +2967,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_LBG_Side_Dodge_Evasion_2_displayName = "Dodge IFrames: LBG Side Dodge: Evasion 2";
-        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_2_sortIndex = 10400;
+        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_2_sortIndex = 10600;
         [SortOrder(Dodge_IFrames_LBG_Side_Dodge_Evasion_2_sortIndex)]
         [DisplayName(Dodge_IFrames_LBG_Side_Dodge_Evasion_2_displayName)]
         public virtual float Dodge_IFrames_LBG_Side_Dodge_Evasion_2 {
@@ -2925,7 +2981,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_LBG_Side_Dodge_Evasion_3_displayName = "Dodge IFrames: LBG Side Dodge: Evasion 3";
-        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_3_sortIndex = 10450;
+        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_3_sortIndex = 10650;
         [SortOrder(Dodge_IFrames_LBG_Side_Dodge_Evasion_3_sortIndex)]
         [DisplayName(Dodge_IFrames_LBG_Side_Dodge_Evasion_3_displayName)]
         public virtual float Dodge_IFrames_LBG_Side_Dodge_Evasion_3 {
@@ -2939,7 +2995,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_LBG_Side_Dodge_Evasion_4_displayName = "Dodge IFrames: LBG Side Dodge: Evasion 4";
-        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_4_sortIndex = 10500;
+        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_4_sortIndex = 10700;
         [SortOrder(Dodge_IFrames_LBG_Side_Dodge_Evasion_4_sortIndex)]
         [DisplayName(Dodge_IFrames_LBG_Side_Dodge_Evasion_4_displayName)]
         public virtual float Dodge_IFrames_LBG_Side_Dodge_Evasion_4 {
@@ -2953,7 +3009,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_LBG_Side_Dodge_Evasion_5_displayName = "Dodge IFrames: LBG Side Dodge: Evasion 5";
-        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_5_sortIndex = 10550;
+        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_5_sortIndex = 10750;
         [SortOrder(Dodge_IFrames_LBG_Side_Dodge_Evasion_5_sortIndex)]
         [DisplayName(Dodge_IFrames_LBG_Side_Dodge_Evasion_5_displayName)]
         public virtual float Dodge_IFrames_LBG_Side_Dodge_Evasion_5 {
@@ -2967,7 +3023,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_LBG_Side_Dodge_Evasion_Mantle_displayName = "Dodge IFrames: LBG Side Dodge: Evasion Mantle";
-        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_Mantle_sortIndex = 10600;
+        public const int Dodge_IFrames_LBG_Side_Dodge_Evasion_Mantle_sortIndex = 10800;
         [SortOrder(Dodge_IFrames_LBG_Side_Dodge_Evasion_Mantle_sortIndex)]
         [DisplayName(Dodge_IFrames_LBG_Side_Dodge_Evasion_Mantle_displayName)]
         public virtual float Dodge_IFrames_LBG_Side_Dodge_Evasion_Mantle {
@@ -2981,7 +3037,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion 0";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0_sortIndex = 10650;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0_sortIndex = 10850;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_0 {
@@ -2995,7 +3051,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion 1";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1_sortIndex = 10700;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1_sortIndex = 10900;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_1 {
@@ -3009,7 +3065,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion 2";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2_sortIndex = 10750;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2_sortIndex = 10950;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_2 {
@@ -3023,7 +3079,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion 3";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3_sortIndex = 10800;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3_sortIndex = 11000;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_3 {
@@ -3037,7 +3093,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion 4";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4_sortIndex = 10850;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4_sortIndex = 11050;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_4 {
@@ -3051,7 +3107,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion 5";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5_sortIndex = 10900;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5_sortIndex = 11100;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_5 {
@@ -3065,7 +3121,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle_displayName = "Dodge IFrames: Dual Blades Demon Mode Slinger Evade: Evasion Mantle";
-        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle_sortIndex = 10950;
+        public const int Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle_sortIndex = 11150;
         [SortOrder(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Demon_Mode_Slinger_Evade_Evasion_Mantle {
@@ -3079,7 +3135,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion 0";
-        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0_sortIndex = 11000;
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0_sortIndex = 11200;
         [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_0 {
@@ -3093,7 +3149,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion 1";
-        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1_sortIndex = 11050;
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1_sortIndex = 11250;
         [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_1 {
@@ -3107,7 +3163,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion 2";
-        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2_sortIndex = 11100;
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2_sortIndex = 11300;
         [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_2 {
@@ -3121,7 +3177,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion 3";
-        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3_sortIndex = 11150;
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3_sortIndex = 11350;
         [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_3 {
@@ -3135,7 +3191,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion 4";
-        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4_sortIndex = 11200;
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4_sortIndex = 11400;
         [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_4 {
@@ -3149,7 +3205,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion 5";
-        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5_sortIndex = 11250;
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5_sortIndex = 11450;
         [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_5 {
@@ -3163,7 +3219,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle_displayName = "Dodge IFrames: Dual Blades Slinger Evade: Evasion Mantle";
-        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle_sortIndex = 11300;
+        public const int Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle_sortIndex = 11500;
         [SortOrder(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle_sortIndex)]
         [DisplayName(Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle_displayName)]
         public virtual float Dodge_IFrames_Dual_Blades_Slinger_Evade_Evasion_Mantle {
@@ -3177,7 +3233,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Normal_Distance_1_displayName = "Evade: Normal: Distance 1";
-        public const int Evade_Normal_Distance_1_sortIndex = 11350;
+        public const int Evade_Normal_Distance_1_sortIndex = 11550;
         [SortOrder(Evade_Normal_Distance_1_sortIndex)]
         [DisplayName(Evade_Normal_Distance_1_displayName)]
         public virtual float Evade_Normal_Distance_1 {
@@ -3191,7 +3247,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Normal_Distance_2_displayName = "Evade: Normal: Distance 2";
-        public const int Evade_Normal_Distance_2_sortIndex = 11400;
+        public const int Evade_Normal_Distance_2_sortIndex = 11600;
         [SortOrder(Evade_Normal_Distance_2_sortIndex)]
         [DisplayName(Evade_Normal_Distance_2_displayName)]
         public virtual float Evade_Normal_Distance_2 {
@@ -3205,7 +3261,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Normal_Distance_3_displayName = "Evade: Normal: Distance 3";
-        public const int Evade_Normal_Distance_3_sortIndex = 11450;
+        public const int Evade_Normal_Distance_3_sortIndex = 11650;
         [SortOrder(Evade_Normal_Distance_3_sortIndex)]
         [DisplayName(Evade_Normal_Distance_3_displayName)]
         public virtual float Evade_Normal_Distance_3 {
@@ -3219,7 +3275,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Step_Distance_1_displayName = "Evade: Step: Distance 1";
-        public const int Evade_Step_Distance_1_sortIndex = 11500;
+        public const int Evade_Step_Distance_1_sortIndex = 11700;
         [SortOrder(Evade_Step_Distance_1_sortIndex)]
         [DisplayName(Evade_Step_Distance_1_displayName)]
         public virtual float Evade_Step_Distance_1 {
@@ -3233,7 +3289,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Step_Distance_2_displayName = "Evade: Step: Distance 2";
-        public const int Evade_Step_Distance_2_sortIndex = 11550;
+        public const int Evade_Step_Distance_2_sortIndex = 11750;
         [SortOrder(Evade_Step_Distance_2_sortIndex)]
         [DisplayName(Evade_Step_Distance_2_displayName)]
         public virtual float Evade_Step_Distance_2 {
@@ -3247,7 +3303,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Step_Distance_3_displayName = "Evade: Step: Distance 3";
-        public const int Evade_Step_Distance_3_sortIndex = 11600;
+        public const int Evade_Step_Distance_3_sortIndex = 11800;
         [SortOrder(Evade_Step_Distance_3_sortIndex)]
         [DisplayName(Evade_Step_Distance_3_displayName)]
         public virtual float Evade_Step_Distance_3 {
@@ -3261,7 +3317,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Sword_Shield_Back_Step_Distance_1_displayName = "Evade: Sword & Shield Back Step: Distance 1";
-        public const int Evade_Sword_Shield_Back_Step_Distance_1_sortIndex = 11650;
+        public const int Evade_Sword_Shield_Back_Step_Distance_1_sortIndex = 11850;
         [SortOrder(Evade_Sword_Shield_Back_Step_Distance_1_sortIndex)]
         [DisplayName(Evade_Sword_Shield_Back_Step_Distance_1_displayName)]
         public virtual float Evade_Sword_Shield_Back_Step_Distance_1 {
@@ -3275,7 +3331,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Sword_Shield_Back_Step_Distance_2_displayName = "Evade: Sword & Shield Back Step: Distance 2";
-        public const int Evade_Sword_Shield_Back_Step_Distance_2_sortIndex = 11700;
+        public const int Evade_Sword_Shield_Back_Step_Distance_2_sortIndex = 11900;
         [SortOrder(Evade_Sword_Shield_Back_Step_Distance_2_sortIndex)]
         [DisplayName(Evade_Sword_Shield_Back_Step_Distance_2_displayName)]
         public virtual float Evade_Sword_Shield_Back_Step_Distance_2 {
@@ -3289,7 +3345,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Sword_Shield_Back_Step_Distance_3_displayName = "Evade: Sword & Shield Back Step: Distance 3";
-        public const int Evade_Sword_Shield_Back_Step_Distance_3_sortIndex = 11750;
+        public const int Evade_Sword_Shield_Back_Step_Distance_3_sortIndex = 11950;
         [SortOrder(Evade_Sword_Shield_Back_Step_Distance_3_sortIndex)]
         [DisplayName(Evade_Sword_Shield_Back_Step_Distance_3_displayName)]
         public virtual float Evade_Sword_Shield_Back_Step_Distance_3 {
@@ -3303,7 +3359,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Dual_Blades_DemonMode_Step_Distance_1_displayName = "Evade: Dual Blades DemonMode Step: Distance 1";
-        public const int Evade_Dual_Blades_DemonMode_Step_Distance_1_sortIndex = 11800;
+        public const int Evade_Dual_Blades_DemonMode_Step_Distance_1_sortIndex = 12000;
         [SortOrder(Evade_Dual_Blades_DemonMode_Step_Distance_1_sortIndex)]
         [DisplayName(Evade_Dual_Blades_DemonMode_Step_Distance_1_displayName)]
         public virtual float Evade_Dual_Blades_DemonMode_Step_Distance_1 {
@@ -3317,7 +3373,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Dual_Blades_DemonMode_Step_Distance_2_displayName = "Evade: Dual Blades DemonMode Step: Distance 2";
-        public const int Evade_Dual_Blades_DemonMode_Step_Distance_2_sortIndex = 11850;
+        public const int Evade_Dual_Blades_DemonMode_Step_Distance_2_sortIndex = 12050;
         [SortOrder(Evade_Dual_Blades_DemonMode_Step_Distance_2_sortIndex)]
         [DisplayName(Evade_Dual_Blades_DemonMode_Step_Distance_2_displayName)]
         public virtual float Evade_Dual_Blades_DemonMode_Step_Distance_2 {
@@ -3331,7 +3387,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Dual_Blades_DemonMode_Step_Distance_3_displayName = "Evade: Dual Blades DemonMode Step: Distance 3";
-        public const int Evade_Dual_Blades_DemonMode_Step_Distance_3_sortIndex = 11900;
+        public const int Evade_Dual_Blades_DemonMode_Step_Distance_3_sortIndex = 12100;
         [SortOrder(Evade_Dual_Blades_DemonMode_Step_Distance_3_sortIndex)]
         [DisplayName(Evade_Dual_Blades_DemonMode_Step_Distance_3_displayName)]
         public virtual float Evade_Dual_Blades_DemonMode_Step_Distance_3 {
@@ -3345,7 +3401,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Long_Sword_Counter_Distance_1_displayName = "Evade: Long Sword Counter: Distance 1";
-        public const int Evade_Long_Sword_Counter_Distance_1_sortIndex = 11950;
+        public const int Evade_Long_Sword_Counter_Distance_1_sortIndex = 12150;
         [SortOrder(Evade_Long_Sword_Counter_Distance_1_sortIndex)]
         [DisplayName(Evade_Long_Sword_Counter_Distance_1_displayName)]
         public virtual float Evade_Long_Sword_Counter_Distance_1 {
@@ -3359,7 +3415,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Long_Sword_Counter_Distance_2_displayName = "Evade: Long Sword Counter: Distance 2";
-        public const int Evade_Long_Sword_Counter_Distance_2_sortIndex = 12000;
+        public const int Evade_Long_Sword_Counter_Distance_2_sortIndex = 12200;
         [SortOrder(Evade_Long_Sword_Counter_Distance_2_sortIndex)]
         [DisplayName(Evade_Long_Sword_Counter_Distance_2_displayName)]
         public virtual float Evade_Long_Sword_Counter_Distance_2 {
@@ -3373,7 +3429,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Long_Sword_Counter_Distance_3_displayName = "Evade: Long Sword Counter: Distance 3";
-        public const int Evade_Long_Sword_Counter_Distance_3_sortIndex = 12050;
+        public const int Evade_Long_Sword_Counter_Distance_3_sortIndex = 12250;
         [SortOrder(Evade_Long_Sword_Counter_Distance_3_sortIndex)]
         [DisplayName(Evade_Long_Sword_Counter_Distance_3_displayName)]
         public virtual float Evade_Long_Sword_Counter_Distance_3 {
@@ -3387,7 +3443,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Insect_Glaive_Air_Dodge_Distance_1_displayName = "Evade: Insect Glaive Air Dodge: Distance 1";
-        public const int Evade_Insect_Glaive_Air_Dodge_Distance_1_sortIndex = 12100;
+        public const int Evade_Insect_Glaive_Air_Dodge_Distance_1_sortIndex = 12300;
         [SortOrder(Evade_Insect_Glaive_Air_Dodge_Distance_1_sortIndex)]
         [DisplayName(Evade_Insect_Glaive_Air_Dodge_Distance_1_displayName)]
         public virtual float Evade_Insect_Glaive_Air_Dodge_Distance_1 {
@@ -3401,7 +3457,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Insect_Glaive_Air_Dodge_Distance_2_displayName = "Evade: Insect Glaive Air Dodge: Distance 2";
-        public const int Evade_Insect_Glaive_Air_Dodge_Distance_2_sortIndex = 12150;
+        public const int Evade_Insect_Glaive_Air_Dodge_Distance_2_sortIndex = 12350;
         [SortOrder(Evade_Insect_Glaive_Air_Dodge_Distance_2_sortIndex)]
         [DisplayName(Evade_Insect_Glaive_Air_Dodge_Distance_2_displayName)]
         public virtual float Evade_Insect_Glaive_Air_Dodge_Distance_2 {
@@ -3415,7 +3471,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Insect_Glaive_Air_Dodge_Distance_3_displayName = "Evade: Insect Glaive Air Dodge: Distance 3";
-        public const int Evade_Insect_Glaive_Air_Dodge_Distance_3_sortIndex = 12200;
+        public const int Evade_Insect_Glaive_Air_Dodge_Distance_3_sortIndex = 12400;
         [SortOrder(Evade_Insect_Glaive_Air_Dodge_Distance_3_sortIndex)]
         [DisplayName(Evade_Insect_Glaive_Air_Dodge_Distance_3_displayName)]
         public virtual float Evade_Insect_Glaive_Air_Dodge_Distance_3 {
@@ -3429,7 +3485,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Bow_Charge_Step_Distance_1_displayName = "Evade: Bow Charge Step: Distance 1";
-        public const int Evade_Bow_Charge_Step_Distance_1_sortIndex = 12250;
+        public const int Evade_Bow_Charge_Step_Distance_1_sortIndex = 12450;
         [SortOrder(Evade_Bow_Charge_Step_Distance_1_sortIndex)]
         [DisplayName(Evade_Bow_Charge_Step_Distance_1_displayName)]
         public virtual float Evade_Bow_Charge_Step_Distance_1 {
@@ -3443,7 +3499,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Bow_Charge_Step_Distance_2_displayName = "Evade: Bow Charge Step: Distance 2";
-        public const int Evade_Bow_Charge_Step_Distance_2_sortIndex = 12300;
+        public const int Evade_Bow_Charge_Step_Distance_2_sortIndex = 12500;
         [SortOrder(Evade_Bow_Charge_Step_Distance_2_sortIndex)]
         [DisplayName(Evade_Bow_Charge_Step_Distance_2_displayName)]
         public virtual float Evade_Bow_Charge_Step_Distance_2 {
@@ -3457,7 +3513,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Bow_Charge_Step_Distance_3_displayName = "Evade: Bow Charge Step: Distance 3";
-        public const int Evade_Bow_Charge_Step_Distance_3_sortIndex = 12350;
+        public const int Evade_Bow_Charge_Step_Distance_3_sortIndex = 12550;
         [SortOrder(Evade_Bow_Charge_Step_Distance_3_sortIndex)]
         [DisplayName(Evade_Bow_Charge_Step_Distance_3_displayName)]
         public virtual float Evade_Bow_Charge_Step_Distance_3 {
@@ -3471,7 +3527,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_HBG_Roll_Dodge_Distance_1_displayName = "Evade: HBG Roll Dodge: Distance 1";
-        public const int Evade_HBG_Roll_Dodge_Distance_1_sortIndex = 12400;
+        public const int Evade_HBG_Roll_Dodge_Distance_1_sortIndex = 12600;
         [SortOrder(Evade_HBG_Roll_Dodge_Distance_1_sortIndex)]
         [DisplayName(Evade_HBG_Roll_Dodge_Distance_1_displayName)]
         public virtual float Evade_HBG_Roll_Dodge_Distance_1 {
@@ -3485,7 +3541,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_HBG_Roll_Dodge_Distance_2_displayName = "Evade: HBG Roll Dodge: Distance 2";
-        public const int Evade_HBG_Roll_Dodge_Distance_2_sortIndex = 12450;
+        public const int Evade_HBG_Roll_Dodge_Distance_2_sortIndex = 12650;
         [SortOrder(Evade_HBG_Roll_Dodge_Distance_2_sortIndex)]
         [DisplayName(Evade_HBG_Roll_Dodge_Distance_2_displayName)]
         public virtual float Evade_HBG_Roll_Dodge_Distance_2 {
@@ -3499,7 +3555,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_HBG_Roll_Dodge_Distance_3_displayName = "Evade: HBG Roll Dodge: Distance 3";
-        public const int Evade_HBG_Roll_Dodge_Distance_3_sortIndex = 12500;
+        public const int Evade_HBG_Roll_Dodge_Distance_3_sortIndex = 12700;
         [SortOrder(Evade_HBG_Roll_Dodge_Distance_3_sortIndex)]
         [DisplayName(Evade_HBG_Roll_Dodge_Distance_3_displayName)]
         public virtual float Evade_HBG_Roll_Dodge_Distance_3 {
@@ -3513,7 +3569,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_LBG_Side_Dodge_Distance_1_displayName = "Evade: LBG Side Dodge: Distance 1";
-        public const int Evade_LBG_Side_Dodge_Distance_1_sortIndex = 12550;
+        public const int Evade_LBG_Side_Dodge_Distance_1_sortIndex = 12750;
         [SortOrder(Evade_LBG_Side_Dodge_Distance_1_sortIndex)]
         [DisplayName(Evade_LBG_Side_Dodge_Distance_1_displayName)]
         public virtual float Evade_LBG_Side_Dodge_Distance_1 {
@@ -3527,7 +3583,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_LBG_Side_Dodge_Distance_2_displayName = "Evade: LBG Side Dodge: Distance 2";
-        public const int Evade_LBG_Side_Dodge_Distance_2_sortIndex = 12600;
+        public const int Evade_LBG_Side_Dodge_Distance_2_sortIndex = 12800;
         [SortOrder(Evade_LBG_Side_Dodge_Distance_2_sortIndex)]
         [DisplayName(Evade_LBG_Side_Dodge_Distance_2_displayName)]
         public virtual float Evade_LBG_Side_Dodge_Distance_2 {
@@ -3541,7 +3597,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_LBG_Side_Dodge_Distance_3_displayName = "Evade: LBG Side Dodge: Distance 3";
-        public const int Evade_LBG_Side_Dodge_Distance_3_sortIndex = 12650;
+        public const int Evade_LBG_Side_Dodge_Distance_3_sortIndex = 12850;
         [SortOrder(Evade_LBG_Side_Dodge_Distance_3_sortIndex)]
         [DisplayName(Evade_LBG_Side_Dodge_Distance_3_displayName)]
         public virtual float Evade_LBG_Side_Dodge_Distance_3 {
@@ -3555,7 +3611,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_displayName = "Evade: Dual Blades Demon Mode Slinger Evade: Distance 1";
-        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_sortIndex = 12700;
+        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_sortIndex = 12900;
         [SortOrder(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_sortIndex)]
         [DisplayName(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_displayName)]
         public virtual float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1 {
@@ -3569,7 +3625,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_displayName = "Evade: Dual Blades Demon Mode Slinger Evade: Distance 2";
-        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_sortIndex = 12750;
+        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_sortIndex = 12950;
         [SortOrder(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_sortIndex)]
         [DisplayName(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_displayName)]
         public virtual float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2 {
@@ -3583,7 +3639,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_displayName = "Evade: Dual Blades Demon Mode Slinger Evade: Distance 3";
-        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_sortIndex = 12800;
+        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_sortIndex = 13000;
         [SortOrder(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_sortIndex)]
         [DisplayName(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_displayName)]
         public virtual float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3 {
@@ -3597,7 +3653,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Dual_Blades_Slinger_Evade_Distance_1_displayName = "Evade: Dual Blades Slinger Evade: Distance 1";
-        public const int Evade_Dual_Blades_Slinger_Evade_Distance_1_sortIndex = 12850;
+        public const int Evade_Dual_Blades_Slinger_Evade_Distance_1_sortIndex = 13050;
         [SortOrder(Evade_Dual_Blades_Slinger_Evade_Distance_1_sortIndex)]
         [DisplayName(Evade_Dual_Blades_Slinger_Evade_Distance_1_displayName)]
         public virtual float Evade_Dual_Blades_Slinger_Evade_Distance_1 {
@@ -3611,7 +3667,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Dual_Blades_Slinger_Evade_Distance_2_displayName = "Evade: Dual Blades Slinger Evade: Distance 2";
-        public const int Evade_Dual_Blades_Slinger_Evade_Distance_2_sortIndex = 12900;
+        public const int Evade_Dual_Blades_Slinger_Evade_Distance_2_sortIndex = 13100;
         [SortOrder(Evade_Dual_Blades_Slinger_Evade_Distance_2_sortIndex)]
         [DisplayName(Evade_Dual_Blades_Slinger_Evade_Distance_2_displayName)]
         public virtual float Evade_Dual_Blades_Slinger_Evade_Distance_2 {
@@ -3625,7 +3681,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Evade_Dual_Blades_Slinger_Evade_Distance_3_displayName = "Evade: Dual Blades Slinger Evade: Distance 3";
-        public const int Evade_Dual_Blades_Slinger_Evade_Distance_3_sortIndex = 12950;
+        public const int Evade_Dual_Blades_Slinger_Evade_Distance_3_sortIndex = 13150;
         [SortOrder(Evade_Dual_Blades_Slinger_Evade_Distance_3_sortIndex)]
         [DisplayName(Evade_Dual_Blades_Slinger_Evade_Distance_3_displayName)]
         public virtual float Evade_Dual_Blades_Slinger_Evade_Distance_3 {
@@ -3639,7 +3695,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string _Skipping_ahead_3__displayName = "------Skipping ahead 3.";
-        public const int _Skipping_ahead_3__sortIndex = 13000;
+        public const int _Skipping_ahead_3__sortIndex = 13200;
         [SortOrder(_Skipping_ahead_3__sortIndex)]
         [DisplayName(_Skipping_ahead_3__displayName)]
         public virtual float _Skipping_ahead_3_ {
@@ -3653,7 +3709,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Attack_Add_1__displayName = "Wp HR Augment Attack Add (1)";
-        public const int Wp_HR_Augment_Attack_Add_1__sortIndex = 13050;
+        public const int Wp_HR_Augment_Attack_Add_1__sortIndex = 13250;
         [SortOrder(Wp_HR_Augment_Attack_Add_1__sortIndex)]
         [DisplayName(Wp_HR_Augment_Attack_Add_1__displayName)]
         public virtual byte Wp_HR_Augment_Attack_Add_1_ {
@@ -3667,7 +3723,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Attack_Add_2__displayName = "Wp HR Augment Attack Add (2)";
-        public const int Wp_HR_Augment_Attack_Add_2__sortIndex = 13100;
+        public const int Wp_HR_Augment_Attack_Add_2__sortIndex = 13300;
         [SortOrder(Wp_HR_Augment_Attack_Add_2__sortIndex)]
         [DisplayName(Wp_HR_Augment_Attack_Add_2__displayName)]
         public virtual byte Wp_HR_Augment_Attack_Add_2_ {
@@ -3681,7 +3737,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Attack_Add_3__displayName = "Wp HR Augment Attack Add (3)";
-        public const int Wp_HR_Augment_Attack_Add_3__sortIndex = 13150;
+        public const int Wp_HR_Augment_Attack_Add_3__sortIndex = 13350;
         [SortOrder(Wp_HR_Augment_Attack_Add_3__sortIndex)]
         [DisplayName(Wp_HR_Augment_Attack_Add_3__displayName)]
         public virtual byte Wp_HR_Augment_Attack_Add_3_ {
@@ -3695,7 +3751,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Critical_Add_1__displayName = "Wp HR Augment Critical Add (1)";
-        public const int Wp_HR_Augment_Critical_Add_1__sortIndex = 13200;
+        public const int Wp_HR_Augment_Critical_Add_1__sortIndex = 13400;
         [SortOrder(Wp_HR_Augment_Critical_Add_1__sortIndex)]
         [DisplayName(Wp_HR_Augment_Critical_Add_1__displayName)]
         public virtual byte Wp_HR_Augment_Critical_Add_1_ {
@@ -3709,7 +3765,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Critical_Add_2__displayName = "Wp HR Augment Critical Add (2)";
-        public const int Wp_HR_Augment_Critical_Add_2__sortIndex = 13250;
+        public const int Wp_HR_Augment_Critical_Add_2__sortIndex = 13450;
         [SortOrder(Wp_HR_Augment_Critical_Add_2__sortIndex)]
         [DisplayName(Wp_HR_Augment_Critical_Add_2__displayName)]
         public virtual byte Wp_HR_Augment_Critical_Add_2_ {
@@ -3723,7 +3779,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Critical_Add_3__displayName = "Wp HR Augment Critical Add (3)";
-        public const int Wp_HR_Augment_Critical_Add_3__sortIndex = 13300;
+        public const int Wp_HR_Augment_Critical_Add_3__sortIndex = 13500;
         [SortOrder(Wp_HR_Augment_Critical_Add_3__sortIndex)]
         [DisplayName(Wp_HR_Augment_Critical_Add_3__displayName)]
         public virtual byte Wp_HR_Augment_Critical_Add_3_ {
@@ -3737,7 +3793,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Defense_Add_1__displayName = "Wp HR Augment Defense Add (1)";
-        public const int Wp_HR_Augment_Defense_Add_1__sortIndex = 13350;
+        public const int Wp_HR_Augment_Defense_Add_1__sortIndex = 13550;
         [SortOrder(Wp_HR_Augment_Defense_Add_1__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Add_1__displayName)]
         public virtual byte Wp_HR_Augment_Defense_Add_1_ {
@@ -3751,7 +3807,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Defense_Add_2__displayName = "Wp HR Augment Defense Add (2)";
-        public const int Wp_HR_Augment_Defense_Add_2__sortIndex = 13400;
+        public const int Wp_HR_Augment_Defense_Add_2__sortIndex = 13600;
         [SortOrder(Wp_HR_Augment_Defense_Add_2__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Add_2__displayName)]
         public virtual byte Wp_HR_Augment_Defense_Add_2_ {
@@ -3765,7 +3821,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Defense_Add_3__displayName = "Wp HR Augment Defense Add (3)";
-        public const int Wp_HR_Augment_Defense_Add_3__sortIndex = 13450;
+        public const int Wp_HR_Augment_Defense_Add_3__sortIndex = 13650;
         [SortOrder(Wp_HR_Augment_Defense_Add_3__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Add_3__displayName)]
         public virtual byte Wp_HR_Augment_Defense_Add_3_ {
@@ -3779,7 +3835,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Divine_Blessing_Chance_1__displayName = "Wp HR Augment Divine Blessing Chance (1)";
-        public const int Wp_HR_Augment_Divine_Blessing_Chance_1__sortIndex = 13500;
+        public const int Wp_HR_Augment_Divine_Blessing_Chance_1__sortIndex = 13700;
         [SortOrder(Wp_HR_Augment_Divine_Blessing_Chance_1__sortIndex)]
         [DisplayName(Wp_HR_Augment_Divine_Blessing_Chance_1__displayName)]
         public virtual byte Wp_HR_Augment_Divine_Blessing_Chance_1_ {
@@ -3793,7 +3849,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Divine_Blessing_Chance_2__displayName = "Wp HR Augment Divine Blessing Chance (2)";
-        public const int Wp_HR_Augment_Divine_Blessing_Chance_2__sortIndex = 13550;
+        public const int Wp_HR_Augment_Divine_Blessing_Chance_2__sortIndex = 13750;
         [SortOrder(Wp_HR_Augment_Divine_Blessing_Chance_2__sortIndex)]
         [DisplayName(Wp_HR_Augment_Divine_Blessing_Chance_2__displayName)]
         public virtual byte Wp_HR_Augment_Divine_Blessing_Chance_2_ {
@@ -3807,7 +3863,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Divine_Blessing_Chance_3__displayName = "Wp HR Augment Divine Blessing Chance (3)";
-        public const int Wp_HR_Augment_Divine_Blessing_Chance_3__sortIndex = 13600;
+        public const int Wp_HR_Augment_Divine_Blessing_Chance_3__sortIndex = 13800;
         [SortOrder(Wp_HR_Augment_Divine_Blessing_Chance_3__sortIndex)]
         [DisplayName(Wp_HR_Augment_Divine_Blessing_Chance_3__displayName)]
         public virtual byte Wp_HR_Augment_Divine_Blessing_Chance_3_ {
@@ -3821,7 +3877,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Divine_Blessing_Reduction_1__displayName = "Wp HR Augment Divine Blessing Reduction (1)";
-        public const int Wp_HR_Augment_Divine_Blessing_Reduction_1__sortIndex = 13650;
+        public const int Wp_HR_Augment_Divine_Blessing_Reduction_1__sortIndex = 13850;
         [SortOrder(Wp_HR_Augment_Divine_Blessing_Reduction_1__sortIndex)]
         [DisplayName(Wp_HR_Augment_Divine_Blessing_Reduction_1__displayName)]
         public virtual float Wp_HR_Augment_Divine_Blessing_Reduction_1_ {
@@ -3835,7 +3891,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Divine_Blessing_Reduction_2__displayName = "Wp HR Augment Divine Blessing Reduction (2)";
-        public const int Wp_HR_Augment_Divine_Blessing_Reduction_2__sortIndex = 13700;
+        public const int Wp_HR_Augment_Divine_Blessing_Reduction_2__sortIndex = 13900;
         [SortOrder(Wp_HR_Augment_Divine_Blessing_Reduction_2__sortIndex)]
         [DisplayName(Wp_HR_Augment_Divine_Blessing_Reduction_2__displayName)]
         public virtual float Wp_HR_Augment_Divine_Blessing_Reduction_2_ {
@@ -3849,7 +3905,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Divine_Blessing_Reduction_3__displayName = "Wp HR Augment Divine Blessing Reduction (3)";
-        public const int Wp_HR_Augment_Divine_Blessing_Reduction_3__sortIndex = 13750;
+        public const int Wp_HR_Augment_Divine_Blessing_Reduction_3__sortIndex = 13950;
         [SortOrder(Wp_HR_Augment_Divine_Blessing_Reduction_3__sortIndex)]
         [DisplayName(Wp_HR_Augment_Divine_Blessing_Reduction_3__displayName)]
         public virtual float Wp_HR_Augment_Divine_Blessing_Reduction_3_ {
@@ -3863,7 +3919,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Defense_Heal_Damage_Rate_1__displayName = "Wp HR Augment Defense Heal Damage Rate (1)";
-        public const int Wp_HR_Augment_Defense_Heal_Damage_Rate_1__sortIndex = 13800;
+        public const int Wp_HR_Augment_Defense_Heal_Damage_Rate_1__sortIndex = 14000;
         [SortOrder(Wp_HR_Augment_Defense_Heal_Damage_Rate_1__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Heal_Damage_Rate_1__displayName)]
         public virtual float Wp_HR_Augment_Defense_Heal_Damage_Rate_1_ {
@@ -3877,7 +3933,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Defense_Heal_Damage_Rate_2__displayName = "Wp HR Augment Defense Heal Damage Rate (2)";
-        public const int Wp_HR_Augment_Defense_Heal_Damage_Rate_2__sortIndex = 13850;
+        public const int Wp_HR_Augment_Defense_Heal_Damage_Rate_2__sortIndex = 14050;
         [SortOrder(Wp_HR_Augment_Defense_Heal_Damage_Rate_2__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Heal_Damage_Rate_2__displayName)]
         public virtual float Wp_HR_Augment_Defense_Heal_Damage_Rate_2_ {
@@ -3891,7 +3947,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Defense_Heal_Damage_Rate_3__displayName = "Wp HR Augment Defense Heal Damage Rate (3)";
-        public const int Wp_HR_Augment_Defense_Heal_Damage_Rate_3__sortIndex = 13900;
+        public const int Wp_HR_Augment_Defense_Heal_Damage_Rate_3__sortIndex = 14100;
         [SortOrder(Wp_HR_Augment_Defense_Heal_Damage_Rate_3__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Heal_Damage_Rate_3__displayName)]
         public virtual float Wp_HR_Augment_Defense_Heal_Damage_Rate_3_ {
@@ -3905,7 +3961,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_IB_Unk_displayName = "Wp HR Augment IB Unk";
-        public const int Wp_HR_Augment_IB_Unk_sortIndex = 13950;
+        public const int Wp_HR_Augment_IB_Unk_sortIndex = 14150;
         [SortOrder(Wp_HR_Augment_IB_Unk_sortIndex)]
         [DisplayName(Wp_HR_Augment_IB_Unk_displayName)]
         public virtual float Wp_HR_Augment_IB_Unk {
@@ -3919,7 +3975,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_HR_Augment_Lifesteal_Cooldown_displayName = "Wp HR Augment Lifesteal Cooldown";
-        public const int Wp_HR_Augment_Lifesteal_Cooldown_sortIndex = 14000;
+        public const int Wp_HR_Augment_Lifesteal_Cooldown_sortIndex = 14200;
         [SortOrder(Wp_HR_Augment_Lifesteal_Cooldown_sortIndex)]
         [DisplayName(Wp_HR_Augment_Lifesteal_Cooldown_displayName)]
         public virtual float Wp_HR_Augment_Lifesteal_Cooldown {
@@ -3933,7 +3989,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Attack_1__displayName = "Wp MR Augment Attack (1)";
-        public const int Wp_MR_Augment_Attack_1__sortIndex = 14050;
+        public const int Wp_MR_Augment_Attack_1__sortIndex = 14250;
         [SortOrder(Wp_MR_Augment_Attack_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Attack_1__displayName)]
         public virtual byte Wp_MR_Augment_Attack_1_ {
@@ -3947,7 +4003,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Attack_2__displayName = "Wp MR Augment Attack (2)";
-        public const int Wp_MR_Augment_Attack_2__sortIndex = 14100;
+        public const int Wp_MR_Augment_Attack_2__sortIndex = 14300;
         [SortOrder(Wp_MR_Augment_Attack_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Attack_2__displayName)]
         public virtual byte Wp_MR_Augment_Attack_2_ {
@@ -3961,7 +4017,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Attack_3__displayName = "Wp MR Augment Attack (3)";
-        public const int Wp_MR_Augment_Attack_3__sortIndex = 14150;
+        public const int Wp_MR_Augment_Attack_3__sortIndex = 14350;
         [SortOrder(Wp_MR_Augment_Attack_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Attack_3__displayName)]
         public virtual byte Wp_MR_Augment_Attack_3_ {
@@ -3975,7 +4031,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Attack_4__displayName = "Wp MR Augment Attack (4)";
-        public const int Wp_MR_Augment_Attack_4__sortIndex = 14200;
+        public const int Wp_MR_Augment_Attack_4__sortIndex = 14400;
         [SortOrder(Wp_MR_Augment_Attack_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Attack_4__displayName)]
         public virtual byte Wp_MR_Augment_Attack_4_ {
@@ -3989,7 +4045,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Critical_1__displayName = "Wp MR Augment Critical (1)";
-        public const int Wp_MR_Augment_Critical_1__sortIndex = 14250;
+        public const int Wp_MR_Augment_Critical_1__sortIndex = 14450;
         [SortOrder(Wp_MR_Augment_Critical_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Critical_1__displayName)]
         public virtual byte Wp_MR_Augment_Critical_1_ {
@@ -4003,7 +4059,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Critical_2__displayName = "Wp MR Augment Critical (2)";
-        public const int Wp_MR_Augment_Critical_2__sortIndex = 14300;
+        public const int Wp_MR_Augment_Critical_2__sortIndex = 14500;
         [SortOrder(Wp_MR_Augment_Critical_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Critical_2__displayName)]
         public virtual byte Wp_MR_Augment_Critical_2_ {
@@ -4017,7 +4073,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Critical_3__displayName = "Wp MR Augment Critical (3)";
-        public const int Wp_MR_Augment_Critical_3__sortIndex = 14350;
+        public const int Wp_MR_Augment_Critical_3__sortIndex = 14550;
         [SortOrder(Wp_MR_Augment_Critical_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Critical_3__displayName)]
         public virtual byte Wp_MR_Augment_Critical_3_ {
@@ -4031,7 +4087,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Critical_4__displayName = "Wp MR Augment Critical (4)";
-        public const int Wp_MR_Augment_Critical_4__sortIndex = 14400;
+        public const int Wp_MR_Augment_Critical_4__sortIndex = 14600;
         [SortOrder(Wp_MR_Augment_Critical_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Critical_4__displayName)]
         public virtual byte Wp_MR_Augment_Critical_4_ {
@@ -4045,7 +4101,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Defense_1__displayName = "Wp MR Augment Defense (1)";
-        public const int Wp_MR_Augment_Defense_1__sortIndex = 14450;
+        public const int Wp_MR_Augment_Defense_1__sortIndex = 14650;
         [SortOrder(Wp_MR_Augment_Defense_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_1__displayName)]
         public virtual byte Wp_MR_Augment_Defense_1_ {
@@ -4059,7 +4115,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Defense_2__displayName = "Wp MR Augment Defense (2)";
-        public const int Wp_MR_Augment_Defense_2__sortIndex = 14500;
+        public const int Wp_MR_Augment_Defense_2__sortIndex = 14700;
         [SortOrder(Wp_MR_Augment_Defense_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_2__displayName)]
         public virtual byte Wp_MR_Augment_Defense_2_ {
@@ -4073,7 +4129,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Defense_3__displayName = "Wp MR Augment Defense (3)";
-        public const int Wp_MR_Augment_Defense_3__sortIndex = 14550;
+        public const int Wp_MR_Augment_Defense_3__sortIndex = 14750;
         [SortOrder(Wp_MR_Augment_Defense_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_3__displayName)]
         public virtual byte Wp_MR_Augment_Defense_3_ {
@@ -4087,7 +4143,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Defense_4__displayName = "Wp MR Augment Defense (4)";
-        public const int Wp_MR_Augment_Defense_4__sortIndex = 14600;
+        public const int Wp_MR_Augment_Defense_4__sortIndex = 14800;
         [SortOrder(Wp_MR_Augment_Defense_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_4__displayName)]
         public virtual byte Wp_MR_Augment_Defense_4_ {
@@ -4101,7 +4157,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string IB_Unk1_displayName = "IB Unk1";
-        public const int IB_Unk1_sortIndex = 14650;
+        public const int IB_Unk1_sortIndex = 14850;
         [SortOrder(IB_Unk1_sortIndex)]
         [DisplayName(IB_Unk1_displayName)]
         public virtual byte IB_Unk1 {
@@ -4115,7 +4171,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string IB_Unk2_displayName = "IB Unk2";
-        public const int IB_Unk2_sortIndex = 14700;
+        public const int IB_Unk2_sortIndex = 14900;
         [SortOrder(IB_Unk2_sortIndex)]
         [DisplayName(IB_Unk2_displayName)]
         public virtual byte IB_Unk2 {
@@ -4129,7 +4185,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string IB_Unk3_displayName = "IB Unk3";
-        public const int IB_Unk3_sortIndex = 14750;
+        public const int IB_Unk3_sortIndex = 14950;
         [SortOrder(IB_Unk3_sortIndex)]
         [DisplayName(IB_Unk3_displayName)]
         public virtual byte IB_Unk3 {
@@ -4143,7 +4199,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string IB_Unk4_displayName = "IB Unk4";
-        public const int IB_Unk4_sortIndex = 14800;
+        public const int IB_Unk4_sortIndex = 15000;
         [SortOrder(IB_Unk4_sortIndex)]
         [DisplayName(IB_Unk4_displayName)]
         public virtual byte IB_Unk4 {
@@ -4157,7 +4213,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Defense_Percent_Reduction_1__displayName = "Wp MR Augment Defense Percent Reduction (1)";
-        public const int Wp_MR_Augment_Defense_Percent_Reduction_1__sortIndex = 14850;
+        public const int Wp_MR_Augment_Defense_Percent_Reduction_1__sortIndex = 15050;
         [SortOrder(Wp_MR_Augment_Defense_Percent_Reduction_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Percent_Reduction_1__displayName)]
         public virtual float Wp_MR_Augment_Defense_Percent_Reduction_1_ {
@@ -4171,7 +4227,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Defense_Percent_Reduction_2__displayName = "Wp MR Augment Defense Percent Reduction (2)";
-        public const int Wp_MR_Augment_Defense_Percent_Reduction_2__sortIndex = 14900;
+        public const int Wp_MR_Augment_Defense_Percent_Reduction_2__sortIndex = 15100;
         [SortOrder(Wp_MR_Augment_Defense_Percent_Reduction_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Percent_Reduction_2__displayName)]
         public virtual float Wp_MR_Augment_Defense_Percent_Reduction_2_ {
@@ -4185,7 +4241,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Defense_Percent_Reduction_3__displayName = "Wp MR Augment Defense Percent Reduction (3)";
-        public const int Wp_MR_Augment_Defense_Percent_Reduction_3__sortIndex = 14950;
+        public const int Wp_MR_Augment_Defense_Percent_Reduction_3__sortIndex = 15150;
         [SortOrder(Wp_MR_Augment_Defense_Percent_Reduction_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Percent_Reduction_3__displayName)]
         public virtual float Wp_MR_Augment_Defense_Percent_Reduction_3_ {
@@ -4199,7 +4255,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Defense_Percent_Activation_displayName = "Wp MR Augment Defense Percent Activation";
-        public const int Wp_MR_Augment_Defense_Percent_Activation_sortIndex = 15000;
+        public const int Wp_MR_Augment_Defense_Percent_Activation_sortIndex = 15200;
         [SortOrder(Wp_MR_Augment_Defense_Percent_Activation_sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Percent_Activation_displayName)]
         public virtual float Wp_MR_Augment_Defense_Percent_Activation {
@@ -4213,7 +4269,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Health_Percent_1__displayName = "Wp MR Augment Health Percent (1)";
-        public const int Wp_MR_Augment_Health_Percent_1__sortIndex = 15050;
+        public const int Wp_MR_Augment_Health_Percent_1__sortIndex = 15250;
         [SortOrder(Wp_MR_Augment_Health_Percent_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Health_Percent_1__displayName)]
         public virtual float Wp_MR_Augment_Health_Percent_1_ {
@@ -4227,7 +4283,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Health_Percent_2__displayName = "Wp MR Augment Health Percent (2)";
-        public const int Wp_MR_Augment_Health_Percent_2__sortIndex = 15100;
+        public const int Wp_MR_Augment_Health_Percent_2__sortIndex = 15300;
         [SortOrder(Wp_MR_Augment_Health_Percent_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Health_Percent_2__displayName)]
         public virtual float Wp_MR_Augment_Health_Percent_2_ {
@@ -4241,7 +4297,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Health_Percent_3__displayName = "Wp MR Augment Health Percent (3)";
-        public const int Wp_MR_Augment_Health_Percent_3__sortIndex = 15150;
+        public const int Wp_MR_Augment_Health_Percent_3__sortIndex = 15350;
         [SortOrder(Wp_MR_Augment_Health_Percent_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Health_Percent_3__displayName)]
         public virtual float Wp_MR_Augment_Health_Percent_3_ {
@@ -4255,7 +4311,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Health_Percent_4__displayName = "Wp MR Augment Health Percent (4)";
-        public const int Wp_MR_Augment_Health_Percent_4__sortIndex = 15200;
+        public const int Wp_MR_Augment_Health_Percent_4__sortIndex = 15400;
         [SortOrder(Wp_MR_Augment_Health_Percent_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Health_Percent_4__displayName)]
         public virtual float Wp_MR_Augment_Health_Percent_4_ {
@@ -4269,7 +4325,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string IB_Unk5_displayName = "IB Unk5";
-        public const int IB_Unk5_sortIndex = 15250;
+        public const int IB_Unk5_sortIndex = 15450;
         [SortOrder(IB_Unk5_sortIndex)]
         [DisplayName(IB_Unk5_displayName)]
         public virtual float IB_Unk5 {
@@ -4283,7 +4339,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Lifesteal_Cooldown_displayName = "Wp MR Augment Lifesteal Cooldown";
-        public const int Wp_MR_Augment_Lifesteal_Cooldown_sortIndex = 15300;
+        public const int Wp_MR_Augment_Lifesteal_Cooldown_sortIndex = 15500;
         [SortOrder(Wp_MR_Augment_Lifesteal_Cooldown_sortIndex)]
         [DisplayName(Wp_MR_Augment_Lifesteal_Cooldown_displayName)]
         public virtual float Wp_MR_Augment_Lifesteal_Cooldown {
@@ -4297,7 +4353,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Element_1__displayName = "Wp MR Augment Element (1)";
-        public const int Wp_MR_Augment_Element_1__sortIndex = 15350;
+        public const int Wp_MR_Augment_Element_1__sortIndex = 15550;
         [SortOrder(Wp_MR_Augment_Element_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Element_1__displayName)]
         public virtual byte Wp_MR_Augment_Element_1_ {
@@ -4311,7 +4367,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Element_2__displayName = "Wp MR Augment Element (2)";
-        public const int Wp_MR_Augment_Element_2__sortIndex = 15400;
+        public const int Wp_MR_Augment_Element_2__sortIndex = 15600;
         [SortOrder(Wp_MR_Augment_Element_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Element_2__displayName)]
         public virtual byte Wp_MR_Augment_Element_2_ {
@@ -4325,7 +4381,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Element_3__displayName = "Wp MR Augment Element (3)";
-        public const int Wp_MR_Augment_Element_3__sortIndex = 15450;
+        public const int Wp_MR_Augment_Element_3__sortIndex = 15650;
         [SortOrder(Wp_MR_Augment_Element_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Element_3__displayName)]
         public virtual byte Wp_MR_Augment_Element_3_ {
@@ -4339,7 +4395,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Wp_MR_Augment_Element_4__displayName = "Wp MR Augment Element (4)";
-        public const int Wp_MR_Augment_Element_4__sortIndex = 15500;
+        public const int Wp_MR_Augment_Element_4__sortIndex = 15700;
         [SortOrder(Wp_MR_Augment_Element_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Element_4__displayName)]
         public virtual byte Wp_MR_Augment_Element_4_ {
@@ -4352,6 +4408,6 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const int lastSortIndex = 15550;
+        public const int lastSortIndex = 15750;
     }
 }

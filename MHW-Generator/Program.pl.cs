@@ -183,8 +183,12 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Hyper Armor Stun Damage Rate", 742, typeof(float)),
                 new MhwStructData.Entry("Gunner Defense Rate", 746, typeof(float)),
                 new MhwStructData.Entry("Gunner Elemental Resistance Bonus", 750, typeof(byte)),
+                new MhwStructData.Entry("Lava Damage Interval Time", 751, typeof(float)),
+                new MhwStructData.Entry("Lava Damage Damage", 755, typeof(float)),
+                new MhwStructData.Entry("Acid Damage Interval Time", 759, typeof(float)),
+                new MhwStructData.Entry("Acid Damage Damage", 763, typeof(float)),
 
-                new MhwStructData.Entry($"------Skipping ahead {o++}.", 751, typeof(float))
+                new MhwStructData.Entry($"------Skipping ahead {o++}.", 764, typeof(byte))
             };
 
             const ulong iFramesStartOffset = 1157;

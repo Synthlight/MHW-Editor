@@ -159,7 +159,11 @@ namespace MHW_Editor.PlData {
         public float Hyper_Armor_Stun_Damage_Rate; // Offset: 742
         public float Gunner_Defense_Rate; // Offset: 746
         public byte Gunner_Elemental_Resistance_Bonus; // Offset: 750
-        public float _Skipping_ahead_2_; // Offset: 751
+        public float Lava_Damage_Interval_Time; // Offset: 751
+        public float Lava_Damage_Damage; // Offset: 755
+        public float Acid_Damage_Interval_Time; // Offset: 759
+        public float Acid_Damage_Damage; // Offset: 763
+        public byte _Skipping_ahead_2_; // Offset: 764
         public float Dodge_IFrames_Normal_Evasion_0; // Offset: 1157
         public float Dodge_IFrames_Normal_Evasion_1; // Offset: 1161
         public float Dodge_IFrames_Normal_Evasion_2; // Offset: 1165
