@@ -12,6 +12,7 @@ using MHW_Template;
 
 namespace <#= _namespace #> {
     // Struct Size: "<#= structData.size #>"
+    // Initial Offset: "<#= structData.offsetInitial #>"
     // Unique Id Formula: "<#= structData.uniqueIdFormula #>"
     public struct <#= className #> {
 <#

@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Weapons {
     // Struct Size: "7"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Id}"
     public struct WeaponSwitchAxe {
         public uint Id; // Offset: 0

@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Weapons {
     // Struct Size: "24"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Aug_Category}|{Aug_Level}"
     public struct NewLimitBreak {
         public uint Aug_Category; // Offset: 0

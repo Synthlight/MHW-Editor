@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Items {
     // Struct Size: "24"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Index}"
     public struct SteamRewardList {
         public int Unk1; // Offset: 0

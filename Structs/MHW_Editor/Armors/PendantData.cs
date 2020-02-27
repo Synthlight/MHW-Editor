@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Armors {
     // Struct Size: "27"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Id}"
     public struct PendantData {
         public uint Id; // Offset: 0

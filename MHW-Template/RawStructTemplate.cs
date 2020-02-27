@@ -42,23 +42,30 @@ namespace MHW_Template
             
             #line default
             #line hidden
-            this.Write("\"\r\n    // Unique Id Formula: \"");
+            this.Write("\"\r\n    // Initial Offset: \"");
             
             #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(structData.offsetInitial));
+            
+            #line default
+            #line hidden
+            this.Write("\"\r\n    // Unique Id Formula: \"");
+            
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.uniqueIdFormula));
             
             #line default
             #line hidden
             this.Write("\"\r\n    public struct ");
             
-            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
             #line hidden
             this.Write(" {\r\n");
             
-            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            #line 18 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
 
     var compiler = new CSharpCodeProvider();
     var newList = new List<MhwStructData.Entry>(structData.entries);
@@ -73,28 +80,28 @@ namespace MHW_Template
             #line hidden
             this.Write("        public ");
             
-            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(typeString));
             
             #line default
             #line hidden
             this.Write(" ");
             
-            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(name));
             
             #line default
             #line hidden
             this.Write("; // Offset: ");
             
-            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.offset));
             
             #line default
             #line hidden
             this.Write("\r\n");
             
-            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            #line 28 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
 
     }
 

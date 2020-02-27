@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.PlData {
     // Struct Size: "512"
+    // Initial Offset: "0"
     // Unique Id Formula: "0"
     public struct PlItemParam {
         public float Powder_Radius; // Offset: 8

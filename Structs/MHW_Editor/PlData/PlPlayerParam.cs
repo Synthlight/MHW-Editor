@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.PlData {
     // Struct Size: "20640"
+    // Initial Offset: "0"
     // Unique Id Formula: "0"
     public struct PlPlayerParam {
         public float Unk1; // Offset: 8

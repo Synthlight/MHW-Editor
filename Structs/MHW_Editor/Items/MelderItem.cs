@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Items {
     // Struct Size: "21"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Index}"
     public struct MelderItem {
         public uint Result_Item_Id; // Offset: 0

@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Monster {
     // Struct Size: "144"
+    // Initial Offset: "0"
     // Unique Id Formula: "0"
     public struct MonsterEnrage {
         public uint Monster_Id; // Offset: 8

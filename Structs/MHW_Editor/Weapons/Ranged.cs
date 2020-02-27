@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Weapons {
     // Struct Size: "69"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Id}"
     public struct Ranged {
         public uint Index; // Offset: 0

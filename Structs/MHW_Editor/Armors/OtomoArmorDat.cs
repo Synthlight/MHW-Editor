@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Armors {
     // Struct Size: "42"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Set_Id}|{Variant}|{Equip_Slot}"
     public struct OtomoArmorDat {
         public uint Index; // Offset: 0

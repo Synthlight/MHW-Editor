@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Weapons {
     // Struct Size: "14"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Index}"
     public struct LimitBreakMaterialBase {
         public byte Rarity; // Offset: 0

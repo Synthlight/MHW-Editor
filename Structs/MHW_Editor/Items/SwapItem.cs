@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Items {
     // Struct Size: "26"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Index}"
     public struct SwapItem {
         public uint Unk1; // Offset: 0

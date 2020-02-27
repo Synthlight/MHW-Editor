@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Weapons {
     // Struct Size: "28"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Id}"
     public struct RodInsect {
         public uint Index; // Offset: 0

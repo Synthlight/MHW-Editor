@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Gems {
     // Struct Size: "28"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Id}"
     public struct Gem {
         public ushort Id; // Offset: 0

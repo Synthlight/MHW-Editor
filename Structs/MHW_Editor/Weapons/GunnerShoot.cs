@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Weapons {
     // Struct Size: "5"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Id}"
     public struct GunnerShoot {
         public byte No_Mods; // Offset: 0

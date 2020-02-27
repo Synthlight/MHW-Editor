@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Armors {
     // Struct Size: "28"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Mantle_Id}"
     public struct ASkill {
         public uint Icon_Id; // Offset: 0

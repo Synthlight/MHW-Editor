@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Items {
     // Struct Size: "56"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Index}"
     public struct ValueTrader {
         public uint Item_Id; // Offset: 4

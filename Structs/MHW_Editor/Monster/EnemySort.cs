@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Monster {
     // Struct Size: "56"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Index}"
     public struct EnemySort {
         public int Unk1; // Offset: 0

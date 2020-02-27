@@ -2,6 +2,7 @@ using MHW_Template;
 
 namespace MHW_Editor.Gems {
     // Struct Size: "52"
+    // Initial Offset: "10"
     // Unique Id Formula: "{Item_Id}"
     public struct DecoLottery {
         public uint Index; // Offset: 0
