@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MHW_Template;
 
 namespace MHW_Generator {
@@ -98,10 +99,8 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Focus (Charge Blade, Phial Charge Slash) Time Rate 2", 238, typeof(float)),
                 new MhwStructData.Entry("Focus (Charge Blade, Phial Charge Slash) Time Rate 3", 242, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true)
             };
-
-            const ulong punishingDrawOffset = 246;
 
             var weapons = new List<string> {
                 "Great Sword",
@@ -130,8 +129,94 @@ namespace MHW_Generator {
             };
 
             for (var x = 0; x < weapons.Count; x++) {
-                for (var s = 0; s < weaponDrawParams.Count; s++) {
-                    entries.Add(new MhwStructData.Entry($"Punishing Draw ({weapons[x]}) {weaponDrawParams[s]}", punishingDrawOffset + (ulong) s * 2 + (ulong) x * 12, typeof(ushort)));
+                entries.AddRange(weaponDrawParams.Select((param, s) => new MhwStructData.Entry($"Punishing Draw ({weapons[x]}) {param}", 246 + (ulong) s * 2 + (ulong) x * 12, typeof(ushort))));
+
+                entries.Add(new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true));
+            }
+
+            entries.AddRange(new List<MhwStructData.Entry> {
+                new MhwStructData.Entry("Razor Sharp: Sharpness No Reduce %", 414, typeof(byte)),
+                new MhwStructData.Entry("Razor Sharp: Gunlance Shot Sub Value", 415, typeof(byte)),
+                new MhwStructData.Entry("Razor Sharp: Gunlance Shot No Reduce %", 416, typeof(byte)),
+                new MhwStructData.Entry("Razor Sharp: Gun Ammo No Reduce %", 417, typeof(byte)),
+                new MhwStructData.Entry("Razor Sharp: Bow Coating No Reduce %", 418, typeof(byte)),
+                new MhwStructData.Entry("Razor Sharp: IB Unk", 419, typeof(byte)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+
+                new MhwStructData.Entry("True Razor Sharp: Sharpness No Reduce %", 420, typeof(byte)),
+                new MhwStructData.Entry("True Razor Sharp: Gunlance Shot Sub Value", 421, typeof(byte)),
+                new MhwStructData.Entry("True Razor Sharp: Gunlance Shot No Reduce %", 422, typeof(byte)),
+                new MhwStructData.Entry("True Razor Sharp: Gun Ammo No Reduce %", 423, typeof(byte)),
+                new MhwStructData.Entry("True Razor Sharp: Bow Coating No Reduce %", 424, typeof(byte)),
+                new MhwStructData.Entry("True Razor Sharp: IB Unk", 425, typeof(byte)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+
+                new MhwStructData.Entry("Minds Eye / Ballistics: Gun Critical Begin Wide Rate", 426, typeof(float)),
+                new MhwStructData.Entry("Minds Eye / Ballistics: Gun Critical End Wide Rate", 430, typeof(float)),
+                new MhwStructData.Entry("Minds Eye / Ballistics: Bow Critical Begin Wide Rate", 434, typeof(float)),
+                new MhwStructData.Entry("Minds Eye / Ballistics: Bow Critical End Wide Rate", 438, typeof(float)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true)
+            });
+
+            entries.AddRange(weapons.Select((weapon, x) => new MhwStructData.Entry($"Critical Element: ({weapon}) Rate", 442 + (ulong) x * 4, typeof(float))));
+            entries.Add(new MhwStructData.Entry("Critical Element: Dragon Seal Rate", 498, typeof(float)));
+
+            entries.Add(new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true));
+
+            entries.AddRange(weapons.Select((weapon, x) => new MhwStructData.Entry($"True Critical Element: ({weapon}) Rate", 502 + (ulong) x * 4, typeof(float))));
+            entries.Add(new MhwStructData.Entry("True Critical Element: Dragon Seal Rate", 558, typeof(float)));
+
+            entries.Add(new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true));
+
+            entries.AddRange(weapons.Select((weapon, x) => new MhwStructData.Entry($"Critical Condition: ({weapon}) Rate", 562 + (ulong) x * 4, typeof(float))));
+
+            entries.Add(new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true));
+
+            entries.AddRange(weapons.Select((weapon, x) => new MhwStructData.Entry($"True Critical Condition: ({weapon}) Rate", 618 + (ulong) x * 4, typeof(float))));
+
+            entries.AddRange(new List<MhwStructData.Entry> {
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+
+                new MhwStructData.Entry("Bludgeoner: Red Sharpness Attack Bonus", 674, typeof(ushort)),
+                new MhwStructData.Entry("Bludgeoner: Orange Sharpness Attack Bonus", 676, typeof(ushort)),
+                new MhwStructData.Entry("Bludgeoner: Yellow Sharpness Attack Bonus", 678, typeof(ushort)),
+                new MhwStructData.Entry("Bludgeoner: Green Sharpness Attack Bonus", 680, typeof(ushort)),
+                new MhwStructData.Entry("Bludgeoner: Blue Sharpness Attack Bonus", 682, typeof(ushort)),
+                new MhwStructData.Entry("Bludgeoner: White Sharpness Attack Bonus", 684, typeof(ushort)),
+                new MhwStructData.Entry("Bludgeoner: Purple Sharpness Attack Bonus", 686, typeof(ushort)),
+                new MhwStructData.Entry("Bludgeoner: Bowgun Melee Attack Stun Bonus", 688, typeof(ushort)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+
+                new MhwStructData.Entry("Non-Elemental Boost: Attack Multiplier", 690, typeof(float)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+
+                new MhwStructData.Entry("Affinity Slider: Attack Up Activate Time", 694, typeof(float)),
+                new MhwStructData.Entry("Affinity Slider: Attack Up Duration", 698, typeof(float)),
+                new MhwStructData.Entry("Affinity Slider: Attack Critical Bonus", 702, typeof(byte)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true)
+            });
+
+            var artilleryBonusParams = new List<string> {
+                "Gunlance Shell Attack Rate",
+                "Gunlance WyvernFire Attack Rate",
+                "Gunlance Wyrmstake Blast Attack Rate",
+                "Gunlance WyvernFire Cooldown Time Rate",
+                "Charge Blade Impact Phial Attack Rate",
+                "Bowgun Sticky Ammo Attack Rate",
+                "Bowgun Kakusan Attack Rate",
+                "Bowgun Wyvern Attack Rate",
+                "LBG Set Bomb Attack Rate"
+            };
+
+            for (var x = 0; x < artilleryBonusParams.Count; x++) {
+                for (var s = 0; s < 5; s++) {
+                    entries.Add(new MhwStructData.Entry($"Artillery: {artilleryBonusParams[x]} {s + 1}", 703 + (ulong) s * 4 + (ulong) x * 20, typeof(float)));
                 }
 
                 entries.Add(new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true));
@@ -565,8 +650,6 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true)
             };
 
-            const ulong iFramesStartOffset = 1157;
-
             var iFrameEntries = new List<string> {
                 "Normal",
                 "Step",
@@ -591,14 +674,10 @@ namespace MHW_Generator {
             };
 
             for (var x = 0; x < iFrameEntries.Count; x++) {
-                for (var s = 0; s < iFrameSubEntries.Count; s++) {
-                    entries.Add(new MhwStructData.Entry($"Dodge IFrames: {iFrameEntries[x]}: {iFrameSubEntries[s]}", iFramesStartOffset + (ulong) s * 4 + (ulong) x * 28, typeof(float)));
-                }
+                entries.AddRange(iFrameSubEntries.Select((sub, s) => new MhwStructData.Entry($"Dodge IFrames: {iFrameEntries[x]}: {sub}", 1157 + (ulong) s * 4 + (ulong) x * 28, typeof(float))));
             }
 
             entries.Add(new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true));
-
-            const ulong evadeDistanceStartOffset = 1437;
 
             var evadeDistanceEntries = new List<string> {
                 "Normal",
@@ -621,9 +700,7 @@ namespace MHW_Generator {
             };
 
             for (var x = 0; x < evadeDistanceEntries.Count; x++) {
-                for (var s = 0; s < evadeDistanceSubEntries.Count; s++) {
-                    entries.Add(new MhwStructData.Entry($"Evade: {evadeDistanceEntries[x]}: {evadeDistanceSubEntries[s]}", evadeDistanceStartOffset + (ulong) s * 4 + (ulong) x * 12, typeof(float)));
-                }
+                entries.AddRange(evadeDistanceSubEntries.Select((sub, s) => new MhwStructData.Entry($"Evade: {evadeDistanceEntries[x]}: {sub}", 1437 + (ulong) s * 4 + (ulong) x * 12, typeof(float))));
             }
 
             entries.AddRange(new List<MhwStructData.Entry> {

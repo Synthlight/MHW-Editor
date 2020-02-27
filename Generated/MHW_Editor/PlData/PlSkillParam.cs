@@ -2292,22 +2292,2008 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string __8600_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __8600_sortIndex = 8600;
-        [SortOrder(__8600_sortIndex)]
-        [DisplayName(__8600_displayName)]
-        public virtual byte __8600 {
+        public const string Razor_Sharp_Sharpness_No_Reduce__displayName = "Razor Sharp: Sharpness No Reduce %";
+        public const int Razor_Sharp_Sharpness_No_Reduce__sortIndex = 8600;
+        [SortOrder(Razor_Sharp_Sharpness_No_Reduce__sortIndex)]
+        [DisplayName(Razor_Sharp_Sharpness_No_Reduce__displayName)]
+        public virtual byte Razor_Sharp_Sharpness_No_Reduce_ {
+            get => GetData<byte>(414);
+            set {
+                if (GetData<byte>(414) == value) return;
+                SetData(414, value, nameof(Razor_Sharp_Sharpness_No_Reduce_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Razor_Sharp_Sharpness_No_Reduce_));
+            }
+        }
+
+        public const string Razor_Sharp_Gunlance_Shot_Sub_Value_displayName = "Razor Sharp: Gunlance Shot Sub Value";
+        public const int Razor_Sharp_Gunlance_Shot_Sub_Value_sortIndex = 8650;
+        [SortOrder(Razor_Sharp_Gunlance_Shot_Sub_Value_sortIndex)]
+        [DisplayName(Razor_Sharp_Gunlance_Shot_Sub_Value_displayName)]
+        public virtual byte Razor_Sharp_Gunlance_Shot_Sub_Value {
+            get => GetData<byte>(415);
+            set {
+                if (GetData<byte>(415) == value) return;
+                SetData(415, value, nameof(Razor_Sharp_Gunlance_Shot_Sub_Value));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Razor_Sharp_Gunlance_Shot_Sub_Value));
+            }
+        }
+
+        public const string Razor_Sharp_Gunlance_Shot_No_Reduce__displayName = "Razor Sharp: Gunlance Shot No Reduce %";
+        public const int Razor_Sharp_Gunlance_Shot_No_Reduce__sortIndex = 8700;
+        [SortOrder(Razor_Sharp_Gunlance_Shot_No_Reduce__sortIndex)]
+        [DisplayName(Razor_Sharp_Gunlance_Shot_No_Reduce__displayName)]
+        public virtual byte Razor_Sharp_Gunlance_Shot_No_Reduce_ {
+            get => GetData<byte>(416);
+            set {
+                if (GetData<byte>(416) == value) return;
+                SetData(416, value, nameof(Razor_Sharp_Gunlance_Shot_No_Reduce_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Razor_Sharp_Gunlance_Shot_No_Reduce_));
+            }
+        }
+
+        public const string Razor_Sharp_Gun_Ammo_No_Reduce__displayName = "Razor Sharp: Gun Ammo No Reduce %";
+        public const int Razor_Sharp_Gun_Ammo_No_Reduce__sortIndex = 8750;
+        [SortOrder(Razor_Sharp_Gun_Ammo_No_Reduce__sortIndex)]
+        [DisplayName(Razor_Sharp_Gun_Ammo_No_Reduce__displayName)]
+        public virtual byte Razor_Sharp_Gun_Ammo_No_Reduce_ {
+            get => GetData<byte>(417);
+            set {
+                if (GetData<byte>(417) == value) return;
+                SetData(417, value, nameof(Razor_Sharp_Gun_Ammo_No_Reduce_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Razor_Sharp_Gun_Ammo_No_Reduce_));
+            }
+        }
+
+        public const string Razor_Sharp_Bow_Coating_No_Reduce__displayName = "Razor Sharp: Bow Coating No Reduce %";
+        public const int Razor_Sharp_Bow_Coating_No_Reduce__sortIndex = 8800;
+        [SortOrder(Razor_Sharp_Bow_Coating_No_Reduce__sortIndex)]
+        [DisplayName(Razor_Sharp_Bow_Coating_No_Reduce__displayName)]
+        public virtual byte Razor_Sharp_Bow_Coating_No_Reduce_ {
+            get => GetData<byte>(418);
+            set {
+                if (GetData<byte>(418) == value) return;
+                SetData(418, value, nameof(Razor_Sharp_Bow_Coating_No_Reduce_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Razor_Sharp_Bow_Coating_No_Reduce_));
+            }
+        }
+
+        public const string Razor_Sharp_IB_Unk_displayName = "Razor Sharp: IB Unk";
+        public const int Razor_Sharp_IB_Unk_sortIndex = 8850;
+        [SortOrder(Razor_Sharp_IB_Unk_sortIndex)]
+        [DisplayName(Razor_Sharp_IB_Unk_displayName)]
+        public virtual byte Razor_Sharp_IB_Unk {
+            get => GetData<byte>(419);
+            set {
+                if (GetData<byte>(419) == value) return;
+                SetData(419, value, nameof(Razor_Sharp_IB_Unk));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Razor_Sharp_IB_Unk));
+            }
+        }
+
+        public const string __8900_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __8900_sortIndex = 8900;
+        [SortOrder(__8900_sortIndex)]
+        [DisplayName(__8900_displayName)]
+        public virtual byte __8900 {
             get => GetData<byte>(3);
         }
 
-        public const string _Skipping_the_rest__8650_displayName = "------Skipping the rest.";
-        public const int _Skipping_the_rest__8650_sortIndex = 8650;
-        [SortOrder(_Skipping_the_rest__8650_sortIndex)]
-        [DisplayName(_Skipping_the_rest__8650_displayName)]
-        public virtual byte _Skipping_the_rest__8650 {
+        public const string True_Razor_Sharp_Sharpness_No_Reduce__displayName = "True Razor Sharp: Sharpness No Reduce %";
+        public const int True_Razor_Sharp_Sharpness_No_Reduce__sortIndex = 8950;
+        [SortOrder(True_Razor_Sharp_Sharpness_No_Reduce__sortIndex)]
+        [DisplayName(True_Razor_Sharp_Sharpness_No_Reduce__displayName)]
+        public virtual byte True_Razor_Sharp_Sharpness_No_Reduce_ {
+            get => GetData<byte>(420);
+            set {
+                if (GetData<byte>(420) == value) return;
+                SetData(420, value, nameof(True_Razor_Sharp_Sharpness_No_Reduce_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Razor_Sharp_Sharpness_No_Reduce_));
+            }
+        }
+
+        public const string True_Razor_Sharp_Gunlance_Shot_Sub_Value_displayName = "True Razor Sharp: Gunlance Shot Sub Value";
+        public const int True_Razor_Sharp_Gunlance_Shot_Sub_Value_sortIndex = 9000;
+        [SortOrder(True_Razor_Sharp_Gunlance_Shot_Sub_Value_sortIndex)]
+        [DisplayName(True_Razor_Sharp_Gunlance_Shot_Sub_Value_displayName)]
+        public virtual byte True_Razor_Sharp_Gunlance_Shot_Sub_Value {
+            get => GetData<byte>(421);
+            set {
+                if (GetData<byte>(421) == value) return;
+                SetData(421, value, nameof(True_Razor_Sharp_Gunlance_Shot_Sub_Value));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Razor_Sharp_Gunlance_Shot_Sub_Value));
+            }
+        }
+
+        public const string True_Razor_Sharp_Gunlance_Shot_No_Reduce__displayName = "True Razor Sharp: Gunlance Shot No Reduce %";
+        public const int True_Razor_Sharp_Gunlance_Shot_No_Reduce__sortIndex = 9050;
+        [SortOrder(True_Razor_Sharp_Gunlance_Shot_No_Reduce__sortIndex)]
+        [DisplayName(True_Razor_Sharp_Gunlance_Shot_No_Reduce__displayName)]
+        public virtual byte True_Razor_Sharp_Gunlance_Shot_No_Reduce_ {
+            get => GetData<byte>(422);
+            set {
+                if (GetData<byte>(422) == value) return;
+                SetData(422, value, nameof(True_Razor_Sharp_Gunlance_Shot_No_Reduce_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Razor_Sharp_Gunlance_Shot_No_Reduce_));
+            }
+        }
+
+        public const string True_Razor_Sharp_Gun_Ammo_No_Reduce__displayName = "True Razor Sharp: Gun Ammo No Reduce %";
+        public const int True_Razor_Sharp_Gun_Ammo_No_Reduce__sortIndex = 9100;
+        [SortOrder(True_Razor_Sharp_Gun_Ammo_No_Reduce__sortIndex)]
+        [DisplayName(True_Razor_Sharp_Gun_Ammo_No_Reduce__displayName)]
+        public virtual byte True_Razor_Sharp_Gun_Ammo_No_Reduce_ {
+            get => GetData<byte>(423);
+            set {
+                if (GetData<byte>(423) == value) return;
+                SetData(423, value, nameof(True_Razor_Sharp_Gun_Ammo_No_Reduce_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Razor_Sharp_Gun_Ammo_No_Reduce_));
+            }
+        }
+
+        public const string True_Razor_Sharp_Bow_Coating_No_Reduce__displayName = "True Razor Sharp: Bow Coating No Reduce %";
+        public const int True_Razor_Sharp_Bow_Coating_No_Reduce__sortIndex = 9150;
+        [SortOrder(True_Razor_Sharp_Bow_Coating_No_Reduce__sortIndex)]
+        [DisplayName(True_Razor_Sharp_Bow_Coating_No_Reduce__displayName)]
+        public virtual byte True_Razor_Sharp_Bow_Coating_No_Reduce_ {
+            get => GetData<byte>(424);
+            set {
+                if (GetData<byte>(424) == value) return;
+                SetData(424, value, nameof(True_Razor_Sharp_Bow_Coating_No_Reduce_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Razor_Sharp_Bow_Coating_No_Reduce_));
+            }
+        }
+
+        public const string True_Razor_Sharp_IB_Unk_displayName = "True Razor Sharp: IB Unk";
+        public const int True_Razor_Sharp_IB_Unk_sortIndex = 9200;
+        [SortOrder(True_Razor_Sharp_IB_Unk_sortIndex)]
+        [DisplayName(True_Razor_Sharp_IB_Unk_displayName)]
+        public virtual byte True_Razor_Sharp_IB_Unk {
+            get => GetData<byte>(425);
+            set {
+                if (GetData<byte>(425) == value) return;
+                SetData(425, value, nameof(True_Razor_Sharp_IB_Unk));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Razor_Sharp_IB_Unk));
+            }
+        }
+
+        public const string __9250_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __9250_sortIndex = 9250;
+        [SortOrder(__9250_sortIndex)]
+        [DisplayName(__9250_displayName)]
+        public virtual byte __9250 {
             get => GetData<byte>(3);
         }
 
-        public const int lastSortIndex = 8700;
+        public const string Minds_Eye_Ballistics_Gun_Critical_Begin_Wide_Rate_displayName = "Minds Eye / Ballistics: Gun Critical Begin Wide Rate";
+        public const int Minds_Eye_Ballistics_Gun_Critical_Begin_Wide_Rate_sortIndex = 9300;
+        [SortOrder(Minds_Eye_Ballistics_Gun_Critical_Begin_Wide_Rate_sortIndex)]
+        [DisplayName(Minds_Eye_Ballistics_Gun_Critical_Begin_Wide_Rate_displayName)]
+        public virtual float Minds_Eye_Ballistics_Gun_Critical_Begin_Wide_Rate {
+            get => GetData<float>(426);
+            set {
+                if (GetData<float>(426) == value) return;
+                SetData(426, value, nameof(Minds_Eye_Ballistics_Gun_Critical_Begin_Wide_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Minds_Eye_Ballistics_Gun_Critical_Begin_Wide_Rate));
+            }
+        }
+
+        public const string Minds_Eye_Ballistics_Gun_Critical_End_Wide_Rate_displayName = "Minds Eye / Ballistics: Gun Critical End Wide Rate";
+        public const int Minds_Eye_Ballistics_Gun_Critical_End_Wide_Rate_sortIndex = 9350;
+        [SortOrder(Minds_Eye_Ballistics_Gun_Critical_End_Wide_Rate_sortIndex)]
+        [DisplayName(Minds_Eye_Ballistics_Gun_Critical_End_Wide_Rate_displayName)]
+        public virtual float Minds_Eye_Ballistics_Gun_Critical_End_Wide_Rate {
+            get => GetData<float>(430);
+            set {
+                if (GetData<float>(430) == value) return;
+                SetData(430, value, nameof(Minds_Eye_Ballistics_Gun_Critical_End_Wide_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Minds_Eye_Ballistics_Gun_Critical_End_Wide_Rate));
+            }
+        }
+
+        public const string Minds_Eye_Ballistics_Bow_Critical_Begin_Wide_Rate_displayName = "Minds Eye / Ballistics: Bow Critical Begin Wide Rate";
+        public const int Minds_Eye_Ballistics_Bow_Critical_Begin_Wide_Rate_sortIndex = 9400;
+        [SortOrder(Minds_Eye_Ballistics_Bow_Critical_Begin_Wide_Rate_sortIndex)]
+        [DisplayName(Minds_Eye_Ballistics_Bow_Critical_Begin_Wide_Rate_displayName)]
+        public virtual float Minds_Eye_Ballistics_Bow_Critical_Begin_Wide_Rate {
+            get => GetData<float>(434);
+            set {
+                if (GetData<float>(434) == value) return;
+                SetData(434, value, nameof(Minds_Eye_Ballistics_Bow_Critical_Begin_Wide_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Minds_Eye_Ballistics_Bow_Critical_Begin_Wide_Rate));
+            }
+        }
+
+        public const string Minds_Eye_Ballistics_Bow_Critical_End_Wide_Rate_displayName = "Minds Eye / Ballistics: Bow Critical End Wide Rate";
+        public const int Minds_Eye_Ballistics_Bow_Critical_End_Wide_Rate_sortIndex = 9450;
+        [SortOrder(Minds_Eye_Ballistics_Bow_Critical_End_Wide_Rate_sortIndex)]
+        [DisplayName(Minds_Eye_Ballistics_Bow_Critical_End_Wide_Rate_displayName)]
+        public virtual float Minds_Eye_Ballistics_Bow_Critical_End_Wide_Rate {
+            get => GetData<float>(438);
+            set {
+                if (GetData<float>(438) == value) return;
+                SetData(438, value, nameof(Minds_Eye_Ballistics_Bow_Critical_End_Wide_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Minds_Eye_Ballistics_Bow_Critical_End_Wide_Rate));
+            }
+        }
+
+        public const string __9500_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __9500_sortIndex = 9500;
+        [SortOrder(__9500_sortIndex)]
+        [DisplayName(__9500_displayName)]
+        public virtual byte __9500 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Critical_Element_Great_Sword_Rate_displayName = "Critical Element: (Great Sword) Rate";
+        public const int Critical_Element_Great_Sword_Rate_sortIndex = 9550;
+        [SortOrder(Critical_Element_Great_Sword_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Great_Sword_Rate_displayName)]
+        public virtual float Critical_Element_Great_Sword_Rate {
+            get => GetData<float>(442);
+            set {
+                if (GetData<float>(442) == value) return;
+                SetData(442, value, nameof(Critical_Element_Great_Sword_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Great_Sword_Rate));
+            }
+        }
+
+        public const string Critical_Element_Sword_Shield_Rate_displayName = "Critical Element: (Sword & Shield) Rate";
+        public const int Critical_Element_Sword_Shield_Rate_sortIndex = 9600;
+        [SortOrder(Critical_Element_Sword_Shield_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Sword_Shield_Rate_displayName)]
+        public virtual float Critical_Element_Sword_Shield_Rate {
+            get => GetData<float>(446);
+            set {
+                if (GetData<float>(446) == value) return;
+                SetData(446, value, nameof(Critical_Element_Sword_Shield_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Sword_Shield_Rate));
+            }
+        }
+
+        public const string Critical_Element_Dual_Blades_Rate_displayName = "Critical Element: (Dual Blades) Rate";
+        public const int Critical_Element_Dual_Blades_Rate_sortIndex = 9650;
+        [SortOrder(Critical_Element_Dual_Blades_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Dual_Blades_Rate_displayName)]
+        public virtual float Critical_Element_Dual_Blades_Rate {
+            get => GetData<float>(450);
+            set {
+                if (GetData<float>(450) == value) return;
+                SetData(450, value, nameof(Critical_Element_Dual_Blades_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Dual_Blades_Rate));
+            }
+        }
+
+        public const string Critical_Element_Long_Sword_Rate_displayName = "Critical Element: (Long Sword) Rate";
+        public const int Critical_Element_Long_Sword_Rate_sortIndex = 9700;
+        [SortOrder(Critical_Element_Long_Sword_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Long_Sword_Rate_displayName)]
+        public virtual float Critical_Element_Long_Sword_Rate {
+            get => GetData<float>(454);
+            set {
+                if (GetData<float>(454) == value) return;
+                SetData(454, value, nameof(Critical_Element_Long_Sword_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Long_Sword_Rate));
+            }
+        }
+
+        public const string Critical_Element_Hammer_Rate_displayName = "Critical Element: (Hammer) Rate";
+        public const int Critical_Element_Hammer_Rate_sortIndex = 9750;
+        [SortOrder(Critical_Element_Hammer_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Hammer_Rate_displayName)]
+        public virtual float Critical_Element_Hammer_Rate {
+            get => GetData<float>(458);
+            set {
+                if (GetData<float>(458) == value) return;
+                SetData(458, value, nameof(Critical_Element_Hammer_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Hammer_Rate));
+            }
+        }
+
+        public const string Critical_Element_Hunting_Horn_Rate_displayName = "Critical Element: (Hunting Horn) Rate";
+        public const int Critical_Element_Hunting_Horn_Rate_sortIndex = 9800;
+        [SortOrder(Critical_Element_Hunting_Horn_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Hunting_Horn_Rate_displayName)]
+        public virtual float Critical_Element_Hunting_Horn_Rate {
+            get => GetData<float>(462);
+            set {
+                if (GetData<float>(462) == value) return;
+                SetData(462, value, nameof(Critical_Element_Hunting_Horn_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Hunting_Horn_Rate));
+            }
+        }
+
+        public const string Critical_Element_Lance_Rate_displayName = "Critical Element: (Lance) Rate";
+        public const int Critical_Element_Lance_Rate_sortIndex = 9850;
+        [SortOrder(Critical_Element_Lance_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Lance_Rate_displayName)]
+        public virtual float Critical_Element_Lance_Rate {
+            get => GetData<float>(466);
+            set {
+                if (GetData<float>(466) == value) return;
+                SetData(466, value, nameof(Critical_Element_Lance_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Lance_Rate));
+            }
+        }
+
+        public const string Critical_Element_Gunlance_Rate_displayName = "Critical Element: (Gunlance) Rate";
+        public const int Critical_Element_Gunlance_Rate_sortIndex = 9900;
+        [SortOrder(Critical_Element_Gunlance_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Gunlance_Rate_displayName)]
+        public virtual float Critical_Element_Gunlance_Rate {
+            get => GetData<float>(470);
+            set {
+                if (GetData<float>(470) == value) return;
+                SetData(470, value, nameof(Critical_Element_Gunlance_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Gunlance_Rate));
+            }
+        }
+
+        public const string Critical_Element_Switch_Axe_Rate_displayName = "Critical Element: (Switch Axe) Rate";
+        public const int Critical_Element_Switch_Axe_Rate_sortIndex = 9950;
+        [SortOrder(Critical_Element_Switch_Axe_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Switch_Axe_Rate_displayName)]
+        public virtual float Critical_Element_Switch_Axe_Rate {
+            get => GetData<float>(474);
+            set {
+                if (GetData<float>(474) == value) return;
+                SetData(474, value, nameof(Critical_Element_Switch_Axe_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Switch_Axe_Rate));
+            }
+        }
+
+        public const string Critical_Element_Charge_Blade_Rate_displayName = "Critical Element: (Charge Blade) Rate";
+        public const int Critical_Element_Charge_Blade_Rate_sortIndex = 10000;
+        [SortOrder(Critical_Element_Charge_Blade_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Charge_Blade_Rate_displayName)]
+        public virtual float Critical_Element_Charge_Blade_Rate {
+            get => GetData<float>(478);
+            set {
+                if (GetData<float>(478) == value) return;
+                SetData(478, value, nameof(Critical_Element_Charge_Blade_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Charge_Blade_Rate));
+            }
+        }
+
+        public const string Critical_Element_Insect_Glaive_Rate_displayName = "Critical Element: (Insect Glaive) Rate";
+        public const int Critical_Element_Insect_Glaive_Rate_sortIndex = 10050;
+        [SortOrder(Critical_Element_Insect_Glaive_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Insect_Glaive_Rate_displayName)]
+        public virtual float Critical_Element_Insect_Glaive_Rate {
+            get => GetData<float>(482);
+            set {
+                if (GetData<float>(482) == value) return;
+                SetData(482, value, nameof(Critical_Element_Insect_Glaive_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Insect_Glaive_Rate));
+            }
+        }
+
+        public const string Critical_Element_Bow_Rate_displayName = "Critical Element: (Bow) Rate";
+        public const int Critical_Element_Bow_Rate_sortIndex = 10100;
+        [SortOrder(Critical_Element_Bow_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Bow_Rate_displayName)]
+        public virtual float Critical_Element_Bow_Rate {
+            get => GetData<float>(486);
+            set {
+                if (GetData<float>(486) == value) return;
+                SetData(486, value, nameof(Critical_Element_Bow_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Bow_Rate));
+            }
+        }
+
+        public const string Critical_Element_HBG_Rate_displayName = "Critical Element: (HBG) Rate";
+        public const int Critical_Element_HBG_Rate_sortIndex = 10150;
+        [SortOrder(Critical_Element_HBG_Rate_sortIndex)]
+        [DisplayName(Critical_Element_HBG_Rate_displayName)]
+        public virtual float Critical_Element_HBG_Rate {
+            get => GetData<float>(490);
+            set {
+                if (GetData<float>(490) == value) return;
+                SetData(490, value, nameof(Critical_Element_HBG_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_HBG_Rate));
+            }
+        }
+
+        public const string Critical_Element_LBG_Rate_displayName = "Critical Element: (LBG) Rate";
+        public const int Critical_Element_LBG_Rate_sortIndex = 10200;
+        [SortOrder(Critical_Element_LBG_Rate_sortIndex)]
+        [DisplayName(Critical_Element_LBG_Rate_displayName)]
+        public virtual float Critical_Element_LBG_Rate {
+            get => GetData<float>(494);
+            set {
+                if (GetData<float>(494) == value) return;
+                SetData(494, value, nameof(Critical_Element_LBG_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_LBG_Rate));
+            }
+        }
+
+        public const string Critical_Element_Dragon_Seal_Rate_displayName = "Critical Element: Dragon Seal Rate";
+        public const int Critical_Element_Dragon_Seal_Rate_sortIndex = 10250;
+        [SortOrder(Critical_Element_Dragon_Seal_Rate_sortIndex)]
+        [DisplayName(Critical_Element_Dragon_Seal_Rate_displayName)]
+        public virtual float Critical_Element_Dragon_Seal_Rate {
+            get => GetData<float>(498);
+            set {
+                if (GetData<float>(498) == value) return;
+                SetData(498, value, nameof(Critical_Element_Dragon_Seal_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Element_Dragon_Seal_Rate));
+            }
+        }
+
+        public const string __10300_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __10300_sortIndex = 10300;
+        [SortOrder(__10300_sortIndex)]
+        [DisplayName(__10300_displayName)]
+        public virtual byte __10300 {
+            get => GetData<byte>(3);
+        }
+
+        public const string True_Critical_Element_Great_Sword_Rate_displayName = "True Critical Element: (Great Sword) Rate";
+        public const int True_Critical_Element_Great_Sword_Rate_sortIndex = 10350;
+        [SortOrder(True_Critical_Element_Great_Sword_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Great_Sword_Rate_displayName)]
+        public virtual float True_Critical_Element_Great_Sword_Rate {
+            get => GetData<float>(502);
+            set {
+                if (GetData<float>(502) == value) return;
+                SetData(502, value, nameof(True_Critical_Element_Great_Sword_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Great_Sword_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_Sword_Shield_Rate_displayName = "True Critical Element: (Sword & Shield) Rate";
+        public const int True_Critical_Element_Sword_Shield_Rate_sortIndex = 10400;
+        [SortOrder(True_Critical_Element_Sword_Shield_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Sword_Shield_Rate_displayName)]
+        public virtual float True_Critical_Element_Sword_Shield_Rate {
+            get => GetData<float>(506);
+            set {
+                if (GetData<float>(506) == value) return;
+                SetData(506, value, nameof(True_Critical_Element_Sword_Shield_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Sword_Shield_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_Dual_Blades_Rate_displayName = "True Critical Element: (Dual Blades) Rate";
+        public const int True_Critical_Element_Dual_Blades_Rate_sortIndex = 10450;
+        [SortOrder(True_Critical_Element_Dual_Blades_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Dual_Blades_Rate_displayName)]
+        public virtual float True_Critical_Element_Dual_Blades_Rate {
+            get => GetData<float>(510);
+            set {
+                if (GetData<float>(510) == value) return;
+                SetData(510, value, nameof(True_Critical_Element_Dual_Blades_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Dual_Blades_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_Long_Sword_Rate_displayName = "True Critical Element: (Long Sword) Rate";
+        public const int True_Critical_Element_Long_Sword_Rate_sortIndex = 10500;
+        [SortOrder(True_Critical_Element_Long_Sword_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Long_Sword_Rate_displayName)]
+        public virtual float True_Critical_Element_Long_Sword_Rate {
+            get => GetData<float>(514);
+            set {
+                if (GetData<float>(514) == value) return;
+                SetData(514, value, nameof(True_Critical_Element_Long_Sword_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Long_Sword_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_Hammer_Rate_displayName = "True Critical Element: (Hammer) Rate";
+        public const int True_Critical_Element_Hammer_Rate_sortIndex = 10550;
+        [SortOrder(True_Critical_Element_Hammer_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Hammer_Rate_displayName)]
+        public virtual float True_Critical_Element_Hammer_Rate {
+            get => GetData<float>(518);
+            set {
+                if (GetData<float>(518) == value) return;
+                SetData(518, value, nameof(True_Critical_Element_Hammer_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Hammer_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_Hunting_Horn_Rate_displayName = "True Critical Element: (Hunting Horn) Rate";
+        public const int True_Critical_Element_Hunting_Horn_Rate_sortIndex = 10600;
+        [SortOrder(True_Critical_Element_Hunting_Horn_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Hunting_Horn_Rate_displayName)]
+        public virtual float True_Critical_Element_Hunting_Horn_Rate {
+            get => GetData<float>(522);
+            set {
+                if (GetData<float>(522) == value) return;
+                SetData(522, value, nameof(True_Critical_Element_Hunting_Horn_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Hunting_Horn_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_Lance_Rate_displayName = "True Critical Element: (Lance) Rate";
+        public const int True_Critical_Element_Lance_Rate_sortIndex = 10650;
+        [SortOrder(True_Critical_Element_Lance_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Lance_Rate_displayName)]
+        public virtual float True_Critical_Element_Lance_Rate {
+            get => GetData<float>(526);
+            set {
+                if (GetData<float>(526) == value) return;
+                SetData(526, value, nameof(True_Critical_Element_Lance_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Lance_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_Gunlance_Rate_displayName = "True Critical Element: (Gunlance) Rate";
+        public const int True_Critical_Element_Gunlance_Rate_sortIndex = 10700;
+        [SortOrder(True_Critical_Element_Gunlance_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Gunlance_Rate_displayName)]
+        public virtual float True_Critical_Element_Gunlance_Rate {
+            get => GetData<float>(530);
+            set {
+                if (GetData<float>(530) == value) return;
+                SetData(530, value, nameof(True_Critical_Element_Gunlance_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Gunlance_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_Switch_Axe_Rate_displayName = "True Critical Element: (Switch Axe) Rate";
+        public const int True_Critical_Element_Switch_Axe_Rate_sortIndex = 10750;
+        [SortOrder(True_Critical_Element_Switch_Axe_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Switch_Axe_Rate_displayName)]
+        public virtual float True_Critical_Element_Switch_Axe_Rate {
+            get => GetData<float>(534);
+            set {
+                if (GetData<float>(534) == value) return;
+                SetData(534, value, nameof(True_Critical_Element_Switch_Axe_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Switch_Axe_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_Charge_Blade_Rate_displayName = "True Critical Element: (Charge Blade) Rate";
+        public const int True_Critical_Element_Charge_Blade_Rate_sortIndex = 10800;
+        [SortOrder(True_Critical_Element_Charge_Blade_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Charge_Blade_Rate_displayName)]
+        public virtual float True_Critical_Element_Charge_Blade_Rate {
+            get => GetData<float>(538);
+            set {
+                if (GetData<float>(538) == value) return;
+                SetData(538, value, nameof(True_Critical_Element_Charge_Blade_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Charge_Blade_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_Insect_Glaive_Rate_displayName = "True Critical Element: (Insect Glaive) Rate";
+        public const int True_Critical_Element_Insect_Glaive_Rate_sortIndex = 10850;
+        [SortOrder(True_Critical_Element_Insect_Glaive_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Insect_Glaive_Rate_displayName)]
+        public virtual float True_Critical_Element_Insect_Glaive_Rate {
+            get => GetData<float>(542);
+            set {
+                if (GetData<float>(542) == value) return;
+                SetData(542, value, nameof(True_Critical_Element_Insect_Glaive_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Insect_Glaive_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_Bow_Rate_displayName = "True Critical Element: (Bow) Rate";
+        public const int True_Critical_Element_Bow_Rate_sortIndex = 10900;
+        [SortOrder(True_Critical_Element_Bow_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Bow_Rate_displayName)]
+        public virtual float True_Critical_Element_Bow_Rate {
+            get => GetData<float>(546);
+            set {
+                if (GetData<float>(546) == value) return;
+                SetData(546, value, nameof(True_Critical_Element_Bow_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Bow_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_HBG_Rate_displayName = "True Critical Element: (HBG) Rate";
+        public const int True_Critical_Element_HBG_Rate_sortIndex = 10950;
+        [SortOrder(True_Critical_Element_HBG_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_HBG_Rate_displayName)]
+        public virtual float True_Critical_Element_HBG_Rate {
+            get => GetData<float>(550);
+            set {
+                if (GetData<float>(550) == value) return;
+                SetData(550, value, nameof(True_Critical_Element_HBG_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_HBG_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_LBG_Rate_displayName = "True Critical Element: (LBG) Rate";
+        public const int True_Critical_Element_LBG_Rate_sortIndex = 11000;
+        [SortOrder(True_Critical_Element_LBG_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_LBG_Rate_displayName)]
+        public virtual float True_Critical_Element_LBG_Rate {
+            get => GetData<float>(554);
+            set {
+                if (GetData<float>(554) == value) return;
+                SetData(554, value, nameof(True_Critical_Element_LBG_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_LBG_Rate));
+            }
+        }
+
+        public const string True_Critical_Element_Dragon_Seal_Rate_displayName = "True Critical Element: Dragon Seal Rate";
+        public const int True_Critical_Element_Dragon_Seal_Rate_sortIndex = 11050;
+        [SortOrder(True_Critical_Element_Dragon_Seal_Rate_sortIndex)]
+        [DisplayName(True_Critical_Element_Dragon_Seal_Rate_displayName)]
+        public virtual float True_Critical_Element_Dragon_Seal_Rate {
+            get => GetData<float>(558);
+            set {
+                if (GetData<float>(558) == value) return;
+                SetData(558, value, nameof(True_Critical_Element_Dragon_Seal_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Element_Dragon_Seal_Rate));
+            }
+        }
+
+        public const string __11100_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __11100_sortIndex = 11100;
+        [SortOrder(__11100_sortIndex)]
+        [DisplayName(__11100_displayName)]
+        public virtual byte __11100 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Critical_Condition_Great_Sword_Rate_displayName = "Critical Condition: (Great Sword) Rate";
+        public const int Critical_Condition_Great_Sword_Rate_sortIndex = 11150;
+        [SortOrder(Critical_Condition_Great_Sword_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_Great_Sword_Rate_displayName)]
+        public virtual float Critical_Condition_Great_Sword_Rate {
+            get => GetData<float>(562);
+            set {
+                if (GetData<float>(562) == value) return;
+                SetData(562, value, nameof(Critical_Condition_Great_Sword_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_Great_Sword_Rate));
+            }
+        }
+
+        public const string Critical_Condition_Sword_Shield_Rate_displayName = "Critical Condition: (Sword & Shield) Rate";
+        public const int Critical_Condition_Sword_Shield_Rate_sortIndex = 11200;
+        [SortOrder(Critical_Condition_Sword_Shield_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_Sword_Shield_Rate_displayName)]
+        public virtual float Critical_Condition_Sword_Shield_Rate {
+            get => GetData<float>(566);
+            set {
+                if (GetData<float>(566) == value) return;
+                SetData(566, value, nameof(Critical_Condition_Sword_Shield_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_Sword_Shield_Rate));
+            }
+        }
+
+        public const string Critical_Condition_Dual_Blades_Rate_displayName = "Critical Condition: (Dual Blades) Rate";
+        public const int Critical_Condition_Dual_Blades_Rate_sortIndex = 11250;
+        [SortOrder(Critical_Condition_Dual_Blades_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_Dual_Blades_Rate_displayName)]
+        public virtual float Critical_Condition_Dual_Blades_Rate {
+            get => GetData<float>(570);
+            set {
+                if (GetData<float>(570) == value) return;
+                SetData(570, value, nameof(Critical_Condition_Dual_Blades_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_Dual_Blades_Rate));
+            }
+        }
+
+        public const string Critical_Condition_Long_Sword_Rate_displayName = "Critical Condition: (Long Sword) Rate";
+        public const int Critical_Condition_Long_Sword_Rate_sortIndex = 11300;
+        [SortOrder(Critical_Condition_Long_Sword_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_Long_Sword_Rate_displayName)]
+        public virtual float Critical_Condition_Long_Sword_Rate {
+            get => GetData<float>(574);
+            set {
+                if (GetData<float>(574) == value) return;
+                SetData(574, value, nameof(Critical_Condition_Long_Sword_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_Long_Sword_Rate));
+            }
+        }
+
+        public const string Critical_Condition_Hammer_Rate_displayName = "Critical Condition: (Hammer) Rate";
+        public const int Critical_Condition_Hammer_Rate_sortIndex = 11350;
+        [SortOrder(Critical_Condition_Hammer_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_Hammer_Rate_displayName)]
+        public virtual float Critical_Condition_Hammer_Rate {
+            get => GetData<float>(578);
+            set {
+                if (GetData<float>(578) == value) return;
+                SetData(578, value, nameof(Critical_Condition_Hammer_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_Hammer_Rate));
+            }
+        }
+
+        public const string Critical_Condition_Hunting_Horn_Rate_displayName = "Critical Condition: (Hunting Horn) Rate";
+        public const int Critical_Condition_Hunting_Horn_Rate_sortIndex = 11400;
+        [SortOrder(Critical_Condition_Hunting_Horn_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_Hunting_Horn_Rate_displayName)]
+        public virtual float Critical_Condition_Hunting_Horn_Rate {
+            get => GetData<float>(582);
+            set {
+                if (GetData<float>(582) == value) return;
+                SetData(582, value, nameof(Critical_Condition_Hunting_Horn_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_Hunting_Horn_Rate));
+            }
+        }
+
+        public const string Critical_Condition_Lance_Rate_displayName = "Critical Condition: (Lance) Rate";
+        public const int Critical_Condition_Lance_Rate_sortIndex = 11450;
+        [SortOrder(Critical_Condition_Lance_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_Lance_Rate_displayName)]
+        public virtual float Critical_Condition_Lance_Rate {
+            get => GetData<float>(586);
+            set {
+                if (GetData<float>(586) == value) return;
+                SetData(586, value, nameof(Critical_Condition_Lance_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_Lance_Rate));
+            }
+        }
+
+        public const string Critical_Condition_Gunlance_Rate_displayName = "Critical Condition: (Gunlance) Rate";
+        public const int Critical_Condition_Gunlance_Rate_sortIndex = 11500;
+        [SortOrder(Critical_Condition_Gunlance_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_Gunlance_Rate_displayName)]
+        public virtual float Critical_Condition_Gunlance_Rate {
+            get => GetData<float>(590);
+            set {
+                if (GetData<float>(590) == value) return;
+                SetData(590, value, nameof(Critical_Condition_Gunlance_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_Gunlance_Rate));
+            }
+        }
+
+        public const string Critical_Condition_Switch_Axe_Rate_displayName = "Critical Condition: (Switch Axe) Rate";
+        public const int Critical_Condition_Switch_Axe_Rate_sortIndex = 11550;
+        [SortOrder(Critical_Condition_Switch_Axe_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_Switch_Axe_Rate_displayName)]
+        public virtual float Critical_Condition_Switch_Axe_Rate {
+            get => GetData<float>(594);
+            set {
+                if (GetData<float>(594) == value) return;
+                SetData(594, value, nameof(Critical_Condition_Switch_Axe_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_Switch_Axe_Rate));
+            }
+        }
+
+        public const string Critical_Condition_Charge_Blade_Rate_displayName = "Critical Condition: (Charge Blade) Rate";
+        public const int Critical_Condition_Charge_Blade_Rate_sortIndex = 11600;
+        [SortOrder(Critical_Condition_Charge_Blade_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_Charge_Blade_Rate_displayName)]
+        public virtual float Critical_Condition_Charge_Blade_Rate {
+            get => GetData<float>(598);
+            set {
+                if (GetData<float>(598) == value) return;
+                SetData(598, value, nameof(Critical_Condition_Charge_Blade_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_Charge_Blade_Rate));
+            }
+        }
+
+        public const string Critical_Condition_Insect_Glaive_Rate_displayName = "Critical Condition: (Insect Glaive) Rate";
+        public const int Critical_Condition_Insect_Glaive_Rate_sortIndex = 11650;
+        [SortOrder(Critical_Condition_Insect_Glaive_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_Insect_Glaive_Rate_displayName)]
+        public virtual float Critical_Condition_Insect_Glaive_Rate {
+            get => GetData<float>(602);
+            set {
+                if (GetData<float>(602) == value) return;
+                SetData(602, value, nameof(Critical_Condition_Insect_Glaive_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_Insect_Glaive_Rate));
+            }
+        }
+
+        public const string Critical_Condition_Bow_Rate_displayName = "Critical Condition: (Bow) Rate";
+        public const int Critical_Condition_Bow_Rate_sortIndex = 11700;
+        [SortOrder(Critical_Condition_Bow_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_Bow_Rate_displayName)]
+        public virtual float Critical_Condition_Bow_Rate {
+            get => GetData<float>(606);
+            set {
+                if (GetData<float>(606) == value) return;
+                SetData(606, value, nameof(Critical_Condition_Bow_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_Bow_Rate));
+            }
+        }
+
+        public const string Critical_Condition_HBG_Rate_displayName = "Critical Condition: (HBG) Rate";
+        public const int Critical_Condition_HBG_Rate_sortIndex = 11750;
+        [SortOrder(Critical_Condition_HBG_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_HBG_Rate_displayName)]
+        public virtual float Critical_Condition_HBG_Rate {
+            get => GetData<float>(610);
+            set {
+                if (GetData<float>(610) == value) return;
+                SetData(610, value, nameof(Critical_Condition_HBG_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_HBG_Rate));
+            }
+        }
+
+        public const string Critical_Condition_LBG_Rate_displayName = "Critical Condition: (LBG) Rate";
+        public const int Critical_Condition_LBG_Rate_sortIndex = 11800;
+        [SortOrder(Critical_Condition_LBG_Rate_sortIndex)]
+        [DisplayName(Critical_Condition_LBG_Rate_displayName)]
+        public virtual float Critical_Condition_LBG_Rate {
+            get => GetData<float>(614);
+            set {
+                if (GetData<float>(614) == value) return;
+                SetData(614, value, nameof(Critical_Condition_LBG_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Critical_Condition_LBG_Rate));
+            }
+        }
+
+        public const string __11850_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __11850_sortIndex = 11850;
+        [SortOrder(__11850_sortIndex)]
+        [DisplayName(__11850_displayName)]
+        public virtual byte __11850 {
+            get => GetData<byte>(3);
+        }
+
+        public const string True_Critical_Condition_Great_Sword_Rate_displayName = "True Critical Condition: (Great Sword) Rate";
+        public const int True_Critical_Condition_Great_Sword_Rate_sortIndex = 11900;
+        [SortOrder(True_Critical_Condition_Great_Sword_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_Great_Sword_Rate_displayName)]
+        public virtual float True_Critical_Condition_Great_Sword_Rate {
+            get => GetData<float>(618);
+            set {
+                if (GetData<float>(618) == value) return;
+                SetData(618, value, nameof(True_Critical_Condition_Great_Sword_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_Great_Sword_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_Sword_Shield_Rate_displayName = "True Critical Condition: (Sword & Shield) Rate";
+        public const int True_Critical_Condition_Sword_Shield_Rate_sortIndex = 11950;
+        [SortOrder(True_Critical_Condition_Sword_Shield_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_Sword_Shield_Rate_displayName)]
+        public virtual float True_Critical_Condition_Sword_Shield_Rate {
+            get => GetData<float>(622);
+            set {
+                if (GetData<float>(622) == value) return;
+                SetData(622, value, nameof(True_Critical_Condition_Sword_Shield_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_Sword_Shield_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_Dual_Blades_Rate_displayName = "True Critical Condition: (Dual Blades) Rate";
+        public const int True_Critical_Condition_Dual_Blades_Rate_sortIndex = 12000;
+        [SortOrder(True_Critical_Condition_Dual_Blades_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_Dual_Blades_Rate_displayName)]
+        public virtual float True_Critical_Condition_Dual_Blades_Rate {
+            get => GetData<float>(626);
+            set {
+                if (GetData<float>(626) == value) return;
+                SetData(626, value, nameof(True_Critical_Condition_Dual_Blades_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_Dual_Blades_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_Long_Sword_Rate_displayName = "True Critical Condition: (Long Sword) Rate";
+        public const int True_Critical_Condition_Long_Sword_Rate_sortIndex = 12050;
+        [SortOrder(True_Critical_Condition_Long_Sword_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_Long_Sword_Rate_displayName)]
+        public virtual float True_Critical_Condition_Long_Sword_Rate {
+            get => GetData<float>(630);
+            set {
+                if (GetData<float>(630) == value) return;
+                SetData(630, value, nameof(True_Critical_Condition_Long_Sword_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_Long_Sword_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_Hammer_Rate_displayName = "True Critical Condition: (Hammer) Rate";
+        public const int True_Critical_Condition_Hammer_Rate_sortIndex = 12100;
+        [SortOrder(True_Critical_Condition_Hammer_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_Hammer_Rate_displayName)]
+        public virtual float True_Critical_Condition_Hammer_Rate {
+            get => GetData<float>(634);
+            set {
+                if (GetData<float>(634) == value) return;
+                SetData(634, value, nameof(True_Critical_Condition_Hammer_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_Hammer_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_Hunting_Horn_Rate_displayName = "True Critical Condition: (Hunting Horn) Rate";
+        public const int True_Critical_Condition_Hunting_Horn_Rate_sortIndex = 12150;
+        [SortOrder(True_Critical_Condition_Hunting_Horn_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_Hunting_Horn_Rate_displayName)]
+        public virtual float True_Critical_Condition_Hunting_Horn_Rate {
+            get => GetData<float>(638);
+            set {
+                if (GetData<float>(638) == value) return;
+                SetData(638, value, nameof(True_Critical_Condition_Hunting_Horn_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_Hunting_Horn_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_Lance_Rate_displayName = "True Critical Condition: (Lance) Rate";
+        public const int True_Critical_Condition_Lance_Rate_sortIndex = 12200;
+        [SortOrder(True_Critical_Condition_Lance_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_Lance_Rate_displayName)]
+        public virtual float True_Critical_Condition_Lance_Rate {
+            get => GetData<float>(642);
+            set {
+                if (GetData<float>(642) == value) return;
+                SetData(642, value, nameof(True_Critical_Condition_Lance_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_Lance_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_Gunlance_Rate_displayName = "True Critical Condition: (Gunlance) Rate";
+        public const int True_Critical_Condition_Gunlance_Rate_sortIndex = 12250;
+        [SortOrder(True_Critical_Condition_Gunlance_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_Gunlance_Rate_displayName)]
+        public virtual float True_Critical_Condition_Gunlance_Rate {
+            get => GetData<float>(646);
+            set {
+                if (GetData<float>(646) == value) return;
+                SetData(646, value, nameof(True_Critical_Condition_Gunlance_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_Gunlance_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_Switch_Axe_Rate_displayName = "True Critical Condition: (Switch Axe) Rate";
+        public const int True_Critical_Condition_Switch_Axe_Rate_sortIndex = 12300;
+        [SortOrder(True_Critical_Condition_Switch_Axe_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_Switch_Axe_Rate_displayName)]
+        public virtual float True_Critical_Condition_Switch_Axe_Rate {
+            get => GetData<float>(650);
+            set {
+                if (GetData<float>(650) == value) return;
+                SetData(650, value, nameof(True_Critical_Condition_Switch_Axe_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_Switch_Axe_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_Charge_Blade_Rate_displayName = "True Critical Condition: (Charge Blade) Rate";
+        public const int True_Critical_Condition_Charge_Blade_Rate_sortIndex = 12350;
+        [SortOrder(True_Critical_Condition_Charge_Blade_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_Charge_Blade_Rate_displayName)]
+        public virtual float True_Critical_Condition_Charge_Blade_Rate {
+            get => GetData<float>(654);
+            set {
+                if (GetData<float>(654) == value) return;
+                SetData(654, value, nameof(True_Critical_Condition_Charge_Blade_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_Charge_Blade_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_Insect_Glaive_Rate_displayName = "True Critical Condition: (Insect Glaive) Rate";
+        public const int True_Critical_Condition_Insect_Glaive_Rate_sortIndex = 12400;
+        [SortOrder(True_Critical_Condition_Insect_Glaive_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_Insect_Glaive_Rate_displayName)]
+        public virtual float True_Critical_Condition_Insect_Glaive_Rate {
+            get => GetData<float>(658);
+            set {
+                if (GetData<float>(658) == value) return;
+                SetData(658, value, nameof(True_Critical_Condition_Insect_Glaive_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_Insect_Glaive_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_Bow_Rate_displayName = "True Critical Condition: (Bow) Rate";
+        public const int True_Critical_Condition_Bow_Rate_sortIndex = 12450;
+        [SortOrder(True_Critical_Condition_Bow_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_Bow_Rate_displayName)]
+        public virtual float True_Critical_Condition_Bow_Rate {
+            get => GetData<float>(662);
+            set {
+                if (GetData<float>(662) == value) return;
+                SetData(662, value, nameof(True_Critical_Condition_Bow_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_Bow_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_HBG_Rate_displayName = "True Critical Condition: (HBG) Rate";
+        public const int True_Critical_Condition_HBG_Rate_sortIndex = 12500;
+        [SortOrder(True_Critical_Condition_HBG_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_HBG_Rate_displayName)]
+        public virtual float True_Critical_Condition_HBG_Rate {
+            get => GetData<float>(666);
+            set {
+                if (GetData<float>(666) == value) return;
+                SetData(666, value, nameof(True_Critical_Condition_HBG_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_HBG_Rate));
+            }
+        }
+
+        public const string True_Critical_Condition_LBG_Rate_displayName = "True Critical Condition: (LBG) Rate";
+        public const int True_Critical_Condition_LBG_Rate_sortIndex = 12550;
+        [SortOrder(True_Critical_Condition_LBG_Rate_sortIndex)]
+        [DisplayName(True_Critical_Condition_LBG_Rate_displayName)]
+        public virtual float True_Critical_Condition_LBG_Rate {
+            get => GetData<float>(670);
+            set {
+                if (GetData<float>(670) == value) return;
+                SetData(670, value, nameof(True_Critical_Condition_LBG_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(True_Critical_Condition_LBG_Rate));
+            }
+        }
+
+        public const string __12600_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __12600_sortIndex = 12600;
+        [SortOrder(__12600_sortIndex)]
+        [DisplayName(__12600_displayName)]
+        public virtual byte __12600 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Bludgeoner_Red_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Red Sharpness Attack Bonus";
+        public const int Bludgeoner_Red_Sharpness_Attack_Bonus_sortIndex = 12650;
+        [SortOrder(Bludgeoner_Red_Sharpness_Attack_Bonus_sortIndex)]
+        [DisplayName(Bludgeoner_Red_Sharpness_Attack_Bonus_displayName)]
+        public virtual ushort Bludgeoner_Red_Sharpness_Attack_Bonus {
+            get => GetData<ushort>(674);
+            set {
+                if (GetData<ushort>(674) == value) return;
+                SetData(674, value, nameof(Bludgeoner_Red_Sharpness_Attack_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Bludgeoner_Red_Sharpness_Attack_Bonus));
+            }
+        }
+
+        public const string Bludgeoner_Orange_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Orange Sharpness Attack Bonus";
+        public const int Bludgeoner_Orange_Sharpness_Attack_Bonus_sortIndex = 12700;
+        [SortOrder(Bludgeoner_Orange_Sharpness_Attack_Bonus_sortIndex)]
+        [DisplayName(Bludgeoner_Orange_Sharpness_Attack_Bonus_displayName)]
+        public virtual ushort Bludgeoner_Orange_Sharpness_Attack_Bonus {
+            get => GetData<ushort>(676);
+            set {
+                if (GetData<ushort>(676) == value) return;
+                SetData(676, value, nameof(Bludgeoner_Orange_Sharpness_Attack_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Bludgeoner_Orange_Sharpness_Attack_Bonus));
+            }
+        }
+
+        public const string Bludgeoner_Yellow_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Yellow Sharpness Attack Bonus";
+        public const int Bludgeoner_Yellow_Sharpness_Attack_Bonus_sortIndex = 12750;
+        [SortOrder(Bludgeoner_Yellow_Sharpness_Attack_Bonus_sortIndex)]
+        [DisplayName(Bludgeoner_Yellow_Sharpness_Attack_Bonus_displayName)]
+        public virtual ushort Bludgeoner_Yellow_Sharpness_Attack_Bonus {
+            get => GetData<ushort>(678);
+            set {
+                if (GetData<ushort>(678) == value) return;
+                SetData(678, value, nameof(Bludgeoner_Yellow_Sharpness_Attack_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Bludgeoner_Yellow_Sharpness_Attack_Bonus));
+            }
+        }
+
+        public const string Bludgeoner_Green_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Green Sharpness Attack Bonus";
+        public const int Bludgeoner_Green_Sharpness_Attack_Bonus_sortIndex = 12800;
+        [SortOrder(Bludgeoner_Green_Sharpness_Attack_Bonus_sortIndex)]
+        [DisplayName(Bludgeoner_Green_Sharpness_Attack_Bonus_displayName)]
+        public virtual ushort Bludgeoner_Green_Sharpness_Attack_Bonus {
+            get => GetData<ushort>(680);
+            set {
+                if (GetData<ushort>(680) == value) return;
+                SetData(680, value, nameof(Bludgeoner_Green_Sharpness_Attack_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Bludgeoner_Green_Sharpness_Attack_Bonus));
+            }
+        }
+
+        public const string Bludgeoner_Blue_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Blue Sharpness Attack Bonus";
+        public const int Bludgeoner_Blue_Sharpness_Attack_Bonus_sortIndex = 12850;
+        [SortOrder(Bludgeoner_Blue_Sharpness_Attack_Bonus_sortIndex)]
+        [DisplayName(Bludgeoner_Blue_Sharpness_Attack_Bonus_displayName)]
+        public virtual ushort Bludgeoner_Blue_Sharpness_Attack_Bonus {
+            get => GetData<ushort>(682);
+            set {
+                if (GetData<ushort>(682) == value) return;
+                SetData(682, value, nameof(Bludgeoner_Blue_Sharpness_Attack_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Bludgeoner_Blue_Sharpness_Attack_Bonus));
+            }
+        }
+
+        public const string Bludgeoner_White_Sharpness_Attack_Bonus_displayName = "Bludgeoner: White Sharpness Attack Bonus";
+        public const int Bludgeoner_White_Sharpness_Attack_Bonus_sortIndex = 12900;
+        [SortOrder(Bludgeoner_White_Sharpness_Attack_Bonus_sortIndex)]
+        [DisplayName(Bludgeoner_White_Sharpness_Attack_Bonus_displayName)]
+        public virtual ushort Bludgeoner_White_Sharpness_Attack_Bonus {
+            get => GetData<ushort>(684);
+            set {
+                if (GetData<ushort>(684) == value) return;
+                SetData(684, value, nameof(Bludgeoner_White_Sharpness_Attack_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Bludgeoner_White_Sharpness_Attack_Bonus));
+            }
+        }
+
+        public const string Bludgeoner_Purple_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Purple Sharpness Attack Bonus";
+        public const int Bludgeoner_Purple_Sharpness_Attack_Bonus_sortIndex = 12950;
+        [SortOrder(Bludgeoner_Purple_Sharpness_Attack_Bonus_sortIndex)]
+        [DisplayName(Bludgeoner_Purple_Sharpness_Attack_Bonus_displayName)]
+        public virtual ushort Bludgeoner_Purple_Sharpness_Attack_Bonus {
+            get => GetData<ushort>(686);
+            set {
+                if (GetData<ushort>(686) == value) return;
+                SetData(686, value, nameof(Bludgeoner_Purple_Sharpness_Attack_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Bludgeoner_Purple_Sharpness_Attack_Bonus));
+            }
+        }
+
+        public const string Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus_displayName = "Bludgeoner: Bowgun Melee Attack Stun Bonus";
+        public const int Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus_sortIndex = 13000;
+        [SortOrder(Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus_sortIndex)]
+        [DisplayName(Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus_displayName)]
+        public virtual ushort Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus {
+            get => GetData<ushort>(688);
+            set {
+                if (GetData<ushort>(688) == value) return;
+                SetData(688, value, nameof(Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus));
+            }
+        }
+
+        public const string __13050_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __13050_sortIndex = 13050;
+        [SortOrder(__13050_sortIndex)]
+        [DisplayName(__13050_displayName)]
+        public virtual byte __13050 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Non_Elemental_Boost_Attack_Multiplier_displayName = "Non-Elemental Boost: Attack Multiplier";
+        public const int Non_Elemental_Boost_Attack_Multiplier_sortIndex = 13100;
+        [SortOrder(Non_Elemental_Boost_Attack_Multiplier_sortIndex)]
+        [DisplayName(Non_Elemental_Boost_Attack_Multiplier_displayName)]
+        public virtual float Non_Elemental_Boost_Attack_Multiplier {
+            get => GetData<float>(690);
+            set {
+                if (GetData<float>(690) == value) return;
+                SetData(690, value, nameof(Non_Elemental_Boost_Attack_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Non_Elemental_Boost_Attack_Multiplier));
+            }
+        }
+
+        public const string __13150_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __13150_sortIndex = 13150;
+        [SortOrder(__13150_sortIndex)]
+        [DisplayName(__13150_displayName)]
+        public virtual byte __13150 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Affinity_Slider_Attack_Up_Activate_Time_displayName = "Affinity Slider: Attack Up Activate Time";
+        public const int Affinity_Slider_Attack_Up_Activate_Time_sortIndex = 13200;
+        [SortOrder(Affinity_Slider_Attack_Up_Activate_Time_sortIndex)]
+        [DisplayName(Affinity_Slider_Attack_Up_Activate_Time_displayName)]
+        public virtual float Affinity_Slider_Attack_Up_Activate_Time {
+            get => GetData<float>(694);
+            set {
+                if (GetData<float>(694) == value) return;
+                SetData(694, value, nameof(Affinity_Slider_Attack_Up_Activate_Time));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Affinity_Slider_Attack_Up_Activate_Time));
+            }
+        }
+
+        public const string Affinity_Slider_Attack_Up_Duration_displayName = "Affinity Slider: Attack Up Duration";
+        public const int Affinity_Slider_Attack_Up_Duration_sortIndex = 13250;
+        [SortOrder(Affinity_Slider_Attack_Up_Duration_sortIndex)]
+        [DisplayName(Affinity_Slider_Attack_Up_Duration_displayName)]
+        public virtual float Affinity_Slider_Attack_Up_Duration {
+            get => GetData<float>(698);
+            set {
+                if (GetData<float>(698) == value) return;
+                SetData(698, value, nameof(Affinity_Slider_Attack_Up_Duration));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Affinity_Slider_Attack_Up_Duration));
+            }
+        }
+
+        public const string Affinity_Slider_Attack_Critical_Bonus_displayName = "Affinity Slider: Attack Critical Bonus";
+        public const int Affinity_Slider_Attack_Critical_Bonus_sortIndex = 13300;
+        [SortOrder(Affinity_Slider_Attack_Critical_Bonus_sortIndex)]
+        [DisplayName(Affinity_Slider_Attack_Critical_Bonus_displayName)]
+        public virtual byte Affinity_Slider_Attack_Critical_Bonus {
+            get => GetData<byte>(702);
+            set {
+                if (GetData<byte>(702) == value) return;
+                SetData(702, value, nameof(Affinity_Slider_Attack_Critical_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Affinity_Slider_Attack_Critical_Bonus));
+            }
+        }
+
+        public const string __13350_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __13350_sortIndex = 13350;
+        [SortOrder(__13350_sortIndex)]
+        [DisplayName(__13350_displayName)]
+        public virtual byte __13350 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Artillery_Gunlance_Shell_Attack_Rate_1_displayName = "Artillery: Gunlance Shell Attack Rate 1";
+        public const int Artillery_Gunlance_Shell_Attack_Rate_1_sortIndex = 13400;
+        [SortOrder(Artillery_Gunlance_Shell_Attack_Rate_1_sortIndex)]
+        [DisplayName(Artillery_Gunlance_Shell_Attack_Rate_1_displayName)]
+        public virtual float Artillery_Gunlance_Shell_Attack_Rate_1 {
+            get => GetData<float>(703);
+            set {
+                if (GetData<float>(703) == value) return;
+                SetData(703, value, nameof(Artillery_Gunlance_Shell_Attack_Rate_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_Shell_Attack_Rate_1));
+            }
+        }
+
+        public const string Artillery_Gunlance_Shell_Attack_Rate_2_displayName = "Artillery: Gunlance Shell Attack Rate 2";
+        public const int Artillery_Gunlance_Shell_Attack_Rate_2_sortIndex = 13450;
+        [SortOrder(Artillery_Gunlance_Shell_Attack_Rate_2_sortIndex)]
+        [DisplayName(Artillery_Gunlance_Shell_Attack_Rate_2_displayName)]
+        public virtual float Artillery_Gunlance_Shell_Attack_Rate_2 {
+            get => GetData<float>(707);
+            set {
+                if (GetData<float>(707) == value) return;
+                SetData(707, value, nameof(Artillery_Gunlance_Shell_Attack_Rate_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_Shell_Attack_Rate_2));
+            }
+        }
+
+        public const string Artillery_Gunlance_Shell_Attack_Rate_3_displayName = "Artillery: Gunlance Shell Attack Rate 3";
+        public const int Artillery_Gunlance_Shell_Attack_Rate_3_sortIndex = 13500;
+        [SortOrder(Artillery_Gunlance_Shell_Attack_Rate_3_sortIndex)]
+        [DisplayName(Artillery_Gunlance_Shell_Attack_Rate_3_displayName)]
+        public virtual float Artillery_Gunlance_Shell_Attack_Rate_3 {
+            get => GetData<float>(711);
+            set {
+                if (GetData<float>(711) == value) return;
+                SetData(711, value, nameof(Artillery_Gunlance_Shell_Attack_Rate_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_Shell_Attack_Rate_3));
+            }
+        }
+
+        public const string Artillery_Gunlance_Shell_Attack_Rate_4_displayName = "Artillery: Gunlance Shell Attack Rate 4";
+        public const int Artillery_Gunlance_Shell_Attack_Rate_4_sortIndex = 13550;
+        [SortOrder(Artillery_Gunlance_Shell_Attack_Rate_4_sortIndex)]
+        [DisplayName(Artillery_Gunlance_Shell_Attack_Rate_4_displayName)]
+        public virtual float Artillery_Gunlance_Shell_Attack_Rate_4 {
+            get => GetData<float>(715);
+            set {
+                if (GetData<float>(715) == value) return;
+                SetData(715, value, nameof(Artillery_Gunlance_Shell_Attack_Rate_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_Shell_Attack_Rate_4));
+            }
+        }
+
+        public const string Artillery_Gunlance_Shell_Attack_Rate_5_displayName = "Artillery: Gunlance Shell Attack Rate 5";
+        public const int Artillery_Gunlance_Shell_Attack_Rate_5_sortIndex = 13600;
+        [SortOrder(Artillery_Gunlance_Shell_Attack_Rate_5_sortIndex)]
+        [DisplayName(Artillery_Gunlance_Shell_Attack_Rate_5_displayName)]
+        public virtual float Artillery_Gunlance_Shell_Attack_Rate_5 {
+            get => GetData<float>(719);
+            set {
+                if (GetData<float>(719) == value) return;
+                SetData(719, value, nameof(Artillery_Gunlance_Shell_Attack_Rate_5));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_Shell_Attack_Rate_5));
+            }
+        }
+
+        public const string __13650_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __13650_sortIndex = 13650;
+        [SortOrder(__13650_sortIndex)]
+        [DisplayName(__13650_displayName)]
+        public virtual byte __13650 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Artillery_Gunlance_WyvernFire_Attack_Rate_1_displayName = "Artillery: Gunlance WyvernFire Attack Rate 1";
+        public const int Artillery_Gunlance_WyvernFire_Attack_Rate_1_sortIndex = 13700;
+        [SortOrder(Artillery_Gunlance_WyvernFire_Attack_Rate_1_sortIndex)]
+        [DisplayName(Artillery_Gunlance_WyvernFire_Attack_Rate_1_displayName)]
+        public virtual float Artillery_Gunlance_WyvernFire_Attack_Rate_1 {
+            get => GetData<float>(723);
+            set {
+                if (GetData<float>(723) == value) return;
+                SetData(723, value, nameof(Artillery_Gunlance_WyvernFire_Attack_Rate_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_WyvernFire_Attack_Rate_1));
+            }
+        }
+
+        public const string Artillery_Gunlance_WyvernFire_Attack_Rate_2_displayName = "Artillery: Gunlance WyvernFire Attack Rate 2";
+        public const int Artillery_Gunlance_WyvernFire_Attack_Rate_2_sortIndex = 13750;
+        [SortOrder(Artillery_Gunlance_WyvernFire_Attack_Rate_2_sortIndex)]
+        [DisplayName(Artillery_Gunlance_WyvernFire_Attack_Rate_2_displayName)]
+        public virtual float Artillery_Gunlance_WyvernFire_Attack_Rate_2 {
+            get => GetData<float>(727);
+            set {
+                if (GetData<float>(727) == value) return;
+                SetData(727, value, nameof(Artillery_Gunlance_WyvernFire_Attack_Rate_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_WyvernFire_Attack_Rate_2));
+            }
+        }
+
+        public const string Artillery_Gunlance_WyvernFire_Attack_Rate_3_displayName = "Artillery: Gunlance WyvernFire Attack Rate 3";
+        public const int Artillery_Gunlance_WyvernFire_Attack_Rate_3_sortIndex = 13800;
+        [SortOrder(Artillery_Gunlance_WyvernFire_Attack_Rate_3_sortIndex)]
+        [DisplayName(Artillery_Gunlance_WyvernFire_Attack_Rate_3_displayName)]
+        public virtual float Artillery_Gunlance_WyvernFire_Attack_Rate_3 {
+            get => GetData<float>(731);
+            set {
+                if (GetData<float>(731) == value) return;
+                SetData(731, value, nameof(Artillery_Gunlance_WyvernFire_Attack_Rate_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_WyvernFire_Attack_Rate_3));
+            }
+        }
+
+        public const string Artillery_Gunlance_WyvernFire_Attack_Rate_4_displayName = "Artillery: Gunlance WyvernFire Attack Rate 4";
+        public const int Artillery_Gunlance_WyvernFire_Attack_Rate_4_sortIndex = 13850;
+        [SortOrder(Artillery_Gunlance_WyvernFire_Attack_Rate_4_sortIndex)]
+        [DisplayName(Artillery_Gunlance_WyvernFire_Attack_Rate_4_displayName)]
+        public virtual float Artillery_Gunlance_WyvernFire_Attack_Rate_4 {
+            get => GetData<float>(735);
+            set {
+                if (GetData<float>(735) == value) return;
+                SetData(735, value, nameof(Artillery_Gunlance_WyvernFire_Attack_Rate_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_WyvernFire_Attack_Rate_4));
+            }
+        }
+
+        public const string Artillery_Gunlance_WyvernFire_Attack_Rate_5_displayName = "Artillery: Gunlance WyvernFire Attack Rate 5";
+        public const int Artillery_Gunlance_WyvernFire_Attack_Rate_5_sortIndex = 13900;
+        [SortOrder(Artillery_Gunlance_WyvernFire_Attack_Rate_5_sortIndex)]
+        [DisplayName(Artillery_Gunlance_WyvernFire_Attack_Rate_5_displayName)]
+        public virtual float Artillery_Gunlance_WyvernFire_Attack_Rate_5 {
+            get => GetData<float>(739);
+            set {
+                if (GetData<float>(739) == value) return;
+                SetData(739, value, nameof(Artillery_Gunlance_WyvernFire_Attack_Rate_5));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_WyvernFire_Attack_Rate_5));
+            }
+        }
+
+        public const string __13950_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __13950_sortIndex = 13950;
+        [SortOrder(__13950_sortIndex)]
+        [DisplayName(__13950_displayName)]
+        public virtual byte __13950 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_1_displayName = "Artillery: Gunlance Wyrmstake Blast Attack Rate 1";
+        public const int Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_1_sortIndex = 14000;
+        [SortOrder(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_1_sortIndex)]
+        [DisplayName(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_1_displayName)]
+        public virtual float Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_1 {
+            get => GetData<float>(743);
+            set {
+                if (GetData<float>(743) == value) return;
+                SetData(743, value, nameof(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_1));
+            }
+        }
+
+        public const string Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_2_displayName = "Artillery: Gunlance Wyrmstake Blast Attack Rate 2";
+        public const int Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_2_sortIndex = 14050;
+        [SortOrder(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_2_sortIndex)]
+        [DisplayName(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_2_displayName)]
+        public virtual float Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_2 {
+            get => GetData<float>(747);
+            set {
+                if (GetData<float>(747) == value) return;
+                SetData(747, value, nameof(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_2));
+            }
+        }
+
+        public const string Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_3_displayName = "Artillery: Gunlance Wyrmstake Blast Attack Rate 3";
+        public const int Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_3_sortIndex = 14100;
+        [SortOrder(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_3_sortIndex)]
+        [DisplayName(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_3_displayName)]
+        public virtual float Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_3 {
+            get => GetData<float>(751);
+            set {
+                if (GetData<float>(751) == value) return;
+                SetData(751, value, nameof(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_3));
+            }
+        }
+
+        public const string Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_4_displayName = "Artillery: Gunlance Wyrmstake Blast Attack Rate 4";
+        public const int Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_4_sortIndex = 14150;
+        [SortOrder(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_4_sortIndex)]
+        [DisplayName(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_4_displayName)]
+        public virtual float Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_4 {
+            get => GetData<float>(755);
+            set {
+                if (GetData<float>(755) == value) return;
+                SetData(755, value, nameof(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_4));
+            }
+        }
+
+        public const string Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_5_displayName = "Artillery: Gunlance Wyrmstake Blast Attack Rate 5";
+        public const int Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_5_sortIndex = 14200;
+        [SortOrder(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_5_sortIndex)]
+        [DisplayName(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_5_displayName)]
+        public virtual float Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_5 {
+            get => GetData<float>(759);
+            set {
+                if (GetData<float>(759) == value) return;
+                SetData(759, value, nameof(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_5));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_Wyrmstake_Blast_Attack_Rate_5));
+            }
+        }
+
+        public const string __14250_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __14250_sortIndex = 14250;
+        [SortOrder(__14250_sortIndex)]
+        [DisplayName(__14250_displayName)]
+        public virtual byte __14250 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_1_displayName = "Artillery: Gunlance WyvernFire Cooldown Time Rate 1";
+        public const int Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_1_sortIndex = 14300;
+        [SortOrder(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_1_sortIndex)]
+        [DisplayName(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_1_displayName)]
+        public virtual float Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_1 {
+            get => GetData<float>(763);
+            set {
+                if (GetData<float>(763) == value) return;
+                SetData(763, value, nameof(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_1));
+            }
+        }
+
+        public const string Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_2_displayName = "Artillery: Gunlance WyvernFire Cooldown Time Rate 2";
+        public const int Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_2_sortIndex = 14350;
+        [SortOrder(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_2_sortIndex)]
+        [DisplayName(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_2_displayName)]
+        public virtual float Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_2 {
+            get => GetData<float>(767);
+            set {
+                if (GetData<float>(767) == value) return;
+                SetData(767, value, nameof(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_2));
+            }
+        }
+
+        public const string Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_3_displayName = "Artillery: Gunlance WyvernFire Cooldown Time Rate 3";
+        public const int Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_3_sortIndex = 14400;
+        [SortOrder(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_3_sortIndex)]
+        [DisplayName(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_3_displayName)]
+        public virtual float Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_3 {
+            get => GetData<float>(771);
+            set {
+                if (GetData<float>(771) == value) return;
+                SetData(771, value, nameof(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_3));
+            }
+        }
+
+        public const string Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_4_displayName = "Artillery: Gunlance WyvernFire Cooldown Time Rate 4";
+        public const int Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_4_sortIndex = 14450;
+        [SortOrder(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_4_sortIndex)]
+        [DisplayName(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_4_displayName)]
+        public virtual float Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_4 {
+            get => GetData<float>(775);
+            set {
+                if (GetData<float>(775) == value) return;
+                SetData(775, value, nameof(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_4));
+            }
+        }
+
+        public const string Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_5_displayName = "Artillery: Gunlance WyvernFire Cooldown Time Rate 5";
+        public const int Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_5_sortIndex = 14500;
+        [SortOrder(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_5_sortIndex)]
+        [DisplayName(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_5_displayName)]
+        public virtual float Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_5 {
+            get => GetData<float>(779);
+            set {
+                if (GetData<float>(779) == value) return;
+                SetData(779, value, nameof(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_5));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_5));
+            }
+        }
+
+        public const string __14550_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __14550_sortIndex = 14550;
+        [SortOrder(__14550_sortIndex)]
+        [DisplayName(__14550_displayName)]
+        public virtual byte __14550 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Artillery_Charge_Blade_Impact_Phial_Attack_Rate_1_displayName = "Artillery: Charge Blade Impact Phial Attack Rate 1";
+        public const int Artillery_Charge_Blade_Impact_Phial_Attack_Rate_1_sortIndex = 14600;
+        [SortOrder(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_1_sortIndex)]
+        [DisplayName(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_1_displayName)]
+        public virtual float Artillery_Charge_Blade_Impact_Phial_Attack_Rate_1 {
+            get => GetData<float>(783);
+            set {
+                if (GetData<float>(783) == value) return;
+                SetData(783, value, nameof(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_1));
+            }
+        }
+
+        public const string Artillery_Charge_Blade_Impact_Phial_Attack_Rate_2_displayName = "Artillery: Charge Blade Impact Phial Attack Rate 2";
+        public const int Artillery_Charge_Blade_Impact_Phial_Attack_Rate_2_sortIndex = 14650;
+        [SortOrder(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_2_sortIndex)]
+        [DisplayName(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_2_displayName)]
+        public virtual float Artillery_Charge_Blade_Impact_Phial_Attack_Rate_2 {
+            get => GetData<float>(787);
+            set {
+                if (GetData<float>(787) == value) return;
+                SetData(787, value, nameof(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_2));
+            }
+        }
+
+        public const string Artillery_Charge_Blade_Impact_Phial_Attack_Rate_3_displayName = "Artillery: Charge Blade Impact Phial Attack Rate 3";
+        public const int Artillery_Charge_Blade_Impact_Phial_Attack_Rate_3_sortIndex = 14700;
+        [SortOrder(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_3_sortIndex)]
+        [DisplayName(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_3_displayName)]
+        public virtual float Artillery_Charge_Blade_Impact_Phial_Attack_Rate_3 {
+            get => GetData<float>(791);
+            set {
+                if (GetData<float>(791) == value) return;
+                SetData(791, value, nameof(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_3));
+            }
+        }
+
+        public const string Artillery_Charge_Blade_Impact_Phial_Attack_Rate_4_displayName = "Artillery: Charge Blade Impact Phial Attack Rate 4";
+        public const int Artillery_Charge_Blade_Impact_Phial_Attack_Rate_4_sortIndex = 14750;
+        [SortOrder(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_4_sortIndex)]
+        [DisplayName(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_4_displayName)]
+        public virtual float Artillery_Charge_Blade_Impact_Phial_Attack_Rate_4 {
+            get => GetData<float>(795);
+            set {
+                if (GetData<float>(795) == value) return;
+                SetData(795, value, nameof(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_4));
+            }
+        }
+
+        public const string Artillery_Charge_Blade_Impact_Phial_Attack_Rate_5_displayName = "Artillery: Charge Blade Impact Phial Attack Rate 5";
+        public const int Artillery_Charge_Blade_Impact_Phial_Attack_Rate_5_sortIndex = 14800;
+        [SortOrder(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_5_sortIndex)]
+        [DisplayName(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_5_displayName)]
+        public virtual float Artillery_Charge_Blade_Impact_Phial_Attack_Rate_5 {
+            get => GetData<float>(799);
+            set {
+                if (GetData<float>(799) == value) return;
+                SetData(799, value, nameof(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_5));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Charge_Blade_Impact_Phial_Attack_Rate_5));
+            }
+        }
+
+        public const string __14850_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __14850_sortIndex = 14850;
+        [SortOrder(__14850_sortIndex)]
+        [DisplayName(__14850_displayName)]
+        public virtual byte __14850 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Artillery_Bowgun_Sticky_Ammo_Attack_Rate_1_displayName = "Artillery: Bowgun Sticky Ammo Attack Rate 1";
+        public const int Artillery_Bowgun_Sticky_Ammo_Attack_Rate_1_sortIndex = 14900;
+        [SortOrder(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_1_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_1_displayName)]
+        public virtual float Artillery_Bowgun_Sticky_Ammo_Attack_Rate_1 {
+            get => GetData<float>(803);
+            set {
+                if (GetData<float>(803) == value) return;
+                SetData(803, value, nameof(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_1));
+            }
+        }
+
+        public const string Artillery_Bowgun_Sticky_Ammo_Attack_Rate_2_displayName = "Artillery: Bowgun Sticky Ammo Attack Rate 2";
+        public const int Artillery_Bowgun_Sticky_Ammo_Attack_Rate_2_sortIndex = 14950;
+        [SortOrder(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_2_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_2_displayName)]
+        public virtual float Artillery_Bowgun_Sticky_Ammo_Attack_Rate_2 {
+            get => GetData<float>(807);
+            set {
+                if (GetData<float>(807) == value) return;
+                SetData(807, value, nameof(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_2));
+            }
+        }
+
+        public const string Artillery_Bowgun_Sticky_Ammo_Attack_Rate_3_displayName = "Artillery: Bowgun Sticky Ammo Attack Rate 3";
+        public const int Artillery_Bowgun_Sticky_Ammo_Attack_Rate_3_sortIndex = 15000;
+        [SortOrder(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_3_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_3_displayName)]
+        public virtual float Artillery_Bowgun_Sticky_Ammo_Attack_Rate_3 {
+            get => GetData<float>(811);
+            set {
+                if (GetData<float>(811) == value) return;
+                SetData(811, value, nameof(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_3));
+            }
+        }
+
+        public const string Artillery_Bowgun_Sticky_Ammo_Attack_Rate_4_displayName = "Artillery: Bowgun Sticky Ammo Attack Rate 4";
+        public const int Artillery_Bowgun_Sticky_Ammo_Attack_Rate_4_sortIndex = 15050;
+        [SortOrder(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_4_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_4_displayName)]
+        public virtual float Artillery_Bowgun_Sticky_Ammo_Attack_Rate_4 {
+            get => GetData<float>(815);
+            set {
+                if (GetData<float>(815) == value) return;
+                SetData(815, value, nameof(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_4));
+            }
+        }
+
+        public const string Artillery_Bowgun_Sticky_Ammo_Attack_Rate_5_displayName = "Artillery: Bowgun Sticky Ammo Attack Rate 5";
+        public const int Artillery_Bowgun_Sticky_Ammo_Attack_Rate_5_sortIndex = 15100;
+        [SortOrder(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_5_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_5_displayName)]
+        public virtual float Artillery_Bowgun_Sticky_Ammo_Attack_Rate_5 {
+            get => GetData<float>(819);
+            set {
+                if (GetData<float>(819) == value) return;
+                SetData(819, value, nameof(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_5));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Sticky_Ammo_Attack_Rate_5));
+            }
+        }
+
+        public const string __15150_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __15150_sortIndex = 15150;
+        [SortOrder(__15150_sortIndex)]
+        [DisplayName(__15150_displayName)]
+        public virtual byte __15150 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Artillery_Bowgun_Kakusan_Attack_Rate_1_displayName = "Artillery: Bowgun Kakusan Attack Rate 1";
+        public const int Artillery_Bowgun_Kakusan_Attack_Rate_1_sortIndex = 15200;
+        [SortOrder(Artillery_Bowgun_Kakusan_Attack_Rate_1_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Kakusan_Attack_Rate_1_displayName)]
+        public virtual float Artillery_Bowgun_Kakusan_Attack_Rate_1 {
+            get => GetData<float>(823);
+            set {
+                if (GetData<float>(823) == value) return;
+                SetData(823, value, nameof(Artillery_Bowgun_Kakusan_Attack_Rate_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Kakusan_Attack_Rate_1));
+            }
+        }
+
+        public const string Artillery_Bowgun_Kakusan_Attack_Rate_2_displayName = "Artillery: Bowgun Kakusan Attack Rate 2";
+        public const int Artillery_Bowgun_Kakusan_Attack_Rate_2_sortIndex = 15250;
+        [SortOrder(Artillery_Bowgun_Kakusan_Attack_Rate_2_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Kakusan_Attack_Rate_2_displayName)]
+        public virtual float Artillery_Bowgun_Kakusan_Attack_Rate_2 {
+            get => GetData<float>(827);
+            set {
+                if (GetData<float>(827) == value) return;
+                SetData(827, value, nameof(Artillery_Bowgun_Kakusan_Attack_Rate_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Kakusan_Attack_Rate_2));
+            }
+        }
+
+        public const string Artillery_Bowgun_Kakusan_Attack_Rate_3_displayName = "Artillery: Bowgun Kakusan Attack Rate 3";
+        public const int Artillery_Bowgun_Kakusan_Attack_Rate_3_sortIndex = 15300;
+        [SortOrder(Artillery_Bowgun_Kakusan_Attack_Rate_3_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Kakusan_Attack_Rate_3_displayName)]
+        public virtual float Artillery_Bowgun_Kakusan_Attack_Rate_3 {
+            get => GetData<float>(831);
+            set {
+                if (GetData<float>(831) == value) return;
+                SetData(831, value, nameof(Artillery_Bowgun_Kakusan_Attack_Rate_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Kakusan_Attack_Rate_3));
+            }
+        }
+
+        public const string Artillery_Bowgun_Kakusan_Attack_Rate_4_displayName = "Artillery: Bowgun Kakusan Attack Rate 4";
+        public const int Artillery_Bowgun_Kakusan_Attack_Rate_4_sortIndex = 15350;
+        [SortOrder(Artillery_Bowgun_Kakusan_Attack_Rate_4_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Kakusan_Attack_Rate_4_displayName)]
+        public virtual float Artillery_Bowgun_Kakusan_Attack_Rate_4 {
+            get => GetData<float>(835);
+            set {
+                if (GetData<float>(835) == value) return;
+                SetData(835, value, nameof(Artillery_Bowgun_Kakusan_Attack_Rate_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Kakusan_Attack_Rate_4));
+            }
+        }
+
+        public const string Artillery_Bowgun_Kakusan_Attack_Rate_5_displayName = "Artillery: Bowgun Kakusan Attack Rate 5";
+        public const int Artillery_Bowgun_Kakusan_Attack_Rate_5_sortIndex = 15400;
+        [SortOrder(Artillery_Bowgun_Kakusan_Attack_Rate_5_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Kakusan_Attack_Rate_5_displayName)]
+        public virtual float Artillery_Bowgun_Kakusan_Attack_Rate_5 {
+            get => GetData<float>(839);
+            set {
+                if (GetData<float>(839) == value) return;
+                SetData(839, value, nameof(Artillery_Bowgun_Kakusan_Attack_Rate_5));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Kakusan_Attack_Rate_5));
+            }
+        }
+
+        public const string __15450_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __15450_sortIndex = 15450;
+        [SortOrder(__15450_sortIndex)]
+        [DisplayName(__15450_displayName)]
+        public virtual byte __15450 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Artillery_Bowgun_Wyvern_Attack_Rate_1_displayName = "Artillery: Bowgun Wyvern Attack Rate 1";
+        public const int Artillery_Bowgun_Wyvern_Attack_Rate_1_sortIndex = 15500;
+        [SortOrder(Artillery_Bowgun_Wyvern_Attack_Rate_1_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Wyvern_Attack_Rate_1_displayName)]
+        public virtual float Artillery_Bowgun_Wyvern_Attack_Rate_1 {
+            get => GetData<float>(843);
+            set {
+                if (GetData<float>(843) == value) return;
+                SetData(843, value, nameof(Artillery_Bowgun_Wyvern_Attack_Rate_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Wyvern_Attack_Rate_1));
+            }
+        }
+
+        public const string Artillery_Bowgun_Wyvern_Attack_Rate_2_displayName = "Artillery: Bowgun Wyvern Attack Rate 2";
+        public const int Artillery_Bowgun_Wyvern_Attack_Rate_2_sortIndex = 15550;
+        [SortOrder(Artillery_Bowgun_Wyvern_Attack_Rate_2_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Wyvern_Attack_Rate_2_displayName)]
+        public virtual float Artillery_Bowgun_Wyvern_Attack_Rate_2 {
+            get => GetData<float>(847);
+            set {
+                if (GetData<float>(847) == value) return;
+                SetData(847, value, nameof(Artillery_Bowgun_Wyvern_Attack_Rate_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Wyvern_Attack_Rate_2));
+            }
+        }
+
+        public const string Artillery_Bowgun_Wyvern_Attack_Rate_3_displayName = "Artillery: Bowgun Wyvern Attack Rate 3";
+        public const int Artillery_Bowgun_Wyvern_Attack_Rate_3_sortIndex = 15600;
+        [SortOrder(Artillery_Bowgun_Wyvern_Attack_Rate_3_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Wyvern_Attack_Rate_3_displayName)]
+        public virtual float Artillery_Bowgun_Wyvern_Attack_Rate_3 {
+            get => GetData<float>(851);
+            set {
+                if (GetData<float>(851) == value) return;
+                SetData(851, value, nameof(Artillery_Bowgun_Wyvern_Attack_Rate_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Wyvern_Attack_Rate_3));
+            }
+        }
+
+        public const string Artillery_Bowgun_Wyvern_Attack_Rate_4_displayName = "Artillery: Bowgun Wyvern Attack Rate 4";
+        public const int Artillery_Bowgun_Wyvern_Attack_Rate_4_sortIndex = 15650;
+        [SortOrder(Artillery_Bowgun_Wyvern_Attack_Rate_4_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Wyvern_Attack_Rate_4_displayName)]
+        public virtual float Artillery_Bowgun_Wyvern_Attack_Rate_4 {
+            get => GetData<float>(855);
+            set {
+                if (GetData<float>(855) == value) return;
+                SetData(855, value, nameof(Artillery_Bowgun_Wyvern_Attack_Rate_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Wyvern_Attack_Rate_4));
+            }
+        }
+
+        public const string Artillery_Bowgun_Wyvern_Attack_Rate_5_displayName = "Artillery: Bowgun Wyvern Attack Rate 5";
+        public const int Artillery_Bowgun_Wyvern_Attack_Rate_5_sortIndex = 15700;
+        [SortOrder(Artillery_Bowgun_Wyvern_Attack_Rate_5_sortIndex)]
+        [DisplayName(Artillery_Bowgun_Wyvern_Attack_Rate_5_displayName)]
+        public virtual float Artillery_Bowgun_Wyvern_Attack_Rate_5 {
+            get => GetData<float>(859);
+            set {
+                if (GetData<float>(859) == value) return;
+                SetData(859, value, nameof(Artillery_Bowgun_Wyvern_Attack_Rate_5));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_Bowgun_Wyvern_Attack_Rate_5));
+            }
+        }
+
+        public const string __15750_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __15750_sortIndex = 15750;
+        [SortOrder(__15750_sortIndex)]
+        [DisplayName(__15750_displayName)]
+        public virtual byte __15750 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Artillery_LBG_Set_Bomb_Attack_Rate_1_displayName = "Artillery: LBG Set Bomb Attack Rate 1";
+        public const int Artillery_LBG_Set_Bomb_Attack_Rate_1_sortIndex = 15800;
+        [SortOrder(Artillery_LBG_Set_Bomb_Attack_Rate_1_sortIndex)]
+        [DisplayName(Artillery_LBG_Set_Bomb_Attack_Rate_1_displayName)]
+        public virtual float Artillery_LBG_Set_Bomb_Attack_Rate_1 {
+            get => GetData<float>(863);
+            set {
+                if (GetData<float>(863) == value) return;
+                SetData(863, value, nameof(Artillery_LBG_Set_Bomb_Attack_Rate_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_LBG_Set_Bomb_Attack_Rate_1));
+            }
+        }
+
+        public const string Artillery_LBG_Set_Bomb_Attack_Rate_2_displayName = "Artillery: LBG Set Bomb Attack Rate 2";
+        public const int Artillery_LBG_Set_Bomb_Attack_Rate_2_sortIndex = 15850;
+        [SortOrder(Artillery_LBG_Set_Bomb_Attack_Rate_2_sortIndex)]
+        [DisplayName(Artillery_LBG_Set_Bomb_Attack_Rate_2_displayName)]
+        public virtual float Artillery_LBG_Set_Bomb_Attack_Rate_2 {
+            get => GetData<float>(867);
+            set {
+                if (GetData<float>(867) == value) return;
+                SetData(867, value, nameof(Artillery_LBG_Set_Bomb_Attack_Rate_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_LBG_Set_Bomb_Attack_Rate_2));
+            }
+        }
+
+        public const string Artillery_LBG_Set_Bomb_Attack_Rate_3_displayName = "Artillery: LBG Set Bomb Attack Rate 3";
+        public const int Artillery_LBG_Set_Bomb_Attack_Rate_3_sortIndex = 15900;
+        [SortOrder(Artillery_LBG_Set_Bomb_Attack_Rate_3_sortIndex)]
+        [DisplayName(Artillery_LBG_Set_Bomb_Attack_Rate_3_displayName)]
+        public virtual float Artillery_LBG_Set_Bomb_Attack_Rate_3 {
+            get => GetData<float>(871);
+            set {
+                if (GetData<float>(871) == value) return;
+                SetData(871, value, nameof(Artillery_LBG_Set_Bomb_Attack_Rate_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_LBG_Set_Bomb_Attack_Rate_3));
+            }
+        }
+
+        public const string Artillery_LBG_Set_Bomb_Attack_Rate_4_displayName = "Artillery: LBG Set Bomb Attack Rate 4";
+        public const int Artillery_LBG_Set_Bomb_Attack_Rate_4_sortIndex = 15950;
+        [SortOrder(Artillery_LBG_Set_Bomb_Attack_Rate_4_sortIndex)]
+        [DisplayName(Artillery_LBG_Set_Bomb_Attack_Rate_4_displayName)]
+        public virtual float Artillery_LBG_Set_Bomb_Attack_Rate_4 {
+            get => GetData<float>(875);
+            set {
+                if (GetData<float>(875) == value) return;
+                SetData(875, value, nameof(Artillery_LBG_Set_Bomb_Attack_Rate_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_LBG_Set_Bomb_Attack_Rate_4));
+            }
+        }
+
+        public const string Artillery_LBG_Set_Bomb_Attack_Rate_5_displayName = "Artillery: LBG Set Bomb Attack Rate 5";
+        public const int Artillery_LBG_Set_Bomb_Attack_Rate_5_sortIndex = 16000;
+        [SortOrder(Artillery_LBG_Set_Bomb_Attack_Rate_5_sortIndex)]
+        [DisplayName(Artillery_LBG_Set_Bomb_Attack_Rate_5_displayName)]
+        public virtual float Artillery_LBG_Set_Bomb_Attack_Rate_5 {
+            get => GetData<float>(879);
+            set {
+                if (GetData<float>(879) == value) return;
+                SetData(879, value, nameof(Artillery_LBG_Set_Bomb_Attack_Rate_5));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Artillery_LBG_Set_Bomb_Attack_Rate_5));
+            }
+        }
+
+        public const string __16050_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __16050_sortIndex = 16050;
+        [SortOrder(__16050_sortIndex)]
+        [DisplayName(__16050_displayName)]
+        public virtual byte __16050 {
+            get => GetData<byte>(3);
+        }
+
+        public const string __16100_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __16100_sortIndex = 16100;
+        [SortOrder(__16100_sortIndex)]
+        [DisplayName(__16100_displayName)]
+        public virtual byte __16100 {
+            get => GetData<byte>(3);
+        }
+
+        public const string _Skipping_the_rest__16150_displayName = "------Skipping the rest.";
+        public const int _Skipping_the_rest__16150_sortIndex = 16150;
+        [SortOrder(_Skipping_the_rest__16150_sortIndex)]
+        [DisplayName(_Skipping_the_rest__16150_displayName)]
+        public virtual byte _Skipping_the_rest__16150 {
+            get => GetData<byte>(3);
+        }
+
+        public const int lastSortIndex = 16200;
     }
 }
