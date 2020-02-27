@@ -331,7 +331,7 @@ namespace MHW_Editor.PlData {
                 new PlDataItemCustomView(this, "Wp MR Augment Element (3)", "Wp_MR_Augment_Element_3_", Bytes, 8673),
                 new PlDataItemCustomView(this, "Wp MR Augment Element (4)", "Wp_MR_Augment_Element_4_", Bytes, 8674),
                 new PlDataItemCustomView(this, "------------------------------------------------------", "__16300", Bytes, 3),
-                new PlDataItemCustomView(this, "------Skipping the rest.", "_Skipping_the_rest_", Bytes, 3),
+                new PlDataItemCustomView(this, "------Skipping the rest.", "_Skipping_the_rest__16350", Bytes, 3),
             };
         }
     }

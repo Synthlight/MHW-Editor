@@ -4486,11 +4486,11 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string _Skipping_the_rest__displayName = "------Skipping the rest.";
-        public const int _Skipping_the_rest__sortIndex = 16350;
-        [SortOrder(_Skipping_the_rest__sortIndex)]
-        [DisplayName(_Skipping_the_rest__displayName)]
-        public virtual byte _Skipping_the_rest_ {
+        public const string _Skipping_the_rest__16350_displayName = "------Skipping the rest.";
+        public const int _Skipping_the_rest__16350_sortIndex = 16350;
+        [SortOrder(_Skipping_the_rest__16350_sortIndex)]
+        [DisplayName(_Skipping_the_rest__16350_displayName)]
+        public virtual byte _Skipping_the_rest__16350 {
             get => GetData<byte>(3);
         }
 

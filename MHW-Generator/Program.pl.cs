@@ -13,9 +13,134 @@ namespace MHW_Generator {
         }
 
         private static void GenPlSkillParam() {
+            // 'Unk' counters.
+            ushort i = 1;
+
             var entries = new List<MhwStructData.Entry> {
                 new MhwStructData.Entry("Speed Eating 1 Drink Motion Speed", 8, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 2 Drink Motion Speed", 12, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 3 Drink Motion Speed", 16, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 1 Drink End Frame", 20, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 2 Drink End Frame", 24, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 3 Drink End Frame", 28, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 1 Heal Speed Rate", 32, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 2 Heal Speed Rate", 36, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 3 Heal Speed Rate", 40, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 1 Meat Motion Speed", 44, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 2 Meat Motion Speed", 48, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 3 Meat Motion Speed", 52, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 1 Meat Loop Count", 56, typeof(byte)),
+                new MhwStructData.Entry("Speed Eating 2 Meat Loop Count", 57, typeof(byte)),
+                new MhwStructData.Entry("Speed Eating 3 Meat Loop Count", 58, typeof(byte)),
+                new MhwStructData.Entry("Speed Eating 1/2/3 Meat End Frame", 59, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 1 Tablet Motion Speed", 63, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 2 Tablet Motion Speed", 67, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 3 Tablet Motion Speed", 71, typeof(float)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+
+                new MhwStructData.Entry("Mud Motion Speed", 75, typeof(float)),
+                new MhwStructData.Entry("Mud Trans Rate", 79, typeof(float)),
+                new MhwStructData.Entry("Elemental Damage Defense %", 83, typeof(byte)),
+                new MhwStructData.Entry("Elemental Damage Resist %", 84, typeof(byte)),
+                new MhwStructData.Entry("Elemental Damage Resist", 85, typeof(byte)),
+                new MhwStructData.Entry("Weakness Exploit Hitzone Threshold", 86, typeof(byte)),
+                new MhwStructData.Entry("Latent Power Activation Time", 87, typeof(ushort)),
+                new MhwStructData.Entry("Latent Power Total Damage to Trigger", 89, typeof(ushort)),
+                new MhwStructData.Entry("Latent Power Secret Total Damage to Trigger", 91, typeof(ushort)),
+                new MhwStructData.Entry("Heroics Activation Health %", 93, typeof(float)),
+                new MhwStructData.Entry("Guts Health Threshold", 97, typeof(byte)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+
+                new MhwStructData.Entry("Wide Range 1 Efficiency", 98, typeof(float)),
+                new MhwStructData.Entry("Wide Range 2 Efficiency", 102, typeof(float)),
+                new MhwStructData.Entry("Wide Range 3 Efficiency", 106, typeof(float)),
+                new MhwStructData.Entry("Wide Range 4 Efficiency", 110, typeof(float)),
+                new MhwStructData.Entry("Wide Range 5 Efficiency", 114, typeof(float)),
+                new MhwStructData.Entry("Wide Range 1 Range", 118, typeof(float)),
+                new MhwStructData.Entry("Wide Range 2 Range", 122, typeof(float)),
+                new MhwStructData.Entry("Wide Range 3 Range", 126, typeof(float)),
+                new MhwStructData.Entry("Wide Range 4 Range", 130, typeof(float)),
+                new MhwStructData.Entry("Wide Range 5 Range", 134, typeof(float)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+
+                new MhwStructData.Entry($"Unk{i++}", 138, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 142, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 146, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 150, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 154, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 158, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 162, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 166, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 170, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 174, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 178, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 182, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 186, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 190, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 194, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 198, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 202, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 202, typeof(float)),
+                new MhwStructData.Entry($"Unk{i++}", 206, typeof(float)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+
+                new MhwStructData.Entry("Focus (Gunlance, Charge Shot) Time Rate 1", 210, typeof(float)),
+                new MhwStructData.Entry("Focus (Gunlance, Charge Shot) Time Rate 2", 214, typeof(float)),
+                new MhwStructData.Entry("Focus (Gunlance, Charge Shot) Time Rate 3", 218, typeof(float)),
+                new MhwStructData.Entry("Focus (Charge Blade, Slash 2) Time Rate 1", 222, typeof(float)),
+                new MhwStructData.Entry("Focus (Charge Blade, Slash 2) Time Rate 2", 226, typeof(float)),
+                new MhwStructData.Entry("Focus (Charge Blade, Slash 2) Time Rate 3", 230, typeof(float)),
+                new MhwStructData.Entry("Focus (Charge Blade, Phial Charge Slash) Time Rate 1", 234, typeof(float)),
+                new MhwStructData.Entry("Focus (Charge Blade, Phial Charge Slash) Time Rate 2", 238, typeof(float)),
+                new MhwStructData.Entry("Focus (Charge Blade, Phial Charge Slash) Time Rate 3", 242, typeof(float)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
             };
+
+            const ulong punishingDrawOffset = 246;
+
+            var weapons = new List<string> {
+                "Great Sword",
+                "Sword & Shield",
+                "Dual Blades",
+                "Long Sword",
+                "Hammer",
+                "Hunting Horn",
+                "Lance",
+                "Gunlance",
+                "Switch Axe",
+                "Charge Blade",
+                "Insect Glaive",
+                "Bow",
+                "HBG",
+                "LBG"
+            };
+
+            var weaponDrawParams = new List<string> {
+                "Attack Power",
+                "Stun",
+                "Exhaust",
+                "Param 4",
+                "Param 5",
+                "Param 6"
+            };
+
+            for (var x = 0; x < weapons.Count; x++) {
+                for (var s = 0; s < weaponDrawParams.Count; s++) {
+                    entries.Add(new MhwStructData.Entry($"Punishing Draw ({weapons[x]}) {weaponDrawParams[s]}", punishingDrawOffset + (ulong) s * 2 + (ulong) x * 12, typeof(ushort)));
+                }
+
+                entries.Add(new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true));
+            }
+
+            entries.AddRange(new List<MhwStructData.Entry> {
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry("------Skipping the rest.", 3, typeof(byte), true, forceUnique: true)
+            });
 
             GeneratePlDataProps("MHW_Editor.PlData", "PlSkillParam", new MhwStructData { // .plsp
                 size = 2256,
@@ -327,7 +452,7 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Unk{i++}", 252, typeof(float)),
 
                 new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
-                new MhwStructData.Entry($"------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry("------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
                 new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Health Initial Value", 408, typeof(float)),
@@ -437,7 +562,7 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Acid Damage Damage", 763, typeof(float)),
 
                 new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
-                new MhwStructData.Entry($"------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry("------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
                 new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true)
             };
 
@@ -504,7 +629,7 @@ namespace MHW_Generator {
 
             entries.AddRange(new List<MhwStructData.Entry> {
                 new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
-                new MhwStructData.Entry($"------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry("------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
                 new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 // HR Augment.
@@ -568,7 +693,7 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Wp MR Augment Element (4)", 8674, typeof(byte)),
 
                 new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
-                new MhwStructData.Entry($"------Skipping the rest.", 3, typeof(byte), true, forceUnique: true)
+                new MhwStructData.Entry("------Skipping the rest.", 3, typeof(byte), true, forceUnique: true)
             });
 
             GeneratePlDataProps("MHW_Editor.PlData", "PlPlayerParam", new MhwStructData { // .plp
