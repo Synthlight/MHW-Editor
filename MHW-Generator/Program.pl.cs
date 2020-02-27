@@ -14,7 +14,7 @@ namespace MHW_Generator {
 
         private static void GenPlSkillParam() {
             var entries = new List<MhwStructData.Entry> {
-                new MhwStructData.Entry("A", 8, typeof(float)),
+                new MhwStructData.Entry("Speed Eating 1 Drink Motion Speed", 8, typeof(float)),
             };
 
             GeneratePlDataProps("MHW_Editor.PlData", "PlSkillParam", new MhwStructData { // .plsp
@@ -30,7 +30,6 @@ namespace MHW_Generator {
         private static void GenPlMantleParam() {
             // 'Unk' counters.
             ushort i = 1;
-            ushort j = 1;
             ushort k = 1;
             ushort l = 1;
             ushort m = 1;
@@ -47,14 +46,14 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Unk: Unk{i++}", 36, typeof(float)),
                 new MhwStructData.Entry($"Unk: Unk{i++}", 40, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Ghillie Mantle: Cooldown", 44, typeof(float)),
                 new MhwStructData.Entry("Ghillie Mantle: Duration", 48, typeof(float)),
                 new MhwStructData.Entry("Ghillie Mantle: Unk1", 52, typeof(float)),
                 new MhwStructData.Entry("Ghillie Mantle: Unk2", 56, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Temporal Mantle: Cooldown", 60, typeof(float)),
                 new MhwStructData.Entry("Temporal Mantle: Duration", 64, typeof(float)),
@@ -72,13 +71,13 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Temporal Mantle: Unk12", 112, typeof(float)),
                 new MhwStructData.Entry("Temporal Mantle: Duration Decrease Per Hit", 116, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Health Booster: Cooldown", 120, typeof(float)),
                 new MhwStructData.Entry("Health Booster: Duration", 124, typeof(float)),
                 new MhwStructData.Entry("Health Booster: Upgraded Duration", 128, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Rocksteady Mantle: Cooldown", 132, typeof(float)),
                 new MhwStructData.Entry("Rocksteady Mantle: Duration", 136, typeof(float)),
@@ -86,20 +85,20 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Rocksteady Mantle: Damage Resist", 144, typeof(float)),
                 new MhwStructData.Entry("Rocksteady Mantle: Unk2", 148, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Challenger Mantle: Cooldown", 152, typeof(float)),
                 new MhwStructData.Entry("Challenger Mantle: Duration", 156, typeof(float)),
                 new MhwStructData.Entry("Challenger Mantle: Unk1", 160, typeof(float)),
                 new MhwStructData.Entry("Challenger Mantle: Unk2", 164, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Vitality Mantle: Cooldown", 168, typeof(float)),
                 new MhwStructData.Entry("Vitality Mantle: Duration", 172, typeof(float)),
                 new MhwStructData.Entry("Vitality Mantle: Mantle Health", 176, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true)
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true)
             };
 
             const ulong elementalStartOffset = 180;
@@ -117,7 +116,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry($"{elementMantles[s]}: Duration", elementalStartOffset + 4 + (ulong) s * 12, typeof(float)),
                     new MhwStructData.Entry($"{elementMantles[s]}: Damage Reduction %", elementalStartOffset + 8 + (ulong) s * 12, typeof(float)),
 
-                    new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true)
+                    new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true)
                 });
             }
 
@@ -127,7 +126,7 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Dragonproof Mantle: Damage Reduction %", 236, typeof(float)),
                 new MhwStructData.Entry("Dragonproof Mantle: Dragon Damage Multiplier", 240, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Cleanser Booster: Cooldown", 244, typeof(float)),
                 new MhwStructData.Entry("Cleanser Booster: Duration", 248, typeof(float)),
@@ -137,13 +136,13 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Cleanser Booster: Unk3", 264, typeof(float)),
                 new MhwStructData.Entry("Cleanser Booster: Unk4", 268, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Glider Mantle: Cooldown", 272, typeof(float)),
                 new MhwStructData.Entry("Glider Mantle: Duration", 276, typeof(float)),
                 new MhwStructData.Entry("Glider Mantle: Mount Multiplier", 280, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Evasion Mantle: Cooldown", 284, typeof(float)),
                 new MhwStructData.Entry("Evasion Mantle: Duration", 288, typeof(float)),
@@ -156,7 +155,7 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Evasion Mantle: Unk{k++}", 309, typeof(float)),
                 new MhwStructData.Entry($"Evasion Mantle: Unk{k++}", 313, typeof(ushort)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Impact Mantle: Cooldown", 315, typeof(float)),
                 new MhwStructData.Entry("Impact Mantle: Duration", 319, typeof(float)),
@@ -177,7 +176,7 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 379, typeof(float)),
                 new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 383, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Apothecary Mantle: Cooldown", 387, typeof(float)),
                 new MhwStructData.Entry("Apothecary Mantle: Duration", 391, typeof(float)),
@@ -186,19 +185,19 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Apothecary Mantle: Status Multiplier: Sleep", 403, typeof(float)),
                 new MhwStructData.Entry("Apothecary Mantle: Status Multiplier: Blast", 407, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Immunity Mantle: Cooldown", 411, typeof(float)),
                 new MhwStructData.Entry("Immunity Mantle: Duration", 415, typeof(float)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Affinity Booster: Cooldown", 419, typeof(float)),
                 new MhwStructData.Entry("Affinity Booster: Duration", 423, typeof(float)),
                 new MhwStructData.Entry("Affinity Booster: Buff Duration", 427, typeof(float)),
                 new MhwStructData.Entry("Affinity Booster: Buff Affinity", 431, typeof(int)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Bandit Mantle: Cooldown", 435, typeof(float)),
                 new MhwStructData.Entry("Bandit Mantle: Duration", 439, typeof(float)),
@@ -212,7 +211,7 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Bandit Mantle: Unk{m++}", 453, typeof(sbyte)),
                 new MhwStructData.Entry($"Bandit Mantle: Unk{m++}", 454, typeof(sbyte)),
 
-                new MhwStructData.Entry($"{SPACER}{j++}", 3, typeof(byte), true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Assassin's Hood: Cooldown", 455, typeof(float)),
                 new MhwStructData.Entry("Assassin's Hood: Duration", 459, typeof(float)),
@@ -258,7 +257,6 @@ namespace MHW_Generator {
             ushort l = 1;
             ushort m = 1;
             ushort n = 1;
-            ushort o = 1;
 
             var entries = new List<MhwStructData.Entry> {
                 new MhwStructData.Entry($"Unk{i++}", 8, typeof(float)),
@@ -328,7 +326,9 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Unk{i++}", 250, typeof(ushort)),
                 new MhwStructData.Entry($"Unk{i++}", 252, typeof(float)),
 
-                new MhwStructData.Entry($"------Skipping ahead {o++}.", 256, typeof(byte)),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry($"------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Health Initial Value", 408, typeof(float)),
                 new MhwStructData.Entry("Health Max Value", 412, typeof(float)),
@@ -336,6 +336,8 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Health Damage Recovery Wait Time", 420, typeof(float)),
                 new MhwStructData.Entry("Health Damage Recovery Interval", 424, typeof(float)),
                 new MhwStructData.Entry("Health Damage Recovery Value", 428, typeof(float)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry("Stamina Initial Value", 432, typeof(float)),
                 new MhwStructData.Entry("Stamina Max Value", 436, typeof(float)),
@@ -389,6 +391,8 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Stamina Time Reduce mCore: Unk{k++}", 620, typeof(float)),
                 new MhwStructData.Entry($"Stamina Time Reduce mCore: Unk{k++}", 624, typeof(float)),
 
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+
                 new MhwStructData.Entry($"Mount Reduce Stamina mCore: Unk{l++}", 628, typeof(float)),
                 new MhwStructData.Entry($"Mount Reduce Stamina mCore: Unk{l++}", 632, typeof(float)),
 
@@ -396,6 +400,8 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Mount Life Reduce Stamina mCore: Unk{m++}", 640, typeof(float)),
                 new MhwStructData.Entry($"Mount Life Reduce Stamina mCore: Unk{m++}", 644, typeof(float)),
                 new MhwStructData.Entry($"Mount Life Reduce Stamina mCore: Unk{m++}", 648, typeof(float)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 new MhwStructData.Entry($"Unk{i++}", 652, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 656, typeof(float)),
@@ -430,7 +436,9 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Acid Damage Interval Time", 759, typeof(float)),
                 new MhwStructData.Entry("Acid Damage Damage", 763, typeof(float)),
 
-                new MhwStructData.Entry($"------Skipping ahead {o++}.", 764, typeof(byte))
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry($"------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true)
             };
 
             const ulong iFramesStartOffset = 1157;
@@ -464,6 +472,8 @@ namespace MHW_Generator {
                 }
             }
 
+            entries.Add(new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true));
+
             const ulong evadeDistanceStartOffset = 1437;
 
             var evadeDistanceEntries = new List<string> {
@@ -492,9 +502,11 @@ namespace MHW_Generator {
                 }
             }
 
-            entries.Add(new MhwStructData.Entry($"------Skipping ahead {o++}.", 1569, typeof(float)));
-
             entries.AddRange(new List<MhwStructData.Entry> {
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry($"------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+
                 // HR Augment.
                 new MhwStructData.Entry("Wp HR Augment Attack Add (1)", 8571, typeof(byte)),
                 new MhwStructData.Entry("Wp HR Augment Attack Add (2)", 8572, typeof(byte)),
@@ -516,6 +528,8 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Wp HR Augment Defense Heal Damage Rate (3)", 8603, typeof(float)),
                 new MhwStructData.Entry("Wp HR Augment IB Unk", 8607, typeof(float)),
                 new MhwStructData.Entry("Wp HR Augment Lifesteal Cooldown", 8611, typeof(float)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 
                 // MR Augment now.
                 new MhwStructData.Entry("Wp MR Augment Attack (1)", 8615, typeof(byte)),
@@ -551,7 +565,10 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Wp MR Augment Element (1)", 8671, typeof(byte)),
                 new MhwStructData.Entry("Wp MR Augment Element (2)", 8672, typeof(byte)),
                 new MhwStructData.Entry("Wp MR Augment Element (3)", 8673, typeof(byte)),
-                new MhwStructData.Entry("Wp MR Augment Element (4)", 8674, typeof(byte))
+                new MhwStructData.Entry("Wp MR Augment Element (4)", 8674, typeof(byte)),
+
+                new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry($"------Skipping the rest.", 3, typeof(byte), true, forceUnique: true)
             });
 
             GeneratePlDataProps("MHW_Editor.PlData", "PlPlayerParam", new MhwStructData { // .plp

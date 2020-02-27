@@ -5,6 +5,22 @@ namespace MHW_Editor.PlData {
     // Initial Offset: "0"
     // Unique Id Formula: "0"
     public struct PlPlayerParam {
+        public byte _Skipping_the_rest_; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _Skipping_ahead_; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _Skipping_ahead_; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _Skipping_ahead_; // Offset: 3
+        public byte _; // Offset: 3
         public float Unk1; // Offset: 8
         public float Unk2; // Offset: 12
         public float Unk3; // Offset: 16
@@ -71,7 +87,6 @@ namespace MHW_Editor.PlData {
         public ushort Unk64; // Offset: 248
         public ushort Unk65; // Offset: 250
         public float Unk66; // Offset: 252
-        public byte _Skipping_ahead_1_; // Offset: 256
         public float Health_Initial_Value; // Offset: 408
         public float Health_Max_Value; // Offset: 412
         public float Health_Damage_Recovery_Rate; // Offset: 416
@@ -164,7 +179,6 @@ namespace MHW_Editor.PlData {
         public float Lava_Damage_Damage; // Offset: 755
         public float Acid_Damage_Interval_Time; // Offset: 759
         public float Acid_Damage_Damage; // Offset: 763
-        public byte _Skipping_ahead_2_; // Offset: 764
         public float Dodge_IFrames_Normal_Evasion_0; // Offset: 1157
         public float Dodge_IFrames_Normal_Evasion_1; // Offset: 1161
         public float Dodge_IFrames_Normal_Evasion_2; // Offset: 1165
@@ -268,7 +282,6 @@ namespace MHW_Editor.PlData {
         public float Evade_Dual_Blades_Slinger_Evade_Distance_1; // Offset: 1557
         public float Evade_Dual_Blades_Slinger_Evade_Distance_2; // Offset: 1561
         public float Evade_Dual_Blades_Slinger_Evade_Distance_3; // Offset: 1565
-        public float _Skipping_ahead_3_; // Offset: 1569
         public byte Wp_HR_Augment_Attack_Add_1_; // Offset: 8571
         public byte Wp_HR_Augment_Attack_Add_2_; // Offset: 8572
         public byte Wp_HR_Augment_Attack_Add_3_; // Offset: 8573

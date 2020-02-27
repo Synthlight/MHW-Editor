@@ -5,26 +5,26 @@ namespace MHW_Editor.PlData {
     // Initial Offset: "0"
     // Unique Id Formula: "0"
     public struct PlMantleParam {
-        public byte _15; // Offset: 3
-        public byte _5; // Offset: 3
-        public byte _16; // Offset: 3
-        public byte _6; // Offset: 3
-        public byte _2; // Offset: 3
-        public byte _7; // Offset: 3
-        public byte _8; // Offset: 3
-        public byte _9; // Offset: 3
-        public byte _10; // Offset: 3
-        public byte _1; // Offset: 3
-        public byte _11; // Offset: 3
-        public byte _12; // Offset: 3
-        public byte _13; // Offset: 3
-        public byte _20; // Offset: 3
-        public byte _14; // Offset: 3
-        public byte _19; // Offset: 3
-        public byte _18; // Offset: 3
-        public byte _17; // Offset: 3
-        public byte _4; // Offset: 3
-        public byte _3; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
+        public byte _; // Offset: 3
         public float Unk_Unk1; // Offset: 8
         public float Unk_Unk2; // Offset: 12
         public float Unk_Unk3; // Offset: 16

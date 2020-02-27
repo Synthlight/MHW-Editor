@@ -23,6 +23,7 @@ namespace MHW_Template {
             public readonly DataSourceType? dataSourceType;
             public readonly string[] extraOnPropertyChanged;
             public readonly string dataSourceCustomSorter;
+            public readonly bool forceUnique;
 
             public Entry(string displayName, ulong offset, Type type,
                          bool readOnly = false,
@@ -31,7 +32,8 @@ namespace MHW_Template {
                          string accessLevel = "public",
                          DataSourceType? dataSourceType = null,
                          string[] extraOnPropertyChanged = null,
-                         string dataSourceCustomSorter = "ButtonSorter") {
+                         string dataSourceCustomSorter = "ButtonSorter",
+                         bool forceUnique = false) {
                 this.displayName = displayName;
                 this.offset = offset;
                 this.type = new CodeTypeReference(type);
@@ -42,6 +44,7 @@ namespace MHW_Template {
                 this.dataSourceType = dataSourceType;
                 this.extraOnPropertyChanged = extraOnPropertyChanged;
                 this.dataSourceCustomSorter = dataSourceCustomSorter;
+                this.forceUnique = forceUnique;
             }
 
             public Entry(string name, ulong offset, Type type, Type enumReturn) : this(name, offset, type) {

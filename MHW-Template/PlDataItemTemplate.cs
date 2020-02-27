@@ -45,9 +45,15 @@ namespace MHW_Template
             
             #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
 
+    var sortIndex = 50;
+
     foreach (var entry in structData.entries) {
         var accessLevel = entry.accessLevel;
         var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+
+        if (entry.forceUnique) {
+            name += $"_{sortIndex}";
+        }
 
         // Don't need now, but uncomment in the future if we need to override a generated property.
         if (accessLevel == "private") continue;
@@ -58,29 +64,30 @@ namespace MHW_Template
             #line hidden
             this.Write("                new PlDataItemCustomView(this, \"");
             
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
+            #line 31 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.displayName));
             
             #line default
             #line hidden
             this.Write("\", \"");
             
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
+            #line 31 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(name));
             
             #line default
             #line hidden
             this.Write("\", Bytes, ");
             
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
+            #line 31 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(entry.offset));
             
             #line default
             #line hidden
             this.Write("),\r\n");
             
-            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
+            #line 32 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
 
+        sortIndex += 50;
     } // End loop.
 
             
@@ -88,7 +95,7 @@ namespace MHW_Template
             #line hidden
             this.Write("            };\r\n        }\r\n    }");
             
-            #line 31 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
+            #line 38 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
  // End class. 
             
             #line default

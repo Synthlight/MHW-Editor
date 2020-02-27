@@ -33,6 +33,10 @@ namespace <#= _namespace #> {
         var setCast = "";
         var getCast = "";
 
+        if (entry.forceUnique) {
+            name += $"_{sortIndex}";
+        }
+
         // Don't need now, but uncomment in the future if we need to override a generated property.
         if (accessLevel != "private") {
             accessLevel += " virtual";

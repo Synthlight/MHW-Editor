@@ -138,11 +138,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _1_displayName = "------------------------------------------------------1";
-        public const int _1_sortIndex = 500;
-        [SortOrder(_1_sortIndex)]
-        [DisplayName(_1_displayName)]
-        public virtual byte _1 {
+        public const string __500_displayName = "------------------------------------------------------";
+        public const int __500_sortIndex = 500;
+        [SortOrder(__500_sortIndex)]
+        [DisplayName(__500_displayName)]
+        public virtual byte __500 {
             get => GetData<byte>(3);
         }
 
@@ -202,11 +202,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _2_displayName = "------------------------------------------------------2";
-        public const int _2_sortIndex = 750;
-        [SortOrder(_2_sortIndex)]
-        [DisplayName(_2_displayName)]
-        public virtual byte _2 {
+        public const string __750_displayName = "------------------------------------------------------";
+        public const int __750_sortIndex = 750;
+        [SortOrder(__750_sortIndex)]
+        [DisplayName(__750_displayName)]
+        public virtual byte __750 {
             get => GetData<byte>(3);
         }
 
@@ -420,11 +420,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _3_displayName = "------------------------------------------------------3";
-        public const int _3_sortIndex = 1550;
-        [SortOrder(_3_sortIndex)]
-        [DisplayName(_3_displayName)]
-        public virtual byte _3 {
+        public const string __1550_displayName = "------------------------------------------------------";
+        public const int __1550_sortIndex = 1550;
+        [SortOrder(__1550_sortIndex)]
+        [DisplayName(__1550_displayName)]
+        public virtual byte __1550 {
             get => GetData<byte>(3);
         }
 
@@ -470,11 +470,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _4_displayName = "------------------------------------------------------4";
-        public const int _4_sortIndex = 1750;
-        [SortOrder(_4_sortIndex)]
-        [DisplayName(_4_displayName)]
-        public virtual byte _4 {
+        public const string __1750_displayName = "------------------------------------------------------";
+        public const int __1750_sortIndex = 1750;
+        [SortOrder(__1750_sortIndex)]
+        [DisplayName(__1750_displayName)]
+        public virtual byte __1750 {
             get => GetData<byte>(3);
         }
 
@@ -548,11 +548,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _5_displayName = "------------------------------------------------------5";
-        public const int _5_sortIndex = 2050;
-        [SortOrder(_5_sortIndex)]
-        [DisplayName(_5_displayName)]
-        public virtual byte _5 {
+        public const string __2050_displayName = "------------------------------------------------------";
+        public const int __2050_sortIndex = 2050;
+        [SortOrder(__2050_sortIndex)]
+        [DisplayName(__2050_displayName)]
+        public virtual byte __2050 {
             get => GetData<byte>(3);
         }
 
@@ -612,11 +612,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _6_displayName = "------------------------------------------------------6";
-        public const int _6_sortIndex = 2300;
-        [SortOrder(_6_sortIndex)]
-        [DisplayName(_6_displayName)]
-        public virtual byte _6 {
+        public const string __2300_displayName = "------------------------------------------------------";
+        public const int __2300_sortIndex = 2300;
+        [SortOrder(__2300_sortIndex)]
+        [DisplayName(__2300_displayName)]
+        public virtual byte __2300 {
             get => GetData<byte>(3);
         }
 
@@ -662,11 +662,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _7_displayName = "------------------------------------------------------7";
-        public const int _7_sortIndex = 2500;
-        [SortOrder(_7_sortIndex)]
-        [DisplayName(_7_displayName)]
-        public virtual byte _7 {
+        public const string __2500_displayName = "------------------------------------------------------";
+        public const int __2500_sortIndex = 2500;
+        [SortOrder(__2500_sortIndex)]
+        [DisplayName(__2500_displayName)]
+        public virtual byte __2500 {
             get => GetData<byte>(3);
         }
 
@@ -712,11 +712,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _8_displayName = "------------------------------------------------------8";
-        public const int _8_sortIndex = 2700;
-        [SortOrder(_8_sortIndex)]
-        [DisplayName(_8_displayName)]
-        public virtual byte _8 {
+        public const string __2700_displayName = "------------------------------------------------------";
+        public const int __2700_sortIndex = 2700;
+        [SortOrder(__2700_sortIndex)]
+        [DisplayName(__2700_displayName)]
+        public virtual byte __2700 {
             get => GetData<byte>(3);
         }
 
@@ -762,11 +762,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _9_displayName = "------------------------------------------------------9";
-        public const int _9_sortIndex = 2900;
-        [SortOrder(_9_sortIndex)]
-        [DisplayName(_9_displayName)]
-        public virtual byte _9 {
+        public const string __2900_displayName = "------------------------------------------------------";
+        public const int __2900_sortIndex = 2900;
+        [SortOrder(__2900_sortIndex)]
+        [DisplayName(__2900_displayName)]
+        public virtual byte __2900 {
             get => GetData<byte>(3);
         }
 
@@ -812,11 +812,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _10_displayName = "------------------------------------------------------10";
-        public const int _10_sortIndex = 3100;
-        [SortOrder(_10_sortIndex)]
-        [DisplayName(_10_displayName)]
-        public virtual byte _10 {
+        public const string __3100_displayName = "------------------------------------------------------";
+        public const int __3100_sortIndex = 3100;
+        [SortOrder(__3100_sortIndex)]
+        [DisplayName(__3100_displayName)]
+        public virtual byte __3100 {
             get => GetData<byte>(3);
         }
 
@@ -862,11 +862,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _11_displayName = "------------------------------------------------------11";
-        public const int _11_sortIndex = 3300;
-        [SortOrder(_11_sortIndex)]
-        [DisplayName(_11_displayName)]
-        public virtual byte _11 {
+        public const string __3300_displayName = "------------------------------------------------------";
+        public const int __3300_sortIndex = 3300;
+        [SortOrder(__3300_sortIndex)]
+        [DisplayName(__3300_displayName)]
+        public virtual byte __3300 {
             get => GetData<byte>(3);
         }
 
@@ -926,11 +926,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _12_displayName = "------------------------------------------------------12";
-        public const int _12_sortIndex = 3550;
-        [SortOrder(_12_sortIndex)]
-        [DisplayName(_12_displayName)]
-        public virtual byte _12 {
+        public const string __3550_displayName = "------------------------------------------------------";
+        public const int __3550_sortIndex = 3550;
+        [SortOrder(__3550_sortIndex)]
+        [DisplayName(__3550_displayName)]
+        public virtual byte __3550 {
             get => GetData<byte>(3);
         }
 
@@ -1032,11 +1032,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _13_displayName = "------------------------------------------------------13";
-        public const int _13_sortIndex = 3950;
-        [SortOrder(_13_sortIndex)]
-        [DisplayName(_13_displayName)]
-        public virtual byte _13 {
+        public const string __3950_displayName = "------------------------------------------------------";
+        public const int __3950_sortIndex = 3950;
+        [SortOrder(__3950_sortIndex)]
+        [DisplayName(__3950_displayName)]
+        public virtual byte __3950 {
             get => GetData<byte>(3);
         }
 
@@ -1082,11 +1082,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _14_displayName = "------------------------------------------------------14";
-        public const int _14_sortIndex = 4150;
-        [SortOrder(_14_sortIndex)]
-        [DisplayName(_14_displayName)]
-        public virtual byte _14 {
+        public const string __4150_displayName = "------------------------------------------------------";
+        public const int __4150_sortIndex = 4150;
+        [SortOrder(__4150_sortIndex)]
+        [DisplayName(__4150_displayName)]
+        public virtual byte __4150 {
             get => GetData<byte>(3);
         }
 
@@ -1230,11 +1230,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _15_displayName = "------------------------------------------------------15";
-        public const int _15_sortIndex = 4700;
-        [SortOrder(_15_sortIndex)]
-        [DisplayName(_15_displayName)]
-        public virtual byte _15 {
+        public const string __4700_displayName = "------------------------------------------------------";
+        public const int __4700_sortIndex = 4700;
+        [SortOrder(__4700_sortIndex)]
+        [DisplayName(__4700_displayName)]
+        public virtual byte __4700 {
             get => GetData<byte>(3);
         }
 
@@ -1490,11 +1490,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _16_displayName = "------------------------------------------------------16";
-        public const int _16_sortIndex = 5650;
-        [SortOrder(_16_sortIndex)]
-        [DisplayName(_16_displayName)]
-        public virtual byte _16 {
+        public const string __5650_displayName = "------------------------------------------------------";
+        public const int __5650_sortIndex = 5650;
+        [SortOrder(__5650_sortIndex)]
+        [DisplayName(__5650_displayName)]
+        public virtual byte __5650 {
             get => GetData<byte>(3);
         }
 
@@ -1582,11 +1582,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _17_displayName = "------------------------------------------------------17";
-        public const int _17_sortIndex = 6000;
-        [SortOrder(_17_sortIndex)]
-        [DisplayName(_17_displayName)]
-        public virtual byte _17 {
+        public const string __6000_displayName = "------------------------------------------------------";
+        public const int __6000_sortIndex = 6000;
+        [SortOrder(__6000_sortIndex)]
+        [DisplayName(__6000_displayName)]
+        public virtual byte __6000 {
             get => GetData<byte>(3);
         }
 
@@ -1618,11 +1618,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _18_displayName = "------------------------------------------------------18";
-        public const int _18_sortIndex = 6150;
-        [SortOrder(_18_sortIndex)]
-        [DisplayName(_18_displayName)]
-        public virtual byte _18 {
+        public const string __6150_displayName = "------------------------------------------------------";
+        public const int __6150_sortIndex = 6150;
+        [SortOrder(__6150_sortIndex)]
+        [DisplayName(__6150_displayName)]
+        public virtual byte __6150 {
             get => GetData<byte>(3);
         }
 
@@ -1682,11 +1682,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _19_displayName = "------------------------------------------------------19";
-        public const int _19_sortIndex = 6400;
-        [SortOrder(_19_sortIndex)]
-        [DisplayName(_19_displayName)]
-        public virtual byte _19 {
+        public const string __6400_displayName = "------------------------------------------------------";
+        public const int __6400_sortIndex = 6400;
+        [SortOrder(__6400_sortIndex)]
+        [DisplayName(__6400_displayName)]
+        public virtual byte __6400 {
             get => GetData<byte>(3);
         }
 
@@ -1844,11 +1844,11 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string _20_displayName = "------------------------------------------------------20";
-        public const int _20_sortIndex = 7000;
-        [SortOrder(_20_sortIndex)]
-        [DisplayName(_20_displayName)]
-        public virtual byte _20 {
+        public const string __7000_displayName = "------------------------------------------------------";
+        public const int __7000_sortIndex = 7000;
+        [SortOrder(__7000_sortIndex)]
+        [DisplayName(__7000_displayName)]
+        public virtual byte __7000 {
             get => GetData<byte>(3);
         }
 

@@ -14,9 +14,15 @@ namespace <#= _namespace #> {
         public ObservableCollection<PlDataItemCustomView> GetCustomView() {
             return new ObservableCollection<PlDataItemCustomView> {
 <#
+    var sortIndex = 50;
+
     foreach (var entry in structData.entries) {
         var accessLevel = entry.accessLevel;
         var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+
+        if (entry.forceUnique) {
+            name += $"_{sortIndex}";
+        }
 
         // Don't need now, but uncomment in the future if we need to override a generated property.
         if (accessLevel == "private") continue;
@@ -24,6 +30,7 @@ namespace <#= _namespace #> {
 #>
                 new PlDataItemCustomView(this, "<#= entry.displayName #>", "<#= name #>", Bytes, <#= entry.offset #>),
 <#
+        sortIndex += 50;
     } // End loop.
 #>
             };
