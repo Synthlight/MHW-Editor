@@ -138,7 +138,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __500_displayName = "------------------------------------------------------";
+        public const string __500_displayName = "-------------------------------------------------------------------------------------------";
         public const int __500_sortIndex = 500;
         [SortOrder(__500_sortIndex)]
         [DisplayName(__500_displayName)]
@@ -202,7 +202,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __750_displayName = "------------------------------------------------------";
+        public const string __750_displayName = "-------------------------------------------------------------------------------------------";
         public const int __750_sortIndex = 750;
         [SortOrder(__750_sortIndex)]
         [DisplayName(__750_displayName)]
@@ -420,7 +420,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __1550_displayName = "------------------------------------------------------";
+        public const string __1550_displayName = "-------------------------------------------------------------------------------------------";
         public const int __1550_sortIndex = 1550;
         [SortOrder(__1550_sortIndex)]
         [DisplayName(__1550_displayName)]
@@ -470,7 +470,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __1750_displayName = "------------------------------------------------------";
+        public const string __1750_displayName = "-------------------------------------------------------------------------------------------";
         public const int __1750_sortIndex = 1750;
         [SortOrder(__1750_sortIndex)]
         [DisplayName(__1750_displayName)]
@@ -548,7 +548,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __2050_displayName = "------------------------------------------------------";
+        public const string __2050_displayName = "-------------------------------------------------------------------------------------------";
         public const int __2050_sortIndex = 2050;
         [SortOrder(__2050_sortIndex)]
         [DisplayName(__2050_displayName)]
@@ -612,7 +612,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __2300_displayName = "------------------------------------------------------";
+        public const string __2300_displayName = "-------------------------------------------------------------------------------------------";
         public const int __2300_sortIndex = 2300;
         [SortOrder(__2300_sortIndex)]
         [DisplayName(__2300_displayName)]
@@ -662,7 +662,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __2500_displayName = "------------------------------------------------------";
+        public const string __2500_displayName = "-------------------------------------------------------------------------------------------";
         public const int __2500_sortIndex = 2500;
         [SortOrder(__2500_sortIndex)]
         [DisplayName(__2500_displayName)]
@@ -712,7 +712,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __2700_displayName = "------------------------------------------------------";
+        public const string __2700_displayName = "-------------------------------------------------------------------------------------------";
         public const int __2700_sortIndex = 2700;
         [SortOrder(__2700_sortIndex)]
         [DisplayName(__2700_displayName)]
@@ -762,7 +762,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __2900_displayName = "------------------------------------------------------";
+        public const string __2900_displayName = "-------------------------------------------------------------------------------------------";
         public const int __2900_sortIndex = 2900;
         [SortOrder(__2900_sortIndex)]
         [DisplayName(__2900_displayName)]
@@ -812,7 +812,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __3100_displayName = "------------------------------------------------------";
+        public const string __3100_displayName = "-------------------------------------------------------------------------------------------";
         public const int __3100_sortIndex = 3100;
         [SortOrder(__3100_sortIndex)]
         [DisplayName(__3100_displayName)]
@@ -862,7 +862,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __3300_displayName = "------------------------------------------------------";
+        public const string __3300_displayName = "-------------------------------------------------------------------------------------------";
         public const int __3300_sortIndex = 3300;
         [SortOrder(__3300_sortIndex)]
         [DisplayName(__3300_displayName)]
@@ -926,7 +926,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __3550_displayName = "------------------------------------------------------";
+        public const string __3550_displayName = "-------------------------------------------------------------------------------------------";
         public const int __3550_sortIndex = 3550;
         [SortOrder(__3550_sortIndex)]
         [DisplayName(__3550_displayName)]
@@ -1032,7 +1032,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __3950_displayName = "------------------------------------------------------";
+        public const string __3950_displayName = "-------------------------------------------------------------------------------------------";
         public const int __3950_sortIndex = 3950;
         [SortOrder(__3950_sortIndex)]
         [DisplayName(__3950_displayName)]
@@ -1082,7 +1082,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __4150_displayName = "------------------------------------------------------";
+        public const string __4150_displayName = "-------------------------------------------------------------------------------------------";
         public const int __4150_sortIndex = 4150;
         [SortOrder(__4150_sortIndex)]
         [DisplayName(__4150_displayName)]
@@ -1230,7 +1230,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __4700_displayName = "------------------------------------------------------";
+        public const string __4700_displayName = "-------------------------------------------------------------------------------------------";
         public const int __4700_sortIndex = 4700;
         [SortOrder(__4700_sortIndex)]
         [DisplayName(__4700_displayName)]
@@ -1266,231 +1266,231 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Impact_Mantle_Unk1_displayName = "Impact Mantle: Unk1";
-        public const int Impact_Mantle_Unk1_sortIndex = 4850;
-        [SortOrder(Impact_Mantle_Unk1_sortIndex)]
-        [DisplayName(Impact_Mantle_Unk1_displayName)]
-        public virtual float Impact_Mantle_Unk1 {
+        public const string Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus_displayName = "Impact Mantle: Motion Value Needed for Light Attack Stun Bonus";
+        public const int Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus_sortIndex = 4850;
+        [SortOrder(Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus_displayName)]
+        public virtual float Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus {
             get => GetData<float>(323);
             set {
                 if (GetData<float>(323) == value) return;
-                SetData(323, value, nameof(Impact_Mantle_Unk1));
+                SetData(323, value, nameof(Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Unk1));
+                OnPropertyChanged(nameof(Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Unk2_displayName = "Impact Mantle: Unk2";
-        public const int Impact_Mantle_Unk2_sortIndex = 4900;
-        [SortOrder(Impact_Mantle_Unk2_sortIndex)]
-        [DisplayName(Impact_Mantle_Unk2_displayName)]
-        public virtual float Impact_Mantle_Unk2 {
+        public const string Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus_displayName = "Impact Mantle: Motion Value Needed for Heavy Attack Stun Bonus";
+        public const int Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus_sortIndex = 4900;
+        [SortOrder(Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus_displayName)]
+        public virtual float Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus {
             get => GetData<float>(327);
             set {
                 if (GetData<float>(327) == value) return;
-                SetData(327, value, nameof(Impact_Mantle_Unk2));
+                SetData(327, value, nameof(Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Unk2));
+                OnPropertyChanged(nameof(Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Unk3_displayName = "Impact Mantle: Unk3";
-        public const int Impact_Mantle_Unk3_sortIndex = 4950;
-        [SortOrder(Impact_Mantle_Unk3_sortIndex)]
-        [DisplayName(Impact_Mantle_Unk3_displayName)]
-        public virtual float Impact_Mantle_Unk3 {
+        public const string Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus_displayName = "Impact Mantle: Motion Value Needed for Extreme Attack Stun Bonus";
+        public const int Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus_sortIndex = 4950;
+        [SortOrder(Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus_displayName)]
+        public virtual float Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus {
             get => GetData<float>(331);
             set {
                 if (GetData<float>(331) == value) return;
-                SetData(331, value, nameof(Impact_Mantle_Unk3));
+                SetData(331, value, nameof(Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Unk3));
+                OnPropertyChanged(nameof(Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Stun_Weak_displayName = "Impact Mantle: Stun Weak";
-        public const int Impact_Mantle_Stun_Weak_sortIndex = 5000;
-        [SortOrder(Impact_Mantle_Stun_Weak_sortIndex)]
-        [DisplayName(Impact_Mantle_Stun_Weak_displayName)]
-        public virtual float Impact_Mantle_Stun_Weak {
+        public const string Impact_Mantle_Weak_Attack_Stun_Bonus_displayName = "Impact Mantle: Weak Attack Stun Bonus";
+        public const int Impact_Mantle_Weak_Attack_Stun_Bonus_sortIndex = 5000;
+        [SortOrder(Impact_Mantle_Weak_Attack_Stun_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Weak_Attack_Stun_Bonus_displayName)]
+        public virtual float Impact_Mantle_Weak_Attack_Stun_Bonus {
             get => GetData<float>(335);
             set {
                 if (GetData<float>(335) == value) return;
-                SetData(335, value, nameof(Impact_Mantle_Stun_Weak));
+                SetData(335, value, nameof(Impact_Mantle_Weak_Attack_Stun_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Stun_Weak));
+                OnPropertyChanged(nameof(Impact_Mantle_Weak_Attack_Stun_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Stun_Medium_displayName = "Impact Mantle: Stun Medium";
-        public const int Impact_Mantle_Stun_Medium_sortIndex = 5050;
-        [SortOrder(Impact_Mantle_Stun_Medium_sortIndex)]
-        [DisplayName(Impact_Mantle_Stun_Medium_displayName)]
-        public virtual float Impact_Mantle_Stun_Medium {
+        public const string Impact_Mantle_Light_Attack_Stun_Bonus_displayName = "Impact Mantle: Light Attack Stun Bonus";
+        public const int Impact_Mantle_Light_Attack_Stun_Bonus_sortIndex = 5050;
+        [SortOrder(Impact_Mantle_Light_Attack_Stun_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Light_Attack_Stun_Bonus_displayName)]
+        public virtual float Impact_Mantle_Light_Attack_Stun_Bonus {
             get => GetData<float>(339);
             set {
                 if (GetData<float>(339) == value) return;
-                SetData(339, value, nameof(Impact_Mantle_Stun_Medium));
+                SetData(339, value, nameof(Impact_Mantle_Light_Attack_Stun_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Stun_Medium));
+                OnPropertyChanged(nameof(Impact_Mantle_Light_Attack_Stun_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Stun_Strong_displayName = "Impact Mantle: Stun Strong";
-        public const int Impact_Mantle_Stun_Strong_sortIndex = 5100;
-        [SortOrder(Impact_Mantle_Stun_Strong_sortIndex)]
-        [DisplayName(Impact_Mantle_Stun_Strong_displayName)]
-        public virtual float Impact_Mantle_Stun_Strong {
+        public const string Impact_Mantle_Heavy_Attack_Stun_Bonus_displayName = "Impact Mantle: Heavy Attack Stun Bonus";
+        public const int Impact_Mantle_Heavy_Attack_Stun_Bonus_sortIndex = 5100;
+        [SortOrder(Impact_Mantle_Heavy_Attack_Stun_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Heavy_Attack_Stun_Bonus_displayName)]
+        public virtual float Impact_Mantle_Heavy_Attack_Stun_Bonus {
             get => GetData<float>(343);
             set {
                 if (GetData<float>(343) == value) return;
-                SetData(343, value, nameof(Impact_Mantle_Stun_Strong));
+                SetData(343, value, nameof(Impact_Mantle_Heavy_Attack_Stun_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Stun_Strong));
+                OnPropertyChanged(nameof(Impact_Mantle_Heavy_Attack_Stun_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Stun_Extreme_displayName = "Impact Mantle: Stun Extreme";
-        public const int Impact_Mantle_Stun_Extreme_sortIndex = 5150;
-        [SortOrder(Impact_Mantle_Stun_Extreme_sortIndex)]
-        [DisplayName(Impact_Mantle_Stun_Extreme_displayName)]
-        public virtual float Impact_Mantle_Stun_Extreme {
+        public const string Impact_Mantle_Extreme_Attack_Stun_Bonus_displayName = "Impact Mantle: Extreme Attack Stun Bonus";
+        public const int Impact_Mantle_Extreme_Attack_Stun_Bonus_sortIndex = 5150;
+        [SortOrder(Impact_Mantle_Extreme_Attack_Stun_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Extreme_Attack_Stun_Bonus_displayName)]
+        public virtual float Impact_Mantle_Extreme_Attack_Stun_Bonus {
             get => GetData<float>(347);
             set {
                 if (GetData<float>(347) == value) return;
-                SetData(347, value, nameof(Impact_Mantle_Stun_Extreme));
+                SetData(347, value, nameof(Impact_Mantle_Extreme_Attack_Stun_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Stun_Extreme));
+                OnPropertyChanged(nameof(Impact_Mantle_Extreme_Attack_Stun_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Stun_Multiplier_displayName = "Impact Mantle: Stun Multiplier";
-        public const int Impact_Mantle_Stun_Multiplier_sortIndex = 5200;
-        [SortOrder(Impact_Mantle_Stun_Multiplier_sortIndex)]
-        [DisplayName(Impact_Mantle_Stun_Multiplier_displayName)]
-        public virtual float Impact_Mantle_Stun_Multiplier {
+        public const string Impact_Mantle_Existing_Stun_Multiplier_displayName = "Impact Mantle: Existing Stun Multiplier";
+        public const int Impact_Mantle_Existing_Stun_Multiplier_sortIndex = 5200;
+        [SortOrder(Impact_Mantle_Existing_Stun_Multiplier_sortIndex)]
+        [DisplayName(Impact_Mantle_Existing_Stun_Multiplier_displayName)]
+        public virtual float Impact_Mantle_Existing_Stun_Multiplier {
             get => GetData<float>(351);
             set {
                 if (GetData<float>(351) == value) return;
-                SetData(351, value, nameof(Impact_Mantle_Stun_Multiplier));
+                SetData(351, value, nameof(Impact_Mantle_Existing_Stun_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Stun_Multiplier));
+                OnPropertyChanged(nameof(Impact_Mantle_Existing_Stun_Multiplier));
             }
         }
 
-        public const string Impact_Mantle_Unk4_displayName = "Impact Mantle: Unk4";
-        public const int Impact_Mantle_Unk4_sortIndex = 5250;
-        [SortOrder(Impact_Mantle_Unk4_sortIndex)]
-        [DisplayName(Impact_Mantle_Unk4_displayName)]
-        public virtual float Impact_Mantle_Unk4 {
+        public const string Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Motion Value Needed for Light Attack Exhaust Bonus";
+        public const int Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus_sortIndex = 5250;
+        [SortOrder(Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus_displayName)]
+        public virtual float Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus {
             get => GetData<float>(355);
             set {
                 if (GetData<float>(355) == value) return;
-                SetData(355, value, nameof(Impact_Mantle_Unk4));
+                SetData(355, value, nameof(Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Unk4));
+                OnPropertyChanged(nameof(Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Unk5_displayName = "Impact Mantle: Unk5";
-        public const int Impact_Mantle_Unk5_sortIndex = 5300;
-        [SortOrder(Impact_Mantle_Unk5_sortIndex)]
-        [DisplayName(Impact_Mantle_Unk5_displayName)]
-        public virtual float Impact_Mantle_Unk5 {
+        public const string Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Motion Value Needed for Heavy Attack Exhaust Bonus";
+        public const int Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus_sortIndex = 5300;
+        [SortOrder(Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus_displayName)]
+        public virtual float Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus {
             get => GetData<float>(359);
             set {
                 if (GetData<float>(359) == value) return;
-                SetData(359, value, nameof(Impact_Mantle_Unk5));
+                SetData(359, value, nameof(Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Unk5));
+                OnPropertyChanged(nameof(Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Unk6_displayName = "Impact Mantle: Unk6";
-        public const int Impact_Mantle_Unk6_sortIndex = 5350;
-        [SortOrder(Impact_Mantle_Unk6_sortIndex)]
-        [DisplayName(Impact_Mantle_Unk6_displayName)]
-        public virtual float Impact_Mantle_Unk6 {
+        public const string Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Motion Value Needed for Extreme Attack Exhaust Bonus";
+        public const int Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus_sortIndex = 5350;
+        [SortOrder(Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus_displayName)]
+        public virtual float Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus {
             get => GetData<float>(363);
             set {
                 if (GetData<float>(363) == value) return;
-                SetData(363, value, nameof(Impact_Mantle_Unk6));
+                SetData(363, value, nameof(Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Unk6));
+                OnPropertyChanged(nameof(Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Unk7_displayName = "Impact Mantle: Unk7";
-        public const int Impact_Mantle_Unk7_sortIndex = 5400;
-        [SortOrder(Impact_Mantle_Unk7_sortIndex)]
-        [DisplayName(Impact_Mantle_Unk7_displayName)]
-        public virtual float Impact_Mantle_Unk7 {
+        public const string Impact_Mantle_Weak_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Weak Attack Exhaust Bonus";
+        public const int Impact_Mantle_Weak_Attack_Exhaust_Bonus_sortIndex = 5400;
+        [SortOrder(Impact_Mantle_Weak_Attack_Exhaust_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Weak_Attack_Exhaust_Bonus_displayName)]
+        public virtual float Impact_Mantle_Weak_Attack_Exhaust_Bonus {
             get => GetData<float>(367);
             set {
                 if (GetData<float>(367) == value) return;
-                SetData(367, value, nameof(Impact_Mantle_Unk7));
+                SetData(367, value, nameof(Impact_Mantle_Weak_Attack_Exhaust_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Unk7));
+                OnPropertyChanged(nameof(Impact_Mantle_Weak_Attack_Exhaust_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Unk8_displayName = "Impact Mantle: Unk8";
-        public const int Impact_Mantle_Unk8_sortIndex = 5450;
-        [SortOrder(Impact_Mantle_Unk8_sortIndex)]
-        [DisplayName(Impact_Mantle_Unk8_displayName)]
-        public virtual float Impact_Mantle_Unk8 {
+        public const string Impact_Mantle_Light_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Light Attack Exhaust Bonus";
+        public const int Impact_Mantle_Light_Attack_Exhaust_Bonus_sortIndex = 5450;
+        [SortOrder(Impact_Mantle_Light_Attack_Exhaust_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Light_Attack_Exhaust_Bonus_displayName)]
+        public virtual float Impact_Mantle_Light_Attack_Exhaust_Bonus {
             get => GetData<float>(371);
             set {
                 if (GetData<float>(371) == value) return;
-                SetData(371, value, nameof(Impact_Mantle_Unk8));
+                SetData(371, value, nameof(Impact_Mantle_Light_Attack_Exhaust_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Unk8));
+                OnPropertyChanged(nameof(Impact_Mantle_Light_Attack_Exhaust_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Unk9_displayName = "Impact Mantle: Unk9";
-        public const int Impact_Mantle_Unk9_sortIndex = 5500;
-        [SortOrder(Impact_Mantle_Unk9_sortIndex)]
-        [DisplayName(Impact_Mantle_Unk9_displayName)]
-        public virtual float Impact_Mantle_Unk9 {
+        public const string Impact_Mantle_Heavy_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Heavy Attack Exhaust Bonus";
+        public const int Impact_Mantle_Heavy_Attack_Exhaust_Bonus_sortIndex = 5500;
+        [SortOrder(Impact_Mantle_Heavy_Attack_Exhaust_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Heavy_Attack_Exhaust_Bonus_displayName)]
+        public virtual float Impact_Mantle_Heavy_Attack_Exhaust_Bonus {
             get => GetData<float>(375);
             set {
                 if (GetData<float>(375) == value) return;
-                SetData(375, value, nameof(Impact_Mantle_Unk9));
+                SetData(375, value, nameof(Impact_Mantle_Heavy_Attack_Exhaust_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Unk9));
+                OnPropertyChanged(nameof(Impact_Mantle_Heavy_Attack_Exhaust_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Unk10_displayName = "Impact Mantle: Unk10";
-        public const int Impact_Mantle_Unk10_sortIndex = 5550;
-        [SortOrder(Impact_Mantle_Unk10_sortIndex)]
-        [DisplayName(Impact_Mantle_Unk10_displayName)]
-        public virtual float Impact_Mantle_Unk10 {
+        public const string Impact_Mantle_Extreme_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Extreme Attack Exhaust Bonus";
+        public const int Impact_Mantle_Extreme_Attack_Exhaust_Bonus_sortIndex = 5550;
+        [SortOrder(Impact_Mantle_Extreme_Attack_Exhaust_Bonus_sortIndex)]
+        [DisplayName(Impact_Mantle_Extreme_Attack_Exhaust_Bonus_displayName)]
+        public virtual float Impact_Mantle_Extreme_Attack_Exhaust_Bonus {
             get => GetData<float>(379);
             set {
                 if (GetData<float>(379) == value) return;
-                SetData(379, value, nameof(Impact_Mantle_Unk10));
+                SetData(379, value, nameof(Impact_Mantle_Extreme_Attack_Exhaust_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Unk10));
+                OnPropertyChanged(nameof(Impact_Mantle_Extreme_Attack_Exhaust_Bonus));
             }
         }
 
-        public const string Impact_Mantle_Unk11_displayName = "Impact Mantle: Unk11";
-        public const int Impact_Mantle_Unk11_sortIndex = 5600;
-        [SortOrder(Impact_Mantle_Unk11_sortIndex)]
-        [DisplayName(Impact_Mantle_Unk11_displayName)]
-        public virtual float Impact_Mantle_Unk11 {
+        public const string Impact_Mantle_Existing_Exhaust_Multiplier_displayName = "Impact Mantle: Existing Exhaust Multiplier";
+        public const int Impact_Mantle_Existing_Exhaust_Multiplier_sortIndex = 5600;
+        [SortOrder(Impact_Mantle_Existing_Exhaust_Multiplier_sortIndex)]
+        [DisplayName(Impact_Mantle_Existing_Exhaust_Multiplier_displayName)]
+        public virtual float Impact_Mantle_Existing_Exhaust_Multiplier {
             get => GetData<float>(383);
             set {
                 if (GetData<float>(383) == value) return;
-                SetData(383, value, nameof(Impact_Mantle_Unk11));
+                SetData(383, value, nameof(Impact_Mantle_Existing_Exhaust_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Impact_Mantle_Unk11));
+                OnPropertyChanged(nameof(Impact_Mantle_Existing_Exhaust_Multiplier));
             }
         }
 
-        public const string __5650_displayName = "------------------------------------------------------";
+        public const string __5650_displayName = "-------------------------------------------------------------------------------------------";
         public const int __5650_sortIndex = 5650;
         [SortOrder(__5650_sortIndex)]
         [DisplayName(__5650_displayName)]
@@ -1582,7 +1582,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __6000_displayName = "------------------------------------------------------";
+        public const string __6000_displayName = "-------------------------------------------------------------------------------------------";
         public const int __6000_sortIndex = 6000;
         [SortOrder(__6000_sortIndex)]
         [DisplayName(__6000_displayName)]
@@ -1618,7 +1618,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __6150_displayName = "------------------------------------------------------";
+        public const string __6150_displayName = "-------------------------------------------------------------------------------------------";
         public const int __6150_sortIndex = 6150;
         [SortOrder(__6150_sortIndex)]
         [DisplayName(__6150_displayName)]
@@ -1682,7 +1682,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __6400_displayName = "------------------------------------------------------";
+        public const string __6400_displayName = "-------------------------------------------------------------------------------------------";
         public const int __6400_sortIndex = 6400;
         [SortOrder(__6400_sortIndex)]
         [DisplayName(__6400_displayName)]
@@ -1844,7 +1844,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __7000_displayName = "------------------------------------------------------";
+        public const string __7000_displayName = "-------------------------------------------------------------------------------------------";
         public const int __7000_sortIndex = 7000;
         [SortOrder(__7000_sortIndex)]
         [DisplayName(__7000_displayName)]

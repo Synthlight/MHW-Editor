@@ -3,7 +3,7 @@ using MHW_Template;
 
 namespace MHW_Generator {
     public static partial class Program {
-        private const string SPACER = "------------------------------------------------------";
+        private const string SPACER = "-------------------------------------------------------------------------------------------";
 
         private static void GenCommonPl() {
             GenPlItemParam();
@@ -156,7 +156,6 @@ namespace MHW_Generator {
             // 'Unk' counters.
             ushort i = 1;
             ushort k = 1;
-            ushort l = 1;
             ushort m = 1;
             ushort n = 1;
 
@@ -284,22 +283,22 @@ namespace MHW_Generator {
 
                 new MhwStructData.Entry("Impact Mantle: Cooldown", 315, typeof(float)),
                 new MhwStructData.Entry("Impact Mantle: Duration", 319, typeof(float)),
-                new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 323, typeof(float)),
-                new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 327, typeof(float)),
-                new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 331, typeof(float)),
-                new MhwStructData.Entry("Impact Mantle: Stun Weak", 335, typeof(float)),
-                new MhwStructData.Entry("Impact Mantle: Stun Medium", 339, typeof(float)),
-                new MhwStructData.Entry("Impact Mantle: Stun Strong", 343, typeof(float)),
-                new MhwStructData.Entry("Impact Mantle: Stun Extreme", 347, typeof(float)),
-                new MhwStructData.Entry("Impact Mantle: Stun Multiplier", 351, typeof(float)),
-                new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 355, typeof(float)),
-                new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 359, typeof(float)),
-                new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 363, typeof(float)),
-                new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 367, typeof(float)),
-                new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 371, typeof(float)),
-                new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 375, typeof(float)),
-                new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 379, typeof(float)),
-                new MhwStructData.Entry($"Impact Mantle: Unk{l++}", 383, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Motion Value Needed for Light Attack Stun Bonus", 323, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Motion Value Needed for Heavy Attack Stun Bonus", 327, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Motion Value Needed for Extreme Attack Stun Bonus", 331, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Weak Attack Stun Bonus", 335, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Light Attack Stun Bonus", 339, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Heavy Attack Stun Bonus", 343, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Extreme Attack Stun Bonus", 347, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Existing Stun Multiplier", 351, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Motion Value Needed for Light Attack Exhaust Bonus", 355, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Motion Value Needed for Heavy Attack Exhaust Bonus", 359, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Motion Value Needed for Extreme Attack Exhaust Bonus", 363, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Weak Attack Exhaust Bonus", 367, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Light Attack Exhaust Bonus", 371, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Heavy Attack Exhaust Bonus", 375, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Extreme Attack Exhaust Bonus", 379, typeof(float)),
+                new MhwStructData.Entry("Impact Mantle: Existing Exhaust Multiplier", 383, typeof(float)),
 
                 new MhwStructData.Entry($"{SPACER}", 3, typeof(byte), true, forceUnique: true),
 

@@ -86,22 +86,22 @@ namespace MHW_Editor.PlData {
         public ushort Evasion_Mantle_Unk6; // Offset: 313
         public float Impact_Mantle_Cooldown; // Offset: 315
         public float Impact_Mantle_Duration; // Offset: 319
-        public float Impact_Mantle_Unk1; // Offset: 323
-        public float Impact_Mantle_Unk2; // Offset: 327
-        public float Impact_Mantle_Unk3; // Offset: 331
-        public float Impact_Mantle_Stun_Weak; // Offset: 335
-        public float Impact_Mantle_Stun_Medium; // Offset: 339
-        public float Impact_Mantle_Stun_Strong; // Offset: 343
-        public float Impact_Mantle_Stun_Extreme; // Offset: 347
-        public float Impact_Mantle_Stun_Multiplier; // Offset: 351
-        public float Impact_Mantle_Unk4; // Offset: 355
-        public float Impact_Mantle_Unk5; // Offset: 359
-        public float Impact_Mantle_Unk6; // Offset: 363
-        public float Impact_Mantle_Unk7; // Offset: 367
-        public float Impact_Mantle_Unk8; // Offset: 371
-        public float Impact_Mantle_Unk9; // Offset: 375
-        public float Impact_Mantle_Unk10; // Offset: 379
-        public float Impact_Mantle_Unk11; // Offset: 383
+        public float Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus; // Offset: 323
+        public float Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus; // Offset: 327
+        public float Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus; // Offset: 331
+        public float Impact_Mantle_Weak_Attack_Stun_Bonus; // Offset: 335
+        public float Impact_Mantle_Light_Attack_Stun_Bonus; // Offset: 339
+        public float Impact_Mantle_Heavy_Attack_Stun_Bonus; // Offset: 343
+        public float Impact_Mantle_Extreme_Attack_Stun_Bonus; // Offset: 347
+        public float Impact_Mantle_Existing_Stun_Multiplier; // Offset: 351
+        public float Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus; // Offset: 355
+        public float Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus; // Offset: 359
+        public float Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus; // Offset: 363
+        public float Impact_Mantle_Weak_Attack_Exhaust_Bonus; // Offset: 367
+        public float Impact_Mantle_Light_Attack_Exhaust_Bonus; // Offset: 371
+        public float Impact_Mantle_Heavy_Attack_Exhaust_Bonus; // Offset: 375
+        public float Impact_Mantle_Extreme_Attack_Exhaust_Bonus; // Offset: 379
+        public float Impact_Mantle_Existing_Exhaust_Multiplier; // Offset: 383
         public float Apothecary_Mantle_Cooldown; // Offset: 387
         public float Apothecary_Mantle_Duration; // Offset: 391
         public float Apothecary_Mantle_Status_Multiplier_Poison; // Offset: 395

@@ -278,7 +278,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __1000_displayName = "------------------------------------------------------";
+        public const string __1000_displayName = "-------------------------------------------------------------------------------------------";
         public const int __1000_sortIndex = 1000;
         [SortOrder(__1000_sortIndex)]
         [DisplayName(__1000_displayName)]
@@ -440,7 +440,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __1600_displayName = "------------------------------------------------------";
+        public const string __1600_displayName = "-------------------------------------------------------------------------------------------";
         public const int __1600_sortIndex = 1600;
         [SortOrder(__1600_sortIndex)]
         [DisplayName(__1600_displayName)]
@@ -588,7 +588,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __2150_displayName = "------------------------------------------------------";
+        public const string __2150_displayName = "-------------------------------------------------------------------------------------------";
         public const int __2150_sortIndex = 2150;
         [SortOrder(__2150_sortIndex)]
         [DisplayName(__2150_displayName)]
@@ -862,7 +862,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __3150_displayName = "------------------------------------------------------";
+        public const string __3150_displayName = "-------------------------------------------------------------------------------------------";
         public const int __3150_sortIndex = 3150;
         [SortOrder(__3150_sortIndex)]
         [DisplayName(__3150_displayName)]
@@ -996,7 +996,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __3650_displayName = "------------------------------------------------------";
+        public const string __3650_displayName = "-------------------------------------------------------------------------------------------";
         public const int __3650_sortIndex = 3650;
         [SortOrder(__3650_sortIndex)]
         [DisplayName(__3650_displayName)]
@@ -1088,7 +1088,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __4000_displayName = "------------------------------------------------------";
+        public const string __4000_displayName = "-------------------------------------------------------------------------------------------";
         public const int __4000_sortIndex = 4000;
         [SortOrder(__4000_sortIndex)]
         [DisplayName(__4000_displayName)]
@@ -1180,7 +1180,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __4350_displayName = "------------------------------------------------------";
+        public const string __4350_displayName = "-------------------------------------------------------------------------------------------";
         public const int __4350_sortIndex = 4350;
         [SortOrder(__4350_sortIndex)]
         [DisplayName(__4350_displayName)]
@@ -1272,7 +1272,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __4700_displayName = "------------------------------------------------------";
+        public const string __4700_displayName = "-------------------------------------------------------------------------------------------";
         public const int __4700_sortIndex = 4700;
         [SortOrder(__4700_sortIndex)]
         [DisplayName(__4700_displayName)]
@@ -1364,7 +1364,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __5050_displayName = "------------------------------------------------------";
+        public const string __5050_displayName = "-------------------------------------------------------------------------------------------";
         public const int __5050_sortIndex = 5050;
         [SortOrder(__5050_sortIndex)]
         [DisplayName(__5050_displayName)]
@@ -1456,7 +1456,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __5400_displayName = "------------------------------------------------------";
+        public const string __5400_displayName = "-------------------------------------------------------------------------------------------";
         public const int __5400_sortIndex = 5400;
         [SortOrder(__5400_sortIndex)]
         [DisplayName(__5400_displayName)]
@@ -1548,7 +1548,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __5750_displayName = "------------------------------------------------------";
+        public const string __5750_displayName = "-------------------------------------------------------------------------------------------";
         public const int __5750_sortIndex = 5750;
         [SortOrder(__5750_sortIndex)]
         [DisplayName(__5750_displayName)]
@@ -1640,7 +1640,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __6100_displayName = "------------------------------------------------------";
+        public const string __6100_displayName = "-------------------------------------------------------------------------------------------";
         public const int __6100_sortIndex = 6100;
         [SortOrder(__6100_sortIndex)]
         [DisplayName(__6100_displayName)]
@@ -1732,7 +1732,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __6450_displayName = "------------------------------------------------------";
+        public const string __6450_displayName = "-------------------------------------------------------------------------------------------";
         public const int __6450_sortIndex = 6450;
         [SortOrder(__6450_sortIndex)]
         [DisplayName(__6450_displayName)]
@@ -1824,7 +1824,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __6800_displayName = "------------------------------------------------------";
+        public const string __6800_displayName = "-------------------------------------------------------------------------------------------";
         public const int __6800_sortIndex = 6800;
         [SortOrder(__6800_sortIndex)]
         [DisplayName(__6800_displayName)]
@@ -1916,7 +1916,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __7150_displayName = "------------------------------------------------------";
+        public const string __7150_displayName = "-------------------------------------------------------------------------------------------";
         public const int __7150_sortIndex = 7150;
         [SortOrder(__7150_sortIndex)]
         [DisplayName(__7150_displayName)]
@@ -2008,7 +2008,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __7500_displayName = "------------------------------------------------------";
+        public const string __7500_displayName = "-------------------------------------------------------------------------------------------";
         public const int __7500_sortIndex = 7500;
         [SortOrder(__7500_sortIndex)]
         [DisplayName(__7500_displayName)]
@@ -2100,7 +2100,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __7850_displayName = "------------------------------------------------------";
+        public const string __7850_displayName = "-------------------------------------------------------------------------------------------";
         public const int __7850_sortIndex = 7850;
         [SortOrder(__7850_sortIndex)]
         [DisplayName(__7850_displayName)]
@@ -2192,7 +2192,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __8200_displayName = "------------------------------------------------------";
+        public const string __8200_displayName = "-------------------------------------------------------------------------------------------";
         public const int __8200_sortIndex = 8200;
         [SortOrder(__8200_sortIndex)]
         [DisplayName(__8200_displayName)]
@@ -2284,7 +2284,7 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __8550_displayName = "------------------------------------------------------";
+        public const string __8550_displayName = "-------------------------------------------------------------------------------------------";
         public const int __8550_sortIndex = 8550;
         [SortOrder(__8550_sortIndex)]
         [DisplayName(__8550_displayName)]
@@ -2292,7 +2292,7 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string __8600_displayName = "------------------------------------------------------";
+        public const string __8600_displayName = "-------------------------------------------------------------------------------------------";
         public const int __8600_sortIndex = 8600;
         [SortOrder(__8600_sortIndex)]
         [DisplayName(__8600_displayName)]
