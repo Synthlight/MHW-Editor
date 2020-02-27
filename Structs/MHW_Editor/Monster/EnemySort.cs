@@ -1,6 +1,6 @@
 using MHW_Template;
 
-namespace MHW_Editor.Items {
+namespace MHW_Editor.Monster {
     // Struct Size: "56"
     // Unique Id Formula: "{Index}"
     public struct EnemySort {

@@ -22,6 +22,7 @@ using MHW_Editor.Assets;
 using MHW_Editor.Gems;
 using MHW_Editor.Items;
 using MHW_Editor.Models;
+using MHW_Editor.Monster;
 using MHW_Editor.PlData;
 using MHW_Editor.Skills;
 using MHW_Editor.Weapons;

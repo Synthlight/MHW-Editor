@@ -4,7 +4,7 @@ using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
 
-namespace MHW_Editor.Items {
+namespace MHW_Editor.Monster {
     public partial class EnemySort {
         public const uint StructSize = 56;
         public const ulong InitialOffset = 10;
