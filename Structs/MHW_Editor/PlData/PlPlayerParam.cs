@@ -5,22 +5,6 @@ namespace MHW_Editor.PlData {
     // Initial Offset: "0"
     // Unique Id Formula: "0"
     public struct PlPlayerParam {
-        public byte _Skipping_the_rest_; // Offset: 3
-        public byte _; // Offset: 3
-        public byte _; // Offset: 3
-        public byte _Skipping_ahead_; // Offset: 3
-        public byte _; // Offset: 3
-        public byte _; // Offset: 3
-        public byte _; // Offset: 3
-        public byte _Skipping_ahead_; // Offset: 3
-        public byte _; // Offset: 3
-        public byte _; // Offset: 3
-        public byte _; // Offset: 3
-        public byte _; // Offset: 3
-        public byte _; // Offset: 3
-        public byte _; // Offset: 3
-        public byte _Skipping_ahead_; // Offset: 3
-        public byte _; // Offset: 3
         public float Unk1; // Offset: 8
         public float Unk2; // Offset: 12
         public float Unk3; // Offset: 16
