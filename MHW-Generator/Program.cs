@@ -64,8 +64,56 @@ namespace MHW_Generator {
             GenLimitBreakMaterialSkill();
             GenEnemySort();
             GenSteamRewardList();
+            GenMonsterEnrage();
 
             GenCommonPl();
+        }
+
+        private static void GenMonsterEnrage() {
+            // 'Unk' counters.
+            ushort i = 1;
+
+            GeneratePlDataProps("MHW_Editor.Monster", "MonsterEnrage", new MhwStructData { // .dtt_agr
+                size = 144,
+                offsetInitial = 0,
+                entryCountOffset = -1,
+                uniqueIdFormula = "0",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Monster Id", 8, typeof(uint)),
+                    new MhwStructData.Entry("LR/HR Trigger Damage", 16, typeof(uint)),
+                    new MhwStructData.Entry("LR/HR Duration", 20, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Speed", 24, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Damage", 28, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Player Damage", 32, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 36, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 40, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 44, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 48, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 52, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 56, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 60, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 64, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 68, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 72, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 76, typeof(float)),
+                    new MhwStructData.Entry("MR Trigger Damage", 80, typeof(uint)),
+                    new MhwStructData.Entry("MR Duration", 84, typeof(float)),
+                    new MhwStructData.Entry("MR Speed", 88, typeof(float)),
+                    new MhwStructData.Entry("MR Damage", 92, typeof(float)),
+                    new MhwStructData.Entry("MR Player Damage", 96, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 100, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 104, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 108, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 112, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 116, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 120, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 124, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 128, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 132, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 136, typeof(float)),
+                    new MhwStructData.Entry($"Unk{i++}", 140, typeof(float))
+                }
+            });
         }
 
         private static void GenSteamRewardList() {
@@ -86,7 +134,7 @@ namespace MHW_Generator {
         }
 
         private static void GenEnemySort() {
-            GenerateItemProps("MHW_Editor.Items", "EnemySort", new MhwStructData { // .emst
+            GenerateItemProps("MHW_Editor.Monster", "EnemySort", new MhwStructData { // .emst
                 size = 56,
                 offsetInitial = 10,
                 entryCountOffset = 6,

@@ -161,6 +161,7 @@ namespace MHW_Generator_Data {
             // Limit the roots so we don't spend forever searching the whole thing.
             var rootsToSearch = new List<string> {
                 $@"{Global.CHUNK_ROOT}\common",
+                $@"{Global.CHUNK_ROOT}\em",
                 $@"{Global.CHUNK_ROOT}\hm",
                 $@"{Global.CHUNK_ROOT}\quest",
                 $@"{Global.CHUNK_ROOT}\stage"

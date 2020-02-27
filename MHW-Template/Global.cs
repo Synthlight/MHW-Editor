@@ -47,6 +47,7 @@ namespace MHW_Template {
             "*.cus_par",
             "*.dglt",
             "*.diot",
+            "*.dtt_agr",
             "*.emst",
             "*.eq_crt",
             "*.eq_cus",
