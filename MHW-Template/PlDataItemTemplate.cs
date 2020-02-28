@@ -56,51 +56,16 @@ namespace MHW_Template
         }
 
         // Don't need now, but uncomment in the future if we need to override a generated property.
-        if (accessLevel == "private") continue;
-
-
-            
-            #line default
-            #line hidden
-            this.Write("                new PlDataItemCustomView(this, \"");
-            
-            #line 31 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(entry.displayName));
-            
-            #line default
-            #line hidden
-            this.Write("\", \"");
-            
-            #line 31 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(name));
-            
-            #line default
-            #line hidden
-            this.Write("\", Bytes, ");
-            
-            #line 31 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(entry.offset));
-            
-            #line default
-            #line hidden
-            this.Write("),\r\n");
-            
-            #line 32 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
-
+        if (accessLevel == "private")
+            continue;
+        WriteLine($"                new PlDataItemCustomView(this, \"{entry.displayName}\", \"{name}\", Bytes, {entry.offset}),");
         sortIndex += 50;
-    } // End loop.
+    }
 
             
             #line default
             #line hidden
-            this.Write("            };\r\n        }\r\n    }");
-            
-            #line 38 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
- // End class. 
-            
-            #line default
-            #line hidden
-            this.Write("\r\n}");
+            this.Write("            };\r\n        }\r\n    }\r\n}");
             return this.GenerationEnvironment.ToString();
         }
         

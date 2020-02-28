@@ -74,6 +74,7 @@ namespace MHW_Template {
             "*.plp",
             "*.plsp",
             "*.rem",
+            "*.rfur",
             "*.rod_inse",
             "*.sed",
             "*.sgpa",

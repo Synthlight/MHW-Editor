@@ -25,16 +25,13 @@ namespace <#= _namespace #> {
         }
 
         // Don't need now, but uncomment in the future if we need to override a generated property.
-        if (accessLevel == "private") continue;
-
-#>
-                new PlDataItemCustomView(this, "<#= entry.displayName #>", "<#= name #>", Bytes, <#= entry.offset #>),
-<#
+        if (accessLevel == "private")
+            continue;
+        WriteLine($"                new PlDataItemCustomView(this, \"{entry.displayName}\", \"{name}\", Bytes, {entry.offset}),");
         sortIndex += 50;
-    } // End loop.
+    }
 #>
             };
         }
-    }<# // End class. #>
-
+    }
 }

@@ -8,6 +8,7 @@
 <#@ import namespace="Microsoft.CSharp" #>
 <#@ import namespace="System.Text.RegularExpressions" #>
 <#@ import namespace="MHW_Template.Models" #>
+using System;
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -27,20 +28,19 @@ namespace <#= _namespace #> {
 
     foreach (var entry in structData.entries) {
         var accessLevel = entry.accessLevel;
-        var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
-        var typeString = compiler.GetTypeOutput(entry.type);
-        string returnString;
-        var setCast = "";
-        var getCast = "";
+        if (accessLevel != "private") {
+            accessLevel += " virtual";
+        }
 
+        var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
         if (entry.forceUnique) {
             name += $"_{sortIndex}";
         }
 
-        // Don't need now, but uncomment in the future if we need to override a generated property.
-        if (accessLevel != "private") {
-            accessLevel += " virtual";
-        }
+        var typeString = compiler.GetTypeOutput(entry.type);
+        string returnString;
+        var setCast = "";
+        var getCast = "";
 
         if (entry.enumReturn == null) {
             returnString = typeString;
@@ -49,56 +49,57 @@ namespace <#= _namespace #> {
             getCast = $"({returnString}) ";
             setCast = $"({typeString}) ";
         }
-#>
 
-        public const string <#= name #>_displayName = "<#= entry.displayName #>";
-        public const int <#= name #>_sortIndex = <#= sortIndex #>;
-        [SortOrder(<#= name #>_sortIndex)]
-        [DisplayName(<#= name #>_displayName)]
-<#
+        // Main property.
+        WriteLine("");
+        WriteLine($"        public const string {name}_displayName = \"{entry.displayName}\";");
+        WriteLine($"        public const int {name}_sortIndex = {sortIndex};");
+        WriteLine($"        [SortOrder({name}_sortIndex)]");
+        WriteLine($"        [DisplayName({name}_displayName)]");
+
         if (entry.dataSourceType != null) {
-#>
-        [DataSource(DataSourceType.<#= entry.dataSourceType #>)]
-<#
-        } // End dataSource check.
-#>
-        <#= accessLevel #> <#= returnString #> <#= name #> {<# // Property definition. #>
+            WriteLine($"        [DataSource(DataSourceType.{entry.dataSourceType})]");
+        }
 
-            get => <#= getCast #>GetData<<#= typeString #>>(<#= entry.offset #>);<# // Getter. #>
+        WriteLine($"        {accessLevel} {returnString} {name} {{");
 
-<#
+        if (returnString == "bool") {
+            WriteLine($"            get => {getCast}Convert.ToBoolean(GetData<{typeString}>({entry.offset}));");
+        } else {
+            WriteLine($"            get => {getCast}GetData<{typeString}>({entry.offset});");
+        }
+
         if (!entry.readOnly) {
-#>
-            set {<# // Setter. #>
+            WriteLine("            set {");
 
-                if (<#= getCast #>GetData<<#= typeString #>>(<#= entry.offset #>) == <#= entry.valueString #>) return;<# // Do nothing if the value is the same. #>
+            if (returnString == "bool") {
+                WriteLine($"                if (Convert.ToBoolean(GetData<{typeString}>({entry.offset})) == {entry.valueString}) return;"); // Do nothing if the value is the same.
+                WriteLine($"                SetData({entry.offset}, Convert.ToByte({entry.valueString}), nameof({name}));");
+            } else {
+                WriteLine($"                if ({getCast}GetData<{typeString}>({entry.offset}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
+                WriteLine($"                SetData({entry.offset}, {setCast}{entry.valueString}, nameof({name}));");
+            }
 
-                SetData(<#= entry.offset #>, <#= setCast #><#= entry.valueString #>, nameof(<#= name #>));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(<#= name #>));
-<#
+            WriteLine("                OnPropertyChanged(nameof(Raw_Data));");
+            WriteLine($"                OnPropertyChanged(nameof({name}));");
+
             if (entry.dataSourceType != null) {
-#>
-                OnPropertyChanged(nameof(<#= name #>_button));
-<#
-            } // End extra OnPropertyChanged/dataSourceType check.
+                WriteLine($"                OnPropertyChanged(nameof({name}_button));");
+            }
 
             if (entry.extraOnPropertyChanged != null) {
                 foreach (var propertyToChange in entry.extraOnPropertyChanged) {
                     var propertyToChangeName = Regex.Replace(propertyToChange, @"[^\w\d]+", "_");
-#>
-                OnPropertyChanged(nameof(<#= propertyToChangeName #>));
-<#
-                }
-            } // End extra OnPropertyChanged/extraOnPropertyChanged check.
-#>
-            }
-<#
-        } // End readOnly check.
-#>
-        }<# // End property block. #>
 
-<#
+                    WriteLine($"                OnPropertyChanged(nameof({propertyToChangeName}));");
+                }
+            }
+
+            WriteLine("            }");
+        }
+
+        WriteLine("        }");
+
         if (entry.dataSourceType != null) {
             string dataSourceLookup;
 
@@ -115,20 +116,18 @@ namespace <#= _namespace #> {
                 default:
                     throw new ArgumentOutOfRangeException();
             }
-#>
 
-        [SortOrder(<#= name #>_sortIndex)]
-        [DisplayName(<#= name #>_displayName)]
-        [CustomSorter(typeof(<#= entry.dataSourceCustomSorter #>))]
-        public string <#= name #>_button => <#= dataSourceLookup #>.TryGet(<#= name #>).ToStringWithId(<#= name #>);
-<#
-        } // End data source / button generation check.
+            WriteLine("");
+            WriteLine($"        [SortOrder({name}_sortIndex)]");
+            WriteLine($"        [DisplayName({name}_displayName)]");
+            WriteLine($"        [CustomSorter(typeof({entry.dataSourceCustomSorter}))]");
+            WriteLine($"        public string {name}_button => {dataSourceLookup}.TryGet({name}).ToStringWithId({name});");
+        }
 
         sortIndex += 50;
-    } // End loop.
+    }
 #>
 
         public const int lastSortIndex = <#= sortIndex #>;
-    }<# // End class. #>
-
+    }
 }

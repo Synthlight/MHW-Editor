@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -98,17 +99,16 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const string Is_Fixed_Upgrade_Raw_displayName = "Is Fixed Upgrade Raw";
-        public const int Is_Fixed_Upgrade_Raw_sortIndex = 400;
-        [SortOrder(Is_Fixed_Upgrade_Raw_sortIndex)]
-        [DisplayName(Is_Fixed_Upgrade_Raw_displayName)]
-        private byte Is_Fixed_Upgrade_Raw {
-            get => GetData<byte>(15);
+        public const string Is_Fixed_Upgrade_displayName = "Is Fixed Upgrade";
+        public const int Is_Fixed_Upgrade_sortIndex = 400;
+        [SortOrder(Is_Fixed_Upgrade_sortIndex)]
+        [DisplayName(Is_Fixed_Upgrade_displayName)]
+        public virtual bool Is_Fixed_Upgrade {
+            get => (bool) Convert.ToBoolean(GetData<byte>(15));
             set {
-                if (GetData<byte>(15) == value) return;
-                SetData(15, value, nameof(Is_Fixed_Upgrade_Raw));
+                if (Convert.ToBoolean(GetData<byte>(15)) == value) return;
+                SetData(15, Convert.ToByte(value), nameof(Is_Fixed_Upgrade));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Is_Fixed_Upgrade_Raw));
                 OnPropertyChanged(nameof(Is_Fixed_Upgrade));
             }
         }

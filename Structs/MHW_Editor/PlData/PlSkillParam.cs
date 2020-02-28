@@ -766,7 +766,7 @@ namespace MHW_Editor.PlData {
         public float Feline_Riser_L_IFrames; // Offset: 2004
         public float Feline_Temper_Shell_Attack_Rate; // Offset: 2008
         public byte Feline_Temper_Blur_Level_Bonus; // Offset: 2012
-        public float Feline_Wall_Climber_Stamina_Rate; // Offset: 2013
+        public float Feline_Cliffhanger_Stamina_Rate; // Offset: 2013
         public float Feline_Slugger_Stun_Attack_Rate; // Offset: 2017
         public float Feline_Bombardier_Ballista_Attack_Rate; // Offset: 2021
         public float Feline_Bombardier_Cannon_Attack_Rate; // Offset: 2025

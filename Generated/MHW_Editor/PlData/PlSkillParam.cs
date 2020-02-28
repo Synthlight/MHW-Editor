@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -11546,17 +11547,17 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Feline_Wall_Climber_Stamina_Rate_displayName = "Feline Wall Climber: Stamina Rate";
-        public const int Feline_Wall_Climber_Stamina_Rate_sortIndex = 43600;
-        [SortOrder(Feline_Wall_Climber_Stamina_Rate_sortIndex)]
-        [DisplayName(Feline_Wall_Climber_Stamina_Rate_displayName)]
-        public virtual float Feline_Wall_Climber_Stamina_Rate {
+        public const string Feline_Cliffhanger_Stamina_Rate_displayName = "Feline Cliffhanger: Stamina Rate";
+        public const int Feline_Cliffhanger_Stamina_Rate_sortIndex = 43600;
+        [SortOrder(Feline_Cliffhanger_Stamina_Rate_sortIndex)]
+        [DisplayName(Feline_Cliffhanger_Stamina_Rate_displayName)]
+        public virtual float Feline_Cliffhanger_Stamina_Rate {
             get => GetData<float>(2013);
             set {
                 if (GetData<float>(2013) == value) return;
-                SetData(2013, value, nameof(Feline_Wall_Climber_Stamina_Rate));
+                SetData(2013, value, nameof(Feline_Cliffhanger_Stamina_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Wall_Climber_Stamina_Rate));
+                OnPropertyChanged(nameof(Feline_Cliffhanger_Stamina_Rate));
             }
         }
 

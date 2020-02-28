@@ -1019,6 +1019,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".plsp")) return typeof(PlSkillParam);
             if (fileName.EndsWith(".rod_inse")) return typeof(RodInsect);
             if (fileName.EndsWith(".rem")) return typeof(QuestReward);
+            if (fileName.EndsWith(".rfur")) return typeof(RoomFurniture);
             if (fileName.EndsWith(".sed")) return typeof(ShopSed);
             if (fileName.EndsWith(".sgpa")) return typeof(Gem);
             if (fileName.EndsWith(".shl_tbl")) return typeof(ShellTable);

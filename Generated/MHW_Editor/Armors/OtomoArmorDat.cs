@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -36,17 +37,16 @@ namespace MHW_Editor.Armors {
             get => (MHW_Template.Armors.EquipSlot) GetData<byte>(6);
         }
 
-        public const string Is_Full_Set_Raw_displayName = "Is Full Set Raw";
-        public const int Is_Full_Set_Raw_sortIndex = 200;
-        [SortOrder(Is_Full_Set_Raw_sortIndex)]
-        [DisplayName(Is_Full_Set_Raw_displayName)]
-        private byte Is_Full_Set_Raw {
-            get => GetData<byte>(7);
+        public const string Is_Full_Set_displayName = "Is Full Set";
+        public const int Is_Full_Set_sortIndex = 200;
+        [SortOrder(Is_Full_Set_sortIndex)]
+        [DisplayName(Is_Full_Set_displayName)]
+        public virtual bool Is_Full_Set {
+            get => (bool) Convert.ToBoolean(GetData<byte>(7));
             set {
-                if (GetData<byte>(7) == value) return;
-                SetData(7, value, nameof(Is_Full_Set_Raw));
+                if (Convert.ToBoolean(GetData<byte>(7)) == value) return;
+                SetData(7, Convert.ToByte(value), nameof(Is_Full_Set));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Is_Full_Set_Raw));
                 OnPropertyChanged(nameof(Is_Full_Set));
             }
         }

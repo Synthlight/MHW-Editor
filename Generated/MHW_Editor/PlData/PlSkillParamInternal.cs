@@ -876,7 +876,7 @@ namespace MHW_Editor.PlData {
                 new PlDataItemCustomView(this, "Feline Temper: Shell Attack Rate", "Feline_Temper_Shell_Attack_Rate", Bytes, 2008),
                 new PlDataItemCustomView(this, "Feline Temper: Blur Level Bonus", "Feline_Temper_Blur_Level_Bonus", Bytes, 2012),
                 new PlDataItemCustomView(this, "-------------------------------------------------------------------------------------------", "__43550", Bytes, 3),
-                new PlDataItemCustomView(this, "Feline Wall Climber: Stamina Rate", "Feline_Wall_Climber_Stamina_Rate", Bytes, 2013),
+                new PlDataItemCustomView(this, "Feline Cliffhanger: Stamina Rate", "Feline_Cliffhanger_Stamina_Rate", Bytes, 2013),
                 new PlDataItemCustomView(this, "-------------------------------------------------------------------------------------------", "__43650", Bytes, 3),
                 new PlDataItemCustomView(this, "Feline Slugger: Stun Attack Rate", "Feline_Slugger_Stun_Attack_Rate", Bytes, 2017),
                 new PlDataItemCustomView(this, "-------------------------------------------------------------------------------------------", "__43750", Bytes, 3),

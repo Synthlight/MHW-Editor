@@ -25,6 +25,7 @@ namespace MHW_Editor {
             "PlantItem",
             "QuestRewardInternal",
             "Ranged",
+            "RoomFurniture",
             "SkillDat",
             "SteamRewardList",
             "SwapItem",

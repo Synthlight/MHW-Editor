@@ -5,7 +5,7 @@ namespace MHW_Editor.Skills {
     // Initial Offset: "10"
     // Unique Id Formula: "{Id}"
     public struct SkillPointData {
-        public byte Is_Set_Bonus_Raw; // Offset: 0
+        public byte Is_Set_Bonus; // Offset: 0
         public byte Icon_Color_Id; // Offset: 1
     }
 }

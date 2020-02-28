@@ -1331,6 +1331,7 @@ namespace MHW_Editor {
             {"remData_71099.rem", 114},
             {"rod.wp_dat", 19084},
             {"rod_insect.rod_inse", 2960},
+            {"room_furniture.rfur", 17541},
             {"s_axe.wp_dat", 18952},
             {"shell_table.shl_tbl", 20878},
             {"shop.sed", 1174},

@@ -13,6 +13,6 @@ namespace MHW_Editor.Items {
         public uint Quantity; // Offset: 18
         public uint Unk2; // Offset: 22
         public uint Category; // Offset: 26
-        public byte Can_Auto_Craft_Raw; // Offset: 30
+        public byte Can_Auto_Craft; // Offset: 30
     }
 }

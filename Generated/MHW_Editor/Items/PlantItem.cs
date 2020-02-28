@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -26,17 +27,16 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Unlocked_from_start_Raw_displayName = "Unlocked from start Raw";
-        public const int Unlocked_from_start_Raw_sortIndex = 100;
-        [SortOrder(Unlocked_from_start_Raw_sortIndex)]
-        [DisplayName(Unlocked_from_start_Raw_displayName)]
-        private byte Unlocked_from_start_Raw {
-            get => GetData<byte>(8);
+        public const string Unlocked_from_start_displayName = "Unlocked from start";
+        public const int Unlocked_from_start_sortIndex = 100;
+        [SortOrder(Unlocked_from_start_sortIndex)]
+        [DisplayName(Unlocked_from_start_displayName)]
+        public virtual bool Unlocked_from_start {
+            get => (bool) Convert.ToBoolean(GetData<byte>(8));
             set {
-                if (GetData<byte>(8) == value) return;
-                SetData(8, value, nameof(Unlocked_from_start_Raw));
+                if (Convert.ToBoolean(GetData<byte>(8)) == value) return;
+                SetData(8, Convert.ToByte(value), nameof(Unlocked_from_start));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unlocked_from_start_Raw));
                 OnPropertyChanged(nameof(Unlocked_from_start));
             }
         }

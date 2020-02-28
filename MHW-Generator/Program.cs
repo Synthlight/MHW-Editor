@@ -65,8 +65,41 @@ namespace MHW_Generator {
             GenEnemySort();
             GenSteamRewardList();
             GenMonsterEnrage();
+            GenRoomFurniture();
 
             GenCommonPl();
+        }
+
+        private static void GenRoomFurniture() {
+            GenerateItemProps("MHW_Editor.Items", "RoomFurniture", new MhwStructData { // .rfur
+                size = 47,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Unk1", 4, typeof(uint)),
+                    new MhwStructData.Entry("Unk2", 8, typeof(uint)),
+                    new MhwStructData.Entry("Unk3", 12, typeof(uint)),
+                    new MhwStructData.Entry("Unk4", 16, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk5", 17, typeof(byte)),
+                    new MhwStructData.Entry("Unk6", 18, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk7", 19, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk8", 20, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk9", 21, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk10", 22, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk11", 23, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk12", 24, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk13", 25, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk14", 26, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk15", 27, typeof(int)),
+                    new MhwStructData.Entry("Unk16", 31, typeof(uint)),
+                    new MhwStructData.Entry("Unk17", 35, typeof(ushort)),
+                    new MhwStructData.Entry("Unk18", 37, typeof(ushort)),
+                    new MhwStructData.Entry("Unk19", 39, typeof(uint)),
+                    new MhwStructData.Entry("Unk21", 43, typeof(uint))
+                }
+            });
         }
 
         private static void GenMonsterEnrage() {
@@ -111,7 +144,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry($"Unk{i++}", 128, typeof(float)),
                     new MhwStructData.Entry($"Unk{i++}", 132, typeof(float)),
                     new MhwStructData.Entry($"Unk{i++}", 136, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 140, typeof(float))
+                    new MhwStructData.Entry($"Unk{i}", 140, typeof(float))
                 }
             });
         }
@@ -432,7 +465,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Quantity", 18, typeof(uint)),
                     new MhwStructData.Entry("Unk2", 22, typeof(uint)),
                     new MhwStructData.Entry("Category", 26, typeof(uint), typeof(ItemCategory)),
-                    new MhwStructData.Entry("Can Auto-Craft Raw", 30, typeof(byte))
+                    new MhwStructData.Entry("Can Auto-Craft", 30, typeof(byte), typeof(bool))
                 }
             });
         }
@@ -696,7 +729,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Set Id", 4, typeof(ushort), true),
                     new MhwStructData.Entry("Equip Slot", 6, typeof(byte), true, typeof(EquipSlot)),
-                    new MhwStructData.Entry("Is Full Set Raw", 7, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Is Full Set"}),
+                    new MhwStructData.Entry("Is Full Set", 7, typeof(byte), typeof(bool)),
                     new MhwStructData.Entry("Defense", 8, typeof(uint)),
                     new MhwStructData.Entry("Rarity", 12, typeof(byte)),
                     new MhwStructData.Entry("Order", 13, typeof(ushort)),
@@ -771,7 +804,7 @@ namespace MHW_Generator {
                 uniqueIdFormula = "{Item}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Cultivation category", 0, typeof(uint), typeof(CultivationCategory)),
-                    new MhwStructData.Entry("Unlocked from start Raw", 8, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Unlocked from start"}),
+                    new MhwStructData.Entry("Unlocked from start", 8, typeof(byte), typeof(bool)),
                     new MhwStructData.Entry("Item", 9, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Required time", 13, typeof(uint)),
                     new MhwStructData.Entry("Catalyst time bonus", 17, typeof(uint)),
@@ -870,7 +903,7 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Is Set Bonus Raw", 0, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Is Set Bonus"}),
+                    new MhwStructData.Entry("Is Set Bonus", 0, typeof(byte), typeof(bool)),
                     new MhwStructData.Entry("Icon Color Id", 1, typeof(byte))
                 }
             });
@@ -1063,7 +1096,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Part 1 Id", 8, typeof(short)),
                     new MhwStructData.Entry("Part 2 Id", 10, typeof(short)),
                     new MhwStructData.Entry("Color", 13, typeof(byte)),
-                    new MhwStructData.Entry("Is Fixed Upgrade Raw", 15, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Is Fixed Upgrade"}),
+                    new MhwStructData.Entry("Is Fixed Upgrade", 15, typeof(byte), typeof(bool)),
                     new MhwStructData.Entry("Muzzle Type", 16, typeof(byte), typeof(MuzzleType)),
                     new MhwStructData.Entry("Barrel Type", 17, typeof(byte), typeof(BarrelType)),
                     new MhwStructData.Entry("Magazine Type", 18, typeof(byte), typeof(MagazineType)),
@@ -1108,7 +1141,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Part 1 Id", 8, typeof(short)),
                     new MhwStructData.Entry("Part 2 Id", 10, typeof(short)),
                     new MhwStructData.Entry("Color", 13, typeof(byte)),
-                    new MhwStructData.Entry("Is Fixed Upgrade Raw", 15, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Is Fixed Upgrade"}),
+                    new MhwStructData.Entry("Is Fixed Upgrade", 15, typeof(byte), typeof(bool)),
                     new MhwStructData.Entry("Cost", 16, typeof(uint)),
                     new MhwStructData.Entry("Rarity", 20, typeof(byte)),
                     new MhwStructData.Entry("Sharpness (.kire) Id", 21, typeof(byte)),
@@ -1177,7 +1210,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Skill 3 Level", 48, typeof(byte)),
                     new MhwStructData.Entry("Gender", 49, typeof(uint), typeof(Gender)),
                     new MhwStructData.Entry("Set Group", 53, typeof(ushort), true),
-                    new MhwStructData.Entry("Is Permanent Raw", 59, typeof(byte), accessLevel: "private", extraOnPropertyChanged: new[] {"Is Permanent"}),
+                    new MhwStructData.Entry("Is Permanent", 59, typeof(byte), typeof(bool)),
                     new MhwStructData.Entry("GMD Name Index", 55, typeof(ushort), true),
                     new MhwStructData.Entry("GMD Description Index", 57, typeof(ushort), true)
                 }

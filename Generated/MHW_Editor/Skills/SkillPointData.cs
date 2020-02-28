@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -12,17 +13,16 @@ namespace MHW_Editor.Skills {
         public const string EncryptionKey = null;
         public override string UniqueId => $"{Id}";
 
-        public const string Is_Set_Bonus_Raw_displayName = "Is Set Bonus Raw";
-        public const int Is_Set_Bonus_Raw_sortIndex = 50;
-        [SortOrder(Is_Set_Bonus_Raw_sortIndex)]
-        [DisplayName(Is_Set_Bonus_Raw_displayName)]
-        private byte Is_Set_Bonus_Raw {
-            get => GetData<byte>(0);
+        public const string Is_Set_Bonus_displayName = "Is Set Bonus";
+        public const int Is_Set_Bonus_sortIndex = 50;
+        [SortOrder(Is_Set_Bonus_sortIndex)]
+        [DisplayName(Is_Set_Bonus_displayName)]
+        public virtual bool Is_Set_Bonus {
+            get => (bool) Convert.ToBoolean(GetData<byte>(0));
             set {
-                if (GetData<byte>(0) == value) return;
-                SetData(0, value, nameof(Is_Set_Bonus_Raw));
+                if (Convert.ToBoolean(GetData<byte>(0)) == value) return;
+                SetData(0, Convert.ToByte(value), nameof(Is_Set_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Is_Set_Bonus_Raw));
                 OnPropertyChanged(nameof(Is_Set_Bonus));
             }
         }

@@ -11,7 +11,7 @@ namespace MHW_Editor.Weapons {
         public short Part_2_Id; // Offset: 10
         public byte Color; // Offset: 13
         public byte Tree_Id; // Offset: 14
-        public byte Is_Fixed_Upgrade_Raw; // Offset: 15
+        public byte Is_Fixed_Upgrade; // Offset: 15
         public byte Muzzle_Type; // Offset: 16
         public byte Barrel_Type; // Offset: 17
         public byte Magazine_Type; // Offset: 18

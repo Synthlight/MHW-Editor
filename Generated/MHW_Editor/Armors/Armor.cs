@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -487,17 +488,16 @@ namespace MHW_Editor.Armors {
             get => GetData<ushort>(53);
         }
 
-        public const string Is_Permanent_Raw_displayName = "Is Permanent Raw";
-        public const int Is_Permanent_Raw_sortIndex = 1750;
-        [SortOrder(Is_Permanent_Raw_sortIndex)]
-        [DisplayName(Is_Permanent_Raw_displayName)]
-        private byte Is_Permanent_Raw {
-            get => GetData<byte>(59);
+        public const string Is_Permanent_displayName = "Is Permanent";
+        public const int Is_Permanent_sortIndex = 1750;
+        [SortOrder(Is_Permanent_sortIndex)]
+        [DisplayName(Is_Permanent_displayName)]
+        public virtual bool Is_Permanent {
+            get => (bool) Convert.ToBoolean(GetData<byte>(59));
             set {
-                if (GetData<byte>(59) == value) return;
-                SetData(59, value, nameof(Is_Permanent_Raw));
+                if (Convert.ToBoolean(GetData<byte>(59)) == value) return;
+                SetData(59, Convert.ToByte(value), nameof(Is_Permanent));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Is_Permanent_Raw));
                 OnPropertyChanged(nameof(Is_Permanent));
             }
         }

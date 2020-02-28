@@ -652,7 +652,7 @@ namespace MHW_Generator {
 
                 new MhwStructData.Entry(SPACER, 3, typeof(byte), true, forceUnique: true),
 
-                new MhwStructData.Entry("Feline Wall Climber: Stamina Rate", 2013, typeof(float)),
+                new MhwStructData.Entry("Feline Cliffhanger: Stamina Rate", 2013, typeof(float)),
 
                 new MhwStructData.Entry(SPACER, 3, typeof(byte), true, forceUnique: true),
 

@@ -12,7 +12,7 @@ namespace MHW_Editor.Weapons {
         public short Part_2_Id; // Offset: 10
         public byte Color; // Offset: 13
         public byte Tree_Id; // Offset: 14
-        public byte Is_Fixed_Upgrade_Raw; // Offset: 15
+        public byte Is_Fixed_Upgrade; // Offset: 15
         public uint Cost; // Offset: 16
         public byte Rarity; // Offset: 20
         public byte Sharpness_kire_Id; // Offset: 21

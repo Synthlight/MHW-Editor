@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -139,17 +140,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Can_Auto_Craft_Raw_displayName = "Can Auto-Craft Raw";
-        public const int Can_Auto_Craft_Raw_sortIndex = 450;
-        [SortOrder(Can_Auto_Craft_Raw_sortIndex)]
-        [DisplayName(Can_Auto_Craft_Raw_displayName)]
-        public virtual byte Can_Auto_Craft_Raw {
-            get => GetData<byte>(30);
+        public const string Can_Auto_Craft_displayName = "Can Auto-Craft";
+        public const int Can_Auto_Craft_sortIndex = 450;
+        [SortOrder(Can_Auto_Craft_sortIndex)]
+        [DisplayName(Can_Auto_Craft_displayName)]
+        public virtual bool Can_Auto_Craft {
+            get => (bool) Convert.ToBoolean(GetData<byte>(30));
             set {
-                if (GetData<byte>(30) == value) return;
-                SetData(30, value, nameof(Can_Auto_Craft_Raw));
+                if (Convert.ToBoolean(GetData<byte>(30)) == value) return;
+                SetData(30, Convert.ToByte(value), nameof(Can_Auto_Craft));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Can_Auto_Craft_Raw));
+                OnPropertyChanged(nameof(Can_Auto_Craft));
             }
         }
 
