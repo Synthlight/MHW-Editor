@@ -12,9 +12,8 @@ namespace <#= _namespace #> {
     public static class <#= className #> {
 <#
     foreach (var entry in valueDataPairs) {
-#>
-        public const ushort <#= entry.name #> = <#= entry.value #>;<#= entry.description == null ? "" : $" // {entry.description}" #>
-<#
+        var desc = entry.description == null ? "" : $" // {entry.description}";
+        WriteLine($"        public const ushort {entry.name} = {entry.value};{desc}");
     }
 #>
     }

@@ -45,35 +45,8 @@ namespace MHW_Template
             #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
 
     foreach (var entry in valueDataPairs) {
-
-            
-            #line default
-            #line hidden
-            this.Write("        public const ushort ");
-            
-            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(entry.name));
-            
-            #line default
-            #line hidden
-            this.Write(" = ");
-            
-            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(entry.value));
-            
-            #line default
-            #line hidden
-            this.Write(";");
-            
-            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(entry.description == null ? "" : $" // {entry.description}"));
-            
-            #line default
-            #line hidden
-            this.Write("\r\n");
-            
-            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ValueClassTemplate.tt"
-
+        var desc = entry.description == null ? "" : $" // {entry.description}";
+        WriteLine($"        public const ushort {entry.name} = {entry.value};{desc}");
     }
 
             

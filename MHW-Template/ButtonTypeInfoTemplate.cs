@@ -45,21 +45,7 @@ namespace MHW_Template
             #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
 
     foreach (var entry in typesWithButtons) {
-
-            
-            #line default
-            #line hidden
-            this.Write("            \"");
-            
-            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(entry));
-            
-            #line default
-            #line hidden
-            this.Write("\",\r\n");
-            
-            #line 18 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
-
+        WriteLine($"            \"{entry}\",");
     }
 
             
@@ -68,24 +54,10 @@ namespace MHW_Template
             this.Write("        };\r\n\r\n        public static readonly List<string> BUTTON_NAMES = new List" +
                     "<string> {\r\n");
             
-            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
 
     foreach (var entry in buttonNames) {
-
-            
-            #line default
-            #line hidden
-            this.Write("            \"");
-            
-            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(entry));
-            
-            #line default
-            #line hidden
-            this.Write("\",\r\n");
-            
-            #line 28 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
-
+        WriteLine($"            \"{entry}\",");
     }
 
             
@@ -94,24 +66,10 @@ namespace MHW_Template
             this.Write("        };\r\n\r\n        public static readonly List<string> BUTTON_BASE_NAMES = new" +
                     " List<string> {\r\n");
             
-            #line 34 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            #line 30 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
 
     foreach (var entry in buttonNames) {
-
-            
-            #line default
-            #line hidden
-            this.Write("            \"");
-            
-            #line 37 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(entry.Replace("_button", "")));
-            
-            #line default
-            #line hidden
-            this.Write("\",\r\n");
-            
-            #line 38 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
-
+        WriteLine($"            \"{entry.Replace("_button", "")}\",");
     }
 
             

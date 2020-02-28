@@ -13,9 +13,7 @@ namespace <#= _namespace #> {
         public static readonly List<string> TYPES_WITH_BUTTONS = new List<string> {
 <#
     foreach (var entry in typesWithButtons) {
-#>
-            "<#= entry #>",
-<#
+        WriteLine($"            \"{entry}\",");
     }
 #>
         };
@@ -23,9 +21,7 @@ namespace <#= _namespace #> {
         public static readonly List<string> BUTTON_NAMES = new List<string> {
 <#
     foreach (var entry in buttonNames) {
-#>
-            "<#= entry #>",
-<#
+        WriteLine($"            \"{entry}\",");
     }
 #>
         };
@@ -33,9 +29,7 @@ namespace <#= _namespace #> {
         public static readonly List<string> BUTTON_BASE_NAMES = new List<string> {
 <#
     foreach (var entry in buttonNames) {
-#>
-            "<#= entry.Replace("_button", "") #>",
-<#
+        WriteLine($"            \"{entry.Replace("_button", "")}\",");
     }
 #>
         };

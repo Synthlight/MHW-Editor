@@ -72,39 +72,12 @@ namespace MHW_Template
     newList.Sort((entry1, entry2) => entry1.offset.CompareTo(entry2.offset));
 
     foreach (var entry in newList) {
-        if (entry.forceUnique) continue;
+        if (entry.forceUnique)
+            continue;
 
         var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
         var typeString = compiler.GetTypeOutput(entry.type);
-
-            
-            #line default
-            #line hidden
-            this.Write("        public ");
-            
-            #line 29 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(typeString));
-            
-            #line default
-            #line hidden
-            this.Write(" ");
-            
-            #line 29 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(name));
-            
-            #line default
-            #line hidden
-            this.Write("; // Offset: ");
-            
-            #line 29 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(entry.offset));
-            
-            #line default
-            #line hidden
-            this.Write("\r\n");
-            
-            #line 30 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
-
+        WriteLine($"        public {typeString} {name}; // Offset: {entry.offset}");
     }
 
             

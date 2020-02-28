@@ -12,9 +12,7 @@ namespace <#= _namespace #> {
         public static readonly Dictionary<string, ulong> FILE_SIZE_MAP = new Dictionary<string, ulong> {
 <#
     foreach (var entry in map) {
-#>
-            {"<#= entry.Key #>", <#= entry.Value #>},
-<#
+        WriteLine($"            {{\"{entry.Key}\", {entry.Value}}},");
     }
 #>
         };

@@ -14,27 +14,20 @@ namespace <#= _namespace #> {
         public static readonly Dictionary<string, Dictionary<string, string>> BAD_FILE_HASH_MAP = new Dictionary<string, Dictionary<string, string>> {
 <#
     foreach (var tldPair in hashMap) {
-#>
-            {"<#= tldPair.Key #>", new Dictionary<string, string> {
-<#
-        foreach (var entry in tldPair.Value) {
-#>
-                {"<#= entry.Key #>", "<#= entry.Value #>"},
-<#
-        }
-#>
-            }},
-<#
-    }
-#>
-        };
+        WriteLine($"            {{\"{tldPair.Key}\", new Dictionary<string, string> {{");
 
-        public static readonly Dictionary<string, string> GOOD_CHUNK_MAP = new Dictionary<string, string> {
-<#
+        foreach (var entry in tldPair.Value) {
+            WriteLine($"                {{\"{entry.Key}\", \"{entry.Value}\"}},");
+        }
+
+        WriteLine("            }},");
+    }
+
+    WriteLine("        };\r\n");
+    WriteLine("        public static readonly Dictionary<string, string> GOOD_CHUNK_MAP = new Dictionary<string, string> {");
+
     foreach (var entry in goodChunkMap) {
-#>
-            {"<#= entry.Key #>", "<#= entry.Value #>"},
-<#
+        WriteLine($"            {{\"{entry.Key}\", \"{entry.Value}\"}},");
     }
 #>
         };

@@ -45,28 +45,7 @@ namespace MHW_Template
             #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
 
     foreach (var entry in map) {
-
-            
-            #line default
-            #line hidden
-            this.Write("            {\"");
-            
-            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(entry.Key));
-            
-            #line default
-            #line hidden
-            this.Write("\", ");
-            
-            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(entry.Value));
-            
-            #line default
-            #line hidden
-            this.Write("},\r\n");
-            
-            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileSizeTemplate.tt"
-
+        WriteLine($"            {{\"{entry.Key}\", {entry.Value}}},");
     }
 
             
