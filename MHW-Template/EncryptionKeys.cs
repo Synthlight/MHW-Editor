@@ -34,6 +34,20 @@ namespace MHW_Template {
             {".plsp", PL_PARAM_KEY},
             {".rod_inse", ROD_INSE_KEY},
             {".shlp", OWP_DAT_KEY},
+            {".w00p", PL_PARAM_KEY},
+            {".w01p", PL_PARAM_KEY},
+            {".w02p", PL_PARAM_KEY},
+            {".w03p", PL_PARAM_KEY},
+            {".w04p", PL_PARAM_KEY},
+            {".w05p", PL_PARAM_KEY},
+            {".w06p", PL_PARAM_KEY},
+            {".w07p", PL_PARAM_KEY},
+            {".w08p", PL_PARAM_KEY},
+            {".w09p", PL_PARAM_KEY},
+            {".w10p", PL_PARAM_KEY},
+            {".w11p", PL_PARAM_KEY},
+            {".w12p", PL_PARAM_KEY},
+            {".w13p", PL_PARAM_KEY}
         };
     }
 }

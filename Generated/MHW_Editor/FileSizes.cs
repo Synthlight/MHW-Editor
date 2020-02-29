@@ -1439,6 +1439,8 @@ namespace MHW_Editor {
             {"wep_whistle.wep_wsl", 360},
             {"wep_wsword.wep_wsd", 110},
             {"whistle.wp_dat", 19282},
+            {"wp10_param.w10p", 3408},
+            {"wp11_param.w11p", 2736},
         };
     }
 }

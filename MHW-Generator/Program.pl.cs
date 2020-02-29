@@ -11,6 +11,44 @@ namespace MHW_Generator {
             GenPlPlayerParam();
             GenPlMantleParam();
             GenPlSkillParam();
+            GenWp10Param();
+            GenWp11Param();
+        }
+
+        private static void GenWp10Param() {
+            GeneratePlDataProps("MHW_Editor.Weapons", "Wp10Param", new MhwStructData { // .w10p
+                size = 3408,
+                offsetInitial = 0,
+                entryCountOffset = -1,
+                uniqueIdFormula = "0",
+                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".w10p"],
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Air-Time 1", 1153, typeof(float)),
+                    new MhwStructData.Entry("Air-Time 2", 1157, typeof(float)),
+                    new MhwStructData.Entry("Air-Time 3", 1161, typeof(float)),
+                    new MhwStructData.Entry("Air-Time 4", 1165, typeof(float))
+                }
+            });
+        }
+
+        private static void GenWp11Param() {
+            GeneratePlDataProps("MHW_Editor.Weapons", "Wp11Param", new MhwStructData { // .w11p
+                size = 2736,
+                offsetInitial = 0,
+                entryCountOffset = -1,
+                uniqueIdFormula = "0",
+                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".w11p"],
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Dragonpiercer X1", 1313, typeof(float)),
+                    new MhwStructData.Entry("Dragonpiercer Y1", 1317, typeof(float)),
+                    new MhwStructData.Entry("Dragonpiercer X2", 1321, typeof(float)),
+                    new MhwStructData.Entry("Dragonpiercer Y2", 1325, typeof(float)),
+                    new MhwStructData.Entry("T_Dragon X1", 2569, typeof(float)),
+                    new MhwStructData.Entry("T_Dragon Y1", 2573, typeof(float)),
+                    new MhwStructData.Entry("T_Dragon X2", 2577, typeof(float)),
+                    new MhwStructData.Entry("T_Dragon Y2", 2581, typeof(float))
+                }
+            });
         }
 
         private static void GenPlSkillParam() {
