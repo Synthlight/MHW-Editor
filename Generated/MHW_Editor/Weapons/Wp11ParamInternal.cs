@@ -9,6 +9,7 @@ namespace MHW_Editor.Weapons {
                 new PlDataItemCustomView(this, "Dragonpiercer Y1", "Dragonpiercer_Y1", Bytes, 1317),
                 new PlDataItemCustomView(this, "Dragonpiercer X2", "Dragonpiercer_X2", Bytes, 1321),
                 new PlDataItemCustomView(this, "Dragonpiercer Y2", "Dragonpiercer_Y2", Bytes, 1325),
+                new PlDataItemCustomView(this, "-------------------------------------------------------------------------------------------", "__250", Bytes, 3),
                 new PlDataItemCustomView(this, "T_Dragon X1", "T_Dragon_X1", Bytes, 2569),
                 new PlDataItemCustomView(this, "T_Dragon Y1", "T_Dragon_Y1", Bytes, 2573),
                 new PlDataItemCustomView(this, "T_Dragon X2", "T_Dragon_X2", Bytes, 2577),

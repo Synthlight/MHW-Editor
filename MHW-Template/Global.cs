@@ -102,7 +102,7 @@ namespace MHW_Template {
             "*.w10p",
             "*.w11p",
             //"*.w12p",
-            //"*.w13p",
+            "*.w13p",
             "*.wep_glan",
             "*.wep_saxe",
             "*.wep_wsd",

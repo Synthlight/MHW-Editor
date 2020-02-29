@@ -1441,6 +1441,7 @@ namespace MHW_Editor {
             {"whistle.wp_dat", 19282},
             {"wp10_param.w10p", 3408},
             {"wp11_param.w11p", 2736},
+            {"wp13_param.w13p", 3200},
         };
     }
 }

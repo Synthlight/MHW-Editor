@@ -69,8 +69,16 @@ namespace MHW_Editor.Weapons {
             }
         }
 
+        public const string __250_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __250_sortIndex = 250;
+        [SortOrder(__250_sortIndex)]
+        [DisplayName(__250_displayName)]
+        public virtual byte __250 {
+            get => GetData<byte>(3);
+        }
+
         public const string T_Dragon_X1_displayName = "T_Dragon X1";
-        public const int T_Dragon_X1_sortIndex = 250;
+        public const int T_Dragon_X1_sortIndex = 300;
         [SortOrder(T_Dragon_X1_sortIndex)]
         [DisplayName(T_Dragon_X1_displayName)]
         public virtual float T_Dragon_X1 {
@@ -84,7 +92,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string T_Dragon_Y1_displayName = "T_Dragon Y1";
-        public const int T_Dragon_Y1_sortIndex = 300;
+        public const int T_Dragon_Y1_sortIndex = 350;
         [SortOrder(T_Dragon_Y1_sortIndex)]
         [DisplayName(T_Dragon_Y1_displayName)]
         public virtual float T_Dragon_Y1 {
@@ -98,7 +106,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string T_Dragon_X2_displayName = "T_Dragon X2";
-        public const int T_Dragon_X2_sortIndex = 350;
+        public const int T_Dragon_X2_sortIndex = 400;
         [SortOrder(T_Dragon_X2_sortIndex)]
         [DisplayName(T_Dragon_X2_displayName)]
         public virtual float T_Dragon_X2 {
@@ -112,7 +120,7 @@ namespace MHW_Editor.Weapons {
         }
 
         public const string T_Dragon_Y2_displayName = "T_Dragon Y2";
-        public const int T_Dragon_Y2_sortIndex = 400;
+        public const int T_Dragon_Y2_sortIndex = 450;
         [SortOrder(T_Dragon_Y2_sortIndex)]
         [DisplayName(T_Dragon_Y2_displayName)]
         public virtual float T_Dragon_Y2 {
@@ -125,6 +133,6 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const int lastSortIndex = 450;
+        public const int lastSortIndex = 500;
     }
 }

@@ -162,6 +162,8 @@
     <Compile Include="Generated\MHW_Editor\Weapons\Wp10ParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Wp11Param.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Wp11ParamInternal.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\Wp13Param.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\Wp13ParamInternal.cs" />
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
@@ -245,6 +247,7 @@
     <Compile Include="Weapons\GunnerShoot.cs" />
     <Compile Include="Weapons\NewLimitBreak.cs" />
     <Compile Include="Weapons\OtomoWeaponDat.cs" />
+    <Compile Include="Weapons\Wp13Param.cs" />
     <Compile Include="Weapons\Wp11Param.cs" />
     <Compile Include="Weapons\Wp10Param.cs" />
     <Compile Include="Weapons\RodInsect.cs" />
