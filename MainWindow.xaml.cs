@@ -22,7 +22,7 @@ using MHW_Editor.Assets;
 using MHW_Editor.Gems;
 using MHW_Editor.Items;
 using MHW_Editor.Models;
-using MHW_Editor.Monster;
+using MHW_Editor.Monsters;
 using MHW_Editor.PlData;
 using MHW_Editor.Skills;
 using MHW_Editor.Weapons;
@@ -44,7 +44,7 @@ namespace MHW_Editor {
         private const bool SHOW_RAW_BYTES = false;
 #endif
         private const string NEXUS_LINK = "https://www.nexusmods.com/monsterhunterworld/mods/2068";
-        private const string CURRENT_GAME_VERSION = "11.50.00";
+        private const string CURRENT_GAME_VERSION = "11.50.01";
         private const string TITLE = "MHW Editor";
 
         private readonly ObservableCollection<dynamic> items = new ObservableCollection<dynamic>();

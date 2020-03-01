@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using MHW_Editor.Models;
 
-namespace MHW_Editor.Monster {
+namespace MHW_Editor.Monsters {
     public partial class EnemySort : MhwItem {
         public EnemySort(byte[] bytes, ulong offset) : base(bytes, offset) {
         }

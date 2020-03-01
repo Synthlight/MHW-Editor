@@ -136,9 +136,9 @@
     <Compile Include="Generated\MHW_Editor\Items\SwapN.cs" />
     <Compile Include="Generated\MHW_Editor\Items\Treasure.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ValueTrader.cs" />
-    <Compile Include="Generated\MHW_Editor\Monster\EnemySort.cs" />
-    <Compile Include="Generated\MHW_Editor\Monster\MonsterEnrage.cs" />
-    <Compile Include="Generated\MHW_Editor\Monster\MonsterEnrageInternal.cs" />
+    <Compile Include="Generated\MHW_Editor\Monsters\EnemySort.cs" />
+    <Compile Include="Generated\MHW_Editor\Monsters\MonsterEnrage.cs" />
+    <Compile Include="Generated\MHW_Editor\Monsters\MonsterEnrageInternal.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlItemParam.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlItemParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlMantleParam.cs" />
@@ -169,7 +169,7 @@
     </Compile>
     <Compile Include="Items\ItemDelivery.cs" />
     <Compile Include="Items\RoomFurniture.cs" />
-    <Compile Include="Monster\EnemySort.cs" />
+    <Compile Include="Monsters\EnemySort.cs" />
     <Compile Include="Items\SteamRewardList.cs" />
     <Compile Include="Items\ItemLottery.cs" />
     <Compile Include="Items\QuestReward.cs" />
@@ -206,7 +206,7 @@
     <Compile Include="Models\SortOrderAttribute.cs" />
     <Compile Include="Models\ButtonSorter.cs" />
     <Compile Include="Models\VersionCheck.cs" />
-    <Compile Include="Monster\MonsterEnrage.cs" />
+    <Compile Include="Monsters\MonsterEnrage.cs" />
     <Compile Include="PlData\PlSkillParam.cs" />
     <Compile Include="PlData\PlMantleParam.cs" />
     <Compile Include="PlData\PlPlayerParam.cs" />

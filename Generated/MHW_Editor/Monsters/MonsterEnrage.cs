@@ -5,7 +5,7 @@ using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
 
-namespace MHW_Editor.Monster {
+namespace MHW_Editor.Monsters {
     public partial class MonsterEnrage {
         public const uint StructSize = 144;
         public const ulong InitialOffset = 0;

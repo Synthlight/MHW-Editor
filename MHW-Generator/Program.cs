@@ -106,7 +106,7 @@ namespace MHW_Generator {
             // 'Unk' counters.
             ushort i = 1;
 
-            GeneratePlDataProps("MHW_Editor.Monster", "MonsterEnrage", new MhwStructData { // .dtt_agr
+            GeneratePlDataProps("MHW_Editor.Monsters", "MonsterEnrage", new MhwStructData { // .dtt_agr
                 size = 144,
                 offsetInitial = 0,
                 entryCountOffset = -1,
@@ -167,7 +167,7 @@ namespace MHW_Generator {
         }
 
         private static void GenEnemySort() {
-            GenerateItemProps("MHW_Editor.Monster", "EnemySort", new MhwStructData { // .emst
+            GenerateItemProps("MHW_Editor.Monsters", "EnemySort", new MhwStructData { // .emst
                 size = 56,
                 offsetInitial = 10,
                 entryCountOffset = 6,

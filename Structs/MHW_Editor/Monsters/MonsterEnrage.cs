@@ -1,6 +1,6 @@
 using MHW_Template;
 
-namespace MHW_Editor.Monster {
+namespace MHW_Editor.Monsters {
     // Struct Size: "144"
     // Initial Offset: "0"
     // Unique Id Formula: "0"

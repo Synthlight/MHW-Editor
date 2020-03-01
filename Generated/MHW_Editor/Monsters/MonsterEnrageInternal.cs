@@ -1,7 +1,7 @@
 using System.Collections.ObjectModel;
 using MHW_Editor.Models;
 
-namespace MHW_Editor.Monster {
+namespace MHW_Editor.Monsters {
     public partial class MonsterEnrage {
         public ObservableCollection<PlDataItemCustomView> GetCustomView() {
             return new ObservableCollection<PlDataItemCustomView> {
