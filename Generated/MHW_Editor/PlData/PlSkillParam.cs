@@ -5725,73 +5725,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Crystalburst_displayName = "Slinger Up 1: Crystalburst";
-        public const int Slinger_Up_1_Crystalburst_sortIndex = 21650;
-        [SortOrder(Slinger_Up_1_Crystalburst_sortIndex)]
-        [DisplayName(Slinger_Up_1_Crystalburst_displayName)]
-        public virtual byte Slinger_Up_1_Crystalburst {
+        public const string Slinger_Up_1_Unk_1_displayName = "Slinger Up 1: Unk 1";
+        public const int Slinger_Up_1_Unk_1_sortIndex = 21650;
+        [SortOrder(Slinger_Up_1_Unk_1_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_1_displayName)]
+        public virtual byte Slinger_Up_1_Unk_1 {
             get => GetData<byte>(1064);
             set {
                 if (GetData<byte>(1064) == value) return;
-                SetData(1064, value, nameof(Slinger_Up_1_Crystalburst));
+                SetData(1064, value, nameof(Slinger_Up_1_Unk_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Crystalburst));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_1));
             }
         }
 
-        public const string Slinger_Up_2_Crystalburst_displayName = "Slinger Up 2: Crystalburst";
-        public const int Slinger_Up_2_Crystalburst_sortIndex = 21700;
-        [SortOrder(Slinger_Up_2_Crystalburst_sortIndex)]
-        [DisplayName(Slinger_Up_2_Crystalburst_displayName)]
-        public virtual byte Slinger_Up_2_Crystalburst {
+        public const string Slinger_Up_2_Unk_1_displayName = "Slinger Up 2: Unk 1";
+        public const int Slinger_Up_2_Unk_1_sortIndex = 21700;
+        [SortOrder(Slinger_Up_2_Unk_1_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_1_displayName)]
+        public virtual byte Slinger_Up_2_Unk_1 {
             get => GetData<byte>(1065);
             set {
                 if (GetData<byte>(1065) == value) return;
-                SetData(1065, value, nameof(Slinger_Up_2_Crystalburst));
+                SetData(1065, value, nameof(Slinger_Up_2_Unk_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Crystalburst));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_1));
             }
         }
 
-        public const string Slinger_Up_3_Crystalburst_displayName = "Slinger Up 3: Crystalburst";
-        public const int Slinger_Up_3_Crystalburst_sortIndex = 21750;
-        [SortOrder(Slinger_Up_3_Crystalburst_sortIndex)]
-        [DisplayName(Slinger_Up_3_Crystalburst_displayName)]
-        public virtual byte Slinger_Up_3_Crystalburst {
+        public const string Slinger_Up_3_Unk_1_displayName = "Slinger Up 3: Unk 1";
+        public const int Slinger_Up_3_Unk_1_sortIndex = 21750;
+        [SortOrder(Slinger_Up_3_Unk_1_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_1_displayName)]
+        public virtual byte Slinger_Up_3_Unk_1 {
             get => GetData<byte>(1066);
             set {
                 if (GetData<byte>(1066) == value) return;
-                SetData(1066, value, nameof(Slinger_Up_3_Crystalburst));
+                SetData(1066, value, nameof(Slinger_Up_3_Unk_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Crystalburst));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_1));
             }
         }
 
-        public const string Slinger_Up_4_Crystalburst_displayName = "Slinger Up 4: Crystalburst";
-        public const int Slinger_Up_4_Crystalburst_sortIndex = 21800;
-        [SortOrder(Slinger_Up_4_Crystalburst_sortIndex)]
-        [DisplayName(Slinger_Up_4_Crystalburst_displayName)]
-        public virtual byte Slinger_Up_4_Crystalburst {
+        public const string Slinger_Up_4_Unk_1_displayName = "Slinger Up 4: Unk 1";
+        public const int Slinger_Up_4_Unk_1_sortIndex = 21800;
+        [SortOrder(Slinger_Up_4_Unk_1_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_1_displayName)]
+        public virtual byte Slinger_Up_4_Unk_1 {
             get => GetData<byte>(1067);
             set {
                 if (GetData<byte>(1067) == value) return;
-                SetData(1067, value, nameof(Slinger_Up_4_Crystalburst));
+                SetData(1067, value, nameof(Slinger_Up_4_Unk_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Crystalburst));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_1));
             }
         }
 
-        public const string Slinger_Up_5_Crystalburst_displayName = "Slinger Up 5: Crystalburst";
-        public const int Slinger_Up_5_Crystalburst_sortIndex = 21850;
-        [SortOrder(Slinger_Up_5_Crystalburst_sortIndex)]
-        [DisplayName(Slinger_Up_5_Crystalburst_displayName)]
-        public virtual byte Slinger_Up_5_Crystalburst {
+        public const string Slinger_Up_5_Unk_1_displayName = "Slinger Up 5: Unk 1";
+        public const int Slinger_Up_5_Unk_1_sortIndex = 21850;
+        [SortOrder(Slinger_Up_5_Unk_1_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_1_displayName)]
+        public virtual byte Slinger_Up_5_Unk_1 {
             get => GetData<byte>(1068);
             set {
                 if (GetData<byte>(1068) == value) return;
-                SetData(1068, value, nameof(Slinger_Up_5_Crystalburst));
+                SetData(1068, value, nameof(Slinger_Up_5_Unk_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Crystalburst));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_1));
             }
         }
 
@@ -5803,73 +5803,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Torch_Pod_displayName = "Slinger Up 1: Torch Pod";
-        public const int Slinger_Up_1_Torch_Pod_sortIndex = 21950;
-        [SortOrder(Slinger_Up_1_Torch_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_1_Torch_Pod_displayName)]
-        public virtual byte Slinger_Up_1_Torch_Pod {
+        public const string Slinger_Up_1_Unk_2_displayName = "Slinger Up 1: Unk 2";
+        public const int Slinger_Up_1_Unk_2_sortIndex = 21950;
+        [SortOrder(Slinger_Up_1_Unk_2_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_2_displayName)]
+        public virtual byte Slinger_Up_1_Unk_2 {
             get => GetData<byte>(1069);
             set {
                 if (GetData<byte>(1069) == value) return;
-                SetData(1069, value, nameof(Slinger_Up_1_Torch_Pod));
+                SetData(1069, value, nameof(Slinger_Up_1_Unk_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Torch_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_2));
             }
         }
 
-        public const string Slinger_Up_2_Torch_Pod_displayName = "Slinger Up 2: Torch Pod";
-        public const int Slinger_Up_2_Torch_Pod_sortIndex = 22000;
-        [SortOrder(Slinger_Up_2_Torch_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_2_Torch_Pod_displayName)]
-        public virtual byte Slinger_Up_2_Torch_Pod {
+        public const string Slinger_Up_2_Unk_2_displayName = "Slinger Up 2: Unk 2";
+        public const int Slinger_Up_2_Unk_2_sortIndex = 22000;
+        [SortOrder(Slinger_Up_2_Unk_2_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_2_displayName)]
+        public virtual byte Slinger_Up_2_Unk_2 {
             get => GetData<byte>(1070);
             set {
                 if (GetData<byte>(1070) == value) return;
-                SetData(1070, value, nameof(Slinger_Up_2_Torch_Pod));
+                SetData(1070, value, nameof(Slinger_Up_2_Unk_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Torch_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_2));
             }
         }
 
-        public const string Slinger_Up_3_Torch_Pod_displayName = "Slinger Up 3: Torch Pod";
-        public const int Slinger_Up_3_Torch_Pod_sortIndex = 22050;
-        [SortOrder(Slinger_Up_3_Torch_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_3_Torch_Pod_displayName)]
-        public virtual byte Slinger_Up_3_Torch_Pod {
+        public const string Slinger_Up_3_Unk_2_displayName = "Slinger Up 3: Unk 2";
+        public const int Slinger_Up_3_Unk_2_sortIndex = 22050;
+        [SortOrder(Slinger_Up_3_Unk_2_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_2_displayName)]
+        public virtual byte Slinger_Up_3_Unk_2 {
             get => GetData<byte>(1071);
             set {
                 if (GetData<byte>(1071) == value) return;
-                SetData(1071, value, nameof(Slinger_Up_3_Torch_Pod));
+                SetData(1071, value, nameof(Slinger_Up_3_Unk_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Torch_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_2));
             }
         }
 
-        public const string Slinger_Up_4_Torch_Pod_displayName = "Slinger Up 4: Torch Pod";
-        public const int Slinger_Up_4_Torch_Pod_sortIndex = 22100;
-        [SortOrder(Slinger_Up_4_Torch_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_4_Torch_Pod_displayName)]
-        public virtual byte Slinger_Up_4_Torch_Pod {
+        public const string Slinger_Up_4_Unk_2_displayName = "Slinger Up 4: Unk 2";
+        public const int Slinger_Up_4_Unk_2_sortIndex = 22100;
+        [SortOrder(Slinger_Up_4_Unk_2_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_2_displayName)]
+        public virtual byte Slinger_Up_4_Unk_2 {
             get => GetData<byte>(1072);
             set {
                 if (GetData<byte>(1072) == value) return;
-                SetData(1072, value, nameof(Slinger_Up_4_Torch_Pod));
+                SetData(1072, value, nameof(Slinger_Up_4_Unk_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Torch_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_2));
             }
         }
 
-        public const string Slinger_Up_5_Torch_Pod_displayName = "Slinger Up 5: Torch Pod";
-        public const int Slinger_Up_5_Torch_Pod_sortIndex = 22150;
-        [SortOrder(Slinger_Up_5_Torch_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_5_Torch_Pod_displayName)]
-        public virtual byte Slinger_Up_5_Torch_Pod {
+        public const string Slinger_Up_5_Unk_2_displayName = "Slinger Up 5: Unk 2";
+        public const int Slinger_Up_5_Unk_2_sortIndex = 22150;
+        [SortOrder(Slinger_Up_5_Unk_2_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_2_displayName)]
+        public virtual byte Slinger_Up_5_Unk_2 {
             get => GetData<byte>(1073);
             set {
                 if (GetData<byte>(1073) == value) return;
-                SetData(1073, value, nameof(Slinger_Up_5_Torch_Pod));
+                SetData(1073, value, nameof(Slinger_Up_5_Unk_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Torch_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_2));
             }
         }
 
@@ -5881,73 +5881,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Puddle_Pod_displayName = "Slinger Up 1: Puddle Pod";
-        public const int Slinger_Up_1_Puddle_Pod_sortIndex = 22250;
-        [SortOrder(Slinger_Up_1_Puddle_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_1_Puddle_Pod_displayName)]
-        public virtual byte Slinger_Up_1_Puddle_Pod {
+        public const string Slinger_Up_1_Unk_3_displayName = "Slinger Up 1: Unk 3";
+        public const int Slinger_Up_1_Unk_3_sortIndex = 22250;
+        [SortOrder(Slinger_Up_1_Unk_3_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_3_displayName)]
+        public virtual byte Slinger_Up_1_Unk_3 {
             get => GetData<byte>(1074);
             set {
                 if (GetData<byte>(1074) == value) return;
-                SetData(1074, value, nameof(Slinger_Up_1_Puddle_Pod));
+                SetData(1074, value, nameof(Slinger_Up_1_Unk_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Puddle_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_3));
             }
         }
 
-        public const string Slinger_Up_2_Puddle_Pod_displayName = "Slinger Up 2: Puddle Pod";
-        public const int Slinger_Up_2_Puddle_Pod_sortIndex = 22300;
-        [SortOrder(Slinger_Up_2_Puddle_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_2_Puddle_Pod_displayName)]
-        public virtual byte Slinger_Up_2_Puddle_Pod {
+        public const string Slinger_Up_2_Unk_3_displayName = "Slinger Up 2: Unk 3";
+        public const int Slinger_Up_2_Unk_3_sortIndex = 22300;
+        [SortOrder(Slinger_Up_2_Unk_3_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_3_displayName)]
+        public virtual byte Slinger_Up_2_Unk_3 {
             get => GetData<byte>(1075);
             set {
                 if (GetData<byte>(1075) == value) return;
-                SetData(1075, value, nameof(Slinger_Up_2_Puddle_Pod));
+                SetData(1075, value, nameof(Slinger_Up_2_Unk_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Puddle_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_3));
             }
         }
 
-        public const string Slinger_Up_3_Puddle_Pod_displayName = "Slinger Up 3: Puddle Pod";
-        public const int Slinger_Up_3_Puddle_Pod_sortIndex = 22350;
-        [SortOrder(Slinger_Up_3_Puddle_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_3_Puddle_Pod_displayName)]
-        public virtual byte Slinger_Up_3_Puddle_Pod {
+        public const string Slinger_Up_3_Unk_3_displayName = "Slinger Up 3: Unk 3";
+        public const int Slinger_Up_3_Unk_3_sortIndex = 22350;
+        [SortOrder(Slinger_Up_3_Unk_3_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_3_displayName)]
+        public virtual byte Slinger_Up_3_Unk_3 {
             get => GetData<byte>(1076);
             set {
                 if (GetData<byte>(1076) == value) return;
-                SetData(1076, value, nameof(Slinger_Up_3_Puddle_Pod));
+                SetData(1076, value, nameof(Slinger_Up_3_Unk_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Puddle_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_3));
             }
         }
 
-        public const string Slinger_Up_4_Puddle_Pod_displayName = "Slinger Up 4: Puddle Pod";
-        public const int Slinger_Up_4_Puddle_Pod_sortIndex = 22400;
-        [SortOrder(Slinger_Up_4_Puddle_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_4_Puddle_Pod_displayName)]
-        public virtual byte Slinger_Up_4_Puddle_Pod {
+        public const string Slinger_Up_4_Unk_3_displayName = "Slinger Up 4: Unk 3";
+        public const int Slinger_Up_4_Unk_3_sortIndex = 22400;
+        [SortOrder(Slinger_Up_4_Unk_3_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_3_displayName)]
+        public virtual byte Slinger_Up_4_Unk_3 {
             get => GetData<byte>(1077);
             set {
                 if (GetData<byte>(1077) == value) return;
-                SetData(1077, value, nameof(Slinger_Up_4_Puddle_Pod));
+                SetData(1077, value, nameof(Slinger_Up_4_Unk_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Puddle_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_3));
             }
         }
 
-        public const string Slinger_Up_5_Puddle_Pod_displayName = "Slinger Up 5: Puddle Pod";
-        public const int Slinger_Up_5_Puddle_Pod_sortIndex = 22450;
-        [SortOrder(Slinger_Up_5_Puddle_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_5_Puddle_Pod_displayName)]
-        public virtual byte Slinger_Up_5_Puddle_Pod {
+        public const string Slinger_Up_5_Unk_3_displayName = "Slinger Up 5: Unk 3";
+        public const int Slinger_Up_5_Unk_3_sortIndex = 22450;
+        [SortOrder(Slinger_Up_5_Unk_3_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_3_displayName)]
+        public virtual byte Slinger_Up_5_Unk_3 {
             get => GetData<byte>(1078);
             set {
                 if (GetData<byte>(1078) == value) return;
-                SetData(1078, value, nameof(Slinger_Up_5_Puddle_Pod));
+                SetData(1078, value, nameof(Slinger_Up_5_Unk_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Puddle_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_3));
             }
         }
 
@@ -5959,73 +5959,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Bomb_Pod_displayName = "Slinger Up 1: Bomb Pod";
-        public const int Slinger_Up_1_Bomb_Pod_sortIndex = 22550;
-        [SortOrder(Slinger_Up_1_Bomb_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_1_Bomb_Pod_displayName)]
-        public virtual byte Slinger_Up_1_Bomb_Pod {
+        public const string Slinger_Up_1_Unk_4_displayName = "Slinger Up 1: Unk 4";
+        public const int Slinger_Up_1_Unk_4_sortIndex = 22550;
+        [SortOrder(Slinger_Up_1_Unk_4_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_4_displayName)]
+        public virtual byte Slinger_Up_1_Unk_4 {
             get => GetData<byte>(1079);
             set {
                 if (GetData<byte>(1079) == value) return;
-                SetData(1079, value, nameof(Slinger_Up_1_Bomb_Pod));
+                SetData(1079, value, nameof(Slinger_Up_1_Unk_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Bomb_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_4));
             }
         }
 
-        public const string Slinger_Up_2_Bomb_Pod_displayName = "Slinger Up 2: Bomb Pod";
-        public const int Slinger_Up_2_Bomb_Pod_sortIndex = 22600;
-        [SortOrder(Slinger_Up_2_Bomb_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_2_Bomb_Pod_displayName)]
-        public virtual byte Slinger_Up_2_Bomb_Pod {
+        public const string Slinger_Up_2_Unk_4_displayName = "Slinger Up 2: Unk 4";
+        public const int Slinger_Up_2_Unk_4_sortIndex = 22600;
+        [SortOrder(Slinger_Up_2_Unk_4_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_4_displayName)]
+        public virtual byte Slinger_Up_2_Unk_4 {
             get => GetData<byte>(1080);
             set {
                 if (GetData<byte>(1080) == value) return;
-                SetData(1080, value, nameof(Slinger_Up_2_Bomb_Pod));
+                SetData(1080, value, nameof(Slinger_Up_2_Unk_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Bomb_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_4));
             }
         }
 
-        public const string Slinger_Up_3_Bomb_Pod_displayName = "Slinger Up 3: Bomb Pod";
-        public const int Slinger_Up_3_Bomb_Pod_sortIndex = 22650;
-        [SortOrder(Slinger_Up_3_Bomb_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_3_Bomb_Pod_displayName)]
-        public virtual byte Slinger_Up_3_Bomb_Pod {
+        public const string Slinger_Up_3_Unk_4_displayName = "Slinger Up 3: Unk 4";
+        public const int Slinger_Up_3_Unk_4_sortIndex = 22650;
+        [SortOrder(Slinger_Up_3_Unk_4_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_4_displayName)]
+        public virtual byte Slinger_Up_3_Unk_4 {
             get => GetData<byte>(1081);
             set {
                 if (GetData<byte>(1081) == value) return;
-                SetData(1081, value, nameof(Slinger_Up_3_Bomb_Pod));
+                SetData(1081, value, nameof(Slinger_Up_3_Unk_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Bomb_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_4));
             }
         }
 
-        public const string Slinger_Up_4_Bomb_Pod_displayName = "Slinger Up 4: Bomb Pod";
-        public const int Slinger_Up_4_Bomb_Pod_sortIndex = 22700;
-        [SortOrder(Slinger_Up_4_Bomb_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_4_Bomb_Pod_displayName)]
-        public virtual byte Slinger_Up_4_Bomb_Pod {
+        public const string Slinger_Up_4_Unk_4_displayName = "Slinger Up 4: Unk 4";
+        public const int Slinger_Up_4_Unk_4_sortIndex = 22700;
+        [SortOrder(Slinger_Up_4_Unk_4_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_4_displayName)]
+        public virtual byte Slinger_Up_4_Unk_4 {
             get => GetData<byte>(1082);
             set {
                 if (GetData<byte>(1082) == value) return;
-                SetData(1082, value, nameof(Slinger_Up_4_Bomb_Pod));
+                SetData(1082, value, nameof(Slinger_Up_4_Unk_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Bomb_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_4));
             }
         }
 
-        public const string Slinger_Up_5_Bomb_Pod_displayName = "Slinger Up 5: Bomb Pod";
-        public const int Slinger_Up_5_Bomb_Pod_sortIndex = 22750;
-        [SortOrder(Slinger_Up_5_Bomb_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_5_Bomb_Pod_displayName)]
-        public virtual byte Slinger_Up_5_Bomb_Pod {
+        public const string Slinger_Up_5_Unk_4_displayName = "Slinger Up 5: Unk 4";
+        public const int Slinger_Up_5_Unk_4_sortIndex = 22750;
+        [SortOrder(Slinger_Up_5_Unk_4_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_4_displayName)]
+        public virtual byte Slinger_Up_5_Unk_4 {
             get => GetData<byte>(1083);
             set {
                 if (GetData<byte>(1083) == value) return;
-                SetData(1083, value, nameof(Slinger_Up_5_Bomb_Pod));
+                SetData(1083, value, nameof(Slinger_Up_5_Unk_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Bomb_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_4));
             }
         }
 
@@ -6037,73 +6037,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Piercing_Pod_displayName = "Slinger Up 1: Piercing Pod";
-        public const int Slinger_Up_1_Piercing_Pod_sortIndex = 22850;
-        [SortOrder(Slinger_Up_1_Piercing_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_1_Piercing_Pod_displayName)]
-        public virtual byte Slinger_Up_1_Piercing_Pod {
+        public const string Slinger_Up_1_Unk_5_displayName = "Slinger Up 1: Unk 5";
+        public const int Slinger_Up_1_Unk_5_sortIndex = 22850;
+        [SortOrder(Slinger_Up_1_Unk_5_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_5_displayName)]
+        public virtual byte Slinger_Up_1_Unk_5 {
             get => GetData<byte>(1084);
             set {
                 if (GetData<byte>(1084) == value) return;
-                SetData(1084, value, nameof(Slinger_Up_1_Piercing_Pod));
+                SetData(1084, value, nameof(Slinger_Up_1_Unk_5));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Piercing_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_5));
             }
         }
 
-        public const string Slinger_Up_2_Piercing_Pod_displayName = "Slinger Up 2: Piercing Pod";
-        public const int Slinger_Up_2_Piercing_Pod_sortIndex = 22900;
-        [SortOrder(Slinger_Up_2_Piercing_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_2_Piercing_Pod_displayName)]
-        public virtual byte Slinger_Up_2_Piercing_Pod {
+        public const string Slinger_Up_2_Unk_5_displayName = "Slinger Up 2: Unk 5";
+        public const int Slinger_Up_2_Unk_5_sortIndex = 22900;
+        [SortOrder(Slinger_Up_2_Unk_5_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_5_displayName)]
+        public virtual byte Slinger_Up_2_Unk_5 {
             get => GetData<byte>(1085);
             set {
                 if (GetData<byte>(1085) == value) return;
-                SetData(1085, value, nameof(Slinger_Up_2_Piercing_Pod));
+                SetData(1085, value, nameof(Slinger_Up_2_Unk_5));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Piercing_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_5));
             }
         }
 
-        public const string Slinger_Up_3_Piercing_Pod_displayName = "Slinger Up 3: Piercing Pod";
-        public const int Slinger_Up_3_Piercing_Pod_sortIndex = 22950;
-        [SortOrder(Slinger_Up_3_Piercing_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_3_Piercing_Pod_displayName)]
-        public virtual byte Slinger_Up_3_Piercing_Pod {
+        public const string Slinger_Up_3_Unk_5_displayName = "Slinger Up 3: Unk 5";
+        public const int Slinger_Up_3_Unk_5_sortIndex = 22950;
+        [SortOrder(Slinger_Up_3_Unk_5_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_5_displayName)]
+        public virtual byte Slinger_Up_3_Unk_5 {
             get => GetData<byte>(1086);
             set {
                 if (GetData<byte>(1086) == value) return;
-                SetData(1086, value, nameof(Slinger_Up_3_Piercing_Pod));
+                SetData(1086, value, nameof(Slinger_Up_3_Unk_5));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Piercing_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_5));
             }
         }
 
-        public const string Slinger_Up_4_Piercing_Pod_displayName = "Slinger Up 4: Piercing Pod";
-        public const int Slinger_Up_4_Piercing_Pod_sortIndex = 23000;
-        [SortOrder(Slinger_Up_4_Piercing_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_4_Piercing_Pod_displayName)]
-        public virtual byte Slinger_Up_4_Piercing_Pod {
+        public const string Slinger_Up_4_Unk_5_displayName = "Slinger Up 4: Unk 5";
+        public const int Slinger_Up_4_Unk_5_sortIndex = 23000;
+        [SortOrder(Slinger_Up_4_Unk_5_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_5_displayName)]
+        public virtual byte Slinger_Up_4_Unk_5 {
             get => GetData<byte>(1087);
             set {
                 if (GetData<byte>(1087) == value) return;
-                SetData(1087, value, nameof(Slinger_Up_4_Piercing_Pod));
+                SetData(1087, value, nameof(Slinger_Up_4_Unk_5));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Piercing_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_5));
             }
         }
 
-        public const string Slinger_Up_5_Piercing_Pod_displayName = "Slinger Up 5: Piercing Pod";
-        public const int Slinger_Up_5_Piercing_Pod_sortIndex = 23050;
-        [SortOrder(Slinger_Up_5_Piercing_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_5_Piercing_Pod_displayName)]
-        public virtual byte Slinger_Up_5_Piercing_Pod {
+        public const string Slinger_Up_5_Unk_5_displayName = "Slinger Up 5: Unk 5";
+        public const int Slinger_Up_5_Unk_5_sortIndex = 23050;
+        [SortOrder(Slinger_Up_5_Unk_5_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_5_displayName)]
+        public virtual byte Slinger_Up_5_Unk_5 {
             get => GetData<byte>(1088);
             set {
                 if (GetData<byte>(1088) == value) return;
-                SetData(1088, value, nameof(Slinger_Up_5_Piercing_Pod));
+                SetData(1088, value, nameof(Slinger_Up_5_Unk_5));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Piercing_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_5));
             }
         }
 
@@ -6115,73 +6115,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Slinger_Thorn_displayName = "Slinger Up 1: Slinger Thorn";
-        public const int Slinger_Up_1_Slinger_Thorn_sortIndex = 23150;
-        [SortOrder(Slinger_Up_1_Slinger_Thorn_sortIndex)]
-        [DisplayName(Slinger_Up_1_Slinger_Thorn_displayName)]
-        public virtual byte Slinger_Up_1_Slinger_Thorn {
+        public const string Slinger_Up_1_Torch_Pod_displayName = "Slinger Up 1: Torch Pod";
+        public const int Slinger_Up_1_Torch_Pod_sortIndex = 23150;
+        [SortOrder(Slinger_Up_1_Torch_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_1_Torch_Pod_displayName)]
+        public virtual byte Slinger_Up_1_Torch_Pod {
             get => GetData<byte>(1089);
             set {
                 if (GetData<byte>(1089) == value) return;
-                SetData(1089, value, nameof(Slinger_Up_1_Slinger_Thorn));
+                SetData(1089, value, nameof(Slinger_Up_1_Torch_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Slinger_Thorn));
+                OnPropertyChanged(nameof(Slinger_Up_1_Torch_Pod));
             }
         }
 
-        public const string Slinger_Up_2_Slinger_Thorn_displayName = "Slinger Up 2: Slinger Thorn";
-        public const int Slinger_Up_2_Slinger_Thorn_sortIndex = 23200;
-        [SortOrder(Slinger_Up_2_Slinger_Thorn_sortIndex)]
-        [DisplayName(Slinger_Up_2_Slinger_Thorn_displayName)]
-        public virtual byte Slinger_Up_2_Slinger_Thorn {
+        public const string Slinger_Up_2_Torch_Pod_displayName = "Slinger Up 2: Torch Pod";
+        public const int Slinger_Up_2_Torch_Pod_sortIndex = 23200;
+        [SortOrder(Slinger_Up_2_Torch_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_2_Torch_Pod_displayName)]
+        public virtual byte Slinger_Up_2_Torch_Pod {
             get => GetData<byte>(1090);
             set {
                 if (GetData<byte>(1090) == value) return;
-                SetData(1090, value, nameof(Slinger_Up_2_Slinger_Thorn));
+                SetData(1090, value, nameof(Slinger_Up_2_Torch_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Slinger_Thorn));
+                OnPropertyChanged(nameof(Slinger_Up_2_Torch_Pod));
             }
         }
 
-        public const string Slinger_Up_3_Slinger_Thorn_displayName = "Slinger Up 3: Slinger Thorn";
-        public const int Slinger_Up_3_Slinger_Thorn_sortIndex = 23250;
-        [SortOrder(Slinger_Up_3_Slinger_Thorn_sortIndex)]
-        [DisplayName(Slinger_Up_3_Slinger_Thorn_displayName)]
-        public virtual byte Slinger_Up_3_Slinger_Thorn {
+        public const string Slinger_Up_3_Torch_Pod_displayName = "Slinger Up 3: Torch Pod";
+        public const int Slinger_Up_3_Torch_Pod_sortIndex = 23250;
+        [SortOrder(Slinger_Up_3_Torch_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_3_Torch_Pod_displayName)]
+        public virtual byte Slinger_Up_3_Torch_Pod {
             get => GetData<byte>(1091);
             set {
                 if (GetData<byte>(1091) == value) return;
-                SetData(1091, value, nameof(Slinger_Up_3_Slinger_Thorn));
+                SetData(1091, value, nameof(Slinger_Up_3_Torch_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Slinger_Thorn));
+                OnPropertyChanged(nameof(Slinger_Up_3_Torch_Pod));
             }
         }
 
-        public const string Slinger_Up_4_Slinger_Thorn_displayName = "Slinger Up 4: Slinger Thorn";
-        public const int Slinger_Up_4_Slinger_Thorn_sortIndex = 23300;
-        [SortOrder(Slinger_Up_4_Slinger_Thorn_sortIndex)]
-        [DisplayName(Slinger_Up_4_Slinger_Thorn_displayName)]
-        public virtual byte Slinger_Up_4_Slinger_Thorn {
+        public const string Slinger_Up_4_Torch_Pod_displayName = "Slinger Up 4: Torch Pod";
+        public const int Slinger_Up_4_Torch_Pod_sortIndex = 23300;
+        [SortOrder(Slinger_Up_4_Torch_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_4_Torch_Pod_displayName)]
+        public virtual byte Slinger_Up_4_Torch_Pod {
             get => GetData<byte>(1092);
             set {
                 if (GetData<byte>(1092) == value) return;
-                SetData(1092, value, nameof(Slinger_Up_4_Slinger_Thorn));
+                SetData(1092, value, nameof(Slinger_Up_4_Torch_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Slinger_Thorn));
+                OnPropertyChanged(nameof(Slinger_Up_4_Torch_Pod));
             }
         }
 
-        public const string Slinger_Up_5_Slinger_Thorn_displayName = "Slinger Up 5: Slinger Thorn";
-        public const int Slinger_Up_5_Slinger_Thorn_sortIndex = 23350;
-        [SortOrder(Slinger_Up_5_Slinger_Thorn_sortIndex)]
-        [DisplayName(Slinger_Up_5_Slinger_Thorn_displayName)]
-        public virtual byte Slinger_Up_5_Slinger_Thorn {
+        public const string Slinger_Up_5_Torch_Pod_displayName = "Slinger Up 5: Torch Pod";
+        public const int Slinger_Up_5_Torch_Pod_sortIndex = 23350;
+        [SortOrder(Slinger_Up_5_Torch_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_5_Torch_Pod_displayName)]
+        public virtual byte Slinger_Up_5_Torch_Pod {
             get => GetData<byte>(1093);
             set {
                 if (GetData<byte>(1093) == value) return;
-                SetData(1093, value, nameof(Slinger_Up_5_Slinger_Thorn));
+                SetData(1093, value, nameof(Slinger_Up_5_Torch_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Slinger_Thorn));
+                OnPropertyChanged(nameof(Slinger_Up_5_Torch_Pod));
             }
         }
 
@@ -6193,73 +6193,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Dragon_Pod_displayName = "Slinger Up 1: Dragon Pod";
-        public const int Slinger_Up_1_Dragon_Pod_sortIndex = 23450;
-        [SortOrder(Slinger_Up_1_Dragon_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_1_Dragon_Pod_displayName)]
-        public virtual byte Slinger_Up_1_Dragon_Pod {
+        public const string Slinger_Up_1_Unk_6_displayName = "Slinger Up 1: Unk 6";
+        public const int Slinger_Up_1_Unk_6_sortIndex = 23450;
+        [SortOrder(Slinger_Up_1_Unk_6_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_6_displayName)]
+        public virtual byte Slinger_Up_1_Unk_6 {
             get => GetData<byte>(1094);
             set {
                 if (GetData<byte>(1094) == value) return;
-                SetData(1094, value, nameof(Slinger_Up_1_Dragon_Pod));
+                SetData(1094, value, nameof(Slinger_Up_1_Unk_6));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Dragon_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_6));
             }
         }
 
-        public const string Slinger_Up_2_Dragon_Pod_displayName = "Slinger Up 2: Dragon Pod";
-        public const int Slinger_Up_2_Dragon_Pod_sortIndex = 23500;
-        [SortOrder(Slinger_Up_2_Dragon_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_2_Dragon_Pod_displayName)]
-        public virtual byte Slinger_Up_2_Dragon_Pod {
+        public const string Slinger_Up_2_Unk_6_displayName = "Slinger Up 2: Unk 6";
+        public const int Slinger_Up_2_Unk_6_sortIndex = 23500;
+        [SortOrder(Slinger_Up_2_Unk_6_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_6_displayName)]
+        public virtual byte Slinger_Up_2_Unk_6 {
             get => GetData<byte>(1095);
             set {
                 if (GetData<byte>(1095) == value) return;
-                SetData(1095, value, nameof(Slinger_Up_2_Dragon_Pod));
+                SetData(1095, value, nameof(Slinger_Up_2_Unk_6));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Dragon_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_6));
             }
         }
 
-        public const string Slinger_Up_3_Dragon_Pod_displayName = "Slinger Up 3: Dragon Pod";
-        public const int Slinger_Up_3_Dragon_Pod_sortIndex = 23550;
-        [SortOrder(Slinger_Up_3_Dragon_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_3_Dragon_Pod_displayName)]
-        public virtual byte Slinger_Up_3_Dragon_Pod {
+        public const string Slinger_Up_3_Unk_6_displayName = "Slinger Up 3: Unk 6";
+        public const int Slinger_Up_3_Unk_6_sortIndex = 23550;
+        [SortOrder(Slinger_Up_3_Unk_6_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_6_displayName)]
+        public virtual byte Slinger_Up_3_Unk_6 {
             get => GetData<byte>(1096);
             set {
                 if (GetData<byte>(1096) == value) return;
-                SetData(1096, value, nameof(Slinger_Up_3_Dragon_Pod));
+                SetData(1096, value, nameof(Slinger_Up_3_Unk_6));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Dragon_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_6));
             }
         }
 
-        public const string Slinger_Up_4_Dragon_Pod_displayName = "Slinger Up 4: Dragon Pod";
-        public const int Slinger_Up_4_Dragon_Pod_sortIndex = 23600;
-        [SortOrder(Slinger_Up_4_Dragon_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_4_Dragon_Pod_displayName)]
-        public virtual byte Slinger_Up_4_Dragon_Pod {
+        public const string Slinger_Up_4_Unk_6_displayName = "Slinger Up 4: Unk 6";
+        public const int Slinger_Up_4_Unk_6_sortIndex = 23600;
+        [SortOrder(Slinger_Up_4_Unk_6_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_6_displayName)]
+        public virtual byte Slinger_Up_4_Unk_6 {
             get => GetData<byte>(1097);
             set {
                 if (GetData<byte>(1097) == value) return;
-                SetData(1097, value, nameof(Slinger_Up_4_Dragon_Pod));
+                SetData(1097, value, nameof(Slinger_Up_4_Unk_6));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Dragon_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_6));
             }
         }
 
-        public const string Slinger_Up_5_Dragon_Pod_displayName = "Slinger Up 5: Dragon Pod";
-        public const int Slinger_Up_5_Dragon_Pod_sortIndex = 23650;
-        [SortOrder(Slinger_Up_5_Dragon_Pod_sortIndex)]
-        [DisplayName(Slinger_Up_5_Dragon_Pod_displayName)]
-        public virtual byte Slinger_Up_5_Dragon_Pod {
+        public const string Slinger_Up_5_Unk_6_displayName = "Slinger Up 5: Unk 6";
+        public const int Slinger_Up_5_Unk_6_sortIndex = 23650;
+        [SortOrder(Slinger_Up_5_Unk_6_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_6_displayName)]
+        public virtual byte Slinger_Up_5_Unk_6 {
             get => GetData<byte>(1098);
             set {
                 if (GetData<byte>(1098) == value) return;
-                SetData(1098, value, nameof(Slinger_Up_5_Dragon_Pod));
+                SetData(1098, value, nameof(Slinger_Up_5_Unk_6));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Dragon_Pod));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_6));
             }
         }
 
@@ -6271,73 +6271,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_1_displayName = "Slinger Up 1: Unk 1";
-        public const int Slinger_Up_1_Unk_1_sortIndex = 23750;
-        [SortOrder(Slinger_Up_1_Unk_1_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_1_displayName)]
-        public virtual byte Slinger_Up_1_Unk_1 {
+        public const string Slinger_Up_1_Unk_7_displayName = "Slinger Up 1: Unk 7";
+        public const int Slinger_Up_1_Unk_7_sortIndex = 23750;
+        [SortOrder(Slinger_Up_1_Unk_7_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_7_displayName)]
+        public virtual byte Slinger_Up_1_Unk_7 {
             get => GetData<byte>(1099);
             set {
                 if (GetData<byte>(1099) == value) return;
-                SetData(1099, value, nameof(Slinger_Up_1_Unk_1));
+                SetData(1099, value, nameof(Slinger_Up_1_Unk_7));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_1));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_7));
             }
         }
 
-        public const string Slinger_Up_2_Unk_1_displayName = "Slinger Up 2: Unk 1";
-        public const int Slinger_Up_2_Unk_1_sortIndex = 23800;
-        [SortOrder(Slinger_Up_2_Unk_1_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_1_displayName)]
-        public virtual byte Slinger_Up_2_Unk_1 {
+        public const string Slinger_Up_2_Unk_7_displayName = "Slinger Up 2: Unk 7";
+        public const int Slinger_Up_2_Unk_7_sortIndex = 23800;
+        [SortOrder(Slinger_Up_2_Unk_7_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_7_displayName)]
+        public virtual byte Slinger_Up_2_Unk_7 {
             get => GetData<byte>(1100);
             set {
                 if (GetData<byte>(1100) == value) return;
-                SetData(1100, value, nameof(Slinger_Up_2_Unk_1));
+                SetData(1100, value, nameof(Slinger_Up_2_Unk_7));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_1));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_7));
             }
         }
 
-        public const string Slinger_Up_3_Unk_1_displayName = "Slinger Up 3: Unk 1";
-        public const int Slinger_Up_3_Unk_1_sortIndex = 23850;
-        [SortOrder(Slinger_Up_3_Unk_1_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_1_displayName)]
-        public virtual byte Slinger_Up_3_Unk_1 {
+        public const string Slinger_Up_3_Unk_7_displayName = "Slinger Up 3: Unk 7";
+        public const int Slinger_Up_3_Unk_7_sortIndex = 23850;
+        [SortOrder(Slinger_Up_3_Unk_7_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_7_displayName)]
+        public virtual byte Slinger_Up_3_Unk_7 {
             get => GetData<byte>(1101);
             set {
                 if (GetData<byte>(1101) == value) return;
-                SetData(1101, value, nameof(Slinger_Up_3_Unk_1));
+                SetData(1101, value, nameof(Slinger_Up_3_Unk_7));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_1));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_7));
             }
         }
 
-        public const string Slinger_Up_4_Unk_1_displayName = "Slinger Up 4: Unk 1";
-        public const int Slinger_Up_4_Unk_1_sortIndex = 23900;
-        [SortOrder(Slinger_Up_4_Unk_1_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_1_displayName)]
-        public virtual byte Slinger_Up_4_Unk_1 {
+        public const string Slinger_Up_4_Unk_7_displayName = "Slinger Up 4: Unk 7";
+        public const int Slinger_Up_4_Unk_7_sortIndex = 23900;
+        [SortOrder(Slinger_Up_4_Unk_7_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_7_displayName)]
+        public virtual byte Slinger_Up_4_Unk_7 {
             get => GetData<byte>(1102);
             set {
                 if (GetData<byte>(1102) == value) return;
-                SetData(1102, value, nameof(Slinger_Up_4_Unk_1));
+                SetData(1102, value, nameof(Slinger_Up_4_Unk_7));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_1));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_7));
             }
         }
 
-        public const string Slinger_Up_5_Unk_1_displayName = "Slinger Up 5: Unk 1";
-        public const int Slinger_Up_5_Unk_1_sortIndex = 23950;
-        [SortOrder(Slinger_Up_5_Unk_1_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_1_displayName)]
-        public virtual byte Slinger_Up_5_Unk_1 {
+        public const string Slinger_Up_5_Unk_7_displayName = "Slinger Up 5: Unk 7";
+        public const int Slinger_Up_5_Unk_7_sortIndex = 23950;
+        [SortOrder(Slinger_Up_5_Unk_7_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_7_displayName)]
+        public virtual byte Slinger_Up_5_Unk_7 {
             get => GetData<byte>(1103);
             set {
                 if (GetData<byte>(1103) == value) return;
-                SetData(1103, value, nameof(Slinger_Up_5_Unk_1));
+                SetData(1103, value, nameof(Slinger_Up_5_Unk_7));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_1));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_7));
             }
         }
 
@@ -6349,73 +6349,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_2_displayName = "Slinger Up 1: Unk 2";
-        public const int Slinger_Up_1_Unk_2_sortIndex = 24050;
-        [SortOrder(Slinger_Up_1_Unk_2_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_2_displayName)]
-        public virtual byte Slinger_Up_1_Unk_2 {
+        public const string Slinger_Up_1_Unk_8_displayName = "Slinger Up 1: Unk 8";
+        public const int Slinger_Up_1_Unk_8_sortIndex = 24050;
+        [SortOrder(Slinger_Up_1_Unk_8_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_8_displayName)]
+        public virtual byte Slinger_Up_1_Unk_8 {
             get => GetData<byte>(1104);
             set {
                 if (GetData<byte>(1104) == value) return;
-                SetData(1104, value, nameof(Slinger_Up_1_Unk_2));
+                SetData(1104, value, nameof(Slinger_Up_1_Unk_8));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_2));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_8));
             }
         }
 
-        public const string Slinger_Up_2_Unk_2_displayName = "Slinger Up 2: Unk 2";
-        public const int Slinger_Up_2_Unk_2_sortIndex = 24100;
-        [SortOrder(Slinger_Up_2_Unk_2_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_2_displayName)]
-        public virtual byte Slinger_Up_2_Unk_2 {
+        public const string Slinger_Up_2_Unk_8_displayName = "Slinger Up 2: Unk 8";
+        public const int Slinger_Up_2_Unk_8_sortIndex = 24100;
+        [SortOrder(Slinger_Up_2_Unk_8_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_8_displayName)]
+        public virtual byte Slinger_Up_2_Unk_8 {
             get => GetData<byte>(1105);
             set {
                 if (GetData<byte>(1105) == value) return;
-                SetData(1105, value, nameof(Slinger_Up_2_Unk_2));
+                SetData(1105, value, nameof(Slinger_Up_2_Unk_8));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_2));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_8));
             }
         }
 
-        public const string Slinger_Up_3_Unk_2_displayName = "Slinger Up 3: Unk 2";
-        public const int Slinger_Up_3_Unk_2_sortIndex = 24150;
-        [SortOrder(Slinger_Up_3_Unk_2_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_2_displayName)]
-        public virtual byte Slinger_Up_3_Unk_2 {
+        public const string Slinger_Up_3_Unk_8_displayName = "Slinger Up 3: Unk 8";
+        public const int Slinger_Up_3_Unk_8_sortIndex = 24150;
+        [SortOrder(Slinger_Up_3_Unk_8_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_8_displayName)]
+        public virtual byte Slinger_Up_3_Unk_8 {
             get => GetData<byte>(1106);
             set {
                 if (GetData<byte>(1106) == value) return;
-                SetData(1106, value, nameof(Slinger_Up_3_Unk_2));
+                SetData(1106, value, nameof(Slinger_Up_3_Unk_8));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_2));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_8));
             }
         }
 
-        public const string Slinger_Up_4_Unk_2_displayName = "Slinger Up 4: Unk 2";
-        public const int Slinger_Up_4_Unk_2_sortIndex = 24200;
-        [SortOrder(Slinger_Up_4_Unk_2_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_2_displayName)]
-        public virtual byte Slinger_Up_4_Unk_2 {
+        public const string Slinger_Up_4_Unk_8_displayName = "Slinger Up 4: Unk 8";
+        public const int Slinger_Up_4_Unk_8_sortIndex = 24200;
+        [SortOrder(Slinger_Up_4_Unk_8_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_8_displayName)]
+        public virtual byte Slinger_Up_4_Unk_8 {
             get => GetData<byte>(1107);
             set {
                 if (GetData<byte>(1107) == value) return;
-                SetData(1107, value, nameof(Slinger_Up_4_Unk_2));
+                SetData(1107, value, nameof(Slinger_Up_4_Unk_8));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_2));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_8));
             }
         }
 
-        public const string Slinger_Up_5_Unk_2_displayName = "Slinger Up 5: Unk 2";
-        public const int Slinger_Up_5_Unk_2_sortIndex = 24250;
-        [SortOrder(Slinger_Up_5_Unk_2_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_2_displayName)]
-        public virtual byte Slinger_Up_5_Unk_2 {
+        public const string Slinger_Up_5_Unk_8_displayName = "Slinger Up 5: Unk 8";
+        public const int Slinger_Up_5_Unk_8_sortIndex = 24250;
+        [SortOrder(Slinger_Up_5_Unk_8_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_8_displayName)]
+        public virtual byte Slinger_Up_5_Unk_8 {
             get => GetData<byte>(1108);
             set {
                 if (GetData<byte>(1108) == value) return;
-                SetData(1108, value, nameof(Slinger_Up_5_Unk_2));
+                SetData(1108, value, nameof(Slinger_Up_5_Unk_8));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_2));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_8));
             }
         }
 
@@ -6427,73 +6427,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_3_displayName = "Slinger Up 1: Unk 3";
-        public const int Slinger_Up_1_Unk_3_sortIndex = 24350;
-        [SortOrder(Slinger_Up_1_Unk_3_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_3_displayName)]
-        public virtual byte Slinger_Up_1_Unk_3 {
+        public const string Slinger_Up_1_Unk_9_displayName = "Slinger Up 1: Unk 9";
+        public const int Slinger_Up_1_Unk_9_sortIndex = 24350;
+        [SortOrder(Slinger_Up_1_Unk_9_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_9_displayName)]
+        public virtual byte Slinger_Up_1_Unk_9 {
             get => GetData<byte>(1109);
             set {
                 if (GetData<byte>(1109) == value) return;
-                SetData(1109, value, nameof(Slinger_Up_1_Unk_3));
+                SetData(1109, value, nameof(Slinger_Up_1_Unk_9));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_3));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_9));
             }
         }
 
-        public const string Slinger_Up_2_Unk_3_displayName = "Slinger Up 2: Unk 3";
-        public const int Slinger_Up_2_Unk_3_sortIndex = 24400;
-        [SortOrder(Slinger_Up_2_Unk_3_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_3_displayName)]
-        public virtual byte Slinger_Up_2_Unk_3 {
+        public const string Slinger_Up_2_Unk_9_displayName = "Slinger Up 2: Unk 9";
+        public const int Slinger_Up_2_Unk_9_sortIndex = 24400;
+        [SortOrder(Slinger_Up_2_Unk_9_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_9_displayName)]
+        public virtual byte Slinger_Up_2_Unk_9 {
             get => GetData<byte>(1110);
             set {
                 if (GetData<byte>(1110) == value) return;
-                SetData(1110, value, nameof(Slinger_Up_2_Unk_3));
+                SetData(1110, value, nameof(Slinger_Up_2_Unk_9));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_3));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_9));
             }
         }
 
-        public const string Slinger_Up_3_Unk_3_displayName = "Slinger Up 3: Unk 3";
-        public const int Slinger_Up_3_Unk_3_sortIndex = 24450;
-        [SortOrder(Slinger_Up_3_Unk_3_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_3_displayName)]
-        public virtual byte Slinger_Up_3_Unk_3 {
+        public const string Slinger_Up_3_Unk_9_displayName = "Slinger Up 3: Unk 9";
+        public const int Slinger_Up_3_Unk_9_sortIndex = 24450;
+        [SortOrder(Slinger_Up_3_Unk_9_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_9_displayName)]
+        public virtual byte Slinger_Up_3_Unk_9 {
             get => GetData<byte>(1111);
             set {
                 if (GetData<byte>(1111) == value) return;
-                SetData(1111, value, nameof(Slinger_Up_3_Unk_3));
+                SetData(1111, value, nameof(Slinger_Up_3_Unk_9));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_3));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_9));
             }
         }
 
-        public const string Slinger_Up_4_Unk_3_displayName = "Slinger Up 4: Unk 3";
-        public const int Slinger_Up_4_Unk_3_sortIndex = 24500;
-        [SortOrder(Slinger_Up_4_Unk_3_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_3_displayName)]
-        public virtual byte Slinger_Up_4_Unk_3 {
+        public const string Slinger_Up_4_Unk_9_displayName = "Slinger Up 4: Unk 9";
+        public const int Slinger_Up_4_Unk_9_sortIndex = 24500;
+        [SortOrder(Slinger_Up_4_Unk_9_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_9_displayName)]
+        public virtual byte Slinger_Up_4_Unk_9 {
             get => GetData<byte>(1112);
             set {
                 if (GetData<byte>(1112) == value) return;
-                SetData(1112, value, nameof(Slinger_Up_4_Unk_3));
+                SetData(1112, value, nameof(Slinger_Up_4_Unk_9));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_3));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_9));
             }
         }
 
-        public const string Slinger_Up_5_Unk_3_displayName = "Slinger Up 5: Unk 3";
-        public const int Slinger_Up_5_Unk_3_sortIndex = 24550;
-        [SortOrder(Slinger_Up_5_Unk_3_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_3_displayName)]
-        public virtual byte Slinger_Up_5_Unk_3 {
+        public const string Slinger_Up_5_Unk_9_displayName = "Slinger Up 5: Unk 9";
+        public const int Slinger_Up_5_Unk_9_sortIndex = 24550;
+        [SortOrder(Slinger_Up_5_Unk_9_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_9_displayName)]
+        public virtual byte Slinger_Up_5_Unk_9 {
             get => GetData<byte>(1113);
             set {
                 if (GetData<byte>(1113) == value) return;
-                SetData(1113, value, nameof(Slinger_Up_5_Unk_3));
+                SetData(1113, value, nameof(Slinger_Up_5_Unk_9));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_3));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_9));
             }
         }
 
@@ -6505,73 +6505,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_4_displayName = "Slinger Up 1: Unk 4";
-        public const int Slinger_Up_1_Unk_4_sortIndex = 24650;
-        [SortOrder(Slinger_Up_1_Unk_4_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_4_displayName)]
-        public virtual byte Slinger_Up_1_Unk_4 {
+        public const string Slinger_Up_1_Bomb_Pod_displayName = "Slinger Up 1: Bomb Pod";
+        public const int Slinger_Up_1_Bomb_Pod_sortIndex = 24650;
+        [SortOrder(Slinger_Up_1_Bomb_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_1_Bomb_Pod_displayName)]
+        public virtual byte Slinger_Up_1_Bomb_Pod {
             get => GetData<byte>(1114);
             set {
                 if (GetData<byte>(1114) == value) return;
-                SetData(1114, value, nameof(Slinger_Up_1_Unk_4));
+                SetData(1114, value, nameof(Slinger_Up_1_Bomb_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_4));
+                OnPropertyChanged(nameof(Slinger_Up_1_Bomb_Pod));
             }
         }
 
-        public const string Slinger_Up_2_Unk_4_displayName = "Slinger Up 2: Unk 4";
-        public const int Slinger_Up_2_Unk_4_sortIndex = 24700;
-        [SortOrder(Slinger_Up_2_Unk_4_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_4_displayName)]
-        public virtual byte Slinger_Up_2_Unk_4 {
+        public const string Slinger_Up_2_Bomb_Pod_displayName = "Slinger Up 2: Bomb Pod";
+        public const int Slinger_Up_2_Bomb_Pod_sortIndex = 24700;
+        [SortOrder(Slinger_Up_2_Bomb_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_2_Bomb_Pod_displayName)]
+        public virtual byte Slinger_Up_2_Bomb_Pod {
             get => GetData<byte>(1115);
             set {
                 if (GetData<byte>(1115) == value) return;
-                SetData(1115, value, nameof(Slinger_Up_2_Unk_4));
+                SetData(1115, value, nameof(Slinger_Up_2_Bomb_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_4));
+                OnPropertyChanged(nameof(Slinger_Up_2_Bomb_Pod));
             }
         }
 
-        public const string Slinger_Up_3_Unk_4_displayName = "Slinger Up 3: Unk 4";
-        public const int Slinger_Up_3_Unk_4_sortIndex = 24750;
-        [SortOrder(Slinger_Up_3_Unk_4_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_4_displayName)]
-        public virtual byte Slinger_Up_3_Unk_4 {
+        public const string Slinger_Up_3_Bomb_Pod_displayName = "Slinger Up 3: Bomb Pod";
+        public const int Slinger_Up_3_Bomb_Pod_sortIndex = 24750;
+        [SortOrder(Slinger_Up_3_Bomb_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_3_Bomb_Pod_displayName)]
+        public virtual byte Slinger_Up_3_Bomb_Pod {
             get => GetData<byte>(1116);
             set {
                 if (GetData<byte>(1116) == value) return;
-                SetData(1116, value, nameof(Slinger_Up_3_Unk_4));
+                SetData(1116, value, nameof(Slinger_Up_3_Bomb_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_4));
+                OnPropertyChanged(nameof(Slinger_Up_3_Bomb_Pod));
             }
         }
 
-        public const string Slinger_Up_4_Unk_4_displayName = "Slinger Up 4: Unk 4";
-        public const int Slinger_Up_4_Unk_4_sortIndex = 24800;
-        [SortOrder(Slinger_Up_4_Unk_4_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_4_displayName)]
-        public virtual byte Slinger_Up_4_Unk_4 {
+        public const string Slinger_Up_4_Bomb_Pod_displayName = "Slinger Up 4: Bomb Pod";
+        public const int Slinger_Up_4_Bomb_Pod_sortIndex = 24800;
+        [SortOrder(Slinger_Up_4_Bomb_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_4_Bomb_Pod_displayName)]
+        public virtual byte Slinger_Up_4_Bomb_Pod {
             get => GetData<byte>(1117);
             set {
                 if (GetData<byte>(1117) == value) return;
-                SetData(1117, value, nameof(Slinger_Up_4_Unk_4));
+                SetData(1117, value, nameof(Slinger_Up_4_Bomb_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_4));
+                OnPropertyChanged(nameof(Slinger_Up_4_Bomb_Pod));
             }
         }
 
-        public const string Slinger_Up_5_Unk_4_displayName = "Slinger Up 5: Unk 4";
-        public const int Slinger_Up_5_Unk_4_sortIndex = 24850;
-        [SortOrder(Slinger_Up_5_Unk_4_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_4_displayName)]
-        public virtual byte Slinger_Up_5_Unk_4 {
+        public const string Slinger_Up_5_Bomb_Pod_displayName = "Slinger Up 5: Bomb Pod";
+        public const int Slinger_Up_5_Bomb_Pod_sortIndex = 24850;
+        [SortOrder(Slinger_Up_5_Bomb_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_5_Bomb_Pod_displayName)]
+        public virtual byte Slinger_Up_5_Bomb_Pod {
             get => GetData<byte>(1118);
             set {
                 if (GetData<byte>(1118) == value) return;
-                SetData(1118, value, nameof(Slinger_Up_5_Unk_4));
+                SetData(1118, value, nameof(Slinger_Up_5_Bomb_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_4));
+                OnPropertyChanged(nameof(Slinger_Up_5_Bomb_Pod));
             }
         }
 
@@ -6583,73 +6583,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_5_displayName = "Slinger Up 1: Unk 5";
-        public const int Slinger_Up_1_Unk_5_sortIndex = 24950;
-        [SortOrder(Slinger_Up_1_Unk_5_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_5_displayName)]
-        public virtual byte Slinger_Up_1_Unk_5 {
+        public const string Slinger_Up_1_Piercing_Pod_displayName = "Slinger Up 1: Piercing Pod";
+        public const int Slinger_Up_1_Piercing_Pod_sortIndex = 24950;
+        [SortOrder(Slinger_Up_1_Piercing_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_1_Piercing_Pod_displayName)]
+        public virtual byte Slinger_Up_1_Piercing_Pod {
             get => GetData<byte>(1119);
             set {
                 if (GetData<byte>(1119) == value) return;
-                SetData(1119, value, nameof(Slinger_Up_1_Unk_5));
+                SetData(1119, value, nameof(Slinger_Up_1_Piercing_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_5));
+                OnPropertyChanged(nameof(Slinger_Up_1_Piercing_Pod));
             }
         }
 
-        public const string Slinger_Up_2_Unk_5_displayName = "Slinger Up 2: Unk 5";
-        public const int Slinger_Up_2_Unk_5_sortIndex = 25000;
-        [SortOrder(Slinger_Up_2_Unk_5_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_5_displayName)]
-        public virtual byte Slinger_Up_2_Unk_5 {
+        public const string Slinger_Up_2_Piercing_Pod_displayName = "Slinger Up 2: Piercing Pod";
+        public const int Slinger_Up_2_Piercing_Pod_sortIndex = 25000;
+        [SortOrder(Slinger_Up_2_Piercing_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_2_Piercing_Pod_displayName)]
+        public virtual byte Slinger_Up_2_Piercing_Pod {
             get => GetData<byte>(1120);
             set {
                 if (GetData<byte>(1120) == value) return;
-                SetData(1120, value, nameof(Slinger_Up_2_Unk_5));
+                SetData(1120, value, nameof(Slinger_Up_2_Piercing_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_5));
+                OnPropertyChanged(nameof(Slinger_Up_2_Piercing_Pod));
             }
         }
 
-        public const string Slinger_Up_3_Unk_5_displayName = "Slinger Up 3: Unk 5";
-        public const int Slinger_Up_3_Unk_5_sortIndex = 25050;
-        [SortOrder(Slinger_Up_3_Unk_5_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_5_displayName)]
-        public virtual byte Slinger_Up_3_Unk_5 {
+        public const string Slinger_Up_3_Piercing_Pod_displayName = "Slinger Up 3: Piercing Pod";
+        public const int Slinger_Up_3_Piercing_Pod_sortIndex = 25050;
+        [SortOrder(Slinger_Up_3_Piercing_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_3_Piercing_Pod_displayName)]
+        public virtual byte Slinger_Up_3_Piercing_Pod {
             get => GetData<byte>(1121);
             set {
                 if (GetData<byte>(1121) == value) return;
-                SetData(1121, value, nameof(Slinger_Up_3_Unk_5));
+                SetData(1121, value, nameof(Slinger_Up_3_Piercing_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_5));
+                OnPropertyChanged(nameof(Slinger_Up_3_Piercing_Pod));
             }
         }
 
-        public const string Slinger_Up_4_Unk_5_displayName = "Slinger Up 4: Unk 5";
-        public const int Slinger_Up_4_Unk_5_sortIndex = 25100;
-        [SortOrder(Slinger_Up_4_Unk_5_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_5_displayName)]
-        public virtual byte Slinger_Up_4_Unk_5 {
+        public const string Slinger_Up_4_Piercing_Pod_displayName = "Slinger Up 4: Piercing Pod";
+        public const int Slinger_Up_4_Piercing_Pod_sortIndex = 25100;
+        [SortOrder(Slinger_Up_4_Piercing_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_4_Piercing_Pod_displayName)]
+        public virtual byte Slinger_Up_4_Piercing_Pod {
             get => GetData<byte>(1122);
             set {
                 if (GetData<byte>(1122) == value) return;
-                SetData(1122, value, nameof(Slinger_Up_4_Unk_5));
+                SetData(1122, value, nameof(Slinger_Up_4_Piercing_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_5));
+                OnPropertyChanged(nameof(Slinger_Up_4_Piercing_Pod));
             }
         }
 
-        public const string Slinger_Up_5_Unk_5_displayName = "Slinger Up 5: Unk 5";
-        public const int Slinger_Up_5_Unk_5_sortIndex = 25150;
-        [SortOrder(Slinger_Up_5_Unk_5_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_5_displayName)]
-        public virtual byte Slinger_Up_5_Unk_5 {
+        public const string Slinger_Up_5_Piercing_Pod_displayName = "Slinger Up 5: Piercing Pod";
+        public const int Slinger_Up_5_Piercing_Pod_sortIndex = 25150;
+        [SortOrder(Slinger_Up_5_Piercing_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_5_Piercing_Pod_displayName)]
+        public virtual byte Slinger_Up_5_Piercing_Pod {
             get => GetData<byte>(1123);
             set {
                 if (GetData<byte>(1123) == value) return;
-                SetData(1123, value, nameof(Slinger_Up_5_Unk_5));
+                SetData(1123, value, nameof(Slinger_Up_5_Piercing_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_5));
+                OnPropertyChanged(nameof(Slinger_Up_5_Piercing_Pod));
             }
         }
 
@@ -6661,73 +6661,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_6_displayName = "Slinger Up 1: Unk 6";
-        public const int Slinger_Up_1_Unk_6_sortIndex = 25250;
-        [SortOrder(Slinger_Up_1_Unk_6_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_6_displayName)]
-        public virtual byte Slinger_Up_1_Unk_6 {
+        public const string Slinger_Up_1_Slinger_Thorn_displayName = "Slinger Up 1: Slinger Thorn";
+        public const int Slinger_Up_1_Slinger_Thorn_sortIndex = 25250;
+        [SortOrder(Slinger_Up_1_Slinger_Thorn_sortIndex)]
+        [DisplayName(Slinger_Up_1_Slinger_Thorn_displayName)]
+        public virtual byte Slinger_Up_1_Slinger_Thorn {
             get => GetData<byte>(1124);
             set {
                 if (GetData<byte>(1124) == value) return;
-                SetData(1124, value, nameof(Slinger_Up_1_Unk_6));
+                SetData(1124, value, nameof(Slinger_Up_1_Slinger_Thorn));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_6));
+                OnPropertyChanged(nameof(Slinger_Up_1_Slinger_Thorn));
             }
         }
 
-        public const string Slinger_Up_2_Unk_6_displayName = "Slinger Up 2: Unk 6";
-        public const int Slinger_Up_2_Unk_6_sortIndex = 25300;
-        [SortOrder(Slinger_Up_2_Unk_6_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_6_displayName)]
-        public virtual byte Slinger_Up_2_Unk_6 {
+        public const string Slinger_Up_2_Slinger_Thorn_displayName = "Slinger Up 2: Slinger Thorn";
+        public const int Slinger_Up_2_Slinger_Thorn_sortIndex = 25300;
+        [SortOrder(Slinger_Up_2_Slinger_Thorn_sortIndex)]
+        [DisplayName(Slinger_Up_2_Slinger_Thorn_displayName)]
+        public virtual byte Slinger_Up_2_Slinger_Thorn {
             get => GetData<byte>(1125);
             set {
                 if (GetData<byte>(1125) == value) return;
-                SetData(1125, value, nameof(Slinger_Up_2_Unk_6));
+                SetData(1125, value, nameof(Slinger_Up_2_Slinger_Thorn));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_6));
+                OnPropertyChanged(nameof(Slinger_Up_2_Slinger_Thorn));
             }
         }
 
-        public const string Slinger_Up_3_Unk_6_displayName = "Slinger Up 3: Unk 6";
-        public const int Slinger_Up_3_Unk_6_sortIndex = 25350;
-        [SortOrder(Slinger_Up_3_Unk_6_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_6_displayName)]
-        public virtual byte Slinger_Up_3_Unk_6 {
+        public const string Slinger_Up_3_Slinger_Thorn_displayName = "Slinger Up 3: Slinger Thorn";
+        public const int Slinger_Up_3_Slinger_Thorn_sortIndex = 25350;
+        [SortOrder(Slinger_Up_3_Slinger_Thorn_sortIndex)]
+        [DisplayName(Slinger_Up_3_Slinger_Thorn_displayName)]
+        public virtual byte Slinger_Up_3_Slinger_Thorn {
             get => GetData<byte>(1126);
             set {
                 if (GetData<byte>(1126) == value) return;
-                SetData(1126, value, nameof(Slinger_Up_3_Unk_6));
+                SetData(1126, value, nameof(Slinger_Up_3_Slinger_Thorn));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_6));
+                OnPropertyChanged(nameof(Slinger_Up_3_Slinger_Thorn));
             }
         }
 
-        public const string Slinger_Up_4_Unk_6_displayName = "Slinger Up 4: Unk 6";
-        public const int Slinger_Up_4_Unk_6_sortIndex = 25400;
-        [SortOrder(Slinger_Up_4_Unk_6_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_6_displayName)]
-        public virtual byte Slinger_Up_4_Unk_6 {
+        public const string Slinger_Up_4_Slinger_Thorn_displayName = "Slinger Up 4: Slinger Thorn";
+        public const int Slinger_Up_4_Slinger_Thorn_sortIndex = 25400;
+        [SortOrder(Slinger_Up_4_Slinger_Thorn_sortIndex)]
+        [DisplayName(Slinger_Up_4_Slinger_Thorn_displayName)]
+        public virtual byte Slinger_Up_4_Slinger_Thorn {
             get => GetData<byte>(1127);
             set {
                 if (GetData<byte>(1127) == value) return;
-                SetData(1127, value, nameof(Slinger_Up_4_Unk_6));
+                SetData(1127, value, nameof(Slinger_Up_4_Slinger_Thorn));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_6));
+                OnPropertyChanged(nameof(Slinger_Up_4_Slinger_Thorn));
             }
         }
 
-        public const string Slinger_Up_5_Unk_6_displayName = "Slinger Up 5: Unk 6";
-        public const int Slinger_Up_5_Unk_6_sortIndex = 25450;
-        [SortOrder(Slinger_Up_5_Unk_6_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_6_displayName)]
-        public virtual byte Slinger_Up_5_Unk_6 {
+        public const string Slinger_Up_5_Slinger_Thorn_displayName = "Slinger Up 5: Slinger Thorn";
+        public const int Slinger_Up_5_Slinger_Thorn_sortIndex = 25450;
+        [SortOrder(Slinger_Up_5_Slinger_Thorn_sortIndex)]
+        [DisplayName(Slinger_Up_5_Slinger_Thorn_displayName)]
+        public virtual byte Slinger_Up_5_Slinger_Thorn {
             get => GetData<byte>(1128);
             set {
                 if (GetData<byte>(1128) == value) return;
-                SetData(1128, value, nameof(Slinger_Up_5_Unk_6));
+                SetData(1128, value, nameof(Slinger_Up_5_Slinger_Thorn));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_6));
+                OnPropertyChanged(nameof(Slinger_Up_5_Slinger_Thorn));
             }
         }
 
@@ -6739,73 +6739,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_7_displayName = "Slinger Up 1: Unk 7";
-        public const int Slinger_Up_1_Unk_7_sortIndex = 25550;
-        [SortOrder(Slinger_Up_1_Unk_7_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_7_displayName)]
-        public virtual byte Slinger_Up_1_Unk_7 {
+        public const string Slinger_Up_1_Dragon_Pod_displayName = "Slinger Up 1: Dragon Pod";
+        public const int Slinger_Up_1_Dragon_Pod_sortIndex = 25550;
+        [SortOrder(Slinger_Up_1_Dragon_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_1_Dragon_Pod_displayName)]
+        public virtual byte Slinger_Up_1_Dragon_Pod {
             get => GetData<byte>(1129);
             set {
                 if (GetData<byte>(1129) == value) return;
-                SetData(1129, value, nameof(Slinger_Up_1_Unk_7));
+                SetData(1129, value, nameof(Slinger_Up_1_Dragon_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_7));
+                OnPropertyChanged(nameof(Slinger_Up_1_Dragon_Pod));
             }
         }
 
-        public const string Slinger_Up_2_Unk_7_displayName = "Slinger Up 2: Unk 7";
-        public const int Slinger_Up_2_Unk_7_sortIndex = 25600;
-        [SortOrder(Slinger_Up_2_Unk_7_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_7_displayName)]
-        public virtual byte Slinger_Up_2_Unk_7 {
+        public const string Slinger_Up_2_Dragon_Pod_displayName = "Slinger Up 2: Dragon Pod";
+        public const int Slinger_Up_2_Dragon_Pod_sortIndex = 25600;
+        [SortOrder(Slinger_Up_2_Dragon_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_2_Dragon_Pod_displayName)]
+        public virtual byte Slinger_Up_2_Dragon_Pod {
             get => GetData<byte>(1130);
             set {
                 if (GetData<byte>(1130) == value) return;
-                SetData(1130, value, nameof(Slinger_Up_2_Unk_7));
+                SetData(1130, value, nameof(Slinger_Up_2_Dragon_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_7));
+                OnPropertyChanged(nameof(Slinger_Up_2_Dragon_Pod));
             }
         }
 
-        public const string Slinger_Up_3_Unk_7_displayName = "Slinger Up 3: Unk 7";
-        public const int Slinger_Up_3_Unk_7_sortIndex = 25650;
-        [SortOrder(Slinger_Up_3_Unk_7_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_7_displayName)]
-        public virtual byte Slinger_Up_3_Unk_7 {
+        public const string Slinger_Up_3_Dragon_Pod_displayName = "Slinger Up 3: Dragon Pod";
+        public const int Slinger_Up_3_Dragon_Pod_sortIndex = 25650;
+        [SortOrder(Slinger_Up_3_Dragon_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_3_Dragon_Pod_displayName)]
+        public virtual byte Slinger_Up_3_Dragon_Pod {
             get => GetData<byte>(1131);
             set {
                 if (GetData<byte>(1131) == value) return;
-                SetData(1131, value, nameof(Slinger_Up_3_Unk_7));
+                SetData(1131, value, nameof(Slinger_Up_3_Dragon_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_7));
+                OnPropertyChanged(nameof(Slinger_Up_3_Dragon_Pod));
             }
         }
 
-        public const string Slinger_Up_4_Unk_7_displayName = "Slinger Up 4: Unk 7";
-        public const int Slinger_Up_4_Unk_7_sortIndex = 25700;
-        [SortOrder(Slinger_Up_4_Unk_7_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_7_displayName)]
-        public virtual byte Slinger_Up_4_Unk_7 {
+        public const string Slinger_Up_4_Dragon_Pod_displayName = "Slinger Up 4: Dragon Pod";
+        public const int Slinger_Up_4_Dragon_Pod_sortIndex = 25700;
+        [SortOrder(Slinger_Up_4_Dragon_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_4_Dragon_Pod_displayName)]
+        public virtual byte Slinger_Up_4_Dragon_Pod {
             get => GetData<byte>(1132);
             set {
                 if (GetData<byte>(1132) == value) return;
-                SetData(1132, value, nameof(Slinger_Up_4_Unk_7));
+                SetData(1132, value, nameof(Slinger_Up_4_Dragon_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_7));
+                OnPropertyChanged(nameof(Slinger_Up_4_Dragon_Pod));
             }
         }
 
-        public const string Slinger_Up_5_Unk_7_displayName = "Slinger Up 5: Unk 7";
-        public const int Slinger_Up_5_Unk_7_sortIndex = 25750;
-        [SortOrder(Slinger_Up_5_Unk_7_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_7_displayName)]
-        public virtual byte Slinger_Up_5_Unk_7 {
+        public const string Slinger_Up_5_Dragon_Pod_displayName = "Slinger Up 5: Dragon Pod";
+        public const int Slinger_Up_5_Dragon_Pod_sortIndex = 25750;
+        [SortOrder(Slinger_Up_5_Dragon_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_5_Dragon_Pod_displayName)]
+        public virtual byte Slinger_Up_5_Dragon_Pod {
             get => GetData<byte>(1133);
             set {
                 if (GetData<byte>(1133) == value) return;
-                SetData(1133, value, nameof(Slinger_Up_5_Unk_7));
+                SetData(1133, value, nameof(Slinger_Up_5_Dragon_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_7));
+                OnPropertyChanged(nameof(Slinger_Up_5_Dragon_Pod));
             }
         }
 
@@ -6817,73 +6817,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_8_displayName = "Slinger Up 1: Unk 8";
-        public const int Slinger_Up_1_Unk_8_sortIndex = 25850;
-        [SortOrder(Slinger_Up_1_Unk_8_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_8_displayName)]
-        public virtual byte Slinger_Up_1_Unk_8 {
+        public const string Slinger_Up_1_Unk_10_displayName = "Slinger Up 1: Unk 10";
+        public const int Slinger_Up_1_Unk_10_sortIndex = 25850;
+        [SortOrder(Slinger_Up_1_Unk_10_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_10_displayName)]
+        public virtual byte Slinger_Up_1_Unk_10 {
             get => GetData<byte>(1134);
             set {
                 if (GetData<byte>(1134) == value) return;
-                SetData(1134, value, nameof(Slinger_Up_1_Unk_8));
+                SetData(1134, value, nameof(Slinger_Up_1_Unk_10));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_8));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_10));
             }
         }
 
-        public const string Slinger_Up_2_Unk_8_displayName = "Slinger Up 2: Unk 8";
-        public const int Slinger_Up_2_Unk_8_sortIndex = 25900;
-        [SortOrder(Slinger_Up_2_Unk_8_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_8_displayName)]
-        public virtual byte Slinger_Up_2_Unk_8 {
+        public const string Slinger_Up_2_Unk_10_displayName = "Slinger Up 2: Unk 10";
+        public const int Slinger_Up_2_Unk_10_sortIndex = 25900;
+        [SortOrder(Slinger_Up_2_Unk_10_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_10_displayName)]
+        public virtual byte Slinger_Up_2_Unk_10 {
             get => GetData<byte>(1135);
             set {
                 if (GetData<byte>(1135) == value) return;
-                SetData(1135, value, nameof(Slinger_Up_2_Unk_8));
+                SetData(1135, value, nameof(Slinger_Up_2_Unk_10));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_8));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_10));
             }
         }
 
-        public const string Slinger_Up_3_Unk_8_displayName = "Slinger Up 3: Unk 8";
-        public const int Slinger_Up_3_Unk_8_sortIndex = 25950;
-        [SortOrder(Slinger_Up_3_Unk_8_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_8_displayName)]
-        public virtual byte Slinger_Up_3_Unk_8 {
+        public const string Slinger_Up_3_Unk_10_displayName = "Slinger Up 3: Unk 10";
+        public const int Slinger_Up_3_Unk_10_sortIndex = 25950;
+        [SortOrder(Slinger_Up_3_Unk_10_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_10_displayName)]
+        public virtual byte Slinger_Up_3_Unk_10 {
             get => GetData<byte>(1136);
             set {
                 if (GetData<byte>(1136) == value) return;
-                SetData(1136, value, nameof(Slinger_Up_3_Unk_8));
+                SetData(1136, value, nameof(Slinger_Up_3_Unk_10));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_8));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_10));
             }
         }
 
-        public const string Slinger_Up_4_Unk_8_displayName = "Slinger Up 4: Unk 8";
-        public const int Slinger_Up_4_Unk_8_sortIndex = 26000;
-        [SortOrder(Slinger_Up_4_Unk_8_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_8_displayName)]
-        public virtual byte Slinger_Up_4_Unk_8 {
+        public const string Slinger_Up_4_Unk_10_displayName = "Slinger Up 4: Unk 10";
+        public const int Slinger_Up_4_Unk_10_sortIndex = 26000;
+        [SortOrder(Slinger_Up_4_Unk_10_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_10_displayName)]
+        public virtual byte Slinger_Up_4_Unk_10 {
             get => GetData<byte>(1137);
             set {
                 if (GetData<byte>(1137) == value) return;
-                SetData(1137, value, nameof(Slinger_Up_4_Unk_8));
+                SetData(1137, value, nameof(Slinger_Up_4_Unk_10));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_8));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_10));
             }
         }
 
-        public const string Slinger_Up_5_Unk_8_displayName = "Slinger Up 5: Unk 8";
-        public const int Slinger_Up_5_Unk_8_sortIndex = 26050;
-        [SortOrder(Slinger_Up_5_Unk_8_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_8_displayName)]
-        public virtual byte Slinger_Up_5_Unk_8 {
+        public const string Slinger_Up_5_Unk_10_displayName = "Slinger Up 5: Unk 10";
+        public const int Slinger_Up_5_Unk_10_sortIndex = 26050;
+        [SortOrder(Slinger_Up_5_Unk_10_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_10_displayName)]
+        public virtual byte Slinger_Up_5_Unk_10 {
             get => GetData<byte>(1138);
             set {
                 if (GetData<byte>(1138) == value) return;
-                SetData(1138, value, nameof(Slinger_Up_5_Unk_8));
+                SetData(1138, value, nameof(Slinger_Up_5_Unk_10));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_8));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_10));
             }
         }
 
@@ -6895,73 +6895,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_9_displayName = "Slinger Up 1: Unk 9";
-        public const int Slinger_Up_1_Unk_9_sortIndex = 26150;
-        [SortOrder(Slinger_Up_1_Unk_9_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_9_displayName)]
-        public virtual byte Slinger_Up_1_Unk_9 {
+        public const string Slinger_Up_1_Unk_11_displayName = "Slinger Up 1: Unk 11";
+        public const int Slinger_Up_1_Unk_11_sortIndex = 26150;
+        [SortOrder(Slinger_Up_1_Unk_11_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_11_displayName)]
+        public virtual byte Slinger_Up_1_Unk_11 {
             get => GetData<byte>(1139);
             set {
                 if (GetData<byte>(1139) == value) return;
-                SetData(1139, value, nameof(Slinger_Up_1_Unk_9));
+                SetData(1139, value, nameof(Slinger_Up_1_Unk_11));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_9));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_11));
             }
         }
 
-        public const string Slinger_Up_2_Unk_9_displayName = "Slinger Up 2: Unk 9";
-        public const int Slinger_Up_2_Unk_9_sortIndex = 26200;
-        [SortOrder(Slinger_Up_2_Unk_9_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_9_displayName)]
-        public virtual byte Slinger_Up_2_Unk_9 {
+        public const string Slinger_Up_2_Unk_11_displayName = "Slinger Up 2: Unk 11";
+        public const int Slinger_Up_2_Unk_11_sortIndex = 26200;
+        [SortOrder(Slinger_Up_2_Unk_11_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_11_displayName)]
+        public virtual byte Slinger_Up_2_Unk_11 {
             get => GetData<byte>(1140);
             set {
                 if (GetData<byte>(1140) == value) return;
-                SetData(1140, value, nameof(Slinger_Up_2_Unk_9));
+                SetData(1140, value, nameof(Slinger_Up_2_Unk_11));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_9));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_11));
             }
         }
 
-        public const string Slinger_Up_3_Unk_9_displayName = "Slinger Up 3: Unk 9";
-        public const int Slinger_Up_3_Unk_9_sortIndex = 26250;
-        [SortOrder(Slinger_Up_3_Unk_9_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_9_displayName)]
-        public virtual byte Slinger_Up_3_Unk_9 {
+        public const string Slinger_Up_3_Unk_11_displayName = "Slinger Up 3: Unk 11";
+        public const int Slinger_Up_3_Unk_11_sortIndex = 26250;
+        [SortOrder(Slinger_Up_3_Unk_11_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_11_displayName)]
+        public virtual byte Slinger_Up_3_Unk_11 {
             get => GetData<byte>(1141);
             set {
                 if (GetData<byte>(1141) == value) return;
-                SetData(1141, value, nameof(Slinger_Up_3_Unk_9));
+                SetData(1141, value, nameof(Slinger_Up_3_Unk_11));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_9));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_11));
             }
         }
 
-        public const string Slinger_Up_4_Unk_9_displayName = "Slinger Up 4: Unk 9";
-        public const int Slinger_Up_4_Unk_9_sortIndex = 26300;
-        [SortOrder(Slinger_Up_4_Unk_9_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_9_displayName)]
-        public virtual byte Slinger_Up_4_Unk_9 {
+        public const string Slinger_Up_4_Unk_11_displayName = "Slinger Up 4: Unk 11";
+        public const int Slinger_Up_4_Unk_11_sortIndex = 26300;
+        [SortOrder(Slinger_Up_4_Unk_11_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_11_displayName)]
+        public virtual byte Slinger_Up_4_Unk_11 {
             get => GetData<byte>(1142);
             set {
                 if (GetData<byte>(1142) == value) return;
-                SetData(1142, value, nameof(Slinger_Up_4_Unk_9));
+                SetData(1142, value, nameof(Slinger_Up_4_Unk_11));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_9));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_11));
             }
         }
 
-        public const string Slinger_Up_5_Unk_9_displayName = "Slinger Up 5: Unk 9";
-        public const int Slinger_Up_5_Unk_9_sortIndex = 26350;
-        [SortOrder(Slinger_Up_5_Unk_9_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_9_displayName)]
-        public virtual byte Slinger_Up_5_Unk_9 {
+        public const string Slinger_Up_5_Unk_11_displayName = "Slinger Up 5: Unk 11";
+        public const int Slinger_Up_5_Unk_11_sortIndex = 26350;
+        [SortOrder(Slinger_Up_5_Unk_11_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_11_displayName)]
+        public virtual byte Slinger_Up_5_Unk_11 {
             get => GetData<byte>(1143);
             set {
                 if (GetData<byte>(1143) == value) return;
-                SetData(1143, value, nameof(Slinger_Up_5_Unk_9));
+                SetData(1143, value, nameof(Slinger_Up_5_Unk_11));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_9));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_11));
             }
         }
 
@@ -6973,73 +6973,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_10_displayName = "Slinger Up 1: Unk 10";
-        public const int Slinger_Up_1_Unk_10_sortIndex = 26450;
-        [SortOrder(Slinger_Up_1_Unk_10_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_10_displayName)]
-        public virtual byte Slinger_Up_1_Unk_10 {
+        public const string Slinger_Up_1_Unk_12_displayName = "Slinger Up 1: Unk 12";
+        public const int Slinger_Up_1_Unk_12_sortIndex = 26450;
+        [SortOrder(Slinger_Up_1_Unk_12_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_12_displayName)]
+        public virtual byte Slinger_Up_1_Unk_12 {
             get => GetData<byte>(1144);
             set {
                 if (GetData<byte>(1144) == value) return;
-                SetData(1144, value, nameof(Slinger_Up_1_Unk_10));
+                SetData(1144, value, nameof(Slinger_Up_1_Unk_12));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_10));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_12));
             }
         }
 
-        public const string Slinger_Up_2_Unk_10_displayName = "Slinger Up 2: Unk 10";
-        public const int Slinger_Up_2_Unk_10_sortIndex = 26500;
-        [SortOrder(Slinger_Up_2_Unk_10_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_10_displayName)]
-        public virtual byte Slinger_Up_2_Unk_10 {
+        public const string Slinger_Up_2_Unk_12_displayName = "Slinger Up 2: Unk 12";
+        public const int Slinger_Up_2_Unk_12_sortIndex = 26500;
+        [SortOrder(Slinger_Up_2_Unk_12_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_12_displayName)]
+        public virtual byte Slinger_Up_2_Unk_12 {
             get => GetData<byte>(1145);
             set {
                 if (GetData<byte>(1145) == value) return;
-                SetData(1145, value, nameof(Slinger_Up_2_Unk_10));
+                SetData(1145, value, nameof(Slinger_Up_2_Unk_12));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_10));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_12));
             }
         }
 
-        public const string Slinger_Up_3_Unk_10_displayName = "Slinger Up 3: Unk 10";
-        public const int Slinger_Up_3_Unk_10_sortIndex = 26550;
-        [SortOrder(Slinger_Up_3_Unk_10_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_10_displayName)]
-        public virtual byte Slinger_Up_3_Unk_10 {
+        public const string Slinger_Up_3_Unk_12_displayName = "Slinger Up 3: Unk 12";
+        public const int Slinger_Up_3_Unk_12_sortIndex = 26550;
+        [SortOrder(Slinger_Up_3_Unk_12_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_12_displayName)]
+        public virtual byte Slinger_Up_3_Unk_12 {
             get => GetData<byte>(1146);
             set {
                 if (GetData<byte>(1146) == value) return;
-                SetData(1146, value, nameof(Slinger_Up_3_Unk_10));
+                SetData(1146, value, nameof(Slinger_Up_3_Unk_12));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_10));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_12));
             }
         }
 
-        public const string Slinger_Up_4_Unk_10_displayName = "Slinger Up 4: Unk 10";
-        public const int Slinger_Up_4_Unk_10_sortIndex = 26600;
-        [SortOrder(Slinger_Up_4_Unk_10_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_10_displayName)]
-        public virtual byte Slinger_Up_4_Unk_10 {
+        public const string Slinger_Up_4_Unk_12_displayName = "Slinger Up 4: Unk 12";
+        public const int Slinger_Up_4_Unk_12_sortIndex = 26600;
+        [SortOrder(Slinger_Up_4_Unk_12_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_12_displayName)]
+        public virtual byte Slinger_Up_4_Unk_12 {
             get => GetData<byte>(1147);
             set {
                 if (GetData<byte>(1147) == value) return;
-                SetData(1147, value, nameof(Slinger_Up_4_Unk_10));
+                SetData(1147, value, nameof(Slinger_Up_4_Unk_12));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_10));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_12));
             }
         }
 
-        public const string Slinger_Up_5_Unk_10_displayName = "Slinger Up 5: Unk 10";
-        public const int Slinger_Up_5_Unk_10_sortIndex = 26650;
-        [SortOrder(Slinger_Up_5_Unk_10_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_10_displayName)]
-        public virtual byte Slinger_Up_5_Unk_10 {
+        public const string Slinger_Up_5_Unk_12_displayName = "Slinger Up 5: Unk 12";
+        public const int Slinger_Up_5_Unk_12_sortIndex = 26650;
+        [SortOrder(Slinger_Up_5_Unk_12_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_12_displayName)]
+        public virtual byte Slinger_Up_5_Unk_12 {
             get => GetData<byte>(1148);
             set {
                 if (GetData<byte>(1148) == value) return;
-                SetData(1148, value, nameof(Slinger_Up_5_Unk_10));
+                SetData(1148, value, nameof(Slinger_Up_5_Unk_12));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_10));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_12));
             }
         }
 
@@ -7051,73 +7051,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_11_displayName = "Slinger Up 1: Unk 11";
-        public const int Slinger_Up_1_Unk_11_sortIndex = 26750;
-        [SortOrder(Slinger_Up_1_Unk_11_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_11_displayName)]
-        public virtual byte Slinger_Up_1_Unk_11 {
+        public const string Slinger_Up_1_Unk_13_displayName = "Slinger Up 1: Unk 13";
+        public const int Slinger_Up_1_Unk_13_sortIndex = 26750;
+        [SortOrder(Slinger_Up_1_Unk_13_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_13_displayName)]
+        public virtual byte Slinger_Up_1_Unk_13 {
             get => GetData<byte>(1149);
             set {
                 if (GetData<byte>(1149) == value) return;
-                SetData(1149, value, nameof(Slinger_Up_1_Unk_11));
+                SetData(1149, value, nameof(Slinger_Up_1_Unk_13));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_11));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_13));
             }
         }
 
-        public const string Slinger_Up_2_Unk_11_displayName = "Slinger Up 2: Unk 11";
-        public const int Slinger_Up_2_Unk_11_sortIndex = 26800;
-        [SortOrder(Slinger_Up_2_Unk_11_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_11_displayName)]
-        public virtual byte Slinger_Up_2_Unk_11 {
+        public const string Slinger_Up_2_Unk_13_displayName = "Slinger Up 2: Unk 13";
+        public const int Slinger_Up_2_Unk_13_sortIndex = 26800;
+        [SortOrder(Slinger_Up_2_Unk_13_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_13_displayName)]
+        public virtual byte Slinger_Up_2_Unk_13 {
             get => GetData<byte>(1150);
             set {
                 if (GetData<byte>(1150) == value) return;
-                SetData(1150, value, nameof(Slinger_Up_2_Unk_11));
+                SetData(1150, value, nameof(Slinger_Up_2_Unk_13));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_11));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_13));
             }
         }
 
-        public const string Slinger_Up_3_Unk_11_displayName = "Slinger Up 3: Unk 11";
-        public const int Slinger_Up_3_Unk_11_sortIndex = 26850;
-        [SortOrder(Slinger_Up_3_Unk_11_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_11_displayName)]
-        public virtual byte Slinger_Up_3_Unk_11 {
+        public const string Slinger_Up_3_Unk_13_displayName = "Slinger Up 3: Unk 13";
+        public const int Slinger_Up_3_Unk_13_sortIndex = 26850;
+        [SortOrder(Slinger_Up_3_Unk_13_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_13_displayName)]
+        public virtual byte Slinger_Up_3_Unk_13 {
             get => GetData<byte>(1151);
             set {
                 if (GetData<byte>(1151) == value) return;
-                SetData(1151, value, nameof(Slinger_Up_3_Unk_11));
+                SetData(1151, value, nameof(Slinger_Up_3_Unk_13));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_11));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_13));
             }
         }
 
-        public const string Slinger_Up_4_Unk_11_displayName = "Slinger Up 4: Unk 11";
-        public const int Slinger_Up_4_Unk_11_sortIndex = 26900;
-        [SortOrder(Slinger_Up_4_Unk_11_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_11_displayName)]
-        public virtual byte Slinger_Up_4_Unk_11 {
+        public const string Slinger_Up_4_Unk_13_displayName = "Slinger Up 4: Unk 13";
+        public const int Slinger_Up_4_Unk_13_sortIndex = 26900;
+        [SortOrder(Slinger_Up_4_Unk_13_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_13_displayName)]
+        public virtual byte Slinger_Up_4_Unk_13 {
             get => GetData<byte>(1152);
             set {
                 if (GetData<byte>(1152) == value) return;
-                SetData(1152, value, nameof(Slinger_Up_4_Unk_11));
+                SetData(1152, value, nameof(Slinger_Up_4_Unk_13));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_11));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_13));
             }
         }
 
-        public const string Slinger_Up_5_Unk_11_displayName = "Slinger Up 5: Unk 11";
-        public const int Slinger_Up_5_Unk_11_sortIndex = 26950;
-        [SortOrder(Slinger_Up_5_Unk_11_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_11_displayName)]
-        public virtual byte Slinger_Up_5_Unk_11 {
+        public const string Slinger_Up_5_Unk_13_displayName = "Slinger Up 5: Unk 13";
+        public const int Slinger_Up_5_Unk_13_sortIndex = 26950;
+        [SortOrder(Slinger_Up_5_Unk_13_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_13_displayName)]
+        public virtual byte Slinger_Up_5_Unk_13 {
             get => GetData<byte>(1153);
             set {
                 if (GetData<byte>(1153) == value) return;
-                SetData(1153, value, nameof(Slinger_Up_5_Unk_11));
+                SetData(1153, value, nameof(Slinger_Up_5_Unk_13));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_11));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_13));
             }
         }
 
@@ -7129,73 +7129,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_12_displayName = "Slinger Up 1: Unk 12";
-        public const int Slinger_Up_1_Unk_12_sortIndex = 27050;
-        [SortOrder(Slinger_Up_1_Unk_12_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_12_displayName)]
-        public virtual byte Slinger_Up_1_Unk_12 {
+        public const string Slinger_Up_1_Unk_14_displayName = "Slinger Up 1: Unk 14";
+        public const int Slinger_Up_1_Unk_14_sortIndex = 27050;
+        [SortOrder(Slinger_Up_1_Unk_14_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_14_displayName)]
+        public virtual byte Slinger_Up_1_Unk_14 {
             get => GetData<byte>(1154);
             set {
                 if (GetData<byte>(1154) == value) return;
-                SetData(1154, value, nameof(Slinger_Up_1_Unk_12));
+                SetData(1154, value, nameof(Slinger_Up_1_Unk_14));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_12));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_14));
             }
         }
 
-        public const string Slinger_Up_2_Unk_12_displayName = "Slinger Up 2: Unk 12";
-        public const int Slinger_Up_2_Unk_12_sortIndex = 27100;
-        [SortOrder(Slinger_Up_2_Unk_12_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_12_displayName)]
-        public virtual byte Slinger_Up_2_Unk_12 {
+        public const string Slinger_Up_2_Unk_14_displayName = "Slinger Up 2: Unk 14";
+        public const int Slinger_Up_2_Unk_14_sortIndex = 27100;
+        [SortOrder(Slinger_Up_2_Unk_14_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_14_displayName)]
+        public virtual byte Slinger_Up_2_Unk_14 {
             get => GetData<byte>(1155);
             set {
                 if (GetData<byte>(1155) == value) return;
-                SetData(1155, value, nameof(Slinger_Up_2_Unk_12));
+                SetData(1155, value, nameof(Slinger_Up_2_Unk_14));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_12));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_14));
             }
         }
 
-        public const string Slinger_Up_3_Unk_12_displayName = "Slinger Up 3: Unk 12";
-        public const int Slinger_Up_3_Unk_12_sortIndex = 27150;
-        [SortOrder(Slinger_Up_3_Unk_12_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_12_displayName)]
-        public virtual byte Slinger_Up_3_Unk_12 {
+        public const string Slinger_Up_3_Unk_14_displayName = "Slinger Up 3: Unk 14";
+        public const int Slinger_Up_3_Unk_14_sortIndex = 27150;
+        [SortOrder(Slinger_Up_3_Unk_14_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_14_displayName)]
+        public virtual byte Slinger_Up_3_Unk_14 {
             get => GetData<byte>(1156);
             set {
                 if (GetData<byte>(1156) == value) return;
-                SetData(1156, value, nameof(Slinger_Up_3_Unk_12));
+                SetData(1156, value, nameof(Slinger_Up_3_Unk_14));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_12));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_14));
             }
         }
 
-        public const string Slinger_Up_4_Unk_12_displayName = "Slinger Up 4: Unk 12";
-        public const int Slinger_Up_4_Unk_12_sortIndex = 27200;
-        [SortOrder(Slinger_Up_4_Unk_12_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_12_displayName)]
-        public virtual byte Slinger_Up_4_Unk_12 {
+        public const string Slinger_Up_4_Unk_14_displayName = "Slinger Up 4: Unk 14";
+        public const int Slinger_Up_4_Unk_14_sortIndex = 27200;
+        [SortOrder(Slinger_Up_4_Unk_14_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_14_displayName)]
+        public virtual byte Slinger_Up_4_Unk_14 {
             get => GetData<byte>(1157);
             set {
                 if (GetData<byte>(1157) == value) return;
-                SetData(1157, value, nameof(Slinger_Up_4_Unk_12));
+                SetData(1157, value, nameof(Slinger_Up_4_Unk_14));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_12));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_14));
             }
         }
 
-        public const string Slinger_Up_5_Unk_12_displayName = "Slinger Up 5: Unk 12";
-        public const int Slinger_Up_5_Unk_12_sortIndex = 27250;
-        [SortOrder(Slinger_Up_5_Unk_12_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_12_displayName)]
-        public virtual byte Slinger_Up_5_Unk_12 {
+        public const string Slinger_Up_5_Unk_14_displayName = "Slinger Up 5: Unk 14";
+        public const int Slinger_Up_5_Unk_14_sortIndex = 27250;
+        [SortOrder(Slinger_Up_5_Unk_14_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_14_displayName)]
+        public virtual byte Slinger_Up_5_Unk_14 {
             get => GetData<byte>(1158);
             set {
                 if (GetData<byte>(1158) == value) return;
-                SetData(1158, value, nameof(Slinger_Up_5_Unk_12));
+                SetData(1158, value, nameof(Slinger_Up_5_Unk_14));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_12));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_14));
             }
         }
 
@@ -7207,73 +7207,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_13_displayName = "Slinger Up 1: Unk 13";
-        public const int Slinger_Up_1_Unk_13_sortIndex = 27350;
-        [SortOrder(Slinger_Up_1_Unk_13_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_13_displayName)]
-        public virtual byte Slinger_Up_1_Unk_13 {
+        public const string Slinger_Up_1_Unk_15_displayName = "Slinger Up 1: Unk 15";
+        public const int Slinger_Up_1_Unk_15_sortIndex = 27350;
+        [SortOrder(Slinger_Up_1_Unk_15_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_15_displayName)]
+        public virtual byte Slinger_Up_1_Unk_15 {
             get => GetData<byte>(1159);
             set {
                 if (GetData<byte>(1159) == value) return;
-                SetData(1159, value, nameof(Slinger_Up_1_Unk_13));
+                SetData(1159, value, nameof(Slinger_Up_1_Unk_15));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_13));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_15));
             }
         }
 
-        public const string Slinger_Up_2_Unk_13_displayName = "Slinger Up 2: Unk 13";
-        public const int Slinger_Up_2_Unk_13_sortIndex = 27400;
-        [SortOrder(Slinger_Up_2_Unk_13_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_13_displayName)]
-        public virtual byte Slinger_Up_2_Unk_13 {
+        public const string Slinger_Up_2_Unk_15_displayName = "Slinger Up 2: Unk 15";
+        public const int Slinger_Up_2_Unk_15_sortIndex = 27400;
+        [SortOrder(Slinger_Up_2_Unk_15_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_15_displayName)]
+        public virtual byte Slinger_Up_2_Unk_15 {
             get => GetData<byte>(1160);
             set {
                 if (GetData<byte>(1160) == value) return;
-                SetData(1160, value, nameof(Slinger_Up_2_Unk_13));
+                SetData(1160, value, nameof(Slinger_Up_2_Unk_15));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_13));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_15));
             }
         }
 
-        public const string Slinger_Up_3_Unk_13_displayName = "Slinger Up 3: Unk 13";
-        public const int Slinger_Up_3_Unk_13_sortIndex = 27450;
-        [SortOrder(Slinger_Up_3_Unk_13_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_13_displayName)]
-        public virtual byte Slinger_Up_3_Unk_13 {
+        public const string Slinger_Up_3_Unk_15_displayName = "Slinger Up 3: Unk 15";
+        public const int Slinger_Up_3_Unk_15_sortIndex = 27450;
+        [SortOrder(Slinger_Up_3_Unk_15_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_15_displayName)]
+        public virtual byte Slinger_Up_3_Unk_15 {
             get => GetData<byte>(1161);
             set {
                 if (GetData<byte>(1161) == value) return;
-                SetData(1161, value, nameof(Slinger_Up_3_Unk_13));
+                SetData(1161, value, nameof(Slinger_Up_3_Unk_15));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_13));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_15));
             }
         }
 
-        public const string Slinger_Up_4_Unk_13_displayName = "Slinger Up 4: Unk 13";
-        public const int Slinger_Up_4_Unk_13_sortIndex = 27500;
-        [SortOrder(Slinger_Up_4_Unk_13_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_13_displayName)]
-        public virtual byte Slinger_Up_4_Unk_13 {
+        public const string Slinger_Up_4_Unk_15_displayName = "Slinger Up 4: Unk 15";
+        public const int Slinger_Up_4_Unk_15_sortIndex = 27500;
+        [SortOrder(Slinger_Up_4_Unk_15_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_15_displayName)]
+        public virtual byte Slinger_Up_4_Unk_15 {
             get => GetData<byte>(1162);
             set {
                 if (GetData<byte>(1162) == value) return;
-                SetData(1162, value, nameof(Slinger_Up_4_Unk_13));
+                SetData(1162, value, nameof(Slinger_Up_4_Unk_15));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_13));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_15));
             }
         }
 
-        public const string Slinger_Up_5_Unk_13_displayName = "Slinger Up 5: Unk 13";
-        public const int Slinger_Up_5_Unk_13_sortIndex = 27550;
-        [SortOrder(Slinger_Up_5_Unk_13_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_13_displayName)]
-        public virtual byte Slinger_Up_5_Unk_13 {
+        public const string Slinger_Up_5_Unk_15_displayName = "Slinger Up 5: Unk 15";
+        public const int Slinger_Up_5_Unk_15_sortIndex = 27550;
+        [SortOrder(Slinger_Up_5_Unk_15_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_15_displayName)]
+        public virtual byte Slinger_Up_5_Unk_15 {
             get => GetData<byte>(1163);
             set {
                 if (GetData<byte>(1163) == value) return;
-                SetData(1163, value, nameof(Slinger_Up_5_Unk_13));
+                SetData(1163, value, nameof(Slinger_Up_5_Unk_15));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_13));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_15));
             }
         }
 
@@ -7285,73 +7285,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_14_displayName = "Slinger Up 1: Unk 14";
-        public const int Slinger_Up_1_Unk_14_sortIndex = 27650;
-        [SortOrder(Slinger_Up_1_Unk_14_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_14_displayName)]
-        public virtual byte Slinger_Up_1_Unk_14 {
+        public const string Slinger_Up_1_Unk_16_displayName = "Slinger Up 1: Unk 16";
+        public const int Slinger_Up_1_Unk_16_sortIndex = 27650;
+        [SortOrder(Slinger_Up_1_Unk_16_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_16_displayName)]
+        public virtual byte Slinger_Up_1_Unk_16 {
             get => GetData<byte>(1164);
             set {
                 if (GetData<byte>(1164) == value) return;
-                SetData(1164, value, nameof(Slinger_Up_1_Unk_14));
+                SetData(1164, value, nameof(Slinger_Up_1_Unk_16));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_14));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_16));
             }
         }
 
-        public const string Slinger_Up_2_Unk_14_displayName = "Slinger Up 2: Unk 14";
-        public const int Slinger_Up_2_Unk_14_sortIndex = 27700;
-        [SortOrder(Slinger_Up_2_Unk_14_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_14_displayName)]
-        public virtual byte Slinger_Up_2_Unk_14 {
+        public const string Slinger_Up_2_Unk_16_displayName = "Slinger Up 2: Unk 16";
+        public const int Slinger_Up_2_Unk_16_sortIndex = 27700;
+        [SortOrder(Slinger_Up_2_Unk_16_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_16_displayName)]
+        public virtual byte Slinger_Up_2_Unk_16 {
             get => GetData<byte>(1165);
             set {
                 if (GetData<byte>(1165) == value) return;
-                SetData(1165, value, nameof(Slinger_Up_2_Unk_14));
+                SetData(1165, value, nameof(Slinger_Up_2_Unk_16));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_14));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_16));
             }
         }
 
-        public const string Slinger_Up_3_Unk_14_displayName = "Slinger Up 3: Unk 14";
-        public const int Slinger_Up_3_Unk_14_sortIndex = 27750;
-        [SortOrder(Slinger_Up_3_Unk_14_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_14_displayName)]
-        public virtual byte Slinger_Up_3_Unk_14 {
+        public const string Slinger_Up_3_Unk_16_displayName = "Slinger Up 3: Unk 16";
+        public const int Slinger_Up_3_Unk_16_sortIndex = 27750;
+        [SortOrder(Slinger_Up_3_Unk_16_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_16_displayName)]
+        public virtual byte Slinger_Up_3_Unk_16 {
             get => GetData<byte>(1166);
             set {
                 if (GetData<byte>(1166) == value) return;
-                SetData(1166, value, nameof(Slinger_Up_3_Unk_14));
+                SetData(1166, value, nameof(Slinger_Up_3_Unk_16));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_14));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_16));
             }
         }
 
-        public const string Slinger_Up_4_Unk_14_displayName = "Slinger Up 4: Unk 14";
-        public const int Slinger_Up_4_Unk_14_sortIndex = 27800;
-        [SortOrder(Slinger_Up_4_Unk_14_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_14_displayName)]
-        public virtual byte Slinger_Up_4_Unk_14 {
+        public const string Slinger_Up_4_Unk_16_displayName = "Slinger Up 4: Unk 16";
+        public const int Slinger_Up_4_Unk_16_sortIndex = 27800;
+        [SortOrder(Slinger_Up_4_Unk_16_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_16_displayName)]
+        public virtual byte Slinger_Up_4_Unk_16 {
             get => GetData<byte>(1167);
             set {
                 if (GetData<byte>(1167) == value) return;
-                SetData(1167, value, nameof(Slinger_Up_4_Unk_14));
+                SetData(1167, value, nameof(Slinger_Up_4_Unk_16));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_14));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_16));
             }
         }
 
-        public const string Slinger_Up_5_Unk_14_displayName = "Slinger Up 5: Unk 14";
-        public const int Slinger_Up_5_Unk_14_sortIndex = 27850;
-        [SortOrder(Slinger_Up_5_Unk_14_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_14_displayName)]
-        public virtual byte Slinger_Up_5_Unk_14 {
+        public const string Slinger_Up_5_Unk_16_displayName = "Slinger Up 5: Unk 16";
+        public const int Slinger_Up_5_Unk_16_sortIndex = 27850;
+        [SortOrder(Slinger_Up_5_Unk_16_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_16_displayName)]
+        public virtual byte Slinger_Up_5_Unk_16 {
             get => GetData<byte>(1168);
             set {
                 if (GetData<byte>(1168) == value) return;
-                SetData(1168, value, nameof(Slinger_Up_5_Unk_14));
+                SetData(1168, value, nameof(Slinger_Up_5_Unk_16));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_14));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_16));
             }
         }
 
@@ -7363,73 +7363,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_15_displayName = "Slinger Up 1: Unk 15";
-        public const int Slinger_Up_1_Unk_15_sortIndex = 27950;
-        [SortOrder(Slinger_Up_1_Unk_15_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_15_displayName)]
-        public virtual byte Slinger_Up_1_Unk_15 {
+        public const string Slinger_Up_1_Unk_17_displayName = "Slinger Up 1: Unk 17";
+        public const int Slinger_Up_1_Unk_17_sortIndex = 27950;
+        [SortOrder(Slinger_Up_1_Unk_17_sortIndex)]
+        [DisplayName(Slinger_Up_1_Unk_17_displayName)]
+        public virtual byte Slinger_Up_1_Unk_17 {
             get => GetData<byte>(1169);
             set {
                 if (GetData<byte>(1169) == value) return;
-                SetData(1169, value, nameof(Slinger_Up_1_Unk_15));
+                SetData(1169, value, nameof(Slinger_Up_1_Unk_17));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_15));
+                OnPropertyChanged(nameof(Slinger_Up_1_Unk_17));
             }
         }
 
-        public const string Slinger_Up_2_Unk_15_displayName = "Slinger Up 2: Unk 15";
-        public const int Slinger_Up_2_Unk_15_sortIndex = 28000;
-        [SortOrder(Slinger_Up_2_Unk_15_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_15_displayName)]
-        public virtual byte Slinger_Up_2_Unk_15 {
+        public const string Slinger_Up_2_Unk_17_displayName = "Slinger Up 2: Unk 17";
+        public const int Slinger_Up_2_Unk_17_sortIndex = 28000;
+        [SortOrder(Slinger_Up_2_Unk_17_sortIndex)]
+        [DisplayName(Slinger_Up_2_Unk_17_displayName)]
+        public virtual byte Slinger_Up_2_Unk_17 {
             get => GetData<byte>(1170);
             set {
                 if (GetData<byte>(1170) == value) return;
-                SetData(1170, value, nameof(Slinger_Up_2_Unk_15));
+                SetData(1170, value, nameof(Slinger_Up_2_Unk_17));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_15));
+                OnPropertyChanged(nameof(Slinger_Up_2_Unk_17));
             }
         }
 
-        public const string Slinger_Up_3_Unk_15_displayName = "Slinger Up 3: Unk 15";
-        public const int Slinger_Up_3_Unk_15_sortIndex = 28050;
-        [SortOrder(Slinger_Up_3_Unk_15_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_15_displayName)]
-        public virtual byte Slinger_Up_3_Unk_15 {
+        public const string Slinger_Up_3_Unk_17_displayName = "Slinger Up 3: Unk 17";
+        public const int Slinger_Up_3_Unk_17_sortIndex = 28050;
+        [SortOrder(Slinger_Up_3_Unk_17_sortIndex)]
+        [DisplayName(Slinger_Up_3_Unk_17_displayName)]
+        public virtual byte Slinger_Up_3_Unk_17 {
             get => GetData<byte>(1171);
             set {
                 if (GetData<byte>(1171) == value) return;
-                SetData(1171, value, nameof(Slinger_Up_3_Unk_15));
+                SetData(1171, value, nameof(Slinger_Up_3_Unk_17));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_15));
+                OnPropertyChanged(nameof(Slinger_Up_3_Unk_17));
             }
         }
 
-        public const string Slinger_Up_4_Unk_15_displayName = "Slinger Up 4: Unk 15";
-        public const int Slinger_Up_4_Unk_15_sortIndex = 28100;
-        [SortOrder(Slinger_Up_4_Unk_15_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_15_displayName)]
-        public virtual byte Slinger_Up_4_Unk_15 {
+        public const string Slinger_Up_4_Unk_17_displayName = "Slinger Up 4: Unk 17";
+        public const int Slinger_Up_4_Unk_17_sortIndex = 28100;
+        [SortOrder(Slinger_Up_4_Unk_17_sortIndex)]
+        [DisplayName(Slinger_Up_4_Unk_17_displayName)]
+        public virtual byte Slinger_Up_4_Unk_17 {
             get => GetData<byte>(1172);
             set {
                 if (GetData<byte>(1172) == value) return;
-                SetData(1172, value, nameof(Slinger_Up_4_Unk_15));
+                SetData(1172, value, nameof(Slinger_Up_4_Unk_17));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_15));
+                OnPropertyChanged(nameof(Slinger_Up_4_Unk_17));
             }
         }
 
-        public const string Slinger_Up_5_Unk_15_displayName = "Slinger Up 5: Unk 15";
-        public const int Slinger_Up_5_Unk_15_sortIndex = 28150;
-        [SortOrder(Slinger_Up_5_Unk_15_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_15_displayName)]
-        public virtual byte Slinger_Up_5_Unk_15 {
+        public const string Slinger_Up_5_Unk_17_displayName = "Slinger Up 5: Unk 17";
+        public const int Slinger_Up_5_Unk_17_sortIndex = 28150;
+        [SortOrder(Slinger_Up_5_Unk_17_sortIndex)]
+        [DisplayName(Slinger_Up_5_Unk_17_displayName)]
+        public virtual byte Slinger_Up_5_Unk_17 {
             get => GetData<byte>(1173);
             set {
                 if (GetData<byte>(1173) == value) return;
-                SetData(1173, value, nameof(Slinger_Up_5_Unk_15));
+                SetData(1173, value, nameof(Slinger_Up_5_Unk_17));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_15));
+                OnPropertyChanged(nameof(Slinger_Up_5_Unk_17));
             }
         }
 
@@ -7441,73 +7441,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_16_displayName = "Slinger Up 1: Unk 16";
-        public const int Slinger_Up_1_Unk_16_sortIndex = 28250;
-        [SortOrder(Slinger_Up_1_Unk_16_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_16_displayName)]
-        public virtual byte Slinger_Up_1_Unk_16 {
+        public const string Slinger_Up_1_Crystalburst_displayName = "Slinger Up 1: Crystalburst";
+        public const int Slinger_Up_1_Crystalburst_sortIndex = 28250;
+        [SortOrder(Slinger_Up_1_Crystalburst_sortIndex)]
+        [DisplayName(Slinger_Up_1_Crystalburst_displayName)]
+        public virtual byte Slinger_Up_1_Crystalburst {
             get => GetData<byte>(1174);
             set {
                 if (GetData<byte>(1174) == value) return;
-                SetData(1174, value, nameof(Slinger_Up_1_Unk_16));
+                SetData(1174, value, nameof(Slinger_Up_1_Crystalburst));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_16));
+                OnPropertyChanged(nameof(Slinger_Up_1_Crystalburst));
             }
         }
 
-        public const string Slinger_Up_2_Unk_16_displayName = "Slinger Up 2: Unk 16";
-        public const int Slinger_Up_2_Unk_16_sortIndex = 28300;
-        [SortOrder(Slinger_Up_2_Unk_16_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_16_displayName)]
-        public virtual byte Slinger_Up_2_Unk_16 {
+        public const string Slinger_Up_2_Crystalburst_displayName = "Slinger Up 2: Crystalburst";
+        public const int Slinger_Up_2_Crystalburst_sortIndex = 28300;
+        [SortOrder(Slinger_Up_2_Crystalburst_sortIndex)]
+        [DisplayName(Slinger_Up_2_Crystalburst_displayName)]
+        public virtual byte Slinger_Up_2_Crystalburst {
             get => GetData<byte>(1175);
             set {
                 if (GetData<byte>(1175) == value) return;
-                SetData(1175, value, nameof(Slinger_Up_2_Unk_16));
+                SetData(1175, value, nameof(Slinger_Up_2_Crystalburst));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_16));
+                OnPropertyChanged(nameof(Slinger_Up_2_Crystalburst));
             }
         }
 
-        public const string Slinger_Up_3_Unk_16_displayName = "Slinger Up 3: Unk 16";
-        public const int Slinger_Up_3_Unk_16_sortIndex = 28350;
-        [SortOrder(Slinger_Up_3_Unk_16_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_16_displayName)]
-        public virtual byte Slinger_Up_3_Unk_16 {
+        public const string Slinger_Up_3_Crystalburst_displayName = "Slinger Up 3: Crystalburst";
+        public const int Slinger_Up_3_Crystalburst_sortIndex = 28350;
+        [SortOrder(Slinger_Up_3_Crystalburst_sortIndex)]
+        [DisplayName(Slinger_Up_3_Crystalburst_displayName)]
+        public virtual byte Slinger_Up_3_Crystalburst {
             get => GetData<byte>(1176);
             set {
                 if (GetData<byte>(1176) == value) return;
-                SetData(1176, value, nameof(Slinger_Up_3_Unk_16));
+                SetData(1176, value, nameof(Slinger_Up_3_Crystalburst));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_16));
+                OnPropertyChanged(nameof(Slinger_Up_3_Crystalburst));
             }
         }
 
-        public const string Slinger_Up_4_Unk_16_displayName = "Slinger Up 4: Unk 16";
-        public const int Slinger_Up_4_Unk_16_sortIndex = 28400;
-        [SortOrder(Slinger_Up_4_Unk_16_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_16_displayName)]
-        public virtual byte Slinger_Up_4_Unk_16 {
+        public const string Slinger_Up_4_Crystalburst_displayName = "Slinger Up 4: Crystalburst";
+        public const int Slinger_Up_4_Crystalburst_sortIndex = 28400;
+        [SortOrder(Slinger_Up_4_Crystalburst_sortIndex)]
+        [DisplayName(Slinger_Up_4_Crystalburst_displayName)]
+        public virtual byte Slinger_Up_4_Crystalburst {
             get => GetData<byte>(1177);
             set {
                 if (GetData<byte>(1177) == value) return;
-                SetData(1177, value, nameof(Slinger_Up_4_Unk_16));
+                SetData(1177, value, nameof(Slinger_Up_4_Crystalburst));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_16));
+                OnPropertyChanged(nameof(Slinger_Up_4_Crystalburst));
             }
         }
 
-        public const string Slinger_Up_5_Unk_16_displayName = "Slinger Up 5: Unk 16";
-        public const int Slinger_Up_5_Unk_16_sortIndex = 28450;
-        [SortOrder(Slinger_Up_5_Unk_16_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_16_displayName)]
-        public virtual byte Slinger_Up_5_Unk_16 {
+        public const string Slinger_Up_5_Crystalburst_displayName = "Slinger Up 5: Crystalburst";
+        public const int Slinger_Up_5_Crystalburst_sortIndex = 28450;
+        [SortOrder(Slinger_Up_5_Crystalburst_sortIndex)]
+        [DisplayName(Slinger_Up_5_Crystalburst_displayName)]
+        public virtual byte Slinger_Up_5_Crystalburst {
             get => GetData<byte>(1178);
             set {
                 if (GetData<byte>(1178) == value) return;
-                SetData(1178, value, nameof(Slinger_Up_5_Unk_16));
+                SetData(1178, value, nameof(Slinger_Up_5_Crystalburst));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_16));
+                OnPropertyChanged(nameof(Slinger_Up_5_Crystalburst));
             }
         }
 
@@ -7519,73 +7519,73 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Slinger_Up_1_Unk_17_displayName = "Slinger Up 1: Unk 17";
-        public const int Slinger_Up_1_Unk_17_sortIndex = 28550;
-        [SortOrder(Slinger_Up_1_Unk_17_sortIndex)]
-        [DisplayName(Slinger_Up_1_Unk_17_displayName)]
-        public virtual byte Slinger_Up_1_Unk_17 {
+        public const string Slinger_Up_1_Puddle_Pod_displayName = "Slinger Up 1: Puddle Pod";
+        public const int Slinger_Up_1_Puddle_Pod_sortIndex = 28550;
+        [SortOrder(Slinger_Up_1_Puddle_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_1_Puddle_Pod_displayName)]
+        public virtual byte Slinger_Up_1_Puddle_Pod {
             get => GetData<byte>(1179);
             set {
                 if (GetData<byte>(1179) == value) return;
-                SetData(1179, value, nameof(Slinger_Up_1_Unk_17));
+                SetData(1179, value, nameof(Slinger_Up_1_Puddle_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_1_Unk_17));
+                OnPropertyChanged(nameof(Slinger_Up_1_Puddle_Pod));
             }
         }
 
-        public const string Slinger_Up_2_Unk_17_displayName = "Slinger Up 2: Unk 17";
-        public const int Slinger_Up_2_Unk_17_sortIndex = 28600;
-        [SortOrder(Slinger_Up_2_Unk_17_sortIndex)]
-        [DisplayName(Slinger_Up_2_Unk_17_displayName)]
-        public virtual byte Slinger_Up_2_Unk_17 {
+        public const string Slinger_Up_2_Puddle_Pod_displayName = "Slinger Up 2: Puddle Pod";
+        public const int Slinger_Up_2_Puddle_Pod_sortIndex = 28600;
+        [SortOrder(Slinger_Up_2_Puddle_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_2_Puddle_Pod_displayName)]
+        public virtual byte Slinger_Up_2_Puddle_Pod {
             get => GetData<byte>(1180);
             set {
                 if (GetData<byte>(1180) == value) return;
-                SetData(1180, value, nameof(Slinger_Up_2_Unk_17));
+                SetData(1180, value, nameof(Slinger_Up_2_Puddle_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_2_Unk_17));
+                OnPropertyChanged(nameof(Slinger_Up_2_Puddle_Pod));
             }
         }
 
-        public const string Slinger_Up_3_Unk_17_displayName = "Slinger Up 3: Unk 17";
-        public const int Slinger_Up_3_Unk_17_sortIndex = 28650;
-        [SortOrder(Slinger_Up_3_Unk_17_sortIndex)]
-        [DisplayName(Slinger_Up_3_Unk_17_displayName)]
-        public virtual byte Slinger_Up_3_Unk_17 {
+        public const string Slinger_Up_3_Puddle_Pod_displayName = "Slinger Up 3: Puddle Pod";
+        public const int Slinger_Up_3_Puddle_Pod_sortIndex = 28650;
+        [SortOrder(Slinger_Up_3_Puddle_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_3_Puddle_Pod_displayName)]
+        public virtual byte Slinger_Up_3_Puddle_Pod {
             get => GetData<byte>(1181);
             set {
                 if (GetData<byte>(1181) == value) return;
-                SetData(1181, value, nameof(Slinger_Up_3_Unk_17));
+                SetData(1181, value, nameof(Slinger_Up_3_Puddle_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_3_Unk_17));
+                OnPropertyChanged(nameof(Slinger_Up_3_Puddle_Pod));
             }
         }
 
-        public const string Slinger_Up_4_Unk_17_displayName = "Slinger Up 4: Unk 17";
-        public const int Slinger_Up_4_Unk_17_sortIndex = 28700;
-        [SortOrder(Slinger_Up_4_Unk_17_sortIndex)]
-        [DisplayName(Slinger_Up_4_Unk_17_displayName)]
-        public virtual byte Slinger_Up_4_Unk_17 {
+        public const string Slinger_Up_4_Puddle_Pod_displayName = "Slinger Up 4: Puddle Pod";
+        public const int Slinger_Up_4_Puddle_Pod_sortIndex = 28700;
+        [SortOrder(Slinger_Up_4_Puddle_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_4_Puddle_Pod_displayName)]
+        public virtual byte Slinger_Up_4_Puddle_Pod {
             get => GetData<byte>(1182);
             set {
                 if (GetData<byte>(1182) == value) return;
-                SetData(1182, value, nameof(Slinger_Up_4_Unk_17));
+                SetData(1182, value, nameof(Slinger_Up_4_Puddle_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_4_Unk_17));
+                OnPropertyChanged(nameof(Slinger_Up_4_Puddle_Pod));
             }
         }
 
-        public const string Slinger_Up_5_Unk_17_displayName = "Slinger Up 5: Unk 17";
-        public const int Slinger_Up_5_Unk_17_sortIndex = 28750;
-        [SortOrder(Slinger_Up_5_Unk_17_sortIndex)]
-        [DisplayName(Slinger_Up_5_Unk_17_displayName)]
-        public virtual byte Slinger_Up_5_Unk_17 {
+        public const string Slinger_Up_5_Puddle_Pod_displayName = "Slinger Up 5: Puddle Pod";
+        public const int Slinger_Up_5_Puddle_Pod_sortIndex = 28750;
+        [SortOrder(Slinger_Up_5_Puddle_Pod_sortIndex)]
+        [DisplayName(Slinger_Up_5_Puddle_Pod_displayName)]
+        public virtual byte Slinger_Up_5_Puddle_Pod {
             get => GetData<byte>(1183);
             set {
                 if (GetData<byte>(1183) == value) return;
-                SetData(1183, value, nameof(Slinger_Up_5_Unk_17));
+                SetData(1183, value, nameof(Slinger_Up_5_Puddle_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Slinger_Up_5_Unk_17));
+                OnPropertyChanged(nameof(Slinger_Up_5_Puddle_Pod));
             }
         }
 
