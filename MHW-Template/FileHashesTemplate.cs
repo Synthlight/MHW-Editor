@@ -28,28 +28,30 @@ namespace MHW_Template
         {
             this.Write("using System.Collections.Generic;\r\n\r\nnamespace ");
             
-            #line 12 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public static class ");
             
-            #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
             #line hidden
-            this.Write(" {\r\n        public static readonly Dictionary<string, Dictionary<string, string>>" +
-                    " BAD_FILE_HASH_MAP = new Dictionary<string, Dictionary<string, string>> {\r\n");
+            this.Write(" {\r\n        public static readonly Dictionary<string, Dictionary<string, List<str" +
+                    "ing>>> BAD_FILE_HASH_MAP = new Dictionary<string, Dictionary<string, List<string" +
+                    ">>> {\r\n");
             
-            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\FileHashesTemplate.tt"
 
     foreach (var tldPair in hashMap) {
-        WriteLine($"            {{\"{tldPair.Key}\", new Dictionary<string, string> {{");
+        WriteLine($"            {{\"{tldPair.Key}\", new Dictionary<string, List<string>> {{");
 
         foreach (var entry in tldPair.Value) {
-            WriteLine($"                {{\"{entry.Key}\", \"{entry.Value}\"}},");
+            var hashString = string.Join("\", \"", entry.Value);
+            WriteLine($"                {{\"{entry.Key}\", new List<string> {{\"{hashString}\"}}}},");
         }
 
         WriteLine("            }},");
@@ -60,6 +62,13 @@ namespace MHW_Template
 
     foreach (var entry in goodChunkMap) {
         WriteLine($"            {{\"{entry.Key}\", \"{entry.Value}\"}},");
+    }
+
+    WriteLine("        };\r\n");
+    WriteLine("        public static readonly Dictionary<string, string> FILE_PATH_MAP = new Dictionary<string, string> {");
+
+    foreach (var entry in filePathMap) {
+        WriteLine($"            {{\"{entry.Key}\", \"{entry.Value.Replace(@"\", @"\\")}\"}},");
     }
 
             
@@ -97,12 +106,12 @@ private string className
     }
 }
 
-private global::System.Collections.Generic.Dictionary<string, Dictionary<string, string>> _hashMapField;
+private global::System.Collections.Generic.Dictionary<string, Dictionary<string, List<string>>> _hashMapField;
 
 /// <summary>
 /// Access the hashMap parameter of the template.
 /// </summary>
-private global::System.Collections.Generic.Dictionary<string, Dictionary<string, string>> hashMap
+private global::System.Collections.Generic.Dictionary<string, Dictionary<string, List<string>>> hashMap
 {
     get
     {
@@ -120,6 +129,19 @@ private global::System.Collections.Generic.Dictionary<string, string> goodChunkM
     get
     {
         return this._goodChunkMapField;
+    }
+}
+
+private global::System.Collections.Generic.Dictionary<string, string> _filePathMapField;
+
+/// <summary>
+/// Access the filePathMap parameter of the template.
+/// </summary>
+private global::System.Collections.Generic.Dictionary<string, string> filePathMap
+{
+    get
+    {
+        return this._filePathMapField;
     }
 }
 
@@ -162,7 +184,7 @@ if ((classNameValueAcquired == false))
 bool hashMapValueAcquired = false;
 if (this.Session.ContainsKey("hashMap"))
 {
-    this._hashMapField = ((global::System.Collections.Generic.Dictionary<string, Dictionary<string, string>>)(this.Session["hashMap"]));
+    this._hashMapField = ((global::System.Collections.Generic.Dictionary<string, Dictionary<string, List<string>>>)(this.Session["hashMap"]));
     hashMapValueAcquired = true;
 }
 if ((hashMapValueAcquired == false))
@@ -170,7 +192,7 @@ if ((hashMapValueAcquired == false))
     object data = global::System.Runtime.Remoting.Messaging.CallContext.LogicalGetData("hashMap");
     if ((data != null))
     {
-        this._hashMapField = ((global::System.Collections.Generic.Dictionary<string, Dictionary<string, string>>)(data));
+        this._hashMapField = ((global::System.Collections.Generic.Dictionary<string, Dictionary<string, List<string>>>)(data));
     }
 }
 bool goodChunkMapValueAcquired = false;
@@ -185,6 +207,20 @@ if ((goodChunkMapValueAcquired == false))
     if ((data != null))
     {
         this._goodChunkMapField = ((global::System.Collections.Generic.Dictionary<string, string>)(data));
+    }
+}
+bool filePathMapValueAcquired = false;
+if (this.Session.ContainsKey("filePathMap"))
+{
+    this._filePathMapField = ((global::System.Collections.Generic.Dictionary<string, string>)(this.Session["filePathMap"]));
+    filePathMapValueAcquired = true;
+}
+if ((filePathMapValueAcquired == false))
+{
+    object data = global::System.Runtime.Remoting.Messaging.CallContext.LogicalGetData("filePathMap");
+    if ((data != null))
+    {
+        this._filePathMapField = ((global::System.Collections.Generic.Dictionary<string, string>)(data));
     }
 }
 

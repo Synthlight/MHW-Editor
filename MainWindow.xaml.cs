@@ -686,7 +686,7 @@ namespace MHW_Editor {
                 foreach (var pair in FileHashes.BAD_FILE_HASH_MAP) {
                     // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
                     foreach (var fileAndHash in pair.Value) {
-                        if (Title == fileAndHash.Key && sha512 == fileAndHash.Value) {
+                        if (Title == fileAndHash.Key && fileAndHash.Value.Contains(sha512)) {
                             var newChunk = FileHashes.GOOD_CHUNK_MAP.TryGet(Title);
                             MessageBox.Show($"This file ({Title}) is from {pair.Key} and is obsolete.\r\n" +
                                             $"The newest version of the file is in {newChunk}.\r\n\r\n" +

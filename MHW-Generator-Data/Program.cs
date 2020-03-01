@@ -72,36 +72,44 @@ namespace MHW_Generator_Data {
                 allFilesMap[tldFolder ?? throw new InvalidOperationException()] = GetMatchingFiles(tld);
             }
 
-            // So we go through with latest chunk being first.
-            allFilesMap = allFilesMap.SortDescending(pair => int.Parse(pair.Key.Replace(CHUNK_PREFIX, "")));
+            var allFilesMapKeys = allFilesMap.Keys.OrderByDescending(key => int.Parse(key.Replace(CHUNK_PREFIX, ""))).ToList();
 
-            var hashMap = new Dictionary<string, Dictionary<string, string>>();
+            var hashMap = new Dictionary<string, Dictionary<string, List<string>>>();
             var foundGoodFiles = new Dictionary<string, string>();
+            var filePathMap = new Dictionary<string, string>();
+            ushort loopCount = 0;
 
-            foreach (var tld in allFilesMap.Keys) {
+            // So we go through with latest chunk being first.
+            foreach (var tld in allFilesMapKeys) {
                 var chunkFiles = allFilesMap[tld];
 
-                // First time through is always & only good files.
-                if (foundGoodFiles.Count == 0) {
-                    foreach (var chunkFile in chunkFiles) {
-                        foundGoodFiles[Path.GetFileName(chunkFile) ?? throw new InvalidOperationException()] = tld;
-                    }
-
-                    continue;
-                }
-
                 foreach (var chunkFile in chunkFiles) {
-                    var fileName = Path.GetFileName(chunkFile);
+                    var fileName = Path.GetFileName(chunkFile) ?? throw new InvalidOperationException();
+                    var rootPath = $"{Global.CHUNK_HASHING_ROOT}\\{tld}";
+                    var filePath = chunkFile.Replace(rootPath, "");
+
+                    if (loopCount == 0) {
+                        if (foundGoodFiles.ContainsKey(fileName)) continue; // Happens when we have a duplicate file.
+
+                        foundGoodFiles[fileName] = tld;
+                        filePathMap[fileName] = filePath;
+                        continue;
+                    }
 
                     if (foundGoodFiles.ContainsKey(fileName)) {
-                        hashMap.GetOrCreate(tld)[fileName] = chunkFile.SHA512();
+                        // Happens for duplicates too.
+                        hashMap.GetOrCreate(tld).GetOrCreate(fileName).Add(chunkFile.SHA512());
                     } else {
                         foundGoodFiles[fileName] = tld;
+                        filePathMap[fileName] = filePath;
                     }
                 }
+
+                loopCount++;
             }
 
             foundGoodFiles = foundGoodFiles.Sort(pair => pair.Key);
+            filePathMap = filePathMap.Sort(pair => pair.Key);
             hashMap = hashMap.Sort(pair => int.Parse(pair.Key.Replace(CHUNK_PREFIX, "")));
 
             foreach (var key in hashMap.Keys.ToList()) {
@@ -116,7 +124,8 @@ namespace MHW_Generator_Data {
                     {"_namespace", @namespace},
                     {"className", className},
                     {"hashMap", hashMap},
-                    {"goodChunkMap", foundGoodFiles}
+                    {"goodChunkMap", foundGoodFiles},
+                    {"filePathMap", filePathMap}
                 }
             });
         }

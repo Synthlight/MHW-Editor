@@ -85,5 +85,11 @@ namespace MHW_Template {
             dict[key] = new Dictionary<K2, V>();
             return dict[key];
         }
+
+        public static List<V> GetOrCreate<K, V>(this Dictionary<K, List<V>> dict, K key) {
+            if (dict.ContainsKey(key)) return dict[key];
+            dict[key] = new List<V>();
+            return dict[key];
+        }
     }
 }

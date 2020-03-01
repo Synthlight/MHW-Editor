@@ -4,20 +4,22 @@
 <#@ assembly name="$(TargetDir)\MHW-Template.dll" #>
 <#@ parameter type="System.String" name="_namespace" #>
 <#@ parameter type="System.String" name="className" #>
-<#@ parameter type="System.Collections.Generic.Dictionary<string, Dictionary<string, string>>" name="hashMap" #>
+<#@ parameter type="System.Collections.Generic.Dictionary<string, Dictionary<string, List<string>>>" name="hashMap" #>
 <#@ parameter type="System.Collections.Generic.Dictionary<string, string>" name="goodChunkMap" #>
+<#@ parameter type="System.Collections.Generic.Dictionary<string, string>" name="filePathMap" #>
 <#@ import namespace="System.Collections.Generic" #>
 using System.Collections.Generic;
 
 namespace <#= _namespace #> {
     public static class <#= className #> {
-        public static readonly Dictionary<string, Dictionary<string, string>> BAD_FILE_HASH_MAP = new Dictionary<string, Dictionary<string, string>> {
+        public static readonly Dictionary<string, Dictionary<string, List<string>>> BAD_FILE_HASH_MAP = new Dictionary<string, Dictionary<string, List<string>>> {
 <#
     foreach (var tldPair in hashMap) {
-        WriteLine($"            {{\"{tldPair.Key}\", new Dictionary<string, string> {{");
+        WriteLine($"            {{\"{tldPair.Key}\", new Dictionary<string, List<string>> {{");
 
         foreach (var entry in tldPair.Value) {
-            WriteLine($"                {{\"{entry.Key}\", \"{entry.Value}\"}},");
+            var hashString = string.Join("\", \"", entry.Value);
+            WriteLine($"                {{\"{entry.Key}\", new List<string> {{\"{hashString}\"}}}},");
         }
 
         WriteLine("            }},");
@@ -28,6 +30,13 @@ namespace <#= _namespace #> {
 
     foreach (var entry in goodChunkMap) {
         WriteLine($"            {{\"{entry.Key}\", \"{entry.Value}\"}},");
+    }
+
+    WriteLine("        };\r\n");
+    WriteLine("        public static readonly Dictionary<string, string> FILE_PATH_MAP = new Dictionary<string, string> {");
+
+    foreach (var entry in filePathMap) {
+        WriteLine($"            {{\"{entry.Key}\", \"{entry.Value.Replace(@"\", @"\\")}\"}},");
     }
 #>
         };

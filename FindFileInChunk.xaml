@@ -5,7 +5,7 @@
         xmlns:local="clr-namespace:MHW_Editor"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Title="File/Chunk Finder"
-        Width="300"
+        Width="600"
         Height="600"
         KeyUp="BtnOk_OnKeyUp"
         WindowStartupLocation="CenterScreen"
@@ -26,7 +26,7 @@
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Orientation="Vertical">
-            <Label Content="This is a simple list of supported files&#x0d;&#x0a;and the latest chunk they can be found in."/>
+            <Label Content="This is a simple list of supported files and the latest chunk they can be found in.&#x0d;&#x0a;(Path is for the first occurence of the file in the chunk.)"/>
         </StackPanel>
         <Label Grid.Row="1"
                Grid.Column="0"
@@ -41,13 +41,18 @@
                  Grid.Column="0"
                  Grid.ColumnSpan="2"
                  HorizontalContentAlignment="Stretch"
+                 Grid.IsSharedSizeScope="True"
                  KeyUp="BtnOk_OnKeyUp">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid DockPanel.Dock="Top">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="175"
+                                              SharedSizeGroup="Key1"/>
+                            <ColumnDefinition Width="75"
+                                              SharedSizeGroup="Key2"/>
+                            <ColumnDefinition Width="300"
+                                              SharedSizeGroup="Key3"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>
@@ -58,8 +63,12 @@
                                Content="{Binding Key}"/>
                         <Label Grid.Row="0"
                                Grid.Column="1"
-                               HorizontalAlignment="Right"
-                               Content="{Binding Value}"/>
+                               HorizontalAlignment="Left"
+                               Content="{Binding Value.Chunk}"/>
+                        <Label Grid.Row="0"
+                               Grid.Column="2"
+                               HorizontalAlignment="Left"
+                               Content="{Binding Value.Path}"/>
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
