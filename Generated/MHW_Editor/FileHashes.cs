@@ -4,6 +4,7 @@ namespace MHW_Editor {
     public static class FileHashes {
         public static readonly Dictionary<string, Dictionary<string, List<string>>> BAD_FILE_HASH_MAP = new Dictionary<string, Dictionary<string, List<string>>> {
             {"chunkG0", new Dictionary<string, List<string>> {
+                {"animal_size.ransz", new List<string> {"DEF526F7DE75CCAF8D076E758F92D3D1CB3ED169C96D536684A262E9E2158E488D53AC9687113E274065B097E00292332ED0F075857090AA71DC2761E7934B21"}},
                 {"armor.am_dat", new List<string> {"DA5269B12FD25162B17838A6BCA1FD900DEAD8FAF5BAFF65B686F970D4BAC4F7DF85599F69B00B3C6F929063662780561749B97FF8BFC17E8CFA138E02CAEC30"}},
                 {"armor.eq_crt", new List<string> {"9EB892321E6B813FE5EA2723FC88C885A7CFB4C61FB25CF69EE77663D873E56540AB98E0B0D852DE5B5C1A2E7D283CAC6E326D1770DBF389989E258C27B1A02C"}},
                 {"bow.wp_dat_g", new List<string> {"475508AEDE20B6124D63106D47910B3750B33905DAF0A017C9BC6BD724054F953A197390A308C8A6FB97FB79F4FC8092FD1687C4A51AE9E7ACB493CC2F864366"}},
@@ -139,6 +140,7 @@ namespace MHW_Editor {
 
         public static readonly Dictionary<string, string> GOOD_CHUNK_MAP = new Dictionary<string, string> {
             {"a_skill.ask", "chunkG0"},
+            {"animal_size.ransz", "chunkG1"},
             {"arm_upgrade.arm_up", "chunkG0"},
             {"armor.am_dat", "chunkG1"},
             {"armor.eq_crt", "chunkG1"},
@@ -1580,6 +1582,7 @@ namespace MHW_Editor {
 
         public static readonly Dictionary<string, string> FILE_PATH_MAP = new Dictionary<string, string> {
             {"a_skill.ask", "\\common\\equip\\a_skill.ask"},
+            {"animal_size.ransz", "\\common\\gimmick\\animal_size.ransz"},
             {"arm_upgrade.arm_up", "\\common\\equip\\arm_upgrade.arm_up"},
             {"armor.am_dat", "\\common\\equip\\armor.am_dat"},
             {"armor.eq_crt", "\\common\\equip\\armor.eq_crt"},

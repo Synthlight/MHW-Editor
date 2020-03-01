@@ -4,6 +4,7 @@ namespace MHW_Editor {
     public static class FileSizes {
         public static readonly Dictionary<string, ulong> FILE_SIZE_MAP = new Dictionary<string, ulong> {
             {"a_skill.ask", 570},
+            {"animal_size.ransz", 7858},
             {"arm_upgrade.arm_up", 274},
             {"armor.am_dat", 151450},
             {"armor.eq_crt", 79375},

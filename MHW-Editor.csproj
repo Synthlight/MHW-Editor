@@ -136,6 +136,7 @@
     <Compile Include="Generated\MHW_Editor\Items\SwapN.cs" />
     <Compile Include="Generated\MHW_Editor\Items\Treasure.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ValueTrader.cs" />
+    <Compile Include="Generated\MHW_Editor\Monsters\AnimalSize.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\EnemySort.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\MonsterEnrage.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\MonsterEnrageInternal.cs" />
@@ -169,6 +170,7 @@
     </Compile>
     <Compile Include="Items\ItemDelivery.cs" />
     <Compile Include="Items\RoomFurniture.cs" />
+    <Compile Include="Monsters\AnimalSize.cs" />
     <Compile Include="Monsters\EnemySort.cs" />
     <Compile Include="Items\SteamRewardList.cs" />
     <Compile Include="Items\ItemLottery.cs" />

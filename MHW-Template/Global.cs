@@ -73,6 +73,7 @@ namespace MHW_Template {
             "*.plit",
             "*.plp",
             "*.plsp",
+            "*.ransz",
             "*.rem",
             "*.rfur",
             "*.rod_inse",
