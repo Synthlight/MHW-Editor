@@ -77,59 +77,59 @@ namespace MHW_Editor.Weapons {
             get => GetData<byte>(3);
         }
 
-        public const string T_Dragon_X1_displayName = "T_Dragon X1";
-        public const int T_Dragon_X1_sortIndex = 300;
-        [SortOrder(T_Dragon_X1_sortIndex)]
-        [DisplayName(T_Dragon_X1_displayName)]
-        public virtual float T_Dragon_X1 {
+        public const string Thousand_Dragons_X1_displayName = "Thousand Dragons X1";
+        public const int Thousand_Dragons_X1_sortIndex = 300;
+        [SortOrder(Thousand_Dragons_X1_sortIndex)]
+        [DisplayName(Thousand_Dragons_X1_displayName)]
+        public virtual float Thousand_Dragons_X1 {
             get => GetData<float>(2569);
             set {
                 if (GetData<float>(2569) == value) return;
-                SetData(2569, value, nameof(T_Dragon_X1));
+                SetData(2569, value, nameof(Thousand_Dragons_X1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(T_Dragon_X1));
+                OnPropertyChanged(nameof(Thousand_Dragons_X1));
             }
         }
 
-        public const string T_Dragon_Y1_displayName = "T_Dragon Y1";
-        public const int T_Dragon_Y1_sortIndex = 350;
-        [SortOrder(T_Dragon_Y1_sortIndex)]
-        [DisplayName(T_Dragon_Y1_displayName)]
-        public virtual float T_Dragon_Y1 {
+        public const string Thousand_Dragons_Y1_displayName = "Thousand Dragons Y1";
+        public const int Thousand_Dragons_Y1_sortIndex = 350;
+        [SortOrder(Thousand_Dragons_Y1_sortIndex)]
+        [DisplayName(Thousand_Dragons_Y1_displayName)]
+        public virtual float Thousand_Dragons_Y1 {
             get => GetData<float>(2573);
             set {
                 if (GetData<float>(2573) == value) return;
-                SetData(2573, value, nameof(T_Dragon_Y1));
+                SetData(2573, value, nameof(Thousand_Dragons_Y1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(T_Dragon_Y1));
+                OnPropertyChanged(nameof(Thousand_Dragons_Y1));
             }
         }
 
-        public const string T_Dragon_X2_displayName = "T_Dragon X2";
-        public const int T_Dragon_X2_sortIndex = 400;
-        [SortOrder(T_Dragon_X2_sortIndex)]
-        [DisplayName(T_Dragon_X2_displayName)]
-        public virtual float T_Dragon_X2 {
+        public const string Thousand_Dragons_X2_displayName = "Thousand Dragons X2";
+        public const int Thousand_Dragons_X2_sortIndex = 400;
+        [SortOrder(Thousand_Dragons_X2_sortIndex)]
+        [DisplayName(Thousand_Dragons_X2_displayName)]
+        public virtual float Thousand_Dragons_X2 {
             get => GetData<float>(2577);
             set {
                 if (GetData<float>(2577) == value) return;
-                SetData(2577, value, nameof(T_Dragon_X2));
+                SetData(2577, value, nameof(Thousand_Dragons_X2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(T_Dragon_X2));
+                OnPropertyChanged(nameof(Thousand_Dragons_X2));
             }
         }
 
-        public const string T_Dragon_Y2_displayName = "T_Dragon Y2";
-        public const int T_Dragon_Y2_sortIndex = 450;
-        [SortOrder(T_Dragon_Y2_sortIndex)]
-        [DisplayName(T_Dragon_Y2_displayName)]
-        public virtual float T_Dragon_Y2 {
+        public const string Thousand_Dragons_Y2_displayName = "Thousand Dragons Y2";
+        public const int Thousand_Dragons_Y2_sortIndex = 450;
+        [SortOrder(Thousand_Dragons_Y2_sortIndex)]
+        [DisplayName(Thousand_Dragons_Y2_displayName)]
+        public virtual float Thousand_Dragons_Y2 {
             get => GetData<float>(2581);
             set {
                 if (GetData<float>(2581) == value) return;
-                SetData(2581, value, nameof(T_Dragon_Y2));
+                SetData(2581, value, nameof(Thousand_Dragons_Y2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(T_Dragon_Y2));
+                OnPropertyChanged(nameof(Thousand_Dragons_Y2));
             }
         }
 

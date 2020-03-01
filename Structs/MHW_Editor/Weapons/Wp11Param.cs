@@ -9,9 +9,9 @@ namespace MHW_Editor.Weapons {
         public float Dragonpiercer_Y1; // Offset: 1317
         public float Dragonpiercer_X2; // Offset: 1321
         public float Dragonpiercer_Y2; // Offset: 1325
-        public float T_Dragon_X1; // Offset: 2569
-        public float T_Dragon_Y1; // Offset: 2573
-        public float T_Dragon_X2; // Offset: 2577
-        public float T_Dragon_Y2; // Offset: 2581
+        public float Thousand_Dragons_X1; // Offset: 2569
+        public float Thousand_Dragons_Y1; // Offset: 2573
+        public float Thousand_Dragons_X2; // Offset: 2577
+        public float Thousand_Dragons_Y2; // Offset: 2581
     }
 }

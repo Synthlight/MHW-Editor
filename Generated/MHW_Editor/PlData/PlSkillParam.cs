@@ -8233,16 +8233,8 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __31250_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __31250_sortIndex = 31250;
-        [SortOrder(__31250_sortIndex)]
-        [DisplayName(__31250_displayName)]
-        public virtual byte __31250 {
-            get => GetData<byte>(3);
-        }
-
         public const string Unk32_displayName = "Unk32";
-        public const int Unk32_sortIndex = 31300;
+        public const int Unk32_sortIndex = 31250;
         [SortOrder(Unk32_sortIndex)]
         [DisplayName(Unk32_displayName)]
         public virtual float Unk32 {
@@ -8255,2356 +8247,2570 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Unk33_displayName = "Unk33";
-        public const int Unk33_sortIndex = 31350;
-        [SortOrder(Unk33_sortIndex)]
-        [DisplayName(Unk33_displayName)]
-        public virtual float Unk33 {
+        public const string __31300_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __31300_sortIndex = 31300;
+        [SortOrder(__31300_sortIndex)]
+        [DisplayName(__31300_displayName)]
+        public virtual byte __31300 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Great_Sword_Level_Multiplier_0_15__displayName = "Frostcraft: (Great Sword) Level Multiplier (0-15%)";
+        public const int Frostcraft_Great_Sword_Level_Multiplier_0_15__sortIndex = 31350;
+        [SortOrder(Frostcraft_Great_Sword_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_Great_Sword_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_Great_Sword_Level_Multiplier_0_15_ {
             get => GetData<float>(1281);
             set {
                 if (GetData<float>(1281) == value) return;
-                SetData(1281, value, nameof(Unk33));
+                SetData(1281, value, nameof(Frostcraft_Great_Sword_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Great_Sword_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_Great_Sword_Level_Multiplier_16_45__displayName = "Frostcraft: (Great Sword) Level Multiplier (16-45%)";
+        public const int Frostcraft_Great_Sword_Level_Multiplier_16_45__sortIndex = 31400;
+        [SortOrder(Frostcraft_Great_Sword_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_Great_Sword_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_Great_Sword_Level_Multiplier_16_45_ {
+            get => GetData<float>(1285);
+            set {
+                if (GetData<float>(1285) == value) return;
+                SetData(1285, value, nameof(Frostcraft_Great_Sword_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Great_Sword_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_Great_Sword_Level_Multiplier_46_80__displayName = "Frostcraft: (Great Sword) Level Multiplier (46-80%)";
+        public const int Frostcraft_Great_Sword_Level_Multiplier_46_80__sortIndex = 31450;
+        [SortOrder(Frostcraft_Great_Sword_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_Great_Sword_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_Great_Sword_Level_Multiplier_46_80_ {
+            get => GetData<float>(1289);
+            set {
+                if (GetData<float>(1289) == value) return;
+                SetData(1289, value, nameof(Frostcraft_Great_Sword_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Great_Sword_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_Great_Sword_Level_Multiplier_81_100__displayName = "Frostcraft: (Great Sword) Level Multiplier (81-100%)";
+        public const int Frostcraft_Great_Sword_Level_Multiplier_81_100__sortIndex = 31500;
+        [SortOrder(Frostcraft_Great_Sword_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_Great_Sword_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_Great_Sword_Level_Multiplier_81_100_ {
+            get => GetData<float>(1293);
+            set {
+                if (GetData<float>(1293) == value) return;
+                SetData(1293, value, nameof(Frostcraft_Great_Sword_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Great_Sword_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_Great_Sword_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (Great Sword) Recovery Speed: Unsheathed";
+        public const int Frostcraft_Great_Sword_Recovery_Speed_Unsheathed_sortIndex = 31550;
+        [SortOrder(Frostcraft_Great_Sword_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_Great_Sword_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_Great_Sword_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1297);
+            set {
+                if (GetData<float>(1297) == value) return;
+                SetData(1297, value, nameof(Frostcraft_Great_Sword_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Great_Sword_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_Great_Sword_Recovery_Speed_Sheathed_displayName = "Frostcraft: (Great Sword) Recovery Speed: Sheathed";
+        public const int Frostcraft_Great_Sword_Recovery_Speed_Sheathed_sortIndex = 31600;
+        [SortOrder(Frostcraft_Great_Sword_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_Great_Sword_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_Great_Sword_Recovery_Speed_Sheathed {
+            get => GetData<float>(1301);
+            set {
+                if (GetData<float>(1301) == value) return;
+                SetData(1301, value, nameof(Frostcraft_Great_Sword_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Great_Sword_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_Great_Sword_Consumption_per_Hit_displayName = "Frostcraft: (Great Sword) Consumption per Hit";
+        public const int Frostcraft_Great_Sword_Consumption_per_Hit_sortIndex = 31650;
+        [SortOrder(Frostcraft_Great_Sword_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Great_Sword_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_Great_Sword_Consumption_per_Hit {
+            get => GetData<float>(1305);
+            set {
+                if (GetData<float>(1305) == value) return;
+                SetData(1305, value, nameof(Frostcraft_Great_Sword_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Great_Sword_Consumption_per_Hit));
+            }
+        }
+
+        public const string __31700_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __31700_sortIndex = 31700;
+        [SortOrder(__31700_sortIndex)]
+        [DisplayName(__31700_displayName)]
+        public virtual byte __31700 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Sword_Shield_Level_Multiplier_0_15__displayName = "Frostcraft: (Sword & Shield) Level Multiplier (0-15%)";
+        public const int Frostcraft_Sword_Shield_Level_Multiplier_0_15__sortIndex = 31750;
+        [SortOrder(Frostcraft_Sword_Shield_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_Sword_Shield_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_Sword_Shield_Level_Multiplier_0_15_ {
+            get => GetData<float>(1309);
+            set {
+                if (GetData<float>(1309) == value) return;
+                SetData(1309, value, nameof(Frostcraft_Sword_Shield_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Sword_Shield_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_Sword_Shield_Level_Multiplier_16_45__displayName = "Frostcraft: (Sword & Shield) Level Multiplier (16-45%)";
+        public const int Frostcraft_Sword_Shield_Level_Multiplier_16_45__sortIndex = 31800;
+        [SortOrder(Frostcraft_Sword_Shield_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_Sword_Shield_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_Sword_Shield_Level_Multiplier_16_45_ {
+            get => GetData<float>(1313);
+            set {
+                if (GetData<float>(1313) == value) return;
+                SetData(1313, value, nameof(Frostcraft_Sword_Shield_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Sword_Shield_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_Sword_Shield_Level_Multiplier_46_80__displayName = "Frostcraft: (Sword & Shield) Level Multiplier (46-80%)";
+        public const int Frostcraft_Sword_Shield_Level_Multiplier_46_80__sortIndex = 31850;
+        [SortOrder(Frostcraft_Sword_Shield_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_Sword_Shield_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_Sword_Shield_Level_Multiplier_46_80_ {
+            get => GetData<float>(1317);
+            set {
+                if (GetData<float>(1317) == value) return;
+                SetData(1317, value, nameof(Frostcraft_Sword_Shield_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Sword_Shield_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_Sword_Shield_Level_Multiplier_81_100__displayName = "Frostcraft: (Sword & Shield) Level Multiplier (81-100%)";
+        public const int Frostcraft_Sword_Shield_Level_Multiplier_81_100__sortIndex = 31900;
+        [SortOrder(Frostcraft_Sword_Shield_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_Sword_Shield_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_Sword_Shield_Level_Multiplier_81_100_ {
+            get => GetData<float>(1321);
+            set {
+                if (GetData<float>(1321) == value) return;
+                SetData(1321, value, nameof(Frostcraft_Sword_Shield_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Sword_Shield_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_Sword_Shield_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (Sword & Shield) Recovery Speed: Unsheathed";
+        public const int Frostcraft_Sword_Shield_Recovery_Speed_Unsheathed_sortIndex = 31950;
+        [SortOrder(Frostcraft_Sword_Shield_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_Sword_Shield_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_Sword_Shield_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1325);
+            set {
+                if (GetData<float>(1325) == value) return;
+                SetData(1325, value, nameof(Frostcraft_Sword_Shield_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Sword_Shield_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_Sword_Shield_Recovery_Speed_Sheathed_displayName = "Frostcraft: (Sword & Shield) Recovery Speed: Sheathed";
+        public const int Frostcraft_Sword_Shield_Recovery_Speed_Sheathed_sortIndex = 32000;
+        [SortOrder(Frostcraft_Sword_Shield_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_Sword_Shield_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_Sword_Shield_Recovery_Speed_Sheathed {
+            get => GetData<float>(1329);
+            set {
+                if (GetData<float>(1329) == value) return;
+                SetData(1329, value, nameof(Frostcraft_Sword_Shield_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Sword_Shield_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_Sword_Shield_Consumption_per_Hit_displayName = "Frostcraft: (Sword & Shield) Consumption per Hit";
+        public const int Frostcraft_Sword_Shield_Consumption_per_Hit_sortIndex = 32050;
+        [SortOrder(Frostcraft_Sword_Shield_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Sword_Shield_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_Sword_Shield_Consumption_per_Hit {
+            get => GetData<float>(1333);
+            set {
+                if (GetData<float>(1333) == value) return;
+                SetData(1333, value, nameof(Frostcraft_Sword_Shield_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Sword_Shield_Consumption_per_Hit));
+            }
+        }
+
+        public const string __32100_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __32100_sortIndex = 32100;
+        [SortOrder(__32100_sortIndex)]
+        [DisplayName(__32100_displayName)]
+        public virtual byte __32100 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Dual_Blades_Level_Multiplier_0_15__displayName = "Frostcraft: (Dual Blades) Level Multiplier (0-15%)";
+        public const int Frostcraft_Dual_Blades_Level_Multiplier_0_15__sortIndex = 32150;
+        [SortOrder(Frostcraft_Dual_Blades_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_Dual_Blades_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_Dual_Blades_Level_Multiplier_0_15_ {
+            get => GetData<float>(1337);
+            set {
+                if (GetData<float>(1337) == value) return;
+                SetData(1337, value, nameof(Frostcraft_Dual_Blades_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Dual_Blades_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_Dual_Blades_Level_Multiplier_16_45__displayName = "Frostcraft: (Dual Blades) Level Multiplier (16-45%)";
+        public const int Frostcraft_Dual_Blades_Level_Multiplier_16_45__sortIndex = 32200;
+        [SortOrder(Frostcraft_Dual_Blades_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_Dual_Blades_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_Dual_Blades_Level_Multiplier_16_45_ {
+            get => GetData<float>(1341);
+            set {
+                if (GetData<float>(1341) == value) return;
+                SetData(1341, value, nameof(Frostcraft_Dual_Blades_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Dual_Blades_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_Dual_Blades_Level_Multiplier_46_80__displayName = "Frostcraft: (Dual Blades) Level Multiplier (46-80%)";
+        public const int Frostcraft_Dual_Blades_Level_Multiplier_46_80__sortIndex = 32250;
+        [SortOrder(Frostcraft_Dual_Blades_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_Dual_Blades_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_Dual_Blades_Level_Multiplier_46_80_ {
+            get => GetData<float>(1345);
+            set {
+                if (GetData<float>(1345) == value) return;
+                SetData(1345, value, nameof(Frostcraft_Dual_Blades_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Dual_Blades_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_Dual_Blades_Level_Multiplier_81_100__displayName = "Frostcraft: (Dual Blades) Level Multiplier (81-100%)";
+        public const int Frostcraft_Dual_Blades_Level_Multiplier_81_100__sortIndex = 32300;
+        [SortOrder(Frostcraft_Dual_Blades_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_Dual_Blades_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_Dual_Blades_Level_Multiplier_81_100_ {
+            get => GetData<float>(1349);
+            set {
+                if (GetData<float>(1349) == value) return;
+                SetData(1349, value, nameof(Frostcraft_Dual_Blades_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Dual_Blades_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_Dual_Blades_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (Dual Blades) Recovery Speed: Unsheathed";
+        public const int Frostcraft_Dual_Blades_Recovery_Speed_Unsheathed_sortIndex = 32350;
+        [SortOrder(Frostcraft_Dual_Blades_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_Dual_Blades_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_Dual_Blades_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1353);
+            set {
+                if (GetData<float>(1353) == value) return;
+                SetData(1353, value, nameof(Frostcraft_Dual_Blades_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Dual_Blades_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_Dual_Blades_Recovery_Speed_Sheathed_displayName = "Frostcraft: (Dual Blades) Recovery Speed: Sheathed";
+        public const int Frostcraft_Dual_Blades_Recovery_Speed_Sheathed_sortIndex = 32400;
+        [SortOrder(Frostcraft_Dual_Blades_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_Dual_Blades_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_Dual_Blades_Recovery_Speed_Sheathed {
+            get => GetData<float>(1357);
+            set {
+                if (GetData<float>(1357) == value) return;
+                SetData(1357, value, nameof(Frostcraft_Dual_Blades_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Dual_Blades_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_Dual_Blades_Consumption_per_Hit_displayName = "Frostcraft: (Dual Blades) Consumption per Hit";
+        public const int Frostcraft_Dual_Blades_Consumption_per_Hit_sortIndex = 32450;
+        [SortOrder(Frostcraft_Dual_Blades_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Dual_Blades_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_Dual_Blades_Consumption_per_Hit {
+            get => GetData<float>(1361);
+            set {
+                if (GetData<float>(1361) == value) return;
+                SetData(1361, value, nameof(Frostcraft_Dual_Blades_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Dual_Blades_Consumption_per_Hit));
+            }
+        }
+
+        public const string __32500_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __32500_sortIndex = 32500;
+        [SortOrder(__32500_sortIndex)]
+        [DisplayName(__32500_displayName)]
+        public virtual byte __32500 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Long_Sword_Level_Multiplier_0_15__displayName = "Frostcraft: (Long Sword) Level Multiplier (0-15%)";
+        public const int Frostcraft_Long_Sword_Level_Multiplier_0_15__sortIndex = 32550;
+        [SortOrder(Frostcraft_Long_Sword_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_Long_Sword_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_Long_Sword_Level_Multiplier_0_15_ {
+            get => GetData<float>(1365);
+            set {
+                if (GetData<float>(1365) == value) return;
+                SetData(1365, value, nameof(Frostcraft_Long_Sword_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Long_Sword_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_Long_Sword_Level_Multiplier_16_45__displayName = "Frostcraft: (Long Sword) Level Multiplier (16-45%)";
+        public const int Frostcraft_Long_Sword_Level_Multiplier_16_45__sortIndex = 32600;
+        [SortOrder(Frostcraft_Long_Sword_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_Long_Sword_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_Long_Sword_Level_Multiplier_16_45_ {
+            get => GetData<float>(1369);
+            set {
+                if (GetData<float>(1369) == value) return;
+                SetData(1369, value, nameof(Frostcraft_Long_Sword_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Long_Sword_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_Long_Sword_Level_Multiplier_46_80__displayName = "Frostcraft: (Long Sword) Level Multiplier (46-80%)";
+        public const int Frostcraft_Long_Sword_Level_Multiplier_46_80__sortIndex = 32650;
+        [SortOrder(Frostcraft_Long_Sword_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_Long_Sword_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_Long_Sword_Level_Multiplier_46_80_ {
+            get => GetData<float>(1373);
+            set {
+                if (GetData<float>(1373) == value) return;
+                SetData(1373, value, nameof(Frostcraft_Long_Sword_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Long_Sword_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_Long_Sword_Level_Multiplier_81_100__displayName = "Frostcraft: (Long Sword) Level Multiplier (81-100%)";
+        public const int Frostcraft_Long_Sword_Level_Multiplier_81_100__sortIndex = 32700;
+        [SortOrder(Frostcraft_Long_Sword_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_Long_Sword_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_Long_Sword_Level_Multiplier_81_100_ {
+            get => GetData<float>(1377);
+            set {
+                if (GetData<float>(1377) == value) return;
+                SetData(1377, value, nameof(Frostcraft_Long_Sword_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Long_Sword_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_Long_Sword_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (Long Sword) Recovery Speed: Unsheathed";
+        public const int Frostcraft_Long_Sword_Recovery_Speed_Unsheathed_sortIndex = 32750;
+        [SortOrder(Frostcraft_Long_Sword_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_Long_Sword_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_Long_Sword_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1381);
+            set {
+                if (GetData<float>(1381) == value) return;
+                SetData(1381, value, nameof(Frostcraft_Long_Sword_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Long_Sword_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_Long_Sword_Recovery_Speed_Sheathed_displayName = "Frostcraft: (Long Sword) Recovery Speed: Sheathed";
+        public const int Frostcraft_Long_Sword_Recovery_Speed_Sheathed_sortIndex = 32800;
+        [SortOrder(Frostcraft_Long_Sword_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_Long_Sword_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_Long_Sword_Recovery_Speed_Sheathed {
+            get => GetData<float>(1385);
+            set {
+                if (GetData<float>(1385) == value) return;
+                SetData(1385, value, nameof(Frostcraft_Long_Sword_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Long_Sword_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_Long_Sword_Consumption_per_Hit_displayName = "Frostcraft: (Long Sword) Consumption per Hit";
+        public const int Frostcraft_Long_Sword_Consumption_per_Hit_sortIndex = 32850;
+        [SortOrder(Frostcraft_Long_Sword_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Long_Sword_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_Long_Sword_Consumption_per_Hit {
+            get => GetData<float>(1389);
+            set {
+                if (GetData<float>(1389) == value) return;
+                SetData(1389, value, nameof(Frostcraft_Long_Sword_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Long_Sword_Consumption_per_Hit));
+            }
+        }
+
+        public const string __32900_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __32900_sortIndex = 32900;
+        [SortOrder(__32900_sortIndex)]
+        [DisplayName(__32900_displayName)]
+        public virtual byte __32900 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Hammer_Level_Multiplier_0_15__displayName = "Frostcraft: (Hammer) Level Multiplier (0-15%)";
+        public const int Frostcraft_Hammer_Level_Multiplier_0_15__sortIndex = 32950;
+        [SortOrder(Frostcraft_Hammer_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_Hammer_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_Hammer_Level_Multiplier_0_15_ {
+            get => GetData<float>(1393);
+            set {
+                if (GetData<float>(1393) == value) return;
+                SetData(1393, value, nameof(Frostcraft_Hammer_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hammer_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_Hammer_Level_Multiplier_16_45__displayName = "Frostcraft: (Hammer) Level Multiplier (16-45%)";
+        public const int Frostcraft_Hammer_Level_Multiplier_16_45__sortIndex = 33000;
+        [SortOrder(Frostcraft_Hammer_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_Hammer_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_Hammer_Level_Multiplier_16_45_ {
+            get => GetData<float>(1397);
+            set {
+                if (GetData<float>(1397) == value) return;
+                SetData(1397, value, nameof(Frostcraft_Hammer_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hammer_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_Hammer_Level_Multiplier_46_80__displayName = "Frostcraft: (Hammer) Level Multiplier (46-80%)";
+        public const int Frostcraft_Hammer_Level_Multiplier_46_80__sortIndex = 33050;
+        [SortOrder(Frostcraft_Hammer_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_Hammer_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_Hammer_Level_Multiplier_46_80_ {
+            get => GetData<float>(1401);
+            set {
+                if (GetData<float>(1401) == value) return;
+                SetData(1401, value, nameof(Frostcraft_Hammer_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hammer_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_Hammer_Level_Multiplier_81_100__displayName = "Frostcraft: (Hammer) Level Multiplier (81-100%)";
+        public const int Frostcraft_Hammer_Level_Multiplier_81_100__sortIndex = 33100;
+        [SortOrder(Frostcraft_Hammer_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_Hammer_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_Hammer_Level_Multiplier_81_100_ {
+            get => GetData<float>(1405);
+            set {
+                if (GetData<float>(1405) == value) return;
+                SetData(1405, value, nameof(Frostcraft_Hammer_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hammer_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_Hammer_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (Hammer) Recovery Speed: Unsheathed";
+        public const int Frostcraft_Hammer_Recovery_Speed_Unsheathed_sortIndex = 33150;
+        [SortOrder(Frostcraft_Hammer_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_Hammer_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_Hammer_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1409);
+            set {
+                if (GetData<float>(1409) == value) return;
+                SetData(1409, value, nameof(Frostcraft_Hammer_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hammer_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_Hammer_Recovery_Speed_Sheathed_displayName = "Frostcraft: (Hammer) Recovery Speed: Sheathed";
+        public const int Frostcraft_Hammer_Recovery_Speed_Sheathed_sortIndex = 33200;
+        [SortOrder(Frostcraft_Hammer_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_Hammer_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_Hammer_Recovery_Speed_Sheathed {
+            get => GetData<float>(1413);
+            set {
+                if (GetData<float>(1413) == value) return;
+                SetData(1413, value, nameof(Frostcraft_Hammer_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hammer_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_Hammer_Consumption_per_Hit_displayName = "Frostcraft: (Hammer) Consumption per Hit";
+        public const int Frostcraft_Hammer_Consumption_per_Hit_sortIndex = 33250;
+        [SortOrder(Frostcraft_Hammer_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Hammer_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_Hammer_Consumption_per_Hit {
+            get => GetData<float>(1417);
+            set {
+                if (GetData<float>(1417) == value) return;
+                SetData(1417, value, nameof(Frostcraft_Hammer_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hammer_Consumption_per_Hit));
+            }
+        }
+
+        public const string __33300_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __33300_sortIndex = 33300;
+        [SortOrder(__33300_sortIndex)]
+        [DisplayName(__33300_displayName)]
+        public virtual byte __33300 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Hunting_Horn_Level_Multiplier_0_15__displayName = "Frostcraft: (Hunting Horn) Level Multiplier (0-15%)";
+        public const int Frostcraft_Hunting_Horn_Level_Multiplier_0_15__sortIndex = 33350;
+        [SortOrder(Frostcraft_Hunting_Horn_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_Hunting_Horn_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_Hunting_Horn_Level_Multiplier_0_15_ {
+            get => GetData<float>(1421);
+            set {
+                if (GetData<float>(1421) == value) return;
+                SetData(1421, value, nameof(Frostcraft_Hunting_Horn_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hunting_Horn_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_Hunting_Horn_Level_Multiplier_16_45__displayName = "Frostcraft: (Hunting Horn) Level Multiplier (16-45%)";
+        public const int Frostcraft_Hunting_Horn_Level_Multiplier_16_45__sortIndex = 33400;
+        [SortOrder(Frostcraft_Hunting_Horn_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_Hunting_Horn_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_Hunting_Horn_Level_Multiplier_16_45_ {
+            get => GetData<float>(1425);
+            set {
+                if (GetData<float>(1425) == value) return;
+                SetData(1425, value, nameof(Frostcraft_Hunting_Horn_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hunting_Horn_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_Hunting_Horn_Level_Multiplier_46_80__displayName = "Frostcraft: (Hunting Horn) Level Multiplier (46-80%)";
+        public const int Frostcraft_Hunting_Horn_Level_Multiplier_46_80__sortIndex = 33450;
+        [SortOrder(Frostcraft_Hunting_Horn_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_Hunting_Horn_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_Hunting_Horn_Level_Multiplier_46_80_ {
+            get => GetData<float>(1429);
+            set {
+                if (GetData<float>(1429) == value) return;
+                SetData(1429, value, nameof(Frostcraft_Hunting_Horn_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hunting_Horn_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_Hunting_Horn_Level_Multiplier_81_100__displayName = "Frostcraft: (Hunting Horn) Level Multiplier (81-100%)";
+        public const int Frostcraft_Hunting_Horn_Level_Multiplier_81_100__sortIndex = 33500;
+        [SortOrder(Frostcraft_Hunting_Horn_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_Hunting_Horn_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_Hunting_Horn_Level_Multiplier_81_100_ {
+            get => GetData<float>(1433);
+            set {
+                if (GetData<float>(1433) == value) return;
+                SetData(1433, value, nameof(Frostcraft_Hunting_Horn_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hunting_Horn_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_Hunting_Horn_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (Hunting Horn) Recovery Speed: Unsheathed";
+        public const int Frostcraft_Hunting_Horn_Recovery_Speed_Unsheathed_sortIndex = 33550;
+        [SortOrder(Frostcraft_Hunting_Horn_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_Hunting_Horn_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_Hunting_Horn_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1437);
+            set {
+                if (GetData<float>(1437) == value) return;
+                SetData(1437, value, nameof(Frostcraft_Hunting_Horn_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hunting_Horn_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_Hunting_Horn_Recovery_Speed_Sheathed_displayName = "Frostcraft: (Hunting Horn) Recovery Speed: Sheathed";
+        public const int Frostcraft_Hunting_Horn_Recovery_Speed_Sheathed_sortIndex = 33600;
+        [SortOrder(Frostcraft_Hunting_Horn_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_Hunting_Horn_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_Hunting_Horn_Recovery_Speed_Sheathed {
+            get => GetData<float>(1441);
+            set {
+                if (GetData<float>(1441) == value) return;
+                SetData(1441, value, nameof(Frostcraft_Hunting_Horn_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hunting_Horn_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_Hunting_Horn_Consumption_per_Hit_displayName = "Frostcraft: (Hunting Horn) Consumption per Hit";
+        public const int Frostcraft_Hunting_Horn_Consumption_per_Hit_sortIndex = 33650;
+        [SortOrder(Frostcraft_Hunting_Horn_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Hunting_Horn_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_Hunting_Horn_Consumption_per_Hit {
+            get => GetData<float>(1445);
+            set {
+                if (GetData<float>(1445) == value) return;
+                SetData(1445, value, nameof(Frostcraft_Hunting_Horn_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Hunting_Horn_Consumption_per_Hit));
+            }
+        }
+
+        public const string __33700_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __33700_sortIndex = 33700;
+        [SortOrder(__33700_sortIndex)]
+        [DisplayName(__33700_displayName)]
+        public virtual byte __33700 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Lance_Level_Multiplier_0_15__displayName = "Frostcraft: (Lance) Level Multiplier (0-15%)";
+        public const int Frostcraft_Lance_Level_Multiplier_0_15__sortIndex = 33750;
+        [SortOrder(Frostcraft_Lance_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_Lance_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_Lance_Level_Multiplier_0_15_ {
+            get => GetData<float>(1449);
+            set {
+                if (GetData<float>(1449) == value) return;
+                SetData(1449, value, nameof(Frostcraft_Lance_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Lance_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_Lance_Level_Multiplier_16_45__displayName = "Frostcraft: (Lance) Level Multiplier (16-45%)";
+        public const int Frostcraft_Lance_Level_Multiplier_16_45__sortIndex = 33800;
+        [SortOrder(Frostcraft_Lance_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_Lance_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_Lance_Level_Multiplier_16_45_ {
+            get => GetData<float>(1453);
+            set {
+                if (GetData<float>(1453) == value) return;
+                SetData(1453, value, nameof(Frostcraft_Lance_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Lance_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_Lance_Level_Multiplier_46_80__displayName = "Frostcraft: (Lance) Level Multiplier (46-80%)";
+        public const int Frostcraft_Lance_Level_Multiplier_46_80__sortIndex = 33850;
+        [SortOrder(Frostcraft_Lance_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_Lance_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_Lance_Level_Multiplier_46_80_ {
+            get => GetData<float>(1457);
+            set {
+                if (GetData<float>(1457) == value) return;
+                SetData(1457, value, nameof(Frostcraft_Lance_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Lance_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_Lance_Level_Multiplier_81_100__displayName = "Frostcraft: (Lance) Level Multiplier (81-100%)";
+        public const int Frostcraft_Lance_Level_Multiplier_81_100__sortIndex = 33900;
+        [SortOrder(Frostcraft_Lance_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_Lance_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_Lance_Level_Multiplier_81_100_ {
+            get => GetData<float>(1461);
+            set {
+                if (GetData<float>(1461) == value) return;
+                SetData(1461, value, nameof(Frostcraft_Lance_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Lance_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_Lance_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (Lance) Recovery Speed: Unsheathed";
+        public const int Frostcraft_Lance_Recovery_Speed_Unsheathed_sortIndex = 33950;
+        [SortOrder(Frostcraft_Lance_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_Lance_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_Lance_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1465);
+            set {
+                if (GetData<float>(1465) == value) return;
+                SetData(1465, value, nameof(Frostcraft_Lance_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Lance_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_Lance_Recovery_Speed_Sheathed_displayName = "Frostcraft: (Lance) Recovery Speed: Sheathed";
+        public const int Frostcraft_Lance_Recovery_Speed_Sheathed_sortIndex = 34000;
+        [SortOrder(Frostcraft_Lance_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_Lance_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_Lance_Recovery_Speed_Sheathed {
+            get => GetData<float>(1469);
+            set {
+                if (GetData<float>(1469) == value) return;
+                SetData(1469, value, nameof(Frostcraft_Lance_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Lance_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_Lance_Consumption_per_Hit_displayName = "Frostcraft: (Lance) Consumption per Hit";
+        public const int Frostcraft_Lance_Consumption_per_Hit_sortIndex = 34050;
+        [SortOrder(Frostcraft_Lance_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Lance_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_Lance_Consumption_per_Hit {
+            get => GetData<float>(1473);
+            set {
+                if (GetData<float>(1473) == value) return;
+                SetData(1473, value, nameof(Frostcraft_Lance_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Lance_Consumption_per_Hit));
+            }
+        }
+
+        public const string __34100_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __34100_sortIndex = 34100;
+        [SortOrder(__34100_sortIndex)]
+        [DisplayName(__34100_displayName)]
+        public virtual byte __34100 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Gunlance_Level_Multiplier_0_15__displayName = "Frostcraft: (Gunlance) Level Multiplier (0-15%)";
+        public const int Frostcraft_Gunlance_Level_Multiplier_0_15__sortIndex = 34150;
+        [SortOrder(Frostcraft_Gunlance_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_Gunlance_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_Gunlance_Level_Multiplier_0_15_ {
+            get => GetData<float>(1477);
+            set {
+                if (GetData<float>(1477) == value) return;
+                SetData(1477, value, nameof(Frostcraft_Gunlance_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Gunlance_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_Gunlance_Level_Multiplier_16_45__displayName = "Frostcraft: (Gunlance) Level Multiplier (16-45%)";
+        public const int Frostcraft_Gunlance_Level_Multiplier_16_45__sortIndex = 34200;
+        [SortOrder(Frostcraft_Gunlance_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_Gunlance_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_Gunlance_Level_Multiplier_16_45_ {
+            get => GetData<float>(1481);
+            set {
+                if (GetData<float>(1481) == value) return;
+                SetData(1481, value, nameof(Frostcraft_Gunlance_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Gunlance_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_Gunlance_Level_Multiplier_46_80__displayName = "Frostcraft: (Gunlance) Level Multiplier (46-80%)";
+        public const int Frostcraft_Gunlance_Level_Multiplier_46_80__sortIndex = 34250;
+        [SortOrder(Frostcraft_Gunlance_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_Gunlance_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_Gunlance_Level_Multiplier_46_80_ {
+            get => GetData<float>(1485);
+            set {
+                if (GetData<float>(1485) == value) return;
+                SetData(1485, value, nameof(Frostcraft_Gunlance_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Gunlance_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_Gunlance_Level_Multiplier_81_100__displayName = "Frostcraft: (Gunlance) Level Multiplier (81-100%)";
+        public const int Frostcraft_Gunlance_Level_Multiplier_81_100__sortIndex = 34300;
+        [SortOrder(Frostcraft_Gunlance_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_Gunlance_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_Gunlance_Level_Multiplier_81_100_ {
+            get => GetData<float>(1489);
+            set {
+                if (GetData<float>(1489) == value) return;
+                SetData(1489, value, nameof(Frostcraft_Gunlance_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Gunlance_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_Gunlance_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (Gunlance) Recovery Speed: Unsheathed";
+        public const int Frostcraft_Gunlance_Recovery_Speed_Unsheathed_sortIndex = 34350;
+        [SortOrder(Frostcraft_Gunlance_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_Gunlance_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_Gunlance_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1493);
+            set {
+                if (GetData<float>(1493) == value) return;
+                SetData(1493, value, nameof(Frostcraft_Gunlance_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Gunlance_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_Gunlance_Recovery_Speed_Sheathed_displayName = "Frostcraft: (Gunlance) Recovery Speed: Sheathed";
+        public const int Frostcraft_Gunlance_Recovery_Speed_Sheathed_sortIndex = 34400;
+        [SortOrder(Frostcraft_Gunlance_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_Gunlance_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_Gunlance_Recovery_Speed_Sheathed {
+            get => GetData<float>(1497);
+            set {
+                if (GetData<float>(1497) == value) return;
+                SetData(1497, value, nameof(Frostcraft_Gunlance_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Gunlance_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_Gunlance_Consumption_per_Hit_displayName = "Frostcraft: (Gunlance) Consumption per Hit";
+        public const int Frostcraft_Gunlance_Consumption_per_Hit_sortIndex = 34450;
+        [SortOrder(Frostcraft_Gunlance_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Gunlance_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_Gunlance_Consumption_per_Hit {
+            get => GetData<float>(1501);
+            set {
+                if (GetData<float>(1501) == value) return;
+                SetData(1501, value, nameof(Frostcraft_Gunlance_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Gunlance_Consumption_per_Hit));
+            }
+        }
+
+        public const string __34500_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __34500_sortIndex = 34500;
+        [SortOrder(__34500_sortIndex)]
+        [DisplayName(__34500_displayName)]
+        public virtual byte __34500 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Switch_Axe_Level_Multiplier_0_15__displayName = "Frostcraft: (Switch Axe) Level Multiplier (0-15%)";
+        public const int Frostcraft_Switch_Axe_Level_Multiplier_0_15__sortIndex = 34550;
+        [SortOrder(Frostcraft_Switch_Axe_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_Switch_Axe_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_Switch_Axe_Level_Multiplier_0_15_ {
+            get => GetData<float>(1505);
+            set {
+                if (GetData<float>(1505) == value) return;
+                SetData(1505, value, nameof(Frostcraft_Switch_Axe_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Switch_Axe_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_Switch_Axe_Level_Multiplier_16_45__displayName = "Frostcraft: (Switch Axe) Level Multiplier (16-45%)";
+        public const int Frostcraft_Switch_Axe_Level_Multiplier_16_45__sortIndex = 34600;
+        [SortOrder(Frostcraft_Switch_Axe_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_Switch_Axe_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_Switch_Axe_Level_Multiplier_16_45_ {
+            get => GetData<float>(1509);
+            set {
+                if (GetData<float>(1509) == value) return;
+                SetData(1509, value, nameof(Frostcraft_Switch_Axe_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Switch_Axe_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_Switch_Axe_Level_Multiplier_46_80__displayName = "Frostcraft: (Switch Axe) Level Multiplier (46-80%)";
+        public const int Frostcraft_Switch_Axe_Level_Multiplier_46_80__sortIndex = 34650;
+        [SortOrder(Frostcraft_Switch_Axe_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_Switch_Axe_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_Switch_Axe_Level_Multiplier_46_80_ {
+            get => GetData<float>(1513);
+            set {
+                if (GetData<float>(1513) == value) return;
+                SetData(1513, value, nameof(Frostcraft_Switch_Axe_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Switch_Axe_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_Switch_Axe_Level_Multiplier_81_100__displayName = "Frostcraft: (Switch Axe) Level Multiplier (81-100%)";
+        public const int Frostcraft_Switch_Axe_Level_Multiplier_81_100__sortIndex = 34700;
+        [SortOrder(Frostcraft_Switch_Axe_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_Switch_Axe_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_Switch_Axe_Level_Multiplier_81_100_ {
+            get => GetData<float>(1517);
+            set {
+                if (GetData<float>(1517) == value) return;
+                SetData(1517, value, nameof(Frostcraft_Switch_Axe_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Switch_Axe_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_Switch_Axe_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (Switch Axe) Recovery Speed: Unsheathed";
+        public const int Frostcraft_Switch_Axe_Recovery_Speed_Unsheathed_sortIndex = 34750;
+        [SortOrder(Frostcraft_Switch_Axe_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_Switch_Axe_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_Switch_Axe_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1521);
+            set {
+                if (GetData<float>(1521) == value) return;
+                SetData(1521, value, nameof(Frostcraft_Switch_Axe_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Switch_Axe_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_Switch_Axe_Recovery_Speed_Sheathed_displayName = "Frostcraft: (Switch Axe) Recovery Speed: Sheathed";
+        public const int Frostcraft_Switch_Axe_Recovery_Speed_Sheathed_sortIndex = 34800;
+        [SortOrder(Frostcraft_Switch_Axe_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_Switch_Axe_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_Switch_Axe_Recovery_Speed_Sheathed {
+            get => GetData<float>(1525);
+            set {
+                if (GetData<float>(1525) == value) return;
+                SetData(1525, value, nameof(Frostcraft_Switch_Axe_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Switch_Axe_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_Switch_Axe_Consumption_per_Hit_displayName = "Frostcraft: (Switch Axe) Consumption per Hit";
+        public const int Frostcraft_Switch_Axe_Consumption_per_Hit_sortIndex = 34850;
+        [SortOrder(Frostcraft_Switch_Axe_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Switch_Axe_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_Switch_Axe_Consumption_per_Hit {
+            get => GetData<float>(1529);
+            set {
+                if (GetData<float>(1529) == value) return;
+                SetData(1529, value, nameof(Frostcraft_Switch_Axe_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Switch_Axe_Consumption_per_Hit));
+            }
+        }
+
+        public const string __34900_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __34900_sortIndex = 34900;
+        [SortOrder(__34900_sortIndex)]
+        [DisplayName(__34900_displayName)]
+        public virtual byte __34900 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Charge_Blade_Level_Multiplier_0_15__displayName = "Frostcraft: (Charge Blade) Level Multiplier (0-15%)";
+        public const int Frostcraft_Charge_Blade_Level_Multiplier_0_15__sortIndex = 34950;
+        [SortOrder(Frostcraft_Charge_Blade_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_Charge_Blade_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_Charge_Blade_Level_Multiplier_0_15_ {
+            get => GetData<float>(1533);
+            set {
+                if (GetData<float>(1533) == value) return;
+                SetData(1533, value, nameof(Frostcraft_Charge_Blade_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Charge_Blade_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_Charge_Blade_Level_Multiplier_16_45__displayName = "Frostcraft: (Charge Blade) Level Multiplier (16-45%)";
+        public const int Frostcraft_Charge_Blade_Level_Multiplier_16_45__sortIndex = 35000;
+        [SortOrder(Frostcraft_Charge_Blade_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_Charge_Blade_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_Charge_Blade_Level_Multiplier_16_45_ {
+            get => GetData<float>(1537);
+            set {
+                if (GetData<float>(1537) == value) return;
+                SetData(1537, value, nameof(Frostcraft_Charge_Blade_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Charge_Blade_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_Charge_Blade_Level_Multiplier_46_80__displayName = "Frostcraft: (Charge Blade) Level Multiplier (46-80%)";
+        public const int Frostcraft_Charge_Blade_Level_Multiplier_46_80__sortIndex = 35050;
+        [SortOrder(Frostcraft_Charge_Blade_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_Charge_Blade_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_Charge_Blade_Level_Multiplier_46_80_ {
+            get => GetData<float>(1541);
+            set {
+                if (GetData<float>(1541) == value) return;
+                SetData(1541, value, nameof(Frostcraft_Charge_Blade_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Charge_Blade_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_Charge_Blade_Level_Multiplier_81_100__displayName = "Frostcraft: (Charge Blade) Level Multiplier (81-100%)";
+        public const int Frostcraft_Charge_Blade_Level_Multiplier_81_100__sortIndex = 35100;
+        [SortOrder(Frostcraft_Charge_Blade_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_Charge_Blade_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_Charge_Blade_Level_Multiplier_81_100_ {
+            get => GetData<float>(1545);
+            set {
+                if (GetData<float>(1545) == value) return;
+                SetData(1545, value, nameof(Frostcraft_Charge_Blade_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Charge_Blade_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_Charge_Blade_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (Charge Blade) Recovery Speed: Unsheathed";
+        public const int Frostcraft_Charge_Blade_Recovery_Speed_Unsheathed_sortIndex = 35150;
+        [SortOrder(Frostcraft_Charge_Blade_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_Charge_Blade_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_Charge_Blade_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1549);
+            set {
+                if (GetData<float>(1549) == value) return;
+                SetData(1549, value, nameof(Frostcraft_Charge_Blade_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Charge_Blade_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_Charge_Blade_Recovery_Speed_Sheathed_displayName = "Frostcraft: (Charge Blade) Recovery Speed: Sheathed";
+        public const int Frostcraft_Charge_Blade_Recovery_Speed_Sheathed_sortIndex = 35200;
+        [SortOrder(Frostcraft_Charge_Blade_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_Charge_Blade_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_Charge_Blade_Recovery_Speed_Sheathed {
+            get => GetData<float>(1553);
+            set {
+                if (GetData<float>(1553) == value) return;
+                SetData(1553, value, nameof(Frostcraft_Charge_Blade_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Charge_Blade_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_Charge_Blade_Consumption_per_Hit_displayName = "Frostcraft: (Charge Blade) Consumption per Hit";
+        public const int Frostcraft_Charge_Blade_Consumption_per_Hit_sortIndex = 35250;
+        [SortOrder(Frostcraft_Charge_Blade_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Charge_Blade_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_Charge_Blade_Consumption_per_Hit {
+            get => GetData<float>(1557);
+            set {
+                if (GetData<float>(1557) == value) return;
+                SetData(1557, value, nameof(Frostcraft_Charge_Blade_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Charge_Blade_Consumption_per_Hit));
+            }
+        }
+
+        public const string __35300_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __35300_sortIndex = 35300;
+        [SortOrder(__35300_sortIndex)]
+        [DisplayName(__35300_displayName)]
+        public virtual byte __35300 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Insect_Glaive_Level_Multiplier_0_15__displayName = "Frostcraft: (Insect Glaive) Level Multiplier (0-15%)";
+        public const int Frostcraft_Insect_Glaive_Level_Multiplier_0_15__sortIndex = 35350;
+        [SortOrder(Frostcraft_Insect_Glaive_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_Insect_Glaive_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_Insect_Glaive_Level_Multiplier_0_15_ {
+            get => GetData<float>(1561);
+            set {
+                if (GetData<float>(1561) == value) return;
+                SetData(1561, value, nameof(Frostcraft_Insect_Glaive_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Insect_Glaive_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_Insect_Glaive_Level_Multiplier_16_45__displayName = "Frostcraft: (Insect Glaive) Level Multiplier (16-45%)";
+        public const int Frostcraft_Insect_Glaive_Level_Multiplier_16_45__sortIndex = 35400;
+        [SortOrder(Frostcraft_Insect_Glaive_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_Insect_Glaive_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_Insect_Glaive_Level_Multiplier_16_45_ {
+            get => GetData<float>(1565);
+            set {
+                if (GetData<float>(1565) == value) return;
+                SetData(1565, value, nameof(Frostcraft_Insect_Glaive_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Insect_Glaive_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_Insect_Glaive_Level_Multiplier_46_80__displayName = "Frostcraft: (Insect Glaive) Level Multiplier (46-80%)";
+        public const int Frostcraft_Insect_Glaive_Level_Multiplier_46_80__sortIndex = 35450;
+        [SortOrder(Frostcraft_Insect_Glaive_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_Insect_Glaive_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_Insect_Glaive_Level_Multiplier_46_80_ {
+            get => GetData<float>(1569);
+            set {
+                if (GetData<float>(1569) == value) return;
+                SetData(1569, value, nameof(Frostcraft_Insect_Glaive_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Insect_Glaive_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_Insect_Glaive_Level_Multiplier_81_100__displayName = "Frostcraft: (Insect Glaive) Level Multiplier (81-100%)";
+        public const int Frostcraft_Insect_Glaive_Level_Multiplier_81_100__sortIndex = 35500;
+        [SortOrder(Frostcraft_Insect_Glaive_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_Insect_Glaive_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_Insect_Glaive_Level_Multiplier_81_100_ {
+            get => GetData<float>(1573);
+            set {
+                if (GetData<float>(1573) == value) return;
+                SetData(1573, value, nameof(Frostcraft_Insect_Glaive_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Insect_Glaive_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_Insect_Glaive_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (Insect Glaive) Recovery Speed: Unsheathed";
+        public const int Frostcraft_Insect_Glaive_Recovery_Speed_Unsheathed_sortIndex = 35550;
+        [SortOrder(Frostcraft_Insect_Glaive_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_Insect_Glaive_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_Insect_Glaive_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1577);
+            set {
+                if (GetData<float>(1577) == value) return;
+                SetData(1577, value, nameof(Frostcraft_Insect_Glaive_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Insect_Glaive_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_Insect_Glaive_Recovery_Speed_Sheathed_displayName = "Frostcraft: (Insect Glaive) Recovery Speed: Sheathed";
+        public const int Frostcraft_Insect_Glaive_Recovery_Speed_Sheathed_sortIndex = 35600;
+        [SortOrder(Frostcraft_Insect_Glaive_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_Insect_Glaive_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_Insect_Glaive_Recovery_Speed_Sheathed {
+            get => GetData<float>(1581);
+            set {
+                if (GetData<float>(1581) == value) return;
+                SetData(1581, value, nameof(Frostcraft_Insect_Glaive_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Insect_Glaive_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_Insect_Glaive_Consumption_per_Hit_displayName = "Frostcraft: (Insect Glaive) Consumption per Hit";
+        public const int Frostcraft_Insect_Glaive_Consumption_per_Hit_sortIndex = 35650;
+        [SortOrder(Frostcraft_Insect_Glaive_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Insect_Glaive_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_Insect_Glaive_Consumption_per_Hit {
+            get => GetData<float>(1585);
+            set {
+                if (GetData<float>(1585) == value) return;
+                SetData(1585, value, nameof(Frostcraft_Insect_Glaive_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Insect_Glaive_Consumption_per_Hit));
+            }
+        }
+
+        public const string __35700_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __35700_sortIndex = 35700;
+        [SortOrder(__35700_sortIndex)]
+        [DisplayName(__35700_displayName)]
+        public virtual byte __35700 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Bow_Level_Multiplier_0_15__displayName = "Frostcraft: (Bow) Level Multiplier (0-15%)";
+        public const int Frostcraft_Bow_Level_Multiplier_0_15__sortIndex = 35750;
+        [SortOrder(Frostcraft_Bow_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_Bow_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_Bow_Level_Multiplier_0_15_ {
+            get => GetData<float>(1589);
+            set {
+                if (GetData<float>(1589) == value) return;
+                SetData(1589, value, nameof(Frostcraft_Bow_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bow_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_Bow_Level_Multiplier_16_45__displayName = "Frostcraft: (Bow) Level Multiplier (16-45%)";
+        public const int Frostcraft_Bow_Level_Multiplier_16_45__sortIndex = 35800;
+        [SortOrder(Frostcraft_Bow_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_Bow_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_Bow_Level_Multiplier_16_45_ {
+            get => GetData<float>(1593);
+            set {
+                if (GetData<float>(1593) == value) return;
+                SetData(1593, value, nameof(Frostcraft_Bow_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bow_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_Bow_Level_Multiplier_46_80__displayName = "Frostcraft: (Bow) Level Multiplier (46-80%)";
+        public const int Frostcraft_Bow_Level_Multiplier_46_80__sortIndex = 35850;
+        [SortOrder(Frostcraft_Bow_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_Bow_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_Bow_Level_Multiplier_46_80_ {
+            get => GetData<float>(1597);
+            set {
+                if (GetData<float>(1597) == value) return;
+                SetData(1597, value, nameof(Frostcraft_Bow_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bow_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_Bow_Level_Multiplier_81_100__displayName = "Frostcraft: (Bow) Level Multiplier (81-100%)";
+        public const int Frostcraft_Bow_Level_Multiplier_81_100__sortIndex = 35900;
+        [SortOrder(Frostcraft_Bow_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_Bow_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_Bow_Level_Multiplier_81_100_ {
+            get => GetData<float>(1601);
+            set {
+                if (GetData<float>(1601) == value) return;
+                SetData(1601, value, nameof(Frostcraft_Bow_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bow_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_Bow_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (Bow) Recovery Speed: Unsheathed";
+        public const int Frostcraft_Bow_Recovery_Speed_Unsheathed_sortIndex = 35950;
+        [SortOrder(Frostcraft_Bow_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_Bow_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_Bow_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1605);
+            set {
+                if (GetData<float>(1605) == value) return;
+                SetData(1605, value, nameof(Frostcraft_Bow_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bow_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_Bow_Recovery_Speed_Sheathed_displayName = "Frostcraft: (Bow) Recovery Speed: Sheathed";
+        public const int Frostcraft_Bow_Recovery_Speed_Sheathed_sortIndex = 36000;
+        [SortOrder(Frostcraft_Bow_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_Bow_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_Bow_Recovery_Speed_Sheathed {
+            get => GetData<float>(1609);
+            set {
+                if (GetData<float>(1609) == value) return;
+                SetData(1609, value, nameof(Frostcraft_Bow_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bow_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_Bow_Consumption_per_Hit_displayName = "Frostcraft: (Bow) Consumption per Hit";
+        public const int Frostcraft_Bow_Consumption_per_Hit_sortIndex = 36050;
+        [SortOrder(Frostcraft_Bow_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bow_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_Bow_Consumption_per_Hit {
+            get => GetData<float>(1613);
+            set {
+                if (GetData<float>(1613) == value) return;
+                SetData(1613, value, nameof(Frostcraft_Bow_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bow_Consumption_per_Hit));
+            }
+        }
+
+        public const string __36100_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __36100_sortIndex = 36100;
+        [SortOrder(__36100_sortIndex)]
+        [DisplayName(__36100_displayName)]
+        public virtual byte __36100 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_HBG_Level_Multiplier_0_15__displayName = "Frostcraft: (HBG) Level Multiplier (0-15%)";
+        public const int Frostcraft_HBG_Level_Multiplier_0_15__sortIndex = 36150;
+        [SortOrder(Frostcraft_HBG_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_HBG_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_HBG_Level_Multiplier_0_15_ {
+            get => GetData<float>(1617);
+            set {
+                if (GetData<float>(1617) == value) return;
+                SetData(1617, value, nameof(Frostcraft_HBG_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_HBG_Level_Multiplier_16_45__displayName = "Frostcraft: (HBG) Level Multiplier (16-45%)";
+        public const int Frostcraft_HBG_Level_Multiplier_16_45__sortIndex = 36200;
+        [SortOrder(Frostcraft_HBG_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_HBG_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_HBG_Level_Multiplier_16_45_ {
+            get => GetData<float>(1621);
+            set {
+                if (GetData<float>(1621) == value) return;
+                SetData(1621, value, nameof(Frostcraft_HBG_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_HBG_Level_Multiplier_46_80__displayName = "Frostcraft: (HBG) Level Multiplier (46-80%)";
+        public const int Frostcraft_HBG_Level_Multiplier_46_80__sortIndex = 36250;
+        [SortOrder(Frostcraft_HBG_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_HBG_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_HBG_Level_Multiplier_46_80_ {
+            get => GetData<float>(1625);
+            set {
+                if (GetData<float>(1625) == value) return;
+                SetData(1625, value, nameof(Frostcraft_HBG_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_HBG_Level_Multiplier_81_100__displayName = "Frostcraft: (HBG) Level Multiplier (81-100%)";
+        public const int Frostcraft_HBG_Level_Multiplier_81_100__sortIndex = 36300;
+        [SortOrder(Frostcraft_HBG_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_HBG_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_HBG_Level_Multiplier_81_100_ {
+            get => GetData<float>(1629);
+            set {
+                if (GetData<float>(1629) == value) return;
+                SetData(1629, value, nameof(Frostcraft_HBG_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_HBG_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (HBG) Recovery Speed: Unsheathed";
+        public const int Frostcraft_HBG_Recovery_Speed_Unsheathed_sortIndex = 36350;
+        [SortOrder(Frostcraft_HBG_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_HBG_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_HBG_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1633);
+            set {
+                if (GetData<float>(1633) == value) return;
+                SetData(1633, value, nameof(Frostcraft_HBG_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_HBG_Recovery_Speed_Sheathed_displayName = "Frostcraft: (HBG) Recovery Speed: Sheathed";
+        public const int Frostcraft_HBG_Recovery_Speed_Sheathed_sortIndex = 36400;
+        [SortOrder(Frostcraft_HBG_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_HBG_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_HBG_Recovery_Speed_Sheathed {
+            get => GetData<float>(1637);
+            set {
+                if (GetData<float>(1637) == value) return;
+                SetData(1637, value, nameof(Frostcraft_HBG_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_HBG_Consumption_per_Hit_displayName = "Frostcraft: (HBG) Consumption per Hit";
+        public const int Frostcraft_HBG_Consumption_per_Hit_sortIndex = 36450;
+        [SortOrder(Frostcraft_HBG_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_HBG_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_HBG_Consumption_per_Hit {
+            get => GetData<float>(1641);
+            set {
+                if (GetData<float>(1641) == value) return;
+                SetData(1641, value, nameof(Frostcraft_HBG_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Consumption_per_Hit));
+            }
+        }
+
+        public const string __36500_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __36500_sortIndex = 36500;
+        [SortOrder(__36500_sortIndex)]
+        [DisplayName(__36500_displayName)]
+        public virtual byte __36500 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_LBG_Level_Multiplier_0_15__displayName = "Frostcraft: (LBG) Level Multiplier (0-15%)";
+        public const int Frostcraft_LBG_Level_Multiplier_0_15__sortIndex = 36550;
+        [SortOrder(Frostcraft_LBG_Level_Multiplier_0_15__sortIndex)]
+        [DisplayName(Frostcraft_LBG_Level_Multiplier_0_15__displayName)]
+        public virtual float Frostcraft_LBG_Level_Multiplier_0_15_ {
+            get => GetData<float>(1645);
+            set {
+                if (GetData<float>(1645) == value) return;
+                SetData(1645, value, nameof(Frostcraft_LBG_Level_Multiplier_0_15_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_LBG_Level_Multiplier_0_15_));
+            }
+        }
+
+        public const string Frostcraft_LBG_Level_Multiplier_16_45__displayName = "Frostcraft: (LBG) Level Multiplier (16-45%)";
+        public const int Frostcraft_LBG_Level_Multiplier_16_45__sortIndex = 36600;
+        [SortOrder(Frostcraft_LBG_Level_Multiplier_16_45__sortIndex)]
+        [DisplayName(Frostcraft_LBG_Level_Multiplier_16_45__displayName)]
+        public virtual float Frostcraft_LBG_Level_Multiplier_16_45_ {
+            get => GetData<float>(1649);
+            set {
+                if (GetData<float>(1649) == value) return;
+                SetData(1649, value, nameof(Frostcraft_LBG_Level_Multiplier_16_45_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_LBG_Level_Multiplier_16_45_));
+            }
+        }
+
+        public const string Frostcraft_LBG_Level_Multiplier_46_80__displayName = "Frostcraft: (LBG) Level Multiplier (46-80%)";
+        public const int Frostcraft_LBG_Level_Multiplier_46_80__sortIndex = 36650;
+        [SortOrder(Frostcraft_LBG_Level_Multiplier_46_80__sortIndex)]
+        [DisplayName(Frostcraft_LBG_Level_Multiplier_46_80__displayName)]
+        public virtual float Frostcraft_LBG_Level_Multiplier_46_80_ {
+            get => GetData<float>(1653);
+            set {
+                if (GetData<float>(1653) == value) return;
+                SetData(1653, value, nameof(Frostcraft_LBG_Level_Multiplier_46_80_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_LBG_Level_Multiplier_46_80_));
+            }
+        }
+
+        public const string Frostcraft_LBG_Level_Multiplier_81_100__displayName = "Frostcraft: (LBG) Level Multiplier (81-100%)";
+        public const int Frostcraft_LBG_Level_Multiplier_81_100__sortIndex = 36700;
+        [SortOrder(Frostcraft_LBG_Level_Multiplier_81_100__sortIndex)]
+        [DisplayName(Frostcraft_LBG_Level_Multiplier_81_100__displayName)]
+        public virtual float Frostcraft_LBG_Level_Multiplier_81_100_ {
+            get => GetData<float>(1657);
+            set {
+                if (GetData<float>(1657) == value) return;
+                SetData(1657, value, nameof(Frostcraft_LBG_Level_Multiplier_81_100_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_LBG_Level_Multiplier_81_100_));
+            }
+        }
+
+        public const string Frostcraft_LBG_Recovery_Speed_Unsheathed_displayName = "Frostcraft: (LBG) Recovery Speed: Unsheathed";
+        public const int Frostcraft_LBG_Recovery_Speed_Unsheathed_sortIndex = 36750;
+        [SortOrder(Frostcraft_LBG_Recovery_Speed_Unsheathed_sortIndex)]
+        [DisplayName(Frostcraft_LBG_Recovery_Speed_Unsheathed_displayName)]
+        public virtual float Frostcraft_LBG_Recovery_Speed_Unsheathed {
+            get => GetData<float>(1661);
+            set {
+                if (GetData<float>(1661) == value) return;
+                SetData(1661, value, nameof(Frostcraft_LBG_Recovery_Speed_Unsheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_LBG_Recovery_Speed_Unsheathed));
+            }
+        }
+
+        public const string Frostcraft_LBG_Recovery_Speed_Sheathed_displayName = "Frostcraft: (LBG) Recovery Speed: Sheathed";
+        public const int Frostcraft_LBG_Recovery_Speed_Sheathed_sortIndex = 36800;
+        [SortOrder(Frostcraft_LBG_Recovery_Speed_Sheathed_sortIndex)]
+        [DisplayName(Frostcraft_LBG_Recovery_Speed_Sheathed_displayName)]
+        public virtual float Frostcraft_LBG_Recovery_Speed_Sheathed {
+            get => GetData<float>(1665);
+            set {
+                if (GetData<float>(1665) == value) return;
+                SetData(1665, value, nameof(Frostcraft_LBG_Recovery_Speed_Sheathed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_LBG_Recovery_Speed_Sheathed));
+            }
+        }
+
+        public const string Frostcraft_LBG_Consumption_per_Hit_displayName = "Frostcraft: (LBG) Consumption per Hit";
+        public const int Frostcraft_LBG_Consumption_per_Hit_sortIndex = 36850;
+        [SortOrder(Frostcraft_LBG_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_LBG_Consumption_per_Hit_displayName)]
+        public virtual float Frostcraft_LBG_Consumption_per_Hit {
+            get => GetData<float>(1669);
+            set {
+                if (GetData<float>(1669) == value) return;
+                SetData(1669, value, nameof(Frostcraft_LBG_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_LBG_Consumption_per_Hit));
+            }
+        }
+
+        public const string __36900_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __36900_sortIndex = 36900;
+        [SortOrder(__36900_sortIndex)]
+        [DisplayName(__36900_displayName)]
+        public virtual byte __36900 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Unk33_displayName = "Unk33";
+        public const int Unk33_sortIndex = 36950;
+        [SortOrder(Unk33_sortIndex)]
+        [DisplayName(Unk33_displayName)]
+        public virtual byte Unk33 {
+            get => GetData<byte>(1673);
+            set {
+                if (GetData<byte>(1673) == value) return;
+                SetData(1673, value, nameof(Unk33));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk33));
             }
         }
 
         public const string Unk34_displayName = "Unk34";
-        public const int Unk34_sortIndex = 31400;
+        public const int Unk34_sortIndex = 37000;
         [SortOrder(Unk34_sortIndex)]
         [DisplayName(Unk34_displayName)]
-        public virtual float Unk34 {
-            get => GetData<float>(1285);
+        public virtual byte Unk34 {
+            get => GetData<byte>(1674);
             set {
-                if (GetData<float>(1285) == value) return;
-                SetData(1285, value, nameof(Unk34));
+                if (GetData<byte>(1674) == value) return;
+                SetData(1674, value, nameof(Unk34));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk34));
             }
         }
 
         public const string Unk35_displayName = "Unk35";
-        public const int Unk35_sortIndex = 31450;
+        public const int Unk35_sortIndex = 37050;
         [SortOrder(Unk35_sortIndex)]
         [DisplayName(Unk35_displayName)]
-        public virtual float Unk35 {
-            get => GetData<float>(1289);
+        public virtual byte Unk35 {
+            get => GetData<byte>(1675);
             set {
-                if (GetData<float>(1289) == value) return;
-                SetData(1289, value, nameof(Unk35));
+                if (GetData<byte>(1675) == value) return;
+                SetData(1675, value, nameof(Unk35));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk35));
             }
         }
 
+        public const string __37100_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __37100_sortIndex = 37100;
+        [SortOrder(__37100_sortIndex)]
+        [DisplayName(__37100_displayName)]
+        public virtual byte __37100 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit_displayName = "Frostcraft: Bow: (Rapid Shot & Clutch Claw Arrow) Consumption per Hit";
+        public const int Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit_sortIndex = 37150;
+        [SortOrder(Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit {
+            get => GetData<byte>(1676);
+            set {
+                if (GetData<byte>(1676) == value) return;
+                SetData(1676, value, nameof(Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_Bow_Power_Shot_Consumption_per_Hit_displayName = "Frostcraft: Bow: (Power Shot) Consumption per Hit";
+        public const int Frostcraft_Bow_Power_Shot_Consumption_per_Hit_sortIndex = 37200;
+        [SortOrder(Frostcraft_Bow_Power_Shot_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bow_Power_Shot_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bow_Power_Shot_Consumption_per_Hit {
+            get => GetData<byte>(1677);
+            set {
+                if (GetData<byte>(1677) == value) return;
+                SetData(1677, value, nameof(Frostcraft_Bow_Power_Shot_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bow_Power_Shot_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_Bow_Arc_Shot_Consumption_per_Hit_displayName = "Frostcraft: Bow: (Arc Shot) Consumption per Hit";
+        public const int Frostcraft_Bow_Arc_Shot_Consumption_per_Hit_sortIndex = 37250;
+        [SortOrder(Frostcraft_Bow_Arc_Shot_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bow_Arc_Shot_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bow_Arc_Shot_Consumption_per_Hit {
+            get => GetData<byte>(1678);
+            set {
+                if (GetData<byte>(1678) == value) return;
+                SetData(1678, value, nameof(Frostcraft_Bow_Arc_Shot_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bow_Arc_Shot_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit_displayName = "Frostcraft: Bow: (Dragonpiercer) Consumption per Hit";
+        public const int Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit_sortIndex = 37300;
+        [SortOrder(Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit {
+            get => GetData<byte>(1679);
+            set {
+                if (GetData<byte>(1679) == value) return;
+                SetData(1679, value, nameof(Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit_displayName = "Frostcraft: Bow: (Thousand Dragons) Consumption per Hit";
+        public const int Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit_sortIndex = 37350;
+        [SortOrder(Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit {
+            get => GetData<byte>(1680);
+            set {
+                if (GetData<byte>(1680) == value) return;
+                SetData(1680, value, nameof(Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit));
+            }
+        }
+
+        public const string __37400_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __37400_sortIndex = 37400;
+        [SortOrder(__37400_sortIndex)]
+        [DisplayName(__37400_displayName)]
+        public virtual byte __37400 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Normal Ammo) Consumption per Hit";
+        public const int Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit_sortIndex = 37450;
+        [SortOrder(Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit {
+            get => GetData<byte>(1681);
+            set {
+                if (GetData<byte>(1681) == value) return;
+                SetData(1681, value, nameof(Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Pierce Ammo) Consumption per Hit";
+        public const int Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit_sortIndex = 37500;
+        [SortOrder(Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit {
+            get => GetData<byte>(1682);
+            set {
+                if (GetData<byte>(1682) == value) return;
+                SetData(1682, value, nameof(Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Spread Ammo) Consumption per Hit";
+        public const int Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit_sortIndex = 37550;
+        [SortOrder(Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit {
+            get => GetData<byte>(1683);
+            set {
+                if (GetData<byte>(1683) == value) return;
+                SetData(1683, value, nameof(Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Sticky Ammo) Consumption per Hit";
+        public const int Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit_sortIndex = 37600;
+        [SortOrder(Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit {
+            get => GetData<byte>(1684);
+            set {
+                if (GetData<byte>(1684) == value) return;
+                SetData(1684, value, nameof(Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Cluster Ammo) Consumption per Hit";
+        public const int Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit_sortIndex = 37650;
+        [SortOrder(Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit {
+            get => GetData<byte>(1685);
+            set {
+                if (GetData<byte>(1685) == value) return;
+                SetData(1685, value, nameof(Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Elemental Ammo) Consumption per Hit";
+        public const int Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit_sortIndex = 37700;
+        [SortOrder(Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit {
+            get => GetData<byte>(1686);
+            set {
+                if (GetData<byte>(1686) == value) return;
+                SetData(1686, value, nameof(Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Status Ammo) Consumption per Hit";
+        public const int Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit_sortIndex = 37750;
+        [SortOrder(Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit {
+            get => GetData<byte>(1687);
+            set {
+                if (GetData<byte>(1687) == value) return;
+                SetData(1687, value, nameof(Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Wyvern Ammo) Consumption per Hit";
+        public const int Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit_sortIndex = 37800;
+        [SortOrder(Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit {
+            get => GetData<byte>(1688);
+            set {
+                if (GetData<byte>(1688) == value) return;
+                SetData(1688, value, nameof(Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Slicing Ammo) Consumption per Hit";
+        public const int Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit_sortIndex = 37850;
+        [SortOrder(Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit {
+            get => GetData<byte>(1689);
+            set {
+                if (GetData<byte>(1689) == value) return;
+                SetData(1689, value, nameof(Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit));
+            }
+        }
+
+        public const string __37900_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __37900_sortIndex = 37900;
+        [SortOrder(__37900_sortIndex)]
+        [DisplayName(__37900_displayName)]
+        public virtual byte __37900 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_HBG_Wyvernheart_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Wyvernheart) Consumption per Hit";
+        public const int Frostcraft_HBG_Wyvernheart_Consumption_per_Hit_sortIndex = 37950;
+        [SortOrder(Frostcraft_HBG_Wyvernheart_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_HBG_Wyvernheart_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_HBG_Wyvernheart_Consumption_per_Hit {
+            get => GetData<byte>(1690);
+            set {
+                if (GetData<byte>(1690) == value) return;
+                SetData(1690, value, nameof(Frostcraft_HBG_Wyvernheart_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Wyvernheart_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Wyvernsnipe) Consumption per Hit";
+        public const int Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit_sortIndex = 38000;
+        [SortOrder(Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit {
+            get => GetData<byte>(1691);
+            set {
+                if (GetData<byte>(1691) == value) return;
+                SetData(1691, value, nameof(Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Wyvernsnipe Type 2) Consumption per Hit";
+        public const int Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit_sortIndex = 38050;
+        [SortOrder(Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit {
+            get => GetData<byte>(1692);
+            set {
+                if (GetData<byte>(1692) == value) return;
+                SetData(1692, value, nameof(Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Claw Wyvernheart Gatling) Consumption per Hit";
+        public const int Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit_sortIndex = 38100;
+        [SortOrder(Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit {
+            get => GetData<byte>(1694);
+            set {
+                if (GetData<byte>(1694) == value) return;
+                SetData(1694, value, nameof(Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Claw Wyvernheart Finish) Consumption per Hit";
+        public const int Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit_sortIndex = 38150;
+        [SortOrder(Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit {
+            get => GetData<byte>(1695);
+            set {
+                if (GetData<byte>(1695) == value) return;
+                SetData(1695, value, nameof(Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Wyvernsnipe Claw) Consumption per Hit";
+        public const int Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit_sortIndex = 38200;
+        [SortOrder(Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit {
+            get => GetData<byte>(1696);
+            set {
+                if (GetData<byte>(1696) == value) return;
+                SetData(1696, value, nameof(Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit));
+            }
+        }
+
+        public const string __38250_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __38250_sortIndex = 38250;
+        [SortOrder(__38250_sortIndex)]
+        [DisplayName(__38250_displayName)]
+        public virtual byte __38250 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Frostcraft_LBG_Wyvernblast_Consumption_per_Hit_displayName = "Frostcraft: LBG: (Wyvernblast) Consumption per Hit";
+        public const int Frostcraft_LBG_Wyvernblast_Consumption_per_Hit_sortIndex = 38300;
+        [SortOrder(Frostcraft_LBG_Wyvernblast_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_LBG_Wyvernblast_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_LBG_Wyvernblast_Consumption_per_Hit {
+            get => GetData<byte>(1693);
+            set {
+                if (GetData<byte>(1693) == value) return;
+                SetData(1693, value, nameof(Frostcraft_LBG_Wyvernblast_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_LBG_Wyvernblast_Consumption_per_Hit));
+            }
+        }
+
+        public const string Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit_displayName = "Frostcraft: LBG: (Wyvernblast Claw) Consumption per Hit";
+        public const int Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit_sortIndex = 38350;
+        [SortOrder(Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit_sortIndex)]
+        [DisplayName(Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit_displayName)]
+        public virtual byte Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit {
+            get => GetData<byte>(1697);
+            set {
+                if (GetData<byte>(1697) == value) return;
+                SetData(1697, value, nameof(Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit));
+            }
+        }
+
+        public const string __38400_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __38400_sortIndex = 38400;
+        [SortOrder(__38400_sortIndex)]
+        [DisplayName(__38400_displayName)]
+        public virtual byte __38400 {
+            get => GetData<byte>(3);
+        }
+
         public const string Unk36_displayName = "Unk36";
-        public const int Unk36_sortIndex = 31500;
+        public const int Unk36_sortIndex = 38450;
         [SortOrder(Unk36_sortIndex)]
         [DisplayName(Unk36_displayName)]
         public virtual float Unk36 {
-            get => GetData<float>(1293);
+            get => GetData<float>(1698);
             set {
-                if (GetData<float>(1293) == value) return;
-                SetData(1293, value, nameof(Unk36));
+                if (GetData<float>(1698) == value) return;
+                SetData(1698, value, nameof(Unk36));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk36));
             }
         }
 
         public const string Unk37_displayName = "Unk37";
-        public const int Unk37_sortIndex = 31550;
+        public const int Unk37_sortIndex = 38500;
         [SortOrder(Unk37_sortIndex)]
         [DisplayName(Unk37_displayName)]
         public virtual float Unk37 {
-            get => GetData<float>(1297);
+            get => GetData<float>(1702);
             set {
-                if (GetData<float>(1297) == value) return;
-                SetData(1297, value, nameof(Unk37));
+                if (GetData<float>(1702) == value) return;
+                SetData(1702, value, nameof(Unk37));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk37));
             }
         }
 
         public const string Unk38_displayName = "Unk38";
-        public const int Unk38_sortIndex = 31600;
+        public const int Unk38_sortIndex = 38550;
         [SortOrder(Unk38_sortIndex)]
         [DisplayName(Unk38_displayName)]
         public virtual float Unk38 {
-            get => GetData<float>(1301);
+            get => GetData<float>(1706);
             set {
-                if (GetData<float>(1301) == value) return;
-                SetData(1301, value, nameof(Unk38));
+                if (GetData<float>(1706) == value) return;
+                SetData(1706, value, nameof(Unk38));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk38));
             }
         }
 
         public const string Unk39_displayName = "Unk39";
-        public const int Unk39_sortIndex = 31650;
+        public const int Unk39_sortIndex = 38600;
         [SortOrder(Unk39_sortIndex)]
         [DisplayName(Unk39_displayName)]
         public virtual float Unk39 {
-            get => GetData<float>(1305);
+            get => GetData<float>(1710);
             set {
-                if (GetData<float>(1305) == value) return;
-                SetData(1305, value, nameof(Unk39));
+                if (GetData<float>(1710) == value) return;
+                SetData(1710, value, nameof(Unk39));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk39));
             }
         }
 
         public const string Unk40_displayName = "Unk40";
-        public const int Unk40_sortIndex = 31700;
+        public const int Unk40_sortIndex = 38650;
         [SortOrder(Unk40_sortIndex)]
         [DisplayName(Unk40_displayName)]
         public virtual float Unk40 {
-            get => GetData<float>(1309);
+            get => GetData<float>(1714);
             set {
-                if (GetData<float>(1309) == value) return;
-                SetData(1309, value, nameof(Unk40));
+                if (GetData<float>(1714) == value) return;
+                SetData(1714, value, nameof(Unk40));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk40));
             }
         }
 
         public const string Unk41_displayName = "Unk41";
-        public const int Unk41_sortIndex = 31750;
+        public const int Unk41_sortIndex = 38700;
         [SortOrder(Unk41_sortIndex)]
         [DisplayName(Unk41_displayName)]
         public virtual float Unk41 {
-            get => GetData<float>(1313);
+            get => GetData<float>(1718);
             set {
-                if (GetData<float>(1313) == value) return;
-                SetData(1313, value, nameof(Unk41));
+                if (GetData<float>(1718) == value) return;
+                SetData(1718, value, nameof(Unk41));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk41));
             }
         }
 
         public const string Unk42_displayName = "Unk42";
-        public const int Unk42_sortIndex = 31800;
+        public const int Unk42_sortIndex = 38750;
         [SortOrder(Unk42_sortIndex)]
         [DisplayName(Unk42_displayName)]
         public virtual float Unk42 {
-            get => GetData<float>(1317);
+            get => GetData<float>(1722);
             set {
-                if (GetData<float>(1317) == value) return;
-                SetData(1317, value, nameof(Unk42));
+                if (GetData<float>(1722) == value) return;
+                SetData(1722, value, nameof(Unk42));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk42));
             }
         }
 
         public const string Unk43_displayName = "Unk43";
-        public const int Unk43_sortIndex = 31850;
+        public const int Unk43_sortIndex = 38800;
         [SortOrder(Unk43_sortIndex)]
         [DisplayName(Unk43_displayName)]
         public virtual float Unk43 {
-            get => GetData<float>(1329);
+            get => GetData<float>(1726);
             set {
-                if (GetData<float>(1329) == value) return;
-                SetData(1329, value, nameof(Unk43));
+                if (GetData<float>(1726) == value) return;
+                SetData(1726, value, nameof(Unk43));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk43));
             }
         }
 
         public const string Unk44_displayName = "Unk44";
-        public const int Unk44_sortIndex = 31900;
+        public const int Unk44_sortIndex = 38850;
         [SortOrder(Unk44_sortIndex)]
         [DisplayName(Unk44_displayName)]
         public virtual float Unk44 {
-            get => GetData<float>(1341);
+            get => GetData<float>(1730);
             set {
-                if (GetData<float>(1341) == value) return;
-                SetData(1341, value, nameof(Unk44));
+                if (GetData<float>(1730) == value) return;
+                SetData(1730, value, nameof(Unk44));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk44));
             }
         }
 
         public const string Unk45_displayName = "Unk45";
-        public const int Unk45_sortIndex = 31950;
+        public const int Unk45_sortIndex = 38900;
         [SortOrder(Unk45_sortIndex)]
         [DisplayName(Unk45_displayName)]
         public virtual float Unk45 {
-            get => GetData<float>(1345);
+            get => GetData<float>(1734);
             set {
-                if (GetData<float>(1345) == value) return;
-                SetData(1345, value, nameof(Unk45));
+                if (GetData<float>(1734) == value) return;
+                SetData(1734, value, nameof(Unk45));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk45));
             }
         }
 
         public const string Unk46_displayName = "Unk46";
-        public const int Unk46_sortIndex = 32000;
+        public const int Unk46_sortIndex = 38950;
         [SortOrder(Unk46_sortIndex)]
         [DisplayName(Unk46_displayName)]
         public virtual float Unk46 {
-            get => GetData<float>(1349);
+            get => GetData<float>(1738);
             set {
-                if (GetData<float>(1349) == value) return;
-                SetData(1349, value, nameof(Unk46));
+                if (GetData<float>(1738) == value) return;
+                SetData(1738, value, nameof(Unk46));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk46));
             }
         }
 
         public const string Unk47_displayName = "Unk47";
-        public const int Unk47_sortIndex = 32050;
+        public const int Unk47_sortIndex = 39000;
         [SortOrder(Unk47_sortIndex)]
         [DisplayName(Unk47_displayName)]
         public virtual float Unk47 {
-            get => GetData<float>(1353);
+            get => GetData<float>(1742);
             set {
-                if (GetData<float>(1353) == value) return;
-                SetData(1353, value, nameof(Unk47));
+                if (GetData<float>(1742) == value) return;
+                SetData(1742, value, nameof(Unk47));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk47));
             }
         }
 
         public const string Unk48_displayName = "Unk48";
-        public const int Unk48_sortIndex = 32100;
+        public const int Unk48_sortIndex = 39050;
         [SortOrder(Unk48_sortIndex)]
         [DisplayName(Unk48_displayName)]
         public virtual float Unk48 {
-            get => GetData<float>(1357);
+            get => GetData<float>(1746);
             set {
-                if (GetData<float>(1357) == value) return;
-                SetData(1357, value, nameof(Unk48));
+                if (GetData<float>(1746) == value) return;
+                SetData(1746, value, nameof(Unk48));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk48));
             }
         }
 
         public const string Unk49_displayName = "Unk49";
-        public const int Unk49_sortIndex = 32150;
+        public const int Unk49_sortIndex = 39100;
         [SortOrder(Unk49_sortIndex)]
         [DisplayName(Unk49_displayName)]
         public virtual float Unk49 {
-            get => GetData<float>(1361);
+            get => GetData<float>(1750);
             set {
-                if (GetData<float>(1361) == value) return;
-                SetData(1361, value, nameof(Unk49));
+                if (GetData<float>(1750) == value) return;
+                SetData(1750, value, nameof(Unk49));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk49));
             }
         }
 
         public const string Unk50_displayName = "Unk50";
-        public const int Unk50_sortIndex = 32200;
+        public const int Unk50_sortIndex = 39150;
         [SortOrder(Unk50_sortIndex)]
         [DisplayName(Unk50_displayName)]
         public virtual float Unk50 {
-            get => GetData<float>(1365);
+            get => GetData<float>(1754);
             set {
-                if (GetData<float>(1365) == value) return;
-                SetData(1365, value, nameof(Unk50));
+                if (GetData<float>(1754) == value) return;
+                SetData(1754, value, nameof(Unk50));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk50));
             }
         }
 
         public const string Unk51_displayName = "Unk51";
-        public const int Unk51_sortIndex = 32250;
+        public const int Unk51_sortIndex = 39200;
         [SortOrder(Unk51_sortIndex)]
         [DisplayName(Unk51_displayName)]
         public virtual float Unk51 {
-            get => GetData<float>(1369);
+            get => GetData<float>(1758);
             set {
-                if (GetData<float>(1369) == value) return;
-                SetData(1369, value, nameof(Unk51));
+                if (GetData<float>(1758) == value) return;
+                SetData(1758, value, nameof(Unk51));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk51));
             }
         }
 
         public const string Unk52_displayName = "Unk52";
-        public const int Unk52_sortIndex = 32300;
+        public const int Unk52_sortIndex = 39250;
         [SortOrder(Unk52_sortIndex)]
         [DisplayName(Unk52_displayName)]
         public virtual float Unk52 {
-            get => GetData<float>(1373);
+            get => GetData<float>(1762);
             set {
-                if (GetData<float>(1373) == value) return;
-                SetData(1373, value, nameof(Unk52));
+                if (GetData<float>(1762) == value) return;
+                SetData(1762, value, nameof(Unk52));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk52));
             }
         }
 
         public const string Unk53_displayName = "Unk53";
-        public const int Unk53_sortIndex = 32350;
+        public const int Unk53_sortIndex = 39300;
         [SortOrder(Unk53_sortIndex)]
         [DisplayName(Unk53_displayName)]
         public virtual float Unk53 {
-            get => GetData<float>(1377);
+            get => GetData<float>(1766);
             set {
-                if (GetData<float>(1377) == value) return;
-                SetData(1377, value, nameof(Unk53));
+                if (GetData<float>(1766) == value) return;
+                SetData(1766, value, nameof(Unk53));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk53));
             }
         }
 
         public const string Unk54_displayName = "Unk54";
-        public const int Unk54_sortIndex = 32400;
+        public const int Unk54_sortIndex = 39350;
         [SortOrder(Unk54_sortIndex)]
         [DisplayName(Unk54_displayName)]
         public virtual float Unk54 {
-            get => GetData<float>(1381);
+            get => GetData<float>(1770);
             set {
-                if (GetData<float>(1381) == value) return;
-                SetData(1381, value, nameof(Unk54));
+                if (GetData<float>(1770) == value) return;
+                SetData(1770, value, nameof(Unk54));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk54));
             }
         }
 
         public const string Unk55_displayName = "Unk55";
-        public const int Unk55_sortIndex = 32450;
+        public const int Unk55_sortIndex = 39400;
         [SortOrder(Unk55_sortIndex)]
         [DisplayName(Unk55_displayName)]
         public virtual float Unk55 {
-            get => GetData<float>(1385);
+            get => GetData<float>(1774);
             set {
-                if (GetData<float>(1385) == value) return;
-                SetData(1385, value, nameof(Unk55));
+                if (GetData<float>(1774) == value) return;
+                SetData(1774, value, nameof(Unk55));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk55));
             }
         }
 
         public const string Unk56_displayName = "Unk56";
-        public const int Unk56_sortIndex = 32500;
+        public const int Unk56_sortIndex = 39450;
         [SortOrder(Unk56_sortIndex)]
         [DisplayName(Unk56_displayName)]
         public virtual float Unk56 {
-            get => GetData<float>(1393);
+            get => GetData<float>(1778);
             set {
-                if (GetData<float>(1393) == value) return;
-                SetData(1393, value, nameof(Unk56));
+                if (GetData<float>(1778) == value) return;
+                SetData(1778, value, nameof(Unk56));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk56));
             }
         }
 
         public const string Unk57_displayName = "Unk57";
-        public const int Unk57_sortIndex = 32550;
+        public const int Unk57_sortIndex = 39500;
         [SortOrder(Unk57_sortIndex)]
         [DisplayName(Unk57_displayName)]
         public virtual float Unk57 {
-            get => GetData<float>(1397);
+            get => GetData<float>(1782);
             set {
-                if (GetData<float>(1397) == value) return;
-                SetData(1397, value, nameof(Unk57));
+                if (GetData<float>(1782) == value) return;
+                SetData(1782, value, nameof(Unk57));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk57));
             }
         }
 
         public const string Unk58_displayName = "Unk58";
-        public const int Unk58_sortIndex = 32600;
+        public const int Unk58_sortIndex = 39550;
         [SortOrder(Unk58_sortIndex)]
         [DisplayName(Unk58_displayName)]
         public virtual float Unk58 {
-            get => GetData<float>(1401);
+            get => GetData<float>(1786);
             set {
-                if (GetData<float>(1401) == value) return;
-                SetData(1401, value, nameof(Unk58));
+                if (GetData<float>(1786) == value) return;
+                SetData(1786, value, nameof(Unk58));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk58));
             }
         }
 
         public const string Unk59_displayName = "Unk59";
-        public const int Unk59_sortIndex = 32650;
+        public const int Unk59_sortIndex = 39600;
         [SortOrder(Unk59_sortIndex)]
         [DisplayName(Unk59_displayName)]
         public virtual float Unk59 {
-            get => GetData<float>(1405);
+            get => GetData<float>(1790);
             set {
-                if (GetData<float>(1405) == value) return;
-                SetData(1405, value, nameof(Unk59));
+                if (GetData<float>(1790) == value) return;
+                SetData(1790, value, nameof(Unk59));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk59));
             }
         }
 
         public const string Unk60_displayName = "Unk60";
-        public const int Unk60_sortIndex = 32700;
+        public const int Unk60_sortIndex = 39650;
         [SortOrder(Unk60_sortIndex)]
         [DisplayName(Unk60_displayName)]
         public virtual float Unk60 {
-            get => GetData<float>(1409);
+            get => GetData<float>(1794);
             set {
-                if (GetData<float>(1409) == value) return;
-                SetData(1409, value, nameof(Unk60));
+                if (GetData<float>(1794) == value) return;
+                SetData(1794, value, nameof(Unk60));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk60));
             }
         }
 
         public const string Unk61_displayName = "Unk61";
-        public const int Unk61_sortIndex = 32750;
+        public const int Unk61_sortIndex = 39700;
         [SortOrder(Unk61_sortIndex)]
         [DisplayName(Unk61_displayName)]
         public virtual float Unk61 {
-            get => GetData<float>(1413);
+            get => GetData<float>(1798);
             set {
-                if (GetData<float>(1413) == value) return;
-                SetData(1413, value, nameof(Unk61));
+                if (GetData<float>(1798) == value) return;
+                SetData(1798, value, nameof(Unk61));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk61));
             }
         }
 
         public const string Unk62_displayName = "Unk62";
-        public const int Unk62_sortIndex = 32800;
+        public const int Unk62_sortIndex = 39750;
         [SortOrder(Unk62_sortIndex)]
         [DisplayName(Unk62_displayName)]
         public virtual float Unk62 {
-            get => GetData<float>(1417);
+            get => GetData<float>(1802);
             set {
-                if (GetData<float>(1417) == value) return;
-                SetData(1417, value, nameof(Unk62));
+                if (GetData<float>(1802) == value) return;
+                SetData(1802, value, nameof(Unk62));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk62));
             }
         }
 
         public const string Unk63_displayName = "Unk63";
-        public const int Unk63_sortIndex = 32850;
+        public const int Unk63_sortIndex = 39800;
         [SortOrder(Unk63_sortIndex)]
         [DisplayName(Unk63_displayName)]
         public virtual float Unk63 {
-            get => GetData<float>(1421);
+            get => GetData<float>(1806);
             set {
-                if (GetData<float>(1421) == value) return;
-                SetData(1421, value, nameof(Unk63));
+                if (GetData<float>(1806) == value) return;
+                SetData(1806, value, nameof(Unk63));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk63));
             }
         }
 
         public const string Unk64_displayName = "Unk64";
-        public const int Unk64_sortIndex = 32900;
+        public const int Unk64_sortIndex = 39850;
         [SortOrder(Unk64_sortIndex)]
         [DisplayName(Unk64_displayName)]
         public virtual float Unk64 {
-            get => GetData<float>(1425);
+            get => GetData<float>(1810);
             set {
-                if (GetData<float>(1425) == value) return;
-                SetData(1425, value, nameof(Unk64));
+                if (GetData<float>(1810) == value) return;
+                SetData(1810, value, nameof(Unk64));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk64));
             }
         }
 
         public const string Unk65_displayName = "Unk65";
-        public const int Unk65_sortIndex = 32950;
+        public const int Unk65_sortIndex = 39900;
         [SortOrder(Unk65_sortIndex)]
         [DisplayName(Unk65_displayName)]
         public virtual float Unk65 {
-            get => GetData<float>(1429);
+            get => GetData<float>(1814);
             set {
-                if (GetData<float>(1429) == value) return;
-                SetData(1429, value, nameof(Unk65));
+                if (GetData<float>(1814) == value) return;
+                SetData(1814, value, nameof(Unk65));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk65));
             }
         }
 
         public const string Unk66_displayName = "Unk66";
-        public const int Unk66_sortIndex = 33000;
+        public const int Unk66_sortIndex = 39950;
         [SortOrder(Unk66_sortIndex)]
         [DisplayName(Unk66_displayName)]
         public virtual float Unk66 {
-            get => GetData<float>(1433);
+            get => GetData<float>(1818);
             set {
-                if (GetData<float>(1433) == value) return;
-                SetData(1433, value, nameof(Unk66));
+                if (GetData<float>(1818) == value) return;
+                SetData(1818, value, nameof(Unk66));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk66));
             }
         }
 
         public const string Unk67_displayName = "Unk67";
-        public const int Unk67_sortIndex = 33050;
+        public const int Unk67_sortIndex = 40000;
         [SortOrder(Unk67_sortIndex)]
         [DisplayName(Unk67_displayName)]
         public virtual float Unk67 {
-            get => GetData<float>(1437);
+            get => GetData<float>(1822);
             set {
-                if (GetData<float>(1437) == value) return;
-                SetData(1437, value, nameof(Unk67));
+                if (GetData<float>(1822) == value) return;
+                SetData(1822, value, nameof(Unk67));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk67));
             }
         }
 
         public const string Unk68_displayName = "Unk68";
-        public const int Unk68_sortIndex = 33100;
+        public const int Unk68_sortIndex = 40050;
         [SortOrder(Unk68_sortIndex)]
         [DisplayName(Unk68_displayName)]
         public virtual float Unk68 {
-            get => GetData<float>(1441);
+            get => GetData<float>(1826);
             set {
-                if (GetData<float>(1441) == value) return;
-                SetData(1441, value, nameof(Unk68));
+                if (GetData<float>(1826) == value) return;
+                SetData(1826, value, nameof(Unk68));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk68));
             }
         }
 
         public const string Unk69_displayName = "Unk69";
-        public const int Unk69_sortIndex = 33150;
+        public const int Unk69_sortIndex = 40100;
         [SortOrder(Unk69_sortIndex)]
         [DisplayName(Unk69_displayName)]
         public virtual float Unk69 {
-            get => GetData<float>(1445);
+            get => GetData<float>(1830);
             set {
-                if (GetData<float>(1445) == value) return;
-                SetData(1445, value, nameof(Unk69));
+                if (GetData<float>(1830) == value) return;
+                SetData(1830, value, nameof(Unk69));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk69));
             }
         }
 
         public const string Unk70_displayName = "Unk70";
-        public const int Unk70_sortIndex = 33200;
+        public const int Unk70_sortIndex = 40150;
         [SortOrder(Unk70_sortIndex)]
         [DisplayName(Unk70_displayName)]
         public virtual float Unk70 {
-            get => GetData<float>(1449);
+            get => GetData<float>(1834);
             set {
-                if (GetData<float>(1449) == value) return;
-                SetData(1449, value, nameof(Unk70));
+                if (GetData<float>(1834) == value) return;
+                SetData(1834, value, nameof(Unk70));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk70));
             }
         }
 
         public const string Unk71_displayName = "Unk71";
-        public const int Unk71_sortIndex = 33250;
+        public const int Unk71_sortIndex = 40200;
         [SortOrder(Unk71_sortIndex)]
         [DisplayName(Unk71_displayName)]
         public virtual float Unk71 {
-            get => GetData<float>(1453);
+            get => GetData<float>(1838);
             set {
-                if (GetData<float>(1453) == value) return;
-                SetData(1453, value, nameof(Unk71));
+                if (GetData<float>(1838) == value) return;
+                SetData(1838, value, nameof(Unk71));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk71));
             }
         }
 
         public const string Unk72_displayName = "Unk72";
-        public const int Unk72_sortIndex = 33300;
+        public const int Unk72_sortIndex = 40250;
         [SortOrder(Unk72_sortIndex)]
         [DisplayName(Unk72_displayName)]
         public virtual float Unk72 {
-            get => GetData<float>(1457);
+            get => GetData<float>(1842);
             set {
-                if (GetData<float>(1457) == value) return;
-                SetData(1457, value, nameof(Unk72));
+                if (GetData<float>(1842) == value) return;
+                SetData(1842, value, nameof(Unk72));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk72));
             }
         }
 
         public const string Unk73_displayName = "Unk73";
-        public const int Unk73_sortIndex = 33350;
+        public const int Unk73_sortIndex = 40300;
         [SortOrder(Unk73_sortIndex)]
         [DisplayName(Unk73_displayName)]
         public virtual float Unk73 {
-            get => GetData<float>(1461);
+            get => GetData<float>(1846);
             set {
-                if (GetData<float>(1461) == value) return;
-                SetData(1461, value, nameof(Unk73));
+                if (GetData<float>(1846) == value) return;
+                SetData(1846, value, nameof(Unk73));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk73));
             }
         }
 
         public const string Unk74_displayName = "Unk74";
-        public const int Unk74_sortIndex = 33400;
+        public const int Unk74_sortIndex = 40350;
         [SortOrder(Unk74_sortIndex)]
         [DisplayName(Unk74_displayName)]
         public virtual float Unk74 {
-            get => GetData<float>(1465);
+            get => GetData<float>(1850);
             set {
-                if (GetData<float>(1465) == value) return;
-                SetData(1465, value, nameof(Unk74));
+                if (GetData<float>(1850) == value) return;
+                SetData(1850, value, nameof(Unk74));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk74));
             }
         }
 
         public const string Unk75_displayName = "Unk75";
-        public const int Unk75_sortIndex = 33450;
+        public const int Unk75_sortIndex = 40400;
         [SortOrder(Unk75_sortIndex)]
         [DisplayName(Unk75_displayName)]
         public virtual float Unk75 {
-            get => GetData<float>(1469);
+            get => GetData<float>(1854);
             set {
-                if (GetData<float>(1469) == value) return;
-                SetData(1469, value, nameof(Unk75));
+                if (GetData<float>(1854) == value) return;
+                SetData(1854, value, nameof(Unk75));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk75));
             }
         }
 
         public const string Unk76_displayName = "Unk76";
-        public const int Unk76_sortIndex = 33500;
+        public const int Unk76_sortIndex = 40450;
         [SortOrder(Unk76_sortIndex)]
         [DisplayName(Unk76_displayName)]
         public virtual float Unk76 {
-            get => GetData<float>(1473);
+            get => GetData<float>(1858);
             set {
-                if (GetData<float>(1473) == value) return;
-                SetData(1473, value, nameof(Unk76));
+                if (GetData<float>(1858) == value) return;
+                SetData(1858, value, nameof(Unk76));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk76));
             }
         }
 
         public const string Unk77_displayName = "Unk77";
-        public const int Unk77_sortIndex = 33550;
+        public const int Unk77_sortIndex = 40500;
         [SortOrder(Unk77_sortIndex)]
         [DisplayName(Unk77_displayName)]
         public virtual float Unk77 {
-            get => GetData<float>(1477);
+            get => GetData<float>(1862);
             set {
-                if (GetData<float>(1477) == value) return;
-                SetData(1477, value, nameof(Unk77));
+                if (GetData<float>(1862) == value) return;
+                SetData(1862, value, nameof(Unk77));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk77));
             }
         }
 
         public const string Unk78_displayName = "Unk78";
-        public const int Unk78_sortIndex = 33600;
+        public const int Unk78_sortIndex = 40550;
         [SortOrder(Unk78_sortIndex)]
         [DisplayName(Unk78_displayName)]
         public virtual float Unk78 {
-            get => GetData<float>(1481);
+            get => GetData<float>(1866);
             set {
-                if (GetData<float>(1481) == value) return;
-                SetData(1481, value, nameof(Unk78));
+                if (GetData<float>(1866) == value) return;
+                SetData(1866, value, nameof(Unk78));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk78));
             }
         }
 
         public const string Unk79_displayName = "Unk79";
-        public const int Unk79_sortIndex = 33650;
+        public const int Unk79_sortIndex = 40600;
         [SortOrder(Unk79_sortIndex)]
         [DisplayName(Unk79_displayName)]
         public virtual float Unk79 {
-            get => GetData<float>(1485);
+            get => GetData<float>(1870);
             set {
-                if (GetData<float>(1485) == value) return;
-                SetData(1485, value, nameof(Unk79));
+                if (GetData<float>(1870) == value) return;
+                SetData(1870, value, nameof(Unk79));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk79));
             }
         }
 
         public const string Unk80_displayName = "Unk80";
-        public const int Unk80_sortIndex = 33700;
+        public const int Unk80_sortIndex = 40650;
         [SortOrder(Unk80_sortIndex)]
         [DisplayName(Unk80_displayName)]
         public virtual float Unk80 {
-            get => GetData<float>(1489);
+            get => GetData<float>(1874);
             set {
-                if (GetData<float>(1489) == value) return;
-                SetData(1489, value, nameof(Unk80));
+                if (GetData<float>(1874) == value) return;
+                SetData(1874, value, nameof(Unk80));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk80));
             }
         }
 
         public const string Unk81_displayName = "Unk81";
-        public const int Unk81_sortIndex = 33750;
+        public const int Unk81_sortIndex = 40700;
         [SortOrder(Unk81_sortIndex)]
         [DisplayName(Unk81_displayName)]
         public virtual float Unk81 {
-            get => GetData<float>(1493);
+            get => GetData<float>(1878);
             set {
-                if (GetData<float>(1493) == value) return;
-                SetData(1493, value, nameof(Unk81));
+                if (GetData<float>(1878) == value) return;
+                SetData(1878, value, nameof(Unk81));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk81));
             }
         }
 
         public const string Unk82_displayName = "Unk82";
-        public const int Unk82_sortIndex = 33800;
+        public const int Unk82_sortIndex = 40750;
         [SortOrder(Unk82_sortIndex)]
         [DisplayName(Unk82_displayName)]
         public virtual float Unk82 {
-            get => GetData<float>(1497);
+            get => GetData<float>(1882);
             set {
-                if (GetData<float>(1497) == value) return;
-                SetData(1497, value, nameof(Unk82));
+                if (GetData<float>(1882) == value) return;
+                SetData(1882, value, nameof(Unk82));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk82));
             }
         }
 
         public const string Unk83_displayName = "Unk83";
-        public const int Unk83_sortIndex = 33850;
+        public const int Unk83_sortIndex = 40800;
         [SortOrder(Unk83_sortIndex)]
         [DisplayName(Unk83_displayName)]
         public virtual float Unk83 {
-            get => GetData<float>(1501);
+            get => GetData<float>(1886);
             set {
-                if (GetData<float>(1501) == value) return;
-                SetData(1501, value, nameof(Unk83));
+                if (GetData<float>(1886) == value) return;
+                SetData(1886, value, nameof(Unk83));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk83));
             }
         }
 
-        public const string Unk84_displayName = "Unk84";
-        public const int Unk84_sortIndex = 33900;
-        [SortOrder(Unk84_sortIndex)]
-        [DisplayName(Unk84_displayName)]
-        public virtual float Unk84 {
-            get => GetData<float>(1505);
-            set {
-                if (GetData<float>(1505) == value) return;
-                SetData(1505, value, nameof(Unk84));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk84));
-            }
-        }
-
-        public const string Unk85_displayName = "Unk85";
-        public const int Unk85_sortIndex = 33950;
-        [SortOrder(Unk85_sortIndex)]
-        [DisplayName(Unk85_displayName)]
-        public virtual float Unk85 {
-            get => GetData<float>(1509);
-            set {
-                if (GetData<float>(1509) == value) return;
-                SetData(1509, value, nameof(Unk85));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk85));
-            }
-        }
-
-        public const string Unk86_displayName = "Unk86";
-        public const int Unk86_sortIndex = 34000;
-        [SortOrder(Unk86_sortIndex)]
-        [DisplayName(Unk86_displayName)]
-        public virtual float Unk86 {
-            get => GetData<float>(1513);
-            set {
-                if (GetData<float>(1513) == value) return;
-                SetData(1513, value, nameof(Unk86));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk86));
-            }
-        }
-
-        public const string Unk87_displayName = "Unk87";
-        public const int Unk87_sortIndex = 34050;
-        [SortOrder(Unk87_sortIndex)]
-        [DisplayName(Unk87_displayName)]
-        public virtual float Unk87 {
-            get => GetData<float>(1517);
-            set {
-                if (GetData<float>(1517) == value) return;
-                SetData(1517, value, nameof(Unk87));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk87));
-            }
-        }
-
-        public const string Unk88_displayName = "Unk88";
-        public const int Unk88_sortIndex = 34100;
-        [SortOrder(Unk88_sortIndex)]
-        [DisplayName(Unk88_displayName)]
-        public virtual float Unk88 {
-            get => GetData<float>(1521);
-            set {
-                if (GetData<float>(1521) == value) return;
-                SetData(1521, value, nameof(Unk88));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk88));
-            }
-        }
-
-        public const string Unk89_displayName = "Unk89";
-        public const int Unk89_sortIndex = 34150;
-        [SortOrder(Unk89_sortIndex)]
-        [DisplayName(Unk89_displayName)]
-        public virtual float Unk89 {
-            get => GetData<float>(1525);
-            set {
-                if (GetData<float>(1525) == value) return;
-                SetData(1525, value, nameof(Unk89));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk89));
-            }
-        }
-
-        public const string Unk90_displayName = "Unk90";
-        public const int Unk90_sortIndex = 34200;
-        [SortOrder(Unk90_sortIndex)]
-        [DisplayName(Unk90_displayName)]
-        public virtual float Unk90 {
-            get => GetData<float>(1529);
-            set {
-                if (GetData<float>(1529) == value) return;
-                SetData(1529, value, nameof(Unk90));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk90));
-            }
-        }
-
-        public const string Unk91_displayName = "Unk91";
-        public const int Unk91_sortIndex = 34250;
-        [SortOrder(Unk91_sortIndex)]
-        [DisplayName(Unk91_displayName)]
-        public virtual float Unk91 {
-            get => GetData<float>(1533);
-            set {
-                if (GetData<float>(1533) == value) return;
-                SetData(1533, value, nameof(Unk91));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk91));
-            }
-        }
-
-        public const string Unk92_displayName = "Unk92";
-        public const int Unk92_sortIndex = 34300;
-        [SortOrder(Unk92_sortIndex)]
-        [DisplayName(Unk92_displayName)]
-        public virtual float Unk92 {
-            get => GetData<float>(1537);
-            set {
-                if (GetData<float>(1537) == value) return;
-                SetData(1537, value, nameof(Unk92));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk92));
-            }
-        }
-
-        public const string Unk93_displayName = "Unk93";
-        public const int Unk93_sortIndex = 34350;
-        [SortOrder(Unk93_sortIndex)]
-        [DisplayName(Unk93_displayName)]
-        public virtual float Unk93 {
-            get => GetData<float>(1541);
-            set {
-                if (GetData<float>(1541) == value) return;
-                SetData(1541, value, nameof(Unk93));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk93));
-            }
-        }
-
-        public const string Unk94_displayName = "Unk94";
-        public const int Unk94_sortIndex = 34400;
-        [SortOrder(Unk94_sortIndex)]
-        [DisplayName(Unk94_displayName)]
-        public virtual float Unk94 {
-            get => GetData<float>(1545);
-            set {
-                if (GetData<float>(1545) == value) return;
-                SetData(1545, value, nameof(Unk94));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk94));
-            }
-        }
-
-        public const string Unk95_displayName = "Unk95";
-        public const int Unk95_sortIndex = 34450;
-        [SortOrder(Unk95_sortIndex)]
-        [DisplayName(Unk95_displayName)]
-        public virtual float Unk95 {
-            get => GetData<float>(1549);
-            set {
-                if (GetData<float>(1549) == value) return;
-                SetData(1549, value, nameof(Unk95));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk95));
-            }
-        }
-
-        public const string Unk96_displayName = "Unk96";
-        public const int Unk96_sortIndex = 34500;
-        [SortOrder(Unk96_sortIndex)]
-        [DisplayName(Unk96_displayName)]
-        public virtual float Unk96 {
-            get => GetData<float>(1553);
-            set {
-                if (GetData<float>(1553) == value) return;
-                SetData(1553, value, nameof(Unk96));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk96));
-            }
-        }
-
-        public const string Unk97_displayName = "Unk97";
-        public const int Unk97_sortIndex = 34550;
-        [SortOrder(Unk97_sortIndex)]
-        [DisplayName(Unk97_displayName)]
-        public virtual float Unk97 {
-            get => GetData<float>(1557);
-            set {
-                if (GetData<float>(1557) == value) return;
-                SetData(1557, value, nameof(Unk97));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk97));
-            }
-        }
-
-        public const string Unk98_displayName = "Unk98";
-        public const int Unk98_sortIndex = 34600;
-        [SortOrder(Unk98_sortIndex)]
-        [DisplayName(Unk98_displayName)]
-        public virtual float Unk98 {
-            get => GetData<float>(1561);
-            set {
-                if (GetData<float>(1561) == value) return;
-                SetData(1561, value, nameof(Unk98));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk98));
-            }
-        }
-
-        public const string Unk99_displayName = "Unk99";
-        public const int Unk99_sortIndex = 34650;
-        [SortOrder(Unk99_sortIndex)]
-        [DisplayName(Unk99_displayName)]
-        public virtual float Unk99 {
-            get => GetData<float>(1565);
-            set {
-                if (GetData<float>(1565) == value) return;
-                SetData(1565, value, nameof(Unk99));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk99));
-            }
-        }
-
-        public const string Unk100_displayName = "Unk100";
-        public const int Unk100_sortIndex = 34700;
-        [SortOrder(Unk100_sortIndex)]
-        [DisplayName(Unk100_displayName)]
-        public virtual float Unk100 {
-            get => GetData<float>(1569);
-            set {
-                if (GetData<float>(1569) == value) return;
-                SetData(1569, value, nameof(Unk100));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk100));
-            }
-        }
-
-        public const string Unk101_displayName = "Unk101";
-        public const int Unk101_sortIndex = 34750;
-        [SortOrder(Unk101_sortIndex)]
-        [DisplayName(Unk101_displayName)]
-        public virtual float Unk101 {
-            get => GetData<float>(1573);
-            set {
-                if (GetData<float>(1573) == value) return;
-                SetData(1573, value, nameof(Unk101));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk101));
-            }
-        }
-
-        public const string Unk102_displayName = "Unk102";
-        public const int Unk102_sortIndex = 34800;
-        [SortOrder(Unk102_sortIndex)]
-        [DisplayName(Unk102_displayName)]
-        public virtual float Unk102 {
-            get => GetData<float>(1577);
-            set {
-                if (GetData<float>(1577) == value) return;
-                SetData(1577, value, nameof(Unk102));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk102));
-            }
-        }
-
-        public const string Unk103_displayName = "Unk103";
-        public const int Unk103_sortIndex = 34850;
-        [SortOrder(Unk103_sortIndex)]
-        [DisplayName(Unk103_displayName)]
-        public virtual float Unk103 {
-            get => GetData<float>(1581);
-            set {
-                if (GetData<float>(1581) == value) return;
-                SetData(1581, value, nameof(Unk103));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk103));
-            }
-        }
-
-        public const string Unk104_displayName = "Unk104";
-        public const int Unk104_sortIndex = 34900;
-        [SortOrder(Unk104_sortIndex)]
-        [DisplayName(Unk104_displayName)]
-        public virtual float Unk104 {
-            get => GetData<float>(1585);
-            set {
-                if (GetData<float>(1585) == value) return;
-                SetData(1585, value, nameof(Unk104));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk104));
-            }
-        }
-
-        public const string Unk105_displayName = "Unk105";
-        public const int Unk105_sortIndex = 34950;
-        [SortOrder(Unk105_sortIndex)]
-        [DisplayName(Unk105_displayName)]
-        public virtual float Unk105 {
-            get => GetData<float>(1589);
-            set {
-                if (GetData<float>(1589) == value) return;
-                SetData(1589, value, nameof(Unk105));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk105));
-            }
-        }
-
-        public const string Unk106_displayName = "Unk106";
-        public const int Unk106_sortIndex = 35000;
-        [SortOrder(Unk106_sortIndex)]
-        [DisplayName(Unk106_displayName)]
-        public virtual float Unk106 {
-            get => GetData<float>(1593);
-            set {
-                if (GetData<float>(1593) == value) return;
-                SetData(1593, value, nameof(Unk106));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk106));
-            }
-        }
-
-        public const string Unk107_displayName = "Unk107";
-        public const int Unk107_sortIndex = 35050;
-        [SortOrder(Unk107_sortIndex)]
-        [DisplayName(Unk107_displayName)]
-        public virtual float Unk107 {
-            get => GetData<float>(1597);
-            set {
-                if (GetData<float>(1597) == value) return;
-                SetData(1597, value, nameof(Unk107));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk107));
-            }
-        }
-
-        public const string Unk108_displayName = "Unk108";
-        public const int Unk108_sortIndex = 35100;
-        [SortOrder(Unk108_sortIndex)]
-        [DisplayName(Unk108_displayName)]
-        public virtual float Unk108 {
-            get => GetData<float>(1601);
-            set {
-                if (GetData<float>(1601) == value) return;
-                SetData(1601, value, nameof(Unk108));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk108));
-            }
-        }
-
-        public const string Unk109_displayName = "Unk109";
-        public const int Unk109_sortIndex = 35150;
-        [SortOrder(Unk109_sortIndex)]
-        [DisplayName(Unk109_displayName)]
-        public virtual float Unk109 {
-            get => GetData<float>(1605);
-            set {
-                if (GetData<float>(1605) == value) return;
-                SetData(1605, value, nameof(Unk109));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk109));
-            }
-        }
-
-        public const string Unk110_displayName = "Unk110";
-        public const int Unk110_sortIndex = 35200;
-        [SortOrder(Unk110_sortIndex)]
-        [DisplayName(Unk110_displayName)]
-        public virtual float Unk110 {
-            get => GetData<float>(1609);
-            set {
-                if (GetData<float>(1609) == value) return;
-                SetData(1609, value, nameof(Unk110));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk110));
-            }
-        }
-
-        public const string Unk111_displayName = "Unk111";
-        public const int Unk111_sortIndex = 35250;
-        [SortOrder(Unk111_sortIndex)]
-        [DisplayName(Unk111_displayName)]
-        public virtual float Unk111 {
-            get => GetData<float>(1613);
-            set {
-                if (GetData<float>(1613) == value) return;
-                SetData(1613, value, nameof(Unk111));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk111));
-            }
-        }
-
-        public const string Unk112_displayName = "Unk112";
-        public const int Unk112_sortIndex = 35300;
-        [SortOrder(Unk112_sortIndex)]
-        [DisplayName(Unk112_displayName)]
-        public virtual float Unk112 {
-            get => GetData<float>(1617);
-            set {
-                if (GetData<float>(1617) == value) return;
-                SetData(1617, value, nameof(Unk112));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk112));
-            }
-        }
-
-        public const string Unk113_displayName = "Unk113";
-        public const int Unk113_sortIndex = 35350;
-        [SortOrder(Unk113_sortIndex)]
-        [DisplayName(Unk113_displayName)]
-        public virtual float Unk113 {
-            get => GetData<float>(1621);
-            set {
-                if (GetData<float>(1621) == value) return;
-                SetData(1621, value, nameof(Unk113));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk113));
-            }
-        }
-
-        public const string Unk114_displayName = "Unk114";
-        public const int Unk114_sortIndex = 35400;
-        [SortOrder(Unk114_sortIndex)]
-        [DisplayName(Unk114_displayName)]
-        public virtual float Unk114 {
-            get => GetData<float>(1625);
-            set {
-                if (GetData<float>(1625) == value) return;
-                SetData(1625, value, nameof(Unk114));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk114));
-            }
-        }
-
-        public const string Unk115_displayName = "Unk115";
-        public const int Unk115_sortIndex = 35450;
-        [SortOrder(Unk115_sortIndex)]
-        [DisplayName(Unk115_displayName)]
-        public virtual float Unk115 {
-            get => GetData<float>(1629);
-            set {
-                if (GetData<float>(1629) == value) return;
-                SetData(1629, value, nameof(Unk115));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk115));
-            }
-        }
-
-        public const string Unk116_displayName = "Unk116";
-        public const int Unk116_sortIndex = 35500;
-        [SortOrder(Unk116_sortIndex)]
-        [DisplayName(Unk116_displayName)]
-        public virtual float Unk116 {
-            get => GetData<float>(1633);
-            set {
-                if (GetData<float>(1633) == value) return;
-                SetData(1633, value, nameof(Unk116));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk116));
-            }
-        }
-
-        public const string Unk117_displayName = "Unk117";
-        public const int Unk117_sortIndex = 35550;
-        [SortOrder(Unk117_sortIndex)]
-        [DisplayName(Unk117_displayName)]
-        public virtual float Unk117 {
-            get => GetData<float>(1637);
-            set {
-                if (GetData<float>(1637) == value) return;
-                SetData(1637, value, nameof(Unk117));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk117));
-            }
-        }
-
-        public const string Unk118_displayName = "Unk118";
-        public const int Unk118_sortIndex = 35600;
-        [SortOrder(Unk118_sortIndex)]
-        [DisplayName(Unk118_displayName)]
-        public virtual float Unk118 {
-            get => GetData<float>(1641);
-            set {
-                if (GetData<float>(1641) == value) return;
-                SetData(1641, value, nameof(Unk118));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk118));
-            }
-        }
-
-        public const string Unk119_displayName = "Unk119";
-        public const int Unk119_sortIndex = 35650;
-        [SortOrder(Unk119_sortIndex)]
-        [DisplayName(Unk119_displayName)]
-        public virtual float Unk119 {
-            get => GetData<float>(1645);
-            set {
-                if (GetData<float>(1645) == value) return;
-                SetData(1645, value, nameof(Unk119));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk119));
-            }
-        }
-
-        public const string Unk120_displayName = "Unk120";
-        public const int Unk120_sortIndex = 35700;
-        [SortOrder(Unk120_sortIndex)]
-        [DisplayName(Unk120_displayName)]
-        public virtual float Unk120 {
-            get => GetData<float>(1649);
-            set {
-                if (GetData<float>(1649) == value) return;
-                SetData(1649, value, nameof(Unk120));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk120));
-            }
-        }
-
-        public const string Unk121_displayName = "Unk121";
-        public const int Unk121_sortIndex = 35750;
-        [SortOrder(Unk121_sortIndex)]
-        [DisplayName(Unk121_displayName)]
-        public virtual float Unk121 {
-            get => GetData<float>(1653);
-            set {
-                if (GetData<float>(1653) == value) return;
-                SetData(1653, value, nameof(Unk121));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk121));
-            }
-        }
-
-        public const string Unk122_displayName = "Unk122";
-        public const int Unk122_sortIndex = 35800;
-        [SortOrder(Unk122_sortIndex)]
-        [DisplayName(Unk122_displayName)]
-        public virtual float Unk122 {
-            get => GetData<float>(1657);
-            set {
-                if (GetData<float>(1657) == value) return;
-                SetData(1657, value, nameof(Unk122));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk122));
-            }
-        }
-
-        public const string Unk123_displayName = "Unk123";
-        public const int Unk123_sortIndex = 35850;
-        [SortOrder(Unk123_sortIndex)]
-        [DisplayName(Unk123_displayName)]
-        public virtual float Unk123 {
-            get => GetData<float>(1661);
-            set {
-                if (GetData<float>(1661) == value) return;
-                SetData(1661, value, nameof(Unk123));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk123));
-            }
-        }
-
-        public const string Unk124_displayName = "Unk124";
-        public const int Unk124_sortIndex = 35900;
-        [SortOrder(Unk124_sortIndex)]
-        [DisplayName(Unk124_displayName)]
-        public virtual float Unk124 {
-            get => GetData<float>(1665);
-            set {
-                if (GetData<float>(1665) == value) return;
-                SetData(1665, value, nameof(Unk124));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk124));
-            }
-        }
-
-        public const string Unk125_displayName = "Unk125";
-        public const int Unk125_sortIndex = 35950;
-        [SortOrder(Unk125_sortIndex)]
-        [DisplayName(Unk125_displayName)]
-        public virtual float Unk125 {
-            get => GetData<float>(1669);
-            set {
-                if (GetData<float>(1669) == value) return;
-                SetData(1669, value, nameof(Unk125));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk125));
-            }
-        }
-
-        public const string __36000_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __36000_sortIndex = 36000;
-        [SortOrder(__36000_sortIndex)]
-        [DisplayName(__36000_displayName)]
-        public virtual byte __36000 {
-            get => GetData<byte>(3);
-        }
-
-        public const string Unk126_displayName = "Unk126";
-        public const int Unk126_sortIndex = 36050;
-        [SortOrder(Unk126_sortIndex)]
-        [DisplayName(Unk126_displayName)]
-        public virtual byte Unk126 {
-            get => GetData<byte>(1673);
-            set {
-                if (GetData<byte>(1673) == value) return;
-                SetData(1673, value, nameof(Unk126));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk126));
-            }
-        }
-
-        public const string Unk127_displayName = "Unk127";
-        public const int Unk127_sortIndex = 36100;
-        [SortOrder(Unk127_sortIndex)]
-        [DisplayName(Unk127_displayName)]
-        public virtual byte Unk127 {
-            get => GetData<byte>(1674);
-            set {
-                if (GetData<byte>(1674) == value) return;
-                SetData(1674, value, nameof(Unk127));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk127));
-            }
-        }
-
-        public const string Unk128_displayName = "Unk128";
-        public const int Unk128_sortIndex = 36150;
-        [SortOrder(Unk128_sortIndex)]
-        [DisplayName(Unk128_displayName)]
-        public virtual byte Unk128 {
-            get => GetData<byte>(1675);
-            set {
-                if (GetData<byte>(1675) == value) return;
-                SetData(1675, value, nameof(Unk128));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk128));
-            }
-        }
-
-        public const string Unk129_displayName = "Unk129";
-        public const int Unk129_sortIndex = 36200;
-        [SortOrder(Unk129_sortIndex)]
-        [DisplayName(Unk129_displayName)]
-        public virtual byte Unk129 {
-            get => GetData<byte>(1676);
-            set {
-                if (GetData<byte>(1676) == value) return;
-                SetData(1676, value, nameof(Unk129));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk129));
-            }
-        }
-
-        public const string Unk130_displayName = "Unk130";
-        public const int Unk130_sortIndex = 36250;
-        [SortOrder(Unk130_sortIndex)]
-        [DisplayName(Unk130_displayName)]
-        public virtual byte Unk130 {
-            get => GetData<byte>(1677);
-            set {
-                if (GetData<byte>(1677) == value) return;
-                SetData(1677, value, nameof(Unk130));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk130));
-            }
-        }
-
-        public const string Unk131_displayName = "Unk131";
-        public const int Unk131_sortIndex = 36300;
-        [SortOrder(Unk131_sortIndex)]
-        [DisplayName(Unk131_displayName)]
-        public virtual byte Unk131 {
-            get => GetData<byte>(1678);
-            set {
-                if (GetData<byte>(1678) == value) return;
-                SetData(1678, value, nameof(Unk131));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk131));
-            }
-        }
-
-        public const string Unk132_displayName = "Unk132";
-        public const int Unk132_sortIndex = 36350;
-        [SortOrder(Unk132_sortIndex)]
-        [DisplayName(Unk132_displayName)]
-        public virtual byte Unk132 {
-            get => GetData<byte>(1679);
-            set {
-                if (GetData<byte>(1679) == value) return;
-                SetData(1679, value, nameof(Unk132));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk132));
-            }
-        }
-
-        public const string Unk133_displayName = "Unk133";
-        public const int Unk133_sortIndex = 36400;
-        [SortOrder(Unk133_sortIndex)]
-        [DisplayName(Unk133_displayName)]
-        public virtual byte Unk133 {
-            get => GetData<byte>(1680);
-            set {
-                if (GetData<byte>(1680) == value) return;
-                SetData(1680, value, nameof(Unk133));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk133));
-            }
-        }
-
-        public const string Unk134_displayName = "Unk134";
-        public const int Unk134_sortIndex = 36450;
-        [SortOrder(Unk134_sortIndex)]
-        [DisplayName(Unk134_displayName)]
-        public virtual byte Unk134 {
-            get => GetData<byte>(1681);
-            set {
-                if (GetData<byte>(1681) == value) return;
-                SetData(1681, value, nameof(Unk134));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk134));
-            }
-        }
-
-        public const string Unk135_displayName = "Unk135";
-        public const int Unk135_sortIndex = 36500;
-        [SortOrder(Unk135_sortIndex)]
-        [DisplayName(Unk135_displayName)]
-        public virtual byte Unk135 {
-            get => GetData<byte>(1682);
-            set {
-                if (GetData<byte>(1682) == value) return;
-                SetData(1682, value, nameof(Unk135));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk135));
-            }
-        }
-
-        public const string Unk136_displayName = "Unk136";
-        public const int Unk136_sortIndex = 36550;
-        [SortOrder(Unk136_sortIndex)]
-        [DisplayName(Unk136_displayName)]
-        public virtual byte Unk136 {
-            get => GetData<byte>(1683);
-            set {
-                if (GetData<byte>(1683) == value) return;
-                SetData(1683, value, nameof(Unk136));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk136));
-            }
-        }
-
-        public const string Unk137_displayName = "Unk137";
-        public const int Unk137_sortIndex = 36600;
-        [SortOrder(Unk137_sortIndex)]
-        [DisplayName(Unk137_displayName)]
-        public virtual byte Unk137 {
-            get => GetData<byte>(1684);
-            set {
-                if (GetData<byte>(1684) == value) return;
-                SetData(1684, value, nameof(Unk137));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk137));
-            }
-        }
-
-        public const string Unk138_displayName = "Unk138";
-        public const int Unk138_sortIndex = 36650;
-        [SortOrder(Unk138_sortIndex)]
-        [DisplayName(Unk138_displayName)]
-        public virtual byte Unk138 {
-            get => GetData<byte>(1685);
-            set {
-                if (GetData<byte>(1685) == value) return;
-                SetData(1685, value, nameof(Unk138));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk138));
-            }
-        }
-
-        public const string Unk139_displayName = "Unk139";
-        public const int Unk139_sortIndex = 36700;
-        [SortOrder(Unk139_sortIndex)]
-        [DisplayName(Unk139_displayName)]
-        public virtual byte Unk139 {
-            get => GetData<byte>(1686);
-            set {
-                if (GetData<byte>(1686) == value) return;
-                SetData(1686, value, nameof(Unk139));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk139));
-            }
-        }
-
-        public const string Unk140_displayName = "Unk140";
-        public const int Unk140_sortIndex = 36750;
-        [SortOrder(Unk140_sortIndex)]
-        [DisplayName(Unk140_displayName)]
-        public virtual byte Unk140 {
-            get => GetData<byte>(1687);
-            set {
-                if (GetData<byte>(1687) == value) return;
-                SetData(1687, value, nameof(Unk140));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk140));
-            }
-        }
-
-        public const string Unk141_displayName = "Unk141";
-        public const int Unk141_sortIndex = 36800;
-        [SortOrder(Unk141_sortIndex)]
-        [DisplayName(Unk141_displayName)]
-        public virtual byte Unk141 {
-            get => GetData<byte>(1688);
-            set {
-                if (GetData<byte>(1688) == value) return;
-                SetData(1688, value, nameof(Unk141));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk141));
-            }
-        }
-
-        public const string Unk142_displayName = "Unk142";
-        public const int Unk142_sortIndex = 36850;
-        [SortOrder(Unk142_sortIndex)]
-        [DisplayName(Unk142_displayName)]
-        public virtual byte Unk142 {
-            get => GetData<byte>(1689);
-            set {
-                if (GetData<byte>(1689) == value) return;
-                SetData(1689, value, nameof(Unk142));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk142));
-            }
-        }
-
-        public const string Unk143_displayName = "Unk143";
-        public const int Unk143_sortIndex = 36900;
-        [SortOrder(Unk143_sortIndex)]
-        [DisplayName(Unk143_displayName)]
-        public virtual byte Unk143 {
-            get => GetData<byte>(1690);
-            set {
-                if (GetData<byte>(1690) == value) return;
-                SetData(1690, value, nameof(Unk143));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk143));
-            }
-        }
-
-        public const string Unk144_displayName = "Unk144";
-        public const int Unk144_sortIndex = 36950;
-        [SortOrder(Unk144_sortIndex)]
-        [DisplayName(Unk144_displayName)]
-        public virtual byte Unk144 {
-            get => GetData<byte>(1691);
-            set {
-                if (GetData<byte>(1691) == value) return;
-                SetData(1691, value, nameof(Unk144));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk144));
-            }
-        }
-
-        public const string Unk145_displayName = "Unk145";
-        public const int Unk145_sortIndex = 37000;
-        [SortOrder(Unk145_sortIndex)]
-        [DisplayName(Unk145_displayName)]
-        public virtual byte Unk145 {
-            get => GetData<byte>(1692);
-            set {
-                if (GetData<byte>(1692) == value) return;
-                SetData(1692, value, nameof(Unk145));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk145));
-            }
-        }
-
-        public const string Unk146_displayName = "Unk146";
-        public const int Unk146_sortIndex = 37050;
-        [SortOrder(Unk146_sortIndex)]
-        [DisplayName(Unk146_displayName)]
-        public virtual byte Unk146 {
-            get => GetData<byte>(1693);
-            set {
-                if (GetData<byte>(1693) == value) return;
-                SetData(1693, value, nameof(Unk146));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk146));
-            }
-        }
-
-        public const string Unk147_displayName = "Unk147";
-        public const int Unk147_sortIndex = 37100;
-        [SortOrder(Unk147_sortIndex)]
-        [DisplayName(Unk147_displayName)]
-        public virtual byte Unk147 {
-            get => GetData<byte>(1694);
-            set {
-                if (GetData<byte>(1694) == value) return;
-                SetData(1694, value, nameof(Unk147));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk147));
-            }
-        }
-
-        public const string Unk148_displayName = "Unk148";
-        public const int Unk148_sortIndex = 37150;
-        [SortOrder(Unk148_sortIndex)]
-        [DisplayName(Unk148_displayName)]
-        public virtual byte Unk148 {
-            get => GetData<byte>(1695);
-            set {
-                if (GetData<byte>(1695) == value) return;
-                SetData(1695, value, nameof(Unk148));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk148));
-            }
-        }
-
-        public const string Unk149_displayName = "Unk149";
-        public const int Unk149_sortIndex = 37200;
-        [SortOrder(Unk149_sortIndex)]
-        [DisplayName(Unk149_displayName)]
-        public virtual byte Unk149 {
-            get => GetData<byte>(1696);
-            set {
-                if (GetData<byte>(1696) == value) return;
-                SetData(1696, value, nameof(Unk149));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk149));
-            }
-        }
-
-        public const string Unk150_displayName = "Unk150";
-        public const int Unk150_sortIndex = 37250;
-        [SortOrder(Unk150_sortIndex)]
-        [DisplayName(Unk150_displayName)]
-        public virtual byte Unk150 {
-            get => GetData<byte>(1697);
-            set {
-                if (GetData<byte>(1697) == value) return;
-                SetData(1697, value, nameof(Unk150));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk150));
-            }
-        }
-
-        public const string __37300_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __37300_sortIndex = 37300;
-        [SortOrder(__37300_sortIndex)]
-        [DisplayName(__37300_displayName)]
-        public virtual byte __37300 {
-            get => GetData<byte>(3);
-        }
-
-        public const string Unk151_displayName = "Unk151";
-        public const int Unk151_sortIndex = 37350;
-        [SortOrder(Unk151_sortIndex)]
-        [DisplayName(Unk151_displayName)]
-        public virtual float Unk151 {
-            get => GetData<float>(1698);
-            set {
-                if (GetData<float>(1698) == value) return;
-                SetData(1698, value, nameof(Unk151));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk151));
-            }
-        }
-
-        public const string Unk152_displayName = "Unk152";
-        public const int Unk152_sortIndex = 37400;
-        [SortOrder(Unk152_sortIndex)]
-        [DisplayName(Unk152_displayName)]
-        public virtual float Unk152 {
-            get => GetData<float>(1702);
-            set {
-                if (GetData<float>(1702) == value) return;
-                SetData(1702, value, nameof(Unk152));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk152));
-            }
-        }
-
-        public const string Unk153_displayName = "Unk153";
-        public const int Unk153_sortIndex = 37450;
-        [SortOrder(Unk153_sortIndex)]
-        [DisplayName(Unk153_displayName)]
-        public virtual float Unk153 {
-            get => GetData<float>(1706);
-            set {
-                if (GetData<float>(1706) == value) return;
-                SetData(1706, value, nameof(Unk153));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk153));
-            }
-        }
-
-        public const string Unk154_displayName = "Unk154";
-        public const int Unk154_sortIndex = 37500;
-        [SortOrder(Unk154_sortIndex)]
-        [DisplayName(Unk154_displayName)]
-        public virtual float Unk154 {
-            get => GetData<float>(1710);
-            set {
-                if (GetData<float>(1710) == value) return;
-                SetData(1710, value, nameof(Unk154));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk154));
-            }
-        }
-
-        public const string Unk155_displayName = "Unk155";
-        public const int Unk155_sortIndex = 37550;
-        [SortOrder(Unk155_sortIndex)]
-        [DisplayName(Unk155_displayName)]
-        public virtual float Unk155 {
-            get => GetData<float>(1714);
-            set {
-                if (GetData<float>(1714) == value) return;
-                SetData(1714, value, nameof(Unk155));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk155));
-            }
-        }
-
-        public const string Unk156_displayName = "Unk156";
-        public const int Unk156_sortIndex = 37600;
-        [SortOrder(Unk156_sortIndex)]
-        [DisplayName(Unk156_displayName)]
-        public virtual float Unk156 {
-            get => GetData<float>(1718);
-            set {
-                if (GetData<float>(1718) == value) return;
-                SetData(1718, value, nameof(Unk156));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk156));
-            }
-        }
-
-        public const string Unk157_displayName = "Unk157";
-        public const int Unk157_sortIndex = 37650;
-        [SortOrder(Unk157_sortIndex)]
-        [DisplayName(Unk157_displayName)]
-        public virtual float Unk157 {
-            get => GetData<float>(1722);
-            set {
-                if (GetData<float>(1722) == value) return;
-                SetData(1722, value, nameof(Unk157));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk157));
-            }
-        }
-
-        public const string Unk158_displayName = "Unk158";
-        public const int Unk158_sortIndex = 37700;
-        [SortOrder(Unk158_sortIndex)]
-        [DisplayName(Unk158_displayName)]
-        public virtual float Unk158 {
-            get => GetData<float>(1726);
-            set {
-                if (GetData<float>(1726) == value) return;
-                SetData(1726, value, nameof(Unk158));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk158));
-            }
-        }
-
-        public const string Unk159_displayName = "Unk159";
-        public const int Unk159_sortIndex = 37750;
-        [SortOrder(Unk159_sortIndex)]
-        [DisplayName(Unk159_displayName)]
-        public virtual float Unk159 {
-            get => GetData<float>(1730);
-            set {
-                if (GetData<float>(1730) == value) return;
-                SetData(1730, value, nameof(Unk159));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk159));
-            }
-        }
-
-        public const string Unk160_displayName = "Unk160";
-        public const int Unk160_sortIndex = 37800;
-        [SortOrder(Unk160_sortIndex)]
-        [DisplayName(Unk160_displayName)]
-        public virtual float Unk160 {
-            get => GetData<float>(1734);
-            set {
-                if (GetData<float>(1734) == value) return;
-                SetData(1734, value, nameof(Unk160));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk160));
-            }
-        }
-
-        public const string Unk161_displayName = "Unk161";
-        public const int Unk161_sortIndex = 37850;
-        [SortOrder(Unk161_sortIndex)]
-        [DisplayName(Unk161_displayName)]
-        public virtual float Unk161 {
-            get => GetData<float>(1738);
-            set {
-                if (GetData<float>(1738) == value) return;
-                SetData(1738, value, nameof(Unk161));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk161));
-            }
-        }
-
-        public const string Unk162_displayName = "Unk162";
-        public const int Unk162_sortIndex = 37900;
-        [SortOrder(Unk162_sortIndex)]
-        [DisplayName(Unk162_displayName)]
-        public virtual float Unk162 {
-            get => GetData<float>(1742);
-            set {
-                if (GetData<float>(1742) == value) return;
-                SetData(1742, value, nameof(Unk162));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk162));
-            }
-        }
-
-        public const string Unk163_displayName = "Unk163";
-        public const int Unk163_sortIndex = 37950;
-        [SortOrder(Unk163_sortIndex)]
-        [DisplayName(Unk163_displayName)]
-        public virtual float Unk163 {
-            get => GetData<float>(1746);
-            set {
-                if (GetData<float>(1746) == value) return;
-                SetData(1746, value, nameof(Unk163));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk163));
-            }
-        }
-
-        public const string Unk164_displayName = "Unk164";
-        public const int Unk164_sortIndex = 38000;
-        [SortOrder(Unk164_sortIndex)]
-        [DisplayName(Unk164_displayName)]
-        public virtual float Unk164 {
-            get => GetData<float>(1750);
-            set {
-                if (GetData<float>(1750) == value) return;
-                SetData(1750, value, nameof(Unk164));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk164));
-            }
-        }
-
-        public const string Unk165_displayName = "Unk165";
-        public const int Unk165_sortIndex = 38050;
-        [SortOrder(Unk165_sortIndex)]
-        [DisplayName(Unk165_displayName)]
-        public virtual float Unk165 {
-            get => GetData<float>(1754);
-            set {
-                if (GetData<float>(1754) == value) return;
-                SetData(1754, value, nameof(Unk165));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk165));
-            }
-        }
-
-        public const string Unk166_displayName = "Unk166";
-        public const int Unk166_sortIndex = 38100;
-        [SortOrder(Unk166_sortIndex)]
-        [DisplayName(Unk166_displayName)]
-        public virtual float Unk166 {
-            get => GetData<float>(1758);
-            set {
-                if (GetData<float>(1758) == value) return;
-                SetData(1758, value, nameof(Unk166));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk166));
-            }
-        }
-
-        public const string Unk167_displayName = "Unk167";
-        public const int Unk167_sortIndex = 38150;
-        [SortOrder(Unk167_sortIndex)]
-        [DisplayName(Unk167_displayName)]
-        public virtual float Unk167 {
-            get => GetData<float>(1762);
-            set {
-                if (GetData<float>(1762) == value) return;
-                SetData(1762, value, nameof(Unk167));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk167));
-            }
-        }
-
-        public const string Unk168_displayName = "Unk168";
-        public const int Unk168_sortIndex = 38200;
-        [SortOrder(Unk168_sortIndex)]
-        [DisplayName(Unk168_displayName)]
-        public virtual float Unk168 {
-            get => GetData<float>(1766);
-            set {
-                if (GetData<float>(1766) == value) return;
-                SetData(1766, value, nameof(Unk168));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk168));
-            }
-        }
-
-        public const string Unk169_displayName = "Unk169";
-        public const int Unk169_sortIndex = 38250;
-        [SortOrder(Unk169_sortIndex)]
-        [DisplayName(Unk169_displayName)]
-        public virtual float Unk169 {
-            get => GetData<float>(1770);
-            set {
-                if (GetData<float>(1770) == value) return;
-                SetData(1770, value, nameof(Unk169));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk169));
-            }
-        }
-
-        public const string Unk170_displayName = "Unk170";
-        public const int Unk170_sortIndex = 38300;
-        [SortOrder(Unk170_sortIndex)]
-        [DisplayName(Unk170_displayName)]
-        public virtual float Unk170 {
-            get => GetData<float>(1774);
-            set {
-                if (GetData<float>(1774) == value) return;
-                SetData(1774, value, nameof(Unk170));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk170));
-            }
-        }
-
-        public const string Unk171_displayName = "Unk171";
-        public const int Unk171_sortIndex = 38350;
-        [SortOrder(Unk171_sortIndex)]
-        [DisplayName(Unk171_displayName)]
-        public virtual float Unk171 {
-            get => GetData<float>(1778);
-            set {
-                if (GetData<float>(1778) == value) return;
-                SetData(1778, value, nameof(Unk171));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk171));
-            }
-        }
-
-        public const string Unk172_displayName = "Unk172";
-        public const int Unk172_sortIndex = 38400;
-        [SortOrder(Unk172_sortIndex)]
-        [DisplayName(Unk172_displayName)]
-        public virtual float Unk172 {
-            get => GetData<float>(1782);
-            set {
-                if (GetData<float>(1782) == value) return;
-                SetData(1782, value, nameof(Unk172));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk172));
-            }
-        }
-
-        public const string Unk173_displayName = "Unk173";
-        public const int Unk173_sortIndex = 38450;
-        [SortOrder(Unk173_sortIndex)]
-        [DisplayName(Unk173_displayName)]
-        public virtual float Unk173 {
-            get => GetData<float>(1786);
-            set {
-                if (GetData<float>(1786) == value) return;
-                SetData(1786, value, nameof(Unk173));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk173));
-            }
-        }
-
-        public const string Unk174_displayName = "Unk174";
-        public const int Unk174_sortIndex = 38500;
-        [SortOrder(Unk174_sortIndex)]
-        [DisplayName(Unk174_displayName)]
-        public virtual float Unk174 {
-            get => GetData<float>(1790);
-            set {
-                if (GetData<float>(1790) == value) return;
-                SetData(1790, value, nameof(Unk174));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk174));
-            }
-        }
-
-        public const string Unk175_displayName = "Unk175";
-        public const int Unk175_sortIndex = 38550;
-        [SortOrder(Unk175_sortIndex)]
-        [DisplayName(Unk175_displayName)]
-        public virtual float Unk175 {
-            get => GetData<float>(1794);
-            set {
-                if (GetData<float>(1794) == value) return;
-                SetData(1794, value, nameof(Unk175));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk175));
-            }
-        }
-
-        public const string Unk176_displayName = "Unk176";
-        public const int Unk176_sortIndex = 38600;
-        [SortOrder(Unk176_sortIndex)]
-        [DisplayName(Unk176_displayName)]
-        public virtual float Unk176 {
-            get => GetData<float>(1798);
-            set {
-                if (GetData<float>(1798) == value) return;
-                SetData(1798, value, nameof(Unk176));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk176));
-            }
-        }
-
-        public const string Unk177_displayName = "Unk177";
-        public const int Unk177_sortIndex = 38650;
-        [SortOrder(Unk177_sortIndex)]
-        [DisplayName(Unk177_displayName)]
-        public virtual float Unk177 {
-            get => GetData<float>(1802);
-            set {
-                if (GetData<float>(1802) == value) return;
-                SetData(1802, value, nameof(Unk177));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk177));
-            }
-        }
-
-        public const string Unk178_displayName = "Unk178";
-        public const int Unk178_sortIndex = 38700;
-        [SortOrder(Unk178_sortIndex)]
-        [DisplayName(Unk178_displayName)]
-        public virtual float Unk178 {
-            get => GetData<float>(1806);
-            set {
-                if (GetData<float>(1806) == value) return;
-                SetData(1806, value, nameof(Unk178));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk178));
-            }
-        }
-
-        public const string Unk179_displayName = "Unk179";
-        public const int Unk179_sortIndex = 38750;
-        [SortOrder(Unk179_sortIndex)]
-        [DisplayName(Unk179_displayName)]
-        public virtual float Unk179 {
-            get => GetData<float>(1810);
-            set {
-                if (GetData<float>(1810) == value) return;
-                SetData(1810, value, nameof(Unk179));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk179));
-            }
-        }
-
-        public const string Unk180_displayName = "Unk180";
-        public const int Unk180_sortIndex = 38800;
-        [SortOrder(Unk180_sortIndex)]
-        [DisplayName(Unk180_displayName)]
-        public virtual float Unk180 {
-            get => GetData<float>(1814);
-            set {
-                if (GetData<float>(1814) == value) return;
-                SetData(1814, value, nameof(Unk180));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk180));
-            }
-        }
-
-        public const string Unk181_displayName = "Unk181";
-        public const int Unk181_sortIndex = 38850;
-        [SortOrder(Unk181_sortIndex)]
-        [DisplayName(Unk181_displayName)]
-        public virtual float Unk181 {
-            get => GetData<float>(1818);
-            set {
-                if (GetData<float>(1818) == value) return;
-                SetData(1818, value, nameof(Unk181));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk181));
-            }
-        }
-
-        public const string Unk182_displayName = "Unk182";
-        public const int Unk182_sortIndex = 38900;
-        [SortOrder(Unk182_sortIndex)]
-        [DisplayName(Unk182_displayName)]
-        public virtual float Unk182 {
-            get => GetData<float>(1822);
-            set {
-                if (GetData<float>(1822) == value) return;
-                SetData(1822, value, nameof(Unk182));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk182));
-            }
-        }
-
-        public const string Unk183_displayName = "Unk183";
-        public const int Unk183_sortIndex = 38950;
-        [SortOrder(Unk183_sortIndex)]
-        [DisplayName(Unk183_displayName)]
-        public virtual float Unk183 {
-            get => GetData<float>(1826);
-            set {
-                if (GetData<float>(1826) == value) return;
-                SetData(1826, value, nameof(Unk183));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk183));
-            }
-        }
-
-        public const string Unk184_displayName = "Unk184";
-        public const int Unk184_sortIndex = 39000;
-        [SortOrder(Unk184_sortIndex)]
-        [DisplayName(Unk184_displayName)]
-        public virtual float Unk184 {
-            get => GetData<float>(1830);
-            set {
-                if (GetData<float>(1830) == value) return;
-                SetData(1830, value, nameof(Unk184));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk184));
-            }
-        }
-
-        public const string Unk185_displayName = "Unk185";
-        public const int Unk185_sortIndex = 39050;
-        [SortOrder(Unk185_sortIndex)]
-        [DisplayName(Unk185_displayName)]
-        public virtual float Unk185 {
-            get => GetData<float>(1834);
-            set {
-                if (GetData<float>(1834) == value) return;
-                SetData(1834, value, nameof(Unk185));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk185));
-            }
-        }
-
-        public const string Unk186_displayName = "Unk186";
-        public const int Unk186_sortIndex = 39100;
-        [SortOrder(Unk186_sortIndex)]
-        [DisplayName(Unk186_displayName)]
-        public virtual float Unk186 {
-            get => GetData<float>(1838);
-            set {
-                if (GetData<float>(1838) == value) return;
-                SetData(1838, value, nameof(Unk186));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk186));
-            }
-        }
-
-        public const string Unk187_displayName = "Unk187";
-        public const int Unk187_sortIndex = 39150;
-        [SortOrder(Unk187_sortIndex)]
-        [DisplayName(Unk187_displayName)]
-        public virtual float Unk187 {
-            get => GetData<float>(1842);
-            set {
-                if (GetData<float>(1842) == value) return;
-                SetData(1842, value, nameof(Unk187));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk187));
-            }
-        }
-
-        public const string Unk188_displayName = "Unk188";
-        public const int Unk188_sortIndex = 39200;
-        [SortOrder(Unk188_sortIndex)]
-        [DisplayName(Unk188_displayName)]
-        public virtual float Unk188 {
-            get => GetData<float>(1846);
-            set {
-                if (GetData<float>(1846) == value) return;
-                SetData(1846, value, nameof(Unk188));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk188));
-            }
-        }
-
-        public const string Unk189_displayName = "Unk189";
-        public const int Unk189_sortIndex = 39250;
-        [SortOrder(Unk189_sortIndex)]
-        [DisplayName(Unk189_displayName)]
-        public virtual float Unk189 {
-            get => GetData<float>(1850);
-            set {
-                if (GetData<float>(1850) == value) return;
-                SetData(1850, value, nameof(Unk189));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk189));
-            }
-        }
-
-        public const string Unk190_displayName = "Unk190";
-        public const int Unk190_sortIndex = 39300;
-        [SortOrder(Unk190_sortIndex)]
-        [DisplayName(Unk190_displayName)]
-        public virtual float Unk190 {
-            get => GetData<float>(1854);
-            set {
-                if (GetData<float>(1854) == value) return;
-                SetData(1854, value, nameof(Unk190));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk190));
-            }
-        }
-
-        public const string Unk191_displayName = "Unk191";
-        public const int Unk191_sortIndex = 39350;
-        [SortOrder(Unk191_sortIndex)]
-        [DisplayName(Unk191_displayName)]
-        public virtual float Unk191 {
-            get => GetData<float>(1858);
-            set {
-                if (GetData<float>(1858) == value) return;
-                SetData(1858, value, nameof(Unk191));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk191));
-            }
-        }
-
-        public const string Unk192_displayName = "Unk192";
-        public const int Unk192_sortIndex = 39400;
-        [SortOrder(Unk192_sortIndex)]
-        [DisplayName(Unk192_displayName)]
-        public virtual float Unk192 {
-            get => GetData<float>(1862);
-            set {
-                if (GetData<float>(1862) == value) return;
-                SetData(1862, value, nameof(Unk192));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk192));
-            }
-        }
-
-        public const string Unk193_displayName = "Unk193";
-        public const int Unk193_sortIndex = 39450;
-        [SortOrder(Unk193_sortIndex)]
-        [DisplayName(Unk193_displayName)]
-        public virtual float Unk193 {
-            get => GetData<float>(1866);
-            set {
-                if (GetData<float>(1866) == value) return;
-                SetData(1866, value, nameof(Unk193));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk193));
-            }
-        }
-
-        public const string Unk194_displayName = "Unk194";
-        public const int Unk194_sortIndex = 39500;
-        [SortOrder(Unk194_sortIndex)]
-        [DisplayName(Unk194_displayName)]
-        public virtual float Unk194 {
-            get => GetData<float>(1870);
-            set {
-                if (GetData<float>(1870) == value) return;
-                SetData(1870, value, nameof(Unk194));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk194));
-            }
-        }
-
-        public const string Unk195_displayName = "Unk195";
-        public const int Unk195_sortIndex = 39550;
-        [SortOrder(Unk195_sortIndex)]
-        [DisplayName(Unk195_displayName)]
-        public virtual float Unk195 {
-            get => GetData<float>(1874);
-            set {
-                if (GetData<float>(1874) == value) return;
-                SetData(1874, value, nameof(Unk195));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk195));
-            }
-        }
-
-        public const string Unk196_displayName = "Unk196";
-        public const int Unk196_sortIndex = 39600;
-        [SortOrder(Unk196_sortIndex)]
-        [DisplayName(Unk196_displayName)]
-        public virtual float Unk196 {
-            get => GetData<float>(1878);
-            set {
-                if (GetData<float>(1878) == value) return;
-                SetData(1878, value, nameof(Unk196));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk196));
-            }
-        }
-
-        public const string Unk197_displayName = "Unk197";
-        public const int Unk197_sortIndex = 39650;
-        [SortOrder(Unk197_sortIndex)]
-        [DisplayName(Unk197_displayName)]
-        public virtual float Unk197 {
-            get => GetData<float>(1882);
-            set {
-                if (GetData<float>(1882) == value) return;
-                SetData(1882, value, nameof(Unk197));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk197));
-            }
-        }
-
-        public const string Unk198_displayName = "Unk198";
-        public const int Unk198_sortIndex = 39700;
-        [SortOrder(Unk198_sortIndex)]
-        [DisplayName(Unk198_displayName)]
-        public virtual float Unk198 {
-            get => GetData<float>(1886);
-            set {
-                if (GetData<float>(1886) == value) return;
-                SetData(1886, value, nameof(Unk198));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk198));
-            }
-        }
-
-        public const string __39750_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __39750_sortIndex = 39750;
-        [SortOrder(__39750_sortIndex)]
-        [DisplayName(__39750_displayName)]
-        public virtual byte __39750 {
+        public const string __40850_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __40850_sortIndex = 40850;
+        [SortOrder(__40850_sortIndex)]
+        [DisplayName(__40850_displayName)]
+        public virtual byte __40850 {
             get => GetData<byte>(3);
         }
 
         public const string Food_Effect_Life_Up_1_displayName = "Food Effect: Life Up 1";
-        public const int Food_Effect_Life_Up_1_sortIndex = 39800;
+        public const int Food_Effect_Life_Up_1_sortIndex = 40900;
         [SortOrder(Food_Effect_Life_Up_1_sortIndex)]
         [DisplayName(Food_Effect_Life_Up_1_displayName)]
         public virtual ushort Food_Effect_Life_Up_1 {
@@ -10618,7 +10824,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Life_Up_2_displayName = "Food Effect: Life Up 2";
-        public const int Food_Effect_Life_Up_2_sortIndex = 39850;
+        public const int Food_Effect_Life_Up_2_sortIndex = 40950;
         [SortOrder(Food_Effect_Life_Up_2_sortIndex)]
         [DisplayName(Food_Effect_Life_Up_2_displayName)]
         public virtual ushort Food_Effect_Life_Up_2 {
@@ -10632,7 +10838,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Life_Up_3_displayName = "Food Effect: Life Up 3";
-        public const int Food_Effect_Life_Up_3_sortIndex = 39900;
+        public const int Food_Effect_Life_Up_3_sortIndex = 41000;
         [SortOrder(Food_Effect_Life_Up_3_sortIndex)]
         [DisplayName(Food_Effect_Life_Up_3_displayName)]
         public virtual ushort Food_Effect_Life_Up_3 {
@@ -10646,7 +10852,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Life_Up_4_displayName = "Food Effect: Life Up 4";
-        public const int Food_Effect_Life_Up_4_sortIndex = 39950;
+        public const int Food_Effect_Life_Up_4_sortIndex = 41050;
         [SortOrder(Food_Effect_Life_Up_4_sortIndex)]
         [DisplayName(Food_Effect_Life_Up_4_displayName)]
         public virtual ushort Food_Effect_Life_Up_4 {
@@ -10660,7 +10866,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Life_Up_5_displayName = "Food Effect: Life Up 5";
-        public const int Food_Effect_Life_Up_5_sortIndex = 40000;
+        public const int Food_Effect_Life_Up_5_sortIndex = 41100;
         [SortOrder(Food_Effect_Life_Up_5_sortIndex)]
         [DisplayName(Food_Effect_Life_Up_5_displayName)]
         public virtual ushort Food_Effect_Life_Up_5 {
@@ -10674,7 +10880,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Life_Up_6_displayName = "Food Effect: Life Up 6";
-        public const int Food_Effect_Life_Up_6_sortIndex = 40050;
+        public const int Food_Effect_Life_Up_6_sortIndex = 41150;
         [SortOrder(Food_Effect_Life_Up_6_sortIndex)]
         [DisplayName(Food_Effect_Life_Up_6_displayName)]
         public virtual ushort Food_Effect_Life_Up_6 {
@@ -10687,16 +10893,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __40100_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __40100_sortIndex = 40100;
-        [SortOrder(__40100_sortIndex)]
-        [DisplayName(__40100_displayName)]
-        public virtual byte __40100 {
+        public const string __41200_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __41200_sortIndex = 41200;
+        [SortOrder(__41200_sortIndex)]
+        [DisplayName(__41200_displayName)]
+        public virtual byte __41200 {
             get => GetData<byte>(3);
         }
 
         public const string Food_Effect_Stamina_Up_1_displayName = "Food Effect: Stamina Up 1";
-        public const int Food_Effect_Stamina_Up_1_sortIndex = 40150;
+        public const int Food_Effect_Stamina_Up_1_sortIndex = 41250;
         [SortOrder(Food_Effect_Stamina_Up_1_sortIndex)]
         [DisplayName(Food_Effect_Stamina_Up_1_displayName)]
         public virtual ushort Food_Effect_Stamina_Up_1 {
@@ -10710,7 +10916,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Stamina_Up_2_displayName = "Food Effect: Stamina Up 2";
-        public const int Food_Effect_Stamina_Up_2_sortIndex = 40200;
+        public const int Food_Effect_Stamina_Up_2_sortIndex = 41300;
         [SortOrder(Food_Effect_Stamina_Up_2_sortIndex)]
         [DisplayName(Food_Effect_Stamina_Up_2_displayName)]
         public virtual ushort Food_Effect_Stamina_Up_2 {
@@ -10724,7 +10930,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Stamina_Up_3_displayName = "Food Effect: Stamina Up 3";
-        public const int Food_Effect_Stamina_Up_3_sortIndex = 40250;
+        public const int Food_Effect_Stamina_Up_3_sortIndex = 41350;
         [SortOrder(Food_Effect_Stamina_Up_3_sortIndex)]
         [DisplayName(Food_Effect_Stamina_Up_3_displayName)]
         public virtual ushort Food_Effect_Stamina_Up_3 {
@@ -10737,16 +10943,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __40300_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __40300_sortIndex = 40300;
-        [SortOrder(__40300_sortIndex)]
-        [DisplayName(__40300_displayName)]
-        public virtual byte __40300 {
+        public const string __41400_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __41400_sortIndex = 41400;
+        [SortOrder(__41400_sortIndex)]
+        [DisplayName(__41400_displayName)]
+        public virtual byte __41400 {
             get => GetData<byte>(3);
         }
 
         public const string Food_Effect_Attack_Up_1_displayName = "Food Effect: Attack Up 1";
-        public const int Food_Effect_Attack_Up_1_sortIndex = 40350;
+        public const int Food_Effect_Attack_Up_1_sortIndex = 41450;
         [SortOrder(Food_Effect_Attack_Up_1_sortIndex)]
         [DisplayName(Food_Effect_Attack_Up_1_displayName)]
         public virtual ushort Food_Effect_Attack_Up_1 {
@@ -10760,7 +10966,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Attack_Up_2_displayName = "Food Effect: Attack Up 2";
-        public const int Food_Effect_Attack_Up_2_sortIndex = 40400;
+        public const int Food_Effect_Attack_Up_2_sortIndex = 41500;
         [SortOrder(Food_Effect_Attack_Up_2_sortIndex)]
         [DisplayName(Food_Effect_Attack_Up_2_displayName)]
         public virtual ushort Food_Effect_Attack_Up_2 {
@@ -10774,7 +10980,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Attack_Up_3_displayName = "Food Effect: Attack Up 3";
-        public const int Food_Effect_Attack_Up_3_sortIndex = 40450;
+        public const int Food_Effect_Attack_Up_3_sortIndex = 41550;
         [SortOrder(Food_Effect_Attack_Up_3_sortIndex)]
         [DisplayName(Food_Effect_Attack_Up_3_displayName)]
         public virtual ushort Food_Effect_Attack_Up_3 {
@@ -10788,7 +10994,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Attack_Up_4_displayName = "Food Effect: Attack Up 4";
-        public const int Food_Effect_Attack_Up_4_sortIndex = 40500;
+        public const int Food_Effect_Attack_Up_4_sortIndex = 41600;
         [SortOrder(Food_Effect_Attack_Up_4_sortIndex)]
         [DisplayName(Food_Effect_Attack_Up_4_displayName)]
         public virtual ushort Food_Effect_Attack_Up_4 {
@@ -10801,16 +11007,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __40550_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __40550_sortIndex = 40550;
-        [SortOrder(__40550_sortIndex)]
-        [DisplayName(__40550_displayName)]
-        public virtual byte __40550 {
+        public const string __41650_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __41650_sortIndex = 41650;
+        [SortOrder(__41650_sortIndex)]
+        [DisplayName(__41650_displayName)]
+        public virtual byte __41650 {
             get => GetData<byte>(3);
         }
 
         public const string Food_Effect_Defense_Up_1_displayName = "Food Effect: Defense Up 1";
-        public const int Food_Effect_Defense_Up_1_sortIndex = 40600;
+        public const int Food_Effect_Defense_Up_1_sortIndex = 41700;
         [SortOrder(Food_Effect_Defense_Up_1_sortIndex)]
         [DisplayName(Food_Effect_Defense_Up_1_displayName)]
         public virtual ushort Food_Effect_Defense_Up_1 {
@@ -10824,7 +11030,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Defense_Up_2_displayName = "Food Effect: Defense Up 2";
-        public const int Food_Effect_Defense_Up_2_sortIndex = 40650;
+        public const int Food_Effect_Defense_Up_2_sortIndex = 41750;
         [SortOrder(Food_Effect_Defense_Up_2_sortIndex)]
         [DisplayName(Food_Effect_Defense_Up_2_displayName)]
         public virtual ushort Food_Effect_Defense_Up_2 {
@@ -10838,7 +11044,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Defense_Up_3_displayName = "Food Effect: Defense Up 3";
-        public const int Food_Effect_Defense_Up_3_sortIndex = 40700;
+        public const int Food_Effect_Defense_Up_3_sortIndex = 41800;
         [SortOrder(Food_Effect_Defense_Up_3_sortIndex)]
         [DisplayName(Food_Effect_Defense_Up_3_displayName)]
         public virtual ushort Food_Effect_Defense_Up_3 {
@@ -10852,7 +11058,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_Defense_Up_4_displayName = "Food Effect: Defense Up 4";
-        public const int Food_Effect_Defense_Up_4_sortIndex = 40750;
+        public const int Food_Effect_Defense_Up_4_sortIndex = 41850;
         [SortOrder(Food_Effect_Defense_Up_4_sortIndex)]
         [DisplayName(Food_Effect_Defense_Up_4_displayName)]
         public virtual ushort Food_Effect_Defense_Up_4 {
@@ -10865,16 +11071,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __40800_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __40800_sortIndex = 40800;
-        [SortOrder(__40800_sortIndex)]
-        [DisplayName(__40800_displayName)]
-        public virtual byte __40800 {
+        public const string __41900_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __41900_sortIndex = 41900;
+        [SortOrder(__41900_sortIndex)]
+        [DisplayName(__41900_displayName)]
+        public virtual byte __41900 {
             get => GetData<byte>(3);
         }
 
         public const string Food_Effect_All_Resistances_Up_1_displayName = "Food Effect: All Resistances Up 1";
-        public const int Food_Effect_All_Resistances_Up_1_sortIndex = 40850;
+        public const int Food_Effect_All_Resistances_Up_1_sortIndex = 41950;
         [SortOrder(Food_Effect_All_Resistances_Up_1_sortIndex)]
         [DisplayName(Food_Effect_All_Resistances_Up_1_displayName)]
         public virtual ushort Food_Effect_All_Resistances_Up_1 {
@@ -10888,7 +11094,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_All_Resistances_Up_2_displayName = "Food Effect: All Resistances Up 2";
-        public const int Food_Effect_All_Resistances_Up_2_sortIndex = 40900;
+        public const int Food_Effect_All_Resistances_Up_2_sortIndex = 42000;
         [SortOrder(Food_Effect_All_Resistances_Up_2_sortIndex)]
         [DisplayName(Food_Effect_All_Resistances_Up_2_displayName)]
         public virtual ushort Food_Effect_All_Resistances_Up_2 {
@@ -10902,7 +11108,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_All_Resistances_Up_3_displayName = "Food Effect: All Resistances Up 3";
-        public const int Food_Effect_All_Resistances_Up_3_sortIndex = 40950;
+        public const int Food_Effect_All_Resistances_Up_3_sortIndex = 42050;
         [SortOrder(Food_Effect_All_Resistances_Up_3_sortIndex)]
         [DisplayName(Food_Effect_All_Resistances_Up_3_displayName)]
         public virtual ushort Food_Effect_All_Resistances_Up_3 {
@@ -10916,7 +11122,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Food_Effect_All_Resistances_Up_4_displayName = "Food Effect: All Resistances Up 4";
-        public const int Food_Effect_All_Resistances_Up_4_sortIndex = 41000;
+        public const int Food_Effect_All_Resistances_Up_4_sortIndex = 42100;
         [SortOrder(Food_Effect_All_Resistances_Up_4_sortIndex)]
         [DisplayName(Food_Effect_All_Resistances_Up_4_displayName)]
         public virtual ushort Food_Effect_All_Resistances_Up_4 {
@@ -10929,16 +11135,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __41050_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __41050_sortIndex = 41050;
-        [SortOrder(__41050_sortIndex)]
-        [DisplayName(__41050_displayName)]
-        public virtual byte __41050 {
+        public const string __42150_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __42150_sortIndex = 42150;
+        [SortOrder(__42150_sortIndex)]
+        [DisplayName(__42150_displayName)]
+        public virtual byte __42150 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Polisher_1_displayName = "Feline Polisher: % 1";
-        public const int Feline_Polisher_1_sortIndex = 41100;
+        public const int Feline_Polisher_1_sortIndex = 42200;
         [SortOrder(Feline_Polisher_1_sortIndex)]
         [DisplayName(Feline_Polisher_1_displayName)]
         public virtual byte Feline_Polisher_1 {
@@ -10952,7 +11158,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Polisher_2_displayName = "Feline Polisher: % 2";
-        public const int Feline_Polisher_2_sortIndex = 41150;
+        public const int Feline_Polisher_2_sortIndex = 42250;
         [SortOrder(Feline_Polisher_2_sortIndex)]
         [DisplayName(Feline_Polisher_2_displayName)]
         public virtual byte Feline_Polisher_2 {
@@ -10966,7 +11172,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Polisher_3_displayName = "Feline Polisher: % 3";
-        public const int Feline_Polisher_3_sortIndex = 41200;
+        public const int Feline_Polisher_3_sortIndex = 42300;
         [SortOrder(Feline_Polisher_3_sortIndex)]
         [DisplayName(Feline_Polisher_3_displayName)]
         public virtual byte Feline_Polisher_3 {
@@ -10980,7 +11186,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Polisher_Loop_1_displayName = "Feline Polisher: Loop # 1";
-        public const int Feline_Polisher_Loop_1_sortIndex = 41250;
+        public const int Feline_Polisher_Loop_1_sortIndex = 42350;
         [SortOrder(Feline_Polisher_Loop_1_sortIndex)]
         [DisplayName(Feline_Polisher_Loop_1_displayName)]
         public virtual byte Feline_Polisher_Loop_1 {
@@ -10994,7 +11200,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Polisher_Loop_2_displayName = "Feline Polisher: Loop # 2";
-        public const int Feline_Polisher_Loop_2_sortIndex = 41300;
+        public const int Feline_Polisher_Loop_2_sortIndex = 42400;
         [SortOrder(Feline_Polisher_Loop_2_sortIndex)]
         [DisplayName(Feline_Polisher_Loop_2_displayName)]
         public virtual byte Feline_Polisher_Loop_2 {
@@ -11008,7 +11214,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Polisher_Loop_3_displayName = "Feline Polisher: Loop # 3";
-        public const int Feline_Polisher_Loop_3_sortIndex = 41350;
+        public const int Feline_Polisher_Loop_3_sortIndex = 42450;
         [SortOrder(Feline_Polisher_Loop_3_sortIndex)]
         [DisplayName(Feline_Polisher_Loop_3_displayName)]
         public virtual byte Feline_Polisher_Loop_3 {
@@ -11021,16 +11227,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __41400_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __41400_sortIndex = 41400;
-        [SortOrder(__41400_sortIndex)]
-        [DisplayName(__41400_displayName)]
-        public virtual byte __41400 {
+        public const string __42500_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __42500_sortIndex = 42500;
+        [SortOrder(__42500_sortIndex)]
+        [DisplayName(__42500_displayName)]
+        public virtual byte __42500 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Rider_Attack_Rate_displayName = "Feline Rider: Attack Rate";
-        public const int Feline_Rider_Attack_Rate_sortIndex = 41450;
+        public const int Feline_Rider_Attack_Rate_sortIndex = 42550;
         [SortOrder(Feline_Rider_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Rider_Attack_Rate_displayName)]
         public virtual float Feline_Rider_Attack_Rate {
@@ -11043,16 +11249,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __41500_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __41500_sortIndex = 41500;
-        [SortOrder(__41500_sortIndex)]
-        [DisplayName(__41500_displayName)]
-        public virtual byte __41500 {
+        public const string __42600_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __42600_sortIndex = 42600;
+        [SortOrder(__42600_sortIndex)]
+        [DisplayName(__42600_displayName)]
+        public virtual byte __42600 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Heroics_Attack_Rate_displayName = "Feline Heroics: Attack Rate";
-        public const int Feline_Heroics_Attack_Rate_sortIndex = 41550;
+        public const int Feline_Heroics_Attack_Rate_sortIndex = 42650;
         [SortOrder(Feline_Heroics_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Heroics_Attack_Rate_displayName)]
         public virtual float Feline_Heroics_Attack_Rate {
@@ -11066,7 +11272,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Heroics_Defense_Rate_displayName = "Feline Heroics: Defense Rate";
-        public const int Feline_Heroics_Defense_Rate_sortIndex = 41600;
+        public const int Feline_Heroics_Defense_Rate_sortIndex = 42700;
         [SortOrder(Feline_Heroics_Defense_Rate_sortIndex)]
         [DisplayName(Feline_Heroics_Defense_Rate_displayName)]
         public virtual float Feline_Heroics_Defense_Rate {
@@ -11080,7 +11286,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Heroics_Life_Activation_Threshold_displayName = "Feline Heroics: Life Activation Threshold";
-        public const int Feline_Heroics_Life_Activation_Threshold_sortIndex = 41650;
+        public const int Feline_Heroics_Life_Activation_Threshold_sortIndex = 42750;
         [SortOrder(Feline_Heroics_Life_Activation_Threshold_sortIndex)]
         [DisplayName(Feline_Heroics_Life_Activation_Threshold_displayName)]
         public virtual byte Feline_Heroics_Life_Activation_Threshold {
@@ -11093,16 +11299,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __41700_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __41700_sortIndex = 41700;
-        [SortOrder(__41700_sortIndex)]
-        [DisplayName(__41700_displayName)]
-        public virtual byte __41700 {
+        public const string __42800_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __42800_sortIndex = 42800;
+        [SortOrder(__42800_sortIndex)]
+        [DisplayName(__42800_displayName)]
+        public virtual byte __42800 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Carving_L_Lottery_1_displayName = "Feline Carving L: Lottery % 1";
-        public const int Feline_Carving_L_Lottery_1_sortIndex = 41750;
+        public const int Feline_Carving_L_Lottery_1_sortIndex = 42850;
         [SortOrder(Feline_Carving_L_Lottery_1_sortIndex)]
         [DisplayName(Feline_Carving_L_Lottery_1_displayName)]
         public virtual byte Feline_Carving_L_Lottery_1 {
@@ -11116,7 +11322,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Carving_L_Lottery_2_displayName = "Feline Carving L: Lottery % 2";
-        public const int Feline_Carving_L_Lottery_2_sortIndex = 41800;
+        public const int Feline_Carving_L_Lottery_2_sortIndex = 42900;
         [SortOrder(Feline_Carving_L_Lottery_2_sortIndex)]
         [DisplayName(Feline_Carving_L_Lottery_2_displayName)]
         public virtual byte Feline_Carving_L_Lottery_2 {
@@ -11130,7 +11336,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Carving_L_Lottery_3_displayName = "Feline Carving L: Lottery % 3";
-        public const int Feline_Carving_L_Lottery_3_sortIndex = 41850;
+        public const int Feline_Carving_L_Lottery_3_sortIndex = 42950;
         [SortOrder(Feline_Carving_L_Lottery_3_sortIndex)]
         [DisplayName(Feline_Carving_L_Lottery_3_displayName)]
         public virtual byte Feline_Carving_L_Lottery_3 {
@@ -11144,7 +11350,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Carving_L_Up_1_displayName = "Feline Carving L: Up % 1";
-        public const int Feline_Carving_L_Up_1_sortIndex = 41900;
+        public const int Feline_Carving_L_Up_1_sortIndex = 43000;
         [SortOrder(Feline_Carving_L_Up_1_sortIndex)]
         [DisplayName(Feline_Carving_L_Up_1_displayName)]
         public virtual byte Feline_Carving_L_Up_1 {
@@ -11158,7 +11364,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Carving_L_Up_2_displayName = "Feline Carving L: Up % 2";
-        public const int Feline_Carving_L_Up_2_sortIndex = 41950;
+        public const int Feline_Carving_L_Up_2_sortIndex = 43050;
         [SortOrder(Feline_Carving_L_Up_2_sortIndex)]
         [DisplayName(Feline_Carving_L_Up_2_displayName)]
         public virtual byte Feline_Carving_L_Up_2 {
@@ -11172,7 +11378,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Carving_L_Up_3_displayName = "Feline Carving L: Up % 3";
-        public const int Feline_Carving_L_Up_3_sortIndex = 42000;
+        public const int Feline_Carving_L_Up_3_sortIndex = 43100;
         [SortOrder(Feline_Carving_L_Up_3_sortIndex)]
         [DisplayName(Feline_Carving_L_Up_3_displayName)]
         public virtual byte Feline_Carving_L_Up_3 {
@@ -11186,7 +11392,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Carving_L_Up_4_displayName = "Feline Carving L: Up % 4";
-        public const int Feline_Carving_L_Up_4_sortIndex = 42050;
+        public const int Feline_Carving_L_Up_4_sortIndex = 43150;
         [SortOrder(Feline_Carving_L_Up_4_sortIndex)]
         [DisplayName(Feline_Carving_L_Up_4_displayName)]
         public virtual byte Feline_Carving_L_Up_4 {
@@ -11199,16 +11405,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __42100_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __42100_sortIndex = 42100;
-        [SortOrder(__42100_sortIndex)]
-        [DisplayName(__42100_displayName)]
-        public virtual byte __42100 {
+        public const string __43200_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __43200_sortIndex = 43200;
+        [SortOrder(__43200_sortIndex)]
+        [DisplayName(__43200_displayName)]
+        public virtual byte __43200 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Carving_S_Lottery__displayName = "Feline Carving S: Lottery %";
-        public const int Feline_Carving_S_Lottery__sortIndex = 42150;
+        public const int Feline_Carving_S_Lottery__sortIndex = 43250;
         [SortOrder(Feline_Carving_S_Lottery__sortIndex)]
         [DisplayName(Feline_Carving_S_Lottery__displayName)]
         public virtual byte Feline_Carving_S_Lottery_ {
@@ -11222,7 +11428,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Carving_S_Up__displayName = "Feline Carving S: Up %";
-        public const int Feline_Carving_S_Up__sortIndex = 42200;
+        public const int Feline_Carving_S_Up__sortIndex = 43300;
         [SortOrder(Feline_Carving_S_Up__sortIndex)]
         [DisplayName(Feline_Carving_S_Up__displayName)]
         public virtual byte Feline_Carving_S_Up_ {
@@ -11235,16 +11441,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __42250_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __42250_sortIndex = 42250;
-        [SortOrder(__42250_sortIndex)]
-        [DisplayName(__42250_displayName)]
-        public virtual byte __42250 {
+        public const string __43350_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __43350_sortIndex = 43350;
+        [SortOrder(__43350_sortIndex)]
+        [DisplayName(__43350_displayName)]
+        public virtual byte __43350 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Medic_Heal_Rate_displayName = "Feline Medic: Heal Rate";
-        public const int Feline_Medic_Heal_Rate_sortIndex = 42300;
+        public const int Feline_Medic_Heal_Rate_sortIndex = 43400;
         [SortOrder(Feline_Medic_Heal_Rate_sortIndex)]
         [DisplayName(Feline_Medic_Heal_Rate_displayName)]
         public virtual float Feline_Medic_Heal_Rate {
@@ -11257,16 +11463,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __42350_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __42350_sortIndex = 42350;
-        [SortOrder(__42350_sortIndex)]
-        [DisplayName(__42350_displayName)]
-        public virtual byte __42350 {
+        public const string __43450_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __43450_sortIndex = 43450;
+        [SortOrder(__43450_sortIndex)]
+        [DisplayName(__43450_displayName)]
+        public virtual byte __43450 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Black_Belt_Stamina_Rate_displayName = "Feline Black Belt: Stamina Rate";
-        public const int Feline_Black_Belt_Stamina_Rate_sortIndex = 42400;
+        public const int Feline_Black_Belt_Stamina_Rate_sortIndex = 43500;
         [SortOrder(Feline_Black_Belt_Stamina_Rate_sortIndex)]
         [DisplayName(Feline_Black_Belt_Stamina_Rate_displayName)]
         public virtual float Feline_Black_Belt_Stamina_Rate {
@@ -11279,16 +11485,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __42450_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __42450_sortIndex = 42450;
-        [SortOrder(__42450_sortIndex)]
-        [DisplayName(__42450_displayName)]
-        public virtual byte __42450 {
+        public const string __43550_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __43550_sortIndex = 43550;
+        [SortOrder(__43550_sortIndex)]
+        [DisplayName(__43550_displayName)]
+        public virtual byte __43550 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Special_Attack_Condition_Attack_Bonus_displayName = "Feline Special Attack: Condition Attack Bonus";
-        public const int Feline_Special_Attack_Condition_Attack_Bonus_sortIndex = 42500;
+        public const int Feline_Special_Attack_Condition_Attack_Bonus_sortIndex = 43600;
         [SortOrder(Feline_Special_Attack_Condition_Attack_Bonus_sortIndex)]
         [DisplayName(Feline_Special_Attack_Condition_Attack_Bonus_displayName)]
         public virtual ushort Feline_Special_Attack_Condition_Attack_Bonus {
@@ -11302,7 +11508,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Special_Attack_Capture_Attack_Rate_displayName = "Feline Special Attack: Capture Attack Rate";
-        public const int Feline_Special_Attack_Capture_Attack_Rate_sortIndex = 42550;
+        public const int Feline_Special_Attack_Capture_Attack_Rate_sortIndex = 43650;
         [SortOrder(Feline_Special_Attack_Capture_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Special_Attack_Capture_Attack_Rate_displayName)]
         public virtual float Feline_Special_Attack_Capture_Attack_Rate {
@@ -11315,16 +11521,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __42600_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __42600_sortIndex = 42600;
-        [SortOrder(__42600_sortIndex)]
-        [DisplayName(__42600_displayName)]
-        public virtual byte __42600 {
+        public const string __43700_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __43700_sortIndex = 43700;
+        [SortOrder(__43700_sortIndex)]
+        [DisplayName(__43700_displayName)]
+        public virtual byte __43700 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Defense_S__displayName = "Feline Defense S: %";
-        public const int Feline_Defense_S__sortIndex = 42650;
+        public const int Feline_Defense_S__sortIndex = 43750;
         [SortOrder(Feline_Defense_S__sortIndex)]
         [DisplayName(Feline_Defense_S__displayName)]
         public virtual byte Feline_Defense_S_ {
@@ -11338,7 +11544,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Defense_S_Damage_Rate_displayName = "Feline Defense S: Damage Rate";
-        public const int Feline_Defense_S_Damage_Rate_sortIndex = 42700;
+        public const int Feline_Defense_S_Damage_Rate_sortIndex = 43800;
         [SortOrder(Feline_Defense_S_Damage_Rate_sortIndex)]
         [DisplayName(Feline_Defense_S_Damage_Rate_displayName)]
         public virtual float Feline_Defense_S_Damage_Rate {
@@ -11352,7 +11558,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Defense_L__displayName = "Feline Defense L: %";
-        public const int Feline_Defense_L__sortIndex = 42750;
+        public const int Feline_Defense_L__sortIndex = 43850;
         [SortOrder(Feline_Defense_L__sortIndex)]
         [DisplayName(Feline_Defense_L__displayName)]
         public virtual byte Feline_Defense_L_ {
@@ -11366,7 +11572,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Defense_L_Damage_Rate_displayName = "Feline Defense L: Damage Rate";
-        public const int Feline_Defense_L_Damage_Rate_sortIndex = 42800;
+        public const int Feline_Defense_L_Damage_Rate_sortIndex = 43900;
         [SortOrder(Feline_Defense_L_Damage_Rate_sortIndex)]
         [DisplayName(Feline_Defense_L_Damage_Rate_displayName)]
         public virtual float Feline_Defense_L_Damage_Rate {
@@ -11379,16 +11585,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __42850_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __42850_sortIndex = 42850;
-        [SortOrder(__42850_sortIndex)]
-        [DisplayName(__42850_displayName)]
-        public virtual byte __42850 {
+        public const string __43950_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __43950_sortIndex = 43950;
+        [SortOrder(__43950_sortIndex)]
+        [DisplayName(__43950_displayName)]
+        public virtual byte __43950 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Harvest_Cooldown_Multiplier_displayName = "Feline Harvest: Cooldown Multiplier";
-        public const int Feline_Harvest_Cooldown_Multiplier_sortIndex = 42900;
+        public const int Feline_Harvest_Cooldown_Multiplier_sortIndex = 44000;
         [SortOrder(Feline_Harvest_Cooldown_Multiplier_sortIndex)]
         [DisplayName(Feline_Harvest_Cooldown_Multiplier_displayName)]
         public virtual float Feline_Harvest_Cooldown_Multiplier {
@@ -11401,16 +11607,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __42950_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __42950_sortIndex = 42950;
-        [SortOrder(__42950_sortIndex)]
-        [DisplayName(__42950_displayName)]
-        public virtual byte __42950 {
+        public const string __44050_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __44050_sortIndex = 44050;
+        [SortOrder(__44050_sortIndex)]
+        [DisplayName(__44050_displayName)]
+        public virtual byte __44050 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Sharpshooter_Shell_Attack_Rate_displayName = "Feline Sharpshooter: Shell Attack Rate";
-        public const int Feline_Sharpshooter_Shell_Attack_Rate_sortIndex = 43000;
+        public const int Feline_Sharpshooter_Shell_Attack_Rate_sortIndex = 44100;
         [SortOrder(Feline_Sharpshooter_Shell_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Sharpshooter_Shell_Attack_Rate_displayName)]
         public virtual float Feline_Sharpshooter_Shell_Attack_Rate {
@@ -11423,16 +11629,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __43050_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __43050_sortIndex = 43050;
-        [SortOrder(__43050_sortIndex)]
-        [DisplayName(__43050_displayName)]
-        public virtual byte __43050 {
+        public const string __44150_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __44150_sortIndex = 44150;
+        [SortOrder(__44150_sortIndex)]
+        [DisplayName(__44150_displayName)]
+        public virtual byte __44150 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Escape_Artist_Dash_Stamina_Rate_displayName = "Feline Escape Artist: Dash Stamina Rate";
-        public const int Feline_Escape_Artist_Dash_Stamina_Rate_sortIndex = 43100;
+        public const int Feline_Escape_Artist_Dash_Stamina_Rate_sortIndex = 44200;
         [SortOrder(Feline_Escape_Artist_Dash_Stamina_Rate_sortIndex)]
         [DisplayName(Feline_Escape_Artist_Dash_Stamina_Rate_displayName)]
         public virtual float Feline_Escape_Artist_Dash_Stamina_Rate {
@@ -11445,16 +11651,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __43150_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __43150_sortIndex = 43150;
-        [SortOrder(__43150_sortIndex)]
-        [DisplayName(__43150_displayName)]
-        public virtual byte __43150 {
+        public const string __44250_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __44250_sortIndex = 44250;
+        [SortOrder(__44250_sortIndex)]
+        [DisplayName(__44250_displayName)]
+        public virtual byte __44250 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Delivery_Dash_Stamina_Rate_displayName = "Feline Delivery: Dash Stamina Rate";
-        public const int Feline_Delivery_Dash_Stamina_Rate_sortIndex = 43200;
+        public const int Feline_Delivery_Dash_Stamina_Rate_sortIndex = 44300;
         [SortOrder(Feline_Delivery_Dash_Stamina_Rate_sortIndex)]
         [DisplayName(Feline_Delivery_Dash_Stamina_Rate_displayName)]
         public virtual float Feline_Delivery_Dash_Stamina_Rate {
@@ -11467,16 +11673,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __43250_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __43250_sortIndex = 43250;
-        [SortOrder(__43250_sortIndex)]
-        [DisplayName(__43250_displayName)]
-        public virtual byte __43250 {
+        public const string __44350_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __44350_sortIndex = 44350;
+        [SortOrder(__44350_sortIndex)]
+        [DisplayName(__44350_displayName)]
+        public virtual byte __44350 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Riser_S_IFrames_displayName = "Feline Riser S: IFrames";
-        public const int Feline_Riser_S_IFrames_sortIndex = 43300;
+        public const int Feline_Riser_S_IFrames_sortIndex = 44400;
         [SortOrder(Feline_Riser_S_IFrames_sortIndex)]
         [DisplayName(Feline_Riser_S_IFrames_displayName)]
         public virtual float Feline_Riser_S_IFrames {
@@ -11490,7 +11696,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Riser_L_IFrames_displayName = "Feline Riser L: IFrames";
-        public const int Feline_Riser_L_IFrames_sortIndex = 43350;
+        public const int Feline_Riser_L_IFrames_sortIndex = 44450;
         [SortOrder(Feline_Riser_L_IFrames_sortIndex)]
         [DisplayName(Feline_Riser_L_IFrames_displayName)]
         public virtual float Feline_Riser_L_IFrames {
@@ -11503,16 +11709,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __43400_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __43400_sortIndex = 43400;
-        [SortOrder(__43400_sortIndex)]
-        [DisplayName(__43400_displayName)]
-        public virtual byte __43400 {
+        public const string __44500_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __44500_sortIndex = 44500;
+        [SortOrder(__44500_sortIndex)]
+        [DisplayName(__44500_displayName)]
+        public virtual byte __44500 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Temper_Shell_Attack_Rate_displayName = "Feline Temper: Shell Attack Rate";
-        public const int Feline_Temper_Shell_Attack_Rate_sortIndex = 43450;
+        public const int Feline_Temper_Shell_Attack_Rate_sortIndex = 44550;
         [SortOrder(Feline_Temper_Shell_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Temper_Shell_Attack_Rate_displayName)]
         public virtual float Feline_Temper_Shell_Attack_Rate {
@@ -11526,7 +11732,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Temper_Blur_Level_Bonus_displayName = "Feline Temper: Blur Level Bonus";
-        public const int Feline_Temper_Blur_Level_Bonus_sortIndex = 43500;
+        public const int Feline_Temper_Blur_Level_Bonus_sortIndex = 44600;
         [SortOrder(Feline_Temper_Blur_Level_Bonus_sortIndex)]
         [DisplayName(Feline_Temper_Blur_Level_Bonus_displayName)]
         public virtual byte Feline_Temper_Blur_Level_Bonus {
@@ -11539,16 +11745,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __43550_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __43550_sortIndex = 43550;
-        [SortOrder(__43550_sortIndex)]
-        [DisplayName(__43550_displayName)]
-        public virtual byte __43550 {
+        public const string __44650_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __44650_sortIndex = 44650;
+        [SortOrder(__44650_sortIndex)]
+        [DisplayName(__44650_displayName)]
+        public virtual byte __44650 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Cliffhanger_Stamina_Rate_displayName = "Feline Cliffhanger: Stamina Rate";
-        public const int Feline_Cliffhanger_Stamina_Rate_sortIndex = 43600;
+        public const int Feline_Cliffhanger_Stamina_Rate_sortIndex = 44700;
         [SortOrder(Feline_Cliffhanger_Stamina_Rate_sortIndex)]
         [DisplayName(Feline_Cliffhanger_Stamina_Rate_displayName)]
         public virtual float Feline_Cliffhanger_Stamina_Rate {
@@ -11561,16 +11767,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __43650_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __43650_sortIndex = 43650;
-        [SortOrder(__43650_sortIndex)]
-        [DisplayName(__43650_displayName)]
-        public virtual byte __43650 {
+        public const string __44750_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __44750_sortIndex = 44750;
+        [SortOrder(__44750_sortIndex)]
+        [DisplayName(__44750_displayName)]
+        public virtual byte __44750 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Slugger_Stun_Attack_Rate_displayName = "Feline Slugger: Stun Attack Rate";
-        public const int Feline_Slugger_Stun_Attack_Rate_sortIndex = 43700;
+        public const int Feline_Slugger_Stun_Attack_Rate_sortIndex = 44800;
         [SortOrder(Feline_Slugger_Stun_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Slugger_Stun_Attack_Rate_displayName)]
         public virtual float Feline_Slugger_Stun_Attack_Rate {
@@ -11583,16 +11789,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __43750_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __43750_sortIndex = 43750;
-        [SortOrder(__43750_sortIndex)]
-        [DisplayName(__43750_displayName)]
-        public virtual byte __43750 {
+        public const string __44850_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __44850_sortIndex = 44850;
+        [SortOrder(__44850_sortIndex)]
+        [DisplayName(__44850_displayName)]
+        public virtual byte __44850 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Bombardier_Ballista_Attack_Rate_displayName = "Feline Bombardier: Ballista Attack Rate";
-        public const int Feline_Bombardier_Ballista_Attack_Rate_sortIndex = 43800;
+        public const int Feline_Bombardier_Ballista_Attack_Rate_sortIndex = 44900;
         [SortOrder(Feline_Bombardier_Ballista_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Bombardier_Ballista_Attack_Rate_displayName)]
         public virtual float Feline_Bombardier_Ballista_Attack_Rate {
@@ -11606,7 +11812,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Bombardier_Cannon_Attack_Rate_displayName = "Feline Bombardier: Cannon Attack Rate";
-        public const int Feline_Bombardier_Cannon_Attack_Rate_sortIndex = 43850;
+        public const int Feline_Bombardier_Cannon_Attack_Rate_sortIndex = 44950;
         [SortOrder(Feline_Bombardier_Cannon_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Bombardier_Cannon_Attack_Rate_displayName)]
         public virtual float Feline_Bombardier_Cannon_Attack_Rate {
@@ -11620,7 +11826,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Bombardier_Gunlance_Shell_Attack_Rate_displayName = "Feline Bombardier: Gunlance Shell Attack Rate";
-        public const int Feline_Bombardier_Gunlance_Shell_Attack_Rate_sortIndex = 43900;
+        public const int Feline_Bombardier_Gunlance_Shell_Attack_Rate_sortIndex = 45000;
         [SortOrder(Feline_Bombardier_Gunlance_Shell_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Bombardier_Gunlance_Shell_Attack_Rate_displayName)]
         public virtual float Feline_Bombardier_Gunlance_Shell_Attack_Rate {
@@ -11634,7 +11840,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_displayName = "Feline Bombardier: Gunlance WyvernFire Attack Rate";
-        public const int Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_sortIndex = 43950;
+        public const int Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_sortIndex = 45050;
         [SortOrder(Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_displayName)]
         public virtual float Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate {
@@ -11648,7 +11854,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_displayName = "Feline Bombardier: Gunlance Wyrmstake Cannon Attack Rate";
-        public const int Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_sortIndex = 44000;
+        public const int Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_sortIndex = 45100;
         [SortOrder(Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_displayName)]
         public virtual float Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate {
@@ -11662,7 +11868,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_displayName = "Feline Bombardier: Charge Blade Impact Phial Attack Rate";
-        public const int Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_sortIndex = 44050;
+        public const int Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_sortIndex = 45150;
         [SortOrder(Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_displayName)]
         public virtual float Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate {
@@ -11676,7 +11882,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_displayName = "Feline Bombardier: Bowgun Sticky Ammo Attack Rate";
-        public const int Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_sortIndex = 44100;
+        public const int Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_sortIndex = 45200;
         [SortOrder(Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_displayName)]
         public virtual float Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate {
@@ -11690,7 +11896,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_displayName = "Feline Bombardier: Bowgun Wyvern Ammo Attack Rate";
-        public const int Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_sortIndex = 44150;
+        public const int Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_sortIndex = 45250;
         [SortOrder(Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_sortIndex)]
         [DisplayName(Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_displayName)]
         public virtual float Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate {
@@ -11703,16 +11909,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __44200_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __44200_sortIndex = 44200;
-        [SortOrder(__44200_sortIndex)]
-        [DisplayName(__44200_displayName)]
-        public virtual byte __44200 {
+        public const string __45300_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __45300_sortIndex = 45300;
+        [SortOrder(__45300_sortIndex)]
+        [DisplayName(__45300_displayName)]
+        public virtual byte __45300 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Moxie_Health_Threshold_displayName = "Feline Moxie: Health Threshold";
-        public const int Feline_Moxie_Health_Threshold_sortIndex = 44250;
+        public const int Feline_Moxie_Health_Threshold_sortIndex = 45350;
         [SortOrder(Feline_Moxie_Health_Threshold_sortIndex)]
         [DisplayName(Feline_Moxie_Health_Threshold_displayName)]
         public virtual byte Feline_Moxie_Health_Threshold {
@@ -11725,16 +11931,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __44300_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __44300_sortIndex = 44300;
-        [SortOrder(__44300_sortIndex)]
-        [DisplayName(__44300_displayName)]
-        public virtual byte __44300 {
+        public const string __45400_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __45400_sortIndex = 45400;
+        [SortOrder(__45400_sortIndex)]
+        [DisplayName(__45400_displayName)]
+        public virtual byte __45400 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Dungmaster_Escape_Bonus_displayName = "Feline Dungmaster: Escape % Bonus";
-        public const int Feline_Dungmaster_Escape_Bonus_sortIndex = 44350;
+        public const int Feline_Dungmaster_Escape_Bonus_sortIndex = 45450;
         [SortOrder(Feline_Dungmaster_Escape_Bonus_sortIndex)]
         [DisplayName(Feline_Dungmaster_Escape_Bonus_displayName)]
         public virtual byte Feline_Dungmaster_Escape_Bonus {
@@ -11747,16 +11953,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __44400_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __44400_sortIndex = 44400;
-        [SortOrder(__44400_sortIndex)]
-        [DisplayName(__44400_displayName)]
-        public virtual byte __44400 {
+        public const string __45500_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __45500_sortIndex = 45500;
+        [SortOrder(__45500_sortIndex)]
+        [DisplayName(__45500_displayName)]
+        public virtual byte __45500 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Provoker_Rate_displayName = "Feline Provoker: Rate";
-        public const int Feline_Provoker_Rate_sortIndex = 44450;
+        public const int Feline_Provoker_Rate_sortIndex = 45550;
         [SortOrder(Feline_Provoker_Rate_sortIndex)]
         [DisplayName(Feline_Provoker_Rate_displayName)]
         public virtual float Feline_Provoker_Rate {
@@ -11769,16 +11975,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __44500_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __44500_sortIndex = 44500;
-        [SortOrder(__44500_sortIndex)]
-        [DisplayName(__44500_displayName)]
-        public virtual byte __44500 {
+        public const string __45600_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __45600_sortIndex = 45600;
+        [SortOrder(__45600_sortIndex)]
+        [DisplayName(__45600_displayName)]
+        public virtual byte __45600 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Cool_Cat_Power_UP_Time_Needed_displayName = "Feline Cool Cat: Power UP Time Needed";
-        public const int Feline_Cool_Cat_Power_UP_Time_Needed_sortIndex = 44550;
+        public const int Feline_Cool_Cat_Power_UP_Time_Needed_sortIndex = 45650;
         [SortOrder(Feline_Cool_Cat_Power_UP_Time_Needed_sortIndex)]
         [DisplayName(Feline_Cool_Cat_Power_UP_Time_Needed_displayName)]
         public virtual float Feline_Cool_Cat_Power_UP_Time_Needed {
@@ -11792,7 +11998,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Cool_Cat_Power_UP_Duration_displayName = "Feline Cool Cat: Power UP Duration";
-        public const int Feline_Cool_Cat_Power_UP_Duration_sortIndex = 44600;
+        public const int Feline_Cool_Cat_Power_UP_Duration_sortIndex = 45700;
         [SortOrder(Feline_Cool_Cat_Power_UP_Duration_sortIndex)]
         [DisplayName(Feline_Cool_Cat_Power_UP_Duration_displayName)]
         public virtual float Feline_Cool_Cat_Power_UP_Duration {
@@ -11806,7 +12012,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Cool_Cat_Attack_Bonus_displayName = "Feline Cool Cat: Attack Bonus";
-        public const int Feline_Cool_Cat_Attack_Bonus_sortIndex = 44650;
+        public const int Feline_Cool_Cat_Attack_Bonus_sortIndex = 45750;
         [SortOrder(Feline_Cool_Cat_Attack_Bonus_sortIndex)]
         [DisplayName(Feline_Cool_Cat_Attack_Bonus_displayName)]
         public virtual float Feline_Cool_Cat_Attack_Bonus {
@@ -11819,16 +12025,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __44700_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __44700_sortIndex = 44700;
-        [SortOrder(__44700_sortIndex)]
-        [DisplayName(__44700_displayName)]
-        public virtual byte __44700 {
+        public const string __45800_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __45800_sortIndex = 45800;
+        [SortOrder(__45800_sortIndex)]
+        [DisplayName(__45800_displayName)]
+        public virtual byte __45800 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Booster_Attack_Bonus_displayName = "Feline Booster: Attack Bonus";
-        public const int Feline_Booster_Attack_Bonus_sortIndex = 44750;
+        public const int Feline_Booster_Attack_Bonus_sortIndex = 45850;
         [SortOrder(Feline_Booster_Attack_Bonus_sortIndex)]
         [DisplayName(Feline_Booster_Attack_Bonus_displayName)]
         public virtual float Feline_Booster_Attack_Bonus {
@@ -11842,7 +12048,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Booster_Defense_Bonus_displayName = "Feline Booster: Defense Bonus";
-        public const int Feline_Booster_Defense_Bonus_sortIndex = 44800;
+        public const int Feline_Booster_Defense_Bonus_sortIndex = 45900;
         [SortOrder(Feline_Booster_Defense_Bonus_sortIndex)]
         [DisplayName(Feline_Booster_Defense_Bonus_displayName)]
         public virtual float Feline_Booster_Defense_Bonus {
@@ -11856,7 +12062,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Booster_Duration_displayName = "Feline Booster: Duration";
-        public const int Feline_Booster_Duration_sortIndex = 44850;
+        public const int Feline_Booster_Duration_sortIndex = 45950;
         [SortOrder(Feline_Booster_Duration_sortIndex)]
         [DisplayName(Feline_Booster_Duration_displayName)]
         public virtual float Feline_Booster_Duration {
@@ -11869,16 +12075,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __44900_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __44900_sortIndex = 44900;
-        [SortOrder(__44900_sortIndex)]
-        [DisplayName(__44900_displayName)]
-        public virtual byte __44900 {
+        public const string __46000_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __46000_sortIndex = 46000;
+        [SortOrder(__46000_sortIndex)]
+        [DisplayName(__46000_displayName)]
+        public virtual byte __46000 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Groomer_Defense_Down_Duration_Multiplier_displayName = "Feline Groomer: Defense Down Duration Multiplier";
-        public const int Feline_Groomer_Defense_Down_Duration_Multiplier_sortIndex = 44950;
+        public const int Feline_Groomer_Defense_Down_Duration_Multiplier_sortIndex = 46050;
         [SortOrder(Feline_Groomer_Defense_Down_Duration_Multiplier_sortIndex)]
         [DisplayName(Feline_Groomer_Defense_Down_Duration_Multiplier_displayName)]
         public virtual float Feline_Groomer_Defense_Down_Duration_Multiplier {
@@ -11892,7 +12098,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Groomer_Element_Blight_Recovery_Multiplier_displayName = "Feline Groomer: Element Blight Recovery Multiplier";
-        public const int Feline_Groomer_Element_Blight_Recovery_Multiplier_sortIndex = 45000;
+        public const int Feline_Groomer_Element_Blight_Recovery_Multiplier_sortIndex = 46100;
         [SortOrder(Feline_Groomer_Element_Blight_Recovery_Multiplier_sortIndex)]
         [DisplayName(Feline_Groomer_Element_Blight_Recovery_Multiplier_displayName)]
         public virtual float Feline_Groomer_Element_Blight_Recovery_Multiplier {
@@ -11905,16 +12111,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __45050_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __45050_sortIndex = 45050;
-        [SortOrder(__45050_sortIndex)]
-        [DisplayName(__45050_displayName)]
-        public virtual byte __45050 {
+        public const string __46150_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __46150_sortIndex = 46150;
+        [SortOrder(__46150_sortIndex)]
+        [DisplayName(__46150_displayName)]
+        public virtual byte __46150 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Parting_Gift_Radius_displayName = "Feline Parting Gift: Radius";
-        public const int Feline_Parting_Gift_Radius_sortIndex = 45100;
+        public const int Feline_Parting_Gift_Radius_sortIndex = 46200;
         [SortOrder(Feline_Parting_Gift_Radius_sortIndex)]
         [DisplayName(Feline_Parting_Gift_Radius_displayName)]
         public virtual float Feline_Parting_Gift_Radius {
@@ -11928,7 +12134,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Parting_Gift_Recovery_Value_displayName = "Feline Parting Gift: Recovery Value";
-        public const int Feline_Parting_Gift_Recovery_Value_sortIndex = 45150;
+        public const int Feline_Parting_Gift_Recovery_Value_sortIndex = 46250;
         [SortOrder(Feline_Parting_Gift_Recovery_Value_sortIndex)]
         [DisplayName(Feline_Parting_Gift_Recovery_Value_displayName)]
         public virtual ushort Feline_Parting_Gift_Recovery_Value {
@@ -11941,16 +12147,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __45200_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __45200_sortIndex = 45200;
-        [SortOrder(__45200_sortIndex)]
-        [DisplayName(__45200_displayName)]
-        public virtual byte __45200 {
+        public const string __46300_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __46300_sortIndex = 46300;
+        [SortOrder(__46300_sortIndex)]
+        [DisplayName(__46300_displayName)]
+        public virtual byte __46300 {
             get => GetData<byte>(3);
         }
 
         public const string Feline_Recoil_Attack_Multiplier_1_displayName = "Feline Recoil: Attack Multiplier 1";
-        public const int Feline_Recoil_Attack_Multiplier_1_sortIndex = 45250;
+        public const int Feline_Recoil_Attack_Multiplier_1_sortIndex = 46350;
         [SortOrder(Feline_Recoil_Attack_Multiplier_1_sortIndex)]
         [DisplayName(Feline_Recoil_Attack_Multiplier_1_displayName)]
         public virtual float Feline_Recoil_Attack_Multiplier_1 {
@@ -11964,7 +12170,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Recoil_Attack_Multiplier_2_displayName = "Feline Recoil: Attack Multiplier 2";
-        public const int Feline_Recoil_Attack_Multiplier_2_sortIndex = 45300;
+        public const int Feline_Recoil_Attack_Multiplier_2_sortIndex = 46400;
         [SortOrder(Feline_Recoil_Attack_Multiplier_2_sortIndex)]
         [DisplayName(Feline_Recoil_Attack_Multiplier_2_displayName)]
         public virtual float Feline_Recoil_Attack_Multiplier_2 {
@@ -11978,7 +12184,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Recoil_Attack_Multiplier_3_displayName = "Feline Recoil: Attack Multiplier 3";
-        public const int Feline_Recoil_Attack_Multiplier_3_sortIndex = 45350;
+        public const int Feline_Recoil_Attack_Multiplier_3_sortIndex = 46450;
         [SortOrder(Feline_Recoil_Attack_Multiplier_3_sortIndex)]
         [DisplayName(Feline_Recoil_Attack_Multiplier_3_displayName)]
         public virtual float Feline_Recoil_Attack_Multiplier_3 {
@@ -11992,7 +12198,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Recoil_Attack_Multiplier_4_displayName = "Feline Recoil: Attack Multiplier 4";
-        public const int Feline_Recoil_Attack_Multiplier_4_sortIndex = 45400;
+        public const int Feline_Recoil_Attack_Multiplier_4_sortIndex = 46500;
         [SortOrder(Feline_Recoil_Attack_Multiplier_4_sortIndex)]
         [DisplayName(Feline_Recoil_Attack_Multiplier_4_displayName)]
         public virtual float Feline_Recoil_Attack_Multiplier_4 {
@@ -12006,7 +12212,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Feline_Recoil_Attack_Multiplier_5_displayName = "Feline Recoil: Attack Multiplier 5";
-        public const int Feline_Recoil_Attack_Multiplier_5_sortIndex = 45450;
+        public const int Feline_Recoil_Attack_Multiplier_5_sortIndex = 46550;
         [SortOrder(Feline_Recoil_Attack_Multiplier_5_sortIndex)]
         [DisplayName(Feline_Recoil_Attack_Multiplier_5_displayName)]
         public virtual float Feline_Recoil_Attack_Multiplier_5 {
@@ -12019,16 +12225,16 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __45500_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __45500_sortIndex = 45500;
-        [SortOrder(__45500_sortIndex)]
-        [DisplayName(__45500_displayName)]
-        public virtual byte __45500 {
+        public const string __46600_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __46600_sortIndex = 46600;
+        [SortOrder(__46600_sortIndex)]
+        [DisplayName(__46600_displayName)]
+        public virtual byte __46600 {
             get => GetData<byte>(3);
         }
 
         public const string Music_Skill_Bless_Random_Rate_displayName = "Music Skill: Bless: Random Rate";
-        public const int Music_Skill_Bless_Random_Rate_sortIndex = 45550;
+        public const int Music_Skill_Bless_Random_Rate_sortIndex = 46650;
         [SortOrder(Music_Skill_Bless_Random_Rate_sortIndex)]
         [DisplayName(Music_Skill_Bless_Random_Rate_displayName)]
         public virtual float Music_Skill_Bless_Random_Rate {
@@ -12042,7 +12248,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Music_Skill_Bless_Damage_Cut_Rate_displayName = "Music Skill: Bless: Damage Cut Rate";
-        public const int Music_Skill_Bless_Damage_Cut_Rate_sortIndex = 45600;
+        public const int Music_Skill_Bless_Damage_Cut_Rate_sortIndex = 46700;
         [SortOrder(Music_Skill_Bless_Damage_Cut_Rate_sortIndex)]
         [DisplayName(Music_Skill_Bless_Damage_Cut_Rate_displayName)]
         public virtual float Music_Skill_Bless_Damage_Cut_Rate {
@@ -12056,7 +12262,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Music_Skill_Extend_Time_displayName = "Music Skill: Extend: Time";
-        public const int Music_Skill_Extend_Time_sortIndex = 45650;
+        public const int Music_Skill_Extend_Time_sortIndex = 46750;
         [SortOrder(Music_Skill_Extend_Time_sortIndex)]
         [DisplayName(Music_Skill_Extend_Time_displayName)]
         public virtual float Music_Skill_Extend_Time {
@@ -12070,7 +12276,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Music_Skill_Extend_Time_Master_displayName = "Music Skill: Extend: Time Master";
-        public const int Music_Skill_Extend_Time_Master_sortIndex = 45700;
+        public const int Music_Skill_Extend_Time_Master_sortIndex = 46800;
         [SortOrder(Music_Skill_Extend_Time_Master_sortIndex)]
         [DisplayName(Music_Skill_Extend_Time_Master_displayName)]
         public virtual float Music_Skill_Extend_Time_Master {
@@ -12084,7 +12290,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Music_Skill_Major_Heal_Rand_Rate_displayName = "Music Skill: Major Heal: Rand Rate";
-        public const int Music_Skill_Major_Heal_Rand_Rate_sortIndex = 45750;
+        public const int Music_Skill_Major_Heal_Rand_Rate_sortIndex = 46850;
         [SortOrder(Music_Skill_Major_Heal_Rand_Rate_sortIndex)]
         [DisplayName(Music_Skill_Major_Heal_Rand_Rate_displayName)]
         public virtual float Music_Skill_Major_Heal_Rand_Rate {
@@ -12098,7 +12304,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Music_Skill_Major_Heal_Rand_Master_Rate_displayName = "Music Skill: Major Heal: Rand Master Rate";
-        public const int Music_Skill_Major_Heal_Rand_Master_Rate_sortIndex = 45800;
+        public const int Music_Skill_Major_Heal_Rand_Master_Rate_sortIndex = 46900;
         [SortOrder(Music_Skill_Major_Heal_Rand_Master_Rate_sortIndex)]
         [DisplayName(Music_Skill_Major_Heal_Rand_Master_Rate_displayName)]
         public virtual float Music_Skill_Major_Heal_Rand_Master_Rate {
@@ -12112,7 +12318,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Music_Skill_Heal_0_Minor_displayName = "Music Skill: Heal 0: Minor";
-        public const int Music_Skill_Heal_0_Minor_sortIndex = 45850;
+        public const int Music_Skill_Heal_0_Minor_sortIndex = 46950;
         [SortOrder(Music_Skill_Heal_0_Minor_sortIndex)]
         [DisplayName(Music_Skill_Heal_0_Minor_displayName)]
         public virtual float Music_Skill_Heal_0_Minor {
@@ -12126,7 +12332,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Music_Skill_Heal_0_Major_displayName = "Music Skill: Heal 0: Major";
-        public const int Music_Skill_Heal_0_Major_sortIndex = 45900;
+        public const int Music_Skill_Heal_0_Major_sortIndex = 47000;
         [SortOrder(Music_Skill_Heal_0_Major_sortIndex)]
         [DisplayName(Music_Skill_Heal_0_Major_displayName)]
         public virtual float Music_Skill_Heal_0_Major {
@@ -12140,7 +12346,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Music_Skill_Heal_1_Minor_displayName = "Music Skill: Heal 1: Minor";
-        public const int Music_Skill_Heal_1_Minor_sortIndex = 45950;
+        public const int Music_Skill_Heal_1_Minor_sortIndex = 47050;
         [SortOrder(Music_Skill_Heal_1_Minor_sortIndex)]
         [DisplayName(Music_Skill_Heal_1_Minor_displayName)]
         public virtual float Music_Skill_Heal_1_Minor {
@@ -12154,7 +12360,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Music_Skill_Heal_1_Major_displayName = "Music Skill: Heal 1: Major";
-        public const int Music_Skill_Heal_1_Major_sortIndex = 46000;
+        public const int Music_Skill_Heal_1_Major_sortIndex = 47100;
         [SortOrder(Music_Skill_Heal_1_Major_sortIndex)]
         [DisplayName(Music_Skill_Heal_1_Major_displayName)]
         public virtual float Music_Skill_Heal_1_Major {
@@ -12168,7 +12374,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Music_Skill_Heal_2_Minor_displayName = "Music Skill: Heal 2: Minor";
-        public const int Music_Skill_Heal_2_Minor_sortIndex = 46050;
+        public const int Music_Skill_Heal_2_Minor_sortIndex = 47150;
         [SortOrder(Music_Skill_Heal_2_Minor_sortIndex)]
         [DisplayName(Music_Skill_Heal_2_Minor_displayName)]
         public virtual float Music_Skill_Heal_2_Minor {
@@ -12182,7 +12388,7 @@ namespace MHW_Editor.PlData {
         }
 
         public const string Music_Skill_Heal_2_Major_displayName = "Music Skill: Heal 2: Major";
-        public const int Music_Skill_Heal_2_Major_sortIndex = 46100;
+        public const int Music_Skill_Heal_2_Major_sortIndex = 47200;
         [SortOrder(Music_Skill_Heal_2_Major_sortIndex)]
         [DisplayName(Music_Skill_Heal_2_Major_displayName)]
         public virtual float Music_Skill_Heal_2_Major {
@@ -12195,280 +12401,280 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string __46150_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __46150_sortIndex = 46150;
-        [SortOrder(__46150_sortIndex)]
-        [DisplayName(__46150_displayName)]
-        public virtual byte __46150 {
+        public const string __47250_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __47250_sortIndex = 47250;
+        [SortOrder(__47250_sortIndex)]
+        [DisplayName(__47250_displayName)]
+        public virtual byte __47250 {
             get => GetData<byte>(3);
         }
 
-        public const string Unk199_displayName = "Unk199";
-        public const int Unk199_sortIndex = 46200;
-        [SortOrder(Unk199_sortIndex)]
-        [DisplayName(Unk199_displayName)]
-        public virtual float Unk199 {
+        public const string Unk84_displayName = "Unk84";
+        public const int Unk84_sortIndex = 47300;
+        [SortOrder(Unk84_sortIndex)]
+        [DisplayName(Unk84_displayName)]
+        public virtual float Unk84 {
             get => GetData<float>(2165);
             set {
                 if (GetData<float>(2165) == value) return;
-                SetData(2165, value, nameof(Unk199));
+                SetData(2165, value, nameof(Unk84));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk199));
+                OnPropertyChanged(nameof(Unk84));
             }
         }
 
-        public const string Unk200_displayName = "Unk200";
-        public const int Unk200_sortIndex = 46250;
-        [SortOrder(Unk200_sortIndex)]
-        [DisplayName(Unk200_displayName)]
-        public virtual float Unk200 {
+        public const string Unk85_displayName = "Unk85";
+        public const int Unk85_sortIndex = 47350;
+        [SortOrder(Unk85_sortIndex)]
+        [DisplayName(Unk85_displayName)]
+        public virtual float Unk85 {
             get => GetData<float>(2169);
             set {
                 if (GetData<float>(2169) == value) return;
-                SetData(2169, value, nameof(Unk200));
+                SetData(2169, value, nameof(Unk85));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk200));
+                OnPropertyChanged(nameof(Unk85));
             }
         }
 
-        public const string Unk201_displayName = "Unk201";
-        public const int Unk201_sortIndex = 46300;
-        [SortOrder(Unk201_sortIndex)]
-        [DisplayName(Unk201_displayName)]
-        public virtual float Unk201 {
+        public const string Unk86_displayName = "Unk86";
+        public const int Unk86_sortIndex = 47400;
+        [SortOrder(Unk86_sortIndex)]
+        [DisplayName(Unk86_displayName)]
+        public virtual float Unk86 {
             get => GetData<float>(2173);
             set {
                 if (GetData<float>(2173) == value) return;
-                SetData(2173, value, nameof(Unk201));
+                SetData(2173, value, nameof(Unk86));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk201));
+                OnPropertyChanged(nameof(Unk86));
             }
         }
 
-        public const string Unk202_displayName = "Unk202";
-        public const int Unk202_sortIndex = 46350;
-        [SortOrder(Unk202_sortIndex)]
-        [DisplayName(Unk202_displayName)]
-        public virtual uint Unk202 {
+        public const string Unk87_displayName = "Unk87";
+        public const int Unk87_sortIndex = 47450;
+        [SortOrder(Unk87_sortIndex)]
+        [DisplayName(Unk87_displayName)]
+        public virtual uint Unk87 {
             get => GetData<uint>(2177);
             set {
                 if (GetData<uint>(2177) == value) return;
-                SetData(2177, value, nameof(Unk202));
+                SetData(2177, value, nameof(Unk87));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk202));
+                OnPropertyChanged(nameof(Unk87));
             }
         }
 
-        public const string Unk203_displayName = "Unk203";
-        public const int Unk203_sortIndex = 46400;
-        [SortOrder(Unk203_sortIndex)]
-        [DisplayName(Unk203_displayName)]
-        public virtual uint Unk203 {
+        public const string Unk88_displayName = "Unk88";
+        public const int Unk88_sortIndex = 47500;
+        [SortOrder(Unk88_sortIndex)]
+        [DisplayName(Unk88_displayName)]
+        public virtual uint Unk88 {
             get => GetData<uint>(2181);
             set {
                 if (GetData<uint>(2181) == value) return;
-                SetData(2181, value, nameof(Unk203));
+                SetData(2181, value, nameof(Unk88));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk203));
+                OnPropertyChanged(nameof(Unk88));
             }
         }
 
-        public const string Unk204_displayName = "Unk204";
-        public const int Unk204_sortIndex = 46450;
-        [SortOrder(Unk204_sortIndex)]
-        [DisplayName(Unk204_displayName)]
-        public virtual float Unk204 {
+        public const string Unk89_displayName = "Unk89";
+        public const int Unk89_sortIndex = 47550;
+        [SortOrder(Unk89_sortIndex)]
+        [DisplayName(Unk89_displayName)]
+        public virtual float Unk89 {
             get => GetData<float>(2185);
             set {
                 if (GetData<float>(2185) == value) return;
-                SetData(2185, value, nameof(Unk204));
+                SetData(2185, value, nameof(Unk89));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk204));
+                OnPropertyChanged(nameof(Unk89));
             }
         }
 
-        public const string Unk205_displayName = "Unk205";
-        public const int Unk205_sortIndex = 46500;
-        [SortOrder(Unk205_sortIndex)]
-        [DisplayName(Unk205_displayName)]
-        public virtual float Unk205 {
+        public const string Unk90_displayName = "Unk90";
+        public const int Unk90_sortIndex = 47600;
+        [SortOrder(Unk90_sortIndex)]
+        [DisplayName(Unk90_displayName)]
+        public virtual float Unk90 {
             get => GetData<float>(2189);
             set {
                 if (GetData<float>(2189) == value) return;
-                SetData(2189, value, nameof(Unk205));
+                SetData(2189, value, nameof(Unk90));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk205));
+                OnPropertyChanged(nameof(Unk90));
             }
         }
 
-        public const string Unk206_displayName = "Unk206";
-        public const int Unk206_sortIndex = 46550;
-        [SortOrder(Unk206_sortIndex)]
-        [DisplayName(Unk206_displayName)]
-        public virtual float Unk206 {
+        public const string Unk91_displayName = "Unk91";
+        public const int Unk91_sortIndex = 47650;
+        [SortOrder(Unk91_sortIndex)]
+        [DisplayName(Unk91_displayName)]
+        public virtual float Unk91 {
             get => GetData<float>(2193);
             set {
                 if (GetData<float>(2193) == value) return;
-                SetData(2193, value, nameof(Unk206));
+                SetData(2193, value, nameof(Unk91));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk206));
+                OnPropertyChanged(nameof(Unk91));
             }
         }
 
-        public const string Unk207_displayName = "Unk207";
-        public const int Unk207_sortIndex = 46600;
-        [SortOrder(Unk207_sortIndex)]
-        [DisplayName(Unk207_displayName)]
-        public virtual float Unk207 {
+        public const string Unk92_displayName = "Unk92";
+        public const int Unk92_sortIndex = 47700;
+        [SortOrder(Unk92_sortIndex)]
+        [DisplayName(Unk92_displayName)]
+        public virtual float Unk92 {
             get => GetData<float>(2197);
             set {
                 if (GetData<float>(2197) == value) return;
-                SetData(2197, value, nameof(Unk207));
+                SetData(2197, value, nameof(Unk92));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk207));
+                OnPropertyChanged(nameof(Unk92));
             }
         }
 
-        public const string Unk208_displayName = "Unk208";
-        public const int Unk208_sortIndex = 46650;
-        [SortOrder(Unk208_sortIndex)]
-        [DisplayName(Unk208_displayName)]
-        public virtual float Unk208 {
+        public const string Unk93_displayName = "Unk93";
+        public const int Unk93_sortIndex = 47750;
+        [SortOrder(Unk93_sortIndex)]
+        [DisplayName(Unk93_displayName)]
+        public virtual float Unk93 {
             get => GetData<float>(2201);
             set {
                 if (GetData<float>(2201) == value) return;
-                SetData(2201, value, nameof(Unk208));
+                SetData(2201, value, nameof(Unk93));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk208));
+                OnPropertyChanged(nameof(Unk93));
             }
         }
 
-        public const string Unk209_displayName = "Unk209";
-        public const int Unk209_sortIndex = 46700;
-        [SortOrder(Unk209_sortIndex)]
-        [DisplayName(Unk209_displayName)]
-        public virtual uint Unk209 {
+        public const string Unk94_displayName = "Unk94";
+        public const int Unk94_sortIndex = 47800;
+        [SortOrder(Unk94_sortIndex)]
+        [DisplayName(Unk94_displayName)]
+        public virtual uint Unk94 {
             get => GetData<uint>(2205);
             set {
                 if (GetData<uint>(2205) == value) return;
-                SetData(2205, value, nameof(Unk209));
+                SetData(2205, value, nameof(Unk94));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk209));
+                OnPropertyChanged(nameof(Unk94));
             }
         }
 
-        public const string Unk210_displayName = "Unk210";
-        public const int Unk210_sortIndex = 46750;
-        [SortOrder(Unk210_sortIndex)]
-        [DisplayName(Unk210_displayName)]
-        public virtual uint Unk210 {
+        public const string Unk95_displayName = "Unk95";
+        public const int Unk95_sortIndex = 47850;
+        [SortOrder(Unk95_sortIndex)]
+        [DisplayName(Unk95_displayName)]
+        public virtual uint Unk95 {
             get => GetData<uint>(2209);
             set {
                 if (GetData<uint>(2209) == value) return;
-                SetData(2209, value, nameof(Unk210));
+                SetData(2209, value, nameof(Unk95));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk210));
+                OnPropertyChanged(nameof(Unk95));
             }
         }
 
-        public const string Unk211_displayName = "Unk211";
-        public const int Unk211_sortIndex = 46800;
-        [SortOrder(Unk211_sortIndex)]
-        [DisplayName(Unk211_displayName)]
-        public virtual float Unk211 {
+        public const string Unk96_displayName = "Unk96";
+        public const int Unk96_sortIndex = 47900;
+        [SortOrder(Unk96_sortIndex)]
+        [DisplayName(Unk96_displayName)]
+        public virtual float Unk96 {
             get => GetData<float>(2213);
             set {
                 if (GetData<float>(2213) == value) return;
-                SetData(2213, value, nameof(Unk211));
+                SetData(2213, value, nameof(Unk96));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk211));
+                OnPropertyChanged(nameof(Unk96));
             }
         }
 
-        public const string Unk212_displayName = "Unk212";
-        public const int Unk212_sortIndex = 46850;
-        [SortOrder(Unk212_sortIndex)]
-        [DisplayName(Unk212_displayName)]
-        public virtual float Unk212 {
+        public const string Unk97_displayName = "Unk97";
+        public const int Unk97_sortIndex = 47950;
+        [SortOrder(Unk97_sortIndex)]
+        [DisplayName(Unk97_displayName)]
+        public virtual float Unk97 {
             get => GetData<float>(2217);
             set {
                 if (GetData<float>(2217) == value) return;
-                SetData(2217, value, nameof(Unk212));
+                SetData(2217, value, nameof(Unk97));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk212));
+                OnPropertyChanged(nameof(Unk97));
             }
         }
 
-        public const string Unk213_displayName = "Unk213";
-        public const int Unk213_sortIndex = 46900;
-        [SortOrder(Unk213_sortIndex)]
-        [DisplayName(Unk213_displayName)]
-        public virtual float Unk213 {
+        public const string Unk98_displayName = "Unk98";
+        public const int Unk98_sortIndex = 48000;
+        [SortOrder(Unk98_sortIndex)]
+        [DisplayName(Unk98_displayName)]
+        public virtual float Unk98 {
             get => GetData<float>(2221);
             set {
                 if (GetData<float>(2221) == value) return;
-                SetData(2221, value, nameof(Unk213));
+                SetData(2221, value, nameof(Unk98));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk213));
+                OnPropertyChanged(nameof(Unk98));
             }
         }
 
-        public const string Unk214_displayName = "Unk214";
-        public const int Unk214_sortIndex = 46950;
-        [SortOrder(Unk214_sortIndex)]
-        [DisplayName(Unk214_displayName)]
-        public virtual uint Unk214 {
+        public const string Unk99_displayName = "Unk99";
+        public const int Unk99_sortIndex = 48050;
+        [SortOrder(Unk99_sortIndex)]
+        [DisplayName(Unk99_displayName)]
+        public virtual uint Unk99 {
             get => GetData<uint>(2225);
             set {
                 if (GetData<uint>(2225) == value) return;
-                SetData(2225, value, nameof(Unk214));
+                SetData(2225, value, nameof(Unk99));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk214));
+                OnPropertyChanged(nameof(Unk99));
             }
         }
 
-        public const string Unk215_displayName = "Unk215";
-        public const int Unk215_sortIndex = 47000;
-        [SortOrder(Unk215_sortIndex)]
-        [DisplayName(Unk215_displayName)]
-        public virtual uint Unk215 {
+        public const string Unk100_displayName = "Unk100";
+        public const int Unk100_sortIndex = 48100;
+        [SortOrder(Unk100_sortIndex)]
+        [DisplayName(Unk100_displayName)]
+        public virtual uint Unk100 {
             get => GetData<uint>(2229);
             set {
                 if (GetData<uint>(2229) == value) return;
-                SetData(2229, value, nameof(Unk215));
+                SetData(2229, value, nameof(Unk100));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk215));
+                OnPropertyChanged(nameof(Unk100));
             }
         }
 
-        public const string Unk216_displayName = "Unk216";
-        public const int Unk216_sortIndex = 47050;
-        [SortOrder(Unk216_sortIndex)]
-        [DisplayName(Unk216_displayName)]
-        public virtual float Unk216 {
+        public const string Unk101_displayName = "Unk101";
+        public const int Unk101_sortIndex = 48150;
+        [SortOrder(Unk101_sortIndex)]
+        [DisplayName(Unk101_displayName)]
+        public virtual float Unk101 {
             get => GetData<float>(2233);
             set {
                 if (GetData<float>(2233) == value) return;
-                SetData(2233, value, nameof(Unk216));
+                SetData(2233, value, nameof(Unk101));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk216));
+                OnPropertyChanged(nameof(Unk101));
             }
         }
 
-        public const string Unk217_displayName = "Unk217";
-        public const int Unk217_sortIndex = 47100;
-        [SortOrder(Unk217_sortIndex)]
-        [DisplayName(Unk217_displayName)]
-        public virtual float Unk217 {
+        public const string Unk102_displayName = "Unk102";
+        public const int Unk102_sortIndex = 48200;
+        [SortOrder(Unk102_sortIndex)]
+        [DisplayName(Unk102_displayName)]
+        public virtual float Unk102 {
             get => GetData<float>(2237);
             set {
                 if (GetData<float>(2237) == value) return;
-                SetData(2237, value, nameof(Unk217));
+                SetData(2237, value, nameof(Unk102));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk217));
+                OnPropertyChanged(nameof(Unk102));
             }
         }
 
-        public const int lastSortIndex = 47150;
+        public const int lastSortIndex = 48250;
     }
 }
