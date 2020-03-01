@@ -194,7 +194,6 @@ namespace MHW_Editor {
                 case nameof(Melee.GMD_Description_Index):
                     e.Cancel = true; // Internal.
                     break;
-                case nameof(IMhwItem.Offset):
                 case nameof(IMhwItem.Raw_Data):
                     e.Cancel = !SHOW_RAW_BYTES; // Only for debug builds.
                     break;

@@ -298,23 +298,49 @@ namespace MHW_Editor.PlData {
         public byte Wp_MR_Augment_Defense_2_; // Offset: 8624
         public byte Wp_MR_Augment_Defense_3_; // Offset: 8625
         public byte Wp_MR_Augment_Defense_4_; // Offset: 8626
-        public byte IB_Unk1; // Offset: 8627
-        public byte IB_Unk2; // Offset: 8628
-        public byte IB_Unk3; // Offset: 8629
-        public byte IB_Unk4; // Offset: 8630
+        public byte Wp_MR_Augment_Defense_Percent_Activation_1_; // Offset: 8627
+        public byte Wp_MR_Augment_Defense_Percent_Activation_2_; // Offset: 8628
+        public byte Wp_MR_Augment_Defense_Percent_Activation_3_; // Offset: 8629
+        public byte Wp_MR_Augment_Defense_Percent_Activation_4_; // Offset: 8630
         public float Wp_MR_Augment_Defense_Percent_Reduction_1_; // Offset: 8631
         public float Wp_MR_Augment_Defense_Percent_Reduction_2_; // Offset: 8635
         public float Wp_MR_Augment_Defense_Percent_Reduction_3_; // Offset: 8639
-        public float Wp_MR_Augment_Defense_Percent_Activation; // Offset: 8643
+        public float Wp_MR_Augment_Defense_Percent_Reduction_4_; // Offset: 8643
         public float Wp_MR_Augment_Health_Percent_1_; // Offset: 8647
         public float Wp_MR_Augment_Health_Percent_2_; // Offset: 8651
         public float Wp_MR_Augment_Health_Percent_3_; // Offset: 8655
         public float Wp_MR_Augment_Health_Percent_4_; // Offset: 8659
-        public float IB_Unk5; // Offset: 8663
+        public float IB_Unk1; // Offset: 8663
         public float Wp_MR_Augment_Lifesteal_Cooldown; // Offset: 8667
         public byte Wp_MR_Augment_Element_1_; // Offset: 8671
         public byte Wp_MR_Augment_Element_2_; // Offset: 8672
         public byte Wp_MR_Augment_Element_3_; // Offset: 8673
         public byte Wp_MR_Augment_Element_4_; // Offset: 8674
+        public byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1_; // Offset: 8675
+        public byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2_; // Offset: 8676
+        public byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3_; // Offset: 8677
+        public byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4_; // Offset: 8678
+        public byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1_; // Offset: 8679
+        public byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2_; // Offset: 8680
+        public byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3_; // Offset: 8681
+        public byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4_; // Offset: 8682
+        public float Wp_MR_Augment_Great_Sword_Elemental_Multiplier; // Offset: 8683
+        public float Wp_MR_Augment_Sword_Shield_Elemental_Multiplier; // Offset: 8687
+        public float Wp_MR_Augment_Dual_Blades_Elemental_Multiplier; // Offset: 8691
+        public float Wp_MR_Augment_Long_Sword_Elemental_Multiplier; // Offset: 8695
+        public float Wp_MR_Augment_Hammer_Elemental_Multiplier; // Offset: 8699
+        public float Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier; // Offset: 8703
+        public float Wp_MR_Augment_Lance_Elemental_Multiplier; // Offset: 8707
+        public float Wp_MR_Augment_Gunlance_Elemental_Multiplier; // Offset: 8711
+        public float Wp_MR_Augment_Switch_Axe_Elemental_Multiplier; // Offset: 8715
+        public float Wp_MR_Augment_Charge_Blade_Elemental_Multiplier; // Offset: 8719
+        public float Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier; // Offset: 8723
+        public float Wp_MR_Augment_Bow_Elemental_Multiplier; // Offset: 8727
+        public float Wp_MR_Augment_HBG_Elemental_Multiplier; // Offset: 8731
+        public float Wp_MR_Augment_LBG_Elemental_Multiplier; // Offset: 8735
+        public float Wp_MR_Augment_Bow_Coating_Status_Multiplier_1_; // Offset: 8739
+        public float Wp_MR_Augment_Bow_Coating_Status_Multiplier_2_; // Offset: 8743
+        public float Wp_MR_Augment_Bow_Coating_Status_Multiplier_3_; // Offset: 8747
+        public float Wp_MR_Augment_Bow_Coating_Status_Multiplier_4_; // Offset: 8751
     }
 }

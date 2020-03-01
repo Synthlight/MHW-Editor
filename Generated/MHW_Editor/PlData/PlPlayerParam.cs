@@ -4227,59 +4227,59 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string IB_Unk1_displayName = "IB Unk1";
-        public const int IB_Unk1_sortIndex = 15400;
-        [SortOrder(IB_Unk1_sortIndex)]
-        [DisplayName(IB_Unk1_displayName)]
-        public virtual byte IB_Unk1 {
+        public const string Wp_MR_Augment_Defense_Percent_Activation_1__displayName = "Wp MR Augment Defense Percent Activation (1)";
+        public const int Wp_MR_Augment_Defense_Percent_Activation_1__sortIndex = 15400;
+        [SortOrder(Wp_MR_Augment_Defense_Percent_Activation_1__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Percent_Activation_1__displayName)]
+        public virtual byte Wp_MR_Augment_Defense_Percent_Activation_1_ {
             get => GetData<byte>(8627);
             set {
                 if (GetData<byte>(8627) == value) return;
-                SetData(8627, value, nameof(IB_Unk1));
+                SetData(8627, value, nameof(Wp_MR_Augment_Defense_Percent_Activation_1_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(IB_Unk1));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Activation_1_));
             }
         }
 
-        public const string IB_Unk2_displayName = "IB Unk2";
-        public const int IB_Unk2_sortIndex = 15450;
-        [SortOrder(IB_Unk2_sortIndex)]
-        [DisplayName(IB_Unk2_displayName)]
-        public virtual byte IB_Unk2 {
+        public const string Wp_MR_Augment_Defense_Percent_Activation_2__displayName = "Wp MR Augment Defense Percent Activation (2)";
+        public const int Wp_MR_Augment_Defense_Percent_Activation_2__sortIndex = 15450;
+        [SortOrder(Wp_MR_Augment_Defense_Percent_Activation_2__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Percent_Activation_2__displayName)]
+        public virtual byte Wp_MR_Augment_Defense_Percent_Activation_2_ {
             get => GetData<byte>(8628);
             set {
                 if (GetData<byte>(8628) == value) return;
-                SetData(8628, value, nameof(IB_Unk2));
+                SetData(8628, value, nameof(Wp_MR_Augment_Defense_Percent_Activation_2_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(IB_Unk2));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Activation_2_));
             }
         }
 
-        public const string IB_Unk3_displayName = "IB Unk3";
-        public const int IB_Unk3_sortIndex = 15500;
-        [SortOrder(IB_Unk3_sortIndex)]
-        [DisplayName(IB_Unk3_displayName)]
-        public virtual byte IB_Unk3 {
+        public const string Wp_MR_Augment_Defense_Percent_Activation_3__displayName = "Wp MR Augment Defense Percent Activation (3)";
+        public const int Wp_MR_Augment_Defense_Percent_Activation_3__sortIndex = 15500;
+        [SortOrder(Wp_MR_Augment_Defense_Percent_Activation_3__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Percent_Activation_3__displayName)]
+        public virtual byte Wp_MR_Augment_Defense_Percent_Activation_3_ {
             get => GetData<byte>(8629);
             set {
                 if (GetData<byte>(8629) == value) return;
-                SetData(8629, value, nameof(IB_Unk3));
+                SetData(8629, value, nameof(Wp_MR_Augment_Defense_Percent_Activation_3_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(IB_Unk3));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Activation_3_));
             }
         }
 
-        public const string IB_Unk4_displayName = "IB Unk4";
-        public const int IB_Unk4_sortIndex = 15550;
-        [SortOrder(IB_Unk4_sortIndex)]
-        [DisplayName(IB_Unk4_displayName)]
-        public virtual byte IB_Unk4 {
+        public const string Wp_MR_Augment_Defense_Percent_Activation_4__displayName = "Wp MR Augment Defense Percent Activation (4)";
+        public const int Wp_MR_Augment_Defense_Percent_Activation_4__sortIndex = 15550;
+        [SortOrder(Wp_MR_Augment_Defense_Percent_Activation_4__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Percent_Activation_4__displayName)]
+        public virtual byte Wp_MR_Augment_Defense_Percent_Activation_4_ {
             get => GetData<byte>(8630);
             set {
                 if (GetData<byte>(8630) == value) return;
-                SetData(8630, value, nameof(IB_Unk4));
+                SetData(8630, value, nameof(Wp_MR_Augment_Defense_Percent_Activation_4_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(IB_Unk4));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Activation_4_));
             }
         }
 
@@ -4325,17 +4325,17 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Wp_MR_Augment_Defense_Percent_Activation_displayName = "Wp MR Augment Defense Percent Activation";
-        public const int Wp_MR_Augment_Defense_Percent_Activation_sortIndex = 15750;
-        [SortOrder(Wp_MR_Augment_Defense_Percent_Activation_sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_Percent_Activation_displayName)]
-        public virtual float Wp_MR_Augment_Defense_Percent_Activation {
+        public const string Wp_MR_Augment_Defense_Percent_Reduction_4__displayName = "Wp MR Augment Defense Percent Reduction (4)";
+        public const int Wp_MR_Augment_Defense_Percent_Reduction_4__sortIndex = 15750;
+        [SortOrder(Wp_MR_Augment_Defense_Percent_Reduction_4__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Percent_Reduction_4__displayName)]
+        public virtual float Wp_MR_Augment_Defense_Percent_Reduction_4_ {
             get => GetData<float>(8643);
             set {
                 if (GetData<float>(8643) == value) return;
-                SetData(8643, value, nameof(Wp_MR_Augment_Defense_Percent_Activation));
+                SetData(8643, value, nameof(Wp_MR_Augment_Defense_Percent_Reduction_4_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Activation));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Reduction_4_));
             }
         }
 
@@ -4395,17 +4395,17 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string IB_Unk5_displayName = "IB Unk5";
-        public const int IB_Unk5_sortIndex = 16000;
-        [SortOrder(IB_Unk5_sortIndex)]
-        [DisplayName(IB_Unk5_displayName)]
-        public virtual float IB_Unk5 {
+        public const string IB_Unk1_displayName = "IB Unk1";
+        public const int IB_Unk1_sortIndex = 16000;
+        [SortOrder(IB_Unk1_sortIndex)]
+        [DisplayName(IB_Unk1_displayName)]
+        public virtual float IB_Unk1 {
             get => GetData<float>(8663);
             set {
                 if (GetData<float>(8663) == value) return;
-                SetData(8663, value, nameof(IB_Unk5));
+                SetData(8663, value, nameof(IB_Unk1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(IB_Unk5));
+                OnPropertyChanged(nameof(IB_Unk1));
             }
         }
 
@@ -4487,14 +4487,402 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string _Skipping_the_rest__16350_displayName = "------Skipping the rest.";
-        public const int _Skipping_the_rest__16350_sortIndex = 16350;
-        [SortOrder(_Skipping_the_rest__16350_sortIndex)]
-        [DisplayName(_Skipping_the_rest__16350_displayName)]
-        public virtual byte _Skipping_the_rest__16350 {
+        public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (1)";
+        public const int Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__sortIndex = 16350;
+        [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__displayName)]
+        public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1_ {
+            get => GetData<byte>(8675);
+            set {
+                if (GetData<byte>(8675) == value) return;
+                SetData(8675, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1_));
+            }
+        }
+
+        public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (2)";
+        public const int Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__sortIndex = 16400;
+        [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__displayName)]
+        public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2_ {
+            get => GetData<byte>(8676);
+            set {
+                if (GetData<byte>(8676) == value) return;
+                SetData(8676, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2_));
+            }
+        }
+
+        public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (3)";
+        public const int Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3__sortIndex = 16450;
+        [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3__displayName)]
+        public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3_ {
+            get => GetData<byte>(8677);
+            set {
+                if (GetData<byte>(8677) == value) return;
+                SetData(8677, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3_));
+            }
+        }
+
+        public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (4)";
+        public const int Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__sortIndex = 16500;
+        [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__displayName)]
+        public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4_ {
+            get => GetData<byte>(8678);
+            set {
+                if (GetData<byte>(8678) == value) return;
+                SetData(8678, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4_));
+            }
+        }
+
+        public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (1)";
+        public const int Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1__sortIndex = 16550;
+        [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1__displayName)]
+        public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1_ {
+            get => GetData<byte>(8679);
+            set {
+                if (GetData<byte>(8679) == value) return;
+                SetData(8679, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1_));
+            }
+        }
+
+        public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (2)";
+        public const int Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__sortIndex = 16600;
+        [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__displayName)]
+        public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2_ {
+            get => GetData<byte>(8680);
+            set {
+                if (GetData<byte>(8680) == value) return;
+                SetData(8680, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2_));
+            }
+        }
+
+        public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (3)";
+        public const int Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3__sortIndex = 16650;
+        [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3__displayName)]
+        public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3_ {
+            get => GetData<byte>(8681);
+            set {
+                if (GetData<byte>(8681) == value) return;
+                SetData(8681, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3_));
+            }
+        }
+
+        public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (4)";
+        public const int Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__sortIndex = 16700;
+        [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__displayName)]
+        public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4_ {
+            get => GetData<byte>(8682);
+            set {
+                if (GetData<byte>(8682) == value) return;
+                SetData(8682, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4_));
+            }
+        }
+
+        public const string __16750_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __16750_sortIndex = 16750;
+        [SortOrder(__16750_sortIndex)]
+        [DisplayName(__16750_displayName)]
+        public virtual byte __16750 {
             get => GetData<byte>(3);
         }
 
-        public const int lastSortIndex = 16400;
+        public const string Wp_MR_Augment_Great_Sword_Elemental_Multiplier_displayName = "Wp MR Augment Great Sword Elemental Multiplier";
+        public const int Wp_MR_Augment_Great_Sword_Elemental_Multiplier_sortIndex = 16800;
+        [SortOrder(Wp_MR_Augment_Great_Sword_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_Great_Sword_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_Great_Sword_Elemental_Multiplier {
+            get => GetData<float>(8683);
+            set {
+                if (GetData<float>(8683) == value) return;
+                SetData(8683, value, nameof(Wp_MR_Augment_Great_Sword_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Great_Sword_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_displayName = "Wp MR Augment Sword & Shield Elemental Multiplier";
+        public const int Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_sortIndex = 16850;
+        [SortOrder(Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_Sword_Shield_Elemental_Multiplier {
+            get => GetData<float>(8687);
+            set {
+                if (GetData<float>(8687) == value) return;
+                SetData(8687, value, nameof(Wp_MR_Augment_Sword_Shield_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Sword_Shield_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_Dual_Blades_Elemental_Multiplier_displayName = "Wp MR Augment Dual Blades Elemental Multiplier";
+        public const int Wp_MR_Augment_Dual_Blades_Elemental_Multiplier_sortIndex = 16900;
+        [SortOrder(Wp_MR_Augment_Dual_Blades_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_Dual_Blades_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_Dual_Blades_Elemental_Multiplier {
+            get => GetData<float>(8691);
+            set {
+                if (GetData<float>(8691) == value) return;
+                SetData(8691, value, nameof(Wp_MR_Augment_Dual_Blades_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Dual_Blades_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_Long_Sword_Elemental_Multiplier_displayName = "Wp MR Augment Long Sword Elemental Multiplier";
+        public const int Wp_MR_Augment_Long_Sword_Elemental_Multiplier_sortIndex = 16950;
+        [SortOrder(Wp_MR_Augment_Long_Sword_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_Long_Sword_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_Long_Sword_Elemental_Multiplier {
+            get => GetData<float>(8695);
+            set {
+                if (GetData<float>(8695) == value) return;
+                SetData(8695, value, nameof(Wp_MR_Augment_Long_Sword_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Long_Sword_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_Hammer_Elemental_Multiplier_displayName = "Wp MR Augment Hammer Elemental Multiplier";
+        public const int Wp_MR_Augment_Hammer_Elemental_Multiplier_sortIndex = 17000;
+        [SortOrder(Wp_MR_Augment_Hammer_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_Hammer_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_Hammer_Elemental_Multiplier {
+            get => GetData<float>(8699);
+            set {
+                if (GetData<float>(8699) == value) return;
+                SetData(8699, value, nameof(Wp_MR_Augment_Hammer_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Hammer_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_displayName = "Wp MR Augment Hunting Horn Elemental Multiplier";
+        public const int Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_sortIndex = 17050;
+        [SortOrder(Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier {
+            get => GetData<float>(8703);
+            set {
+                if (GetData<float>(8703) == value) return;
+                SetData(8703, value, nameof(Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_Lance_Elemental_Multiplier_displayName = "Wp MR Augment Lance Elemental Multiplier";
+        public const int Wp_MR_Augment_Lance_Elemental_Multiplier_sortIndex = 17100;
+        [SortOrder(Wp_MR_Augment_Lance_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_Lance_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_Lance_Elemental_Multiplier {
+            get => GetData<float>(8707);
+            set {
+                if (GetData<float>(8707) == value) return;
+                SetData(8707, value, nameof(Wp_MR_Augment_Lance_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Lance_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_Gunlance_Elemental_Multiplier_displayName = "Wp MR Augment Gunlance Elemental Multiplier";
+        public const int Wp_MR_Augment_Gunlance_Elemental_Multiplier_sortIndex = 17150;
+        [SortOrder(Wp_MR_Augment_Gunlance_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_Gunlance_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_Gunlance_Elemental_Multiplier {
+            get => GetData<float>(8711);
+            set {
+                if (GetData<float>(8711) == value) return;
+                SetData(8711, value, nameof(Wp_MR_Augment_Gunlance_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Gunlance_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_Switch_Axe_Elemental_Multiplier_displayName = "Wp MR Augment Switch Axe Elemental Multiplier";
+        public const int Wp_MR_Augment_Switch_Axe_Elemental_Multiplier_sortIndex = 17200;
+        [SortOrder(Wp_MR_Augment_Switch_Axe_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_Switch_Axe_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_Switch_Axe_Elemental_Multiplier {
+            get => GetData<float>(8715);
+            set {
+                if (GetData<float>(8715) == value) return;
+                SetData(8715, value, nameof(Wp_MR_Augment_Switch_Axe_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Switch_Axe_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_displayName = "Wp MR Augment Charge Blade Elemental Multiplier";
+        public const int Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_sortIndex = 17250;
+        [SortOrder(Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_Charge_Blade_Elemental_Multiplier {
+            get => GetData<float>(8719);
+            set {
+                if (GetData<float>(8719) == value) return;
+                SetData(8719, value, nameof(Wp_MR_Augment_Charge_Blade_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Charge_Blade_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier_displayName = "Wp MR Augment Insect Glaive Elemental Multiplier";
+        public const int Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier_sortIndex = 17300;
+        [SortOrder(Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier {
+            get => GetData<float>(8723);
+            set {
+                if (GetData<float>(8723) == value) return;
+                SetData(8723, value, nameof(Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_Bow_Elemental_Multiplier_displayName = "Wp MR Augment Bow Elemental Multiplier";
+        public const int Wp_MR_Augment_Bow_Elemental_Multiplier_sortIndex = 17350;
+        [SortOrder(Wp_MR_Augment_Bow_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bow_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_Bow_Elemental_Multiplier {
+            get => GetData<float>(8727);
+            set {
+                if (GetData<float>(8727) == value) return;
+                SetData(8727, value, nameof(Wp_MR_Augment_Bow_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bow_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_HBG_Elemental_Multiplier_displayName = "Wp MR Augment HBG Elemental Multiplier";
+        public const int Wp_MR_Augment_HBG_Elemental_Multiplier_sortIndex = 17400;
+        [SortOrder(Wp_MR_Augment_HBG_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_HBG_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_HBG_Elemental_Multiplier {
+            get => GetData<float>(8731);
+            set {
+                if (GetData<float>(8731) == value) return;
+                SetData(8731, value, nameof(Wp_MR_Augment_HBG_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_HBG_Elemental_Multiplier));
+            }
+        }
+
+        public const string Wp_MR_Augment_LBG_Elemental_Multiplier_displayName = "Wp MR Augment LBG Elemental Multiplier";
+        public const int Wp_MR_Augment_LBG_Elemental_Multiplier_sortIndex = 17450;
+        [SortOrder(Wp_MR_Augment_LBG_Elemental_Multiplier_sortIndex)]
+        [DisplayName(Wp_MR_Augment_LBG_Elemental_Multiplier_displayName)]
+        public virtual float Wp_MR_Augment_LBG_Elemental_Multiplier {
+            get => GetData<float>(8735);
+            set {
+                if (GetData<float>(8735) == value) return;
+                SetData(8735, value, nameof(Wp_MR_Augment_LBG_Elemental_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_LBG_Elemental_Multiplier));
+            }
+        }
+
+        public const string __17500_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __17500_sortIndex = 17500;
+        [SortOrder(__17500_sortIndex)]
+        [DisplayName(__17500_displayName)]
+        public virtual byte __17500 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__displayName = "Wp MR Augment Bow Coating Status Multiplier (1)";
+        public const int Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__sortIndex = 17550;
+        [SortOrder(Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__displayName)]
+        public virtual float Wp_MR_Augment_Bow_Coating_Status_Multiplier_1_ {
+            get => GetData<float>(8739);
+            set {
+                if (GetData<float>(8739) == value) return;
+                SetData(8739, value, nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_1_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_1_));
+            }
+        }
+
+        public const string Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__displayName = "Wp MR Augment Bow Coating Status Multiplier (2)";
+        public const int Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__sortIndex = 17600;
+        [SortOrder(Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__displayName)]
+        public virtual float Wp_MR_Augment_Bow_Coating_Status_Multiplier_2_ {
+            get => GetData<float>(8743);
+            set {
+                if (GetData<float>(8743) == value) return;
+                SetData(8743, value, nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_2_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_2_));
+            }
+        }
+
+        public const string Wp_MR_Augment_Bow_Coating_Status_Multiplier_3__displayName = "Wp MR Augment Bow Coating Status Multiplier (3)";
+        public const int Wp_MR_Augment_Bow_Coating_Status_Multiplier_3__sortIndex = 17650;
+        [SortOrder(Wp_MR_Augment_Bow_Coating_Status_Multiplier_3__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bow_Coating_Status_Multiplier_3__displayName)]
+        public virtual float Wp_MR_Augment_Bow_Coating_Status_Multiplier_3_ {
+            get => GetData<float>(8747);
+            set {
+                if (GetData<float>(8747) == value) return;
+                SetData(8747, value, nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_3_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_3_));
+            }
+        }
+
+        public const string Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__displayName = "Wp MR Augment Bow Coating Status Multiplier (4)";
+        public const int Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__sortIndex = 17700;
+        [SortOrder(Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__displayName)]
+        public virtual float Wp_MR_Augment_Bow_Coating_Status_Multiplier_4_ {
+            get => GetData<float>(8751);
+            set {
+                if (GetData<float>(8751) == value) return;
+                SetData(8751, value, nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_4_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_4_));
+            }
+        }
+
+        public const string __17750_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __17750_sortIndex = 17750;
+        [SortOrder(__17750_sortIndex)]
+        [DisplayName(__17750_displayName)]
+        public virtual byte __17750 {
+            get => GetData<byte>(3);
+        }
+
+        public const string _Skipping_the_rest__17800_displayName = "------Skipping the rest.";
+        public const int _Skipping_the_rest__17800_sortIndex = 17800;
+        [SortOrder(_Skipping_the_rest__17800_sortIndex)]
+        [DisplayName(_Skipping_the_rest__17800_displayName)]
+        public virtual byte _Skipping_the_rest__17800 {
+            get => GetData<byte>(3);
+        }
+
+        public const int lastSortIndex = 17850;
     }
 }

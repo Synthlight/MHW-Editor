@@ -1220,7 +1220,7 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Unk{i++}", 686, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 690, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 694, typeof(float)),
-                new MhwStructData.Entry($"Unk{i}", 698, typeof(uint)),
+                new MhwStructData.Entry($"Unk{i++}", 698, typeof(uint)),
                 new MhwStructData.Entry("Physical Attack Rate Limit", 702, typeof(float)),
                 new MhwStructData.Entry("Elemental Attack Rate Limit", 706, typeof(float)),
                 new MhwStructData.Entry("Condition Attack Flat Limit", 710, typeof(float)),
@@ -1340,15 +1340,15 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Wp MR Augment Defense (3)", 8625, typeof(byte)),
                 new MhwStructData.Entry("Wp MR Augment Defense (4)", 8626, typeof(byte)),
 
-                new MhwStructData.Entry($"IB Unk{n++}", 8627, typeof(byte)),
-                new MhwStructData.Entry($"IB Unk{n++}", 8628, typeof(byte)),
-                new MhwStructData.Entry($"IB Unk{n++}", 8629, typeof(byte)),
-                new MhwStructData.Entry($"IB Unk{n++}", 8630, typeof(byte)),
-
+                new MhwStructData.Entry("Wp MR Augment Defense Percent Activation (1)", 8627, typeof(byte)),
+                new MhwStructData.Entry("Wp MR Augment Defense Percent Activation (2)", 8628, typeof(byte)),
+                new MhwStructData.Entry("Wp MR Augment Defense Percent Activation (3)", 8629, typeof(byte)),
+                new MhwStructData.Entry("Wp MR Augment Defense Percent Activation (4)", 8630, typeof(byte)),
                 new MhwStructData.Entry("Wp MR Augment Defense Percent Reduction (1)", 8631, typeof(float)),
                 new MhwStructData.Entry("Wp MR Augment Defense Percent Reduction (2)", 8635, typeof(float)),
                 new MhwStructData.Entry("Wp MR Augment Defense Percent Reduction (3)", 8639, typeof(float)),
-                new MhwStructData.Entry("Wp MR Augment Defense Percent Activation", 8643, typeof(float)),
+                new MhwStructData.Entry("Wp MR Augment Defense Percent Reduction (4)", 8643, typeof(float)),
+
                 new MhwStructData.Entry("Wp MR Augment Health Percent (1)", 8647, typeof(float)),
                 new MhwStructData.Entry("Wp MR Augment Health Percent (2)", 8651, typeof(float)),
                 new MhwStructData.Entry("Wp MR Augment Health Percent (3)", 8655, typeof(float)),
@@ -1361,6 +1361,47 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Wp MR Augment Element (2)", 8672, typeof(byte)),
                 new MhwStructData.Entry("Wp MR Augment Element (3)", 8673, typeof(byte)),
                 new MhwStructData.Entry("Wp MR Augment Element (4)", 8674, typeof(byte)),
+
+                Spacer,
+
+                new MhwStructData.Entry("Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (1)", 8675, typeof(byte)),
+                new MhwStructData.Entry("Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (2)", 8676, typeof(byte)),
+                new MhwStructData.Entry("Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (3)", 8677, typeof(byte)),
+                new MhwStructData.Entry("Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (4)", 8678, typeof(byte)),
+                new MhwStructData.Entry("Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (1)", 8679, typeof(byte)),
+                new MhwStructData.Entry("Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (2)", 8680, typeof(byte)),
+                new MhwStructData.Entry("Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (3)", 8681, typeof(byte)),
+                new MhwStructData.Entry("Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (4)", 8682, typeof(byte)),
+
+                Spacer
+            });
+
+            var weapons = new List<string> {
+                "Great Sword",
+                "Sword & Shield",
+                "Dual Blades",
+                "Long Sword",
+                "Hammer",
+                "Hunting Horn",
+                "Lance",
+                "Gunlance",
+                "Switch Axe",
+                "Charge Blade",
+                "Insect Glaive",
+                "Bow",
+                "HBG",
+                "LBG"
+            };
+
+            entries.AddRange(weapons.Select((weapon, s) => new MhwStructData.Entry($"Wp MR Augment {weapon} Elemental Multiplier", 8683 + (ulong) s * 4, typeof(float))));
+
+            entries.AddRange(new List<MhwStructData.Entry> {
+                Spacer,
+
+                new MhwStructData.Entry("Wp MR Augment Bow Coating Status Multiplier (1)", 8739, typeof(float)),
+                new MhwStructData.Entry("Wp MR Augment Bow Coating Status Multiplier (2)", 8743, typeof(float)),
+                new MhwStructData.Entry("Wp MR Augment Bow Coating Status Multiplier (3)", 8747, typeof(float)),
+                new MhwStructData.Entry("Wp MR Augment Bow Coating Status Multiplier (4)", 8751, typeof(float)),
 
                 Spacer,
                 new MhwStructData.Entry("------Skipping the rest.", 3, typeof(byte), true, forceUnique: true)
