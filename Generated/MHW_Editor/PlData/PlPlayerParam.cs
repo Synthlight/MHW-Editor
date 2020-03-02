@@ -3771,213 +3771,213 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Wp_HR_Augment_Attack_Add_1__displayName = "Wp HR Augment Attack Add (1)";
-        public const int Wp_HR_Augment_Attack_Add_1__sortIndex = 13750;
-        [SortOrder(Wp_HR_Augment_Attack_Add_1__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Attack_Add_1__displayName)]
-        public virtual byte Wp_HR_Augment_Attack_Add_1_ {
+        public const string Wp_HR_Augment_Attack_Bonus_1__displayName = "Wp HR Augment Attack Bonus (1)";
+        public const int Wp_HR_Augment_Attack_Bonus_1__sortIndex = 13750;
+        [SortOrder(Wp_HR_Augment_Attack_Bonus_1__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Attack_Bonus_1__displayName)]
+        public virtual byte Wp_HR_Augment_Attack_Bonus_1_ {
             get => GetData<byte>(8571);
             set {
                 if (GetData<byte>(8571) == value) return;
-                SetData(8571, value, nameof(Wp_HR_Augment_Attack_Add_1_));
+                SetData(8571, value, nameof(Wp_HR_Augment_Attack_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Attack_Add_1_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Attack_Bonus_1_));
             }
         }
 
-        public const string Wp_HR_Augment_Attack_Add_2__displayName = "Wp HR Augment Attack Add (2)";
-        public const int Wp_HR_Augment_Attack_Add_2__sortIndex = 13800;
-        [SortOrder(Wp_HR_Augment_Attack_Add_2__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Attack_Add_2__displayName)]
-        public virtual byte Wp_HR_Augment_Attack_Add_2_ {
+        public const string Wp_HR_Augment_Attack_Bonus_2__displayName = "Wp HR Augment Attack Bonus (2)";
+        public const int Wp_HR_Augment_Attack_Bonus_2__sortIndex = 13800;
+        [SortOrder(Wp_HR_Augment_Attack_Bonus_2__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Attack_Bonus_2__displayName)]
+        public virtual byte Wp_HR_Augment_Attack_Bonus_2_ {
             get => GetData<byte>(8572);
             set {
                 if (GetData<byte>(8572) == value) return;
-                SetData(8572, value, nameof(Wp_HR_Augment_Attack_Add_2_));
+                SetData(8572, value, nameof(Wp_HR_Augment_Attack_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Attack_Add_2_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Attack_Bonus_2_));
             }
         }
 
-        public const string Wp_HR_Augment_Attack_Add_3__displayName = "Wp HR Augment Attack Add (3)";
-        public const int Wp_HR_Augment_Attack_Add_3__sortIndex = 13850;
-        [SortOrder(Wp_HR_Augment_Attack_Add_3__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Attack_Add_3__displayName)]
-        public virtual byte Wp_HR_Augment_Attack_Add_3_ {
+        public const string Wp_HR_Augment_Attack_Bonus_3__displayName = "Wp HR Augment Attack Bonus (3)";
+        public const int Wp_HR_Augment_Attack_Bonus_3__sortIndex = 13850;
+        [SortOrder(Wp_HR_Augment_Attack_Bonus_3__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Attack_Bonus_3__displayName)]
+        public virtual byte Wp_HR_Augment_Attack_Bonus_3_ {
             get => GetData<byte>(8573);
             set {
                 if (GetData<byte>(8573) == value) return;
-                SetData(8573, value, nameof(Wp_HR_Augment_Attack_Add_3_));
+                SetData(8573, value, nameof(Wp_HR_Augment_Attack_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Attack_Add_3_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Attack_Bonus_3_));
             }
         }
 
-        public const string Wp_HR_Augment_Critical_Add_1__displayName = "Wp HR Augment Critical Add (1)";
-        public const int Wp_HR_Augment_Critical_Add_1__sortIndex = 13900;
-        [SortOrder(Wp_HR_Augment_Critical_Add_1__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Critical_Add_1__displayName)]
-        public virtual byte Wp_HR_Augment_Critical_Add_1_ {
+        public const string Wp_HR_Augment_Critical_Bonus_1__displayName = "Wp HR Augment Critical Bonus (1)";
+        public const int Wp_HR_Augment_Critical_Bonus_1__sortIndex = 13900;
+        [SortOrder(Wp_HR_Augment_Critical_Bonus_1__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Critical_Bonus_1__displayName)]
+        public virtual byte Wp_HR_Augment_Critical_Bonus_1_ {
             get => GetData<byte>(8574);
             set {
                 if (GetData<byte>(8574) == value) return;
-                SetData(8574, value, nameof(Wp_HR_Augment_Critical_Add_1_));
+                SetData(8574, value, nameof(Wp_HR_Augment_Critical_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Critical_Add_1_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Critical_Bonus_1_));
             }
         }
 
-        public const string Wp_HR_Augment_Critical_Add_2__displayName = "Wp HR Augment Critical Add (2)";
-        public const int Wp_HR_Augment_Critical_Add_2__sortIndex = 13950;
-        [SortOrder(Wp_HR_Augment_Critical_Add_2__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Critical_Add_2__displayName)]
-        public virtual byte Wp_HR_Augment_Critical_Add_2_ {
+        public const string Wp_HR_Augment_Critical_Bonus_2__displayName = "Wp HR Augment Critical Bonus (2)";
+        public const int Wp_HR_Augment_Critical_Bonus_2__sortIndex = 13950;
+        [SortOrder(Wp_HR_Augment_Critical_Bonus_2__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Critical_Bonus_2__displayName)]
+        public virtual byte Wp_HR_Augment_Critical_Bonus_2_ {
             get => GetData<byte>(8575);
             set {
                 if (GetData<byte>(8575) == value) return;
-                SetData(8575, value, nameof(Wp_HR_Augment_Critical_Add_2_));
+                SetData(8575, value, nameof(Wp_HR_Augment_Critical_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Critical_Add_2_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Critical_Bonus_2_));
             }
         }
 
-        public const string Wp_HR_Augment_Critical_Add_3__displayName = "Wp HR Augment Critical Add (3)";
-        public const int Wp_HR_Augment_Critical_Add_3__sortIndex = 14000;
-        [SortOrder(Wp_HR_Augment_Critical_Add_3__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Critical_Add_3__displayName)]
-        public virtual byte Wp_HR_Augment_Critical_Add_3_ {
+        public const string Wp_HR_Augment_Critical_Bonus_3__displayName = "Wp HR Augment Critical Bonus (3)";
+        public const int Wp_HR_Augment_Critical_Bonus_3__sortIndex = 14000;
+        [SortOrder(Wp_HR_Augment_Critical_Bonus_3__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Critical_Bonus_3__displayName)]
+        public virtual byte Wp_HR_Augment_Critical_Bonus_3_ {
             get => GetData<byte>(8576);
             set {
                 if (GetData<byte>(8576) == value) return;
-                SetData(8576, value, nameof(Wp_HR_Augment_Critical_Add_3_));
+                SetData(8576, value, nameof(Wp_HR_Augment_Critical_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Critical_Add_3_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Critical_Bonus_3_));
             }
         }
 
-        public const string Wp_HR_Augment_Defense_Add_1__displayName = "Wp HR Augment Defense Add (1)";
-        public const int Wp_HR_Augment_Defense_Add_1__sortIndex = 14050;
-        [SortOrder(Wp_HR_Augment_Defense_Add_1__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Defense_Add_1__displayName)]
-        public virtual byte Wp_HR_Augment_Defense_Add_1_ {
+        public const string Wp_HR_Augment_Defense_Bonus_1__displayName = "Wp HR Augment Defense Bonus (1)";
+        public const int Wp_HR_Augment_Defense_Bonus_1__sortIndex = 14050;
+        [SortOrder(Wp_HR_Augment_Defense_Bonus_1__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Defense_Bonus_1__displayName)]
+        public virtual byte Wp_HR_Augment_Defense_Bonus_1_ {
             get => GetData<byte>(8577);
             set {
                 if (GetData<byte>(8577) == value) return;
-                SetData(8577, value, nameof(Wp_HR_Augment_Defense_Add_1_));
+                SetData(8577, value, nameof(Wp_HR_Augment_Defense_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Add_1_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Bonus_1_));
             }
         }
 
-        public const string Wp_HR_Augment_Defense_Add_2__displayName = "Wp HR Augment Defense Add (2)";
-        public const int Wp_HR_Augment_Defense_Add_2__sortIndex = 14100;
-        [SortOrder(Wp_HR_Augment_Defense_Add_2__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Defense_Add_2__displayName)]
-        public virtual byte Wp_HR_Augment_Defense_Add_2_ {
+        public const string Wp_HR_Augment_Defense_Bonus_2__displayName = "Wp HR Augment Defense Bonus (2)";
+        public const int Wp_HR_Augment_Defense_Bonus_2__sortIndex = 14100;
+        [SortOrder(Wp_HR_Augment_Defense_Bonus_2__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Defense_Bonus_2__displayName)]
+        public virtual byte Wp_HR_Augment_Defense_Bonus_2_ {
             get => GetData<byte>(8578);
             set {
                 if (GetData<byte>(8578) == value) return;
-                SetData(8578, value, nameof(Wp_HR_Augment_Defense_Add_2_));
+                SetData(8578, value, nameof(Wp_HR_Augment_Defense_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Add_2_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Bonus_2_));
             }
         }
 
-        public const string Wp_HR_Augment_Defense_Add_3__displayName = "Wp HR Augment Defense Add (3)";
-        public const int Wp_HR_Augment_Defense_Add_3__sortIndex = 14150;
-        [SortOrder(Wp_HR_Augment_Defense_Add_3__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Defense_Add_3__displayName)]
-        public virtual byte Wp_HR_Augment_Defense_Add_3_ {
+        public const string Wp_HR_Augment_Defense_Bonus_3__displayName = "Wp HR Augment Defense Bonus (3)";
+        public const int Wp_HR_Augment_Defense_Bonus_3__sortIndex = 14150;
+        [SortOrder(Wp_HR_Augment_Defense_Bonus_3__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Defense_Bonus_3__displayName)]
+        public virtual byte Wp_HR_Augment_Defense_Bonus_3_ {
             get => GetData<byte>(8579);
             set {
                 if (GetData<byte>(8579) == value) return;
-                SetData(8579, value, nameof(Wp_HR_Augment_Defense_Add_3_));
+                SetData(8579, value, nameof(Wp_HR_Augment_Defense_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Add_3_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Bonus_3_));
             }
         }
 
-        public const string Wp_HR_Augment_Divine_Blessing_Chance_1__displayName = "Wp HR Augment Divine Blessing Chance (1)";
-        public const int Wp_HR_Augment_Divine_Blessing_Chance_1__sortIndex = 14200;
-        [SortOrder(Wp_HR_Augment_Divine_Blessing_Chance_1__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Divine_Blessing_Chance_1__displayName)]
-        public virtual byte Wp_HR_Augment_Divine_Blessing_Chance_1_ {
+        public const string Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__displayName = "Wp HR Augment Defense: Divine Blessing Chance (1)";
+        public const int Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__sortIndex = 14200;
+        [SortOrder(Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__displayName)]
+        public virtual byte Wp_HR_Augment_Defense_Divine_Blessing_Chance_1_ {
             get => GetData<byte>(8580);
             set {
                 if (GetData<byte>(8580) == value) return;
-                SetData(8580, value, nameof(Wp_HR_Augment_Divine_Blessing_Chance_1_));
+                SetData(8580, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_1_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Divine_Blessing_Chance_1_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_1_));
             }
         }
 
-        public const string Wp_HR_Augment_Divine_Blessing_Chance_2__displayName = "Wp HR Augment Divine Blessing Chance (2)";
-        public const int Wp_HR_Augment_Divine_Blessing_Chance_2__sortIndex = 14250;
-        [SortOrder(Wp_HR_Augment_Divine_Blessing_Chance_2__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Divine_Blessing_Chance_2__displayName)]
-        public virtual byte Wp_HR_Augment_Divine_Blessing_Chance_2_ {
+        public const string Wp_HR_Augment_Defense_Divine_Blessing_Chance_2__displayName = "Wp HR Augment Defense: Divine Blessing Chance (2)";
+        public const int Wp_HR_Augment_Defense_Divine_Blessing_Chance_2__sortIndex = 14250;
+        [SortOrder(Wp_HR_Augment_Defense_Divine_Blessing_Chance_2__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Defense_Divine_Blessing_Chance_2__displayName)]
+        public virtual byte Wp_HR_Augment_Defense_Divine_Blessing_Chance_2_ {
             get => GetData<byte>(8581);
             set {
                 if (GetData<byte>(8581) == value) return;
-                SetData(8581, value, nameof(Wp_HR_Augment_Divine_Blessing_Chance_2_));
+                SetData(8581, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_2_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Divine_Blessing_Chance_2_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_2_));
             }
         }
 
-        public const string Wp_HR_Augment_Divine_Blessing_Chance_3__displayName = "Wp HR Augment Divine Blessing Chance (3)";
-        public const int Wp_HR_Augment_Divine_Blessing_Chance_3__sortIndex = 14300;
-        [SortOrder(Wp_HR_Augment_Divine_Blessing_Chance_3__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Divine_Blessing_Chance_3__displayName)]
-        public virtual byte Wp_HR_Augment_Divine_Blessing_Chance_3_ {
+        public const string Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__displayName = "Wp HR Augment Defense: Divine Blessing Chance (3)";
+        public const int Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__sortIndex = 14300;
+        [SortOrder(Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__displayName)]
+        public virtual byte Wp_HR_Augment_Defense_Divine_Blessing_Chance_3_ {
             get => GetData<byte>(8582);
             set {
                 if (GetData<byte>(8582) == value) return;
-                SetData(8582, value, nameof(Wp_HR_Augment_Divine_Blessing_Chance_3_));
+                SetData(8582, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_3_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Divine_Blessing_Chance_3_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_3_));
             }
         }
 
-        public const string Wp_HR_Augment_Divine_Blessing_Reduction_1__displayName = "Wp HR Augment Divine Blessing Reduction (1)";
-        public const int Wp_HR_Augment_Divine_Blessing_Reduction_1__sortIndex = 14350;
-        [SortOrder(Wp_HR_Augment_Divine_Blessing_Reduction_1__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Divine_Blessing_Reduction_1__displayName)]
-        public virtual float Wp_HR_Augment_Divine_Blessing_Reduction_1_ {
+        public const string Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1__displayName = "Wp HR Augment Defense: Divine Blessing Reduction (1)";
+        public const int Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1__sortIndex = 14350;
+        [SortOrder(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1__displayName)]
+        public virtual float Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1_ {
             get => GetData<float>(8583);
             set {
                 if (GetData<float>(8583) == value) return;
-                SetData(8583, value, nameof(Wp_HR_Augment_Divine_Blessing_Reduction_1_));
+                SetData(8583, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Divine_Blessing_Reduction_1_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1_));
             }
         }
 
-        public const string Wp_HR_Augment_Divine_Blessing_Reduction_2__displayName = "Wp HR Augment Divine Blessing Reduction (2)";
-        public const int Wp_HR_Augment_Divine_Blessing_Reduction_2__sortIndex = 14400;
-        [SortOrder(Wp_HR_Augment_Divine_Blessing_Reduction_2__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Divine_Blessing_Reduction_2__displayName)]
-        public virtual float Wp_HR_Augment_Divine_Blessing_Reduction_2_ {
+        public const string Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__displayName = "Wp HR Augment Defense: Divine Blessing Reduction (2)";
+        public const int Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__sortIndex = 14400;
+        [SortOrder(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__displayName)]
+        public virtual float Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2_ {
             get => GetData<float>(8587);
             set {
                 if (GetData<float>(8587) == value) return;
-                SetData(8587, value, nameof(Wp_HR_Augment_Divine_Blessing_Reduction_2_));
+                SetData(8587, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Divine_Blessing_Reduction_2_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2_));
             }
         }
 
-        public const string Wp_HR_Augment_Divine_Blessing_Reduction_3__displayName = "Wp HR Augment Divine Blessing Reduction (3)";
-        public const int Wp_HR_Augment_Divine_Blessing_Reduction_3__sortIndex = 14450;
-        [SortOrder(Wp_HR_Augment_Divine_Blessing_Reduction_3__sortIndex)]
-        [DisplayName(Wp_HR_Augment_Divine_Blessing_Reduction_3__displayName)]
-        public virtual float Wp_HR_Augment_Divine_Blessing_Reduction_3_ {
+        public const string Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3__displayName = "Wp HR Augment Defense: Divine Blessing Reduction (3)";
+        public const int Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3__sortIndex = 14450;
+        [SortOrder(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3__sortIndex)]
+        [DisplayName(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3__displayName)]
+        public virtual float Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3_ {
             get => GetData<float>(8591);
             set {
                 if (GetData<float>(8591) == value) return;
-                SetData(8591, value, nameof(Wp_HR_Augment_Divine_Blessing_Reduction_3_));
+                SetData(8591, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_HR_Augment_Divine_Blessing_Reduction_3_));
+                OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3_));
             }
         }
 
@@ -4059,283 +4059,283 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Wp_MR_Augment_Attack_1__displayName = "Wp MR Augment Attack (1)";
-        public const int Wp_MR_Augment_Attack_1__sortIndex = 14800;
-        [SortOrder(Wp_MR_Augment_Attack_1__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Attack_1__displayName)]
-        public virtual byte Wp_MR_Augment_Attack_1_ {
+        public const string Wp_MR_Augment_Attack_Bonus_1__displayName = "Wp MR Augment Attack Bonus (1)";
+        public const int Wp_MR_Augment_Attack_Bonus_1__sortIndex = 14800;
+        [SortOrder(Wp_MR_Augment_Attack_Bonus_1__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Attack_Bonus_1__displayName)]
+        public virtual byte Wp_MR_Augment_Attack_Bonus_1_ {
             get => GetData<byte>(8615);
             set {
                 if (GetData<byte>(8615) == value) return;
-                SetData(8615, value, nameof(Wp_MR_Augment_Attack_1_));
+                SetData(8615, value, nameof(Wp_MR_Augment_Attack_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Attack_1_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Attack_Bonus_1_));
             }
         }
 
-        public const string Wp_MR_Augment_Attack_2__displayName = "Wp MR Augment Attack (2)";
-        public const int Wp_MR_Augment_Attack_2__sortIndex = 14850;
-        [SortOrder(Wp_MR_Augment_Attack_2__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Attack_2__displayName)]
-        public virtual byte Wp_MR_Augment_Attack_2_ {
+        public const string Wp_MR_Augment_Attack_Bonus_2__displayName = "Wp MR Augment Attack Bonus (2)";
+        public const int Wp_MR_Augment_Attack_Bonus_2__sortIndex = 14850;
+        [SortOrder(Wp_MR_Augment_Attack_Bonus_2__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Attack_Bonus_2__displayName)]
+        public virtual byte Wp_MR_Augment_Attack_Bonus_2_ {
             get => GetData<byte>(8616);
             set {
                 if (GetData<byte>(8616) == value) return;
-                SetData(8616, value, nameof(Wp_MR_Augment_Attack_2_));
+                SetData(8616, value, nameof(Wp_MR_Augment_Attack_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Attack_2_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Attack_Bonus_2_));
             }
         }
 
-        public const string Wp_MR_Augment_Attack_3__displayName = "Wp MR Augment Attack (3)";
-        public const int Wp_MR_Augment_Attack_3__sortIndex = 14900;
-        [SortOrder(Wp_MR_Augment_Attack_3__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Attack_3__displayName)]
-        public virtual byte Wp_MR_Augment_Attack_3_ {
+        public const string Wp_MR_Augment_Attack_Bonus_3__displayName = "Wp MR Augment Attack Bonus (3)";
+        public const int Wp_MR_Augment_Attack_Bonus_3__sortIndex = 14900;
+        [SortOrder(Wp_MR_Augment_Attack_Bonus_3__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Attack_Bonus_3__displayName)]
+        public virtual byte Wp_MR_Augment_Attack_Bonus_3_ {
             get => GetData<byte>(8617);
             set {
                 if (GetData<byte>(8617) == value) return;
-                SetData(8617, value, nameof(Wp_MR_Augment_Attack_3_));
+                SetData(8617, value, nameof(Wp_MR_Augment_Attack_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Attack_3_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Attack_Bonus_3_));
             }
         }
 
-        public const string Wp_MR_Augment_Attack_4__displayName = "Wp MR Augment Attack (4)";
-        public const int Wp_MR_Augment_Attack_4__sortIndex = 14950;
-        [SortOrder(Wp_MR_Augment_Attack_4__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Attack_4__displayName)]
-        public virtual byte Wp_MR_Augment_Attack_4_ {
+        public const string Wp_MR_Augment_Attack_Bonus_4__displayName = "Wp MR Augment Attack Bonus (4)";
+        public const int Wp_MR_Augment_Attack_Bonus_4__sortIndex = 14950;
+        [SortOrder(Wp_MR_Augment_Attack_Bonus_4__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Attack_Bonus_4__displayName)]
+        public virtual byte Wp_MR_Augment_Attack_Bonus_4_ {
             get => GetData<byte>(8618);
             set {
                 if (GetData<byte>(8618) == value) return;
-                SetData(8618, value, nameof(Wp_MR_Augment_Attack_4_));
+                SetData(8618, value, nameof(Wp_MR_Augment_Attack_Bonus_4_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Attack_4_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Attack_Bonus_4_));
             }
         }
 
-        public const string Wp_MR_Augment_Critical_1__displayName = "Wp MR Augment Critical (1)";
-        public const int Wp_MR_Augment_Critical_1__sortIndex = 15000;
-        [SortOrder(Wp_MR_Augment_Critical_1__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Critical_1__displayName)]
-        public virtual byte Wp_MR_Augment_Critical_1_ {
+        public const string Wp_MR_Augment_Critical_Bonus_1__displayName = "Wp MR Augment Critical Bonus (1)";
+        public const int Wp_MR_Augment_Critical_Bonus_1__sortIndex = 15000;
+        [SortOrder(Wp_MR_Augment_Critical_Bonus_1__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Critical_Bonus_1__displayName)]
+        public virtual byte Wp_MR_Augment_Critical_Bonus_1_ {
             get => GetData<byte>(8619);
             set {
                 if (GetData<byte>(8619) == value) return;
-                SetData(8619, value, nameof(Wp_MR_Augment_Critical_1_));
+                SetData(8619, value, nameof(Wp_MR_Augment_Critical_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Critical_1_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Critical_Bonus_1_));
             }
         }
 
-        public const string Wp_MR_Augment_Critical_2__displayName = "Wp MR Augment Critical (2)";
-        public const int Wp_MR_Augment_Critical_2__sortIndex = 15050;
-        [SortOrder(Wp_MR_Augment_Critical_2__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Critical_2__displayName)]
-        public virtual byte Wp_MR_Augment_Critical_2_ {
+        public const string Wp_MR_Augment_Critical_Bonus_2__displayName = "Wp MR Augment Critical Bonus (2)";
+        public const int Wp_MR_Augment_Critical_Bonus_2__sortIndex = 15050;
+        [SortOrder(Wp_MR_Augment_Critical_Bonus_2__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Critical_Bonus_2__displayName)]
+        public virtual byte Wp_MR_Augment_Critical_Bonus_2_ {
             get => GetData<byte>(8620);
             set {
                 if (GetData<byte>(8620) == value) return;
-                SetData(8620, value, nameof(Wp_MR_Augment_Critical_2_));
+                SetData(8620, value, nameof(Wp_MR_Augment_Critical_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Critical_2_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Critical_Bonus_2_));
             }
         }
 
-        public const string Wp_MR_Augment_Critical_3__displayName = "Wp MR Augment Critical (3)";
-        public const int Wp_MR_Augment_Critical_3__sortIndex = 15100;
-        [SortOrder(Wp_MR_Augment_Critical_3__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Critical_3__displayName)]
-        public virtual byte Wp_MR_Augment_Critical_3_ {
+        public const string Wp_MR_Augment_Critical_Bonus_3__displayName = "Wp MR Augment Critical Bonus (3)";
+        public const int Wp_MR_Augment_Critical_Bonus_3__sortIndex = 15100;
+        [SortOrder(Wp_MR_Augment_Critical_Bonus_3__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Critical_Bonus_3__displayName)]
+        public virtual byte Wp_MR_Augment_Critical_Bonus_3_ {
             get => GetData<byte>(8621);
             set {
                 if (GetData<byte>(8621) == value) return;
-                SetData(8621, value, nameof(Wp_MR_Augment_Critical_3_));
+                SetData(8621, value, nameof(Wp_MR_Augment_Critical_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Critical_3_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Critical_Bonus_3_));
             }
         }
 
-        public const string Wp_MR_Augment_Critical_4__displayName = "Wp MR Augment Critical (4)";
-        public const int Wp_MR_Augment_Critical_4__sortIndex = 15150;
-        [SortOrder(Wp_MR_Augment_Critical_4__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Critical_4__displayName)]
-        public virtual byte Wp_MR_Augment_Critical_4_ {
+        public const string Wp_MR_Augment_Critical_Bonus_4__displayName = "Wp MR Augment Critical Bonus (4)";
+        public const int Wp_MR_Augment_Critical_Bonus_4__sortIndex = 15150;
+        [SortOrder(Wp_MR_Augment_Critical_Bonus_4__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Critical_Bonus_4__displayName)]
+        public virtual byte Wp_MR_Augment_Critical_Bonus_4_ {
             get => GetData<byte>(8622);
             set {
                 if (GetData<byte>(8622) == value) return;
-                SetData(8622, value, nameof(Wp_MR_Augment_Critical_4_));
+                SetData(8622, value, nameof(Wp_MR_Augment_Critical_Bonus_4_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Critical_4_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Critical_Bonus_4_));
             }
         }
 
-        public const string Wp_MR_Augment_Defense_1__displayName = "Wp MR Augment Defense (1)";
-        public const int Wp_MR_Augment_Defense_1__sortIndex = 15200;
-        [SortOrder(Wp_MR_Augment_Defense_1__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_1__displayName)]
-        public virtual byte Wp_MR_Augment_Defense_1_ {
+        public const string Wp_MR_Augment_Defense_Bonus_1__displayName = "Wp MR Augment Defense Bonus (1)";
+        public const int Wp_MR_Augment_Defense_Bonus_1__sortIndex = 15200;
+        [SortOrder(Wp_MR_Augment_Defense_Bonus_1__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Bonus_1__displayName)]
+        public virtual byte Wp_MR_Augment_Defense_Bonus_1_ {
             get => GetData<byte>(8623);
             set {
                 if (GetData<byte>(8623) == value) return;
-                SetData(8623, value, nameof(Wp_MR_Augment_Defense_1_));
+                SetData(8623, value, nameof(Wp_MR_Augment_Defense_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_1_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Bonus_1_));
             }
         }
 
-        public const string Wp_MR_Augment_Defense_2__displayName = "Wp MR Augment Defense (2)";
-        public const int Wp_MR_Augment_Defense_2__sortIndex = 15250;
-        [SortOrder(Wp_MR_Augment_Defense_2__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_2__displayName)]
-        public virtual byte Wp_MR_Augment_Defense_2_ {
+        public const string Wp_MR_Augment_Defense_Bonus_2__displayName = "Wp MR Augment Defense Bonus (2)";
+        public const int Wp_MR_Augment_Defense_Bonus_2__sortIndex = 15250;
+        [SortOrder(Wp_MR_Augment_Defense_Bonus_2__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Bonus_2__displayName)]
+        public virtual byte Wp_MR_Augment_Defense_Bonus_2_ {
             get => GetData<byte>(8624);
             set {
                 if (GetData<byte>(8624) == value) return;
-                SetData(8624, value, nameof(Wp_MR_Augment_Defense_2_));
+                SetData(8624, value, nameof(Wp_MR_Augment_Defense_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_2_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Bonus_2_));
             }
         }
 
-        public const string Wp_MR_Augment_Defense_3__displayName = "Wp MR Augment Defense (3)";
-        public const int Wp_MR_Augment_Defense_3__sortIndex = 15300;
-        [SortOrder(Wp_MR_Augment_Defense_3__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_3__displayName)]
-        public virtual byte Wp_MR_Augment_Defense_3_ {
+        public const string Wp_MR_Augment_Defense_Bonus_3__displayName = "Wp MR Augment Defense Bonus (3)";
+        public const int Wp_MR_Augment_Defense_Bonus_3__sortIndex = 15300;
+        [SortOrder(Wp_MR_Augment_Defense_Bonus_3__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Bonus_3__displayName)]
+        public virtual byte Wp_MR_Augment_Defense_Bonus_3_ {
             get => GetData<byte>(8625);
             set {
                 if (GetData<byte>(8625) == value) return;
-                SetData(8625, value, nameof(Wp_MR_Augment_Defense_3_));
+                SetData(8625, value, nameof(Wp_MR_Augment_Defense_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_3_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Bonus_3_));
             }
         }
 
-        public const string Wp_MR_Augment_Defense_4__displayName = "Wp MR Augment Defense (4)";
-        public const int Wp_MR_Augment_Defense_4__sortIndex = 15350;
-        [SortOrder(Wp_MR_Augment_Defense_4__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_4__displayName)]
-        public virtual byte Wp_MR_Augment_Defense_4_ {
+        public const string Wp_MR_Augment_Defense_Bonus_4__displayName = "Wp MR Augment Defense Bonus (4)";
+        public const int Wp_MR_Augment_Defense_Bonus_4__sortIndex = 15350;
+        [SortOrder(Wp_MR_Augment_Defense_Bonus_4__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Bonus_4__displayName)]
+        public virtual byte Wp_MR_Augment_Defense_Bonus_4_ {
             get => GetData<byte>(8626);
             set {
                 if (GetData<byte>(8626) == value) return;
-                SetData(8626, value, nameof(Wp_MR_Augment_Defense_4_));
+                SetData(8626, value, nameof(Wp_MR_Augment_Defense_Bonus_4_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_4_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Bonus_4_));
             }
         }
 
-        public const string Wp_MR_Augment_Defense_Percent_Activation_1__displayName = "Wp MR Augment Defense Percent Activation (1)";
-        public const int Wp_MR_Augment_Defense_Percent_Activation_1__sortIndex = 15400;
-        [SortOrder(Wp_MR_Augment_Defense_Percent_Activation_1__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_Percent_Activation_1__displayName)]
-        public virtual byte Wp_MR_Augment_Defense_Percent_Activation_1_ {
+        public const string Wp_MR_Augment_Defense_Divine_Blessing_Chance_1__displayName = "Wp MR Augment Defense: Divine Blessing Chance (1)";
+        public const int Wp_MR_Augment_Defense_Divine_Blessing_Chance_1__sortIndex = 15400;
+        [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Chance_1__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Chance_1__displayName)]
+        public virtual byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_1_ {
             get => GetData<byte>(8627);
             set {
                 if (GetData<byte>(8627) == value) return;
-                SetData(8627, value, nameof(Wp_MR_Augment_Defense_Percent_Activation_1_));
+                SetData(8627, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_1_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Activation_1_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_1_));
             }
         }
 
-        public const string Wp_MR_Augment_Defense_Percent_Activation_2__displayName = "Wp MR Augment Defense Percent Activation (2)";
-        public const int Wp_MR_Augment_Defense_Percent_Activation_2__sortIndex = 15450;
-        [SortOrder(Wp_MR_Augment_Defense_Percent_Activation_2__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_Percent_Activation_2__displayName)]
-        public virtual byte Wp_MR_Augment_Defense_Percent_Activation_2_ {
+        public const string Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__displayName = "Wp MR Augment Defense: Divine Blessing Chance (2)";
+        public const int Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__sortIndex = 15450;
+        [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__displayName)]
+        public virtual byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_2_ {
             get => GetData<byte>(8628);
             set {
                 if (GetData<byte>(8628) == value) return;
-                SetData(8628, value, nameof(Wp_MR_Augment_Defense_Percent_Activation_2_));
+                SetData(8628, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_2_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Activation_2_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_2_));
             }
         }
 
-        public const string Wp_MR_Augment_Defense_Percent_Activation_3__displayName = "Wp MR Augment Defense Percent Activation (3)";
-        public const int Wp_MR_Augment_Defense_Percent_Activation_3__sortIndex = 15500;
-        [SortOrder(Wp_MR_Augment_Defense_Percent_Activation_3__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_Percent_Activation_3__displayName)]
-        public virtual byte Wp_MR_Augment_Defense_Percent_Activation_3_ {
+        public const string Wp_MR_Augment_Defense_Divine_Blessing_Chance_3__displayName = "Wp MR Augment Defense: Divine Blessing Chance (3)";
+        public const int Wp_MR_Augment_Defense_Divine_Blessing_Chance_3__sortIndex = 15500;
+        [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Chance_3__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Chance_3__displayName)]
+        public virtual byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_3_ {
             get => GetData<byte>(8629);
             set {
                 if (GetData<byte>(8629) == value) return;
-                SetData(8629, value, nameof(Wp_MR_Augment_Defense_Percent_Activation_3_));
+                SetData(8629, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_3_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Activation_3_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_3_));
             }
         }
 
-        public const string Wp_MR_Augment_Defense_Percent_Activation_4__displayName = "Wp MR Augment Defense Percent Activation (4)";
-        public const int Wp_MR_Augment_Defense_Percent_Activation_4__sortIndex = 15550;
-        [SortOrder(Wp_MR_Augment_Defense_Percent_Activation_4__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_Percent_Activation_4__displayName)]
-        public virtual byte Wp_MR_Augment_Defense_Percent_Activation_4_ {
+        public const string Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__displayName = "Wp MR Augment Defense: Divine Blessing Chance (4)";
+        public const int Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__sortIndex = 15550;
+        [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__displayName)]
+        public virtual byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_4_ {
             get => GetData<byte>(8630);
             set {
                 if (GetData<byte>(8630) == value) return;
-                SetData(8630, value, nameof(Wp_MR_Augment_Defense_Percent_Activation_4_));
+                SetData(8630, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_4_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Activation_4_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_4_));
             }
         }
 
-        public const string Wp_MR_Augment_Defense_Percent_Reduction_1__displayName = "Wp MR Augment Defense Percent Reduction (1)";
-        public const int Wp_MR_Augment_Defense_Percent_Reduction_1__sortIndex = 15600;
-        [SortOrder(Wp_MR_Augment_Defense_Percent_Reduction_1__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_Percent_Reduction_1__displayName)]
-        public virtual float Wp_MR_Augment_Defense_Percent_Reduction_1_ {
+        public const string Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1__displayName = "Wp MR Augment Defense: Divine Blessing Reduction (1)";
+        public const int Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1__sortIndex = 15600;
+        [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1__displayName)]
+        public virtual float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1_ {
             get => GetData<float>(8631);
             set {
                 if (GetData<float>(8631) == value) return;
-                SetData(8631, value, nameof(Wp_MR_Augment_Defense_Percent_Reduction_1_));
+                SetData(8631, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Reduction_1_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1_));
             }
         }
 
-        public const string Wp_MR_Augment_Defense_Percent_Reduction_2__displayName = "Wp MR Augment Defense Percent Reduction (2)";
-        public const int Wp_MR_Augment_Defense_Percent_Reduction_2__sortIndex = 15650;
-        [SortOrder(Wp_MR_Augment_Defense_Percent_Reduction_2__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_Percent_Reduction_2__displayName)]
-        public virtual float Wp_MR_Augment_Defense_Percent_Reduction_2_ {
+        public const string Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__displayName = "Wp MR Augment Defense: Divine Blessing Reduction (2)";
+        public const int Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__sortIndex = 15650;
+        [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__displayName)]
+        public virtual float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2_ {
             get => GetData<float>(8635);
             set {
                 if (GetData<float>(8635) == value) return;
-                SetData(8635, value, nameof(Wp_MR_Augment_Defense_Percent_Reduction_2_));
+                SetData(8635, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Reduction_2_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2_));
             }
         }
 
-        public const string Wp_MR_Augment_Defense_Percent_Reduction_3__displayName = "Wp MR Augment Defense Percent Reduction (3)";
-        public const int Wp_MR_Augment_Defense_Percent_Reduction_3__sortIndex = 15700;
-        [SortOrder(Wp_MR_Augment_Defense_Percent_Reduction_3__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_Percent_Reduction_3__displayName)]
-        public virtual float Wp_MR_Augment_Defense_Percent_Reduction_3_ {
+        public const string Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3__displayName = "Wp MR Augment Defense: Divine Blessing Reduction (3)";
+        public const int Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3__sortIndex = 15700;
+        [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3__displayName)]
+        public virtual float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3_ {
             get => GetData<float>(8639);
             set {
                 if (GetData<float>(8639) == value) return;
-                SetData(8639, value, nameof(Wp_MR_Augment_Defense_Percent_Reduction_3_));
+                SetData(8639, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Reduction_3_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3_));
             }
         }
 
-        public const string Wp_MR_Augment_Defense_Percent_Reduction_4__displayName = "Wp MR Augment Defense Percent Reduction (4)";
-        public const int Wp_MR_Augment_Defense_Percent_Reduction_4__sortIndex = 15750;
-        [SortOrder(Wp_MR_Augment_Defense_Percent_Reduction_4__sortIndex)]
-        [DisplayName(Wp_MR_Augment_Defense_Percent_Reduction_4__displayName)]
-        public virtual float Wp_MR_Augment_Defense_Percent_Reduction_4_ {
+        public const string Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__displayName = "Wp MR Augment Defense: Divine Blessing Reduction (4)";
+        public const int Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__sortIndex = 15750;
+        [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__sortIndex)]
+        [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__displayName)]
+        public virtual float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4_ {
             get => GetData<float>(8643);
             set {
                 if (GetData<float>(8643) == value) return;
-                SetData(8643, value, nameof(Wp_MR_Augment_Defense_Percent_Reduction_4_));
+                SetData(8643, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Percent_Reduction_4_));
+                OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4_));
             }
         }
 

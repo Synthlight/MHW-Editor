@@ -266,46 +266,46 @@ namespace MHW_Editor.PlData {
         public float Evade_Dual_Blades_Slinger_Evade_Distance_1; // Offset: 1557
         public float Evade_Dual_Blades_Slinger_Evade_Distance_2; // Offset: 1561
         public float Evade_Dual_Blades_Slinger_Evade_Distance_3; // Offset: 1565
-        public byte Wp_HR_Augment_Attack_Add_1_; // Offset: 8571
-        public byte Wp_HR_Augment_Attack_Add_2_; // Offset: 8572
-        public byte Wp_HR_Augment_Attack_Add_3_; // Offset: 8573
-        public byte Wp_HR_Augment_Critical_Add_1_; // Offset: 8574
-        public byte Wp_HR_Augment_Critical_Add_2_; // Offset: 8575
-        public byte Wp_HR_Augment_Critical_Add_3_; // Offset: 8576
-        public byte Wp_HR_Augment_Defense_Add_1_; // Offset: 8577
-        public byte Wp_HR_Augment_Defense_Add_2_; // Offset: 8578
-        public byte Wp_HR_Augment_Defense_Add_3_; // Offset: 8579
-        public byte Wp_HR_Augment_Divine_Blessing_Chance_1_; // Offset: 8580
-        public byte Wp_HR_Augment_Divine_Blessing_Chance_2_; // Offset: 8581
-        public byte Wp_HR_Augment_Divine_Blessing_Chance_3_; // Offset: 8582
-        public float Wp_HR_Augment_Divine_Blessing_Reduction_1_; // Offset: 8583
-        public float Wp_HR_Augment_Divine_Blessing_Reduction_2_; // Offset: 8587
-        public float Wp_HR_Augment_Divine_Blessing_Reduction_3_; // Offset: 8591
+        public byte Wp_HR_Augment_Attack_Bonus_1_; // Offset: 8571
+        public byte Wp_HR_Augment_Attack_Bonus_2_; // Offset: 8572
+        public byte Wp_HR_Augment_Attack_Bonus_3_; // Offset: 8573
+        public byte Wp_HR_Augment_Critical_Bonus_1_; // Offset: 8574
+        public byte Wp_HR_Augment_Critical_Bonus_2_; // Offset: 8575
+        public byte Wp_HR_Augment_Critical_Bonus_3_; // Offset: 8576
+        public byte Wp_HR_Augment_Defense_Bonus_1_; // Offset: 8577
+        public byte Wp_HR_Augment_Defense_Bonus_2_; // Offset: 8578
+        public byte Wp_HR_Augment_Defense_Bonus_3_; // Offset: 8579
+        public byte Wp_HR_Augment_Defense_Divine_Blessing_Chance_1_; // Offset: 8580
+        public byte Wp_HR_Augment_Defense_Divine_Blessing_Chance_2_; // Offset: 8581
+        public byte Wp_HR_Augment_Defense_Divine_Blessing_Chance_3_; // Offset: 8582
+        public float Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1_; // Offset: 8583
+        public float Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2_; // Offset: 8587
+        public float Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3_; // Offset: 8591
         public float Wp_HR_Augment_Defense_Heal_Damage_Rate_1_; // Offset: 8595
         public float Wp_HR_Augment_Defense_Heal_Damage_Rate_2_; // Offset: 8599
         public float Wp_HR_Augment_Defense_Heal_Damage_Rate_3_; // Offset: 8603
         public float Wp_HR_Augment_IB_Unk; // Offset: 8607
         public float Wp_HR_Augment_Lifesteal_Cooldown; // Offset: 8611
-        public byte Wp_MR_Augment_Attack_1_; // Offset: 8615
-        public byte Wp_MR_Augment_Attack_2_; // Offset: 8616
-        public byte Wp_MR_Augment_Attack_3_; // Offset: 8617
-        public byte Wp_MR_Augment_Attack_4_; // Offset: 8618
-        public byte Wp_MR_Augment_Critical_1_; // Offset: 8619
-        public byte Wp_MR_Augment_Critical_2_; // Offset: 8620
-        public byte Wp_MR_Augment_Critical_3_; // Offset: 8621
-        public byte Wp_MR_Augment_Critical_4_; // Offset: 8622
-        public byte Wp_MR_Augment_Defense_1_; // Offset: 8623
-        public byte Wp_MR_Augment_Defense_2_; // Offset: 8624
-        public byte Wp_MR_Augment_Defense_3_; // Offset: 8625
-        public byte Wp_MR_Augment_Defense_4_; // Offset: 8626
-        public byte Wp_MR_Augment_Defense_Percent_Activation_1_; // Offset: 8627
-        public byte Wp_MR_Augment_Defense_Percent_Activation_2_; // Offset: 8628
-        public byte Wp_MR_Augment_Defense_Percent_Activation_3_; // Offset: 8629
-        public byte Wp_MR_Augment_Defense_Percent_Activation_4_; // Offset: 8630
-        public float Wp_MR_Augment_Defense_Percent_Reduction_1_; // Offset: 8631
-        public float Wp_MR_Augment_Defense_Percent_Reduction_2_; // Offset: 8635
-        public float Wp_MR_Augment_Defense_Percent_Reduction_3_; // Offset: 8639
-        public float Wp_MR_Augment_Defense_Percent_Reduction_4_; // Offset: 8643
+        public byte Wp_MR_Augment_Attack_Bonus_1_; // Offset: 8615
+        public byte Wp_MR_Augment_Attack_Bonus_2_; // Offset: 8616
+        public byte Wp_MR_Augment_Attack_Bonus_3_; // Offset: 8617
+        public byte Wp_MR_Augment_Attack_Bonus_4_; // Offset: 8618
+        public byte Wp_MR_Augment_Critical_Bonus_1_; // Offset: 8619
+        public byte Wp_MR_Augment_Critical_Bonus_2_; // Offset: 8620
+        public byte Wp_MR_Augment_Critical_Bonus_3_; // Offset: 8621
+        public byte Wp_MR_Augment_Critical_Bonus_4_; // Offset: 8622
+        public byte Wp_MR_Augment_Defense_Bonus_1_; // Offset: 8623
+        public byte Wp_MR_Augment_Defense_Bonus_2_; // Offset: 8624
+        public byte Wp_MR_Augment_Defense_Bonus_3_; // Offset: 8625
+        public byte Wp_MR_Augment_Defense_Bonus_4_; // Offset: 8626
+        public byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_1_; // Offset: 8627
+        public byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_2_; // Offset: 8628
+        public byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_3_; // Offset: 8629
+        public byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_4_; // Offset: 8630
+        public float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1_; // Offset: 8631
+        public float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2_; // Offset: 8635
+        public float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3_; // Offset: 8639
+        public float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4_; // Offset: 8643
         public float Wp_MR_Augment_Health_Percent_1_; // Offset: 8647
         public float Wp_MR_Augment_Health_Percent_2_; // Offset: 8651
         public float Wp_MR_Augment_Health_Percent_3_; // Offset: 8655

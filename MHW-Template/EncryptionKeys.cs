@@ -28,6 +28,7 @@ namespace MHW_Template {
             {".dtt_epg", DTT_EPG_KEY},
             {".itlot", ITLOT_KEY},
             {".msk", MSK_KEY},
+            {".mske", MSK_KEY},
             {".owp_dat", OWP_DAT_KEY},
             {".plip", PL_PARAM_KEY},
             {".plp", PL_PARAM_KEY},

@@ -12233,448 +12233,456 @@ namespace MHW_Editor.PlData {
             get => GetData<byte>(3);
         }
 
-        public const string Music_Skill_Bless_Random_Rate_displayName = "Music Skill: Bless: Random Rate";
-        public const int Music_Skill_Bless_Random_Rate_sortIndex = 46650;
-        [SortOrder(Music_Skill_Bless_Random_Rate_sortIndex)]
-        [DisplayName(Music_Skill_Bless_Random_Rate_displayName)]
-        public virtual float Music_Skill_Bless_Random_Rate {
+        public const string Unk84_displayName = "Unk84";
+        public const int Unk84_sortIndex = 46650;
+        [SortOrder(Unk84_sortIndex)]
+        [DisplayName(Unk84_displayName)]
+        public virtual float Unk84 {
             get => GetData<float>(2117);
             set {
                 if (GetData<float>(2117) == value) return;
-                SetData(2117, value, nameof(Music_Skill_Bless_Random_Rate));
+                SetData(2117, value, nameof(Unk84));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk84));
+            }
+        }
+
+        public const string __46700_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __46700_sortIndex = 46700;
+        [SortOrder(__46700_sortIndex)]
+        [DisplayName(__46700_displayName)]
+        public virtual byte __46700 {
+            get => GetData<byte>(3);
+        }
+
+        public const string Music_Skill_Bless_Random_Rate_displayName = "Music Skill: Bless: Random Rate";
+        public const int Music_Skill_Bless_Random_Rate_sortIndex = 46750;
+        [SortOrder(Music_Skill_Bless_Random_Rate_sortIndex)]
+        [DisplayName(Music_Skill_Bless_Random_Rate_displayName)]
+        public virtual float Music_Skill_Bless_Random_Rate {
+            get => GetData<float>(2121);
+            set {
+                if (GetData<float>(2121) == value) return;
+                SetData(2121, value, nameof(Music_Skill_Bless_Random_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Bless_Random_Rate));
             }
         }
 
         public const string Music_Skill_Bless_Damage_Cut_Rate_displayName = "Music Skill: Bless: Damage Cut Rate";
-        public const int Music_Skill_Bless_Damage_Cut_Rate_sortIndex = 46700;
+        public const int Music_Skill_Bless_Damage_Cut_Rate_sortIndex = 46800;
         [SortOrder(Music_Skill_Bless_Damage_Cut_Rate_sortIndex)]
         [DisplayName(Music_Skill_Bless_Damage_Cut_Rate_displayName)]
         public virtual float Music_Skill_Bless_Damage_Cut_Rate {
-            get => GetData<float>(2121);
+            get => GetData<float>(2125);
             set {
-                if (GetData<float>(2121) == value) return;
-                SetData(2121, value, nameof(Music_Skill_Bless_Damage_Cut_Rate));
+                if (GetData<float>(2125) == value) return;
+                SetData(2125, value, nameof(Music_Skill_Bless_Damage_Cut_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Bless_Damage_Cut_Rate));
             }
         }
 
         public const string Music_Skill_Extend_Time_displayName = "Music Skill: Extend: Time";
-        public const int Music_Skill_Extend_Time_sortIndex = 46750;
+        public const int Music_Skill_Extend_Time_sortIndex = 46850;
         [SortOrder(Music_Skill_Extend_Time_sortIndex)]
         [DisplayName(Music_Skill_Extend_Time_displayName)]
         public virtual float Music_Skill_Extend_Time {
-            get => GetData<float>(2125);
+            get => GetData<float>(2129);
             set {
-                if (GetData<float>(2125) == value) return;
-                SetData(2125, value, nameof(Music_Skill_Extend_Time));
+                if (GetData<float>(2129) == value) return;
+                SetData(2129, value, nameof(Music_Skill_Extend_Time));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Extend_Time));
             }
         }
 
         public const string Music_Skill_Extend_Time_Master_displayName = "Music Skill: Extend: Time Master";
-        public const int Music_Skill_Extend_Time_Master_sortIndex = 46800;
+        public const int Music_Skill_Extend_Time_Master_sortIndex = 46900;
         [SortOrder(Music_Skill_Extend_Time_Master_sortIndex)]
         [DisplayName(Music_Skill_Extend_Time_Master_displayName)]
         public virtual float Music_Skill_Extend_Time_Master {
-            get => GetData<float>(2129);
+            get => GetData<float>(2133);
             set {
-                if (GetData<float>(2129) == value) return;
-                SetData(2129, value, nameof(Music_Skill_Extend_Time_Master));
+                if (GetData<float>(2133) == value) return;
+                SetData(2133, value, nameof(Music_Skill_Extend_Time_Master));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Extend_Time_Master));
             }
         }
 
+        public const string Music_Skill_Extend_Time_MR_Master_displayName = "Music Skill: Extend: Time MR Master";
+        public const int Music_Skill_Extend_Time_MR_Master_sortIndex = 46950;
+        [SortOrder(Music_Skill_Extend_Time_MR_Master_sortIndex)]
+        [DisplayName(Music_Skill_Extend_Time_MR_Master_displayName)]
+        public virtual float Music_Skill_Extend_Time_MR_Master {
+            get => GetData<float>(2137);
+            set {
+                if (GetData<float>(2137) == value) return;
+                SetData(2137, value, nameof(Music_Skill_Extend_Time_MR_Master));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Music_Skill_Extend_Time_MR_Master));
+            }
+        }
+
         public const string Music_Skill_Major_Heal_Rand_Rate_displayName = "Music Skill: Major Heal: Rand Rate";
-        public const int Music_Skill_Major_Heal_Rand_Rate_sortIndex = 46850;
+        public const int Music_Skill_Major_Heal_Rand_Rate_sortIndex = 47000;
         [SortOrder(Music_Skill_Major_Heal_Rand_Rate_sortIndex)]
         [DisplayName(Music_Skill_Major_Heal_Rand_Rate_displayName)]
         public virtual float Music_Skill_Major_Heal_Rand_Rate {
-            get => GetData<float>(2133);
+            get => GetData<float>(2141);
             set {
-                if (GetData<float>(2133) == value) return;
-                SetData(2133, value, nameof(Music_Skill_Major_Heal_Rand_Rate));
+                if (GetData<float>(2141) == value) return;
+                SetData(2141, value, nameof(Music_Skill_Major_Heal_Rand_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Major_Heal_Rand_Rate));
             }
         }
 
         public const string Music_Skill_Major_Heal_Rand_Master_Rate_displayName = "Music Skill: Major Heal: Rand Master Rate";
-        public const int Music_Skill_Major_Heal_Rand_Master_Rate_sortIndex = 46900;
+        public const int Music_Skill_Major_Heal_Rand_Master_Rate_sortIndex = 47050;
         [SortOrder(Music_Skill_Major_Heal_Rand_Master_Rate_sortIndex)]
         [DisplayName(Music_Skill_Major_Heal_Rand_Master_Rate_displayName)]
         public virtual float Music_Skill_Major_Heal_Rand_Master_Rate {
-            get => GetData<float>(2137);
+            get => GetData<float>(2145);
             set {
-                if (GetData<float>(2137) == value) return;
-                SetData(2137, value, nameof(Music_Skill_Major_Heal_Rand_Master_Rate));
+                if (GetData<float>(2145) == value) return;
+                SetData(2145, value, nameof(Music_Skill_Major_Heal_Rand_Master_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Major_Heal_Rand_Master_Rate));
             }
         }
 
+        public const string Music_Skill_Major_Heal_Rand_MR_Master_Rate_displayName = "Music Skill: Major Heal: Rand MR Master Rate";
+        public const int Music_Skill_Major_Heal_Rand_MR_Master_Rate_sortIndex = 47100;
+        [SortOrder(Music_Skill_Major_Heal_Rand_MR_Master_Rate_sortIndex)]
+        [DisplayName(Music_Skill_Major_Heal_Rand_MR_Master_Rate_displayName)]
+        public virtual float Music_Skill_Major_Heal_Rand_MR_Master_Rate {
+            get => GetData<float>(2149);
+            set {
+                if (GetData<float>(2149) == value) return;
+                SetData(2149, value, nameof(Music_Skill_Major_Heal_Rand_MR_Master_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Music_Skill_Major_Heal_Rand_MR_Master_Rate));
+            }
+        }
+
         public const string Music_Skill_Heal_0_Minor_displayName = "Music Skill: Heal 0: Minor";
-        public const int Music_Skill_Heal_0_Minor_sortIndex = 46950;
+        public const int Music_Skill_Heal_0_Minor_sortIndex = 47150;
         [SortOrder(Music_Skill_Heal_0_Minor_sortIndex)]
         [DisplayName(Music_Skill_Heal_0_Minor_displayName)]
         public virtual float Music_Skill_Heal_0_Minor {
-            get => GetData<float>(2141);
+            get => GetData<float>(2153);
             set {
-                if (GetData<float>(2141) == value) return;
-                SetData(2141, value, nameof(Music_Skill_Heal_0_Minor));
+                if (GetData<float>(2153) == value) return;
+                SetData(2153, value, nameof(Music_Skill_Heal_0_Minor));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Heal_0_Minor));
             }
         }
 
         public const string Music_Skill_Heal_0_Major_displayName = "Music Skill: Heal 0: Major";
-        public const int Music_Skill_Heal_0_Major_sortIndex = 47000;
+        public const int Music_Skill_Heal_0_Major_sortIndex = 47200;
         [SortOrder(Music_Skill_Heal_0_Major_sortIndex)]
         [DisplayName(Music_Skill_Heal_0_Major_displayName)]
         public virtual float Music_Skill_Heal_0_Major {
-            get => GetData<float>(2145);
+            get => GetData<float>(2157);
             set {
-                if (GetData<float>(2145) == value) return;
-                SetData(2145, value, nameof(Music_Skill_Heal_0_Major));
+                if (GetData<float>(2157) == value) return;
+                SetData(2157, value, nameof(Music_Skill_Heal_0_Major));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Heal_0_Major));
             }
         }
 
         public const string Music_Skill_Heal_1_Minor_displayName = "Music Skill: Heal 1: Minor";
-        public const int Music_Skill_Heal_1_Minor_sortIndex = 47050;
+        public const int Music_Skill_Heal_1_Minor_sortIndex = 47250;
         [SortOrder(Music_Skill_Heal_1_Minor_sortIndex)]
         [DisplayName(Music_Skill_Heal_1_Minor_displayName)]
         public virtual float Music_Skill_Heal_1_Minor {
-            get => GetData<float>(2149);
+            get => GetData<float>(2161);
             set {
-                if (GetData<float>(2149) == value) return;
-                SetData(2149, value, nameof(Music_Skill_Heal_1_Minor));
+                if (GetData<float>(2161) == value) return;
+                SetData(2161, value, nameof(Music_Skill_Heal_1_Minor));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Heal_1_Minor));
             }
         }
 
         public const string Music_Skill_Heal_1_Major_displayName = "Music Skill: Heal 1: Major";
-        public const int Music_Skill_Heal_1_Major_sortIndex = 47100;
+        public const int Music_Skill_Heal_1_Major_sortIndex = 47300;
         [SortOrder(Music_Skill_Heal_1_Major_sortIndex)]
         [DisplayName(Music_Skill_Heal_1_Major_displayName)]
         public virtual float Music_Skill_Heal_1_Major {
-            get => GetData<float>(2153);
+            get => GetData<float>(2165);
             set {
-                if (GetData<float>(2153) == value) return;
-                SetData(2153, value, nameof(Music_Skill_Heal_1_Major));
+                if (GetData<float>(2165) == value) return;
+                SetData(2165, value, nameof(Music_Skill_Heal_1_Major));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Heal_1_Major));
             }
         }
 
         public const string Music_Skill_Heal_2_Minor_displayName = "Music Skill: Heal 2: Minor";
-        public const int Music_Skill_Heal_2_Minor_sortIndex = 47150;
+        public const int Music_Skill_Heal_2_Minor_sortIndex = 47350;
         [SortOrder(Music_Skill_Heal_2_Minor_sortIndex)]
         [DisplayName(Music_Skill_Heal_2_Minor_displayName)]
         public virtual float Music_Skill_Heal_2_Minor {
-            get => GetData<float>(2157);
+            get => GetData<float>(2169);
             set {
-                if (GetData<float>(2157) == value) return;
-                SetData(2157, value, nameof(Music_Skill_Heal_2_Minor));
+                if (GetData<float>(2169) == value) return;
+                SetData(2169, value, nameof(Music_Skill_Heal_2_Minor));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Heal_2_Minor));
             }
         }
 
         public const string Music_Skill_Heal_2_Major_displayName = "Music Skill: Heal 2: Major";
-        public const int Music_Skill_Heal_2_Major_sortIndex = 47200;
+        public const int Music_Skill_Heal_2_Major_sortIndex = 47400;
         [SortOrder(Music_Skill_Heal_2_Major_sortIndex)]
         [DisplayName(Music_Skill_Heal_2_Major_displayName)]
         public virtual float Music_Skill_Heal_2_Major {
-            get => GetData<float>(2161);
+            get => GetData<float>(2173);
             set {
-                if (GetData<float>(2161) == value) return;
-                SetData(2161, value, nameof(Music_Skill_Heal_2_Major));
+                if (GetData<float>(2173) == value) return;
+                SetData(2173, value, nameof(Music_Skill_Heal_2_Major));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Heal_2_Major));
             }
         }
 
-        public const string __47250_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __47250_sortIndex = 47250;
-        [SortOrder(__47250_sortIndex)]
-        [DisplayName(__47250_displayName)]
-        public virtual byte __47250 {
-            get => GetData<byte>(3);
-        }
-
-        public const string Unk84_displayName = "Unk84";
-        public const int Unk84_sortIndex = 47300;
-        [SortOrder(Unk84_sortIndex)]
-        [DisplayName(Unk84_displayName)]
-        public virtual float Unk84 {
-            get => GetData<float>(2165);
+        public const string Music_Skill_Hp_Up_0_displayName = "Music Skill: Hp Up 0";
+        public const int Music_Skill_Hp_Up_0_sortIndex = 47450;
+        [SortOrder(Music_Skill_Hp_Up_0_sortIndex)]
+        [DisplayName(Music_Skill_Hp_Up_0_displayName)]
+        public virtual uint Music_Skill_Hp_Up_0 {
+            get => GetData<uint>(2177);
             set {
-                if (GetData<float>(2165) == value) return;
-                SetData(2165, value, nameof(Unk84));
+                if (GetData<uint>(2177) == value) return;
+                SetData(2177, value, nameof(Music_Skill_Hp_Up_0));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk84));
+                OnPropertyChanged(nameof(Music_Skill_Hp_Up_0));
             }
         }
 
+        public const string Music_Skill_Hp_Up_1_displayName = "Music Skill: Hp Up 1";
+        public const int Music_Skill_Hp_Up_1_sortIndex = 47500;
+        [SortOrder(Music_Skill_Hp_Up_1_sortIndex)]
+        [DisplayName(Music_Skill_Hp_Up_1_displayName)]
+        public virtual uint Music_Skill_Hp_Up_1 {
+            get => GetData<uint>(2181);
+            set {
+                if (GetData<uint>(2181) == value) return;
+                SetData(2181, value, nameof(Music_Skill_Hp_Up_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Music_Skill_Hp_Up_1));
+            }
+        }
+
+        public const string Music_Skill_Mantle_Duration_displayName = "Music Skill: Mantle Duration";
+        public const int Music_Skill_Mantle_Duration_sortIndex = 47550;
+        [SortOrder(Music_Skill_Mantle_Duration_sortIndex)]
+        [DisplayName(Music_Skill_Mantle_Duration_displayName)]
+        public virtual float Music_Skill_Mantle_Duration {
+            get => GetData<float>(2185);
+            set {
+                if (GetData<float>(2185) == value) return;
+                SetData(2185, value, nameof(Music_Skill_Mantle_Duration));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Music_Skill_Mantle_Duration));
+            }
+        }
+
+        public const string Music_Skill_Mantle_Duration_Put_displayName = "Music Skill: Mantle Duration Put";
+        public const int Music_Skill_Mantle_Duration_Put_sortIndex = 47600;
+        [SortOrder(Music_Skill_Mantle_Duration_Put_sortIndex)]
+        [DisplayName(Music_Skill_Mantle_Duration_Put_displayName)]
+        public virtual float Music_Skill_Mantle_Duration_Put {
+            get => GetData<float>(2189);
+            set {
+                if (GetData<float>(2189) == value) return;
+                SetData(2189, value, nameof(Music_Skill_Mantle_Duration_Put));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Music_Skill_Mantle_Duration_Put));
+            }
+        }
+
+        public const string Music_Skill_Stamina_Up_Rate_displayName = "Music Skill: Stamina Up Rate";
+        public const int Music_Skill_Stamina_Up_Rate_sortIndex = 47650;
+        [SortOrder(Music_Skill_Stamina_Up_Rate_sortIndex)]
+        [DisplayName(Music_Skill_Stamina_Up_Rate_displayName)]
+        public virtual float Music_Skill_Stamina_Up_Rate {
+            get => GetData<float>(2193);
+            set {
+                if (GetData<float>(2193) == value) return;
+                SetData(2193, value, nameof(Music_Skill_Stamina_Up_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Music_Skill_Stamina_Up_Rate));
+            }
+        }
+
+        public const string __47700_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __47700_sortIndex = 47700;
+        [SortOrder(__47700_sortIndex)]
+        [DisplayName(__47700_displayName)]
+        public virtual byte __47700 {
+            get => GetData<byte>(3);
+        }
+
         public const string Unk85_displayName = "Unk85";
-        public const int Unk85_sortIndex = 47350;
+        public const int Unk85_sortIndex = 47750;
         [SortOrder(Unk85_sortIndex)]
         [DisplayName(Unk85_displayName)]
         public virtual float Unk85 {
-            get => GetData<float>(2169);
+            get => GetData<float>(2197);
             set {
-                if (GetData<float>(2169) == value) return;
-                SetData(2169, value, nameof(Unk85));
+                if (GetData<float>(2197) == value) return;
+                SetData(2197, value, nameof(Unk85));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk85));
             }
         }
 
         public const string Unk86_displayName = "Unk86";
-        public const int Unk86_sortIndex = 47400;
+        public const int Unk86_sortIndex = 47800;
         [SortOrder(Unk86_sortIndex)]
         [DisplayName(Unk86_displayName)]
         public virtual float Unk86 {
-            get => GetData<float>(2173);
+            get => GetData<float>(2201);
             set {
-                if (GetData<float>(2173) == value) return;
-                SetData(2173, value, nameof(Unk86));
+                if (GetData<float>(2201) == value) return;
+                SetData(2201, value, nameof(Unk86));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk86));
             }
         }
 
         public const string Unk87_displayName = "Unk87";
-        public const int Unk87_sortIndex = 47450;
+        public const int Unk87_sortIndex = 47850;
         [SortOrder(Unk87_sortIndex)]
         [DisplayName(Unk87_displayName)]
         public virtual uint Unk87 {
-            get => GetData<uint>(2177);
+            get => GetData<uint>(2205);
             set {
-                if (GetData<uint>(2177) == value) return;
-                SetData(2177, value, nameof(Unk87));
+                if (GetData<uint>(2205) == value) return;
+                SetData(2205, value, nameof(Unk87));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk87));
             }
         }
 
         public const string Unk88_displayName = "Unk88";
-        public const int Unk88_sortIndex = 47500;
+        public const int Unk88_sortIndex = 47900;
         [SortOrder(Unk88_sortIndex)]
         [DisplayName(Unk88_displayName)]
         public virtual uint Unk88 {
-            get => GetData<uint>(2181);
+            get => GetData<uint>(2209);
             set {
-                if (GetData<uint>(2181) == value) return;
-                SetData(2181, value, nameof(Unk88));
+                if (GetData<uint>(2209) == value) return;
+                SetData(2209, value, nameof(Unk88));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk88));
             }
         }
 
         public const string Unk89_displayName = "Unk89";
-        public const int Unk89_sortIndex = 47550;
+        public const int Unk89_sortIndex = 47950;
         [SortOrder(Unk89_sortIndex)]
         [DisplayName(Unk89_displayName)]
         public virtual float Unk89 {
-            get => GetData<float>(2185);
+            get => GetData<float>(2213);
             set {
-                if (GetData<float>(2185) == value) return;
-                SetData(2185, value, nameof(Unk89));
+                if (GetData<float>(2213) == value) return;
+                SetData(2213, value, nameof(Unk89));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk89));
             }
         }
 
         public const string Unk90_displayName = "Unk90";
-        public const int Unk90_sortIndex = 47600;
+        public const int Unk90_sortIndex = 48000;
         [SortOrder(Unk90_sortIndex)]
         [DisplayName(Unk90_displayName)]
         public virtual float Unk90 {
-            get => GetData<float>(2189);
+            get => GetData<float>(2217);
             set {
-                if (GetData<float>(2189) == value) return;
-                SetData(2189, value, nameof(Unk90));
+                if (GetData<float>(2217) == value) return;
+                SetData(2217, value, nameof(Unk90));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk90));
             }
         }
 
         public const string Unk91_displayName = "Unk91";
-        public const int Unk91_sortIndex = 47650;
+        public const int Unk91_sortIndex = 48050;
         [SortOrder(Unk91_sortIndex)]
         [DisplayName(Unk91_displayName)]
         public virtual float Unk91 {
-            get => GetData<float>(2193);
+            get => GetData<float>(2221);
             set {
-                if (GetData<float>(2193) == value) return;
-                SetData(2193, value, nameof(Unk91));
+                if (GetData<float>(2221) == value) return;
+                SetData(2221, value, nameof(Unk91));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk91));
             }
         }
 
         public const string Unk92_displayName = "Unk92";
-        public const int Unk92_sortIndex = 47700;
+        public const int Unk92_sortIndex = 48100;
         [SortOrder(Unk92_sortIndex)]
         [DisplayName(Unk92_displayName)]
-        public virtual float Unk92 {
-            get => GetData<float>(2197);
+        public virtual uint Unk92 {
+            get => GetData<uint>(2225);
             set {
-                if (GetData<float>(2197) == value) return;
-                SetData(2197, value, nameof(Unk92));
+                if (GetData<uint>(2225) == value) return;
+                SetData(2225, value, nameof(Unk92));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk92));
             }
         }
 
         public const string Unk93_displayName = "Unk93";
-        public const int Unk93_sortIndex = 47750;
+        public const int Unk93_sortIndex = 48150;
         [SortOrder(Unk93_sortIndex)]
         [DisplayName(Unk93_displayName)]
-        public virtual float Unk93 {
-            get => GetData<float>(2201);
+        public virtual uint Unk93 {
+            get => GetData<uint>(2229);
             set {
-                if (GetData<float>(2201) == value) return;
-                SetData(2201, value, nameof(Unk93));
+                if (GetData<uint>(2229) == value) return;
+                SetData(2229, value, nameof(Unk93));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk93));
             }
         }
 
         public const string Unk94_displayName = "Unk94";
-        public const int Unk94_sortIndex = 47800;
+        public const int Unk94_sortIndex = 48200;
         [SortOrder(Unk94_sortIndex)]
         [DisplayName(Unk94_displayName)]
-        public virtual uint Unk94 {
-            get => GetData<uint>(2205);
+        public virtual float Unk94 {
+            get => GetData<float>(2233);
             set {
-                if (GetData<uint>(2205) == value) return;
-                SetData(2205, value, nameof(Unk94));
+                if (GetData<float>(2233) == value) return;
+                SetData(2233, value, nameof(Unk94));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk94));
             }
         }
 
         public const string Unk95_displayName = "Unk95";
-        public const int Unk95_sortIndex = 47850;
+        public const int Unk95_sortIndex = 48250;
         [SortOrder(Unk95_sortIndex)]
         [DisplayName(Unk95_displayName)]
-        public virtual uint Unk95 {
-            get => GetData<uint>(2209);
+        public virtual float Unk95 {
+            get => GetData<float>(2237);
             set {
-                if (GetData<uint>(2209) == value) return;
-                SetData(2209, value, nameof(Unk95));
+                if (GetData<float>(2237) == value) return;
+                SetData(2237, value, nameof(Unk95));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk95));
             }
         }
 
-        public const string Unk96_displayName = "Unk96";
-        public const int Unk96_sortIndex = 47900;
-        [SortOrder(Unk96_sortIndex)]
-        [DisplayName(Unk96_displayName)]
-        public virtual float Unk96 {
-            get => GetData<float>(2213);
-            set {
-                if (GetData<float>(2213) == value) return;
-                SetData(2213, value, nameof(Unk96));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk96));
-            }
-        }
-
-        public const string Unk97_displayName = "Unk97";
-        public const int Unk97_sortIndex = 47950;
-        [SortOrder(Unk97_sortIndex)]
-        [DisplayName(Unk97_displayName)]
-        public virtual float Unk97 {
-            get => GetData<float>(2217);
-            set {
-                if (GetData<float>(2217) == value) return;
-                SetData(2217, value, nameof(Unk97));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk97));
-            }
-        }
-
-        public const string Unk98_displayName = "Unk98";
-        public const int Unk98_sortIndex = 48000;
-        [SortOrder(Unk98_sortIndex)]
-        [DisplayName(Unk98_displayName)]
-        public virtual float Unk98 {
-            get => GetData<float>(2221);
-            set {
-                if (GetData<float>(2221) == value) return;
-                SetData(2221, value, nameof(Unk98));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk98));
-            }
-        }
-
-        public const string Unk99_displayName = "Unk99";
-        public const int Unk99_sortIndex = 48050;
-        [SortOrder(Unk99_sortIndex)]
-        [DisplayName(Unk99_displayName)]
-        public virtual uint Unk99 {
-            get => GetData<uint>(2225);
-            set {
-                if (GetData<uint>(2225) == value) return;
-                SetData(2225, value, nameof(Unk99));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk99));
-            }
-        }
-
-        public const string Unk100_displayName = "Unk100";
-        public const int Unk100_sortIndex = 48100;
-        [SortOrder(Unk100_sortIndex)]
-        [DisplayName(Unk100_displayName)]
-        public virtual uint Unk100 {
-            get => GetData<uint>(2229);
-            set {
-                if (GetData<uint>(2229) == value) return;
-                SetData(2229, value, nameof(Unk100));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk100));
-            }
-        }
-
-        public const string Unk101_displayName = "Unk101";
-        public const int Unk101_sortIndex = 48150;
-        [SortOrder(Unk101_sortIndex)]
-        [DisplayName(Unk101_displayName)]
-        public virtual float Unk101 {
-            get => GetData<float>(2233);
-            set {
-                if (GetData<float>(2233) == value) return;
-                SetData(2233, value, nameof(Unk101));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk101));
-            }
-        }
-
-        public const string Unk102_displayName = "Unk102";
-        public const int Unk102_sortIndex = 48200;
-        [SortOrder(Unk102_sortIndex)]
-        [DisplayName(Unk102_displayName)]
-        public virtual float Unk102 {
-            get => GetData<float>(2237);
-            set {
-                if (GetData<float>(2237) == value) return;
-                SetData(2237, value, nameof(Unk102));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk102));
-            }
-        }
-
-        public const int lastSortIndex = 48250;
+        public const int lastSortIndex = 48300;
     }
 }
