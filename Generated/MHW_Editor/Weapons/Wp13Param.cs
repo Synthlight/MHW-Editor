@@ -59,8 +59,15 @@ namespace MHW_Editor.Weapons {
         public const int __200_sortIndex = 200;
         [SortOrder(__200_sortIndex)]
         [DisplayName(__200_displayName)]
+        [IsReadOnly]
         public virtual byte __200 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__200));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__200));
+            }
         }
 
         public const string Shield_2_Small_displayName = "Shield 2 Small";
@@ -109,8 +116,15 @@ namespace MHW_Editor.Weapons {
         public const int __400_sortIndex = 400;
         [SortOrder(__400_sortIndex)]
         [DisplayName(__400_displayName)]
+        [IsReadOnly]
         public virtual byte __400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__400));
+            }
         }
 
         public const string Shield_3_Small_displayName = "Shield 3 Small";
@@ -159,8 +173,15 @@ namespace MHW_Editor.Weapons {
         public const int __600_sortIndex = 600;
         [SortOrder(__600_sortIndex)]
         [DisplayName(__600_displayName)]
+        [IsReadOnly]
         public virtual byte __600 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__600));
+            }
         }
 
         public const string Shield_4_Small_displayName = "Shield 4 Small";

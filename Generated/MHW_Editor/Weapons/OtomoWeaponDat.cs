@@ -241,16 +241,30 @@ namespace MHW_Editor.Weapons {
         public const int GMD_Name_Index_sortIndex = 850;
         [SortOrder(GMD_Name_Index_sortIndex)]
         [DisplayName(GMD_Name_Index_displayName)]
+        [IsReadOnly]
         public virtual ushort GMD_Name_Index {
             get => GetData<ushort>(34);
+            set {
+                if (GetData<ushort>(34) == value) return;
+                SetData(34, value, nameof(GMD_Name_Index));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(GMD_Name_Index));
+            }
         }
 
         public const string GMD_Description_Index_displayName = "GMD Description Index";
         public const int GMD_Description_Index_sortIndex = 900;
         [SortOrder(GMD_Description_Index_sortIndex)]
         [DisplayName(GMD_Description_Index_displayName)]
+        [IsReadOnly]
         public virtual ushort GMD_Description_Index {
             get => GetData<ushort>(36);
+            set {
+                if (GetData<ushort>(36) == value) return;
+                SetData(36, value, nameof(GMD_Description_Index));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(GMD_Description_Index));
+            }
         }
 
         public const int lastSortIndex = 950;

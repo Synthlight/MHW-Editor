@@ -17,16 +17,30 @@ namespace MHW_Editor.Weapons {
         public const int Id_1_sortIndex = 50;
         [SortOrder(Id_1_sortIndex)]
         [DisplayName(Id_1_displayName)]
+        [IsReadOnly]
         public virtual ushort Id_1 {
             get => GetData<ushort>(0);
+            set {
+                if (GetData<ushort>(0) == value) return;
+                SetData(0, value, nameof(Id_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Id_1));
+            }
         }
 
         public const string Id_2_displayName = "Id 2";
         public const int Id_2_sortIndex = 100;
         [SortOrder(Id_2_sortIndex)]
         [DisplayName(Id_2_displayName)]
+        [IsReadOnly]
         public virtual ushort Id_2 {
             get => GetData<ushort>(2);
+            set {
+                if (GetData<ushort>(2) == value) return;
+                SetData(2, value, nameof(Id_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Id_2));
+            }
         }
 
         public const string Needed_Item_Id_to_Unlock_displayName = "Needed Item Id to Unlock";
@@ -208,8 +222,15 @@ namespace MHW_Editor.Weapons {
         public const int Id_3_sortIndex = 650;
         [SortOrder(Id_3_sortIndex)]
         [DisplayName(Id_3_displayName)]
+        [IsReadOnly]
         public virtual byte Id_3 {
             get => GetData<byte>(37);
+            set {
+                if (GetData<byte>(37) == value) return;
+                SetData(37, value, nameof(Id_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Id_3));
+            }
         }
 
         public const int lastSortIndex = 700;

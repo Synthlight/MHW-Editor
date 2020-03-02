@@ -17,16 +17,30 @@ namespace MHW_Editor.Gems {
         public const int Index_sortIndex = 50;
         [SortOrder(Index_sortIndex)]
         [DisplayName(Index_displayName)]
+        [IsReadOnly]
         public virtual uint Index {
             get => GetData<uint>(0);
+            set {
+                if (GetData<uint>(0) == value) return;
+                SetData(0, value, nameof(Index));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Index));
+            }
         }
 
         public const string Item_Id_displayName = "Item Id";
         public const int Item_Id_sortIndex = 100;
         [SortOrder(Item_Id_sortIndex)]
         [DisplayName(Item_Id_displayName)]
+        [IsReadOnly]
         public virtual uint Item_Id {
             get => GetData<uint>(4);
+            set {
+                if (GetData<uint>(4) == value) return;
+                SetData(4, value, nameof(Item_Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Item_Id));
+            }
         }
 
         public const string R5_displayName = "R5";

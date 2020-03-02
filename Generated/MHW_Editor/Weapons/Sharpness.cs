@@ -17,8 +17,15 @@ namespace MHW_Editor.Weapons {
         public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
+        [IsReadOnly]
         public virtual uint Id {
             get => GetData<uint>(0);
+            set {
+                if (GetData<uint>(0) == value) return;
+                SetData(0, value, nameof(Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Id));
+            }
         }
 
         public const string Red_displayName = "Red";

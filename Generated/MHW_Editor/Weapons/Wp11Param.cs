@@ -73,8 +73,15 @@ namespace MHW_Editor.Weapons {
         public const int __250_sortIndex = 250;
         [SortOrder(__250_sortIndex)]
         [DisplayName(__250_displayName)]
+        [IsReadOnly]
         public virtual byte __250 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__250));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__250));
+            }
         }
 
         public const string Thousand_Dragons_X1_displayName = "Thousand Dragons X1";

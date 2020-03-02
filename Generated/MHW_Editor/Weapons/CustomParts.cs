@@ -17,16 +17,30 @@ namespace MHW_Editor.Weapons {
         public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
+        [IsReadOnly]
         public virtual uint Id {
             get => GetData<uint>(0);
+            set {
+                if (GetData<uint>(0) == value) return;
+                SetData(0, value, nameof(Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Id));
+            }
         }
 
         public const string Weapon_Type_displayName = "Weapon Type";
         public const int Weapon_Type_sortIndex = 100;
         [SortOrder(Weapon_Type_sortIndex)]
         [DisplayName(Weapon_Type_displayName)]
+        [IsReadOnly]
         public virtual MHW_Template.Weapons.WeaponType Weapon_Type {
             get => (MHW_Template.Weapons.WeaponType) GetData<uint>(4);
+            set {
+                if ((MHW_Template.Weapons.WeaponType) GetData<uint>(4) == value) return;
+                SetData(4, (uint) value, nameof(Weapon_Type));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Weapon_Type));
+            }
         }
 
         public const string Part_1_Id_displayName = "Part 1 Id";

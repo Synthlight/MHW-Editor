@@ -941,24 +941,45 @@ namespace MHW_Editor.PlData {
         public const int __3350_sortIndex = 3350;
         [SortOrder(__3350_sortIndex)]
         [DisplayName(__3350_displayName)]
+        [IsReadOnly]
         public virtual byte __3350 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__3350));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__3350));
+            }
         }
 
         public const string _Skipping_ahead__3400_displayName = "------Skipping ahead.";
         public const int _Skipping_ahead__3400_sortIndex = 3400;
         [SortOrder(_Skipping_ahead__3400_sortIndex)]
         [DisplayName(_Skipping_ahead__3400_displayName)]
+        [IsReadOnly]
         public virtual byte _Skipping_ahead__3400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(_Skipping_ahead__3400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(_Skipping_ahead__3400));
+            }
         }
 
         public const string __3450_displayName = "-------------------------------------------------------------------------------------------";
         public const int __3450_sortIndex = 3450;
         [SortOrder(__3450_sortIndex)]
         [DisplayName(__3450_displayName)]
+        [IsReadOnly]
         public virtual byte __3450 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__3450));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__3450));
+            }
         }
 
         public const string Health_Initial_Value_displayName = "Health Initial Value";
@@ -1049,8 +1070,15 @@ namespace MHW_Editor.PlData {
         public const int __3800_sortIndex = 3800;
         [SortOrder(__3800_sortIndex)]
         [DisplayName(__3800_displayName)]
+        [IsReadOnly]
         public virtual byte __3800 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__3800));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__3800));
+            }
         }
 
         public const string Stamina_Initial_Value_displayName = "Stamina Initial Value";
@@ -1743,8 +1771,15 @@ namespace MHW_Editor.PlData {
         public const int __6300_sortIndex = 6300;
         [SortOrder(__6300_sortIndex)]
         [DisplayName(__6300_displayName)]
+        [IsReadOnly]
         public virtual byte __6300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__6300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__6300));
+            }
         }
 
         public const string Mount_Reduce_Stamina_mCore_Unk1_displayName = "Mount Reduce Stamina mCore: Unk1";
@@ -1835,8 +1870,15 @@ namespace MHW_Editor.PlData {
         public const int __6650_sortIndex = 6650;
         [SortOrder(__6650_sortIndex)]
         [DisplayName(__6650_displayName)]
+        [IsReadOnly]
         public virtual byte __6650 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__6650));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__6650));
+            }
         }
 
         public const string Unk67_displayName = "Unk67";
@@ -2277,24 +2319,45 @@ namespace MHW_Editor.PlData {
         public const int __8250_sortIndex = 8250;
         [SortOrder(__8250_sortIndex)]
         [DisplayName(__8250_displayName)]
+        [IsReadOnly]
         public virtual byte __8250 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__8250));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__8250));
+            }
         }
 
         public const string _Skipping_ahead__8300_displayName = "------Skipping ahead.";
         public const int _Skipping_ahead__8300_sortIndex = 8300;
         [SortOrder(_Skipping_ahead__8300_sortIndex)]
         [DisplayName(_Skipping_ahead__8300_displayName)]
+        [IsReadOnly]
         public virtual byte _Skipping_ahead__8300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(_Skipping_ahead__8300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(_Skipping_ahead__8300));
+            }
         }
 
         public const string __8350_displayName = "-------------------------------------------------------------------------------------------";
         public const int __8350_sortIndex = 8350;
         [SortOrder(__8350_sortIndex)]
         [DisplayName(__8350_displayName)]
+        [IsReadOnly]
         public virtual byte __8350 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__8350));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__8350));
+            }
         }
 
         public const string Dodge_IFrames_Normal_Evasion_0_displayName = "Dodge IFrames: Normal: Evasion 0";
@@ -3281,8 +3344,15 @@ namespace MHW_Editor.PlData {
         public const int __11900_sortIndex = 11900;
         [SortOrder(__11900_sortIndex)]
         [DisplayName(__11900_displayName)]
+        [IsReadOnly]
         public virtual byte __11900 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__11900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__11900));
+            }
         }
 
         public const string Evade_Normal_Distance_1_displayName = "Evade: Normal: Distance 1";
@@ -3751,24 +3821,45 @@ namespace MHW_Editor.PlData {
         public const int __13600_sortIndex = 13600;
         [SortOrder(__13600_sortIndex)]
         [DisplayName(__13600_displayName)]
+        [IsReadOnly]
         public virtual byte __13600 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__13600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__13600));
+            }
         }
 
         public const string _Skipping_ahead__13650_displayName = "------Skipping ahead.";
         public const int _Skipping_ahead__13650_sortIndex = 13650;
         [SortOrder(_Skipping_ahead__13650_sortIndex)]
         [DisplayName(_Skipping_ahead__13650_displayName)]
+        [IsReadOnly]
         public virtual byte _Skipping_ahead__13650 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(_Skipping_ahead__13650));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(_Skipping_ahead__13650));
+            }
         }
 
         public const string __13700_displayName = "-------------------------------------------------------------------------------------------";
         public const int __13700_sortIndex = 13700;
         [SortOrder(__13700_sortIndex)]
         [DisplayName(__13700_displayName)]
+        [IsReadOnly]
         public virtual byte __13700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__13700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__13700));
+            }
         }
 
         public const string Wp_HR_Augment_Attack_Bonus_1__displayName = "Wp HR Augment Attack Bonus (1)";
@@ -4055,8 +4146,15 @@ namespace MHW_Editor.PlData {
         public const int __14750_sortIndex = 14750;
         [SortOrder(__14750_sortIndex)]
         [DisplayName(__14750_displayName)]
+        [IsReadOnly]
         public virtual byte __14750 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__14750));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__14750));
+            }
         }
 
         public const string Wp_MR_Augment_Attack_Bonus_1__displayName = "Wp MR Augment Attack Bonus (1)";
@@ -4483,8 +4581,15 @@ namespace MHW_Editor.PlData {
         public const int __16300_sortIndex = 16300;
         [SortOrder(__16300_sortIndex)]
         [DisplayName(__16300_displayName)]
+        [IsReadOnly]
         public virtual byte __16300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__16300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__16300));
+            }
         }
 
         public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (1)";
@@ -4603,8 +4708,15 @@ namespace MHW_Editor.PlData {
         public const int __16750_sortIndex = 16750;
         [SortOrder(__16750_sortIndex)]
         [DisplayName(__16750_displayName)]
+        [IsReadOnly]
         public virtual byte __16750 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__16750));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__16750));
+            }
         }
 
         public const string Wp_MR_Augment_Great_Sword_Elemental_Multiplier_displayName = "Wp MR Augment Great Sword Elemental Multiplier";
@@ -4807,8 +4919,15 @@ namespace MHW_Editor.PlData {
         public const int __17500_sortIndex = 17500;
         [SortOrder(__17500_sortIndex)]
         [DisplayName(__17500_displayName)]
+        [IsReadOnly]
         public virtual byte __17500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__17500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__17500));
+            }
         }
 
         public const string Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__displayName = "Wp MR Augment Bow Coating Status Multiplier (1)";
@@ -4871,16 +4990,30 @@ namespace MHW_Editor.PlData {
         public const int __17750_sortIndex = 17750;
         [SortOrder(__17750_sortIndex)]
         [DisplayName(__17750_displayName)]
+        [IsReadOnly]
         public virtual byte __17750 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__17750));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__17750));
+            }
         }
 
         public const string _Skipping_the_rest__17800_displayName = "------Skipping the rest.";
         public const int _Skipping_the_rest__17800_sortIndex = 17800;
         [SortOrder(_Skipping_the_rest__17800_sortIndex)]
         [DisplayName(_Skipping_the_rest__17800_displayName)]
+        [IsReadOnly]
         public virtual byte _Skipping_the_rest__17800 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(_Skipping_the_rest__17800));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(_Skipping_the_rest__17800));
+            }
         }
 
         public const int lastSortIndex = 17850;

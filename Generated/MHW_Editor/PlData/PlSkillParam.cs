@@ -283,8 +283,15 @@ namespace MHW_Editor.PlData {
         public const int __1000_sortIndex = 1000;
         [SortOrder(__1000_sortIndex)]
         [DisplayName(__1000_displayName)]
+        [IsReadOnly]
         public virtual byte __1000 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__1000));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__1000));
+            }
         }
 
         public const string Mud_Motion_Speed_displayName = "Mud Motion Speed";
@@ -445,8 +452,15 @@ namespace MHW_Editor.PlData {
         public const int __1600_sortIndex = 1600;
         [SortOrder(__1600_sortIndex)]
         [DisplayName(__1600_displayName)]
+        [IsReadOnly]
         public virtual byte __1600 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__1600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__1600));
+            }
         }
 
         public const string Wide_Range_1_Efficiency_displayName = "Wide Range 1 Efficiency";
@@ -593,8 +607,15 @@ namespace MHW_Editor.PlData {
         public const int __2150_sortIndex = 2150;
         [SortOrder(__2150_sortIndex)]
         [DisplayName(__2150_displayName)]
+        [IsReadOnly]
         public virtual byte __2150 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__2150));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__2150));
+            }
         }
 
         public const string Unk1_displayName = "Unk1";
@@ -853,8 +874,15 @@ namespace MHW_Editor.PlData {
         public const int __3100_sortIndex = 3100;
         [SortOrder(__3100_sortIndex)]
         [DisplayName(__3100_displayName)]
+        [IsReadOnly]
         public virtual byte __3100 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__3100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__3100));
+            }
         }
 
         public const string Focus_Gunlance_Charge_Shot_Time_Rate_1_displayName = "Focus (Gunlance, Charge Shot) Time Rate 1";
@@ -987,8 +1015,15 @@ namespace MHW_Editor.PlData {
         public const int __3600_sortIndex = 3600;
         [SortOrder(__3600_sortIndex)]
         [DisplayName(__3600_displayName)]
+        [IsReadOnly]
         public virtual byte __3600 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__3600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__3600));
+            }
         }
 
         public const string Punishing_Draw_Great_Sword_Attack_Power_displayName = "Punishing Draw (Great Sword) Attack Power";
@@ -1079,8 +1114,15 @@ namespace MHW_Editor.PlData {
         public const int __3950_sortIndex = 3950;
         [SortOrder(__3950_sortIndex)]
         [DisplayName(__3950_displayName)]
+        [IsReadOnly]
         public virtual byte __3950 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__3950));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__3950));
+            }
         }
 
         public const string Punishing_Draw_Sword_Shield_Attack_Power_displayName = "Punishing Draw (Sword & Shield) Attack Power";
@@ -1171,8 +1213,15 @@ namespace MHW_Editor.PlData {
         public const int __4300_sortIndex = 4300;
         [SortOrder(__4300_sortIndex)]
         [DisplayName(__4300_displayName)]
+        [IsReadOnly]
         public virtual byte __4300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__4300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__4300));
+            }
         }
 
         public const string Punishing_Draw_Dual_Blades_Attack_Power_displayName = "Punishing Draw (Dual Blades) Attack Power";
@@ -1263,8 +1312,15 @@ namespace MHW_Editor.PlData {
         public const int __4650_sortIndex = 4650;
         [SortOrder(__4650_sortIndex)]
         [DisplayName(__4650_displayName)]
+        [IsReadOnly]
         public virtual byte __4650 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__4650));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__4650));
+            }
         }
 
         public const string Punishing_Draw_Long_Sword_Attack_Power_displayName = "Punishing Draw (Long Sword) Attack Power";
@@ -1355,8 +1411,15 @@ namespace MHW_Editor.PlData {
         public const int __5000_sortIndex = 5000;
         [SortOrder(__5000_sortIndex)]
         [DisplayName(__5000_displayName)]
+        [IsReadOnly]
         public virtual byte __5000 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__5000));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__5000));
+            }
         }
 
         public const string Punishing_Draw_Hammer_Attack_Power_displayName = "Punishing Draw (Hammer) Attack Power";
@@ -1447,8 +1510,15 @@ namespace MHW_Editor.PlData {
         public const int __5350_sortIndex = 5350;
         [SortOrder(__5350_sortIndex)]
         [DisplayName(__5350_displayName)]
+        [IsReadOnly]
         public virtual byte __5350 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__5350));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__5350));
+            }
         }
 
         public const string Punishing_Draw_Hunting_Horn_Attack_Power_displayName = "Punishing Draw (Hunting Horn) Attack Power";
@@ -1539,8 +1609,15 @@ namespace MHW_Editor.PlData {
         public const int __5700_sortIndex = 5700;
         [SortOrder(__5700_sortIndex)]
         [DisplayName(__5700_displayName)]
+        [IsReadOnly]
         public virtual byte __5700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__5700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__5700));
+            }
         }
 
         public const string Punishing_Draw_Lance_Attack_Power_displayName = "Punishing Draw (Lance) Attack Power";
@@ -1631,8 +1708,15 @@ namespace MHW_Editor.PlData {
         public const int __6050_sortIndex = 6050;
         [SortOrder(__6050_sortIndex)]
         [DisplayName(__6050_displayName)]
+        [IsReadOnly]
         public virtual byte __6050 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__6050));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__6050));
+            }
         }
 
         public const string Punishing_Draw_Gunlance_Attack_Power_displayName = "Punishing Draw (Gunlance) Attack Power";
@@ -1723,8 +1807,15 @@ namespace MHW_Editor.PlData {
         public const int __6400_sortIndex = 6400;
         [SortOrder(__6400_sortIndex)]
         [DisplayName(__6400_displayName)]
+        [IsReadOnly]
         public virtual byte __6400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__6400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__6400));
+            }
         }
 
         public const string Punishing_Draw_Switch_Axe_Attack_Power_displayName = "Punishing Draw (Switch Axe) Attack Power";
@@ -1815,8 +1906,15 @@ namespace MHW_Editor.PlData {
         public const int __6750_sortIndex = 6750;
         [SortOrder(__6750_sortIndex)]
         [DisplayName(__6750_displayName)]
+        [IsReadOnly]
         public virtual byte __6750 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__6750));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__6750));
+            }
         }
 
         public const string Punishing_Draw_Charge_Blade_Attack_Power_displayName = "Punishing Draw (Charge Blade) Attack Power";
@@ -1907,8 +2005,15 @@ namespace MHW_Editor.PlData {
         public const int __7100_sortIndex = 7100;
         [SortOrder(__7100_sortIndex)]
         [DisplayName(__7100_displayName)]
+        [IsReadOnly]
         public virtual byte __7100 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__7100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__7100));
+            }
         }
 
         public const string Punishing_Draw_Insect_Glaive_Attack_Power_displayName = "Punishing Draw (Insect Glaive) Attack Power";
@@ -1999,8 +2104,15 @@ namespace MHW_Editor.PlData {
         public const int __7450_sortIndex = 7450;
         [SortOrder(__7450_sortIndex)]
         [DisplayName(__7450_displayName)]
+        [IsReadOnly]
         public virtual byte __7450 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__7450));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__7450));
+            }
         }
 
         public const string Punishing_Draw_Bow_Attack_Power_displayName = "Punishing Draw (Bow) Attack Power";
@@ -2091,8 +2203,15 @@ namespace MHW_Editor.PlData {
         public const int __7800_sortIndex = 7800;
         [SortOrder(__7800_sortIndex)]
         [DisplayName(__7800_displayName)]
+        [IsReadOnly]
         public virtual byte __7800 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__7800));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__7800));
+            }
         }
 
         public const string Punishing_Draw_HBG_Attack_Power_displayName = "Punishing Draw (HBG) Attack Power";
@@ -2183,8 +2302,15 @@ namespace MHW_Editor.PlData {
         public const int __8150_sortIndex = 8150;
         [SortOrder(__8150_sortIndex)]
         [DisplayName(__8150_displayName)]
+        [IsReadOnly]
         public virtual byte __8150 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__8150));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__8150));
+            }
         }
 
         public const string Punishing_Draw_LBG_Attack_Power_displayName = "Punishing Draw (LBG) Attack Power";
@@ -2275,8 +2401,15 @@ namespace MHW_Editor.PlData {
         public const int __8500_sortIndex = 8500;
         [SortOrder(__8500_sortIndex)]
         [DisplayName(__8500_displayName)]
+        [IsReadOnly]
         public virtual byte __8500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__8500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__8500));
+            }
         }
 
         public const string Razor_Sharp_Sharpness_No_Reduce__displayName = "Razor Sharp: Sharpness No Reduce %";
@@ -2367,8 +2500,15 @@ namespace MHW_Editor.PlData {
         public const int __8850_sortIndex = 8850;
         [SortOrder(__8850_sortIndex)]
         [DisplayName(__8850_displayName)]
+        [IsReadOnly]
         public virtual byte __8850 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__8850));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__8850));
+            }
         }
 
         public const string True_Razor_Sharp_Sharpness_No_Reduce__displayName = "True Razor Sharp: Sharpness No Reduce %";
@@ -2459,8 +2599,15 @@ namespace MHW_Editor.PlData {
         public const int __9200_sortIndex = 9200;
         [SortOrder(__9200_sortIndex)]
         [DisplayName(__9200_displayName)]
+        [IsReadOnly]
         public virtual byte __9200 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__9200));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__9200));
+            }
         }
 
         public const string Minds_Eye_Ballistics_Gun_Critical_Begin_Wide_Rate_displayName = "Minds Eye / Ballistics: Gun Critical Begin Wide Rate";
@@ -2523,8 +2670,15 @@ namespace MHW_Editor.PlData {
         public const int __9450_sortIndex = 9450;
         [SortOrder(__9450_sortIndex)]
         [DisplayName(__9450_displayName)]
+        [IsReadOnly]
         public virtual byte __9450 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__9450));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__9450));
+            }
         }
 
         public const string Critical_Element_Great_Sword_Rate_displayName = "Critical Element: (Great Sword) Rate";
@@ -2741,8 +2895,15 @@ namespace MHW_Editor.PlData {
         public const int __10250_sortIndex = 10250;
         [SortOrder(__10250_sortIndex)]
         [DisplayName(__10250_displayName)]
+        [IsReadOnly]
         public virtual byte __10250 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__10250));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__10250));
+            }
         }
 
         public const string True_Critical_Element_Great_Sword_Rate_displayName = "True Critical Element: (Great Sword) Rate";
@@ -2959,8 +3120,15 @@ namespace MHW_Editor.PlData {
         public const int __11050_sortIndex = 11050;
         [SortOrder(__11050_sortIndex)]
         [DisplayName(__11050_displayName)]
+        [IsReadOnly]
         public virtual byte __11050 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__11050));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__11050));
+            }
         }
 
         public const string Critical_Condition_Great_Sword_Rate_displayName = "Critical Condition: (Great Sword) Rate";
@@ -3163,8 +3331,15 @@ namespace MHW_Editor.PlData {
         public const int __11800_sortIndex = 11800;
         [SortOrder(__11800_sortIndex)]
         [DisplayName(__11800_displayName)]
+        [IsReadOnly]
         public virtual byte __11800 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__11800));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__11800));
+            }
         }
 
         public const string True_Critical_Condition_Great_Sword_Rate_displayName = "True Critical Condition: (Great Sword) Rate";
@@ -3367,8 +3542,15 @@ namespace MHW_Editor.PlData {
         public const int __12550_sortIndex = 12550;
         [SortOrder(__12550_sortIndex)]
         [DisplayName(__12550_displayName)]
+        [IsReadOnly]
         public virtual byte __12550 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__12550));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__12550));
+            }
         }
 
         public const string Bludgeoner_Red_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Red Sharpness Attack Bonus";
@@ -3487,8 +3669,15 @@ namespace MHW_Editor.PlData {
         public const int __13000_sortIndex = 13000;
         [SortOrder(__13000_sortIndex)]
         [DisplayName(__13000_displayName)]
+        [IsReadOnly]
         public virtual byte __13000 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__13000));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__13000));
+            }
         }
 
         public const string Non_Elemental_Boost_Attack_Multiplier_displayName = "Non-Elemental Boost: Attack Multiplier";
@@ -3509,8 +3698,15 @@ namespace MHW_Editor.PlData {
         public const int __13100_sortIndex = 13100;
         [SortOrder(__13100_sortIndex)]
         [DisplayName(__13100_displayName)]
+        [IsReadOnly]
         public virtual byte __13100 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__13100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__13100));
+            }
         }
 
         public const string Affinity_Slider_Attack_Up_Activate_Time_displayName = "Affinity Slider: Attack Up Activate Time";
@@ -3559,8 +3755,15 @@ namespace MHW_Editor.PlData {
         public const int __13300_sortIndex = 13300;
         [SortOrder(__13300_sortIndex)]
         [DisplayName(__13300_displayName)]
+        [IsReadOnly]
         public virtual byte __13300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__13300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__13300));
+            }
         }
 
         public const string Artillery_Gunlance_Shell_Attack_Rate_1_displayName = "Artillery: Gunlance Shell Attack Rate 1";
@@ -3637,8 +3840,15 @@ namespace MHW_Editor.PlData {
         public const int __13600_sortIndex = 13600;
         [SortOrder(__13600_sortIndex)]
         [DisplayName(__13600_displayName)]
+        [IsReadOnly]
         public virtual byte __13600 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__13600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__13600));
+            }
         }
 
         public const string Artillery_Gunlance_WyvernFire_Attack_Rate_1_displayName = "Artillery: Gunlance WyvernFire Attack Rate 1";
@@ -3715,8 +3925,15 @@ namespace MHW_Editor.PlData {
         public const int __13900_sortIndex = 13900;
         [SortOrder(__13900_sortIndex)]
         [DisplayName(__13900_displayName)]
+        [IsReadOnly]
         public virtual byte __13900 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__13900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__13900));
+            }
         }
 
         public const string Artillery_Gunlance_Wyrmstake_Cannon_Attack_Rate_1_displayName = "Artillery: Gunlance Wyrmstake Cannon Attack Rate 1";
@@ -3793,8 +4010,15 @@ namespace MHW_Editor.PlData {
         public const int __14200_sortIndex = 14200;
         [SortOrder(__14200_sortIndex)]
         [DisplayName(__14200_displayName)]
+        [IsReadOnly]
         public virtual byte __14200 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__14200));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__14200));
+            }
         }
 
         public const string Artillery_Gunlance_WyvernFire_Cooldown_Time_Rate_1_displayName = "Artillery: Gunlance WyvernFire Cooldown Time Rate 1";
@@ -3871,8 +4095,15 @@ namespace MHW_Editor.PlData {
         public const int __14500_sortIndex = 14500;
         [SortOrder(__14500_sortIndex)]
         [DisplayName(__14500_displayName)]
+        [IsReadOnly]
         public virtual byte __14500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__14500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__14500));
+            }
         }
 
         public const string Artillery_Charge_Blade_Impact_Phial_Attack_Rate_1_displayName = "Artillery: Charge Blade Impact Phial Attack Rate 1";
@@ -3949,8 +4180,15 @@ namespace MHW_Editor.PlData {
         public const int __14800_sortIndex = 14800;
         [SortOrder(__14800_sortIndex)]
         [DisplayName(__14800_displayName)]
+        [IsReadOnly]
         public virtual byte __14800 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__14800));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__14800));
+            }
         }
 
         public const string Artillery_Bowgun_Sticky_Ammo_Attack_Rate_1_displayName = "Artillery: Bowgun Sticky Ammo Attack Rate 1";
@@ -4027,8 +4265,15 @@ namespace MHW_Editor.PlData {
         public const int __15100_sortIndex = 15100;
         [SortOrder(__15100_sortIndex)]
         [DisplayName(__15100_displayName)]
+        [IsReadOnly]
         public virtual byte __15100 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__15100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__15100));
+            }
         }
 
         public const string Artillery_Bowgun_Kakusan_Attack_Rate_Appears_Unused_1_displayName = "Artillery: Bowgun Kakusan? Attack Rate (Appears Unused?) 1";
@@ -4105,8 +4350,15 @@ namespace MHW_Editor.PlData {
         public const int __15400_sortIndex = 15400;
         [SortOrder(__15400_sortIndex)]
         [DisplayName(__15400_displayName)]
+        [IsReadOnly]
         public virtual byte __15400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__15400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__15400));
+            }
         }
 
         public const string Artillery_Bowgun_Wyvern_Ammo_Attack_Rate_1_displayName = "Artillery: Bowgun Wyvern Ammo Attack Rate 1";
@@ -4183,8 +4435,15 @@ namespace MHW_Editor.PlData {
         public const int __15700_sortIndex = 15700;
         [SortOrder(__15700_sortIndex)]
         [DisplayName(__15700_displayName)]
+        [IsReadOnly]
         public virtual byte __15700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__15700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__15700));
+            }
         }
 
         public const string Artillery_LBG_Wyvernblast_Attack_Rate_Appears_Unused_1_displayName = "Artillery: LBG Wyvernblast Attack Rate (Appears Unused?) 1";
@@ -4261,8 +4520,15 @@ namespace MHW_Editor.PlData {
         public const int __16000_sortIndex = 16000;
         [SortOrder(__16000_sortIndex)]
         [DisplayName(__16000_displayName)]
+        [IsReadOnly]
         public virtual byte __16000 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__16000));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__16000));
+            }
         }
 
         public const string Heavy_Artillery_Ballista_Attack_Rate_1_displayName = "Heavy Artillery: Ballista Attack Rate 1";
@@ -4325,8 +4591,15 @@ namespace MHW_Editor.PlData {
         public const int __16250_sortIndex = 16250;
         [SortOrder(__16250_sortIndex)]
         [DisplayName(__16250_displayName)]
+        [IsReadOnly]
         public virtual byte __16250 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__16250));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__16250));
+            }
         }
 
         public const string Bombardier_Attack_Rate_1_displayName = "Bombardier: Attack Rate 1";
@@ -4403,8 +4676,15 @@ namespace MHW_Editor.PlData {
         public const int __16550_sortIndex = 16550;
         [SortOrder(__16550_sortIndex)]
         [DisplayName(__16550_displayName)]
+        [IsReadOnly]
         public virtual byte __16550 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__16550));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__16550));
+            }
         }
 
         public const string Capacity_Boost_Gunlance_Normal_Bonus_displayName = "Capacity Boost: Gunlance Normal Bonus";
@@ -4467,8 +4747,15 @@ namespace MHW_Editor.PlData {
         public const int __16800_sortIndex = 16800;
         [SortOrder(__16800_sortIndex)]
         [DisplayName(__16800_displayName)]
+        [IsReadOnly]
         public virtual byte __16800 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__16800));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__16800));
+            }
         }
 
         public const string Ammo_Up_1_Capacity_1_Limit_displayName = "Ammo Up 1: Capacity 1 Limit";
@@ -4587,8 +4874,15 @@ namespace MHW_Editor.PlData {
         public const int __17250_sortIndex = 17250;
         [SortOrder(__17250_sortIndex)]
         [DisplayName(__17250_displayName)]
+        [IsReadOnly]
         public virtual byte __17250 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__17250));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__17250));
+            }
         }
 
         public const string Ammo_Up_2_Capacity_1_Limit_displayName = "Ammo Up 2: Capacity 1 Limit";
@@ -4707,8 +5001,15 @@ namespace MHW_Editor.PlData {
         public const int __17700_sortIndex = 17700;
         [SortOrder(__17700_sortIndex)]
         [DisplayName(__17700_displayName)]
+        [IsReadOnly]
         public virtual byte __17700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__17700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__17700));
+            }
         }
 
         public const string Ammo_Up_3_Capacity_1_Limit_displayName = "Ammo Up 3: Capacity 1 Limit";
@@ -4827,8 +5128,15 @@ namespace MHW_Editor.PlData {
         public const int __18150_sortIndex = 18150;
         [SortOrder(__18150_sortIndex)]
         [DisplayName(__18150_displayName)]
+        [IsReadOnly]
         public virtual byte __18150 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__18150));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__18150));
+            }
         }
 
         public const string Power_Prolonger_Dual_Blades_1_displayName = "Power Prolonger: Dual Blades 1";
@@ -4877,8 +5185,15 @@ namespace MHW_Editor.PlData {
         public const int __18350_sortIndex = 18350;
         [SortOrder(__18350_sortIndex)]
         [DisplayName(__18350_displayName)]
+        [IsReadOnly]
         public virtual byte __18350 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__18350));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__18350));
+            }
         }
 
         public const string Power_Prolonger_Long_Sword_1_displayName = "Power Prolonger: Long Sword 1";
@@ -4927,8 +5242,15 @@ namespace MHW_Editor.PlData {
         public const int __18550_sortIndex = 18550;
         [SortOrder(__18550_sortIndex)]
         [DisplayName(__18550_displayName)]
+        [IsReadOnly]
         public virtual byte __18550 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__18550));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__18550));
+            }
         }
 
         public const string Power_Prolonger_Switch_Axe_1_displayName = "Power Prolonger: Switch Axe 1";
@@ -4977,8 +5299,15 @@ namespace MHW_Editor.PlData {
         public const int __18750_sortIndex = 18750;
         [SortOrder(__18750_sortIndex)]
         [DisplayName(__18750_displayName)]
+        [IsReadOnly]
         public virtual byte __18750 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__18750));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__18750));
+            }
         }
 
         public const string Power_Prolonger_Charge_Blade_1_displayName = "Power Prolonger: Charge Blade 1";
@@ -5027,8 +5356,15 @@ namespace MHW_Editor.PlData {
         public const int __18950_sortIndex = 18950;
         [SortOrder(__18950_sortIndex)]
         [DisplayName(__18950_displayName)]
+        [IsReadOnly]
         public virtual byte __18950 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__18950));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__18950));
+            }
         }
 
         public const string Power_Prolonger_Insect_Glaive_1_displayName = "Power Prolonger: Insect Glaive 1";
@@ -5077,8 +5413,15 @@ namespace MHW_Editor.PlData {
         public const int __19150_sortIndex = 19150;
         [SortOrder(__19150_sortIndex)]
         [DisplayName(__19150_displayName)]
+        [IsReadOnly]
         public virtual byte __19150 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__19150));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__19150));
+            }
         }
 
         public const string Health_Auto_Recover_Interval_displayName = "Health Auto Recover Interval";
@@ -5113,8 +5456,15 @@ namespace MHW_Editor.PlData {
         public const int __19300_sortIndex = 19300;
         [SortOrder(__19300_sortIndex)]
         [DisplayName(__19300_displayName)]
+        [IsReadOnly]
         public virtual byte __19300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__19300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__19300));
+            }
         }
 
         public const string Hasten_Recovery_Great_Sword_Recovery_Health_displayName = "Hasten Recovery: (Great Sword) Recovery Health";
@@ -5359,8 +5709,15 @@ namespace MHW_Editor.PlData {
         public const int __20200_sortIndex = 20200;
         [SortOrder(__20200_sortIndex)]
         [DisplayName(__20200_displayName)]
+        [IsReadOnly]
         public virtual byte __20200 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__20200));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__20200));
+            }
         }
 
         public const string Unk19_displayName = "Unk19";
@@ -5409,8 +5766,15 @@ namespace MHW_Editor.PlData {
         public const int __20400_sortIndex = 20400;
         [SortOrder(__20400_sortIndex)]
         [DisplayName(__20400_displayName)]
+        [IsReadOnly]
         public virtual byte __20400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__20400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__20400));
+            }
         }
 
         public const string Slinger_Up_1_Stone_displayName = "Slinger Up 1: Stone";
@@ -5487,8 +5851,15 @@ namespace MHW_Editor.PlData {
         public const int __20700_sortIndex = 20700;
         [SortOrder(__20700_sortIndex)]
         [DisplayName(__20700_displayName)]
+        [IsReadOnly]
         public virtual byte __20700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__20700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__20700));
+            }
         }
 
         public const string Slinger_Up_1_Redpit_displayName = "Slinger Up 1: Redpit";
@@ -5565,8 +5936,15 @@ namespace MHW_Editor.PlData {
         public const int __21000_sortIndex = 21000;
         [SortOrder(__21000_sortIndex)]
         [DisplayName(__21000_displayName)]
+        [IsReadOnly]
         public virtual byte __21000 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__21000));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__21000));
+            }
         }
 
         public const string Slinger_Up_1_Brightmoss_displayName = "Slinger Up 1: Brightmoss";
@@ -5643,8 +6021,15 @@ namespace MHW_Editor.PlData {
         public const int __21300_sortIndex = 21300;
         [SortOrder(__21300_sortIndex)]
         [DisplayName(__21300_displayName)]
+        [IsReadOnly]
         public virtual byte __21300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__21300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__21300));
+            }
         }
 
         public const string Slinger_Up_1_Scatternut_displayName = "Slinger Up 1: Scatternut";
@@ -5721,8 +6106,15 @@ namespace MHW_Editor.PlData {
         public const int __21600_sortIndex = 21600;
         [SortOrder(__21600_sortIndex)]
         [DisplayName(__21600_displayName)]
+        [IsReadOnly]
         public virtual byte __21600 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__21600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__21600));
+            }
         }
 
         public const string Slinger_Up_1_Unk_1_displayName = "Slinger Up 1: Unk 1";
@@ -5799,8 +6191,15 @@ namespace MHW_Editor.PlData {
         public const int __21900_sortIndex = 21900;
         [SortOrder(__21900_sortIndex)]
         [DisplayName(__21900_displayName)]
+        [IsReadOnly]
         public virtual byte __21900 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__21900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__21900));
+            }
         }
 
         public const string Slinger_Up_1_Unk_2_displayName = "Slinger Up 1: Unk 2";
@@ -5877,8 +6276,15 @@ namespace MHW_Editor.PlData {
         public const int __22200_sortIndex = 22200;
         [SortOrder(__22200_sortIndex)]
         [DisplayName(__22200_displayName)]
+        [IsReadOnly]
         public virtual byte __22200 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__22200));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__22200));
+            }
         }
 
         public const string Slinger_Up_1_Unk_3_displayName = "Slinger Up 1: Unk 3";
@@ -5955,8 +6361,15 @@ namespace MHW_Editor.PlData {
         public const int __22500_sortIndex = 22500;
         [SortOrder(__22500_sortIndex)]
         [DisplayName(__22500_displayName)]
+        [IsReadOnly]
         public virtual byte __22500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__22500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__22500));
+            }
         }
 
         public const string Slinger_Up_1_Unk_4_displayName = "Slinger Up 1: Unk 4";
@@ -6033,8 +6446,15 @@ namespace MHW_Editor.PlData {
         public const int __22800_sortIndex = 22800;
         [SortOrder(__22800_sortIndex)]
         [DisplayName(__22800_displayName)]
+        [IsReadOnly]
         public virtual byte __22800 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__22800));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__22800));
+            }
         }
 
         public const string Slinger_Up_1_Unk_5_displayName = "Slinger Up 1: Unk 5";
@@ -6111,8 +6531,15 @@ namespace MHW_Editor.PlData {
         public const int __23100_sortIndex = 23100;
         [SortOrder(__23100_sortIndex)]
         [DisplayName(__23100_displayName)]
+        [IsReadOnly]
         public virtual byte __23100 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__23100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__23100));
+            }
         }
 
         public const string Slinger_Up_1_Torch_Pod_displayName = "Slinger Up 1: Torch Pod";
@@ -6189,8 +6616,15 @@ namespace MHW_Editor.PlData {
         public const int __23400_sortIndex = 23400;
         [SortOrder(__23400_sortIndex)]
         [DisplayName(__23400_displayName)]
+        [IsReadOnly]
         public virtual byte __23400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__23400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__23400));
+            }
         }
 
         public const string Slinger_Up_1_Unk_6_displayName = "Slinger Up 1: Unk 6";
@@ -6267,8 +6701,15 @@ namespace MHW_Editor.PlData {
         public const int __23700_sortIndex = 23700;
         [SortOrder(__23700_sortIndex)]
         [DisplayName(__23700_displayName)]
+        [IsReadOnly]
         public virtual byte __23700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__23700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__23700));
+            }
         }
 
         public const string Slinger_Up_1_Unk_7_displayName = "Slinger Up 1: Unk 7";
@@ -6345,8 +6786,15 @@ namespace MHW_Editor.PlData {
         public const int __24000_sortIndex = 24000;
         [SortOrder(__24000_sortIndex)]
         [DisplayName(__24000_displayName)]
+        [IsReadOnly]
         public virtual byte __24000 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__24000));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__24000));
+            }
         }
 
         public const string Slinger_Up_1_Unk_8_displayName = "Slinger Up 1: Unk 8";
@@ -6423,8 +6871,15 @@ namespace MHW_Editor.PlData {
         public const int __24300_sortIndex = 24300;
         [SortOrder(__24300_sortIndex)]
         [DisplayName(__24300_displayName)]
+        [IsReadOnly]
         public virtual byte __24300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__24300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__24300));
+            }
         }
 
         public const string Slinger_Up_1_Unk_9_displayName = "Slinger Up 1: Unk 9";
@@ -6501,8 +6956,15 @@ namespace MHW_Editor.PlData {
         public const int __24600_sortIndex = 24600;
         [SortOrder(__24600_sortIndex)]
         [DisplayName(__24600_displayName)]
+        [IsReadOnly]
         public virtual byte __24600 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__24600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__24600));
+            }
         }
 
         public const string Slinger_Up_1_Bomb_Pod_displayName = "Slinger Up 1: Bomb Pod";
@@ -6579,8 +7041,15 @@ namespace MHW_Editor.PlData {
         public const int __24900_sortIndex = 24900;
         [SortOrder(__24900_sortIndex)]
         [DisplayName(__24900_displayName)]
+        [IsReadOnly]
         public virtual byte __24900 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__24900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__24900));
+            }
         }
 
         public const string Slinger_Up_1_Piercing_Pod_displayName = "Slinger Up 1: Piercing Pod";
@@ -6657,8 +7126,15 @@ namespace MHW_Editor.PlData {
         public const int __25200_sortIndex = 25200;
         [SortOrder(__25200_sortIndex)]
         [DisplayName(__25200_displayName)]
+        [IsReadOnly]
         public virtual byte __25200 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__25200));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__25200));
+            }
         }
 
         public const string Slinger_Up_1_Slinger_Thorn_displayName = "Slinger Up 1: Slinger Thorn";
@@ -6735,8 +7211,15 @@ namespace MHW_Editor.PlData {
         public const int __25500_sortIndex = 25500;
         [SortOrder(__25500_sortIndex)]
         [DisplayName(__25500_displayName)]
+        [IsReadOnly]
         public virtual byte __25500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__25500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__25500));
+            }
         }
 
         public const string Slinger_Up_1_Dragon_Pod_displayName = "Slinger Up 1: Dragon Pod";
@@ -6813,8 +7296,15 @@ namespace MHW_Editor.PlData {
         public const int __25800_sortIndex = 25800;
         [SortOrder(__25800_sortIndex)]
         [DisplayName(__25800_displayName)]
+        [IsReadOnly]
         public virtual byte __25800 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__25800));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__25800));
+            }
         }
 
         public const string Slinger_Up_1_Unk_10_displayName = "Slinger Up 1: Unk 10";
@@ -6891,8 +7381,15 @@ namespace MHW_Editor.PlData {
         public const int __26100_sortIndex = 26100;
         [SortOrder(__26100_sortIndex)]
         [DisplayName(__26100_displayName)]
+        [IsReadOnly]
         public virtual byte __26100 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__26100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__26100));
+            }
         }
 
         public const string Slinger_Up_1_Unk_11_displayName = "Slinger Up 1: Unk 11";
@@ -6969,8 +7466,15 @@ namespace MHW_Editor.PlData {
         public const int __26400_sortIndex = 26400;
         [SortOrder(__26400_sortIndex)]
         [DisplayName(__26400_displayName)]
+        [IsReadOnly]
         public virtual byte __26400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__26400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__26400));
+            }
         }
 
         public const string Slinger_Up_1_Unk_12_displayName = "Slinger Up 1: Unk 12";
@@ -7047,8 +7551,15 @@ namespace MHW_Editor.PlData {
         public const int __26700_sortIndex = 26700;
         [SortOrder(__26700_sortIndex)]
         [DisplayName(__26700_displayName)]
+        [IsReadOnly]
         public virtual byte __26700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__26700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__26700));
+            }
         }
 
         public const string Slinger_Up_1_Unk_13_displayName = "Slinger Up 1: Unk 13";
@@ -7125,8 +7636,15 @@ namespace MHW_Editor.PlData {
         public const int __27000_sortIndex = 27000;
         [SortOrder(__27000_sortIndex)]
         [DisplayName(__27000_displayName)]
+        [IsReadOnly]
         public virtual byte __27000 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__27000));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__27000));
+            }
         }
 
         public const string Slinger_Up_1_Unk_14_displayName = "Slinger Up 1: Unk 14";
@@ -7203,8 +7721,15 @@ namespace MHW_Editor.PlData {
         public const int __27300_sortIndex = 27300;
         [SortOrder(__27300_sortIndex)]
         [DisplayName(__27300_displayName)]
+        [IsReadOnly]
         public virtual byte __27300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__27300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__27300));
+            }
         }
 
         public const string Slinger_Up_1_Unk_15_displayName = "Slinger Up 1: Unk 15";
@@ -7281,8 +7806,15 @@ namespace MHW_Editor.PlData {
         public const int __27600_sortIndex = 27600;
         [SortOrder(__27600_sortIndex)]
         [DisplayName(__27600_displayName)]
+        [IsReadOnly]
         public virtual byte __27600 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__27600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__27600));
+            }
         }
 
         public const string Slinger_Up_1_Unk_16_displayName = "Slinger Up 1: Unk 16";
@@ -7359,8 +7891,15 @@ namespace MHW_Editor.PlData {
         public const int __27900_sortIndex = 27900;
         [SortOrder(__27900_sortIndex)]
         [DisplayName(__27900_displayName)]
+        [IsReadOnly]
         public virtual byte __27900 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__27900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__27900));
+            }
         }
 
         public const string Slinger_Up_1_Unk_17_displayName = "Slinger Up 1: Unk 17";
@@ -7437,8 +7976,15 @@ namespace MHW_Editor.PlData {
         public const int __28200_sortIndex = 28200;
         [SortOrder(__28200_sortIndex)]
         [DisplayName(__28200_displayName)]
+        [IsReadOnly]
         public virtual byte __28200 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__28200));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__28200));
+            }
         }
 
         public const string Slinger_Up_1_Crystalburst_displayName = "Slinger Up 1: Crystalburst";
@@ -7515,8 +8061,15 @@ namespace MHW_Editor.PlData {
         public const int __28500_sortIndex = 28500;
         [SortOrder(__28500_sortIndex)]
         [DisplayName(__28500_displayName)]
+        [IsReadOnly]
         public virtual byte __28500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__28500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__28500));
+            }
         }
 
         public const string Slinger_Up_1_Puddle_Pod_displayName = "Slinger Up 1: Puddle Pod";
@@ -7593,8 +8146,15 @@ namespace MHW_Editor.PlData {
         public const int __28800_sortIndex = 28800;
         [SortOrder(__28800_sortIndex)]
         [DisplayName(__28800_displayName)]
+        [IsReadOnly]
         public virtual byte __28800 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__28800));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__28800));
+            }
         }
 
         public const string Slinger_Up_1_Unk_18_displayName = "Slinger Up 1: Unk 18";
@@ -7671,8 +8231,15 @@ namespace MHW_Editor.PlData {
         public const int __29100_sortIndex = 29100;
         [SortOrder(__29100_sortIndex)]
         [DisplayName(__29100_displayName)]
+        [IsReadOnly]
         public virtual byte __29100 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__29100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__29100));
+            }
         }
 
         public const string Slinger_Up_1_Unk_19_displayName = "Slinger Up 1: Unk 19";
@@ -7749,8 +8316,15 @@ namespace MHW_Editor.PlData {
         public const int __29400_sortIndex = 29400;
         [SortOrder(__29400_sortIndex)]
         [DisplayName(__29400_displayName)]
+        [IsReadOnly]
         public virtual byte __29400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__29400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__29400));
+            }
         }
 
         public const string Slinger_Up_1_Unk_20_displayName = "Slinger Up 1: Unk 20";
@@ -7827,8 +8401,15 @@ namespace MHW_Editor.PlData {
         public const int __29700_sortIndex = 29700;
         [SortOrder(__29700_sortIndex)]
         [DisplayName(__29700_displayName)]
+        [IsReadOnly]
         public virtual byte __29700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__29700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__29700));
+            }
         }
 
         public const string Master_Fisher_Add_Hook_Time_displayName = "Master Fisher: Add Hook Time";
@@ -7863,8 +8444,15 @@ namespace MHW_Editor.PlData {
         public const int __29850_sortIndex = 29850;
         [SortOrder(__29850_sortIndex)]
         [DisplayName(__29850_displayName)]
+        [IsReadOnly]
         public virtual byte __29850 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__29850));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__29850));
+            }
         }
 
         public const string Adrenaline_Stamina_Rate_displayName = "Adrenaline: Stamina Rate";
@@ -7885,8 +8473,15 @@ namespace MHW_Editor.PlData {
         public const int __29950_sortIndex = 29950;
         [SortOrder(__29950_sortIndex)]
         [DisplayName(__29950_displayName)]
+        [IsReadOnly]
         public virtual byte __29950 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__29950));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__29950));
+            }
         }
 
         public const string Elemental_Airborne_Great_Sword_Rate_displayName = "Elemental Airborne: (Great Sword) Rate";
@@ -8089,8 +8684,15 @@ namespace MHW_Editor.PlData {
         public const int __30700_sortIndex = 30700;
         [SortOrder(__30700_sortIndex)]
         [DisplayName(__30700_displayName)]
+        [IsReadOnly]
         public virtual byte __30700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__30700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__30700));
+            }
         }
 
         public const string Unk22_displayName = "Unk22";
@@ -8251,8 +8853,15 @@ namespace MHW_Editor.PlData {
         public const int __31300_sortIndex = 31300;
         [SortOrder(__31300_sortIndex)]
         [DisplayName(__31300_displayName)]
+        [IsReadOnly]
         public virtual byte __31300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__31300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__31300));
+            }
         }
 
         public const string Frostcraft_Great_Sword_Level_Multiplier_0_15__displayName = "Frostcraft: (Great Sword) Level Multiplier (0-15%)";
@@ -8357,8 +8966,15 @@ namespace MHW_Editor.PlData {
         public const int __31700_sortIndex = 31700;
         [SortOrder(__31700_sortIndex)]
         [DisplayName(__31700_displayName)]
+        [IsReadOnly]
         public virtual byte __31700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__31700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__31700));
+            }
         }
 
         public const string Frostcraft_Sword_Shield_Level_Multiplier_0_15__displayName = "Frostcraft: (Sword & Shield) Level Multiplier (0-15%)";
@@ -8463,8 +9079,15 @@ namespace MHW_Editor.PlData {
         public const int __32100_sortIndex = 32100;
         [SortOrder(__32100_sortIndex)]
         [DisplayName(__32100_displayName)]
+        [IsReadOnly]
         public virtual byte __32100 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__32100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__32100));
+            }
         }
 
         public const string Frostcraft_Dual_Blades_Level_Multiplier_0_15__displayName = "Frostcraft: (Dual Blades) Level Multiplier (0-15%)";
@@ -8569,8 +9192,15 @@ namespace MHW_Editor.PlData {
         public const int __32500_sortIndex = 32500;
         [SortOrder(__32500_sortIndex)]
         [DisplayName(__32500_displayName)]
+        [IsReadOnly]
         public virtual byte __32500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__32500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__32500));
+            }
         }
 
         public const string Frostcraft_Long_Sword_Level_Multiplier_0_15__displayName = "Frostcraft: (Long Sword) Level Multiplier (0-15%)";
@@ -8675,8 +9305,15 @@ namespace MHW_Editor.PlData {
         public const int __32900_sortIndex = 32900;
         [SortOrder(__32900_sortIndex)]
         [DisplayName(__32900_displayName)]
+        [IsReadOnly]
         public virtual byte __32900 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__32900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__32900));
+            }
         }
 
         public const string Frostcraft_Hammer_Level_Multiplier_0_15__displayName = "Frostcraft: (Hammer) Level Multiplier (0-15%)";
@@ -8781,8 +9418,15 @@ namespace MHW_Editor.PlData {
         public const int __33300_sortIndex = 33300;
         [SortOrder(__33300_sortIndex)]
         [DisplayName(__33300_displayName)]
+        [IsReadOnly]
         public virtual byte __33300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__33300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__33300));
+            }
         }
 
         public const string Frostcraft_Hunting_Horn_Level_Multiplier_0_15__displayName = "Frostcraft: (Hunting Horn) Level Multiplier (0-15%)";
@@ -8887,8 +9531,15 @@ namespace MHW_Editor.PlData {
         public const int __33700_sortIndex = 33700;
         [SortOrder(__33700_sortIndex)]
         [DisplayName(__33700_displayName)]
+        [IsReadOnly]
         public virtual byte __33700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__33700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__33700));
+            }
         }
 
         public const string Frostcraft_Lance_Level_Multiplier_0_15__displayName = "Frostcraft: (Lance) Level Multiplier (0-15%)";
@@ -8993,8 +9644,15 @@ namespace MHW_Editor.PlData {
         public const int __34100_sortIndex = 34100;
         [SortOrder(__34100_sortIndex)]
         [DisplayName(__34100_displayName)]
+        [IsReadOnly]
         public virtual byte __34100 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__34100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__34100));
+            }
         }
 
         public const string Frostcraft_Gunlance_Level_Multiplier_0_15__displayName = "Frostcraft: (Gunlance) Level Multiplier (0-15%)";
@@ -9099,8 +9757,15 @@ namespace MHW_Editor.PlData {
         public const int __34500_sortIndex = 34500;
         [SortOrder(__34500_sortIndex)]
         [DisplayName(__34500_displayName)]
+        [IsReadOnly]
         public virtual byte __34500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__34500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__34500));
+            }
         }
 
         public const string Frostcraft_Switch_Axe_Level_Multiplier_0_15__displayName = "Frostcraft: (Switch Axe) Level Multiplier (0-15%)";
@@ -9205,8 +9870,15 @@ namespace MHW_Editor.PlData {
         public const int __34900_sortIndex = 34900;
         [SortOrder(__34900_sortIndex)]
         [DisplayName(__34900_displayName)]
+        [IsReadOnly]
         public virtual byte __34900 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__34900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__34900));
+            }
         }
 
         public const string Frostcraft_Charge_Blade_Level_Multiplier_0_15__displayName = "Frostcraft: (Charge Blade) Level Multiplier (0-15%)";
@@ -9311,8 +9983,15 @@ namespace MHW_Editor.PlData {
         public const int __35300_sortIndex = 35300;
         [SortOrder(__35300_sortIndex)]
         [DisplayName(__35300_displayName)]
+        [IsReadOnly]
         public virtual byte __35300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__35300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__35300));
+            }
         }
 
         public const string Frostcraft_Insect_Glaive_Level_Multiplier_0_15__displayName = "Frostcraft: (Insect Glaive) Level Multiplier (0-15%)";
@@ -9417,8 +10096,15 @@ namespace MHW_Editor.PlData {
         public const int __35700_sortIndex = 35700;
         [SortOrder(__35700_sortIndex)]
         [DisplayName(__35700_displayName)]
+        [IsReadOnly]
         public virtual byte __35700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__35700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__35700));
+            }
         }
 
         public const string Frostcraft_Bow_Level_Multiplier_0_15__displayName = "Frostcraft: (Bow) Level Multiplier (0-15%)";
@@ -9523,8 +10209,15 @@ namespace MHW_Editor.PlData {
         public const int __36100_sortIndex = 36100;
         [SortOrder(__36100_sortIndex)]
         [DisplayName(__36100_displayName)]
+        [IsReadOnly]
         public virtual byte __36100 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__36100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__36100));
+            }
         }
 
         public const string Frostcraft_HBG_Level_Multiplier_0_15__displayName = "Frostcraft: (HBG) Level Multiplier (0-15%)";
@@ -9629,8 +10322,15 @@ namespace MHW_Editor.PlData {
         public const int __36500_sortIndex = 36500;
         [SortOrder(__36500_sortIndex)]
         [DisplayName(__36500_displayName)]
+        [IsReadOnly]
         public virtual byte __36500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__36500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__36500));
+            }
         }
 
         public const string Frostcraft_LBG_Level_Multiplier_0_15__displayName = "Frostcraft: (LBG) Level Multiplier (0-15%)";
@@ -9735,8 +10435,15 @@ namespace MHW_Editor.PlData {
         public const int __36900_sortIndex = 36900;
         [SortOrder(__36900_sortIndex)]
         [DisplayName(__36900_displayName)]
+        [IsReadOnly]
         public virtual byte __36900 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__36900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__36900));
+            }
         }
 
         public const string Unk33_displayName = "Unk33";
@@ -9785,8 +10492,15 @@ namespace MHW_Editor.PlData {
         public const int __37100_sortIndex = 37100;
         [SortOrder(__37100_sortIndex)]
         [DisplayName(__37100_displayName)]
+        [IsReadOnly]
         public virtual byte __37100 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__37100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__37100));
+            }
         }
 
         public const string Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit_displayName = "Frostcraft: Bow: (Rapid Shot & Clutch Claw Arrow) Consumption per Hit";
@@ -9863,8 +10577,15 @@ namespace MHW_Editor.PlData {
         public const int __37400_sortIndex = 37400;
         [SortOrder(__37400_sortIndex)]
         [DisplayName(__37400_displayName)]
+        [IsReadOnly]
         public virtual byte __37400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__37400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__37400));
+            }
         }
 
         public const string Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Normal Ammo) Consumption per Hit";
@@ -9997,8 +10718,15 @@ namespace MHW_Editor.PlData {
         public const int __37900_sortIndex = 37900;
         [SortOrder(__37900_sortIndex)]
         [DisplayName(__37900_displayName)]
+        [IsReadOnly]
         public virtual byte __37900 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__37900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__37900));
+            }
         }
 
         public const string Frostcraft_HBG_Wyvernheart_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Wyvernheart) Consumption per Hit";
@@ -10089,8 +10817,15 @@ namespace MHW_Editor.PlData {
         public const int __38250_sortIndex = 38250;
         [SortOrder(__38250_sortIndex)]
         [DisplayName(__38250_displayName)]
+        [IsReadOnly]
         public virtual byte __38250 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__38250));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__38250));
+            }
         }
 
         public const string Frostcraft_LBG_Wyvernblast_Consumption_per_Hit_displayName = "Frostcraft: LBG: (Wyvernblast) Consumption per Hit";
@@ -10125,8 +10860,15 @@ namespace MHW_Editor.PlData {
         public const int __38400_sortIndex = 38400;
         [SortOrder(__38400_sortIndex)]
         [DisplayName(__38400_displayName)]
+        [IsReadOnly]
         public virtual byte __38400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__38400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__38400));
+            }
         }
 
         public const string Unk36_displayName = "Unk36";
@@ -10805,8 +11547,15 @@ namespace MHW_Editor.PlData {
         public const int __40850_sortIndex = 40850;
         [SortOrder(__40850_sortIndex)]
         [DisplayName(__40850_displayName)]
+        [IsReadOnly]
         public virtual byte __40850 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__40850));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__40850));
+            }
         }
 
         public const string Food_Effect_Life_Up_1_displayName = "Food Effect: Life Up 1";
@@ -10897,8 +11646,15 @@ namespace MHW_Editor.PlData {
         public const int __41200_sortIndex = 41200;
         [SortOrder(__41200_sortIndex)]
         [DisplayName(__41200_displayName)]
+        [IsReadOnly]
         public virtual byte __41200 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__41200));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__41200));
+            }
         }
 
         public const string Food_Effect_Stamina_Up_1_displayName = "Food Effect: Stamina Up 1";
@@ -10947,8 +11703,15 @@ namespace MHW_Editor.PlData {
         public const int __41400_sortIndex = 41400;
         [SortOrder(__41400_sortIndex)]
         [DisplayName(__41400_displayName)]
+        [IsReadOnly]
         public virtual byte __41400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__41400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__41400));
+            }
         }
 
         public const string Food_Effect_Attack_Up_1_displayName = "Food Effect: Attack Up 1";
@@ -11011,8 +11774,15 @@ namespace MHW_Editor.PlData {
         public const int __41650_sortIndex = 41650;
         [SortOrder(__41650_sortIndex)]
         [DisplayName(__41650_displayName)]
+        [IsReadOnly]
         public virtual byte __41650 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__41650));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__41650));
+            }
         }
 
         public const string Food_Effect_Defense_Up_1_displayName = "Food Effect: Defense Up 1";
@@ -11075,8 +11845,15 @@ namespace MHW_Editor.PlData {
         public const int __41900_sortIndex = 41900;
         [SortOrder(__41900_sortIndex)]
         [DisplayName(__41900_displayName)]
+        [IsReadOnly]
         public virtual byte __41900 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__41900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__41900));
+            }
         }
 
         public const string Food_Effect_All_Resistances_Up_1_displayName = "Food Effect: All Resistances Up 1";
@@ -11139,8 +11916,15 @@ namespace MHW_Editor.PlData {
         public const int __42150_sortIndex = 42150;
         [SortOrder(__42150_sortIndex)]
         [DisplayName(__42150_displayName)]
+        [IsReadOnly]
         public virtual byte __42150 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__42150));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__42150));
+            }
         }
 
         public const string Feline_Polisher_1_displayName = "Feline Polisher: % 1";
@@ -11231,8 +12015,15 @@ namespace MHW_Editor.PlData {
         public const int __42500_sortIndex = 42500;
         [SortOrder(__42500_sortIndex)]
         [DisplayName(__42500_displayName)]
+        [IsReadOnly]
         public virtual byte __42500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__42500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__42500));
+            }
         }
 
         public const string Feline_Rider_Attack_Rate_displayName = "Feline Rider: Attack Rate";
@@ -11253,8 +12044,15 @@ namespace MHW_Editor.PlData {
         public const int __42600_sortIndex = 42600;
         [SortOrder(__42600_sortIndex)]
         [DisplayName(__42600_displayName)]
+        [IsReadOnly]
         public virtual byte __42600 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__42600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__42600));
+            }
         }
 
         public const string Feline_Heroics_Attack_Rate_displayName = "Feline Heroics: Attack Rate";
@@ -11303,8 +12101,15 @@ namespace MHW_Editor.PlData {
         public const int __42800_sortIndex = 42800;
         [SortOrder(__42800_sortIndex)]
         [DisplayName(__42800_displayName)]
+        [IsReadOnly]
         public virtual byte __42800 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__42800));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__42800));
+            }
         }
 
         public const string Feline_Carving_L_Lottery_1_displayName = "Feline Carving L: Lottery % 1";
@@ -11409,8 +12214,15 @@ namespace MHW_Editor.PlData {
         public const int __43200_sortIndex = 43200;
         [SortOrder(__43200_sortIndex)]
         [DisplayName(__43200_displayName)]
+        [IsReadOnly]
         public virtual byte __43200 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__43200));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__43200));
+            }
         }
 
         public const string Feline_Carving_S_Lottery__displayName = "Feline Carving S: Lottery %";
@@ -11445,8 +12257,15 @@ namespace MHW_Editor.PlData {
         public const int __43350_sortIndex = 43350;
         [SortOrder(__43350_sortIndex)]
         [DisplayName(__43350_displayName)]
+        [IsReadOnly]
         public virtual byte __43350 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__43350));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__43350));
+            }
         }
 
         public const string Feline_Medic_Heal_Rate_displayName = "Feline Medic: Heal Rate";
@@ -11467,8 +12286,15 @@ namespace MHW_Editor.PlData {
         public const int __43450_sortIndex = 43450;
         [SortOrder(__43450_sortIndex)]
         [DisplayName(__43450_displayName)]
+        [IsReadOnly]
         public virtual byte __43450 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__43450));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__43450));
+            }
         }
 
         public const string Feline_Black_Belt_Stamina_Rate_displayName = "Feline Black Belt: Stamina Rate";
@@ -11489,8 +12315,15 @@ namespace MHW_Editor.PlData {
         public const int __43550_sortIndex = 43550;
         [SortOrder(__43550_sortIndex)]
         [DisplayName(__43550_displayName)]
+        [IsReadOnly]
         public virtual byte __43550 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__43550));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__43550));
+            }
         }
 
         public const string Feline_Special_Attack_Condition_Attack_Bonus_displayName = "Feline Special Attack: Condition Attack Bonus";
@@ -11525,8 +12358,15 @@ namespace MHW_Editor.PlData {
         public const int __43700_sortIndex = 43700;
         [SortOrder(__43700_sortIndex)]
         [DisplayName(__43700_displayName)]
+        [IsReadOnly]
         public virtual byte __43700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__43700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__43700));
+            }
         }
 
         public const string Feline_Defense_S__displayName = "Feline Defense S: %";
@@ -11589,8 +12429,15 @@ namespace MHW_Editor.PlData {
         public const int __43950_sortIndex = 43950;
         [SortOrder(__43950_sortIndex)]
         [DisplayName(__43950_displayName)]
+        [IsReadOnly]
         public virtual byte __43950 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__43950));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__43950));
+            }
         }
 
         public const string Feline_Harvest_Cooldown_Multiplier_displayName = "Feline Harvest: Cooldown Multiplier";
@@ -11611,8 +12458,15 @@ namespace MHW_Editor.PlData {
         public const int __44050_sortIndex = 44050;
         [SortOrder(__44050_sortIndex)]
         [DisplayName(__44050_displayName)]
+        [IsReadOnly]
         public virtual byte __44050 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__44050));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__44050));
+            }
         }
 
         public const string Feline_Sharpshooter_Shell_Attack_Rate_displayName = "Feline Sharpshooter: Shell Attack Rate";
@@ -11633,8 +12487,15 @@ namespace MHW_Editor.PlData {
         public const int __44150_sortIndex = 44150;
         [SortOrder(__44150_sortIndex)]
         [DisplayName(__44150_displayName)]
+        [IsReadOnly]
         public virtual byte __44150 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__44150));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__44150));
+            }
         }
 
         public const string Feline_Escape_Artist_Dash_Stamina_Rate_displayName = "Feline Escape Artist: Dash Stamina Rate";
@@ -11655,8 +12516,15 @@ namespace MHW_Editor.PlData {
         public const int __44250_sortIndex = 44250;
         [SortOrder(__44250_sortIndex)]
         [DisplayName(__44250_displayName)]
+        [IsReadOnly]
         public virtual byte __44250 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__44250));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__44250));
+            }
         }
 
         public const string Feline_Delivery_Dash_Stamina_Rate_displayName = "Feline Delivery: Dash Stamina Rate";
@@ -11677,8 +12545,15 @@ namespace MHW_Editor.PlData {
         public const int __44350_sortIndex = 44350;
         [SortOrder(__44350_sortIndex)]
         [DisplayName(__44350_displayName)]
+        [IsReadOnly]
         public virtual byte __44350 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__44350));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__44350));
+            }
         }
 
         public const string Feline_Riser_S_IFrames_displayName = "Feline Riser S: IFrames";
@@ -11713,8 +12588,15 @@ namespace MHW_Editor.PlData {
         public const int __44500_sortIndex = 44500;
         [SortOrder(__44500_sortIndex)]
         [DisplayName(__44500_displayName)]
+        [IsReadOnly]
         public virtual byte __44500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__44500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__44500));
+            }
         }
 
         public const string Feline_Temper_Shell_Attack_Rate_displayName = "Feline Temper: Shell Attack Rate";
@@ -11749,8 +12631,15 @@ namespace MHW_Editor.PlData {
         public const int __44650_sortIndex = 44650;
         [SortOrder(__44650_sortIndex)]
         [DisplayName(__44650_displayName)]
+        [IsReadOnly]
         public virtual byte __44650 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__44650));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__44650));
+            }
         }
 
         public const string Feline_Cliffhanger_Stamina_Rate_displayName = "Feline Cliffhanger: Stamina Rate";
@@ -11771,8 +12660,15 @@ namespace MHW_Editor.PlData {
         public const int __44750_sortIndex = 44750;
         [SortOrder(__44750_sortIndex)]
         [DisplayName(__44750_displayName)]
+        [IsReadOnly]
         public virtual byte __44750 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__44750));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__44750));
+            }
         }
 
         public const string Feline_Slugger_Stun_Attack_Rate_displayName = "Feline Slugger: Stun Attack Rate";
@@ -11793,8 +12689,15 @@ namespace MHW_Editor.PlData {
         public const int __44850_sortIndex = 44850;
         [SortOrder(__44850_sortIndex)]
         [DisplayName(__44850_displayName)]
+        [IsReadOnly]
         public virtual byte __44850 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__44850));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__44850));
+            }
         }
 
         public const string Feline_Bombardier_Ballista_Attack_Rate_displayName = "Feline Bombardier: Ballista Attack Rate";
@@ -11913,8 +12816,15 @@ namespace MHW_Editor.PlData {
         public const int __45300_sortIndex = 45300;
         [SortOrder(__45300_sortIndex)]
         [DisplayName(__45300_displayName)]
+        [IsReadOnly]
         public virtual byte __45300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__45300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__45300));
+            }
         }
 
         public const string Feline_Moxie_Health_Threshold_displayName = "Feline Moxie: Health Threshold";
@@ -11935,8 +12845,15 @@ namespace MHW_Editor.PlData {
         public const int __45400_sortIndex = 45400;
         [SortOrder(__45400_sortIndex)]
         [DisplayName(__45400_displayName)]
+        [IsReadOnly]
         public virtual byte __45400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__45400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__45400));
+            }
         }
 
         public const string Feline_Dungmaster_Escape_Bonus_displayName = "Feline Dungmaster: Escape % Bonus";
@@ -11957,8 +12874,15 @@ namespace MHW_Editor.PlData {
         public const int __45500_sortIndex = 45500;
         [SortOrder(__45500_sortIndex)]
         [DisplayName(__45500_displayName)]
+        [IsReadOnly]
         public virtual byte __45500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__45500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__45500));
+            }
         }
 
         public const string Feline_Provoker_Rate_displayName = "Feline Provoker: Rate";
@@ -11979,8 +12903,15 @@ namespace MHW_Editor.PlData {
         public const int __45600_sortIndex = 45600;
         [SortOrder(__45600_sortIndex)]
         [DisplayName(__45600_displayName)]
+        [IsReadOnly]
         public virtual byte __45600 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__45600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__45600));
+            }
         }
 
         public const string Feline_Cool_Cat_Power_UP_Time_Needed_displayName = "Feline Cool Cat: Power UP Time Needed";
@@ -12029,8 +12960,15 @@ namespace MHW_Editor.PlData {
         public const int __45800_sortIndex = 45800;
         [SortOrder(__45800_sortIndex)]
         [DisplayName(__45800_displayName)]
+        [IsReadOnly]
         public virtual byte __45800 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__45800));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__45800));
+            }
         }
 
         public const string Feline_Booster_Attack_Bonus_displayName = "Feline Booster: Attack Bonus";
@@ -12079,8 +13017,15 @@ namespace MHW_Editor.PlData {
         public const int __46000_sortIndex = 46000;
         [SortOrder(__46000_sortIndex)]
         [DisplayName(__46000_displayName)]
+        [IsReadOnly]
         public virtual byte __46000 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__46000));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__46000));
+            }
         }
 
         public const string Feline_Groomer_Defense_Down_Duration_Multiplier_displayName = "Feline Groomer: Defense Down Duration Multiplier";
@@ -12115,8 +13060,15 @@ namespace MHW_Editor.PlData {
         public const int __46150_sortIndex = 46150;
         [SortOrder(__46150_sortIndex)]
         [DisplayName(__46150_displayName)]
+        [IsReadOnly]
         public virtual byte __46150 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__46150));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__46150));
+            }
         }
 
         public const string Feline_Parting_Gift_Radius_displayName = "Feline Parting Gift: Radius";
@@ -12151,8 +13103,15 @@ namespace MHW_Editor.PlData {
         public const int __46300_sortIndex = 46300;
         [SortOrder(__46300_sortIndex)]
         [DisplayName(__46300_displayName)]
+        [IsReadOnly]
         public virtual byte __46300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__46300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__46300));
+            }
         }
 
         public const string Feline_Recoil_Attack_Multiplier_1_displayName = "Feline Recoil: Attack Multiplier 1";
@@ -12229,8 +13188,15 @@ namespace MHW_Editor.PlData {
         public const int __46600_sortIndex = 46600;
         [SortOrder(__46600_sortIndex)]
         [DisplayName(__46600_displayName)]
+        [IsReadOnly]
         public virtual byte __46600 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__46600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__46600));
+            }
         }
 
         public const string Unk84_displayName = "Unk84";
@@ -12251,8 +13217,15 @@ namespace MHW_Editor.PlData {
         public const int __46700_sortIndex = 46700;
         [SortOrder(__46700_sortIndex)]
         [DisplayName(__46700_displayName)]
+        [IsReadOnly]
         public virtual byte __46700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__46700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__46700));
+            }
         }
 
         public const string Music_Skill_Bless_Random_Rate_displayName = "Music Skill: Bless: Random Rate";
@@ -12525,8 +13498,15 @@ namespace MHW_Editor.PlData {
         public const int __47700_sortIndex = 47700;
         [SortOrder(__47700_sortIndex)]
         [DisplayName(__47700_displayName)]
+        [IsReadOnly]
         public virtual byte __47700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__47700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__47700));
+            }
         }
 
         public const string Unk85_displayName = "Unk85";

@@ -17,16 +17,30 @@ namespace MHW_Editor.Weapons {
         public const int Aug_Category_sortIndex = 50;
         [SortOrder(Aug_Category_sortIndex)]
         [DisplayName(Aug_Category_displayName)]
+        [IsReadOnly]
         public virtual MHW_Template.Weapons.AugmentationCategory Aug_Category {
             get => (MHW_Template.Weapons.AugmentationCategory) GetData<uint>(0);
+            set {
+                if ((MHW_Template.Weapons.AugmentationCategory) GetData<uint>(0) == value) return;
+                SetData(0, (uint) value, nameof(Aug_Category));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Aug_Category));
+            }
         }
 
         public const string Aug_Level_displayName = "Aug Level";
         public const int Aug_Level_sortIndex = 100;
         [SortOrder(Aug_Level_sortIndex)]
         [DisplayName(Aug_Level_displayName)]
+        [IsReadOnly]
         public virtual uint Aug_Level {
             get => GetData<uint>(4);
+            set {
+                if (GetData<uint>(4) == value) return;
+                SetData(4, value, nameof(Aug_Level));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Aug_Level));
+            }
         }
 
         public const string Aug_Slot_Cost_displayName = "Aug Slot Cost";

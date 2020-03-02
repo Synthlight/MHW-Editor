@@ -17,24 +17,45 @@ namespace MHW_Editor.Armors {
         public const int Index_sortIndex = 50;
         [SortOrder(Index_sortIndex)]
         [DisplayName(Index_displayName)]
+        [IsReadOnly]
         public virtual uint Index {
             get => GetData<uint>(0);
+            set {
+                if (GetData<uint>(0) == value) return;
+                SetData(0, value, nameof(Index));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Index));
+            }
         }
 
         public const string Set_Id_displayName = "Set Id";
         public const int Set_Id_sortIndex = 100;
         [SortOrder(Set_Id_sortIndex)]
         [DisplayName(Set_Id_displayName)]
+        [IsReadOnly]
         public virtual ushort Set_Id {
             get => GetData<ushort>(4);
+            set {
+                if (GetData<ushort>(4) == value) return;
+                SetData(4, value, nameof(Set_Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_Id));
+            }
         }
 
         public const string Equip_Slot_displayName = "Equip Slot";
         public const int Equip_Slot_sortIndex = 150;
         [SortOrder(Equip_Slot_sortIndex)]
         [DisplayName(Equip_Slot_displayName)]
+        [IsReadOnly]
         public virtual MHW_Template.Armors.EquipSlot Equip_Slot {
             get => (MHW_Template.Armors.EquipSlot) GetData<byte>(6);
+            set {
+                if ((MHW_Template.Armors.EquipSlot) GetData<byte>(6) == value) return;
+                SetData(6, (byte) value, nameof(Equip_Slot));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Equip_Slot));
+            }
         }
 
         public const string Is_Full_Set_displayName = "Is Full Set";
@@ -237,16 +258,30 @@ namespace MHW_Editor.Armors {
         public const int GMD_Name_Index_sortIndex = 900;
         [SortOrder(GMD_Name_Index_sortIndex)]
         [DisplayName(GMD_Name_Index_displayName)]
+        [IsReadOnly]
         public virtual ushort GMD_Name_Index {
             get => GetData<ushort>(38);
+            set {
+                if (GetData<ushort>(38) == value) return;
+                SetData(38, value, nameof(GMD_Name_Index));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(GMD_Name_Index));
+            }
         }
 
         public const string GMD_Description_Index_displayName = "GMD Description Index";
         public const int GMD_Description_Index_sortIndex = 950;
         [SortOrder(GMD_Description_Index_sortIndex)]
         [DisplayName(GMD_Description_Index_displayName)]
+        [IsReadOnly]
         public virtual ushort GMD_Description_Index {
             get => GetData<ushort>(40);
+            set {
+                if (GetData<ushort>(40) == value) return;
+                SetData(40, value, nameof(GMD_Description_Index));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(GMD_Description_Index));
+            }
         }
 
         public const int lastSortIndex = 1000;

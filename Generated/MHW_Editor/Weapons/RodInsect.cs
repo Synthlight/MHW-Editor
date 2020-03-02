@@ -17,8 +17,15 @@ namespace MHW_Editor.Weapons {
         public const int Index_sortIndex = 50;
         [SortOrder(Index_sortIndex)]
         [DisplayName(Index_displayName)]
+        [IsReadOnly]
         public virtual uint Index {
             get => GetData<uint>(0);
+            set {
+                if (GetData<uint>(0) == value) return;
+                SetData(0, value, nameof(Index));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Index));
+            }
         }
 
         public const string Attack_Type_displayName = "Attack Type";
@@ -39,8 +46,15 @@ namespace MHW_Editor.Weapons {
         public const int Id_sortIndex = 150;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
+        [IsReadOnly]
         public virtual byte Id {
             get => GetData<byte>(5);
+            set {
+                if (GetData<byte>(5) == value) return;
+                SetData(5, value, nameof(Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Id));
+            }
         }
 
         public const string Base_Model_Id_displayName = "Base Model Id";

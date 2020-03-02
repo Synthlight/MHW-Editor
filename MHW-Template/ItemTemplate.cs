@@ -120,6 +120,10 @@ namespace MHW_Template
             WriteLine($"        [DataSource(DataSourceType.{entry.dataSourceType})]");
         }
 
+        if (entry.readOnly) {
+            WriteLine($"        [IsReadOnly]");
+        }
+
         WriteLine($"        {accessLevel} {returnString} {name} {{");
 
         if (returnString == "bool") {
@@ -128,34 +132,33 @@ namespace MHW_Template
             WriteLine($"            get => {getCast}GetData<{typeString}>({entry.offset});");
         }
 
-        if (!entry.readOnly) {
-            WriteLine("            set {");
+        // Always include a setter, even for readOnly. This enables us to bypass readOnly via command line switch.
+        WriteLine("            set {");
 
-            if (returnString == "bool") {
-                WriteLine($"                if (Convert.ToBoolean(GetData<{typeString}>({entry.offset})) == {entry.valueString}) return;"); // Do nothing if the value is the same.
-                WriteLine($"                SetData({entry.offset}, Convert.ToByte({entry.valueString}), nameof({name}));");
-            } else {
-                WriteLine($"                if ({getCast}GetData<{typeString}>({entry.offset}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
-                WriteLine($"                SetData({entry.offset}, {setCast}{entry.valueString}, nameof({name}));");
-            }
-
-            WriteLine("                OnPropertyChanged(nameof(Raw_Data));");
-            WriteLine($"                OnPropertyChanged(nameof({name}));");
-
-            if (entry.dataSourceType != null) {
-                WriteLine($"                OnPropertyChanged(nameof({name}_button));");
-            }
-
-            if (entry.extraOnPropertyChanged != null) {
-                foreach (var propertyToChange in entry.extraOnPropertyChanged) {
-                    var propertyToChangeName = Regex.Replace(propertyToChange, @"[^\w\d]+", "_");
-
-                    WriteLine($"                OnPropertyChanged(nameof({propertyToChangeName}));");
-                }
-            }
-
-            WriteLine("            }");
+        if (returnString == "bool") {
+            WriteLine($"                if (Convert.ToBoolean(GetData<{typeString}>({entry.offset})) == {entry.valueString}) return;"); // Do nothing if the value is the same.
+            WriteLine($"                SetData({entry.offset}, Convert.ToByte({entry.valueString}), nameof({name}));");
+        } else {
+            WriteLine($"                if ({getCast}GetData<{typeString}>({entry.offset}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
+            WriteLine($"                SetData({entry.offset}, {setCast}{entry.valueString}, nameof({name}));");
         }
+
+        WriteLine("                OnPropertyChanged(nameof(Raw_Data));");
+        WriteLine($"                OnPropertyChanged(nameof({name}));");
+
+        if (entry.dataSourceType != null) {
+            WriteLine($"                OnPropertyChanged(nameof({name}_button));");
+        }
+
+        if (entry.extraOnPropertyChanged != null) {
+            foreach (var propertyToChange in entry.extraOnPropertyChanged) {
+                var propertyToChangeName = Regex.Replace(propertyToChange, @"[^\w\d]+", "_");
+
+                WriteLine($"                OnPropertyChanged(nameof({propertyToChangeName}));");
+            }
+        }
+
+        WriteLine("            }");
 
         WriteLine("        }");
 
@@ -191,7 +194,7 @@ namespace MHW_Template
             #line hidden
             this.Write("\r\n        public const int lastSortIndex = ");
             
-            #line 131 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 134 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(sortIndex));
             
             #line default

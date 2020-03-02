@@ -17,8 +17,15 @@ namespace MHW_Editor.Skills {
         public const int Song_Id_Raw_sortIndex = 50;
         [SortOrder(Song_Id_Raw_sortIndex)]
         [DisplayName(Song_Id_Raw_displayName)]
+        [IsReadOnly]
         public virtual uint Song_Id_Raw {
             get => GetData<uint>(0);
+            set {
+                if (GetData<uint>(0) == value) return;
+                SetData(0, value, nameof(Song_Id_Raw));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Song_Id_Raw));
+            }
         }
 
         public const string Note_1_displayName = "Note 1";

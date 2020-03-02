@@ -143,8 +143,15 @@ namespace MHW_Editor.PlData {
         public const int __500_sortIndex = 500;
         [SortOrder(__500_sortIndex)]
         [DisplayName(__500_displayName)]
+        [IsReadOnly]
         public virtual byte __500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__500));
+            }
         }
 
         public const string Ghillie_Mantle_Cooldown_displayName = "Ghillie Mantle: Cooldown";
@@ -207,8 +214,15 @@ namespace MHW_Editor.PlData {
         public const int __750_sortIndex = 750;
         [SortOrder(__750_sortIndex)]
         [DisplayName(__750_displayName)]
+        [IsReadOnly]
         public virtual byte __750 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__750));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__750));
+            }
         }
 
         public const string Temporal_Mantle_Cooldown_displayName = "Temporal Mantle: Cooldown";
@@ -425,8 +439,15 @@ namespace MHW_Editor.PlData {
         public const int __1550_sortIndex = 1550;
         [SortOrder(__1550_sortIndex)]
         [DisplayName(__1550_displayName)]
+        [IsReadOnly]
         public virtual byte __1550 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__1550));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__1550));
+            }
         }
 
         public const string Health_Booster_Cooldown_displayName = "Health Booster: Cooldown";
@@ -475,8 +496,15 @@ namespace MHW_Editor.PlData {
         public const int __1750_sortIndex = 1750;
         [SortOrder(__1750_sortIndex)]
         [DisplayName(__1750_displayName)]
+        [IsReadOnly]
         public virtual byte __1750 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__1750));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__1750));
+            }
         }
 
         public const string Rocksteady_Mantle_Cooldown_displayName = "Rocksteady Mantle: Cooldown";
@@ -553,8 +581,15 @@ namespace MHW_Editor.PlData {
         public const int __2050_sortIndex = 2050;
         [SortOrder(__2050_sortIndex)]
         [DisplayName(__2050_displayName)]
+        [IsReadOnly]
         public virtual byte __2050 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__2050));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__2050));
+            }
         }
 
         public const string Challenger_Mantle_Cooldown_displayName = "Challenger Mantle: Cooldown";
@@ -617,8 +652,15 @@ namespace MHW_Editor.PlData {
         public const int __2300_sortIndex = 2300;
         [SortOrder(__2300_sortIndex)]
         [DisplayName(__2300_displayName)]
+        [IsReadOnly]
         public virtual byte __2300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__2300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__2300));
+            }
         }
 
         public const string Vitality_Mantle_Cooldown_displayName = "Vitality Mantle: Cooldown";
@@ -667,8 +709,15 @@ namespace MHW_Editor.PlData {
         public const int __2500_sortIndex = 2500;
         [SortOrder(__2500_sortIndex)]
         [DisplayName(__2500_displayName)]
+        [IsReadOnly]
         public virtual byte __2500 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__2500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__2500));
+            }
         }
 
         public const string Fireproof_Mantle_Cooldown_displayName = "Fireproof Mantle: Cooldown";
@@ -717,8 +766,15 @@ namespace MHW_Editor.PlData {
         public const int __2700_sortIndex = 2700;
         [SortOrder(__2700_sortIndex)]
         [DisplayName(__2700_displayName)]
+        [IsReadOnly]
         public virtual byte __2700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__2700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__2700));
+            }
         }
 
         public const string Waterproof_Mantle_Cooldown_displayName = "Waterproof Mantle: Cooldown";
@@ -767,8 +823,15 @@ namespace MHW_Editor.PlData {
         public const int __2900_sortIndex = 2900;
         [SortOrder(__2900_sortIndex)]
         [DisplayName(__2900_displayName)]
+        [IsReadOnly]
         public virtual byte __2900 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__2900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__2900));
+            }
         }
 
         public const string Iceproof_Mantle_Cooldown_displayName = "Iceproof Mantle: Cooldown";
@@ -817,8 +880,15 @@ namespace MHW_Editor.PlData {
         public const int __3100_sortIndex = 3100;
         [SortOrder(__3100_sortIndex)]
         [DisplayName(__3100_displayName)]
+        [IsReadOnly]
         public virtual byte __3100 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__3100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__3100));
+            }
         }
 
         public const string Thunderproof_Mantle_Cooldown_displayName = "Thunderproof Mantle: Cooldown";
@@ -867,8 +937,15 @@ namespace MHW_Editor.PlData {
         public const int __3300_sortIndex = 3300;
         [SortOrder(__3300_sortIndex)]
         [DisplayName(__3300_displayName)]
+        [IsReadOnly]
         public virtual byte __3300 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__3300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__3300));
+            }
         }
 
         public const string Dragonproof_Mantle_Cooldown_displayName = "Dragonproof Mantle: Cooldown";
@@ -931,8 +1008,15 @@ namespace MHW_Editor.PlData {
         public const int __3550_sortIndex = 3550;
         [SortOrder(__3550_sortIndex)]
         [DisplayName(__3550_displayName)]
+        [IsReadOnly]
         public virtual byte __3550 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__3550));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__3550));
+            }
         }
 
         public const string Cleanser_Booster_Cooldown_displayName = "Cleanser Booster: Cooldown";
@@ -1037,8 +1121,15 @@ namespace MHW_Editor.PlData {
         public const int __3950_sortIndex = 3950;
         [SortOrder(__3950_sortIndex)]
         [DisplayName(__3950_displayName)]
+        [IsReadOnly]
         public virtual byte __3950 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__3950));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__3950));
+            }
         }
 
         public const string Glider_Mantle_Cooldown_displayName = "Glider Mantle: Cooldown";
@@ -1087,8 +1178,15 @@ namespace MHW_Editor.PlData {
         public const int __4150_sortIndex = 4150;
         [SortOrder(__4150_sortIndex)]
         [DisplayName(__4150_displayName)]
+        [IsReadOnly]
         public virtual byte __4150 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__4150));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__4150));
+            }
         }
 
         public const string Evasion_Mantle_Cooldown_displayName = "Evasion Mantle: Cooldown";
@@ -1235,8 +1333,15 @@ namespace MHW_Editor.PlData {
         public const int __4700_sortIndex = 4700;
         [SortOrder(__4700_sortIndex)]
         [DisplayName(__4700_displayName)]
+        [IsReadOnly]
         public virtual byte __4700 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__4700));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__4700));
+            }
         }
 
         public const string Impact_Mantle_Cooldown_displayName = "Impact Mantle: Cooldown";
@@ -1495,8 +1600,15 @@ namespace MHW_Editor.PlData {
         public const int __5650_sortIndex = 5650;
         [SortOrder(__5650_sortIndex)]
         [DisplayName(__5650_displayName)]
+        [IsReadOnly]
         public virtual byte __5650 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__5650));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__5650));
+            }
         }
 
         public const string Apothecary_Mantle_Cooldown_displayName = "Apothecary Mantle: Cooldown";
@@ -1587,8 +1699,15 @@ namespace MHW_Editor.PlData {
         public const int __6000_sortIndex = 6000;
         [SortOrder(__6000_sortIndex)]
         [DisplayName(__6000_displayName)]
+        [IsReadOnly]
         public virtual byte __6000 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__6000));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__6000));
+            }
         }
 
         public const string Immunity_Mantle_Cooldown_displayName = "Immunity Mantle: Cooldown";
@@ -1623,8 +1742,15 @@ namespace MHW_Editor.PlData {
         public const int __6150_sortIndex = 6150;
         [SortOrder(__6150_sortIndex)]
         [DisplayName(__6150_displayName)]
+        [IsReadOnly]
         public virtual byte __6150 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__6150));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__6150));
+            }
         }
 
         public const string Affinity_Booster_Cooldown_displayName = "Affinity Booster: Cooldown";
@@ -1687,8 +1813,15 @@ namespace MHW_Editor.PlData {
         public const int __6400_sortIndex = 6400;
         [SortOrder(__6400_sortIndex)]
         [DisplayName(__6400_displayName)]
+        [IsReadOnly]
         public virtual byte __6400 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__6400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__6400));
+            }
         }
 
         public const string Bandit_Mantle_Cooldown_displayName = "Bandit Mantle: Cooldown";
@@ -1849,8 +1982,15 @@ namespace MHW_Editor.PlData {
         public const int __7000_sortIndex = 7000;
         [SortOrder(__7000_sortIndex)]
         [DisplayName(__7000_displayName)]
+        [IsReadOnly]
         public virtual byte __7000 {
             get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__7000));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__7000));
+            }
         }
 
         public const string Assassin_s_Hood_Cooldown_displayName = "Assassin's Hood: Cooldown";

@@ -17,16 +17,30 @@ namespace MHW_Editor.Skills {
         public const int Id_sortIndex = 50;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
+        [IsReadOnly]
         public virtual ushort Id {
             get => GetData<ushort>(0);
+            set {
+                if (GetData<ushort>(0) == value) return;
+                SetData(0, value, nameof(Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Id));
+            }
         }
 
         public const string Level_displayName = "Level";
         public const int Level_sortIndex = 100;
         [SortOrder(Level_sortIndex)]
         [DisplayName(Level_displayName)]
+        [IsReadOnly]
         public virtual byte Level {
             get => GetData<byte>(2);
+            set {
+                if (GetData<byte>(2) == value) return;
+                SetData(2, value, nameof(Level));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Level));
+            }
         }
 
         public const string Unlock_Skill_1_displayName = "Unlock Skill 1";

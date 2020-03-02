@@ -17,16 +17,30 @@ namespace MHW_Editor.Items {
         public const int Equipment_Category_sortIndex = 50;
         [SortOrder(Equipment_Category_sortIndex)]
         [DisplayName(Equipment_Category_displayName)]
+        [IsReadOnly]
         public virtual byte Equipment_Category {
             get => GetData<byte>(0);
+            set {
+                if (GetData<byte>(0) == value) return;
+                SetData(0, value, nameof(Equipment_Category));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Equipment_Category));
+            }
         }
 
         public const string Equipment_Id_displayName = "Equipment Id";
         public const int Equipment_Id_sortIndex = 100;
         [SortOrder(Equipment_Id_sortIndex)]
         [DisplayName(Equipment_Id_displayName)]
+        [IsReadOnly]
         public virtual ushort Equipment_Id {
             get => GetData<ushort>(1);
+            set {
+                if (GetData<ushort>(1) == value) return;
+                SetData(1, value, nameof(Equipment_Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Equipment_Id));
+            }
         }
 
         public const string Needed_Item_Id_to_Unlock_displayName = "Needed Item Id to Unlock";

@@ -17,8 +17,15 @@ namespace MHW_Editor.Armors {
         public const int Mantle_Id_sortIndex = 50;
         [SortOrder(Mantle_Id_sortIndex)]
         [DisplayName(Mantle_Id_displayName)]
+        [IsReadOnly]
         public virtual uint Mantle_Id {
             get => GetData<uint>(16);
+            set {
+                if (GetData<uint>(16) == value) return;
+                SetData(16, value, nameof(Mantle_Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Mantle_Id));
+            }
         }
 
         public const string Icon_Id_displayName = "Icon Id";

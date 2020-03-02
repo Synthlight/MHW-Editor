@@ -17,16 +17,30 @@ namespace MHW_Editor.Weapons {
         public const int Index_sortIndex = 50;
         [SortOrder(Index_sortIndex)]
         [DisplayName(Index_displayName)]
+        [IsReadOnly]
         public virtual uint Index {
             get => GetData<uint>(0);
+            set {
+                if (GetData<uint>(0) == value) return;
+                SetData(0, value, nameof(Index));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Index));
+            }
         }
 
         public const string Id_displayName = "Id";
         public const int Id_sortIndex = 100;
         [SortOrder(Id_sortIndex)]
         [DisplayName(Id_displayName)]
+        [IsReadOnly]
         public virtual ushort Id {
             get => GetData<ushort>(59);
+            set {
+                if (GetData<ushort>(59) == value) return;
+                SetData(59, value, nameof(Id));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Id));
+            }
         }
 
         public const string Base_Model_Id_displayName = "Base Model Id";
@@ -446,16 +460,30 @@ namespace MHW_Editor.Weapons {
         public const int GMD_Name_Index_sortIndex = 1600;
         [SortOrder(GMD_Name_Index_sortIndex)]
         [DisplayName(GMD_Name_Index_displayName)]
+        [IsReadOnly]
         public virtual ushort GMD_Name_Index {
             get => GetData<ushort>(61);
+            set {
+                if (GetData<ushort>(61) == value) return;
+                SetData(61, value, nameof(GMD_Name_Index));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(GMD_Name_Index));
+            }
         }
 
         public const string GMD_Description_Index_displayName = "GMD Description Index";
         public const int GMD_Description_Index_sortIndex = 1650;
         [SortOrder(GMD_Description_Index_sortIndex)]
         [DisplayName(GMD_Description_Index_displayName)]
+        [IsReadOnly]
         public virtual ushort GMD_Description_Index {
             get => GetData<ushort>(63);
+            set {
+                if (GetData<ushort>(63) == value) return;
+                SetData(63, value, nameof(GMD_Description_Index));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(GMD_Description_Index));
+            }
         }
 
         public const int lastSortIndex = 1700;

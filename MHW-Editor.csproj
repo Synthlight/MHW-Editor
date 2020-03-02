@@ -170,6 +170,7 @@
     </Compile>
     <Compile Include="Items\ItemDelivery.cs" />
     <Compile Include="Items\RoomFurniture.cs" />
+    <Compile Include="Models\IsReadOnlyAttribute.cs" />
     <Compile Include="Monsters\AnimalSize.cs" />
     <Compile Include="Monsters\EnemySort.cs" />
     <Compile Include="Items\SteamRewardList.cs" />

@@ -60,6 +60,7 @@ namespace MHW_Editor {
         private readonly Brush backgroundBrush = (Brush) new BrushConverter().ConvertFrom("#c0e1fb");
         [CanBeNull]
         private NotifyIcon notifyIcon;
+        private readonly bool unlockFields;
 
         public static string locale = "eng";
         public string Locale {
@@ -95,6 +96,12 @@ namespace MHW_Editor {
 
         public MainWindow() {
             var args = Environment.GetCommandLineArgs();
+
+            if (args.Length >= 2) {
+                if (args[1].ToLower().Equals("-unlock")) {
+                    unlockFields = true;
+                }
+            }
 
             if (args.Length >= 4) {
                 try {
@@ -396,6 +403,7 @@ namespace MHW_Editor {
             var displayName = ((DisplayNameAttribute) propertyInfo?.GetCustomAttribute(typeof(DisplayNameAttribute), true))?.DisplayName;
             var sortOrder = ((SortOrderAttribute) propertyInfo?.GetCustomAttribute(typeof(SortOrderAttribute), true))?.sortOrder;
             var customSorterType = ((CustomSorterAttribute) propertyInfo?.GetCustomAttribute(typeof(CustomSorterAttribute), true))?.customSorterType;
+            var isReadOnly = (IsReadOnlyAttribute) propertyInfo?.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
             ICustomSorter customSorter = null;
 
             if (displayName != null) {
@@ -412,6 +420,10 @@ namespace MHW_Editor {
                 if (customSorter is ICustomSorterWithPropertyName csWithName) {
                     csWithName.PropertyName = e.PropertyName;
                 }
+            }
+
+            if (isReadOnly) {
+                e.Column.IsReadOnly = !unlockFields;
             }
 
             columnMap[e.PropertyName] = new ColumnHolder(e.Column, sortOrder ?? -1, customSorter);
