@@ -63,6 +63,7 @@ namespace MHW_Template {
             "*.mkex",
             "*.mkit",
             "*.msk",
+            "*.mske",
             "*.new_lb",
             "*.new_lbr",
             "*.odr",

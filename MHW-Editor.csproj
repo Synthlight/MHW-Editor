@@ -144,6 +144,7 @@
     <Compile Include="Generated\MHW_Editor\PlData\PlItemParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlMantleParam.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlMantleParamInternal.cs" />
+    <Compile Include="Generated\MHW_Editor\PlData\PlMusicSkillParam.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlPlayerParam.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlPlayerParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlSkillParam.cs" />
@@ -210,6 +211,7 @@
     <Compile Include="Models\ButtonSorter.cs" />
     <Compile Include="Models\VersionCheck.cs" />
     <Compile Include="Monsters\MonsterEnrage.cs" />
+    <Compile Include="PlData\PlMusicSkillParam.cs" />
     <Compile Include="PlData\PlSkillParam.cs" />
     <Compile Include="PlData\PlMantleParam.cs" />
     <Compile Include="PlData\PlPlayerParam.cs" />

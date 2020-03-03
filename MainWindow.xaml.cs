@@ -1018,6 +1018,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".mkex")) return typeof(MelderExchange);
             if (fileName.EndsWith(".mkit")) return typeof(MelderItem);
             if (fileName.EndsWith(".msk")) return typeof(MusicSkill);
+            if (fileName.EndsWith(".mske")) return typeof(PlMusicSkillParam);
             if (fileName.EndsWith(".new_lb")) return typeof(NewLimitBreak);
             if (fileName.EndsWith(".new_lbr")) return typeof(NewLimitBreakR);
             if (fileName.EndsWith(".odr")) return typeof(Bounty);
