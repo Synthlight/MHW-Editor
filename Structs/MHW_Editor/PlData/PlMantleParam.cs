@@ -128,12 +128,12 @@ namespace MHW_Editor.PlData {
         public float Assassin_s_Hood_Cooldown; // Offset: 455
         public float Assassin_s_Hood_Duration; // Offset: 459
         public float Assassin_s_Hood_Sneak_Attack_Multiplier; // Offset: 463
-        public float Assassin_s_Hood_Speed_Multiplier_1; // Offset: 467
+        public float Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping_; // Offset: 467
         public float Assassin_s_Hood_Unk1; // Offset: 471
-        public float Assassin_s_Hood_Speed_Multiplier_2; // Offset: 475
-        public float Assassin_s_Hood_Speed_Multiplier_3; // Offset: 479
-        public float Assassin_s_Hood_Speed_Multiplier_4; // Offset: 483
-        public float Assassin_s_Hood_Speed_Multiplier_5; // Offset: 487
+        public float Assassin_s_Hood_Speed_Multiplier_1; // Offset: 475
+        public float Assassin_s_Hood_Speed_Multiplier_2; // Offset: 479
+        public float Assassin_s_Hood_Speed_Multiplier_3; // Offset: 483
+        public float Assassin_s_Hood_Speed_Multiplier_4; // Offset: 487
         public float Assassin_s_Hood_Unk2; // Offset: 491
         public float Assassin_s_Hood_Unk3; // Offset: 495
         public float Assassin_s_Hood_Unk4; // Offset: 499

@@ -2035,17 +2035,17 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Assassin_s_Hood_Speed_Multiplier_1_displayName = "Assassin's Hood: Speed Multiplier 1";
-        public const int Assassin_s_Hood_Speed_Multiplier_1_sortIndex = 7200;
-        [SortOrder(Assassin_s_Hood_Speed_Multiplier_1_sortIndex)]
-        [DisplayName(Assassin_s_Hood_Speed_Multiplier_1_displayName)]
-        public virtual float Assassin_s_Hood_Speed_Multiplier_1 {
+        public const string Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping__displayName = "Assassin's Hood: Sneak Attack Multiplier (Sleeping)";
+        public const int Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping__sortIndex = 7200;
+        [SortOrder(Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping__sortIndex)]
+        [DisplayName(Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping__displayName)]
+        public virtual float Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping_ {
             get => GetData<float>(467);
             set {
                 if (GetData<float>(467) == value) return;
-                SetData(467, value, nameof(Assassin_s_Hood_Speed_Multiplier_1));
+                SetData(467, value, nameof(Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Assassin_s_Hood_Speed_Multiplier_1));
+                OnPropertyChanged(nameof(Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping_));
             }
         }
 
@@ -2063,59 +2063,59 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Assassin_s_Hood_Speed_Multiplier_2_displayName = "Assassin's Hood: Speed Multiplier 2";
-        public const int Assassin_s_Hood_Speed_Multiplier_2_sortIndex = 7300;
-        [SortOrder(Assassin_s_Hood_Speed_Multiplier_2_sortIndex)]
-        [DisplayName(Assassin_s_Hood_Speed_Multiplier_2_displayName)]
-        public virtual float Assassin_s_Hood_Speed_Multiplier_2 {
+        public const string Assassin_s_Hood_Speed_Multiplier_1_displayName = "Assassin's Hood: Speed Multiplier 1";
+        public const int Assassin_s_Hood_Speed_Multiplier_1_sortIndex = 7300;
+        [SortOrder(Assassin_s_Hood_Speed_Multiplier_1_sortIndex)]
+        [DisplayName(Assassin_s_Hood_Speed_Multiplier_1_displayName)]
+        public virtual float Assassin_s_Hood_Speed_Multiplier_1 {
             get => GetData<float>(475);
             set {
                 if (GetData<float>(475) == value) return;
-                SetData(475, value, nameof(Assassin_s_Hood_Speed_Multiplier_2));
+                SetData(475, value, nameof(Assassin_s_Hood_Speed_Multiplier_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Assassin_s_Hood_Speed_Multiplier_1));
+            }
+        }
+
+        public const string Assassin_s_Hood_Speed_Multiplier_2_displayName = "Assassin's Hood: Speed Multiplier 2";
+        public const int Assassin_s_Hood_Speed_Multiplier_2_sortIndex = 7350;
+        [SortOrder(Assassin_s_Hood_Speed_Multiplier_2_sortIndex)]
+        [DisplayName(Assassin_s_Hood_Speed_Multiplier_2_displayName)]
+        public virtual float Assassin_s_Hood_Speed_Multiplier_2 {
+            get => GetData<float>(479);
+            set {
+                if (GetData<float>(479) == value) return;
+                SetData(479, value, nameof(Assassin_s_Hood_Speed_Multiplier_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Assassin_s_Hood_Speed_Multiplier_2));
             }
         }
 
         public const string Assassin_s_Hood_Speed_Multiplier_3_displayName = "Assassin's Hood: Speed Multiplier 3";
-        public const int Assassin_s_Hood_Speed_Multiplier_3_sortIndex = 7350;
+        public const int Assassin_s_Hood_Speed_Multiplier_3_sortIndex = 7400;
         [SortOrder(Assassin_s_Hood_Speed_Multiplier_3_sortIndex)]
         [DisplayName(Assassin_s_Hood_Speed_Multiplier_3_displayName)]
         public virtual float Assassin_s_Hood_Speed_Multiplier_3 {
-            get => GetData<float>(479);
+            get => GetData<float>(483);
             set {
-                if (GetData<float>(479) == value) return;
-                SetData(479, value, nameof(Assassin_s_Hood_Speed_Multiplier_3));
+                if (GetData<float>(483) == value) return;
+                SetData(483, value, nameof(Assassin_s_Hood_Speed_Multiplier_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Assassin_s_Hood_Speed_Multiplier_3));
             }
         }
 
         public const string Assassin_s_Hood_Speed_Multiplier_4_displayName = "Assassin's Hood: Speed Multiplier 4";
-        public const int Assassin_s_Hood_Speed_Multiplier_4_sortIndex = 7400;
+        public const int Assassin_s_Hood_Speed_Multiplier_4_sortIndex = 7450;
         [SortOrder(Assassin_s_Hood_Speed_Multiplier_4_sortIndex)]
         [DisplayName(Assassin_s_Hood_Speed_Multiplier_4_displayName)]
         public virtual float Assassin_s_Hood_Speed_Multiplier_4 {
-            get => GetData<float>(483);
-            set {
-                if (GetData<float>(483) == value) return;
-                SetData(483, value, nameof(Assassin_s_Hood_Speed_Multiplier_4));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Assassin_s_Hood_Speed_Multiplier_4));
-            }
-        }
-
-        public const string Assassin_s_Hood_Speed_Multiplier_5_displayName = "Assassin's Hood: Speed Multiplier 5";
-        public const int Assassin_s_Hood_Speed_Multiplier_5_sortIndex = 7450;
-        [SortOrder(Assassin_s_Hood_Speed_Multiplier_5_sortIndex)]
-        [DisplayName(Assassin_s_Hood_Speed_Multiplier_5_displayName)]
-        public virtual float Assassin_s_Hood_Speed_Multiplier_5 {
             get => GetData<float>(487);
             set {
                 if (GetData<float>(487) == value) return;
-                SetData(487, value, nameof(Assassin_s_Hood_Speed_Multiplier_5));
+                SetData(487, value, nameof(Assassin_s_Hood_Speed_Multiplier_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Assassin_s_Hood_Speed_Multiplier_5));
+                OnPropertyChanged(nameof(Assassin_s_Hood_Speed_Multiplier_4));
             }
         }
 
