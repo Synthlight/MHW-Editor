@@ -29,8 +29,8 @@ namespace MHW_Editor.Armors {
         public byte Slot_3_Size; // Offset: 33
         public ushort Set_Skill_1; // Offset: 34
         public byte Set_Skill_1_Level; // Offset: 36
-        public ushort Set_Skill_2; // Offset: 37
-        public byte Set_Skill_2_Level; // Offset: 39
+        public ushort Hidden_Skill; // Offset: 37
+        public byte Hidden_Skill_Level; // Offset: 39
         public ushort Skill_1; // Offset: 40
         public byte Skill_1_Level; // Offset: 42
         public ushort Skill_2; // Offset: 43

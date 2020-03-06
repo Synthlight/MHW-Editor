@@ -361,38 +361,38 @@ namespace MHW_Editor.Armors {
             }
         }
 
-        public const string Set_Skill_2_displayName = "Set Skill 2";
-        public const int Set_Skill_2_sortIndex = 1250;
-        [SortOrder(Set_Skill_2_sortIndex)]
-        [DisplayName(Set_Skill_2_displayName)]
+        public const string Hidden_Skill_displayName = "Hidden Skill";
+        public const int Hidden_Skill_sortIndex = 1250;
+        [SortOrder(Hidden_Skill_sortIndex)]
+        [DisplayName(Hidden_Skill_displayName)]
         [DataSource(DataSourceType.Skills)]
-        public virtual ushort Set_Skill_2 {
+        public virtual ushort Hidden_Skill {
             get => GetData<ushort>(37);
             set {
                 if (GetData<ushort>(37) == value) return;
-                SetData(37, value, nameof(Set_Skill_2));
+                SetData(37, value, nameof(Hidden_Skill));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Set_Skill_2));
-                OnPropertyChanged(nameof(Set_Skill_2_button));
+                OnPropertyChanged(nameof(Hidden_Skill));
+                OnPropertyChanged(nameof(Hidden_Skill_button));
             }
         }
 
-        [SortOrder(Set_Skill_2_sortIndex)]
-        [DisplayName(Set_Skill_2_displayName)]
+        [SortOrder(Hidden_Skill_sortIndex)]
+        [DisplayName(Hidden_Skill_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Set_Skill_2_button => DataHelper.skillNames[MainWindow.locale].TryGet(Set_Skill_2).ToStringWithId(Set_Skill_2);
+        public string Hidden_Skill_button => DataHelper.skillNames[MainWindow.locale].TryGet(Hidden_Skill).ToStringWithId(Hidden_Skill);
 
-        public const string Set_Skill_2_Level_displayName = "Set Skill 2 Level";
-        public const int Set_Skill_2_Level_sortIndex = 1300;
-        [SortOrder(Set_Skill_2_Level_sortIndex)]
-        [DisplayName(Set_Skill_2_Level_displayName)]
-        public virtual byte Set_Skill_2_Level {
+        public const string Hidden_Skill_Level_displayName = "Hidden Skill Level";
+        public const int Hidden_Skill_Level_sortIndex = 1300;
+        [SortOrder(Hidden_Skill_Level_sortIndex)]
+        [DisplayName(Hidden_Skill_Level_displayName)]
+        public virtual byte Hidden_Skill_Level {
             get => GetData<byte>(39);
             set {
                 if (GetData<byte>(39) == value) return;
-                SetData(39, value, nameof(Set_Skill_2_Level));
+                SetData(39, value, nameof(Hidden_Skill_Level));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Set_Skill_2_Level));
+                OnPropertyChanged(nameof(Hidden_Skill_Level));
             }
         }
 

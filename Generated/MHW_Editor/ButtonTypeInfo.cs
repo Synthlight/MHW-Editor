@@ -36,6 +36,7 @@ namespace MHW_Editor {
 
         public static readonly List<string> BUTTON_NAMES = new List<string> {
             "Decoration_Reward_button",
+            "Hidden_Skill_button",
             "Item_1_Id_button",
             "Item_10_Id_button",
             "Item_2_Id_button",
@@ -60,7 +61,6 @@ namespace MHW_Editor {
             "Result_Id_button",
             "Result_Item_Id_button",
             "Set_Skill_1_button",
-            "Set_Skill_2_button",
             "Skill_1_button",
             "Skill_2_button",
             "Skill_3_button",
@@ -74,6 +74,7 @@ namespace MHW_Editor {
 
         public static readonly List<string> BUTTON_BASE_NAMES = new List<string> {
             "Decoration_Reward",
+            "Hidden_Skill",
             "Item_1_Id",
             "Item_10_Id",
             "Item_2_Id",
@@ -98,7 +99,6 @@ namespace MHW_Editor {
             "Result_Id",
             "Result_Item_Id",
             "Set_Skill_1",
-            "Set_Skill_2",
             "Skill_1",
             "Skill_2",
             "Skill_3",
