@@ -3553,17 +3553,17 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Bludgeoner_Red_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Red Sharpness Attack Bonus";
-        public const int Bludgeoner_Red_Sharpness_Attack_Bonus_sortIndex = 12600;
-        [SortOrder(Bludgeoner_Red_Sharpness_Attack_Bonus_sortIndex)]
-        [DisplayName(Bludgeoner_Red_Sharpness_Attack_Bonus_displayName)]
-        public virtual ushort Bludgeoner_Red_Sharpness_Attack_Bonus {
+        public const string Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee__displayName = "Bludgeoner: Red Sharpness Attack Bonus (& BG Melee)";
+        public const int Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee__sortIndex = 12600;
+        [SortOrder(Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee__sortIndex)]
+        [DisplayName(Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee__displayName)]
+        public virtual ushort Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee_ {
             get => GetData<ushort>(674);
             set {
                 if (GetData<ushort>(674) == value) return;
-                SetData(674, value, nameof(Bludgeoner_Red_Sharpness_Attack_Bonus));
+                SetData(674, value, nameof(Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Bludgeoner_Red_Sharpness_Attack_Bonus));
+                OnPropertyChanged(nameof(Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee_));
             }
         }
 

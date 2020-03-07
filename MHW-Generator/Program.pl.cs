@@ -274,7 +274,7 @@ namespace MHW_Generator {
             entries.AddRange(new List<MhwStructData.Entry> {
                 Spacer,
 
-                new MhwStructData.Entry("Bludgeoner: Red Sharpness Attack Bonus", 674, typeof(ushort)),
+                new MhwStructData.Entry("Bludgeoner: Red Sharpness Attack Bonus (& BG Melee)", 674, typeof(ushort)),
                 new MhwStructData.Entry("Bludgeoner: Orange Sharpness Attack Bonus", 676, typeof(ushort)),
                 new MhwStructData.Entry("Bludgeoner: Yellow Sharpness Attack Bonus", 678, typeof(ushort)),
                 new MhwStructData.Entry("Bludgeoner: Green Sharpness Attack Bonus", 680, typeof(ushort)),

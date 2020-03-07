@@ -256,7 +256,7 @@ namespace MHW_Editor.PlData {
                 new PlDataItemCustomView(this, "True Critical Condition: (HBG) Rate", "True_Critical_Condition_HBG_Rate", Bytes, 666),
                 new PlDataItemCustomView(this, "True Critical Condition: (LBG) Rate", "True_Critical_Condition_LBG_Rate", Bytes, 670),
                 new PlDataItemCustomView(this, "-------------------------------------------------------------------------------------------", "__12550", Bytes, 3),
-                new PlDataItemCustomView(this, "Bludgeoner: Red Sharpness Attack Bonus", "Bludgeoner_Red_Sharpness_Attack_Bonus", Bytes, 674),
+                new PlDataItemCustomView(this, "Bludgeoner: Red Sharpness Attack Bonus (& BG Melee)", "Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee_", Bytes, 674),
                 new PlDataItemCustomView(this, "Bludgeoner: Orange Sharpness Attack Bonus", "Bludgeoner_Orange_Sharpness_Attack_Bonus", Bytes, 676),
                 new PlDataItemCustomView(this, "Bludgeoner: Yellow Sharpness Attack Bonus", "Bludgeoner_Yellow_Sharpness_Attack_Bonus", Bytes, 678),
                 new PlDataItemCustomView(this, "Bludgeoner: Green Sharpness Attack Bonus", "Bludgeoner_Green_Sharpness_Attack_Bonus", Bytes, 680),

@@ -230,7 +230,7 @@ namespace MHW_Editor.PlData {
         public float True_Critical_Condition_Bow_Rate; // Offset: 662
         public float True_Critical_Condition_HBG_Rate; // Offset: 666
         public float True_Critical_Condition_LBG_Rate; // Offset: 670
-        public ushort Bludgeoner_Red_Sharpness_Attack_Bonus; // Offset: 674
+        public ushort Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee_; // Offset: 674
         public ushort Bludgeoner_Orange_Sharpness_Attack_Bonus; // Offset: 676
         public ushort Bludgeoner_Yellow_Sharpness_Attack_Bonus; // Offset: 678
         public ushort Bludgeoner_Green_Sharpness_Attack_Bonus; // Offset: 680
