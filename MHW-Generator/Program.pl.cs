@@ -234,7 +234,7 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Razor Sharp: Gunlance Shot No Reduce %", 416, typeof(byte)),
                 new MhwStructData.Entry("Razor Sharp: Gun Ammo No Reduce %", 417, typeof(byte)),
                 new MhwStructData.Entry("Razor Sharp: Bow Coating No Reduce %", 418, typeof(byte)),
-                new MhwStructData.Entry("Razor Sharp: IB Unk", 419, typeof(byte)),
+                new MhwStructData.Entry("Razor Sharp: Guard Consumption %", 419, typeof(byte)),
 
                 Spacer,
 
@@ -243,7 +243,7 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("True Razor Sharp: Gunlance Shot No Reduce %", 422, typeof(byte)),
                 new MhwStructData.Entry("True Razor Sharp: Gun Ammo No Reduce %", 423, typeof(byte)),
                 new MhwStructData.Entry("True Razor Sharp: Bow Coating No Reduce %", 424, typeof(byte)),
-                new MhwStructData.Entry("True Razor Sharp: IB Unk", 425, typeof(byte)),
+                new MhwStructData.Entry("True Razor Sharp: Guard Consumption %", 425, typeof(byte)),
 
                 Spacer,
 

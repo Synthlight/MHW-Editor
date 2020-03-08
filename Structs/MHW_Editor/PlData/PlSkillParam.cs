@@ -161,13 +161,13 @@ namespace MHW_Editor.PlData {
         public byte Razor_Sharp_Gunlance_Shot_No_Reduce_; // Offset: 416
         public byte Razor_Sharp_Gun_Ammo_No_Reduce_; // Offset: 417
         public byte Razor_Sharp_Bow_Coating_No_Reduce_; // Offset: 418
-        public byte Razor_Sharp_IB_Unk; // Offset: 419
+        public byte Razor_Sharp_Guard_Consumption_; // Offset: 419
         public byte True_Razor_Sharp_Sharpness_No_Reduce_; // Offset: 420
         public byte True_Razor_Sharp_Gunlance_Shot_Sub_Value; // Offset: 421
         public byte True_Razor_Sharp_Gunlance_Shot_No_Reduce_; // Offset: 422
         public byte True_Razor_Sharp_Gun_Ammo_No_Reduce_; // Offset: 423
         public byte True_Razor_Sharp_Bow_Coating_No_Reduce_; // Offset: 424
-        public byte True_Razor_Sharp_IB_Unk; // Offset: 425
+        public byte True_Razor_Sharp_Guard_Consumption_; // Offset: 425
         public float Minds_Eye_Ballistics_Gun_Critical_Begin_Wide_Rate; // Offset: 426
         public float Minds_Eye_Ballistics_Gun_Critical_End_Wide_Rate; // Offset: 430
         public float Minds_Eye_Ballistics_Bow_Critical_Begin_Wide_Rate; // Offset: 434

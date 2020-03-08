@@ -2482,17 +2482,17 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Razor_Sharp_IB_Unk_displayName = "Razor Sharp: IB Unk";
-        public const int Razor_Sharp_IB_Unk_sortIndex = 8800;
-        [SortOrder(Razor_Sharp_IB_Unk_sortIndex)]
-        [DisplayName(Razor_Sharp_IB_Unk_displayName)]
-        public virtual byte Razor_Sharp_IB_Unk {
+        public const string Razor_Sharp_Guard_Consumption__displayName = "Razor Sharp: Guard Consumption %";
+        public const int Razor_Sharp_Guard_Consumption__sortIndex = 8800;
+        [SortOrder(Razor_Sharp_Guard_Consumption__sortIndex)]
+        [DisplayName(Razor_Sharp_Guard_Consumption__displayName)]
+        public virtual byte Razor_Sharp_Guard_Consumption_ {
             get => GetData<byte>(419);
             set {
                 if (GetData<byte>(419) == value) return;
-                SetData(419, value, nameof(Razor_Sharp_IB_Unk));
+                SetData(419, value, nameof(Razor_Sharp_Guard_Consumption_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Razor_Sharp_IB_Unk));
+                OnPropertyChanged(nameof(Razor_Sharp_Guard_Consumption_));
             }
         }
 
@@ -2581,17 +2581,17 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string True_Razor_Sharp_IB_Unk_displayName = "True Razor Sharp: IB Unk";
-        public const int True_Razor_Sharp_IB_Unk_sortIndex = 9150;
-        [SortOrder(True_Razor_Sharp_IB_Unk_sortIndex)]
-        [DisplayName(True_Razor_Sharp_IB_Unk_displayName)]
-        public virtual byte True_Razor_Sharp_IB_Unk {
+        public const string True_Razor_Sharp_Guard_Consumption__displayName = "True Razor Sharp: Guard Consumption %";
+        public const int True_Razor_Sharp_Guard_Consumption__sortIndex = 9150;
+        [SortOrder(True_Razor_Sharp_Guard_Consumption__sortIndex)]
+        [DisplayName(True_Razor_Sharp_Guard_Consumption__displayName)]
+        public virtual byte True_Razor_Sharp_Guard_Consumption_ {
             get => GetData<byte>(425);
             set {
                 if (GetData<byte>(425) == value) return;
-                SetData(425, value, nameof(True_Razor_Sharp_IB_Unk));
+                SetData(425, value, nameof(True_Razor_Sharp_Guard_Consumption_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(True_Razor_Sharp_IB_Unk));
+                OnPropertyChanged(nameof(True_Razor_Sharp_Guard_Consumption_));
             }
         }
 
