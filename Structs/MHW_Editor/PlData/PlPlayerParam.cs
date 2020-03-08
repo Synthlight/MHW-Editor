@@ -5,72 +5,72 @@ namespace MHW_Editor.PlData {
     // Initial Offset: "0"
     // Unique Id Formula: "0"
     public struct PlPlayerParam {
-        public float Unk1; // Offset: 8
-        public float Unk2; // Offset: 12
-        public float Unk3; // Offset: 16
-        public float Unk4; // Offset: 20
-        public float Unk5; // Offset: 24
-        public float Unk6; // Offset: 28
-        public float Unk7; // Offset: 32
-        public float Unk8; // Offset: 36
-        public float Unk9; // Offset: 40
-        public float Unk10; // Offset: 44
-        public float Unk11; // Offset: 48
-        public float Unk12; // Offset: 52
-        public float Unk13; // Offset: 56
-        public float Unk14; // Offset: 60
-        public float Unk15; // Offset: 64
-        public float Unk16; // Offset: 68
-        public float Unk17; // Offset: 72
-        public float Unk18; // Offset: 76
-        public float Unk19; // Offset: 80
-        public float Unk20; // Offset: 84
-        public float Unk21; // Offset: 88
-        public float Unk22; // Offset: 92
-        public float Unk23; // Offset: 96
-        public float Unk24; // Offset: 100
-        public float Unk25; // Offset: 104
-        public float Unk26; // Offset: 108
-        public float Unk27; // Offset: 112
-        public float Unk28; // Offset: 116
-        public float Unk29; // Offset: 120
-        public float Unk30; // Offset: 124
-        public float Unk31; // Offset: 128
-        public float Unk32; // Offset: 132
-        public float Unk33; // Offset: 136
-        public float Unk34; // Offset: 140
-        public float Unk35; // Offset: 144
-        public float Unk36; // Offset: 148
-        public uint Unk37; // Offset: 152
-        public uint Unk38; // Offset: 156
-        public float Unk39; // Offset: 160
-        public float Unk40; // Offset: 164
-        public float Unk41; // Offset: 168
-        public float Unk42; // Offset: 172
-        public float Unk43; // Offset: 176
-        public float Unk44; // Offset: 180
-        public float Unk45; // Offset: 184
-        public float Unk46; // Offset: 188
-        public float Unk47; // Offset: 192
-        public float Unk48; // Offset: 196
-        public float Unk49; // Offset: 200
-        public float Unk50; // Offset: 204
-        public float Unk51; // Offset: 208
-        public float Unk52; // Offset: 212
-        public float Unk53; // Offset: 216
-        public float Unk54; // Offset: 220
-        public float Unk55; // Offset: 224
-        public float Unk56; // Offset: 228
-        public float Unk57; // Offset: 232
-        public byte Unk58; // Offset: 236
-        public ushort Unk59; // Offset: 237
-        public ushort Unk60; // Offset: 239
-        public float Unk61; // Offset: 241
-        public byte Unk62; // Offset: 245
-        public ushort Unk63; // Offset: 246
-        public ushort Unk64; // Offset: 248
-        public ushort Unk65; // Offset: 250
-        public float Unk66; // Offset: 252
+        public float Gravity; // Offset: 8
+        public float Gravity_Speed_Rate; // Offset: 12
+        public float Unk1; // Offset: 16
+        public float Unk2; // Offset: 20
+        public float Unk3; // Offset: 24
+        public float Unk4; // Offset: 28
+        public float Unk5; // Offset: 32
+        public float Unk6; // Offset: 36
+        public float Unk7; // Offset: 40
+        public float Unk8; // Offset: 44
+        public float Unk9; // Offset: 48
+        public float Unk10; // Offset: 52
+        public float Unk11; // Offset: 56
+        public float Unk12; // Offset: 60
+        public float Unk13; // Offset: 64
+        public float Unk14; // Offset: 68
+        public float Unk15; // Offset: 72
+        public float Unk16; // Offset: 76
+        public float Unk17; // Offset: 80
+        public float Unk18; // Offset: 84
+        public float Unk19; // Offset: 88
+        public float Unk20; // Offset: 92
+        public float Unk21; // Offset: 96
+        public float Unk22; // Offset: 100
+        public float Unk23; // Offset: 104
+        public float Unk24; // Offset: 108
+        public float Unk25; // Offset: 112
+        public float Unk26; // Offset: 116
+        public float Unk27; // Offset: 120
+        public float Unk28; // Offset: 124
+        public float Unk29; // Offset: 128
+        public float Unk30; // Offset: 132
+        public float Unk31; // Offset: 136
+        public float Unk32; // Offset: 140
+        public float Unk33; // Offset: 144
+        public float Unk34; // Offset: 148
+        public uint Unk35; // Offset: 152
+        public uint Unk36; // Offset: 156
+        public float Unk37; // Offset: 160
+        public float Unk38; // Offset: 164
+        public float Unk39; // Offset: 168
+        public float Unk40; // Offset: 172
+        public float Unk41; // Offset: 176
+        public float Unk42; // Offset: 180
+        public float Unk43; // Offset: 184
+        public float Unk44; // Offset: 188
+        public float Unk45; // Offset: 192
+        public float Unk46; // Offset: 196
+        public float Unk47; // Offset: 200
+        public float Unk48; // Offset: 204
+        public float Unk49; // Offset: 208
+        public float Unk50; // Offset: 212
+        public float Unk51; // Offset: 216
+        public float Unk52; // Offset: 220
+        public float Unk53; // Offset: 224
+        public float Unk54; // Offset: 228
+        public float Unk55; // Offset: 232
+        public byte Unk56; // Offset: 236
+        public ushort Unk57; // Offset: 237
+        public ushort Unk58; // Offset: 239
+        public float Unk59; // Offset: 241
+        public byte Unk60; // Offset: 245
+        public ushort Unk61; // Offset: 246
+        public ushort Unk62; // Offset: 248
+        public ushort Unk63; // Offset: 250
+        public float Unk64; // Offset: 252
         public float Health_Initial_Value; // Offset: 408
         public float Health_Max_Value; // Offset: 412
         public float Health_Damage_Recovery_Rate; // Offset: 416
@@ -116,39 +116,39 @@ namespace MHW_Editor.PlData {
         public float Stamina_Time_Reduce_mCore_Unk6; // Offset: 576
         public float Stamina_Time_Reduce_mCore_Unk7; // Offset: 580
         public float Stamina_Time_Reduce_mCore_Unk8; // Offset: 584
-        public float Stamina_Time_Reduce_mCore_Unk9; // Offset: 588
-        public float Stamina_Time_Reduce_mCore_Unk10; // Offset: 592
-        public float Stamina_Time_Reduce_mCore_Unk11; // Offset: 596
-        public float Stamina_Time_Reduce_mCore_Unk12; // Offset: 600
-        public float Stamina_Time_Reduce_mCore_Unk13; // Offset: 604
-        public float Stamina_Time_Reduce_mCore_Unk14; // Offset: 608
-        public float Stamina_Time_Reduce_mCore_Unk15; // Offset: 612
-        public float Stamina_Time_Reduce_mCore_Unk16; // Offset: 616
-        public float Stamina_Time_Reduce_mCore_Unk17; // Offset: 620
-        public float Stamina_Time_Reduce_mCore_Unk18; // Offset: 624
+        public float Stamina_Time_Reduce_mCore_Lance_s_Power_Guard; // Offset: 588
+        public float Stamina_Time_Reduce_mCore_Unk9; // Offset: 592
+        public float Stamina_Time_Reduce_mCore_Unk10; // Offset: 596
+        public float Stamina_Time_Reduce_mCore_Clutch_Counter; // Offset: 600
+        public float Stamina_Time_Reduce_mCore_Unk11; // Offset: 604
+        public float Stamina_Time_Reduce_mCore_Unk12; // Offset: 608
+        public float Stamina_Time_Reduce_mCore_Unk13; // Offset: 612
+        public float Stamina_Time_Reduce_mCore_Unk14; // Offset: 616
+        public float Stamina_Time_Reduce_mCore_Unk15; // Offset: 620
+        public float Stamina_Time_Reduce_mCore_Unk16; // Offset: 624
         public float Mount_Reduce_Stamina_mCore_Unk1; // Offset: 628
         public float Mount_Reduce_Stamina_mCore_Unk2; // Offset: 632
         public float Mount_Life_Reduce_Stamina_mCore_Unk1; // Offset: 636
         public float Mount_Life_Reduce_Stamina_mCore_Unk2; // Offset: 640
         public float Mount_Life_Reduce_Stamina_mCore_Unk3; // Offset: 644
         public float Mount_Life_Reduce_Stamina_mCore_Unk4; // Offset: 648
-        public float Unk67; // Offset: 652
-        public float Unk68; // Offset: 656
-        public float Unk69; // Offset: 660
+        public float Unk65; // Offset: 652
+        public float Unk66; // Offset: 656
+        public float Unk67; // Offset: 660
         public float Explosive_HR_Fixed_Attack_Rate; // Offset: 664
         public float Explosive_MR_Fixed_Attack_Rate; // Offset: 668
         public float Critical_Attack_Rate; // Offset: 672
         public float Bad_Critical_Attack_Rate; // Offset: 676
         public byte Sharpness_Recoil_Reduction_; // Offset: 680
         public byte Sharpness_Recoil_Reduction_Value; // Offset: 681
-        public float Unk70; // Offset: 682
-        public float Unk71; // Offset: 686
-        public float Unk72; // Offset: 690
-        public float Unk73; // Offset: 694
-        public uint Unk74; // Offset: 698
+        public float Unk68; // Offset: 682
+        public float Unk69; // Offset: 686
+        public float Unk70; // Offset: 690
+        public float Unk71; // Offset: 694
+        public uint Unk72; // Offset: 698
         public float Physical_Attack_Rate_Limit; // Offset: 702
         public float Elemental_Attack_Rate_Limit; // Offset: 706
-        public float Condition_Attack_Flat_Limit; // Offset: 710
+        public float Condition_Elemental_Attack_Flat_Limit; // Offset: 710
         public float Bowgun_Elemental_Attack_Rate_Limit; // Offset: 714
         public float Condition_Attack_Rate_Limit; // Offset: 718
         public float Stun_Attack_Rate_Limit; // Offset: 722
@@ -342,5 +342,39 @@ namespace MHW_Editor.PlData {
         public float Wp_MR_Augment_Bow_Coating_Status_Multiplier_2_; // Offset: 8743
         public float Wp_MR_Augment_Bow_Coating_Status_Multiplier_3_; // Offset: 8747
         public float Wp_MR_Augment_Bow_Coating_Status_Multiplier_4_; // Offset: 8751
+        public byte Max_Slinger_Capacity_Stone; // Offset: 9345
+        public byte Max_Slinger_Capacity_Redpit; // Offset: 9346
+        public byte Max_Slinger_Capacity_Brightmoss; // Offset: 9347
+        public byte Max_Slinger_Capacity_Scatternut; // Offset: 9348
+        public byte Max_Slinger_Capacity_Unk_1; // Offset: 9349
+        public byte Max_Slinger_Capacity_Unk_2; // Offset: 9350
+        public byte Max_Slinger_Capacity_Unk_3; // Offset: 9351
+        public byte Max_Slinger_Capacity_Unk_4; // Offset: 9352
+        public byte Max_Slinger_Capacity_Unk_5; // Offset: 9353
+        public byte Max_Slinger_Capacity_Torch_Pod; // Offset: 9354
+        public byte Max_Slinger_Capacity_Unk_6; // Offset: 9355
+        public byte Max_Slinger_Capacity_Unk_7; // Offset: 9356
+        public byte Max_Slinger_Capacity_Unk_8; // Offset: 9357
+        public byte Max_Slinger_Capacity_Unk_9; // Offset: 9358
+        public byte Max_Slinger_Capacity_Bomb_Pod; // Offset: 9359
+        public byte Max_Slinger_Capacity_Piercing_Pod; // Offset: 9360
+        public byte Max_Slinger_Capacity_Slinger_Thorn; // Offset: 9361
+        public byte Max_Slinger_Capacity_Dragon_Pod; // Offset: 9362
+        public byte Max_Slinger_Capacity_Unk_10; // Offset: 9363
+        public byte Max_Slinger_Capacity_Unk_11; // Offset: 9364
+        public byte Max_Slinger_Capacity_Unk_12; // Offset: 9365
+        public byte Max_Slinger_Capacity_Unk_13; // Offset: 9366
+        public byte Max_Slinger_Capacity_Unk_14; // Offset: 9367
+        public byte Max_Slinger_Capacity_Unk_15; // Offset: 9368
+        public byte Max_Slinger_Capacity_Unk_16; // Offset: 9369
+        public byte Max_Slinger_Capacity_Unk_17; // Offset: 9370
+        public byte Max_Slinger_Capacity_Crystalburst; // Offset: 9371
+        public byte Max_Slinger_Capacity_Puddle_Pod; // Offset: 9372
+        public byte Max_Slinger_Capacity_Unk_18; // Offset: 9373
+        public byte Max_Slinger_Capacity_Unk_19; // Offset: 9374
+        public byte Max_Slinger_Capacity_Unk_20; // Offset: 9375
+        public float Gesture_Dragoon_Jump_Loop_Time; // Offset: 17801
+        public float Gesture_Dragoon_Jump_Meteor_Start; // Offset: 17805
+        public float Gesture_Dragoon_Jump_Meteor_Duration; // Offset: 17809
     }
 }

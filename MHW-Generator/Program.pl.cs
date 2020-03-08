@@ -1024,8 +1024,8 @@ namespace MHW_Generator {
             ushort n = 1;
 
             var entries = new List<MhwStructData.Entry> {
-                new MhwStructData.Entry($"Unk{i++}", 8, typeof(float)),
-                new MhwStructData.Entry($"Unk{i++}", 12, typeof(float)),
+                new MhwStructData.Entry("Gravity", 8, typeof(float)),
+                new MhwStructData.Entry("Gravity Speed Rate", 12, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 16, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 20, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 24, typeof(float)),
@@ -1145,10 +1145,10 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Stamina Time Reduce mCore: Unk{k++}", 576, typeof(float)),
                 new MhwStructData.Entry($"Stamina Time Reduce mCore: Unk{k++}", 580, typeof(float)),
                 new MhwStructData.Entry($"Stamina Time Reduce mCore: Unk{k++}", 584, typeof(float)),
-                new MhwStructData.Entry($"Stamina Time Reduce mCore: Unk{k++}", 588, typeof(float)),
+                new MhwStructData.Entry("Stamina Time Reduce mCore: Lance's Power Guard", 588, typeof(float)),
                 new MhwStructData.Entry($"Stamina Time Reduce mCore: Unk{k++}", 592, typeof(float)),
                 new MhwStructData.Entry($"Stamina Time Reduce mCore: Unk{k++}", 596, typeof(float)),
-                new MhwStructData.Entry($"Stamina Time Reduce mCore: Unk{k++}", 600, typeof(float)),
+                new MhwStructData.Entry("Stamina Time Reduce mCore: Clutch-Counter", 600, typeof(float)),
                 new MhwStructData.Entry($"Stamina Time Reduce mCore: Unk{k++}", 604, typeof(float)),
                 new MhwStructData.Entry($"Stamina Time Reduce mCore: Unk{k++}", 608, typeof(float)),
                 new MhwStructData.Entry($"Stamina Time Reduce mCore: Unk{k++}", 612, typeof(float)),
@@ -1182,10 +1182,10 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Unk{i++}", 686, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 690, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 694, typeof(float)),
-                new MhwStructData.Entry($"Unk{i}", 698, typeof(uint)),
+                new MhwStructData.Entry($"Unk{i++}", 698, typeof(uint)),
                 new MhwStructData.Entry("Physical Attack Rate Limit", 702, typeof(float)),
                 new MhwStructData.Entry("Elemental Attack Rate Limit", 706, typeof(float)),
-                new MhwStructData.Entry("Condition Attack Flat Limit", 710, typeof(float)),
+                new MhwStructData.Entry("Condition Elemental Attack Flat Limit", 710, typeof(float)),
                 new MhwStructData.Entry("Bowgun Elemental Attack Rate Limit", 714, typeof(float)),
                 new MhwStructData.Entry("Condition Attack Rate Limit", 718, typeof(float)),
                 new MhwStructData.Entry("Stun Attack Rate Limit", 722, typeof(float)),
@@ -1202,6 +1202,54 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Acid Damage Damage", 763, typeof(float)),
 
                 Spacer,
+                new MhwStructData.Entry("Walk Turn Tilt (Bow)", 791, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 795, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 799, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 803, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Run Turn Tilt (Bow)", 807, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Run Turn Tilt Head (Bow)", 811, typeof(float), true, forceUnique: true),
+
+                Spacer,
+                new MhwStructData.Entry("------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
+                Spacer,
+
+                new MhwStructData.Entry("Walk Turn Speed", 953, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Walk Turn Speed (Room)", 957, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Walk Stop Margin Time", 961, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Female Motion Start Time", 965, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 969, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 973, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Walk Motion Speed (Room)", 977, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Walk Motion Speed", 981, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Run Stop Margin Time", 985, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Run Turn Speed", 989, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Run Turn Lever Angle", 993, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Run Female Motion Start Time", 997, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1001, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1005, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Run Motion Speed (Room)", 1009, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Run Motion Speed", 1013, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Dash Turn Speed", 1017, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry("Dash Motion Speed", 1021, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1025, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1029, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1033, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1037, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1041, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1045, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1049, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1053, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1057, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1061, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1065, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1069, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1073, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1077, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1081, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i++}", 1085, typeof(float), true, forceUnique: true),
+                new MhwStructData.Entry($"Unk{i}", 1089, typeof(float), true, forceUnique: true),
+
+            Spacer,
                 new MhwStructData.Entry("------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
                 Spacer
             };
@@ -1366,7 +1414,58 @@ namespace MHW_Generator {
                 new MhwStructData.Entry("Wp MR Augment Bow Coating Status Multiplier (4)", 8751, typeof(float)),
 
                 Spacer,
-                new MhwStructData.Entry("------Skipping the rest.", 3, typeof(byte), true, forceUnique: true)
+                new MhwStructData.Entry("------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
+                Spacer
+            });
+
+            var slingerRocks = new List<string> {
+                "Stone",
+                "Redpit",
+                "Brightmoss",
+                "Scatternut",
+                "Unk 1",
+                "Unk 2",
+                "Unk 3",
+                "Unk 4",
+                "Unk 5",
+                "Torch Pod",
+                "Unk 6",
+                "Unk 7",
+                "Unk 8",
+                "Unk 9",
+                "Bomb Pod",
+                "Piercing Pod",
+                "Slinger Thorn",
+                "Dragon Pod",
+                "Unk 10",
+                "Unk 11",
+                "Unk 12",
+                "Unk 13",
+                "Unk 14",
+                "Unk 15",
+                "Unk 16",
+                "Unk 17",
+                "Crystalburst",
+                "Puddle Pod",
+                "Unk 18",
+                "Unk 19",
+                "Unk 20"
+            };
+
+            entries.AddRange(slingerRocks.Select((slingerRock, x) => new MhwStructData.Entry($"Max Slinger Capacity: {slingerRock}", 9345 + (ulong) x, typeof(byte))));
+
+            entries.AddRange(new List<MhwStructData.Entry> {
+                Spacer,
+                new MhwStructData.Entry("------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
+                Spacer,
+
+                new MhwStructData.Entry("Gesture: Dragoon Jump Loop Time", 17801, typeof(float)),
+                new MhwStructData.Entry("Gesture: Dragoon Jump Meteor Start", 17805, typeof(float)),
+                new MhwStructData.Entry("Gesture: Dragoon Jump Meteor Duration", 17809, typeof(float)),
+
+                Spacer,
+                new MhwStructData.Entry("------Skipping the rest.", 3, typeof(byte), true, forceUnique: true),
+                Spacer
             });
 
             GeneratePlDataProps("MHW_Editor.PlData", "PlPlayerParam", new MhwStructData { // .plp
