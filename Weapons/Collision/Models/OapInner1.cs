@@ -3,7 +3,7 @@ using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons.Collision.Models {
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode, Pack = 1)]
-    public struct OapInner1 : IOapInner { // 16
+    public class OapInner1 : IOapInner { // 16
         [SortOrder(10)]
         public uint unk1 { get; set; }
 

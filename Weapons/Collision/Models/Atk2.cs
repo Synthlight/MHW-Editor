@@ -4,7 +4,7 @@ using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons.Collision.Models {
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode, Pack = 1)]
-    public struct Atk2 : IAtk { // 171
+    public class Atk2 : IAtk { // 171
         [IsReadOnly]
         [DisplayName("Move Id")]
         [SortOrder(10)]

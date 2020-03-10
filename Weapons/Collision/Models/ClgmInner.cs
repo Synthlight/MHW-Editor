@@ -3,7 +3,7 @@ using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons.Collision.Models {
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode, Pack = 1)]
-    public struct ClgmInner { // 72
+    public class ClgmInner { // 72
         [SortOrder(10)]
         public byte unk1 { get; set; }
 

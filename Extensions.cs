@@ -53,7 +53,7 @@ namespace MHW_Editor {
             grid.Children.Add(control);
         }
 
-        public static T GetDataAs<T>(this IEnumerable<byte> bytes) where T : struct {
+        public static T GetDataAs<T>(this IEnumerable<byte> bytes) {
             var handle = GCHandle.Alloc(bytes, GCHandleType.Pinned);
 
             try {
@@ -65,7 +65,7 @@ namespace MHW_Editor {
             }
         }
 
-        public static byte[] GetBytes<T>(this T @struct) where T : struct {
+        public static byte[] GetBytes<T>(this T @struct) {
             var size = Marshal.SizeOf(@struct);
             var bytes = new byte[size];
             var handle = GCHandle.Alloc(bytes, GCHandleType.Pinned);

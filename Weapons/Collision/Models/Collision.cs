@@ -5,7 +5,7 @@ using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons.Collision.Models {
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode, Pack = 1)]
-    public struct Collision {
+    public class Collision {
         [IsReadOnly]
         [DisplayName("Magic (COL) 1")]
         [SortOrder(10)]

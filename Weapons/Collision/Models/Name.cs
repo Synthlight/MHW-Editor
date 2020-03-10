@@ -4,7 +4,7 @@ using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons.Collision.Models {
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode, Pack = 1)]
-    public struct Name {
+    public class Name {
         [DisplayName("Index")]
         [SortOrder(10)]
         public string name { get; set; } // Null terminated.
