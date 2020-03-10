@@ -43,6 +43,7 @@ namespace MHW_Template {
             "*.asp",
             "*.bbtbl",
             "*.ch_dat",
+            "*.col",
             "*.cus_pa",
             "*.cus_par",
             "*.dglt",

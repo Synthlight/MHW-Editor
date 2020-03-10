@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -43,6 +44,40 @@ namespace MHW_Editor {
                 TypeCode.Int64 => true,
                 _ => throw new ArgumentOutOfRangeException()
             };
+        }
+
+        public static void AddControl(this Grid grid, UIElement control) {
+            var rowDefinition = new RowDefinition {Height = GridLength.Auto};
+            grid.RowDefinitions.Add(rowDefinition);
+            Grid.SetRow(control, grid.RowDefinitions.Count - 1);
+            grid.Children.Add(control);
+        }
+
+        public static T GetDataAs<T>(this IEnumerable<byte> bytes) where T : struct {
+            var handle = GCHandle.Alloc(bytes, GCHandleType.Pinned);
+
+            try {
+                return (T) Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof(T));
+            } finally {
+                if (handle.IsAllocated) {
+                    handle.Free();
+                }
+            }
+        }
+
+        public static byte[] GetBytes<T>(this T @struct) where T : struct {
+            var size = Marshal.SizeOf(@struct);
+            var bytes = new byte[size];
+            var handle = GCHandle.Alloc(bytes, GCHandleType.Pinned);
+
+            try {
+                Marshal.StructureToPtr(@struct, handle.AddrOfPinnedObject(), false);
+                return bytes;
+            } finally {
+                if (handle.IsAllocated) {
+                    handle.Free();
+                }
+            }
         }
 
         public static string ToStringWithId<T>(this string name, T id) where T : struct {
