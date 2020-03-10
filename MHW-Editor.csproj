@@ -245,8 +245,10 @@
     <Compile Include="Skills\SkillPointData.cs" />
     <Compile Include="Weapons\Bow.cs" />
     <Compile Include="Weapons\Collision\Collision.cs" />
+    <Compile Include="Weapons\Collision\Models\Atk2.cs" />
     <Compile Include="Weapons\Collision\Models\Atk3.cs" />
     <Compile Include="Weapons\Collision\Models\Collision.cs" />
+    <Compile Include="Weapons\Collision\Models\IOapInner.cs" />
     <Compile Include="Weapons\Collision\Models\IAtk.cs" />
     <Compile Include="Weapons\Collision\Models\Atk1.cs" />
     <Compile Include="Weapons\Collision\Models\Clgm.cs" />
@@ -254,6 +256,9 @@
     <Compile Include="Weapons\Collision\Models\Clnd.cs" />
     <Compile Include="Weapons\Collision\Collision.io.cs" />
     <Compile Include="Weapons\Collision\Models\Name.cs" />
+    <Compile Include="Weapons\Collision\Models\OapInner3.cs" />
+    <Compile Include="Weapons\Collision\Models\OapInner2.cs" />
+    <Compile Include="Weapons\Collision\Models\OapInner1.cs" />
     <Compile Include="Weapons\CustomPartsR.cs" />
     <Compile Include="Weapons\CustomParts.cs" />
     <Compile Include="Weapons\GunnerReload.cs" />

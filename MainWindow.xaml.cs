@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -494,10 +493,11 @@ namespace MHW_Editor {
 
         private bool CheckCellForButtonTypeAndHandleClick(object sender, DataGridCell cell) {
             if (!(cell.Content is TextBlock)) return false;
+            var dataGrid = ((DependencyObject) sender).GetParent<DataGrid>();
 
             // Have to loop though our column list to file the original property name.
-            foreach (var propertyName in columnMap[sender].Keys.Where(key => key.Contains("_button"))) {
-                if (cell.Column != columnMap[sender][propertyName].column) continue;
+            foreach (var propertyName in columnMap[dataGrid].Keys.Where(key => key.Contains("_button"))) {
+                if (cell.Column != columnMap[dataGrid][propertyName].column) continue;
 
                 EditSelectedItemId(cell, propertyName);
                 return true;
@@ -637,7 +637,7 @@ namespace MHW_Editor {
 
                 customFileData = Collision.LoadData(targetFile);
 
-                Collision.SetupViews(customFileData, grid, (Action<IEnumerable>) AddDataGrid);
+                Collision.SetupViews(customFileData, grid, this);
                 return;
 #if !DEBUG
                 } catch (Exception e) {
@@ -668,11 +668,11 @@ namespace MHW_Editor {
             }
         }
 
-        private void AddDataGrid(IEnumerable itemSource) {
+        public void AddDataGrid<T>(IEnumerable<T> itemSource) {
             var control = new ContentControl {Content = Resources["ItemDataGrid"]};
             grid.AddControl(control);
             var dataGrid = ((DataGrid) control.Content);
-            dataGrid.ItemsSource = itemSource;
+            dataGrid.ItemsSource = new ObservableCollection<T>(itemSource);
             dataGrids.Add(dataGrid);
         }
 

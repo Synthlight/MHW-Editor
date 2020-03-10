@@ -5,6 +5,7 @@ using MHW_Editor.Models;
 namespace MHW_Editor.Weapons.Collision.Models {
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode, Pack = 1)]
     public struct Atk1 : IAtk { // 218
+        [IsReadOnly]
         [DisplayName("Move Id")]
         [SortOrder(10)]
         public uint index { get; set; } // 0

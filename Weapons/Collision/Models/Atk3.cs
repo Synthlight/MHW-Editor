@@ -5,6 +5,7 @@ using MHW_Editor.Models;
 namespace MHW_Editor.Weapons.Collision.Models {
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode, Pack = 1)]
     public struct Atk3 : IAtk { // 199
+        [IsReadOnly]
         [DisplayName("Move Id")]
         [SortOrder(10)]
         public uint Index { get; set; } // 0
@@ -140,11 +141,13 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [SortOrder(390)]
         public uint unk21 { get; set; } // 143
 
+        [DisplayName("Piercing Attack")]
         [SortOrder(400)]
-        public byte unk22 { get; set; } // 147
+        public byte piercingAttack { get; set; } // 147
 
+        [DisplayName("Delay Between Attack Frames")]
         [SortOrder(410)]
-        public float unk23 { get; set; } // 148
+        public float delayBetweenAttackFrames { get; set; } // 148
 
         [SortOrder(420)]
         public byte unk24 { get; set; } // 152

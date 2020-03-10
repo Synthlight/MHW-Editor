@@ -23,7 +23,10 @@ namespace MHW_Editor.Weapons.Collision.Models {
         public float unk6 { get; set; }
 
         [SortOrder(70)]
-        public int unk7 { get; set; }
+        public short unk7 { get; set; }
+
+        [SortOrder(75)]
+        public short unk70 { get; set; }
 
         [SortOrder(80)]
         public float unk8 { get; set; }

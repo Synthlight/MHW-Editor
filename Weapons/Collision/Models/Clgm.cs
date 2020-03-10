@@ -6,22 +6,27 @@ using MHW_Editor.Models;
 namespace MHW_Editor.Weapons.Collision.Models {
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode, Pack = 1)]
     public struct Clgm {
+        [IsReadOnly]
         [DisplayName("Magic 1")]
         [SortOrder(10)]
         public uint magic1 { get; set; }
 
+        [IsReadOnly]
         [DisplayName("Type")]
         [SortOrder(20)]
         public string name { get; set; } // Exactly 4 chars in length.
 
+        [IsReadOnly]
         [DisplayName("Magic 2")]
         [SortOrder(30)]
         public uint magic2 { get; set; }
 
+        [IsReadOnly]
         [DisplayName("Array Count")]
         [SortOrder(40)]
         public uint count { get; set; }
 
+        [IsReadOnly]
         [DisplayName("CLGM Inner[]")]
         [SortOrder(50)]
         public List<ClgmInner> clgmInner { get; set; } // count
@@ -59,7 +64,33 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [SortOrder(160)]
         public ushort unk11 { get; set; }
 
+        // if (clgmType == 1)
         [SortOrder(170)]
-        public byte unk12 { get; set; }
+        public int unk12 { get; set; }
+
+        [SortOrder(180)]
+        public int unk13 { get; set; }
+
+        [SortOrder(190)]
+        public int unk14 { get; set; }
+
+        [SortOrder(200)]
+        public int unk15 { get; set; }
+
+        [SortOrder(210)]
+        public int unk16 { get; set; }
+
+        [SortOrder(220)]
+        public int unk17 { get; set; }
+
+        [SortOrder(230)]
+        public int unk18 { get; set; }
+
+        [SortOrder(240)]
+        public int unk19 { get; set; }
+        // endif
+
+        [SortOrder(250)]
+        public byte unk20 { get; set; }
     }
 }
