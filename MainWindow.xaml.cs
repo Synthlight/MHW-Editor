@@ -119,26 +119,28 @@ namespace MHW_Editor {
 
             if (args.Length >= 4) {
                 try {
-                    var action = args[1].ToLower();
-                    var inFile = args[2];
-                    var outFile = args[3];
+                    if (args.ContainsIgnoreCase("-decrypt") || args.ContainsIgnoreCase("-encrypt")) {
+                        var action = args[1].ToLower();
+                        var inFile = args[2];
+                        var outFile = args[3];
 
-                    var ext = Path.GetExtension(inFile);
-                    var key = args.Length == 5 ? args[4] : EncryptionKeys.FILE_EXT_KEY_LOOKUP.TryGet(ext, null);
+                        var ext = Path.GetExtension(inFile);
+                        var key = args.Length == 5 ? args[4] : EncryptionKeys.FILE_EXT_KEY_LOOKUP.TryGet(ext, null);
 
-                    if (key == null) {
-                        MessageBox.Show($"Unknown Key for: {ext}", "Unknown Key", MessageBoxButton.OK, MessageBoxImage.Error);
-                        Close();
-                        return;
-                    }
+                        if (key == null) {
+                            MessageBox.Show($"Unknown Key for: {ext}", "Unknown Key", MessageBoxButton.OK, MessageBoxImage.Error);
+                            Close();
+                            return;
+                        }
 
-                    switch (action) {
-                        case "-decrypt":
-                            EncryptionHelper.Decrypt(key, inFile, outFile);
-                            break;
-                        case "-encrypt":
-                            EncryptionHelper.Encrypt(key, inFile, outFile);
-                            break;
+                        switch (action) {
+                            case "-decrypt":
+                                EncryptionHelper.Decrypt(key, inFile, outFile);
+                                break;
+                            case "-encrypt":
+                                EncryptionHelper.Encrypt(key, inFile, outFile);
+                                break;
+                        }
                     }
                 } catch (Exception e) {
                     MessageBox.Show($"Error: {e}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
