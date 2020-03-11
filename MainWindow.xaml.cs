@@ -633,6 +633,8 @@ namespace MHW_Editor {
             columnMap = new Dictionary<object, Dictionary<string, ColumnHolder>>();
             coloredRow = null;
 
+            GC.Collect();
+
             if (targetFileType.Is(typeof(Collision))) { // Custom save/load.
 #if !DEBUG
                 try {

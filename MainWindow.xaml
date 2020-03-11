@@ -21,6 +21,7 @@
                       CanUserAddRows="False"
                       CanUserDeleteRows="False"
                       CellEditEnding="Dg_items_CellEditEnding"
+                      EnableRowVirtualization="True"
                       GotFocus="Dg_items_GotFocus"
                       HorizontalScrollBarVisibility="Disabled"
                       SelectionUnit="CellOrRowHeader"
@@ -212,6 +213,7 @@
                       Grid.Column="0"
                       Grid.ColumnSpan="3"
                       HorizontalScrollBarVisibility="Auto"
+                      IsDeferredScrollingEnabled="True"
                       PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
             <Grid Name="grid"/>
         </ScrollViewer>
