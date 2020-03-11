@@ -192,7 +192,9 @@ namespace MHW_Editor.Weapons.Collision {
         }
 
         public static void SaveData(Models.Collision collision, string targetFile) {
-            using var writer = new BinaryWriter(File.Open(targetFile, FileMode.Create, FileAccess.Write));
+            // Don't erase file, we just want to write what we have.
+            // This ensures extra bytes at the end (if any) are not lost.
+            using var writer = new BinaryWriter(File.Open(targetFile, FileMode.Open, FileAccess.Write));
 
             writer.Write(collision.magicCol1);
             writer.Write(collision.nameCol.ToCharArray());
