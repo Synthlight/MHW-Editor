@@ -1,0 +1,56 @@
+﻿Move_Id,untranslate,translated,description
+0,振りおろし,Chop,
+1,横切り,Side Slash,
+2,,,
+3,回転斬り,Round Slash,
+4,水平斬り,Lateral Slash,
+5,斬り返し,Return Stroke,
+6,,,
+7,,,
+8,斬り上げ,Rising Slash,
+9,ジャンプ斬り上げ,Jumping Rising Slash,
+10,ジャンプ突進斬り,Jumping Advancing Slash,
+11,ジャンプ斬り,Jumping Slash,
+12,突進斬り,Advancing Slash,
+13,突き,Thrust,
+14,ガード斬り,Guard Slash,
+15,剣盾コンボ（剣部分）,Sword/Shield Combo,(Sword)
+16,溜め斬り（振りおろし）,Charged Slash,(2nd Hit)
+17,,,
+18,方向転換・前,Spiral Slash,(front)
+19,方向転換・右,Spiral Slash,(right)
+20,方向転換・左,Spiral Slash,(left)
+21,方向転換・後,Spiral Slash,(Backwards)
+22,,,
+23,,,
+24,頭乗り攻撃フィニッシュ,Triple Strikes,[Mounting] [Head] (Sword)
+25,背乗り攻撃フィニッシュ,Triple Strikes,[Mounting] [Body] (Sword)
+26,尻乗り攻撃フィニッシュ,Triple Strikes,[Mounting] [Tail] (Sword)
+27,,,
+28,,,
+29,スライディング斬り１,Sliding Slash,(1st Hit)
+30,スライディング斬り２,Sliding Slash,(2nd Hit)
+31,,,
+32,踏み台斬り上げ１,,guess dummy
+33,踏み台斬り上げ２,Scaling Slash,
+34,エネステジャンプ斬り,,guess dummy
+35,,,
+36,駆け上がり斬り,Helm Breaker,
+37,,,
+38,突進ジャンプ斬り,Leaping Slash,
+39,ラッシュ1,Perfect Rush I,(2nd Hit)
+40,ラッシュ2,Perfect Rush I,(3rd Hit)
+41,ラッシュ3,,guess dummy
+42,ラッシュ4,,guess dummy
+43,敵コンスト離脱1,Weapon Attack,[Clutching] (1st Hit)
+44,敵コンスト離脱2,Weapon Attack,[Clutching] (2nd Hit)
+45,敵コンスト離脱3,Weapon Attack,[Clutching] (3rd Hit)
+46,敵コンスト離脱4,Weapon Attack,[Clutching] (4th Hit)
+47,突き刺し敵コンスト離脱1,,guess dummy
+48,突き刺し敵コンスト離脱2,,guess dummy
+49,突き刺し敵コンスト離脱3,Perfect Rush III,(2nd Hit)
+50,強ラッシュ1,Perfect Rush I,[Timed] (2nd Hit)
+51,強ラッシュ2,Perfect Rush I,[Timed] (3rd Hit)
+52,強突き刺し敵コンスト離脱3,Perfect Rush III,[Timed] (2nd Hit)
+53,ラッシュ突き刺しカス当たり,Perfect Rush III,"(2nd Hit, Failed)"
+54,ラッシュ突き刺しカス当たり,Perfect Rush III,"[Timed] (2nd Hit, Failed)"

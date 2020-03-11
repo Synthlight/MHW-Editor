@@ -1,0 +1,78 @@
+﻿Move_Id,untranslate,translated,description
+0,縦斬り,Overhead Slash,
+1,なぎ払い,Wide Slash,
+2,斬り上げ,Rising Slash,
+3,横殴り,Side Blow,
+4,溜め斬りLv1,Charged Slash,Lv1
+5,溜め斬りLv2,Charged Slash,Lv2
+6,溜め斬りLv3,Charged Slash,Lv3
+7,,,
+8,強溜め斬りLv1,Strong Charged Slash,Lv1
+9,強溜め斬りLv2,Strong Charged Slash,Lv2
+10,強溜め斬りLv3,Strong Charged Slash,Lv3
+11,強溜め斬りLv0,,guess dummy
+12,強なぎ払いLv1,Strong Wide Slash,Lv1
+13,強なぎ払いLv2,Strong Wide Slash,Lv2
+14,強なぎ払いLv3,Strong Wide Slash,Lv3
+15,強なぎ払いLv0,,guess dummy
+16,ジャンプ斬り,,guess dummy
+17,闘魂斬り初段LV1,True Charge Slash,Lv1 (1st Hit)
+18,闘魂斬り初段LV2,True Charge Slash,Lv2 (1st Hit)
+19,闘魂斬り初段LV3,True Charge Slash,Lv3 (1st Hit)
+20,闘魂斬りLv1,True Charge Slash,Lv1 (2nd Hit)
+21,闘魂斬りLv2,True Charge Slash,Lv2 (2nd Hit)
+22,闘魂斬りLv3,True Charge Slash,Lv3 (2nd Hit)
+23,叩き付け薙ぎ払い_Lv1,Jumping Wide Slash,Lv1
+24,叩き付け薙ぎ払い_Lv2,Jumping Wide Slash,Lv2
+25,叩き付け薙ぎ払い_Lv3,Jumping Wide Slash,Lv3
+26,,,
+27,,,
+28,,,
+29,顔乗り斬りLv1,Charged Slash,[Mounting] [Head] Lv1 (1st Hit)
+30,顔乗り斬りLv2,Charged Slash,[Mounting] [Head] Lv2 (1st Hit)
+31,顔乗り斬りLv3,Charged Slash,[Mounting] [Head] Lv3 (1st Hit)
+32,顔乗り斬り引き抜きLv1,Charged Slash,[Mounting] [Head] Lv1 (2nd Hit)
+33,顔乗り斬り引き抜きLv2,Charged Slash,[Mounting] [Head] Lv2 (2nd Hit)
+34,顔乗り斬り引き抜きLv3,Charged Slash,[Mounting] [Head] Lv3 (2nd Hit)
+35,背中乗り斬りLv1,Charged Slash,[Mounting] [Body] Lv1 (1st Hit)
+36,背中乗り斬りLv2,Charged Slash,[Mounting] [Body] Lv2 (1st Hit)
+37,背中乗り斬りLv3,Charged Slash,[Mounting] [Body] Lv3 (1st Hit)
+38,背中乗り斬り引き抜きLv1,Charged Slash,[Mounting] [Body] Lv1 (2nd Hit)
+39,背中乗り斬り引き抜きLv2,Charged Slash,[Mounting] [Body] Lv2 (2nd Hit)
+40,背中乗り斬り引き抜きLv3,Charged Slash,[Mounting] [Body] Lv3 (2nd Hit)
+41,尻尾乗り斬りLv1,Charged Slash,[Mounting] [Tail] Lv1 (1st Hit)
+42,尻尾乗り斬りLv2,Charged Slash,[Mounting] [Tail] Lv2 (1st Hit)
+43,尻尾乗り斬りLv3,Charged Slash,[Mounting] [Tail] Lv3 (1st Hit)
+44,,,
+45,ジャンプ斬りLv1,Mid-Air Charged Slash,Lv1 / Jumping Slash
+46,ジャンプ斬りLv2,Mid-Air Charged Slash,Lv2
+47,ジャンプ斬りLv3,Mid-Air Charged Slash,Lv3
+48,,,
+49,スライディング斬りLv1,Charged Rising Slash,Lv1
+50,スライディング斬りLv2,Charged Rising Slash,Lv2
+51,スライディング斬りLv3,Charged Rising Slash,Lv3
+52,,,
+53,兜割Lv1,Plunging Thrust,Lv1
+54,兜割Lv2,Plunging Thrust,Lv2
+55,兜割Lv3,Plunging Thrust,Lv3
+56,側転回避なぎ払い,,guess dummy
+57,,,
+58,横殴りver2,Side Blow,(after Strong Charged Slash)
+59,なぎ払いver2,Wide Slash,(after Strong Charged Slash)
+60,斬り上げver2,Rising Slash,(after Strong Charged Slash)
+61,,,
+62,尻尾乗り斬り引き抜きLv1,Charged Slash,[Mounting] [Tail] Lv1 (2nd Hit)
+63,尻尾乗り斬り引き抜きLv2,Charged Slash,[Mounting] [Tail] Lv2 (2nd Hit)
+64,尻尾乗り斬り引き抜きLv3,Charged Slash,[Mounting] [Tail] Lv3 (2nd Hit)
+65,,,
+66,クロー 強攻撃 開始,Weapon Attack,[Clutching] (1st Hit)
+67,クロー 強攻撃 開始の最後,Weapon Attack,[Clutching] (2nd Hit)
+68,クロー 強攻撃 ループ,Weapon Attack,[Clutching] (Repeated)
+69,クロー 強攻撃 END,Weapon Attack,[Clutching] (Final Hit)
+70,,,
+71,闘魂斬りFinish Lv1,True Charged Slash (Power),Lv1
+72,闘魂斬りFinish Lv2,True Charged Slash (Power),Lv2
+73,闘魂斬りFinish Lv3,True Charged Slash (Power),Lv3
+74,闘魂斬りFinish Lv1 マルチヒット,,guess dummy
+75,闘魂斬りFinish Lv2 マルチヒット,,guess dummy
+76,闘魂斬りFinish Lv3 マルチヒット,,guess dummy

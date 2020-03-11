@@ -64,6 +64,7 @@ namespace MHW_Editor {
         private readonly bool unlockFields;
         private readonly List<DataGrid> dataGrids = new List<DataGrid>();
         private dynamic customFileData;
+        public static bool showAll;
 
         public static string locale = "eng";
         public string Locale {
@@ -107,8 +108,12 @@ namespace MHW_Editor {
             var args = Environment.GetCommandLineArgs();
 
             if (args.Length >= 2) {
-                if (args[1].ToLower().Equals("-unlock")) {
+                if (args.ContainsIgnoreCase("-unlock")) {
                     unlockFields = true;
+                }
+
+                if (args.ContainsIgnoreCase("-showAll")) {
+                    showAll = true;
                 }
             }
 

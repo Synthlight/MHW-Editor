@@ -8,7 +8,7 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [IsReadOnly]
         [DisplayName("Move Id")]
         [SortOrder(10)]
-        public uint Index { get; set; } // 0
+        public uint moveId { get; set; } // 0
 
         [DisplayName("Damage Type 1")]
         [SortOrder(20)]

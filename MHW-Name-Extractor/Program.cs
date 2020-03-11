@@ -1,16 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using MHW_Name_Extractor.Structs;
 using MHW_Template;
+using MHW_Template.Models;
 using Newtonsoft.Json;
 
 namespace MHW_Name_Extractor {
     public static class Program {
         [STAThread]
         public static void Main() {
+            var colTrans = new Dictionary<string, Dictionary<int, NameDescPair>>();
+
+            foreach (var file in Directory.EnumerateFiles(@"..\..\..\CollisionTranslations", "*.csv", SearchOption.TopDirectoryOnly)) {
+                var entries = ParseCsv(file);
+                if (entries.Count == 0) continue;
+
+                var fileName = Path.GetFileNameWithoutExtension(file)?.Replace('-', '\\');
+
+                colTrans[fileName ?? throw new InvalidOperationException()] = entries;
+            }
+
+            var colTransFile = $@"{Global.ASSETS_ROOT}\CollisionTranslationsData.json";
+            var dir = Path.GetDirectoryName(colTransFile);
+            if (!Directory.Exists(dir)) {
+                Directory.CreateDirectory(dir ?? throw new InvalidOperationException());
+            }
+
+            File.WriteAllText(colTransFile, JsonConvert.SerializeObject(colTrans, Formatting.Indented));
+
+            if (Environment.GetCommandLineArgs().ContainsIgnoreCase("-transOnly")) return;
+
             foreach (var lang in Global.LANGUAGES) {
                 // ReSharper disable once StringLiteralTypo
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\charm_{lang}.gmd", $@"{Global.ASSETS_ROOT}\PendantData\{lang}_pendantData.json"); // .ch_dat
@@ -33,12 +56,36 @@ namespace MHW_Name_Extractor {
             }
         }
 
+        private static Dictionary<int, NameDescPair> ParseCsv(string file) {
+            var dict = new Dictionary<int, NameDescPair>();
+
+            var text = File.ReadAllText(file);
+            var lines = text.Split(new[] {'\r', '\n'}, StringSplitOptions.RemoveEmptyEntries);
+            var entries = from line in lines.Subsequence(1, lines.Length - 2)
+                          where line != ",,,"
+                          let parts = line.Split(',')
+                          let name = parts[2]
+                          let desc = parts[3]
+                          where !string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(desc)
+                          select new {
+                              id = int.Parse(parts[0]), // Skip 1, the untranslated name.
+                              name,
+                              desc
+                          };
+
+            foreach (var entry in entries) {
+                dict[entry.id] = new NameDescPair(entry.name, entry.desc);
+            }
+
+            return dict;
+        }
+
         private static void GetAndWriteGmdStringsAsJson(string targetFile, string destFile) {
             try {
                 var gmdStrings = GetGmdStrings(targetFile);
                 var dir = Path.GetDirectoryName(destFile);
                 if (!Directory.Exists(dir)) {
-                    Directory.CreateDirectory(dir);
+                    Directory.CreateDirectory(dir ?? throw new InvalidOperationException());
                 }
 
                 File.WriteAllText(destFile, JsonConvert.SerializeObject(gmdStrings, Formatting.Indented));

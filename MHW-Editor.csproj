@@ -360,6 +360,7 @@
     <None Include="Assets\BountyData\ptB_bountyData.json" />
     <None Include="Assets\BountyData\rus_bountyData.json" />
     <None Include="Assets\BountyData\spa_bountyData.json" />
+    <None Include="Assets\CollisionTranslationsData.json" />
     <None Include="Assets\InsectData\ara_insectData.json" />
     <None Include="Assets\InsectData\chS_insectData.json" />
     <None Include="Assets\InsectData\chT_insectData.json" />

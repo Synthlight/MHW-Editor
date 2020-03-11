@@ -1,0 +1,23 @@
+﻿Move_Id,untranslate,translated,description
+0,剣盾コンボ（盾部分）,Sword/Shield Combo,(Shield)
+1,盾攻撃,Shield Attack,
+2,バックナックル,Shield Bash,
+3,溜め斬り（ジャンプ中）,Charged Slash,(1st Hit)
+4,盾フィニッシュ,Hard Bash,
+5,盾牽制,Short Shield Bash,
+6,,,
+7,,,
+8,,,
+9,,,
+10,頭乗り盾攻撃,Triple Strikes,[Mounting] [Head] (Shield)
+11,背乗り盾攻撃,Triple Strikes,[Mounting] [Body] (Shield)
+12,尻乗り盾攻撃,Triple Strikes,[Mounting] [Tail] (Shield)
+13,,,
+14,敵踏み盾攻撃,Falling Bash,
+15,敵踏み盾攻撃フィニッシュ,Falling Bash,(Landing)
+16,,,
+17,盾ラッシュ1,Perfect Rush I,(1st Hit)
+18,盾ラッシュ2,Perfect Rush II,
+19,盾ラッシュ3,,guess dummy
+20,強盾ラッシュ1,Perfect Rush I,[Timed] (1st Hit)
+21,強盾ラッシュ2,Perfect Rush II,[Timed]

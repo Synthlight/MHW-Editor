@@ -29,7 +29,7 @@ namespace MHW_Editor.Weapons.Collision {
                 unk2 = reader.ReadUInt32(),
                 nameCount = reader.ReadUInt32()
             };
-            collision.names = ReadNames(collision.nameCount, reader);
+            collision.names = ReadNames(collision.nameCount, reader, targetFile);
             collision.clnd = ReadClnd(reader);
             collision.magicAtk1 = reader.ReadUInt32();
             collision.nameAtk = new string(reader.ReadChars(4));
@@ -51,11 +51,11 @@ namespace MHW_Editor.Weapons.Collision {
             return collision;
         }
 
-        private static List<Name> ReadNames(uint count, BinaryReader reader) {
+        private static List<Name> ReadNames(uint count, BinaryReader reader, string targetFile) {
             var names = new List<Name>();
 
             for (uint i = 0; i < count; i++) {
-                var name = new Name();
+                var name = new Name(targetFile);
 
                 var stringBytes = new List<byte>();
                 do {
@@ -70,6 +70,8 @@ namespace MHW_Editor.Weapons.Collision {
                 name.unk3 = reader.ReadUInt16();
                 name.unk4 = reader.ReadByte();
                 name.unk5 = reader.ReadUInt32();
+
+                name.Init();
 
                 names.Add(name);
             }

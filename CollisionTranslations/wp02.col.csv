@@ -1,0 +1,166 @@
+﻿Move_Id,untranslate,translated,description
+0,,,
+1,斬り払いL(一段目),Lunging Strike,(L1)
+2,斬り払いR(一段目),Lunging Strike,(R1)
+3,斬り払いL(二段目),Lunging Strike,(L2)
+4,斬り払いR(二段目),Lunging Strike,(R2)
+5,通常時斬り上げ,Rising Slash,(normal)
+6,鬼人逆手斬り上げ,Rising Slash,(After Fade Slash)
+7,二段斬りL,Double Slash,(L1)
+8,二段斬りR,Double Slash,(R1)
+9,二段斬り返しL,Double Slash Return Stroke,(L1)
+10,二段斬り返しR,Double Slash Return Stroke,(R1)
+11,車輪斬りL,Circle Slash,(L1)
+12,車輪斬りR（一段目）,Circle Slash,(R1)
+13,車輪斬りR（二段目）,Circle Slash,(R2)
+14,,,
+15,,,
+16,,,
+17,,,
+18,,,
+19,ジャンプ二段斬りL,Jumping Double Slash,(L1)
+20,ジャンプ二段斬りR,Jumping Double Slash,(R1)
+21,,,
+22,スライディング斬りL（一段目）,Sliding Slash,(L1)
+23,スライディング斬りR（一段目）,Sliding Slash,(R1)
+24,スライディング斬りL（二段目）,Sliding Slash,(L2)
+25,スライディング斬りR（二段目）,Sliding Slash,(R2)
+26,,,
+27,,,
+28,空中回転乱舞着地L1,Spinning Blade Dance,Finisher (L1)
+29,空中回転乱舞着地L2,Spinning Blade Dance,Finisher (L2)
+30,空中回転乱舞着地R1,Spinning Blade Dance,Finisher (R1)
+31,空中回転乱舞着地R2,Spinning Blade Dance,Finisher (R2)
+32,,,
+33,這いスピン着地L1,,guess dummy
+34,這いスピン着地L2,,guess dummy
+35,這いスピン着地R1,,guess dummy
+36,這いスピン着地R2,,guess dummy
+37,,,
+38,鬼人連斬L（一段目）,Demon Flurry,(L1)
+39,鬼人連斬L（二段目）,Demon Flurry,(L2)
+40,鬼人連斬L（三段目）,Demon Flurry,(L3)
+41,鬼人連斬R（一段目）,Demon Flurry,(R1)
+42,鬼人連斬R（二段目）,Demon Flurry,(R2)
+43,鬼人連斬R（三段目）,Demon Flurry,(R3)
+44,鬼人連斬R（四段目）,Demon Flurry,(R4)
+45,,,
+46,鬼人突進連斬L（一段目）,Demon Flurry Rush,(L1)
+47,鬼人突進連斬L（二段目）,Demon Flurry Rush,(L2)
+48,鬼人突進連斬L（三段目）,Demon Flurry Rush,(L3)
+49,鬼人突進連斬R（一段目）,Demon Flurry Rush,(R1)
+50,鬼人突進連斬R（二段目）,Demon Flurry Rush,(R2)
+51,鬼人突進連斬R（三段目）,Demon Flurry Rush,(R3)
+52,,,
+53,左回転斬りL（一段目）,Left Roundslash,(L1)
+54,左回転斬りL（二段目）,Left Roundslash,(L2)
+55,左回転斬りR,Left Roundslash,(R1)
+56,,,
+57,右回転斬りL,Right Roundslash,(L1)
+58,右回転斬りR（一段目）,Right Roundslash,(R1)
+59,右回転斬りR（二段目）,Right Roundslash,(R2)
+60,,,
+61,,,
+62,,,
+63,左二回転斬りＬ（一段目）,Left Double Roundslash,(L1)
+64,左二回転斬りＬ（二段目）,Left Double Roundslash,(L2)
+65,左二回転斬りＲ,Left Double Roundslash,(R1)
+66,,,
+67,右二回転斬りＬ,Right Double Roundslash,(L1)
+68,右二回転斬りＲ（一段目）,Right Double Roundslash,(R1)
+69,右二回転斬りＲ（二段目）,Right Double Roundslash,(R2)
+70,,,
+71,空中回転乱舞L（一段目）,Midair Spinning Blade Dance,(L1)
+72,空中回転乱舞L（二段目）,Midair Spinning Blade Dance,(L2)
+73,空中回転乱舞R（一段目）,Midair Spinning Blade Dance,(R1)
+74,空中回転乱舞R（二段目）,Midair Spinning Blade Dance,(R2)
+75,空中回転乱舞フィニッシュL,Midair Spinning Blade Dance,Finisher (L1)
+76,空中回転乱舞フィニッシュR,Midair Spinning Blade Dance,Finisher (R1)
+77,這いスピンL（一段目）,Heavenly Blade Dance,(L1)
+78,這いスピンL（二段目）,Heavenly Blade Dance,(L2)
+79,這いスピンR（一段目）,Heavenly Blade Dance,(R1)
+80,這いスピンR（二段目）,Heavenly Blade Dance,(R2)
+81,這いスピンフィニッシュL,Heavenly Blade Dance,Finisher (L1)
+82,這いスピンフィニッシュR,Heavenly Blade Dance,Finisher (R1)
+83,,,
+84,,,
+85,,,
+86,,,
+87,鬼人攻撃１,Demon Fangs,(R)
+88,鬼人攻撃２L,Twofold Demon Slash,(L1)
+89,鬼人攻撃２R,Twofold Demon Slash,(R1)
+90,鬼人攻撃３L（一段目）,Sixfold Demon Slash,(L1)
+91,鬼人攻撃３R（一段目）,Sixfold Demon Slash,(R1)
+92,鬼人攻撃３L（二段目）,Sixfold Demon Slash,(L2)
+93,鬼人攻撃３R（二段目）,Sixfold Demon Slash,(R2)
+94,鬼人攻撃３L（三段目）,Sixfold Demon Slash,(L3)
+95,鬼人攻撃３R（三段目）,Sixfold Demon Slash,(R3)
+96,,,
+97,鬼人攻撃レバーL,Left Fade Slash,(L1)
+98,鬼人攻撃レバーR,Right Fade Slash,(R1)
+99,,,
+100,仮：乗りチャンス,,guess dummy
+101,,,
+102,,,
+103,,,
+104,,,
+105,,,
+106,,,
+107,,,
+108,,,
+109,鬼人順手斬り上げ,Rising Slash,(After Demon Flurry Rush)
+110,右移動斬りL,,guess dummy
+111,右移動斬りR,,guess dummy
+110,左移動斬りL,,guess dummy
+111,左移動斬りR,,guess dummy
+112,後移動斬りL,Turn Slash,(L1)
+113,後移動斬りR,Turn Slash,(R1)
+114,,,
+115,,,
+116,,,
+117,,,
+118,,,
+119,,,
+120,乱舞L_1,Blade Dance,(L1)
+121,乱舞L_2,Blade Dance,(L2)
+122,乱舞L_3,Blade Dance,(L3)
+123,乱舞L_4,Blade Dance,(L4)
+124,乱舞L_5,Blade Dance,(L5)
+125,乱舞L_6,Blade Dance,(L6)
+126,乱舞L_7,Blade Dance,(L7)
+127,乱舞L_8,Blade Dance,(L8)
+128,,,
+129,乱舞R_1,Blade Dance,(R1)
+130,乱舞R_2,Blade Dance,(R2)
+131,乱舞R_3,Blade Dance,(R3)
+132,乱舞R_4,Blade Dance,(R4)
+133,乱舞R_5,Blade Dance,(R5)
+134,乱舞R_6,Blade Dance,(R6)
+135,乱舞R_7,Blade Dance,(R7)
+136,乱舞R_8,Blade Dance,(R8)
+137,,,
+138,,,
+139,,,
+140,乗り攻撃L_開始,Demon Flurry,[Mounting] (L1)
+141,乗り攻撃L_1,Demon Flurry,[Mounting] (L2)
+142,乗り攻撃L_2,Demon Flurry,[Mounting] (L3)
+143,乗り攻撃L_回転,Demon Flurry,[Mounting] (L Repeated)
+144,乗り攻撃L_フィニッシュ,Demon Flurry,[Mounting] (L Final)
+145,,,
+146,乗り攻撃R_開始,Demon Flurry,[Mounting] (R1)
+147,乗り攻撃R_1,Demon Flurry,[Mounting] (R2)
+148,乗り攻撃R_2,Demon Flurry,[Mounting] (R3)
+149,乗り攻撃R_3,Demon Flurry,[Mounting] (R4)
+150,乗り攻撃R_回転,Demon Flurry,[Mounting] (R Repeated)
+151,乗り攻撃R_フィニッシュ,Demon Flurry,[Mounting] (R Final)
+152,,,
+153,,,
+154,,,
+155,クロー開始L,Weapon Attack,"(L1, R1)"
+156,クロー開始R,Weapon Attack,(R2)
+157,クロースピンL,Weapon Attack,(L2)
+158,クロースピンR,Weapon Attack,(R3)
+159,クロースピンL前,Weapon Attack,(L Repeated)
+160,クロースピンR前,Weapon Attack,(R Repeated)
+161,クロー開始L（特殊）,Spinning Rising Slash,(L1)
+162,クロー開始R（特殊）,Spinning Rising Slash,(R1)

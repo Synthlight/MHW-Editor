@@ -68,6 +68,7 @@
     <Compile Include="Items\ItemSubType.cs" />
     <Compile Include="Items\ItemCategory.cs" />
     <Compile Include="Items\ItemType.cs" />
+    <Compile Include="Models\NameDescPair.cs" />
     <Compile Include="PlDataItemTemplate.cs">
       <DependentUpon>PlDataItemTemplate.tt</DependentUpon>
       <AutoGen>True</AutoGen>

@@ -1,0 +1,63 @@
+﻿Move_Id,untranslate,translated,description
+0,ジャンプ斬り,Jumping Slash,
+1,ジャンプ気刃斬り,Jumping Spirit Blade,
+2,ジャンプ気刃斬り　※ゲージ無し,Jumping Spirit Blade,(no gauge)
+3,ジャンプ気刃２連斬り（一段目）,Jumping Spirit Blade II,(1st Hit)
+4,ジャンプ気刃２連斬り（一段目）※ゲージ無し,Jumping Spirit Blade II,(1st Hit) (no gauge)
+5,回避からの斬り上げ,,guess dummy
+6,気刃踏み込み斬り,Spirit Jumping Slash,
+7,気刃踏み込み斬り　※ゲージ無し,Spirit Jumping Slash,(no gauge)
+8,踏み込み斬り（武器出し）,Step Slash,
+9,縦斬り,Overhead Slash,
+10,突き,Thrust,
+11,突き　※気刃斬りからのコンボ,Thrust,(between Spirit Blade)
+12,斬り上げ,Rising Slash,
+13,斬り下がり,Fade Slash,
+14,左右移動斬り,Lateral Fade Slash,
+15,気刃斬り１,Spirit Blade I,
+16,気刃斬り１　※ゲージ無し,Spirit Blade I,(no gauge)
+17,気刃斬り２,Spirit Blade II,
+18,気刃斬り３（一段目）,Spirit Blade III,(1st Hit)
+19,気刃大回転斬り,Spirit Roundslash,
+20,ジャンプ気刃２連斬り（二段目）,Jumping Spirit Blade II,(2nd Hit)
+21,ジャンプ気刃２連斬り（二段目）※ゲージ無し,Jumping Spirit Blade II,(2nd Hit) (no gauge)
+22,,,
+23,気刃斬り３（二段目）,Spirit Blade III,(2nd Hit)
+24,気刃斬り３（三段目）,Spirit Blade III,(3rd Hit)
+25,見切り攻撃,Foresight Slash,
+26,必殺,,guess dummy
+27,必殺(赤）（気刃突き）,Spirit Thrust,
+28,必殺(空中),,guess dummy
+29,スライディング攻撃,Jumping Rising Slash,
+30,スライディング特殊攻撃,Aerial Draw Spirit Blade,
+30,スライディング特殊追加攻撃,Aerial Draw Spirit Blade,
+31,,,
+32,赤ジャンプ気刃斬り三段目,Jumping Spirit Blade III,(3rd Hit)
+33,乗りチャンス1,Spirit Storm,[Mounting] (1st Hit)
+19,気刃大回転斬り仲間当たり,Spirit Roundslash,
+6,気刃踏み込み斬り仲間当たり,Spirit Jumping Slash,
+34,乗りチャンス2,Spirit Storm,[Mounting] (2nd Hit)
+35,乗りチャンス3,Spirit Storm,[Mounting] (3rd Hit)
+36,乗りチャンス頭1,Spirit Storm,[Mounting] [Head] (Finisher 1)
+37,乗りチャンス胴,Spirit Storm,[Mounting] [Body] (Finisher)
+38,乗りチャンス尾,Spirit Storm,[Mounting] [Tail] (Finisher)
+39,削除予定_必殺多段,,guess dummy
+40,必殺ディレイ,,guess dummy
+41,乗りチャンス頭2,,[Mounting] [Head] (Finisher 2)
+42,,,
+43,居合斬り1,Iai Slash,(1st Hit)
+44,居合斬り2,Iai Slash,(2nd Hit)
+45,,,
+46,居合気刃1無,Iai Spirit Slash,[No Gauge] (1st Hit)
+47,居合気刃1白,Iai Spirit Slash,[White Gauge] (1st Hit)
+48,居合気刃1黄,Iai Spirit Slash,[Yellow Gauge] (1st Hit)
+49,居合気刃1赤,Iai Spirit Slash,[Red Gauge] (1st Hit)
+50,,,
+51,削除：居合気刃2白,,guess dummy
+52,削除：居合気刃2黄,,guess dummy
+53,削除：居合気刃2赤,,guess dummy
+54,,,
+55,張り付き攻撃１,Weapon Attack,[Clutching] (1st Hit)
+56,張り付き攻撃２,,guess dummy
+57,張り付き攻撃３,Weapon Attack,[Clutching] (Repeated)
+58,,,

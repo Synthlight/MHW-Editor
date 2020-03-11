@@ -1,0 +1,1020 @@
+{
+  "wp00.col": {
+    "4": {
+      "name": "Charged Slash",
+      "description": "Lv1"
+    },
+    "5": {
+      "name": "Charged Slash",
+      "description": "Lv2"
+    },
+    "6": {
+      "name": "Charged Slash",
+      "description": "Lv3"
+    },
+    "8": {
+      "name": "Strong Charged Slash",
+      "description": "Lv1"
+    },
+    "9": {
+      "name": "Strong Charged Slash",
+      "description": "Lv2"
+    },
+    "10": {
+      "name": "Strong Charged Slash",
+      "description": "Lv3"
+    },
+    "12": {
+      "name": "Strong Wide Slash",
+      "description": "Lv1"
+    },
+    "13": {
+      "name": "Strong Wide Slash",
+      "description": "Lv2"
+    },
+    "14": {
+      "name": "Strong Wide Slash",
+      "description": "Lv3"
+    },
+    "17": {
+      "name": "True Charge Slash",
+      "description": "Lv1 (1st Hit)"
+    },
+    "18": {
+      "name": "True Charge Slash",
+      "description": "Lv2 (1st Hit)"
+    },
+    "19": {
+      "name": "True Charge Slash",
+      "description": "Lv3 (1st Hit)"
+    },
+    "20": {
+      "name": "True Charge Slash",
+      "description": "Lv1 (2nd Hit)"
+    },
+    "21": {
+      "name": "True Charge Slash",
+      "description": "Lv2 (2nd Hit)"
+    },
+    "22": {
+      "name": "True Charge Slash",
+      "description": "Lv3 (2nd Hit)"
+    },
+    "23": {
+      "name": "Jumping Wide Slash",
+      "description": "Lv1"
+    },
+    "24": {
+      "name": "Jumping Wide Slash",
+      "description": "Lv2"
+    },
+    "25": {
+      "name": "Jumping Wide Slash",
+      "description": "Lv3"
+    },
+    "29": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Head] Lv1 (1st Hit)"
+    },
+    "30": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Head] Lv2 (1st Hit)"
+    },
+    "31": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Head] Lv3 (1st Hit)"
+    },
+    "32": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Head] Lv1 (2nd Hit)"
+    },
+    "33": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Head] Lv2 (2nd Hit)"
+    },
+    "34": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Head] Lv3 (2nd Hit)"
+    },
+    "35": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Body] Lv1 (1st Hit)"
+    },
+    "36": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Body] Lv2 (1st Hit)"
+    },
+    "37": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Body] Lv3 (1st Hit)"
+    },
+    "38": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Body] Lv1 (2nd Hit)"
+    },
+    "39": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Body] Lv2 (2nd Hit)"
+    },
+    "40": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Body] Lv3 (2nd Hit)"
+    },
+    "41": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Tail] Lv1 (1st Hit)"
+    },
+    "42": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Tail] Lv2 (1st Hit)"
+    },
+    "43": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Tail] Lv3 (1st Hit)"
+    },
+    "45": {
+      "name": "Mid-Air Charged Slash",
+      "description": "Lv1 / Jumping Slash"
+    },
+    "46": {
+      "name": "Mid-Air Charged Slash",
+      "description": "Lv2"
+    },
+    "47": {
+      "name": "Mid-Air Charged Slash",
+      "description": "Lv3"
+    },
+    "49": {
+      "name": "Charged Rising Slash",
+      "description": "Lv1"
+    },
+    "50": {
+      "name": "Charged Rising Slash",
+      "description": "Lv2"
+    },
+    "51": {
+      "name": "Charged Rising Slash",
+      "description": "Lv3"
+    },
+    "53": {
+      "name": "Plunging Thrust",
+      "description": "Lv1"
+    },
+    "54": {
+      "name": "Plunging Thrust",
+      "description": "Lv2"
+    },
+    "55": {
+      "name": "Plunging Thrust",
+      "description": "Lv3"
+    },
+    "58": {
+      "name": "Side Blow",
+      "description": "(after Strong Charged Slash)"
+    },
+    "59": {
+      "name": "Wide Slash",
+      "description": "(after Strong Charged Slash)"
+    },
+    "60": {
+      "name": "Rising Slash",
+      "description": "(after Strong Charged Slash)"
+    },
+    "62": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Tail] Lv1 (2nd Hit)"
+    },
+    "63": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Tail] Lv2 (2nd Hit)"
+    },
+    "64": {
+      "name": "Charged Slash",
+      "description": "[Mounting] [Tail] Lv3 (2nd Hit)"
+    },
+    "66": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (1st Hit)"
+    },
+    "67": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (2nd Hit)"
+    },
+    "68": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (Repeated)"
+    },
+    "69": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (Final Hit)"
+    },
+    "71": {
+      "name": "True Charged Slash (Power)",
+      "description": "Lv1"
+    },
+    "72": {
+      "name": "True Charged Slash (Power)",
+      "description": "Lv2"
+    },
+    "73": {
+      "name": "True Charged Slash (Power)",
+      "description": "Lv3"
+    }
+  },
+  "wp00_01.col": {
+    "1": {
+      "name": "Tackle",
+      "description": "Lv1"
+    },
+    "2": {
+      "name": "Tackle",
+      "description": "Lv2"
+    },
+    "3": {
+      "name": "Tackle",
+      "description": "Lv3"
+    }
+  },
+  "wp01.col": {
+    "15": {
+      "name": "Sword/Shield Combo",
+      "description": "(Sword)"
+    },
+    "16": {
+      "name": "Charged Slash",
+      "description": "(2nd Hit)"
+    },
+    "18": {
+      "name": "Spiral Slash",
+      "description": "(front)"
+    },
+    "19": {
+      "name": "Spiral Slash",
+      "description": "(right)"
+    },
+    "20": {
+      "name": "Spiral Slash",
+      "description": "(left)"
+    },
+    "21": {
+      "name": "Spiral Slash",
+      "description": "(Backwards)"
+    },
+    "24": {
+      "name": "Triple Strikes",
+      "description": "[Mounting] [Head] (Sword)"
+    },
+    "25": {
+      "name": "Triple Strikes",
+      "description": "[Mounting] [Body] (Sword)"
+    },
+    "26": {
+      "name": "Triple Strikes",
+      "description": "[Mounting] [Tail] (Sword)"
+    },
+    "29": {
+      "name": "Sliding Slash",
+      "description": "(1st Hit)"
+    },
+    "30": {
+      "name": "Sliding Slash",
+      "description": "(2nd Hit)"
+    },
+    "39": {
+      "name": "Perfect Rush I",
+      "description": "(2nd Hit)"
+    },
+    "40": {
+      "name": "Perfect Rush I",
+      "description": "(3rd Hit)"
+    },
+    "43": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (1st Hit)"
+    },
+    "44": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (2nd Hit)"
+    },
+    "45": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (3rd Hit)"
+    },
+    "46": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (4th Hit)"
+    },
+    "49": {
+      "name": "Perfect Rush III",
+      "description": "(2nd Hit)"
+    },
+    "50": {
+      "name": "Perfect Rush I",
+      "description": "[Timed] (2nd Hit)"
+    },
+    "51": {
+      "name": "Perfect Rush I",
+      "description": "[Timed] (3rd Hit)"
+    },
+    "52": {
+      "name": "Perfect Rush III",
+      "description": "[Timed] (2nd Hit)"
+    },
+    "53": {
+      "name": "Perfect Rush III",
+      "description": "\"(2nd Hit"
+    }
+  },
+  "wp01_01.col": {
+    "0": {
+      "name": "Sword/Shield Combo",
+      "description": "(Shield)"
+    },
+    "3": {
+      "name": "Charged Slash",
+      "description": "(1st Hit)"
+    },
+    "10": {
+      "name": "Triple Strikes",
+      "description": "[Mounting] [Head] (Shield)"
+    },
+    "11": {
+      "name": "Triple Strikes",
+      "description": "[Mounting] [Body] (Shield)"
+    },
+    "12": {
+      "name": "Triple Strikes",
+      "description": "[Mounting] [Tail] (Shield)"
+    },
+    "15": {
+      "name": "Falling Bash",
+      "description": "(Landing)"
+    },
+    "17": {
+      "name": "Perfect Rush I",
+      "description": "(1st Hit)"
+    },
+    "20": {
+      "name": "Perfect Rush I",
+      "description": "[Timed] (1st Hit)"
+    }
+  },
+  "wp01_02.col": {
+    "0": {
+      "name": "Perfect Rush III",
+      "description": "(1st Hit)"
+    }
+  },
+  "wp02.col": {
+    "1": {
+      "name": "Lunging Strike",
+      "description": "(L1)"
+    },
+    "2": {
+      "name": "Lunging Strike",
+      "description": "(R1)"
+    },
+    "3": {
+      "name": "Lunging Strike",
+      "description": "(L2)"
+    },
+    "4": {
+      "name": "Lunging Strike",
+      "description": "(R2)"
+    },
+    "5": {
+      "name": "Rising Slash",
+      "description": "(normal)"
+    },
+    "6": {
+      "name": "Rising Slash",
+      "description": "(After Fade Slash)"
+    },
+    "7": {
+      "name": "Double Slash",
+      "description": "(L1)"
+    },
+    "8": {
+      "name": "Double Slash",
+      "description": "(R1)"
+    },
+    "9": {
+      "name": "Double Slash Return Stroke",
+      "description": "(L1)"
+    },
+    "10": {
+      "name": "Double Slash Return Stroke",
+      "description": "(R1)"
+    },
+    "11": {
+      "name": "Circle Slash",
+      "description": "(L1)"
+    },
+    "12": {
+      "name": "Circle Slash",
+      "description": "(R1)"
+    },
+    "13": {
+      "name": "Circle Slash",
+      "description": "(R2)"
+    },
+    "19": {
+      "name": "Jumping Double Slash",
+      "description": "(L1)"
+    },
+    "20": {
+      "name": "Jumping Double Slash",
+      "description": "(R1)"
+    },
+    "22": {
+      "name": "Sliding Slash",
+      "description": "(L1)"
+    },
+    "23": {
+      "name": "Sliding Slash",
+      "description": "(R1)"
+    },
+    "24": {
+      "name": "Sliding Slash",
+      "description": "(L2)"
+    },
+    "25": {
+      "name": "Sliding Slash",
+      "description": "(R2)"
+    },
+    "28": {
+      "name": "Spinning Blade Dance",
+      "description": "Finisher (L1)"
+    },
+    "29": {
+      "name": "Spinning Blade Dance",
+      "description": "Finisher (L2)"
+    },
+    "30": {
+      "name": "Spinning Blade Dance",
+      "description": "Finisher (R1)"
+    },
+    "31": {
+      "name": "Spinning Blade Dance",
+      "description": "Finisher (R2)"
+    },
+    "38": {
+      "name": "Demon Flurry",
+      "description": "(L1)"
+    },
+    "39": {
+      "name": "Demon Flurry",
+      "description": "(L2)"
+    },
+    "40": {
+      "name": "Demon Flurry",
+      "description": "(L3)"
+    },
+    "41": {
+      "name": "Demon Flurry",
+      "description": "(R1)"
+    },
+    "42": {
+      "name": "Demon Flurry",
+      "description": "(R2)"
+    },
+    "43": {
+      "name": "Demon Flurry",
+      "description": "(R3)"
+    },
+    "44": {
+      "name": "Demon Flurry",
+      "description": "(R4)"
+    },
+    "46": {
+      "name": "Demon Flurry Rush",
+      "description": "(L1)"
+    },
+    "47": {
+      "name": "Demon Flurry Rush",
+      "description": "(L2)"
+    },
+    "48": {
+      "name": "Demon Flurry Rush",
+      "description": "(L3)"
+    },
+    "49": {
+      "name": "Demon Flurry Rush",
+      "description": "(R1)"
+    },
+    "50": {
+      "name": "Demon Flurry Rush",
+      "description": "(R2)"
+    },
+    "51": {
+      "name": "Demon Flurry Rush",
+      "description": "(R3)"
+    },
+    "53": {
+      "name": "Left Roundslash",
+      "description": "(L1)"
+    },
+    "54": {
+      "name": "Left Roundslash",
+      "description": "(L2)"
+    },
+    "55": {
+      "name": "Left Roundslash",
+      "description": "(R1)"
+    },
+    "57": {
+      "name": "Right Roundslash",
+      "description": "(L1)"
+    },
+    "58": {
+      "name": "Right Roundslash",
+      "description": "(R1)"
+    },
+    "59": {
+      "name": "Right Roundslash",
+      "description": "(R2)"
+    },
+    "63": {
+      "name": "Left Double Roundslash",
+      "description": "(L1)"
+    },
+    "64": {
+      "name": "Left Double Roundslash",
+      "description": "(L2)"
+    },
+    "65": {
+      "name": "Left Double Roundslash",
+      "description": "(R1)"
+    },
+    "67": {
+      "name": "Right Double Roundslash",
+      "description": "(L1)"
+    },
+    "68": {
+      "name": "Right Double Roundslash",
+      "description": "(R1)"
+    },
+    "69": {
+      "name": "Right Double Roundslash",
+      "description": "(R2)"
+    },
+    "71": {
+      "name": "Midair Spinning Blade Dance",
+      "description": "(L1)"
+    },
+    "72": {
+      "name": "Midair Spinning Blade Dance",
+      "description": "(L2)"
+    },
+    "73": {
+      "name": "Midair Spinning Blade Dance",
+      "description": "(R1)"
+    },
+    "74": {
+      "name": "Midair Spinning Blade Dance",
+      "description": "(R2)"
+    },
+    "75": {
+      "name": "Midair Spinning Blade Dance",
+      "description": "Finisher (L1)"
+    },
+    "76": {
+      "name": "Midair Spinning Blade Dance",
+      "description": "Finisher (R1)"
+    },
+    "77": {
+      "name": "Heavenly Blade Dance",
+      "description": "(L1)"
+    },
+    "78": {
+      "name": "Heavenly Blade Dance",
+      "description": "(L2)"
+    },
+    "79": {
+      "name": "Heavenly Blade Dance",
+      "description": "(R1)"
+    },
+    "80": {
+      "name": "Heavenly Blade Dance",
+      "description": "(R2)"
+    },
+    "81": {
+      "name": "Heavenly Blade Dance",
+      "description": "Finisher (L1)"
+    },
+    "82": {
+      "name": "Heavenly Blade Dance",
+      "description": "Finisher (R1)"
+    },
+    "87": {
+      "name": "Demon Fangs",
+      "description": "(R)"
+    },
+    "88": {
+      "name": "Twofold Demon Slash",
+      "description": "(L1)"
+    },
+    "89": {
+      "name": "Twofold Demon Slash",
+      "description": "(R1)"
+    },
+    "90": {
+      "name": "Sixfold Demon Slash",
+      "description": "(L1)"
+    },
+    "91": {
+      "name": "Sixfold Demon Slash",
+      "description": "(R1)"
+    },
+    "92": {
+      "name": "Sixfold Demon Slash",
+      "description": "(L2)"
+    },
+    "93": {
+      "name": "Sixfold Demon Slash",
+      "description": "(R2)"
+    },
+    "94": {
+      "name": "Sixfold Demon Slash",
+      "description": "(L3)"
+    },
+    "95": {
+      "name": "Sixfold Demon Slash",
+      "description": "(R3)"
+    },
+    "97": {
+      "name": "Left Fade Slash",
+      "description": "(L1)"
+    },
+    "98": {
+      "name": "Right Fade Slash",
+      "description": "(R1)"
+    },
+    "109": {
+      "name": "Rising Slash",
+      "description": "(After Demon Flurry Rush)"
+    },
+    "112": {
+      "name": "Turn Slash",
+      "description": "(L1)"
+    },
+    "113": {
+      "name": "Turn Slash",
+      "description": "(R1)"
+    },
+    "120": {
+      "name": "Blade Dance",
+      "description": "(L1)"
+    },
+    "121": {
+      "name": "Blade Dance",
+      "description": "(L2)"
+    },
+    "122": {
+      "name": "Blade Dance",
+      "description": "(L3)"
+    },
+    "123": {
+      "name": "Blade Dance",
+      "description": "(L4)"
+    },
+    "124": {
+      "name": "Blade Dance",
+      "description": "(L5)"
+    },
+    "125": {
+      "name": "Blade Dance",
+      "description": "(L6)"
+    },
+    "126": {
+      "name": "Blade Dance",
+      "description": "(L7)"
+    },
+    "127": {
+      "name": "Blade Dance",
+      "description": "(L8)"
+    },
+    "129": {
+      "name": "Blade Dance",
+      "description": "(R1)"
+    },
+    "130": {
+      "name": "Blade Dance",
+      "description": "(R2)"
+    },
+    "131": {
+      "name": "Blade Dance",
+      "description": "(R3)"
+    },
+    "132": {
+      "name": "Blade Dance",
+      "description": "(R4)"
+    },
+    "133": {
+      "name": "Blade Dance",
+      "description": "(R5)"
+    },
+    "134": {
+      "name": "Blade Dance",
+      "description": "(R6)"
+    },
+    "135": {
+      "name": "Blade Dance",
+      "description": "(R7)"
+    },
+    "136": {
+      "name": "Blade Dance",
+      "description": "(R8)"
+    },
+    "140": {
+      "name": "Demon Flurry",
+      "description": "[Mounting] (L1)"
+    },
+    "141": {
+      "name": "Demon Flurry",
+      "description": "[Mounting] (L2)"
+    },
+    "142": {
+      "name": "Demon Flurry",
+      "description": "[Mounting] (L3)"
+    },
+    "143": {
+      "name": "Demon Flurry",
+      "description": "[Mounting] (L Repeated)"
+    },
+    "144": {
+      "name": "Demon Flurry",
+      "description": "[Mounting] (L Final)"
+    },
+    "146": {
+      "name": "Demon Flurry",
+      "description": "[Mounting] (R1)"
+    },
+    "147": {
+      "name": "Demon Flurry",
+      "description": "[Mounting] (R2)"
+    },
+    "148": {
+      "name": "Demon Flurry",
+      "description": "[Mounting] (R3)"
+    },
+    "149": {
+      "name": "Demon Flurry",
+      "description": "[Mounting] (R4)"
+    },
+    "150": {
+      "name": "Demon Flurry",
+      "description": "[Mounting] (R Repeated)"
+    },
+    "151": {
+      "name": "Demon Flurry",
+      "description": "[Mounting] (R Final)"
+    },
+    "155": {
+      "name": "Weapon Attack",
+      "description": "\"(L1"
+    },
+    "156": {
+      "name": "Weapon Attack",
+      "description": "(R2)"
+    },
+    "157": {
+      "name": "Weapon Attack",
+      "description": "(L2)"
+    },
+    "158": {
+      "name": "Weapon Attack",
+      "description": "(R3)"
+    },
+    "159": {
+      "name": "Weapon Attack",
+      "description": "(L Repeated)"
+    },
+    "160": {
+      "name": "Weapon Attack",
+      "description": "(R Repeated)"
+    },
+    "161": {
+      "name": "Spinning Rising Slash",
+      "description": "(L1)"
+    }
+  },
+  "wp03\\shell\\collision\\object.col": {
+    "0": {
+      "name": "Spirit Helm Breaker",
+      "description": "[Red Gauge] (2-6 Hit)"
+    },
+    "1": {
+      "name": "Spirit Helm Breaker",
+      "description": "[Red Gauge] (1st Hit)"
+    },
+    "2": {
+      "name": "Spirit Helm Breaker",
+      "description": "[Red Gauge] (7th Hit)"
+    },
+    "4": {
+      "name": "Spirit Helm Breaker",
+      "description": "[Yellow Gauge] (2-6 Hit)"
+    },
+    "5": {
+      "name": "Spirit Helm Breaker",
+      "description": "[Yellow Gauge] (1st Hit)"
+    },
+    "6": {
+      "name": "Spirit Helm Breaker",
+      "description": "[Yellow Gauge] (7th Hit)"
+    },
+    "8": {
+      "name": "Spirit Helm Breaker",
+      "description": "[White Gauge] (2-6 Hit)"
+    },
+    "9": {
+      "name": "Spirit Helm Breaker",
+      "description": "[White Gauge] (1st Hit)"
+    },
+    "10": {
+      "name": "Spirit Helm Breaker",
+      "description": "[White Gauge] (7th Hit)"
+    },
+    "12": {
+      "name": "Iai Spirit Slash",
+      "description": "[Red Gauge] (2nd Hit)"
+    },
+    "13": {
+      "name": "Iai Spirit Slash",
+      "description": "[Yellow Gauge]  (2nd Hit)"
+    },
+    "14": {
+      "name": "Iai Spirit Slash",
+      "description": "[White Gauge]  (2nd Hit)"
+    }
+  },
+  "wp03.col": {
+    "2": {
+      "name": "Jumping Spirit Blade",
+      "description": "(no gauge)"
+    },
+    "3": {
+      "name": "Jumping Spirit Blade II",
+      "description": "(1st Hit)"
+    },
+    "4": {
+      "name": "Jumping Spirit Blade II",
+      "description": "(1st Hit) (no gauge)"
+    },
+    "7": {
+      "name": "Spirit Jumping Slash",
+      "description": "(no gauge)"
+    },
+    "11": {
+      "name": "Thrust",
+      "description": "(between Spirit Blade)"
+    },
+    "16": {
+      "name": "Spirit Blade I",
+      "description": "(no gauge)"
+    },
+    "18": {
+      "name": "Spirit Blade III",
+      "description": "(1st Hit)"
+    },
+    "20": {
+      "name": "Jumping Spirit Blade II",
+      "description": "(2nd Hit)"
+    },
+    "21": {
+      "name": "Jumping Spirit Blade II",
+      "description": "(2nd Hit) (no gauge)"
+    },
+    "23": {
+      "name": "Spirit Blade III",
+      "description": "(2nd Hit)"
+    },
+    "24": {
+      "name": "Spirit Blade III",
+      "description": "(3rd Hit)"
+    },
+    "32": {
+      "name": "Jumping Spirit Blade III",
+      "description": "(3rd Hit)"
+    },
+    "33": {
+      "name": "Spirit Storm",
+      "description": "[Mounting] (1st Hit)"
+    },
+    "34": {
+      "name": "Spirit Storm",
+      "description": "[Mounting] (2nd Hit)"
+    },
+    "35": {
+      "name": "Spirit Storm",
+      "description": "[Mounting] (3rd Hit)"
+    },
+    "36": {
+      "name": "Spirit Storm",
+      "description": "[Mounting] [Head] (Finisher 1)"
+    },
+    "37": {
+      "name": "Spirit Storm",
+      "description": "[Mounting] [Body] (Finisher)"
+    },
+    "38": {
+      "name": "Spirit Storm",
+      "description": "[Mounting] [Tail] (Finisher)"
+    },
+    "43": {
+      "name": "Iai Slash",
+      "description": "(1st Hit)"
+    },
+    "44": {
+      "name": "Iai Slash",
+      "description": "(2nd Hit)"
+    },
+    "46": {
+      "name": "Iai Spirit Slash",
+      "description": "[No Gauge] (1st Hit)"
+    },
+    "47": {
+      "name": "Iai Spirit Slash",
+      "description": "[White Gauge] (1st Hit)"
+    },
+    "48": {
+      "name": "Iai Spirit Slash",
+      "description": "[Yellow Gauge] (1st Hit)"
+    },
+    "49": {
+      "name": "Iai Spirit Slash",
+      "description": "[Red Gauge] (1st Hit)"
+    },
+    "55": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (1st Hit)"
+    },
+    "57": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (Repeated)"
+    }
+  },
+  "wp12\\shell\\collision\\object.col": {
+    "14": {
+      "name": "Wyvern Ammo ",
+      "description": "1st hit"
+    },
+    "15": {
+      "name": "Wyvern Ammo (Small)",
+      "description": "2nd hit"
+    },
+    "20": {
+      "name": "Slicing Ammo Projectile",
+      "description": "Hit"
+    },
+    "21": {
+      "name": "Slicing Ammo",
+      "description": "Sever "
+    },
+    "72": {
+      "name": "LBG Clutch Claw Attack Main Hit",
+      "description": "1st hit"
+    },
+    "73": {
+      "name": "LBG Clutch Claw Attack Explosion",
+      "description": "2nd hit"
+    }
+  },
+  "wp12.col": {
+    "1": {
+      "name": "Fire",
+      "description": "[Mounting][Head]"
+    },
+    "2": {
+      "name": "Fire",
+      "description": "[Mounting][Back]"
+    },
+    "3": {
+      "name": "Fire",
+      "description": "[Mounting][Tail]"
+    }
+  },
+  "wp13.col": {
+    "1": {
+      "name": "Fire",
+      "description": "[Mounting][Head]"
+    },
+    "2": {
+      "name": "Fire",
+      "description": "[Mounting][Back]"
+    },
+    "3": {
+      "name": "Fire",
+      "description": "[Mounting][Tail]"
+    },
+    "5": {
+      "name": "Fire",
+      "description": "[Mounting][Head]Weak"
+    },
+    "6": {
+      "name": "Fire",
+      "description": "[Mounting][Back]Weak"
+    }
+  }
+}
