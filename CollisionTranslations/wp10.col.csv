@@ -1,0 +1,76 @@
+﻿Move_Id,untranslate,translated,description
+0,けさ斬り,Reaping Slash,
+1,二段斬り,Double Slash,(1st Hit)
+2,叩きつけ,Overhead Slash,
+3,突き,Thrust,
+4,飛び込み斬り,Leaping Slash,
+5,なぎ払い,Wide Sweep,/ Strong Wide Sweep (2nd Hit)
+6,回避斬り,Dodge Slash,
+7,連続斬り上げ,Rising Slash,(1st Hit)
+8,強化けさ斬り,Strong Reaping Slash,(1st Hit)
+9,強化二段斬り,Strong Double Slash,(1st Hit)
+10,飛円斬り,Tornade Slash,(1st Hit)
+11,強化突き,Strong Thrust,(1st Hit)
+12,強化なぎ払い,Strong Wide Sweep,(1st Hit)
+13,強化連続斬り上げ,Strong Rising Slash Combo,(1st Hit)
+14,ジャンプ斬り,Jumping Slash,
+15,,,
+16,印当て（マーキング攻撃）,Kinsect,(Mark Target)
+17,印弾,,guess dummy
+18,猟虫【エキス採取】,,guess dummy
+19,虫回転攻撃,,guess dummy
+20,連続斬り上げ２,Rising Slash,(2nd Hit)
+21,強化けさ斬り２,Strong Reaping Slash,(2nd Hit)
+22,強化連続斬り上げ２,Strong Rising Slash Combo,(2nd Hit)
+23,強化連続斬り上げ３,Strong Rising Slash Combo,(3rd Hit)
+24,強化二段斬り２,Strong Double Slash,(2nd Hit)
+25,強化二段斬り３,Strong Double Slash,(3rd Hit)
+26,,,
+27,飛円斬り２,Tornade Slash,(2nd Hit)
+28,,,
+29,,,
+30,二段斬り２,Double Slash,(2nd Hit)
+31,強化突き２,Strong Thrust,(2nd Hit)
+32,強化なぎ払い２,,guess dummy
+33,強化連続斬り上げのつなぎ,,Bridging Slash between Strong Wide Sweep and Strong Rising Slash
+34,,,
+35,空中突進斬り,Jumping Advancing Slash,
+36,強化垂直空中斬り,Strong Jumping Slash,
+37,,,
+38,頭乗り攻撃１＆２,Slash Flurry,[Mounting] [Head] (1st Hit)
+39,頭乗り攻撃３＆４,Slash Flurry,[Mounting] [Head] (2nd and 3rd Hit)
+40,頭乗り攻撃フィニッシュ,Slash Flurry,[Mounting] [Head] (4th Hit)
+41,,,
+42,背乗り攻撃１＆２,Slash Flurry,[Mounting] [Body] (1st Hit)
+43,背乗り攻撃３＆４,Slash Flurry,[Mounting] [Body] (2nd and 3rd Hit)
+44,背乗り攻撃フィニッシュ,Slash Flurry,[Mounting] [Body] (4th Hit)
+45,,,
+46,尾乗り攻撃１＆２,Slash Flurry,[Mounting] [Tail] (1st Hit)
+47,尾乗り攻撃３＆４,Slash Flurry,[Mounting] [Tail] (2nd and 3rd Hit)
+48,尾乗り攻撃フィニッシュ,Slash Flurry,[Mounting] [Tail] (4th Hit)
+49,,,
+50,乗り移動攻撃出,Flying Slash,[Mounting] (1st Hit)
+51,乗り移動攻撃中_前,Flying Slash,[Mounting] (2nd Hit)
+52,乗り移動攻撃中_後,Flying Slash,[Mounting] (3rd Hit)
+53,乗り移動攻撃着,Flying Slash,[Mounting] (4th Hit)
+54,,,
+55,強化空中突進斬り１,Strong Jumping Advancing Slash,(1st Hit)
+56,強化空中突進斬り２,Strong Jumping Advancing Slash,(2nd Hit)
+57,強化空中突進斬り３,Strong Jumping Advancing Slash,(3rd Hit)
+58,強化空中突進斬り４,Strong Jumping Advancing Slash,(4th Hit)
+59,強化空中突進斬り５,Strong Jumping Advancing Slash,(5th Hit)
+60,強化空中突進斬りフィニッシュ,Strong Jumping Advancing Slash,(Finisher)
+61,,,
+62,,,
+63,空中必殺ヒット空中,Descending Thrust,(Midair)
+64,空中必殺ヒット着地,Descending Thrust,(Landing)
+65,,,
+66,空中必殺ヒットフィニッシュ,Descending Thrust,Finisher (2nd Hit)
+67,空中必殺・印当て,Descending Thrust,Finisher (1st Hit)
+68,,,
+69,,,
+70,クローくっ付き攻撃１,Weapon Attack,[Clutching] (1st Hit)
+71,クローくっ付き攻撃２,Weapon Attack,[Clutching] (2nd Hit)
+72,クローくっ付き攻撃３,Weapon Attack,[Clutching] (3rd Hit)
+73,クローくっ付き攻撃４,Weapon Attack,[Clutching] (4th Hit)
+74,クローくっ突き攻撃フィニッシュ,Weapon Attack,[Clutching] (5th Hit)

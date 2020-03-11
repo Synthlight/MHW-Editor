@@ -1,0 +1,33 @@
+﻿Move_Id,untranslate,translated,description
+0,中段突き１,Mid Thrust I,
+1,中段突き２,Mid Thrust II,
+2,中段突き３,Mid Thrust III,
+3,上段突き１,High Thrust I,/ Cancel Thrust
+4,上段突き２,High Thrust II,
+5,上段突き３,High Thrust III,
+6,なぎ払い,Wide Sweep I,/II/III
+7,ジャンプ突き,Jumping Thrust,/ Advancing Jump Thrust
+8,突進ジャンプ突き,,guess dummy
+9,抜刀攻撃,,guess dummy
+10,ガード突き,Guard Thrust,
+11,突進,Dash Attack,
+12,空中時の突進,Dash Attack,(MidAir)
+13,フィニッシュ突き,Finishing Thrust,
+14,振り向き攻撃,Reverse Attack,
+15,カウンター突き溜めきり,Counter-thrust,
+16,強突き,Leaping Thrust,
+17,強フィニッシュ突き１,Finishing Twin Thrust,(1st Hit)
+18,強フィニッシュ突き２,Finishing Twin Thrust,(2nd Hit)
+19,,,
+20,頭乗り攻撃１,Finishing Thrust,[Mounting] [Head] (1st Hit)
+21,頭乗り攻撃２,Finishing Thrust,[Mounting] [Head] (2nd Hit)
+22,頭乗り攻撃３,Finishing Thrust,[Mounting] [Head] (3rd Hit)
+23,背乗り攻撃１,Finishing Thrust,[Mounting] [Body] (1st Hit)
+24,背乗り攻撃２,Finishing Thrust,[Mounting] [Body] (2nd Hit)
+25,背乗り攻撃３,Finishing Thrust,[Mounting] [Body] (3rd Hit)
+26,尾乗り攻撃１,Finishing Thrust,[Mounting] [Tail] (1st Hit)
+27,尾乗り攻撃２,Finishing Thrust,[Mounting] [Tail] (2nd Hit)
+28,尾乗り攻撃３,Finishing Thrust,[Mounting] [Tail] (3rd Hit)
+29,,,
+30,クローコンスト攻撃１,Weapon Attack,[Clutching] (1st Hit)
+31,クローコンスト攻撃２,Weapon Attack,[Clutching] (2nd Hit)

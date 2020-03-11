@@ -1,0 +1,62 @@
+﻿Move_Id,untranslate,translated,description
+0,振り上げ,,guess dummy
+1,縦振り,Overhead Smash I,
+2,縦振り２,Overhead Smash II,
+3,横振り,Side Smash,/ Spinning Side Smash
+4,アッパー,Upswing,/ Spinning Strong Upswing
+5,溜め１攻撃,Charged Side Blow,
+6,溜め１追加攻撃,Charged Follow-up,
+7,溜め２攻撃,Charged Upswing,
+8,溜め３攻撃,Charged Big Bang,(2nd Hit)
+9,スピンループ,Spinning Bludgeon,(Spinning)
+10,スピンフィニッシュ１,Spinning Follow-up,Charged Follow-up (Power Charge)
+11,スピンフィニッシュ２,,guess dummy
+12,ジャンプ溜め攻撃１,Charged Jump Attack,Lv1
+13,ジャンプ溜め攻撃２,Charged Jump Attack,Lv2
+14,ジャンプ溜め攻撃３,Charged Jump Attack,Lv3
+15,溜め３攻撃初撃,Charged Big Bang,(1st Hit)
+16,スピン初段,Spinning Bludgeon,(1st Hit)
+17,スピン終了,Spinning Swing,
+18,ジャンプ攻撃,Jumping Smash,
+19,,,
+20,新抜刀攻撃１,Swing,
+21,新抜刀攻撃２,Backswing,
+22,,,
+23,スラ溜め攻撃ループ,Midair Spinning Bludgeon,(Spinning)
+24,スラ溜め攻撃フィニッシュ,Midair Spinning Bludgeon,(Final Hit)
+25,顏乗り攻撃Lv1,Charged Attack,[Mounting] [Head] Lv1
+26,顏乗り攻撃Lv2,Charged Attack,[Mounting] [Head] Lv2
+27,顏乗り攻撃Lv3,Charged Attack,[Mounting] [Head] Lv3
+28,背中乗り攻撃Lv1,Charged Attack,[Mounting] [Body] Lv1
+29,背中乗り攻撃Lv2,Charged Attack,[Mounting] [Body] Lv2
+30,背中乗り攻撃Lv3,Charged Attack,[Mounting] [Body] Lv3
+31,尻尾乗り攻撃Lv1,Charged Attack,[Mounting] [Tail] Lv1 (1st Hit)
+32,尻尾乗り攻撃Lv2,Charged Attack,[Mounting] [Tail] Lv2 (1st Hit)
+33,尻尾乗り攻撃Lv3,Charged Attack,[Mounting] [Tail] Lv3 (1st Hit)
+34,尻尾乗り攻撃2Lv1,Charged Attack,[Mounting] [Tail] Lv1 (2nd Hit)
+35,尻尾乗り攻撃2Lv2,Charged Attack,[Mounting] [Tail] Lv2 (2nd Hit)
+36,尻尾乗り攻撃2Lv3,Charged Attack,[Mounting] [Tail] Lv3 (2nd Hit)
+37,,,
+38,,,
+39,,,
+40,溜め２強化アッパー,Charged Brutal Upswing,
+41,溜め３強化攻撃初撃,Charged Brutal Big Bang,(1st and 2nd Hit)
+42,溜め３強化攻撃フィニッシュ,Charged Brutal Big Bang,(Final Hit)
+43,,,
+44,,,
+45,餅つき1,Big Bang I,/ Big Bang Finisher (1st and 2nd Hit)
+46,餅つき2,Big Bang II,
+47,餅つき3,Big Bang III,
+48,餅つき4,Big Bang IV,
+49,餅つきフィニッシュ,Big Bang Finisher,(3rd Hit)
+50,,,
+51,,,
+52,,,
+53,,,
+54,溜め２クローヒット大回転,,guess dummy
+55,溜め３クローヒット大回転,Spinning Flying Smash,
+56,クローヒット大回転フィニッシュ,Flying Smash,/ Spinning Flying Smash Finisher
+57,,,
+58,,,
+59,クローくっつき1段目,Weapon Attack,[Clutching] (1st Hit)
+60,クローくっつき2段目,Weapon Attack,[Clutching] (2nd Hit)

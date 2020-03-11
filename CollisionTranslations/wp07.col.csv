@@ -1,0 +1,30 @@
+﻿Move_Id,untranslate,translated,description
+0,ジャンプ突き,Jumping Thrust,
+1,ジャンプ叩き付け,Jumping Smash,/ Jumping Smash (2nd Hit)
+2,駆け上がり薙ぎ払い,Jumping Smash,(1st Hit)
+3,ダッシュ突き上げ,Lunging Upthrust,
+4,,,
+5,前方突き,Lateral Thrust,
+6,上方突き,Guard Thrust,
+7,,,
+8,斬り上げ,Rising Slash,
+9,叩き付け,Overhead Smash,
+10,強薙ぎ払い,Wide Sweep,
+11,空中強薙ぎ払い,,guess dummy
+12,,,
+13,,,
+14,パイル突き１,Wyrmstake Cannon,(1st Hit)
+15,パイル突き２,Wyrmstake Cannon,(2nd Hit)
+16,,,
+17,スライディング斬り上げ,,guess dummy
+18,ジャンプ斬り上げ,Jumping Rising Slash,
+19,,,
+20,乗り頭・突き,Burst Fire,[Mounting] [Head] (Thrust)
+21,乗り胴・突き,Burst Fire,[Mounting] [Body] (Thrust)
+22,乗り尾・突き,Burst Fire,[Mounting] [Tail] (Thrust)
+23,乗り・フルバ途中,Burst Fire,guess dummy
+24,乗り頭・フルバフィニッシュ,Burst Fire,guess dummy
+25,乗り胴・フルバフィニッシュ,Burst Fire,guess dummy
+26,乗り尾・フルバフィニッシュ,Burst Fire,guess dummy
+27,,,
+28,クローコンスト攻撃,Weapon Attack,[Clutching] (1st Hit)

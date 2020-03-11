@@ -1,5 +1,81 @@
 {
+  "claw\\shell\\collision\\object.col": {
+    "1": {
+      "name": "Claw Shot",
+      "description": ""
+    },
+    "3": {
+      "name": "Special Claw Attack",
+      "description": "(Dual Blades)"
+    },
+    "4": {
+      "name": "Clutch Claw",
+      "description": "(Hammer)"
+    },
+    "5": {
+      "name": "Counter Claw",
+      "description": "(Lance) (1st Hit)"
+    }
+  },
+  "claw_00.col": {
+    "0": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "1": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "2": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "3": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "4": {
+      "name": "Claw Attack",
+      "description": "[Clutching] Left"
+    },
+    "5": {
+      "name": "Claw Attack",
+      "description": "[Clutching] Right"
+    },
+    "11": {
+      "name": "Claw Uppercut",
+      "description": "(Sword & Shield)"
+    },
+    "20": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "21": {
+      "name": "Midair Claw Attack",
+      "description": "(Insect Glaive)"
+    },
+    "-1": {
+      "name": "",
+      "description": "guess dummy"
+    }
+  },
   "wp00.col": {
+    "0": {
+      "name": "Overhead Slash",
+      "description": ""
+    },
+    "1": {
+      "name": "Wide Slash",
+      "description": ""
+    },
+    "2": {
+      "name": "Rising Slash",
+      "description": ""
+    },
+    "3": {
+      "name": "Side Blow",
+      "description": ""
+    },
     "4": {
       "name": "Charged Slash",
       "description": "Lv1"
@@ -24,6 +100,10 @@
       "name": "Strong Charged Slash",
       "description": "Lv3"
     },
+    "11": {
+      "name": "",
+      "description": "guess dummy"
+    },
     "12": {
       "name": "Strong Wide Slash",
       "description": "Lv1"
@@ -35,6 +115,14 @@
     "14": {
       "name": "Strong Wide Slash",
       "description": "Lv3"
+    },
+    "15": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "16": {
+      "name": "",
+      "description": "guess dummy"
     },
     "17": {
       "name": "True Charge Slash",
@@ -168,6 +256,10 @@
       "name": "Plunging Thrust",
       "description": "Lv3"
     },
+    "56": {
+      "name": "",
+      "description": "guess dummy"
+    },
     "58": {
       "name": "Side Blow",
       "description": "(after Strong Charged Slash)"
@@ -219,9 +311,21 @@
     "73": {
       "name": "True Charged Slash (Power)",
       "description": "Lv3"
+    },
+    "74": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "75": {
+      "name": "",
+      "description": "guess dummy"
     }
   },
   "wp00_01.col": {
+    "0": {
+      "name": "Kick",
+      "description": ""
+    },
     "1": {
       "name": "Tackle",
       "description": "Lv1"
@@ -233,9 +337,65 @@
     "3": {
       "name": "Tackle",
       "description": "Lv3"
+    },
+    "4": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "5": {
+      "name": "",
+      "description": "guess dummy"
     }
   },
   "wp01.col": {
+    "0": {
+      "name": "Chop",
+      "description": ""
+    },
+    "1": {
+      "name": "Side Slash",
+      "description": ""
+    },
+    "3": {
+      "name": "Round Slash",
+      "description": ""
+    },
+    "4": {
+      "name": "Lateral Slash",
+      "description": ""
+    },
+    "5": {
+      "name": "Return Stroke",
+      "description": ""
+    },
+    "8": {
+      "name": "Rising Slash",
+      "description": ""
+    },
+    "9": {
+      "name": "Jumping Rising Slash",
+      "description": ""
+    },
+    "10": {
+      "name": "Jumping Advancing Slash",
+      "description": ""
+    },
+    "11": {
+      "name": "Jumping Slash",
+      "description": ""
+    },
+    "12": {
+      "name": "Advancing Slash",
+      "description": ""
+    },
+    "13": {
+      "name": "Thrust",
+      "description": ""
+    },
+    "14": {
+      "name": "Guard Slash",
+      "description": ""
+    },
     "15": {
       "name": "Sword/Shield Combo",
       "description": "(Sword)"
@@ -280,6 +440,26 @@
       "name": "Sliding Slash",
       "description": "(2nd Hit)"
     },
+    "32": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "33": {
+      "name": "Scaling Slash",
+      "description": ""
+    },
+    "34": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "36": {
+      "name": "Helm Breaker",
+      "description": ""
+    },
+    "38": {
+      "name": "Leaping Slash",
+      "description": ""
+    },
     "39": {
       "name": "Perfect Rush I",
       "description": "(2nd Hit)"
@@ -287,6 +467,14 @@
     "40": {
       "name": "Perfect Rush I",
       "description": "(3rd Hit)"
+    },
+    "41": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "42": {
+      "name": "",
+      "description": "guess dummy"
     },
     "43": {
       "name": "Weapon Attack",
@@ -303,6 +491,14 @@
     "46": {
       "name": "Weapon Attack",
       "description": "[Clutching] (4th Hit)"
+    },
+    "47": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "48": {
+      "name": "",
+      "description": "guess dummy"
     },
     "49": {
       "name": "Perfect Rush III",
@@ -330,9 +526,25 @@
       "name": "Sword/Shield Combo",
       "description": "(Shield)"
     },
+    "1": {
+      "name": "Shield Attack",
+      "description": ""
+    },
+    "2": {
+      "name": "Shield Bash",
+      "description": ""
+    },
     "3": {
       "name": "Charged Slash",
       "description": "(1st Hit)"
+    },
+    "4": {
+      "name": "Hard Bash",
+      "description": ""
+    },
+    "5": {
+      "name": "Short Shield Bash",
+      "description": ""
     },
     "10": {
       "name": "Triple Strikes",
@@ -346,6 +558,10 @@
       "name": "Triple Strikes",
       "description": "[Mounting] [Tail] (Shield)"
     },
+    "14": {
+      "name": "Falling Bash",
+      "description": ""
+    },
     "15": {
       "name": "Falling Bash",
       "description": "(Landing)"
@@ -353,6 +569,14 @@
     "17": {
       "name": "Perfect Rush I",
       "description": "(1st Hit)"
+    },
+    "18": {
+      "name": "Perfect Rush II",
+      "description": ""
+    },
+    "19": {
+      "name": "",
+      "description": "guess dummy"
     },
     "20": {
       "name": "Perfect Rush I",
@@ -457,6 +681,22 @@
     "31": {
       "name": "Spinning Blade Dance",
       "description": "Finisher (R2)"
+    },
+    "33": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "34": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "35": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "36": {
+      "name": "",
+      "description": "guess dummy"
     },
     "38": {
       "name": "Demon Flurry",
@@ -650,9 +890,21 @@
       "name": "Right Fade Slash",
       "description": "(R1)"
     },
+    "100": {
+      "name": "",
+      "description": "guess dummy"
+    },
     "109": {
       "name": "Rising Slash",
       "description": "(After Demon Flurry Rush)"
+    },
+    "110": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "111": {
+      "name": "",
+      "description": "guess dummy"
     },
     "112": {
       "name": "Turn Slash",
@@ -850,6 +1102,14 @@
     }
   },
   "wp03.col": {
+    "0": {
+      "name": "Jumping Slash",
+      "description": ""
+    },
+    "1": {
+      "name": "Jumping Spirit Blade",
+      "description": ""
+    },
     "2": {
       "name": "Jumping Spirit Blade",
       "description": "(no gauge)"
@@ -862,21 +1122,65 @@
       "name": "Jumping Spirit Blade II",
       "description": "(1st Hit) (no gauge)"
     },
+    "5": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "6": {
+      "name": "Spirit Jumping Slash",
+      "description": ""
+    },
     "7": {
       "name": "Spirit Jumping Slash",
       "description": "(no gauge)"
+    },
+    "8": {
+      "name": "Step Slash",
+      "description": ""
+    },
+    "9": {
+      "name": "Overhead Slash",
+      "description": ""
+    },
+    "10": {
+      "name": "Thrust",
+      "description": ""
     },
     "11": {
       "name": "Thrust",
       "description": "(between Spirit Blade)"
     },
+    "12": {
+      "name": "Rising Slash",
+      "description": ""
+    },
+    "13": {
+      "name": "Fade Slash",
+      "description": ""
+    },
+    "14": {
+      "name": "Lateral Fade Slash",
+      "description": ""
+    },
+    "15": {
+      "name": "Spirit Blade I",
+      "description": ""
+    },
     "16": {
       "name": "Spirit Blade I",
       "description": "(no gauge)"
     },
+    "17": {
+      "name": "Spirit Blade II",
+      "description": ""
+    },
     "18": {
       "name": "Spirit Blade III",
       "description": "(1st Hit)"
+    },
+    "19": {
+      "name": "Spirit Roundslash",
+      "description": ""
     },
     "20": {
       "name": "Jumping Spirit Blade II",
@@ -893,6 +1197,30 @@
     "24": {
       "name": "Spirit Blade III",
       "description": "(3rd Hit)"
+    },
+    "25": {
+      "name": "Foresight Slash",
+      "description": ""
+    },
+    "26": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "27": {
+      "name": "Spirit Thrust",
+      "description": ""
+    },
+    "28": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "29": {
+      "name": "Jumping Rising Slash",
+      "description": ""
+    },
+    "30": {
+      "name": "Aerial Draw Spirit Blade",
+      "description": ""
     },
     "32": {
       "name": "Jumping Spirit Blade III",
@@ -922,6 +1250,18 @@
       "name": "Spirit Storm",
       "description": "[Mounting] [Tail] (Finisher)"
     },
+    "39": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "40": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "41": {
+      "name": "",
+      "description": "[Mounting] [Head] (Finisher 2)"
+    },
     "43": {
       "name": "Iai Slash",
       "description": "(1st Hit)"
@@ -946,75 +1286,1851 @@
       "name": "Iai Spirit Slash",
       "description": "[Red Gauge] (1st Hit)"
     },
+    "51": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "52": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "53": {
+      "name": "",
+      "description": "guess dummy"
+    },
     "55": {
       "name": "Weapon Attack",
       "description": "[Clutching] (1st Hit)"
+    },
+    "56": {
+      "name": "",
+      "description": "guess dummy"
     },
     "57": {
       "name": "Weapon Attack",
       "description": "[Clutching] (Repeated)"
     }
   },
-  "wp12\\shell\\collision\\object.col": {
+  "wp04.col": {
+    "0": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "1": {
+      "name": "Overhead Smash I",
+      "description": ""
+    },
+    "2": {
+      "name": "Overhead Smash II",
+      "description": ""
+    },
+    "3": {
+      "name": "Side Smash",
+      "description": "/ Spinning Side Smash"
+    },
+    "4": {
+      "name": "Upswing",
+      "description": "/ Spinning Strong Upswing"
+    },
+    "5": {
+      "name": "Charged Side Blow",
+      "description": ""
+    },
+    "6": {
+      "name": "Charged Follow-up",
+      "description": ""
+    },
+    "7": {
+      "name": "Charged Upswing",
+      "description": ""
+    },
+    "8": {
+      "name": "Charged Big Bang",
+      "description": "(2nd Hit)"
+    },
+    "9": {
+      "name": "Spinning Bludgeon",
+      "description": "(Spinning)"
+    },
+    "10": {
+      "name": "Spinning Follow-up",
+      "description": "Charged Follow-up (Power Charge)"
+    },
+    "11": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "12": {
+      "name": "Charged Jump Attack",
+      "description": "Lv1"
+    },
+    "13": {
+      "name": "Charged Jump Attack",
+      "description": "Lv2"
+    },
     "14": {
-      "name": "Wyvern Ammo ",
-      "description": "1st hit"
+      "name": "Charged Jump Attack",
+      "description": "Lv3"
     },
     "15": {
-      "name": "Wyvern Ammo (Small)",
-      "description": "2nd hit"
+      "name": "Charged Big Bang",
+      "description": "(1st Hit)"
+    },
+    "16": {
+      "name": "Spinning Bludgeon",
+      "description": "(1st Hit)"
+    },
+    "17": {
+      "name": "Spinning Swing",
+      "description": ""
+    },
+    "18": {
+      "name": "Jumping Smash",
+      "description": ""
     },
     "20": {
-      "name": "Slicing Ammo Projectile",
-      "description": "Hit"
+      "name": "Swing",
+      "description": ""
+    },
+    "21": {
+      "name": "Backswing",
+      "description": ""
+    },
+    "23": {
+      "name": "Midair Spinning Bludgeon",
+      "description": "(Spinning)"
+    },
+    "24": {
+      "name": "Midair Spinning Bludgeon",
+      "description": "(Final Hit)"
+    },
+    "25": {
+      "name": "Charged Attack",
+      "description": "[Mounting] [Head] Lv1"
+    },
+    "26": {
+      "name": "Charged Attack",
+      "description": "[Mounting] [Head] Lv2"
+    },
+    "27": {
+      "name": "Charged Attack",
+      "description": "[Mounting] [Head] Lv3"
+    },
+    "28": {
+      "name": "Charged Attack",
+      "description": "[Mounting] [Body] Lv1"
+    },
+    "29": {
+      "name": "Charged Attack",
+      "description": "[Mounting] [Body] Lv2"
+    },
+    "30": {
+      "name": "Charged Attack",
+      "description": "[Mounting] [Body] Lv3"
+    },
+    "31": {
+      "name": "Charged Attack",
+      "description": "[Mounting] [Tail] Lv1 (1st Hit)"
+    },
+    "32": {
+      "name": "Charged Attack",
+      "description": "[Mounting] [Tail] Lv2 (1st Hit)"
+    },
+    "33": {
+      "name": "Charged Attack",
+      "description": "[Mounting] [Tail] Lv3 (1st Hit)"
+    },
+    "34": {
+      "name": "Charged Attack",
+      "description": "[Mounting] [Tail] Lv1 (2nd Hit)"
+    },
+    "35": {
+      "name": "Charged Attack",
+      "description": "[Mounting] [Tail] Lv2 (2nd Hit)"
+    },
+    "36": {
+      "name": "Charged Attack",
+      "description": "[Mounting] [Tail] Lv3 (2nd Hit)"
+    },
+    "40": {
+      "name": "Charged Brutal Upswing",
+      "description": ""
+    },
+    "41": {
+      "name": "Charged Brutal Big Bang",
+      "description": "(1st and 2nd Hit)"
+    },
+    "42": {
+      "name": "Charged Brutal Big Bang",
+      "description": "(Final Hit)"
+    },
+    "45": {
+      "name": "Big Bang I",
+      "description": "/ Big Bang Finisher (1st and 2nd Hit)"
+    },
+    "46": {
+      "name": "Big Bang II",
+      "description": ""
+    },
+    "47": {
+      "name": "Big Bang III",
+      "description": ""
+    },
+    "48": {
+      "name": "Big Bang IV",
+      "description": ""
+    },
+    "49": {
+      "name": "Big Bang Finisher",
+      "description": "(3rd Hit)"
+    },
+    "54": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "55": {
+      "name": "Spinning Flying Smash",
+      "description": ""
+    },
+    "56": {
+      "name": "Flying Smash",
+      "description": "/ Spinning Flying Smash Finisher"
+    },
+    "59": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (1st Hit)"
+    }
+  },
+  "wp05\\shell\\collision\\object.col": {
+    "0": {
+      "name": "Shockwave",
+      "description": ""
+    },
+    "3": {
+      "name": "\"Echo Wave \"\"Impact\"\"\"",
+      "description": "Lv1"
+    },
+    "4": {
+      "name": "\"Echo Wave \"\"Impact\"\"\"",
+      "description": "Lv2"
+    },
+    "5": {
+      "name": "\"Echo Wave \"\"Impact\"\"\"",
+      "description": "Lv3"
+    },
+    "6": {
+      "name": "\"Echo Wave \"\"Dragon\"\"\"",
+      "description": "Lv1"
+    },
+    "7": {
+      "name": "\"Echo Wave \"\"Dragon\"\"\"",
+      "description": "Lv2"
+    }
+  },
+  "wp05.col": {
+    "1": {
+      "name": "Right Swing",
+      "description": ""
+    },
+    "2": {
+      "name": "Right Swing",
+      "description": ""
+    },
+    "3": {
+      "name": "Forward Swing",
+      "description": ""
+    },
+    "4": {
+      "name": "Backward Slam",
+      "description": ""
+    },
+    "5": {
+      "name": "Handle Poke",
+      "description": "/ Echo Attack (Initial Hit)"
+    },
+    "6": {
+      "name": "Forward Slam",
+      "description": "(1st Hit)"
+    },
+    "7": {
+      "name": "Forward Slam",
+      "description": "(2nd Hit)"
+    },
+    "8": {
+      "name": "Double Right Swing",
+      "description": "(1st Hit)"
+    },
+    "9": {
+      "name": "Double Right Swing",
+      "description": "(2nd Hit)"
+    },
+    "12": {
+      "name": "Performance",
+      "description": "(Stay)"
+    },
+    "13": {
+      "name": "Performance",
+      "description": "(Forward)"
+    },
+    "14": {
+      "name": "Performance",
+      "description": "(Backward)"
+    },
+    "15": {
+      "name": "Performance",
+      "description": "(Left)"
+    },
+    "16": {
+      "name": "Performance",
+      "description": "(Right)"
+    },
+    "17": {
+      "name": "Performance",
+      "description": "(upward 1)"
+    },
+    "18": {
+      "name": "Performance",
+      "description": "(upward 2)"
+    },
+    "20": {
+      "name": "Encore",
+      "description": "(start with >3 note)"
+    },
+    "21": {
+      "name": "Encore",
+      "description": "(Stay)"
+    },
+    "22": {
+      "name": "Encore",
+      "description": "(Forward)"
+    },
+    "23": {
+      "name": "Encore",
+      "description": "(Left)"
+    },
+    "24": {
+      "name": "Encore",
+      "description": "(Right)"
+    },
+    "25": {
+      "name": "Encore",
+      "description": "(Backward)"
+    },
+    "28": {
+      "name": "Jumping Strong Overhead Smash",
+      "description": ""
+    },
+    "29": {
+      "name": "MidAir Performance",
+      "description": ""
+    },
+    "31": {
+      "name": "Overhead Smash",
+      "description": "[Mounting] [Head] (Repeated)"
+    },
+    "32": {
+      "name": "Overhead Smash",
+      "description": "[Mounting] [Head] (Final Hit)"
+    },
+    "33": {
+      "name": "Overhead Smash",
+      "description": "[Mounting] [Body] (Repeated)"
+    },
+    "34": {
+      "name": "Overhead Smash",
+      "description": "[Mounting] [Body] (Final Hit)"
+    },
+    "35": {
+      "name": "Overhead Smash",
+      "description": "[Mounting] [Tail] (Repeated)"
+    },
+    "36": {
+      "name": "Overhead Smash",
+      "description": "[Mounting] [Tail] (Final Hit)"
+    },
+    "38": {
+      "name": "Echo Attack",
+      "description": "(Spin)"
+    },
+    "40": {
+      "name": "Weapon Attack",
+      "description": "(1st Hit)"
+    },
+    "41": {
+      "name": "Weapon Attack",
+      "description": "(2nd Hit)"
+    }
+  },
+  "wp06.col": {
+    "0": {
+      "name": "Mid Thrust I",
+      "description": ""
+    },
+    "1": {
+      "name": "Mid Thrust II",
+      "description": ""
+    },
+    "2": {
+      "name": "Mid Thrust III",
+      "description": ""
+    },
+    "3": {
+      "name": "High Thrust I",
+      "description": "/ Cancel Thrust"
+    },
+    "4": {
+      "name": "High Thrust II",
+      "description": ""
+    },
+    "5": {
+      "name": "High Thrust III",
+      "description": ""
+    },
+    "6": {
+      "name": "Wide Sweep I",
+      "description": "/II/III"
+    },
+    "7": {
+      "name": "Jumping Thrust",
+      "description": "/ Advancing Jump Thrust"
+    },
+    "8": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "9": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "10": {
+      "name": "Guard Thrust",
+      "description": ""
+    },
+    "11": {
+      "name": "Dash Attack",
+      "description": ""
+    },
+    "12": {
+      "name": "Dash Attack",
+      "description": "(MidAir)"
+    },
+    "13": {
+      "name": "Finishing Thrust",
+      "description": ""
+    },
+    "14": {
+      "name": "Reverse Attack",
+      "description": ""
+    },
+    "15": {
+      "name": "Counter-thrust",
+      "description": ""
+    },
+    "16": {
+      "name": "Leaping Thrust",
+      "description": ""
+    },
+    "17": {
+      "name": "Finishing Twin Thrust",
+      "description": "(1st Hit)"
+    },
+    "18": {
+      "name": "Finishing Twin Thrust",
+      "description": "(2nd Hit)"
+    },
+    "20": {
+      "name": "Finishing Thrust",
+      "description": "[Mounting] [Head] (1st Hit)"
+    },
+    "21": {
+      "name": "Finishing Thrust",
+      "description": "[Mounting] [Head] (2nd Hit)"
+    },
+    "22": {
+      "name": "Finishing Thrust",
+      "description": "[Mounting] [Head] (3rd Hit)"
+    },
+    "23": {
+      "name": "Finishing Thrust",
+      "description": "[Mounting] [Body] (1st Hit)"
+    },
+    "24": {
+      "name": "Finishing Thrust",
+      "description": "[Mounting] [Body] (2nd Hit)"
+    },
+    "25": {
+      "name": "Finishing Thrust",
+      "description": "[Mounting] [Body] (3rd Hit)"
+    },
+    "26": {
+      "name": "Finishing Thrust",
+      "description": "[Mounting] [Tail] (1st Hit)"
+    },
+    "27": {
+      "name": "Finishing Thrust",
+      "description": "[Mounting] [Tail] (2nd Hit)"
+    },
+    "28": {
+      "name": "Finishing Thrust",
+      "description": "[Mounting] [Tail] (3rd Hit)"
+    },
+    "30": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (1st Hit)"
+    }
+  },
+  "wp06_01.col": {
+    "0": {
+      "name": "Shield Attack",
+      "description": ""
+    }
+  },
+  "wp07\\shell\\collision\\object.col": {
+    "0": {
+      "name": "Shelling",
+      "description": "[Normal]"
+    },
+    "1": {
+      "name": "Shelling",
+      "description": "[Long]"
+    },
+    "2": {
+      "name": "Shelling",
+      "description": "[Wide] "
+    },
+    "3": {
+      "name": "Charged Shelling",
+      "description": "[Normal]"
+    },
+    "4": {
+      "name": "Charged Shelling",
+      "description": "[Long]"
+    },
+    "5": {
+      "name": "Charged Shelling",
+      "description": "[Wide] "
+    },
+    "6": {
+      "name": "Full Burst",
+      "description": "[Normal]"
+    },
+    "7": {
+      "name": "Full Burst",
+      "description": "[Long]"
+    },
+    "8": {
+      "name": "Full Burst",
+      "description": "[Wide] "
+    },
+    "9": {
+      "name": "Wyvernfire",
+      "description": "[Normal]"
+    },
+    "10": {
+      "name": "Wyvernfire",
+      "description": "[Long]"
+    },
+    "11": {
+      "name": "Wyvernfire",
+      "description": "[Wide] "
+    },
+    "12": {
+      "name": "Wyvernstake Blast",
+      "description": "(Initial Hit)"
+    },
+    "13": {
+      "name": "Wyrmstake",
+      "description": "(Ticks)"
+    },
+    "14": {
+      "name": "Wyvernstake Blast",
+      "description": "(Mid/High Level triggered) (Explosions)"
+    },
+    "15": {
+      "name": "Wyvernstake Blast",
+      "description": "(Low Level triggered) (Explosions)"
+    },
+    "16": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "17": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "18": {
+      "name": "Burst Fire",
+      "description": "[Normal] [Mounting] [Head] (Full Burst)"
+    },
+    "19": {
+      "name": "Burst Fire",
+      "description": "[Normal] [Mounting] [Body] (Full Burst)"
+    },
+    "20": {
+      "name": "Burst Fire",
+      "description": "[Normal] [Mounting] [Tail] (Full Burst)"
+    },
+    "22": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "23": {
+      "name": "Burst Fire",
+      "description": "[Long] [Mounting] [Head] (Full Burst)"
+    },
+    "24": {
+      "name": "Burst Fire",
+      "description": "[Long] [Mounting] [Body] (Full Burst)"
+    },
+    "25": {
+      "name": "Burst Fire",
+      "description": "[Long] [Mounting] [Tail] (Full Burst)"
+    },
+    "27": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "28": {
+      "name": "Burst Fire",
+      "description": "[Wide] [Mounting] [Head] (Full Burst)"
+    },
+    "29": {
+      "name": "Burst Fire",
+      "description": "[Wide] [Mounting] [Body] (Full Burst)"
+    },
+    "30": {
+      "name": "Burst Fire",
+      "description": "[Wide] [Mounting] [Tail] (Full Burst)"
+    },
+    "33": {
+      "name": "",
+      "description": "guess dummy"
+    }
+  },
+  "wp07.col": {
+    "0": {
+      "name": "Jumping Thrust",
+      "description": ""
+    },
+    "1": {
+      "name": "Jumping Smash",
+      "description": "/ Jumping Smash (2nd Hit)"
+    },
+    "2": {
+      "name": "Jumping Smash",
+      "description": "(1st Hit)"
+    },
+    "3": {
+      "name": "Lunging Upthrust",
+      "description": ""
+    },
+    "5": {
+      "name": "Lateral Thrust",
+      "description": ""
+    },
+    "6": {
+      "name": "Guard Thrust",
+      "description": ""
+    },
+    "8": {
+      "name": "Rising Slash",
+      "description": ""
+    },
+    "9": {
+      "name": "Overhead Smash",
+      "description": ""
+    },
+    "10": {
+      "name": "Wide Sweep",
+      "description": ""
+    },
+    "11": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "14": {
+      "name": "Wyrmstake Cannon",
+      "description": "(1st Hit)"
+    },
+    "15": {
+      "name": "Wyrmstake Cannon",
+      "description": "(2nd Hit)"
+    },
+    "17": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "18": {
+      "name": "Jumping Rising Slash",
+      "description": ""
+    },
+    "20": {
+      "name": "Burst Fire",
+      "description": "[Mounting] [Head] (Thrust)"
+    },
+    "21": {
+      "name": "Burst Fire",
+      "description": "[Mounting] [Body] (Thrust)"
+    },
+    "22": {
+      "name": "Burst Fire",
+      "description": "[Mounting] [Tail] (Thrust)"
+    },
+    "23": {
+      "name": "Burst Fire",
+      "description": "guess dummy"
+    },
+    "24": {
+      "name": "Burst Fire",
+      "description": "guess dummy"
+    },
+    "25": {
+      "name": "Burst Fire",
+      "description": "guess dummy"
+    },
+    "26": {
+      "name": "Burst Fire",
+      "description": "guess dummy"
+    }
+  },
+  "wp08\\shell\\collision\\object.col": {
+    "0": {
+      "name": "Element Discharge Finisher",
+      "description": "/ Zero Sum Discharge Finisher"
+    }
+  },
+  "wp08.col": {
+    "0": {
+      "name": "Axe: Jumping Slash",
+      "description": ""
+    },
+    "1": {
+      "name": "Sword: Jumping Slash",
+      "description": ""
+    },
+    "2": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "3": {
+      "name": "Axe: Overhead Slash",
+      "description": ""
+    },
+    "4": {
+      "name": "Axe: Forward Slash",
+      "description": ""
+    },
+    "5": {
+      "name": "Axe: Side Slash",
+      "description": "/ Sword: Morph Slash"
+    },
+    "6": {
+      "name": "Axe: Rising Slash",
+      "description": ""
+    },
+    "7": {
+      "name": "Axe: Wild Swing",
+      "description": "(Right Swing)"
+    },
+    "8": {
+      "name": "Axe: Wild Swing",
+      "description": "(Left Swing)"
+    },
+    "9": {
+      "name": "Axe: Morph Sweep",
+      "description": "(1st Hit)"
+    },
+    "10": {
+      "name": "Sword: Overhead Slash",
+      "description": "/ Axe: Morph Slash"
+    },
+    "11": {
+      "name": "Sword: Right Rising Slash",
+      "description": ""
+    },
+    "12": {
+      "name": "Sword: Left Rising Slash",
+      "description": ""
+    },
+    "13": {
+      "name": "Sword: Double Slash",
+      "description": "(1st Hit)"
+    },
+    "14": {
+      "name": "Element Discharge",
+      "description": "(Thrust)"
+    },
+    "15": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "16": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "17": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "18": {
+      "name": "Sword: Double Slash",
+      "description": "(2nd Hit)"
+    },
+    "19": {
+      "name": "Axe: Morph Sweep",
+      "description": "(2nd Hit)"
+    },
+    "20": {
+      "name": "Axe: Morph Sweep",
+      "description": "(3rd Hit)"
+    },
+    "21": {
+      "name": "Elemental Discharge",
+      "description": "(Ticks)"
+    },
+    "22": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "23": {
+      "name": "Axe: Fade Slash",
+      "description": ""
+    },
+    "24": {
+      "name": "Sword: Downward Fade Slash",
+      "description": ""
+    },
+    "26": {
+      "name": "Zero Sum Discharge",
+      "description": "(Thrust)"
+    },
+    "27": {
+      "name": "Zero Sum Discharge",
+      "description": "(Ticks)"
+    },
+    "29": {
+      "name": "Sword: Bridging Slash",
+      "description": ""
+    },
+    "31": {
+      "name": "Sword: Phial Burst",
+      "description": "[Amped]"
+    },
+    "33": {
+      "name": "Sword: Heavenward Flurry",
+      "description": "(1st Hit)"
+    },
+    "34": {
+      "name": "Sword: Heavenward Flurry",
+      "description": "(2nd Hit)"
+    },
+    "36": {
+      "name": "Axe: Jumping Sweep",
+      "description": ""
+    },
+    "37": {
+      "name": "Sword: Jumping Rising Slash",
+      "description": ""
+    },
+    "40": {
+      "name": "Sword: Overhead Slash",
+      "description": "[Amped] / Morph Slash"
+    },
+    "42": {
+      "name": "Sword: Right Rising Slash",
+      "description": "[Amped]"
+    },
+    "44": {
+      "name": "Sword: Left Rising Slash",
+      "description": "[Amped]"
+    },
+    "46": {
+      "name": "Sword: Double Slash",
+      "description": "[Amped] (1st Hit)"
+    },
+    "48": {
+      "name": "Sword: Double Slash",
+      "description": "[Amped] (2nd Hit)"
+    },
+    "50": {
+      "name": "Sword: Heavenward Flurry",
+      "description": "[Amped] (1st Hit)"
+    },
+    "52": {
+      "name": "Sword: Heavenward Flurry",
+      "description": "[Amped] (2nd Hit)"
+    },
+    "55": {
+      "name": "Sword: Bridging Slash",
+      "description": "[Amped]"
+    },
+    "57": {
+      "name": "Element Discharge",
+      "description": "[Mounting] (Thrust)"
+    },
+    "58": {
+      "name": "Element Discharge",
+      "description": "[Mounting] (Ticks)"
+    },
+    "59": {
+      "name": "Element Discharge",
+      "description": "[Mounting] [Head] Finisher"
+    },
+    "60": {
+      "name": "Element Discharge",
+      "description": "[Mounting] [Body] Finisher"
+    },
+    "61": {
+      "name": "Element Discharge",
+      "description": "[Mounting] [Tail] Finisher"
+    },
+    "63": {
+      "name": "Axe: Heavy Slam",
+      "description": "(1st Hit)"
+    },
+    "64": {
+      "name": "Axe: Heavy Slam",
+      "description": "(2nd Hit)"
+    },
+    "66": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (1st Hit)"
+    },
+    "67": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (2nd Hit)"
+    },
+    "69": {
+      "name": "Special Claw Shot",
+      "description": "(1st Hit)"
+    },
+    "70": {
+      "name": "Special Claw Shot",
+      "description": "(2nd Hit)"
+    }
+  },
+  "wp09\\shell\\collision\\object.col": {
+    "0": {
+      "name": "Impact Phial",
+      "description": ""
+    },
+    "1": {
+      "name": "Impact Phial",
+      "description": "(AED)"
+    },
+    "2": {
+      "name": "Impact Phial",
+      "description": "(Charged Sword)"
+    },
+    "3": {
+      "name": "Impact Phial",
+      "description": "(SAED)"
+    },
+    "4": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "10": {
+      "name": "Element Phial",
+      "description": ""
+    },
+    "11": {
+      "name": "Element Phial",
+      "description": "(AED)"
+    },
+    "12": {
+      "name": "Element Phial",
+      "description": "(Charged Sword)"
+    },
+    "13": {
+      "name": "Element Phial",
+      "description": "(SAED)"
+    }
+  },
+  "wp09.col": {
+    "0": {
+      "name": "Sword: Jumping Slash",
+      "description": ""
+    },
+    "1": {
+      "name": "Sword: Forward Slash",
+      "description": ""
+    },
+    "2": {
+      "name": "Sword: Weak Slash",
+      "description": ""
+    },
+    "3": {
+      "name": "Sword: Return Stroke",
+      "description": ""
+    },
+    "4": {
+      "name": "Sword: Charged Double Slash",
+      "description": "(1st Hit)"
+    },
+    "5": {
+      "name": "Sword: Charged Double Slash",
+      "description": "(2nd Hit)"
+    },
+    "6": {
+      "name": "Sword: Charged Rising Slash",
+      "description": ""
+    },
+    "7": {
+      "name": "Sword: Spinning Slash",
+      "description": "/ Axe: Morph Slash / Element Roundslash"
+    },
+    "8": {
+      "name": "Sword: Condensed Element Slash",
+      "description": ""
+    },
+    "9": {
+      "name": "Sword: Sliding Slash",
+      "description": ""
+    },
+    "10": {
+      "name": "Sword: Jumping Rising Slash",
+      "description": ""
+    },
+    "12": {
+      "name": "Axe: Dash Slam",
+      "description": ""
+    },
+    "13": {
+      "name": "Axe: Jumping Slash",
+      "description": "/ Sword: Jumping Morph Slash"
+    },
+    "14": {
+      "name": "Axe: Smash",
+      "description": "/ Sword: Morph Slash"
+    },
+    "15": {
+      "name": "Axe: Overhead Slash",
+      "description": ""
+    },
+    "16": {
+      "name": "Axe: Rising Slash",
+      "description": ""
+    },
+    "18": {
+      "name": "Axe: Element Discharge I",
+      "description": "/ Rushing Element Discharge I"
+    },
+    "19": {
+      "name": "Axe: Element Discharge II",
+      "description": "(1st Hit)"
+    },
+    "20": {
+      "name": "Axe: Element Discharge II",
+      "description": "(2nd Hit)"
+    },
+    "21": {
+      "name": "Axe: Amped Element Discharge",
+      "description": ""
+    },
+    "23": {
+      "name": "Axe: Super Amped Element Discharge",
+      "description": "(1st Hit)"
+    },
+    "24": {
+      "name": "Axe: Super Amped Element Discharge",
+      "description": "(2nd Hit)"
+    },
+    "25": {
+      "name": "Axe: Super Amped Element Discharge",
+      "description": "(3rd Hit)"
+    },
+    "26": {
+      "name": "Axe: Super Amped Element Discharge",
+      "description": "\"(1st Hit"
+    },
+    "27": {
+      "name": "Axe: Super Amped Element Discharge",
+      "description": "\"(2nd Hit"
+    },
+    "28": {
+      "name": "Sword: Sliding Slash",
+      "description": "(1st Hit)"
+    },
+    "29": {
+      "name": "Sword: Sliding Slash",
+      "description": "(2nd Hit)"
+    },
+    "30": {
+      "name": "Super Amped Element Discharge",
+      "description": "[Mounting] [Head] (1st Hit)"
+    },
+    "31": {
+      "name": "Super Amped Element Discharge",
+      "description": "[Mounting] [Body] (1st Hit)"
+    },
+    "32": {
+      "name": "Super Amped Element Discharge",
+      "description": "[Mounting] [Tail] (1st Hit)"
+    },
+    "33": {
+      "name": "Super Amped Element Discharge",
+      "description": "[Mounting] [Head] (2nd Hit)"
+    },
+    "34": {
+      "name": "Super Amped Element Discharge",
+      "description": "[Mounting] [Body] (2nd Hit)"
+    },
+    "35": {
+      "name": "Super Amped Element Discharge",
+      "description": "[Mounting] [Tail] (2nd Hit)"
+    },
+    "37": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (1st Hit)"
+    },
+    "38": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (2nd Hit)"
+    },
+    "39": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (Repeated)"
+    },
+    "41": {
+      "name": "Savage Axe Slash",
+      "description": ""
+    },
+    "43": {
+      "name": "Power Axe Ticks",
+      "description": ""
+    }
+  },
+  "wp09_01.col": {
+    "0": {
+      "name": "Sword: Shield Thrust",
+      "description": "(1st Hit)"
+    }
+  },
+  "wp10\\shell\\collision\\object.col": {
+    "-1": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "2": {
+      "name": "Dust Explosion",
+      "description": "(Blast)"
+    },
+    "3": {
+      "name": "Dust Explosion",
+      "description": "(Recovery)"
+    },
+    "4": {
+      "name": "Dust Explosion",
+      "description": "(Paralysis)"
+    }
+  },
+  "wp10.col": {
+    "0": {
+      "name": "Reaping Slash",
+      "description": ""
+    },
+    "1": {
+      "name": "Double Slash",
+      "description": "(1st Hit)"
+    },
+    "2": {
+      "name": "Overhead Slash",
+      "description": ""
+    },
+    "3": {
+      "name": "Thrust",
+      "description": ""
+    },
+    "4": {
+      "name": "Leaping Slash",
+      "description": ""
+    },
+    "5": {
+      "name": "Wide Sweep",
+      "description": "/ Strong Wide Sweep (2nd Hit)"
+    },
+    "6": {
+      "name": "Dodge Slash",
+      "description": ""
+    },
+    "7": {
+      "name": "Rising Slash",
+      "description": "(1st Hit)"
+    },
+    "8": {
+      "name": "Strong Reaping Slash",
+      "description": "(1st Hit)"
+    },
+    "9": {
+      "name": "Strong Double Slash",
+      "description": "(1st Hit)"
+    },
+    "10": {
+      "name": "Tornade Slash",
+      "description": "(1st Hit)"
+    },
+    "11": {
+      "name": "Strong Thrust",
+      "description": "(1st Hit)"
+    },
+    "12": {
+      "name": "Strong Wide Sweep",
+      "description": "(1st Hit)"
+    },
+    "13": {
+      "name": "Strong Rising Slash Combo",
+      "description": "(1st Hit)"
+    },
+    "14": {
+      "name": "Jumping Slash",
+      "description": ""
+    },
+    "16": {
+      "name": "Kinsect",
+      "description": "(Mark Target)"
+    },
+    "17": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "18": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "19": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "20": {
+      "name": "Rising Slash",
+      "description": "(2nd Hit)"
+    },
+    "21": {
+      "name": "Strong Reaping Slash",
+      "description": "(2nd Hit)"
+    },
+    "22": {
+      "name": "Strong Rising Slash Combo",
+      "description": "(2nd Hit)"
+    },
+    "23": {
+      "name": "Strong Rising Slash Combo",
+      "description": "(3rd Hit)"
+    },
+    "24": {
+      "name": "Strong Double Slash",
+      "description": "(2nd Hit)"
+    },
+    "25": {
+      "name": "Strong Double Slash",
+      "description": "(3rd Hit)"
+    },
+    "27": {
+      "name": "Tornade Slash",
+      "description": "(2nd Hit)"
+    },
+    "30": {
+      "name": "Double Slash",
+      "description": "(2nd Hit)"
+    },
+    "31": {
+      "name": "Strong Thrust",
+      "description": "(2nd Hit)"
+    },
+    "32": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "33": {
+      "name": "",
+      "description": "Bridging Slash between Strong Wide Sweep and Strong Rising Slash"
+    },
+    "35": {
+      "name": "Jumping Advancing Slash",
+      "description": ""
+    },
+    "36": {
+      "name": "Strong Jumping Slash",
+      "description": ""
+    },
+    "38": {
+      "name": "Slash Flurry",
+      "description": "[Mounting] [Head] (1st Hit)"
+    },
+    "39": {
+      "name": "Slash Flurry",
+      "description": "[Mounting] [Head] (2nd and 3rd Hit)"
+    },
+    "40": {
+      "name": "Slash Flurry",
+      "description": "[Mounting] [Head] (4th Hit)"
+    },
+    "42": {
+      "name": "Slash Flurry",
+      "description": "[Mounting] [Body] (1st Hit)"
+    },
+    "43": {
+      "name": "Slash Flurry",
+      "description": "[Mounting] [Body] (2nd and 3rd Hit)"
+    },
+    "44": {
+      "name": "Slash Flurry",
+      "description": "[Mounting] [Body] (4th Hit)"
+    },
+    "46": {
+      "name": "Slash Flurry",
+      "description": "[Mounting] [Tail] (1st Hit)"
+    },
+    "47": {
+      "name": "Slash Flurry",
+      "description": "[Mounting] [Tail] (2nd and 3rd Hit)"
+    },
+    "48": {
+      "name": "Slash Flurry",
+      "description": "[Mounting] [Tail] (4th Hit)"
+    },
+    "50": {
+      "name": "Flying Slash",
+      "description": "[Mounting] (1st Hit)"
+    },
+    "51": {
+      "name": "Flying Slash",
+      "description": "[Mounting] (2nd Hit)"
+    },
+    "52": {
+      "name": "Flying Slash",
+      "description": "[Mounting] (3rd Hit)"
+    },
+    "53": {
+      "name": "Flying Slash",
+      "description": "[Mounting] (4th Hit)"
+    },
+    "55": {
+      "name": "Strong Jumping Advancing Slash",
+      "description": "(1st Hit)"
+    },
+    "56": {
+      "name": "Strong Jumping Advancing Slash",
+      "description": "(2nd Hit)"
+    },
+    "57": {
+      "name": "Strong Jumping Advancing Slash",
+      "description": "(3rd Hit)"
+    },
+    "58": {
+      "name": "Strong Jumping Advancing Slash",
+      "description": "(4th Hit)"
+    },
+    "59": {
+      "name": "Strong Jumping Advancing Slash",
+      "description": "(5th Hit)"
+    },
+    "60": {
+      "name": "Strong Jumping Advancing Slash",
+      "description": "(Finisher)"
+    },
+    "63": {
+      "name": "Descending Thrust",
+      "description": "(Midair)"
+    },
+    "64": {
+      "name": "Descending Thrust",
+      "description": "(Landing)"
+    },
+    "66": {
+      "name": "Descending Thrust",
+      "description": "Finisher (2nd Hit)"
+    },
+    "67": {
+      "name": "Descending Thrust",
+      "description": "Finisher (1st Hit)"
+    },
+    "70": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (1st Hit)"
+    },
+    "71": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (2nd Hit)"
+    },
+    "72": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (3rd Hit)"
+    },
+    "73": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (4th Hit)"
+    }
+  },
+  "wp10_01.col": {
+    "0": {
+      "name": "Kinsect Attack",
+      "description": ""
+    }
+  },
+  "wp11\\shell\\collision\\object.col": {
+    "0": {
+      "name": "Normal Shot",
+      "description": "Lv1"
+    },
+    "1": {
+      "name": "Normal Shot",
+      "description": "Lv2"
+    },
+    "2": {
+      "name": "Normal Shot",
+      "description": "Lv3"
+    },
+    "3": {
+      "name": "Normal Shot",
+      "description": "Lv4"
+    },
+    "5": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "6": {
+      "name": "Power Shot",
+      "description": "Lv2"
+    },
+    "7": {
+      "name": "Power Shot",
+      "description": "Lv3"
+    },
+    "8": {
+      "name": "Power Shot",
+      "description": "Lv4"
+    },
+    "10": {
+      "name": "Arc Shot",
+      "description": "Lv1"
+    },
+    "11": {
+      "name": "Arc Shot",
+      "description": "Lv2"
+    },
+    "12": {
+      "name": "Arc Shot",
+      "description": "Lv3"
+    },
+    "13": {
+      "name": "Arc Shot",
+      "description": "Lv4"
+    },
+    "15": {
+      "name": "Dragon Piercer",
+      "description": "Lv1"
+    },
+    "16": {
+      "name": "Dragon Piercer",
+      "description": "Lv2"
+    },
+    "17": {
+      "name": "Dragon Piercer",
+      "description": "Lv3"
+    },
+    "18": {
+      "name": "Dragon Piercer",
+      "description": "Lv4"
+    },
+    "20": {
+      "name": "Quick Shot",
+      "description": ""
+    },
+    "21": {
+      "name": "Arc Shot",
+      "description": "Projectile"
+    },
+    "25": {
+      "name": "Wall Shot",
+      "description": "Lv3"
+    },
+    "26": {
+      "name": "Wall Shot",
+      "description": "Lv4"
+    },
+    "28": {
+      "name": "Thousand Dragons",
+      "description": "(Slinger Shot)"
+    },
+    "29": {
+      "name": "Thousand Dragons",
+      "description": "(Piercer Slinger Shot)"
+    }
+  },
+  "wp11.col": {
+    "0": {
+      "name": "Charged Shot",
+      "description": "[Mounting] [Head] Lv1"
+    },
+    "1": {
+      "name": "Charged Shot",
+      "description": "[Mounting] [Head] Lv2"
+    },
+    "2": {
+      "name": "Charged Shot",
+      "description": "[Mounting] [Head] Lv3"
+    },
+    "3": {
+      "name": "Charged Shot",
+      "description": "[Mounting] [Head] Lv4"
+    },
+    "5": {
+      "name": "Charged Shot",
+      "description": "[Mounting] [Body] Lv1"
+    },
+    "6": {
+      "name": "Charged Shot",
+      "description": "[Mounting] [Body] Lv2"
+    },
+    "7": {
+      "name": "Charged Shot",
+      "description": "[Mounting] [Body] Lv3"
+    },
+    "8": {
+      "name": "Charged Shot",
+      "description": "[Mounting] [Body] Lv4"
+    },
+    "10": {
+      "name": "Charged Shot",
+      "description": "[Mounting] [Tail] Lv1"
+    },
+    "11": {
+      "name": "Charged Shot",
+      "description": "[Mounting] [Tail] Lv2"
+    },
+    "12": {
+      "name": "Charged Shot",
+      "description": "[Mounting] [Tail] Lv3"
+    }
+  },
+  "wp11_01": {
+    "1": {
+      "name": "Lunging Melee Attack",
+      "description": ""
+    },
+    "2": {
+      "name": "Jumping Melee Attack",
+      "description": ""
+    },
+    "3": {
+      "name": "Weapon Attack",
+      "description": "(1st Hit)"
+    },
+    "4": {
+      "name": "Weapon Attack",
+      "description": "(2nd Hit)"
+    }
+  },
+  "wp12\\shell\\collision\\object.col": {
+    "0": {
+      "name": "Normal Ammo Lv1",
+      "description": ""
+    },
+    "1": {
+      "name": "Normal Ammo Lv2",
+      "description": ""
+    },
+    "2": {
+      "name": "Normal Ammo Lv3",
+      "description": ""
+    },
+    "3": {
+      "name": "Pierce Ammo Lv1",
+      "description": ""
+    },
+    "4": {
+      "name": "Pierce Ammo Lv2",
+      "description": ""
+    },
+    "5": {
+      "name": "Pierce Ammo Lv3",
+      "description": ""
+    },
+    "6": {
+      "name": "Spread Ammo Lv1",
+      "description": ""
+    },
+    "7": {
+      "name": "Spread Ammo Lv2",
+      "description": ""
+    },
+    "8": {
+      "name": "Spread Ammo Lv3",
+      "description": ""
+    },
+    "9": {
+      "name": "Cluster Ammo",
+      "description": "Projectile"
+    },
+    "10": {
+      "name": "Cluster Ammo",
+      "description": "sub-Ammo"
+    },
+    "11": {
+      "name": "Cluster Ammo Lv1",
+      "description": ""
+    },
+    "12": {
+      "name": "Cluster Ammo Lv2",
+      "description": ""
+    },
+    "13": {
+      "name": "Cluster Ammo Lv3",
+      "description": ""
+    },
+    "14": {
+      "name": "Wyvern Ammo ",
+      "description": "(Primary Hit)"
+    },
+    "15": {
+      "name": "Wyvern Ammo",
+      "description": "(Secondary Hit)"
+    },
+    "16": {
+      "name": "Sticky Ammo",
+      "description": "Projectile"
+    },
+    "17": {
+      "name": "Sticky Ammo Lv1",
+      "description": ""
+    },
+    "18": {
+      "name": "Sticky Ammo Lv2",
+      "description": ""
+    },
+    "19": {
+      "name": "Sticky Ammo Lv3",
+      "description": ""
+    },
+    "20": {
+      "name": "Slicing Ammo",
+      "description": "Projectile"
     },
     "21": {
       "name": "Slicing Ammo",
       "description": "Sever "
     },
+    "22": {
+      "name": "Flaming Ammo",
+      "description": ""
+    },
+    "23": {
+      "name": "Water Ammo",
+      "description": ""
+    },
+    "24": {
+      "name": "Freeze Ammo",
+      "description": ""
+    },
+    "25": {
+      "name": "Thunder Ammo",
+      "description": ""
+    },
+    "26": {
+      "name": "Dragon Ammo",
+      "description": ""
+    },
+    "27": {
+      "name": "Poison Ammo Lv1",
+      "description": ""
+    },
+    "28": {
+      "name": "Poison Ammo Lv2",
+      "description": ""
+    },
+    "29": {
+      "name": "Paralysis Ammo Lv1",
+      "description": ""
+    },
+    "30": {
+      "name": "Paralysis Ammo Lv2",
+      "description": ""
+    },
+    "31": {
+      "name": "Sleep Ammo Lv1",
+      "description": ""
+    },
+    "32": {
+      "name": "Sleep Ammo Lv2",
+      "description": ""
+    },
+    "33": {
+      "name": "Exhaust Ammo Lv1",
+      "description": ""
+    },
+    "34": {
+      "name": "Exhaust Ammo Lv2",
+      "description": ""
+    },
+    "35": {
+      "name": "Recover Ammo Lv1",
+      "description": ""
+    },
+    "36": {
+      "name": "Recover Ammo Lv2",
+      "description": ""
+    },
+    "37": {
+      "name": "Demon Ammo",
+      "description": ""
+    },
+    "38": {
+      "name": "Armor Ammo",
+      "description": ""
+    },
+    "39": {
+      "name": "Tranq Ammo",
+      "description": ""
+    },
+    "-1": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "51": {
+      "name": "Wyvernheart",
+      "description": ""
+    },
+    "52": {
+      "name": "Wyvernsnipe ",
+      "description": ""
+    },
+    "53": {
+      "name": "Wyvernsnipe ",
+      "description": "Explosion (S)"
+    },
+    "54": {
+      "name": "Wyvernsnipe ",
+      "description": "Explosion (M)"
+    },
+    "55": {
+      "name": "Wyvernsnipe ",
+      "description": "Explosion (L)"
+    },
+    "56": {
+      "name": "Wyvernsnipe Type 2",
+      "description": "Projectile"
+    },
+    "57": {
+      "name": "Wyvernsnipe Type 2",
+      "description": "(Correct distance and HZV > 30.)"
+    },
+    "58": {
+      "name": "Wyvernsnipe Type 2",
+      "description": "(Incorrect distance and HZV > 30.)"
+    },
+    "59": {
+      "name": "Wyvernsnipe Type 2",
+      "description": "(Correct distance and HZV <= 30.)"
+    },
+    "60": {
+      "name": "Wyvernsnipe Type 2",
+      "description": "(Incorrect distance and HZV <= 30.)"
+    },
+    "61": {
+      "name": "Wyvernblast",
+      "description": "(S)"
+    },
+    "62": {
+      "name": "Wyvernblast",
+      "description": "(M)"
+    },
+    "63": {
+      "name": "Wyvernblast",
+      "description": "(L)"
+    },
+    "64": {
+      "name": "",
+      "description": "guess dummy"
+    },
+    "68": {
+      "name": "Weapon Attack",
+      "description": "guess dummy"
+    },
+    "69": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] HBG (Repeated)"
+    },
+    "70": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] HBG (Final Hit)"
+    },
+    "71": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] HBG (Snipe)"
+    },
     "72": {
-      "name": "LBG Clutch Claw Attack Main Hit",
-      "description": "1st hit"
+      "name": "Weapon Attack",
+      "description": "[Clutching] LBG (Main Hit)"
     },
     "73": {
-      "name": "LBG Clutch Claw Attack Explosion",
-      "description": "2nd hit"
+      "name": "Weapon Attack",
+      "description": "[Clutching] LBG (Explosion)"
+    },
+    "75": {
+      "name": "Wyvernblast Counter Explosion",
+      "description": "(S)"
+    },
+    "76": {
+      "name": "Wyvernblast Counter Explosion",
+      "description": "(M)"
+    },
+    "77": {
+      "name": "Wyvernblast Counter Explosion",
+      "description": "(L)"
+    },
+    "78": {
+      "name": "Wyvernblast Counter Explosion",
+      "description": "(XL)"
     }
   },
   "wp12.col": {
+    "0": {
+      "name": "Jumping Reload",
+      "description": ""
+    },
     "1": {
       "name": "Fire",
-      "description": "[Mounting][Head]"
+      "description": "[Mounting] [Head]"
     },
     "2": {
       "name": "Fire",
-      "description": "[Mounting][Back]"
+      "description": "[Mounting] [Body]"
     },
     "3": {
       "name": "Fire",
-      "description": "[Mounting][Tail]"
+      "description": "[Mounting] [Tail]"
     }
   },
   "wp13.col": {
+    "0": {
+      "name": "Jumping Reload",
+      "description": ""
+    },
     "1": {
       "name": "Fire",
-      "description": "[Mounting][Head]"
+      "description": "[Mounting] [Head] (Final Hit)"
     },
     "2": {
       "name": "Fire",
-      "description": "[Mounting][Back]"
+      "description": "[Mounting] [Back] (Final Hit)"
     },
     "3": {
       "name": "Fire",
-      "description": "[Mounting][Tail]"
+      "description": "[Mounting] [Tail] (Final Hit)"
+    },
+    "4": {
+      "name": "Melee Attack",
+      "description": ""
     },
     "5": {
       "name": "Fire",
-      "description": "[Mounting][Head]Weak"
+      "description": "[Mounting] [Head] (Initial Hits)"
     },
     "6": {
       "name": "Fire",
-      "description": "[Mounting][Back]Weak"
+      "description": "[Mounting] [Back] (Initial Hits)"
     }
   }
 }

@@ -14,16 +14,20 @@ namespace MHW_Editor.Weapons.Collision.Models {
         }
 
         public void Init() {
-            if (string.IsNullOrEmpty(name)) return;
+            TranslatedName = name;
+
+            if (string.IsNullOrEmpty(name) || moveId == -1) return;
 
             foreach (var key in DataHelper.collisionTranslationsData.Keys) {
                 if (targetFile.EndsWith(key)) {
                     var nameDescPair = DataHelper.collisionTranslationsData[key].TryGet(moveId, null);
-                    if (nameDescPair == null) return;
-                    TranslatedName = nameDescPair.name;
-                    if (TranslatedName == "") TranslatedName = name;
-                    Description = nameDescPair.description;
-                    if (Description == "guess dummy") Description = "Unused?";
+                    if (nameDescPair != null) {
+                        if (!string.IsNullOrEmpty(nameDescPair.name)) TranslatedName = nameDescPair.name;
+                        Description = nameDescPair.description;
+                        if (Description == "guess dummy") Description = "Unused?";
+                    } else {
+                        return;
+                    }
                 }
             }
         }
@@ -39,8 +43,9 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [SortOrder(11)]
         public string Description { get; private set; }
 
+        [DisplayName("CLGM Id")]
         [SortOrder(20)]
-        public int unk1 { get; set; }
+        public int clgmId { get; set; }
 
         [DisplayName("Move Id")]
         [SortOrder(30)]

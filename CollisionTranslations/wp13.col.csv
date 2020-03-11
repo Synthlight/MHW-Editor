@@ -1,9 +1,9 @@
 ﻿Move_Id,untranslate,translated,description
-0,ジャンプ攻撃,Jump Attack,
-1,乗り中攻撃・頭,Fire,[Mounting][Head]
-2,乗り中攻撃・背中,Fire,[Mounting][Back]
-3,乗り中攻撃・尻尾,Fire,[Mounting][Tail]
-4,殴り,Weapon Attack,
-5,乗り中攻撃弱・頭,Fire,[Mounting][Head]Weak
-6,乗り中攻撃弱・背中,Fire,[Mounting][Back]Weak
-7,乗り中攻撃弱・尻尾,Fire,[Mounting][Tail]Weak
+0,ジャンプ攻撃,Jumping Reload,
+1,乗り中攻撃・頭,Fire,[Mounting] [Head] (Final Hit)
+2,乗り中攻撃・背中,Fire,[Mounting] [Back] (Final Hit)
+3,乗り中攻撃・尻尾,Fire,[Mounting] [Tail] (Final Hit)
+4,殴り,Melee Attack,
+5,乗り中攻撃弱・頭,Fire,[Mounting] [Head] (Initial Hits)
+6,乗り中攻撃弱・背中,Fire,[Mounting] [Back] (Initial Hits)
+7,乗り中攻撃弱・尻尾,Fire,[Mounting] [Tail] (Initial Hits)

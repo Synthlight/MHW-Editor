@@ -1,0 +1,46 @@
+﻿Move_Id,untranslate,translated,description
+0,剣：ジャンプ斬り（ジャンプ変形斬り）,Sword: Jumping Slash,
+1,剣：突進斬り（武器出し）,Sword: Forward Slash,
+2,剣：けん制斬り,Sword: Weak Slash,
+3,剣：斬り返し,Sword: Return Stroke,
+4,剣：溜め二連斬り（一段階目）,Sword: Charged Double Slash,(1st Hit)
+5,剣：溜め二連斬り（二段階目）,Sword: Charged Double Slash,(2nd Hit)
+6,剣：溜め斬り上げ（溜め失敗）,Sword: Charged Rising Slash,
+7,剣：回転斬り（斧→剣変形斬り）,Sword: Spinning Slash,/ Axe: Morph Slash / Element Roundslash
+8,剣：チャージ溜め斬り,Sword: Condensed Element Slash,
+9,剣：移動斬り,Sword: Sliding Slash,
+10,剣：スライディング斬り上げ,Sword: Jumping Rising Slash,
+11,,,
+12,斧：突進叩き付け,Axe: Dash Slam,
+13,斧：ジャンプ斬り（ジャンプ変形斬り）,Axe: Jumping Slash,/ Sword: Jumping Morph Slash
+14,斧：叩き付け（剣→斧変形斬り＆武器出し）,Axe: Smash,/ Sword: Morph Slash
+15,斧：縦斬り,Axe: Overhead Slash,
+16,斧：斬り上げ,Axe: Rising Slash,
+17,,,
+18,斧：属性解放斬り１,Axe: Element Discharge I,/ Rushing Element Discharge I
+19,斧：属性解放斬り２（一段階目）,Axe: Element Discharge II,(1st Hit)
+20,斧：属性解放斬り２（二段階目）,Axe: Element Discharge II,(2nd Hit)
+21,斧：高出力属性解放斬り,Axe: Amped Element Discharge,
+22,,,
+23,斧：超高出力属性解放斬り（一段目）　ビン有り,Axe: Super Amped Element Discharge,(1st Hit)
+24,斧：超高出力属性解放斬り（二段目）　ビン有り,Axe: Super Amped Element Discharge,(2nd Hit)
+25,斧：超高出力属性解放斬り（三段目）　ビン有り,Axe: Super Amped Element Discharge,(3rd Hit)
+26,斧：超高出力属性解放斬り（一段目）　ビン無し,Axe: Super Amped Element Discharge,"(1st Hit, No Phials)"
+27,斧：超高出力属性解放斬り（二段目）　ビン無し,Axe: Super Amped Element Discharge,"(2nd Hit, No Phials)"
+28,剣：スライディング斬り１,Sword: Sliding Slash,(1st Hit)
+29,剣：スライディング斬り２,Sword: Sliding Slash,(2nd Hit)
+30,乗り攻撃：頭1,Super Amped Element Discharge,[Mounting] [Head] (1st Hit)
+31,乗り攻撃：胴1,Super Amped Element Discharge,[Mounting] [Body] (1st Hit)
+32,乗り攻撃：尾1,Super Amped Element Discharge,[Mounting] [Tail] (1st Hit)
+33,乗り攻撃：頭2,Super Amped Element Discharge,[Mounting] [Head] (2nd Hit)
+34,乗り攻撃：胴2,Super Amped Element Discharge,[Mounting] [Body] (2nd Hit)
+35,乗り攻撃：尾2,Super Amped Element Discharge,[Mounting] [Tail] (2nd Hit)
+36,,,
+37,クロー張り付き攻撃1,Weapon Attack,[Clutching] (1st Hit)
+38,クロー張り付き攻撃2,Weapon Attack,[Clutching] (2nd Hit)
+39,クロー張り付き攻撃ループ,Weapon Attack,[Clutching] (Repeated)
+40,,,
+41,斧：属性充填斬り,Savage Axe Slash,
+42,,,
+43,斧強化時連続ヒット,Power Axe Ticks,
+44,斧強化時連続ヒット,Power Axe Ticks,"(AED, SAED only)"

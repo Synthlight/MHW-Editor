@@ -1,0 +1,44 @@
+﻿Move_Id,untranslate,translated,description
+0,ジャンプ叩き付け,,
+1,右ぶん回し,Right Swing,
+2,左ぶん回し,Right Swing,
+3,前方攻撃（武器出し）,Forward Swing,
+4,後方攻撃,Backward Slam,
+5,柄攻撃,Handle Poke,/ Echo Attack (Initial Hit)
+6,叩き付け(一発目),Forward Slam,(1st Hit)
+7,叩き付け（二発目）,Forward Slam,(2nd Hit)
+8,連音攻撃（一発目）,Double Right Swing,(1st Hit)
+9,連音攻撃（二発目）,Double Right Swing,(2nd Hit)
+10,,,
+11,,,
+12,演奏開始（その場）,Performance,(Stay)
+13,演奏開始（前移動）,Performance,(Forward)
+14,演奏開始（右移動）,Performance,(Backward)
+15,演奏開始（左移動）,Performance,(Left)
+16,演奏開始（後移動）,Performance,(Right)
+17,演奏開始（振り上げ1）,Performance,(upward 1)
+18,演奏開始（振り上げ2）,Performance,(upward 2)
+18,,,
+20,重ねがけ（三音用開始）,Encore,(start with >3 note)
+21,重ねがけ（その場）,Encore,(Stay)
+22,重ねがけ（前移動）,Encore,(Forward)
+23,重ねがけ（右移動）,Encore,(Left)
+24,重ねがけ（左移動）,Encore,(Right)
+25,重ねがけ（後移動）,Encore,(Backward)
+25,,,
+27,,,
+28,スライディング叩き付け,Jumping Strong Overhead Smash,
+29,空中演奏開始,MidAir Performance,
+29,,,
+31,乗り・頭１,Overhead Smash,[Mounting] [Head] (Repeated)
+32,乗り・頭２,Overhead Smash,[Mounting] [Head] (Final Hit)
+33,乗り・胴１,Overhead Smash,[Mounting] [Body] (Repeated)
+34,乗り・胴２,Overhead Smash,[Mounting] [Body] (Final Hit)
+35,乗り・尾１,Overhead Smash,[Mounting] [Tail] (Repeated)
+36,乗り・尾２,Overhead Smash,[Mounting] [Tail] (Final Hit)
+37,,,
+38,笛回転,Echo Attack,(Spin)
+39,,,
+40,クローくっつき1段目,Weapon Attack,(1st Hit)
+41,クローくっつき2段目,Weapon Attack,(2nd Hit)
+42,,,

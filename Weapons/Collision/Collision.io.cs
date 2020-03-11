@@ -64,7 +64,7 @@ namespace MHW_Editor.Weapons.Collision {
 
                 name.name = Encoding.UTF8.GetString(stringBytes.Subsequence(0, stringBytes.Count).ToArray());
 
-                name.unk1 = reader.ReadInt32();
+                name.clgmId = reader.ReadInt32();
                 name.moveId = reader.ReadInt32();
                 name.unk2 = reader.ReadInt32();
                 name.unk3 = reader.ReadUInt16();
@@ -223,7 +223,7 @@ namespace MHW_Editor.Weapons.Collision {
         private static void WriteNames(IEnumerable<Name> names, BinaryWriter writer) {
             foreach (var name in names) {
                 writer.Write(name.name.ToCharArray());
-                writer.Write(name.unk1);
+                writer.Write(name.clgmId);
                 writer.Write(name.moveId);
                 writer.Write(name.unk2);
                 writer.Write(name.unk3);

@@ -156,11 +156,13 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [SortOrder(450)]
         public float unk46 { get; set; } // 161
 
+        [DisplayName("Lingering Hurtbox")]
         [SortOrder(460)]
-        public byte unk47 { get; set; } // 165
+        public byte lingeringHurtbox { get; set; } // 165
 
+        [DisplayName("Frame Delay")]
         [SortOrder(470)]
-        public float unk48 { get; set; } // 166
+        public float frameDelay { get; set; } // 166
 
         [SortOrder(480)]
         public uint unk49 { get; set; } // 170
@@ -168,16 +170,17 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [SortOrder(490)]
         public ushort unk50 { get; set; } // 174
 
-        [DisplayName("Sprite Gen")]
+        [DisplayName("Energy Gen")]
         [SortOrder(500)]
-        public float sprite_gen { get; set; } // 176
+        public float energyGen { get; set; } // 176
 
-        [DisplayName("Motion Value (From Spending Enough Sprite)")]
+        [DisplayName("Conditional Motion value change/replace")]
         [SortOrder(510)]
-        public float motion_value_from_spending_enough_sprite { get; set; } // 180
+        public float conditionalMotionValueChangeReplace { get; set; } // 180
 
+        [DisplayName("Conditional element modifier change/replace")]
         [SortOrder(520)]
-        public float unk53 { get; set; } // 184
+        public float conditionalElementModifierChangeReplace { get; set; } // 184
 
         [SortOrder(530)]
         public uint unk54 { get; set; } // 188

@@ -1,0 +1,8 @@
+﻿Move_Id,untranslate,translated,description
+0,,,
+1,,,
+-1,粉塵,,guess dummy
+2,粉塵起爆(爆破),Dust Explosion,(Blast)
+3,粉塵起爆(回復),Dust Explosion,(Recovery)
+4,粉塵起爆(麻痺),Dust Explosion,(Paralysis)
+5,粉塵起爆(毒),Dust Explosion,(Poison)

@@ -1,0 +1,37 @@
+﻿Move_Id,untranslate,translated,description
+0,砲撃（通常）,Shelling,[Normal]
+1,砲撃（放射）,Shelling,[Long]
+2,砲撃（拡散）,Shelling,[Wide] 
+3,溜め砲撃（通常）,Charged Shelling,[Normal]
+4,溜め砲撃（放射）,Charged Shelling,[Long]
+5,溜め砲撃（拡散）,Charged Shelling,[Wide] 
+6,フルバースト（通常）,Full Burst,[Normal]
+7,フルバースト（放射）,Full Burst,[Long]
+8,フルバースト（拡散）,Full Burst,[Wide] 
+9,竜撃砲（通常）,Wyvernfire,[Normal]
+10,竜撃砲（放射）,Wyvernfire,[Long]
+11,竜撃砲（拡散）,Wyvernfire,[Wide] 
+12,スリンガーパイル本体,Wyvernstake Blast,(Initial Hit)
+13,パイル本体(通常＆起爆),Wyrmstake,(Ticks)
+14,起爆杭誘爆・中以上,Wyvernstake Blast,(Mid/High Level triggered) (Explosions)
+15,起爆杭誘爆・弱,Wyvernstake Blast,(Low Level triggered) (Explosions)
+16,乗りチャンス後の煙,,guess dummy
+17,乗りチャンスフルバ（通常）,,guess dummy
+18,乗りチャンスフルバラスト頭（通常）,Burst Fire,[Normal] [Mounting] [Head] (Full Burst)
+19,乗りチャンスフルバラスト胴（通常）,Burst Fire,[Normal] [Mounting] [Body] (Full Burst)
+20,乗りチャンスフルバラスト尾（通常）,Burst Fire,[Normal] [Mounting] [Tail] (Full Burst)
+21,,,
+22,乗りチャンスフルバ（放射）,,guess dummy
+23,乗りチャンスフルバラスト頭（放射）,Burst Fire,[Long] [Mounting] [Head] (Full Burst)
+24,乗りチャンスフルバラスト胴（放射）,Burst Fire,[Long] [Mounting] [Body] (Full Burst)
+25,乗りチャンスフルバラスト尾（放射）,Burst Fire,[Long] [Mounting] [Tail] (Full Burst)
+26,,,
+27,乗りチャンスフルバ（拡散）,,guess dummy
+28,乗りチャンスフルバラスト頭（拡散）,Burst Fire,[Wide] [Mounting] [Head] (Full Burst)
+29,乗りチャンスフルバラスト胴（拡散）,Burst Fire,[Wide] [Mounting] [Body] (Full Burst)
+30,乗りチャンスフルバラスト尾（拡散）,Burst Fire,[Wide] [Mounting] [Tail] (Full Burst)
+31,,,
+32,,,
+33,スリンガーパイル被ダメ用,,guess dummy
+34,,,
+35,通常パイル爆発,Wyrmstake,(Explosion)

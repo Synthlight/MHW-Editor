@@ -34,6 +34,7 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [SortOrder(60)]
         public uint unk1 { get; set; }
 
+        [DisplayName("Attack Range (if unk1 == 1)")]
         [SortOrder(70)]
         public uint unk2 { get; set; }
 

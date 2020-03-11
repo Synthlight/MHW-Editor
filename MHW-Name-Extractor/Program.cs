@@ -62,11 +62,11 @@ namespace MHW_Name_Extractor {
             var text = File.ReadAllText(file);
             var lines = text.Split(new[] {'\r', '\n'}, StringSplitOptions.RemoveEmptyEntries);
             var entries = from line in lines.Subsequence(1, lines.Length - 2)
-                          where line != ",,,"
+                          where !line.EndsWith(",,,")
                           let parts = line.Split(',')
                           let name = parts[2]
                           let desc = parts[3]
-                          where !string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(desc)
+                          where !string.IsNullOrEmpty(name) || !string.IsNullOrEmpty(desc)
                           select new {
                               id = int.Parse(parts[0]), // Skip 1, the untranslated name.
                               name,

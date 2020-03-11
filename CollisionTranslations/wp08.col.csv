@@ -1,0 +1,74 @@
+﻿Move_Id,untranslate,translated,description
+0,斧：ジャンプ斬り（ジャンプ変形斬り）,Axe: Jumping Slash,
+1,剣：ジャンプ斬り（ジャンプ変形斬り）,Sword: Jumping Slash,
+2,ジャンプ属性解放突き,,guess dummy
+3,斧：縦斬り,Axe: Overhead Slash,
+4,斧：突進斬り,Axe: Forward Slash,
+5,斧：横斬り（武器出し）,Axe: Side Slash,/ Sword: Morph Slash
+6,斧：斬り上げ,Axe: Rising Slash,
+7,斧：振り回し・右,Axe: Wild Swing,(Right Swing)
+8,斧：振り回し・左,Axe: Wild Swing,(Left Swing)
+9,斧：なぎ払いフィニッシュ,Axe: Morph Sweep,(1st Hit)
+10,剣：縦斬り,Sword: Overhead Slash,/ Axe: Morph Slash
+11,剣：斬り上げ１,Sword: Right Rising Slash,
+12,剣：斬り上げ２,Sword: Left Rising Slash,
+13,剣：二連斬り(一段目),Sword: Double Slash,(1st Hit)
+14,属性解放突き,Element Discharge,(Thrust)
+15,属性解放フィニッシュ,,guess dummy
+16,簡易属性解放フィニッシュ,,guess dummy
+17,リロード,,guess dummy
+18,剣：二連斬り(二段目),Sword: Double Slash,(2nd Hit)
+19,斧：なぎ払いフィニッシュ二発目,Axe: Morph Sweep,(2nd Hit)
+20,斧：なぎ払いフィニッシュ三発目,Axe: Morph Sweep,(3rd Hit)
+21,属性解放突きループ,Elemental Discharge,(Ticks)
+22,斧：ダッシュ斬り,,guess dummy
+23,斧：下がり斬り,Axe: Fade Slash,
+24,剣：バクステ斧斬り,Sword: Downward Fade Slash,
+25,,,
+26,剣：ぶっ刺し開始,Zero Sum Discharge,(Thrust)
+27,剣：ぶっ刺しループ,Zero Sum Discharge,(Ticks)
+28,,,
+29,剣：つなぎスラッシュ,Sword: Bridging Slash,
+30,,,
+31,剣ビン覚醒追撃,Sword: Phial Burst,[Amped]
+32,,,
+33,剣：昇龍二連斬り（一段目）,Sword: Heavenward Flurry,(1st Hit)
+34,剣：昇龍二連斬り（二段目）,Sword: Heavenward Flurry,(2nd Hit)
+35,,,
+36,斧:スライディング抜刀,Axe: Jumping Sweep,
+37,剣:スライディング抜刀,Sword: Jumping Rising Slash,
+38,,,
+39,,,
+40,剣：覚醒縦斬り,Sword: Overhead Slash,[Amped] / Morph Slash
+41,,,
+42,剣：覚醒斬り上げ１,Sword: Right Rising Slash,[Amped]
+43,,,
+44,剣：覚醒斬り上げ２,Sword: Left Rising Slash,[Amped]
+45,,,
+46,剣：覚醒二連（一段目）,Sword: Double Slash,[Amped] (1st Hit)
+47,,,
+48,剣：覚醒二連（二段目）,Sword: Double Slash,[Amped] (2nd Hit)
+49,,,
+50,剣：覚醒昇龍二連（一段目）,Sword: Heavenward Flurry,[Amped] (1st Hit)
+51,,,
+52,剣：覚醒昇龍二連（二段目）,Sword: Heavenward Flurry,[Amped] (2nd Hit)
+53,,,
+54,,,
+55,剣：覚醒つなぎスラッシュ,Sword: Bridging Slash,[Amped]
+56,,,
+57,乗り:単発,Element Discharge,[Mounting] (Thrust)
+58,乗り:多段,Element Discharge,[Mounting] (Ticks)
+59,乗り頭:フィニッシュ,Element Discharge,[Mounting] [Head] Finisher
+60,乗り胴:フィニッシュ,Element Discharge,[Mounting] [Body] Finisher
+61,乗り尾:フィニッシュ,Element Discharge,[Mounting] [Tail] Finisher
+62,,,
+63,振り回し斧フィニッシュ 1撃,Axe: Heavy Slam,(1st Hit)
+64,振り回し斧フィニッシュ 2撃,Axe: Heavy Slam,(2nd Hit)
+65,,,
+66,斧:クローコンスト攻撃 1撃,Weapon Attack,[Clutching] (1st Hit)
+67,斧:クローコンスト攻撃 2撃,Weapon Attack,[Clutching] (2nd Hit)
+68,,,
+69,属性解放クローフィニッシュ・１撃目,Special Claw Shot,(1st Hit)
+70,属性解放クローフィニッシュ・２撃目,Special Claw Shot,(2nd Hit)
+71,,,
+72,剣：ぶっ刺し開始 クロー張り付きから,Zero Sum Discharge,[Clutching] (Thrust)

@@ -8,18 +8,18 @@
 6,散弾Lv１,Spread Ammo Lv1,
 7,散弾Lv２,Spread Ammo Lv2,
 8,散弾Lv３,Spread Ammo Lv3,
-9,拡散弾本体,Cluster Ammo Shell,
-10,拡散弾子,Cluster Ammo Projectile,
+9,拡散弾本体,Cluster Ammo,Projectile
+10,拡散弾子,Cluster Ammo,sub-Ammo
 11,拡散弾爆発Lv１,Cluster Ammo Lv1,
 12,拡散弾爆発Lv２,Cluster Ammo Lv2,
 13,拡散弾爆発Lv３,Cluster Ammo Lv3,
-14,竜撃弾,Wyvern Ammo ,1st hit
-15,竜撃弾(子),Wyvern Ammo (Small),2nd hit
-16,徹甲榴弾本体,Sticky Ammo Hit,
-17,徹甲榴弾Lv１,Sticky Ammo 1,
-18,徹甲榴弾Lv２,Sticky Ammo 2,
-19,徹甲榴弾Lv３,Sticky Ammo 3,
-20,斬裂弾本体,Slicing Ammo Projectile,Hit
+14,竜撃弾,Wyvern Ammo ,(Primary Hit)
+15,竜撃弾(子),Wyvern Ammo,(Secondary Hit)
+16,徹甲榴弾本体,Sticky Ammo,Projectile
+17,徹甲榴弾Lv１,Sticky Ammo Lv1,
+18,徹甲榴弾Lv２,Sticky Ammo Lv2,
+19,徹甲榴弾Lv３,Sticky Ammo Lv3,
+20,斬裂弾本体,Slicing Ammo,Projectile
 21,斬裂弾爆発,Slicing Ammo,Sever 
 22,火炎弾,Flaming Ammo,
 23,水冷弾,Water Ammo,
@@ -38,7 +38,9 @@
 36,回復弾Lv２,Recover Ammo Lv2,
 37,鬼人弾,Demon Ammo,
 38,硬化弾,Armor Ammo,
-39,捕獲麻酔弾,Tranquil Ammo,
+39,捕獲麻酔弾,Tranq Ammo,
+-1,設置爆弾発射,,guess dummy
+-1,当たり無し,,guess dummy
 40,,,
 41,,,
 42,,,
@@ -52,29 +54,31 @@
 50,,,
 51,ガトリング,Wyvernheart,
 52,スナイプ,Wyvernsnipe ,
-53,スナイプ爆発(小),WyvernSnipe Explosion (S),
-54,スナイプ爆発(中),WyvernSnipe Explosion (M),
-55,スナイプ爆発(大),WyvernSnipe Explosion (L),
-56,強化スナイプ,WyvernSnipe Type 2,
-57,強化スナイプ完全一致,WyvernSnipe Type 2 (Perfect Match),
-58,強化スナイプ肉質のみ,Wyvernsnipe Type 2 (HZV Only),
-59,強化スナイプ距離のみ,Wyvernsnipe Type 2 (Distance Only),
-60,強化スナイプ不一致,Wyvernsnipe Type 2 (No Match),
-61,設置爆弾爆発Lv1,Wyvernblast (S),
-62,設置爆弾爆発Lv2,Wyvernblast (M),
-63,設置爆弾爆発Lv3,Wyvernblast (L),
-64,設置爆弾爆発Lv4,Wyvernblast (XL),
+53,スナイプ爆発(小),Wyvernsnipe ,Explosion (S)
+54,スナイプ爆発(中),Wyvernsnipe ,Explosion (M)
+55,スナイプ爆発(大),Wyvernsnipe ,Explosion (L)
+56,強化スナイプ,Wyvernsnipe Type 2,Projectile
+57,強化スナイプ完全一致,Wyvernsnipe Type 2,(Correct distance and HZV > 30.)
+58,強化スナイプ肉質のみ,Wyvernsnipe Type 2,(Incorrect distance and HZV > 30.)
+59,強化スナイプ距離のみ,Wyvernsnipe Type 2,(Correct distance and HZV <= 30.)
+60,強化スナイプ不一致,Wyvernsnipe Type 2,(Incorrect distance and HZV <= 30.)
+-1,設置爆弾本体,,guess dummy
+61,設置爆弾爆発Lv1,Wyvernblast,(S)
+62,設置爆弾爆発Lv2,Wyvernblast,(M)
+63,設置爆弾爆発Lv3,Wyvernblast,(L)
+64,設置爆弾爆発Lv4,,guess dummy
 65,,,
 66,,,
 67,,,
-68,敵掴み攻撃 開始,HBG Clutch Claw Attack First Hit,
-69,敵掴み攻撃 ループ ガトリング,HBG Clutch Claw Repeated Attack,
-70,敵掴み攻撃 終了 ガトリング,HBG Clutch Claw Attack Final Hit,
-71,敵掴み攻撃 終了 スナイプ,HBG Clutch Claw Snipe Attack,
-72,敵掴み爆弾本体,LBG Clutch Claw Attack Main Hit,1st hit
-73,敵掴み爆弾爆発,LBG Clutch Claw Attack Explosion,2nd hit
+68,敵掴み攻撃 開始,Weapon Attack,guess dummy
+69,敵掴み攻撃 ループ ガトリング,Weapon Attack,[Clutching] HBG (Repeated)
+70,敵掴み攻撃 終了 ガトリング,Weapon Attack,[Clutching] HBG (Final Hit)
+71,敵掴み攻撃 終了 スナイプ,Weapon Attack,[Clutching] HBG (Snipe)
+72,敵掴み爆弾本体,Weapon Attack,[Clutching] LBG (Main Hit)
+73,敵掴み爆弾爆発,Weapon Attack,[Clutching] LBG (Explosion)
 74,,,
-75,反撃竜弾爆発Lv1,Wyvernblast Counter Explosion (S),
-76,反撃竜弾爆発Lv2,Wyvernblast Counter Explosion (M),
-77,反撃竜弾爆発Lv3,Wyvernblast Counter Explosion (L),
-78,反撃竜弾爆発Lv4,Wyvernblast Counter Explosion (XL),
+75,反撃竜弾爆発Lv1,Wyvernblast Counter Explosion,(S)
+76,反撃竜弾爆発Lv2,Wyvernblast Counter Explosion,(M)
+77,反撃竜弾爆発Lv3,Wyvernblast Counter Explosion,(L)
+78,反撃竜弾爆発Lv4,Wyvernblast Counter Explosion,(XL)
+-1,設置爆弾ダメージ,,guess dummy
