@@ -11515,31 +11515,31 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Unk82_displayName = "Unk82";
-        public const int Unk82_sortIndex = 40750;
-        [SortOrder(Unk82_sortIndex)]
-        [DisplayName(Unk82_displayName)]
-        public virtual float Unk82 {
+        public const string Offensive_Guard_displayName = "Offensive Guard";
+        public const int Offensive_Guard_sortIndex = 40750;
+        [SortOrder(Offensive_Guard_sortIndex)]
+        [DisplayName(Offensive_Guard_displayName)]
+        public virtual float Offensive_Guard {
             get => GetData<float>(1882);
             set {
                 if (GetData<float>(1882) == value) return;
-                SetData(1882, value, nameof(Unk82));
+                SetData(1882, value, nameof(Offensive_Guard));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk82));
+                OnPropertyChanged(nameof(Offensive_Guard));
             }
         }
 
-        public const string Unk83_displayName = "Unk83";
-        public const int Unk83_sortIndex = 40800;
-        [SortOrder(Unk83_sortIndex)]
-        [DisplayName(Unk83_displayName)]
-        public virtual float Unk83 {
+        public const string Coalescence_displayName = "Coalescence";
+        public const int Coalescence_sortIndex = 40800;
+        [SortOrder(Coalescence_sortIndex)]
+        [DisplayName(Coalescence_displayName)]
+        public virtual float Coalescence {
             get => GetData<float>(1886);
             set {
                 if (GetData<float>(1886) == value) return;
-                SetData(1886, value, nameof(Unk83));
+                SetData(1886, value, nameof(Coalescence));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk83));
+                OnPropertyChanged(nameof(Coalescence));
             }
         }
 
@@ -13199,17 +13199,17 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Unk84_displayName = "Unk84";
-        public const int Unk84_sortIndex = 46650;
-        [SortOrder(Unk84_sortIndex)]
-        [DisplayName(Unk84_displayName)]
-        public virtual float Unk84 {
+        public const string Unk82_displayName = "Unk82";
+        public const int Unk82_sortIndex = 46650;
+        [SortOrder(Unk82_sortIndex)]
+        [DisplayName(Unk82_displayName)]
+        public virtual float Unk82 {
             get => GetData<float>(2117);
             set {
                 if (GetData<float>(2117) == value) return;
-                SetData(2117, value, nameof(Unk84));
+                SetData(2117, value, nameof(Unk82));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk84));
+                OnPropertyChanged(nameof(Unk82));
             }
         }
 
@@ -13509,157 +13509,157 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Unk85_displayName = "Unk85";
-        public const int Unk85_sortIndex = 47750;
-        [SortOrder(Unk85_sortIndex)]
-        [DisplayName(Unk85_displayName)]
-        public virtual float Unk85 {
+        public const string Unk83_displayName = "Unk83";
+        public const int Unk83_sortIndex = 47750;
+        [SortOrder(Unk83_sortIndex)]
+        [DisplayName(Unk83_displayName)]
+        public virtual float Unk83 {
             get => GetData<float>(2197);
             set {
                 if (GetData<float>(2197) == value) return;
-                SetData(2197, value, nameof(Unk85));
+                SetData(2197, value, nameof(Unk83));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk83));
+            }
+        }
+
+        public const string Unk84_displayName = "Unk84";
+        public const int Unk84_sortIndex = 47800;
+        [SortOrder(Unk84_sortIndex)]
+        [DisplayName(Unk84_displayName)]
+        public virtual float Unk84 {
+            get => GetData<float>(2201);
+            set {
+                if (GetData<float>(2201) == value) return;
+                SetData(2201, value, nameof(Unk84));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk84));
+            }
+        }
+
+        public const string Unk85_displayName = "Unk85";
+        public const int Unk85_sortIndex = 47850;
+        [SortOrder(Unk85_sortIndex)]
+        [DisplayName(Unk85_displayName)]
+        public virtual uint Unk85 {
+            get => GetData<uint>(2205);
+            set {
+                if (GetData<uint>(2205) == value) return;
+                SetData(2205, value, nameof(Unk85));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk85));
             }
         }
 
         public const string Unk86_displayName = "Unk86";
-        public const int Unk86_sortIndex = 47800;
+        public const int Unk86_sortIndex = 47900;
         [SortOrder(Unk86_sortIndex)]
         [DisplayName(Unk86_displayName)]
-        public virtual float Unk86 {
-            get => GetData<float>(2201);
+        public virtual uint Unk86 {
+            get => GetData<uint>(2209);
             set {
-                if (GetData<float>(2201) == value) return;
-                SetData(2201, value, nameof(Unk86));
+                if (GetData<uint>(2209) == value) return;
+                SetData(2209, value, nameof(Unk86));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk86));
             }
         }
 
         public const string Unk87_displayName = "Unk87";
-        public const int Unk87_sortIndex = 47850;
+        public const int Unk87_sortIndex = 47950;
         [SortOrder(Unk87_sortIndex)]
         [DisplayName(Unk87_displayName)]
-        public virtual uint Unk87 {
-            get => GetData<uint>(2205);
+        public virtual float Unk87 {
+            get => GetData<float>(2213);
             set {
-                if (GetData<uint>(2205) == value) return;
-                SetData(2205, value, nameof(Unk87));
+                if (GetData<float>(2213) == value) return;
+                SetData(2213, value, nameof(Unk87));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk87));
             }
         }
 
         public const string Unk88_displayName = "Unk88";
-        public const int Unk88_sortIndex = 47900;
+        public const int Unk88_sortIndex = 48000;
         [SortOrder(Unk88_sortIndex)]
         [DisplayName(Unk88_displayName)]
-        public virtual uint Unk88 {
-            get => GetData<uint>(2209);
+        public virtual float Unk88 {
+            get => GetData<float>(2217);
             set {
-                if (GetData<uint>(2209) == value) return;
-                SetData(2209, value, nameof(Unk88));
+                if (GetData<float>(2217) == value) return;
+                SetData(2217, value, nameof(Unk88));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk88));
             }
         }
 
         public const string Unk89_displayName = "Unk89";
-        public const int Unk89_sortIndex = 47950;
+        public const int Unk89_sortIndex = 48050;
         [SortOrder(Unk89_sortIndex)]
         [DisplayName(Unk89_displayName)]
         public virtual float Unk89 {
-            get => GetData<float>(2213);
+            get => GetData<float>(2221);
             set {
-                if (GetData<float>(2213) == value) return;
-                SetData(2213, value, nameof(Unk89));
+                if (GetData<float>(2221) == value) return;
+                SetData(2221, value, nameof(Unk89));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk89));
             }
         }
 
         public const string Unk90_displayName = "Unk90";
-        public const int Unk90_sortIndex = 48000;
+        public const int Unk90_sortIndex = 48100;
         [SortOrder(Unk90_sortIndex)]
         [DisplayName(Unk90_displayName)]
-        public virtual float Unk90 {
-            get => GetData<float>(2217);
+        public virtual uint Unk90 {
+            get => GetData<uint>(2225);
             set {
-                if (GetData<float>(2217) == value) return;
-                SetData(2217, value, nameof(Unk90));
+                if (GetData<uint>(2225) == value) return;
+                SetData(2225, value, nameof(Unk90));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk90));
             }
         }
 
         public const string Unk91_displayName = "Unk91";
-        public const int Unk91_sortIndex = 48050;
+        public const int Unk91_sortIndex = 48150;
         [SortOrder(Unk91_sortIndex)]
         [DisplayName(Unk91_displayName)]
-        public virtual float Unk91 {
-            get => GetData<float>(2221);
+        public virtual uint Unk91 {
+            get => GetData<uint>(2229);
             set {
-                if (GetData<float>(2221) == value) return;
-                SetData(2221, value, nameof(Unk91));
+                if (GetData<uint>(2229) == value) return;
+                SetData(2229, value, nameof(Unk91));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk91));
             }
         }
 
         public const string Unk92_displayName = "Unk92";
-        public const int Unk92_sortIndex = 48100;
+        public const int Unk92_sortIndex = 48200;
         [SortOrder(Unk92_sortIndex)]
         [DisplayName(Unk92_displayName)]
-        public virtual uint Unk92 {
-            get => GetData<uint>(2225);
+        public virtual float Unk92 {
+            get => GetData<float>(2233);
             set {
-                if (GetData<uint>(2225) == value) return;
-                SetData(2225, value, nameof(Unk92));
+                if (GetData<float>(2233) == value) return;
+                SetData(2233, value, nameof(Unk92));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk92));
             }
         }
 
         public const string Unk93_displayName = "Unk93";
-        public const int Unk93_sortIndex = 48150;
+        public const int Unk93_sortIndex = 48250;
         [SortOrder(Unk93_sortIndex)]
         [DisplayName(Unk93_displayName)]
-        public virtual uint Unk93 {
-            get => GetData<uint>(2229);
-            set {
-                if (GetData<uint>(2229) == value) return;
-                SetData(2229, value, nameof(Unk93));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk93));
-            }
-        }
-
-        public const string Unk94_displayName = "Unk94";
-        public const int Unk94_sortIndex = 48200;
-        [SortOrder(Unk94_sortIndex)]
-        [DisplayName(Unk94_displayName)]
-        public virtual float Unk94 {
-            get => GetData<float>(2233);
-            set {
-                if (GetData<float>(2233) == value) return;
-                SetData(2233, value, nameof(Unk94));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk94));
-            }
-        }
-
-        public const string Unk95_displayName = "Unk95";
-        public const int Unk95_sortIndex = 48250;
-        [SortOrder(Unk95_sortIndex)]
-        [DisplayName(Unk95_displayName)]
-        public virtual float Unk95 {
+        public virtual float Unk93 {
             get => GetData<float>(2237);
             set {
                 if (GetData<float>(2237) == value) return;
-                SetData(2237, value, nameof(Unk95));
+                SetData(2237, value, nameof(Unk93));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk95));
+                OnPropertyChanged(nameof(Unk93));
             }
         }
 

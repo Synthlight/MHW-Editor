@@ -713,8 +713,8 @@ namespace MHW_Editor.PlData {
         public float Unk79; // Offset: 1870
         public float Unk80; // Offset: 1874
         public float Unk81; // Offset: 1878
-        public float Unk82; // Offset: 1882
-        public float Unk83; // Offset: 1886
+        public float Offensive_Guard; // Offset: 1882
+        public float Coalescence; // Offset: 1886
         public ushort Food_Effect_Life_Up_1; // Offset: 1890
         public ushort Food_Effect_Life_Up_2; // Offset: 1892
         public ushort Food_Effect_Life_Up_3; // Offset: 1894
@@ -799,7 +799,7 @@ namespace MHW_Editor.PlData {
         public float Feline_Recoil_Attack_Multiplier_3; // Offset: 2105
         public float Feline_Recoil_Attack_Multiplier_4; // Offset: 2109
         public float Feline_Recoil_Attack_Multiplier_5; // Offset: 2113
-        public float Unk84; // Offset: 2117
+        public float Unk82; // Offset: 2117
         public float Music_Skill_Bless_Random_Rate; // Offset: 2121
         public float Music_Skill_Bless_Damage_Cut_Rate; // Offset: 2125
         public float Music_Skill_Extend_Time; // Offset: 2129
@@ -819,16 +819,16 @@ namespace MHW_Editor.PlData {
         public float Music_Skill_Mantle_Duration; // Offset: 2185
         public float Music_Skill_Mantle_Duration_Put; // Offset: 2189
         public float Music_Skill_Stamina_Up_Rate; // Offset: 2193
-        public float Unk85; // Offset: 2197
-        public float Unk86; // Offset: 2201
-        public uint Unk87; // Offset: 2205
-        public uint Unk88; // Offset: 2209
-        public float Unk89; // Offset: 2213
-        public float Unk90; // Offset: 2217
-        public float Unk91; // Offset: 2221
-        public uint Unk92; // Offset: 2225
-        public uint Unk93; // Offset: 2229
-        public float Unk94; // Offset: 2233
-        public float Unk95; // Offset: 2237
+        public float Unk83; // Offset: 2197
+        public float Unk84; // Offset: 2201
+        public uint Unk85; // Offset: 2205
+        public uint Unk86; // Offset: 2209
+        public float Unk87; // Offset: 2213
+        public float Unk88; // Offset: 2217
+        public float Unk89; // Offset: 2221
+        public uint Unk90; // Offset: 2225
+        public uint Unk91; // Offset: 2229
+        public float Unk92; // Offset: 2233
+        public float Unk93; // Offset: 2237
     }
 }

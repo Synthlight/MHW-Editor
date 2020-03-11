@@ -562,8 +562,8 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Unk{i++}", 1870, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 1874, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 1878, typeof(float)),
-                new MhwStructData.Entry($"Unk{i++}", 1882, typeof(float)),
-                new MhwStructData.Entry($"Unk{i++}", 1886, typeof(float)),
+                new MhwStructData.Entry("Offensive Guard", 1882, typeof(float)),
+                new MhwStructData.Entry("Coalescence", 1886, typeof(float)),
 
                 Spacer
             });
