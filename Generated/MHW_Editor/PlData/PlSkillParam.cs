@@ -10871,1557 +10871,1548 @@ namespace MHW_Editor.PlData {
             }
         }
 
+        public const string Unk_Safi_1_displayName = "Unk Safi 1";
+        public const int Unk_Safi_1_sortIndex = 38450;
+        [SortOrder(Unk_Safi_1_sortIndex)]
+        [DisplayName(Unk_Safi_1_displayName)]
+        public virtual byte Unk_Safi_1 {
+            get => GetData<byte>(1698);
+            set {
+                if (GetData<byte>(1698) == value) return;
+                SetData(1698, value, nameof(Unk_Safi_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_Safi_1));
+            }
+        }
+
         public const string Unk36_displayName = "Unk36";
-        public const int Unk36_sortIndex = 38450;
+        public const int Unk36_sortIndex = 38500;
         [SortOrder(Unk36_sortIndex)]
         [DisplayName(Unk36_displayName)]
         public virtual float Unk36 {
-            get => GetData<float>(1698);
+            get => GetData<float>(1699);
             set {
-                if (GetData<float>(1698) == value) return;
-                SetData(1698, value, nameof(Unk36));
+                if (GetData<float>(1699) == value) return;
+                SetData(1699, value, nameof(Unk36));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk36));
             }
         }
 
         public const string Unk37_displayName = "Unk37";
-        public const int Unk37_sortIndex = 38500;
+        public const int Unk37_sortIndex = 38550;
         [SortOrder(Unk37_sortIndex)]
         [DisplayName(Unk37_displayName)]
         public virtual float Unk37 {
-            get => GetData<float>(1702);
+            get => GetData<float>(1703);
             set {
-                if (GetData<float>(1702) == value) return;
-                SetData(1702, value, nameof(Unk37));
+                if (GetData<float>(1703) == value) return;
+                SetData(1703, value, nameof(Unk37));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk37));
             }
         }
 
         public const string Unk38_displayName = "Unk38";
-        public const int Unk38_sortIndex = 38550;
+        public const int Unk38_sortIndex = 38600;
         [SortOrder(Unk38_sortIndex)]
         [DisplayName(Unk38_displayName)]
         public virtual float Unk38 {
-            get => GetData<float>(1706);
+            get => GetData<float>(1707);
             set {
-                if (GetData<float>(1706) == value) return;
-                SetData(1706, value, nameof(Unk38));
+                if (GetData<float>(1707) == value) return;
+                SetData(1707, value, nameof(Unk38));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk38));
             }
         }
 
         public const string Unk39_displayName = "Unk39";
-        public const int Unk39_sortIndex = 38600;
+        public const int Unk39_sortIndex = 38650;
         [SortOrder(Unk39_sortIndex)]
         [DisplayName(Unk39_displayName)]
         public virtual float Unk39 {
-            get => GetData<float>(1710);
+            get => GetData<float>(1711);
             set {
-                if (GetData<float>(1710) == value) return;
-                SetData(1710, value, nameof(Unk39));
+                if (GetData<float>(1711) == value) return;
+                SetData(1711, value, nameof(Unk39));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk39));
             }
         }
 
         public const string Unk40_displayName = "Unk40";
-        public const int Unk40_sortIndex = 38650;
+        public const int Unk40_sortIndex = 38700;
         [SortOrder(Unk40_sortIndex)]
         [DisplayName(Unk40_displayName)]
         public virtual float Unk40 {
-            get => GetData<float>(1714);
+            get => GetData<float>(1715);
             set {
-                if (GetData<float>(1714) == value) return;
-                SetData(1714, value, nameof(Unk40));
+                if (GetData<float>(1715) == value) return;
+                SetData(1715, value, nameof(Unk40));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk40));
             }
         }
 
         public const string Unk41_displayName = "Unk41";
-        public const int Unk41_sortIndex = 38700;
+        public const int Unk41_sortIndex = 38750;
         [SortOrder(Unk41_sortIndex)]
         [DisplayName(Unk41_displayName)]
         public virtual float Unk41 {
-            get => GetData<float>(1718);
+            get => GetData<float>(1719);
             set {
-                if (GetData<float>(1718) == value) return;
-                SetData(1718, value, nameof(Unk41));
+                if (GetData<float>(1719) == value) return;
+                SetData(1719, value, nameof(Unk41));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk41));
             }
         }
 
         public const string Unk42_displayName = "Unk42";
-        public const int Unk42_sortIndex = 38750;
+        public const int Unk42_sortIndex = 38800;
         [SortOrder(Unk42_sortIndex)]
         [DisplayName(Unk42_displayName)]
         public virtual float Unk42 {
-            get => GetData<float>(1722);
+            get => GetData<float>(1723);
             set {
-                if (GetData<float>(1722) == value) return;
-                SetData(1722, value, nameof(Unk42));
+                if (GetData<float>(1723) == value) return;
+                SetData(1723, value, nameof(Unk42));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk42));
             }
         }
 
         public const string Unk43_displayName = "Unk43";
-        public const int Unk43_sortIndex = 38800;
+        public const int Unk43_sortIndex = 38850;
         [SortOrder(Unk43_sortIndex)]
         [DisplayName(Unk43_displayName)]
         public virtual float Unk43 {
-            get => GetData<float>(1726);
+            get => GetData<float>(1727);
             set {
-                if (GetData<float>(1726) == value) return;
-                SetData(1726, value, nameof(Unk43));
+                if (GetData<float>(1727) == value) return;
+                SetData(1727, value, nameof(Unk43));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk43));
             }
         }
 
         public const string Unk44_displayName = "Unk44";
-        public const int Unk44_sortIndex = 38850;
+        public const int Unk44_sortIndex = 38900;
         [SortOrder(Unk44_sortIndex)]
         [DisplayName(Unk44_displayName)]
         public virtual float Unk44 {
-            get => GetData<float>(1730);
+            get => GetData<float>(1731);
             set {
-                if (GetData<float>(1730) == value) return;
-                SetData(1730, value, nameof(Unk44));
+                if (GetData<float>(1731) == value) return;
+                SetData(1731, value, nameof(Unk44));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk44));
             }
         }
 
         public const string Unk45_displayName = "Unk45";
-        public const int Unk45_sortIndex = 38900;
+        public const int Unk45_sortIndex = 38950;
         [SortOrder(Unk45_sortIndex)]
         [DisplayName(Unk45_displayName)]
         public virtual float Unk45 {
-            get => GetData<float>(1734);
+            get => GetData<float>(1735);
             set {
-                if (GetData<float>(1734) == value) return;
-                SetData(1734, value, nameof(Unk45));
+                if (GetData<float>(1735) == value) return;
+                SetData(1735, value, nameof(Unk45));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk45));
             }
         }
 
         public const string Unk46_displayName = "Unk46";
-        public const int Unk46_sortIndex = 38950;
+        public const int Unk46_sortIndex = 39000;
         [SortOrder(Unk46_sortIndex)]
         [DisplayName(Unk46_displayName)]
         public virtual float Unk46 {
-            get => GetData<float>(1738);
+            get => GetData<float>(1739);
             set {
-                if (GetData<float>(1738) == value) return;
-                SetData(1738, value, nameof(Unk46));
+                if (GetData<float>(1739) == value) return;
+                SetData(1739, value, nameof(Unk46));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk46));
             }
         }
 
         public const string Unk47_displayName = "Unk47";
-        public const int Unk47_sortIndex = 39000;
+        public const int Unk47_sortIndex = 39050;
         [SortOrder(Unk47_sortIndex)]
         [DisplayName(Unk47_displayName)]
         public virtual float Unk47 {
-            get => GetData<float>(1742);
+            get => GetData<float>(1743);
             set {
-                if (GetData<float>(1742) == value) return;
-                SetData(1742, value, nameof(Unk47));
+                if (GetData<float>(1743) == value) return;
+                SetData(1743, value, nameof(Unk47));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk47));
             }
         }
 
         public const string Unk48_displayName = "Unk48";
-        public const int Unk48_sortIndex = 39050;
+        public const int Unk48_sortIndex = 39100;
         [SortOrder(Unk48_sortIndex)]
         [DisplayName(Unk48_displayName)]
         public virtual float Unk48 {
-            get => GetData<float>(1746);
+            get => GetData<float>(1747);
             set {
-                if (GetData<float>(1746) == value) return;
-                SetData(1746, value, nameof(Unk48));
+                if (GetData<float>(1747) == value) return;
+                SetData(1747, value, nameof(Unk48));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk48));
             }
         }
 
         public const string Unk49_displayName = "Unk49";
-        public const int Unk49_sortIndex = 39100;
+        public const int Unk49_sortIndex = 39150;
         [SortOrder(Unk49_sortIndex)]
         [DisplayName(Unk49_displayName)]
         public virtual float Unk49 {
-            get => GetData<float>(1750);
+            get => GetData<float>(1751);
             set {
-                if (GetData<float>(1750) == value) return;
-                SetData(1750, value, nameof(Unk49));
+                if (GetData<float>(1751) == value) return;
+                SetData(1751, value, nameof(Unk49));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk49));
             }
         }
 
         public const string Unk50_displayName = "Unk50";
-        public const int Unk50_sortIndex = 39150;
+        public const int Unk50_sortIndex = 39200;
         [SortOrder(Unk50_sortIndex)]
         [DisplayName(Unk50_displayName)]
         public virtual float Unk50 {
-            get => GetData<float>(1754);
+            get => GetData<float>(1755);
             set {
-                if (GetData<float>(1754) == value) return;
-                SetData(1754, value, nameof(Unk50));
+                if (GetData<float>(1755) == value) return;
+                SetData(1755, value, nameof(Unk50));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk50));
             }
         }
 
         public const string Unk51_displayName = "Unk51";
-        public const int Unk51_sortIndex = 39200;
+        public const int Unk51_sortIndex = 39250;
         [SortOrder(Unk51_sortIndex)]
         [DisplayName(Unk51_displayName)]
         public virtual float Unk51 {
-            get => GetData<float>(1758);
+            get => GetData<float>(1759);
             set {
-                if (GetData<float>(1758) == value) return;
-                SetData(1758, value, nameof(Unk51));
+                if (GetData<float>(1759) == value) return;
+                SetData(1759, value, nameof(Unk51));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk51));
             }
         }
 
         public const string Unk52_displayName = "Unk52";
-        public const int Unk52_sortIndex = 39250;
+        public const int Unk52_sortIndex = 39300;
         [SortOrder(Unk52_sortIndex)]
         [DisplayName(Unk52_displayName)]
         public virtual float Unk52 {
-            get => GetData<float>(1762);
+            get => GetData<float>(1763);
             set {
-                if (GetData<float>(1762) == value) return;
-                SetData(1762, value, nameof(Unk52));
+                if (GetData<float>(1763) == value) return;
+                SetData(1763, value, nameof(Unk52));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk52));
             }
         }
 
         public const string Unk53_displayName = "Unk53";
-        public const int Unk53_sortIndex = 39300;
+        public const int Unk53_sortIndex = 39350;
         [SortOrder(Unk53_sortIndex)]
         [DisplayName(Unk53_displayName)]
         public virtual float Unk53 {
-            get => GetData<float>(1766);
+            get => GetData<float>(1767);
             set {
-                if (GetData<float>(1766) == value) return;
-                SetData(1766, value, nameof(Unk53));
+                if (GetData<float>(1767) == value) return;
+                SetData(1767, value, nameof(Unk53));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk53));
             }
         }
 
         public const string Unk54_displayName = "Unk54";
-        public const int Unk54_sortIndex = 39350;
+        public const int Unk54_sortIndex = 39400;
         [SortOrder(Unk54_sortIndex)]
         [DisplayName(Unk54_displayName)]
         public virtual float Unk54 {
-            get => GetData<float>(1770);
+            get => GetData<float>(1771);
             set {
-                if (GetData<float>(1770) == value) return;
-                SetData(1770, value, nameof(Unk54));
+                if (GetData<float>(1771) == value) return;
+                SetData(1771, value, nameof(Unk54));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk54));
             }
         }
 
         public const string Unk55_displayName = "Unk55";
-        public const int Unk55_sortIndex = 39400;
+        public const int Unk55_sortIndex = 39450;
         [SortOrder(Unk55_sortIndex)]
         [DisplayName(Unk55_displayName)]
         public virtual float Unk55 {
-            get => GetData<float>(1774);
+            get => GetData<float>(1775);
             set {
-                if (GetData<float>(1774) == value) return;
-                SetData(1774, value, nameof(Unk55));
+                if (GetData<float>(1775) == value) return;
+                SetData(1775, value, nameof(Unk55));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk55));
             }
         }
 
         public const string Unk56_displayName = "Unk56";
-        public const int Unk56_sortIndex = 39450;
+        public const int Unk56_sortIndex = 39500;
         [SortOrder(Unk56_sortIndex)]
         [DisplayName(Unk56_displayName)]
         public virtual float Unk56 {
-            get => GetData<float>(1778);
+            get => GetData<float>(1779);
             set {
-                if (GetData<float>(1778) == value) return;
-                SetData(1778, value, nameof(Unk56));
+                if (GetData<float>(1779) == value) return;
+                SetData(1779, value, nameof(Unk56));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk56));
             }
         }
 
         public const string Unk57_displayName = "Unk57";
-        public const int Unk57_sortIndex = 39500;
+        public const int Unk57_sortIndex = 39550;
         [SortOrder(Unk57_sortIndex)]
         [DisplayName(Unk57_displayName)]
         public virtual float Unk57 {
-            get => GetData<float>(1782);
+            get => GetData<float>(1783);
             set {
-                if (GetData<float>(1782) == value) return;
-                SetData(1782, value, nameof(Unk57));
+                if (GetData<float>(1783) == value) return;
+                SetData(1783, value, nameof(Unk57));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk57));
             }
         }
 
         public const string Unk58_displayName = "Unk58";
-        public const int Unk58_sortIndex = 39550;
+        public const int Unk58_sortIndex = 39600;
         [SortOrder(Unk58_sortIndex)]
         [DisplayName(Unk58_displayName)]
         public virtual float Unk58 {
-            get => GetData<float>(1786);
+            get => GetData<float>(1787);
             set {
-                if (GetData<float>(1786) == value) return;
-                SetData(1786, value, nameof(Unk58));
+                if (GetData<float>(1787) == value) return;
+                SetData(1787, value, nameof(Unk58));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk58));
             }
         }
 
         public const string Unk59_displayName = "Unk59";
-        public const int Unk59_sortIndex = 39600;
+        public const int Unk59_sortIndex = 39650;
         [SortOrder(Unk59_sortIndex)]
         [DisplayName(Unk59_displayName)]
         public virtual float Unk59 {
-            get => GetData<float>(1790);
+            get => GetData<float>(1791);
             set {
-                if (GetData<float>(1790) == value) return;
-                SetData(1790, value, nameof(Unk59));
+                if (GetData<float>(1791) == value) return;
+                SetData(1791, value, nameof(Unk59));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk59));
             }
         }
 
         public const string Unk60_displayName = "Unk60";
-        public const int Unk60_sortIndex = 39650;
+        public const int Unk60_sortIndex = 39700;
         [SortOrder(Unk60_sortIndex)]
         [DisplayName(Unk60_displayName)]
         public virtual float Unk60 {
-            get => GetData<float>(1794);
+            get => GetData<float>(1795);
             set {
-                if (GetData<float>(1794) == value) return;
-                SetData(1794, value, nameof(Unk60));
+                if (GetData<float>(1795) == value) return;
+                SetData(1795, value, nameof(Unk60));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk60));
             }
         }
 
         public const string Unk61_displayName = "Unk61";
-        public const int Unk61_sortIndex = 39700;
+        public const int Unk61_sortIndex = 39750;
         [SortOrder(Unk61_sortIndex)]
         [DisplayName(Unk61_displayName)]
         public virtual float Unk61 {
-            get => GetData<float>(1798);
+            get => GetData<float>(1799);
             set {
-                if (GetData<float>(1798) == value) return;
-                SetData(1798, value, nameof(Unk61));
+                if (GetData<float>(1799) == value) return;
+                SetData(1799, value, nameof(Unk61));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk61));
             }
         }
 
         public const string Unk62_displayName = "Unk62";
-        public const int Unk62_sortIndex = 39750;
+        public const int Unk62_sortIndex = 39800;
         [SortOrder(Unk62_sortIndex)]
         [DisplayName(Unk62_displayName)]
         public virtual float Unk62 {
-            get => GetData<float>(1802);
+            get => GetData<float>(1803);
             set {
-                if (GetData<float>(1802) == value) return;
-                SetData(1802, value, nameof(Unk62));
+                if (GetData<float>(1803) == value) return;
+                SetData(1803, value, nameof(Unk62));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk62));
             }
         }
 
         public const string Unk63_displayName = "Unk63";
-        public const int Unk63_sortIndex = 39800;
+        public const int Unk63_sortIndex = 39850;
         [SortOrder(Unk63_sortIndex)]
         [DisplayName(Unk63_displayName)]
         public virtual float Unk63 {
-            get => GetData<float>(1806);
+            get => GetData<float>(1807);
             set {
-                if (GetData<float>(1806) == value) return;
-                SetData(1806, value, nameof(Unk63));
+                if (GetData<float>(1807) == value) return;
+                SetData(1807, value, nameof(Unk63));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk63));
             }
         }
 
         public const string Unk64_displayName = "Unk64";
-        public const int Unk64_sortIndex = 39850;
+        public const int Unk64_sortIndex = 39900;
         [SortOrder(Unk64_sortIndex)]
         [DisplayName(Unk64_displayName)]
         public virtual float Unk64 {
-            get => GetData<float>(1810);
+            get => GetData<float>(1811);
             set {
-                if (GetData<float>(1810) == value) return;
-                SetData(1810, value, nameof(Unk64));
+                if (GetData<float>(1811) == value) return;
+                SetData(1811, value, nameof(Unk64));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk64));
             }
         }
 
         public const string Unk65_displayName = "Unk65";
-        public const int Unk65_sortIndex = 39900;
+        public const int Unk65_sortIndex = 39950;
         [SortOrder(Unk65_sortIndex)]
         [DisplayName(Unk65_displayName)]
         public virtual float Unk65 {
-            get => GetData<float>(1814);
+            get => GetData<float>(1815);
             set {
-                if (GetData<float>(1814) == value) return;
-                SetData(1814, value, nameof(Unk65));
+                if (GetData<float>(1815) == value) return;
+                SetData(1815, value, nameof(Unk65));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk65));
             }
         }
 
         public const string Unk66_displayName = "Unk66";
-        public const int Unk66_sortIndex = 39950;
+        public const int Unk66_sortIndex = 40000;
         [SortOrder(Unk66_sortIndex)]
         [DisplayName(Unk66_displayName)]
         public virtual float Unk66 {
-            get => GetData<float>(1818);
+            get => GetData<float>(1819);
             set {
-                if (GetData<float>(1818) == value) return;
-                SetData(1818, value, nameof(Unk66));
+                if (GetData<float>(1819) == value) return;
+                SetData(1819, value, nameof(Unk66));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk66));
             }
         }
 
         public const string Unk67_displayName = "Unk67";
-        public const int Unk67_sortIndex = 40000;
+        public const int Unk67_sortIndex = 40050;
         [SortOrder(Unk67_sortIndex)]
         [DisplayName(Unk67_displayName)]
         public virtual float Unk67 {
-            get => GetData<float>(1822);
+            get => GetData<float>(1823);
             set {
-                if (GetData<float>(1822) == value) return;
-                SetData(1822, value, nameof(Unk67));
+                if (GetData<float>(1823) == value) return;
+                SetData(1823, value, nameof(Unk67));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk67));
             }
         }
 
         public const string Unk68_displayName = "Unk68";
-        public const int Unk68_sortIndex = 40050;
+        public const int Unk68_sortIndex = 40100;
         [SortOrder(Unk68_sortIndex)]
         [DisplayName(Unk68_displayName)]
         public virtual float Unk68 {
-            get => GetData<float>(1826);
+            get => GetData<float>(1827);
             set {
-                if (GetData<float>(1826) == value) return;
-                SetData(1826, value, nameof(Unk68));
+                if (GetData<float>(1827) == value) return;
+                SetData(1827, value, nameof(Unk68));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk68));
             }
         }
 
         public const string Unk69_displayName = "Unk69";
-        public const int Unk69_sortIndex = 40100;
+        public const int Unk69_sortIndex = 40150;
         [SortOrder(Unk69_sortIndex)]
         [DisplayName(Unk69_displayName)]
         public virtual float Unk69 {
-            get => GetData<float>(1830);
+            get => GetData<float>(1831);
             set {
-                if (GetData<float>(1830) == value) return;
-                SetData(1830, value, nameof(Unk69));
+                if (GetData<float>(1831) == value) return;
+                SetData(1831, value, nameof(Unk69));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk69));
             }
         }
 
         public const string Unk70_displayName = "Unk70";
-        public const int Unk70_sortIndex = 40150;
+        public const int Unk70_sortIndex = 40200;
         [SortOrder(Unk70_sortIndex)]
         [DisplayName(Unk70_displayName)]
         public virtual float Unk70 {
-            get => GetData<float>(1834);
+            get => GetData<float>(1835);
             set {
-                if (GetData<float>(1834) == value) return;
-                SetData(1834, value, nameof(Unk70));
+                if (GetData<float>(1835) == value) return;
+                SetData(1835, value, nameof(Unk70));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk70));
             }
         }
 
         public const string Unk71_displayName = "Unk71";
-        public const int Unk71_sortIndex = 40200;
+        public const int Unk71_sortIndex = 40250;
         [SortOrder(Unk71_sortIndex)]
         [DisplayName(Unk71_displayName)]
         public virtual float Unk71 {
-            get => GetData<float>(1838);
+            get => GetData<float>(1839);
             set {
-                if (GetData<float>(1838) == value) return;
-                SetData(1838, value, nameof(Unk71));
+                if (GetData<float>(1839) == value) return;
+                SetData(1839, value, nameof(Unk71));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk71));
             }
         }
 
         public const string Unk72_displayName = "Unk72";
-        public const int Unk72_sortIndex = 40250;
+        public const int Unk72_sortIndex = 40300;
         [SortOrder(Unk72_sortIndex)]
         [DisplayName(Unk72_displayName)]
         public virtual float Unk72 {
-            get => GetData<float>(1842);
+            get => GetData<float>(1843);
             set {
-                if (GetData<float>(1842) == value) return;
-                SetData(1842, value, nameof(Unk72));
+                if (GetData<float>(1843) == value) return;
+                SetData(1843, value, nameof(Unk72));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk72));
             }
         }
 
         public const string Unk73_displayName = "Unk73";
-        public const int Unk73_sortIndex = 40300;
+        public const int Unk73_sortIndex = 40350;
         [SortOrder(Unk73_sortIndex)]
         [DisplayName(Unk73_displayName)]
         public virtual float Unk73 {
-            get => GetData<float>(1846);
+            get => GetData<float>(1847);
             set {
-                if (GetData<float>(1846) == value) return;
-                SetData(1846, value, nameof(Unk73));
+                if (GetData<float>(1847) == value) return;
+                SetData(1847, value, nameof(Unk73));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk73));
             }
         }
 
         public const string Unk74_displayName = "Unk74";
-        public const int Unk74_sortIndex = 40350;
+        public const int Unk74_sortIndex = 40400;
         [SortOrder(Unk74_sortIndex)]
         [DisplayName(Unk74_displayName)]
         public virtual float Unk74 {
-            get => GetData<float>(1850);
+            get => GetData<float>(1851);
             set {
-                if (GetData<float>(1850) == value) return;
-                SetData(1850, value, nameof(Unk74));
+                if (GetData<float>(1851) == value) return;
+                SetData(1851, value, nameof(Unk74));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk74));
             }
         }
 
         public const string Unk75_displayName = "Unk75";
-        public const int Unk75_sortIndex = 40400;
+        public const int Unk75_sortIndex = 40450;
         [SortOrder(Unk75_sortIndex)]
         [DisplayName(Unk75_displayName)]
         public virtual float Unk75 {
-            get => GetData<float>(1854);
+            get => GetData<float>(1855);
             set {
-                if (GetData<float>(1854) == value) return;
-                SetData(1854, value, nameof(Unk75));
+                if (GetData<float>(1855) == value) return;
+                SetData(1855, value, nameof(Unk75));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk75));
             }
         }
 
         public const string Unk76_displayName = "Unk76";
-        public const int Unk76_sortIndex = 40450;
+        public const int Unk76_sortIndex = 40500;
         [SortOrder(Unk76_sortIndex)]
         [DisplayName(Unk76_displayName)]
         public virtual float Unk76 {
-            get => GetData<float>(1858);
+            get => GetData<float>(1859);
             set {
-                if (GetData<float>(1858) == value) return;
-                SetData(1858, value, nameof(Unk76));
+                if (GetData<float>(1859) == value) return;
+                SetData(1859, value, nameof(Unk76));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk76));
             }
         }
 
         public const string Unk77_displayName = "Unk77";
-        public const int Unk77_sortIndex = 40500;
+        public const int Unk77_sortIndex = 40550;
         [SortOrder(Unk77_sortIndex)]
         [DisplayName(Unk77_displayName)]
         public virtual float Unk77 {
-            get => GetData<float>(1862);
+            get => GetData<float>(1863);
             set {
-                if (GetData<float>(1862) == value) return;
-                SetData(1862, value, nameof(Unk77));
+                if (GetData<float>(1863) == value) return;
+                SetData(1863, value, nameof(Unk77));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk77));
             }
         }
 
         public const string Unk78_displayName = "Unk78";
-        public const int Unk78_sortIndex = 40550;
+        public const int Unk78_sortIndex = 40600;
         [SortOrder(Unk78_sortIndex)]
         [DisplayName(Unk78_displayName)]
         public virtual float Unk78 {
-            get => GetData<float>(1866);
+            get => GetData<float>(1867);
             set {
-                if (GetData<float>(1866) == value) return;
-                SetData(1866, value, nameof(Unk78));
+                if (GetData<float>(1867) == value) return;
+                SetData(1867, value, nameof(Unk78));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk78));
             }
         }
 
         public const string Unk79_displayName = "Unk79";
-        public const int Unk79_sortIndex = 40600;
+        public const int Unk79_sortIndex = 40650;
         [SortOrder(Unk79_sortIndex)]
         [DisplayName(Unk79_displayName)]
         public virtual float Unk79 {
-            get => GetData<float>(1870);
+            get => GetData<float>(1871);
             set {
-                if (GetData<float>(1870) == value) return;
-                SetData(1870, value, nameof(Unk79));
+                if (GetData<float>(1871) == value) return;
+                SetData(1871, value, nameof(Unk79));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk79));
             }
         }
 
         public const string Unk80_displayName = "Unk80";
-        public const int Unk80_sortIndex = 40650;
+        public const int Unk80_sortIndex = 40700;
         [SortOrder(Unk80_sortIndex)]
         [DisplayName(Unk80_displayName)]
         public virtual float Unk80 {
-            get => GetData<float>(1874);
+            get => GetData<float>(1875);
             set {
-                if (GetData<float>(1874) == value) return;
-                SetData(1874, value, nameof(Unk80));
+                if (GetData<float>(1875) == value) return;
+                SetData(1875, value, nameof(Unk80));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk80));
             }
         }
 
         public const string Unk81_displayName = "Unk81";
-        public const int Unk81_sortIndex = 40700;
+        public const int Unk81_sortIndex = 40750;
         [SortOrder(Unk81_sortIndex)]
         [DisplayName(Unk81_displayName)]
         public virtual float Unk81 {
-            get => GetData<float>(1878);
+            get => GetData<float>(1879);
             set {
-                if (GetData<float>(1878) == value) return;
-                SetData(1878, value, nameof(Unk81));
+                if (GetData<float>(1879) == value) return;
+                SetData(1879, value, nameof(Unk81));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk81));
             }
         }
 
         public const string Offensive_Guard_displayName = "Offensive Guard";
-        public const int Offensive_Guard_sortIndex = 40750;
+        public const int Offensive_Guard_sortIndex = 40800;
         [SortOrder(Offensive_Guard_sortIndex)]
         [DisplayName(Offensive_Guard_displayName)]
         public virtual float Offensive_Guard {
-            get => GetData<float>(1882);
+            get => GetData<float>(1883);
             set {
-                if (GetData<float>(1882) == value) return;
-                SetData(1882, value, nameof(Offensive_Guard));
+                if (GetData<float>(1883) == value) return;
+                SetData(1883, value, nameof(Offensive_Guard));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Offensive_Guard));
             }
         }
 
         public const string Coalescence_displayName = "Coalescence";
-        public const int Coalescence_sortIndex = 40800;
+        public const int Coalescence_sortIndex = 40850;
         [SortOrder(Coalescence_sortIndex)]
         [DisplayName(Coalescence_displayName)]
         public virtual float Coalescence {
-            get => GetData<float>(1886);
+            get => GetData<float>(1887);
             set {
-                if (GetData<float>(1886) == value) return;
-                SetData(1886, value, nameof(Coalescence));
+                if (GetData<float>(1887) == value) return;
+                SetData(1887, value, nameof(Coalescence));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Coalescence));
             }
         }
 
-        public const string __40850_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __40850_sortIndex = 40850;
-        [SortOrder(__40850_sortIndex)]
-        [DisplayName(__40850_displayName)]
+        public const string __40900_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __40900_sortIndex = 40900;
+        [SortOrder(__40900_sortIndex)]
+        [DisplayName(__40900_displayName)]
         [IsReadOnly]
-        public virtual byte __40850 {
+        public virtual byte __40900 {
             get => GetData<byte>(3);
             set {
                 if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__40850));
+                SetData(3, value, nameof(__40900));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__40850));
+                OnPropertyChanged(nameof(__40900));
+            }
+        }
+
+        public const string Unk_Safi_2_displayName = "Unk Safi 2";
+        public const int Unk_Safi_2_sortIndex = 40950;
+        [SortOrder(Unk_Safi_2_sortIndex)]
+        [DisplayName(Unk_Safi_2_displayName)]
+        public virtual float Unk_Safi_2 {
+            get => GetData<float>(1891);
+            set {
+                if (GetData<float>(1891) == value) return;
+                SetData(1891, value, nameof(Unk_Safi_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_Safi_2));
+            }
+        }
+
+        public const string Unk_Safi_3_displayName = "Unk Safi 3";
+        public const int Unk_Safi_3_sortIndex = 41000;
+        [SortOrder(Unk_Safi_3_sortIndex)]
+        [DisplayName(Unk_Safi_3_displayName)]
+        public virtual float Unk_Safi_3 {
+            get => GetData<float>(1895);
+            set {
+                if (GetData<float>(1895) == value) return;
+                SetData(1895, value, nameof(Unk_Safi_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_Safi_3));
+            }
+        }
+
+        public const string Unk_Safi_4_displayName = "Unk Safi 4";
+        public const int Unk_Safi_4_sortIndex = 41050;
+        [SortOrder(Unk_Safi_4_sortIndex)]
+        [DisplayName(Unk_Safi_4_displayName)]
+        public virtual float Unk_Safi_4 {
+            get => GetData<float>(1899);
+            set {
+                if (GetData<float>(1899) == value) return;
+                SetData(1899, value, nameof(Unk_Safi_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_Safi_4));
+            }
+        }
+
+        public const string Unk_Safi_5_displayName = "Unk Safi 5";
+        public const int Unk_Safi_5_sortIndex = 41100;
+        [SortOrder(Unk_Safi_5_sortIndex)]
+        [DisplayName(Unk_Safi_5_displayName)]
+        public virtual uint Unk_Safi_5 {
+            get => GetData<uint>(1903);
+            set {
+                if (GetData<uint>(1903) == value) return;
+                SetData(1903, value, nameof(Unk_Safi_5));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_Safi_5));
+            }
+        }
+
+        public const string Unk_Safi_6_displayName = "Unk Safi 6";
+        public const int Unk_Safi_6_sortIndex = 41150;
+        [SortOrder(Unk_Safi_6_sortIndex)]
+        [DisplayName(Unk_Safi_6_displayName)]
+        public virtual uint Unk_Safi_6 {
+            get => GetData<uint>(1907);
+            set {
+                if (GetData<uint>(1907) == value) return;
+                SetData(1907, value, nameof(Unk_Safi_6));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_Safi_6));
+            }
+        }
+
+        public const string Unk_Safi_7_displayName = "Unk Safi 7";
+        public const int Unk_Safi_7_sortIndex = 41200;
+        [SortOrder(Unk_Safi_7_sortIndex)]
+        [DisplayName(Unk_Safi_7_displayName)]
+        public virtual float Unk_Safi_7 {
+            get => GetData<float>(1911);
+            set {
+                if (GetData<float>(1911) == value) return;
+                SetData(1911, value, nameof(Unk_Safi_7));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_Safi_7));
+            }
+        }
+
+        public const string Set_3_Elemental_Bonus_displayName = "Set(3) Elemental Bonus";
+        public const int Set_3_Elemental_Bonus_sortIndex = 41250;
+        [SortOrder(Set_3_Elemental_Bonus_sortIndex)]
+        [DisplayName(Set_3_Elemental_Bonus_displayName)]
+        public virtual float Set_3_Elemental_Bonus {
+            get => GetData<float>(1915);
+            set {
+                if (GetData<float>(1915) == value) return;
+                SetData(1915, value, nameof(Set_3_Elemental_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_3_Elemental_Bonus));
+            }
+        }
+
+        public const string Set_5_Elemental_Bonus_displayName = "Set(5) Elemental Bonus";
+        public const int Set_5_Elemental_Bonus_sortIndex = 41300;
+        [SortOrder(Set_5_Elemental_Bonus_sortIndex)]
+        [DisplayName(Set_5_Elemental_Bonus_displayName)]
+        public virtual float Set_5_Elemental_Bonus {
+            get => GetData<float>(1919);
+            set {
+                if (GetData<float>(1919) == value) return;
+                SetData(1919, value, nameof(Set_5_Elemental_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_5_Elemental_Bonus));
+            }
+        }
+
+        public const string Set_3_Status_Bonus_displayName = "Set(3) Status Bonus";
+        public const int Set_3_Status_Bonus_sortIndex = 41350;
+        [SortOrder(Set_3_Status_Bonus_sortIndex)]
+        [DisplayName(Set_3_Status_Bonus_displayName)]
+        public virtual float Set_3_Status_Bonus {
+            get => GetData<float>(1923);
+            set {
+                if (GetData<float>(1923) == value) return;
+                SetData(1923, value, nameof(Set_3_Status_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_3_Status_Bonus));
+            }
+        }
+
+        public const string Set_5_Status_Bonus_displayName = "Set(5) Status Bonus";
+        public const int Set_5_Status_Bonus_sortIndex = 41400;
+        [SortOrder(Set_5_Status_Bonus_sortIndex)]
+        [DisplayName(Set_5_Status_Bonus_displayName)]
+        public virtual float Set_5_Status_Bonus {
+            get => GetData<float>(1927);
+            set {
+                if (GetData<float>(1927) == value) return;
+                SetData(1927, value, nameof(Set_5_Status_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_5_Status_Bonus));
+            }
+        }
+
+        public const string Set_3_Affinity_Bonus_displayName = "Set(3) Affinity Bonus";
+        public const int Set_3_Affinity_Bonus_sortIndex = 41450;
+        [SortOrder(Set_3_Affinity_Bonus_sortIndex)]
+        [DisplayName(Set_3_Affinity_Bonus_displayName)]
+        public virtual uint Set_3_Affinity_Bonus {
+            get => GetData<uint>(1931);
+            set {
+                if (GetData<uint>(1931) == value) return;
+                SetData(1931, value, nameof(Set_3_Affinity_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_3_Affinity_Bonus));
+            }
+        }
+
+        public const string Set_5_Affinity_Bonus_displayName = "Set(5) Affinity Bonus";
+        public const int Set_5_Affinity_Bonus_sortIndex = 41500;
+        [SortOrder(Set_5_Affinity_Bonus_sortIndex)]
+        [DisplayName(Set_5_Affinity_Bonus_displayName)]
+        public virtual uint Set_5_Affinity_Bonus {
+            get => GetData<uint>(1935);
+            set {
+                if (GetData<uint>(1935) == value) return;
+                SetData(1935, value, nameof(Set_5_Affinity_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_5_Affinity_Bonus));
+            }
+        }
+
+        public const string __41550_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __41550_sortIndex = 41550;
+        [SortOrder(__41550_sortIndex)]
+        [DisplayName(__41550_displayName)]
+        [IsReadOnly]
+        public virtual byte __41550 {
+            get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__41550));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__41550));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Great Sword) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal_sortIndex = 41600;
+        [SortOrder(Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal {
+            get => GetData<byte>(1939);
+            set {
+                if (GetData<byte>(1939) == value) return;
+                SetData(1939, value, nameof(Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Sword & Shield) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal_sortIndex = 41650;
+        [SortOrder(Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal {
+            get => GetData<byte>(1940);
+            set {
+                if (GetData<byte>(1940) == value) return;
+                SetData(1940, value, nameof(Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Dual Blades) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal_sortIndex = 41700;
+        [SortOrder(Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal {
+            get => GetData<byte>(1941);
+            set {
+                if (GetData<byte>(1941) == value) return;
+                SetData(1941, value, nameof(Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Long Sword) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal_sortIndex = 41750;
+        [SortOrder(Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal {
+            get => GetData<byte>(1942);
+            set {
+                if (GetData<byte>(1942) == value) return;
+                SetData(1942, value, nameof(Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Hammer) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal_sortIndex = 41800;
+        [SortOrder(Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal {
+            get => GetData<byte>(1943);
+            set {
+                if (GetData<byte>(1943) == value) return;
+                SetData(1943, value, nameof(Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Hunting Horn) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal_sortIndex = 41850;
+        [SortOrder(Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal {
+            get => GetData<byte>(1944);
+            set {
+                if (GetData<byte>(1944) == value) return;
+                SetData(1944, value, nameof(Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Lance) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal_sortIndex = 41900;
+        [SortOrder(Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal {
+            get => GetData<byte>(1945);
+            set {
+                if (GetData<byte>(1945) == value) return;
+                SetData(1945, value, nameof(Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Gunlance) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal_sortIndex = 41950;
+        [SortOrder(Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal {
+            get => GetData<byte>(1946);
+            set {
+                if (GetData<byte>(1946) == value) return;
+                SetData(1946, value, nameof(Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Switch Axe) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal_sortIndex = 42000;
+        [SortOrder(Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal {
+            get => GetData<byte>(1947);
+            set {
+                if (GetData<byte>(1947) == value) return;
+                SetData(1947, value, nameof(Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Charge Blade) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal_sortIndex = 42050;
+        [SortOrder(Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal {
+            get => GetData<byte>(1948);
+            set {
+                if (GetData<byte>(1948) == value) return;
+                SetData(1948, value, nameof(Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Insect Glaive) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal_sortIndex = 42100;
+        [SortOrder(Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal {
+            get => GetData<byte>(1949);
+            set {
+                if (GetData<byte>(1949) == value) return;
+                SetData(1949, value, nameof(Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Bow) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal_sortIndex = 42150;
+        [SortOrder(Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal {
+            get => GetData<byte>(1950);
+            set {
+                if (GetData<byte>(1950) == value) return;
+                SetData(1950, value, nameof(Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (HBG) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal_sortIndex = 42200;
+        [SortOrder(Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal {
+            get => GetData<byte>(1951);
+            set {
+                if (GetData<byte>(1951) == value) return;
+                SetData(1951, value, nameof(Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (LBG) Hit Combo to Heal";
+        public const int Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal_sortIndex = 42250;
+        [SortOrder(Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal_displayName)]
+        public virtual byte Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal {
+            get => GetData<byte>(1952);
+            set {
+                if (GetData<byte>(1952) == value) return;
+                SetData(1952, value, nameof(Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal));
+            }
+        }
+
+        public const string __42300_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __42300_sortIndex = 42300;
+        [SortOrder(__42300_sortIndex)]
+        [DisplayName(__42300_displayName)]
+        [IsReadOnly]
+        public virtual byte __42300 {
+            get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__42300));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__42300));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Great Sword) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit_sortIndex = 42350;
+        [SortOrder(Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit {
+            get => GetData<float>(1953);
+            set {
+                if (GetData<float>(1953) == value) return;
+                SetData(1953, value, nameof(Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Sword & Shield) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit_sortIndex = 42400;
+        [SortOrder(Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit {
+            get => GetData<float>(1957);
+            set {
+                if (GetData<float>(1957) == value) return;
+                SetData(1957, value, nameof(Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Dual Blades) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit_sortIndex = 42450;
+        [SortOrder(Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit {
+            get => GetData<float>(1961);
+            set {
+                if (GetData<float>(1961) == value) return;
+                SetData(1961, value, nameof(Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Long Sword) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit_sortIndex = 42500;
+        [SortOrder(Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit {
+            get => GetData<float>(1965);
+            set {
+                if (GetData<float>(1965) == value) return;
+                SetData(1965, value, nameof(Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Hammer) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit_sortIndex = 42550;
+        [SortOrder(Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit {
+            get => GetData<float>(1969);
+            set {
+                if (GetData<float>(1969) == value) return;
+                SetData(1969, value, nameof(Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Hunting Horn) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit_sortIndex = 42600;
+        [SortOrder(Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit {
+            get => GetData<float>(1973);
+            set {
+                if (GetData<float>(1973) == value) return;
+                SetData(1973, value, nameof(Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Lance) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit_sortIndex = 42650;
+        [SortOrder(Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit {
+            get => GetData<float>(1977);
+            set {
+                if (GetData<float>(1977) == value) return;
+                SetData(1977, value, nameof(Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Gunlance) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit_sortIndex = 42700;
+        [SortOrder(Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit {
+            get => GetData<float>(1981);
+            set {
+                if (GetData<float>(1981) == value) return;
+                SetData(1981, value, nameof(Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Switch Axe) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit_sortIndex = 42750;
+        [SortOrder(Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit {
+            get => GetData<float>(1985);
+            set {
+                if (GetData<float>(1985) == value) return;
+                SetData(1985, value, nameof(Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Charge Blade) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit_sortIndex = 42800;
+        [SortOrder(Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit {
+            get => GetData<float>(1989);
+            set {
+                if (GetData<float>(1989) == value) return;
+                SetData(1989, value, nameof(Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Insect Glaive) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit_sortIndex = 42850;
+        [SortOrder(Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit {
+            get => GetData<float>(1993);
+            set {
+                if (GetData<float>(1993) == value) return;
+                SetData(1993, value, nameof(Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Bow) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit_sortIndex = 42900;
+        [SortOrder(Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit {
+            get => GetData<float>(1997);
+            set {
+                if (GetData<float>(1997) == value) return;
+                SetData(1997, value, nameof(Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (HBG) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit_sortIndex = 42950;
+        [SortOrder(Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit {
+            get => GetData<float>(2001);
+            set {
+                if (GetData<float>(2001) == value) return;
+                SetData(2001, value, nameof(Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (LBG) HP Lost Per Hit";
+        public const int Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit_sortIndex = 43000;
+        [SortOrder(Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit_sortIndex)]
+        [DisplayName(Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit_displayName)]
+        public virtual float Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit {
+            get => GetData<float>(2005);
+            set {
+                if (GetData<float>(2005) == value) return;
+                SetData(2005, value, nameof(Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit));
+            }
+        }
+
+        public const string __43050_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __43050_sortIndex = 43050;
+        [SortOrder(__43050_sortIndex)]
+        [DisplayName(__43050_displayName)]
+        [IsReadOnly]
+        public virtual byte __43050 {
+            get => GetData<byte>(3);
+            set {
+                if (GetData<byte>(3) == value) return;
+                SetData(3, value, nameof(__43050));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__43050));
+            }
+        }
+
+        public const string Unk_Safi_8_displayName = "Unk Safi 8";
+        public const int Unk_Safi_8_sortIndex = 43100;
+        [SortOrder(Unk_Safi_8_sortIndex)]
+        [DisplayName(Unk_Safi_8_displayName)]
+        public virtual float Unk_Safi_8 {
+            get => GetData<float>(2009);
+            set {
+                if (GetData<float>(2009) == value) return;
+                SetData(2009, value, nameof(Unk_Safi_8));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_Safi_8));
+            }
+        }
+
+        public const string Unk_Safi_9_displayName = "Unk Safi 9";
+        public const int Unk_Safi_9_sortIndex = 43150;
+        [SortOrder(Unk_Safi_9_sortIndex)]
+        [DisplayName(Unk_Safi_9_displayName)]
+        public virtual float Unk_Safi_9 {
+            get => GetData<float>(2013);
+            set {
+                if (GetData<float>(2013) == value) return;
+                SetData(2013, value, nameof(Unk_Safi_9));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_Safi_9));
+            }
+        }
+
+        public const string Unk_Safi_10_displayName = "Unk Safi 10";
+        public const int Unk_Safi_10_sortIndex = 43200;
+        [SortOrder(Unk_Safi_10_sortIndex)]
+        [DisplayName(Unk_Safi_10_displayName)]
+        public virtual float Unk_Safi_10 {
+            get => GetData<float>(2017);
+            set {
+                if (GetData<float>(2017) == value) return;
+                SetData(2017, value, nameof(Unk_Safi_10));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_Safi_10));
+            }
+        }
+
+        public const string Unk_Safi_11_displayName = "Unk Safi 11";
+        public const int Unk_Safi_11_sortIndex = 43250;
+        [SortOrder(Unk_Safi_11_sortIndex)]
+        [DisplayName(Unk_Safi_11_displayName)]
+        public virtual float Unk_Safi_11 {
+            get => GetData<float>(2021);
+            set {
+                if (GetData<float>(2021) == value) return;
+                SetData(2021, value, nameof(Unk_Safi_11));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_Safi_11));
+            }
+        }
+
+        public const string Set_3_Elemental_Limit_displayName = "Set(3) Elemental Limit";
+        public const int Set_3_Elemental_Limit_sortIndex = 43300;
+        [SortOrder(Set_3_Elemental_Limit_sortIndex)]
+        [DisplayName(Set_3_Elemental_Limit_displayName)]
+        public virtual float Set_3_Elemental_Limit {
+            get => GetData<float>(2025);
+            set {
+                if (GetData<float>(2025) == value) return;
+                SetData(2025, value, nameof(Set_3_Elemental_Limit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_3_Elemental_Limit));
+            }
+        }
+
+        public const string Set_5_Elemental_Limit_displayName = "Set(5) Elemental Limit";
+        public const int Set_5_Elemental_Limit_sortIndex = 43350;
+        [SortOrder(Set_5_Elemental_Limit_sortIndex)]
+        [DisplayName(Set_5_Elemental_Limit_displayName)]
+        public virtual float Set_5_Elemental_Limit {
+            get => GetData<float>(2029);
+            set {
+                if (GetData<float>(2029) == value) return;
+                SetData(2029, value, nameof(Set_5_Elemental_Limit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_5_Elemental_Limit));
+            }
+        }
+
+        public const string Set_3_Bowgun_Elemental_Limit_displayName = "Set(3) Bowgun Elemental Limit";
+        public const int Set_3_Bowgun_Elemental_Limit_sortIndex = 43400;
+        [SortOrder(Set_3_Bowgun_Elemental_Limit_sortIndex)]
+        [DisplayName(Set_3_Bowgun_Elemental_Limit_displayName)]
+        public virtual float Set_3_Bowgun_Elemental_Limit {
+            get => GetData<float>(2033);
+            set {
+                if (GetData<float>(2033) == value) return;
+                SetData(2033, value, nameof(Set_3_Bowgun_Elemental_Limit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_3_Bowgun_Elemental_Limit));
+            }
+        }
+
+        public const string Set_5_Bowgun_Elemental_Limit_displayName = "Set(5) Bowgun Elemental Limit";
+        public const int Set_5_Bowgun_Elemental_Limit_sortIndex = 43450;
+        [SortOrder(Set_5_Bowgun_Elemental_Limit_sortIndex)]
+        [DisplayName(Set_5_Bowgun_Elemental_Limit_displayName)]
+        public virtual float Set_5_Bowgun_Elemental_Limit {
+            get => GetData<float>(2037);
+            set {
+                if (GetData<float>(2037) == value) return;
+                SetData(2037, value, nameof(Set_5_Bowgun_Elemental_Limit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_5_Bowgun_Elemental_Limit));
+            }
+        }
+
+        public const string Set_3_Status_Limit_displayName = "Set(3) Status Limit";
+        public const int Set_3_Status_Limit_sortIndex = 43500;
+        [SortOrder(Set_3_Status_Limit_sortIndex)]
+        [DisplayName(Set_3_Status_Limit_displayName)]
+        public virtual float Set_3_Status_Limit {
+            get => GetData<float>(2041);
+            set {
+                if (GetData<float>(2041) == value) return;
+                SetData(2041, value, nameof(Set_3_Status_Limit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_3_Status_Limit));
+            }
+        }
+
+        public const string Set_5_Status_Limit_displayName = "Set(5) Status Limit";
+        public const int Set_5_Status_Limit_sortIndex = 43550;
+        [SortOrder(Set_5_Status_Limit_sortIndex)]
+        [DisplayName(Set_5_Status_Limit_displayName)]
+        public virtual float Set_5_Status_Limit {
+            get => GetData<float>(2045);
+            set {
+                if (GetData<float>(2045) == value) return;
+                SetData(2045, value, nameof(Set_5_Status_Limit));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Set_5_Status_Limit));
+            }
+        }
+
+        public const string __43600_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __43600_sortIndex = 43600;
+        [SortOrder(__43600_sortIndex)]
+        [DisplayName(__43600_displayName)]
+        [IsReadOnly]
+        public virtual byte __43600 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__43600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__43600));
             }
         }
 
         public const string Food_Effect_Life_Up_1_displayName = "Food Effect: Life Up 1";
-        public const int Food_Effect_Life_Up_1_sortIndex = 40900;
+        public const int Food_Effect_Life_Up_1_sortIndex = 43650;
         [SortOrder(Food_Effect_Life_Up_1_sortIndex)]
         [DisplayName(Food_Effect_Life_Up_1_displayName)]
         public virtual ushort Food_Effect_Life_Up_1 {
-            get => GetData<ushort>(1890);
+            get => GetData<ushort>(2049);
             set {
-                if (GetData<ushort>(1890) == value) return;
-                SetData(1890, value, nameof(Food_Effect_Life_Up_1));
+                if (GetData<ushort>(2049) == value) return;
+                SetData(2049, value, nameof(Food_Effect_Life_Up_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Food_Effect_Life_Up_1));
             }
         }
 
         public const string Food_Effect_Life_Up_2_displayName = "Food Effect: Life Up 2";
-        public const int Food_Effect_Life_Up_2_sortIndex = 40950;
+        public const int Food_Effect_Life_Up_2_sortIndex = 43700;
         [SortOrder(Food_Effect_Life_Up_2_sortIndex)]
         [DisplayName(Food_Effect_Life_Up_2_displayName)]
         public virtual ushort Food_Effect_Life_Up_2 {
-            get => GetData<ushort>(1892);
+            get => GetData<ushort>(2051);
             set {
-                if (GetData<ushort>(1892) == value) return;
-                SetData(1892, value, nameof(Food_Effect_Life_Up_2));
+                if (GetData<ushort>(2051) == value) return;
+                SetData(2051, value, nameof(Food_Effect_Life_Up_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Food_Effect_Life_Up_2));
             }
         }
 
         public const string Food_Effect_Life_Up_3_displayName = "Food Effect: Life Up 3";
-        public const int Food_Effect_Life_Up_3_sortIndex = 41000;
+        public const int Food_Effect_Life_Up_3_sortIndex = 43750;
         [SortOrder(Food_Effect_Life_Up_3_sortIndex)]
         [DisplayName(Food_Effect_Life_Up_3_displayName)]
         public virtual ushort Food_Effect_Life_Up_3 {
-            get => GetData<ushort>(1894);
+            get => GetData<ushort>(2053);
             set {
-                if (GetData<ushort>(1894) == value) return;
-                SetData(1894, value, nameof(Food_Effect_Life_Up_3));
+                if (GetData<ushort>(2053) == value) return;
+                SetData(2053, value, nameof(Food_Effect_Life_Up_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Food_Effect_Life_Up_3));
             }
         }
 
         public const string Food_Effect_Life_Up_4_displayName = "Food Effect: Life Up 4";
-        public const int Food_Effect_Life_Up_4_sortIndex = 41050;
+        public const int Food_Effect_Life_Up_4_sortIndex = 43800;
         [SortOrder(Food_Effect_Life_Up_4_sortIndex)]
         [DisplayName(Food_Effect_Life_Up_4_displayName)]
         public virtual ushort Food_Effect_Life_Up_4 {
-            get => GetData<ushort>(1896);
+            get => GetData<ushort>(2055);
             set {
-                if (GetData<ushort>(1896) == value) return;
-                SetData(1896, value, nameof(Food_Effect_Life_Up_4));
+                if (GetData<ushort>(2055) == value) return;
+                SetData(2055, value, nameof(Food_Effect_Life_Up_4));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Food_Effect_Life_Up_4));
             }
         }
 
         public const string Food_Effect_Life_Up_5_displayName = "Food Effect: Life Up 5";
-        public const int Food_Effect_Life_Up_5_sortIndex = 41100;
+        public const int Food_Effect_Life_Up_5_sortIndex = 43850;
         [SortOrder(Food_Effect_Life_Up_5_sortIndex)]
         [DisplayName(Food_Effect_Life_Up_5_displayName)]
         public virtual ushort Food_Effect_Life_Up_5 {
-            get => GetData<ushort>(1898);
+            get => GetData<ushort>(2057);
             set {
-                if (GetData<ushort>(1898) == value) return;
-                SetData(1898, value, nameof(Food_Effect_Life_Up_5));
+                if (GetData<ushort>(2057) == value) return;
+                SetData(2057, value, nameof(Food_Effect_Life_Up_5));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Food_Effect_Life_Up_5));
             }
         }
 
         public const string Food_Effect_Life_Up_6_displayName = "Food Effect: Life Up 6";
-        public const int Food_Effect_Life_Up_6_sortIndex = 41150;
+        public const int Food_Effect_Life_Up_6_sortIndex = 43900;
         [SortOrder(Food_Effect_Life_Up_6_sortIndex)]
         [DisplayName(Food_Effect_Life_Up_6_displayName)]
         public virtual ushort Food_Effect_Life_Up_6 {
-            get => GetData<ushort>(1900);
+            get => GetData<ushort>(2059);
             set {
-                if (GetData<ushort>(1900) == value) return;
-                SetData(1900, value, nameof(Food_Effect_Life_Up_6));
+                if (GetData<ushort>(2059) == value) return;
+                SetData(2059, value, nameof(Food_Effect_Life_Up_6));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Food_Effect_Life_Up_6));
-            }
-        }
-
-        public const string __41200_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __41200_sortIndex = 41200;
-        [SortOrder(__41200_sortIndex)]
-        [DisplayName(__41200_displayName)]
-        [IsReadOnly]
-        public virtual byte __41200 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__41200));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__41200));
-            }
-        }
-
-        public const string Food_Effect_Stamina_Up_1_displayName = "Food Effect: Stamina Up 1";
-        public const int Food_Effect_Stamina_Up_1_sortIndex = 41250;
-        [SortOrder(Food_Effect_Stamina_Up_1_sortIndex)]
-        [DisplayName(Food_Effect_Stamina_Up_1_displayName)]
-        public virtual ushort Food_Effect_Stamina_Up_1 {
-            get => GetData<ushort>(1902);
-            set {
-                if (GetData<ushort>(1902) == value) return;
-                SetData(1902, value, nameof(Food_Effect_Stamina_Up_1));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_Stamina_Up_1));
-            }
-        }
-
-        public const string Food_Effect_Stamina_Up_2_displayName = "Food Effect: Stamina Up 2";
-        public const int Food_Effect_Stamina_Up_2_sortIndex = 41300;
-        [SortOrder(Food_Effect_Stamina_Up_2_sortIndex)]
-        [DisplayName(Food_Effect_Stamina_Up_2_displayName)]
-        public virtual ushort Food_Effect_Stamina_Up_2 {
-            get => GetData<ushort>(1904);
-            set {
-                if (GetData<ushort>(1904) == value) return;
-                SetData(1904, value, nameof(Food_Effect_Stamina_Up_2));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_Stamina_Up_2));
-            }
-        }
-
-        public const string Food_Effect_Stamina_Up_3_displayName = "Food Effect: Stamina Up 3";
-        public const int Food_Effect_Stamina_Up_3_sortIndex = 41350;
-        [SortOrder(Food_Effect_Stamina_Up_3_sortIndex)]
-        [DisplayName(Food_Effect_Stamina_Up_3_displayName)]
-        public virtual ushort Food_Effect_Stamina_Up_3 {
-            get => GetData<ushort>(1906);
-            set {
-                if (GetData<ushort>(1906) == value) return;
-                SetData(1906, value, nameof(Food_Effect_Stamina_Up_3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_Stamina_Up_3));
-            }
-        }
-
-        public const string __41400_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __41400_sortIndex = 41400;
-        [SortOrder(__41400_sortIndex)]
-        [DisplayName(__41400_displayName)]
-        [IsReadOnly]
-        public virtual byte __41400 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__41400));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__41400));
-            }
-        }
-
-        public const string Food_Effect_Attack_Up_1_displayName = "Food Effect: Attack Up 1";
-        public const int Food_Effect_Attack_Up_1_sortIndex = 41450;
-        [SortOrder(Food_Effect_Attack_Up_1_sortIndex)]
-        [DisplayName(Food_Effect_Attack_Up_1_displayName)]
-        public virtual ushort Food_Effect_Attack_Up_1 {
-            get => GetData<ushort>(1908);
-            set {
-                if (GetData<ushort>(1908) == value) return;
-                SetData(1908, value, nameof(Food_Effect_Attack_Up_1));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_Attack_Up_1));
-            }
-        }
-
-        public const string Food_Effect_Attack_Up_2_displayName = "Food Effect: Attack Up 2";
-        public const int Food_Effect_Attack_Up_2_sortIndex = 41500;
-        [SortOrder(Food_Effect_Attack_Up_2_sortIndex)]
-        [DisplayName(Food_Effect_Attack_Up_2_displayName)]
-        public virtual ushort Food_Effect_Attack_Up_2 {
-            get => GetData<ushort>(1910);
-            set {
-                if (GetData<ushort>(1910) == value) return;
-                SetData(1910, value, nameof(Food_Effect_Attack_Up_2));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_Attack_Up_2));
-            }
-        }
-
-        public const string Food_Effect_Attack_Up_3_displayName = "Food Effect: Attack Up 3";
-        public const int Food_Effect_Attack_Up_3_sortIndex = 41550;
-        [SortOrder(Food_Effect_Attack_Up_3_sortIndex)]
-        [DisplayName(Food_Effect_Attack_Up_3_displayName)]
-        public virtual ushort Food_Effect_Attack_Up_3 {
-            get => GetData<ushort>(1912);
-            set {
-                if (GetData<ushort>(1912) == value) return;
-                SetData(1912, value, nameof(Food_Effect_Attack_Up_3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_Attack_Up_3));
-            }
-        }
-
-        public const string Food_Effect_Attack_Up_4_displayName = "Food Effect: Attack Up 4";
-        public const int Food_Effect_Attack_Up_4_sortIndex = 41600;
-        [SortOrder(Food_Effect_Attack_Up_4_sortIndex)]
-        [DisplayName(Food_Effect_Attack_Up_4_displayName)]
-        public virtual ushort Food_Effect_Attack_Up_4 {
-            get => GetData<ushort>(1914);
-            set {
-                if (GetData<ushort>(1914) == value) return;
-                SetData(1914, value, nameof(Food_Effect_Attack_Up_4));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_Attack_Up_4));
-            }
-        }
-
-        public const string __41650_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __41650_sortIndex = 41650;
-        [SortOrder(__41650_sortIndex)]
-        [DisplayName(__41650_displayName)]
-        [IsReadOnly]
-        public virtual byte __41650 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__41650));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__41650));
-            }
-        }
-
-        public const string Food_Effect_Defense_Up_1_displayName = "Food Effect: Defense Up 1";
-        public const int Food_Effect_Defense_Up_1_sortIndex = 41700;
-        [SortOrder(Food_Effect_Defense_Up_1_sortIndex)]
-        [DisplayName(Food_Effect_Defense_Up_1_displayName)]
-        public virtual ushort Food_Effect_Defense_Up_1 {
-            get => GetData<ushort>(1916);
-            set {
-                if (GetData<ushort>(1916) == value) return;
-                SetData(1916, value, nameof(Food_Effect_Defense_Up_1));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_Defense_Up_1));
-            }
-        }
-
-        public const string Food_Effect_Defense_Up_2_displayName = "Food Effect: Defense Up 2";
-        public const int Food_Effect_Defense_Up_2_sortIndex = 41750;
-        [SortOrder(Food_Effect_Defense_Up_2_sortIndex)]
-        [DisplayName(Food_Effect_Defense_Up_2_displayName)]
-        public virtual ushort Food_Effect_Defense_Up_2 {
-            get => GetData<ushort>(1918);
-            set {
-                if (GetData<ushort>(1918) == value) return;
-                SetData(1918, value, nameof(Food_Effect_Defense_Up_2));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_Defense_Up_2));
-            }
-        }
-
-        public const string Food_Effect_Defense_Up_3_displayName = "Food Effect: Defense Up 3";
-        public const int Food_Effect_Defense_Up_3_sortIndex = 41800;
-        [SortOrder(Food_Effect_Defense_Up_3_sortIndex)]
-        [DisplayName(Food_Effect_Defense_Up_3_displayName)]
-        public virtual ushort Food_Effect_Defense_Up_3 {
-            get => GetData<ushort>(1920);
-            set {
-                if (GetData<ushort>(1920) == value) return;
-                SetData(1920, value, nameof(Food_Effect_Defense_Up_3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_Defense_Up_3));
-            }
-        }
-
-        public const string Food_Effect_Defense_Up_4_displayName = "Food Effect: Defense Up 4";
-        public const int Food_Effect_Defense_Up_4_sortIndex = 41850;
-        [SortOrder(Food_Effect_Defense_Up_4_sortIndex)]
-        [DisplayName(Food_Effect_Defense_Up_4_displayName)]
-        public virtual ushort Food_Effect_Defense_Up_4 {
-            get => GetData<ushort>(1922);
-            set {
-                if (GetData<ushort>(1922) == value) return;
-                SetData(1922, value, nameof(Food_Effect_Defense_Up_4));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_Defense_Up_4));
-            }
-        }
-
-        public const string __41900_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __41900_sortIndex = 41900;
-        [SortOrder(__41900_sortIndex)]
-        [DisplayName(__41900_displayName)]
-        [IsReadOnly]
-        public virtual byte __41900 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__41900));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__41900));
-            }
-        }
-
-        public const string Food_Effect_All_Resistances_Up_1_displayName = "Food Effect: All Resistances Up 1";
-        public const int Food_Effect_All_Resistances_Up_1_sortIndex = 41950;
-        [SortOrder(Food_Effect_All_Resistances_Up_1_sortIndex)]
-        [DisplayName(Food_Effect_All_Resistances_Up_1_displayName)]
-        public virtual ushort Food_Effect_All_Resistances_Up_1 {
-            get => GetData<ushort>(1924);
-            set {
-                if (GetData<ushort>(1924) == value) return;
-                SetData(1924, value, nameof(Food_Effect_All_Resistances_Up_1));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_All_Resistances_Up_1));
-            }
-        }
-
-        public const string Food_Effect_All_Resistances_Up_2_displayName = "Food Effect: All Resistances Up 2";
-        public const int Food_Effect_All_Resistances_Up_2_sortIndex = 42000;
-        [SortOrder(Food_Effect_All_Resistances_Up_2_sortIndex)]
-        [DisplayName(Food_Effect_All_Resistances_Up_2_displayName)]
-        public virtual ushort Food_Effect_All_Resistances_Up_2 {
-            get => GetData<ushort>(1926);
-            set {
-                if (GetData<ushort>(1926) == value) return;
-                SetData(1926, value, nameof(Food_Effect_All_Resistances_Up_2));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_All_Resistances_Up_2));
-            }
-        }
-
-        public const string Food_Effect_All_Resistances_Up_3_displayName = "Food Effect: All Resistances Up 3";
-        public const int Food_Effect_All_Resistances_Up_3_sortIndex = 42050;
-        [SortOrder(Food_Effect_All_Resistances_Up_3_sortIndex)]
-        [DisplayName(Food_Effect_All_Resistances_Up_3_displayName)]
-        public virtual ushort Food_Effect_All_Resistances_Up_3 {
-            get => GetData<ushort>(1928);
-            set {
-                if (GetData<ushort>(1928) == value) return;
-                SetData(1928, value, nameof(Food_Effect_All_Resistances_Up_3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_All_Resistances_Up_3));
-            }
-        }
-
-        public const string Food_Effect_All_Resistances_Up_4_displayName = "Food Effect: All Resistances Up 4";
-        public const int Food_Effect_All_Resistances_Up_4_sortIndex = 42100;
-        [SortOrder(Food_Effect_All_Resistances_Up_4_sortIndex)]
-        [DisplayName(Food_Effect_All_Resistances_Up_4_displayName)]
-        public virtual ushort Food_Effect_All_Resistances_Up_4 {
-            get => GetData<ushort>(1930);
-            set {
-                if (GetData<ushort>(1930) == value) return;
-                SetData(1930, value, nameof(Food_Effect_All_Resistances_Up_4));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Food_Effect_All_Resistances_Up_4));
-            }
-        }
-
-        public const string __42150_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __42150_sortIndex = 42150;
-        [SortOrder(__42150_sortIndex)]
-        [DisplayName(__42150_displayName)]
-        [IsReadOnly]
-        public virtual byte __42150 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__42150));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__42150));
-            }
-        }
-
-        public const string Feline_Polisher_1_displayName = "Feline Polisher: % 1";
-        public const int Feline_Polisher_1_sortIndex = 42200;
-        [SortOrder(Feline_Polisher_1_sortIndex)]
-        [DisplayName(Feline_Polisher_1_displayName)]
-        public virtual byte Feline_Polisher_1 {
-            get => GetData<byte>(1932);
-            set {
-                if (GetData<byte>(1932) == value) return;
-                SetData(1932, value, nameof(Feline_Polisher_1));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Polisher_1));
-            }
-        }
-
-        public const string Feline_Polisher_2_displayName = "Feline Polisher: % 2";
-        public const int Feline_Polisher_2_sortIndex = 42250;
-        [SortOrder(Feline_Polisher_2_sortIndex)]
-        [DisplayName(Feline_Polisher_2_displayName)]
-        public virtual byte Feline_Polisher_2 {
-            get => GetData<byte>(1933);
-            set {
-                if (GetData<byte>(1933) == value) return;
-                SetData(1933, value, nameof(Feline_Polisher_2));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Polisher_2));
-            }
-        }
-
-        public const string Feline_Polisher_3_displayName = "Feline Polisher: % 3";
-        public const int Feline_Polisher_3_sortIndex = 42300;
-        [SortOrder(Feline_Polisher_3_sortIndex)]
-        [DisplayName(Feline_Polisher_3_displayName)]
-        public virtual byte Feline_Polisher_3 {
-            get => GetData<byte>(1934);
-            set {
-                if (GetData<byte>(1934) == value) return;
-                SetData(1934, value, nameof(Feline_Polisher_3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Polisher_3));
-            }
-        }
-
-        public const string Feline_Polisher_Loop_1_displayName = "Feline Polisher: Loop # 1";
-        public const int Feline_Polisher_Loop_1_sortIndex = 42350;
-        [SortOrder(Feline_Polisher_Loop_1_sortIndex)]
-        [DisplayName(Feline_Polisher_Loop_1_displayName)]
-        public virtual byte Feline_Polisher_Loop_1 {
-            get => GetData<byte>(1935);
-            set {
-                if (GetData<byte>(1935) == value) return;
-                SetData(1935, value, nameof(Feline_Polisher_Loop_1));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Polisher_Loop_1));
-            }
-        }
-
-        public const string Feline_Polisher_Loop_2_displayName = "Feline Polisher: Loop # 2";
-        public const int Feline_Polisher_Loop_2_sortIndex = 42400;
-        [SortOrder(Feline_Polisher_Loop_2_sortIndex)]
-        [DisplayName(Feline_Polisher_Loop_2_displayName)]
-        public virtual byte Feline_Polisher_Loop_2 {
-            get => GetData<byte>(1936);
-            set {
-                if (GetData<byte>(1936) == value) return;
-                SetData(1936, value, nameof(Feline_Polisher_Loop_2));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Polisher_Loop_2));
-            }
-        }
-
-        public const string Feline_Polisher_Loop_3_displayName = "Feline Polisher: Loop # 3";
-        public const int Feline_Polisher_Loop_3_sortIndex = 42450;
-        [SortOrder(Feline_Polisher_Loop_3_sortIndex)]
-        [DisplayName(Feline_Polisher_Loop_3_displayName)]
-        public virtual byte Feline_Polisher_Loop_3 {
-            get => GetData<byte>(1937);
-            set {
-                if (GetData<byte>(1937) == value) return;
-                SetData(1937, value, nameof(Feline_Polisher_Loop_3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Polisher_Loop_3));
-            }
-        }
-
-        public const string __42500_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __42500_sortIndex = 42500;
-        [SortOrder(__42500_sortIndex)]
-        [DisplayName(__42500_displayName)]
-        [IsReadOnly]
-        public virtual byte __42500 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__42500));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__42500));
-            }
-        }
-
-        public const string Feline_Rider_Attack_Rate_displayName = "Feline Rider: Attack Rate";
-        public const int Feline_Rider_Attack_Rate_sortIndex = 42550;
-        [SortOrder(Feline_Rider_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Rider_Attack_Rate_displayName)]
-        public virtual float Feline_Rider_Attack_Rate {
-            get => GetData<float>(1938);
-            set {
-                if (GetData<float>(1938) == value) return;
-                SetData(1938, value, nameof(Feline_Rider_Attack_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Rider_Attack_Rate));
-            }
-        }
-
-        public const string __42600_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __42600_sortIndex = 42600;
-        [SortOrder(__42600_sortIndex)]
-        [DisplayName(__42600_displayName)]
-        [IsReadOnly]
-        public virtual byte __42600 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__42600));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__42600));
-            }
-        }
-
-        public const string Feline_Heroics_Attack_Rate_displayName = "Feline Heroics: Attack Rate";
-        public const int Feline_Heroics_Attack_Rate_sortIndex = 42650;
-        [SortOrder(Feline_Heroics_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Heroics_Attack_Rate_displayName)]
-        public virtual float Feline_Heroics_Attack_Rate {
-            get => GetData<float>(1942);
-            set {
-                if (GetData<float>(1942) == value) return;
-                SetData(1942, value, nameof(Feline_Heroics_Attack_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Heroics_Attack_Rate));
-            }
-        }
-
-        public const string Feline_Heroics_Defense_Rate_displayName = "Feline Heroics: Defense Rate";
-        public const int Feline_Heroics_Defense_Rate_sortIndex = 42700;
-        [SortOrder(Feline_Heroics_Defense_Rate_sortIndex)]
-        [DisplayName(Feline_Heroics_Defense_Rate_displayName)]
-        public virtual float Feline_Heroics_Defense_Rate {
-            get => GetData<float>(1946);
-            set {
-                if (GetData<float>(1946) == value) return;
-                SetData(1946, value, nameof(Feline_Heroics_Defense_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Heroics_Defense_Rate));
-            }
-        }
-
-        public const string Feline_Heroics_Life_Activation_Threshold_displayName = "Feline Heroics: Life Activation Threshold";
-        public const int Feline_Heroics_Life_Activation_Threshold_sortIndex = 42750;
-        [SortOrder(Feline_Heroics_Life_Activation_Threshold_sortIndex)]
-        [DisplayName(Feline_Heroics_Life_Activation_Threshold_displayName)]
-        public virtual byte Feline_Heroics_Life_Activation_Threshold {
-            get => GetData<byte>(1950);
-            set {
-                if (GetData<byte>(1950) == value) return;
-                SetData(1950, value, nameof(Feline_Heroics_Life_Activation_Threshold));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Heroics_Life_Activation_Threshold));
-            }
-        }
-
-        public const string __42800_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __42800_sortIndex = 42800;
-        [SortOrder(__42800_sortIndex)]
-        [DisplayName(__42800_displayName)]
-        [IsReadOnly]
-        public virtual byte __42800 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__42800));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__42800));
-            }
-        }
-
-        public const string Feline_Carving_L_Lottery_1_displayName = "Feline Carving L: Lottery % 1";
-        public const int Feline_Carving_L_Lottery_1_sortIndex = 42850;
-        [SortOrder(Feline_Carving_L_Lottery_1_sortIndex)]
-        [DisplayName(Feline_Carving_L_Lottery_1_displayName)]
-        public virtual byte Feline_Carving_L_Lottery_1 {
-            get => GetData<byte>(1951);
-            set {
-                if (GetData<byte>(1951) == value) return;
-                SetData(1951, value, nameof(Feline_Carving_L_Lottery_1));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Carving_L_Lottery_1));
-            }
-        }
-
-        public const string Feline_Carving_L_Lottery_2_displayName = "Feline Carving L: Lottery % 2";
-        public const int Feline_Carving_L_Lottery_2_sortIndex = 42900;
-        [SortOrder(Feline_Carving_L_Lottery_2_sortIndex)]
-        [DisplayName(Feline_Carving_L_Lottery_2_displayName)]
-        public virtual byte Feline_Carving_L_Lottery_2 {
-            get => GetData<byte>(1952);
-            set {
-                if (GetData<byte>(1952) == value) return;
-                SetData(1952, value, nameof(Feline_Carving_L_Lottery_2));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Carving_L_Lottery_2));
-            }
-        }
-
-        public const string Feline_Carving_L_Lottery_3_displayName = "Feline Carving L: Lottery % 3";
-        public const int Feline_Carving_L_Lottery_3_sortIndex = 42950;
-        [SortOrder(Feline_Carving_L_Lottery_3_sortIndex)]
-        [DisplayName(Feline_Carving_L_Lottery_3_displayName)]
-        public virtual byte Feline_Carving_L_Lottery_3 {
-            get => GetData<byte>(1953);
-            set {
-                if (GetData<byte>(1953) == value) return;
-                SetData(1953, value, nameof(Feline_Carving_L_Lottery_3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Carving_L_Lottery_3));
-            }
-        }
-
-        public const string Feline_Carving_L_Up_1_displayName = "Feline Carving L: Up % 1";
-        public const int Feline_Carving_L_Up_1_sortIndex = 43000;
-        [SortOrder(Feline_Carving_L_Up_1_sortIndex)]
-        [DisplayName(Feline_Carving_L_Up_1_displayName)]
-        public virtual byte Feline_Carving_L_Up_1 {
-            get => GetData<byte>(1954);
-            set {
-                if (GetData<byte>(1954) == value) return;
-                SetData(1954, value, nameof(Feline_Carving_L_Up_1));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Carving_L_Up_1));
-            }
-        }
-
-        public const string Feline_Carving_L_Up_2_displayName = "Feline Carving L: Up % 2";
-        public const int Feline_Carving_L_Up_2_sortIndex = 43050;
-        [SortOrder(Feline_Carving_L_Up_2_sortIndex)]
-        [DisplayName(Feline_Carving_L_Up_2_displayName)]
-        public virtual byte Feline_Carving_L_Up_2 {
-            get => GetData<byte>(1955);
-            set {
-                if (GetData<byte>(1955) == value) return;
-                SetData(1955, value, nameof(Feline_Carving_L_Up_2));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Carving_L_Up_2));
-            }
-        }
-
-        public const string Feline_Carving_L_Up_3_displayName = "Feline Carving L: Up % 3";
-        public const int Feline_Carving_L_Up_3_sortIndex = 43100;
-        [SortOrder(Feline_Carving_L_Up_3_sortIndex)]
-        [DisplayName(Feline_Carving_L_Up_3_displayName)]
-        public virtual byte Feline_Carving_L_Up_3 {
-            get => GetData<byte>(1956);
-            set {
-                if (GetData<byte>(1956) == value) return;
-                SetData(1956, value, nameof(Feline_Carving_L_Up_3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Carving_L_Up_3));
-            }
-        }
-
-        public const string Feline_Carving_L_Up_4_displayName = "Feline Carving L: Up % 4";
-        public const int Feline_Carving_L_Up_4_sortIndex = 43150;
-        [SortOrder(Feline_Carving_L_Up_4_sortIndex)]
-        [DisplayName(Feline_Carving_L_Up_4_displayName)]
-        public virtual byte Feline_Carving_L_Up_4 {
-            get => GetData<byte>(1957);
-            set {
-                if (GetData<byte>(1957) == value) return;
-                SetData(1957, value, nameof(Feline_Carving_L_Up_4));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Carving_L_Up_4));
-            }
-        }
-
-        public const string __43200_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __43200_sortIndex = 43200;
-        [SortOrder(__43200_sortIndex)]
-        [DisplayName(__43200_displayName)]
-        [IsReadOnly]
-        public virtual byte __43200 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__43200));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__43200));
-            }
-        }
-
-        public const string Feline_Carving_S_Lottery__displayName = "Feline Carving S: Lottery %";
-        public const int Feline_Carving_S_Lottery__sortIndex = 43250;
-        [SortOrder(Feline_Carving_S_Lottery__sortIndex)]
-        [DisplayName(Feline_Carving_S_Lottery__displayName)]
-        public virtual byte Feline_Carving_S_Lottery_ {
-            get => GetData<byte>(1958);
-            set {
-                if (GetData<byte>(1958) == value) return;
-                SetData(1958, value, nameof(Feline_Carving_S_Lottery_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Carving_S_Lottery_));
-            }
-        }
-
-        public const string Feline_Carving_S_Up__displayName = "Feline Carving S: Up %";
-        public const int Feline_Carving_S_Up__sortIndex = 43300;
-        [SortOrder(Feline_Carving_S_Up__sortIndex)]
-        [DisplayName(Feline_Carving_S_Up__displayName)]
-        public virtual byte Feline_Carving_S_Up_ {
-            get => GetData<byte>(1959);
-            set {
-                if (GetData<byte>(1959) == value) return;
-                SetData(1959, value, nameof(Feline_Carving_S_Up_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Carving_S_Up_));
-            }
-        }
-
-        public const string __43350_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __43350_sortIndex = 43350;
-        [SortOrder(__43350_sortIndex)]
-        [DisplayName(__43350_displayName)]
-        [IsReadOnly]
-        public virtual byte __43350 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__43350));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__43350));
-            }
-        }
-
-        public const string Feline_Medic_Heal_Rate_displayName = "Feline Medic: Heal Rate";
-        public const int Feline_Medic_Heal_Rate_sortIndex = 43400;
-        [SortOrder(Feline_Medic_Heal_Rate_sortIndex)]
-        [DisplayName(Feline_Medic_Heal_Rate_displayName)]
-        public virtual float Feline_Medic_Heal_Rate {
-            get => GetData<float>(1960);
-            set {
-                if (GetData<float>(1960) == value) return;
-                SetData(1960, value, nameof(Feline_Medic_Heal_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Medic_Heal_Rate));
-            }
-        }
-
-        public const string __43450_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __43450_sortIndex = 43450;
-        [SortOrder(__43450_sortIndex)]
-        [DisplayName(__43450_displayName)]
-        [IsReadOnly]
-        public virtual byte __43450 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__43450));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__43450));
-            }
-        }
-
-        public const string Feline_Black_Belt_Stamina_Rate_displayName = "Feline Black Belt: Stamina Rate";
-        public const int Feline_Black_Belt_Stamina_Rate_sortIndex = 43500;
-        [SortOrder(Feline_Black_Belt_Stamina_Rate_sortIndex)]
-        [DisplayName(Feline_Black_Belt_Stamina_Rate_displayName)]
-        public virtual float Feline_Black_Belt_Stamina_Rate {
-            get => GetData<float>(1964);
-            set {
-                if (GetData<float>(1964) == value) return;
-                SetData(1964, value, nameof(Feline_Black_Belt_Stamina_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Black_Belt_Stamina_Rate));
-            }
-        }
-
-        public const string __43550_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __43550_sortIndex = 43550;
-        [SortOrder(__43550_sortIndex)]
-        [DisplayName(__43550_displayName)]
-        [IsReadOnly]
-        public virtual byte __43550 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__43550));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__43550));
-            }
-        }
-
-        public const string Feline_Special_Attack_Condition_Attack_Bonus_displayName = "Feline Special Attack: Condition Attack Bonus";
-        public const int Feline_Special_Attack_Condition_Attack_Bonus_sortIndex = 43600;
-        [SortOrder(Feline_Special_Attack_Condition_Attack_Bonus_sortIndex)]
-        [DisplayName(Feline_Special_Attack_Condition_Attack_Bonus_displayName)]
-        public virtual ushort Feline_Special_Attack_Condition_Attack_Bonus {
-            get => GetData<ushort>(1968);
-            set {
-                if (GetData<ushort>(1968) == value) return;
-                SetData(1968, value, nameof(Feline_Special_Attack_Condition_Attack_Bonus));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Special_Attack_Condition_Attack_Bonus));
-            }
-        }
-
-        public const string Feline_Special_Attack_Capture_Attack_Rate_displayName = "Feline Special Attack: Capture Attack Rate";
-        public const int Feline_Special_Attack_Capture_Attack_Rate_sortIndex = 43650;
-        [SortOrder(Feline_Special_Attack_Capture_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Special_Attack_Capture_Attack_Rate_displayName)]
-        public virtual float Feline_Special_Attack_Capture_Attack_Rate {
-            get => GetData<float>(1970);
-            set {
-                if (GetData<float>(1970) == value) return;
-                SetData(1970, value, nameof(Feline_Special_Attack_Capture_Attack_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Special_Attack_Capture_Attack_Rate));
-            }
-        }
-
-        public const string __43700_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __43700_sortIndex = 43700;
-        [SortOrder(__43700_sortIndex)]
-        [DisplayName(__43700_displayName)]
-        [IsReadOnly]
-        public virtual byte __43700 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__43700));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__43700));
-            }
-        }
-
-        public const string Feline_Defense_S__displayName = "Feline Defense S: %";
-        public const int Feline_Defense_S__sortIndex = 43750;
-        [SortOrder(Feline_Defense_S__sortIndex)]
-        [DisplayName(Feline_Defense_S__displayName)]
-        public virtual byte Feline_Defense_S_ {
-            get => GetData<byte>(1974);
-            set {
-                if (GetData<byte>(1974) == value) return;
-                SetData(1974, value, nameof(Feline_Defense_S_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Defense_S_));
-            }
-        }
-
-        public const string Feline_Defense_S_Damage_Rate_displayName = "Feline Defense S: Damage Rate";
-        public const int Feline_Defense_S_Damage_Rate_sortIndex = 43800;
-        [SortOrder(Feline_Defense_S_Damage_Rate_sortIndex)]
-        [DisplayName(Feline_Defense_S_Damage_Rate_displayName)]
-        public virtual float Feline_Defense_S_Damage_Rate {
-            get => GetData<float>(1976);
-            set {
-                if (GetData<float>(1976) == value) return;
-                SetData(1976, value, nameof(Feline_Defense_S_Damage_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Defense_S_Damage_Rate));
-            }
-        }
-
-        public const string Feline_Defense_L__displayName = "Feline Defense L: %";
-        public const int Feline_Defense_L__sortIndex = 43850;
-        [SortOrder(Feline_Defense_L__sortIndex)]
-        [DisplayName(Feline_Defense_L__displayName)]
-        public virtual byte Feline_Defense_L_ {
-            get => GetData<byte>(1975);
-            set {
-                if (GetData<byte>(1975) == value) return;
-                SetData(1975, value, nameof(Feline_Defense_L_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Defense_L_));
-            }
-        }
-
-        public const string Feline_Defense_L_Damage_Rate_displayName = "Feline Defense L: Damage Rate";
-        public const int Feline_Defense_L_Damage_Rate_sortIndex = 43900;
-        [SortOrder(Feline_Defense_L_Damage_Rate_sortIndex)]
-        [DisplayName(Feline_Defense_L_Damage_Rate_displayName)]
-        public virtual float Feline_Defense_L_Damage_Rate {
-            get => GetData<float>(1980);
-            set {
-                if (GetData<float>(1980) == value) return;
-                SetData(1980, value, nameof(Feline_Defense_L_Damage_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Defense_L_Damage_Rate));
             }
         }
 
@@ -12431,55 +12422,54 @@ namespace MHW_Editor.PlData {
         [DisplayName(__43950_displayName)]
         [IsReadOnly]
         public virtual byte __43950 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__43950));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__43950));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__43950));
             }
         }
 
-        public const string Feline_Harvest_Cooldown_Multiplier_displayName = "Feline Harvest: Cooldown Multiplier";
-        public const int Feline_Harvest_Cooldown_Multiplier_sortIndex = 44000;
-        [SortOrder(Feline_Harvest_Cooldown_Multiplier_sortIndex)]
-        [DisplayName(Feline_Harvest_Cooldown_Multiplier_displayName)]
-        public virtual float Feline_Harvest_Cooldown_Multiplier {
-            get => GetData<float>(1984);
+        public const string Food_Effect_Stamina_Up_1_displayName = "Food Effect: Stamina Up 1";
+        public const int Food_Effect_Stamina_Up_1_sortIndex = 44000;
+        [SortOrder(Food_Effect_Stamina_Up_1_sortIndex)]
+        [DisplayName(Food_Effect_Stamina_Up_1_displayName)]
+        public virtual ushort Food_Effect_Stamina_Up_1 {
+            get => GetData<ushort>(2061);
             set {
-                if (GetData<float>(1984) == value) return;
-                SetData(1984, value, nameof(Feline_Harvest_Cooldown_Multiplier));
+                if (GetData<ushort>(2061) == value) return;
+                SetData(2061, value, nameof(Food_Effect_Stamina_Up_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Harvest_Cooldown_Multiplier));
+                OnPropertyChanged(nameof(Food_Effect_Stamina_Up_1));
             }
         }
 
-        public const string __44050_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __44050_sortIndex = 44050;
-        [SortOrder(__44050_sortIndex)]
-        [DisplayName(__44050_displayName)]
-        [IsReadOnly]
-        public virtual byte __44050 {
-            get => GetData<byte>(3);
+        public const string Food_Effect_Stamina_Up_2_displayName = "Food Effect: Stamina Up 2";
+        public const int Food_Effect_Stamina_Up_2_sortIndex = 44050;
+        [SortOrder(Food_Effect_Stamina_Up_2_sortIndex)]
+        [DisplayName(Food_Effect_Stamina_Up_2_displayName)]
+        public virtual ushort Food_Effect_Stamina_Up_2 {
+            get => GetData<ushort>(2063);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__44050));
+                if (GetData<ushort>(2063) == value) return;
+                SetData(2063, value, nameof(Food_Effect_Stamina_Up_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__44050));
+                OnPropertyChanged(nameof(Food_Effect_Stamina_Up_2));
             }
         }
 
-        public const string Feline_Sharpshooter_Shell_Attack_Rate_displayName = "Feline Sharpshooter: Shell Attack Rate";
-        public const int Feline_Sharpshooter_Shell_Attack_Rate_sortIndex = 44100;
-        [SortOrder(Feline_Sharpshooter_Shell_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Sharpshooter_Shell_Attack_Rate_displayName)]
-        public virtual float Feline_Sharpshooter_Shell_Attack_Rate {
-            get => GetData<float>(1988);
+        public const string Food_Effect_Stamina_Up_3_displayName = "Food Effect: Stamina Up 3";
+        public const int Food_Effect_Stamina_Up_3_sortIndex = 44100;
+        [SortOrder(Food_Effect_Stamina_Up_3_sortIndex)]
+        [DisplayName(Food_Effect_Stamina_Up_3_displayName)]
+        public virtual ushort Food_Effect_Stamina_Up_3 {
+            get => GetData<ushort>(2065);
             set {
-                if (GetData<float>(1988) == value) return;
-                SetData(1988, value, nameof(Feline_Sharpshooter_Shell_Attack_Rate));
+                if (GetData<ushort>(2065) == value) return;
+                SetData(2065, value, nameof(Food_Effect_Stamina_Up_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Sharpshooter_Shell_Attack_Rate));
+                OnPropertyChanged(nameof(Food_Effect_Stamina_Up_3));
             }
         }
 
@@ -12489,141 +12479,139 @@ namespace MHW_Editor.PlData {
         [DisplayName(__44150_displayName)]
         [IsReadOnly]
         public virtual byte __44150 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__44150));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__44150));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__44150));
             }
         }
 
-        public const string Feline_Escape_Artist_Dash_Stamina_Rate_displayName = "Feline Escape Artist: Dash Stamina Rate";
-        public const int Feline_Escape_Artist_Dash_Stamina_Rate_sortIndex = 44200;
-        [SortOrder(Feline_Escape_Artist_Dash_Stamina_Rate_sortIndex)]
-        [DisplayName(Feline_Escape_Artist_Dash_Stamina_Rate_displayName)]
-        public virtual float Feline_Escape_Artist_Dash_Stamina_Rate {
-            get => GetData<float>(1992);
+        public const string Food_Effect_Attack_Up_1_displayName = "Food Effect: Attack Up 1";
+        public const int Food_Effect_Attack_Up_1_sortIndex = 44200;
+        [SortOrder(Food_Effect_Attack_Up_1_sortIndex)]
+        [DisplayName(Food_Effect_Attack_Up_1_displayName)]
+        public virtual ushort Food_Effect_Attack_Up_1 {
+            get => GetData<ushort>(2067);
             set {
-                if (GetData<float>(1992) == value) return;
-                SetData(1992, value, nameof(Feline_Escape_Artist_Dash_Stamina_Rate));
+                if (GetData<ushort>(2067) == value) return;
+                SetData(2067, value, nameof(Food_Effect_Attack_Up_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Escape_Artist_Dash_Stamina_Rate));
+                OnPropertyChanged(nameof(Food_Effect_Attack_Up_1));
             }
         }
 
-        public const string __44250_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __44250_sortIndex = 44250;
-        [SortOrder(__44250_sortIndex)]
-        [DisplayName(__44250_displayName)]
+        public const string Food_Effect_Attack_Up_2_displayName = "Food Effect: Attack Up 2";
+        public const int Food_Effect_Attack_Up_2_sortIndex = 44250;
+        [SortOrder(Food_Effect_Attack_Up_2_sortIndex)]
+        [DisplayName(Food_Effect_Attack_Up_2_displayName)]
+        public virtual ushort Food_Effect_Attack_Up_2 {
+            get => GetData<ushort>(2069);
+            set {
+                if (GetData<ushort>(2069) == value) return;
+                SetData(2069, value, nameof(Food_Effect_Attack_Up_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Food_Effect_Attack_Up_2));
+            }
+        }
+
+        public const string Food_Effect_Attack_Up_3_displayName = "Food Effect: Attack Up 3";
+        public const int Food_Effect_Attack_Up_3_sortIndex = 44300;
+        [SortOrder(Food_Effect_Attack_Up_3_sortIndex)]
+        [DisplayName(Food_Effect_Attack_Up_3_displayName)]
+        public virtual ushort Food_Effect_Attack_Up_3 {
+            get => GetData<ushort>(2071);
+            set {
+                if (GetData<ushort>(2071) == value) return;
+                SetData(2071, value, nameof(Food_Effect_Attack_Up_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Food_Effect_Attack_Up_3));
+            }
+        }
+
+        public const string Food_Effect_Attack_Up_4_displayName = "Food Effect: Attack Up 4";
+        public const int Food_Effect_Attack_Up_4_sortIndex = 44350;
+        [SortOrder(Food_Effect_Attack_Up_4_sortIndex)]
+        [DisplayName(Food_Effect_Attack_Up_4_displayName)]
+        public virtual ushort Food_Effect_Attack_Up_4 {
+            get => GetData<ushort>(2073);
+            set {
+                if (GetData<ushort>(2073) == value) return;
+                SetData(2073, value, nameof(Food_Effect_Attack_Up_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Food_Effect_Attack_Up_4));
+            }
+        }
+
+        public const string __44400_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __44400_sortIndex = 44400;
+        [SortOrder(__44400_sortIndex)]
+        [DisplayName(__44400_displayName)]
         [IsReadOnly]
-        public virtual byte __44250 {
-            get => GetData<byte>(3);
+        public virtual byte __44400 {
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__44250));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__44400));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__44250));
+                OnPropertyChanged(nameof(__44400));
             }
         }
 
-        public const string Feline_Delivery_Dash_Stamina_Rate_displayName = "Feline Delivery: Dash Stamina Rate";
-        public const int Feline_Delivery_Dash_Stamina_Rate_sortIndex = 44300;
-        [SortOrder(Feline_Delivery_Dash_Stamina_Rate_sortIndex)]
-        [DisplayName(Feline_Delivery_Dash_Stamina_Rate_displayName)]
-        public virtual float Feline_Delivery_Dash_Stamina_Rate {
-            get => GetData<float>(1996);
+        public const string Food_Effect_Defense_Up_1_displayName = "Food Effect: Defense Up 1";
+        public const int Food_Effect_Defense_Up_1_sortIndex = 44450;
+        [SortOrder(Food_Effect_Defense_Up_1_sortIndex)]
+        [DisplayName(Food_Effect_Defense_Up_1_displayName)]
+        public virtual ushort Food_Effect_Defense_Up_1 {
+            get => GetData<ushort>(2075);
             set {
-                if (GetData<float>(1996) == value) return;
-                SetData(1996, value, nameof(Feline_Delivery_Dash_Stamina_Rate));
+                if (GetData<ushort>(2075) == value) return;
+                SetData(2075, value, nameof(Food_Effect_Defense_Up_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Delivery_Dash_Stamina_Rate));
+                OnPropertyChanged(nameof(Food_Effect_Defense_Up_1));
             }
         }
 
-        public const string __44350_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __44350_sortIndex = 44350;
-        [SortOrder(__44350_sortIndex)]
-        [DisplayName(__44350_displayName)]
-        [IsReadOnly]
-        public virtual byte __44350 {
-            get => GetData<byte>(3);
+        public const string Food_Effect_Defense_Up_2_displayName = "Food Effect: Defense Up 2";
+        public const int Food_Effect_Defense_Up_2_sortIndex = 44500;
+        [SortOrder(Food_Effect_Defense_Up_2_sortIndex)]
+        [DisplayName(Food_Effect_Defense_Up_2_displayName)]
+        public virtual ushort Food_Effect_Defense_Up_2 {
+            get => GetData<ushort>(2077);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__44350));
+                if (GetData<ushort>(2077) == value) return;
+                SetData(2077, value, nameof(Food_Effect_Defense_Up_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__44350));
+                OnPropertyChanged(nameof(Food_Effect_Defense_Up_2));
             }
         }
 
-        public const string Feline_Riser_S_IFrames_displayName = "Feline Riser S: IFrames";
-        public const int Feline_Riser_S_IFrames_sortIndex = 44400;
-        [SortOrder(Feline_Riser_S_IFrames_sortIndex)]
-        [DisplayName(Feline_Riser_S_IFrames_displayName)]
-        public virtual float Feline_Riser_S_IFrames {
-            get => GetData<float>(2000);
+        public const string Food_Effect_Defense_Up_3_displayName = "Food Effect: Defense Up 3";
+        public const int Food_Effect_Defense_Up_3_sortIndex = 44550;
+        [SortOrder(Food_Effect_Defense_Up_3_sortIndex)]
+        [DisplayName(Food_Effect_Defense_Up_3_displayName)]
+        public virtual ushort Food_Effect_Defense_Up_3 {
+            get => GetData<ushort>(2079);
             set {
-                if (GetData<float>(2000) == value) return;
-                SetData(2000, value, nameof(Feline_Riser_S_IFrames));
+                if (GetData<ushort>(2079) == value) return;
+                SetData(2079, value, nameof(Food_Effect_Defense_Up_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Riser_S_IFrames));
+                OnPropertyChanged(nameof(Food_Effect_Defense_Up_3));
             }
         }
 
-        public const string Feline_Riser_L_IFrames_displayName = "Feline Riser L: IFrames";
-        public const int Feline_Riser_L_IFrames_sortIndex = 44450;
-        [SortOrder(Feline_Riser_L_IFrames_sortIndex)]
-        [DisplayName(Feline_Riser_L_IFrames_displayName)]
-        public virtual float Feline_Riser_L_IFrames {
-            get => GetData<float>(2004);
+        public const string Food_Effect_Defense_Up_4_displayName = "Food Effect: Defense Up 4";
+        public const int Food_Effect_Defense_Up_4_sortIndex = 44600;
+        [SortOrder(Food_Effect_Defense_Up_4_sortIndex)]
+        [DisplayName(Food_Effect_Defense_Up_4_displayName)]
+        public virtual ushort Food_Effect_Defense_Up_4 {
+            get => GetData<ushort>(2081);
             set {
-                if (GetData<float>(2004) == value) return;
-                SetData(2004, value, nameof(Feline_Riser_L_IFrames));
+                if (GetData<ushort>(2081) == value) return;
+                SetData(2081, value, nameof(Food_Effect_Defense_Up_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Riser_L_IFrames));
-            }
-        }
-
-        public const string __44500_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __44500_sortIndex = 44500;
-        [SortOrder(__44500_sortIndex)]
-        [DisplayName(__44500_displayName)]
-        [IsReadOnly]
-        public virtual byte __44500 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__44500));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__44500));
-            }
-        }
-
-        public const string Feline_Temper_Shell_Attack_Rate_displayName = "Feline Temper: Shell Attack Rate";
-        public const int Feline_Temper_Shell_Attack_Rate_sortIndex = 44550;
-        [SortOrder(Feline_Temper_Shell_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Temper_Shell_Attack_Rate_displayName)]
-        public virtual float Feline_Temper_Shell_Attack_Rate {
-            get => GetData<float>(2008);
-            set {
-                if (GetData<float>(2008) == value) return;
-                SetData(2008, value, nameof(Feline_Temper_Shell_Attack_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Temper_Shell_Attack_Rate));
-            }
-        }
-
-        public const string Feline_Temper_Blur_Level_Bonus_displayName = "Feline Temper: Blur Level Bonus";
-        public const int Feline_Temper_Blur_Level_Bonus_sortIndex = 44600;
-        [SortOrder(Feline_Temper_Blur_Level_Bonus_sortIndex)]
-        [DisplayName(Feline_Temper_Blur_Level_Bonus_displayName)]
-        public virtual byte Feline_Temper_Blur_Level_Bonus {
-            get => GetData<byte>(2012);
-            set {
-                if (GetData<byte>(2012) == value) return;
-                SetData(2012, value, nameof(Feline_Temper_Blur_Level_Bonus));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Temper_Blur_Level_Bonus));
+                OnPropertyChanged(nameof(Food_Effect_Defense_Up_4));
             }
         }
 
@@ -12633,469 +12621,467 @@ namespace MHW_Editor.PlData {
         [DisplayName(__44650_displayName)]
         [IsReadOnly]
         public virtual byte __44650 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__44650));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__44650));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__44650));
             }
         }
 
-        public const string Feline_Cliffhanger_Stamina_Rate_displayName = "Feline Cliffhanger: Stamina Rate";
-        public const int Feline_Cliffhanger_Stamina_Rate_sortIndex = 44700;
-        [SortOrder(Feline_Cliffhanger_Stamina_Rate_sortIndex)]
-        [DisplayName(Feline_Cliffhanger_Stamina_Rate_displayName)]
-        public virtual float Feline_Cliffhanger_Stamina_Rate {
-            get => GetData<float>(2013);
+        public const string Food_Effect_All_Resistances_Up_1_displayName = "Food Effect: All Resistances Up 1";
+        public const int Food_Effect_All_Resistances_Up_1_sortIndex = 44700;
+        [SortOrder(Food_Effect_All_Resistances_Up_1_sortIndex)]
+        [DisplayName(Food_Effect_All_Resistances_Up_1_displayName)]
+        public virtual ushort Food_Effect_All_Resistances_Up_1 {
+            get => GetData<ushort>(2083);
             set {
-                if (GetData<float>(2013) == value) return;
-                SetData(2013, value, nameof(Feline_Cliffhanger_Stamina_Rate));
+                if (GetData<ushort>(2083) == value) return;
+                SetData(2083, value, nameof(Food_Effect_All_Resistances_Up_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Cliffhanger_Stamina_Rate));
+                OnPropertyChanged(nameof(Food_Effect_All_Resistances_Up_1));
             }
         }
 
-        public const string __44750_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __44750_sortIndex = 44750;
-        [SortOrder(__44750_sortIndex)]
-        [DisplayName(__44750_displayName)]
+        public const string Food_Effect_All_Resistances_Up_2_displayName = "Food Effect: All Resistances Up 2";
+        public const int Food_Effect_All_Resistances_Up_2_sortIndex = 44750;
+        [SortOrder(Food_Effect_All_Resistances_Up_2_sortIndex)]
+        [DisplayName(Food_Effect_All_Resistances_Up_2_displayName)]
+        public virtual ushort Food_Effect_All_Resistances_Up_2 {
+            get => GetData<ushort>(2085);
+            set {
+                if (GetData<ushort>(2085) == value) return;
+                SetData(2085, value, nameof(Food_Effect_All_Resistances_Up_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Food_Effect_All_Resistances_Up_2));
+            }
+        }
+
+        public const string Food_Effect_All_Resistances_Up_3_displayName = "Food Effect: All Resistances Up 3";
+        public const int Food_Effect_All_Resistances_Up_3_sortIndex = 44800;
+        [SortOrder(Food_Effect_All_Resistances_Up_3_sortIndex)]
+        [DisplayName(Food_Effect_All_Resistances_Up_3_displayName)]
+        public virtual ushort Food_Effect_All_Resistances_Up_3 {
+            get => GetData<ushort>(2087);
+            set {
+                if (GetData<ushort>(2087) == value) return;
+                SetData(2087, value, nameof(Food_Effect_All_Resistances_Up_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Food_Effect_All_Resistances_Up_3));
+            }
+        }
+
+        public const string Food_Effect_All_Resistances_Up_4_displayName = "Food Effect: All Resistances Up 4";
+        public const int Food_Effect_All_Resistances_Up_4_sortIndex = 44850;
+        [SortOrder(Food_Effect_All_Resistances_Up_4_sortIndex)]
+        [DisplayName(Food_Effect_All_Resistances_Up_4_displayName)]
+        public virtual ushort Food_Effect_All_Resistances_Up_4 {
+            get => GetData<ushort>(2089);
+            set {
+                if (GetData<ushort>(2089) == value) return;
+                SetData(2089, value, nameof(Food_Effect_All_Resistances_Up_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Food_Effect_All_Resistances_Up_4));
+            }
+        }
+
+        public const string __44900_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __44900_sortIndex = 44900;
+        [SortOrder(__44900_sortIndex)]
+        [DisplayName(__44900_displayName)]
         [IsReadOnly]
-        public virtual byte __44750 {
-            get => GetData<byte>(3);
+        public virtual byte __44900 {
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__44750));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__44900));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__44750));
+                OnPropertyChanged(nameof(__44900));
             }
         }
 
-        public const string Feline_Slugger_Stun_Attack_Rate_displayName = "Feline Slugger: Stun Attack Rate";
-        public const int Feline_Slugger_Stun_Attack_Rate_sortIndex = 44800;
-        [SortOrder(Feline_Slugger_Stun_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Slugger_Stun_Attack_Rate_displayName)]
-        public virtual float Feline_Slugger_Stun_Attack_Rate {
-            get => GetData<float>(2017);
+        public const string Feline_Polisher_1_displayName = "Feline Polisher: % 1";
+        public const int Feline_Polisher_1_sortIndex = 44950;
+        [SortOrder(Feline_Polisher_1_sortIndex)]
+        [DisplayName(Feline_Polisher_1_displayName)]
+        public virtual byte Feline_Polisher_1 {
+            get => GetData<byte>(2091);
             set {
-                if (GetData<float>(2017) == value) return;
-                SetData(2017, value, nameof(Feline_Slugger_Stun_Attack_Rate));
+                if (GetData<byte>(2091) == value) return;
+                SetData(2091, value, nameof(Feline_Polisher_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Slugger_Stun_Attack_Rate));
+                OnPropertyChanged(nameof(Feline_Polisher_1));
             }
         }
 
-        public const string __44850_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __44850_sortIndex = 44850;
-        [SortOrder(__44850_sortIndex)]
-        [DisplayName(__44850_displayName)]
+        public const string Feline_Polisher_2_displayName = "Feline Polisher: % 2";
+        public const int Feline_Polisher_2_sortIndex = 45000;
+        [SortOrder(Feline_Polisher_2_sortIndex)]
+        [DisplayName(Feline_Polisher_2_displayName)]
+        public virtual byte Feline_Polisher_2 {
+            get => GetData<byte>(2092);
+            set {
+                if (GetData<byte>(2092) == value) return;
+                SetData(2092, value, nameof(Feline_Polisher_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Polisher_2));
+            }
+        }
+
+        public const string Feline_Polisher_3_displayName = "Feline Polisher: % 3";
+        public const int Feline_Polisher_3_sortIndex = 45050;
+        [SortOrder(Feline_Polisher_3_sortIndex)]
+        [DisplayName(Feline_Polisher_3_displayName)]
+        public virtual byte Feline_Polisher_3 {
+            get => GetData<byte>(2093);
+            set {
+                if (GetData<byte>(2093) == value) return;
+                SetData(2093, value, nameof(Feline_Polisher_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Polisher_3));
+            }
+        }
+
+        public const string Feline_Polisher_Loop_1_displayName = "Feline Polisher: Loop # 1";
+        public const int Feline_Polisher_Loop_1_sortIndex = 45100;
+        [SortOrder(Feline_Polisher_Loop_1_sortIndex)]
+        [DisplayName(Feline_Polisher_Loop_1_displayName)]
+        public virtual byte Feline_Polisher_Loop_1 {
+            get => GetData<byte>(2094);
+            set {
+                if (GetData<byte>(2094) == value) return;
+                SetData(2094, value, nameof(Feline_Polisher_Loop_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Polisher_Loop_1));
+            }
+        }
+
+        public const string Feline_Polisher_Loop_2_displayName = "Feline Polisher: Loop # 2";
+        public const int Feline_Polisher_Loop_2_sortIndex = 45150;
+        [SortOrder(Feline_Polisher_Loop_2_sortIndex)]
+        [DisplayName(Feline_Polisher_Loop_2_displayName)]
+        public virtual byte Feline_Polisher_Loop_2 {
+            get => GetData<byte>(2095);
+            set {
+                if (GetData<byte>(2095) == value) return;
+                SetData(2095, value, nameof(Feline_Polisher_Loop_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Polisher_Loop_2));
+            }
+        }
+
+        public const string Feline_Polisher_Loop_3_displayName = "Feline Polisher: Loop # 3";
+        public const int Feline_Polisher_Loop_3_sortIndex = 45200;
+        [SortOrder(Feline_Polisher_Loop_3_sortIndex)]
+        [DisplayName(Feline_Polisher_Loop_3_displayName)]
+        public virtual byte Feline_Polisher_Loop_3 {
+            get => GetData<byte>(2096);
+            set {
+                if (GetData<byte>(2096) == value) return;
+                SetData(2096, value, nameof(Feline_Polisher_Loop_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Polisher_Loop_3));
+            }
+        }
+
+        public const string __45250_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __45250_sortIndex = 45250;
+        [SortOrder(__45250_sortIndex)]
+        [DisplayName(__45250_displayName)]
         [IsReadOnly]
-        public virtual byte __44850 {
-            get => GetData<byte>(3);
+        public virtual byte __45250 {
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__44850));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__45250));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__44850));
+                OnPropertyChanged(nameof(__45250));
             }
         }
 
-        public const string Feline_Bombardier_Ballista_Attack_Rate_displayName = "Feline Bombardier: Ballista Attack Rate";
-        public const int Feline_Bombardier_Ballista_Attack_Rate_sortIndex = 44900;
-        [SortOrder(Feline_Bombardier_Ballista_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Bombardier_Ballista_Attack_Rate_displayName)]
-        public virtual float Feline_Bombardier_Ballista_Attack_Rate {
-            get => GetData<float>(2021);
+        public const string Feline_Rider_Attack_Rate_displayName = "Feline Rider: Attack Rate";
+        public const int Feline_Rider_Attack_Rate_sortIndex = 45300;
+        [SortOrder(Feline_Rider_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Rider_Attack_Rate_displayName)]
+        public virtual float Feline_Rider_Attack_Rate {
+            get => GetData<float>(2097);
             set {
-                if (GetData<float>(2021) == value) return;
-                SetData(2021, value, nameof(Feline_Bombardier_Ballista_Attack_Rate));
+                if (GetData<float>(2097) == value) return;
+                SetData(2097, value, nameof(Feline_Rider_Attack_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Bombardier_Ballista_Attack_Rate));
+                OnPropertyChanged(nameof(Feline_Rider_Attack_Rate));
             }
         }
 
-        public const string Feline_Bombardier_Cannon_Attack_Rate_displayName = "Feline Bombardier: Cannon Attack Rate";
-        public const int Feline_Bombardier_Cannon_Attack_Rate_sortIndex = 44950;
-        [SortOrder(Feline_Bombardier_Cannon_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Bombardier_Cannon_Attack_Rate_displayName)]
-        public virtual float Feline_Bombardier_Cannon_Attack_Rate {
-            get => GetData<float>(2025);
-            set {
-                if (GetData<float>(2025) == value) return;
-                SetData(2025, value, nameof(Feline_Bombardier_Cannon_Attack_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Bombardier_Cannon_Attack_Rate));
-            }
-        }
-
-        public const string Feline_Bombardier_Gunlance_Shell_Attack_Rate_displayName = "Feline Bombardier: Gunlance Shell Attack Rate";
-        public const int Feline_Bombardier_Gunlance_Shell_Attack_Rate_sortIndex = 45000;
-        [SortOrder(Feline_Bombardier_Gunlance_Shell_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Bombardier_Gunlance_Shell_Attack_Rate_displayName)]
-        public virtual float Feline_Bombardier_Gunlance_Shell_Attack_Rate {
-            get => GetData<float>(2029);
-            set {
-                if (GetData<float>(2029) == value) return;
-                SetData(2029, value, nameof(Feline_Bombardier_Gunlance_Shell_Attack_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Bombardier_Gunlance_Shell_Attack_Rate));
-            }
-        }
-
-        public const string Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_displayName = "Feline Bombardier: Gunlance WyvernFire Attack Rate";
-        public const int Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_sortIndex = 45050;
-        [SortOrder(Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_displayName)]
-        public virtual float Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate {
-            get => GetData<float>(2033);
-            set {
-                if (GetData<float>(2033) == value) return;
-                SetData(2033, value, nameof(Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate));
-            }
-        }
-
-        public const string Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_displayName = "Feline Bombardier: Gunlance Wyrmstake Cannon Attack Rate";
-        public const int Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_sortIndex = 45100;
-        [SortOrder(Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_displayName)]
-        public virtual float Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate {
-            get => GetData<float>(2037);
-            set {
-                if (GetData<float>(2037) == value) return;
-                SetData(2037, value, nameof(Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate));
-            }
-        }
-
-        public const string Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_displayName = "Feline Bombardier: Charge Blade Impact Phial Attack Rate";
-        public const int Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_sortIndex = 45150;
-        [SortOrder(Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_displayName)]
-        public virtual float Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate {
-            get => GetData<float>(2041);
-            set {
-                if (GetData<float>(2041) == value) return;
-                SetData(2041, value, nameof(Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate));
-            }
-        }
-
-        public const string Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_displayName = "Feline Bombardier: Bowgun Sticky Ammo Attack Rate";
-        public const int Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_sortIndex = 45200;
-        [SortOrder(Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_displayName)]
-        public virtual float Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate {
-            get => GetData<float>(2045);
-            set {
-                if (GetData<float>(2045) == value) return;
-                SetData(2045, value, nameof(Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate));
-            }
-        }
-
-        public const string Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_displayName = "Feline Bombardier: Bowgun Wyvern Ammo Attack Rate";
-        public const int Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_sortIndex = 45250;
-        [SortOrder(Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_sortIndex)]
-        [DisplayName(Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_displayName)]
-        public virtual float Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate {
-            get => GetData<float>(2049);
-            set {
-                if (GetData<float>(2049) == value) return;
-                SetData(2049, value, nameof(Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate));
-            }
-        }
-
-        public const string __45300_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __45300_sortIndex = 45300;
-        [SortOrder(__45300_sortIndex)]
-        [DisplayName(__45300_displayName)]
+        public const string __45350_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __45350_sortIndex = 45350;
+        [SortOrder(__45350_sortIndex)]
+        [DisplayName(__45350_displayName)]
         [IsReadOnly]
-        public virtual byte __45300 {
-            get => GetData<byte>(3);
+        public virtual byte __45350 {
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__45300));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__45350));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__45300));
+                OnPropertyChanged(nameof(__45350));
             }
         }
 
-        public const string Feline_Moxie_Health_Threshold_displayName = "Feline Moxie: Health Threshold";
-        public const int Feline_Moxie_Health_Threshold_sortIndex = 45350;
-        [SortOrder(Feline_Moxie_Health_Threshold_sortIndex)]
-        [DisplayName(Feline_Moxie_Health_Threshold_displayName)]
-        public virtual byte Feline_Moxie_Health_Threshold {
-            get => GetData<byte>(2053);
+        public const string Feline_Heroics_Attack_Rate_displayName = "Feline Heroics: Attack Rate";
+        public const int Feline_Heroics_Attack_Rate_sortIndex = 45400;
+        [SortOrder(Feline_Heroics_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Heroics_Attack_Rate_displayName)]
+        public virtual float Feline_Heroics_Attack_Rate {
+            get => GetData<float>(2101);
             set {
-                if (GetData<byte>(2053) == value) return;
-                SetData(2053, value, nameof(Feline_Moxie_Health_Threshold));
+                if (GetData<float>(2101) == value) return;
+                SetData(2101, value, nameof(Feline_Heroics_Attack_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Moxie_Health_Threshold));
+                OnPropertyChanged(nameof(Feline_Heroics_Attack_Rate));
             }
         }
 
-        public const string __45400_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __45400_sortIndex = 45400;
-        [SortOrder(__45400_sortIndex)]
-        [DisplayName(__45400_displayName)]
+        public const string Feline_Heroics_Defense_Rate_displayName = "Feline Heroics: Defense Rate";
+        public const int Feline_Heroics_Defense_Rate_sortIndex = 45450;
+        [SortOrder(Feline_Heroics_Defense_Rate_sortIndex)]
+        [DisplayName(Feline_Heroics_Defense_Rate_displayName)]
+        public virtual float Feline_Heroics_Defense_Rate {
+            get => GetData<float>(2105);
+            set {
+                if (GetData<float>(2105) == value) return;
+                SetData(2105, value, nameof(Feline_Heroics_Defense_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Heroics_Defense_Rate));
+            }
+        }
+
+        public const string Feline_Heroics_Life_Activation_Threshold_displayName = "Feline Heroics: Life Activation Threshold";
+        public const int Feline_Heroics_Life_Activation_Threshold_sortIndex = 45500;
+        [SortOrder(Feline_Heroics_Life_Activation_Threshold_sortIndex)]
+        [DisplayName(Feline_Heroics_Life_Activation_Threshold_displayName)]
+        public virtual byte Feline_Heroics_Life_Activation_Threshold {
+            get => GetData<byte>(2109);
+            set {
+                if (GetData<byte>(2109) == value) return;
+                SetData(2109, value, nameof(Feline_Heroics_Life_Activation_Threshold));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Heroics_Life_Activation_Threshold));
+            }
+        }
+
+        public const string __45550_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __45550_sortIndex = 45550;
+        [SortOrder(__45550_sortIndex)]
+        [DisplayName(__45550_displayName)]
         [IsReadOnly]
-        public virtual byte __45400 {
-            get => GetData<byte>(3);
+        public virtual byte __45550 {
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__45400));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__45550));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__45400));
+                OnPropertyChanged(nameof(__45550));
             }
         }
 
-        public const string Feline_Dungmaster_Escape_Bonus_displayName = "Feline Dungmaster: Escape % Bonus";
-        public const int Feline_Dungmaster_Escape_Bonus_sortIndex = 45450;
-        [SortOrder(Feline_Dungmaster_Escape_Bonus_sortIndex)]
-        [DisplayName(Feline_Dungmaster_Escape_Bonus_displayName)]
-        public virtual byte Feline_Dungmaster_Escape_Bonus {
-            get => GetData<byte>(2054);
+        public const string Feline_Carving_L_Lottery_1_displayName = "Feline Carving L: Lottery % 1";
+        public const int Feline_Carving_L_Lottery_1_sortIndex = 45600;
+        [SortOrder(Feline_Carving_L_Lottery_1_sortIndex)]
+        [DisplayName(Feline_Carving_L_Lottery_1_displayName)]
+        public virtual byte Feline_Carving_L_Lottery_1 {
+            get => GetData<byte>(2110);
             set {
-                if (GetData<byte>(2054) == value) return;
-                SetData(2054, value, nameof(Feline_Dungmaster_Escape_Bonus));
+                if (GetData<byte>(2110) == value) return;
+                SetData(2110, value, nameof(Feline_Carving_L_Lottery_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Dungmaster_Escape_Bonus));
+                OnPropertyChanged(nameof(Feline_Carving_L_Lottery_1));
             }
         }
 
-        public const string __45500_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __45500_sortIndex = 45500;
-        [SortOrder(__45500_sortIndex)]
-        [DisplayName(__45500_displayName)]
+        public const string Feline_Carving_L_Lottery_2_displayName = "Feline Carving L: Lottery % 2";
+        public const int Feline_Carving_L_Lottery_2_sortIndex = 45650;
+        [SortOrder(Feline_Carving_L_Lottery_2_sortIndex)]
+        [DisplayName(Feline_Carving_L_Lottery_2_displayName)]
+        public virtual byte Feline_Carving_L_Lottery_2 {
+            get => GetData<byte>(2111);
+            set {
+                if (GetData<byte>(2111) == value) return;
+                SetData(2111, value, nameof(Feline_Carving_L_Lottery_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Carving_L_Lottery_2));
+            }
+        }
+
+        public const string Feline_Carving_L_Lottery_3_displayName = "Feline Carving L: Lottery % 3";
+        public const int Feline_Carving_L_Lottery_3_sortIndex = 45700;
+        [SortOrder(Feline_Carving_L_Lottery_3_sortIndex)]
+        [DisplayName(Feline_Carving_L_Lottery_3_displayName)]
+        public virtual byte Feline_Carving_L_Lottery_3 {
+            get => GetData<byte>(2112);
+            set {
+                if (GetData<byte>(2112) == value) return;
+                SetData(2112, value, nameof(Feline_Carving_L_Lottery_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Carving_L_Lottery_3));
+            }
+        }
+
+        public const string Feline_Carving_L_Up_1_displayName = "Feline Carving L: Up % 1";
+        public const int Feline_Carving_L_Up_1_sortIndex = 45750;
+        [SortOrder(Feline_Carving_L_Up_1_sortIndex)]
+        [DisplayName(Feline_Carving_L_Up_1_displayName)]
+        public virtual byte Feline_Carving_L_Up_1 {
+            get => GetData<byte>(2113);
+            set {
+                if (GetData<byte>(2113) == value) return;
+                SetData(2113, value, nameof(Feline_Carving_L_Up_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Carving_L_Up_1));
+            }
+        }
+
+        public const string Feline_Carving_L_Up_2_displayName = "Feline Carving L: Up % 2";
+        public const int Feline_Carving_L_Up_2_sortIndex = 45800;
+        [SortOrder(Feline_Carving_L_Up_2_sortIndex)]
+        [DisplayName(Feline_Carving_L_Up_2_displayName)]
+        public virtual byte Feline_Carving_L_Up_2 {
+            get => GetData<byte>(2114);
+            set {
+                if (GetData<byte>(2114) == value) return;
+                SetData(2114, value, nameof(Feline_Carving_L_Up_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Carving_L_Up_2));
+            }
+        }
+
+        public const string Feline_Carving_L_Up_3_displayName = "Feline Carving L: Up % 3";
+        public const int Feline_Carving_L_Up_3_sortIndex = 45850;
+        [SortOrder(Feline_Carving_L_Up_3_sortIndex)]
+        [DisplayName(Feline_Carving_L_Up_3_displayName)]
+        public virtual byte Feline_Carving_L_Up_3 {
+            get => GetData<byte>(2115);
+            set {
+                if (GetData<byte>(2115) == value) return;
+                SetData(2115, value, nameof(Feline_Carving_L_Up_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Carving_L_Up_3));
+            }
+        }
+
+        public const string Feline_Carving_L_Up_4_displayName = "Feline Carving L: Up % 4";
+        public const int Feline_Carving_L_Up_4_sortIndex = 45900;
+        [SortOrder(Feline_Carving_L_Up_4_sortIndex)]
+        [DisplayName(Feline_Carving_L_Up_4_displayName)]
+        public virtual byte Feline_Carving_L_Up_4 {
+            get => GetData<byte>(2116);
+            set {
+                if (GetData<byte>(2116) == value) return;
+                SetData(2116, value, nameof(Feline_Carving_L_Up_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Carving_L_Up_4));
+            }
+        }
+
+        public const string __45950_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __45950_sortIndex = 45950;
+        [SortOrder(__45950_sortIndex)]
+        [DisplayName(__45950_displayName)]
         [IsReadOnly]
-        public virtual byte __45500 {
-            get => GetData<byte>(3);
+        public virtual byte __45950 {
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__45500));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__45950));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__45500));
+                OnPropertyChanged(nameof(__45950));
             }
         }
 
-        public const string Feline_Provoker_Rate_displayName = "Feline Provoker: Rate";
-        public const int Feline_Provoker_Rate_sortIndex = 45550;
-        [SortOrder(Feline_Provoker_Rate_sortIndex)]
-        [DisplayName(Feline_Provoker_Rate_displayName)]
-        public virtual float Feline_Provoker_Rate {
-            get => GetData<float>(2055);
+        public const string Feline_Carving_S_Lottery__displayName = "Feline Carving S: Lottery %";
+        public const int Feline_Carving_S_Lottery__sortIndex = 46000;
+        [SortOrder(Feline_Carving_S_Lottery__sortIndex)]
+        [DisplayName(Feline_Carving_S_Lottery__displayName)]
+        public virtual byte Feline_Carving_S_Lottery_ {
+            get => GetData<byte>(2117);
             set {
-                if (GetData<float>(2055) == value) return;
-                SetData(2055, value, nameof(Feline_Provoker_Rate));
+                if (GetData<byte>(2117) == value) return;
+                SetData(2117, value, nameof(Feline_Carving_S_Lottery_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Provoker_Rate));
+                OnPropertyChanged(nameof(Feline_Carving_S_Lottery_));
             }
         }
 
-        public const string __45600_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __45600_sortIndex = 45600;
-        [SortOrder(__45600_sortIndex)]
-        [DisplayName(__45600_displayName)]
+        public const string Feline_Carving_S_Up__displayName = "Feline Carving S: Up %";
+        public const int Feline_Carving_S_Up__sortIndex = 46050;
+        [SortOrder(Feline_Carving_S_Up__sortIndex)]
+        [DisplayName(Feline_Carving_S_Up__displayName)]
+        public virtual byte Feline_Carving_S_Up_ {
+            get => GetData<byte>(2118);
+            set {
+                if (GetData<byte>(2118) == value) return;
+                SetData(2118, value, nameof(Feline_Carving_S_Up_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Carving_S_Up_));
+            }
+        }
+
+        public const string __46100_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __46100_sortIndex = 46100;
+        [SortOrder(__46100_sortIndex)]
+        [DisplayName(__46100_displayName)]
         [IsReadOnly]
-        public virtual byte __45600 {
-            get => GetData<byte>(3);
+        public virtual byte __46100 {
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__45600));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__46100));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__45600));
+                OnPropertyChanged(nameof(__46100));
             }
         }
 
-        public const string Feline_Cool_Cat_Power_UP_Time_Needed_displayName = "Feline Cool Cat: Power UP Time Needed";
-        public const int Feline_Cool_Cat_Power_UP_Time_Needed_sortIndex = 45650;
-        [SortOrder(Feline_Cool_Cat_Power_UP_Time_Needed_sortIndex)]
-        [DisplayName(Feline_Cool_Cat_Power_UP_Time_Needed_displayName)]
-        public virtual float Feline_Cool_Cat_Power_UP_Time_Needed {
-            get => GetData<float>(2059);
+        public const string Feline_Medic_Heal_Rate_displayName = "Feline Medic: Heal Rate";
+        public const int Feline_Medic_Heal_Rate_sortIndex = 46150;
+        [SortOrder(Feline_Medic_Heal_Rate_sortIndex)]
+        [DisplayName(Feline_Medic_Heal_Rate_displayName)]
+        public virtual float Feline_Medic_Heal_Rate {
+            get => GetData<float>(2119);
             set {
-                if (GetData<float>(2059) == value) return;
-                SetData(2059, value, nameof(Feline_Cool_Cat_Power_UP_Time_Needed));
+                if (GetData<float>(2119) == value) return;
+                SetData(2119, value, nameof(Feline_Medic_Heal_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Cool_Cat_Power_UP_Time_Needed));
+                OnPropertyChanged(nameof(Feline_Medic_Heal_Rate));
             }
         }
 
-        public const string Feline_Cool_Cat_Power_UP_Duration_displayName = "Feline Cool Cat: Power UP Duration";
-        public const int Feline_Cool_Cat_Power_UP_Duration_sortIndex = 45700;
-        [SortOrder(Feline_Cool_Cat_Power_UP_Duration_sortIndex)]
-        [DisplayName(Feline_Cool_Cat_Power_UP_Duration_displayName)]
-        public virtual float Feline_Cool_Cat_Power_UP_Duration {
-            get => GetData<float>(2063);
-            set {
-                if (GetData<float>(2063) == value) return;
-                SetData(2063, value, nameof(Feline_Cool_Cat_Power_UP_Duration));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Cool_Cat_Power_UP_Duration));
-            }
-        }
-
-        public const string Feline_Cool_Cat_Attack_Bonus_displayName = "Feline Cool Cat: Attack Bonus";
-        public const int Feline_Cool_Cat_Attack_Bonus_sortIndex = 45750;
-        [SortOrder(Feline_Cool_Cat_Attack_Bonus_sortIndex)]
-        [DisplayName(Feline_Cool_Cat_Attack_Bonus_displayName)]
-        public virtual float Feline_Cool_Cat_Attack_Bonus {
-            get => GetData<float>(2067);
-            set {
-                if (GetData<float>(2067) == value) return;
-                SetData(2067, value, nameof(Feline_Cool_Cat_Attack_Bonus));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Cool_Cat_Attack_Bonus));
-            }
-        }
-
-        public const string __45800_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __45800_sortIndex = 45800;
-        [SortOrder(__45800_sortIndex)]
-        [DisplayName(__45800_displayName)]
+        public const string __46200_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __46200_sortIndex = 46200;
+        [SortOrder(__46200_sortIndex)]
+        [DisplayName(__46200_displayName)]
         [IsReadOnly]
-        public virtual byte __45800 {
-            get => GetData<byte>(3);
+        public virtual byte __46200 {
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__45800));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__46200));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__45800));
+                OnPropertyChanged(nameof(__46200));
             }
         }
 
-        public const string Feline_Booster_Attack_Bonus_displayName = "Feline Booster: Attack Bonus";
-        public const int Feline_Booster_Attack_Bonus_sortIndex = 45850;
-        [SortOrder(Feline_Booster_Attack_Bonus_sortIndex)]
-        [DisplayName(Feline_Booster_Attack_Bonus_displayName)]
-        public virtual float Feline_Booster_Attack_Bonus {
-            get => GetData<float>(2071);
+        public const string Feline_Black_Belt_Stamina_Rate_displayName = "Feline Black Belt: Stamina Rate";
+        public const int Feline_Black_Belt_Stamina_Rate_sortIndex = 46250;
+        [SortOrder(Feline_Black_Belt_Stamina_Rate_sortIndex)]
+        [DisplayName(Feline_Black_Belt_Stamina_Rate_displayName)]
+        public virtual float Feline_Black_Belt_Stamina_Rate {
+            get => GetData<float>(2123);
             set {
-                if (GetData<float>(2071) == value) return;
-                SetData(2071, value, nameof(Feline_Booster_Attack_Bonus));
+                if (GetData<float>(2123) == value) return;
+                SetData(2123, value, nameof(Feline_Black_Belt_Stamina_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Booster_Attack_Bonus));
-            }
-        }
-
-        public const string Feline_Booster_Defense_Bonus_displayName = "Feline Booster: Defense Bonus";
-        public const int Feline_Booster_Defense_Bonus_sortIndex = 45900;
-        [SortOrder(Feline_Booster_Defense_Bonus_sortIndex)]
-        [DisplayName(Feline_Booster_Defense_Bonus_displayName)]
-        public virtual float Feline_Booster_Defense_Bonus {
-            get => GetData<float>(2075);
-            set {
-                if (GetData<float>(2075) == value) return;
-                SetData(2075, value, nameof(Feline_Booster_Defense_Bonus));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Booster_Defense_Bonus));
-            }
-        }
-
-        public const string Feline_Booster_Duration_displayName = "Feline Booster: Duration";
-        public const int Feline_Booster_Duration_sortIndex = 45950;
-        [SortOrder(Feline_Booster_Duration_sortIndex)]
-        [DisplayName(Feline_Booster_Duration_displayName)]
-        public virtual float Feline_Booster_Duration {
-            get => GetData<float>(2079);
-            set {
-                if (GetData<float>(2079) == value) return;
-                SetData(2079, value, nameof(Feline_Booster_Duration));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Booster_Duration));
-            }
-        }
-
-        public const string __46000_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __46000_sortIndex = 46000;
-        [SortOrder(__46000_sortIndex)]
-        [DisplayName(__46000_displayName)]
-        [IsReadOnly]
-        public virtual byte __46000 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__46000));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__46000));
-            }
-        }
-
-        public const string Feline_Groomer_Defense_Down_Duration_Multiplier_displayName = "Feline Groomer: Defense Down Duration Multiplier";
-        public const int Feline_Groomer_Defense_Down_Duration_Multiplier_sortIndex = 46050;
-        [SortOrder(Feline_Groomer_Defense_Down_Duration_Multiplier_sortIndex)]
-        [DisplayName(Feline_Groomer_Defense_Down_Duration_Multiplier_displayName)]
-        public virtual float Feline_Groomer_Defense_Down_Duration_Multiplier {
-            get => GetData<float>(2083);
-            set {
-                if (GetData<float>(2083) == value) return;
-                SetData(2083, value, nameof(Feline_Groomer_Defense_Down_Duration_Multiplier));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Groomer_Defense_Down_Duration_Multiplier));
-            }
-        }
-
-        public const string Feline_Groomer_Element_Blight_Recovery_Multiplier_displayName = "Feline Groomer: Element Blight Recovery Multiplier";
-        public const int Feline_Groomer_Element_Blight_Recovery_Multiplier_sortIndex = 46100;
-        [SortOrder(Feline_Groomer_Element_Blight_Recovery_Multiplier_sortIndex)]
-        [DisplayName(Feline_Groomer_Element_Blight_Recovery_Multiplier_displayName)]
-        public virtual float Feline_Groomer_Element_Blight_Recovery_Multiplier {
-            get => GetData<float>(2087);
-            set {
-                if (GetData<float>(2087) == value) return;
-                SetData(2087, value, nameof(Feline_Groomer_Element_Blight_Recovery_Multiplier));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Groomer_Element_Blight_Recovery_Multiplier));
-            }
-        }
-
-        public const string __46150_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __46150_sortIndex = 46150;
-        [SortOrder(__46150_sortIndex)]
-        [DisplayName(__46150_displayName)]
-        [IsReadOnly]
-        public virtual byte __46150 {
-            get => GetData<byte>(3);
-            set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__46150));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__46150));
-            }
-        }
-
-        public const string Feline_Parting_Gift_Radius_displayName = "Feline Parting Gift: Radius";
-        public const int Feline_Parting_Gift_Radius_sortIndex = 46200;
-        [SortOrder(Feline_Parting_Gift_Radius_sortIndex)]
-        [DisplayName(Feline_Parting_Gift_Radius_displayName)]
-        public virtual float Feline_Parting_Gift_Radius {
-            get => GetData<float>(2091);
-            set {
-                if (GetData<float>(2091) == value) return;
-                SetData(2091, value, nameof(Feline_Parting_Gift_Radius));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Parting_Gift_Radius));
-            }
-        }
-
-        public const string Feline_Parting_Gift_Recovery_Value_displayName = "Feline Parting Gift: Recovery Value";
-        public const int Feline_Parting_Gift_Recovery_Value_sortIndex = 46250;
-        [SortOrder(Feline_Parting_Gift_Recovery_Value_sortIndex)]
-        [DisplayName(Feline_Parting_Gift_Recovery_Value_displayName)]
-        public virtual ushort Feline_Parting_Gift_Recovery_Value {
-            get => GetData<ushort>(2095);
-            set {
-                if (GetData<ushort>(2095) == value) return;
-                SetData(2095, value, nameof(Feline_Parting_Gift_Recovery_Value));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Parting_Gift_Recovery_Value));
+                OnPropertyChanged(nameof(Feline_Black_Belt_Stamina_Rate));
             }
         }
 
@@ -13105,111 +13091,111 @@ namespace MHW_Editor.PlData {
         [DisplayName(__46300_displayName)]
         [IsReadOnly]
         public virtual byte __46300 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__46300));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__46300));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__46300));
             }
         }
 
-        public const string Feline_Recoil_Attack_Multiplier_1_displayName = "Feline Recoil: Attack Multiplier 1";
-        public const int Feline_Recoil_Attack_Multiplier_1_sortIndex = 46350;
-        [SortOrder(Feline_Recoil_Attack_Multiplier_1_sortIndex)]
-        [DisplayName(Feline_Recoil_Attack_Multiplier_1_displayName)]
-        public virtual float Feline_Recoil_Attack_Multiplier_1 {
-            get => GetData<float>(2097);
+        public const string Feline_Special_Attack_Condition_Attack_Bonus_displayName = "Feline Special Attack: Condition Attack Bonus";
+        public const int Feline_Special_Attack_Condition_Attack_Bonus_sortIndex = 46350;
+        [SortOrder(Feline_Special_Attack_Condition_Attack_Bonus_sortIndex)]
+        [DisplayName(Feline_Special_Attack_Condition_Attack_Bonus_displayName)]
+        public virtual ushort Feline_Special_Attack_Condition_Attack_Bonus {
+            get => GetData<ushort>(2127);
             set {
-                if (GetData<float>(2097) == value) return;
-                SetData(2097, value, nameof(Feline_Recoil_Attack_Multiplier_1));
+                if (GetData<ushort>(2127) == value) return;
+                SetData(2127, value, nameof(Feline_Special_Attack_Condition_Attack_Bonus));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Recoil_Attack_Multiplier_1));
+                OnPropertyChanged(nameof(Feline_Special_Attack_Condition_Attack_Bonus));
             }
         }
 
-        public const string Feline_Recoil_Attack_Multiplier_2_displayName = "Feline Recoil: Attack Multiplier 2";
-        public const int Feline_Recoil_Attack_Multiplier_2_sortIndex = 46400;
-        [SortOrder(Feline_Recoil_Attack_Multiplier_2_sortIndex)]
-        [DisplayName(Feline_Recoil_Attack_Multiplier_2_displayName)]
-        public virtual float Feline_Recoil_Attack_Multiplier_2 {
-            get => GetData<float>(2101);
+        public const string Feline_Special_Attack_Capture_Attack_Rate_displayName = "Feline Special Attack: Capture Attack Rate";
+        public const int Feline_Special_Attack_Capture_Attack_Rate_sortIndex = 46400;
+        [SortOrder(Feline_Special_Attack_Capture_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Special_Attack_Capture_Attack_Rate_displayName)]
+        public virtual float Feline_Special_Attack_Capture_Attack_Rate {
+            get => GetData<float>(2129);
             set {
-                if (GetData<float>(2101) == value) return;
-                SetData(2101, value, nameof(Feline_Recoil_Attack_Multiplier_2));
+                if (GetData<float>(2129) == value) return;
+                SetData(2129, value, nameof(Feline_Special_Attack_Capture_Attack_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Recoil_Attack_Multiplier_2));
+                OnPropertyChanged(nameof(Feline_Special_Attack_Capture_Attack_Rate));
             }
         }
 
-        public const string Feline_Recoil_Attack_Multiplier_3_displayName = "Feline Recoil: Attack Multiplier 3";
-        public const int Feline_Recoil_Attack_Multiplier_3_sortIndex = 46450;
-        [SortOrder(Feline_Recoil_Attack_Multiplier_3_sortIndex)]
-        [DisplayName(Feline_Recoil_Attack_Multiplier_3_displayName)]
-        public virtual float Feline_Recoil_Attack_Multiplier_3 {
-            get => GetData<float>(2105);
-            set {
-                if (GetData<float>(2105) == value) return;
-                SetData(2105, value, nameof(Feline_Recoil_Attack_Multiplier_3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Recoil_Attack_Multiplier_3));
-            }
-        }
-
-        public const string Feline_Recoil_Attack_Multiplier_4_displayName = "Feline Recoil: Attack Multiplier 4";
-        public const int Feline_Recoil_Attack_Multiplier_4_sortIndex = 46500;
-        [SortOrder(Feline_Recoil_Attack_Multiplier_4_sortIndex)]
-        [DisplayName(Feline_Recoil_Attack_Multiplier_4_displayName)]
-        public virtual float Feline_Recoil_Attack_Multiplier_4 {
-            get => GetData<float>(2109);
-            set {
-                if (GetData<float>(2109) == value) return;
-                SetData(2109, value, nameof(Feline_Recoil_Attack_Multiplier_4));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Recoil_Attack_Multiplier_4));
-            }
-        }
-
-        public const string Feline_Recoil_Attack_Multiplier_5_displayName = "Feline Recoil: Attack Multiplier 5";
-        public const int Feline_Recoil_Attack_Multiplier_5_sortIndex = 46550;
-        [SortOrder(Feline_Recoil_Attack_Multiplier_5_sortIndex)]
-        [DisplayName(Feline_Recoil_Attack_Multiplier_5_displayName)]
-        public virtual float Feline_Recoil_Attack_Multiplier_5 {
-            get => GetData<float>(2113);
-            set {
-                if (GetData<float>(2113) == value) return;
-                SetData(2113, value, nameof(Feline_Recoil_Attack_Multiplier_5));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Feline_Recoil_Attack_Multiplier_5));
-            }
-        }
-
-        public const string __46600_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __46600_sortIndex = 46600;
-        [SortOrder(__46600_sortIndex)]
-        [DisplayName(__46600_displayName)]
+        public const string __46450_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __46450_sortIndex = 46450;
+        [SortOrder(__46450_sortIndex)]
+        [DisplayName(__46450_displayName)]
         [IsReadOnly]
-        public virtual byte __46600 {
-            get => GetData<byte>(3);
+        public virtual byte __46450 {
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__46600));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__46450));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__46600));
+                OnPropertyChanged(nameof(__46450));
             }
         }
 
-        public const string Unk82_displayName = "Unk82";
-        public const int Unk82_sortIndex = 46650;
-        [SortOrder(Unk82_sortIndex)]
-        [DisplayName(Unk82_displayName)]
-        public virtual float Unk82 {
-            get => GetData<float>(2117);
+        public const string Feline_Defense_S__displayName = "Feline Defense S: %";
+        public const int Feline_Defense_S__sortIndex = 46500;
+        [SortOrder(Feline_Defense_S__sortIndex)]
+        [DisplayName(Feline_Defense_S__displayName)]
+        public virtual byte Feline_Defense_S_ {
+            get => GetData<byte>(2133);
             set {
-                if (GetData<float>(2117) == value) return;
-                SetData(2117, value, nameof(Unk82));
+                if (GetData<byte>(2133) == value) return;
+                SetData(2133, value, nameof(Feline_Defense_S_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk82));
+                OnPropertyChanged(nameof(Feline_Defense_S_));
+            }
+        }
+
+        public const string Feline_Defense_S_Damage_Rate_displayName = "Feline Defense S: Damage Rate";
+        public const int Feline_Defense_S_Damage_Rate_sortIndex = 46550;
+        [SortOrder(Feline_Defense_S_Damage_Rate_sortIndex)]
+        [DisplayName(Feline_Defense_S_Damage_Rate_displayName)]
+        public virtual float Feline_Defense_S_Damage_Rate {
+            get => GetData<float>(2135);
+            set {
+                if (GetData<float>(2135) == value) return;
+                SetData(2135, value, nameof(Feline_Defense_S_Damage_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Defense_S_Damage_Rate));
+            }
+        }
+
+        public const string Feline_Defense_L__displayName = "Feline Defense L: %";
+        public const int Feline_Defense_L__sortIndex = 46600;
+        [SortOrder(Feline_Defense_L__sortIndex)]
+        [DisplayName(Feline_Defense_L__displayName)]
+        public virtual byte Feline_Defense_L_ {
+            get => GetData<byte>(2134);
+            set {
+                if (GetData<byte>(2134) == value) return;
+                SetData(2134, value, nameof(Feline_Defense_L_));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Defense_L_));
+            }
+        }
+
+        public const string Feline_Defense_L_Damage_Rate_displayName = "Feline Defense L: Damage Rate";
+        public const int Feline_Defense_L_Damage_Rate_sortIndex = 46650;
+        [SortOrder(Feline_Defense_L_Damage_Rate_sortIndex)]
+        [DisplayName(Feline_Defense_L_Damage_Rate_displayName)]
+        public virtual float Feline_Defense_L_Damage_Rate {
+            get => GetData<float>(2139);
+            set {
+                if (GetData<float>(2139) == value) return;
+                SetData(2139, value, nameof(Feline_Defense_L_Damage_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Defense_L_Damage_Rate));
             }
         }
 
@@ -13219,450 +13205,1238 @@ namespace MHW_Editor.PlData {
         [DisplayName(__46700_displayName)]
         [IsReadOnly]
         public virtual byte __46700 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__46700));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__46700));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__46700));
             }
         }
 
+        public const string Feline_Harvest_Cooldown_Multiplier_displayName = "Feline Harvest: Cooldown Multiplier";
+        public const int Feline_Harvest_Cooldown_Multiplier_sortIndex = 46750;
+        [SortOrder(Feline_Harvest_Cooldown_Multiplier_sortIndex)]
+        [DisplayName(Feline_Harvest_Cooldown_Multiplier_displayName)]
+        public virtual float Feline_Harvest_Cooldown_Multiplier {
+            get => GetData<float>(2143);
+            set {
+                if (GetData<float>(2143) == value) return;
+                SetData(2143, value, nameof(Feline_Harvest_Cooldown_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Harvest_Cooldown_Multiplier));
+            }
+        }
+
+        public const string __46800_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __46800_sortIndex = 46800;
+        [SortOrder(__46800_sortIndex)]
+        [DisplayName(__46800_displayName)]
+        [IsReadOnly]
+        public virtual byte __46800 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__46800));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__46800));
+            }
+        }
+
+        public const string Feline_Sharpshooter_Shell_Attack_Rate_displayName = "Feline Sharpshooter: Shell Attack Rate";
+        public const int Feline_Sharpshooter_Shell_Attack_Rate_sortIndex = 46850;
+        [SortOrder(Feline_Sharpshooter_Shell_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Sharpshooter_Shell_Attack_Rate_displayName)]
+        public virtual float Feline_Sharpshooter_Shell_Attack_Rate {
+            get => GetData<float>(2147);
+            set {
+                if (GetData<float>(2147) == value) return;
+                SetData(2147, value, nameof(Feline_Sharpshooter_Shell_Attack_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Sharpshooter_Shell_Attack_Rate));
+            }
+        }
+
+        public const string __46900_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __46900_sortIndex = 46900;
+        [SortOrder(__46900_sortIndex)]
+        [DisplayName(__46900_displayName)]
+        [IsReadOnly]
+        public virtual byte __46900 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__46900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__46900));
+            }
+        }
+
+        public const string Feline_Escape_Artist_Dash_Stamina_Rate_displayName = "Feline Escape Artist: Dash Stamina Rate";
+        public const int Feline_Escape_Artist_Dash_Stamina_Rate_sortIndex = 46950;
+        [SortOrder(Feline_Escape_Artist_Dash_Stamina_Rate_sortIndex)]
+        [DisplayName(Feline_Escape_Artist_Dash_Stamina_Rate_displayName)]
+        public virtual float Feline_Escape_Artist_Dash_Stamina_Rate {
+            get => GetData<float>(2151);
+            set {
+                if (GetData<float>(2151) == value) return;
+                SetData(2151, value, nameof(Feline_Escape_Artist_Dash_Stamina_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Escape_Artist_Dash_Stamina_Rate));
+            }
+        }
+
+        public const string __47000_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __47000_sortIndex = 47000;
+        [SortOrder(__47000_sortIndex)]
+        [DisplayName(__47000_displayName)]
+        [IsReadOnly]
+        public virtual byte __47000 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__47000));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__47000));
+            }
+        }
+
+        public const string Feline_Delivery_Dash_Stamina_Rate_displayName = "Feline Delivery: Dash Stamina Rate";
+        public const int Feline_Delivery_Dash_Stamina_Rate_sortIndex = 47050;
+        [SortOrder(Feline_Delivery_Dash_Stamina_Rate_sortIndex)]
+        [DisplayName(Feline_Delivery_Dash_Stamina_Rate_displayName)]
+        public virtual float Feline_Delivery_Dash_Stamina_Rate {
+            get => GetData<float>(2155);
+            set {
+                if (GetData<float>(2155) == value) return;
+                SetData(2155, value, nameof(Feline_Delivery_Dash_Stamina_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Delivery_Dash_Stamina_Rate));
+            }
+        }
+
+        public const string __47100_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __47100_sortIndex = 47100;
+        [SortOrder(__47100_sortIndex)]
+        [DisplayName(__47100_displayName)]
+        [IsReadOnly]
+        public virtual byte __47100 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__47100));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__47100));
+            }
+        }
+
+        public const string Feline_Riser_S_IFrames_displayName = "Feline Riser S: IFrames";
+        public const int Feline_Riser_S_IFrames_sortIndex = 47150;
+        [SortOrder(Feline_Riser_S_IFrames_sortIndex)]
+        [DisplayName(Feline_Riser_S_IFrames_displayName)]
+        public virtual float Feline_Riser_S_IFrames {
+            get => GetData<float>(2159);
+            set {
+                if (GetData<float>(2159) == value) return;
+                SetData(2159, value, nameof(Feline_Riser_S_IFrames));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Riser_S_IFrames));
+            }
+        }
+
+        public const string Feline_Riser_L_IFrames_displayName = "Feline Riser L: IFrames";
+        public const int Feline_Riser_L_IFrames_sortIndex = 47200;
+        [SortOrder(Feline_Riser_L_IFrames_sortIndex)]
+        [DisplayName(Feline_Riser_L_IFrames_displayName)]
+        public virtual float Feline_Riser_L_IFrames {
+            get => GetData<float>(2163);
+            set {
+                if (GetData<float>(2163) == value) return;
+                SetData(2163, value, nameof(Feline_Riser_L_IFrames));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Riser_L_IFrames));
+            }
+        }
+
+        public const string __47250_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __47250_sortIndex = 47250;
+        [SortOrder(__47250_sortIndex)]
+        [DisplayName(__47250_displayName)]
+        [IsReadOnly]
+        public virtual byte __47250 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__47250));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__47250));
+            }
+        }
+
+        public const string Feline_Temper_Shell_Attack_Rate_displayName = "Feline Temper: Shell Attack Rate";
+        public const int Feline_Temper_Shell_Attack_Rate_sortIndex = 47300;
+        [SortOrder(Feline_Temper_Shell_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Temper_Shell_Attack_Rate_displayName)]
+        public virtual float Feline_Temper_Shell_Attack_Rate {
+            get => GetData<float>(2167);
+            set {
+                if (GetData<float>(2167) == value) return;
+                SetData(2167, value, nameof(Feline_Temper_Shell_Attack_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Temper_Shell_Attack_Rate));
+            }
+        }
+
+        public const string Feline_Temper_Blur_Level_Bonus_displayName = "Feline Temper: Blur Level Bonus";
+        public const int Feline_Temper_Blur_Level_Bonus_sortIndex = 47350;
+        [SortOrder(Feline_Temper_Blur_Level_Bonus_sortIndex)]
+        [DisplayName(Feline_Temper_Blur_Level_Bonus_displayName)]
+        public virtual byte Feline_Temper_Blur_Level_Bonus {
+            get => GetData<byte>(2171);
+            set {
+                if (GetData<byte>(2171) == value) return;
+                SetData(2171, value, nameof(Feline_Temper_Blur_Level_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Temper_Blur_Level_Bonus));
+            }
+        }
+
+        public const string __47400_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __47400_sortIndex = 47400;
+        [SortOrder(__47400_sortIndex)]
+        [DisplayName(__47400_displayName)]
+        [IsReadOnly]
+        public virtual byte __47400 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__47400));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__47400));
+            }
+        }
+
+        public const string Feline_Cliffhanger_Stamina_Rate_displayName = "Feline Cliffhanger: Stamina Rate";
+        public const int Feline_Cliffhanger_Stamina_Rate_sortIndex = 47450;
+        [SortOrder(Feline_Cliffhanger_Stamina_Rate_sortIndex)]
+        [DisplayName(Feline_Cliffhanger_Stamina_Rate_displayName)]
+        public virtual float Feline_Cliffhanger_Stamina_Rate {
+            get => GetData<float>(2172);
+            set {
+                if (GetData<float>(2172) == value) return;
+                SetData(2172, value, nameof(Feline_Cliffhanger_Stamina_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Cliffhanger_Stamina_Rate));
+            }
+        }
+
+        public const string __47500_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __47500_sortIndex = 47500;
+        [SortOrder(__47500_sortIndex)]
+        [DisplayName(__47500_displayName)]
+        [IsReadOnly]
+        public virtual byte __47500 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__47500));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__47500));
+            }
+        }
+
+        public const string Feline_Slugger_Stun_Attack_Rate_displayName = "Feline Slugger: Stun Attack Rate";
+        public const int Feline_Slugger_Stun_Attack_Rate_sortIndex = 47550;
+        [SortOrder(Feline_Slugger_Stun_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Slugger_Stun_Attack_Rate_displayName)]
+        public virtual float Feline_Slugger_Stun_Attack_Rate {
+            get => GetData<float>(2176);
+            set {
+                if (GetData<float>(2176) == value) return;
+                SetData(2176, value, nameof(Feline_Slugger_Stun_Attack_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Slugger_Stun_Attack_Rate));
+            }
+        }
+
+        public const string __47600_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __47600_sortIndex = 47600;
+        [SortOrder(__47600_sortIndex)]
+        [DisplayName(__47600_displayName)]
+        [IsReadOnly]
+        public virtual byte __47600 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__47600));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__47600));
+            }
+        }
+
+        public const string Feline_Bombardier_Ballista_Attack_Rate_displayName = "Feline Bombardier: Ballista Attack Rate";
+        public const int Feline_Bombardier_Ballista_Attack_Rate_sortIndex = 47650;
+        [SortOrder(Feline_Bombardier_Ballista_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Bombardier_Ballista_Attack_Rate_displayName)]
+        public virtual float Feline_Bombardier_Ballista_Attack_Rate {
+            get => GetData<float>(2180);
+            set {
+                if (GetData<float>(2180) == value) return;
+                SetData(2180, value, nameof(Feline_Bombardier_Ballista_Attack_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Bombardier_Ballista_Attack_Rate));
+            }
+        }
+
+        public const string Feline_Bombardier_Cannon_Attack_Rate_displayName = "Feline Bombardier: Cannon Attack Rate";
+        public const int Feline_Bombardier_Cannon_Attack_Rate_sortIndex = 47700;
+        [SortOrder(Feline_Bombardier_Cannon_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Bombardier_Cannon_Attack_Rate_displayName)]
+        public virtual float Feline_Bombardier_Cannon_Attack_Rate {
+            get => GetData<float>(2184);
+            set {
+                if (GetData<float>(2184) == value) return;
+                SetData(2184, value, nameof(Feline_Bombardier_Cannon_Attack_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Bombardier_Cannon_Attack_Rate));
+            }
+        }
+
+        public const string Feline_Bombardier_Gunlance_Shell_Attack_Rate_displayName = "Feline Bombardier: Gunlance Shell Attack Rate";
+        public const int Feline_Bombardier_Gunlance_Shell_Attack_Rate_sortIndex = 47750;
+        [SortOrder(Feline_Bombardier_Gunlance_Shell_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Bombardier_Gunlance_Shell_Attack_Rate_displayName)]
+        public virtual float Feline_Bombardier_Gunlance_Shell_Attack_Rate {
+            get => GetData<float>(2188);
+            set {
+                if (GetData<float>(2188) == value) return;
+                SetData(2188, value, nameof(Feline_Bombardier_Gunlance_Shell_Attack_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Bombardier_Gunlance_Shell_Attack_Rate));
+            }
+        }
+
+        public const string Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_displayName = "Feline Bombardier: Gunlance WyvernFire Attack Rate";
+        public const int Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_sortIndex = 47800;
+        [SortOrder(Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_displayName)]
+        public virtual float Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate {
+            get => GetData<float>(2192);
+            set {
+                if (GetData<float>(2192) == value) return;
+                SetData(2192, value, nameof(Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate));
+            }
+        }
+
+        public const string Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_displayName = "Feline Bombardier: Gunlance Wyrmstake Cannon Attack Rate";
+        public const int Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_sortIndex = 47850;
+        [SortOrder(Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_displayName)]
+        public virtual float Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate {
+            get => GetData<float>(2196);
+            set {
+                if (GetData<float>(2196) == value) return;
+                SetData(2196, value, nameof(Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate));
+            }
+        }
+
+        public const string Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_displayName = "Feline Bombardier: Charge Blade Impact Phial Attack Rate";
+        public const int Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_sortIndex = 47900;
+        [SortOrder(Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_displayName)]
+        public virtual float Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate {
+            get => GetData<float>(2200);
+            set {
+                if (GetData<float>(2200) == value) return;
+                SetData(2200, value, nameof(Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate));
+            }
+        }
+
+        public const string Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_displayName = "Feline Bombardier: Bowgun Sticky Ammo Attack Rate";
+        public const int Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_sortIndex = 47950;
+        [SortOrder(Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_displayName)]
+        public virtual float Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate {
+            get => GetData<float>(2204);
+            set {
+                if (GetData<float>(2204) == value) return;
+                SetData(2204, value, nameof(Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate));
+            }
+        }
+
+        public const string Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_displayName = "Feline Bombardier: Bowgun Wyvern Ammo Attack Rate";
+        public const int Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_sortIndex = 48000;
+        [SortOrder(Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_sortIndex)]
+        [DisplayName(Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_displayName)]
+        public virtual float Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate {
+            get => GetData<float>(2208);
+            set {
+                if (GetData<float>(2208) == value) return;
+                SetData(2208, value, nameof(Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate));
+            }
+        }
+
+        public const string __48050_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __48050_sortIndex = 48050;
+        [SortOrder(__48050_sortIndex)]
+        [DisplayName(__48050_displayName)]
+        [IsReadOnly]
+        public virtual byte __48050 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__48050));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__48050));
+            }
+        }
+
+        public const string Feline_Moxie_Health_Threshold_displayName = "Feline Moxie: Health Threshold";
+        public const int Feline_Moxie_Health_Threshold_sortIndex = 48100;
+        [SortOrder(Feline_Moxie_Health_Threshold_sortIndex)]
+        [DisplayName(Feline_Moxie_Health_Threshold_displayName)]
+        public virtual byte Feline_Moxie_Health_Threshold {
+            get => GetData<byte>(2212);
+            set {
+                if (GetData<byte>(2212) == value) return;
+                SetData(2212, value, nameof(Feline_Moxie_Health_Threshold));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Moxie_Health_Threshold));
+            }
+        }
+
+        public const string __48150_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __48150_sortIndex = 48150;
+        [SortOrder(__48150_sortIndex)]
+        [DisplayName(__48150_displayName)]
+        [IsReadOnly]
+        public virtual byte __48150 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__48150));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__48150));
+            }
+        }
+
+        public const string Feline_Dungmaster_Escape_Bonus_displayName = "Feline Dungmaster: Escape % Bonus";
+        public const int Feline_Dungmaster_Escape_Bonus_sortIndex = 48200;
+        [SortOrder(Feline_Dungmaster_Escape_Bonus_sortIndex)]
+        [DisplayName(Feline_Dungmaster_Escape_Bonus_displayName)]
+        public virtual byte Feline_Dungmaster_Escape_Bonus {
+            get => GetData<byte>(2213);
+            set {
+                if (GetData<byte>(2213) == value) return;
+                SetData(2213, value, nameof(Feline_Dungmaster_Escape_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Dungmaster_Escape_Bonus));
+            }
+        }
+
+        public const string __48250_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __48250_sortIndex = 48250;
+        [SortOrder(__48250_sortIndex)]
+        [DisplayName(__48250_displayName)]
+        [IsReadOnly]
+        public virtual byte __48250 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__48250));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__48250));
+            }
+        }
+
+        public const string Feline_Provoker_Rate_displayName = "Feline Provoker: Rate";
+        public const int Feline_Provoker_Rate_sortIndex = 48300;
+        [SortOrder(Feline_Provoker_Rate_sortIndex)]
+        [DisplayName(Feline_Provoker_Rate_displayName)]
+        public virtual float Feline_Provoker_Rate {
+            get => GetData<float>(2214);
+            set {
+                if (GetData<float>(2214) == value) return;
+                SetData(2214, value, nameof(Feline_Provoker_Rate));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Provoker_Rate));
+            }
+        }
+
+        public const string __48350_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __48350_sortIndex = 48350;
+        [SortOrder(__48350_sortIndex)]
+        [DisplayName(__48350_displayName)]
+        [IsReadOnly]
+        public virtual byte __48350 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__48350));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__48350));
+            }
+        }
+
+        public const string Feline_Cool_Cat_Power_UP_Time_Needed_displayName = "Feline Cool Cat: Power UP Time Needed";
+        public const int Feline_Cool_Cat_Power_UP_Time_Needed_sortIndex = 48400;
+        [SortOrder(Feline_Cool_Cat_Power_UP_Time_Needed_sortIndex)]
+        [DisplayName(Feline_Cool_Cat_Power_UP_Time_Needed_displayName)]
+        public virtual float Feline_Cool_Cat_Power_UP_Time_Needed {
+            get => GetData<float>(2218);
+            set {
+                if (GetData<float>(2218) == value) return;
+                SetData(2218, value, nameof(Feline_Cool_Cat_Power_UP_Time_Needed));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Cool_Cat_Power_UP_Time_Needed));
+            }
+        }
+
+        public const string Feline_Cool_Cat_Power_UP_Duration_displayName = "Feline Cool Cat: Power UP Duration";
+        public const int Feline_Cool_Cat_Power_UP_Duration_sortIndex = 48450;
+        [SortOrder(Feline_Cool_Cat_Power_UP_Duration_sortIndex)]
+        [DisplayName(Feline_Cool_Cat_Power_UP_Duration_displayName)]
+        public virtual float Feline_Cool_Cat_Power_UP_Duration {
+            get => GetData<float>(2222);
+            set {
+                if (GetData<float>(2222) == value) return;
+                SetData(2222, value, nameof(Feline_Cool_Cat_Power_UP_Duration));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Cool_Cat_Power_UP_Duration));
+            }
+        }
+
+        public const string Feline_Cool_Cat_Attack_Bonus_displayName = "Feline Cool Cat: Attack Bonus";
+        public const int Feline_Cool_Cat_Attack_Bonus_sortIndex = 48500;
+        [SortOrder(Feline_Cool_Cat_Attack_Bonus_sortIndex)]
+        [DisplayName(Feline_Cool_Cat_Attack_Bonus_displayName)]
+        public virtual float Feline_Cool_Cat_Attack_Bonus {
+            get => GetData<float>(2226);
+            set {
+                if (GetData<float>(2226) == value) return;
+                SetData(2226, value, nameof(Feline_Cool_Cat_Attack_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Cool_Cat_Attack_Bonus));
+            }
+        }
+
+        public const string __48550_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __48550_sortIndex = 48550;
+        [SortOrder(__48550_sortIndex)]
+        [DisplayName(__48550_displayName)]
+        [IsReadOnly]
+        public virtual byte __48550 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__48550));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__48550));
+            }
+        }
+
+        public const string Feline_Booster_Attack_Bonus_displayName = "Feline Booster: Attack Bonus";
+        public const int Feline_Booster_Attack_Bonus_sortIndex = 48600;
+        [SortOrder(Feline_Booster_Attack_Bonus_sortIndex)]
+        [DisplayName(Feline_Booster_Attack_Bonus_displayName)]
+        public virtual float Feline_Booster_Attack_Bonus {
+            get => GetData<float>(2230);
+            set {
+                if (GetData<float>(2230) == value) return;
+                SetData(2230, value, nameof(Feline_Booster_Attack_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Booster_Attack_Bonus));
+            }
+        }
+
+        public const string Feline_Booster_Defense_Bonus_displayName = "Feline Booster: Defense Bonus";
+        public const int Feline_Booster_Defense_Bonus_sortIndex = 48650;
+        [SortOrder(Feline_Booster_Defense_Bonus_sortIndex)]
+        [DisplayName(Feline_Booster_Defense_Bonus_displayName)]
+        public virtual float Feline_Booster_Defense_Bonus {
+            get => GetData<float>(2234);
+            set {
+                if (GetData<float>(2234) == value) return;
+                SetData(2234, value, nameof(Feline_Booster_Defense_Bonus));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Booster_Defense_Bonus));
+            }
+        }
+
+        public const string Feline_Booster_Duration_displayName = "Feline Booster: Duration";
+        public const int Feline_Booster_Duration_sortIndex = 48700;
+        [SortOrder(Feline_Booster_Duration_sortIndex)]
+        [DisplayName(Feline_Booster_Duration_displayName)]
+        public virtual float Feline_Booster_Duration {
+            get => GetData<float>(2238);
+            set {
+                if (GetData<float>(2238) == value) return;
+                SetData(2238, value, nameof(Feline_Booster_Duration));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Booster_Duration));
+            }
+        }
+
+        public const string __48750_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __48750_sortIndex = 48750;
+        [SortOrder(__48750_sortIndex)]
+        [DisplayName(__48750_displayName)]
+        [IsReadOnly]
+        public virtual byte __48750 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__48750));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__48750));
+            }
+        }
+
+        public const string Feline_Groomer_Defense_Down_Duration_Multiplier_displayName = "Feline Groomer: Defense Down Duration Multiplier";
+        public const int Feline_Groomer_Defense_Down_Duration_Multiplier_sortIndex = 48800;
+        [SortOrder(Feline_Groomer_Defense_Down_Duration_Multiplier_sortIndex)]
+        [DisplayName(Feline_Groomer_Defense_Down_Duration_Multiplier_displayName)]
+        public virtual float Feline_Groomer_Defense_Down_Duration_Multiplier {
+            get => GetData<float>(2242);
+            set {
+                if (GetData<float>(2242) == value) return;
+                SetData(2242, value, nameof(Feline_Groomer_Defense_Down_Duration_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Groomer_Defense_Down_Duration_Multiplier));
+            }
+        }
+
+        public const string Feline_Groomer_Element_Blight_Recovery_Multiplier_displayName = "Feline Groomer: Element Blight Recovery Multiplier";
+        public const int Feline_Groomer_Element_Blight_Recovery_Multiplier_sortIndex = 48850;
+        [SortOrder(Feline_Groomer_Element_Blight_Recovery_Multiplier_sortIndex)]
+        [DisplayName(Feline_Groomer_Element_Blight_Recovery_Multiplier_displayName)]
+        public virtual float Feline_Groomer_Element_Blight_Recovery_Multiplier {
+            get => GetData<float>(2246);
+            set {
+                if (GetData<float>(2246) == value) return;
+                SetData(2246, value, nameof(Feline_Groomer_Element_Blight_Recovery_Multiplier));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Groomer_Element_Blight_Recovery_Multiplier));
+            }
+        }
+
+        public const string __48900_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __48900_sortIndex = 48900;
+        [SortOrder(__48900_sortIndex)]
+        [DisplayName(__48900_displayName)]
+        [IsReadOnly]
+        public virtual byte __48900 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__48900));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__48900));
+            }
+        }
+
+        public const string Feline_Parting_Gift_Radius_displayName = "Feline Parting Gift: Radius";
+        public const int Feline_Parting_Gift_Radius_sortIndex = 48950;
+        [SortOrder(Feline_Parting_Gift_Radius_sortIndex)]
+        [DisplayName(Feline_Parting_Gift_Radius_displayName)]
+        public virtual float Feline_Parting_Gift_Radius {
+            get => GetData<float>(2250);
+            set {
+                if (GetData<float>(2250) == value) return;
+                SetData(2250, value, nameof(Feline_Parting_Gift_Radius));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Parting_Gift_Radius));
+            }
+        }
+
+        public const string Feline_Parting_Gift_Recovery_Value_displayName = "Feline Parting Gift: Recovery Value";
+        public const int Feline_Parting_Gift_Recovery_Value_sortIndex = 49000;
+        [SortOrder(Feline_Parting_Gift_Recovery_Value_sortIndex)]
+        [DisplayName(Feline_Parting_Gift_Recovery_Value_displayName)]
+        public virtual ushort Feline_Parting_Gift_Recovery_Value {
+            get => GetData<ushort>(2254);
+            set {
+                if (GetData<ushort>(2254) == value) return;
+                SetData(2254, value, nameof(Feline_Parting_Gift_Recovery_Value));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Parting_Gift_Recovery_Value));
+            }
+        }
+
+        public const string __49050_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __49050_sortIndex = 49050;
+        [SortOrder(__49050_sortIndex)]
+        [DisplayName(__49050_displayName)]
+        [IsReadOnly]
+        public virtual byte __49050 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__49050));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__49050));
+            }
+        }
+
+        public const string Feline_Recoil_Attack_Multiplier_1_displayName = "Feline Recoil: Attack Multiplier 1";
+        public const int Feline_Recoil_Attack_Multiplier_1_sortIndex = 49100;
+        [SortOrder(Feline_Recoil_Attack_Multiplier_1_sortIndex)]
+        [DisplayName(Feline_Recoil_Attack_Multiplier_1_displayName)]
+        public virtual float Feline_Recoil_Attack_Multiplier_1 {
+            get => GetData<float>(2256);
+            set {
+                if (GetData<float>(2256) == value) return;
+                SetData(2256, value, nameof(Feline_Recoil_Attack_Multiplier_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Recoil_Attack_Multiplier_1));
+            }
+        }
+
+        public const string Feline_Recoil_Attack_Multiplier_2_displayName = "Feline Recoil: Attack Multiplier 2";
+        public const int Feline_Recoil_Attack_Multiplier_2_sortIndex = 49150;
+        [SortOrder(Feline_Recoil_Attack_Multiplier_2_sortIndex)]
+        [DisplayName(Feline_Recoil_Attack_Multiplier_2_displayName)]
+        public virtual float Feline_Recoil_Attack_Multiplier_2 {
+            get => GetData<float>(2260);
+            set {
+                if (GetData<float>(2260) == value) return;
+                SetData(2260, value, nameof(Feline_Recoil_Attack_Multiplier_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Recoil_Attack_Multiplier_2));
+            }
+        }
+
+        public const string Feline_Recoil_Attack_Multiplier_3_displayName = "Feline Recoil: Attack Multiplier 3";
+        public const int Feline_Recoil_Attack_Multiplier_3_sortIndex = 49200;
+        [SortOrder(Feline_Recoil_Attack_Multiplier_3_sortIndex)]
+        [DisplayName(Feline_Recoil_Attack_Multiplier_3_displayName)]
+        public virtual float Feline_Recoil_Attack_Multiplier_3 {
+            get => GetData<float>(2264);
+            set {
+                if (GetData<float>(2264) == value) return;
+                SetData(2264, value, nameof(Feline_Recoil_Attack_Multiplier_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Recoil_Attack_Multiplier_3));
+            }
+        }
+
+        public const string Feline_Recoil_Attack_Multiplier_4_displayName = "Feline Recoil: Attack Multiplier 4";
+        public const int Feline_Recoil_Attack_Multiplier_4_sortIndex = 49250;
+        [SortOrder(Feline_Recoil_Attack_Multiplier_4_sortIndex)]
+        [DisplayName(Feline_Recoil_Attack_Multiplier_4_displayName)]
+        public virtual float Feline_Recoil_Attack_Multiplier_4 {
+            get => GetData<float>(2268);
+            set {
+                if (GetData<float>(2268) == value) return;
+                SetData(2268, value, nameof(Feline_Recoil_Attack_Multiplier_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Recoil_Attack_Multiplier_4));
+            }
+        }
+
+        public const string Feline_Recoil_Attack_Multiplier_5_displayName = "Feline Recoil: Attack Multiplier 5";
+        public const int Feline_Recoil_Attack_Multiplier_5_sortIndex = 49300;
+        [SortOrder(Feline_Recoil_Attack_Multiplier_5_sortIndex)]
+        [DisplayName(Feline_Recoil_Attack_Multiplier_5_displayName)]
+        public virtual float Feline_Recoil_Attack_Multiplier_5 {
+            get => GetData<float>(2272);
+            set {
+                if (GetData<float>(2272) == value) return;
+                SetData(2272, value, nameof(Feline_Recoil_Attack_Multiplier_5));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Feline_Recoil_Attack_Multiplier_5));
+            }
+        }
+
+        public const string __49350_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __49350_sortIndex = 49350;
+        [SortOrder(__49350_sortIndex)]
+        [DisplayName(__49350_displayName)]
+        [IsReadOnly]
+        public virtual byte __49350 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__49350));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__49350));
+            }
+        }
+
+        public const string Unk82_displayName = "Unk82";
+        public const int Unk82_sortIndex = 49400;
+        [SortOrder(Unk82_sortIndex)]
+        [DisplayName(Unk82_displayName)]
+        public virtual float Unk82 {
+            get => GetData<float>(2276);
+            set {
+                if (GetData<float>(2276) == value) return;
+                SetData(2276, value, nameof(Unk82));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk82));
+            }
+        }
+
+        public const string __49450_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __49450_sortIndex = 49450;
+        [SortOrder(__49450_sortIndex)]
+        [DisplayName(__49450_displayName)]
+        [IsReadOnly]
+        public virtual byte __49450 {
+            get => GetData<byte>(162);
+            set {
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__49450));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(__49450));
+            }
+        }
+
         public const string Music_Skill_Bless_Random_Rate_displayName = "Music Skill: Bless: Random Rate";
-        public const int Music_Skill_Bless_Random_Rate_sortIndex = 46750;
+        public const int Music_Skill_Bless_Random_Rate_sortIndex = 49500;
         [SortOrder(Music_Skill_Bless_Random_Rate_sortIndex)]
         [DisplayName(Music_Skill_Bless_Random_Rate_displayName)]
         public virtual float Music_Skill_Bless_Random_Rate {
-            get => GetData<float>(2121);
+            get => GetData<float>(2280);
             set {
-                if (GetData<float>(2121) == value) return;
-                SetData(2121, value, nameof(Music_Skill_Bless_Random_Rate));
+                if (GetData<float>(2280) == value) return;
+                SetData(2280, value, nameof(Music_Skill_Bless_Random_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Bless_Random_Rate));
             }
         }
 
         public const string Music_Skill_Bless_Damage_Cut_Rate_displayName = "Music Skill: Bless: Damage Cut Rate";
-        public const int Music_Skill_Bless_Damage_Cut_Rate_sortIndex = 46800;
+        public const int Music_Skill_Bless_Damage_Cut_Rate_sortIndex = 49550;
         [SortOrder(Music_Skill_Bless_Damage_Cut_Rate_sortIndex)]
         [DisplayName(Music_Skill_Bless_Damage_Cut_Rate_displayName)]
         public virtual float Music_Skill_Bless_Damage_Cut_Rate {
-            get => GetData<float>(2125);
+            get => GetData<float>(2284);
             set {
-                if (GetData<float>(2125) == value) return;
-                SetData(2125, value, nameof(Music_Skill_Bless_Damage_Cut_Rate));
+                if (GetData<float>(2284) == value) return;
+                SetData(2284, value, nameof(Music_Skill_Bless_Damage_Cut_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Bless_Damage_Cut_Rate));
             }
         }
 
         public const string Music_Skill_Extend_Time_displayName = "Music Skill: Extend: Time";
-        public const int Music_Skill_Extend_Time_sortIndex = 46850;
+        public const int Music_Skill_Extend_Time_sortIndex = 49600;
         [SortOrder(Music_Skill_Extend_Time_sortIndex)]
         [DisplayName(Music_Skill_Extend_Time_displayName)]
         public virtual float Music_Skill_Extend_Time {
-            get => GetData<float>(2129);
+            get => GetData<float>(2288);
             set {
-                if (GetData<float>(2129) == value) return;
-                SetData(2129, value, nameof(Music_Skill_Extend_Time));
+                if (GetData<float>(2288) == value) return;
+                SetData(2288, value, nameof(Music_Skill_Extend_Time));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Extend_Time));
             }
         }
 
         public const string Music_Skill_Extend_Time_Master_displayName = "Music Skill: Extend: Time Master";
-        public const int Music_Skill_Extend_Time_Master_sortIndex = 46900;
+        public const int Music_Skill_Extend_Time_Master_sortIndex = 49650;
         [SortOrder(Music_Skill_Extend_Time_Master_sortIndex)]
         [DisplayName(Music_Skill_Extend_Time_Master_displayName)]
         public virtual float Music_Skill_Extend_Time_Master {
-            get => GetData<float>(2133);
+            get => GetData<float>(2292);
             set {
-                if (GetData<float>(2133) == value) return;
-                SetData(2133, value, nameof(Music_Skill_Extend_Time_Master));
+                if (GetData<float>(2292) == value) return;
+                SetData(2292, value, nameof(Music_Skill_Extend_Time_Master));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Extend_Time_Master));
             }
         }
 
         public const string Music_Skill_Extend_Time_MR_Master_displayName = "Music Skill: Extend: Time MR Master";
-        public const int Music_Skill_Extend_Time_MR_Master_sortIndex = 46950;
+        public const int Music_Skill_Extend_Time_MR_Master_sortIndex = 49700;
         [SortOrder(Music_Skill_Extend_Time_MR_Master_sortIndex)]
         [DisplayName(Music_Skill_Extend_Time_MR_Master_displayName)]
         public virtual float Music_Skill_Extend_Time_MR_Master {
-            get => GetData<float>(2137);
+            get => GetData<float>(2296);
             set {
-                if (GetData<float>(2137) == value) return;
-                SetData(2137, value, nameof(Music_Skill_Extend_Time_MR_Master));
+                if (GetData<float>(2296) == value) return;
+                SetData(2296, value, nameof(Music_Skill_Extend_Time_MR_Master));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Extend_Time_MR_Master));
             }
         }
 
         public const string Music_Skill_Major_Heal_Rand_Rate_displayName = "Music Skill: Major Heal: Rand Rate";
-        public const int Music_Skill_Major_Heal_Rand_Rate_sortIndex = 47000;
+        public const int Music_Skill_Major_Heal_Rand_Rate_sortIndex = 49750;
         [SortOrder(Music_Skill_Major_Heal_Rand_Rate_sortIndex)]
         [DisplayName(Music_Skill_Major_Heal_Rand_Rate_displayName)]
         public virtual float Music_Skill_Major_Heal_Rand_Rate {
-            get => GetData<float>(2141);
+            get => GetData<float>(2300);
             set {
-                if (GetData<float>(2141) == value) return;
-                SetData(2141, value, nameof(Music_Skill_Major_Heal_Rand_Rate));
+                if (GetData<float>(2300) == value) return;
+                SetData(2300, value, nameof(Music_Skill_Major_Heal_Rand_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Major_Heal_Rand_Rate));
             }
         }
 
         public const string Music_Skill_Major_Heal_Rand_Master_Rate_displayName = "Music Skill: Major Heal: Rand Master Rate";
-        public const int Music_Skill_Major_Heal_Rand_Master_Rate_sortIndex = 47050;
+        public const int Music_Skill_Major_Heal_Rand_Master_Rate_sortIndex = 49800;
         [SortOrder(Music_Skill_Major_Heal_Rand_Master_Rate_sortIndex)]
         [DisplayName(Music_Skill_Major_Heal_Rand_Master_Rate_displayName)]
         public virtual float Music_Skill_Major_Heal_Rand_Master_Rate {
-            get => GetData<float>(2145);
+            get => GetData<float>(2304);
             set {
-                if (GetData<float>(2145) == value) return;
-                SetData(2145, value, nameof(Music_Skill_Major_Heal_Rand_Master_Rate));
+                if (GetData<float>(2304) == value) return;
+                SetData(2304, value, nameof(Music_Skill_Major_Heal_Rand_Master_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Major_Heal_Rand_Master_Rate));
             }
         }
 
         public const string Music_Skill_Major_Heal_Rand_MR_Master_Rate_displayName = "Music Skill: Major Heal: Rand MR Master Rate";
-        public const int Music_Skill_Major_Heal_Rand_MR_Master_Rate_sortIndex = 47100;
+        public const int Music_Skill_Major_Heal_Rand_MR_Master_Rate_sortIndex = 49850;
         [SortOrder(Music_Skill_Major_Heal_Rand_MR_Master_Rate_sortIndex)]
         [DisplayName(Music_Skill_Major_Heal_Rand_MR_Master_Rate_displayName)]
         public virtual float Music_Skill_Major_Heal_Rand_MR_Master_Rate {
-            get => GetData<float>(2149);
+            get => GetData<float>(2308);
             set {
-                if (GetData<float>(2149) == value) return;
-                SetData(2149, value, nameof(Music_Skill_Major_Heal_Rand_MR_Master_Rate));
+                if (GetData<float>(2308) == value) return;
+                SetData(2308, value, nameof(Music_Skill_Major_Heal_Rand_MR_Master_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Major_Heal_Rand_MR_Master_Rate));
             }
         }
 
         public const string Music_Skill_Heal_0_Minor_displayName = "Music Skill: Heal 0: Minor";
-        public const int Music_Skill_Heal_0_Minor_sortIndex = 47150;
+        public const int Music_Skill_Heal_0_Minor_sortIndex = 49900;
         [SortOrder(Music_Skill_Heal_0_Minor_sortIndex)]
         [DisplayName(Music_Skill_Heal_0_Minor_displayName)]
         public virtual float Music_Skill_Heal_0_Minor {
-            get => GetData<float>(2153);
+            get => GetData<float>(2312);
             set {
-                if (GetData<float>(2153) == value) return;
-                SetData(2153, value, nameof(Music_Skill_Heal_0_Minor));
+                if (GetData<float>(2312) == value) return;
+                SetData(2312, value, nameof(Music_Skill_Heal_0_Minor));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Heal_0_Minor));
             }
         }
 
         public const string Music_Skill_Heal_0_Major_displayName = "Music Skill: Heal 0: Major";
-        public const int Music_Skill_Heal_0_Major_sortIndex = 47200;
+        public const int Music_Skill_Heal_0_Major_sortIndex = 49950;
         [SortOrder(Music_Skill_Heal_0_Major_sortIndex)]
         [DisplayName(Music_Skill_Heal_0_Major_displayName)]
         public virtual float Music_Skill_Heal_0_Major {
-            get => GetData<float>(2157);
+            get => GetData<float>(2316);
             set {
-                if (GetData<float>(2157) == value) return;
-                SetData(2157, value, nameof(Music_Skill_Heal_0_Major));
+                if (GetData<float>(2316) == value) return;
+                SetData(2316, value, nameof(Music_Skill_Heal_0_Major));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Heal_0_Major));
             }
         }
 
         public const string Music_Skill_Heal_1_Minor_displayName = "Music Skill: Heal 1: Minor";
-        public const int Music_Skill_Heal_1_Minor_sortIndex = 47250;
+        public const int Music_Skill_Heal_1_Minor_sortIndex = 50000;
         [SortOrder(Music_Skill_Heal_1_Minor_sortIndex)]
         [DisplayName(Music_Skill_Heal_1_Minor_displayName)]
         public virtual float Music_Skill_Heal_1_Minor {
-            get => GetData<float>(2161);
+            get => GetData<float>(2320);
             set {
-                if (GetData<float>(2161) == value) return;
-                SetData(2161, value, nameof(Music_Skill_Heal_1_Minor));
+                if (GetData<float>(2320) == value) return;
+                SetData(2320, value, nameof(Music_Skill_Heal_1_Minor));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Heal_1_Minor));
             }
         }
 
         public const string Music_Skill_Heal_1_Major_displayName = "Music Skill: Heal 1: Major";
-        public const int Music_Skill_Heal_1_Major_sortIndex = 47300;
+        public const int Music_Skill_Heal_1_Major_sortIndex = 50050;
         [SortOrder(Music_Skill_Heal_1_Major_sortIndex)]
         [DisplayName(Music_Skill_Heal_1_Major_displayName)]
         public virtual float Music_Skill_Heal_1_Major {
-            get => GetData<float>(2165);
+            get => GetData<float>(2324);
             set {
-                if (GetData<float>(2165) == value) return;
-                SetData(2165, value, nameof(Music_Skill_Heal_1_Major));
+                if (GetData<float>(2324) == value) return;
+                SetData(2324, value, nameof(Music_Skill_Heal_1_Major));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Heal_1_Major));
             }
         }
 
         public const string Music_Skill_Heal_2_Minor_displayName = "Music Skill: Heal 2: Minor";
-        public const int Music_Skill_Heal_2_Minor_sortIndex = 47350;
+        public const int Music_Skill_Heal_2_Minor_sortIndex = 50100;
         [SortOrder(Music_Skill_Heal_2_Minor_sortIndex)]
         [DisplayName(Music_Skill_Heal_2_Minor_displayName)]
         public virtual float Music_Skill_Heal_2_Minor {
-            get => GetData<float>(2169);
+            get => GetData<float>(2328);
             set {
-                if (GetData<float>(2169) == value) return;
-                SetData(2169, value, nameof(Music_Skill_Heal_2_Minor));
+                if (GetData<float>(2328) == value) return;
+                SetData(2328, value, nameof(Music_Skill_Heal_2_Minor));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Heal_2_Minor));
             }
         }
 
         public const string Music_Skill_Heal_2_Major_displayName = "Music Skill: Heal 2: Major";
-        public const int Music_Skill_Heal_2_Major_sortIndex = 47400;
+        public const int Music_Skill_Heal_2_Major_sortIndex = 50150;
         [SortOrder(Music_Skill_Heal_2_Major_sortIndex)]
         [DisplayName(Music_Skill_Heal_2_Major_displayName)]
         public virtual float Music_Skill_Heal_2_Major {
-            get => GetData<float>(2173);
+            get => GetData<float>(2332);
             set {
-                if (GetData<float>(2173) == value) return;
-                SetData(2173, value, nameof(Music_Skill_Heal_2_Major));
+                if (GetData<float>(2332) == value) return;
+                SetData(2332, value, nameof(Music_Skill_Heal_2_Major));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Heal_2_Major));
             }
         }
 
         public const string Music_Skill_Hp_Up_0_displayName = "Music Skill: Hp Up 0";
-        public const int Music_Skill_Hp_Up_0_sortIndex = 47450;
+        public const int Music_Skill_Hp_Up_0_sortIndex = 50200;
         [SortOrder(Music_Skill_Hp_Up_0_sortIndex)]
         [DisplayName(Music_Skill_Hp_Up_0_displayName)]
         public virtual uint Music_Skill_Hp_Up_0 {
-            get => GetData<uint>(2177);
+            get => GetData<uint>(2336);
             set {
-                if (GetData<uint>(2177) == value) return;
-                SetData(2177, value, nameof(Music_Skill_Hp_Up_0));
+                if (GetData<uint>(2336) == value) return;
+                SetData(2336, value, nameof(Music_Skill_Hp_Up_0));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Hp_Up_0));
             }
         }
 
         public const string Music_Skill_Hp_Up_1_displayName = "Music Skill: Hp Up 1";
-        public const int Music_Skill_Hp_Up_1_sortIndex = 47500;
+        public const int Music_Skill_Hp_Up_1_sortIndex = 50250;
         [SortOrder(Music_Skill_Hp_Up_1_sortIndex)]
         [DisplayName(Music_Skill_Hp_Up_1_displayName)]
         public virtual uint Music_Skill_Hp_Up_1 {
-            get => GetData<uint>(2181);
+            get => GetData<uint>(2340);
             set {
-                if (GetData<uint>(2181) == value) return;
-                SetData(2181, value, nameof(Music_Skill_Hp_Up_1));
+                if (GetData<uint>(2340) == value) return;
+                SetData(2340, value, nameof(Music_Skill_Hp_Up_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Hp_Up_1));
             }
         }
 
         public const string Music_Skill_Mantle_Duration_displayName = "Music Skill: Mantle Duration";
-        public const int Music_Skill_Mantle_Duration_sortIndex = 47550;
+        public const int Music_Skill_Mantle_Duration_sortIndex = 50300;
         [SortOrder(Music_Skill_Mantle_Duration_sortIndex)]
         [DisplayName(Music_Skill_Mantle_Duration_displayName)]
         public virtual float Music_Skill_Mantle_Duration {
-            get => GetData<float>(2185);
+            get => GetData<float>(2344);
             set {
-                if (GetData<float>(2185) == value) return;
-                SetData(2185, value, nameof(Music_Skill_Mantle_Duration));
+                if (GetData<float>(2344) == value) return;
+                SetData(2344, value, nameof(Music_Skill_Mantle_Duration));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Mantle_Duration));
             }
         }
 
         public const string Music_Skill_Mantle_Duration_Put_displayName = "Music Skill: Mantle Duration Put";
-        public const int Music_Skill_Mantle_Duration_Put_sortIndex = 47600;
+        public const int Music_Skill_Mantle_Duration_Put_sortIndex = 50350;
         [SortOrder(Music_Skill_Mantle_Duration_Put_sortIndex)]
         [DisplayName(Music_Skill_Mantle_Duration_Put_displayName)]
         public virtual float Music_Skill_Mantle_Duration_Put {
-            get => GetData<float>(2189);
+            get => GetData<float>(2348);
             set {
-                if (GetData<float>(2189) == value) return;
-                SetData(2189, value, nameof(Music_Skill_Mantle_Duration_Put));
+                if (GetData<float>(2348) == value) return;
+                SetData(2348, value, nameof(Music_Skill_Mantle_Duration_Put));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Mantle_Duration_Put));
             }
         }
 
         public const string Music_Skill_Stamina_Up_Rate_displayName = "Music Skill: Stamina Up Rate";
-        public const int Music_Skill_Stamina_Up_Rate_sortIndex = 47650;
+        public const int Music_Skill_Stamina_Up_Rate_sortIndex = 50400;
         [SortOrder(Music_Skill_Stamina_Up_Rate_sortIndex)]
         [DisplayName(Music_Skill_Stamina_Up_Rate_displayName)]
         public virtual float Music_Skill_Stamina_Up_Rate {
-            get => GetData<float>(2193);
+            get => GetData<float>(2352);
             set {
-                if (GetData<float>(2193) == value) return;
-                SetData(2193, value, nameof(Music_Skill_Stamina_Up_Rate));
+                if (GetData<float>(2352) == value) return;
+                SetData(2352, value, nameof(Music_Skill_Stamina_Up_Rate));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Music_Skill_Stamina_Up_Rate));
             }
         }
 
-        public const string __47700_displayName = "-------------------------------------------------------------------------------------------";
-        public const int __47700_sortIndex = 47700;
-        [SortOrder(__47700_sortIndex)]
-        [DisplayName(__47700_displayName)]
+        public const string __50450_displayName = "-------------------------------------------------------------------------------------------";
+        public const int __50450_sortIndex = 50450;
+        [SortOrder(__50450_sortIndex)]
+        [DisplayName(__50450_displayName)]
         [IsReadOnly]
-        public virtual byte __47700 {
-            get => GetData<byte>(3);
+        public virtual byte __50450 {
+            get => GetData<byte>(162);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__47700));
+                if (GetData<byte>(162) == value) return;
+                SetData(162, value, nameof(__50450));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(__47700));
+                OnPropertyChanged(nameof(__50450));
             }
         }
 
         public const string Unk83_displayName = "Unk83";
-        public const int Unk83_sortIndex = 47750;
+        public const int Unk83_sortIndex = 50500;
         [SortOrder(Unk83_sortIndex)]
         [DisplayName(Unk83_displayName)]
         public virtual float Unk83 {
-            get => GetData<float>(2197);
+            get => GetData<float>(2356);
             set {
-                if (GetData<float>(2197) == value) return;
-                SetData(2197, value, nameof(Unk83));
+                if (GetData<float>(2356) == value) return;
+                SetData(2356, value, nameof(Unk83));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk83));
             }
         }
 
         public const string Unk84_displayName = "Unk84";
-        public const int Unk84_sortIndex = 47800;
+        public const int Unk84_sortIndex = 50550;
         [SortOrder(Unk84_sortIndex)]
         [DisplayName(Unk84_displayName)]
         public virtual float Unk84 {
-            get => GetData<float>(2201);
+            get => GetData<float>(2360);
             set {
-                if (GetData<float>(2201) == value) return;
-                SetData(2201, value, nameof(Unk84));
+                if (GetData<float>(2360) == value) return;
+                SetData(2360, value, nameof(Unk84));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk84));
             }
         }
 
         public const string Unk85_displayName = "Unk85";
-        public const int Unk85_sortIndex = 47850;
+        public const int Unk85_sortIndex = 50600;
         [SortOrder(Unk85_sortIndex)]
         [DisplayName(Unk85_displayName)]
         public virtual uint Unk85 {
-            get => GetData<uint>(2205);
+            get => GetData<uint>(2364);
             set {
-                if (GetData<uint>(2205) == value) return;
-                SetData(2205, value, nameof(Unk85));
+                if (GetData<uint>(2364) == value) return;
+                SetData(2364, value, nameof(Unk85));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk85));
             }
         }
 
         public const string Unk86_displayName = "Unk86";
-        public const int Unk86_sortIndex = 47900;
+        public const int Unk86_sortIndex = 50650;
         [SortOrder(Unk86_sortIndex)]
         [DisplayName(Unk86_displayName)]
         public virtual uint Unk86 {
-            get => GetData<uint>(2209);
+            get => GetData<uint>(2368);
             set {
-                if (GetData<uint>(2209) == value) return;
-                SetData(2209, value, nameof(Unk86));
+                if (GetData<uint>(2368) == value) return;
+                SetData(2368, value, nameof(Unk86));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk86));
             }
         }
 
         public const string Unk87_displayName = "Unk87";
-        public const int Unk87_sortIndex = 47950;
+        public const int Unk87_sortIndex = 50700;
         [SortOrder(Unk87_sortIndex)]
         [DisplayName(Unk87_displayName)]
         public virtual float Unk87 {
-            get => GetData<float>(2213);
+            get => GetData<float>(2372);
             set {
-                if (GetData<float>(2213) == value) return;
-                SetData(2213, value, nameof(Unk87));
+                if (GetData<float>(2372) == value) return;
+                SetData(2372, value, nameof(Unk87));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk87));
             }
         }
 
         public const string Unk88_displayName = "Unk88";
-        public const int Unk88_sortIndex = 48000;
+        public const int Unk88_sortIndex = 50750;
         [SortOrder(Unk88_sortIndex)]
         [DisplayName(Unk88_displayName)]
         public virtual float Unk88 {
-            get => GetData<float>(2217);
+            get => GetData<float>(2376);
             set {
-                if (GetData<float>(2217) == value) return;
-                SetData(2217, value, nameof(Unk88));
+                if (GetData<float>(2376) == value) return;
+                SetData(2376, value, nameof(Unk88));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk88));
             }
         }
 
         public const string Unk89_displayName = "Unk89";
-        public const int Unk89_sortIndex = 48050;
+        public const int Unk89_sortIndex = 50800;
         [SortOrder(Unk89_sortIndex)]
         [DisplayName(Unk89_displayName)]
         public virtual float Unk89 {
-            get => GetData<float>(2221);
+            get => GetData<float>(2380);
             set {
-                if (GetData<float>(2221) == value) return;
-                SetData(2221, value, nameof(Unk89));
+                if (GetData<float>(2380) == value) return;
+                SetData(2380, value, nameof(Unk89));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk89));
             }
         }
 
         public const string Unk90_displayName = "Unk90";
-        public const int Unk90_sortIndex = 48100;
+        public const int Unk90_sortIndex = 50850;
         [SortOrder(Unk90_sortIndex)]
         [DisplayName(Unk90_displayName)]
         public virtual uint Unk90 {
-            get => GetData<uint>(2225);
+            get => GetData<uint>(2384);
             set {
-                if (GetData<uint>(2225) == value) return;
-                SetData(2225, value, nameof(Unk90));
+                if (GetData<uint>(2384) == value) return;
+                SetData(2384, value, nameof(Unk90));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk90));
             }
         }
 
         public const string Unk91_displayName = "Unk91";
-        public const int Unk91_sortIndex = 48150;
+        public const int Unk91_sortIndex = 50900;
         [SortOrder(Unk91_sortIndex)]
         [DisplayName(Unk91_displayName)]
         public virtual uint Unk91 {
-            get => GetData<uint>(2229);
+            get => GetData<uint>(2388);
             set {
-                if (GetData<uint>(2229) == value) return;
-                SetData(2229, value, nameof(Unk91));
+                if (GetData<uint>(2388) == value) return;
+                SetData(2388, value, nameof(Unk91));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk91));
             }
         }
 
         public const string Unk92_displayName = "Unk92";
-        public const int Unk92_sortIndex = 48200;
+        public const int Unk92_sortIndex = 50950;
         [SortOrder(Unk92_sortIndex)]
         [DisplayName(Unk92_displayName)]
         public virtual float Unk92 {
-            get => GetData<float>(2233);
+            get => GetData<float>(2392);
             set {
-                if (GetData<float>(2233) == value) return;
-                SetData(2233, value, nameof(Unk92));
+                if (GetData<float>(2392) == value) return;
+                SetData(2392, value, nameof(Unk92));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk92));
             }
         }
 
         public const string Unk93_displayName = "Unk93";
-        public const int Unk93_sortIndex = 48250;
+        public const int Unk93_sortIndex = 51000;
         [SortOrder(Unk93_sortIndex)]
         [DisplayName(Unk93_displayName)]
         public virtual float Unk93 {
-            get => GetData<float>(2237);
+            get => GetData<float>(2396);
             set {
-                if (GetData<float>(2237) == value) return;
-                SetData(2237, value, nameof(Unk93));
+                if (GetData<float>(2396) == value) return;
+                SetData(2396, value, nameof(Unk93));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Unk93));
             }
         }
 
-        public const int lastSortIndex = 48300;
+        public const int lastSortIndex = 51050;
     }
 }

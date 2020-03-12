@@ -95,7 +95,7 @@ namespace MHW_Editor.Skills {
         public const ushort Botanist = 99; // Increases the quantity of herbs and other consumable items you gather.
         public const ushort Geologist = 100; // Increases the number of times you can use a gathering point.
         public const ushort Maximum_Might = 101; // Increases affinity as long as stamina is kept full for a period of time.
-        public const ushort Slinger_Capacity = 102; // Increases the loading capacity for slinger ammo obtained in the field.
+        public const ushort Slinger_Capacity = 102; // Increases loading capacity for slinger ammo obtained in the field. Limits the amount of ammo used when firing certain shots.
         public const ushort Stealth = 103; // Makes it easier for monsters to lose sight of you.
         public const ushort Flinch_Free = 104; // Prevents knockbacks and other reactions to small damage.
         public const ushort Scoutfly_Range_Up = 105; // Expands your scoutflies' detection range.
@@ -189,7 +189,9 @@ namespace MHW_Editor.Skills {
         public const ushort Adrenaline = 206; // Temporarily reduces stamina depletion when health is at 40% or lower.
         public const ushort Coldproof = 207; // Nullifies the effects of cold weather.
         public const ushort Rajang_s_Rage = 208;
+        public const ushort Power_Cell = 209;
         public const ushort Survivor = 210;
+        public const ushort Safi_jiiva_Seal = 211;
         public const ushort Joyful_Blessing = 212;
         public const ushort Appreciation_Blessing = 213;
     }

@@ -111,6 +111,7 @@ namespace MHW_Generator {
         private static void GenPlSkillParam() {
             // 'Unk' counters.
             ushort i = 1;
+            ushort j = 1;
 
             var entries = new List<MhwStructData.Entry> {
                 new MhwStructData.Entry("Speed Eating 1 Drink Motion Speed", 8, typeof(float)),
@@ -516,6 +517,7 @@ namespace MHW_Generator {
 
                 Spacer,
 
+                new MhwStructData.Entry($"Unk Safi {j++}", 1698, typeof(byte), addOffset: 1),
                 new MhwStructData.Entry($"Unk{i++}", 1698, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 1702, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 1706, typeof(float)),
@@ -563,7 +565,45 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Unk{i++}", 1874, typeof(float)),
                 new MhwStructData.Entry($"Unk{i++}", 1878, typeof(float)),
                 new MhwStructData.Entry("Offensive Guard", 1882, typeof(float)),
-                new MhwStructData.Entry("Coalescence", 1886, typeof(float)),
+                new MhwStructData.Entry("Coalescence", 1886, typeof(float), addOffset: -1),
+
+                Spacer,
+
+                new MhwStructData.Entry($"Unk Safi {j++}", 1891, typeof(float)),
+                new MhwStructData.Entry($"Unk Safi {j++}", 1895, typeof(float)),
+                new MhwStructData.Entry($"Unk Safi {j++}", 1899, typeof(float)),
+                new MhwStructData.Entry($"Unk Safi {j++}", 1903, typeof(uint)),
+                new MhwStructData.Entry($"Unk Safi {j++}", 1907, typeof(uint)),
+                new MhwStructData.Entry($"Unk Safi {j++}", 1911, typeof(float)),
+                new MhwStructData.Entry("Set(3) Elemental Bonus", 1915, typeof(float)),
+                new MhwStructData.Entry("Set(5) Elemental Bonus", 1919, typeof(float)),
+                new MhwStructData.Entry("Set(3) Status Bonus", 1923, typeof(float)),
+                new MhwStructData.Entry("Set(5) Status Bonus", 1927, typeof(float)),
+                new MhwStructData.Entry("Set(3) Affinity Bonus", 1931, typeof(uint)),
+                new MhwStructData.Entry("Set(5) Affinity Bonus", 1935, typeof(uint)),
+
+                Spacer
+            });
+
+            entries.AddRange(weapons.Select((weapon, x) => new MhwStructData.Entry($"Safi'Jiva Seal: ({weapon}) Hit Combo to Heal", 1939 + (ulong) x, typeof(byte))));
+
+            entries.Add(Spacer);
+
+            entries.AddRange(weapons.Select((weapon, x) => new MhwStructData.Entry($"Safi'Jiva Seal: ({weapon}) HP Lost Per Hit", 1953 + (ulong) x * 4, typeof(float))));
+
+            entries.AddRange(new List<MhwStructData.Entry> {
+                Spacer,
+
+                new MhwStructData.Entry($"Unk Safi {j++}", 2009, typeof(float)),
+                new MhwStructData.Entry($"Unk Safi {j++}", 2013, typeof(float)),
+                new MhwStructData.Entry($"Unk Safi {j++}", 2017, typeof(float)),
+                new MhwStructData.Entry($"Unk Safi {j++}", 2021, typeof(float)),
+                new MhwStructData.Entry("Set(3) Elemental Limit", 2025, typeof(float)),
+                new MhwStructData.Entry("Set(5) Elemental Limit", 2029, typeof(float)),
+                new MhwStructData.Entry("Set(3) Bowgun Elemental Limit", 2033, typeof(float)),
+                new MhwStructData.Entry("Set(5) Bowgun Elemental Limit", 2037, typeof(float)),
+                new MhwStructData.Entry("Set(3) Status Limit", 2041, typeof(float)),
+                new MhwStructData.Entry("Set(5) Status Limit", 2045, typeof(float), addOffset: 159),
 
                 Spacer
             });
@@ -1249,7 +1289,7 @@ namespace MHW_Generator {
                 new MhwStructData.Entry($"Unk{i++}", 1085, typeof(float), true, forceUnique: true),
                 new MhwStructData.Entry($"Unk{i}", 1089, typeof(float), true, forceUnique: true),
 
-            Spacer,
+                Spacer,
                 new MhwStructData.Entry("------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
                 Spacer
             };

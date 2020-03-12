@@ -46,8 +46,12 @@ namespace MHW_Template
             #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\PlDataItemTemplate.tt"
 
     var sortIndex = 50;
+    long offsetOffset = 0; // An offset to our offset for all subsequent offsets.
 
     foreach (var entry in structData.entries) {
+        var realOffset = (long) entry.offset + offsetOffset;
+        offsetOffset += entry.addOffset;
+
         var accessLevel = entry.accessLevel;
         var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
 
@@ -58,7 +62,7 @@ namespace MHW_Template
         // Don't need now, but uncomment in the future if we need to override a generated property.
         if (accessLevel == "private")
             continue;
-        WriteLine($"                new PlDataItemCustomView(this, \"{entry.displayName}\", \"{name}\", Bytes, {entry.offset}),");
+        WriteLine($"                new PlDataItemCustomView(this, \"{entry.displayName}\", \"{name}\", Bytes, {realOffset}),");
         sortIndex += 50;
     }
 

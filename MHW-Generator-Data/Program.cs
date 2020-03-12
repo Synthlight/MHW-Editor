@@ -136,13 +136,16 @@ namespace MHW_Generator_Data {
 
             const string mhwNoChunkRoot = @"..\..\..\..\MHWNoChunk\MHWNoChunk\bin\x64\Release";
 
-            var startInfo = new ProcessStartInfo($@"{mhwNoChunkRoot}\MHWNoChunk.exe") {
-                WorkingDirectory = mhwNoChunkRoot,
-                Arguments = $"^(.*\\.(({string.Join("|", Global.FILE_TYPES.ToList().Select(s => s.Replace("*.", "")))})$))?[^.]*$",
-                UseShellExecute = false
-            };
+            const string ROOT = @"V:\MHW\IB";
+            foreach (var chunkFile in Directory.EnumerateFiles(ROOT, "*.bin", SearchOption.TopDirectoryOnly)) {
+                var startInfo = new ProcessStartInfo($@"{mhwNoChunkRoot}\MHWNoChunk.exe") {
+                    WorkingDirectory = mhwNoChunkRoot,
+                    Arguments = $"{Path.GetFileNameWithoutExtension(chunkFile)} ^(.*\\.(({string.Join("|", Global.FILE_TYPES.ToList().Select(s => s.Replace("*.", "")))})$))?[^.]*$",
+                    UseShellExecute = false
+                };
 
-            Process.Start(startInfo)?.WaitForExit();
+                Process.Start(startInfo)?.WaitForExit();
+            }
         }
 
         private static void DeleteDirectories(string startLocation) {

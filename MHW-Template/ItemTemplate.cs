@@ -84,8 +84,12 @@ namespace MHW_Template
 
     var compiler = new CSharpCodeProvider();
     var sortIndex = 50;
+    long offsetOffset = 0; // An offset to our offset for all subsequent offsets.
 
     foreach (var entry in structData.entries) {
+        var realOffset = (long) entry.offset + offsetOffset;
+        offsetOffset += entry.addOffset;
+
         var accessLevel = entry.accessLevel;
         if (accessLevel != "private") {
             accessLevel += " virtual";
@@ -127,20 +131,20 @@ namespace MHW_Template
         WriteLine($"        {accessLevel} {returnString} {name} {{");
 
         if (returnString == "bool") {
-            WriteLine($"            get => {getCast}Convert.ToBoolean(GetData<{typeString}>({entry.offset}));");
+            WriteLine($"            get => {getCast}Convert.ToBoolean(GetData<{typeString}>({realOffset}));");
         } else {
-            WriteLine($"            get => {getCast}GetData<{typeString}>({entry.offset});");
+            WriteLine($"            get => {getCast}GetData<{typeString}>({realOffset});");
         }
 
         // Always include a setter, even for readOnly. This enables us to bypass readOnly via command line switch.
         WriteLine("            set {");
 
         if (returnString == "bool") {
-            WriteLine($"                if (Convert.ToBoolean(GetData<{typeString}>({entry.offset})) == {entry.valueString}) return;"); // Do nothing if the value is the same.
-            WriteLine($"                SetData({entry.offset}, Convert.ToByte({entry.valueString}), nameof({name}));");
+            WriteLine($"                if (Convert.ToBoolean(GetData<{typeString}>({realOffset})) == {entry.valueString}) return;"); // Do nothing if the value is the same.
+            WriteLine($"                SetData({realOffset}, Convert.ToByte({entry.valueString}), nameof({name}));");
         } else {
-            WriteLine($"                if ({getCast}GetData<{typeString}>({entry.offset}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
-            WriteLine($"                SetData({entry.offset}, {setCast}{entry.valueString}, nameof({name}));");
+            WriteLine($"                if ({getCast}GetData<{typeString}>({realOffset}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
+            WriteLine($"                SetData({realOffset}, {setCast}{entry.valueString}, nameof({name}));");
         }
 
         WriteLine("                OnPropertyChanged(nameof(Raw_Data));");
@@ -194,7 +198,7 @@ namespace MHW_Template
             #line hidden
             this.Write("\r\n        public const int lastSortIndex = ");
             
-            #line 134 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 138 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(sortIndex));
             
             #line default

@@ -668,6 +668,7 @@ namespace MHW_Editor.PlData {
         public byte Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit; // Offset: 1696
         public byte Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit; // Offset: 1697
         public float Unk36; // Offset: 1698
+        public byte Unk_Safi_1; // Offset: 1698
         public float Unk37; // Offset: 1702
         public float Unk38; // Offset: 1706
         public float Unk39; // Offset: 1710
@@ -716,70 +717,120 @@ namespace MHW_Editor.PlData {
         public float Offensive_Guard; // Offset: 1882
         public float Coalescence; // Offset: 1886
         public ushort Food_Effect_Life_Up_1; // Offset: 1890
+        public float Unk_Safi_2; // Offset: 1891
         public ushort Food_Effect_Life_Up_2; // Offset: 1892
         public ushort Food_Effect_Life_Up_3; // Offset: 1894
+        public float Unk_Safi_3; // Offset: 1895
         public ushort Food_Effect_Life_Up_4; // Offset: 1896
         public ushort Food_Effect_Life_Up_5; // Offset: 1898
+        public float Unk_Safi_4; // Offset: 1899
         public ushort Food_Effect_Life_Up_6; // Offset: 1900
         public ushort Food_Effect_Stamina_Up_1; // Offset: 1902
+        public uint Unk_Safi_5; // Offset: 1903
         public ushort Food_Effect_Stamina_Up_2; // Offset: 1904
         public ushort Food_Effect_Stamina_Up_3; // Offset: 1906
+        public uint Unk_Safi_6; // Offset: 1907
         public ushort Food_Effect_Attack_Up_1; // Offset: 1908
         public ushort Food_Effect_Attack_Up_2; // Offset: 1910
+        public float Unk_Safi_7; // Offset: 1911
         public ushort Food_Effect_Attack_Up_3; // Offset: 1912
         public ushort Food_Effect_Attack_Up_4; // Offset: 1914
+        public float Set_3_Elemental_Bonus; // Offset: 1915
         public ushort Food_Effect_Defense_Up_1; // Offset: 1916
         public ushort Food_Effect_Defense_Up_2; // Offset: 1918
+        public float Set_5_Elemental_Bonus; // Offset: 1919
         public ushort Food_Effect_Defense_Up_3; // Offset: 1920
         public ushort Food_Effect_Defense_Up_4; // Offset: 1922
+        public float Set_3_Status_Bonus; // Offset: 1923
         public ushort Food_Effect_All_Resistances_Up_1; // Offset: 1924
         public ushort Food_Effect_All_Resistances_Up_2; // Offset: 1926
+        public float Set_5_Status_Bonus; // Offset: 1927
         public ushort Food_Effect_All_Resistances_Up_3; // Offset: 1928
         public ushort Food_Effect_All_Resistances_Up_4; // Offset: 1930
+        public uint Set_3_Affinity_Bonus; // Offset: 1931
         public byte Feline_Polisher_1; // Offset: 1932
         public byte Feline_Polisher_2; // Offset: 1933
         public byte Feline_Polisher_3; // Offset: 1934
         public byte Feline_Polisher_Loop_1; // Offset: 1935
+        public uint Set_5_Affinity_Bonus; // Offset: 1935
         public byte Feline_Polisher_Loop_2; // Offset: 1936
         public byte Feline_Polisher_Loop_3; // Offset: 1937
         public float Feline_Rider_Attack_Rate; // Offset: 1938
+        public byte Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal; // Offset: 1939
+        public byte Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal; // Offset: 1940
+        public byte Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal; // Offset: 1941
+        public byte Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal; // Offset: 1942
         public float Feline_Heroics_Attack_Rate; // Offset: 1942
+        public byte Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal; // Offset: 1943
+        public byte Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal; // Offset: 1944
+        public byte Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal; // Offset: 1945
+        public byte Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal; // Offset: 1946
         public float Feline_Heroics_Defense_Rate; // Offset: 1946
+        public byte Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal; // Offset: 1947
+        public byte Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal; // Offset: 1948
+        public byte Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal; // Offset: 1949
+        public byte Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal; // Offset: 1950
         public byte Feline_Heroics_Life_Activation_Threshold; // Offset: 1950
         public byte Feline_Carving_L_Lottery_1; // Offset: 1951
+        public byte Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal; // Offset: 1951
         public byte Feline_Carving_L_Lottery_2; // Offset: 1952
+        public byte Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal; // Offset: 1952
         public byte Feline_Carving_L_Lottery_3; // Offset: 1953
+        public float Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit; // Offset: 1953
         public byte Feline_Carving_L_Up_1; // Offset: 1954
         public byte Feline_Carving_L_Up_2; // Offset: 1955
         public byte Feline_Carving_L_Up_3; // Offset: 1956
+        public float Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit; // Offset: 1957
         public byte Feline_Carving_L_Up_4; // Offset: 1957
         public byte Feline_Carving_S_Lottery_; // Offset: 1958
         public byte Feline_Carving_S_Up_; // Offset: 1959
         public float Feline_Medic_Heal_Rate; // Offset: 1960
+        public float Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit; // Offset: 1961
         public float Feline_Black_Belt_Stamina_Rate; // Offset: 1964
+        public float Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit; // Offset: 1965
         public ushort Feline_Special_Attack_Condition_Attack_Bonus; // Offset: 1968
+        public float Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit; // Offset: 1969
         public float Feline_Special_Attack_Capture_Attack_Rate; // Offset: 1970
+        public float Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit; // Offset: 1973
         public byte Feline_Defense_S_; // Offset: 1974
         public byte Feline_Defense_L_; // Offset: 1975
         public float Feline_Defense_S_Damage_Rate; // Offset: 1976
+        public float Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit; // Offset: 1977
         public float Feline_Defense_L_Damage_Rate; // Offset: 1980
+        public float Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit; // Offset: 1981
         public float Feline_Harvest_Cooldown_Multiplier; // Offset: 1984
+        public float Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit; // Offset: 1985
         public float Feline_Sharpshooter_Shell_Attack_Rate; // Offset: 1988
+        public float Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit; // Offset: 1989
         public float Feline_Escape_Artist_Dash_Stamina_Rate; // Offset: 1992
+        public float Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit; // Offset: 1993
         public float Feline_Delivery_Dash_Stamina_Rate; // Offset: 1996
+        public float Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit; // Offset: 1997
         public float Feline_Riser_S_IFrames; // Offset: 2000
+        public float Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit; // Offset: 2001
         public float Feline_Riser_L_IFrames; // Offset: 2004
+        public float Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit; // Offset: 2005
         public float Feline_Temper_Shell_Attack_Rate; // Offset: 2008
+        public float Unk_Safi_8; // Offset: 2009
         public byte Feline_Temper_Blur_Level_Bonus; // Offset: 2012
         public float Feline_Cliffhanger_Stamina_Rate; // Offset: 2013
+        public float Unk_Safi_9; // Offset: 2013
+        public float Unk_Safi_10; // Offset: 2017
         public float Feline_Slugger_Stun_Attack_Rate; // Offset: 2017
         public float Feline_Bombardier_Ballista_Attack_Rate; // Offset: 2021
+        public float Unk_Safi_11; // Offset: 2021
         public float Feline_Bombardier_Cannon_Attack_Rate; // Offset: 2025
+        public float Set_3_Elemental_Limit; // Offset: 2025
         public float Feline_Bombardier_Gunlance_Shell_Attack_Rate; // Offset: 2029
+        public float Set_5_Elemental_Limit; // Offset: 2029
         public float Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate; // Offset: 2033
+        public float Set_3_Bowgun_Elemental_Limit; // Offset: 2033
         public float Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate; // Offset: 2037
+        public float Set_5_Bowgun_Elemental_Limit; // Offset: 2037
         public float Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate; // Offset: 2041
+        public float Set_3_Status_Limit; // Offset: 2041
         public float Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate; // Offset: 2045
+        public float Set_5_Status_Limit; // Offset: 2045
         public float Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate; // Offset: 2049
         public byte Feline_Moxie_Health_Threshold; // Offset: 2053
         public byte Feline_Dungmaster_Escape_Bonus; // Offset: 2054

@@ -25,6 +25,7 @@ namespace MHW_Template {
             public readonly string dataSourceCustomSorter;
             public readonly bool forceUnique;
             public readonly bool asBoolean;
+            public readonly long addOffset = 0; // An offset to our offset for all subsequent offsets.
 
             public Entry(string displayName, ulong offset, Type type,
                          bool readOnly = false,
@@ -35,7 +36,8 @@ namespace MHW_Template {
                          string[] extraOnPropertyChanged = null,
                          string dataSourceCustomSorter = "ButtonSorter",
                          bool forceUnique = false,
-                         bool asBoolean = false) {
+                         bool asBoolean = false,
+                         long addOffset = 0) {
                 this.displayName = displayName;
                 this.offset = offset;
                 this.type = new CodeTypeReference(type);
@@ -48,6 +50,7 @@ namespace MHW_Template {
                 this.dataSourceCustomSorter = dataSourceCustomSorter;
                 this.forceUnique = forceUnique;
                 this.asBoolean = asBoolean;
+                this.addOffset = addOffset;
             }
 
             public Entry(string name, ulong offset, Type type, Type enumReturn) : this(name, offset, type) {
