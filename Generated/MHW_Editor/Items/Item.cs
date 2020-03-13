@@ -84,17 +84,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Unknown_uint8__displayName = "Unknown (uint8)";
-        public const int Unknown_uint8__sortIndex = 300;
-        [SortOrder(Unknown_uint8__sortIndex)]
-        [DisplayName(Unknown_uint8__displayName)]
-        public virtual byte Unknown_uint8_ {
-            get => GetData<byte>(11);
+        public const string Unknown_sint8__displayName = "Unknown (sint8)";
+        public const int Unknown_sint8__sortIndex = 300;
+        [SortOrder(Unknown_sint8__sortIndex)]
+        [DisplayName(Unknown_sint8__displayName)]
+        public virtual sbyte Unknown_sint8_ {
+            get => GetData<sbyte>(11);
             set {
-                if (GetData<byte>(11) == value) return;
-                SetData(11, value, nameof(Unknown_uint8_));
+                if (GetData<sbyte>(11) == value) return;
+                SetData(11, value, nameof(Unknown_sint8_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_uint8_));
+                OnPropertyChanged(nameof(Unknown_sint8_));
             }
         }
 

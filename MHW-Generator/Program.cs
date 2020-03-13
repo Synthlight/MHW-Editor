@@ -1337,7 +1337,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Type", 5, typeof(uint), typeof(ItemType)),
                     new MhwStructData.Entry("Rarity", 9, typeof(byte)),
                     new MhwStructData.Entry("Carry Limit", 10, typeof(sbyte)),
-                    new MhwStructData.Entry("Unknown (uint8)", 11, typeof(byte)),
+                    new MhwStructData.Entry("Unknown (sint8)", 11, typeof(sbyte)),
                     new MhwStructData.Entry("Sort Order", 12, typeof(ushort)),
                     new MhwStructData.Entry("Icon Id", 18, typeof(uint)),
                     new MhwStructData.Entry("Icon Color Id", 22, typeof(ushort)),
