@@ -9,7 +9,7 @@ namespace MHW_Editor.Items {
         public byte Sub_Type; // Offset: 4
         public uint Type; // Offset: 5
         public byte Rarity; // Offset: 9
-        public byte Carry_Limit; // Offset: 10
+        public sbyte Carry_Limit; // Offset: 10
         public byte Unknown_uint8_; // Offset: 11
         public ushort Sort_Order; // Offset: 12
         public uint Flags_Raw; // Offset: 14

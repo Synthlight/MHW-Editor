@@ -74,10 +74,10 @@ namespace MHW_Editor.Items {
         public const int Carry_Limit_sortIndex = 250;
         [SortOrder(Carry_Limit_sortIndex)]
         [DisplayName(Carry_Limit_displayName)]
-        public virtual byte Carry_Limit {
-            get => GetData<byte>(10);
+        public virtual sbyte Carry_Limit {
+            get => GetData<sbyte>(10);
             set {
-                if (GetData<byte>(10) == value) return;
+                if (GetData<sbyte>(10) == value) return;
                 SetData(10, value, nameof(Carry_Limit));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Carry_Limit));
