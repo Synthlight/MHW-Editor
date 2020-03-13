@@ -17,7 +17,7 @@ namespace MHW_Editor {
         public dynamic dataProxy { get; }
 
         public GetNewItemId(dynamic currentItem, dynamic data) {
-            this.CurrentItem = currentItem;
+            CurrentItem = currentItem;
             dataProxy = ConvertToIdAndNamePair(data);
 
             InitializeComponent();
@@ -50,6 +50,10 @@ namespace MHW_Editor {
 
         private void Cbx_current_item_KeyUp(object sender, KeyEventArgs e) {
             if (cbx_current_item.IsDropDownOpen) return;
+            if (CurrentItem == null) {
+                Cancel();
+                return;
+            }
 
             // ReSharper disable once SwitchStatementMissingSomeEnumCasesNoDefault
             switch (e.Key) {
