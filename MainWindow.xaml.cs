@@ -465,6 +465,9 @@ namespace MHW_Editor {
         }
 
         private void Dg_items_GotFocus(object sender, RoutedEventArgs e) {
+#if !DEBUG
+            try {
+#endif
             // Lookup for the source to be DataGridCell
             if (e.OriginalSource is DataGridCell cell) {
                 if (coloredRow != null) coloredRow.Background = Brushes.White;
@@ -487,15 +490,28 @@ namespace MHW_Editor {
                     }
                 }
             }
+#if !DEBUG
+            } catch (Exception err) {
+                MessageBox.Show("Error occured. Press Ctrl+C to copy the contents of ths window and report to the developer.\r\n\r\n" + err, "Error Occured", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+#endif
         }
 
         private void Dg_items_cell_MouseClick(object sender, MouseButtonEventArgs e) {
+#if !DEBUG
+            try {
+#endif
             if (sender is DataGridCell cell) {
                 // We come here on both single & double click. If we don't check for focus, this hijacks the click and prevents focusing.
                 if (e?.ClickCount == 1 && !cell.IsFocused) return;
 
                 CheckCellForButtonTypeAndHandleClick(sender, cell);
             }
+#if !DEBUG
+            } catch (Exception err) {
+                MessageBox.Show("Error occured. Press Ctrl+C to copy the contents of ths window and report to the developer.\r\n\r\n" + err, "Error Occured", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+#endif
         }
 
         private bool CheckCellForButtonTypeAndHandleClick(object sender, DataGridCell cell) {
@@ -525,7 +541,7 @@ namespace MHW_Editor {
                 DataSourceType.Items => DataHelper.itemNames[locale],
                 DataSourceType.Skills => DataHelper.skillNames[locale],
                 DataSourceType.SkillDat => skillDatLookup[locale],
-                _ => throw new ArgumentOutOfRangeException()
+                _ => throw new ArgumentOutOfRangeException(dataSourceType.ToString())
             };
 
             var getNewItemId = new GetNewItemId(value, dataSource);
@@ -539,6 +555,9 @@ namespace MHW_Editor {
         }
 
         private void Dg_items_Sorting(object sender, DataGridSortingEventArgs e) {
+#if !DEBUG
+            try {
+#endif
             // Does the column we're sorting define a custom sorter?
             var matches = columnMap[sender].Where(pair => pair.Value.column == e.Column && pair.Value.customSorter != null).ToList();
             if (!matches.Any()) return;
@@ -550,9 +569,17 @@ namespace MHW_Editor {
             listColView.CustomSort = customSorter;
 
             e.Handled = true;
+#if !DEBUG
+            } catch (Exception err) {
+                MessageBox.Show("Error occured. Press Ctrl+C to copy the contents of ths window and report to the developer.\r\n\r\n" + err, "Error Occured", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+#endif
         }
 
         private void Dg_items_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e) {
+#if !DEBUG
+            try {
+#endif
             // Commit as cell edit ends instead of DG waiting till we leave the row.
             if (!isManualEditCommit) {
                 isManualEditCommit = true;
@@ -561,6 +588,11 @@ namespace MHW_Editor {
             }
 
             CalculatePercents();
+#if !DEBUG
+            } catch (Exception err) {
+                MessageBox.Show("Error occured. Press Ctrl+C to copy the contents of ths window and report to the developer.\r\n\r\n" + err, "Error Occured", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+#endif
         }
 
         private void CalculatePercents() {
