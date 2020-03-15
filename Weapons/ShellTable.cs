@@ -15,7 +15,7 @@ namespace MHW_Editor.Weapons {
             recoilLookup.Add((byte) 1, "Normal (Recoil +2) M1");
             recoilLookup.Add((byte) 2, "Normal (Recoil +2) M2");
             recoilLookup.Add((byte) 3, "Normal (Recoil +2) M3");
-            recoilLookup.Add((byte) 34, "Normal (Recoil +2) M4");
+            recoilLookup.Add((byte) 36, "Normal (Recoil +2) M4");
 
             recoilLookup.Add((byte) 24, "Normal (Recoil +3) M1.2");
             recoilLookup.Add((byte) 11, "Normal (Recoil +3) M1.3");
@@ -48,7 +48,7 @@ namespace MHW_Editor.Weapons {
             recoilLookup.Add((byte) 29, "Rapid Fire (Recoil +2) M1");
             recoilLookup.Add((byte) 28, "Rapid Fire (Recoil +2) M2");
             recoilLookup.Add((byte) 30, "Rapid Fire (Recoil +2) M3");
-            recoilLookup.Add((byte) 36, "Rapid Fire (Recoil +2) M4");
+            recoilLookup.Add((byte) 34, "Rapid Fire (Recoil +2) M4");
 
             recoilLookup.Add((byte) 33, "Rapid Fire (Recoil +3) M2.3");
             recoilLookup.Add((byte) 31, "Rapid Fire (Recoil +3) M3");
