@@ -11,6 +11,7 @@ using MHW_Template;
 namespace MHW_Editor.Weapons.Collision {
     public partial class Collision {
         public static Models.Collision LoadData(string targetFile) {
+            Debug.Assert(Marshal.SizeOf(typeof(Atk0)) == 179);
             Debug.Assert(Marshal.SizeOf(typeof(Atk1)) == 218);
             Debug.Assert(Marshal.SizeOf(typeof(Atk2)) == 171);
             Debug.Assert(Marshal.SizeOf(typeof(Atk3)) == 199);
@@ -153,7 +154,10 @@ namespace MHW_Editor.Weapons.Collision {
             var atks = new List<dynamic>();
 
             for (var i = 0; i < count; i++) {
-                if (type == 1) {
+                if (type == 0) {
+                    var bytes = reader.ReadBytes(Marshal.SizeOf(typeof(Atk0)));
+                    atks.Add(bytes.GetDataAs<Atk0>());
+                } else if (type == 1) {
                     var bytes = reader.ReadBytes(Marshal.SizeOf(typeof(Atk1)));
                     atks.Add(bytes.GetDataAs<Atk1>());
                 } else if (type == 2) {
@@ -292,7 +296,9 @@ namespace MHW_Editor.Weapons.Collision {
         private static void WriteAtks(IEnumerable<dynamic> atks, uint type, BinaryWriter writer) {
             foreach (var atk in atks) {
                 byte[] bytes;
-                if (type == 1) {
+                if (type == 0) {
+                    bytes = ((Atk0) atk).GetBytes();
+                } else if (type == 1) {
                     bytes = ((Atk1) atk).GetBytes();
                 } else if (type == 2) {
                     bytes = ((Atk2) atk).GetBytes();

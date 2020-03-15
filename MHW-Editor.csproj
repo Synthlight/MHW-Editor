@@ -245,6 +245,7 @@
     <Compile Include="Skills\SkillPointData.cs" />
     <Compile Include="Weapons\Bow.cs" />
     <Compile Include="Weapons\Collision\Collision.cs" />
+    <Compile Include="Weapons\Collision\Models\Atk0.cs" />
     <Compile Include="Weapons\Collision\Models\Atk2.cs" />
     <Compile Include="Weapons\Collision\Models\Atk3.cs" />
     <Compile Include="Weapons\Collision\Models\Collision.cs" />
