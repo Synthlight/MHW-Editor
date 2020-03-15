@@ -59,6 +59,614 @@
       "description": "guess dummy"
     }
   },
+  "hm\\common\\shell\\collision\\object.col": {
+    "0": {
+      "name": "Stone / Redpit",
+      "description": "Slinger (Direct Hit)"
+    },
+    "2": {
+      "name": "Brightmoss",
+      "description": "Slinger (Direct Hit)"
+    },
+    "1": {
+      "name": "Scatternut",
+      "description": "Slinger (Direct Hit)"
+    },
+    "12": {
+      "name": "Flash Pod",
+      "description": "Slinger (Direct Hit)"
+    },
+    "6": {
+      "name": "Brightmoss",
+      "description": "Slinger (Ground Hit)"
+    },
+    "5": {
+      "name": "Scatternut / Crystalburst",
+      "description": "Slinger (Ground Hit)"
+    },
+    "29": {
+      "name": "Bomb Pod",
+      "description": "(EM) Slinger (Initial Hit)"
+    },
+    "9": {
+      "name": "Torch Pod",
+      "description": "(EM)Slinger sound range"
+    },
+    "4": {
+      "name": "Puddle Pod",
+      "description": "Slinger (Direct Hit)"
+    },
+    "13": {
+      "name": "Screamer Pod",
+      "description": ""
+    },
+    "14": {
+      "name": "Screamer Pod",
+      "description": "Deer notice?"
+    },
+    "15": {
+      "name": "Smoke Bomb",
+      "description": "(smoke)"
+    },
+    "16": {
+      "name": "Poison Smoke Bomb",
+      "description": "(smoke)"
+    },
+    "17": {
+      "name": "",
+      "description": "a bomb from MH2 (not exist in MHW)"
+    },
+    "18": {
+      "name": "Tranq Bomb",
+      "description": "(smoke)"
+    },
+    "19": {
+      "name": "Smoke Bomb",
+      "description": "(outside of smoke)"
+    },
+    "21": {
+      "name": "Throwing Knife",
+      "description": "Slinger"
+    },
+    "22": {
+      "name": "Poison Knife",
+      "description": "Slinger"
+    },
+    "23": {
+      "name": "Sleep Knife",
+      "description": "Slinger"
+    },
+    "24": {
+      "name": "Paralysis Knife",
+      "description": "Slinger"
+    },
+    "3": {
+      "name": "Torch Pod",
+      "description": "Slinger"
+    },
+    "27": {
+      "name": "Dung Pod",
+      "description": "Slinger"
+    },
+    "28": {
+      "name": "",
+      "description": "to be delete: Capture Net"
+    },
+    "26": {
+      "name": "Tranq Knife",
+      "description": "Slinger"
+    },
+    "30": {
+      "name": "Bomb Pod",
+      "description": "(EM) Slinger (Explosion)"
+    },
+    "7": {
+      "name": "Torch Pod",
+      "description": "Slinger (Ground Fire)"
+    },
+    "35": {
+      "name": "Boomerang",
+      "description": "(EM) Slinger"
+    },
+    "31": {
+      "name": "Piercing Pod",
+      "description": "(EM) Slinger"
+    },
+    "32": {
+      "name": "Thorn Pod",
+      "description": "(EM) Slinger"
+    },
+    "33": {
+      "name": "Dragon Pod",
+      "description": "(EM) Slinger"
+    },
+    "34": {
+      "name": "Thorn Pod",
+      "description": "(EM) Slinger (Detonations)"
+    },
+    "37": {
+      "name": "Capture Net",
+      "description": "for locus"
+    },
+    "38": {
+      "name": "Capture Net",
+      "description": "hit"
+    },
+    "39": {
+      "name": "Capture Net",
+      "description": "hit on ground"
+    },
+    "40": {
+      "name": "Igni Intensity",
+      "description": ""
+    },
+    "41": {
+      "name": "Igni Intensity",
+      "description": "Lv2"
+    },
+    "45": {
+      "name": "",
+      "description": "Blast explosion?"
+    },
+    "60": {
+      "name": "Hadouken",
+      "description": "Emote（Day1）"
+    },
+    "61": {
+      "name": "Shuriken",
+      "description": "Emote（Day1）"
+    },
+    "64": {
+      "name": "Stone / Redpit",
+      "description": "Slinger Burst"
+    },
+    "65": {
+      "name": "Scatternut / Crystalburst",
+      "description": "Slinger Burst"
+    },
+    "66": {
+      "name": "Brightmoss",
+      "description": "Slinger Burst"
+    },
+    "67": {
+      "name": "Torch Pod",
+      "description": "Slinger Burst"
+    },
+    "68": {
+      "name": "Puddle Pod",
+      "description": "Slinger Burst"
+    },
+    "69": {
+      "name": "Bomb Pod",
+      "description": "Slinger Burst"
+    },
+    "70": {
+      "name": "Piercing Pod",
+      "description": "Slinger Burst"
+    },
+    "71": {
+      "name": "Thorn Pod",
+      "description": "Slinger Burst"
+    },
+    "72": {
+      "name": "Dragon Pod",
+      "description": "Slinger Burst"
+    },
+    "74": {
+      "name": "Throwing Knife",
+      "description": "Slinger Burst"
+    },
+    "75": {
+      "name": "Poison Knife",
+      "description": "Slinger Burst"
+    },
+    "76": {
+      "name": "Sleep Knife",
+      "description": "Slinger Burst"
+    },
+    "77": {
+      "name": "Paralysis Knife",
+      "description": "Slinger Burst"
+    },
+    "85": {
+      "name": "Bomb Pod",
+      "description": "Slinger Burst (pre?)"
+    },
+    "86": {
+      "name": "Dragon Pod",
+      "description": "Slinger Burst (pre?)"
+    },
+    "90": {
+      "name": "Splash Water",
+      "description": "fix"
+    }
+  },
+  "hm\\common\\shell\\collision\\object_DAY1.col": {
+    "0": {
+      "name": "Stone / Redpit",
+      "description": "Slinger (Direct Hit)"
+    },
+    "2": {
+      "name": "Brightmoss",
+      "description": "Slinger (Direct Hit)"
+    },
+    "1": {
+      "name": "Scatternut",
+      "description": "Slinger (Direct Hit)"
+    },
+    "12": {
+      "name": "Flash Pod",
+      "description": "Slinger (Direct Hit)"
+    },
+    "6": {
+      "name": "Brightmoss",
+      "description": "Slinger (Ground Hit)"
+    },
+    "5": {
+      "name": "Scatternut / Crystalburst",
+      "description": "Slinger (Ground Hit)"
+    },
+    "29": {
+      "name": "Bomb Pod",
+      "description": "(EM) Slinger (Initial Hit)"
+    },
+    "9": {
+      "name": "Torch Pod",
+      "description": "(EM)Slinger sound range"
+    },
+    "4": {
+      "name": "Puddle Pod",
+      "description": "Slinger (Direct Hit)"
+    },
+    "13": {
+      "name": "Screamer Pod",
+      "description": ""
+    },
+    "14": {
+      "name": "Screamer Pod",
+      "description": "Deer notice?"
+    },
+    "15": {
+      "name": "Smoke Bomb",
+      "description": "(smoke)"
+    },
+    "16": {
+      "name": "Poison Smoke Bomb",
+      "description": "(smoke)"
+    },
+    "17": {
+      "name": "",
+      "description": "a bomb from MH2 (not exist in MHW)"
+    },
+    "18": {
+      "name": "Tranq Bomb",
+      "description": "(smoke)"
+    },
+    "19": {
+      "name": "Smoke Bomb",
+      "description": "(outside of smoke)"
+    },
+    "21": {
+      "name": "Throwing Knife",
+      "description": "Slinger"
+    },
+    "22": {
+      "name": "Poison Knife",
+      "description": "Slinger"
+    },
+    "23": {
+      "name": "Sleep Knife",
+      "description": "Slinger"
+    },
+    "24": {
+      "name": "Paralysis Knife",
+      "description": "Slinger"
+    },
+    "3": {
+      "name": "Torch Pod",
+      "description": "Slinger"
+    },
+    "27": {
+      "name": "Dung Pod",
+      "description": "Slinger"
+    },
+    "28": {
+      "name": "",
+      "description": "to be delete: Capture Net"
+    },
+    "26": {
+      "name": "Tranq Knife",
+      "description": "Slinger"
+    },
+    "30": {
+      "name": "Bomb Pod",
+      "description": "(EM) Slinger (Explosion)"
+    },
+    "7": {
+      "name": "Torch Pod",
+      "description": "Slinger (Ground Fire)"
+    },
+    "35": {
+      "name": "Boomerang",
+      "description": "(EM) Slinger"
+    },
+    "31": {
+      "name": "Piercing Pod",
+      "description": "(EM) Slinger"
+    },
+    "32": {
+      "name": "Thorn Pod",
+      "description": "(EM) Slinger"
+    },
+    "33": {
+      "name": "Dragon Pod",
+      "description": "(EM) Slinger"
+    },
+    "34": {
+      "name": "Thorn Pod",
+      "description": "(EM) Slinger (Detonations)"
+    },
+    "37": {
+      "name": "Capture Net",
+      "description": "for locus"
+    },
+    "38": {
+      "name": "Capture Net",
+      "description": "hit"
+    },
+    "39": {
+      "name": "Capture Net",
+      "description": "hit on ground"
+    },
+    "45": {
+      "name": "",
+      "description": "Blast explosion?"
+    },
+    "60": {
+      "name": "Hadouken",
+      "description": "Emote（Day1）"
+    }
+  },
+  "hm\\common\\shell\\collision\\object_def.col": {
+    "0": {
+      "name": "Stone / Redpit",
+      "description": "Slinger (Direct Hit)"
+    },
+    "2": {
+      "name": "Brightmoss",
+      "description": "Slinger (Direct Hit)"
+    },
+    "1": {
+      "name": "Scatternut",
+      "description": "Slinger (Direct Hit)"
+    },
+    "12": {
+      "name": "Flash Pod",
+      "description": "Slinger (Direct Hit)"
+    },
+    "6": {
+      "name": "Brightmoss",
+      "description": "Slinger (Ground Hit)"
+    },
+    "5": {
+      "name": "Scatternut / Crystalburst",
+      "description": "Slinger (Ground Hit)"
+    },
+    "29": {
+      "name": "Bomb Pod",
+      "description": "(EM) Slinger (Initial Hit)"
+    },
+    "9": {
+      "name": "Torch Pod",
+      "description": "(EM)Slinger sound range"
+    },
+    "4": {
+      "name": "Puddle Pod",
+      "description": "Slinger (Direct Hit)"
+    },
+    "13": {
+      "name": "Screamer Pod",
+      "description": ""
+    },
+    "14": {
+      "name": "Screamer Pod",
+      "description": "Deer notice?"
+    },
+    "15": {
+      "name": "Smoke Bomb",
+      "description": "(smoke)"
+    },
+    "16": {
+      "name": "Poison Smoke Bomb",
+      "description": "(smoke)"
+    },
+    "17": {
+      "name": "",
+      "description": "a bomb from MH2 (not exist in MHW)"
+    },
+    "18": {
+      "name": "Tranq Bomb",
+      "description": "(smoke)"
+    },
+    "19": {
+      "name": "Smoke Bomb",
+      "description": "(outside of smoke)"
+    },
+    "21": {
+      "name": "Throwing Knife",
+      "description": "Slinger"
+    },
+    "22": {
+      "name": "Poison Knife",
+      "description": "Slinger"
+    },
+    "23": {
+      "name": "Sleep Knife",
+      "description": "Slinger"
+    },
+    "24": {
+      "name": "Paralysis Knife",
+      "description": "Slinger"
+    },
+    "3": {
+      "name": "Torch Pod",
+      "description": "Slinger"
+    },
+    "27": {
+      "name": "Dung Pod",
+      "description": "Slinger"
+    },
+    "28": {
+      "name": "",
+      "description": "to be delete: Capture Net"
+    },
+    "26": {
+      "name": "Tranq Knife",
+      "description": "Slinger"
+    },
+    "30": {
+      "name": "Bomb Pod",
+      "description": "(EM) Slinger (Explosion)"
+    },
+    "7": {
+      "name": "Torch Pod",
+      "description": "Slinger (Ground Fire)"
+    },
+    "35": {
+      "name": "Boomerang",
+      "description": "(EM) Slinger"
+    },
+    "31": {
+      "name": "Piercing Pod",
+      "description": "(EM) Slinger"
+    },
+    "32": {
+      "name": "Thorn Pod",
+      "description": "(EM) Slinger"
+    },
+    "33": {
+      "name": "Dragon Pod",
+      "description": "(EM) Slinger"
+    },
+    "34": {
+      "name": "Thorn Pod",
+      "description": "(EM) Slinger (Detonations)"
+    },
+    "37": {
+      "name": "Capture Net",
+      "description": "for locus"
+    },
+    "38": {
+      "name": "Capture Net",
+      "description": "hit"
+    },
+    "39": {
+      "name": "Capture Net",
+      "description": "hit on ground"
+    },
+    "45": {
+      "name": "",
+      "description": "Blast explosion?"
+    },
+    "50": {
+      "name": "",
+      "description": "Slinger? Stone / Redpit enhance?"
+    }
+  },
+  "hm_attack.col": {
+    "0": {
+      "name": "",
+      "description": "kick"
+    },
+    "1": {
+      "name": "",
+      "description": "trigger Environmental hazard"
+    },
+    "2": {
+      "name": "",
+      "description": "Environmental hazard damage notice"
+    },
+    "3": {
+      "name": "",
+      "description": "[Mounting] [Head] (knife attack 1)"
+    },
+    "4": {
+      "name": "",
+      "description": "[Mounting] [Body] (knife attack 1)"
+    },
+    "5": {
+      "name": "",
+      "description": "[Mounting] [Tail] (knife attack 1)"
+    },
+    "6": {
+      "name": "",
+      "description": "[Mounting] [Head] (knife attack 2)"
+    },
+    "7": {
+      "name": "",
+      "description": "[Mounting] [Body] (knife attack 2)"
+    },
+    "8": {
+      "name": "",
+      "description": "[Mounting] [Tail] (knife attack 2)"
+    },
+    "9": {
+      "name": "",
+      "description": "[Mounting] [Head] (knife attack 3)"
+    },
+    "10": {
+      "name": "",
+      "description": "[Mounting] [Body] (knife attack 3)"
+    },
+    "11": {
+      "name": "",
+      "description": "[Mounting] [Tail] (knife attack 3)"
+    },
+    "13": {
+      "name": "",
+      "description": "Slinger Burst???"
+    },
+    "15": {
+      "name": "",
+      "description": "knife attack 1 on wall "
+    },
+    "16": {
+      "name": "",
+      "description": "knife attack 2 on wall"
+    },
+    "17": {
+      "name": "",
+      "description": "knife attack 3 on wall"
+    },
+    "20": {
+      "name": "Shoryuken",
+      "description": "（Day1）"
+    },
+    "21": {
+      "name": "Sumo Slap",
+      "description": "right（Day1）"
+    },
+    "22": {
+      "name": "Sumo Slap",
+      "description": "left（Day1）"
+    },
+    "25": {
+      "name": "DMC Dual Guns",
+      "description": "left (TU2)"
+    },
+    "26": {
+      "name": "DMC Dual Guns",
+      "description": "right (TU2)"
+    },
+    "30": {
+      "name": "Dragoon Jump",
+      "description": "(TU4)"
+    },
+    "33": {
+      "name": "Zombie Bite",
+      "description": "(ver11.5 Slugger)"
+    }
+  },
   "wp00.col": {
     "0": {
       "name": "Overhead Slash",
@@ -518,7 +1126,7 @@
     },
     "53": {
       "name": "Perfect Rush III",
-      "description": "\"(2nd Hit"
+      "description": "(2nd Hit Failed)"
     }
   },
   "wp01_01.col": {
@@ -668,35 +1276,35 @@
     },
     "28": {
       "name": "Spinning Blade Dance",
-      "description": "Finisher (L1)"
+      "description": "Finisher (L1) (after Heavenly Blade Dance Finisher)"
     },
     "29": {
       "name": "Spinning Blade Dance",
-      "description": "Finisher (L2)"
+      "description": "Finisher (L2) (after Heavenly Blade Dance Finisher)"
     },
     "30": {
       "name": "Spinning Blade Dance",
-      "description": "Finisher (R1)"
+      "description": "Finisher (R1) (after Heavenly Blade Dance Finisher)"
     },
     "31": {
       "name": "Spinning Blade Dance",
-      "description": "Finisher (R2)"
+      "description": "Finisher (R2) (after Heavenly Blade Dance Finisher)"
     },
     "33": {
-      "name": "",
-      "description": "guess dummy"
+      "name": "Spinning Blade Dance",
+      "description": "Finisher (L1) (after Mid Air Blade Dance Finisher)"
     },
     "34": {
-      "name": "",
-      "description": "guess dummy"
+      "name": "Spinning Blade Dance",
+      "description": "Finisher (L2) (after Mid Air Blade Dance Finisher)"
     },
     "35": {
-      "name": "",
-      "description": "guess dummy"
+      "name": "Spinning Blade Dance",
+      "description": "Finisher (R1) (after Mid Air Blade Dance Finisher)"
     },
     "36": {
-      "name": "",
-      "description": "guess dummy"
+      "name": "Spinning Blade Dance",
+      "description": "Finisher (R2) (after Mid Air Blade Dance Finisher)"
     },
     "38": {
       "name": "Demon Flurry",
@@ -899,12 +1507,12 @@
       "description": "(After Demon Flurry Rush)"
     },
     "110": {
-      "name": "",
-      "description": "guess dummy"
+      "name": "Lunging Strike",
+      "description": "(performed leftward) (L1)"
     },
     "111": {
-      "name": "",
-      "description": "guess dummy"
+      "name": "Lunging Strike",
+      "description": "(performed leftward) (R1)"
     },
     "112": {
       "name": "Turn Slash",
@@ -1024,7 +1632,7 @@
     },
     "155": {
       "name": "Weapon Attack",
-      "description": "\"(L1"
+      "description": "(L1 R1)"
     },
     "156": {
       "name": "Weapon Attack",
@@ -1032,19 +1640,19 @@
     },
     "157": {
       "name": "Weapon Attack",
-      "description": "(L2)"
+      "description": "(L Repeated)"
     },
     "158": {
       "name": "Weapon Attack",
-      "description": "(R3)"
+      "description": "(R Repeated)"
     },
     "159": {
       "name": "Weapon Attack",
-      "description": "(L Repeated)"
+      "description": "(L2)"
     },
     "160": {
       "name": "Weapon Attack",
-      "description": "(R Repeated)"
+      "description": "(R3)"
     },
     "161": {
       "name": "Spinning Rising Slash",
@@ -1111,16 +1719,16 @@
       "description": ""
     },
     "2": {
-      "name": "Jumping Spirit Blade",
-      "description": "(no gauge)"
+      "name": "",
+      "description": "guess dummy"
     },
     "3": {
       "name": "Jumping Spirit Blade II",
       "description": "(1st Hit)"
     },
     "4": {
-      "name": "Jumping Spirit Blade II",
-      "description": "(1st Hit) (no gauge)"
+      "name": "",
+      "description": "guess dummy"
     },
     "5": {
       "name": "",
@@ -1131,8 +1739,8 @@
       "description": ""
     },
     "7": {
-      "name": "Spirit Jumping Slash",
-      "description": "(no gauge)"
+      "name": "",
+      "description": "guess dummy"
     },
     "8": {
       "name": "Step Slash",
@@ -1147,8 +1755,8 @@
       "description": ""
     },
     "11": {
-      "name": "Thrust",
-      "description": "(between Spirit Blade)"
+      "name": "",
+      "description": "guess dummy"
     },
     "12": {
       "name": "Rising Slash",
@@ -1167,8 +1775,8 @@
       "description": ""
     },
     "16": {
-      "name": "Spirit Blade I",
-      "description": "(no gauge)"
+      "name": "",
+      "description": "guess dummy"
     },
     "17": {
       "name": "Spirit Blade II",
@@ -1187,8 +1795,8 @@
       "description": "(2nd Hit)"
     },
     "21": {
-      "name": "Jumping Spirit Blade II",
-      "description": "(2nd Hit) (no gauge)"
+      "name": "",
+      "description": "guess dummy"
     },
     "23": {
       "name": "Spirit Blade III",
@@ -1259,7 +1867,7 @@
       "description": "guess dummy"
     },
     "41": {
-      "name": "",
+      "name": "Spirit Storm",
       "description": "[Mounting] [Head] (Finisher 2)"
     },
     "43": {
@@ -2342,11 +2950,11 @@
     },
     "26": {
       "name": "Axe: Super Amped Element Discharge",
-      "description": "\"(1st Hit"
+      "description": "(1st Hit No Phials)"
     },
     "27": {
       "name": "Axe: Super Amped Element Discharge",
-      "description": "\"(2nd Hit"
+      "description": "(2nd Hit No Phials)"
     },
     "28": {
       "name": "Sword: Sliding Slash",

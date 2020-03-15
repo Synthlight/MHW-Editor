@@ -1,0 +1,36 @@
+﻿Move_Id,untranslate,translated,description
+0,キック,,kick
+1,ギミック触る,,trigger Environmental hazard
+2,ギミックダメ通知,,Environmental hazard damage notice
+3,頭乗りナイフ攻1,,[Mounting] [Head] (knife attack 1)
+4,背中乗りナイフ攻1,,[Mounting] [Body] (knife attack 1)
+5,尻尾乗りナイフ攻1,,[Mounting] [Tail] (knife attack 1)
+6,頭乗りナイフ攻2,,[Mounting] [Head] (knife attack 2)
+7,背中乗りナイフ攻2,,[Mounting] [Body] (knife attack 2)
+8,尻尾乗りナイフ攻2,,[Mounting] [Tail] (knife attack 2)
+9,頭乗りナイフ攻3,,[Mounting] [Head] (knife attack 3)
+10,背中乗りナイフ攻3,,[Mounting] [Body] (knife attack 3)
+11,尻尾乗りナイフ攻3,,[Mounting] [Tail] (knife attack 3)
+12,,,
+13,叩きつけ投げられやられ,,Slinger Burst???
+14,,,
+15,壁ナイフ攻撃1,,knife attack 1 on wall 
+16,壁ナイフ攻撃2,,knife attack 2 on wall
+17,壁ナイフ攻撃3,,knife attack 3 on wall
+18,,,
+19,,,
+20,昇竜拳（Day1）,Shoryuken,（Day1）
+21,つっぱり右（Day1）,Sumo Slap,right（Day1）
+22,つっぱり左（Day1）,Sumo Slap,left（Day1）
+23,,,
+24,,,
+25,DMCエボアボ左(TU2),DMC Dual Guns,left (TU2)
+26,DMCエボアボ右(TU2),DMC Dual Guns,right (TU2)
+27,,,
+28,,,
+29,,,
+30,竜騎士ジャンプ(TU4),Dragoon Jump,(TU4)
+31,,,
+32,,,
+33,ゾンビジェスチャー噛みつき(ver11.5 Slugger),Zombie Bite,(ver11.5 Slugger)
+34,ゾンビジェスチャー噛みつき(ゾンビ中　ver11.5 Slugger),Zombie Bite,（zombie mode）(ver11.5 Slugger)

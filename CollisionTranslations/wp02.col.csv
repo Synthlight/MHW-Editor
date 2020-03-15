@@ -27,15 +27,15 @@
 25,スライディング斬りR（二段目）,Sliding Slash,(R2)
 26,,,
 27,,,
-28,空中回転乱舞着地L1,Spinning Blade Dance,Finisher (L1)
-29,空中回転乱舞着地L2,Spinning Blade Dance,Finisher (L2)
-30,空中回転乱舞着地R1,Spinning Blade Dance,Finisher (R1)
-31,空中回転乱舞着地R2,Spinning Blade Dance,Finisher (R2)
+28,空中回転乱舞着地L1,Spinning Blade Dance,Finisher (L1) (after Heavenly Blade Dance Finisher)
+29,空中回転乱舞着地L2,Spinning Blade Dance,Finisher (L2) (after Heavenly Blade Dance Finisher)
+30,空中回転乱舞着地R1,Spinning Blade Dance,Finisher (R1) (after Heavenly Blade Dance Finisher)
+31,空中回転乱舞着地R2,Spinning Blade Dance,Finisher (R2) (after Heavenly Blade Dance Finisher)
 32,,,
-33,這いスピン着地L1,,guess dummy
-34,這いスピン着地L2,,guess dummy
-35,這いスピン着地R1,,guess dummy
-36,這いスピン着地R2,,guess dummy
+33,這いスピン着地L1,Spinning Blade Dance,Finisher (L1) (after Mid Air Blade Dance Finisher)
+34,這いスピン着地L2,Spinning Blade Dance,Finisher (L2) (after Mid Air Blade Dance Finisher)
+35,這いスピン着地R1,Spinning Blade Dance,Finisher (R1) (after Mid Air Blade Dance Finisher)
+36,這いスピン着地R2,Spinning Blade Dance,Finisher (R2) (after Mid Air Blade Dance Finisher)
 37,,,
 38,鬼人連斬L（一段目）,Demon Flurry,(L1)
 39,鬼人連斬L（二段目）,Demon Flurry,(L2)
@@ -109,10 +109,10 @@
 107,,,
 108,,,
 109,鬼人順手斬り上げ,Rising Slash,(After Demon Flurry Rush)
-110,右移動斬りL,,guess dummy
-111,右移動斬りR,,guess dummy
-110,左移動斬りL,,guess dummy
-111,左移動斬りR,,guess dummy
+110,右移動斬りL,Lunging Strike,(performed rightward) (L1)
+111,右移動斬りR,Lunging Strike,(performed rightward) (R1)
+110,左移動斬りL,Lunging Strike,(performed leftward) (L1)
+111,左移動斬りR,Lunging Strike,(performed leftward) (R1)
 112,後移動斬りL,Turn Slash,(L1)
 113,後移動斬りR,Turn Slash,(R1)
 114,,,
@@ -156,11 +156,11 @@
 152,,,
 153,,,
 154,,,
-155,クロー開始L,Weapon Attack,"(L1, R1)"
+155,クロー開始L,Weapon Attack,(L1 R1)
 156,クロー開始R,Weapon Attack,(R2)
-157,クロースピンL,Weapon Attack,(L2)
-158,クロースピンR,Weapon Attack,(R3)
-159,クロースピンL前,Weapon Attack,(L Repeated)
-160,クロースピンR前,Weapon Attack,(R Repeated)
+157,クロースピンL,Weapon Attack,(L Repeated)
+158,クロースピンR,Weapon Attack,(R Repeated)
+159,クロースピンL前,Weapon Attack,(L2)
+160,クロースピンR前,Weapon Attack,(R3)
 161,クロー開始L（特殊）,Spinning Rising Slash,(L1)
 162,クロー開始R（特殊）,Spinning Rising Slash,(R1)

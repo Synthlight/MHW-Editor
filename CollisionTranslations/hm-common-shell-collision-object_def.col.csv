@@ -1,0 +1,45 @@
+﻿Move_Id,untranslate,translated,description
+0,スリンガー通常弾・石,Stone / Redpit,Slinger (Direct Hit)
+0,スリンガー通常弾・赤い実,Stone / Redpit,Slinger (Direct Hit)
+2,スリンガー光源弾・ヒカリゴケ,Brightmoss,Slinger (Direct Hit)
+1,スリンガー爆裂弾・クルミ・弾,Scatternut,Slinger (Direct Hit)
+12,閃光玉,Flash Pod,Slinger (Direct Hit)
+6,スリンガー光源弾・ヒカリゴケ・着弾,Brightmoss,Slinger (Ground Hit)
+5,スリンガー爆裂弾・クルミ・着弾,Scatternut / Crystalburst,Slinger (Ground Hit)
+29,EMスリンガー爆発弾・弾,Bomb Pod,(EM) Slinger (Initial Hit)
+9,スリンガー通常弾・石・＆ナイフ通常＿音,,Stone Sound
+9,スリンガー通常弾・赤い実・音,,Redpit Sound
+9,スリンガー爆裂弾・クルミ＆ナイフ閃光＆音爆・音,,Scatternut/Crystalburst/knife flash/Screamer Pod Sound
+9,スリンガー光源弾・ヒカリゴケ・音,,Brightmoss Sound
+4,スリンガー水流弾,Puddle Pod,Slinger (Direct Hit)
+13,音爆弾,Screamer Pod,
+14,音爆弾・ディア検知,Screamer Pod,Deer notice?
+15,けむり玉(煙),Smoke Bomb,(smoke)
+16,毒けむり玉(煙),Poison Smoke Bomb,(smoke)
+17,消臭玉(煙),,a bomb from MH2 (not exist in MHW)
+18,捕獲玉(煙),Tranq Bomb,(smoke)
+19,けむり玉(煙外側),Smoke Bomb,(outside of smoke)
+21,ナイフ(通常),Throwing Knife,Slinger
+22,ナイフ(毒),Poison Knife,Slinger
+23,ナイフ(睡眠),Sleep Knife,Slinger
+24,ナイフ(麻痺),Paralysis Knife,Slinger
+25,ナイフ(爆音),,
+3,スリンガー火炎弾・弾,Torch Pod,Slinger
+27,肥やし,Dung Pod,Slinger
+28,削除予定：虫網,,to be delete: Capture Net
+26,スリンガー(捕獲),Tranq Knife,Slinger
+30,EMスリンガー弾・爆発弾・爆発,Bomb Pod,(EM) Slinger (Explosion)
+7,スリンガー火炎弾・着弾,Torch Pod,Slinger (Ground Fire)
+9,スリンガー火炎弾・音,Torch Pod,Slinger sound
+9,EMスリンガー弾・音範囲,Torch Pod,(EM)Slinger sound range
+35,ブーメラン,Boomerang,(EM) Slinger
+31,EMスリンガー弾・貫通弾・弾,Piercing Pod,(EM) Slinger
+32,EMスリンガー弾・打撃弾・弾,Thorn Pod,(EM) Slinger
+33,EMスリンガー弾・滅龍弾・弾,Dragon Pod,(EM) Slinger
+34,EMスリンガー弾・打撃弾・爆発,Thorn Pod,(EM) Slinger (Detonations)
+37,虫網（軌道用）,Capture Net,for locus
+38,虫網ヒット,Capture Net,hit
+39,虫網ヒット着地後,Capture Net,hit on ground
+45,爆破やられ爆発,,Blast explosion?
+50,スリ_通常弾強化,,Slinger? Stone / Redpit enhance?
+61,手裏剣（Day1）,Shuriken,Emote（Day1）

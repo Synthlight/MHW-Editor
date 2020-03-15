@@ -25,8 +25,8 @@
 23,斧：超高出力属性解放斬り（一段目）　ビン有り,Axe: Super Amped Element Discharge,(1st Hit)
 24,斧：超高出力属性解放斬り（二段目）　ビン有り,Axe: Super Amped Element Discharge,(2nd Hit)
 25,斧：超高出力属性解放斬り（三段目）　ビン有り,Axe: Super Amped Element Discharge,(3rd Hit)
-26,斧：超高出力属性解放斬り（一段目）　ビン無し,Axe: Super Amped Element Discharge,"(1st Hit, No Phials)"
-27,斧：超高出力属性解放斬り（二段目）　ビン無し,Axe: Super Amped Element Discharge,"(2nd Hit, No Phials)"
+26,斧：超高出力属性解放斬り（一段目）　ビン無し,Axe: Super Amped Element Discharge,(1st Hit No Phials)
+27,斧：超高出力属性解放斬り（二段目）　ビン無し,Axe: Super Amped Element Discharge,(2nd Hit No Phials)
 28,剣：スライディング斬り１,Sword: Sliding Slash,(1st Hit)
 29,剣：スライディング斬り２,Sword: Sliding Slash,(2nd Hit)
 30,乗り攻撃：頭1,Super Amped Element Discharge,[Mounting] [Head] (1st Hit)
@@ -43,4 +43,4 @@
 41,斧：属性充填斬り,Savage Axe Slash,
 42,,,
 43,斧強化時連続ヒット,Power Axe Ticks,
-44,斧強化時連続ヒット,Power Axe Ticks,"(AED, SAED only)"
+44,斧強化時連続ヒット,Power Axe Ticks,(AED SAED only)
