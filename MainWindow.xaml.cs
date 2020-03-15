@@ -860,6 +860,11 @@ namespace MHW_Editor {
 
             for (var i = 0; i < count; i++) {
                 var position = dat.BaseStream.Position;
+
+                if (position + structSize > dat.BaseStream.Length) {
+                    throw new IOException("Malformed file. Entry count goes past the end of the file.");
+                }
+
                 var buff = dat.ReadBytes((int) structSize);
 
                 object obj;
