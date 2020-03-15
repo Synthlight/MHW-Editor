@@ -7,7 +7,7 @@ using MHW_Template.Models;
 
 namespace MHW_Editor.PlData {
     public partial class PlSkillParam {
-        public const uint StructSize = 2256;
+        public const uint StructSize = 2400;
         public const ulong InitialOffset = 0;
         public const long EntryCountOffset = -1;
         public const string EncryptionKey = "j1P15gEkgVa7NdFxiqwCPitykHctY2nZPjSaElvqb0eSwcLO1cOlTqqv";

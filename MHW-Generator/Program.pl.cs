@@ -826,7 +826,7 @@ namespace MHW_Generator {
             });
 
             GeneratePlDataProps("MHW_Editor.PlData", "PlSkillParam", new MhwStructData { // .plsp
-                size = 2256,
+                size = 2400,
                 offsetInitial = 0,
                 entryCountOffset = -1,
                 uniqueIdFormula = "0",
