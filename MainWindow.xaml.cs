@@ -1113,6 +1113,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".em104exp")) return typeof(AwakenedExp);
             if (fileName.EndsWith(".em104lb")) return typeof(AwakenedLimitBreak);
             if (fileName.EndsWith(".em104lbr")) return typeof(AwakenedLimitBreakR);
+            if (fileName.EndsWith(".em104wcd")) return typeof(AwakenedWpCustom);
             if (fileName.EndsWith(".emst")) return typeof(EnemySort);
             if (fileName.EndsWith(".eq_crt")) return typeof(EqCrt);
             if (fileName.EndsWith(".eq_cus")) return typeof(EqCus);

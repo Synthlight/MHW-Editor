@@ -169,6 +169,7 @@ namespace MHW_Editor {
             {"em104_limit_break.em104lb", 6130},
             {"em104_limit_break_recipe.em104lbr", 4634},
             {"em104_tail.col", 296},
+            {"em104_wp_custom.em104wcd", 610},
             {"em104_wp_exp.em104exp", 84},
             {"em105.col", 29833},
             {"em105.dtt_agr", 144},
