@@ -45,6 +45,7 @@ namespace MHW_Name_Extractor {
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\ot_weapon_{lang}.gmd", $@"{Global.ASSETS_ROOT}\OtomoData\{lang}_otomo_weaponData.json"); // .owp_dat
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\rod_insect_{lang}.gmd", $@"{Global.ASSETS_ROOT}\InsectData\{lang}_insectData.json"); // .rod_inse
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\a_skill_{lang}.gmd", $@"{Global.ASSETS_ROOT}\MantleData\{lang}_mantleData.json"); // .rod_inse
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\ew_limit_break_{lang}.gmd", $@"{Global.ASSETS_ROOT}\AwakeningData\{lang}_awakeningData.json"); // .em104lb/r
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\skill_pt_{lang}.gmd", $@"{Global.ASSETS_ROOT}\SkillData\{lang}_skillData.json"); // .sgpa
 
                 // Not sure how it connects to skill id.

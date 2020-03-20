@@ -121,6 +121,9 @@
   <data name="ara_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\ara_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ara_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\ara_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ara_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\ara_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -190,6 +193,9 @@
   <data name="chS_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\chs_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="chS_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\chs_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chS_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\chs_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -258,6 +264,9 @@
   </data>
   <data name="chT_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\cht_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\cht_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chT_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\cht_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -331,6 +340,9 @@
   <data name="eng_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\eng_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="eng_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\eng_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="eng_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\eng_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -399,6 +411,9 @@
   </data>
   <data name="fre_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\fre_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\fre_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="fre_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\fre_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -469,6 +484,9 @@
   <data name="ger_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\ger_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ger_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\ger_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ger_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\ger_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -537,6 +555,9 @@
   </data>
   <data name="ita_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\ita_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\ita_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ita_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\ita_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -607,6 +628,9 @@
   <data name="jpn_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\jpn_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="jpn_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\jpn_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="jpn_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\jpn_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -675,6 +699,9 @@
   </data>
   <data name="kor_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\kor_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\kor_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="kor_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\kor_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -745,6 +772,9 @@
   <data name="pol_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\pol_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="pol_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\pol_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="pol_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\pol_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -814,6 +844,9 @@
   <data name="ptB_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\ptb_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ptB_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\ptb_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ptB_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\ptb_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -882,6 +915,9 @@
   </data>
   <data name="rus_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\rus_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\rus_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rus_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\rus_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -954,6 +990,9 @@
   </data>
   <data name="spa_armorData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>armordata\spa_armordata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>awakeningdata\spa_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="spa_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\spa_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

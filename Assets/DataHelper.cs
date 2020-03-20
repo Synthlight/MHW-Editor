@@ -7,6 +7,8 @@ using Newtonsoft.Json;
 namespace MHW_Editor.Assets {
     public static class DataHelper {
         public static readonly LangMap armorData = new LangMap(); // Uses GMD reference.
+        public static readonly LangMap awakeningNames = new LangMap();
+        public static readonly LangMap awakeningDescriptions = new LangMap();
         public static readonly LangMap bountyNames = new LangMap();
         public static readonly LangMap bountyDescriptions = new LangMap();
         public static readonly LangMap itemNames = new LangMap();
@@ -32,6 +34,7 @@ namespace MHW_Editor.Assets {
                 ParseSongData();
                 ParseBountyData(lang);
                 ParseMantleData(lang);
+                ParseAwakeningData(lang);
 
                 armorData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_armorData"));
                 otomoArmorData[lang] = LoadDict<uint, string>(GetAsset($"{lang}_otomo_armorData"));
@@ -113,6 +116,21 @@ namespace MHW_Editor.Assets {
 
                 mantleNames[lang][key] = rawItemData[index];
                 mantleDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
+            }
+        }
+
+        private static void ParseAwakeningData(string lang) {
+            awakeningNames[lang] = new Dictionary<uint, string>();
+            awakeningDescriptions[lang] = new Dictionary<uint, string>();
+
+            var rawAwakeningData = LoadDict<uint, string>(GetAsset($"{lang}_awakeningData"));
+
+            const uint step = 2;
+            for (uint index = 0; index < rawAwakeningData.Count; index += step) {
+                var key = index / step;
+
+                awakeningNames[lang][key] = rawAwakeningData[index];
+                awakeningDescriptions[lang][key] = rawAwakeningData[index + 1].Replace("\r\n", " ");
             }
         }
 

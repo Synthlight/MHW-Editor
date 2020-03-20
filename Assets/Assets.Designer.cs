@@ -73,6 +73,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ara_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("ara_awakeningData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ara_bountyData {
             get {
                 object obj = ResourceManager.GetObject("ara_bountyData", resourceCulture);
@@ -303,6 +313,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] chS_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("chS_awakeningData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] chS_bountyData {
             get {
                 object obj = ResourceManager.GetObject("chS_bountyData", resourceCulture);
@@ -526,6 +546,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] chT_armorData {
             get {
                 object obj = ResourceManager.GetObject("chT_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("chT_awakeningData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -773,6 +803,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] eng_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("eng_awakeningData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] eng_bountyData {
             get {
                 object obj = ResourceManager.GetObject("eng_bountyData", resourceCulture);
@@ -996,6 +1036,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] fre_armorData {
             get {
                 object obj = ResourceManager.GetObject("fre_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("fre_awakeningData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1233,6 +1283,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ger_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("ger_awakeningData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ger_bountyData {
             get {
                 object obj = ResourceManager.GetObject("ger_bountyData", resourceCulture);
@@ -1456,6 +1516,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] ita_armorData {
             get {
                 object obj = ResourceManager.GetObject("ita_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("ita_awakeningData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1693,6 +1763,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] jpn_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("jpn_awakeningData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] jpn_bountyData {
             get {
                 object obj = ResourceManager.GetObject("jpn_bountyData", resourceCulture);
@@ -1916,6 +1996,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] kor_armorData {
             get {
                 object obj = ResourceManager.GetObject("kor_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("kor_awakeningData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -2153,6 +2243,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] pol_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("pol_awakeningData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] pol_bountyData {
             get {
                 object obj = ResourceManager.GetObject("pol_bountyData", resourceCulture);
@@ -2383,6 +2483,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ptB_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("ptB_awakeningData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ptB_bountyData {
             get {
                 object obj = ResourceManager.GetObject("ptB_bountyData", resourceCulture);
@@ -2606,6 +2716,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] rus_armorData {
             get {
                 object obj = ResourceManager.GetObject("rus_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("rus_awakeningData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -2846,6 +2966,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] spa_armorData {
             get {
                 object obj = ResourceManager.GetObject("spa_armorData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_awakeningData {
+            get {
+                object obj = ResourceManager.GetObject("spa_awakeningData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
