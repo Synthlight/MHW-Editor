@@ -166,6 +166,8 @@ namespace MHW_Editor {
             {"em104.col", 58688},
             {"em104.dtt_agr", 144},
             {"em104.itlot", 1760},
+            {"em104_limit_break.em104lb", 6130},
+            {"em104_limit_break_recipe.em104lbr", 4634},
             {"em104_tail.col", 296},
             {"em105.col", 29833},
             {"em105.dtt_agr", 144},

@@ -22,8 +22,8 @@ namespace MHW_Generator {
             GenRanged();
             GenSharpness();
             GenShellTable();
-            GenNewLimitBreakR();
             GenNewLimitBreak();
+            GenNewLimitBreakR();
             GenWeaponWSword();
             GenWeaponWhistle();
             GenWeaponGunLance();
@@ -67,8 +67,73 @@ namespace MHW_Generator {
             GenMonsterEnrage();
             GenRoomFurniture();
             GenAnimalSize();
+            GenAwakenedLimitBreak();
+            GenAwakenedLimitBreakR();
 
             GenCommonPl();
+        }
+
+        private static void GenAwakenedLimitBreak() {
+            GenerateItemProps("MHW_Editor.Weapons", "AwakenedLimitBreak", new MhwStructData { // .em104lb
+                size = 45,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Unk1", 0, typeof(ushort)),
+                    new MhwStructData.Entry("Unk2", 2, typeof(uint)),
+                    new MhwStructData.Entry("Unk3", 6, typeof(uint)),
+                    new MhwStructData.Entry("Unk4", 10, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk5", 11, typeof(ushort)),
+                    new MhwStructData.Entry("Unk6", 13, typeof(ushort)),
+                    new MhwStructData.Entry("Unk7", 15, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk8", 16, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk9", 17, typeof(ushort)),
+                    new MhwStructData.Entry("Unk10", 19, typeof(ushort)),
+                    new MhwStructData.Entry("Unk11", 21, typeof(ushort)),
+                    new MhwStructData.Entry("Unk12", 23, typeof(ushort)),
+                    new MhwStructData.Entry("Unk13", 25, typeof(ushort)),
+                    new MhwStructData.Entry("Unk14", 27, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk15", 28, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk16", 29, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk17", 30, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk18", 31, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk19", 32, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk20", 33, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk21", 34, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk22", 35, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk23", 36, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk24", 37, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk25", 38, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk26", 39, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk27", 40, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Unk28", 44, typeof(byte))
+                }
+            });
+        }
+
+        private static void GenAwakenedLimitBreakR() {
+            GenerateItemProps("MHW_Editor.Weapons", "AwakenedLimitBreakR", new MhwStructData { // .em104lbr
+                size = 34,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Unk1", 0, typeof(ushort)),
+                    new MhwStructData.Entry("Unk2", 2, typeof(ushort)),
+                    new MhwStructData.Entry("Unk3", 8, typeof(ushort)),
+                    new MhwStructData.Entry("Unk4", 10, typeof(ushort)),
+                    new MhwStructData.Entry("Unk5", 12, typeof(ushort)),
+                    new MhwStructData.Entry("Unk6", 14, typeof(ushort)),
+                    new MhwStructData.Entry("Unk7", 16, typeof(ushort)),
+                    new MhwStructData.Entry("Unk8", 18, typeof(ushort)),
+                    new MhwStructData.Entry("Unk9", 20, typeof(ushort)),
+                    new MhwStructData.Entry("Unk10", 22, typeof(ushort)),
+                    new MhwStructData.Entry("Unk11", 24, typeof(ushort)),
+                    new MhwStructData.Entry("Unk12", 28, typeof(ushort)),
+                    new MhwStructData.Entry("Unk13", 33, typeof(byte))
+                }
+            });
         }
 
         private static void GenAnimalSize() {
