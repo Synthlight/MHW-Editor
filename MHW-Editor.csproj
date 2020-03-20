@@ -151,6 +151,7 @@
     <Compile Include="Generated\MHW_Editor\PlData\PlSkillParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\MusicSkill.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\AwakenedExp.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\AwakenedLimitBreak.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\AwakenedLimitBreakR.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\CustomParts.cs" />
@@ -245,6 +246,7 @@
     <Compile Include="Models\MhwItem.cs" />
     <Compile Include="Models\ISlots.cs" />
     <Compile Include="Skills\SkillPointData.cs" />
+    <Compile Include="Weapons\AwakenedExp.cs" />
     <Compile Include="Weapons\AwakenedLimitBreakR.cs" />
     <Compile Include="Weapons\Bow.cs" />
     <Compile Include="Weapons\Collision\Collision.cs" />

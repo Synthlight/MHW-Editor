@@ -69,8 +69,21 @@ namespace MHW_Generator {
             GenAnimalSize();
             GenAwakenedLimitBreak();
             GenAwakenedLimitBreakR();
+            GenAwakenedExp();
 
             GenCommonPl();
+        }
+
+        private static void GenAwakenedExp() {
+            GenerateItemProps("MHW_Editor.Weapons", "AwakenedExp", new MhwStructData { // .em104exp
+                size = 2,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Level}",
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Needed Exp for Next Level", 0, typeof(ushort))
+                }
+            });
         }
 
         private static void GenAwakenedLimitBreak() {
