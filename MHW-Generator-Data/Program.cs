@@ -21,6 +21,9 @@ namespace MHW_Generator_Data {
             CreateSkillDataValueClass();
             GenButtonLocalizationAndIdList();
             GenKnownLengths();
+
+            if (Environment.GetCommandLineArgs().ContainsIgnoreCase("-skipExtract")) return;
+
             GenOutdatedHashes(); // This takes a while as it does extraction.
         }
 

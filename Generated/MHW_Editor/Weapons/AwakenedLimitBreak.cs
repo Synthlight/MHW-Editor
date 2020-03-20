@@ -13,87 +13,94 @@ namespace MHW_Editor.Weapons {
         public const string EncryptionKey = null;
         public override string UniqueId => $"{Index}";
 
-        public const string Unk1_displayName = "Unk1";
-        public const int Unk1_sortIndex = 50;
-        [SortOrder(Unk1_sortIndex)]
-        [DisplayName(Unk1_displayName)]
-        public virtual ushort Unk1 {
+        public const string Skill_Id_displayName = "Skill Id";
+        public const int Skill_Id_sortIndex = 50;
+        [SortOrder(Skill_Id_sortIndex)]
+        [DisplayName(Skill_Id_displayName)]
+        [DataSource(DataSourceType.Skills)]
+        public virtual ushort Skill_Id {
             get => GetData<ushort>(0);
             set {
                 if (GetData<ushort>(0) == value) return;
-                SetData(0, value, nameof(Unk1));
+                SetData(0, value, nameof(Skill_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk1));
+                OnPropertyChanged(nameof(Skill_Id));
+                OnPropertyChanged(nameof(Skill_Id_button));
             }
         }
 
-        public const string Unk2_displayName = "Unk2";
-        public const int Unk2_sortIndex = 100;
-        [SortOrder(Unk2_sortIndex)]
-        [DisplayName(Unk2_displayName)]
-        public virtual uint Unk2 {
+        [SortOrder(Skill_Id_sortIndex)]
+        [DisplayName(Skill_Id_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Skill_Id_button => DataHelper.skillNames[MainWindow.locale].TryGet(Skill_Id).ToStringWithId(Skill_Id);
+
+        public const string Group_Id_displayName = "Group Id";
+        public const int Group_Id_sortIndex = 100;
+        [SortOrder(Group_Id_sortIndex)]
+        [DisplayName(Group_Id_displayName)]
+        public virtual uint Group_Id {
             get => GetData<uint>(2);
             set {
                 if (GetData<uint>(2) == value) return;
-                SetData(2, value, nameof(Unk2));
+                SetData(2, value, nameof(Group_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk2));
+                OnPropertyChanged(nameof(Group_Id));
             }
         }
 
-        public const string Unk3_displayName = "Unk3";
-        public const int Unk3_sortIndex = 150;
-        [SortOrder(Unk3_sortIndex)]
-        [DisplayName(Unk3_displayName)]
-        public virtual uint Unk3 {
+        public const string Rarity_Tier_displayName = "Rarity/Tier";
+        public const int Rarity_Tier_sortIndex = 150;
+        [SortOrder(Rarity_Tier_sortIndex)]
+        [DisplayName(Rarity_Tier_displayName)]
+        public virtual uint Rarity_Tier {
             get => GetData<uint>(6);
             set {
                 if (GetData<uint>(6) == value) return;
-                SetData(6, value, nameof(Unk3));
+                SetData(6, value, nameof(Rarity_Tier));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk3));
+                OnPropertyChanged(nameof(Rarity_Tier));
             }
         }
 
-        public const string Unk4_displayName = "Unk4";
-        public const int Unk4_sortIndex = 200;
-        [SortOrder(Unk4_sortIndex)]
-        [DisplayName(Unk4_displayName)]
-        public virtual bool Unk4 {
+        public const string Has_Upgrade_displayName = "Has Upgrade";
+        public const int Has_Upgrade_sortIndex = 200;
+        [SortOrder(Has_Upgrade_sortIndex)]
+        [DisplayName(Has_Upgrade_displayName)]
+        public virtual bool Has_Upgrade {
             get => (bool) Convert.ToBoolean(GetData<byte>(10));
             set {
                 if (Convert.ToBoolean(GetData<byte>(10)) == value) return;
-                SetData(10, Convert.ToByte(value), nameof(Unk4));
+                SetData(10, Convert.ToByte(value), nameof(Has_Upgrade));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk4));
+                OnPropertyChanged(nameof(Has_Upgrade));
             }
         }
 
-        public const string Unk5_displayName = "Unk5";
-        public const int Unk5_sortIndex = 250;
-        [SortOrder(Unk5_sortIndex)]
-        [DisplayName(Unk5_displayName)]
-        public virtual ushort Unk5 {
+        public const string Previous_Upgrade_Id_When_Max_Lvl_displayName = "Previous Upgrade Id When Max Lvl";
+        public const int Previous_Upgrade_Id_When_Max_Lvl_sortIndex = 250;
+        [SortOrder(Previous_Upgrade_Id_When_Max_Lvl_sortIndex)]
+        [DisplayName(Previous_Upgrade_Id_When_Max_Lvl_displayName)]
+        public virtual ushort Previous_Upgrade_Id_When_Max_Lvl {
             get => GetData<ushort>(11);
             set {
                 if (GetData<ushort>(11) == value) return;
-                SetData(11, value, nameof(Unk5));
+                SetData(11, value, nameof(Previous_Upgrade_Id_When_Max_Lvl));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk5));
+                OnPropertyChanged(nameof(Previous_Upgrade_Id_When_Max_Lvl));
             }
         }
 
-        public const string Unk6_displayName = "Unk6";
-        public const int Unk6_sortIndex = 300;
-        [SortOrder(Unk6_sortIndex)]
-        [DisplayName(Unk6_displayName)]
-        public virtual ushort Unk6 {
+        public const string Next_Upgrade_Id_displayName = "Next Upgrade Id";
+        public const int Next_Upgrade_Id_sortIndex = 300;
+        [SortOrder(Next_Upgrade_Id_sortIndex)]
+        [DisplayName(Next_Upgrade_Id_displayName)]
+        public virtual ushort Next_Upgrade_Id {
             get => GetData<ushort>(13);
             set {
                 if (GetData<ushort>(13) == value) return;
-                SetData(13, value, nameof(Unk6));
+                SetData(13, value, nameof(Next_Upgrade_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk6));
+                OnPropertyChanged(nameof(Next_Upgrade_Id));
             }
         }
 
@@ -125,269 +132,269 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const string Unk9_displayName = "Unk9";
-        public const int Unk9_sortIndex = 450;
-        [SortOrder(Unk9_sortIndex)]
-        [DisplayName(Unk9_displayName)]
-        public virtual ushort Unk9 {
+        public const string Lvl_1_Id_displayName = "Lvl 1 Id";
+        public const int Lvl_1_Id_sortIndex = 450;
+        [SortOrder(Lvl_1_Id_sortIndex)]
+        [DisplayName(Lvl_1_Id_displayName)]
+        public virtual ushort Lvl_1_Id {
             get => GetData<ushort>(17);
             set {
                 if (GetData<ushort>(17) == value) return;
-                SetData(17, value, nameof(Unk9));
+                SetData(17, value, nameof(Lvl_1_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk9));
+                OnPropertyChanged(nameof(Lvl_1_Id));
             }
         }
 
-        public const string Unk10_displayName = "Unk10";
-        public const int Unk10_sortIndex = 500;
-        [SortOrder(Unk10_sortIndex)]
-        [DisplayName(Unk10_displayName)]
-        public virtual ushort Unk10 {
+        public const string Lvl_2_Id_displayName = "Lvl 2 Id";
+        public const int Lvl_2_Id_sortIndex = 500;
+        [SortOrder(Lvl_2_Id_sortIndex)]
+        [DisplayName(Lvl_2_Id_displayName)]
+        public virtual ushort Lvl_2_Id {
             get => GetData<ushort>(19);
             set {
                 if (GetData<ushort>(19) == value) return;
-                SetData(19, value, nameof(Unk10));
+                SetData(19, value, nameof(Lvl_2_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk10));
+                OnPropertyChanged(nameof(Lvl_2_Id));
             }
         }
 
-        public const string Unk11_displayName = "Unk11";
-        public const int Unk11_sortIndex = 550;
-        [SortOrder(Unk11_sortIndex)]
-        [DisplayName(Unk11_displayName)]
-        public virtual ushort Unk11 {
+        public const string Lvl_3_Id_displayName = "Lvl 3 Id";
+        public const int Lvl_3_Id_sortIndex = 550;
+        [SortOrder(Lvl_3_Id_sortIndex)]
+        [DisplayName(Lvl_3_Id_displayName)]
+        public virtual ushort Lvl_3_Id {
             get => GetData<ushort>(21);
             set {
                 if (GetData<ushort>(21) == value) return;
-                SetData(21, value, nameof(Unk11));
+                SetData(21, value, nameof(Lvl_3_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk11));
+                OnPropertyChanged(nameof(Lvl_3_Id));
             }
         }
 
-        public const string Unk12_displayName = "Unk12";
-        public const int Unk12_sortIndex = 600;
-        [SortOrder(Unk12_sortIndex)]
-        [DisplayName(Unk12_displayName)]
-        public virtual ushort Unk12 {
+        public const string Lvl_4_Id_displayName = "Lvl 4 Id";
+        public const int Lvl_4_Id_sortIndex = 600;
+        [SortOrder(Lvl_4_Id_sortIndex)]
+        [DisplayName(Lvl_4_Id_displayName)]
+        public virtual ushort Lvl_4_Id {
             get => GetData<ushort>(23);
             set {
                 if (GetData<ushort>(23) == value) return;
-                SetData(23, value, nameof(Unk12));
+                SetData(23, value, nameof(Lvl_4_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk12));
+                OnPropertyChanged(nameof(Lvl_4_Id));
             }
         }
 
-        public const string Unk13_displayName = "Unk13";
-        public const int Unk13_sortIndex = 650;
-        [SortOrder(Unk13_sortIndex)]
-        [DisplayName(Unk13_displayName)]
-        public virtual ushort Unk13 {
+        public const string Lvl_5_Id_displayName = "Lvl 5 Id";
+        public const int Lvl_5_Id_sortIndex = 650;
+        [SortOrder(Lvl_5_Id_sortIndex)]
+        [DisplayName(Lvl_5_Id_displayName)]
+        public virtual ushort Lvl_5_Id {
             get => GetData<ushort>(25);
             set {
                 if (GetData<ushort>(25) == value) return;
-                SetData(25, value, nameof(Unk13));
+                SetData(25, value, nameof(Lvl_5_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk13));
+                OnPropertyChanged(nameof(Lvl_5_Id));
             }
         }
 
-        public const string Unk14_displayName = "Unk14";
-        public const int Unk14_sortIndex = 700;
-        [SortOrder(Unk14_sortIndex)]
-        [DisplayName(Unk14_displayName)]
-        public virtual bool Unk14 {
+        public const string Works_on_Great_Sword_displayName = "Works on Great Sword";
+        public const int Works_on_Great_Sword_sortIndex = 700;
+        [SortOrder(Works_on_Great_Sword_sortIndex)]
+        [DisplayName(Works_on_Great_Sword_displayName)]
+        public virtual bool Works_on_Great_Sword {
             get => (bool) Convert.ToBoolean(GetData<byte>(27));
             set {
                 if (Convert.ToBoolean(GetData<byte>(27)) == value) return;
-                SetData(27, Convert.ToByte(value), nameof(Unk14));
+                SetData(27, Convert.ToByte(value), nameof(Works_on_Great_Sword));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk14));
+                OnPropertyChanged(nameof(Works_on_Great_Sword));
             }
         }
 
-        public const string Unk15_displayName = "Unk15";
-        public const int Unk15_sortIndex = 750;
-        [SortOrder(Unk15_sortIndex)]
-        [DisplayName(Unk15_displayName)]
-        public virtual bool Unk15 {
+        public const string Works_on_Sword_Shield_displayName = "Works on Sword & Shield";
+        public const int Works_on_Sword_Shield_sortIndex = 750;
+        [SortOrder(Works_on_Sword_Shield_sortIndex)]
+        [DisplayName(Works_on_Sword_Shield_displayName)]
+        public virtual bool Works_on_Sword_Shield {
             get => (bool) Convert.ToBoolean(GetData<byte>(28));
             set {
                 if (Convert.ToBoolean(GetData<byte>(28)) == value) return;
-                SetData(28, Convert.ToByte(value), nameof(Unk15));
+                SetData(28, Convert.ToByte(value), nameof(Works_on_Sword_Shield));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk15));
+                OnPropertyChanged(nameof(Works_on_Sword_Shield));
             }
         }
 
-        public const string Unk16_displayName = "Unk16";
-        public const int Unk16_sortIndex = 800;
-        [SortOrder(Unk16_sortIndex)]
-        [DisplayName(Unk16_displayName)]
-        public virtual bool Unk16 {
+        public const string Works_on_Dual_Blades_displayName = "Works on Dual Blades";
+        public const int Works_on_Dual_Blades_sortIndex = 800;
+        [SortOrder(Works_on_Dual_Blades_sortIndex)]
+        [DisplayName(Works_on_Dual_Blades_displayName)]
+        public virtual bool Works_on_Dual_Blades {
             get => (bool) Convert.ToBoolean(GetData<byte>(29));
             set {
                 if (Convert.ToBoolean(GetData<byte>(29)) == value) return;
-                SetData(29, Convert.ToByte(value), nameof(Unk16));
+                SetData(29, Convert.ToByte(value), nameof(Works_on_Dual_Blades));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk16));
+                OnPropertyChanged(nameof(Works_on_Dual_Blades));
             }
         }
 
-        public const string Unk17_displayName = "Unk17";
-        public const int Unk17_sortIndex = 850;
-        [SortOrder(Unk17_sortIndex)]
-        [DisplayName(Unk17_displayName)]
-        public virtual bool Unk17 {
+        public const string Works_on_Long_Sword_displayName = "Works on Long Sword";
+        public const int Works_on_Long_Sword_sortIndex = 850;
+        [SortOrder(Works_on_Long_Sword_sortIndex)]
+        [DisplayName(Works_on_Long_Sword_displayName)]
+        public virtual bool Works_on_Long_Sword {
             get => (bool) Convert.ToBoolean(GetData<byte>(30));
             set {
                 if (Convert.ToBoolean(GetData<byte>(30)) == value) return;
-                SetData(30, Convert.ToByte(value), nameof(Unk17));
+                SetData(30, Convert.ToByte(value), nameof(Works_on_Long_Sword));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk17));
+                OnPropertyChanged(nameof(Works_on_Long_Sword));
             }
         }
 
-        public const string Unk18_displayName = "Unk18";
-        public const int Unk18_sortIndex = 900;
-        [SortOrder(Unk18_sortIndex)]
-        [DisplayName(Unk18_displayName)]
-        public virtual bool Unk18 {
+        public const string Works_on_Hammer_displayName = "Works on Hammer";
+        public const int Works_on_Hammer_sortIndex = 900;
+        [SortOrder(Works_on_Hammer_sortIndex)]
+        [DisplayName(Works_on_Hammer_displayName)]
+        public virtual bool Works_on_Hammer {
             get => (bool) Convert.ToBoolean(GetData<byte>(31));
             set {
                 if (Convert.ToBoolean(GetData<byte>(31)) == value) return;
-                SetData(31, Convert.ToByte(value), nameof(Unk18));
+                SetData(31, Convert.ToByte(value), nameof(Works_on_Hammer));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk18));
+                OnPropertyChanged(nameof(Works_on_Hammer));
             }
         }
 
-        public const string Unk19_displayName = "Unk19";
-        public const int Unk19_sortIndex = 950;
-        [SortOrder(Unk19_sortIndex)]
-        [DisplayName(Unk19_displayName)]
-        public virtual bool Unk19 {
+        public const string Works_on_Hunting_Horn_displayName = "Works on Hunting Horn";
+        public const int Works_on_Hunting_Horn_sortIndex = 950;
+        [SortOrder(Works_on_Hunting_Horn_sortIndex)]
+        [DisplayName(Works_on_Hunting_Horn_displayName)]
+        public virtual bool Works_on_Hunting_Horn {
             get => (bool) Convert.ToBoolean(GetData<byte>(32));
             set {
                 if (Convert.ToBoolean(GetData<byte>(32)) == value) return;
-                SetData(32, Convert.ToByte(value), nameof(Unk19));
+                SetData(32, Convert.ToByte(value), nameof(Works_on_Hunting_Horn));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk19));
+                OnPropertyChanged(nameof(Works_on_Hunting_Horn));
             }
         }
 
-        public const string Unk20_displayName = "Unk20";
-        public const int Unk20_sortIndex = 1000;
-        [SortOrder(Unk20_sortIndex)]
-        [DisplayName(Unk20_displayName)]
-        public virtual bool Unk20 {
+        public const string Works_on_Lance_displayName = "Works on Lance";
+        public const int Works_on_Lance_sortIndex = 1000;
+        [SortOrder(Works_on_Lance_sortIndex)]
+        [DisplayName(Works_on_Lance_displayName)]
+        public virtual bool Works_on_Lance {
             get => (bool) Convert.ToBoolean(GetData<byte>(33));
             set {
                 if (Convert.ToBoolean(GetData<byte>(33)) == value) return;
-                SetData(33, Convert.ToByte(value), nameof(Unk20));
+                SetData(33, Convert.ToByte(value), nameof(Works_on_Lance));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk20));
+                OnPropertyChanged(nameof(Works_on_Lance));
             }
         }
 
-        public const string Unk21_displayName = "Unk21";
-        public const int Unk21_sortIndex = 1050;
-        [SortOrder(Unk21_sortIndex)]
-        [DisplayName(Unk21_displayName)]
-        public virtual bool Unk21 {
+        public const string Works_on_Gunlance_displayName = "Works on Gunlance";
+        public const int Works_on_Gunlance_sortIndex = 1050;
+        [SortOrder(Works_on_Gunlance_sortIndex)]
+        [DisplayName(Works_on_Gunlance_displayName)]
+        public virtual bool Works_on_Gunlance {
             get => (bool) Convert.ToBoolean(GetData<byte>(34));
             set {
                 if (Convert.ToBoolean(GetData<byte>(34)) == value) return;
-                SetData(34, Convert.ToByte(value), nameof(Unk21));
+                SetData(34, Convert.ToByte(value), nameof(Works_on_Gunlance));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk21));
+                OnPropertyChanged(nameof(Works_on_Gunlance));
             }
         }
 
-        public const string Unk22_displayName = "Unk22";
-        public const int Unk22_sortIndex = 1100;
-        [SortOrder(Unk22_sortIndex)]
-        [DisplayName(Unk22_displayName)]
-        public virtual bool Unk22 {
+        public const string Works_on_Switch_Axe_displayName = "Works on Switch Axe";
+        public const int Works_on_Switch_Axe_sortIndex = 1100;
+        [SortOrder(Works_on_Switch_Axe_sortIndex)]
+        [DisplayName(Works_on_Switch_Axe_displayName)]
+        public virtual bool Works_on_Switch_Axe {
             get => (bool) Convert.ToBoolean(GetData<byte>(35));
             set {
                 if (Convert.ToBoolean(GetData<byte>(35)) == value) return;
-                SetData(35, Convert.ToByte(value), nameof(Unk22));
+                SetData(35, Convert.ToByte(value), nameof(Works_on_Switch_Axe));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk22));
+                OnPropertyChanged(nameof(Works_on_Switch_Axe));
             }
         }
 
-        public const string Unk23_displayName = "Unk23";
-        public const int Unk23_sortIndex = 1150;
-        [SortOrder(Unk23_sortIndex)]
-        [DisplayName(Unk23_displayName)]
-        public virtual bool Unk23 {
+        public const string Works_on_Charge_Blade_displayName = "Works on Charge Blade";
+        public const int Works_on_Charge_Blade_sortIndex = 1150;
+        [SortOrder(Works_on_Charge_Blade_sortIndex)]
+        [DisplayName(Works_on_Charge_Blade_displayName)]
+        public virtual bool Works_on_Charge_Blade {
             get => (bool) Convert.ToBoolean(GetData<byte>(36));
             set {
                 if (Convert.ToBoolean(GetData<byte>(36)) == value) return;
-                SetData(36, Convert.ToByte(value), nameof(Unk23));
+                SetData(36, Convert.ToByte(value), nameof(Works_on_Charge_Blade));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk23));
+                OnPropertyChanged(nameof(Works_on_Charge_Blade));
             }
         }
 
-        public const string Unk24_displayName = "Unk24";
-        public const int Unk24_sortIndex = 1200;
-        [SortOrder(Unk24_sortIndex)]
-        [DisplayName(Unk24_displayName)]
-        public virtual bool Unk24 {
+        public const string Works_on_Insect_Glaive_displayName = "Works on Insect Glaive";
+        public const int Works_on_Insect_Glaive_sortIndex = 1200;
+        [SortOrder(Works_on_Insect_Glaive_sortIndex)]
+        [DisplayName(Works_on_Insect_Glaive_displayName)]
+        public virtual bool Works_on_Insect_Glaive {
             get => (bool) Convert.ToBoolean(GetData<byte>(37));
             set {
                 if (Convert.ToBoolean(GetData<byte>(37)) == value) return;
-                SetData(37, Convert.ToByte(value), nameof(Unk24));
+                SetData(37, Convert.ToByte(value), nameof(Works_on_Insect_Glaive));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk24));
+                OnPropertyChanged(nameof(Works_on_Insect_Glaive));
             }
         }
 
-        public const string Unk25_displayName = "Unk25";
-        public const int Unk25_sortIndex = 1250;
-        [SortOrder(Unk25_sortIndex)]
-        [DisplayName(Unk25_displayName)]
-        public virtual bool Unk25 {
+        public const string Works_on_Bow_displayName = "Works on Bow";
+        public const int Works_on_Bow_sortIndex = 1250;
+        [SortOrder(Works_on_Bow_sortIndex)]
+        [DisplayName(Works_on_Bow_displayName)]
+        public virtual bool Works_on_Bow {
             get => (bool) Convert.ToBoolean(GetData<byte>(38));
             set {
                 if (Convert.ToBoolean(GetData<byte>(38)) == value) return;
-                SetData(38, Convert.ToByte(value), nameof(Unk25));
+                SetData(38, Convert.ToByte(value), nameof(Works_on_Bow));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk25));
+                OnPropertyChanged(nameof(Works_on_Bow));
             }
         }
 
-        public const string Unk26_displayName = "Unk26";
-        public const int Unk26_sortIndex = 1300;
-        [SortOrder(Unk26_sortIndex)]
-        [DisplayName(Unk26_displayName)]
-        public virtual bool Unk26 {
+        public const string Works_on_HBG_displayName = "Works on HBG";
+        public const int Works_on_HBG_sortIndex = 1300;
+        [SortOrder(Works_on_HBG_sortIndex)]
+        [DisplayName(Works_on_HBG_displayName)]
+        public virtual bool Works_on_HBG {
             get => (bool) Convert.ToBoolean(GetData<byte>(39));
             set {
                 if (Convert.ToBoolean(GetData<byte>(39)) == value) return;
-                SetData(39, Convert.ToByte(value), nameof(Unk26));
+                SetData(39, Convert.ToByte(value), nameof(Works_on_HBG));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk26));
+                OnPropertyChanged(nameof(Works_on_HBG));
             }
         }
 
-        public const string Unk27_displayName = "Unk27";
-        public const int Unk27_sortIndex = 1350;
-        [SortOrder(Unk27_sortIndex)]
-        [DisplayName(Unk27_displayName)]
-        public virtual bool Unk27 {
+        public const string Works_on_LBG_displayName = "Works on LBG";
+        public const int Works_on_LBG_sortIndex = 1350;
+        [SortOrder(Works_on_LBG_sortIndex)]
+        [DisplayName(Works_on_LBG_displayName)]
+        public virtual bool Works_on_LBG {
             get => (bool) Convert.ToBoolean(GetData<byte>(40));
             set {
                 if (Convert.ToBoolean(GetData<byte>(40)) == value) return;
-                SetData(40, Convert.ToByte(value), nameof(Unk27));
+                SetData(40, Convert.ToByte(value), nameof(Works_on_LBG));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk27));
+                OnPropertyChanged(nameof(Works_on_LBG));
             }
         }
 

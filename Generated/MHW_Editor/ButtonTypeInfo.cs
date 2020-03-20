@@ -5,6 +5,7 @@ namespace MHW_Editor {
         public static readonly List<string> TYPES_WITH_BUTTONS = new List<string> {
             "Armor",
             "ASkill",
+            "AwakenedLimitBreak",
             "Bounty",
             "Bow",
             "BowGun",
@@ -65,6 +66,7 @@ namespace MHW_Editor {
             "Skill_2_button",
             "Skill_3_button",
             "Skill_button",
+            "Skill_Id_button",
             "Source_Item_Id_button",
             "Unlock_Skill_1_button",
             "Unlock_Skill_2_button",
@@ -103,6 +105,7 @@ namespace MHW_Editor {
             "Skill_2",
             "Skill_3",
             "Skill",
+            "Skill_Id",
             "Source_Item_Id",
             "Unlock_Skill_1",
             "Unlock_Skill_2",

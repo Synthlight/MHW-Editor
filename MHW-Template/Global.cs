@@ -49,6 +49,7 @@ namespace MHW_Template {
             "*.dglt",
             "*.diot",
             "*.dtt_agr",
+            "*.em104exp",
             "*.em104lb",
             "*.em104lbr",
             "*.emst",

@@ -13,176 +13,218 @@ namespace MHW_Editor.Weapons {
         public const string EncryptionKey = null;
         public override string UniqueId => $"{Index}";
 
-        public const string Unk1_displayName = "Unk1";
-        public const int Unk1_sortIndex = 50;
-        [SortOrder(Unk1_sortIndex)]
-        [DisplayName(Unk1_displayName)]
-        public virtual ushort Unk1 {
+        public const string Id_displayName = "Id";
+        public const int Id_sortIndex = 50;
+        [SortOrder(Id_sortIndex)]
+        [DisplayName(Id_displayName)]
+        public virtual ushort Id {
             get => GetData<ushort>(0);
             set {
                 if (GetData<ushort>(0) == value) return;
-                SetData(0, value, nameof(Unk1));
+                SetData(0, value, nameof(Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk1));
+                OnPropertyChanged(nameof(Id));
             }
         }
 
-        public const string Unk2_displayName = "Unk2";
-        public const int Unk2_sortIndex = 100;
-        [SortOrder(Unk2_sortIndex)]
-        [DisplayName(Unk2_displayName)]
-        public virtual ushort Unk2 {
+        public const string Great_Sword_displayName = "Great Sword";
+        public const int Great_Sword_sortIndex = 100;
+        [SortOrder(Great_Sword_sortIndex)]
+        [DisplayName(Great_Sword_displayName)]
+        public virtual ushort Great_Sword {
             get => GetData<ushort>(2);
             set {
                 if (GetData<ushort>(2) == value) return;
-                SetData(2, value, nameof(Unk2));
+                SetData(2, value, nameof(Great_Sword));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk2));
+                OnPropertyChanged(nameof(Great_Sword));
             }
         }
 
-        public const string Unk3_displayName = "Unk3";
-        public const int Unk3_sortIndex = 150;
-        [SortOrder(Unk3_sortIndex)]
-        [DisplayName(Unk3_displayName)]
-        public virtual ushort Unk3 {
+        public const string Sword_Shield_displayName = "Sword & Shield";
+        public const int Sword_Shield_sortIndex = 150;
+        [SortOrder(Sword_Shield_sortIndex)]
+        [DisplayName(Sword_Shield_displayName)]
+        public virtual ushort Sword_Shield {
+            get => GetData<ushort>(4);
+            set {
+                if (GetData<ushort>(4) == value) return;
+                SetData(4, value, nameof(Sword_Shield));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Sword_Shield));
+            }
+        }
+
+        public const string Dual_Blades_displayName = "Dual Blades";
+        public const int Dual_Blades_sortIndex = 200;
+        [SortOrder(Dual_Blades_sortIndex)]
+        [DisplayName(Dual_Blades_displayName)]
+        public virtual ushort Dual_Blades {
+            get => GetData<ushort>(6);
+            set {
+                if (GetData<ushort>(6) == value) return;
+                SetData(6, value, nameof(Dual_Blades));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Dual_Blades));
+            }
+        }
+
+        public const string Long_Sword_displayName = "Long Sword";
+        public const int Long_Sword_sortIndex = 250;
+        [SortOrder(Long_Sword_sortIndex)]
+        [DisplayName(Long_Sword_displayName)]
+        public virtual ushort Long_Sword {
             get => GetData<ushort>(8);
             set {
                 if (GetData<ushort>(8) == value) return;
-                SetData(8, value, nameof(Unk3));
+                SetData(8, value, nameof(Long_Sword));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk3));
+                OnPropertyChanged(nameof(Long_Sword));
             }
         }
 
-        public const string Unk4_displayName = "Unk4";
-        public const int Unk4_sortIndex = 200;
-        [SortOrder(Unk4_sortIndex)]
-        [DisplayName(Unk4_displayName)]
-        public virtual ushort Unk4 {
+        public const string Hammer_displayName = "Hammer";
+        public const int Hammer_sortIndex = 300;
+        [SortOrder(Hammer_sortIndex)]
+        [DisplayName(Hammer_displayName)]
+        public virtual ushort Hammer {
             get => GetData<ushort>(10);
             set {
                 if (GetData<ushort>(10) == value) return;
-                SetData(10, value, nameof(Unk4));
+                SetData(10, value, nameof(Hammer));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk4));
+                OnPropertyChanged(nameof(Hammer));
             }
         }
 
-        public const string Unk5_displayName = "Unk5";
-        public const int Unk5_sortIndex = 250;
-        [SortOrder(Unk5_sortIndex)]
-        [DisplayName(Unk5_displayName)]
-        public virtual ushort Unk5 {
+        public const string Hunting_Horn_displayName = "Hunting Horn";
+        public const int Hunting_Horn_sortIndex = 350;
+        [SortOrder(Hunting_Horn_sortIndex)]
+        [DisplayName(Hunting_Horn_displayName)]
+        public virtual ushort Hunting_Horn {
             get => GetData<ushort>(12);
             set {
                 if (GetData<ushort>(12) == value) return;
-                SetData(12, value, nameof(Unk5));
+                SetData(12, value, nameof(Hunting_Horn));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk5));
+                OnPropertyChanged(nameof(Hunting_Horn));
             }
         }
 
-        public const string Unk6_displayName = "Unk6";
-        public const int Unk6_sortIndex = 300;
-        [SortOrder(Unk6_sortIndex)]
-        [DisplayName(Unk6_displayName)]
-        public virtual ushort Unk6 {
+        public const string Lance_displayName = "Lance";
+        public const int Lance_sortIndex = 400;
+        [SortOrder(Lance_sortIndex)]
+        [DisplayName(Lance_displayName)]
+        public virtual ushort Lance {
             get => GetData<ushort>(14);
             set {
                 if (GetData<ushort>(14) == value) return;
-                SetData(14, value, nameof(Unk6));
+                SetData(14, value, nameof(Lance));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk6));
+                OnPropertyChanged(nameof(Lance));
             }
         }
 
-        public const string Unk7_displayName = "Unk7";
-        public const int Unk7_sortIndex = 350;
-        [SortOrder(Unk7_sortIndex)]
-        [DisplayName(Unk7_displayName)]
-        public virtual ushort Unk7 {
+        public const string Gunlance_displayName = "Gunlance";
+        public const int Gunlance_sortIndex = 450;
+        [SortOrder(Gunlance_sortIndex)]
+        [DisplayName(Gunlance_displayName)]
+        public virtual ushort Gunlance {
             get => GetData<ushort>(16);
             set {
                 if (GetData<ushort>(16) == value) return;
-                SetData(16, value, nameof(Unk7));
+                SetData(16, value, nameof(Gunlance));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk7));
+                OnPropertyChanged(nameof(Gunlance));
             }
         }
 
-        public const string Unk8_displayName = "Unk8";
-        public const int Unk8_sortIndex = 400;
-        [SortOrder(Unk8_sortIndex)]
-        [DisplayName(Unk8_displayName)]
-        public virtual ushort Unk8 {
+        public const string Switch_Axe_displayName = "Switch Axe";
+        public const int Switch_Axe_sortIndex = 500;
+        [SortOrder(Switch_Axe_sortIndex)]
+        [DisplayName(Switch_Axe_displayName)]
+        public virtual ushort Switch_Axe {
             get => GetData<ushort>(18);
             set {
                 if (GetData<ushort>(18) == value) return;
-                SetData(18, value, nameof(Unk8));
+                SetData(18, value, nameof(Switch_Axe));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk8));
+                OnPropertyChanged(nameof(Switch_Axe));
             }
         }
 
-        public const string Unk9_displayName = "Unk9";
-        public const int Unk9_sortIndex = 450;
-        [SortOrder(Unk9_sortIndex)]
-        [DisplayName(Unk9_displayName)]
-        public virtual ushort Unk9 {
+        public const string Charge_Blade_displayName = "Charge Blade";
+        public const int Charge_Blade_sortIndex = 550;
+        [SortOrder(Charge_Blade_sortIndex)]
+        [DisplayName(Charge_Blade_displayName)]
+        public virtual ushort Charge_Blade {
             get => GetData<ushort>(20);
             set {
                 if (GetData<ushort>(20) == value) return;
-                SetData(20, value, nameof(Unk9));
+                SetData(20, value, nameof(Charge_Blade));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk9));
+                OnPropertyChanged(nameof(Charge_Blade));
             }
         }
 
-        public const string Unk10_displayName = "Unk10";
-        public const int Unk10_sortIndex = 500;
-        [SortOrder(Unk10_sortIndex)]
-        [DisplayName(Unk10_displayName)]
-        public virtual ushort Unk10 {
+        public const string Insect_Glaive_displayName = "Insect Glaive";
+        public const int Insect_Glaive_sortIndex = 600;
+        [SortOrder(Insect_Glaive_sortIndex)]
+        [DisplayName(Insect_Glaive_displayName)]
+        public virtual ushort Insect_Glaive {
             get => GetData<ushort>(22);
             set {
                 if (GetData<ushort>(22) == value) return;
-                SetData(22, value, nameof(Unk10));
+                SetData(22, value, nameof(Insect_Glaive));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk10));
+                OnPropertyChanged(nameof(Insect_Glaive));
             }
         }
 
-        public const string Unk11_displayName = "Unk11";
-        public const int Unk11_sortIndex = 550;
-        [SortOrder(Unk11_sortIndex)]
-        [DisplayName(Unk11_displayName)]
-        public virtual ushort Unk11 {
+        public const string Bow_displayName = "Bow";
+        public const int Bow_sortIndex = 650;
+        [SortOrder(Bow_sortIndex)]
+        [DisplayName(Bow_displayName)]
+        public virtual ushort Bow {
             get => GetData<ushort>(24);
             set {
                 if (GetData<ushort>(24) == value) return;
-                SetData(24, value, nameof(Unk11));
+                SetData(24, value, nameof(Bow));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk11));
+                OnPropertyChanged(nameof(Bow));
             }
         }
 
-        public const string Unk12_displayName = "Unk12";
-        public const int Unk12_sortIndex = 600;
-        [SortOrder(Unk12_sortIndex)]
-        [DisplayName(Unk12_displayName)]
-        public virtual ushort Unk12 {
+        public const string HBG_displayName = "HBG";
+        public const int HBG_sortIndex = 700;
+        [SortOrder(HBG_sortIndex)]
+        [DisplayName(HBG_displayName)]
+        public virtual ushort HBG {
+            get => GetData<ushort>(26);
+            set {
+                if (GetData<ushort>(26) == value) return;
+                SetData(26, value, nameof(HBG));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(HBG));
+            }
+        }
+
+        public const string LBG_displayName = "LBG";
+        public const int LBG_sortIndex = 750;
+        [SortOrder(LBG_sortIndex)]
+        [DisplayName(LBG_displayName)]
+        public virtual ushort LBG {
             get => GetData<ushort>(28);
             set {
                 if (GetData<ushort>(28) == value) return;
-                SetData(28, value, nameof(Unk12));
+                SetData(28, value, nameof(LBG));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk12));
+                OnPropertyChanged(nameof(LBG));
             }
         }
 
         public const string Unk13_displayName = "Unk13";
-        public const int Unk13_sortIndex = 650;
+        public const int Unk13_sortIndex = 800;
         [SortOrder(Unk13_sortIndex)]
         [DisplayName(Unk13_displayName)]
         public virtual byte Unk13 {
@@ -195,6 +237,6 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const int lastSortIndex = 700;
+        public const int lastSortIndex = 850;
     }
 }

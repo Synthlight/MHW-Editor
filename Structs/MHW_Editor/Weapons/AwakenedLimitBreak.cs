@@ -5,33 +5,33 @@ namespace MHW_Editor.Weapons {
     // Initial Offset: "10"
     // Unique Id Formula: "{Index}"
     public struct AwakenedLimitBreak {
-        public ushort Unk1; // Offset: 0
-        public uint Unk2; // Offset: 2
-        public uint Unk3; // Offset: 6
-        public byte Unk4; // Offset: 10
-        public ushort Unk5; // Offset: 11
-        public ushort Unk6; // Offset: 13
+        public ushort Skill_Id; // Offset: 0
+        public uint Group_Id; // Offset: 2
+        public uint Rarity_Tier; // Offset: 6
+        public byte Has_Upgrade; // Offset: 10
+        public ushort Previous_Upgrade_Id_When_Max_Lvl; // Offset: 11
+        public ushort Next_Upgrade_Id; // Offset: 13
         public byte Unk7; // Offset: 15
         public byte Unk8; // Offset: 16
-        public ushort Unk9; // Offset: 17
-        public ushort Unk10; // Offset: 19
-        public ushort Unk11; // Offset: 21
-        public ushort Unk12; // Offset: 23
-        public ushort Unk13; // Offset: 25
-        public byte Unk14; // Offset: 27
-        public byte Unk15; // Offset: 28
-        public byte Unk16; // Offset: 29
-        public byte Unk17; // Offset: 30
-        public byte Unk18; // Offset: 31
-        public byte Unk19; // Offset: 32
-        public byte Unk20; // Offset: 33
-        public byte Unk21; // Offset: 34
-        public byte Unk22; // Offset: 35
-        public byte Unk23; // Offset: 36
-        public byte Unk24; // Offset: 37
-        public byte Unk25; // Offset: 38
-        public byte Unk26; // Offset: 39
-        public byte Unk27; // Offset: 40
+        public ushort Lvl_1_Id; // Offset: 17
+        public ushort Lvl_2_Id; // Offset: 19
+        public ushort Lvl_3_Id; // Offset: 21
+        public ushort Lvl_4_Id; // Offset: 23
+        public ushort Lvl_5_Id; // Offset: 25
+        public byte Works_on_Great_Sword; // Offset: 27
+        public byte Works_on_Sword_Shield; // Offset: 28
+        public byte Works_on_Dual_Blades; // Offset: 29
+        public byte Works_on_Long_Sword; // Offset: 30
+        public byte Works_on_Hammer; // Offset: 31
+        public byte Works_on_Hunting_Horn; // Offset: 32
+        public byte Works_on_Lance; // Offset: 33
+        public byte Works_on_Gunlance; // Offset: 34
+        public byte Works_on_Switch_Axe; // Offset: 35
+        public byte Works_on_Charge_Blade; // Offset: 36
+        public byte Works_on_Insect_Glaive; // Offset: 37
+        public byte Works_on_Bow; // Offset: 38
+        public byte Works_on_HBG; // Offset: 39
+        public byte Works_on_LBG; // Offset: 40
         public byte Unk28; // Offset: 44
     }
 }
