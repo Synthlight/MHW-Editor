@@ -171,6 +171,7 @@ namespace MHW_Editor {
             {"em104_tail.col", 296},
             {"em104_wp_custom.em104wcd", 610},
             {"em104_wp_exp.em104exp", 84},
+            {"em104_wp_upgrade.em104wud", 610},
             {"em105.col", 29833},
             {"em105.dtt_agr", 144},
             {"em105.itlot", 1760},
