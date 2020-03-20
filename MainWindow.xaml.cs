@@ -249,15 +249,9 @@ namespace MHW_Editor {
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
                     break;
                 case nameof(SkillDat.Index):
-                    e.Cancel = targetFileType.Is(typeof(Armor),
-                                                 typeof(DecoGradeLottery),
+                    e.Cancel = targetFileType.Is(typeof(DecoGradeLottery),
                                                  typeof(DecoLottery),
-                                                 typeof(Gem),
-                                                 typeof(Melee),
-                                                 typeof(OtomoArmorDat),
-                                                 typeof(OtomoWeaponDat),
-                                                 typeof(Ranged),
-                                                 typeof(RodInsect));
+                                                 typeof(Gem));
                     break;
                 default:
                     e.Cancel = e.PropertyName.EndsWith("Raw");
