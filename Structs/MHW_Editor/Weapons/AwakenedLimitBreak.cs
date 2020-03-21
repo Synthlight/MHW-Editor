@@ -7,11 +7,11 @@ namespace MHW_Editor.Weapons {
     public struct AwakenedLimitBreak {
         public ushort Skill_Id; // Offset: 0
         public uint Group_Id; // Offset: 2
-        public uint Rarity_Tier; // Offset: 6
+        public uint Rarity; // Offset: 6
         public byte Has_Upgrade; // Offset: 10
         public ushort Previous_Upgrade_Id_When_Max_Lvl; // Offset: 11
         public ushort Next_Upgrade_Id; // Offset: 13
-        public byte Unk7; // Offset: 15
+        public byte Can_Stack; // Offset: 15
         public byte Unk8; // Offset: 16
         public ushort Lvl_1_Id; // Offset: 17
         public ushort Lvl_2_Id; // Offset: 19

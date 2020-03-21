@@ -48,17 +48,17 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const string Rarity_Tier_displayName = "Rarity/Tier";
-        public const int Rarity_Tier_sortIndex = 150;
-        [SortOrder(Rarity_Tier_sortIndex)]
-        [DisplayName(Rarity_Tier_displayName)]
-        public virtual uint Rarity_Tier {
+        public const string Rarity_displayName = "Rarity";
+        public const int Rarity_sortIndex = 150;
+        [SortOrder(Rarity_sortIndex)]
+        [DisplayName(Rarity_displayName)]
+        public virtual uint Rarity {
             get => GetData<uint>(6);
             set {
                 if (GetData<uint>(6) == value) return;
-                SetData(6, value, nameof(Rarity_Tier));
+                SetData(6, value, nameof(Rarity));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Rarity_Tier));
+                OnPropertyChanged(nameof(Rarity));
             }
         }
 
@@ -104,17 +104,17 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const string Unk7_displayName = "Unk7";
-        public const int Unk7_sortIndex = 350;
-        [SortOrder(Unk7_sortIndex)]
-        [DisplayName(Unk7_displayName)]
-        public virtual bool Unk7 {
+        public const string Can_Stack_displayName = "Can Stack";
+        public const int Can_Stack_sortIndex = 350;
+        [SortOrder(Can_Stack_sortIndex)]
+        [DisplayName(Can_Stack_displayName)]
+        public virtual bool Can_Stack {
             get => (bool) Convert.ToBoolean(GetData<byte>(15));
             set {
                 if (Convert.ToBoolean(GetData<byte>(15)) == value) return;
-                SetData(15, Convert.ToByte(value), nameof(Unk7));
+                SetData(15, Convert.ToByte(value), nameof(Can_Stack));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk7));
+                OnPropertyChanged(nameof(Can_Stack));
             }
         }
 

@@ -129,11 +129,11 @@ namespace MHW_Generator {
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Skill Id", 0, typeof(ushort), dataSourceType: DataSourceType.Skills),
                     new MhwStructData.Entry("Group Id", 2, typeof(uint)),
-                    new MhwStructData.Entry("Rarity/Tier", 6, typeof(uint)),
+                    new MhwStructData.Entry("Rarity", 6, typeof(uint)),
                     new MhwStructData.Entry("Has Upgrade", 10, typeof(byte), typeof(bool)),
                     new MhwStructData.Entry("Previous Upgrade Id When Max Lvl", 11, typeof(ushort)),
                     new MhwStructData.Entry("Next Upgrade Id", 13, typeof(ushort)),
-                    new MhwStructData.Entry("Unk7", 15, typeof(byte), typeof(bool)),
+                    new MhwStructData.Entry("Can Stack", 15, typeof(byte), typeof(bool)),
                     new MhwStructData.Entry("Unk8", 16, typeof(byte), typeof(bool)),
                     new MhwStructData.Entry("Lvl 1 Id", 17, typeof(ushort)),
                     new MhwStructData.Entry("Lvl 2 Id", 19, typeof(ushort)),
