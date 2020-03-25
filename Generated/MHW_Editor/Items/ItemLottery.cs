@@ -62,17 +62,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Item_1_Unk_displayName = "Item 1 Unk";
-        public const int Item_1_Unk_sortIndex = 200;
-        [SortOrder(Item_1_Unk_sortIndex)]
-        [DisplayName(Item_1_Unk_displayName)]
-        public virtual byte Item_1_Unk {
-            get => GetData<byte>(40);
+        public const string Item_1_Carve_Anim_displayName = "Item 1 Carve Anim";
+        public const int Item_1_Carve_Anim_sortIndex = 200;
+        [SortOrder(Item_1_Carve_Anim_sortIndex)]
+        [DisplayName(Item_1_Carve_Anim_displayName)]
+        public virtual MHW_Template.Items.CarveAnimation Item_1_Carve_Anim {
+            get => (MHW_Template.Items.CarveAnimation) GetData<byte>(40);
             set {
-                if (GetData<byte>(40) == value) return;
-                SetData(40, value, nameof(Item_1_Unk));
+                if ((MHW_Template.Items.CarveAnimation) GetData<byte>(40) == value) return;
+                SetData(40, (byte) value, nameof(Item_1_Carve_Anim));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_1_Unk));
+                OnPropertyChanged(nameof(Item_1_Carve_Anim));
             }
         }
 
@@ -125,17 +125,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Item_2_Unk_displayName = "Item 2 Unk";
-        public const int Item_2_Unk_sortIndex = 400;
-        [SortOrder(Item_2_Unk_sortIndex)]
-        [DisplayName(Item_2_Unk_displayName)]
-        public virtual byte Item_2_Unk {
-            get => GetData<byte>(41);
+        public const string Item_2_Carve_Anim_displayName = "Item 2 Carve Anim";
+        public const int Item_2_Carve_Anim_sortIndex = 400;
+        [SortOrder(Item_2_Carve_Anim_sortIndex)]
+        [DisplayName(Item_2_Carve_Anim_displayName)]
+        public virtual MHW_Template.Items.CarveAnimation Item_2_Carve_Anim {
+            get => (MHW_Template.Items.CarveAnimation) GetData<byte>(41);
             set {
-                if (GetData<byte>(41) == value) return;
-                SetData(41, value, nameof(Item_2_Unk));
+                if ((MHW_Template.Items.CarveAnimation) GetData<byte>(41) == value) return;
+                SetData(41, (byte) value, nameof(Item_2_Carve_Anim));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_2_Unk));
+                OnPropertyChanged(nameof(Item_2_Carve_Anim));
             }
         }
 
@@ -188,17 +188,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Item_3_Unk_displayName = "Item 3 Unk";
-        public const int Item_3_Unk_sortIndex = 600;
-        [SortOrder(Item_3_Unk_sortIndex)]
-        [DisplayName(Item_3_Unk_displayName)]
-        public virtual byte Item_3_Unk {
-            get => GetData<byte>(42);
+        public const string Item_3_Carve_Anim_displayName = "Item 3 Carve Anim";
+        public const int Item_3_Carve_Anim_sortIndex = 600;
+        [SortOrder(Item_3_Carve_Anim_sortIndex)]
+        [DisplayName(Item_3_Carve_Anim_displayName)]
+        public virtual MHW_Template.Items.CarveAnimation Item_3_Carve_Anim {
+            get => (MHW_Template.Items.CarveAnimation) GetData<byte>(42);
             set {
-                if (GetData<byte>(42) == value) return;
-                SetData(42, value, nameof(Item_3_Unk));
+                if ((MHW_Template.Items.CarveAnimation) GetData<byte>(42) == value) return;
+                SetData(42, (byte) value, nameof(Item_3_Carve_Anim));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_3_Unk));
+                OnPropertyChanged(nameof(Item_3_Carve_Anim));
             }
         }
 
@@ -251,17 +251,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Item_4_Unk_displayName = "Item 4 Unk";
-        public const int Item_4_Unk_sortIndex = 800;
-        [SortOrder(Item_4_Unk_sortIndex)]
-        [DisplayName(Item_4_Unk_displayName)]
-        public virtual byte Item_4_Unk {
-            get => GetData<byte>(43);
+        public const string Item_4_Carve_Anim_displayName = "Item 4 Carve Anim";
+        public const int Item_4_Carve_Anim_sortIndex = 800;
+        [SortOrder(Item_4_Carve_Anim_sortIndex)]
+        [DisplayName(Item_4_Carve_Anim_displayName)]
+        public virtual MHW_Template.Items.CarveAnimation Item_4_Carve_Anim {
+            get => (MHW_Template.Items.CarveAnimation) GetData<byte>(43);
             set {
-                if (GetData<byte>(43) == value) return;
-                SetData(43, value, nameof(Item_4_Unk));
+                if ((MHW_Template.Items.CarveAnimation) GetData<byte>(43) == value) return;
+                SetData(43, (byte) value, nameof(Item_4_Carve_Anim));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_4_Unk));
+                OnPropertyChanged(nameof(Item_4_Carve_Anim));
             }
         }
 
@@ -314,17 +314,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Item_5_Unk_displayName = "Item 5 Unk";
-        public const int Item_5_Unk_sortIndex = 1000;
-        [SortOrder(Item_5_Unk_sortIndex)]
-        [DisplayName(Item_5_Unk_displayName)]
-        public virtual byte Item_5_Unk {
-            get => GetData<byte>(44);
+        public const string Item_5_Carve_Anim_displayName = "Item 5 Carve Anim";
+        public const int Item_5_Carve_Anim_sortIndex = 1000;
+        [SortOrder(Item_5_Carve_Anim_sortIndex)]
+        [DisplayName(Item_5_Carve_Anim_displayName)]
+        public virtual MHW_Template.Items.CarveAnimation Item_5_Carve_Anim {
+            get => (MHW_Template.Items.CarveAnimation) GetData<byte>(44);
             set {
-                if (GetData<byte>(44) == value) return;
-                SetData(44, value, nameof(Item_5_Unk));
+                if ((MHW_Template.Items.CarveAnimation) GetData<byte>(44) == value) return;
+                SetData(44, (byte) value, nameof(Item_5_Carve_Anim));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_5_Unk));
+                OnPropertyChanged(nameof(Item_5_Carve_Anim));
             }
         }
 
@@ -377,17 +377,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Item_6_Unk_displayName = "Item 6 Unk";
-        public const int Item_6_Unk_sortIndex = 1200;
-        [SortOrder(Item_6_Unk_sortIndex)]
-        [DisplayName(Item_6_Unk_displayName)]
-        public virtual byte Item_6_Unk {
-            get => GetData<byte>(45);
+        public const string Item_6_Carve_Anim_displayName = "Item 6 Carve Anim";
+        public const int Item_6_Carve_Anim_sortIndex = 1200;
+        [SortOrder(Item_6_Carve_Anim_sortIndex)]
+        [DisplayName(Item_6_Carve_Anim_displayName)]
+        public virtual MHW_Template.Items.CarveAnimation Item_6_Carve_Anim {
+            get => (MHW_Template.Items.CarveAnimation) GetData<byte>(45);
             set {
-                if (GetData<byte>(45) == value) return;
-                SetData(45, value, nameof(Item_6_Unk));
+                if ((MHW_Template.Items.CarveAnimation) GetData<byte>(45) == value) return;
+                SetData(45, (byte) value, nameof(Item_6_Carve_Anim));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_6_Unk));
+                OnPropertyChanged(nameof(Item_6_Carve_Anim));
             }
         }
 
@@ -440,17 +440,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Item_7_Unk_displayName = "Item 7 Unk";
-        public const int Item_7_Unk_sortIndex = 1400;
-        [SortOrder(Item_7_Unk_sortIndex)]
-        [DisplayName(Item_7_Unk_displayName)]
-        public virtual byte Item_7_Unk {
-            get => GetData<byte>(46);
+        public const string Item_7_Carve_Anim_displayName = "Item 7 Carve Anim";
+        public const int Item_7_Carve_Anim_sortIndex = 1400;
+        [SortOrder(Item_7_Carve_Anim_sortIndex)]
+        [DisplayName(Item_7_Carve_Anim_displayName)]
+        public virtual MHW_Template.Items.CarveAnimation Item_7_Carve_Anim {
+            get => (MHW_Template.Items.CarveAnimation) GetData<byte>(46);
             set {
-                if (GetData<byte>(46) == value) return;
-                SetData(46, value, nameof(Item_7_Unk));
+                if ((MHW_Template.Items.CarveAnimation) GetData<byte>(46) == value) return;
+                SetData(46, (byte) value, nameof(Item_7_Carve_Anim));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_7_Unk));
+                OnPropertyChanged(nameof(Item_7_Carve_Anim));
             }
         }
 
@@ -503,17 +503,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Item_8_Unk_displayName = "Item 8 Unk";
-        public const int Item_8_Unk_sortIndex = 1600;
-        [SortOrder(Item_8_Unk_sortIndex)]
-        [DisplayName(Item_8_Unk_displayName)]
-        public virtual byte Item_8_Unk {
-            get => GetData<byte>(47);
+        public const string Item_8_Carve_Anim_displayName = "Item 8 Carve Anim";
+        public const int Item_8_Carve_Anim_sortIndex = 1600;
+        [SortOrder(Item_8_Carve_Anim_sortIndex)]
+        [DisplayName(Item_8_Carve_Anim_displayName)]
+        public virtual MHW_Template.Items.CarveAnimation Item_8_Carve_Anim {
+            get => (MHW_Template.Items.CarveAnimation) GetData<byte>(47);
             set {
-                if (GetData<byte>(47) == value) return;
-                SetData(47, value, nameof(Item_8_Unk));
+                if ((MHW_Template.Items.CarveAnimation) GetData<byte>(47) == value) return;
+                SetData(47, (byte) value, nameof(Item_8_Carve_Anim));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_8_Unk));
+                OnPropertyChanged(nameof(Item_8_Carve_Anim));
             }
         }
 
@@ -566,17 +566,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Item_9_Unk_displayName = "Item 9 Unk";
-        public const int Item_9_Unk_sortIndex = 1800;
-        [SortOrder(Item_9_Unk_sortIndex)]
-        [DisplayName(Item_9_Unk_displayName)]
-        public virtual byte Item_9_Unk {
-            get => GetData<byte>(48);
+        public const string Item_9_Carve_Anim_displayName = "Item 9 Carve Anim";
+        public const int Item_9_Carve_Anim_sortIndex = 1800;
+        [SortOrder(Item_9_Carve_Anim_sortIndex)]
+        [DisplayName(Item_9_Carve_Anim_displayName)]
+        public virtual MHW_Template.Items.CarveAnimation Item_9_Carve_Anim {
+            get => (MHW_Template.Items.CarveAnimation) GetData<byte>(48);
             set {
-                if (GetData<byte>(48) == value) return;
-                SetData(48, value, nameof(Item_9_Unk));
+                if ((MHW_Template.Items.CarveAnimation) GetData<byte>(48) == value) return;
+                SetData(48, (byte) value, nameof(Item_9_Carve_Anim));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_9_Unk));
+                OnPropertyChanged(nameof(Item_9_Carve_Anim));
             }
         }
 
@@ -629,17 +629,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Item_10_Unk_displayName = "Item 10 Unk";
-        public const int Item_10_Unk_sortIndex = 2000;
-        [SortOrder(Item_10_Unk_sortIndex)]
-        [DisplayName(Item_10_Unk_displayName)]
-        public virtual byte Item_10_Unk {
-            get => GetData<byte>(49);
+        public const string Item_10_Carve_Anim_displayName = "Item 10 Carve Anim";
+        public const int Item_10_Carve_Anim_sortIndex = 2000;
+        [SortOrder(Item_10_Carve_Anim_sortIndex)]
+        [DisplayName(Item_10_Carve_Anim_displayName)]
+        public virtual MHW_Template.Items.CarveAnimation Item_10_Carve_Anim {
+            get => (MHW_Template.Items.CarveAnimation) GetData<byte>(49);
             set {
-                if (GetData<byte>(49) == value) return;
-                SetData(49, value, nameof(Item_10_Unk));
+                if ((MHW_Template.Items.CarveAnimation) GetData<byte>(49) == value) return;
+                SetData(49, (byte) value, nameof(Item_10_Carve_Anim));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Item_10_Unk));
+                OnPropertyChanged(nameof(Item_10_Carve_Anim));
             }
         }
 

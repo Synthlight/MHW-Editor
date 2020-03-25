@@ -404,7 +404,7 @@ namespace MHW_Generator {
                 entries.Add(new MhwStructData.Entry($"Item {i + 1} Id", itemIdStart + i * 2, typeof(ushort), dataSourceType: DataSourceType.Items));
                 entries.Add(new MhwStructData.Entry($"Item {i + 1} Cnt", itemCountStart + i, typeof(byte)));
                 entries.Add(new MhwStructData.Entry($"Item {i + 1} %", itemWeightStart + i, typeof(byte), valueString: "value.Clamp((byte) 0, (byte) 100)"));
-                entries.Add(new MhwStructData.Entry($"Item {i + 1} Unk", itemUnkStart + i, typeof(byte)));
+                entries.Add(new MhwStructData.Entry($"Item {i + 1} Carve Anim", itemUnkStart + i, typeof(byte), typeof(CarveAnimation)));
             }
 
             GenerateItemProps("MHW_Editor.Items", "ItemLottery", new MhwStructData { // .itlot

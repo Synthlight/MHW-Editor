@@ -59,6 +59,7 @@
     </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Items\BountyType.cs" />
+    <Compile Include="Items\CarveAnimation.cs" />
     <Compile Include="Items\MonsterType.cs" />
     <Compile Include="Items\Location.cs" />
     <Compile Include="Items\RankType.cs" />

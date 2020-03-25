@@ -35,15 +35,15 @@ namespace MHW_Editor.Items {
         public byte Item_8_; // Offset: 37
         public byte Item_9_; // Offset: 38
         public byte Item_10_; // Offset: 39
-        public byte Item_1_Unk; // Offset: 40
-        public byte Item_2_Unk; // Offset: 41
-        public byte Item_3_Unk; // Offset: 42
-        public byte Item_4_Unk; // Offset: 43
-        public byte Item_5_Unk; // Offset: 44
-        public byte Item_6_Unk; // Offset: 45
-        public byte Item_7_Unk; // Offset: 46
-        public byte Item_8_Unk; // Offset: 47
-        public byte Item_9_Unk; // Offset: 48
-        public byte Item_10_Unk; // Offset: 49
+        public byte Item_1_Carve_Anim; // Offset: 40
+        public byte Item_2_Carve_Anim; // Offset: 41
+        public byte Item_3_Carve_Anim; // Offset: 42
+        public byte Item_4_Carve_Anim; // Offset: 43
+        public byte Item_5_Carve_Anim; // Offset: 44
+        public byte Item_6_Carve_Anim; // Offset: 45
+        public byte Item_7_Carve_Anim; // Offset: 46
+        public byte Item_8_Carve_Anim; // Offset: 47
+        public byte Item_9_Carve_Anim; // Offset: 48
+        public byte Item_10_Carve_Anim; // Offset: 49
     }
 }
