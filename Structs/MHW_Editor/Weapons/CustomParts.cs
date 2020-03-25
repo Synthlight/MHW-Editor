@@ -13,6 +13,7 @@ namespace MHW_Editor.Weapons {
         public ushort Attack; // Offset: 17
         public ushort Defense; // Offset: 19
         public byte Affinity; // Offset: 21
-        public byte Element; // Offset: 22
+        public ushort Element; // Offset: 22
+        public byte Sharpness; // Offset: 24
     }
 }

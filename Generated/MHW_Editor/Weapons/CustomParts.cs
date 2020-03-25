@@ -131,16 +131,30 @@ namespace MHW_Editor.Weapons {
         public const int Element_sortIndex = 450;
         [SortOrder(Element_sortIndex)]
         [DisplayName(Element_displayName)]
-        public virtual byte Element {
-            get => GetData<byte>(22);
+        public virtual ushort Element {
+            get => GetData<ushort>(22);
             set {
-                if (GetData<byte>(22) == value) return;
+                if (GetData<ushort>(22) == value) return;
                 SetData(22, value, nameof(Element));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Element));
             }
         }
 
-        public const int lastSortIndex = 500;
+        public const string Sharpness_displayName = "Sharpness";
+        public const int Sharpness_sortIndex = 500;
+        [SortOrder(Sharpness_sortIndex)]
+        [DisplayName(Sharpness_displayName)]
+        public virtual byte Sharpness {
+            get => GetData<byte>(24);
+            set {
+                if (GetData<byte>(24) == value) return;
+                SetData(24, value, nameof(Sharpness));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Sharpness));
+            }
+        }
+
+        public const int lastSortIndex = 550;
     }
 }

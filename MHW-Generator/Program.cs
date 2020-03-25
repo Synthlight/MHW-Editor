@@ -729,7 +729,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Attack", 17, typeof(ushort)),
                     new MhwStructData.Entry("Defense", 19, typeof(ushort)),
                     new MhwStructData.Entry("Affinity", 21, typeof(byte)),
-                    new MhwStructData.Entry("Element", 22, typeof(byte))
+                    new MhwStructData.Entry("Element", 22, typeof(ushort)),
+                    new MhwStructData.Entry("Sharpness", 24, typeof(byte))
                 }
             });
         }
