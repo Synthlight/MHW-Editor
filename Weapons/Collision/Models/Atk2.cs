@@ -107,7 +107,7 @@ namespace MHW_Editor.Weapons.Collision.Models {
         public uint unk23 { get; set; } // 92
 
         [SortOrder(250)]
-        public uint unk24 { get; set; } // 96
+        public float unk24 { get; set; } // 96
 
         [SortOrder(260)]
         public float unk25 { get; set; } // 100
@@ -119,7 +119,7 @@ namespace MHW_Editor.Weapons.Collision.Models {
         public float unk27 { get; set; } // 108
 
         [SortOrder(290)]
-        public uint unk28 { get; set; } // 112
+        public float unk28 { get; set; } // 112
 
         [SortOrder(300)]
         public uint unk29 { get; set; } // 116
