@@ -28,31 +28,31 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public const string Unknown_1_uint8__displayName = "Unknown 1 (uint8)";
-        public const int Unknown_1_uint8__sortIndex = 100;
-        [SortOrder(Unknown_1_uint8__sortIndex)]
-        [DisplayName(Unknown_1_uint8__displayName)]
-        public virtual byte Unknown_1_uint8_ {
-            get => GetData<byte>(4);
+        public const string Phial_Type_displayName = "Phial Type";
+        public const int Phial_Type_sortIndex = 100;
+        [SortOrder(Phial_Type_sortIndex)]
+        [DisplayName(Phial_Type_displayName)]
+        public virtual MHW_Template.Weapons.PhialType Phial_Type {
+            get => (MHW_Template.Weapons.PhialType) GetData<byte>(4);
             set {
-                if (GetData<byte>(4) == value) return;
-                SetData(4, value, nameof(Unknown_1_uint8_));
+                if ((MHW_Template.Weapons.PhialType) GetData<byte>(4) == value) return;
+                SetData(4, (byte) value, nameof(Phial_Type));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_1_uint8_));
+                OnPropertyChanged(nameof(Phial_Type));
             }
         }
 
-        public const string Unknown_2_uint16__displayName = "Unknown 2 (uint16)";
-        public const int Unknown_2_uint16__sortIndex = 150;
-        [SortOrder(Unknown_2_uint16__sortIndex)]
-        [DisplayName(Unknown_2_uint16__displayName)]
-        public virtual ushort Unknown_2_uint16_ {
+        public const string Phial_Amount_displayName = "Phial Amount";
+        public const int Phial_Amount_sortIndex = 150;
+        [SortOrder(Phial_Amount_sortIndex)]
+        [DisplayName(Phial_Amount_displayName)]
+        public virtual ushort Phial_Amount {
             get => GetData<ushort>(5);
             set {
                 if (GetData<ushort>(5) == value) return;
-                SetData(5, value, nameof(Unknown_2_uint16_));
+                SetData(5, value, nameof(Phial_Amount));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unknown_2_uint16_));
+                OnPropertyChanged(nameof(Phial_Amount));
             }
         }
 

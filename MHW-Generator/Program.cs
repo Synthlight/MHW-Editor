@@ -1063,8 +1063,8 @@ namespace MHW_Generator {
                 uniqueIdFormula = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Unknown 1 (uint8)", 4, typeof(byte)),
-                    new MhwStructData.Entry("Unknown 2 (uint16)", 5, typeof(ushort))
+                    new MhwStructData.Entry("Phial Type", 4, typeof(byte), typeof(PhialType)),
+                    new MhwStructData.Entry("Phial Amount", 5, typeof(ushort))
                 }
             });
         }
