@@ -106,14 +106,5 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [IsReadOnly]
         [SortOrder(210)]
         public List<dynamic> oapInner { get; set; } // oapInnerCount
-
-        [SortOrder(300)]
-        public uint unk10 { get; set; }
-
-        [SortOrder(310)]
-        public uint unk11 { get; set; }
-
-        [SortOrder(320)]
-        public uint unk12 { get; set; }
     }
 }

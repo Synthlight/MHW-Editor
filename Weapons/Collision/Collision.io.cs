@@ -45,9 +45,6 @@ namespace MHW_Editor.Weapons.Collision {
             collision.oapType = reader.ReadUInt32();
             collision.oapInnerCount = reader.ReadUInt32();
             collision.oapInner = ReadOapInners(collision.oapInnerCount, collision.oapType, reader);
-            collision.unk10 = reader.ReadUInt32();
-            collision.unk11 = reader.ReadUInt32();
-            collision.unk12 = reader.ReadUInt32();
 
             return collision;
         }
@@ -221,9 +218,6 @@ namespace MHW_Editor.Weapons.Collision {
             writer.Write(collision.oapType);
             writer.Write(collision.oapInnerCount);
             WriteOapInners(collision.oapInner, collision.oapType, writer);
-            writer.Write(collision.unk10);
-            writer.Write(collision.unk11);
-            writer.Write(collision.unk12);
         }
 
         private static void WriteNames(IEnumerable<Name> names, BinaryWriter writer) {

@@ -10,17 +10,20 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [SortOrder(10)]
         public uint moveId { get; set; } // 0
 
+        [DisplayName("Knock-back Type")]
         [SortOrder(20)]
-        public uint unk1 { get; set; } // 4
+        public uint knockBackType { get; set; } // 4
 
+        [DisplayName("Knock-back Lvl")]
         [SortOrder(30)]
-        public uint unk2 { get; set; } // 8
+        public uint knockBackLvl { get; set; } // 8
 
         [SortOrder(40)]
         public uint unk3 { get; set; } // 12
 
+        [DisplayName("Motion Value")]
         [SortOrder(50)]
-        public float unk4 { get; set; } // 16
+        public float motionValue { get; set; } // 16
 
         [SortOrder(60)]
         public uint unk5 { get; set; } // 20
@@ -31,47 +34,71 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [SortOrder(80)]
         public float unk7 { get; set; } // 28
 
+        [DisplayName("Guard Req")]
         [SortOrder(90)]
-        public uint unk8 { get; set; } // 32
+        public uint guardReq { get; set; } // 32
 
+        [DisplayName("Element Id")]
         [SortOrder(100)]
-        public uint unk9 { get; set; } // 36
+        public uint elementId { get; set; } // 36
 
         [SortOrder(110)]
         public uint unk10 { get; set; } // 40
 
+        [DisplayName("Element Dmg")]
         [SortOrder(120)]
-        public uint unk11 { get; set; } // 44
+        public float elementDmg { get; set; } // 44
 
         [SortOrder(130)]
-        public uint unk12 { get; set; } // 48
+        public float unk12 { get; set; } // 48
 
+        [DisplayName("Deadly Poison")]
         [SortOrder(140)]
-        public uint unk13 { get; set; } // 52
+        public float deadlyPoison { get; set; } // 52
 
+        [DisplayName("Paralysis")]
         [SortOrder(150)]
-        public uint unk14 { get; set; } // 56
+        public float paralysis { get; set; } // 56
 
+        [DisplayName("Sleep")]
         [SortOrder(160)]
-        public uint unk15 { get; set; } // 60
+        public float sleep { get; set; } // 60
 
+        [DisplayName("Blast")]
         [SortOrder(170)]
-        public uint unk16 { get; set; } // 64
+        public float blast { get; set; } // 64
 
+        [DisplayName("Blast Scourge")]
         [SortOrder(180)]
-        public uint unk17 { get; set; } // 68
+        public float blastScourge { get; set; } // 68
 
+        [DisplayName("Stun")]
         [SortOrder(190)]
-        public float unk18 { get; set; } // 72
+        public float stun { get; set; } // 72
 
+        [DisplayName("Bleed")]
         [SortOrder(200)]
-        public uint unk19 { get; set; } // 76
+        public float bleed { get; set; } // 76
 
+        [DisplayName("Miasma")]
         [SortOrder(210)]
-        public uint unk20 { get; set; } // 80
+        public float miasma { get; set; } // 80
 
+        [DisplayName("Ele Res Down Double")]
         [SortOrder(220)]
-        public uint unk21 { get; set; } // 84
+        public byte eleResDownDouble { get; set; } // 84
+
+        [DisplayName("Ele Res Down")]
+        [SortOrder(221)]
+        public byte eleResDown { get; set; } // 85
+
+        [DisplayName("Def Down Double")]
+        [SortOrder(222)]
+        public byte defDownDouble { get; set; } // 86
+
+        [DisplayName("Def Down")]
+        [SortOrder(223)]
+        public byte defDown { get; set; } // 87
 
         [SortOrder(230)]
         public uint unk22 { get; set; } // 88
