@@ -31,8 +31,9 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [SortOrder(70)]
         public uint unk6 { get; set; } // 24
 
+        [DisplayName("Guard Stamina Cost")]
         [SortOrder(80)]
-        public float unk7 { get; set; } // 28
+        public float guardStaminaCost { get; set; } // 28
 
         [DisplayName("Guard Req")]
         [SortOrder(90)]

@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.ComponentModel;
+using System.Runtime.InteropServices;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons.Collision.Models {
@@ -10,8 +11,9 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [SortOrder(20)]
         public byte unk2 { get; set; }
 
+        [DisplayName("Attack Range")]
         [SortOrder(30)]
-        public float unk3 { get; set; }
+        public float radius { get; set; }
 
         [SortOrder(40)]
         public float unk4 { get; set; }
