@@ -132,28 +132,28 @@ namespace MHW_Editor.Weapons.Collision.Models {
         public uint unk31 { get; set; } // 124
 
         [SortOrder(330)]
-        public uint unk32 { get; set; } // 128
+        public byte unk32 { get; set; } // 125
 
         [SortOrder(340)]
-        public uint unk33 { get; set; } // 132
+        public float unk33 { get; set; } // 129
 
         [SortOrder(350)]
-        public uint unk34 { get; set; } // 136
+        public uint unk34 { get; set; } // 133
 
         [SortOrder(360)]
-        public uint unk35 { get; set; } // 140
+        public uint unk35 { get; set; } // 137
 
         [SortOrder(370)]
-        public uint unk36 { get; set; } // 144
+        public uint unk36 { get; set; } // 141
 
         [SortOrder(380)]
-        public uint unk37 { get; set; } // 148
+        public uint unk37 { get; set; } // 145
 
         [SortOrder(390)]
-        public uint unk38 { get; set; } // 152
+        public uint unk38 { get; set; } // 149
 
         [SortOrder(400)]
-        public byte unk39 { get; set; } // 156
+        public uint unk39 { get; set; } // 153
 
         [SortOrder(410)]
         public uint unk40 { get; set; } // 157
