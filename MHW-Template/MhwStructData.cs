@@ -11,20 +11,20 @@ namespace MHW_Template {
         public long entryCountOffset = -1;
         public string encryptionKey = null;
         public string uniqueIdFormula;
+        public bool autoOffset = false; // Auto increment offset by sizeof(type).
 
         public class Entry {
             public readonly string displayName;
             public readonly ulong offset;
-            public readonly CodeTypeReference type;
-            public readonly CodeTypeReference enumReturn;
+            public readonly Type type;
+            public readonly Type enumReturn;
             public readonly bool readOnly;
             public readonly string valueString;
             public readonly string accessLevel;
             public readonly DataSourceType? dataSourceType;
             public readonly string[] extraOnPropertyChanged;
             public readonly string dataSourceCustomSorter;
-            public readonly bool forceUnique;
-            public readonly bool asBoolean;
+            public readonly bool forceUnique; // Force the generated field to be unique. (Adds offset to end of field name.) Skipped in the struct generation.
             public readonly long addOffset = 0; // An offset to our offset for all subsequent offsets.
 
             public Entry(string displayName, ulong offset, Type type,
@@ -36,25 +36,38 @@ namespace MHW_Template {
                          string[] extraOnPropertyChanged = null,
                          string dataSourceCustomSorter = "ButtonSorter",
                          bool forceUnique = false,
-                         bool asBoolean = false,
                          long addOffset = 0) {
                 this.displayName = displayName;
                 this.offset = offset;
-                this.type = new CodeTypeReference(type);
+                this.type = type;
                 this.readOnly = readOnly;
                 this.valueString = valueString;
                 this.accessLevel = accessLevel;
-                this.enumReturn = enumReturn == null ? null : new CodeTypeReference(enumReturn);
+                this.enumReturn = enumReturn;
                 this.dataSourceType = dataSourceType;
                 this.extraOnPropertyChanged = extraOnPropertyChanged;
                 this.dataSourceCustomSorter = dataSourceCustomSorter;
                 this.forceUnique = forceUnique;
-                this.asBoolean = asBoolean;
                 this.addOffset = addOffset;
             }
 
+            public Entry(string displayName, Type type,
+                         bool readOnly = false,
+                         Type enumReturn = null,
+                         string valueString = "value",
+                         string accessLevel = "public",
+                         DataSourceType? dataSourceType = null,
+                         string[] extraOnPropertyChanged = null,
+                         string dataSourceCustomSorter = "ButtonSorter",
+                         bool forceUnique = false,
+                         long addOffset = 0) : this(displayName, 0, type, readOnly, enumReturn, valueString, accessLevel, dataSourceType, extraOnPropertyChanged, dataSourceCustomSorter, forceUnique, addOffset) {
+            }
+
             public Entry(string name, ulong offset, Type type, Type enumReturn) : this(name, offset, type) {
-                this.enumReturn = new CodeTypeReference(enumReturn);
+                this.enumReturn = enumReturn;
+            }
+
+            public Entry(string name, Type type, Type enumReturn) : this(name, 0, type, enumReturn) {
             }
         }
     }

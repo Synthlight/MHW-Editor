@@ -10,7 +10,9 @@
 namespace MHW_Template
 {
     using Microsoft.CSharp;
+    using System.CodeDom;
     using System.Collections.Generic;
+    using System.Runtime.InteropServices;
     using System.Text.RegularExpressions;
     using System;
     
@@ -30,44 +32,45 @@ namespace MHW_Template
         {
             this.Write("using MHW_Template;\r\n\r\nnamespace ");
             
-            #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    // Struct Size: \"");
             
-            #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.size));
             
             #line default
             #line hidden
             this.Write("\"\r\n    // Initial Offset: \"");
             
-            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.offsetInitial));
             
             #line default
             #line hidden
             this.Write("\"\r\n    // Unique Id Formula: \"");
             
-            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            #line 18 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.uniqueIdFormula));
             
             #line default
             #line hidden
             this.Write("\"\r\n    public struct ");
             
-            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            #line 19 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
             #line hidden
             this.Write(" {\r\n");
             
-            #line 18 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
+            #line 20 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\RawStructTemplate.tt"
 
     var compiler = new CSharpCodeProvider();
+    long baseOffset = 0; // Used in autoOffset.
     var newList = new List<MhwStructData.Entry>(structData.entries);
     newList.Sort((entry1, entry2) => entry1.offset.CompareTo(entry2.offset));
 
@@ -75,9 +78,15 @@ namespace MHW_Template
         if (entry.forceUnique)
             continue;
 
+        var realOffset = structData.autoOffset? baseOffset : (long) entry.offset;
+
+        if (structData.autoOffset) {
+            baseOffset += Marshal.SizeOf(entry.type);
+        }
+
         var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
-        var typeString = compiler.GetTypeOutput(entry.type);
-        WriteLine($"        public {typeString} {name}; // Offset: {entry.offset}");
+        var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
+        WriteLine($"        public {typeString} {name}; // Offset: {realOffset}");
     }
 
             

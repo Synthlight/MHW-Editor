@@ -6,6 +6,8 @@
 <#@ parameter type="System.String" name="className" #>
 <#@ parameter type="MHW_Template.MhwStructData" name="structData" #>
 <#@ import namespace="Microsoft.CSharp" #>
+<#@ import namespace="System.CodeDom" #>
+<#@ import namespace="System.Runtime.InteropServices" #>
 <#@ import namespace="System.Text.RegularExpressions" #>
 <#@ import namespace="MHW_Template.Models" #>
 using System;
@@ -26,10 +28,15 @@ namespace <#= _namespace #> {
     var compiler = new CSharpCodeProvider();
     var sortIndex = 50;
     long offsetOffset = 0; // An offset to our offset for all subsequent offsets.
+    long baseOffset = 0; // Used in autoOffset.
 
     foreach (var entry in structData.entries) {
-        var realOffset = (long) entry.offset + offsetOffset;
+        var realOffset = structData.autoOffset? baseOffset : (long) entry.offset + offsetOffset;
         offsetOffset += entry.addOffset;
+
+        if (structData.autoOffset) {
+            baseOffset += Marshal.SizeOf(entry.type);
+        }
 
         var accessLevel = entry.accessLevel;
         if (accessLevel != "private") {
@@ -41,7 +48,7 @@ namespace <#= _namespace #> {
             name += $"_{sortIndex}";
         }
 
-        var typeString = compiler.GetTypeOutput(entry.type);
+        var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
         string returnString;
         var setCast = "";
         var getCast = "";
@@ -49,7 +56,7 @@ namespace <#= _namespace #> {
         if (entry.enumReturn == null) {
             returnString = typeString;
         } else {
-            returnString = compiler.GetTypeOutput(entry.enumReturn);
+            returnString = compiler.GetTypeOutput(new CodeTypeReference(entry.enumReturn));
             getCast = $"({returnString}) ";
             setCast = $"({typeString}) ";
         }

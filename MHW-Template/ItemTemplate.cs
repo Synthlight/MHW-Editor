@@ -10,6 +10,8 @@
 namespace MHW_Template
 {
     using Microsoft.CSharp;
+    using System.CodeDom;
+    using System.Runtime.InteropServices;
     using System.Text.RegularExpressions;
     using MHW_Template.Models;
     using System;
@@ -31,64 +33,69 @@ namespace MHW_Template
             this.Write("using System;\r\nusing System.ComponentModel;\r\nusing MHW_Editor.Assets;\r\nusing MHW_" +
                     "Editor.Models;\r\nusing MHW_Template;\r\nusing MHW_Template.Models;\r\n\r\nnamespace ");
             
-            #line 18 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 20 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public partial class ");
             
-            #line 19 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 21 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
             #line hidden
             this.Write(" {\r\n        public const uint StructSize = ");
             
-            #line 20 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.size));
             
             #line default
             #line hidden
             this.Write(";\r\n        public const ulong InitialOffset = ");
             
-            #line 21 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.offsetInitial));
             
             #line default
             #line hidden
             this.Write(";\r\n        public const long EntryCountOffset = ");
             
-            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.entryCountOffset));
             
             #line default
             #line hidden
             this.Write(";\r\n        public const string EncryptionKey = ");
             
-            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\""));
             
             #line default
             #line hidden
             this.Write(";\r\n        public override string UniqueId => $\"");
             
-            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.uniqueIdFormula));
             
             #line default
             #line hidden
             this.Write("\";\r\n");
             
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
 
     var compiler = new CSharpCodeProvider();
     var sortIndex = 50;
     long offsetOffset = 0; // An offset to our offset for all subsequent offsets.
+    long baseOffset = 0; // Used in autoOffset.
 
     foreach (var entry in structData.entries) {
-        var realOffset = (long) entry.offset + offsetOffset;
+        var realOffset = structData.autoOffset? baseOffset : (long) entry.offset + offsetOffset;
         offsetOffset += entry.addOffset;
+
+        if (structData.autoOffset) {
+            baseOffset += Marshal.SizeOf(entry.type);
+        }
 
         var accessLevel = entry.accessLevel;
         if (accessLevel != "private") {
@@ -100,7 +107,7 @@ namespace MHW_Template
             name += $"_{sortIndex}";
         }
 
-        var typeString = compiler.GetTypeOutput(entry.type);
+        var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
         string returnString;
         var setCast = "";
         var getCast = "";
@@ -108,7 +115,7 @@ namespace MHW_Template
         if (entry.enumReturn == null) {
             returnString = typeString;
         } else {
-            returnString = compiler.GetTypeOutput(entry.enumReturn);
+            returnString = compiler.GetTypeOutput(new CodeTypeReference(entry.enumReturn));
             getCast = $"({returnString}) ";
             setCast = $"({typeString}) ";
         }
@@ -198,7 +205,7 @@ namespace MHW_Template
             #line hidden
             this.Write("\r\n        public const int lastSortIndex = ");
             
-            #line 138 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 145 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(sortIndex));
             
             #line default
