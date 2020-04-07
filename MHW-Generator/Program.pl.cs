@@ -26,10 +26,10 @@ namespace MHW_Generator {
                 uniqueIdFormula = "0",
                 encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".w10p"],
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Air-Time 1", 1153, typeof(float)),
-                    new MhwStructData.Entry("Air-Time 2", 1157, typeof(float)),
-                    new MhwStructData.Entry("Air-Time 3", 1161, typeof(float)),
-                    new MhwStructData.Entry("Air-Time 4", 1165, typeof(float))
+                    new MhwStructData.Entry("Red Extract Duration", 1153, typeof(float)),
+                    new MhwStructData.Entry("White Extract Duration", 1157, typeof(float)),
+                    new MhwStructData.Entry("Orange Extract Duration", 1161, typeof(float)),
+                    new MhwStructData.Entry("Triple Extract Duration", 1165, typeof(float))
                 }
             });
         }

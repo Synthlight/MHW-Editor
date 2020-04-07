@@ -5,9 +5,9 @@ namespace MHW_Editor.Weapons {
     // Initial Offset: "0"
     // Unique Id Formula: "0"
     public struct Wp10Param {
-        public float Air_Time_1; // Offset: 1153
-        public float Air_Time_2; // Offset: 1157
-        public float Air_Time_3; // Offset: 1161
-        public float Air_Time_4; // Offset: 1165
+        public float Red_Extract_Duration; // Offset: 1153
+        public float White_Extract_Duration; // Offset: 1157
+        public float Orange_Extract_Duration; // Offset: 1161
+        public float Triple_Extract_Duration; // Offset: 1165
     }
 }
