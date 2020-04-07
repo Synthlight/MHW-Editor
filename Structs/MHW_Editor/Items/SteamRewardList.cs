@@ -10,6 +10,6 @@ namespace MHW_Editor.Items {
         public uint Quantity; // Offset: 8
         public uint Unk4; // Offset: 12
         public uint Unk5; // Offset: 16
-        public uint Unk6; // Offset: 20
+        public uint Rarity; // Offset: 20
     }
 }

@@ -306,7 +306,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Quantity", 8, typeof(uint)),
                     new MhwStructData.Entry("Unk4", 12, typeof(uint)),
                     new MhwStructData.Entry("Unk5", 16, typeof(uint)),
-                    new MhwStructData.Entry("Unk6", 20, typeof(uint))
+                    new MhwStructData.Entry("Rarity", 20, typeof(uint), typeof(SteamRarity))
                 }
             });
         }

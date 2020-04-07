@@ -90,17 +90,17 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Unk6_displayName = "Unk6";
-        public const int Unk6_sortIndex = 300;
-        [SortOrder(Unk6_sortIndex)]
-        [DisplayName(Unk6_displayName)]
-        public virtual uint Unk6 {
-            get => GetData<uint>(20);
+        public const string Rarity_displayName = "Rarity";
+        public const int Rarity_sortIndex = 300;
+        [SortOrder(Rarity_sortIndex)]
+        [DisplayName(Rarity_displayName)]
+        public virtual MHW_Template.Items.SteamRarity Rarity {
+            get => (MHW_Template.Items.SteamRarity) GetData<uint>(20);
             set {
-                if (GetData<uint>(20) == value) return;
-                SetData(20, value, nameof(Unk6));
+                if ((MHW_Template.Items.SteamRarity) GetData<uint>(20) == value) return;
+                SetData(20, (uint) value, nameof(Rarity));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk6));
+                OnPropertyChanged(nameof(Rarity));
             }
         }
 
