@@ -118,7 +118,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Unk2", 2, typeof(ushort)),
                     new MhwStructData.Entry("Unk3", 4, typeof(ushort)),
                     new MhwStructData.Entry("Unk4", 6, typeof(ushort)),
-                    new MhwStructData.Entry("Unk5", 8, typeof(ushort)),
+                    new MhwStructData.Entry("Unk5", 8, typeof(ushort))
                 }
             });
         }
@@ -134,7 +134,7 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Unk2", 2, typeof(short)),
                     new MhwStructData.Entry("Unk3", 4, typeof(ushort)),
                     new MhwStructData.Entry("Unk4", 6, typeof(ushort)),
-                    new MhwStructData.Entry("Unk5", 8, typeof(ushort)),
+                    new MhwStructData.Entry("Unk5", 8, typeof(ushort))
                 }
             });
         }
@@ -279,9 +279,6 @@ namespace MHW_Generator {
         }
 
         private static void GenMonsterEnrage() {
-            // 'Unk' counters.
-            ushort i = 1;
-
             GeneratePlDataProps("MHW_Editor.Monsters", "MonsterEnrage", new MhwStructData { // .dtt_agr
                 size = 144,
                 offsetInitial = 0,
@@ -294,33 +291,33 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("LR/HR Speed", 24, typeof(float)),
                     new MhwStructData.Entry("LR/HR Damage", 28, typeof(float)),
                     new MhwStructData.Entry("LR/HR Player Damage", 32, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 36, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 40, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 44, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 48, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 52, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 56, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 60, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 64, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 68, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 72, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 76, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Build Multiplier by HP 1", 36, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Build Multiplier by HP 2", 40, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Build Multiplier by HP 3", 44, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Build Multiplier by HP 4", 48, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Build Multiplier by HP 5", 52, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Build Multiplier by HP 6", 56, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Build Multiplier by HP 7", 60, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Build Multiplier by HP 8", 64, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Build Multiplier by HP 9", 68, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Build Multiplier by HP 10", 72, typeof(float)),
+                    new MhwStructData.Entry("LR/HR Decay", 76, typeof(float)),
                     new MhwStructData.Entry("MR Trigger Damage", 80, typeof(uint)),
                     new MhwStructData.Entry("MR Duration", 84, typeof(float)),
                     new MhwStructData.Entry("MR Speed", 88, typeof(float)),
                     new MhwStructData.Entry("MR Damage", 92, typeof(float)),
                     new MhwStructData.Entry("MR Player Damage", 96, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 100, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 104, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 108, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 112, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 116, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 120, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 124, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 128, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 132, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i++}", 136, typeof(float)),
-                    new MhwStructData.Entry($"Unk{i}", 140, typeof(float))
+                    new MhwStructData.Entry("MR Build Multiplier by HP 1", 100, typeof(float)),
+                    new MhwStructData.Entry("MR Build Multiplier by HP 2", 104, typeof(float)),
+                    new MhwStructData.Entry("MR Build Multiplier by HP 3", 108, typeof(float)),
+                    new MhwStructData.Entry("MR Build Multiplier by HP 4", 112, typeof(float)),
+                    new MhwStructData.Entry("MR Build Multiplier by HP 5", 116, typeof(float)),
+                    new MhwStructData.Entry("MR Build Multiplier by HP 6", 120, typeof(float)),
+                    new MhwStructData.Entry("MR Build Multiplier by HP 7", 124, typeof(float)),
+                    new MhwStructData.Entry("MR Build Multiplier by HP 8", 128, typeof(float)),
+                    new MhwStructData.Entry("MR Build Multiplier by HP 9", 132, typeof(float)),
+                    new MhwStructData.Entry("MR Build Multiplier by HP 10", 136, typeof(float)),
+                    new MhwStructData.Entry("MR Decay", 140, typeof(float))
                 }
             });
         }

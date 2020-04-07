@@ -97,157 +97,157 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public const string Unk1_displayName = "Unk1";
-        public const int Unk1_sortIndex = 350;
-        [SortOrder(Unk1_sortIndex)]
-        [DisplayName(Unk1_displayName)]
-        public virtual float Unk1 {
+        public const string LR_HR_Build_Multiplier_by_HP_1_displayName = "LR/HR Build Multiplier by HP 1";
+        public const int LR_HR_Build_Multiplier_by_HP_1_sortIndex = 350;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_1_sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_1_displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_1 {
             get => GetData<float>(36);
             set {
                 if (GetData<float>(36) == value) return;
-                SetData(36, value, nameof(Unk1));
+                SetData(36, value, nameof(LR_HR_Build_Multiplier_by_HP_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk1));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_1));
             }
         }
 
-        public const string Unk2_displayName = "Unk2";
-        public const int Unk2_sortIndex = 400;
-        [SortOrder(Unk2_sortIndex)]
-        [DisplayName(Unk2_displayName)]
-        public virtual float Unk2 {
+        public const string LR_HR_Build_Multiplier_by_HP_2_displayName = "LR/HR Build Multiplier by HP 2";
+        public const int LR_HR_Build_Multiplier_by_HP_2_sortIndex = 400;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_2_sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_2_displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_2 {
             get => GetData<float>(40);
             set {
                 if (GetData<float>(40) == value) return;
-                SetData(40, value, nameof(Unk2));
+                SetData(40, value, nameof(LR_HR_Build_Multiplier_by_HP_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk2));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_2));
             }
         }
 
-        public const string Unk3_displayName = "Unk3";
-        public const int Unk3_sortIndex = 450;
-        [SortOrder(Unk3_sortIndex)]
-        [DisplayName(Unk3_displayName)]
-        public virtual float Unk3 {
+        public const string LR_HR_Build_Multiplier_by_HP_3_displayName = "LR/HR Build Multiplier by HP 3";
+        public const int LR_HR_Build_Multiplier_by_HP_3_sortIndex = 450;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_3_sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_3_displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_3 {
             get => GetData<float>(44);
             set {
                 if (GetData<float>(44) == value) return;
-                SetData(44, value, nameof(Unk3));
+                SetData(44, value, nameof(LR_HR_Build_Multiplier_by_HP_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk3));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_3));
             }
         }
 
-        public const string Unk4_displayName = "Unk4";
-        public const int Unk4_sortIndex = 500;
-        [SortOrder(Unk4_sortIndex)]
-        [DisplayName(Unk4_displayName)]
-        public virtual float Unk4 {
+        public const string LR_HR_Build_Multiplier_by_HP_4_displayName = "LR/HR Build Multiplier by HP 4";
+        public const int LR_HR_Build_Multiplier_by_HP_4_sortIndex = 500;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_4_sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_4_displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_4 {
             get => GetData<float>(48);
             set {
                 if (GetData<float>(48) == value) return;
-                SetData(48, value, nameof(Unk4));
+                SetData(48, value, nameof(LR_HR_Build_Multiplier_by_HP_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk4));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_4));
             }
         }
 
-        public const string Unk5_displayName = "Unk5";
-        public const int Unk5_sortIndex = 550;
-        [SortOrder(Unk5_sortIndex)]
-        [DisplayName(Unk5_displayName)]
-        public virtual float Unk5 {
+        public const string LR_HR_Build_Multiplier_by_HP_5_displayName = "LR/HR Build Multiplier by HP 5";
+        public const int LR_HR_Build_Multiplier_by_HP_5_sortIndex = 550;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_5_sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_5_displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_5 {
             get => GetData<float>(52);
             set {
                 if (GetData<float>(52) == value) return;
-                SetData(52, value, nameof(Unk5));
+                SetData(52, value, nameof(LR_HR_Build_Multiplier_by_HP_5));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk5));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_5));
             }
         }
 
-        public const string Unk6_displayName = "Unk6";
-        public const int Unk6_sortIndex = 600;
-        [SortOrder(Unk6_sortIndex)]
-        [DisplayName(Unk6_displayName)]
-        public virtual float Unk6 {
+        public const string LR_HR_Build_Multiplier_by_HP_6_displayName = "LR/HR Build Multiplier by HP 6";
+        public const int LR_HR_Build_Multiplier_by_HP_6_sortIndex = 600;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_6_sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_6_displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_6 {
             get => GetData<float>(56);
             set {
                 if (GetData<float>(56) == value) return;
-                SetData(56, value, nameof(Unk6));
+                SetData(56, value, nameof(LR_HR_Build_Multiplier_by_HP_6));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk6));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_6));
             }
         }
 
-        public const string Unk7_displayName = "Unk7";
-        public const int Unk7_sortIndex = 650;
-        [SortOrder(Unk7_sortIndex)]
-        [DisplayName(Unk7_displayName)]
-        public virtual float Unk7 {
+        public const string LR_HR_Build_Multiplier_by_HP_7_displayName = "LR/HR Build Multiplier by HP 7";
+        public const int LR_HR_Build_Multiplier_by_HP_7_sortIndex = 650;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_7_sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_7_displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_7 {
             get => GetData<float>(60);
             set {
                 if (GetData<float>(60) == value) return;
-                SetData(60, value, nameof(Unk7));
+                SetData(60, value, nameof(LR_HR_Build_Multiplier_by_HP_7));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk7));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_7));
             }
         }
 
-        public const string Unk8_displayName = "Unk8";
-        public const int Unk8_sortIndex = 700;
-        [SortOrder(Unk8_sortIndex)]
-        [DisplayName(Unk8_displayName)]
-        public virtual float Unk8 {
+        public const string LR_HR_Build_Multiplier_by_HP_8_displayName = "LR/HR Build Multiplier by HP 8";
+        public const int LR_HR_Build_Multiplier_by_HP_8_sortIndex = 700;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_8_sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_8_displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_8 {
             get => GetData<float>(64);
             set {
                 if (GetData<float>(64) == value) return;
-                SetData(64, value, nameof(Unk8));
+                SetData(64, value, nameof(LR_HR_Build_Multiplier_by_HP_8));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk8));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_8));
             }
         }
 
-        public const string Unk9_displayName = "Unk9";
-        public const int Unk9_sortIndex = 750;
-        [SortOrder(Unk9_sortIndex)]
-        [DisplayName(Unk9_displayName)]
-        public virtual float Unk9 {
+        public const string LR_HR_Build_Multiplier_by_HP_9_displayName = "LR/HR Build Multiplier by HP 9";
+        public const int LR_HR_Build_Multiplier_by_HP_9_sortIndex = 750;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_9_sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_9_displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_9 {
             get => GetData<float>(68);
             set {
                 if (GetData<float>(68) == value) return;
-                SetData(68, value, nameof(Unk9));
+                SetData(68, value, nameof(LR_HR_Build_Multiplier_by_HP_9));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk9));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_9));
             }
         }
 
-        public const string Unk10_displayName = "Unk10";
-        public const int Unk10_sortIndex = 800;
-        [SortOrder(Unk10_sortIndex)]
-        [DisplayName(Unk10_displayName)]
-        public virtual float Unk10 {
+        public const string LR_HR_Build_Multiplier_by_HP_10_displayName = "LR/HR Build Multiplier by HP 10";
+        public const int LR_HR_Build_Multiplier_by_HP_10_sortIndex = 800;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_10_sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_10_displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_10 {
             get => GetData<float>(72);
             set {
                 if (GetData<float>(72) == value) return;
-                SetData(72, value, nameof(Unk10));
+                SetData(72, value, nameof(LR_HR_Build_Multiplier_by_HP_10));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk10));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_10));
             }
         }
 
-        public const string Unk11_displayName = "Unk11";
-        public const int Unk11_sortIndex = 850;
-        [SortOrder(Unk11_sortIndex)]
-        [DisplayName(Unk11_displayName)]
-        public virtual float Unk11 {
+        public const string LR_HR_Decay_displayName = "LR/HR Decay";
+        public const int LR_HR_Decay_sortIndex = 850;
+        [SortOrder(LR_HR_Decay_sortIndex)]
+        [DisplayName(LR_HR_Decay_displayName)]
+        public virtual float LR_HR_Decay {
             get => GetData<float>(76);
             set {
                 if (GetData<float>(76) == value) return;
-                SetData(76, value, nameof(Unk11));
+                SetData(76, value, nameof(LR_HR_Decay));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk11));
+                OnPropertyChanged(nameof(LR_HR_Decay));
             }
         }
 
@@ -321,157 +321,157 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public const string Unk12_displayName = "Unk12";
-        public const int Unk12_sortIndex = 1150;
-        [SortOrder(Unk12_sortIndex)]
-        [DisplayName(Unk12_displayName)]
-        public virtual float Unk12 {
+        public const string MR_Build_Multiplier_by_HP_1_displayName = "MR Build Multiplier by HP 1";
+        public const int MR_Build_Multiplier_by_HP_1_sortIndex = 1150;
+        [SortOrder(MR_Build_Multiplier_by_HP_1_sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_1_displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_1 {
             get => GetData<float>(100);
             set {
                 if (GetData<float>(100) == value) return;
-                SetData(100, value, nameof(Unk12));
+                SetData(100, value, nameof(MR_Build_Multiplier_by_HP_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk12));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_1));
             }
         }
 
-        public const string Unk13_displayName = "Unk13";
-        public const int Unk13_sortIndex = 1200;
-        [SortOrder(Unk13_sortIndex)]
-        [DisplayName(Unk13_displayName)]
-        public virtual float Unk13 {
+        public const string MR_Build_Multiplier_by_HP_2_displayName = "MR Build Multiplier by HP 2";
+        public const int MR_Build_Multiplier_by_HP_2_sortIndex = 1200;
+        [SortOrder(MR_Build_Multiplier_by_HP_2_sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_2_displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_2 {
             get => GetData<float>(104);
             set {
                 if (GetData<float>(104) == value) return;
-                SetData(104, value, nameof(Unk13));
+                SetData(104, value, nameof(MR_Build_Multiplier_by_HP_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk13));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_2));
             }
         }
 
-        public const string Unk14_displayName = "Unk14";
-        public const int Unk14_sortIndex = 1250;
-        [SortOrder(Unk14_sortIndex)]
-        [DisplayName(Unk14_displayName)]
-        public virtual float Unk14 {
+        public const string MR_Build_Multiplier_by_HP_3_displayName = "MR Build Multiplier by HP 3";
+        public const int MR_Build_Multiplier_by_HP_3_sortIndex = 1250;
+        [SortOrder(MR_Build_Multiplier_by_HP_3_sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_3_displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_3 {
             get => GetData<float>(108);
             set {
                 if (GetData<float>(108) == value) return;
-                SetData(108, value, nameof(Unk14));
+                SetData(108, value, nameof(MR_Build_Multiplier_by_HP_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk14));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_3));
             }
         }
 
-        public const string Unk15_displayName = "Unk15";
-        public const int Unk15_sortIndex = 1300;
-        [SortOrder(Unk15_sortIndex)]
-        [DisplayName(Unk15_displayName)]
-        public virtual float Unk15 {
+        public const string MR_Build_Multiplier_by_HP_4_displayName = "MR Build Multiplier by HP 4";
+        public const int MR_Build_Multiplier_by_HP_4_sortIndex = 1300;
+        [SortOrder(MR_Build_Multiplier_by_HP_4_sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_4_displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_4 {
             get => GetData<float>(112);
             set {
                 if (GetData<float>(112) == value) return;
-                SetData(112, value, nameof(Unk15));
+                SetData(112, value, nameof(MR_Build_Multiplier_by_HP_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk15));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_4));
             }
         }
 
-        public const string Unk16_displayName = "Unk16";
-        public const int Unk16_sortIndex = 1350;
-        [SortOrder(Unk16_sortIndex)]
-        [DisplayName(Unk16_displayName)]
-        public virtual float Unk16 {
+        public const string MR_Build_Multiplier_by_HP_5_displayName = "MR Build Multiplier by HP 5";
+        public const int MR_Build_Multiplier_by_HP_5_sortIndex = 1350;
+        [SortOrder(MR_Build_Multiplier_by_HP_5_sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_5_displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_5 {
             get => GetData<float>(116);
             set {
                 if (GetData<float>(116) == value) return;
-                SetData(116, value, nameof(Unk16));
+                SetData(116, value, nameof(MR_Build_Multiplier_by_HP_5));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk16));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_5));
             }
         }
 
-        public const string Unk17_displayName = "Unk17";
-        public const int Unk17_sortIndex = 1400;
-        [SortOrder(Unk17_sortIndex)]
-        [DisplayName(Unk17_displayName)]
-        public virtual float Unk17 {
+        public const string MR_Build_Multiplier_by_HP_6_displayName = "MR Build Multiplier by HP 6";
+        public const int MR_Build_Multiplier_by_HP_6_sortIndex = 1400;
+        [SortOrder(MR_Build_Multiplier_by_HP_6_sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_6_displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_6 {
             get => GetData<float>(120);
             set {
                 if (GetData<float>(120) == value) return;
-                SetData(120, value, nameof(Unk17));
+                SetData(120, value, nameof(MR_Build_Multiplier_by_HP_6));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk17));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_6));
             }
         }
 
-        public const string Unk18_displayName = "Unk18";
-        public const int Unk18_sortIndex = 1450;
-        [SortOrder(Unk18_sortIndex)]
-        [DisplayName(Unk18_displayName)]
-        public virtual float Unk18 {
+        public const string MR_Build_Multiplier_by_HP_7_displayName = "MR Build Multiplier by HP 7";
+        public const int MR_Build_Multiplier_by_HP_7_sortIndex = 1450;
+        [SortOrder(MR_Build_Multiplier_by_HP_7_sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_7_displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_7 {
             get => GetData<float>(124);
             set {
                 if (GetData<float>(124) == value) return;
-                SetData(124, value, nameof(Unk18));
+                SetData(124, value, nameof(MR_Build_Multiplier_by_HP_7));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk18));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_7));
             }
         }
 
-        public const string Unk19_displayName = "Unk19";
-        public const int Unk19_sortIndex = 1500;
-        [SortOrder(Unk19_sortIndex)]
-        [DisplayName(Unk19_displayName)]
-        public virtual float Unk19 {
+        public const string MR_Build_Multiplier_by_HP_8_displayName = "MR Build Multiplier by HP 8";
+        public const int MR_Build_Multiplier_by_HP_8_sortIndex = 1500;
+        [SortOrder(MR_Build_Multiplier_by_HP_8_sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_8_displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_8 {
             get => GetData<float>(128);
             set {
                 if (GetData<float>(128) == value) return;
-                SetData(128, value, nameof(Unk19));
+                SetData(128, value, nameof(MR_Build_Multiplier_by_HP_8));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk19));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_8));
             }
         }
 
-        public const string Unk20_displayName = "Unk20";
-        public const int Unk20_sortIndex = 1550;
-        [SortOrder(Unk20_sortIndex)]
-        [DisplayName(Unk20_displayName)]
-        public virtual float Unk20 {
+        public const string MR_Build_Multiplier_by_HP_9_displayName = "MR Build Multiplier by HP 9";
+        public const int MR_Build_Multiplier_by_HP_9_sortIndex = 1550;
+        [SortOrder(MR_Build_Multiplier_by_HP_9_sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_9_displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_9 {
             get => GetData<float>(132);
             set {
                 if (GetData<float>(132) == value) return;
-                SetData(132, value, nameof(Unk20));
+                SetData(132, value, nameof(MR_Build_Multiplier_by_HP_9));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk20));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_9));
             }
         }
 
-        public const string Unk21_displayName = "Unk21";
-        public const int Unk21_sortIndex = 1600;
-        [SortOrder(Unk21_sortIndex)]
-        [DisplayName(Unk21_displayName)]
-        public virtual float Unk21 {
+        public const string MR_Build_Multiplier_by_HP_10_displayName = "MR Build Multiplier by HP 10";
+        public const int MR_Build_Multiplier_by_HP_10_sortIndex = 1600;
+        [SortOrder(MR_Build_Multiplier_by_HP_10_sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_10_displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_10 {
             get => GetData<float>(136);
             set {
                 if (GetData<float>(136) == value) return;
-                SetData(136, value, nameof(Unk21));
+                SetData(136, value, nameof(MR_Build_Multiplier_by_HP_10));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk21));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_10));
             }
         }
 
-        public const string Unk22_displayName = "Unk22";
-        public const int Unk22_sortIndex = 1650;
-        [SortOrder(Unk22_sortIndex)]
-        [DisplayName(Unk22_displayName)]
-        public virtual float Unk22 {
+        public const string MR_Decay_displayName = "MR Decay";
+        public const int MR_Decay_sortIndex = 1650;
+        [SortOrder(MR_Decay_sortIndex)]
+        [DisplayName(MR_Decay_displayName)]
+        public virtual float MR_Decay {
             get => GetData<float>(140);
             set {
                 if (GetData<float>(140) == value) return;
-                SetData(140, value, nameof(Unk22));
+                SetData(140, value, nameof(MR_Decay));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk22));
+                OnPropertyChanged(nameof(MR_Decay));
             }
         }
 
