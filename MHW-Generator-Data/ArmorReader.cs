@@ -8,18 +8,17 @@ namespace MHW_Generator_Data {
             // ReSharper disable once StringLiteralTypo
             const string targetFile = @"V:\MHW\IB\chunk_combined\common\equip\armor.am_dat";
 
-            using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
-                dat.BaseStream.Seek(6, SeekOrigin.Begin);
-                var count = dat.ReadUInt32();
+            using var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read));
+            dat.BaseStream.Seek(6, SeekOrigin.Begin);
+            var count = dat.ReadUInt32();
 
-                dat.BaseStream.Seek(10, SeekOrigin.Begin);
+            dat.BaseStream.Seek(10, SeekOrigin.Begin);
 
-                for (var i = 0; i < count; i++) {
-                    var position = dat.BaseStream.Position;
-                    var buff = dat.ReadBytes((int) Armor.StructSize);
+            for (var i = 0; i < count; i++) {
+                var position = dat.BaseStream.Position;
+                var buff = dat.ReadBytes((int) Armor.StructSize);
 
-                    yield return new Armor(buff, (ulong) position);
-                }
+                yield return new Armor(buff, (ulong) position);
             }
         }
     }

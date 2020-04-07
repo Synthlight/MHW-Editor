@@ -17,6 +17,7 @@ namespace MHW_Generator_Data {
 
         [STAThread]
         public static void Main() {
+            CreateWeaponDataLookup();
             CreateArmorDataValueClass();
             CreateSkillDataValueClass();
             GenButtonLocalizationAndIdList();
@@ -25,6 +26,12 @@ namespace MHW_Generator_Data {
             if (Environment.GetCommandLineArgs().ContainsIgnoreCase("-skipExtract")) return;
 
             GenOutdatedHashes(); // This takes a while as it does extraction.
+        }
+
+        private static void CreateWeaponDataLookup() {
+            var weapons = WeaponReader.GetAllWeapons();
+            var destFile = $@"{Global.ASSETS_ROOT}\WeaponNameLookup.json"; // Same as weaponData we have, but ID lookup instead of GMD.
+            File.WriteAllText(destFile, JsonConvert.SerializeObject(weapons, Formatting.Indented));
         }
 
         private static void GenButtonLocalizationAndIdList() {

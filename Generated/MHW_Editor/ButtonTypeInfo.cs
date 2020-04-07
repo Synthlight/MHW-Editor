@@ -27,6 +27,7 @@ namespace MHW_Editor {
             "QuestRewardInternal",
             "Ranged",
             "RoomFurniture",
+            "SafiItemLottery",
             "SkillDat",
             "SteamRewardList",
             "SwapItem",
@@ -72,6 +73,7 @@ namespace MHW_Editor {
             "Unlock_Skill_2_button",
             "Unlock_Skill_3_button",
             "Unlock_Skill_4_button",
+            "Weapon_Id_button",
         };
 
         public static readonly List<string> BUTTON_BASE_NAMES = new List<string> {
@@ -111,6 +113,7 @@ namespace MHW_Editor {
             "Unlock_Skill_2",
             "Unlock_Skill_3",
             "Unlock_Skill_4",
+            "Weapon_Id",
         };
     }
 }

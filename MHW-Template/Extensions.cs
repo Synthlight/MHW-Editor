@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using MHW_Template.Weapons;
 
 namespace MHW_Template {
     public static class Extensions {
@@ -94,6 +95,30 @@ namespace MHW_Template {
             if (dict.ContainsKey(key)) return dict[key];
             dict[key] = new List<V>();
             return dict[key];
+        }
+
+        public static string ToDatFileName(this WeaponType weaponType) {
+            switch (weaponType) {
+                case WeaponType.Greatsword: return "l_sword.wp_dat";
+                case WeaponType.Sword_and_Shield: return "sword.wp_dat";
+                case WeaponType.Dual_Blades: return "w_sword.wp_dat";
+                case WeaponType.Longsword: return "tachi.wp_dat";
+                case WeaponType.Hammer: return "hammer.wp_dat";
+                case WeaponType.Hunting_Horn: return "whistle.wp_dat";
+                case WeaponType.Lance: return "lance.wp_dat";
+                case WeaponType.Gunlance: return "g_lance.wp_dat";
+                case WeaponType.Switch_Axe: return "s_axe.wp_dat";
+                case WeaponType.Charge_Blade: return "c_axe.wp_dat";
+                case WeaponType.Insect_Glaive: return "rod.wp_dat";
+                case WeaponType.Bow: return "bow.wp_dat_g";
+                case WeaponType.Light_Bowgun: return "lbg.wp_dat_g";
+                case WeaponType.Heavy_Bowgun: return "hbg.wp_dat_g";
+                default: return null;
+            }
+        }
+
+        public static string ToDatFileName(this WeaponTypeOnlyWeapons weaponType) {
+            return ((WeaponType) weaponType).ToDatFileName();
         }
     }
 }

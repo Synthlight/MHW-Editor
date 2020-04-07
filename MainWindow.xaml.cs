@@ -29,6 +29,7 @@ using MHW_Editor.Weapons;
 using MHW_Editor.Weapons.Collision;
 using MHW_Template;
 using MHW_Template.Models;
+using MHW_Template.Weapons;
 using Microsoft.Win32;
 using Newtonsoft.Json;
 using NotifyIcon = System.Windows.Forms.NotifyIcon;
@@ -535,6 +536,7 @@ namespace MHW_Editor {
                 DataSourceType.Items => DataHelper.itemNames[locale],
                 DataSourceType.Skills => DataHelper.skillNames[locale],
                 DataSourceType.SkillDat => skillDatLookup[locale],
+                DataSourceType.CategorizedWeapons => DataHelper.weaponIdNameLookup[GetWeaponType(cell)][locale],
                 _ => throw new ArgumentOutOfRangeException(dataSourceType.ToString())
             };
 
@@ -546,6 +548,14 @@ namespace MHW_Editor {
                 property.SetValue(obj, Convert.ChangeType(getNewItemId.CurrentItem, propertyType));
                 obj.OnPropertyChanged(propertyName);
             }
+        }
+
+        private static WeaponTypeOnlyWeapons GetWeaponType(FrameworkElement cell) {
+            var obj = (MhwItem) cell.DataContext;
+            var property = obj.GetType().GetProperty("Weapon_Type", BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
+            Debug.Assert(property != null, nameof(property) + " != null");
+            var value = property.GetValue(obj);
+            return (WeaponTypeOnlyWeapons) value;
         }
 
         private void Dg_items_Sorting(object sender, DataGridSortingEventArgs e) {
@@ -1111,6 +1121,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".diot")) return typeof(DecoLottery);
             if (fileName.EndsWith(".dtt_agr")) return typeof(MonsterEnrage);
             if (fileName.EndsWith(".em104exp")) return typeof(AwakenedExp);
+            if (fileName.EndsWith(".em104iot")) return typeof(SafiItemLottery);
             if (fileName.EndsWith(".em104lb")) return typeof(AwakenedLimitBreak);
             if (fileName.EndsWith(".em104lbr")) return typeof(AwakenedLimitBreakR);
             if (fileName.EndsWith(".em104wcd")) return typeof(AwakenedWpCustom);

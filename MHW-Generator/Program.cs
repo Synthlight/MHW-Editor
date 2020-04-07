@@ -56,6 +56,7 @@ namespace MHW_Generator {
             GenRanged();
             GenRodInsect();
             GenRoomFurniture();
+            GenSafiItemLottery();
             GenSharpness();
             GenShellTable();
             GenShopSed();
@@ -74,6 +75,36 @@ namespace MHW_Generator {
             GenWeaponWSword();
 
             GenCommonPl();
+        }
+
+        private static void GenSafiItemLottery() {
+            GenerateItemProps("MHW_Editor.Items", "SafiItemLottery", new MhwStructData { // .em104iot
+                size = 72,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                autoOffset = true,
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Index", typeof(uint)),
+                    new MhwStructData.Entry("Weapon Type", typeof(uint), enumReturn: typeof(WeaponTypeOnlyWeapons), extraOnPropertyChanged: new[] {"Weapon_Id_button"}),
+                    new MhwStructData.Entry("Weapon Id", typeof(uint), dataSourceType: DataSourceType.CategorizedWeapons),
+                    new MhwStructData.Entry("All Rarity", typeof(uint)),
+                    new MhwStructData.Entry("GS Rarity", typeof(uint)),
+                    new MhwStructData.Entry("LS Rarity", typeof(uint)),
+                    new MhwStructData.Entry("SnS Rarity", typeof(uint)),
+                    new MhwStructData.Entry("DB Rarity", typeof(uint)),
+                    new MhwStructData.Entry("Lance Rarity", typeof(uint)),
+                    new MhwStructData.Entry("GL Rarity", typeof(uint)),
+                    new MhwStructData.Entry("Hammer Rarity", typeof(uint)),
+                    new MhwStructData.Entry("HH Rarity", typeof(uint)),
+                    new MhwStructData.Entry("SA Rarity", typeof(uint)),
+                    new MhwStructData.Entry("CB Rarity", typeof(uint)),
+                    new MhwStructData.Entry("IG Rarity", typeof(uint)),
+                    new MhwStructData.Entry("LBG Rarity", typeof(uint)),
+                    new MhwStructData.Entry("HBG Rarity", typeof(uint)),
+                    new MhwStructData.Entry("Bow Rarity", typeof(uint))
+                }
+            });
         }
 
         private static void GenAwakenedWpUpgrade() {

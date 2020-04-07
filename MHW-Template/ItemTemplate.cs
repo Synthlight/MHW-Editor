@@ -186,6 +186,9 @@ namespace MHW_Template
                 case DataSourceType.SkillDat:
                     dataSourceLookup = "MainWindow.skillDatLookup[MainWindow.locale]";
                     break;
+                case DataSourceType.CategorizedWeapons:
+                    dataSourceLookup = "DataHelper.weaponIdNameLookup[Weapon_Type][MainWindow.locale]";
+                    break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
@@ -205,7 +208,7 @@ namespace MHW_Template
             #line hidden
             this.Write("\r\n        public const int lastSortIndex = ");
             
-            #line 145 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 148 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(sortIndex));
             
             #line default

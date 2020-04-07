@@ -2,6 +2,7 @@
 using System.Text;
 using MHW_Template;
 using MHW_Template.Models;
+using MHW_Template.Weapons;
 using Newtonsoft.Json;
 
 namespace MHW_Editor.Assets {
@@ -24,9 +25,11 @@ namespace MHW_Editor.Assets {
         public static readonly Dictionary<uint, string> songNames = new Dictionary<uint, string>(); // Has no lang.
         public static readonly Dictionary<string, LangMap> weaponData = new Dictionary<string, LangMap>(); // Has wp file name too. Uses GMD reference.
         public static readonly Dictionary<string, Dictionary<int, NameDescPair>> collisionTranslationsData;
+        public static readonly Dictionary<WeaponTypeOnlyWeapons, LangMap> weaponIdNameLookup;
 
         static DataHelper() {
             collisionTranslationsData = LoadDict<string, Dictionary<int, NameDescPair>>(Assets.CollisionTranslationsData);
+            weaponIdNameLookup = LoadDict<WeaponTypeOnlyWeapons, LangMap>(Assets.WeaponNameLookup);
 
             foreach (var lang in Global.LANGUAGES) {
                 ParseItemData(lang);

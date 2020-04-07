@@ -127,6 +127,9 @@ namespace <#= _namespace #> {
                 case DataSourceType.SkillDat:
                     dataSourceLookup = "MainWindow.skillDatLookup[MainWindow.locale]";
                     break;
+                case DataSourceType.CategorizedWeapons:
+                    dataSourceLookup = "DataHelper.weaponIdNameLookup[Weapon_Type][MainWindow.locale]";
+                    break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }

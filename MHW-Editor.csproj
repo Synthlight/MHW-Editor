@@ -128,6 +128,7 @@
     <Compile Include="Generated\MHW_Editor\Items\PlantItem.cs" />
     <Compile Include="Generated\MHW_Editor\Items\QuestReward.cs" />
     <Compile Include="Generated\MHW_Editor\Items\RoomFurniture.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\SafiItemLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ShopSed.cs" />
     <Compile Include="Generated\MHW_Editor\Items\SteamRewardList.cs" />
     <Compile Include="Generated\MHW_Editor\Items\SwapC.cs" />
@@ -175,6 +176,7 @@
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
     <Compile Include="Items\ItemDelivery.cs" />
+    <Compile Include="Items\SafiItemLottery.cs" />
     <Compile Include="Items\RoomFurniture.cs" />
     <Compile Include="Models\IsReadOnlyAttribute.cs" />
     <Compile Include="Monsters\AnimalSize.cs" />
@@ -659,6 +661,7 @@
     <None Include="Assets\WeaponData\spa_tachi.json" />
     <None Include="Assets\WeaponData\spa_whistle.json" />
     <None Include="Assets\WeaponData\spa_w_sword.json" />
+    <None Include="Assets\WeaponNameLookup.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

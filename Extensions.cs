@@ -5,6 +5,8 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using MHW_Editor.Weapons;
+using MHW_Template.Weapons;
 
 namespace MHW_Editor {
     public static class Extensions {
@@ -94,6 +96,32 @@ namespace MHW_Editor {
             }
 
             return d as T;
+        }
+
+        public static Type ToClassType(this WeaponType weaponType) {
+            switch (weaponType) {
+                case WeaponType.Greatsword:
+                case WeaponType.Sword_and_Shield:
+                case WeaponType.Dual_Blades:
+                case WeaponType.Longsword:
+                case WeaponType.Hammer:
+                case WeaponType.Hunting_Horn:
+                case WeaponType.Lance:
+                case WeaponType.Gunlance:
+                case WeaponType.Switch_Axe:
+                case WeaponType.Charge_Blade:
+                case WeaponType.Insect_Glaive:
+                    return typeof(Melee);
+                case WeaponType.Bow: return typeof(Bow);
+                case WeaponType.Light_Bowgun:
+                case WeaponType.Heavy_Bowgun:
+                    return typeof(BowGun);
+                default: return null;
+            }
+        }
+
+        public static Type ToClassType(this WeaponTypeOnlyWeapons weaponType) {
+            return ((WeaponType) weaponType).ToClassType();
         }
     }
 }

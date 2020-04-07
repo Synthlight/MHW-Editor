@@ -1060,4 +1060,7 @@
   <data name="spa_w_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_w_sword.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="WeaponNameLookup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>weaponnamelookup.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
