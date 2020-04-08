@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using MHW_Editor.Weapons;
+using MHW_Template;
 using MHW_Template.Weapons;
 
 namespace MHW_Editor {
@@ -122,6 +125,15 @@ namespace MHW_Editor {
 
         public static Type ToClassType(this WeaponTypeOnlyWeapons weaponType) {
             return ((WeaponType) weaponType).ToClassType();
+        }
+
+        public static string ReadNullTermString(this BinaryReader reader) {
+            var stringBytes = new List<byte>();
+            do {
+                stringBytes.Add(reader.ReadByte());
+            } while (stringBytes[stringBytes.Count - 1] != 0);
+
+            return Encoding.UTF8.GetString(stringBytes.Subsequence(0, stringBytes.Count).ToArray());
         }
     }
 }

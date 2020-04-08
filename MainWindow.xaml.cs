@@ -673,10 +673,10 @@ namespace MHW_Editor {
 
             GC.Collect();
 
-            if (targetFileType.Is(typeof(Collision))) { // Custom save/load.
 #if !DEBUG
-                try {
+            try {
 #endif
+            if (targetFileType.Is(typeof(Collision))) { // Custom save/load.
                 scroll_viewer.Visibility = Visibility.Visible;
                 mainDataGrid.Visibility = Visibility.Collapsed;
 
@@ -684,12 +684,12 @@ namespace MHW_Editor {
 
                 Collision.SetupViews(customFileData, grid, this);
                 return;
-#if !DEBUG
-                } catch (Exception e) {
-                    MessageBox.Show(this, e.Message, "Load Error");
-                }
-#endif
             }
+#if !DEBUG
+            } catch (Exception e) {
+                MessageBox.Show(this, e.Message, "Load Error");
+            }
+#endif
 
             LoadFile();
 

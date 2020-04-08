@@ -53,21 +53,15 @@ namespace MHW_Editor.Weapons.Collision {
             var names = new List<Name>();
 
             for (uint i = 0; i < count; i++) {
-                var name = new Name(targetFile);
-
-                var stringBytes = new List<byte>();
-                do {
-                    stringBytes.Add(reader.ReadByte());
-                } while (stringBytes[stringBytes.Count - 1] != 0);
-
-                name.name = Encoding.UTF8.GetString(stringBytes.Subsequence(0, stringBytes.Count).ToArray());
-
-                name.clgmId = reader.ReadInt32();
-                name.moveId = reader.ReadInt32();
-                name.unk2 = reader.ReadInt32();
-                name.unk3 = reader.ReadUInt16();
-                name.unk4 = reader.ReadByte();
-                name.unk5 = reader.ReadUInt32();
+                var name = new Name(targetFile) {
+                    name = reader.ReadNullTermString(),
+                    clgmId = reader.ReadInt32(),
+                    moveId = reader.ReadInt32(),
+                    unk2 = reader.ReadInt32(),
+                    unk3 = reader.ReadUInt16(),
+                    unk4 = reader.ReadByte(),
+                    unk5 = reader.ReadUInt32()
+                };
 
                 name.Init();
 

@@ -9,10 +9,10 @@ namespace MHW_Generator {
 
         private static void GenCommonPl() {
             GenPlItemParam();
-            GenPlPlayerParam();
             GenPlMantleParam();
-            GenPlSkillParam();
             GenPlMusicSkillParam();
+            GenPlPlayerParam();
+            GenPlSkillParam();
             GenWp10Param();
             GenWp11Param();
             GenWp13Param();
