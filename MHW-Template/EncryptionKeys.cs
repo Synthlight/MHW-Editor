@@ -35,7 +35,7 @@ namespace MHW_Template {
             {".plsp", PL_PARAM_KEY},
             {".rod_inse", ROD_INSE_KEY},
             {".shlp", OWP_DAT_KEY},
-            {".stlst", OWP_DAT_KEY},
+            {".stlst", STLST_KEY},
             {".w00p", PL_PARAM_KEY},
             {".w01p", PL_PARAM_KEY},
             {".w02p", PL_PARAM_KEY},
