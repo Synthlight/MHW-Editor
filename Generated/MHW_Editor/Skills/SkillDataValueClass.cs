@@ -194,5 +194,8 @@ namespace MHW_Editor.Skills {
         public const ushort Safi_jiiva_Seal = 211;
         public const ushort Joyful_Blessing = 212;
         public const ushort Appreciation_Blessing = 213;
+        public const ushort Full_Bloom_Blessing = 214;
+        public const ushort Rajang_Will = 217;
+        public const ushort Brachydios_Will = 218;
     }
 }
