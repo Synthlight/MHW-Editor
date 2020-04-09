@@ -25,6 +25,7 @@ namespace MHW_Editor {
             {"customOuterLance.cus_ou", 3136},
             {"customOuterLbg.cus_ou", 5520},
             {"customOuterLswd.cus_ou", 3024},
+            {"customOuterRecipe.cus_otr", 5312},
             {"customOuterRod.cus_ou", 3024},
             {"customOuterSaxe.cus_ou", 3136},
             {"customOuterSwd.cus_ou", 3136},

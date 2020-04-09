@@ -22,6 +22,7 @@ namespace MHW_Template {
         public static readonly Dictionary<string, string> FILE_EXT_KEY_LOOKUP = new Dictionary<string, string> {
             {".aeq", UNKNOWN_KEY_3},
             {".asp", ASKILLP_KEY},
+            {".cus_otr", CUS_PAR_KEY},
             {".cus_ou", CUS_PAR_KEY},
             {".cus_pa", CUS_PAR_KEY},
             {".cus_par", CUS_PAR_KEY},

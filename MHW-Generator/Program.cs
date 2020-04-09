@@ -22,7 +22,8 @@ namespace MHW_Generator {
             GenAwakenedWpCustom();
             GenAwakenedWpUpgrade();
             GenBottleTable();
-            GenCustomOu();
+            GenCustomOuterRecipe();
+            GenCustomOuterWeapon();
             GenCustomParts();
             GenCustomPartsR();
             GenDecoGradeLottery();
@@ -78,7 +79,37 @@ namespace MHW_Generator {
             GenCommonPl();
         }
 
-        private static void GenCustomOu() {
+        private static void GenCustomOuterRecipe() {
+            GenerateItemProps("MHW_Editor.Weapons", "CustomOuterRecipe", new MhwStructData { // .cus_otr
+                size = 31,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                autoOffset = true,
+                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_otr"],
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Unk1", typeof(byte)),
+                    new MhwStructData.Entry("Needed Item Id to Unlock", typeof(ushort), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Unk3", typeof(int)),
+                    new MhwStructData.Entry("Unk4", typeof(int)),
+                    new MhwStructData.Entry("Cost", typeof(uint)),
+                    new MhwStructData.Entry("Mat 1 Id", typeof(ushort), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Mat 1 Count", typeof(byte)),
+                    new MhwStructData.Entry("Mat 2 Id", typeof(ushort), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Mat 2 Count", typeof(byte)),
+                    new MhwStructData.Entry("Mat 3 Id", typeof(ushort), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Mat 3 Count", typeof(byte)),
+                    new MhwStructData.Entry("Mat 4 Id", typeof(ushort), dataSourceType: DataSourceType.Items),
+                    new MhwStructData.Entry("Mat 4 Count", typeof(byte)),
+                    new MhwStructData.Entry("Unk5", typeof(byte)),
+                    new MhwStructData.Entry("Unk6", typeof(byte)),
+                    new MhwStructData.Entry("Unk7", typeof(byte)),
+                    new MhwStructData.Entry("Unk8", typeof(byte))
+                }
+            });
+        }
+
+        private static void GenCustomOuterWeapon() {
             GenerateItemProps("MHW_Editor.Weapons", "CustomOuterWeapon", new MhwStructData { // .cus_ou
                 size = 35,
                 offsetInitial = 10,

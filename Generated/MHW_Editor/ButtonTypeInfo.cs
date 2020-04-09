@@ -9,6 +9,7 @@ namespace MHW_Editor {
             "Bounty",
             "Bow",
             "BowGun",
+            "CustomOuterRecipe",
             "CustomPartsR",
             "EqCrt",
             "EqCus",

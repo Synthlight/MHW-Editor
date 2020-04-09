@@ -157,6 +157,7 @@
     <Compile Include="Generated\MHW_Editor\Weapons\AwakenedLimitBreakR.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\AwakenedWpCustom.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\AwakenedWpUpgrade.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\CustomOuterRecipe.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\CustomOuterWeapon.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\CustomParts.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\CustomPartsR.cs" />
@@ -273,6 +274,7 @@
     <Compile Include="Weapons\Collision\Models\OapInner2.cs" />
     <Compile Include="Weapons\Collision\Models\OapInner1.cs" />
     <Compile Include="Weapons\AwakenedLimitBreak.cs" />
+    <Compile Include="Weapons\CustomOuterRecipe.cs" />
     <Compile Include="Weapons\CustomOuterWeapon.cs" />
     <Compile Include="Weapons\CustomPartsR.cs" />
     <Compile Include="Weapons\CustomParts.cs" />
