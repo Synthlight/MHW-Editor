@@ -1128,7 +1128,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".bbtbl")) return typeof(BottleTable);
             if (fileName.EndsWith(".ch_dat")) return typeof(PendantData);
             if (fileName.EndsWith(".col")) return typeof(Collision);
-            if (fileName.EndsWith(".cus_ou")) return typeof(CustomOu);
+            if (fileName.EndsWith(".cus_ou")) return typeof(CustomOuterWeapon);
             if (fileName.EndsWith(".cus_pa")) return typeof(CustomParts);
             if (fileName.EndsWith(".cus_par")) return typeof(CustomPartsR);
             if (fileName.EndsWith(".dglt")) return typeof(DecoGradeLottery);

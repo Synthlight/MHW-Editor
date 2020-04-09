@@ -4,7 +4,7 @@ namespace MHW_Editor.Weapons {
     // Struct Size: "35"
     // Initial Offset: "10"
     // Unique Id Formula: "{Index}"
-    public struct CustomOu {
+    public struct CustomOuterWeapon {
         public uint Unk1; // Offset: 0
         public uint Unk2; // Offset: 4
         public int Unk3; // Offset: 8

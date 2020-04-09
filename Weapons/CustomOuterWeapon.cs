@@ -2,8 +2,8 @@
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons {
-    public partial class CustomOu : MhwItem {
-        public CustomOu(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class CustomOuterWeapon : MhwItem {
+        public CustomOuterWeapon(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
         [DisplayName("")]

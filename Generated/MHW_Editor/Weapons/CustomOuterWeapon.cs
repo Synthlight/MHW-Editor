@@ -6,7 +6,7 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Weapons {
-    public partial class CustomOu {
+    public partial class CustomOuterWeapon {
         public const uint StructSize = 35;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;

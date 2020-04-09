@@ -79,7 +79,7 @@ namespace MHW_Generator {
         }
 
         private static void GenCustomOu() {
-            GenerateItemProps("MHW_Editor.Weapons", "CustomOu", new MhwStructData { // .cus_ou
+            GenerateItemProps("MHW_Editor.Weapons", "CustomOuterWeapon", new MhwStructData { // .cus_ou
                 size = 35,
                 offsetInitial = 10,
                 entryCountOffset = 6,
