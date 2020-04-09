@@ -1349,7 +1349,7 @@ namespace MHW_Generator {
 
             entries.AddRange(new List<MhwStructData.Entry> {
                 Spacer,
-                new MhwStructData.Entry("------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry("------Skipping ahead.", 3, typeof(byte), true, forceUnique: true, addOffset: 12),
                 Spacer,
 
                 // HR Augment.
@@ -1496,7 +1496,7 @@ namespace MHW_Generator {
 
             entries.AddRange(new List<MhwStructData.Entry> {
                 Spacer,
-                new MhwStructData.Entry("------Skipping ahead.", 3, typeof(byte), true, forceUnique: true),
+                new MhwStructData.Entry("------Skipping ahead.", 3, typeof(byte), true, forceUnique: true, addOffset: 40),
                 Spacer,
 
                 new MhwStructData.Entry("Gesture: Dragoon Jump Loop Time", 17801, typeof(float)),

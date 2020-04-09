@@ -4528,10 +4528,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(__15950_displayName)]
         [IsReadOnly]
         public virtual byte __15950 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(15);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__15950));
+                if (GetData<byte>(15) == value) return;
+                SetData(15, value, nameof(__15950));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__15950));
             }
@@ -4542,10 +4542,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Attack_Bonus_1__sortIndex)]
         [DisplayName(Wp_HR_Augment_Attack_Bonus_1__displayName)]
         public virtual byte Wp_HR_Augment_Attack_Bonus_1_ {
-            get => GetData<byte>(8571);
+            get => GetData<byte>(8583);
             set {
-                if (GetData<byte>(8571) == value) return;
-                SetData(8571, value, nameof(Wp_HR_Augment_Attack_Bonus_1_));
+                if (GetData<byte>(8583) == value) return;
+                SetData(8583, value, nameof(Wp_HR_Augment_Attack_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Attack_Bonus_1_));
             }
@@ -4556,10 +4556,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Attack_Bonus_2__sortIndex)]
         [DisplayName(Wp_HR_Augment_Attack_Bonus_2__displayName)]
         public virtual byte Wp_HR_Augment_Attack_Bonus_2_ {
-            get => GetData<byte>(8572);
+            get => GetData<byte>(8584);
             set {
-                if (GetData<byte>(8572) == value) return;
-                SetData(8572, value, nameof(Wp_HR_Augment_Attack_Bonus_2_));
+                if (GetData<byte>(8584) == value) return;
+                SetData(8584, value, nameof(Wp_HR_Augment_Attack_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Attack_Bonus_2_));
             }
@@ -4570,10 +4570,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Attack_Bonus_3__sortIndex)]
         [DisplayName(Wp_HR_Augment_Attack_Bonus_3__displayName)]
         public virtual byte Wp_HR_Augment_Attack_Bonus_3_ {
-            get => GetData<byte>(8573);
+            get => GetData<byte>(8585);
             set {
-                if (GetData<byte>(8573) == value) return;
-                SetData(8573, value, nameof(Wp_HR_Augment_Attack_Bonus_3_));
+                if (GetData<byte>(8585) == value) return;
+                SetData(8585, value, nameof(Wp_HR_Augment_Attack_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Attack_Bonus_3_));
             }
@@ -4584,10 +4584,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Critical_Bonus_1__sortIndex)]
         [DisplayName(Wp_HR_Augment_Critical_Bonus_1__displayName)]
         public virtual byte Wp_HR_Augment_Critical_Bonus_1_ {
-            get => GetData<byte>(8574);
+            get => GetData<byte>(8586);
             set {
-                if (GetData<byte>(8574) == value) return;
-                SetData(8574, value, nameof(Wp_HR_Augment_Critical_Bonus_1_));
+                if (GetData<byte>(8586) == value) return;
+                SetData(8586, value, nameof(Wp_HR_Augment_Critical_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Critical_Bonus_1_));
             }
@@ -4598,10 +4598,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Critical_Bonus_2__sortIndex)]
         [DisplayName(Wp_HR_Augment_Critical_Bonus_2__displayName)]
         public virtual byte Wp_HR_Augment_Critical_Bonus_2_ {
-            get => GetData<byte>(8575);
+            get => GetData<byte>(8587);
             set {
-                if (GetData<byte>(8575) == value) return;
-                SetData(8575, value, nameof(Wp_HR_Augment_Critical_Bonus_2_));
+                if (GetData<byte>(8587) == value) return;
+                SetData(8587, value, nameof(Wp_HR_Augment_Critical_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Critical_Bonus_2_));
             }
@@ -4612,10 +4612,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Critical_Bonus_3__sortIndex)]
         [DisplayName(Wp_HR_Augment_Critical_Bonus_3__displayName)]
         public virtual byte Wp_HR_Augment_Critical_Bonus_3_ {
-            get => GetData<byte>(8576);
+            get => GetData<byte>(8588);
             set {
-                if (GetData<byte>(8576) == value) return;
-                SetData(8576, value, nameof(Wp_HR_Augment_Critical_Bonus_3_));
+                if (GetData<byte>(8588) == value) return;
+                SetData(8588, value, nameof(Wp_HR_Augment_Critical_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Critical_Bonus_3_));
             }
@@ -4626,10 +4626,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Defense_Bonus_1__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Bonus_1__displayName)]
         public virtual byte Wp_HR_Augment_Defense_Bonus_1_ {
-            get => GetData<byte>(8577);
+            get => GetData<byte>(8589);
             set {
-                if (GetData<byte>(8577) == value) return;
-                SetData(8577, value, nameof(Wp_HR_Augment_Defense_Bonus_1_));
+                if (GetData<byte>(8589) == value) return;
+                SetData(8589, value, nameof(Wp_HR_Augment_Defense_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Bonus_1_));
             }
@@ -4640,10 +4640,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Defense_Bonus_2__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Bonus_2__displayName)]
         public virtual byte Wp_HR_Augment_Defense_Bonus_2_ {
-            get => GetData<byte>(8578);
+            get => GetData<byte>(8590);
             set {
-                if (GetData<byte>(8578) == value) return;
-                SetData(8578, value, nameof(Wp_HR_Augment_Defense_Bonus_2_));
+                if (GetData<byte>(8590) == value) return;
+                SetData(8590, value, nameof(Wp_HR_Augment_Defense_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Bonus_2_));
             }
@@ -4654,10 +4654,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Defense_Bonus_3__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Bonus_3__displayName)]
         public virtual byte Wp_HR_Augment_Defense_Bonus_3_ {
-            get => GetData<byte>(8579);
+            get => GetData<byte>(8591);
             set {
-                if (GetData<byte>(8579) == value) return;
-                SetData(8579, value, nameof(Wp_HR_Augment_Defense_Bonus_3_));
+                if (GetData<byte>(8591) == value) return;
+                SetData(8591, value, nameof(Wp_HR_Augment_Defense_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Bonus_3_));
             }
@@ -4668,10 +4668,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__displayName)]
         public virtual byte Wp_HR_Augment_Defense_Divine_Blessing_Chance_1_ {
-            get => GetData<byte>(8580);
+            get => GetData<byte>(8592);
             set {
-                if (GetData<byte>(8580) == value) return;
-                SetData(8580, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_1_));
+                if (GetData<byte>(8592) == value) return;
+                SetData(8592, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_1_));
             }
@@ -4682,10 +4682,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Defense_Divine_Blessing_Chance_2__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Divine_Blessing_Chance_2__displayName)]
         public virtual byte Wp_HR_Augment_Defense_Divine_Blessing_Chance_2_ {
-            get => GetData<byte>(8581);
+            get => GetData<byte>(8593);
             set {
-                if (GetData<byte>(8581) == value) return;
-                SetData(8581, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_2_));
+                if (GetData<byte>(8593) == value) return;
+                SetData(8593, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_2_));
             }
@@ -4696,10 +4696,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__displayName)]
         public virtual byte Wp_HR_Augment_Defense_Divine_Blessing_Chance_3_ {
-            get => GetData<byte>(8582);
+            get => GetData<byte>(8594);
             set {
-                if (GetData<byte>(8582) == value) return;
-                SetData(8582, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_3_));
+                if (GetData<byte>(8594) == value) return;
+                SetData(8594, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_3_));
             }
@@ -4710,10 +4710,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1__displayName)]
         public virtual float Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1_ {
-            get => GetData<float>(8583);
+            get => GetData<float>(8595);
             set {
-                if (GetData<float>(8583) == value) return;
-                SetData(8583, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1_));
+                if (GetData<float>(8595) == value) return;
+                SetData(8595, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1_));
             }
@@ -4724,10 +4724,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__displayName)]
         public virtual float Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2_ {
-            get => GetData<float>(8587);
+            get => GetData<float>(8599);
             set {
-                if (GetData<float>(8587) == value) return;
-                SetData(8587, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2_));
+                if (GetData<float>(8599) == value) return;
+                SetData(8599, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2_));
             }
@@ -4738,10 +4738,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3__displayName)]
         public virtual float Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3_ {
-            get => GetData<float>(8591);
+            get => GetData<float>(8603);
             set {
-                if (GetData<float>(8591) == value) return;
-                SetData(8591, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3_));
+                if (GetData<float>(8603) == value) return;
+                SetData(8603, value, nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3_));
             }
@@ -4752,10 +4752,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Defense_Heal_Damage_Rate_1__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Heal_Damage_Rate_1__displayName)]
         public virtual float Wp_HR_Augment_Defense_Heal_Damage_Rate_1_ {
-            get => GetData<float>(8595);
+            get => GetData<float>(8607);
             set {
-                if (GetData<float>(8595) == value) return;
-                SetData(8595, value, nameof(Wp_HR_Augment_Defense_Heal_Damage_Rate_1_));
+                if (GetData<float>(8607) == value) return;
+                SetData(8607, value, nameof(Wp_HR_Augment_Defense_Heal_Damage_Rate_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Heal_Damage_Rate_1_));
             }
@@ -4766,10 +4766,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Defense_Heal_Damage_Rate_2__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Heal_Damage_Rate_2__displayName)]
         public virtual float Wp_HR_Augment_Defense_Heal_Damage_Rate_2_ {
-            get => GetData<float>(8599);
+            get => GetData<float>(8611);
             set {
-                if (GetData<float>(8599) == value) return;
-                SetData(8599, value, nameof(Wp_HR_Augment_Defense_Heal_Damage_Rate_2_));
+                if (GetData<float>(8611) == value) return;
+                SetData(8611, value, nameof(Wp_HR_Augment_Defense_Heal_Damage_Rate_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Heal_Damage_Rate_2_));
             }
@@ -4780,10 +4780,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Defense_Heal_Damage_Rate_3__sortIndex)]
         [DisplayName(Wp_HR_Augment_Defense_Heal_Damage_Rate_3__displayName)]
         public virtual float Wp_HR_Augment_Defense_Heal_Damage_Rate_3_ {
-            get => GetData<float>(8603);
+            get => GetData<float>(8615);
             set {
-                if (GetData<float>(8603) == value) return;
-                SetData(8603, value, nameof(Wp_HR_Augment_Defense_Heal_Damage_Rate_3_));
+                if (GetData<float>(8615) == value) return;
+                SetData(8615, value, nameof(Wp_HR_Augment_Defense_Heal_Damage_Rate_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Heal_Damage_Rate_3_));
             }
@@ -4794,10 +4794,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_IB_Unk_sortIndex)]
         [DisplayName(Wp_HR_Augment_IB_Unk_displayName)]
         public virtual float Wp_HR_Augment_IB_Unk {
-            get => GetData<float>(8607);
+            get => GetData<float>(8619);
             set {
-                if (GetData<float>(8607) == value) return;
-                SetData(8607, value, nameof(Wp_HR_Augment_IB_Unk));
+                if (GetData<float>(8619) == value) return;
+                SetData(8619, value, nameof(Wp_HR_Augment_IB_Unk));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_IB_Unk));
             }
@@ -4808,10 +4808,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_HR_Augment_Lifesteal_Cooldown_sortIndex)]
         [DisplayName(Wp_HR_Augment_Lifesteal_Cooldown_displayName)]
         public virtual float Wp_HR_Augment_Lifesteal_Cooldown {
-            get => GetData<float>(8611);
+            get => GetData<float>(8623);
             set {
-                if (GetData<float>(8611) == value) return;
-                SetData(8611, value, nameof(Wp_HR_Augment_Lifesteal_Cooldown));
+                if (GetData<float>(8623) == value) return;
+                SetData(8623, value, nameof(Wp_HR_Augment_Lifesteal_Cooldown));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_HR_Augment_Lifesteal_Cooldown));
             }
@@ -4823,10 +4823,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(__17000_displayName)]
         [IsReadOnly]
         public virtual byte __17000 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(15);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__17000));
+                if (GetData<byte>(15) == value) return;
+                SetData(15, value, nameof(__17000));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__17000));
             }
@@ -4837,10 +4837,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Attack_Bonus_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Attack_Bonus_1__displayName)]
         public virtual byte Wp_MR_Augment_Attack_Bonus_1_ {
-            get => GetData<byte>(8615);
+            get => GetData<byte>(8627);
             set {
-                if (GetData<byte>(8615) == value) return;
-                SetData(8615, value, nameof(Wp_MR_Augment_Attack_Bonus_1_));
+                if (GetData<byte>(8627) == value) return;
+                SetData(8627, value, nameof(Wp_MR_Augment_Attack_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Attack_Bonus_1_));
             }
@@ -4851,10 +4851,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Attack_Bonus_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Attack_Bonus_2__displayName)]
         public virtual byte Wp_MR_Augment_Attack_Bonus_2_ {
-            get => GetData<byte>(8616);
+            get => GetData<byte>(8628);
             set {
-                if (GetData<byte>(8616) == value) return;
-                SetData(8616, value, nameof(Wp_MR_Augment_Attack_Bonus_2_));
+                if (GetData<byte>(8628) == value) return;
+                SetData(8628, value, nameof(Wp_MR_Augment_Attack_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Attack_Bonus_2_));
             }
@@ -4865,10 +4865,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Attack_Bonus_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Attack_Bonus_3__displayName)]
         public virtual byte Wp_MR_Augment_Attack_Bonus_3_ {
-            get => GetData<byte>(8617);
+            get => GetData<byte>(8629);
             set {
-                if (GetData<byte>(8617) == value) return;
-                SetData(8617, value, nameof(Wp_MR_Augment_Attack_Bonus_3_));
+                if (GetData<byte>(8629) == value) return;
+                SetData(8629, value, nameof(Wp_MR_Augment_Attack_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Attack_Bonus_3_));
             }
@@ -4879,10 +4879,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Attack_Bonus_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Attack_Bonus_4__displayName)]
         public virtual byte Wp_MR_Augment_Attack_Bonus_4_ {
-            get => GetData<byte>(8618);
+            get => GetData<byte>(8630);
             set {
-                if (GetData<byte>(8618) == value) return;
-                SetData(8618, value, nameof(Wp_MR_Augment_Attack_Bonus_4_));
+                if (GetData<byte>(8630) == value) return;
+                SetData(8630, value, nameof(Wp_MR_Augment_Attack_Bonus_4_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Attack_Bonus_4_));
             }
@@ -4893,10 +4893,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Critical_Bonus_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Critical_Bonus_1__displayName)]
         public virtual byte Wp_MR_Augment_Critical_Bonus_1_ {
-            get => GetData<byte>(8619);
+            get => GetData<byte>(8631);
             set {
-                if (GetData<byte>(8619) == value) return;
-                SetData(8619, value, nameof(Wp_MR_Augment_Critical_Bonus_1_));
+                if (GetData<byte>(8631) == value) return;
+                SetData(8631, value, nameof(Wp_MR_Augment_Critical_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Critical_Bonus_1_));
             }
@@ -4907,10 +4907,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Critical_Bonus_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Critical_Bonus_2__displayName)]
         public virtual byte Wp_MR_Augment_Critical_Bonus_2_ {
-            get => GetData<byte>(8620);
+            get => GetData<byte>(8632);
             set {
-                if (GetData<byte>(8620) == value) return;
-                SetData(8620, value, nameof(Wp_MR_Augment_Critical_Bonus_2_));
+                if (GetData<byte>(8632) == value) return;
+                SetData(8632, value, nameof(Wp_MR_Augment_Critical_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Critical_Bonus_2_));
             }
@@ -4921,10 +4921,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Critical_Bonus_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Critical_Bonus_3__displayName)]
         public virtual byte Wp_MR_Augment_Critical_Bonus_3_ {
-            get => GetData<byte>(8621);
+            get => GetData<byte>(8633);
             set {
-                if (GetData<byte>(8621) == value) return;
-                SetData(8621, value, nameof(Wp_MR_Augment_Critical_Bonus_3_));
+                if (GetData<byte>(8633) == value) return;
+                SetData(8633, value, nameof(Wp_MR_Augment_Critical_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Critical_Bonus_3_));
             }
@@ -4935,10 +4935,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Critical_Bonus_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Critical_Bonus_4__displayName)]
         public virtual byte Wp_MR_Augment_Critical_Bonus_4_ {
-            get => GetData<byte>(8622);
+            get => GetData<byte>(8634);
             set {
-                if (GetData<byte>(8622) == value) return;
-                SetData(8622, value, nameof(Wp_MR_Augment_Critical_Bonus_4_));
+                if (GetData<byte>(8634) == value) return;
+                SetData(8634, value, nameof(Wp_MR_Augment_Critical_Bonus_4_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Critical_Bonus_4_));
             }
@@ -4949,10 +4949,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Defense_Bonus_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Bonus_1__displayName)]
         public virtual byte Wp_MR_Augment_Defense_Bonus_1_ {
-            get => GetData<byte>(8623);
+            get => GetData<byte>(8635);
             set {
-                if (GetData<byte>(8623) == value) return;
-                SetData(8623, value, nameof(Wp_MR_Augment_Defense_Bonus_1_));
+                if (GetData<byte>(8635) == value) return;
+                SetData(8635, value, nameof(Wp_MR_Augment_Defense_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Bonus_1_));
             }
@@ -4963,10 +4963,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Defense_Bonus_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Bonus_2__displayName)]
         public virtual byte Wp_MR_Augment_Defense_Bonus_2_ {
-            get => GetData<byte>(8624);
+            get => GetData<byte>(8636);
             set {
-                if (GetData<byte>(8624) == value) return;
-                SetData(8624, value, nameof(Wp_MR_Augment_Defense_Bonus_2_));
+                if (GetData<byte>(8636) == value) return;
+                SetData(8636, value, nameof(Wp_MR_Augment_Defense_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Bonus_2_));
             }
@@ -4977,10 +4977,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Defense_Bonus_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Bonus_3__displayName)]
         public virtual byte Wp_MR_Augment_Defense_Bonus_3_ {
-            get => GetData<byte>(8625);
+            get => GetData<byte>(8637);
             set {
-                if (GetData<byte>(8625) == value) return;
-                SetData(8625, value, nameof(Wp_MR_Augment_Defense_Bonus_3_));
+                if (GetData<byte>(8637) == value) return;
+                SetData(8637, value, nameof(Wp_MR_Augment_Defense_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Bonus_3_));
             }
@@ -4991,10 +4991,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Defense_Bonus_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Bonus_4__displayName)]
         public virtual byte Wp_MR_Augment_Defense_Bonus_4_ {
-            get => GetData<byte>(8626);
+            get => GetData<byte>(8638);
             set {
-                if (GetData<byte>(8626) == value) return;
-                SetData(8626, value, nameof(Wp_MR_Augment_Defense_Bonus_4_));
+                if (GetData<byte>(8638) == value) return;
+                SetData(8638, value, nameof(Wp_MR_Augment_Defense_Bonus_4_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Bonus_4_));
             }
@@ -5005,10 +5005,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Chance_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Chance_1__displayName)]
         public virtual byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_1_ {
-            get => GetData<byte>(8627);
+            get => GetData<byte>(8639);
             set {
-                if (GetData<byte>(8627) == value) return;
-                SetData(8627, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_1_));
+                if (GetData<byte>(8639) == value) return;
+                SetData(8639, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_1_));
             }
@@ -5019,10 +5019,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__displayName)]
         public virtual byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_2_ {
-            get => GetData<byte>(8628);
+            get => GetData<byte>(8640);
             set {
-                if (GetData<byte>(8628) == value) return;
-                SetData(8628, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_2_));
+                if (GetData<byte>(8640) == value) return;
+                SetData(8640, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_2_));
             }
@@ -5033,10 +5033,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Chance_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Chance_3__displayName)]
         public virtual byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_3_ {
-            get => GetData<byte>(8629);
+            get => GetData<byte>(8641);
             set {
-                if (GetData<byte>(8629) == value) return;
-                SetData(8629, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_3_));
+                if (GetData<byte>(8641) == value) return;
+                SetData(8641, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_3_));
             }
@@ -5047,10 +5047,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__displayName)]
         public virtual byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_4_ {
-            get => GetData<byte>(8630);
+            get => GetData<byte>(8642);
             set {
-                if (GetData<byte>(8630) == value) return;
-                SetData(8630, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_4_));
+                if (GetData<byte>(8642) == value) return;
+                SetData(8642, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_4_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_4_));
             }
@@ -5061,10 +5061,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1__displayName)]
         public virtual float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1_ {
-            get => GetData<float>(8631);
+            get => GetData<float>(8643);
             set {
-                if (GetData<float>(8631) == value) return;
-                SetData(8631, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1_));
+                if (GetData<float>(8643) == value) return;
+                SetData(8643, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1_));
             }
@@ -5075,10 +5075,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__displayName)]
         public virtual float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2_ {
-            get => GetData<float>(8635);
+            get => GetData<float>(8647);
             set {
-                if (GetData<float>(8635) == value) return;
-                SetData(8635, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2_));
+                if (GetData<float>(8647) == value) return;
+                SetData(8647, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2_));
             }
@@ -5089,10 +5089,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3__displayName)]
         public virtual float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3_ {
-            get => GetData<float>(8639);
+            get => GetData<float>(8651);
             set {
-                if (GetData<float>(8639) == value) return;
-                SetData(8639, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3_));
+                if (GetData<float>(8651) == value) return;
+                SetData(8651, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3_));
             }
@@ -5103,10 +5103,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__displayName)]
         public virtual float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4_ {
-            get => GetData<float>(8643);
+            get => GetData<float>(8655);
             set {
-                if (GetData<float>(8643) == value) return;
-                SetData(8643, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4_));
+                if (GetData<float>(8655) == value) return;
+                SetData(8655, value, nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4_));
             }
@@ -5117,10 +5117,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Health_Percent_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Health_Percent_1__displayName)]
         public virtual float Wp_MR_Augment_Health_Percent_1_ {
-            get => GetData<float>(8647);
+            get => GetData<float>(8659);
             set {
-                if (GetData<float>(8647) == value) return;
-                SetData(8647, value, nameof(Wp_MR_Augment_Health_Percent_1_));
+                if (GetData<float>(8659) == value) return;
+                SetData(8659, value, nameof(Wp_MR_Augment_Health_Percent_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Health_Percent_1_));
             }
@@ -5131,10 +5131,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Health_Percent_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Health_Percent_2__displayName)]
         public virtual float Wp_MR_Augment_Health_Percent_2_ {
-            get => GetData<float>(8651);
+            get => GetData<float>(8663);
             set {
-                if (GetData<float>(8651) == value) return;
-                SetData(8651, value, nameof(Wp_MR_Augment_Health_Percent_2_));
+                if (GetData<float>(8663) == value) return;
+                SetData(8663, value, nameof(Wp_MR_Augment_Health_Percent_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Health_Percent_2_));
             }
@@ -5145,10 +5145,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Health_Percent_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Health_Percent_3__displayName)]
         public virtual float Wp_MR_Augment_Health_Percent_3_ {
-            get => GetData<float>(8655);
+            get => GetData<float>(8667);
             set {
-                if (GetData<float>(8655) == value) return;
-                SetData(8655, value, nameof(Wp_MR_Augment_Health_Percent_3_));
+                if (GetData<float>(8667) == value) return;
+                SetData(8667, value, nameof(Wp_MR_Augment_Health_Percent_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Health_Percent_3_));
             }
@@ -5159,10 +5159,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Health_Percent_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Health_Percent_4__displayName)]
         public virtual float Wp_MR_Augment_Health_Percent_4_ {
-            get => GetData<float>(8659);
+            get => GetData<float>(8671);
             set {
-                if (GetData<float>(8659) == value) return;
-                SetData(8659, value, nameof(Wp_MR_Augment_Health_Percent_4_));
+                if (GetData<float>(8671) == value) return;
+                SetData(8671, value, nameof(Wp_MR_Augment_Health_Percent_4_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Health_Percent_4_));
             }
@@ -5173,10 +5173,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(IB_Unk1_sortIndex)]
         [DisplayName(IB_Unk1_displayName)]
         public virtual float IB_Unk1 {
-            get => GetData<float>(8663);
+            get => GetData<float>(8675);
             set {
-                if (GetData<float>(8663) == value) return;
-                SetData(8663, value, nameof(IB_Unk1));
+                if (GetData<float>(8675) == value) return;
+                SetData(8675, value, nameof(IB_Unk1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(IB_Unk1));
             }
@@ -5187,10 +5187,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Lifesteal_Cooldown_sortIndex)]
         [DisplayName(Wp_MR_Augment_Lifesteal_Cooldown_displayName)]
         public virtual float Wp_MR_Augment_Lifesteal_Cooldown {
-            get => GetData<float>(8667);
+            get => GetData<float>(8679);
             set {
-                if (GetData<float>(8667) == value) return;
-                SetData(8667, value, nameof(Wp_MR_Augment_Lifesteal_Cooldown));
+                if (GetData<float>(8679) == value) return;
+                SetData(8679, value, nameof(Wp_MR_Augment_Lifesteal_Cooldown));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Lifesteal_Cooldown));
             }
@@ -5201,10 +5201,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Element_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Element_1__displayName)]
         public virtual byte Wp_MR_Augment_Element_1_ {
-            get => GetData<byte>(8671);
+            get => GetData<byte>(8683);
             set {
-                if (GetData<byte>(8671) == value) return;
-                SetData(8671, value, nameof(Wp_MR_Augment_Element_1_));
+                if (GetData<byte>(8683) == value) return;
+                SetData(8683, value, nameof(Wp_MR_Augment_Element_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Element_1_));
             }
@@ -5215,10 +5215,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Element_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Element_2__displayName)]
         public virtual byte Wp_MR_Augment_Element_2_ {
-            get => GetData<byte>(8672);
+            get => GetData<byte>(8684);
             set {
-                if (GetData<byte>(8672) == value) return;
-                SetData(8672, value, nameof(Wp_MR_Augment_Element_2_));
+                if (GetData<byte>(8684) == value) return;
+                SetData(8684, value, nameof(Wp_MR_Augment_Element_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Element_2_));
             }
@@ -5229,10 +5229,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Element_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Element_3__displayName)]
         public virtual byte Wp_MR_Augment_Element_3_ {
-            get => GetData<byte>(8673);
+            get => GetData<byte>(8685);
             set {
-                if (GetData<byte>(8673) == value) return;
-                SetData(8673, value, nameof(Wp_MR_Augment_Element_3_));
+                if (GetData<byte>(8685) == value) return;
+                SetData(8685, value, nameof(Wp_MR_Augment_Element_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Element_3_));
             }
@@ -5243,10 +5243,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Element_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Element_4__displayName)]
         public virtual byte Wp_MR_Augment_Element_4_ {
-            get => GetData<byte>(8674);
+            get => GetData<byte>(8686);
             set {
-                if (GetData<byte>(8674) == value) return;
-                SetData(8674, value, nameof(Wp_MR_Augment_Element_4_));
+                if (GetData<byte>(8686) == value) return;
+                SetData(8686, value, nameof(Wp_MR_Augment_Element_4_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Element_4_));
             }
@@ -5258,10 +5258,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(__18550_displayName)]
         [IsReadOnly]
         public virtual byte __18550 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(15);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__18550));
+                if (GetData<byte>(15) == value) return;
+                SetData(15, value, nameof(__18550));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__18550));
             }
@@ -5272,10 +5272,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__displayName)]
         public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1_ {
-            get => GetData<byte>(8675);
+            get => GetData<byte>(8687);
             set {
-                if (GetData<byte>(8675) == value) return;
-                SetData(8675, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1_));
+                if (GetData<byte>(8687) == value) return;
+                SetData(8687, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1_));
             }
@@ -5286,10 +5286,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__displayName)]
         public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2_ {
-            get => GetData<byte>(8676);
+            get => GetData<byte>(8688);
             set {
-                if (GetData<byte>(8676) == value) return;
-                SetData(8676, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2_));
+                if (GetData<byte>(8688) == value) return;
+                SetData(8688, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2_));
             }
@@ -5300,10 +5300,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3__displayName)]
         public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3_ {
-            get => GetData<byte>(8677);
+            get => GetData<byte>(8689);
             set {
-                if (GetData<byte>(8677) == value) return;
-                SetData(8677, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3_));
+                if (GetData<byte>(8689) == value) return;
+                SetData(8689, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3_));
             }
@@ -5314,10 +5314,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__displayName)]
         public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4_ {
-            get => GetData<byte>(8678);
+            get => GetData<byte>(8690);
             set {
-                if (GetData<byte>(8678) == value) return;
-                SetData(8678, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4_));
+                if (GetData<byte>(8690) == value) return;
+                SetData(8690, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4_));
             }
@@ -5328,10 +5328,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1__displayName)]
         public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1_ {
-            get => GetData<byte>(8679);
+            get => GetData<byte>(8691);
             set {
-                if (GetData<byte>(8679) == value) return;
-                SetData(8679, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1_));
+                if (GetData<byte>(8691) == value) return;
+                SetData(8691, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1_));
             }
@@ -5342,10 +5342,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__displayName)]
         public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2_ {
-            get => GetData<byte>(8680);
+            get => GetData<byte>(8692);
             set {
-                if (GetData<byte>(8680) == value) return;
-                SetData(8680, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2_));
+                if (GetData<byte>(8692) == value) return;
+                SetData(8692, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2_));
             }
@@ -5356,10 +5356,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3__displayName)]
         public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3_ {
-            get => GetData<byte>(8681);
+            get => GetData<byte>(8693);
             set {
-                if (GetData<byte>(8681) == value) return;
-                SetData(8681, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3_));
+                if (GetData<byte>(8693) == value) return;
+                SetData(8693, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3_));
             }
@@ -5370,10 +5370,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__displayName)]
         public virtual byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4_ {
-            get => GetData<byte>(8682);
+            get => GetData<byte>(8694);
             set {
-                if (GetData<byte>(8682) == value) return;
-                SetData(8682, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4_));
+                if (GetData<byte>(8694) == value) return;
+                SetData(8694, value, nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4_));
             }
@@ -5385,10 +5385,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(__19000_displayName)]
         [IsReadOnly]
         public virtual byte __19000 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(15);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__19000));
+                if (GetData<byte>(15) == value) return;
+                SetData(15, value, nameof(__19000));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__19000));
             }
@@ -5399,10 +5399,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Great_Sword_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_Great_Sword_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_Great_Sword_Elemental_Multiplier {
-            get => GetData<float>(8683);
+            get => GetData<float>(8695);
             set {
-                if (GetData<float>(8683) == value) return;
-                SetData(8683, value, nameof(Wp_MR_Augment_Great_Sword_Elemental_Multiplier));
+                if (GetData<float>(8695) == value) return;
+                SetData(8695, value, nameof(Wp_MR_Augment_Great_Sword_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Great_Sword_Elemental_Multiplier));
             }
@@ -5413,10 +5413,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_Sword_Shield_Elemental_Multiplier {
-            get => GetData<float>(8687);
+            get => GetData<float>(8699);
             set {
-                if (GetData<float>(8687) == value) return;
-                SetData(8687, value, nameof(Wp_MR_Augment_Sword_Shield_Elemental_Multiplier));
+                if (GetData<float>(8699) == value) return;
+                SetData(8699, value, nameof(Wp_MR_Augment_Sword_Shield_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Sword_Shield_Elemental_Multiplier));
             }
@@ -5427,10 +5427,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Dual_Blades_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_Dual_Blades_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_Dual_Blades_Elemental_Multiplier {
-            get => GetData<float>(8691);
+            get => GetData<float>(8703);
             set {
-                if (GetData<float>(8691) == value) return;
-                SetData(8691, value, nameof(Wp_MR_Augment_Dual_Blades_Elemental_Multiplier));
+                if (GetData<float>(8703) == value) return;
+                SetData(8703, value, nameof(Wp_MR_Augment_Dual_Blades_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Dual_Blades_Elemental_Multiplier));
             }
@@ -5441,10 +5441,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Long_Sword_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_Long_Sword_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_Long_Sword_Elemental_Multiplier {
-            get => GetData<float>(8695);
+            get => GetData<float>(8707);
             set {
-                if (GetData<float>(8695) == value) return;
-                SetData(8695, value, nameof(Wp_MR_Augment_Long_Sword_Elemental_Multiplier));
+                if (GetData<float>(8707) == value) return;
+                SetData(8707, value, nameof(Wp_MR_Augment_Long_Sword_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Long_Sword_Elemental_Multiplier));
             }
@@ -5455,10 +5455,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Hammer_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_Hammer_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_Hammer_Elemental_Multiplier {
-            get => GetData<float>(8699);
+            get => GetData<float>(8711);
             set {
-                if (GetData<float>(8699) == value) return;
-                SetData(8699, value, nameof(Wp_MR_Augment_Hammer_Elemental_Multiplier));
+                if (GetData<float>(8711) == value) return;
+                SetData(8711, value, nameof(Wp_MR_Augment_Hammer_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Hammer_Elemental_Multiplier));
             }
@@ -5469,10 +5469,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier {
-            get => GetData<float>(8703);
+            get => GetData<float>(8715);
             set {
-                if (GetData<float>(8703) == value) return;
-                SetData(8703, value, nameof(Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier));
+                if (GetData<float>(8715) == value) return;
+                SetData(8715, value, nameof(Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier));
             }
@@ -5483,10 +5483,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Lance_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_Lance_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_Lance_Elemental_Multiplier {
-            get => GetData<float>(8707);
+            get => GetData<float>(8719);
             set {
-                if (GetData<float>(8707) == value) return;
-                SetData(8707, value, nameof(Wp_MR_Augment_Lance_Elemental_Multiplier));
+                if (GetData<float>(8719) == value) return;
+                SetData(8719, value, nameof(Wp_MR_Augment_Lance_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Lance_Elemental_Multiplier));
             }
@@ -5497,10 +5497,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Gunlance_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_Gunlance_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_Gunlance_Elemental_Multiplier {
-            get => GetData<float>(8711);
+            get => GetData<float>(8723);
             set {
-                if (GetData<float>(8711) == value) return;
-                SetData(8711, value, nameof(Wp_MR_Augment_Gunlance_Elemental_Multiplier));
+                if (GetData<float>(8723) == value) return;
+                SetData(8723, value, nameof(Wp_MR_Augment_Gunlance_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Gunlance_Elemental_Multiplier));
             }
@@ -5511,10 +5511,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Switch_Axe_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_Switch_Axe_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_Switch_Axe_Elemental_Multiplier {
-            get => GetData<float>(8715);
+            get => GetData<float>(8727);
             set {
-                if (GetData<float>(8715) == value) return;
-                SetData(8715, value, nameof(Wp_MR_Augment_Switch_Axe_Elemental_Multiplier));
+                if (GetData<float>(8727) == value) return;
+                SetData(8727, value, nameof(Wp_MR_Augment_Switch_Axe_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Switch_Axe_Elemental_Multiplier));
             }
@@ -5525,10 +5525,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_Charge_Blade_Elemental_Multiplier {
-            get => GetData<float>(8719);
+            get => GetData<float>(8731);
             set {
-                if (GetData<float>(8719) == value) return;
-                SetData(8719, value, nameof(Wp_MR_Augment_Charge_Blade_Elemental_Multiplier));
+                if (GetData<float>(8731) == value) return;
+                SetData(8731, value, nameof(Wp_MR_Augment_Charge_Blade_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Charge_Blade_Elemental_Multiplier));
             }
@@ -5539,10 +5539,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier {
-            get => GetData<float>(8723);
+            get => GetData<float>(8735);
             set {
-                if (GetData<float>(8723) == value) return;
-                SetData(8723, value, nameof(Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier));
+                if (GetData<float>(8735) == value) return;
+                SetData(8735, value, nameof(Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier));
             }
@@ -5553,10 +5553,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bow_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_Bow_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_Bow_Elemental_Multiplier {
-            get => GetData<float>(8727);
+            get => GetData<float>(8739);
             set {
-                if (GetData<float>(8727) == value) return;
-                SetData(8727, value, nameof(Wp_MR_Augment_Bow_Elemental_Multiplier));
+                if (GetData<float>(8739) == value) return;
+                SetData(8739, value, nameof(Wp_MR_Augment_Bow_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bow_Elemental_Multiplier));
             }
@@ -5567,10 +5567,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_HBG_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_HBG_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_HBG_Elemental_Multiplier {
-            get => GetData<float>(8731);
+            get => GetData<float>(8743);
             set {
-                if (GetData<float>(8731) == value) return;
-                SetData(8731, value, nameof(Wp_MR_Augment_HBG_Elemental_Multiplier));
+                if (GetData<float>(8743) == value) return;
+                SetData(8743, value, nameof(Wp_MR_Augment_HBG_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_HBG_Elemental_Multiplier));
             }
@@ -5581,10 +5581,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_LBG_Elemental_Multiplier_sortIndex)]
         [DisplayName(Wp_MR_Augment_LBG_Elemental_Multiplier_displayName)]
         public virtual float Wp_MR_Augment_LBG_Elemental_Multiplier {
-            get => GetData<float>(8735);
+            get => GetData<float>(8747);
             set {
-                if (GetData<float>(8735) == value) return;
-                SetData(8735, value, nameof(Wp_MR_Augment_LBG_Elemental_Multiplier));
+                if (GetData<float>(8747) == value) return;
+                SetData(8747, value, nameof(Wp_MR_Augment_LBG_Elemental_Multiplier));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_LBG_Elemental_Multiplier));
             }
@@ -5596,10 +5596,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(__19750_displayName)]
         [IsReadOnly]
         public virtual byte __19750 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(15);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__19750));
+                if (GetData<byte>(15) == value) return;
+                SetData(15, value, nameof(__19750));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__19750));
             }
@@ -5610,10 +5610,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__sortIndex)]
         [DisplayName(Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__displayName)]
         public virtual float Wp_MR_Augment_Bow_Coating_Status_Multiplier_1_ {
-            get => GetData<float>(8739);
+            get => GetData<float>(8751);
             set {
-                if (GetData<float>(8739) == value) return;
-                SetData(8739, value, nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_1_));
+                if (GetData<float>(8751) == value) return;
+                SetData(8751, value, nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_1_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_1_));
             }
@@ -5624,10 +5624,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__sortIndex)]
         [DisplayName(Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__displayName)]
         public virtual float Wp_MR_Augment_Bow_Coating_Status_Multiplier_2_ {
-            get => GetData<float>(8743);
+            get => GetData<float>(8755);
             set {
-                if (GetData<float>(8743) == value) return;
-                SetData(8743, value, nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_2_));
+                if (GetData<float>(8755) == value) return;
+                SetData(8755, value, nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_2_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_2_));
             }
@@ -5638,10 +5638,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bow_Coating_Status_Multiplier_3__sortIndex)]
         [DisplayName(Wp_MR_Augment_Bow_Coating_Status_Multiplier_3__displayName)]
         public virtual float Wp_MR_Augment_Bow_Coating_Status_Multiplier_3_ {
-            get => GetData<float>(8747);
+            get => GetData<float>(8759);
             set {
-                if (GetData<float>(8747) == value) return;
-                SetData(8747, value, nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_3_));
+                if (GetData<float>(8759) == value) return;
+                SetData(8759, value, nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_3_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_3_));
             }
@@ -5652,10 +5652,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__sortIndex)]
         [DisplayName(Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__displayName)]
         public virtual float Wp_MR_Augment_Bow_Coating_Status_Multiplier_4_ {
-            get => GetData<float>(8751);
+            get => GetData<float>(8763);
             set {
-                if (GetData<float>(8751) == value) return;
-                SetData(8751, value, nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_4_));
+                if (GetData<float>(8763) == value) return;
+                SetData(8763, value, nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_4_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_4_));
             }
@@ -5667,10 +5667,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(__20000_displayName)]
         [IsReadOnly]
         public virtual byte __20000 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(15);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__20000));
+                if (GetData<byte>(15) == value) return;
+                SetData(15, value, nameof(__20000));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__20000));
             }
@@ -5682,10 +5682,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(_Skipping_ahead__20050_displayName)]
         [IsReadOnly]
         public virtual byte _Skipping_ahead__20050 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(15);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(_Skipping_ahead__20050));
+                if (GetData<byte>(15) == value) return;
+                SetData(15, value, nameof(_Skipping_ahead__20050));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(_Skipping_ahead__20050));
             }
@@ -5697,10 +5697,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(__20100_displayName)]
         [IsReadOnly]
         public virtual byte __20100 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(15);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__20100));
+                if (GetData<byte>(15) == value) return;
+                SetData(15, value, nameof(__20100));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__20100));
             }
@@ -5711,10 +5711,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Stone_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Stone_displayName)]
         public virtual byte Max_Slinger_Capacity_Stone {
-            get => GetData<byte>(9345);
+            get => GetData<byte>(9357);
             set {
-                if (GetData<byte>(9345) == value) return;
-                SetData(9345, value, nameof(Max_Slinger_Capacity_Stone));
+                if (GetData<byte>(9357) == value) return;
+                SetData(9357, value, nameof(Max_Slinger_Capacity_Stone));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Stone));
             }
@@ -5725,10 +5725,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Redpit_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Redpit_displayName)]
         public virtual byte Max_Slinger_Capacity_Redpit {
-            get => GetData<byte>(9346);
+            get => GetData<byte>(9358);
             set {
-                if (GetData<byte>(9346) == value) return;
-                SetData(9346, value, nameof(Max_Slinger_Capacity_Redpit));
+                if (GetData<byte>(9358) == value) return;
+                SetData(9358, value, nameof(Max_Slinger_Capacity_Redpit));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Redpit));
             }
@@ -5739,10 +5739,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Brightmoss_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Brightmoss_displayName)]
         public virtual byte Max_Slinger_Capacity_Brightmoss {
-            get => GetData<byte>(9347);
+            get => GetData<byte>(9359);
             set {
-                if (GetData<byte>(9347) == value) return;
-                SetData(9347, value, nameof(Max_Slinger_Capacity_Brightmoss));
+                if (GetData<byte>(9359) == value) return;
+                SetData(9359, value, nameof(Max_Slinger_Capacity_Brightmoss));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Brightmoss));
             }
@@ -5753,10 +5753,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Scatternut_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Scatternut_displayName)]
         public virtual byte Max_Slinger_Capacity_Scatternut {
-            get => GetData<byte>(9348);
+            get => GetData<byte>(9360);
             set {
-                if (GetData<byte>(9348) == value) return;
-                SetData(9348, value, nameof(Max_Slinger_Capacity_Scatternut));
+                if (GetData<byte>(9360) == value) return;
+                SetData(9360, value, nameof(Max_Slinger_Capacity_Scatternut));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Scatternut));
             }
@@ -5767,10 +5767,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_1_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_1_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_1 {
-            get => GetData<byte>(9349);
+            get => GetData<byte>(9361);
             set {
-                if (GetData<byte>(9349) == value) return;
-                SetData(9349, value, nameof(Max_Slinger_Capacity_Unk_1));
+                if (GetData<byte>(9361) == value) return;
+                SetData(9361, value, nameof(Max_Slinger_Capacity_Unk_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_1));
             }
@@ -5781,10 +5781,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_2_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_2_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_2 {
-            get => GetData<byte>(9350);
+            get => GetData<byte>(9362);
             set {
-                if (GetData<byte>(9350) == value) return;
-                SetData(9350, value, nameof(Max_Slinger_Capacity_Unk_2));
+                if (GetData<byte>(9362) == value) return;
+                SetData(9362, value, nameof(Max_Slinger_Capacity_Unk_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_2));
             }
@@ -5795,10 +5795,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_3_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_3_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_3 {
-            get => GetData<byte>(9351);
+            get => GetData<byte>(9363);
             set {
-                if (GetData<byte>(9351) == value) return;
-                SetData(9351, value, nameof(Max_Slinger_Capacity_Unk_3));
+                if (GetData<byte>(9363) == value) return;
+                SetData(9363, value, nameof(Max_Slinger_Capacity_Unk_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_3));
             }
@@ -5809,10 +5809,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_4_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_4_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_4 {
-            get => GetData<byte>(9352);
+            get => GetData<byte>(9364);
             set {
-                if (GetData<byte>(9352) == value) return;
-                SetData(9352, value, nameof(Max_Slinger_Capacity_Unk_4));
+                if (GetData<byte>(9364) == value) return;
+                SetData(9364, value, nameof(Max_Slinger_Capacity_Unk_4));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_4));
             }
@@ -5823,10 +5823,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_5_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_5_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_5 {
-            get => GetData<byte>(9353);
+            get => GetData<byte>(9365);
             set {
-                if (GetData<byte>(9353) == value) return;
-                SetData(9353, value, nameof(Max_Slinger_Capacity_Unk_5));
+                if (GetData<byte>(9365) == value) return;
+                SetData(9365, value, nameof(Max_Slinger_Capacity_Unk_5));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_5));
             }
@@ -5837,10 +5837,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Torch_Pod_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Torch_Pod_displayName)]
         public virtual byte Max_Slinger_Capacity_Torch_Pod {
-            get => GetData<byte>(9354);
+            get => GetData<byte>(9366);
             set {
-                if (GetData<byte>(9354) == value) return;
-                SetData(9354, value, nameof(Max_Slinger_Capacity_Torch_Pod));
+                if (GetData<byte>(9366) == value) return;
+                SetData(9366, value, nameof(Max_Slinger_Capacity_Torch_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Torch_Pod));
             }
@@ -5851,10 +5851,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_6_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_6_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_6 {
-            get => GetData<byte>(9355);
+            get => GetData<byte>(9367);
             set {
-                if (GetData<byte>(9355) == value) return;
-                SetData(9355, value, nameof(Max_Slinger_Capacity_Unk_6));
+                if (GetData<byte>(9367) == value) return;
+                SetData(9367, value, nameof(Max_Slinger_Capacity_Unk_6));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_6));
             }
@@ -5865,10 +5865,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_7_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_7_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_7 {
-            get => GetData<byte>(9356);
+            get => GetData<byte>(9368);
             set {
-                if (GetData<byte>(9356) == value) return;
-                SetData(9356, value, nameof(Max_Slinger_Capacity_Unk_7));
+                if (GetData<byte>(9368) == value) return;
+                SetData(9368, value, nameof(Max_Slinger_Capacity_Unk_7));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_7));
             }
@@ -5879,10 +5879,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_8_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_8_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_8 {
-            get => GetData<byte>(9357);
+            get => GetData<byte>(9369);
             set {
-                if (GetData<byte>(9357) == value) return;
-                SetData(9357, value, nameof(Max_Slinger_Capacity_Unk_8));
+                if (GetData<byte>(9369) == value) return;
+                SetData(9369, value, nameof(Max_Slinger_Capacity_Unk_8));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_8));
             }
@@ -5893,10 +5893,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_9_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_9_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_9 {
-            get => GetData<byte>(9358);
+            get => GetData<byte>(9370);
             set {
-                if (GetData<byte>(9358) == value) return;
-                SetData(9358, value, nameof(Max_Slinger_Capacity_Unk_9));
+                if (GetData<byte>(9370) == value) return;
+                SetData(9370, value, nameof(Max_Slinger_Capacity_Unk_9));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_9));
             }
@@ -5907,10 +5907,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Bomb_Pod_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Bomb_Pod_displayName)]
         public virtual byte Max_Slinger_Capacity_Bomb_Pod {
-            get => GetData<byte>(9359);
+            get => GetData<byte>(9371);
             set {
-                if (GetData<byte>(9359) == value) return;
-                SetData(9359, value, nameof(Max_Slinger_Capacity_Bomb_Pod));
+                if (GetData<byte>(9371) == value) return;
+                SetData(9371, value, nameof(Max_Slinger_Capacity_Bomb_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Bomb_Pod));
             }
@@ -5921,10 +5921,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Piercing_Pod_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Piercing_Pod_displayName)]
         public virtual byte Max_Slinger_Capacity_Piercing_Pod {
-            get => GetData<byte>(9360);
+            get => GetData<byte>(9372);
             set {
-                if (GetData<byte>(9360) == value) return;
-                SetData(9360, value, nameof(Max_Slinger_Capacity_Piercing_Pod));
+                if (GetData<byte>(9372) == value) return;
+                SetData(9372, value, nameof(Max_Slinger_Capacity_Piercing_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Piercing_Pod));
             }
@@ -5935,10 +5935,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Slinger_Thorn_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Slinger_Thorn_displayName)]
         public virtual byte Max_Slinger_Capacity_Slinger_Thorn {
-            get => GetData<byte>(9361);
+            get => GetData<byte>(9373);
             set {
-                if (GetData<byte>(9361) == value) return;
-                SetData(9361, value, nameof(Max_Slinger_Capacity_Slinger_Thorn));
+                if (GetData<byte>(9373) == value) return;
+                SetData(9373, value, nameof(Max_Slinger_Capacity_Slinger_Thorn));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Slinger_Thorn));
             }
@@ -5949,10 +5949,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Dragon_Pod_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Dragon_Pod_displayName)]
         public virtual byte Max_Slinger_Capacity_Dragon_Pod {
-            get => GetData<byte>(9362);
+            get => GetData<byte>(9374);
             set {
-                if (GetData<byte>(9362) == value) return;
-                SetData(9362, value, nameof(Max_Slinger_Capacity_Dragon_Pod));
+                if (GetData<byte>(9374) == value) return;
+                SetData(9374, value, nameof(Max_Slinger_Capacity_Dragon_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Dragon_Pod));
             }
@@ -5963,10 +5963,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_10_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_10_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_10 {
-            get => GetData<byte>(9363);
+            get => GetData<byte>(9375);
             set {
-                if (GetData<byte>(9363) == value) return;
-                SetData(9363, value, nameof(Max_Slinger_Capacity_Unk_10));
+                if (GetData<byte>(9375) == value) return;
+                SetData(9375, value, nameof(Max_Slinger_Capacity_Unk_10));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_10));
             }
@@ -5977,10 +5977,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_11_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_11_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_11 {
-            get => GetData<byte>(9364);
+            get => GetData<byte>(9376);
             set {
-                if (GetData<byte>(9364) == value) return;
-                SetData(9364, value, nameof(Max_Slinger_Capacity_Unk_11));
+                if (GetData<byte>(9376) == value) return;
+                SetData(9376, value, nameof(Max_Slinger_Capacity_Unk_11));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_11));
             }
@@ -5991,10 +5991,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_12_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_12_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_12 {
-            get => GetData<byte>(9365);
+            get => GetData<byte>(9377);
             set {
-                if (GetData<byte>(9365) == value) return;
-                SetData(9365, value, nameof(Max_Slinger_Capacity_Unk_12));
+                if (GetData<byte>(9377) == value) return;
+                SetData(9377, value, nameof(Max_Slinger_Capacity_Unk_12));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_12));
             }
@@ -6005,10 +6005,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_13_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_13_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_13 {
-            get => GetData<byte>(9366);
+            get => GetData<byte>(9378);
             set {
-                if (GetData<byte>(9366) == value) return;
-                SetData(9366, value, nameof(Max_Slinger_Capacity_Unk_13));
+                if (GetData<byte>(9378) == value) return;
+                SetData(9378, value, nameof(Max_Slinger_Capacity_Unk_13));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_13));
             }
@@ -6019,10 +6019,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_14_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_14_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_14 {
-            get => GetData<byte>(9367);
+            get => GetData<byte>(9379);
             set {
-                if (GetData<byte>(9367) == value) return;
-                SetData(9367, value, nameof(Max_Slinger_Capacity_Unk_14));
+                if (GetData<byte>(9379) == value) return;
+                SetData(9379, value, nameof(Max_Slinger_Capacity_Unk_14));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_14));
             }
@@ -6033,10 +6033,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_15_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_15_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_15 {
-            get => GetData<byte>(9368);
+            get => GetData<byte>(9380);
             set {
-                if (GetData<byte>(9368) == value) return;
-                SetData(9368, value, nameof(Max_Slinger_Capacity_Unk_15));
+                if (GetData<byte>(9380) == value) return;
+                SetData(9380, value, nameof(Max_Slinger_Capacity_Unk_15));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_15));
             }
@@ -6047,10 +6047,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_16_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_16_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_16 {
-            get => GetData<byte>(9369);
+            get => GetData<byte>(9381);
             set {
-                if (GetData<byte>(9369) == value) return;
-                SetData(9369, value, nameof(Max_Slinger_Capacity_Unk_16));
+                if (GetData<byte>(9381) == value) return;
+                SetData(9381, value, nameof(Max_Slinger_Capacity_Unk_16));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_16));
             }
@@ -6061,10 +6061,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_17_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_17_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_17 {
-            get => GetData<byte>(9370);
+            get => GetData<byte>(9382);
             set {
-                if (GetData<byte>(9370) == value) return;
-                SetData(9370, value, nameof(Max_Slinger_Capacity_Unk_17));
+                if (GetData<byte>(9382) == value) return;
+                SetData(9382, value, nameof(Max_Slinger_Capacity_Unk_17));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_17));
             }
@@ -6075,10 +6075,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Crystalburst_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Crystalburst_displayName)]
         public virtual byte Max_Slinger_Capacity_Crystalburst {
-            get => GetData<byte>(9371);
+            get => GetData<byte>(9383);
             set {
-                if (GetData<byte>(9371) == value) return;
-                SetData(9371, value, nameof(Max_Slinger_Capacity_Crystalburst));
+                if (GetData<byte>(9383) == value) return;
+                SetData(9383, value, nameof(Max_Slinger_Capacity_Crystalburst));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Crystalburst));
             }
@@ -6089,10 +6089,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Puddle_Pod_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Puddle_Pod_displayName)]
         public virtual byte Max_Slinger_Capacity_Puddle_Pod {
-            get => GetData<byte>(9372);
+            get => GetData<byte>(9384);
             set {
-                if (GetData<byte>(9372) == value) return;
-                SetData(9372, value, nameof(Max_Slinger_Capacity_Puddle_Pod));
+                if (GetData<byte>(9384) == value) return;
+                SetData(9384, value, nameof(Max_Slinger_Capacity_Puddle_Pod));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Puddle_Pod));
             }
@@ -6103,10 +6103,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_18_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_18_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_18 {
-            get => GetData<byte>(9373);
+            get => GetData<byte>(9385);
             set {
-                if (GetData<byte>(9373) == value) return;
-                SetData(9373, value, nameof(Max_Slinger_Capacity_Unk_18));
+                if (GetData<byte>(9385) == value) return;
+                SetData(9385, value, nameof(Max_Slinger_Capacity_Unk_18));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_18));
             }
@@ -6117,10 +6117,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_19_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_19_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_19 {
-            get => GetData<byte>(9374);
+            get => GetData<byte>(9386);
             set {
-                if (GetData<byte>(9374) == value) return;
-                SetData(9374, value, nameof(Max_Slinger_Capacity_Unk_19));
+                if (GetData<byte>(9386) == value) return;
+                SetData(9386, value, nameof(Max_Slinger_Capacity_Unk_19));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_19));
             }
@@ -6131,10 +6131,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Max_Slinger_Capacity_Unk_20_sortIndex)]
         [DisplayName(Max_Slinger_Capacity_Unk_20_displayName)]
         public virtual byte Max_Slinger_Capacity_Unk_20 {
-            get => GetData<byte>(9375);
+            get => GetData<byte>(9387);
             set {
-                if (GetData<byte>(9375) == value) return;
-                SetData(9375, value, nameof(Max_Slinger_Capacity_Unk_20));
+                if (GetData<byte>(9387) == value) return;
+                SetData(9387, value, nameof(Max_Slinger_Capacity_Unk_20));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_20));
             }
@@ -6146,10 +6146,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(__21700_displayName)]
         [IsReadOnly]
         public virtual byte __21700 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(15);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__21700));
+                if (GetData<byte>(15) == value) return;
+                SetData(15, value, nameof(__21700));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__21700));
             }
@@ -6161,10 +6161,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(_Skipping_ahead__21750_displayName)]
         [IsReadOnly]
         public virtual byte _Skipping_ahead__21750 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(15);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(_Skipping_ahead__21750));
+                if (GetData<byte>(15) == value) return;
+                SetData(15, value, nameof(_Skipping_ahead__21750));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(_Skipping_ahead__21750));
             }
@@ -6176,10 +6176,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(__21800_displayName)]
         [IsReadOnly]
         public virtual byte __21800 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(55);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__21800));
+                if (GetData<byte>(55) == value) return;
+                SetData(55, value, nameof(__21800));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__21800));
             }
@@ -6190,10 +6190,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Gesture_Dragoon_Jump_Loop_Time_sortIndex)]
         [DisplayName(Gesture_Dragoon_Jump_Loop_Time_displayName)]
         public virtual float Gesture_Dragoon_Jump_Loop_Time {
-            get => GetData<float>(17801);
+            get => GetData<float>(17853);
             set {
-                if (GetData<float>(17801) == value) return;
-                SetData(17801, value, nameof(Gesture_Dragoon_Jump_Loop_Time));
+                if (GetData<float>(17853) == value) return;
+                SetData(17853, value, nameof(Gesture_Dragoon_Jump_Loop_Time));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Gesture_Dragoon_Jump_Loop_Time));
             }
@@ -6204,10 +6204,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Gesture_Dragoon_Jump_Meteor_Start_sortIndex)]
         [DisplayName(Gesture_Dragoon_Jump_Meteor_Start_displayName)]
         public virtual float Gesture_Dragoon_Jump_Meteor_Start {
-            get => GetData<float>(17805);
+            get => GetData<float>(17857);
             set {
-                if (GetData<float>(17805) == value) return;
-                SetData(17805, value, nameof(Gesture_Dragoon_Jump_Meteor_Start));
+                if (GetData<float>(17857) == value) return;
+                SetData(17857, value, nameof(Gesture_Dragoon_Jump_Meteor_Start));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Gesture_Dragoon_Jump_Meteor_Start));
             }
@@ -6218,10 +6218,10 @@ namespace MHW_Editor.PlData {
         [SortOrder(Gesture_Dragoon_Jump_Meteor_Duration_sortIndex)]
         [DisplayName(Gesture_Dragoon_Jump_Meteor_Duration_displayName)]
         public virtual float Gesture_Dragoon_Jump_Meteor_Duration {
-            get => GetData<float>(17809);
+            get => GetData<float>(17861);
             set {
-                if (GetData<float>(17809) == value) return;
-                SetData(17809, value, nameof(Gesture_Dragoon_Jump_Meteor_Duration));
+                if (GetData<float>(17861) == value) return;
+                SetData(17861, value, nameof(Gesture_Dragoon_Jump_Meteor_Duration));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Gesture_Dragoon_Jump_Meteor_Duration));
             }
@@ -6233,10 +6233,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(__22000_displayName)]
         [IsReadOnly]
         public virtual byte __22000 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(55);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__22000));
+                if (GetData<byte>(55) == value) return;
+                SetData(55, value, nameof(__22000));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__22000));
             }
@@ -6248,10 +6248,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(_Skipping_the_rest__22050_displayName)]
         [IsReadOnly]
         public virtual byte _Skipping_the_rest__22050 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(55);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(_Skipping_the_rest__22050));
+                if (GetData<byte>(55) == value) return;
+                SetData(55, value, nameof(_Skipping_the_rest__22050));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(_Skipping_the_rest__22050));
             }
@@ -6263,10 +6263,10 @@ namespace MHW_Editor.PlData {
         [DisplayName(__22100_displayName)]
         [IsReadOnly]
         public virtual byte __22100 {
-            get => GetData<byte>(3);
+            get => GetData<byte>(55);
             set {
-                if (GetData<byte>(3) == value) return;
-                SetData(3, value, nameof(__22100));
+                if (GetData<byte>(55) == value) return;
+                SetData(55, value, nameof(__22100));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(__22100));
             }
