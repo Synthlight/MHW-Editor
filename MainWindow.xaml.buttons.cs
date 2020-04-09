@@ -237,6 +237,7 @@ namespace MHW_Editor {
             if (string.IsNullOrEmpty(targetFile)) return;
 
             if (!targetFileType.Is(typeof(Armor),
+                                   typeof(CustomOuterRecipe),
                                    typeof(CustomParts),
                                    typeof(CustomPartsR),
                                    typeof(EqCrt),
@@ -314,6 +315,15 @@ namespace MHW_Editor {
                     case RodInsect _: {
                         RodInsect rodInsect = item;
                         if (rodInsect.Craft_Cost > 0) rodInsect.Craft_Cost = 1;
+                        break;
+                    }
+                    case CustomOuterRecipe _: {
+                        CustomOuterRecipe recipe = item;
+                        if (recipe.Cost > 0) recipe.Cost = 1;
+                        if (recipe.Mat_1_Count > 0) recipe.Mat_1_Count = 1;
+                        if (recipe.Mat_2_Count > 0) recipe.Mat_2_Count = 1;
+                        if (recipe.Mat_3_Count > 0) recipe.Mat_3_Count = 1;
+                        if (recipe.Mat_4_Count > 0) recipe.Mat_4_Count = 1;
                         break;
                     }
                 }

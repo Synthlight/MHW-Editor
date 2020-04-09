@@ -759,6 +759,7 @@ namespace MHW_Editor {
                 btn_set_bonus_cheat.Visibility = targetFileType.Is(typeof(Armor)).VisibleIfTrue();
 
                 btn_cost_cheat.Visibility = targetFileType.Is(typeof(Armor),
+                                                              typeof(CustomOuterRecipe),
                                                               typeof(CustomParts),
                                                               typeof(CustomPartsR),
                                                               typeof(EqCrt),
