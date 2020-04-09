@@ -44,6 +44,7 @@ namespace MHW_Template {
             "*.bbtbl",
             "*.ch_dat",
             "*.col",
+            "*.cus_ou",
             "*.cus_pa",
             "*.cus_par",
             "*.dglt",

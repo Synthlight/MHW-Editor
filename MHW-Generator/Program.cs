@@ -22,6 +22,7 @@ namespace MHW_Generator {
             GenAwakenedWpCustom();
             GenAwakenedWpUpgrade();
             GenBottleTable();
+            GenCustomOu();
             GenCustomParts();
             GenCustomPartsR();
             GenDecoGradeLottery();
@@ -75,6 +76,29 @@ namespace MHW_Generator {
             GenWeaponWSword();
 
             GenCommonPl();
+        }
+
+        private static void GenCustomOu() {
+            GenerateItemProps("MHW_Editor.Weapons", "CustomOu", new MhwStructData { // .cus_ou
+                size = 35,
+                offsetInitial = 10,
+                entryCountOffset = 6,
+                uniqueIdFormula = "{Index}",
+                autoOffset = true,
+                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_ou"],
+                entries = new List<MhwStructData.Entry> {
+                    new MhwStructData.Entry("Unk1", typeof(uint)),
+                    new MhwStructData.Entry("Unk2", typeof(uint)),
+                    new MhwStructData.Entry("Unk3", typeof(int)),
+                    new MhwStructData.Entry("Unk4", typeof(uint)),
+                    new MhwStructData.Entry("Unk5", typeof(int)),
+                    new MhwStructData.Entry("Unk6", typeof(int)),
+                    new MhwStructData.Entry("Unk7", typeof(int)),
+                    new MhwStructData.Entry("Unk8", typeof(ushort)),
+                    new MhwStructData.Entry("Unk9", typeof(uint)),
+                    new MhwStructData.Entry("Unk10", typeof(byte))
+                }
+            });
         }
 
         private static void GenSafiItemLottery() {
