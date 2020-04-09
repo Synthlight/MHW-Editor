@@ -27,6 +27,7 @@ using MHW_Editor.PlData;
 using MHW_Editor.Skills;
 using MHW_Editor.Weapons;
 using MHW_Editor.Weapons.Collision;
+using MHW_Editor.Weapons.Shlp;
 using MHW_Template;
 using MHW_Template.Models;
 using MHW_Template.Weapons;
@@ -684,6 +685,14 @@ namespace MHW_Editor {
 
                 Collision.SetupViews(customFileData, grid, this);
                 return;
+            } else if (targetFileType.Is(typeof(Shlp))) { // Custom save/load.
+                scroll_viewer.Visibility = Visibility.Visible;
+                mainDataGrid.Visibility = Visibility.Collapsed;
+
+                customFileData = Shlp.LoadData(targetFile);
+
+                Shlp.SetupViews(customFileData, grid, this);
+                return;
             }
 #if !DEBUG
             } catch (Exception e) {
@@ -916,6 +925,10 @@ namespace MHW_Editor {
 #endif
             if (targetFileType.Is(typeof(Collision))) { // Custom save/load.
                 Collision.SaveData(customFileData, targetFile);
+                await ShowChangesSaved(true);
+                return;
+            } else if (targetFileType.Is(typeof(Shlp))) { // Custom save/load.
+                Shlp.SaveData(customFileData, targetFile);
                 await ShowChangesSaved(true);
                 return;
             }
@@ -1161,6 +1174,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".shl_tbl")) return typeof(ShellTable);
             if (fileName.EndsWith(".skl_dat")) return typeof(SkillDat);
             if (fileName.EndsWith(".skl_pt_dat")) return typeof(SkillPointData);
+            if (fileName.EndsWith(".shlp")) return typeof(Shlp);
             if (fileName.EndsWith(".srl")) return typeof(SteamRewardList);
             if (fileName.EndsWith(".stmp")) return typeof(ItemDelivery);
             if (fileName.EndsWith(".swer")) return typeof(SwapEnemyRate);

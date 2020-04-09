@@ -280,6 +280,9 @@
     <Compile Include="Weapons\GunnerShoot.cs" />
     <Compile Include="Weapons\NewLimitBreak.cs" />
     <Compile Include="Weapons\OtomoWeaponDat.cs" />
+    <Compile Include="Weapons\Shlp\Shlp.cs" />
+    <Compile Include="Weapons\Shlp\Shlp.io.cs" />
+    <Compile Include="Weapons\Shlp\Models\Shlp.cs" />
     <Compile Include="Weapons\Wp13Param.cs" />
     <Compile Include="Weapons\Wp11Param.cs" />
     <Compile Include="Weapons\Wp10Param.cs" />
