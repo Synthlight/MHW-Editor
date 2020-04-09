@@ -662,224 +662,224 @@ namespace MHW_Editor.PlData {
         public byte Frostcraft_HBG_Wyvernheart_Consumption_per_Hit; // Offset: 1690
         public byte Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit; // Offset: 1691
         public byte Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit; // Offset: 1692
-        public byte Frostcraft_LBG_Wyvernblast_Consumption_per_Hit; // Offset: 1693
         public byte Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit; // Offset: 1694
         public byte Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit; // Offset: 1695
         public byte Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit; // Offset: 1696
+        public byte Frostcraft_LBG_Wyvernblast_Consumption_per_Hit; // Offset: 1693
         public byte Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit; // Offset: 1697
-        public float Unk36; // Offset: 1698
         public byte Unk_Safi_1; // Offset: 1698
-        public float Unk37; // Offset: 1702
-        public float Unk38; // Offset: 1706
-        public float Unk39; // Offset: 1710
-        public float Unk40; // Offset: 1714
-        public float Unk41; // Offset: 1718
-        public float Unk42; // Offset: 1722
-        public float Unk43; // Offset: 1726
-        public float Unk44; // Offset: 1730
-        public float Unk45; // Offset: 1734
-        public float Unk46; // Offset: 1738
-        public float Unk47; // Offset: 1742
-        public float Unk48; // Offset: 1746
-        public float Unk49; // Offset: 1750
-        public float Unk50; // Offset: 1754
-        public float Unk51; // Offset: 1758
-        public float Unk52; // Offset: 1762
-        public float Unk53; // Offset: 1766
-        public float Unk54; // Offset: 1770
-        public float Unk55; // Offset: 1774
-        public float Unk56; // Offset: 1778
-        public float Unk57; // Offset: 1782
-        public float Unk58; // Offset: 1786
-        public float Unk59; // Offset: 1790
-        public float Unk60; // Offset: 1794
-        public float Unk61; // Offset: 1798
-        public float Unk62; // Offset: 1802
-        public float Unk63; // Offset: 1806
-        public float Unk64; // Offset: 1810
-        public float Unk65; // Offset: 1814
-        public float Unk66; // Offset: 1818
-        public float Unk67; // Offset: 1822
-        public float Unk68; // Offset: 1826
-        public float Unk69; // Offset: 1830
-        public float Unk70; // Offset: 1834
-        public float Unk71; // Offset: 1838
-        public float Unk72; // Offset: 1842
-        public float Unk73; // Offset: 1846
-        public float Unk74; // Offset: 1850
-        public float Unk75; // Offset: 1854
-        public float Unk76; // Offset: 1858
-        public float Unk77; // Offset: 1862
-        public float Unk78; // Offset: 1866
-        public float Unk79; // Offset: 1870
-        public float Unk80; // Offset: 1874
-        public float Unk81; // Offset: 1878
-        public float Offensive_Guard; // Offset: 1882
-        public float Coalescence; // Offset: 1886
-        public ushort Food_Effect_Life_Up_1; // Offset: 1890
+        public float Unk36; // Offset: 1699
+        public float Unk37; // Offset: 1703
+        public float Unk38; // Offset: 1707
+        public float Unk39; // Offset: 1711
+        public float Unk40; // Offset: 1715
+        public float Unk41; // Offset: 1719
+        public float Unk42; // Offset: 1723
+        public float Unk43; // Offset: 1727
+        public float Unk44; // Offset: 1731
+        public float Unk45; // Offset: 1735
+        public float Unk46; // Offset: 1739
+        public float Unk47; // Offset: 1743
+        public float Unk48; // Offset: 1747
+        public float Unk49; // Offset: 1751
+        public float Unk50; // Offset: 1755
+        public float Unk51; // Offset: 1759
+        public float Unk52; // Offset: 1763
+        public float Unk53; // Offset: 1767
+        public float Unk54; // Offset: 1771
+        public float Unk55; // Offset: 1775
+        public float Unk56; // Offset: 1779
+        public float Unk57; // Offset: 1783
+        public float Unk58; // Offset: 1787
+        public float Unk59; // Offset: 1791
+        public float Unk60; // Offset: 1795
+        public float Unk61; // Offset: 1799
+        public float Unk62; // Offset: 1803
+        public float Unk63; // Offset: 1807
+        public float Unk64; // Offset: 1811
+        public float Unk65; // Offset: 1815
+        public float Unk66; // Offset: 1819
+        public float Unk67; // Offset: 1823
+        public float Unk68; // Offset: 1827
+        public float Unk69; // Offset: 1831
+        public float Unk70; // Offset: 1835
+        public float Unk71; // Offset: 1839
+        public float Unk72; // Offset: 1843
+        public float Unk73; // Offset: 1847
+        public float Unk74; // Offset: 1851
+        public float Unk75; // Offset: 1855
+        public float Unk76; // Offset: 1859
+        public float Unk77; // Offset: 1863
+        public float Unk78; // Offset: 1867
+        public float Unk79; // Offset: 1871
+        public float Unk80; // Offset: 1875
+        public float Unk81; // Offset: 1879
+        public float Offensive_Guard; // Offset: 1883
+        public float Coalescence; // Offset: 1887
         public float Unk_Safi_2; // Offset: 1891
-        public ushort Food_Effect_Life_Up_2; // Offset: 1892
-        public ushort Food_Effect_Life_Up_3; // Offset: 1894
         public float Unk_Safi_3; // Offset: 1895
-        public ushort Food_Effect_Life_Up_4; // Offset: 1896
-        public ushort Food_Effect_Life_Up_5; // Offset: 1898
         public float Unk_Safi_4; // Offset: 1899
-        public ushort Food_Effect_Life_Up_6; // Offset: 1900
-        public ushort Food_Effect_Stamina_Up_1; // Offset: 1902
         public uint Unk_Safi_5; // Offset: 1903
-        public ushort Food_Effect_Stamina_Up_2; // Offset: 1904
-        public ushort Food_Effect_Stamina_Up_3; // Offset: 1906
         public uint Unk_Safi_6; // Offset: 1907
-        public ushort Food_Effect_Attack_Up_1; // Offset: 1908
-        public ushort Food_Effect_Attack_Up_2; // Offset: 1910
         public float Unk_Safi_7; // Offset: 1911
-        public ushort Food_Effect_Attack_Up_3; // Offset: 1912
-        public ushort Food_Effect_Attack_Up_4; // Offset: 1914
         public float Set_3_Elemental_Bonus; // Offset: 1915
-        public ushort Food_Effect_Defense_Up_1; // Offset: 1916
-        public ushort Food_Effect_Defense_Up_2; // Offset: 1918
         public float Set_5_Elemental_Bonus; // Offset: 1919
-        public ushort Food_Effect_Defense_Up_3; // Offset: 1920
-        public ushort Food_Effect_Defense_Up_4; // Offset: 1922
         public float Set_3_Status_Bonus; // Offset: 1923
-        public ushort Food_Effect_All_Resistances_Up_1; // Offset: 1924
-        public ushort Food_Effect_All_Resistances_Up_2; // Offset: 1926
         public float Set_5_Status_Bonus; // Offset: 1927
-        public ushort Food_Effect_All_Resistances_Up_3; // Offset: 1928
-        public ushort Food_Effect_All_Resistances_Up_4; // Offset: 1930
         public uint Set_3_Affinity_Bonus; // Offset: 1931
-        public byte Feline_Polisher_1; // Offset: 1932
-        public byte Feline_Polisher_2; // Offset: 1933
-        public byte Feline_Polisher_3; // Offset: 1934
-        public byte Feline_Polisher_Loop_1; // Offset: 1935
         public uint Set_5_Affinity_Bonus; // Offset: 1935
-        public byte Feline_Polisher_Loop_2; // Offset: 1936
-        public byte Feline_Polisher_Loop_3; // Offset: 1937
-        public float Feline_Rider_Attack_Rate; // Offset: 1938
         public byte Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal; // Offset: 1939
         public byte Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal; // Offset: 1940
         public byte Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal; // Offset: 1941
         public byte Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal; // Offset: 1942
-        public float Feline_Heroics_Attack_Rate; // Offset: 1942
         public byte Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal; // Offset: 1943
         public byte Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal; // Offset: 1944
         public byte Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal; // Offset: 1945
         public byte Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal; // Offset: 1946
-        public float Feline_Heroics_Defense_Rate; // Offset: 1946
         public byte Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal; // Offset: 1947
         public byte Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal; // Offset: 1948
         public byte Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal; // Offset: 1949
         public byte Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal; // Offset: 1950
-        public byte Feline_Heroics_Life_Activation_Threshold; // Offset: 1950
-        public byte Feline_Carving_L_Lottery_1; // Offset: 1951
         public byte Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal; // Offset: 1951
-        public byte Feline_Carving_L_Lottery_2; // Offset: 1952
         public byte Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal; // Offset: 1952
-        public byte Feline_Carving_L_Lottery_3; // Offset: 1953
         public float Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit; // Offset: 1953
-        public byte Feline_Carving_L_Up_1; // Offset: 1954
-        public byte Feline_Carving_L_Up_2; // Offset: 1955
-        public byte Feline_Carving_L_Up_3; // Offset: 1956
         public float Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit; // Offset: 1957
-        public byte Feline_Carving_L_Up_4; // Offset: 1957
-        public byte Feline_Carving_S_Lottery_; // Offset: 1958
-        public byte Feline_Carving_S_Up_; // Offset: 1959
-        public float Feline_Medic_Heal_Rate; // Offset: 1960
         public float Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit; // Offset: 1961
-        public float Feline_Black_Belt_Stamina_Rate; // Offset: 1964
         public float Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit; // Offset: 1965
-        public ushort Feline_Special_Attack_Condition_Attack_Bonus; // Offset: 1968
         public float Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit; // Offset: 1969
-        public float Feline_Special_Attack_Capture_Attack_Rate; // Offset: 1970
         public float Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit; // Offset: 1973
-        public byte Feline_Defense_S_; // Offset: 1974
-        public byte Feline_Defense_L_; // Offset: 1975
-        public float Feline_Defense_S_Damage_Rate; // Offset: 1976
         public float Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit; // Offset: 1977
-        public float Feline_Defense_L_Damage_Rate; // Offset: 1980
         public float Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit; // Offset: 1981
-        public float Feline_Harvest_Cooldown_Multiplier; // Offset: 1984
         public float Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit; // Offset: 1985
-        public float Feline_Sharpshooter_Shell_Attack_Rate; // Offset: 1988
         public float Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit; // Offset: 1989
-        public float Feline_Escape_Artist_Dash_Stamina_Rate; // Offset: 1992
         public float Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit; // Offset: 1993
-        public float Feline_Delivery_Dash_Stamina_Rate; // Offset: 1996
         public float Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit; // Offset: 1997
-        public float Feline_Riser_S_IFrames; // Offset: 2000
         public float Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit; // Offset: 2001
-        public float Feline_Riser_L_IFrames; // Offset: 2004
         public float Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit; // Offset: 2005
-        public float Feline_Temper_Shell_Attack_Rate; // Offset: 2008
         public float Unk_Safi_8; // Offset: 2009
-        public byte Feline_Temper_Blur_Level_Bonus; // Offset: 2012
-        public float Feline_Cliffhanger_Stamina_Rate; // Offset: 2013
         public float Unk_Safi_9; // Offset: 2013
         public float Unk_Safi_10; // Offset: 2017
-        public float Feline_Slugger_Stun_Attack_Rate; // Offset: 2017
-        public float Feline_Bombardier_Ballista_Attack_Rate; // Offset: 2021
         public float Unk_Safi_11; // Offset: 2021
-        public float Feline_Bombardier_Cannon_Attack_Rate; // Offset: 2025
         public float Set_3_Elemental_Limit; // Offset: 2025
-        public float Feline_Bombardier_Gunlance_Shell_Attack_Rate; // Offset: 2029
         public float Set_5_Elemental_Limit; // Offset: 2029
-        public float Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate; // Offset: 2033
         public float Set_3_Bowgun_Elemental_Limit; // Offset: 2033
-        public float Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate; // Offset: 2037
         public float Set_5_Bowgun_Elemental_Limit; // Offset: 2037
-        public float Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate; // Offset: 2041
         public float Set_3_Status_Limit; // Offset: 2041
-        public float Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate; // Offset: 2045
         public float Set_5_Status_Limit; // Offset: 2045
-        public float Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate; // Offset: 2049
-        public byte Feline_Moxie_Health_Threshold; // Offset: 2053
-        public byte Feline_Dungmaster_Escape_Bonus; // Offset: 2054
-        public float Feline_Provoker_Rate; // Offset: 2055
-        public float Feline_Cool_Cat_Power_UP_Time_Needed; // Offset: 2059
-        public float Feline_Cool_Cat_Power_UP_Duration; // Offset: 2063
-        public float Feline_Cool_Cat_Attack_Bonus; // Offset: 2067
-        public float Feline_Booster_Attack_Bonus; // Offset: 2071
-        public float Feline_Booster_Defense_Bonus; // Offset: 2075
-        public float Feline_Booster_Duration; // Offset: 2079
-        public float Feline_Groomer_Defense_Down_Duration_Multiplier; // Offset: 2083
-        public float Feline_Groomer_Element_Blight_Recovery_Multiplier; // Offset: 2087
-        public float Feline_Parting_Gift_Radius; // Offset: 2091
-        public ushort Feline_Parting_Gift_Recovery_Value; // Offset: 2095
-        public float Feline_Recoil_Attack_Multiplier_1; // Offset: 2097
-        public float Feline_Recoil_Attack_Multiplier_2; // Offset: 2101
-        public float Feline_Recoil_Attack_Multiplier_3; // Offset: 2105
-        public float Feline_Recoil_Attack_Multiplier_4; // Offset: 2109
-        public float Feline_Recoil_Attack_Multiplier_5; // Offset: 2113
-        public float Unk82; // Offset: 2117
-        public float Music_Skill_Bless_Random_Rate; // Offset: 2121
-        public float Music_Skill_Bless_Damage_Cut_Rate; // Offset: 2125
-        public float Music_Skill_Extend_Time; // Offset: 2129
-        public float Music_Skill_Extend_Time_Master; // Offset: 2133
-        public float Music_Skill_Extend_Time_MR_Master; // Offset: 2137
-        public float Music_Skill_Major_Heal_Rand_Rate; // Offset: 2141
-        public float Music_Skill_Major_Heal_Rand_Master_Rate; // Offset: 2145
-        public float Music_Skill_Major_Heal_Rand_MR_Master_Rate; // Offset: 2149
-        public float Music_Skill_Heal_0_Minor; // Offset: 2153
-        public float Music_Skill_Heal_0_Major; // Offset: 2157
-        public float Music_Skill_Heal_1_Minor; // Offset: 2161
-        public float Music_Skill_Heal_1_Major; // Offset: 2165
-        public float Music_Skill_Heal_2_Minor; // Offset: 2169
-        public float Music_Skill_Heal_2_Major; // Offset: 2173
-        public uint Music_Skill_Hp_Up_0; // Offset: 2177
-        public uint Music_Skill_Hp_Up_1; // Offset: 2181
-        public float Music_Skill_Mantle_Duration; // Offset: 2185
-        public float Music_Skill_Mantle_Duration_Put; // Offset: 2189
-        public float Music_Skill_Stamina_Up_Rate; // Offset: 2193
-        public float Unk83; // Offset: 2197
-        public float Unk84; // Offset: 2201
-        public uint Unk85; // Offset: 2205
-        public uint Unk86; // Offset: 2209
-        public float Unk87; // Offset: 2213
-        public float Unk88; // Offset: 2217
-        public float Unk89; // Offset: 2221
-        public uint Unk90; // Offset: 2225
-        public uint Unk91; // Offset: 2229
-        public float Unk92; // Offset: 2233
-        public float Unk93; // Offset: 2237
+        public ushort Food_Effect_Life_Up_1; // Offset: 2049
+        public ushort Food_Effect_Life_Up_2; // Offset: 2051
+        public ushort Food_Effect_Life_Up_3; // Offset: 2053
+        public ushort Food_Effect_Life_Up_4; // Offset: 2055
+        public ushort Food_Effect_Life_Up_5; // Offset: 2057
+        public ushort Food_Effect_Life_Up_6; // Offset: 2059
+        public ushort Food_Effect_Stamina_Up_1; // Offset: 2061
+        public ushort Food_Effect_Stamina_Up_2; // Offset: 2063
+        public ushort Food_Effect_Stamina_Up_3; // Offset: 2065
+        public ushort Food_Effect_Attack_Up_1; // Offset: 2067
+        public ushort Food_Effect_Attack_Up_2; // Offset: 2069
+        public ushort Food_Effect_Attack_Up_3; // Offset: 2071
+        public ushort Food_Effect_Attack_Up_4; // Offset: 2073
+        public ushort Food_Effect_Defense_Up_1; // Offset: 2075
+        public ushort Food_Effect_Defense_Up_2; // Offset: 2077
+        public ushort Food_Effect_Defense_Up_3; // Offset: 2079
+        public ushort Food_Effect_Defense_Up_4; // Offset: 2081
+        public ushort Food_Effect_All_Resistances_Up_1; // Offset: 2083
+        public ushort Food_Effect_All_Resistances_Up_2; // Offset: 2085
+        public ushort Food_Effect_All_Resistances_Up_3; // Offset: 2087
+        public ushort Food_Effect_All_Resistances_Up_4; // Offset: 2089
+        public byte Feline_Polisher_1; // Offset: 2091
+        public byte Feline_Polisher_2; // Offset: 2092
+        public byte Feline_Polisher_3; // Offset: 2093
+        public byte Feline_Polisher_Loop_1; // Offset: 2094
+        public byte Feline_Polisher_Loop_2; // Offset: 2095
+        public byte Feline_Polisher_Loop_3; // Offset: 2096
+        public float Feline_Rider_Attack_Rate; // Offset: 2097
+        public float Feline_Heroics_Attack_Rate; // Offset: 2101
+        public float Feline_Heroics_Defense_Rate; // Offset: 2105
+        public byte Feline_Heroics_Life_Activation_Threshold; // Offset: 2109
+        public byte Feline_Carving_L_Lottery_1; // Offset: 2110
+        public byte Feline_Carving_L_Lottery_2; // Offset: 2111
+        public byte Feline_Carving_L_Lottery_3; // Offset: 2112
+        public byte Feline_Carving_L_Up_1; // Offset: 2113
+        public byte Feline_Carving_L_Up_2; // Offset: 2114
+        public byte Feline_Carving_L_Up_3; // Offset: 2115
+        public byte Feline_Carving_L_Up_4; // Offset: 2116
+        public byte Feline_Carving_S_Lottery_; // Offset: 2117
+        public byte Feline_Carving_S_Up_; // Offset: 2118
+        public float Feline_Medic_Heal_Rate; // Offset: 2119
+        public float Feline_Black_Belt_Stamina_Rate; // Offset: 2123
+        public ushort Feline_Special_Attack_Condition_Attack_Bonus; // Offset: 2127
+        public float Feline_Special_Attack_Capture_Attack_Rate; // Offset: 2129
+        public byte Feline_Defense_S_; // Offset: 2133
+        public float Feline_Defense_S_Damage_Rate; // Offset: 2135
+        public byte Feline_Defense_L_; // Offset: 2134
+        public float Feline_Defense_L_Damage_Rate; // Offset: 2139
+        public float Feline_Harvest_Cooldown_Multiplier; // Offset: 2143
+        public float Feline_Sharpshooter_Shell_Attack_Rate; // Offset: 2147
+        public float Feline_Escape_Artist_Dash_Stamina_Rate; // Offset: 2151
+        public float Feline_Delivery_Dash_Stamina_Rate; // Offset: 2155
+        public float Feline_Riser_S_IFrames; // Offset: 2159
+        public float Feline_Riser_L_IFrames; // Offset: 2163
+        public float Feline_Temper_Shell_Attack_Rate; // Offset: 2167
+        public byte Feline_Temper_Blur_Level_Bonus; // Offset: 2171
+        public float Feline_Cliffhanger_Stamina_Rate; // Offset: 2172
+        public float Feline_Slugger_Stun_Attack_Rate; // Offset: 2176
+        public float Feline_Bombardier_Ballista_Attack_Rate; // Offset: 2180
+        public float Feline_Bombardier_Cannon_Attack_Rate; // Offset: 2184
+        public float Feline_Bombardier_Gunlance_Shell_Attack_Rate; // Offset: 2188
+        public float Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate; // Offset: 2192
+        public float Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate; // Offset: 2196
+        public float Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate; // Offset: 2200
+        public float Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate; // Offset: 2204
+        public float Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate; // Offset: 2208
+        public byte Feline_Moxie_Health_Threshold; // Offset: 2212
+        public byte Feline_Dungmaster_Escape_Bonus; // Offset: 2213
+        public float Feline_Provoker_Rate; // Offset: 2214
+        public float Feline_Cool_Cat_Power_UP_Time_Needed; // Offset: 2218
+        public float Feline_Cool_Cat_Power_UP_Duration; // Offset: 2222
+        public float Feline_Cool_Cat_Attack_Bonus; // Offset: 2226
+        public float Feline_Booster_Attack_Bonus; // Offset: 2230
+        public float Feline_Booster_Defense_Bonus; // Offset: 2234
+        public float Feline_Booster_Duration; // Offset: 2238
+        public float Feline_Groomer_Defense_Down_Duration_Multiplier; // Offset: 2242
+        public float Feline_Groomer_Element_Blight_Recovery_Multiplier; // Offset: 2246
+        public float Feline_Parting_Gift_Radius; // Offset: 2250
+        public ushort Feline_Parting_Gift_Recovery_Value; // Offset: 2254
+        public float Feline_Recoil_Attack_Multiplier_1; // Offset: 2256
+        public float Feline_Recoil_Attack_Multiplier_2; // Offset: 2260
+        public float Feline_Recoil_Attack_Multiplier_3; // Offset: 2264
+        public float Feline_Recoil_Attack_Multiplier_4; // Offset: 2268
+        public float Feline_Recoil_Attack_Multiplier_5; // Offset: 2272
+        public float Unk82; // Offset: 2276
+        public float Music_Skill_Bless_Random_Rate; // Offset: 2280
+        public float Music_Skill_Bless_Damage_Cut_Rate; // Offset: 2284
+        public float Music_Skill_Extend_Time; // Offset: 2288
+        public float Music_Skill_Extend_Time_Master; // Offset: 2292
+        public float Music_Skill_Extend_Time_MR_Master; // Offset: 2296
+        public float Music_Skill_Major_Heal_Rand_Rate; // Offset: 2300
+        public float Music_Skill_Major_Heal_Rand_Master_Rate; // Offset: 2304
+        public float Music_Skill_Major_Heal_Rand_MR_Master_Rate; // Offset: 2308
+        public float Music_Skill_Heal_0_Minor; // Offset: 2312
+        public float Music_Skill_Heal_0_Major; // Offset: 2316
+        public float Music_Skill_Heal_1_Minor; // Offset: 2320
+        public float Music_Skill_Heal_1_Major; // Offset: 2324
+        public float Music_Skill_Heal_2_Minor; // Offset: 2328
+        public float Music_Skill_Heal_2_Major; // Offset: 2332
+        public uint Music_Skill_Hp_Up_0; // Offset: 2336
+        public uint Music_Skill_Hp_Up_1; // Offset: 2340
+        public float Music_Skill_Mantle_Duration; // Offset: 2344
+        public float Music_Skill_Mantle_Duration_Put; // Offset: 2348
+        public float Music_Skill_Stamina_Up_Rate; // Offset: 2352
+        public float Unk83; // Offset: 2356
+        public float Unk84; // Offset: 2360
+        public uint Unk85; // Offset: 2364
+        public uint Unk86; // Offset: 2368
+        public float Unk87; // Offset: 2372
+        public float Unk88; // Offset: 2376
+        public float Unk89; // Offset: 2380
+        public uint Unk90; // Offset: 2384
+        public uint Unk91; // Offset: 2388
+        public float Unk92; // Offset: 2392
+        public float Unk93; // Offset: 2396
     }
 }

@@ -1681,6 +1681,12 @@ namespace MHW_Generator {
                     {"structData", structData}
                 }
             });
+
+            WriteResult($"{Global.HEX_010_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, $"{className}", new Hex010Template {
+                Session = new Dictionary<string, object> {
+                    {"structData", structData}
+                }
+            }, ext: "bt");
         }
     }
 }

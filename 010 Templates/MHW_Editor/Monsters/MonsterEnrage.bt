@@ -1,0 +1,37 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//------------------------------------------------
+
+FSeek(8); uint Monster_Id;
+FSeek(16); uint LR_HR_Trigger_Damage;
+FSeek(20); float LR_HR_Duration;
+FSeek(24); float LR_HR_Speed;
+FSeek(28); float LR_HR_Damage;
+FSeek(32); float LR_HR_Player_Damage;
+FSeek(36); float LR_HR_Build_Multiplier_by_HP_1;
+FSeek(40); float LR_HR_Build_Multiplier_by_HP_2;
+FSeek(44); float LR_HR_Build_Multiplier_by_HP_3;
+FSeek(48); float LR_HR_Build_Multiplier_by_HP_4;
+FSeek(52); float LR_HR_Build_Multiplier_by_HP_5;
+FSeek(56); float LR_HR_Build_Multiplier_by_HP_6;
+FSeek(60); float LR_HR_Build_Multiplier_by_HP_7;
+FSeek(64); float LR_HR_Build_Multiplier_by_HP_8;
+FSeek(68); float LR_HR_Build_Multiplier_by_HP_9;
+FSeek(72); float LR_HR_Build_Multiplier_by_HP_10;
+FSeek(76); float LR_HR_Decay;
+FSeek(80); uint MR_Trigger_Damage;
+FSeek(84); float MR_Duration;
+FSeek(88); float MR_Speed;
+FSeek(92); float MR_Damage;
+FSeek(96); float MR_Player_Damage;
+FSeek(100); float MR_Build_Multiplier_by_HP_1;
+FSeek(104); float MR_Build_Multiplier_by_HP_2;
+FSeek(108); float MR_Build_Multiplier_by_HP_3;
+FSeek(112); float MR_Build_Multiplier_by_HP_4;
+FSeek(116); float MR_Build_Multiplier_by_HP_5;
+FSeek(120); float MR_Build_Multiplier_by_HP_6;
+FSeek(124); float MR_Build_Multiplier_by_HP_7;
+FSeek(128); float MR_Build_Multiplier_by_HP_8;
+FSeek(132); float MR_Build_Multiplier_by_HP_9;
+FSeek(136); float MR_Build_Multiplier_by_HP_10;
+FSeek(140); float MR_Decay;

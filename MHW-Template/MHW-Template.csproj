@@ -82,6 +82,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Hex010Template.cs">
+      <DependentUpon>Hex010Template.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="ValueClassTemplate.cs">
       <DependentUpon>ValueClassTemplate.tt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -136,6 +141,10 @@
     <Content Include="PlDataItemTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>PlDataItemTemplate.cs</LastGenOutput>
+    </Content>
+    <Content Include="Hex010Template.tt">
+      <Generator>TextTemplatingFilePreProcessor</Generator>
+      <LastGenOutput>Hex010Template.cs</LastGenOutput>
     </Content>
     <Content Include="ValueClassTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>

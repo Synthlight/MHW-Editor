@@ -39,8 +39,8 @@ namespace MHW_Editor.Armors {
         public byte Skill_3_Level; // Offset: 48
         public uint Gender; // Offset: 49
         public ushort Set_Group; // Offset: 53
+        public byte Is_Permanent; // Offset: 59
         public ushort GMD_Name_Index; // Offset: 55
         public ushort GMD_Description_Index; // Offset: 57
-        public byte Is_Permanent; // Offset: 59
     }
 }

@@ -13,8 +13,8 @@ namespace MHW_Editor.Items {
         public uint Unk3; // Offset: 20
         public uint Cost; // Offset: 24
         public uint Item_1_Id; // Offset: 28
-        public uint Item_2_Id; // Offset: 32
         public uint Item_1_Cnt; // Offset: 36
+        public uint Item_2_Id; // Offset: 32
         public uint Item_2_Cnt; // Offset: 40
     }
 }

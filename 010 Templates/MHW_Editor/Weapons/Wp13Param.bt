@@ -1,0 +1,16 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//------------------------------------------------
+
+FSeek(2238); ubyte Shield_1_Small;
+FSeek(2239); ubyte Shield_1_Medium;
+FSeek(2240); ubyte Shield_1_Large;
+FSeek(2241); ubyte Shield_2_Small;
+FSeek(2242); ubyte Shield_2_Medium;
+FSeek(2243); ubyte Shield_2_Large;
+FSeek(2244); ubyte Shield_3_Small;
+FSeek(2245); ubyte Shield_3_Medium;
+FSeek(2246); ubyte Shield_3_Large;
+FSeek(2247); ubyte Shield_4_Small;
+FSeek(2248); ubyte Shield_4_Medium;
+FSeek(2249); ubyte Shield_4_Large;

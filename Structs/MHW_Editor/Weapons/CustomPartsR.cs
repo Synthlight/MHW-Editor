@@ -5,8 +5,8 @@ namespace MHW_Editor.Weapons {
     // Initial Offset: "10"
     // Unique Id Formula: "{Id}|{Weapon_Type}"
     public struct CustomPartsR {
-        public byte Weapon_Type; // Offset: 0
         public uint Id; // Offset: 1
+        public byte Weapon_Type; // Offset: 0
         public ushort Needed_Item_Id_to_Unlock; // Offset: 5
         public int Unk2; // Offset: 7
         public ushort Mat_1_Id; // Offset: 15

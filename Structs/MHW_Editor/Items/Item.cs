@@ -12,10 +12,10 @@ namespace MHW_Editor.Items {
         public sbyte Carry_Limit; // Offset: 10
         public sbyte Unknown_sint8_; // Offset: 11
         public ushort Sort_Order; // Offset: 12
-        public uint Flags_Raw; // Offset: 14
         public uint Icon_Id; // Offset: 18
         public ushort Icon_Color_Id; // Offset: 22
         public uint Sell_Price; // Offset: 24
         public uint Buy_Price; // Offset: 28
+        public uint Flags_Raw; // Offset: 14
     }
 }

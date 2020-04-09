@@ -1565,13 +1565,13 @@ namespace MHW_Generator {
             });
         }
 
-        public static void WriteResult(string dir, string @namespace, string className, dynamic template) {
+        public static void WriteResult(string dir, string @namespace, string className, dynamic template, string ext = "cs") {
             template.Initialize();
             if (!Directory.Exists(dir)) {
                 Directory.CreateDirectory(dir);
             }
 
-            File.WriteAllText($"{dir}\\{className}.cs", (string) template.TransformText());
+            File.WriteAllText($"{dir}\\{className}.{ext}", (string) template.TransformText());
         }
     }
 }

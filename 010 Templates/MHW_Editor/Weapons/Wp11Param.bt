@@ -1,0 +1,12 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//------------------------------------------------
+
+FSeek(1313); float Dragonpiercer_X1;
+FSeek(1317); float Dragonpiercer_Y1;
+FSeek(1321); float Dragonpiercer_X2;
+FSeek(1325); float Dragonpiercer_Y2;
+FSeek(2569); float Thousand_Dragons_X1;
+FSeek(2573); float Thousand_Dragons_Y1;
+FSeek(2577); float Thousand_Dragons_X2;
+FSeek(2581); float Thousand_Dragons_Y2;

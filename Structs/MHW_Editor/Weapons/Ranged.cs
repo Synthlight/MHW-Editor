@@ -6,11 +6,11 @@ namespace MHW_Editor.Weapons {
     // Unique Id Formula: "{Id}"
     public struct Ranged {
         public uint Index; // Offset: 0
+        public ushort Id; // Offset: 59
         public short Base_Model_Id; // Offset: 6
         public short Part_1_Id; // Offset: 8
         public short Part_2_Id; // Offset: 10
         public byte Color; // Offset: 13
-        public byte Tree_Id; // Offset: 14
         public byte Is_Fixed_Upgrade; // Offset: 15
         public byte Muzzle_Type; // Offset: 16
         public byte Barrel_Type; // Offset: 17
@@ -33,10 +33,10 @@ namespace MHW_Editor.Weapons {
         public byte Slot_2_Size; // Offset: 42
         public byte Slot_3_Size; // Offset: 43
         public byte Special_Ammo_Type; // Offset: 57
+        public byte Tree_Id; // Offset: 14
         public byte Tree_Position; // Offset: 58
-        public ushort Id; // Offset: 59
+        public ushort Skill; // Offset: 65
         public ushort GMD_Name_Index; // Offset: 61
         public ushort GMD_Description_Index; // Offset: 63
-        public ushort Skill; // Offset: 65
     }
 }

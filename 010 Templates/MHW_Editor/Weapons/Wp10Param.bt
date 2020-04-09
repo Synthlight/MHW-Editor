@@ -1,0 +1,8 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//------------------------------------------------
+
+FSeek(1153); float Red_Extract_Duration;
+FSeek(1157); float White_Extract_Duration;
+FSeek(1161); float Orange_Extract_Duration;
+FSeek(1165); float Triple_Extract_Duration;

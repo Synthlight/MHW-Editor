@@ -6,6 +6,7 @@ namespace MHW_Editor.Weapons {
     // Unique Id Formula: "{Id}"
     public struct OtomoWeaponDat {
         public uint Index; // Offset: 0
+        public ushort Id; // Offset: 32
         public ushort Set_Id; // Offset: 4
         public byte Element; // Offset: 6
         public ushort Attack_Type; // Offset: 7
@@ -20,7 +21,6 @@ namespace MHW_Editor.Weapons {
         public uint Unk; // Offset: 23
         public uint Cost; // Offset: 27
         public byte Unknown_byte_1; // Offset: 31
-        public ushort Id; // Offset: 32
         public ushort GMD_Name_Index; // Offset: 34
         public ushort GMD_Description_Index; // Offset: 36
     }

@@ -1,5 +1,5 @@
 ﻿<#@ template language="C#" #>
-<#@ output extension=".cs" #>
+<#@ output extension=".bt" #>
 <#@ assembly name="System.Core" #>
 <#@ assembly name="$(TargetDir)\MHW-Template.dll" #>
 <#@ parameter type="System.String" name="_namespace" #>
@@ -10,13 +10,10 @@
 <#@ import namespace="System.Collections.Generic" #>
 <#@ import namespace="System.Runtime.InteropServices" #>
 <#@ import namespace="System.Text.RegularExpressions" #>
-using MHW_Template;
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//------------------------------------------------
 
-namespace <#= _namespace #> {
-    // Struct Size: "<#= structData.size #>"
-    // Initial Offset: "<#= structData.offsetInitial #>"
-    // Unique Id Formula: "<#= structData.uniqueIdFormula #>"
-    public struct <#= className #> {
 <#
     var compiler = new CSharpCodeProvider();
     long offsetOffset = 0; // An offset to our offset for all subsequent offsets.
@@ -38,8 +35,8 @@ namespace <#= _namespace #> {
 
         var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
         var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
-        WriteLine($"        public {typeString} {name}; // Offset: {realOffset}");
+        if (typeString == "byte") typeString = "ubyte";
+        if (typeString == "sbyte") typeString = "byte";
+        WriteLine($"FSeek({realOffset}); {typeString} {name};");
     }
 #>
-    }
-}

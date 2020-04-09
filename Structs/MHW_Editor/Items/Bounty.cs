@@ -19,10 +19,10 @@ namespace MHW_Editor.Items {
         public uint Map; // Offset: 41
         public uint Target_Count; // Offset: 45
         public uint Item_Id_1; // Offset: 49
-        public uint Item_Id_2; // Offset: 53
-        public uint Item_Id_3; // Offset: 57
         public uint Item_Id_1_Cnt; // Offset: 61
+        public uint Item_Id_2; // Offset: 53
         public uint Item_Id_2_Cnt; // Offset: 65
+        public uint Item_Id_3; // Offset: 57
         public uint Item_Id_3_Cnt; // Offset: 69
         public uint Research_Points; // Offset: 72
     }
