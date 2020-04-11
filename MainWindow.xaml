@@ -72,11 +72,18 @@
                                   Click="Btn_save_Click"
                                   Content="Save">
                     <xctk:SplitButton.DropDownContent>
-                        <Button Name="btn_save_as_json"
-                                Margin="0,0,0,0"
-                                HorizontalAlignment="Left"
-                                Click="Btn_save_as_json_Click"
-                                Content="Save Changes (Since Last Save) as JSON"/>
+                        <StackPanel Orientation="Vertical">
+                            <Button Name="btn_save_as_json"
+                                    Margin="0,0,0,0"
+                                    HorizontalAlignment="Left"
+                                    Click="Btn_save_as_json_Click"
+                                    Content="Save Changes (Since Last Save) as JSON"/>
+                            <Button Name="btn_save_as_json_merge"
+                                    Margin="0,0,0,0"
+                                    HorizontalAlignment="Left"
+                                    Click="Btn_save_as_json_merge_Click"
+                                    Content="Save Changes (Since Last Save, Merge With Existing JSON) as JSON"/>
+                        </StackPanel>
                     </xctk:SplitButton.DropDownContent>
                 </xctk:SplitButton>
                 <Button Margin="8,0,0,0"

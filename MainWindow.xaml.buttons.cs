@@ -26,7 +26,11 @@ namespace MHW_Editor {
         }
 
         private void Btn_save_as_json_Click(object sender, RoutedEventArgs e) {
-            SaveJson();
+            SaveJson(false);
+        }
+
+        private void Btn_save_as_json_merge_Click(object sender, RoutedEventArgs e) {
+            SaveJson(true);
         }
 
         private void Btn_chunk_search_Click(object sender, RoutedEventArgs e) {

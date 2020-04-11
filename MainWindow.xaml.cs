@@ -1054,23 +1054,44 @@ namespace MHW_Editor {
 #endif
         }
 
-        private async void SaveJson() {
+        private async void SaveJson(bool mergeWithTarget) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
 #if !DEBUG
             try {
 #endif
             var fileName = Path.GetFileName(targetFile);
-            var changesToSave = new JsonChanges {
-                targetFile = fileName,
-                version = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1)
-            };
+            JsonChanges changesToSave = null;
+
+            if (mergeWithTarget) {
+                try {
+                    var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
+                    // Should migrate the loaded changes too.
+                    changesToSave = JsonMigrations.Migrate(File.ReadAllText(target), fileName, items);
+                } catch (Exception) {
+                    // Don't care. If it doesn't exist or can't be read, it gets overwritten.
+                }
+            }
+
+            if (changesToSave == null) {
+                changesToSave = new JsonChanges {
+                    targetFile = fileName,
+                    version = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1)
+                };
+            } else {
+                // Set target & version explicitly in case the user is merging into a different wp_dat or something.
+                changesToSave.targetFile = fileName;
+                changesToSave.version = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1);
+            }
 
             foreach (MhwItem item in items) {
                 if (item.changed.Count == 0) continue;
 
                 var id = item.UniqueId;
-                changesToSave.changes[id] = new Dictionary<string, object>();
+
+                if (!changesToSave.changes.ContainsKey(id)) {
+                    changesToSave.changes[id] = new Dictionary<string, object>();
+                }
 
                 foreach (var changedItem in item.changed) {
                     var value = item.GetType().GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
