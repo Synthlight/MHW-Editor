@@ -118,6 +118,9 @@ namespace MHW_Generator_Data {
                 loopCount++;
             }
 
+            // Ignore as the wales was reverted in chunk2 and has the same hash as in chunk0.
+            hashMap["chunkG0"].Remove("deco_lot.diot");
+
             foundGoodFiles = foundGoodFiles.Sort(pair => pair.Key);
             filePathMap = filePathMap.Sort(pair => pair.Key);
             hashMap = hashMap.Sort(pair => int.Parse(pair.Key.Replace(CHUNK_PREFIX, "")));
