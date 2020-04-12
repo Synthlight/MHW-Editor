@@ -909,17 +909,17 @@ namespace MHW_Generator {
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Item Id", 4, typeof(uint), true),
-                    new MhwStructData.Entry("R5", 8, typeof(uint)),
-                    new MhwStructData.Entry("R6", 12, typeof(uint)),
-                    new MhwStructData.Entry("R7", 16, typeof(uint)),
-                    new MhwStructData.Entry("R8", 20, typeof(uint)),
-                    new MhwStructData.Entry("R9", 32, typeof(uint)),
-                    new MhwStructData.Entry("R10", 36, typeof(uint)),
-                    new MhwStructData.Entry("R11", 40, typeof(uint)),
-                    new MhwStructData.Entry("R12", 44, typeof(uint)),
-                    new MhwStructData.Entry("R13", 48, typeof(uint)),
-                    new MhwStructData.Entry("Stream (R6)", 24, typeof(uint)),
-                    new MhwStructData.Entry("Stream (R8)", 28, typeof(uint))
+                    new MhwStructData.Entry("Grade 1", 8, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 2", 12, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 3", 16, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 4", 20, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 5", 32, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 6", 36, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 7", 40, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 8", 44, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 9", 48, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Stream (R6)", 24, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Stream (R8)", 28, typeof(uint), createPercentField: true)
                 }
             });
         }
@@ -933,17 +933,17 @@ namespace MHW_Generator {
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Item Id", 4, typeof(uint), true),
-                    new MhwStructData.Entry("R5", 8, typeof(uint)),
-                    new MhwStructData.Entry("R6", 12, typeof(uint)),
-                    new MhwStructData.Entry("R7", 16, typeof(uint)),
-                    new MhwStructData.Entry("R8", 20, typeof(uint)),
-                    new MhwStructData.Entry("R9", 32, typeof(uint)),
-                    new MhwStructData.Entry("R10", 36, typeof(uint)),
-                    new MhwStructData.Entry("R11", 40, typeof(uint)),
-                    new MhwStructData.Entry("R12", 44, typeof(uint)),
-                    new MhwStructData.Entry("R13", 48, typeof(uint)),
-                    new MhwStructData.Entry("Stream (R6)", 24, typeof(uint)),
-                    new MhwStructData.Entry("Stream (R8)", 28, typeof(uint))
+                    new MhwStructData.Entry("Grade 1", 8, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 2", 12, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 3", 16, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 4", 20, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 5", 32, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 6", 36, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 7", 40, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 8", 44, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Grade 9", 48, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Stream (R6)", 24, typeof(uint), createPercentField: true),
+                    new MhwStructData.Entry("Stream (R8)", 28, typeof(uint), createPercentField: true)
                 }
             });
         }

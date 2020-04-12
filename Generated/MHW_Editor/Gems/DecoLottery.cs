@@ -43,129 +43,228 @@ namespace MHW_Editor.Gems {
             }
         }
 
-        public const string R5_displayName = "R5";
-        public const int R5_sortIndex = 150;
-        [SortOrder(R5_sortIndex)]
-        [DisplayName(R5_displayName)]
-        public virtual uint R5 {
+        public const string Grade_1_displayName = "Grade 1";
+        public const int Grade_1_sortIndex = 150;
+        [SortOrder(Grade_1_sortIndex)]
+        [DisplayName(Grade_1_displayName)]
+        public virtual uint Grade_1 {
             get => GetData<uint>(8);
             set {
                 if (GetData<uint>(8) == value) return;
-                SetData(8, value, nameof(R5));
+                SetData(8, value, nameof(Grade_1));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(R5));
+                OnPropertyChanged(nameof(Grade_1));
             }
         }
 
-        public const string R6_displayName = "R6";
-        public const int R6_sortIndex = 200;
-        [SortOrder(R6_sortIndex)]
-        [DisplayName(R6_displayName)]
-        public virtual uint R6 {
+        private float _Grade_1Percent;
+        [SortOrder(Grade_1_sortIndex + 1)]
+        [DisplayName(Grade_1_displayName + "%")]
+        public float Grade_1_percent {
+            get => _Grade_1Percent;
+            set {
+                _Grade_1Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Grade_1_percent));
+            }
+        }
+
+        public const string Grade_2_displayName = "Grade 2";
+        public const int Grade_2_sortIndex = 200;
+        [SortOrder(Grade_2_sortIndex)]
+        [DisplayName(Grade_2_displayName)]
+        public virtual uint Grade_2 {
             get => GetData<uint>(12);
             set {
                 if (GetData<uint>(12) == value) return;
-                SetData(12, value, nameof(R6));
+                SetData(12, value, nameof(Grade_2));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(R6));
+                OnPropertyChanged(nameof(Grade_2));
             }
         }
 
-        public const string R7_displayName = "R7";
-        public const int R7_sortIndex = 250;
-        [SortOrder(R7_sortIndex)]
-        [DisplayName(R7_displayName)]
-        public virtual uint R7 {
+        private float _Grade_2Percent;
+        [SortOrder(Grade_2_sortIndex + 1)]
+        [DisplayName(Grade_2_displayName + "%")]
+        public float Grade_2_percent {
+            get => _Grade_2Percent;
+            set {
+                _Grade_2Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Grade_2_percent));
+            }
+        }
+
+        public const string Grade_3_displayName = "Grade 3";
+        public const int Grade_3_sortIndex = 250;
+        [SortOrder(Grade_3_sortIndex)]
+        [DisplayName(Grade_3_displayName)]
+        public virtual uint Grade_3 {
             get => GetData<uint>(16);
             set {
                 if (GetData<uint>(16) == value) return;
-                SetData(16, value, nameof(R7));
+                SetData(16, value, nameof(Grade_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(R7));
+                OnPropertyChanged(nameof(Grade_3));
             }
         }
 
-        public const string R8_displayName = "R8";
-        public const int R8_sortIndex = 300;
-        [SortOrder(R8_sortIndex)]
-        [DisplayName(R8_displayName)]
-        public virtual uint R8 {
+        private float _Grade_3Percent;
+        [SortOrder(Grade_3_sortIndex + 1)]
+        [DisplayName(Grade_3_displayName + "%")]
+        public float Grade_3_percent {
+            get => _Grade_3Percent;
+            set {
+                _Grade_3Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Grade_3_percent));
+            }
+        }
+
+        public const string Grade_4_displayName = "Grade 4";
+        public const int Grade_4_sortIndex = 300;
+        [SortOrder(Grade_4_sortIndex)]
+        [DisplayName(Grade_4_displayName)]
+        public virtual uint Grade_4 {
             get => GetData<uint>(20);
             set {
                 if (GetData<uint>(20) == value) return;
-                SetData(20, value, nameof(R8));
+                SetData(20, value, nameof(Grade_4));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(R8));
+                OnPropertyChanged(nameof(Grade_4));
             }
         }
 
-        public const string R9_displayName = "R9";
-        public const int R9_sortIndex = 350;
-        [SortOrder(R9_sortIndex)]
-        [DisplayName(R9_displayName)]
-        public virtual uint R9 {
+        private float _Grade_4Percent;
+        [SortOrder(Grade_4_sortIndex + 1)]
+        [DisplayName(Grade_4_displayName + "%")]
+        public float Grade_4_percent {
+            get => _Grade_4Percent;
+            set {
+                _Grade_4Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Grade_4_percent));
+            }
+        }
+
+        public const string Grade_5_displayName = "Grade 5";
+        public const int Grade_5_sortIndex = 350;
+        [SortOrder(Grade_5_sortIndex)]
+        [DisplayName(Grade_5_displayName)]
+        public virtual uint Grade_5 {
             get => GetData<uint>(32);
             set {
                 if (GetData<uint>(32) == value) return;
-                SetData(32, value, nameof(R9));
+                SetData(32, value, nameof(Grade_5));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(R9));
+                OnPropertyChanged(nameof(Grade_5));
             }
         }
 
-        public const string R10_displayName = "R10";
-        public const int R10_sortIndex = 400;
-        [SortOrder(R10_sortIndex)]
-        [DisplayName(R10_displayName)]
-        public virtual uint R10 {
+        private float _Grade_5Percent;
+        [SortOrder(Grade_5_sortIndex + 1)]
+        [DisplayName(Grade_5_displayName + "%")]
+        public float Grade_5_percent {
+            get => _Grade_5Percent;
+            set {
+                _Grade_5Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Grade_5_percent));
+            }
+        }
+
+        public const string Grade_6_displayName = "Grade 6";
+        public const int Grade_6_sortIndex = 400;
+        [SortOrder(Grade_6_sortIndex)]
+        [DisplayName(Grade_6_displayName)]
+        public virtual uint Grade_6 {
             get => GetData<uint>(36);
             set {
                 if (GetData<uint>(36) == value) return;
-                SetData(36, value, nameof(R10));
+                SetData(36, value, nameof(Grade_6));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(R10));
+                OnPropertyChanged(nameof(Grade_6));
             }
         }
 
-        public const string R11_displayName = "R11";
-        public const int R11_sortIndex = 450;
-        [SortOrder(R11_sortIndex)]
-        [DisplayName(R11_displayName)]
-        public virtual uint R11 {
+        private float _Grade_6Percent;
+        [SortOrder(Grade_6_sortIndex + 1)]
+        [DisplayName(Grade_6_displayName + "%")]
+        public float Grade_6_percent {
+            get => _Grade_6Percent;
+            set {
+                _Grade_6Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Grade_6_percent));
+            }
+        }
+
+        public const string Grade_7_displayName = "Grade 7";
+        public const int Grade_7_sortIndex = 450;
+        [SortOrder(Grade_7_sortIndex)]
+        [DisplayName(Grade_7_displayName)]
+        public virtual uint Grade_7 {
             get => GetData<uint>(40);
             set {
                 if (GetData<uint>(40) == value) return;
-                SetData(40, value, nameof(R11));
+                SetData(40, value, nameof(Grade_7));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(R11));
+                OnPropertyChanged(nameof(Grade_7));
             }
         }
 
-        public const string R12_displayName = "R12";
-        public const int R12_sortIndex = 500;
-        [SortOrder(R12_sortIndex)]
-        [DisplayName(R12_displayName)]
-        public virtual uint R12 {
+        private float _Grade_7Percent;
+        [SortOrder(Grade_7_sortIndex + 1)]
+        [DisplayName(Grade_7_displayName + "%")]
+        public float Grade_7_percent {
+            get => _Grade_7Percent;
+            set {
+                _Grade_7Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Grade_7_percent));
+            }
+        }
+
+        public const string Grade_8_displayName = "Grade 8";
+        public const int Grade_8_sortIndex = 500;
+        [SortOrder(Grade_8_sortIndex)]
+        [DisplayName(Grade_8_displayName)]
+        public virtual uint Grade_8 {
             get => GetData<uint>(44);
             set {
                 if (GetData<uint>(44) == value) return;
-                SetData(44, value, nameof(R12));
+                SetData(44, value, nameof(Grade_8));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(R12));
+                OnPropertyChanged(nameof(Grade_8));
             }
         }
 
-        public const string R13_displayName = "R13";
-        public const int R13_sortIndex = 550;
-        [SortOrder(R13_sortIndex)]
-        [DisplayName(R13_displayName)]
-        public virtual uint R13 {
+        private float _Grade_8Percent;
+        [SortOrder(Grade_8_sortIndex + 1)]
+        [DisplayName(Grade_8_displayName + "%")]
+        public float Grade_8_percent {
+            get => _Grade_8Percent;
+            set {
+                _Grade_8Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Grade_8_percent));
+            }
+        }
+
+        public const string Grade_9_displayName = "Grade 9";
+        public const int Grade_9_sortIndex = 550;
+        [SortOrder(Grade_9_sortIndex)]
+        [DisplayName(Grade_9_displayName)]
+        public virtual uint Grade_9 {
             get => GetData<uint>(48);
             set {
                 if (GetData<uint>(48) == value) return;
-                SetData(48, value, nameof(R13));
+                SetData(48, value, nameof(Grade_9));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(R13));
+                OnPropertyChanged(nameof(Grade_9));
+            }
+        }
+
+        private float _Grade_9Percent;
+        [SortOrder(Grade_9_sortIndex + 1)]
+        [DisplayName(Grade_9_displayName + "%")]
+        public float Grade_9_percent {
+            get => _Grade_9Percent;
+            set {
+                _Grade_9Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Grade_9_percent));
             }
         }
 
@@ -183,6 +282,17 @@ namespace MHW_Editor.Gems {
             }
         }
 
+        private float _Stream_R6_Percent;
+        [SortOrder(Stream_R6__sortIndex + 1)]
+        [DisplayName(Stream_R6__displayName + "%")]
+        public float Stream_R6__percent {
+            get => _Stream_R6_Percent;
+            set {
+                _Stream_R6_Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Stream_R6__percent));
+            }
+        }
+
         public const string Stream_R8__displayName = "Stream (R8)";
         public const int Stream_R8__sortIndex = 650;
         [SortOrder(Stream_R8__sortIndex)]
@@ -194,6 +304,17 @@ namespace MHW_Editor.Gems {
                 SetData(28, value, nameof(Stream_R8_));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stream_R8_));
+            }
+        }
+
+        private float _Stream_R8_Percent;
+        [SortOrder(Stream_R8__sortIndex + 1)]
+        [DisplayName(Stream_R8__displayName + "%")]
+        public float Stream_R8__percent {
+            get => _Stream_R8_Percent;
+            set {
+                _Stream_R8_Percent = value.Clamp(0f, 100f);
+                OnPropertyChanged(nameof(Stream_R8__percent));
             }
         }
 

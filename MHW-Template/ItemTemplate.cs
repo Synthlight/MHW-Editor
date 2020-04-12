@@ -200,6 +200,20 @@ namespace MHW_Template
             WriteLine($"        public string {name}_button => {dataSourceLookup}.TryGet({name}).ToStringWithId({name});");
         }
 
+        if (entry.createPercentField) {
+            WriteLine("");
+            WriteLine($"        private float _{name}Percent;");
+            WriteLine($"        [SortOrder({name}_sortIndex + 1)]");
+            WriteLine($"        [DisplayName({name}_displayName + \"%\")]");
+            WriteLine($"        public float {name}_percent {{");
+            WriteLine($"            get => _{name}Percent;");
+            WriteLine($"            set {{");
+            WriteLine($"                _{name}Percent = value.Clamp(0f, 100f);");
+            WriteLine($"                OnPropertyChanged(nameof({name}_percent));");
+            WriteLine($"            }}");
+            WriteLine($"        }}");
+        }
+
         sortIndex += 50;
     }
 
@@ -208,7 +222,7 @@ namespace MHW_Template
             #line hidden
             this.Write("\r\n        public const int lastSortIndex = ");
             
-            #line 148 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 162 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(sortIndex));
             
             #line default

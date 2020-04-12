@@ -603,39 +603,65 @@ namespace MHW_Editor {
         private void CalculatePercents() {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!targetFileType.Is(typeof(DecoPercent))) return;
+            if (targetFileType.Is(typeof(DecoLottery))) {
+                var dict = new Dictionary<int, uint>();
+                for (var i = 0; i <= 10; i++) {
+                    dict[i] = 0;
+                }
 
-            var dict = new Dictionary<int, uint>();
-            for (var i = 5; i <= 15; i++) {
-                dict[i] = 0;
-            }
+                foreach (DecoLottery item in items) {
+                    dict[0] += item.Grade_1;
+                    dict[1] += item.Grade_2;
+                    dict[2] += item.Grade_3;
+                    dict[3] += item.Grade_4;
+                    dict[4] += item.Grade_5;
+                    dict[5] += item.Grade_6;
+                    dict[6] += item.Grade_7;
+                    dict[7] += item.Grade_8;
+                    dict[8] += item.Grade_9;
+                    dict[9] += item.Stream_R6_;
+                    dict[10] += item.Stream_R8_;
+                }
 
-            foreach (var item in items) {
-                dict[5] += item.R5;
-                dict[6] += item.R6;
-                dict[7] += item.R7;
-                dict[8] += item.R8;
-                dict[9] += item.R9;
-                dict[10] += item.R10;
-                dict[11] += item.R11;
-                dict[12] += item.R12;
-                dict[13] += item.R13;
-                dict[14] += item.Stream_R6_;
-                dict[15] += item.Stream_R8_;
-            }
+                foreach (DecoLottery item in items) {
+                    item.Grade_1_percent = item.Grade_1 > 0f ? (float) item.Grade_1 / dict[0] : 0f;
+                    item.Grade_2_percent = item.Grade_2 > 0f ? (float) item.Grade_2 / dict[1] : 0f;
+                    item.Grade_3_percent = item.Grade_3 > 0f ? (float) item.Grade_3 / dict[2] : 0f;
+                    item.Grade_4_percent = item.Grade_4 > 0f ? (float) item.Grade_4 / dict[3] : 0f;
+                    item.Grade_5_percent = item.Grade_5 > 0f ? (float) item.Grade_5 / dict[4] : 0f;
+                    item.Grade_6_percent = item.Grade_6 > 0f ? (float) item.Grade_6 / dict[5] : 0f;
+                    item.Grade_7_percent = item.Grade_7 > 0f ? (float) item.Grade_7 / dict[6] : 0f;
+                    item.Grade_8_percent = item.Grade_8 > 0f ? (float) item.Grade_8 / dict[7] : 0f;
+                    item.Grade_9_percent = item.Grade_9 > 0f ? (float) item.Grade_9 / dict[8] : 0f;
+                    item.Stream_R6__percent = item.Stream_R6_ > 0f ? (float) item.Stream_R6_ / dict[9] : 0f;
+                    item.Stream_R8__percent = item.Stream_R8_ > 0f ? (float) item.Stream_R8_ / dict[10] : 0f;
+                }
+            } else if (targetFileType.Is(typeof(DecoGradeLottery))) {
+                foreach (DecoGradeLottery item in items) {
+                    var total = item.Grade_1
+                                + item.Grade_2
+                                + item.Grade_3
+                                + item.Grade_4
+                                + item.Grade_5
+                                + item.Grade_6
+                                + item.Grade_7
+                                + item.Grade_8
+                                + item.Grade_9
+                                + item.Stream_R6_
+                                + item.Stream_R8_;
 
-            foreach (var item in items) {
-                item.R5_percent = item.R5 > 0f ? (float) item.R5 / dict[5] : 0f;
-                item.R6_percent = item.R6 > 0f ? (float) item.R6 / dict[6] : 0f;
-                item.R7_percent = item.R7 > 0f ? (float) item.R7 / dict[7] : 0f;
-                item.R8_percent = item.R8 > 0f ? (float) item.R8 / dict[8] : 0f;
-                item.R9_percent = item.R9 > 0f ? (float) item.R9 / dict[9] : 0f;
-                item.R10_percent = item.R10 > 0f ? (float) item.R10 / dict[10] : 0f;
-                item.R11_percent = item.R11 > 0f ? (float) item.R11 / dict[11] : 0f;
-                item.R12_percent = item.R12 > 0f ? (float) item.R12 / dict[12] : 0f;
-                item.R13_percent = item.R13 > 0f ? (float) item.R13 / dict[13] : 0f;
-                item.Stream_R6_percent = item.Stream_R6_ > 0f ? (float) item.Stream_R6_ / dict[14] : 0f;
-                item.Stream_R8_percent = item.Stream_R8_ > 0f ? (float) item.Stream_R8_ / dict[15] : 0f;
+                    item.Grade_1_percent = item.Grade_1 > 0f ? (float) item.Grade_1 / total : 0f;
+                    item.Grade_2_percent = item.Grade_2 > 0f ? (float) item.Grade_2 / total : 0f;
+                    item.Grade_3_percent = item.Grade_3 > 0f ? (float) item.Grade_3 / total : 0f;
+                    item.Grade_4_percent = item.Grade_4 > 0f ? (float) item.Grade_4 / total : 0f;
+                    item.Grade_5_percent = item.Grade_5 > 0f ? (float) item.Grade_5 / total : 0f;
+                    item.Grade_6_percent = item.Grade_6 > 0f ? (float) item.Grade_6 / total : 0f;
+                    item.Grade_7_percent = item.Grade_7 > 0f ? (float) item.Grade_7 / total : 0f;
+                    item.Grade_8_percent = item.Grade_8 > 0f ? (float) item.Grade_8 / total : 0f;
+                    item.Grade_9_percent = item.Grade_9 > 0f ? (float) item.Grade_9 / total : 0f;
+                    item.Stream_R6__percent = item.Stream_R6_ > 0f ? (float) item.Stream_R6_ / total : 0f;
+                    item.Stream_R8__percent = item.Stream_R8_ > 0f ? (float) item.Stream_R8_ / total : 0f;
+                }
             }
         }
 
@@ -717,7 +743,7 @@ namespace MHW_Editor {
                 mainDataGrid.ItemsSource = new ListCollectionView(items);
             }
 
-            if (targetFileType.Is(typeof(DecoPercent))) {
+            if (targetFileType.Is(typeof(DecoGradeLottery), typeof(DecoLottery))) {
                 CalculatePercents();
             }
         }
@@ -789,7 +815,8 @@ namespace MHW_Editor {
 
             btn_sort_jewel_order_by_name.Visibility = targetFileType.Is(typeof(Item)).VisibleIfTrue();
 
-            cb_show_id_before_name.Visibility = (targetFileType.Is(typeof(DecoPercent),
+            cb_show_id_before_name.Visibility = (targetFileType.Is(typeof(DecoGradeLottery),
+                                                                   typeof(DecoLottery),
                                                                    typeof(MusicSkill),
                                                                    typeof(QuestReward),
                                                                    typeof(SkillDat),

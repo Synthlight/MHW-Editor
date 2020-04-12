@@ -26,6 +26,7 @@ namespace MHW_Template {
             public readonly string dataSourceCustomSorter;
             public readonly bool forceUnique; // Force the generated field to be unique. (Adds offset to end of field name.) Skipped in the struct generation.
             public readonly long addOffset = 0; // An offset to our offset for all subsequent offsets.
+            public readonly bool createPercentField = false;
 
             public Entry(string displayName, ulong offset, Type type,
                          bool readOnly = false,
@@ -36,7 +37,8 @@ namespace MHW_Template {
                          string[] extraOnPropertyChanged = null,
                          string dataSourceCustomSorter = "ButtonSorter",
                          bool forceUnique = false,
-                         long addOffset = 0) {
+                         long addOffset = 0,
+                         bool createPercentField = false) {
                 this.displayName = displayName;
                 this.offset = offset;
                 this.type = type;
@@ -49,6 +51,7 @@ namespace MHW_Template {
                 this.dataSourceCustomSorter = dataSourceCustomSorter;
                 this.forceUnique = forceUnique;
                 this.addOffset = addOffset;
+                this.createPercentField = createPercentField;
             }
 
             public Entry(string displayName, Type type,
@@ -60,7 +63,8 @@ namespace MHW_Template {
                          string[] extraOnPropertyChanged = null,
                          string dataSourceCustomSorter = "ButtonSorter",
                          bool forceUnique = false,
-                         long addOffset = 0) : this(displayName, 0, type, readOnly, enumReturn, valueString, accessLevel, dataSourceType, extraOnPropertyChanged, dataSourceCustomSorter, forceUnique, addOffset) {
+                         long addOffset = 0,
+                         bool createPercentField = false) : this(displayName, 0, type, readOnly, enumReturn, valueString, accessLevel, dataSourceType, extraOnPropertyChanged, dataSourceCustomSorter, forceUnique, addOffset, createPercentField) {
             }
 
             public Entry(string name, ulong offset, Type type, Type enumReturn) : this(name, offset, type) {

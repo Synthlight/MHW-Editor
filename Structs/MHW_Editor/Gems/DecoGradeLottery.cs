@@ -7,15 +7,15 @@ namespace MHW_Editor.Gems {
     public struct DecoGradeLottery {
         public uint Index; // Offset: 0
         public uint Item_Id; // Offset: 4
-        public uint R5; // Offset: 8
-        public uint R6; // Offset: 12
-        public uint R7; // Offset: 16
-        public uint R8; // Offset: 20
-        public uint R9; // Offset: 32
-        public uint R10; // Offset: 36
-        public uint R11; // Offset: 40
-        public uint R12; // Offset: 44
-        public uint R13; // Offset: 48
+        public uint Grade_1; // Offset: 8
+        public uint Grade_2; // Offset: 12
+        public uint Grade_3; // Offset: 16
+        public uint Grade_4; // Offset: 20
+        public uint Grade_5; // Offset: 32
+        public uint Grade_6; // Offset: 36
+        public uint Grade_7; // Offset: 40
+        public uint Grade_8; // Offset: 44
+        public uint Grade_9; // Offset: 48
         public uint Stream_R6_; // Offset: 24
         public uint Stream_R8_; // Offset: 28
     }
