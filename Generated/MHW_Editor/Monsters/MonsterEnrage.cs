@@ -97,143 +97,143 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public const string LR_HR_Build_Multiplier_by_HP_90_100__displayName = "LR/HR Build Multiplier by HP (90%-100%)";
-        public const int LR_HR_Build_Multiplier_by_HP_90_100__sortIndex = 350;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_90_100__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_90_100__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_90_100_ {
+        public const string LR_HR_Build_Multiplier_by_HP_100__displayName = "LR/HR Build Multiplier by HP (100%)";
+        public const int LR_HR_Build_Multiplier_by_HP_100__sortIndex = 350;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_100__sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_100__displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_100_ {
             get => GetData<float>(36);
             set {
                 if (GetData<float>(36) == value) return;
-                SetData(36, value, nameof(LR_HR_Build_Multiplier_by_HP_90_100_));
+                SetData(36, value, nameof(LR_HR_Build_Multiplier_by_HP_100_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_90_100_));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_100_));
             }
         }
 
-        public const string LR_HR_Build_Multiplier_by_HP_80_90__displayName = "LR/HR Build Multiplier by HP (80%-90%)";
-        public const int LR_HR_Build_Multiplier_by_HP_80_90__sortIndex = 400;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_80_90__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_80_90__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_80_90_ {
+        public const string LR_HR_Build_Multiplier_by_HP_88_99__displayName = "LR/HR Build Multiplier by HP (88%-99%)";
+        public const int LR_HR_Build_Multiplier_by_HP_88_99__sortIndex = 400;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_88_99__sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_88_99__displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_88_99_ {
             get => GetData<float>(40);
             set {
                 if (GetData<float>(40) == value) return;
-                SetData(40, value, nameof(LR_HR_Build_Multiplier_by_HP_80_90_));
+                SetData(40, value, nameof(LR_HR_Build_Multiplier_by_HP_88_99_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_80_90_));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_88_99_));
             }
         }
 
-        public const string LR_HR_Build_Multiplier_by_HP_70_80__displayName = "LR/HR Build Multiplier by HP (70%-80%)";
-        public const int LR_HR_Build_Multiplier_by_HP_70_80__sortIndex = 450;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_70_80__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_70_80__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_70_80_ {
+        public const string LR_HR_Build_Multiplier_by_HP_77_88__displayName = "LR/HR Build Multiplier by HP (77%-88%)";
+        public const int LR_HR_Build_Multiplier_by_HP_77_88__sortIndex = 450;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_77_88__sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_77_88__displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_77_88_ {
             get => GetData<float>(44);
             set {
                 if (GetData<float>(44) == value) return;
-                SetData(44, value, nameof(LR_HR_Build_Multiplier_by_HP_70_80_));
+                SetData(44, value, nameof(LR_HR_Build_Multiplier_by_HP_77_88_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_70_80_));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_77_88_));
             }
         }
 
-        public const string LR_HR_Build_Multiplier_by_HP_60_70__displayName = "LR/HR Build Multiplier by HP (60%-70%)";
-        public const int LR_HR_Build_Multiplier_by_HP_60_70__sortIndex = 500;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_60_70__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_60_70__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_60_70_ {
+        public const string LR_HR_Build_Multiplier_by_HP_66_77__displayName = "LR/HR Build Multiplier by HP (66%-77%)";
+        public const int LR_HR_Build_Multiplier_by_HP_66_77__sortIndex = 500;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_66_77__sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_66_77__displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_66_77_ {
             get => GetData<float>(48);
             set {
                 if (GetData<float>(48) == value) return;
-                SetData(48, value, nameof(LR_HR_Build_Multiplier_by_HP_60_70_));
+                SetData(48, value, nameof(LR_HR_Build_Multiplier_by_HP_66_77_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_60_70_));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_66_77_));
             }
         }
 
-        public const string LR_HR_Build_Multiplier_by_HP_50_60__displayName = "LR/HR Build Multiplier by HP (50%-60%)";
-        public const int LR_HR_Build_Multiplier_by_HP_50_60__sortIndex = 550;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_50_60__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_50_60__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_50_60_ {
+        public const string LR_HR_Build_Multiplier_by_HP_55_66__displayName = "LR/HR Build Multiplier by HP (55%-66%)";
+        public const int LR_HR_Build_Multiplier_by_HP_55_66__sortIndex = 550;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_55_66__sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_55_66__displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_55_66_ {
             get => GetData<float>(52);
             set {
                 if (GetData<float>(52) == value) return;
-                SetData(52, value, nameof(LR_HR_Build_Multiplier_by_HP_50_60_));
+                SetData(52, value, nameof(LR_HR_Build_Multiplier_by_HP_55_66_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_50_60_));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_55_66_));
             }
         }
 
-        public const string LR_HR_Build_Multiplier_by_HP_40_50__displayName = "LR/HR Build Multiplier by HP (40%-50%)";
-        public const int LR_HR_Build_Multiplier_by_HP_40_50__sortIndex = 600;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_40_50__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_40_50__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_40_50_ {
+        public const string LR_HR_Build_Multiplier_by_HP_44_55__displayName = "LR/HR Build Multiplier by HP (44%-55%)";
+        public const int LR_HR_Build_Multiplier_by_HP_44_55__sortIndex = 600;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_44_55__sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_44_55__displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_44_55_ {
             get => GetData<float>(56);
             set {
                 if (GetData<float>(56) == value) return;
-                SetData(56, value, nameof(LR_HR_Build_Multiplier_by_HP_40_50_));
+                SetData(56, value, nameof(LR_HR_Build_Multiplier_by_HP_44_55_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_40_50_));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_44_55_));
             }
         }
 
-        public const string LR_HR_Build_Multiplier_by_HP_30_40__displayName = "LR/HR Build Multiplier by HP (30%-40%)";
-        public const int LR_HR_Build_Multiplier_by_HP_30_40__sortIndex = 650;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_30_40__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_30_40__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_30_40_ {
+        public const string LR_HR_Build_Multiplier_by_HP_33_44__displayName = "LR/HR Build Multiplier by HP (33%-44%)";
+        public const int LR_HR_Build_Multiplier_by_HP_33_44__sortIndex = 650;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_33_44__sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_33_44__displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_33_44_ {
             get => GetData<float>(60);
             set {
                 if (GetData<float>(60) == value) return;
-                SetData(60, value, nameof(LR_HR_Build_Multiplier_by_HP_30_40_));
+                SetData(60, value, nameof(LR_HR_Build_Multiplier_by_HP_33_44_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_30_40_));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_33_44_));
             }
         }
 
-        public const string LR_HR_Build_Multiplier_by_HP_20_30__displayName = "LR/HR Build Multiplier by HP (20%-30%)";
-        public const int LR_HR_Build_Multiplier_by_HP_20_30__sortIndex = 700;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_20_30__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_20_30__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_20_30_ {
+        public const string LR_HR_Build_Multiplier_by_HP_22_33__displayName = "LR/HR Build Multiplier by HP (22%-33%)";
+        public const int LR_HR_Build_Multiplier_by_HP_22_33__sortIndex = 700;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_22_33__sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_22_33__displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_22_33_ {
             get => GetData<float>(64);
             set {
                 if (GetData<float>(64) == value) return;
-                SetData(64, value, nameof(LR_HR_Build_Multiplier_by_HP_20_30_));
+                SetData(64, value, nameof(LR_HR_Build_Multiplier_by_HP_22_33_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_20_30_));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_22_33_));
             }
         }
 
-        public const string LR_HR_Build_Multiplier_by_HP_10_20__displayName = "LR/HR Build Multiplier by HP (10%-20%)";
-        public const int LR_HR_Build_Multiplier_by_HP_10_20__sortIndex = 750;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_10_20__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_10_20__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_10_20_ {
+        public const string LR_HR_Build_Multiplier_by_HP_11_22__displayName = "LR/HR Build Multiplier by HP (11%-22%)";
+        public const int LR_HR_Build_Multiplier_by_HP_11_22__sortIndex = 750;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_11_22__sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_11_22__displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_11_22_ {
             get => GetData<float>(68);
             set {
                 if (GetData<float>(68) == value) return;
-                SetData(68, value, nameof(LR_HR_Build_Multiplier_by_HP_10_20_));
+                SetData(68, value, nameof(LR_HR_Build_Multiplier_by_HP_11_22_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_10_20_));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_11_22_));
             }
         }
 
-        public const string LR_HR_Build_Multiplier_by_HP_0_10__displayName = "LR/HR Build Multiplier by HP (0%-10%)";
-        public const int LR_HR_Build_Multiplier_by_HP_0_10__sortIndex = 800;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_0_10__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_0_10__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_0_10_ {
+        public const string LR_HR_Build_Multiplier_by_HP_0_11__displayName = "LR/HR Build Multiplier by HP (0%-11%)";
+        public const int LR_HR_Build_Multiplier_by_HP_0_11__sortIndex = 800;
+        [SortOrder(LR_HR_Build_Multiplier_by_HP_0_11__sortIndex)]
+        [DisplayName(LR_HR_Build_Multiplier_by_HP_0_11__displayName)]
+        public virtual float LR_HR_Build_Multiplier_by_HP_0_11_ {
             get => GetData<float>(72);
             set {
                 if (GetData<float>(72) == value) return;
-                SetData(72, value, nameof(LR_HR_Build_Multiplier_by_HP_0_10_));
+                SetData(72, value, nameof(LR_HR_Build_Multiplier_by_HP_0_11_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_0_10_));
+                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_0_11_));
             }
         }
 
@@ -321,143 +321,143 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public const string MR_Build_Multiplier_by_HP_90_100__displayName = "MR Build Multiplier by HP (90%-100%)";
-        public const int MR_Build_Multiplier_by_HP_90_100__sortIndex = 1150;
-        [SortOrder(MR_Build_Multiplier_by_HP_90_100__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_90_100__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_90_100_ {
+        public const string MR_Build_Multiplier_by_HP_100__displayName = "MR Build Multiplier by HP (100%)";
+        public const int MR_Build_Multiplier_by_HP_100__sortIndex = 1150;
+        [SortOrder(MR_Build_Multiplier_by_HP_100__sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_100__displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_100_ {
             get => GetData<float>(100);
             set {
                 if (GetData<float>(100) == value) return;
-                SetData(100, value, nameof(MR_Build_Multiplier_by_HP_90_100_));
+                SetData(100, value, nameof(MR_Build_Multiplier_by_HP_100_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_90_100_));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_100_));
             }
         }
 
-        public const string MR_Build_Multiplier_by_HP_80_90__displayName = "MR Build Multiplier by HP (80%-90%)";
-        public const int MR_Build_Multiplier_by_HP_80_90__sortIndex = 1200;
-        [SortOrder(MR_Build_Multiplier_by_HP_80_90__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_80_90__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_80_90_ {
+        public const string MR_Build_Multiplier_by_HP_88_99__displayName = "MR Build Multiplier by HP (88%-99%)";
+        public const int MR_Build_Multiplier_by_HP_88_99__sortIndex = 1200;
+        [SortOrder(MR_Build_Multiplier_by_HP_88_99__sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_88_99__displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_88_99_ {
             get => GetData<float>(104);
             set {
                 if (GetData<float>(104) == value) return;
-                SetData(104, value, nameof(MR_Build_Multiplier_by_HP_80_90_));
+                SetData(104, value, nameof(MR_Build_Multiplier_by_HP_88_99_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_80_90_));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_88_99_));
             }
         }
 
-        public const string MR_Build_Multiplier_by_HP_70_80__displayName = "MR Build Multiplier by HP (70%-80%)";
-        public const int MR_Build_Multiplier_by_HP_70_80__sortIndex = 1250;
-        [SortOrder(MR_Build_Multiplier_by_HP_70_80__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_70_80__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_70_80_ {
+        public const string MR_Build_Multiplier_by_HP_77_88__displayName = "MR Build Multiplier by HP (77%-88%)";
+        public const int MR_Build_Multiplier_by_HP_77_88__sortIndex = 1250;
+        [SortOrder(MR_Build_Multiplier_by_HP_77_88__sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_77_88__displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_77_88_ {
             get => GetData<float>(108);
             set {
                 if (GetData<float>(108) == value) return;
-                SetData(108, value, nameof(MR_Build_Multiplier_by_HP_70_80_));
+                SetData(108, value, nameof(MR_Build_Multiplier_by_HP_77_88_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_70_80_));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_77_88_));
             }
         }
 
-        public const string MR_Build_Multiplier_by_HP_60_70__displayName = "MR Build Multiplier by HP (60%-70%)";
-        public const int MR_Build_Multiplier_by_HP_60_70__sortIndex = 1300;
-        [SortOrder(MR_Build_Multiplier_by_HP_60_70__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_60_70__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_60_70_ {
+        public const string MR_Build_Multiplier_by_HP_66_77__displayName = "MR Build Multiplier by HP (66%-77%)";
+        public const int MR_Build_Multiplier_by_HP_66_77__sortIndex = 1300;
+        [SortOrder(MR_Build_Multiplier_by_HP_66_77__sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_66_77__displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_66_77_ {
             get => GetData<float>(112);
             set {
                 if (GetData<float>(112) == value) return;
-                SetData(112, value, nameof(MR_Build_Multiplier_by_HP_60_70_));
+                SetData(112, value, nameof(MR_Build_Multiplier_by_HP_66_77_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_60_70_));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_66_77_));
             }
         }
 
-        public const string MR_Build_Multiplier_by_HP_50_60__displayName = "MR Build Multiplier by HP (50%-60%)";
-        public const int MR_Build_Multiplier_by_HP_50_60__sortIndex = 1350;
-        [SortOrder(MR_Build_Multiplier_by_HP_50_60__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_50_60__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_50_60_ {
+        public const string MR_Build_Multiplier_by_HP_55_66__displayName = "MR Build Multiplier by HP (55%-66%)";
+        public const int MR_Build_Multiplier_by_HP_55_66__sortIndex = 1350;
+        [SortOrder(MR_Build_Multiplier_by_HP_55_66__sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_55_66__displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_55_66_ {
             get => GetData<float>(116);
             set {
                 if (GetData<float>(116) == value) return;
-                SetData(116, value, nameof(MR_Build_Multiplier_by_HP_50_60_));
+                SetData(116, value, nameof(MR_Build_Multiplier_by_HP_55_66_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_50_60_));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_55_66_));
             }
         }
 
-        public const string MR_Build_Multiplier_by_HP_40_50__displayName = "MR Build Multiplier by HP (40%-50%)";
-        public const int MR_Build_Multiplier_by_HP_40_50__sortIndex = 1400;
-        [SortOrder(MR_Build_Multiplier_by_HP_40_50__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_40_50__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_40_50_ {
+        public const string MR_Build_Multiplier_by_HP_44_55__displayName = "MR Build Multiplier by HP (44%-55%)";
+        public const int MR_Build_Multiplier_by_HP_44_55__sortIndex = 1400;
+        [SortOrder(MR_Build_Multiplier_by_HP_44_55__sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_44_55__displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_44_55_ {
             get => GetData<float>(120);
             set {
                 if (GetData<float>(120) == value) return;
-                SetData(120, value, nameof(MR_Build_Multiplier_by_HP_40_50_));
+                SetData(120, value, nameof(MR_Build_Multiplier_by_HP_44_55_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_40_50_));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_44_55_));
             }
         }
 
-        public const string MR_Build_Multiplier_by_HP_30_40__displayName = "MR Build Multiplier by HP (30%-40%)";
-        public const int MR_Build_Multiplier_by_HP_30_40__sortIndex = 1450;
-        [SortOrder(MR_Build_Multiplier_by_HP_30_40__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_30_40__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_30_40_ {
+        public const string MR_Build_Multiplier_by_HP_33_44__displayName = "MR Build Multiplier by HP (33%-44%)";
+        public const int MR_Build_Multiplier_by_HP_33_44__sortIndex = 1450;
+        [SortOrder(MR_Build_Multiplier_by_HP_33_44__sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_33_44__displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_33_44_ {
             get => GetData<float>(124);
             set {
                 if (GetData<float>(124) == value) return;
-                SetData(124, value, nameof(MR_Build_Multiplier_by_HP_30_40_));
+                SetData(124, value, nameof(MR_Build_Multiplier_by_HP_33_44_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_30_40_));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_33_44_));
             }
         }
 
-        public const string MR_Build_Multiplier_by_HP_20_30__displayName = "MR Build Multiplier by HP (20%-30%)";
-        public const int MR_Build_Multiplier_by_HP_20_30__sortIndex = 1500;
-        [SortOrder(MR_Build_Multiplier_by_HP_20_30__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_20_30__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_20_30_ {
+        public const string MR_Build_Multiplier_by_HP_22_33__displayName = "MR Build Multiplier by HP (22%-33%)";
+        public const int MR_Build_Multiplier_by_HP_22_33__sortIndex = 1500;
+        [SortOrder(MR_Build_Multiplier_by_HP_22_33__sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_22_33__displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_22_33_ {
             get => GetData<float>(128);
             set {
                 if (GetData<float>(128) == value) return;
-                SetData(128, value, nameof(MR_Build_Multiplier_by_HP_20_30_));
+                SetData(128, value, nameof(MR_Build_Multiplier_by_HP_22_33_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_20_30_));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_22_33_));
             }
         }
 
-        public const string MR_Build_Multiplier_by_HP_10_20__displayName = "MR Build Multiplier by HP (10%-20%)";
-        public const int MR_Build_Multiplier_by_HP_10_20__sortIndex = 1550;
-        [SortOrder(MR_Build_Multiplier_by_HP_10_20__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_10_20__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_10_20_ {
+        public const string MR_Build_Multiplier_by_HP_11_22__displayName = "MR Build Multiplier by HP (11%-22%)";
+        public const int MR_Build_Multiplier_by_HP_11_22__sortIndex = 1550;
+        [SortOrder(MR_Build_Multiplier_by_HP_11_22__sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_11_22__displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_11_22_ {
             get => GetData<float>(132);
             set {
                 if (GetData<float>(132) == value) return;
-                SetData(132, value, nameof(MR_Build_Multiplier_by_HP_10_20_));
+                SetData(132, value, nameof(MR_Build_Multiplier_by_HP_11_22_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_10_20_));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_11_22_));
             }
         }
 
-        public const string MR_Build_Multiplier_by_HP_0_10__displayName = "MR Build Multiplier by HP (0%-10%)";
-        public const int MR_Build_Multiplier_by_HP_0_10__sortIndex = 1600;
-        [SortOrder(MR_Build_Multiplier_by_HP_0_10__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_0_10__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_0_10_ {
+        public const string MR_Build_Multiplier_by_HP_0_11__displayName = "MR Build Multiplier by HP (0%-11%)";
+        public const int MR_Build_Multiplier_by_HP_0_11__sortIndex = 1600;
+        [SortOrder(MR_Build_Multiplier_by_HP_0_11__sortIndex)]
+        [DisplayName(MR_Build_Multiplier_by_HP_0_11__displayName)]
+        public virtual float MR_Build_Multiplier_by_HP_0_11_ {
             get => GetData<float>(136);
             set {
                 if (GetData<float>(136) == value) return;
-                SetData(136, value, nameof(MR_Build_Multiplier_by_HP_0_10_));
+                SetData(136, value, nameof(MR_Build_Multiplier_by_HP_0_11_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_0_10_));
+                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_0_11_));
             }
         }
 
