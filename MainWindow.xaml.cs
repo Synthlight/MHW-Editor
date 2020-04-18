@@ -47,7 +47,7 @@ namespace MHW_Editor {
         private const bool SHOW_RAW_BYTES = false;
 #endif
         private const string NEXUS_LINK = "https://www.nexusmods.com/monsterhunterworld/mods/2068";
-        private const string CURRENT_GAME_VERSION = "11.50.01";
+        private const string CURRENT_GAME_VERSION = "13.0X.XX";
         private const string TITLE = "MHW Editor";
 
         private readonly ObservableCollection<dynamic> items = new ObservableCollection<dynamic>();
@@ -830,15 +830,15 @@ namespace MHW_Editor {
 #endif
             using (var file = File.OpenRead(targetFile)) {
                 var ourLength = (ulong) file.Length;
-                var properLength = FileSizes.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
+                var properLength = DataHelper.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
                 var sha512 = file.SHA512();
 
                 // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
-                foreach (var pair in FileHashes.BAD_FILE_HASH_MAP) {
+                foreach (var pair in DataHelper.BAD_FILE_HASH_MAP) {
                     // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
                     foreach (var fileAndHash in pair.Value) {
                         if (Title == fileAndHash.Key && fileAndHash.Value.Contains(sha512)) {
-                            var newChunk = FileHashes.GOOD_CHUNK_MAP.TryGet(Title);
+                            var newChunk = DataHelper.GOOD_CHUNK_MAP.TryGet(Title);
                             MessageBox.Show($"This file ({Title}) is from {pair.Key} and is obsolete.\r\n" +
                                             $"The newest version of the file is in {newChunk}.\r\n\r\n" +
                                             "Using obsolete files is known to cause anything from blackscreens to crashes or incorrect data.", "Obsolete File Detected", MessageBoxButton.OK, MessageBoxImage.Warning);
