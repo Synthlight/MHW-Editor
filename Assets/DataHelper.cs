@@ -27,7 +27,17 @@ namespace MHW_Editor.Assets {
         public static readonly Dictionary<string, Dictionary<int, NameDescPair>> collisionTranslationsData;
         public static readonly Dictionary<WeaponTypeOnlyWeapons, LangMap> weaponIdNameLookup;
 
+        public static readonly Dictionary<string, Dictionary<string, List<string>>> BAD_FILE_HASH_MAP;
+        public static readonly Dictionary<string, string> GOOD_CHUNK_MAP;
+        public static readonly Dictionary<string, string> FILE_PATH_MAP;
+        public static readonly Dictionary<string, ulong> FILE_SIZE_MAP;
+
         static DataHelper() {
+            BAD_FILE_HASH_MAP = LoadDict<string, Dictionary<string, List<string>>>(EditorAssets.BadHashMap);
+            GOOD_CHUNK_MAP = LoadDict<string, string>(EditorAssets.GoodChunkMap);
+            FILE_PATH_MAP = LoadDict<string, string>(EditorAssets.FilePathMap);
+            FILE_SIZE_MAP = LoadDict<string, ulong>(EditorAssets.FileSizeMap);
+
             collisionTranslationsData = LoadDict<string, Dictionary<int, NameDescPair>>(Assets.CollisionTranslationsData);
             weaponIdNameLookup = LoadDict<WeaponTypeOnlyWeapons, LangMap>(Assets.WeaponNameLookup);
 

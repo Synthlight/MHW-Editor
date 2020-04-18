@@ -4,6 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
 using JetBrains.Annotations;
+using MHW_Editor.Assets;
 
 namespace MHW_Editor {
     public partial class FindFileInChunk {
@@ -12,10 +13,10 @@ namespace MHW_Editor {
         public FindFileInChunk() {
             InitializeComponent();
 
-            foreach (var key in FileHashes.GOOD_CHUNK_MAP.Keys) {
+            foreach (var key in DataHelper.GOOD_CHUNK_MAP.Keys) {
                 data[key] = new ChunkPathEntry {
-                    Chunk = FileHashes.GOOD_CHUNK_MAP[key],
-                    Path = FileHashes.FILE_PATH_MAP[key]
+                    Chunk = DataHelper.GOOD_CHUNK_MAP[key],
+                    Path = DataHelper.FILE_PATH_MAP[key]
                 };
             }
 

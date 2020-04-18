@@ -47,11 +47,6 @@
     <Compile Include="Armors\Variant.cs" />
     <Compile Include="EncryptionKeys.cs" />
     <Compile Include="Extensions.cs" />
-    <Compile Include="FileHashesTemplate.cs">
-      <DependentUpon>FileHashesTemplate.tt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="ButtonTypeInfoTemplate.cs">
       <DependentUpon>ButtonTypeInfoTemplate.tt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -77,11 +72,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Models\DataSourceAttribute.cs" />
-    <Compile Include="FileSizeTemplate.cs">
-      <DependentUpon>FileSizeTemplate.tt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="Hex010Template.cs">
       <DependentUpon>Hex010Template.tt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -126,17 +116,9 @@
     <Compile Include="Weapons\WeaponType.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FileHashesTemplate.tt">
-      <Generator>TextTemplatingFilePreProcessor</Generator>
-      <LastGenOutput>FileHashesTemplate.cs</LastGenOutput>
-    </Content>
     <Content Include="ButtonTypeInfoTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>ButtonTypeInfoTemplate.cs</LastGenOutput>
-    </Content>
-    <Content Include="FileSizeTemplate.tt">
-      <Generator>TextTemplatingFilePreProcessor</Generator>
-      <LastGenOutput>FileSizeTemplate.cs</LastGenOutput>
     </Content>
     <Content Include="PlDataItemTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>

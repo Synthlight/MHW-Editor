@@ -98,6 +98,11 @@
       <DependentUpon>Assets.resx</DependentUpon>
     </Compile>
     <Compile Include="Assets\DataHelper.cs" />
+    <Compile Include="Assets\EditorAssets.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorAssets.resx</DependentUpon>
+    </Compile>
     <Compile Include="Assets\LangMap.cs" />
     <Compile Include="Controls\AutoFilteredComboBox.cs" />
     <Compile Include="EncryptionHelper.cs" />
@@ -110,8 +115,6 @@
     <Compile Include="Generated\MHW_Editor\Armors\PendantData.cs" />
     <Compile Include="Generated\MHW_Editor\Armors\OtomoArmorDat.cs" />
     <Compile Include="Generated\MHW_Editor\ButtonTypeInfo.cs" />
-    <Compile Include="Generated\MHW_Editor\FileHashes.cs" />
-    <Compile Include="Generated\MHW_Editor\FileSizes.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoGradeLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCrt.cs" />
@@ -349,6 +352,10 @@
       <LastGenOutput>Assets.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Assets\EditorAssets.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EditorAssets.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -393,6 +400,10 @@
     <None Include="Assets\BountyData\rus_bountyData.json" />
     <None Include="Assets\BountyData\spa_bountyData.json" />
     <None Include="Assets\CollisionTranslationsData.json" />
+    <None Include="Assets\EditorData\BadHashMap.json" />
+    <None Include="Assets\EditorData\FilePathMap.json" />
+    <None Include="Assets\EditorData\FileSizeMap.json" />
+    <None Include="Assets\EditorData\GoodChunkMap.json" />
     <None Include="Assets\InsectData\ara_insectData.json" />
     <None Include="Assets\InsectData\chS_insectData.json" />
     <None Include="Assets\InsectData\chT_insectData.json" />

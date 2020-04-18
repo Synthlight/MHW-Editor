@@ -14,6 +14,32 @@ using Newtonsoft.Json;
 namespace MHW_Generator_Data {
     public static class Program {
         private const string CHUNK_PREFIX = "chunkG";
+        private static readonly List<string> FILE_TYPES_TO_CHECK;
+
+        static Program() {
+            FILE_TYPES_TO_CHECK = Global.FILE_TYPES.ToList().Select(s => s.Replace("*.", "")).ToList();
+
+            FILE_TYPES_TO_CHECK.AddRange(new List<string> {
+                "gmd",
+                "shlp",
+                "dtt_arg",
+                "dtt_clawc",
+                "dtt_cvc",
+                "dtt_dif",
+                "dtt_eda",
+                "dtt_epg",
+                "dtt_msf",
+                "dtt_rsz",
+                "dtt_sta",
+                "ransz",
+                "sobj"
+            });
+            for (var i = 0; i <= 13; i++) {
+                FILE_TYPES_TO_CHECK.Add($"w{i.ToString().PadLeft(2, '0')}p");
+            }
+
+            FILE_TYPES_TO_CHECK = FILE_TYPES_TO_CHECK.Distinct().ToList();
+        }
 
         [STAThread]
         public static void Main() {
@@ -22,10 +48,7 @@ namespace MHW_Generator_Data {
             CreateSkillDataValueClass();
             GenButtonLocalizationAndIdList();
             GenKnownLengths();
-
-            if (Environment.GetCommandLineArgs().ContainsIgnoreCase("-skipExtract")) return;
-
-            GenOutdatedHashes(); // This takes a while as it does extraction.
+            GenOutdatedHashes(); // This can take a while as it does extraction. Use '-skipExtract' to skip the extraction part.
         }
 
         private static void CreateWeaponDataLookup() {
@@ -72,7 +95,9 @@ namespace MHW_Generator_Data {
         }
 
         private static void GenOutdatedHashes() {
-            ExtractFilesToHash();
+            if (!Environment.GetCommandLineArgs().ContainsIgnoreCase("-skipExtract")) {
+                ExtractFilesToHash();
+            }
 
             var allFilesMap = new Dictionary<string, List<string>>();
 
@@ -83,8 +108,9 @@ namespace MHW_Generator_Data {
             }
 
             var allFilesMapKeys = allFilesMap.Keys.OrderByDescending(key => int.Parse(key.Replace(CHUNK_PREFIX, ""))).ToList();
+            allFilesMapKeys.Remove("chunkG60");
 
-            var hashMap = new Dictionary<string, Dictionary<string, List<string>>>();
+            var badHashMap = new Dictionary<string, Dictionary<string, List<string>>>();
             var foundGoodFiles = new Dictionary<string, string>();
             var filePathMap = new Dictionary<string, string>();
             ushort loopCount = 0;
@@ -108,7 +134,7 @@ namespace MHW_Generator_Data {
 
                     if (foundGoodFiles.ContainsKey(fileName)) {
                         // Happens for duplicates too.
-                        hashMap.GetOrCreate(tld).GetOrCreate(fileName).Add(chunkFile.SHA512());
+                        badHashMap.GetOrCreate(tld).GetOrCreate(fileName).Add(chunkFile.SHA512());
                     } else {
                         foundGoodFiles[fileName] = tld;
                         filePathMap[fileName] = filePath;
@@ -119,28 +145,19 @@ namespace MHW_Generator_Data {
             }
 
             // Ignore as the wales was reverted in chunk2 and has the same hash as in chunk0.
-            hashMap["chunkG0"].Remove("deco_lot.diot");
+            badHashMap["chunkG0"].Remove("deco_lot.diot");
 
             foundGoodFiles = foundGoodFiles.Sort(pair => pair.Key);
             filePathMap = filePathMap.Sort(pair => pair.Key);
-            hashMap = hashMap.Sort(pair => int.Parse(pair.Key.Replace(CHUNK_PREFIX, "")));
+            badHashMap = badHashMap.Sort(pair => int.Parse(pair.Key.Replace(CHUNK_PREFIX, "")));
 
-            foreach (var key in hashMap.Keys.ToList()) {
-                hashMap[key] = hashMap[key].Sort(pair => pair.Key);
+            foreach (var key in badHashMap.Keys.ToList()) {
+                badHashMap[key] = badHashMap[key].Sort(pair => pair.Key);
             }
 
-            const string @namespace = "MHW_Editor";
-            const string className = "FileHashes";
-
-            MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new FileHashesTemplate {
-                Session = new Dictionary<string, object> {
-                    {"_namespace", @namespace},
-                    {"className", className},
-                    {"hashMap", hashMap},
-                    {"goodChunkMap", foundGoodFiles},
-                    {"filePathMap", filePathMap}
-                }
-            });
+            File.WriteAllText(@$"{Global.ASSETS_ROOT}\EditorData\BadHashMap.json", JsonConvert.SerializeObject(badHashMap, Formatting.Indented));
+            File.WriteAllText(@$"{Global.ASSETS_ROOT}\EditorData\GoodChunkMap.json", JsonConvert.SerializeObject(foundGoodFiles, Formatting.Indented));
+            File.WriteAllText(@$"{Global.ASSETS_ROOT}\EditorData\FilePathMap.json", JsonConvert.SerializeObject(filePathMap, Formatting.Indented));
         }
 
         private static void ExtractFilesToHash() {
@@ -153,7 +170,7 @@ namespace MHW_Generator_Data {
             foreach (var chunkFile in Directory.EnumerateFiles(ROOT, "*.bin", SearchOption.TopDirectoryOnly)) {
                 var startInfo = new ProcessStartInfo($@"{mhwNoChunkRoot}\MHWNoChunk.exe") {
                     WorkingDirectory = mhwNoChunkRoot,
-                    Arguments = $"{Path.GetFileNameWithoutExtension(chunkFile)} ^(.*\\.(({string.Join("|", Global.FILE_TYPES.ToList().Select(s => s.Replace("*.", "")))})$))?[^.]*$",
+                    Arguments = $"{Path.GetFileNameWithoutExtension(chunkFile)} ^(.*\\.(({string.Join("|", FILE_TYPES_TO_CHECK)})$))?[^.]*$",
                     UseShellExecute = false
                 };
 
@@ -181,7 +198,7 @@ namespace MHW_Generator_Data {
         }
 
         private static void GenKnownLengths() {
-            var map = new Dictionary<string, ulong>();
+            var fileSizeMap = new Dictionary<string, ulong>();
 
             // Limit the roots so we don't spend forever searching the whole thing.
             var rootsToSearch = new List<string> {
@@ -193,28 +210,18 @@ namespace MHW_Generator_Data {
             };
 
             foreach (var path in rootsToSearch.SelectMany(GetMatchingFiles)) {
-                using (var file = File.OpenRead(path)) {
-                    map[Path.GetFileName(path)] = (ulong) file.Length;
-                }
+                using var file = File.OpenRead(path);
+                fileSizeMap[Path.GetFileName(path)] = (ulong) file.Length;
             }
 
-            map = map.Sort(pair => pair.Key);
+            fileSizeMap = fileSizeMap.Sort(pair => pair.Key);
 
-            const string @namespace = "MHW_Editor";
-            const string className = "FileSizes";
-
-            MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new FileSizeTemplate {
-                Session = new Dictionary<string, object> {
-                    {"_namespace", @namespace},
-                    {"className", className},
-                    {"map", map}
-                }
-            });
+            File.WriteAllText(@$"{Global.ASSETS_ROOT}\EditorData\FileSizeMap.json", JsonConvert.SerializeObject(fileSizeMap, Formatting.Indented));
         }
 
         private static List<string> GetMatchingFiles(string rootPath) {
             return (from path in Directory.EnumerateFiles(rootPath, "*.*", SearchOption.AllDirectories)
-                    from fileType in Global.FILE_TYPES
+                    from fileType in FILE_TYPES_TO_CHECK
                     where path.EndsWith(fileType.Substring(1))
                     select path).ToList();
         }
