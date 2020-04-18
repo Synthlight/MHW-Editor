@@ -33,6 +33,21 @@ namespace Obsolete_Detector {
                 MainWindow.ShowError(err);
             }
         }
+
+        private void Rename_OnClick(object sender, RoutedEventArgs e) {
+            try {
+                foreach (var mod in obsoleteMods) {
+                    if (mod.ToDelete) {
+                        File.Move(mod.Path, mod.Path + ".old");
+                    }
+                }
+
+                MessageBox.Show("Checked files successfully renamed to {file}.old.\r\nIf you still have a blackscreen after,\r\ntest without mods by renaming nativePC to anything else.", "Done", MessageBoxButton.OK, MessageBoxImage.Information);
+                Close();
+            } catch (Exception err) {
+                MainWindow.ShowError(err);
+            }
+        }
     }
 
     public class ObsoleteMod {

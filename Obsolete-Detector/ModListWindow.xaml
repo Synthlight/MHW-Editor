@@ -14,6 +14,7 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -22,6 +23,7 @@
         </Grid.RowDefinitions>
         <Label Grid.Row="0"
                Grid.Column="0"
+               Grid.ColumnSpan="2"
                HorizontalAlignment="Center">
             <TextBlock TextWrapping="Wrap">
                 Obsolete files detected.<LineBreak/>
@@ -29,6 +31,7 @@
         </Label>
         <ListBox Grid.Row="1"
                  Grid.Column="0"
+                 Grid.ColumnSpan="2"
                  HorizontalContentAlignment="Stretch"
                  ItemsSource="{Binding obsoleteMods}">
             <ListBox.ItemTemplate>
@@ -58,5 +61,10 @@
                 Margin="8"
                 Click="Delete_OnClick"
                 Content="Delete"/>
+        <Button Grid.Row="2"
+                Grid.Column="1"
+                Margin="8"
+                Click="Rename_OnClick"
+                Content="Rename (to .old)"/>
     </Grid>
 </Window>
