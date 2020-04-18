@@ -1,0 +1,64 @@
+﻿<Window x:Class="Obsolete_Detector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Obsolete_Detector"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="Obsolete Mod Detector"
+        Width="590"
+        ResizeMode="NoResize"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d">
+    <Grid Margin="8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="2">
+            <TextBlock MouseUp="NexusLink_OnMouseUp"
+                       TextWrapping="Wrap">
+                This detects mods that are outdated for the current version of MHW.<LineBreak/>
+                Currently designed for 13.0X.XX. If you have a newer version of MHW, please update this program.<LineBreak/>
+                Click anywhere on the text here to go to the mod page.<LineBreak/>
+                <LineBreak/>
+                This isn't perfect. It may miss something obsolete, it may have false positives. YMMV<LineBreak/>
+                If you still have a blackscreen after, test without mods by renaming nativePC to anything else.<LineBreak/>
+                <LineBreak/>
+                Select MHW install folder and press scan to begin.</TextBlock>
+        </Label>
+        <TextBox Name="txt_path"
+                 Grid.Row="1"
+                 Grid.Column="0"
+                 Text="C:\Program Files (x86)\Steam\steamapps\common\Monster Hunter World"/>
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                Click="Browse_OnClick"
+                Content="Browse"/>
+        <StackPanel Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Margin="16"
+                    HorizontalAlignment="Center">
+            <Button Name="btn_scan"
+                    Click="Scan_OnClick"
+                    Content="Scan"/>
+        </StackPanel>
+        <DockPanel Grid.Row="2"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Margin="16">
+            <ProgressBar Name="progress"
+                         Height="10"
+                         IsIndeterminate="True"
+                         Visibility="Hidden"/>
+        </DockPanel>
+    </Grid>
+</Window>
