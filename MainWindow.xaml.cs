@@ -850,8 +850,8 @@ namespace MHW_Editor {
                 // Length check as a fallback.
                 if (ourLength != properLength) {
                     MessageBox.Show($"The file size of {Title} does not match the known file size in v{CURRENT_GAME_VERSION}.\r\n" +
-                                    $"Expected: {ourLength}\r\n" +
-                                    $"Found: {properLength}\r\n" +
+                                    $"Expected: {properLength}\r\n" +
+                                    $"Found: {ourLength}\r\n" +
                                     "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
             }
