@@ -13,6 +13,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
+using System.Reflection;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -48,6 +49,11 @@ namespace <#= _namespace #> {
             var entryName = $"{propName}_raw";
 
             var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
+
+            if (entry.arrayCount > -1) {
+                typeString += "[]";
+            }
+
             string returnString;
             var setCast = "";
             var getCast = "";
@@ -80,6 +86,8 @@ namespace <#= _namespace #> {
 
             if (returnString == "bool") {
                 WriteLine($"                get => {getCast}Convert.ToBoolean({entryName});");
+            } else if (typeString == "char[]") {
+                WriteLine($"                get => {getCast}new string({entryName});");
             } else {
                 WriteLine($"                get => {getCast}{entryName};");
             }
@@ -90,6 +98,9 @@ namespace <#= _namespace #> {
             if (returnString == "bool") {
                 WriteLine($"                    if (Convert.ToBoolean({entryName}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
                 WriteLine($"                    {entryName} = Convert.ToByte({entry.valueString});");
+            } else if (typeString == "char[]") {
+                WriteLine($"                    if ({getCast}new string({entryName}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
+                WriteLine($"                    {entryName} = {setCast}{entry.valueString}.ToCharArray(0, {entry.arrayCount - 1});");
             } else {
                 WriteLine($"                    if ({getCast}{entryName} == {entry.valueString}) return;"); // Do nothing if the value is the same.
                 WriteLine($"                    {entryName} = {setCast}{entry.valueString};");
@@ -175,7 +186,18 @@ namespace <#= _namespace #> {
             }
             var entryName = $"{propName}_raw";
 
-            WriteLine($"                data.{entryName} = reader.Read{GetReadType(entry.type)}();");
+            var condition = "";
+            if (entry.condition != null) {
+                condition = entry.condition + " ";
+            }
+
+            if (entry.arrayCount > -1) {
+                WriteLine($"                {condition}data.{entryName} = reader.Read{GetReadType(entry.type)}s({entry.arrayCount});");
+            } else if (entry.isNullTerminatedString) {
+                WriteLine($"                {condition}data.{entryName} = reader.ReadNullTermString();");
+            } else {
+                WriteLine($"                {condition}data.{entryName} = reader.Read{GetReadType(entry.type)}();");
+            }
         }
 
         WriteLine("                return data;");
@@ -187,7 +209,7 @@ namespace <#= _namespace #> {
     // Master LoadData.
     WriteLine("");
     WriteLine("        public static List<List<dynamic>> LoadData(string targetFile) {");
-    WriteLine("            using var reader = new BinaryReader(File.OpenRead(targetFile));");
+    WriteLine("            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));");
     WriteLine("            var data = new List<List<dynamic>>();");
 
     foreach (var @struct in structData.structs) {

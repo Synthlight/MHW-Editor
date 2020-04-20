@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
+using System.Reflection;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -249,7 +250,7 @@ namespace MHW_Editor.Items {
         }
 
         public static List<List<dynamic>> LoadData(string targetFile) {
-            using var reader = new BinaryReader(File.OpenRead(targetFile));
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
             var data = new List<List<dynamic>>();
             var Supply_Data_list = new List<dynamic>();
             for (ulong i = 0; i < Supply_Data.GetEntryCount(data); i++) {

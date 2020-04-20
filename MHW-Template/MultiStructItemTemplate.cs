@@ -31,38 +31,38 @@ namespace MHW_Template
         public virtual string TransformText()
         {
             this.Write("using System.Collections.Generic;\r\nusing System.ComponentModel;\r\nusing System.IO;" +
-                    "\r\nusing MHW_Editor.Assets;\r\nusing MHW_Editor.Models;\r\nusing MHW_Template;\r\nusing" +
-                    " MHW_Template.Models;\r\n\r\nnamespace ");
+                    "\r\nusing System.Reflection;\r\nusing MHW_Editor.Assets;\r\nusing MHW_Editor.Models;\r\n" +
+                    "using MHW_Template;\r\nusing MHW_Template.Models;\r\n\r\nnamespace ");
             
-            #line 21 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public partial class ");
             
-            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
             #line hidden
             this.Write(" : MhwMultiStructItem {\r\n        public const ulong InitialOffset = ");
             
-            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.offsetInitial));
             
             #line default
             #line hidden
             this.Write(";\r\n        public const string EncryptionKey = ");
             
-            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\""));
             
             #line default
             #line hidden
             this.Write(";\r\n");
             
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
 
     var compiler = new CSharpCodeProvider();
 
@@ -89,6 +89,11 @@ namespace MHW_Template
             var entryName = $"{propName}_raw";
 
             var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
+
+            if (entry.arrayCount > -1) {
+                typeString += "[]";
+            }
+
             string returnString;
             var setCast = "";
             var getCast = "";
@@ -121,6 +126,8 @@ namespace MHW_Template
 
             if (returnString == "bool") {
                 WriteLine($"                get => {getCast}Convert.ToBoolean({entryName});");
+            } else if (typeString == "char[]") {
+                WriteLine($"                get => {getCast}new string({entryName});");
             } else {
                 WriteLine($"                get => {getCast}{entryName};");
             }
@@ -131,6 +138,9 @@ namespace MHW_Template
             if (returnString == "bool") {
                 WriteLine($"                    if (Convert.ToBoolean({entryName}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
                 WriteLine($"                    {entryName} = Convert.ToByte({entry.valueString});");
+            } else if (typeString == "char[]") {
+                WriteLine($"                    if ({getCast}new string({entryName}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
+                WriteLine($"                    {entryName} = {setCast}{entry.valueString}.ToCharArray(0, {entry.arrayCount - 1});");
             } else {
                 WriteLine($"                    if ({getCast}{entryName} == {entry.valueString}) return;"); // Do nothing if the value is the same.
                 WriteLine($"                    {entryName} = {setCast}{entry.valueString};");
@@ -216,7 +226,18 @@ namespace MHW_Template
             }
             var entryName = $"{propName}_raw";
 
-            WriteLine($"                data.{entryName} = reader.Read{GetReadType(entry.type)}();");
+            var condition = "";
+            if (entry.condition != null) {
+                condition = entry.condition + " ";
+            }
+
+            if (entry.arrayCount > -1) {
+                WriteLine($"                {condition}data.{entryName} = reader.Read{GetReadType(entry.type)}s({entry.arrayCount});");
+            } else if (entry.isNullTerminatedString) {
+                WriteLine($"                {condition}data.{entryName} = reader.ReadNullTermString();");
+            } else {
+                WriteLine($"                {condition}data.{entryName} = reader.Read{GetReadType(entry.type)}();");
+            }
         }
 
         WriteLine("                return data;");
@@ -228,7 +249,7 @@ namespace MHW_Template
     // Master LoadData.
     WriteLine("");
     WriteLine("        public static List<List<dynamic>> LoadData(string targetFile) {");
-    WriteLine("            using var reader = new BinaryReader(File.OpenRead(targetFile));");
+    WriteLine("            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));");
     WriteLine("            var data = new List<List<dynamic>>();");
 
     foreach (var @struct in structData.structs) {

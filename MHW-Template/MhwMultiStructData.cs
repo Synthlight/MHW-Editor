@@ -37,6 +37,9 @@ namespace MHW_Template {
                 public readonly string dataSourceCustomSorter;
                 public readonly bool forceUnique; // Force the generated field to be unique. (Adds offset to end of field name.) Skipped in the struct generation.
                 public readonly bool createPercentField = false;
+                public readonly int arrayCount; // If the type is an array, set the count;
+                public readonly bool isNullTerminatedString;
+                public readonly string condition; // Condition to read/write.
 
                 public Entry(string displayName, Type type,
                              bool readOnly = false,
@@ -47,7 +50,10 @@ namespace MHW_Template {
                              string[] extraOnPropertyChanged = null,
                              string dataSourceCustomSorter = "ButtonSorter",
                              bool forceUnique = false,
-                             bool createPercentField = false) {
+                             bool createPercentField = false,
+                             int arrayCount = -1,
+                             bool isNullTerminatedString = false,
+                             string condition = null) {
                     this.displayName = displayName;
                     this.type = type;
                     this.readOnly = readOnly;
@@ -59,6 +65,9 @@ namespace MHW_Template {
                     this.dataSourceCustomSorter = dataSourceCustomSorter;
                     this.forceUnique = forceUnique;
                     this.createPercentField = createPercentField;
+                    this.arrayCount = arrayCount;
+                    this.isNullTerminatedString = isNullTerminatedString;
+                    this.condition = condition;
                 }
             }
         }

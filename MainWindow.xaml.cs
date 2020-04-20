@@ -27,7 +27,6 @@ using MHW_Editor.PlData;
 using MHW_Editor.Skills;
 using MHW_Editor.Weapons;
 using MHW_Editor.Weapons.Collision;
-using MHW_Editor.Weapons.Shlp;
 using MHW_Template;
 using MHW_Template.Models;
 using MHW_Template.Weapons;
@@ -708,11 +707,11 @@ namespace MHW_Editor {
                 scroll_viewer.Visibility = Visibility.Visible;
                 mainDataGrid.Visibility = Visibility.Collapsed;
 
-                var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public);
+                var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
                 Debug.Assert(loadData != null, nameof(loadData) + " != null");
                 customFileData = loadData.Invoke(null, new object[] {targetFile});
 
-                var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public);
+                var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
                 Debug.Assert(setupViews != null, nameof(setupViews) + " != null");
                 setupViews.Invoke(null, new object[] {customFileData, grid, this});
                 return;
@@ -948,12 +947,11 @@ namespace MHW_Editor {
 #if !DEBUG
             try {
 #endif
-            if (targetFileType.Is(typeof(Collision))) { // Custom save/load.
-                Collision.SaveData(customFileData, targetFile);
-                await ShowChangesSaved(true);
-                return;
-            } else if (targetFileType.Is(typeof(Shlp))) { // Custom save/load.
-                Shlp.SaveData(customFileData, targetFile);
+            if (targetFileType.Is(typeof(ICustomSaveLoad))) { // Custom save/load.
+                var saveData = targetFileType.GetMethod("SaveData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+                Debug.Assert(saveData != null, nameof(saveData) + " != null");
+                customFileData = saveData.Invoke(null, new object[] {customFileData, targetFile});
+
                 await ShowChangesSaved(true);
                 return;
             }
@@ -1222,7 +1220,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".shl_tbl")) return typeof(ShellTable);
             if (fileName.EndsWith(".skl_dat")) return typeof(SkillDat);
             if (fileName.EndsWith(".skl_pt_dat")) return typeof(SkillPointData);
-            if (fileName.EndsWith(".shlp")) return typeof(Shlp);
+            if (fileName.EndsWith(".shlp")) return typeof(ShellProjectile);
             if (fileName.EndsWith(".srl")) return typeof(SteamRewardList);
             if (fileName.EndsWith(".stmp")) return typeof(ItemDelivery);
             if (fileName.EndsWith(".supp")) return typeof(SupplyData);
