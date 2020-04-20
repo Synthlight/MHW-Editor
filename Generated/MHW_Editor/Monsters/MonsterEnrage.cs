@@ -12,9 +12,9 @@ namespace MHW_Editor.Monsters {
         public const ulong InitialOffset = 0;
         public const string EncryptionKey = null;
 
-        public partial class Rage : MhwStructItem {
+        public partial class Monster_Rage : MhwStructItem {
             public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Rage";
+            public const string DisplayName = "Monster Rage";
 
             protected uint Magic_1_raw;
             public const string Magic_1_displayName = "Magic 1";
@@ -79,8 +79,8 @@ namespace MHW_Editor.Monsters {
                 return FixedSizeCount;
             }
 
-            public static Rage LoadData(BinaryReader reader) {
-                var data = new Rage();
+            public static Monster_Rage LoadData(BinaryReader reader) {
+                var data = new Monster_Rage();
                 data.Magic_1_raw = reader.ReadUInt32();
                 data.Magic_2_raw = reader.ReadUInt32();
                 data.Monster_Id_raw = reader.ReadUInt32();
@@ -376,13 +376,13 @@ namespace MHW_Editor.Monsters {
         public static List<List<dynamic>> LoadData(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
             var data = new List<List<dynamic>>();
-            var Rage_list = new List<dynamic>();
-            for (ulong i = 0; i < Rage.GetEntryCount(data); i++) {
-                var item = Rage.LoadData(reader);
+            var Monster_Rage_list = new List<dynamic>();
+            for (ulong i = 0; i < Monster_Rage.GetEntryCount(data); i++) {
+                var item = Monster_Rage.LoadData(reader);
                 item.index = i;
-                Rage_list.Add(item);
+                Monster_Rage_list.Add(item);
             }
-            data.Add(Rage_list);
+            data.Add(Monster_Rage_list);
             var Rage_Stats_list = new List<dynamic>();
             for (ulong i = 0; i < Rage_Stats.GetEntryCount(data); i++) {
                 var item = Rage_Stats.LoadData(reader);

@@ -1179,6 +1179,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".dglt")) return typeof(DecoGradeLottery);
             if (fileName.EndsWith(".diot")) return typeof(DecoLottery);
             if (fileName.EndsWith(".dtt_agr")) return typeof(MonsterEnrage);
+            if (fileName.EndsWith(".dtt_dif")) return typeof(MonsterDifficulty);
             if (fileName.EndsWith(".em104exp")) return typeof(AwakenedExp);
             if (fileName.EndsWith(".em104iot")) return typeof(SafiItemLottery);
             if (fileName.EndsWith(".em104lb")) return typeof(AwakenedLimitBreak);
