@@ -9,6 +9,7 @@ namespace MHW_Editor.Models {
         public event PropertyChangedEventHandler PropertyChanged;
 
         public ulong index;
+        [SortOrder(10)]
         public ulong Index => index;
 
         public abstract void WriteData(BinaryWriter writer);

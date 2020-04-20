@@ -1,480 +1,396 @@
-using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
+using System.Reflection;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Monsters {
-    public partial class MonsterEnrage {
-        public const uint StructSize = 144;
+    public partial class MonsterEnrage : MhwMultiStructItem {
         public const ulong InitialOffset = 0;
-        public const long EntryCountOffset = -1;
         public const string EncryptionKey = null;
-        public override string UniqueId => $"0";
 
-        public const string Monster_Id_displayName = "Monster Id";
-        public const int Monster_Id_sortIndex = 50;
-        [SortOrder(Monster_Id_sortIndex)]
-        [DisplayName(Monster_Id_displayName)]
-        public virtual uint Monster_Id {
-            get => GetData<uint>(8);
-            set {
-                if (GetData<uint>(8) == value) return;
-                SetData(8, value, nameof(Monster_Id));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Monster_Id));
+        public partial class Rage : MhwStructItem {
+            public const ulong FixedSizeCount = 1;
+            public const string DisplayName = "Rage";
+
+            protected uint Magic_1_raw;
+            public const string Magic_1_displayName = "Magic 1";
+            public const int Magic_1_sortIndex = 50;
+            [SortOrder(Magic_1_sortIndex)]
+            [DisplayName(Magic_1_displayName)]
+            [IsReadOnly]
+            public virtual uint Magic_1 {
+                get => Magic_1_raw;
+                set {
+                    if (Magic_1_raw == value) return;
+                    Magic_1_raw = value;
+                    OnPropertyChanged(nameof(Magic_1));
+                }
+            }
+
+            protected uint Magic_2_raw;
+            public const string Magic_2_displayName = "Magic 2";
+            public const int Magic_2_sortIndex = 100;
+            [SortOrder(Magic_2_sortIndex)]
+            [DisplayName(Magic_2_displayName)]
+            [IsReadOnly]
+            public virtual uint Magic_2 {
+                get => Magic_2_raw;
+                set {
+                    if (Magic_2_raw == value) return;
+                    Magic_2_raw = value;
+                    OnPropertyChanged(nameof(Magic_2));
+                }
+            }
+
+            protected uint Monster_Id_raw;
+            public const string Monster_Id_displayName = "Monster Id";
+            public const int Monster_Id_sortIndex = 150;
+            [SortOrder(Monster_Id_sortIndex)]
+            [DisplayName(Monster_Id_displayName)]
+            public virtual uint Monster_Id {
+                get => Monster_Id_raw;
+                set {
+                    if (Monster_Id_raw == value) return;
+                    Monster_Id_raw = value;
+                    OnPropertyChanged(nameof(Monster_Id));
+                }
+            }
+
+            protected uint Magic_3_raw;
+            public const string Magic_3_displayName = "Magic 3";
+            public const int Magic_3_sortIndex = 200;
+            [SortOrder(Magic_3_sortIndex)]
+            [DisplayName(Magic_3_displayName)]
+            [IsReadOnly]
+            public virtual uint Magic_3 {
+                get => Magic_3_raw;
+                set {
+                    if (Magic_3_raw == value) return;
+                    Magic_3_raw = value;
+                    OnPropertyChanged(nameof(Magic_3));
+                }
+            }
+
+            public static ulong GetEntryCount(List<List<dynamic>> data) {
+                return FixedSizeCount;
+            }
+
+            public static Rage LoadData(BinaryReader reader) {
+                var data = new Rage();
+                data.Magic_1_raw = reader.ReadUInt32();
+                data.Magic_2_raw = reader.ReadUInt32();
+                data.Monster_Id_raw = reader.ReadUInt32();
+                data.Magic_3_raw = reader.ReadUInt32();
+                return data;
+            }
+
+            public override void WriteData(BinaryWriter writer) {
+                writer.Write(Magic_1_raw);
+                writer.Write(Magic_2_raw);
+                writer.Write(Monster_Id_raw);
+                writer.Write(Magic_3_raw);
             }
         }
 
-        public const string LR_HR_Build_to_Trigger_displayName = "LR/HR Build to Trigger";
-        public const int LR_HR_Build_to_Trigger_sortIndex = 100;
-        [SortOrder(LR_HR_Build_to_Trigger_sortIndex)]
-        [DisplayName(LR_HR_Build_to_Trigger_displayName)]
-        public virtual uint LR_HR_Build_to_Trigger {
-            get => GetData<uint>(16);
-            set {
-                if (GetData<uint>(16) == value) return;
-                SetData(16, value, nameof(LR_HR_Build_to_Trigger));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_to_Trigger));
+        public partial class Rage_Stats : MhwStructItem {
+            public const ulong FixedSizeCount = 2;
+            public const string DisplayName = "Rage Stats";
+
+            protected uint Build_to_Trigger_raw;
+            public const string Build_to_Trigger_displayName = "Build to Trigger";
+            public const int Build_to_Trigger_sortIndex = 50;
+            [SortOrder(Build_to_Trigger_sortIndex)]
+            [DisplayName(Build_to_Trigger_displayName)]
+            public virtual uint Build_to_Trigger {
+                get => Build_to_Trigger_raw;
+                set {
+                    if (Build_to_Trigger_raw == value) return;
+                    Build_to_Trigger_raw = value;
+                    OnPropertyChanged(nameof(Build_to_Trigger));
+                }
+            }
+
+            protected float Duration_raw;
+            public const string Duration_displayName = "Duration";
+            public const int Duration_sortIndex = 100;
+            [SortOrder(Duration_sortIndex)]
+            [DisplayName(Duration_displayName)]
+            public virtual float Duration {
+                get => Duration_raw;
+                set {
+                    if (Duration_raw == value) return;
+                    Duration_raw = value;
+                    OnPropertyChanged(nameof(Duration));
+                }
+            }
+
+            protected float Speed_Modifier_raw;
+            public const string Speed_Modifier_displayName = "Speed Modifier";
+            public const int Speed_Modifier_sortIndex = 150;
+            [SortOrder(Speed_Modifier_sortIndex)]
+            [DisplayName(Speed_Modifier_displayName)]
+            public virtual float Speed_Modifier {
+                get => Speed_Modifier_raw;
+                set {
+                    if (Speed_Modifier_raw == value) return;
+                    Speed_Modifier_raw = value;
+                    OnPropertyChanged(nameof(Speed_Modifier));
+                }
+            }
+
+            protected float Damage_Modifier_raw;
+            public const string Damage_Modifier_displayName = "Damage Modifier";
+            public const int Damage_Modifier_sortIndex = 200;
+            [SortOrder(Damage_Modifier_sortIndex)]
+            [DisplayName(Damage_Modifier_displayName)]
+            public virtual float Damage_Modifier {
+                get => Damage_Modifier_raw;
+                set {
+                    if (Damage_Modifier_raw == value) return;
+                    Damage_Modifier_raw = value;
+                    OnPropertyChanged(nameof(Damage_Modifier));
+                }
+            }
+
+            protected float Player_Damage_Modifier_raw;
+            public const string Player_Damage_Modifier_displayName = "Player Damage Modifier";
+            public const int Player_Damage_Modifier_sortIndex = 250;
+            [SortOrder(Player_Damage_Modifier_sortIndex)]
+            [DisplayName(Player_Damage_Modifier_displayName)]
+            public virtual float Player_Damage_Modifier {
+                get => Player_Damage_Modifier_raw;
+                set {
+                    if (Player_Damage_Modifier_raw == value) return;
+                    Player_Damage_Modifier_raw = value;
+                    OnPropertyChanged(nameof(Player_Damage_Modifier));
+                }
+            }
+
+            protected float Build_Multiplier_by_HP_100__raw;
+            public const string Build_Multiplier_by_HP_100__displayName = "Build Multiplier by HP (100%)";
+            public const int Build_Multiplier_by_HP_100__sortIndex = 300;
+            [SortOrder(Build_Multiplier_by_HP_100__sortIndex)]
+            [DisplayName(Build_Multiplier_by_HP_100__displayName)]
+            public virtual float Build_Multiplier_by_HP_100_ {
+                get => Build_Multiplier_by_HP_100__raw;
+                set {
+                    if (Build_Multiplier_by_HP_100__raw == value) return;
+                    Build_Multiplier_by_HP_100__raw = value;
+                    OnPropertyChanged(nameof(Build_Multiplier_by_HP_100_));
+                }
+            }
+
+            protected float Build_Multiplier_by_HP_88_99__raw;
+            public const string Build_Multiplier_by_HP_88_99__displayName = "Build Multiplier by HP (88%-99%)";
+            public const int Build_Multiplier_by_HP_88_99__sortIndex = 350;
+            [SortOrder(Build_Multiplier_by_HP_88_99__sortIndex)]
+            [DisplayName(Build_Multiplier_by_HP_88_99__displayName)]
+            public virtual float Build_Multiplier_by_HP_88_99_ {
+                get => Build_Multiplier_by_HP_88_99__raw;
+                set {
+                    if (Build_Multiplier_by_HP_88_99__raw == value) return;
+                    Build_Multiplier_by_HP_88_99__raw = value;
+                    OnPropertyChanged(nameof(Build_Multiplier_by_HP_88_99_));
+                }
+            }
+
+            protected float Build_Multiplier_by_HP_77_88__raw;
+            public const string Build_Multiplier_by_HP_77_88__displayName = "Build Multiplier by HP (77%-88%)";
+            public const int Build_Multiplier_by_HP_77_88__sortIndex = 400;
+            [SortOrder(Build_Multiplier_by_HP_77_88__sortIndex)]
+            [DisplayName(Build_Multiplier_by_HP_77_88__displayName)]
+            public virtual float Build_Multiplier_by_HP_77_88_ {
+                get => Build_Multiplier_by_HP_77_88__raw;
+                set {
+                    if (Build_Multiplier_by_HP_77_88__raw == value) return;
+                    Build_Multiplier_by_HP_77_88__raw = value;
+                    OnPropertyChanged(nameof(Build_Multiplier_by_HP_77_88_));
+                }
+            }
+
+            protected float Build_Multiplier_by_HP_66_77__raw;
+            public const string Build_Multiplier_by_HP_66_77__displayName = "Build Multiplier by HP (66%-77%)";
+            public const int Build_Multiplier_by_HP_66_77__sortIndex = 450;
+            [SortOrder(Build_Multiplier_by_HP_66_77__sortIndex)]
+            [DisplayName(Build_Multiplier_by_HP_66_77__displayName)]
+            public virtual float Build_Multiplier_by_HP_66_77_ {
+                get => Build_Multiplier_by_HP_66_77__raw;
+                set {
+                    if (Build_Multiplier_by_HP_66_77__raw == value) return;
+                    Build_Multiplier_by_HP_66_77__raw = value;
+                    OnPropertyChanged(nameof(Build_Multiplier_by_HP_66_77_));
+                }
+            }
+
+            protected float Build_Multiplier_by_HP_55_66__raw;
+            public const string Build_Multiplier_by_HP_55_66__displayName = "Build Multiplier by HP (55%-66%)";
+            public const int Build_Multiplier_by_HP_55_66__sortIndex = 500;
+            [SortOrder(Build_Multiplier_by_HP_55_66__sortIndex)]
+            [DisplayName(Build_Multiplier_by_HP_55_66__displayName)]
+            public virtual float Build_Multiplier_by_HP_55_66_ {
+                get => Build_Multiplier_by_HP_55_66__raw;
+                set {
+                    if (Build_Multiplier_by_HP_55_66__raw == value) return;
+                    Build_Multiplier_by_HP_55_66__raw = value;
+                    OnPropertyChanged(nameof(Build_Multiplier_by_HP_55_66_));
+                }
+            }
+
+            protected float Build_Multiplier_by_HP_44_55__raw;
+            public const string Build_Multiplier_by_HP_44_55__displayName = "Build Multiplier by HP (44%-55%)";
+            public const int Build_Multiplier_by_HP_44_55__sortIndex = 550;
+            [SortOrder(Build_Multiplier_by_HP_44_55__sortIndex)]
+            [DisplayName(Build_Multiplier_by_HP_44_55__displayName)]
+            public virtual float Build_Multiplier_by_HP_44_55_ {
+                get => Build_Multiplier_by_HP_44_55__raw;
+                set {
+                    if (Build_Multiplier_by_HP_44_55__raw == value) return;
+                    Build_Multiplier_by_HP_44_55__raw = value;
+                    OnPropertyChanged(nameof(Build_Multiplier_by_HP_44_55_));
+                }
+            }
+
+            protected float Build_Multiplier_by_HP_33_44__raw;
+            public const string Build_Multiplier_by_HP_33_44__displayName = "Build Multiplier by HP (33%-44%)";
+            public const int Build_Multiplier_by_HP_33_44__sortIndex = 600;
+            [SortOrder(Build_Multiplier_by_HP_33_44__sortIndex)]
+            [DisplayName(Build_Multiplier_by_HP_33_44__displayName)]
+            public virtual float Build_Multiplier_by_HP_33_44_ {
+                get => Build_Multiplier_by_HP_33_44__raw;
+                set {
+                    if (Build_Multiplier_by_HP_33_44__raw == value) return;
+                    Build_Multiplier_by_HP_33_44__raw = value;
+                    OnPropertyChanged(nameof(Build_Multiplier_by_HP_33_44_));
+                }
+            }
+
+            protected float Build_Multiplier_by_HP_22_33__raw;
+            public const string Build_Multiplier_by_HP_22_33__displayName = "Build Multiplier by HP (22%-33%)";
+            public const int Build_Multiplier_by_HP_22_33__sortIndex = 650;
+            [SortOrder(Build_Multiplier_by_HP_22_33__sortIndex)]
+            [DisplayName(Build_Multiplier_by_HP_22_33__displayName)]
+            public virtual float Build_Multiplier_by_HP_22_33_ {
+                get => Build_Multiplier_by_HP_22_33__raw;
+                set {
+                    if (Build_Multiplier_by_HP_22_33__raw == value) return;
+                    Build_Multiplier_by_HP_22_33__raw = value;
+                    OnPropertyChanged(nameof(Build_Multiplier_by_HP_22_33_));
+                }
+            }
+
+            protected float Build_Multiplier_by_HP_11_22__raw;
+            public const string Build_Multiplier_by_HP_11_22__displayName = "Build Multiplier by HP (11%-22%)";
+            public const int Build_Multiplier_by_HP_11_22__sortIndex = 700;
+            [SortOrder(Build_Multiplier_by_HP_11_22__sortIndex)]
+            [DisplayName(Build_Multiplier_by_HP_11_22__displayName)]
+            public virtual float Build_Multiplier_by_HP_11_22_ {
+                get => Build_Multiplier_by_HP_11_22__raw;
+                set {
+                    if (Build_Multiplier_by_HP_11_22__raw == value) return;
+                    Build_Multiplier_by_HP_11_22__raw = value;
+                    OnPropertyChanged(nameof(Build_Multiplier_by_HP_11_22_));
+                }
+            }
+
+            protected float Build_Multiplier_by_HP_0_11__raw;
+            public const string Build_Multiplier_by_HP_0_11__displayName = "Build Multiplier by HP (0%-11%)";
+            public const int Build_Multiplier_by_HP_0_11__sortIndex = 750;
+            [SortOrder(Build_Multiplier_by_HP_0_11__sortIndex)]
+            [DisplayName(Build_Multiplier_by_HP_0_11__displayName)]
+            public virtual float Build_Multiplier_by_HP_0_11_ {
+                get => Build_Multiplier_by_HP_0_11__raw;
+                set {
+                    if (Build_Multiplier_by_HP_0_11__raw == value) return;
+                    Build_Multiplier_by_HP_0_11__raw = value;
+                    OnPropertyChanged(nameof(Build_Multiplier_by_HP_0_11_));
+                }
+            }
+
+            protected float Out_of_Combat_Decay_Multiplier_raw;
+            public const string Out_of_Combat_Decay_Multiplier_displayName = "Out of Combat Decay Multiplier";
+            public const int Out_of_Combat_Decay_Multiplier_sortIndex = 800;
+            [SortOrder(Out_of_Combat_Decay_Multiplier_sortIndex)]
+            [DisplayName(Out_of_Combat_Decay_Multiplier_displayName)]
+            public virtual float Out_of_Combat_Decay_Multiplier {
+                get => Out_of_Combat_Decay_Multiplier_raw;
+                set {
+                    if (Out_of_Combat_Decay_Multiplier_raw == value) return;
+                    Out_of_Combat_Decay_Multiplier_raw = value;
+                    OnPropertyChanged(nameof(Out_of_Combat_Decay_Multiplier));
+                }
+            }
+
+            public static ulong GetEntryCount(List<List<dynamic>> data) {
+                return FixedSizeCount;
+            }
+
+            public static Rage_Stats LoadData(BinaryReader reader) {
+                var data = new Rage_Stats();
+                data.Build_to_Trigger_raw = reader.ReadUInt32();
+                data.Duration_raw = reader.ReadSingle();
+                data.Speed_Modifier_raw = reader.ReadSingle();
+                data.Damage_Modifier_raw = reader.ReadSingle();
+                data.Player_Damage_Modifier_raw = reader.ReadSingle();
+                data.Build_Multiplier_by_HP_100__raw = reader.ReadSingle();
+                data.Build_Multiplier_by_HP_88_99__raw = reader.ReadSingle();
+                data.Build_Multiplier_by_HP_77_88__raw = reader.ReadSingle();
+                data.Build_Multiplier_by_HP_66_77__raw = reader.ReadSingle();
+                data.Build_Multiplier_by_HP_55_66__raw = reader.ReadSingle();
+                data.Build_Multiplier_by_HP_44_55__raw = reader.ReadSingle();
+                data.Build_Multiplier_by_HP_33_44__raw = reader.ReadSingle();
+                data.Build_Multiplier_by_HP_22_33__raw = reader.ReadSingle();
+                data.Build_Multiplier_by_HP_11_22__raw = reader.ReadSingle();
+                data.Build_Multiplier_by_HP_0_11__raw = reader.ReadSingle();
+                data.Out_of_Combat_Decay_Multiplier_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public override void WriteData(BinaryWriter writer) {
+                writer.Write(Build_to_Trigger_raw);
+                writer.Write(Duration_raw);
+                writer.Write(Speed_Modifier_raw);
+                writer.Write(Damage_Modifier_raw);
+                writer.Write(Player_Damage_Modifier_raw);
+                writer.Write(Build_Multiplier_by_HP_100__raw);
+                writer.Write(Build_Multiplier_by_HP_88_99__raw);
+                writer.Write(Build_Multiplier_by_HP_77_88__raw);
+                writer.Write(Build_Multiplier_by_HP_66_77__raw);
+                writer.Write(Build_Multiplier_by_HP_55_66__raw);
+                writer.Write(Build_Multiplier_by_HP_44_55__raw);
+                writer.Write(Build_Multiplier_by_HP_33_44__raw);
+                writer.Write(Build_Multiplier_by_HP_22_33__raw);
+                writer.Write(Build_Multiplier_by_HP_11_22__raw);
+                writer.Write(Build_Multiplier_by_HP_0_11__raw);
+                writer.Write(Out_of_Combat_Decay_Multiplier_raw);
             }
         }
 
-        public const string LR_HR_Duration_displayName = "LR/HR Duration";
-        public const int LR_HR_Duration_sortIndex = 150;
-        [SortOrder(LR_HR_Duration_sortIndex)]
-        [DisplayName(LR_HR_Duration_displayName)]
-        public virtual float LR_HR_Duration {
-            get => GetData<float>(20);
-            set {
-                if (GetData<float>(20) == value) return;
-                SetData(20, value, nameof(LR_HR_Duration));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Duration));
-            }
+        public static void SaveData(List<List<dynamic>> data, string targetFile) {
+            SaveData(data, targetFile, EncryptionKey);
         }
 
-        public const string LR_HR_Speed_Modifier_displayName = "LR/HR Speed Modifier";
-        public const int LR_HR_Speed_Modifier_sortIndex = 200;
-        [SortOrder(LR_HR_Speed_Modifier_sortIndex)]
-        [DisplayName(LR_HR_Speed_Modifier_displayName)]
-        public virtual float LR_HR_Speed_Modifier {
-            get => GetData<float>(24);
-            set {
-                if (GetData<float>(24) == value) return;
-                SetData(24, value, nameof(LR_HR_Speed_Modifier));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Speed_Modifier));
+        public static List<List<dynamic>> LoadData(string targetFile) {
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
+            var data = new List<List<dynamic>>();
+            var Rage_list = new List<dynamic>();
+            for (ulong i = 0; i < Rage.GetEntryCount(data); i++) {
+                var item = Rage.LoadData(reader);
+                item.index = i;
+                Rage_list.Add(item);
             }
-        }
-
-        public const string LR_HR_Damage_Modifier_displayName = "LR/HR Damage Modifier";
-        public const int LR_HR_Damage_Modifier_sortIndex = 250;
-        [SortOrder(LR_HR_Damage_Modifier_sortIndex)]
-        [DisplayName(LR_HR_Damage_Modifier_displayName)]
-        public virtual float LR_HR_Damage_Modifier {
-            get => GetData<float>(28);
-            set {
-                if (GetData<float>(28) == value) return;
-                SetData(28, value, nameof(LR_HR_Damage_Modifier));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Damage_Modifier));
+            data.Add(Rage_list);
+            var Rage_Stats_list = new List<dynamic>();
+            for (ulong i = 0; i < Rage_Stats.GetEntryCount(data); i++) {
+                var item = Rage_Stats.LoadData(reader);
+                item.index = i;
+                Rage_Stats_list.Add(item);
             }
+            data.Add(Rage_Stats_list);
+            return data;
         }
-
-        public const string LR_HR_Player_Damage_Modifier_displayName = "LR/HR Player Damage Modifier";
-        public const int LR_HR_Player_Damage_Modifier_sortIndex = 300;
-        [SortOrder(LR_HR_Player_Damage_Modifier_sortIndex)]
-        [DisplayName(LR_HR_Player_Damage_Modifier_displayName)]
-        public virtual float LR_HR_Player_Damage_Modifier {
-            get => GetData<float>(32);
-            set {
-                if (GetData<float>(32) == value) return;
-                SetData(32, value, nameof(LR_HR_Player_Damage_Modifier));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Player_Damage_Modifier));
-            }
-        }
-
-        public const string LR_HR_Build_Multiplier_by_HP_100__displayName = "LR/HR Build Multiplier by HP (100%)";
-        public const int LR_HR_Build_Multiplier_by_HP_100__sortIndex = 350;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_100__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_100__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_100_ {
-            get => GetData<float>(36);
-            set {
-                if (GetData<float>(36) == value) return;
-                SetData(36, value, nameof(LR_HR_Build_Multiplier_by_HP_100_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_100_));
-            }
-        }
-
-        public const string LR_HR_Build_Multiplier_by_HP_88_99__displayName = "LR/HR Build Multiplier by HP (88%-99%)";
-        public const int LR_HR_Build_Multiplier_by_HP_88_99__sortIndex = 400;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_88_99__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_88_99__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_88_99_ {
-            get => GetData<float>(40);
-            set {
-                if (GetData<float>(40) == value) return;
-                SetData(40, value, nameof(LR_HR_Build_Multiplier_by_HP_88_99_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_88_99_));
-            }
-        }
-
-        public const string LR_HR_Build_Multiplier_by_HP_77_88__displayName = "LR/HR Build Multiplier by HP (77%-88%)";
-        public const int LR_HR_Build_Multiplier_by_HP_77_88__sortIndex = 450;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_77_88__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_77_88__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_77_88_ {
-            get => GetData<float>(44);
-            set {
-                if (GetData<float>(44) == value) return;
-                SetData(44, value, nameof(LR_HR_Build_Multiplier_by_HP_77_88_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_77_88_));
-            }
-        }
-
-        public const string LR_HR_Build_Multiplier_by_HP_66_77__displayName = "LR/HR Build Multiplier by HP (66%-77%)";
-        public const int LR_HR_Build_Multiplier_by_HP_66_77__sortIndex = 500;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_66_77__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_66_77__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_66_77_ {
-            get => GetData<float>(48);
-            set {
-                if (GetData<float>(48) == value) return;
-                SetData(48, value, nameof(LR_HR_Build_Multiplier_by_HP_66_77_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_66_77_));
-            }
-        }
-
-        public const string LR_HR_Build_Multiplier_by_HP_55_66__displayName = "LR/HR Build Multiplier by HP (55%-66%)";
-        public const int LR_HR_Build_Multiplier_by_HP_55_66__sortIndex = 550;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_55_66__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_55_66__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_55_66_ {
-            get => GetData<float>(52);
-            set {
-                if (GetData<float>(52) == value) return;
-                SetData(52, value, nameof(LR_HR_Build_Multiplier_by_HP_55_66_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_55_66_));
-            }
-        }
-
-        public const string LR_HR_Build_Multiplier_by_HP_44_55__displayName = "LR/HR Build Multiplier by HP (44%-55%)";
-        public const int LR_HR_Build_Multiplier_by_HP_44_55__sortIndex = 600;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_44_55__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_44_55__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_44_55_ {
-            get => GetData<float>(56);
-            set {
-                if (GetData<float>(56) == value) return;
-                SetData(56, value, nameof(LR_HR_Build_Multiplier_by_HP_44_55_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_44_55_));
-            }
-        }
-
-        public const string LR_HR_Build_Multiplier_by_HP_33_44__displayName = "LR/HR Build Multiplier by HP (33%-44%)";
-        public const int LR_HR_Build_Multiplier_by_HP_33_44__sortIndex = 650;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_33_44__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_33_44__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_33_44_ {
-            get => GetData<float>(60);
-            set {
-                if (GetData<float>(60) == value) return;
-                SetData(60, value, nameof(LR_HR_Build_Multiplier_by_HP_33_44_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_33_44_));
-            }
-        }
-
-        public const string LR_HR_Build_Multiplier_by_HP_22_33__displayName = "LR/HR Build Multiplier by HP (22%-33%)";
-        public const int LR_HR_Build_Multiplier_by_HP_22_33__sortIndex = 700;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_22_33__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_22_33__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_22_33_ {
-            get => GetData<float>(64);
-            set {
-                if (GetData<float>(64) == value) return;
-                SetData(64, value, nameof(LR_HR_Build_Multiplier_by_HP_22_33_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_22_33_));
-            }
-        }
-
-        public const string LR_HR_Build_Multiplier_by_HP_11_22__displayName = "LR/HR Build Multiplier by HP (11%-22%)";
-        public const int LR_HR_Build_Multiplier_by_HP_11_22__sortIndex = 750;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_11_22__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_11_22__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_11_22_ {
-            get => GetData<float>(68);
-            set {
-                if (GetData<float>(68) == value) return;
-                SetData(68, value, nameof(LR_HR_Build_Multiplier_by_HP_11_22_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_11_22_));
-            }
-        }
-
-        public const string LR_HR_Build_Multiplier_by_HP_0_11__displayName = "LR/HR Build Multiplier by HP (0%-11%)";
-        public const int LR_HR_Build_Multiplier_by_HP_0_11__sortIndex = 800;
-        [SortOrder(LR_HR_Build_Multiplier_by_HP_0_11__sortIndex)]
-        [DisplayName(LR_HR_Build_Multiplier_by_HP_0_11__displayName)]
-        public virtual float LR_HR_Build_Multiplier_by_HP_0_11_ {
-            get => GetData<float>(72);
-            set {
-                if (GetData<float>(72) == value) return;
-                SetData(72, value, nameof(LR_HR_Build_Multiplier_by_HP_0_11_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Build_Multiplier_by_HP_0_11_));
-            }
-        }
-
-        public const string LR_HR_Out_of_Combat_Decay_Multiplier_displayName = "LR/HR Out of Combat Decay Multiplier";
-        public const int LR_HR_Out_of_Combat_Decay_Multiplier_sortIndex = 850;
-        [SortOrder(LR_HR_Out_of_Combat_Decay_Multiplier_sortIndex)]
-        [DisplayName(LR_HR_Out_of_Combat_Decay_Multiplier_displayName)]
-        public virtual float LR_HR_Out_of_Combat_Decay_Multiplier {
-            get => GetData<float>(76);
-            set {
-                if (GetData<float>(76) == value) return;
-                SetData(76, value, nameof(LR_HR_Out_of_Combat_Decay_Multiplier));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(LR_HR_Out_of_Combat_Decay_Multiplier));
-            }
-        }
-
-        public const string MR_Build_to_Trigger_displayName = "MR Build to Trigger";
-        public const int MR_Build_to_Trigger_sortIndex = 900;
-        [SortOrder(MR_Build_to_Trigger_sortIndex)]
-        [DisplayName(MR_Build_to_Trigger_displayName)]
-        public virtual uint MR_Build_to_Trigger {
-            get => GetData<uint>(80);
-            set {
-                if (GetData<uint>(80) == value) return;
-                SetData(80, value, nameof(MR_Build_to_Trigger));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_to_Trigger));
-            }
-        }
-
-        public const string MR_Duration_displayName = "MR Duration";
-        public const int MR_Duration_sortIndex = 950;
-        [SortOrder(MR_Duration_sortIndex)]
-        [DisplayName(MR_Duration_displayName)]
-        public virtual float MR_Duration {
-            get => GetData<float>(84);
-            set {
-                if (GetData<float>(84) == value) return;
-                SetData(84, value, nameof(MR_Duration));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Duration));
-            }
-        }
-
-        public const string MR_Speed_Modifier_displayName = "MR Speed Modifier";
-        public const int MR_Speed_Modifier_sortIndex = 1000;
-        [SortOrder(MR_Speed_Modifier_sortIndex)]
-        [DisplayName(MR_Speed_Modifier_displayName)]
-        public virtual float MR_Speed_Modifier {
-            get => GetData<float>(88);
-            set {
-                if (GetData<float>(88) == value) return;
-                SetData(88, value, nameof(MR_Speed_Modifier));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Speed_Modifier));
-            }
-        }
-
-        public const string MR_Damage_Modifier_displayName = "MR Damage Modifier";
-        public const int MR_Damage_Modifier_sortIndex = 1050;
-        [SortOrder(MR_Damage_Modifier_sortIndex)]
-        [DisplayName(MR_Damage_Modifier_displayName)]
-        public virtual float MR_Damage_Modifier {
-            get => GetData<float>(92);
-            set {
-                if (GetData<float>(92) == value) return;
-                SetData(92, value, nameof(MR_Damage_Modifier));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Damage_Modifier));
-            }
-        }
-
-        public const string MR_Player_Damage_Modifier_displayName = "MR Player Damage Modifier";
-        public const int MR_Player_Damage_Modifier_sortIndex = 1100;
-        [SortOrder(MR_Player_Damage_Modifier_sortIndex)]
-        [DisplayName(MR_Player_Damage_Modifier_displayName)]
-        public virtual float MR_Player_Damage_Modifier {
-            get => GetData<float>(96);
-            set {
-                if (GetData<float>(96) == value) return;
-                SetData(96, value, nameof(MR_Player_Damage_Modifier));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Player_Damage_Modifier));
-            }
-        }
-
-        public const string MR_Build_Multiplier_by_HP_100__displayName = "MR Build Multiplier by HP (100%)";
-        public const int MR_Build_Multiplier_by_HP_100__sortIndex = 1150;
-        [SortOrder(MR_Build_Multiplier_by_HP_100__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_100__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_100_ {
-            get => GetData<float>(100);
-            set {
-                if (GetData<float>(100) == value) return;
-                SetData(100, value, nameof(MR_Build_Multiplier_by_HP_100_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_100_));
-            }
-        }
-
-        public const string MR_Build_Multiplier_by_HP_88_99__displayName = "MR Build Multiplier by HP (88%-99%)";
-        public const int MR_Build_Multiplier_by_HP_88_99__sortIndex = 1200;
-        [SortOrder(MR_Build_Multiplier_by_HP_88_99__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_88_99__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_88_99_ {
-            get => GetData<float>(104);
-            set {
-                if (GetData<float>(104) == value) return;
-                SetData(104, value, nameof(MR_Build_Multiplier_by_HP_88_99_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_88_99_));
-            }
-        }
-
-        public const string MR_Build_Multiplier_by_HP_77_88__displayName = "MR Build Multiplier by HP (77%-88%)";
-        public const int MR_Build_Multiplier_by_HP_77_88__sortIndex = 1250;
-        [SortOrder(MR_Build_Multiplier_by_HP_77_88__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_77_88__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_77_88_ {
-            get => GetData<float>(108);
-            set {
-                if (GetData<float>(108) == value) return;
-                SetData(108, value, nameof(MR_Build_Multiplier_by_HP_77_88_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_77_88_));
-            }
-        }
-
-        public const string MR_Build_Multiplier_by_HP_66_77__displayName = "MR Build Multiplier by HP (66%-77%)";
-        public const int MR_Build_Multiplier_by_HP_66_77__sortIndex = 1300;
-        [SortOrder(MR_Build_Multiplier_by_HP_66_77__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_66_77__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_66_77_ {
-            get => GetData<float>(112);
-            set {
-                if (GetData<float>(112) == value) return;
-                SetData(112, value, nameof(MR_Build_Multiplier_by_HP_66_77_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_66_77_));
-            }
-        }
-
-        public const string MR_Build_Multiplier_by_HP_55_66__displayName = "MR Build Multiplier by HP (55%-66%)";
-        public const int MR_Build_Multiplier_by_HP_55_66__sortIndex = 1350;
-        [SortOrder(MR_Build_Multiplier_by_HP_55_66__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_55_66__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_55_66_ {
-            get => GetData<float>(116);
-            set {
-                if (GetData<float>(116) == value) return;
-                SetData(116, value, nameof(MR_Build_Multiplier_by_HP_55_66_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_55_66_));
-            }
-        }
-
-        public const string MR_Build_Multiplier_by_HP_44_55__displayName = "MR Build Multiplier by HP (44%-55%)";
-        public const int MR_Build_Multiplier_by_HP_44_55__sortIndex = 1400;
-        [SortOrder(MR_Build_Multiplier_by_HP_44_55__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_44_55__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_44_55_ {
-            get => GetData<float>(120);
-            set {
-                if (GetData<float>(120) == value) return;
-                SetData(120, value, nameof(MR_Build_Multiplier_by_HP_44_55_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_44_55_));
-            }
-        }
-
-        public const string MR_Build_Multiplier_by_HP_33_44__displayName = "MR Build Multiplier by HP (33%-44%)";
-        public const int MR_Build_Multiplier_by_HP_33_44__sortIndex = 1450;
-        [SortOrder(MR_Build_Multiplier_by_HP_33_44__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_33_44__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_33_44_ {
-            get => GetData<float>(124);
-            set {
-                if (GetData<float>(124) == value) return;
-                SetData(124, value, nameof(MR_Build_Multiplier_by_HP_33_44_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_33_44_));
-            }
-        }
-
-        public const string MR_Build_Multiplier_by_HP_22_33__displayName = "MR Build Multiplier by HP (22%-33%)";
-        public const int MR_Build_Multiplier_by_HP_22_33__sortIndex = 1500;
-        [SortOrder(MR_Build_Multiplier_by_HP_22_33__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_22_33__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_22_33_ {
-            get => GetData<float>(128);
-            set {
-                if (GetData<float>(128) == value) return;
-                SetData(128, value, nameof(MR_Build_Multiplier_by_HP_22_33_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_22_33_));
-            }
-        }
-
-        public const string MR_Build_Multiplier_by_HP_11_22__displayName = "MR Build Multiplier by HP (11%-22%)";
-        public const int MR_Build_Multiplier_by_HP_11_22__sortIndex = 1550;
-        [SortOrder(MR_Build_Multiplier_by_HP_11_22__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_11_22__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_11_22_ {
-            get => GetData<float>(132);
-            set {
-                if (GetData<float>(132) == value) return;
-                SetData(132, value, nameof(MR_Build_Multiplier_by_HP_11_22_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_11_22_));
-            }
-        }
-
-        public const string MR_Build_Multiplier_by_HP_0_11__displayName = "MR Build Multiplier by HP (0%-11%)";
-        public const int MR_Build_Multiplier_by_HP_0_11__sortIndex = 1600;
-        [SortOrder(MR_Build_Multiplier_by_HP_0_11__sortIndex)]
-        [DisplayName(MR_Build_Multiplier_by_HP_0_11__displayName)]
-        public virtual float MR_Build_Multiplier_by_HP_0_11_ {
-            get => GetData<float>(136);
-            set {
-                if (GetData<float>(136) == value) return;
-                SetData(136, value, nameof(MR_Build_Multiplier_by_HP_0_11_));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Build_Multiplier_by_HP_0_11_));
-            }
-        }
-
-        public const string MR_Out_of_Combat_Decay_Multiplier_displayName = "MR Out of Combat Decay Multiplier";
-        public const int MR_Out_of_Combat_Decay_Multiplier_sortIndex = 1650;
-        [SortOrder(MR_Out_of_Combat_Decay_Multiplier_sortIndex)]
-        [DisplayName(MR_Out_of_Combat_Decay_Multiplier_displayName)]
-        public virtual float MR_Out_of_Combat_Decay_Multiplier {
-            get => GetData<float>(140);
-            set {
-                if (GetData<float>(140) == value) return;
-                SetData(140, value, nameof(MR_Out_of_Combat_Decay_Multiplier));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(MR_Out_of_Combat_Decay_Multiplier));
-            }
-        }
-
-        public const int lastSortIndex = 1700;
     }
 }

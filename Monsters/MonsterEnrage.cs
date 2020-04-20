@@ -2,11 +2,18 @@
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Monsters {
-    public partial class MonsterEnrage : MhwItem, IHasCustomView<PlDataItemCustomView> {
-        public MonsterEnrage(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class MonsterEnrage : ICustomSaveLoad {
+        public partial class Rage_Stats {
+            public string Name {
+                get {
+                    return index switch
+                    {
+                        0 => "LR/HR",
+                        1 => "MR",
+                        _ => "Unknown"
+                    };
+                }
+            }
         }
-
-        [DisplayName("")]
-        public override string Name => "None";
     }
 }

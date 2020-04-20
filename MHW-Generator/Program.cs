@@ -44,7 +44,6 @@ namespace MHW_Generator {
             GenMelderExchange();
             GenMelderItem();
             GenMelee();
-            GenMonsterEnrage();
             GenMusicSkill();
             GenNewLimitBreak();
             GenNewLimitBreakR();
@@ -330,50 +329,6 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Unk18", 37, typeof(ushort)),
                     new MhwStructData.Entry("Unk19", 39, typeof(uint)),
                     new MhwStructData.Entry("Unk21", 43, typeof(uint))
-                }
-            });
-        }
-
-        private static void GenMonsterEnrage() {
-            GeneratePlDataProps("MHW_Editor.Monsters", "MonsterEnrage", new MhwStructData { // .dtt_agr
-                size = 144,
-                offsetInitial = 0,
-                entryCountOffset = -1,
-                uniqueIdFormula = "0",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Monster Id", 8, typeof(uint)),
-                    new MhwStructData.Entry("LR/HR Build to Trigger", 16, typeof(uint)),
-                    new MhwStructData.Entry("LR/HR Duration", 20, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Speed Modifier", 24, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Damage Modifier", 28, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Player Damage Modifier", 32, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Build Multiplier by HP (100%)", 36, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Build Multiplier by HP (88%-99%)", 40, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Build Multiplier by HP (77%-88%)", 44, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Build Multiplier by HP (66%-77%)", 48, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Build Multiplier by HP (55%-66%)", 52, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Build Multiplier by HP (44%-55%)", 56, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Build Multiplier by HP (33%-44%)", 60, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Build Multiplier by HP (22%-33%)", 64, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Build Multiplier by HP (11%-22%)", 68, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Build Multiplier by HP (0%-11%)", 72, typeof(float)),
-                    new MhwStructData.Entry("LR/HR Out of Combat Decay Multiplier", 76, typeof(float)),
-                    new MhwStructData.Entry("MR Build to Trigger", 80, typeof(uint)),
-                    new MhwStructData.Entry("MR Duration", 84, typeof(float)),
-                    new MhwStructData.Entry("MR Speed Modifier", 88, typeof(float)),
-                    new MhwStructData.Entry("MR Damage Modifier", 92, typeof(float)),
-                    new MhwStructData.Entry("MR Player Damage Modifier", 96, typeof(float)),
-                    new MhwStructData.Entry("MR Build Multiplier by HP (100%)", 100, typeof(float)),
-                    new MhwStructData.Entry("MR Build Multiplier by HP (88%-99%)", 104, typeof(float)),
-                    new MhwStructData.Entry("MR Build Multiplier by HP (77%-88%)", 108, typeof(float)),
-                    new MhwStructData.Entry("MR Build Multiplier by HP (66%-77%)", 112, typeof(float)),
-                    new MhwStructData.Entry("MR Build Multiplier by HP (55%-66%)", 116, typeof(float)),
-                    new MhwStructData.Entry("MR Build Multiplier by HP (44%-55%)", 120, typeof(float)),
-                    new MhwStructData.Entry("MR Build Multiplier by HP (33%-44%)", 124, typeof(float)),
-                    new MhwStructData.Entry("MR Build Multiplier by HP (22%-33%)", 128, typeof(float)),
-                    new MhwStructData.Entry("MR Build Multiplier by HP (11%-22%)", 132, typeof(float)),
-                    new MhwStructData.Entry("MR Build Multiplier by HP (0%-11%)", 136, typeof(float)),
-                    new MhwStructData.Entry("MR Out of Combat Decay Multiplier", 140, typeof(float))
                 }
             });
         }
