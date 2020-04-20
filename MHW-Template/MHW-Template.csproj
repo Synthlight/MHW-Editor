@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -65,6 +67,12 @@
     <Compile Include="Items\ItemCategory.cs" />
     <Compile Include="Items\ItemType.cs" />
     <Compile Include="Items\SteamRarity.cs" />
+    <Compile Include="MultiStructItemTemplate.cs">
+      <DependentUpon>MultiStructItemTemplate.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MhwMultiStructData.cs" />
     <Compile Include="Models\NameDescPair.cs" />
     <Compile Include="PlDataItemTemplate.cs">
       <DependentUpon>PlDataItemTemplate.tt</DependentUpon>
@@ -119,6 +127,10 @@
     <Content Include="ButtonTypeInfoTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>ButtonTypeInfoTemplate.cs</LastGenOutput>
+    </Content>
+    <Content Include="MultiStructItemTemplate.tt">
+      <Generator>TextTemplatingFilePreProcessor</Generator>
+      <LastGenOutput>MultiStructItemTemplate.cs</LastGenOutput>
     </Content>
     <Content Include="PlDataItemTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>

@@ -60,7 +60,7 @@ namespace MHW_Generator_Data {
         private static void GenButtonLocalizationAndIdList() {
             var types = AppDomain.CurrentDomain.GetAssemblies()
                                  .SelectMany(s => s.GetTypes())
-                                 .Where(p => p.Is(typeof(MhwItem)));
+                                 .Where(p => p.Is(typeof(MhwItem), typeof(MhwStructItem)));
 
             var typesWithButtons = new SortedSet<string>();
             var buttonNames = new SortedSet<string>();

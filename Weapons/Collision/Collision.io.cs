@@ -2,11 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
 using MHW_Editor.Weapons.Collision.Models;
-using MHW_Template;
 
 namespace MHW_Editor.Weapons.Collision {
     public partial class Collision {

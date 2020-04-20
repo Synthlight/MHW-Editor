@@ -95,6 +95,7 @@ namespace MHW_Template {
             //"*.shlp",
             "*.srl",
             "*.stmp",
+            "*.supp",
             "*.swer",
             "*.swpc",
             "*.swpi",

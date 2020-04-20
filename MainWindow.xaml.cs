@@ -49,6 +49,7 @@ namespace MHW_Editor {
         private const string NEXUS_LINK = "https://www.nexusmods.com/monsterhunterworld/mods/2068";
         private const string CURRENT_GAME_VERSION = "13.0X.XX";
         private const string TITLE = "MHW Editor";
+        public const double FONT_SIZE = 20;
 
         private readonly ObservableCollection<dynamic> items = new ObservableCollection<dynamic>();
         private string targetFile;
@@ -526,7 +527,7 @@ namespace MHW_Editor {
         }
 
         private void EditSelectedItemId(FrameworkElement cell, string propertyName) {
-            var obj = (MhwItem) cell.DataContext;
+            var obj = (IOnPropertyChanged) cell.DataContext;
             var property = obj.GetType().GetProperty(propertyName.Replace("_button", ""), BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
             Debug.Assert(property != null, nameof(property) + " != null");
             var propertyType = property.PropertyType;
@@ -703,21 +704,17 @@ namespace MHW_Editor {
 #if !DEBUG
             try {
 #endif
-            if (targetFileType.Is(typeof(Collision))) { // Custom save/load.
+            if (targetFileType.Is(typeof(ICustomSaveLoad))) { // Custom save/load.
                 scroll_viewer.Visibility = Visibility.Visible;
                 mainDataGrid.Visibility = Visibility.Collapsed;
 
-                customFileData = Collision.LoadData(targetFile);
+                var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public);
+                Debug.Assert(loadData != null, nameof(loadData) + " != null");
+                customFileData = loadData.Invoke(null, new object[] {targetFile});
 
-                Collision.SetupViews(customFileData, grid, this);
-                return;
-            } else if (targetFileType.Is(typeof(Shlp))) { // Custom save/load.
-                scroll_viewer.Visibility = Visibility.Visible;
-                mainDataGrid.Visibility = Visibility.Collapsed;
-
-                customFileData = Shlp.LoadData(targetFile);
-
-                Shlp.SetupViews(customFileData, grid, this);
+                var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public);
+                Debug.Assert(setupViews != null, nameof(setupViews) + " != null");
+                setupViews.Invoke(null, new object[] {customFileData, grid, this});
                 return;
             }
 #if !DEBUG
@@ -1228,6 +1225,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".shlp")) return typeof(Shlp);
             if (fileName.EndsWith(".srl")) return typeof(SteamRewardList);
             if (fileName.EndsWith(".stmp")) return typeof(ItemDelivery);
+            if (fileName.EndsWith(".supp")) return typeof(SupplyData);
             if (fileName.EndsWith(".swer")) return typeof(SwapEnemyRate);
             if (fileName.EndsWith(".swpc")) return typeof(SwapC);
             if (fileName.EndsWith(".swpi")) return typeof(SwapItem);

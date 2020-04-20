@@ -19,7 +19,7 @@ namespace MHW_Template {
             public readonly Type type;
             public readonly Type enumReturn;
             public readonly bool readOnly;
-            public readonly string valueString;
+            public readonly string valueString; // Used mostly for clamping the value.
             public readonly string accessLevel;
             public readonly DataSourceType? dataSourceType;
             public readonly string[] extraOnPropertyChanged;

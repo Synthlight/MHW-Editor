@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MHW_Template;
+using MHW_Template.Models;
 
 namespace MHW_Generator {
     public static partial class Program {

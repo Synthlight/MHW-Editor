@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 
 namespace MHW_Editor.Models {
-    public interface IMhwItem : INotifyPropertyChanged {
+    public interface IMhwItem : INotifyPropertyChanged, IOnPropertyChanged {
         string UniqueId { get; }
         byte[] Bytes { get; }
         ulong Offset { get; }

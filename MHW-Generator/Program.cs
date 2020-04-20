@@ -77,6 +77,7 @@ namespace MHW_Generator {
             GenWeaponWSword();
 
             GenCommonPl();
+            GenMultiStruct();
         }
 
         private static void GenCustomOuterRecipe() {

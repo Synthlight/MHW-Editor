@@ -1,0 +1,213 @@
+﻿<#@ template language="C#" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(TargetDir)\MHW-Template.dll" #>
+<#@ parameter type="System.String" name="_namespace" #>
+<#@ parameter type="System.String" name="className" #>
+<#@ parameter type="MHW_Template.MhwMultiStructData" name="structData" #>
+<#@ import namespace="Microsoft.CSharp" #>
+<#@ import namespace="System.CodeDom" #>
+<#@ import namespace="System.Runtime.InteropServices" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#@ import namespace="MHW_Template.Models" #>
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.IO;
+using MHW_Editor.Assets;
+using MHW_Editor.Models;
+using MHW_Template;
+using MHW_Template.Models;
+
+namespace <#= _namespace #> {
+    public partial class <#= className #> : MhwMultiStructItem {
+        public const ulong InitialOffset = <#= structData.offsetInitial #>;
+        public const string EncryptionKey = <#= structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\"" #>;
+<#
+    var compiler = new CSharpCodeProvider();
+
+    foreach (var @struct in structData.structs) {
+        var sortIndex = 50;
+        var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
+
+        WriteLine("");
+        //WriteLine("        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode, Pack = 1)]");
+        WriteLine($"        public partial class {name} : MhwStructItem {{");
+        WriteLine($"            public const ulong FixedSizeCount = {@struct.fixedSizeCount};");
+        WriteLine($"            public const string DisplayName = \"{@struct.name}\";");
+
+        foreach (var entry in @struct.entries) {
+            var accessLevel = entry.accessLevel;
+            if (accessLevel != "private") {
+                accessLevel += " virtual";
+            }
+
+            var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+            if (entry.forceUnique) {
+                propName += $"_{sortIndex}";
+            }
+            var entryName = $"{propName}_raw";
+
+            var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
+            string returnString;
+            var setCast = "";
+            var getCast = "";
+
+            if (entry.enumReturn == null) {
+                returnString = typeString;
+            } else {
+                returnString = compiler.GetTypeOutput(new CodeTypeReference(entry.enumReturn));
+                getCast = $"({returnString}) ";
+                setCast = $"({typeString}) ";
+            }
+
+            // Main property.
+            WriteLine("");
+            WriteLine($"            protected {typeString} {entryName};");
+            WriteLine($"            public const string {propName}_displayName = \"{entry.displayName}\";");
+            WriteLine($"            public const int {propName}_sortIndex = {sortIndex};");
+            WriteLine($"            [SortOrder({propName}_sortIndex)]");
+            WriteLine($"            [DisplayName({propName}_displayName)]");
+
+            if (entry.dataSourceType != null) {
+                WriteLine($"            [DataSource(DataSourceType.{entry.dataSourceType})]");
+            }
+
+            if (entry.readOnly) {
+                WriteLine("            [IsReadOnly]");
+            }
+
+            WriteLine($"            {accessLevel} {returnString} {propName} {{");
+
+            if (returnString == "bool") {
+                WriteLine($"                get => {getCast}Convert.ToBoolean({entryName});");
+            } else {
+                WriteLine($"                get => {getCast}{entryName};");
+            }
+
+            // Always include a setter, even for readOnly. This enables us to bypass readOnly via command line switch.
+            WriteLine("                set {");
+
+            if (returnString == "bool") {
+                WriteLine($"                    if (Convert.ToBoolean({entryName}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
+                WriteLine($"                    {entryName} = Convert.ToByte({entry.valueString});");
+            } else {
+                WriteLine($"                    if ({getCast}{entryName} == {entry.valueString}) return;"); // Do nothing if the value is the same.
+                WriteLine($"                    {entryName} = {setCast}{entry.valueString};");
+            }
+
+            WriteLine($"                    OnPropertyChanged(nameof({propName}));");
+
+            if (entry.dataSourceType != null) {
+                WriteLine($"                    OnPropertyChanged(nameof({propName}_button));");
+            }
+
+            if (entry.extraOnPropertyChanged != null) {
+                foreach (var propertyToChange in entry.extraOnPropertyChanged) {
+                    var propertyToChangeName = Regex.Replace(propertyToChange, @"[^\w\d]+", "_");
+
+                    WriteLine($"                    OnPropertyChanged(nameof({propertyToChangeName}));");
+                }
+            }
+
+            WriteLine("                }");
+            WriteLine("            }");
+
+            if (entry.dataSourceType != null) {
+                string dataSourceLookup;
+
+                switch (entry.dataSourceType) {
+                    case DataSourceType.Items:
+                        dataSourceLookup = "DataHelper.itemNames[MainWindow.locale]";
+                        break;
+                    case DataSourceType.Skills:
+                        dataSourceLookup = "DataHelper.skillNames[MainWindow.locale]";
+                        break;
+                    case DataSourceType.SkillDat:
+                        dataSourceLookup = "MainWindow.skillDatLookup[MainWindow.locale]";
+                        break;
+                    case DataSourceType.CategorizedWeapons:
+                        dataSourceLookup = "DataHelper.weaponIdNameLookup[Weapon_Type][MainWindow.locale]";
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+
+                WriteLine("");
+                WriteLine($"            [SortOrder({propName}_sortIndex)]");
+                WriteLine($"            [DisplayName({propName}_displayName)]");
+                WriteLine($"            [CustomSorter(typeof({entry.dataSourceCustomSorter}))]");
+                WriteLine($"            public string {propName}_button => {dataSourceLookup}.TryGet({propName}).ToStringWithId({propName});");
+            }
+
+            if (entry.createPercentField) {
+                WriteLine("");
+                WriteLine($"            private float _{propName}Percent;");
+                WriteLine($"            [SortOrder({propName}_sortIndex + 1)]");
+                WriteLine($"            [DisplayName({propName}_displayName + \"%\")]");
+                WriteLine($"            public float {propName}_percent {{");
+                WriteLine($"                get => _{propName}Percent;");
+                WriteLine("                set {");
+                WriteLine($"                    _{propName}Percent = value.Clamp(0f, 100f);");
+                WriteLine($"                    OnPropertyChanged(nameof({propName}_percent));");
+                WriteLine("                }");
+                WriteLine("            }");
+            }
+
+            sortIndex += 50;
+        }
+
+        if (@struct.fixedSizeCount > 0) {
+            WriteLine("");
+            WriteLine("            public static ulong GetEntryCount(List<List<dynamic>> data) {");
+            WriteLine("                return FixedSizeCount;");
+            WriteLine("            }");
+        }
+
+        // Individual LoadData.
+        WriteLine("");
+        WriteLine($"            public static {name} LoadData(BinaryReader reader) {{");
+        WriteLine($"                var data = new {name}();");
+
+        foreach (var entry in @struct.entries) {
+            var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+            if (entry.forceUnique) {
+                propName += $"_{sortIndex}";
+            }
+            var entryName = $"{propName}_raw";
+
+            WriteLine($"                data.{entryName} = reader.Read{GetReadType(entry.type)}();");
+        }
+
+        WriteLine("                return data;");
+        WriteLine("            }");
+
+        WriteLine("        }"); // Inner Class
+    }
+
+    // Master LoadData.
+    WriteLine("");
+    WriteLine("        public static List<List<dynamic>> LoadData(string targetFile) {");
+    WriteLine("            using var reader = new BinaryReader(File.OpenRead(targetFile));");
+    WriteLine("            var data = new List<List<dynamic>>();");
+
+    foreach (var @struct in structData.structs) {
+        var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
+
+        WriteLine($"            var {name}_list = new List<dynamic>();");
+        WriteLine($"            for (ulong i = 0; i < {name}.GetEntryCount(data); i++) {{");
+        WriteLine($"                var item = {name}.LoadData(reader);");
+        WriteLine($"                item.index = i;");
+        WriteLine($"                {name}_list.Add(item);");
+        WriteLine("            }");
+        WriteLine($"            data.Add({name}_list);");
+    }
+
+    WriteLine("            return data;");
+    WriteLine("        }");
+
+    string GetReadType(Type type) {
+        return Type.GetTypeCode(type).ToString();
+    }
+#>
+    }
+}

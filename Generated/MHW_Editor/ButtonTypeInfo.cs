@@ -3,6 +3,7 @@ using System.Collections.Generic;
 namespace MHW_Editor {
     public static class ButtonTypeInfo {
         public static readonly List<string> TYPES_WITH_BUTTONS = new List<string> {
+            "Ammo_Box",
             "Armor",
             "ASkill",
             "AwakenedLimitBreak",
@@ -14,6 +15,7 @@ namespace MHW_Editor {
             "EqCrt",
             "EqCus",
             "Gem",
+            "Item_Box",
             "ItemDelivery",
             "ItemList",
             "ItemLottery",
@@ -38,6 +40,7 @@ namespace MHW_Editor {
         };
 
         public static readonly List<string> BUTTON_NAMES = new List<string> {
+            "Ammo_Id_button",
             "Decoration_Reward_button",
             "Hidden_Skill_button",
             "Item_1_Id_button",
@@ -78,6 +81,7 @@ namespace MHW_Editor {
         };
 
         public static readonly List<string> BUTTON_BASE_NAMES = new List<string> {
+            "Ammo_Id",
             "Decoration_Reward",
             "Hidden_Skill",
             "Item_1_Id",
