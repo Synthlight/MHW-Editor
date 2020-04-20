@@ -950,7 +950,7 @@ namespace MHW_Editor {
             if (targetFileType.Is(typeof(ICustomSaveLoad))) { // Custom save/load.
                 var saveData = targetFileType.GetMethod("SaveData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
                 Debug.Assert(saveData != null, nameof(saveData) + " != null");
-                customFileData = saveData.Invoke(null, new object[] {customFileData, targetFile});
+                saveData.Invoke(null, new object[] {customFileData, targetFile});
 
                 await ShowChangesSaved(true);
                 return;

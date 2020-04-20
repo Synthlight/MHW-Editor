@@ -135,5 +135,10 @@ namespace MHW_Editor {
 
             return Encoding.UTF8.GetString(stringBytes.Subsequence(0, stringBytes.Count).ToArray());
         }
+
+        public static char[] ToNullTermCharArray(this string str) {
+            if (!str.EndsWith("\0")) str += "\0";
+            return str.ToCharArray();
+        }
     }
 }

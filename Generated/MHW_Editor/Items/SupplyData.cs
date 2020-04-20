@@ -87,6 +87,13 @@ namespace MHW_Editor.Items {
                 data.Supply_Id_raw = reader.ReadUInt32();
                 return data;
             }
+
+            public override void WriteData(BinaryWriter writer) {
+                writer.Write(Magic_1_raw);
+                writer.Write(Magic_2_raw);
+                writer.Write(Magic_3_raw);
+                writer.Write(Supply_Id_raw);
+            }
         }
 
         public partial class Item_Box : MhwStructItem {
@@ -138,6 +145,11 @@ namespace MHW_Editor.Items {
                 data.Item_Count_raw = reader.ReadUInt16();
                 return data;
             }
+
+            public override void WriteData(BinaryWriter writer) {
+                writer.Write(Item_Id_raw);
+                writer.Write(Item_Count_raw);
+            }
         }
 
         public partial class Item_Box_Scaling : MhwStructItem {
@@ -166,6 +178,10 @@ namespace MHW_Editor.Items {
                 var data = new Item_Box_Scaling();
                 data.Items_to_Show_raw = reader.ReadByte();
                 return data;
+            }
+
+            public override void WriteData(BinaryWriter writer) {
+                writer.Write(Items_to_Show_raw);
             }
         }
 
@@ -218,6 +234,11 @@ namespace MHW_Editor.Items {
                 data.Ammo_Count_raw = reader.ReadUInt16();
                 return data;
             }
+
+            public override void WriteData(BinaryWriter writer) {
+                writer.Write(Ammo_Id_raw);
+                writer.Write(Ammo_Count_raw);
+            }
         }
 
         public partial class Ammo_Box_Scaling : MhwStructItem {
@@ -247,6 +268,14 @@ namespace MHW_Editor.Items {
                 data.Ammo_Items_to_Show_raw = reader.ReadByte();
                 return data;
             }
+
+            public override void WriteData(BinaryWriter writer) {
+                writer.Write(Ammo_Items_to_Show_raw);
+            }
+        }
+
+        public static void SaveData(List<List<dynamic>> data, string targetFile) {
+            SaveData(data, targetFile, EncryptionKey);
         }
 
         public static List<List<dynamic>> LoadData(string targetFile) {

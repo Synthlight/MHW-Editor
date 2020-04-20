@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 
@@ -9,6 +10,8 @@ namespace MHW_Editor.Models {
 
         public ulong index;
         public ulong Index => index;
+
+        public abstract void WriteData(BinaryWriter writer);
 
         [NotifyPropertyChangedInvocator]
         public virtual void OnPropertyChanged([CallerMemberName] string propertyName = null) {

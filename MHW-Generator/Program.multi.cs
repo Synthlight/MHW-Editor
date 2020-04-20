@@ -18,7 +18,7 @@ namespace MHW_Generator {
                 }, 1),
                 new MhwMultiStructData.StructData("Assets", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Magic", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry("Path", typeof(string), isNullTerminatedString: true, condition: "if (data.Magic_raw != 0)")
+                    new MhwMultiStructData.StructData.Entry("Path", typeof(string), isNullTerminatedString: true, condition: "if (|ref|Magic_raw != 0)")
                 }, 25)
             };
 

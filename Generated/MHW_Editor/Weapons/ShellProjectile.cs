@@ -72,6 +72,12 @@ namespace MHW_Editor.Weapons {
                 data.Magic_2_raw = reader.ReadUInt32();
                 return data;
             }
+
+            public override void WriteData(BinaryWriter writer) {
+                writer.Write(Magic_1_raw);
+                writer.Write(SLP_raw);
+                writer.Write(Magic_2_raw);
+            }
         }
 
         public partial class Assets : MhwStructItem {
@@ -116,6 +122,15 @@ namespace MHW_Editor.Weapons {
                 if (data.Magic_raw != 0) data.Path_raw = reader.ReadNullTermString();
                 return data;
             }
+
+            public override void WriteData(BinaryWriter writer) {
+                writer.Write(Magic_raw);
+                if (Magic_raw != 0) writer.Write(Path_raw.ToNullTermCharArray());
+            }
+        }
+
+        public static void SaveData(List<List<dynamic>> data, string targetFile) {
+            SaveData(data, targetFile, EncryptionKey);
         }
 
         public static List<List<dynamic>> LoadData(string targetFile) {

@@ -188,7 +188,7 @@ namespace <#= _namespace #> {
 
             var condition = "";
             if (entry.condition != null) {
-                condition = entry.condition + " ";
+                condition = $"{entry.condition} ".Replace("|ref|", "data.");
             }
 
             if (entry.arrayCount > -1) {
@@ -203,8 +203,38 @@ namespace <#= _namespace #> {
         WriteLine("                return data;");
         WriteLine("            }");
 
+        // Individual WriteData.
+        WriteLine("");
+        WriteLine("            public override void WriteData(BinaryWriter writer) {");
+
+        foreach (var entry in @struct.entries) {
+            var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+            if (entry.forceUnique) {
+                propName += $"_{sortIndex}";
+            }
+            var entryName = $"{propName}_raw";
+
+            var condition = "";
+            if (entry.condition != null) {
+                condition = $"{entry.condition} ".Replace("|ref|", "");
+            }
+
+            if (entry.type == typeof(string)) {
+                WriteLine($"                {condition}writer.Write({entryName}.ToNullTermCharArray());");
+            } else {
+                WriteLine($"                {condition}writer.Write({entryName});");
+            }
+        }
+
+        WriteLine("            }");
         WriteLine("        }"); // Inner Class
     }
+
+    // Glue to give the encryption key to MhwMultiStructItem.
+    WriteLine("");
+    WriteLine("        public static void SaveData(List<List<dynamic>> data, string targetFile) {");
+    WriteLine("            SaveData(data, targetFile, EncryptionKey);");
+    WriteLine("        }");
 
     // Master LoadData.
     WriteLine("");
@@ -218,7 +248,7 @@ namespace <#= _namespace #> {
         WriteLine($"            var {name}_list = new List<dynamic>();");
         WriteLine($"            for (ulong i = 0; i < {name}.GetEntryCount(data); i++) {{");
         WriteLine($"                var item = {name}.LoadData(reader);");
-        WriteLine($"                item.index = i;");
+        WriteLine("                item.index = i;");
         WriteLine($"                {name}_list.Add(item);");
         WriteLine("            }");
         WriteLine($"            data.Add({name}_list);");

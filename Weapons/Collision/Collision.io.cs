@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
+using JetBrains.Annotations;
 using MHW_Editor.Weapons.Collision.Models;
 
 namespace MHW_Editor.Weapons.Collision {
     public partial class Collision {
+        [UsedImplicitly]
         public static Models.Collision LoadData(string targetFile) {
             Debug.Assert(Marshal.SizeOf(typeof(Atk0)) == 179);
             Debug.Assert(Marshal.SizeOf(typeof(Atk1)) == 218);
@@ -183,6 +185,7 @@ namespace MHW_Editor.Weapons.Collision {
             return oaps;
         }
 
+        [UsedImplicitly]
         public static void SaveData(Models.Collision collision, string targetFile) {
             // Don't erase file, we just want to write what we have.
             // This ensures extra bytes at the end (if any) are not lost.
