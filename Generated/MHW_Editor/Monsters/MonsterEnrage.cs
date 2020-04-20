@@ -100,16 +100,16 @@ namespace MHW_Editor.Monsters {
             public const ulong FixedSizeCount = 2;
             public const string DisplayName = "Rage Stats";
 
-            protected uint Build_to_Trigger_raw;
+            protected int Build_to_Trigger_raw;
             public const string Build_to_Trigger_displayName = "Build to Trigger";
             public const int Build_to_Trigger_sortIndex = 50;
             [SortOrder(Build_to_Trigger_sortIndex)]
             [DisplayName(Build_to_Trigger_displayName)]
-            public virtual uint Build_to_Trigger {
+            public virtual int Build_to_Trigger {
                 get => Build_to_Trigger_raw;
                 set {
-                    if (Build_to_Trigger_raw == value) return;
-                    Build_to_Trigger_raw = value;
+                    if (Build_to_Trigger_raw == value.Clamp((int) -1, (int) int.MaxValue)) return;
+                    Build_to_Trigger_raw = value.Clamp((int) -1, (int) int.MaxValue);
                     OnPropertyChanged(nameof(Build_to_Trigger));
                 }
             }
@@ -330,7 +330,7 @@ namespace MHW_Editor.Monsters {
 
             public static Rage_Stats LoadData(BinaryReader reader) {
                 var data = new Rage_Stats();
-                data.Build_to_Trigger_raw = reader.ReadUInt32();
+                data.Build_to_Trigger_raw = reader.ReadInt32();
                 data.Duration_raw = reader.ReadSingle();
                 data.Speed_Modifier_raw = reader.ReadSingle();
                 data.Damage_Modifier_raw = reader.ReadSingle();

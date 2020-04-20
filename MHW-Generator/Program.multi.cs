@@ -127,7 +127,7 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry("Magic 3", typeof(uint), true)
                 }, 1),
                 new MhwMultiStructData.StructData("Rage Stats", new List<MhwMultiStructData.StructData.Entry> {
-                    new MhwMultiStructData.StructData.Entry("Build to Trigger", typeof(uint)),
+                    new MhwMultiStructData.StructData.Entry("Build to Trigger", typeof(int), valueString: "value.Clamp((int) -1, (int) int.MaxValue)"),
                     new MhwMultiStructData.StructData.Entry("Duration", typeof(float)),
                     new MhwMultiStructData.StructData.Entry("Speed Modifier", typeof(float)),
                     new MhwMultiStructData.StructData.Entry("Damage Modifier", typeof(float)),
