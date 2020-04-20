@@ -27,6 +27,19 @@ namespace MHW_Editor {
             return outBytes;
         }
 
+        public static MemoryStream DecryptToStream(string key, byte[] inBytes) {
+            var bytes = Decrypt(key, inBytes);
+            var dat = new MemoryStream();
+
+            // Write bytes to stream. Leave base stream OPEN.
+            using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
+                writer.Write(bytes);
+            }
+
+            dat.Seek(0, SeekOrigin.Begin);
+            return dat;
+        }
+
         public static void Encrypt(string key, string inFile, string outFile) {
             var outBytes = Encrypt(key, File.ReadAllBytes(inFile));
             File.WriteAllBytes(outFile, outBytes);
@@ -46,6 +59,10 @@ namespace MHW_Editor {
             outBytes = BSwap(outBytes);
 
             return outBytes;
+        }
+
+        public static byte[] Encrypt(string key, MemoryStream stream) {
+            return Encrypt(key, stream.ToArray());
         }
 
         public static byte[] BSwap(byte[] data) {
