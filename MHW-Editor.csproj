@@ -144,6 +144,7 @@
     <Compile Include="Generated\MHW_Editor\Monsters\EnemySort.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\MonsterDifficulty.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\MonsterEnrage.cs" />
+    <Compile Include="Generated\MHW_Editor\Monsters\MonsterRandomSize.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlItemParam.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlItemParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlMantleParam.cs" />
@@ -231,6 +232,7 @@
     <Compile Include="Models\ButtonSorter.cs" />
     <Compile Include="Models\VersionCheck.cs" />
     <Compile Include="Monsters\MonsterDifficulty.cs" />
+    <Compile Include="Monsters\MonsterRandomSize.cs" />
     <Compile Include="Monsters\MonsterEnrage.cs" />
     <Compile Include="PlData\PlMusicSkillParam.cs" />
     <Compile Include="PlData\PlSkillParam.cs" />
