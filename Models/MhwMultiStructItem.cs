@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
@@ -10,14 +11,28 @@ namespace MHW_Editor.Models {
         // Make SURE the list type is dynamic. Auto-generated columns will be empty if it's a base class.
         [UsedImplicitly]
         public static void SetupViews(List<List<dynamic>> data, Grid grid, MainWindow main) {
-            foreach (var entry in data) {
-                if (entry.Count == 0) continue;
-                grid.AddControl(new Label {Content = GetLabel(entry), FontSize = MainWindow.FONT_SIZE});
-                main.AddDataGrid(entry);
+            foreach (var list in GetFilteredLists(data)) {
+                grid.AddControl(new Label {Content = GetLabel(list), FontSize = MainWindow.FONT_SIZE});
+                main.AddDataGrid(list);
             }
         }
 
-        private static string GetLabel(List<dynamic> entry) {
+        protected static List<List<dynamic>> GetFilteredLists(List<List<dynamic>> data) {
+            var filteredViews = new List<List<dynamic>>();
+
+            foreach (var list in data) {
+                if (list.Count == 0) continue;
+
+                var hidden = (bool) (((Type) list[0].GetType()).GetField("Hidden", BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
+                if (hidden) continue;
+
+                filteredViews.Add(list);
+            }
+
+            return filteredViews;
+        }
+
+        protected static string GetLabel(List<dynamic> entry) {
             var type = entry[0].GetType();
             return (string) type.GetField("DisplayName", BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy).GetValue(null);
         }

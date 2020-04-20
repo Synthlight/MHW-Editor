@@ -177,6 +177,7 @@ namespace MHW_Editor.Monsters {
         public partial class Crown_Table_Count : MhwStructItem {
             public const ulong FixedSizeCount = 1;
             public const string DisplayName = "Crown Table Count";
+            public const bool Hidden = true;
 
             protected uint Number_of_Crown_Tables_raw;
             public const string Number_of_Crown_Tables_displayName = "Number of Crown Tables";

@@ -18,11 +18,13 @@ namespace MHW_Template {
             public readonly string name;
             public readonly List<Entry> entries;
             public readonly uint fixedSizeCount;
+            public readonly bool hidden;
 
-            public StructData(string name, List<Entry> entries, uint fixedSizeCount = 0) {
+            public StructData(string name, List<Entry> entries, uint fixedSizeCount = 0, bool hidden = false) {
                 this.name = name;
                 this.entries = entries;
                 this.fixedSizeCount = fixedSizeCount;
+                this.hidden = hidden;
             }
 
             public class Entry {

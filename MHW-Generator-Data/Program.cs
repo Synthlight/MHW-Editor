@@ -27,7 +27,6 @@ namespace MHW_Generator_Data {
                 "dtt_eda",
                 "dtt_epg",
                 "dtt_msf",
-                "dtt_sta",
                 "ransz",
                 "sobj"
             });

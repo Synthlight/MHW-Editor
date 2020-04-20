@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using JetBrains.Annotations;
 using MHW_Editor.Weapons;
 using MHW_Template;
 using MHW_Template.Weapons;
@@ -139,6 +140,17 @@ namespace MHW_Editor {
         public static char[] ToNullTermCharArray(this string str) {
             if (!str.EndsWith("\0")) str += "\0";
             return str.ToCharArray();
+        }
+
+        [CanBeNull]
+        public static T GetEntry<T>(this List<List<object>> data, Type type) where T : class {
+            foreach (var list in data) {
+                if (list.Any() && list[0].GetType() == type) {
+                    return (T) list[0];
+                }
+            }
+
+            return null;
         }
     }
 }

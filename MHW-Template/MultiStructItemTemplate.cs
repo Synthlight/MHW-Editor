@@ -76,6 +76,10 @@ namespace MHW_Template
         WriteLine($"            public const ulong FixedSizeCount = {@struct.fixedSizeCount};");
         WriteLine($"            public const string DisplayName = \"{@struct.name}\";");
 
+        if (@struct.hidden) {
+            WriteLine($"            public const bool Hidden = {@struct.hidden.ToString().ToLower()};");
+        }
+
         foreach (var entry in @struct.entries) {
             var accessLevel = entry.accessLevel;
             if (accessLevel != "private") {

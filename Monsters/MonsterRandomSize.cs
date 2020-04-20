@@ -1,30 +1,17 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Monsters {
     public partial class MonsterRandomSize : ICustomSaveLoad {
         public partial class Monsters {
             public static ulong GetEntryCount(List<List<object>> data) {
-                foreach (var list in data) {
-                    if (list.Any() && list[0] is Monster_Random_Sizes o) {
-                        return o.Number_of_Monsters;
-                    }
-                }
-
-                return 0;
+                return data.GetEntry<Monster_Random_Sizes>(typeof(Monster_Random_Sizes))?.Number_of_Monsters ?? 0;
             }
         }
 
         public partial class Crown_Tables {
             public static ulong GetEntryCount(List<List<object>> data) {
-                foreach (var list in data) {
-                    if (list.Any() && list[0] is Crown_Table_Count o) {
-                        return o.Number_of_Crown_Tables;
-                    }
-                }
-
-                return 0;
+                return data.GetEntry<Crown_Table_Count>(typeof(Crown_Table_Count))?.Number_of_Crown_Tables ?? 0;
             }
 
             public string Name {
