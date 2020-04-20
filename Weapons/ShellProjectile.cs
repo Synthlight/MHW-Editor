@@ -1,4 +1,5 @@
-﻿using MHW_Editor.Models;
+﻿using System.Collections.Generic;
+using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons {
     public partial class ShellProjectile : ICustomSaveLoad {
@@ -34,6 +35,18 @@ namespace MHW_Editor.Weapons {
                         _ => "Unknown"
                     };
                 }
+            }
+        }
+
+        public partial class Shell_Params {
+            public static ulong GetEntryCount(List<List<object>> data) {
+                return data.GetEntry<Shlp_1_>(typeof(Shlp_1_))?.Number_of_Shell_Params ?? 0;
+            }
+        }
+
+        public partial class Modifiers {
+            public static ulong GetEntryCount(List<List<object>> data) {
+                return data.GetEntry<Shlp_4_>(typeof(Shlp_4_))?.Number_of_Modifiers ?? 0;
             }
         }
     }

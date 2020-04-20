@@ -21,7 +21,6 @@ namespace MHW_Generator_Data {
 
             FILE_TYPES_TO_CHECK.AddRange(new List<string> {
                 "gmd",
-                "shlp",
                 "dtt_clawc",
                 "dtt_cvc",
                 "dtt_eda",
