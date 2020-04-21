@@ -1,19 +1,26 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Monsters {
-    public partial class MonsterRandomSize : ICustomSaveLoad {
-        public partial class Monsters {
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return data.GetEntry<Monster_Random_Sizes>(typeof(Monster_Random_Sizes))?.Number_of_Monsters ?? 0;
+    public partial class MonsterRandomSize : MhwMultiStructItem<MonsterRandomSize> {
+        protected override ulong GetEntryCount(Type type) {
+            if (type == typeof(Monsters)) {
+                return GetFirstEntry<Monster_Random_Sizes>().Number_of_Monsters;
             }
+
+            if (type == typeof(Crown_Tables)) {
+                return GetFirstEntry<Crown_Table_Count>().Number_of_Crown_Tables;
+            }
+
+            return base.GetEntryCount(type);
+        }
+
+        protected override void PrepSave() {
+            GetFirstEntry<Monster_Random_Sizes>().Number_of_Monsters = (uint) GetDataContainer<Monsters>().list.Count;
+            GetFirstEntry<Crown_Table_Count>().Number_of_Crown_Tables = (uint) GetDataContainer<Crown_Tables>().list.Count;
         }
 
         public partial class Crown_Tables {
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return data.GetEntry<Crown_Table_Count>(typeof(Crown_Table_Count))?.Number_of_Crown_Tables ?? 0;
-            }
-
             public string Name {
                 get {
                     return index switch {

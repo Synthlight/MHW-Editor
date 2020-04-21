@@ -38,18 +38,18 @@ namespace MHW_Generator {
                 }, 1),
                 new MhwMultiStructData.StructData("Fatigue (LR)", fatigue, 1),
                 new MhwMultiStructData.StructData("Stamina Count (LR)", staminaCount, 1, true),
-                new MhwMultiStructData.StructData("Stamina (LR)", stamina),
+                new MhwMultiStructData.StructData("Stamina (LR)", stamina, canAddRows: true),
 
                 new MhwMultiStructData.StructData("Fatigue (HR)", fatigue, 1),
                 new MhwMultiStructData.StructData("Stamina Count (HR)", staminaCount, 1, true),
-                new MhwMultiStructData.StructData("Stamina (HR)", stamina),
+                new MhwMultiStructData.StructData("Stamina (HR)", stamina, canAddRows: true),
 
                 new MhwMultiStructData.StructData("Fatigue (MR)", fatigue, 1),
                 new MhwMultiStructData.StructData("Stamina Count (MR)", staminaCount, 1, true),
-                new MhwMultiStructData.StructData("Stamina (MR)", stamina)
+                new MhwMultiStructData.StructData("Stamina (MR)", stamina, canAddRows: true)
             };
 
-            GenerateMultiStructProps("MHW_Editor.Monsters", "MonsterStamina", new MhwMultiStructData(structs, 0));
+            GenerateMultiStructProps("MHW_Editor.Monsters", "MonsterStamina", new MhwMultiStructData(structs));
         }
 
         private static void GenMonsterRandomSize() { // .dtt_rsz 
@@ -74,14 +74,14 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry("Silver Crown Limit", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Gold Big Crown Limit", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Base Size", typeof(float))
-                }),
+                }, canAddRows: true),
                 new MhwMultiStructData.StructData("Crown Table Count", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Number of Crown Tables", typeof(uint), true)
                 }, 1, true),
-                new MhwMultiStructData.StructData("Crown Tables", crownTable)
+                new MhwMultiStructData.StructData("Crown Tables", crownTable, canAddRows: true)
             };
 
-            GenerateMultiStructProps("MHW_Editor.Monsters", "MonsterRandomSize", new MhwMultiStructData(structs, 0));
+            GenerateMultiStructProps("MHW_Editor.Monsters", "MonsterRandomSize", new MhwMultiStructData(structs));
         }
 
         private static void GenMonsterDifficulty() { // .dtt_dif
@@ -115,7 +115,7 @@ namespace MHW_Generator {
                 }, 1)
             };
 
-            GenerateMultiStructProps("MHW_Editor.Monsters", "MonsterDifficulty", new MhwMultiStructData(structs, 0));
+            GenerateMultiStructProps("MHW_Editor.Monsters", "MonsterDifficulty", new MhwMultiStructData(structs));
         }
 
         private static void GenMonsterEnrage() { // .dtt_agr
@@ -146,7 +146,7 @@ namespace MHW_Generator {
                 }, 2)
             };
 
-            GenerateMultiStructProps("MHW_Editor.Monsters", "MonsterEnrage", new MhwMultiStructData(structs, 0));
+            GenerateMultiStructProps("MHW_Editor.Monsters", "MonsterEnrage", new MhwMultiStructData(structs));
         }
 
         private static void GenShellParam() { // .shlp
@@ -188,7 +188,7 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry("Unk 1", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Flags", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Unk 3", typeof(uint))
-                }),
+                }, canAddRows: true),
                 new MhwMultiStructData.StructData("Shlp (2)", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Particles: Ground Decal Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Particles: Ground Decal", typeof(uint)),
@@ -258,7 +258,7 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry("Sound: Condition 4", typeof(int)),
                     new MhwMultiStructData.StructData.Entry("Sound: Condition Header 5", typeof(int)),
                     new MhwMultiStructData.StructData.Entry("Sound: Condition 5", typeof(int)),
-                    new MhwMultiStructData.StructData.Entry("Header 2", typeof(uint)),
+                    new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Projectile: Entity Collider", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Projectile: Model Lifespan", typeof(float)),
                     new MhwMultiStructData.StructData.Entry("Projectile: Distance Range", typeof(uint)),
@@ -320,13 +320,13 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry("Unk 3", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Unk 4", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Unk 5", typeof(byte))
-                }),
+                }, canAddRows: true),
                 new MhwMultiStructData.StructData("Unknown", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint))
                 }, 1)
             };
 
-            GenerateMultiStructProps("MHW_Editor.Weapons", "ShellParam", new MhwMultiStructData(structs, 0, EncryptionKeys.FILE_EXT_KEY_LOOKUP[".shlp"]));
+            GenerateMultiStructProps("MHW_Editor.Weapons", "ShellParam", new MhwMultiStructData(structs, EncryptionKeys.FILE_EXT_KEY_LOOKUP[".shlp"]));
         }
 
         private static void GenSupplyData() { // .supp
@@ -357,7 +357,7 @@ namespace MHW_Generator {
                 }, 3)
             };
 
-            GenerateMultiStructProps("MHW_Editor.Items", "SupplyData", new MhwMultiStructData(structs, 0));
+            GenerateMultiStructProps("MHW_Editor.Items", "SupplyData", new MhwMultiStructData(structs));
         }
 
         public static void GenerateMultiStructProps(string @namespace, string className, MhwMultiStructData structData) {

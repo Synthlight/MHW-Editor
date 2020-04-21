@@ -22,9 +22,8 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace <#= _namespace #> {
-    public partial class <#= className #> : MhwMultiStructItem {
-        public const ulong InitialOffset = <#= structData.offsetInitial #>;
-        public const string EncryptionKey = <#= structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\"" #>;
+    public partial class <#= className #> {
+        public override string EncryptionKey => <#= structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\"" #>;
 <#
     var compiler = new CSharpCodeProvider();
 
@@ -36,10 +35,14 @@ namespace <#= _namespace #> {
         //WriteLine("        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode, Pack = 1)]");
         WriteLine($"        public partial class {name} : MhwStructItem{(@struct.showVertically ? ", IHasCustomView<MultiStructItemCustomView>" : "")} {{");
         WriteLine($"            public const ulong FixedSizeCount = {@struct.fixedSizeCount};");
-        WriteLine($"            public const string DisplayName = \"{@struct.name}\";");
+        WriteLine($"            public const string GridName = \"{@struct.name}\";");
 
         if (@struct.hidden) {
-            WriteLine($"            public const bool Hidden = {@struct.hidden.ToString().ToLower()};");
+            WriteLine($"            public const bool IsHidden = {@struct.hidden.ToString().ToLower()};");
+        }
+
+        if (@struct.canAddRows) {
+            WriteLine($"            public const bool IsAddingAllowed = {@struct.canAddRows.ToString().ToLower()};");
         }
 
         foreach (var entry in @struct.entries) {
@@ -173,14 +176,6 @@ namespace <#= _namespace #> {
             sortIndex += 50;
         }
 
-        // GetEntryCount.
-        if (@struct.fixedSizeCount > 0) {
-            WriteLine("");
-            WriteLine("            public static ulong GetEntryCount(List<MhwStructWrapper> data) {");
-            WriteLine("                return FixedSizeCount;");
-            WriteLine("            }");
-        }
-
         // Individual LoadData.
         WriteLine("");
         WriteLine($"            public static {name} LoadData(BinaryReader reader) {{");
@@ -251,31 +246,26 @@ namespace <#= _namespace #> {
         WriteLine("        }"); // Inner Class
     }
 
-    // Glue to give the encryption key to MhwMultiStructItem.
-    WriteLine("");
-    WriteLine("        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {");
-    WriteLine("            SaveData(data, targetFile, EncryptionKey);");
-    WriteLine("        }");
-
     // Master LoadData.
     WriteLine("");
-    WriteLine("        public static List<MhwStructWrapper> LoadData(string targetFile) {");
+    WriteLine("        public override void LoadFile(string targetFile) {");
     WriteLine("            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));");
-    WriteLine("            var data = new List<MhwStructWrapper>();");
-
+    WriteLine("            data = new List<MhwStructDataContainer>();");
+    WriteLine("            dataByType = new Dictionary<Type, MhwStructDataContainer>();");
     foreach (var @struct in structData.structs) {
         var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
 
-        WriteLine($"            var {name}_list = new List<object>();");
-        WriteLine($"            for (ulong i = 0; i < {name}.GetEntryCount(data); i++) {{");
+        WriteLine("");
+        WriteLine($"            var {name}_list = new ObservableCollection<object>();");
+        WriteLine($"            for (ulong i = 0; i < GetEntryCount(typeof({name})); i++) {{");
         WriteLine($"                var item = {name}.LoadData(reader);");
         WriteLine("                item.index = i;");
         WriteLine($"                {name}_list.Add(item);");
         WriteLine("            }");
-        WriteLine($"            data.Add(new MhwStructWrapper({name}_list, typeof({name})));");
+        WriteLine($"            var {name}_container = new MhwStructDataContainer({name}_list, typeof({name}));");
+        WriteLine($"            data.Add({name}_container);");
+        WriteLine($"            dataByType[typeof({name})] = {name}_container;");
     }
-
-    WriteLine("            return data;");
     WriteLine("        }");
 
     string GetReadType(Type type) {

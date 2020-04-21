@@ -744,12 +744,13 @@ namespace MHW_Editor {
             }
         }
 
-        public void AddDataGrid<T>(IEnumerable<T> itemSource) {
+        public DataGrid AddDataGrid<T>(IEnumerable<T> itemSource) {
             var control = new ContentControl {Content = Resources["ItemDataGrid"]};
             grid.AddControl(control);
             var dataGrid = ((DataGrid) control.Content);
-            dataGrid.ItemsSource = new ObservableCollection<T>(itemSource);
+            dataGrid.ItemsSource = itemSource is ObservableCollection<T> ? itemSource : new ObservableCollection<T>(itemSource);
             dataGrids.Add(dataGrid);
+            return dataGrid;
         }
 
         private void LoadFile() {

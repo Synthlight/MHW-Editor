@@ -6,6 +6,8 @@ using MHW_Editor.Weapons.Collision.Models;
 
 namespace MHW_Editor.Weapons.Collision {
     public partial class Collision : ICustomSaveLoad {
+        public string EncryptionKey { get; }
+
         public static void SetupViews(Models.Collision collision, Grid grid, MainWindow main) {
             if (MainWindow.showAll) {
                 grid.AddControl(new Label {Content = "Collision", FontSize = MainWindow.FONT_SIZE});
@@ -49,6 +51,12 @@ namespace MHW_Editor.Weapons.Collision {
                     main.AddDataGrid(collision.oapInner);
                 }
             }
+        }
+
+        public void LoadFile(string targetFile) {
+        }
+
+        public void SaveFile(string targetFile) {
         }
     }
 }

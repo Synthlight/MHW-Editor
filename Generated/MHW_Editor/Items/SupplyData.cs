@@ -10,13 +10,12 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Items {
-    public partial class SupplyData : MhwMultiStructItem {
-        public const ulong InitialOffset = 0;
-        public const string EncryptionKey = null;
+    public partial class SupplyData {
+        public override string EncryptionKey => null;
 
         public partial class Supply_Data : MhwStructItem {
             public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Supply Data";
+            public const string GridName = "Supply Data";
 
             protected uint Magic_1_raw;
             public const string Magic_1_displayName = "Magic 1";
@@ -77,10 +76,6 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Supply_Data LoadData(BinaryReader reader) {
                 var data = new Supply_Data();
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -100,7 +95,7 @@ namespace MHW_Editor.Items {
 
         public partial class Item_Box : MhwStructItem {
             public const ulong FixedSizeCount = 24;
-            public const string DisplayName = "Item Box";
+            public const string GridName = "Item Box";
 
             protected ushort Item_Id_raw;
             public const string Item_Id_displayName = "Item Id";
@@ -137,10 +132,6 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Item_Box LoadData(BinaryReader reader) {
                 var data = new Item_Box();
                 data.Item_Id_raw = reader.ReadUInt16();
@@ -156,7 +147,7 @@ namespace MHW_Editor.Items {
 
         public partial class Item_Box_Scaling : MhwStructItem {
             public const ulong FixedSizeCount = 3;
-            public const string DisplayName = "Item Box Scaling";
+            public const string GridName = "Item Box Scaling";
 
             protected byte Items_to_Show_raw;
             public const string Items_to_Show_displayName = "Items to Show";
@@ -172,10 +163,6 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Item_Box_Scaling LoadData(BinaryReader reader) {
                 var data = new Item_Box_Scaling();
                 data.Items_to_Show_raw = reader.ReadByte();
@@ -189,7 +176,7 @@ namespace MHW_Editor.Items {
 
         public partial class Ammo_Box : MhwStructItem {
             public const ulong FixedSizeCount = 16;
-            public const string DisplayName = "Ammo Box";
+            public const string GridName = "Ammo Box";
 
             protected ushort Ammo_Id_raw;
             public const string Ammo_Id_displayName = "Ammo Id";
@@ -226,10 +213,6 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Ammo_Box LoadData(BinaryReader reader) {
                 var data = new Ammo_Box();
                 data.Ammo_Id_raw = reader.ReadUInt16();
@@ -245,7 +228,7 @@ namespace MHW_Editor.Items {
 
         public partial class Ammo_Box_Scaling : MhwStructItem {
             public const ulong FixedSizeCount = 3;
-            public const string DisplayName = "Ammo Box Scaling";
+            public const string GridName = "Ammo Box Scaling";
 
             protected byte Ammo_Items_to_Show_raw;
             public const string Ammo_Items_to_Show_displayName = "Ammo Items to Show";
@@ -261,10 +244,6 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Ammo_Box_Scaling LoadData(BinaryReader reader) {
                 var data = new Ammo_Box_Scaling();
                 data.Ammo_Items_to_Show_raw = reader.ReadByte();
@@ -276,49 +255,60 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {
-            SaveData(data, targetFile, EncryptionKey);
-        }
-
-        public static List<MhwStructWrapper> LoadData(string targetFile) {
+        public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            var data = new List<MhwStructWrapper>();
-            var Supply_Data_list = new List<object>();
-            for (ulong i = 0; i < Supply_Data.GetEntryCount(data); i++) {
+            data = new List<MhwStructDataContainer>();
+            dataByType = new Dictionary<Type, MhwStructDataContainer>();
+
+            var Supply_Data_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Supply_Data)); i++) {
                 var item = Supply_Data.LoadData(reader);
                 item.index = i;
                 Supply_Data_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Supply_Data_list, typeof(Supply_Data)));
-            var Item_Box_list = new List<object>();
-            for (ulong i = 0; i < Item_Box.GetEntryCount(data); i++) {
+            var Supply_Data_container = new MhwStructDataContainer(Supply_Data_list, typeof(Supply_Data));
+            data.Add(Supply_Data_container);
+            dataByType[typeof(Supply_Data)] = Supply_Data_container;
+
+            var Item_Box_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Item_Box)); i++) {
                 var item = Item_Box.LoadData(reader);
                 item.index = i;
                 Item_Box_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Item_Box_list, typeof(Item_Box)));
-            var Item_Box_Scaling_list = new List<object>();
-            for (ulong i = 0; i < Item_Box_Scaling.GetEntryCount(data); i++) {
+            var Item_Box_container = new MhwStructDataContainer(Item_Box_list, typeof(Item_Box));
+            data.Add(Item_Box_container);
+            dataByType[typeof(Item_Box)] = Item_Box_container;
+
+            var Item_Box_Scaling_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Item_Box_Scaling)); i++) {
                 var item = Item_Box_Scaling.LoadData(reader);
                 item.index = i;
                 Item_Box_Scaling_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Item_Box_Scaling_list, typeof(Item_Box_Scaling)));
-            var Ammo_Box_list = new List<object>();
-            for (ulong i = 0; i < Ammo_Box.GetEntryCount(data); i++) {
+            var Item_Box_Scaling_container = new MhwStructDataContainer(Item_Box_Scaling_list, typeof(Item_Box_Scaling));
+            data.Add(Item_Box_Scaling_container);
+            dataByType[typeof(Item_Box_Scaling)] = Item_Box_Scaling_container;
+
+            var Ammo_Box_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Ammo_Box)); i++) {
                 var item = Ammo_Box.LoadData(reader);
                 item.index = i;
                 Ammo_Box_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Ammo_Box_list, typeof(Ammo_Box)));
-            var Ammo_Box_Scaling_list = new List<object>();
-            for (ulong i = 0; i < Ammo_Box_Scaling.GetEntryCount(data); i++) {
+            var Ammo_Box_container = new MhwStructDataContainer(Ammo_Box_list, typeof(Ammo_Box));
+            data.Add(Ammo_Box_container);
+            dataByType[typeof(Ammo_Box)] = Ammo_Box_container;
+
+            var Ammo_Box_Scaling_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Ammo_Box_Scaling)); i++) {
                 var item = Ammo_Box_Scaling.LoadData(reader);
                 item.index = i;
                 Ammo_Box_Scaling_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Ammo_Box_Scaling_list, typeof(Ammo_Box_Scaling)));
-            return data;
+            var Ammo_Box_Scaling_container = new MhwStructDataContainer(Ammo_Box_Scaling_list, typeof(Ammo_Box_Scaling));
+            data.Add(Ammo_Box_Scaling_container);
+            dataByType[typeof(Ammo_Box_Scaling)] = Ammo_Box_Scaling_container;
         }
     }
 }

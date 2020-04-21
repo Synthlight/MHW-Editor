@@ -10,13 +10,12 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Monsters {
-    public partial class MonsterRandomSize : MhwMultiStructItem {
-        public const ulong InitialOffset = 0;
-        public const string EncryptionKey = null;
+    public partial class MonsterRandomSize {
+        public override string EncryptionKey => null;
 
         public partial class Monster_Random_Sizes : MhwStructItem {
             public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Monster Random Sizes";
+            public const string GridName = "Monster Random Sizes";
 
             protected uint Magic_1_raw;
             public const string Magic_1_displayName = "Magic 1";
@@ -63,10 +62,6 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Monster_Random_Sizes LoadData(BinaryReader reader) {
                 var data = new Monster_Random_Sizes();
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -84,7 +79,8 @@ namespace MHW_Editor.Monsters {
 
         public partial class Monsters : MhwStructItem {
             public const ulong FixedSizeCount = 0;
-            public const string DisplayName = "Monsters";
+            public const string GridName = "Monsters";
+            public const bool IsAddingAllowed = true;
 
             protected uint Monster_Id_raw;
             public const string Monster_Id_displayName = "Monster Id";
@@ -178,8 +174,8 @@ namespace MHW_Editor.Monsters {
 
         public partial class Crown_Table_Count : MhwStructItem {
             public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Crown Table Count";
-            public const bool Hidden = true;
+            public const string GridName = "Crown Table Count";
+            public const bool IsHidden = true;
 
             protected uint Number_of_Crown_Tables_raw;
             public const string Number_of_Crown_Tables_displayName = "Number of Crown Tables";
@@ -196,10 +192,6 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Crown_Table_Count LoadData(BinaryReader reader) {
                 var data = new Crown_Table_Count();
                 data.Number_of_Crown_Tables_raw = reader.ReadUInt32();
@@ -213,7 +205,8 @@ namespace MHW_Editor.Monsters {
 
         public partial class Crown_Tables : MhwStructItem {
             public const ulong FixedSizeCount = 0;
-            public const string DisplayName = "Crown Tables";
+            public const string GridName = "Crown Tables";
+            public const bool IsAddingAllowed = true;
 
             protected string Name_Jap__raw;
             public const string Name_Jap__displayName = "Name (Jap)";
@@ -1456,42 +1449,50 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {
-            SaveData(data, targetFile, EncryptionKey);
-        }
-
-        public static List<MhwStructWrapper> LoadData(string targetFile) {
+        public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            var data = new List<MhwStructWrapper>();
-            var Monster_Random_Sizes_list = new List<object>();
-            for (ulong i = 0; i < Monster_Random_Sizes.GetEntryCount(data); i++) {
+            data = new List<MhwStructDataContainer>();
+            dataByType = new Dictionary<Type, MhwStructDataContainer>();
+
+            var Monster_Random_Sizes_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Monster_Random_Sizes)); i++) {
                 var item = Monster_Random_Sizes.LoadData(reader);
                 item.index = i;
                 Monster_Random_Sizes_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Monster_Random_Sizes_list, typeof(Monster_Random_Sizes)));
-            var Monsters_list = new List<object>();
-            for (ulong i = 0; i < Monsters.GetEntryCount(data); i++) {
+            var Monster_Random_Sizes_container = new MhwStructDataContainer(Monster_Random_Sizes_list, typeof(Monster_Random_Sizes));
+            data.Add(Monster_Random_Sizes_container);
+            dataByType[typeof(Monster_Random_Sizes)] = Monster_Random_Sizes_container;
+
+            var Monsters_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Monsters)); i++) {
                 var item = Monsters.LoadData(reader);
                 item.index = i;
                 Monsters_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Monsters_list, typeof(Monsters)));
-            var Crown_Table_Count_list = new List<object>();
-            for (ulong i = 0; i < Crown_Table_Count.GetEntryCount(data); i++) {
+            var Monsters_container = new MhwStructDataContainer(Monsters_list, typeof(Monsters));
+            data.Add(Monsters_container);
+            dataByType[typeof(Monsters)] = Monsters_container;
+
+            var Crown_Table_Count_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Crown_Table_Count)); i++) {
                 var item = Crown_Table_Count.LoadData(reader);
                 item.index = i;
                 Crown_Table_Count_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Crown_Table_Count_list, typeof(Crown_Table_Count)));
-            var Crown_Tables_list = new List<object>();
-            for (ulong i = 0; i < Crown_Tables.GetEntryCount(data); i++) {
+            var Crown_Table_Count_container = new MhwStructDataContainer(Crown_Table_Count_list, typeof(Crown_Table_Count));
+            data.Add(Crown_Table_Count_container);
+            dataByType[typeof(Crown_Table_Count)] = Crown_Table_Count_container;
+
+            var Crown_Tables_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Crown_Tables)); i++) {
                 var item = Crown_Tables.LoadData(reader);
                 item.index = i;
                 Crown_Tables_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Crown_Tables_list, typeof(Crown_Tables)));
-            return data;
+            var Crown_Tables_container = new MhwStructDataContainer(Crown_Tables_list, typeof(Crown_Tables));
+            data.Add(Crown_Tables_container);
+            dataByType[typeof(Crown_Tables)] = Crown_Tables_container;
         }
     }
 }

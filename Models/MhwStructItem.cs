@@ -9,6 +9,7 @@ namespace MHW_Editor.Models {
         public event PropertyChangedEventHandler PropertyChanged;
 
         public ulong index;
+
         [SortOrder(10)]
         public virtual ulong Index => index;
 

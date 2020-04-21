@@ -1,33 +1,61 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
+using System.Windows;
 using System.Windows.Controls;
 using JetBrains.Annotations;
 
 namespace MHW_Editor.Models {
-    public abstract class MhwMultiStructItem : IMhwMultiStructItem {
-        [UsedImplicitly]
-        public static void SetupViews(List<MhwStructWrapper> data, Grid grid, MainWindow main) {
-            foreach (var entry in data) {
-                if (IsHidden(entry)) continue;
+    public abstract class MhwMultiStructItem<T> : CustomSaveLoad<T>, ICustomSaveLoad, IMhwMultiStructItem where T : ICustomSaveLoad, IMhwMultiStructItem, new() {
+        public List<MhwStructDataContainer> data { get; protected set; }
+        public Dictionary<Type, MhwStructDataContainer> dataByType { get; protected set; }
 
-                grid.AddControl(new Label {Content = GetLabel(entry), FontSize = MainWindow.FONT_SIZE});
+        public abstract string EncryptionKey { get; }
+
+        [UsedImplicitly]
+        public static void SetupViews(T instance, Grid grid, MainWindow main) {
+            foreach (var entry in instance.data) {
+                if (entry.IsHidden) continue;
+
+                if (entry.IsAddingAllowed) {
+                    var panel = new StackPanel {Orientation = Orientation.Horizontal};
+                    panel.Children.Add(new Label {Content = entry.GridName, FontSize = MainWindow.FONT_SIZE, HorizontalAlignment = HorizontalAlignment.Left});
+                    var button = new Button {Content = "Add Row", HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Center};
+                    button.Click += entry.Add_Click;
+                    panel.Children.Add(button);
+                    grid.AddControl(panel);
+                } else {
+                    grid.AddControl(new Label {Content = entry.GridName, FontSize = MainWindow.FONT_SIZE});
+                }
 
                 if (entry.type.IsGeneric(typeof(IHasCustomView<>))) {
                     main.AddDataGrid(((IHasCustomView<MultiStructItemCustomView>) entry.list[0]).GetCustomView());
                 } else {
-                    main.AddDataGrid(entry.list);
+                    var dataGrid = main.AddDataGrid(entry.list);
+                    dataGrid.CanUserDeleteRows = entry.IsAddingAllowed;
                 }
             }
         }
 
-        protected static bool IsHidden(MhwStructWrapper entry) {
-            return (bool) (entry.type.GetField("Hidden", BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
+        protected R GetFirstEntry<R>() {
+            var dataContainer = dataByType[typeof(R)];
+            return (R) dataContainer.list[0];
         }
 
-        protected static string GetLabel(MhwStructWrapper entry) {
-            return (string) entry.type.GetField("DisplayName", BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null);
+        protected MhwStructDataContainer GetDataContainer<R>() {
+            return dataByType[typeof(R)];
+        }
+
+        public abstract void LoadFile(string targetFile);
+
+        protected virtual ulong GetEntryCount(Type type) {
+            return GetFixedSizeCount(type);
+        }
+
+        private static ulong GetFixedSizeCount(Type type) {
+            return (ulong) (type.GetField("FixedSizeCount", BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
         }
 
         protected static Stream OpenFile(string targetFile, string encryptionKey) {
@@ -41,7 +69,9 @@ namespace MHW_Editor.Models {
             }
         }
 
-        protected static void SaveData(List<MhwStructWrapper> data, string targetFile, string encryptionKey) {
+        public void SaveFile(string targetFile) {
+            PrepSave();
+
             using var memoryStream = new MemoryStream();
             using var writer = new BinaryWriter(memoryStream, Encoding.ASCII, true);
             foreach (var entry in data) {
@@ -58,16 +88,19 @@ namespace MHW_Editor.Models {
                 }
             }
 
-            SaveFile(targetFile, memoryStream, encryptionKey);
+            SaveFile(targetFile, memoryStream);
         }
 
-        private static void SaveFile(string targetFile, MemoryStream stream, string encryptionKey) {
+        protected virtual void PrepSave() {
+        }
+
+        private void SaveFile(string targetFile, MemoryStream stream) {
             stream.Seek(0, SeekOrigin.Begin);
 
-            if (encryptionKey == null) {
+            if (EncryptionKey == null) {
                 File.WriteAllBytes(targetFile, stream.ToArray());
             } else {
-                var encryptedBytes = EncryptionHelper.Encrypt(encryptionKey, stream);
+                var encryptedBytes = EncryptionHelper.Encrypt(EncryptionKey, stream);
                 File.WriteAllBytes(targetFile, encryptedBytes);
             }
         }

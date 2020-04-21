@@ -1,7 +1,7 @@
 ﻿using MHW_Editor.Models;
 
 namespace MHW_Editor.Items {
-    public partial class SupplyData : ICustomSaveLoad {
+    public partial class SupplyData : MhwMultiStructItem<SupplyData> {
         public partial class Item_Box_Scaling {
             public string Name {
                 get {

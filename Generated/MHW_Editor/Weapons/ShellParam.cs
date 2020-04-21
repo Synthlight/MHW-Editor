@@ -10,13 +10,12 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Weapons {
-    public partial class ShellParam : MhwMultiStructItem {
-        public const ulong InitialOffset = 0;
-        public const string EncryptionKey = "FZoS8QLyOyeFmkdrz73P9Fh2N4NcTwy3QQPjc1YRII5KWovK6yFuU8SL";
+    public partial class ShellParam {
+        public override string EncryptionKey => "FZoS8QLyOyeFmkdrz73P9Fh2N4NcTwy3QQPjc1YRII5KWovK6yFuU8SL";
 
         public partial class Shlp : MhwStructItem {
             public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Shlp";
+            public const string GridName = "Shlp";
 
             protected uint Magic_1_raw;
             public const string Magic_1_displayName = "Magic 1";
@@ -63,10 +62,6 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Shlp LoadData(BinaryReader reader) {
                 var data = new Shlp();
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -84,7 +79,7 @@ namespace MHW_Editor.Weapons {
 
         public partial class Assets : MhwStructItem {
             public const ulong FixedSizeCount = 25;
-            public const string DisplayName = "Assets";
+            public const string GridName = "Assets";
 
             protected uint Header_raw;
             public const string Header_displayName = "Header";
@@ -114,10 +109,6 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Assets LoadData(BinaryReader reader) {
                 var data = new Assets();
                 data.Header_raw = reader.ReadUInt32();
@@ -133,7 +124,7 @@ namespace MHW_Editor.Weapons {
 
         public partial class Shlp_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
             public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Shlp (1)";
+            public const string GridName = "Shlp (1)";
 
             protected uint Particles_Projectile_Header_raw;
             public const string Particles_Projectile_Header_displayName = "Particles: Projectile Header";
@@ -345,10 +336,6 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Shlp_1_ LoadData(BinaryReader reader) {
                 var data = new Shlp_1_();
                 data.Particles_Projectile_Header_raw = reader.ReadUInt32();
@@ -410,8 +397,8 @@ namespace MHW_Editor.Weapons {
 
         public partial class Number_of_Linked_Shell_Params_Holder : MhwStructItem {
             public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Number of Linked Shell Params Holder";
-            public const bool Hidden = true;
+            public const string GridName = "Number of Linked Shell Params Holder";
+            public const bool IsHidden = true;
 
             protected uint Number_of_Linked_Shell_Params_raw;
             public const string Number_of_Linked_Shell_Params_displayName = "Number of Linked Shell Params";
@@ -428,10 +415,6 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Number_of_Linked_Shell_Params_Holder LoadData(BinaryReader reader) {
                 var data = new Number_of_Linked_Shell_Params_Holder();
                 data.Number_of_Linked_Shell_Params_raw = reader.ReadUInt32();
@@ -445,7 +428,8 @@ namespace MHW_Editor.Weapons {
 
         public partial class Linked_Shell_Params : MhwStructItem {
             public const ulong FixedSizeCount = 0;
-            public const string DisplayName = "Linked Shell Params";
+            public const string GridName = "Linked Shell Params";
+            public const bool IsAddingAllowed = true;
 
             protected uint Header_raw;
             public const string Header_displayName = "Header";
@@ -538,7 +522,7 @@ namespace MHW_Editor.Weapons {
 
         public partial class Shlp_2_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
             public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Shlp (2)";
+            public const string GridName = "Shlp (2)";
 
             protected uint Particles_Ground_Decal_Header_raw;
             public const string Particles_Ground_Decal_Header_displayName = "Particles: Ground Decal Header";
@@ -1492,17 +1476,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected uint Header_2_raw;
-            public const string Header_2_displayName = "Header 2";
-            public const int Header_2_sortIndex = 3450;
-            [SortOrder(Header_2_sortIndex)]
-            [DisplayName(Header_2_displayName)]
-            public virtual uint Header_2 {
-                get => Header_2_raw;
+            protected uint Header_raw;
+            public const string Header_displayName = "Header";
+            public const int Header_sortIndex = 3450;
+            [SortOrder(Header_sortIndex)]
+            [DisplayName(Header_displayName)]
+            public virtual uint Header {
+                get => Header_raw;
                 set {
-                    if (Header_2_raw == value) return;
-                    Header_2_raw = value;
-                    OnPropertyChanged(nameof(Header_2));
+                    if (Header_raw == value) return;
+                    Header_raw = value;
+                    OnPropertyChanged(nameof(Header));
                 }
             }
 
@@ -2024,10 +2008,6 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Shlp_2_ LoadData(BinaryReader reader) {
                 var data = new Shlp_2_();
                 data.Particles_Ground_Decal_Header_raw = reader.ReadUInt32();
@@ -2098,7 +2078,7 @@ namespace MHW_Editor.Weapons {
                 data.Sound_Condition_4_raw = reader.ReadInt32();
                 data.Sound_Condition_Header_5_raw = reader.ReadInt32();
                 data.Sound_Condition_5_raw = reader.ReadInt32();
-                data.Header_2_raw = reader.ReadUInt32();
+                data.Header_raw = reader.ReadUInt32();
                 data.Projectile_Entity_Collider_raw = reader.ReadUInt32();
                 data.Projectile_Model_Lifespan_raw = reader.ReadSingle();
                 data.Projectile_Distance_Range_raw = reader.ReadUInt32();
@@ -2208,7 +2188,7 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Sound_Condition_4_raw);
                 writer.Write(Sound_Condition_Header_5_raw);
                 writer.Write(Sound_Condition_5_raw);
-                writer.Write(Header_2_raw);
+                writer.Write(Header_raw);
                 writer.Write(Projectile_Entity_Collider_raw);
                 writer.Write(Projectile_Model_Lifespan_raw);
                 writer.Write(Projectile_Distance_Range_raw);
@@ -2318,7 +2298,7 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Sound: Condition 4", "Sound_Condition_4"),
                     new MultiStructItemCustomView(this, "Sound: Condition Header 5", "Sound_Condition_Header_5"),
                     new MultiStructItemCustomView(this, "Sound: Condition 5", "Sound_Condition_5"),
-                    new MultiStructItemCustomView(this, "Header 2", "Header_2"),
+                    new MultiStructItemCustomView(this, "Header", "Header"),
                     new MultiStructItemCustomView(this, "Projectile: Entity Collider", "Projectile_Entity_Collider"),
                     new MultiStructItemCustomView(this, "Projectile: Model Lifespan", "Projectile_Model_Lifespan"),
                     new MultiStructItemCustomView(this, "Projectile: Distance Range", "Projectile_Distance_Range"),
@@ -2362,8 +2342,8 @@ namespace MHW_Editor.Weapons {
 
         public partial class Number_of_Modifiers_Holder : MhwStructItem {
             public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Number of Modifiers Holder";
-            public const bool Hidden = true;
+            public const string GridName = "Number of Modifiers Holder";
+            public const bool IsHidden = true;
 
             protected uint Number_of_Modifiers_raw;
             public const string Number_of_Modifiers_displayName = "Number of Modifiers";
@@ -2380,10 +2360,6 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Number_of_Modifiers_Holder LoadData(BinaryReader reader) {
                 var data = new Number_of_Modifiers_Holder();
                 data.Number_of_Modifiers_raw = reader.ReadUInt32();
@@ -2397,7 +2373,8 @@ namespace MHW_Editor.Weapons {
 
         public partial class Modifiers : MhwStructItem {
             public const ulong FixedSizeCount = 0;
-            public const string DisplayName = "Modifiers";
+            public const string GridName = "Modifiers";
+            public const bool IsAddingAllowed = true;
 
             protected uint Header_raw;
             public const string Header_displayName = "Header";
@@ -2714,7 +2691,7 @@ namespace MHW_Editor.Weapons {
 
         public partial class Unknown : MhwStructItem {
             public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Unknown";
+            public const string GridName = "Unknown";
 
             protected uint Unk_59_raw;
             public const string Unk_59_displayName = "Unk 59";
@@ -2730,10 +2707,6 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Unknown LoadData(BinaryReader reader) {
                 var data = new Unknown();
                 data.Unk_59_raw = reader.ReadUInt32();
@@ -2745,77 +2718,100 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {
-            SaveData(data, targetFile, EncryptionKey);
-        }
-
-        public static List<MhwStructWrapper> LoadData(string targetFile) {
+        public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            var data = new List<MhwStructWrapper>();
-            var Shlp_list = new List<object>();
-            for (ulong i = 0; i < Shlp.GetEntryCount(data); i++) {
+            data = new List<MhwStructDataContainer>();
+            dataByType = new Dictionary<Type, MhwStructDataContainer>();
+
+            var Shlp_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Shlp)); i++) {
                 var item = Shlp.LoadData(reader);
                 item.index = i;
                 Shlp_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Shlp_list, typeof(Shlp)));
-            var Assets_list = new List<object>();
-            for (ulong i = 0; i < Assets.GetEntryCount(data); i++) {
+            var Shlp_container = new MhwStructDataContainer(Shlp_list, typeof(Shlp));
+            data.Add(Shlp_container);
+            dataByType[typeof(Shlp)] = Shlp_container;
+
+            var Assets_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Assets)); i++) {
                 var item = Assets.LoadData(reader);
                 item.index = i;
                 Assets_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Assets_list, typeof(Assets)));
-            var Shlp_1__list = new List<object>();
-            for (ulong i = 0; i < Shlp_1_.GetEntryCount(data); i++) {
+            var Assets_container = new MhwStructDataContainer(Assets_list, typeof(Assets));
+            data.Add(Assets_container);
+            dataByType[typeof(Assets)] = Assets_container;
+
+            var Shlp_1__list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Shlp_1_)); i++) {
                 var item = Shlp_1_.LoadData(reader);
                 item.index = i;
                 Shlp_1__list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Shlp_1__list, typeof(Shlp_1_)));
-            var Number_of_Linked_Shell_Params_Holder_list = new List<object>();
-            for (ulong i = 0; i < Number_of_Linked_Shell_Params_Holder.GetEntryCount(data); i++) {
+            var Shlp_1__container = new MhwStructDataContainer(Shlp_1__list, typeof(Shlp_1_));
+            data.Add(Shlp_1__container);
+            dataByType[typeof(Shlp_1_)] = Shlp_1__container;
+
+            var Number_of_Linked_Shell_Params_Holder_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Number_of_Linked_Shell_Params_Holder)); i++) {
                 var item = Number_of_Linked_Shell_Params_Holder.LoadData(reader);
                 item.index = i;
                 Number_of_Linked_Shell_Params_Holder_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Number_of_Linked_Shell_Params_Holder_list, typeof(Number_of_Linked_Shell_Params_Holder)));
-            var Linked_Shell_Params_list = new List<object>();
-            for (ulong i = 0; i < Linked_Shell_Params.GetEntryCount(data); i++) {
+            var Number_of_Linked_Shell_Params_Holder_container = new MhwStructDataContainer(Number_of_Linked_Shell_Params_Holder_list, typeof(Number_of_Linked_Shell_Params_Holder));
+            data.Add(Number_of_Linked_Shell_Params_Holder_container);
+            dataByType[typeof(Number_of_Linked_Shell_Params_Holder)] = Number_of_Linked_Shell_Params_Holder_container;
+
+            var Linked_Shell_Params_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Linked_Shell_Params)); i++) {
                 var item = Linked_Shell_Params.LoadData(reader);
                 item.index = i;
                 Linked_Shell_Params_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Linked_Shell_Params_list, typeof(Linked_Shell_Params)));
-            var Shlp_2__list = new List<object>();
-            for (ulong i = 0; i < Shlp_2_.GetEntryCount(data); i++) {
+            var Linked_Shell_Params_container = new MhwStructDataContainer(Linked_Shell_Params_list, typeof(Linked_Shell_Params));
+            data.Add(Linked_Shell_Params_container);
+            dataByType[typeof(Linked_Shell_Params)] = Linked_Shell_Params_container;
+
+            var Shlp_2__list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Shlp_2_)); i++) {
                 var item = Shlp_2_.LoadData(reader);
                 item.index = i;
                 Shlp_2__list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Shlp_2__list, typeof(Shlp_2_)));
-            var Number_of_Modifiers_Holder_list = new List<object>();
-            for (ulong i = 0; i < Number_of_Modifiers_Holder.GetEntryCount(data); i++) {
+            var Shlp_2__container = new MhwStructDataContainer(Shlp_2__list, typeof(Shlp_2_));
+            data.Add(Shlp_2__container);
+            dataByType[typeof(Shlp_2_)] = Shlp_2__container;
+
+            var Number_of_Modifiers_Holder_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Number_of_Modifiers_Holder)); i++) {
                 var item = Number_of_Modifiers_Holder.LoadData(reader);
                 item.index = i;
                 Number_of_Modifiers_Holder_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Number_of_Modifiers_Holder_list, typeof(Number_of_Modifiers_Holder)));
-            var Modifiers_list = new List<object>();
-            for (ulong i = 0; i < Modifiers.GetEntryCount(data); i++) {
+            var Number_of_Modifiers_Holder_container = new MhwStructDataContainer(Number_of_Modifiers_Holder_list, typeof(Number_of_Modifiers_Holder));
+            data.Add(Number_of_Modifiers_Holder_container);
+            dataByType[typeof(Number_of_Modifiers_Holder)] = Number_of_Modifiers_Holder_container;
+
+            var Modifiers_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Modifiers)); i++) {
                 var item = Modifiers.LoadData(reader);
                 item.index = i;
                 Modifiers_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Modifiers_list, typeof(Modifiers)));
-            var Unknown_list = new List<object>();
-            for (ulong i = 0; i < Unknown.GetEntryCount(data); i++) {
+            var Modifiers_container = new MhwStructDataContainer(Modifiers_list, typeof(Modifiers));
+            data.Add(Modifiers_container);
+            dataByType[typeof(Modifiers)] = Modifiers_container;
+
+            var Unknown_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Unknown)); i++) {
                 var item = Unknown.LoadData(reader);
                 item.index = i;
                 Unknown_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Unknown_list, typeof(Unknown)));
-            return data;
+            var Unknown_container = new MhwStructDataContainer(Unknown_list, typeof(Unknown));
+            data.Add(Unknown_container);
+            dataByType[typeof(Unknown)] = Unknown_container;
         }
     }
 }

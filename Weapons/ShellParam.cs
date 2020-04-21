@@ -1,8 +1,25 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons {
-    public partial class ShellParam : ICustomSaveLoad {
+    public partial class ShellParam : MhwMultiStructItem<ShellParam> {
+        protected override ulong GetEntryCount(Type type) {
+            if (type == typeof(Linked_Shell_Params)) {
+                return GetFirstEntry<Number_of_Linked_Shell_Params_Holder>().Number_of_Linked_Shell_Params;
+            }
+
+            if (type == typeof(Modifiers)) {
+                return GetFirstEntry<Number_of_Modifiers_Holder>().Number_of_Modifiers;
+            }
+
+            return base.GetEntryCount(type);
+        }
+
+        protected override void PrepSave() {
+            GetFirstEntry<Number_of_Linked_Shell_Params_Holder>().Number_of_Linked_Shell_Params = (uint) GetDataContainer<Linked_Shell_Params>().list.Count;
+            GetFirstEntry<Number_of_Modifiers_Holder>().Number_of_Modifiers = (uint) GetDataContainer<Modifiers>().list.Count;
+        }
+
         public partial class Assets {
             public string Name {
                 get {
@@ -35,18 +52,6 @@ namespace MHW_Editor.Weapons {
                         _ => "Unknown"
                     };
                 }
-            }
-        }
-
-        public partial class Linked_Shell_Params {
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return data.GetEntry<Number_of_Linked_Shell_Params_Holder>(typeof(Number_of_Linked_Shell_Params_Holder))?.Number_of_Linked_Shell_Params ?? 0;
-            }
-        }
-
-        public partial class Modifiers {
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return data.GetEntry<Number_of_Modifiers_Holder>(typeof(Number_of_Modifiers_Holder))?.Number_of_Modifiers ?? 0;
             }
         }
     }

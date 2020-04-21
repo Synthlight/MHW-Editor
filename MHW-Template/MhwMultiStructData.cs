@@ -5,12 +5,10 @@ using MHW_Template.Models;
 namespace MHW_Template {
     public class MhwMultiStructData {
         public readonly List<StructData> structs;
-        public readonly ulong offsetInitial;
         public readonly string encryptionKey;
 
-        public MhwMultiStructData(List<StructData> structs, ulong offsetInitial, string encryptionKey = null) {
+        public MhwMultiStructData(List<StructData> structs, string encryptionKey = null) {
             this.structs = structs;
-            this.offsetInitial = offsetInitial;
             this.encryptionKey = encryptionKey;
         }
 
@@ -20,13 +18,15 @@ namespace MHW_Template {
             public readonly uint fixedSizeCount; // If we know the number of times the struct repeats. Anything > 0 is handled automatically. If 0 you have to implement the GetCount method.
             public readonly bool hidden;
             public readonly bool showVertically; // Show the struct as a vertical list of stuff?
+            public readonly bool canAddRows;
 
-            public StructData(string name, List<Entry> entries, uint fixedSizeCount = 0, bool hidden = false, bool showVertically = false) {
+            public StructData(string name, List<Entry> entries, uint fixedSizeCount = 0, bool hidden = false, bool showVertically = false, bool canAddRows = false) {
                 this.name = name;
                 this.entries = entries;
                 this.fixedSizeCount = fixedSizeCount;
                 this.hidden = hidden;
                 this.showVertically = showVertically;
+                this.canAddRows = canAddRows;
             }
 
             public class Entry {

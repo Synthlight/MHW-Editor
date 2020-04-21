@@ -55,23 +55,16 @@ namespace ");
             
             #line default
             #line hidden
-            this.Write(" : MhwMultiStructItem {\r\n        public const ulong InitialOffset = ");
+            this.Write(" {\r\n        public override string EncryptionKey => ");
             
             #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(structData.offsetInitial));
-            
-            #line default
-            #line hidden
-            this.Write(";\r\n        public const string EncryptionKey = ");
-            
-            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\""));
             
             #line default
             #line hidden
             this.Write(";\r\n");
             
-            #line 28 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
 
     var compiler = new CSharpCodeProvider();
 
@@ -83,10 +76,14 @@ namespace ");
         //WriteLine("        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode, Pack = 1)]");
         WriteLine($"        public partial class {name} : MhwStructItem{(@struct.showVertically ? ", IHasCustomView<MultiStructItemCustomView>" : "")} {{");
         WriteLine($"            public const ulong FixedSizeCount = {@struct.fixedSizeCount};");
-        WriteLine($"            public const string DisplayName = \"{@struct.name}\";");
+        WriteLine($"            public const string GridName = \"{@struct.name}\";");
 
         if (@struct.hidden) {
-            WriteLine($"            public const bool Hidden = {@struct.hidden.ToString().ToLower()};");
+            WriteLine($"            public const bool IsHidden = {@struct.hidden.ToString().ToLower()};");
+        }
+
+        if (@struct.canAddRows) {
+            WriteLine($"            public const bool IsAddingAllowed = {@struct.canAddRows.ToString().ToLower()};");
         }
 
         foreach (var entry in @struct.entries) {
@@ -220,14 +217,6 @@ namespace ");
             sortIndex += 50;
         }
 
-        // GetEntryCount.
-        if (@struct.fixedSizeCount > 0) {
-            WriteLine("");
-            WriteLine("            public static ulong GetEntryCount(List<MhwStructWrapper> data) {");
-            WriteLine("                return FixedSizeCount;");
-            WriteLine("            }");
-        }
-
         // Individual LoadData.
         WriteLine("");
         WriteLine($"            public static {name} LoadData(BinaryReader reader) {{");
@@ -298,31 +287,26 @@ namespace ");
         WriteLine("        }"); // Inner Class
     }
 
-    // Glue to give the encryption key to MhwMultiStructItem.
-    WriteLine("");
-    WriteLine("        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {");
-    WriteLine("            SaveData(data, targetFile, EncryptionKey);");
-    WriteLine("        }");
-
     // Master LoadData.
     WriteLine("");
-    WriteLine("        public static List<MhwStructWrapper> LoadData(string targetFile) {");
+    WriteLine("        public override void LoadFile(string targetFile) {");
     WriteLine("            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));");
-    WriteLine("            var data = new List<MhwStructWrapper>();");
-
+    WriteLine("            data = new List<MhwStructDataContainer>();");
+    WriteLine("            dataByType = new Dictionary<Type, MhwStructDataContainer>();");
     foreach (var @struct in structData.structs) {
         var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
 
-        WriteLine($"            var {name}_list = new List<object>();");
-        WriteLine($"            for (ulong i = 0; i < {name}.GetEntryCount(data); i++) {{");
+        WriteLine("");
+        WriteLine($"            var {name}_list = new ObservableCollection<object>();");
+        WriteLine($"            for (ulong i = 0; i < GetEntryCount(typeof({name})); i++) {{");
         WriteLine($"                var item = {name}.LoadData(reader);");
         WriteLine("                item.index = i;");
         WriteLine($"                {name}_list.Add(item);");
         WriteLine("            }");
-        WriteLine($"            data.Add(new MhwStructWrapper({name}_list, typeof({name})));");
+        WriteLine($"            var {name}_container = new MhwStructDataContainer({name}_list, typeof({name}));");
+        WriteLine($"            data.Add({name}_container);");
+        WriteLine($"            dataByType[typeof({name})] = {name}_container;");
     }
-
-    WriteLine("            return data;");
     WriteLine("        }");
 
     string GetReadType(Type type) {

@@ -10,13 +10,12 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Monsters {
-    public partial class MonsterEnrage : MhwMultiStructItem {
-        public const ulong InitialOffset = 0;
-        public const string EncryptionKey = null;
+    public partial class MonsterEnrage {
+        public override string EncryptionKey => null;
 
         public partial class Monster_Rage : MhwStructItem {
             public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Monster Rage";
+            public const string GridName = "Monster Rage";
 
             protected uint Magic_1_raw;
             public const string Magic_1_displayName = "Magic 1";
@@ -77,10 +76,6 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Monster_Rage LoadData(BinaryReader reader) {
                 var data = new Monster_Rage();
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -100,7 +95,7 @@ namespace MHW_Editor.Monsters {
 
         public partial class Rage_Stats : MhwStructItem {
             public const ulong FixedSizeCount = 2;
-            public const string DisplayName = "Rage Stats";
+            public const string GridName = "Rage Stats";
 
             protected int Build_to_Trigger_raw;
             public const string Build_to_Trigger_displayName = "Build to Trigger";
@@ -326,10 +321,6 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
-                return FixedSizeCount;
-            }
-
             public static Rage_Stats LoadData(BinaryReader reader) {
                 var data = new Rage_Stats();
                 data.Build_to_Trigger_raw = reader.ReadInt32();
@@ -371,28 +362,30 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {
-            SaveData(data, targetFile, EncryptionKey);
-        }
-
-        public static List<MhwStructWrapper> LoadData(string targetFile) {
+        public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            var data = new List<MhwStructWrapper>();
-            var Monster_Rage_list = new List<object>();
-            for (ulong i = 0; i < Monster_Rage.GetEntryCount(data); i++) {
+            data = new List<MhwStructDataContainer>();
+            dataByType = new Dictionary<Type, MhwStructDataContainer>();
+
+            var Monster_Rage_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Monster_Rage)); i++) {
                 var item = Monster_Rage.LoadData(reader);
                 item.index = i;
                 Monster_Rage_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Monster_Rage_list, typeof(Monster_Rage)));
-            var Rage_Stats_list = new List<object>();
-            for (ulong i = 0; i < Rage_Stats.GetEntryCount(data); i++) {
+            var Monster_Rage_container = new MhwStructDataContainer(Monster_Rage_list, typeof(Monster_Rage));
+            data.Add(Monster_Rage_container);
+            dataByType[typeof(Monster_Rage)] = Monster_Rage_container;
+
+            var Rage_Stats_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Rage_Stats)); i++) {
                 var item = Rage_Stats.LoadData(reader);
                 item.index = i;
                 Rage_Stats_list.Add(item);
             }
-            data.Add(new MhwStructWrapper(Rage_Stats_list, typeof(Rage_Stats)));
-            return data;
+            var Rage_Stats_container = new MhwStructDataContainer(Rage_Stats_list, typeof(Rage_Stats));
+            data.Add(Rage_Stats_container);
+            dataByType[typeof(Rage_Stats)] = Rage_Stats_container;
         }
     }
 }
