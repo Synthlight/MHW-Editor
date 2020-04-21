@@ -2011,6 +2011,7 @@ namespace MHW_Editor.Weapons {
             public const int Number_of_Modifiers_sortIndex = 5350;
             [SortOrder(Number_of_Modifiers_sortIndex)]
             [DisplayName(Number_of_Modifiers_displayName)]
+            [IsReadOnly]
             public virtual uint Number_of_Modifiers {
                 get => Number_of_Modifiers_raw;
                 set {

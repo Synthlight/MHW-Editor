@@ -11,6 +11,7 @@ namespace MHW_Editor.Models {
         private readonly MethodInfo getMethod;
         private readonly MethodInfo setMethod;
         private readonly Type propertyType;
+        private readonly bool isReadOnly;
 
         public MultiStructItemCustomView(IHasCustomView<MultiStructItemCustomView> parent, string name, string propertyName) {
             this.parent = parent;
@@ -22,6 +23,8 @@ namespace MHW_Editor.Models {
             propertyType = property.PropertyType;
             getMethod = property.GetGetMethod();
             setMethod = property.GetSetMethod();
+
+            isReadOnly = (IsReadOnlyAttribute) property.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
         }
 
         [SortOrder(0)]
@@ -39,7 +42,7 @@ namespace MHW_Editor.Models {
                 return Convert.ChangeType(value, typeof(object));
             }
             set {
-                if (setMethod == null) return;
+                if (setMethod == null || isReadOnly) return;
                 try {
                     var returnValue = Convert.ChangeType(value, propertyType);
                     setMethod.Invoke(parent, new[] {returnValue});

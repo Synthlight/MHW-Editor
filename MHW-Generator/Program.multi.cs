@@ -294,7 +294,7 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(byte)),
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry("Number of Modifiers", typeof(uint))
+                    new MhwMultiStructData.StructData.Entry("Number of Modifiers", typeof(uint), true)
                 }, 1, showVertically: true),
                 new MhwMultiStructData.StructData("Modifiers", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),

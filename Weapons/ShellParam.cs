@@ -38,9 +38,9 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public partial class Shell_Params {
+        public partial class Linked_Shell_Params {
             public static ulong GetEntryCount(List<List<object>> data) {
-                return data.GetEntry<Shlp_1_>(typeof(Shlp_1_))?.Number_of_Shell_Params ?? 0;
+                return data.GetEntry<Shlp_1_>(typeof(Shlp_1_))?.Number_of_Linked_Shell_Params ?? 0;
             }
         }
 
