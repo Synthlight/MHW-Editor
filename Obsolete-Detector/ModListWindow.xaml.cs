@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Windows;
 
@@ -29,7 +30,7 @@ namespace Obsolete_Detector {
 
                 MessageBox.Show("Checked files successfully deleted.\r\nIf you still have a blackscreen after,\r\ntest without mods by renaming nativePC to anything else.", "Done", MessageBoxButton.OK, MessageBoxImage.Information);
                 Close();
-            } catch (Exception err) {
+            } catch (Exception err) when (!Debugger.IsAttached) {
                 MainWindow.ShowError(err);
             }
         }
@@ -44,7 +45,7 @@ namespace Obsolete_Detector {
 
                 MessageBox.Show("Checked files successfully renamed to {file}.old.\r\nIf you still have a blackscreen after,\r\ntest without mods by renaming nativePC to anything else.", "Done", MessageBoxButton.OK, MessageBoxImage.Information);
                 Close();
-            } catch (Exception err) {
+            } catch (Exception err) when (!Debugger.IsAttached) {
                 MainWindow.ShowError(err);
             }
         }

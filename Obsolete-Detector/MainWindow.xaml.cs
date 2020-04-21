@@ -39,7 +39,7 @@ namespace Obsolete_Detector {
         private void NexusLink_OnMouseUp(object sender, MouseButtonEventArgs e) {
             try {
                 Process.Start(NEXUS_LINK);
-            } catch (Exception err) {
+            } catch (Exception err) when (!Debugger.IsAttached) {
                 ShowError(err);
             }
         }
@@ -55,7 +55,7 @@ namespace Obsolete_Detector {
                 if (result == true) {
                     txt_path.Text = Path.GetDirectoryName(ofdResult.FileName) ?? throw new InvalidOperationException();
                 }
-            } catch (Exception err) {
+            } catch (Exception err) when (!Debugger.IsAttached) {
                 ShowError(err);
             }
         }
@@ -66,7 +66,7 @@ namespace Obsolete_Detector {
                 progress.Visibility = Visibility.Visible;
 
                 await DoScan();
-            } catch (Exception err) {
+            } catch (Exception err) when (!Debugger.IsAttached) {
                 ShowError(err);
             } finally {
                 btn_scan.Visibility = Visibility.Visible;

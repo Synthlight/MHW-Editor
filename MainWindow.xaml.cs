@@ -145,7 +145,7 @@ namespace MHW_Editor {
                         }
                     }
                 } catch (Exception e) {
-                    MessageBox.Show($"Error: {e}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    ShowError(e, "Error");
                 }
 
                 Close();
@@ -461,53 +461,45 @@ namespace MHW_Editor {
         }
 
         private void Dg_items_GotFocus(object sender, RoutedEventArgs e) {
-#if !DEBUG
             try {
-#endif
-            // Lookup for the source to be DataGridCell
-            if (e.OriginalSource is DataGridCell cell) {
-                if (coloredRow != null) coloredRow.Background = Brushes.White;
-                coloredRow = cell.GetParent<DataGridRow>();
-                // ReSharper disable once PossibleNullReferenceException
-                coloredRow.Background = backgroundBrush;
+                // Lookup for the source to be DataGridCell
+                if (e.OriginalSource is DataGridCell cell) {
+                    if (coloredRow != null) coloredRow.Background = Brushes.White;
+                    coloredRow = cell.GetParent<DataGridRow>();
+                    // ReSharper disable once PossibleNullReferenceException
+                    coloredRow.Background = backgroundBrush;
 
-                if (SingleClickToEditMode) {
-                    // Needs to only happen when it's a button. If not, we stop regular fields from working.
-                    if (CheckCellForButtonTypeAndHandleClick(sender, cell)) return;
+                    if (SingleClickToEditMode) {
+                        // Needs to only happen when it's a button. If not, we stop regular fields from working.
+                        if (CheckCellForButtonTypeAndHandleClick(sender, cell)) return;
 
-                    // We're past the _button check, now we just want to avoid a normal drop-down set to read only.
-                    if (cell.IsReadOnly) return;
+                        // We're past the _button check, now we just want to avoid a normal drop-down set to read only.
+                        if (cell.IsReadOnly) return;
 
-                    // Starts the Edit on the row;
-                    ((DataGrid) sender).BeginEdit(e);
+                        // Starts the Edit on the row;
+                        ((DataGrid) sender).BeginEdit(e);
 
-                    if (cell.Content is ComboBox cbx) {
-                        cbx.IsDropDownOpen = true;
+                        if (cell.Content is ComboBox cbx) {
+                            cbx.IsDropDownOpen = true;
+                        }
                     }
                 }
+            } catch (Exception err) when (!Debugger.IsAttached) {
+                ShowError(err, "Error Occured");
             }
-#if !DEBUG
-            } catch (Exception err) {
-                MessageBox.Show("Error occured. Press Ctrl+C to copy the contents of ths window and report to the developer.\r\n\r\n" + err, "Error Occured", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-#endif
         }
 
         private void Dg_items_cell_MouseClick(object sender, MouseButtonEventArgs e) {
-#if !DEBUG
             try {
-#endif
-            if (sender is DataGridCell cell) {
-                // We come here on both single & double click. If we don't check for focus, this hijacks the click and prevents focusing.
-                if (e?.ClickCount == 1 && !cell.IsFocused) return;
+                if (sender is DataGridCell cell) {
+                    // We come here on both single & double click. If we don't check for focus, this hijacks the click and prevents focusing.
+                    if (e?.ClickCount == 1 && !cell.IsFocused) return;
 
-                CheckCellForButtonTypeAndHandleClick(sender, cell);
+                    CheckCellForButtonTypeAndHandleClick(sender, cell);
+                }
+            } catch (Exception err) when (!Debugger.IsAttached) {
+                ShowError(err, "Error Occured");
             }
-#if !DEBUG
-            } catch (Exception err) {
-                MessageBox.Show("Error occured. Press Ctrl+C to copy the contents of ths window and report to the developer.\r\n\r\n" + err, "Error Occured", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-#endif
         }
 
         private bool CheckCellForButtonTypeAndHandleClick(object sender, DataGridCell cell) {
@@ -560,44 +552,36 @@ namespace MHW_Editor {
         }
 
         private void Dg_items_Sorting(object sender, DataGridSortingEventArgs e) {
-#if !DEBUG
             try {
-#endif
-            // Does the column we're sorting define a custom sorter?
-            var matches = columnMap[sender].Where(pair => pair.Value.column == e.Column && pair.Value.customSorter != null).ToList();
-            if (!matches.Any()) return;
-            var customSorter = matches.First().Value.customSorter;
+                // Does the column we're sorting define a custom sorter?
+                var matches = columnMap[sender].Where(pair => pair.Value.column == e.Column && pair.Value.customSorter != null).ToList();
+                if (!matches.Any()) return;
+                var customSorter = matches.First().Value.customSorter;
 
-            e.Column.SortDirection = customSorter.SortDirection = (e.Column.SortDirection != ListSortDirection.Ascending) ? ListSortDirection.Ascending : ListSortDirection.Descending;
+                e.Column.SortDirection = customSorter.SortDirection = (e.Column.SortDirection != ListSortDirection.Ascending) ? ListSortDirection.Ascending : ListSortDirection.Descending;
 
-            var listColView = (ListCollectionView) ((DataGrid) sender).ItemsSource;
-            listColView.CustomSort = customSorter;
+                var listColView = (ListCollectionView) ((DataGrid) sender).ItemsSource;
+                listColView.CustomSort = customSorter;
 
-            e.Handled = true;
-#if !DEBUG
-            } catch (Exception err) {
-                MessageBox.Show("Error occured. Press Ctrl+C to copy the contents of ths window and report to the developer.\r\n\r\n" + err, "Error Occured", MessageBoxButton.OK, MessageBoxImage.Error);
+                e.Handled = true;
+            } catch (Exception err) when (!Debugger.IsAttached) {
+                ShowError(err, "Error Occured");
             }
-#endif
         }
 
         private void Dg_items_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e) {
-#if !DEBUG
             try {
-#endif
-            // Commit as cell edit ends instead of DG waiting till we leave the row.
-            if (!isManualEditCommit) {
-                isManualEditCommit = true;
-                ((DataGrid) sender).CommitEdit(DataGridEditingUnit.Row, true);
-                isManualEditCommit = false;
-            }
+                // Commit as cell edit ends instead of DG waiting till we leave the row.
+                if (!isManualEditCommit) {
+                    isManualEditCommit = true;
+                    ((DataGrid) sender).CommitEdit(DataGridEditingUnit.Row, true);
+                    isManualEditCommit = false;
+                }
 
-            CalculatePercents();
-#if !DEBUG
-            } catch (Exception err) {
-                MessageBox.Show("Error occured. Press Ctrl+C to copy the contents of ths window and report to the developer.\r\n\r\n" + err, "Error Occured", MessageBoxButton.OK, MessageBoxImage.Error);
+                CalculatePercents();
+            } catch (Exception err) when (!Debugger.IsAttached) {
+                ShowError(err, "Error Occured");
             }
-#endif
         }
 
         private void CalculatePercents() {
@@ -700,27 +684,24 @@ namespace MHW_Editor {
 
             GC.Collect();
 
-#if !DEBUG
             try {
-#endif
-            if (targetFileType.Is(typeof(ICustomSaveLoad))) { // Custom save/load.
-                scroll_viewer.Visibility = Visibility.Visible;
-                mainDataGrid.Visibility = Visibility.Collapsed;
+                if (targetFileType.Is(typeof(ICustomSaveLoad))) { // Custom save/load.
+                    scroll_viewer.Visibility = Visibility.Visible;
+                    mainDataGrid.Visibility = Visibility.Collapsed;
 
-                var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
-                Debug.Assert(loadData != null, nameof(loadData) + " != null");
-                customFileData = loadData.Invoke(null, new object[] {targetFile});
+                    var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+                    Debug.Assert(loadData != null, nameof(loadData) + " != null");
+                    customFileData = loadData.Invoke(null, new object[] {targetFile});
 
-                var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
-                Debug.Assert(setupViews != null, nameof(setupViews) + " != null");
-                setupViews.Invoke(null, new object[] {customFileData, grid, this});
+                    var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+                    Debug.Assert(setupViews != null, nameof(setupViews) + " != null");
+                    setupViews.Invoke(null, new object[] {customFileData, grid, this});
+                    return;
+                }
+            } catch (Exception e) when (!Debugger.IsAttached) {
+                ShowError(e, "Load Error");
                 return;
             }
-#if !DEBUG
-            } catch (Exception e) {
-                MessageBox.Show(this, e.Message, "Load Error");
-            }
-#endif
 
             LoadFile();
 
@@ -822,64 +803,60 @@ namespace MHW_Editor {
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 
-#if !DEBUG
             try {
-#endif
-            using (var file = File.OpenRead(targetFile)) {
-                var ourLength = (ulong) file.Length;
-                var properLength = DataHelper.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
-                var sha512 = file.SHA512();
+                using (var file = File.OpenRead(targetFile)) {
+                    var ourLength = (ulong) file.Length;
+                    var properLength = DataHelper.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
+                    var sha512 = file.SHA512();
 
-                // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
-                foreach (var pair in DataHelper.BAD_FILE_HASH_MAP) {
-                    // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
-                    foreach (var fileAndHash in pair.Value) {
-                        if (Title == fileAndHash.Key && fileAndHash.Value.Contains(sha512)) {
-                            var newChunk = DataHelper.GOOD_CHUNK_MAP.TryGet(Title);
-                            MessageBox.Show($"This file ({Title}) is from {pair.Key} and is obsolete.\r\n" +
-                                            $"The newest version of the file is in {newChunk}.\r\n\r\n" +
-                                            "Using obsolete files is known to cause anything from blackscreens to crashes or incorrect data.", "Obsolete File Detected", MessageBoxButton.OK, MessageBoxImage.Warning);
-                            goto skipOut;
+                    // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
+                    foreach (var pair in DataHelper.BAD_FILE_HASH_MAP) {
+                        // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
+                        foreach (var fileAndHash in pair.Value) {
+                            if (Title == fileAndHash.Key && fileAndHash.Value.Contains(sha512)) {
+                                var newChunk = DataHelper.GOOD_CHUNK_MAP.TryGet(Title);
+                                MessageBox.Show($"This file ({Title}) is from {pair.Key} and is obsolete.\r\n" +
+                                                $"The newest version of the file is in {newChunk}.\r\n\r\n" +
+                                                "Using obsolete files is known to cause anything from blackscreens to crashes or incorrect data.", "Obsolete File Detected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                                goto skipOut;
+                            }
                         }
                     }
-                }
 
-                // Length check as a fallback.
-                if (ourLength != properLength) {
-                    MessageBox.Show($"The file size of {Title} does not match the known file size in v{CURRENT_GAME_VERSION}.\r\n" +
-                                    $"Expected: {properLength}\r\n" +
-                                    $"Found: {ourLength}\r\n" +
-                                    "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
-                }
-            }
-
-            skipOut:
-            if (encryptionKey != null) {
-                // Read & decrypt file.
-                var encryptedBytes = File.ReadAllBytes(targetFile);
-                var decryptedBytes = EncryptionHelper.Decrypt(encryptionKey, encryptedBytes);
-
-                using (var dat = new MemoryStream()) {
-                    // Write to a stream for the loader. Leave base stream OPEN.
-                    using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
-                        writer.Write(decryptedBytes);
-                    }
-
-                    // Load as normal.
-                    using (var reader = new BinaryReader(dat)) {
-                        ReadStructs(reader, structSize, initialOffset, weaponFilename, entryCountOffset);
+                    // Length check as a fallback.
+                    if (ourLength != properLength) {
+                        MessageBox.Show($"The file size of {Title} does not match the known file size in v{CURRENT_GAME_VERSION}.\r\n" +
+                                        $"Expected: {properLength}\r\n" +
+                                        $"Found: {ourLength}\r\n" +
+                                        "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
                     }
                 }
-            } else { // No encryption, just open, read, & close.
-                using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
-                    ReadStructs(dat, structSize, initialOffset, weaponFilename, entryCountOffset);
+
+                skipOut:
+                if (encryptionKey != null) {
+                    // Read & decrypt file.
+                    var encryptedBytes = File.ReadAllBytes(targetFile);
+                    var decryptedBytes = EncryptionHelper.Decrypt(encryptionKey, encryptedBytes);
+
+                    using (var dat = new MemoryStream()) {
+                        // Write to a stream for the loader. Leave base stream OPEN.
+                        using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
+                            writer.Write(decryptedBytes);
+                        }
+
+                        // Load as normal.
+                        using (var reader = new BinaryReader(dat)) {
+                            ReadStructs(reader, structSize, initialOffset, weaponFilename, entryCountOffset);
+                        }
+                    }
+                } else { // No encryption, just open, read, & close.
+                    using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
+                        ReadStructs(dat, structSize, initialOffset, weaponFilename, entryCountOffset);
+                    }
                 }
+            } catch (Exception e) when (!Debugger.IsAttached) {
+                ShowError(e, "Load Error");
             }
-#if !DEBUG
-            } catch (Exception e) {
-                MessageBox.Show(this, e.Message, "Load Error");
-            }
-#endif
         }
 
         private void ReadStructs(BinaryReader dat, uint structSize, ulong initialOffset, string weaponFilename, long entryCountOffset) {
@@ -945,57 +922,53 @@ namespace MHW_Editor {
         private async void Save() {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-#if !DEBUG
             try {
-#endif
-            if (targetFileType.Is(typeof(ICustomSaveLoad))) { // Custom save/load.
-                var saveData = targetFileType.GetMethod("SaveData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
-                Debug.Assert(saveData != null, nameof(saveData) + " != null");
-                saveData.Invoke(null, new object[] {customFileData, targetFile});
+                if (targetFileType.Is(typeof(ICustomSaveLoad))) { // Custom save/load.
+                    var saveData = targetFileType.GetMethod("SaveData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+                    Debug.Assert(saveData != null, nameof(saveData) + " != null");
+                    saveData.Invoke(null, new object[] {customFileData, targetFile});
 
-                await ShowChangesSaved(true);
-                return;
-            }
+                    await ShowChangesSaved(true);
+                    return;
+                }
 
-            bool changesSaved;
-            var encryptionKey = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy).GetValue(null);
+                bool changesSaved;
+                var encryptionKey = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy).GetValue(null);
 
-            if (encryptionKey != null) {
-                // Read & decrypt file.
-                var encryptedBytes = File.ReadAllBytes(targetFile);
-                var decryptedBytes = EncryptionHelper.Decrypt(encryptionKey, encryptedBytes);
+                if (encryptionKey != null) {
+                    // Read & decrypt file.
+                    var encryptedBytes = File.ReadAllBytes(targetFile);
+                    var decryptedBytes = EncryptionHelper.Decrypt(encryptionKey, encryptedBytes);
 
-                using (var dat = new MemoryStream()) {
-                    // Write to a stream for the loader. Leave base stream OPEN.
-                    using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
-                        writer.Write(decryptedBytes);
+                    using (var dat = new MemoryStream()) {
+                        // Write to a stream for the loader. Leave base stream OPEN.
+                        using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
+                            writer.Write(decryptedBytes);
+                        }
+
+                        // Save as normal. Leave base stream OPEN.
+                        using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
+                            changesSaved = WriteChanges(writer);
+                        }
+
+                        // If there are no changes, then we don't need to write the result back out.
+                        if (changesSaved) {
+                            // Re-encrypt and write it back out.
+                            decryptedBytes = dat.ToArray();
+                            encryptedBytes = EncryptionHelper.Encrypt(encryptionKey, decryptedBytes);
+                            File.WriteAllBytes(targetFile, encryptedBytes);
+                        }
                     }
-
-                    // Save as normal. Leave base stream OPEN.
-                    using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
-                        changesSaved = WriteChanges(writer);
-                    }
-
-                    // If there are no changes, then we don't need to write the result back out.
-                    if (changesSaved) {
-                        // Re-encrypt and write it back out.
-                        decryptedBytes = dat.ToArray();
-                        encryptedBytes = EncryptionHelper.Encrypt(encryptionKey, decryptedBytes);
-                        File.WriteAllBytes(targetFile, encryptedBytes);
+                } else { // No encryption, just open, write, & close.
+                    using (var dat = new BinaryWriter(new FileStream(targetFile, FileMode.Open, FileAccess.Write))) {
+                        changesSaved = WriteChanges(dat);
                     }
                 }
-            } else { // No encryption, just open, write, & close.
-                using (var dat = new BinaryWriter(new FileStream(targetFile, FileMode.Open, FileAccess.Write))) {
-                    changesSaved = WriteChanges(dat);
-                }
-            }
 
-            await ShowChangesSaved(changesSaved);
-#if !DEBUG
-            } catch (Exception e) {
-                MessageBox.Show(this, e.Message, "Save Error");
+                await ShowChangesSaved(changesSaved);
+            } catch (Exception e) when (!Debugger.IsAttached) {
+                ShowError(e, "Save Error");
             }
-#endif
         }
 
         private async Task ShowChangesSaved(bool changesSaved) {
@@ -1029,116 +1002,108 @@ namespace MHW_Editor {
         private void LoadJson() {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-#if !DEBUG
             try {
-#endif
-            var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
-            if (string.IsNullOrEmpty(target)) return;
+                var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
+                if (string.IsNullOrEmpty(target)) return;
 
-            var fileName = Path.GetFileName(targetFile);
+                var fileName = Path.GetFileName(targetFile);
 
-            var json = File.ReadAllText(target);
-            var changesToLoad = JsonMigrations.Migrate(json, fileName, items);
+                var json = File.ReadAllText(target);
+                var changesToLoad = JsonMigrations.Migrate(json, fileName, items);
 
-            if (!changesToLoad.changes.Any()) return;
-            if (fileName != changesToLoad.targetFile && changesToLoad.targetFile != "*") return;
+                if (!changesToLoad.changes.Any()) return;
+                if (fileName != changesToLoad.targetFile && changesToLoad.targetFile != "*") return;
 
-            foreach (MhwItem item in items) {
-                var id = item.UniqueId;
-                var changedItems = changesToLoad.changes.TryGet(id, null);
-                if (changedItems == null) {
-                    // Try for wildcard option.
-                    changedItems = changesToLoad.changes.TryGet("*", null);
-                    if (changedItems == null) continue;
-                }
+                foreach (MhwItem item in items) {
+                    var id = item.UniqueId;
+                    var changedItems = changesToLoad.changes.TryGet(id, null);
+                    if (changedItems == null) {
+                        // Try for wildcard option.
+                        changedItems = changesToLoad.changes.TryGet("*", null);
+                        if (changedItems == null) continue;
+                    }
 
-                foreach (var changedItem in changedItems) {
-                    var propertyInfo = item.GetType().GetProperty(changedItem.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+                    foreach (var changedItem in changedItems) {
+                        var propertyInfo = item.GetType().GetProperty(changedItem.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
 
-                    if (propertyInfo.PropertyType.IsEnum) {
-                        var value = Enum.ToObject(propertyInfo.PropertyType, changedItem.Value);
-                        propertyInfo.SetValue(item, value);
-                    } else {
-                        var value = Convert.ChangeType(changedItem.Value, propertyInfo.PropertyType);
-                        propertyInfo.SetValue(item, value);
+                        if (propertyInfo.PropertyType.IsEnum) {
+                            var value = Enum.ToObject(propertyInfo.PropertyType, changedItem.Value);
+                            propertyInfo.SetValue(item, value);
+                        } else {
+                            var value = Convert.ChangeType(changedItem.Value, propertyInfo.PropertyType);
+                            propertyInfo.SetValue(item, value);
+                        }
                     }
                 }
-            }
 
-            if (targetFileType.IsGeneric(typeof(IHasCustomView<>))) {
-                foreach (var dataGrid in dataGrids) {
-                    ((ListCollectionView) dataGrid.ItemsSource).Refresh();
+                if (targetFileType.IsGeneric(typeof(IHasCustomView<>))) {
+                    foreach (var dataGrid in dataGrids) {
+                        ((ListCollectionView) dataGrid.ItemsSource).Refresh();
+                    }
                 }
+            } catch (Exception e) when (!Debugger.IsAttached) {
+                ShowError(e, "Load Error");
             }
-#if !DEBUG
-            } catch (Exception e) {
-                MessageBox.Show(this, e.Message, "Load Error");
-            }
-#endif
         }
 
         private async void SaveJson(bool mergeWithTarget) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-#if !DEBUG
             try {
-#endif
-            var fileName = Path.GetFileName(targetFile);
-            JsonChanges changesToSave = null;
+                var fileName = Path.GetFileName(targetFile);
+                JsonChanges changesToSave = null;
 
-            if (mergeWithTarget) {
-                try {
-                    var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
-                    // Should migrate the loaded changes too.
-                    changesToSave = JsonMigrations.Migrate(File.ReadAllText(target), fileName, items);
-                } catch (Exception) {
-                    // Don't care. If it doesn't exist or can't be read, it gets overwritten.
-                }
-            }
-
-            if (changesToSave == null) {
-                changesToSave = new JsonChanges {
-                    targetFile = fileName,
-                    version = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1)
-                };
-            } else {
-                // Set target & version explicitly in case the user is merging into a different wp_dat or something.
-                changesToSave.targetFile = fileName;
-                changesToSave.version = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1);
-            }
-
-            foreach (MhwItem item in items) {
-                if (item.changed.Count == 0) continue;
-
-                var id = item.UniqueId;
-
-                if (!changesToSave.changes.ContainsKey(id)) {
-                    changesToSave.changes[id] = new Dictionary<string, object>();
+                if (mergeWithTarget) {
+                    try {
+                        var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
+                        // Should migrate the loaded changes too.
+                        changesToSave = JsonMigrations.Migrate(File.ReadAllText(target), fileName, items);
+                    } catch (Exception) {
+                        // Don't care. If it doesn't exist or can't be read, it gets overwritten.
+                    }
                 }
 
-                foreach (var changedItem in item.changed) {
-                    var value = item.GetType().GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
-                    changesToSave.changes[id][changedItem] = value;
+                if (changesToSave == null) {
+                    changesToSave = new JsonChanges {
+                        targetFile = fileName,
+                        version = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1)
+                    };
+                } else {
+                    // Set target & version explicitly in case the user is merging into a different wp_dat or something.
+                    changesToSave.targetFile = fileName;
+                    changesToSave.version = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1);
                 }
+
+                foreach (MhwItem item in items) {
+                    if (item.changed.Count == 0) continue;
+
+                    var id = item.UniqueId;
+
+                    if (!changesToSave.changes.ContainsKey(id)) {
+                        changesToSave.changes[id] = new Dictionary<string, object>();
+                    }
+
+                    foreach (var changedItem in item.changed) {
+                        var value = item.GetType().GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
+                        changesToSave.changes[id][changedItem] = value;
+                    }
+                }
+
+                var changesSaved = changesToSave.changes.Any();
+
+                if (changesSaved) {
+                    // Get file after checking for what to save else we show a dialog even if there are no changes.
+                    var target = GetSaveTarget();
+                    if (string.IsNullOrEmpty(target)) return;
+
+                    var json = JsonConvert.SerializeObject(changesToSave, Formatting.Indented);
+                    File.WriteAllText(target, json);
+                }
+
+                await ShowChangesSaved(changesSaved);
+            } catch (Exception e) when (!Debugger.IsAttached) {
+                ShowError(e, "Save Error");
             }
-
-            var changesSaved = changesToSave.changes.Any();
-
-            if (changesSaved) {
-                // Get file after checking for what to save else we show a dialog even if there are no changes.
-                var target = GetSaveTarget();
-                if (string.IsNullOrEmpty(target)) return;
-
-                var json = JsonConvert.SerializeObject(changesToSave, Formatting.Indented);
-                File.WriteAllText(target, json);
-            }
-
-            await ShowChangesSaved(changesSaved);
-#if !DEBUG
-            } catch (Exception e) {
-                MessageBox.Show(this, e.Message, "Save Error");
-            }
-#endif
         }
 
         private string GetOpenTarget(string filter) {
@@ -1248,6 +1213,10 @@ namespace MHW_Editor {
             }
 
             throw new Exception($"No type found for: {fileName}");
+        }
+
+        public static void ShowError(Exception err, string title) {
+            MessageBox.Show("Error occured. Press Ctrl+C to copy the contents of ths window and report to the developer.\r\n\r\n" + err, title, MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         protected override void OnClosed(EventArgs e) {
