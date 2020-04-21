@@ -9,7 +9,7 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Weapons {
-    public partial class ShellProjectile : MhwMultiStructItem {
+    public partial class ShellParam : MhwMultiStructItem {
         public const ulong InitialOffset = 0;
         public const string EncryptionKey = "FZoS8QLyOyeFmkdrz73P9Fh2N4NcTwy3QQPjc1YRII5KWovK6yFuU8SL";
 

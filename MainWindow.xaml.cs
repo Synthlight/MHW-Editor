@@ -1223,7 +1223,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".shl_tbl")) return typeof(ShellTable);
             if (fileName.EndsWith(".skl_dat")) return typeof(SkillDat);
             if (fileName.EndsWith(".skl_pt_dat")) return typeof(SkillPointData);
-            if (fileName.EndsWith(".shlp")) return typeof(ShellProjectile);
+            if (fileName.EndsWith(".shlp")) return typeof(ShellParam);
             if (fileName.EndsWith(".srl")) return typeof(SteamRewardList);
             if (fileName.EndsWith(".stmp")) return typeof(ItemDelivery);
             if (fileName.EndsWith(".supp")) return typeof(SupplyData);

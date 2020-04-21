@@ -173,7 +173,7 @@
     <Compile Include="Generated\MHW_Editor\Weapons\NewLimitBreak.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\OtomoWeaponDat.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\RodInsect.cs" />
-    <Compile Include="Generated\MHW_Editor\Weapons\ShellProjectile.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\ShellParam.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Wp10Param.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Wp10ParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Wp11Param.cs" />
@@ -301,7 +301,7 @@
     <Compile Include="Weapons\GunnerShoot.cs" />
     <Compile Include="Weapons\NewLimitBreak.cs" />
     <Compile Include="Weapons\OtomoWeaponDat.cs" />
-    <Compile Include="Weapons\ShellProjectile.cs" />
+    <Compile Include="Weapons\ShellParam.cs" />
     <Compile Include="Weapons\Wp13Param.cs" />
     <Compile Include="Weapons\Wp11Param.cs" />
     <Compile Include="Weapons\Wp10Param.cs" />

@@ -9,7 +9,7 @@ namespace MHW_Generator {
             GenMonsterEnrage();
             GenMonsterRandomSize();
             GenMonsterStamina();
-            GenShellProjectile();
+            GenShellParam();
             GenSupplyData();
         }
 
@@ -149,7 +149,7 @@ namespace MHW_Generator {
             GenerateMultiStructProps("MHW_Editor.Monsters", "MonsterEnrage", new MhwMultiStructData(structs, 0));
         }
 
-        private static void GenShellProjectile() { // .shlp
+        private static void GenShellParam() { // .shlp
             var i = 0;
 
             var structs = new List<MhwMultiStructData.StructData> {
@@ -322,7 +322,7 @@ namespace MHW_Generator {
                 }, 1)
             };
 
-            GenerateMultiStructProps("MHW_Editor.Weapons", "ShellProjectile", new MhwMultiStructData(structs, 0, EncryptionKeys.FILE_EXT_KEY_LOOKUP[".shlp"]));
+            GenerateMultiStructProps("MHW_Editor.Weapons", "ShellParam", new MhwMultiStructData(structs, 0, EncryptionKeys.FILE_EXT_KEY_LOOKUP[".shlp"]));
         }
 
         private static void GenSupplyData() { // .supp

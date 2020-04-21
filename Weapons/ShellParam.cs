@@ -2,7 +2,7 @@
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons {
-    public partial class ShellProjectile : ICustomSaveLoad {
+    public partial class ShellParam : ICustomSaveLoad {
         public partial class Assets {
             public string Name {
                 get {
