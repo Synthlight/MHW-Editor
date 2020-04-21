@@ -167,20 +167,20 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry("Particles: Projectile", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Particles: Muzzle Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Particles: Muzzle", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(int)),
+                    new MhwMultiStructData.StructData.Entry("Unk 1", typeof(int)),
                     new MhwMultiStructData.StructData.Entry("Obj Collision Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Obj Collision", typeof(string), isNullTerminatedString: true, condition: "if (|ref|Obj_Collision_Header_raw != 0)"),
                     new MhwMultiStructData.StructData.Entry("Obj Collision Index", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Timeline List Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Timeline List", typeof(string), isNullTerminatedString: true, condition: "if (|ref|Timeline_List_Header_raw != 0)"),
-                    new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry("Number of Shell Params", typeof(uint), true)
+                    new MhwMultiStructData.StructData.Entry("Unk 2", typeof(uint)),
+                    new MhwMultiStructData.StructData.Entry("Unk 3", typeof(uint)),
+                    new MhwMultiStructData.StructData.Entry("Unk 4", typeof(uint)),
+                    new MhwMultiStructData.StructData.Entry("Unk 5", typeof(uint)),
+                    new MhwMultiStructData.StructData.Entry("Unk 6", typeof(uint)),
+                    new MhwMultiStructData.StructData.Entry("Number of Linked Shell Params", typeof(uint), true)
                 }, 1, showVertically: true),
-                new MhwMultiStructData.StructData("Shell Params", new List<MhwMultiStructData.StructData.Entry> {
+                new MhwMultiStructData.StructData("Linked Shell Params", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Path", typeof(string), isNullTerminatedString: true),
                     new MhwMultiStructData.StructData.Entry("Unk 1", typeof(uint)),
