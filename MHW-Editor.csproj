@@ -194,6 +194,7 @@
     <Compile Include="Models\IsReadOnlyAttribute.cs" />
     <Compile Include="Models\MhwMultiStructItem.cs" />
     <Compile Include="Models\MhwStructItem.cs" />
+    <Compile Include="Models\MultiStructItemCustomView.cs" />
     <Compile Include="Monsters\AnimalSize.cs" />
     <Compile Include="Monsters\EnemySort.cs" />
     <Compile Include="Items\SteamRewardList.cs" />

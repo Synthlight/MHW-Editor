@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using System.Runtime.Remoting;
 using System.Text;
 using System.Windows.Controls;
 using JetBrains.Annotations;
@@ -13,7 +14,12 @@ namespace MHW_Editor.Models {
         public static void SetupViews(List<List<dynamic>> data, Grid grid, MainWindow main) {
             foreach (var list in GetFilteredLists(data)) {
                 grid.AddControl(new Label {Content = GetLabel(list), FontSize = MainWindow.FONT_SIZE});
-                main.AddDataGrid(list);
+
+                if (list[0] is IHasCustomView<MultiStructItemCustomView> o) {
+                    main.AddDataGrid(o.GetCustomView());
+                } else {
+                    main.AddDataGrid(list);
+                }
             }
         }
 

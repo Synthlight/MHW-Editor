@@ -10,7 +10,7 @@ namespace MHW_Editor.Models {
 
         public ulong index;
         [SortOrder(10)]
-        public ulong Index => index;
+        public virtual ulong Index => index;
 
         public abstract void WriteData(BinaryWriter writer);
 

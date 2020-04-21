@@ -159,8 +159,8 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry("Magic 2", typeof(uint), true)
                 }, 1),
                 new MhwMultiStructData.StructData("Assets", new List<MhwMultiStructData.StructData.Entry> {
-                    new MhwMultiStructData.StructData.Entry("Magic", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry("Path", typeof(string), isNullTerminatedString: true, condition: "if (|ref|Magic_raw != 0)")
+                    new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),
+                    new MhwMultiStructData.StructData.Entry("Path", typeof(string), isNullTerminatedString: true, condition: "if (|ref|Header_raw != 0)")
                 }, 25),
                 new MhwMultiStructData.StructData("Shlp (1)", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Particles: Projectile Header", typeof(uint)),
@@ -179,12 +179,12 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Number of Shell Params", typeof(uint), true)
-                }, 1),
+                }, 1, showVertically: true),
                 new MhwMultiStructData.StructData("Shell Params", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Path", typeof(string), isNullTerminatedString: true),
                     new MhwMultiStructData.StructData.Entry("Unk 1", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry("Unk 2", typeof(uint)),
+                    new MhwMultiStructData.StructData.Entry("Flags", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Unk 3", typeof(uint))
                 }),
                 new MhwMultiStructData.StructData("Shlp (2)", new List<MhwMultiStructData.StructData.Entry> {
@@ -229,9 +229,7 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint))
-                }, 1),
-                new MhwMultiStructData.StructData("Shlp (3)", new List<MhwMultiStructData.StructData.Entry> {
+                    new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Wwise Container Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Wwise Container", typeof(string), isNullTerminatedString: true, condition: "if (|ref|Wwise_Container_Header_raw != 0)"),
                     new MhwMultiStructData.StructData.Entry("Sound: Gun Fire Header", typeof(int)),
@@ -257,9 +255,7 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry("Sound: Condition Header 4", typeof(int)),
                     new MhwMultiStructData.StructData.Entry("Sound: Condition 4", typeof(int)),
                     new MhwMultiStructData.StructData.Entry("Sound: Condition Header 5", typeof(int)),
-                    new MhwMultiStructData.StructData.Entry("Sound: Condition 5", typeof(int))
-                }, 1),
-                new MhwMultiStructData.StructData("Shlp (4)", new List<MhwMultiStructData.StructData.Entry> {
+                    new MhwMultiStructData.StructData.Entry("Sound: Condition 5", typeof(int)),
                     new MhwMultiStructData.StructData.Entry("Header 2", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Projectile: Entity Collider", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Projectile: Model Lifespan", typeof(float)),
@@ -299,7 +295,7 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Number of Modifiers", typeof(uint))
-                }, 1),
+                }, 1, showVertically: true),
                 new MhwMultiStructData.StructData("Modifiers", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Value 1 (if 412627386)", typeof(sbyte), condition: "if (|ref|Header_raw == 412627386)"),

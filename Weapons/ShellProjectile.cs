@@ -46,7 +46,7 @@ namespace MHW_Editor.Weapons {
 
         public partial class Modifiers {
             public static ulong GetEntryCount(List<List<object>> data) {
-                return data.GetEntry<Shlp_4_>(typeof(Shlp_4_))?.Number_of_Modifiers ?? 0;
+                return data.GetEntry<Shlp_2_>(typeof(Shlp_2_))?.Number_of_Modifiers ?? 0;
             }
         }
     }

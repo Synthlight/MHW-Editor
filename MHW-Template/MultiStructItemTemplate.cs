@@ -30,39 +30,47 @@ namespace MHW_Template
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("using System.Collections.Generic;\r\nusing System.ComponentModel;\r\nusing System.IO;" +
-                    "\r\nusing System.Reflection;\r\nusing MHW_Editor.Assets;\r\nusing MHW_Editor.Models;\r\n" +
-                    "using MHW_Template;\r\nusing MHW_Template.Models;\r\n\r\nnamespace ");
+            this.Write(@"using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.IO;
+using System.Reflection;
+using MHW_Editor.Assets;
+using MHW_Editor.Models;
+using MHW_Template;
+using MHW_Template.Models;
+
+namespace ");
             
-            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public partial class ");
             
-            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
             #line hidden
             this.Write(" : MhwMultiStructItem {\r\n        public const ulong InitialOffset = ");
             
-            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.offsetInitial));
             
             #line default
             #line hidden
             this.Write(";\r\n        public const string EncryptionKey = ");
             
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\""));
             
             #line default
             #line hidden
             this.Write(";\r\n");
             
-            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
 
     var compiler = new CSharpCodeProvider();
 
@@ -72,7 +80,7 @@ namespace MHW_Template
 
         WriteLine("");
         //WriteLine("        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode, Pack = 1)]");
-        WriteLine($"        public partial class {name} : MhwStructItem {{");
+        WriteLine($"        public partial class {name} : MhwStructItem{(@struct.showVertically ? ", IHasCustomView<MultiStructItemCustomView>" : "")} {{");
         WriteLine($"            public const ulong FixedSizeCount = {@struct.fixedSizeCount};");
         WriteLine($"            public const string DisplayName = \"{@struct.name}\";");
 
@@ -222,7 +230,6 @@ namespace MHW_Template
         WriteLine("");
         WriteLine($"            public static {name} LoadData(BinaryReader reader) {{");
         WriteLine($"                var data = new {name}();");
-
         foreach (var entry in @struct.entries) {
             var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
             if (entry.forceUnique) {
@@ -243,14 +250,12 @@ namespace MHW_Template
                 WriteLine($"                {condition}data.{entryName} = reader.Read{GetReadType(entry.type)}();");
             }
         }
-
         WriteLine("                return data;");
         WriteLine("            }");
 
         // Individual WriteData.
         WriteLine("");
         WriteLine("            public override void WriteData(BinaryWriter writer) {");
-
         foreach (var entry in @struct.entries) {
             var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
             if (entry.forceUnique) {
@@ -269,8 +274,25 @@ namespace MHW_Template
                 WriteLine($"                {condition}writer.Write({entryName});");
             }
         }
-
         WriteLine("            }");
+
+        // GetCustomView (if needed).
+        if (@struct.showVertically) {
+            WriteLine("");
+            WriteLine("            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {");
+            WriteLine("                return new ObservableCollection<MultiStructItemCustomView> {");
+            foreach (var entry in @struct.entries) {
+                var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+                if (entry.forceUnique) {
+                    propName += $"_{sortIndex}";
+                }
+
+                WriteLine($"                    new MultiStructItemCustomView(this, \"{entry.displayName}\", \"{propName}\"),");
+            }
+            WriteLine("                };");
+            WriteLine("            }");
+        }
+
         WriteLine("        }"); // Inner Class
     }
 

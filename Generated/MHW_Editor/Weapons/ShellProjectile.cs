@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Reflection;
@@ -84,17 +85,17 @@ namespace MHW_Editor.Weapons {
             public const ulong FixedSizeCount = 25;
             public const string DisplayName = "Assets";
 
-            protected uint Magic_raw;
-            public const string Magic_displayName = "Magic";
-            public const int Magic_sortIndex = 50;
-            [SortOrder(Magic_sortIndex)]
-            [DisplayName(Magic_displayName)]
-            public virtual uint Magic {
-                get => Magic_raw;
+            protected uint Header_raw;
+            public const string Header_displayName = "Header";
+            public const int Header_sortIndex = 50;
+            [SortOrder(Header_sortIndex)]
+            [DisplayName(Header_displayName)]
+            public virtual uint Header {
+                get => Header_raw;
                 set {
-                    if (Magic_raw == value) return;
-                    Magic_raw = value;
-                    OnPropertyChanged(nameof(Magic));
+                    if (Header_raw == value) return;
+                    Header_raw = value;
+                    OnPropertyChanged(nameof(Header));
                 }
             }
 
@@ -118,18 +119,18 @@ namespace MHW_Editor.Weapons {
 
             public static Assets LoadData(BinaryReader reader) {
                 var data = new Assets();
-                data.Magic_raw = reader.ReadUInt32();
-                if (data.Magic_raw != 0) data.Path_raw = reader.ReadNullTermString();
+                data.Header_raw = reader.ReadUInt32();
+                if (data.Header_raw != 0) data.Path_raw = reader.ReadNullTermString();
                 return data;
             }
 
             public override void WriteData(BinaryWriter writer) {
-                writer.Write(Magic_raw);
-                if (Magic_raw != 0) writer.Write(Path_raw.ToNullTermCharArray());
+                writer.Write(Header_raw);
+                if (Header_raw != 0) writer.Write(Path_raw.ToNullTermCharArray());
             }
         }
 
-        public partial class Shlp_1_ : MhwStructItem {
+        public partial class Shlp_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
             public const ulong FixedSizeCount = 1;
             public const string DisplayName = "Shlp (1)";
 
@@ -401,37 +402,58 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_6_raw);
                 writer.Write(Number_of_Shell_Params_raw);
             }
+
+            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
+                return new ObservableCollection<MultiStructItemCustomView> {
+                    new MultiStructItemCustomView(this, "Particles: Projectile Header", "Particles_Projectile_Header"),
+                    new MultiStructItemCustomView(this, "Particles: Projectile", "Particles_Projectile"),
+                    new MultiStructItemCustomView(this, "Particles: Muzzle Header", "Particles_Muzzle_Header"),
+                    new MultiStructItemCustomView(this, "Particles: Muzzle", "Particles_Muzzle"),
+                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
+                    new MultiStructItemCustomView(this, "Obj Collision Header", "Obj_Collision_Header"),
+                    new MultiStructItemCustomView(this, "Obj Collision", "Obj_Collision"),
+                    new MultiStructItemCustomView(this, "Obj Collision Index", "Obj_Collision_Index"),
+                    new MultiStructItemCustomView(this, "Timeline List Header", "Timeline_List_Header"),
+                    new MultiStructItemCustomView(this, "Timeline List", "Timeline_List"),
+                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2"),
+                    new MultiStructItemCustomView(this, "Unk 3", "Unk_3"),
+                    new MultiStructItemCustomView(this, "Unk 4", "Unk_4"),
+                    new MultiStructItemCustomView(this, "Unk 5", "Unk_5"),
+                    new MultiStructItemCustomView(this, "Unk 6", "Unk_6"),
+                    new MultiStructItemCustomView(this, "Number of Shell Params", "Number_of_Shell_Params"),
+                };
+            }
         }
 
         public partial class Shell_Params : MhwStructItem {
             public const ulong FixedSizeCount = 0;
             public const string DisplayName = "Shell Params";
 
-            protected uint Header_1_raw;
-            public const string Header_1_displayName = "Header 1";
-            public const int Header_1_sortIndex = 50;
-            [SortOrder(Header_1_sortIndex)]
-            [DisplayName(Header_1_displayName)]
-            public virtual uint Header_1 {
-                get => Header_1_raw;
+            protected uint Header_raw;
+            public const string Header_displayName = "Header";
+            public const int Header_sortIndex = 50;
+            [SortOrder(Header_sortIndex)]
+            [DisplayName(Header_displayName)]
+            public virtual uint Header {
+                get => Header_raw;
                 set {
-                    if (Header_1_raw == value) return;
-                    Header_1_raw = value;
-                    OnPropertyChanged(nameof(Header_1));
+                    if (Header_raw == value) return;
+                    Header_raw = value;
+                    OnPropertyChanged(nameof(Header));
                 }
             }
 
-            protected string Path_1_raw;
-            public const string Path_1_displayName = "Path 1";
-            public const int Path_1_sortIndex = 100;
-            [SortOrder(Path_1_sortIndex)]
-            [DisplayName(Path_1_displayName)]
-            public virtual string Path_1 {
-                get => Path_1_raw;
+            protected string Path_raw;
+            public const string Path_displayName = "Path";
+            public const int Path_sortIndex = 100;
+            [SortOrder(Path_sortIndex)]
+            [DisplayName(Path_displayName)]
+            public virtual string Path {
+                get => Path_raw;
                 set {
-                    if (Path_1_raw == value) return;
-                    Path_1_raw = value;
-                    OnPropertyChanged(nameof(Path_1));
+                    if (Path_raw == value) return;
+                    Path_raw = value;
+                    OnPropertyChanged(nameof(Path));
                 }
             }
 
@@ -449,17 +471,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected uint Unk_2_raw;
-            public const string Unk_2_displayName = "Unk 2";
-            public const int Unk_2_sortIndex = 200;
-            [SortOrder(Unk_2_sortIndex)]
-            [DisplayName(Unk_2_displayName)]
-            public virtual uint Unk_2 {
-                get => Unk_2_raw;
+            protected uint Flags_raw;
+            public const string Flags_displayName = "Flags";
+            public const int Flags_sortIndex = 200;
+            [SortOrder(Flags_sortIndex)]
+            [DisplayName(Flags_displayName)]
+            public virtual uint Flags {
+                get => Flags_raw;
                 set {
-                    if (Unk_2_raw == value) return;
-                    Unk_2_raw = value;
-                    OnPropertyChanged(nameof(Unk_2));
+                    if (Flags_raw == value) return;
+                    Flags_raw = value;
+                    OnPropertyChanged(nameof(Flags));
                 }
             }
 
@@ -479,24 +501,24 @@ namespace MHW_Editor.Weapons {
 
             public static Shell_Params LoadData(BinaryReader reader) {
                 var data = new Shell_Params();
-                data.Header_1_raw = reader.ReadUInt32();
-                data.Path_1_raw = reader.ReadNullTermString();
+                data.Header_raw = reader.ReadUInt32();
+                data.Path_raw = reader.ReadNullTermString();
                 data.Unk_1_raw = reader.ReadUInt32();
-                data.Unk_2_raw = reader.ReadUInt32();
+                data.Flags_raw = reader.ReadUInt32();
                 data.Unk_3_raw = reader.ReadUInt32();
                 return data;
             }
 
             public override void WriteData(BinaryWriter writer) {
-                writer.Write(Header_1_raw);
-                writer.Write(Path_1_raw.ToNullTermCharArray());
+                writer.Write(Header_raw);
+                writer.Write(Path_raw.ToNullTermCharArray());
                 writer.Write(Unk_1_raw);
-                writer.Write(Unk_2_raw);
+                writer.Write(Flags_raw);
                 writer.Write(Unk_3_raw);
             }
         }
 
-        public partial class Shlp_2_ : MhwStructItem {
+        public partial class Shlp_2_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
             public const ulong FixedSizeCount = 1;
             public const string DisplayName = "Shlp (2)";
 
@@ -1088,6 +1110,916 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            protected uint Wwise_Container_Header_raw;
+            public const string Wwise_Container_Header_displayName = "Wwise Container Header";
+            public const int Wwise_Container_Header_sortIndex = 2150;
+            [SortOrder(Wwise_Container_Header_sortIndex)]
+            [DisplayName(Wwise_Container_Header_displayName)]
+            public virtual uint Wwise_Container_Header {
+                get => Wwise_Container_Header_raw;
+                set {
+                    if (Wwise_Container_Header_raw == value) return;
+                    Wwise_Container_Header_raw = value;
+                    OnPropertyChanged(nameof(Wwise_Container_Header));
+                }
+            }
+
+            protected string Wwise_Container_raw;
+            public const string Wwise_Container_displayName = "Wwise Container";
+            public const int Wwise_Container_sortIndex = 2200;
+            [SortOrder(Wwise_Container_sortIndex)]
+            [DisplayName(Wwise_Container_displayName)]
+            public virtual string Wwise_Container {
+                get => Wwise_Container_raw;
+                set {
+                    if (Wwise_Container_raw == value) return;
+                    Wwise_Container_raw = value;
+                    OnPropertyChanged(nameof(Wwise_Container));
+                }
+            }
+
+            protected int Sound_Gun_Fire_Header_raw;
+            public const string Sound_Gun_Fire_Header_displayName = "Sound: Gun Fire Header";
+            public const int Sound_Gun_Fire_Header_sortIndex = 2250;
+            [SortOrder(Sound_Gun_Fire_Header_sortIndex)]
+            [DisplayName(Sound_Gun_Fire_Header_displayName)]
+            public virtual int Sound_Gun_Fire_Header {
+                get => Sound_Gun_Fire_Header_raw;
+                set {
+                    if (Sound_Gun_Fire_Header_raw == value) return;
+                    Sound_Gun_Fire_Header_raw = value;
+                    OnPropertyChanged(nameof(Sound_Gun_Fire_Header));
+                }
+            }
+
+            protected int Sound_Gun_Fire_raw;
+            public const string Sound_Gun_Fire_displayName = "Sound: Gun Fire";
+            public const int Sound_Gun_Fire_sortIndex = 2300;
+            [SortOrder(Sound_Gun_Fire_sortIndex)]
+            [DisplayName(Sound_Gun_Fire_displayName)]
+            public virtual int Sound_Gun_Fire {
+                get => Sound_Gun_Fire_raw;
+                set {
+                    if (Sound_Gun_Fire_raw == value) return;
+                    Sound_Gun_Fire_raw = value;
+                    OnPropertyChanged(nameof(Sound_Gun_Fire));
+                }
+            }
+
+            protected int Sound_Bullet_Travel_Header_raw;
+            public const string Sound_Bullet_Travel_Header_displayName = "Sound: Bullet Travel Header";
+            public const int Sound_Bullet_Travel_Header_sortIndex = 2350;
+            [SortOrder(Sound_Bullet_Travel_Header_sortIndex)]
+            [DisplayName(Sound_Bullet_Travel_Header_displayName)]
+            public virtual int Sound_Bullet_Travel_Header {
+                get => Sound_Bullet_Travel_Header_raw;
+                set {
+                    if (Sound_Bullet_Travel_Header_raw == value) return;
+                    Sound_Bullet_Travel_Header_raw = value;
+                    OnPropertyChanged(nameof(Sound_Bullet_Travel_Header));
+                }
+            }
+
+            protected int Sound_Bullet_Travel_raw;
+            public const string Sound_Bullet_Travel_displayName = "Sound: Bullet Travel";
+            public const int Sound_Bullet_Travel_sortIndex = 2400;
+            [SortOrder(Sound_Bullet_Travel_sortIndex)]
+            [DisplayName(Sound_Bullet_Travel_displayName)]
+            public virtual int Sound_Bullet_Travel {
+                get => Sound_Bullet_Travel_raw;
+                set {
+                    if (Sound_Bullet_Travel_raw == value) return;
+                    Sound_Bullet_Travel_raw = value;
+                    OnPropertyChanged(nameof(Sound_Bullet_Travel));
+                }
+            }
+
+            protected int Sound_Explode_Header_raw;
+            public const string Sound_Explode_Header_displayName = "Sound: Explode Header";
+            public const int Sound_Explode_Header_sortIndex = 2450;
+            [SortOrder(Sound_Explode_Header_sortIndex)]
+            [DisplayName(Sound_Explode_Header_displayName)]
+            public virtual int Sound_Explode_Header {
+                get => Sound_Explode_Header_raw;
+                set {
+                    if (Sound_Explode_Header_raw == value) return;
+                    Sound_Explode_Header_raw = value;
+                    OnPropertyChanged(nameof(Sound_Explode_Header));
+                }
+            }
+
+            protected int Sound_Explode_raw;
+            public const string Sound_Explode_displayName = "Sound: Explode";
+            public const int Sound_Explode_sortIndex = 2500;
+            [SortOrder(Sound_Explode_sortIndex)]
+            [DisplayName(Sound_Explode_displayName)]
+            public virtual int Sound_Explode {
+                get => Sound_Explode_raw;
+                set {
+                    if (Sound_Explode_raw == value) return;
+                    Sound_Explode_raw = value;
+                    OnPropertyChanged(nameof(Sound_Explode));
+                }
+            }
+
+            protected int Sound_Hit_Wall_or_Ground_Header_raw;
+            public const string Sound_Hit_Wall_or_Ground_Header_displayName = "Sound: Hit Wall or Ground Header";
+            public const int Sound_Hit_Wall_or_Ground_Header_sortIndex = 2550;
+            [SortOrder(Sound_Hit_Wall_or_Ground_Header_sortIndex)]
+            [DisplayName(Sound_Hit_Wall_or_Ground_Header_displayName)]
+            public virtual int Sound_Hit_Wall_or_Ground_Header {
+                get => Sound_Hit_Wall_or_Ground_Header_raw;
+                set {
+                    if (Sound_Hit_Wall_or_Ground_Header_raw == value) return;
+                    Sound_Hit_Wall_or_Ground_Header_raw = value;
+                    OnPropertyChanged(nameof(Sound_Hit_Wall_or_Ground_Header));
+                }
+            }
+
+            protected int Sound_Hit_Wall_or_Ground_raw;
+            public const string Sound_Hit_Wall_or_Ground_displayName = "Sound: Hit Wall or Ground";
+            public const int Sound_Hit_Wall_or_Ground_sortIndex = 2600;
+            [SortOrder(Sound_Hit_Wall_or_Ground_sortIndex)]
+            [DisplayName(Sound_Hit_Wall_or_Ground_displayName)]
+            public virtual int Sound_Hit_Wall_or_Ground {
+                get => Sound_Hit_Wall_or_Ground_raw;
+                set {
+                    if (Sound_Hit_Wall_or_Ground_raw == value) return;
+                    Sound_Hit_Wall_or_Ground_raw = value;
+                    OnPropertyChanged(nameof(Sound_Hit_Wall_or_Ground));
+                }
+            }
+
+            protected int Sound_Hit_Obj_Hit_Header_raw;
+            public const string Sound_Hit_Obj_Hit_Header_displayName = "Sound: Hit Obj Hit Header";
+            public const int Sound_Hit_Obj_Hit_Header_sortIndex = 2650;
+            [SortOrder(Sound_Hit_Obj_Hit_Header_sortIndex)]
+            [DisplayName(Sound_Hit_Obj_Hit_Header_displayName)]
+            public virtual int Sound_Hit_Obj_Hit_Header {
+                get => Sound_Hit_Obj_Hit_Header_raw;
+                set {
+                    if (Sound_Hit_Obj_Hit_Header_raw == value) return;
+                    Sound_Hit_Obj_Hit_Header_raw = value;
+                    OnPropertyChanged(nameof(Sound_Hit_Obj_Hit_Header));
+                }
+            }
+
+            protected int Sound_Hit_Obj_Hit_raw;
+            public const string Sound_Hit_Obj_Hit_displayName = "Sound: Hit Obj Hit";
+            public const int Sound_Hit_Obj_Hit_sortIndex = 2700;
+            [SortOrder(Sound_Hit_Obj_Hit_sortIndex)]
+            [DisplayName(Sound_Hit_Obj_Hit_displayName)]
+            public virtual int Sound_Hit_Obj_Hit {
+                get => Sound_Hit_Obj_Hit_raw;
+                set {
+                    if (Sound_Hit_Obj_Hit_raw == value) return;
+                    Sound_Hit_Obj_Hit_raw = value;
+                    OnPropertyChanged(nameof(Sound_Hit_Obj_Hit));
+                }
+            }
+
+            protected int Sound_Condition_Header_1_raw;
+            public const string Sound_Condition_Header_1_displayName = "Sound: Condition Header 1";
+            public const int Sound_Condition_Header_1_sortIndex = 2750;
+            [SortOrder(Sound_Condition_Header_1_sortIndex)]
+            [DisplayName(Sound_Condition_Header_1_displayName)]
+            public virtual int Sound_Condition_Header_1 {
+                get => Sound_Condition_Header_1_raw;
+                set {
+                    if (Sound_Condition_Header_1_raw == value) return;
+                    Sound_Condition_Header_1_raw = value;
+                    OnPropertyChanged(nameof(Sound_Condition_Header_1));
+                }
+            }
+
+            protected int Sound_Condition_1_raw;
+            public const string Sound_Condition_1_displayName = "Sound: Condition 1";
+            public const int Sound_Condition_1_sortIndex = 2800;
+            [SortOrder(Sound_Condition_1_sortIndex)]
+            [DisplayName(Sound_Condition_1_displayName)]
+            public virtual int Sound_Condition_1 {
+                get => Sound_Condition_1_raw;
+                set {
+                    if (Sound_Condition_1_raw == value) return;
+                    Sound_Condition_1_raw = value;
+                    OnPropertyChanged(nameof(Sound_Condition_1));
+                }
+            }
+
+            protected int Sound_Slinger_Condition_Header_1_raw;
+            public const string Sound_Slinger_Condition_Header_1_displayName = "Sound: Slinger Condition Header 1";
+            public const int Sound_Slinger_Condition_Header_1_sortIndex = 2850;
+            [SortOrder(Sound_Slinger_Condition_Header_1_sortIndex)]
+            [DisplayName(Sound_Slinger_Condition_Header_1_displayName)]
+            public virtual int Sound_Slinger_Condition_Header_1 {
+                get => Sound_Slinger_Condition_Header_1_raw;
+                set {
+                    if (Sound_Slinger_Condition_Header_1_raw == value) return;
+                    Sound_Slinger_Condition_Header_1_raw = value;
+                    OnPropertyChanged(nameof(Sound_Slinger_Condition_Header_1));
+                }
+            }
+
+            protected int Sound_Slinger_Condition_1_raw;
+            public const string Sound_Slinger_Condition_1_displayName = "Sound: Slinger Condition 1";
+            public const int Sound_Slinger_Condition_1_sortIndex = 2900;
+            [SortOrder(Sound_Slinger_Condition_1_sortIndex)]
+            [DisplayName(Sound_Slinger_Condition_1_displayName)]
+            public virtual int Sound_Slinger_Condition_1 {
+                get => Sound_Slinger_Condition_1_raw;
+                set {
+                    if (Sound_Slinger_Condition_1_raw == value) return;
+                    Sound_Slinger_Condition_1_raw = value;
+                    OnPropertyChanged(nameof(Sound_Slinger_Condition_1));
+                }
+            }
+
+            protected int Sound_Slinger_Condition_Header_2_raw;
+            public const string Sound_Slinger_Condition_Header_2_displayName = "Sound: Slinger Condition Header 2";
+            public const int Sound_Slinger_Condition_Header_2_sortIndex = 2950;
+            [SortOrder(Sound_Slinger_Condition_Header_2_sortIndex)]
+            [DisplayName(Sound_Slinger_Condition_Header_2_displayName)]
+            public virtual int Sound_Slinger_Condition_Header_2 {
+                get => Sound_Slinger_Condition_Header_2_raw;
+                set {
+                    if (Sound_Slinger_Condition_Header_2_raw == value) return;
+                    Sound_Slinger_Condition_Header_2_raw = value;
+                    OnPropertyChanged(nameof(Sound_Slinger_Condition_Header_2));
+                }
+            }
+
+            protected int Sound_Slinger_Condition_2_raw;
+            public const string Sound_Slinger_Condition_2_displayName = "Sound: Slinger Condition 2";
+            public const int Sound_Slinger_Condition_2_sortIndex = 3000;
+            [SortOrder(Sound_Slinger_Condition_2_sortIndex)]
+            [DisplayName(Sound_Slinger_Condition_2_displayName)]
+            public virtual int Sound_Slinger_Condition_2 {
+                get => Sound_Slinger_Condition_2_raw;
+                set {
+                    if (Sound_Slinger_Condition_2_raw == value) return;
+                    Sound_Slinger_Condition_2_raw = value;
+                    OnPropertyChanged(nameof(Sound_Slinger_Condition_2));
+                }
+            }
+
+            protected int Sound_Condition_Header_2_raw;
+            public const string Sound_Condition_Header_2_displayName = "Sound: Condition Header 2";
+            public const int Sound_Condition_Header_2_sortIndex = 3050;
+            [SortOrder(Sound_Condition_Header_2_sortIndex)]
+            [DisplayName(Sound_Condition_Header_2_displayName)]
+            public virtual int Sound_Condition_Header_2 {
+                get => Sound_Condition_Header_2_raw;
+                set {
+                    if (Sound_Condition_Header_2_raw == value) return;
+                    Sound_Condition_Header_2_raw = value;
+                    OnPropertyChanged(nameof(Sound_Condition_Header_2));
+                }
+            }
+
+            protected int Sound_Condition_2_raw;
+            public const string Sound_Condition_2_displayName = "Sound: Condition 2";
+            public const int Sound_Condition_2_sortIndex = 3100;
+            [SortOrder(Sound_Condition_2_sortIndex)]
+            [DisplayName(Sound_Condition_2_displayName)]
+            public virtual int Sound_Condition_2 {
+                get => Sound_Condition_2_raw;
+                set {
+                    if (Sound_Condition_2_raw == value) return;
+                    Sound_Condition_2_raw = value;
+                    OnPropertyChanged(nameof(Sound_Condition_2));
+                }
+            }
+
+            protected int Sound_Condition_Header_3_raw;
+            public const string Sound_Condition_Header_3_displayName = "Sound: Condition Header 3";
+            public const int Sound_Condition_Header_3_sortIndex = 3150;
+            [SortOrder(Sound_Condition_Header_3_sortIndex)]
+            [DisplayName(Sound_Condition_Header_3_displayName)]
+            public virtual int Sound_Condition_Header_3 {
+                get => Sound_Condition_Header_3_raw;
+                set {
+                    if (Sound_Condition_Header_3_raw == value) return;
+                    Sound_Condition_Header_3_raw = value;
+                    OnPropertyChanged(nameof(Sound_Condition_Header_3));
+                }
+            }
+
+            protected int Sound_Condition_3_raw;
+            public const string Sound_Condition_3_displayName = "Sound: Condition 3";
+            public const int Sound_Condition_3_sortIndex = 3200;
+            [SortOrder(Sound_Condition_3_sortIndex)]
+            [DisplayName(Sound_Condition_3_displayName)]
+            public virtual int Sound_Condition_3 {
+                get => Sound_Condition_3_raw;
+                set {
+                    if (Sound_Condition_3_raw == value) return;
+                    Sound_Condition_3_raw = value;
+                    OnPropertyChanged(nameof(Sound_Condition_3));
+                }
+            }
+
+            protected int Sound_Condition_Header_4_raw;
+            public const string Sound_Condition_Header_4_displayName = "Sound: Condition Header 4";
+            public const int Sound_Condition_Header_4_sortIndex = 3250;
+            [SortOrder(Sound_Condition_Header_4_sortIndex)]
+            [DisplayName(Sound_Condition_Header_4_displayName)]
+            public virtual int Sound_Condition_Header_4 {
+                get => Sound_Condition_Header_4_raw;
+                set {
+                    if (Sound_Condition_Header_4_raw == value) return;
+                    Sound_Condition_Header_4_raw = value;
+                    OnPropertyChanged(nameof(Sound_Condition_Header_4));
+                }
+            }
+
+            protected int Sound_Condition_4_raw;
+            public const string Sound_Condition_4_displayName = "Sound: Condition 4";
+            public const int Sound_Condition_4_sortIndex = 3300;
+            [SortOrder(Sound_Condition_4_sortIndex)]
+            [DisplayName(Sound_Condition_4_displayName)]
+            public virtual int Sound_Condition_4 {
+                get => Sound_Condition_4_raw;
+                set {
+                    if (Sound_Condition_4_raw == value) return;
+                    Sound_Condition_4_raw = value;
+                    OnPropertyChanged(nameof(Sound_Condition_4));
+                }
+            }
+
+            protected int Sound_Condition_Header_5_raw;
+            public const string Sound_Condition_Header_5_displayName = "Sound: Condition Header 5";
+            public const int Sound_Condition_Header_5_sortIndex = 3350;
+            [SortOrder(Sound_Condition_Header_5_sortIndex)]
+            [DisplayName(Sound_Condition_Header_5_displayName)]
+            public virtual int Sound_Condition_Header_5 {
+                get => Sound_Condition_Header_5_raw;
+                set {
+                    if (Sound_Condition_Header_5_raw == value) return;
+                    Sound_Condition_Header_5_raw = value;
+                    OnPropertyChanged(nameof(Sound_Condition_Header_5));
+                }
+            }
+
+            protected int Sound_Condition_5_raw;
+            public const string Sound_Condition_5_displayName = "Sound: Condition 5";
+            public const int Sound_Condition_5_sortIndex = 3400;
+            [SortOrder(Sound_Condition_5_sortIndex)]
+            [DisplayName(Sound_Condition_5_displayName)]
+            public virtual int Sound_Condition_5 {
+                get => Sound_Condition_5_raw;
+                set {
+                    if (Sound_Condition_5_raw == value) return;
+                    Sound_Condition_5_raw = value;
+                    OnPropertyChanged(nameof(Sound_Condition_5));
+                }
+            }
+
+            protected uint Header_2_raw;
+            public const string Header_2_displayName = "Header 2";
+            public const int Header_2_sortIndex = 3450;
+            [SortOrder(Header_2_sortIndex)]
+            [DisplayName(Header_2_displayName)]
+            public virtual uint Header_2 {
+                get => Header_2_raw;
+                set {
+                    if (Header_2_raw == value) return;
+                    Header_2_raw = value;
+                    OnPropertyChanged(nameof(Header_2));
+                }
+            }
+
+            protected uint Projectile_Entity_Collider_raw;
+            public const string Projectile_Entity_Collider_displayName = "Projectile: Entity Collider";
+            public const int Projectile_Entity_Collider_sortIndex = 3500;
+            [SortOrder(Projectile_Entity_Collider_sortIndex)]
+            [DisplayName(Projectile_Entity_Collider_displayName)]
+            public virtual uint Projectile_Entity_Collider {
+                get => Projectile_Entity_Collider_raw;
+                set {
+                    if (Projectile_Entity_Collider_raw == value) return;
+                    Projectile_Entity_Collider_raw = value;
+                    OnPropertyChanged(nameof(Projectile_Entity_Collider));
+                }
+            }
+
+            protected float Projectile_Model_Lifespan_raw;
+            public const string Projectile_Model_Lifespan_displayName = "Projectile: Model Lifespan";
+            public const int Projectile_Model_Lifespan_sortIndex = 3550;
+            [SortOrder(Projectile_Model_Lifespan_sortIndex)]
+            [DisplayName(Projectile_Model_Lifespan_displayName)]
+            public virtual float Projectile_Model_Lifespan {
+                get => Projectile_Model_Lifespan_raw;
+                set {
+                    if (Projectile_Model_Lifespan_raw == value) return;
+                    Projectile_Model_Lifespan_raw = value;
+                    OnPropertyChanged(nameof(Projectile_Model_Lifespan));
+                }
+            }
+
+            protected uint Projectile_Distance_Range_raw;
+            public const string Projectile_Distance_Range_displayName = "Projectile: Distance Range";
+            public const int Projectile_Distance_Range_sortIndex = 3600;
+            [SortOrder(Projectile_Distance_Range_sortIndex)]
+            [DisplayName(Projectile_Distance_Range_displayName)]
+            public virtual uint Projectile_Distance_Range {
+                get => Projectile_Distance_Range_raw;
+                set {
+                    if (Projectile_Distance_Range_raw == value) return;
+                    Projectile_Distance_Range_raw = value;
+                    OnPropertyChanged(nameof(Projectile_Distance_Range));
+                }
+            }
+
+            protected byte Unk_41_raw;
+            public const string Unk_41_displayName = "Unk 41";
+            public const int Unk_41_sortIndex = 3650;
+            [SortOrder(Unk_41_sortIndex)]
+            [DisplayName(Unk_41_displayName)]
+            public virtual byte Unk_41 {
+                get => Unk_41_raw;
+                set {
+                    if (Unk_41_raw == value) return;
+                    Unk_41_raw = value;
+                    OnPropertyChanged(nameof(Unk_41));
+                }
+            }
+
+            protected byte Unk_42_raw;
+            public const string Unk_42_displayName = "Unk 42";
+            public const int Unk_42_sortIndex = 3700;
+            [SortOrder(Unk_42_sortIndex)]
+            [DisplayName(Unk_42_displayName)]
+            public virtual byte Unk_42 {
+                get => Unk_42_raw;
+                set {
+                    if (Unk_42_raw == value) return;
+                    Unk_42_raw = value;
+                    OnPropertyChanged(nameof(Unk_42));
+                }
+            }
+
+            protected byte Unk_43_raw;
+            public const string Unk_43_displayName = "Unk 43";
+            public const int Unk_43_sortIndex = 3750;
+            [SortOrder(Unk_43_sortIndex)]
+            [DisplayName(Unk_43_displayName)]
+            public virtual byte Unk_43 {
+                get => Unk_43_raw;
+                set {
+                    if (Unk_43_raw == value) return;
+                    Unk_43_raw = value;
+                    OnPropertyChanged(nameof(Unk_43));
+                }
+            }
+
+            protected byte Unk_44_raw;
+            public const string Unk_44_displayName = "Unk 44";
+            public const int Unk_44_sortIndex = 3800;
+            [SortOrder(Unk_44_sortIndex)]
+            [DisplayName(Unk_44_displayName)]
+            public virtual byte Unk_44 {
+                get => Unk_44_raw;
+                set {
+                    if (Unk_44_raw == value) return;
+                    Unk_44_raw = value;
+                    OnPropertyChanged(nameof(Unk_44));
+                }
+            }
+
+            protected uint Unk_45_raw;
+            public const string Unk_45_displayName = "Unk 45";
+            public const int Unk_45_sortIndex = 3850;
+            [SortOrder(Unk_45_sortIndex)]
+            [DisplayName(Unk_45_displayName)]
+            public virtual uint Unk_45 {
+                get => Unk_45_raw;
+                set {
+                    if (Unk_45_raw == value) return;
+                    Unk_45_raw = value;
+                    OnPropertyChanged(nameof(Unk_45));
+                }
+            }
+
+            protected uint Unk_46_raw;
+            public const string Unk_46_displayName = "Unk 46";
+            public const int Unk_46_sortIndex = 3900;
+            [SortOrder(Unk_46_sortIndex)]
+            [DisplayName(Unk_46_displayName)]
+            public virtual uint Unk_46 {
+                get => Unk_46_raw;
+                set {
+                    if (Unk_46_raw == value) return;
+                    Unk_46_raw = value;
+                    OnPropertyChanged(nameof(Unk_46));
+                }
+            }
+
+            protected uint Unk_47_raw;
+            public const string Unk_47_displayName = "Unk 47";
+            public const int Unk_47_sortIndex = 3950;
+            [SortOrder(Unk_47_sortIndex)]
+            [DisplayName(Unk_47_displayName)]
+            public virtual uint Unk_47 {
+                get => Unk_47_raw;
+                set {
+                    if (Unk_47_raw == value) return;
+                    Unk_47_raw = value;
+                    OnPropertyChanged(nameof(Unk_47));
+                }
+            }
+
+            protected float Projectile_Spawn_Pos_Y_raw;
+            public const string Projectile_Spawn_Pos_Y_displayName = "Projectile: Spawn Pos Y";
+            public const int Projectile_Spawn_Pos_Y_sortIndex = 4000;
+            [SortOrder(Projectile_Spawn_Pos_Y_sortIndex)]
+            [DisplayName(Projectile_Spawn_Pos_Y_displayName)]
+            public virtual float Projectile_Spawn_Pos_Y {
+                get => Projectile_Spawn_Pos_Y_raw;
+                set {
+                    if (Projectile_Spawn_Pos_Y_raw == value) return;
+                    Projectile_Spawn_Pos_Y_raw = value;
+                    OnPropertyChanged(nameof(Projectile_Spawn_Pos_Y));
+                }
+            }
+
+            protected float Projectile_Spawn_Pos_X_raw;
+            public const string Projectile_Spawn_Pos_X_displayName = "Projectile: Spawn Pos X";
+            public const int Projectile_Spawn_Pos_X_sortIndex = 4050;
+            [SortOrder(Projectile_Spawn_Pos_X_sortIndex)]
+            [DisplayName(Projectile_Spawn_Pos_X_displayName)]
+            public virtual float Projectile_Spawn_Pos_X {
+                get => Projectile_Spawn_Pos_X_raw;
+                set {
+                    if (Projectile_Spawn_Pos_X_raw == value) return;
+                    Projectile_Spawn_Pos_X_raw = value;
+                    OnPropertyChanged(nameof(Projectile_Spawn_Pos_X));
+                }
+            }
+
+            protected float Projectile_Velocity_raw;
+            public const string Projectile_Velocity_displayName = "Projectile: Velocity";
+            public const int Projectile_Velocity_sortIndex = 4100;
+            [SortOrder(Projectile_Velocity_sortIndex)]
+            [DisplayName(Projectile_Velocity_displayName)]
+            public virtual float Projectile_Velocity {
+                get => Projectile_Velocity_raw;
+                set {
+                    if (Projectile_Velocity_raw == value) return;
+                    Projectile_Velocity_raw = value;
+                    OnPropertyChanged(nameof(Projectile_Velocity));
+                }
+            }
+
+            protected float Projectile_Falloff_raw;
+            public const string Projectile_Falloff_displayName = "Projectile: Falloff";
+            public const int Projectile_Falloff_sortIndex = 4150;
+            [SortOrder(Projectile_Falloff_sortIndex)]
+            [DisplayName(Projectile_Falloff_displayName)]
+            public virtual float Projectile_Falloff {
+                get => Projectile_Falloff_raw;
+                set {
+                    if (Projectile_Falloff_raw == value) return;
+                    Projectile_Falloff_raw = value;
+                    OnPropertyChanged(nameof(Projectile_Falloff));
+                }
+            }
+
+            protected float Unk_48_raw;
+            public const string Unk_48_displayName = "Unk 48";
+            public const int Unk_48_sortIndex = 4200;
+            [SortOrder(Unk_48_sortIndex)]
+            [DisplayName(Unk_48_displayName)]
+            public virtual float Unk_48 {
+                get => Unk_48_raw;
+                set {
+                    if (Unk_48_raw == value) return;
+                    Unk_48_raw = value;
+                    OnPropertyChanged(nameof(Unk_48));
+                }
+            }
+
+            protected float Unk_49_raw;
+            public const string Unk_49_displayName = "Unk 49";
+            public const int Unk_49_sortIndex = 4250;
+            [SortOrder(Unk_49_sortIndex)]
+            [DisplayName(Unk_49_displayName)]
+            public virtual float Unk_49 {
+                get => Unk_49_raw;
+                set {
+                    if (Unk_49_raw == value) return;
+                    Unk_49_raw = value;
+                    OnPropertyChanged(nameof(Unk_49));
+                }
+            }
+
+            protected float Unk_50_raw;
+            public const string Unk_50_displayName = "Unk 50";
+            public const int Unk_50_sortIndex = 4300;
+            [SortOrder(Unk_50_sortIndex)]
+            [DisplayName(Unk_50_displayName)]
+            public virtual float Unk_50 {
+                get => Unk_50_raw;
+                set {
+                    if (Unk_50_raw == value) return;
+                    Unk_50_raw = value;
+                    OnPropertyChanged(nameof(Unk_50));
+                }
+            }
+
+            protected float Unk_51_raw;
+            public const string Unk_51_displayName = "Unk 51";
+            public const int Unk_51_sortIndex = 4350;
+            [SortOrder(Unk_51_sortIndex)]
+            [DisplayName(Unk_51_displayName)]
+            public virtual float Unk_51 {
+                get => Unk_51_raw;
+                set {
+                    if (Unk_51_raw == value) return;
+                    Unk_51_raw = value;
+                    OnPropertyChanged(nameof(Unk_51));
+                }
+            }
+
+            protected float Unk_52_raw;
+            public const string Unk_52_displayName = "Unk 52";
+            public const int Unk_52_sortIndex = 4400;
+            [SortOrder(Unk_52_sortIndex)]
+            [DisplayName(Unk_52_displayName)]
+            public virtual float Unk_52 {
+                get => Unk_52_raw;
+                set {
+                    if (Unk_52_raw == value) return;
+                    Unk_52_raw = value;
+                    OnPropertyChanged(nameof(Unk_52));
+                }
+            }
+
+            protected float Unk_53_raw;
+            public const string Unk_53_displayName = "Unk 53";
+            public const int Unk_53_sortIndex = 4450;
+            [SortOrder(Unk_53_sortIndex)]
+            [DisplayName(Unk_53_displayName)]
+            public virtual float Unk_53 {
+                get => Unk_53_raw;
+                set {
+                    if (Unk_53_raw == value) return;
+                    Unk_53_raw = value;
+                    OnPropertyChanged(nameof(Unk_53));
+                }
+            }
+
+            protected float Unk_54_raw;
+            public const string Unk_54_displayName = "Unk 54";
+            public const int Unk_54_sortIndex = 4500;
+            [SortOrder(Unk_54_sortIndex)]
+            [DisplayName(Unk_54_displayName)]
+            public virtual float Unk_54 {
+                get => Unk_54_raw;
+                set {
+                    if (Unk_54_raw == value) return;
+                    Unk_54_raw = value;
+                    OnPropertyChanged(nameof(Unk_54));
+                }
+            }
+
+            protected float Projectile_Hitbox_Range_raw;
+            public const string Projectile_Hitbox_Range_displayName = "Projectile: Hitbox Range";
+            public const int Projectile_Hitbox_Range_sortIndex = 4550;
+            [SortOrder(Projectile_Hitbox_Range_sortIndex)]
+            [DisplayName(Projectile_Hitbox_Range_displayName)]
+            public virtual float Projectile_Hitbox_Range {
+                get => Projectile_Hitbox_Range_raw;
+                set {
+                    if (Projectile_Hitbox_Range_raw == value) return;
+                    Projectile_Hitbox_Range_raw = value;
+                    OnPropertyChanged(nameof(Projectile_Hitbox_Range));
+                }
+            }
+
+            protected uint Unk_55_raw;
+            public const string Unk_55_displayName = "Unk 55";
+            public const int Unk_55_sortIndex = 4600;
+            [SortOrder(Unk_55_sortIndex)]
+            [DisplayName(Unk_55_displayName)]
+            public virtual uint Unk_55 {
+                get => Unk_55_raw;
+                set {
+                    if (Unk_55_raw == value) return;
+                    Unk_55_raw = value;
+                    OnPropertyChanged(nameof(Unk_55));
+                }
+            }
+
+            protected uint Insta_Kill_Trigger_raw;
+            public const string Insta_Kill_Trigger_displayName = "Insta-Kill Trigger";
+            public const int Insta_Kill_Trigger_sortIndex = 4650;
+            [SortOrder(Insta_Kill_Trigger_sortIndex)]
+            [DisplayName(Insta_Kill_Trigger_displayName)]
+            public virtual uint Insta_Kill_Trigger {
+                get => Insta_Kill_Trigger_raw;
+                set {
+                    if (Insta_Kill_Trigger_raw == value) return;
+                    Insta_Kill_Trigger_raw = value;
+                    OnPropertyChanged(nameof(Insta_Kill_Trigger));
+                }
+            }
+
+            protected uint Unk_56_raw;
+            public const string Unk_56_displayName = "Unk 56";
+            public const int Unk_56_sortIndex = 4700;
+            [SortOrder(Unk_56_sortIndex)]
+            [DisplayName(Unk_56_displayName)]
+            public virtual uint Unk_56 {
+                get => Unk_56_raw;
+                set {
+                    if (Unk_56_raw == value) return;
+                    Unk_56_raw = value;
+                    OnPropertyChanged(nameof(Unk_56));
+                }
+            }
+
+            protected ushort Unk_57_raw;
+            public const string Unk_57_displayName = "Unk 57";
+            public const int Unk_57_sortIndex = 4750;
+            [SortOrder(Unk_57_sortIndex)]
+            [DisplayName(Unk_57_displayName)]
+            public virtual ushort Unk_57 {
+                get => Unk_57_raw;
+                set {
+                    if (Unk_57_raw == value) return;
+                    Unk_57_raw = value;
+                    OnPropertyChanged(nameof(Unk_57));
+                }
+            }
+
+            protected float Entity_Collide_1_raw;
+            public const string Entity_Collide_1_displayName = "Entity: Collide 1";
+            public const int Entity_Collide_1_sortIndex = 4800;
+            [SortOrder(Entity_Collide_1_sortIndex)]
+            [DisplayName(Entity_Collide_1_displayName)]
+            public virtual float Entity_Collide_1 {
+                get => Entity_Collide_1_raw;
+                set {
+                    if (Entity_Collide_1_raw == value) return;
+                    Entity_Collide_1_raw = value;
+                    OnPropertyChanged(nameof(Entity_Collide_1));
+                }
+            }
+
+            protected float Unk_58_raw;
+            public const string Unk_58_displayName = "Unk 58";
+            public const int Unk_58_sortIndex = 4850;
+            [SortOrder(Unk_58_sortIndex)]
+            [DisplayName(Unk_58_displayName)]
+            public virtual float Unk_58 {
+                get => Unk_58_raw;
+                set {
+                    if (Unk_58_raw == value) return;
+                    Unk_58_raw = value;
+                    OnPropertyChanged(nameof(Unk_58));
+                }
+            }
+
+            protected float Unk_59_raw;
+            public const string Unk_59_displayName = "Unk 59";
+            public const int Unk_59_sortIndex = 4900;
+            [SortOrder(Unk_59_sortIndex)]
+            [DisplayName(Unk_59_displayName)]
+            public virtual float Unk_59 {
+                get => Unk_59_raw;
+                set {
+                    if (Unk_59_raw == value) return;
+                    Unk_59_raw = value;
+                    OnPropertyChanged(nameof(Unk_59));
+                }
+            }
+
+            protected byte Entity_Collide_2_raw;
+            public const string Entity_Collide_2_displayName = "Entity: Collide 2";
+            public const int Entity_Collide_2_sortIndex = 4950;
+            [SortOrder(Entity_Collide_2_sortIndex)]
+            [DisplayName(Entity_Collide_2_displayName)]
+            public virtual byte Entity_Collide_2 {
+                get => Entity_Collide_2_raw;
+                set {
+                    if (Entity_Collide_2_raw == value) return;
+                    Entity_Collide_2_raw = value;
+                    OnPropertyChanged(nameof(Entity_Collide_2));
+                }
+            }
+
+            protected byte Unk_60_raw;
+            public const string Unk_60_displayName = "Unk 60";
+            public const int Unk_60_sortIndex = 5000;
+            [SortOrder(Unk_60_sortIndex)]
+            [DisplayName(Unk_60_displayName)]
+            public virtual byte Unk_60 {
+                get => Unk_60_raw;
+                set {
+                    if (Unk_60_raw == value) return;
+                    Unk_60_raw = value;
+                    OnPropertyChanged(nameof(Unk_60));
+                }
+            }
+
+            protected byte Entity_Spawn_Location_raw;
+            public const string Entity_Spawn_Location_displayName = "Entity: Spawn Location";
+            public const int Entity_Spawn_Location_sortIndex = 5050;
+            [SortOrder(Entity_Spawn_Location_sortIndex)]
+            [DisplayName(Entity_Spawn_Location_displayName)]
+            public virtual byte Entity_Spawn_Location {
+                get => Entity_Spawn_Location_raw;
+                set {
+                    if (Entity_Spawn_Location_raw == value) return;
+                    Entity_Spawn_Location_raw = value;
+                    OnPropertyChanged(nameof(Entity_Spawn_Location));
+                }
+            }
+
+            protected byte Entity_Range_raw;
+            public const string Entity_Range_displayName = "Entity: Range";
+            public const int Entity_Range_sortIndex = 5100;
+            [SortOrder(Entity_Range_sortIndex)]
+            [DisplayName(Entity_Range_displayName)]
+            public virtual byte Entity_Range {
+                get => Entity_Range_raw;
+                set {
+                    if (Entity_Range_raw == value) return;
+                    Entity_Range_raw = value;
+                    OnPropertyChanged(nameof(Entity_Range));
+                }
+            }
+
+            protected byte Unk_61_raw;
+            public const string Unk_61_displayName = "Unk 61";
+            public const int Unk_61_sortIndex = 5150;
+            [SortOrder(Unk_61_sortIndex)]
+            [DisplayName(Unk_61_displayName)]
+            public virtual byte Unk_61 {
+                get => Unk_61_raw;
+                set {
+                    if (Unk_61_raw == value) return;
+                    Unk_61_raw = value;
+                    OnPropertyChanged(nameof(Unk_61));
+                }
+            }
+
+            protected byte Unk_62_raw;
+            public const string Unk_62_displayName = "Unk 62";
+            public const int Unk_62_sortIndex = 5200;
+            [SortOrder(Unk_62_sortIndex)]
+            [DisplayName(Unk_62_displayName)]
+            public virtual byte Unk_62 {
+                get => Unk_62_raw;
+                set {
+                    if (Unk_62_raw == value) return;
+                    Unk_62_raw = value;
+                    OnPropertyChanged(nameof(Unk_62));
+                }
+            }
+
+            protected ushort Unk_63_raw;
+            public const string Unk_63_displayName = "Unk 63";
+            public const int Unk_63_sortIndex = 5250;
+            [SortOrder(Unk_63_sortIndex)]
+            [DisplayName(Unk_63_displayName)]
+            public virtual ushort Unk_63 {
+                get => Unk_63_raw;
+                set {
+                    if (Unk_63_raw == value) return;
+                    Unk_63_raw = value;
+                    OnPropertyChanged(nameof(Unk_63));
+                }
+            }
+
+            protected uint Unk_64_raw;
+            public const string Unk_64_displayName = "Unk 64";
+            public const int Unk_64_sortIndex = 5300;
+            [SortOrder(Unk_64_sortIndex)]
+            [DisplayName(Unk_64_displayName)]
+            public virtual uint Unk_64 {
+                get => Unk_64_raw;
+                set {
+                    if (Unk_64_raw == value) return;
+                    Unk_64_raw = value;
+                    OnPropertyChanged(nameof(Unk_64));
+                }
+            }
+
+            protected uint Number_of_Modifiers_raw;
+            public const string Number_of_Modifiers_displayName = "Number of Modifiers";
+            public const int Number_of_Modifiers_sortIndex = 5350;
+            [SortOrder(Number_of_Modifiers_sortIndex)]
+            [DisplayName(Number_of_Modifiers_displayName)]
+            public virtual uint Number_of_Modifiers {
+                get => Number_of_Modifiers_raw;
+                set {
+                    if (Number_of_Modifiers_raw == value) return;
+                    Number_of_Modifiers_raw = value;
+                    OnPropertyChanged(nameof(Number_of_Modifiers));
+                }
+            }
+
             public static ulong GetEntryCount(List<List<dynamic>> data) {
                 return FixedSizeCount;
             }
@@ -1136,6 +2068,71 @@ namespace MHW_Editor.Weapons {
                 data.Unk_38_raw = reader.ReadUInt32();
                 data.Unk_39_raw = reader.ReadUInt32();
                 data.Unk_40_raw = reader.ReadUInt32();
+                data.Wwise_Container_Header_raw = reader.ReadUInt32();
+                if (data.Wwise_Container_Header_raw != 0) data.Wwise_Container_raw = reader.ReadNullTermString();
+                data.Sound_Gun_Fire_Header_raw = reader.ReadInt32();
+                data.Sound_Gun_Fire_raw = reader.ReadInt32();
+                data.Sound_Bullet_Travel_Header_raw = reader.ReadInt32();
+                data.Sound_Bullet_Travel_raw = reader.ReadInt32();
+                data.Sound_Explode_Header_raw = reader.ReadInt32();
+                data.Sound_Explode_raw = reader.ReadInt32();
+                data.Sound_Hit_Wall_or_Ground_Header_raw = reader.ReadInt32();
+                data.Sound_Hit_Wall_or_Ground_raw = reader.ReadInt32();
+                data.Sound_Hit_Obj_Hit_Header_raw = reader.ReadInt32();
+                data.Sound_Hit_Obj_Hit_raw = reader.ReadInt32();
+                data.Sound_Condition_Header_1_raw = reader.ReadInt32();
+                data.Sound_Condition_1_raw = reader.ReadInt32();
+                data.Sound_Slinger_Condition_Header_1_raw = reader.ReadInt32();
+                data.Sound_Slinger_Condition_1_raw = reader.ReadInt32();
+                data.Sound_Slinger_Condition_Header_2_raw = reader.ReadInt32();
+                data.Sound_Slinger_Condition_2_raw = reader.ReadInt32();
+                data.Sound_Condition_Header_2_raw = reader.ReadInt32();
+                data.Sound_Condition_2_raw = reader.ReadInt32();
+                data.Sound_Condition_Header_3_raw = reader.ReadInt32();
+                data.Sound_Condition_3_raw = reader.ReadInt32();
+                data.Sound_Condition_Header_4_raw = reader.ReadInt32();
+                data.Sound_Condition_4_raw = reader.ReadInt32();
+                data.Sound_Condition_Header_5_raw = reader.ReadInt32();
+                data.Sound_Condition_5_raw = reader.ReadInt32();
+                data.Header_2_raw = reader.ReadUInt32();
+                data.Projectile_Entity_Collider_raw = reader.ReadUInt32();
+                data.Projectile_Model_Lifespan_raw = reader.ReadSingle();
+                data.Projectile_Distance_Range_raw = reader.ReadUInt32();
+                data.Unk_41_raw = reader.ReadByte();
+                data.Unk_42_raw = reader.ReadByte();
+                data.Unk_43_raw = reader.ReadByte();
+                data.Unk_44_raw = reader.ReadByte();
+                data.Unk_45_raw = reader.ReadUInt32();
+                data.Unk_46_raw = reader.ReadUInt32();
+                data.Unk_47_raw = reader.ReadUInt32();
+                data.Projectile_Spawn_Pos_Y_raw = reader.ReadSingle();
+                data.Projectile_Spawn_Pos_X_raw = reader.ReadSingle();
+                data.Projectile_Velocity_raw = reader.ReadSingle();
+                data.Projectile_Falloff_raw = reader.ReadSingle();
+                data.Unk_48_raw = reader.ReadSingle();
+                data.Unk_49_raw = reader.ReadSingle();
+                data.Unk_50_raw = reader.ReadSingle();
+                data.Unk_51_raw = reader.ReadSingle();
+                data.Unk_52_raw = reader.ReadSingle();
+                data.Unk_53_raw = reader.ReadSingle();
+                data.Unk_54_raw = reader.ReadSingle();
+                data.Projectile_Hitbox_Range_raw = reader.ReadSingle();
+                data.Unk_55_raw = reader.ReadUInt32();
+                data.Insta_Kill_Trigger_raw = reader.ReadUInt32();
+                data.Unk_56_raw = reader.ReadUInt32();
+                data.Unk_57_raw = reader.ReadUInt16();
+                data.Entity_Collide_1_raw = reader.ReadSingle();
+                data.Unk_58_raw = reader.ReadSingle();
+                data.Unk_59_raw = reader.ReadSingle();
+                data.Entity_Collide_2_raw = reader.ReadByte();
+                data.Unk_60_raw = reader.ReadByte();
+                data.Entity_Spawn_Location_raw = reader.ReadByte();
+                data.Entity_Range_raw = reader.ReadByte();
+                data.Unk_61_raw = reader.ReadByte();
+                data.Unk_62_raw = reader.ReadByte();
+                data.Unk_63_raw = reader.ReadUInt16();
+                data.Unk_64_raw = reader.ReadUInt32();
+                data.Number_of_Modifiers_raw = reader.ReadUInt32();
                 return data;
             }
 
@@ -1182,413 +2179,6 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_38_raw);
                 writer.Write(Unk_39_raw);
                 writer.Write(Unk_40_raw);
-            }
-        }
-
-        public partial class Shlp_3_ : MhwStructItem {
-            public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Shlp (3)";
-
-            protected uint Wwise_Container_Header_raw;
-            public const string Wwise_Container_Header_displayName = "Wwise Container Header";
-            public const int Wwise_Container_Header_sortIndex = 50;
-            [SortOrder(Wwise_Container_Header_sortIndex)]
-            [DisplayName(Wwise_Container_Header_displayName)]
-            public virtual uint Wwise_Container_Header {
-                get => Wwise_Container_Header_raw;
-                set {
-                    if (Wwise_Container_Header_raw == value) return;
-                    Wwise_Container_Header_raw = value;
-                    OnPropertyChanged(nameof(Wwise_Container_Header));
-                }
-            }
-
-            protected string Wwise_Container_raw;
-            public const string Wwise_Container_displayName = "Wwise Container";
-            public const int Wwise_Container_sortIndex = 100;
-            [SortOrder(Wwise_Container_sortIndex)]
-            [DisplayName(Wwise_Container_displayName)]
-            public virtual string Wwise_Container {
-                get => Wwise_Container_raw;
-                set {
-                    if (Wwise_Container_raw == value) return;
-                    Wwise_Container_raw = value;
-                    OnPropertyChanged(nameof(Wwise_Container));
-                }
-            }
-
-            protected int Sound_Gun_Fire_Header_raw;
-            public const string Sound_Gun_Fire_Header_displayName = "Sound: Gun Fire Header";
-            public const int Sound_Gun_Fire_Header_sortIndex = 150;
-            [SortOrder(Sound_Gun_Fire_Header_sortIndex)]
-            [DisplayName(Sound_Gun_Fire_Header_displayName)]
-            public virtual int Sound_Gun_Fire_Header {
-                get => Sound_Gun_Fire_Header_raw;
-                set {
-                    if (Sound_Gun_Fire_Header_raw == value) return;
-                    Sound_Gun_Fire_Header_raw = value;
-                    OnPropertyChanged(nameof(Sound_Gun_Fire_Header));
-                }
-            }
-
-            protected int Sound_Gun_Fire_raw;
-            public const string Sound_Gun_Fire_displayName = "Sound: Gun Fire";
-            public const int Sound_Gun_Fire_sortIndex = 200;
-            [SortOrder(Sound_Gun_Fire_sortIndex)]
-            [DisplayName(Sound_Gun_Fire_displayName)]
-            public virtual int Sound_Gun_Fire {
-                get => Sound_Gun_Fire_raw;
-                set {
-                    if (Sound_Gun_Fire_raw == value) return;
-                    Sound_Gun_Fire_raw = value;
-                    OnPropertyChanged(nameof(Sound_Gun_Fire));
-                }
-            }
-
-            protected int Sound_Bullet_Travel_Header_raw;
-            public const string Sound_Bullet_Travel_Header_displayName = "Sound: Bullet Travel Header";
-            public const int Sound_Bullet_Travel_Header_sortIndex = 250;
-            [SortOrder(Sound_Bullet_Travel_Header_sortIndex)]
-            [DisplayName(Sound_Bullet_Travel_Header_displayName)]
-            public virtual int Sound_Bullet_Travel_Header {
-                get => Sound_Bullet_Travel_Header_raw;
-                set {
-                    if (Sound_Bullet_Travel_Header_raw == value) return;
-                    Sound_Bullet_Travel_Header_raw = value;
-                    OnPropertyChanged(nameof(Sound_Bullet_Travel_Header));
-                }
-            }
-
-            protected int Sound_Bullet_Travel_raw;
-            public const string Sound_Bullet_Travel_displayName = "Sound: Bullet Travel";
-            public const int Sound_Bullet_Travel_sortIndex = 300;
-            [SortOrder(Sound_Bullet_Travel_sortIndex)]
-            [DisplayName(Sound_Bullet_Travel_displayName)]
-            public virtual int Sound_Bullet_Travel {
-                get => Sound_Bullet_Travel_raw;
-                set {
-                    if (Sound_Bullet_Travel_raw == value) return;
-                    Sound_Bullet_Travel_raw = value;
-                    OnPropertyChanged(nameof(Sound_Bullet_Travel));
-                }
-            }
-
-            protected int Sound_Explode_Header_raw;
-            public const string Sound_Explode_Header_displayName = "Sound: Explode Header";
-            public const int Sound_Explode_Header_sortIndex = 350;
-            [SortOrder(Sound_Explode_Header_sortIndex)]
-            [DisplayName(Sound_Explode_Header_displayName)]
-            public virtual int Sound_Explode_Header {
-                get => Sound_Explode_Header_raw;
-                set {
-                    if (Sound_Explode_Header_raw == value) return;
-                    Sound_Explode_Header_raw = value;
-                    OnPropertyChanged(nameof(Sound_Explode_Header));
-                }
-            }
-
-            protected int Sound_Explode_raw;
-            public const string Sound_Explode_displayName = "Sound: Explode";
-            public const int Sound_Explode_sortIndex = 400;
-            [SortOrder(Sound_Explode_sortIndex)]
-            [DisplayName(Sound_Explode_displayName)]
-            public virtual int Sound_Explode {
-                get => Sound_Explode_raw;
-                set {
-                    if (Sound_Explode_raw == value) return;
-                    Sound_Explode_raw = value;
-                    OnPropertyChanged(nameof(Sound_Explode));
-                }
-            }
-
-            protected int Sound_Hit_Wall_or_Ground_Header_raw;
-            public const string Sound_Hit_Wall_or_Ground_Header_displayName = "Sound: Hit Wall or Ground Header";
-            public const int Sound_Hit_Wall_or_Ground_Header_sortIndex = 450;
-            [SortOrder(Sound_Hit_Wall_or_Ground_Header_sortIndex)]
-            [DisplayName(Sound_Hit_Wall_or_Ground_Header_displayName)]
-            public virtual int Sound_Hit_Wall_or_Ground_Header {
-                get => Sound_Hit_Wall_or_Ground_Header_raw;
-                set {
-                    if (Sound_Hit_Wall_or_Ground_Header_raw == value) return;
-                    Sound_Hit_Wall_or_Ground_Header_raw = value;
-                    OnPropertyChanged(nameof(Sound_Hit_Wall_or_Ground_Header));
-                }
-            }
-
-            protected int Sound_Hit_Wall_or_Ground_raw;
-            public const string Sound_Hit_Wall_or_Ground_displayName = "Sound: Hit Wall or Ground";
-            public const int Sound_Hit_Wall_or_Ground_sortIndex = 500;
-            [SortOrder(Sound_Hit_Wall_or_Ground_sortIndex)]
-            [DisplayName(Sound_Hit_Wall_or_Ground_displayName)]
-            public virtual int Sound_Hit_Wall_or_Ground {
-                get => Sound_Hit_Wall_or_Ground_raw;
-                set {
-                    if (Sound_Hit_Wall_or_Ground_raw == value) return;
-                    Sound_Hit_Wall_or_Ground_raw = value;
-                    OnPropertyChanged(nameof(Sound_Hit_Wall_or_Ground));
-                }
-            }
-
-            protected int Sound_Hit_Obj_Hit_Header_raw;
-            public const string Sound_Hit_Obj_Hit_Header_displayName = "Sound: Hit Obj Hit Header";
-            public const int Sound_Hit_Obj_Hit_Header_sortIndex = 550;
-            [SortOrder(Sound_Hit_Obj_Hit_Header_sortIndex)]
-            [DisplayName(Sound_Hit_Obj_Hit_Header_displayName)]
-            public virtual int Sound_Hit_Obj_Hit_Header {
-                get => Sound_Hit_Obj_Hit_Header_raw;
-                set {
-                    if (Sound_Hit_Obj_Hit_Header_raw == value) return;
-                    Sound_Hit_Obj_Hit_Header_raw = value;
-                    OnPropertyChanged(nameof(Sound_Hit_Obj_Hit_Header));
-                }
-            }
-
-            protected int Sound_Hit_Obj_Hit_raw;
-            public const string Sound_Hit_Obj_Hit_displayName = "Sound: Hit Obj Hit";
-            public const int Sound_Hit_Obj_Hit_sortIndex = 600;
-            [SortOrder(Sound_Hit_Obj_Hit_sortIndex)]
-            [DisplayName(Sound_Hit_Obj_Hit_displayName)]
-            public virtual int Sound_Hit_Obj_Hit {
-                get => Sound_Hit_Obj_Hit_raw;
-                set {
-                    if (Sound_Hit_Obj_Hit_raw == value) return;
-                    Sound_Hit_Obj_Hit_raw = value;
-                    OnPropertyChanged(nameof(Sound_Hit_Obj_Hit));
-                }
-            }
-
-            protected int Sound_Condition_Header_1_raw;
-            public const string Sound_Condition_Header_1_displayName = "Sound: Condition Header 1";
-            public const int Sound_Condition_Header_1_sortIndex = 650;
-            [SortOrder(Sound_Condition_Header_1_sortIndex)]
-            [DisplayName(Sound_Condition_Header_1_displayName)]
-            public virtual int Sound_Condition_Header_1 {
-                get => Sound_Condition_Header_1_raw;
-                set {
-                    if (Sound_Condition_Header_1_raw == value) return;
-                    Sound_Condition_Header_1_raw = value;
-                    OnPropertyChanged(nameof(Sound_Condition_Header_1));
-                }
-            }
-
-            protected int Sound_Condition_1_raw;
-            public const string Sound_Condition_1_displayName = "Sound: Condition 1";
-            public const int Sound_Condition_1_sortIndex = 700;
-            [SortOrder(Sound_Condition_1_sortIndex)]
-            [DisplayName(Sound_Condition_1_displayName)]
-            public virtual int Sound_Condition_1 {
-                get => Sound_Condition_1_raw;
-                set {
-                    if (Sound_Condition_1_raw == value) return;
-                    Sound_Condition_1_raw = value;
-                    OnPropertyChanged(nameof(Sound_Condition_1));
-                }
-            }
-
-            protected int Sound_Slinger_Condition_Header_1_raw;
-            public const string Sound_Slinger_Condition_Header_1_displayName = "Sound: Slinger Condition Header 1";
-            public const int Sound_Slinger_Condition_Header_1_sortIndex = 750;
-            [SortOrder(Sound_Slinger_Condition_Header_1_sortIndex)]
-            [DisplayName(Sound_Slinger_Condition_Header_1_displayName)]
-            public virtual int Sound_Slinger_Condition_Header_1 {
-                get => Sound_Slinger_Condition_Header_1_raw;
-                set {
-                    if (Sound_Slinger_Condition_Header_1_raw == value) return;
-                    Sound_Slinger_Condition_Header_1_raw = value;
-                    OnPropertyChanged(nameof(Sound_Slinger_Condition_Header_1));
-                }
-            }
-
-            protected int Sound_Slinger_Condition_1_raw;
-            public const string Sound_Slinger_Condition_1_displayName = "Sound: Slinger Condition 1";
-            public const int Sound_Slinger_Condition_1_sortIndex = 800;
-            [SortOrder(Sound_Slinger_Condition_1_sortIndex)]
-            [DisplayName(Sound_Slinger_Condition_1_displayName)]
-            public virtual int Sound_Slinger_Condition_1 {
-                get => Sound_Slinger_Condition_1_raw;
-                set {
-                    if (Sound_Slinger_Condition_1_raw == value) return;
-                    Sound_Slinger_Condition_1_raw = value;
-                    OnPropertyChanged(nameof(Sound_Slinger_Condition_1));
-                }
-            }
-
-            protected int Sound_Slinger_Condition_Header_2_raw;
-            public const string Sound_Slinger_Condition_Header_2_displayName = "Sound: Slinger Condition Header 2";
-            public const int Sound_Slinger_Condition_Header_2_sortIndex = 850;
-            [SortOrder(Sound_Slinger_Condition_Header_2_sortIndex)]
-            [DisplayName(Sound_Slinger_Condition_Header_2_displayName)]
-            public virtual int Sound_Slinger_Condition_Header_2 {
-                get => Sound_Slinger_Condition_Header_2_raw;
-                set {
-                    if (Sound_Slinger_Condition_Header_2_raw == value) return;
-                    Sound_Slinger_Condition_Header_2_raw = value;
-                    OnPropertyChanged(nameof(Sound_Slinger_Condition_Header_2));
-                }
-            }
-
-            protected int Sound_Slinger_Condition_2_raw;
-            public const string Sound_Slinger_Condition_2_displayName = "Sound: Slinger Condition 2";
-            public const int Sound_Slinger_Condition_2_sortIndex = 900;
-            [SortOrder(Sound_Slinger_Condition_2_sortIndex)]
-            [DisplayName(Sound_Slinger_Condition_2_displayName)]
-            public virtual int Sound_Slinger_Condition_2 {
-                get => Sound_Slinger_Condition_2_raw;
-                set {
-                    if (Sound_Slinger_Condition_2_raw == value) return;
-                    Sound_Slinger_Condition_2_raw = value;
-                    OnPropertyChanged(nameof(Sound_Slinger_Condition_2));
-                }
-            }
-
-            protected int Sound_Condition_Header_2_raw;
-            public const string Sound_Condition_Header_2_displayName = "Sound: Condition Header 2";
-            public const int Sound_Condition_Header_2_sortIndex = 950;
-            [SortOrder(Sound_Condition_Header_2_sortIndex)]
-            [DisplayName(Sound_Condition_Header_2_displayName)]
-            public virtual int Sound_Condition_Header_2 {
-                get => Sound_Condition_Header_2_raw;
-                set {
-                    if (Sound_Condition_Header_2_raw == value) return;
-                    Sound_Condition_Header_2_raw = value;
-                    OnPropertyChanged(nameof(Sound_Condition_Header_2));
-                }
-            }
-
-            protected int Sound_Condition_2_raw;
-            public const string Sound_Condition_2_displayName = "Sound: Condition 2";
-            public const int Sound_Condition_2_sortIndex = 1000;
-            [SortOrder(Sound_Condition_2_sortIndex)]
-            [DisplayName(Sound_Condition_2_displayName)]
-            public virtual int Sound_Condition_2 {
-                get => Sound_Condition_2_raw;
-                set {
-                    if (Sound_Condition_2_raw == value) return;
-                    Sound_Condition_2_raw = value;
-                    OnPropertyChanged(nameof(Sound_Condition_2));
-                }
-            }
-
-            protected int Sound_Condition_Header_3_raw;
-            public const string Sound_Condition_Header_3_displayName = "Sound: Condition Header 3";
-            public const int Sound_Condition_Header_3_sortIndex = 1050;
-            [SortOrder(Sound_Condition_Header_3_sortIndex)]
-            [DisplayName(Sound_Condition_Header_3_displayName)]
-            public virtual int Sound_Condition_Header_3 {
-                get => Sound_Condition_Header_3_raw;
-                set {
-                    if (Sound_Condition_Header_3_raw == value) return;
-                    Sound_Condition_Header_3_raw = value;
-                    OnPropertyChanged(nameof(Sound_Condition_Header_3));
-                }
-            }
-
-            protected int Sound_Condition_3_raw;
-            public const string Sound_Condition_3_displayName = "Sound: Condition 3";
-            public const int Sound_Condition_3_sortIndex = 1100;
-            [SortOrder(Sound_Condition_3_sortIndex)]
-            [DisplayName(Sound_Condition_3_displayName)]
-            public virtual int Sound_Condition_3 {
-                get => Sound_Condition_3_raw;
-                set {
-                    if (Sound_Condition_3_raw == value) return;
-                    Sound_Condition_3_raw = value;
-                    OnPropertyChanged(nameof(Sound_Condition_3));
-                }
-            }
-
-            protected int Sound_Condition_Header_4_raw;
-            public const string Sound_Condition_Header_4_displayName = "Sound: Condition Header 4";
-            public const int Sound_Condition_Header_4_sortIndex = 1150;
-            [SortOrder(Sound_Condition_Header_4_sortIndex)]
-            [DisplayName(Sound_Condition_Header_4_displayName)]
-            public virtual int Sound_Condition_Header_4 {
-                get => Sound_Condition_Header_4_raw;
-                set {
-                    if (Sound_Condition_Header_4_raw == value) return;
-                    Sound_Condition_Header_4_raw = value;
-                    OnPropertyChanged(nameof(Sound_Condition_Header_4));
-                }
-            }
-
-            protected int Sound_Condition_4_raw;
-            public const string Sound_Condition_4_displayName = "Sound: Condition 4";
-            public const int Sound_Condition_4_sortIndex = 1200;
-            [SortOrder(Sound_Condition_4_sortIndex)]
-            [DisplayName(Sound_Condition_4_displayName)]
-            public virtual int Sound_Condition_4 {
-                get => Sound_Condition_4_raw;
-                set {
-                    if (Sound_Condition_4_raw == value) return;
-                    Sound_Condition_4_raw = value;
-                    OnPropertyChanged(nameof(Sound_Condition_4));
-                }
-            }
-
-            protected int Sound_Condition_Header_5_raw;
-            public const string Sound_Condition_Header_5_displayName = "Sound: Condition Header 5";
-            public const int Sound_Condition_Header_5_sortIndex = 1250;
-            [SortOrder(Sound_Condition_Header_5_sortIndex)]
-            [DisplayName(Sound_Condition_Header_5_displayName)]
-            public virtual int Sound_Condition_Header_5 {
-                get => Sound_Condition_Header_5_raw;
-                set {
-                    if (Sound_Condition_Header_5_raw == value) return;
-                    Sound_Condition_Header_5_raw = value;
-                    OnPropertyChanged(nameof(Sound_Condition_Header_5));
-                }
-            }
-
-            protected int Sound_Condition_5_raw;
-            public const string Sound_Condition_5_displayName = "Sound: Condition 5";
-            public const int Sound_Condition_5_sortIndex = 1300;
-            [SortOrder(Sound_Condition_5_sortIndex)]
-            [DisplayName(Sound_Condition_5_displayName)]
-            public virtual int Sound_Condition_5 {
-                get => Sound_Condition_5_raw;
-                set {
-                    if (Sound_Condition_5_raw == value) return;
-                    Sound_Condition_5_raw = value;
-                    OnPropertyChanged(nameof(Sound_Condition_5));
-                }
-            }
-
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
-                return FixedSizeCount;
-            }
-
-            public static Shlp_3_ LoadData(BinaryReader reader) {
-                var data = new Shlp_3_();
-                data.Wwise_Container_Header_raw = reader.ReadUInt32();
-                if (data.Wwise_Container_Header_raw != 0) data.Wwise_Container_raw = reader.ReadNullTermString();
-                data.Sound_Gun_Fire_Header_raw = reader.ReadInt32();
-                data.Sound_Gun_Fire_raw = reader.ReadInt32();
-                data.Sound_Bullet_Travel_Header_raw = reader.ReadInt32();
-                data.Sound_Bullet_Travel_raw = reader.ReadInt32();
-                data.Sound_Explode_Header_raw = reader.ReadInt32();
-                data.Sound_Explode_raw = reader.ReadInt32();
-                data.Sound_Hit_Wall_or_Ground_Header_raw = reader.ReadInt32();
-                data.Sound_Hit_Wall_or_Ground_raw = reader.ReadInt32();
-                data.Sound_Hit_Obj_Hit_Header_raw = reader.ReadInt32();
-                data.Sound_Hit_Obj_Hit_raw = reader.ReadInt32();
-                data.Sound_Condition_Header_1_raw = reader.ReadInt32();
-                data.Sound_Condition_1_raw = reader.ReadInt32();
-                data.Sound_Slinger_Condition_Header_1_raw = reader.ReadInt32();
-                data.Sound_Slinger_Condition_1_raw = reader.ReadInt32();
-                data.Sound_Slinger_Condition_Header_2_raw = reader.ReadInt32();
-                data.Sound_Slinger_Condition_2_raw = reader.ReadInt32();
-                data.Sound_Condition_Header_2_raw = reader.ReadInt32();
-                data.Sound_Condition_2_raw = reader.ReadInt32();
-                data.Sound_Condition_Header_3_raw = reader.ReadInt32();
-                data.Sound_Condition_3_raw = reader.ReadInt32();
-                data.Sound_Condition_Header_4_raw = reader.ReadInt32();
-                data.Sound_Condition_4_raw = reader.ReadInt32();
-                data.Sound_Condition_Header_5_raw = reader.ReadInt32();
-                data.Sound_Condition_5_raw = reader.ReadInt32();
-                return data;
-            }
-
-            public override void WriteData(BinaryWriter writer) {
                 writer.Write(Wwise_Container_Header_raw);
                 if (Wwise_Container_Header_raw != 0) writer.Write(Wwise_Container_raw.ToNullTermCharArray());
                 writer.Write(Sound_Gun_Fire_Header_raw);
@@ -1615,608 +2205,6 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Sound_Condition_4_raw);
                 writer.Write(Sound_Condition_Header_5_raw);
                 writer.Write(Sound_Condition_5_raw);
-            }
-        }
-
-        public partial class Shlp_4_ : MhwStructItem {
-            public const ulong FixedSizeCount = 1;
-            public const string DisplayName = "Shlp (4)";
-
-            protected uint Header_2_raw;
-            public const string Header_2_displayName = "Header 2";
-            public const int Header_2_sortIndex = 50;
-            [SortOrder(Header_2_sortIndex)]
-            [DisplayName(Header_2_displayName)]
-            public virtual uint Header_2 {
-                get => Header_2_raw;
-                set {
-                    if (Header_2_raw == value) return;
-                    Header_2_raw = value;
-                    OnPropertyChanged(nameof(Header_2));
-                }
-            }
-
-            protected uint Projectile_Entity_Collider_raw;
-            public const string Projectile_Entity_Collider_displayName = "Projectile: Entity Collider";
-            public const int Projectile_Entity_Collider_sortIndex = 100;
-            [SortOrder(Projectile_Entity_Collider_sortIndex)]
-            [DisplayName(Projectile_Entity_Collider_displayName)]
-            public virtual uint Projectile_Entity_Collider {
-                get => Projectile_Entity_Collider_raw;
-                set {
-                    if (Projectile_Entity_Collider_raw == value) return;
-                    Projectile_Entity_Collider_raw = value;
-                    OnPropertyChanged(nameof(Projectile_Entity_Collider));
-                }
-            }
-
-            protected float Projectile_Model_Lifespan_raw;
-            public const string Projectile_Model_Lifespan_displayName = "Projectile: Model Lifespan";
-            public const int Projectile_Model_Lifespan_sortIndex = 150;
-            [SortOrder(Projectile_Model_Lifespan_sortIndex)]
-            [DisplayName(Projectile_Model_Lifespan_displayName)]
-            public virtual float Projectile_Model_Lifespan {
-                get => Projectile_Model_Lifespan_raw;
-                set {
-                    if (Projectile_Model_Lifespan_raw == value) return;
-                    Projectile_Model_Lifespan_raw = value;
-                    OnPropertyChanged(nameof(Projectile_Model_Lifespan));
-                }
-            }
-
-            protected uint Projectile_Distance_Range_raw;
-            public const string Projectile_Distance_Range_displayName = "Projectile: Distance Range";
-            public const int Projectile_Distance_Range_sortIndex = 200;
-            [SortOrder(Projectile_Distance_Range_sortIndex)]
-            [DisplayName(Projectile_Distance_Range_displayName)]
-            public virtual uint Projectile_Distance_Range {
-                get => Projectile_Distance_Range_raw;
-                set {
-                    if (Projectile_Distance_Range_raw == value) return;
-                    Projectile_Distance_Range_raw = value;
-                    OnPropertyChanged(nameof(Projectile_Distance_Range));
-                }
-            }
-
-            protected byte Unk_41_raw;
-            public const string Unk_41_displayName = "Unk 41";
-            public const int Unk_41_sortIndex = 250;
-            [SortOrder(Unk_41_sortIndex)]
-            [DisplayName(Unk_41_displayName)]
-            public virtual byte Unk_41 {
-                get => Unk_41_raw;
-                set {
-                    if (Unk_41_raw == value) return;
-                    Unk_41_raw = value;
-                    OnPropertyChanged(nameof(Unk_41));
-                }
-            }
-
-            protected byte Unk_42_raw;
-            public const string Unk_42_displayName = "Unk 42";
-            public const int Unk_42_sortIndex = 300;
-            [SortOrder(Unk_42_sortIndex)]
-            [DisplayName(Unk_42_displayName)]
-            public virtual byte Unk_42 {
-                get => Unk_42_raw;
-                set {
-                    if (Unk_42_raw == value) return;
-                    Unk_42_raw = value;
-                    OnPropertyChanged(nameof(Unk_42));
-                }
-            }
-
-            protected byte Unk_43_raw;
-            public const string Unk_43_displayName = "Unk 43";
-            public const int Unk_43_sortIndex = 350;
-            [SortOrder(Unk_43_sortIndex)]
-            [DisplayName(Unk_43_displayName)]
-            public virtual byte Unk_43 {
-                get => Unk_43_raw;
-                set {
-                    if (Unk_43_raw == value) return;
-                    Unk_43_raw = value;
-                    OnPropertyChanged(nameof(Unk_43));
-                }
-            }
-
-            protected byte Unk_44_raw;
-            public const string Unk_44_displayName = "Unk 44";
-            public const int Unk_44_sortIndex = 400;
-            [SortOrder(Unk_44_sortIndex)]
-            [DisplayName(Unk_44_displayName)]
-            public virtual byte Unk_44 {
-                get => Unk_44_raw;
-                set {
-                    if (Unk_44_raw == value) return;
-                    Unk_44_raw = value;
-                    OnPropertyChanged(nameof(Unk_44));
-                }
-            }
-
-            protected uint Unk_45_raw;
-            public const string Unk_45_displayName = "Unk 45";
-            public const int Unk_45_sortIndex = 450;
-            [SortOrder(Unk_45_sortIndex)]
-            [DisplayName(Unk_45_displayName)]
-            public virtual uint Unk_45 {
-                get => Unk_45_raw;
-                set {
-                    if (Unk_45_raw == value) return;
-                    Unk_45_raw = value;
-                    OnPropertyChanged(nameof(Unk_45));
-                }
-            }
-
-            protected uint Unk_46_raw;
-            public const string Unk_46_displayName = "Unk 46";
-            public const int Unk_46_sortIndex = 500;
-            [SortOrder(Unk_46_sortIndex)]
-            [DisplayName(Unk_46_displayName)]
-            public virtual uint Unk_46 {
-                get => Unk_46_raw;
-                set {
-                    if (Unk_46_raw == value) return;
-                    Unk_46_raw = value;
-                    OnPropertyChanged(nameof(Unk_46));
-                }
-            }
-
-            protected uint Unk_47_raw;
-            public const string Unk_47_displayName = "Unk 47";
-            public const int Unk_47_sortIndex = 550;
-            [SortOrder(Unk_47_sortIndex)]
-            [DisplayName(Unk_47_displayName)]
-            public virtual uint Unk_47 {
-                get => Unk_47_raw;
-                set {
-                    if (Unk_47_raw == value) return;
-                    Unk_47_raw = value;
-                    OnPropertyChanged(nameof(Unk_47));
-                }
-            }
-
-            protected float Projectile_Spawn_Pos_Y_raw;
-            public const string Projectile_Spawn_Pos_Y_displayName = "Projectile: Spawn Pos Y";
-            public const int Projectile_Spawn_Pos_Y_sortIndex = 600;
-            [SortOrder(Projectile_Spawn_Pos_Y_sortIndex)]
-            [DisplayName(Projectile_Spawn_Pos_Y_displayName)]
-            public virtual float Projectile_Spawn_Pos_Y {
-                get => Projectile_Spawn_Pos_Y_raw;
-                set {
-                    if (Projectile_Spawn_Pos_Y_raw == value) return;
-                    Projectile_Spawn_Pos_Y_raw = value;
-                    OnPropertyChanged(nameof(Projectile_Spawn_Pos_Y));
-                }
-            }
-
-            protected float Projectile_Spawn_Pos_X_raw;
-            public const string Projectile_Spawn_Pos_X_displayName = "Projectile: Spawn Pos X";
-            public const int Projectile_Spawn_Pos_X_sortIndex = 650;
-            [SortOrder(Projectile_Spawn_Pos_X_sortIndex)]
-            [DisplayName(Projectile_Spawn_Pos_X_displayName)]
-            public virtual float Projectile_Spawn_Pos_X {
-                get => Projectile_Spawn_Pos_X_raw;
-                set {
-                    if (Projectile_Spawn_Pos_X_raw == value) return;
-                    Projectile_Spawn_Pos_X_raw = value;
-                    OnPropertyChanged(nameof(Projectile_Spawn_Pos_X));
-                }
-            }
-
-            protected float Projectile_Velocity_raw;
-            public const string Projectile_Velocity_displayName = "Projectile: Velocity";
-            public const int Projectile_Velocity_sortIndex = 700;
-            [SortOrder(Projectile_Velocity_sortIndex)]
-            [DisplayName(Projectile_Velocity_displayName)]
-            public virtual float Projectile_Velocity {
-                get => Projectile_Velocity_raw;
-                set {
-                    if (Projectile_Velocity_raw == value) return;
-                    Projectile_Velocity_raw = value;
-                    OnPropertyChanged(nameof(Projectile_Velocity));
-                }
-            }
-
-            protected float Projectile_Falloff_raw;
-            public const string Projectile_Falloff_displayName = "Projectile: Falloff";
-            public const int Projectile_Falloff_sortIndex = 750;
-            [SortOrder(Projectile_Falloff_sortIndex)]
-            [DisplayName(Projectile_Falloff_displayName)]
-            public virtual float Projectile_Falloff {
-                get => Projectile_Falloff_raw;
-                set {
-                    if (Projectile_Falloff_raw == value) return;
-                    Projectile_Falloff_raw = value;
-                    OnPropertyChanged(nameof(Projectile_Falloff));
-                }
-            }
-
-            protected float Unk_48_raw;
-            public const string Unk_48_displayName = "Unk 48";
-            public const int Unk_48_sortIndex = 800;
-            [SortOrder(Unk_48_sortIndex)]
-            [DisplayName(Unk_48_displayName)]
-            public virtual float Unk_48 {
-                get => Unk_48_raw;
-                set {
-                    if (Unk_48_raw == value) return;
-                    Unk_48_raw = value;
-                    OnPropertyChanged(nameof(Unk_48));
-                }
-            }
-
-            protected float Unk_49_raw;
-            public const string Unk_49_displayName = "Unk 49";
-            public const int Unk_49_sortIndex = 850;
-            [SortOrder(Unk_49_sortIndex)]
-            [DisplayName(Unk_49_displayName)]
-            public virtual float Unk_49 {
-                get => Unk_49_raw;
-                set {
-                    if (Unk_49_raw == value) return;
-                    Unk_49_raw = value;
-                    OnPropertyChanged(nameof(Unk_49));
-                }
-            }
-
-            protected float Unk_50_raw;
-            public const string Unk_50_displayName = "Unk 50";
-            public const int Unk_50_sortIndex = 900;
-            [SortOrder(Unk_50_sortIndex)]
-            [DisplayName(Unk_50_displayName)]
-            public virtual float Unk_50 {
-                get => Unk_50_raw;
-                set {
-                    if (Unk_50_raw == value) return;
-                    Unk_50_raw = value;
-                    OnPropertyChanged(nameof(Unk_50));
-                }
-            }
-
-            protected float Unk_51_raw;
-            public const string Unk_51_displayName = "Unk 51";
-            public const int Unk_51_sortIndex = 950;
-            [SortOrder(Unk_51_sortIndex)]
-            [DisplayName(Unk_51_displayName)]
-            public virtual float Unk_51 {
-                get => Unk_51_raw;
-                set {
-                    if (Unk_51_raw == value) return;
-                    Unk_51_raw = value;
-                    OnPropertyChanged(nameof(Unk_51));
-                }
-            }
-
-            protected float Unk_52_raw;
-            public const string Unk_52_displayName = "Unk 52";
-            public const int Unk_52_sortIndex = 1000;
-            [SortOrder(Unk_52_sortIndex)]
-            [DisplayName(Unk_52_displayName)]
-            public virtual float Unk_52 {
-                get => Unk_52_raw;
-                set {
-                    if (Unk_52_raw == value) return;
-                    Unk_52_raw = value;
-                    OnPropertyChanged(nameof(Unk_52));
-                }
-            }
-
-            protected float Unk_53_raw;
-            public const string Unk_53_displayName = "Unk 53";
-            public const int Unk_53_sortIndex = 1050;
-            [SortOrder(Unk_53_sortIndex)]
-            [DisplayName(Unk_53_displayName)]
-            public virtual float Unk_53 {
-                get => Unk_53_raw;
-                set {
-                    if (Unk_53_raw == value) return;
-                    Unk_53_raw = value;
-                    OnPropertyChanged(nameof(Unk_53));
-                }
-            }
-
-            protected float Unk_54_raw;
-            public const string Unk_54_displayName = "Unk 54";
-            public const int Unk_54_sortIndex = 1100;
-            [SortOrder(Unk_54_sortIndex)]
-            [DisplayName(Unk_54_displayName)]
-            public virtual float Unk_54 {
-                get => Unk_54_raw;
-                set {
-                    if (Unk_54_raw == value) return;
-                    Unk_54_raw = value;
-                    OnPropertyChanged(nameof(Unk_54));
-                }
-            }
-
-            protected float Projectile_Hitbox_Range_raw;
-            public const string Projectile_Hitbox_Range_displayName = "Projectile: Hitbox Range";
-            public const int Projectile_Hitbox_Range_sortIndex = 1150;
-            [SortOrder(Projectile_Hitbox_Range_sortIndex)]
-            [DisplayName(Projectile_Hitbox_Range_displayName)]
-            public virtual float Projectile_Hitbox_Range {
-                get => Projectile_Hitbox_Range_raw;
-                set {
-                    if (Projectile_Hitbox_Range_raw == value) return;
-                    Projectile_Hitbox_Range_raw = value;
-                    OnPropertyChanged(nameof(Projectile_Hitbox_Range));
-                }
-            }
-
-            protected uint Unk_55_raw;
-            public const string Unk_55_displayName = "Unk 55";
-            public const int Unk_55_sortIndex = 1200;
-            [SortOrder(Unk_55_sortIndex)]
-            [DisplayName(Unk_55_displayName)]
-            public virtual uint Unk_55 {
-                get => Unk_55_raw;
-                set {
-                    if (Unk_55_raw == value) return;
-                    Unk_55_raw = value;
-                    OnPropertyChanged(nameof(Unk_55));
-                }
-            }
-
-            protected uint Insta_Kill_Trigger_raw;
-            public const string Insta_Kill_Trigger_displayName = "Insta-Kill Trigger";
-            public const int Insta_Kill_Trigger_sortIndex = 1250;
-            [SortOrder(Insta_Kill_Trigger_sortIndex)]
-            [DisplayName(Insta_Kill_Trigger_displayName)]
-            public virtual uint Insta_Kill_Trigger {
-                get => Insta_Kill_Trigger_raw;
-                set {
-                    if (Insta_Kill_Trigger_raw == value) return;
-                    Insta_Kill_Trigger_raw = value;
-                    OnPropertyChanged(nameof(Insta_Kill_Trigger));
-                }
-            }
-
-            protected uint Unk_56_raw;
-            public const string Unk_56_displayName = "Unk 56";
-            public const int Unk_56_sortIndex = 1300;
-            [SortOrder(Unk_56_sortIndex)]
-            [DisplayName(Unk_56_displayName)]
-            public virtual uint Unk_56 {
-                get => Unk_56_raw;
-                set {
-                    if (Unk_56_raw == value) return;
-                    Unk_56_raw = value;
-                    OnPropertyChanged(nameof(Unk_56));
-                }
-            }
-
-            protected ushort Unk_57_raw;
-            public const string Unk_57_displayName = "Unk 57";
-            public const int Unk_57_sortIndex = 1350;
-            [SortOrder(Unk_57_sortIndex)]
-            [DisplayName(Unk_57_displayName)]
-            public virtual ushort Unk_57 {
-                get => Unk_57_raw;
-                set {
-                    if (Unk_57_raw == value) return;
-                    Unk_57_raw = value;
-                    OnPropertyChanged(nameof(Unk_57));
-                }
-            }
-
-            protected float Entity_Collide_1_raw;
-            public const string Entity_Collide_1_displayName = "Entity: Collide 1";
-            public const int Entity_Collide_1_sortIndex = 1400;
-            [SortOrder(Entity_Collide_1_sortIndex)]
-            [DisplayName(Entity_Collide_1_displayName)]
-            public virtual float Entity_Collide_1 {
-                get => Entity_Collide_1_raw;
-                set {
-                    if (Entity_Collide_1_raw == value) return;
-                    Entity_Collide_1_raw = value;
-                    OnPropertyChanged(nameof(Entity_Collide_1));
-                }
-            }
-
-            protected float Unk_58_raw;
-            public const string Unk_58_displayName = "Unk 58";
-            public const int Unk_58_sortIndex = 1450;
-            [SortOrder(Unk_58_sortIndex)]
-            [DisplayName(Unk_58_displayName)]
-            public virtual float Unk_58 {
-                get => Unk_58_raw;
-                set {
-                    if (Unk_58_raw == value) return;
-                    Unk_58_raw = value;
-                    OnPropertyChanged(nameof(Unk_58));
-                }
-            }
-
-            protected float Unk_59_raw;
-            public const string Unk_59_displayName = "Unk 59";
-            public const int Unk_59_sortIndex = 1500;
-            [SortOrder(Unk_59_sortIndex)]
-            [DisplayName(Unk_59_displayName)]
-            public virtual float Unk_59 {
-                get => Unk_59_raw;
-                set {
-                    if (Unk_59_raw == value) return;
-                    Unk_59_raw = value;
-                    OnPropertyChanged(nameof(Unk_59));
-                }
-            }
-
-            protected byte Entity_Collide_2_raw;
-            public const string Entity_Collide_2_displayName = "Entity: Collide 2";
-            public const int Entity_Collide_2_sortIndex = 1550;
-            [SortOrder(Entity_Collide_2_sortIndex)]
-            [DisplayName(Entity_Collide_2_displayName)]
-            public virtual byte Entity_Collide_2 {
-                get => Entity_Collide_2_raw;
-                set {
-                    if (Entity_Collide_2_raw == value) return;
-                    Entity_Collide_2_raw = value;
-                    OnPropertyChanged(nameof(Entity_Collide_2));
-                }
-            }
-
-            protected byte Unk_60_raw;
-            public const string Unk_60_displayName = "Unk 60";
-            public const int Unk_60_sortIndex = 1600;
-            [SortOrder(Unk_60_sortIndex)]
-            [DisplayName(Unk_60_displayName)]
-            public virtual byte Unk_60 {
-                get => Unk_60_raw;
-                set {
-                    if (Unk_60_raw == value) return;
-                    Unk_60_raw = value;
-                    OnPropertyChanged(nameof(Unk_60));
-                }
-            }
-
-            protected byte Entity_Spawn_Location_raw;
-            public const string Entity_Spawn_Location_displayName = "Entity: Spawn Location";
-            public const int Entity_Spawn_Location_sortIndex = 1650;
-            [SortOrder(Entity_Spawn_Location_sortIndex)]
-            [DisplayName(Entity_Spawn_Location_displayName)]
-            public virtual byte Entity_Spawn_Location {
-                get => Entity_Spawn_Location_raw;
-                set {
-                    if (Entity_Spawn_Location_raw == value) return;
-                    Entity_Spawn_Location_raw = value;
-                    OnPropertyChanged(nameof(Entity_Spawn_Location));
-                }
-            }
-
-            protected byte Entity_Range_raw;
-            public const string Entity_Range_displayName = "Entity: Range";
-            public const int Entity_Range_sortIndex = 1700;
-            [SortOrder(Entity_Range_sortIndex)]
-            [DisplayName(Entity_Range_displayName)]
-            public virtual byte Entity_Range {
-                get => Entity_Range_raw;
-                set {
-                    if (Entity_Range_raw == value) return;
-                    Entity_Range_raw = value;
-                    OnPropertyChanged(nameof(Entity_Range));
-                }
-            }
-
-            protected byte Unk_61_raw;
-            public const string Unk_61_displayName = "Unk 61";
-            public const int Unk_61_sortIndex = 1750;
-            [SortOrder(Unk_61_sortIndex)]
-            [DisplayName(Unk_61_displayName)]
-            public virtual byte Unk_61 {
-                get => Unk_61_raw;
-                set {
-                    if (Unk_61_raw == value) return;
-                    Unk_61_raw = value;
-                    OnPropertyChanged(nameof(Unk_61));
-                }
-            }
-
-            protected byte Unk_62_raw;
-            public const string Unk_62_displayName = "Unk 62";
-            public const int Unk_62_sortIndex = 1800;
-            [SortOrder(Unk_62_sortIndex)]
-            [DisplayName(Unk_62_displayName)]
-            public virtual byte Unk_62 {
-                get => Unk_62_raw;
-                set {
-                    if (Unk_62_raw == value) return;
-                    Unk_62_raw = value;
-                    OnPropertyChanged(nameof(Unk_62));
-                }
-            }
-
-            protected ushort Unk_63_raw;
-            public const string Unk_63_displayName = "Unk 63";
-            public const int Unk_63_sortIndex = 1850;
-            [SortOrder(Unk_63_sortIndex)]
-            [DisplayName(Unk_63_displayName)]
-            public virtual ushort Unk_63 {
-                get => Unk_63_raw;
-                set {
-                    if (Unk_63_raw == value) return;
-                    Unk_63_raw = value;
-                    OnPropertyChanged(nameof(Unk_63));
-                }
-            }
-
-            protected uint Unk_64_raw;
-            public const string Unk_64_displayName = "Unk 64";
-            public const int Unk_64_sortIndex = 1900;
-            [SortOrder(Unk_64_sortIndex)]
-            [DisplayName(Unk_64_displayName)]
-            public virtual uint Unk_64 {
-                get => Unk_64_raw;
-                set {
-                    if (Unk_64_raw == value) return;
-                    Unk_64_raw = value;
-                    OnPropertyChanged(nameof(Unk_64));
-                }
-            }
-
-            protected uint Number_of_Modifiers_raw;
-            public const string Number_of_Modifiers_displayName = "Number of Modifiers";
-            public const int Number_of_Modifiers_sortIndex = 1950;
-            [SortOrder(Number_of_Modifiers_sortIndex)]
-            [DisplayName(Number_of_Modifiers_displayName)]
-            public virtual uint Number_of_Modifiers {
-                get => Number_of_Modifiers_raw;
-                set {
-                    if (Number_of_Modifiers_raw == value) return;
-                    Number_of_Modifiers_raw = value;
-                    OnPropertyChanged(nameof(Number_of_Modifiers));
-                }
-            }
-
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
-                return FixedSizeCount;
-            }
-
-            public static Shlp_4_ LoadData(BinaryReader reader) {
-                var data = new Shlp_4_();
-                data.Header_2_raw = reader.ReadUInt32();
-                data.Projectile_Entity_Collider_raw = reader.ReadUInt32();
-                data.Projectile_Model_Lifespan_raw = reader.ReadSingle();
-                data.Projectile_Distance_Range_raw = reader.ReadUInt32();
-                data.Unk_41_raw = reader.ReadByte();
-                data.Unk_42_raw = reader.ReadByte();
-                data.Unk_43_raw = reader.ReadByte();
-                data.Unk_44_raw = reader.ReadByte();
-                data.Unk_45_raw = reader.ReadUInt32();
-                data.Unk_46_raw = reader.ReadUInt32();
-                data.Unk_47_raw = reader.ReadUInt32();
-                data.Projectile_Spawn_Pos_Y_raw = reader.ReadSingle();
-                data.Projectile_Spawn_Pos_X_raw = reader.ReadSingle();
-                data.Projectile_Velocity_raw = reader.ReadSingle();
-                data.Projectile_Falloff_raw = reader.ReadSingle();
-                data.Unk_48_raw = reader.ReadSingle();
-                data.Unk_49_raw = reader.ReadSingle();
-                data.Unk_50_raw = reader.ReadSingle();
-                data.Unk_51_raw = reader.ReadSingle();
-                data.Unk_52_raw = reader.ReadSingle();
-                data.Unk_53_raw = reader.ReadSingle();
-                data.Unk_54_raw = reader.ReadSingle();
-                data.Projectile_Hitbox_Range_raw = reader.ReadSingle();
-                data.Unk_55_raw = reader.ReadUInt32();
-                data.Insta_Kill_Trigger_raw = reader.ReadUInt32();
-                data.Unk_56_raw = reader.ReadUInt32();
-                data.Unk_57_raw = reader.ReadUInt16();
-                data.Entity_Collide_1_raw = reader.ReadSingle();
-                data.Unk_58_raw = reader.ReadSingle();
-                data.Unk_59_raw = reader.ReadSingle();
-                data.Entity_Collide_2_raw = reader.ReadByte();
-                data.Unk_60_raw = reader.ReadByte();
-                data.Entity_Spawn_Location_raw = reader.ReadByte();
-                data.Entity_Range_raw = reader.ReadByte();
-                data.Unk_61_raw = reader.ReadByte();
-                data.Unk_62_raw = reader.ReadByte();
-                data.Unk_63_raw = reader.ReadUInt16();
-                data.Unk_64_raw = reader.ReadUInt32();
-                data.Number_of_Modifiers_raw = reader.ReadUInt32();
-                return data;
-            }
-
-            public override void WriteData(BinaryWriter writer) {
                 writer.Write(Header_2_raw);
                 writer.Write(Projectile_Entity_Collider_raw);
                 writer.Write(Projectile_Model_Lifespan_raw);
@@ -2256,6 +2244,118 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_63_raw);
                 writer.Write(Unk_64_raw);
                 writer.Write(Number_of_Modifiers_raw);
+            }
+
+            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
+                return new ObservableCollection<MultiStructItemCustomView> {
+                    new MultiStructItemCustomView(this, "Particles: Ground Decal Header", "Particles_Ground_Decal_Header"),
+                    new MultiStructItemCustomView(this, "Particles: Ground Decal", "Particles_Ground_Decal"),
+                    new MultiStructItemCustomView(this, "Particles: Wall Decal Header", "Particles_Wall_Decal_Header"),
+                    new MultiStructItemCustomView(this, "Particles: Wall Decal", "Particles_Wall_Decal"),
+                    new MultiStructItemCustomView(this, "Unk 7", "Unk_7"),
+                    new MultiStructItemCustomView(this, "Unk 8", "Unk_8"),
+                    new MultiStructItemCustomView(this, "Particles: Obj Hit Header", "Particles_Obj_Hit_Header"),
+                    new MultiStructItemCustomView(this, "Particles: Obj Hit", "Particles_Obj_Hit"),
+                    new MultiStructItemCustomView(this, "Unk 9", "Unk_9"),
+                    new MultiStructItemCustomView(this, "Unk 10", "Unk_10"),
+                    new MultiStructItemCustomView(this, "Unk 11", "Unk_11"),
+                    new MultiStructItemCustomView(this, "Unk 12", "Unk_12"),
+                    new MultiStructItemCustomView(this, "Unk 13", "Unk_13"),
+                    new MultiStructItemCustomView(this, "Unk 14", "Unk_14"),
+                    new MultiStructItemCustomView(this, "Unk 15", "Unk_15"),
+                    new MultiStructItemCustomView(this, "Unk 16", "Unk_16"),
+                    new MultiStructItemCustomView(this, "Unk 17", "Unk_17"),
+                    new MultiStructItemCustomView(this, "Unk 18", "Unk_18"),
+                    new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
+                    new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
+                    new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),
+                    new MultiStructItemCustomView(this, "Unk 22", "Unk_22"),
+                    new MultiStructItemCustomView(this, "Unk 23", "Unk_23"),
+                    new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),
+                    new MultiStructItemCustomView(this, "Unk 25", "Unk_25"),
+                    new MultiStructItemCustomView(this, "Unk 26", "Unk_26"),
+                    new MultiStructItemCustomView(this, "Unk 27", "Unk_27"),
+                    new MultiStructItemCustomView(this, "Unk 28", "Unk_28"),
+                    new MultiStructItemCustomView(this, "Unk 29", "Unk_29"),
+                    new MultiStructItemCustomView(this, "Unk 30", "Unk_30"),
+                    new MultiStructItemCustomView(this, "Unk 31", "Unk_31"),
+                    new MultiStructItemCustomView(this, "Unk 32", "Unk_32"),
+                    new MultiStructItemCustomView(this, "Particles: Gun Fire Header", "Particles_Gun_Fire_Header"),
+                    new MultiStructItemCustomView(this, "Particles: Gun Fire", "Particles_Gun_Fire"),
+                    new MultiStructItemCustomView(this, "Unk 33", "Unk_33"),
+                    new MultiStructItemCustomView(this, "Unk 34", "Unk_34"),
+                    new MultiStructItemCustomView(this, "Unk 35", "Unk_35"),
+                    new MultiStructItemCustomView(this, "Unk 36", "Unk_36"),
+                    new MultiStructItemCustomView(this, "Unk 37", "Unk_37"),
+                    new MultiStructItemCustomView(this, "Unk 38", "Unk_38"),
+                    new MultiStructItemCustomView(this, "Unk 39", "Unk_39"),
+                    new MultiStructItemCustomView(this, "Unk 40", "Unk_40"),
+                    new MultiStructItemCustomView(this, "Wwise Container Header", "Wwise_Container_Header"),
+                    new MultiStructItemCustomView(this, "Wwise Container", "Wwise_Container"),
+                    new MultiStructItemCustomView(this, "Sound: Gun Fire Header", "Sound_Gun_Fire_Header"),
+                    new MultiStructItemCustomView(this, "Sound: Gun Fire", "Sound_Gun_Fire"),
+                    new MultiStructItemCustomView(this, "Sound: Bullet Travel Header", "Sound_Bullet_Travel_Header"),
+                    new MultiStructItemCustomView(this, "Sound: Bullet Travel", "Sound_Bullet_Travel"),
+                    new MultiStructItemCustomView(this, "Sound: Explode Header", "Sound_Explode_Header"),
+                    new MultiStructItemCustomView(this, "Sound: Explode", "Sound_Explode"),
+                    new MultiStructItemCustomView(this, "Sound: Hit Wall or Ground Header", "Sound_Hit_Wall_or_Ground_Header"),
+                    new MultiStructItemCustomView(this, "Sound: Hit Wall or Ground", "Sound_Hit_Wall_or_Ground"),
+                    new MultiStructItemCustomView(this, "Sound: Hit Obj Hit Header", "Sound_Hit_Obj_Hit_Header"),
+                    new MultiStructItemCustomView(this, "Sound: Hit Obj Hit", "Sound_Hit_Obj_Hit"),
+                    new MultiStructItemCustomView(this, "Sound: Condition Header 1", "Sound_Condition_Header_1"),
+                    new MultiStructItemCustomView(this, "Sound: Condition 1", "Sound_Condition_1"),
+                    new MultiStructItemCustomView(this, "Sound: Slinger Condition Header 1", "Sound_Slinger_Condition_Header_1"),
+                    new MultiStructItemCustomView(this, "Sound: Slinger Condition 1", "Sound_Slinger_Condition_1"),
+                    new MultiStructItemCustomView(this, "Sound: Slinger Condition Header 2", "Sound_Slinger_Condition_Header_2"),
+                    new MultiStructItemCustomView(this, "Sound: Slinger Condition 2", "Sound_Slinger_Condition_2"),
+                    new MultiStructItemCustomView(this, "Sound: Condition Header 2", "Sound_Condition_Header_2"),
+                    new MultiStructItemCustomView(this, "Sound: Condition 2", "Sound_Condition_2"),
+                    new MultiStructItemCustomView(this, "Sound: Condition Header 3", "Sound_Condition_Header_3"),
+                    new MultiStructItemCustomView(this, "Sound: Condition 3", "Sound_Condition_3"),
+                    new MultiStructItemCustomView(this, "Sound: Condition Header 4", "Sound_Condition_Header_4"),
+                    new MultiStructItemCustomView(this, "Sound: Condition 4", "Sound_Condition_4"),
+                    new MultiStructItemCustomView(this, "Sound: Condition Header 5", "Sound_Condition_Header_5"),
+                    new MultiStructItemCustomView(this, "Sound: Condition 5", "Sound_Condition_5"),
+                    new MultiStructItemCustomView(this, "Header 2", "Header_2"),
+                    new MultiStructItemCustomView(this, "Projectile: Entity Collider", "Projectile_Entity_Collider"),
+                    new MultiStructItemCustomView(this, "Projectile: Model Lifespan", "Projectile_Model_Lifespan"),
+                    new MultiStructItemCustomView(this, "Projectile: Distance Range", "Projectile_Distance_Range"),
+                    new MultiStructItemCustomView(this, "Unk 41", "Unk_41"),
+                    new MultiStructItemCustomView(this, "Unk 42", "Unk_42"),
+                    new MultiStructItemCustomView(this, "Unk 43", "Unk_43"),
+                    new MultiStructItemCustomView(this, "Unk 44", "Unk_44"),
+                    new MultiStructItemCustomView(this, "Unk 45", "Unk_45"),
+                    new MultiStructItemCustomView(this, "Unk 46", "Unk_46"),
+                    new MultiStructItemCustomView(this, "Unk 47", "Unk_47"),
+                    new MultiStructItemCustomView(this, "Projectile: Spawn Pos Y", "Projectile_Spawn_Pos_Y"),
+                    new MultiStructItemCustomView(this, "Projectile: Spawn Pos X", "Projectile_Spawn_Pos_X"),
+                    new MultiStructItemCustomView(this, "Projectile: Velocity", "Projectile_Velocity"),
+                    new MultiStructItemCustomView(this, "Projectile: Falloff", "Projectile_Falloff"),
+                    new MultiStructItemCustomView(this, "Unk 48", "Unk_48"),
+                    new MultiStructItemCustomView(this, "Unk 49", "Unk_49"),
+                    new MultiStructItemCustomView(this, "Unk 50", "Unk_50"),
+                    new MultiStructItemCustomView(this, "Unk 51", "Unk_51"),
+                    new MultiStructItemCustomView(this, "Unk 52", "Unk_52"),
+                    new MultiStructItemCustomView(this, "Unk 53", "Unk_53"),
+                    new MultiStructItemCustomView(this, "Unk 54", "Unk_54"),
+                    new MultiStructItemCustomView(this, "Projectile: Hitbox Range", "Projectile_Hitbox_Range"),
+                    new MultiStructItemCustomView(this, "Unk 55", "Unk_55"),
+                    new MultiStructItemCustomView(this, "Insta-Kill Trigger", "Insta_Kill_Trigger"),
+                    new MultiStructItemCustomView(this, "Unk 56", "Unk_56"),
+                    new MultiStructItemCustomView(this, "Unk 57", "Unk_57"),
+                    new MultiStructItemCustomView(this, "Entity: Collide 1", "Entity_Collide_1"),
+                    new MultiStructItemCustomView(this, "Unk 58", "Unk_58"),
+                    new MultiStructItemCustomView(this, "Unk 59", "Unk_59"),
+                    new MultiStructItemCustomView(this, "Entity: Collide 2", "Entity_Collide_2"),
+                    new MultiStructItemCustomView(this, "Unk 60", "Unk_60"),
+                    new MultiStructItemCustomView(this, "Entity: Spawn Location", "Entity_Spawn_Location"),
+                    new MultiStructItemCustomView(this, "Entity: Range", "Entity_Range"),
+                    new MultiStructItemCustomView(this, "Unk 61", "Unk_61"),
+                    new MultiStructItemCustomView(this, "Unk 62", "Unk_62"),
+                    new MultiStructItemCustomView(this, "Unk 63", "Unk_63"),
+                    new MultiStructItemCustomView(this, "Unk 64", "Unk_64"),
+                    new MultiStructItemCustomView(this, "Number of Modifiers", "Number_of_Modifiers"),
+                };
             }
         }
 
@@ -2651,20 +2751,6 @@ namespace MHW_Editor.Weapons {
                 Shlp_2__list.Add(item);
             }
             data.Add(Shlp_2__list);
-            var Shlp_3__list = new List<dynamic>();
-            for (ulong i = 0; i < Shlp_3_.GetEntryCount(data); i++) {
-                var item = Shlp_3_.LoadData(reader);
-                item.index = i;
-                Shlp_3__list.Add(item);
-            }
-            data.Add(Shlp_3__list);
-            var Shlp_4__list = new List<dynamic>();
-            for (ulong i = 0; i < Shlp_4_.GetEntryCount(data); i++) {
-                var item = Shlp_4_.LoadData(reader);
-                item.index = i;
-                Shlp_4__list.Add(item);
-            }
-            data.Add(Shlp_4__list);
             var Modifiers_list = new List<dynamic>();
             for (ulong i = 0; i < Modifiers.GetEntryCount(data); i++) {
                 var item = Modifiers.LoadData(reader);
