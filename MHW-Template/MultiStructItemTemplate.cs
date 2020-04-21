@@ -30,7 +30,8 @@ namespace MHW_Template
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write(@"using System.Collections.Generic;
+            this.Write(@"using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
@@ -42,35 +43,35 @@ using MHW_Template.Models;
 
 namespace ");
             
-            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public partial class ");
             
-            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
             #line hidden
             this.Write(" : MhwMultiStructItem {\r\n        public const ulong InitialOffset = ");
             
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.offsetInitial));
             
             #line default
             #line hidden
             this.Write(";\r\n        public const string EncryptionKey = ");
             
-            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\""));
             
             #line default
             #line hidden
             this.Write(";\r\n");
             
-            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 28 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
 
     var compiler = new CSharpCodeProvider();
 
@@ -219,9 +220,10 @@ namespace ");
             sortIndex += 50;
         }
 
+        // GetEntryCount.
         if (@struct.fixedSizeCount > 0) {
             WriteLine("");
-            WriteLine("            public static ulong GetEntryCount(List<List<dynamic>> data) {");
+            WriteLine("            public static ulong GetEntryCount(List<MhwStructWrapper> data) {");
             WriteLine("                return FixedSizeCount;");
             WriteLine("            }");
         }
@@ -298,26 +300,26 @@ namespace ");
 
     // Glue to give the encryption key to MhwMultiStructItem.
     WriteLine("");
-    WriteLine("        public static void SaveData(List<List<dynamic>> data, string targetFile) {");
+    WriteLine("        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {");
     WriteLine("            SaveData(data, targetFile, EncryptionKey);");
     WriteLine("        }");
 
     // Master LoadData.
     WriteLine("");
-    WriteLine("        public static List<List<dynamic>> LoadData(string targetFile) {");
+    WriteLine("        public static List<MhwStructWrapper> LoadData(string targetFile) {");
     WriteLine("            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));");
-    WriteLine("            var data = new List<List<dynamic>>();");
+    WriteLine("            var data = new List<MhwStructWrapper>();");
 
     foreach (var @struct in structData.structs) {
         var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
 
-        WriteLine($"            var {name}_list = new List<dynamic>();");
+        WriteLine($"            var {name}_list = new List<object>();");
         WriteLine($"            for (ulong i = 0; i < {name}.GetEntryCount(data); i++) {{");
         WriteLine($"                var item = {name}.LoadData(reader);");
         WriteLine("                item.index = i;");
         WriteLine($"                {name}_list.Add(item);");
         WriteLine("            }");
-        WriteLine($"            data.Add({name}_list);");
+        WriteLine($"            data.Add(new MhwStructWrapper({name}_list, typeof({name})));");
     }
 
     WriteLine("            return data;");

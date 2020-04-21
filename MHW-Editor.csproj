@@ -189,6 +189,7 @@
     <Compile Include="Items\RoomFurniture.cs" />
     <Compile Include="Models\ICustomSaveLoad.cs" />
     <Compile Include="Models\IMhwMultiStructItem.cs" />
+    <Compile Include="Models\MhwStructWrapper.cs" />
     <Compile Include="Models\IMhwStructItem.cs" />
     <Compile Include="Models\IOnPropertyChanged.cs" />
     <Compile Include="Models\IsReadOnlyAttribute.cs" />

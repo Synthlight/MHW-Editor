@@ -177,9 +177,11 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry("Unk 3", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Unk 4", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Unk 5", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry("Unk 6", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry("Number of Linked Shell Params", typeof(uint), true)
+                    new MhwMultiStructData.StructData.Entry("Unk 6", typeof(uint))
                 }, 1, showVertically: true),
+                new MhwMultiStructData.StructData("Number of Linked Shell Params Holder", new List<MhwMultiStructData.StructData.Entry> {
+                    new MhwMultiStructData.StructData.Entry("Number of Linked Shell Params", typeof(uint), true)
+                }, 1, true),
                 new MhwMultiStructData.StructData("Linked Shell Params", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Path", typeof(string), isNullTerminatedString: true),
@@ -293,9 +295,11 @@ namespace MHW_Generator {
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(byte)),
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(byte)),
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(ushort)),
-                    new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry("Number of Modifiers", typeof(uint), true)
+                    new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint))
                 }, 1, showVertically: true),
+                new MhwMultiStructData.StructData("Number of Modifiers Holder", new List<MhwMultiStructData.StructData.Entry> {
+                    new MhwMultiStructData.StructData.Entry("Number of Modifiers", typeof(uint), true)
+                }, 1, true),
                 new MhwMultiStructData.StructData("Modifiers", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Value 1 (if 412627386)", typeof(sbyte), condition: "if (|ref|Header_raw == 412627386)"),

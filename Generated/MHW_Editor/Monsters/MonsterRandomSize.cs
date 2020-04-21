@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -62,7 +63,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -195,7 +196,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -1455,41 +1456,41 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public static void SaveData(List<List<dynamic>> data, string targetFile) {
+        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {
             SaveData(data, targetFile, EncryptionKey);
         }
 
-        public static List<List<dynamic>> LoadData(string targetFile) {
+        public static List<MhwStructWrapper> LoadData(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            var data = new List<List<dynamic>>();
-            var Monster_Random_Sizes_list = new List<dynamic>();
+            var data = new List<MhwStructWrapper>();
+            var Monster_Random_Sizes_list = new List<object>();
             for (ulong i = 0; i < Monster_Random_Sizes.GetEntryCount(data); i++) {
                 var item = Monster_Random_Sizes.LoadData(reader);
                 item.index = i;
                 Monster_Random_Sizes_list.Add(item);
             }
-            data.Add(Monster_Random_Sizes_list);
-            var Monsters_list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Monster_Random_Sizes_list, typeof(Monster_Random_Sizes)));
+            var Monsters_list = new List<object>();
             for (ulong i = 0; i < Monsters.GetEntryCount(data); i++) {
                 var item = Monsters.LoadData(reader);
                 item.index = i;
                 Monsters_list.Add(item);
             }
-            data.Add(Monsters_list);
-            var Crown_Table_Count_list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Monsters_list, typeof(Monsters)));
+            var Crown_Table_Count_list = new List<object>();
             for (ulong i = 0; i < Crown_Table_Count.GetEntryCount(data); i++) {
                 var item = Crown_Table_Count.LoadData(reader);
                 item.index = i;
                 Crown_Table_Count_list.Add(item);
             }
-            data.Add(Crown_Table_Count_list);
-            var Crown_Tables_list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Crown_Table_Count_list, typeof(Crown_Table_Count)));
+            var Crown_Tables_list = new List<object>();
             for (ulong i = 0; i < Crown_Tables.GetEntryCount(data); i++) {
                 var item = Crown_Tables.LoadData(reader);
                 item.index = i;
                 Crown_Tables_list.Add(item);
             }
-            data.Add(Crown_Tables_list);
+            data.Add(new MhwStructWrapper(Crown_Tables_list, typeof(Crown_Tables)));
             return data;
         }
     }

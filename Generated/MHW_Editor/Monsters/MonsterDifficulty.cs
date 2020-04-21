@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -47,7 +48,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -194,7 +195,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -355,7 +356,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -495,7 +496,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -522,41 +523,41 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public static void SaveData(List<List<dynamic>> data, string targetFile) {
+        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {
             SaveData(data, targetFile, EncryptionKey);
         }
 
-        public static List<List<dynamic>> LoadData(string targetFile) {
+        public static List<MhwStructWrapper> LoadData(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            var data = new List<List<dynamic>>();
-            var Monster_Difficulty_list = new List<dynamic>();
+            var data = new List<MhwStructWrapper>();
+            var Monster_Difficulty_list = new List<object>();
             for (ulong i = 0; i < Monster_Difficulty.GetEntryCount(data); i++) {
                 var item = Monster_Difficulty.LoadData(reader);
                 item.index = i;
                 Monster_Difficulty_list.Add(item);
             }
-            data.Add(Monster_Difficulty_list);
-            var Solo_Stats_list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Monster_Difficulty_list, typeof(Monster_Difficulty)));
+            var Solo_Stats_list = new List<object>();
             for (ulong i = 0; i < Solo_Stats.GetEntryCount(data); i++) {
                 var item = Solo_Stats.LoadData(reader);
                 item.index = i;
                 Solo_Stats_list.Add(item);
             }
-            data.Add(Solo_Stats_list);
-            var Multi_Stats_list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Solo_Stats_list, typeof(Solo_Stats)));
+            var Multi_Stats_list = new List<object>();
             for (ulong i = 0; i < Multi_Stats.GetEntryCount(data); i++) {
                 var item = Multi_Stats.LoadData(reader);
                 item.index = i;
                 Multi_Stats_list.Add(item);
             }
-            data.Add(Multi_Stats_list);
-            var Unknown_list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Multi_Stats_list, typeof(Multi_Stats)));
+            var Unknown_list = new List<object>();
             for (ulong i = 0; i < Unknown.GetEntryCount(data); i++) {
                 var item = Unknown.LoadData(reader);
                 item.index = i;
                 Unknown_list.Add(item);
             }
-            data.Add(Unknown_list);
+            data.Add(new MhwStructWrapper(Unknown_list, typeof(Unknown)));
             return data;
         }
     }

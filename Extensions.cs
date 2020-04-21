@@ -8,6 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using JetBrains.Annotations;
+using MHW_Editor.Models;
 using MHW_Editor.Weapons;
 using MHW_Template;
 using MHW_Template.Weapons;
@@ -143,10 +144,11 @@ namespace MHW_Editor {
         }
 
         [CanBeNull]
-        public static T GetEntry<T>(this List<List<object>> data, Type type) where T : class {
-            foreach (var list in data) {
-                if (list.Any() && list[0].GetType() == type) {
-                    return (T) list[0];
+        public static T GetEntry<T>(this List<MhwStructWrapper> data, Type type) where T : class {
+            foreach (var entry in data) {
+                if (entry.list.Any() && entry.type == type) {
+                    if (entry.list.Count == 0) return null;
+                    return (T) entry.list[0];
                 }
             }
 

@@ -10,6 +10,7 @@
 <#@ import namespace="System.Runtime.InteropServices" #>
 <#@ import namespace="System.Text.RegularExpressions" #>
 <#@ import namespace="MHW_Template.Models" #>
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -172,9 +173,10 @@ namespace <#= _namespace #> {
             sortIndex += 50;
         }
 
+        // GetEntryCount.
         if (@struct.fixedSizeCount > 0) {
             WriteLine("");
-            WriteLine("            public static ulong GetEntryCount(List<List<dynamic>> data) {");
+            WriteLine("            public static ulong GetEntryCount(List<MhwStructWrapper> data) {");
             WriteLine("                return FixedSizeCount;");
             WriteLine("            }");
         }
@@ -251,26 +253,26 @@ namespace <#= _namespace #> {
 
     // Glue to give the encryption key to MhwMultiStructItem.
     WriteLine("");
-    WriteLine("        public static void SaveData(List<List<dynamic>> data, string targetFile) {");
+    WriteLine("        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {");
     WriteLine("            SaveData(data, targetFile, EncryptionKey);");
     WriteLine("        }");
 
     // Master LoadData.
     WriteLine("");
-    WriteLine("        public static List<List<dynamic>> LoadData(string targetFile) {");
+    WriteLine("        public static List<MhwStructWrapper> LoadData(string targetFile) {");
     WriteLine("            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));");
-    WriteLine("            var data = new List<List<dynamic>>();");
+    WriteLine("            var data = new List<MhwStructWrapper>();");
 
     foreach (var @struct in structData.structs) {
         var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
 
-        WriteLine($"            var {name}_list = new List<dynamic>();");
+        WriteLine($"            var {name}_list = new List<object>();");
         WriteLine($"            for (ulong i = 0; i < {name}.GetEntryCount(data); i++) {{");
         WriteLine($"                var item = {name}.LoadData(reader);");
         WriteLine("                item.index = i;");
         WriteLine($"                {name}_list.Add(item);");
         WriteLine("            }");
-        WriteLine($"            data.Add({name}_list);");
+        WriteLine($"            data.Add(new MhwStructWrapper({name}_list, typeof({name})));");
     }
 
     WriteLine("            return data;");

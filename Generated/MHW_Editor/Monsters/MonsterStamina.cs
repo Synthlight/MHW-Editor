@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -77,7 +78,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -144,7 +145,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -183,7 +184,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -289,7 +290,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -328,7 +329,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -434,7 +435,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -473,7 +474,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -533,83 +534,83 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public static void SaveData(List<List<dynamic>> data, string targetFile) {
+        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {
             SaveData(data, targetFile, EncryptionKey);
         }
 
-        public static List<List<dynamic>> LoadData(string targetFile) {
+        public static List<MhwStructWrapper> LoadData(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            var data = new List<List<dynamic>>();
-            var Monster_Difficulty_list = new List<dynamic>();
+            var data = new List<MhwStructWrapper>();
+            var Monster_Difficulty_list = new List<object>();
             for (ulong i = 0; i < Monster_Difficulty.GetEntryCount(data); i++) {
                 var item = Monster_Difficulty.LoadData(reader);
                 item.index = i;
                 Monster_Difficulty_list.Add(item);
             }
-            data.Add(Monster_Difficulty_list);
-            var Fatigue_LR__list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Monster_Difficulty_list, typeof(Monster_Difficulty)));
+            var Fatigue_LR__list = new List<object>();
             for (ulong i = 0; i < Fatigue_LR_.GetEntryCount(data); i++) {
                 var item = Fatigue_LR_.LoadData(reader);
                 item.index = i;
                 Fatigue_LR__list.Add(item);
             }
-            data.Add(Fatigue_LR__list);
-            var Stamina_Count_LR__list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Fatigue_LR__list, typeof(Fatigue_LR_)));
+            var Stamina_Count_LR__list = new List<object>();
             for (ulong i = 0; i < Stamina_Count_LR_.GetEntryCount(data); i++) {
                 var item = Stamina_Count_LR_.LoadData(reader);
                 item.index = i;
                 Stamina_Count_LR__list.Add(item);
             }
-            data.Add(Stamina_Count_LR__list);
-            var Stamina_LR__list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Stamina_Count_LR__list, typeof(Stamina_Count_LR_)));
+            var Stamina_LR__list = new List<object>();
             for (ulong i = 0; i < Stamina_LR_.GetEntryCount(data); i++) {
                 var item = Stamina_LR_.LoadData(reader);
                 item.index = i;
                 Stamina_LR__list.Add(item);
             }
-            data.Add(Stamina_LR__list);
-            var Fatigue_HR__list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Stamina_LR__list, typeof(Stamina_LR_)));
+            var Fatigue_HR__list = new List<object>();
             for (ulong i = 0; i < Fatigue_HR_.GetEntryCount(data); i++) {
                 var item = Fatigue_HR_.LoadData(reader);
                 item.index = i;
                 Fatigue_HR__list.Add(item);
             }
-            data.Add(Fatigue_HR__list);
-            var Stamina_Count_HR__list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Fatigue_HR__list, typeof(Fatigue_HR_)));
+            var Stamina_Count_HR__list = new List<object>();
             for (ulong i = 0; i < Stamina_Count_HR_.GetEntryCount(data); i++) {
                 var item = Stamina_Count_HR_.LoadData(reader);
                 item.index = i;
                 Stamina_Count_HR__list.Add(item);
             }
-            data.Add(Stamina_Count_HR__list);
-            var Stamina_HR__list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Stamina_Count_HR__list, typeof(Stamina_Count_HR_)));
+            var Stamina_HR__list = new List<object>();
             for (ulong i = 0; i < Stamina_HR_.GetEntryCount(data); i++) {
                 var item = Stamina_HR_.LoadData(reader);
                 item.index = i;
                 Stamina_HR__list.Add(item);
             }
-            data.Add(Stamina_HR__list);
-            var Fatigue_MR__list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Stamina_HR__list, typeof(Stamina_HR_)));
+            var Fatigue_MR__list = new List<object>();
             for (ulong i = 0; i < Fatigue_MR_.GetEntryCount(data); i++) {
                 var item = Fatigue_MR_.LoadData(reader);
                 item.index = i;
                 Fatigue_MR__list.Add(item);
             }
-            data.Add(Fatigue_MR__list);
-            var Stamina_Count_MR__list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Fatigue_MR__list, typeof(Fatigue_MR_)));
+            var Stamina_Count_MR__list = new List<object>();
             for (ulong i = 0; i < Stamina_Count_MR_.GetEntryCount(data); i++) {
                 var item = Stamina_Count_MR_.LoadData(reader);
                 item.index = i;
                 Stamina_Count_MR__list.Add(item);
             }
-            data.Add(Stamina_Count_MR__list);
-            var Stamina_MR__list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Stamina_Count_MR__list, typeof(Stamina_Count_MR_)));
+            var Stamina_MR__list = new List<object>();
             for (ulong i = 0; i < Stamina_MR_.GetEntryCount(data); i++) {
                 var item = Stamina_MR_.LoadData(reader);
                 item.index = i;
                 Stamina_MR__list.Add(item);
             }
-            data.Add(Stamina_MR__list);
+            data.Add(new MhwStructWrapper(Stamina_MR__list, typeof(Stamina_MR_)));
             return data;
         }
     }

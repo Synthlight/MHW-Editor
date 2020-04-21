@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -76,7 +77,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -325,7 +326,7 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -370,27 +371,27 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public static void SaveData(List<List<dynamic>> data, string targetFile) {
+        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {
             SaveData(data, targetFile, EncryptionKey);
         }
 
-        public static List<List<dynamic>> LoadData(string targetFile) {
+        public static List<MhwStructWrapper> LoadData(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            var data = new List<List<dynamic>>();
-            var Monster_Rage_list = new List<dynamic>();
+            var data = new List<MhwStructWrapper>();
+            var Monster_Rage_list = new List<object>();
             for (ulong i = 0; i < Monster_Rage.GetEntryCount(data); i++) {
                 var item = Monster_Rage.LoadData(reader);
                 item.index = i;
                 Monster_Rage_list.Add(item);
             }
-            data.Add(Monster_Rage_list);
-            var Rage_Stats_list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Monster_Rage_list, typeof(Monster_Rage)));
+            var Rage_Stats_list = new List<object>();
             for (ulong i = 0; i < Rage_Stats.GetEntryCount(data); i++) {
                 var item = Rage_Stats.LoadData(reader);
                 item.index = i;
                 Rage_Stats_list.Add(item);
             }
-            data.Add(Rage_Stats_list);
+            data.Add(new MhwStructWrapper(Rage_Stats_list, typeof(Rage_Stats)));
             return data;
         }
     }

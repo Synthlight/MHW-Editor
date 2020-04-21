@@ -39,14 +39,14 @@ namespace MHW_Editor.Weapons {
         }
 
         public partial class Linked_Shell_Params {
-            public static ulong GetEntryCount(List<List<object>> data) {
-                return data.GetEntry<Shlp_1_>(typeof(Shlp_1_))?.Number_of_Linked_Shell_Params ?? 0;
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
+                return data.GetEntry<Number_of_Linked_Shell_Params_Holder>(typeof(Number_of_Linked_Shell_Params_Holder))?.Number_of_Linked_Shell_Params ?? 0;
             }
         }
 
         public partial class Modifiers {
-            public static ulong GetEntryCount(List<List<object>> data) {
-                return data.GetEntry<Shlp_2_>(typeof(Shlp_2_))?.Number_of_Modifiers ?? 0;
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
+                return data.GetEntry<Number_of_Modifiers_Holder>(typeof(Number_of_Modifiers_Holder))?.Number_of_Modifiers ?? 0;
             }
         }
     }

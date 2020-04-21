@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -76,7 +77,7 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -136,7 +137,7 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -171,7 +172,7 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -225,7 +226,7 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -260,7 +261,7 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            public static ulong GetEntryCount(List<List<dynamic>> data) {
+            public static ulong GetEntryCount(List<MhwStructWrapper> data) {
                 return FixedSizeCount;
             }
 
@@ -275,48 +276,48 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public static void SaveData(List<List<dynamic>> data, string targetFile) {
+        public static void SaveData(List<MhwStructWrapper> data, string targetFile) {
             SaveData(data, targetFile, EncryptionKey);
         }
 
-        public static List<List<dynamic>> LoadData(string targetFile) {
+        public static List<MhwStructWrapper> LoadData(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            var data = new List<List<dynamic>>();
-            var Supply_Data_list = new List<dynamic>();
+            var data = new List<MhwStructWrapper>();
+            var Supply_Data_list = new List<object>();
             for (ulong i = 0; i < Supply_Data.GetEntryCount(data); i++) {
                 var item = Supply_Data.LoadData(reader);
                 item.index = i;
                 Supply_Data_list.Add(item);
             }
-            data.Add(Supply_Data_list);
-            var Item_Box_list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Supply_Data_list, typeof(Supply_Data)));
+            var Item_Box_list = new List<object>();
             for (ulong i = 0; i < Item_Box.GetEntryCount(data); i++) {
                 var item = Item_Box.LoadData(reader);
                 item.index = i;
                 Item_Box_list.Add(item);
             }
-            data.Add(Item_Box_list);
-            var Item_Box_Scaling_list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Item_Box_list, typeof(Item_Box)));
+            var Item_Box_Scaling_list = new List<object>();
             for (ulong i = 0; i < Item_Box_Scaling.GetEntryCount(data); i++) {
                 var item = Item_Box_Scaling.LoadData(reader);
                 item.index = i;
                 Item_Box_Scaling_list.Add(item);
             }
-            data.Add(Item_Box_Scaling_list);
-            var Ammo_Box_list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Item_Box_Scaling_list, typeof(Item_Box_Scaling)));
+            var Ammo_Box_list = new List<object>();
             for (ulong i = 0; i < Ammo_Box.GetEntryCount(data); i++) {
                 var item = Ammo_Box.LoadData(reader);
                 item.index = i;
                 Ammo_Box_list.Add(item);
             }
-            data.Add(Ammo_Box_list);
-            var Ammo_Box_Scaling_list = new List<dynamic>();
+            data.Add(new MhwStructWrapper(Ammo_Box_list, typeof(Ammo_Box)));
+            var Ammo_Box_Scaling_list = new List<object>();
             for (ulong i = 0; i < Ammo_Box_Scaling.GetEntryCount(data); i++) {
                 var item = Ammo_Box_Scaling.LoadData(reader);
                 item.index = i;
                 Ammo_Box_Scaling_list.Add(item);
             }
-            data.Add(Ammo_Box_Scaling_list);
+            data.Add(new MhwStructWrapper(Ammo_Box_Scaling_list, typeof(Ammo_Box_Scaling)));
             return data;
         }
     }
