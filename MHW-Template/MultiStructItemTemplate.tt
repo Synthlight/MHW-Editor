@@ -7,7 +7,6 @@
 <#@ parameter type="MHW_Template.MhwMultiStructData" name="structData" #>
 <#@ import namespace="Microsoft.CSharp" #>
 <#@ import namespace="System.CodeDom" #>
-<#@ import namespace="System.Runtime.InteropServices" #>
 <#@ import namespace="System.Text.RegularExpressions" #>
 <#@ import namespace="MHW_Template.Models" #>
 using System;
@@ -47,21 +46,14 @@ namespace <#= _namespace #> {
 
         foreach (var entry in @struct.entries) {
             var accessLevel = entry.accessLevel;
-            if (accessLevel != "private") {
-                accessLevel += " virtual";
-            }
+            if (accessLevel != "private") accessLevel += " virtual";
 
             var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
-            if (entry.forceUnique) {
-                propName += $"_{sortIndex}";
-            }
+            if (entry.forceUnique) propName += $"_{sortIndex}";
             var entryName = $"{propName}_raw";
 
             var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
-
-            if (entry.arrayCount > -1) {
-                typeString += "[]";
-            }
+            if (entry.arrayCount > -1) typeString += "[]";
 
             string returnString;
             var setCast = "";
@@ -182,9 +174,7 @@ namespace <#= _namespace #> {
         WriteLine($"                var data = new {name}();");
         foreach (var entry in @struct.entries) {
             var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
-            if (entry.forceUnique) {
-                propName += $"_{sortIndex}";
-            }
+            if (entry.forceUnique) propName += $"_{sortIndex}";
             var entryName = $"{propName}_raw";
 
             var condition = "";
@@ -208,9 +198,7 @@ namespace <#= _namespace #> {
         WriteLine("            public override void WriteData(BinaryWriter writer) {");
         foreach (var entry in @struct.entries) {
             var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
-            if (entry.forceUnique) {
-                propName += $"_{sortIndex}";
-            }
+            if (entry.forceUnique) propName += $"_{sortIndex}";
             var entryName = $"{propName}_raw";
 
             var condition = "";
@@ -233,9 +221,7 @@ namespace <#= _namespace #> {
             WriteLine("                return new ObservableCollection<MultiStructItemCustomView> {");
             foreach (var entry in @struct.entries) {
                 var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
-                if (entry.forceUnique) {
-                    propName += $"_{sortIndex}";
-                }
+                if (entry.forceUnique) propName += $"_{sortIndex}";
 
                 WriteLine($"                    new MultiStructItemCustomView(this, \"{entry.displayName}\", \"{propName}\"),");
             }

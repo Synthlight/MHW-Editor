@@ -55,6 +55,11 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="HexMultiStruct010Template.cs">
+      <DependentUpon>HexMultiStruct010Template.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Items\BountyType.cs" />
     <Compile Include="Items\CarveAnimation.cs" />
     <Compile Include="Items\MonsterType.cs" />
@@ -127,6 +132,10 @@
     <Content Include="ButtonTypeInfoTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>ButtonTypeInfoTemplate.cs</LastGenOutput>
+    </Content>
+    <Content Include="HexMultiStruct010Template.tt">
+      <Generator>TextTemplatingFilePreProcessor</Generator>
+      <LastGenOutput>HexMultiStruct010Template.cs</LastGenOutput>
     </Content>
     <Content Include="MultiStructItemTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>

@@ -1,0 +1,57 @@
+﻿<#@ template language="C#" #>
+<#@ output extension=".bt" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(TargetDir)\MHW-Template.dll" #>
+<#@ parameter type="System.String" name="_namespace" #>
+<#@ parameter type="System.String" name="className" #>
+<#@ parameter type="MHW_Template.MhwMultiStructData" name="structData" #>
+<#@ import namespace="Microsoft.CSharp" #>
+<#@ import namespace="System.CodeDom" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//------------------------------------------------
+<#
+    var compiler = new CSharpCodeProvider();
+
+    foreach (var @struct in structData.structs) {
+        var sortIndex = 50;
+        var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
+
+        WriteLine("");
+        WriteLine("typedef struct {");
+
+        foreach (var entry in @struct.entries) {
+            var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+            if (entry.forceUnique) propName += $"_{sortIndex}";
+
+            var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
+            if (typeString == "byte") typeString = "ubyte";
+            if (typeString == "sbyte") typeString = "byte";
+            if (entry.arrayCount > -1) typeString += $"[{entry.arrayCount}]";
+
+            if (entry.condition != null) {
+                var condition = $"{entry.condition} ".Replace("|ref|", "data.").Replace("_raw", "");
+                WriteLine($"    {condition} {{ {typeString} {propName}; }}");
+            } else {
+                WriteLine($"    {typeString} {propName};");
+            }
+
+            sortIndex += 50;
+        }
+
+        WriteLine($"}} {name};");
+    }
+
+    WriteLine("");
+
+    foreach (var @struct in structData.structs) {
+        var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
+
+        if (@struct.fixedSizeCount > 1) {
+            WriteLine($"{name}[{@struct.fixedSizeCount}] {name}_;");
+        } else {
+            WriteLine($"{name} {name}_;");
+        }
+    }
+#>

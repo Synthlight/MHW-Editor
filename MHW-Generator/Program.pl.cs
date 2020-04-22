@@ -1687,7 +1687,7 @@ namespace MHW_Generator {
                 Session = new Dictionary<string, object> {
                     {"structData", structData}
                 }
-            }, ext: "bt");
+            }, "bt");
         }
     }
 }

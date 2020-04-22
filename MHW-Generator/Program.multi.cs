@@ -368,6 +368,15 @@ namespace MHW_Generator {
                     {"structData", structData}
                 }
             });
+
+            // TODO: Need to do something to replace "GetEntryCount".
+            //WriteResult($"{Global.HEX_010_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new HexMultiStruct010Template {
+            //    Session = new Dictionary<string, object> {
+            //        {"_namespace", @namespace},
+            //        {"className", className},
+            //        {"structData", structData}
+            //    }
+            //}, "bt");
         }
     }
 }
