@@ -2488,12 +2488,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected sbyte Value_X_if_1335056316__raw;
+            protected float Value_X_if_1335056316__raw;
             public const string Value_X_if_1335056316__displayName = "Value X (if 1335056316)";
             public const int Value_X_if_1335056316__sortIndex = 450;
             [SortOrder(Value_X_if_1335056316__sortIndex)]
             [DisplayName(Value_X_if_1335056316__displayName)]
-            public virtual sbyte Value_X_if_1335056316_ {
+            public virtual float Value_X_if_1335056316_ {
                 get => Value_X_if_1335056316__raw;
                 set {
                     if (Value_X_if_1335056316__raw == value) return;
@@ -2502,12 +2502,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected sbyte Value_Y_if_1335056316__raw;
+            protected float Value_Y_if_1335056316__raw;
             public const string Value_Y_if_1335056316__displayName = "Value Y (if 1335056316)";
             public const int Value_Y_if_1335056316__sortIndex = 500;
             [SortOrder(Value_Y_if_1335056316__sortIndex)]
             [DisplayName(Value_Y_if_1335056316__displayName)]
-            public virtual sbyte Value_Y_if_1335056316_ {
+            public virtual float Value_Y_if_1335056316_ {
                 get => Value_Y_if_1335056316__raw;
                 set {
                     if (Value_Y_if_1335056316__raw == value) return;
@@ -2516,12 +2516,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected sbyte Value_Z_if_1335056316__raw;
+            protected float Value_Z_if_1335056316__raw;
             public const string Value_Z_if_1335056316__displayName = "Value Z (if 1335056316)";
             public const int Value_Z_if_1335056316__sortIndex = 550;
             [SortOrder(Value_Z_if_1335056316__sortIndex)]
             [DisplayName(Value_Z_if_1335056316__displayName)]
-            public virtual sbyte Value_Z_if_1335056316_ {
+            public virtual float Value_Z_if_1335056316_ {
                 get => Value_Z_if_1335056316__raw;
                 set {
                     if (Value_Z_if_1335056316__raw == value) return;
@@ -2530,12 +2530,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected sbyte Value_Unk_if_1335056316__raw;
+            protected float Value_Unk_if_1335056316__raw;
             public const string Value_Unk_if_1335056316__displayName = "Value Unk (if 1335056316)";
             public const int Value_Unk_if_1335056316__sortIndex = 600;
             [SortOrder(Value_Unk_if_1335056316__sortIndex)]
             [DisplayName(Value_Unk_if_1335056316__displayName)]
-            public virtual sbyte Value_Unk_if_1335056316_ {
+            public virtual float Value_Unk_if_1335056316_ {
                 get => Value_Unk_if_1335056316__raw;
                 set {
                     if (Value_Unk_if_1335056316__raw == value) return;
@@ -2652,10 +2652,10 @@ namespace MHW_Editor.Weapons {
                 if (data.Header_raw == 3289971) data.Value_if_3289971__raw = reader.ReadInt32();
                 if (data.Header_raw == 79120377) data.Value_if_79120377__raw = reader.ReadSingle();
                 if (data.Header_raw == 306780182) data.Value_if_306780182__raw = reader.ReadSByte();
-                if (data.Header_raw == 1335056316) data.Value_X_if_1335056316__raw = reader.ReadSByte();
-                if (data.Header_raw == 1335056316) data.Value_Y_if_1335056316__raw = reader.ReadSByte();
-                if (data.Header_raw == 1335056316) data.Value_Z_if_1335056316__raw = reader.ReadSByte();
-                if (data.Header_raw == 1335056316) data.Value_Unk_if_1335056316__raw = reader.ReadSByte();
+                if (data.Header_raw == 1335056316) data.Value_X_if_1335056316__raw = reader.ReadSingle();
+                if (data.Header_raw == 1335056316) data.Value_Y_if_1335056316__raw = reader.ReadSingle();
+                if (data.Header_raw == 1335056316) data.Value_Z_if_1335056316__raw = reader.ReadSingle();
+                if (data.Header_raw == 1335056316) data.Value_Unk_if_1335056316__raw = reader.ReadSingle();
                 data.Name_raw = reader.ReadNullTermString();
                 data.Unk_1_raw = reader.ReadUInt32();
                 data.DataType_raw = reader.ReadNullTermString();
