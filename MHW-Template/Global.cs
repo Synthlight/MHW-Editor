@@ -51,6 +51,7 @@ namespace MHW_Template {
             "*.dglt",
             "*.diot",
             "*.dtt_agr",
+            "*.dtt_clawc",
             "*.dtt_dif",
             "*.dtt_rsz",
             "*.dtt_sta",
