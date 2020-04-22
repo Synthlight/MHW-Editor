@@ -214,10 +214,12 @@ namespace MHW_Generator_Data {
         }
 
         private static List<string> GetMatchingFiles(string rootPath) {
-            return (from path in Directory.EnumerateFiles(rootPath, "*.*", SearchOption.AllDirectories)
+            return (from path in Directory.EnumerateFiles(rootPath, "*", SearchOption.AllDirectories)
                     from fileType in FILE_TYPES_TO_CHECK
                     where path.EndsWith(fileType.Substring(1))
-                    select path).ToList();
+                    select path)
+                   .Distinct()
+                   .ToList();
         }
 
         private static void CreateSkillDataValueClass() {
