@@ -11,7 +11,28 @@ namespace MHW_Generator {
             GenMonsterRandomSize();
             GenMonsterStamina();
             GenShellParam();
+            GenSmallMonsterSizeParams();
             GenSupplyData();
+        }
+
+        private static void GenSmallMonsterSizeParams() { // .em_ss
+            var structs = new List<MhwMultiStructData.StructData> {
+                new MhwMultiStructData.StructData("Small Monster Size Params", new List<MhwMultiStructData.StructData.Entry> {
+                    new MhwMultiStructData.StructData.Entry("Magic 1", typeof(uint), true),
+                    new MhwMultiStructData.StructData.Entry("Magic 2", typeof(uint), true),
+                    new MhwMultiStructData.StructData.Entry("Magic 3", typeof(uint), true),
+                    new MhwMultiStructData.StructData.Entry("Number of Size Settings", typeof(uint), true)
+                }, 1),
+                new MhwMultiStructData.StructData("Size Settings", new List<MhwMultiStructData.StructData.Entry> {
+                    new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),
+                    new MhwMultiStructData.StructData.Entry("Min Size", typeof(float)),
+                    new MhwMultiStructData.StructData.Entry("Max Size", typeof(float)),
+                    new MhwMultiStructData.StructData.Entry("Unk (f32)", typeof(float)),
+                    new MhwMultiStructData.StructData.Entry("Monster Id", typeof(uint))
+                })
+            };
+
+            GenerateMultiStructProps("MHW_Editor.Monsters", "SmallMonsterSizeParams", new MhwMultiStructData(structs));
         }
 
         private static void GenMonsterClawGrab() { // .dtt_clawc
