@@ -253,7 +253,8 @@ namespace MHW_Editor {
                 case nameof(SkillDat.Index):
                     e.Cancel = targetFileType.Is(typeof(DecoGradeLottery),
                                                  typeof(DecoLottery),
-                                                 typeof(Gem));
+                                                 typeof(Gem),
+                                                 typeof(SafiItemGradeLottery));
                     break;
                 default:
                     e.Cancel = e.PropertyName.EndsWith("Raw");
@@ -646,6 +647,40 @@ namespace MHW_Editor {
                     item.Stream_R6__percent = item.Stream_R6_ > 0f ? (float) item.Stream_R6_ / total : 0f;
                     item.Stream_R8__percent = item.Stream_R8_ > 0f ? (float) item.Stream_R8_ / total : 0f;
                 }
+            } else if (targetFileType.Is(typeof(SafiItemGradeLottery))) {
+                foreach (SafiItemGradeLottery item in items) {
+                    var total = item.Grade_1
+                                + item.Grade_2
+                                + item.Grade_3
+                                + item.Grade_4
+                                + item.Grade_5
+                                + item.Grade_6
+                                + item.Grade_7
+                                + item.Grade_8
+                                + item.Grade_9
+                                + item.Grade_10
+                                + item.Grade_11
+                                + item.Grade_12
+                                + item.Grade_13
+                                + item.Grade_14
+                                + item.Grade_15;
+
+                    item.Grade_1_percent = item.Grade_1 > 0f ? (float) item.Grade_1 / total : 0f;
+                    item.Grade_2_percent = item.Grade_2 > 0f ? (float) item.Grade_2 / total : 0f;
+                    item.Grade_3_percent = item.Grade_3 > 0f ? (float) item.Grade_3 / total : 0f;
+                    item.Grade_4_percent = item.Grade_4 > 0f ? (float) item.Grade_4 / total : 0f;
+                    item.Grade_5_percent = item.Grade_5 > 0f ? (float) item.Grade_5 / total : 0f;
+                    item.Grade_6_percent = item.Grade_6 > 0f ? (float) item.Grade_6 / total : 0f;
+                    item.Grade_7_percent = item.Grade_7 > 0f ? (float) item.Grade_7 / total : 0f;
+                    item.Grade_8_percent = item.Grade_8 > 0f ? (float) item.Grade_8 / total : 0f;
+                    item.Grade_9_percent = item.Grade_9 > 0f ? (float) item.Grade_9 / total : 0f;
+                    item.Grade_10_percent = item.Grade_10 > 0f ? (float) item.Grade_10 / total : 0f;
+                    item.Grade_11_percent = item.Grade_11 > 0f ? (float) item.Grade_11 / total : 0f;
+                    item.Grade_12_percent = item.Grade_12 > 0f ? (float) item.Grade_12 / total : 0f;
+                    item.Grade_13_percent = item.Grade_13 > 0f ? (float) item.Grade_13 / total : 0f;
+                    item.Grade_14_percent = item.Grade_14 > 0f ? (float) item.Grade_14 / total : 0f;
+                    item.Grade_15_percent = item.Grade_15 > 0f ? (float) item.Grade_15 / total : 0f;
+                }
             }
         }
 
@@ -720,7 +755,7 @@ namespace MHW_Editor {
                 mainDataGrid.ItemsSource = new ListCollectionView(items);
             }
 
-            if (targetFileType.Is(typeof(DecoGradeLottery), typeof(DecoLottery))) {
+            if (targetFileType.Is(typeof(DecoGradeLottery), typeof(DecoLottery), typeof(SafiItemGradeLottery))) {
                 CalculatePercents();
             }
         }
@@ -797,6 +832,7 @@ namespace MHW_Editor {
                                                                    typeof(DecoLottery),
                                                                    typeof(MusicSkill),
                                                                    typeof(QuestReward),
+                                                                   typeof(SafiItemGradeLottery),
                                                                    typeof(SkillDat),
                                                                    typeof(SkillPointData))
                                                  || ButtonTypeInfo.TYPES_WITH_BUTTONS.Contains(targetFileType.Name)).VisibleIfTrue();
@@ -1150,6 +1186,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".dtt_rsz")) return typeof(MonsterRandomSize);
             if (fileName.EndsWith(".dtt_sta")) return typeof(MonsterStamina);
             if (fileName.EndsWith(".em104exp")) return typeof(AwakenedExp);
+            if (fileName.EndsWith(".em104glt")) return typeof(SafiItemGradeLottery);
             if (fileName.EndsWith(".em104iot")) return typeof(SafiItemLottery);
             if (fileName.EndsWith(".em104lb")) return typeof(AwakenedLimitBreak);
             if (fileName.EndsWith(".em104lbr")) return typeof(AwakenedLimitBreakR);

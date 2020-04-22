@@ -56,6 +56,7 @@ namespace MHW_Template {
             "*.dtt_rsz",
             "*.dtt_sta",
             "*.em104exp",
+            "*.em104glt",
             "*.em104iot",
             "*.em104lb",
             "*.em104lbr",
