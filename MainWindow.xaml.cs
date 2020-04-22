@@ -1227,5 +1227,10 @@ namespace MHW_Editor {
 
             base.OnClosed(e);
         }
+
+        // Ignore. Shuts up ReSharper complaining this isn't implemented when it is in generated code.
+        public void Connect(int connectionId, object target) {
+            throw new NotImplementedException();
+        }
     }
 }
