@@ -197,5 +197,6 @@ namespace MHW_Editor.Skills {
         public const ushort Full_Bloom_Blessing = 214;
         public const ushort Rajang_Will = 217;
         public const ushort Brachydios_Will = 218;
+        public const ushort Kulve_Taroth_Essence = 219;
     }
 }

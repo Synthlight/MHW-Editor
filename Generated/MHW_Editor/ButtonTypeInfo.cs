@@ -20,6 +20,7 @@ namespace MHW_Editor {
             "ItemList",
             "ItemLottery",
             "ItemMake",
+            "KulveItemLottery",
             "LimitBreakMaterialBase",
             "LimitBreakMaterialSkill",
             "MelderExchange",
