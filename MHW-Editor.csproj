@@ -123,6 +123,8 @@
     <Compile Include="Generated\MHW_Editor\Items\ItemList.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemMake.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\KulveGradeLottery.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\KulveItemLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\MelderExchange.cs" />
     <Compile Include="Generated\MHW_Editor\Items\MelderItem.cs" />
     <Compile Include="Generated\MHW_Editor\Items\Bounty.cs" />
@@ -187,7 +189,9 @@
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
     <Compile Include="Items\ItemDelivery.cs" />
+    <Compile Include="Items\KulveGradeLottery.cs" />
     <Compile Include="Items\SafiItemGradeLottery.cs" />
+    <Compile Include="Items\KulveItemLottery.cs" />
     <Compile Include="Items\SupplyData.cs" />
     <Compile Include="Items\SafiItemLottery.cs" />
     <Compile Include="Items\RoomFurniture.cs" />

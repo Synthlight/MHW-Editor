@@ -254,6 +254,7 @@ namespace MHW_Editor {
                     e.Cancel = targetFileType.Is(typeof(DecoGradeLottery),
                                                  typeof(DecoLottery),
                                                  typeof(Gem),
+                                                 typeof(KulveGradeLottery),
                                                  typeof(SafiItemGradeLottery));
                     break;
                 default:
@@ -681,6 +682,20 @@ namespace MHW_Editor {
                     item.Grade_14_percent = item.Grade_14 > 0f ? (float) item.Grade_14 / total : 0f;
                     item.Grade_15_percent = item.Grade_15 > 0f ? (float) item.Grade_15 / total : 0f;
                 }
+            } else if (targetFileType.Is(typeof(KulveGradeLottery))) {
+                foreach (KulveGradeLottery item in items) {
+                    var total = item.Grade_1
+                                + item.Grade_2
+                                + item.Grade_3
+                                + item.Grade_4
+                                + item.Grade_5;
+
+                    item.Grade_1_percent = item.Grade_1 > 0f ? (float) item.Grade_1 / total : 0f;
+                    item.Grade_2_percent = item.Grade_2 > 0f ? (float) item.Grade_2 / total : 0f;
+                    item.Grade_3_percent = item.Grade_3 > 0f ? (float) item.Grade_3 / total : 0f;
+                    item.Grade_4_percent = item.Grade_4 > 0f ? (float) item.Grade_4 / total : 0f;
+                    item.Grade_5_percent = item.Grade_5 > 0f ? (float) item.Grade_5 / total : 0f;
+                }
             }
         }
 
@@ -755,7 +770,7 @@ namespace MHW_Editor {
                 mainDataGrid.ItemsSource = new ListCollectionView(items);
             }
 
-            if (targetFileType.Is(typeof(DecoGradeLottery), typeof(DecoLottery), typeof(SafiItemGradeLottery))) {
+            if (targetFileType.Is(typeof(DecoGradeLottery), typeof(DecoLottery), typeof(KulveGradeLottery), typeof(SafiItemGradeLottery))) {
                 CalculatePercents();
             }
         }
@@ -830,6 +845,7 @@ namespace MHW_Editor {
 
             cb_show_id_before_name.Visibility = (targetFileType.Is(typeof(DecoGradeLottery),
                                                                    typeof(DecoLottery),
+                                                                   typeof(KulveGradeLottery),
                                                                    typeof(MusicSkill),
                                                                    typeof(QuestReward),
                                                                    typeof(SafiItemGradeLottery),
@@ -1192,6 +1208,8 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".em104lbr")) return typeof(AwakenedLimitBreakR);
             if (fileName.EndsWith(".em104wcd")) return typeof(AwakenedWpCustom);
             if (fileName.EndsWith(".em104wud")) return typeof(AwakenedWpUpgrade);
+            if (fileName.EndsWith(".em117glt")) return typeof(KulveGradeLottery);
+            if (fileName.EndsWith(".em117iot")) return typeof(KulveItemLottery);
             if (fileName.EndsWith(".emst")) return typeof(EnemySort);
             if (fileName.EndsWith(".em_ss")) return typeof(SmallMonsterSizeParams);
             if (fileName.EndsWith(".eq_crt")) return typeof(EqCrt);
