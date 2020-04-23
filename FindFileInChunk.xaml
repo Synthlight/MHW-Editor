@@ -26,11 +26,13 @@
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Orientation="Vertical">
-            <Label Content="This is a simple list of supported files and the latest chunk they can be found in.&#x0d;&#x0a;(Path is for the first occurence of the file in the chunk.)"/>
+            <TextBlock Margin="4"
+                       Text="This is a simple list of supported files and the latest chunk they can be found in.&#x0d;&#x0a;(Path is for the first occurence of the file in the chunk.)"/>
         </StackPanel>
-        <Label Grid.Row="1"
-               Grid.Column="0"
-               Content="Filter:"/>
+        <TextBlock Grid.Row="1"
+                   Grid.Column="0"
+                   Margin="4"
+                   Text="Filter:"/>
         <TextBox Name="filter"
                  Grid.Row="1"
                  Grid.Column="1"
@@ -57,18 +59,21 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-                        <Label Grid.Row="0"
-                               Grid.Column="0"
-                               HorizontalAlignment="Left"
-                               Content="{Binding Key}"/>
-                        <Label Grid.Row="0"
-                               Grid.Column="1"
-                               HorizontalAlignment="Left"
-                               Content="{Binding Value.Chunk}"/>
-                        <Label Grid.Row="0"
-                               Grid.Column="2"
-                               HorizontalAlignment="Left"
-                               Content="{Binding Value.Path}"/>
+                        <TextBlock Grid.Row="0"
+                                   Grid.Column="0"
+                                   Margin="4"
+                                   HorizontalAlignment="Left"
+                                   Text="{Binding Key}"/>
+                        <TextBlock Grid.Row="0"
+                                   Grid.Column="1"
+                                   Margin="4"
+                                   HorizontalAlignment="Left"
+                                   Text="{Binding Value.Chunk}"/>
+                        <TextBlock Grid.Row="0"
+                                   Grid.Column="2"
+                                   Margin="4"
+                                   HorizontalAlignment="Left"
+                                   Text="{Binding Value.Path}"/>
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>

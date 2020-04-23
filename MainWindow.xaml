@@ -92,16 +92,18 @@
                     <ContentControl Content="{StaticResource FindInFile_16x}"
                                     ToolTip="Find which chunk a file is in."/>
                 </Button>
-                <Label Name="lbl_saved"
-                       Margin="8,0,0,0"
-                       HorizontalAlignment="Left"
-                       Content="—Saved"
-                       Visibility="Collapsed"/>
-                <Label Name="lbl_no_changes"
-                       Margin="8,0,0,0"
-                       HorizontalAlignment="Left"
-                       Content="—No Changes to Save"
-                       Visibility="Collapsed"/>
+                <TextBlock Name="lbl_saved"
+                           Margin="8,0,0,0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="—Saved"
+                           Visibility="Collapsed"/>
+                <TextBlock Name="lbl_no_changes"
+                           Margin="8,0,0,0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="—No Changes to Save"
+                           Visibility="Collapsed"/>
             </StackPanel>
         </DockPanel>
         <DockPanel Grid.Row="0"

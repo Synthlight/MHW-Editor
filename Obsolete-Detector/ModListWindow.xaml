@@ -48,10 +48,11 @@
                                   Grid.Column="0"
                                   VerticalAlignment="Center"
                                   IsChecked="{Binding ToDelete}"/>
-                        <Label Grid.Row="0"
-                               Grid.Column="1"
-                               VerticalAlignment="Center"
-                               Content="{Binding Path}"/>
+                        <TextBlock Grid.Row="0"
+                                   Grid.Column="1"
+                                   Margin="4"
+                                   VerticalAlignment="Center"
+                                   Text="{Binding Path}"/>
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
