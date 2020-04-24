@@ -245,7 +245,7 @@ namespace MHW_Editor {
                                    typeof(CustomParts),
                                    typeof(CustomPartsR),
                                    typeof(EqCrt_Base),
-                                   typeof(EqCus),
+                                   typeof(EqCus_Base),
                                    typeof(Item),
                                    typeof(IWeapon),
                                    typeof(NewLimitBreak),
@@ -279,8 +279,8 @@ namespace MHW_Editor {
                         if (eqCrt.Mat_4_Count > 0) eqCrt.Mat_4_Count = 1;
                         break;
                     }
-                    case EqCus _: {
-                        EqCus eqCus = item;
+                    case EqCus_Base _: {
+                        EqCus_Base eqCus = item;
                         if (eqCus.Mat_1_Count > 0) eqCus.Mat_1_Count = 1;
                         if (eqCus.Mat_2_Count > 0) eqCus.Mat_2_Count = 1;
                         if (eqCus.Mat_3_Count > 0) eqCus.Mat_3_Count = 1;

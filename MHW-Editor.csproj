@@ -118,7 +118,7 @@
     <Compile Include="Generated\MHW_Editor\Gems\DecoGradeLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCrt_Base.cs" />
-    <Compile Include="Generated\MHW_Editor\Items\EqCus.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\EqCus_Base.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemDelivery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemList.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemLottery.cs" />
@@ -188,6 +188,9 @@
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Items\EqCus_Weapon.cs" />
+    <Compile Include="Items\EqCus_Misc.cs" />
+    <Compile Include="Items\EqCus_Armor.cs" />
     <Compile Include="Items\EqCrt_Palico.cs" />
     <Compile Include="Items\EqCrt_Charm.cs" />
     <Compile Include="Items\EqCrt_Base.cs" />
@@ -230,7 +233,7 @@
     <Compile Include="Items\ItemMake.cs" />
     <Compile Include="Items\PlantFertilizer.cs" />
     <Compile Include="Items\PlantItem.cs" />
-    <Compile Include="Items\EqCus.cs" />
+    <Compile Include="Items\EqCus_Base.cs" />
     <Compile Include="Items\EqCrt_Armor.cs" />
     <Compile Include="Items\ShopSed.cs" />
     <Compile Include="JsonMigrations.cs" />

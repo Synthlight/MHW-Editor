@@ -803,7 +803,7 @@ namespace MHW_Editor {
                                                               typeof(CustomParts),
                                                               typeof(CustomPartsR),
                                                               typeof(EqCrt_Base),
-                                                              typeof(EqCus),
+                                                              typeof(EqCus_Base),
                                                               typeof(Item),
                                                               typeof(IWeapon),
                                                               typeof(NewLimitBreak),
@@ -1198,6 +1198,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".em117iot")) return typeof(KulveItemLottery);
             if (fileName.EndsWith(".emst")) return typeof(EnemySort);
             if (fileName.EndsWith(".em_ss")) return typeof(SmallMonsterSizeParams);
+
             if (fileName.EndsWith(".eq_crt")) {
                 if (fileName.StartsWith("armor")) return typeof(EqCrt_Armor);
                 if (fileName.StartsWith("charm")) return typeof(EqCrt_Charm);
@@ -1205,7 +1206,13 @@ namespace MHW_Editor {
                 if (fileName.StartsWith("weapon")) return typeof(EqCrt_Weapon);
             }
 
-            if (fileName.EndsWith(".eq_cus")) return typeof(EqCus);
+            if (fileName.EndsWith(".eq_cus")) {
+                if (fileName.StartsWith("equip_custom")) return typeof(EqCus_Armor);
+                if (fileName.StartsWith("insect_element")) return typeof(EqCus_Misc);
+                if (fileName.StartsWith("insect")) return typeof(EqCus_Misc);
+                if (fileName.StartsWith("weapon")) return typeof(EqCus_Weapon);
+            }
+
             if (fileName.EndsWith(".gun_rd")) return typeof(GunnerReload);
             if (fileName.EndsWith(".gun_sd")) return typeof(GunnerShoot);
             if (fileName.EndsWith(".imk")) return typeof(ItemMake);

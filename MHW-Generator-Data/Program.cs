@@ -41,6 +41,7 @@ namespace MHW_Generator_Data {
             CreateArmorDataValueClass();
             CreateSkillDataValueClass();
             GenButtonLocalizationAndIdList();
+            if (Environment.GetCommandLineArgs().ContainsIgnoreCase("-justData")) return;
             GenKnownLengths();
             GenOutdatedHashes(); // This can take a while as it does extraction. Use '-skipExtract' to skip the extraction part.
         }

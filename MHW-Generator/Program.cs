@@ -1075,14 +1075,14 @@ namespace MHW_Generator {
         }
 
         private static void GenEqCus() {
-            GenerateItemProps("MHW_Editor.Items", "EqCus", new MhwStructData {
+            GenerateItemProps("MHW_Editor.Items", "EqCus_Base", new MhwStructData {
                 size = 41,
                 offsetInitial = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Equipment_Category}|{Equipment_Index}",
+                uniqueIdFormula = "{Equipment_Category_Raw}|{Equipment_Index_Raw}",
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Equipment Category", 0, typeof(byte), true),
-                    new MhwStructData.Entry("Equipment Index", 1, typeof(ushort), true),
+                    new MhwStructData.Entry("Equipment Category Raw", 0, typeof(byte), true),
+                    new MhwStructData.Entry("Equipment Index Raw", 1, typeof(ushort), true),
                     new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Monster Unlock", 5, typeof(int)),
                     new MhwStructData.Entry("Story Unlock", 9, typeof(uint)),
