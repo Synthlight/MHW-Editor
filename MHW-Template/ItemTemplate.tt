@@ -115,24 +115,7 @@ namespace <#= _namespace #> {
         WriteLine("        }");
 
         if (entry.dataSourceType != null) {
-            string dataSourceLookup;
-
-            switch (entry.dataSourceType) {
-                case DataSourceType.Items:
-                    dataSourceLookup = "DataHelper.itemNames[MainWindow.locale]";
-                    break;
-                case DataSourceType.Skills:
-                    dataSourceLookup = "DataHelper.skillNames[MainWindow.locale]";
-                    break;
-                case DataSourceType.SkillDat:
-                    dataSourceLookup = "MainWindow.skillDatLookup[MainWindow.locale]";
-                    break;
-                case DataSourceType.CategorizedWeapons:
-                    dataSourceLookup = "DataHelper.weaponIdNameLookup[Weapon_Type][MainWindow.locale]";
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+            var dataSourceLookup = GenerationHelper.GetDataSourceType(entry.dataSourceType ?? throw new Exception());
 
             WriteLine("");
             WriteLine($"        [SortOrder({name}_sortIndex)]");

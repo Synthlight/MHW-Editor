@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Armors\EquipSlot.cs" />
+    <Compile Include="Armors\PalicoEquipType.cs" />
+    <Compile Include="Armors\CharmType.cs" />
     <Compile Include="Armors\ArmorType.cs" />
+    <Compile Include="Armors\ArmorSetType.cs" />
     <Compile Include="Armors\Gender.cs" />
     <Compile Include="Armors\Variant.cs" />
     <Compile Include="EncryptionKeys.cs" />
@@ -54,6 +56,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="GenerationHelper.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="HexMultiStruct010Template.cs">
       <DependentUpon>HexMultiStruct010Template.tt</DependentUpon>
@@ -126,6 +129,7 @@
     <Compile Include="Weapons\ScopeType.cs" />
     <Compile Include="Weapons\SpecialAmmo.cs" />
     <Compile Include="Weapons\Element.cs" />
+    <Compile Include="Items\EquipmentType.cs" />
     <Compile Include="Weapons\WeaponType.cs" />
   </ItemGroup>
   <ItemGroup>

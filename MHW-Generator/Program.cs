@@ -110,8 +110,8 @@ namespace MHW_Generator {
                 autoOffset = true,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", typeof(uint)),
-                    new MhwStructData.Entry("Weapon Type", typeof(uint), enumReturn: typeof(WeaponTypeOnlyWeapons), extraOnPropertyChanged: new[] {"Weapon_Id_button"}),
-                    new MhwStructData.Entry("Weapon Id", typeof(uint), dataSourceType: DataSourceType.CategorizedWeapons),
+                    new MhwStructData.Entry("Weapon Type", typeof(uint), enumReturn: typeof(WeaponType), extraOnPropertyChanged: new[] {"Weapon_Id_button"}),
+                    new MhwStructData.Entry("Weapon Id", typeof(uint), dataSourceType: DataSourceType.WeaponsById),
                     new MhwStructData.Entry("Grade 1", typeof(uint)),
                     new MhwStructData.Entry("Grade 2", typeof(uint)),
                     new MhwStructData.Entry("Grade 3", typeof(uint)),
@@ -212,8 +212,8 @@ namespace MHW_Generator {
                 autoOffset = true,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", typeof(uint)),
-                    new MhwStructData.Entry("Weapon Type", typeof(uint), enumReturn: typeof(WeaponTypeOnlyWeapons), extraOnPropertyChanged: new[] {"Weapon_Id_button"}),
-                    new MhwStructData.Entry("Weapon Id", typeof(uint), dataSourceType: DataSourceType.CategorizedWeapons),
+                    new MhwStructData.Entry("Weapon Type", typeof(uint), enumReturn: typeof(WeaponType), extraOnPropertyChanged: new[] {"Weapon_Id_button"}),
+                    new MhwStructData.Entry("Weapon Id", typeof(uint), dataSourceType: DataSourceType.WeaponsById),
                     new MhwStructData.Entry("All Rarity", typeof(uint)),
                     new MhwStructData.Entry("GS Rarity", typeof(uint)),
                     new MhwStructData.Entry("LS Rarity", typeof(uint)),
@@ -789,8 +789,8 @@ namespace MHW_Generator {
                 entryCountOffset = 6,
                 uniqueIdFormula = "{Index}",
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Equip Type", 0, typeof(uint), typeof(WeaponType)),
-                    new MhwStructData.Entry("Equip Id", 4, typeof(uint)),
+                    new MhwStructData.Entry("Equip Type", 0, typeof(uint), typeof(EquipmentType)),
+                    new MhwStructData.Entry("Equip Id", 4, typeof(uint), dataSourceType: DataSourceType.EquipmentById),
                     new MhwStructData.Entry("Story Unlock", 8, typeof(uint))
                 }
             });
@@ -986,7 +986,7 @@ namespace MHW_Generator {
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Set Id", 4, typeof(ushort), true),
-                    new MhwStructData.Entry("Equip Slot", 6, typeof(byte), true, typeof(EquipSlot)),
+                    new MhwStructData.Entry("Equip Slot", 6, typeof(byte), true, typeof(ArmorType)),
                     new MhwStructData.Entry("Is Full Set", 7, typeof(byte), typeof(bool)),
                     new MhwStructData.Entry("Defense", 8, typeof(uint)),
                     new MhwStructData.Entry("Rarity", 12, typeof(byte)),
@@ -1079,10 +1079,10 @@ namespace MHW_Generator {
                 size = 41,
                 offsetInitial = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Equipment_Category}|{Equipment_Id}",
+                uniqueIdFormula = "{Equipment_Category}|{Equipment_Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Equipment Category", 0, typeof(byte), true),
-                    new MhwStructData.Entry("Equipment Id", 1, typeof(ushort), true),
+                    new MhwStructData.Entry("Equipment Index", 1, typeof(ushort), true),
                     new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Monster Unlock", 5, typeof(int)),
                     new MhwStructData.Entry("Story Unlock", 9, typeof(uint)),
@@ -1104,14 +1104,14 @@ namespace MHW_Generator {
         }
 
         private static void GenEqCrt() {
-            GenerateItemProps("MHW_Editor.Items", "EqCrt", new MhwStructData {
+            GenerateItemProps("MHW_Editor.Items", "EqCrt_Base", new MhwStructData {
                 size = 37,
                 offsetInitial = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Equipment_Category}|{Equipment_Id}",
+                uniqueIdFormula = "{Equipment_Category_Raw}|{Equipment_Index_Raw}",
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Equipment Category", 0, typeof(byte), true),
-                    new MhwStructData.Entry("Equipment Id", 1, typeof(ushort), true),
+                    new MhwStructData.Entry("Equipment Category Raw", 0, typeof(byte), true),
+                    new MhwStructData.Entry("Equipment Index Raw", 1, typeof(ushort), true),
                     new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Monster Unlock", 5, typeof(int)),
                     new MhwStructData.Entry("Story Unlock", 9, typeof(uint)),
@@ -1438,8 +1438,8 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Order", 4, typeof(ushort)),
                     new MhwStructData.Entry("Variant", 6, typeof(byte), true, typeof(Variant)),
                     new MhwStructData.Entry("Set (Layered) Id", 7, typeof(ushort), true),
-                    new MhwStructData.Entry("Type", 9, typeof(byte), true, typeof(ArmorType)),
-                    new MhwStructData.Entry("Equip Slot", 10, typeof(byte), true, typeof(EquipSlot)),
+                    new MhwStructData.Entry("Type", 9, typeof(byte), true, typeof(ArmorSetType)),
+                    new MhwStructData.Entry("Equip Slot", 10, typeof(byte), true, typeof(ArmorType)),
                     new MhwStructData.Entry("Defense", 11, typeof(ushort)),
                     new MhwStructData.Entry("Model Id 1", 13, typeof(ushort)),
                     new MhwStructData.Entry("Model Id 2", 15, typeof(ushort)),

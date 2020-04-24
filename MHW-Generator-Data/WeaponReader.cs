@@ -13,19 +13,19 @@ namespace MHW_Generator_Data {
     public static class WeaponReader {
         private const string TARGET_FILE_BASE = @"V:\MHW\IB\chunk_combined\common\equip";
 
-        public static Dictionary<WeaponTypeOnlyWeapons, LangMap> GetAllWeapons() {
-            var values = new Dictionary<WeaponTypeOnlyWeapons, LangMap>();
-            var weaponTypes = (WeaponTypeOnlyWeapons[]) Enum.GetValues(typeof(WeaponTypeOnlyWeapons));
+        public static Dictionary<WeaponType, LangMap> GetAllWeapons(IndexOrId by) {
+            var values = new Dictionary<WeaponType, LangMap>();
+            var weaponTypes = (WeaponType[]) Enum.GetValues(typeof(WeaponType));
 
             foreach (var weaponType in weaponTypes) {
                 var datFileName = weaponType.ToDatFileName();
-                values[weaponType] = GetWeaponsOfType($@"{TARGET_FILE_BASE}\{datFileName}", weaponType);
+                values[weaponType] = GetWeaponsOfType($@"{TARGET_FILE_BASE}\{datFileName}", weaponType, by);
             }
 
             return values;
         }
 
-        public static LangMap GetWeaponsOfType(string targetFile, WeaponTypeOnlyWeapons weaponType) {
+        public static LangMap GetWeaponsOfType(string targetFile, WeaponType weaponType, IndexOrId by) {
             using var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read));
             dat.BaseStream.Seek(6, SeekOrigin.Begin);
             var count = dat.ReadUInt32();
@@ -49,7 +49,7 @@ namespace MHW_Generator_Data {
                 foreach (var lang in Global.LANGUAGES) {
                     if (!values.ContainsKey(lang)) values[lang] = new Dictionary<uint, string>();
 
-                    values[lang][weapon.Id] = DataHelper.weaponData[lang][weaponTypeName ?? throw new InvalidOperationException()][weapon.GMD_Name_Index];
+                    values[lang][by == IndexOrId.Id ? weapon.Id : weapon.Index] = DataHelper.weaponData[lang][weaponTypeName ?? throw new InvalidOperationException()][weapon.GMD_Name_Index];
                 }
             }
 

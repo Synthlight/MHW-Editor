@@ -63,6 +63,26 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ArmorNameLookupById {
+            get {
+                object obj = ResourceManager.GetObject("ArmorNameLookupById", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ArmorNameLookupByIndex {
+            get {
+                object obj = ResourceManager.GetObject("ArmorNameLookupByIndex", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] BadHashMap {
             get {
                 object obj = ResourceManager.GetObject("BadHashMap", resourceCulture);
@@ -96,6 +116,26 @@ namespace MHW_Editor.Assets {
         internal static byte[] GoodChunkMap {
             get {
                 object obj = ResourceManager.GetObject("GoodChunkMap", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] WeaponNameLookupById {
+            get {
+                object obj = ResourceManager.GetObject("WeaponNameLookupById", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] WeaponNameLookupByIndex {
+            get {
+                object obj = ResourceManager.GetObject("WeaponNameLookupByIndex", resourceCulture);
                 return ((byte[])(obj));
             }
         }

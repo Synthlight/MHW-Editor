@@ -13,6 +13,10 @@ namespace MHW_Template.Models {
         Items,
         Skills,
         SkillDat,
-        CategorizedWeapons
+        ArmorById,
+        ArmorByIndex,
+        WeaponsById,
+        WeaponsByIndex,
+        EquipmentById
     }
 }

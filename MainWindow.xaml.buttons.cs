@@ -244,7 +244,7 @@ namespace MHW_Editor {
                                    typeof(CustomOuterRecipe),
                                    typeof(CustomParts),
                                    typeof(CustomPartsR),
-                                   typeof(EqCrt),
+                                   typeof(EqCrt_Base),
                                    typeof(EqCus),
                                    typeof(Item),
                                    typeof(IWeapon),
@@ -271,8 +271,8 @@ namespace MHW_Editor {
                         if (weapon.Cost > 0) weapon.Cost = 1;
                         break;
                     }
-                    case EqCrt _: {
-                        EqCrt eqCrt = item;
+                    case EqCrt_Base _: {
+                        EqCrt_Base eqCrt = item;
                         if (eqCrt.Mat_1_Count > 0) eqCrt.Mat_1_Count = 1;
                         if (eqCrt.Mat_2_Count > 0) eqCrt.Mat_2_Count = 1;
                         if (eqCrt.Mat_3_Count > 0) eqCrt.Mat_3_Count = 1;

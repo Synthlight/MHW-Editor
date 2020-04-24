@@ -28,6 +28,8 @@ using MHW_Editor.Skills;
 using MHW_Editor.Weapons;
 using MHW_Editor.Weapons.Collision;
 using MHW_Template;
+using MHW_Template.Armors;
+using MHW_Template.Items;
 using MHW_Template.Models;
 using MHW_Template.Weapons;
 using Microsoft.Win32;
@@ -239,14 +241,6 @@ namespace MHW_Editor {
                 case nameof(Ranged.Shell_Type_Id):
                     e.Cancel = targetFileType.Is(typeof(Bow));
                     break;
-                case nameof(IMhwItem.Name):
-                    if (targetFileType.Is(typeof(EqCrt))) {
-                        if (fileName != "charm") {
-                            e.Cancel = true;
-                        }
-                    }
-
-                    break;
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
                     break;
@@ -270,22 +264,6 @@ namespace MHW_Editor {
             if (e.Cancel) return;
 
             switch (e.PropertyName) {
-                case nameof(EqCrt.Equipment_Category): {
-                    if (!EqCrt.categoryLookup.ContainsKey(fileName ?? throw new InvalidOperationException())) break;
-
-                    var cb = new DataGridComboBoxColumn {
-                        Header = e.Column.Header,
-                        ItemsSource = EqCrt.categoryLookup[fileName],
-                        SelectedValueBinding = new Binding(e.PropertyName) {
-                            Mode = BindingMode.OneWay
-                        },
-                        SelectedValuePath = "Key",
-                        DisplayMemberPath = "Value",
-                        CanUserSort = true
-                    };
-                    e.Column = cb;
-                    break;
-                }
                 case nameof(ShellTable.Armor_Rec_Amnt):
                 case nameof(ShellTable.Cluster_1_Rec_Amnt):
                 case nameof(ShellTable.Cluster_2_Rec_Amnt):
@@ -531,7 +509,11 @@ namespace MHW_Editor {
                 DataSourceType.Items => DataHelper.itemNames[locale],
                 DataSourceType.Skills => DataHelper.skillNames[locale],
                 DataSourceType.SkillDat => skillDatLookup[locale],
-                DataSourceType.CategorizedWeapons => DataHelper.weaponIdNameLookup[GetWeaponType(cell)][locale],
+                DataSourceType.ArmorById => DataHelper.armorIdNameLookup[GetArmorType(cell)][locale],
+                DataSourceType.ArmorByIndex => DataHelper.armorIndexNameLookup[GetArmorType(cell)][locale],
+                DataSourceType.WeaponsById => DataHelper.weaponIdNameLookup[GetWeaponType(cell)][locale],
+                DataSourceType.WeaponsByIndex => DataHelper.weaponIndexNameLookup[GetWeaponType(cell)][locale],
+                DataSourceType.EquipmentById => DataHelper.equipmentIdNameLookup[GetEquipmentType(cell)][locale],
                 _ => throw new ArgumentOutOfRangeException(dataSourceType.ToString())
             };
 
@@ -545,12 +527,16 @@ namespace MHW_Editor {
             }
         }
 
-        private static WeaponTypeOnlyWeapons GetWeaponType(FrameworkElement cell) {
-            var obj = (MhwItem) cell.DataContext;
-            var property = obj.GetType().GetProperty("Weapon_Type", BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
-            Debug.Assert(property != null, nameof(property) + " != null");
-            var value = property.GetValue(obj);
-            return (WeaponTypeOnlyWeapons) value;
+        private static ArmorType GetArmorType(FrameworkElement cell) {
+            return ((IHasArmorType) cell.DataContext).GetArmorType();
+        }
+
+        private static WeaponType GetWeaponType(FrameworkElement cell) {
+            return ((IHasWeaponType) cell.DataContext).GetWeaponType();
+        }
+
+        private static EquipmentType GetEquipmentType(FrameworkElement cell) {
+            return ((IHasEquipmentType) cell.DataContext).GetEquipmentType();
         }
 
         private void Dg_items_Sorting(object sender, DataGridSortingEventArgs e) {
@@ -560,7 +546,7 @@ namespace MHW_Editor {
                 if (!matches.Any()) return;
                 var customSorter = matches.First().Value.customSorter;
 
-                e.Column.SortDirection = customSorter.SortDirection = (e.Column.SortDirection != ListSortDirection.Ascending) ? ListSortDirection.Ascending : ListSortDirection.Descending;
+                e.Column.SortDirection = customSorter.SortDirection = e.Column.SortDirection != ListSortDirection.Ascending ? ListSortDirection.Ascending : ListSortDirection.Descending;
 
                 var listColView = (ListCollectionView) ((DataGrid) sender).ItemsSource;
                 listColView.CustomSort = customSorter;
@@ -816,7 +802,7 @@ namespace MHW_Editor {
                                                               typeof(CustomOuterRecipe),
                                                               typeof(CustomParts),
                                                               typeof(CustomPartsR),
-                                                              typeof(EqCrt),
+                                                              typeof(EqCrt_Base),
                                                               typeof(EqCus),
                                                               typeof(Item),
                                                               typeof(IWeapon),
@@ -936,7 +922,7 @@ namespace MHW_Editor {
 
                 object obj;
                 // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
-                if (targetFileType.Is(typeof(IWeapon), typeof(EqCrt))) {
+                if (targetFileType.Is(typeof(IWeapon))) {
                     obj = Activator.CreateInstance(targetFileType, buff, (ulong) position, weaponFilename);
                 } else {
                     obj = Activator.CreateInstance(targetFileType, buff, (ulong) position);
@@ -957,7 +943,7 @@ namespace MHW_Editor {
 
                 object obj;
                 // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
-                if (targetFileType.Is(typeof(IWeapon), typeof(EqCrt))) {
+                if (targetFileType.Is(typeof(IWeapon))) {
                     obj = Activator.CreateInstance(targetFileType, buff, offset, weaponFilename);
                 } else {
                     obj = Activator.CreateInstance(targetFileType, buff, offset);
@@ -1212,7 +1198,13 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".em117iot")) return typeof(KulveItemLottery);
             if (fileName.EndsWith(".emst")) return typeof(EnemySort);
             if (fileName.EndsWith(".em_ss")) return typeof(SmallMonsterSizeParams);
-            if (fileName.EndsWith(".eq_crt")) return typeof(EqCrt);
+            if (fileName.EndsWith(".eq_crt")) {
+                if (fileName.StartsWith("armor")) return typeof(EqCrt_Armor);
+                if (fileName.StartsWith("charm")) return typeof(EqCrt_Charm);
+                if (fileName.StartsWith("ot_equip")) return typeof(EqCrt_Palico);
+                if (fileName.StartsWith("weapon")) return typeof(EqCrt_Weapon);
+            }
+
             if (fileName.EndsWith(".eq_cus")) return typeof(EqCus);
             if (fileName.EndsWith(".gun_rd")) return typeof(GunnerReload);
             if (fileName.EndsWith(".gun_sd")) return typeof(GunnerShoot);

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using MHW_Template.Armors;
+using MHW_Template.Items;
 using MHW_Template.Weapons;
 
 namespace MHW_Template {
@@ -117,8 +119,44 @@ namespace MHW_Template {
             }
         }
 
-        public static string ToDatFileName(this WeaponTypeOnlyWeapons weaponType) {
-            return ((WeaponType) weaponType).ToDatFileName();
+        public static string ToDatFileName(this EquipmentType equipmentType) {
+            switch (equipmentType) {
+                case EquipmentType.Greatsword: return "l_sword.wp_dat";
+                case EquipmentType.Sword_and_Shield: return "sword.wp_dat";
+                case EquipmentType.Dual_Blades: return "w_sword.wp_dat";
+                case EquipmentType.Longsword: return "tachi.wp_dat";
+                case EquipmentType.Hammer: return "hammer.wp_dat";
+                case EquipmentType.Hunting_Horn: return "whistle.wp_dat";
+                case EquipmentType.Lance: return "lance.wp_dat";
+                case EquipmentType.Gunlance: return "g_lance.wp_dat";
+                case EquipmentType.Switch_Axe: return "s_axe.wp_dat";
+                case EquipmentType.Charge_Blade: return "c_axe.wp_dat";
+                case EquipmentType.Insect_Glaive: return "rod.wp_dat";
+                case EquipmentType.Bow: return "bow.wp_dat_g";
+                case EquipmentType.Light_Bowgun: return "lbg.wp_dat_g";
+                case EquipmentType.Heavy_Bowgun: return "hbg.wp_dat_g";
+                case EquipmentType.Armor_Head:
+                case EquipmentType.Armor_Chest:
+                case EquipmentType.Armor_Arms:
+                case EquipmentType.Armor_Waist:
+                case EquipmentType.Armor_Legs:
+                case EquipmentType.Armor_Charm:
+                    return "armor.am_dat";
+                default: return null;
+            }
+        }
+
+        public static string ToDatFileName(this ArmorType armorType) {
+            switch (armorType) {
+                case ArmorType.Head:
+                case ArmorType.Chest:
+                case ArmorType.Arms:
+                case ArmorType.Waist:
+                case ArmorType.Legs:
+                case ArmorType.Charm:
+                    return "armor.am_dat";
+                default: return null;
+            }
         }
     }
 }

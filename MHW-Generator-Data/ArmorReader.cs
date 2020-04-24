@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using MHW_Editor.Armors;
+using MHW_Editor.Assets;
+using MHW_Template;
+using MHW_Template.Armors;
 
 namespace MHW_Generator_Data {
     public static class ArmorReader {
@@ -20,6 +23,23 @@ namespace MHW_Generator_Data {
 
                 yield return new Armor(buff, (ulong) position);
             }
+        }
+
+        public static Dictionary<ArmorType, LangMap> GetAllArmors(IndexOrId by) {
+            var values = new Dictionary<ArmorType, LangMap>();
+
+            foreach (var armor in GetArmor()) {
+                var armorType = armor.Equip_Slot;
+                if (!values.ContainsKey(armorType)) values[armorType] = new LangMap();
+
+                foreach (var lang in Global.LANGUAGES) {
+                    if (!values[armorType].ContainsKey(lang)) values[armorType][lang] = new Dictionary<uint, string>();
+
+                    values[armorType][lang][by == IndexOrId.Id ? armor.Set_Group : armor.Index] = DataHelper.armorData[lang][armor.GMD_Name_Index];
+                }
+            }
+
+            return values;
         }
     }
 }

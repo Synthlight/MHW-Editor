@@ -174,24 +174,7 @@ namespace MHW_Template
         WriteLine("        }");
 
         if (entry.dataSourceType != null) {
-            string dataSourceLookup;
-
-            switch (entry.dataSourceType) {
-                case DataSourceType.Items:
-                    dataSourceLookup = "DataHelper.itemNames[MainWindow.locale]";
-                    break;
-                case DataSourceType.Skills:
-                    dataSourceLookup = "DataHelper.skillNames[MainWindow.locale]";
-                    break;
-                case DataSourceType.SkillDat:
-                    dataSourceLookup = "MainWindow.skillDatLookup[MainWindow.locale]";
-                    break;
-                case DataSourceType.CategorizedWeapons:
-                    dataSourceLookup = "DataHelper.weaponIdNameLookup[Weapon_Type][MainWindow.locale]";
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+            var dataSourceLookup = GenerationHelper.GetDataSourceType(entry.dataSourceType ?? throw new Exception());
 
             WriteLine("");
             WriteLine($"        [SortOrder({name}_sortIndex)]");
@@ -222,7 +205,7 @@ namespace MHW_Template
             #line hidden
             this.Write("\r\n        public const int lastSortIndex = ");
             
-            #line 162 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
+            #line 145 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(sortIndex));
             
             #line default

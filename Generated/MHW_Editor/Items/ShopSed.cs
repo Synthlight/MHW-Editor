@@ -17,10 +17,10 @@ namespace MHW_Editor.Items {
         public const int Equip_Type_sortIndex = 50;
         [SortOrder(Equip_Type_sortIndex)]
         [DisplayName(Equip_Type_displayName)]
-        public virtual MHW_Template.Weapons.WeaponType Equip_Type {
-            get => (MHW_Template.Weapons.WeaponType) GetData<uint>(0);
+        public virtual MHW_Template.Items.EquipmentType Equip_Type {
+            get => (MHW_Template.Items.EquipmentType) GetData<uint>(0);
             set {
-                if ((MHW_Template.Weapons.WeaponType) GetData<uint>(0) == value) return;
+                if ((MHW_Template.Items.EquipmentType) GetData<uint>(0) == value) return;
                 SetData(0, (uint) value, nameof(Equip_Type));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Equip_Type));
@@ -31,6 +31,7 @@ namespace MHW_Editor.Items {
         public const int Equip_Id_sortIndex = 100;
         [SortOrder(Equip_Id_sortIndex)]
         [DisplayName(Equip_Id_displayName)]
+        [DataSource(DataSourceType.EquipmentById)]
         public virtual uint Equip_Id {
             get => GetData<uint>(4);
             set {
@@ -38,8 +39,14 @@ namespace MHW_Editor.Items {
                 SetData(4, value, nameof(Equip_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Equip_Id));
+                OnPropertyChanged(nameof(Equip_Id_button));
             }
         }
+
+        [SortOrder(Equip_Id_sortIndex)]
+        [DisplayName(Equip_Id_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Equip_Id_button => DataHelper.equipmentIdNameLookup[GetEquipmentType()][MainWindow.locale].TryGet(Equip_Id).ToStringWithId(Equip_Id);
 
         public const string Story_Unlock_displayName = "Story Unlock";
         public const int Story_Unlock_sortIndex = 150;

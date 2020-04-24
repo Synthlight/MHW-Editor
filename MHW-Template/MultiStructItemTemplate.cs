@@ -12,6 +12,7 @@ namespace MHW_Template
     using Microsoft.CSharp;
     using System.CodeDom;
     using System.Text.RegularExpressions;
+    using MHW_Template;
     using MHW_Template.Models;
     using System;
     
@@ -42,28 +43,28 @@ using MHW_Template.Models;
 
 namespace ");
             
-            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public partial class ");
             
-            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
             #line hidden
             this.Write(" {\r\n        public override string EncryptionKey => ");
             
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\""));
             
             #line default
             #line hidden
             this.Write(";\r\n");
             
-            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
 
     var compiler = new CSharpCodeProvider();
 
@@ -166,24 +167,7 @@ namespace ");
             WriteLine("            }");
 
             if (entry.dataSourceType != null) {
-                string dataSourceLookup;
-
-                switch (entry.dataSourceType) {
-                    case DataSourceType.Items:
-                        dataSourceLookup = "DataHelper.itemNames[MainWindow.locale]";
-                        break;
-                    case DataSourceType.Skills:
-                        dataSourceLookup = "DataHelper.skillNames[MainWindow.locale]";
-                        break;
-                    case DataSourceType.SkillDat:
-                        dataSourceLookup = "MainWindow.skillDatLookup[MainWindow.locale]";
-                        break;
-                    case DataSourceType.CategorizedWeapons:
-                        dataSourceLookup = "DataHelper.weaponIdNameLookup[Weapon_Type][MainWindow.locale]";
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException();
-                }
+                var dataSourceLookup = GenerationHelper.GetDataSourceType(entry.dataSourceType ?? throw new Exception());
 
                 WriteLine("");
                 WriteLine($"            [SortOrder({propName}_sortIndex)]");

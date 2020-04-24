@@ -31,10 +31,10 @@ namespace MHW_Editor.Items {
         public const int Weapon_Type_sortIndex = 100;
         [SortOrder(Weapon_Type_sortIndex)]
         [DisplayName(Weapon_Type_displayName)]
-        public virtual MHW_Template.Weapons.WeaponTypeOnlyWeapons Weapon_Type {
-            get => (MHW_Template.Weapons.WeaponTypeOnlyWeapons) GetData<uint>(4);
+        public virtual MHW_Template.Weapons.WeaponType Weapon_Type {
+            get => (MHW_Template.Weapons.WeaponType) GetData<uint>(4);
             set {
-                if ((MHW_Template.Weapons.WeaponTypeOnlyWeapons) GetData<uint>(4) == value) return;
+                if ((MHW_Template.Weapons.WeaponType) GetData<uint>(4) == value) return;
                 SetData(4, (uint) value, nameof(Weapon_Type));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Weapon_Type));
@@ -46,7 +46,7 @@ namespace MHW_Editor.Items {
         public const int Weapon_Id_sortIndex = 150;
         [SortOrder(Weapon_Id_sortIndex)]
         [DisplayName(Weapon_Id_displayName)]
-        [DataSource(DataSourceType.CategorizedWeapons)]
+        [DataSource(DataSourceType.WeaponsById)]
         public virtual uint Weapon_Id {
             get => GetData<uint>(8);
             set {
@@ -61,7 +61,7 @@ namespace MHW_Editor.Items {
         [SortOrder(Weapon_Id_sortIndex)]
         [DisplayName(Weapon_Id_displayName)]
         [CustomSorter(typeof(ButtonSorter))]
-        public string Weapon_Id_button => DataHelper.weaponIdNameLookup[Weapon_Type][MainWindow.locale].TryGet(Weapon_Id).ToStringWithId(Weapon_Id);
+        public string Weapon_Id_button => DataHelper.weaponIdNameLookup[GetWeaponType()][MainWindow.locale].TryGet(Weapon_Id).ToStringWithId(Weapon_Id);
 
         public const string All_Rarity_displayName = "All Rarity";
         public const int All_Rarity_sortIndex = 200;

@@ -7,8 +7,11 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using MHW_Editor.Armors;
 using MHW_Editor.Weapons;
 using MHW_Template;
+using MHW_Template.Armors;
+using MHW_Template.Items;
 using MHW_Template.Weapons;
 
 namespace MHW_Editor {
@@ -119,12 +122,82 @@ namespace MHW_Editor {
                 case WeaponType.Light_Bowgun:
                 case WeaponType.Heavy_Bowgun:
                     return typeof(BowGun);
-                default: return null;
+                default: throw new ArgumentOutOfRangeException(nameof(weaponType), weaponType, null);
             }
         }
 
-        public static Type ToClassType(this WeaponTypeOnlyWeapons weaponType) {
-            return ((WeaponType) weaponType).ToClassType();
+        public static Type ToClassType(this EquipmentType equipmentType) {
+            switch (equipmentType) {
+                case EquipmentType.Greatsword:
+                case EquipmentType.Sword_and_Shield:
+                case EquipmentType.Dual_Blades:
+                case EquipmentType.Longsword:
+                case EquipmentType.Hammer:
+                case EquipmentType.Hunting_Horn:
+                case EquipmentType.Lance:
+                case EquipmentType.Gunlance:
+                case EquipmentType.Switch_Axe:
+                case EquipmentType.Charge_Blade:
+                case EquipmentType.Insect_Glaive:
+                    return typeof(Melee);
+                case EquipmentType.Bow: return typeof(Bow);
+                case EquipmentType.Light_Bowgun:
+                case EquipmentType.Heavy_Bowgun:
+                    return typeof(BowGun);
+                case EquipmentType.Armor_Head:
+                case EquipmentType.Armor_Chest:
+                case EquipmentType.Armor_Arms:
+                case EquipmentType.Armor_Waist:
+                case EquipmentType.Armor_Legs:
+                case EquipmentType.Armor_Charm:
+                    return typeof(Armor);
+                default: throw new ArgumentOutOfRangeException(nameof(equipmentType), equipmentType, null);
+            }
+        }
+
+        public static Type ToClassType(this ArmorType armorType) {
+            switch (armorType) {
+                case ArmorType.Head:
+                case ArmorType.Chest:
+                case ArmorType.Arms:
+                case ArmorType.Waist:
+                case ArmorType.Legs:
+                case ArmorType.Charm:
+                    return typeof(Armor);
+                default: throw new ArgumentOutOfRangeException(nameof(armorType), armorType, null);
+            }
+        }
+
+        public static EquipmentType ToEquipmentType(this WeaponType weaponType) {
+            return weaponType switch {
+                WeaponType.Greatsword => EquipmentType.Greatsword,
+                WeaponType.Sword_and_Shield => EquipmentType.Sword_and_Shield,
+                WeaponType.Dual_Blades => EquipmentType.Dual_Blades,
+                WeaponType.Longsword => EquipmentType.Longsword,
+                WeaponType.Hammer => EquipmentType.Hammer,
+                WeaponType.Hunting_Horn => EquipmentType.Hunting_Horn,
+                WeaponType.Lance => EquipmentType.Lance,
+                WeaponType.Gunlance => EquipmentType.Gunlance,
+                WeaponType.Switch_Axe => EquipmentType.Switch_Axe,
+                WeaponType.Charge_Blade => EquipmentType.Charge_Blade,
+                WeaponType.Insect_Glaive => EquipmentType.Insect_Glaive,
+                WeaponType.Bow => EquipmentType.Bow,
+                WeaponType.Light_Bowgun => EquipmentType.Light_Bowgun,
+                WeaponType.Heavy_Bowgun => EquipmentType.Heavy_Bowgun,
+                _ => throw new ArgumentOutOfRangeException(nameof(weaponType), weaponType, null)
+            };
+        }
+
+        public static EquipmentType ToEquipmentType(this ArmorType armorType) {
+            return armorType switch {
+                ArmorType.Head => EquipmentType.Armor_Head,
+                ArmorType.Chest => EquipmentType.Armor_Chest,
+                ArmorType.Arms => EquipmentType.Armor_Arms,
+                ArmorType.Waist => EquipmentType.Armor_Waist,
+                ArmorType.Legs => EquipmentType.Armor_Legs,
+                ArmorType.Charm => EquipmentType.Armor_Charm,
+                _ => throw new ArgumentOutOfRangeException(nameof(armorType), armorType, null)
+            };
         }
 
         public static string ReadNullTermString(this BinaryReader reader) {

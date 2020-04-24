@@ -11,7 +11,7 @@ namespace MHW_Editor.Items {
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
-        public override string UniqueId => $"{Equipment_Category}|{Equipment_Id}";
+        public override string UniqueId => $"{Equipment_Category}|{Equipment_Index}";
 
         public const string Equipment_Category_displayName = "Equipment Category";
         public const int Equipment_Category_sortIndex = 50;
@@ -28,18 +28,18 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Equipment_Id_displayName = "Equipment Id";
-        public const int Equipment_Id_sortIndex = 100;
-        [SortOrder(Equipment_Id_sortIndex)]
-        [DisplayName(Equipment_Id_displayName)]
+        public const string Equipment_Index_displayName = "Equipment Index";
+        public const int Equipment_Index_sortIndex = 100;
+        [SortOrder(Equipment_Index_sortIndex)]
+        [DisplayName(Equipment_Index_displayName)]
         [IsReadOnly]
-        public virtual ushort Equipment_Id {
+        public virtual ushort Equipment_Index {
             get => GetData<ushort>(1);
             set {
                 if (GetData<ushort>(1) == value) return;
-                SetData(1, value, nameof(Equipment_Id));
+                SetData(1, value, nameof(Equipment_Index));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Equipment_Id));
+                OnPropertyChanged(nameof(Equipment_Index));
             }
         }
 

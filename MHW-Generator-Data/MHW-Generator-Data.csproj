@@ -42,6 +42,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IndexOrId.cs" />
     <Compile Include="WeaponReader.cs" />
     <Compile Include="ArmorReader.cs" />
     <Compile Include="Program.cs" />

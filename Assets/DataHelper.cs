@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 using MHW_Template;
+using MHW_Template.Armors;
+using MHW_Template.Items;
 using MHW_Template.Models;
 using MHW_Template.Weapons;
 using Newtonsoft.Json;
@@ -25,7 +27,12 @@ namespace MHW_Editor.Assets {
         public static readonly Dictionary<uint, string> songNames = new Dictionary<uint, string>(); // Has no lang.
         public static readonly Dictionary<string, LangMap> weaponData = new Dictionary<string, LangMap>(); // Has wp file name too. Uses GMD reference.
         public static readonly Dictionary<string, Dictionary<int, NameDescPair>> collisionTranslationsData;
-        public static readonly Dictionary<WeaponTypeOnlyWeapons, LangMap> weaponIdNameLookup;
+
+        public static readonly Dictionary<ArmorType, LangMap> armorIdNameLookup;
+        public static readonly Dictionary<ArmorType, LangMap> armorIndexNameLookup;
+        public static readonly Dictionary<WeaponType, LangMap> weaponIdNameLookup;
+        public static readonly Dictionary<WeaponType, LangMap> weaponIndexNameLookup;
+        public static readonly Dictionary<EquipmentType, LangMap> equipmentIdNameLookup = new Dictionary<EquipmentType, LangMap>();
 
         public static readonly Dictionary<string, Dictionary<string, List<string>>> BAD_FILE_HASH_MAP;
         public static readonly Dictionary<string, string> GOOD_CHUNK_MAP;
@@ -39,7 +46,13 @@ namespace MHW_Editor.Assets {
             FILE_SIZE_MAP = LoadDict<string, ulong>(EditorAssets.FileSizeMap);
 
             collisionTranslationsData = LoadDict<string, Dictionary<int, NameDescPair>>(Assets.CollisionTranslationsData);
-            weaponIdNameLookup = LoadDict<WeaponTypeOnlyWeapons, LangMap>(Assets.WeaponNameLookup);
+
+            armorIdNameLookup = LoadDict<ArmorType, LangMap>(EditorAssets.ArmorNameLookupById);
+            armorIndexNameLookup = LoadDict<ArmorType, LangMap>(EditorAssets.ArmorNameLookupByIndex);
+            weaponIdNameLookup = LoadDict<WeaponType, LangMap>(EditorAssets.WeaponNameLookupById);
+            weaponIndexNameLookup = LoadDict<WeaponType, LangMap>(EditorAssets.WeaponNameLookupByIndex);
+
+            MergeEquipmentIdLookups();
 
             foreach (var lang in Global.LANGUAGES) {
                 ParseItemData(lang);
@@ -59,6 +72,16 @@ namespace MHW_Editor.Assets {
                 foreach (var weapon in Global.WEAPONS) {
                     weaponData[lang][weapon] = LoadDict<uint, string>(GetAsset($"{lang}_{weapon}"));
                 }
+            }
+        }
+
+        private static void MergeEquipmentIdLookups() {
+            foreach (var weaponType in weaponIdNameLookup.Keys) {
+                equipmentIdNameLookup[weaponType.ToEquipmentType()] = weaponIdNameLookup[weaponType];
+            }
+
+            foreach (var armorType in armorIdNameLookup.Keys) {
+                equipmentIdNameLookup[armorType.ToEquipmentType()] = armorIdNameLookup[armorType];
             }
         }
 

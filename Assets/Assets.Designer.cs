@@ -3199,15 +3199,5 @@ namespace MHW_Editor.Assets {
                 return ((byte[])(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] WeaponNameLookup {
-            get {
-                object obj = ResourceManager.GetObject("WeaponNameLookup", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }

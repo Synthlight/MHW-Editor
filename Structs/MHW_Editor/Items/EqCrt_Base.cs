@@ -3,10 +3,10 @@ using MHW_Template;
 namespace MHW_Editor.Items {
     // Struct Size: "37"
     // Initial Offset: "10"
-    // Unique Id Formula: "{Equipment_Category}|{Equipment_Id}"
-    public struct EqCrt {
-        public byte Equipment_Category; // Offset: 0
-        public ushort Equipment_Id; // Offset: 1
+    // Unique Id Formula: "{Equipment_Category_Raw}|{Equipment_Index_Raw}"
+    public struct EqCrt_Base {
+        public byte Equipment_Category_Raw; // Offset: 0
+        public ushort Equipment_Index_Raw; // Offset: 1
         public ushort Needed_Item_Id_to_Unlock; // Offset: 3
         public int Monster_Unlock; // Offset: 5
         public uint Story_Unlock; // Offset: 9

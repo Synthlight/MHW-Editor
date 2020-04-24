@@ -117,7 +117,7 @@
     <Compile Include="Generated\MHW_Editor\ButtonTypeInfo.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoGradeLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoLottery.cs" />
-    <Compile Include="Generated\MHW_Editor\Items\EqCrt.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\EqCrt_Base.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCus.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemDelivery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemList.cs" />
@@ -188,6 +188,10 @@
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Items\EqCrt_Palico.cs" />
+    <Compile Include="Items\EqCrt_Charm.cs" />
+    <Compile Include="Items\EqCrt_Base.cs" />
+    <Compile Include="Items\EqCrt_Weapon.cs" />
     <Compile Include="Items\ItemDelivery.cs" />
     <Compile Include="Items\KulveGradeLottery.cs" />
     <Compile Include="Items\SafiItemGradeLottery.cs" />
@@ -197,6 +201,9 @@
     <Compile Include="Items\RoomFurniture.cs" />
     <Compile Include="Models\CustomSaveLoad.cs" />
     <Compile Include="Models\ICustomSaveLoad.cs" />
+    <Compile Include="Models\IHasEquipmentType.cs" />
+    <Compile Include="Models\IHasWeaponType.cs" />
+    <Compile Include="Models\IHasArmorType.cs" />
     <Compile Include="Models\IMhwMultiStructItem.cs" />
     <Compile Include="Models\MhwStructDataContainer.cs" />
     <Compile Include="Models\IMhwStructItem.cs" />
@@ -224,7 +231,7 @@
     <Compile Include="Items\PlantFertilizer.cs" />
     <Compile Include="Items\PlantItem.cs" />
     <Compile Include="Items\EqCus.cs" />
-    <Compile Include="Items\EqCrt.cs" />
+    <Compile Include="Items\EqCrt_Armor.cs" />
     <Compile Include="Items\ShopSed.cs" />
     <Compile Include="JsonMigrations.cs" />
     <Compile Include="MainWindow.xaml.buttons.cs">
@@ -425,10 +432,14 @@
     <None Include="Assets\BountyData\rus_bountyData.json" />
     <None Include="Assets\BountyData\spa_bountyData.json" />
     <None Include="Assets\CollisionTranslationsData.json" />
+    <None Include="Assets\EditorData\ArmorNameLookupById.json" />
+    <None Include="Assets\EditorData\ArmorNameLookupByIndex.json" />
     <None Include="Assets\EditorData\BadHashMap.json" />
     <None Include="Assets\EditorData\FilePathMap.json" />
     <None Include="Assets\EditorData\FileSizeMap.json" />
     <None Include="Assets\EditorData\GoodChunkMap.json" />
+    <None Include="Assets\EditorData\WeaponNameLookupById.json" />
+    <None Include="Assets\EditorData\WeaponNameLookupByIndex.json" />
     <None Include="Assets\InsectData\ara_insectData.json" />
     <None Include="Assets\InsectData\chS_insectData.json" />
     <None Include="Assets\InsectData\chT_insectData.json" />
@@ -703,7 +714,6 @@
     <None Include="Assets\WeaponData\spa_tachi.json" />
     <None Include="Assets\WeaponData\spa_whistle.json" />
     <None Include="Assets\WeaponData\spa_w_sword.json" />
-    <None Include="Assets\WeaponNameLookup.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

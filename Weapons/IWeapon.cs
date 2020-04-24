@@ -2,6 +2,7 @@
 
 namespace MHW_Editor.Weapons {
     public interface IWeapon : IMhwItem {
+        uint Index { get; set; }
         ushort Damage { get; set; }
         uint Cost { get; set; }
         ushort Id { get; set; }

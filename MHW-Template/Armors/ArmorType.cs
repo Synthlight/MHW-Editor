@@ -1,8 +1,10 @@
 ﻿namespace MHW_Template.Armors {
     public enum ArmorType {
-        Regular = 0,
-        Unknown = 1,
-        Layered,
-        Full_Set
+        Head = 0,
+        Chest = 1,
+        Arms,
+        Waist,
+        Legs,
+        Charm
     }
 }

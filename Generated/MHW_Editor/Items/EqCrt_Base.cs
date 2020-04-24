@@ -6,40 +6,40 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Items {
-    public partial class EqCrt {
+    public partial class EqCrt_Base {
         public const uint StructSize = 37;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
-        public override string UniqueId => $"{Equipment_Category}|{Equipment_Id}";
+        public override string UniqueId => $"{Equipment_Category_Raw}|{Equipment_Index_Raw}";
 
-        public const string Equipment_Category_displayName = "Equipment Category";
-        public const int Equipment_Category_sortIndex = 50;
-        [SortOrder(Equipment_Category_sortIndex)]
-        [DisplayName(Equipment_Category_displayName)]
+        public const string Equipment_Category_Raw_displayName = "Equipment Category Raw";
+        public const int Equipment_Category_Raw_sortIndex = 50;
+        [SortOrder(Equipment_Category_Raw_sortIndex)]
+        [DisplayName(Equipment_Category_Raw_displayName)]
         [IsReadOnly]
-        public virtual byte Equipment_Category {
+        public virtual byte Equipment_Category_Raw {
             get => GetData<byte>(0);
             set {
                 if (GetData<byte>(0) == value) return;
-                SetData(0, value, nameof(Equipment_Category));
+                SetData(0, value, nameof(Equipment_Category_Raw));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Equipment_Category));
+                OnPropertyChanged(nameof(Equipment_Category_Raw));
             }
         }
 
-        public const string Equipment_Id_displayName = "Equipment Id";
-        public const int Equipment_Id_sortIndex = 100;
-        [SortOrder(Equipment_Id_sortIndex)]
-        [DisplayName(Equipment_Id_displayName)]
+        public const string Equipment_Index_Raw_displayName = "Equipment Index Raw";
+        public const int Equipment_Index_Raw_sortIndex = 100;
+        [SortOrder(Equipment_Index_Raw_sortIndex)]
+        [DisplayName(Equipment_Index_Raw_displayName)]
         [IsReadOnly]
-        public virtual ushort Equipment_Id {
+        public virtual ushort Equipment_Index_Raw {
             get => GetData<ushort>(1);
             set {
                 if (GetData<ushort>(1) == value) return;
-                SetData(1, value, nameof(Equipment_Id));
+                SetData(1, value, nameof(Equipment_Index_Raw));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Equipment_Id));
+                OnPropertyChanged(nameof(Equipment_Index_Raw));
             }
         }
 

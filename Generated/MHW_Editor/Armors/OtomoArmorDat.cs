@@ -48,10 +48,10 @@ namespace MHW_Editor.Armors {
         [SortOrder(Equip_Slot_sortIndex)]
         [DisplayName(Equip_Slot_displayName)]
         [IsReadOnly]
-        public virtual MHW_Template.Armors.EquipSlot Equip_Slot {
-            get => (MHW_Template.Armors.EquipSlot) GetData<byte>(6);
+        public virtual MHW_Template.Armors.ArmorType Equip_Slot {
+            get => (MHW_Template.Armors.ArmorType) GetData<byte>(6);
             set {
-                if ((MHW_Template.Armors.EquipSlot) GetData<byte>(6) == value) return;
+                if ((MHW_Template.Armors.ArmorType) GetData<byte>(6) == value) return;
                 SetData(6, (byte) value, nameof(Equip_Slot));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Equip_Slot));

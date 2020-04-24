@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ArmorNameLookupById" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>editordata\armornamelookupbyid.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ArmorNameLookupByIndex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>editordata\armornamelookupbyindex.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="BadHashMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>editordata\badhashmap.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -129,5 +135,11 @@
   </data>
   <data name="GoodChunkMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>editordata\goodchunkmap.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WeaponNameLookupById" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>editordata\weaponnamelookupbyid.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WeaponNameLookupByIndex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>editordata\weaponnamelookupbyindex.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

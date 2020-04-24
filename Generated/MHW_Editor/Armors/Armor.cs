@@ -77,10 +77,10 @@ namespace MHW_Editor.Armors {
         [SortOrder(Type_sortIndex)]
         [DisplayName(Type_displayName)]
         [IsReadOnly]
-        public virtual MHW_Template.Armors.ArmorType Type {
-            get => (MHW_Template.Armors.ArmorType) GetData<byte>(9);
+        public virtual MHW_Template.Armors.ArmorSetType Type {
+            get => (MHW_Template.Armors.ArmorSetType) GetData<byte>(9);
             set {
-                if ((MHW_Template.Armors.ArmorType) GetData<byte>(9) == value) return;
+                if ((MHW_Template.Armors.ArmorSetType) GetData<byte>(9) == value) return;
                 SetData(9, (byte) value, nameof(Type));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Type));
@@ -92,10 +92,10 @@ namespace MHW_Editor.Armors {
         [SortOrder(Equip_Slot_sortIndex)]
         [DisplayName(Equip_Slot_displayName)]
         [IsReadOnly]
-        public virtual MHW_Template.Armors.EquipSlot Equip_Slot {
-            get => (MHW_Template.Armors.EquipSlot) GetData<byte>(10);
+        public virtual MHW_Template.Armors.ArmorType Equip_Slot {
+            get => (MHW_Template.Armors.ArmorType) GetData<byte>(10);
             set {
-                if ((MHW_Template.Armors.EquipSlot) GetData<byte>(10) == value) return;
+                if ((MHW_Template.Armors.ArmorType) GetData<byte>(10) == value) return;
                 SetData(10, (byte) value, nameof(Equip_Slot));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Equip_Slot));

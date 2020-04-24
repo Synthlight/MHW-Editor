@@ -46,9 +46,10 @@ namespace MHW_Generator_Data {
         }
 
         private static void CreateWeaponDataLookup() {
-            var weapons = WeaponReader.GetAllWeapons();
-            var destFile = $@"{Global.ASSETS_ROOT}\WeaponNameLookup.json"; // Same as weaponData we have, but ID lookup instead of GMD.
-            File.WriteAllText(destFile, JsonConvert.SerializeObject(weapons, Formatting.Indented));
+            File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\ArmorNameLookupById.json", JsonConvert.SerializeObject(ArmorReader.GetAllArmors(IndexOrId.Id), Formatting.Indented));
+            File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\ArmorNameLookupByIndex.json", JsonConvert.SerializeObject(ArmorReader.GetAllArmors(IndexOrId.Index), Formatting.Indented));
+            File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\WeaponNameLookupById.json", JsonConvert.SerializeObject(WeaponReader.GetAllWeapons(IndexOrId.Id), Formatting.Indented));
+            File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\WeaponNameLookupByIndex.json", JsonConvert.SerializeObject(WeaponReader.GetAllWeapons(IndexOrId.Index), Formatting.Indented));
         }
 
         private static void GenButtonLocalizationAndIdList() {
