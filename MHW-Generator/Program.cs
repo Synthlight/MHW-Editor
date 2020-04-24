@@ -1098,7 +1098,11 @@ namespace MHW_Generator {
                     new MhwStructData.Entry("Child index 1", 29, typeof(ushort)),
                     new MhwStructData.Entry("Child index 2", 31, typeof(ushort)),
                     new MhwStructData.Entry("Child index 3", 33, typeof(ushort)),
-                    new MhwStructData.Entry("Child index 4", 35, typeof(ushort))
+                    new MhwStructData.Entry("Child index 4", 35, typeof(ushort)),
+                    new MhwStructData.Entry("Unk 1", 37, typeof(byte)),
+                    new MhwStructData.Entry("Unk 2", 38, typeof(byte)),
+                    new MhwStructData.Entry("Unk 3", 39, typeof(byte)),
+                    new MhwStructData.Entry("Unk 4", 40, typeof(byte))
                 }
             });
         }

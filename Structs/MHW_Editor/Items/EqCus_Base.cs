@@ -23,5 +23,9 @@ namespace MHW_Editor.Items {
         public ushort Child_index_2; // Offset: 31
         public ushort Child_index_3; // Offset: 33
         public ushort Child_index_4; // Offset: 35
+        public byte Unk_1; // Offset: 37
+        public byte Unk_2; // Offset: 38
+        public byte Unk_3; // Offset: 39
+        public byte Unk_4; // Offset: 40
     }
 }

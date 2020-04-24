@@ -302,6 +302,62 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const int lastSortIndex = 950;
+        public const string Unk_1_displayName = "Unk 1";
+        public const int Unk_1_sortIndex = 950;
+        [SortOrder(Unk_1_sortIndex)]
+        [DisplayName(Unk_1_displayName)]
+        public virtual byte Unk_1 {
+            get => GetData<byte>(37);
+            set {
+                if (GetData<byte>(37) == value) return;
+                SetData(37, value, nameof(Unk_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_1));
+            }
+        }
+
+        public const string Unk_2_displayName = "Unk 2";
+        public const int Unk_2_sortIndex = 1000;
+        [SortOrder(Unk_2_sortIndex)]
+        [DisplayName(Unk_2_displayName)]
+        public virtual byte Unk_2 {
+            get => GetData<byte>(38);
+            set {
+                if (GetData<byte>(38) == value) return;
+                SetData(38, value, nameof(Unk_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_2));
+            }
+        }
+
+        public const string Unk_3_displayName = "Unk 3";
+        public const int Unk_3_sortIndex = 1050;
+        [SortOrder(Unk_3_sortIndex)]
+        [DisplayName(Unk_3_displayName)]
+        public virtual byte Unk_3 {
+            get => GetData<byte>(39);
+            set {
+                if (GetData<byte>(39) == value) return;
+                SetData(39, value, nameof(Unk_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_3));
+            }
+        }
+
+        public const string Unk_4_displayName = "Unk 4";
+        public const int Unk_4_sortIndex = 1100;
+        [SortOrder(Unk_4_sortIndex)]
+        [DisplayName(Unk_4_displayName)]
+        public virtual byte Unk_4 {
+            get => GetData<byte>(40);
+            set {
+                if (GetData<byte>(40) == value) return;
+                SetData(40, value, nameof(Unk_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Unk_4));
+            }
+        }
+
+        public const int lastSortIndex = 1150;
     }
 }
