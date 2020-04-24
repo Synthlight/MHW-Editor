@@ -13,14 +13,14 @@ namespace MHW_Template {
         public const string ITLOT_KEY = "D7N88VEGEnRl0HEHTO0xMQkbeMb37arJF488lREp90WYojAONkLoxfMt"; // rItemData .itlot
         public const string ASKILLP_KEY = "Nb06gpPJ9WtbO6FF1ZYqm5NbLREsCzuqAY0G25ug2Ei5XkkAtVXD5Uda"; // rASkillData askill_param.asp
         public const string STLST_KEY = "ZduEVAgrFnd8jpnwHF2ur64BHcd37gEYDQwRbeBwMt6dGRK3tUwm2wx5"; // rSpecialTraceLotData // CommonParam00_st.stlst
+        public const string AEQ_KEY = "b71AMFJuw63cUTlDt5ntSAtaAvwLKizNtapy4W0QAsC39QXPr6b78Asz"; // cRomPacketSysSyncStart
+        public const string MIB_KEY = "TZNgJfzyD2WKiuV4SglmI6oN5jP2hhRJcBwzUooyfIUTM4ptDYGjuRTP";
 
         // The rest are untested and/or unused.
         public const string SAVE_FILE_KEY = "xieZjoe#P2134-3zmaghgpqoe0z8$3azeq";
-        public const string UNKNOWN_KEY_3 = "b71AMFJuw63cUTlDt5ntSAtaAvwLKizNtapy4W0QAsC39QXPr6b78Asz"; // cRomPacketSysSyncStart
-        public const string UNKNOWN_KEY_6 = "TZNgJfzyD2WKiuV4SglmI6oN5jP2hhRJcBwzUooyfIUTM4ptDYGjuRTP";
 
         public static readonly Dictionary<string, string> FILE_EXT_KEY_LOOKUP = new Dictionary<string, string> {
-            {".aeq", UNKNOWN_KEY_3},
+            {".aeq", AEQ_KEY},
             {".asp", ASKILLP_KEY},
             {".cus_otr", CUS_PAR_KEY},
             {".cus_ou", CUS_PAR_KEY},
@@ -29,6 +29,7 @@ namespace MHW_Template {
             {".dtt_eda", DTT_EDA_KEY},
             {".dtt_epg", DTT_EPG_KEY},
             {".itlot", ITLOT_KEY},
+            {".mib", MIB_KEY},
             {".msk", MSK_KEY},
             {".mske", MSK_KEY},
             {".owp_dat", OWP_DAT_KEY},
