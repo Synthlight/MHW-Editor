@@ -13,17 +13,17 @@ namespace MHW_Editor.Items {
         public const string EncryptionKey = null;
         public override string UniqueId => $"{Index}";
 
-        public const string Unk1_displayName = "Unk1";
-        public const int Unk1_sortIndex = 50;
-        [SortOrder(Unk1_sortIndex)]
-        [DisplayName(Unk1_displayName)]
-        public virtual int Unk1 {
+        public const string Type_displayName = "Type";
+        public const int Type_sortIndex = 50;
+        [SortOrder(Type_sortIndex)]
+        [DisplayName(Type_displayName)]
+        public virtual int Type {
             get => GetData<int>(0);
             set {
                 if (GetData<int>(0) == value) return;
-                SetData(0, value, nameof(Unk1));
+                SetData(0, value, nameof(Type));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk1));
+                OnPropertyChanged(nameof(Type));
             }
         }
 
@@ -62,36 +62,22 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const string Unk4_displayName = "Unk4";
-        public const int Unk4_sortIndex = 200;
-        [SortOrder(Unk4_sortIndex)]
-        [DisplayName(Unk4_displayName)]
-        public virtual uint Unk4 {
-            get => GetData<uint>(12);
+        public const string Chance__displayName = "Chance %";
+        public const int Chance__sortIndex = 200;
+        [SortOrder(Chance__sortIndex)]
+        [DisplayName(Chance__displayName)]
+        public virtual ulong Chance_ {
+            get => GetData<ulong>(12);
             set {
-                if (GetData<uint>(12) == value) return;
-                SetData(12, value, nameof(Unk4));
+                if (GetData<ulong>(12) == value) return;
+                SetData(12, value, nameof(Chance_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk4));
-            }
-        }
-
-        public const string Unk5_displayName = "Unk5";
-        public const int Unk5_sortIndex = 250;
-        [SortOrder(Unk5_sortIndex)]
-        [DisplayName(Unk5_displayName)]
-        public virtual uint Unk5 {
-            get => GetData<uint>(16);
-            set {
-                if (GetData<uint>(16) == value) return;
-                SetData(16, value, nameof(Unk5));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk5));
+                OnPropertyChanged(nameof(Chance_));
             }
         }
 
         public const string Rarity_displayName = "Rarity";
-        public const int Rarity_sortIndex = 300;
+        public const int Rarity_sortIndex = 250;
         [SortOrder(Rarity_sortIndex)]
         [DisplayName(Rarity_displayName)]
         public virtual MHW_Template.Items.SteamRarity Rarity {
@@ -104,6 +90,6 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const int lastSortIndex = 350;
+        public const int lastSortIndex = 300;
     }
 }

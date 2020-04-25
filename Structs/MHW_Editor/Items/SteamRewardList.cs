@@ -5,11 +5,10 @@ namespace MHW_Editor.Items {
     // Initial Offset: "10"
     // Unique Id Formula: "{Index}"
     public struct SteamRewardList {
-        public int Unk1; // Offset: 0
+        public int Type; // Offset: 0
         public uint Item_Id; // Offset: 4
         public uint Quantity; // Offset: 8
-        public uint Unk4; // Offset: 12
-        public uint Unk5; // Offset: 16
+        public ulong Chance_; // Offset: 12
         public uint Rarity; // Offset: 20
     }
 }
