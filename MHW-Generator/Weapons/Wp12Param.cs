@@ -5,22 +5,24 @@ using MHW_Template.Struct_Generation.Multi;
 
 namespace MHW_Generator.Weapons {
     public class Wp12Param : IMultiStruct {
-        public static List<MhwMultiStructData.StructData> baseStructs = new List<MhwMultiStructData.StructData> {
-            new MhwMultiStructData.StructData("W12p Params (1)", new List<MhwMultiStructData.Entry> {
+        public static readonly List<MhwMultiStructData.StructData> baseStructs;
+
+        static Wp12Param() {
+            var p1 = new MhwMultiStructData.StructData("W12p Params (1)", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Weapon", typeof(char), true, typeof(string), arrayCount: 4),
                 new MhwMultiStructData.Entry("Unk 1", typeof(uint)),
                 new MhwMultiStructData.Entry("Unk 2", typeof(uint))
-            }, 1),
+            }, 1);
 
-            new MhwMultiStructData.StructData("Unk Struct 1", new List<MhwMultiStructData.Entry> {
+            var unk1 = new MhwMultiStructData.StructData("Unk Struct 1", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Unk 1", typeof(float)),
                 new MhwMultiStructData.Entry("Unk 2", typeof(float)),
                 new MhwMultiStructData.Entry("Unk 3", typeof(byte)),
                 new MhwMultiStructData.Entry("Unk 4", typeof(float)),
                 new MhwMultiStructData.Entry("Unk 5", typeof(float))
-            }, 20),
+            }, 20);
 
-            new MhwMultiStructData.StructData("W12p Params (2)", new List<MhwMultiStructData.Entry> {
+            var p2 = new MhwMultiStructData.StructData("W12p Params (2)", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Unk1", typeof(float)),
                 new MhwMultiStructData.Entry("Unk2", typeof(float)),
                 new MhwMultiStructData.Entry("Unk3", typeof(float)),
@@ -43,16 +45,16 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Unk20", typeof(float)),
                 new MhwMultiStructData.Entry("Unk21", typeof(byte)),
                 new MhwMultiStructData.Entry("Unk22", typeof(float))
-            }, 1, showVertically: true),
+            }, 1, showVertically: true);
 
-            new MhwMultiStructData.StructData("Guard Angles?", new List<MhwMultiStructData.Entry> {
+            var guardAnglesMaybe = new MhwMultiStructData.StructData("Guard Angles?", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Guard Angle (Both Sides)", typeof(float)),
                 new MhwMultiStructData.Entry("Knockback Threshold Small", typeof(byte)),
                 new MhwMultiStructData.Entry("Knockback Threshold Medium", typeof(byte)),
                 new MhwMultiStructData.Entry("Knockback Threshold Large", typeof(byte))
-            }, 2),
+            }, 2);
 
-            new MhwMultiStructData.StructData("W12p Params (3)", new List<MhwMultiStructData.Entry> {
+            var p3 = new MhwMultiStructData.StructData("W12p Params (3)", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Unk33", typeof(float)),
                 new MhwMultiStructData.Entry("Unk34", typeof(float)),
                 new MhwMultiStructData.Entry("Unk35", typeof(float)),
@@ -105,9 +107,9 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Unk82", typeof(float)),
                 new MhwMultiStructData.Entry("Unk83", typeof(byte)),
                 new MhwMultiStructData.Entry("Unk84", typeof(int))
-            }, 1, showVertically: true),
+            }, 1, showVertically: true);
 
-            new MhwMultiStructData.StructData("Unk Struct 2", new List<MhwMultiStructData.Entry> {
+            var unk2 = new MhwMultiStructData.StructData("Unk Struct 2", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Unk1", typeof(float)),
                 new MhwMultiStructData.Entry("Unk2", typeof(float)),
                 new MhwMultiStructData.Entry("Unk3", typeof(float)),
@@ -123,9 +125,9 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Unk13", typeof(float)),
                 new MhwMultiStructData.Entry("Unk14", typeof(byte)),
                 new MhwMultiStructData.Entry("End", typeof(int))
-            }, 8),
+            }, 8);
 
-            new MhwMultiStructData.StructData("W12p Params (4)", new List<MhwMultiStructData.Entry> {
+            var p4 = new MhwMultiStructData.StructData("W12p Params (4)", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Unk85", typeof(float)),
                 new MhwMultiStructData.Entry("Unk86", typeof(float)),
                 new MhwMultiStructData.Entry("Unk87", typeof(float)),
@@ -287,26 +289,26 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Unk239", typeof(float)),
                 new MhwMultiStructData.Entry("Unk240", typeof(uint)),
                 new MhwMultiStructData.Entry("Unk241", typeof(short))
-            }, 1, showVertically: true),
+            }, 1, showVertically: true);
 
-            new MhwMultiStructData.StructData("Unk Struct 3", new List<MhwMultiStructData.Entry> {
+            var unk3 = new MhwMultiStructData.StructData("Unk Struct 3", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Unk1", typeof(float)),
                 new MhwMultiStructData.Entry("Unk2", typeof(float)),
                 new MhwMultiStructData.Entry("Unk3", typeof(float)),
                 new MhwMultiStructData.Entry("Unk4", typeof(float)),
                 new MhwMultiStructData.Entry("Unk5", typeof(float))
-            }, 16),
+            }, 16);
 
-            new MhwMultiStructData.StructData("Unk Struct 4", new List<MhwMultiStructData.Entry> {
+            var unk4 = new MhwMultiStructData.StructData("Unk Struct 4", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Unk1", typeof(float)),
                 new MhwMultiStructData.Entry("Unk2", typeof(uint)),
                 new MhwMultiStructData.Entry("Unk3", typeof(float)),
                 new MhwMultiStructData.Entry("Unk4", typeof(float)),
                 new MhwMultiStructData.Entry("Unk5", typeof(float)),
                 new MhwMultiStructData.Entry("Unk6", typeof(float))
-            }, 4),
+            }, 4);
 
-            new MhwMultiStructData.StructData("W12p Params (5)", new List<MhwMultiStructData.Entry> {
+            var p5 = new MhwMultiStructData.StructData("W12p Params (5)", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Unk242", typeof(float)),
                 new MhwMultiStructData.Entry("Unk243", typeof(float)),
                 new MhwMultiStructData.Entry("Unk244", typeof(float)),
@@ -358,19 +360,19 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Ranged_Attack_Up_Modifier_3", typeof(float)),
                 new MhwMultiStructData.Entry("Ranged_Attack_Up_Modifier_4", typeof(float)),
                 new MhwMultiStructData.Entry("Guard Angle (Both Sides)", typeof(float))
-            }, 1, showVertically: true),
+            }, 1, showVertically: true);
 
-            new MhwMultiStructData.StructData("Number of Shield Mods Struct", new List<MhwMultiStructData.Entry> {
+            var countHolder = new MhwMultiStructData.StructData("Number of Shield Mods Struct", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Number of Shield Mods", typeof(uint)).@out(out var count)
-            }, 1, true).@out(out var countHolder),
+            }, 1, true);
 
-            new MhwMultiStructData.StructData("Shield Mods", new List<MhwMultiStructData.Entry> {
+            var shieldMods = new MhwMultiStructData.StructData("Shield Mods", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Small", typeof(byte)),
                 new MhwMultiStructData.Entry("Medium", typeof(byte)),
                 new MhwMultiStructData.Entry("Large", typeof(byte))
-            }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(countHolder, count)),
+            }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(countHolder, count));
 
-            new MhwMultiStructData.StructData("W12p Params (6)", new List<MhwMultiStructData.Entry> {
+            var p6 = new MhwMultiStructData.StructData("W12p Params (6)", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Unk277", typeof(float)),
                 new MhwMultiStructData.Entry("Unk278", typeof(float)),
                 new MhwMultiStructData.Entry("Unk279", typeof(float)),
@@ -381,15 +383,32 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Unk284", typeof(float)),
                 new MhwMultiStructData.Entry("Unk285", typeof(float)),
                 new MhwMultiStructData.Entry("Unk286", typeof(float))
-            }, 1, showVertically: true),
+            }, 1, showVertically: true);
 
-            new MhwMultiStructData.StructData("Unk Struct 5", new List<MhwMultiStructData.Entry> {
+            var unk5 = new MhwMultiStructData.StructData("Unk Struct 5", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Unk1", typeof(float)),
                 new MhwMultiStructData.Entry("Unk2", typeof(float)),
                 new MhwMultiStructData.Entry("Unk3", typeof(float)),
                 new MhwMultiStructData.Entry("Unk4", typeof(float))
-            }, 50)
-        };
+            }, 50);
+
+            baseStructs = new List<MhwMultiStructData.StructData> {
+                p1,
+                unk1,
+                p2,
+                guardAnglesMaybe,
+                p3,
+                unk2,
+                p4,
+                unk3,
+                unk4,
+                p5,
+                countHolder,
+                shieldMods,
+                p6,
+                unk5
+            };
+        }
 
         public MultiStruct Generate() { // .w12p
             var structs = new List<MhwMultiStructData.StructData>();
