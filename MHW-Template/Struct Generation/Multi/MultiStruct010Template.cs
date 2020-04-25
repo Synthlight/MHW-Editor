@@ -31,21 +31,21 @@ namespace MHW_Template.Struct_Generation.Multi
             this.Write("//------------------------------------------------\r\n//--- 010 Editor v10.0 Binary" +
                     " Template\r\n//   Authors: Many. See MHW Editor Cretits.\r\n// File Mask: *.");
             
-            #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
+            #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.ext));
             
             #line default
             #line hidden
             this.Write("\r\n//  Category: ");
             
-            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
+            #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write("\r\n//------------------------------------------------\r\n");
             
-            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
 
     var compiler = new CSharpCodeProvider();
 
@@ -115,19 +115,6 @@ private string _namespace
     }
 }
 
-private string _classNameField;
-
-/// <summary>
-/// Access the className parameter of the template.
-/// </summary>
-private string className
-{
-    get
-    {
-        return this._classNameField;
-    }
-}
-
 private global::MHW_Template.Struct_Generation.Multi.MhwMultiStructData _structDataField;
 
 /// <summary>
@@ -161,20 +148,6 @@ if ((_namespaceValueAcquired == false))
     if ((data != null))
     {
         this.@__namespaceField = ((string)(data));
-    }
-}
-bool classNameValueAcquired = false;
-if (this.Session.ContainsKey("className"))
-{
-    this._classNameField = ((string)(this.Session["className"]));
-    classNameValueAcquired = true;
-}
-if ((classNameValueAcquired == false))
-{
-    object data = global::System.Runtime.Remoting.Messaging.CallContext.LogicalGetData("className");
-    if ((data != null))
-    {
-        this._classNameField = ((string)(data));
     }
 }
 bool structDataValueAcquired = false;

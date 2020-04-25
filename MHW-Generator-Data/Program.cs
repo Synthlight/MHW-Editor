@@ -80,7 +80,7 @@ namespace MHW_Generator_Data {
             const string @namespace = "MHW_Editor";
             const string className = "ButtonTypeInfo";
 
-            MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ButtonTypeInfoTemplate {
+            MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", className, new ButtonTypeInfoTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
@@ -245,7 +245,7 @@ namespace MHW_Generator_Data {
             const string @namespace = "MHW_Editor.Skills";
             const string className = "SkillDataValueClass";
 
-            MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ValueClassTemplate {
+            MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", className, new ValueClassTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
@@ -277,7 +277,7 @@ namespace MHW_Generator_Data {
             const string @namespace = "MHW_Editor.Armors";
             const string className = "ArmorDataValueClass";
 
-            MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ValueClassTemplate {
+            MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", className, new ValueClassTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},

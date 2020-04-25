@@ -12,6 +12,7 @@ namespace MHW_Generator.Weapons {
                 entryCountOffset = -1,
                 uniqueIdFormula = "0",
                 encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".w11p"],
+                ext = "w11p",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Dragonpiercer X1", 1313, typeof(float)),
                     new MhwStructData.Entry("Dragonpiercer Y1", 1317, typeof(float)),

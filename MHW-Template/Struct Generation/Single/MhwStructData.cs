@@ -10,6 +10,7 @@ namespace MHW_Template.Struct_Generation.Single {
         public long entryCountOffset = -1;
         public string encryptionKey = null;
         public string uniqueIdFormula;
+        public string ext;
         public bool autoOffset = false; // Auto increment offset by sizeof(type).
 
         public class Entry {

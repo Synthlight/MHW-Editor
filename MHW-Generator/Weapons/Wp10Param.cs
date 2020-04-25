@@ -12,6 +12,7 @@ namespace MHW_Generator.Weapons {
                 entryCountOffset = -1,
                 uniqueIdFormula = "0",
                 encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".w10p"],
+                ext = "w10p",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Red Extract Duration", 1153, typeof(float)),
                     new MhwStructData.Entry("White Extract Duration", 1157, typeof(float)),

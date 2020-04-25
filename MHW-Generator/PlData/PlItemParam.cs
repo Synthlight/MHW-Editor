@@ -12,6 +12,7 @@ namespace MHW_Generator.PlData {
                 entryCountOffset = -1,
                 uniqueIdFormula = "0",
                 encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plip"],
+                ext = "plip",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Powder Radius", 8, typeof(float)),
                     new MhwStructData.Entry("Potion Power", 12, typeof(uint)),

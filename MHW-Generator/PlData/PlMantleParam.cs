@@ -205,6 +205,7 @@ namespace MHW_Generator.PlData {
                 entryCountOffset = -1,
                 uniqueIdFormula = "0",
                 encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".asp"],
+                ext = "asp",
                 entries = entries
             });
         }

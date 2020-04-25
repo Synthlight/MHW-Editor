@@ -36,7 +36,7 @@ namespace MHW_Generator {
         }
 
         public static void GenerateSingleStructProps(string @namespace, string className, MhwStructData structData) {
-            WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new SingleStructTemplate {
+            WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", className, new SingleStructTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
@@ -44,7 +44,7 @@ namespace MHW_Generator {
                 }
             });
 
-            WriteResult($"{Global.STRUCT_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new RawStructTemplate {
+            WriteResult($"{Global.STRUCT_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", className, new RawStructTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
@@ -56,7 +56,7 @@ namespace MHW_Generator {
         public static void GenerateVerticalStructProps(string @namespace, string className, MhwStructData structData) {
             GenerateSingleStructProps(@namespace, className, structData);
 
-            WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, $"{className}Internal", new VerticalStructTemplate {
+            WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", $"{className}Internal", new VerticalStructTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
@@ -64,7 +64,7 @@ namespace MHW_Generator {
                 }
             });
 
-            WriteResult($"{Global.HEX_010_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, $"{className}", new _010Template {
+            WriteResult($"{Global._010_OUTPUT_ROOT}", structData.ext, new _010Template {
                 Session = new Dictionary<string, object> {
                     {"structData", structData}
                 }
@@ -72,7 +72,7 @@ namespace MHW_Generator {
         }
 
         public static void GenerateMultiStructProps(string @namespace, string className, MhwMultiStructData structData) {
-            WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new MultiStructItemTemplate {
+            WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", className, new MultiStructItemTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
@@ -80,16 +80,15 @@ namespace MHW_Generator {
                 }
             });
 
-            WriteResult($"{Global.HEX_010_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new MultiStruct010Template {
+            WriteResult($"{Global._010_OUTPUT_ROOT}", structData.ext, new MultiStruct010Template {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
-                    {"className", className},
                     {"structData", structData}
                 }
             }, "bt");
         }
 
-        public static void WriteResult(string dir, string @namespace, string className, dynamic template, string ext = "cs") {
+        public static void WriteResult(string dir, string className, dynamic template, string ext = "cs") {
             template.Initialize();
             if (!Directory.Exists(dir)) {
                 Directory.CreateDirectory(dir);

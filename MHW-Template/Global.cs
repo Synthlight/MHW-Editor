@@ -135,7 +135,7 @@ namespace MHW_Template {
         public const string ASSETS_ROOT = @"..\..\..\Assets";
         public const string GENERATED_ROOT = @"..\..\..\Generated";
         public const string STRUCT_OUTPUT_ROOT = @"..\..\..\Structs";
-        public const string HEX_010_OUTPUT_ROOT = @"..\..\..\010 Templates";
+        public const string _010_OUTPUT_ROOT = @"..\..\..\010 Templates";
         public const string CHUNK_HASHING_ROOT = @"V:\MHW\IB\For Hashing";
         public const string CHUNK_ROOT = @"V:\MHW\IB\chunk_combined";
         public const string COMMON_TEXT_ROOT = CHUNK_ROOT + @"\common\text";
