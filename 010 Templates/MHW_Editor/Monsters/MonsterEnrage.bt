@@ -1,0 +1,35 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.dtt_agr
+//  Category: MHW_Editor.Monsters
+//------------------------------------------------
+
+typedef struct {
+    uint Magic_1;
+    uint Magic_2;
+    uint Monster_Id;
+    uint Magic_3;
+} Monster_Rage;
+
+typedef struct {
+    int Build_to_Trigger;
+    float Duration;
+    float Speed_Modifier;
+    float Damage_Modifier;
+    float Player_Damage_Modifier;
+    float Build_Multiplier_by_HP_100_;
+    float Build_Multiplier_by_HP_88_99_;
+    float Build_Multiplier_by_HP_77_88_;
+    float Build_Multiplier_by_HP_66_77_;
+    float Build_Multiplier_by_HP_55_66_;
+    float Build_Multiplier_by_HP_44_55_;
+    float Build_Multiplier_by_HP_33_44_;
+    float Build_Multiplier_by_HP_22_33_;
+    float Build_Multiplier_by_HP_11_22_;
+    float Build_Multiplier_by_HP_0_11_;
+    float Out_of_Combat_Decay_Multiplier;
+} Rage_Stats;
+
+Monster_Rage Monster_Rage_;
+Rage_Stats Rage_Stats_[2]<optimize=false>;

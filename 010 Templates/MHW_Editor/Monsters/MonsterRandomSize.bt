@@ -1,0 +1,109 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.dtt_rsz
+//  Category: MHW_Editor.Monsters
+//------------------------------------------------
+
+typedef struct {
+    uint Magic_1;
+    uint Magic_2;
+    uint Number_of_Monsters;
+} Monster_Random_Sizes;
+
+typedef struct {
+    uint Monster_Id;
+    uint Gold_Small_Crown_Limit;
+    uint Silver_Crown_Limit;
+    uint Gold_Big_Crown_Limit;
+    float Base_Size;
+} Monsters;
+
+typedef struct {
+    uint Number_of_Crown_Tables;
+} Crown_Table_Count;
+
+typedef struct {
+    string Name_Jap_;
+    int Crown_Size_Multiplier_1;
+    int Crown_Size_Rarity_1;
+    int Crown_Size_Multiplier_2;
+    int Crown_Size_Rarity_2;
+    int Crown_Size_Multiplier_3;
+    int Crown_Size_Rarity_3;
+    int Crown_Size_Multiplier_4;
+    int Crown_Size_Rarity_4;
+    int Crown_Size_Multiplier_5;
+    int Crown_Size_Rarity_5;
+    int Crown_Size_Multiplier_6;
+    int Crown_Size_Rarity_6;
+    int Crown_Size_Multiplier_7;
+    int Crown_Size_Rarity_7;
+    int Crown_Size_Multiplier_8;
+    int Crown_Size_Rarity_8;
+    int Crown_Size_Multiplier_9;
+    int Crown_Size_Rarity_9;
+    int Crown_Size_Multiplier_10;
+    int Crown_Size_Rarity_10;
+    int Crown_Size_Multiplier_11;
+    int Crown_Size_Rarity_11;
+    int Crown_Size_Multiplier_12;
+    int Crown_Size_Rarity_12;
+    int Crown_Size_Multiplier_13;
+    int Crown_Size_Rarity_13;
+    int Crown_Size_Multiplier_14;
+    int Crown_Size_Rarity_14;
+    int Crown_Size_Multiplier_15;
+    int Crown_Size_Rarity_15;
+    int Crown_Size_Multiplier_16;
+    int Crown_Size_Rarity_16;
+    int Crown_Size_Multiplier_17;
+    int Crown_Size_Rarity_17;
+    int Crown_Size_Multiplier_18;
+    int Crown_Size_Rarity_18;
+    int Crown_Size_Multiplier_19;
+    int Crown_Size_Rarity_19;
+    int Crown_Size_Multiplier_20;
+    int Crown_Size_Rarity_20;
+    int Crown_Size_Multiplier_21;
+    int Crown_Size_Rarity_21;
+    int Crown_Size_Multiplier_22;
+    int Crown_Size_Rarity_22;
+    int Crown_Size_Multiplier_23;
+    int Crown_Size_Rarity_23;
+    int Crown_Size_Multiplier_24;
+    int Crown_Size_Rarity_24;
+    int Crown_Size_Multiplier_25;
+    int Crown_Size_Rarity_25;
+    int Crown_Size_Multiplier_26;
+    int Crown_Size_Rarity_26;
+    int Crown_Size_Multiplier_27;
+    int Crown_Size_Rarity_27;
+    int Crown_Size_Multiplier_28;
+    int Crown_Size_Rarity_28;
+    int Crown_Size_Multiplier_29;
+    int Crown_Size_Rarity_29;
+    int Crown_Size_Multiplier_30;
+    int Crown_Size_Rarity_30;
+    int Crown_Size_Multiplier_31;
+    int Crown_Size_Rarity_31;
+    int Crown_Size_Multiplier_32;
+    int Crown_Size_Rarity_32;
+    int Crown_Size_Multiplier_33;
+    int Crown_Size_Rarity_33;
+    int Crown_Size_Multiplier_34;
+    int Crown_Size_Rarity_34;
+    int Crown_Size_Multiplier_35;
+    int Crown_Size_Rarity_35;
+    int Crown_Size_Multiplier_36;
+    int Crown_Size_Rarity_36;
+    int Crown_Size_Multiplier_37;
+    int Crown_Size_Rarity_37;
+    int Crown_Size_Multiplier_38;
+    int Crown_Size_Rarity_38;
+} Crown_Tables;
+
+Monster_Random_Sizes Monster_Random_Sizes_;
+Monsters Monsters_[Monster_Random_Sizes_.Number_of_Monsters]<optimize=false>;
+Crown_Table_Count Crown_Table_Count_;
+Crown_Tables Crown_Tables_[Crown_Table_Count_.Number_of_Crown_Tables]<optimize=false>;

@@ -22,8 +22,11 @@ namespace MHW_Generator.Monsters {
                     new MhwMultiStructData.StructData.Entry("Magic 1", typeof(uint), true),
                     new MhwMultiStructData.StructData.Entry("Magic 2", typeof(uint), true)
                 }, 1),
+
                 new MhwMultiStructData.StructData("Solo Stats", scalingValues, 1000),
+
                 new MhwMultiStructData.StructData("Multi Stats", scalingValues, 1000),
+
                 new MhwMultiStructData.StructData("Unknown", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Unk 1", typeof(uint), true),
                     new MhwMultiStructData.StructData.Entry("Unk 2", typeof(uint), true),
@@ -35,7 +38,7 @@ namespace MHW_Generator.Monsters {
                 }, 1)
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "MonsterDifficulty", new MhwMultiStructData(structs));
+            return new MultiStruct("MHW_Editor.Monsters", "MonsterDifficulty", new MhwMultiStructData(structs, "dtt_dif"));
         }
     }
 }

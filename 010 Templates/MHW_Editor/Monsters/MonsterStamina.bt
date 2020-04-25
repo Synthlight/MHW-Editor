@@ -1,0 +1,74 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.dtt_sta
+//  Category: MHW_Editor.Monsters
+//------------------------------------------------
+
+typedef struct {
+    uint Magic_1;
+    uint Magic_2;
+    uint Monster_Id;
+    uint Magic_3;
+} Monster_Stamina_1_;
+
+typedef struct {
+    float Duration;
+    uint Stamina_Min;
+    uint Stamina_Max;
+} Fatigue_LR_;
+
+typedef struct {
+    uint Number_of_Stamina_Entries;
+} Stamina_Count_LR_;
+
+typedef struct {
+    uint Unk;
+    uint Base;
+} Stamina_LR_;
+
+typedef struct {
+    float Duration;
+    uint Stamina_Min;
+    uint Stamina_Max;
+} Fatigue_HR_;
+
+typedef struct {
+    uint Number_of_Stamina_Entries;
+} Stamina_Count_HR_;
+
+typedef struct {
+    uint Unk;
+    uint Base;
+} Stamina_HR_;
+
+typedef struct {
+    float Duration;
+    uint Stamina_Min;
+    uint Stamina_Max;
+} Fatigue_MR_;
+
+typedef struct {
+    uint Number_of_Stamina_Entries;
+} Stamina_Count_MR_;
+
+typedef struct {
+    uint Unk;
+    uint Base;
+} Stamina_MR_;
+
+typedef struct {
+    float Fatigue_Speed;
+} Monster_Stamina_2_;
+
+Monster_Stamina_1_ Monster_Stamina_1__;
+Fatigue_LR_ Fatigue_LR__;
+Stamina_Count_LR_ Stamina_Count_LR__;
+Stamina_LR_ Stamina_LR__[Stamina_Count_LR__.Number_of_Stamina_Entries]<optimize=false>;
+Fatigue_HR_ Fatigue_HR__;
+Stamina_Count_HR_ Stamina_Count_HR__;
+Stamina_HR_ Stamina_HR__[Stamina_Count_HR__.Number_of_Stamina_Entries]<optimize=false>;
+Fatigue_MR_ Fatigue_MR__;
+Stamina_Count_MR_ Stamina_Count_MR__;
+Stamina_MR_ Stamina_MR__[Stamina_Count_MR__.Number_of_Stamina_Entries]<optimize=false>;
+Monster_Stamina_2_ Monster_Stamina_2__;

@@ -97,6 +97,7 @@ namespace MHW_Editor.Monsters {
         public partial class Size_Settings : MhwStructItem {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Size Settings";
+            public const bool IsAddingAllowed = true;
 
             protected uint Header_raw;
             public const string Header_displayName = "Header";

@@ -88,10 +88,10 @@ namespace ");
 
         foreach (var entry in @struct.entries) {
             var accessLevel = entry.accessLevel;
-            if (entry.displayName == "Index") accessLevel += " override";
+            if (entry.name == "Index") accessLevel += " override";
             else if (accessLevel != "private") accessLevel += " virtual";
 
-            var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+            var propName = entry.SafeName();
             if (entry.forceUnique) propName += $"_{sortIndex}";
             var entryName = $"{propName}_raw";
 
@@ -110,7 +110,7 @@ namespace ");
                 setCast = $"({typeString}) ";
             }
 
-            if (entry.displayName == "Index") {
+            if (entry.name == "Index") {
                 getCast = "(ulong) ";
                 setCast = $"({returnString}) ";
                 returnString = "ulong";
@@ -119,7 +119,7 @@ namespace ");
             // Main property.
             WriteLine("");
             WriteLine($"            protected {typeString} {entryName};");
-            WriteLine($"            public const string {propName}_displayName = \"{entry.displayName}\";");
+            WriteLine($"            public const string {propName}_displayName = \"{entry.name}\";");
             WriteLine($"            public const int {propName}_sortIndex = {sortIndex};");
             WriteLine($"            [SortOrder({propName}_sortIndex)]");
             WriteLine($"            [DisplayName({propName}_displayName)]");
@@ -205,7 +205,7 @@ namespace ");
         WriteLine($"            public static {name} LoadData(BinaryReader reader) {{");
         WriteLine($"                var data = new {name}();");
         foreach (var entry in @struct.entries) {
-            var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+            var propName = entry.SafeName();
             if (entry.forceUnique) propName += $"_{sortIndex}";
             var entryName = $"{propName}_raw";
 
@@ -229,7 +229,7 @@ namespace ");
         WriteLine("");
         WriteLine("            public override void WriteData(BinaryWriter writer) {");
         foreach (var entry in @struct.entries) {
-            var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+            var propName = entry.SafeName();
             if (entry.forceUnique) propName += $"_{sortIndex}";
             var entryName = $"{propName}_raw";
 
@@ -252,10 +252,10 @@ namespace ");
             WriteLine("            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {");
             WriteLine("                return new ObservableCollection<MultiStructItemCustomView> {");
             foreach (var entry in @struct.entries) {
-                var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+                var propName = entry.SafeName();
                 if (entry.forceUnique) propName += $"_{sortIndex}";
 
-                WriteLine($"                    new MultiStructItemCustomView(this, \"{entry.displayName}\", \"{propName}\"),");
+                WriteLine($"                    new MultiStructItemCustomView(this, \"{entry.name}\", \"{propName}\"),");
             }
             WriteLine("                };");
             WriteLine("            }");
@@ -271,7 +271,7 @@ namespace ");
     WriteLine("            data = new List<MhwStructDataContainer>();");
     WriteLine("            dataByType = new Dictionary<Type, MhwStructDataContainer>();");
     foreach (var @struct in structData.structs) {
-        var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
+        var name = @struct.SafeName();
 
         WriteLine("");
         WriteLine($"            var {name}_list = new ObservableCollection<object>();");

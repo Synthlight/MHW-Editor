@@ -29,30 +29,45 @@ namespace MHW_Template.Struct_Generation.Multi
         public virtual string TransformText()
         {
             this.Write("//------------------------------------------------\r\n//--- 010 Editor v10.0 Binary" +
-                    " Template\r\n//------------------------------------------------\r\n");
+                    " Template\r\n//   Authors: Many. See MHW Editor Cretits.\r\n// File Mask: *.");
             
             #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(structData.ext));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n//  Category: ");
+            
+            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
+            
+            #line default
+            #line hidden
+            this.Write("\r\n//------------------------------------------------\r\n");
+            
+            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
 
     var compiler = new CSharpCodeProvider();
 
     foreach (var @struct in structData.structs) {
         var sortIndex = 50;
-        var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
+        var name = @struct.SafeName();
 
         WriteLine("");
         WriteLine("typedef struct {");
 
         foreach (var entry in @struct.entries) {
-            var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
+            var propName = entry.SafeName();
             if (entry.forceUnique) propName += $"_{sortIndex}";
 
             var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
             if (typeString == "byte") typeString = "ubyte";
             if (typeString == "sbyte") typeString = "byte";
-            if (entry.arrayCount > -1) typeString += $"[{entry.arrayCount}]";
+
+            if (entry.arrayCount > -1) propName += $"[{entry.arrayCount}]<optimize=false>";
 
             if (entry.condition != null) {
-                var condition = $"{entry.condition} ".Replace("|ref|", "data.").Replace("_raw", "");
+                var condition = $"{entry.condition} ".Replace("|ref|", "").Replace("_raw", "");
                 WriteLine($"    {condition} {{ {typeString} {propName}; }}");
             } else {
                 WriteLine($"    {typeString} {propName};");
@@ -67,10 +82,13 @@ namespace MHW_Template.Struct_Generation.Multi
     WriteLine("");
 
     foreach (var @struct in structData.structs) {
-        var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
+        var name = @struct.SafeName();
 
         if (@struct.fixedSizeCount > 1) {
-            WriteLine($"{name}[{@struct.fixedSizeCount}] {name}_;");
+            WriteLine($"{name} {name}_[{@struct.fixedSizeCount}]<optimize=false>;");
+        } else if (@struct._010Link != null) {
+            var link = @struct._010Link;
+            WriteLine($"{name} {name}_[{link.@struct.SafeName()}_.{link.entry.SafeName()}]<optimize=false>;");
         } else {
             WriteLine($"{name} {name}_;");
         }

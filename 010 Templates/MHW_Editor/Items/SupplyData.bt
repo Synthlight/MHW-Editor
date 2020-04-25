@@ -1,0 +1,37 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.supp
+//  Category: MHW_Editor.Items
+//------------------------------------------------
+
+typedef struct {
+    uint Magic_1;
+    uint Magic_2;
+    ushort Magic_3;
+    uint Supply_Id;
+} Supply_Data;
+
+typedef struct {
+    ushort Item_Id;
+    ushort Item_Count;
+} Item_Box;
+
+typedef struct {
+    ubyte Items_to_Show;
+} Item_Box_Scaling;
+
+typedef struct {
+    ushort Ammo_Id;
+    ushort Ammo_Count;
+} Ammo_Box;
+
+typedef struct {
+    ubyte Ammo_Items_to_Show;
+} Ammo_Box_Scaling;
+
+Supply_Data Supply_Data_;
+Item_Box Item_Box_[24]<optimize=false>;
+Item_Box_Scaling Item_Box_Scaling_[3]<optimize=false>;
+Ammo_Box Ammo_Box_[16]<optimize=false>;
+Ammo_Box_Scaling Ammo_Box_Scaling_[3]<optimize=false>;

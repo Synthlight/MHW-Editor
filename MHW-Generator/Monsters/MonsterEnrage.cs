@@ -12,6 +12,7 @@ namespace MHW_Generator.Monsters {
                     new MhwMultiStructData.StructData.Entry("Monster Id", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Magic 3", typeof(uint), true)
                 }, 1),
+
                 new MhwMultiStructData.StructData("Rage Stats", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Build to Trigger", typeof(int), valueString: "value.Clamp((int) -1, (int) int.MaxValue)"),
                     new MhwMultiStructData.StructData.Entry("Duration", typeof(float)),
@@ -32,7 +33,7 @@ namespace MHW_Generator.Monsters {
                 }, 2)
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "MonsterEnrage", new MhwMultiStructData(structs));
+            return new MultiStruct("MHW_Editor.Monsters", "MonsterEnrage", new MhwMultiStructData(structs, "dtt_agr"));
         }
     }
 }

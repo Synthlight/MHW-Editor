@@ -80,6 +80,7 @@ namespace MHW_Editor.Monsters {
         public partial class Clagger_Params : MhwStructItem {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Clagger Params";
+            public const bool IsAddingAllowed = true;
 
             protected float Unk_f32__raw;
             public const string Unk_f32__displayName = "Unk (f32)";

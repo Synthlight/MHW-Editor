@@ -1,0 +1,50 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.dtt_dif
+//  Category: MHW_Editor.Monsters
+//------------------------------------------------
+
+typedef struct {
+    uint Magic_1;
+    uint Magic_2;
+} Monster_Difficulty;
+
+typedef struct {
+    float Monster_HP_Multiplier;
+    float Monster_Damage_Multiplier;
+    float Player_Damage_Multiplier;
+    float Monster_Part_HP;
+    float Monster_Status_Base;
+    float Monster_Status_Buildup;
+    float Monster_Stun;
+    float Monster_Exhaust;
+    float Monster_Mount;
+} Solo_Stats;
+
+typedef struct {
+    float Monster_HP_Multiplier;
+    float Monster_Damage_Multiplier;
+    float Player_Damage_Multiplier;
+    float Monster_Part_HP;
+    float Monster_Status_Base;
+    float Monster_Status_Buildup;
+    float Monster_Stun;
+    float Monster_Exhaust;
+    float Monster_Mount;
+} Multi_Stats;
+
+typedef struct {
+    uint Unk_1;
+    uint Unk_2;
+    uint Unk_3;
+    uint Unk_4;
+    uint Unk_5;
+    uint Unk_6;
+    uint Unk_7;
+} Unknown;
+
+Monster_Difficulty Monster_Difficulty_;
+Solo_Stats Solo_Stats_[1000]<optimize=false>;
+Multi_Stats Multi_Stats_[1000]<optimize=false>;
+Unknown Unknown_;

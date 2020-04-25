@@ -1,0 +1,196 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.shlp
+//  Category: MHW_Editor.Weapons
+//------------------------------------------------
+
+typedef struct {
+    uint Magic_1;
+    char SLP[4]<optimize=false>;
+    uint Magic_2;
+} Shlp;
+
+typedef struct {
+    uint Header;
+    if (Header != 0)  { string Path; }
+} Assets;
+
+typedef struct {
+    uint Particles_Projectile_Header;
+    uint Particles_Projectile;
+    uint Particles_Muzzle_Header;
+    uint Particles_Muzzle;
+    int Unk_1;
+    uint Obj_Collision_Header;
+    if (Obj_Collision_Header != 0)  { string Obj_Collision; }
+    uint Obj_Collision_Index;
+    uint Timeline_List_Header;
+    if (Timeline_List_Header != 0)  { string Timeline_List; }
+    uint Unk_2;
+    uint Unk_3;
+    uint Unk_4;
+    uint Unk_5;
+    uint Unk_6;
+} Shlp_1_;
+
+typedef struct {
+    uint Number_of_Linked_Shell_Params;
+} Number_of_Linked_Shell_Params_Holder;
+
+typedef struct {
+    uint Header;
+    string Path;
+    uint Unk_1;
+    uint Flags;
+    uint Unk_3;
+} Linked_Shell_Params;
+
+typedef struct {
+    uint Particles_Ground_Decal_Header;
+    uint Particles_Ground_Decal;
+    uint Particles_Wall_Decal_Header;
+    uint Particles_Wall_Decal;
+    uint Unk_1;
+    uint Unk_2;
+    uint Particles_Obj_Hit_Header;
+    uint Particles_Obj_Hit;
+    ubyte Unk_3;
+    ubyte Unk_4;
+    ubyte Unk_5;
+    ubyte Unk_6;
+    ubyte Unk_7;
+    ubyte Unk_8;
+    ubyte Unk_9;
+    ubyte Unk_10;
+    ubyte Unk_11;
+    ubyte Unk_12;
+    ubyte Unk_13;
+    ubyte Unk_14;
+    uint Unk_15;
+    uint Unk_16;
+    uint Unk_17;
+    ubyte Unk_18;
+    uint Unk_19;
+    uint Unk_20;
+    ubyte Unk_21;
+    int Unk_22;
+    uint Unk_23;
+    uint Unk_24;
+    uint Unk_25;
+    uint Unk_26;
+    uint Particles_Gun_Fire_Header;
+    uint Particles_Gun_Fire;
+    uint Unk_27;
+    uint Unk_28;
+    uint Unk_29;
+    uint Unk_30;
+    uint Unk_31;
+    uint Unk_32;
+    uint Unk_33;
+    uint Unk_34;
+    uint Wwise_Container_Header;
+    if (Wwise_Container_Header != 0)  { string Wwise_Container; }
+    int Sound_Gun_Fire_Header;
+    int Sound_Gun_Fire;
+    int Sound_Bullet_Travel_Header;
+    int Sound_Bullet_Travel;
+    int Sound_Explode_Header;
+    int Sound_Explode;
+    int Sound_Hit_Wall_or_Ground_Header;
+    int Sound_Hit_Wall_or_Ground;
+    int Sound_Hit_Obj_Hit_Header;
+    int Sound_Hit_Obj_Hit;
+    int Sound_Condition_Header_1;
+    int Sound_Condition_1;
+    int Sound_Slinger_Condition_Header_1;
+    int Sound_Slinger_Condition_1;
+    int Sound_Slinger_Condition_Header_2;
+    int Sound_Slinger_Condition_2;
+    int Sound_Condition_Header_2;
+    int Sound_Condition_2;
+    int Sound_Condition_Header_3;
+    int Sound_Condition_3;
+    int Sound_Condition_Header_4;
+    int Sound_Condition_4;
+    int Sound_Condition_Header_5;
+    int Sound_Condition_5;
+    uint Header;
+    uint Projectile_Entity_Collider;
+    float Projectile_Model_Lifespan;
+    uint Projectile_Distance_Range;
+    ubyte Unk_35;
+    ubyte Unk_36;
+    ubyte Unk_37;
+    ubyte Unk_38;
+    uint Unk_39;
+    uint Unk_40;
+    uint Unk_41;
+    float Projectile_Spawn_Pos_Y;
+    float Projectile_Spawn_Pos_X;
+    float Projectile_Velocity;
+    float Projectile_Falloff;
+    float Unk_42;
+    float Unk_43;
+    float Unk_44;
+    float Unk_45;
+    float Unk_46;
+    float Unk_47;
+    float Unk_48;
+    float Projectile_Hitbox_Range;
+    uint Unk_49;
+    uint Insta_Kill_Trigger;
+    uint Unk_50;
+    ushort Unk_51;
+    float Entity_Collide_1;
+    float Unk_52;
+    float Unk_53;
+    ubyte Entity_Collide_2;
+    ubyte Unk_54;
+    ubyte Entity_Spawn_Location;
+    ubyte Entity_Range;
+    ubyte Unk_55;
+    ubyte Unk_56;
+    ushort Unk_57;
+    uint Unk_58;
+} Shlp_2_;
+
+typedef struct {
+    uint Number_of_Modifiers;
+} Number_of_Modifiers_Holder;
+
+typedef struct {
+    uint Header;
+    if (Header == 412627386)  { byte Value_1_if_412627386_; }
+    if (Header == 412627386)  { byte Value_2_if_412627386_; }
+    if (Header == 412627386)  { byte Value_3_if_412627386_; }
+    if (Header == 412627386)  { byte Value_4_if_412627386_; }
+    if (Header == 3289971)  { int Value_if_3289971_; }
+    if (Header == 79120377)  { float Value_if_79120377_; }
+    if (Header == 306780182)  { byte Value_if_306780182_; }
+    if (Header == 1335056316)  { float Value_X_if_1335056316_; }
+    if (Header == 1335056316)  { float Value_Y_if_1335056316_; }
+    if (Header == 1335056316)  { float Value_Z_if_1335056316_; }
+    if (Header == 1335056316)  { float Value_Unk_if_1335056316_; }
+    string Name;
+    uint Unk_1;
+    string DataType;
+    uint Unk_2;
+    uint Unk_3;
+    uint Unk_4;
+    ubyte Unk_5;
+} Modifiers;
+
+typedef struct {
+    uint Unk_59;
+} Unknown;
+
+Shlp Shlp_;
+Assets Assets_[25]<optimize=false>;
+Shlp_1_ Shlp_1__;
+Number_of_Linked_Shell_Params_Holder Number_of_Linked_Shell_Params_Holder_;
+Linked_Shell_Params Linked_Shell_Params_[Number_of_Linked_Shell_Params_Holder_.Number_of_Linked_Shell_Params]<optimize=false>;
+Shlp_2_ Shlp_2__;
+Number_of_Modifiers_Holder Number_of_Modifiers_Holder_;
+Modifiers Modifiers_[Number_of_Modifiers_Holder_.Number_of_Modifiers]<optimize=false>;
+Unknown Unknown_;

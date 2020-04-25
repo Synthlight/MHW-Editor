@@ -64,6 +64,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.StructData.Entry("Unk334", typeof(float)),
                     new MhwMultiStructData.StructData.Entry("Unk335", typeof(float))
                 }, 1, showVertically: true),
+
                 new MhwMultiStructData.StructData("Unk Struct 6", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Unk1", typeof(float)),
                     new MhwMultiStructData.StructData.Entry("Unk2", typeof(float)),
@@ -80,7 +81,7 @@ namespace MHW_Generator.Weapons {
                 @struct.name = @struct.name.Replace("W12p", "W13p");
             }
 
-            return new MultiStruct("MHW_Editor.Weapons", "Wp13Param", new MhwMultiStructData(structs, EncryptionKeys.FILE_EXT_KEY_LOOKUP[".w13p"]));
+            return new MultiStruct("MHW_Editor.Weapons", "Wp13Param", new MhwMultiStructData(structs, "w13p", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".w13p"]));
         }
     }
 }

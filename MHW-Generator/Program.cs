@@ -80,14 +80,13 @@ namespace MHW_Generator {
                 }
             });
 
-            // TODO: Need to do something to replace "GetEntryCount".
-            //WriteResult($"{Global.HEX_010_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new MultiStruct010Template {
-            //    Session = new Dictionary<string, object> {
-            //        {"_namespace", @namespace},
-            //        {"className", className},
-            //        {"structData", structData}
-            //    }
-            //}, "bt");
+            WriteResult($"{Global.HEX_010_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new MultiStruct010Template {
+                Session = new Dictionary<string, object> {
+                    {"_namespace", @namespace},
+                    {"className", className},
+                    {"structData", structData}
+                }
+            }, "bt");
         }
 
         public static void WriteResult(string dir, string @namespace, string className, dynamic template, string ext = "cs") {

@@ -14,10 +14,12 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.StructData.Entry("SLP", typeof(char), true, typeof(string), arrayCount: 4),
                     new MhwMultiStructData.StructData.Entry("Magic 2", typeof(uint), true)
                 }, 1),
+
                 new MhwMultiStructData.StructData("Assets", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Path", typeof(string), isNullTerminatedString: true, condition: "if (|ref|Header_raw != 0)")
                 }, 25),
+
                 new MhwMultiStructData.StructData("Shlp (1)", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Particles: Projectile Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Particles: Projectile", typeof(uint)),
@@ -35,16 +37,19 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.StructData.Entry("Unk 5", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Unk 6", typeof(uint))
                 }, 1, showVertically: true),
+
                 new MhwMultiStructData.StructData("Number of Linked Shell Params Holder", new List<MhwMultiStructData.StructData.Entry> {
-                    new MhwMultiStructData.StructData.Entry("Number of Linked Shell Params", typeof(uint), true)
-                }, 1, true),
+                    new MhwMultiStructData.StructData.Entry("Number of Linked Shell Params", typeof(uint), true).@out(out var linkedShellCount)
+                }, 1, true).@out(out var linkedShellCountHolder),
+
                 new MhwMultiStructData.StructData("Linked Shell Params", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Path", typeof(string), isNullTerminatedString: true),
                     new MhwMultiStructData.StructData.Entry("Unk 1", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Flags", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Unk 3", typeof(uint))
-                }, canAddRows: true),
+                }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(linkedShellCountHolder, linkedShellCount)),
+
                 new MhwMultiStructData.StructData("Shlp (2)", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Particles: Ground Decal Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Particles: Ground Decal", typeof(uint)),
@@ -153,9 +158,11 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint))
                 }, 1, showVertically: true),
+
                 new MhwMultiStructData.StructData("Number of Modifiers Holder", new List<MhwMultiStructData.StructData.Entry> {
-                    new MhwMultiStructData.StructData.Entry("Number of Modifiers", typeof(uint), true)
-                }, 1, true),
+                    new MhwMultiStructData.StructData.Entry("Number of Modifiers", typeof(uint), true).@out(out var modifiersCount)
+                }, 1, true).@out(out var modifiersCountHolder),
+
                 new MhwMultiStructData.StructData("Modifiers", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Value 1 (if 412627386)", typeof(sbyte), condition: "if (|ref|Header_raw == 412627386)"),
@@ -176,13 +183,14 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.StructData.Entry("Unk 3", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Unk 4", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Unk 5", typeof(byte))
-                }, canAddRows: true),
+                }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(modifiersCountHolder, modifiersCount)),
+
                 new MhwMultiStructData.StructData("Unknown", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry($"Unk {++i}", typeof(uint))
                 }, 1)
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "ShellParam", new MhwMultiStructData(structs, EncryptionKeys.FILE_EXT_KEY_LOOKUP[".shlp"]));
+            return new MultiStruct("MHW_Editor.Weapons", "ShellParam", new MhwMultiStructData(structs, "shlp", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".shlp"]));
         }
     }
 }

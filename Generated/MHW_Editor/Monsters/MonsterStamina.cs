@@ -13,9 +13,9 @@ namespace MHW_Editor.Monsters {
     public partial class MonsterStamina {
         public override string EncryptionKey => null;
 
-        public partial class Monster_Difficulty : MhwStructItem {
+        public partial class Monster_Stamina_1_ : MhwStructItem {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "Monster Difficulty";
+            public const string GridName = "Monster Stamina (1)";
 
             protected uint Magic_1_raw;
             public const string Magic_1_displayName = "Magic 1";
@@ -77,8 +77,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static Monster_Difficulty LoadData(BinaryReader reader) {
-                var data = new Monster_Difficulty();
+            public static Monster_Stamina_1_ LoadData(BinaryReader reader) {
+                var data = new Monster_Stamina_1_();
                 data.Magic_1_raw = reader.ReadUInt32();
                 data.Magic_2_raw = reader.ReadUInt32();
                 data.Monster_Id_raw = reader.ReadUInt32();
@@ -508,20 +508,49 @@ namespace MHW_Editor.Monsters {
             }
         }
 
+        public partial class Monster_Stamina_2_ : MhwStructItem {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "Monster Stamina (2)";
+
+            protected float Fatigue_Speed_raw;
+            public const string Fatigue_Speed_displayName = "Fatigue Speed";
+            public const int Fatigue_Speed_sortIndex = 50;
+            [SortOrder(Fatigue_Speed_sortIndex)]
+            [DisplayName(Fatigue_Speed_displayName)]
+            public virtual float Fatigue_Speed {
+                get => Fatigue_Speed_raw;
+                set {
+                    if (Fatigue_Speed_raw == value) return;
+                    Fatigue_Speed_raw = value;
+                    OnPropertyChanged(nameof(Fatigue_Speed));
+                }
+            }
+
+            public static Monster_Stamina_2_ LoadData(BinaryReader reader) {
+                var data = new Monster_Stamina_2_();
+                data.Fatigue_Speed_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public override void WriteData(BinaryWriter writer) {
+                writer.Write(Fatigue_Speed_raw);
+            }
+        }
+
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
             data = new List<MhwStructDataContainer>();
             dataByType = new Dictionary<Type, MhwStructDataContainer>();
 
-            var Monster_Difficulty_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Monster_Difficulty)); i++) {
-                var item = Monster_Difficulty.LoadData(reader);
+            var Monster_Stamina_1__list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Monster_Stamina_1_)); i++) {
+                var item = Monster_Stamina_1_.LoadData(reader);
                 item.Index = i;
-                Monster_Difficulty_list.Add(item);
+                Monster_Stamina_1__list.Add(item);
             }
-            var Monster_Difficulty_container = new MhwStructDataContainer(Monster_Difficulty_list, typeof(Monster_Difficulty));
-            data.Add(Monster_Difficulty_container);
-            dataByType[typeof(Monster_Difficulty)] = Monster_Difficulty_container;
+            var Monster_Stamina_1__container = new MhwStructDataContainer(Monster_Stamina_1__list, typeof(Monster_Stamina_1_));
+            data.Add(Monster_Stamina_1__container);
+            dataByType[typeof(Monster_Stamina_1_)] = Monster_Stamina_1__container;
 
             var Fatigue_LR__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Fatigue_LR_)); i++) {
@@ -612,6 +641,16 @@ namespace MHW_Editor.Monsters {
             var Stamina_MR__container = new MhwStructDataContainer(Stamina_MR__list, typeof(Stamina_MR_));
             data.Add(Stamina_MR__container);
             dataByType[typeof(Stamina_MR_)] = Stamina_MR__container;
+
+            var Monster_Stamina_2__list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(Monster_Stamina_2_)); i++) {
+                var item = Monster_Stamina_2_.LoadData(reader);
+                item.Index = i;
+                Monster_Stamina_2__list.Add(item);
+            }
+            var Monster_Stamina_2__container = new MhwStructDataContainer(Monster_Stamina_2__list, typeof(Monster_Stamina_2_));
+            data.Add(Monster_Stamina_2__container);
+            dataByType[typeof(Monster_Stamina_2_)] = Monster_Stamina_2__container;
         }
     }
 }

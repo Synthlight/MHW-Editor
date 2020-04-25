@@ -1,0 +1,24 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.em_ss
+//  Category: MHW_Editor.Monsters
+//------------------------------------------------
+
+typedef struct {
+    uint Magic_1;
+    uint Magic_2;
+    uint Magic_3;
+    uint Number_of_Size_Settings;
+} Small_Monster_Size_Params;
+
+typedef struct {
+    uint Header;
+    float Min_Size;
+    float Max_Size;
+    float Unk_f32_;
+    uint Monster_Id;
+} Size_Settings;
+
+Small_Monster_Size_Params Small_Monster_Size_Params_;
+Size_Settings Size_Settings_[Small_Monster_Size_Params_.Number_of_Size_Settings]<optimize=false>;

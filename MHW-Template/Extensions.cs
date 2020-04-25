@@ -62,23 +62,20 @@ namespace MHW_Template {
         }
 
         public static string SHA512(this string fileName) {
-            using (var file = File.OpenRead(fileName)) {
-                return file.SHA512();
-            }
+            using var file = File.OpenRead(fileName);
+            return file.SHA512();
         }
 
         public static string SHA512(this Stream stream) {
-            using (var sha512 = System.Security.Cryptography.SHA512.Create()) {
-                var hash = sha512.ComputeHash(stream);
-                return BitConverter.ToString(hash).Replace("-", "");
-            }
+            using var sha512 = System.Security.Cryptography.SHA512.Create();
+            var hash = sha512.ComputeHash(stream);
+            return BitConverter.ToString(hash).Replace("-", "");
         }
 
         public static string SHA512(this byte[] bytes) {
-            using (var sha512 = System.Security.Cryptography.SHA512.Create()) {
-                var hash = sha512.ComputeHash(bytes);
-                return BitConverter.ToString(hash).Replace("-", "");
-            }
+            using var sha512 = System.Security.Cryptography.SHA512.Create();
+            var hash = sha512.ComputeHash(bytes);
+            return BitConverter.ToString(hash).Replace("-", "");
         }
 
         public static Dictionary<K, V> Sort<K, V, O>(this Dictionary<K, V> dict, Func<KeyValuePair<K, V>, O> keySelector) {
@@ -104,63 +101,53 @@ namespace MHW_Template {
         }
 
         public static string ToDatFileName(this WeaponType weaponType) {
-            switch (weaponType) {
-                case WeaponType.Greatsword: return "l_sword.wp_dat";
-                case WeaponType.Sword_and_Shield: return "sword.wp_dat";
-                case WeaponType.Dual_Blades: return "w_sword.wp_dat";
-                case WeaponType.Longsword: return "tachi.wp_dat";
-                case WeaponType.Hammer: return "hammer.wp_dat";
-                case WeaponType.Hunting_Horn: return "whistle.wp_dat";
-                case WeaponType.Lance: return "lance.wp_dat";
-                case WeaponType.Gunlance: return "g_lance.wp_dat";
-                case WeaponType.Switch_Axe: return "s_axe.wp_dat";
-                case WeaponType.Charge_Blade: return "c_axe.wp_dat";
-                case WeaponType.Insect_Glaive: return "rod.wp_dat";
-                case WeaponType.Bow: return "bow.wp_dat_g";
-                case WeaponType.Light_Bowgun: return "lbg.wp_dat_g";
-                case WeaponType.Heavy_Bowgun: return "hbg.wp_dat_g";
-                default: return null;
-            }
+            return weaponType switch {
+                WeaponType.Greatsword => "l_sword.wp_dat",
+                WeaponType.Sword_and_Shield => "sword.wp_dat",
+                WeaponType.Dual_Blades => "w_sword.wp_dat",
+                WeaponType.Longsword => "tachi.wp_dat",
+                WeaponType.Hammer => "hammer.wp_dat",
+                WeaponType.Hunting_Horn => "whistle.wp_dat",
+                WeaponType.Lance => "lance.wp_dat",
+                WeaponType.Gunlance => "g_lance.wp_dat",
+                WeaponType.Switch_Axe => "s_axe.wp_dat",
+                WeaponType.Charge_Blade => "c_axe.wp_dat",
+                WeaponType.Insect_Glaive => "rod.wp_dat",
+                WeaponType.Bow => "bow.wp_dat_g",
+                WeaponType.Light_Bowgun => "lbg.wp_dat_g",
+                WeaponType.Heavy_Bowgun => "hbg.wp_dat_g",
+                _ => null
+            };
         }
 
         public static string ToDatFileName(this EquipmentType equipmentType) {
-            switch (equipmentType) {
-                case EquipmentType.Greatsword: return "l_sword.wp_dat";
-                case EquipmentType.Sword_and_Shield: return "sword.wp_dat";
-                case EquipmentType.Dual_Blades: return "w_sword.wp_dat";
-                case EquipmentType.Longsword: return "tachi.wp_dat";
-                case EquipmentType.Hammer: return "hammer.wp_dat";
-                case EquipmentType.Hunting_Horn: return "whistle.wp_dat";
-                case EquipmentType.Lance: return "lance.wp_dat";
-                case EquipmentType.Gunlance: return "g_lance.wp_dat";
-                case EquipmentType.Switch_Axe: return "s_axe.wp_dat";
-                case EquipmentType.Charge_Blade: return "c_axe.wp_dat";
-                case EquipmentType.Insect_Glaive: return "rod.wp_dat";
-                case EquipmentType.Bow: return "bow.wp_dat_g";
-                case EquipmentType.Light_Bowgun: return "lbg.wp_dat_g";
-                case EquipmentType.Heavy_Bowgun: return "hbg.wp_dat_g";
-                case EquipmentType.Armor_Head:
-                case EquipmentType.Armor_Chest:
-                case EquipmentType.Armor_Arms:
-                case EquipmentType.Armor_Waist:
-                case EquipmentType.Armor_Legs:
-                case EquipmentType.Armor_Charm:
-                    return "armor.am_dat";
-                default: return null;
-            }
+            return equipmentType switch {
+                EquipmentType.Greatsword => "l_sword.wp_dat",
+                EquipmentType.Sword_and_Shield => "sword.wp_dat",
+                EquipmentType.Dual_Blades => "w_sword.wp_dat",
+                EquipmentType.Longsword => "tachi.wp_dat",
+                EquipmentType.Hammer => "hammer.wp_dat",
+                EquipmentType.Hunting_Horn => "whistle.wp_dat",
+                EquipmentType.Lance => "lance.wp_dat",
+                EquipmentType.Gunlance => "g_lance.wp_dat",
+                EquipmentType.Switch_Axe => "s_axe.wp_dat",
+                EquipmentType.Charge_Blade => "c_axe.wp_dat",
+                EquipmentType.Insect_Glaive => "rod.wp_dat",
+                EquipmentType.Bow => "bow.wp_dat_g",
+                EquipmentType.Light_Bowgun => "lbg.wp_dat_g",
+                EquipmentType.Heavy_Bowgun => "hbg.wp_dat_g",
+                var x when x == EquipmentType.Armor_Head
+                           || x == EquipmentType.Armor_Chest
+                           || x == EquipmentType.Armor_Arms
+                           || x == EquipmentType.Armor_Waist
+                           || x == EquipmentType.Armor_Legs
+                           || x == EquipmentType.Armor_Charm => "armor.am_dat",
+                _ => null
+            };
         }
 
         public static string ToDatFileName(this ArmorType armorType) {
-            switch (armorType) {
-                case ArmorType.Head:
-                case ArmorType.Chest:
-                case ArmorType.Arms:
-                case ArmorType.Waist:
-                case ArmorType.Legs:
-                case ArmorType.Charm:
-                    return "armor.am_dat";
-                default: return null;
-            }
+            return "armor.am_dat";
         }
     }
 }

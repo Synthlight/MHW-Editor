@@ -1,7 +1,7 @@
 //------------------------------------------------
 //--- 010 Editor v10.0 Binary Template
 //   Authors: Many. See MHW Editor Cretits.
-// File Mask: *.w13p
+// File Mask: *.w12p
 //  Category: MHW_Editor.Weapons
 //------------------------------------------------
 
@@ -9,7 +9,7 @@ typedef struct {
     char Weapon[4]<optimize=false>;
     uint Unk_1;
     uint Unk_2;
-} W13p_Params_1_;
+} W12p_Params_1_;
 
 typedef struct {
     float Unk_1;
@@ -42,7 +42,7 @@ typedef struct {
     float Unk20;
     ubyte Unk21;
     float Unk22;
-} W13p_Params_2_;
+} W12p_Params_2_;
 
 typedef struct {
     float Guard_Angle_Both_Sides_;
@@ -104,7 +104,7 @@ typedef struct {
     float Unk82;
     ubyte Unk83;
     int Unk84;
-} W13p_Params_3_;
+} W12p_Params_3_;
 
 typedef struct {
     float Unk1;
@@ -286,7 +286,7 @@ typedef struct {
     float Unk239;
     uint Unk240;
     short Unk241;
-} W13p_Params_4_;
+} W12p_Params_4_;
 
 typedef struct {
     float Unk1;
@@ -357,7 +357,7 @@ typedef struct {
     float Ranged_Attack_Up_Modifier_3;
     float Ranged_Attack_Up_Modifier_4;
     float Guard_Angle_Both_Sides_;
-} W13p_Params_5_;
+} W12p_Params_5_;
 
 typedef struct {
     uint Number_of_Shield_Mods;
@@ -380,7 +380,7 @@ typedef struct {
     float Unk284;
     float Unk285;
     float Unk286;
-} W13p_Params_6_;
+} W12p_Params_6_;
 
 typedef struct {
     float Unk1;
@@ -390,85 +390,26 @@ typedef struct {
 } Unk_Struct_5;
 
 typedef struct {
-    ushort Unk287;
-    ushort Unk288;
-    ushort Unk289;
-    ushort Unk290;
-    ushort Unk291;
-    ushort Unk292;
-    short Unk293;
-    short Unk293_1;
-    ushort Unk294;
-    ushort Unk295;
-    ushort Unk296;
-    ushort Unk297;
-    ushort Unk298;
-    ushort Unk299;
-    short Unk300;
-    short Unk300_1;
-    ushort Unk301;
-    ushort Unk302;
-    ushort Unk303;
-    ushort Unk304;
-    short Unk305;
-    short Unk306;
-    short Unk307;
-    short Unk307_1;
-    ushort Unk308;
-    ushort Unk309;
-    ushort Unk310;
-    ushort Unk311;
-    ushort Unk312;
-    ushort Unk313;
-    ushort Unk314;
-    ushort Unk314_1;
-    float Unk315;
-    float Unk316;
-    float Unk317;
-    float Unk318;
-    float Unk319;
-    float Unk320;
-    float Unk321;
-    float Unk322;
-    ubyte Unk323;
-    ubyte Unk324;
-    ubyte Unk325;
-    ubyte Unk326;
-    ubyte Unk327;
-    ushort Unk328;
-    float Unk329;
-    ubyte Unk330;
-    float Unk331;
-    float Unk332;
-    float Unk333;
-    float Unk334;
-    float Unk335;
-} W13p_Params_7_;
+    float Unk287;
+    float Unk288;
+    float Unk289;
+    float Unk290;
+    float Unk291;
+    float Unk292;
+} W12p_Params_7_;
 
-typedef struct {
-    float Unk1;
-    float Unk2;
-    float Unk3;
-    float Unk4;
-    float Unk5;
-    float Unk6;
-    float Unk7;
-    ubyte Unk8;
-} Unk_Struct_6;
-
-W13p_Params_1_ W13p_Params_1__;
+W12p_Params_1_ W12p_Params_1__;
 Unk_Struct_1 Unk_Struct_1_[20]<optimize=false>;
-W13p_Params_2_ W13p_Params_2__;
+W12p_Params_2_ W12p_Params_2__;
 Guard_Angles_ Guard_Angles__[2]<optimize=false>;
-W13p_Params_3_ W13p_Params_3__;
+W12p_Params_3_ W12p_Params_3__;
 Unk_Struct_2 Unk_Struct_2_[8]<optimize=false>;
-W13p_Params_4_ W13p_Params_4__;
+W12p_Params_4_ W12p_Params_4__;
 Unk_Struct_3 Unk_Struct_3_[16]<optimize=false>;
 Unk_Struct_4 Unk_Struct_4_[4]<optimize=false>;
-W13p_Params_5_ W13p_Params_5__;
+W12p_Params_5_ W12p_Params_5__;
 Number_of_Shield_Mods_Struct Number_of_Shield_Mods_Struct_;
 Shield_Mods Shield_Mods_[Number_of_Shield_Mods_Struct_.Number_of_Shield_Mods]<optimize=false>;
-W13p_Params_6_ W13p_Params_6__;
+W12p_Params_6_ W12p_Params_6__;
 Unk_Struct_5 Unk_Struct_5_[50]<optimize=false>;
-W13p_Params_7_ W13p_Params_7__;
-Unk_Struct_6 Unk_Struct_6_[9]<optimize=false>;
+W12p_Params_7_ W12p_Params_7__;

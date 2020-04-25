@@ -9,8 +9,9 @@ namespace MHW_Generator.Monsters {
                 new MhwMultiStructData.StructData("Monster Claw Grab", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Magic 1", typeof(uint), true),
                     new MhwMultiStructData.StructData.Entry("Magic 2", typeof(uint), true),
-                    new MhwMultiStructData.StructData.Entry("Number of Claggers", typeof(uint), true)
-                }, 1),
+                    new MhwMultiStructData.StructData.Entry("Number of Claggers", typeof(uint), true).@out(out var count)
+                }, 1).@out(out var header),
+
                 new MhwMultiStructData.StructData("Clagger Params", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Unk (f32)", typeof(float)),
                     new MhwMultiStructData.StructData.Entry("Normal", typeof(float)),
@@ -29,7 +30,8 @@ namespace MHW_Generator.Monsters {
                     new MhwMultiStructData.StructData.Entry("Tenderize Lv State LR", typeof(float)),
                     new MhwMultiStructData.StructData.Entry("Tenderize Lv State HR", typeof(float)),
                     new MhwMultiStructData.StructData.Entry("Tenderize Lv State MR", typeof(float))
-                }),
+                }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, count)),
+
                 new MhwMultiStructData.StructData("Claw Chance Params", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Gimmick Breaker Collision Unique Id Small", typeof(uint)),
                     new MhwMultiStructData.StructData.Entry("Gimmick Breaker Collision Unique Id Middle", typeof(uint)),
@@ -37,7 +39,7 @@ namespace MHW_Generator.Monsters {
                 }, 1, showVertically: true)
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "MonsterClawGrab", new MhwMultiStructData(structs));
+            return new MultiStruct("MHW_Editor.Monsters", "MonsterClawGrab", new MhwMultiStructData(structs, "dtt_clawc"));
         }
     }
 }
