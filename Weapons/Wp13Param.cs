@@ -1,12 +1,18 @@
-﻿using System.ComponentModel;
+﻿using System;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons {
-    public partial class Wp13Param : MhwItem, IHasCustomView<PlDataItemCustomView> {
-        public Wp13Param(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class Wp13Param : MhwMultiStructItem<Wp13Param> {
+        protected override ulong GetEntryCount(Type type) {
+            if (type == typeof(Shield_Mods)) {
+                return GetFirstEntry<Number_of_Shield_Mods_Struct>().Number_of_Shield_Mods;
+            }
+
+            return base.GetEntryCount(type);
         }
 
-        [DisplayName("")]
-        public override string Name => "None";
+        protected override void PrepSave() {
+            GetFirstEntry<Number_of_Shield_Mods_Struct>().Number_of_Shield_Mods = (uint) GetDataContainer<Shield_Mods>().list.Count;
+        }
     }
 }

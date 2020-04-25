@@ -185,7 +185,6 @@
     <Compile Include="Generated\MHW_Editor\Weapons\Wp11ParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Wp12Param.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Wp13Param.cs" />
-    <Compile Include="Generated\MHW_Editor\Weapons\Wp13ParamInternal.cs" />
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
