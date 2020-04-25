@@ -6079,12 +6079,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected ushort Unk293_raw;
+            protected short Unk293_raw;
             public const string Unk293_displayName = "Unk293";
             public const int Unk293_sortIndex = 350;
             [SortOrder(Unk293_sortIndex)]
             [DisplayName(Unk293_displayName)]
-            public virtual ushort Unk293 {
+            public virtual short Unk293 {
                 get => Unk293_raw;
                 set {
                     if (Unk293_raw == value) return;
@@ -6093,12 +6093,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected ushort Unk293_1_raw;
+            protected short Unk293_1_raw;
             public const string Unk293_1_displayName = "Unk293.1";
             public const int Unk293_1_sortIndex = 400;
             [SortOrder(Unk293_1_sortIndex)]
             [DisplayName(Unk293_1_displayName)]
-            public virtual ushort Unk293_1 {
+            public virtual short Unk293_1 {
                 get => Unk293_1_raw;
                 set {
                     if (Unk293_1_raw == value) return;
@@ -6191,12 +6191,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected ushort Unk300_raw;
+            protected short Unk300_raw;
             public const string Unk300_displayName = "Unk300";
             public const int Unk300_sortIndex = 750;
             [SortOrder(Unk300_sortIndex)]
             [DisplayName(Unk300_displayName)]
-            public virtual ushort Unk300 {
+            public virtual short Unk300 {
                 get => Unk300_raw;
                 set {
                     if (Unk300_raw == value) return;
@@ -6205,12 +6205,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected ushort Unk300_1_raw;
+            protected short Unk300_1_raw;
             public const string Unk300_1_displayName = "Unk300.1";
             public const int Unk300_1_sortIndex = 800;
             [SortOrder(Unk300_1_sortIndex)]
             [DisplayName(Unk300_1_displayName)]
-            public virtual ushort Unk300_1 {
+            public virtual short Unk300_1 {
                 get => Unk300_1_raw;
                 set {
                     if (Unk300_1_raw == value) return;
@@ -6275,12 +6275,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected ushort Unk305_raw;
+            protected short Unk305_raw;
             public const string Unk305_displayName = "Unk305";
             public const int Unk305_sortIndex = 1050;
             [SortOrder(Unk305_sortIndex)]
             [DisplayName(Unk305_displayName)]
-            public virtual ushort Unk305 {
+            public virtual short Unk305 {
                 get => Unk305_raw;
                 set {
                     if (Unk305_raw == value) return;
@@ -6289,12 +6289,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected ushort Unk306_raw;
+            protected short Unk306_raw;
             public const string Unk306_displayName = "Unk306";
             public const int Unk306_sortIndex = 1100;
             [SortOrder(Unk306_sortIndex)]
             [DisplayName(Unk306_displayName)]
-            public virtual ushort Unk306 {
+            public virtual short Unk306 {
                 get => Unk306_raw;
                 set {
                     if (Unk306_raw == value) return;
@@ -6303,12 +6303,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected ushort Unk307_raw;
+            protected short Unk307_raw;
             public const string Unk307_displayName = "Unk307";
             public const int Unk307_sortIndex = 1150;
             [SortOrder(Unk307_sortIndex)]
             [DisplayName(Unk307_displayName)]
-            public virtual ushort Unk307 {
+            public virtual short Unk307 {
                 get => Unk307_raw;
                 set {
                     if (Unk307_raw == value) return;
@@ -6317,12 +6317,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected ushort Unk307_1_raw;
+            protected short Unk307_1_raw;
             public const string Unk307_1_displayName = "Unk307.1";
             public const int Unk307_1_sortIndex = 1200;
             [SortOrder(Unk307_1_sortIndex)]
             [DisplayName(Unk307_1_displayName)]
-            public virtual ushort Unk307_1 {
+            public virtual short Unk307_1 {
                 get => Unk307_1_raw;
                 set {
                     if (Unk307_1_raw == value) return;
@@ -6745,24 +6745,24 @@ namespace MHW_Editor.Weapons {
                 data.Unk290_raw = reader.ReadUInt16();
                 data.Unk291_raw = reader.ReadUInt16();
                 data.Unk292_raw = reader.ReadUInt16();
-                data.Unk293_raw = reader.ReadUInt16();
-                data.Unk293_1_raw = reader.ReadUInt16();
+                data.Unk293_raw = reader.ReadInt16();
+                data.Unk293_1_raw = reader.ReadInt16();
                 data.Unk294_raw = reader.ReadUInt16();
                 data.Unk295_raw = reader.ReadUInt16();
                 data.Unk296_raw = reader.ReadUInt16();
                 data.Unk297_raw = reader.ReadUInt16();
                 data.Unk298_raw = reader.ReadUInt16();
                 data.Unk299_raw = reader.ReadUInt16();
-                data.Unk300_raw = reader.ReadUInt16();
-                data.Unk300_1_raw = reader.ReadUInt16();
+                data.Unk300_raw = reader.ReadInt16();
+                data.Unk300_1_raw = reader.ReadInt16();
                 data.Unk301_raw = reader.ReadUInt16();
                 data.Unk302_raw = reader.ReadUInt16();
                 data.Unk303_raw = reader.ReadUInt16();
                 data.Unk304_raw = reader.ReadUInt16();
-                data.Unk305_raw = reader.ReadUInt16();
-                data.Unk306_raw = reader.ReadUInt16();
-                data.Unk307_raw = reader.ReadUInt16();
-                data.Unk307_1_raw = reader.ReadUInt16();
+                data.Unk305_raw = reader.ReadInt16();
+                data.Unk306_raw = reader.ReadInt16();
+                data.Unk307_raw = reader.ReadInt16();
+                data.Unk307_1_raw = reader.ReadInt16();
                 data.Unk308_raw = reader.ReadUInt16();
                 data.Unk309_raw = reader.ReadUInt16();
                 data.Unk310_raw = reader.ReadUInt16();
