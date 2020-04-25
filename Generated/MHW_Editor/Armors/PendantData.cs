@@ -168,17 +168,17 @@ namespace MHW_Editor.Armors {
             }
         }
 
-        public const string Unk10_displayName = "Unk10";
-        public const int Unk10_sortIndex = 600;
-        [SortOrder(Unk10_sortIndex)]
-        [DisplayName(Unk10_displayName)]
-        public virtual int Unk10 {
+        public const string Story_Unlock_displayName = "Story Unlock";
+        public const int Story_Unlock_sortIndex = 600;
+        [SortOrder(Story_Unlock_sortIndex)]
+        [DisplayName(Story_Unlock_displayName)]
+        public virtual int Story_Unlock {
             get => GetData<int>(19);
             set {
                 if (GetData<int>(19) == value) return;
-                SetData(19, value, nameof(Unk10));
+                SetData(19, value, nameof(Story_Unlock));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk10));
+                OnPropertyChanged(nameof(Story_Unlock));
             }
         }
 

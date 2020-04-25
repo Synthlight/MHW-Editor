@@ -16,6 +16,6 @@ namespace MHW_Editor.Armors {
         public byte Unk8; // Offset: 13
         public byte Unk9; // Offset: 14
         public uint Cost; // Offset: 15
-        public int Unk10; // Offset: 19
+        public int Story_Unlock; // Offset: 19
     }
 }

@@ -22,7 +22,7 @@ namespace MHW_Generator.Armors {
                     new MhwStructData.Entry("Unk8", 13, typeof(byte)),
                     new MhwStructData.Entry("Unk9", 14, typeof(byte)),
                     new MhwStructData.Entry("Cost", 15, typeof(uint)),
-                    new MhwStructData.Entry("Unk10", 19, typeof(int))
+                    new MhwStructData.Entry("Story Unlock", 19, typeof(int))
                 }
             });
         }
