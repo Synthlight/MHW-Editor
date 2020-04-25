@@ -9,6 +9,7 @@ using MHW_Editor.Items;
 using MHW_Editor.Models;
 using MHW_Editor.Skills;
 using MHW_Editor.Weapons;
+using MHW_Template;
 using MHW_Template.Weapons;
 
 namespace MHW_Editor {

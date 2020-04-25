@@ -40,10 +40,95 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Armors\Armor.cs" />
+    <Compile Include="Armors\ASkill.cs" />
+    <Compile Include="Armors\OtomoArmorDat.cs" />
+    <Compile Include="Armors\PendantData.cs" />
+    <Compile Include="Gems\DecoGradeLottery.cs" />
+    <Compile Include="Gems\DecoLottery.cs" />
+    <Compile Include="Gems\Gem.cs" />
+    <Compile Include="Items\ArmUp.cs" />
+    <Compile Include="Items\BottleTable.cs" />
+    <Compile Include="Items\Bounty.cs" />
+    <Compile Include="Items\EqCrt_Base.cs" />
+    <Compile Include="Items\EqCus_Base.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="Items\ItemDelivery.cs" />
+    <Compile Include="Items\ItemList.cs" />
+    <Compile Include="Items\ItemLottery.cs" />
+    <Compile Include="Items\ItemMake.cs" />
+    <Compile Include="Items\KulveGradeLottery.cs" />
+    <Compile Include="Items\MelderExchange.cs" />
+    <Compile Include="Items\MelderItem.cs" />
+    <Compile Include="Items\PlantFertilizer.cs" />
+    <Compile Include="Items\PlantItem.cs" />
+    <Compile Include="Items\QuestReward.cs" />
+    <Compile Include="Items\RoomFurniture.cs" />
+    <Compile Include="Items\SafiItemGradeLottery.cs" />
+    <Compile Include="Items\KulveItemLottery.cs" />
+    <Compile Include="Items\SafiItemLottery.cs" />
+    <Compile Include="Items\ShopSed.cs" />
+    <Compile Include="Items\SteamRewardList.cs" />
+    <Compile Include="Items\SupplyData.cs" />
+    <Compile Include="Items\SwapC.cs" />
+    <Compile Include="Items\SwapEnemyRate.cs" />
+    <Compile Include="Items\SwapItem.cs" />
+    <Compile Include="Items\SwapN.cs" />
+    <Compile Include="Items\Treasure.cs" />
+    <Compile Include="Items\ValueTrader.cs" />
+    <Compile Include="Models\IMultiStruct.cs" />
+    <Compile Include="Models\IVerticalStruct.cs" />
+    <Compile Include="Models\ISingleStruct.cs" />
+    <Compile Include="Models\MultiStruct.cs" />
+    <Compile Include="Models\SingleStruct.cs" />
+    <Compile Include="Models\VerticalStruct.cs" />
+    <Compile Include="Monsters\AnimalSize.cs" />
+    <Compile Include="Monsters\EnemySort.cs" />
+    <Compile Include="Monsters\MonsterClawGrab.cs" />
+    <Compile Include="Monsters\MonsterDifficulty.cs" />
+    <Compile Include="Monsters\MonsterEnrage.cs" />
+    <Compile Include="Monsters\MonsterRandomSize.cs" />
+    <Compile Include="Monsters\MonsterStamina.cs" />
+    <Compile Include="Monsters\SmallMonsterSizeParams.cs" />
+    <Compile Include="PlData\PlItemParam.cs" />
+    <Compile Include="PlData\PlMantleParam.cs" />
+    <Compile Include="PlData\PlMusicSkillParam.cs" />
+    <Compile Include="PlData\PlPlayerParam.cs" />
+    <Compile Include="PlData\PlSkillParam.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Program.multi.wpParam.cs" />
-    <Compile Include="Program.multi.cs" />
-    <Compile Include="Program.pl.cs" />
+    <Compile Include="Skills\MusicSkill.cs" />
+    <Compile Include="Skills\SkillDat.cs" />
+    <Compile Include="Skills\SkillPointData.cs" />
+    <Compile Include="Weapons\AwakenedLimitBreakR.cs" />
+    <Compile Include="Weapons\AwakenedLimitBreak.cs" />
+    <Compile Include="Weapons\AwakenedExp.cs" />
+    <Compile Include="Weapons\AwakenedWpCustom.cs" />
+    <Compile Include="Weapons\AwakenedWpUpgrade.cs" />
+    <Compile Include="Weapons\CustomOuterWeapon.cs" />
+    <Compile Include="Weapons\CustomOuterRecipe.cs" />
+    <Compile Include="Weapons\CustomParts.cs" />
+    <Compile Include="Weapons\CustomPartsR.cs" />
+    <Compile Include="Weapons\GunnerReload.cs" />
+    <Compile Include="Weapons\GunnerShoot.cs" />
+    <Compile Include="Weapons\LimitBreakMaterialBase.cs" />
+    <Compile Include="Weapons\LimitBreakMaterialSkill.cs" />
+    <Compile Include="Weapons\Melee.cs" />
+    <Compile Include="Weapons\NewLimitBreak.cs" />
+    <Compile Include="Weapons\NewLimitBreakR.cs" />
+    <Compile Include="Weapons\OtomoWeaponDat.cs" />
+    <Compile Include="Weapons\Ranged.cs" />
+    <Compile Include="Weapons\RodInsect.cs" />
+    <Compile Include="Weapons\Sharpness.cs" />
+    <Compile Include="Weapons\ShellParam.cs" />
+    <Compile Include="Weapons\ShellTable.cs" />
+    <Compile Include="Weapons\WeaponGunLance.cs" />
+    <Compile Include="Weapons\WeaponSwitchAxe.cs" />
+    <Compile Include="Weapons\WeaponWhistle.cs" />
+    <Compile Include="Weapons\WeaponWSword.cs" />
+    <Compile Include="Weapons\Wp11Param.cs" />
+    <Compile Include="Weapons\Wp10Param.cs" />
+    <Compile Include="Weapons\Wp12Param.cs" />
+    <Compile Include="Weapons\Wp13Param.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MHW-Template\MHW-Template.csproj">
@@ -58,5 +143,6 @@
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

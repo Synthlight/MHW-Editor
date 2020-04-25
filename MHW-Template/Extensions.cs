@@ -19,6 +19,10 @@ namespace MHW_Template {
             }
         }
 
+        public static bool Is(this Type source, params Type[] types) {
+            return types.Any(type => type.IsAssignableFrom(source));
+        }
+
         public static T[] Subsequence<T>(this IEnumerable<T> arr, int startIndex, int length) {
             return arr.Skip(startIndex).Take(length).ToArray();
         }

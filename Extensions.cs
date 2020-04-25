@@ -20,10 +20,6 @@ namespace MHW_Editor {
             return list.FirstOrDefault(x => x.Header.ToString() == name);
         }
 
-        public static bool Is(this Type source, params Type[] types) {
-            return types.Any(type => type.IsAssignableFrom(source));
-        }
-
         public static bool IsGeneric(this Type source, Type genericType) {
             while (source != null && source != typeof(object)) {
                 var cur = source.IsGenericType ? source.GetGenericTypeDefinition() : source;

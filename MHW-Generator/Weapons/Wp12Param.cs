@@ -1,13 +1,10 @@
 ﻿using System.Collections.Generic;
+using MHW_Generator.Models;
 using MHW_Template;
 
-namespace MHW_Generator {
-    public static partial class Program {
-        private static void GenMultiWpParamStruct() {
-            GenWp12Param();
-        }
-
-        private static void GenWp12Param() { // .w12p
+namespace MHW_Generator.Weapons {
+    public class Wp12Param : IMultiStruct {
+        public MultiStruct Generate() { // .w12p
             var structs = new List<MhwMultiStructData.StructData> {
                 new MhwMultiStructData.StructData("W12p Params (1)", new List<MhwMultiStructData.StructData.Entry> {
                     new MhwMultiStructData.StructData.Entry("Weapon", typeof(char), true, typeof(string), arrayCount: 4),
@@ -389,7 +386,7 @@ namespace MHW_Generator {
                 }, 1, showVertically: true)
             };
 
-            GenerateMultiStructProps("MHW_Editor.Weapons", "Wp12Param", new MhwMultiStructData(structs, EncryptionKeys.FILE_EXT_KEY_LOOKUP[".w12p"]));
+            return new MultiStruct("MHW_Editor.Weapons", "Wp12Param", new MhwMultiStructData(structs, EncryptionKeys.FILE_EXT_KEY_LOOKUP[".w12p"]));
         }
     }
 }
