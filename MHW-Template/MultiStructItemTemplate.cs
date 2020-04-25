@@ -88,7 +88,8 @@ namespace ");
 
         foreach (var entry in @struct.entries) {
             var accessLevel = entry.accessLevel;
-            if (accessLevel != "private") accessLevel += " virtual";
+            if (entry.displayName == "Index") accessLevel += " override";
+            else if (accessLevel != "private") accessLevel += " virtual";
 
             var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
             if (entry.forceUnique) propName += $"_{sortIndex}";
@@ -107,6 +108,12 @@ namespace ");
                 returnString = compiler.GetTypeOutput(new CodeTypeReference(entry.enumReturn));
                 getCast = $"({returnString}) ";
                 setCast = $"({typeString}) ";
+            }
+
+            if (entry.displayName == "Index") {
+                getCast = "(ulong) ";
+                setCast = $"({returnString}) ";
+                returnString = "ulong";
             }
 
             // Main property.
@@ -270,7 +277,7 @@ namespace ");
         WriteLine($"            var {name}_list = new ObservableCollection<object>();");
         WriteLine($"            for (ulong i = 0; i < GetEntryCount(typeof({name})); i++) {{");
         WriteLine($"                var item = {name}.LoadData(reader);");
-        WriteLine("                item.index = i;");
+        WriteLine("                item.Index = i;");
         WriteLine($"                {name}_list.Add(item);");
         WriteLine("            }");
         WriteLine($"            var {name}_container = new MhwStructDataContainer({name}_list, typeof({name}));");

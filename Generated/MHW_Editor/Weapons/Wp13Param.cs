@@ -7059,7 +7059,7 @@ namespace MHW_Editor.Weapons {
             var W13p_Params_1__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(W13p_Params_1_)); i++) {
                 var item = W13p_Params_1_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 W13p_Params_1__list.Add(item);
             }
             var W13p_Params_1__container = new MhwStructDataContainer(W13p_Params_1__list, typeof(W13p_Params_1_));
@@ -7069,7 +7069,7 @@ namespace MHW_Editor.Weapons {
             var Unk_Struct_1_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Unk_Struct_1)); i++) {
                 var item = Unk_Struct_1.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Unk_Struct_1_list.Add(item);
             }
             var Unk_Struct_1_container = new MhwStructDataContainer(Unk_Struct_1_list, typeof(Unk_Struct_1));
@@ -7079,7 +7079,7 @@ namespace MHW_Editor.Weapons {
             var W13p_Params_2__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(W13p_Params_2_)); i++) {
                 var item = W13p_Params_2_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 W13p_Params_2__list.Add(item);
             }
             var W13p_Params_2__container = new MhwStructDataContainer(W13p_Params_2__list, typeof(W13p_Params_2_));
@@ -7089,7 +7089,7 @@ namespace MHW_Editor.Weapons {
             var Guard_Angles__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Guard_Angles_)); i++) {
                 var item = Guard_Angles_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Guard_Angles__list.Add(item);
             }
             var Guard_Angles__container = new MhwStructDataContainer(Guard_Angles__list, typeof(Guard_Angles_));
@@ -7099,7 +7099,7 @@ namespace MHW_Editor.Weapons {
             var W13p_Params_3__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(W13p_Params_3_)); i++) {
                 var item = W13p_Params_3_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 W13p_Params_3__list.Add(item);
             }
             var W13p_Params_3__container = new MhwStructDataContainer(W13p_Params_3__list, typeof(W13p_Params_3_));
@@ -7109,7 +7109,7 @@ namespace MHW_Editor.Weapons {
             var Unk_Struct_2_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Unk_Struct_2)); i++) {
                 var item = Unk_Struct_2.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Unk_Struct_2_list.Add(item);
             }
             var Unk_Struct_2_container = new MhwStructDataContainer(Unk_Struct_2_list, typeof(Unk_Struct_2));
@@ -7119,7 +7119,7 @@ namespace MHW_Editor.Weapons {
             var W13p_Params_4__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(W13p_Params_4_)); i++) {
                 var item = W13p_Params_4_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 W13p_Params_4__list.Add(item);
             }
             var W13p_Params_4__container = new MhwStructDataContainer(W13p_Params_4__list, typeof(W13p_Params_4_));
@@ -7129,7 +7129,7 @@ namespace MHW_Editor.Weapons {
             var Unk_Struct_3_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Unk_Struct_3)); i++) {
                 var item = Unk_Struct_3.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Unk_Struct_3_list.Add(item);
             }
             var Unk_Struct_3_container = new MhwStructDataContainer(Unk_Struct_3_list, typeof(Unk_Struct_3));
@@ -7139,7 +7139,7 @@ namespace MHW_Editor.Weapons {
             var Unk_Struct_4_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Unk_Struct_4)); i++) {
                 var item = Unk_Struct_4.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Unk_Struct_4_list.Add(item);
             }
             var Unk_Struct_4_container = new MhwStructDataContainer(Unk_Struct_4_list, typeof(Unk_Struct_4));
@@ -7149,7 +7149,7 @@ namespace MHW_Editor.Weapons {
             var W13p_Params_5__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(W13p_Params_5_)); i++) {
                 var item = W13p_Params_5_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 W13p_Params_5__list.Add(item);
             }
             var W13p_Params_5__container = new MhwStructDataContainer(W13p_Params_5__list, typeof(W13p_Params_5_));
@@ -7159,7 +7159,7 @@ namespace MHW_Editor.Weapons {
             var Number_of_Shield_Mods_Struct_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Number_of_Shield_Mods_Struct)); i++) {
                 var item = Number_of_Shield_Mods_Struct.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Number_of_Shield_Mods_Struct_list.Add(item);
             }
             var Number_of_Shield_Mods_Struct_container = new MhwStructDataContainer(Number_of_Shield_Mods_Struct_list, typeof(Number_of_Shield_Mods_Struct));
@@ -7169,7 +7169,7 @@ namespace MHW_Editor.Weapons {
             var Shield_Mods_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Shield_Mods)); i++) {
                 var item = Shield_Mods.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Shield_Mods_list.Add(item);
             }
             var Shield_Mods_container = new MhwStructDataContainer(Shield_Mods_list, typeof(Shield_Mods));
@@ -7179,7 +7179,7 @@ namespace MHW_Editor.Weapons {
             var W13p_Params_6__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(W13p_Params_6_)); i++) {
                 var item = W13p_Params_6_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 W13p_Params_6__list.Add(item);
             }
             var W13p_Params_6__container = new MhwStructDataContainer(W13p_Params_6__list, typeof(W13p_Params_6_));
@@ -7189,7 +7189,7 @@ namespace MHW_Editor.Weapons {
             var Unk_Struct_5_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Unk_Struct_5)); i++) {
                 var item = Unk_Struct_5.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Unk_Struct_5_list.Add(item);
             }
             var Unk_Struct_5_container = new MhwStructDataContainer(Unk_Struct_5_list, typeof(Unk_Struct_5));
@@ -7199,7 +7199,7 @@ namespace MHW_Editor.Weapons {
             var W13p_Params_7__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(W13p_Params_7_)); i++) {
                 var item = W13p_Params_7_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 W13p_Params_7__list.Add(item);
             }
             var W13p_Params_7__container = new MhwStructDataContainer(W13p_Params_7__list, typeof(W13p_Params_7_));
@@ -7209,7 +7209,7 @@ namespace MHW_Editor.Weapons {
             var Unk_Struct_6_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Unk_Struct_6)); i++) {
                 var item = Unk_Struct_6.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Unk_Struct_6_list.Add(item);
             }
             var Unk_Struct_6_container = new MhwStructDataContainer(Unk_Struct_6_list, typeof(Unk_Struct_6));

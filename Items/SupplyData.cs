@@ -5,7 +5,7 @@ namespace MHW_Editor.Items {
         public partial class Item_Box_Scaling {
             public string Name {
                 get {
-                    return index switch {
+                    return Index switch {
                         0 => "1 Player",
                         1 => "2 Players",
                         2 => "3/4 Players",
@@ -18,7 +18,7 @@ namespace MHW_Editor.Items {
         public partial class Ammo_Box_Scaling {
             public string Name {
                 get {
-                    return index switch {
+                    return Index switch {
                         0 => "1 Player",
                         1 => "2 Players",
                         2 => "3/4 Players",

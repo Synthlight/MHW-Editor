@@ -393,6 +393,10 @@ namespace MHW_Editor {
                 e.Column = cb;
             }
 
+            if (e.PropertyName == "Index") {
+                e.Column.IsReadOnly = true; // Do before normal readOnly checks.
+            }
+
             e.Column.CanUserSort = true;
 
             // Use [DisplayName] attribute for the column header text.
@@ -1246,6 +1250,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".skl_dat")) return typeof(SkillDat);
             if (fileName.EndsWith(".skl_pt_dat")) return typeof(SkillPointData);
             if (fileName.EndsWith(".shlp")) return typeof(ShellParam);
+            if (fileName.EndsWith(".slt")) return typeof(ShopList);
             if (fileName.EndsWith(".srl")) return typeof(SteamRewardList);
             if (fileName.EndsWith(".stmp")) return typeof(ItemDelivery);
             if (fileName.EndsWith(".supp")) return typeof(SupplyData);

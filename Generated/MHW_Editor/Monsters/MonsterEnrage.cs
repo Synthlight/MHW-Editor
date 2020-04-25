@@ -370,7 +370,7 @@ namespace MHW_Editor.Monsters {
             var Monster_Rage_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Monster_Rage)); i++) {
                 var item = Monster_Rage.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Monster_Rage_list.Add(item);
             }
             var Monster_Rage_container = new MhwStructDataContainer(Monster_Rage_list, typeof(Monster_Rage));
@@ -380,7 +380,7 @@ namespace MHW_Editor.Monsters {
             var Rage_Stats_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Rage_Stats)); i++) {
                 var item = Rage_Stats.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Rage_Stats_list.Add(item);
             }
             var Rage_Stats_container = new MhwStructDataContainer(Rage_Stats_list, typeof(Rage_Stats));

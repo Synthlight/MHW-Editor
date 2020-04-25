@@ -26,14 +26,14 @@ namespace MHW_Editor.Models {
 
         public void Add_Click(object sender, RoutedEventArgs e) {
             var instance = (MhwStructItem) Activator.CreateInstance(type);
-            instance.index = (ulong) list.Count;
+            instance.Index = (ulong) list.Count;
             list.Add(instance);
         }
 
         private void ResetIndexes() {
             for (var i = 0; i < list.Count; i++) {
                 var item = (MhwStructItem) list[i];
-                item.index = (ulong) i;
+                item.Index = (ulong) i;
                 item.OnPropertyChanged(nameof(MhwStructItem.Index));
             }
         }

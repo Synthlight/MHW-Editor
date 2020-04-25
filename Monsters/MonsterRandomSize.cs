@@ -23,7 +23,7 @@ namespace MHW_Editor.Monsters {
         public partial class Crown_Tables {
             public string Name {
                 get {
-                    return index switch {
+                    return Index switch {
                         0 => "Default Size Only",
                         1 => "A: Uncrowned Only",
                         2 => "A: Silver Crown Low",

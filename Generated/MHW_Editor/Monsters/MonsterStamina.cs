@@ -516,7 +516,7 @@ namespace MHW_Editor.Monsters {
             var Monster_Difficulty_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Monster_Difficulty)); i++) {
                 var item = Monster_Difficulty.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Monster_Difficulty_list.Add(item);
             }
             var Monster_Difficulty_container = new MhwStructDataContainer(Monster_Difficulty_list, typeof(Monster_Difficulty));
@@ -526,7 +526,7 @@ namespace MHW_Editor.Monsters {
             var Fatigue_LR__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Fatigue_LR_)); i++) {
                 var item = Fatigue_LR_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Fatigue_LR__list.Add(item);
             }
             var Fatigue_LR__container = new MhwStructDataContainer(Fatigue_LR__list, typeof(Fatigue_LR_));
@@ -536,7 +536,7 @@ namespace MHW_Editor.Monsters {
             var Stamina_Count_LR__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Stamina_Count_LR_)); i++) {
                 var item = Stamina_Count_LR_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Stamina_Count_LR__list.Add(item);
             }
             var Stamina_Count_LR__container = new MhwStructDataContainer(Stamina_Count_LR__list, typeof(Stamina_Count_LR_));
@@ -546,7 +546,7 @@ namespace MHW_Editor.Monsters {
             var Stamina_LR__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Stamina_LR_)); i++) {
                 var item = Stamina_LR_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Stamina_LR__list.Add(item);
             }
             var Stamina_LR__container = new MhwStructDataContainer(Stamina_LR__list, typeof(Stamina_LR_));
@@ -556,7 +556,7 @@ namespace MHW_Editor.Monsters {
             var Fatigue_HR__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Fatigue_HR_)); i++) {
                 var item = Fatigue_HR_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Fatigue_HR__list.Add(item);
             }
             var Fatigue_HR__container = new MhwStructDataContainer(Fatigue_HR__list, typeof(Fatigue_HR_));
@@ -566,7 +566,7 @@ namespace MHW_Editor.Monsters {
             var Stamina_Count_HR__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Stamina_Count_HR_)); i++) {
                 var item = Stamina_Count_HR_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Stamina_Count_HR__list.Add(item);
             }
             var Stamina_Count_HR__container = new MhwStructDataContainer(Stamina_Count_HR__list, typeof(Stamina_Count_HR_));
@@ -576,7 +576,7 @@ namespace MHW_Editor.Monsters {
             var Stamina_HR__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Stamina_HR_)); i++) {
                 var item = Stamina_HR_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Stamina_HR__list.Add(item);
             }
             var Stamina_HR__container = new MhwStructDataContainer(Stamina_HR__list, typeof(Stamina_HR_));
@@ -586,7 +586,7 @@ namespace MHW_Editor.Monsters {
             var Fatigue_MR__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Fatigue_MR_)); i++) {
                 var item = Fatigue_MR_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Fatigue_MR__list.Add(item);
             }
             var Fatigue_MR__container = new MhwStructDataContainer(Fatigue_MR__list, typeof(Fatigue_MR_));
@@ -596,7 +596,7 @@ namespace MHW_Editor.Monsters {
             var Stamina_Count_MR__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Stamina_Count_MR_)); i++) {
                 var item = Stamina_Count_MR_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Stamina_Count_MR__list.Add(item);
             }
             var Stamina_Count_MR__container = new MhwStructDataContainer(Stamina_Count_MR__list, typeof(Stamina_Count_MR_));
@@ -606,7 +606,7 @@ namespace MHW_Editor.Monsters {
             var Stamina_MR__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Stamina_MR_)); i++) {
                 var item = Stamina_MR_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Stamina_MR__list.Add(item);
             }
             var Stamina_MR__container = new MhwStructDataContainer(Stamina_MR__list, typeof(Stamina_MR_));

@@ -195,7 +195,7 @@ namespace MHW_Editor.Monsters {
             var Small_Monster_Size_Params_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Small_Monster_Size_Params)); i++) {
                 var item = Small_Monster_Size_Params.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Small_Monster_Size_Params_list.Add(item);
             }
             var Small_Monster_Size_Params_container = new MhwStructDataContainer(Small_Monster_Size_Params_list, typeof(Small_Monster_Size_Params));
@@ -205,7 +205,7 @@ namespace MHW_Editor.Monsters {
             var Size_Settings_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Size_Settings)); i++) {
                 var item = Size_Settings.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Size_Settings_list.Add(item);
             }
             var Size_Settings_container = new MhwStructDataContainer(Size_Settings_list, typeof(Size_Settings));

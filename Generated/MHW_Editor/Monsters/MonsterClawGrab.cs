@@ -439,7 +439,7 @@ namespace MHW_Editor.Monsters {
             var Monster_Claw_Grab_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Monster_Claw_Grab)); i++) {
                 var item = Monster_Claw_Grab.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Monster_Claw_Grab_list.Add(item);
             }
             var Monster_Claw_Grab_container = new MhwStructDataContainer(Monster_Claw_Grab_list, typeof(Monster_Claw_Grab));
@@ -449,7 +449,7 @@ namespace MHW_Editor.Monsters {
             var Clagger_Params_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Clagger_Params)); i++) {
                 var item = Clagger_Params.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Clagger_Params_list.Add(item);
             }
             var Clagger_Params_container = new MhwStructDataContainer(Clagger_Params_list, typeof(Clagger_Params));
@@ -459,7 +459,7 @@ namespace MHW_Editor.Monsters {
             var Claw_Chance_Params_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Claw_Chance_Params)); i++) {
                 var item = Claw_Chance_Params.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Claw_Chance_Params_list.Add(item);
             }
             var Claw_Chance_Params_container = new MhwStructDataContainer(Claw_Chance_Params_list, typeof(Claw_Chance_Params));

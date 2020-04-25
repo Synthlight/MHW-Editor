@@ -263,7 +263,7 @@ namespace MHW_Editor.Items {
             var Supply_Data_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Supply_Data)); i++) {
                 var item = Supply_Data.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Supply_Data_list.Add(item);
             }
             var Supply_Data_container = new MhwStructDataContainer(Supply_Data_list, typeof(Supply_Data));
@@ -273,7 +273,7 @@ namespace MHW_Editor.Items {
             var Item_Box_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Item_Box)); i++) {
                 var item = Item_Box.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Item_Box_list.Add(item);
             }
             var Item_Box_container = new MhwStructDataContainer(Item_Box_list, typeof(Item_Box));
@@ -283,7 +283,7 @@ namespace MHW_Editor.Items {
             var Item_Box_Scaling_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Item_Box_Scaling)); i++) {
                 var item = Item_Box_Scaling.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Item_Box_Scaling_list.Add(item);
             }
             var Item_Box_Scaling_container = new MhwStructDataContainer(Item_Box_Scaling_list, typeof(Item_Box_Scaling));
@@ -293,7 +293,7 @@ namespace MHW_Editor.Items {
             var Ammo_Box_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Ammo_Box)); i++) {
                 var item = Ammo_Box.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Ammo_Box_list.Add(item);
             }
             var Ammo_Box_container = new MhwStructDataContainer(Ammo_Box_list, typeof(Ammo_Box));
@@ -303,7 +303,7 @@ namespace MHW_Editor.Items {
             var Ammo_Box_Scaling_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Ammo_Box_Scaling)); i++) {
                 var item = Ammo_Box_Scaling.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Ammo_Box_Scaling_list.Add(item);
             }
             var Ammo_Box_Scaling_container = new MhwStructDataContainer(Ammo_Box_Scaling_list, typeof(Ammo_Box_Scaling));

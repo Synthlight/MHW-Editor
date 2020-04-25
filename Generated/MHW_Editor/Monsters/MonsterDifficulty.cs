@@ -514,7 +514,7 @@ namespace MHW_Editor.Monsters {
             var Monster_Difficulty_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Monster_Difficulty)); i++) {
                 var item = Monster_Difficulty.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Monster_Difficulty_list.Add(item);
             }
             var Monster_Difficulty_container = new MhwStructDataContainer(Monster_Difficulty_list, typeof(Monster_Difficulty));
@@ -524,7 +524,7 @@ namespace MHW_Editor.Monsters {
             var Solo_Stats_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Solo_Stats)); i++) {
                 var item = Solo_Stats.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Solo_Stats_list.Add(item);
             }
             var Solo_Stats_container = new MhwStructDataContainer(Solo_Stats_list, typeof(Solo_Stats));
@@ -534,7 +534,7 @@ namespace MHW_Editor.Monsters {
             var Multi_Stats_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Multi_Stats)); i++) {
                 var item = Multi_Stats.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Multi_Stats_list.Add(item);
             }
             var Multi_Stats_container = new MhwStructDataContainer(Multi_Stats_list, typeof(Multi_Stats));
@@ -544,7 +544,7 @@ namespace MHW_Editor.Monsters {
             var Unknown_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Unknown)); i++) {
                 var item = Unknown.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Unknown_list.Add(item);
             }
             var Unknown_container = new MhwStructDataContainer(Unknown_list, typeof(Unknown));

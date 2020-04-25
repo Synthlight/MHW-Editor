@@ -67,6 +67,7 @@
     <Compile Include="Items\SafiItemGradeLottery.cs" />
     <Compile Include="Items\KulveItemLottery.cs" />
     <Compile Include="Items\SafiItemLottery.cs" />
+    <Compile Include="Items\ShopList.cs" />
     <Compile Include="Items\ShopSed.cs" />
     <Compile Include="Items\SteamRewardList.cs" />
     <Compile Include="Items\SupplyData.cs" />

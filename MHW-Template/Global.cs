@@ -101,6 +101,7 @@ namespace MHW_Template {
             "*.skl_dat",
             "*.skl_pt_dat",
             "*.shlp",
+            "*.slt",
             "*.srl",
             "*.stmp",
             "*.supp",

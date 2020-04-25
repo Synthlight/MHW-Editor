@@ -5,7 +5,7 @@ namespace MHW_Editor.Monsters {
         public partial class Rage_Stats {
             public string Name {
                 get {
-                    return index switch {
+                    return Index switch {
                         0 => "LR/HR",
                         1 => "MR",
                         _ => "Unknown"

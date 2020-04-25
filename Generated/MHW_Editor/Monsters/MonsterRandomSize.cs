@@ -1457,7 +1457,7 @@ namespace MHW_Editor.Monsters {
             var Monster_Random_Sizes_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Monster_Random_Sizes)); i++) {
                 var item = Monster_Random_Sizes.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Monster_Random_Sizes_list.Add(item);
             }
             var Monster_Random_Sizes_container = new MhwStructDataContainer(Monster_Random_Sizes_list, typeof(Monster_Random_Sizes));
@@ -1467,7 +1467,7 @@ namespace MHW_Editor.Monsters {
             var Monsters_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Monsters)); i++) {
                 var item = Monsters.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Monsters_list.Add(item);
             }
             var Monsters_container = new MhwStructDataContainer(Monsters_list, typeof(Monsters));
@@ -1477,7 +1477,7 @@ namespace MHW_Editor.Monsters {
             var Crown_Table_Count_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Crown_Table_Count)); i++) {
                 var item = Crown_Table_Count.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Crown_Table_Count_list.Add(item);
             }
             var Crown_Table_Count_container = new MhwStructDataContainer(Crown_Table_Count_list, typeof(Crown_Table_Count));
@@ -1487,7 +1487,7 @@ namespace MHW_Editor.Monsters {
             var Crown_Tables_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Crown_Tables)); i++) {
                 var item = Crown_Tables.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Crown_Tables_list.Add(item);
             }
             var Crown_Tables_container = new MhwStructDataContainer(Crown_Tables_list, typeof(Crown_Tables));

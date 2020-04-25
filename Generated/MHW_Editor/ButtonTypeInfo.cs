@@ -12,6 +12,7 @@ namespace MHW_Editor {
             "BowGun",
             "CustomOuterRecipe",
             "CustomPartsR",
+            "Entries",
             "EqCrt_Armor",
             "EqCrt_Base",
             "EqCrt_Charm",

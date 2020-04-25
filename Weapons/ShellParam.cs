@@ -23,7 +23,7 @@ namespace MHW_Editor.Weapons {
         public partial class Assets {
             public string Name {
                 get {
-                    return index switch {
+                    return Index switch {
                         0 => "Model",
                         1 => "Effect",
                         2 => "Muzzle Effect",

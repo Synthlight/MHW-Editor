@@ -3,7 +3,8 @@ using System.IO;
 
 namespace MHW_Editor.Models {
     public interface IMhwStructItem : INotifyPropertyChanged, IOnPropertyChanged {
-        ulong Index { get; }
+        [IsReadOnly]
+        ulong Index { get; set; }
 
         void WriteData(BinaryWriter writer);
     }

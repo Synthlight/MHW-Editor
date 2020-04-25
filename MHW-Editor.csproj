@@ -134,6 +134,7 @@
     <Compile Include="Generated\MHW_Editor\Items\RoomFurniture.cs" />
     <Compile Include="Generated\MHW_Editor\Items\SafiItemGradeLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\SafiItemLottery.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\ShopList.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ShopSed.cs" />
     <Compile Include="Generated\MHW_Editor\Items\SteamRewardList.cs" />
     <Compile Include="Generated\MHW_Editor\Items\SupplyData.cs" />
@@ -202,6 +203,7 @@
     <Compile Include="Items\SupplyData.cs" />
     <Compile Include="Items\SafiItemLottery.cs" />
     <Compile Include="Items\RoomFurniture.cs" />
+    <Compile Include="Items\ShopList.cs" />
     <Compile Include="Models\CustomSaveLoad.cs" />
     <Compile Include="Models\ICustomSaveLoad.cs" />
     <Compile Include="Models\IHasEquipmentType.cs" />

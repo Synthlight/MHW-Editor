@@ -2726,7 +2726,7 @@ namespace MHW_Editor.Weapons {
             var Shlp_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Shlp)); i++) {
                 var item = Shlp.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Shlp_list.Add(item);
             }
             var Shlp_container = new MhwStructDataContainer(Shlp_list, typeof(Shlp));
@@ -2736,7 +2736,7 @@ namespace MHW_Editor.Weapons {
             var Assets_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Assets)); i++) {
                 var item = Assets.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Assets_list.Add(item);
             }
             var Assets_container = new MhwStructDataContainer(Assets_list, typeof(Assets));
@@ -2746,7 +2746,7 @@ namespace MHW_Editor.Weapons {
             var Shlp_1__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Shlp_1_)); i++) {
                 var item = Shlp_1_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Shlp_1__list.Add(item);
             }
             var Shlp_1__container = new MhwStructDataContainer(Shlp_1__list, typeof(Shlp_1_));
@@ -2756,7 +2756,7 @@ namespace MHW_Editor.Weapons {
             var Number_of_Linked_Shell_Params_Holder_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Number_of_Linked_Shell_Params_Holder)); i++) {
                 var item = Number_of_Linked_Shell_Params_Holder.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Number_of_Linked_Shell_Params_Holder_list.Add(item);
             }
             var Number_of_Linked_Shell_Params_Holder_container = new MhwStructDataContainer(Number_of_Linked_Shell_Params_Holder_list, typeof(Number_of_Linked_Shell_Params_Holder));
@@ -2766,7 +2766,7 @@ namespace MHW_Editor.Weapons {
             var Linked_Shell_Params_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Linked_Shell_Params)); i++) {
                 var item = Linked_Shell_Params.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Linked_Shell_Params_list.Add(item);
             }
             var Linked_Shell_Params_container = new MhwStructDataContainer(Linked_Shell_Params_list, typeof(Linked_Shell_Params));
@@ -2776,7 +2776,7 @@ namespace MHW_Editor.Weapons {
             var Shlp_2__list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Shlp_2_)); i++) {
                 var item = Shlp_2_.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Shlp_2__list.Add(item);
             }
             var Shlp_2__container = new MhwStructDataContainer(Shlp_2__list, typeof(Shlp_2_));
@@ -2786,7 +2786,7 @@ namespace MHW_Editor.Weapons {
             var Number_of_Modifiers_Holder_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Number_of_Modifiers_Holder)); i++) {
                 var item = Number_of_Modifiers_Holder.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Number_of_Modifiers_Holder_list.Add(item);
             }
             var Number_of_Modifiers_Holder_container = new MhwStructDataContainer(Number_of_Modifiers_Holder_list, typeof(Number_of_Modifiers_Holder));
@@ -2796,7 +2796,7 @@ namespace MHW_Editor.Weapons {
             var Modifiers_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Modifiers)); i++) {
                 var item = Modifiers.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Modifiers_list.Add(item);
             }
             var Modifiers_container = new MhwStructDataContainer(Modifiers_list, typeof(Modifiers));
@@ -2806,7 +2806,7 @@ namespace MHW_Editor.Weapons {
             var Unknown_list = new ObservableCollection<object>();
             for (ulong i = 0; i < GetEntryCount(typeof(Unknown)); i++) {
                 var item = Unknown.LoadData(reader);
-                item.index = i;
+                item.Index = i;
                 Unknown_list.Add(item);
             }
             var Unknown_container = new MhwStructDataContainer(Unknown_list, typeof(Unknown));
