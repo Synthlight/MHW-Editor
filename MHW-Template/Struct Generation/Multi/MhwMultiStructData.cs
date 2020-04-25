@@ -41,61 +41,61 @@ namespace MHW_Template.Struct_Generation.Multi {
             }
 
             public string SafeName() => Regex.Replace(name, @"[^\w\d]+", "_");
+        }
 
-            public class Entry {
-                public readonly string name;
-                public readonly Type type;
-                public readonly Type enumReturn;
-                public readonly bool readOnly;
-                public readonly string valueString; // Used mostly for clamping the value.
-                public readonly string accessLevel;
-                public readonly DataSourceType? dataSourceType;
-                public readonly string[] extraOnPropertyChanged;
-                public readonly string dataSourceCustomSorter;
-                public readonly bool forceUnique; // Force the generated field to be unique. (Adds offset to end of field name.) Skipped in the struct generation.
-                public readonly bool createPercentField = false;
-                public readonly int arrayCount; // If the type is an array, set the count;
-                public readonly bool isNullTerminatedString;
-                public readonly string condition; // Condition to read/write.
+        public class Entry {
+            public readonly string name;
+            public readonly Type type;
+            public readonly Type enumReturn;
+            public readonly bool readOnly;
+            public readonly string valueString; // Used mostly for clamping the value.
+            public readonly string accessLevel;
+            public readonly DataSourceType? dataSourceType;
+            public readonly string[] extraOnPropertyChanged;
+            public readonly string dataSourceCustomSorter;
+            public readonly bool forceUnique; // Force the generated field to be unique. (Adds offset to end of field name.) Skipped in the struct generation.
+            public readonly bool createPercentField = false;
+            public readonly int arrayCount; // If the type is an array, set the count;
+            public readonly bool isNullTerminatedString;
+            public readonly string condition; // Condition to read/write.
 
-                public Entry(string name, Type type,
-                             bool readOnly = false,
-                             Type enumReturn = null,
-                             string valueString = "value",
-                             string accessLevel = "public",
-                             DataSourceType? dataSourceType = null,
-                             string[] extraOnPropertyChanged = null,
-                             string dataSourceCustomSorter = "ButtonSorter",
-                             bool forceUnique = false,
-                             bool createPercentField = false,
-                             int arrayCount = -1,
-                             bool isNullTerminatedString = false,
-                             string condition = null) {
-                    this.name = name;
-                    this.type = type;
-                    this.readOnly = readOnly;
-                    this.valueString = valueString;
-                    this.accessLevel = accessLevel;
-                    this.enumReturn = enumReturn;
-                    this.dataSourceType = dataSourceType;
-                    this.extraOnPropertyChanged = extraOnPropertyChanged;
-                    this.dataSourceCustomSorter = dataSourceCustomSorter;
-                    this.forceUnique = forceUnique;
-                    this.createPercentField = createPercentField;
-                    this.arrayCount = arrayCount;
-                    this.isNullTerminatedString = isNullTerminatedString;
-                    this.condition = condition;
-                }
-
-                public string SafeName() => Regex.Replace(name, @"[^\w\d]+", "_");
+            public Entry(string name, Type type,
+                         bool readOnly = false,
+                         Type enumReturn = null,
+                         string valueString = "value",
+                         string accessLevel = "public",
+                         DataSourceType? dataSourceType = null,
+                         string[] extraOnPropertyChanged = null,
+                         string dataSourceCustomSorter = "ButtonSorter",
+                         bool forceUnique = false,
+                         bool createPercentField = false,
+                         int arrayCount = -1,
+                         bool isNullTerminatedString = false,
+                         string condition = null) {
+                this.name = name;
+                this.type = type;
+                this.readOnly = readOnly;
+                this.valueString = valueString;
+                this.accessLevel = accessLevel;
+                this.enumReturn = enumReturn;
+                this.dataSourceType = dataSourceType;
+                this.extraOnPropertyChanged = extraOnPropertyChanged;
+                this.dataSourceCustomSorter = dataSourceCustomSorter;
+                this.forceUnique = forceUnique;
+                this.createPercentField = createPercentField;
+                this.arrayCount = arrayCount;
+                this.isNullTerminatedString = isNullTerminatedString;
+                this.condition = condition;
             }
+
+            public string SafeName() => Regex.Replace(name, @"[^\w\d]+", "_");
         }
 
         public class ArrayLink {
             public readonly StructData @struct;
-            public readonly StructData.Entry entry;
+            public readonly Entry entry;
 
-            public ArrayLink(StructData @struct, StructData.Entry entry) {
+            public ArrayLink(StructData @struct, Entry entry) {
                 this.@struct = @struct;
                 this.entry = entry;
             }

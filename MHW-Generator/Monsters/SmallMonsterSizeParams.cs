@@ -6,19 +6,19 @@ namespace MHW_Generator.Monsters {
     public class SmallMonsterSizeParams : IMultiStruct {
         public MultiStruct Generate() { // .em_ss
             var structs = new List<MhwMultiStructData.StructData> {
-                new MhwMultiStructData.StructData("Small Monster Size Params", new List<MhwMultiStructData.StructData.Entry> {
-                    new MhwMultiStructData.StructData.Entry("Magic 1", typeof(uint), true),
-                    new MhwMultiStructData.StructData.Entry("Magic 2", typeof(uint), true),
-                    new MhwMultiStructData.StructData.Entry("Magic 3", typeof(uint), true),
-                    new MhwMultiStructData.StructData.Entry("Number of Size Settings", typeof(uint), true).@out(out var count)
+                new MhwMultiStructData.StructData("Small Monster Size Params", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Magic 2", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Magic 3", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Number of Size Settings", typeof(uint), true).@out(out var count)
                 }, 1).@out(out var header),
 
-                new MhwMultiStructData.StructData("Size Settings", new List<MhwMultiStructData.StructData.Entry> {
-                    new MhwMultiStructData.StructData.Entry("Header", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry("Min Size", typeof(float)),
-                    new MhwMultiStructData.StructData.Entry("Max Size", typeof(float)),
-                    new MhwMultiStructData.StructData.Entry("Unk (f32)", typeof(float)),
-                    new MhwMultiStructData.StructData.Entry("Monster Id", typeof(uint))
+                new MhwMultiStructData.StructData("Size Settings", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Header", typeof(uint)),
+                    new MhwMultiStructData.Entry("Min Size", typeof(float)),
+                    new MhwMultiStructData.Entry("Max Size", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk (f32)", typeof(float)),
+                    new MhwMultiStructData.Entry("Monster Id", typeof(uint))
                 }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, count))
             };
 

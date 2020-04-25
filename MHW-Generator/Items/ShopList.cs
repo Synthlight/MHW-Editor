@@ -7,17 +7,17 @@ namespace MHW_Generator.Items {
     public class ShopList : IMultiStruct {
         public MultiStruct Generate() { // .slt
             var structs = new List<MhwMultiStructData.StructData> {
-                new MhwMultiStructData.StructData("Shop List", new List<MhwMultiStructData.StructData.Entry> {
-                    new MhwMultiStructData.StructData.Entry("Magic 1", typeof(uint), true),
-                    new MhwMultiStructData.StructData.Entry("Magic 2", typeof(ushort), true),
-                    new MhwMultiStructData.StructData.Entry("Item Count", typeof(uint), true).@out(out var itemCount)
+                new MhwMultiStructData.StructData("Shop List", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Magic 2", typeof(ushort), true),
+                    new MhwMultiStructData.Entry("Item Count", typeof(uint), true).@out(out var itemCount)
                 }, 1).@out(out var header),
 
-                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.StructData.Entry> {
-                    new MhwMultiStructData.StructData.Entry("Index", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry("Item Id", typeof(uint), dataSourceType: DataSourceType.Items),
-                    new MhwMultiStructData.StructData.Entry("Story Unlock", typeof(uint)),
-                    new MhwMultiStructData.StructData.Entry("Unk", typeof(ushort))
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Index", typeof(uint)),
+                    new MhwMultiStructData.Entry("Item Id", typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwMultiStructData.Entry("Story Unlock", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk", typeof(ushort))
                 }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
