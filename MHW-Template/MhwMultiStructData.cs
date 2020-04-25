@@ -13,7 +13,7 @@ namespace MHW_Template {
         }
 
         public class StructData {
-            public readonly string name;
+            public string name;
             public readonly List<Entry> entries;
             public readonly uint fixedSizeCount; // If we know the number of times the struct repeats. Anything > 0 is handled automatically. If 0 you have to implement the GetCount method.
             public readonly bool hidden;
