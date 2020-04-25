@@ -1,4 +1,4 @@
-﻿using MHW_Template;
+﻿using MHW_Template.Struct_Generation.Multi;
 
 namespace MHW_Generator.Models {
     public class MultiStruct {

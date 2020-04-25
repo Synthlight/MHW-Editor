@@ -5,6 +5,9 @@ using System.Linq;
 using System.Reflection;
 using MHW_Generator.Models;
 using MHW_Template;
+using MHW_Template.Struct_Generation.Multi;
+using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation.Vertical;
 
 namespace MHW_Generator {
     public static class Program {
@@ -33,7 +36,7 @@ namespace MHW_Generator {
         }
 
         public static void GenerateSingleStructProps(string @namespace, string className, MhwStructData structData) {
-            WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new ItemTemplate {
+            WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new SingleStructTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
@@ -53,7 +56,7 @@ namespace MHW_Generator {
         public static void GenerateVerticalStructProps(string @namespace, string className, MhwStructData structData) {
             GenerateSingleStructProps(@namespace, className, structData);
 
-            WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, $"{className}Internal", new PlDataItemTemplate {
+            WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, $"{className}Internal", new VerticalStructTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
@@ -61,7 +64,7 @@ namespace MHW_Generator {
                 }
             });
 
-            WriteResult($"{Global.HEX_010_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, $"{className}", new Hex010Template {
+            WriteResult($"{Global.HEX_010_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, $"{className}", new _010Template {
                 Session = new Dictionary<string, object> {
                     {"structData", structData}
                 }
@@ -78,7 +81,7 @@ namespace MHW_Generator {
             });
 
             // TODO: Need to do something to replace "GetEntryCount".
-            //WriteResult($"{Global.HEX_010_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new HexMultiStruct010Template {
+            //WriteResult($"{Global.HEX_010_OUTPUT_ROOT}\\{@namespace.Replace(".", "\\")}", @namespace, className, new MultiStruct010Template {
             //    Session = new Dictionary<string, object> {
             //        {"_namespace", @namespace},
             //        {"className", className},

@@ -7,22 +7,20 @@
 //     the code is regenerated.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace MHW_Template
+namespace MHW_Template.Struct_Generation.Multi
 {
     using Microsoft.CSharp;
     using System.CodeDom;
     using System.Text.RegularExpressions;
-    using MHW_Template;
-    using MHW_Template.Models;
     using System;
     
     /// <summary>
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+    #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
-    public partial class MultiStructItemTemplate : MultiStructItemTemplateBase
+    public partial class MultiStruct010Template : MultiStruct010TemplateBase
     {
 #line hidden
         /// <summary>
@@ -30,41 +28,10 @@ namespace MHW_Template
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write(@"using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.IO;
-using System.Reflection;
-using MHW_Editor.Assets;
-using MHW_Editor.Models;
-using MHW_Template;
-using MHW_Template.Models;
-
-namespace ");
+            this.Write("//------------------------------------------------\r\n//--- 010 Editor v10.0 Binary" +
+                    " Template\r\n//------------------------------------------------\r\n");
             
-            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
-            
-            #line default
-            #line hidden
-            this.Write(" {\r\n    public partial class ");
-            
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(className));
-            
-            #line default
-            #line hidden
-            this.Write(" {\r\n        public override string EncryptionKey => ");
-            
-            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\""));
-            
-            #line default
-            #line hidden
-            this.Write(";\r\n");
-            
-            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+            #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
 
     var compiler = new CSharpCodeProvider();
 
@@ -73,231 +40,49 @@ namespace ");
         var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
 
         WriteLine("");
-        //WriteLine("        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode, Pack = 1)]");
-        WriteLine($"        public partial class {name} : MhwStructItem{(@struct.showVertically ? ", IHasCustomView<MultiStructItemCustomView>" : "")} {{");
-        WriteLine($"            public const ulong FixedSizeCount = {@struct.fixedSizeCount};");
-        WriteLine($"            public const string GridName = \"{@struct.name}\";");
-
-        if (@struct.hidden) {
-            WriteLine($"            public const bool IsHidden = {@struct.hidden.ToString().ToLower()};");
-        }
-
-        if (@struct.canAddRows) {
-            WriteLine($"            public const bool IsAddingAllowed = {@struct.canAddRows.ToString().ToLower()};");
-        }
+        WriteLine("typedef struct {");
 
         foreach (var entry in @struct.entries) {
-            var accessLevel = entry.accessLevel;
-            if (entry.displayName == "Index") accessLevel += " override";
-            else if (accessLevel != "private") accessLevel += " virtual";
-
             var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
             if (entry.forceUnique) propName += $"_{sortIndex}";
-            var entryName = $"{propName}_raw";
 
             var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
-            if (entry.arrayCount > -1) typeString += "[]";
+            if (typeString == "byte") typeString = "ubyte";
+            if (typeString == "sbyte") typeString = "byte";
+            if (entry.arrayCount > -1) typeString += $"[{entry.arrayCount}]";
 
-            string returnString;
-            var setCast = "";
-            var getCast = "";
-
-            if (entry.enumReturn == null) {
-                returnString = typeString;
+            if (entry.condition != null) {
+                var condition = $"{entry.condition} ".Replace("|ref|", "data.").Replace("_raw", "");
+                WriteLine($"    {condition} {{ {typeString} {propName}; }}");
             } else {
-                returnString = compiler.GetTypeOutput(new CodeTypeReference(entry.enumReturn));
-                getCast = $"({returnString}) ";
-                setCast = $"({typeString}) ";
-            }
-
-            if (entry.displayName == "Index") {
-                getCast = "(ulong) ";
-                setCast = $"({returnString}) ";
-                returnString = "ulong";
-            }
-
-            // Main property.
-            WriteLine("");
-            WriteLine($"            protected {typeString} {entryName};");
-            WriteLine($"            public const string {propName}_displayName = \"{entry.displayName}\";");
-            WriteLine($"            public const int {propName}_sortIndex = {sortIndex};");
-            WriteLine($"            [SortOrder({propName}_sortIndex)]");
-            WriteLine($"            [DisplayName({propName}_displayName)]");
-
-            if (entry.dataSourceType != null) {
-                WriteLine($"            [DataSource(DataSourceType.{entry.dataSourceType})]");
-            }
-
-            if (entry.readOnly) {
-                WriteLine("            [IsReadOnly]");
-            }
-
-            WriteLine($"            {accessLevel} {returnString} {propName} {{");
-
-            if (returnString == "bool") {
-                WriteLine($"                get => {getCast}Convert.ToBoolean({entryName});");
-            } else if (typeString == "char[]") {
-                WriteLine($"                get => {getCast}new string({entryName});");
-            } else {
-                WriteLine($"                get => {getCast}{entryName};");
-            }
-
-            // Always include a setter, even for readOnly. This enables us to bypass readOnly via command line switch.
-            WriteLine("                set {");
-
-            if (returnString == "bool") {
-                WriteLine($"                    if (Convert.ToBoolean({entryName}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
-                WriteLine($"                    {entryName} = Convert.ToByte({entry.valueString});");
-            } else if (typeString == "char[]") {
-                WriteLine($"                    if ({getCast}new string({entryName}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
-                WriteLine($"                    {entryName} = {setCast}{entry.valueString}.ToCharArray(0, {entry.arrayCount - 1});");
-            } else {
-                WriteLine($"                    if ({getCast}{entryName} == {entry.valueString}) return;"); // Do nothing if the value is the same.
-                WriteLine($"                    {entryName} = {setCast}{entry.valueString};");
-            }
-
-            WriteLine($"                    OnPropertyChanged(nameof({propName}));");
-
-            if (entry.dataSourceType != null) {
-                WriteLine($"                    OnPropertyChanged(nameof({propName}_button));");
-            }
-
-            if (entry.extraOnPropertyChanged != null) {
-                foreach (var propertyToChange in entry.extraOnPropertyChanged) {
-                    var propertyToChangeName = Regex.Replace(propertyToChange, @"[^\w\d]+", "_");
-
-                    WriteLine($"                    OnPropertyChanged(nameof({propertyToChangeName}));");
-                }
-            }
-
-            WriteLine("                }");
-            WriteLine("            }");
-
-            if (entry.dataSourceType != null) {
-                var dataSourceLookup = GenerationHelper.GetDataSourceType(entry.dataSourceType ?? throw new Exception());
-
-                WriteLine("");
-                WriteLine($"            [SortOrder({propName}_sortIndex)]");
-                WriteLine($"            [DisplayName({propName}_displayName)]");
-                WriteLine($"            [CustomSorter(typeof({entry.dataSourceCustomSorter}))]");
-                WriteLine($"            public string {propName}_button => {dataSourceLookup}.TryGet({propName}).ToStringWithId({propName});");
-            }
-
-            if (entry.createPercentField) {
-                WriteLine("");
-                WriteLine($"            private float _{propName}Percent;");
-                WriteLine($"            [SortOrder({propName}_sortIndex + 1)]");
-                WriteLine($"            [DisplayName({propName}_displayName + \"%\")]");
-                WriteLine($"            public float {propName}_percent {{");
-                WriteLine($"                get => _{propName}Percent;");
-                WriteLine("                set {");
-                WriteLine($"                    _{propName}Percent = value.Clamp(0f, 100f);");
-                WriteLine($"                    OnPropertyChanged(nameof({propName}_percent));");
-                WriteLine("                }");
-                WriteLine("            }");
+                WriteLine($"    {typeString} {propName};");
             }
 
             sortIndex += 50;
         }
 
-        // Individual LoadData.
-        WriteLine("");
-        WriteLine($"            public static {name} LoadData(BinaryReader reader) {{");
-        WriteLine($"                var data = new {name}();");
-        foreach (var entry in @struct.entries) {
-            var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
-            if (entry.forceUnique) propName += $"_{sortIndex}";
-            var entryName = $"{propName}_raw";
-
-            var condition = "";
-            if (entry.condition != null) {
-                condition = $"{entry.condition} ".Replace("|ref|", "data.");
-            }
-
-            if (entry.arrayCount > -1) {
-                WriteLine($"                {condition}data.{entryName} = reader.Read{GetReadType(entry.type)}s({entry.arrayCount});");
-            } else if (entry.isNullTerminatedString) {
-                WriteLine($"                {condition}data.{entryName} = reader.ReadNullTermString();");
-            } else {
-                WriteLine($"                {condition}data.{entryName} = reader.Read{GetReadType(entry.type)}();");
-            }
-        }
-        WriteLine("                return data;");
-        WriteLine("            }");
-
-        // Individual WriteData.
-        WriteLine("");
-        WriteLine("            public override void WriteData(BinaryWriter writer) {");
-        foreach (var entry in @struct.entries) {
-            var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
-            if (entry.forceUnique) propName += $"_{sortIndex}";
-            var entryName = $"{propName}_raw";
-
-            var condition = "";
-            if (entry.condition != null) {
-                condition = $"{entry.condition} ".Replace("|ref|", "");
-            }
-
-            if (entry.type == typeof(string)) {
-                WriteLine($"                {condition}writer.Write({entryName}.ToNullTermCharArray());");
-            } else {
-                WriteLine($"                {condition}writer.Write({entryName});");
-            }
-        }
-        WriteLine("            }");
-
-        // GetCustomView (if needed).
-        if (@struct.showVertically) {
-            WriteLine("");
-            WriteLine("            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {");
-            WriteLine("                return new ObservableCollection<MultiStructItemCustomView> {");
-            foreach (var entry in @struct.entries) {
-                var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
-                if (entry.forceUnique) propName += $"_{sortIndex}";
-
-                WriteLine($"                    new MultiStructItemCustomView(this, \"{entry.displayName}\", \"{propName}\"),");
-            }
-            WriteLine("                };");
-            WriteLine("            }");
-        }
-
-        WriteLine("        }"); // Inner Class
+        WriteLine($"}} {name};");
     }
 
-    // Master LoadData.
     WriteLine("");
-    WriteLine("        public override void LoadFile(string targetFile) {");
-    WriteLine("            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));");
-    WriteLine("            data = new List<MhwStructDataContainer>();");
-    WriteLine("            dataByType = new Dictionary<Type, MhwStructDataContainer>();");
+
     foreach (var @struct in structData.structs) {
         var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
 
-        WriteLine("");
-        WriteLine($"            var {name}_list = new ObservableCollection<object>();");
-        WriteLine($"            for (ulong i = 0; i < GetEntryCount(typeof({name})); i++) {{");
-        WriteLine($"                var item = {name}.LoadData(reader);");
-        WriteLine("                item.Index = i;");
-        WriteLine($"                {name}_list.Add(item);");
-        WriteLine("            }");
-        WriteLine($"            var {name}_container = new MhwStructDataContainer({name}_list, typeof({name}));");
-        WriteLine($"            data.Add({name}_container);");
-        WriteLine($"            dataByType[typeof({name})] = {name}_container;");
-    }
-    WriteLine("        }");
-
-    string GetReadType(Type type) {
-        return Type.GetTypeCode(type).ToString();
+        if (@struct.fixedSizeCount > 1) {
+            WriteLine($"{name}[{@struct.fixedSizeCount}] {name}_;");
+        } else {
+            WriteLine($"{name} {name}_;");
+        }
     }
 
             
             #line default
             #line hidden
-            this.Write("    }\r\n}");
             return this.GenerationEnvironment.ToString();
         }
         
-        #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\MultiStructItemTemplate.tt"
+        #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
 
 private string @__namespaceField;
 
@@ -325,12 +110,12 @@ private string className
     }
 }
 
-private global::MHW_Template.MhwMultiStructData _structDataField;
+private global::MHW_Template.Struct_Generation.Multi.MhwMultiStructData _structDataField;
 
 /// <summary>
 /// Access the structData parameter of the template.
 /// </summary>
-private global::MHW_Template.MhwMultiStructData structData
+private global::MHW_Template.Struct_Generation.Multi.MhwMultiStructData structData
 {
     get
     {
@@ -377,7 +162,7 @@ if ((classNameValueAcquired == false))
 bool structDataValueAcquired = false;
 if (this.Session.ContainsKey("structData"))
 {
-    this._structDataField = ((global::MHW_Template.MhwMultiStructData)(this.Session["structData"]));
+    this._structDataField = ((global::MHW_Template.Struct_Generation.Multi.MhwMultiStructData)(this.Session["structData"]));
     structDataValueAcquired = true;
 }
 if ((structDataValueAcquired == false))
@@ -385,7 +170,7 @@ if ((structDataValueAcquired == false))
     object data = global::System.Runtime.Remoting.Messaging.CallContext.LogicalGetData("structData");
     if ((data != null))
     {
-        this._structDataField = ((global::MHW_Template.MhwMultiStructData)(data));
+        this._structDataField = ((global::MHW_Template.Struct_Generation.Multi.MhwMultiStructData)(data));
     }
 }
 
@@ -406,7 +191,7 @@ if ((structDataValueAcquired == false))
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
-    public class MultiStructItemTemplateBase
+    public class MultiStruct010TemplateBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

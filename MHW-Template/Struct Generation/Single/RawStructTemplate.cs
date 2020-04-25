@@ -7,7 +7,7 @@
 //     the code is regenerated.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace MHW_Template
+namespace MHW_Template.Struct_Generation.Single
 {
     using Microsoft.CSharp;
     using System.CodeDom;
@@ -20,9 +20,9 @@ namespace MHW_Template
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Hex010Template.tt"
+    #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\RawStructTemplate.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
-    public partial class Hex010Template : Hex010TemplateBase
+    public partial class RawStructTemplate : RawStructTemplateBase
     {
 #line hidden
         /// <summary>
@@ -30,10 +30,44 @@ namespace MHW_Template
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("//------------------------------------------------\r\n//--- 010 Editor v10.0 Binary" +
-                    " Template\r\n//------------------------------------------------\r\n\r\n");
+            this.Write("using MHW_Template;\r\n\r\nnamespace ");
             
-            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Hex010Template.tt"
+            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\RawStructTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
+            
+            #line default
+            #line hidden
+            this.Write(" {\r\n    // Struct Size: \"");
+            
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\RawStructTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(structData.size));
+            
+            #line default
+            #line hidden
+            this.Write("\"\r\n    // Initial Offset: \"");
+            
+            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\RawStructTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(structData.offsetInitial));
+            
+            #line default
+            #line hidden
+            this.Write("\"\r\n    // Unique Id Formula: \"");
+            
+            #line 18 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\RawStructTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(structData.uniqueIdFormula));
+            
+            #line default
+            #line hidden
+            this.Write("\"\r\n    public struct ");
+            
+            #line 19 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\RawStructTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(className));
+            
+            #line default
+            #line hidden
+            this.Write(" {\r\n");
+            
+            #line 20 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\RawStructTemplate.tt"
 
     var compiler = new CSharpCodeProvider();
     long offsetOffset = 0; // An offset to our offset for all subsequent offsets.
@@ -55,18 +89,17 @@ namespace MHW_Template
 
         var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
         var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
-        if (typeString == "byte") typeString = "ubyte";
-        if (typeString == "sbyte") typeString = "byte";
-        WriteLine($"FSeek({realOffset}); {typeString} {name};");
+        WriteLine($"        public {typeString} {name}; // Offset: {realOffset}");
     }
 
             
             #line default
             #line hidden
+            this.Write("    }\r\n}");
             return this.GenerationEnvironment.ToString();
         }
         
-        #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Hex010Template.tt"
+        #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\RawStructTemplate.tt"
 
 private string @__namespaceField;
 
@@ -94,12 +127,12 @@ private string className
     }
 }
 
-private global::MHW_Template.MhwStructData _structDataField;
+private global::MHW_Template.Struct_Generation.Single.MhwStructData _structDataField;
 
 /// <summary>
 /// Access the structData parameter of the template.
 /// </summary>
-private global::MHW_Template.MhwStructData structData
+private global::MHW_Template.Struct_Generation.Single.MhwStructData structData
 {
     get
     {
@@ -146,7 +179,7 @@ if ((classNameValueAcquired == false))
 bool structDataValueAcquired = false;
 if (this.Session.ContainsKey("structData"))
 {
-    this._structDataField = ((global::MHW_Template.MhwStructData)(this.Session["structData"]));
+    this._structDataField = ((global::MHW_Template.Struct_Generation.Single.MhwStructData)(this.Session["structData"]));
     structDataValueAcquired = true;
 }
 if ((structDataValueAcquired == false))
@@ -154,7 +187,7 @@ if ((structDataValueAcquired == false))
     object data = global::System.Runtime.Remoting.Messaging.CallContext.LogicalGetData("structData");
     if ((data != null))
     {
-        this._structDataField = ((global::MHW_Template.MhwStructData)(data));
+        this._structDataField = ((global::MHW_Template.Struct_Generation.Single.MhwStructData)(data));
     }
 }
 
@@ -175,7 +208,7 @@ if ((structDataValueAcquired == false))
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
-    public class Hex010TemplateBase
+    public class RawStructTemplateBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

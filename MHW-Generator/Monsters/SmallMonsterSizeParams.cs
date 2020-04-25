@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
-using MHW_Template;
+using MHW_Template.Struct_Generation.Multi;
 
 namespace MHW_Generator.Monsters {
     public class SmallMonsterSizeParams : IMultiStruct {

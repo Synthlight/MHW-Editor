@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
-using MHW_Template;
+using MHW_Template.Struct_Generation.Single;
 
 namespace MHW_Generator.Weapons {
     public class GunnerReload : ISingleStruct {

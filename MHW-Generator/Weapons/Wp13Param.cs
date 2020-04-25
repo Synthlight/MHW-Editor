@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template;
+using MHW_Template.Struct_Generation.Multi;
 
 namespace MHW_Generator.Weapons {
     public class Wp13Param : IMultiStruct {
@@ -15,24 +16,24 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.StructData.Entry("Unk290", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry("Unk291", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry("Unk292", typeof(ushort)),
-                    new MhwMultiStructData.StructData.Entry("Unk293", typeof(ushort)),
-                    new MhwMultiStructData.StructData.Entry("Unk293.1", typeof(ushort)),
+                    new MhwMultiStructData.StructData.Entry("Unk293", typeof(short)),
+                    new MhwMultiStructData.StructData.Entry("Unk293.1", typeof(short)),
                     new MhwMultiStructData.StructData.Entry("Unk294", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry("Unk295", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry("Unk296", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry("Unk297", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry("Unk298", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry("Unk299", typeof(ushort)),
-                    new MhwMultiStructData.StructData.Entry("Unk300", typeof(ushort)),
-                    new MhwMultiStructData.StructData.Entry("Unk300.1", typeof(ushort)),
+                    new MhwMultiStructData.StructData.Entry("Unk300", typeof(short)),
+                    new MhwMultiStructData.StructData.Entry("Unk300.1", typeof(short)),
                     new MhwMultiStructData.StructData.Entry("Unk301", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry("Unk302", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry("Unk303", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry("Unk304", typeof(ushort)),
-                    new MhwMultiStructData.StructData.Entry("Unk305", typeof(ushort)),
-                    new MhwMultiStructData.StructData.Entry("Unk306", typeof(ushort)),
-                    new MhwMultiStructData.StructData.Entry("Unk307", typeof(ushort)),
-                    new MhwMultiStructData.StructData.Entry("Unk307.1", typeof(ushort)),
+                    new MhwMultiStructData.StructData.Entry("Unk305", typeof(short)),
+                    new MhwMultiStructData.StructData.Entry("Unk306", typeof(short)),
+                    new MhwMultiStructData.StructData.Entry("Unk307", typeof(short)),
+                    new MhwMultiStructData.StructData.Entry("Unk307.1", typeof(short)),
                     new MhwMultiStructData.StructData.Entry("Unk308", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry("Unk309", typeof(ushort)),
                     new MhwMultiStructData.StructData.Entry("Unk310", typeof(ushort)),

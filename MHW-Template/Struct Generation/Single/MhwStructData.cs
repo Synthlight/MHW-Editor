@@ -1,9 +1,8 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
 using MHW_Template.Models;
 
-namespace MHW_Template {
+namespace MHW_Template.Struct_Generation.Single {
     public class MhwStructData {
         public List<Entry> entries;
         public ulong size;

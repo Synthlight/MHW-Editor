@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MHW_Generator.Models;
 using MHW_Template;
+using MHW_Template.Struct_Generation.Single;
 
 namespace MHW_Generator.PlData {
     public class PlPlayerParam : IVerticalStruct {

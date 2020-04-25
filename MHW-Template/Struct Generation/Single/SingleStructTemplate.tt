@@ -4,7 +4,7 @@
 <#@ assembly name="$(TargetDir)\MHW-Template.dll" #>
 <#@ parameter type="System.String" name="_namespace" #>
 <#@ parameter type="System.String" name="className" #>
-<#@ parameter type="MHW_Template.MhwStructData" name="structData" #>
+<#@ parameter type="MHW_Template.Struct_Generation.Single.MhwStructData" name="structData" #>
 <#@ import namespace="Microsoft.CSharp" #>
 <#@ import namespace="System.CodeDom" #>
 <#@ import namespace="System.Runtime.InteropServices" #>

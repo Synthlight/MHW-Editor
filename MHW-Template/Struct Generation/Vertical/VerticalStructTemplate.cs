@@ -7,10 +7,8 @@
 //     the code is regenerated.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace MHW_Template
+namespace MHW_Template.Struct_Generation.Vertical
 {
-    using Microsoft.CSharp;
-    using System.CodeDom;
     using System.Text.RegularExpressions;
     using System;
     
@@ -18,9 +16,9 @@ namespace MHW_Template
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\HexMultiStruct010Template.tt"
+    #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Vertical\VerticalStructTemplate.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
-    public partial class HexMultiStruct010Template : HexMultiStruct010TemplateBase
+    public partial class VerticalStructTemplate : VerticalStructTemplateBase
     {
 #line hidden
         /// <summary>
@@ -28,61 +26,54 @@ namespace MHW_Template
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("//------------------------------------------------\r\n//--- 010 Editor v10.0 Binary" +
-                    " Template\r\n//------------------------------------------------\r\n");
+            this.Write("using System.Collections.ObjectModel;\r\nusing MHW_Editor.Models;\r\n\r\nnamespace ");
             
-            #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\HexMultiStruct010Template.tt"
+            #line 12 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Vertical\VerticalStructTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
+            
+            #line default
+            #line hidden
+            this.Write(" {\r\n    public partial class ");
+            
+            #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Vertical\VerticalStructTemplate.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(className));
+            
+            #line default
+            #line hidden
+            this.Write(" {\r\n        public ObservableCollection<PlDataItemCustomView> GetCustomView() {\r\n" +
+                    "            return new ObservableCollection<PlDataItemCustomView> {\r\n");
+            
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Vertical\VerticalStructTemplate.tt"
 
-    var compiler = new CSharpCodeProvider();
+    var sortIndex = 50;
+    long offsetOffset = 0; // An offset to our offset for all subsequent offsets.
 
-    foreach (var @struct in structData.structs) {
-        var sortIndex = 50;
-        var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
+    foreach (var entry in structData.entries) {
+        var realOffset = (long) entry.offset + offsetOffset;
+        offsetOffset += entry.addOffset;
 
-        WriteLine("");
-        WriteLine("typedef struct {");
+        var accessLevel = entry.accessLevel;
+        var name = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
 
-        foreach (var entry in @struct.entries) {
-            var propName = Regex.Replace(entry.displayName, @"[^\w\d]+", "_");
-            if (entry.forceUnique) propName += $"_{sortIndex}";
-
-            var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
-            if (typeString == "byte") typeString = "ubyte";
-            if (typeString == "sbyte") typeString = "byte";
-            if (entry.arrayCount > -1) typeString += $"[{entry.arrayCount}]";
-
-            if (entry.condition != null) {
-                var condition = $"{entry.condition} ".Replace("|ref|", "data.").Replace("_raw", "");
-                WriteLine($"    {condition} {{ {typeString} {propName}; }}");
-            } else {
-                WriteLine($"    {typeString} {propName};");
-            }
-
-            sortIndex += 50;
+        if (entry.forceUnique) {
+            name += $"_{sortIndex}";
         }
 
-        WriteLine($"}} {name};");
-    }
-
-    WriteLine("");
-
-    foreach (var @struct in structData.structs) {
-        var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
-
-        if (@struct.fixedSizeCount > 1) {
-            WriteLine($"{name}[{@struct.fixedSizeCount}] {name}_;");
-        } else {
-            WriteLine($"{name} {name}_;");
-        }
+        // Don't need now, but uncomment in the future if we need to override a generated property.
+        if (accessLevel == "private")
+            continue;
+        WriteLine($"                new PlDataItemCustomView(this, \"{entry.displayName}\", \"{name}\", Bytes, {realOffset}),");
+        sortIndex += 50;
     }
 
             
             #line default
             #line hidden
+            this.Write("            };\r\n        }\r\n    }\r\n}");
             return this.GenerationEnvironment.ToString();
         }
         
-        #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\HexMultiStruct010Template.tt"
+        #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Vertical\VerticalStructTemplate.tt"
 
 private string @__namespaceField;
 
@@ -110,12 +101,12 @@ private string className
     }
 }
 
-private global::MHW_Template.MhwMultiStructData _structDataField;
+private global::MHW_Template.Struct_Generation.Single.MhwStructData _structDataField;
 
 /// <summary>
 /// Access the structData parameter of the template.
 /// </summary>
-private global::MHW_Template.MhwMultiStructData structData
+private global::MHW_Template.Struct_Generation.Single.MhwStructData structData
 {
     get
     {
@@ -162,7 +153,7 @@ if ((classNameValueAcquired == false))
 bool structDataValueAcquired = false;
 if (this.Session.ContainsKey("structData"))
 {
-    this._structDataField = ((global::MHW_Template.MhwMultiStructData)(this.Session["structData"]));
+    this._structDataField = ((global::MHW_Template.Struct_Generation.Single.MhwStructData)(this.Session["structData"]));
     structDataValueAcquired = true;
 }
 if ((structDataValueAcquired == false))
@@ -170,7 +161,7 @@ if ((structDataValueAcquired == false))
     object data = global::System.Runtime.Remoting.Messaging.CallContext.LogicalGetData("structData");
     if ((data != null))
     {
-        this._structDataField = ((global::MHW_Template.MhwMultiStructData)(data));
+        this._structDataField = ((global::MHW_Template.Struct_Generation.Single.MhwStructData)(data));
     }
 }
 
@@ -191,7 +182,7 @@ if ((structDataValueAcquired == false))
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
-    public class HexMultiStruct010TemplateBase
+    public class VerticalStructTemplateBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

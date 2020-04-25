@@ -58,8 +58,8 @@
     </Compile>
     <Compile Include="GenerationHelper.cs" />
     <Compile Include="Global.cs" />
-    <Compile Include="HexMultiStruct010Template.cs">
-      <DependentUpon>HexMultiStruct010Template.tt</DependentUpon>
+    <Compile Include="Struct Generation\Multi\MultiStruct010Template.cs">
+      <DependentUpon>MultiStruct010Template.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -75,21 +75,21 @@
     <Compile Include="Items\ItemCategory.cs" />
     <Compile Include="Items\ItemType.cs" />
     <Compile Include="Items\SteamRarity.cs" />
-    <Compile Include="MultiStructItemTemplate.cs">
+    <Compile Include="Struct Generation\Multi\MultiStructItemTemplate.cs">
       <DependentUpon>MultiStructItemTemplate.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="MhwMultiStructData.cs" />
+    <Compile Include="Struct Generation\Multi\MhwMultiStructData.cs" />
     <Compile Include="Models\NameDescPair.cs" />
-    <Compile Include="PlDataItemTemplate.cs">
-      <DependentUpon>PlDataItemTemplate.tt</DependentUpon>
+    <Compile Include="Struct Generation\Vertical\VerticalStructTemplate.cs">
+      <DependentUpon>VerticalStructTemplate.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Models\DataSourceAttribute.cs" />
-    <Compile Include="Hex010Template.cs">
-      <DependentUpon>Hex010Template.tt</DependentUpon>
+    <Compile Include="Struct Generation\Single\_010Template.cs">
+      <DependentUpon>_010Template.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -98,17 +98,17 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="RawStructTemplate.cs">
+    <Compile Include="Struct Generation\Single\RawStructTemplate.cs">
       <DependentUpon>RawStructTemplate.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="ItemTemplate.cs">
-      <DependentUpon>ItemTemplate.tt</DependentUpon>
+    <Compile Include="Struct Generation\Single\SingleStructTemplate.cs">
+      <DependentUpon>SingleStructTemplate.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="MhwStructData.cs" />
+    <Compile Include="Struct Generation\Single\MhwStructData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\DataValuePair.cs" />
     <Compile Include="Weapons\AugmentationType.cs" />
@@ -137,33 +137,33 @@
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>ButtonTypeInfoTemplate.cs</LastGenOutput>
     </Content>
-    <Content Include="HexMultiStruct010Template.tt">
+    <Content Include="Struct Generation\Multi\MultiStruct010Template.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
-      <LastGenOutput>HexMultiStruct010Template.cs</LastGenOutput>
+      <LastGenOutput>MultiStruct010Template.cs</LastGenOutput>
     </Content>
-    <Content Include="MultiStructItemTemplate.tt">
+    <Content Include="Struct Generation\Multi\MultiStructItemTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>MultiStructItemTemplate.cs</LastGenOutput>
     </Content>
-    <Content Include="PlDataItemTemplate.tt">
+    <Content Include="Struct Generation\Vertical\VerticalStructTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
-      <LastGenOutput>PlDataItemTemplate.cs</LastGenOutput>
+      <LastGenOutput>VerticalStructTemplate.cs</LastGenOutput>
     </Content>
-    <Content Include="Hex010Template.tt">
+    <Content Include="Struct Generation\Single\_010Template.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
-      <LastGenOutput>Hex010Template.cs</LastGenOutput>
+      <LastGenOutput>_010Template.cs</LastGenOutput>
     </Content>
     <Content Include="ValueClassTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>ValueClassTemplate.cs</LastGenOutput>
     </Content>
-    <Content Include="RawStructTemplate.tt">
+    <Content Include="Struct Generation\Single\RawStructTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>RawStructTemplate.cs</LastGenOutput>
     </Content>
-    <Content Include="ItemTemplate.tt">
+    <Content Include="Struct Generation\Single\SingleStructTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
-      <LastGenOutput>ItemTemplate.cs</LastGenOutput>
+      <LastGenOutput>SingleStructTemplate.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

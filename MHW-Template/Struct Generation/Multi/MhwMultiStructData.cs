@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MHW_Template.Models;
 
-namespace MHW_Template {
+namespace MHW_Template.Struct_Generation.Multi {
     public class MhwMultiStructData {
         public readonly List<StructData> structs;
         public readonly string encryptionKey;
