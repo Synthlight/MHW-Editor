@@ -183,6 +183,7 @@
     <Compile Include="Generated\MHW_Editor\Weapons\Wp10ParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Wp11Param.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Wp11ParamInternal.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\Wp12Param.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Wp13Param.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Wp13ParamInternal.cs" />
     <Compile Include="GetNewItemId.xaml.cs">
@@ -321,6 +322,7 @@
     <Compile Include="Weapons\LimitBreakMaterialSkill.cs" />
     <Compile Include="Weapons\LimitBreakMaterialBase.cs" />
     <Compile Include="Weapons\GunnerShoot.cs" />
+    <Compile Include="Weapons\Wp12Param.cs" />
     <Compile Include="Weapons\NewLimitBreak.cs" />
     <Compile Include="Weapons\OtomoWeaponDat.cs" />
     <Compile Include="Weapons\ShellParam.cs" />

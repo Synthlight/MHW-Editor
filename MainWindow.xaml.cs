@@ -1257,6 +1257,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".trsr")) return typeof(Treasure);
             if (fileName.EndsWith(".w10p")) return typeof(Wp10Param);
             if (fileName.EndsWith(".w11p")) return typeof(Wp11Param);
+            if (fileName.EndsWith(".w12p")) return typeof(Wp12Param);
             if (fileName.EndsWith(".w13p")) return typeof(Wp13Param);
             if (fileName.EndsWith(".wep_glan")) return typeof(WeaponGunLance);
             if (fileName.EndsWith(".wep_saxe")) return typeof(WeaponSwitchAxe);

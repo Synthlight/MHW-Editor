@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="Program.multi.wpParam.cs" />
     <Compile Include="Program.multi.cs" />
     <Compile Include="Program.pl.cs" />
   </ItemGroup>

@@ -80,6 +80,7 @@ namespace MHW_Generator {
 
             GenCommonPl();
             GenMultiStruct();
+            GenMultiWpParamStruct();
         }
 
         private static void GenKulveGradeLottery() {
