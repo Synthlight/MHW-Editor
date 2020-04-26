@@ -48,7 +48,7 @@ namespace MHW_Editor {
         private const bool SHOW_RAW_BYTES = false;
 #endif
         private const string NEXUS_LINK = "https://www.nexusmods.com/monsterhunterworld/mods/2068";
-        private const string CURRENT_GAME_VERSION = "13.0X.XX";
+        private const string CURRENT_GAME_VERSION = "13.5X.XX";
         private const string TITLE = "MHW Editor";
         public const double FONT_SIZE = 20;
 
