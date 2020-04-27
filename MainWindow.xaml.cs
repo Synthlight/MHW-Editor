@@ -20,6 +20,7 @@ using JetBrains.Annotations;
 using MHW_Editor.Armors;
 using MHW_Editor.Assets;
 using MHW_Editor.Gems;
+using MHW_Editor.GuildCard;
 using MHW_Editor.Items;
 using MHW_Editor.Models;
 using MHW_Editor.Monsters;
@@ -1217,6 +1218,19 @@ namespace MHW_Editor {
                 if (fileName.StartsWith("weapon")) return typeof(EqCus_Weapon);
             }
 
+            if (fileName.EndsWith(".gcod")) {
+                if (fileName.StartsWith("gc_data_bg")) {
+                    return typeof(GcData_Backgrounds);
+                } else if (fileName.StartsWith("gc_data_title1")) {
+                    return typeof(GcData_Title1);
+                } else if (fileName.StartsWith("gc_data_title2")) {
+                    return typeof(GcData_Title2);
+                } else {
+                    return typeof(GcData);
+                }
+            }
+
+            if (fileName.EndsWith(".gcod")) return typeof(GcData);
             if (fileName.EndsWith(".gun_rd")) return typeof(GunnerReload);
             if (fileName.EndsWith(".gun_sd")) return typeof(GunnerShoot);
             if (fileName.EndsWith(".imk")) return typeof(ItemMake);

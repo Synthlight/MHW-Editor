@@ -34,6 +34,10 @@ namespace MHW_Editor.Assets {
         public static readonly Dictionary<WeaponType, LangMap> weaponIndexNameLookup;
         public static readonly Dictionary<EquipmentType, LangMap> equipmentIdNameLookup = new Dictionary<EquipmentType, LangMap>();
 
+        public static readonly LangMap gcBackgroundsGmd = new LangMap();
+        public static readonly LangMap gcTitles1Gmd = new LangMap();
+        public static readonly LangMap gcTitles2Gmd = new LangMap();
+
         public static readonly Dictionary<string, Dictionary<string, List<string>>> BAD_FILE_HASH_MAP;
         public static readonly Dictionary<string, string> GOOD_CHUNK_MAP;
         public static readonly Dictionary<string, string> FILE_PATH_MAP;
@@ -72,7 +76,27 @@ namespace MHW_Editor.Assets {
                 foreach (var weapon in Global.WEAPONS) {
                     weaponData[lang][weapon] = LoadDict<uint, string>(GetAsset($"{lang}_{weapon}"));
                 }
+
+                gcBackgroundsGmd[lang] = LoadDict<uint, string>(GetAsset($"{lang}_backgroundData"));
+                gcTitles1Gmd[lang] = LoadDict<uint, string>(GetAsset($"{lang}_titles1Data"));
+                gcTitles2Gmd[lang] = LoadDict<uint, string>(GetAsset($"{lang}_titles2Data"));
             }
+        }
+
+        public static string BackgroundKeyForName(uint id) {
+            return $"GC_BG_{id}_id";
+        }
+
+        public static string BackgroundKeyForDesc(uint id) {
+            return $"GC_BG_{id}_doc";
+        }
+
+        public static string TitleKeyForName(uint titleType, uint id) {
+            return $"GC_Title_{titleType}_{id}_id";
+        }
+
+        public static string TitleKeyForDesc(uint titleType, uint id) {
+            return $"GC_Title_{titleType}_{id}_doc";
         }
 
         private static void MergeEquipmentIdLookups() {

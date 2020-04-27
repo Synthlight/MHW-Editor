@@ -47,6 +47,7 @@
     <Compile Include="Gems\DecoGradeLottery.cs" />
     <Compile Include="Gems\DecoLottery.cs" />
     <Compile Include="Gems\Gem.cs" />
+    <Compile Include="GuildCard\GcData.cs" />
     <Compile Include="Items\ArmUp.cs" />
     <Compile Include="Items\BottleTable.cs" />
     <Compile Include="Items\Bounty.cs" />

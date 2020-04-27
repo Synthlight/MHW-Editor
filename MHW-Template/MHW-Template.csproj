@@ -58,6 +58,7 @@
     </Compile>
     <Compile Include="GenerationHelper.cs" />
     <Compile Include="Global.cs" />
+    <Compile Include="GuildCard\UnlockType.cs" />
     <Compile Include="Struct Generation\Multi\MultiStruct010Template.cs">
       <DependentUpon>MultiStruct010Template.tt</DependentUpon>
       <AutoGen>True</AutoGen>

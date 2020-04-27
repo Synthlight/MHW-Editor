@@ -48,6 +48,10 @@ namespace MHW_Name_Extractor {
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\ew_limit_break_{lang}.gmd", $@"{Global.ASSETS_ROOT}\AwakeningData\{lang}_awakeningData.json"); // .em104lb/r
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\skill_pt_{lang}.gmd", $@"{Global.ASSETS_ROOT}\SkillData\{lang}_skillData.json"); // .sgpa
 
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_BG_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Backgrounds\{lang}_backgroundData.json"); // .gcod
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_Title_1_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Titles\{lang}_titles1Data.json"); // .gcod
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_Title_2_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Titles\{lang}_titles2Data.json"); // .gcod
+
                 // Not sure how it connects to skill id.
                 //GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\music_skill_{lang}.gmd", $@"{Global.ASSETS_ROOT}\MusicSkillData\{lang}_musicSkillData.json");
 
@@ -81,9 +85,15 @@ namespace MHW_Name_Extractor {
             return dict;
         }
 
-        private static void GetAndWriteGmdStringsAsJson(string targetFile, string destFile) {
+        private static void GetAndWriteGmdStringsAsJson(string targetFile, string destFile, bool includeKeys = false) {
             try {
-                var gmdStrings = GetGmdStrings(targetFile);
+                object gmdStrings;
+                if (includeKeys) {
+                    gmdStrings = GetGmdStringsWithKeys(targetFile);
+                } else {
+                    gmdStrings = GetGmdStrings(targetFile);
+                }
+
                 var dir = Path.GetDirectoryName(destFile);
                 if (!Directory.Exists(dir)) {
                     Directory.CreateDirectory(dir ?? throw new InvalidOperationException());
@@ -132,6 +142,48 @@ namespace MHW_Name_Extractor {
                                               .Replace("<ICON ALPHA>", " α")
                                               .Replace("<ICON BETA>", " β")
                                               .Replace("<ICON GAMMA>", " γ"));
+                }
+
+                return dictionary;
+            }
+        }
+
+        private static Dictionary<string, string> GetGmdStringsWithKeys(string targetFile) {
+            using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
+                var len = dat.BaseStream.Length;
+
+                // Header
+                dat.BaseStream.Seek(20, SeekOrigin.Begin);
+                var keyCount = dat.ReadInt32();
+                var stringCount = dat.ReadInt32();
+                var keyBlockSize = dat.ReadInt32();
+                var stringBlockSize = dat.ReadInt32();
+                var fileName = Encoding.UTF8.GetString(dat.ReadBytes(dat.ReadInt32()));
+
+                dat.BaseStream.Seek(1, SeekOrigin.Current);
+
+                var gmdInfoEntrySize = Marshal.SizeOf(typeof(GmdInfoEntry));
+                var gmdInfoEntries = new List<GmdInfoEntry>();
+                for (var i = 0; i < keyCount; i++) {
+                    gmdInfoEntries.Add(dat.ReadBytes(gmdInfoEntrySize).GetData<GmdInfoEntry>());
+                }
+
+                var buckets = new ulong[256];
+                for (var i = 0; i < buckets.Length; i++) {
+                    buckets[i] = dat.ReadUInt64();
+                }
+
+                var keyBlocks = Encoding.UTF8.GetString(dat.ReadBytes(keyBlockSize)).Split('\0');
+                Array.Resize(ref keyBlocks, keyCount); // Last null-term becomes an extra entry.
+
+                var stringBlocks = Encoding.UTF8.GetString(dat.ReadBytes(stringBlockSize)).Split('\0');
+                Array.Resize(ref stringBlocks, stringCount); // Last null-term becomes an extra entry.
+
+                if (keyCount != stringCount) throw new Exception("key/string count mismatch.");
+
+                var dictionary = new Dictionary<string, string>();
+                for (long i = 0; i < stringBlocks.LongLength; i++) {
+                    dictionary[keyBlocks[i]] = stringBlocks[i];
                 }
 
                 return dictionary;

@@ -124,6 +124,9 @@
   <data name="ara_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\ara_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ara_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\ara_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ara_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\ara_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -184,6 +187,12 @@
   <data name="ara_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ara_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ara_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\ara_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ara_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\ara_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ara_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ara_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -195,6 +204,9 @@
   </data>
   <data name="chS_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\chs_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\chs_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chS_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\chs_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -256,6 +268,12 @@
   <data name="chS_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\chs_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="chS_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\chs_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\chs_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chS_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\chs_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -267,6 +285,9 @@
   </data>
   <data name="chT_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\cht_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\cht_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chT_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\cht_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -328,6 +349,12 @@
   <data name="chT_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="chT_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\cht_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\cht_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chT_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -342,6 +369,9 @@
   </data>
   <data name="eng_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\eng_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\eng_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="eng_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\eng_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -403,6 +433,12 @@
   <data name="eng_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\eng_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="eng_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\eng_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\eng_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="eng_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\eng_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -414,6 +450,9 @@
   </data>
   <data name="fre_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\fre_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\fre_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="fre_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\fre_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -475,6 +514,12 @@
   <data name="fre_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\fre_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="fre_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\fre_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\fre_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="fre_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\fre_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -486,6 +531,9 @@
   </data>
   <data name="ger_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\ger_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\ger_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ger_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\ger_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -547,6 +595,12 @@
   <data name="ger_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ger_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ger_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\ger_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\ger_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ger_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ger_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -558,6 +612,9 @@
   </data>
   <data name="ita_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\ita_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\ita_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ita_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\ita_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -619,6 +676,12 @@
   <data name="ita_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ita_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ita_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\ita_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\ita_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ita_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ita_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -630,6 +693,9 @@
   </data>
   <data name="jpn_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\jpn_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\jpn_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="jpn_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\jpn_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -691,6 +757,12 @@
   <data name="jpn_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\jpn_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="jpn_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\jpn_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\jpn_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="jpn_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\jpn_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -702,6 +774,9 @@
   </data>
   <data name="kor_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\kor_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\kor_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="kor_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\kor_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -763,6 +838,12 @@
   <data name="kor_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\kor_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="kor_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\kor_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\kor_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="kor_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\kor_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -774,6 +855,9 @@
   </data>
   <data name="pol_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\pol_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\pol_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pol_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\pol_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -835,6 +919,12 @@
   <data name="pol_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\pol_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="pol_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\pol_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\pol_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="pol_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\pol_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -846,6 +936,9 @@
   </data>
   <data name="ptB_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\ptb_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\ptb_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ptB_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\ptb_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -907,6 +1000,12 @@
   <data name="ptB_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ptb_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ptB_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\ptb_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\ptb_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ptB_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ptb_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -918,6 +1017,9 @@
   </data>
   <data name="rus_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\rus_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\rus_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rus_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\rus_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -979,6 +1081,12 @@
   <data name="rus_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rus_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="rus_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\rus_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\rus_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="rus_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rus_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -993,6 +1101,9 @@
   </data>
   <data name="spa_awakeningData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>awakeningdata\spa_awakeningdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_backgroundData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\backgrounds\spa_backgrounddata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="spa_bountyData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>bountydata\spa_bountydata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1053,6 +1164,12 @@
   </data>
   <data name="spa_tachi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_tachi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_titles1Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\spa_titles1data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_titles2Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\titles\spa_titles2data.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="spa_whistle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_whistle.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

@@ -103,6 +103,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EditorAssets.resx</DependentUpon>
     </Compile>
+    <Compile Include="Assets\LangKeyMap.cs" />
     <Compile Include="Assets\LangMap.cs" />
     <Compile Include="Controls\AutoFilteredComboBox.cs" />
     <Compile Include="EncryptionHelper.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="Generated\MHW_Editor\ButtonTypeInfo.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoGradeLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoLottery.cs" />
+    <Compile Include="Generated\MHW_Editor\GuildCard\GcData.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCrt_Base.cs" />
     <Compile Include="Generated\MHW_Editor\Items\EqCus_Base.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemDelivery.cs" />
@@ -189,6 +191,10 @@
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GuildCard\GcData_Title2.cs" />
+    <Compile Include="GuildCard\GcData_Title1.cs" />
+    <Compile Include="GuildCard\GcData_Backgrounds.cs" />
+    <Compile Include="GuildCard\GcData.cs" />
     <Compile Include="Items\EqCus_Weapon.cs" />
     <Compile Include="Items\EqCus_Misc.cs" />
     <Compile Include="Items\EqCus_Armor.cs" />
@@ -446,6 +452,45 @@
     <None Include="Assets\EditorData\GoodChunkMap.json" />
     <None Include="Assets\EditorData\WeaponNameLookupById.json" />
     <None Include="Assets\EditorData\WeaponNameLookupByIndex.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\ara_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\chS_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\chT_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\eng_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\fre_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\ger_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\ita_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\jpn_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\kor_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\pol_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\ptB_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\rus_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Backgrounds\spa_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Titles\ara_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\ara_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\chS_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\chS_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\chT_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\chT_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\eng_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\eng_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\fre_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\fre_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\ger_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\ger_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\ita_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\ita_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\jpn_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\jpn_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\kor_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\kor_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\pol_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\pol_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\ptB_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\ptB_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\rus_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\rus_titles2Data.json" />
+    <None Include="Assets\GuildCardData\Titles\spa_titles1Data.json" />
+    <None Include="Assets\GuildCardData\Titles\spa_titles2Data.json" />
     <None Include="Assets\InsectData\ara_insectData.json" />
     <None Include="Assets\InsectData\chS_insectData.json" />
     <None Include="Assets\InsectData\chT_insectData.json" />
