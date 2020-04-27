@@ -7,7 +7,7 @@ using MHW_Template.Models;
 
 namespace MHW_Editor.Items {
     public partial class MelderExchange {
-        public const uint StructSize = 430;
+        public const uint StructSize = 438;
         public const ulong InitialOffset = 10;
         public const long EntryCountOffset = 6;
         public const string EncryptionKey = null;
@@ -3002,6 +3002,62 @@ namespace MHW_Editor.Items {
             }
         }
 
-        public const int lastSortIndex = 10700;
+        public const string It_211_displayName = "It 211";
+        public const int It_211_sortIndex = 10700;
+        [SortOrder(It_211_sortIndex)]
+        [DisplayName(It_211_displayName)]
+        public virtual ushort It_211 {
+            get => GetData<ushort>(430);
+            set {
+                if (GetData<ushort>(430) == value) return;
+                SetData(430, value, nameof(It_211));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(It_211));
+            }
+        }
+
+        public const string It_212_displayName = "It 212";
+        public const int It_212_sortIndex = 10750;
+        [SortOrder(It_212_sortIndex)]
+        [DisplayName(It_212_displayName)]
+        public virtual ushort It_212 {
+            get => GetData<ushort>(432);
+            set {
+                if (GetData<ushort>(432) == value) return;
+                SetData(432, value, nameof(It_212));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(It_212));
+            }
+        }
+
+        public const string It_213_displayName = "It 213";
+        public const int It_213_sortIndex = 10800;
+        [SortOrder(It_213_sortIndex)]
+        [DisplayName(It_213_displayName)]
+        public virtual ushort It_213 {
+            get => GetData<ushort>(434);
+            set {
+                if (GetData<ushort>(434) == value) return;
+                SetData(434, value, nameof(It_213));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(It_213));
+            }
+        }
+
+        public const string It_214_displayName = "It 214";
+        public const int It_214_sortIndex = 10850;
+        [SortOrder(It_214_sortIndex)]
+        [DisplayName(It_214_displayName)]
+        public virtual ushort It_214 {
+            get => GetData<ushort>(436);
+            set {
+                if (GetData<ushort>(436) == value) return;
+                SetData(436, value, nameof(It_214));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(It_214));
+            }
+        }
+
+        public const int lastSortIndex = 10900;
     }
 }

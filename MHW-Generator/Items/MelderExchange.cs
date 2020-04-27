@@ -6,7 +6,7 @@ using MHW_Template.Struct_Generation.Single;
 namespace MHW_Generator.Items {
     public class MelderExchange : ISingleStruct {
         public SingleStruct Generate() { // .mkex
-            const ulong size = 430;
+            const ulong size = 438;
             var entries = new List<MhwStructData.Entry> {
                 new MhwStructData.Entry("Source Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
                 new MhwStructData.Entry("Unknown (int32) 1", 4, typeof(int))

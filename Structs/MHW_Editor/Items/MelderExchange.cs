@@ -1,7 +1,7 @@
 using MHW_Template;
 
 namespace MHW_Editor.Items {
-    // Struct Size: "430"
+    // Struct Size: "438"
     // Initial Offset: "10"
     // Unique Id Formula: "{Index}"
     public struct MelderExchange {
@@ -218,5 +218,9 @@ namespace MHW_Editor.Items {
         public ushort It_208; // Offset: 424
         public ushort It_209; // Offset: 426
         public ushort It_210; // Offset: 428
+        public ushort It_211; // Offset: 430
+        public ushort It_212; // Offset: 432
+        public ushort It_213; // Offset: 434
+        public ushort It_214; // Offset: 436
     }
 }
