@@ -19,6 +19,11 @@ namespace Kulve_Crafter {
             GoEqCrt();
         }
 
+        private static bool IsValid(KeyValuePair<uint, string> kvp) {
+            var valid = (kvp.Value.Contains("Taroth") || kvp.Value.Contains("Kjárr") || kvp.Value.Contains("Gold")) && kvp.Key < 200;
+            return !valid;
+        }
+
         public static void GoEqCus() {
             File.Copy(SOURCE_FILE_EQ_CUS_BASE, TARGET_FILE_EQ_CUS_BASE, true);
             using var fileStream = new FileStream(TARGET_FILE_EQ_CUS_BASE, FileMode.Open, FileAccess.ReadWrite);
@@ -39,8 +44,7 @@ namespace Kulve_Crafter {
                 EqCus_Weapon newItem = null;
 
                 foreach (var kvp in DataHelper.weaponIndexNameLookup[weaponType]["eng"]) {
-                    var valid = (kvp.Value.Contains("Taroth") || kvp.Value.Contains("Kjárr")) && kvp.Key < 200;
-                    if (!valid) continue;
+                    if (IsValid(kvp)) continue;
 
                     newItem = new EqCus_Weapon(new byte[EqCus_Base.StructSize], 0) {
                         Equipment_Category = weaponType,
@@ -85,8 +89,7 @@ namespace Kulve_Crafter {
 
             foreach (WeaponType weaponType in Enum.GetValues(typeof(WeaponType))) {
                 foreach (var kvp in DataHelper.weaponIndexNameLookup[weaponType]["eng"]) {
-                    var valid = (kvp.Value.Contains("Taroth") || kvp.Value.Contains("Kjárr")) && kvp.Key < 200;
-                    if (!valid) continue;
+                    if (IsValid(kvp)) continue;
 
                     var newItem = new EqCrt_Weapon(new byte[EqCrt_Base.StructSize], 0) {
                         Equipment_Category = weaponType,
