@@ -37,6 +37,8 @@ namespace MHW_Editor.Assets {
         public static readonly LangMap gcBackgroundsGmd = new LangMap();
         public static readonly LangMap gcTitles1Gmd = new LangMap();
         public static readonly LangMap gcTitles2Gmd = new LangMap();
+        public static readonly LangMap gcExpressionsGmd = new LangMap();
+        public static readonly LangMap gcPosesGmd = new LangMap();
 
         public static readonly Dictionary<string, Dictionary<string, List<string>>> BAD_FILE_HASH_MAP;
         public static readonly Dictionary<string, string> GOOD_CHUNK_MAP;
@@ -80,6 +82,8 @@ namespace MHW_Editor.Assets {
                 gcBackgroundsGmd[lang] = LoadDict<uint, string>(GetAsset($"{lang}_backgroundData"));
                 gcTitles1Gmd[lang] = LoadDict<uint, string>(GetAsset($"{lang}_titles1Data"));
                 gcTitles2Gmd[lang] = LoadDict<uint, string>(GetAsset($"{lang}_titles2Data"));
+                gcExpressionsGmd[lang] = LoadDict<uint, string>(GetAsset($"{lang}_expressionData"));
+                gcPosesGmd[lang] = LoadDict<uint, string>(GetAsset($"{lang}_poseData"));
             }
         }
 

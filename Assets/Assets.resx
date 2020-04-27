@@ -136,6 +136,9 @@
   <data name="ara_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ara_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ara_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\ara_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ara_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ara_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -171,6 +174,9 @@
   </data>
   <data name="ara_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\ara_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ara_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\ara_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ara_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ara_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -217,6 +223,9 @@
   <data name="chS_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\chs_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="chS_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\chs_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chS_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\chs_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -252,6 +261,9 @@
   </data>
   <data name="chS_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\chs_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chS_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\chs_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chS_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\chs_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -298,6 +310,9 @@
   <data name="chT_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="chT_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\cht_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chT_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -333,6 +348,9 @@
   </data>
   <data name="chT_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\cht_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\cht_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chT_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -382,6 +400,9 @@
   <data name="eng_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\eng_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="eng_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\eng_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="eng_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\eng_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -417,6 +438,9 @@
   </data>
   <data name="eng_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\eng_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eng_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\eng_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="eng_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\eng_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -463,6 +487,9 @@
   <data name="fre_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\fre_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="fre_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\fre_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="fre_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\fre_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -498,6 +525,9 @@
   </data>
   <data name="fre_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\fre_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\fre_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="fre_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\fre_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -544,6 +574,9 @@
   <data name="ger_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ger_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ger_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\ger_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ger_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ger_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -579,6 +612,9 @@
   </data>
   <data name="ger_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\ger_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ger_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\ger_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ger_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ger_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -625,6 +661,9 @@
   <data name="ita_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ita_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ita_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\ita_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ita_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ita_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -660,6 +699,9 @@
   </data>
   <data name="ita_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\ita_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\ita_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ita_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ita_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -706,6 +748,9 @@
   <data name="jpn_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\jpn_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="jpn_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\jpn_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="jpn_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\jpn_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -741,6 +786,9 @@
   </data>
   <data name="jpn_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\jpn_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jpn_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\jpn_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="jpn_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\jpn_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -787,6 +835,9 @@
   <data name="kor_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\kor_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="kor_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\kor_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="kor_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\kor_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -822,6 +873,9 @@
   </data>
   <data name="kor_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\kor_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\kor_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="kor_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\kor_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -868,6 +922,9 @@
   <data name="pol_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\pol_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="pol_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\pol_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="pol_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\pol_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -903,6 +960,9 @@
   </data>
   <data name="pol_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\pol_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pol_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\pol_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pol_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\pol_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -949,6 +1009,9 @@
   <data name="ptB_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ptb_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ptB_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\ptb_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ptB_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ptb_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -984,6 +1047,9 @@
   </data>
   <data name="ptB_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\ptb_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ptB_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\ptb_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ptB_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ptb_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1030,6 +1096,9 @@
   <data name="rus_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rus_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="rus_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\rus_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="rus_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rus_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1065,6 +1134,9 @@
   </data>
   <data name="rus_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\rus_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\rus_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rus_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rus_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1114,6 +1186,9 @@
   <data name="spa_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="spa_expressionData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\expressions\spa_expressiondata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="spa_g_lance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_g_lance.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1149,6 +1224,9 @@
   </data>
   <data name="spa_pendantData" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>pendantdata\spa_pendantdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_poseData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>guildcarddata\poses\spa_posedata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="spa_rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_rod.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

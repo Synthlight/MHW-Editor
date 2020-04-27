@@ -191,6 +191,8 @@
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GuildCard\GcData_Poses.cs" />
+    <Compile Include="GuildCard\GcData_Expressions.cs" />
     <Compile Include="GuildCard\GcData_Title2.cs" />
     <Compile Include="GuildCard\GcData_Title1.cs" />
     <Compile Include="GuildCard\GcData_Backgrounds.cs" />
@@ -465,6 +467,32 @@
     <None Include="Assets\GuildCardData\Backgrounds\ptB_backgroundData.json" />
     <None Include="Assets\GuildCardData\Backgrounds\rus_backgroundData.json" />
     <None Include="Assets\GuildCardData\Backgrounds\spa_backgroundData.json" />
+    <None Include="Assets\GuildCardData\Expressions\ara_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\chS_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\chT_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\eng_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\fre_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\ger_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\ita_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\jpn_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\kor_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\pol_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\ptB_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\rus_expressionData.json" />
+    <None Include="Assets\GuildCardData\Expressions\spa_expressionData.json" />
+    <None Include="Assets\GuildCardData\Poses\ara_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\chS_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\chT_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\eng_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\fre_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\ger_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\ita_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\jpn_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\kor_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\pol_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\ptB_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\rus_poseData.json" />
+    <None Include="Assets\GuildCardData\Poses\spa_poseData.json" />
     <None Include="Assets\GuildCardData\Titles\ara_titles1Data.json" />
     <None Include="Assets\GuildCardData\Titles\ara_titles2Data.json" />
     <None Include="Assets\GuildCardData\Titles\chS_titles1Data.json" />

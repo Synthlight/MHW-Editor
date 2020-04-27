@@ -123,6 +123,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ara_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("ara_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ara_g_lance {
             get {
                 object obj = ResourceManager.GetObject("ara_g_lance", resourceCulture);
@@ -236,6 +246,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] ara_pendantData {
             get {
                 object obj = ResourceManager.GetObject("ara_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ara_poseData {
+            get {
+                object obj = ResourceManager.GetObject("ara_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -393,6 +413,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] chS_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("chS_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] chS_g_lance {
             get {
                 object obj = ResourceManager.GetObject("chS_g_lance", resourceCulture);
@@ -506,6 +536,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] chS_pendantData {
             get {
                 object obj = ResourceManager.GetObject("chS_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chS_poseData {
+            get {
+                object obj = ResourceManager.GetObject("chS_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -663,6 +703,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] chT_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("chT_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] chT_g_lance {
             get {
                 object obj = ResourceManager.GetObject("chT_g_lance", resourceCulture);
@@ -776,6 +826,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] chT_pendantData {
             get {
                 object obj = ResourceManager.GetObject("chT_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_poseData {
+            get {
+                object obj = ResourceManager.GetObject("chT_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -943,6 +1003,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] eng_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("eng_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] eng_g_lance {
             get {
                 object obj = ResourceManager.GetObject("eng_g_lance", resourceCulture);
@@ -1056,6 +1126,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] eng_pendantData {
             get {
                 object obj = ResourceManager.GetObject("eng_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] eng_poseData {
+            get {
+                object obj = ResourceManager.GetObject("eng_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1213,6 +1293,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] fre_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("fre_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] fre_g_lance {
             get {
                 object obj = ResourceManager.GetObject("fre_g_lance", resourceCulture);
@@ -1326,6 +1416,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] fre_pendantData {
             get {
                 object obj = ResourceManager.GetObject("fre_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_poseData {
+            get {
+                object obj = ResourceManager.GetObject("fre_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1483,6 +1583,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ger_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("ger_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ger_g_lance {
             get {
                 object obj = ResourceManager.GetObject("ger_g_lance", resourceCulture);
@@ -1596,6 +1706,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] ger_pendantData {
             get {
                 object obj = ResourceManager.GetObject("ger_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ger_poseData {
+            get {
+                object obj = ResourceManager.GetObject("ger_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1753,6 +1873,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ita_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("ita_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ita_g_lance {
             get {
                 object obj = ResourceManager.GetObject("ita_g_lance", resourceCulture);
@@ -1866,6 +1996,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] ita_pendantData {
             get {
                 object obj = ResourceManager.GetObject("ita_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_poseData {
+            get {
+                object obj = ResourceManager.GetObject("ita_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -2023,6 +2163,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] jpn_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("jpn_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] jpn_g_lance {
             get {
                 object obj = ResourceManager.GetObject("jpn_g_lance", resourceCulture);
@@ -2136,6 +2286,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] jpn_pendantData {
             get {
                 object obj = ResourceManager.GetObject("jpn_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jpn_poseData {
+            get {
+                object obj = ResourceManager.GetObject("jpn_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -2293,6 +2453,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] kor_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("kor_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] kor_g_lance {
             get {
                 object obj = ResourceManager.GetObject("kor_g_lance", resourceCulture);
@@ -2406,6 +2576,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] kor_pendantData {
             get {
                 object obj = ResourceManager.GetObject("kor_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_poseData {
+            get {
+                object obj = ResourceManager.GetObject("kor_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -2563,6 +2743,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] pol_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("pol_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] pol_g_lance {
             get {
                 object obj = ResourceManager.GetObject("pol_g_lance", resourceCulture);
@@ -2676,6 +2866,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] pol_pendantData {
             get {
                 object obj = ResourceManager.GetObject("pol_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] pol_poseData {
+            get {
+                object obj = ResourceManager.GetObject("pol_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -2833,6 +3033,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ptB_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("ptB_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ptB_g_lance {
             get {
                 object obj = ResourceManager.GetObject("ptB_g_lance", resourceCulture);
@@ -2946,6 +3156,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] ptB_pendantData {
             get {
                 object obj = ResourceManager.GetObject("ptB_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ptB_poseData {
+            get {
+                object obj = ResourceManager.GetObject("ptB_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -3103,6 +3323,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] rus_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("rus_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] rus_g_lance {
             get {
                 object obj = ResourceManager.GetObject("rus_g_lance", resourceCulture);
@@ -3216,6 +3446,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] rus_pendantData {
             get {
                 object obj = ResourceManager.GetObject("rus_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_poseData {
+            get {
+                object obj = ResourceManager.GetObject("rus_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -3383,6 +3623,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] spa_expressionData {
+            get {
+                object obj = ResourceManager.GetObject("spa_expressionData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] spa_g_lance {
             get {
                 object obj = ResourceManager.GetObject("spa_g_lance", resourceCulture);
@@ -3496,6 +3746,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] spa_pendantData {
             get {
                 object obj = ResourceManager.GetObject("spa_pendantData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_poseData {
+            get {
+                object obj = ResourceManager.GetObject("spa_poseData", resourceCulture);
                 return ((byte[])(obj));
             }
         }

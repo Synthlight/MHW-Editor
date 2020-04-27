@@ -51,6 +51,8 @@ namespace MHW_Name_Extractor {
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_BG_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Backgrounds\{lang}_backgroundData.json"); // .gcod
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_Title_1_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Titles\{lang}_titles1Data.json"); // .gcod
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_Title_2_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Titles\{lang}_titles2Data.json"); // .gcod
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_Facial_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Expressions\{lang}_expressionData.json"); // .gcod
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_Pose_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Poses\{lang}_poseData.json"); // .gcod
 
                 // Not sure how it connects to skill id.
                 //GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\music_skill_{lang}.gmd", $@"{Global.ASSETS_ROOT}\MusicSkillData\{lang}_musicSkillData.json");

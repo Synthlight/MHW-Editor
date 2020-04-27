@@ -1219,15 +1219,11 @@ namespace MHW_Editor {
             }
 
             if (fileName.EndsWith(".gcod")) {
-                if (fileName.StartsWith("gc_data_bg")) {
-                    return typeof(GcData_Backgrounds);
-                } else if (fileName.StartsWith("gc_data_title1")) {
-                    return typeof(GcData_Title1);
-                } else if (fileName.StartsWith("gc_data_title2")) {
-                    return typeof(GcData_Title2);
-                } else {
-                    return typeof(GcData);
-                }
+                if (fileName.StartsWith("gc_data_bg")) return typeof(GcData_Backgrounds);
+                if (fileName.StartsWith("gc_data_face")) return typeof(GcData_Expressions);
+                if (fileName.StartsWith("gc_data_pose")) return typeof(GcData_Poses);
+                if (fileName.StartsWith("gc_data_title1")) return typeof(GcData_Title1);
+                if (fileName.StartsWith("gc_data_title2")) return typeof(GcData_Title2);
             }
 
             if (fileName.EndsWith(".gcod")) return typeof(GcData);
