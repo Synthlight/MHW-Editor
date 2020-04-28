@@ -256,9 +256,11 @@ namespace MHW_Editor {
                     break;
             }
 
+            Type sourceClassType = ((dynamic) e.PropertyDescriptor).ComponentType;
+
             // Cancel for _button columns as we will use a text version with onClick opening a selector.
-            if (ButtonTypeInfo.TYPE_AND_NAME.ContainsKey(targetFileType)
-                && ButtonTypeInfo.TYPE_AND_NAME[targetFileType].Contains(e.PropertyName)) {
+            if (ButtonTypeInfo.TYPE_AND_NAME.ContainsKey(sourceClassType)
+                && ButtonTypeInfo.TYPE_AND_NAME[sourceClassType].Contains(e.PropertyName)) {
                 e.Cancel = true;
             }
 
@@ -309,9 +311,7 @@ namespace MHW_Editor {
             // Use [DisplayName] attribute for the column header text.
             // Use [SortOrder] attribute to control the position. Generated fields have spacing so it's easy to say 'generated_field_sortOrder + 1'.
             // Use [CustomSorter] to define an IComparer class to control sorting.
-            Type sourceClassType = ((dynamic) e.PropertyDescriptor).ComponentType;
-            var  propertyInfo    = sourceClassType.GetProperties().FirstOrDefault(info => info.Name == e.PropertyName);
-
+            var           propertyInfo     = sourceClassType.GetProperties().FirstOrDefault(info => info.Name == e.PropertyName);
             var           displayName      = ((DisplayNameAttribute) propertyInfo?.GetCustomAttribute(typeof(DisplayNameAttribute), true))?.DisplayName;
             var           sortOrder        = ((SortOrderAttribute) propertyInfo?.GetCustomAttribute(typeof(SortOrderAttribute), true))?.sortOrder;
             var           customSorterType = ((CustomSorterAttribute) propertyInfo?.GetCustomAttribute(typeof(CustomSorterAttribute), true))?.customSorterType;
