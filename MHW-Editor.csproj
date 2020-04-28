@@ -197,6 +197,15 @@
     <Compile Include="GuildCard\GcData_Title1.cs" />
     <Compile Include="GuildCard\GcData_Backgrounds.cs" />
     <Compile Include="GuildCard\GcData.cs" />
+    <Compile Include="Items\TimeGate\Models\Armor.cs" />
+    <Compile Include="Items\TimeGate\Models\Unk3.cs" />
+    <Compile Include="Items\TimeGate\Models\Unk2.cs" />
+    <Compile Include="Items\TimeGate\Models\Unk1.cs" />
+    <Compile Include="Items\TimeGate\Models\Pendant.cs" />
+    <Compile Include="Items\TimeGate\Models\ItemTg.cs" />
+    <Compile Include="Items\TimeGate\Models\Weapon.cs" />
+    <Compile Include="Items\TimeGate\TimeGate.cs" />
+    <Compile Include="Items\TimeGate\TimeGate.io.cs" />
     <Compile Include="Items\EqCus_Weapon.cs" />
     <Compile Include="Items\EqCus_Misc.cs" />
     <Compile Include="Items\EqCus_Armor.cs" />

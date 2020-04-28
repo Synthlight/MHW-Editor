@@ -17,6 +17,7 @@ namespace MHW_Template.Models {
         ArmorByIndex,
         WeaponsById,
         WeaponsByIndex,
-        EquipmentById
+        EquipmentById,
+        Pendants
     }
 }

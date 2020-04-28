@@ -28,6 +28,7 @@ namespace MHW_Editor {
             "ItemList",
             "ItemLottery",
             "ItemMake",
+            "ItemTg",
             "KulveItemLottery",
             "LimitBreakMaterialBase",
             "LimitBreakMaterialSkill",
@@ -35,6 +36,7 @@ namespace MHW_Editor {
             "MelderItem",
             "Melee",
             "NewLimitBreakR",
+            "Pendant",
             "PlantItem",
             "QuestRewardInternal",
             "Ranged",
@@ -47,10 +49,12 @@ namespace MHW_Editor {
             "SwapN",
             "Treasure",
             "ValueTrader",
+            "Weapon",
         };
 
         public static readonly List<string> BUTTON_NAMES = new List<string> {
             "Ammo_Id_button",
+            "armorId_button",
             "Decoration_Reward_button",
             "Equip_Id_button",
             "Equipment_Index_button",
@@ -70,12 +74,14 @@ namespace MHW_Editor {
             "Item_Id_2_button",
             "Item_Id_3_button",
             "Item_Id_button",
+            "itemId_button",
             "Mantle_Item_Id_button",
             "Mat_1_Id_button",
             "Mat_2_Id_button",
             "Mat_3_Id_button",
             "Mat_4_Id_button",
             "Needed_Item_Id_to_Unlock_button",
+            "pendantId_button",
             "Result_Id_button",
             "Result_Item_Id_button",
             "Set_Skill_1_button",
@@ -90,10 +96,12 @@ namespace MHW_Editor {
             "Unlock_Skill_3_button",
             "Unlock_Skill_4_button",
             "Weapon_Id_button",
+            "weaponId_button",
         };
 
         public static readonly List<string> BUTTON_BASE_NAMES = new List<string> {
             "Ammo_Id",
+            "armorId",
             "Decoration_Reward",
             "Equip_Id",
             "Equipment_Index",
@@ -113,12 +121,14 @@ namespace MHW_Editor {
             "Item_Id_2",
             "Item_Id_3",
             "Item_Id",
+            "itemId",
             "Mantle_Item_Id",
             "Mat_1_Id",
             "Mat_2_Id",
             "Mat_3_Id",
             "Mat_4_Id",
             "Needed_Item_Id_to_Unlock",
+            "pendantId",
             "Result_Id",
             "Result_Item_Id",
             "Set_Skill_1",
@@ -133,6 +143,7 @@ namespace MHW_Editor {
             "Unlock_Skill_3",
             "Unlock_Skill_4",
             "Weapon_Id",
+            "weaponId",
         };
     }
 }

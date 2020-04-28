@@ -22,6 +22,7 @@ using MHW_Editor.Assets;
 using MHW_Editor.Gems;
 using MHW_Editor.GuildCard;
 using MHW_Editor.Items;
+using MHW_Editor.Items.TimeGate;
 using MHW_Editor.Models;
 using MHW_Editor.Monsters;
 using MHW_Editor.PlData;
@@ -387,6 +388,18 @@ namespace MHW_Editor {
                     Header = e.Column.Header,
                     Binding = new Binding(e.PropertyName) {
                         StringFormat = "{0:0.##%;-0.##%;\"\"}" // Can't be negative, but needed to hide all 0 cases.
+                    },
+                    CanUserSort = true,
+                    IsReadOnly = true
+                };
+                e.Column = cb;
+            }
+
+            if (e.PropertyType == typeof(DateTime)) {
+                var cb = new DataGridTextColumn {
+                    Header = e.Column.Header,
+                    Binding = new Binding(e.PropertyName) {
+                        StringFormat = "{0:yyyy-MM-dd}" // Can't be negative, but needed to hide all 0 cases.
                     },
                     CanUserSort = true,
                     IsReadOnly = true
@@ -1283,6 +1296,9 @@ namespace MHW_Editor {
                 if (fileName.StartsWith("bow")) return typeof(Bow);
                 if (fileName.StartsWith("lbg") || fileName.StartsWith("hbg")) return typeof(BowGun);
             }
+
+            // Special Cases
+            if (fileName == "block_26.bin") return typeof(TimeGate);
 
             throw new Exception($"No type found for: {fileName}");
         }

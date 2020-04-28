@@ -37,7 +37,7 @@ namespace MHW_Generator_Data {
 
         [STAThread]
         public static void Main() {
-            CreateWeaponDataLookup();
+            CreateEditorDataLookup();
             CreateArmorDataValueClass();
             CreateSkillDataValueClass();
             GenButtonLocalizationAndIdList();
@@ -46,7 +46,7 @@ namespace MHW_Generator_Data {
             GenOutdatedHashes(); // This can take a while as it does extraction. Use '-skipExtract' to skip the extraction part.
         }
 
-        private static void CreateWeaponDataLookup() {
+        private static void CreateEditorDataLookup() {
             File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\ArmorNameLookupById.json", JsonConvert.SerializeObject(ArmorReader.GetAllArmors(IndexOrId.Id), Formatting.Indented));
             File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\ArmorNameLookupByIndex.json", JsonConvert.SerializeObject(ArmorReader.GetAllArmors(IndexOrId.Index), Formatting.Indented));
             File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\WeaponNameLookupById.json", JsonConvert.SerializeObject(WeaponReader.GetAllWeapons(IndexOrId.Id), Formatting.Indented));

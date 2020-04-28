@@ -131,7 +131,9 @@ namespace MHW_Template {
             "*.wep_wsd",
             "*.wep_wsl",
             "*.wp_dat",
-            "*.wp_dat_g"
+            "*.wp_dat_g",
+            // Special cases. Leave at the end so they';re obscured from the UI.
+            "Block_26.bin"
         };
         public const string ASSETS_ROOT = @"..\..\..\Assets";
         public const string GENERATED_ROOT = @"..\..\..\Generated";

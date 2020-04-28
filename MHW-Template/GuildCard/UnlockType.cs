@@ -11,7 +11,7 @@
         Unk_7 = 7,
         Unk_8 = 8,
         Arena_Count = 9,
-        Witcher = 10,
+        Unk_10 = 10,
         Unk_11 = 11,
         Unk_12 = 12,
         Unk_13 = 13,
