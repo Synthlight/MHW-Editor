@@ -82,6 +82,11 @@ namespace MHW_Editor.Monsters {
             public const string GridName = "Monsters";
             public const bool IsAddingAllowed = true;
 
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
+
             protected uint Monster_Id_raw;
             public const string Monster_Id_displayName = "Monster Id";
             public const int Monster_Id_sortIndex = 50;
@@ -214,6 +219,11 @@ namespace MHW_Editor.Monsters {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Crown Tables";
             public const bool IsAddingAllowed = true;
+
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
 
             protected string Name_Jap__raw;
             public const string Name_Jap__displayName = "Name (Jap)";

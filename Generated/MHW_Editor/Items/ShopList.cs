@@ -82,6 +82,11 @@ namespace MHW_Editor.Items {
             public const string GridName = "Entries";
             public const bool IsAddingAllowed = true;
 
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
+
             protected uint Index_raw;
             public const string Index_displayName = "Index";
             public const int Index_sortIndex = 50;

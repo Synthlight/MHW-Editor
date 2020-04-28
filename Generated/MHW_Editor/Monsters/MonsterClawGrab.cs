@@ -82,6 +82,11 @@ namespace MHW_Editor.Monsters {
             public const string GridName = "Clagger Params";
             public const bool IsAddingAllowed = true;
 
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
+
             protected float Unk_f32__raw;
             public const string Unk_f32__displayName = "Unk (f32)";
             public const int Unk_f32__sortIndex = 50;

@@ -5669,6 +5669,11 @@ namespace MHW_Editor.Weapons {
             public const string GridName = "Shield Mods";
             public const bool IsAddingAllowed = true;
 
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
+
             protected byte Small_raw;
             public const string Small_displayName = "Small";
             public const int Small_sortIndex = 50;

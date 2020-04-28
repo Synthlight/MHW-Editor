@@ -12,6 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -263,6 +264,18 @@ namespace MHW_Editor {
 
             if (e.Cancel) return;
 
+            // Create 'X' button for delete column.
+            if (e.PropertyName == "Delete") {
+                var col  = new DataGridTemplateColumn();
+                var btn1 = new FrameworkElementFactory(typeof(Button));
+
+                btn1.SetValue(ContentProperty, "X");
+                btn1.AddHandler(ButtonBase.ClickEvent, new RoutedEventHandler((o, args) => { Dg_items_cell_Click(o, args, (DataGrid) sender); }));
+
+                col.CellTemplate = new DataTemplate {VisualTree = btn1};
+                e.Column         = col;
+            }
+
             if (e.PropertyName.EndsWith("_percent")) {
                 var cb = new DataGridTextColumn {
                     Header = e.Column.Header,
@@ -378,6 +391,11 @@ namespace MHW_Editor {
             } catch (Exception err) when (!Debugger.IsAttached) {
                 ShowError(err, "Error Occured");
             }
+        }
+
+        private void Dg_items_cell_Click(object sender, RoutedEventArgs e, ItemsControl dataGrid) {
+            var obj = ((FrameworkElement) sender).DataContext;
+            ((ObservableCollection<dynamic>) dataGrid.ItemsSource).Remove(obj);
         }
 
         private bool CheckCellForButtonTypeAndHandleClick(object sender, DataGridCell cell) {

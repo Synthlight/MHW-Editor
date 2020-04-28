@@ -99,6 +99,11 @@ namespace MHW_Editor.Monsters {
             public const string GridName = "Size Settings";
             public const bool IsAddingAllowed = true;
 
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
+
             protected uint Header_raw;
             public const string Header_displayName = "Header";
             public const int Header_sortIndex = 50;

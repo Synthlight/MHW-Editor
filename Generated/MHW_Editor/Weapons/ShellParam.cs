@@ -431,6 +431,11 @@ namespace MHW_Editor.Weapons {
             public const string GridName = "Linked Shell Params";
             public const bool IsAddingAllowed = true;
 
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
+
             protected uint Header_raw;
             public const string Header_displayName = "Header";
             public const int Header_sortIndex = 50;
@@ -2375,6 +2380,11 @@ namespace MHW_Editor.Weapons {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Modifiers";
             public const bool IsAddingAllowed = true;
+
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
 
             protected uint Header_raw;
             public const string Header_displayName = "Header";

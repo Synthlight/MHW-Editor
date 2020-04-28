@@ -198,6 +198,11 @@ namespace MHW_Editor.Monsters {
             public const string GridName = "Stamina (LR)";
             public const bool IsAddingAllowed = true;
 
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
+
             protected uint Unk_raw;
             public const string Unk_displayName = "Unk";
             public const int Unk_sortIndex = 50;
@@ -336,6 +341,11 @@ namespace MHW_Editor.Monsters {
             public const string GridName = "Stamina (HR)";
             public const bool IsAddingAllowed = true;
 
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
+
             protected uint Unk_raw;
             public const string Unk_displayName = "Unk";
             public const int Unk_sortIndex = 50;
@@ -473,6 +483,11 @@ namespace MHW_Editor.Monsters {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Stamina (MR)";
             public const bool IsAddingAllowed = true;
+
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
 
             protected uint Unk_raw;
             public const string Unk_displayName = "Unk";

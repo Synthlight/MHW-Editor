@@ -84,6 +84,12 @@ namespace ");
 
         if (@struct.canAddRows) {
             WriteLine($"            public const bool IsAddingAllowed = {@struct.canAddRows.ToString().ToLower()};");
+
+            WriteLine("");
+            WriteLine("            [SortOrder(-1)]");
+            WriteLine("            [IsReadOnly]");
+            WriteLine("            [DisplayName(\"X\")]");
+            WriteLine("            public string Delete => \"X\";");
         }
 
         foreach (var entry in @struct.entries) {
