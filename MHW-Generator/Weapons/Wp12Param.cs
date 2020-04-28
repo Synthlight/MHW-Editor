@@ -363,7 +363,7 @@ namespace MHW_Generator.Weapons {
             }, 1, showVertically: true);
 
             var countHolder = new MhwMultiStructData.StructData("Number of Shield Mods Struct", new List<MhwMultiStructData.Entry> {
-                new MhwMultiStructData.Entry("Number of Shield Mods", typeof(uint)).@out(out var count)
+                new MhwMultiStructData.Entry("Number of Shield Mods", typeof(uint)).Out(out var count)
             }, 1, true);
 
             var shieldMods = new MhwMultiStructData.StructData("Shield Mods", new List<MhwMultiStructData.Entry> {

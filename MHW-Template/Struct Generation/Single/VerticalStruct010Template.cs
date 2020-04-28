@@ -20,9 +20,9 @@ namespace MHW_Template.Struct_Generation.Single
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\_010Template.tt"
+    #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\VerticalStruct010Template.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
-    public partial class _010Template : _010TemplateBase
+    public partial class VerticalStruct010Template : VerticalStruct010TemplateBase
     {
 #line hidden
         /// <summary>
@@ -33,7 +33,7 @@ namespace MHW_Template.Struct_Generation.Single
             this.Write("//------------------------------------------------\r\n//--- 010 Editor v10.0 Binary" +
                     " Template\r\n//------------------------------------------------\r\n\r\n");
             
-            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\_010Template.tt"
+            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\VerticalStruct010Template.tt"
 
     var compiler = new CSharpCodeProvider();
     long offsetOffset = 0; // An offset to our offset for all subsequent offsets.
@@ -66,7 +66,7 @@ namespace MHW_Template.Struct_Generation.Single
             return this.GenerationEnvironment.ToString();
         }
         
-        #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\_010Template.tt"
+        #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\VerticalStruct010Template.tt"
 
 private string @__namespaceField;
 
@@ -175,7 +175,7 @@ if ((structDataValueAcquired == false))
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
-    public class _010TemplateBase
+    public class VerticalStruct010TemplateBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

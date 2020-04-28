@@ -89,8 +89,8 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Models\DataSourceAttribute.cs" />
-    <Compile Include="Struct Generation\Single\_010Template.cs">
-      <DependentUpon>_010Template.tt</DependentUpon>
+    <Compile Include="Struct Generation\Single\VerticalStruct010Template.cs">
+      <DependentUpon>VerticalStruct010Template.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -150,9 +150,9 @@
       <Generator>TextTemplatingFilePreProcessor</Generator>
       <LastGenOutput>VerticalStructTemplate.cs</LastGenOutput>
     </Content>
-    <Content Include="Struct Generation\Single\_010Template.tt">
+    <Content Include="Struct Generation\Single\VerticalStruct010Template.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>
-      <LastGenOutput>_010Template.cs</LastGenOutput>
+      <LastGenOutput>VerticalStruct010Template.cs</LastGenOutput>
     </Content>
     <Content Include="ValueClassTemplate.tt">
       <Generator>TextTemplatingFilePreProcessor</Generator>

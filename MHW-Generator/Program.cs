@@ -64,7 +64,7 @@ namespace MHW_Generator {
                 }
             });
 
-            WriteResult($"{Global._010_OUTPUT_ROOT}", structData.ext, new _010Template {
+            WriteResult($"{Global._010_OUTPUT_ROOT}", structData.ext, new VerticalStruct010Template {
                 Session = new Dictionary<string, object> {
                     {"structData", structData}
                 }

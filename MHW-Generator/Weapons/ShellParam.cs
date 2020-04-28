@@ -39,8 +39,8 @@ namespace MHW_Generator.Weapons {
                 }, 1, showVertically: true),
 
                 new MhwMultiStructData.StructData("Number of Linked Shell Params Holder", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Number of Linked Shell Params", typeof(uint), true).@out(out var linkedShellCount)
-                }, 1, true).@out(out var linkedShellCountHolder),
+                    new MhwMultiStructData.Entry("Number of Linked Shell Params", typeof(uint), true).Out(out var linkedShellCount)
+                }, 1, true).Out(out var linkedShellCountHolder),
 
                 new MhwMultiStructData.StructData("Linked Shell Params", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Header", typeof(uint)),
@@ -160,8 +160,8 @@ namespace MHW_Generator.Weapons {
                 }, 1, showVertically: true),
 
                 new MhwMultiStructData.StructData("Number of Modifiers Holder", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Number of Modifiers", typeof(uint), true).@out(out var modifiersCount)
-                }, 1, true).@out(out var modifiersCountHolder),
+                    new MhwMultiStructData.Entry("Number of Modifiers", typeof(uint), true).Out(out var modifiersCount)
+                }, 1, true).Out(out var modifiersCountHolder),
 
                 new MhwMultiStructData.StructData("Modifiers", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Header", typeof(uint)),

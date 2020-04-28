@@ -19,8 +19,8 @@ namespace MHW_Generator.Monsters {
                 new MhwMultiStructData.StructData("Monster Random Sizes", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
                     new MhwMultiStructData.Entry("Magic 2", typeof(uint), true),
-                    new MhwMultiStructData.Entry("Number of Monsters", typeof(uint), true).@out(out var monsterCount)
-                }, 1).@out(out var monsterCountHolder),
+                    new MhwMultiStructData.Entry("Number of Monsters", typeof(uint), true).Out(out var monsterCount)
+                }, 1).Out(out var monsterCountHolder),
 
                 new MhwMultiStructData.StructData("Monsters", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Monster Id", typeof(uint), true, dataSourceType: DataSourceType.Monsters),
@@ -31,8 +31,8 @@ namespace MHW_Generator.Monsters {
                 }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(monsterCountHolder, monsterCount)),
 
                 new MhwMultiStructData.StructData("Crown Table Count", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Number of Crown Tables", typeof(uint), true).@out(out var crownCount)
-                }, 1, true).@out(out var crownCountHolder),
+                    new MhwMultiStructData.Entry("Number of Crown Tables", typeof(uint), true).Out(out var crownCount)
+                }, 1, true).Out(out var crownCountHolder),
 
                 new MhwMultiStructData.StructData("Crown Tables", crownTable, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(crownCountHolder, crownCount))
             };

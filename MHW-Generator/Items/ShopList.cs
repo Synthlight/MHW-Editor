@@ -10,8 +10,8 @@ namespace MHW_Generator.Items {
                 new MhwMultiStructData.StructData("Shop List", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
                     new MhwMultiStructData.Entry("Magic 2", typeof(ushort), true),
-                    new MhwMultiStructData.Entry("Item Count", typeof(uint), true).@out(out var itemCount)
-                }, 1).@out(out var header),
+                    new MhwMultiStructData.Entry("Item Count", typeof(uint), true).Out(out var itemCount)
+                }, 1).Out(out var header),
 
                 new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Index", typeof(uint)),

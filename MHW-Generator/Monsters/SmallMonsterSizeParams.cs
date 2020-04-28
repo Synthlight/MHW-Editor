@@ -11,8 +11,8 @@ namespace MHW_Generator.Monsters {
                     new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
                     new MhwMultiStructData.Entry("Magic 2", typeof(uint), true),
                     new MhwMultiStructData.Entry("Magic 3", typeof(uint), true),
-                    new MhwMultiStructData.Entry("Number of Size Settings", typeof(uint), true).@out(out var count)
-                }, 1).@out(out var header),
+                    new MhwMultiStructData.Entry("Number of Size Settings", typeof(uint), true).Out(out var count)
+                }, 1).Out(out var header),
 
                 new MhwMultiStructData.StructData("Size Settings", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Header", typeof(uint)),

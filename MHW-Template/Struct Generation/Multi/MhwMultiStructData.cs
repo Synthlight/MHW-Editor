@@ -103,6 +103,6 @@ namespace MHW_Template.Struct_Generation.Multi {
     }
 
     public static class MhwMultiStructDataExtensions {
-        public static T @out<T>(this T @in, out T x) => x = @in;
+        public static T Out<T>(this T @in, out T x) => x = @in;
     }
 }

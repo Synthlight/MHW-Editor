@@ -9,8 +9,8 @@ namespace MHW_Generator.Monsters {
                 new MhwMultiStructData.StructData("Monster Claw Grab", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
                     new MhwMultiStructData.Entry("Magic 2", typeof(uint), true),
-                    new MhwMultiStructData.Entry("Number of Claggers", typeof(uint), true).@out(out var count)
-                }, 1).@out(out var header),
+                    new MhwMultiStructData.Entry("Number of Claggers", typeof(uint), true).Out(out var count)
+                }, 1).Out(out var header),
 
                 new MhwMultiStructData.StructData("Clagger Params", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Unk (f32)", typeof(float)),
