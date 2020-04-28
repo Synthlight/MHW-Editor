@@ -10,7 +10,7 @@ namespace MHW_Generator.Monsters {
                 new MhwMultiStructData.StructData("Monster Rage", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
                     new MhwMultiStructData.Entry("Magic 2", typeof(uint), true),
-                    new MhwMultiStructData.Entry("Monster Id", typeof(uint), dataSourceType: DataSourceType.Monsters),
+                    new MhwMultiStructData.Entry("Monster Id", typeof(uint), true, dataSourceType: DataSourceType.Monsters),
                     new MhwMultiStructData.Entry("Magic 3", typeof(uint), true)
                 }, 1),
 

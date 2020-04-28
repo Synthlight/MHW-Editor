@@ -32,6 +32,7 @@ namespace MHW_Editor.Gems {
         public const int Item_Id_sortIndex = 100;
         [SortOrder(Item_Id_sortIndex)]
         [DisplayName(Item_Id_displayName)]
+        [DataSource(DataSourceType.Items)]
         [IsReadOnly]
         public virtual uint Item_Id {
             get => GetData<uint>(4);
@@ -40,8 +41,14 @@ namespace MHW_Editor.Gems {
                 SetData(4, value, nameof(Item_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Item_Id));
+                OnPropertyChanged(nameof(Item_Id_button));
             }
         }
+
+        [SortOrder(Item_Id_sortIndex)]
+        [DisplayName(Item_Id_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Item_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id).ToStringWithId(Item_Id);
 
         public const string Grade_1_displayName = "Grade 1";
         public const int Grade_1_sortIndex = 150;

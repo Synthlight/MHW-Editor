@@ -13,6 +13,8 @@ namespace MHW_Editor {
             "BowGun",
             "CustomOuterRecipe",
             "CustomPartsR",
+            "DecoGradeLottery",
+            "DecoLottery",
             "Entries",
             "EqCrt_Armor",
             "EqCrt_Base",
@@ -38,6 +40,7 @@ namespace MHW_Editor {
             "ItemLottery",
             "ItemMake",
             "ItemTg",
+            "KulveGradeLottery",
             "KulveItemLottery",
             "LimitBreakMaterialBase",
             "LimitBreakMaterialSkill",
@@ -53,6 +56,7 @@ namespace MHW_Editor {
             "QuestRewardInternal",
             "Ranged",
             "RoomFurniture",
+            "SafiItemGradeLottery",
             "SafiItemLottery",
             "ShellTable",
             "ShopSed",
@@ -93,6 +97,7 @@ namespace MHW_Editor {
             "Freeze_Rec_Amnt_button",
             "Freeze_Rel_Spd_button",
             "Hidden_Skill_button",
+            "Id_button",
             "Item_1_Id_button",
             "Item_10_Id_button",
             "Item_2_Id_button",
@@ -367,6 +372,9 @@ namespace MHW_Editor {
                 "Mat_2_Id",
                 "Result_Id",
             }},
+            {typeof(MHW_Editor.Items.KulveGradeLottery), new List<string> {
+                "Item_Id",
+            }},
             {typeof(MHW_Editor.Items.KulveItemLottery), new List<string> {
                 "Weapon_Id",
             }},
@@ -385,6 +393,9 @@ namespace MHW_Editor {
                 "Item",
             }},
             {typeof(MHW_Editor.Items.RoomFurniture), new List<string> {
+                "Item_Id",
+            }},
+            {typeof(MHW_Editor.Items.SafiItemGradeLottery), new List<string> {
                 "Item_Id",
             }},
             {typeof(MHW_Editor.Items.SafiItemLottery), new List<string> {
@@ -498,7 +509,14 @@ namespace MHW_Editor {
             {typeof(MHW_Editor.GuildCard.GcData_Backgrounds), new List<string> {
                 "Monster_Id",
             }},
+            {typeof(MHW_Editor.Gems.DecoGradeLottery), new List<string> {
+                "Item_Id",
+            }},
+            {typeof(MHW_Editor.Gems.DecoLottery), new List<string> {
+                "Item_Id",
+            }},
             {typeof(MHW_Editor.Gems.Gem), new List<string> {
+                "Id",
                 "Skill_1",
                 "Skill_2",
             }},

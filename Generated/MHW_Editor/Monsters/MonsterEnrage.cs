@@ -53,6 +53,7 @@ namespace MHW_Editor.Monsters {
             [SortOrder(Monster_Id_sortIndex)]
             [DisplayName(Monster_Id_displayName)]
             [DataSource(DataSourceType.Monsters)]
+            [IsReadOnly]
             public virtual uint Monster_Id {
                 get => Monster_Id_raw;
                 set {

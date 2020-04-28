@@ -244,13 +244,6 @@ namespace MHW_Editor {
                 case nameof(SkillDat.Id):
                     e.Cancel = targetFileType.Is(typeof(SkillDat));
                     break;
-                case nameof(SkillDat.Index):
-                    e.Cancel = targetFileType.Is(typeof(DecoGradeLottery),
-                                                 typeof(DecoLottery),
-                                                 typeof(Gem),
-                                                 typeof(KulveGradeLottery),
-                                                 typeof(SafiItemGradeLottery));
-                    break;
                 default:
                     e.Cancel = e.PropertyName.EndsWith("Raw");
                     break;
@@ -406,20 +399,22 @@ namespace MHW_Editor {
             foreach (var propertyName in columnMap[dataGrid].Keys.Where(key => key.Contains("_button"))) {
                 if (cell.Column != columnMap[dataGrid][propertyName].column) continue;
 
-                EditSelectedItemId(cell, propertyName);
-                return true;
+                return EditSelectedItemId(cell, propertyName);
             }
 
             return false;
         }
 
-        private void EditSelectedItemId(FrameworkElement cell, string propertyName) {
+        private bool EditSelectedItemId(FrameworkElement cell, string propertyName) {
             var obj      = (IOnPropertyChanged) cell.DataContext;
             var property = obj.GetType().GetProperty(propertyName.Replace("_button", ""), BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
             Debug.Assert(property != null, nameof(property) + " != null");
             var propertyType   = property.PropertyType;
             var value          = property.GetValue(obj);
             var dataSourceType = ((DataSourceAttribute) property.GetCustomAttribute(typeof(DataSourceAttribute), true))?.dataType;
+            var isReadOnly     = (IsReadOnlyAttribute) property.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
+
+            if (isReadOnly) return false;
 
             dynamic dataSource = dataSourceType switch {
                 DataSourceType.Items => DataHelper.itemNames[locale],
@@ -448,6 +443,8 @@ namespace MHW_Editor {
                 property.SetValue(obj, Convert.ChangeType(getNewItemId.CurrentItem, propertyType));
                 obj.OnPropertyChanged(propertyName);
             }
+
+            return true;
         }
 
         private static ArmorType GetArmorType(FrameworkElement cell) {
