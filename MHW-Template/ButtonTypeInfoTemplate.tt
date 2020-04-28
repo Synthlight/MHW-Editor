@@ -11,15 +11,6 @@
 <#@ import namespace="System.Collections.Generic" #>
 using System;
 using System.Collections.Generic;
-using MHW_Editor.Armors;
-using MHW_Editor.Gems;
-using MHW_Editor.GuildCard;
-using MHW_Editor.Items;
-using MHW_Editor.Items.TimeGate.Models;
-using MHW_Editor.Monsters;
-using MHW_Editor.Skills;
-using MHW_Editor.Weapons;
-using Armor = MHW_Editor.Items.TimeGate.Models.Armor;
 
 namespace <#= _namespace #> {
     public static class <#= className #> {

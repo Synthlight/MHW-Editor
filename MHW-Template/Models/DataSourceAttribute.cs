@@ -20,6 +20,10 @@ namespace MHW_Template.Models {
         EquipmentById,
         Pendants,
         Monsters,
-        MonstersNeg
+        MonstersNeg,
+        ShellRecoil,
+        ShellReload,
+        GunnerRecoil,
+        GunnerReload
     }
 }

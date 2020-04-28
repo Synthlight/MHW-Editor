@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
+using MHW_Template.Models;
 using MHW_Template.Struct_Generation.Single;
 using MHW_Template.Weapons.Model;
 
@@ -46,17 +47,17 @@ namespace MHW_Generator.Weapons {
                     }
 
                     entries.Add(new MhwStructData.Entry($"{name} Mag Cnt", x++, typeof(byte), valueString: "value.Clamp((byte) 0, (byte) 10)"));
-                    entries.Add(new MhwStructData.Entry($"{name} Rec Amnt", x++, typeof(byte)));
-                    entries.Add(new MhwStructData.Entry($"{name} Rel Spd", x++, typeof(byte)));
+                    entries.Add(new MhwStructData.Entry($"{name} Rec Amnt", x++, typeof(byte), dataSourceType: DataSourceType.ShellRecoil));
+                    entries.Add(new MhwStructData.Entry($"{name} Rel Spd", x++, typeof(byte), dataSourceType: DataSourceType.ShellReload));
                 }
             }
 
             return new SingleStruct("MHW_Editor.Weapons", "ShellTable", new MhwStructData {
-                size = 111,
-                offsetInitial = 10,
+                size             = 111,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Id}",
-                entries = entries
+                uniqueIdFormula  = "{Id}",
+                entries          = entries
             });
         }
     }

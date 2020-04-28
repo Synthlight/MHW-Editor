@@ -31,6 +31,7 @@ namespace MHW_Editor.Weapons {
         public const int Normal_1_Rec_Amnt_sortIndex = 100;
         [SortOrder(Normal_1_Rec_Amnt_sortIndex)]
         [DisplayName(Normal_1_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Normal_1_Rec_Amnt {
             get => GetData<byte>(1);
             set {
@@ -38,13 +39,20 @@ namespace MHW_Editor.Weapons {
                 SetData(1, value, nameof(Normal_1_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Normal_1_Rec_Amnt));
+                OnPropertyChanged(nameof(Normal_1_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Normal_1_Rec_Amnt_sortIndex)]
+        [DisplayName(Normal_1_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Normal_1_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Normal_1_Rec_Amnt).ToStringWithId(Normal_1_Rec_Amnt);
 
         public const string Normal_1_Rel_Spd_displayName = "Normal 1 Rel Spd";
         public const int Normal_1_Rel_Spd_sortIndex = 150;
         [SortOrder(Normal_1_Rel_Spd_sortIndex)]
         [DisplayName(Normal_1_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Normal_1_Rel_Spd {
             get => GetData<byte>(2);
             set {
@@ -52,8 +60,14 @@ namespace MHW_Editor.Weapons {
                 SetData(2, value, nameof(Normal_1_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Normal_1_Rel_Spd));
+                OnPropertyChanged(nameof(Normal_1_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Normal_1_Rel_Spd_sortIndex)]
+        [DisplayName(Normal_1_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Normal_1_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Normal_1_Rel_Spd).ToStringWithId(Normal_1_Rel_Spd);
 
         public const string Normal_2_Mag_Cnt_displayName = "Normal 2 Mag Cnt";
         public const int Normal_2_Mag_Cnt_sortIndex = 200;
@@ -73,6 +87,7 @@ namespace MHW_Editor.Weapons {
         public const int Normal_2_Rec_Amnt_sortIndex = 250;
         [SortOrder(Normal_2_Rec_Amnt_sortIndex)]
         [DisplayName(Normal_2_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Normal_2_Rec_Amnt {
             get => GetData<byte>(4);
             set {
@@ -80,13 +95,20 @@ namespace MHW_Editor.Weapons {
                 SetData(4, value, nameof(Normal_2_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Normal_2_Rec_Amnt));
+                OnPropertyChanged(nameof(Normal_2_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Normal_2_Rec_Amnt_sortIndex)]
+        [DisplayName(Normal_2_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Normal_2_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Normal_2_Rec_Amnt).ToStringWithId(Normal_2_Rec_Amnt);
 
         public const string Normal_2_Rel_Spd_displayName = "Normal 2 Rel Spd";
         public const int Normal_2_Rel_Spd_sortIndex = 300;
         [SortOrder(Normal_2_Rel_Spd_sortIndex)]
         [DisplayName(Normal_2_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Normal_2_Rel_Spd {
             get => GetData<byte>(5);
             set {
@@ -94,8 +116,14 @@ namespace MHW_Editor.Weapons {
                 SetData(5, value, nameof(Normal_2_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Normal_2_Rel_Spd));
+                OnPropertyChanged(nameof(Normal_2_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Normal_2_Rel_Spd_sortIndex)]
+        [DisplayName(Normal_2_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Normal_2_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Normal_2_Rel_Spd).ToStringWithId(Normal_2_Rel_Spd);
 
         public const string Normal_3_Mag_Cnt_displayName = "Normal 3 Mag Cnt";
         public const int Normal_3_Mag_Cnt_sortIndex = 350;
@@ -115,6 +143,7 @@ namespace MHW_Editor.Weapons {
         public const int Normal_3_Rec_Amnt_sortIndex = 400;
         [SortOrder(Normal_3_Rec_Amnt_sortIndex)]
         [DisplayName(Normal_3_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Normal_3_Rec_Amnt {
             get => GetData<byte>(7);
             set {
@@ -122,13 +151,20 @@ namespace MHW_Editor.Weapons {
                 SetData(7, value, nameof(Normal_3_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Normal_3_Rec_Amnt));
+                OnPropertyChanged(nameof(Normal_3_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Normal_3_Rec_Amnt_sortIndex)]
+        [DisplayName(Normal_3_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Normal_3_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Normal_3_Rec_Amnt).ToStringWithId(Normal_3_Rec_Amnt);
 
         public const string Normal_3_Rel_Spd_displayName = "Normal 3 Rel Spd";
         public const int Normal_3_Rel_Spd_sortIndex = 450;
         [SortOrder(Normal_3_Rel_Spd_sortIndex)]
         [DisplayName(Normal_3_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Normal_3_Rel_Spd {
             get => GetData<byte>(8);
             set {
@@ -136,8 +172,14 @@ namespace MHW_Editor.Weapons {
                 SetData(8, value, nameof(Normal_3_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Normal_3_Rel_Spd));
+                OnPropertyChanged(nameof(Normal_3_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Normal_3_Rel_Spd_sortIndex)]
+        [DisplayName(Normal_3_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Normal_3_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Normal_3_Rel_Spd).ToStringWithId(Normal_3_Rel_Spd);
 
         public const string Pierce_1_Mag_Cnt_displayName = "Pierce 1 Mag Cnt";
         public const int Pierce_1_Mag_Cnt_sortIndex = 500;
@@ -157,6 +199,7 @@ namespace MHW_Editor.Weapons {
         public const int Pierce_1_Rec_Amnt_sortIndex = 550;
         [SortOrder(Pierce_1_Rec_Amnt_sortIndex)]
         [DisplayName(Pierce_1_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Pierce_1_Rec_Amnt {
             get => GetData<byte>(10);
             set {
@@ -164,13 +207,20 @@ namespace MHW_Editor.Weapons {
                 SetData(10, value, nameof(Pierce_1_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Pierce_1_Rec_Amnt));
+                OnPropertyChanged(nameof(Pierce_1_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Pierce_1_Rec_Amnt_sortIndex)]
+        [DisplayName(Pierce_1_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Pierce_1_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Pierce_1_Rec_Amnt).ToStringWithId(Pierce_1_Rec_Amnt);
 
         public const string Pierce_1_Rel_Spd_displayName = "Pierce 1 Rel Spd";
         public const int Pierce_1_Rel_Spd_sortIndex = 600;
         [SortOrder(Pierce_1_Rel_Spd_sortIndex)]
         [DisplayName(Pierce_1_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Pierce_1_Rel_Spd {
             get => GetData<byte>(11);
             set {
@@ -178,8 +228,14 @@ namespace MHW_Editor.Weapons {
                 SetData(11, value, nameof(Pierce_1_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Pierce_1_Rel_Spd));
+                OnPropertyChanged(nameof(Pierce_1_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Pierce_1_Rel_Spd_sortIndex)]
+        [DisplayName(Pierce_1_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Pierce_1_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Pierce_1_Rel_Spd).ToStringWithId(Pierce_1_Rel_Spd);
 
         public const string Pierce_2_Mag_Cnt_displayName = "Pierce 2 Mag Cnt";
         public const int Pierce_2_Mag_Cnt_sortIndex = 650;
@@ -199,6 +255,7 @@ namespace MHW_Editor.Weapons {
         public const int Pierce_2_Rec_Amnt_sortIndex = 700;
         [SortOrder(Pierce_2_Rec_Amnt_sortIndex)]
         [DisplayName(Pierce_2_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Pierce_2_Rec_Amnt {
             get => GetData<byte>(13);
             set {
@@ -206,13 +263,20 @@ namespace MHW_Editor.Weapons {
                 SetData(13, value, nameof(Pierce_2_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Pierce_2_Rec_Amnt));
+                OnPropertyChanged(nameof(Pierce_2_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Pierce_2_Rec_Amnt_sortIndex)]
+        [DisplayName(Pierce_2_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Pierce_2_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Pierce_2_Rec_Amnt).ToStringWithId(Pierce_2_Rec_Amnt);
 
         public const string Pierce_2_Rel_Spd_displayName = "Pierce 2 Rel Spd";
         public const int Pierce_2_Rel_Spd_sortIndex = 750;
         [SortOrder(Pierce_2_Rel_Spd_sortIndex)]
         [DisplayName(Pierce_2_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Pierce_2_Rel_Spd {
             get => GetData<byte>(14);
             set {
@@ -220,8 +284,14 @@ namespace MHW_Editor.Weapons {
                 SetData(14, value, nameof(Pierce_2_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Pierce_2_Rel_Spd));
+                OnPropertyChanged(nameof(Pierce_2_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Pierce_2_Rel_Spd_sortIndex)]
+        [DisplayName(Pierce_2_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Pierce_2_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Pierce_2_Rel_Spd).ToStringWithId(Pierce_2_Rel_Spd);
 
         public const string Pierce_3_Mag_Cnt_displayName = "Pierce 3 Mag Cnt";
         public const int Pierce_3_Mag_Cnt_sortIndex = 800;
@@ -241,6 +311,7 @@ namespace MHW_Editor.Weapons {
         public const int Pierce_3_Rec_Amnt_sortIndex = 850;
         [SortOrder(Pierce_3_Rec_Amnt_sortIndex)]
         [DisplayName(Pierce_3_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Pierce_3_Rec_Amnt {
             get => GetData<byte>(16);
             set {
@@ -248,13 +319,20 @@ namespace MHW_Editor.Weapons {
                 SetData(16, value, nameof(Pierce_3_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Pierce_3_Rec_Amnt));
+                OnPropertyChanged(nameof(Pierce_3_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Pierce_3_Rec_Amnt_sortIndex)]
+        [DisplayName(Pierce_3_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Pierce_3_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Pierce_3_Rec_Amnt).ToStringWithId(Pierce_3_Rec_Amnt);
 
         public const string Pierce_3_Rel_Spd_displayName = "Pierce 3 Rel Spd";
         public const int Pierce_3_Rel_Spd_sortIndex = 900;
         [SortOrder(Pierce_3_Rel_Spd_sortIndex)]
         [DisplayName(Pierce_3_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Pierce_3_Rel_Spd {
             get => GetData<byte>(17);
             set {
@@ -262,8 +340,14 @@ namespace MHW_Editor.Weapons {
                 SetData(17, value, nameof(Pierce_3_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Pierce_3_Rel_Spd));
+                OnPropertyChanged(nameof(Pierce_3_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Pierce_3_Rel_Spd_sortIndex)]
+        [DisplayName(Pierce_3_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Pierce_3_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Pierce_3_Rel_Spd).ToStringWithId(Pierce_3_Rel_Spd);
 
         public const string Spread_1_Mag_Cnt_displayName = "Spread 1 Mag Cnt";
         public const int Spread_1_Mag_Cnt_sortIndex = 950;
@@ -283,6 +367,7 @@ namespace MHW_Editor.Weapons {
         public const int Spread_1_Rec_Amnt_sortIndex = 1000;
         [SortOrder(Spread_1_Rec_Amnt_sortIndex)]
         [DisplayName(Spread_1_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Spread_1_Rec_Amnt {
             get => GetData<byte>(19);
             set {
@@ -290,13 +375,20 @@ namespace MHW_Editor.Weapons {
                 SetData(19, value, nameof(Spread_1_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Spread_1_Rec_Amnt));
+                OnPropertyChanged(nameof(Spread_1_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Spread_1_Rec_Amnt_sortIndex)]
+        [DisplayName(Spread_1_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Spread_1_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Spread_1_Rec_Amnt).ToStringWithId(Spread_1_Rec_Amnt);
 
         public const string Spread_1_Rel_Spd_displayName = "Spread 1 Rel Spd";
         public const int Spread_1_Rel_Spd_sortIndex = 1050;
         [SortOrder(Spread_1_Rel_Spd_sortIndex)]
         [DisplayName(Spread_1_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Spread_1_Rel_Spd {
             get => GetData<byte>(20);
             set {
@@ -304,8 +396,14 @@ namespace MHW_Editor.Weapons {
                 SetData(20, value, nameof(Spread_1_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Spread_1_Rel_Spd));
+                OnPropertyChanged(nameof(Spread_1_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Spread_1_Rel_Spd_sortIndex)]
+        [DisplayName(Spread_1_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Spread_1_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Spread_1_Rel_Spd).ToStringWithId(Spread_1_Rel_Spd);
 
         public const string Spread_2_Mag_Cnt_displayName = "Spread 2 Mag Cnt";
         public const int Spread_2_Mag_Cnt_sortIndex = 1100;
@@ -325,6 +423,7 @@ namespace MHW_Editor.Weapons {
         public const int Spread_2_Rec_Amnt_sortIndex = 1150;
         [SortOrder(Spread_2_Rec_Amnt_sortIndex)]
         [DisplayName(Spread_2_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Spread_2_Rec_Amnt {
             get => GetData<byte>(22);
             set {
@@ -332,13 +431,20 @@ namespace MHW_Editor.Weapons {
                 SetData(22, value, nameof(Spread_2_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Spread_2_Rec_Amnt));
+                OnPropertyChanged(nameof(Spread_2_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Spread_2_Rec_Amnt_sortIndex)]
+        [DisplayName(Spread_2_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Spread_2_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Spread_2_Rec_Amnt).ToStringWithId(Spread_2_Rec_Amnt);
 
         public const string Spread_2_Rel_Spd_displayName = "Spread 2 Rel Spd";
         public const int Spread_2_Rel_Spd_sortIndex = 1200;
         [SortOrder(Spread_2_Rel_Spd_sortIndex)]
         [DisplayName(Spread_2_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Spread_2_Rel_Spd {
             get => GetData<byte>(23);
             set {
@@ -346,8 +452,14 @@ namespace MHW_Editor.Weapons {
                 SetData(23, value, nameof(Spread_2_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Spread_2_Rel_Spd));
+                OnPropertyChanged(nameof(Spread_2_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Spread_2_Rel_Spd_sortIndex)]
+        [DisplayName(Spread_2_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Spread_2_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Spread_2_Rel_Spd).ToStringWithId(Spread_2_Rel_Spd);
 
         public const string Spread_3_Mag_Cnt_displayName = "Spread 3 Mag Cnt";
         public const int Spread_3_Mag_Cnt_sortIndex = 1250;
@@ -367,6 +479,7 @@ namespace MHW_Editor.Weapons {
         public const int Spread_3_Rec_Amnt_sortIndex = 1300;
         [SortOrder(Spread_3_Rec_Amnt_sortIndex)]
         [DisplayName(Spread_3_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Spread_3_Rec_Amnt {
             get => GetData<byte>(25);
             set {
@@ -374,13 +487,20 @@ namespace MHW_Editor.Weapons {
                 SetData(25, value, nameof(Spread_3_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Spread_3_Rec_Amnt));
+                OnPropertyChanged(nameof(Spread_3_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Spread_3_Rec_Amnt_sortIndex)]
+        [DisplayName(Spread_3_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Spread_3_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Spread_3_Rec_Amnt).ToStringWithId(Spread_3_Rec_Amnt);
 
         public const string Spread_3_Rel_Spd_displayName = "Spread 3 Rel Spd";
         public const int Spread_3_Rel_Spd_sortIndex = 1350;
         [SortOrder(Spread_3_Rel_Spd_sortIndex)]
         [DisplayName(Spread_3_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Spread_3_Rel_Spd {
             get => GetData<byte>(26);
             set {
@@ -388,8 +508,14 @@ namespace MHW_Editor.Weapons {
                 SetData(26, value, nameof(Spread_3_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Spread_3_Rel_Spd));
+                OnPropertyChanged(nameof(Spread_3_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Spread_3_Rel_Spd_sortIndex)]
+        [DisplayName(Spread_3_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Spread_3_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Spread_3_Rel_Spd).ToStringWithId(Spread_3_Rel_Spd);
 
         public const string Cluster_1_Mag_Cnt_displayName = "Cluster 1 Mag Cnt";
         public const int Cluster_1_Mag_Cnt_sortIndex = 1400;
@@ -409,6 +535,7 @@ namespace MHW_Editor.Weapons {
         public const int Cluster_1_Rec_Amnt_sortIndex = 1450;
         [SortOrder(Cluster_1_Rec_Amnt_sortIndex)]
         [DisplayName(Cluster_1_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Cluster_1_Rec_Amnt {
             get => GetData<byte>(28);
             set {
@@ -416,13 +543,20 @@ namespace MHW_Editor.Weapons {
                 SetData(28, value, nameof(Cluster_1_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Cluster_1_Rec_Amnt));
+                OnPropertyChanged(nameof(Cluster_1_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Cluster_1_Rec_Amnt_sortIndex)]
+        [DisplayName(Cluster_1_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Cluster_1_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Cluster_1_Rec_Amnt).ToStringWithId(Cluster_1_Rec_Amnt);
 
         public const string Cluster_1_Rel_Spd_displayName = "Cluster 1 Rel Spd";
         public const int Cluster_1_Rel_Spd_sortIndex = 1500;
         [SortOrder(Cluster_1_Rel_Spd_sortIndex)]
         [DisplayName(Cluster_1_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Cluster_1_Rel_Spd {
             get => GetData<byte>(29);
             set {
@@ -430,8 +564,14 @@ namespace MHW_Editor.Weapons {
                 SetData(29, value, nameof(Cluster_1_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Cluster_1_Rel_Spd));
+                OnPropertyChanged(nameof(Cluster_1_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Cluster_1_Rel_Spd_sortIndex)]
+        [DisplayName(Cluster_1_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Cluster_1_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Cluster_1_Rel_Spd).ToStringWithId(Cluster_1_Rel_Spd);
 
         public const string Cluster_2_Mag_Cnt_displayName = "Cluster 2 Mag Cnt";
         public const int Cluster_2_Mag_Cnt_sortIndex = 1550;
@@ -451,6 +591,7 @@ namespace MHW_Editor.Weapons {
         public const int Cluster_2_Rec_Amnt_sortIndex = 1600;
         [SortOrder(Cluster_2_Rec_Amnt_sortIndex)]
         [DisplayName(Cluster_2_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Cluster_2_Rec_Amnt {
             get => GetData<byte>(31);
             set {
@@ -458,13 +599,20 @@ namespace MHW_Editor.Weapons {
                 SetData(31, value, nameof(Cluster_2_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Cluster_2_Rec_Amnt));
+                OnPropertyChanged(nameof(Cluster_2_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Cluster_2_Rec_Amnt_sortIndex)]
+        [DisplayName(Cluster_2_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Cluster_2_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Cluster_2_Rec_Amnt).ToStringWithId(Cluster_2_Rec_Amnt);
 
         public const string Cluster_2_Rel_Spd_displayName = "Cluster 2 Rel Spd";
         public const int Cluster_2_Rel_Spd_sortIndex = 1650;
         [SortOrder(Cluster_2_Rel_Spd_sortIndex)]
         [DisplayName(Cluster_2_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Cluster_2_Rel_Spd {
             get => GetData<byte>(32);
             set {
@@ -472,8 +620,14 @@ namespace MHW_Editor.Weapons {
                 SetData(32, value, nameof(Cluster_2_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Cluster_2_Rel_Spd));
+                OnPropertyChanged(nameof(Cluster_2_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Cluster_2_Rel_Spd_sortIndex)]
+        [DisplayName(Cluster_2_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Cluster_2_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Cluster_2_Rel_Spd).ToStringWithId(Cluster_2_Rel_Spd);
 
         public const string Cluster_3_Mag_Cnt_displayName = "Cluster 3 Mag Cnt";
         public const int Cluster_3_Mag_Cnt_sortIndex = 1700;
@@ -493,6 +647,7 @@ namespace MHW_Editor.Weapons {
         public const int Cluster_3_Rec_Amnt_sortIndex = 1750;
         [SortOrder(Cluster_3_Rec_Amnt_sortIndex)]
         [DisplayName(Cluster_3_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Cluster_3_Rec_Amnt {
             get => GetData<byte>(34);
             set {
@@ -500,13 +655,20 @@ namespace MHW_Editor.Weapons {
                 SetData(34, value, nameof(Cluster_3_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Cluster_3_Rec_Amnt));
+                OnPropertyChanged(nameof(Cluster_3_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Cluster_3_Rec_Amnt_sortIndex)]
+        [DisplayName(Cluster_3_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Cluster_3_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Cluster_3_Rec_Amnt).ToStringWithId(Cluster_3_Rec_Amnt);
 
         public const string Cluster_3_Rel_Spd_displayName = "Cluster 3 Rel Spd";
         public const int Cluster_3_Rel_Spd_sortIndex = 1800;
         [SortOrder(Cluster_3_Rel_Spd_sortIndex)]
         [DisplayName(Cluster_3_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Cluster_3_Rel_Spd {
             get => GetData<byte>(35);
             set {
@@ -514,8 +676,14 @@ namespace MHW_Editor.Weapons {
                 SetData(35, value, nameof(Cluster_3_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Cluster_3_Rel_Spd));
+                OnPropertyChanged(nameof(Cluster_3_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Cluster_3_Rel_Spd_sortIndex)]
+        [DisplayName(Cluster_3_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Cluster_3_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Cluster_3_Rel_Spd).ToStringWithId(Cluster_3_Rel_Spd);
 
         public const string Wyvern_Mag_Cnt_displayName = "Wyvern Mag Cnt";
         public const int Wyvern_Mag_Cnt_sortIndex = 1850;
@@ -535,6 +703,7 @@ namespace MHW_Editor.Weapons {
         public const int Wyvern_Rec_Amnt_sortIndex = 1900;
         [SortOrder(Wyvern_Rec_Amnt_sortIndex)]
         [DisplayName(Wyvern_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Wyvern_Rec_Amnt {
             get => GetData<byte>(37);
             set {
@@ -542,13 +711,20 @@ namespace MHW_Editor.Weapons {
                 SetData(37, value, nameof(Wyvern_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wyvern_Rec_Amnt));
+                OnPropertyChanged(nameof(Wyvern_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Wyvern_Rec_Amnt_sortIndex)]
+        [DisplayName(Wyvern_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Wyvern_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Wyvern_Rec_Amnt).ToStringWithId(Wyvern_Rec_Amnt);
 
         public const string Wyvern_Rel_Spd_displayName = "Wyvern Rel Spd";
         public const int Wyvern_Rel_Spd_sortIndex = 1950;
         [SortOrder(Wyvern_Rel_Spd_sortIndex)]
         [DisplayName(Wyvern_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Wyvern_Rel_Spd {
             get => GetData<byte>(38);
             set {
@@ -556,8 +732,14 @@ namespace MHW_Editor.Weapons {
                 SetData(38, value, nameof(Wyvern_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Wyvern_Rel_Spd));
+                OnPropertyChanged(nameof(Wyvern_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Wyvern_Rel_Spd_sortIndex)]
+        [DisplayName(Wyvern_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Wyvern_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Wyvern_Rel_Spd).ToStringWithId(Wyvern_Rel_Spd);
 
         public const string Sticky_1_Mag_Cnt_displayName = "Sticky 1 Mag Cnt";
         public const int Sticky_1_Mag_Cnt_sortIndex = 2000;
@@ -577,6 +759,7 @@ namespace MHW_Editor.Weapons {
         public const int Sticky_1_Rec_Amnt_sortIndex = 2050;
         [SortOrder(Sticky_1_Rec_Amnt_sortIndex)]
         [DisplayName(Sticky_1_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Sticky_1_Rec_Amnt {
             get => GetData<byte>(40);
             set {
@@ -584,13 +767,20 @@ namespace MHW_Editor.Weapons {
                 SetData(40, value, nameof(Sticky_1_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Sticky_1_Rec_Amnt));
+                OnPropertyChanged(nameof(Sticky_1_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Sticky_1_Rec_Amnt_sortIndex)]
+        [DisplayName(Sticky_1_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Sticky_1_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Sticky_1_Rec_Amnt).ToStringWithId(Sticky_1_Rec_Amnt);
 
         public const string Sticky_1_Rel_Spd_displayName = "Sticky 1 Rel Spd";
         public const int Sticky_1_Rel_Spd_sortIndex = 2100;
         [SortOrder(Sticky_1_Rel_Spd_sortIndex)]
         [DisplayName(Sticky_1_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Sticky_1_Rel_Spd {
             get => GetData<byte>(41);
             set {
@@ -598,8 +788,14 @@ namespace MHW_Editor.Weapons {
                 SetData(41, value, nameof(Sticky_1_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Sticky_1_Rel_Spd));
+                OnPropertyChanged(nameof(Sticky_1_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Sticky_1_Rel_Spd_sortIndex)]
+        [DisplayName(Sticky_1_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Sticky_1_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Sticky_1_Rel_Spd).ToStringWithId(Sticky_1_Rel_Spd);
 
         public const string Sticky_2_Mag_Cnt_displayName = "Sticky 2 Mag Cnt";
         public const int Sticky_2_Mag_Cnt_sortIndex = 2150;
@@ -619,6 +815,7 @@ namespace MHW_Editor.Weapons {
         public const int Sticky_2_Rec_Amnt_sortIndex = 2200;
         [SortOrder(Sticky_2_Rec_Amnt_sortIndex)]
         [DisplayName(Sticky_2_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Sticky_2_Rec_Amnt {
             get => GetData<byte>(43);
             set {
@@ -626,13 +823,20 @@ namespace MHW_Editor.Weapons {
                 SetData(43, value, nameof(Sticky_2_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Sticky_2_Rec_Amnt));
+                OnPropertyChanged(nameof(Sticky_2_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Sticky_2_Rec_Amnt_sortIndex)]
+        [DisplayName(Sticky_2_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Sticky_2_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Sticky_2_Rec_Amnt).ToStringWithId(Sticky_2_Rec_Amnt);
 
         public const string Sticky_2_Rel_Spd_displayName = "Sticky 2 Rel Spd";
         public const int Sticky_2_Rel_Spd_sortIndex = 2250;
         [SortOrder(Sticky_2_Rel_Spd_sortIndex)]
         [DisplayName(Sticky_2_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Sticky_2_Rel_Spd {
             get => GetData<byte>(44);
             set {
@@ -640,8 +844,14 @@ namespace MHW_Editor.Weapons {
                 SetData(44, value, nameof(Sticky_2_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Sticky_2_Rel_Spd));
+                OnPropertyChanged(nameof(Sticky_2_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Sticky_2_Rel_Spd_sortIndex)]
+        [DisplayName(Sticky_2_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Sticky_2_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Sticky_2_Rel_Spd).ToStringWithId(Sticky_2_Rel_Spd);
 
         public const string Sticky_3_Mag_Cnt_displayName = "Sticky 3 Mag Cnt";
         public const int Sticky_3_Mag_Cnt_sortIndex = 2300;
@@ -661,6 +871,7 @@ namespace MHW_Editor.Weapons {
         public const int Sticky_3_Rec_Amnt_sortIndex = 2350;
         [SortOrder(Sticky_3_Rec_Amnt_sortIndex)]
         [DisplayName(Sticky_3_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Sticky_3_Rec_Amnt {
             get => GetData<byte>(46);
             set {
@@ -668,13 +879,20 @@ namespace MHW_Editor.Weapons {
                 SetData(46, value, nameof(Sticky_3_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Sticky_3_Rec_Amnt));
+                OnPropertyChanged(nameof(Sticky_3_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Sticky_3_Rec_Amnt_sortIndex)]
+        [DisplayName(Sticky_3_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Sticky_3_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Sticky_3_Rec_Amnt).ToStringWithId(Sticky_3_Rec_Amnt);
 
         public const string Sticky_3_Rel_Spd_displayName = "Sticky 3 Rel Spd";
         public const int Sticky_3_Rel_Spd_sortIndex = 2400;
         [SortOrder(Sticky_3_Rel_Spd_sortIndex)]
         [DisplayName(Sticky_3_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Sticky_3_Rel_Spd {
             get => GetData<byte>(47);
             set {
@@ -682,8 +900,14 @@ namespace MHW_Editor.Weapons {
                 SetData(47, value, nameof(Sticky_3_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Sticky_3_Rel_Spd));
+                OnPropertyChanged(nameof(Sticky_3_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Sticky_3_Rel_Spd_sortIndex)]
+        [DisplayName(Sticky_3_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Sticky_3_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Sticky_3_Rel_Spd).ToStringWithId(Sticky_3_Rel_Spd);
 
         public const string Slicing_Mag_Cnt_displayName = "Slicing Mag Cnt";
         public const int Slicing_Mag_Cnt_sortIndex = 2450;
@@ -703,6 +927,7 @@ namespace MHW_Editor.Weapons {
         public const int Slicing_Rec_Amnt_sortIndex = 2500;
         [SortOrder(Slicing_Rec_Amnt_sortIndex)]
         [DisplayName(Slicing_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Slicing_Rec_Amnt {
             get => GetData<byte>(49);
             set {
@@ -710,13 +935,20 @@ namespace MHW_Editor.Weapons {
                 SetData(49, value, nameof(Slicing_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Slicing_Rec_Amnt));
+                OnPropertyChanged(nameof(Slicing_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Slicing_Rec_Amnt_sortIndex)]
+        [DisplayName(Slicing_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Slicing_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Slicing_Rec_Amnt).ToStringWithId(Slicing_Rec_Amnt);
 
         public const string Slicing_Rel_Spd_displayName = "Slicing Rel Spd";
         public const int Slicing_Rel_Spd_sortIndex = 2550;
         [SortOrder(Slicing_Rel_Spd_sortIndex)]
         [DisplayName(Slicing_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Slicing_Rel_Spd {
             get => GetData<byte>(50);
             set {
@@ -724,8 +956,14 @@ namespace MHW_Editor.Weapons {
                 SetData(50, value, nameof(Slicing_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Slicing_Rel_Spd));
+                OnPropertyChanged(nameof(Slicing_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Slicing_Rel_Spd_sortIndex)]
+        [DisplayName(Slicing_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Slicing_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Slicing_Rel_Spd).ToStringWithId(Slicing_Rel_Spd);
 
         public const string Flaming_Mag_Cnt_displayName = "Flaming Mag Cnt";
         public const int Flaming_Mag_Cnt_sortIndex = 2600;
@@ -745,6 +983,7 @@ namespace MHW_Editor.Weapons {
         public const int Flaming_Rec_Amnt_sortIndex = 2650;
         [SortOrder(Flaming_Rec_Amnt_sortIndex)]
         [DisplayName(Flaming_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Flaming_Rec_Amnt {
             get => GetData<byte>(52);
             set {
@@ -752,13 +991,20 @@ namespace MHW_Editor.Weapons {
                 SetData(52, value, nameof(Flaming_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Flaming_Rec_Amnt));
+                OnPropertyChanged(nameof(Flaming_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Flaming_Rec_Amnt_sortIndex)]
+        [DisplayName(Flaming_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Flaming_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Flaming_Rec_Amnt).ToStringWithId(Flaming_Rec_Amnt);
 
         public const string Flaming_Rel_Spd_displayName = "Flaming Rel Spd";
         public const int Flaming_Rel_Spd_sortIndex = 2700;
         [SortOrder(Flaming_Rel_Spd_sortIndex)]
         [DisplayName(Flaming_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Flaming_Rel_Spd {
             get => GetData<byte>(53);
             set {
@@ -766,8 +1012,14 @@ namespace MHW_Editor.Weapons {
                 SetData(53, value, nameof(Flaming_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Flaming_Rel_Spd));
+                OnPropertyChanged(nameof(Flaming_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Flaming_Rel_Spd_sortIndex)]
+        [DisplayName(Flaming_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Flaming_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Flaming_Rel_Spd).ToStringWithId(Flaming_Rel_Spd);
 
         public const string Water_Mag_Cnt_displayName = "Water Mag Cnt";
         public const int Water_Mag_Cnt_sortIndex = 2750;
@@ -787,6 +1039,7 @@ namespace MHW_Editor.Weapons {
         public const int Water_Rec_Amnt_sortIndex = 2800;
         [SortOrder(Water_Rec_Amnt_sortIndex)]
         [DisplayName(Water_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Water_Rec_Amnt {
             get => GetData<byte>(55);
             set {
@@ -794,13 +1047,20 @@ namespace MHW_Editor.Weapons {
                 SetData(55, value, nameof(Water_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Water_Rec_Amnt));
+                OnPropertyChanged(nameof(Water_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Water_Rec_Amnt_sortIndex)]
+        [DisplayName(Water_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Water_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Water_Rec_Amnt).ToStringWithId(Water_Rec_Amnt);
 
         public const string Water_Rel_Spd_displayName = "Water Rel Spd";
         public const int Water_Rel_Spd_sortIndex = 2850;
         [SortOrder(Water_Rel_Spd_sortIndex)]
         [DisplayName(Water_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Water_Rel_Spd {
             get => GetData<byte>(56);
             set {
@@ -808,8 +1068,14 @@ namespace MHW_Editor.Weapons {
                 SetData(56, value, nameof(Water_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Water_Rel_Spd));
+                OnPropertyChanged(nameof(Water_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Water_Rel_Spd_sortIndex)]
+        [DisplayName(Water_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Water_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Water_Rel_Spd).ToStringWithId(Water_Rel_Spd);
 
         public const string Freeze_Mag_Cnt_displayName = "Freeze Mag Cnt";
         public const int Freeze_Mag_Cnt_sortIndex = 2900;
@@ -829,6 +1095,7 @@ namespace MHW_Editor.Weapons {
         public const int Freeze_Rec_Amnt_sortIndex = 2950;
         [SortOrder(Freeze_Rec_Amnt_sortIndex)]
         [DisplayName(Freeze_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Freeze_Rec_Amnt {
             get => GetData<byte>(58);
             set {
@@ -836,13 +1103,20 @@ namespace MHW_Editor.Weapons {
                 SetData(58, value, nameof(Freeze_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Freeze_Rec_Amnt));
+                OnPropertyChanged(nameof(Freeze_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Freeze_Rec_Amnt_sortIndex)]
+        [DisplayName(Freeze_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Freeze_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Freeze_Rec_Amnt).ToStringWithId(Freeze_Rec_Amnt);
 
         public const string Freeze_Rel_Spd_displayName = "Freeze Rel Spd";
         public const int Freeze_Rel_Spd_sortIndex = 3000;
         [SortOrder(Freeze_Rel_Spd_sortIndex)]
         [DisplayName(Freeze_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Freeze_Rel_Spd {
             get => GetData<byte>(59);
             set {
@@ -850,8 +1124,14 @@ namespace MHW_Editor.Weapons {
                 SetData(59, value, nameof(Freeze_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Freeze_Rel_Spd));
+                OnPropertyChanged(nameof(Freeze_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Freeze_Rel_Spd_sortIndex)]
+        [DisplayName(Freeze_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Freeze_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Freeze_Rel_Spd).ToStringWithId(Freeze_Rel_Spd);
 
         public const string Thunder_Mag_Cnt_displayName = "Thunder Mag Cnt";
         public const int Thunder_Mag_Cnt_sortIndex = 3050;
@@ -871,6 +1151,7 @@ namespace MHW_Editor.Weapons {
         public const int Thunder_Rec_Amnt_sortIndex = 3100;
         [SortOrder(Thunder_Rec_Amnt_sortIndex)]
         [DisplayName(Thunder_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Thunder_Rec_Amnt {
             get => GetData<byte>(61);
             set {
@@ -878,13 +1159,20 @@ namespace MHW_Editor.Weapons {
                 SetData(61, value, nameof(Thunder_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Thunder_Rec_Amnt));
+                OnPropertyChanged(nameof(Thunder_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Thunder_Rec_Amnt_sortIndex)]
+        [DisplayName(Thunder_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Thunder_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Thunder_Rec_Amnt).ToStringWithId(Thunder_Rec_Amnt);
 
         public const string Thunder_Rel_Spd_displayName = "Thunder Rel Spd";
         public const int Thunder_Rel_Spd_sortIndex = 3150;
         [SortOrder(Thunder_Rel_Spd_sortIndex)]
         [DisplayName(Thunder_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Thunder_Rel_Spd {
             get => GetData<byte>(62);
             set {
@@ -892,8 +1180,14 @@ namespace MHW_Editor.Weapons {
                 SetData(62, value, nameof(Thunder_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Thunder_Rel_Spd));
+                OnPropertyChanged(nameof(Thunder_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Thunder_Rel_Spd_sortIndex)]
+        [DisplayName(Thunder_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Thunder_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Thunder_Rel_Spd).ToStringWithId(Thunder_Rel_Spd);
 
         public const string Dragon_Mag_Cnt_displayName = "Dragon Mag Cnt";
         public const int Dragon_Mag_Cnt_sortIndex = 3200;
@@ -913,6 +1207,7 @@ namespace MHW_Editor.Weapons {
         public const int Dragon_Rec_Amnt_sortIndex = 3250;
         [SortOrder(Dragon_Rec_Amnt_sortIndex)]
         [DisplayName(Dragon_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Dragon_Rec_Amnt {
             get => GetData<byte>(64);
             set {
@@ -920,13 +1215,20 @@ namespace MHW_Editor.Weapons {
                 SetData(64, value, nameof(Dragon_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Dragon_Rec_Amnt));
+                OnPropertyChanged(nameof(Dragon_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Dragon_Rec_Amnt_sortIndex)]
+        [DisplayName(Dragon_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Dragon_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Dragon_Rec_Amnt).ToStringWithId(Dragon_Rec_Amnt);
 
         public const string Dragon_Rel_Spd_displayName = "Dragon Rel Spd";
         public const int Dragon_Rel_Spd_sortIndex = 3300;
         [SortOrder(Dragon_Rel_Spd_sortIndex)]
         [DisplayName(Dragon_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Dragon_Rel_Spd {
             get => GetData<byte>(65);
             set {
@@ -934,8 +1236,14 @@ namespace MHW_Editor.Weapons {
                 SetData(65, value, nameof(Dragon_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Dragon_Rel_Spd));
+                OnPropertyChanged(nameof(Dragon_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Dragon_Rel_Spd_sortIndex)]
+        [DisplayName(Dragon_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Dragon_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Dragon_Rel_Spd).ToStringWithId(Dragon_Rel_Spd);
 
         public const string Poison_1_Mag_Cnt_displayName = "Poison 1 Mag Cnt";
         public const int Poison_1_Mag_Cnt_sortIndex = 3350;
@@ -955,6 +1263,7 @@ namespace MHW_Editor.Weapons {
         public const int Poison_1_Rec_Amnt_sortIndex = 3400;
         [SortOrder(Poison_1_Rec_Amnt_sortIndex)]
         [DisplayName(Poison_1_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Poison_1_Rec_Amnt {
             get => GetData<byte>(67);
             set {
@@ -962,13 +1271,20 @@ namespace MHW_Editor.Weapons {
                 SetData(67, value, nameof(Poison_1_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Poison_1_Rec_Amnt));
+                OnPropertyChanged(nameof(Poison_1_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Poison_1_Rec_Amnt_sortIndex)]
+        [DisplayName(Poison_1_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Poison_1_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Poison_1_Rec_Amnt).ToStringWithId(Poison_1_Rec_Amnt);
 
         public const string Poison_1_Rel_Spd_displayName = "Poison 1 Rel Spd";
         public const int Poison_1_Rel_Spd_sortIndex = 3450;
         [SortOrder(Poison_1_Rel_Spd_sortIndex)]
         [DisplayName(Poison_1_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Poison_1_Rel_Spd {
             get => GetData<byte>(68);
             set {
@@ -976,8 +1292,14 @@ namespace MHW_Editor.Weapons {
                 SetData(68, value, nameof(Poison_1_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Poison_1_Rel_Spd));
+                OnPropertyChanged(nameof(Poison_1_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Poison_1_Rel_Spd_sortIndex)]
+        [DisplayName(Poison_1_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Poison_1_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Poison_1_Rel_Spd).ToStringWithId(Poison_1_Rel_Spd);
 
         public const string Poison_2_Mag_Cnt_displayName = "Poison 2 Mag Cnt";
         public const int Poison_2_Mag_Cnt_sortIndex = 3500;
@@ -997,6 +1319,7 @@ namespace MHW_Editor.Weapons {
         public const int Poison_2_Rec_Amnt_sortIndex = 3550;
         [SortOrder(Poison_2_Rec_Amnt_sortIndex)]
         [DisplayName(Poison_2_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Poison_2_Rec_Amnt {
             get => GetData<byte>(70);
             set {
@@ -1004,13 +1327,20 @@ namespace MHW_Editor.Weapons {
                 SetData(70, value, nameof(Poison_2_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Poison_2_Rec_Amnt));
+                OnPropertyChanged(nameof(Poison_2_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Poison_2_Rec_Amnt_sortIndex)]
+        [DisplayName(Poison_2_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Poison_2_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Poison_2_Rec_Amnt).ToStringWithId(Poison_2_Rec_Amnt);
 
         public const string Poison_2_Rel_Spd_displayName = "Poison 2 Rel Spd";
         public const int Poison_2_Rel_Spd_sortIndex = 3600;
         [SortOrder(Poison_2_Rel_Spd_sortIndex)]
         [DisplayName(Poison_2_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Poison_2_Rel_Spd {
             get => GetData<byte>(71);
             set {
@@ -1018,8 +1348,14 @@ namespace MHW_Editor.Weapons {
                 SetData(71, value, nameof(Poison_2_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Poison_2_Rel_Spd));
+                OnPropertyChanged(nameof(Poison_2_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Poison_2_Rel_Spd_sortIndex)]
+        [DisplayName(Poison_2_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Poison_2_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Poison_2_Rel_Spd).ToStringWithId(Poison_2_Rel_Spd);
 
         public const string Paralysis_1_Mag_Cnt_displayName = "Paralysis 1 Mag Cnt";
         public const int Paralysis_1_Mag_Cnt_sortIndex = 3650;
@@ -1039,6 +1375,7 @@ namespace MHW_Editor.Weapons {
         public const int Paralysis_1_Rec_Amnt_sortIndex = 3700;
         [SortOrder(Paralysis_1_Rec_Amnt_sortIndex)]
         [DisplayName(Paralysis_1_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Paralysis_1_Rec_Amnt {
             get => GetData<byte>(73);
             set {
@@ -1046,13 +1383,20 @@ namespace MHW_Editor.Weapons {
                 SetData(73, value, nameof(Paralysis_1_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Paralysis_1_Rec_Amnt));
+                OnPropertyChanged(nameof(Paralysis_1_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Paralysis_1_Rec_Amnt_sortIndex)]
+        [DisplayName(Paralysis_1_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Paralysis_1_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Paralysis_1_Rec_Amnt).ToStringWithId(Paralysis_1_Rec_Amnt);
 
         public const string Paralysis_1_Rel_Spd_displayName = "Paralysis 1 Rel Spd";
         public const int Paralysis_1_Rel_Spd_sortIndex = 3750;
         [SortOrder(Paralysis_1_Rel_Spd_sortIndex)]
         [DisplayName(Paralysis_1_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Paralysis_1_Rel_Spd {
             get => GetData<byte>(74);
             set {
@@ -1060,8 +1404,14 @@ namespace MHW_Editor.Weapons {
                 SetData(74, value, nameof(Paralysis_1_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Paralysis_1_Rel_Spd));
+                OnPropertyChanged(nameof(Paralysis_1_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Paralysis_1_Rel_Spd_sortIndex)]
+        [DisplayName(Paralysis_1_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Paralysis_1_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Paralysis_1_Rel_Spd).ToStringWithId(Paralysis_1_Rel_Spd);
 
         public const string Paralysis_2_Mag_Cnt_displayName = "Paralysis 2 Mag Cnt";
         public const int Paralysis_2_Mag_Cnt_sortIndex = 3800;
@@ -1081,6 +1431,7 @@ namespace MHW_Editor.Weapons {
         public const int Paralysis_2_Rec_Amnt_sortIndex = 3850;
         [SortOrder(Paralysis_2_Rec_Amnt_sortIndex)]
         [DisplayName(Paralysis_2_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Paralysis_2_Rec_Amnt {
             get => GetData<byte>(76);
             set {
@@ -1088,13 +1439,20 @@ namespace MHW_Editor.Weapons {
                 SetData(76, value, nameof(Paralysis_2_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Paralysis_2_Rec_Amnt));
+                OnPropertyChanged(nameof(Paralysis_2_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Paralysis_2_Rec_Amnt_sortIndex)]
+        [DisplayName(Paralysis_2_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Paralysis_2_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Paralysis_2_Rec_Amnt).ToStringWithId(Paralysis_2_Rec_Amnt);
 
         public const string Paralysis_2_Rel_Spd_displayName = "Paralysis 2 Rel Spd";
         public const int Paralysis_2_Rel_Spd_sortIndex = 3900;
         [SortOrder(Paralysis_2_Rel_Spd_sortIndex)]
         [DisplayName(Paralysis_2_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Paralysis_2_Rel_Spd {
             get => GetData<byte>(77);
             set {
@@ -1102,8 +1460,14 @@ namespace MHW_Editor.Weapons {
                 SetData(77, value, nameof(Paralysis_2_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Paralysis_2_Rel_Spd));
+                OnPropertyChanged(nameof(Paralysis_2_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Paralysis_2_Rel_Spd_sortIndex)]
+        [DisplayName(Paralysis_2_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Paralysis_2_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Paralysis_2_Rel_Spd).ToStringWithId(Paralysis_2_Rel_Spd);
 
         public const string Sleep_1_Mag_Cnt_displayName = "Sleep 1 Mag Cnt";
         public const int Sleep_1_Mag_Cnt_sortIndex = 3950;
@@ -1123,6 +1487,7 @@ namespace MHW_Editor.Weapons {
         public const int Sleep_1_Rec_Amnt_sortIndex = 4000;
         [SortOrder(Sleep_1_Rec_Amnt_sortIndex)]
         [DisplayName(Sleep_1_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Sleep_1_Rec_Amnt {
             get => GetData<byte>(79);
             set {
@@ -1130,13 +1495,20 @@ namespace MHW_Editor.Weapons {
                 SetData(79, value, nameof(Sleep_1_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Sleep_1_Rec_Amnt));
+                OnPropertyChanged(nameof(Sleep_1_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Sleep_1_Rec_Amnt_sortIndex)]
+        [DisplayName(Sleep_1_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Sleep_1_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Sleep_1_Rec_Amnt).ToStringWithId(Sleep_1_Rec_Amnt);
 
         public const string Sleep_1_Rel_Spd_displayName = "Sleep 1 Rel Spd";
         public const int Sleep_1_Rel_Spd_sortIndex = 4050;
         [SortOrder(Sleep_1_Rel_Spd_sortIndex)]
         [DisplayName(Sleep_1_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Sleep_1_Rel_Spd {
             get => GetData<byte>(80);
             set {
@@ -1144,8 +1516,14 @@ namespace MHW_Editor.Weapons {
                 SetData(80, value, nameof(Sleep_1_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Sleep_1_Rel_Spd));
+                OnPropertyChanged(nameof(Sleep_1_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Sleep_1_Rel_Spd_sortIndex)]
+        [DisplayName(Sleep_1_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Sleep_1_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Sleep_1_Rel_Spd).ToStringWithId(Sleep_1_Rel_Spd);
 
         public const string Sleep_2_Mag_Cnt_displayName = "Sleep 2 Mag Cnt";
         public const int Sleep_2_Mag_Cnt_sortIndex = 4100;
@@ -1165,6 +1543,7 @@ namespace MHW_Editor.Weapons {
         public const int Sleep_2_Rec_Amnt_sortIndex = 4150;
         [SortOrder(Sleep_2_Rec_Amnt_sortIndex)]
         [DisplayName(Sleep_2_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Sleep_2_Rec_Amnt {
             get => GetData<byte>(82);
             set {
@@ -1172,13 +1551,20 @@ namespace MHW_Editor.Weapons {
                 SetData(82, value, nameof(Sleep_2_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Sleep_2_Rec_Amnt));
+                OnPropertyChanged(nameof(Sleep_2_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Sleep_2_Rec_Amnt_sortIndex)]
+        [DisplayName(Sleep_2_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Sleep_2_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Sleep_2_Rec_Amnt).ToStringWithId(Sleep_2_Rec_Amnt);
 
         public const string Sleep_2_Rel_Spd_displayName = "Sleep 2 Rel Spd";
         public const int Sleep_2_Rel_Spd_sortIndex = 4200;
         [SortOrder(Sleep_2_Rel_Spd_sortIndex)]
         [DisplayName(Sleep_2_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Sleep_2_Rel_Spd {
             get => GetData<byte>(83);
             set {
@@ -1186,8 +1572,14 @@ namespace MHW_Editor.Weapons {
                 SetData(83, value, nameof(Sleep_2_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Sleep_2_Rel_Spd));
+                OnPropertyChanged(nameof(Sleep_2_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Sleep_2_Rel_Spd_sortIndex)]
+        [DisplayName(Sleep_2_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Sleep_2_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Sleep_2_Rel_Spd).ToStringWithId(Sleep_2_Rel_Spd);
 
         public const string Exhaust_1_Mag_Cnt_displayName = "Exhaust 1 Mag Cnt";
         public const int Exhaust_1_Mag_Cnt_sortIndex = 4250;
@@ -1207,6 +1599,7 @@ namespace MHW_Editor.Weapons {
         public const int Exhaust_1_Rec_Amnt_sortIndex = 4300;
         [SortOrder(Exhaust_1_Rec_Amnt_sortIndex)]
         [DisplayName(Exhaust_1_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Exhaust_1_Rec_Amnt {
             get => GetData<byte>(85);
             set {
@@ -1214,13 +1607,20 @@ namespace MHW_Editor.Weapons {
                 SetData(85, value, nameof(Exhaust_1_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Exhaust_1_Rec_Amnt));
+                OnPropertyChanged(nameof(Exhaust_1_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Exhaust_1_Rec_Amnt_sortIndex)]
+        [DisplayName(Exhaust_1_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Exhaust_1_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Exhaust_1_Rec_Amnt).ToStringWithId(Exhaust_1_Rec_Amnt);
 
         public const string Exhaust_1_Rel_Spd_displayName = "Exhaust 1 Rel Spd";
         public const int Exhaust_1_Rel_Spd_sortIndex = 4350;
         [SortOrder(Exhaust_1_Rel_Spd_sortIndex)]
         [DisplayName(Exhaust_1_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Exhaust_1_Rel_Spd {
             get => GetData<byte>(86);
             set {
@@ -1228,8 +1628,14 @@ namespace MHW_Editor.Weapons {
                 SetData(86, value, nameof(Exhaust_1_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Exhaust_1_Rel_Spd));
+                OnPropertyChanged(nameof(Exhaust_1_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Exhaust_1_Rel_Spd_sortIndex)]
+        [DisplayName(Exhaust_1_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Exhaust_1_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Exhaust_1_Rel_Spd).ToStringWithId(Exhaust_1_Rel_Spd);
 
         public const string Exhaust_2_Mag_Cnt_displayName = "Exhaust 2 Mag Cnt";
         public const int Exhaust_2_Mag_Cnt_sortIndex = 4400;
@@ -1249,6 +1655,7 @@ namespace MHW_Editor.Weapons {
         public const int Exhaust_2_Rec_Amnt_sortIndex = 4450;
         [SortOrder(Exhaust_2_Rec_Amnt_sortIndex)]
         [DisplayName(Exhaust_2_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Exhaust_2_Rec_Amnt {
             get => GetData<byte>(88);
             set {
@@ -1256,13 +1663,20 @@ namespace MHW_Editor.Weapons {
                 SetData(88, value, nameof(Exhaust_2_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Exhaust_2_Rec_Amnt));
+                OnPropertyChanged(nameof(Exhaust_2_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Exhaust_2_Rec_Amnt_sortIndex)]
+        [DisplayName(Exhaust_2_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Exhaust_2_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Exhaust_2_Rec_Amnt).ToStringWithId(Exhaust_2_Rec_Amnt);
 
         public const string Exhaust_2_Rel_Spd_displayName = "Exhaust 2 Rel Spd";
         public const int Exhaust_2_Rel_Spd_sortIndex = 4500;
         [SortOrder(Exhaust_2_Rel_Spd_sortIndex)]
         [DisplayName(Exhaust_2_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Exhaust_2_Rel_Spd {
             get => GetData<byte>(89);
             set {
@@ -1270,8 +1684,14 @@ namespace MHW_Editor.Weapons {
                 SetData(89, value, nameof(Exhaust_2_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Exhaust_2_Rel_Spd));
+                OnPropertyChanged(nameof(Exhaust_2_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Exhaust_2_Rel_Spd_sortIndex)]
+        [DisplayName(Exhaust_2_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Exhaust_2_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Exhaust_2_Rel_Spd).ToStringWithId(Exhaust_2_Rel_Spd);
 
         public const string Recover_1_Mag_Cnt_displayName = "Recover 1 Mag Cnt";
         public const int Recover_1_Mag_Cnt_sortIndex = 4550;
@@ -1291,6 +1711,7 @@ namespace MHW_Editor.Weapons {
         public const int Recover_1_Rec_Amnt_sortIndex = 4600;
         [SortOrder(Recover_1_Rec_Amnt_sortIndex)]
         [DisplayName(Recover_1_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Recover_1_Rec_Amnt {
             get => GetData<byte>(91);
             set {
@@ -1298,13 +1719,20 @@ namespace MHW_Editor.Weapons {
                 SetData(91, value, nameof(Recover_1_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Recover_1_Rec_Amnt));
+                OnPropertyChanged(nameof(Recover_1_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Recover_1_Rec_Amnt_sortIndex)]
+        [DisplayName(Recover_1_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Recover_1_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Recover_1_Rec_Amnt).ToStringWithId(Recover_1_Rec_Amnt);
 
         public const string Recover_1_Rel_Spd_displayName = "Recover 1 Rel Spd";
         public const int Recover_1_Rel_Spd_sortIndex = 4650;
         [SortOrder(Recover_1_Rel_Spd_sortIndex)]
         [DisplayName(Recover_1_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Recover_1_Rel_Spd {
             get => GetData<byte>(92);
             set {
@@ -1312,8 +1740,14 @@ namespace MHW_Editor.Weapons {
                 SetData(92, value, nameof(Recover_1_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Recover_1_Rel_Spd));
+                OnPropertyChanged(nameof(Recover_1_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Recover_1_Rel_Spd_sortIndex)]
+        [DisplayName(Recover_1_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Recover_1_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Recover_1_Rel_Spd).ToStringWithId(Recover_1_Rel_Spd);
 
         public const string Recover_2_Mag_Cnt_displayName = "Recover 2 Mag Cnt";
         public const int Recover_2_Mag_Cnt_sortIndex = 4700;
@@ -1333,6 +1767,7 @@ namespace MHW_Editor.Weapons {
         public const int Recover_2_Rec_Amnt_sortIndex = 4750;
         [SortOrder(Recover_2_Rec_Amnt_sortIndex)]
         [DisplayName(Recover_2_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Recover_2_Rec_Amnt {
             get => GetData<byte>(94);
             set {
@@ -1340,13 +1775,20 @@ namespace MHW_Editor.Weapons {
                 SetData(94, value, nameof(Recover_2_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Recover_2_Rec_Amnt));
+                OnPropertyChanged(nameof(Recover_2_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Recover_2_Rec_Amnt_sortIndex)]
+        [DisplayName(Recover_2_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Recover_2_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Recover_2_Rec_Amnt).ToStringWithId(Recover_2_Rec_Amnt);
 
         public const string Recover_2_Rel_Spd_displayName = "Recover 2 Rel Spd";
         public const int Recover_2_Rel_Spd_sortIndex = 4800;
         [SortOrder(Recover_2_Rel_Spd_sortIndex)]
         [DisplayName(Recover_2_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Recover_2_Rel_Spd {
             get => GetData<byte>(95);
             set {
@@ -1354,8 +1796,14 @@ namespace MHW_Editor.Weapons {
                 SetData(95, value, nameof(Recover_2_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Recover_2_Rel_Spd));
+                OnPropertyChanged(nameof(Recover_2_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Recover_2_Rel_Spd_sortIndex)]
+        [DisplayName(Recover_2_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Recover_2_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Recover_2_Rel_Spd).ToStringWithId(Recover_2_Rel_Spd);
 
         public const string Demon_Mag_Cnt_displayName = "Demon Mag Cnt";
         public const int Demon_Mag_Cnt_sortIndex = 4850;
@@ -1375,6 +1823,7 @@ namespace MHW_Editor.Weapons {
         public const int Demon_Rec_Amnt_sortIndex = 4900;
         [SortOrder(Demon_Rec_Amnt_sortIndex)]
         [DisplayName(Demon_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Demon_Rec_Amnt {
             get => GetData<byte>(97);
             set {
@@ -1382,13 +1831,20 @@ namespace MHW_Editor.Weapons {
                 SetData(97, value, nameof(Demon_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Demon_Rec_Amnt));
+                OnPropertyChanged(nameof(Demon_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Demon_Rec_Amnt_sortIndex)]
+        [DisplayName(Demon_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Demon_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Demon_Rec_Amnt).ToStringWithId(Demon_Rec_Amnt);
 
         public const string Demon_Rel_Spd_displayName = "Demon Rel Spd";
         public const int Demon_Rel_Spd_sortIndex = 4950;
         [SortOrder(Demon_Rel_Spd_sortIndex)]
         [DisplayName(Demon_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Demon_Rel_Spd {
             get => GetData<byte>(98);
             set {
@@ -1396,8 +1852,14 @@ namespace MHW_Editor.Weapons {
                 SetData(98, value, nameof(Demon_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Demon_Rel_Spd));
+                OnPropertyChanged(nameof(Demon_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Demon_Rel_Spd_sortIndex)]
+        [DisplayName(Demon_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Demon_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Demon_Rel_Spd).ToStringWithId(Demon_Rel_Spd);
 
         public const string Armor_Mag_Cnt_displayName = "Armor Mag Cnt";
         public const int Armor_Mag_Cnt_sortIndex = 5000;
@@ -1417,6 +1879,7 @@ namespace MHW_Editor.Weapons {
         public const int Armor_Rec_Amnt_sortIndex = 5050;
         [SortOrder(Armor_Rec_Amnt_sortIndex)]
         [DisplayName(Armor_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Armor_Rec_Amnt {
             get => GetData<byte>(100);
             set {
@@ -1424,13 +1887,20 @@ namespace MHW_Editor.Weapons {
                 SetData(100, value, nameof(Armor_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Armor_Rec_Amnt));
+                OnPropertyChanged(nameof(Armor_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Armor_Rec_Amnt_sortIndex)]
+        [DisplayName(Armor_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Armor_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Armor_Rec_Amnt).ToStringWithId(Armor_Rec_Amnt);
 
         public const string Armor_Rel_Spd_displayName = "Armor Rel Spd";
         public const int Armor_Rel_Spd_sortIndex = 5100;
         [SortOrder(Armor_Rel_Spd_sortIndex)]
         [DisplayName(Armor_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Armor_Rel_Spd {
             get => GetData<byte>(101);
             set {
@@ -1438,8 +1908,14 @@ namespace MHW_Editor.Weapons {
                 SetData(101, value, nameof(Armor_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Armor_Rel_Spd));
+                OnPropertyChanged(nameof(Armor_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Armor_Rel_Spd_sortIndex)]
+        [DisplayName(Armor_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Armor_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Armor_Rel_Spd).ToStringWithId(Armor_Rel_Spd);
 
         public const string Tranq_Mag_Cnt_displayName = "Tranq Mag Cnt";
         public const int Tranq_Mag_Cnt_sortIndex = 5150;
@@ -1459,6 +1935,7 @@ namespace MHW_Editor.Weapons {
         public const int Tranq_Rec_Amnt_sortIndex = 5200;
         [SortOrder(Tranq_Rec_Amnt_sortIndex)]
         [DisplayName(Tranq_Rec_Amnt_displayName)]
+        [DataSource(DataSourceType.ShellRecoil)]
         public virtual byte Tranq_Rec_Amnt {
             get => GetData<byte>(109);
             set {
@@ -1466,13 +1943,20 @@ namespace MHW_Editor.Weapons {
                 SetData(109, value, nameof(Tranq_Rec_Amnt));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Tranq_Rec_Amnt));
+                OnPropertyChanged(nameof(Tranq_Rec_Amnt_button));
             }
         }
+
+        [SortOrder(Tranq_Rec_Amnt_sortIndex)]
+        [DisplayName(Tranq_Rec_Amnt_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Tranq_Rec_Amnt_button => ShellTable.recoilLookup.TryGet(Tranq_Rec_Amnt).ToStringWithId(Tranq_Rec_Amnt);
 
         public const string Tranq_Rel_Spd_displayName = "Tranq Rel Spd";
         public const int Tranq_Rel_Spd_sortIndex = 5250;
         [SortOrder(Tranq_Rel_Spd_sortIndex)]
         [DisplayName(Tranq_Rel_Spd_displayName)]
+        [DataSource(DataSourceType.ShellReload)]
         public virtual byte Tranq_Rel_Spd {
             get => GetData<byte>(110);
             set {
@@ -1480,8 +1964,14 @@ namespace MHW_Editor.Weapons {
                 SetData(110, value, nameof(Tranq_Rel_Spd));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Tranq_Rel_Spd));
+                OnPropertyChanged(nameof(Tranq_Rel_Spd_button));
             }
         }
+
+        [SortOrder(Tranq_Rel_Spd_sortIndex)]
+        [DisplayName(Tranq_Rel_Spd_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Tranq_Rel_Spd_button => ShellTable.reloadLookup.TryGet(Tranq_Rel_Spd).ToStringWithId(Tranq_Rel_Spd);
 
         public const int lastSortIndex = 5300;
     }

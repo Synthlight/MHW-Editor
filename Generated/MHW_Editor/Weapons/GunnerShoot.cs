@@ -17,6 +17,7 @@ namespace MHW_Editor.Weapons {
         public const int No_Mods_sortIndex = 50;
         [SortOrder(No_Mods_sortIndex)]
         [DisplayName(No_Mods_displayName)]
+        [DataSource(DataSourceType.GunnerRecoil)]
         public virtual byte No_Mods {
             get => GetData<byte>(0);
             set {
@@ -24,13 +25,20 @@ namespace MHW_Editor.Weapons {
                 SetData(0, value, nameof(No_Mods));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(No_Mods));
+                OnPropertyChanged(nameof(No_Mods_button));
             }
         }
+
+        [SortOrder(No_Mods_sortIndex)]
+        [DisplayName(No_Mods_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string No_Mods_button => GunnerShoot.recoilLookup.TryGet(No_Mods).ToStringWithId(No_Mods);
 
         public const string Mod_1_displayName = "Mod 1";
         public const int Mod_1_sortIndex = 100;
         [SortOrder(Mod_1_sortIndex)]
         [DisplayName(Mod_1_displayName)]
+        [DataSource(DataSourceType.GunnerRecoil)]
         public virtual byte Mod_1 {
             get => GetData<byte>(1);
             set {
@@ -38,13 +46,20 @@ namespace MHW_Editor.Weapons {
                 SetData(1, value, nameof(Mod_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mod_1));
+                OnPropertyChanged(nameof(Mod_1_button));
             }
         }
+
+        [SortOrder(Mod_1_sortIndex)]
+        [DisplayName(Mod_1_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Mod_1_button => GunnerShoot.recoilLookup.TryGet(Mod_1).ToStringWithId(Mod_1);
 
         public const string Mod_2_displayName = "Mod 2";
         public const int Mod_2_sortIndex = 150;
         [SortOrder(Mod_2_sortIndex)]
         [DisplayName(Mod_2_displayName)]
+        [DataSource(DataSourceType.GunnerRecoil)]
         public virtual byte Mod_2 {
             get => GetData<byte>(2);
             set {
@@ -52,13 +67,20 @@ namespace MHW_Editor.Weapons {
                 SetData(2, value, nameof(Mod_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mod_2));
+                OnPropertyChanged(nameof(Mod_2_button));
             }
         }
+
+        [SortOrder(Mod_2_sortIndex)]
+        [DisplayName(Mod_2_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Mod_2_button => GunnerShoot.recoilLookup.TryGet(Mod_2).ToStringWithId(Mod_2);
 
         public const string Mod_3_displayName = "Mod 3";
         public const int Mod_3_sortIndex = 200;
         [SortOrder(Mod_3_sortIndex)]
         [DisplayName(Mod_3_displayName)]
+        [DataSource(DataSourceType.GunnerRecoil)]
         public virtual byte Mod_3 {
             get => GetData<byte>(3);
             set {
@@ -66,13 +88,20 @@ namespace MHW_Editor.Weapons {
                 SetData(3, value, nameof(Mod_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mod_3));
+                OnPropertyChanged(nameof(Mod_3_button));
             }
         }
+
+        [SortOrder(Mod_3_sortIndex)]
+        [DisplayName(Mod_3_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Mod_3_button => GunnerShoot.recoilLookup.TryGet(Mod_3).ToStringWithId(Mod_3);
 
         public const string Mod_4_displayName = "Mod 4";
         public const int Mod_4_sortIndex = 250;
         [SortOrder(Mod_4_sortIndex)]
         [DisplayName(Mod_4_displayName)]
+        [DataSource(DataSourceType.GunnerRecoil)]
         public virtual byte Mod_4 {
             get => GetData<byte>(4);
             set {
@@ -80,8 +109,14 @@ namespace MHW_Editor.Weapons {
                 SetData(4, value, nameof(Mod_4));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Mod_4));
+                OnPropertyChanged(nameof(Mod_4_button));
             }
         }
+
+        [SortOrder(Mod_4_sortIndex)]
+        [DisplayName(Mod_4_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Mod_4_button => GunnerShoot.recoilLookup.TryGet(Mod_4).ToStringWithId(Mod_4);
 
         public const int lastSortIndex = 300;
     }

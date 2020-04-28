@@ -16,6 +16,10 @@ namespace MHW_Template {
                 DataSourceType.Pendants => "DataHelper.pendantNames[MainWindow.locale]",
                 DataSourceType.Monsters => "DataHelper.monsterNames[MainWindow.locale]",
                 DataSourceType.MonstersNeg => "DataHelper.monsterNamesNeg[MainWindow.locale]",
+                DataSourceType.ShellRecoil => "ShellTable.recoilLookup",
+                DataSourceType.ShellReload => "ShellTable.reloadLookup",
+                DataSourceType.GunnerRecoil => "GunnerShoot.recoilLookup",
+                DataSourceType.GunnerReload => "GunnerReload.reloadLookup",
                 _ => throw new ArgumentOutOfRangeException()
             };
         }

@@ -222,9 +222,6 @@ namespace MHW_Editor {
         }
 
         private void Dg_items_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e) {
-            Debug.Assert(e.PropertyName != null, "e.PropertyName != null");
-            var fileName = Path.GetFileNameWithoutExtension(targetFile);
-
             switch (e.PropertyName) {
                 case nameof(IMhwItem.Bytes):
                 case nameof(IMhwItem.UniqueId):
@@ -265,124 +262,6 @@ namespace MHW_Editor {
             }
 
             if (e.Cancel) return;
-
-            switch (e.PropertyName) {
-                case nameof(ShellTable.Armor_Rec_Amnt):
-                case nameof(ShellTable.Cluster_1_Rec_Amnt):
-                case nameof(ShellTable.Cluster_2_Rec_Amnt):
-                case nameof(ShellTable.Cluster_3_Rec_Amnt):
-                case nameof(ShellTable.Demon_Rec_Amnt):
-                case nameof(ShellTable.Dragon_Rec_Amnt):
-                case nameof(ShellTable.Exhaust_1_Rec_Amnt):
-                case nameof(ShellTable.Exhaust_2_Rec_Amnt):
-                case nameof(ShellTable.Flaming_Rec_Amnt):
-                case nameof(ShellTable.Freeze_Rec_Amnt):
-                case nameof(ShellTable.Normal_1_Rec_Amnt):
-                case nameof(ShellTable.Normal_2_Rec_Amnt):
-                case nameof(ShellTable.Normal_3_Rec_Amnt):
-                case nameof(ShellTable.Paralysis_1_Rec_Amnt):
-                case nameof(ShellTable.Paralysis_2_Rec_Amnt):
-                case nameof(ShellTable.Pierce_1_Rec_Amnt):
-                case nameof(ShellTable.Pierce_2_Rec_Amnt):
-                case nameof(ShellTable.Pierce_3_Rec_Amnt):
-                case nameof(ShellTable.Poison_1_Rec_Amnt):
-                case nameof(ShellTable.Poison_2_Rec_Amnt):
-                case nameof(ShellTable.Recover_1_Rec_Amnt):
-                case nameof(ShellTable.Recover_2_Rec_Amnt):
-                case nameof(ShellTable.Sleep_1_Rec_Amnt):
-                case nameof(ShellTable.Sleep_2_Rec_Amnt):
-                case nameof(ShellTable.Slicing_Rec_Amnt):
-                case nameof(ShellTable.Spread_1_Rec_Amnt):
-                case nameof(ShellTable.Spread_2_Rec_Amnt):
-                case nameof(ShellTable.Spread_3_Rec_Amnt):
-                case nameof(ShellTable.Sticky_1_Rec_Amnt):
-                case nameof(ShellTable.Sticky_2_Rec_Amnt):
-                case nameof(ShellTable.Sticky_3_Rec_Amnt):
-                case nameof(ShellTable.Thunder_Rec_Amnt):
-                case nameof(ShellTable.Tranq_Rec_Amnt):
-                case nameof(ShellTable.Water_Rec_Amnt):
-                case nameof(ShellTable.Wyvern_Rec_Amnt): {
-                    var cb = new DataGridComboBoxColumn {
-                        Header               = e.Column.Header,
-                        ItemsSource          = ShellTable.recoilLookup,
-                        SelectedValueBinding = new Binding(e.PropertyName),
-                        SelectedValuePath    = "Key",
-                        DisplayMemberPath    = "Value",
-                        CanUserSort          = true
-                    };
-                    e.Column = cb;
-                    break;
-                }
-                case nameof(ShellTable.Armor_Rel_Spd):
-                case nameof(ShellTable.Cluster_1_Rel_Spd):
-                case nameof(ShellTable.Cluster_2_Rel_Spd):
-                case nameof(ShellTable.Cluster_3_Rel_Spd):
-                case nameof(ShellTable.Demon_Rel_Spd):
-                case nameof(ShellTable.Dragon_Rel_Spd):
-                case nameof(ShellTable.Exhaust_1_Rel_Spd):
-                case nameof(ShellTable.Exhaust_2_Rel_Spd):
-                case nameof(ShellTable.Flaming_Rel_Spd):
-                case nameof(ShellTable.Freeze_Rel_Spd):
-                case nameof(ShellTable.Normal_1_Rel_Spd):
-                case nameof(ShellTable.Normal_2_Rel_Spd):
-                case nameof(ShellTable.Normal_3_Rel_Spd):
-                case nameof(ShellTable.Paralysis_1_Rel_Spd):
-                case nameof(ShellTable.Paralysis_2_Rel_Spd):
-                case nameof(ShellTable.Pierce_1_Rel_Spd):
-                case nameof(ShellTable.Pierce_2_Rel_Spd):
-                case nameof(ShellTable.Pierce_3_Rel_Spd):
-                case nameof(ShellTable.Poison_1_Rel_Spd):
-                case nameof(ShellTable.Poison_2_Rel_Spd):
-                case nameof(ShellTable.Recover_1_Rel_Spd):
-                case nameof(ShellTable.Recover_2_Rel_Spd):
-                case nameof(ShellTable.Sleep_1_Rel_Spd):
-                case nameof(ShellTable.Sleep_2_Rel_Spd):
-                case nameof(ShellTable.Slicing_Rel_Spd):
-                case nameof(ShellTable.Spread_1_Rel_Spd):
-                case nameof(ShellTable.Spread_2_Rel_Spd):
-                case nameof(ShellTable.Spread_3_Rel_Spd):
-                case nameof(ShellTable.Sticky_1_Rel_Spd):
-                case nameof(ShellTable.Sticky_2_Rel_Spd):
-                case nameof(ShellTable.Sticky_3_Rel_Spd):
-                case nameof(ShellTable.Thunder_Rel_Spd):
-                case nameof(ShellTable.Tranq_Rel_Spd):
-                case nameof(ShellTable.Water_Rel_Spd):
-                case nameof(ShellTable.Wyvern_Rel_Spd): {
-                    var cb = new DataGridComboBoxColumn {
-                        Header               = e.Column.Header,
-                        ItemsSource          = ShellTable.reloadLookup,
-                        SelectedValueBinding = new Binding(e.PropertyName),
-                        SelectedValuePath    = "Key",
-                        DisplayMemberPath    = "Value",
-                        CanUserSort          = true
-                    };
-                    e.Column = cb;
-                    break;
-                }
-                case nameof(GunnerReload.No_Mods):
-                case nameof(GunnerReload.Mod_1):
-                case nameof(GunnerReload.Mod_2):
-                case nameof(GunnerReload.Mod_3):
-                case nameof(GunnerReload.Mod_4): {
-                    Dictionary<byte, IdNamePair<byte>> source = null;
-                    if (targetFileType.Is(typeof(GunnerReload))) {
-                        source = GunnerReload.reloadLookup;
-                    } else if (targetFileType.Is(typeof(GunnerShoot))) {
-                        source = GunnerShoot.recoilLookup;
-                    }
-
-                    var cb = new DataGridComboBoxColumn {
-                        Header               = e.Column.Header,
-                        ItemsSource          = source,
-                        SelectedValueBinding = new Binding(e.PropertyName),
-                        SelectedValuePath    = "Key",
-                        DisplayMemberPath    = "Value",
-                        CanUserSort          = true
-                    };
-                    e.Column = cb;
-                    break;
-                }
-            }
 
             if (e.PropertyName.EndsWith("_percent")) {
                 var cb = new DataGridTextColumn {
@@ -536,6 +415,10 @@ namespace MHW_Editor {
                 DataSourceType.Pendants => DataHelper.pendantNames[locale],
                 DataSourceType.Monsters => DataHelper.monsterNames[locale],
                 DataSourceType.MonstersNeg => DataHelper.monsterNamesNeg[locale],
+                DataSourceType.ShellRecoil => ShellTable.recoilLookup,
+                DataSourceType.ShellReload => ShellTable.reloadLookup,
+                DataSourceType.GunnerRecoil => GunnerShoot.recoilLookup,
+                DataSourceType.GunnerReload => GunnerReload.reloadLookup,
                 _ => throw new ArgumentOutOfRangeException(dataSourceType.ToString())
             };
 
