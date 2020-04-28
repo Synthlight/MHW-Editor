@@ -44,33 +44,33 @@ namespace MHW_Editor {
     public partial class MainWindow {
 #if DEBUG
         private const bool ENABLE_CHEAT_BUTTONS = true;
-        private const bool SHOW_RAW_BYTES = true;
+        private const bool SHOW_RAW_BYTES       = true;
 #else
         private const bool ENABLE_CHEAT_BUTTONS = false;
         private const bool SHOW_RAW_BYTES = false;
 #endif
-        private const string NEXUS_LINK = "https://www.nexusmods.com/monsterhunterworld/mods/2068";
+        private const string NEXUS_LINK           = "https://www.nexusmods.com/monsterhunterworld/mods/2068";
         private const string CURRENT_GAME_VERSION = "13.5X.XX";
-        private const string TITLE = "MHW Editor";
-        public const double FONT_SIZE = 20;
+        private const string TITLE                = "MHW Editor";
+        public const  double FONT_SIZE            = 20;
 
-        private readonly ObservableCollection<dynamic> items = new ObservableCollection<dynamic>();
-        private string targetFile;
-        private Type targetFileType;
-        private Dictionary<object, Dictionary<string, ColumnHolder>> columnMap;
+        private readonly ObservableCollection<dynamic>                        items = new ObservableCollection<dynamic>();
+        private          string                                               targetFile;
+        private          Type                                                 targetFileType;
+        private          Dictionary<object, Dictionary<string, ColumnHolder>> columnMap;
         [CanBeNull]
         private DataGridRow coloredRow;
-        private bool isManualEditCommit;
+        private       bool    isManualEditCommit;
         public static LangMap skillDatLookup = new LangMap();
         [CanBeNull]
         private CancellationTokenSource savedTimer;
         private readonly Brush backgroundBrush = (Brush) new BrushConverter().ConvertFrom("#c0e1fb");
         [CanBeNull]
         private NotifyIcon notifyIcon;
-        private readonly bool unlockFields;
+        private readonly bool           unlockFields;
         private readonly List<DataGrid> dataGrids = new List<DataGrid>();
-        private dynamic customFileData;
-        public static bool showAll;
+        private          dynamic        customFileData;
+        public static    bool           showAll;
 
         public static string locale = "eng";
         public string Locale {
@@ -126,8 +126,8 @@ namespace MHW_Editor {
             if (args.Length >= 4) {
                 try {
                     if (args.ContainsIgnoreCase("-decrypt") || args.ContainsIgnoreCase("-encrypt")) {
-                        var action = args[1].ToLower();
-                        var inFile = args[2];
+                        var action  = args[1].ToLower();
+                        var inFile  = args[2];
                         var outFile = args[3];
 
                         var ext = Path.GetExtension(inFile);
@@ -160,11 +160,11 @@ namespace MHW_Editor {
             Title = TITLE;
 
             mainDataGrid.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
-            mainDataGrid.VerticalScrollBarVisibility = ScrollBarVisibility.Auto;
+            mainDataGrid.VerticalScrollBarVisibility   = ScrollBarVisibility.Auto;
 
             cbx_localization.ItemsSource = Global.LANGUAGE_NAME_LOOKUP;
 
-            Width = SystemParameters.MaximizedPrimaryScreenWidth * 0.8;
+            Width  = SystemParameters.MaximizedPrimaryScreenWidth * 0.8;
             Height = SystemParameters.MaximizedPrimaryScreenHeight * 0.5;
 
             DoUpdateCheck();
@@ -173,14 +173,14 @@ namespace MHW_Editor {
         private async void DoUpdateCheck() {
             await Task.Run(() => {
                 try {
-                    var json = GetHttpText("http://brutsches.com/MHW-Editor.version.json");
+                    var json           = GetHttpText("http://brutsches.com/MHW-Editor.version.json");
                     var currentVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
-                    var newestVersion = JsonConvert.DeserializeObject<VersionCheck>(json).latest;
+                    var newestVersion  = JsonConvert.DeserializeObject<VersionCheck>(json).latest;
 
                     if (currentVersion != newestVersion) {
                         RunOnUiThread(() => {
                             notifyIcon = new NotifyIcon {
-                                Icon = SystemIcons.Application,
+                                Icon    = SystemIcons.Application,
                                 Visible = false,
                                 Text = "MHW Editor\r\n" +
                                        "Update Available.\r\n" +
@@ -211,7 +211,7 @@ namespace MHW_Editor {
             request.Method = "GET";
 
             using var response = (HttpWebResponse) request.GetResponse();
-            using var reader = new StreamReader(response.GetResponseStream() ?? throw new InvalidOperationException());
+            using var reader   = new StreamReader(response.GetResponseStream() ?? throw new InvalidOperationException());
             return reader.ReadToEnd();
         }
 
@@ -259,7 +259,8 @@ namespace MHW_Editor {
             }
 
             // Cancel for _button columns as we will use a text version with onClick opening a selector.
-            if (ButtonTypeInfo.BUTTON_BASE_NAMES.Contains(e.PropertyName)) {
+            if (ButtonTypeInfo.TYPE_AND_NAME.ContainsKey(targetFileType)
+                && ButtonTypeInfo.TYPE_AND_NAME[targetFileType].Contains(e.PropertyName)) {
                 e.Cancel = true;
             }
 
@@ -302,12 +303,12 @@ namespace MHW_Editor {
                 case nameof(ShellTable.Water_Rec_Amnt):
                 case nameof(ShellTable.Wyvern_Rec_Amnt): {
                     var cb = new DataGridComboBoxColumn {
-                        Header = e.Column.Header,
-                        ItemsSource = ShellTable.recoilLookup,
+                        Header               = e.Column.Header,
+                        ItemsSource          = ShellTable.recoilLookup,
                         SelectedValueBinding = new Binding(e.PropertyName),
-                        SelectedValuePath = "Key",
-                        DisplayMemberPath = "Value",
-                        CanUserSort = true
+                        SelectedValuePath    = "Key",
+                        DisplayMemberPath    = "Value",
+                        CanUserSort          = true
                     };
                     e.Column = cb;
                     break;
@@ -348,12 +349,12 @@ namespace MHW_Editor {
                 case nameof(ShellTable.Water_Rel_Spd):
                 case nameof(ShellTable.Wyvern_Rel_Spd): {
                     var cb = new DataGridComboBoxColumn {
-                        Header = e.Column.Header,
-                        ItemsSource = ShellTable.reloadLookup,
+                        Header               = e.Column.Header,
+                        ItemsSource          = ShellTable.reloadLookup,
                         SelectedValueBinding = new Binding(e.PropertyName),
-                        SelectedValuePath = "Key",
-                        DisplayMemberPath = "Value",
-                        CanUserSort = true
+                        SelectedValuePath    = "Key",
+                        DisplayMemberPath    = "Value",
+                        CanUserSort          = true
                     };
                     e.Column = cb;
                     break;
@@ -371,12 +372,12 @@ namespace MHW_Editor {
                     }
 
                     var cb = new DataGridComboBoxColumn {
-                        Header = e.Column.Header,
-                        ItemsSource = source,
+                        Header               = e.Column.Header,
+                        ItemsSource          = source,
                         SelectedValueBinding = new Binding(e.PropertyName),
-                        SelectedValuePath = "Key",
-                        DisplayMemberPath = "Value",
-                        CanUserSort = true
+                        SelectedValuePath    = "Key",
+                        DisplayMemberPath    = "Value",
+                        CanUserSort          = true
                     };
                     e.Column = cb;
                     break;
@@ -390,7 +391,7 @@ namespace MHW_Editor {
                         StringFormat = "{0:0.##%;-0.##%;\"\"}" // Can't be negative, but needed to hide all 0 cases.
                     },
                     CanUserSort = true,
-                    IsReadOnly = true
+                    IsReadOnly  = true
                 };
                 e.Column = cb;
             }
@@ -402,7 +403,7 @@ namespace MHW_Editor {
                         StringFormat = "{0:yyyy-MM-dd}" // Can't be negative, but needed to hide all 0 cases.
                     },
                     CanUserSort = true,
-                    IsReadOnly = true
+                    IsReadOnly  = true
                 };
                 e.Column = cb;
             }
@@ -417,13 +418,13 @@ namespace MHW_Editor {
             // Use [SortOrder] attribute to control the position. Generated fields have spacing so it's easy to say 'generated_field_sortOrder + 1'.
             // Use [CustomSorter] to define an IComparer class to control sorting.
             Type sourceClassType = ((dynamic) e.PropertyDescriptor).ComponentType;
-            var propertyInfo = sourceClassType.GetProperties().FirstOrDefault(info => info.Name == e.PropertyName);
+            var  propertyInfo    = sourceClassType.GetProperties().FirstOrDefault(info => info.Name == e.PropertyName);
 
-            var displayName = ((DisplayNameAttribute) propertyInfo?.GetCustomAttribute(typeof(DisplayNameAttribute), true))?.DisplayName;
-            var sortOrder = ((SortOrderAttribute) propertyInfo?.GetCustomAttribute(typeof(SortOrderAttribute), true))?.sortOrder;
-            var customSorterType = ((CustomSorterAttribute) propertyInfo?.GetCustomAttribute(typeof(CustomSorterAttribute), true))?.customSorterType;
-            var isReadOnly = (IsReadOnlyAttribute) propertyInfo?.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
-            ICustomSorter customSorter = null;
+            var           displayName      = ((DisplayNameAttribute) propertyInfo?.GetCustomAttribute(typeof(DisplayNameAttribute), true))?.DisplayName;
+            var           sortOrder        = ((SortOrderAttribute) propertyInfo?.GetCustomAttribute(typeof(SortOrderAttribute), true))?.sortOrder;
+            var           customSorterType = ((CustomSorterAttribute) propertyInfo?.GetCustomAttribute(typeof(CustomSorterAttribute), true))?.customSorterType;
+            var           isReadOnly       = (IsReadOnlyAttribute) propertyInfo?.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
+            ICustomSorter customSorter     = null;
 
             if (displayName != null) {
                 if (displayName == "") { // Use empty DisplayName as a way to hide columns.
@@ -516,11 +517,11 @@ namespace MHW_Editor {
         }
 
         private void EditSelectedItemId(FrameworkElement cell, string propertyName) {
-            var obj = (IOnPropertyChanged) cell.DataContext;
+            var obj      = (IOnPropertyChanged) cell.DataContext;
             var property = obj.GetType().GetProperty(propertyName.Replace("_button", ""), BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
             Debug.Assert(property != null, nameof(property) + " != null");
-            var propertyType = property.PropertyType;
-            var value = property.GetValue(obj);
+            var propertyType   = property.PropertyType;
+            var value          = property.GetValue(obj);
             var dataSourceType = ((DataSourceAttribute) property.GetCustomAttribute(typeof(DataSourceAttribute), true))?.dataType;
 
             dynamic dataSource = dataSourceType switch {
@@ -532,6 +533,9 @@ namespace MHW_Editor {
                 DataSourceType.WeaponsById => DataHelper.weaponIdNameLookup[GetWeaponType(cell)][locale],
                 DataSourceType.WeaponsByIndex => DataHelper.weaponIndexNameLookup[GetWeaponType(cell)][locale],
                 DataSourceType.EquipmentById => DataHelper.equipmentIdNameLookup[GetEquipmentType(cell)][locale],
+                DataSourceType.Pendants => DataHelper.pendantNames[locale],
+                DataSourceType.Monsters => DataHelper.monsterNames[locale],
+                DataSourceType.MonstersNeg => DataHelper.monsterNamesNeg[locale],
                 _ => throw new ArgumentOutOfRangeException(dataSourceType.ToString())
             };
 
@@ -600,29 +604,29 @@ namespace MHW_Editor {
                 }
 
                 foreach (DecoLottery item in items) {
-                    dict[0] += item.Grade_1;
-                    dict[1] += item.Grade_2;
-                    dict[2] += item.Grade_3;
-                    dict[3] += item.Grade_4;
-                    dict[4] += item.Grade_5;
-                    dict[5] += item.Grade_6;
-                    dict[6] += item.Grade_7;
-                    dict[7] += item.Grade_8;
-                    dict[8] += item.Grade_9;
-                    dict[9] += item.Stream_R6_;
+                    dict[0]  += item.Grade_1;
+                    dict[1]  += item.Grade_2;
+                    dict[2]  += item.Grade_3;
+                    dict[3]  += item.Grade_4;
+                    dict[4]  += item.Grade_5;
+                    dict[5]  += item.Grade_6;
+                    dict[6]  += item.Grade_7;
+                    dict[7]  += item.Grade_8;
+                    dict[8]  += item.Grade_9;
+                    dict[9]  += item.Stream_R6_;
                     dict[10] += item.Stream_R8_;
                 }
 
                 foreach (DecoLottery item in items) {
-                    item.Grade_1_percent = item.Grade_1 > 0f ? (float) item.Grade_1 / dict[0] : 0f;
-                    item.Grade_2_percent = item.Grade_2 > 0f ? (float) item.Grade_2 / dict[1] : 0f;
-                    item.Grade_3_percent = item.Grade_3 > 0f ? (float) item.Grade_3 / dict[2] : 0f;
-                    item.Grade_4_percent = item.Grade_4 > 0f ? (float) item.Grade_4 / dict[3] : 0f;
-                    item.Grade_5_percent = item.Grade_5 > 0f ? (float) item.Grade_5 / dict[4] : 0f;
-                    item.Grade_6_percent = item.Grade_6 > 0f ? (float) item.Grade_6 / dict[5] : 0f;
-                    item.Grade_7_percent = item.Grade_7 > 0f ? (float) item.Grade_7 / dict[6] : 0f;
-                    item.Grade_8_percent = item.Grade_8 > 0f ? (float) item.Grade_8 / dict[7] : 0f;
-                    item.Grade_9_percent = item.Grade_9 > 0f ? (float) item.Grade_9 / dict[8] : 0f;
+                    item.Grade_1_percent    = item.Grade_1 > 0f ? (float) item.Grade_1 / dict[0] : 0f;
+                    item.Grade_2_percent    = item.Grade_2 > 0f ? (float) item.Grade_2 / dict[1] : 0f;
+                    item.Grade_3_percent    = item.Grade_3 > 0f ? (float) item.Grade_3 / dict[2] : 0f;
+                    item.Grade_4_percent    = item.Grade_4 > 0f ? (float) item.Grade_4 / dict[3] : 0f;
+                    item.Grade_5_percent    = item.Grade_5 > 0f ? (float) item.Grade_5 / dict[4] : 0f;
+                    item.Grade_6_percent    = item.Grade_6 > 0f ? (float) item.Grade_6 / dict[5] : 0f;
+                    item.Grade_7_percent    = item.Grade_7 > 0f ? (float) item.Grade_7 / dict[6] : 0f;
+                    item.Grade_8_percent    = item.Grade_8 > 0f ? (float) item.Grade_8 / dict[7] : 0f;
+                    item.Grade_9_percent    = item.Grade_9 > 0f ? (float) item.Grade_9 / dict[8] : 0f;
                     item.Stream_R6__percent = item.Stream_R6_ > 0f ? (float) item.Stream_R6_ / dict[9] : 0f;
                     item.Stream_R8__percent = item.Stream_R8_ > 0f ? (float) item.Stream_R8_ / dict[10] : 0f;
                 }
@@ -640,15 +644,15 @@ namespace MHW_Editor {
                                 + item.Stream_R6_
                                 + item.Stream_R8_;
 
-                    item.Grade_1_percent = item.Grade_1 > 0f ? (float) item.Grade_1 / total : 0f;
-                    item.Grade_2_percent = item.Grade_2 > 0f ? (float) item.Grade_2 / total : 0f;
-                    item.Grade_3_percent = item.Grade_3 > 0f ? (float) item.Grade_3 / total : 0f;
-                    item.Grade_4_percent = item.Grade_4 > 0f ? (float) item.Grade_4 / total : 0f;
-                    item.Grade_5_percent = item.Grade_5 > 0f ? (float) item.Grade_5 / total : 0f;
-                    item.Grade_6_percent = item.Grade_6 > 0f ? (float) item.Grade_6 / total : 0f;
-                    item.Grade_7_percent = item.Grade_7 > 0f ? (float) item.Grade_7 / total : 0f;
-                    item.Grade_8_percent = item.Grade_8 > 0f ? (float) item.Grade_8 / total : 0f;
-                    item.Grade_9_percent = item.Grade_9 > 0f ? (float) item.Grade_9 / total : 0f;
+                    item.Grade_1_percent    = item.Grade_1 > 0f ? (float) item.Grade_1 / total : 0f;
+                    item.Grade_2_percent    = item.Grade_2 > 0f ? (float) item.Grade_2 / total : 0f;
+                    item.Grade_3_percent    = item.Grade_3 > 0f ? (float) item.Grade_3 / total : 0f;
+                    item.Grade_4_percent    = item.Grade_4 > 0f ? (float) item.Grade_4 / total : 0f;
+                    item.Grade_5_percent    = item.Grade_5 > 0f ? (float) item.Grade_5 / total : 0f;
+                    item.Grade_6_percent    = item.Grade_6 > 0f ? (float) item.Grade_6 / total : 0f;
+                    item.Grade_7_percent    = item.Grade_7 > 0f ? (float) item.Grade_7 / total : 0f;
+                    item.Grade_8_percent    = item.Grade_8 > 0f ? (float) item.Grade_8 / total : 0f;
+                    item.Grade_9_percent    = item.Grade_9 > 0f ? (float) item.Grade_9 / total : 0f;
                     item.Stream_R6__percent = item.Stream_R6_ > 0f ? (float) item.Stream_R6_ / total : 0f;
                     item.Stream_R8__percent = item.Stream_R8_ > 0f ? (float) item.Stream_R8_ / total : 0f;
                 }
@@ -670,15 +674,15 @@ namespace MHW_Editor {
                                 + item.Grade_14
                                 + item.Grade_15;
 
-                    item.Grade_1_percent = item.Grade_1 > 0f ? (float) item.Grade_1 / total : 0f;
-                    item.Grade_2_percent = item.Grade_2 > 0f ? (float) item.Grade_2 / total : 0f;
-                    item.Grade_3_percent = item.Grade_3 > 0f ? (float) item.Grade_3 / total : 0f;
-                    item.Grade_4_percent = item.Grade_4 > 0f ? (float) item.Grade_4 / total : 0f;
-                    item.Grade_5_percent = item.Grade_5 > 0f ? (float) item.Grade_5 / total : 0f;
-                    item.Grade_6_percent = item.Grade_6 > 0f ? (float) item.Grade_6 / total : 0f;
-                    item.Grade_7_percent = item.Grade_7 > 0f ? (float) item.Grade_7 / total : 0f;
-                    item.Grade_8_percent = item.Grade_8 > 0f ? (float) item.Grade_8 / total : 0f;
-                    item.Grade_9_percent = item.Grade_9 > 0f ? (float) item.Grade_9 / total : 0f;
+                    item.Grade_1_percent  = item.Grade_1 > 0f ? (float) item.Grade_1 / total : 0f;
+                    item.Grade_2_percent  = item.Grade_2 > 0f ? (float) item.Grade_2 / total : 0f;
+                    item.Grade_3_percent  = item.Grade_3 > 0f ? (float) item.Grade_3 / total : 0f;
+                    item.Grade_4_percent  = item.Grade_4 > 0f ? (float) item.Grade_4 / total : 0f;
+                    item.Grade_5_percent  = item.Grade_5 > 0f ? (float) item.Grade_5 / total : 0f;
+                    item.Grade_6_percent  = item.Grade_6 > 0f ? (float) item.Grade_6 / total : 0f;
+                    item.Grade_7_percent  = item.Grade_7 > 0f ? (float) item.Grade_7 / total : 0f;
+                    item.Grade_8_percent  = item.Grade_8 > 0f ? (float) item.Grade_8 / total : 0f;
+                    item.Grade_9_percent  = item.Grade_9 > 0f ? (float) item.Grade_9 / total : 0f;
                     item.Grade_10_percent = item.Grade_10 > 0f ? (float) item.Grade_10 / total : 0f;
                     item.Grade_11_percent = item.Grade_11 > 0f ? (float) item.Grade_11 / total : 0f;
                     item.Grade_12_percent = item.Grade_12 > 0f ? (float) item.Grade_12 / total : 0f;
@@ -719,7 +723,7 @@ namespace MHW_Editor {
             var target = GetOpenTarget($"MHW Data Files (See mod description for full list.)|{string.Join(";", Global.FILE_TYPES)}");
             if (string.IsNullOrEmpty(target)) return;
 
-            targetFile = target;
+            targetFile     = target;
             targetFileType = GetFileType();
             items.Clear();
             Title = Path.GetFileName(targetFile);
@@ -733,7 +737,7 @@ namespace MHW_Editor {
 
             dataGrids.Clear();
 
-            columnMap = new Dictionary<object, Dictionary<string, ColumnHolder>>();
+            columnMap  = new Dictionary<object, Dictionary<string, ColumnHolder>>();
             coloredRow = null;
 
             GC.Collect();
@@ -741,7 +745,7 @@ namespace MHW_Editor {
             try {
                 if (targetFileType.Is(typeof(ICustomSaveLoad))) { // Custom save/load.
                     scroll_viewer.Visibility = Visibility.Visible;
-                    mainDataGrid.Visibility = Visibility.Collapsed;
+                    mainDataGrid.Visibility  = Visibility.Collapsed;
 
                     var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
                     Debug.Assert(loadData != null, nameof(loadData) + " != null");
@@ -765,7 +769,7 @@ namespace MHW_Editor {
 
             dataGrids.Add(mainDataGrid);
             scroll_viewer.Visibility = Visibility.Collapsed;
-            mainDataGrid.Visibility = Visibility.Visible;
+            mainDataGrid.Visibility  = Visibility.Visible;
 
             // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
             if (targetFileType.IsGeneric(typeof(IHasCustomView<>))) {
@@ -793,10 +797,10 @@ namespace MHW_Editor {
 
             const BindingFlags flags = BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy;
             // ReSharper disable PossibleNullReferenceException
-            var initialOffset = (ulong) targetFileType.GetField(nameof(Armor.InitialOffset), flags).GetValue(null);
-            var structSize = (uint) targetFileType.GetField(nameof(Armor.StructSize), flags).GetValue(null);
+            var initialOffset    = (ulong) targetFileType.GetField(nameof(Armor.InitialOffset), flags).GetValue(null);
+            var structSize       = (uint) targetFileType.GetField(nameof(Armor.StructSize), flags).GetValue(null);
             var entryCountOffset = (long) targetFileType.GetField(nameof(Armor.EntryCountOffset), flags).GetValue(null);
-            var encryptionKey = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), flags).GetValue(null);
+            var encryptionKey    = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), flags).GetValue(null);
 
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
 #pragma warning disable 162
@@ -861,9 +865,9 @@ namespace MHW_Editor {
 
             try {
                 using (var file = File.OpenRead(targetFile)) {
-                    var ourLength = (ulong) file.Length;
+                    var ourLength    = (ulong) file.Length;
                     var properLength = DataHelper.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
-                    var sha512 = file.SHA512();
+                    var sha512       = file.SHA512();
 
                     // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
                     foreach (var pair in DataHelper.BAD_FILE_HASH_MAP) {
@@ -989,7 +993,7 @@ namespace MHW_Editor {
                 }
 
                 bool changesSaved;
-                var encryptionKey = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy).GetValue(null);
+                var  encryptionKey = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy).GetValue(null);
 
                 if (encryptionKey != null) {
                     // Read & decrypt file.
@@ -1029,8 +1033,8 @@ namespace MHW_Editor {
 
         private async Task ShowChangesSaved(bool changesSaved) {
             savedTimer?.Cancel();
-            savedTimer = new CancellationTokenSource();
-            lbl_saved.Visibility = changesSaved.VisibleIfTrue();
+            savedTimer                = new CancellationTokenSource();
+            lbl_saved.Visibility      = changesSaved.VisibleIfTrue();
             lbl_no_changes.Visibility = changesSaved ? Visibility.Collapsed : Visibility.Visible;
             try {
                 await Task.Delay(3000, savedTimer.Token);
@@ -1064,14 +1068,14 @@ namespace MHW_Editor {
 
                 var fileName = Path.GetFileName(targetFile);
 
-                var json = File.ReadAllText(target);
+                var json          = File.ReadAllText(target);
                 var changesToLoad = JsonMigrations.Migrate(json, fileName, items);
 
                 if (!changesToLoad.changes.Any()) return;
                 if (fileName != changesToLoad.targetFile && changesToLoad.targetFile != "*") return;
 
                 foreach (MhwItem item in items) {
-                    var id = item.UniqueId;
+                    var id           = item.UniqueId;
                     var changedItems = changesToLoad.changes.TryGet(id, null);
                     if (changedItems == null) {
                         // Try for wildcard option.
@@ -1106,7 +1110,7 @@ namespace MHW_Editor {
             if (string.IsNullOrEmpty(targetFile)) return;
 
             try {
-                var fileName = Path.GetFileName(targetFile);
+                var         fileName      = Path.GetFileName(targetFile);
                 JsonChanges changesToSave = null;
 
                 if (mergeWithTarget) {
@@ -1122,12 +1126,12 @@ namespace MHW_Editor {
                 if (changesToSave == null) {
                     changesToSave = new JsonChanges {
                         targetFile = fileName,
-                        version = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1)
+                        version    = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1)
                     };
                 } else {
                     // Set target & version explicitly in case the user is merging into a different wp_dat or something.
                     changesToSave.targetFile = fileName;
-                    changesToSave.version = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1);
+                    changesToSave.version    = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1);
                 }
 
                 foreach (MhwItem item in items) {
@@ -1164,7 +1168,7 @@ namespace MHW_Editor {
 
         private string GetOpenTarget(string filter) {
             var ofdResult = new OpenFileDialog {
-                Filter = filter,
+                Filter      = filter,
                 Multiselect = false
             };
             ofdResult.ShowDialog();
@@ -1174,8 +1178,8 @@ namespace MHW_Editor {
 
         private string GetSaveTarget() {
             var sfdResult = new SaveFileDialog {
-                Filter = $"JSON|*{Path.GetExtension(targetFile)}.json",
-                FileName = $"{Path.GetFileNameWithoutExtension(targetFile)}",
+                Filter       = $"JSON|*{Path.GetExtension(targetFile)}.json",
+                FileName     = $"{Path.GetFileNameWithoutExtension(targetFile)}",
                 AddExtension = true
             };
             sfdResult.ShowDialog();

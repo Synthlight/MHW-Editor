@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading;
 using MHW_Editor;
@@ -13,7 +14,7 @@ using Newtonsoft.Json;
 
 namespace MHW_Generator_Data {
     public static class Program {
-        private const string CHUNK_PREFIX = "chunkG";
+        private const           string       CHUNK_PREFIX = "chunkG";
         private static readonly List<string> FILE_TYPES_TO_CHECK;
 
         static Program() {
@@ -59,17 +60,22 @@ namespace MHW_Generator_Data {
                                  .Where(p => p.Is(typeof(MhwItem), typeof(MhwStructItem)));
 
             var typesWithButtons = new SortedSet<string>();
-            var buttonNames = new SortedSet<string>();
+            var buttonNames      = new SortedSet<string>();
+            var typeAndName      = new Dictionary<Type, List<string>>();
 
             foreach (var type in types) {
-                var propertyNames = type.GetProperties()
+                var propertyNames = type.GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.FlattenHierarchy)
                                         .Select(p => p.Name)
                                         .ToList();
 
-                var buttons = propertyNames.Where(name => name.EndsWith("_button") && propertyNames.Contains(name.Replace("_button", ""))).ToList();
+                var buttons = propertyNames.Where(name => name.EndsWith("_button") && propertyNames.Contains(name.Replace("_button", "")))
+                                           .Distinct()
+                                           .ToList();
 
                 if (buttons.Any()) {
                     typesWithButtons.Add(type.Name);
+
+                    typeAndName[type] = buttons;
                 }
 
                 foreach (var button in buttons) {
@@ -78,14 +84,15 @@ namespace MHW_Generator_Data {
             }
 
             const string @namespace = "MHW_Editor";
-            const string className = "ButtonTypeInfo";
+            const string className  = "ButtonTypeInfo";
 
             MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", className, new ButtonTypeInfoTemplate {
                 Session = new Dictionary<string, object> {
                     {"_namespace", @namespace},
                     {"className", className},
                     {"typesWithButtons", typesWithButtons},
-                    {"buttonNames", buttonNames}
+                    {"buttonNames", buttonNames},
+                    {"typeAndName", typeAndName}
                 }
             });
         }
@@ -106,10 +113,10 @@ namespace MHW_Generator_Data {
             var allFilesMapKeys = allFilesMap.Keys.OrderByDescending(key => int.Parse(key.Replace(CHUNK_PREFIX, ""))).ToList();
             allFilesMapKeys.Remove("chunkG60");
 
-            var badHashMap = new Dictionary<string, Dictionary<string, List<string>>>();
-            var foundGoodFiles = new Dictionary<string, string>();
-            var filePathMap = new Dictionary<string, string>();
-            ushort loopCount = 0;
+            var    badHashMap     = new Dictionary<string, Dictionary<string, List<string>>>();
+            var    foundGoodFiles = new Dictionary<string, string>();
+            var    filePathMap    = new Dictionary<string, string>();
+            ushort loopCount      = 0;
 
             // So we go through with latest chunk being first.
             foreach (var tld in allFilesMapKeys) {
@@ -124,7 +131,7 @@ namespace MHW_Generator_Data {
                         if (foundGoodFiles.ContainsKey(fileName)) continue; // Happens when we have a duplicate file.
 
                         foundGoodFiles[fileName] = tld;
-                        filePathMap[fileName] = filePath;
+                        filePathMap[fileName]    = filePath;
                         continue;
                     }
 
@@ -133,7 +140,7 @@ namespace MHW_Generator_Data {
                         badHashMap.GetOrCreate(tld).GetOrCreate(fileName).Add(chunkFile.SHA512());
                     } else {
                         foundGoodFiles[fileName] = tld;
-                        filePathMap[fileName] = filePath;
+                        filePathMap[fileName]    = filePath;
                     }
                 }
 
@@ -144,8 +151,8 @@ namespace MHW_Generator_Data {
             badHashMap["chunkG0"].Remove("deco_lot.diot");
 
             foundGoodFiles = foundGoodFiles.Sort(pair => pair.Key);
-            filePathMap = filePathMap.Sort(pair => pair.Key);
-            badHashMap = badHashMap.Sort(pair => int.Parse(pair.Key.Replace(CHUNK_PREFIX, "")));
+            filePathMap    = filePathMap.Sort(pair => pair.Key);
+            badHashMap     = badHashMap.Sort(pair => int.Parse(pair.Key.Replace(CHUNK_PREFIX, "")));
 
             foreach (var key in badHashMap.Keys.ToList()) {
                 badHashMap[key] = badHashMap[key].Sort(pair => pair.Key);
@@ -166,8 +173,8 @@ namespace MHW_Generator_Data {
             foreach (var chunkFile in Directory.EnumerateFiles(ROOT, "*.bin", SearchOption.TopDirectoryOnly)) {
                 var startInfo = new ProcessStartInfo($@"{mhwNoChunkRoot}\MHWNoChunk.exe") {
                     WorkingDirectory = mhwNoChunkRoot,
-                    Arguments = $"{Path.GetFileNameWithoutExtension(chunkFile)} ^(.*\\.(({string.Join("|", FILE_TYPES_TO_CHECK)})$))?[^.]*$",
-                    UseShellExecute = false
+                    Arguments        = $"{Path.GetFileNameWithoutExtension(chunkFile)} ^(.*\\.(({string.Join("|", FILE_TYPES_TO_CHECK)})$))?[^.]*$",
+                    UseShellExecute  = false
                 };
 
                 Process.Start(startInfo)?.WaitForExit();
@@ -225,7 +232,7 @@ namespace MHW_Generator_Data {
         }
 
         private static void CreateSkillDataValueClass() {
-            var json = File.ReadAllText($@"{Global.ASSETS_ROOT}\SkillData\eng_skillData.json");
+            var json         = File.ReadAllText($@"{Global.ASSETS_ROOT}\SkillData\eng_skillData.json");
             var rawSkillData = JsonConvert.DeserializeObject<Dictionary<uint, string>>(json);
 
             var values = new List<DataValuePair>();
@@ -233,8 +240,8 @@ namespace MHW_Generator_Data {
             const uint step = 3;
             for (uint index = 0; index < rawSkillData.Count; index += step) {
                 var value = (ushort) (index / step);
-                var name = Regex.Replace(rawSkillData[index], @"[^\w\d]+", "_");
-                var desc = rawSkillData[index + 2].Replace("\r\n", " ");
+                var name  = Regex.Replace(rawSkillData[index], @"[^\w\d]+", "_");
+                var desc  = rawSkillData[index + 2].Replace("\r\n", " ");
 
                 if (name == "Unavailable") continue;
                 if (desc == "Unavailable") desc = null;
@@ -243,7 +250,7 @@ namespace MHW_Generator_Data {
             }
 
             const string @namespace = "MHW_Editor.Skills";
-            const string className = "SkillDataValueClass";
+            const string className  = "SkillDataValueClass";
 
             MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", className, new ValueClassTemplate {
                 Session = new Dictionary<string, object> {
@@ -255,9 +262,9 @@ namespace MHW_Generator_Data {
         }
 
         private static void CreateArmorDataValueClass() {
-            var json = File.ReadAllText($@"{Global.ASSETS_ROOT}\ArmorData\eng_armorData.json");
+            var json         = File.ReadAllText($@"{Global.ASSETS_ROOT}\ArmorData\eng_armorData.json");
             var armorGmdData = JsonConvert.DeserializeObject<Dictionary<ushort, string>>(json);
-            var armors = ArmorReader.GetArmor();
+            var armors       = ArmorReader.GetArmor();
 
             var values = new List<DataValuePair>();
             foreach (var armor in armors) {
@@ -275,7 +282,7 @@ namespace MHW_Generator_Data {
             }
 
             const string @namespace = "MHW_Editor.Armors";
-            const string className = "ArmorDataValueClass";
+            const string className  = "ArmorDataValueClass";
 
             MHW_Generator.Program.WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", className, new ValueClassTemplate {
                 Session = new Dictionary<string, object> {

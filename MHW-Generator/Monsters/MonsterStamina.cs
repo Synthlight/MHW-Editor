@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
+using MHW_Template.Models;
 using MHW_Template.Struct_Generation.Multi;
 
 namespace MHW_Generator.Monsters {
@@ -24,7 +25,7 @@ namespace MHW_Generator.Monsters {
                 new MhwMultiStructData.StructData("Monster Stamina (1)", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
                     new MhwMultiStructData.Entry("Magic 2", typeof(uint), true),
-                    new MhwMultiStructData.Entry("Monster Id", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Monster Id", typeof(uint), true, dataSourceType: DataSourceType.Monsters),
                     new MhwMultiStructData.Entry("Magic 3", typeof(uint), true)
                 }, 1),
 

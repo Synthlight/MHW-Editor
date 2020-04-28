@@ -52,6 +52,7 @@ namespace MHW_Editor.Monsters {
             public const int Monster_Id_sortIndex = 150;
             [SortOrder(Monster_Id_sortIndex)]
             [DisplayName(Monster_Id_displayName)]
+            [DataSource(DataSourceType.Monsters)]
             [IsReadOnly]
             public virtual uint Monster_Id {
                 get => Monster_Id_raw;
@@ -59,8 +60,14 @@ namespace MHW_Editor.Monsters {
                     if (Monster_Id_raw == value) return;
                     Monster_Id_raw = value;
                     OnPropertyChanged(nameof(Monster_Id));
+                    OnPropertyChanged(nameof(Monster_Id_button));
                 }
             }
+
+            [SortOrder(Monster_Id_sortIndex)]
+            [DisplayName(Monster_Id_displayName)]
+            [CustomSorter(typeof(ButtonSorter))]
+            public string Monster_Id_button => DataHelper.monsterNames[MainWindow.locale].TryGet(Monster_Id).ToStringWithId(Monster_Id);
 
             protected uint Magic_3_raw;
             public const string Magic_3_displayName = "Magic 3";

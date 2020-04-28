@@ -25,12 +25,12 @@ namespace MHW_Name_Extractor {
             }
 
             var colTransFile = $@"{Global.ASSETS_ROOT}\CollisionTranslationsData.json";
-            var dir = Path.GetDirectoryName(colTransFile);
+            var dir          = Path.GetDirectoryName(colTransFile);
             if (!Directory.Exists(dir)) {
                 Directory.CreateDirectory(dir ?? throw new InvalidOperationException());
             }
 
-            File.WriteAllText(colTransFile, JsonConvert.SerializeObject(colTrans, Formatting.Indented));
+            //File.WriteAllText(colTransFile, JsonConvert.SerializeObject(colTrans, Formatting.Indented));
 
             if (Environment.GetCommandLineArgs().ContainsIgnoreCase("-transOnly")) return;
 
@@ -54,6 +54,8 @@ namespace MHW_Name_Extractor {
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_Facial_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Expressions\{lang}_expressionData.json"); // .gcod
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_Pose_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Poses\{lang}_poseData.json"); // .gcod
 
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\em_names_{lang}.gmd", $@"{Global.ASSETS_ROOT}\MonsterData\{lang}_monsterData.json"); // Monster Id lookup.
+
                 // Not sure how it connects to skill id.
                 //GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\music_skill_{lang}.gmd", $@"{Global.ASSETS_ROOT}\MusicSkillData\{lang}_musicSkillData.json");
 
@@ -66,7 +68,7 @@ namespace MHW_Name_Extractor {
         private static Dictionary<int, NameDescPair> ParseCsv(string file) {
             var dict = new Dictionary<int, NameDescPair>();
 
-            var text = File.ReadAllText(file);
+            var text  = File.ReadAllText(file);
             var lines = text.Split(new[] {'\r', '\n'}, StringSplitOptions.RemoveEmptyEntries);
             var entries = from line in lines.Subsequence(1, lines.Length - 2)
                           where !line.EndsWith(",,,")
@@ -113,16 +115,16 @@ namespace MHW_Name_Extractor {
 
                 // Header
                 dat.BaseStream.Seek(20, SeekOrigin.Begin);
-                var keyCount = dat.ReadInt32();
-                var stringCount = dat.ReadInt32();
-                var keyBlockSize = dat.ReadInt32();
+                var keyCount        = dat.ReadInt32();
+                var stringCount     = dat.ReadInt32();
+                var keyBlockSize    = dat.ReadInt32();
                 var stringBlockSize = dat.ReadInt32();
-                var fileName = Encoding.UTF8.GetString(dat.ReadBytes(dat.ReadInt32()));
+                var fileName        = Encoding.UTF8.GetString(dat.ReadBytes(dat.ReadInt32()));
 
                 dat.BaseStream.Seek(1, SeekOrigin.Current);
 
                 var gmdInfoEntrySize = Marshal.SizeOf(typeof(GmdInfoEntry));
-                var gmdInfoEntries = new List<GmdInfoEntry>();
+                var gmdInfoEntries   = new List<GmdInfoEntry>();
                 for (var i = 0; i < keyCount; i++) {
                     gmdInfoEntries.Add(dat.ReadBytes(gmdInfoEntrySize).GetData<GmdInfoEntry>());
                 }
@@ -138,8 +140,12 @@ namespace MHW_Name_Extractor {
                 var stringBlocks = Encoding.UTF8.GetString(dat.ReadBytes(stringBlockSize)).Split('\0');
                 Array.Resize(ref stringBlocks, stringCount); // Last null-term becomes an extra entry.
 
+                if (keyCount != stringCount) {
+                    Console.Error.WriteLine($"key/string count mismatch: {targetFile}");
+                }
+
                 var dictionary = new Dictionary<ulong, string>();
-                for (long i = 0; i < stringBlocks.LongLength; i++) {
+                for (long i = 0; i < keyBlocks.LongLength; i++) {
                     dictionary.Add((ulong) i, stringBlocks[i]
                                               .Replace("<ICON ALPHA>", " α")
                                               .Replace("<ICON BETA>", " β")
@@ -156,16 +162,16 @@ namespace MHW_Name_Extractor {
 
                 // Header
                 dat.BaseStream.Seek(20, SeekOrigin.Begin);
-                var keyCount = dat.ReadInt32();
-                var stringCount = dat.ReadInt32();
-                var keyBlockSize = dat.ReadInt32();
+                var keyCount        = dat.ReadInt32();
+                var stringCount     = dat.ReadInt32();
+                var keyBlockSize    = dat.ReadInt32();
                 var stringBlockSize = dat.ReadInt32();
-                var fileName = Encoding.UTF8.GetString(dat.ReadBytes(dat.ReadInt32()));
+                var fileName        = Encoding.UTF8.GetString(dat.ReadBytes(dat.ReadInt32()));
 
                 dat.BaseStream.Seek(1, SeekOrigin.Current);
 
                 var gmdInfoEntrySize = Marshal.SizeOf(typeof(GmdInfoEntry));
-                var gmdInfoEntries = new List<GmdInfoEntry>();
+                var gmdInfoEntries   = new List<GmdInfoEntry>();
                 for (var i = 0; i < keyCount; i++) {
                     gmdInfoEntries.Add(dat.ReadBytes(gmdInfoEntrySize).GetData<GmdInfoEntry>());
                 }
@@ -181,11 +187,16 @@ namespace MHW_Name_Extractor {
                 var stringBlocks = Encoding.UTF8.GetString(dat.ReadBytes(stringBlockSize)).Split('\0');
                 Array.Resize(ref stringBlocks, stringCount); // Last null-term becomes an extra entry.
 
-                if (keyCount != stringCount) throw new Exception("key/string count mismatch.");
+                if (keyCount != stringCount) {
+                    Console.Error.WriteLine($"key/string count mismatch: {targetFile}");
+                }
 
                 var dictionary = new Dictionary<string, string>();
-                for (long i = 0; i < stringBlocks.LongLength; i++) {
-                    dictionary[keyBlocks[i]] = stringBlocks[i];
+                for (long i = 0; i < keyBlocks.LongLength; i++) {
+                    dictionary[keyBlocks[i]] = stringBlocks[i]
+                                               .Replace("<ICON ALPHA>", " α")
+                                               .Replace("<ICON BETA>", " β")
+                                               .Replace("<ICON GAMMA>", " γ");
                 }
 
                 return dictionary;

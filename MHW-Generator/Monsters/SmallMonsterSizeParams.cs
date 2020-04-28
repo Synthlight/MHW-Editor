@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
+using MHW_Template.Models;
 using MHW_Template.Struct_Generation.Multi;
 
 namespace MHW_Generator.Monsters {
@@ -18,7 +19,7 @@ namespace MHW_Generator.Monsters {
                     new MhwMultiStructData.Entry("Min Size", typeof(float)),
                     new MhwMultiStructData.Entry("Max Size", typeof(float)),
                     new MhwMultiStructData.Entry("Unk (f32)", typeof(float)),
-                    new MhwMultiStructData.Entry("Monster Id", typeof(uint))
+                    new MhwMultiStructData.Entry("Monster Id", typeof(uint), dataSourceType: DataSourceType.Monsters)
                 }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, count))
             };
 

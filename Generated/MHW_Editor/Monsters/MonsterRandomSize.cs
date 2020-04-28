@@ -87,6 +87,7 @@ namespace MHW_Editor.Monsters {
             public const int Monster_Id_sortIndex = 50;
             [SortOrder(Monster_Id_sortIndex)]
             [DisplayName(Monster_Id_displayName)]
+            [DataSource(DataSourceType.Monsters)]
             [IsReadOnly]
             public virtual uint Monster_Id {
                 get => Monster_Id_raw;
@@ -94,8 +95,14 @@ namespace MHW_Editor.Monsters {
                     if (Monster_Id_raw == value) return;
                     Monster_Id_raw = value;
                     OnPropertyChanged(nameof(Monster_Id));
+                    OnPropertyChanged(nameof(Monster_Id_button));
                 }
             }
+
+            [SortOrder(Monster_Id_sortIndex)]
+            [DisplayName(Monster_Id_displayName)]
+            [CustomSorter(typeof(ButtonSorter))]
+            public string Monster_Id_button => DataHelper.monsterNames[MainWindow.locale].TryGet(Monster_Id).ToStringWithId(Monster_Id);
 
             protected uint Gold_Small_Crown_Limit_raw;
             public const string Gold_Small_Crown_Limit_displayName = "Gold Small Crown Limit";

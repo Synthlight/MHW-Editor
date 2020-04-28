@@ -15,7 +15,7 @@ namespace MHW_Generator.Items {
                     new MhwStructData.Entry("Equipment Category Raw", 0, typeof(byte), true),
                     new MhwStructData.Entry("Equipment Index Raw", 1, typeof(ushort), true),
                     new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items),
-                    new MhwStructData.Entry("Monster Unlock", 5, typeof(int)),
+                    new MhwStructData.Entry("Monster Unlock", 5, typeof(int), dataSourceType: DataSourceType.MonstersNeg),
                     new MhwStructData.Entry("Story Unlock", 9, typeof(uint)),
                     new MhwStructData.Entry("Unknown (uint32)", 13, typeof(uint)),
                     new MhwStructData.Entry("Item Rank", 17, typeof(uint)),

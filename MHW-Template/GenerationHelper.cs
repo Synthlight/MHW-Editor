@@ -14,6 +14,8 @@ namespace MHW_Template {
                 DataSourceType.WeaponsByIndex => "DataHelper.weaponIndexNameLookup[GetWeaponType()][MainWindow.locale]",
                 DataSourceType.EquipmentById => "DataHelper.equipmentIdNameLookup[GetEquipmentType()][MainWindow.locale]",
                 DataSourceType.Pendants => "DataHelper.pendantNames[MainWindow.locale]",
+                DataSourceType.Monsters => "DataHelper.monsterNames[MainWindow.locale]",
+                DataSourceType.MonstersNeg => "DataHelper.monsterNamesNeg[MainWindow.locale]",
                 _ => throw new ArgumentOutOfRangeException()
             };
         }

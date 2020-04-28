@@ -68,6 +68,7 @@ namespace MHW_Editor.Items {
         public const int Monster_Unlock_sortIndex = 200;
         [SortOrder(Monster_Unlock_sortIndex)]
         [DisplayName(Monster_Unlock_displayName)]
+        [DataSource(DataSourceType.MonstersNeg)]
         public virtual int Monster_Unlock {
             get => GetData<int>(5);
             set {
@@ -75,8 +76,14 @@ namespace MHW_Editor.Items {
                 SetData(5, value, nameof(Monster_Unlock));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Monster_Unlock));
+                OnPropertyChanged(nameof(Monster_Unlock_button));
             }
         }
+
+        [SortOrder(Monster_Unlock_sortIndex)]
+        [DisplayName(Monster_Unlock_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Monster_Unlock_button => DataHelper.monsterNamesNeg[MainWindow.locale].TryGet(Monster_Unlock).ToStringWithId(Monster_Unlock);
 
         public const string Story_Unlock_displayName = "Story Unlock";
         public const int Story_Unlock_sortIndex = 250;

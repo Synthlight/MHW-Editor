@@ -6,7 +6,20 @@
 <#@ parameter type="System.String" name="className" #>
 <#@ parameter type="System.Collections.Generic.SortedSet<string>" name="typesWithButtons" #>
 <#@ parameter type="System.Collections.Generic.SortedSet<string>" name="buttonNames" #>
+<#@ parameter type="System.Collections.Generic.Dictionary<Type, List<string>>" name="typeAndName" #>
+<#@ import namespace="MHW_Template.Models" #>
+<#@ import namespace="System.Collections.Generic" #>
+using System;
 using System.Collections.Generic;
+using MHW_Editor.Armors;
+using MHW_Editor.Gems;
+using MHW_Editor.GuildCard;
+using MHW_Editor.Items;
+using MHW_Editor.Items.TimeGate.Models;
+using MHW_Editor.Monsters;
+using MHW_Editor.Skills;
+using MHW_Editor.Weapons;
+using Armor = MHW_Editor.Items.TimeGate.Models.Armor;
 
 namespace <#= _namespace #> {
     public static class <#= className #> {
@@ -26,10 +39,16 @@ namespace <#= _namespace #> {
 #>
         };
 
-        public static readonly List<string> BUTTON_BASE_NAMES = new List<string> {
+        public static readonly Dictionary<Type, List<string>> TYPE_AND_NAME = new Dictionary<Type, List<string>> {
 <#
-    foreach (var entry in buttonNames) {
-        WriteLine($"            \"{entry.Replace("_button", "")}\",");
+    foreach (var kvp in typeAndName) {
+        WriteLine($"            {{typeof({kvp.Key.FullName?.Replace("+", ".")}), new List<string> {{");
+
+        foreach (var name in kvp.Value) {
+            WriteLine($"                \"{name.Replace("_button", "")}\",");
+        }
+
+        WriteLine($"            }}}},");
     }
 #>
         };

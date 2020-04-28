@@ -60,6 +60,7 @@ namespace MHW_Editor.GuildCard {
         public const int Monster_Id_sortIndex = 200;
         [SortOrder(Monster_Id_sortIndex)]
         [DisplayName(Monster_Id_displayName)]
+        [DataSource(DataSourceType.Monsters)]
         public virtual uint Monster_Id {
             get => GetData<uint>(12);
             set {
@@ -67,8 +68,14 @@ namespace MHW_Editor.GuildCard {
                 SetData(12, value, nameof(Monster_Id));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Monster_Id));
+                OnPropertyChanged(nameof(Monster_Id_button));
             }
         }
+
+        [SortOrder(Monster_Id_sortIndex)]
+        [DisplayName(Monster_Id_displayName)]
+        [CustomSorter(typeof(ButtonSorter))]
+        public string Monster_Id_button => DataHelper.monsterNames[MainWindow.locale].TryGet(Monster_Id).ToStringWithId(Monster_Id);
 
         public const string Unk_displayName = "Unk";
         public const int Unk_sortIndex = 250;

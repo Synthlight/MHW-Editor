@@ -2,8 +2,8 @@
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Items {
-    public partial class EqCus_Base : MhwItem {
-        public EqCus_Base(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public abstract partial class EqCus_Base : MhwItem {
+        protected EqCus_Base(byte[] bytes, ulong offset) : base(bytes, offset) {
         }
 
         [DisplayName("")]

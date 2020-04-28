@@ -18,6 +18,8 @@ namespace MHW_Template.Models {
         WeaponsById,
         WeaponsByIndex,
         EquipmentById,
-        Pendants
+        Pendants,
+        Monsters,
+        MonstersNeg
     }
 }

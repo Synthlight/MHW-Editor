@@ -9,6 +9,8 @@
 // ------------------------------------------------------------------------------
 namespace MHW_Template
 {
+    using MHW_Template.Models;
+    using System.Collections.Generic;
     using System;
     
     /// <summary>
@@ -25,16 +27,28 @@ namespace MHW_Template
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("using System.Collections.Generic;\r\n\r\nnamespace ");
+            this.Write(@"using System;
+using System.Collections.Generic;
+using MHW_Editor.Armors;
+using MHW_Editor.Gems;
+using MHW_Editor.GuildCard;
+using MHW_Editor.Items;
+using MHW_Editor.Items.TimeGate.Models;
+using MHW_Editor.Monsters;
+using MHW_Editor.Skills;
+using MHW_Editor.Weapons;
+using Armor = MHW_Editor.Items.TimeGate.Models.Armor;
+
+namespace ");
             
-            #line 11 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public static class ");
             
-            #line 12 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
@@ -42,7 +56,7 @@ namespace MHW_Template
             this.Write(" {\r\n        public static readonly List<string> TYPES_WITH_BUTTONS = new List<str" +
                     "ing> {\r\n");
             
-            #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
 
     foreach (var entry in typesWithButtons) {
         WriteLine($"            \"{entry}\",");
@@ -54,7 +68,7 @@ namespace MHW_Template
             this.Write("        };\r\n\r\n        public static readonly List<string> BUTTON_NAMES = new List" +
                     "<string> {\r\n");
             
-            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            #line 35 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
 
     foreach (var entry in buttonNames) {
         WriteLine($"            \"{entry}\",");
@@ -63,13 +77,19 @@ namespace MHW_Template
             
             #line default
             #line hidden
-            this.Write("        };\r\n\r\n        public static readonly List<string> BUTTON_BASE_NAMES = new" +
-                    " List<string> {\r\n");
+            this.Write("        };\r\n\r\n        public static readonly Dictionary<Type, List<string>> TYPE_" +
+                    "AND_NAME = new Dictionary<Type, List<string>> {\r\n");
             
-            #line 30 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            #line 43 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
 
-    foreach (var entry in buttonNames) {
-        WriteLine($"            \"{entry.Replace("_button", "")}\",");
+    foreach (var kvp in typeAndName) {
+        WriteLine($"            {{typeof({kvp.Key.FullName?.Replace("+", ".")}), new List<string> {{");
+
+        foreach (var name in kvp.Value) {
+            WriteLine($"                \"{name.Replace("_button", "")}\",");
+        }
+
+        WriteLine($"            }}}},");
     }
 
             
@@ -130,6 +150,19 @@ private global::System.Collections.Generic.SortedSet<string> buttonNames
     get
     {
         return this._buttonNamesField;
+    }
+}
+
+private global::System.Collections.Generic.Dictionary<Type, List<string>> _typeAndNameField;
+
+/// <summary>
+/// Access the typeAndName parameter of the template.
+/// </summary>
+private global::System.Collections.Generic.Dictionary<Type, List<string>> typeAndName
+{
+    get
+    {
+        return this._typeAndNameField;
     }
 }
 
@@ -195,6 +228,20 @@ if ((buttonNamesValueAcquired == false))
     if ((data != null))
     {
         this._buttonNamesField = ((global::System.Collections.Generic.SortedSet<string>)(data));
+    }
+}
+bool typeAndNameValueAcquired = false;
+if (this.Session.ContainsKey("typeAndName"))
+{
+    this._typeAndNameField = ((global::System.Collections.Generic.Dictionary<Type, List<string>>)(this.Session["typeAndName"]));
+    typeAndNameValueAcquired = true;
+}
+if ((typeAndNameValueAcquired == false))
+{
+    object data = global::System.Runtime.Remoting.Messaging.CallContext.LogicalGetData("typeAndName");
+    if ((data != null))
+    {
+        this._typeAndNameField = ((global::System.Collections.Generic.Dictionary<Type, List<string>>)(data));
     }
 }
 

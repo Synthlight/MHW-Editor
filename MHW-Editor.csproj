@@ -104,6 +104,7 @@
       <DependentUpon>EditorAssets.resx</DependentUpon>
     </Compile>
     <Compile Include="Assets\LangKeyMap.cs" />
+    <Compile Include="Assets\LangMapNeg.cs" />
     <Compile Include="Assets\LangMap.cs" />
     <Compile Include="Controls\AutoFilteredComboBox.cs" />
     <Compile Include="EncryptionHelper.cs" />
@@ -567,6 +568,19 @@
     <None Include="Assets\MantleData\ptB_mantleData.json" />
     <None Include="Assets\MantleData\rus_mantleData.json" />
     <None Include="Assets\MantleData\spa_mantleData.json" />
+    <None Include="Assets\MonsterData\ara_monsterData.json" />
+    <None Include="Assets\MonsterData\chS_monsterData.json" />
+    <None Include="Assets\MonsterData\chT_monsterData.json" />
+    <None Include="Assets\MonsterData\eng_monsterData.json" />
+    <None Include="Assets\MonsterData\fre_monsterData.json" />
+    <None Include="Assets\MonsterData\ger_monsterData.json" />
+    <None Include="Assets\MonsterData\ita_monsterData.json" />
+    <None Include="Assets\MonsterData\jpn_monsterData.json" />
+    <None Include="Assets\MonsterData\kor_monsterData.json" />
+    <None Include="Assets\MonsterData\pol_monsterData.json" />
+    <None Include="Assets\MonsterData\ptB_monsterData.json" />
+    <None Include="Assets\MonsterData\rus_monsterData.json" />
+    <None Include="Assets\MonsterData\spa_monsterData.json" />
     <None Include="Assets\MusicSkillData\songData.json" />
     <None Include="Assets\OtomoData\ara_otomo_armorData.json" />
     <None Include="Assets\OtomoData\ara_otomo_weaponData.json" />

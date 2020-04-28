@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
+using MHW_Template.Models;
 using MHW_Template.Struct_Generation.Multi;
 
 namespace MHW_Generator.Monsters {
@@ -22,7 +23,7 @@ namespace MHW_Generator.Monsters {
                 }, 1).@out(out var monsterCountHolder),
 
                 new MhwMultiStructData.StructData("Monsters", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Monster Id", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Monster Id", typeof(uint), true, dataSourceType: DataSourceType.Monsters),
                     new MhwMultiStructData.Entry("Gold Small Crown Limit", typeof(uint)),
                     new MhwMultiStructData.Entry("Silver Crown Limit", typeof(uint)),
                     new MhwMultiStructData.Entry("Gold Big Crown Limit", typeof(uint)),
