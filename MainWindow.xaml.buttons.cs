@@ -424,7 +424,7 @@ namespace MHW_Editor {
             if (!targetFileType.Is(typeof(ShellTable))) return;
 
             const int reloadSpeed = 17;
-            const int recoilAmount = 28;
+            const int recoilAmount = 29;
 
             foreach (ShellTable item in items) {
                 item.Normal_1_Rel_Spd = reloadSpeed;

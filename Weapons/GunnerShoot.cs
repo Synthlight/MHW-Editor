@@ -9,12 +9,12 @@ namespace MHW_Editor.Weapons {
         static GunnerShoot() {
             recoilLookup[0]  = "Normal +1";
             recoilLookup[1]  = "Normal +2";
-            recoilLookup[2]  = "Auto-Reload";
-            recoilLookup[3]  = "Rapid +1";
-            recoilLookup[4]  = "Rapid +2";
             recoilLookup[6]  = "Normal +3";
             recoilLookup[7]  = "Normal +4";
+            recoilLookup[3]  = "Rapid +1";
+            recoilLookup[4]  = "Rapid +2";
             recoilLookup[8]  = "Rapid +3";
+            recoilLookup[2]  = "Auto-Reload";
             recoilLookup[9]  = "Wyvern";
             recoilLookup[10] = "Cluster +1";
             recoilLookup[11] = "Cluster +2";
