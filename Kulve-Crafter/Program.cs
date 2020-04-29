@@ -20,14 +20,18 @@ namespace Kulve_Crafter {
         }
 
         private static bool IsValid(KeyValuePair<uint, string> kvp) {
-            var valid = (kvp.Value.Contains("Taroth") || kvp.Value.Contains("Kjárr") || kvp.Value.Contains("Gold")) && kvp.Key < 200;
+            var valid = (kvp.Value.Contains("Taroth") || kvp.Value.Contains("Kjárr") || kvp.Value.Contains("Gold"))
+                        && kvp.Key < 200
+                        && kvp.Value != "Demonlord Goldrod"
+                        && kvp.Value != "Gold Chordmaker"
+                        && kvp.Value != "Golden Crescent";
             return !valid;
         }
 
         public static void GoEqCus() {
             File.Copy(SOURCE_FILE_EQ_CUS_BASE, TARGET_FILE_EQ_CUS_BASE, true);
             using var fileStream = new FileStream(TARGET_FILE_EQ_CUS_BASE, FileMode.Open, FileAccess.ReadWrite);
-            using var reader = new BinaryReader(fileStream, Encoding.Default, true);
+            using var reader     = new BinaryReader(fileStream, Encoding.Default, true);
             fileStream.Seek(6, SeekOrigin.Begin);
             var count = reader.ReadUInt32();
 
@@ -40,22 +44,22 @@ namespace Kulve_Crafter {
             }
 
             foreach (WeaponType weaponType in Enum.GetValues(typeof(WeaponType))) {
-                var i = (ushort) items.Count;
+                var          i       = (ushort) items.Count;
                 EqCus_Weapon newItem = null;
 
                 foreach (var kvp in DataHelper.weaponIndexNameLookup[weaponType]["eng"]) {
                     if (IsValid(kvp)) continue;
 
                     newItem = new EqCus_Weapon(new byte[EqCus_Base.StructSize], 0) {
-                        Equipment_Category = weaponType,
-                        Equipment_Index = (ushort) kvp.Key,
-                        Monster_Unlock = -1,
-                        Story_Unlock = 1,
+                        Equipment_Category       = weaponType,
+                        Equipment_Index          = (ushort) kvp.Key,
+                        Monster_Unlock           = -1,
+                        Story_Unlock             = 1,
                         Needed_Item_Id_to_Unlock = 888,
-                        Mat_1_Id = 888,
-                        Mat_1_Count = 1,
-                        Unk_2 = 1,
-                        Child_index_1 = ++i
+                        Mat_1_Id                 = 888,
+                        Mat_1_Count              = 1,
+                        Unk_2                    = 1,
+                        Child_index_1            = ++i
                     };
                     items.Add(newItem);
                 }
@@ -75,7 +79,7 @@ namespace Kulve_Crafter {
         public static void GoEqCrt() {
             File.Copy(SOURCE_FILE_EQ_CRT_BASE, TARGET_FILE_EQ_CRT_BASE, true);
             using var fileStream = new FileStream(TARGET_FILE_EQ_CRT_BASE, FileMode.Open, FileAccess.ReadWrite);
-            using var reader = new BinaryReader(fileStream, Encoding.Default, true);
+            using var reader     = new BinaryReader(fileStream, Encoding.Default, true);
             fileStream.Seek(6, SeekOrigin.Begin);
             var count = reader.ReadUInt32();
 
@@ -92,14 +96,14 @@ namespace Kulve_Crafter {
                     if (IsValid(kvp)) continue;
 
                     var newItem = new EqCrt_Weapon(new byte[EqCrt_Base.StructSize], 0) {
-                        Equipment_Category = weaponType,
-                        Equipment_Index = (ushort) kvp.Key,
-                        Monster_Unlock = -1,
-                        Story_Unlock = 1,
+                        Equipment_Category       = weaponType,
+                        Equipment_Index          = (ushort) kvp.Key,
+                        Monster_Unlock           = -1,
+                        Story_Unlock             = 1,
                         Needed_Item_Id_to_Unlock = 888,
-                        Mat_1_Id = 888,
-                        Mat_1_Count = 1,
-                        Unknown_uint8_2 = 1
+                        Mat_1_Id                 = 888,
+                        Mat_1_Count              = 1,
+                        Unknown_uint8_2          = 1
                     };
                     items.Add(newItem);
                 }
