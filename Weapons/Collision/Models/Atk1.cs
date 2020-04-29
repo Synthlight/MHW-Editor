@@ -103,8 +103,9 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [SortOrder(280)]
         public byte unk29 { get; set; } // 102
 
+        [DisplayName("Hit Lag Speed Multiplier (a)")]
         [SortOrder(290)]
-        public float unk30 { get; set; } // 103
+        public float hitLagSpeedMultiplierA { get; set; } // 103
 
         [SortOrder(300)]
         public float unk31 { get; set; } // 107
@@ -119,8 +120,9 @@ namespace MHW_Editor.Weapons.Collision.Models {
         [SortOrder(330)]
         public float unk34 { get; set; } // 119
 
+        [DisplayName("Hit Lag Speed Multiplier (b)")]
         [SortOrder(340)]
-        public float unk35 { get; set; } // 123
+        public float hitLagSpeedMultiplierB { get; set; } // 123
 
         [SortOrder(350)]
         public float unk36 { get; set; } // 127
