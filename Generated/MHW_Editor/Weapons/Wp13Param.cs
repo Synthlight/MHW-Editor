@@ -6915,9 +6915,9 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public partial class Unk_Struct_6 : MhwStructItem {
+        public partial class HZD_Ammo_Guage_Levels : MhwStructItem {
             public const ulong FixedSizeCount = 9;
-            public const string GridName = "Unk Struct 6";
+            public const string GridName = "HZD Ammo Guage Levels";
 
             protected float Unk1_raw;
             public const string Unk1_displayName = "Unk1";
@@ -6961,17 +6961,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk4_raw;
-            public const string Unk4_displayName = "Unk4";
-            public const int Unk4_sortIndex = 200;
-            [SortOrder(Unk4_sortIndex)]
-            [DisplayName(Unk4_displayName)]
-            public virtual float Unk4 {
-                get => Unk4_raw;
+            protected float HP_Red_raw;
+            public const string HP_Red_displayName = "HP Red";
+            public const int HP_Red_sortIndex = 200;
+            [SortOrder(HP_Red_sortIndex)]
+            [DisplayName(HP_Red_displayName)]
+            public virtual float HP_Red {
+                get => HP_Red_raw;
                 set {
-                    if (Unk4_raw == value) return;
-                    Unk4_raw = value;
-                    OnPropertyChanged(nameof(Unk4));
+                    if (HP_Red_raw == value) return;
+                    HP_Red_raw = value;
+                    OnPropertyChanged(nameof(HP_Red));
                 }
             }
 
@@ -6989,31 +6989,31 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk6_raw;
-            public const string Unk6_displayName = "Unk6";
-            public const int Unk6_sortIndex = 300;
-            [SortOrder(Unk6_sortIndex)]
-            [DisplayName(Unk6_displayName)]
-            public virtual float Unk6 {
-                get => Unk6_raw;
+            protected float Physical_Multiplier_raw;
+            public const string Physical_Multiplier_displayName = "Physical Multiplier";
+            public const int Physical_Multiplier_sortIndex = 300;
+            [SortOrder(Physical_Multiplier_sortIndex)]
+            [DisplayName(Physical_Multiplier_displayName)]
+            public virtual float Physical_Multiplier {
+                get => Physical_Multiplier_raw;
                 set {
-                    if (Unk6_raw == value) return;
-                    Unk6_raw = value;
-                    OnPropertyChanged(nameof(Unk6));
+                    if (Physical_Multiplier_raw == value) return;
+                    Physical_Multiplier_raw = value;
+                    OnPropertyChanged(nameof(Physical_Multiplier));
                 }
             }
 
-            protected float Unk7_raw;
-            public const string Unk7_displayName = "Unk7";
-            public const int Unk7_sortIndex = 350;
-            [SortOrder(Unk7_sortIndex)]
-            [DisplayName(Unk7_displayName)]
-            public virtual float Unk7 {
-                get => Unk7_raw;
+            protected float Element_Multiplier_raw;
+            public const string Element_Multiplier_displayName = "Element Multiplier";
+            public const int Element_Multiplier_sortIndex = 350;
+            [SortOrder(Element_Multiplier_sortIndex)]
+            [DisplayName(Element_Multiplier_displayName)]
+            public virtual float Element_Multiplier {
+                get => Element_Multiplier_raw;
                 set {
-                    if (Unk7_raw == value) return;
-                    Unk7_raw = value;
-                    OnPropertyChanged(nameof(Unk7));
+                    if (Element_Multiplier_raw == value) return;
+                    Element_Multiplier_raw = value;
+                    OnPropertyChanged(nameof(Element_Multiplier));
                 }
             }
 
@@ -7031,15 +7031,15 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            public static Unk_Struct_6 LoadData(BinaryReader reader) {
-                var data = new Unk_Struct_6();
+            public static HZD_Ammo_Guage_Levels LoadData(BinaryReader reader) {
+                var data = new HZD_Ammo_Guage_Levels();
                 data.Unk1_raw = reader.ReadSingle();
                 data.Unk2_raw = reader.ReadSingle();
                 data.Unk3_raw = reader.ReadSingle();
-                data.Unk4_raw = reader.ReadSingle();
+                data.HP_Red_raw = reader.ReadSingle();
                 data.Unk5_raw = reader.ReadSingle();
-                data.Unk6_raw = reader.ReadSingle();
-                data.Unk7_raw = reader.ReadSingle();
+                data.Physical_Multiplier_raw = reader.ReadSingle();
+                data.Element_Multiplier_raw = reader.ReadSingle();
                 data.Unk8_raw = reader.ReadByte();
                 return data;
             }
@@ -7048,10 +7048,10 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk1_raw);
                 writer.Write(Unk2_raw);
                 writer.Write(Unk3_raw);
-                writer.Write(Unk4_raw);
+                writer.Write(HP_Red_raw);
                 writer.Write(Unk5_raw);
-                writer.Write(Unk6_raw);
-                writer.Write(Unk7_raw);
+                writer.Write(Physical_Multiplier_raw);
+                writer.Write(Element_Multiplier_raw);
                 writer.Write(Unk8_raw);
             }
         }
@@ -7211,15 +7211,15 @@ namespace MHW_Editor.Weapons {
             data.Add(W13p_Params_7__container);
             dataByType[typeof(W13p_Params_7_)] = W13p_Params_7__container;
 
-            var Unk_Struct_6_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Unk_Struct_6)); i++) {
-                var item = Unk_Struct_6.LoadData(reader);
+            var HZD_Ammo_Guage_Levels_list = new ObservableCollection<object>();
+            for (ulong i = 0; i < GetEntryCount(typeof(HZD_Ammo_Guage_Levels)); i++) {
+                var item = HZD_Ammo_Guage_Levels.LoadData(reader);
                 item.Index = i;
-                Unk_Struct_6_list.Add(item);
+                HZD_Ammo_Guage_Levels_list.Add(item);
             }
-            var Unk_Struct_6_container = new MhwStructDataContainer(Unk_Struct_6_list, typeof(Unk_Struct_6));
-            data.Add(Unk_Struct_6_container);
-            dataByType[typeof(Unk_Struct_6)] = Unk_Struct_6_container;
+            var HZD_Ammo_Guage_Levels_container = new MhwStructDataContainer(HZD_Ammo_Guage_Levels_list, typeof(HZD_Ammo_Guage_Levels));
+            data.Add(HZD_Ammo_Guage_Levels_container);
+            dataByType[typeof(HZD_Ammo_Guage_Levels)] = HZD_Ammo_Guage_Levels_container;
         }
     }
 }

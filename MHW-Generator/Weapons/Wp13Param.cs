@@ -65,14 +65,14 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Unk335", typeof(float))
                 }, 1, showVertically: true),
 
-                new MhwMultiStructData.StructData("Unk Struct 6", new List<MhwMultiStructData.Entry> {
+                new MhwMultiStructData.StructData("HZD Ammo Guage Levels", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Unk1", typeof(float)),
                     new MhwMultiStructData.Entry("Unk2", typeof(float)),
                     new MhwMultiStructData.Entry("Unk3", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk4", typeof(float)),
+                    new MhwMultiStructData.Entry("HP Red", typeof(float)),
                     new MhwMultiStructData.Entry("Unk5", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk6", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk7", typeof(float)),
+                    new MhwMultiStructData.Entry("Physical Multiplier", typeof(float)),
+                    new MhwMultiStructData.Entry("Element Multiplier", typeof(float)),
                     new MhwMultiStructData.Entry("Unk8", typeof(byte))
                 }, 9)
             });

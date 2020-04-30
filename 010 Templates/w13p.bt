@@ -449,12 +449,12 @@ typedef struct {
     float Unk1;
     float Unk2;
     float Unk3;
-    float Unk4;
+    float HP_Red;
     float Unk5;
-    float Unk6;
-    float Unk7;
+    float Physical_Multiplier;
+    float Element_Multiplier;
     ubyte Unk8;
-} Unk_Struct_6;
+} HZD_Ammo_Guage_Levels;
 
 W13p_Params_1_ W13p_Params_1__;
 Unk_Struct_1 Unk_Struct_1_[20]<optimize=false>;
@@ -471,4 +471,4 @@ Shield_Mods Shield_Mods_[Number_of_Shield_Mods_Struct_.Number_of_Shield_Mods]<op
 W13p_Params_6_ W13p_Params_6__;
 Unk_Struct_5 Unk_Struct_5_[50]<optimize=false>;
 W13p_Params_7_ W13p_Params_7__;
-Unk_Struct_6 Unk_Struct_6_[9]<optimize=false>;
+HZD_Ammo_Guage_Levels HZD_Ammo_Guage_Levels_[9]<optimize=false>;
