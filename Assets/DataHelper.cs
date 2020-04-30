@@ -43,6 +43,7 @@ namespace MHW_Editor.Assets {
         public static readonly Dictionary<WeaponType, LangMap>    weaponIdNameLookup;
         public static readonly Dictionary<WeaponType, LangMap>    weaponIndexNameLookup;
         public static readonly Dictionary<EquipmentType, LangMap> equipmentIdNameLookup = new Dictionary<EquipmentType, LangMap>();
+        public static readonly List<uint>                         gemItemIds;
 
         public static readonly Dictionary<string, Dictionary<string, List<string>>> BAD_FILE_HASH_MAP;
         public static readonly Dictionary<string, string>                           GOOD_CHUNK_MAP;
@@ -63,6 +64,8 @@ namespace MHW_Editor.Assets {
             weaponIndexNameLookup = LoadDict<WeaponType, LangMap>(EditorAssets.WeaponNameLookupByIndex);
 
             MergeEquipmentIdLookups();
+
+            gemItemIds = LoadList<uint>(EditorAssets.GemItemIds);
 
             foreach (var lang in Global.LANGUAGES) {
                 ParseItemData(lang);
@@ -212,6 +215,11 @@ namespace MHW_Editor.Assets {
                     _ => monsterNames[lang][key]
                 };
             }
+        }
+
+        private static List<T> LoadList<T>(byte[] data) {
+            var json = Encoding.UTF8.GetString(data);
+            return JsonConvert.DeserializeObject<List<T>>(json);
         }
 
         private static Dictionary<K, V> LoadDict<K, V>(byte[] data) {

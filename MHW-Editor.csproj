@@ -421,6 +421,7 @@
     <EmbeddedResource Include="Assets\EditorAssets.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>EditorAssets.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -471,6 +472,7 @@
     <None Include="Assets\EditorData\BadHashMap.json" />
     <None Include="Assets\EditorData\FilePathMap.json" />
     <None Include="Assets\EditorData\FileSizeMap.json" />
+    <None Include="Assets\EditorData\GemItemIds.json" />
     <None Include="Assets\EditorData\GoodChunkMap.json" />
     <None Include="Assets\EditorData\WeaponNameLookupById.json" />
     <None Include="Assets\EditorData\WeaponNameLookupByIndex.json" />

@@ -113,6 +113,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] GemItemIds {
+            get {
+                object obj = ResourceManager.GetObject("GemItemIds", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] GoodChunkMap {
             get {
                 object obj = ResourceManager.GetObject("GoodChunkMap", resourceCulture);

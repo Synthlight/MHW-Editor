@@ -52,6 +52,7 @@ namespace MHW_Generator_Data {
             File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\ArmorNameLookupByIndex.json", JsonConvert.SerializeObject(ArmorReader.GetAllArmors(IndexOrId.Index), Formatting.Indented));
             File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\WeaponNameLookupById.json", JsonConvert.SerializeObject(WeaponReader.GetAllWeapons(IndexOrId.Id), Formatting.Indented));
             File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\WeaponNameLookupByIndex.json", JsonConvert.SerializeObject(WeaponReader.GetAllWeapons(IndexOrId.Index), Formatting.Indented));
+            File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\GemItemIds.json", JsonConvert.SerializeObject(ItemReader.GetGemIds(), Formatting.Indented));
         }
 
         private static void GenButtonLocalizationAndIdList() {

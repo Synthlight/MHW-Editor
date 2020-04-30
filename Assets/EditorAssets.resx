@@ -133,6 +133,9 @@
   <data name="FileSizeMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>editordata\filesizemap.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="GemItemIds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>editordata\gemitemids.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="GoodChunkMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>editordata\goodchunkmap.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

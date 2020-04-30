@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Windows;
 using MHW_Editor.Armors;
+using MHW_Editor.Assets;
 using MHW_Editor.Gems;
 using MHW_Editor.Items;
 using MHW_Editor.Models;
@@ -506,23 +507,13 @@ namespace MHW_Editor {
             if (!targetFileType.Is(typeof(Item))) return;
 
             var rawList = new List<GemData>();
-            for (var i = 0; i < main_grid.Items.Count; i++) {
-                Item item = main_grid.Items[i];
-                if (item.Name.Contains(" Jewel") // English
-                    || item.Name.Contains("-Juwel") // Deutsch
-                    || item.Name.StartsWith("Gioiello") // Italiano
-                    || item.Name.StartsWith("Joyau") // Français
-                    || item.Name.StartsWith("Klejnot") // Polski
-                    || item.Name.StartsWith("Joia") // Português do Brasil
-                    || item.Name.StartsWith("Самоцвет") // Русский
-                    || item.Name.StartsWith("Joya") // Español
-                ) {
-                    rawList.Add(new GemData {index = i, itemName = item.Name, sortOrder = item.Sort_Order});
-                }
+            foreach (var itemId in DataHelper.gemItemIds) {
+                Item item = main_grid.Items[(int) itemId];
+                rawList.Add(new GemData {index = itemId, itemName = item.Name, sortOrder = item.Sort_Order});
             }
 
-            if (rawList.Count == 0) {
-                MessageBox.Show("In order for this to work, I have to know what string all gems share in common to identify them.\r\n\r\nPlease comment on the mod page with what word (in your native language) is in all gem names to identify them as such.\r\n(And what language this is for.)", "'Jewel' in a unknown language", MessageBoxButton.OK, MessageBoxImage.Error);
+            if (rawList.Count != 402) {
+                MessageBox.Show($"There are 402 Gems. {rawList.Count} were handled.\r\n\r\nAre you using an outdated itemData.itm?", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
@@ -540,7 +531,7 @@ namespace MHW_Editor {
             for (var i = 0; i < sortedSortIndexes.Count; i++) {
                 var  index        = sortedGemNameIndexes[i];
                 var  newSortIndex = sortedSortIndexes[i];
-                Item item         = main_grid.Items[index];
+                Item item         = main_grid.Items[(int) index];
                 item.Sort_Order = newSortIndex;
             }
         }
