@@ -107,6 +107,10 @@
     <Compile Include="Assets\LangMapNeg.cs" />
     <Compile Include="Assets\LangMap.cs" />
     <Compile Include="Controls\AutoFilteredComboBox.cs" />
+    <Compile Include="Controls\MhwDataGrid.xaml.cs">
+      <DependentUpon>MhwDataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Models\IMhwDataGrid.cs" />
     <Compile Include="EncryptionHelper.cs" />
     <Compile Include="FindFileInChunk.xaml.cs">
       <DependentUpon>FindFileInChunk.xaml</DependentUpon>
@@ -284,6 +288,7 @@
     <Compile Include="PlData\PlMantleParam.cs" />
     <Compile Include="PlData\PlPlayerParam.cs" />
     <Compile Include="PlData\PlItemParam.cs" />
+    <Compile Include="SaveLoad.cs" />
     <Compile Include="Skills\MusicSkill.cs" />
     <Compile Include="Skills\SkillDat.cs" />
     <Compile Include="Gems\Gem.cs" />
@@ -311,6 +316,7 @@
     <Compile Include="Models\MhwItem.cs" />
     <Compile Include="Models\ISlots.cs" />
     <Compile Include="Skills\SkillPointData.cs" />
+    <Compile Include="UpdateCheck.cs" />
     <Compile Include="Weapons\AwakenedExp.cs" />
     <Compile Include="Weapons\AwakenedWpUpgrade.cs" />
     <Compile Include="Weapons\AwakenedWpCustom.cs" />
@@ -360,6 +366,10 @@
     <Compile Include="Weapons\WeaponWhistle.cs" />
     <Compile Include="Weapons\WeaponGunLance.cs" />
     <Compile Include="Weapons\WeaponWSword.cs" />
+    <Page Include="Controls\MhwDataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FindFileInChunk.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -9,7 +9,7 @@ namespace MHW_Editor.Weapons.Collision {
         public string EncryptionKey { get; }
 
         public static void SetupViews(Models.Collision collision, Grid grid, MainWindow main) {
-            if (MainWindow.showAll) {
+            if (main.showAll) {
                 grid.AddControl(new Label {Content = "Collision", FontSize = MainWindow.FONT_SIZE});
                 main.AddDataGrid(new List<Models.Collision> {collision});
 
@@ -39,7 +39,7 @@ namespace MHW_Editor.Weapons.Collision {
                 main.AddDataGrid(collision.atks.Where(o => ((IAtk) o).moveId == name.moveId));
             }
 
-            if (MainWindow.showAll) {
+            if (main.showAll) {
                 grid.AddControl(new Label {Content = "Raw Name List", FontSize = MainWindow.FONT_SIZE});
                 main.AddDataGrid(collision.names);
 

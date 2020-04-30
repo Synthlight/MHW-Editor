@@ -1,25 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Net;
 using System.Reflection;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Threading;
 using JetBrains.Annotations;
 using MHW_Editor.Armors;
 using MHW_Editor.Assets;
+using MHW_Editor.Controls;
 using MHW_Editor.Gems;
 using MHW_Editor.GuildCard;
 using MHW_Editor.Items;
@@ -31,47 +26,34 @@ using MHW_Editor.Skills;
 using MHW_Editor.Weapons;
 using MHW_Editor.Weapons.Collision;
 using MHW_Template;
-using MHW_Template.Armors;
-using MHW_Template.Items;
-using MHW_Template.Models;
-using MHW_Template.Weapons;
 using Microsoft.Win32;
 using Newtonsoft.Json;
-using NotifyIcon = System.Windows.Forms.NotifyIcon;
-using SystemIcons = System.Drawing.SystemIcons;
-using ToolTipIcon = System.Windows.Forms.ToolTipIcon;
 
 namespace MHW_Editor {
     public partial class MainWindow {
 #if DEBUG
         private const bool ENABLE_CHEAT_BUTTONS = true;
-        private const bool SHOW_RAW_BYTES       = true;
+        public const  bool SHOW_RAW_BYTES       = true;
 #else
         private const bool ENABLE_CHEAT_BUTTONS = false;
-        private const bool SHOW_RAW_BYTES = false;
+        public const bool SHOW_RAW_BYTES = false;
 #endif
-        private const string NEXUS_LINK           = "https://www.nexusmods.com/monsterhunterworld/mods/2068";
-        private const string CURRENT_GAME_VERSION = "13.5X.XX";
+        public const  string CURRENT_GAME_VERSION = "13.5X.XX";
         private const string TITLE                = "MHW Editor";
         public const  double FONT_SIZE            = 20;
 
-        private readonly ObservableCollection<dynamic>                        items = new ObservableCollection<dynamic>();
-        private          string                                               targetFile;
-        private          Type                                                 targetFileType;
-        private          Dictionary<object, Dictionary<string, ColumnHolder>> columnMap;
-        [CanBeNull]
-        private DataGridRow coloredRow;
-        private       bool    isManualEditCommit;
         public static LangMap skillDatLookup = new LangMap();
-        [CanBeNull]
-        private CancellationTokenSource savedTimer;
-        private readonly Brush backgroundBrush = (Brush) new BrushConverter().ConvertFrom("#c0e1fb");
-        [CanBeNull]
-        private NotifyIcon notifyIcon;
-        private readonly bool           unlockFields;
-        private readonly List<DataGrid> dataGrids = new List<DataGrid>();
-        private          dynamic        customFileData;
-        public static    bool           showAll;
+
+        [CanBeNull] private CancellationTokenSource savedTimer;
+
+        private readonly List<MhwDataGrid> dataGrids = new List<MhwDataGrid>();
+
+        public  string  targetFile     { get; private set; }
+        public  Type    targetFileType { get; private set; }
+        private dynamic customFileData;
+
+        public bool unlockFields { get; }
+        public bool showAll      { get; }
 
         public static string locale = "eng";
         public string Locale {
@@ -108,8 +90,6 @@ namespace MHW_Editor {
         }
 
         public bool SingleClickToEditMode { get; set; } = true;
-
-        private DataGrid mainDataGrid => (DataGrid) content_control.Content;
 
         public MainWindow() {
             var args = Environment.GetCommandLineArgs();
@@ -160,60 +140,15 @@ namespace MHW_Editor {
             InitializeComponent();
             Title = TITLE;
 
-            mainDataGrid.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
-            mainDataGrid.VerticalScrollBarVisibility   = ScrollBarVisibility.Auto;
+            main_grid.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
+            main_grid.VerticalScrollBarVisibility   = ScrollBarVisibility.Auto;
 
             cbx_localization.ItemsSource = Global.LANGUAGE_NAME_LOOKUP;
 
             Width  = SystemParameters.MaximizedPrimaryScreenWidth * 0.8;
             Height = SystemParameters.MaximizedPrimaryScreenHeight * 0.5;
 
-            DoUpdateCheck();
-        }
-
-        private async void DoUpdateCheck() {
-            await Task.Run(() => {
-                try {
-                    var json           = GetHttpText("http://brutsches.com/MHW-Editor.version.json");
-                    var currentVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
-                    var newestVersion  = JsonConvert.DeserializeObject<VersionCheck>(json).latest;
-
-                    if (currentVersion != newestVersion) {
-                        RunOnUiThread(() => {
-                            notifyIcon = new NotifyIcon {
-                                Icon    = SystemIcons.Application,
-                                Visible = false,
-                                Text = "MHW Editor\r\n" +
-                                       "Update Available.\r\n" +
-                                       "Click to go to the mod page."
-                            };
-                            //notifyIcon.BalloonTipClosed += (s, e) => notifyIcon.Visible = false;
-                            notifyIcon.MouseClick += (sender, args) => { Process.Start(NEXUS_LINK); };
-
-                            notifyIcon.Visible = true;
-                            notifyIcon.ShowBalloonTip(10000, "Update Available", "A newer version has been detected.\r\n" +
-                                                                                 $"Your Version: {currentVersion}\r\n" +
-                                                                                 $"Newer Version: {newestVersion}", ToolTipIcon.Info);
-                        });
-                    }
-                } catch (Exception e) {
-                    Console.Error.Write(e);
-                }
-            });
-        }
-
-        // ReSharper disable once UnusedMethodReturnValue.Local
-        private DispatcherOperation RunOnUiThread(Action action) {
-            return Dispatcher?.InvokeAsync(action);
-        }
-
-        private string GetHttpText(string url) {
-            var request = (HttpWebRequest) WebRequest.Create(url);
-            request.Method = "GET";
-
-            using var response = (HttpWebResponse) request.GetResponse();
-            using var reader   = new StreamReader(response.GetResponseStream() ?? throw new InvalidOperationException());
-            return reader.ReadToEnd();
+            UpdateCheck.Run(this);
         }
 
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e) {
@@ -222,390 +157,7 @@ namespace MHW_Editor {
             e.Handled = true;
         }
 
-        private void Dg_items_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e) {
-            switch (e.PropertyName) {
-                case nameof(IMhwItem.Bytes):
-                case nameof(IMhwItem.UniqueId):
-                case nameof(Melee.GMD_Name_Index):
-                case nameof(Melee.GMD_Description_Index):
-                    e.Cancel = true; // Internal.
-                    break;
-                case nameof(IMhwItem.Raw_Data):
-                    e.Cancel = !SHOW_RAW_BYTES; // Only for debug builds.
-                    break;
-                case nameof(Ranged.Barrel_Type):
-                case nameof(Ranged.Deviation):
-                case nameof(Ranged.Magazine_Type):
-                case nameof(Ranged.Muzzle_Type):
-                case nameof(Ranged.Scope_Type):
-                case nameof(Ranged.Shell_Type_Id):
-                    e.Cancel = targetFileType.Is(typeof(Bow));
-                    break;
-                case nameof(SkillDat.Id):
-                    e.Cancel = targetFileType.Is(typeof(SkillDat));
-                    break;
-                default:
-                    e.Cancel = e.PropertyName.EndsWith("Raw");
-                    break;
-            }
-
-            Type sourceClassType = ((dynamic) e.PropertyDescriptor).ComponentType;
-
-            // Cancel for _button columns as we will use a text version with onClick opening a selector.
-            if (ButtonTypeInfo.TYPE_AND_NAME.ContainsKey(sourceClassType)
-                && ButtonTypeInfo.TYPE_AND_NAME[sourceClassType].Contains(e.PropertyName)) {
-                e.Cancel = true;
-            }
-
-            if (e.Cancel) return;
-
-            // Create 'X' button for delete column.
-            if (e.PropertyName == "Delete") {
-                var col  = new DataGridTemplateColumn();
-                var btn1 = new FrameworkElementFactory(typeof(Button));
-
-                btn1.SetValue(ContentProperty, "X");
-                btn1.AddHandler(ButtonBase.ClickEvent, new RoutedEventHandler((o, args) => { Dg_items_cell_Click(o, args, (DataGrid) sender); }));
-
-                col.CellTemplate = new DataTemplate {VisualTree = btn1};
-                e.Column         = col;
-            }
-
-            if (e.PropertyName.EndsWith("_percent")) {
-                var cb = new DataGridTextColumn {
-                    Header = e.Column.Header,
-                    Binding = new Binding(e.PropertyName) {
-                        StringFormat = "{0:0.##%;-0.##%;\"\"}" // Can't be negative, but needed to hide all 0 cases.
-                    },
-                    CanUserSort = true,
-                    IsReadOnly  = true
-                };
-                e.Column = cb;
-            }
-
-            if (e.PropertyType == typeof(DateTime)) {
-                var cb = new DataGridTextColumn {
-                    Header = e.Column.Header,
-                    Binding = new Binding(e.PropertyName) {
-                        StringFormat = "{0:yyyy-MM-dd}" // Can't be negative, but needed to hide all 0 cases.
-                    },
-                    CanUserSort = true,
-                    IsReadOnly  = true
-                };
-                e.Column = cb;
-            }
-
-            if (e.PropertyName == "Index") {
-                e.Column.IsReadOnly = true; // Do before normal readOnly checks.
-            }
-
-            e.Column.CanUserSort = true;
-
-            // Use [DisplayName] attribute for the column header text.
-            // Use [SortOrder] attribute to control the position. Generated fields have spacing so it's easy to say 'generated_field_sortOrder + 1'.
-            // Use [CustomSorter] to define an IComparer class to control sorting.
-            var           propertyInfo     = sourceClassType.GetProperties().FirstOrDefault(info => info.Name == e.PropertyName);
-            var           displayName      = ((DisplayNameAttribute) propertyInfo?.GetCustomAttribute(typeof(DisplayNameAttribute), true))?.DisplayName;
-            var           sortOrder        = ((SortOrderAttribute) propertyInfo?.GetCustomAttribute(typeof(SortOrderAttribute), true))?.sortOrder;
-            var           customSorterType = ((CustomSorterAttribute) propertyInfo?.GetCustomAttribute(typeof(CustomSorterAttribute), true))?.customSorterType;
-            var           isReadOnly       = (IsReadOnlyAttribute) propertyInfo?.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
-            ICustomSorter customSorter     = null;
-
-            if (displayName != null) {
-                if (displayName == "") { // Use empty DisplayName as a way to hide columns.
-                    e.Cancel = true;
-                    return;
-                }
-
-                e.Column.Header = displayName;
-            }
-
-            if (customSorterType != null) {
-                customSorter = (ICustomSorter) Activator.CreateInstance(customSorterType);
-                if (customSorter is ICustomSorterWithPropertyName csWithName) {
-                    csWithName.PropertyName = e.PropertyName;
-                }
-            }
-
-            if (isReadOnly) {
-                e.Column.IsReadOnly = !unlockFields;
-            }
-
-            columnMap.GetOrCreate(sender)[e.PropertyName] = new ColumnHolder(e.Column, sortOrder ?? -1, customSorter);
-
-            // TODO: Fix enum value display at some point.
-        }
-
-        private void Dg_items_AutoGeneratedColumns(object sender, EventArgs e) {
-            var columns = columnMap[sender].Values.ToList();
-            columns.Sort((c1, c2) => c1.sortOrder.CompareTo(c2.sortOrder));
-            for (var i = 0; i < columns.Count; i++) {
-                columns[i].column.DisplayIndex = i;
-            }
-        }
-
-        private void Dg_items_GotFocus(object sender, RoutedEventArgs e) {
-            try {
-                // Lookup for the source to be DataGridCell
-                if (e.OriginalSource is DataGridCell cell) {
-                    if (coloredRow != null) coloredRow.Background = Brushes.White;
-                    coloredRow = cell.GetParent<DataGridRow>();
-                    // ReSharper disable once PossibleNullReferenceException
-                    coloredRow.Background = backgroundBrush;
-
-                    if (SingleClickToEditMode) {
-                        // Needs to only happen when it's a button. If not, we stop regular fields from working.
-                        if (CheckCellForButtonTypeAndHandleClick(sender, cell)) return;
-
-                        // We're past the _button check, now we just want to avoid a normal drop-down set to read only.
-                        if (cell.IsReadOnly) return;
-
-                        // Starts the Edit on the row;
-                        ((DataGrid) sender).BeginEdit(e);
-
-                        if (cell.Content is ComboBox cbx) {
-                            cbx.IsDropDownOpen = true;
-                        }
-                    }
-                }
-            } catch (Exception err) when (!Debugger.IsAttached) {
-                ShowError(err, "Error Occured");
-            }
-        }
-
-        private void Dg_items_cell_MouseClick(object sender, MouseButtonEventArgs e) {
-            try {
-                if (sender is DataGridCell cell) {
-                    // We come here on both single & double click. If we don't check for focus, this hijacks the click and prevents focusing.
-                    if (e?.ClickCount == 1 && !cell.IsFocused) return;
-
-                    CheckCellForButtonTypeAndHandleClick(sender, cell);
-                }
-            } catch (Exception err) when (!Debugger.IsAttached) {
-                ShowError(err, "Error Occured");
-            }
-        }
-
-        private void Dg_items_cell_Click(object sender, RoutedEventArgs e, ItemsControl dataGrid) {
-            var obj = ((FrameworkElement) sender).DataContext;
-            ((ObservableCollection<dynamic>) dataGrid.ItemsSource).Remove(obj);
-        }
-
-        private bool CheckCellForButtonTypeAndHandleClick(object sender, DataGridCell cell) {
-            if (!(cell.Content is TextBlock)) return false;
-            var dataGrid = ((DependencyObject) sender).GetParent<DataGrid>();
-
-            // Have to loop though our column list to file the original property name.
-            foreach (var propertyName in columnMap[dataGrid].Keys.Where(key => key.Contains("_button"))) {
-                if (cell.Column != columnMap[dataGrid][propertyName].column) continue;
-
-                return EditSelectedItemId(cell, propertyName);
-            }
-
-            return false;
-        }
-
-        private bool EditSelectedItemId(FrameworkElement cell, string propertyName) {
-            var obj      = (IOnPropertyChanged) cell.DataContext;
-            var property = obj.GetType().GetProperty(propertyName.Replace("_button", ""), BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
-            Debug.Assert(property != null, nameof(property) + " != null");
-            var propertyType   = property.PropertyType;
-            var value          = property.GetValue(obj);
-            var dataSourceType = ((DataSourceAttribute) property.GetCustomAttribute(typeof(DataSourceAttribute), true))?.dataType;
-            var isReadOnly     = (IsReadOnlyAttribute) property.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
-
-            if (isReadOnly) return false;
-
-            dynamic dataSource = dataSourceType switch {
-                DataSourceType.Items => DataHelper.itemNames[locale],
-                DataSourceType.Skills => DataHelper.skillNames[locale],
-                DataSourceType.SkillDat => skillDatLookup[locale],
-                DataSourceType.ArmorById => DataHelper.armorIdNameLookup[GetArmorType(cell)][locale],
-                DataSourceType.ArmorByIndex => DataHelper.armorIndexNameLookup[GetArmorType(cell)][locale],
-                DataSourceType.WeaponsById => DataHelper.weaponIdNameLookup[GetWeaponType(cell)][locale],
-                DataSourceType.WeaponsByIndex => DataHelper.weaponIndexNameLookup[GetWeaponType(cell)][locale],
-                DataSourceType.EquipmentById => DataHelper.equipmentIdNameLookup[GetEquipmentType(cell)][locale],
-                DataSourceType.Pendants => DataHelper.pendantNames[locale],
-                DataSourceType.Monsters => DataHelper.monsterNames[locale],
-                DataSourceType.MonstersNeg => DataHelper.monsterNamesNeg[locale],
-                DataSourceType.ShellRecoil => ShellTable.recoilLookup,
-                DataSourceType.ShellReload => ShellTable.reloadLookup,
-                DataSourceType.GunnerRecoil => GunnerShoot.recoilLookup,
-                DataSourceType.GunnerReload => GunnerReload.reloadLookup,
-                _ => throw new ArgumentOutOfRangeException(dataSourceType.ToString())
-            };
-
-            var getNewItemId = new GetNewItemId(value, dataSource);
-
-            getNewItemId.ShowDialog();
-
-            if (!getNewItemId.Cancelled) {
-                property.SetValue(obj, Convert.ChangeType(getNewItemId.CurrentItem, propertyType));
-                obj.OnPropertyChanged(propertyName);
-            }
-
-            return true;
-        }
-
-        private static ArmorType GetArmorType(FrameworkElement cell) {
-            return ((IHasArmorType) cell.DataContext).GetArmorType();
-        }
-
-        private static WeaponType GetWeaponType(FrameworkElement cell) {
-            return ((IHasWeaponType) cell.DataContext).GetWeaponType();
-        }
-
-        private static EquipmentType GetEquipmentType(FrameworkElement cell) {
-            return ((IHasEquipmentType) cell.DataContext).GetEquipmentType();
-        }
-
-        private void Dg_items_Sorting(object sender, DataGridSortingEventArgs e) {
-            try {
-                // Does the column we're sorting define a custom sorter?
-                var matches = columnMap[sender].Where(pair => pair.Value.column == e.Column && pair.Value.customSorter != null).ToList();
-                if (!matches.Any()) return;
-                var customSorter = matches.First().Value.customSorter;
-
-                e.Column.SortDirection = customSorter.SortDirection = e.Column.SortDirection != ListSortDirection.Ascending ? ListSortDirection.Ascending : ListSortDirection.Descending;
-
-                var listColView = (ListCollectionView) ((DataGrid) sender).ItemsSource;
-                listColView.CustomSort = customSorter;
-
-                e.Handled = true;
-            } catch (Exception err) when (!Debugger.IsAttached) {
-                ShowError(err, "Error Occured");
-            }
-        }
-
-        private void Dg_items_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e) {
-            try {
-                // Commit as cell edit ends instead of DG waiting till we leave the row.
-                if (!isManualEditCommit) {
-                    isManualEditCommit = true;
-                    ((DataGrid) sender).CommitEdit(DataGridEditingUnit.Row, true);
-                    isManualEditCommit = false;
-                }
-
-                CalculatePercents();
-            } catch (Exception err) when (!Debugger.IsAttached) {
-                ShowError(err, "Error Occured");
-            }
-        }
-
-        private void CalculatePercents() {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            if (targetFileType.Is(typeof(DecoLottery))) {
-                var dict = new Dictionary<int, uint>();
-                for (var i = 0; i <= 10; i++) {
-                    dict[i] = 0;
-                }
-
-                foreach (DecoLottery item in items) {
-                    dict[0]  += item.Grade_1;
-                    dict[1]  += item.Grade_2;
-                    dict[2]  += item.Grade_3;
-                    dict[3]  += item.Grade_4;
-                    dict[4]  += item.Grade_5;
-                    dict[5]  += item.Grade_6;
-                    dict[6]  += item.Grade_7;
-                    dict[7]  += item.Grade_8;
-                    dict[8]  += item.Grade_9;
-                    dict[9]  += item.Stream_R6_;
-                    dict[10] += item.Stream_R8_;
-                }
-
-                foreach (DecoLottery item in items) {
-                    item.Grade_1_percent    = item.Grade_1 > 0f ? (float) item.Grade_1 / dict[0] : 0f;
-                    item.Grade_2_percent    = item.Grade_2 > 0f ? (float) item.Grade_2 / dict[1] : 0f;
-                    item.Grade_3_percent    = item.Grade_3 > 0f ? (float) item.Grade_3 / dict[2] : 0f;
-                    item.Grade_4_percent    = item.Grade_4 > 0f ? (float) item.Grade_4 / dict[3] : 0f;
-                    item.Grade_5_percent    = item.Grade_5 > 0f ? (float) item.Grade_5 / dict[4] : 0f;
-                    item.Grade_6_percent    = item.Grade_6 > 0f ? (float) item.Grade_6 / dict[5] : 0f;
-                    item.Grade_7_percent    = item.Grade_7 > 0f ? (float) item.Grade_7 / dict[6] : 0f;
-                    item.Grade_8_percent    = item.Grade_8 > 0f ? (float) item.Grade_8 / dict[7] : 0f;
-                    item.Grade_9_percent    = item.Grade_9 > 0f ? (float) item.Grade_9 / dict[8] : 0f;
-                    item.Stream_R6__percent = item.Stream_R6_ > 0f ? (float) item.Stream_R6_ / dict[9] : 0f;
-                    item.Stream_R8__percent = item.Stream_R8_ > 0f ? (float) item.Stream_R8_ / dict[10] : 0f;
-                }
-            } else if (targetFileType.Is(typeof(DecoGradeLottery))) {
-                foreach (DecoGradeLottery item in items) {
-                    var total = item.Grade_1
-                                + item.Grade_2
-                                + item.Grade_3
-                                + item.Grade_4
-                                + item.Grade_5
-                                + item.Grade_6
-                                + item.Grade_7
-                                + item.Grade_8
-                                + item.Grade_9
-                                + item.Stream_R6_
-                                + item.Stream_R8_;
-
-                    item.Grade_1_percent    = item.Grade_1 > 0f ? (float) item.Grade_1 / total : 0f;
-                    item.Grade_2_percent    = item.Grade_2 > 0f ? (float) item.Grade_2 / total : 0f;
-                    item.Grade_3_percent    = item.Grade_3 > 0f ? (float) item.Grade_3 / total : 0f;
-                    item.Grade_4_percent    = item.Grade_4 > 0f ? (float) item.Grade_4 / total : 0f;
-                    item.Grade_5_percent    = item.Grade_5 > 0f ? (float) item.Grade_5 / total : 0f;
-                    item.Grade_6_percent    = item.Grade_6 > 0f ? (float) item.Grade_6 / total : 0f;
-                    item.Grade_7_percent    = item.Grade_7 > 0f ? (float) item.Grade_7 / total : 0f;
-                    item.Grade_8_percent    = item.Grade_8 > 0f ? (float) item.Grade_8 / total : 0f;
-                    item.Grade_9_percent    = item.Grade_9 > 0f ? (float) item.Grade_9 / total : 0f;
-                    item.Stream_R6__percent = item.Stream_R6_ > 0f ? (float) item.Stream_R6_ / total : 0f;
-                    item.Stream_R8__percent = item.Stream_R8_ > 0f ? (float) item.Stream_R8_ / total : 0f;
-                }
-            } else if (targetFileType.Is(typeof(SafiItemGradeLottery))) {
-                foreach (SafiItemGradeLottery item in items) {
-                    var total = item.Grade_1
-                                + item.Grade_2
-                                + item.Grade_3
-                                + item.Grade_4
-                                + item.Grade_5
-                                + item.Grade_6
-                                + item.Grade_7
-                                + item.Grade_8
-                                + item.Grade_9
-                                + item.Grade_10
-                                + item.Grade_11
-                                + item.Grade_12
-                                + item.Grade_13
-                                + item.Grade_14
-                                + item.Grade_15;
-
-                    item.Grade_1_percent  = item.Grade_1 > 0f ? (float) item.Grade_1 / total : 0f;
-                    item.Grade_2_percent  = item.Grade_2 > 0f ? (float) item.Grade_2 / total : 0f;
-                    item.Grade_3_percent  = item.Grade_3 > 0f ? (float) item.Grade_3 / total : 0f;
-                    item.Grade_4_percent  = item.Grade_4 > 0f ? (float) item.Grade_4 / total : 0f;
-                    item.Grade_5_percent  = item.Grade_5 > 0f ? (float) item.Grade_5 / total : 0f;
-                    item.Grade_6_percent  = item.Grade_6 > 0f ? (float) item.Grade_6 / total : 0f;
-                    item.Grade_7_percent  = item.Grade_7 > 0f ? (float) item.Grade_7 / total : 0f;
-                    item.Grade_8_percent  = item.Grade_8 > 0f ? (float) item.Grade_8 / total : 0f;
-                    item.Grade_9_percent  = item.Grade_9 > 0f ? (float) item.Grade_9 / total : 0f;
-                    item.Grade_10_percent = item.Grade_10 > 0f ? (float) item.Grade_10 / total : 0f;
-                    item.Grade_11_percent = item.Grade_11 > 0f ? (float) item.Grade_11 / total : 0f;
-                    item.Grade_12_percent = item.Grade_12 > 0f ? (float) item.Grade_12 / total : 0f;
-                    item.Grade_13_percent = item.Grade_13 > 0f ? (float) item.Grade_13 / total : 0f;
-                    item.Grade_14_percent = item.Grade_14 > 0f ? (float) item.Grade_14 / total : 0f;
-                    item.Grade_15_percent = item.Grade_15 > 0f ? (float) item.Grade_15 / total : 0f;
-                }
-            } else if (targetFileType.Is(typeof(KulveGradeLottery))) {
-                foreach (KulveGradeLottery item in items) {
-                    var total = item.Grade_1
-                                + item.Grade_2
-                                + item.Grade_3
-                                + item.Grade_4
-                                + item.Grade_5;
-
-                    item.Grade_1_percent = item.Grade_1 > 0f ? (float) item.Grade_1 / total : 0f;
-                    item.Grade_2_percent = item.Grade_2 > 0f ? (float) item.Grade_2 / total : 0f;
-                    item.Grade_3_percent = item.Grade_3 > 0f ? (float) item.Grade_3 / total : 0f;
-                    item.Grade_4_percent = item.Grade_4 > 0f ? (float) item.Grade_4 / total : 0f;
-                    item.Grade_5_percent = item.Grade_5 > 0f ? (float) item.Grade_5 / total : 0f;
-                }
-            }
-        }
-
-        private void FillSkillDatDictionary() {
+        private void FillSkillDatDictionary(ObservableCollection<dynamic> items) {
             // Makes the lookup table for skill dat unlock columns which reference themselves by index.
             skillDatLookup = new LangMap();
             foreach (var lang in Global.LANGUAGES) {
@@ -617,89 +169,108 @@ namespace MHW_Editor {
             }
         }
 
-        private void Load() {
-            var target = GetOpenTarget($"MHW Data Files (See mod description for full list.)|{string.Join(";", Global.FILE_TYPES)}");
-            if (string.IsNullOrEmpty(target)) return;
-
-            targetFile     = target;
-            targetFileType = GetFileType();
-            items.Clear();
-            Title = Path.GetFileName(targetFile);
-
-            grid.Children.Clear();
-            grid.UpdateLayout();
-
-            foreach (var dg in dataGrids) {
-                dg.ItemsSource = null;
-            }
-
-            dataGrids.Clear();
-
-            columnMap  = new Dictionary<object, Dictionary<string, ColumnHolder>>();
-            coloredRow = null;
-
-            GC.Collect();
-
-            try {
-                if (targetFileType.Is(typeof(ICustomSaveLoad))) { // Custom save/load.
-                    scroll_viewer.Visibility = Visibility.Visible;
-                    mainDataGrid.Visibility  = Visibility.Collapsed;
-
-                    var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
-                    Debug.Assert(loadData != null, nameof(loadData) + " != null");
-                    customFileData = loadData.Invoke(null, new object[] {targetFile});
-
-                    var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
-                    Debug.Assert(setupViews != null, nameof(setupViews) + " != null");
-                    setupViews.Invoke(null, new object[] {customFileData, grid, this});
-                    return;
-                }
-            } catch (Exception e) when (!Debugger.IsAttached) {
-                ShowError(e, "Load Error");
-                return;
-            }
-
-            LoadFile();
-
-            if (targetFileType.Is(typeof(SkillDat))) {
-                FillSkillDatDictionary();
-            }
-
-            dataGrids.Add(mainDataGrid);
-            scroll_viewer.Visibility = Visibility.Collapsed;
-            mainDataGrid.Visibility  = Visibility.Visible;
-
-            // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
-            if (targetFileType.IsGeneric(typeof(IHasCustomView<>))) {
-                mainDataGrid.ItemsSource = new ListCollectionView(items[0].GetCustomView());
-            } else {
-                mainDataGrid.ItemsSource = new ListCollectionView(items);
-            }
-
-            if (targetFileType.Is(typeof(DecoGradeLottery), typeof(DecoLottery), typeof(KulveGradeLottery), typeof(SafiItemGradeLottery))) {
-                CalculatePercents();
-            }
-        }
-
         public DataGrid AddDataGrid<T>(IEnumerable<T> itemSource) {
-            var control = new ContentControl {Content = Resources["ItemDataGrid"]};
-            grid.AddControl(control);
-            var dataGrid = ((DataGrid) control.Content);
-            dataGrid.ItemsSource = itemSource is ObservableCollection<T> ? itemSource : new ObservableCollection<T>(itemSource);
+            var dataGrid = new MhwDataGrid();
+            dataGrid.SetItems(this, itemSource is ObservableCollection<dynamic> source ? source : new ObservableCollection<dynamic>((dynamic) itemSource));
             dataGrids.Add(dataGrid);
+            grid.AddControl(dataGrid);
             return dataGrid;
         }
 
-        private void LoadFile() {
-            Debug.Assert(targetFile != null, nameof(targetFile) + " != null");
+        private void Load() {
+            try {
+                var target = GetOpenTarget($"MHW Data Files (See mod description for full list.)|{string.Join(";", Global.FILE_TYPES)}");
+                if (string.IsNullOrEmpty(target)) return;
 
-            const BindingFlags flags = BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy;
-            // ReSharper disable PossibleNullReferenceException
-            var initialOffset    = (ulong) targetFileType.GetField(nameof(Armor.InitialOffset), flags).GetValue(null);
-            var structSize       = (uint) targetFileType.GetField(nameof(Armor.StructSize), flags).GetValue(null);
-            var entryCountOffset = (long) targetFileType.GetField(nameof(Armor.EntryCountOffset), flags).GetValue(null);
-            var encryptionKey    = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), flags).GetValue(null);
+                targetFile     = target;
+                targetFileType = GetFileType();
+                Title          = Path.GetFileName(targetFile);
 
+                Debug.Assert(targetFile != null, nameof(targetFile) + " != null");
+
+                grid.Children.Clear();
+                grid.UpdateLayout();
+
+                foreach (var dg in dataGrids) {
+                    dg.SetItems(null, null);
+                }
+
+                dataGrids.Clear();
+
+                GC.Collect();
+
+                var hasCustomLoad = targetFileType.Is(typeof(ICustomSaveLoad));
+
+                scroll_viewer.Visibility = hasCustomLoad ? Visibility.Visible : Visibility.Collapsed;
+                main_grid.Visibility     = hasCustomLoad ? Visibility.Collapsed : Visibility.Visible;
+
+                if (hasCustomLoad) { // Custom save/load.
+                    LoadCustom();
+                } else {
+                    LoadSingleStruct();
+                }
+
+                UpdateButtonVisibility();
+            } catch (Exception e) when (!Debugger.IsAttached) {
+                ShowError(e, "Load Error");
+            }
+        }
+
+        private void LoadCustom() {
+            var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+            Debug.Assert(loadData != null, nameof(loadData) + " != null");
+            customFileData = loadData.Invoke(null, new object[] {targetFile});
+
+            var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+            Debug.Assert(setupViews != null, nameof(setupViews) + " != null");
+            setupViews.Invoke(null, new object[] {customFileData, grid, this});
+        }
+
+        private void LoadSingleStruct() {
+            var items = SaveLoad.LoadFile(targetFile, targetFileType);
+
+            if (targetFileType.Is(typeof(SkillDat))) {
+                FillSkillDatDictionary(items);
+            }
+
+            dataGrids.Add(main_grid);
+            main_grid.SetItems(this, items);
+        }
+
+        private async void Save() {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            try {
+                if (targetFileType.Is(typeof(ICustomSaveLoad))) { // Custom save/load.
+                    var saveData = targetFileType.GetMethod("SaveData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+                    Debug.Assert(saveData != null, nameof(saveData) + " != null");
+                    saveData.Invoke(null, new object[] {customFileData, targetFile});
+
+                    await ShowChangesSaved(true);
+                    return;
+                }
+
+                var changesSaved = SaveLoad.SaveFile(targetFile, targetFileType, main_grid.Items);
+
+                await ShowChangesSaved(changesSaved);
+            } catch (Exception e) when (!Debugger.IsAttached) {
+                ShowError(e, "Save Error");
+            }
+        }
+
+        private async Task ShowChangesSaved(bool changesSaved) {
+            savedTimer?.Cancel();
+            savedTimer                = new CancellationTokenSource();
+            lbl_saved.Visibility      = changesSaved.VisibleIfTrue();
+            lbl_no_changes.Visibility = changesSaved ? Visibility.Collapsed : Visibility.Visible;
+            try {
+                await Task.Delay(3000, savedTimer.Token);
+                lbl_saved.Visibility = lbl_no_changes.Visibility = Visibility.Hidden;
+            } catch (TaskCanceledException) {
+            }
+        }
+
+        private void UpdateButtonVisibility() {
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
 #pragma warning disable 162
             if (ENABLE_CHEAT_BUTTONS) {
@@ -758,203 +329,6 @@ namespace MHW_Editor {
                                                                    typeof(SkillDat),
                                                                    typeof(SkillPointData))
                                                  || ButtonTypeInfo.TYPES_WITH_BUTTONS.Contains(targetFileType.Name)).VisibleIfTrue();
-
-            var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
-
-            try {
-                using (var file = File.OpenRead(targetFile)) {
-                    var ourLength    = (ulong) file.Length;
-                    var properLength = DataHelper.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
-                    var sha512       = file.SHA512();
-
-                    // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
-                    foreach (var pair in DataHelper.BAD_FILE_HASH_MAP) {
-                        // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
-                        foreach (var fileAndHash in pair.Value) {
-                            if (Title == fileAndHash.Key && fileAndHash.Value.Contains(sha512)) {
-                                var newChunk = DataHelper.GOOD_CHUNK_MAP.TryGet(Title);
-                                MessageBox.Show($"This file ({Title}) is from {pair.Key} and is obsolete.\r\n" +
-                                                $"The newest version of the file is in {newChunk}.\r\n\r\n" +
-                                                "Using obsolete files is known to cause anything from blackscreens to crashes or incorrect data.", "Obsolete File Detected", MessageBoxButton.OK, MessageBoxImage.Warning);
-                                goto skipOut;
-                            }
-                        }
-                    }
-
-                    // Length check as a fallback.
-                    if (ourLength != properLength) {
-                        MessageBox.Show($"The file size of {Title} does not match the known file size in v{CURRENT_GAME_VERSION}.\r\n" +
-                                        $"Expected: {properLength}\r\n" +
-                                        $"Found: {ourLength}\r\n" +
-                                        "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    }
-                }
-
-                skipOut:
-                if (encryptionKey != null) {
-                    // Read & decrypt file.
-                    var encryptedBytes = File.ReadAllBytes(targetFile);
-                    var decryptedBytes = EncryptionHelper.Decrypt(encryptionKey, encryptedBytes);
-
-                    using (var dat = new MemoryStream()) {
-                        // Write to a stream for the loader. Leave base stream OPEN.
-                        using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
-                            writer.Write(decryptedBytes);
-                        }
-
-                        // Load as normal.
-                        using (var reader = new BinaryReader(dat)) {
-                            ReadStructs(reader, structSize, initialOffset, weaponFilename, entryCountOffset);
-                        }
-                    }
-                } else { // No encryption, just open, read, & close.
-                    using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
-                        ReadStructs(dat, structSize, initialOffset, weaponFilename, entryCountOffset);
-                    }
-                }
-            } catch (Exception e) when (!Debugger.IsAttached) {
-                ShowError(e, "Load Error");
-            }
-        }
-
-        private void ReadStructs(BinaryReader dat, uint structSize, ulong initialOffset, string weaponFilename, long entryCountOffset) {
-            if (entryCountOffset >= 0) {
-                ReadStructsAsKnownLength(dat, structSize, initialOffset, weaponFilename, entryCountOffset);
-            } else {
-                ReadStructsAsUnknownLength(dat, structSize, initialOffset, weaponFilename);
-            }
-        }
-
-        private void ReadStructsAsKnownLength(BinaryReader dat, uint structSize, ulong initialOffset, string weaponFilename, long entryCountOffset) {
-            dat.BaseStream.Seek(entryCountOffset, SeekOrigin.Begin);
-            var count = dat.ReadUInt32();
-
-            dat.BaseStream.Seek((long) initialOffset, SeekOrigin.Begin);
-
-            for (var i = 0; i < count; i++) {
-                var position = dat.BaseStream.Position;
-
-                if (position + structSize > dat.BaseStream.Length) {
-                    throw new IOException("Malformed file. Entry count goes past the end of the file.");
-                }
-
-                var buff = dat.ReadBytes((int) structSize);
-
-                object obj;
-                // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
-                if (targetFileType.Is(typeof(IWeapon))) {
-                    obj = Activator.CreateInstance(targetFileType, buff, (ulong) position, weaponFilename);
-                } else {
-                    obj = Activator.CreateInstance(targetFileType, buff, (ulong) position);
-                }
-
-                if (obj == null) return;
-
-                items.Add(obj);
-            }
-        }
-
-        private void ReadStructsAsUnknownLength(BinaryReader dat, uint structSize, ulong offset, string weaponFilename) {
-            var len = (ulong) dat.BaseStream.Length;
-            do {
-                var buff = new byte[structSize];
-                dat.BaseStream.Seek((long) offset, SeekOrigin.Begin);
-                dat.Read(buff, 0, (int) structSize);
-
-                object obj;
-                // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
-                if (targetFileType.Is(typeof(IWeapon))) {
-                    obj = Activator.CreateInstance(targetFileType, buff, offset, weaponFilename);
-                } else {
-                    obj = Activator.CreateInstance(targetFileType, buff, offset);
-                }
-
-                if (obj == null) return;
-
-                items.Add(obj);
-
-                offset += structSize;
-            } while (offset + structSize <= len);
-        }
-
-        private async void Save() {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            try {
-                if (targetFileType.Is(typeof(ICustomSaveLoad))) { // Custom save/load.
-                    var saveData = targetFileType.GetMethod("SaveData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
-                    Debug.Assert(saveData != null, nameof(saveData) + " != null");
-                    saveData.Invoke(null, new object[] {customFileData, targetFile});
-
-                    await ShowChangesSaved(true);
-                    return;
-                }
-
-                bool changesSaved;
-                var  encryptionKey = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy).GetValue(null);
-
-                if (encryptionKey != null) {
-                    // Read & decrypt file.
-                    var encryptedBytes = File.ReadAllBytes(targetFile);
-                    var decryptedBytes = EncryptionHelper.Decrypt(encryptionKey, encryptedBytes);
-
-                    using (var dat = new MemoryStream()) {
-                        // Write to a stream for the loader. Leave base stream OPEN.
-                        using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
-                            writer.Write(decryptedBytes);
-                        }
-
-                        // Save as normal. Leave base stream OPEN.
-                        using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
-                            changesSaved = WriteChanges(writer);
-                        }
-
-                        // If there are no changes, then we don't need to write the result back out.
-                        if (changesSaved) {
-                            // Re-encrypt and write it back out.
-                            decryptedBytes = dat.ToArray();
-                            encryptedBytes = EncryptionHelper.Encrypt(encryptionKey, decryptedBytes);
-                            File.WriteAllBytes(targetFile, encryptedBytes);
-                        }
-                    }
-                } else { // No encryption, just open, write, & close.
-                    using (var dat = new BinaryWriter(new FileStream(targetFile, FileMode.Open, FileAccess.Write))) {
-                        changesSaved = WriteChanges(dat);
-                    }
-                }
-
-                await ShowChangesSaved(changesSaved);
-            } catch (Exception e) when (!Debugger.IsAttached) {
-                ShowError(e, "Save Error");
-            }
-        }
-
-        private async Task ShowChangesSaved(bool changesSaved) {
-            savedTimer?.Cancel();
-            savedTimer                = new CancellationTokenSource();
-            lbl_saved.Visibility      = changesSaved.VisibleIfTrue();
-            lbl_no_changes.Visibility = changesSaved ? Visibility.Collapsed : Visibility.Visible;
-            try {
-                await Task.Delay(3000, savedTimer.Token);
-                lbl_saved.Visibility = lbl_no_changes.Visibility = Visibility.Hidden;
-            } catch (TaskCanceledException) {
-            }
-        }
-
-        private bool WriteChanges(BinaryWriter dat) {
-            var changesSaved = false;
-
-            foreach (MhwItem item in items) {
-                if (item.changed.Count == 0) continue;
-
-                dat.BaseStream.Seek((long) item.Offset, SeekOrigin.Begin);
-                dat.Write(item.Bytes);
-
-                item.changed.Clear();
-                changesSaved = true;
-            }
-
-            return changesSaved;
         }
 
         private void LoadJson() {
@@ -967,12 +341,12 @@ namespace MHW_Editor {
                 var fileName = Path.GetFileName(targetFile);
 
                 var json          = File.ReadAllText(target);
-                var changesToLoad = JsonMigrations.Migrate(json, fileName, items);
+                var changesToLoad = JsonMigrations.Migrate(json, fileName, main_grid.Items);
 
                 if (!changesToLoad.changes.Any()) return;
                 if (fileName != changesToLoad.targetFile && changesToLoad.targetFile != "*") return;
 
-                foreach (MhwItem item in items) {
+                foreach (MhwItem item in main_grid.Items) {
                     var id           = item.UniqueId;
                     var changedItems = changesToLoad.changes.TryGet(id, null);
                     if (changedItems == null) {
@@ -1015,7 +389,7 @@ namespace MHW_Editor {
                     try {
                         var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
                         // Should migrate the loaded changes too.
-                        changesToSave = JsonMigrations.Migrate(File.ReadAllText(target), fileName, items);
+                        changesToSave = JsonMigrations.Migrate(File.ReadAllText(target), fileName, main_grid.Items);
                     } catch (Exception) {
                         // Don't care. If it doesn't exist or can't be read, it gets overwritten.
                     }
@@ -1032,7 +406,7 @@ namespace MHW_Editor {
                     changesToSave.version    = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1);
                 }
 
-                foreach (MhwItem item in items) {
+                foreach (MhwItem item in main_grid.Items) {
                     if (item.changed.Count == 0) continue;
 
                     var id = item.UniqueId;
@@ -1210,17 +584,12 @@ namespace MHW_Editor {
         }
 
         protected override void OnClosed(EventArgs e) {
-            if (notifyIcon != null) {
-                notifyIcon.Visible = false;
-                notifyIcon.Dispose();
+            if (UpdateCheck.notifyIcon != null) {
+                UpdateCheck.notifyIcon.Visible = false;
+                UpdateCheck.notifyIcon.Dispose();
             }
 
             base.OnClosed(e);
-        }
-
-        // Ignore. Shuts up ReSharper complaining this isn't implemented when it is in generated code.
-        public void Connect(int connectionId, object target) {
-            throw new NotImplementedException();
         }
     }
 }
