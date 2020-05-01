@@ -6,7 +6,6 @@ using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading;
-using MHW_Editor;
 using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
@@ -227,6 +226,7 @@ namespace MHW_Generator_Data {
             return (from path in Directory.EnumerateFiles(rootPath, "*", SearchOption.AllDirectories)
                     from fileType in FILE_TYPES_TO_CHECK
                     where path.EndsWith(fileType.Substring(1))
+                    where !path.EndsWith("\\object.col") // Exclude due to there being 1600+ of them.
                     select path)
                    .Distinct()
                    .ToList();
