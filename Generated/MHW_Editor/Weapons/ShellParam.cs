@@ -126,59 +126,59 @@ namespace MHW_Editor.Weapons {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Shlp (1)";
 
-            protected uint Particles_Projectile_Header_raw;
-            public const string Particles_Projectile_Header_displayName = "Particles: Projectile Header";
-            public const int Particles_Projectile_Header_sortIndex = 50;
-            [SortOrder(Particles_Projectile_Header_sortIndex)]
-            [DisplayName(Particles_Projectile_Header_displayName)]
-            public virtual uint Particles_Projectile_Header {
-                get => Particles_Projectile_Header_raw;
+            protected uint Projectile_EPV_VFX_Group_Id_raw;
+            public const string Projectile_EPV_VFX_Group_Id_displayName = "Projectile: EPV VFX Group Id";
+            public const int Projectile_EPV_VFX_Group_Id_sortIndex = 50;
+            [SortOrder(Projectile_EPV_VFX_Group_Id_sortIndex)]
+            [DisplayName(Projectile_EPV_VFX_Group_Id_displayName)]
+            public virtual uint Projectile_EPV_VFX_Group_Id {
+                get => Projectile_EPV_VFX_Group_Id_raw;
                 set {
-                    if (Particles_Projectile_Header_raw == value) return;
-                    Particles_Projectile_Header_raw = value;
-                    OnPropertyChanged(nameof(Particles_Projectile_Header));
+                    if (Projectile_EPV_VFX_Group_Id_raw == value) return;
+                    Projectile_EPV_VFX_Group_Id_raw = value;
+                    OnPropertyChanged(nameof(Projectile_EPV_VFX_Group_Id));
                 }
             }
 
-            protected uint Particles_Projectile_raw;
-            public const string Particles_Projectile_displayName = "Particles: Projectile";
-            public const int Particles_Projectile_sortIndex = 100;
-            [SortOrder(Particles_Projectile_sortIndex)]
-            [DisplayName(Particles_Projectile_displayName)]
-            public virtual uint Particles_Projectile {
-                get => Particles_Projectile_raw;
+            protected uint Projectile_EPV_VFX_Effect_Index_raw;
+            public const string Projectile_EPV_VFX_Effect_Index_displayName = "Projectile: EPV VFX Effect Index";
+            public const int Projectile_EPV_VFX_Effect_Index_sortIndex = 100;
+            [SortOrder(Projectile_EPV_VFX_Effect_Index_sortIndex)]
+            [DisplayName(Projectile_EPV_VFX_Effect_Index_displayName)]
+            public virtual uint Projectile_EPV_VFX_Effect_Index {
+                get => Projectile_EPV_VFX_Effect_Index_raw;
                 set {
-                    if (Particles_Projectile_raw == value) return;
-                    Particles_Projectile_raw = value;
-                    OnPropertyChanged(nameof(Particles_Projectile));
+                    if (Projectile_EPV_VFX_Effect_Index_raw == value) return;
+                    Projectile_EPV_VFX_Effect_Index_raw = value;
+                    OnPropertyChanged(nameof(Projectile_EPV_VFX_Effect_Index));
                 }
             }
 
-            protected uint Particles_Muzzle_Header_raw;
-            public const string Particles_Muzzle_Header_displayName = "Particles: Muzzle Header";
-            public const int Particles_Muzzle_Header_sortIndex = 150;
-            [SortOrder(Particles_Muzzle_Header_sortIndex)]
-            [DisplayName(Particles_Muzzle_Header_displayName)]
-            public virtual uint Particles_Muzzle_Header {
-                get => Particles_Muzzle_Header_raw;
+            protected uint Muzzle_EPV_VFX_Group_Id_raw;
+            public const string Muzzle_EPV_VFX_Group_Id_displayName = "Muzzle: EPV VFX Group Id";
+            public const int Muzzle_EPV_VFX_Group_Id_sortIndex = 150;
+            [SortOrder(Muzzle_EPV_VFX_Group_Id_sortIndex)]
+            [DisplayName(Muzzle_EPV_VFX_Group_Id_displayName)]
+            public virtual uint Muzzle_EPV_VFX_Group_Id {
+                get => Muzzle_EPV_VFX_Group_Id_raw;
                 set {
-                    if (Particles_Muzzle_Header_raw == value) return;
-                    Particles_Muzzle_Header_raw = value;
-                    OnPropertyChanged(nameof(Particles_Muzzle_Header));
+                    if (Muzzle_EPV_VFX_Group_Id_raw == value) return;
+                    Muzzle_EPV_VFX_Group_Id_raw = value;
+                    OnPropertyChanged(nameof(Muzzle_EPV_VFX_Group_Id));
                 }
             }
 
-            protected uint Particles_Muzzle_raw;
-            public const string Particles_Muzzle_displayName = "Particles: Muzzle";
-            public const int Particles_Muzzle_sortIndex = 200;
-            [SortOrder(Particles_Muzzle_sortIndex)]
-            [DisplayName(Particles_Muzzle_displayName)]
-            public virtual uint Particles_Muzzle {
-                get => Particles_Muzzle_raw;
+            protected uint Muzzle_EPV_VFX_Effect_Index_raw;
+            public const string Muzzle_EPV_VFX_Effect_Index_displayName = "Muzzle: EPV VFX Effect Index";
+            public const int Muzzle_EPV_VFX_Effect_Index_sortIndex = 200;
+            [SortOrder(Muzzle_EPV_VFX_Effect_Index_sortIndex)]
+            [DisplayName(Muzzle_EPV_VFX_Effect_Index_displayName)]
+            public virtual uint Muzzle_EPV_VFX_Effect_Index {
+                get => Muzzle_EPV_VFX_Effect_Index_raw;
                 set {
-                    if (Particles_Muzzle_raw == value) return;
-                    Particles_Muzzle_raw = value;
-                    OnPropertyChanged(nameof(Particles_Muzzle));
+                    if (Muzzle_EPV_VFX_Effect_Index_raw == value) return;
+                    Muzzle_EPV_VFX_Effect_Index_raw = value;
+                    OnPropertyChanged(nameof(Muzzle_EPV_VFX_Effect_Index));
                 }
             }
 
@@ -338,10 +338,10 @@ namespace MHW_Editor.Weapons {
 
             public static Shlp_1_ LoadData(BinaryReader reader) {
                 var data = new Shlp_1_();
-                data.Particles_Projectile_Header_raw = reader.ReadUInt32();
-                data.Particles_Projectile_raw = reader.ReadUInt32();
-                data.Particles_Muzzle_Header_raw = reader.ReadUInt32();
-                data.Particles_Muzzle_raw = reader.ReadUInt32();
+                data.Projectile_EPV_VFX_Group_Id_raw = reader.ReadUInt32();
+                data.Projectile_EPV_VFX_Effect_Index_raw = reader.ReadUInt32();
+                data.Muzzle_EPV_VFX_Group_Id_raw = reader.ReadUInt32();
+                data.Muzzle_EPV_VFX_Effect_Index_raw = reader.ReadUInt32();
                 data.Unk_1_raw = reader.ReadInt32();
                 data.Obj_Collision_Header_raw = reader.ReadUInt32();
                 if (data.Obj_Collision_Header_raw != 0) data.Obj_Collision_raw = reader.ReadNullTermString();
@@ -357,10 +357,10 @@ namespace MHW_Editor.Weapons {
             }
 
             public override void WriteData(BinaryWriter writer) {
-                writer.Write(Particles_Projectile_Header_raw);
-                writer.Write(Particles_Projectile_raw);
-                writer.Write(Particles_Muzzle_Header_raw);
-                writer.Write(Particles_Muzzle_raw);
+                writer.Write(Projectile_EPV_VFX_Group_Id_raw);
+                writer.Write(Projectile_EPV_VFX_Effect_Index_raw);
+                writer.Write(Muzzle_EPV_VFX_Group_Id_raw);
+                writer.Write(Muzzle_EPV_VFX_Effect_Index_raw);
                 writer.Write(Unk_1_raw);
                 writer.Write(Obj_Collision_Header_raw);
                 if (Obj_Collision_Header_raw != 0) writer.Write(Obj_Collision_raw.ToNullTermCharArray());
@@ -376,10 +376,10 @@ namespace MHW_Editor.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Particles: Projectile Header", "Particles_Projectile_Header"),
-                    new MultiStructItemCustomView(this, "Particles: Projectile", "Particles_Projectile"),
-                    new MultiStructItemCustomView(this, "Particles: Muzzle Header", "Particles_Muzzle_Header"),
-                    new MultiStructItemCustomView(this, "Particles: Muzzle", "Particles_Muzzle"),
+                    new MultiStructItemCustomView(this, "Projectile: EPV VFX Group Id", "Projectile_EPV_VFX_Group_Id"),
+                    new MultiStructItemCustomView(this, "Projectile: EPV VFX Effect Index", "Projectile_EPV_VFX_Effect_Index"),
+                    new MultiStructItemCustomView(this, "Muzzle: EPV VFX Group Id", "Muzzle_EPV_VFX_Group_Id"),
+                    new MultiStructItemCustomView(this, "Muzzle: EPV VFX Effect Index", "Muzzle_EPV_VFX_Effect_Index"),
                     new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
                     new MultiStructItemCustomView(this, "Obj Collision Header", "Obj_Collision_Header"),
                     new MultiStructItemCustomView(this, "Obj Collision", "Obj_Collision"),
@@ -529,59 +529,59 @@ namespace MHW_Editor.Weapons {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Shlp (2)";
 
-            protected uint Particles_Ground_Decal_Header_raw;
-            public const string Particles_Ground_Decal_Header_displayName = "Particles: Ground Decal Header";
-            public const int Particles_Ground_Decal_Header_sortIndex = 50;
-            [SortOrder(Particles_Ground_Decal_Header_sortIndex)]
-            [DisplayName(Particles_Ground_Decal_Header_displayName)]
-            public virtual uint Particles_Ground_Decal_Header {
-                get => Particles_Ground_Decal_Header_raw;
+            protected uint Ground_Decal_EPV_VFX_Group_Id_raw;
+            public const string Ground_Decal_EPV_VFX_Group_Id_displayName = "Ground Decal: EPV_VFX_Group Id";
+            public const int Ground_Decal_EPV_VFX_Group_Id_sortIndex = 50;
+            [SortOrder(Ground_Decal_EPV_VFX_Group_Id_sortIndex)]
+            [DisplayName(Ground_Decal_EPV_VFX_Group_Id_displayName)]
+            public virtual uint Ground_Decal_EPV_VFX_Group_Id {
+                get => Ground_Decal_EPV_VFX_Group_Id_raw;
                 set {
-                    if (Particles_Ground_Decal_Header_raw == value) return;
-                    Particles_Ground_Decal_Header_raw = value;
-                    OnPropertyChanged(nameof(Particles_Ground_Decal_Header));
+                    if (Ground_Decal_EPV_VFX_Group_Id_raw == value) return;
+                    Ground_Decal_EPV_VFX_Group_Id_raw = value;
+                    OnPropertyChanged(nameof(Ground_Decal_EPV_VFX_Group_Id));
                 }
             }
 
-            protected uint Particles_Ground_Decal_raw;
-            public const string Particles_Ground_Decal_displayName = "Particles: Ground Decal";
-            public const int Particles_Ground_Decal_sortIndex = 100;
-            [SortOrder(Particles_Ground_Decal_sortIndex)]
-            [DisplayName(Particles_Ground_Decal_displayName)]
-            public virtual uint Particles_Ground_Decal {
-                get => Particles_Ground_Decal_raw;
+            protected uint Ground_Decal_EPV_VFX_Effect_Index_raw;
+            public const string Ground_Decal_EPV_VFX_Effect_Index_displayName = "Ground Decal: EPV VFX Effect Index";
+            public const int Ground_Decal_EPV_VFX_Effect_Index_sortIndex = 100;
+            [SortOrder(Ground_Decal_EPV_VFX_Effect_Index_sortIndex)]
+            [DisplayName(Ground_Decal_EPV_VFX_Effect_Index_displayName)]
+            public virtual uint Ground_Decal_EPV_VFX_Effect_Index {
+                get => Ground_Decal_EPV_VFX_Effect_Index_raw;
                 set {
-                    if (Particles_Ground_Decal_raw == value) return;
-                    Particles_Ground_Decal_raw = value;
-                    OnPropertyChanged(nameof(Particles_Ground_Decal));
+                    if (Ground_Decal_EPV_VFX_Effect_Index_raw == value) return;
+                    Ground_Decal_EPV_VFX_Effect_Index_raw = value;
+                    OnPropertyChanged(nameof(Ground_Decal_EPV_VFX_Effect_Index));
                 }
             }
 
-            protected uint Particles_Wall_Decal_Header_raw;
-            public const string Particles_Wall_Decal_Header_displayName = "Particles: Wall Decal Header";
-            public const int Particles_Wall_Decal_Header_sortIndex = 150;
-            [SortOrder(Particles_Wall_Decal_Header_sortIndex)]
-            [DisplayName(Particles_Wall_Decal_Header_displayName)]
-            public virtual uint Particles_Wall_Decal_Header {
-                get => Particles_Wall_Decal_Header_raw;
+            protected uint Wall_Decal_EPV_VFX_Group_Id_raw;
+            public const string Wall_Decal_EPV_VFX_Group_Id_displayName = "Wall Decal: EPV VFX Group Id";
+            public const int Wall_Decal_EPV_VFX_Group_Id_sortIndex = 150;
+            [SortOrder(Wall_Decal_EPV_VFX_Group_Id_sortIndex)]
+            [DisplayName(Wall_Decal_EPV_VFX_Group_Id_displayName)]
+            public virtual uint Wall_Decal_EPV_VFX_Group_Id {
+                get => Wall_Decal_EPV_VFX_Group_Id_raw;
                 set {
-                    if (Particles_Wall_Decal_Header_raw == value) return;
-                    Particles_Wall_Decal_Header_raw = value;
-                    OnPropertyChanged(nameof(Particles_Wall_Decal_Header));
+                    if (Wall_Decal_EPV_VFX_Group_Id_raw == value) return;
+                    Wall_Decal_EPV_VFX_Group_Id_raw = value;
+                    OnPropertyChanged(nameof(Wall_Decal_EPV_VFX_Group_Id));
                 }
             }
 
-            protected uint Particles_Wall_Decal_raw;
-            public const string Particles_Wall_Decal_displayName = "Particles: Wall Decal";
-            public const int Particles_Wall_Decal_sortIndex = 200;
-            [SortOrder(Particles_Wall_Decal_sortIndex)]
-            [DisplayName(Particles_Wall_Decal_displayName)]
-            public virtual uint Particles_Wall_Decal {
-                get => Particles_Wall_Decal_raw;
+            protected uint Wall_Decal_EPV_VFX_Effect_Index_raw;
+            public const string Wall_Decal_EPV_VFX_Effect_Index_displayName = "Wall Decal: EPV VFX Effect Index";
+            public const int Wall_Decal_EPV_VFX_Effect_Index_sortIndex = 200;
+            [SortOrder(Wall_Decal_EPV_VFX_Effect_Index_sortIndex)]
+            [DisplayName(Wall_Decal_EPV_VFX_Effect_Index_displayName)]
+            public virtual uint Wall_Decal_EPV_VFX_Effect_Index {
+                get => Wall_Decal_EPV_VFX_Effect_Index_raw;
                 set {
-                    if (Particles_Wall_Decal_raw == value) return;
-                    Particles_Wall_Decal_raw = value;
-                    OnPropertyChanged(nameof(Particles_Wall_Decal));
+                    if (Wall_Decal_EPV_VFX_Effect_Index_raw == value) return;
+                    Wall_Decal_EPV_VFX_Effect_Index_raw = value;
+                    OnPropertyChanged(nameof(Wall_Decal_EPV_VFX_Effect_Index));
                 }
             }
 
@@ -613,31 +613,31 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected uint Particles_Obj_Hit_Header_raw;
-            public const string Particles_Obj_Hit_Header_displayName = "Particles: Obj Hit Header";
-            public const int Particles_Obj_Hit_Header_sortIndex = 350;
-            [SortOrder(Particles_Obj_Hit_Header_sortIndex)]
-            [DisplayName(Particles_Obj_Hit_Header_displayName)]
-            public virtual uint Particles_Obj_Hit_Header {
-                get => Particles_Obj_Hit_Header_raw;
+            protected uint Obj_Hit_VFX_Group_Id_raw;
+            public const string Obj_Hit_VFX_Group_Id_displayName = "Obj Hit: VFX Group Id";
+            public const int Obj_Hit_VFX_Group_Id_sortIndex = 350;
+            [SortOrder(Obj_Hit_VFX_Group_Id_sortIndex)]
+            [DisplayName(Obj_Hit_VFX_Group_Id_displayName)]
+            public virtual uint Obj_Hit_VFX_Group_Id {
+                get => Obj_Hit_VFX_Group_Id_raw;
                 set {
-                    if (Particles_Obj_Hit_Header_raw == value) return;
-                    Particles_Obj_Hit_Header_raw = value;
-                    OnPropertyChanged(nameof(Particles_Obj_Hit_Header));
+                    if (Obj_Hit_VFX_Group_Id_raw == value) return;
+                    Obj_Hit_VFX_Group_Id_raw = value;
+                    OnPropertyChanged(nameof(Obj_Hit_VFX_Group_Id));
                 }
             }
 
-            protected uint Particles_Obj_Hit_raw;
-            public const string Particles_Obj_Hit_displayName = "Particles: Obj Hit";
-            public const int Particles_Obj_Hit_sortIndex = 400;
-            [SortOrder(Particles_Obj_Hit_sortIndex)]
-            [DisplayName(Particles_Obj_Hit_displayName)]
-            public virtual uint Particles_Obj_Hit {
-                get => Particles_Obj_Hit_raw;
+            protected uint Obj_Hit_VFX_Effect_Index_raw;
+            public const string Obj_Hit_VFX_Effect_Index_displayName = "Obj Hit: VFX Effect Index";
+            public const int Obj_Hit_VFX_Effect_Index_sortIndex = 400;
+            [SortOrder(Obj_Hit_VFX_Effect_Index_sortIndex)]
+            [DisplayName(Obj_Hit_VFX_Effect_Index_displayName)]
+            public virtual uint Obj_Hit_VFX_Effect_Index {
+                get => Obj_Hit_VFX_Effect_Index_raw;
                 set {
-                    if (Particles_Obj_Hit_raw == value) return;
-                    Particles_Obj_Hit_raw = value;
-                    OnPropertyChanged(nameof(Particles_Obj_Hit));
+                    if (Obj_Hit_VFX_Effect_Index_raw == value) return;
+                    Obj_Hit_VFX_Effect_Index_raw = value;
+                    OnPropertyChanged(nameof(Obj_Hit_VFX_Effect_Index));
                 }
             }
 
@@ -977,31 +977,31 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected uint Particles_Gun_Fire_Header_raw;
-            public const string Particles_Gun_Fire_Header_displayName = "Particles: Gun Fire Header";
-            public const int Particles_Gun_Fire_Header_sortIndex = 1650;
-            [SortOrder(Particles_Gun_Fire_Header_sortIndex)]
-            [DisplayName(Particles_Gun_Fire_Header_displayName)]
-            public virtual uint Particles_Gun_Fire_Header {
-                get => Particles_Gun_Fire_Header_raw;
+            protected uint Gun_Fire_EPV_VFX_Group_Id_raw;
+            public const string Gun_Fire_EPV_VFX_Group_Id_displayName = "Gun Fire: EPV VFX Group Id";
+            public const int Gun_Fire_EPV_VFX_Group_Id_sortIndex = 1650;
+            [SortOrder(Gun_Fire_EPV_VFX_Group_Id_sortIndex)]
+            [DisplayName(Gun_Fire_EPV_VFX_Group_Id_displayName)]
+            public virtual uint Gun_Fire_EPV_VFX_Group_Id {
+                get => Gun_Fire_EPV_VFX_Group_Id_raw;
                 set {
-                    if (Particles_Gun_Fire_Header_raw == value) return;
-                    Particles_Gun_Fire_Header_raw = value;
-                    OnPropertyChanged(nameof(Particles_Gun_Fire_Header));
+                    if (Gun_Fire_EPV_VFX_Group_Id_raw == value) return;
+                    Gun_Fire_EPV_VFX_Group_Id_raw = value;
+                    OnPropertyChanged(nameof(Gun_Fire_EPV_VFX_Group_Id));
                 }
             }
 
-            protected uint Particles_Gun_Fire_raw;
-            public const string Particles_Gun_Fire_displayName = "Particles: Gun Fire";
-            public const int Particles_Gun_Fire_sortIndex = 1700;
-            [SortOrder(Particles_Gun_Fire_sortIndex)]
-            [DisplayName(Particles_Gun_Fire_displayName)]
-            public virtual uint Particles_Gun_Fire {
-                get => Particles_Gun_Fire_raw;
+            protected uint Gun_Fire_EPV_VFX_Effect_Index_raw;
+            public const string Gun_Fire_EPV_VFX_Effect_Index_displayName = "Gun Fire: EPV VFX Effect Index";
+            public const int Gun_Fire_EPV_VFX_Effect_Index_sortIndex = 1700;
+            [SortOrder(Gun_Fire_EPV_VFX_Effect_Index_sortIndex)]
+            [DisplayName(Gun_Fire_EPV_VFX_Effect_Index_displayName)]
+            public virtual uint Gun_Fire_EPV_VFX_Effect_Index {
+                get => Gun_Fire_EPV_VFX_Effect_Index_raw;
                 set {
-                    if (Particles_Gun_Fire_raw == value) return;
-                    Particles_Gun_Fire_raw = value;
-                    OnPropertyChanged(nameof(Particles_Gun_Fire));
+                    if (Gun_Fire_EPV_VFX_Effect_Index_raw == value) return;
+                    Gun_Fire_EPV_VFX_Effect_Index_raw = value;
+                    OnPropertyChanged(nameof(Gun_Fire_EPV_VFX_Effect_Index));
                 }
             }
 
@@ -2015,14 +2015,14 @@ namespace MHW_Editor.Weapons {
 
             public static Shlp_2_ LoadData(BinaryReader reader) {
                 var data = new Shlp_2_();
-                data.Particles_Ground_Decal_Header_raw = reader.ReadUInt32();
-                data.Particles_Ground_Decal_raw = reader.ReadUInt32();
-                data.Particles_Wall_Decal_Header_raw = reader.ReadUInt32();
-                data.Particles_Wall_Decal_raw = reader.ReadUInt32();
+                data.Ground_Decal_EPV_VFX_Group_Id_raw = reader.ReadUInt32();
+                data.Ground_Decal_EPV_VFX_Effect_Index_raw = reader.ReadUInt32();
+                data.Wall_Decal_EPV_VFX_Group_Id_raw = reader.ReadUInt32();
+                data.Wall_Decal_EPV_VFX_Effect_Index_raw = reader.ReadUInt32();
                 data.Unk_1_raw = reader.ReadUInt32();
                 data.Unk_2_raw = reader.ReadUInt32();
-                data.Particles_Obj_Hit_Header_raw = reader.ReadUInt32();
-                data.Particles_Obj_Hit_raw = reader.ReadUInt32();
+                data.Obj_Hit_VFX_Group_Id_raw = reader.ReadUInt32();
+                data.Obj_Hit_VFX_Effect_Index_raw = reader.ReadUInt32();
                 data.Unk_3_raw = reader.ReadByte();
                 data.Unk_4_raw = reader.ReadByte();
                 data.Unk_5_raw = reader.ReadByte();
@@ -2047,8 +2047,8 @@ namespace MHW_Editor.Weapons {
                 data.Unk_24_raw = reader.ReadUInt32();
                 data.Unk_25_raw = reader.ReadUInt32();
                 data.Unk_26_raw = reader.ReadUInt32();
-                data.Particles_Gun_Fire_Header_raw = reader.ReadUInt32();
-                data.Particles_Gun_Fire_raw = reader.ReadUInt32();
+                data.Gun_Fire_EPV_VFX_Group_Id_raw = reader.ReadUInt32();
+                data.Gun_Fire_EPV_VFX_Effect_Index_raw = reader.ReadUInt32();
                 data.Unk_27_raw = reader.ReadUInt32();
                 data.Unk_28_raw = reader.ReadUInt32();
                 data.Unk_29_raw = reader.ReadUInt32();
@@ -2125,14 +2125,14 @@ namespace MHW_Editor.Weapons {
             }
 
             public override void WriteData(BinaryWriter writer) {
-                writer.Write(Particles_Ground_Decal_Header_raw);
-                writer.Write(Particles_Ground_Decal_raw);
-                writer.Write(Particles_Wall_Decal_Header_raw);
-                writer.Write(Particles_Wall_Decal_raw);
+                writer.Write(Ground_Decal_EPV_VFX_Group_Id_raw);
+                writer.Write(Ground_Decal_EPV_VFX_Effect_Index_raw);
+                writer.Write(Wall_Decal_EPV_VFX_Group_Id_raw);
+                writer.Write(Wall_Decal_EPV_VFX_Effect_Index_raw);
                 writer.Write(Unk_1_raw);
                 writer.Write(Unk_2_raw);
-                writer.Write(Particles_Obj_Hit_Header_raw);
-                writer.Write(Particles_Obj_Hit_raw);
+                writer.Write(Obj_Hit_VFX_Group_Id_raw);
+                writer.Write(Obj_Hit_VFX_Effect_Index_raw);
                 writer.Write(Unk_3_raw);
                 writer.Write(Unk_4_raw);
                 writer.Write(Unk_5_raw);
@@ -2157,8 +2157,8 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_24_raw);
                 writer.Write(Unk_25_raw);
                 writer.Write(Unk_26_raw);
-                writer.Write(Particles_Gun_Fire_Header_raw);
-                writer.Write(Particles_Gun_Fire_raw);
+                writer.Write(Gun_Fire_EPV_VFX_Group_Id_raw);
+                writer.Write(Gun_Fire_EPV_VFX_Effect_Index_raw);
                 writer.Write(Unk_27_raw);
                 writer.Write(Unk_28_raw);
                 writer.Write(Unk_29_raw);
@@ -2235,14 +2235,14 @@ namespace MHW_Editor.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Particles: Ground Decal Header", "Particles_Ground_Decal_Header"),
-                    new MultiStructItemCustomView(this, "Particles: Ground Decal", "Particles_Ground_Decal"),
-                    new MultiStructItemCustomView(this, "Particles: Wall Decal Header", "Particles_Wall_Decal_Header"),
-                    new MultiStructItemCustomView(this, "Particles: Wall Decal", "Particles_Wall_Decal"),
+                    new MultiStructItemCustomView(this, "Ground Decal: EPV_VFX_Group Id", "Ground_Decal_EPV_VFX_Group_Id"),
+                    new MultiStructItemCustomView(this, "Ground Decal: EPV VFX Effect Index", "Ground_Decal_EPV_VFX_Effect_Index"),
+                    new MultiStructItemCustomView(this, "Wall Decal: EPV VFX Group Id", "Wall_Decal_EPV_VFX_Group_Id"),
+                    new MultiStructItemCustomView(this, "Wall Decal: EPV VFX Effect Index", "Wall_Decal_EPV_VFX_Effect_Index"),
                     new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
                     new MultiStructItemCustomView(this, "Unk 2", "Unk_2"),
-                    new MultiStructItemCustomView(this, "Particles: Obj Hit Header", "Particles_Obj_Hit_Header"),
-                    new MultiStructItemCustomView(this, "Particles: Obj Hit", "Particles_Obj_Hit"),
+                    new MultiStructItemCustomView(this, "Obj Hit: VFX Group Id", "Obj_Hit_VFX_Group_Id"),
+                    new MultiStructItemCustomView(this, "Obj Hit: VFX Effect Index", "Obj_Hit_VFX_Effect_Index"),
                     new MultiStructItemCustomView(this, "Unk 3", "Unk_3"),
                     new MultiStructItemCustomView(this, "Unk 4", "Unk_4"),
                     new MultiStructItemCustomView(this, "Unk 5", "Unk_5"),
@@ -2267,8 +2267,8 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),
                     new MultiStructItemCustomView(this, "Unk 25", "Unk_25"),
                     new MultiStructItemCustomView(this, "Unk 26", "Unk_26"),
-                    new MultiStructItemCustomView(this, "Particles: Gun Fire Header", "Particles_Gun_Fire_Header"),
-                    new MultiStructItemCustomView(this, "Particles: Gun Fire", "Particles_Gun_Fire"),
+                    new MultiStructItemCustomView(this, "Gun Fire: EPV VFX Group Id", "Gun_Fire_EPV_VFX_Group_Id"),
+                    new MultiStructItemCustomView(this, "Gun Fire: EPV VFX Effect Index", "Gun_Fire_EPV_VFX_Effect_Index"),
                     new MultiStructItemCustomView(this, "Unk 27", "Unk_27"),
                     new MultiStructItemCustomView(this, "Unk 28", "Unk_28"),
                     new MultiStructItemCustomView(this, "Unk 29", "Unk_29"),

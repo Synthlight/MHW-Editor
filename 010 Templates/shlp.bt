@@ -17,10 +17,10 @@ typedef struct {
 } Assets;
 
 typedef struct {
-    uint Particles_Projectile_Header;
-    uint Particles_Projectile;
-    uint Particles_Muzzle_Header;
-    uint Particles_Muzzle;
+    uint Projectile_EPV_VFX_Group_Id;
+    uint Projectile_EPV_VFX_Effect_Index;
+    uint Muzzle_EPV_VFX_Group_Id;
+    uint Muzzle_EPV_VFX_Effect_Index;
     int Unk_1;
     uint Obj_Collision_Header;
     if (Obj_Collision_Header != 0)  { string Obj_Collision; }
@@ -47,14 +47,14 @@ typedef struct {
 } Linked_Shell_Params;
 
 typedef struct {
-    uint Particles_Ground_Decal_Header;
-    uint Particles_Ground_Decal;
-    uint Particles_Wall_Decal_Header;
-    uint Particles_Wall_Decal;
+    uint Ground_Decal_EPV_VFX_Group_Id;
+    uint Ground_Decal_EPV_VFX_Effect_Index;
+    uint Wall_Decal_EPV_VFX_Group_Id;
+    uint Wall_Decal_EPV_VFX_Effect_Index;
     uint Unk_1;
     uint Unk_2;
-    uint Particles_Obj_Hit_Header;
-    uint Particles_Obj_Hit;
+    uint Obj_Hit_VFX_Group_Id;
+    uint Obj_Hit_VFX_Effect_Index;
     ubyte Unk_3;
     ubyte Unk_4;
     ubyte Unk_5;
@@ -79,8 +79,8 @@ typedef struct {
     uint Unk_24;
     uint Unk_25;
     uint Unk_26;
-    uint Particles_Gun_Fire_Header;
-    uint Particles_Gun_Fire;
+    uint Gun_Fire_EPV_VFX_Group_Id;
+    uint Gun_Fire_EPV_VFX_Effect_Index;
     uint Unk_27;
     uint Unk_28;
     uint Unk_29;
