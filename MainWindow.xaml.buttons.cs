@@ -512,11 +512,6 @@ namespace MHW_Editor {
                 rawList.Add(new GemData {index = itemId, itemName = item.Name, sortOrder = item.Sort_Order});
             }
 
-            if (rawList.Count != 402) {
-                MessageBox.Show($"There are 402 Gems. {rawList.Count} were handled.\r\n\r\nAre you using an outdated itemData.itm?", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
             // One list of the sorted "sortOrder"s.
             var sortedSortIndexes = new List<GemData>(rawList)
                                     .OrderBy(data => data.sortOrder)

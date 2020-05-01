@@ -217,6 +217,8 @@ namespace MHW_Editor {
         }
 
         private void LoadCustom() {
+            SaveLoad.CheckHashAndSize(targetFile, true);
+
             var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
             Debug.Assert(loadData != null, nameof(loadData) + " != null");
             customFileData = loadData.Invoke(null, new object[] {targetFile});
@@ -228,6 +230,7 @@ namespace MHW_Editor {
 
         private void LoadSingleStruct() {
             var items = SaveLoad.LoadFile(targetFile, targetFileType);
+            if (items == null) return;
 
             if (targetFileType.Is(typeof(SkillDat))) {
                 FillSkillDatDictionary(items);
@@ -271,6 +274,8 @@ namespace MHW_Editor {
         }
 
         private void UpdateButtonVisibility() {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
 #pragma warning disable 162
             if (ENABLE_CHEAT_BUTTONS) {
@@ -580,7 +585,13 @@ namespace MHW_Editor {
         }
 
         public static void ShowError(Exception err, string title) {
-            MessageBox.Show("Error occured. Press Ctrl+C to copy the contents of ths window and report to the developer.\r\n\r\n" + err, title, MessageBoxButton.OK, MessageBoxImage.Error);
+            var errMsg = "Error occured. Press Ctrl+C to copy the contents of ths window and report to the developer.\r\n\r\n";
+
+            if (title == "Load Error") {
+                errMsg += "If this is the result of ignoring the obsolete data warning, it is safe to ignore.\r\n\r\n";
+            }
+
+            MessageBox.Show(errMsg + err, title, MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         protected override void OnClosed(EventArgs e) {

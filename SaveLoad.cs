@@ -28,10 +28,12 @@ namespace MHW_Editor {
             }
         }
 
+        [CanBeNull]
         public static ObservableCollection<dynamic> LoadFile([NotNull] string targetFile, [NotNull] Type targetFileType) {
             return new SaveLoad(targetFile, targetFileType, null).LoadFile();
         }
 
+        [CanBeNull]
         private ObservableCollection<dynamic> LoadFile() {
             var fileName = Path.GetFileName(targetFile);
 
@@ -44,39 +46,43 @@ namespace MHW_Editor {
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 
-            using (var file = File.OpenRead(targetFile)) {
-                var ourLength    = (ulong) file.Length;
-                var properLength = DataHelper.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
-                var sha512       = file.SHA512();
-
-                // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
-                foreach (var pair in DataHelper.BAD_FILE_HASH_MAP) {
-                    // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
-                    foreach (var fileAndHash in pair.Value) {
-                        if (fileName == fileAndHash.Key && fileAndHash.Value.Contains(sha512)) {
-                            var newChunk = DataHelper.GOOD_CHUNK_MAP.TryGet(fileName);
-                            MessageBox.Show($"This file ({fileName}) is from {pair.Key} and is obsolete.\r\n" +
-                                            $"The newest version of the file is in {newChunk}.\r\n\r\n" +
-                                            "Using obsolete files is known to cause anything from blackscreens to crashes or incorrect data.", "Obsolete File Detected", MessageBoxButton.OK, MessageBoxImage.Warning);
-                            goto skipOut;
-                        }
-                    }
-                }
-
-                // Length check as a fallback.
-                if (ourLength != properLength) {
-                    MessageBox.Show($"The file size of {fileName} does not match the known file size in v{MainWindow.CURRENT_GAME_VERSION}.\r\n" +
-                                    $"Expected: {properLength}\r\n" +
-                                    $"Found: {ourLength}\r\n" +
-                                    "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
-                }
-            }
-            skipOut:
+            CheckHashAndSize(targetFile);
 
             using var dat = new BinaryReader(GetFileStream(encryptionKey));
             ReadStructs(dat, structSize, initialOffset, weaponFilename, entryCountOffset);
 
             return items;
+        }
+
+        public static void CheckHashAndSize(string targetFile, bool ignoreBadSizes = false) {
+            var       fileName     = Path.GetFileName(targetFile);
+            using var file         = File.OpenRead(targetFile);
+            var       ourLength    = (ulong) file.Length;
+            var       properLength = DataHelper.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
+            var       sha512       = file.SHA512();
+
+            // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
+            foreach (var pair in DataHelper.BAD_FILE_HASH_MAP) {
+                // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
+                foreach (var fileAndHash in pair.Value) {
+                    if (fileName == fileAndHash.Key && fileAndHash.Value.Contains(sha512)) {
+                        var newChunk = DataHelper.GOOD_CHUNK_MAP.TryGet(fileName);
+                        MessageBox.Show($"This file ({fileName}) is from {pair.Key} and is obsolete.\r\n" +
+                                        $"The newest version of the file is in {newChunk}.\r\n\r\n" +
+                                        "Using obsolete files is known to cause anything from blackscreens to crashes or incorrect data.\r\n\r\n" +
+                                        "The editor will attempt to load the file, but understand, it may fail due to obsolete data.", "Obsolete File Detected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        return;
+                    }
+                }
+            }
+
+            // Length check as a fallback.
+            if (ourLength == properLength || ignoreBadSizes) return;
+
+            MessageBox.Show($"The file size of {fileName} does not match the known file size in v{MainWindow.CURRENT_GAME_VERSION}.\r\n" +
+                            $"Expected: {properLength}\r\n" +
+                            $"Found: {ourLength}\r\n" +
+                            "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
 
         private void ReadStructs(BinaryReader dat, uint structSize, ulong initialOffset, string weaponFilename, long entryCountOffset) {
