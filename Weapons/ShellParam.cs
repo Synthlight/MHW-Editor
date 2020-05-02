@@ -4,7 +4,7 @@ using MHW_Editor.Models;
 namespace MHW_Editor.Weapons {
     public partial class ShellParam : MhwMultiStructItem<ShellParam> {
         protected override ulong GetEntryCount(Type type) {
-            if (type == typeof(Linked_Shell_Params)) {
+            if (type == typeof(Child_Shell_Params)) {
                 return GetFirstEntry<Number_of_Linked_Shell_Params_Holder>().Number_of_Linked_Shell_Params;
             }
 
@@ -16,7 +16,7 @@ namespace MHW_Editor.Weapons {
         }
 
         protected override void PrepSave() {
-            GetFirstEntry<Number_of_Linked_Shell_Params_Holder>().Number_of_Linked_Shell_Params = (uint) GetDataContainer<Linked_Shell_Params>().list.Count;
+            GetFirstEntry<Number_of_Linked_Shell_Params_Holder>().Number_of_Linked_Shell_Params = (uint) GetDataContainer<Child_Shell_Params>().list.Count;
             GetFirstEntry<Number_of_Modifiers_Holder>().Number_of_Modifiers = (uint) GetDataContainer<Modifiers>().list.Count;
         }
 

@@ -17,11 +17,14 @@ typedef struct {
 } Assets;
 
 typedef struct {
-    uint Projectile_EPV_VFX_Group_Id;
-    uint Projectile_EPV_VFX_Effect_Index;
-    uint Muzzle_EPV_VFX_Group_Id;
-    uint Muzzle_EPV_VFX_Effect_Index;
-    int Unk_1;
+    uint Projectile_Body_EPV_Index;
+    uint Projectile_Body_EPV_Element_;
+    uint Muzzle_EPV_Index;
+    uint Muzzle_EPV_Element_;
+    ubyte Muzzle_Joint_1;
+    ubyte Muzzle_Joint_2;
+    ubyte Muzzle_Joint_3;
+    ubyte Muzzle_Joint_4;
     uint Obj_Collision_Header;
     if (Obj_Collision_Header != 0)  { string Obj_Collision; }
     uint Obj_Collision_Index;
@@ -44,17 +47,17 @@ typedef struct {
     uint Unk_1;
     uint Flags;
     uint Unk_3;
-} Linked_Shell_Params;
+} Child_Shell_Params;
 
 typedef struct {
-    uint Ground_Decal_EPV_VFX_Group_Id;
-    uint Ground_Decal_EPV_VFX_Effect_Index;
-    uint Wall_Decal_EPV_VFX_Group_Id;
-    uint Wall_Decal_EPV_VFX_Effect_Index;
+    uint Ground_Hit_EPV_Index;
+    uint Ground_Hit_EPV_Element_;
+    uint Wall_Hit_EPV_Index;
+    uint Wall_Hit_EPV_Element_;
     uint Unk_1;
     uint Unk_2;
-    uint Obj_Hit_VFX_Group_Id;
-    uint Obj_Hit_VFX_Effect_Index;
+    uint Obj_Hit_EPV_Index;
+    uint Obj_Hit_EPV_Element_;
     ubyte Unk_3;
     ubyte Unk_4;
     ubyte Unk_5;
@@ -67,20 +70,20 @@ typedef struct {
     ubyte Unk_12;
     ubyte Unk_13;
     ubyte Unk_14;
-    uint Unk_15;
-    uint Unk_16;
+    ubyte Unk_15;
+    ubyte Unk_16;
     uint Unk_17;
-    ubyte Unk_18;
-    uint Unk_19;
+    uint Unk_18;
+    float Unk_19;
     uint Unk_20;
-    ubyte Unk_21;
+    uint Unk_21;
     int Unk_22;
     uint Unk_23;
     uint Unk_24;
     uint Unk_25;
     uint Unk_26;
-    uint Gun_Fire_EPV_VFX_Group_Id;
-    uint Gun_Fire_EPV_VFX_Effect_Index;
+    uint Locus_EPV_Index;
+    uint Locus_EPV_Element_;
     uint Unk_27;
     uint Unk_28;
     uint Unk_29;
@@ -89,32 +92,38 @@ typedef struct {
     uint Unk_32;
     uint Unk_33;
     uint Unk_34;
+} EPV;
+
+typedef struct {
     uint Wwise_Container_Header;
     if (Wwise_Container_Header != 0)  { string Wwise_Container; }
-    int Sound_Gun_Fire_Header;
-    int Sound_Gun_Fire;
-    int Sound_Bullet_Travel_Header;
-    int Sound_Bullet_Travel;
-    int Sound_Explode_Header;
-    int Sound_Explode;
-    int Sound_Hit_Wall_or_Ground_Header;
-    int Sound_Hit_Wall_or_Ground;
-    int Sound_Hit_Obj_Hit_Header;
-    int Sound_Hit_Obj_Hit;
-    int Sound_Condition_Header_1;
-    int Sound_Condition_1;
-    int Sound_Slinger_Condition_Header_1;
-    int Sound_Slinger_Condition_1;
-    int Sound_Slinger_Condition_Header_2;
-    int Sound_Slinger_Condition_2;
-    int Sound_Condition_Header_2;
-    int Sound_Condition_2;
-    int Sound_Condition_Header_3;
-    int Sound_Condition_3;
-    int Sound_Condition_Header_4;
-    int Sound_Condition_4;
-    int Sound_Condition_Header_5;
-    int Sound_Condition_5;
+    int Sound_Shoot_Header;
+    int Sound_Shoot;
+    int Sound_Loop_Header;
+    int Sound_Loop;
+    int Sound_Kill_Header;
+    int Sound_Kill;
+    int Sound_Wall_Ground_Hit_Header;
+    int Sound_Wall_Ground_Hit;
+    int Sound_Water_Hit_Header;
+    int Sound_Water_Hit;
+    int Sound_Player_Hit_Header;
+    int Sound_Player_Hit;
+    int Sound_Delay_Set_Header_Slinger_;
+    int Sound_Delay_Set_Slinger_;
+    int Sound_Life_End_Header_Slinger_;
+    int Sound_Life_End_Slinger_;
+    int Sound_Monster_Reflect_Header;
+    int Sound_Monster_Reflect;
+    int Sound_Custom_Header_1;
+    int Sound_Custom_1;
+    int Sound_Custom_Header_2;
+    int Sound_Custom_2;
+    int Sound_Custom_Header_3;
+    int Sound_Custom_3;
+} Sound;
+
+typedef struct {
     uint Header;
     uint Projectile_Entity_Collider;
     float Projectile_Model_Lifespan;
@@ -133,26 +142,26 @@ typedef struct {
     float Unk_42;
     float Unk_43;
     float Unk_44;
-    float Unk_45;
-    float Unk_46;
-    float Unk_47;
-    float Unk_48;
+    float Angle_Unk_1;
+    float Angle_Unk_2;
+    float Angle_Unk_3;
+    float Angle_Unk_4;
     float Projectile_Hitbox_Range;
-    uint Unk_49;
+    uint Unk_45;
     uint Insta_Kill_Trigger;
-    uint Unk_50;
-    ushort Unk_51;
+    uint Unk_46;
+    ushort Unk_47;
     float Entity_Collide_1;
-    float Unk_52;
-    float Unk_53;
+    float Unk_48;
+    float Unk_49;
     ubyte Entity_Collide_2;
-    ubyte Unk_54;
+    ubyte Unk_50;
     ubyte Entity_Spawn_Location;
     ubyte Entity_Range;
-    ubyte Unk_55;
-    ubyte Unk_56;
-    ushort Unk_57;
-    uint Unk_58;
+    ubyte Unk_51;
+    ubyte Unk_52;
+    ushort Unk_53;
+    uint Unk_54;
 } Shlp_2_;
 
 typedef struct {
@@ -182,14 +191,16 @@ typedef struct {
 } Modifiers;
 
 typedef struct {
-    uint Unk_59;
+    uint Unk_55;
 } Unknown;
 
 Shlp Shlp_;
 Assets Assets_[25]<optimize=false>;
 Shlp_1_ Shlp_1__;
 Number_of_Linked_Shell_Params_Holder Number_of_Linked_Shell_Params_Holder_;
-Linked_Shell_Params Linked_Shell_Params_[Number_of_Linked_Shell_Params_Holder_.Number_of_Linked_Shell_Params]<optimize=false>;
+Child_Shell_Params Child_Shell_Params_[Number_of_Linked_Shell_Params_Holder_.Number_of_Linked_Shell_Params]<optimize=false>;
+EPV EPV_;
+Sound Sound_;
 Shlp_2_ Shlp_2__;
 Number_of_Modifiers_Holder Number_of_Modifiers_Holder_;
 Modifiers Modifiers_[Number_of_Modifiers_Holder_.Number_of_Modifiers]<optimize=false>;
