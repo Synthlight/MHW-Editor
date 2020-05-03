@@ -94,6 +94,9 @@ namespace Obsolete_Detector {
                     var modifiedDate = info.LastWriteTime.Date;
                     var filename = info.Name;
 
+                    // Didn't change in IB, ignore.
+                    if (info.Extension == ".mod3" || info.Extension == ".tex") continue;
+
                     if (PRE_IB > modifiedDate) {
                         obsoleteFiles.Add(file);
                     }
