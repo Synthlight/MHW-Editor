@@ -9,11 +9,6 @@
 // ------------------------------------------------------------------------------
 namespace MHW_Template.Struct_Generation.Multi
 {
-    using Microsoft.CSharp;
-    using System.CodeDom;
-    using System.Text.RegularExpressions;
-    using MHW_Template;
-    using MHW_Template.Models;
     using System;
     
     /// <summary>
@@ -35,6 +30,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -43,258 +39,30 @@ using MHW_Template.Models;
 
 namespace ");
             
-            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
+            #line 20 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public partial class ");
             
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
+            #line 21 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
             #line hidden
             this.Write(" {\r\n        public override string EncryptionKey => ");
             
-            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
+            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\""));
             
             #line default
             #line hidden
             this.Write(";\r\n");
             
-            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
+            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
 
-    var compiler = new CSharpCodeProvider();
-
-    foreach (var @struct in structData.structs) {
-        var sortIndex = 50;
-        var name = Regex.Replace(@struct.name, @"[^\w\d]+", "_");
-
-        WriteLine("");
-        //WriteLine("        [StructLayout(LayoutKind.Explicit, CharSet = CharSet.Unicode, Pack = 1)]");
-        WriteLine($"        public partial class {name} : MhwStructItem{(@struct.showVertically ? ", IHasCustomView<MultiStructItemCustomView>" : "")} {{");
-        WriteLine($"            public const ulong FixedSizeCount = {@struct.fixedSizeCount};");
-        WriteLine($"            public const string GridName = \"{@struct.name}\";");
-
-        if (@struct.hidden) {
-            WriteLine($"            public const bool IsHidden = {@struct.hidden.ToString().ToLower()};");
-        }
-
-        if (@struct.canAddRows) {
-            WriteLine($"            public const bool IsAddingAllowed = {@struct.canAddRows.ToString().ToLower()};");
-
-            WriteLine("");
-            WriteLine("            [SortOrder(-1)]");
-            WriteLine("            [IsReadOnly]");
-            WriteLine("            [DisplayName(\"X\")]");
-            WriteLine("            public string Delete => \"X\";");
-        }
-
-        foreach (var entry in @struct.entries) {
-            var accessLevel = entry.accessLevel;
-            if (entry.name == "Index") accessLevel += " override";
-            else if (accessLevel != "private") accessLevel += " virtual";
-
-            var propName = entry.SafeName();
-            if (entry.forceUnique) propName += $"_{sortIndex}";
-            var entryName = $"{propName}_raw";
-
-            var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
-            if (entry.arrayCount > -1) typeString += "[]";
-
-            string returnString;
-            var setCast = "";
-            var getCast = "";
-
-            if (entry.enumReturn == null) {
-                returnString = typeString;
-            } else {
-                returnString = compiler.GetTypeOutput(new CodeTypeReference(entry.enumReturn));
-                getCast = $"({returnString}) ";
-                setCast = $"({typeString}) ";
-            }
-
-            if (entry.name == "Index") {
-                getCast = "(ulong) ";
-                setCast = $"({returnString}) ";
-                returnString = "ulong";
-            }
-
-            // Main property.
-            WriteLine("");
-            WriteLine($"            protected {typeString} {entryName};");
-            WriteLine($"            public const string {propName}_displayName = \"{entry.name}\";");
-            WriteLine($"            public const int {propName}_sortIndex = {sortIndex};");
-            WriteLine($"            [SortOrder({propName}_sortIndex)]");
-            WriteLine($"            [DisplayName({propName}_displayName)]");
-
-            if (entry.dataSourceType != null) {
-                WriteLine($"            [DataSource(DataSourceType.{entry.dataSourceType})]");
-            }
-
-            if (entry.readOnly) {
-                WriteLine("            [IsReadOnly]");
-            }
-
-            WriteLine($"            {accessLevel} {returnString} {propName} {{");
-
-            if (returnString == "bool") {
-                WriteLine($"                get => {getCast}Convert.ToBoolean({entryName});");
-            } else if (typeString == "char[]") {
-                WriteLine($"                get => {getCast}new string({entryName});");
-            } else {
-                WriteLine($"                get => {getCast}{entryName};");
-            }
-
-            // Always include a setter, even for readOnly. This enables us to bypass readOnly via command line switch.
-            WriteLine("                set {");
-
-            if (returnString == "bool") {
-                WriteLine($"                    if (Convert.ToBoolean({entryName}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
-                WriteLine($"                    {entryName} = Convert.ToByte({entry.valueString});");
-            } else if (typeString == "char[]") {
-                WriteLine($"                    if ({getCast}new string({entryName}) == {entry.valueString}) return;"); // Do nothing if the value is the same.
-                WriteLine($"                    {entryName} = {setCast}{entry.valueString}.ToCharArray(0, {entry.arrayCount - 1});");
-            } else {
-                WriteLine($"                    if ({getCast}{entryName} == {entry.valueString}) return;"); // Do nothing if the value is the same.
-                WriteLine($"                    {entryName} = {setCast}{entry.valueString};");
-            }
-
-            WriteLine($"                    OnPropertyChanged(nameof({propName}));");
-
-            if (entry.dataSourceType != null) {
-                WriteLine($"                    OnPropertyChanged(nameof({propName}_button));");
-            }
-
-            if (entry.extraOnPropertyChanged != null) {
-                foreach (var propertyToChange in entry.extraOnPropertyChanged) {
-                    var propertyToChangeName = Regex.Replace(propertyToChange, @"[^\w\d]+", "_");
-
-                    WriteLine($"                    OnPropertyChanged(nameof({propertyToChangeName}));");
-                }
-            }
-
-            WriteLine("                }");
-            WriteLine("            }");
-
-            if (entry.dataSourceType != null) {
-                var dataSourceLookup = GenerationHelper.GetDataSourceType(entry.dataSourceType ?? throw new Exception());
-
-                WriteLine("");
-                WriteLine($"            [SortOrder({propName}_sortIndex)]");
-                WriteLine($"            [DisplayName({propName}_displayName)]");
-                WriteLine($"            [CustomSorter(typeof({entry.dataSourceCustomSorter}))]");
-                WriteLine($"            public string {propName}_button => {dataSourceLookup}.TryGet({propName}).ToStringWithId({propName});");
-            }
-
-            if (entry.createPercentField) {
-                WriteLine("");
-                WriteLine($"            private float _{propName}Percent;");
-                WriteLine($"            [SortOrder({propName}_sortIndex + 1)]");
-                WriteLine($"            [DisplayName({propName}_displayName + \"%\")]");
-                WriteLine($"            public float {propName}_percent {{");
-                WriteLine($"                get => _{propName}Percent;");
-                WriteLine("                set {");
-                WriteLine($"                    _{propName}Percent = value.Clamp(0f, 100f);");
-                WriteLine($"                    OnPropertyChanged(nameof({propName}_percent));");
-                WriteLine("                }");
-                WriteLine("            }");
-            }
-
-            sortIndex += 50;
-        }
-
-        // Individual LoadData.
-        WriteLine("");
-        WriteLine($"            public static {name} LoadData(BinaryReader reader) {{");
-        WriteLine($"                var data = new {name}();");
-        foreach (var entry in @struct.entries) {
-            var propName = entry.SafeName();
-            if (entry.forceUnique) propName += $"_{sortIndex}";
-            var entryName = $"{propName}_raw";
-
-            var condition = "";
-            if (entry.condition != null) {
-                condition = $"{entry.condition} ".Replace("|ref|", "data.");
-            }
-
-            if (entry.arrayCount > -1) {
-                WriteLine($"                {condition}data.{entryName} = reader.Read{GetReadType(entry.type)}s({entry.arrayCount});");
-            } else if (entry.isNullTerminatedString) {
-                WriteLine($"                {condition}data.{entryName} = reader.ReadNullTermString();");
-            } else {
-                WriteLine($"                {condition}data.{entryName} = reader.Read{GetReadType(entry.type)}();");
-            }
-        }
-        WriteLine("                return data;");
-        WriteLine("            }");
-
-        // Individual WriteData.
-        WriteLine("");
-        WriteLine("            public override void WriteData(BinaryWriter writer) {");
-        foreach (var entry in @struct.entries) {
-            var propName = entry.SafeName();
-            if (entry.forceUnique) propName += $"_{sortIndex}";
-            var entryName = $"{propName}_raw";
-
-            var condition = "";
-            if (entry.condition != null) {
-                condition = $"{entry.condition} ".Replace("|ref|", "");
-            }
-
-            if (entry.type == typeof(string)) {
-                WriteLine($"                {condition}writer.Write({entryName}.ToNullTermCharArray());");
-            } else {
-                WriteLine($"                {condition}writer.Write({entryName});");
-            }
-        }
-        WriteLine("            }");
-
-        // GetCustomView (if needed).
-        if (@struct.showVertically) {
-            WriteLine("");
-            WriteLine("            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {");
-            WriteLine("                return new ObservableCollection<MultiStructItemCustomView> {");
-            foreach (var entry in @struct.entries) {
-                var propName = entry.SafeName();
-                if (entry.forceUnique) propName += $"_{sortIndex}";
-
-                WriteLine($"                    new MultiStructItemCustomView(this, \"{entry.name}\", \"{propName}\"),");
-            }
-            WriteLine("                };");
-            WriteLine("            }");
-        }
-
-        WriteLine("        }"); // Inner Class
-    }
-
-    // Master LoadData.
-    WriteLine("");
-    WriteLine("        public override void LoadFile(string targetFile) {");
-    WriteLine("            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));");
-    WriteLine("            data = new List<MhwStructDataContainer>();");
-    WriteLine("            dataByType = new Dictionary<Type, MhwStructDataContainer>();");
-    foreach (var @struct in structData.structs) {
-        var name = @struct.SafeName();
-
-        WriteLine("");
-        WriteLine($"            var {name}_list = new ObservableCollection<object>();");
-        WriteLine($"            for (ulong i = 0; i < GetEntryCount(typeof({name})); i++) {{");
-        WriteLine($"                var item = {name}.LoadData(reader);");
-        WriteLine("                item.Index = i;");
-        WriteLine($"                {name}_list.Add(item);");
-        WriteLine("            }");
-        WriteLine($"            var {name}_container = new MhwStructDataContainer({name}_list, typeof({name}));");
-        WriteLine($"            data.Add({name}_container);");
-        WriteLine($"            dataByType[typeof({name})] = {name}_container;");
-    }
-    WriteLine("        }");
-
-    string GetReadType(Type type) {
-        return Type.GetTypeCode(type).ToString();
-    }
+    MultiStructGeneration.Generate(this, structData);
 
             
             #line default

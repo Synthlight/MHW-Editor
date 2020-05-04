@@ -8,8 +8,7 @@ namespace MHW_Editor.Models {
     public abstract class MhwStructItem : IMhwStructItem {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        [SortOrder(10)]
-        public virtual ulong Index { get; set; }
+        [SortOrder(10)] public virtual ulong Index { get; set; }
 
         public abstract void WriteData(BinaryWriter writer);
 

@@ -9,8 +9,7 @@ using JetBrains.Annotations;
 
 namespace MHW_Editor.Models {
     public abstract class MhwMultiStructItem<T> : CustomSaveLoad<T>, ICustomSaveLoad, IMhwMultiStructItem where T : ICustomSaveLoad, IMhwMultiStructItem, new() {
-        public List<MhwStructDataContainer> data { get; protected set; }
-        public Dictionary<Type, MhwStructDataContainer> dataByType { get; protected set; }
+        public LinkedList<MhwStructDataContainer> data { get; protected set; }
 
         public abstract string EncryptionKey { get; }
 
@@ -21,8 +20,8 @@ namespace MHW_Editor.Models {
 
                 if (entry.IsAddingAllowed) {
                     var panel = new StackPanel {Orientation = Orientation.Horizontal};
-                    panel.Children.Add(new Label {Content = entry.GridName, FontSize = MainWindow.FONT_SIZE, HorizontalAlignment = HorizontalAlignment.Left});
-                    var button = new Button {Content = "Add Row", HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Center};
+                    panel.Children.Add(new Label {Content   = entry.GridName, FontSize       = MainWindow.FONT_SIZE, HorizontalAlignment    = HorizontalAlignment.Left});
+                    var button = new Button {Content        = "Add Row", HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Center};
                     button.Click += entry.Add_Click;
                     panel.Children.Add(button);
                     grid.AddControl(panel);
@@ -39,30 +38,13 @@ namespace MHW_Editor.Models {
             }
         }
 
-        protected R GetFirstEntry<R>() {
-            var dataContainer = dataByType[typeof(R)];
-            return (R) dataContainer.list[0];
-        }
-
-        protected MhwStructDataContainer GetDataContainer<R>() {
-            return dataByType[typeof(R)];
-        }
-
         public abstract void LoadFile(string targetFile);
-
-        protected virtual ulong GetEntryCount(Type type) {
-            return GetFixedSizeCount(type);
-        }
-
-        private static ulong GetFixedSizeCount(Type type) {
-            return (ulong) (type.GetField("FixedSizeCount", BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
-        }
 
         protected static Stream OpenFile(string targetFile, string encryptionKey) {
             if (encryptionKey == null) {
                 return File.OpenRead(targetFile);
             } else {
-                var encryptedBytes = File.ReadAllBytes(targetFile);
+                var encryptedBytes  = File.ReadAllBytes(targetFile);
                 var decryptedStream = EncryptionHelper.DecryptToStream(encryptionKey, encryptedBytes);
                 decryptedStream.Seek(0, SeekOrigin.Begin);
                 return decryptedStream;
@@ -70,10 +52,12 @@ namespace MHW_Editor.Models {
         }
 
         public void SaveFile(string targetFile) {
-            PrepSave();
+            foreach (var entry in data) {
+                entry.PrepSave();
+            }
 
             using var memoryStream = new MemoryStream();
-            using var writer = new BinaryWriter(memoryStream, Encoding.ASCII, true);
+            using var writer       = new BinaryWriter(memoryStream, Encoding.ASCII, true);
             foreach (var entry in data) {
                 foreach (MhwStructItem obj in entry.list) {
                     obj.WriteData(writer);
@@ -81,7 +65,7 @@ namespace MHW_Editor.Models {
             }
 
             const int paddingBlockSize = 8;
-            var paddingNeeded = memoryStream.Length % paddingBlockSize;
+            var       paddingNeeded    = memoryStream.Length % paddingBlockSize;
             if (paddingNeeded > 0) {
                 for (var i = 0; i < paddingBlockSize - paddingNeeded; i++) {
                     writer.Write((byte) 0);
@@ -89,9 +73,6 @@ namespace MHW_Editor.Models {
             }
 
             SaveFile(targetFile, memoryStream);
-        }
-
-        protected virtual void PrepSave() {
         }
 
         private void SaveFile(string targetFile, MemoryStream stream) {

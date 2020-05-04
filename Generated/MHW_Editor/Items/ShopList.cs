@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -62,8 +63,18 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            public static Shop_List LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Shop_List();
+                data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
                 data.Magic_2_raw = reader.ReadUInt16();
                 data.Item_Count_raw = reader.ReadUInt32();
@@ -150,8 +161,19 @@ namespace MHW_Editor.Items {
                 }
             }
 
-            public static Entries LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var countTarget = (Shop_List) lastStruct.Last();
+                var count = (ulong) countTarget.Item_Count;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Entries();
+                data.Index = i;
                 data.Index_raw = reader.ReadUInt32();
                 data.Item_Id_raw = reader.ReadUInt32();
                 data.Story_Unlock_raw = reader.ReadUInt32();
@@ -169,28 +191,12 @@ namespace MHW_Editor.Items {
 
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            data = new List<MhwStructDataContainer>();
-            dataByType = new Dictionary<Type, MhwStructDataContainer>();
-
-            var Shop_List_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Shop_List)); i++) {
-                var item = Shop_List.LoadData(reader);
-                item.Index = i;
-                Shop_List_list.Add(item);
-            }
-            var Shop_List_container = new MhwStructDataContainer(Shop_List_list, typeof(Shop_List));
-            data.Add(Shop_List_container);
-            dataByType[typeof(Shop_List)] = Shop_List_container;
-
-            var Entries_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Entries)); i++) {
-                var item = Entries.LoadData(reader);
-                item.Index = i;
-                Entries_list.Add(item);
-            }
-            var Entries_container = new MhwStructDataContainer(Entries_list, typeof(Entries));
-            data.Add(Entries_container);
-            dataByType[typeof(Entries)] = Entries_container;
+            data = new LinkedList<MhwStructDataContainer>();
+            var Shop_List_ = new MhwStructDataContainer(Shop_List.LoadData(reader, null), typeof(Shop_List));
+            data.AddLast(Shop_List_);
+            var Entries_ = new MhwStructDataContainer(Entries.LoadData(reader, Shop_List_.list), typeof(Entries));
+            Entries_.SetCountTargetToUpdate(Shop_List_, -1, "Item_Count");
+            data.AddLast(Entries_);
         }
     }
 }

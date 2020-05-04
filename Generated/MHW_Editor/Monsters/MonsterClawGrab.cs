@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -62,8 +63,18 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static Monster_Claw_Grab LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Claw_Grab();
+                data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
                 data.Magic_2_raw = reader.ReadUInt32();
                 data.Number_of_Claggers_raw = reader.ReadUInt32();
@@ -325,8 +336,19 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static Clagger_Params LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var countTarget = (Monster_Claw_Grab) lastStruct.Last();
+                var count = (ulong) countTarget.Number_of_Claggers;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Clagger_Params();
+                data.Index = i;
                 data.Unk_f32__raw = reader.ReadSingle();
                 data.Normal_raw = reader.ReadSingle();
                 data.Enraged_raw = reader.ReadSingle();
@@ -414,8 +436,18 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static Claw_Chance_Params LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Claw_Chance_Params();
+                data.Index = i;
                 data.Gimmick_Breaker_Collision_Unique_Id_Small_raw = reader.ReadUInt32();
                 data.Gimmick_Breaker_Collision_Unique_Id_Middle_raw = reader.ReadUInt32();
                 data.Gimmick_Breaker_Collision_Unique_Id_Large_raw = reader.ReadUInt32();
@@ -439,38 +471,14 @@ namespace MHW_Editor.Monsters {
 
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            data = new List<MhwStructDataContainer>();
-            dataByType = new Dictionary<Type, MhwStructDataContainer>();
-
-            var Monster_Claw_Grab_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Monster_Claw_Grab)); i++) {
-                var item = Monster_Claw_Grab.LoadData(reader);
-                item.Index = i;
-                Monster_Claw_Grab_list.Add(item);
-            }
-            var Monster_Claw_Grab_container = new MhwStructDataContainer(Monster_Claw_Grab_list, typeof(Monster_Claw_Grab));
-            data.Add(Monster_Claw_Grab_container);
-            dataByType[typeof(Monster_Claw_Grab)] = Monster_Claw_Grab_container;
-
-            var Clagger_Params_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Clagger_Params)); i++) {
-                var item = Clagger_Params.LoadData(reader);
-                item.Index = i;
-                Clagger_Params_list.Add(item);
-            }
-            var Clagger_Params_container = new MhwStructDataContainer(Clagger_Params_list, typeof(Clagger_Params));
-            data.Add(Clagger_Params_container);
-            dataByType[typeof(Clagger_Params)] = Clagger_Params_container;
-
-            var Claw_Chance_Params_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Claw_Chance_Params)); i++) {
-                var item = Claw_Chance_Params.LoadData(reader);
-                item.Index = i;
-                Claw_Chance_Params_list.Add(item);
-            }
-            var Claw_Chance_Params_container = new MhwStructDataContainer(Claw_Chance_Params_list, typeof(Claw_Chance_Params));
-            data.Add(Claw_Chance_Params_container);
-            dataByType[typeof(Claw_Chance_Params)] = Claw_Chance_Params_container;
+            data = new LinkedList<MhwStructDataContainer>();
+            var Monster_Claw_Grab_ = new MhwStructDataContainer(Monster_Claw_Grab.LoadData(reader, null), typeof(Monster_Claw_Grab));
+            data.AddLast(Monster_Claw_Grab_);
+            var Clagger_Params_ = new MhwStructDataContainer(Clagger_Params.LoadData(reader, Monster_Claw_Grab_.list), typeof(Clagger_Params));
+            Clagger_Params_.SetCountTargetToUpdate(Monster_Claw_Grab_, -1, "Number_of_Claggers");
+            data.AddLast(Clagger_Params_);
+            var Claw_Chance_Params_ = new MhwStructDataContainer(Claw_Chance_Params.LoadData(reader, null), typeof(Claw_Chance_Params));
+            data.AddLast(Claw_Chance_Params_);
         }
     }
 }

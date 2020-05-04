@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -84,8 +85,18 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static Monster_Rage LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Rage();
+                data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
                 data.Magic_2_raw = reader.ReadUInt32();
                 data.Monster_Id_raw = reader.ReadUInt32();
@@ -329,8 +340,18 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static Rage_Stats LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Rage_Stats();
+                data.Index = i;
                 data.Build_to_Trigger_raw = reader.ReadInt32();
                 data.Duration_raw = reader.ReadSingle();
                 data.Speed_Modifier_raw = reader.ReadSingle();
@@ -372,28 +393,11 @@ namespace MHW_Editor.Monsters {
 
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            data = new List<MhwStructDataContainer>();
-            dataByType = new Dictionary<Type, MhwStructDataContainer>();
-
-            var Monster_Rage_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Monster_Rage)); i++) {
-                var item = Monster_Rage.LoadData(reader);
-                item.Index = i;
-                Monster_Rage_list.Add(item);
-            }
-            var Monster_Rage_container = new MhwStructDataContainer(Monster_Rage_list, typeof(Monster_Rage));
-            data.Add(Monster_Rage_container);
-            dataByType[typeof(Monster_Rage)] = Monster_Rage_container;
-
-            var Rage_Stats_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Rage_Stats)); i++) {
-                var item = Rage_Stats.LoadData(reader);
-                item.Index = i;
-                Rage_Stats_list.Add(item);
-            }
-            var Rage_Stats_container = new MhwStructDataContainer(Rage_Stats_list, typeof(Rage_Stats));
-            data.Add(Rage_Stats_container);
-            dataByType[typeof(Rage_Stats)] = Rage_Stats_container;
+            data = new LinkedList<MhwStructDataContainer>();
+            var Monster_Rage_ = new MhwStructDataContainer(Monster_Rage.LoadData(reader, null), typeof(Monster_Rage));
+            data.AddLast(Monster_Rage_);
+            var Rage_Stats_ = new MhwStructDataContainer(Rage_Stats.LoadData(reader, null), typeof(Rage_Stats));
+            data.AddLast(Rage_Stats_);
         }
     }
 }

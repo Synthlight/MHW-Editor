@@ -1,25 +1,7 @@
-﻿using System;
-using MHW_Editor.Models;
+﻿using MHW_Editor.Models;
 
 namespace MHW_Editor.Monsters {
     public partial class MonsterRandomSize : MhwMultiStructItem<MonsterRandomSize> {
-        protected override ulong GetEntryCount(Type type) {
-            if (type == typeof(Monsters)) {
-                return GetFirstEntry<Monster_Random_Sizes>().Number_of_Monsters;
-            }
-
-            if (type == typeof(Crown_Tables)) {
-                return GetFirstEntry<Crown_Table_Count>().Number_of_Crown_Tables;
-            }
-
-            return base.GetEntryCount(type);
-        }
-
-        protected override void PrepSave() {
-            GetFirstEntry<Monster_Random_Sizes>().Number_of_Monsters = (uint) GetDataContainer<Monsters>().list.Count;
-            GetFirstEntry<Crown_Table_Count>().Number_of_Crown_Tables = (uint) GetDataContainer<Crown_Tables>().list.Count;
-        }
-
         public partial class Crown_Tables {
             public string Name {
                 get {

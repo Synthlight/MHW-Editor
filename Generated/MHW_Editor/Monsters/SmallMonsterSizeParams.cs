@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -77,8 +78,18 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static Small_Monster_Size_Params LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Small_Monster_Size_Params();
+                data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
                 data.Magic_2_raw = reader.ReadUInt32();
                 data.Magic_3_raw = reader.ReadUInt32();
@@ -181,8 +192,19 @@ namespace MHW_Editor.Monsters {
             [CustomSorter(typeof(ButtonSorter))]
             public string Monster_Id_button => DataHelper.monsterNames[MainWindow.locale].TryGet(Monster_Id).ToStringWithId(Monster_Id);
 
-            public static Size_Settings LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var countTarget = (Small_Monster_Size_Params) lastStruct.Last();
+                var count = (ulong) countTarget.Number_of_Size_Settings;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Size_Settings();
+                data.Index = i;
                 data.Header_raw = reader.ReadUInt32();
                 data.Min_Size_raw = reader.ReadSingle();
                 data.Max_Size_raw = reader.ReadSingle();
@@ -202,28 +224,12 @@ namespace MHW_Editor.Monsters {
 
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            data = new List<MhwStructDataContainer>();
-            dataByType = new Dictionary<Type, MhwStructDataContainer>();
-
-            var Small_Monster_Size_Params_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Small_Monster_Size_Params)); i++) {
-                var item = Small_Monster_Size_Params.LoadData(reader);
-                item.Index = i;
-                Small_Monster_Size_Params_list.Add(item);
-            }
-            var Small_Monster_Size_Params_container = new MhwStructDataContainer(Small_Monster_Size_Params_list, typeof(Small_Monster_Size_Params));
-            data.Add(Small_Monster_Size_Params_container);
-            dataByType[typeof(Small_Monster_Size_Params)] = Small_Monster_Size_Params_container;
-
-            var Size_Settings_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Size_Settings)); i++) {
-                var item = Size_Settings.LoadData(reader);
-                item.Index = i;
-                Size_Settings_list.Add(item);
-            }
-            var Size_Settings_container = new MhwStructDataContainer(Size_Settings_list, typeof(Size_Settings));
-            data.Add(Size_Settings_container);
-            dataByType[typeof(Size_Settings)] = Size_Settings_container;
+            data = new LinkedList<MhwStructDataContainer>();
+            var Small_Monster_Size_Params_ = new MhwStructDataContainer(Small_Monster_Size_Params.LoadData(reader, null), typeof(Small_Monster_Size_Params));
+            data.AddLast(Small_Monster_Size_Params_);
+            var Size_Settings_ = new MhwStructDataContainer(Size_Settings.LoadData(reader, Small_Monster_Size_Params_.list), typeof(Size_Settings));
+            Size_Settings_.SetCountTargetToUpdate(Small_Monster_Size_Params_, -1, "Number_of_Size_Settings");
+            data.AddLast(Size_Settings_);
         }
     }
 }

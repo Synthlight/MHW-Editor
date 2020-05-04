@@ -76,7 +76,6 @@ namespace MHW_Editor.Models {
         }
 
         public override void WriteData(BinaryWriter writer) {
-            throw new NotImplementedException();
         }
     }
 }

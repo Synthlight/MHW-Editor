@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
@@ -47,8 +48,18 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static Monster_Difficulty LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Difficulty();
+                data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
                 data.Magic_2_raw = reader.ReadUInt32();
                 return data;
@@ -190,8 +201,18 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static Solo_Stats LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Solo_Stats();
+                data.Index = i;
                 data.Monster_HP_Multiplier_raw = reader.ReadSingle();
                 data.Monster_Damage_Multiplier_raw = reader.ReadSingle();
                 data.Player_Damage_Multiplier_raw = reader.ReadSingle();
@@ -347,8 +368,18 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static Multi_Stats LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Multi_Stats();
+                data.Index = i;
                 data.Monster_HP_Multiplier_raw = reader.ReadSingle();
                 data.Monster_Damage_Multiplier_raw = reader.ReadSingle();
                 data.Player_Damage_Multiplier_raw = reader.ReadSingle();
@@ -483,8 +514,18 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public static Unknown LoadData(BinaryReader reader) {
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
                 var data = new Unknown();
+                data.Index = i;
                 data.Unk_1_raw = reader.ReadUInt32();
                 data.Unk_2_raw = reader.ReadUInt32();
                 data.Unk_3_raw = reader.ReadUInt32();
@@ -508,48 +549,15 @@ namespace MHW_Editor.Monsters {
 
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
-            data = new List<MhwStructDataContainer>();
-            dataByType = new Dictionary<Type, MhwStructDataContainer>();
-
-            var Monster_Difficulty_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Monster_Difficulty)); i++) {
-                var item = Monster_Difficulty.LoadData(reader);
-                item.Index = i;
-                Monster_Difficulty_list.Add(item);
-            }
-            var Monster_Difficulty_container = new MhwStructDataContainer(Monster_Difficulty_list, typeof(Monster_Difficulty));
-            data.Add(Monster_Difficulty_container);
-            dataByType[typeof(Monster_Difficulty)] = Monster_Difficulty_container;
-
-            var Solo_Stats_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Solo_Stats)); i++) {
-                var item = Solo_Stats.LoadData(reader);
-                item.Index = i;
-                Solo_Stats_list.Add(item);
-            }
-            var Solo_Stats_container = new MhwStructDataContainer(Solo_Stats_list, typeof(Solo_Stats));
-            data.Add(Solo_Stats_container);
-            dataByType[typeof(Solo_Stats)] = Solo_Stats_container;
-
-            var Multi_Stats_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Multi_Stats)); i++) {
-                var item = Multi_Stats.LoadData(reader);
-                item.Index = i;
-                Multi_Stats_list.Add(item);
-            }
-            var Multi_Stats_container = new MhwStructDataContainer(Multi_Stats_list, typeof(Multi_Stats));
-            data.Add(Multi_Stats_container);
-            dataByType[typeof(Multi_Stats)] = Multi_Stats_container;
-
-            var Unknown_list = new ObservableCollection<object>();
-            for (ulong i = 0; i < GetEntryCount(typeof(Unknown)); i++) {
-                var item = Unknown.LoadData(reader);
-                item.Index = i;
-                Unknown_list.Add(item);
-            }
-            var Unknown_container = new MhwStructDataContainer(Unknown_list, typeof(Unknown));
-            data.Add(Unknown_container);
-            dataByType[typeof(Unknown)] = Unknown_container;
+            data = new LinkedList<MhwStructDataContainer>();
+            var Monster_Difficulty_ = new MhwStructDataContainer(Monster_Difficulty.LoadData(reader, null), typeof(Monster_Difficulty));
+            data.AddLast(Monster_Difficulty_);
+            var Solo_Stats_ = new MhwStructDataContainer(Solo_Stats.LoadData(reader, null), typeof(Solo_Stats));
+            data.AddLast(Solo_Stats_);
+            var Multi_Stats_ = new MhwStructDataContainer(Multi_Stats.LoadData(reader, null), typeof(Multi_Stats));
+            data.AddLast(Multi_Stats_);
+            var Unknown_ = new MhwStructDataContainer(Unknown.LoadData(reader, null), typeof(Unknown));
+            data.AddLast(Unknown_);
         }
     }
 }
