@@ -316,6 +316,9 @@
     <Compile Include="Models\MhwItem.cs" />
     <Compile Include="Models\ISlots.cs" />
     <Compile Include="Skills\SkillPointData.cs" />
+    <Compile Include="SubStructView.xaml.cs">
+      <DependentUpon>SubStructView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UpdateCheck.cs" />
     <Compile Include="Weapons\AwakenedExp.cs" />
     <Compile Include="Weapons\AwakenedWpUpgrade.cs" />
@@ -395,6 +398,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Resources\IconDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubStructView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

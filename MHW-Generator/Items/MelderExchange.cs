@@ -1,29 +1,28 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation.Multi;
 
 namespace MHW_Generator.Items {
-    public class MelderExchange : ISingleStruct {
-        public SingleStruct Generate() { // .mkex
-            const ulong size = 438;
-            var entries = new List<MhwStructData.Entry> {
-                new MhwStructData.Entry("Source Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
-                new MhwStructData.Entry("Unknown (int32) 1", 4, typeof(int))
+    public class MelderExchange : IMultiStruct {
+        public MultiStruct Generate() { // .mkex
+            var structs = new List<MhwMultiStructData.StructData> {
+                new MhwMultiStructData.StructData("Melder Exchange", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Magic 2", typeof(ushort), true),
+                    new MhwMultiStructData.Entry("Entry Count", typeof(uint), true).Out(out var entryCount),
+                }, 1).Out(out var header),
+
+                new MhwMultiStructData.StructData("Item Box", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Source Item Id", typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwMultiStructData.Entry("Unk 1", typeof(uint)),
+                    new MhwMultiStructData.Entry("Items", typeof(void), subStruct: new MhwMultiStructData.StructData("Items", new List<MhwMultiStructData.Entry> {
+                        new MhwMultiStructData.Entry("Unk", typeof(ushort))
+                    }, 215)),
+                }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, entryCount))
             };
 
-            var index = 0;
-            for (ulong i = 8; i < size; i += 2) {
-                entries.Add(new MhwStructData.Entry($"It {index++}", i, typeof(ushort)));
-            }
-
-            return new SingleStruct("MHW_Editor.Items", "MelderExchange", new MhwStructData {
-                size = size,
-                offsetInitial = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
-                entries = entries
-            });
+            return new MultiStruct("MHW_Editor.Items", "MelderExchange", new MhwMultiStructData(structs, "mkex"));
         }
     }
 }

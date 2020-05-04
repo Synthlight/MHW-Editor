@@ -72,7 +72,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Shlp LoadData(BinaryReader reader, ulong i) {
                 var data = new Shlp();
                 data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -129,7 +129,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Assets LoadData(BinaryReader reader, ulong i) {
                 var data = new Assets();
                 data.Index = i;
                 data.Header_raw = reader.ReadUInt32();
@@ -408,7 +408,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Shlp_1_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Shlp_1_();
                 data.Index = i;
                 data.Projectile_Body_EPV_Index_raw = reader.ReadUInt32();
@@ -506,7 +506,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Number_of_Linked_Shell_Params_Holder LoadData(BinaryReader reader, ulong i) {
                 var data = new Number_of_Linked_Shell_Params_Holder();
                 data.Index = i;
                 data.Number_of_Linked_Shell_Params_raw = reader.ReadUInt32();
@@ -608,7 +608,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Child_Shell_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new Child_Shell_Params();
                 data.Index = i;
                 data.Header_raw = reader.ReadUInt32();
@@ -1229,7 +1229,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static EPV LoadData(BinaryReader reader, ulong i) {
                 var data = new EPV();
                 data.Index = i;
                 data.Ground_Hit_EPV_Index_raw = reader.ReadUInt32();
@@ -1747,7 +1747,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Sound LoadData(BinaryReader reader, ulong i) {
                 var data = new Sound();
                 data.Index = i;
                 data.Wwise_Container_Header_raw = reader.ReadUInt32();
@@ -2385,7 +2385,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Shlp_2_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Shlp_2_();
                 data.Index = i;
                 data.Header_raw = reader.ReadUInt32();
@@ -2543,7 +2543,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Number_of_Modifiers_Holder LoadData(BinaryReader reader, ulong i) {
                 var data = new Number_of_Modifiers_Holder();
                 data.Index = i;
                 data.Number_of_Modifiers_raw = reader.ReadUInt32();
@@ -2841,7 +2841,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Modifiers LoadData(BinaryReader reader, ulong i) {
                 var data = new Modifiers();
                 data.Index = i;
                 data.Header_raw = reader.ReadUInt32();
@@ -2916,7 +2916,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Unknown LoadData(BinaryReader reader, ulong i) {
                 var data = new Unknown();
                 data.Index = i;
                 data.Unk_55_raw = reader.ReadUInt32();

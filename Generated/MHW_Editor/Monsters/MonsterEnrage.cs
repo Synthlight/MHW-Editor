@@ -94,7 +94,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Monster_Rage LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Rage();
                 data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -349,7 +349,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Rage_Stats LoadData(BinaryReader reader, ulong i) {
                 var data = new Rage_Stats();
                 data.Index = i;
                 data.Build_to_Trigger_raw = reader.ReadInt32();

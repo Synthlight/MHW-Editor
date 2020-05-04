@@ -86,7 +86,7 @@ namespace MHW_Editor.Items {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Supply_Data LoadData(BinaryReader reader, ulong i) {
                 var data = new Supply_Data();
                 data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -152,7 +152,7 @@ namespace MHW_Editor.Items {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Item_Box LoadData(BinaryReader reader, ulong i) {
                 var data = new Item_Box();
                 data.Index = i;
                 data.Item_Id_raw = reader.ReadUInt16();
@@ -193,7 +193,7 @@ namespace MHW_Editor.Items {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Item_Box_Scaling LoadData(BinaryReader reader, ulong i) {
                 var data = new Item_Box_Scaling();
                 data.Index = i;
                 data.Items_to_Show_raw = reader.ReadByte();
@@ -253,7 +253,7 @@ namespace MHW_Editor.Items {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Ammo_Box LoadData(BinaryReader reader, ulong i) {
                 var data = new Ammo_Box();
                 data.Index = i;
                 data.Ammo_Id_raw = reader.ReadUInt16();
@@ -294,7 +294,7 @@ namespace MHW_Editor.Items {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Ammo_Box_Scaling LoadData(BinaryReader reader, ulong i) {
                 var data = new Ammo_Box_Scaling();
                 data.Index = i;
                 data.Ammo_Items_to_Show_raw = reader.ReadByte();

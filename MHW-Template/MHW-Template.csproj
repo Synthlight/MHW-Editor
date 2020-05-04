@@ -76,6 +76,7 @@
     <Compile Include="Items\ItemCategory.cs" />
     <Compile Include="Items\ItemType.cs" />
     <Compile Include="Items\SteamRarity.cs" />
+    <Compile Include="Struct Generation\Multi\MultiStruct010Generation.cs" />
     <Compile Include="Struct Generation\Multi\MultiStructGeneration.cs" />
     <Compile Include="Struct Generation\Multi\MultiStructItemTemplate.cs">
       <DependentUpon>MultiStructItemTemplate.tt</DependentUpon>

@@ -72,7 +72,7 @@ namespace MHW_Editor.Items {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Shop_List LoadData(BinaryReader reader, ulong i) {
                 var data = new Shop_List();
                 data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -171,7 +171,7 @@ namespace MHW_Editor.Items {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Entries LoadData(BinaryReader reader, ulong i) {
                 var data = new Entries();
                 data.Index = i;
                 data.Index_raw = reader.ReadUInt32();

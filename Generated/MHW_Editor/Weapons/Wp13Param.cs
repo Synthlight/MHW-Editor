@@ -70,7 +70,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static W13p_Params_1_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_1_();
                 data.Index = i;
                 data.Weapon_raw = reader.ReadChars(4);
@@ -169,7 +169,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Unk_Struct_1 LoadData(BinaryReader reader, ulong i) {
                 var data = new Unk_Struct_1();
                 data.Index = i;
                 data.Unk_1_raw = reader.ReadSingle();
@@ -510,7 +510,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static W13p_Params_2_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_2_();
                 data.Index = i;
                 data.Unk1_raw = reader.ReadSingle();
@@ -660,7 +660,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Guard_Angles_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Guard_Angles_();
                 data.Index = i;
                 data.Guard_Angle_Both_Sides__raw = reader.ReadSingle();
@@ -1419,7 +1419,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static W13p_Params_3_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_3_();
                 data.Index = i;
                 data.Unk33_raw = reader.ReadSingle();
@@ -1813,7 +1813,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Unk_Struct_2 LoadData(BinaryReader reader, ulong i) {
                 var data = new Unk_Struct_2();
                 data.Index = i;
                 data.Unk1_raw = reader.ReadSingle();
@@ -4120,7 +4120,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static W13p_Params_4_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_4_();
                 data.Index = i;
                 data.Unk85_raw = reader.ReadSingle();
@@ -4701,7 +4701,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Unk_Struct_3 LoadData(BinaryReader reader, ulong i) {
                 var data = new Unk_Struct_3();
                 data.Index = i;
                 data.Unk1_raw = reader.ReadSingle();
@@ -4818,7 +4818,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Unk_Struct_4 LoadData(BinaryReader reader, ulong i) {
                 var data = new Unk_Struct_4();
                 data.Index = i;
                 data.Unk1_raw = reader.ReadSingle();
@@ -5567,7 +5567,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static W13p_Params_5_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_5_();
                 data.Index = i;
                 data.Unk242_raw = reader.ReadSingle();
@@ -5763,7 +5763,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Number_of_Shield_Mods_Struct LoadData(BinaryReader reader, ulong i) {
                 var data = new Number_of_Shield_Mods_Struct();
                 data.Index = i;
                 data.Number_of_Shield_Mods_raw = reader.ReadUInt32();
@@ -5837,7 +5837,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Shield_Mods LoadData(BinaryReader reader, ulong i) {
                 var data = new Shield_Mods();
                 data.Index = i;
                 data.Small_raw = reader.ReadByte();
@@ -6006,7 +6006,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static W13p_Params_6_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_6_();
                 data.Index = i;
                 data.Unk277_raw = reader.ReadSingle();
@@ -6120,7 +6120,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Unk_Struct_5 LoadData(BinaryReader reader, ulong i) {
                 var data = new Unk_Struct_5();
                 data.Index = i;
                 data.Unk1_raw = reader.ReadSingle();
@@ -6893,7 +6893,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static W13p_Params_7_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_7_();
                 data.Index = i;
                 data.Unk287_raw = reader.ReadUInt16();
@@ -7192,7 +7192,7 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static HZD_Ammo_Guage_Levels LoadData(BinaryReader reader, ulong i) {
                 var data = new HZD_Ammo_Guage_Levels();
                 data.Index = i;
                 data.Unk1_raw = reader.ReadSingle();

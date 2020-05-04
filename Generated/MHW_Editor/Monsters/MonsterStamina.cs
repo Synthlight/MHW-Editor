@@ -94,7 +94,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Monster_Stamina_1_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Stamina_1_();
                 data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -167,7 +167,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Fatigue_LR_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Fatigue_LR_();
                 data.Index = i;
                 data.Duration_raw = reader.ReadSingle();
@@ -212,7 +212,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Stamina_Count_LR_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Stamina_Count_LR_();
                 data.Index = i;
                 data.Number_of_Stamina_Entries_raw = reader.ReadUInt32();
@@ -272,7 +272,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Stamina_LR_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Stamina_LR_();
                 data.Index = i;
                 data.Unk_raw = reader.ReadUInt32();
@@ -341,7 +341,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Fatigue_HR_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Fatigue_HR_();
                 data.Index = i;
                 data.Duration_raw = reader.ReadSingle();
@@ -386,7 +386,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Stamina_Count_HR_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Stamina_Count_HR_();
                 data.Index = i;
                 data.Number_of_Stamina_Entries_raw = reader.ReadUInt32();
@@ -446,7 +446,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Stamina_HR_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Stamina_HR_();
                 data.Index = i;
                 data.Unk_raw = reader.ReadUInt32();
@@ -515,7 +515,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Fatigue_MR_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Fatigue_MR_();
                 data.Index = i;
                 data.Duration_raw = reader.ReadSingle();
@@ -560,7 +560,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Stamina_Count_MR_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Stamina_Count_MR_();
                 data.Index = i;
                 data.Number_of_Stamina_Entries_raw = reader.ReadUInt32();
@@ -620,7 +620,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Stamina_MR_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Stamina_MR_();
                 data.Index = i;
                 data.Unk_raw = reader.ReadUInt32();
@@ -661,7 +661,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Monster_Stamina_2_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Stamina_2_();
                 data.Index = i;
                 data.Fatigue_Speed_raw = reader.ReadSingle();

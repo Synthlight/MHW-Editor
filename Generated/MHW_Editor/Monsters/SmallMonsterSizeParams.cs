@@ -87,7 +87,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Small_Monster_Size_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new Small_Monster_Size_Params();
                 data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -202,7 +202,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Size_Settings LoadData(BinaryReader reader, ulong i) {
                 var data = new Size_Settings();
                 data.Index = i;
                 data.Header_raw = reader.ReadUInt32();

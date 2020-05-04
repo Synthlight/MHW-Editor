@@ -185,10 +185,10 @@
                           Visibility="Visible"/>
             </StackPanel>
         </DockPanel>
-        <controls:MhwDataGrid x:Name="main_grid"
-                              Grid.Row="1"
-                              Grid.Column="0"
-                              Grid.ColumnSpan="3"/>
+        <controls:MhwDataGridDynamic x:Name="main_grid"
+                                     Grid.Row="1"
+                                     Grid.Column="0"
+                                     Grid.ColumnSpan="3"/>
         <ScrollViewer Name="scroll_viewer"
                       Grid.Row="1"
                       Grid.Column="0"

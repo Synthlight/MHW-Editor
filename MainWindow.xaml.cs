@@ -169,9 +169,9 @@ namespace MHW_Editor {
             }
         }
 
-        public DataGrid AddDataGrid<T>(IEnumerable<T> itemSource) {
-            var dataGrid = new MhwDataGrid();
-            dataGrid.SetItems(this, itemSource is ObservableCollection<dynamic> source ? source : new ObservableCollection<dynamic>((dynamic) itemSource));
+        public DataGrid AddDataGrid<T>(IEnumerable<T> itemSource) where T : class {
+            var dataGrid = new MhwDataGridGeneric<T>();
+            dataGrid.SetItems(this, itemSource is ObservableCollection<T> source ? source : new ObservableCollection<T>(itemSource));
             dataGrids.Add(dataGrid);
             grid.AddControl(dataGrid);
             return dataGrid;
@@ -191,7 +191,7 @@ namespace MHW_Editor {
                 grid.Children.Clear();
                 grid.UpdateLayout();
 
-                foreach (var dg in dataGrids) {
+                foreach (dynamic dg in dataGrids) {
                     dg.SetItems(null, null);
                 }
 

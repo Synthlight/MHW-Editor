@@ -57,7 +57,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Monster_Difficulty LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Difficulty();
                 data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -210,7 +210,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Solo_Stats LoadData(BinaryReader reader, ulong i) {
                 var data = new Solo_Stats();
                 data.Index = i;
                 data.Monster_HP_Multiplier_raw = reader.ReadSingle();
@@ -377,7 +377,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Multi_Stats LoadData(BinaryReader reader, ulong i) {
                 var data = new Multi_Stats();
                 data.Index = i;
                 data.Monster_HP_Multiplier_raw = reader.ReadSingle();
@@ -523,7 +523,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Unknown LoadData(BinaryReader reader, ulong i) {
                 var data = new Unknown();
                 data.Index = i;
                 data.Unk_1_raw = reader.ReadUInt32();

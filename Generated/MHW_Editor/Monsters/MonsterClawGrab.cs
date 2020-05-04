@@ -72,7 +72,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Monster_Claw_Grab LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Claw_Grab();
                 data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -346,7 +346,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Clagger_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new Clagger_Params();
                 data.Index = i;
                 data.Unk_f32__raw = reader.ReadSingle();
@@ -445,7 +445,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Claw_Chance_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new Claw_Chance_Params();
                 data.Index = i;
                 data.Gimmick_Breaker_Collision_Unique_Id_Small_raw = reader.ReadUInt32();

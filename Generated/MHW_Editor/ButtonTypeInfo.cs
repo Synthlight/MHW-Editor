@@ -39,12 +39,12 @@ namespace MHW_Editor {
             "ItemList",
             "ItemLottery",
             "ItemMake",
+            "Items",
             "ItemTg",
             "KulveGradeLottery",
             "KulveItemLottery",
             "LimitBreakMaterialBase",
             "LimitBreakMaterialSkill",
-            "MelderExchange",
             "MelderItem",
             "Melee",
             "Monster_Rage",
@@ -378,9 +378,6 @@ namespace MHW_Editor {
             {typeof(MHW_Editor.Items.KulveItemLottery), new List<string> {
                 "Weapon_Id",
             }},
-            {typeof(MHW_Editor.Items.MelderExchange), new List<string> {
-                "Source_Item_Id",
-            }},
             {typeof(MHW_Editor.Items.MelderItem), new List<string> {
                 "Result_Item_Id",
             }},
@@ -542,6 +539,9 @@ namespace MHW_Editor {
             {typeof(MHW_Editor.Monsters.MonsterStamina.Monster_Stamina_1_), new List<string> {
                 "Monster_Id",
             }},
+            {typeof(MHW_Editor.Items.MelderExchange.Item_Box), new List<string> {
+                "Source_Item_Id",
+            }},
             {typeof(MHW_Editor.Items.QuestReward.QuestRewardInternal), new List<string> {
                 "Item_Id",
             }},
@@ -553,6 +553,9 @@ namespace MHW_Editor {
             }},
             {typeof(MHW_Editor.Items.SupplyData.Ammo_Box), new List<string> {
                 "Ammo_Id",
+            }},
+            {typeof(MHW_Editor.Items.MelderExchange.Item_Box.Items), new List<string> {
+                "Item_Id",
             }},
         };
     }

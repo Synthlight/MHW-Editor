@@ -47,52 +47,7 @@ namespace MHW_Template.Struct_Generation.Multi
             
             #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
 
-    var compiler = new CSharpCodeProvider();
-
-    foreach (var @struct in structData.structs) {
-        var sortIndex = 50;
-        var name = @struct.SafeName();
-
-        WriteLine("");
-        WriteLine("typedef struct {");
-
-        foreach (var entry in @struct.entries) {
-            var propName = entry.SafeName();
-            if (entry.forceUnique) propName += $"_{sortIndex}";
-
-            var typeString = compiler.GetTypeOutput(new CodeTypeReference(entry.type));
-            if (typeString == "byte") typeString = "ubyte";
-            if (typeString == "sbyte") typeString = "byte";
-
-            if (entry.arrayCount > -1) propName += $"[{entry.arrayCount}]<optimize=false>";
-
-            if (entry.condition != null) {
-                var condition = $"{entry.condition} ".Replace("|ref|", "").Replace("_raw", "");
-                WriteLine($"    {condition} {{ {typeString} {propName}; }}");
-            } else {
-                WriteLine($"    {typeString} {propName};");
-            }
-
-            sortIndex += 50;
-        }
-
-        WriteLine($"}} {name};");
-    }
-
-    WriteLine("");
-
-    foreach (var @struct in structData.structs) {
-        var name = @struct.SafeName();
-
-        if (@struct.fixedSizeCount > 1) {
-            WriteLine($"{name} {name}_[{@struct.fixedSizeCount}]<optimize=false>;");
-        } else if (@struct._010Link != null) {
-            var link = @struct._010Link;
-            WriteLine($"{name} {name}_[{link.@struct.SafeName()}_.{link.entry.SafeName()}]<optimize=false>;");
-        } else {
-            WriteLine($"{name} {name}_;");
-        }
-    }
+    MultiStruct010Generation.Generate(this, structData);
 
             
             #line default

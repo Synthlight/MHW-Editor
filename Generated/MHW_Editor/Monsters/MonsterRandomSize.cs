@@ -72,7 +72,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Monster_Random_Sizes LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Random_Sizes();
                 data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
@@ -186,7 +186,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Monsters LoadData(BinaryReader reader, ulong i) {
                 var data = new Monsters();
                 data.Index = i;
                 data.Monster_Id_raw = reader.ReadUInt32();
@@ -235,7 +235,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Crown_Table_Count LoadData(BinaryReader reader, ulong i) {
                 var data = new Crown_Table_Count();
                 data.Index = i;
                 data.Number_of_Crown_Tables_raw = reader.ReadUInt32();
@@ -1345,7 +1345,7 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static MhwStructItem LoadData(BinaryReader reader, ulong i) {
+            public static Crown_Tables LoadData(BinaryReader reader, ulong i) {
                 var data = new Crown_Tables();
                 data.Index = i;
                 data.Name_Jap__raw = reader.ReadNullTermString();

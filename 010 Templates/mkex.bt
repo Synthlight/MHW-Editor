@@ -1,0 +1,25 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.mkex
+//  Category: MHW_Editor.Items
+//------------------------------------------------
+
+typedef struct {
+    uint Magic_1;
+    ushort Magic_2;
+    uint Entry_Count;
+} Melder_Exchange;
+
+typedef struct {
+    ushort Unk;
+} Items;
+
+typedef struct {
+    uint Source_Item_Id;
+    uint Unk_1;
+    Items Items_[215]<optimize=false>;
+} Item_Box;
+
+Melder_Exchange Melder_Exchange_;
+Item_Box Item_Box_[Melder_Exchange_.Entry_Count]<optimize=false>;

@@ -51,7 +51,7 @@ namespace MHW_Template {
 
         public static T GetData<T>(this IEnumerable<byte> bytes, int offset, int size) where T : struct {
             var subsequence = bytes.Subsequence(offset, size);
-            var handle = GCHandle.Alloc(subsequence, GCHandleType.Pinned);
+            var handle      = GCHandle.Alloc(subsequence, GCHandleType.Pinned);
 
             try {
                 var rawDataPtr = handle.AddrOfPinnedObject();
@@ -68,13 +68,13 @@ namespace MHW_Template {
 
         public static string SHA512(this Stream stream) {
             using var sha512 = System.Security.Cryptography.SHA512.Create();
-            var hash = sha512.ComputeHash(stream);
+            var       hash   = sha512.ComputeHash(stream);
             return BitConverter.ToString(hash).Replace("-", "");
         }
 
         public static string SHA512(this byte[] bytes) {
             using var sha512 = System.Security.Cryptography.SHA512.Create();
-            var hash = sha512.ComputeHash(bytes);
+            var       hash   = sha512.ComputeHash(bytes);
             return BitConverter.ToString(hash).Replace("-", "");
         }
 
