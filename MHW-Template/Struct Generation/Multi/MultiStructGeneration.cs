@@ -241,7 +241,7 @@ namespace MHW_Template.Struct_Generation.Multi {
             template.WriteLine("                var list = new ObservableCollection<object>();");
 
             if (@struct.fixedSizeCount > 0) {
-                template.WriteLine("                var count = 1UL;");
+                template.WriteLine($"                var count = {@struct.fixedSizeCount}UL;");
             } else {
                 template.WriteLine($"                var countTarget = ({@struct._010Link.@struct.SafeName()}) lastStruct.Last();");
                 template.WriteLine($"                var count = (ulong) countTarget.{@struct._010Link.entry.SafeName()};");

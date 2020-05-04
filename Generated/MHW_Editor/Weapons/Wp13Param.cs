@@ -162,7 +162,7 @@ namespace MHW_Editor.Weapons {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var count = 1UL;
+                var count = 20UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -653,7 +653,7 @@ namespace MHW_Editor.Weapons {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var count = 1UL;
+                var count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -1806,7 +1806,7 @@ namespace MHW_Editor.Weapons {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var count = 1UL;
+                var count = 8UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -4694,7 +4694,7 @@ namespace MHW_Editor.Weapons {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var count = 1UL;
+                var count = 16UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -4811,7 +4811,7 @@ namespace MHW_Editor.Weapons {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var count = 1UL;
+                var count = 4UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -6113,7 +6113,7 @@ namespace MHW_Editor.Weapons {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var count = 1UL;
+                var count = 50UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -7185,7 +7185,7 @@ namespace MHW_Editor.Weapons {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var count = 1UL;
+                var count = 9UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }

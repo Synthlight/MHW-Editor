@@ -145,7 +145,7 @@ namespace MHW_Editor.Items {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var count = 1UL;
+                var count = 24UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -186,7 +186,7 @@ namespace MHW_Editor.Items {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var count = 1UL;
+                var count = 3UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -246,7 +246,7 @@ namespace MHW_Editor.Items {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var count = 1UL;
+                var count = 16UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -287,7 +287,7 @@ namespace MHW_Editor.Items {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var count = 1UL;
+                var count = 3UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }

@@ -122,7 +122,7 @@ namespace MHW_Editor.Weapons {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var count = 1UL;
+                var count = 25UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
