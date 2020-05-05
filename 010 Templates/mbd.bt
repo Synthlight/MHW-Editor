@@ -1,0 +1,37 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.mbd
+//  Category: MHW_Editor.Misc
+//------------------------------------------------
+
+typedef struct {
+    uint Magic_1;
+    uint Magic_2;
+    uint Entry_Count;
+} Motion_Blend_Data;
+
+typedef struct {
+    string Unk_1;
+    uint Unk_2;
+    uint Unk_3;
+    uint Unk_4;
+    uint Unk_5;
+    float Unk_6;
+    uint Unk_7;
+    int Unk_8;
+    uint Unk_9;
+} Unk_Array;
+
+typedef struct {
+    uint Unk_1;
+    uint lmt_Offset_Index;
+    uint Num_of_Values;
+    uint Unk_2;
+    uint Unk_3;
+    Unk_Array Unk_Array_[Num_of_Values]<optimize=false>;
+    uint Unk_5;
+} Default;
+
+Motion_Blend_Data Motion_Blend_Data_;
+Default Default_[Motion_Blend_Data_.Entry_Count]<optimize=false>;

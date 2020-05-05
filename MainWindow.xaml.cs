@@ -19,6 +19,7 @@ using MHW_Editor.Gems;
 using MHW_Editor.GuildCard;
 using MHW_Editor.Items;
 using MHW_Editor.Items.TimeGate;
+using MHW_Editor.Misc;
 using MHW_Editor.Models;
 using MHW_Editor.Monsters;
 using MHW_Editor.PlData;
@@ -530,6 +531,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".kire")) return typeof(Sharpness);
             if (fileName.EndsWith(".lbm_base")) return typeof(LimitBreakMaterialBase);
             if (fileName.EndsWith(".lbm_skill")) return typeof(LimitBreakMaterialSkill);
+            if (fileName.EndsWith(".mbd")) return typeof(MotionBlendData);
             if (fileName.EndsWith(".mkex")) return typeof(MelderExchange);
             if (fileName.EndsWith(".mkit")) return typeof(MelderItem);
             if (fileName.EndsWith(".msk")) return typeof(MusicSkill);

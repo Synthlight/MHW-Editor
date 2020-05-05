@@ -25,7 +25,6 @@ namespace MHW_Generator_Data {
                 "dtt_eda",
                 "dtt_epg",
                 "dtt_msf",
-                "ransz",
                 "sobj"
             });
             for (var i = 0; i <= 13; i++) {
@@ -227,6 +226,7 @@ namespace MHW_Generator_Data {
                     from fileType in FILE_TYPES_TO_CHECK
                     where path.EndsWith(fileType.Substring(1))
                     where !path.EndsWith("\\object.col") // Exclude due to there being 1600+ of them.
+                    where !path.EndsWith(".mbd") // Names aren't unique.
                     select path)
                    .Distinct()
                    .ToList();

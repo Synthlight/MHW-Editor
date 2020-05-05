@@ -58,9 +58,16 @@ namespace MHW_Template.Struct_Generation.Multi {
 
             if (@struct.fixedSizeCount > 1) {
                 template.WriteLine(indentation, $"{name} {name}_[{@struct.fixedSizeCount}]<optimize=false>;");
-            } else if (@struct._010Link != null) {
-                var link = @struct._010Link;
-                template.WriteLine(indentation, $"{name} {name}_[{link.@struct.SafeName}_.{link.entry.SafeName}]<optimize=false>;");
+            } else if (@struct.Has010Link) {
+                var linkStruct = @struct._010Link.@struct;
+                var linkEntry  = @struct._010Link.entry;
+
+                // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
+                if (linkStruct == null) {
+                    template.WriteLine(indentation, $"{name} {name}_[{linkEntry.SafeName}]<optimize=false>;");
+                } else {
+                    template.WriteLine(indentation, $"{name} {name}_[{linkStruct.SafeName}_.{linkEntry.SafeName}]<optimize=false>;");
+                }
             } else {
                 template.WriteLine(indentation, $"{name} {name}_;");
             }

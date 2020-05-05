@@ -151,6 +151,7 @@
     <Compile Include="Generated\MHW_Editor\Items\SwapN.cs" />
     <Compile Include="Generated\MHW_Editor\Items\Treasure.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ValueTrader.cs" />
+    <Compile Include="Generated\MHW_Editor\Misc\MotionBlendData.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\AnimalSize.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\EnemySort.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\MonsterClawGrab.cs" />
@@ -226,12 +227,14 @@
     <Compile Include="Items\SafiItemLottery.cs" />
     <Compile Include="Items\RoomFurniture.cs" />
     <Compile Include="Items\ShopList.cs" />
+    <Compile Include="Misc\MotionBlendData.cs" />
     <Compile Include="Models\CustomSaveLoad.cs" />
     <Compile Include="Models\ICustomSaveLoad.cs" />
     <Compile Include="Models\IHasEquipmentType.cs" />
     <Compile Include="Models\IHasWeaponType.cs" />
     <Compile Include="Models\IHasArmorType.cs" />
     <Compile Include="Models\IMhwMultiStructItem.cs" />
+    <Compile Include="Models\ObservableMhwStructCollection.cs" />
     <Compile Include="Models\MhwStructDataContainer.cs" />
     <Compile Include="Models\IMhwStructItem.cs" />
     <Compile Include="Models\IOnPropertyChanged.cs" />

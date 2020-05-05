@@ -62,7 +62,7 @@ namespace ");
             
             #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
 
-    MultiStructGeneration.Generate(this, structData);
+    MultiStructItemGeneration.Generate(this, structData);
 
             
             #line default

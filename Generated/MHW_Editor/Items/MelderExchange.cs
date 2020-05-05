@@ -151,7 +151,7 @@ namespace MHW_Editor.Items {
                     }
                 }
 
-                public static ObservableCollection<Items> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                public static ObservableCollection<Items> LoadData(BinaryReader reader, Item_Box parent) {
                     var list = new ObservableCollection<Items>();
                     var count = 215UL;
                     for (ulong i = 0; i < count; i++) {
@@ -193,14 +193,14 @@ namespace MHW_Editor.Items {
                 data.Index = i;
                 data.Source_Item_Id_raw = reader.ReadUInt32();
                 data.Unk_1_raw = reader.ReadUInt32();
-                data.Items_raw = Items.LoadData(reader, null);
+                data.Items_raw = Items.LoadData(reader, data);
                 return data;
             }
 
             public override void WriteData(BinaryWriter writer) {
                 writer.Write(Source_Item_Id_raw);
                 writer.Write(Unk_1_raw);
-                 foreach (var obj in Items_raw) {
+                foreach (var obj in Items_raw) {
                     obj.WriteData(writer);
                 }
             }

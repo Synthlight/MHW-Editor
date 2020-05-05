@@ -285,10 +285,11 @@ namespace MHW_Editor.Controls {
                 var list             = propertyInfo.GetGetMethod().Invoke(obj, null);
                 var listType         = propertyInfo.PropertyType.GenericTypeArguments[0];
                 var viewType         = typeof(SubStructViewDynamic<>).MakeGenericType(listType);
-                var subStructView    = (dynamic) Activator.CreateInstance(viewType, mainWindow, displayName, list);
+                var isReadOnly       = (bool) (listType.GetField(nameof(MhwStructDataContainer.IsAddingAllowed), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
+                var subStructView    = (SubStructView) Activator.CreateInstance(viewType, mainWindow, displayName, list, isReadOnly);
 
                 ColorCell(frameworkElement);
-                subStructView.Show();
+                subStructView.ShowDialog();
             } catch (Exception err) when (!Debugger.IsAttached) {
                 MainWindow.ShowError(err, "Error Occured");
             }

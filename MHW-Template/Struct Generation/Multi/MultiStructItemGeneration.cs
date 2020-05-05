@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using Microsoft.CSharp;
 
 namespace MHW_Template.Struct_Generation.Multi {
-    public static class MultiStructGeneration {
+    public static class MultiStructItemGeneration {
         private static readonly CSharpCodeProvider COMPILER = new CSharpCodeProvider();
 
         public static void Generate(MultiStructItemTemplateBase template, MhwMultiStructData structData) {
@@ -15,7 +15,7 @@ namespace MHW_Template.Struct_Generation.Multi {
             MasterLoadData(template, structData);
         }
 
-        private static void GenerateInnerClass(MultiStructItemTemplateBase template, MhwMultiStructData.StructData @struct, uint indentation = 0) {
+        private static void GenerateInnerClass(MultiStructItemTemplateBase template, MhwMultiStructData.StructData @struct, MhwMultiStructData.StructData parent = null, uint indentation = 0) {
             var sortIndex = 50;
             var name      = @struct.SafeName;
 
@@ -43,7 +43,7 @@ namespace MHW_Template.Struct_Generation.Multi {
                 var entryName = $"{propName}_raw";
 
                 if (entry.HasSubStruct) {
-                    GenerateInnerClass(template, entry.subStruct, indentation + 1);
+                    GenerateInnerClass(template, entry.subStruct, @struct, indentation + 1);
 
                     MakeSubProperty(template, indentation, entry, entryName, propName, sortIndex);
                 } else {
@@ -61,18 +61,15 @@ namespace MHW_Template.Struct_Generation.Multi {
                 sortIndex += 50;
             }
 
-            //template.WriteLine("");
-            //template.WriteLine("            public override void WriteData(BinaryWriter writer) {");
-
-            InnerLoadData(template, indentation, @struct, sortIndex);
-            InnerWriteData(template, indentation, @struct, sortIndex);
+            InnerLoadData(template, indentation, @struct, parent);
+            InnerWriteData(template, indentation, @struct);
 
             // GetCustomView (if needed).
             if (@struct.showVertically) {
-                GetCustomView(template, indentation, @struct, sortIndex);
+                GetCustomView(template, indentation, @struct);
             }
 
-            template.WriteLine(indentation, "        }"); // Inner Class
+            template.WriteLine(indentation, "        }");
         }
 
         private static void MakeMainProperty(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.Entry entry, string entryName, string propName, int sortIndex) {
@@ -198,7 +195,7 @@ namespace MHW_Template.Struct_Generation.Multi {
             template.WriteLine(indentation, "            }");
         }
 
-        private static void GetCustomView(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.StructData @struct, int sortIndex) {
+        private static void GetCustomView(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.StructData @struct) {
             template.WriteLine("");
             template.WriteLine(indentation, "            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {");
             template.WriteLine(indentation, "                return new ObservableCollection<MultiStructItemCustomView> {");
@@ -213,10 +210,25 @@ namespace MHW_Template.Struct_Generation.Multi {
             template.WriteLine(indentation, "            }");
         }
 
-        private static void InnerWriteData(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.StructData @struct, int sortIndex) {
+        private static void InnerWriteData(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.StructData @struct) {
             // Individual WriteData.
             template.WriteLine("");
             template.WriteLine(indentation, "            public override void WriteData(BinaryWriter writer) {");
+
+            // Do first since we need to update counts before writing them.
+            foreach (var entry in @struct.entries) {
+                var propName  = entry.SafeName;
+                var entryName = $"{propName}_raw";
+
+                if (entry.HasSubStruct) {
+                    if (entry.subStruct._010Link != null) {
+                        var linkEntry  = entry.subStruct._010Link.entry;
+                        var typeString = COMPILER.GetTypeOutput(new CodeTypeReference(linkEntry.type));
+
+                        template.WriteLine(indentation, $"                {linkEntry.SafeName} = ({typeString}) {entryName}.Count;");
+                    }
+                }
+            }
 
             foreach (var entry in @struct.entries) {
                 var propName  = entry.SafeName;
@@ -230,7 +242,7 @@ namespace MHW_Template.Struct_Generation.Multi {
                 if (entry.type == typeof(string)) {
                     template.WriteLine(indentation, $"                {condition}writer.Write({entryName}.ToNullTermCharArray());");
                 } else if (entry.HasSubStruct) {
-                    template.WriteLine(indentation, $"                {condition} foreach (var obj in {entryName}) {{");
+                    template.WriteLine(indentation, $"                {condition}foreach (var obj in {entryName}) {{");
                     template.WriteLine(indentation, "                    obj.WriteData(writer);");
                     template.WriteLine(indentation, "                }");
                 } else {
@@ -241,7 +253,7 @@ namespace MHW_Template.Struct_Generation.Multi {
             template.WriteLine(indentation, "            }");
         }
 
-        private static void InnerLoadData(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.StructData @struct, int sortIndex) {
+        private static void InnerLoadData(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.StructData @struct, MhwMultiStructData.StructData parent = null) {
             var name       = @struct.SafeName;
             var returnType = "object";
 
@@ -251,14 +263,28 @@ namespace MHW_Template.Struct_Generation.Multi {
 
             // Individual LoadData (loop).
             template.WriteLine("");
-            template.WriteLine(indentation, $"            public static ObservableCollection<{returnType}> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {{");
+
+            // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
+            if (parent != null) {
+                template.WriteLine(indentation, $"            public static ObservableCollection<{returnType}> LoadData(BinaryReader reader, {parent.SafeName} parent) {{");
+            } else {
+                template.WriteLine(indentation, $"            public static ObservableCollection<{returnType}> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {{");
+            }
+
             template.WriteLine(indentation, $"                var list = new ObservableCollection<{returnType}>();");
 
-            if (@struct.fixedSizeCount > 0) {
-                template.WriteLine(indentation, $"                var count = {@struct.fixedSizeCount}UL;");
+            if (@struct.Has010Link) {
+                var linkStruct = @struct._010Link.@struct;
+                var linkEntry  = @struct._010Link.entry;
+
+                if (linkStruct == null) {
+                    template.WriteLine(indentation, $"                var count = (ulong) parent.{linkEntry.SafeName};");
+                } else {
+                    template.WriteLine(indentation, $"                var countTarget = ({linkStruct.SafeName}) lastStruct.Last();");
+                    template.WriteLine(indentation, $"                var count = (ulong) countTarget.{linkEntry.SafeName};");
+                }
             } else {
-                template.WriteLine(indentation, $"                var countTarget = ({@struct._010Link.@struct.SafeName}) lastStruct.Last();");
-                template.WriteLine(indentation, $"                var count = (ulong) countTarget.{@struct._010Link.entry.SafeName};");
+                template.WriteLine(indentation, $"                var count = {@struct.fixedSizeCount}UL;");
             }
 
             template.WriteLine(indentation, "                for (ulong i = 0; i < count; i++) {");
@@ -287,7 +313,7 @@ namespace MHW_Template.Struct_Generation.Multi {
                 } else if (entry.isNullTerminatedString) {
                     template.WriteLine(indentation, $"                {condition}data.{entryName} = reader.ReadNullTermString();");
                 } else if (entry.HasSubStruct) {
-                    template.WriteLine(indentation, $"                {condition}data.{entryName} = {entry.subStruct.SafeName}.LoadData(reader, null);");
+                    template.WriteLine(indentation, $"                {condition}data.{entryName} = {entry.subStruct.SafeName}.LoadData(reader, data);");
                 } else {
                     template.WriteLine(indentation, $"                {condition}data.{entryName} = reader.Read{GetReadType(entry.type)}();");
                 }
@@ -308,13 +334,13 @@ namespace MHW_Template.Struct_Generation.Multi {
                 var name       = @struct.SafeName;
                 var targetList = "null";
 
-                if (@struct.fixedSizeCount == 0) {
+                if (@struct.Has010Link) {
                     targetList = $"{@struct._010Link.@struct.SafeName}_.list";
                 }
 
                 template.WriteLine($"            var {name}_ = new MhwStructDataContainer({name}.LoadData(reader, {targetList}), typeof({name}));");
 
-                if (@struct.fixedSizeCount == 0) {
+                if (@struct.Has010Link) {
                     template.WriteLine($"            {name}_.SetCountTargetToUpdate({@struct._010Link.@struct.SafeName}_, -1, \"{@struct._010Link.entry.SafeName}\");");
                 }
 

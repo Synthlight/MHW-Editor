@@ -78,6 +78,7 @@ namespace MHW_Template {
             "*.kire",
             "*.lbm_base",
             "*.lbm_skill",
+            "*.mbd",
             "*.mkex",
             "*.mkit",
             "*.msk",

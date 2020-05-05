@@ -78,6 +78,7 @@
     <Compile Include="Items\SwapN.cs" />
     <Compile Include="Items\Treasure.cs" />
     <Compile Include="Items\ValueTrader.cs" />
+    <Compile Include="Misc\MotionBlendData.cs" />
     <Compile Include="Models\IMultiStruct.cs" />
     <Compile Include="Models\IVerticalStruct.cs" />
     <Compile Include="Models\ISingleStruct.cs" />
@@ -145,8 +146,6 @@
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Misc\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

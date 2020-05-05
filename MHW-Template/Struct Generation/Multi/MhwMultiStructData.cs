@@ -40,7 +40,8 @@ namespace MHW_Template.Struct_Generation.Multi {
                 this._010Link       = _010Link;
             }
 
-            public string SafeName => Regex.Replace(name, @"[^\w\d]+", "_");
+            public string SafeName   => Regex.Replace(name, @"[^\w\d]+", "_");
+            public bool   Has010Link => _010Link != null;
         }
 
         public class Entry {
