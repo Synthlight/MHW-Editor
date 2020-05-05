@@ -13,31 +13,31 @@ namespace MHW_Editor.Monsters {
         public const string EncryptionKey = null;
         public override string UniqueId => $"{Index}";
 
-        public const string Unk1_displayName = "Unk1";
-        public const int Unk1_sortIndex = 50;
-        [SortOrder(Unk1_sortIndex)]
-        [DisplayName(Unk1_displayName)]
-        public virtual uint Unk1 {
+        public const string Endemic_Id_displayName = "Endemic Id";
+        public const int Endemic_Id_sortIndex = 50;
+        [SortOrder(Endemic_Id_sortIndex)]
+        [DisplayName(Endemic_Id_displayName)]
+        public virtual uint Endemic_Id {
             get => GetData<uint>(0);
             set {
                 if (GetData<uint>(0) == value) return;
-                SetData(0, value, nameof(Unk1));
+                SetData(0, value, nameof(Endemic_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk1));
+                OnPropertyChanged(nameof(Endemic_Id));
             }
         }
 
-        public const string Unk2_displayName = "Unk2";
-        public const int Unk2_sortIndex = 100;
-        [SortOrder(Unk2_sortIndex)]
-        [DisplayName(Unk2_displayName)]
-        public virtual uint Unk2 {
+        public const string Endemic_Sub_Species_Id_displayName = "Endemic Sub Species Id";
+        public const int Endemic_Sub_Species_Id_sortIndex = 100;
+        [SortOrder(Endemic_Sub_Species_Id_sortIndex)]
+        [DisplayName(Endemic_Sub_Species_Id_displayName)]
+        public virtual uint Endemic_Sub_Species_Id {
             get => GetData<uint>(4);
             set {
                 if (GetData<uint>(4) == value) return;
-                SetData(4, value, nameof(Unk2));
+                SetData(4, value, nameof(Endemic_Sub_Species_Id));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk2));
+                OnPropertyChanged(nameof(Endemic_Sub_Species_Id));
             }
         }
 
@@ -97,59 +97,59 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public const string Unk7_displayName = "Unk7";
-        public const int Unk7_sortIndex = 350;
-        [SortOrder(Unk7_sortIndex)]
-        [DisplayName(Unk7_displayName)]
-        public virtual float Unk7 {
+        public const string Animal_Base_Size_displayName = "Animal Base Size";
+        public const int Animal_Base_Size_sortIndex = 350;
+        [SortOrder(Animal_Base_Size_sortIndex)]
+        [DisplayName(Animal_Base_Size_displayName)]
+        public virtual float Animal_Base_Size {
             get => GetData<float>(24);
             set {
                 if (GetData<float>(24) == value) return;
-                SetData(24, value, nameof(Unk7));
+                SetData(24, value, nameof(Animal_Base_Size));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk7));
+                OnPropertyChanged(nameof(Animal_Base_Size));
             }
         }
 
-        public const string Unk8_displayName = "Unk8";
-        public const int Unk8_sortIndex = 400;
-        [SortOrder(Unk8_sortIndex)]
-        [DisplayName(Unk8_displayName)]
-        public virtual float Unk8 {
+        public const string Model_Size_Multi_displayName = "Model Size Multi";
+        public const int Model_Size_Multi_sortIndex = 400;
+        [SortOrder(Model_Size_Multi_sortIndex)]
+        [DisplayName(Model_Size_Multi_displayName)]
+        public virtual float Model_Size_Multi {
             get => GetData<float>(28);
             set {
                 if (GetData<float>(28) == value) return;
-                SetData(28, value, nameof(Unk8));
+                SetData(28, value, nameof(Model_Size_Multi));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk8));
+                OnPropertyChanged(nameof(Model_Size_Multi));
             }
         }
 
-        public const string Unk9_displayName = "Unk9";
-        public const int Unk9_sortIndex = 450;
-        [SortOrder(Unk9_sortIndex)]
-        [DisplayName(Unk9_displayName)]
-        public virtual float Unk9 {
+        public const string Minimum_Size_Limit_displayName = "Minimum Size Limit";
+        public const int Minimum_Size_Limit_sortIndex = 450;
+        [SortOrder(Minimum_Size_Limit_sortIndex)]
+        [DisplayName(Minimum_Size_Limit_displayName)]
+        public virtual float Minimum_Size_Limit {
             get => GetData<float>(32);
             set {
                 if (GetData<float>(32) == value) return;
-                SetData(32, value, nameof(Unk9));
+                SetData(32, value, nameof(Minimum_Size_Limit));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk9));
+                OnPropertyChanged(nameof(Minimum_Size_Limit));
             }
         }
 
-        public const string Unk10_displayName = "Unk10";
-        public const int Unk10_sortIndex = 500;
-        [SortOrder(Unk10_sortIndex)]
-        [DisplayName(Unk10_displayName)]
-        public virtual float Unk10 {
+        public const string Maximum_Size_Limit_displayName = "Maximum Size Limit";
+        public const int Maximum_Size_Limit_sortIndex = 500;
+        [SortOrder(Maximum_Size_Limit_sortIndex)]
+        [DisplayName(Maximum_Size_Limit_displayName)]
+        public virtual float Maximum_Size_Limit {
             get => GetData<float>(36);
             set {
                 if (GetData<float>(36) == value) return;
-                SetData(36, value, nameof(Unk10));
+                SetData(36, value, nameof(Maximum_Size_Limit));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk10));
+                OnPropertyChanged(nameof(Maximum_Size_Limit));
             }
         }
 
@@ -237,31 +237,31 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public const string Unk17_displayName = "Unk17";
-        public const int Unk17_sortIndex = 850;
-        [SortOrder(Unk17_sortIndex)]
-        [DisplayName(Unk17_displayName)]
-        public virtual float Unk17 {
+        public const string Small_Gold_Crown_Limit_displayName = "Small Gold Crown Limit";
+        public const int Small_Gold_Crown_Limit_sortIndex = 850;
+        [SortOrder(Small_Gold_Crown_Limit_sortIndex)]
+        [DisplayName(Small_Gold_Crown_Limit_displayName)]
+        public virtual float Small_Gold_Crown_Limit {
             get => GetData<float>(64);
             set {
                 if (GetData<float>(64) == value) return;
-                SetData(64, value, nameof(Unk17));
+                SetData(64, value, nameof(Small_Gold_Crown_Limit));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk17));
+                OnPropertyChanged(nameof(Small_Gold_Crown_Limit));
             }
         }
 
-        public const string Unk18_displayName = "Unk18";
-        public const int Unk18_sortIndex = 900;
-        [SortOrder(Unk18_sortIndex)]
-        [DisplayName(Unk18_displayName)]
-        public virtual float Unk18 {
+        public const string Big_Gold_Crown_Limit_displayName = "Big Gold Crown Limit";
+        public const int Big_Gold_Crown_Limit_sortIndex = 900;
+        [SortOrder(Big_Gold_Crown_Limit_sortIndex)]
+        [DisplayName(Big_Gold_Crown_Limit_displayName)]
+        public virtual float Big_Gold_Crown_Limit {
             get => GetData<float>(68);
             set {
                 if (GetData<float>(68) == value) return;
-                SetData(68, value, nameof(Unk18));
+                SetData(68, value, nameof(Big_Gold_Crown_Limit));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk18));
+                OnPropertyChanged(nameof(Big_Gold_Crown_Limit));
             }
         }
 

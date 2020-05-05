@@ -11,24 +11,24 @@ namespace MHW_Generator.Monsters {
                 entryCountOffset = 6,
                 uniqueIdFormula = "{Index}",
                 entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Unk1", 0, typeof(uint)),
-                    new MhwStructData.Entry("Unk2", 4, typeof(uint)),
+                    new MhwStructData.Entry("Endemic Id", 0, typeof(uint)),
+                    new MhwStructData.Entry("Endemic Sub Species Id", 4, typeof(uint)),
                     new MhwStructData.Entry("Unk3", 8, typeof(float)),
                     new MhwStructData.Entry("Unk4", 12, typeof(float)),
                     new MhwStructData.Entry("Unk5", 16, typeof(float)),
                     new MhwStructData.Entry("Unk6", 20, typeof(float)),
-                    new MhwStructData.Entry("Unk7", 24, typeof(float)),
-                    new MhwStructData.Entry("Unk8", 28, typeof(float)),
-                    new MhwStructData.Entry("Unk9", 32, typeof(float)),
-                    new MhwStructData.Entry("Unk10", 36, typeof(float)),
+                    new MhwStructData.Entry("Animal Base Size", 24, typeof(float)),
+                    new MhwStructData.Entry("Model Size Multi", 28, typeof(float)),
+                    new MhwStructData.Entry("Minimum Size Limit", 32, typeof(float)),
+                    new MhwStructData.Entry("Maximum Size Limit", 36, typeof(float)),
                     new MhwStructData.Entry("Unk11", 40, typeof(uint)),
                     new MhwStructData.Entry("Unk12", 44, typeof(float)),
                     new MhwStructData.Entry("Unk13", 48, typeof(float)),
                     new MhwStructData.Entry("Unk14", 52, typeof(float)),
                     new MhwStructData.Entry("Unk15", 56, typeof(float)),
                     new MhwStructData.Entry("Unk16", 60, typeof(uint)),
-                    new MhwStructData.Entry("Unk17", 64, typeof(float)),
-                    new MhwStructData.Entry("Unk18", 68, typeof(float))
+                    new MhwStructData.Entry("Small Gold Crown Limit", 64, typeof(float)),
+                    new MhwStructData.Entry("Big Gold Crown Limit", 68, typeof(float))
                 }
             });
         }
