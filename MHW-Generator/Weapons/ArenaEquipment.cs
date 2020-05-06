@@ -10,9 +10,9 @@ namespace MHW_Generator.Weapons {
         public MultiStruct Generate() { // .aeq
             var structs = new List<MhwMultiStructData.StructData> {
                 new MhwMultiStructData.StructData("Aeq", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Magic 1", typeof(uint)),
-                    new MhwMultiStructData.Entry("Magic 2", typeof(ushort)),
-                    new MhwMultiStructData.Entry("Entry Count", typeof(uint)).Out(out var entryCount)
+                    new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Magic 2", typeof(ushort), true),
+                    new MhwMultiStructData.Entry("Entry Count", typeof(uint), true).Out(out var entryCount)
                 }, 1).Out(out var header),
 
                 new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {

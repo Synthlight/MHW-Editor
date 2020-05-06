@@ -23,6 +23,7 @@ namespace MHW_Editor.Weapons {
             public const int Magic_1_sortIndex = 50;
             [SortOrder(Magic_1_sortIndex)]
             [DisplayName(Magic_1_displayName)]
+            [IsReadOnly]
             public virtual uint Magic_1 {
                 get => Magic_1_raw;
                 set {
@@ -37,6 +38,7 @@ namespace MHW_Editor.Weapons {
             public const int Magic_2_sortIndex = 100;
             [SortOrder(Magic_2_sortIndex)]
             [DisplayName(Magic_2_displayName)]
+            [IsReadOnly]
             public virtual ushort Magic_2 {
                 get => Magic_2_raw;
                 set {
@@ -51,6 +53,7 @@ namespace MHW_Editor.Weapons {
             public const int Entry_Count_sortIndex = 150;
             [SortOrder(Entry_Count_sortIndex)]
             [DisplayName(Entry_Count_displayName)]
+            [IsReadOnly]
             public virtual uint Entry_Count {
                 get => Entry_Count_raw;
                 set {
