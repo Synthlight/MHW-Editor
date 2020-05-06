@@ -10,6 +10,8 @@ namespace MHW_Template {
                 DataSourceType.SkillDat => "MainWindow.skillDatLookup[MainWindow.locale]",
                 DataSourceType.ArmorById => "DataHelper.armorIdNameLookup[GetArmorType()][MainWindow.locale]",
                 DataSourceType.ArmorByIndex => "DataHelper.armorIndexNameLookup[GetArmorType()][MainWindow.locale]",
+                DataSourceType.ArmorByIndexNeg => "DataHelper.armorIndexNegNameLookup[GetArmorType()][MainWindow.locale]",
+                DataSourceType.ArmorByFileIndexNeg => "DataHelper.armorFileIndexNegNameLookup[MainWindow.locale]",
                 DataSourceType.WeaponsById => "DataHelper.weaponIdNameLookup[GetWeaponType()][MainWindow.locale]",
                 DataSourceType.WeaponsByIndex => "DataHelper.weaponIndexNameLookup[GetWeaponType()][MainWindow.locale]",
                 DataSourceType.EquipmentById => "DataHelper.equipmentIdNameLookup[GetEquipmentType()][MainWindow.locale]",

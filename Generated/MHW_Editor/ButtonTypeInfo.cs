@@ -4,8 +4,10 @@ using System.Collections.Generic;
 namespace MHW_Editor {
     public static class ButtonTypeInfo {
         public static readonly List<string> TYPES_WITH_BUTTONS = new List<string> {
+            "Ammo",
             "Ammo_Box",
             "Armor",
+            "Armors",
             "ASkill",
             "AwakenedLimitBreak",
             "Bounty",
@@ -15,6 +17,7 @@ namespace MHW_Editor {
             "CustomPartsR",
             "DecoGradeLottery",
             "DecoLottery",
+            "Decorations",
             "Entries",
             "EqCrt_Armor",
             "EqCrt_Base",
@@ -72,6 +75,7 @@ namespace MHW_Editor {
 
         public static readonly List<string> BUTTON_NAMES = new List<string> {
             "Ammo_Id_button",
+            "Armor_Id_button",
             "Armor_Rec_Amnt_button",
             "Armor_Rel_Spd_button",
             "armorId_button",
@@ -81,6 +85,9 @@ namespace MHW_Editor {
             "Cluster_2_Rel_Spd_button",
             "Cluster_3_Rec_Amnt_button",
             "Cluster_3_Rel_Spd_button",
+            "Deco_1_button",
+            "Deco_2_button",
+            "Deco_3_button",
             "Decoration_Reward_button",
             "Demon_Rec_Amnt_button",
             "Demon_Rel_Spd_button",
@@ -527,6 +534,9 @@ namespace MHW_Editor {
             {typeof(MHW_Editor.Armors.ASkill), new List<string> {
                 "Mantle_Item_Id",
             }},
+            {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries), new List<string> {
+                "Weapon_Id",
+            }},
             {typeof(MHW_Editor.Monsters.MonsterEnrage.Monster_Rage), new List<string> {
                 "Monster_Id",
             }},
@@ -552,6 +562,20 @@ namespace MHW_Editor {
                 "Item_Id",
             }},
             {typeof(MHW_Editor.Items.SupplyData.Ammo_Box), new List<string> {
+                "Ammo_Id",
+            }},
+            {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries.Armors), new List<string> {
+                "Armor_Id",
+            }},
+            {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries.Decorations), new List<string> {
+                "Deco_1",
+                "Deco_2",
+                "Deco_3",
+            }},
+            {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries.Items), new List<string> {
+                "Item_Id",
+            }},
+            {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries.Ammo), new List<string> {
                 "Ammo_Id",
             }},
             {typeof(MHW_Editor.Items.MelderExchange.Item_Box.Items), new List<string> {

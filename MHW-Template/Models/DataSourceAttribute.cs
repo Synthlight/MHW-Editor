@@ -15,6 +15,8 @@ namespace MHW_Template.Models {
         SkillDat,
         ArmorById,
         ArmorByIndex,
+        ArmorByIndexNeg,
+        ArmorByFileIndexNeg,
         WeaponsById,
         WeaponsByIndex,
         EquipmentById,

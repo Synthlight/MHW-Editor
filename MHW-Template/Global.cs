@@ -37,6 +37,7 @@ namespace MHW_Template {
             "whistle"
         };
         public static readonly string[] FILE_TYPES = {
+            "*.aeq",
             "*.am_dat",
             "*.arm_up",
             "*.ask",

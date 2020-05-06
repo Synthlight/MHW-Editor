@@ -19,17 +19,32 @@ namespace MHW_Generator_Data {
 
             for (var i = 0; i < count; i++) {
                 var position = dat.BaseStream.Position;
-                var buff = dat.ReadBytes((int) Armor.StructSize);
+                var buff     = dat.ReadBytes((int) Armor.StructSize);
 
                 yield return new Armor(buff, (ulong) position);
             }
+        }
+
+        public static LangMap GetArmorByFileIndex() {
+            var map = new LangMap();
+            foreach (var lang in Global.LANGUAGES) {
+                map[lang] = new Dictionary<uint, string>();
+            }
+
+            foreach (var armor in GetArmor()) {
+                foreach (var lang in Global.LANGUAGES) {
+                    map[lang][armor.Index] = DataHelper.armorData[lang][armor.GMD_Name_Index];
+                }
+            }
+
+            return map;
         }
 
         public static Dictionary<ArmorType, LangMap> GetAllArmors(IndexOrId by) {
             var values = new Dictionary<ArmorType, LangMap>();
 
             foreach (var armor in GetArmor()) {
-                var armorType = armor.Equip_Slot;
+                var armorType                                         = armor.Equip_Slot;
                 if (!values.ContainsKey(armorType)) values[armorType] = new LangMap();
 
                 foreach (var lang in Global.LANGUAGES) {

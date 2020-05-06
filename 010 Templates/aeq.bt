@@ -1,0 +1,65 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.aeq
+//  Category: MHW_Editor.Weapons
+//------------------------------------------------
+
+typedef struct {
+    uint Magic_1;
+    ushort Magic_2;
+    uint Entry_Count;
+} Aeq;
+
+typedef struct {
+    int Mod;
+} Custom_Mods;
+
+typedef struct {
+    int Armor_Id;
+} Armors;
+
+typedef struct {
+    uint Armor_Lvl;
+} Armor_Level;
+
+typedef struct {
+    uint Deco_1;
+    uint Deco_2;
+    uint Deco_3;
+} Decorations;
+
+typedef struct {
+    uint Item_Id;
+    uint Item_Cnt;
+} Items;
+
+typedef struct {
+    uint Ammo_Id;
+    uint Ammo_Cnt;
+} Ammo;
+
+typedef struct {
+    uint Id;
+    uint Weapon_Type;
+    uint Weapon_Id;
+    Custom_Mods Custom_Mods_[5]<optimize=false>;
+    Armors Armors_[6]<optimize=false>;
+    int Unk_1;
+    int Unk_2;
+    Armor_Level Armor_Level_[5]<optimize=false>;
+    ushort Unk_3;
+    Decorations Decorations_[9]<optimize=false>;
+    uint Kinsect_Id;
+    uint Kinsect_Lvl;
+    uint Unk_4;
+    uint Unk_5;
+    uint Unk_6;
+    uint Unk_7;
+    uint Unk_8;
+    Items Items_[24]<optimize=false>;
+    Ammo Ammo_[16]<optimize=false>;
+} Entries;
+
+Aeq Aeq_;
+Entries Entries_[Aeq_.Entry_Count]<optimize=false>;

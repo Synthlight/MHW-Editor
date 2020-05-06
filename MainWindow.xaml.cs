@@ -62,7 +62,7 @@ namespace MHW_Editor {
             set {
                 locale = value;
                 foreach (var dataGrid in dataGrids) {
-                    foreach (MhwItem item in dataGrid.Items) {
+                    foreach (IOnPropertyChanged item in dataGrid.Items) {
                         item.OnPropertyChanged(nameof(IMhwItem.Name),
                                                nameof(SkillDat.Description),
                                                nameof(SkillDat.Name_And_Id),
@@ -80,7 +80,7 @@ namespace MHW_Editor {
             set {
                 showIdBeforeName = value;
                 foreach (var dataGrid in dataGrids) {
-                    foreach (MhwItem item in dataGrid.Items) {
+                    foreach (IOnPropertyChanged item in dataGrid.Items) {
                         item.OnPropertyChanged(nameof(SkillDat.Name_And_Id),
                                                nameof(MusicSkill.Song_And_Id));
 
@@ -469,6 +469,7 @@ namespace MHW_Editor {
             var fileName = Path.GetFileName(targetFile).ToLower();
             Debug.Assert(fileName != null, nameof(fileName) + " != null");
 
+            if (fileName.EndsWith(".aeq")) return typeof(ArenaEquipment);
             if (fileName.EndsWith(".am_dat")) return typeof(Armor);
             if (fileName.EndsWith(".arm_up")) return typeof(ArmUp);
             if (fileName.EndsWith(".ask")) return typeof(ASkill);

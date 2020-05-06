@@ -321,6 +321,8 @@ namespace MHW_Editor.Controls {
                 DataSourceType.SkillDat => MainWindow.skillDatLookup[MainWindow.locale],
                 DataSourceType.ArmorById => DataHelper.armorIdNameLookup[GetArmorType(cell)][MainWindow.locale],
                 DataSourceType.ArmorByIndex => DataHelper.armorIndexNameLookup[GetArmorType(cell)][MainWindow.locale],
+                DataSourceType.ArmorByIndexNeg => DataHelper.armorIndexNegNameLookup[GetArmorType(cell)][MainWindow.locale],
+                DataSourceType.ArmorByFileIndexNeg => DataHelper.armorFileIndexNegNameLookup[MainWindow.locale],
                 DataSourceType.WeaponsById => DataHelper.weaponIdNameLookup[GetWeaponType(cell)][MainWindow.locale],
                 DataSourceType.WeaponsByIndex => DataHelper.weaponIndexNameLookup[GetWeaponType(cell)][MainWindow.locale],
                 DataSourceType.EquipmentById => DataHelper.equipmentIdNameLookup[GetEquipmentType(cell)][MainWindow.locale],
