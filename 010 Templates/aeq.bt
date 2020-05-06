@@ -20,6 +20,10 @@ typedef struct {
 } Armors;
 
 typedef struct {
+    int Mantle_Id;
+} Mantles;
+
+typedef struct {
     uint Armor_Lvl;
 } Armor_Level;
 
@@ -45,8 +49,7 @@ typedef struct {
     uint Weapon_Id;
     Custom_Mods Custom_Mods_[5]<optimize=false>;
     Armors Armors_[6]<optimize=false>;
-    int Unk_1;
-    int Unk_2;
+    Mantles Mantles_[2]<optimize=false>;
     Armor_Level Armor_Level_[5]<optimize=false>;
     ushort Unk_3;
     Decorations Decorations_[9]<optimize=false>;

@@ -241,33 +241,57 @@ namespace MHW_Editor.Weapons {
             [DisplayName(Armors_displayName)]
             public virtual ObservableCollection<Armors> Armors_raw { get; protected set; }
 
-            protected int Unk_1_raw;
-            public const string Unk_1_displayName = "Unk 1";
-            public const int Unk_1_sortIndex = 300;
-            [SortOrder(Unk_1_sortIndex)]
-            [DisplayName(Unk_1_displayName)]
-            public virtual int Unk_1 {
-                get => Unk_1_raw;
-                set {
-                    if (Unk_1_raw == value) return;
-                    Unk_1_raw = value;
-                    OnPropertyChanged(nameof(Unk_1));
+            public partial class Mantles : MhwStructItem {
+                public const ulong FixedSizeCount = 2;
+                public const string GridName = "Mantles";
+
+                protected int Mantle_Id_raw;
+                public const string Mantle_Id_displayName = "Mantle Id";
+                public const int Mantle_Id_sortIndex = 50;
+                [SortOrder(Mantle_Id_sortIndex)]
+                [DisplayName(Mantle_Id_displayName)]
+                [DataSource(DataSourceType.MantleByIdNeg)]
+                public virtual int Mantle_Id {
+                    get => Mantle_Id_raw;
+                    set {
+                        if (Mantle_Id_raw == value) return;
+                        Mantle_Id_raw = value;
+                        OnPropertyChanged(nameof(Mantle_Id));
+                        OnPropertyChanged(nameof(Mantle_Id_button));
+                    }
+                }
+
+                [SortOrder(Mantle_Id_sortIndex)]
+                [DisplayName(Mantle_Id_displayName)]
+                [CustomSorter(typeof(ButtonSorter))]
+                public string Mantle_Id_button => DataHelper.mantleNamesNeg[MainWindow.locale].TryGet(Mantle_Id).ToStringWithId(Mantle_Id);
+
+                public static ObservableCollection<Mantles> LoadData(BinaryReader reader, Entries parent) {
+                    var list = new ObservableCollection<Mantles>();
+                    var count = 2UL;
+                    for (ulong i = 0; i < count; i++) {
+                        list.Add(LoadData(reader, i));
+                    }
+                    return list;
+                }
+
+                public static Mantles LoadData(BinaryReader reader, ulong i) {
+                    var data = new Mantles();
+                    data.Index = i;
+                    data.Mantle_Id_raw = reader.ReadInt32();
+                    return data;
+                }
+
+                public override void WriteData(BinaryWriter writer) {
+                    writer.Write(Mantle_Id_raw);
                 }
             }
 
-            protected int Unk_2_raw;
-            public const string Unk_2_displayName = "Unk 2";
-            public const int Unk_2_sortIndex = 350;
-            [SortOrder(Unk_2_sortIndex)]
-            [DisplayName(Unk_2_displayName)]
-            public virtual int Unk_2 {
-                get => Unk_2_raw;
-                set {
-                    if (Unk_2_raw == value) return;
-                    Unk_2_raw = value;
-                    OnPropertyChanged(nameof(Unk_2));
-                }
-            }
+            public const string Mantles_displayName = "Mantles";
+            public const int Mantles_sortIndex = 300;
+            [SortOrder(Mantles_sortIndex)]
+            [DisplayName(Mantles_displayName)]
+            public virtual ObservableCollection<Mantles> Mantles_raw { get; protected set; }
 
             public partial class Armor_Level : MhwStructItem {
                 public const ulong FixedSizeCount = 5;
@@ -309,14 +333,14 @@ namespace MHW_Editor.Weapons {
             }
 
             public const string Armor_Level_displayName = "Armor Level";
-            public const int Armor_Level_sortIndex = 400;
+            public const int Armor_Level_sortIndex = 350;
             [SortOrder(Armor_Level_sortIndex)]
             [DisplayName(Armor_Level_displayName)]
             public virtual ObservableCollection<Armor_Level> Armor_Level_raw { get; protected set; }
 
             protected ushort Unk_3_raw;
             public const string Unk_3_displayName = "Unk 3";
-            public const int Unk_3_sortIndex = 450;
+            public const int Unk_3_sortIndex = 400;
             [SortOrder(Unk_3_sortIndex)]
             [DisplayName(Unk_3_displayName)]
             public virtual ushort Unk_3 {
@@ -421,14 +445,14 @@ namespace MHW_Editor.Weapons {
             }
 
             public const string Decorations_displayName = "Decorations";
-            public const int Decorations_sortIndex = 500;
+            public const int Decorations_sortIndex = 450;
             [SortOrder(Decorations_sortIndex)]
             [DisplayName(Decorations_displayName)]
             public virtual ObservableCollection<Decorations> Decorations_raw { get; protected set; }
 
             protected uint Kinsect_Id_raw;
             public const string Kinsect_Id_displayName = "Kinsect Id";
-            public const int Kinsect_Id_sortIndex = 550;
+            public const int Kinsect_Id_sortIndex = 500;
             [SortOrder(Kinsect_Id_sortIndex)]
             [DisplayName(Kinsect_Id_displayName)]
             public virtual uint Kinsect_Id {
@@ -442,7 +466,7 @@ namespace MHW_Editor.Weapons {
 
             protected uint Kinsect_Lvl_raw;
             public const string Kinsect_Lvl_displayName = "Kinsect Lvl";
-            public const int Kinsect_Lvl_sortIndex = 600;
+            public const int Kinsect_Lvl_sortIndex = 550;
             [SortOrder(Kinsect_Lvl_sortIndex)]
             [DisplayName(Kinsect_Lvl_displayName)]
             public virtual uint Kinsect_Lvl {
@@ -456,7 +480,7 @@ namespace MHW_Editor.Weapons {
 
             protected uint Unk_4_raw;
             public const string Unk_4_displayName = "Unk 4";
-            public const int Unk_4_sortIndex = 650;
+            public const int Unk_4_sortIndex = 600;
             [SortOrder(Unk_4_sortIndex)]
             [DisplayName(Unk_4_displayName)]
             public virtual uint Unk_4 {
@@ -470,7 +494,7 @@ namespace MHW_Editor.Weapons {
 
             protected uint Unk_5_raw;
             public const string Unk_5_displayName = "Unk 5";
-            public const int Unk_5_sortIndex = 700;
+            public const int Unk_5_sortIndex = 650;
             [SortOrder(Unk_5_sortIndex)]
             [DisplayName(Unk_5_displayName)]
             public virtual uint Unk_5 {
@@ -484,7 +508,7 @@ namespace MHW_Editor.Weapons {
 
             protected uint Unk_6_raw;
             public const string Unk_6_displayName = "Unk 6";
-            public const int Unk_6_sortIndex = 750;
+            public const int Unk_6_sortIndex = 700;
             [SortOrder(Unk_6_sortIndex)]
             [DisplayName(Unk_6_displayName)]
             public virtual uint Unk_6 {
@@ -498,7 +522,7 @@ namespace MHW_Editor.Weapons {
 
             protected uint Unk_7_raw;
             public const string Unk_7_displayName = "Unk 7";
-            public const int Unk_7_sortIndex = 800;
+            public const int Unk_7_sortIndex = 750;
             [SortOrder(Unk_7_sortIndex)]
             [DisplayName(Unk_7_displayName)]
             public virtual uint Unk_7 {
@@ -512,7 +536,7 @@ namespace MHW_Editor.Weapons {
 
             protected uint Unk_8_raw;
             public const string Unk_8_displayName = "Unk 8";
-            public const int Unk_8_sortIndex = 850;
+            public const int Unk_8_sortIndex = 800;
             [SortOrder(Unk_8_sortIndex)]
             [DisplayName(Unk_8_displayName)]
             public virtual uint Unk_8 {
@@ -587,7 +611,7 @@ namespace MHW_Editor.Weapons {
             }
 
             public const string Items_displayName = "Items";
-            public const int Items_sortIndex = 900;
+            public const int Items_sortIndex = 850;
             [SortOrder(Items_sortIndex)]
             [DisplayName(Items_displayName)]
             public virtual ObservableCollection<Items> Items_raw { get; protected set; }
@@ -655,7 +679,7 @@ namespace MHW_Editor.Weapons {
             }
 
             public const string Ammo_displayName = "Ammo";
-            public const int Ammo_sortIndex = 950;
+            public const int Ammo_sortIndex = 900;
             [SortOrder(Ammo_sortIndex)]
             [DisplayName(Ammo_displayName)]
             public virtual ObservableCollection<Ammo> Ammo_raw { get; protected set; }
@@ -678,8 +702,7 @@ namespace MHW_Editor.Weapons {
                 data.Weapon_Id_raw = reader.ReadUInt32();
                 data.Custom_Mods_raw = Custom_Mods.LoadData(reader, data);
                 data.Armors_raw = Armors.LoadData(reader, data);
-                data.Unk_1_raw = reader.ReadInt32();
-                data.Unk_2_raw = reader.ReadInt32();
+                data.Mantles_raw = Mantles.LoadData(reader, data);
                 data.Armor_Level_raw = Armor_Level.LoadData(reader, data);
                 data.Unk_3_raw = reader.ReadUInt16();
                 data.Decorations_raw = Decorations.LoadData(reader, data);
@@ -705,8 +728,9 @@ namespace MHW_Editor.Weapons {
                 foreach (var obj in Armors_raw) {
                     obj.WriteData(writer);
                 }
-                writer.Write(Unk_1_raw);
-                writer.Write(Unk_2_raw);
+                foreach (var obj in Mantles_raw) {
+                    obj.WriteData(writer);
+                }
                 foreach (var obj in Armor_Level_raw) {
                     obj.WriteData(writer);
                 }

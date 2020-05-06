@@ -28,8 +28,9 @@ namespace MHW_Generator.Weapons {
                         new MhwMultiStructData.Entry("Armor Id", typeof(int), dataSourceType: DataSourceType.ArmorByFileIndexNeg)
                     }, 6)),
 
-                    new MhwMultiStructData.Entry("Unk 1", typeof(int)),
-                    new MhwMultiStructData.Entry("Unk 2", typeof(int)),
+                    new MhwMultiStructData.Entry("Mantles", typeof(void), subStruct: new MhwMultiStructData.StructData("Mantles", new List<MhwMultiStructData.Entry> {
+                        new MhwMultiStructData.Entry("Mantle Id", typeof(int), dataSourceType: DataSourceType.MantleByIdNeg)
+                    }, 2)),
 
                     new MhwMultiStructData.Entry("Armor Level", typeof(void), subStruct: new MhwMultiStructData.StructData("Armor Level", new List<MhwMultiStructData.Entry> {
                         new MhwMultiStructData.Entry("Armor Lvl", typeof(uint))

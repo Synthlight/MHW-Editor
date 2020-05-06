@@ -48,6 +48,7 @@ namespace MHW_Editor {
             "KulveItemLottery",
             "LimitBreakMaterialBase",
             "LimitBreakMaterialSkill",
+            "Mantles",
             "MelderItem",
             "Melee",
             "Monster_Rage",
@@ -121,6 +122,7 @@ namespace MHW_Editor {
             "Item_Id_3_button",
             "Item_Id_button",
             "itemId_button",
+            "Mantle_Id_button",
             "Mantle_Item_Id_button",
             "Mat_1_Id_button",
             "Mat_2_Id_button",
@@ -566,6 +568,9 @@ namespace MHW_Editor {
             }},
             {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries.Armors), new List<string> {
                 "Armor_Id",
+            }},
+            {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries.Mantles), new List<string> {
+                "Mantle_Id",
             }},
             {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries.Decorations), new List<string> {
                 "Deco_1",

@@ -24,6 +24,7 @@ namespace MHW_Editor.Assets {
         public static readonly LangMap                     itemDescriptions       = new LangMap();
         public static readonly LangMap                     kinsectNames           = new LangMap();
         public static readonly LangMap                     mantleNames            = new LangMap();
+        public static readonly LangMapNeg                  mantleNamesNeg         = new LangMapNeg();
         public static readonly LangMap                     mantleDescriptions     = new LangMap();
         public static readonly LangMap                     monsterNames           = new LangMap();
         public static readonly LangMap                     monsterDescriptions    = new LangMap();
@@ -173,7 +174,10 @@ namespace MHW_Editor.Assets {
 
         private static void ParseMantleData(string lang) {
             mantleNames[lang]        = new Dictionary<uint, string>();
+            mantleNamesNeg[lang]     = new Dictionary<int, string>();
             mantleDescriptions[lang] = new Dictionary<uint, string>();
+
+            mantleNamesNeg[lang][-1] = "None";
 
             var rawItemData = LoadDict<uint, string>(GetAsset($"{lang}_mantleData"));
 
@@ -181,7 +185,7 @@ namespace MHW_Editor.Assets {
             for (uint index = 0; index < rawItemData.Count; index += step) {
                 var key = index / step;
 
-                mantleNames[lang][key]        = rawItemData[index];
+                mantleNames[lang][key]        = mantleNamesNeg[lang][(int) key] = rawItemData[index];
                 mantleDescriptions[lang][key] = rawItemData[index + 1].Replace("\r\n", " ");
             }
         }
