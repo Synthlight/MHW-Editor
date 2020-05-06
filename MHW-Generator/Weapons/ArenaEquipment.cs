@@ -36,7 +36,7 @@ namespace MHW_Generator.Weapons {
                         new MhwMultiStructData.Entry("Armor Lvl", typeof(uint))
                     }, 5)),
 
-                    new MhwMultiStructData.Entry("Unk 3", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk 1", typeof(ushort)),
 
                     new MhwMultiStructData.Entry("Decorations", typeof(void), subStruct: new MhwMultiStructData.StructData("Decorations", new List<MhwMultiStructData.Entry> {
                         new MhwMultiStructData.Entry("Deco 1", typeof(uint), dataSourceType: DataSourceType.Items),
@@ -44,9 +44,8 @@ namespace MHW_Generator.Weapons {
                         new MhwMultiStructData.Entry("Deco 3", typeof(uint), dataSourceType: DataSourceType.Items)
                     }, 9)),
 
-                    new MhwMultiStructData.Entry("Kinsect Id", typeof(uint)),
-                    new MhwMultiStructData.Entry("Kinsect Lvl", typeof(uint)),
-
+                    new MhwMultiStructData.Entry("Unk 2", typeof(uint)), // Kinsect Id for IG.
+                    new MhwMultiStructData.Entry("Unk 3", typeof(uint)), // Kinsect Lvl for IG.
                     new MhwMultiStructData.Entry("Unk 4", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk 5", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk 6", typeof(uint)),

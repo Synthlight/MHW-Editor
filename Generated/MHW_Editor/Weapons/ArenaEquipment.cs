@@ -338,17 +338,17 @@ namespace MHW_Editor.Weapons {
             [DisplayName(Armor_Level_displayName)]
             public virtual ObservableCollection<Armor_Level> Armor_Level_raw { get; protected set; }
 
-            protected ushort Unk_3_raw;
-            public const string Unk_3_displayName = "Unk 3";
-            public const int Unk_3_sortIndex = 400;
-            [SortOrder(Unk_3_sortIndex)]
-            [DisplayName(Unk_3_displayName)]
-            public virtual ushort Unk_3 {
-                get => Unk_3_raw;
+            protected ushort Unk_1_raw;
+            public const string Unk_1_displayName = "Unk 1";
+            public const int Unk_1_sortIndex = 400;
+            [SortOrder(Unk_1_sortIndex)]
+            [DisplayName(Unk_1_displayName)]
+            public virtual ushort Unk_1 {
+                get => Unk_1_raw;
                 set {
-                    if (Unk_3_raw == value) return;
-                    Unk_3_raw = value;
-                    OnPropertyChanged(nameof(Unk_3));
+                    if (Unk_1_raw == value) return;
+                    Unk_1_raw = value;
+                    OnPropertyChanged(nameof(Unk_1));
                 }
             }
 
@@ -450,31 +450,31 @@ namespace MHW_Editor.Weapons {
             [DisplayName(Decorations_displayName)]
             public virtual ObservableCollection<Decorations> Decorations_raw { get; protected set; }
 
-            protected uint Kinsect_Id_raw;
-            public const string Kinsect_Id_displayName = "Kinsect Id";
-            public const int Kinsect_Id_sortIndex = 500;
-            [SortOrder(Kinsect_Id_sortIndex)]
-            [DisplayName(Kinsect_Id_displayName)]
-            public virtual uint Kinsect_Id {
-                get => Kinsect_Id_raw;
+            protected uint Unk_2_raw;
+            public const string Unk_2_displayName = "Unk 2";
+            public const int Unk_2_sortIndex = 500;
+            [SortOrder(Unk_2_sortIndex)]
+            [DisplayName(Unk_2_displayName)]
+            public virtual uint Unk_2 {
+                get => Unk_2_raw;
                 set {
-                    if (Kinsect_Id_raw == value) return;
-                    Kinsect_Id_raw = value;
-                    OnPropertyChanged(nameof(Kinsect_Id));
+                    if (Unk_2_raw == value) return;
+                    Unk_2_raw = value;
+                    OnPropertyChanged(nameof(Unk_2));
                 }
             }
 
-            protected uint Kinsect_Lvl_raw;
-            public const string Kinsect_Lvl_displayName = "Kinsect Lvl";
-            public const int Kinsect_Lvl_sortIndex = 550;
-            [SortOrder(Kinsect_Lvl_sortIndex)]
-            [DisplayName(Kinsect_Lvl_displayName)]
-            public virtual uint Kinsect_Lvl {
-                get => Kinsect_Lvl_raw;
+            protected uint Unk_3_raw;
+            public const string Unk_3_displayName = "Unk 3";
+            public const int Unk_3_sortIndex = 550;
+            [SortOrder(Unk_3_sortIndex)]
+            [DisplayName(Unk_3_displayName)]
+            public virtual uint Unk_3 {
+                get => Unk_3_raw;
                 set {
-                    if (Kinsect_Lvl_raw == value) return;
-                    Kinsect_Lvl_raw = value;
-                    OnPropertyChanged(nameof(Kinsect_Lvl));
+                    if (Unk_3_raw == value) return;
+                    Unk_3_raw = value;
+                    OnPropertyChanged(nameof(Unk_3));
                 }
             }
 
@@ -704,10 +704,10 @@ namespace MHW_Editor.Weapons {
                 data.Armors_raw = Armors.LoadData(reader, data);
                 data.Mantles_raw = Mantles.LoadData(reader, data);
                 data.Armor_Level_raw = Armor_Level.LoadData(reader, data);
-                data.Unk_3_raw = reader.ReadUInt16();
+                data.Unk_1_raw = reader.ReadUInt16();
                 data.Decorations_raw = Decorations.LoadData(reader, data);
-                data.Kinsect_Id_raw = reader.ReadUInt32();
-                data.Kinsect_Lvl_raw = reader.ReadUInt32();
+                data.Unk_2_raw = reader.ReadUInt32();
+                data.Unk_3_raw = reader.ReadUInt32();
                 data.Unk_4_raw = reader.ReadUInt32();
                 data.Unk_5_raw = reader.ReadUInt32();
                 data.Unk_6_raw = reader.ReadUInt32();
@@ -734,12 +734,12 @@ namespace MHW_Editor.Weapons {
                 foreach (var obj in Armor_Level_raw) {
                     obj.WriteData(writer);
                 }
-                writer.Write(Unk_3_raw);
+                writer.Write(Unk_1_raw);
                 foreach (var obj in Decorations_raw) {
                     obj.WriteData(writer);
                 }
-                writer.Write(Kinsect_Id_raw);
-                writer.Write(Kinsect_Lvl_raw);
+                writer.Write(Unk_2_raw);
+                writer.Write(Unk_3_raw);
                 writer.Write(Unk_4_raw);
                 writer.Write(Unk_5_raw);
                 writer.Write(Unk_6_raw);

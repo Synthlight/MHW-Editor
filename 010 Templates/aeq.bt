@@ -51,10 +51,10 @@ typedef struct {
     Armors Armors_[6]<optimize=false>;
     Mantles Mantles_[2]<optimize=false>;
     Armor_Level Armor_Level_[5]<optimize=false>;
-    ushort Unk_3;
+    ushort Unk_1;
     Decorations Decorations_[9]<optimize=false>;
-    uint Kinsect_Id;
-    uint Kinsect_Lvl;
+    uint Unk_2;
+    uint Unk_3;
     uint Unk_4;
     uint Unk_5;
     uint Unk_6;

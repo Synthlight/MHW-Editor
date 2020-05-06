@@ -27,6 +27,7 @@ namespace MHW_Template.Models {
         ShellReload,
         GunnerRecoil,
         GunnerReload,
-        MantleByIdNeg
+        MantleByIdNeg,
+        KinsectById
     }
 }

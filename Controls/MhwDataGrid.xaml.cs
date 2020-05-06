@@ -334,6 +334,7 @@ namespace MHW_Editor.Controls {
                 DataSourceType.GunnerRecoil => GunnerShoot.recoilLookup,
                 DataSourceType.GunnerReload => GunnerReload.reloadLookup,
                 DataSourceType.MantleByIdNeg => DataHelper.mantleNamesNeg[MainWindow.locale],
+                DataSourceType.KinsectById => DataHelper.kinsectNames[MainWindow.locale],
                 _ => throw new ArgumentOutOfRangeException(dataSourceType.ToString())
             };
 
