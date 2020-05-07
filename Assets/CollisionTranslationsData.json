@@ -15,6 +15,10 @@
     "5": {
       "name": "Counter Claw",
       "description": "(Lance) (1st Hit)"
+    },
+    "6": {
+      "name": "",
+      "description": "guess dummy"
     }
   },
   "claw_00.col": {
@@ -279,6 +283,10 @@
     "90": {
       "name": "Splash Water",
       "description": "fix"
+    },
+    "92": {
+      "name": "Snowball",
+      "description": ""
     }
   },
   "hm\\common\\shell\\collision\\object_DAY1.col": {
@@ -424,6 +432,10 @@
     },
     "60": {
       "name": "Hadouken",
+      "description": "Emote（Day1）"
+    },
+    "61": {
+      "name": "Shuriken",
       "description": "Emote（Day1）"
     }
   },
@@ -571,6 +583,10 @@
     "50": {
       "name": "",
       "description": "Slinger? Stone / Redpit enhance?"
+    },
+    "61": {
+      "name": "Shuriken",
+      "description": "Emote（Day1）"
     }
   },
   "hm_attack.col": {
@@ -665,6 +681,10 @@
     "33": {
       "name": "Zombie Bite",
       "description": "(ver11.5 Slugger)"
+    },
+    "34": {
+      "name": "Zombie Bite",
+      "description": "（zombie mode）(ver11.5 Slugger)"
     }
   },
   "wp00.col": {
@@ -953,6 +973,10 @@
     "5": {
       "name": "",
       "description": "guess dummy"
+    },
+    "6": {
+      "name": "",
+      "description": "guess dummy"
     }
   },
   "wp01.col": {
@@ -1127,6 +1151,10 @@
     "53": {
       "name": "Perfect Rush III",
       "description": "(2nd Hit Failed)"
+    },
+    "54": {
+      "name": "Perfect Rush III",
+      "description": "[Timed] (2nd Hit Failed)"
     }
   },
   "wp01_01.col": {
@@ -1189,12 +1217,20 @@
     "20": {
       "name": "Perfect Rush I",
       "description": "[Timed] (1st Hit)"
+    },
+    "21": {
+      "name": "Perfect Rush II",
+      "description": "[Timed]"
     }
   },
   "wp01_02.col": {
     "0": {
       "name": "Perfect Rush III",
       "description": "(1st Hit)"
+    },
+    "1": {
+      "name": "Perfect Rush III",
+      "description": "[Timed] (1st Hit)"
     }
   },
   "wp02.col": {
@@ -1276,35 +1312,35 @@
     },
     "28": {
       "name": "Spinning Blade Dance",
-      "description": "Finisher (L1) (after Heavenly Blade Dance Finisher)"
+      "description": "Finisher (L1) (after Mid Air Blade Dance Finisher)"
     },
     "29": {
       "name": "Spinning Blade Dance",
-      "description": "Finisher (L2) (after Heavenly Blade Dance Finisher)"
+      "description": "Finisher (L2) (after Mid Air Blade Dance Finisher)"
     },
     "30": {
       "name": "Spinning Blade Dance",
-      "description": "Finisher (R1) (after Heavenly Blade Dance Finisher)"
+      "description": "Finisher (R1) (after Mid Air Blade Dance Finisher)"
     },
     "31": {
       "name": "Spinning Blade Dance",
-      "description": "Finisher (R2) (after Heavenly Blade Dance Finisher)"
+      "description": "Finisher (R2) (after Mid Air Blade Dance Finisher)"
     },
     "33": {
       "name": "Spinning Blade Dance",
-      "description": "Finisher (L1) (after Mid Air Blade Dance Finisher)"
+      "description": "Finisher (L1) (after Heavenly Blade Dance Finisher)"
     },
     "34": {
       "name": "Spinning Blade Dance",
-      "description": "Finisher (L2) (after Mid Air Blade Dance Finisher)"
+      "description": "Finisher (L2) (after Heavenly Blade Dance Finisher)"
     },
     "35": {
       "name": "Spinning Blade Dance",
-      "description": "Finisher (R1) (after Mid Air Blade Dance Finisher)"
+      "description": "Finisher (R1) (after Heavenly Blade Dance Finisher)"
     },
     "36": {
       "name": "Spinning Blade Dance",
-      "description": "Finisher (R2) (after Mid Air Blade Dance Finisher)"
+      "description": "Finisher (R2) (after Heavenly Blade Dance Finisher)"
     },
     "38": {
       "name": "Demon Flurry",
@@ -1657,6 +1693,10 @@
     "161": {
       "name": "Spinning Rising Slash",
       "description": "(L1)"
+    },
+    "162": {
+      "name": "Spinning Rising Slash",
+      "description": "(R1)"
     }
   },
   "wp03\\shell\\collision\\object.col": {
@@ -2107,6 +2147,10 @@
     "59": {
       "name": "Weapon Attack",
       "description": "[Clutching] (1st Hit)"
+    },
+    "60": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (2nd Hit)"
     }
   },
   "wp05\\shell\\collision\\object.col": {
@@ -2133,6 +2177,10 @@
     "7": {
       "name": "\"Echo Wave \"\"Dragon\"\"\"",
       "description": "Lv2"
+    },
+    "8": {
+      "name": "\"Echo Wave \"\"Dragon\"\"\"",
+      "description": "Lv3"
     }
   },
   "wp05.col": {
@@ -2385,12 +2433,20 @@
     "30": {
       "name": "Weapon Attack",
       "description": "[Clutching] (1st Hit)"
+    },
+    "31": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (2nd Hit)"
     }
   },
   "wp06_01.col": {
     "0": {
       "name": "Shield Attack",
       "description": ""
+    },
+    "1": {
+      "name": "Counter Claw",
+      "description": "(2nd Hit)"
     }
   },
   "wp07\\shell\\collision\\object.col": {
@@ -2513,6 +2569,10 @@
     "33": {
       "name": "",
       "description": "guess dummy"
+    },
+    "35": {
+      "name": "Wyrmstake",
+      "description": "(Explosion)"
     }
   },
   "wp07.col": {
@@ -2599,12 +2659,26 @@
     "26": {
       "name": "Burst Fire",
       "description": "guess dummy"
+    },
+    "28": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (1st Hit)"
+    }
+  },
+  "wp07_01.col": {
+    "0": {
+      "name": "",
+      "description": "guess dummy"
     }
   },
   "wp08\\shell\\collision\\object.col": {
     "0": {
       "name": "Element Discharge Finisher",
       "description": "/ Zero Sum Discharge Finisher"
+    },
+    "1": {
+      "name": "",
+      "description": "guess dummy"
     }
   },
   "wp08.col": {
@@ -2815,6 +2889,10 @@
     "70": {
       "name": "Special Claw Shot",
       "description": "(2nd Hit)"
+    },
+    "72": {
+      "name": "Zero Sum Discharge",
+      "description": "[Clutching] (Thrust)"
     }
   },
   "wp09\\shell\\collision\\object.col": {
@@ -2853,6 +2931,10 @@
     "13": {
       "name": "Element Phial",
       "description": "(SAED)"
+    },
+    "14": {
+      "name": "",
+      "description": "guess dummy"
     }
   },
   "wp09.col": {
@@ -3007,12 +3089,20 @@
     "43": {
       "name": "Power Axe Ticks",
       "description": ""
+    },
+    "44": {
+      "name": "Power Axe Ticks",
+      "description": "(AED SAED only)"
     }
   },
   "wp09_01.col": {
     "0": {
       "name": "Sword: Shield Thrust",
       "description": "(1st Hit)"
+    },
+    "1": {
+      "name": "Sword: Shield Thrust",
+      "description": "(2nd Hit)"
     }
   },
   "wp10\\shell\\collision\\object.col": {
@@ -3031,6 +3121,10 @@
     "4": {
       "name": "Dust Explosion",
       "description": "(Paralysis)"
+    },
+    "5": {
+      "name": "Dust Explosion",
+      "description": "(Poison)"
     }
   },
   "wp10.col": {
@@ -3269,12 +3363,20 @@
     "73": {
       "name": "Weapon Attack",
       "description": "[Clutching] (4th Hit)"
+    },
+    "74": {
+      "name": "Weapon Attack",
+      "description": "[Clutching] (5th Hit)"
     }
   },
   "wp10_01.col": {
     "0": {
       "name": "Kinsect Attack",
       "description": ""
+    },
+    "1": {
+      "name": "Kinsect Attack",
+      "description": "(Descending Thrust)"
     }
   },
   "wp11\\shell\\collision\\object.col": {
@@ -3365,6 +3467,10 @@
     "29": {
       "name": "Thousand Dragons",
       "description": "(Piercer Slinger Shot)"
+    },
+    "30": {
+      "name": "Thousand Dragons",
+      "description": "(Main Arrows)"
     }
   },
   "wp11.col": {
@@ -3411,6 +3517,10 @@
     "12": {
       "name": "Charged Shot",
       "description": "[Mounting] [Tail] Lv3"
+    },
+    "13": {
+      "name": "Charged Shot",
+      "description": "[Mounting] [Tail] Lv4"
     }
   },
   "wp11_01": {
@@ -3429,6 +3539,10 @@
     "4": {
       "name": "Weapon Attack",
       "description": "(2nd Hit)"
+    },
+    "5": {
+      "name": "Weapon Attack",
+      "description": "(3rd Hit)"
     }
   },
   "wp12\\shell\\collision\\object.col": {
@@ -3691,6 +3805,10 @@
     "78": {
       "name": "Wyvernblast Counter Explosion",
       "description": "(XL)"
+    },
+    "81": {
+      "name": "Power Source shots",
+      "description": ""
     }
   },
   "wp12.col": {
@@ -3709,6 +3827,10 @@
     "3": {
       "name": "Fire",
       "description": "[Mounting] [Tail]"
+    },
+    "4": {
+      "name": "Melee Attack",
+      "description": ""
     }
   },
   "wp13.col": {
@@ -3739,6 +3861,10 @@
     "6": {
       "name": "Fire",
       "description": "[Mounting] [Back] (Initial Hits)"
+    },
+    "7": {
+      "name": "Fire",
+      "description": "[Mounting] [Tail] (Initial Hits)"
     }
   }
 }

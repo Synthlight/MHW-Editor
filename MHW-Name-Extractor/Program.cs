@@ -30,7 +30,7 @@ namespace MHW_Name_Extractor {
                 Directory.CreateDirectory(dir ?? throw new InvalidOperationException());
             }
 
-            //File.WriteAllText(colTransFile, JsonConvert.SerializeObject(colTrans, Formatting.Indented));
+            File.WriteAllText(colTransFile, JsonConvert.SerializeObject(colTrans, Formatting.Indented));
 
             if (Environment.GetCommandLineArgs().ContainsIgnoreCase("-transOnly")) return;
 
@@ -70,7 +70,7 @@ namespace MHW_Name_Extractor {
 
             var text  = File.ReadAllText(file);
             var lines = text.Split(new[] {'\r', '\n'}, StringSplitOptions.RemoveEmptyEntries);
-            var entries = from line in lines.Subsequence(1, lines.Length - 2)
+            var entries = from line in lines.Subsequence(1, lines.Length - 1)
                           where !line.EndsWith(",,,")
                           let parts = line.Split(',')
                           let name = parts[2]
