@@ -11,8 +11,10 @@ namespace MHW_Editor {
 
     public sealed class SubStructViewDynamic<T> : SubStructView where T : class {
         public SubStructViewDynamic(MainWindow mainWindow, string name, ObservableCollection<T> items, bool isReadOnly) {
-            Title = name;
-            Owner = mainWindow;
+            Title  = name;
+            Owner  = mainWindow;
+            Width  = mainWindow.Width;
+            Height = mainWindow.Height * 0.8d;
 
             var dataGrid = new MhwDataGridGeneric<T> {
                 HorizontalScrollBarVisibility = ScrollBarVisibility.Auto,
