@@ -1,0 +1,186 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.dtt_epg
+//  Category: MHW_Editor.Monsters
+//------------------------------------------------
+
+typedef struct {
+    uint Magic_1;
+    uint Magic_2;
+    uint Monster_Id;
+    uint Magic_3;
+    uint Health;
+    uint Flinches_Count;
+} Monster_Parts;
+
+typedef struct {
+    uint Flinch_Value;
+    int Special_Part_1;
+    int Special_Part_2;
+    int Special_Part_3;
+    uint Kinsect_Color;
+    uint Parts_Type;
+
+    typedef struct {
+        int Part_Id_LR_HR1_Normal;
+        int Part_Id_LR_HR1_Wounded;
+        int Part_Id_LR_HR1_Special_Phase_1;
+        int Part_Id_LR_HR1_Special_Phase_2;
+        int Part_Id_LR_HR1_Special_Phase_3;
+        int Part_Id_MR1_Normal;
+        int Part_Id_MR1_Wounded;
+        int Part_Id_MR1_Special_Phase_1;
+        int Part_Id_MR1_Special_Phase_2;
+        int Part_Id_MR1_Special_Phase_3;
+        uint unk9;
+        uint unk10;
+        uint unk11;
+        ubyte unk12;
+        ubyte unk13;
+    } Parts1;
+
+    if (Parts_Type == 1) { Parts1 Parts1_; }
+
+    typedef struct {
+        int Part_Id_LR_HR1_Normal;
+        int Part_Id_LR_HR1_Wounded;
+        int Part_Id_LR_HR1_Special_Phase_1;
+        int Part_Id_LR_HR1_Special_Phase_2;
+        int Part_Id_LR_HR1_Special_Phase_3;
+        int Part_Id_MR1_Normal;
+        int Part_Id_MR1_Wounded;
+        int Part_Id_MR1_Special_Phase_1;
+        int Part_Id_MR1_Special_Phase_2;
+        int Part_Id_MR1_Special_Phase_3;
+        int Part_Id_LR_HR2_Normal;
+        int Part_Id_LR_HR2_Wounded;
+        int Part_Id_LR_HR2_Special_Phase_1;
+        int Part_Id_LR_HR2_Special_Phase_2;
+        int Part_Id_LR_HR2_Special_Phase_3;
+        int Part_Id_MR2_Normal;
+        int Part_Id_MR2_Wounded;
+        int Part_Id_MR2_Special_Phase_1;
+        int Part_Id_MR2_Special_Phase_2;
+        int Part_Id_MR2_Special_Phase_3;
+        uint unk19;
+        uint unk20;
+        uint unk21;
+        ubyte unk22;
+        ubyte unk23;
+    } Parts2;
+
+    if (Parts_Type == 2) { Parts2 Parts2_; }
+
+    typedef struct {
+        int Part_Id_LR_HR1_Normal;
+        int Part_Id_LR_HR1_Wounded;
+        int Part_Id_LR_HR1_Special_Phase_1;
+        int Part_Id_LR_HR1_Special_Phase_2;
+        int Part_Id_LR_HR1_Special_Phase_3;
+        int Part_Id_MR1_Normal;
+        int Part_Id_MR1_Wounded;
+        int Part_Id_MR1_Special_Phase_1;
+        int Part_Id_MR1_Special_Phase_2;
+        int Part_Id_MR1_Special_Phase_3;
+        int Part_Id_LR_HR2_Normal;
+        int Part_Id_LR_HR2_Wounded;
+        int Part_Id_LR_HR2_Special_Phase_1;
+        int Part_Id_LR_HR2_Special_Phase_2;
+        int Part_Id_LR_HR2_Special_Phase_3;
+        int Part_Id_MR2_Normal;
+        int Part_Id_MR2_Wounded;
+        int Part_Id_MR2_Special_Phase_1;
+        int Part_Id_MR2_Special_Phase_2;
+        int Part_Id_MR2_Special_Phase_3;
+        int Part_Id_LR_HR3_Normal;
+        int Part_Id_LR_HR3_Wounded;
+        int Part_Id_LR_HR3_Special_Phase_1;
+        int Part_Id_LR_HR3_Special_Phase_2;
+        int Part_Id_LR_HR3_Special_Phase_3;
+        int Part_Id_MR3_Normal;
+        int Part_Id_MR3_Wounded;
+        int Part_Id_MR3_Special_Phase_1;
+        int Part_Id_MR3_Special_Phase_2;
+        int Part_Id_MR3_Special_Phase_3;
+        uint unk29;
+        uint unk30;
+        uint unk31;
+        ubyte unk32;
+        ubyte unk33;
+    } Parts3;
+
+    if (Parts_Type == 3) { Parts3 Parts3_; }
+} Flinches;
+
+typedef struct {
+    uint Hitzone_Count;
+} Hitzone_Header;
+
+typedef struct {
+    float Timer;
+    uint Sever;
+    uint Impact;
+    uint Shot;
+    uint Fire;
+    uint Water;
+    uint Ice;
+    uint Thunder;
+    uint Dragon;
+    uint Stun;
+    uint Stamina;
+} Hitzones;
+
+typedef struct {
+    uint Sever_Count;
+} Sever_Header;
+
+typedef struct {
+    uint Damage;
+    uint unk1;
+    uint unk2;
+    uint Sever;
+    int unk5;
+    ubyte Special;
+    ubyte Blunt;
+    ubyte Shot;
+} Severs;
+
+typedef struct {
+    uint Unk_Count;
+} Unk_Header;
+
+typedef struct {
+    uint unk1;
+    uint unk2;
+    uint unk3;
+    ubyte unk4;
+    uint unk5;
+    ubyte unk6;
+    ubyte unk7;
+    int unk8;
+    ubyte unk9;
+    ubyte unk10;
+    ubyte unk11;
+} Unknowns;
+
+typedef struct {
+    uint unk1;
+    uint unk2;
+
+    typedef struct {
+        ubyte Unk;
+    } End_Junk;
+
+    End_Junk End_Junk_;
+} Remainder;
+
+Monster_Parts Monster_Parts_;
+Flinches Flinches_[Monster_Parts_.Flinches_Count]<optimize=false>;
+Hitzone_Header Hitzone_Header_;
+Hitzones Hitzones_[Hitzone_Header_.Hitzone_Count]<optimize=false>;
+Sever_Header Sever_Header_;
+Severs Severs_[Sever_Header_.Sever_Count]<optimize=false>;
+Unk_Header Unk_Header_;
+Unknowns Unknowns_[Unk_Header_.Unk_Count]<optimize=false>;
+Remainder Remainder_;

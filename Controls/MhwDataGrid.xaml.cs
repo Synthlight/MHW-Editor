@@ -281,13 +281,25 @@ namespace MHW_Editor.Controls {
 
         private void On_Cell_Open_Click(object sender, RoutedEventArgs e, PropertyInfo propertyInfo, string displayName) {
             try {
-                var frameworkElement = (FrameworkElement) sender;
-                var obj              = frameworkElement.DataContext;
-                var list             = propertyInfo.GetGetMethod().Invoke(obj, null);
-                var listType         = list.GetType().GenericTypeArguments[0];
-                var viewType         = typeof(SubStructViewDynamic<>).MakeGenericType(listType);
-                var isReadOnly       = (bool) (listType.GetField(nameof(MhwStructDataContainer.IsAddingAllowed), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
-                var subStructView    = (SubStructView) Activator.CreateInstance(viewType, mainWindow, displayName, list, isReadOnly);
+                var           frameworkElement = (FrameworkElement) sender;
+                var           obj              = frameworkElement.DataContext;
+                var           list             = propertyInfo.GetGetMethod().Invoke(obj, null);
+                var           listType         = list.GetType().GenericTypeArguments[0];
+                var           hasCustomView    = listType.IsGeneric(typeof(IHasCustomView<>));
+                SubStructView subStructView;
+
+                if (hasCustomView) {
+                    var viewList       = ((dynamic) list)[0].GetCustomView();
+                    var listCustomType = viewList.GetType().GenericTypeArguments[0];
+                    var viewType       = typeof(SubStructViewDynamic<>).MakeGenericType(listCustomType);
+
+                    subStructView = (SubStructView) Activator.CreateInstance(viewType, mainWindow, displayName, viewList, true);
+                } else {
+                    var viewType   = typeof(SubStructViewDynamic<>).MakeGenericType(listType);
+                    var isReadOnly = (bool) (listType.GetField(nameof(MhwStructDataContainer.IsAddingAllowed), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
+
+                    subStructView = (SubStructView) Activator.CreateInstance(viewType, mainWindow, displayName, list, isReadOnly);
+                }
 
                 ColorCell(frameworkElement);
                 subStructView.ShowDialog();

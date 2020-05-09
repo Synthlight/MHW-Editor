@@ -51,6 +51,7 @@ namespace MHW_Editor {
             "Mantles",
             "MelderItem",
             "Melee",
+            "Monster_Parts",
             "Monster_Rage",
             "Monster_Stamina_1_",
             "Monsters",
@@ -540,6 +541,9 @@ namespace MHW_Editor {
                 "Weapon_Id",
             }},
             {typeof(MHW_Editor.Monsters.MonsterEnrage.Monster_Rage), new List<string> {
+                "Monster_Id",
+            }},
+            {typeof(MHW_Editor.Monsters.MonsterParts.Monster_Parts), new List<string> {
                 "Monster_Id",
             }},
             {typeof(MHW_Editor.Monsters.MonsterRandomSize.Monsters), new List<string> {

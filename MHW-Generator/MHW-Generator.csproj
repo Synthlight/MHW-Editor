@@ -86,6 +86,7 @@
     <Compile Include="Models\SingleStruct.cs" />
     <Compile Include="Models\VerticalStruct.cs" />
     <Compile Include="Monsters\AnimalSize.cs" />
+    <Compile Include="Monsters\MonsterParts.cs" />
     <Compile Include="Monsters\EnemySort.cs" />
     <Compile Include="Monsters\MonsterClawGrab.cs" />
     <Compile Include="Monsters\MonsterDifficulty.cs" />

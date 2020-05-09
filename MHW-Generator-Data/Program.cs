@@ -23,7 +23,6 @@ namespace MHW_Generator_Data {
                 "gmd",
                 "dtt_cvc",
                 "dtt_eda",
-                "dtt_epg",
                 "dtt_msf",
                 "sobj"
             });
@@ -228,6 +227,7 @@ namespace MHW_Generator_Data {
                     where path.EndsWith(fileType.Substring(1))
                     where !path.EndsWith("\\object.col") // Exclude due to there being 1600+ of them.
                     where !path.EndsWith(".mbd") // Names aren't unique.
+                    where !path.EndsWith(".dtt_epg") // Names aren't unique.
                     select path)
                    .Distinct()
                    .ToList();

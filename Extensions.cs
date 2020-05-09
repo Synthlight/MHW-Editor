@@ -70,8 +70,8 @@ namespace MHW_Editor {
         }
 
         public static byte[] GetBytes<T>(this T @struct) {
-            var size = Marshal.SizeOf(@struct);
-            var bytes = new byte[size];
+            var size   = Marshal.SizeOf(@struct);
+            var bytes  = new byte[size];
             var handle = GCHandle.Alloc(bytes, GCHandleType.Pinned);
 
             try {
