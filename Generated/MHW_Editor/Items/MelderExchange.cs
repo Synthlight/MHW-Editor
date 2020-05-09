@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -81,7 +82,7 @@ namespace MHW_Editor.Items {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Magic_1_raw);
                 writer.Write(Magic_2_raw);
                 writer.Write(Entry_Count_raw);
@@ -155,19 +156,19 @@ namespace MHW_Editor.Items {
                     var list = new ObservableCollection<Items>();
                     var count = 215UL;
                     for (ulong i = 0; i < count; i++) {
-                        list.Add(LoadData(reader, i));
+                        list.Add(LoadData(reader, i, parent));
                     }
                     return list;
                 }
 
-                public static Items LoadData(BinaryReader reader, ulong i) {
+                public static Items LoadData(BinaryReader reader, ulong i, Item_Box parent) {
                     var data = new Items();
                     data.Index = i;
                     data.Unk_raw = reader.ReadUInt16();
                     return data;
                 }
 
-                public override void WriteData(BinaryWriter writer) {
+                public void WriteData(BinaryWriter writer, Item_Box parent) {
                     writer.Write(Unk_raw);
                 }
             }
@@ -197,17 +198,17 @@ namespace MHW_Editor.Items {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Source_Item_Id_raw);
                 writer.Write(Unk_1_raw);
                 foreach (var obj in Items_raw) {
-                    obj.WriteData(writer);
+                    obj.WriteData(writer, this);
                 }
             }
         }
 
         public override void LoadFile(string targetFile) {
-            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
             var Melder_Exchange_ = new MhwStructDataContainer(Melder_Exchange.LoadData(reader, null), typeof(Melder_Exchange));
             data.AddLast(Melder_Exchange_);

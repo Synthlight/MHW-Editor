@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -97,7 +98,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Magic_1_raw);
                 writer.Write(Magic_2_raw);
                 writer.Write(Magic_3_raw);
@@ -213,7 +214,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Header_raw);
                 writer.Write(Min_Size_raw);
                 writer.Write(Max_Size_raw);
@@ -223,7 +224,7 @@ namespace MHW_Editor.Monsters {
         }
 
         public override void LoadFile(string targetFile) {
-            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
             var Small_Monster_Size_Params_ = new MhwStructDataContainer(Small_Monster_Size_Params.LoadData(reader, null), typeof(Small_Monster_Size_Params));
             data.AddLast(Small_Monster_Size_Params_);

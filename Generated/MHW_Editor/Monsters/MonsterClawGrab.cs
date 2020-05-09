@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -81,7 +82,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Magic_1_raw);
                 writer.Write(Magic_2_raw);
                 writer.Write(Number_of_Claggers_raw);
@@ -369,7 +370,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Unk_f32__raw);
                 writer.Write(Normal_raw);
                 writer.Write(Enraged_raw);
@@ -454,7 +455,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Gimmick_Breaker_Collision_Unique_Id_Small_raw);
                 writer.Write(Gimmick_Breaker_Collision_Unique_Id_Middle_raw);
                 writer.Write(Gimmick_Breaker_Collision_Unique_Id_Large_raw);
@@ -470,7 +471,7 @@ namespace MHW_Editor.Monsters {
         }
 
         public override void LoadFile(string targetFile) {
-            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
             var Monster_Claw_Grab_ = new MhwStructDataContainer(Monster_Claw_Grab.LoadData(reader, null), typeof(Monster_Claw_Grab));
             data.AddLast(Monster_Claw_Grab_);

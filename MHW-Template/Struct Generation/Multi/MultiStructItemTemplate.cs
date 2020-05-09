@@ -32,6 +32,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -39,28 +40,28 @@ using MHW_Template.Models;
 
 namespace ");
             
-            #line 20 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
+            #line 21 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public partial class ");
             
-            #line 21 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
+            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
             #line hidden
             this.Write(" {\r\n        public override string EncryptionKey => ");
             
-            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
+            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\""));
             
             #line default
             #line hidden
             this.Write(";\r\n");
             
-            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
+            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStructItemTemplate.tt"
 
     MultiStructItemGeneration.Generate(this, structData);
 

@@ -25,7 +25,6 @@ using MHW_Editor.Monsters;
 using MHW_Editor.PlData;
 using MHW_Editor.Skills;
 using MHW_Editor.Weapons;
-using MHW_Editor.Weapons.Collision;
 using MHW_Template;
 using Microsoft.Win32;
 using Newtonsoft.Json;
@@ -223,6 +222,10 @@ namespace MHW_Editor {
             var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
             Debug.Assert(loadData != null, nameof(loadData) + " != null");
             customFileData = loadData.Invoke(null, new object[] {targetFile});
+
+            if (customFileData is Collision col) {
+                col.Init(targetFile);
+            }
 
             var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
             Debug.Assert(setupViews != null, nameof(setupViews) + " != null");

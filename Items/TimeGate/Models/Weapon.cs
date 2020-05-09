@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel;
-using System.IO;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -29,8 +28,5 @@ namespace MHW_Editor.Items.TimeGate.Models {
         [DisplayName("Weapon Id")]
         [CustomSorter(typeof(ButtonSorter))]
         public string weaponId_button => DataHelper.weaponIdNameLookup[weaponCategory][MainWindow.locale].TryGet(weaponId).ToStringWithId(weaponId);
-
-        public override void WriteData(BinaryWriter writer) {
-        }
     }
 }

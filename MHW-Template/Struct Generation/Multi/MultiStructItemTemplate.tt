@@ -12,6 +12,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -21,7 +22,7 @@ namespace <#= _namespace #> {
     public partial class <#= className #> {
         public override string EncryptionKey => <#= structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\"" #>;
 <#
-    MultiStructGeneration.Generate(this, structData);
+    MultiStructItemGeneration.Generate(this, structData);
 #>
     }
 }

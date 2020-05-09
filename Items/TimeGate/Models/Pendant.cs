@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel;
-using System.IO;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -23,8 +22,5 @@ namespace MHW_Editor.Items.TimeGate.Models {
         [DisplayName("Pendant Id")]
         [CustomSorter(typeof(ButtonSorter))]
         public string pendantId_button => DataHelper.pendantNames[MainWindow.locale].TryGet(pendantId).ToStringWithId(pendantId);
-
-        public override void WriteData(BinaryWriter writer) {
-        }
     }
 }

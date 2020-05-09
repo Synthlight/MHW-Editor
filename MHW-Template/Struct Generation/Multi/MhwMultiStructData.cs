@@ -23,6 +23,7 @@ namespace MHW_Template.Struct_Generation.Multi {
             public readonly bool        showVertically; // Show the struct as a vertical list of stuff?
             public readonly bool        canAddRows;
             public readonly ArrayLink   _010Link;
+            public readonly bool        customSaveLoad;
 
             public StructData(string      name,
                               List<Entry> entries,
@@ -30,7 +31,8 @@ namespace MHW_Template.Struct_Generation.Multi {
                               bool        hidden         = false,
                               bool        showVertically = false,
                               bool        canAddRows     = false,
-                              ArrayLink   _010Link       = null) {
+                              ArrayLink   _010Link       = null,
+                              bool        customSaveLoad = false) {
                 this.name           = name;
                 this.entries        = entries;
                 this.fixedSizeCount = fixedSizeCount;
@@ -38,6 +40,7 @@ namespace MHW_Template.Struct_Generation.Multi {
                 this.showVertically = showVertically;
                 this.canAddRows     = canAddRows;
                 this._010Link       = _010Link;
+                this.customSaveLoad = customSaveLoad;
             }
 
             public string SafeName   => Regex.Replace(name, @"[^\w\d]+", "_");
@@ -54,7 +57,7 @@ namespace MHW_Template.Struct_Generation.Multi {
             public readonly DataSourceType? dataSourceType;
             public readonly string[]        extraOnPropertyChanged;
             public readonly string          dataSourceCustomSorter;
-            public readonly bool            createPercentField = false;
+            public readonly bool            createPercentField;
             public readonly int             arrayCount; // If the type is an array, set the count;
             public readonly bool            isNullTerminatedString;
             public readonly string          condition; // Condition to read/write.

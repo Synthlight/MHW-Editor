@@ -177,6 +177,7 @@
     <Compile Include="Generated\MHW_Editor\Weapons\AwakenedLimitBreakR.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\AwakenedWpCustom.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\AwakenedWpUpgrade.cs" />
+    <Compile Include="Generated\MHW_Editor\Weapons\Collision.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\CustomOuterRecipe.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\CustomOuterWeapon.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\CustomParts.cs" />
@@ -324,27 +325,12 @@
       <DependentUpon>SubStructView.xaml</DependentUpon>
     </Compile>
     <Compile Include="UpdateCheck.cs" />
+    <Compile Include="Weapons\Collision.cs" />
     <Compile Include="Weapons\AwakenedExp.cs" />
     <Compile Include="Weapons\AwakenedWpUpgrade.cs" />
     <Compile Include="Weapons\AwakenedWpCustom.cs" />
     <Compile Include="Weapons\AwakenedLimitBreakR.cs" />
     <Compile Include="Weapons\Bow.cs" />
-    <Compile Include="Weapons\Collision\Collision.cs" />
-    <Compile Include="Weapons\Collision\Models\Atk0.cs" />
-    <Compile Include="Weapons\Collision\Models\Atk2.cs" />
-    <Compile Include="Weapons\Collision\Models\Atk3.cs" />
-    <Compile Include="Weapons\Collision\Models\Collision.cs" />
-    <Compile Include="Weapons\Collision\Models\IOapInner.cs" />
-    <Compile Include="Weapons\Collision\Models\IAtk.cs" />
-    <Compile Include="Weapons\Collision\Models\Atk1.cs" />
-    <Compile Include="Weapons\Collision\Models\Clgm.cs" />
-    <Compile Include="Weapons\Collision\Models\ClgmInner.cs" />
-    <Compile Include="Weapons\Collision\Models\Clnd.cs" />
-    <Compile Include="Weapons\Collision\Collision.io.cs" />
-    <Compile Include="Weapons\Collision\Models\Name.cs" />
-    <Compile Include="Weapons\Collision\Models\OapInner3.cs" />
-    <Compile Include="Weapons\Collision\Models\OapInner2.cs" />
-    <Compile Include="Weapons\Collision\Models\OapInner1.cs" />
     <Compile Include="Weapons\AwakenedLimitBreak.cs" />
     <Compile Include="Weapons\CustomOuterRecipe.cs" />
     <Compile Include="Weapons\CustomOuterWeapon.cs" />

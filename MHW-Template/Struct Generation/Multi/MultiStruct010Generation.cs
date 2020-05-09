@@ -17,20 +17,17 @@ namespace MHW_Template.Struct_Generation.Multi {
             }
         }
 
-        private static void CreateStruct(MultiStruct010TemplateBase template, MhwMultiStructData.StructData @struct) {
-            foreach (var entry in @struct.entries) {
-                if (!entry.HasSubStruct) continue;
-                CreateStruct(template, entry.subStruct);
-            }
-
+        private static void CreateStruct(MultiStruct010TemplateBase template, MhwMultiStructData.StructData @struct, uint indentation = 0) {
             var name = @struct.SafeName;
 
             template.WriteLine("");
-            template.WriteLine("typedef struct {");
+            template.WriteLine(indentation, "typedef struct {");
 
             foreach (var entry in @struct.entries) {
                 if (entry.HasSubStruct) {
-                    CreateStructField(template, entry.subStruct, 1);
+                    CreateStruct(template, entry.subStruct, indentation + 1);
+                    template.WriteLine("");
+                    CreateStructField(template, entry.subStruct, entry, indentation + 1);
                     continue;
                 }
 
@@ -43,17 +40,17 @@ namespace MHW_Template.Struct_Generation.Multi {
                 if (entry.arrayCount > -1) propName += $"[{entry.arrayCount}]<optimize=false>";
 
                 if (entry.condition != null) {
-                    var condition = $"{entry.condition} ".Replace("|ref|", "").Replace("_raw", "");
-                    template.WriteLine($"    {condition} {{ {typeString} {propName}; }}");
+                    var condition = entry.condition.Replace("|ref|", "").Replace("_raw", "").Replace("parent.", "");
+                    template.WriteLine(indentation, $"    {condition} {{ {typeString} {propName}; }}");
                 } else {
-                    template.WriteLine($"    {typeString} {propName};");
+                    template.WriteLine(indentation, $"    {typeString} {propName};");
                 }
             }
 
-            template.WriteLine($"}} {name};");
+            template.WriteLine(indentation, $"}} {name};");
         }
 
-        private static void CreateStructField(MultiStruct010TemplateBase template, MhwMultiStructData.StructData @struct, uint indentation = 0) {
+        private static void CreateStructField(MultiStruct010TemplateBase template, MhwMultiStructData.StructData @struct, MhwMultiStructData.Entry entry = null, uint indentation = 0) {
             var name = @struct.SafeName;
 
             if (@struct.fixedSizeCount > 1) {
@@ -62,11 +59,21 @@ namespace MHW_Template.Struct_Generation.Multi {
                 var linkStruct = @struct._010Link.@struct;
                 var linkEntry  = @struct._010Link.entry;
 
+                string countTarget;
                 // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
                 if (linkStruct == null) {
-                    template.WriteLine(indentation, $"{name} {name}_[{linkEntry.SafeName}]<optimize=false>;");
+                    countTarget = linkEntry.SafeName;
                 } else {
-                    template.WriteLine(indentation, $"{name} {name}_[{linkStruct.SafeName}_.{linkEntry.SafeName}]<optimize=false>;");
+                    countTarget = $"{linkStruct.SafeName}_.{linkEntry.SafeName}";
+                }
+
+                var entryText = $"{name} {name}_[{countTarget}]<optimize=false>";
+
+                if (entry?.condition != null) {
+                    var condition = entry.condition.Replace("|ref|", "").Replace("_raw", "").Replace("parent.", "");
+                    template.WriteLine(indentation, $"{condition} {{ {entryText}; }}");
+                } else {
+                    template.WriteLine(indentation, $"{entryText};");
                 }
             } else {
                 template.WriteLine(indentation, $"{name} {name}_;");

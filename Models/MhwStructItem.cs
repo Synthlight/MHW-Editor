@@ -10,8 +10,6 @@ namespace MHW_Editor.Models {
 
         [SortOrder(10)] public virtual ulong Index { get; set; }
 
-        public abstract void WriteData(BinaryWriter writer);
-
         [NotifyPropertyChangedInvocator]
         public virtual void OnPropertyChanged([CallerMemberName] string propertyName = null) {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

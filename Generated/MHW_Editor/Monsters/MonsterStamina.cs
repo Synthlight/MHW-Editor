@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -104,7 +105,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Magic_1_raw);
                 writer.Write(Magic_2_raw);
                 writer.Write(Monster_Id_raw);
@@ -176,7 +177,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Duration_raw);
                 writer.Write(Stamina_Min_raw);
                 writer.Write(Stamina_Max_raw);
@@ -219,7 +220,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Number_of_Stamina_Entries_raw);
             }
         }
@@ -280,7 +281,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Unk_raw);
                 writer.Write(Base_raw);
             }
@@ -350,7 +351,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Duration_raw);
                 writer.Write(Stamina_Min_raw);
                 writer.Write(Stamina_Max_raw);
@@ -393,7 +394,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Number_of_Stamina_Entries_raw);
             }
         }
@@ -454,7 +455,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Unk_raw);
                 writer.Write(Base_raw);
             }
@@ -524,7 +525,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Duration_raw);
                 writer.Write(Stamina_Min_raw);
                 writer.Write(Stamina_Max_raw);
@@ -567,7 +568,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Number_of_Stamina_Entries_raw);
             }
         }
@@ -628,7 +629,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Unk_raw);
                 writer.Write(Base_raw);
             }
@@ -668,13 +669,13 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Fatigue_Speed_raw);
             }
         }
 
         public override void LoadFile(string targetFile) {
-            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
             var Monster_Stamina_1__ = new MhwStructDataContainer(Monster_Stamina_1_.LoadData(reader, null), typeof(Monster_Stamina_1_));
             data.AddLast(Monster_Stamina_1__);

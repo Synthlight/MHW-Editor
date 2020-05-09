@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -81,7 +82,7 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Magic_1_raw);
                 writer.Write(SLP_raw);
                 writer.Write(Magic_2_raw);
@@ -137,7 +138,7 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Header_raw);
                 if (Header_raw != 0) writer.Write(Path_raw.ToNullTermCharArray());
             }
@@ -432,7 +433,7 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Projectile_Body_EPV_Index_raw);
                 writer.Write(Projectile_Body_EPV_Element__raw);
                 writer.Write(Muzzle_EPV_Index_raw);
@@ -513,7 +514,7 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Number_of_Linked_Shell_Params_raw);
             }
         }
@@ -619,7 +620,7 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Header_raw);
                 writer.Write(Path_raw.ToNullTermCharArray());
                 writer.Write(Unk_1_raw);
@@ -1277,7 +1278,7 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Ground_Hit_EPV_Index_raw);
                 writer.Write(Ground_Hit_EPV_Element__raw);
                 writer.Write(Wall_Hit_EPV_Index_raw);
@@ -1779,7 +1780,7 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Wwise_Container_Header_raw);
                 if (Wwise_Container_Header_raw != 0) writer.Write(Wwise_Container_raw.ToNullTermCharArray());
                 writer.Write(Sound_Shoot_Header_raw);
@@ -2429,7 +2430,7 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Header_raw);
                 writer.Write(Projectile_Entity_Collider_raw);
                 writer.Write(Projectile_Model_Lifespan_raw);
@@ -2550,7 +2551,7 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Number_of_Modifiers_raw);
             }
         }
@@ -2866,7 +2867,7 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Header_raw);
                 if (Header_raw == 412627386) writer.Write(Value_1_if_412627386__raw);
                 if (Header_raw == 412627386) writer.Write(Value_2_if_412627386__raw);
@@ -2923,13 +2924,13 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Unk_55_raw);
             }
         }
 
         public override void LoadFile(string targetFile) {
-            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
             var Shlp_ = new MhwStructDataContainer(Shlp.LoadData(reader, null), typeof(Shlp));
             data.AddLast(Shlp_);

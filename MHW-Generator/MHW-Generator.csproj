@@ -102,6 +102,7 @@
     <Compile Include="Skills\MusicSkill.cs" />
     <Compile Include="Skills\SkillDat.cs" />
     <Compile Include="Skills\SkillPointData.cs" />
+    <Compile Include="Weapons\Collision.cs" />
     <Compile Include="Weapons\AwakenedLimitBreakR.cs" />
     <Compile Include="Weapons\AwakenedLimitBreak.cs" />
     <Compile Include="Weapons\AwakenedExp.cs" />

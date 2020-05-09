@@ -62,7 +62,7 @@ namespace MHW_Template.Struct_Generation.Multi {
             }
 
             InnerLoadData(template, indentation, @struct, parent);
-            InnerWriteData(template, indentation, @struct);
+            InnerWriteData(template, indentation, @struct, parent);
 
             // GetCustomView (if needed).
             if (@struct.showVertically) {
@@ -210,10 +210,15 @@ namespace MHW_Template.Struct_Generation.Multi {
             template.WriteLine(indentation, "            }");
         }
 
-        private static void InnerWriteData(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.StructData @struct) {
+        private static void InnerWriteData(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.StructData @struct, MhwMultiStructData.StructData parent) {
             // Individual WriteData.
             template.WriteLine("");
-            template.WriteLine(indentation, "            public override void WriteData(BinaryWriter writer) {");
+            // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
+            if (parent != null) {
+                template.WriteLine(indentation, $"            public void WriteData(BinaryWriter writer, {parent.SafeName} parent) {{");
+            } else {
+                template.WriteLine(indentation, "            public void WriteData(BinaryWriter writer) {");
+            }
 
             // Do first since we need to update counts before writing them.
             foreach (var entry in @struct.entries) {
@@ -225,7 +230,12 @@ namespace MHW_Template.Struct_Generation.Multi {
                         var linkEntry  = entry.subStruct._010Link.entry;
                         var typeString = COMPILER.GetTypeOutput(new CodeTypeReference(linkEntry.type));
 
-                        template.WriteLine(indentation, $"                {linkEntry.SafeName} = ({typeString}) {entryName}.Count;");
+                        var condition = "";
+                        if (entry.condition != null) {
+                            condition = $"{entry.condition} ".Replace("|ref|", "");
+                        }
+
+                        template.WriteLine(indentation, $"                {condition}{linkEntry.SafeName} = ({typeString}) {entryName}.Count;");
                     }
                 }
             }
@@ -243,7 +253,7 @@ namespace MHW_Template.Struct_Generation.Multi {
                     template.WriteLine(indentation, $"                {condition}writer.Write({entryName}.ToNullTermCharArray());");
                 } else if (entry.HasSubStruct) {
                     template.WriteLine(indentation, $"                {condition}foreach (var obj in {entryName}) {{");
-                    template.WriteLine(indentation, "                    obj.WriteData(writer);");
+                    template.WriteLine(indentation, "                    obj.WriteData(writer, this);");
                     template.WriteLine(indentation, "                }");
                 } else {
                     template.WriteLine(indentation, $"                {condition}writer.Write({entryName});");
@@ -254,6 +264,8 @@ namespace MHW_Template.Struct_Generation.Multi {
         }
 
         private static void InnerLoadData(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.StructData @struct, MhwMultiStructData.StructData parent = null) {
+            if (@struct.customSaveLoad) return;
+
             var name       = @struct.SafeName;
             var returnType = "object";
 
@@ -288,14 +300,28 @@ namespace MHW_Template.Struct_Generation.Multi {
             }
 
             template.WriteLine(indentation, "                for (ulong i = 0; i < count; i++) {");
-            template.WriteLine(indentation, "                    list.Add(LoadData(reader, i));");
+
+            // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
+            if (parent != null) {
+                template.WriteLine(indentation, "                    list.Add(LoadData(reader, i, parent));");
+            } else {
+                template.WriteLine(indentation, "                    list.Add(LoadData(reader, i));");
+            }
+
             template.WriteLine(indentation, "                }");
             template.WriteLine(indentation, "                return list;");
             template.WriteLine(indentation, "            }");
 
             // Individual LoadData.
             template.WriteLine("");
-            template.WriteLine(indentation, $"            public static {name} LoadData(BinaryReader reader, ulong i) {{");
+
+            // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
+            if (parent != null) {
+                template.WriteLine(indentation, $"            public static {name} LoadData(BinaryReader reader, ulong i, {parent.SafeName} parent) {{");
+            } else {
+                template.WriteLine(indentation, $"            public static {name} LoadData(BinaryReader reader, ulong i) {{");
+            }
+
             template.WriteLine(indentation, $"                var data = new {name}();");
             template.WriteLine(indentation, "                data.Index = i;");
 
@@ -314,6 +340,9 @@ namespace MHW_Template.Struct_Generation.Multi {
                     template.WriteLine(indentation, $"                {condition}data.{entryName} = reader.ReadNullTermString();");
                 } else if (entry.HasSubStruct) {
                     template.WriteLine(indentation, $"                {condition}data.{entryName} = {entry.subStruct.SafeName}.LoadData(reader, data);");
+                    if (!string.IsNullOrEmpty(condition)) {
+                        template.WriteLine(indentation, $"                else data.{entryName} = new ObservableCollection<{entry.subStruct.SafeName}>();");
+                    }
                 } else {
                     template.WriteLine(indentation, $"                {condition}data.{entryName} = reader.Read{GetReadType(entry.type)}();");
                 }
@@ -327,7 +356,7 @@ namespace MHW_Template.Struct_Generation.Multi {
             // Master LoadData.
             template.WriteLine("");
             template.WriteLine("        public override void LoadFile(string targetFile) {");
-            template.WriteLine("            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));");
+            template.WriteLine("            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);");
             template.WriteLine("            data = new LinkedList<MhwStructDataContainer>();");
 
             foreach (var @struct in structData.structs) {

@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -81,7 +82,7 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Magic_1_raw);
                 writer.Write(Magic_2_raw);
                 writer.Write(Entry_Count_raw);
@@ -169,19 +170,19 @@ namespace MHW_Editor.Weapons {
                     var list = new ObservableCollection<Custom_Mods>();
                     var count = 5UL;
                     for (ulong i = 0; i < count; i++) {
-                        list.Add(LoadData(reader, i));
+                        list.Add(LoadData(reader, i, parent));
                     }
                     return list;
                 }
 
-                public static Custom_Mods LoadData(BinaryReader reader, ulong i) {
+                public static Custom_Mods LoadData(BinaryReader reader, ulong i, Entries parent) {
                     var data = new Custom_Mods();
                     data.Index = i;
                     data.Mod_raw = reader.ReadInt32();
                     return data;
                 }
 
-                public override void WriteData(BinaryWriter writer) {
+                public void WriteData(BinaryWriter writer, Entries parent) {
                     writer.Write(Mod_raw);
                 }
             }
@@ -221,19 +222,19 @@ namespace MHW_Editor.Weapons {
                     var list = new ObservableCollection<Armors>();
                     var count = 6UL;
                     for (ulong i = 0; i < count; i++) {
-                        list.Add(LoadData(reader, i));
+                        list.Add(LoadData(reader, i, parent));
                     }
                     return list;
                 }
 
-                public static Armors LoadData(BinaryReader reader, ulong i) {
+                public static Armors LoadData(BinaryReader reader, ulong i, Entries parent) {
                     var data = new Armors();
                     data.Index = i;
                     data.Armor_Id_raw = reader.ReadInt32();
                     return data;
                 }
 
-                public override void WriteData(BinaryWriter writer) {
+                public void WriteData(BinaryWriter writer, Entries parent) {
                     writer.Write(Armor_Id_raw);
                 }
             }
@@ -273,19 +274,19 @@ namespace MHW_Editor.Weapons {
                     var list = new ObservableCollection<Mantles>();
                     var count = 2UL;
                     for (ulong i = 0; i < count; i++) {
-                        list.Add(LoadData(reader, i));
+                        list.Add(LoadData(reader, i, parent));
                     }
                     return list;
                 }
 
-                public static Mantles LoadData(BinaryReader reader, ulong i) {
+                public static Mantles LoadData(BinaryReader reader, ulong i, Entries parent) {
                     var data = new Mantles();
                     data.Index = i;
                     data.Mantle_Id_raw = reader.ReadInt32();
                     return data;
                 }
 
-                public override void WriteData(BinaryWriter writer) {
+                public void WriteData(BinaryWriter writer, Entries parent) {
                     writer.Write(Mantle_Id_raw);
                 }
             }
@@ -318,19 +319,19 @@ namespace MHW_Editor.Weapons {
                     var list = new ObservableCollection<Armor_Level>();
                     var count = 5UL;
                     for (ulong i = 0; i < count; i++) {
-                        list.Add(LoadData(reader, i));
+                        list.Add(LoadData(reader, i, parent));
                     }
                     return list;
                 }
 
-                public static Armor_Level LoadData(BinaryReader reader, ulong i) {
+                public static Armor_Level LoadData(BinaryReader reader, ulong i, Entries parent) {
                     var data = new Armor_Level();
                     data.Index = i;
                     data.Armor_Lvl_raw = reader.ReadUInt32();
                     return data;
                 }
 
-                public override void WriteData(BinaryWriter writer) {
+                public void WriteData(BinaryWriter writer, Entries parent) {
                     writer.Write(Armor_Lvl_raw);
                 }
             }
@@ -426,12 +427,12 @@ namespace MHW_Editor.Weapons {
                     var list = new ObservableCollection<Decorations>();
                     var count = 9UL;
                     for (ulong i = 0; i < count; i++) {
-                        list.Add(LoadData(reader, i));
+                        list.Add(LoadData(reader, i, parent));
                     }
                     return list;
                 }
 
-                public static Decorations LoadData(BinaryReader reader, ulong i) {
+                public static Decorations LoadData(BinaryReader reader, ulong i, Entries parent) {
                     var data = new Decorations();
                     data.Index = i;
                     data.Deco_1_raw = reader.ReadUInt32();
@@ -440,7 +441,7 @@ namespace MHW_Editor.Weapons {
                     return data;
                 }
 
-                public override void WriteData(BinaryWriter writer) {
+                public void WriteData(BinaryWriter writer, Entries parent) {
                     writer.Write(Deco_1_raw);
                     writer.Write(Deco_2_raw);
                     writer.Write(Deco_3_raw);
@@ -594,12 +595,12 @@ namespace MHW_Editor.Weapons {
                     var list = new ObservableCollection<Items>();
                     var count = 24UL;
                     for (ulong i = 0; i < count; i++) {
-                        list.Add(LoadData(reader, i));
+                        list.Add(LoadData(reader, i, parent));
                     }
                     return list;
                 }
 
-                public static Items LoadData(BinaryReader reader, ulong i) {
+                public static Items LoadData(BinaryReader reader, ulong i, Entries parent) {
                     var data = new Items();
                     data.Index = i;
                     data.Item_Id_raw = reader.ReadUInt32();
@@ -607,7 +608,7 @@ namespace MHW_Editor.Weapons {
                     return data;
                 }
 
-                public override void WriteData(BinaryWriter writer) {
+                public void WriteData(BinaryWriter writer, Entries parent) {
                     writer.Write(Item_Id_raw);
                     writer.Write(Item_Cnt_raw);
                 }
@@ -662,12 +663,12 @@ namespace MHW_Editor.Weapons {
                     var list = new ObservableCollection<Ammo>();
                     var count = 16UL;
                     for (ulong i = 0; i < count; i++) {
-                        list.Add(LoadData(reader, i));
+                        list.Add(LoadData(reader, i, parent));
                     }
                     return list;
                 }
 
-                public static Ammo LoadData(BinaryReader reader, ulong i) {
+                public static Ammo LoadData(BinaryReader reader, ulong i, Entries parent) {
                     var data = new Ammo();
                     data.Index = i;
                     data.Ammo_Id_raw = reader.ReadUInt32();
@@ -675,7 +676,7 @@ namespace MHW_Editor.Weapons {
                     return data;
                 }
 
-                public override void WriteData(BinaryWriter writer) {
+                public void WriteData(BinaryWriter writer, Entries parent) {
                     writer.Write(Ammo_Id_raw);
                     writer.Write(Ammo_Cnt_raw);
                 }
@@ -721,25 +722,25 @@ namespace MHW_Editor.Weapons {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Id_raw);
                 writer.Write(Weapon_Type_raw);
                 writer.Write(Weapon_Id_raw);
                 foreach (var obj in Custom_Mods_raw) {
-                    obj.WriteData(writer);
+                    obj.WriteData(writer, this);
                 }
                 foreach (var obj in Armors_raw) {
-                    obj.WriteData(writer);
+                    obj.WriteData(writer, this);
                 }
                 foreach (var obj in Mantles_raw) {
-                    obj.WriteData(writer);
+                    obj.WriteData(writer, this);
                 }
                 foreach (var obj in Armor_Level_raw) {
-                    obj.WriteData(writer);
+                    obj.WriteData(writer, this);
                 }
                 writer.Write(Unk_1_raw);
                 foreach (var obj in Decorations_raw) {
-                    obj.WriteData(writer);
+                    obj.WriteData(writer, this);
                 }
                 writer.Write(Unk_2_raw);
                 writer.Write(Unk_3_raw);
@@ -749,16 +750,16 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_7_raw);
                 writer.Write(Unk_8_raw);
                 foreach (var obj in Items_raw) {
-                    obj.WriteData(writer);
+                    obj.WriteData(writer, this);
                 }
                 foreach (var obj in Ammo_raw) {
-                    obj.WriteData(writer);
+                    obj.WriteData(writer, this);
                 }
             }
         }
 
         public override void LoadFile(string targetFile) {
-            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
             var Aeq_ = new MhwStructDataContainer(Aeq.LoadData(reader, null), typeof(Aeq));
             data.AddLast(Aeq_);

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -57,18 +56,25 @@ namespace MHW_Editor.Models {
             }
 
             using var memoryStream = new MemoryStream();
-            using var writer       = new BinaryWriter(memoryStream, Encoding.ASCII, true);
+            using var writer       = new BinaryWriter(memoryStream, Encoding.UTF8, true);
             foreach (var entry in data) {
-                foreach (MhwStructItem obj in entry.list) {
-                    obj.WriteData(writer);
+                foreach (dynamic obj in entry.list) {
+                    try {
+                        obj.WriteData(writer);
+                    } catch (Exception e) {
+                        Console.Error.Write($"Save Error: {e}");
+                    }
                 }
             }
 
-            const int paddingBlockSize = 8;
-            var       paddingNeeded    = memoryStream.Length % paddingBlockSize;
-            if (paddingNeeded > 0) {
-                for (var i = 0; i < paddingBlockSize - paddingNeeded; i++) {
-                    writer.Write((byte) 0);
+            // Only pad for encrypted files.
+            if (EncryptionKey != null) {
+                const int paddingBlockSize = 8;
+                var       paddingNeeded    = memoryStream.Length % paddingBlockSize;
+                if (paddingNeeded > 0) {
+                    for (var i = 0; i < paddingBlockSize - paddingNeeded; i++) {
+                        writer.Write((byte) 0);
+                    }
                 }
             }
 

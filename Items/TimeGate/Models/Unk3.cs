@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel;
-using System.IO;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Items.TimeGate.Models {
@@ -19,8 +18,5 @@ namespace MHW_Editor.Items.TimeGate.Models {
         [DisplayName("Unk 2")]
         [IsReadOnly]
         public uint unk2 { get; set; }
-
-        public override void WriteData(BinaryWriter writer) {
-        }
     }
 }

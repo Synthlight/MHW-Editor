@@ -6,7 +6,7 @@ namespace MHW_Generator.Misc {
     public class MotionBlendData : IMultiStruct {
         public MultiStruct Generate() { // .mbd
             var structs = new List<MhwMultiStructData.StructData> {
-                new MhwMultiStructData.StructData("Motion Blend Data", new List<MhwMultiStructData.Entry> {
+                new MhwMultiStructData.StructData("Motion Blend Data (1)", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
                     new MhwMultiStructData.Entry("Magic 2", typeof(uint), true),
                     new MhwMultiStructData.Entry("Entry Count", typeof(uint), true).Out(out var entryCount)
@@ -32,7 +32,11 @@ namespace MHW_Generator.Misc {
                     }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(null, innerCount))),
 
                     new MhwMultiStructData.Entry("Unk 5", typeof(uint), true)
-                }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, entryCount))
+                }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, entryCount)),
+
+                new MhwMultiStructData.StructData("Motion Blend Data (2)", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("End", typeof(uint))
+                }, 1)
             };
 
             return new MultiStruct("MHW_Editor.Misc", "MotionBlendData", new MhwMultiStructData(structs, "mbd"));

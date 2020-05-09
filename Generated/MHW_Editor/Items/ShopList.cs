@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -81,7 +82,7 @@ namespace MHW_Editor.Items {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Magic_1_raw);
                 writer.Write(Magic_2_raw);
                 writer.Write(Item_Count_raw);
@@ -181,7 +182,7 @@ namespace MHW_Editor.Items {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Index_raw);
                 writer.Write(Item_Id_raw);
                 writer.Write(Story_Unlock_raw);
@@ -190,7 +191,7 @@ namespace MHW_Editor.Items {
         }
 
         public override void LoadFile(string targetFile) {
-            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
             var Shop_List_ = new MhwStructDataContainer(Shop_List.LoadData(reader, null), typeof(Shop_List));
             data.AddLast(Shop_List_);

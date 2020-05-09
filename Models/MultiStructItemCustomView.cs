@@ -1,35 +1,32 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.IO;
 using System.Reflection;
 using JetBrains.Annotations;
 
 namespace MHW_Editor.Models {
     public class MultiStructItemCustomView : MhwStructItem {
         private readonly IHasCustomView<MultiStructItemCustomView> parent;
-        private readonly MethodInfo getMethod;
-        private readonly MethodInfo setMethod;
-        private readonly Type propertyType;
-        private readonly bool isReadOnly;
+        private readonly MethodInfo                                getMethod;
+        private readonly MethodInfo                                setMethod;
+        private readonly Type                                      propertyType;
+        private readonly bool                                      isReadOnly;
 
         public MultiStructItemCustomView(IHasCustomView<MultiStructItemCustomView> parent, string name, string propertyName) {
             this.parent = parent;
-            Name = name;
+            Name        = name;
 
             var property = parent.GetType().GetProperty(propertyName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
             Debug.Assert(property != null, nameof(property) + " != null");
 
             propertyType = property.PropertyType;
-            getMethod = property.GetGetMethod();
-            setMethod = property.GetSetMethod();
+            getMethod    = property.GetGetMethod();
+            setMethod    = property.GetSetMethod();
 
             isReadOnly = (IsReadOnlyAttribute) property.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
         }
 
-        [SortOrder(0)]
-        [UsedImplicitly]
-        public string Name { get; }
+        [SortOrder(0)] [UsedImplicitly] public string Name { get; }
 
         [DisplayName("")] // Hide it for vertical view since it will always be 0;
         public override ulong Index => base.Index;
@@ -73,9 +70,6 @@ namespace MHW_Editor.Models {
                     _ => throw new ArgumentOutOfRangeException()
                 };
             }
-        }
-
-        public override void WriteData(BinaryWriter writer) {
         }
     }
 }

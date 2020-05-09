@@ -13,7 +13,7 @@ typedef struct {
 
 typedef struct {
     uint Header;
-    if (Header != 0)  { string Path; }
+    if (Header != 0) { string Path; }
 } Assets;
 
 typedef struct {
@@ -26,10 +26,10 @@ typedef struct {
     ubyte Muzzle_Joint_3;
     ubyte Muzzle_Joint_4;
     uint Obj_Collision_Header;
-    if (Obj_Collision_Header != 0)  { string Obj_Collision; }
+    if (Obj_Collision_Header != 0) { string Obj_Collision; }
     uint Obj_Collision_Index;
     uint Timeline_List_Header;
-    if (Timeline_List_Header != 0)  { string Timeline_List; }
+    if (Timeline_List_Header != 0) { string Timeline_List; }
     uint Unk_2;
     uint Unk_3;
     uint Unk_4;
@@ -96,7 +96,7 @@ typedef struct {
 
 typedef struct {
     uint Wwise_Container_Header;
-    if (Wwise_Container_Header != 0)  { string Wwise_Container; }
+    if (Wwise_Container_Header != 0) { string Wwise_Container; }
     int Sound_Shoot_Header;
     int Sound_Shoot;
     int Sound_Loop_Header;
@@ -170,17 +170,17 @@ typedef struct {
 
 typedef struct {
     uint Header;
-    if (Header == 412627386)  { byte Value_1_if_412627386_; }
-    if (Header == 412627386)  { byte Value_2_if_412627386_; }
-    if (Header == 412627386)  { byte Value_3_if_412627386_; }
-    if (Header == 412627386)  { byte Value_4_if_412627386_; }
-    if (Header == 3289971)  { int Value_if_3289971_; }
-    if (Header == 79120377)  { float Value_if_79120377_; }
-    if (Header == 306780182)  { byte Value_if_306780182_; }
-    if (Header == 1335056316)  { float Value_X_if_1335056316_; }
-    if (Header == 1335056316)  { float Value_Y_if_1335056316_; }
-    if (Header == 1335056316)  { float Value_Z_if_1335056316_; }
-    if (Header == 1335056316)  { float Value_Unk_if_1335056316_; }
+    if (Header == 412627386) { byte Value_1_if_412627386_; }
+    if (Header == 412627386) { byte Value_2_if_412627386_; }
+    if (Header == 412627386) { byte Value_3_if_412627386_; }
+    if (Header == 412627386) { byte Value_4_if_412627386_; }
+    if (Header == 3289971) { int Value_if_3289971_; }
+    if (Header == 79120377) { float Value_if_79120377_; }
+    if (Header == 306780182) { byte Value_if_306780182_; }
+    if (Header == 1335056316) { float Value_X_if_1335056316_; }
+    if (Header == 1335056316) { float Value_Y_if_1335056316_; }
+    if (Header == 1335056316) { float Value_Z_if_1335056316_; }
+    if (Header == 1335056316) { float Value_Unk_if_1335056316_; }
     string Name;
     uint Unk_1;
     string DataType;

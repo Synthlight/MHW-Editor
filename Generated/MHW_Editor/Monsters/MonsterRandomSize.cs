@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -81,7 +82,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Magic_1_raw);
                 writer.Write(Magic_2_raw);
                 writer.Write(Number_of_Monsters_raw);
@@ -197,7 +198,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Monster_Id_raw);
                 writer.Write(Gold_Small_Crown_Limit_raw);
                 writer.Write(Silver_Crown_Limit_raw);
@@ -242,7 +243,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Number_of_Crown_Tables_raw);
             }
         }
@@ -1428,7 +1429,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Name_Jap__raw.ToNullTermCharArray());
                 writer.Write(Crown_Size_Multiplier_1_raw);
                 writer.Write(Crown_Size_Rarity_1_raw);
@@ -1510,7 +1511,7 @@ namespace MHW_Editor.Monsters {
         }
 
         public override void LoadFile(string targetFile) {
-            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
             var Monster_Random_Sizes_ = new MhwStructDataContainer(Monster_Random_Sizes.LoadData(reader, null), typeof(Monster_Random_Sizes));
             data.AddLast(Monster_Random_Sizes_);

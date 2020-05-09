@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -104,7 +105,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Magic_1_raw);
                 writer.Write(Magic_2_raw);
                 writer.Write(Monster_Id_raw);
@@ -371,7 +372,7 @@ namespace MHW_Editor.Monsters {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Build_to_Trigger_raw);
                 writer.Write(Duration_raw);
                 writer.Write(Speed_Modifier_raw);
@@ -392,7 +393,7 @@ namespace MHW_Editor.Monsters {
         }
 
         public override void LoadFile(string targetFile) {
-            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
             var Monster_Rage_ = new MhwStructDataContainer(Monster_Rage.LoadData(reader, null), typeof(Monster_Rage));
             data.AddLast(Monster_Rage_);

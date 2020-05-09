@@ -12,12 +12,13 @@ typedef struct {
 } Melder_Exchange;
 
 typedef struct {
-    ushort Unk;
-} Items;
-
-typedef struct {
     uint Source_Item_Id;
     uint Unk_1;
+
+    typedef struct {
+        ushort Unk;
+    } Items;
+
     Items Items_[215]<optimize=false>;
 } Item_Box;
 

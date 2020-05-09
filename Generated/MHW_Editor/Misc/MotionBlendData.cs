@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -14,9 +15,9 @@ namespace MHW_Editor.Misc {
     public partial class MotionBlendData {
         public override string EncryptionKey => null;
 
-        public partial class Motion_Blend_Data : MhwStructItem {
+        public partial class Motion_Blend_Data_1_ : MhwStructItem {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "Motion Blend Data";
+            public const string GridName = "Motion Blend Data (1)";
 
             protected uint Magic_1_raw;
             public const string Magic_1_displayName = "Magic 1";
@@ -72,8 +73,8 @@ namespace MHW_Editor.Misc {
                 return list;
             }
 
-            public static Motion_Blend_Data LoadData(BinaryReader reader, ulong i) {
-                var data = new Motion_Blend_Data();
+            public static Motion_Blend_Data_1_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Motion_Blend_Data_1_();
                 data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
                 data.Magic_2_raw = reader.ReadUInt32();
@@ -81,7 +82,7 @@ namespace MHW_Editor.Misc {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 writer.Write(Magic_1_raw);
                 writer.Write(Magic_2_raw);
                 writer.Write(Entry_Count_raw);
@@ -311,12 +312,12 @@ namespace MHW_Editor.Misc {
                     var list = new ObservableCollection<Unk_Array>();
                     var count = (ulong) parent.Num_of_Values;
                     for (ulong i = 0; i < count; i++) {
-                        list.Add(LoadData(reader, i));
+                        list.Add(LoadData(reader, i, parent));
                     }
                     return list;
                 }
 
-                public static Unk_Array LoadData(BinaryReader reader, ulong i) {
+                public static Unk_Array LoadData(BinaryReader reader, ulong i, Default parent) {
                     var data = new Unk_Array();
                     data.Index = i;
                     data.Unk_1_raw = reader.ReadNullTermString();
@@ -331,7 +332,7 @@ namespace MHW_Editor.Misc {
                     return data;
                 }
 
-                public override void WriteData(BinaryWriter writer) {
+                public void WriteData(BinaryWriter writer, Default parent) {
                     writer.Write(Unk_1_raw.ToNullTermCharArray());
                     writer.Write(Unk_2_raw);
                     writer.Write(Unk_3_raw);
@@ -367,7 +368,7 @@ namespace MHW_Editor.Misc {
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
-                var countTarget = (Motion_Blend_Data) lastStruct.Last();
+                var countTarget = (Motion_Blend_Data_1_) lastStruct.Last();
                 var count = (ulong) countTarget.Entry_Count;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -388,7 +389,7 @@ namespace MHW_Editor.Misc {
                 return data;
             }
 
-            public override void WriteData(BinaryWriter writer) {
+            public void WriteData(BinaryWriter writer) {
                 Num_of_Values = (uint) Unk_4_raw.Count;
                 writer.Write(Unk_1_raw);
                 writer.Write(lmt_Offset_Index_raw);
@@ -396,20 +397,61 @@ namespace MHW_Editor.Misc {
                 writer.Write(Unk_2_raw);
                 writer.Write(Unk_3_raw);
                 foreach (var obj in Unk_4_raw) {
-                    obj.WriteData(writer);
+                    obj.WriteData(writer, this);
                 }
                 writer.Write(Unk_5_raw);
             }
         }
 
+        public partial class Motion_Blend_Data_2_ : MhwStructItem {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "Motion Blend Data (2)";
+
+            protected uint End_raw;
+            public const string End_displayName = "End";
+            public const int End_sortIndex = 50;
+            [SortOrder(End_sortIndex)]
+            [DisplayName(End_displayName)]
+            public virtual uint End {
+                get => End_raw;
+                set {
+                    if (End_raw == value) return;
+                    End_raw = value;
+                    OnPropertyChanged(nameof(End));
+                }
+            }
+
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static Motion_Blend_Data_2_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Motion_Blend_Data_2_();
+                data.Index = i;
+                data.End_raw = reader.ReadUInt32();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(End_raw);
+            }
+        }
+
         public override void LoadFile(string targetFile) {
-            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey));
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Motion_Blend_Data_ = new MhwStructDataContainer(Motion_Blend_Data.LoadData(reader, null), typeof(Motion_Blend_Data));
-            data.AddLast(Motion_Blend_Data_);
-            var Default_ = new MhwStructDataContainer(Default.LoadData(reader, Motion_Blend_Data_.list), typeof(Default));
-            Default_.SetCountTargetToUpdate(Motion_Blend_Data_, -1, "Entry_Count");
+            var Motion_Blend_Data_1__ = new MhwStructDataContainer(Motion_Blend_Data_1_.LoadData(reader, null), typeof(Motion_Blend_Data_1_));
+            data.AddLast(Motion_Blend_Data_1__);
+            var Default_ = new MhwStructDataContainer(Default.LoadData(reader, Motion_Blend_Data_1__.list), typeof(Default));
+            Default_.SetCountTargetToUpdate(Motion_Blend_Data_1__, -1, "Entry_Count");
             data.AddLast(Default_);
+            var Motion_Blend_Data_2__ = new MhwStructDataContainer(Motion_Blend_Data_2_.LoadData(reader, null), typeof(Motion_Blend_Data_2_));
+            data.AddLast(Motion_Blend_Data_2__);
         }
     }
 }
