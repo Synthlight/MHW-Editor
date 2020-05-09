@@ -53,7 +53,6 @@ namespace MHW_Editor {
         private dynamic customFileData;
 
         public bool unlockFields { get; }
-        public bool showAll      { get; }
 
         public static string locale = "eng";
         public string Locale {
@@ -97,10 +96,6 @@ namespace MHW_Editor {
             if (args.Length >= 2) {
                 if (args.ContainsIgnoreCase("-unlock")) {
                     unlockFields = true;
-                }
-
-                if (args.ContainsIgnoreCase("-showAll")) {
-                    showAll = true;
                 }
             }
 
