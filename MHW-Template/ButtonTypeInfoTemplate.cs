@@ -9,7 +9,6 @@
 // ------------------------------------------------------------------------------
 namespace MHW_Template
 {
-    using MHW_Template.Models;
     using System.Collections.Generic;
     using System;
     
@@ -29,14 +28,14 @@ namespace MHW_Template
         {
             this.Write("using System;\r\nusing System.Collections.Generic;\r\n\r\nnamespace ");
             
-            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public static class ");
             
-            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            #line 15 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
@@ -44,7 +43,7 @@ namespace MHW_Template
             this.Write(" {\r\n        public static readonly List<string> TYPES_WITH_BUTTONS = new List<str" +
                     "ing> {\r\n");
             
-            #line 18 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
 
     foreach (var entry in typesWithButtons) {
         WriteLine($"            \"{entry}\",");
@@ -56,7 +55,7 @@ namespace MHW_Template
             this.Write("        };\r\n\r\n        public static readonly List<string> BUTTON_NAMES = new List" +
                     "<string> {\r\n");
             
-            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
 
     foreach (var entry in buttonNames) {
         WriteLine($"            \"{entry}\",");
@@ -68,7 +67,7 @@ namespace MHW_Template
             this.Write("        };\r\n\r\n        public static readonly Dictionary<Type, List<string>> TYPE_" +
                     "AND_NAME = new Dictionary<Type, List<string>> {\r\n");
             
-            #line 34 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
+            #line 33 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\ButtonTypeInfoTemplate.tt"
 
     foreach (var kvp in typeAndName) {
         WriteLine($"            {{typeof({kvp.Key.FullName?.Replace("+", ".")}), new List<string> {{");

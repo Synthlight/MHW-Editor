@@ -7,7 +7,6 @@
 <#@ parameter type="System.Collections.Generic.SortedSet<string>" name="typesWithButtons" #>
 <#@ parameter type="System.Collections.Generic.SortedSet<string>" name="buttonNames" #>
 <#@ parameter type="System.Collections.Generic.Dictionary<Type, List<string>>" name="typeAndName" #>
-<#@ import namespace="MHW_Template.Models" #>
 <#@ import namespace="System.Collections.Generic" #>
 using System;
 using System.Collections.Generic;

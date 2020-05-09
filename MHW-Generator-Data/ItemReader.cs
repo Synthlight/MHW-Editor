@@ -3,7 +3,6 @@ using System.IO;
 using MHW_Editor.Assets;
 using MHW_Editor.Items;
 using MHW_Template;
-using MHW_Template.Armors;
 
 namespace MHW_Generator_Data {
     public static class ItemReader {

@@ -9,11 +9,10 @@
 // ------------------------------------------------------------------------------
 namespace MHW_Template.Struct_Generation.Single
 {
-    using Microsoft.CSharp;
     using System.CodeDom;
-    using System.Collections.Generic;
     using System.Runtime.InteropServices;
     using System.Text.RegularExpressions;
+    using Microsoft.CSharp;
     using System;
     
     /// <summary>
@@ -33,7 +32,7 @@ namespace MHW_Template.Struct_Generation.Single
             this.Write("//------------------------------------------------\r\n//--- 010 Editor v10.0 Binary" +
                     " Template\r\n//------------------------------------------------\r\n\r\n");
             
-            #line 17 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\VerticalStruct010Template.tt"
+            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\VerticalStruct010Template.tt"
 
     var compiler = new CSharpCodeProvider();
     long offsetOffset = 0; // An offset to our offset for all subsequent offsets.

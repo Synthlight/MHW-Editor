@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel;
 using MHW_Editor.Models;
 using MHW_Template.Armors;
-using MHW_Template.Models;
 
 namespace MHW_Editor.Items {
     public class EqCrt_Palico : EqCrt_Base {

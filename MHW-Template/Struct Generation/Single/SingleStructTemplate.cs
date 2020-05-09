@@ -9,11 +9,10 @@
 // ------------------------------------------------------------------------------
 namespace MHW_Template.Struct_Generation.Single
 {
-    using Microsoft.CSharp;
     using System.CodeDom;
     using System.Runtime.InteropServices;
     using System.Text.RegularExpressions;
-    using MHW_Template.Models;
+    using Microsoft.CSharp;
     using System;
     
     /// <summary>
@@ -33,56 +32,56 @@ namespace MHW_Template.Struct_Generation.Single
             this.Write("using System;\r\nusing System.ComponentModel;\r\nusing MHW_Editor.Assets;\r\nusing MHW_" +
                     "Editor.Models;\r\nusing MHW_Template;\r\nusing MHW_Template.Models;\r\n\r\nnamespace ");
             
-            #line 20 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
+            #line 19 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write(" {\r\n    public partial class ");
             
-            #line 21 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
+            #line 20 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(className));
             
             #line default
             #line hidden
             this.Write(" {\r\n        public const uint StructSize = ");
             
-            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
+            #line 21 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.size));
             
             #line default
             #line hidden
             this.Write(";\r\n        public const ulong InitialOffset = ");
             
-            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
+            #line 22 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.offsetInitial));
             
             #line default
             #line hidden
             this.Write(";\r\n        public const long EntryCountOffset = ");
             
-            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
+            #line 23 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.entryCountOffset));
             
             #line default
             #line hidden
             this.Write(";\r\n        public const string EncryptionKey = ");
             
-            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
+            #line 24 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.encryptionKey == null ? "null" : $"\"{structData.encryptionKey}\""));
             
             #line default
             #line hidden
             this.Write(";\r\n        public override string UniqueId => $\"");
             
-            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
+            #line 25 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.uniqueIdFormula));
             
             #line default
             #line hidden
             this.Write("\";\r\n");
             
-            #line 27 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
+            #line 26 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
 
     var compiler = new CSharpCodeProvider();
     var sortIndex = 50;
@@ -205,7 +204,7 @@ namespace MHW_Template.Struct_Generation.Single
             #line hidden
             this.Write("\r\n        public const int lastSortIndex = ");
             
-            #line 145 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
+            #line 144 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Single\SingleStructTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(sortIndex));
             
             #line default

@@ -4,9 +4,6 @@
 <#@ assembly name="$(TargetDir)\MHW-Template.dll" #>
 <#@ parameter type="System.String" name="_namespace" #>
 <#@ parameter type="MHW_Template.Struct_Generation.Multi.MhwMultiStructData" name="structData" #>
-<#@ import namespace="Microsoft.CSharp" #>
-<#@ import namespace="System.CodeDom" #>
-<#@ import namespace="System.Text.RegularExpressions" #>
 //------------------------------------------------
 //--- 010 Editor v10.0 Binary Template
 //   Authors: Many. See MHW Editor Cretits.

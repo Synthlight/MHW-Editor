@@ -9,9 +9,6 @@
 // ------------------------------------------------------------------------------
 namespace MHW_Template.Struct_Generation.Multi
 {
-    using Microsoft.CSharp;
-    using System.CodeDom;
-    using System.Text.RegularExpressions;
     using System;
     
     /// <summary>
@@ -31,21 +28,21 @@ namespace MHW_Template.Struct_Generation.Multi
             this.Write("//------------------------------------------------\r\n//--- 010 Editor v10.0 Binary" +
                     " Template\r\n//   Authors: Many. See MHW Editor Cretits.\r\n// File Mask: *.");
             
-            #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
+            #line 10 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.ext));
             
             #line default
             #line hidden
             this.Write("\r\n//  Category: ");
             
-            #line 14 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
+            #line 11 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
             
             #line default
             #line hidden
             this.Write("\r\n//------------------------------------------------\r\n");
             
-            #line 16 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
+            #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\Multi\MultiStruct010Template.tt"
 
     MultiStruct010Generation.Generate(this, structData);
 
