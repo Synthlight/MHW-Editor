@@ -157,12 +157,12 @@ namespace MHW_Editor.Weapons {
         public partial class OAP {
             public partial class End_Junk {
                 public static ObservableCollection<End_Junk> LoadData(BinaryReader reader, OAP parent) {
-                    var list = new ObservableCollection<End_Junk>();
-                    var i    = -1;
-                    while (reader.BaseStream.Position < reader.BaseStream.Length) {
+                    var list  = new ObservableCollection<End_Junk>();
+                    var bytes = reader.ReadRemainderAsByteArray();
+                    for (var i = 0; i < bytes.Count; i++) {
                         list.Add(new End_Junk {
-                            Index   = (ulong) ++i,
-                            Unk_raw = reader.ReadByte()
+                            Index   = (ulong) i,
+                            Unk_raw = bytes[i]
                         });
                     }
                     return list;

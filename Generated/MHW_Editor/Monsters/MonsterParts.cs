@@ -2334,9 +2334,9 @@ namespace MHW_Editor.Monsters {
             }
         }
 
-        public partial class Remainder : MhwStructItem {
+        public partial class Unknown : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "Remainder";
+            public const string GridName = "Unknown";
 
             protected uint unk1_raw;
             public const string unk1_displayName = "unk1";
@@ -2366,36 +2366,6 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
-            public partial class End_Junk : MhwStructItem {
-                public const ulong FixedSizeCount = 0;
-                public const string GridName = "End Junk";
-
-                protected byte Unk_raw;
-                public const string Unk_displayName = "Unk";
-                public const int Unk_sortIndex = 50;
-                [SortOrder(Unk_sortIndex)]
-                [DisplayName(Unk_displayName)]
-                [IsReadOnly]
-                public virtual byte Unk {
-                    get => Unk_raw;
-                    set {
-                        if (Unk_raw == value) return;
-                        Unk_raw = value;
-                        OnPropertyChanged(nameof(Unk));
-                    }
-                }
-
-                public void WriteData(BinaryWriter writer, Remainder parent) {
-                    writer.Write(Unk_raw);
-                }
-            }
-
-            public const string The_rest_of_the_file_as_bytes__displayName = "The rest of the file as bytes.";
-            public const int The_rest_of_the_file_as_bytes__sortIndex = 150;
-            [SortOrder(The_rest_of_the_file_as_bytes__sortIndex)]
-            [DisplayName(The_rest_of_the_file_as_bytes__displayName)]
-            public virtual ObservableCollection<End_Junk> The_rest_of_the_file_as_bytes__raw { get; protected set; }
-
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -2405,21 +2375,24 @@ namespace MHW_Editor.Monsters {
                 return list;
             }
 
-            public static Remainder LoadData(BinaryReader reader, ulong i) {
-                var data = new Remainder();
+            public static Unknown LoadData(BinaryReader reader, ulong i) {
+                var data = new Unknown();
                 data.Index = i;
                 data.unk1_raw = reader.ReadUInt32();
                 data.unk2_raw = reader.ReadUInt32();
-                data.The_rest_of_the_file_as_bytes__raw = End_Junk.LoadData(reader, data);
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(unk1_raw);
                 writer.Write(unk2_raw);
-                foreach (var obj in The_rest_of_the_file_as_bytes__raw) {
-                    obj.WriteData(writer, this);
-                }
+            }
+
+            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
+                return new ObservableCollection<MultiStructItemCustomView> {
+                    new MultiStructItemCustomView(this, "unk1", "unk1"),
+                    new MultiStructItemCustomView(this, "unk2", "unk2"),
+                };
             }
         }
 
@@ -2446,8 +2419,8 @@ namespace MHW_Editor.Monsters {
             var Unknowns_ = new MhwStructDataContainer(Unknowns.LoadData(reader, Unk_Header_.list), typeof(Unknowns));
             Unknowns_.SetCountTargetToUpdate(Unk_Header_, -1, "Unk_Count");
             data.AddLast(Unknowns_);
-            var Remainder_ = new MhwStructDataContainer(Remainder.LoadData(reader, null), typeof(Remainder));
-            data.AddLast(Remainder_);
+            var Unknown_ = new MhwStructDataContainer(Unknown.LoadData(reader, null), typeof(Unknown));
+            data.AddLast(Unknown_);
         }
     }
 }

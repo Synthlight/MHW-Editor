@@ -167,13 +167,7 @@ typedef struct {
 typedef struct {
     uint unk1;
     uint unk2;
-
-    typedef struct {
-        ubyte Unk;
-    } End_Junk;
-
-    End_Junk End_Junk_;
-} Remainder;
+} Unknown;
 
 Monster_Parts Monster_Parts_;
 Flinches Flinches_[Monster_Parts_.Flinches_Count]<optimize=false>;
@@ -183,4 +177,4 @@ Sever_Header Sever_Header_;
 Severs Severs_[Sever_Header_.Sever_Count]<optimize=false>;
 Unk_Header Unk_Header_;
 Unknowns Unknowns_[Unk_Header_.Unk_Count]<optimize=false>;
-Remainder Remainder_;
+Unknown Unknown_;

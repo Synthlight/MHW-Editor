@@ -165,13 +165,10 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("unk11", typeof(byte))
             }, _010Link: new MhwMultiStructData.ArrayLink(unkHeader, unkCount));
 
-            var remainder = new MhwMultiStructData.StructData("Remainder", new List<MhwMultiStructData.Entry> {
+            var remainder = new MhwMultiStructData.StructData("Unknown", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("unk1", typeof(uint)),
-                new MhwMultiStructData.Entry("unk2", typeof(uint)),
-                new MhwMultiStructData.Entry("The rest of the file as bytes.", typeof(void), true, subStruct: new MhwMultiStructData.StructData("End Junk", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Unk", typeof(byte), true)
-                }, customSaveLoad: true))
-            }, 1);
+                new MhwMultiStructData.Entry("unk2", typeof(uint))
+            }, 1, showVertically: true);
 
             var structs = new List<MhwMultiStructData.StructData> {
                 header,

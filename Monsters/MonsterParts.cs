@@ -1,6 +1,4 @@
-﻿using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.IO;
+﻿using System.ComponentModel;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Monsters {
@@ -17,22 +15,6 @@ namespace MHW_Editor.Monsters {
                         3 => Parts3_raw,
                         _ => null // Should never happen.
                     };
-                }
-            }
-        }
-
-        public partial class Remainder {
-            public partial class End_Junk {
-                public static ObservableCollection<End_Junk> LoadData(BinaryReader reader, Remainder parent) {
-                    var list = new ObservableCollection<End_Junk>();
-                    var i    = -1;
-                    while (reader.BaseStream.Position < reader.BaseStream.Length) {
-                        list.Add(new End_Junk {
-                            Index   = (ulong) ++i,
-                            Unk_raw = reader.ReadByte()
-                        });
-                    }
-                    return list;
                 }
             }
         }

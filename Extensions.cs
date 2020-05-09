@@ -210,5 +210,13 @@ namespace MHW_Editor {
             if (!str.EndsWith("\0")) str += "\0";
             return str.ToCharArray();
         }
+
+        public static List<byte> ReadRemainderAsByteArray(this BinaryReader reader) {
+            var list = new List<byte>();
+            while (reader.BaseStream.Position < reader.BaseStream.Length) {
+                list.Add(reader.ReadByte());
+            }
+            return list;
+        }
     }
 }
