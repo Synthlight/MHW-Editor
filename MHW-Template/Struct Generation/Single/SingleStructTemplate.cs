@@ -89,12 +89,12 @@ namespace MHW_Template.Struct_Generation.Single
     long baseOffset = 0; // Used in autoOffset.
 
     foreach (var entry in structData.entries) {
-        var realOffset = structData.autoOffset? baseOffset : (long) entry.offset + offsetOffset;
+        var realOffset = structData.autoOffset ? baseOffset : (long) entry.offset + offsetOffset;
         offsetOffset += entry.addOffset;
 
         if (structData.autoOffset) {
-            baseOffset += Marshal.SizeOf(entry.type);
-        }
+           baseOffset += Marshal.SizeOf(entry.type);
+       }
 
         var accessLevel = entry.accessLevel;
         if (accessLevel != "private") {

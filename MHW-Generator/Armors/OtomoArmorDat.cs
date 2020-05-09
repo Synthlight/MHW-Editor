@@ -7,10 +7,10 @@ namespace MHW_Generator.Armors {
     public class OtomoArmorDat : ISingleStruct {
         public SingleStruct Generate() { // .owp_dat
             return new SingleStruct("MHW_Editor.Armors", "OtomoArmorDat", new MhwStructData {
-                size = 42,
-                offsetInitial = 10,
+                size             = 42,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Set_Id}|{Variant}|{Equip_Slot}",
+                uniqueIdFormula  = "{Set_Id}|{Variant}|{Equip_Slot}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Set Id", 4, typeof(ushort), true),

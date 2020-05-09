@@ -14,7 +14,7 @@ namespace MHW_Generator_Data {
         private const string TARGET_FILE_BASE = @"V:\MHW\IB\chunk_combined\common\equip";
 
         public static Dictionary<WeaponType, LangMap> GetAllWeapons(IndexOrId by) {
-            var values = new Dictionary<WeaponType, LangMap>();
+            var values      = new Dictionary<WeaponType, LangMap>();
             var weaponTypes = (WeaponType[]) Enum.GetValues(typeof(WeaponType));
 
             foreach (var weaponType in weaponTypes) {
@@ -42,7 +42,7 @@ namespace MHW_Generator_Data {
 
             for (var i = 0; i < count; i++) {
                 var position = dat.BaseStream.Position;
-                var buff = dat.ReadBytes((int) structSize);
+                var buff     = dat.ReadBytes((int) structSize);
 
                 var weapon = (IWeapon) Activator.CreateInstance(weaponClassType, buff, (ulong) position, "");
 

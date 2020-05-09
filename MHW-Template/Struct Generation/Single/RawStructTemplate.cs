@@ -77,12 +77,12 @@ namespace MHW_Template.Struct_Generation.Single
     //newList.Sort((entry1, entry2) => entry1.offset.CompareTo(entry2.offset));
 
     foreach (var entry in structData.entries) {
-        var realOffset = structData.autoOffset? baseOffset : (long) entry.offset + offsetOffset;
+        var realOffset = structData.autoOffset ? baseOffset : (long) entry.offset + offsetOffset;
         offsetOffset += entry.addOffset;
 
         if (structData.autoOffset) {
-            baseOffset += Marshal.SizeOf(entry.type);
-        }
+           baseOffset += Marshal.SizeOf(entry.type);
+       }
 
         if (entry.forceUnique) continue;
 

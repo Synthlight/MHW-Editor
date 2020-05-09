@@ -670,13 +670,13 @@ namespace MHW_Generator.PlData {
             });
 
             return new VerticalStruct("MHW_Editor.PlData", "PlSkillParam", new MhwStructData {
-                size = 2400,
-                offsetInitial = 0,
+                size             = 2400,
+                offsetInitial    = 0,
                 entryCountOffset = -1,
-                uniqueIdFormula = "0",
-                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plsp"],
-                ext = "plsp",
-                entries = entries
+                uniqueIdFormula  = "0",
+                encryptionKey    = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plsp"],
+                ext              = "plsp",
+                entries          = entries
             });
         }
     }

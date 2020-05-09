@@ -7,10 +7,10 @@ namespace MHW_Generator.Armors {
     public class ASkill : ISingleStruct {
         public SingleStruct Generate() { // .ask
             return new SingleStruct("MHW_Editor.Armors", "ASkill", new MhwStructData {
-                size = 28,
-                offsetInitial = 10,
+                size             = 28,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Mantle_Id}",
+                uniqueIdFormula  = "{Mantle_Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Mantle Id", 16, typeof(uint), true),
                     new MhwStructData.Entry("Icon Id", 0, typeof(uint)),

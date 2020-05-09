@@ -7,10 +7,10 @@ namespace MHW_Generator.Items {
     public class BottleTable : ISingleStruct {
         public SingleStruct Generate() { // .bbtbl
             return new SingleStruct("MHW_Editor.Items", "BottleTable", new MhwStructData {
-                size = 6,
-                offsetInitial = 10,
+                size             = 6,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
+                uniqueIdFormula  = "{Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Close Range", 0, typeof(byte), typeof(CoatingType)),
                     new MhwStructData.Entry("Power", 1, typeof(byte), typeof(CoatingType)),

@@ -8,11 +8,11 @@ namespace MHW_Generator.Weapons {
     public class OtomoWeaponDat : ISingleStruct {
         public SingleStruct Generate() { // .owp_dat
             return new SingleStruct("MHW_Editor.Weapons", "OtomoWeaponDat", new MhwStructData {
-                size = 38,
-                offsetInitial = 10,
+                size             = 38,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                encryptionKey = EncryptionKeys.OWP_DAT_KEY,
-                uniqueIdFormula = "{Id}",
+                encryptionKey    = EncryptionKeys.OWP_DAT_KEY,
+                uniqueIdFormula  = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint)),
                     new MhwStructData.Entry("Id", 32, typeof(ushort)),

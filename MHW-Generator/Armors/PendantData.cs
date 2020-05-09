@@ -6,10 +6,10 @@ namespace MHW_Generator.Armors {
     public class PendantData : ISingleStruct {
         public SingleStruct Generate() { // .ch_dat
             return new SingleStruct("MHW_Editor.Armors", "PendantData", new MhwStructData {
-                size = 27,
-                offsetInitial = 10,
+                size             = 27,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Id}",
+                uniqueIdFormula  = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Unk1", 4, typeof(byte)),

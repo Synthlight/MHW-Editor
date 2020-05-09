@@ -13,24 +13,24 @@ using Obsolete_Detector.Assets;
 
 namespace Obsolete_Detector {
     public partial class MainWindow {
-        private const string NEXUS_LINK = "https://www.nexusmods.com/monsterhunterworld/mods/3191";
-        private static readonly DateTime PRE_IB = new DateTime(2020, 1, 9);
-        private static readonly DateTime CHUNK_0 = PRE_IB;
-        private static readonly DateTime CHUNK_1 = new DateTime(2020, 2, 5);
-        private static readonly DateTime CHUNK_2 = new DateTime(2020, 3, 11);
-        private static readonly DateTime CHUNK_3 = new DateTime(2020, 4, 8);
-        private static readonly DateTime CHUNK_4 = new DateTime(2020, 4, 22);
+        private const           string   NEXUS_LINK = "https://www.nexusmods.com/monsterhunterworld/mods/3191";
+        private static readonly DateTime PRE_IB     = new DateTime(2020, 1, 9);
+        private static readonly DateTime CHUNK_0    = PRE_IB;
+        private static readonly DateTime CHUNK_1    = new DateTime(2020, 2, 5);
+        private static readonly DateTime CHUNK_2    = new DateTime(2020, 3, 11);
+        private static readonly DateTime CHUNK_3    = new DateTime(2020, 4, 8);
+        private static readonly DateTime CHUNK_4    = new DateTime(2020, 4, 22);
 
         public static readonly Dictionary<string, Dictionary<string, List<string>>> BAD_FILE_HASH_MAP;
-        public static readonly Dictionary<string, string> GOOD_CHUNK_MAP;
-        public static readonly Dictionary<string, string> FILE_PATH_MAP;
-        public static readonly Dictionary<string, ulong> FILE_SIZE_MAP;
+        public static readonly Dictionary<string, string>                           GOOD_CHUNK_MAP;
+        public static readonly Dictionary<string, string>                           FILE_PATH_MAP;
+        public static readonly Dictionary<string, ulong>                            FILE_SIZE_MAP;
 
         static MainWindow() {
             BAD_FILE_HASH_MAP = LoadDict<string, Dictionary<string, List<string>>>(EditorAssets.BadHashMap);
-            GOOD_CHUNK_MAP = LoadDict<string, string>(EditorAssets.GoodChunkMap);
-            FILE_PATH_MAP = LoadDict<string, string>(EditorAssets.FilePathMap);
-            FILE_SIZE_MAP = LoadDict<string, ulong>(EditorAssets.FileSizeMap);
+            GOOD_CHUNK_MAP    = LoadDict<string, string>(EditorAssets.GoodChunkMap);
+            FILE_PATH_MAP     = LoadDict<string, string>(EditorAssets.FilePathMap);
+            FILE_SIZE_MAP     = LoadDict<string, ulong>(EditorAssets.FileSizeMap);
         }
 
         public MainWindow() {
@@ -48,9 +48,9 @@ namespace Obsolete_Detector {
         private void Browse_OnClick(object sender, RoutedEventArgs e) {
             try {
                 var ofdResult = new OpenFileDialog {
-                    Filter = "MonsterHunterWorld.exe|MonsterHunterWorld.exe",
+                    Filter           = "MonsterHunterWorld.exe|MonsterHunterWorld.exe",
                     InitialDirectory = txt_path.Text,
-                    Multiselect = false
+                    Multiselect      = false
                 };
                 var result = ofdResult.ShowDialog();
                 if (result == true) {
@@ -77,7 +77,7 @@ namespace Obsolete_Detector {
 
         private Task DoScan() {
             return Task.Run(() => {
-                var path = GetOnUiThread(() => txt_path.Text);
+                var path        = GetOnUiThread(() => txt_path.Text);
                 var nativePcDir = path.PathCombine("nativePC");
                 if (!Directory.Exists(nativePcDir)) {
                     MessageBox.Show("No nativePC folder found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -90,9 +90,9 @@ namespace Obsolete_Detector {
                     var attr = File.GetAttributes(file);
                     if ((attr & FileAttributes.Directory) != 0) continue;
 
-                    var info = new FileInfo(file);
+                    var info         = new FileInfo(file);
                     var modifiedDate = info.LastWriteTime.Date;
-                    var filename = info.Name;
+                    var filename     = info.Name;
 
                     // Didn't change in IB, ignore.
                     if (info.Extension == ".mod3" || info.Extension == ".tex") continue;

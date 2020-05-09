@@ -29,11 +29,11 @@ namespace MHW_Editor.Items {
         /// <seealso cref="QuestReward" />
         public sealed class QuestRewardInternal : MhwItem {
             private readonly QuestReward parent;
-            private readonly int index;
+            private readonly int         index;
 
             public QuestRewardInternal(QuestReward parent, int index, byte[] bytes, ulong offset) : base(bytes, offset) {
                 this.parent = parent;
-                this.index = index;
+                this.index  = index;
             }
 
             public override string UniqueId => null;
@@ -42,7 +42,7 @@ namespace MHW_Editor.Items {
             public override string Name => "None";
 
             private const int idBaseOffset = 8;
-            private int idOffset => idBaseOffset + index * 4;
+            private       int idOffset => idBaseOffset + index * 4;
 
             [SortOrder(100)]
             [DisplayName("Item Id")]
@@ -64,7 +64,7 @@ namespace MHW_Editor.Items {
             public string Item_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id).ToStringWithId(Item_Id);
 
             private const int countBaseOffset = 72;
-            private int countOffset => countBaseOffset + index;
+            private       int countOffset => countBaseOffset + index;
 
             [SortOrder(150)]
             [DisplayName("Item Count")]
@@ -80,7 +80,7 @@ namespace MHW_Editor.Items {
             }
 
             private const int weightBaseOffset = 88;
-            private int weightOffset => weightBaseOffset + index;
+            private       int weightOffset => weightBaseOffset + index;
 
             [SortOrder(200)]
             [DisplayName("Item Weight")]

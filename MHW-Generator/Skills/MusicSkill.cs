@@ -8,11 +8,11 @@ namespace MHW_Generator.Skills {
     public class MusicSkill : ISingleStruct {
         public SingleStruct Generate() { // .msk
             return new SingleStruct("MHW_Editor.Skills", "MusicSkill", new MhwStructData {
-                size = 20,
-                offsetInitial = 10,
+                size             = 20,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                encryptionKey = EncryptionKeys.MSK_KEY,
-                uniqueIdFormula = "{Song_Id_Raw}",
+                encryptionKey    = EncryptionKeys.MSK_KEY,
+                uniqueIdFormula  = "{Song_Id_Raw}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Song Id Raw", 0, typeof(uint), true),
                     new MhwStructData.Entry("Note 1", 4, typeof(int), typeof(NoteColorWithDisabled)),

@@ -9,7 +9,7 @@ using MHW_Template;
 namespace MHW_Editor.Models {
     public abstract class MhwItem : IMhwItem {
         public abstract string UniqueId { get; }
-        public byte[] Bytes { get; }
+        public          byte[] Bytes    { get; }
 
         [SortOrder(999999998)]
         public ulong Offset { get; private set; }
@@ -23,7 +23,7 @@ namespace MHW_Editor.Models {
         public string Raw_Data => BitConverter.ToString(Bytes).Replace("-", ", ");
 
         protected MhwItem(byte[] bytes, ulong offset) {
-            Bytes = bytes;
+            Bytes  = bytes;
             Offset = offset;
         }
 
@@ -33,7 +33,7 @@ namespace MHW_Editor.Models {
 
         protected void SetData<T>(int offset, T value, string columnChanged) where T : struct {
             var rawData = new byte[Marshal.SizeOf(value)];
-            var handle = GCHandle.Alloc(rawData, GCHandleType.Pinned);
+            var handle  = GCHandle.Alloc(rawData, GCHandleType.Pinned);
 
             try {
                 var rawDataPtr = handle.AddrOfPinnedObject();

@@ -8,11 +8,11 @@ namespace MHW_Generator.Weapons {
     public class CustomParts : ISingleStruct {
         public SingleStruct Generate() { // .cus_pa
             return new SingleStruct("MHW_Editor.Weapons", "CustomParts", new MhwStructData {
-                size = 25,
-                offsetInitial = 10,
+                size             = 25,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                encryptionKey = EncryptionKeys.CUS_PAR_KEY,
-                uniqueIdFormula = "{Id}|{Weapon_Type}",
+                encryptionKey    = EncryptionKeys.CUS_PAR_KEY,
+                uniqueIdFormula  = "{Id}|{Weapon_Type}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Weapon Type", 4, typeof(uint), true, typeof(WeaponType)),

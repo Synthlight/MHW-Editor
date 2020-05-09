@@ -7,12 +7,12 @@ namespace MHW_Generator.Weapons {
     public class CustomOuterWeapon : ISingleStruct {
         public SingleStruct Generate() { // .cus_ou
             return new SingleStruct("MHW_Editor.Weapons", "CustomOuterWeapon", new MhwStructData {
-                size = 35,
-                offsetInitial = 10,
+                size             = 35,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
-                autoOffset = true,
-                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_ou"],
+                uniqueIdFormula  = "{Index}",
+                autoOffset       = true,
+                encryptionKey    = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_ou"],
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Unk1", typeof(uint)),
                     new MhwStructData.Entry("Unk2", typeof(uint)),

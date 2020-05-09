@@ -9,8 +9,8 @@ namespace MHW_Generator.Items {
                 new MhwStructData.Entry("Id", 0, typeof(uint), true)
             };
 
-            const ulong itemIdStart = 8;
-            const ulong itemCountStart = 72;
+            const ulong itemIdStart     = 8;
+            const ulong itemCountStart  = 72;
             const ulong itemWeightStart = 88;
 
             for (ulong i = 0; i <= 15; i++) {
@@ -20,11 +20,11 @@ namespace MHW_Generator.Items {
             }
 
             return new SingleStruct("MHW_Editor.Items", "QuestReward", new MhwStructData {
-                size = 104,
-                offsetInitial = 10,
+                size             = 104,
+                offsetInitial    = 10,
                 entryCountOffset = -1,
-                uniqueIdFormula = "{Id}",
-                entries = entries
+                uniqueIdFormula  = "{Id}",
+                entries          = entries
             });
         }
     }

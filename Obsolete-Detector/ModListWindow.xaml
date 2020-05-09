@@ -27,7 +27,8 @@
                HorizontalAlignment="Center">
             <TextBlock TextWrapping="Wrap">
                 Obsolete files detected.<LineBreak/>
-                Select files to be deleted:</TextBlock>
+                Select files to be deleted:
+            </TextBlock>
         </Label>
         <ListBox Grid.Row="1"
                  Grid.Column="0"

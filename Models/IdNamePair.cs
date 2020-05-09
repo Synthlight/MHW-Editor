@@ -1,10 +1,10 @@
 ﻿namespace MHW_Editor.Models {
     public struct IdNamePair<T> where T : struct {
-        public readonly T id;
+        public readonly T      id;
         public readonly string name;
 
         public IdNamePair(T id, string name) {
-            this.id = id;
+            this.id   = id;
             this.name = name;
         }
 

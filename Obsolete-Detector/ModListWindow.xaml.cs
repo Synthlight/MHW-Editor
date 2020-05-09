@@ -12,7 +12,7 @@ namespace Obsolete_Detector {
         public ModListWindow(IEnumerable<string> obsoleteFileList) {
             foreach (var mod in obsoleteFileList) {
                 obsoleteMods.Add(new ObsoleteMod {
-                    Path = mod,
+                    Path     = mod,
                     ToDelete = true
                 });
             }
@@ -52,7 +52,7 @@ namespace Obsolete_Detector {
     }
 
     public class ObsoleteMod {
-        public string Path { get; set; }
-        public bool ToDelete { get; set; }
+        public string Path     { get; set; }
+        public bool   ToDelete { get; set; }
     }
 }

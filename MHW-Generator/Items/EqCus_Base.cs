@@ -7,10 +7,10 @@ namespace MHW_Generator.Items {
     public class EqCus_Base : ISingleStruct {
         public SingleStruct Generate() { // .eq_cus
             return new SingleStruct("MHW_Editor.Items", "EqCus_Base", new MhwStructData {
-                size = 41,
-                offsetInitial = 10,
+                size             = 41,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Equipment_Category_Raw}|{Equipment_Index_Raw}",
+                uniqueIdFormula  = "{Equipment_Category_Raw}|{Equipment_Index_Raw}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Equipment Category Raw", 0, typeof(byte), true),
                     new MhwStructData.Entry("Equipment Index Raw", 1, typeof(ushort), true),

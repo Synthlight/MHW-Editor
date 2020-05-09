@@ -8,10 +8,10 @@ namespace MHW_Generator.Items {
     public class SteamRewardList : ISingleStruct {
         public SingleStruct Generate() { // .srl
             return new SingleStruct("MHW_Editor.Items", "SteamRewardList", new MhwStructData {
-                size = 24,
-                offsetInitial = 10,
+                size             = 24,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
+                uniqueIdFormula  = "{Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Type", 0, typeof(int)),
                     new MhwStructData.Entry("Item Id", 4, typeof(uint), dataSourceType: DataSourceType.Items),

@@ -1,8 +1,8 @@
 ﻿namespace MHW_Template.Items {
     public enum EquipmentType {
-        Greatsword = 0,
+        Greatsword       = 0,
         Sword_and_Shield = 1,
-        Dual_Blades = 2,
+        Dual_Blades      = 2,
         Longsword,
         Hammer,
         Hunting_Horn,

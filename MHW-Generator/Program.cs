@@ -21,15 +21,15 @@ namespace MHW_Generator {
             foreach (var type in types) {
                 if (type.Is(typeof(ISingleStruct))) {
                     var instance = (ISingleStruct) Activator.CreateInstance(type);
-                    var data = instance.Generate();
+                    var data     = instance.Generate();
                     GenerateSingleStructProps(data.@namespace, data.className, data.mhwStructData);
                 } else if (type.Is(typeof(IVerticalStruct))) {
                     var instance = (IVerticalStruct) Activator.CreateInstance(type);
-                    var data = instance.Generate();
+                    var data     = instance.Generate();
                     GenerateVerticalStructProps(data.@namespace, data.className, data.mhwStructData);
                 } else if (type.Is(typeof(IMultiStruct))) {
                     var instance = (IMultiStruct) Activator.CreateInstance(type);
-                    var data = instance.Generate();
+                    var data     = instance.Generate();
                     GenerateMultiStructProps(data.@namespace, data.className, data.mhwMultiStructData);
                 }
             }

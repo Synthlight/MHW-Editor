@@ -6,20 +6,20 @@ using System.Reflection;
 namespace MHW_Editor.Models {
     public class PlDataItemCustomView : MhwItem {
         private readonly IHasCustomView<PlDataItemCustomView> parent;
-        private readonly MethodInfo getMethod;
-        private readonly MethodInfo setMethod;
-        private readonly Type propertyType;
+        private readonly MethodInfo                           getMethod;
+        private readonly MethodInfo                           setMethod;
+        private readonly Type                                 propertyType;
 
         public PlDataItemCustomView(IHasCustomView<PlDataItemCustomView> parent, string name, string propertyName, byte[] bytes, ulong offset) : base(bytes, offset) {
             this.parent = parent;
-            Name = name;
+            Name        = name;
 
             var property = parent.GetType().GetProperty(propertyName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
             Debug.Assert(property != null, nameof(property) + " != null");
 
             propertyType = property.PropertyType;
-            getMethod = property.GetGetMethod();
-            setMethod = property.GetSetMethod();
+            getMethod    = property.GetGetMethod();
+            setMethod    = property.GetSetMethod();
         }
 
         public override string UniqueId => "0";

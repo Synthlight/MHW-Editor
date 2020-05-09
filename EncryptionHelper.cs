@@ -29,7 +29,7 @@ namespace MHW_Editor {
 
         public static MemoryStream DecryptToStream(string key, byte[] inBytes) {
             var bytes = Decrypt(key, inBytes);
-            var dat = new MemoryStream();
+            var dat   = new MemoryStream();
 
             // Write bytes to stream. Leave base stream OPEN.
             using (var writer = new BinaryWriter(dat, Encoding.Default, true)) {
@@ -69,7 +69,7 @@ namespace MHW_Editor {
             var result = new byte[data.Length];
 
             for (var i = 0; i < data.Length; i += 4) {
-                result[i] = data[i + 3];
+                result[i]     = data[i + 3];
                 result[i + 1] = data[i + 2];
                 result[i + 2] = data[i + 1];
                 result[i + 3] = data[i];

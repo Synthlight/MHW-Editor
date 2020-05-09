@@ -8,10 +8,10 @@ namespace MHW_Generator.Armors {
     public class Armor : ISingleStruct {
         public SingleStruct Generate() { // .am_dat
             return new SingleStruct("MHW_Editor.Armors", "Armor", new MhwStructData {
-                size = 60,
-                offsetInitial = 10,
+                size             = 60,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Set_Group}|{Variant}|{Type}|{Equip_Slot}",
+                uniqueIdFormula  = "{Set_Group}|{Variant}|{Type}|{Equip_Slot}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Order", 4, typeof(ushort)),

@@ -8,10 +8,10 @@ namespace MHW_Generator.Items {
     public class PlantItem : ISingleStruct {
         public SingleStruct Generate() { // .plit
             return new SingleStruct("MHW_Editor.Items", "PlantItem", new MhwStructData {
-                size = 37,
-                offsetInitial = 10,
+                size             = 37,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Item}",
+                uniqueIdFormula  = "{Item}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Cultivation category", 0, typeof(uint), typeof(CultivationCategory)),
                     new MhwStructData.Entry("Unlocked from start", 8, typeof(byte), typeof(bool)),

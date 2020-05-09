@@ -7,10 +7,10 @@ namespace MHW_Generator.Items {
     public class PlantFertilizer : ISingleStruct { // .plfe
         public SingleStruct Generate() {
             return new SingleStruct("MHW_Editor.Items", "PlantFertilizer", new MhwStructData {
-                size = 24,
-                offsetInitial = 10,
+                size             = 24,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Fertilizer_Id}",
+                uniqueIdFormula  = "{Fertilizer_Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Fertilizer Id", 0, typeof(uint), typeof(Fertilizer)),
                     new MhwStructData.Entry("Prize", 4, typeof(uint)),

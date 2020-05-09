@@ -5,7 +5,7 @@ using System.Reflection;
 namespace MHW_Editor.Models {
     public class ButtonSorter : ICustomSorterWithPropertyName {
         public ListSortDirection SortDirection { get; set; } = ListSortDirection.Ascending;
-        public string PropertyName { get; set; }
+        public string            PropertyName  { get; set; }
 
         public int Compare(object x, object y) {
             if (MainWindow.showIdBeforeName) {

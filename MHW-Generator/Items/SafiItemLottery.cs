@@ -8,11 +8,11 @@ namespace MHW_Generator.Items {
     public class SafiItemLottery : ISingleStruct {
         public SingleStruct Generate() { // .em104iot
             return new SingleStruct("MHW_Editor.Items", "SafiItemLottery", new MhwStructData {
-                size = 72,
-                offsetInitial = 10,
+                size             = 72,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
-                autoOffset = true,
+                uniqueIdFormula  = "{Index}",
+                autoOffset       = true,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", typeof(uint)),
                     new MhwStructData.Entry("Weapon Type", typeof(uint), enumReturn: typeof(WeaponType), extraOnPropertyChanged: new[] {"Weapon_Id_button"}),

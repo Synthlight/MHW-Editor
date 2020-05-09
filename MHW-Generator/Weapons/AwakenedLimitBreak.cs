@@ -7,11 +7,11 @@ namespace MHW_Generator.Weapons {
     public class AwakenedLimitBreak : ISingleStruct {
         public SingleStruct Generate() { // .em104lb
             return new SingleStruct("MHW_Editor.Weapons", "AwakenedLimitBreak", new MhwStructData {
-                size = 49,
-                offsetInitial = 10,
+                size             = 49,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
-                autoOffset = true,
+                uniqueIdFormula  = "{Index}",
+                autoOffset       = true,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Skill Id", typeof(ushort), dataSourceType: DataSourceType.Skills),
                     new MhwStructData.Entry("Group Id", typeof(uint)),

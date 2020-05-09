@@ -13,14 +13,14 @@ namespace MHW_Editor.Controls {
     public class AutoFilteredComboBox : ComboBox {
         // https://stackoverflow.com/a/55190176
 
-        private string CurrentFilter = string.Empty;
-        private bool TextBoxFrozen;
-        public TextBox EditableTextBox => GetTemplateChild("PART_EditableTextBox") as TextBox;
+        private          string           CurrentFilter = string.Empty;
+        private          bool             TextBoxFrozen;
+        public           TextBox          EditableTextBox => GetTemplateChild("PART_EditableTextBox") as TextBox;
         private readonly UserChange<bool> IsDropDownOpenUC;
 
         public AutoFilteredComboBox() {
-            IsDropDownOpenUC = new UserChange<bool>(v => IsDropDownOpen = v);
-            DropDownOpened += FilteredComboBox_DropDownOpened;
+            IsDropDownOpenUC =  new UserChange<bool>(v => IsDropDownOpen = v);
+            DropDownOpened   += FilteredComboBox_DropDownOpened;
 
             Loaded += (s, e) => {
                 if (EditableTextBox != null) {
@@ -59,7 +59,7 @@ namespace MHW_Editor.Controls {
             }
 
             if (oldValue != null) {
-                var view = CollectionViewSource.GetDefaultView(oldValue);
+                var view                      = CollectionViewSource.GetDefaultView(oldValue);
                 if (view != null) view.Filter -= FilterItem;
             }
 
@@ -91,15 +91,15 @@ namespace MHW_Editor.Controls {
 
         private void FreezeTextBoxState(Action action) {
             TextBoxFrozen = true;
-            var tb = EditableTextBox;
-            var text = Text;
+            var tb       = EditableTextBox;
+            var text     = Text;
             var selStart = tb.SelectionStart;
-            var selLen = tb.SelectionLength;
+            var selLen   = tb.SelectionLength;
             action();
-            Text = text;
-            tb.SelectionStart = selStart;
+            Text               = text;
+            tb.SelectionStart  = selStart;
             tb.SelectionLength = selLen;
-            TextBoxFrozen = false;
+            TextBoxFrozen      = false;
         }
 
         private bool FilterItem(object value) {
@@ -123,13 +123,13 @@ namespace MHW_Editor.Controls {
     public class TextBoxBaseUserChangeTracker {
         private bool IsTextInput { get; set; }
 
-        public TextBoxBase TextBox { get; set; }
-        private readonly List<Key> PressedKeys = new List<Key>();
-        public event EventHandler UserTextChanged;
-        private string LastText;
+        public           TextBoxBase TextBox { get; set; }
+        private readonly List<Key>   PressedKeys = new List<Key>();
+        public event EventHandler    UserTextChanged;
+        private string               LastText;
 
         public TextBoxBaseUserChangeTracker(TextBoxBase textBox) {
-            TextBox = textBox;
+            TextBox  = textBox;
             LastText = TextBox.ToString();
 
             textBox.PreviewTextInput += (s, e) => { IsTextInput = true; };
@@ -137,7 +137,7 @@ namespace MHW_Editor.Controls {
             textBox.TextChanged += (s, e) => {
                 var isUserChange = PressedKeys.Count > 0 || IsTextInput || LastText == TextBox.ToString();
                 IsTextInput = false;
-                LastText = TextBox.ToString();
+                LastText    = TextBox.ToString();
                 if (isUserChange) UserTextChanged?.Invoke(this, e);
             };
 

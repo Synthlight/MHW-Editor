@@ -8,10 +8,10 @@ namespace MHW_Generator.Weapons {
     public class Ranged : ISingleStruct {
         public SingleStruct Generate() { // .wp_dat_g
             return new SingleStruct("MHW_Editor.Weapons", "Ranged", new MhwStructData {
-                size = 69,
-                offsetInitial = 10,
+                size             = 69,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Id}",
+                uniqueIdFormula  = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Id", 59, typeof(ushort), true),

@@ -7,10 +7,10 @@ namespace MHW_Generator.Weapons {
     public class NewLimitBreakR : ISingleStruct {
         public SingleStruct Generate() { // .new_lbr
             return new SingleStruct("MHW_Editor.Weapons", "NewLimitBreakR", new MhwStructData {
-                size = 38,
-                offsetInitial = 10,
+                size             = 38,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Id_1}|{Id_2}",
+                uniqueIdFormula  = "{Id_1}|{Id_2}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id 1", 0, typeof(ushort), true),
                     new MhwStructData.Entry("Id 2", 2, typeof(ushort), true),

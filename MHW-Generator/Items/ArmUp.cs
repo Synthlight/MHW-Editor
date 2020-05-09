@@ -6,10 +6,10 @@ namespace MHW_Generator.Items {
     public class ArmUp : ISingleStruct {
         public SingleStruct Generate() { // .arm_up
             return new SingleStruct("MHW_Editor.Items", "ArmUp", new MhwStructData {
-                size = 22,
-                offsetInitial = 10,
+                size             = 22,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Rarity}",
+                uniqueIdFormula  = "{Rarity}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Quest Progress 1", 0, typeof(short)),
                     new MhwStructData.Entry("Quest Progress 2", 2, typeof(short)),

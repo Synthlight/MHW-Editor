@@ -10,10 +10,10 @@ namespace MHW_Generator.Items {
         public SingleStruct Generate() { // .itlot
             var entries = new List<MhwStructData.Entry>();
 
-            const ulong itemIdStart = 0;
-            const ulong itemCountStart = 20;
+            const ulong itemIdStart     = 0;
+            const ulong itemCountStart  = 20;
             const ulong itemWeightStart = 30;
-            const ulong itemUnkStart = 40;
+            const ulong itemUnkStart    = 40;
 
             for (ulong i = 0; i < 10; i++) {
                 entries.Add(new MhwStructData.Entry($"Item {i + 1} Id", itemIdStart + i * 2, typeof(ushort), dataSourceType: DataSourceType.Items));
@@ -23,12 +23,12 @@ namespace MHW_Generator.Items {
             }
 
             return new SingleStruct("MHW_Editor.Items", "ItemLottery", new MhwStructData {
-                size = 50,
-                offsetInitial = 10,
+                size             = 50,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                encryptionKey = EncryptionKeys.ITLOT_KEY,
-                uniqueIdFormula = "{Index}",
-                entries = entries
+                encryptionKey    = EncryptionKeys.ITLOT_KEY,
+                uniqueIdFormula  = "{Index}",
+                entries          = entries
             });
         }
     }

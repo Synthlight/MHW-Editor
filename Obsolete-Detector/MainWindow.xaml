@@ -32,7 +32,8 @@
                 This isn't perfect. It may miss something obsolete, it may have false positives. YMMV<LineBreak/>
                 If you still have a blackscreen after, test without mods by renaming nativePC to anything else.<LineBreak/>
                 <LineBreak/>
-                Select MHW install folder and press scan to begin.</TextBlock>
+                Select MHW install folder and press scan to begin.
+            </TextBlock>
         </Label>
         <TextBox Name="txt_path"
                  Grid.Row="1"

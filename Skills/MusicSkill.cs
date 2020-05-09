@@ -20,7 +20,7 @@ namespace MHW_Editor.Skills {
 
     public class MusicSkillSorter : ICustomSorterWithPropertyName {
         public ListSortDirection SortDirection { get; set; } = ListSortDirection.Ascending;
-        public string PropertyName { get; set; }
+        public string            PropertyName  { get; set; }
 
         public int Compare(object x, object y) {
             if (x is MusicSkill x1 && y is MusicSkill x2) {
@@ -28,7 +28,7 @@ namespace MHW_Editor.Skills {
                     return x1.Song_Id_Raw.CompareTo(x2.Song_Id_Raw) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
                 } else {
                     var nameCompare = string.Compare(x1.Name, x2.Name, StringComparison.Ordinal) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
-                    var idCompare = x1.Song_Id_Raw.CompareTo(x2.Song_Id_Raw) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
+                    var idCompare   = x1.Song_Id_Raw.CompareTo(x2.Song_Id_Raw) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
 
                     return nameCompare == 0 ? idCompare : nameCompare;
                 }

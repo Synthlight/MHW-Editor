@@ -5,8 +5,8 @@
         public readonly string description;
 
         public DataValuePair(ushort value, string name, string description) {
-            this.value = value;
-            this.name = name;
+            this.value       = value;
+            this.name        = name;
             this.description = description;
         }
 

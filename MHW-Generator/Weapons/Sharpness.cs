@@ -6,10 +6,10 @@ namespace MHW_Generator.Weapons {
     public class Sharpness : ISingleStruct {
         public SingleStruct Generate() { // .kire
             return new SingleStruct("MHW_Editor.Weapons", "Sharpness", new MhwStructData {
-                size = 18,
-                offsetInitial = 10,
+                size             = 18,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Id}",
+                uniqueIdFormula  = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Red", 4, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),

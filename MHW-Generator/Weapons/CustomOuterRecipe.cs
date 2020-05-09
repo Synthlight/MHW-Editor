@@ -8,12 +8,12 @@ namespace MHW_Generator.Weapons {
     public class CustomOuterRecipe : ISingleStruct {
         public SingleStruct Generate() { // .cus_otr
             return new SingleStruct("MHW_Editor.Weapons", "CustomOuterRecipe", new MhwStructData {
-                size = 31,
-                offsetInitial = 10,
+                size             = 31,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
-                autoOffset = true,
-                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_otr"],
+                uniqueIdFormula  = "{Index}",
+                autoOffset       = true,
+                encryptionKey    = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_otr"],
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Unk1", typeof(byte)),
                     new MhwStructData.Entry("Needed Item Id to Unlock", typeof(ushort), dataSourceType: DataSourceType.Items),

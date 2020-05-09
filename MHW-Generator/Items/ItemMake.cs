@@ -8,10 +8,10 @@ namespace MHW_Generator.Items {
     public class ItemMake : ISingleStruct {
         public SingleStruct Generate() { // .imk
             return new SingleStruct("MHW_Editor.Items", "ItemMake", new MhwStructData {
-                size = 31,
-                offsetInitial = 10,
+                size             = 31,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Id}",
+                uniqueIdFormula  = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Unk1", 4, typeof(ushort)),

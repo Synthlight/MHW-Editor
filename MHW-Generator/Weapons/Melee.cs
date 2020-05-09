@@ -8,10 +8,10 @@ namespace MHW_Generator.Weapons {
     public class Melee : ISingleStruct {
         public SingleStruct Generate() { // .wp_dat
             return new SingleStruct("MHW_Editor.Weapons", "Melee", new MhwStructData {
-                size = 66,
-                offsetInitial = 10,
+                size             = 66,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Id}",
+                uniqueIdFormula  = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Id", 56, typeof(ushort), true),

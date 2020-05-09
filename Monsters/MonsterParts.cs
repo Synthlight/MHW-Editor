@@ -25,7 +25,7 @@ namespace MHW_Editor.Monsters {
             public partial class End_Junk {
                 public static ObservableCollection<End_Junk> LoadData(BinaryReader reader, Remainder parent) {
                     var list = new ObservableCollection<End_Junk>();
-                    var i = -1;
+                    var i    = -1;
                     while (reader.BaseStream.Position < reader.BaseStream.Length) {
                         list.Add(new End_Junk {
                             Index   = (ulong) ++i,

@@ -8,10 +8,10 @@ namespace MHW_Generator.Weapons {
     public class LimitBreakMaterialBase : ISingleStruct {
         public SingleStruct Generate() { // .lbm_base
             return new SingleStruct("MHW_Editor.Weapons", "LimitBreakMaterialBase", new MhwStructData {
-                size = 14,
-                offsetInitial = 10,
+                size             = 14,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
+                uniqueIdFormula  = "{Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Rarity", 0, typeof(byte)),
                     new MhwStructData.Entry("Equip Type", 1, typeof(byte), typeof(WeaponType)),

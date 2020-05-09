@@ -6,10 +6,10 @@ namespace MHW_Generator.Weapons {
     public class AwakenedLimitBreakR : ISingleStruct {
         public SingleStruct Generate() { // .em104lbr
             return new SingleStruct("MHW_Editor.Weapons", "AwakenedLimitBreakR", new MhwStructData {
-                size = 34,
-                offsetInitial = 10,
+                size             = 34,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
+                uniqueIdFormula  = "{Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(ushort)),
                     new MhwStructData.Entry("Great Sword", 2, typeof(ushort)),

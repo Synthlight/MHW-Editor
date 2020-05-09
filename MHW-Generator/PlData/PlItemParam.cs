@@ -7,12 +7,12 @@ namespace MHW_Generator.PlData {
     public class PlItemParam : IVerticalStruct {
         public VerticalStruct Generate() { // .plip
             return new VerticalStruct("MHW_Editor.PlData", "PlItemParam", new MhwStructData {
-                size = 512,
-                offsetInitial = 0,
+                size             = 512,
+                offsetInitial    = 0,
                 entryCountOffset = -1,
-                uniqueIdFormula = "0",
-                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plip"],
-                ext = "plip",
+                uniqueIdFormula  = "0",
+                encryptionKey    = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plip"],
+                ext              = "plip",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Powder Radius", 8, typeof(float)),
                     new MhwStructData.Entry("Potion Power", 12, typeof(uint)),

@@ -31,12 +31,12 @@ namespace MHW_Editor.Skills {
         public int Compare(object x, object y) {
             if (x is SkillDat x1 && y is SkillDat x2) {
                 if (MainWindow.showIdBeforeName) {
-                    var idCompare = x1.Id.CompareTo(x2.Id) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
+                    var idCompare    = x1.Id.CompareTo(x2.Id) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
                     var levelCompare = x1.Level.CompareTo(x2.Level) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
 
                     return idCompare == 0 ? levelCompare : idCompare;
                 } else {
-                    var nameCompare = string.Compare(x1.Name, x2.Name, StringComparison.Ordinal) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
+                    var nameCompare  = string.Compare(x1.Name, x2.Name, StringComparison.Ordinal) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
                     var levelCompare = x1.Level.CompareTo(x2.Level) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
 
                     return nameCompare == 0 ? levelCompare : nameCompare;

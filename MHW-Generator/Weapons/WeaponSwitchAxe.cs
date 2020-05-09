@@ -7,10 +7,10 @@ namespace MHW_Generator.Weapons {
     public class WeaponSwitchAxe : ISingleStruct {
         public SingleStruct Generate() { // .wep_saxe
             return new SingleStruct("MHW_Editor.Weapons", "WeaponSwitchAxe", new MhwStructData {
-                size = 7,
-                offsetInitial = 10,
+                size             = 7,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Id}",
+                uniqueIdFormula  = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Phial Type", 4, typeof(byte), typeof(PhialType)),

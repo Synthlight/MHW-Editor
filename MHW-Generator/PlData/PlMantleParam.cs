@@ -200,13 +200,13 @@ namespace MHW_Generator.PlData {
             });
 
             return new VerticalStruct("MHW_Editor.PlData", "PlMantleParam", new MhwStructData {
-                size = 560,
-                offsetInitial = 0,
+                size             = 560,
+                offsetInitial    = 0,
                 entryCountOffset = -1,
-                uniqueIdFormula = "0",
-                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".asp"],
-                ext = "asp",
-                entries = entries
+                uniqueIdFormula  = "0",
+                encryptionKey    = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".asp"],
+                ext              = "asp",
+                entries          = entries
             });
         }
     }

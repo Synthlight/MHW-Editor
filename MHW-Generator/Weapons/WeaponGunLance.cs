@@ -7,10 +7,10 @@ namespace MHW_Generator.Weapons {
     public class WeaponGunLance : ISingleStruct {
         public SingleStruct Generate() { // .wep_glan
             return new SingleStruct("MHW_Editor.Weapons", "WeaponGunLance", new MhwStructData {
-                size = 8,
-                offsetInitial = 10,
+                size             = 8,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Id}",
+                uniqueIdFormula  = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Shell Type", 4, typeof(ushort), typeof(ShellType)),

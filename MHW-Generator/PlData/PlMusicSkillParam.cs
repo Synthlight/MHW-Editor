@@ -7,11 +7,11 @@ namespace MHW_Generator.PlData {
     public class PlMusicSkillParam : ISingleStruct {
         public SingleStruct Generate() { // .mske
             return new SingleStruct("MHW_Editor.PlData", "PlMusicSkillParam", new MhwStructData {
-                size = 56,
-                offsetInitial = 14,
+                size             = 56,
+                offsetInitial    = 14,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
-                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".mske"],
+                uniqueIdFormula  = "{Index}",
+                encryptionKey    = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".mske"],
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Duration", 0, typeof(float)),
                     new MhwStructData.Entry("Extension", 12, typeof(float)),

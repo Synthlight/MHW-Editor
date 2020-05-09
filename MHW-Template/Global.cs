@@ -138,12 +138,12 @@ namespace MHW_Template {
             // Special cases. Leave at the end so they';re obscured from the UI.
             "Block_26.bin"
         };
-        public const string ASSETS_ROOT = @"..\..\..\Assets";
-        public const string GENERATED_ROOT = @"..\..\..\Generated";
+        public const string ASSETS_ROOT        = @"..\..\..\Assets";
+        public const string GENERATED_ROOT     = @"..\..\..\Generated";
         public const string STRUCT_OUTPUT_ROOT = @"..\..\..\Structs";
-        public const string _010_OUTPUT_ROOT = @"..\..\..\010 Templates";
+        public const string _010_OUTPUT_ROOT   = @"..\..\..\010 Templates";
         public const string CHUNK_HASHING_ROOT = @"V:\MHW\IB\For Hashing";
-        public const string CHUNK_ROOT = @"V:\MHW\IB\chunk_combined";
-        public const string COMMON_TEXT_ROOT = CHUNK_ROOT + @"\common\text";
+        public const string CHUNK_ROOT         = @"V:\MHW\IB\chunk_combined";
+        public const string COMMON_TEXT_ROOT   = CHUNK_ROOT + @"\common\text";
     }
 }

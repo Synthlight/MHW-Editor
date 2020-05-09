@@ -8,10 +8,10 @@ namespace MHW_Generator.Items {
     public class ShopSed : ISingleStruct {
         public SingleStruct Generate() { // .sed
             return new SingleStruct("MHW_Editor.Items", "ShopSed", new MhwStructData {
-                size = 12,
-                offsetInitial = 10,
+                size             = 12,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
+                uniqueIdFormula  = "{Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Equip Type", 0, typeof(uint), typeof(EquipmentType)),
                     new MhwStructData.Entry("Equip Id", 4, typeof(uint), dataSourceType: DataSourceType.EquipmentById),

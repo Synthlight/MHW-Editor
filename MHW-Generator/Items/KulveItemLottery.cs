@@ -8,11 +8,11 @@ namespace MHW_Generator.Items {
     public class KulveItemLottery : ISingleStruct {
         public SingleStruct Generate() { // .em117iot
             return new SingleStruct("MHW_Editor.Items", "KulveItemLottery", new MhwStructData {
-                size = 32,
-                offsetInitial = 6,
+                size             = 32,
+                offsetInitial    = 6,
                 entryCountOffset = 2,
-                uniqueIdFormula = "{Index}",
-                autoOffset = true,
+                uniqueIdFormula  = "{Index}",
+                autoOffset       = true,
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", typeof(uint)),
                     new MhwStructData.Entry("Weapon Type", typeof(uint), enumReturn: typeof(WeaponType), extraOnPropertyChanged: new[] {"Weapon_Id_button"}),

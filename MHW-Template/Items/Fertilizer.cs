@@ -1,6 +1,6 @@
 ﻿namespace MHW_Template.Items {
     public enum Fertilizer {
-        Fertilizer = 1,
+        Fertilizer        = 1,
         Mushroom_Subtrate = 2,
         Summoner_Jelly,
         Catalyst,

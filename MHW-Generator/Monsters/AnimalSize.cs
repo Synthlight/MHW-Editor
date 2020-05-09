@@ -6,10 +6,10 @@ namespace MHW_Generator.Monsters {
     public class AnimalSize : ISingleStruct {
         public SingleStruct Generate() { // .ransz
             return new SingleStruct("MHW_Editor.Monsters", "AnimalSize", new MhwStructData {
-                size = 72,
-                offsetInitial = 10,
+                size             = 72,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
+                uniqueIdFormula  = "{Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Endemic Id", 0, typeof(uint)),
                     new MhwStructData.Entry("Endemic Sub Species Id", 4, typeof(uint)),

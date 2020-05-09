@@ -7,12 +7,12 @@ namespace MHW_Generator.Weapons {
     public class Wp10Param : IVerticalStruct {
         public VerticalStruct Generate() { // .w10p
             return new VerticalStruct("MHW_Editor.Weapons", "Wp10Param", new MhwStructData {
-                size = 3408,
-                offsetInitial = 0,
+                size             = 3408,
+                offsetInitial    = 0,
                 entryCountOffset = -1,
-                uniqueIdFormula = "0",
-                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".w10p"],
-                ext = "w10p",
+                uniqueIdFormula  = "0",
+                encryptionKey    = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".w10p"],
+                ext              = "w10p",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Red Extract Duration", 1153, typeof(float)),
                     new MhwStructData.Entry("White Extract Duration", 1157, typeof(float)),

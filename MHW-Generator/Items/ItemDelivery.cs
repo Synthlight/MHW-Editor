@@ -7,10 +7,10 @@ namespace MHW_Generator.Items {
     public class ItemDelivery : ISingleStruct {
         public SingleStruct Generate() { // .stmp
             return new SingleStruct("MHW_Editor.Items", "ItemDelivery", new MhwStructData {
-                size = 44,
-                offsetInitial = 10,
+                size             = 44,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Id}",
+                uniqueIdFormula  = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Unk1", 4, typeof(uint)),

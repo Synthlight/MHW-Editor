@@ -4,7 +4,7 @@
         public readonly string description;
 
         public NameDescPair(string name, string description) {
-            this.name = name;
+            this.name        = name;
             this.description = description;
         }
 

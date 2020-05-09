@@ -7,10 +7,10 @@ namespace MHW_Generator.Skills {
     public class SkillDat : ISingleStruct {
         public SingleStruct Generate() { // .skl_dat
             return new SingleStruct("MHW_Editor.Skills", "SkillDat", new MhwStructData {
-                size = 27,
-                offsetInitial = 10,
+                size             = 27,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Id}|{Level}",
+                uniqueIdFormula  = "{Id}|{Level}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(ushort), true),
                     new MhwStructData.Entry("Level", 2, typeof(byte), true),

@@ -7,10 +7,10 @@ namespace MHW_Generator.Items {
     public class ValueTrader : ISingleStruct {
         public SingleStruct Generate() { // .trdr
             return new SingleStruct("MHW_Editor.Items", "ValueTrader", new MhwStructData {
-                size = 56,
-                offsetInitial = 10,
+                size             = 56,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
+                uniqueIdFormula  = "{Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Item Id", 4, typeof(uint), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Unk3", 8, typeof(uint)),

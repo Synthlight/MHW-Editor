@@ -6,10 +6,10 @@ namespace MHW_Generator.Monsters {
     public class EnemySort : ISingleStruct {
         public SingleStruct Generate() { // .emst
             return new SingleStruct("MHW_Editor.Monsters", "EnemySort", new MhwStructData {
-                size = 56,
-                offsetInitial = 10,
+                size             = 56,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Index}",
+                uniqueIdFormula  = "{Index}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Unk1", 0, typeof(int)),
                     new MhwStructData.Entry("Unk2", 4, typeof(uint)),

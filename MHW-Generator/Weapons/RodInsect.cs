@@ -8,11 +8,11 @@ namespace MHW_Generator.Weapons {
     public class RodInsect : ISingleStruct {
         public SingleStruct Generate() { // .rod_inse
             return new SingleStruct("MHW_Editor.Weapons", "RodInsect", new MhwStructData {
-                size = 28,
-                offsetInitial = 10,
+                size             = 28,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                encryptionKey = EncryptionKeys.ROD_INSE_KEY,
-                uniqueIdFormula = "{Id}",
+                encryptionKey    = EncryptionKeys.ROD_INSE_KEY,
+                uniqueIdFormula  = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Index", 0, typeof(uint), true),
                     new MhwStructData.Entry("Attack Type", 4, typeof(byte), typeof(AttackType)),

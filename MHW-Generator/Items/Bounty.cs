@@ -8,10 +8,10 @@ namespace MHW_Generator.Items {
     public class Bounty : ISingleStruct {
         public SingleStruct Generate() { // .odr
             return new SingleStruct("MHW_Editor.Items", "Bounty", new MhwStructData {
-                size = 77,
-                offsetInitial = 10,
+                size             = 77,
+                offsetInitial    = 10,
                 entryCountOffset = 6,
-                uniqueIdFormula = "{Id}",
+                uniqueIdFormula  = "{Id}",
                 entries = new List<MhwStructData.Entry> {
                     new MhwStructData.Entry("Id", 0, typeof(uint), true),
                     new MhwStructData.Entry("Unk1", 4, typeof(uint)),

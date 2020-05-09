@@ -447,13 +447,13 @@ namespace MHW_Generator.PlData {
             });
 
             return new VerticalStruct("MHW_Editor.PlData", "PlPlayerParam", new MhwStructData {
-                size = 20640,
-                offsetInitial = 0,
+                size             = 20640,
+                offsetInitial    = 0,
                 entryCountOffset = -1,
-                uniqueIdFormula = "0",
-                encryptionKey = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plp"],
-                ext = "plp",
-                entries = entries
+                uniqueIdFormula  = "0",
+                encryptionKey    = EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plp"],
+                ext              = "plp",
+                entries          = entries
             });
         }
     }
