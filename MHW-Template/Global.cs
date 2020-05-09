@@ -54,6 +54,7 @@ namespace MHW_Template {
             "*.dtt_agr",
             "*.dtt_clawc",
             "*.dtt_dif",
+            "*.dtt_eda",
             "*.dtt_epg",
             "*.dtt_rsz",
             "*.dtt_sta",

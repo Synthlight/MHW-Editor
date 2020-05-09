@@ -14,26 +14,34 @@ namespace MHW_Editor.Models {
 
         [UsedImplicitly]
         public static void SetupViews(T instance, Grid grid, MainWindow main) {
-            foreach (var entry in instance.data) {
-                if (entry.IsHidden) continue;
+            instance.SetupViews(grid, main);
+        }
 
-                if (entry.IsAddingAllowed) {
-                    var panel = new StackPanel {Orientation = Orientation.Horizontal};
-                    panel.Children.Add(new Label {Content   = entry.GridName, FontSize       = MainWindow.FONT_SIZE, HorizontalAlignment    = HorizontalAlignment.Left});
-                    var button = new Button {Content        = "Add Row", HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Center};
-                    button.Click += entry.Add_Click;
-                    panel.Children.Add(button);
-                    grid.AddControl(panel);
-                } else {
-                    grid.AddControl(new Label {Content = entry.GridName, FontSize = MainWindow.FONT_SIZE});
-                }
+        public virtual void SetupViews(Grid grid, MainWindow main) {
+            foreach (var entry in data) {
+                SetupView(entry, grid, main);
+            }
+        }
 
-                if (entry.type.IsGeneric(typeof(IHasCustomView<>))) {
-                    main.AddDataGrid(((IHasCustomView<MultiStructItemCustomView>) entry.list[0]).GetCustomView());
-                } else {
-                    var dataGrid = main.AddDataGrid(entry.list);
-                    dataGrid.CanUserDeleteRows = entry.IsAddingAllowed;
-                }
+        protected virtual void SetupView(MhwStructDataContainer entry, Grid grid, MainWindow main) {
+            if (entry.IsHidden) return;
+
+            if (entry.IsAddingAllowed) {
+                var panel = new StackPanel {Orientation = Orientation.Horizontal};
+                panel.Children.Add(new Label {Content   = entry.GridName, FontSize       = MainWindow.FONT_SIZE, HorizontalAlignment    = HorizontalAlignment.Left});
+                var button = new Button {Content        = "Add Row", HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Center};
+                button.Click += entry.Add_Click;
+                panel.Children.Add(button);
+                grid.AddControl(panel);
+            } else {
+                grid.AddControl(new Label {Content = entry.GridName, FontSize = MainWindow.FONT_SIZE});
+            }
+
+            if (entry.type.IsGeneric(typeof(IHasCustomView<>))) {
+                main.AddDataGrid(((IHasCustomView<MultiStructItemCustomView>) entry.list[0]).GetCustomView());
+            } else {
+                var dataGrid = main.AddDataGrid(entry.list);
+                dataGrid.CanUserDeleteRows = entry.IsAddingAllowed;
             }
         }
 

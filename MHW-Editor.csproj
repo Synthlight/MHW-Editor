@@ -155,6 +155,7 @@
     <Compile Include="Generated\MHW_Editor\Monsters\AnimalSize.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\EnemySort.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\MonsterClawGrab.cs" />
+    <Compile Include="Generated\MHW_Editor\Monsters\MonsterDamageAttributes.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\MonsterDifficulty.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\MonsterEnrage.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\MonsterParts.cs" />
@@ -285,6 +286,7 @@
     <Compile Include="Models\SortOrderAttribute.cs" />
     <Compile Include="Models\ButtonSorter.cs" />
     <Compile Include="Models\VersionCheck.cs" />
+    <Compile Include="Monsters\MonsterDamageAttributes.cs" />
     <Compile Include="Monsters\SmallMonsterSizeParams.cs" />
     <Compile Include="Monsters\MonsterDifficulty.cs" />
     <Compile Include="Monsters\MonsterClawGrab.cs" />

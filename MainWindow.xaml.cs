@@ -485,6 +485,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".dtt_clawc")) return typeof(MonsterClawGrab);
             if (fileName.EndsWith(".dtt_dif")) return typeof(MonsterDifficulty);
             if (fileName.EndsWith(".dtt_dif")) return typeof(MonsterDifficulty);
+            if (fileName.EndsWith(".dtt_eda")) return typeof(MonsterDamageAttributes);
             if (fileName.EndsWith(".dtt_epg")) return typeof(MonsterParts);
             if (fileName.EndsWith(".dtt_sta")) return typeof(MonsterStamina);
             if (fileName.EndsWith(".em104exp")) return typeof(AwakenedExp);
