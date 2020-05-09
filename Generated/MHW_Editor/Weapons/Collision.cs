@@ -2100,7 +2100,7 @@ namespace MHW_Editor.Weapons {
             public const int Atk0_sortIndex = 300;
             [SortOrder(Atk0_sortIndex)]
             [DisplayName(Atk0_displayName)]
-            public virtual ObservableCollection<Atk0> Atk0_raw { get; protected set; }
+            protected virtual ObservableCollection<Atk0> Atk0_raw { get; set; }
 
             public partial class Atk1 : MhwStructItem {
                 public const ulong FixedSizeCount = 0;
@@ -3089,7 +3089,7 @@ namespace MHW_Editor.Weapons {
             public const int Atk1_sortIndex = 350;
             [SortOrder(Atk1_sortIndex)]
             [DisplayName(Atk1_displayName)]
-            public virtual ObservableCollection<Atk1> Atk1_raw { get; protected set; }
+            protected virtual ObservableCollection<Atk1> Atk1_raw { get; set; }
 
             public partial class Atk2 : MhwStructItem {
                 public const ulong FixedSizeCount = 0;
@@ -3870,7 +3870,7 @@ namespace MHW_Editor.Weapons {
             public const int Atk2_sortIndex = 400;
             [SortOrder(Atk2_sortIndex)]
             [DisplayName(Atk2_displayName)]
-            public virtual ObservableCollection<Atk2> Atk2_raw { get; protected set; }
+            protected virtual ObservableCollection<Atk2> Atk2_raw { get; set; }
 
             public partial class Atk3 : MhwStructItem {
                 public const ulong FixedSizeCount = 0;
@@ -4763,7 +4763,7 @@ namespace MHW_Editor.Weapons {
             public const int Atk3_sortIndex = 450;
             [SortOrder(Atk3_sortIndex)]
             [DisplayName(Atk3_displayName)]
-            public virtual ObservableCollection<Atk3> Atk3_raw { get; protected set; }
+            protected virtual ObservableCollection<Atk3> Atk3_raw { get; set; }
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

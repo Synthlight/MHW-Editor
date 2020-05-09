@@ -236,6 +236,7 @@
     <Compile Include="Models\IHasWeaponType.cs" />
     <Compile Include="Models\IHasArmorType.cs" />
     <Compile Include="Models\IMhwMultiStructItem.cs" />
+    <Compile Include="Models\IsListAttribute.cs" />
     <Compile Include="Models\ObservableMhwStructCollection.cs" />
     <Compile Include="Models\MhwStructDataContainer.cs" />
     <Compile Include="Models\IMhwStructItem.cs" />

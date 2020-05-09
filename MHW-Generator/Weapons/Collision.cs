@@ -327,13 +327,13 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Move Type", typeof(uint), true),
 
                 new MhwMultiStructData.Entry("Atk0", typeof(void), subStruct: new MhwMultiStructData.StructData("Atk0", atk0, _010Link: new MhwMultiStructData.ArrayLink(null, moveCount))
-                                             , condition: "if (|ref|Move_Type_raw == 0)"),
+                                             , condition: "if (|ref|Move_Type_raw == 0)", accessLevel: "protected"),
                 new MhwMultiStructData.Entry("Atk1", typeof(void), subStruct: new MhwMultiStructData.StructData("Atk1", atk1, _010Link: new MhwMultiStructData.ArrayLink(null, moveCount))
-                                             , condition: "if (|ref|Move_Type_raw == 1)"),
+                                             , condition: "if (|ref|Move_Type_raw == 1)", accessLevel: "protected"),
                 new MhwMultiStructData.Entry("Atk2", typeof(void), subStruct: new MhwMultiStructData.StructData("Atk2", atk2, _010Link: new MhwMultiStructData.ArrayLink(null, moveCount))
-                                             , condition: "if (|ref|Move_Type_raw == 2)"),
+                                             , condition: "if (|ref|Move_Type_raw == 2)", accessLevel: "protected"),
                 new MhwMultiStructData.Entry("Atk3", typeof(void), subStruct: new MhwMultiStructData.StructData("Atk3", atk3, _010Link: new MhwMultiStructData.ArrayLink(null, moveCount))
-                                             , condition: "if (|ref|Move_Type_raw == 3)"),
+                                             , condition: "if (|ref|Move_Type_raw == 3)", accessLevel: "protected"),
             }, 1);
 
             var oap = new MhwMultiStructData.StructData("OAP", new List<MhwMultiStructData.Entry> {

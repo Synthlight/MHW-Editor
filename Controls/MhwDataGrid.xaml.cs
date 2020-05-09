@@ -176,6 +176,7 @@ namespace MHW_Editor.Controls {
             var           sortOrder        = ((SortOrderAttribute) propertyInfo?.GetCustomAttribute(typeof(SortOrderAttribute), true))?.sortOrder;
             var           customSorterType = ((CustomSorterAttribute) propertyInfo?.GetCustomAttribute(typeof(CustomSorterAttribute), true))?.customSorterType;
             var           isReadOnly       = (IsReadOnlyAttribute) propertyInfo?.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
+            var           isList           = (IsListAttribute) propertyInfo?.GetCustomAttribute(typeof(IsListAttribute), true) != null;
             ICustomSorter customSorter     = null;
 
             if (displayName != null) {
@@ -187,7 +188,7 @@ namespace MHW_Editor.Controls {
                 e.Column.Header = displayName;
             }
 
-            if (e.PropertyType.IsGenericType && e.PropertyType.GetGenericTypeDefinition() == typeof(ObservableCollection<>)) {
+            if (isList || e.PropertyType.IsGenericType && e.PropertyType.GetGenericTypeDefinition() == typeof(ObservableCollection<>)) {
                 var col  = new DataGridTemplateColumn();
                 var btn1 = new FrameworkElementFactory(typeof(Button));
 
@@ -283,7 +284,7 @@ namespace MHW_Editor.Controls {
                 var frameworkElement = (FrameworkElement) sender;
                 var obj              = frameworkElement.DataContext;
                 var list             = propertyInfo.GetGetMethod().Invoke(obj, null);
-                var listType         = propertyInfo.PropertyType.GenericTypeArguments[0];
+                var listType         = list.GetType().GenericTypeArguments[0];
                 var viewType         = typeof(SubStructViewDynamic<>).MakeGenericType(listType);
                 var isReadOnly       = (bool) (listType.GetField(nameof(MhwStructDataContainer.IsAddingAllowed), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
                 var subStructView    = (SubStructView) Activator.CreateInstance(viewType, mainWindow, displayName, list, isReadOnly);

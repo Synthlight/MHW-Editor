@@ -35,16 +35,14 @@ namespace MHW_Editor.Weapons {
         private object GetMove(int moveId) {
             var moveContainer = data.First(o => o.list.OfType<Moves>().Any());
             return (from Moves move in moveContainer.list
-                    select GetAtk(moveId, move.Atk0_raw, move.Atk1_raw, move.Atk2_raw, move.Atk3_raw))
+                    select GetAtk(moveId, move.Atks))
                 .FirstOrDefault(atk => atk != null);
         }
 
-        private object GetAtk(int moveId, params dynamic[] atks) {
-            foreach (var collection in atks) {
-                foreach (var atk in collection) {
-                    if ((int) atk.Index == moveId) {
-                        return atk;
-                    }
+        private object GetAtk(int moveId, dynamic atks) {
+            foreach (var atk in atks) {
+                if ((int) atk.Index == moveId) {
+                    return atk;
                 }
             }
             return null;
@@ -101,30 +99,58 @@ namespace MHW_Editor.Weapons {
         }
 
         public partial class Moves {
-            public interface IAtk : IMhwStructItem {
-                [DisplayName("First Matching Name")]
-                [SortOrder(40)]
-                public string TranslatedName { get; }
+            [SortOrder(Atk0_sortIndex)]
+            [DisplayName("Atks")]
+            [IsList]
+            public dynamic Atks {
+                get {
+                    return Move_Type switch {
+                        0 => Atk0_raw,
+                        1 => Atk1_raw,
+                        2 => Atk2_raw,
+                        3 => Atk3_raw,
+                        _ => null // Should never happen.
+                    };
+                }
             }
+
+            private const string TRANSLATED_NAME_DISPLAY_NAME = "First Matching Name";
+            private const int    TRANSLATED_NAME_SORT_ORDER   = 55;
 
             public partial class Atk0 : IAtk {
                 [UsedImplicitly] public string translatedName;
-                public                  string TranslatedName => translatedName;
+
+                [DisplayName(TRANSLATED_NAME_DISPLAY_NAME)]
+                [SortOrder(TRANSLATED_NAME_SORT_ORDER)]
+                public string TranslatedName => translatedName;
             }
 
             public partial class Atk1 : IAtk {
                 [UsedImplicitly] public string translatedName;
-                public                  string TranslatedName => translatedName;
+
+                [DisplayName(TRANSLATED_NAME_DISPLAY_NAME)]
+                [SortOrder(TRANSLATED_NAME_SORT_ORDER)]
+                public string TranslatedName => translatedName;
             }
 
             public partial class Atk2 : IAtk {
                 [UsedImplicitly] public string translatedName;
-                public                  string TranslatedName => translatedName;
+
+                [DisplayName(TRANSLATED_NAME_DISPLAY_NAME)]
+                [SortOrder(TRANSLATED_NAME_SORT_ORDER)]
+                public string TranslatedName => translatedName;
             }
 
             public partial class Atk3 : IAtk {
                 [UsedImplicitly] public string translatedName;
-                public                  string TranslatedName => translatedName;
+
+                [DisplayName(TRANSLATED_NAME_DISPLAY_NAME)]
+                [SortOrder(TRANSLATED_NAME_SORT_ORDER)]
+                public string TranslatedName => translatedName;
+            }
+
+            public interface IAtk {
+                public string TranslatedName { get; }
             }
         }
 

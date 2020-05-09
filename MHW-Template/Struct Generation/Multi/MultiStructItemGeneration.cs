@@ -168,7 +168,7 @@ namespace MHW_Template.Struct_Generation.Multi {
             template.WriteLine(indentation, $"            public const int {propName}_sortIndex = {sortIndex};");
             template.WriteLine(indentation, $"            [SortOrder({propName}_sortIndex)]");
             template.WriteLine(indentation, $"            [DisplayName({propName}_displayName)]");
-            template.WriteLine(indentation, $"            {accessLevel} {typeString} {entryName} {{ get; protected set; }}");
+            template.WriteLine(indentation, $"            {accessLevel} {typeString} {entryName} {{ get; {(accessLevel.Contains("protected") ? "" : "protected ")}set; }}");
         }
 
         private static void MakeButtonProperty(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.Entry entry, string propName) {
