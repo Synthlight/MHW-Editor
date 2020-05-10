@@ -133,6 +133,9 @@
   <data name="ara_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ara_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ara_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\ara_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ara_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ara_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -223,6 +226,9 @@
   <data name="chS_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\chs_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="chS_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\chs_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chS_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\chs_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -312,6 +318,9 @@
   </data>
   <data name="chT_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chT_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\cht_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chT_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\cht_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -406,6 +415,9 @@
   <data name="eng_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\eng_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="eng_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\eng_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="eng_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\eng_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -495,6 +507,9 @@
   </data>
   <data name="fre_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\fre_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fre_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\fre_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="fre_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\fre_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -586,6 +601,9 @@
   <data name="ger_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ger_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ger_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\ger_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ger_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ger_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -675,6 +693,9 @@
   </data>
   <data name="ita_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ita_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ita_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\ita_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ita_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ita_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -766,6 +787,9 @@
   <data name="jpn_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\jpn_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="jpn_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\jpn_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="jpn_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\jpn_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -855,6 +879,9 @@
   </data>
   <data name="kor_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\kor_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kor_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\kor_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="kor_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\kor_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -946,6 +973,9 @@
   <data name="pol_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\pol_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="pol_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\pol_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="pol_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\pol_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1036,6 +1066,9 @@
   <data name="ptB_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ptb_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ptB_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\ptb_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ptB_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\ptb_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1125,6 +1158,9 @@
   </data>
   <data name="rus_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rus_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rus_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\rus_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rus_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\rus_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1218,6 +1254,9 @@
   </data>
   <data name="spa_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_bow.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="spa_customPartsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>custompartsdata\spa_custompartsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="spa_c_axe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>weapondata\spa_c_axe.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

@@ -123,6 +123,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ara_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("ara_customPartsData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ara_expressionData {
             get {
                 object obj = ResourceManager.GetObject("ara_expressionData", resourceCulture);
@@ -423,6 +433,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] chS_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("chS_customPartsData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] chS_expressionData {
             get {
                 object obj = ResourceManager.GetObject("chS_expressionData", resourceCulture);
@@ -716,6 +736,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] chT_c_axe {
             get {
                 object obj = ResourceManager.GetObject("chT_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chT_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("chT_customPartsData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1033,6 +1063,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] eng_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("eng_customPartsData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] eng_expressionData {
             get {
                 object obj = ResourceManager.GetObject("eng_expressionData", resourceCulture);
@@ -1326,6 +1366,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] fre_c_axe {
             get {
                 object obj = ResourceManager.GetObject("fre_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fre_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("fre_customPartsData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1633,6 +1683,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ger_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("ger_customPartsData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ger_expressionData {
             get {
                 object obj = ResourceManager.GetObject("ger_expressionData", resourceCulture);
@@ -1926,6 +1986,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] ita_c_axe {
             get {
                 object obj = ResourceManager.GetObject("ita_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ita_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("ita_customPartsData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -2233,6 +2303,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] jpn_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("jpn_customPartsData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] jpn_expressionData {
             get {
                 object obj = ResourceManager.GetObject("jpn_expressionData", resourceCulture);
@@ -2526,6 +2606,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] kor_c_axe {
             get {
                 object obj = ResourceManager.GetObject("kor_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] kor_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("kor_customPartsData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -2833,6 +2923,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] pol_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("pol_customPartsData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] pol_expressionData {
             get {
                 object obj = ResourceManager.GetObject("pol_expressionData", resourceCulture);
@@ -3133,6 +3233,16 @@ namespace MHW_Editor.Assets {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ptB_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("ptB_customPartsData", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ptB_expressionData {
             get {
                 object obj = ResourceManager.GetObject("ptB_expressionData", resourceCulture);
@@ -3426,6 +3536,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] rus_c_axe {
             get {
                 object obj = ResourceManager.GetObject("rus_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] rus_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("rus_customPartsData", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -3736,6 +3856,16 @@ namespace MHW_Editor.Assets {
         internal static byte[] spa_c_axe {
             get {
                 object obj = ResourceManager.GetObject("spa_c_axe", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] spa_customPartsData {
+            get {
+                object obj = ResourceManager.GetObject("spa_customPartsData", resourceCulture);
                 return ((byte[])(obj));
             }
         }

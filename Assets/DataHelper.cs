@@ -10,33 +10,37 @@ using Newtonsoft.Json;
 
 namespace MHW_Editor.Assets {
     public static class DataHelper {
-        public static readonly LangMap                     armorData              = new LangMap(); // Uses GMD reference.
-        public static readonly LangMap                     awakeningNames         = new LangMap();
-        public static readonly LangMap                     awakeningDescriptions  = new LangMap();
-        public static readonly LangMap                     bountyNames            = new LangMap();
-        public static readonly LangMap                     bountyDescriptions     = new LangMap();
-        public static readonly LangMap                     gcBackgroundsGmd       = new LangMap();
-        public static readonly LangMap                     gcTitles1Gmd           = new LangMap();
-        public static readonly LangMap                     gcTitles2Gmd           = new LangMap();
-        public static readonly LangMap                     gcExpressionsGmd       = new LangMap();
-        public static readonly LangMap                     gcPosesGmd             = new LangMap();
-        public static readonly LangMap                     itemNames              = new LangMap();
-        public static readonly LangMap                     itemDescriptions       = new LangMap();
-        public static readonly LangMap                     kinsectNames           = new LangMap();
-        public static readonly LangMap                     mantleNames            = new LangMap();
-        public static readonly LangMapNeg                  mantleNamesNeg         = new LangMapNeg();
-        public static readonly LangMap                     mantleDescriptions     = new LangMap();
-        public static readonly LangMap                     monsterNames           = new LangMap();
-        public static readonly LangMap                     monsterDescriptions    = new LangMap();
-        public static readonly LangMapNeg                  monsterNamesNeg        = new LangMapNeg();
-        public static readonly LangMapNeg                  monsterDescriptionsNeg = new LangMapNeg();
-        public static readonly LangMap                     otomoArmorData         = new LangMap(); // Uses GMD reference.
-        public static readonly LangMap                     otomoWeaponData        = new LangMap(); // Uses GMD reference.
-        public static readonly LangMap                     pendantNames           = new LangMap();
-        public static readonly LangMap                     skillNames             = new LangMap();
-        public static readonly LangMap                     skillDescriptions      = new LangMap();
-        public static readonly Dictionary<uint, string>    songNames              = new Dictionary<uint, string>(); // Has no lang.
-        public static readonly Dictionary<string, LangMap> weaponData             = new Dictionary<string, LangMap>(); // Has wp file name too. Uses GMD reference.
+        public static readonly LangMap                     armorData                     = new LangMap(); // Uses GMD reference.
+        public static readonly LangMap                     awakeningNames                = new LangMap();
+        public static readonly LangMap                     awakeningDescriptions         = new LangMap();
+        public static readonly LangMap                     bountyNames                   = new LangMap();
+        public static readonly LangMap                     bountyDescriptions            = new LangMap();
+        public static readonly LangMap                     customPartsNames              = new LangMap();
+        public static readonly LangMap                     customPartsDescriptions       = new LangMap();
+        public static readonly LangMap                     customPartsRecipeNames        = new LangMap();
+        public static readonly LangMap                     customPartsRecipeDescriptions = new LangMap();
+        public static readonly LangMap                     gcBackgroundsGmd              = new LangMap();
+        public static readonly LangMap                     gcTitles1Gmd                  = new LangMap();
+        public static readonly LangMap                     gcTitles2Gmd                  = new LangMap();
+        public static readonly LangMap                     gcExpressionsGmd              = new LangMap();
+        public static readonly LangMap                     gcPosesGmd                    = new LangMap();
+        public static readonly LangMap                     itemNames                     = new LangMap();
+        public static readonly LangMap                     itemDescriptions              = new LangMap();
+        public static readonly LangMap                     kinsectNames                  = new LangMap();
+        public static readonly LangMap                     mantleNames                   = new LangMap();
+        public static readonly LangMapNeg                  mantleNamesNeg                = new LangMapNeg();
+        public static readonly LangMap                     mantleDescriptions            = new LangMap();
+        public static readonly LangMap                     monsterNames                  = new LangMap();
+        public static readonly LangMap                     monsterDescriptions           = new LangMap();
+        public static readonly LangMapNeg                  monsterNamesNeg               = new LangMapNeg();
+        public static readonly LangMapNeg                  monsterDescriptionsNeg        = new LangMapNeg();
+        public static readonly LangMap                     otomoArmorData                = new LangMap(); // Uses GMD reference.
+        public static readonly LangMap                     otomoWeaponData               = new LangMap(); // Uses GMD reference.
+        public static readonly LangMap                     pendantNames                  = new LangMap();
+        public static readonly LangMap                     skillNames                    = new LangMap();
+        public static readonly LangMap                     skillDescriptions             = new LangMap();
+        public static readonly Dictionary<uint, string>    songNames                     = new Dictionary<uint, string>(); // Has no lang.
+        public static readonly Dictionary<string, LangMap> weaponData                    = new Dictionary<string, LangMap>(); // Has wp file name too. Uses GMD reference.
 
         public static readonly Dictionary<string, Dictionary<int, NameDescPair>> collisionTranslationsData;
 
@@ -87,6 +91,7 @@ namespace MHW_Editor.Assets {
                 ParseMantleData(lang);
                 ParseAwakeningData(lang);
                 ParseMonsterData(lang);
+                ParseCustomPartsData(lang);
 
                 armorData[lang]       = LoadDict<uint, string>(GetAsset($"{lang}_armorData"));
                 otomoArmorData[lang]  = LoadDict<uint, string>(GetAsset($"{lang}_otomo_armorData"));
@@ -229,6 +234,30 @@ namespace MHW_Editor.Assets {
                     59 => "Training Pole",
                     _ => monsterNames[lang][key]
                 };
+            }
+        }
+
+        private static void ParseCustomPartsData(string lang) {
+            customPartsNames[lang]              = new Dictionary<uint, string>();
+            customPartsDescriptions[lang]       = new Dictionary<uint, string>();
+            customPartsRecipeNames[lang]        = new Dictionary<uint, string>();
+            customPartsRecipeDescriptions[lang] = new Dictionary<uint, string>();
+
+            var rawCustomPartsData = LoadDict<uint, string>(GetAsset($"{lang}_customPartsData"));
+
+            var        s    = 1U;
+            const uint step = 2;
+            for (uint index = 0; index < rawCustomPartsData.Count; index += step) {
+                var key  = index / 2;
+                var name = rawCustomPartsData[index];
+                var desc = rawCustomPartsData[index + 1].Replace("\r\n", " ");
+
+                customPartsNames[lang][key]        = name;
+                customPartsDescriptions[lang][key] = desc;
+
+                if (name == "Unavailable") continue;
+                customPartsRecipeNames[lang][s]          = name;
+                customPartsRecipeDescriptions[lang][s++] = desc;
             }
         }
 

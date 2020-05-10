@@ -47,6 +47,7 @@ namespace MHW_Name_Extractor {
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\a_skill_{lang}.gmd", $@"{Global.ASSETS_ROOT}\MantleData\{lang}_mantleData.json"); // .rod_inse
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\ew_limit_break_{lang}.gmd", $@"{Global.ASSETS_ROOT}\AwakeningData\{lang}_awakeningData.json"); // .em104lb/r
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\skill_pt_{lang}.gmd", $@"{Global.ASSETS_ROOT}\SkillData\{lang}_skillData.json"); // .sgpa
+                GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\vfont\customParts_{lang}.gmd", $@"{Global.ASSETS_ROOT}\CustomPartsData\{lang}_customPartsData.json"); // .cus_pa/r
 
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_BG_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Backgrounds\{lang}_backgroundData.json"); // .gcod
                 GetAndWriteGmdStringsAsJson($@"{Global.COMMON_TEXT_ROOT}\steam\GC_Title_1_{lang}.gmd", $@"{Global.ASSETS_ROOT}\GuildCardData\Titles\{lang}_titles1Data.json"); // .gcod
@@ -111,15 +112,14 @@ namespace MHW_Name_Extractor {
 
         private static Dictionary<ulong, string> GetGmdStrings(string targetFile) {
             using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
-                var len = dat.BaseStream.Length;
-
                 // Header
                 dat.BaseStream.Seek(20, SeekOrigin.Begin);
                 var keyCount        = dat.ReadInt32();
                 var stringCount     = dat.ReadInt32();
                 var keyBlockSize    = dat.ReadInt32();
                 var stringBlockSize = dat.ReadInt32();
-                var fileName        = Encoding.UTF8.GetString(dat.ReadBytes(dat.ReadInt32()));
+                // ReSharper disable once UnusedVariable (Needed to position ourselves right.)
+                var fileName = Encoding.UTF8.GetString(dat.ReadBytes(dat.ReadInt32()));
 
                 dat.BaseStream.Seek(1, SeekOrigin.Current);
 
@@ -158,15 +158,14 @@ namespace MHW_Name_Extractor {
 
         private static Dictionary<string, string> GetGmdStringsWithKeys(string targetFile) {
             using (var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read))) {
-                var len = dat.BaseStream.Length;
-
                 // Header
                 dat.BaseStream.Seek(20, SeekOrigin.Begin);
                 var keyCount        = dat.ReadInt32();
                 var stringCount     = dat.ReadInt32();
                 var keyBlockSize    = dat.ReadInt32();
                 var stringBlockSize = dat.ReadInt32();
-                var fileName        = Encoding.UTF8.GetString(dat.ReadBytes(dat.ReadInt32()));
+                // ReSharper disable once UnusedVariable (Needed to position ourselves right.)
+                var fileName = Encoding.UTF8.GetString(dat.ReadBytes(dat.ReadInt32()));
 
                 dat.BaseStream.Seek(1, SeekOrigin.Current);
 
