@@ -273,6 +273,7 @@ namespace MHW_Editor.Controls {
         private void On_Cell_Delete_Click(object sender, RoutedEventArgs e) {
             try {
                 var obj = ((FrameworkElement) sender).DataContext;
+                if (obj.ToString() == "{DataGrid.NewItemPlaceholder}") return;
                 Items.Remove((T) obj);
             } catch (Exception err) when (!Debugger.IsAttached) {
                 MainWindow.ShowError(err, "Error Occured");

@@ -5,16 +5,7 @@ using MHW_Template.Struct_Generation.Multi;
 
 namespace MHW_Generator.Monsters {
     public class MonsterRandomSize : IMultiStruct {
-        public MultiStruct Generate() { // .dtt_rsz 
-            var crownTable = new List<MhwMultiStructData.Entry> {
-                new MhwMultiStructData.Entry("Name (Jap)", typeof(string), isNullTerminatedString: true)
-            }; // TODO: Add support for sub-sub-structs.
-
-            for (var i = 0; i < 38; i++) {
-                crownTable.Add(new MhwMultiStructData.Entry($"Crown Size Multiplier {i + 1}", typeof(int)));
-                crownTable.Add(new MhwMultiStructData.Entry($"Crown Size Rarity {i + 1}", typeof(int)));
-            }
-
+        public MultiStruct Generate() { // .dtt_rsz
             var structs = new List<MhwMultiStructData.StructData> {
                 new MhwMultiStructData.StructData("Monster Random Sizes", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
@@ -34,7 +25,14 @@ namespace MHW_Generator.Monsters {
                     new MhwMultiStructData.Entry("Number of Crown Tables", typeof(uint), true).Out(out var crownCount)
                 }, 1, true).Out(out var crownCountHolder),
 
-                new MhwMultiStructData.StructData("Crown Tables", crownTable, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(crownCountHolder, crownCount))
+                new MhwMultiStructData.StructData("Crown Tables", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Name (Jap)", typeof(string), isNullTerminatedString: true),
+
+                    new MhwMultiStructData.Entry("Crown Sizes", typeof(void), subStruct: new MhwMultiStructData.StructData("Crown Sizes", new List<MhwMultiStructData.Entry> {
+                        new MhwMultiStructData.Entry("Crown Size Multiplier", typeof(int)),
+                        new MhwMultiStructData.Entry("Crown Size Rarity", typeof(int))
+                    }, 38))
+                }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(crownCountHolder, crownCount))
             };
 
             return new MultiStruct("MHW_Editor.Monsters", "MonsterRandomSize", new MhwMultiStructData(structs, "dtt_rsz"));
