@@ -97,6 +97,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
                     new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint))
                 }, 1, showVertically: true),
+
                 new MhwMultiStructData.StructData("Sound", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Wwise Container Header", typeof(uint)),
                     new MhwMultiStructData.Entry("Wwise Container", typeof(string), isNullTerminatedString: true, condition: "if (|ref|Wwise_Container_Header_raw != 0)"),
@@ -125,6 +126,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Sound: Custom Header 3", typeof(int)),
                     new MhwMultiStructData.Entry("Sound: Custom 3", typeof(int))
                 }, 1, showVertically: true),
+
                 new MhwMultiStructData.StructData("Shlp (2)", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Header", typeof(uint)),
                     new MhwMultiStructData.Entry("Projectile: Entity Collider", typeof(uint)),

@@ -77,7 +77,7 @@ namespace MHW_Editor.Models {
 
             // Only pad for encrypted files.
             if (EncryptionKey != null) {
-                const int paddingBlockSize = 8;
+                const int paddingBlockSize = 16;
                 var       paddingNeeded    = memoryStream.Length % paddingBlockSize;
                 if (paddingNeeded > 0) {
                     for (var i = 0; i < paddingBlockSize - paddingNeeded; i++) {
