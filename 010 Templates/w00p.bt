@@ -1,0 +1,215 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.w00p
+//  Category: MHW_Editor.Weapons
+//------------------------------------------------
+
+typedef struct {
+    char Weapon[4]<optimize=false>;
+    uint Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+} W00p_Params_1_;
+
+typedef struct {
+    ubyte Unk_5;
+    float Unk_6;
+    float Unk_7;
+    float Unk_8;
+    float Unk_9;
+} Unk_Arr_1;
+
+typedef struct {
+    float Unk_10;
+    float Unk_11;
+    float Unk_12;
+    float Unk_13;
+    float Unk_14;
+    float Unk_15;
+    float Unk_16;
+    float Unk_17;
+    float Unk_18;
+    float Unk_19;
+    float Unk_20;
+    float Unk_21;
+    float Unk_22;
+    ubyte Unk_23;
+    ubyte Unk_24;
+    ubyte Unk_25;
+    ubyte Unk_26;
+    float Unk_27;
+    float Unk_28;
+    float Unk_29;
+    float Unk_30;
+    ubyte Unk_31;
+    float Unk_32;
+    float Unk_33;
+    ubyte Unk_34;
+    ubyte Unk_35;
+    ubyte Unk_36;
+    float Unk_37;
+    ubyte Unk_38;
+    ubyte Unk_39;
+    ubyte Unk_40;
+    uint Unk_41;
+    uint Unk_42;
+    uint Unk_43;
+    uint Unk_44;
+    uint Unk_45;
+    uint Unk_46;
+    float Unk_47;
+    float Unk_48;
+    float Unk_49;
+    float Unk_50;
+    float Unk_51;
+    float Unk_52;
+    float Unk_53;
+    float Unk_54;
+    float Unk_55;
+    float Unk_56;
+    float Unk_57;
+    float Unk_58;
+    float Unk_59;
+    float Unk_60;
+    float Unk_61;
+    uint Unk_62;
+    uint Unk_63;
+    float Unk_64;
+    float Unk_65;
+    float Unk_66;
+    float Unk_67;
+    float Unk_68;
+    float Unk_69;
+    uint Unk_70;
+    uint Unk_71;
+    uint Unk_72;
+    uint Unk_73;
+    uint Unk_74;
+    uint Unk_75;
+    uint Unk_76;
+    uint Unk_77;
+    uint Unk_78;
+    uint Unk_79;
+    uint Unk_80;
+    uint Unk_81;
+    uint Unk_82;
+    uint Unk_83;
+    uint Unk_84;
+    ubyte Unk_85;
+    uint Unk_86;
+    uint Unk_87;
+    uint Unk_88;
+    uint Unk_89;
+} W00p_Params_2_;
+
+typedef struct {
+    ubyte Unk_90;
+    int Unk_91;
+    uint Unk_92;
+    float Unk_93;
+    float Unk_94;
+    float Unk_95;
+    float Unk_96;
+    float Unk_97;
+    float Unk_98;
+    float Unk_99;
+    float Unk_100;
+    float Unk_101;
+    float Unk_102;
+    float Unk_103;
+    float Unk_104;
+} Unk_Arr_2;
+
+typedef struct {
+    float Unk_105;
+    float Unk_106;
+    float Unk_107;
+    float Unk_108;
+} Unk_Arr_3;
+
+typedef struct {
+    float Unk_109;
+    float Unk_110;
+    float Unk_111;
+    float Unk_112;
+    ubyte Unk_113;
+    ubyte Unk_114;
+    ubyte Unk_115;
+    ubyte Unk_116;
+    ubyte Unk_117;
+    float Unk_118;
+    float Unk_119;
+    float Unk_120;
+    float Unk_121;
+    float Unk_122;
+} W00p_Params_3_;
+
+typedef struct {
+    ubyte Unk_123;
+    ushort Unk_124;
+    ushort Unk_125;
+    float Unk_126;
+    ushort Unk_127;
+} Unk_Arr_4;
+
+typedef struct {
+    float Unk_128;
+    float Unk_129;
+    float Unk_130;
+    float Unk_131;
+} Unk_Arr_5;
+
+typedef struct {
+    uint Unk_132;
+    uint Unk_133;
+    uint Unk_134;
+    uint Unk_135;
+    float Unk_136;
+    float Unk_137;
+    uint Unk_138;
+    float Unk_139;
+} W00p_Params_4_;
+
+typedef struct {
+    float Unk_140;
+    float Unk_141;
+    float Unk_142;
+    float Unk_143;
+    float Unk_144;
+} Unk_Arr_6;
+
+typedef struct {
+    uint Unk_145;
+    float Unk_146;
+    float Unk_147;
+    float Unk_148;
+    float Unk_149;
+    float Unk_150;
+    float Unk_151;
+    float Unk_152;
+    float Unk_153;
+    float Unk_154;
+    float Unk_155;
+    float Unk_156;
+    float Unk_157;
+    float Unk_158;
+    float Unk_159;
+    float Unk_160;
+    float Unk_161;
+    float Unk_162;
+    float Unk_163;
+} W00p_Params_5_;
+
+W00p_Params_1_ W00p_Params_1__;
+Unk_Arr_1 Unk_Arr_1_[20]<optimize=false>;
+W00p_Params_2_ W00p_Params_2__;
+Unk_Arr_2 Unk_Arr_2_[9]<optimize=false>;
+Unk_Arr_3 Unk_Arr_3_[5]<optimize=false>;
+W00p_Params_3_ W00p_Params_3__;
+Unk_Arr_4 Unk_Arr_4_[4]<optimize=false>;
+Unk_Arr_5 Unk_Arr_5_[13]<optimize=false>;
+W00p_Params_4_ W00p_Params_4__;
+Unk_Arr_6 Unk_Arr_6_[8]<optimize=false>;
+W00p_Params_5_ W00p_Params_5__;

@@ -133,6 +133,7 @@
     <Compile Include="Weapons\WeaponWSword.cs" />
     <Compile Include="Weapons\Wp11Param.cs" />
     <Compile Include="Weapons\Wp10Param.cs" />
+    <Compile Include="Weapons\Wp00Param.cs" />
     <Compile Include="Weapons\Wp12Param.cs" />
     <Compile Include="Weapons\ArenaEquipment.cs" />
     <Compile Include="Weapons\Wp13Param.cs" />

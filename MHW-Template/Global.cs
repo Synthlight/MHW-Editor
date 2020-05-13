@@ -116,7 +116,7 @@ namespace MHW_Template {
             "*.swpn",
             "*.trdr",
             "*.trsr",
-            //"*.w00p",
+            "*.w00p",
             //"*.w01p",
             //"*.w02p",
             //"*.w03p",
