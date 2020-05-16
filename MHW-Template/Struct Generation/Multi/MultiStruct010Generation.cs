@@ -9,19 +9,18 @@ namespace MHW_Template.Struct_Generation.Multi {
             foreach (var @struct in structData.structs) {
                 CreateStruct(template, @struct);
             }
-
-            template.WriteLine("");
-
-            foreach (var @struct in structData.structs) {
-                CreateStructField(template, @struct);
-            }
         }
 
         private static void CreateStruct(MultiStruct010TemplateBase template, MhwMultiStructData.StructData @struct, uint indentation = 0) {
-            var name = @struct.SafeName;
+            var name             = @struct.SafeName;
+            var innerIndentation = 0U;
 
             template.WriteLine("");
-            template.WriteLine(indentation, "typedef struct {");
+
+            if (!@struct.showVertically || indentation > 0) {
+                template.WriteLine(indentation, "typedef struct {");
+                innerIndentation++;
+            }
 
             foreach (var entry in @struct.entries) {
                 if (entry.HasSubStruct) {
@@ -41,13 +40,20 @@ namespace MHW_Template.Struct_Generation.Multi {
 
                 if (entry.condition != null) {
                     var condition = entry.condition.Replace("|ref|", "").Replace("_raw", "").Replace("parent.", "");
-                    template.WriteLine(indentation, $"    {condition} {{ {typeString} {propName}; }}");
+                    template.WriteLine(innerIndentation, $"{condition} {{ {typeString} {propName}; }}");
                 } else {
-                    template.WriteLine(indentation, $"    {typeString} {propName};");
+                    template.WriteLine(innerIndentation, $"{typeString} {propName};");
                 }
             }
 
-            template.WriteLine(indentation, $"}} {name};");
+            if (!@struct.showVertically || indentation > 0) {
+                template.WriteLine(indentation, $"}} {name};");
+
+                if (indentation == 0) {
+                    template.WriteLine("");
+                    CreateStructField(template, @struct, indentation: indentation);
+                }
+            }
         }
 
         private static void CreateStructField(MultiStruct010TemplateBase template, MhwMultiStructData.StructData @struct, MhwMultiStructData.Entry entry = null, uint indentation = 0) {

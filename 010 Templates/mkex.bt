@@ -11,16 +11,17 @@ typedef struct {
     uint Entry_Count;
 } Melder_Exchange;
 
+Melder_Exchange Melder_Exchange_;
+
 typedef struct {
     uint Source_Item_Id;
     uint Unk_1;
 
     typedef struct {
-        ushort Unk;
+    ushort Unk;
     } Items;
 
     Items Items_[215]<optimize=false>;
 } Item_Box;
 
-Melder_Exchange Melder_Exchange_;
 Item_Box Item_Box_[Melder_Exchange_.Entry_Count]<optimize=false>;

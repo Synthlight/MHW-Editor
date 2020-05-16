@@ -14,6 +14,8 @@ typedef struct {
     uint Flinches_Count;
 } Monster_Parts;
 
+Monster_Parts Monster_Parts_;
+
 typedef struct {
     uint Flinch_Value;
     int Special_Part_1;
@@ -23,99 +25,103 @@ typedef struct {
     uint Parts_Type;
 
     typedef struct {
-        int Part_Id_LR_HR1_Normal;
-        int Part_Id_LR_HR1_Wounded;
-        int Part_Id_LR_HR1_Special_Phase_1;
-        int Part_Id_LR_HR1_Special_Phase_2;
-        int Part_Id_LR_HR1_Special_Phase_3;
-        int Part_Id_MR1_Normal;
-        int Part_Id_MR1_Wounded;
-        int Part_Id_MR1_Special_Phase_1;
-        int Part_Id_MR1_Special_Phase_2;
-        int Part_Id_MR1_Special_Phase_3;
-        uint unk9;
-        uint unk10;
-        uint unk11;
-        ubyte unk12;
-        ubyte unk13;
+    int Part_Id_LR_HR1_Normal;
+    int Part_Id_LR_HR1_Wounded;
+    int Part_Id_LR_HR1_Special_Phase_1;
+    int Part_Id_LR_HR1_Special_Phase_2;
+    int Part_Id_LR_HR1_Special_Phase_3;
+    int Part_Id_MR1_Normal;
+    int Part_Id_MR1_Wounded;
+    int Part_Id_MR1_Special_Phase_1;
+    int Part_Id_MR1_Special_Phase_2;
+    int Part_Id_MR1_Special_Phase_3;
+    uint unk9;
+    uint unk10;
+    uint unk11;
+    ubyte unk12;
+    ubyte unk13;
     } Parts1;
 
     if (Parts_Type == 1) { Parts1 Parts1_; }
 
     typedef struct {
-        int Part_Id_LR_HR1_Normal;
-        int Part_Id_LR_HR1_Wounded;
-        int Part_Id_LR_HR1_Special_Phase_1;
-        int Part_Id_LR_HR1_Special_Phase_2;
-        int Part_Id_LR_HR1_Special_Phase_3;
-        int Part_Id_MR1_Normal;
-        int Part_Id_MR1_Wounded;
-        int Part_Id_MR1_Special_Phase_1;
-        int Part_Id_MR1_Special_Phase_2;
-        int Part_Id_MR1_Special_Phase_3;
-        int Part_Id_LR_HR2_Normal;
-        int Part_Id_LR_HR2_Wounded;
-        int Part_Id_LR_HR2_Special_Phase_1;
-        int Part_Id_LR_HR2_Special_Phase_2;
-        int Part_Id_LR_HR2_Special_Phase_3;
-        int Part_Id_MR2_Normal;
-        int Part_Id_MR2_Wounded;
-        int Part_Id_MR2_Special_Phase_1;
-        int Part_Id_MR2_Special_Phase_2;
-        int Part_Id_MR2_Special_Phase_3;
-        uint unk19;
-        uint unk20;
-        uint unk21;
-        ubyte unk22;
-        ubyte unk23;
+    int Part_Id_LR_HR1_Normal;
+    int Part_Id_LR_HR1_Wounded;
+    int Part_Id_LR_HR1_Special_Phase_1;
+    int Part_Id_LR_HR1_Special_Phase_2;
+    int Part_Id_LR_HR1_Special_Phase_3;
+    int Part_Id_MR1_Normal;
+    int Part_Id_MR1_Wounded;
+    int Part_Id_MR1_Special_Phase_1;
+    int Part_Id_MR1_Special_Phase_2;
+    int Part_Id_MR1_Special_Phase_3;
+    int Part_Id_LR_HR2_Normal;
+    int Part_Id_LR_HR2_Wounded;
+    int Part_Id_LR_HR2_Special_Phase_1;
+    int Part_Id_LR_HR2_Special_Phase_2;
+    int Part_Id_LR_HR2_Special_Phase_3;
+    int Part_Id_MR2_Normal;
+    int Part_Id_MR2_Wounded;
+    int Part_Id_MR2_Special_Phase_1;
+    int Part_Id_MR2_Special_Phase_2;
+    int Part_Id_MR2_Special_Phase_3;
+    uint unk19;
+    uint unk20;
+    uint unk21;
+    ubyte unk22;
+    ubyte unk23;
     } Parts2;
 
     if (Parts_Type == 2) { Parts2 Parts2_; }
 
     typedef struct {
-        int Part_Id_LR_HR1_Normal;
-        int Part_Id_LR_HR1_Wounded;
-        int Part_Id_LR_HR1_Special_Phase_1;
-        int Part_Id_LR_HR1_Special_Phase_2;
-        int Part_Id_LR_HR1_Special_Phase_3;
-        int Part_Id_MR1_Normal;
-        int Part_Id_MR1_Wounded;
-        int Part_Id_MR1_Special_Phase_1;
-        int Part_Id_MR1_Special_Phase_2;
-        int Part_Id_MR1_Special_Phase_3;
-        int Part_Id_LR_HR2_Normal;
-        int Part_Id_LR_HR2_Wounded;
-        int Part_Id_LR_HR2_Special_Phase_1;
-        int Part_Id_LR_HR2_Special_Phase_2;
-        int Part_Id_LR_HR2_Special_Phase_3;
-        int Part_Id_MR2_Normal;
-        int Part_Id_MR2_Wounded;
-        int Part_Id_MR2_Special_Phase_1;
-        int Part_Id_MR2_Special_Phase_2;
-        int Part_Id_MR2_Special_Phase_3;
-        int Part_Id_LR_HR3_Normal;
-        int Part_Id_LR_HR3_Wounded;
-        int Part_Id_LR_HR3_Special_Phase_1;
-        int Part_Id_LR_HR3_Special_Phase_2;
-        int Part_Id_LR_HR3_Special_Phase_3;
-        int Part_Id_MR3_Normal;
-        int Part_Id_MR3_Wounded;
-        int Part_Id_MR3_Special_Phase_1;
-        int Part_Id_MR3_Special_Phase_2;
-        int Part_Id_MR3_Special_Phase_3;
-        uint unk29;
-        uint unk30;
-        uint unk31;
-        ubyte unk32;
-        ubyte unk33;
+    int Part_Id_LR_HR1_Normal;
+    int Part_Id_LR_HR1_Wounded;
+    int Part_Id_LR_HR1_Special_Phase_1;
+    int Part_Id_LR_HR1_Special_Phase_2;
+    int Part_Id_LR_HR1_Special_Phase_3;
+    int Part_Id_MR1_Normal;
+    int Part_Id_MR1_Wounded;
+    int Part_Id_MR1_Special_Phase_1;
+    int Part_Id_MR1_Special_Phase_2;
+    int Part_Id_MR1_Special_Phase_3;
+    int Part_Id_LR_HR2_Normal;
+    int Part_Id_LR_HR2_Wounded;
+    int Part_Id_LR_HR2_Special_Phase_1;
+    int Part_Id_LR_HR2_Special_Phase_2;
+    int Part_Id_LR_HR2_Special_Phase_3;
+    int Part_Id_MR2_Normal;
+    int Part_Id_MR2_Wounded;
+    int Part_Id_MR2_Special_Phase_1;
+    int Part_Id_MR2_Special_Phase_2;
+    int Part_Id_MR2_Special_Phase_3;
+    int Part_Id_LR_HR3_Normal;
+    int Part_Id_LR_HR3_Wounded;
+    int Part_Id_LR_HR3_Special_Phase_1;
+    int Part_Id_LR_HR3_Special_Phase_2;
+    int Part_Id_LR_HR3_Special_Phase_3;
+    int Part_Id_MR3_Normal;
+    int Part_Id_MR3_Wounded;
+    int Part_Id_MR3_Special_Phase_1;
+    int Part_Id_MR3_Special_Phase_2;
+    int Part_Id_MR3_Special_Phase_3;
+    uint unk29;
+    uint unk30;
+    uint unk31;
+    ubyte unk32;
+    ubyte unk33;
     } Parts3;
 
     if (Parts_Type == 3) { Parts3 Parts3_; }
 } Flinches;
 
+Flinches Flinches_[Monster_Parts_.Flinches_Count]<optimize=false>;
+
 typedef struct {
     uint Hitzone_Count;
 } Hitzone_Header;
+
+Hitzone_Header Hitzone_Header_;
 
 typedef struct {
     float Timer;
@@ -131,9 +137,13 @@ typedef struct {
     uint Stamina;
 } Hitzones;
 
+Hitzones Hitzones_[Hitzone_Header_.Hitzone_Count]<optimize=false>;
+
 typedef struct {
     uint Sever_Count;
 } Sever_Header;
+
+Sever_Header Sever_Header_;
 
 typedef struct {
     uint Damage;
@@ -146,9 +156,13 @@ typedef struct {
     ubyte Shot;
 } Severs;
 
+Severs Severs_[Sever_Header_.Sever_Count]<optimize=false>;
+
 typedef struct {
     uint Unk_Count;
 } Unk_Header;
+
+Unk_Header Unk_Header_;
 
 typedef struct {
     uint unk1;
@@ -164,17 +178,7 @@ typedef struct {
     ubyte unk11;
 } Unknowns;
 
-typedef struct {
-    uint unk1;
-    uint unk2;
-} Unknown;
-
-Monster_Parts Monster_Parts_;
-Flinches Flinches_[Monster_Parts_.Flinches_Count]<optimize=false>;
-Hitzone_Header Hitzone_Header_;
-Hitzones Hitzones_[Hitzone_Header_.Hitzone_Count]<optimize=false>;
-Sever_Header Sever_Header_;
-Severs Severs_[Sever_Header_.Sever_Count]<optimize=false>;
-Unk_Header Unk_Header_;
 Unknowns Unknowns_[Unk_Header_.Unk_Count]<optimize=false>;
-Unknown Unknown_;
+
+uint unk1;
+uint unk2;

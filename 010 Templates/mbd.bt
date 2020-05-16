@@ -11,6 +11,8 @@ typedef struct {
     uint Entry_Count;
 } Motion_Blend_Data_1_;
 
+Motion_Blend_Data_1_ Motion_Blend_Data_1__;
+
 typedef struct {
     uint Unk_1;
     uint lmt_Offset_Index;
@@ -19,25 +21,25 @@ typedef struct {
     uint Unk_3;
 
     typedef struct {
-        string Unk_1;
-        uint Unk_2;
-        uint Unk_3;
-        uint Unk_4;
-        uint Unk_5;
-        float Unk_6;
-        uint Unk_7;
-        int Unk_8;
-        uint Unk_9;
+    string Unk_1;
+    uint Unk_2;
+    uint Unk_3;
+    uint Unk_4;
+    uint Unk_5;
+    float Unk_6;
+    uint Unk_7;
+    int Unk_8;
+    uint Unk_9;
     } Unk_Array;
 
     Unk_Array Unk_Array_[Num_of_Values]<optimize=false>;
     uint Unk_5;
 } Default;
 
+Default Default_[Motion_Blend_Data_1__.Entry_Count]<optimize=false>;
+
 typedef struct {
     uint End;
 } Motion_Blend_Data_2_;
 
-Motion_Blend_Data_1_ Motion_Blend_Data_1__;
-Default Default_[Motion_Blend_Data_1__.Entry_Count]<optimize=false>;
 Motion_Blend_Data_2_ Motion_Blend_Data_2__;

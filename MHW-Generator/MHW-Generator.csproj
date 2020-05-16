@@ -131,6 +131,16 @@
     <Compile Include="Weapons\WeaponSwitchAxe.cs" />
     <Compile Include="Weapons\WeaponWhistle.cs" />
     <Compile Include="Weapons\WeaponWSword.cs" />
+    <Compile Include="Weapons\Wp09Param.cs" />
+    <Compile Include="Weapons\Wp08Param.cs" />
+    <Compile Include="Weapons\Wp07Param.cs" />
+    <Compile Include="Weapons\Wp06Param.cs" />
+    <Compile Include="Weapons\Wp05Param.cs" />
+    <Compile Include="Weapons\Wp04Param.cs" />
+    <Compile Include="Weapons\Wp03Param.cs" />
+    <Compile Include="Weapons\Wp02Param.cs" />
+    <Compile Include="Weapons\Wp01Param.cs" />
+    <Compile Include="Weapons\WpParamBase.cs" />
     <Compile Include="Weapons\Wp11Param.cs" />
     <Compile Include="Weapons\Wp10Param.cs" />
     <Compile Include="Weapons\Wp00Param.cs" />

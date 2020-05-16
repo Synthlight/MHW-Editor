@@ -569,6 +569,15 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".trdr")) return typeof(ValueTrader);
             if (fileName.EndsWith(".trsr")) return typeof(Treasure);
             if (fileName.EndsWith(".w00p")) return typeof(Wp00Param);
+            if (fileName.EndsWith(".w01p")) return typeof(Wp01Param);
+            if (fileName.EndsWith(".w02p")) return typeof(Wp02Param);
+            if (fileName.EndsWith(".w03p")) return typeof(Wp03Param);
+            if (fileName.EndsWith(".w04p")) return typeof(Wp04Param);
+            if (fileName.EndsWith(".w05p")) return typeof(Wp05Param);
+            if (fileName.EndsWith(".w06p")) return typeof(Wp06Param);
+            if (fileName.EndsWith(".w07p")) return typeof(Wp07Param);
+            if (fileName.EndsWith(".w08p")) return typeof(Wp08Param);
+            if (fileName.EndsWith(".w09p")) return typeof(Wp09Param);
             if (fileName.EndsWith(".w10p")) return typeof(Wp10Param);
             if (fileName.EndsWith(".w11p")) return typeof(Wp11Param);
             if (fileName.EndsWith(".w12p")) return typeof(Wp12Param);

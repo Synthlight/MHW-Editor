@@ -12,26 +12,30 @@ typedef struct {
     uint Supply_Id;
 } Supply_Data;
 
+Supply_Data Supply_Data_;
+
 typedef struct {
     ushort Item_Id;
     ushort Item_Count;
 } Item_Box;
 
+Item_Box Item_Box_[24]<optimize=false>;
+
 typedef struct {
     ubyte Items_to_Show;
 } Item_Box_Scaling;
+
+Item_Box_Scaling Item_Box_Scaling_[3]<optimize=false>;
 
 typedef struct {
     ushort Ammo_Id;
     ushort Ammo_Count;
 } Ammo_Box;
 
+Ammo_Box Ammo_Box_[16]<optimize=false>;
+
 typedef struct {
     ubyte Ammo_Items_to_Show;
 } Ammo_Box_Scaling;
 
-Supply_Data Supply_Data_;
-Item_Box Item_Box_[24]<optimize=false>;
-Item_Box_Scaling Item_Box_Scaling_[3]<optimize=false>;
-Ammo_Box Ammo_Box_[16]<optimize=false>;
 Ammo_Box_Scaling Ammo_Box_Scaling_[3]<optimize=false>;

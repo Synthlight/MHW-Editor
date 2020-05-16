@@ -12,6 +12,8 @@ typedef struct {
     uint Number_of_Size_Settings;
 } Small_Monster_Size_Params;
 
+Small_Monster_Size_Params Small_Monster_Size_Params_;
+
 typedef struct {
     uint Header;
     float Min_Size;
@@ -20,5 +22,4 @@ typedef struct {
     uint Monster_Id;
 } Size_Settings;
 
-Small_Monster_Size_Params Small_Monster_Size_Params_;
 Size_Settings Size_Settings_[Small_Monster_Size_Params_.Number_of_Size_Settings]<optimize=false>;

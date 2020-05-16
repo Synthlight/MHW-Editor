@@ -12,6 +12,8 @@ typedef struct {
     uint Magic_3;
 } Monster_Rage;
 
+Monster_Rage Monster_Rage_;
+
 typedef struct {
     int Build_to_Trigger;
     float Duration;
@@ -31,5 +33,4 @@ typedef struct {
     float Out_of_Combat_Decay_Multiplier;
 } Rage_Stats;
 
-Monster_Rage Monster_Rage_;
 Rage_Stats Rage_Stats_[2]<optimize=false>;

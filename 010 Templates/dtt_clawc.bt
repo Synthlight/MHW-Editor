@@ -11,6 +11,8 @@ typedef struct {
     uint Number_of_Claggers;
 } Monster_Claw_Grab;
 
+Monster_Claw_Grab Monster_Claw_Grab_;
+
 typedef struct {
     float Unk_f32_;
     float Normal;
@@ -31,12 +33,8 @@ typedef struct {
     float Tenderize_Lv_State_MR;
 } Clagger_Params;
 
-typedef struct {
-    uint Gimmick_Breaker_Collision_Unique_Id_Small;
-    uint Gimmick_Breaker_Collision_Unique_Id_Middle;
-    uint Gimmick_Breaker_Collision_Unique_Id_Large;
-} Claw_Chance_Params;
-
-Monster_Claw_Grab Monster_Claw_Grab_;
 Clagger_Params Clagger_Params_[Monster_Claw_Grab_.Number_of_Claggers]<optimize=false>;
-Claw_Chance_Params Claw_Chance_Params_;
+
+uint Gimmick_Breaker_Collision_Unique_Id_Small;
+uint Gimmick_Breaker_Collision_Unique_Id_Middle;
+uint Gimmick_Breaker_Collision_Unique_Id_Large;

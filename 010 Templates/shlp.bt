@@ -11,35 +11,39 @@ typedef struct {
     uint Magic_2;
 } Shlp;
 
+Shlp Shlp_;
+
 typedef struct {
     uint Header;
     if (Header != 0) { string Path; }
 } Assets;
 
-typedef struct {
-    uint Projectile_Body_EPV_Index;
-    uint Projectile_Body_EPV_Element_;
-    uint Muzzle_EPV_Index;
-    uint Muzzle_EPV_Element_;
-    ubyte Muzzle_Joint_1;
-    ubyte Muzzle_Joint_2;
-    ubyte Muzzle_Joint_3;
-    ubyte Muzzle_Joint_4;
-    uint Obj_Collision_Header;
-    if (Obj_Collision_Header != 0) { string Obj_Collision; }
-    uint Obj_Collision_Index;
-    uint Timeline_List_Header;
-    if (Timeline_List_Header != 0) { string Timeline_List; }
-    uint Unk_2;
-    uint Unk_3;
-    uint Unk_4;
-    uint Unk_5;
-    uint Unk_6;
-} Shlp_1_;
+Assets Assets_[25]<optimize=false>;
+
+uint Projectile_Body_EPV_Index;
+uint Projectile_Body_EPV_Element_;
+uint Muzzle_EPV_Index;
+uint Muzzle_EPV_Element_;
+ubyte Muzzle_Joint_1;
+ubyte Muzzle_Joint_2;
+ubyte Muzzle_Joint_3;
+ubyte Muzzle_Joint_4;
+uint Obj_Collision_Header;
+if (Obj_Collision_Header != 0) { string Obj_Collision; }
+uint Obj_Collision_Index;
+uint Timeline_List_Header;
+if (Timeline_List_Header != 0) { string Timeline_List; }
+uint Unk_2;
+uint Unk_3;
+uint Unk_4;
+uint Unk_5;
+uint Unk_6;
 
 typedef struct {
     uint Number_of_Linked_Shell_Params;
 } Number_of_Linked_Shell_Params_Holder;
+
+Number_of_Linked_Shell_Params_Holder Number_of_Linked_Shell_Params_Holder_;
 
 typedef struct {
     uint Header;
@@ -49,124 +53,122 @@ typedef struct {
     uint Unk_3;
 } Child_Shell_Params;
 
-typedef struct {
-    uint Ground_Hit_EPV_Index;
-    uint Ground_Hit_EPV_Element_;
-    uint Wall_Hit_EPV_Index;
-    uint Wall_Hit_EPV_Element_;
-    uint Unk_1;
-    uint Unk_2;
-    uint Obj_Hit_EPV_Index;
-    uint Obj_Hit_EPV_Element_;
-    ubyte Unk_3;
-    ubyte Unk_4;
-    ubyte Unk_5;
-    ubyte Unk_6;
-    ubyte Unk_7;
-    ubyte Unk_8;
-    ubyte Unk_9;
-    ubyte Unk_10;
-    ubyte Unk_11;
-    ubyte Unk_12;
-    ubyte Unk_13;
-    ubyte Unk_14;
-    ubyte Unk_15;
-    ubyte Unk_16;
-    uint Unk_17;
-    uint Unk_18;
-    float Unk_19;
-    uint Unk_20;
-    uint Unk_21;
-    int Unk_22;
-    uint Unk_23;
-    uint Unk_24;
-    uint Unk_25;
-    uint Unk_26;
-    uint Locus_EPV_Index;
-    uint Locus_EPV_Element_;
-    uint Unk_27;
-    uint Unk_28;
-    uint Unk_29;
-    uint Unk_30;
-    uint Unk_31;
-    uint Unk_32;
-    uint Unk_33;
-    uint Unk_34;
-} EPV;
+Child_Shell_Params Child_Shell_Params_[Number_of_Linked_Shell_Params_Holder_.Number_of_Linked_Shell_Params]<optimize=false>;
 
-typedef struct {
-    uint Wwise_Container_Header;
-    if (Wwise_Container_Header != 0) { string Wwise_Container; }
-    int Sound_Shoot_Header;
-    int Sound_Shoot;
-    int Sound_Loop_Header;
-    int Sound_Loop;
-    int Sound_Kill_Header;
-    int Sound_Kill;
-    int Sound_Wall_Ground_Hit_Header;
-    int Sound_Wall_Ground_Hit;
-    int Sound_Water_Hit_Header;
-    int Sound_Water_Hit;
-    int Sound_Player_Hit_Header;
-    int Sound_Player_Hit;
-    int Sound_Delay_Set_Header_Slinger_;
-    int Sound_Delay_Set_Slinger_;
-    int Sound_Life_End_Header_Slinger_;
-    int Sound_Life_End_Slinger_;
-    int Sound_Monster_Reflect_Header;
-    int Sound_Monster_Reflect;
-    int Sound_Custom_Header_1;
-    int Sound_Custom_1;
-    int Sound_Custom_Header_2;
-    int Sound_Custom_2;
-    int Sound_Custom_Header_3;
-    int Sound_Custom_3;
-} Sound;
+uint Ground_Hit_EPV_Index;
+uint Ground_Hit_EPV_Element_;
+uint Wall_Hit_EPV_Index;
+uint Wall_Hit_EPV_Element_;
+uint Unk_1;
+uint Unk_2;
+uint Obj_Hit_EPV_Index;
+uint Obj_Hit_EPV_Element_;
+ubyte Unk_3;
+ubyte Unk_4;
+ubyte Unk_5;
+ubyte Unk_6;
+ubyte Unk_7;
+ubyte Unk_8;
+ubyte Unk_9;
+ubyte Unk_10;
+ubyte Unk_11;
+ubyte Unk_12;
+ubyte Unk_13;
+ubyte Unk_14;
+ubyte Unk_15;
+ubyte Unk_16;
+uint Unk_17;
+uint Unk_18;
+float Unk_19;
+uint Unk_20;
+uint Unk_21;
+int Unk_22;
+uint Unk_23;
+uint Unk_24;
+uint Unk_25;
+uint Unk_26;
+uint Locus_EPV_Index;
+uint Locus_EPV_Element_;
+uint Unk_27;
+uint Unk_28;
+uint Unk_29;
+uint Unk_30;
+uint Unk_31;
+uint Unk_32;
+uint Unk_33;
+uint Unk_34;
 
-typedef struct {
-    uint Header;
-    uint Projectile_Entity_Collider;
-    float Projectile_Model_Lifespan;
-    uint Projectile_Distance_Range;
-    ubyte Unk_35;
-    ubyte Unk_36;
-    ubyte Unk_37;
-    ubyte Unk_38;
-    uint Unk_39;
-    uint Unk_40;
-    uint Unk_41;
-    float Projectile_Spawn_Pos_Y;
-    float Projectile_Spawn_Pos_X;
-    float Projectile_Velocity;
-    float Projectile_Falloff;
-    float Unk_42;
-    float Unk_43;
-    float Unk_44;
-    float Angle_Unk_1;
-    float Angle_Unk_2;
-    float Angle_Unk_3;
-    float Angle_Unk_4;
-    float Projectile_Hitbox_Range;
-    uint Unk_45;
-    uint Insta_Kill_Trigger;
-    uint Unk_46;
-    ushort Unk_47;
-    float Entity_Collide_1;
-    float Unk_48;
-    float Unk_49;
-    ubyte Entity_Collide_2;
-    ubyte Unk_50;
-    ubyte Entity_Spawn_Location;
-    ubyte Entity_Range;
-    ubyte Unk_51;
-    ubyte Unk_52;
-    ushort Unk_53;
-    uint Unk_54;
-} Shlp_2_;
+uint Wwise_Container_Header;
+if (Wwise_Container_Header != 0) { string Wwise_Container; }
+int Sound_Shoot_Header;
+int Sound_Shoot;
+int Sound_Loop_Header;
+int Sound_Loop;
+int Sound_Kill_Header;
+int Sound_Kill;
+int Sound_Wall_Ground_Hit_Header;
+int Sound_Wall_Ground_Hit;
+int Sound_Water_Hit_Header;
+int Sound_Water_Hit;
+int Sound_Player_Hit_Header;
+int Sound_Player_Hit;
+int Sound_Delay_Set_Header_Slinger_;
+int Sound_Delay_Set_Slinger_;
+int Sound_Life_End_Header_Slinger_;
+int Sound_Life_End_Slinger_;
+int Sound_Monster_Reflect_Header;
+int Sound_Monster_Reflect;
+int Sound_Custom_Header_1;
+int Sound_Custom_1;
+int Sound_Custom_Header_2;
+int Sound_Custom_2;
+int Sound_Custom_Header_3;
+int Sound_Custom_3;
+
+uint Header;
+uint Projectile_Entity_Collider;
+float Projectile_Model_Lifespan;
+uint Projectile_Distance_Range;
+ubyte Unk_35;
+ubyte Unk_36;
+ubyte Unk_37;
+ubyte Unk_38;
+uint Unk_39;
+uint Unk_40;
+uint Unk_41;
+float Projectile_Spawn_Pos_Y;
+float Projectile_Spawn_Pos_X;
+float Projectile_Velocity;
+float Projectile_Falloff;
+float Unk_42;
+float Unk_43;
+float Unk_44;
+float Angle_Unk_1;
+float Angle_Unk_2;
+float Angle_Unk_3;
+float Angle_Unk_4;
+float Projectile_Hitbox_Range;
+uint Unk_45;
+uint Insta_Kill_Trigger;
+uint Unk_46;
+ushort Unk_47;
+float Entity_Collide_1;
+float Unk_48;
+float Unk_49;
+ubyte Entity_Collide_2;
+ubyte Unk_50;
+ubyte Entity_Spawn_Location;
+ubyte Entity_Range;
+ubyte Unk_51;
+ubyte Unk_52;
+ushort Unk_53;
+uint Unk_54;
 
 typedef struct {
     uint Number_of_Modifiers;
 } Number_of_Modifiers_Holder;
+
+Number_of_Modifiers_Holder Number_of_Modifiers_Holder_;
 
 typedef struct {
     uint Header;
@@ -190,18 +192,10 @@ typedef struct {
     ubyte Unk_5;
 } Modifiers;
 
+Modifiers Modifiers_[Number_of_Modifiers_Holder_.Number_of_Modifiers]<optimize=false>;
+
 typedef struct {
     uint Unk_55;
 } Unknown;
 
-Shlp Shlp_;
-Assets Assets_[25]<optimize=false>;
-Shlp_1_ Shlp_1__;
-Number_of_Linked_Shell_Params_Holder Number_of_Linked_Shell_Params_Holder_;
-Child_Shell_Params Child_Shell_Params_[Number_of_Linked_Shell_Params_Holder_.Number_of_Linked_Shell_Params]<optimize=false>;
-EPV EPV_;
-Sound Sound_;
-Shlp_2_ Shlp_2__;
-Number_of_Modifiers_Holder Number_of_Modifiers_Holder_;
-Modifiers Modifiers_[Number_of_Modifiers_Holder_.Number_of_Modifiers]<optimize=false>;
 Unknown Unknown_;

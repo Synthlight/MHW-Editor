@@ -12,6 +12,8 @@ typedef struct {
     uint Magic_3;
 } Monster_Damage_Attributes_1_;
 
+Monster_Damage_Attributes_1_ Monster_Damage_Attributes_1__;
+
 typedef struct {
     uint Base;
     uint Buildup;
@@ -23,10 +25,10 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Poison;
 
-typedef struct {
-    uint Poison_Damage;
-    float Poison_Interval;
-} Monster_Damage_Attributes_2_;
+Status_Buildup_Poison Status_Buildup_Poison_;
+
+uint Poison_Damage;
+float Poison_Interval;
 
 typedef struct {
     uint Base;
@@ -39,10 +41,10 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Sleep_Paralysis_Stun_Exhaustion;
 
-typedef struct {
-    uint Unk_1;
-    float Exhaustion_Damage;
-} Monster_Damage_Attributes_3_;
+Status_Buildup_Sleep_Paralysis_Stun_Exhaustion Status_Buildup_Sleep_Paralysis_Stun_Exhaustion_[4]<optimize=false>;
+
+uint Unk_1;
+float Exhaustion_Damage;
 
 typedef struct {
     uint Base;
@@ -55,9 +57,9 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Mount_Blastblight;
 
-typedef struct {
-    uint Blastblight_Damage;
-} Monster_Damage_Attributes_4_;
+Status_Buildup_Mount_Blastblight Status_Buildup_Mount_Blastblight_[2]<optimize=false>;
+
+uint Blastblight_Damage;
 
 typedef struct {
     uint Base;
@@ -70,10 +72,10 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Capture;
 
-typedef struct {
-    uint Capture_LR_HR;
-    uint Capture_MR;
-} Monster_Damage_Attributes_5_;
+Status_Buildup_Capture Status_Buildup_Capture_;
+
+uint Capture_LR_HR;
+uint Capture_MR;
 
 typedef struct {
     uint Base;
@@ -86,9 +88,9 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Dizziness_LR_HR;
 
-typedef struct {
-    uint Unk_1;
-} Monster_Damage_Attributes_6_;
+Status_Buildup_Dizziness_LR_HR Status_Buildup_Dizziness_LR_HR_;
+
+uint Unk_1;
 
 typedef struct {
     uint Base;
@@ -101,16 +103,16 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Dizziness_MR;
 
-typedef struct {
-    float Dizziness_MR_Buildup;
-    float Dizziness_MR_Max_Cap;
-    float Unk_1;
-    float Unk_2;
-    float Dizziness_MR_Recharge_Timer;
-    float Unk_3;
-    float Dizziness_MR_Duration_Re_occuring_Use;
-    float Dizziness_MR_Duration_Initial_Use;
-} Monster_Damage_Attributes_7_;
+Status_Buildup_Dizziness_MR Status_Buildup_Dizziness_MR_;
+
+float Dizziness_MR_Buildup;
+float Dizziness_MR_Max_Cap;
+float Unk_1;
+float Unk_2;
+float Dizziness_MR_Recharge_Timer;
+float Unk_3;
+float Dizziness_MR_Duration_Re_occuring_Use;
+float Dizziness_MR_Duration_Initial_Use;
 
 typedef struct {
     uint Base;
@@ -123,9 +125,9 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Mount_Knock_Down;
 
-typedef struct {
-    uint Mount_Knock_Down_Damage;
-} Monster_Damage_Attributes_8_;
+Status_Buildup_Mount_Knock_Down Status_Buildup_Mount_Knock_Down_;
+
+uint Mount_Knock_Down_Damage;
 
 typedef struct {
     uint Base;
@@ -138,10 +140,10 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Dung;
 
-typedef struct {
-    uint Unk_1;
-    float Unk_2;
-} Monster_Damage_Attributes_9_;
+Status_Buildup_Dung Status_Buildup_Dung_;
+
+uint Unk_1;
+float Unk_2;
 
 typedef struct {
     uint Base;
@@ -154,10 +156,10 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk;
 
-typedef struct {
-    uint Unk_1;
-    float Unk_2;
-} Monster_Damage_Attributes_10_;
+Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk_[4]<optimize=false>;
+
+uint Unk_1;
+float Unk_2;
 
 typedef struct {
     uint Base;
@@ -170,9 +172,9 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Dragonseal;
 
-typedef struct {
-    uint Dragonseal_Aura;
-} Monster_Damage_Attributes_11_;
+Status_Buildup_Dragonseal Status_Buildup_Dragonseal_;
+
+uint Dragonseal_Aura;
 
 typedef struct {
     uint Base;
@@ -185,11 +187,15 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Unk;
 
+Status_Buildup_Unk Status_Buildup_Unk_[2]<optimize=false>;
+
 typedef struct {
     int Unk_1;
     int Unk_2;
     int Unk_3;
 } Unk_Array;
+
+Unk_Array Unk_Array_[6]<optimize=false>;
 
 typedef struct {
     uint Base;
@@ -202,6 +208,8 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Concussion;
 
+Status_Buildup_Concussion Status_Buildup_Concussion_;
+
 typedef struct {
     float Claw_Flinch_Shot;
     float Claw_Flinch_Shot_No_Wall_;
@@ -209,6 +217,8 @@ typedef struct {
     float Claw_Flinch_Shot_Wall_;
     float Claw_Flinch_Shot_Ledge_;
 } Rage_Build_Up;
+
+Rage_Build_Up Rage_Build_Up_[2]<optimize=false>;
 
 typedef struct {
     uint Base;
@@ -221,29 +231,4 @@ typedef struct {
     float Duration_Minimum;
 } Status_Buildup_Clagger;
 
-Monster_Damage_Attributes_1_ Monster_Damage_Attributes_1__;
-Status_Buildup_Poison Status_Buildup_Poison_;
-Monster_Damage_Attributes_2_ Monster_Damage_Attributes_2__;
-Status_Buildup_Sleep_Paralysis_Stun_Exhaustion Status_Buildup_Sleep_Paralysis_Stun_Exhaustion_[4]<optimize=false>;
-Monster_Damage_Attributes_3_ Monster_Damage_Attributes_3__;
-Status_Buildup_Mount_Blastblight Status_Buildup_Mount_Blastblight_[2]<optimize=false>;
-Monster_Damage_Attributes_4_ Monster_Damage_Attributes_4__;
-Status_Buildup_Capture Status_Buildup_Capture_;
-Monster_Damage_Attributes_5_ Monster_Damage_Attributes_5__;
-Status_Buildup_Dizziness_LR_HR Status_Buildup_Dizziness_LR_HR_;
-Monster_Damage_Attributes_6_ Monster_Damage_Attributes_6__;
-Status_Buildup_Dizziness_MR Status_Buildup_Dizziness_MR_;
-Monster_Damage_Attributes_7_ Monster_Damage_Attributes_7__;
-Status_Buildup_Mount_Knock_Down Status_Buildup_Mount_Knock_Down_;
-Monster_Damage_Attributes_8_ Monster_Damage_Attributes_8__;
-Status_Buildup_Dung Status_Buildup_Dung_;
-Monster_Damage_Attributes_9_ Monster_Damage_Attributes_9__;
-Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk_[4]<optimize=false>;
-Monster_Damage_Attributes_10_ Monster_Damage_Attributes_10__;
-Status_Buildup_Dragonseal Status_Buildup_Dragonseal_;
-Monster_Damage_Attributes_11_ Monster_Damage_Attributes_11__;
-Status_Buildup_Unk Status_Buildup_Unk_[2]<optimize=false>;
-Unk_Array Unk_Array_[6]<optimize=false>;
-Status_Buildup_Concussion Status_Buildup_Concussion_;
-Rage_Build_Up Rage_Build_Up_[2]<optimize=false>;
 Status_Buildup_Clagger Status_Buildup_Clagger_;

@@ -1,0 +1,127 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.w06p
+//  Category: MHW_Editor.Weapons
+//------------------------------------------------
+
+char Weapon[4]<optimize=false>;
+uint Unk_1;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    ubyte Unk_4;
+    float Unk_5;
+} Unk_Arr_1_Shared_;
+
+Unk_Arr_1_Shared_ Unk_Arr_1_Shared__[20]<optimize=false>;
+
+float Unk_2;
+float Unk_3;
+float Unk_4;
+float Unk_5;
+float Unk_6;
+float Unk_7;
+float Unk_8;
+float Unk_9;
+float Unk_10;
+float Unk_11;
+float Unk_12;
+float Unk_13;
+float Unk_14;
+float Unk_15;
+float Unk_16;
+float Unk_17;
+ubyte Unk_18;
+ubyte Unk_19;
+ubyte Unk_20;
+ubyte Unk_21;
+float Unk_22;
+float Unk_23;
+float Unk_24;
+float Unk_25;
+ubyte Unk_26;
+float Unk_27;
+
+typedef struct {
+    float Guard_Angle_Both_Sides_;
+    ubyte Knockback_Threshold_Small;
+    ubyte Knockback_Threshold_Medium;
+    ubyte Knockback_Threshold_Large;
+} Guard_Angles_Shared_;
+
+Guard_Angles_Shared_ Guard_Angles_Shared__[2]<optimize=false>;
+
+float Unk_28;
+float Unk_29;
+float Unk_30;
+float Unk_31;
+float Unk_32;
+float Unk_33;
+float Unk_34;
+float Unk_35;
+float Unk_36;
+float Unk_37;
+float Unk_38;
+float Unk_39;
+float Unk_40;
+float Unk_41;
+float Unk_42;
+float Unk_43;
+float Unk_44;
+float Unk_45;
+float Unk_46;
+float Unk_47;
+float Unk_48;
+uint Unk_49;
+uint Unk_50;
+float Unk_51;
+float Unk_52;
+float Unk_53;
+float Unk_54;
+float Unk_55;
+float Unk_56;
+float Unk_57;
+float Unk_58;
+float Unk_59;
+float Unk_60;
+float Unk_61;
+float Unk_62;
+float Unk_63;
+float Unk_64;
+float Unk_65;
+float Unk_66;
+float Unk_67;
+float Unk_68;
+float Unk_69;
+float Unk_70;
+float Unk_71;
+ubyte Unk_72;
+uint Unk_73;
+float Unk_74;
+float Unk_75;
+float Unk_76;
+ubyte Unk_77;
+int Unk_78;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+    float Unk_5;
+    float Unk_6;
+    float Unk_7;
+    float Unk_8;
+    float Unk_9;
+    float Unk_10;
+    float Unk_11;
+    float Unk_12;
+    float Unk_13;
+    ubyte Unk_14;
+    int Unk_15;
+} Unk_Arr_2_Shared_;
+
+Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false>;

@@ -11,6 +11,8 @@ typedef struct {
     uint Item_Count;
 } Shop_List;
 
+Shop_List Shop_List_;
+
 typedef struct {
     uint Index;
     uint Item_Id;
@@ -18,5 +20,4 @@ typedef struct {
     ushort Unk;
 } Entries;
 
-Shop_List Shop_List_;
 Entries Entries_[Shop_List_.Item_Count]<optimize=false>;

@@ -11,6 +11,8 @@ typedef struct {
     uint Number_of_Monsters;
 } Monster_Random_Sizes;
 
+Monster_Random_Sizes Monster_Random_Sizes_;
+
 typedef struct {
     uint Monster_Id;
     uint Gold_Small_Crown_Limit;
@@ -19,22 +21,23 @@ typedef struct {
     float Base_Size;
 } Monsters;
 
+Monsters Monsters_[Monster_Random_Sizes_.Number_of_Monsters]<optimize=false>;
+
 typedef struct {
     uint Number_of_Crown_Tables;
 } Crown_Table_Count;
+
+Crown_Table_Count Crown_Table_Count_;
 
 typedef struct {
     string Name_Jap_;
 
     typedef struct {
-        int Crown_Size_Multiplier;
-        int Crown_Size_Rarity;
+    int Crown_Size_Multiplier;
+    int Crown_Size_Rarity;
     } Crown_Sizes;
 
     Crown_Sizes Crown_Sizes_[38]<optimize=false>;
 } Crown_Tables;
 
-Monster_Random_Sizes Monster_Random_Sizes_;
-Monsters Monsters_[Monster_Random_Sizes_.Number_of_Monsters]<optimize=false>;
-Crown_Table_Count Crown_Table_Count_;
 Crown_Tables Crown_Tables_[Crown_Table_Count_.Number_of_Crown_Tables]<optimize=false>;

@@ -16,7 +16,7 @@ namespace MHW_Template.Struct_Generation.Multi {
         }
 
         public class StructData {
-            public          string      name; // Leave so generation can 'copy' from another type and just change the name.
+            public readonly string      name; // Leave so generation can 'copy' from another type and just change the name.
             public readonly List<Entry> entries;
             public readonly uint        fixedSizeCount; // If we know the number of times the struct repeats. Anything > 0 is handled automatically. If 0 you have to implement the GetCount method.
             public readonly bool        hidden;
