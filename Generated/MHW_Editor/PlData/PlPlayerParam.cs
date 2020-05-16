@@ -4240,255 +4240,255 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Evade_Insect_Glaive_Air_Dodge_Distance_1_displayName = "Evade: Insect Glaive Air Dodge: Distance 1";
-        public const int Evade_Insect_Glaive_Air_Dodge_Distance_1_sortIndex = 14950;
-        [SortOrder(Evade_Insect_Glaive_Air_Dodge_Distance_1_sortIndex)]
-        [DisplayName(Evade_Insect_Glaive_Air_Dodge_Distance_1_displayName)]
-        public virtual float Evade_Insect_Glaive_Air_Dodge_Distance_1 {
-            get => GetData<float>(1497);
-            set {
-                if (GetData<float>(1497) == value) return;
-                SetData(1497, value, nameof(Evade_Insect_Glaive_Air_Dodge_Distance_1));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Evade_Insect_Glaive_Air_Dodge_Distance_1));
-            }
-        }
-
-        public const string Evade_Insect_Glaive_Air_Dodge_Distance_2_displayName = "Evade: Insect Glaive Air Dodge: Distance 2";
-        public const int Evade_Insect_Glaive_Air_Dodge_Distance_2_sortIndex = 15000;
-        [SortOrder(Evade_Insect_Glaive_Air_Dodge_Distance_2_sortIndex)]
-        [DisplayName(Evade_Insect_Glaive_Air_Dodge_Distance_2_displayName)]
-        public virtual float Evade_Insect_Glaive_Air_Dodge_Distance_2 {
-            get => GetData<float>(1501);
-            set {
-                if (GetData<float>(1501) == value) return;
-                SetData(1501, value, nameof(Evade_Insect_Glaive_Air_Dodge_Distance_2));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Evade_Insect_Glaive_Air_Dodge_Distance_2));
-            }
-        }
-
-        public const string Evade_Insect_Glaive_Air_Dodge_Distance_3_displayName = "Evade: Insect Glaive Air Dodge: Distance 3";
-        public const int Evade_Insect_Glaive_Air_Dodge_Distance_3_sortIndex = 15050;
-        [SortOrder(Evade_Insect_Glaive_Air_Dodge_Distance_3_sortIndex)]
-        [DisplayName(Evade_Insect_Glaive_Air_Dodge_Distance_3_displayName)]
-        public virtual float Evade_Insect_Glaive_Air_Dodge_Distance_3 {
-            get => GetData<float>(1505);
-            set {
-                if (GetData<float>(1505) == value) return;
-                SetData(1505, value, nameof(Evade_Insect_Glaive_Air_Dodge_Distance_3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Evade_Insect_Glaive_Air_Dodge_Distance_3));
-            }
-        }
-
         public const string Evade_Bow_Charge_Step_Distance_1_displayName = "Evade: Bow Charge Step: Distance 1";
-        public const int Evade_Bow_Charge_Step_Distance_1_sortIndex = 15100;
+        public const int Evade_Bow_Charge_Step_Distance_1_sortIndex = 14950;
         [SortOrder(Evade_Bow_Charge_Step_Distance_1_sortIndex)]
         [DisplayName(Evade_Bow_Charge_Step_Distance_1_displayName)]
         public virtual float Evade_Bow_Charge_Step_Distance_1 {
-            get => GetData<float>(1509);
+            get => GetData<float>(1497);
             set {
-                if (GetData<float>(1509) == value) return;
-                SetData(1509, value, nameof(Evade_Bow_Charge_Step_Distance_1));
+                if (GetData<float>(1497) == value) return;
+                SetData(1497, value, nameof(Evade_Bow_Charge_Step_Distance_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_Bow_Charge_Step_Distance_1));
             }
         }
 
         public const string Evade_Bow_Charge_Step_Distance_2_displayName = "Evade: Bow Charge Step: Distance 2";
-        public const int Evade_Bow_Charge_Step_Distance_2_sortIndex = 15150;
+        public const int Evade_Bow_Charge_Step_Distance_2_sortIndex = 15000;
         [SortOrder(Evade_Bow_Charge_Step_Distance_2_sortIndex)]
         [DisplayName(Evade_Bow_Charge_Step_Distance_2_displayName)]
         public virtual float Evade_Bow_Charge_Step_Distance_2 {
-            get => GetData<float>(1513);
+            get => GetData<float>(1501);
             set {
-                if (GetData<float>(1513) == value) return;
-                SetData(1513, value, nameof(Evade_Bow_Charge_Step_Distance_2));
+                if (GetData<float>(1501) == value) return;
+                SetData(1501, value, nameof(Evade_Bow_Charge_Step_Distance_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_Bow_Charge_Step_Distance_2));
             }
         }
 
         public const string Evade_Bow_Charge_Step_Distance_3_displayName = "Evade: Bow Charge Step: Distance 3";
-        public const int Evade_Bow_Charge_Step_Distance_3_sortIndex = 15200;
+        public const int Evade_Bow_Charge_Step_Distance_3_sortIndex = 15050;
         [SortOrder(Evade_Bow_Charge_Step_Distance_3_sortIndex)]
         [DisplayName(Evade_Bow_Charge_Step_Distance_3_displayName)]
         public virtual float Evade_Bow_Charge_Step_Distance_3 {
-            get => GetData<float>(1517);
+            get => GetData<float>(1505);
             set {
-                if (GetData<float>(1517) == value) return;
-                SetData(1517, value, nameof(Evade_Bow_Charge_Step_Distance_3));
+                if (GetData<float>(1505) == value) return;
+                SetData(1505, value, nameof(Evade_Bow_Charge_Step_Distance_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_Bow_Charge_Step_Distance_3));
             }
         }
 
         public const string Evade_HBG_Roll_Dodge_Distance_1_displayName = "Evade: HBG Roll Dodge: Distance 1";
-        public const int Evade_HBG_Roll_Dodge_Distance_1_sortIndex = 15250;
+        public const int Evade_HBG_Roll_Dodge_Distance_1_sortIndex = 15100;
         [SortOrder(Evade_HBG_Roll_Dodge_Distance_1_sortIndex)]
         [DisplayName(Evade_HBG_Roll_Dodge_Distance_1_displayName)]
         public virtual float Evade_HBG_Roll_Dodge_Distance_1 {
-            get => GetData<float>(1521);
+            get => GetData<float>(1509);
             set {
-                if (GetData<float>(1521) == value) return;
-                SetData(1521, value, nameof(Evade_HBG_Roll_Dodge_Distance_1));
+                if (GetData<float>(1509) == value) return;
+                SetData(1509, value, nameof(Evade_HBG_Roll_Dodge_Distance_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_HBG_Roll_Dodge_Distance_1));
             }
         }
 
         public const string Evade_HBG_Roll_Dodge_Distance_2_displayName = "Evade: HBG Roll Dodge: Distance 2";
-        public const int Evade_HBG_Roll_Dodge_Distance_2_sortIndex = 15300;
+        public const int Evade_HBG_Roll_Dodge_Distance_2_sortIndex = 15150;
         [SortOrder(Evade_HBG_Roll_Dodge_Distance_2_sortIndex)]
         [DisplayName(Evade_HBG_Roll_Dodge_Distance_2_displayName)]
         public virtual float Evade_HBG_Roll_Dodge_Distance_2 {
-            get => GetData<float>(1525);
+            get => GetData<float>(1513);
             set {
-                if (GetData<float>(1525) == value) return;
-                SetData(1525, value, nameof(Evade_HBG_Roll_Dodge_Distance_2));
+                if (GetData<float>(1513) == value) return;
+                SetData(1513, value, nameof(Evade_HBG_Roll_Dodge_Distance_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_HBG_Roll_Dodge_Distance_2));
             }
         }
 
         public const string Evade_HBG_Roll_Dodge_Distance_3_displayName = "Evade: HBG Roll Dodge: Distance 3";
-        public const int Evade_HBG_Roll_Dodge_Distance_3_sortIndex = 15350;
+        public const int Evade_HBG_Roll_Dodge_Distance_3_sortIndex = 15200;
         [SortOrder(Evade_HBG_Roll_Dodge_Distance_3_sortIndex)]
         [DisplayName(Evade_HBG_Roll_Dodge_Distance_3_displayName)]
         public virtual float Evade_HBG_Roll_Dodge_Distance_3 {
-            get => GetData<float>(1529);
+            get => GetData<float>(1517);
             set {
-                if (GetData<float>(1529) == value) return;
-                SetData(1529, value, nameof(Evade_HBG_Roll_Dodge_Distance_3));
+                if (GetData<float>(1517) == value) return;
+                SetData(1517, value, nameof(Evade_HBG_Roll_Dodge_Distance_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_HBG_Roll_Dodge_Distance_3));
             }
         }
 
         public const string Evade_LBG_Side_Dodge_Distance_1_displayName = "Evade: LBG Side Dodge: Distance 1";
-        public const int Evade_LBG_Side_Dodge_Distance_1_sortIndex = 15400;
+        public const int Evade_LBG_Side_Dodge_Distance_1_sortIndex = 15250;
         [SortOrder(Evade_LBG_Side_Dodge_Distance_1_sortIndex)]
         [DisplayName(Evade_LBG_Side_Dodge_Distance_1_displayName)]
         public virtual float Evade_LBG_Side_Dodge_Distance_1 {
-            get => GetData<float>(1533);
+            get => GetData<float>(1521);
             set {
-                if (GetData<float>(1533) == value) return;
-                SetData(1533, value, nameof(Evade_LBG_Side_Dodge_Distance_1));
+                if (GetData<float>(1521) == value) return;
+                SetData(1521, value, nameof(Evade_LBG_Side_Dodge_Distance_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_LBG_Side_Dodge_Distance_1));
             }
         }
 
         public const string Evade_LBG_Side_Dodge_Distance_2_displayName = "Evade: LBG Side Dodge: Distance 2";
-        public const int Evade_LBG_Side_Dodge_Distance_2_sortIndex = 15450;
+        public const int Evade_LBG_Side_Dodge_Distance_2_sortIndex = 15300;
         [SortOrder(Evade_LBG_Side_Dodge_Distance_2_sortIndex)]
         [DisplayName(Evade_LBG_Side_Dodge_Distance_2_displayName)]
         public virtual float Evade_LBG_Side_Dodge_Distance_2 {
-            get => GetData<float>(1537);
+            get => GetData<float>(1525);
             set {
-                if (GetData<float>(1537) == value) return;
-                SetData(1537, value, nameof(Evade_LBG_Side_Dodge_Distance_2));
+                if (GetData<float>(1525) == value) return;
+                SetData(1525, value, nameof(Evade_LBG_Side_Dodge_Distance_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_LBG_Side_Dodge_Distance_2));
             }
         }
 
         public const string Evade_LBG_Side_Dodge_Distance_3_displayName = "Evade: LBG Side Dodge: Distance 3";
-        public const int Evade_LBG_Side_Dodge_Distance_3_sortIndex = 15500;
+        public const int Evade_LBG_Side_Dodge_Distance_3_sortIndex = 15350;
         [SortOrder(Evade_LBG_Side_Dodge_Distance_3_sortIndex)]
         [DisplayName(Evade_LBG_Side_Dodge_Distance_3_displayName)]
         public virtual float Evade_LBG_Side_Dodge_Distance_3 {
-            get => GetData<float>(1541);
+            get => GetData<float>(1529);
             set {
-                if (GetData<float>(1541) == value) return;
-                SetData(1541, value, nameof(Evade_LBG_Side_Dodge_Distance_3));
+                if (GetData<float>(1529) == value) return;
+                SetData(1529, value, nameof(Evade_LBG_Side_Dodge_Distance_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_LBG_Side_Dodge_Distance_3));
             }
         }
 
         public const string Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_displayName = "Evade: Dual Blades Demon Mode Slinger Evade: Distance 1";
-        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_sortIndex = 15550;
+        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_sortIndex = 15400;
         [SortOrder(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_sortIndex)]
         [DisplayName(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1_displayName)]
         public virtual float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1 {
-            get => GetData<float>(1545);
+            get => GetData<float>(1533);
             set {
-                if (GetData<float>(1545) == value) return;
-                SetData(1545, value, nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1));
+                if (GetData<float>(1533) == value) return;
+                SetData(1533, value, nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1));
             }
         }
 
         public const string Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_displayName = "Evade: Dual Blades Demon Mode Slinger Evade: Distance 2";
-        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_sortIndex = 15600;
+        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_sortIndex = 15450;
         [SortOrder(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_sortIndex)]
         [DisplayName(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2_displayName)]
         public virtual float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2 {
-            get => GetData<float>(1549);
+            get => GetData<float>(1537);
             set {
-                if (GetData<float>(1549) == value) return;
-                SetData(1549, value, nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2));
+                if (GetData<float>(1537) == value) return;
+                SetData(1537, value, nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2));
             }
         }
 
         public const string Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_displayName = "Evade: Dual Blades Demon Mode Slinger Evade: Distance 3";
-        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_sortIndex = 15650;
+        public const int Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_sortIndex = 15500;
         [SortOrder(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_sortIndex)]
         [DisplayName(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3_displayName)]
         public virtual float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3 {
-            get => GetData<float>(1553);
+            get => GetData<float>(1541);
             set {
-                if (GetData<float>(1553) == value) return;
-                SetData(1553, value, nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3));
+                if (GetData<float>(1541) == value) return;
+                SetData(1541, value, nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3));
             }
         }
 
         public const string Evade_Dual_Blades_Slinger_Evade_Distance_1_displayName = "Evade: Dual Blades Slinger Evade: Distance 1";
-        public const int Evade_Dual_Blades_Slinger_Evade_Distance_1_sortIndex = 15700;
+        public const int Evade_Dual_Blades_Slinger_Evade_Distance_1_sortIndex = 15550;
         [SortOrder(Evade_Dual_Blades_Slinger_Evade_Distance_1_sortIndex)]
         [DisplayName(Evade_Dual_Blades_Slinger_Evade_Distance_1_displayName)]
         public virtual float Evade_Dual_Blades_Slinger_Evade_Distance_1 {
-            get => GetData<float>(1557);
+            get => GetData<float>(1545);
             set {
-                if (GetData<float>(1557) == value) return;
-                SetData(1557, value, nameof(Evade_Dual_Blades_Slinger_Evade_Distance_1));
+                if (GetData<float>(1545) == value) return;
+                SetData(1545, value, nameof(Evade_Dual_Blades_Slinger_Evade_Distance_1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_Dual_Blades_Slinger_Evade_Distance_1));
             }
         }
 
         public const string Evade_Dual_Blades_Slinger_Evade_Distance_2_displayName = "Evade: Dual Blades Slinger Evade: Distance 2";
-        public const int Evade_Dual_Blades_Slinger_Evade_Distance_2_sortIndex = 15750;
+        public const int Evade_Dual_Blades_Slinger_Evade_Distance_2_sortIndex = 15600;
         [SortOrder(Evade_Dual_Blades_Slinger_Evade_Distance_2_sortIndex)]
         [DisplayName(Evade_Dual_Blades_Slinger_Evade_Distance_2_displayName)]
         public virtual float Evade_Dual_Blades_Slinger_Evade_Distance_2 {
-            get => GetData<float>(1561);
+            get => GetData<float>(1549);
             set {
-                if (GetData<float>(1561) == value) return;
-                SetData(1561, value, nameof(Evade_Dual_Blades_Slinger_Evade_Distance_2));
+                if (GetData<float>(1549) == value) return;
+                SetData(1549, value, nameof(Evade_Dual_Blades_Slinger_Evade_Distance_2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Evade_Dual_Blades_Slinger_Evade_Distance_2));
             }
         }
 
         public const string Evade_Dual_Blades_Slinger_Evade_Distance_3_displayName = "Evade: Dual Blades Slinger Evade: Distance 3";
-        public const int Evade_Dual_Blades_Slinger_Evade_Distance_3_sortIndex = 15800;
+        public const int Evade_Dual_Blades_Slinger_Evade_Distance_3_sortIndex = 15650;
         [SortOrder(Evade_Dual_Blades_Slinger_Evade_Distance_3_sortIndex)]
         [DisplayName(Evade_Dual_Blades_Slinger_Evade_Distance_3_displayName)]
         public virtual float Evade_Dual_Blades_Slinger_Evade_Distance_3 {
+            get => GetData<float>(1553);
+            set {
+                if (GetData<float>(1553) == value) return;
+                SetData(1553, value, nameof(Evade_Dual_Blades_Slinger_Evade_Distance_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Evade_Dual_Blades_Slinger_Evade_Distance_3));
+            }
+        }
+
+        public const string Evade_Insect_Glaive_Air_Dodge_Distance_1_displayName = "Evade: Insect Glaive Air Dodge: Distance 1";
+        public const int Evade_Insect_Glaive_Air_Dodge_Distance_1_sortIndex = 15700;
+        [SortOrder(Evade_Insect_Glaive_Air_Dodge_Distance_1_sortIndex)]
+        [DisplayName(Evade_Insect_Glaive_Air_Dodge_Distance_1_displayName)]
+        public virtual float Evade_Insect_Glaive_Air_Dodge_Distance_1 {
+            get => GetData<float>(1557);
+            set {
+                if (GetData<float>(1557) == value) return;
+                SetData(1557, value, nameof(Evade_Insect_Glaive_Air_Dodge_Distance_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Evade_Insect_Glaive_Air_Dodge_Distance_1));
+            }
+        }
+
+        public const string Evade_Insect_Glaive_Air_Dodge_Distance_2_displayName = "Evade: Insect Glaive Air Dodge: Distance 2";
+        public const int Evade_Insect_Glaive_Air_Dodge_Distance_2_sortIndex = 15750;
+        [SortOrder(Evade_Insect_Glaive_Air_Dodge_Distance_2_sortIndex)]
+        [DisplayName(Evade_Insect_Glaive_Air_Dodge_Distance_2_displayName)]
+        public virtual float Evade_Insect_Glaive_Air_Dodge_Distance_2 {
+            get => GetData<float>(1561);
+            set {
+                if (GetData<float>(1561) == value) return;
+                SetData(1561, value, nameof(Evade_Insect_Glaive_Air_Dodge_Distance_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Evade_Insect_Glaive_Air_Dodge_Distance_2));
+            }
+        }
+
+        public const string Evade_Insect_Glaive_Air_Dodge_Distance_3_displayName = "Evade: Insect Glaive Air Dodge: Distance 3";
+        public const int Evade_Insect_Glaive_Air_Dodge_Distance_3_sortIndex = 15800;
+        [SortOrder(Evade_Insect_Glaive_Air_Dodge_Distance_3_sortIndex)]
+        [DisplayName(Evade_Insect_Glaive_Air_Dodge_Distance_3_displayName)]
+        public virtual float Evade_Insect_Glaive_Air_Dodge_Distance_3 {
             get => GetData<float>(1565);
             set {
                 if (GetData<float>(1565) == value) return;
-                SetData(1565, value, nameof(Evade_Dual_Blades_Slinger_Evade_Distance_3));
+                SetData(1565, value, nameof(Evade_Insect_Glaive_Air_Dodge_Distance_3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Evade_Dual_Blades_Slinger_Evade_Distance_3));
+                OnPropertyChanged(nameof(Evade_Insect_Glaive_Air_Dodge_Distance_3));
             }
         }
 

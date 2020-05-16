@@ -272,12 +272,12 @@ namespace MHW_Generator.PlData {
                 "Sword & Shield Back Step",
                 "Dual Blades DemonMode Step",
                 "Long Sword Counter",
-                "Insect Glaive Air Dodge",
                 "Bow Charge Step",
                 "HBG Roll Dodge",
                 "LBG Side Dodge",
                 "Dual Blades Demon Mode Slinger Evade",
-                "Dual Blades Slinger Evade"
+                "Dual Blades Slinger Evade",
+                "Insect Glaive Air Dodge"
             };
 
             var evadeDistanceSubEntries = new List<string> {

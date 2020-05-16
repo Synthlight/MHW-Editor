@@ -248,24 +248,24 @@ namespace MHW_Editor.PlData {
         public float Evade_Long_Sword_Counter_Distance_1; // Offset: 1485
         public float Evade_Long_Sword_Counter_Distance_2; // Offset: 1489
         public float Evade_Long_Sword_Counter_Distance_3; // Offset: 1493
-        public float Evade_Insect_Glaive_Air_Dodge_Distance_1; // Offset: 1497
-        public float Evade_Insect_Glaive_Air_Dodge_Distance_2; // Offset: 1501
-        public float Evade_Insect_Glaive_Air_Dodge_Distance_3; // Offset: 1505
-        public float Evade_Bow_Charge_Step_Distance_1; // Offset: 1509
-        public float Evade_Bow_Charge_Step_Distance_2; // Offset: 1513
-        public float Evade_Bow_Charge_Step_Distance_3; // Offset: 1517
-        public float Evade_HBG_Roll_Dodge_Distance_1; // Offset: 1521
-        public float Evade_HBG_Roll_Dodge_Distance_2; // Offset: 1525
-        public float Evade_HBG_Roll_Dodge_Distance_3; // Offset: 1529
-        public float Evade_LBG_Side_Dodge_Distance_1; // Offset: 1533
-        public float Evade_LBG_Side_Dodge_Distance_2; // Offset: 1537
-        public float Evade_LBG_Side_Dodge_Distance_3; // Offset: 1541
-        public float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1; // Offset: 1545
-        public float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2; // Offset: 1549
-        public float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3; // Offset: 1553
-        public float Evade_Dual_Blades_Slinger_Evade_Distance_1; // Offset: 1557
-        public float Evade_Dual_Blades_Slinger_Evade_Distance_2; // Offset: 1561
-        public float Evade_Dual_Blades_Slinger_Evade_Distance_3; // Offset: 1565
+        public float Evade_Bow_Charge_Step_Distance_1; // Offset: 1497
+        public float Evade_Bow_Charge_Step_Distance_2; // Offset: 1501
+        public float Evade_Bow_Charge_Step_Distance_3; // Offset: 1505
+        public float Evade_HBG_Roll_Dodge_Distance_1; // Offset: 1509
+        public float Evade_HBG_Roll_Dodge_Distance_2; // Offset: 1513
+        public float Evade_HBG_Roll_Dodge_Distance_3; // Offset: 1517
+        public float Evade_LBG_Side_Dodge_Distance_1; // Offset: 1521
+        public float Evade_LBG_Side_Dodge_Distance_2; // Offset: 1525
+        public float Evade_LBG_Side_Dodge_Distance_3; // Offset: 1529
+        public float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_1; // Offset: 1533
+        public float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_2; // Offset: 1537
+        public float Evade_Dual_Blades_Demon_Mode_Slinger_Evade_Distance_3; // Offset: 1541
+        public float Evade_Dual_Blades_Slinger_Evade_Distance_1; // Offset: 1545
+        public float Evade_Dual_Blades_Slinger_Evade_Distance_2; // Offset: 1549
+        public float Evade_Dual_Blades_Slinger_Evade_Distance_3; // Offset: 1553
+        public float Evade_Insect_Glaive_Air_Dodge_Distance_1; // Offset: 1557
+        public float Evade_Insect_Glaive_Air_Dodge_Distance_2; // Offset: 1561
+        public float Evade_Insect_Glaive_Air_Dodge_Distance_3; // Offset: 1565
         public byte Wp_HR_Augment_Attack_Bonus_1_; // Offset: 8583
         public byte Wp_HR_Augment_Attack_Bonus_2_; // Offset: 8584
         public byte Wp_HR_Augment_Attack_Bonus_3_; // Offset: 8585
