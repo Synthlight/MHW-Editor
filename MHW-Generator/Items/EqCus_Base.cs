@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
+using MHW_Template.Armors;
 using MHW_Template.Models;
 using MHW_Template.Struct_Generation.Single;
 
@@ -17,7 +18,7 @@ namespace MHW_Generator.Items {
                     new MhwStructData.Entry("Needed Item Id to Unlock", 3, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Monster Unlock", 5, typeof(int), dataSourceType: DataSourceType.MonstersNeg),
                     new MhwStructData.Entry("Story Unlock", 9, typeof(uint)),
-                    new MhwStructData.Entry("Item Rank", 13, typeof(uint)),
+                    new MhwStructData.Entry("Item Rank", 13, typeof(uint), typeof(CharmRankType)),
                     new MhwStructData.Entry("Mat 1 Id", 17, typeof(ushort), dataSourceType: DataSourceType.Items),
                     new MhwStructData.Entry("Mat 1 Count", 19, typeof(byte)),
                     new MhwStructData.Entry("Mat 2 Id", 20, typeof(ushort), dataSourceType: DataSourceType.Items),

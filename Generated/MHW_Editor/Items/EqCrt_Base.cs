@@ -117,11 +117,11 @@ namespace MHW_Editor.Items {
         public const int Item_Rank_sortIndex = 350;
         [SortOrder(Item_Rank_sortIndex)]
         [DisplayName(Item_Rank_displayName)]
-        public virtual uint Item_Rank {
-            get => GetData<uint>(17);
+        public virtual MHW_Template.Armors.CharmRankType Item_Rank {
+            get => (MHW_Template.Armors.CharmRankType) GetData<uint>(17);
             set {
-                if (GetData<uint>(17) == value) return;
-                SetData(17, value, nameof(Item_Rank));
+                if ((MHW_Template.Armors.CharmRankType) GetData<uint>(17) == value) return;
+                SetData(17, (uint) value, nameof(Item_Rank));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Item_Rank));
             }

@@ -4,6 +4,7 @@ using System.IO;
 using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Items;
+using MHW_Template.Armors;
 using MHW_Template.Weapons;
 
 namespace Kulve_Crafter {
@@ -59,7 +60,8 @@ namespace Kulve_Crafter {
                         Mat_1_Id                 = 888,
                         Mat_1_Count              = 1,
                         Unk_2                    = 1,
-                        Child_index_1            = ++i
+                        Child_index_1            = ++i,
+                        Item_Rank                = CharmRankType.High_Rank
                     };
                     items.Add(newItem);
                 }
@@ -103,7 +105,8 @@ namespace Kulve_Crafter {
                         Needed_Item_Id_to_Unlock = 888,
                         Mat_1_Id                 = 888,
                         Mat_1_Count              = 1,
-                        Unknown_uint8_2          = 1
+                        Unknown_uint8_2          = 1,
+                        Item_Rank = CharmRankType.High_Rank
                     };
                     items.Add(newItem);
                 }
