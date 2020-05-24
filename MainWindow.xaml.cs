@@ -524,6 +524,7 @@ namespace MHW_Editor {
             }
 
             if (fileName.EndsWith(".gcod")) return typeof(GcData);
+            if (fileName.EndsWith(".gip")) return typeof(ScoutflyData);
             if (fileName.EndsWith(".gun_rd")) return typeof(GunnerReload);
             if (fileName.EndsWith(".gun_sd")) return typeof(GunnerShoot);
             if (fileName.EndsWith(".imk")) return typeof(ItemMake);

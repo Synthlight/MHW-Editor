@@ -48,6 +48,7 @@
     <Compile Include="Armors\ArmorType.cs" />
     <Compile Include="Armors\ArmorSetType.cs" />
     <Compile Include="Armors\Gender.cs" />
+    <Compile Include="Armors\CharmRankType.cs" />
     <Compile Include="Armors\Variant.cs" />
     <Compile Include="EncryptionKeys.cs" />
     <Compile Include="Extensions.cs" />

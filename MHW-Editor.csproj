@@ -171,6 +171,7 @@
     <Compile Include="Generated\MHW_Editor\PlData\PlPlayerParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlSkillParam.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlSkillParamInternal.cs" />
+    <Compile Include="Generated\MHW_Editor\PlData\ScoutflyData.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\MusicSkill.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\ArenaEquipment.cs" />
@@ -308,6 +309,7 @@
     <Compile Include="PlData\PlMantleParam.cs" />
     <Compile Include="PlData\PlPlayerParam.cs" />
     <Compile Include="PlData\PlItemParam.cs" />
+    <Compile Include="PlData\ScoutflyData.cs" />
     <Compile Include="SaveLoad.cs" />
     <Compile Include="Skills\MusicSkill.cs" />
     <Compile Include="Skills\SkillDat.cs" />
