@@ -65,14 +65,14 @@ namespace MHW_Generator.PlData {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),
 
                 new MhwMultiStructData.StructData($"Unknown Arr ({++arrayIndex})", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Unk 1", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk 2", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk 3", typeof(sbyte)),
-                    new MhwMultiStructData.Entry("Unk 4", typeof(sbyte)),
+                    new MhwMultiStructData.Entry("Unk 4", typeof(sbyte))
                 }, 12),
 
                 new MhwMultiStructData.StructData($"Scoutfly Params ({++paramIndexIndex})", new List<MhwMultiStructData.Entry> {
@@ -127,7 +127,7 @@ namespace MHW_Generator.PlData {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint))
                 }, 1, showVertically: true),
 
                 new MhwMultiStructData.StructData($"Unknown Arr ({++arrayIndex})", new List<MhwMultiStructData.Entry> {
@@ -150,7 +150,7 @@ namespace MHW_Generator.PlData {
                     new MhwMultiStructData.Entry("Unk 17", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 18", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 19", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk 20", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk 20", typeof(float))
                 }, 10),
 
                 new MhwMultiStructData.StructData($"Scoutfly Params ({++paramIndexIndex})", new List<MhwMultiStructData.Entry> {
@@ -281,8 +281,8 @@ namespace MHW_Generator.PlData {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                }, 1, showVertically: true),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                }, 1, showVertically: true)
             };
 
             return new MultiStruct("MHW_Editor.PlData", "ScoutflyData", new MhwMultiStructData(structs, "gip"));
