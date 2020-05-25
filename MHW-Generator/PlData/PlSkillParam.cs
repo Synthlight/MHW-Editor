@@ -632,7 +632,7 @@ namespace MHW_Generator.PlData {
             entries.AddRange(new List<MhwStructData.Entry> {
                 VerticalStruct.Spacer,
 
-                new MhwStructData.Entry($"Unk{i++}", 2117, typeof(float)),
+                new MhwStructData.Entry($"Feline Tailor", 2117, typeof(float)),
                 VerticalStruct.Spacer,
 
                 new MhwStructData.Entry("Music Skill: Bless: Random Rate", 2121, typeof(float)),

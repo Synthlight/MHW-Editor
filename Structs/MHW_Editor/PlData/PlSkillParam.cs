@@ -850,7 +850,7 @@ namespace MHW_Editor.PlData {
         public float Feline_Recoil_Attack_Multiplier_3; // Offset: 2264
         public float Feline_Recoil_Attack_Multiplier_4; // Offset: 2268
         public float Feline_Recoil_Attack_Multiplier_5; // Offset: 2272
-        public float Unk82; // Offset: 2276
+        public float Feline_Tailor; // Offset: 2276
         public float Music_Skill_Bless_Random_Rate; // Offset: 2280
         public float Music_Skill_Bless_Damage_Cut_Rate; // Offset: 2284
         public float Music_Skill_Extend_Time; // Offset: 2288
@@ -870,16 +870,16 @@ namespace MHW_Editor.PlData {
         public float Music_Skill_Mantle_Duration; // Offset: 2344
         public float Music_Skill_Mantle_Duration_Put; // Offset: 2348
         public float Music_Skill_Stamina_Up_Rate; // Offset: 2352
-        public float Unk83; // Offset: 2356
-        public float Unk84; // Offset: 2360
-        public uint Unk85; // Offset: 2364
-        public uint Unk86; // Offset: 2368
-        public float Unk87; // Offset: 2372
-        public float Unk88; // Offset: 2376
-        public float Unk89; // Offset: 2380
-        public uint Unk90; // Offset: 2384
-        public uint Unk91; // Offset: 2388
-        public float Unk92; // Offset: 2392
-        public float Unk93; // Offset: 2396
+        public float Unk82; // Offset: 2356
+        public float Unk83; // Offset: 2360
+        public uint Unk84; // Offset: 2364
+        public uint Unk85; // Offset: 2368
+        public float Unk86; // Offset: 2372
+        public float Unk87; // Offset: 2376
+        public float Unk88; // Offset: 2380
+        public uint Unk89; // Offset: 2384
+        public uint Unk90; // Offset: 2388
+        public float Unk91; // Offset: 2392
+        public float Unk92; // Offset: 2396
     }
 }
