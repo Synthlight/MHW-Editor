@@ -11,7 +11,6 @@ namespace MHW_Generator.PlData {
             ushort i = 1;
             ushort j = 1;
             ushort k = 1;
-            ushort n = 1;
 
             var entries = new List<MhwStructData.Entry> {
                 new MhwStructData.Entry("Gravity", 8, typeof(float)),
