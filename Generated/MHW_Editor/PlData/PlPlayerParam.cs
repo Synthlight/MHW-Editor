@@ -1291,59 +1291,59 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Stamina_Consumption_Unk1_displayName = "Stamina Consumption: Unk1";
-        public const int Stamina_Consumption_Unk1_sortIndex = 4600;
-        [SortOrder(Stamina_Consumption_Unk1_sortIndex)]
-        [DisplayName(Stamina_Consumption_Unk1_displayName)]
-        public virtual float Stamina_Consumption_Unk1 {
+        public const string Stamina_Consumption_SA_Wild_Swing_displayName = "Stamina Consumption: SA Wild Swing";
+        public const int Stamina_Consumption_SA_Wild_Swing_sortIndex = 4600;
+        [SortOrder(Stamina_Consumption_SA_Wild_Swing_sortIndex)]
+        [DisplayName(Stamina_Consumption_SA_Wild_Swing_displayName)]
+        public virtual float Stamina_Consumption_SA_Wild_Swing {
             get => GetData<float>(492);
             set {
                 if (GetData<float>(492) == value) return;
-                SetData(492, value, nameof(Stamina_Consumption_Unk1));
+                SetData(492, value, nameof(Stamina_Consumption_SA_Wild_Swing));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Stamina_Consumption_SA_Wild_Swing));
+            }
+        }
+
+        public const string Stamina_Consumption_Unk1_displayName = "Stamina Consumption: Unk1";
+        public const int Stamina_Consumption_Unk1_sortIndex = 4650;
+        [SortOrder(Stamina_Consumption_Unk1_sortIndex)]
+        [DisplayName(Stamina_Consumption_Unk1_displayName)]
+        public virtual float Stamina_Consumption_Unk1 {
+            get => GetData<float>(496);
+            set {
+                if (GetData<float>(496) == value) return;
+                SetData(496, value, nameof(Stamina_Consumption_Unk1));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stamina_Consumption_Unk1));
             }
         }
 
         public const string Stamina_Consumption_Unk2_displayName = "Stamina Consumption: Unk2";
-        public const int Stamina_Consumption_Unk2_sortIndex = 4650;
+        public const int Stamina_Consumption_Unk2_sortIndex = 4700;
         [SortOrder(Stamina_Consumption_Unk2_sortIndex)]
         [DisplayName(Stamina_Consumption_Unk2_displayName)]
         public virtual float Stamina_Consumption_Unk2 {
-            get => GetData<float>(496);
+            get => GetData<float>(500);
             set {
-                if (GetData<float>(496) == value) return;
-                SetData(496, value, nameof(Stamina_Consumption_Unk2));
+                if (GetData<float>(500) == value) return;
+                SetData(500, value, nameof(Stamina_Consumption_Unk2));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stamina_Consumption_Unk2));
             }
         }
 
         public const string Stamina_Consumption_Unk3_displayName = "Stamina Consumption: Unk3";
-        public const int Stamina_Consumption_Unk3_sortIndex = 4700;
+        public const int Stamina_Consumption_Unk3_sortIndex = 4750;
         [SortOrder(Stamina_Consumption_Unk3_sortIndex)]
         [DisplayName(Stamina_Consumption_Unk3_displayName)]
         public virtual float Stamina_Consumption_Unk3 {
-            get => GetData<float>(500);
-            set {
-                if (GetData<float>(500) == value) return;
-                SetData(500, value, nameof(Stamina_Consumption_Unk3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Consumption_Unk3));
-            }
-        }
-
-        public const string Stamina_Consumption_Unk4_displayName = "Stamina Consumption: Unk4";
-        public const int Stamina_Consumption_Unk4_sortIndex = 4750;
-        [SortOrder(Stamina_Consumption_Unk4_sortIndex)]
-        [DisplayName(Stamina_Consumption_Unk4_displayName)]
-        public virtual float Stamina_Consumption_Unk4 {
             get => GetData<float>(504);
             set {
                 if (GetData<float>(504) == value) return;
-                SetData(504, value, nameof(Stamina_Consumption_Unk4));
+                SetData(504, value, nameof(Stamina_Consumption_Unk3));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Consumption_Unk4));
+                OnPropertyChanged(nameof(Stamina_Consumption_Unk3));
             }
         }
 
@@ -1361,45 +1361,45 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Stamina_Consumption_Unk5_displayName = "Stamina Consumption: Unk5";
-        public const int Stamina_Consumption_Unk5_sortIndex = 4850;
-        [SortOrder(Stamina_Consumption_Unk5_sortIndex)]
-        [DisplayName(Stamina_Consumption_Unk5_displayName)]
-        public virtual float Stamina_Consumption_Unk5 {
+        public const string Stamina_Consumption_Unk4_displayName = "Stamina Consumption: Unk4";
+        public const int Stamina_Consumption_Unk4_sortIndex = 4850;
+        [SortOrder(Stamina_Consumption_Unk4_sortIndex)]
+        [DisplayName(Stamina_Consumption_Unk4_displayName)]
+        public virtual float Stamina_Consumption_Unk4 {
             get => GetData<float>(512);
             set {
                 if (GetData<float>(512) == value) return;
-                SetData(512, value, nameof(Stamina_Consumption_Unk5));
+                SetData(512, value, nameof(Stamina_Consumption_Unk4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Stamina_Consumption_Unk4));
+            }
+        }
+
+        public const string Stamina_Consumption_Unk5_displayName = "Stamina Consumption: Unk5";
+        public const int Stamina_Consumption_Unk5_sortIndex = 4900;
+        [SortOrder(Stamina_Consumption_Unk5_sortIndex)]
+        [DisplayName(Stamina_Consumption_Unk5_displayName)]
+        public virtual float Stamina_Consumption_Unk5 {
+            get => GetData<float>(516);
+            set {
+                if (GetData<float>(516) == value) return;
+                SetData(516, value, nameof(Stamina_Consumption_Unk5));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stamina_Consumption_Unk5));
             }
         }
 
         public const string Stamina_Consumption_Unk6_displayName = "Stamina Consumption: Unk6";
-        public const int Stamina_Consumption_Unk6_sortIndex = 4900;
+        public const int Stamina_Consumption_Unk6_sortIndex = 4950;
         [SortOrder(Stamina_Consumption_Unk6_sortIndex)]
         [DisplayName(Stamina_Consumption_Unk6_displayName)]
         public virtual float Stamina_Consumption_Unk6 {
-            get => GetData<float>(516);
-            set {
-                if (GetData<float>(516) == value) return;
-                SetData(516, value, nameof(Stamina_Consumption_Unk6));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Consumption_Unk6));
-            }
-        }
-
-        public const string Stamina_Consumption_Unk7_displayName = "Stamina Consumption: Unk7";
-        public const int Stamina_Consumption_Unk7_sortIndex = 4950;
-        [SortOrder(Stamina_Consumption_Unk7_sortIndex)]
-        [DisplayName(Stamina_Consumption_Unk7_displayName)]
-        public virtual float Stamina_Consumption_Unk7 {
             get => GetData<float>(520);
             set {
                 if (GetData<float>(520) == value) return;
-                SetData(520, value, nameof(Stamina_Consumption_Unk7));
+                SetData(520, value, nameof(Stamina_Consumption_Unk6));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Consumption_Unk7));
+                OnPropertyChanged(nameof(Stamina_Consumption_Unk6));
             }
         }
 
@@ -1417,101 +1417,101 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Stamina_Consumption_Unk8_displayName = "Stamina Consumption: Unk8";
-        public const int Stamina_Consumption_Unk8_sortIndex = 5050;
-        [SortOrder(Stamina_Consumption_Unk8_sortIndex)]
-        [DisplayName(Stamina_Consumption_Unk8_displayName)]
-        public virtual float Stamina_Consumption_Unk8 {
+        public const string Stamina_Consumption_Unk7_displayName = "Stamina Consumption: Unk7";
+        public const int Stamina_Consumption_Unk7_sortIndex = 5050;
+        [SortOrder(Stamina_Consumption_Unk7_sortIndex)]
+        [DisplayName(Stamina_Consumption_Unk7_displayName)]
+        public virtual float Stamina_Consumption_Unk7 {
             get => GetData<float>(528);
             set {
                 if (GetData<float>(528) == value) return;
-                SetData(528, value, nameof(Stamina_Consumption_Unk8));
+                SetData(528, value, nameof(Stamina_Consumption_Unk7));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Stamina_Consumption_Unk7));
+            }
+        }
+
+        public const string Stamina_Consumption_Claw_Attack_1_displayName = "Stamina Consumption: Claw Attack 1";
+        public const int Stamina_Consumption_Claw_Attack_1_sortIndex = 5100;
+        [SortOrder(Stamina_Consumption_Claw_Attack_1_sortIndex)]
+        [DisplayName(Stamina_Consumption_Claw_Attack_1_displayName)]
+        public virtual float Stamina_Consumption_Claw_Attack_1 {
+            get => GetData<float>(532);
+            set {
+                if (GetData<float>(532) == value) return;
+                SetData(532, value, nameof(Stamina_Consumption_Claw_Attack_1));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Stamina_Consumption_Claw_Attack_1));
+            }
+        }
+
+        public const string Stamina_Consumption_Claw_Attack_2_displayName = "Stamina Consumption: Claw Attack 2";
+        public const int Stamina_Consumption_Claw_Attack_2_sortIndex = 5150;
+        [SortOrder(Stamina_Consumption_Claw_Attack_2_sortIndex)]
+        [DisplayName(Stamina_Consumption_Claw_Attack_2_displayName)]
+        public virtual float Stamina_Consumption_Claw_Attack_2 {
+            get => GetData<float>(536);
+            set {
+                if (GetData<float>(536) == value) return;
+                SetData(536, value, nameof(Stamina_Consumption_Claw_Attack_2));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Stamina_Consumption_Claw_Attack_2));
+            }
+        }
+
+        public const string Stamina_Consumption_Claw_Attack_3_displayName = "Stamina Consumption: Claw Attack 3";
+        public const int Stamina_Consumption_Claw_Attack_3_sortIndex = 5200;
+        [SortOrder(Stamina_Consumption_Claw_Attack_3_sortIndex)]
+        [DisplayName(Stamina_Consumption_Claw_Attack_3_displayName)]
+        public virtual float Stamina_Consumption_Claw_Attack_3 {
+            get => GetData<float>(540);
+            set {
+                if (GetData<float>(540) == value) return;
+                SetData(540, value, nameof(Stamina_Consumption_Claw_Attack_3));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Stamina_Consumption_Claw_Attack_3));
+            }
+        }
+
+        public const string Stamina_Consumption_Claw_Attack_4_displayName = "Stamina Consumption: Claw Attack 4";
+        public const int Stamina_Consumption_Claw_Attack_4_sortIndex = 5250;
+        [SortOrder(Stamina_Consumption_Claw_Attack_4_sortIndex)]
+        [DisplayName(Stamina_Consumption_Claw_Attack_4_displayName)]
+        public virtual float Stamina_Consumption_Claw_Attack_4 {
+            get => GetData<float>(544);
+            set {
+                if (GetData<float>(544) == value) return;
+                SetData(544, value, nameof(Stamina_Consumption_Claw_Attack_4));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Stamina_Consumption_Claw_Attack_4));
+            }
+        }
+
+        public const string Stamina_Consumption_Unk8_displayName = "Stamina Consumption: Unk8";
+        public const int Stamina_Consumption_Unk8_sortIndex = 5300;
+        [SortOrder(Stamina_Consumption_Unk8_sortIndex)]
+        [DisplayName(Stamina_Consumption_Unk8_displayName)]
+        public virtual float Stamina_Consumption_Unk8 {
+            get => GetData<float>(548);
+            set {
+                if (GetData<float>(548) == value) return;
+                SetData(548, value, nameof(Stamina_Consumption_Unk8));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stamina_Consumption_Unk8));
             }
         }
 
-        public const string Stamina_Consumption_IB_Unk9_displayName = "Stamina Consumption: IB Unk9";
-        public const int Stamina_Consumption_IB_Unk9_sortIndex = 5100;
-        [SortOrder(Stamina_Consumption_IB_Unk9_sortIndex)]
-        [DisplayName(Stamina_Consumption_IB_Unk9_displayName)]
-        public virtual float Stamina_Consumption_IB_Unk9 {
-            get => GetData<float>(532);
-            set {
-                if (GetData<float>(532) == value) return;
-                SetData(532, value, nameof(Stamina_Consumption_IB_Unk9));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Consumption_IB_Unk9));
-            }
-        }
-
-        public const string Stamina_Consumption_IB_Unk10_displayName = "Stamina Consumption: IB Unk10";
-        public const int Stamina_Consumption_IB_Unk10_sortIndex = 5150;
-        [SortOrder(Stamina_Consumption_IB_Unk10_sortIndex)]
-        [DisplayName(Stamina_Consumption_IB_Unk10_displayName)]
-        public virtual float Stamina_Consumption_IB_Unk10 {
-            get => GetData<float>(536);
-            set {
-                if (GetData<float>(536) == value) return;
-                SetData(536, value, nameof(Stamina_Consumption_IB_Unk10));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Consumption_IB_Unk10));
-            }
-        }
-
-        public const string Stamina_Consumption_IB_Unk11_displayName = "Stamina Consumption: IB Unk11";
-        public const int Stamina_Consumption_IB_Unk11_sortIndex = 5200;
-        [SortOrder(Stamina_Consumption_IB_Unk11_sortIndex)]
-        [DisplayName(Stamina_Consumption_IB_Unk11_displayName)]
-        public virtual float Stamina_Consumption_IB_Unk11 {
-            get => GetData<float>(540);
-            set {
-                if (GetData<float>(540) == value) return;
-                SetData(540, value, nameof(Stamina_Consumption_IB_Unk11));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Consumption_IB_Unk11));
-            }
-        }
-
-        public const string Stamina_Consumption_IB_Unk12_displayName = "Stamina Consumption: IB Unk12";
-        public const int Stamina_Consumption_IB_Unk12_sortIndex = 5250;
-        [SortOrder(Stamina_Consumption_IB_Unk12_sortIndex)]
-        [DisplayName(Stamina_Consumption_IB_Unk12_displayName)]
-        public virtual float Stamina_Consumption_IB_Unk12 {
-            get => GetData<float>(544);
-            set {
-                if (GetData<float>(544) == value) return;
-                SetData(544, value, nameof(Stamina_Consumption_IB_Unk12));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Consumption_IB_Unk12));
-            }
-        }
-
-        public const string Stamina_Consumption_Unk13_displayName = "Stamina Consumption: Unk13";
-        public const int Stamina_Consumption_Unk13_sortIndex = 5300;
-        [SortOrder(Stamina_Consumption_Unk13_sortIndex)]
-        [DisplayName(Stamina_Consumption_Unk13_displayName)]
-        public virtual float Stamina_Consumption_Unk13 {
-            get => GetData<float>(548);
-            set {
-                if (GetData<float>(548) == value) return;
-                SetData(548, value, nameof(Stamina_Consumption_Unk13));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Consumption_Unk13));
-            }
-        }
-
-        public const string Stamina_Consumption_Unk14_displayName = "Stamina Consumption: Unk14";
-        public const int Stamina_Consumption_Unk14_sortIndex = 5350;
-        [SortOrder(Stamina_Consumption_Unk14_sortIndex)]
-        [DisplayName(Stamina_Consumption_Unk14_displayName)]
-        public virtual float Stamina_Consumption_Unk14 {
+        public const string Stamina_Consumption_Unk9_displayName = "Stamina Consumption: Unk9";
+        public const int Stamina_Consumption_Unk9_sortIndex = 5350;
+        [SortOrder(Stamina_Consumption_Unk9_sortIndex)]
+        [DisplayName(Stamina_Consumption_Unk9_displayName)]
+        public virtual float Stamina_Consumption_Unk9 {
             get => GetData<float>(552);
             set {
                 if (GetData<float>(552) == value) return;
-                SetData(552, value, nameof(Stamina_Consumption_Unk14));
+                SetData(552, value, nameof(Stamina_Consumption_Unk9));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Consumption_Unk14));
+                OnPropertyChanged(nameof(Stamina_Consumption_Unk9));
             }
         }
 
@@ -1557,73 +1557,73 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Stamina_Time_Reduce_mCore_Unk4_displayName = "Stamina Time Reduce mCore: Unk4";
-        public const int Stamina_Time_Reduce_mCore_Unk4_sortIndex = 5550;
-        [SortOrder(Stamina_Time_Reduce_mCore_Unk4_sortIndex)]
-        [DisplayName(Stamina_Time_Reduce_mCore_Unk4_displayName)]
-        public virtual float Stamina_Time_Reduce_mCore_Unk4 {
+        public const string Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain_displayName = "Stamina Time Reduce mCore: Hammer/Bow Charge Drain";
+        public const int Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain_sortIndex = 5550;
+        [SortOrder(Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain_sortIndex)]
+        [DisplayName(Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain_displayName)]
+        public virtual float Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain {
             get => GetData<float>(568);
             set {
                 if (GetData<float>(568) == value) return;
-                SetData(568, value, nameof(Stamina_Time_Reduce_mCore_Unk4));
+                SetData(568, value, nameof(Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain));
+            }
+        }
+
+        public const string Stamina_Time_Reduce_mCore_Unk4_displayName = "Stamina Time Reduce mCore: Unk4";
+        public const int Stamina_Time_Reduce_mCore_Unk4_sortIndex = 5600;
+        [SortOrder(Stamina_Time_Reduce_mCore_Unk4_sortIndex)]
+        [DisplayName(Stamina_Time_Reduce_mCore_Unk4_displayName)]
+        public virtual float Stamina_Time_Reduce_mCore_Unk4 {
+            get => GetData<float>(572);
+            set {
+                if (GetData<float>(572) == value) return;
+                SetData(572, value, nameof(Stamina_Time_Reduce_mCore_Unk4));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk4));
             }
         }
 
         public const string Stamina_Time_Reduce_mCore_Unk5_displayName = "Stamina Time Reduce mCore: Unk5";
-        public const int Stamina_Time_Reduce_mCore_Unk5_sortIndex = 5600;
+        public const int Stamina_Time_Reduce_mCore_Unk5_sortIndex = 5650;
         [SortOrder(Stamina_Time_Reduce_mCore_Unk5_sortIndex)]
         [DisplayName(Stamina_Time_Reduce_mCore_Unk5_displayName)]
         public virtual float Stamina_Time_Reduce_mCore_Unk5 {
-            get => GetData<float>(572);
+            get => GetData<float>(576);
             set {
-                if (GetData<float>(572) == value) return;
-                SetData(572, value, nameof(Stamina_Time_Reduce_mCore_Unk5));
+                if (GetData<float>(576) == value) return;
+                SetData(576, value, nameof(Stamina_Time_Reduce_mCore_Unk5));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk5));
             }
         }
 
         public const string Stamina_Time_Reduce_mCore_Unk6_displayName = "Stamina Time Reduce mCore: Unk6";
-        public const int Stamina_Time_Reduce_mCore_Unk6_sortIndex = 5650;
+        public const int Stamina_Time_Reduce_mCore_Unk6_sortIndex = 5700;
         [SortOrder(Stamina_Time_Reduce_mCore_Unk6_sortIndex)]
         [DisplayName(Stamina_Time_Reduce_mCore_Unk6_displayName)]
         public virtual float Stamina_Time_Reduce_mCore_Unk6 {
-            get => GetData<float>(576);
+            get => GetData<float>(580);
             set {
-                if (GetData<float>(576) == value) return;
-                SetData(576, value, nameof(Stamina_Time_Reduce_mCore_Unk6));
+                if (GetData<float>(580) == value) return;
+                SetData(580, value, nameof(Stamina_Time_Reduce_mCore_Unk6));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk6));
             }
         }
 
         public const string Stamina_Time_Reduce_mCore_Unk7_displayName = "Stamina Time Reduce mCore: Unk7";
-        public const int Stamina_Time_Reduce_mCore_Unk7_sortIndex = 5700;
+        public const int Stamina_Time_Reduce_mCore_Unk7_sortIndex = 5750;
         [SortOrder(Stamina_Time_Reduce_mCore_Unk7_sortIndex)]
         [DisplayName(Stamina_Time_Reduce_mCore_Unk7_displayName)]
         public virtual float Stamina_Time_Reduce_mCore_Unk7 {
-            get => GetData<float>(580);
-            set {
-                if (GetData<float>(580) == value) return;
-                SetData(580, value, nameof(Stamina_Time_Reduce_mCore_Unk7));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk7));
-            }
-        }
-
-        public const string Stamina_Time_Reduce_mCore_Unk8_displayName = "Stamina Time Reduce mCore: Unk8";
-        public const int Stamina_Time_Reduce_mCore_Unk8_sortIndex = 5750;
-        [SortOrder(Stamina_Time_Reduce_mCore_Unk8_sortIndex)]
-        [DisplayName(Stamina_Time_Reduce_mCore_Unk8_displayName)]
-        public virtual float Stamina_Time_Reduce_mCore_Unk8 {
             get => GetData<float>(584);
             set {
                 if (GetData<float>(584) == value) return;
-                SetData(584, value, nameof(Stamina_Time_Reduce_mCore_Unk8));
+                SetData(584, value, nameof(Stamina_Time_Reduce_mCore_Unk7));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk8));
+                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk7));
             }
         }
 
@@ -1641,31 +1641,31 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Stamina_Time_Reduce_mCore_Unk9_displayName = "Stamina Time Reduce mCore: Unk9";
-        public const int Stamina_Time_Reduce_mCore_Unk9_sortIndex = 5850;
-        [SortOrder(Stamina_Time_Reduce_mCore_Unk9_sortIndex)]
-        [DisplayName(Stamina_Time_Reduce_mCore_Unk9_displayName)]
-        public virtual float Stamina_Time_Reduce_mCore_Unk9 {
+        public const string Stamina_Time_Reduce_mCore_Unk8_displayName = "Stamina Time Reduce mCore: Unk8";
+        public const int Stamina_Time_Reduce_mCore_Unk8_sortIndex = 5850;
+        [SortOrder(Stamina_Time_Reduce_mCore_Unk8_sortIndex)]
+        [DisplayName(Stamina_Time_Reduce_mCore_Unk8_displayName)]
+        public virtual float Stamina_Time_Reduce_mCore_Unk8 {
             get => GetData<float>(592);
             set {
                 if (GetData<float>(592) == value) return;
-                SetData(592, value, nameof(Stamina_Time_Reduce_mCore_Unk9));
+                SetData(592, value, nameof(Stamina_Time_Reduce_mCore_Unk8));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk9));
+                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk8));
             }
         }
 
-        public const string Stamina_Time_Reduce_mCore_Unk10_displayName = "Stamina Time Reduce mCore: Unk10";
-        public const int Stamina_Time_Reduce_mCore_Unk10_sortIndex = 5900;
-        [SortOrder(Stamina_Time_Reduce_mCore_Unk10_sortIndex)]
-        [DisplayName(Stamina_Time_Reduce_mCore_Unk10_displayName)]
-        public virtual float Stamina_Time_Reduce_mCore_Unk10 {
+        public const string Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled__displayName = "Stamina Time Reduce mCore: Clutch Drain (Whilst Grappled)";
+        public const int Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled__sortIndex = 5900;
+        [SortOrder(Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled__sortIndex)]
+        [DisplayName(Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled__displayName)]
+        public virtual float Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled_ {
             get => GetData<float>(596);
             set {
                 if (GetData<float>(596) == value) return;
-                SetData(596, value, nameof(Stamina_Time_Reduce_mCore_Unk10));
+                SetData(596, value, nameof(Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled_));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk10));
+                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled_));
             }
         }
 
@@ -1683,87 +1683,87 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Stamina_Time_Reduce_mCore_Unk11_displayName = "Stamina Time Reduce mCore: Unk11";
-        public const int Stamina_Time_Reduce_mCore_Unk11_sortIndex = 6000;
-        [SortOrder(Stamina_Time_Reduce_mCore_Unk11_sortIndex)]
-        [DisplayName(Stamina_Time_Reduce_mCore_Unk11_displayName)]
-        public virtual float Stamina_Time_Reduce_mCore_Unk11 {
+        public const string Stamina_Time_Reduce_mCore_Unk9_displayName = "Stamina Time Reduce mCore: Unk9";
+        public const int Stamina_Time_Reduce_mCore_Unk9_sortIndex = 6000;
+        [SortOrder(Stamina_Time_Reduce_mCore_Unk9_sortIndex)]
+        [DisplayName(Stamina_Time_Reduce_mCore_Unk9_displayName)]
+        public virtual float Stamina_Time_Reduce_mCore_Unk9 {
             get => GetData<float>(604);
             set {
                 if (GetData<float>(604) == value) return;
-                SetData(604, value, nameof(Stamina_Time_Reduce_mCore_Unk11));
+                SetData(604, value, nameof(Stamina_Time_Reduce_mCore_Unk9));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk9));
+            }
+        }
+
+        public const string Stamina_Time_Reduce_mCore_Unk10_displayName = "Stamina Time Reduce mCore: Unk10";
+        public const int Stamina_Time_Reduce_mCore_Unk10_sortIndex = 6050;
+        [SortOrder(Stamina_Time_Reduce_mCore_Unk10_sortIndex)]
+        [DisplayName(Stamina_Time_Reduce_mCore_Unk10_displayName)]
+        public virtual float Stamina_Time_Reduce_mCore_Unk10 {
+            get => GetData<float>(608);
+            set {
+                if (GetData<float>(608) == value) return;
+                SetData(608, value, nameof(Stamina_Time_Reduce_mCore_Unk10));
+                OnPropertyChanged(nameof(Raw_Data));
+                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk10));
+            }
+        }
+
+        public const string Stamina_Time_Reduce_mCore_Unk11_displayName = "Stamina Time Reduce mCore: Unk11";
+        public const int Stamina_Time_Reduce_mCore_Unk11_sortIndex = 6100;
+        [SortOrder(Stamina_Time_Reduce_mCore_Unk11_sortIndex)]
+        [DisplayName(Stamina_Time_Reduce_mCore_Unk11_displayName)]
+        public virtual float Stamina_Time_Reduce_mCore_Unk11 {
+            get => GetData<float>(612);
+            set {
+                if (GetData<float>(612) == value) return;
+                SetData(612, value, nameof(Stamina_Time_Reduce_mCore_Unk11));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk11));
             }
         }
 
         public const string Stamina_Time_Reduce_mCore_Unk12_displayName = "Stamina Time Reduce mCore: Unk12";
-        public const int Stamina_Time_Reduce_mCore_Unk12_sortIndex = 6050;
+        public const int Stamina_Time_Reduce_mCore_Unk12_sortIndex = 6150;
         [SortOrder(Stamina_Time_Reduce_mCore_Unk12_sortIndex)]
         [DisplayName(Stamina_Time_Reduce_mCore_Unk12_displayName)]
         public virtual float Stamina_Time_Reduce_mCore_Unk12 {
-            get => GetData<float>(608);
+            get => GetData<float>(616);
             set {
-                if (GetData<float>(608) == value) return;
-                SetData(608, value, nameof(Stamina_Time_Reduce_mCore_Unk12));
+                if (GetData<float>(616) == value) return;
+                SetData(616, value, nameof(Stamina_Time_Reduce_mCore_Unk12));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk12));
             }
         }
 
         public const string Stamina_Time_Reduce_mCore_Unk13_displayName = "Stamina Time Reduce mCore: Unk13";
-        public const int Stamina_Time_Reduce_mCore_Unk13_sortIndex = 6100;
+        public const int Stamina_Time_Reduce_mCore_Unk13_sortIndex = 6200;
         [SortOrder(Stamina_Time_Reduce_mCore_Unk13_sortIndex)]
         [DisplayName(Stamina_Time_Reduce_mCore_Unk13_displayName)]
         public virtual float Stamina_Time_Reduce_mCore_Unk13 {
-            get => GetData<float>(612);
+            get => GetData<float>(620);
             set {
-                if (GetData<float>(612) == value) return;
-                SetData(612, value, nameof(Stamina_Time_Reduce_mCore_Unk13));
+                if (GetData<float>(620) == value) return;
+                SetData(620, value, nameof(Stamina_Time_Reduce_mCore_Unk13));
                 OnPropertyChanged(nameof(Raw_Data));
                 OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk13));
             }
         }
 
         public const string Stamina_Time_Reduce_mCore_Unk14_displayName = "Stamina Time Reduce mCore: Unk14";
-        public const int Stamina_Time_Reduce_mCore_Unk14_sortIndex = 6150;
+        public const int Stamina_Time_Reduce_mCore_Unk14_sortIndex = 6250;
         [SortOrder(Stamina_Time_Reduce_mCore_Unk14_sortIndex)]
         [DisplayName(Stamina_Time_Reduce_mCore_Unk14_displayName)]
         public virtual float Stamina_Time_Reduce_mCore_Unk14 {
-            get => GetData<float>(616);
-            set {
-                if (GetData<float>(616) == value) return;
-                SetData(616, value, nameof(Stamina_Time_Reduce_mCore_Unk14));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk14));
-            }
-        }
-
-        public const string Stamina_Time_Reduce_mCore_Unk15_displayName = "Stamina Time Reduce mCore: Unk15";
-        public const int Stamina_Time_Reduce_mCore_Unk15_sortIndex = 6200;
-        [SortOrder(Stamina_Time_Reduce_mCore_Unk15_sortIndex)]
-        [DisplayName(Stamina_Time_Reduce_mCore_Unk15_displayName)]
-        public virtual float Stamina_Time_Reduce_mCore_Unk15 {
-            get => GetData<float>(620);
-            set {
-                if (GetData<float>(620) == value) return;
-                SetData(620, value, nameof(Stamina_Time_Reduce_mCore_Unk15));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk15));
-            }
-        }
-
-        public const string Stamina_Time_Reduce_mCore_Unk16_displayName = "Stamina Time Reduce mCore: Unk16";
-        public const int Stamina_Time_Reduce_mCore_Unk16_sortIndex = 6250;
-        [SortOrder(Stamina_Time_Reduce_mCore_Unk16_sortIndex)]
-        [DisplayName(Stamina_Time_Reduce_mCore_Unk16_displayName)]
-        public virtual float Stamina_Time_Reduce_mCore_Unk16 {
             get => GetData<float>(624);
             set {
                 if (GetData<float>(624) == value) return;
-                SetData(624, value, nameof(Stamina_Time_Reduce_mCore_Unk16));
+                SetData(624, value, nameof(Stamina_Time_Reduce_mCore_Unk14));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk16));
+                OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk14));
             }
         }
 
@@ -5168,17 +5168,17 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string IB_Unk1_displayName = "IB Unk1";
-        public const int IB_Unk1_sortIndex = 18250;
-        [SortOrder(IB_Unk1_sortIndex)]
-        [DisplayName(IB_Unk1_displayName)]
-        public virtual float IB_Unk1 {
+        public const string WP_MR_Wyrmstake_Blast_Health_Regen_displayName = "WP MR Wyrmstake Blast Health Regen";
+        public const int WP_MR_Wyrmstake_Blast_Health_Regen_sortIndex = 18250;
+        [SortOrder(WP_MR_Wyrmstake_Blast_Health_Regen_sortIndex)]
+        [DisplayName(WP_MR_Wyrmstake_Blast_Health_Regen_displayName)]
+        public virtual float WP_MR_Wyrmstake_Blast_Health_Regen {
             get => GetData<float>(8675);
             set {
                 if (GetData<float>(8675) == value) return;
-                SetData(8675, value, nameof(IB_Unk1));
+                SetData(8675, value, nameof(WP_MR_Wyrmstake_Blast_Health_Regen));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(IB_Unk1));
+                OnPropertyChanged(nameof(WP_MR_Wyrmstake_Blast_Health_Regen));
             }
         }
 

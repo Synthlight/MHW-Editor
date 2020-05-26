@@ -92,40 +92,40 @@ namespace MHW_Editor.PlData {
         public float Stamina_Mount_Endurance_Rate; // Offset: 480
         public float Stamina_Consumption_Dodge; // Offset: 484
         public float Stamina_Consumption_LS_Counter; // Offset: 488
-        public float Stamina_Consumption_Unk1; // Offset: 492
-        public float Stamina_Consumption_Unk2; // Offset: 496
-        public float Stamina_Consumption_Unk3; // Offset: 500
-        public float Stamina_Consumption_Unk4; // Offset: 504
+        public float Stamina_Consumption_SA_Wild_Swing; // Offset: 492
+        public float Stamina_Consumption_Unk1; // Offset: 496
+        public float Stamina_Consumption_Unk2; // Offset: 500
+        public float Stamina_Consumption_Unk3; // Offset: 504
         public float Stamina_Consumption_Bow_Shoot; // Offset: 508
-        public float Stamina_Consumption_Unk5; // Offset: 512
-        public float Stamina_Consumption_Unk6; // Offset: 516
-        public float Stamina_Consumption_Unk7; // Offset: 520
+        public float Stamina_Consumption_Unk4; // Offset: 512
+        public float Stamina_Consumption_Unk5; // Offset: 516
+        public float Stamina_Consumption_Unk6; // Offset: 520
         public float Stamina_Consumption_Bow_Charge_Step; // Offset: 524
-        public float Stamina_Consumption_Unk8; // Offset: 528
-        public float Stamina_Consumption_IB_Unk9; // Offset: 532
-        public float Stamina_Consumption_IB_Unk10; // Offset: 536
-        public float Stamina_Consumption_IB_Unk11; // Offset: 540
-        public float Stamina_Consumption_IB_Unk12; // Offset: 544
-        public float Stamina_Consumption_Unk13; // Offset: 548
-        public float Stamina_Consumption_Unk14; // Offset: 552
+        public float Stamina_Consumption_Unk7; // Offset: 528
+        public float Stamina_Consumption_Claw_Attack_1; // Offset: 532
+        public float Stamina_Consumption_Claw_Attack_2; // Offset: 536
+        public float Stamina_Consumption_Claw_Attack_3; // Offset: 540
+        public float Stamina_Consumption_Claw_Attack_4; // Offset: 544
+        public float Stamina_Consumption_Unk8; // Offset: 548
+        public float Stamina_Consumption_Unk9; // Offset: 552
         public float Stamina_Time_Reduce_mCore_Unk1; // Offset: 556
         public float Stamina_Time_Reduce_mCore_Unk2; // Offset: 560
         public float Stamina_Time_Reduce_mCore_Unk3; // Offset: 564
-        public float Stamina_Time_Reduce_mCore_Unk4; // Offset: 568
-        public float Stamina_Time_Reduce_mCore_Unk5; // Offset: 572
-        public float Stamina_Time_Reduce_mCore_Unk6; // Offset: 576
-        public float Stamina_Time_Reduce_mCore_Unk7; // Offset: 580
-        public float Stamina_Time_Reduce_mCore_Unk8; // Offset: 584
+        public float Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain; // Offset: 568
+        public float Stamina_Time_Reduce_mCore_Unk4; // Offset: 572
+        public float Stamina_Time_Reduce_mCore_Unk5; // Offset: 576
+        public float Stamina_Time_Reduce_mCore_Unk6; // Offset: 580
+        public float Stamina_Time_Reduce_mCore_Unk7; // Offset: 584
         public float Stamina_Time_Reduce_mCore_Lance_s_Power_Guard; // Offset: 588
-        public float Stamina_Time_Reduce_mCore_Unk9; // Offset: 592
-        public float Stamina_Time_Reduce_mCore_Unk10; // Offset: 596
+        public float Stamina_Time_Reduce_mCore_Unk8; // Offset: 592
+        public float Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled_; // Offset: 596
         public float Stamina_Time_Reduce_mCore_Clutch_Counter; // Offset: 600
-        public float Stamina_Time_Reduce_mCore_Unk11; // Offset: 604
-        public float Stamina_Time_Reduce_mCore_Unk12; // Offset: 608
-        public float Stamina_Time_Reduce_mCore_Unk13; // Offset: 612
-        public float Stamina_Time_Reduce_mCore_Unk14; // Offset: 616
-        public float Stamina_Time_Reduce_mCore_Unk15; // Offset: 620
-        public float Stamina_Time_Reduce_mCore_Unk16; // Offset: 624
+        public float Stamina_Time_Reduce_mCore_Unk9; // Offset: 604
+        public float Stamina_Time_Reduce_mCore_Unk10; // Offset: 608
+        public float Stamina_Time_Reduce_mCore_Unk11; // Offset: 612
+        public float Stamina_Time_Reduce_mCore_Unk12; // Offset: 616
+        public float Stamina_Time_Reduce_mCore_Unk13; // Offset: 620
+        public float Stamina_Time_Reduce_mCore_Unk14; // Offset: 624
         public float Mount_Reduce_Stamina_mCore_Unk1; // Offset: 628
         public float Mount_Reduce_Stamina_mCore_Unk2; // Offset: 632
         public float Mount_Life_Reduce_Stamina_mCore_Unk1; // Offset: 636
@@ -310,7 +310,7 @@ namespace MHW_Editor.PlData {
         public float Wp_MR_Augment_Health_Percent_2_; // Offset: 8663
         public float Wp_MR_Augment_Health_Percent_3_; // Offset: 8667
         public float Wp_MR_Augment_Health_Percent_4_; // Offset: 8671
-        public float IB_Unk1; // Offset: 8675
+        public float WP_MR_Wyrmstake_Blast_Health_Regen; // Offset: 8675
         public float Wp_MR_Augment_Lifesteal_Cooldown; // Offset: 8679
         public byte Wp_MR_Augment_Element_1_; // Offset: 8683
         public byte Wp_MR_Augment_Element_2_; // Offset: 8684
