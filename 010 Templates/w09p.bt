@@ -125,3 +125,260 @@ typedef struct {
 } Unk_Arr_2_Shared_;
 
 Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false>;
+
+float Unk_79;
+float Unk_80;
+float Unk_81;
+float Unk_82;
+float Unk_83;
+float Unk_84;
+float Unk_85;
+float Unk_86;
+float Unk_87;
+float Unk_88;
+float Unk_89;
+float Unk_90;
+
+uint Unk_91;
+uint Unk_92;
+float Unk_93;
+float Unk_94;
+float Unk_95;
+float Unk_96;
+float Unk_97;
+float Unk_98;
+float Unk_99;
+float Unk_100;
+ubyte Unk_101;
+ubyte Unk_102;
+ubyte Unk_103;
+ubyte Unk_104;
+ubyte Unk_105;
+ubyte Unk_106;
+ubyte Unk_107;
+float Unk_108;
+float Unk_109;
+float Unk_110;
+float Unk_111;
+float Unk_112;
+float Unk_113;
+float Unk_114;
+ubyte Unk_115;
+float Unk_116;
+float Unk_117;
+float Unk_118;
+float Unk_119;
+float Unk_120;
+float Unk_121;
+float Unk_122;
+
+typedef struct {
+    float Gravity;
+    float G_Rate;
+    float Momentum;
+    float V_Offset;
+    float H_Offset;
+} Action_Param_1;
+
+Action_Param_1 Action_Param_1_;
+
+float Unk_123;
+float Unk_124;
+float Unk_125;
+float Unk_126;
+float Unk_127;
+float Unk_128;
+float Unk_129;
+float Unk_130;
+float Unk_131;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    ubyte Unk_4;
+    float Unk_5;
+} Unk_Arr_3;
+
+Unk_Arr_3 Unk_Arr_3_[4]<optimize=false>;
+
+float Unk_132;
+
+typedef struct {
+    float Gravity;
+    float G_Rate;
+    float Momentum;
+    float V_Offset;
+    float H_Offset;
+} Action_Param_2;
+
+Action_Param_2 Action_Param_2_;
+
+float Unk_133;
+float Unk_134;
+float Unk_135;
+float Unk_136;
+float Unk_137;
+float Unk_138;
+float Unk_139;
+
+typedef struct {
+    float Gravity;
+    float G_Rate;
+    float Momentum;
+    float V_Offset;
+    float H_Offset;
+} Action_Param_3;
+
+Action_Param_3 Action_Param_3_;
+
+float Unk_140;
+
+typedef struct {
+    float Gravity;
+    float G_Rate;
+    float Momentum;
+    float V_Offset;
+    float H_Offset;
+} Action_Param_4;
+
+Action_Param_4 Action_Param_4_;
+
+float Unk_141;
+float Unk_142;
+float Unk_143;
+float Unk_144;
+float Unk_145;
+float Unk_146;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+} Unk_Arr_4;
+
+Unk_Arr_4 Unk_Arr_4_[21]<optimize=false>;
+
+float Unk_147;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+} Unk_Arr_5;
+
+Unk_Arr_5 Unk_Arr_5_;
+
+float Unk_148;
+float Unk_149;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+} Unk_Arr_6;
+
+Unk_Arr_6 Unk_Arr_6_[2]<optimize=false>;
+
+float Unk_150;
+float Unk_151;
+float Unk_152;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+} Unk_Arr_7;
+
+Unk_Arr_7 Unk_Arr_7_[3]<optimize=false>;
+
+float Unk_153;
+float Unk_154;
+float Unk_155;
+float Unk_156;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+} Unk_Arr_8;
+
+Unk_Arr_8 Unk_Arr_8_[4]<optimize=false>;
+
+float Unk_157;
+float Unk_158;
+float Unk_159;
+float Unk_160;
+float Unk_161;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+} Unk_Arr_9;
+
+Unk_Arr_9 Unk_Arr_9_[5]<optimize=false>;
+
+float Unk_162;
+float Unk_163;
+float Unk_164;
+float Unk_165;
+float Unk_166;
+float Unk_167;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+} Unk_Arr_10;
+
+Unk_Arr_10 Unk_Arr_10_[6]<optimize=false>;
+
+float Unk_168;
+float Unk_169;
+float Unk_170;
+float Unk_171;
+float Unk_172;
+float Unk_173;
+float Unk_174;
+float Unk_175;
+float Unk_176;
+float Unk_177;
+float Unk_178;
+float Unk_179;
+float Unk_180;
+float Unk_181;
+float Unk_182;
+float Unk_183;
+float Unk_184;
+float Unk_185;
+float Unk_186;
+float Unk_187;
+float Unk_188;
+
+typedef struct {
+    float Gravity;
+    float G_Rate;
+    float Momentum;
+    float V_Offset;
+    float H_Offset;
+} Action_Param_5;
+
+Action_Param_5 Action_Param_5_;
+
+float Unk_189;
+float Unk_190;
+float Unk_191;
+float Unk_192;
+float Unk_193;
+uint Unk_194;
+float Unk_195;
+float Unk_196;
+float Unk_197;

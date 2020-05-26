@@ -138,7 +138,6 @@ float Unk_87;
 float Unk_88;
 float Unk_89;
 float Unk_90;
-float Unk_91;
 
 typedef struct {
     float Unk_1;
@@ -147,80 +146,103 @@ typedef struct {
     float Unk_4;
 } Unk_Arr_3;
 
-Unk_Arr_3 Unk_Arr_3_[3]<optimize=false>;
+Unk_Arr_3 Unk_Arr_3_[5]<optimize=false>;
 
+float Unk_91;
 float Unk_92;
 float Unk_93;
 float Unk_94;
 float Unk_95;
-float Unk_96;
-float Unk_97;
-float Unk_98;
-float Unk_99;
-float Unk_100;
+ubyte Unk_96;
+ubyte Unk_97;
+ubyte Unk_98;
+ubyte Unk_99;
+ubyte Unk_100;
 float Unk_101;
 float Unk_102;
 float Unk_103;
-ubyte Unk_104;
-ubyte Unk_105;
-ubyte Unk_106;
-ubyte Unk_107;
-ubyte Unk_108;
+float Unk_104;
+float Unk_105;
+
+typedef struct {
+    ubyte B;
+    ushort X;
+    ushort Y;
+    float Time;
+    ushort P;
+} Event_Pad_Vib;
+
+Event_Pad_Vib Event_Pad_Vib_[4]<optimize=false>;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+} Unk_Arr_4;
+
+Unk_Arr_4 Unk_Arr_4_[8]<optimize=false>;
+
+float Unk_106;
+float Unk_107;
+
+typedef struct {
+    float Gravity;
+    float G_Rate;
+    float Momentum;
+    float V_Offset;
+    float H_Offset;
+} Action_Param_1;
+
+Action_Param_1 Action_Param_1_[2]<optimize=false>;
+
+float Unk_108;
 float Unk_109;
 float Unk_110;
 float Unk_111;
 float Unk_112;
 float Unk_113;
-
-typedef struct {
-    ubyte Unk_1;
-    ushort Unk_2;
-    ushort Unk_3;
-    float Unk_4;
-    ushort Unk_5;
-} Unk_Arr_4;
-
-Unk_Arr_4 Unk_Arr_4_[4]<optimize=false>;
-
-typedef struct {
-    float Unk_1;
-    float Unk_2;
-    float Unk_3;
-    float Unk_4;
-} Unk_Arr_5;
-
-Unk_Arr_5 Unk_Arr_5_[13]<optimize=false>;
-
-uint Unk_114;
-uint Unk_115;
+float Unk_114;
+float Unk_115;
 uint Unk_116;
 uint Unk_117;
-float Unk_118;
-float Unk_119;
-uint Unk_120;
+uint Unk_118;
+uint Unk_119;
+float Unk_120;
 float Unk_121;
-
-typedef struct {
-    float Unk_1;
-    float Unk_2;
-    float Unk_3;
-    float Unk_4;
-    float Unk_5;
-} Unk_Arr_6;
-
-Unk_Arr_6 Unk_Arr_6_[8]<optimize=false>;
-
-uint Unk_122;
+float Unk_122;
 float Unk_123;
 float Unk_124;
 float Unk_125;
 float Unk_126;
+
+typedef struct {
+    float Gravity;
+    float G_Rate;
+    float Momentum;
+    float V_Offset;
+    float H_Offset;
+} Action_Param_2;
+
+Action_Param_2 Action_Param_2_[7]<optimize=false>;
+
 float Unk_127;
 float Unk_128;
-float Unk_129;
+uint Unk_129;
 float Unk_130;
 float Unk_131;
 float Unk_132;
+
+typedef struct {
+    float Gravity;
+    float G_Rate;
+    float Momentum;
+    float V_Offset;
+    float H_Offset;
+} Action_Param_3;
+
+Action_Param_3 Action_Param_3_[2]<optimize=false>;
+
 float Unk_133;
 float Unk_134;
 float Unk_135;
@@ -228,4 +250,3 @@ float Unk_136;
 float Unk_137;
 float Unk_138;
 float Unk_139;
-float Unk_140;

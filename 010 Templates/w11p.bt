@@ -1,12 +1,392 @@
 //------------------------------------------------
 //--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.w11p
+//  Category: MHW_Editor.Weapons
 //------------------------------------------------
 
-FSeek(1313); float Dragonpiercer_X1;
-FSeek(1317); float Dragonpiercer_Y1;
-FSeek(1321); float Dragonpiercer_X2;
-FSeek(1325); float Dragonpiercer_Y2;
-FSeek(2569); float Thousand_Dragons_X1;
-FSeek(2573); float Thousand_Dragons_Y1;
-FSeek(2577); float Thousand_Dragons_X2;
-FSeek(2581); float Thousand_Dragons_Y2;
+char Weapon[4]<optimize=false>;
+uint Unk_1;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    ubyte Unk_4;
+    float Unk_5;
+} Unk_Arr_1_Shared_;
+
+Unk_Arr_1_Shared_ Unk_Arr_1_Shared__[20]<optimize=false>;
+
+float Unk_2;
+float Unk_3;
+float Unk_4;
+float Unk_5;
+float Unk_6;
+float Unk_7;
+float Unk_8;
+float Unk_9;
+float Unk_10;
+float Unk_11;
+float Unk_12;
+float Unk_13;
+float Unk_14;
+float Unk_15;
+float Unk_16;
+float Unk_17;
+ubyte Unk_18;
+ubyte Unk_19;
+ubyte Unk_20;
+ubyte Unk_21;
+float Unk_22;
+float Unk_23;
+float Unk_24;
+float Unk_25;
+ubyte Unk_26;
+float Unk_27;
+
+typedef struct {
+    float Guard_Angle_Both_Sides_;
+    ubyte Knockback_Threshold_Small;
+    ubyte Knockback_Threshold_Medium;
+    ubyte Knockback_Threshold_Large;
+} Guard_Angles_Shared_;
+
+Guard_Angles_Shared_ Guard_Angles_Shared__[2]<optimize=false>;
+
+float Unk_28;
+float Unk_29;
+float Unk_30;
+float Unk_31;
+float Unk_32;
+float Unk_33;
+float Unk_34;
+float Unk_35;
+float Unk_36;
+float Unk_37;
+float Unk_38;
+float Unk_39;
+float Unk_40;
+float Unk_41;
+float Unk_42;
+float Unk_43;
+float Unk_44;
+float Unk_45;
+float Unk_46;
+float Unk_47;
+float Unk_48;
+uint Unk_49;
+uint Unk_50;
+float Unk_51;
+float Unk_52;
+float Unk_53;
+float Unk_54;
+float Unk_55;
+float Unk_56;
+float Unk_57;
+float Unk_58;
+float Unk_59;
+float Unk_60;
+float Unk_61;
+float Unk_62;
+float Unk_63;
+float Unk_64;
+float Unk_65;
+float Unk_66;
+float Unk_67;
+float Unk_68;
+float Unk_69;
+float Unk_70;
+float Unk_71;
+ubyte Unk_72;
+uint Unk_73;
+float Unk_74;
+float Unk_75;
+float Unk_76;
+ubyte Unk_77;
+int Unk_78;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+    float Unk_5;
+    float Unk_6;
+    float Unk_7;
+    float Unk_8;
+    float Unk_9;
+    float Unk_10;
+    float Unk_11;
+    float Unk_12;
+    float Unk_13;
+    ubyte Unk_14;
+    int Unk_15;
+} Unk_Arr_2_Shared_;
+
+Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false>;
+
+float Unk_79;
+float Unk_80;
+float Unk_81;
+float Unk_82;
+float Unk_83;
+float Unk_84;
+float Unk_85;
+float Unk_86;
+float Unk_87;
+float Unk_88;
+float Unk_89;
+float Unk_90;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+} Unk_Arr_3;
+
+Unk_Arr_3 Unk_Arr_3_[2]<optimize=false>;
+
+typedef struct {
+    ubyte B;
+    ushort X;
+    ushort Y;
+    float Time;
+    ushort P;
+} Event_Pad_Vib;
+
+Event_Pad_Vib Event_Pad_Vib_[4]<optimize=false>;
+
+float Unk_91;
+float Unk_92;
+float Unk_93;
+float Unk_94;
+float Unk_95;
+float Unk_96;
+float Unk_97;
+float Unk_98;
+float Unk_99;
+float Unk_100;
+float Unk_101;
+float Unk_102;
+float Unk_103;
+float Unk_104;
+float Unk_105;
+float Unk_106;
+float Unk_107;
+float Unk_108;
+float Unk_109;
+float Unk_110;
+float Unk_111;
+float Dragonpiercer_X1;
+float Dragonpiercer_Y1;
+float Dragonpiercer_X2;
+float Dragonpiercer_Y2;
+
+typedef struct {
+    uint Unk_1;
+    uint Unk_2;
+    uint Unk_3;
+    uint Unk_4;
+} Unk_Arr_4;
+
+Unk_Arr_4 Unk_Arr_4_[3]<optimize=false>;
+
+typedef struct {
+    float Unk_1;
+    float Unk_2;
+    float Unk_3;
+    float Unk_4;
+    float Unk_5;
+    float Unk_6;
+    float Unk_7;
+    float Unk_8;
+    float Unk_9;
+    float Unk_10;
+    float Unk_11;
+    float Unk_12;
+    float Unk_13;
+    float Unk_14;
+} Unk_Arr_5;
+
+Unk_Arr_5 Unk_Arr_5_[12]<optimize=false>;
+
+typedef struct {
+    float Gravity;
+    float G_Rate;
+    float Momentum;
+    float V_Offset;
+    float H_Offset;
+} Action_Param_1;
+
+Action_Param_1 Action_Param_1_[2]<optimize=false>;
+
+ubyte Unk_112;
+ubyte Unk_113;
+ubyte Unk_114;
+ubyte Unk_115;
+ubyte Unk_116;
+ubyte Unk_117;
+ubyte Unk_118;
+float Unk_119;
+float Unk_120;
+float Unk_121;
+float Unk_122;
+float Unk_123;
+float Unk_124;
+float Unk_125;
+float Unk_126;
+short Unk_127;
+short Unk_128;
+short Unk_129;
+short Unk_130;
+short Unk_131;
+short Unk_132;
+short Unk_133;
+short Unk_134;
+float Unk_135;
+
+typedef struct {
+    float Gravity;
+    float G_Rate;
+    float Momentum;
+    float V_Offset;
+    float H_Offset;
+} Action_Param_2;
+
+Action_Param_2 Action_Param_2_;
+
+float Unk_136;
+float Unk_137;
+float Unk_138;
+uint Unk_139;
+uint Unk_140;
+uint Unk_141;
+uint Unk_142;
+float Unk_143;
+float Unk_144;
+float Unk_145;
+float Unk_146;
+float Unk_147;
+float Unk_148;
+float Unk_149;
+float Unk_150;
+float Unk_151;
+float Unk_152;
+float Unk_153;
+float Unk_154;
+float Unk_155;
+float Unk_156;
+float Unk_157;
+float Unk_158;
+float Unk_159;
+float Unk_160;
+float Unk_161;
+float Unk_162;
+float Unk_163;
+float Unk_164;
+float Unk_165;
+float Unk_166;
+float Unk_167;
+float Unk_168;
+float Unk_169;
+float Unk_170;
+float Unk_171;
+float Unk_172;
+float Unk_173;
+float Unk_174;
+float Unk_175;
+float Unk_176;
+float Unk_177;
+float Unk_178;
+float Unk_179;
+float Unk_180;
+float Unk_181;
+float Unk_182;
+float Unk_183;
+float Unk_184;
+float Unk_185;
+float Unk_186;
+float Unk_187;
+float Unk_188;
+float Unk_189;
+float Unk_190;
+float Unk_191;
+float Unk_192;
+float Unk_193;
+float Unk_194;
+float Unk_195;
+float Unk_196;
+float Unk_197;
+float Unk_198;
+
+typedef struct {
+    float Gravity;
+    float G_Rate;
+    float Momentum;
+    float V_Offset;
+    float H_Offset;
+} Action_Param_3;
+
+Action_Param_3 Action_Param_3_;
+
+float Unk_199;
+float Unk_200;
+ubyte Unk_201;
+float Unk_202;
+uint Unk_203;
+
+typedef struct {
+    ubyte Unk_1;
+    ubyte Unk_2;
+    ubyte Unk_3;
+    ubyte Unk_4;
+    uint Unk_5;
+    float Unk_6;
+    float Unk_7;
+} Unk_Arr_6;
+
+Unk_Arr_6 Unk_Arr_6_[7]<optimize=false>;
+
+float Thousand_Dragons_X1;
+float Thousand_Dragons_Y1;
+float Thousand_Dragons_X2;
+float Thousand_Dragons_Y2;
+float Unk_204;
+float Unk_205;
+float Unk_206;
+uint Unk_207;
+float Unk_208;
+float Unk_209;
+float Unk_210;
+uint Unk_211;
+float Unk_212;
+float Unk_213;
+uint Unk_214;
+float Unk_215;
+float Unk_216;
+float Unk_217;
+uint Unk_218;
+float Unk_219;
+float Unk_220;
+uint Unk_221;
+float Unk_222;
+float Unk_223;
+float Unk_224;
+float Unk_225;
+uint Unk_226;
+float Unk_227;
+uint Unk_228;
+float Unk_229;
+float Unk_230;
+float Unk_231;
+uint Unk_232;
+float Unk_233;
+float Unk_234;
+uint Unk_235;
+float Unk_236;
+float Unk_237;
+uint Unk_238;
+float Unk_239;
+float Unk_240;

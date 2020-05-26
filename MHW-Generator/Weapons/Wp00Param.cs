@@ -12,89 +12,59 @@ namespace MHW_Generator.Weapons {
             structs.AddRange(CreateBase(N));
 
             structs.AddRange(new List<MhwMultiStructData.StructData> {
+                new MhwMultiStructData.StructData($"Unk Arr {++arrayIndex}", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Unk 1", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk 2", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk 3", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk 4", typeof(float))
+                }, 5),
+
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),
+
+                new MhwMultiStructData.StructData("Event Pad Vib", eventPadVib, 4),
 
                 new MhwMultiStructData.StructData($"Unk Arr {++arrayIndex}", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Unk 1", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 2", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 3", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 4", typeof(float))
-                }, 3),
-
-                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
-                }, 1, showVertically: true),
-
-                new MhwMultiStructData.StructData($"Unk Arr {++arrayIndex}", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Unk 1", typeof(byte)),
-                    new MhwMultiStructData.Entry("Unk 2", typeof(ushort)),
-                    new MhwMultiStructData.Entry("Unk 3", typeof(ushort)),
-                    new MhwMultiStructData.Entry("Unk 4", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk 5", typeof(ushort))
-                }, 4),
-
-                new MhwMultiStructData.StructData($"Unk Arr {++arrayIndex}", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Unk 1", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk 2", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk 3", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk 4", typeof(float))
-                }, 13),
-
-                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
-                }, 1, showVertically: true),
-
-                new MhwMultiStructData.StructData($"Unk Arr {++arrayIndex}", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Unk 1", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk 2", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk 3", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk 4", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk 5", typeof(float))
                 }, 8),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                }, 1, showVertically: true),
+
+                new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 2),
+
+                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
@@ -102,11 +72,23 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                }, 1, showVertically: true),
+
+                new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 7),
+
+                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                }, 1, showVertically: true),
+
+                new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 2),
+
+                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),

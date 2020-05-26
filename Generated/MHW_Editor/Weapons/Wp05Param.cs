@@ -653,7 +653,7 @@ namespace MHW_Editor.Weapons {
 
         public partial class Guard_Angles_Shared_ : MhwStructItem {
             public const ulong FixedSizeCount = 2;
-            public const string GridName = "Guard Angles? (Shared)";
+            public const string GridName = "Guard Angles (Shared)";
 
             protected float Guard_Angle_Both_Sides__raw;
             public const string Guard_Angle_Both_Sides__displayName = "Guard Angle (Both Sides)";
@@ -1896,6 +1896,1067 @@ namespace MHW_Editor.Weapons {
             }
         }
 
+        public partial class W05p_Params_4_Shared_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "W05p Params (4, Shared)";
+
+            protected float Unk_79_raw;
+            public const string Unk_79_displayName = "Unk 79";
+            public const int Unk_79_sortIndex = 50;
+            [SortOrder(Unk_79_sortIndex)]
+            [DisplayName(Unk_79_displayName)]
+            public virtual float Unk_79 {
+                get => Unk_79_raw;
+                set {
+                    if (Unk_79_raw == value) return;
+                    Unk_79_raw = value;
+                    OnPropertyChanged(nameof(Unk_79));
+                }
+            }
+
+            protected float Unk_80_raw;
+            public const string Unk_80_displayName = "Unk 80";
+            public const int Unk_80_sortIndex = 100;
+            [SortOrder(Unk_80_sortIndex)]
+            [DisplayName(Unk_80_displayName)]
+            public virtual float Unk_80 {
+                get => Unk_80_raw;
+                set {
+                    if (Unk_80_raw == value) return;
+                    Unk_80_raw = value;
+                    OnPropertyChanged(nameof(Unk_80));
+                }
+            }
+
+            protected float Unk_81_raw;
+            public const string Unk_81_displayName = "Unk 81";
+            public const int Unk_81_sortIndex = 150;
+            [SortOrder(Unk_81_sortIndex)]
+            [DisplayName(Unk_81_displayName)]
+            public virtual float Unk_81 {
+                get => Unk_81_raw;
+                set {
+                    if (Unk_81_raw == value) return;
+                    Unk_81_raw = value;
+                    OnPropertyChanged(nameof(Unk_81));
+                }
+            }
+
+            protected float Unk_82_raw;
+            public const string Unk_82_displayName = "Unk 82";
+            public const int Unk_82_sortIndex = 200;
+            [SortOrder(Unk_82_sortIndex)]
+            [DisplayName(Unk_82_displayName)]
+            public virtual float Unk_82 {
+                get => Unk_82_raw;
+                set {
+                    if (Unk_82_raw == value) return;
+                    Unk_82_raw = value;
+                    OnPropertyChanged(nameof(Unk_82));
+                }
+            }
+
+            protected float Unk_83_raw;
+            public const string Unk_83_displayName = "Unk 83";
+            public const int Unk_83_sortIndex = 250;
+            [SortOrder(Unk_83_sortIndex)]
+            [DisplayName(Unk_83_displayName)]
+            public virtual float Unk_83 {
+                get => Unk_83_raw;
+                set {
+                    if (Unk_83_raw == value) return;
+                    Unk_83_raw = value;
+                    OnPropertyChanged(nameof(Unk_83));
+                }
+            }
+
+            protected float Unk_84_raw;
+            public const string Unk_84_displayName = "Unk 84";
+            public const int Unk_84_sortIndex = 300;
+            [SortOrder(Unk_84_sortIndex)]
+            [DisplayName(Unk_84_displayName)]
+            public virtual float Unk_84 {
+                get => Unk_84_raw;
+                set {
+                    if (Unk_84_raw == value) return;
+                    Unk_84_raw = value;
+                    OnPropertyChanged(nameof(Unk_84));
+                }
+            }
+
+            protected float Unk_85_raw;
+            public const string Unk_85_displayName = "Unk 85";
+            public const int Unk_85_sortIndex = 350;
+            [SortOrder(Unk_85_sortIndex)]
+            [DisplayName(Unk_85_displayName)]
+            public virtual float Unk_85 {
+                get => Unk_85_raw;
+                set {
+                    if (Unk_85_raw == value) return;
+                    Unk_85_raw = value;
+                    OnPropertyChanged(nameof(Unk_85));
+                }
+            }
+
+            protected float Unk_86_raw;
+            public const string Unk_86_displayName = "Unk 86";
+            public const int Unk_86_sortIndex = 400;
+            [SortOrder(Unk_86_sortIndex)]
+            [DisplayName(Unk_86_displayName)]
+            public virtual float Unk_86 {
+                get => Unk_86_raw;
+                set {
+                    if (Unk_86_raw == value) return;
+                    Unk_86_raw = value;
+                    OnPropertyChanged(nameof(Unk_86));
+                }
+            }
+
+            protected float Unk_87_raw;
+            public const string Unk_87_displayName = "Unk 87";
+            public const int Unk_87_sortIndex = 450;
+            [SortOrder(Unk_87_sortIndex)]
+            [DisplayName(Unk_87_displayName)]
+            public virtual float Unk_87 {
+                get => Unk_87_raw;
+                set {
+                    if (Unk_87_raw == value) return;
+                    Unk_87_raw = value;
+                    OnPropertyChanged(nameof(Unk_87));
+                }
+            }
+
+            protected float Unk_88_raw;
+            public const string Unk_88_displayName = "Unk 88";
+            public const int Unk_88_sortIndex = 500;
+            [SortOrder(Unk_88_sortIndex)]
+            [DisplayName(Unk_88_displayName)]
+            public virtual float Unk_88 {
+                get => Unk_88_raw;
+                set {
+                    if (Unk_88_raw == value) return;
+                    Unk_88_raw = value;
+                    OnPropertyChanged(nameof(Unk_88));
+                }
+            }
+
+            protected float Unk_89_raw;
+            public const string Unk_89_displayName = "Unk 89";
+            public const int Unk_89_sortIndex = 550;
+            [SortOrder(Unk_89_sortIndex)]
+            [DisplayName(Unk_89_displayName)]
+            public virtual float Unk_89 {
+                get => Unk_89_raw;
+                set {
+                    if (Unk_89_raw == value) return;
+                    Unk_89_raw = value;
+                    OnPropertyChanged(nameof(Unk_89));
+                }
+            }
+
+            protected float Unk_90_raw;
+            public const string Unk_90_displayName = "Unk 90";
+            public const int Unk_90_sortIndex = 600;
+            [SortOrder(Unk_90_sortIndex)]
+            [DisplayName(Unk_90_displayName)]
+            public virtual float Unk_90 {
+                get => Unk_90_raw;
+                set {
+                    if (Unk_90_raw == value) return;
+                    Unk_90_raw = value;
+                    OnPropertyChanged(nameof(Unk_90));
+                }
+            }
+
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static W05p_Params_4_Shared_ LoadData(BinaryReader reader, ulong i) {
+                var data = new W05p_Params_4_Shared_();
+                data.Index = i;
+                data.Unk_79_raw = reader.ReadSingle();
+                data.Unk_80_raw = reader.ReadSingle();
+                data.Unk_81_raw = reader.ReadSingle();
+                data.Unk_82_raw = reader.ReadSingle();
+                data.Unk_83_raw = reader.ReadSingle();
+                data.Unk_84_raw = reader.ReadSingle();
+                data.Unk_85_raw = reader.ReadSingle();
+                data.Unk_86_raw = reader.ReadSingle();
+                data.Unk_87_raw = reader.ReadSingle();
+                data.Unk_88_raw = reader.ReadSingle();
+                data.Unk_89_raw = reader.ReadSingle();
+                data.Unk_90_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Unk_79_raw);
+                writer.Write(Unk_80_raw);
+                writer.Write(Unk_81_raw);
+                writer.Write(Unk_82_raw);
+                writer.Write(Unk_83_raw);
+                writer.Write(Unk_84_raw);
+                writer.Write(Unk_85_raw);
+                writer.Write(Unk_86_raw);
+                writer.Write(Unk_87_raw);
+                writer.Write(Unk_88_raw);
+                writer.Write(Unk_89_raw);
+                writer.Write(Unk_90_raw);
+            }
+
+            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
+                return new ObservableCollection<MultiStructItemCustomView> {
+                    new MultiStructItemCustomView(this, "Unk 79", "Unk_79"),
+                    new MultiStructItemCustomView(this, "Unk 80", "Unk_80"),
+                    new MultiStructItemCustomView(this, "Unk 81", "Unk_81"),
+                    new MultiStructItemCustomView(this, "Unk 82", "Unk_82"),
+                    new MultiStructItemCustomView(this, "Unk 83", "Unk_83"),
+                    new MultiStructItemCustomView(this, "Unk 84", "Unk_84"),
+                    new MultiStructItemCustomView(this, "Unk 85", "Unk_85"),
+                    new MultiStructItemCustomView(this, "Unk 86", "Unk_86"),
+                    new MultiStructItemCustomView(this, "Unk 87", "Unk_87"),
+                    new MultiStructItemCustomView(this, "Unk 88", "Unk_88"),
+                    new MultiStructItemCustomView(this, "Unk 89", "Unk_89"),
+                    new MultiStructItemCustomView(this, "Unk 90", "Unk_90"),
+                };
+            }
+        }
+
+        public partial class W05p_Params_5_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "W05p Params (5)";
+
+            protected float Unk_91_raw;
+            public const string Unk_91_displayName = "Unk 91";
+            public const int Unk_91_sortIndex = 50;
+            [SortOrder(Unk_91_sortIndex)]
+            [DisplayName(Unk_91_displayName)]
+            public virtual float Unk_91 {
+                get => Unk_91_raw;
+                set {
+                    if (Unk_91_raw == value) return;
+                    Unk_91_raw = value;
+                    OnPropertyChanged(nameof(Unk_91));
+                }
+            }
+
+            protected float Unk_92_raw;
+            public const string Unk_92_displayName = "Unk 92";
+            public const int Unk_92_sortIndex = 100;
+            [SortOrder(Unk_92_sortIndex)]
+            [DisplayName(Unk_92_displayName)]
+            public virtual float Unk_92 {
+                get => Unk_92_raw;
+                set {
+                    if (Unk_92_raw == value) return;
+                    Unk_92_raw = value;
+                    OnPropertyChanged(nameof(Unk_92));
+                }
+            }
+
+            protected float Unk_93_raw;
+            public const string Unk_93_displayName = "Unk 93";
+            public const int Unk_93_sortIndex = 150;
+            [SortOrder(Unk_93_sortIndex)]
+            [DisplayName(Unk_93_displayName)]
+            public virtual float Unk_93 {
+                get => Unk_93_raw;
+                set {
+                    if (Unk_93_raw == value) return;
+                    Unk_93_raw = value;
+                    OnPropertyChanged(nameof(Unk_93));
+                }
+            }
+
+            protected float Unk_94_raw;
+            public const string Unk_94_displayName = "Unk 94";
+            public const int Unk_94_sortIndex = 200;
+            [SortOrder(Unk_94_sortIndex)]
+            [DisplayName(Unk_94_displayName)]
+            public virtual float Unk_94 {
+                get => Unk_94_raw;
+                set {
+                    if (Unk_94_raw == value) return;
+                    Unk_94_raw = value;
+                    OnPropertyChanged(nameof(Unk_94));
+                }
+            }
+
+            protected float Unk_95_raw;
+            public const string Unk_95_displayName = "Unk 95";
+            public const int Unk_95_sortIndex = 250;
+            [SortOrder(Unk_95_sortIndex)]
+            [DisplayName(Unk_95_displayName)]
+            public virtual float Unk_95 {
+                get => Unk_95_raw;
+                set {
+                    if (Unk_95_raw == value) return;
+                    Unk_95_raw = value;
+                    OnPropertyChanged(nameof(Unk_95));
+                }
+            }
+
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static W05p_Params_5_ LoadData(BinaryReader reader, ulong i) {
+                var data = new W05p_Params_5_();
+                data.Index = i;
+                data.Unk_91_raw = reader.ReadSingle();
+                data.Unk_92_raw = reader.ReadSingle();
+                data.Unk_93_raw = reader.ReadSingle();
+                data.Unk_94_raw = reader.ReadSingle();
+                data.Unk_95_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Unk_91_raw);
+                writer.Write(Unk_92_raw);
+                writer.Write(Unk_93_raw);
+                writer.Write(Unk_94_raw);
+                writer.Write(Unk_95_raw);
+            }
+
+            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
+                return new ObservableCollection<MultiStructItemCustomView> {
+                    new MultiStructItemCustomView(this, "Unk 91", "Unk_91"),
+                    new MultiStructItemCustomView(this, "Unk 92", "Unk_92"),
+                    new MultiStructItemCustomView(this, "Unk 93", "Unk_93"),
+                    new MultiStructItemCustomView(this, "Unk 94", "Unk_94"),
+                    new MultiStructItemCustomView(this, "Unk 95", "Unk_95"),
+                };
+            }
+        }
+
+        public partial class Action_Param_1 : MhwStructItem {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "Action Param 1";
+
+            protected float Gravity_raw;
+            public const string Gravity_displayName = "Gravity";
+            public const int Gravity_sortIndex = 50;
+            [SortOrder(Gravity_sortIndex)]
+            [DisplayName(Gravity_displayName)]
+            public virtual float Gravity {
+                get => Gravity_raw;
+                set {
+                    if (Gravity_raw == value) return;
+                    Gravity_raw = value;
+                    OnPropertyChanged(nameof(Gravity));
+                }
+            }
+
+            protected float G_Rate_raw;
+            public const string G_Rate_displayName = "G Rate";
+            public const int G_Rate_sortIndex = 100;
+            [SortOrder(G_Rate_sortIndex)]
+            [DisplayName(G_Rate_displayName)]
+            public virtual float G_Rate {
+                get => G_Rate_raw;
+                set {
+                    if (G_Rate_raw == value) return;
+                    G_Rate_raw = value;
+                    OnPropertyChanged(nameof(G_Rate));
+                }
+            }
+
+            protected float Momentum_raw;
+            public const string Momentum_displayName = "Momentum";
+            public const int Momentum_sortIndex = 150;
+            [SortOrder(Momentum_sortIndex)]
+            [DisplayName(Momentum_displayName)]
+            public virtual float Momentum {
+                get => Momentum_raw;
+                set {
+                    if (Momentum_raw == value) return;
+                    Momentum_raw = value;
+                    OnPropertyChanged(nameof(Momentum));
+                }
+            }
+
+            protected float V_Offset_raw;
+            public const string V_Offset_displayName = "V Offset";
+            public const int V_Offset_sortIndex = 200;
+            [SortOrder(V_Offset_sortIndex)]
+            [DisplayName(V_Offset_displayName)]
+            public virtual float V_Offset {
+                get => V_Offset_raw;
+                set {
+                    if (V_Offset_raw == value) return;
+                    V_Offset_raw = value;
+                    OnPropertyChanged(nameof(V_Offset));
+                }
+            }
+
+            protected float H_Offset_raw;
+            public const string H_Offset_displayName = "H Offset";
+            public const int H_Offset_sortIndex = 250;
+            [SortOrder(H_Offset_sortIndex)]
+            [DisplayName(H_Offset_displayName)]
+            public virtual float H_Offset {
+                get => H_Offset_raw;
+                set {
+                    if (H_Offset_raw == value) return;
+                    H_Offset_raw = value;
+                    OnPropertyChanged(nameof(H_Offset));
+                }
+            }
+
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static Action_Param_1 LoadData(BinaryReader reader, ulong i) {
+                var data = new Action_Param_1();
+                data.Index = i;
+                data.Gravity_raw = reader.ReadSingle();
+                data.G_Rate_raw = reader.ReadSingle();
+                data.Momentum_raw = reader.ReadSingle();
+                data.V_Offset_raw = reader.ReadSingle();
+                data.H_Offset_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Gravity_raw);
+                writer.Write(G_Rate_raw);
+                writer.Write(Momentum_raw);
+                writer.Write(V_Offset_raw);
+                writer.Write(H_Offset_raw);
+            }
+        }
+
+        public partial class W05p_Params_6_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "W05p Params (6)";
+
+            protected float Unk_96_raw;
+            public const string Unk_96_displayName = "Unk 96";
+            public const int Unk_96_sortIndex = 50;
+            [SortOrder(Unk_96_sortIndex)]
+            [DisplayName(Unk_96_displayName)]
+            public virtual float Unk_96 {
+                get => Unk_96_raw;
+                set {
+                    if (Unk_96_raw == value) return;
+                    Unk_96_raw = value;
+                    OnPropertyChanged(nameof(Unk_96));
+                }
+            }
+
+            protected float Unk_97_raw;
+            public const string Unk_97_displayName = "Unk 97";
+            public const int Unk_97_sortIndex = 100;
+            [SortOrder(Unk_97_sortIndex)]
+            [DisplayName(Unk_97_displayName)]
+            public virtual float Unk_97 {
+                get => Unk_97_raw;
+                set {
+                    if (Unk_97_raw == value) return;
+                    Unk_97_raw = value;
+                    OnPropertyChanged(nameof(Unk_97));
+                }
+            }
+
+            protected float Unk_98_raw;
+            public const string Unk_98_displayName = "Unk 98";
+            public const int Unk_98_sortIndex = 150;
+            [SortOrder(Unk_98_sortIndex)]
+            [DisplayName(Unk_98_displayName)]
+            public virtual float Unk_98 {
+                get => Unk_98_raw;
+                set {
+                    if (Unk_98_raw == value) return;
+                    Unk_98_raw = value;
+                    OnPropertyChanged(nameof(Unk_98));
+                }
+            }
+
+            protected uint Unk_99_raw;
+            public const string Unk_99_displayName = "Unk 99";
+            public const int Unk_99_sortIndex = 200;
+            [SortOrder(Unk_99_sortIndex)]
+            [DisplayName(Unk_99_displayName)]
+            public virtual uint Unk_99 {
+                get => Unk_99_raw;
+                set {
+                    if (Unk_99_raw == value) return;
+                    Unk_99_raw = value;
+                    OnPropertyChanged(nameof(Unk_99));
+                }
+            }
+
+            protected float Unk_100_raw;
+            public const string Unk_100_displayName = "Unk 100";
+            public const int Unk_100_sortIndex = 250;
+            [SortOrder(Unk_100_sortIndex)]
+            [DisplayName(Unk_100_displayName)]
+            public virtual float Unk_100 {
+                get => Unk_100_raw;
+                set {
+                    if (Unk_100_raw == value) return;
+                    Unk_100_raw = value;
+                    OnPropertyChanged(nameof(Unk_100));
+                }
+            }
+
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static W05p_Params_6_ LoadData(BinaryReader reader, ulong i) {
+                var data = new W05p_Params_6_();
+                data.Index = i;
+                data.Unk_96_raw = reader.ReadSingle();
+                data.Unk_97_raw = reader.ReadSingle();
+                data.Unk_98_raw = reader.ReadSingle();
+                data.Unk_99_raw = reader.ReadUInt32();
+                data.Unk_100_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Unk_96_raw);
+                writer.Write(Unk_97_raw);
+                writer.Write(Unk_98_raw);
+                writer.Write(Unk_99_raw);
+                writer.Write(Unk_100_raw);
+            }
+
+            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
+                return new ObservableCollection<MultiStructItemCustomView> {
+                    new MultiStructItemCustomView(this, "Unk 96", "Unk_96"),
+                    new MultiStructItemCustomView(this, "Unk 97", "Unk_97"),
+                    new MultiStructItemCustomView(this, "Unk 98", "Unk_98"),
+                    new MultiStructItemCustomView(this, "Unk 99", "Unk_99"),
+                    new MultiStructItemCustomView(this, "Unk 100", "Unk_100"),
+                };
+            }
+        }
+
+        public partial class Action_Param_2 : MhwStructItem {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "Action Param 2";
+
+            protected float Gravity_raw;
+            public const string Gravity_displayName = "Gravity";
+            public const int Gravity_sortIndex = 50;
+            [SortOrder(Gravity_sortIndex)]
+            [DisplayName(Gravity_displayName)]
+            public virtual float Gravity {
+                get => Gravity_raw;
+                set {
+                    if (Gravity_raw == value) return;
+                    Gravity_raw = value;
+                    OnPropertyChanged(nameof(Gravity));
+                }
+            }
+
+            protected float G_Rate_raw;
+            public const string G_Rate_displayName = "G Rate";
+            public const int G_Rate_sortIndex = 100;
+            [SortOrder(G_Rate_sortIndex)]
+            [DisplayName(G_Rate_displayName)]
+            public virtual float G_Rate {
+                get => G_Rate_raw;
+                set {
+                    if (G_Rate_raw == value) return;
+                    G_Rate_raw = value;
+                    OnPropertyChanged(nameof(G_Rate));
+                }
+            }
+
+            protected float Momentum_raw;
+            public const string Momentum_displayName = "Momentum";
+            public const int Momentum_sortIndex = 150;
+            [SortOrder(Momentum_sortIndex)]
+            [DisplayName(Momentum_displayName)]
+            public virtual float Momentum {
+                get => Momentum_raw;
+                set {
+                    if (Momentum_raw == value) return;
+                    Momentum_raw = value;
+                    OnPropertyChanged(nameof(Momentum));
+                }
+            }
+
+            protected float V_Offset_raw;
+            public const string V_Offset_displayName = "V Offset";
+            public const int V_Offset_sortIndex = 200;
+            [SortOrder(V_Offset_sortIndex)]
+            [DisplayName(V_Offset_displayName)]
+            public virtual float V_Offset {
+                get => V_Offset_raw;
+                set {
+                    if (V_Offset_raw == value) return;
+                    V_Offset_raw = value;
+                    OnPropertyChanged(nameof(V_Offset));
+                }
+            }
+
+            protected float H_Offset_raw;
+            public const string H_Offset_displayName = "H Offset";
+            public const int H_Offset_sortIndex = 250;
+            [SortOrder(H_Offset_sortIndex)]
+            [DisplayName(H_Offset_displayName)]
+            public virtual float H_Offset {
+                get => H_Offset_raw;
+                set {
+                    if (H_Offset_raw == value) return;
+                    H_Offset_raw = value;
+                    OnPropertyChanged(nameof(H_Offset));
+                }
+            }
+
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static Action_Param_2 LoadData(BinaryReader reader, ulong i) {
+                var data = new Action_Param_2();
+                data.Index = i;
+                data.Gravity_raw = reader.ReadSingle();
+                data.G_Rate_raw = reader.ReadSingle();
+                data.Momentum_raw = reader.ReadSingle();
+                data.V_Offset_raw = reader.ReadSingle();
+                data.H_Offset_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Gravity_raw);
+                writer.Write(G_Rate_raw);
+                writer.Write(Momentum_raw);
+                writer.Write(V_Offset_raw);
+                writer.Write(H_Offset_raw);
+            }
+        }
+
+        public partial class W05p_Params_7_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "W05p Params (7)";
+
+            protected float Unk_101_raw;
+            public const string Unk_101_displayName = "Unk 101";
+            public const int Unk_101_sortIndex = 50;
+            [SortOrder(Unk_101_sortIndex)]
+            [DisplayName(Unk_101_displayName)]
+            public virtual float Unk_101 {
+                get => Unk_101_raw;
+                set {
+                    if (Unk_101_raw == value) return;
+                    Unk_101_raw = value;
+                    OnPropertyChanged(nameof(Unk_101));
+                }
+            }
+
+            protected float Unk_102_raw;
+            public const string Unk_102_displayName = "Unk 102";
+            public const int Unk_102_sortIndex = 100;
+            [SortOrder(Unk_102_sortIndex)]
+            [DisplayName(Unk_102_displayName)]
+            public virtual float Unk_102 {
+                get => Unk_102_raw;
+                set {
+                    if (Unk_102_raw == value) return;
+                    Unk_102_raw = value;
+                    OnPropertyChanged(nameof(Unk_102));
+                }
+            }
+
+            protected float Unk_103_raw;
+            public const string Unk_103_displayName = "Unk 103";
+            public const int Unk_103_sortIndex = 150;
+            [SortOrder(Unk_103_sortIndex)]
+            [DisplayName(Unk_103_displayName)]
+            public virtual float Unk_103 {
+                get => Unk_103_raw;
+                set {
+                    if (Unk_103_raw == value) return;
+                    Unk_103_raw = value;
+                    OnPropertyChanged(nameof(Unk_103));
+                }
+            }
+
+            protected float Unk_104_raw;
+            public const string Unk_104_displayName = "Unk 104";
+            public const int Unk_104_sortIndex = 200;
+            [SortOrder(Unk_104_sortIndex)]
+            [DisplayName(Unk_104_displayName)]
+            public virtual float Unk_104 {
+                get => Unk_104_raw;
+                set {
+                    if (Unk_104_raw == value) return;
+                    Unk_104_raw = value;
+                    OnPropertyChanged(nameof(Unk_104));
+                }
+            }
+
+            protected float Unk_105_raw;
+            public const string Unk_105_displayName = "Unk 105";
+            public const int Unk_105_sortIndex = 250;
+            [SortOrder(Unk_105_sortIndex)]
+            [DisplayName(Unk_105_displayName)]
+            public virtual float Unk_105 {
+                get => Unk_105_raw;
+                set {
+                    if (Unk_105_raw == value) return;
+                    Unk_105_raw = value;
+                    OnPropertyChanged(nameof(Unk_105));
+                }
+            }
+
+            protected float Unk_106_raw;
+            public const string Unk_106_displayName = "Unk 106";
+            public const int Unk_106_sortIndex = 300;
+            [SortOrder(Unk_106_sortIndex)]
+            [DisplayName(Unk_106_displayName)]
+            public virtual float Unk_106 {
+                get => Unk_106_raw;
+                set {
+                    if (Unk_106_raw == value) return;
+                    Unk_106_raw = value;
+                    OnPropertyChanged(nameof(Unk_106));
+                }
+            }
+
+            protected float Unk_107_raw;
+            public const string Unk_107_displayName = "Unk 107";
+            public const int Unk_107_sortIndex = 350;
+            [SortOrder(Unk_107_sortIndex)]
+            [DisplayName(Unk_107_displayName)]
+            public virtual float Unk_107 {
+                get => Unk_107_raw;
+                set {
+                    if (Unk_107_raw == value) return;
+                    Unk_107_raw = value;
+                    OnPropertyChanged(nameof(Unk_107));
+                }
+            }
+
+            protected float Unk_108_raw;
+            public const string Unk_108_displayName = "Unk 108";
+            public const int Unk_108_sortIndex = 400;
+            [SortOrder(Unk_108_sortIndex)]
+            [DisplayName(Unk_108_displayName)]
+            public virtual float Unk_108 {
+                get => Unk_108_raw;
+                set {
+                    if (Unk_108_raw == value) return;
+                    Unk_108_raw = value;
+                    OnPropertyChanged(nameof(Unk_108));
+                }
+            }
+
+            protected float Unk_109_raw;
+            public const string Unk_109_displayName = "Unk 109";
+            public const int Unk_109_sortIndex = 450;
+            [SortOrder(Unk_109_sortIndex)]
+            [DisplayName(Unk_109_displayName)]
+            public virtual float Unk_109 {
+                get => Unk_109_raw;
+                set {
+                    if (Unk_109_raw == value) return;
+                    Unk_109_raw = value;
+                    OnPropertyChanged(nameof(Unk_109));
+                }
+            }
+
+            protected float Unk_110_raw;
+            public const string Unk_110_displayName = "Unk 110";
+            public const int Unk_110_sortIndex = 500;
+            [SortOrder(Unk_110_sortIndex)]
+            [DisplayName(Unk_110_displayName)]
+            public virtual float Unk_110 {
+                get => Unk_110_raw;
+                set {
+                    if (Unk_110_raw == value) return;
+                    Unk_110_raw = value;
+                    OnPropertyChanged(nameof(Unk_110));
+                }
+            }
+
+            protected float Unk_111_raw;
+            public const string Unk_111_displayName = "Unk 111";
+            public const int Unk_111_sortIndex = 550;
+            [SortOrder(Unk_111_sortIndex)]
+            [DisplayName(Unk_111_displayName)]
+            public virtual float Unk_111 {
+                get => Unk_111_raw;
+                set {
+                    if (Unk_111_raw == value) return;
+                    Unk_111_raw = value;
+                    OnPropertyChanged(nameof(Unk_111));
+                }
+            }
+
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static W05p_Params_7_ LoadData(BinaryReader reader, ulong i) {
+                var data = new W05p_Params_7_();
+                data.Index = i;
+                data.Unk_101_raw = reader.ReadSingle();
+                data.Unk_102_raw = reader.ReadSingle();
+                data.Unk_103_raw = reader.ReadSingle();
+                data.Unk_104_raw = reader.ReadSingle();
+                data.Unk_105_raw = reader.ReadSingle();
+                data.Unk_106_raw = reader.ReadSingle();
+                data.Unk_107_raw = reader.ReadSingle();
+                data.Unk_108_raw = reader.ReadSingle();
+                data.Unk_109_raw = reader.ReadSingle();
+                data.Unk_110_raw = reader.ReadSingle();
+                data.Unk_111_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Unk_101_raw);
+                writer.Write(Unk_102_raw);
+                writer.Write(Unk_103_raw);
+                writer.Write(Unk_104_raw);
+                writer.Write(Unk_105_raw);
+                writer.Write(Unk_106_raw);
+                writer.Write(Unk_107_raw);
+                writer.Write(Unk_108_raw);
+                writer.Write(Unk_109_raw);
+                writer.Write(Unk_110_raw);
+                writer.Write(Unk_111_raw);
+            }
+
+            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
+                return new ObservableCollection<MultiStructItemCustomView> {
+                    new MultiStructItemCustomView(this, "Unk 101", "Unk_101"),
+                    new MultiStructItemCustomView(this, "Unk 102", "Unk_102"),
+                    new MultiStructItemCustomView(this, "Unk 103", "Unk_103"),
+                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104"),
+                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105"),
+                    new MultiStructItemCustomView(this, "Unk 106", "Unk_106"),
+                    new MultiStructItemCustomView(this, "Unk 107", "Unk_107"),
+                    new MultiStructItemCustomView(this, "Unk 108", "Unk_108"),
+                    new MultiStructItemCustomView(this, "Unk 109", "Unk_109"),
+                    new MultiStructItemCustomView(this, "Unk 110", "Unk_110"),
+                    new MultiStructItemCustomView(this, "Unk 111", "Unk_111"),
+                };
+            }
+        }
+
+        public partial class Action_Param_3 : MhwStructItem {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "Action Param 3";
+
+            protected float Gravity_raw;
+            public const string Gravity_displayName = "Gravity";
+            public const int Gravity_sortIndex = 50;
+            [SortOrder(Gravity_sortIndex)]
+            [DisplayName(Gravity_displayName)]
+            public virtual float Gravity {
+                get => Gravity_raw;
+                set {
+                    if (Gravity_raw == value) return;
+                    Gravity_raw = value;
+                    OnPropertyChanged(nameof(Gravity));
+                }
+            }
+
+            protected float G_Rate_raw;
+            public const string G_Rate_displayName = "G Rate";
+            public const int G_Rate_sortIndex = 100;
+            [SortOrder(G_Rate_sortIndex)]
+            [DisplayName(G_Rate_displayName)]
+            public virtual float G_Rate {
+                get => G_Rate_raw;
+                set {
+                    if (G_Rate_raw == value) return;
+                    G_Rate_raw = value;
+                    OnPropertyChanged(nameof(G_Rate));
+                }
+            }
+
+            protected float Momentum_raw;
+            public const string Momentum_displayName = "Momentum";
+            public const int Momentum_sortIndex = 150;
+            [SortOrder(Momentum_sortIndex)]
+            [DisplayName(Momentum_displayName)]
+            public virtual float Momentum {
+                get => Momentum_raw;
+                set {
+                    if (Momentum_raw == value) return;
+                    Momentum_raw = value;
+                    OnPropertyChanged(nameof(Momentum));
+                }
+            }
+
+            protected float V_Offset_raw;
+            public const string V_Offset_displayName = "V Offset";
+            public const int V_Offset_sortIndex = 200;
+            [SortOrder(V_Offset_sortIndex)]
+            [DisplayName(V_Offset_displayName)]
+            public virtual float V_Offset {
+                get => V_Offset_raw;
+                set {
+                    if (V_Offset_raw == value) return;
+                    V_Offset_raw = value;
+                    OnPropertyChanged(nameof(V_Offset));
+                }
+            }
+
+            protected float H_Offset_raw;
+            public const string H_Offset_displayName = "H Offset";
+            public const int H_Offset_sortIndex = 250;
+            [SortOrder(H_Offset_sortIndex)]
+            [DisplayName(H_Offset_displayName)]
+            public virtual float H_Offset {
+                get => H_Offset_raw;
+                set {
+                    if (H_Offset_raw == value) return;
+                    H_Offset_raw = value;
+                    OnPropertyChanged(nameof(H_Offset));
+                }
+            }
+
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static Action_Param_3 LoadData(BinaryReader reader, ulong i) {
+                var data = new Action_Param_3();
+                data.Index = i;
+                data.Gravity_raw = reader.ReadSingle();
+                data.G_Rate_raw = reader.ReadSingle();
+                data.Momentum_raw = reader.ReadSingle();
+                data.V_Offset_raw = reader.ReadSingle();
+                data.H_Offset_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Gravity_raw);
+                writer.Write(G_Rate_raw);
+                writer.Write(Momentum_raw);
+                writer.Write(V_Offset_raw);
+                writer.Write(H_Offset_raw);
+            }
+        }
+
+        public partial class W05p_Params_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "W05p Params (8)";
+
+            protected float Unk_112_raw;
+            public const string Unk_112_displayName = "Unk 112";
+            public const int Unk_112_sortIndex = 50;
+            [SortOrder(Unk_112_sortIndex)]
+            [DisplayName(Unk_112_displayName)]
+            public virtual float Unk_112 {
+                get => Unk_112_raw;
+                set {
+                    if (Unk_112_raw == value) return;
+                    Unk_112_raw = value;
+                    OnPropertyChanged(nameof(Unk_112));
+                }
+            }
+
+            protected float Unk_113_raw;
+            public const string Unk_113_displayName = "Unk 113";
+            public const int Unk_113_sortIndex = 100;
+            [SortOrder(Unk_113_sortIndex)]
+            [DisplayName(Unk_113_displayName)]
+            public virtual float Unk_113 {
+                get => Unk_113_raw;
+                set {
+                    if (Unk_113_raw == value) return;
+                    Unk_113_raw = value;
+                    OnPropertyChanged(nameof(Unk_113));
+                }
+            }
+
+            protected float Unk_114_raw;
+            public const string Unk_114_displayName = "Unk 114";
+            public const int Unk_114_sortIndex = 150;
+            [SortOrder(Unk_114_sortIndex)]
+            [DisplayName(Unk_114_displayName)]
+            public virtual float Unk_114 {
+                get => Unk_114_raw;
+                set {
+                    if (Unk_114_raw == value) return;
+                    Unk_114_raw = value;
+                    OnPropertyChanged(nameof(Unk_114));
+                }
+            }
+
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static W05p_Params_8_ LoadData(BinaryReader reader, ulong i) {
+                var data = new W05p_Params_8_();
+                data.Index = i;
+                data.Unk_112_raw = reader.ReadSingle();
+                data.Unk_113_raw = reader.ReadSingle();
+                data.Unk_114_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Unk_112_raw);
+                writer.Write(Unk_113_raw);
+                writer.Write(Unk_114_raw);
+            }
+
+            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
+                return new ObservableCollection<MultiStructItemCustomView> {
+                    new MultiStructItemCustomView(this, "Unk 112", "Unk_112"),
+                    new MultiStructItemCustomView(this, "Unk 113", "Unk_113"),
+                    new MultiStructItemCustomView(this, "Unk 114", "Unk_114"),
+                };
+            }
+        }
+
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
@@ -1911,6 +2972,22 @@ namespace MHW_Editor.Weapons {
             data.AddLast(W05p_Params_3_Shared__);
             var Unk_Arr_2_Shared__ = new MhwStructDataContainer(Unk_Arr_2_Shared_.LoadData(reader, null), typeof(Unk_Arr_2_Shared_));
             data.AddLast(Unk_Arr_2_Shared__);
+            var W05p_Params_4_Shared__ = new MhwStructDataContainer(W05p_Params_4_Shared_.LoadData(reader, null), typeof(W05p_Params_4_Shared_));
+            data.AddLast(W05p_Params_4_Shared__);
+            var W05p_Params_5__ = new MhwStructDataContainer(W05p_Params_5_.LoadData(reader, null), typeof(W05p_Params_5_));
+            data.AddLast(W05p_Params_5__);
+            var Action_Param_1_ = new MhwStructDataContainer(Action_Param_1.LoadData(reader, null), typeof(Action_Param_1));
+            data.AddLast(Action_Param_1_);
+            var W05p_Params_6__ = new MhwStructDataContainer(W05p_Params_6_.LoadData(reader, null), typeof(W05p_Params_6_));
+            data.AddLast(W05p_Params_6__);
+            var Action_Param_2_ = new MhwStructDataContainer(Action_Param_2.LoadData(reader, null), typeof(Action_Param_2));
+            data.AddLast(Action_Param_2_);
+            var W05p_Params_7__ = new MhwStructDataContainer(W05p_Params_7_.LoadData(reader, null), typeof(W05p_Params_7_));
+            data.AddLast(W05p_Params_7__);
+            var Action_Param_3_ = new MhwStructDataContainer(Action_Param_3.LoadData(reader, null), typeof(Action_Param_3));
+            data.AddLast(Action_Param_3_);
+            var W05p_Params_8__ = new MhwStructDataContainer(W05p_Params_8_.LoadData(reader, null), typeof(W05p_Params_8_));
+            data.AddLast(W05p_Params_8__);
         }
     }
 }

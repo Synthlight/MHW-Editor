@@ -6,6 +6,30 @@ namespace MHW_Generator.Weapons {
         protected uint paramIndex;
         protected uint unkIndex;
         protected uint arrayIndex;
+        protected uint actionParamIndex;
+
+        protected readonly List<MhwMultiStructData.Entry> guardAngles = new List<MhwMultiStructData.Entry> {
+            new MhwMultiStructData.Entry("Guard Angle (Both Sides)", typeof(float)),
+            new MhwMultiStructData.Entry("Knockback Threshold Small", typeof(byte)),
+            new MhwMultiStructData.Entry("Knockback Threshold Medium", typeof(byte)),
+            new MhwMultiStructData.Entry("Knockback Threshold Large", typeof(byte))
+        };
+
+        protected readonly List<MhwMultiStructData.Entry> actionParam = new List<MhwMultiStructData.Entry> {
+            new MhwMultiStructData.Entry("Gravity", typeof(float)),
+            new MhwMultiStructData.Entry("G Rate", typeof(float)),
+            new MhwMultiStructData.Entry("Momentum", typeof(float)),
+            new MhwMultiStructData.Entry("V Offset", typeof(float)),
+            new MhwMultiStructData.Entry("H Offset", typeof(float))
+        };
+
+        protected readonly List<MhwMultiStructData.Entry> eventPadVib = new List<MhwMultiStructData.Entry> {
+            new MhwMultiStructData.Entry("B", typeof(byte)),
+            new MhwMultiStructData.Entry("X", typeof(ushort)),
+            new MhwMultiStructData.Entry("Y", typeof(ushort)),
+            new MhwMultiStructData.Entry("Time", typeof(float)),
+            new MhwMultiStructData.Entry("P", typeof(ushort))
+        };
 
         protected virtual List<MhwMultiStructData.StructData> CreateBase(string wpNum) {
             var structs = new List<MhwMultiStructData.StructData> {
@@ -51,12 +75,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),
 
-                new MhwMultiStructData.StructData("Guard Angles? (Shared)", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Guard Angle (Both Sides)", typeof(float)),
-                    new MhwMultiStructData.Entry("Knockback Threshold Small", typeof(byte)),
-                    new MhwMultiStructData.Entry("Knockback Threshold Medium", typeof(byte)),
-                    new MhwMultiStructData.Entry("Knockback Threshold Large", typeof(byte))
-                }, 2),
+                new MhwMultiStructData.StructData("Guard Angles (Shared)", guardAngles, 2),
 
                 new MhwMultiStructData.StructData($"W{wpNum}p Params ({++paramIndex}, Shared)", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
@@ -128,7 +147,22 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Unk 13", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 14", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk 15", typeof(int))
-                }, 8)
+                }, 8),
+
+                new MhwMultiStructData.StructData($"W{wpNum}p Params ({++paramIndex}, Shared)", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                }, 1, showVertically: true)
             };
 
             return structs;

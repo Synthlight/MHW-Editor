@@ -1,0 +1,10 @@
+TODO:
+(Altraz1234) For anyone interested, offset 532 in pl_param.plp refers to the stamina drain amount for each claw attack, while offset 596 refers to the gradual drain that occurs while you're clutched onto a monster.
+(renkian) in pl_param
+offset 532 is clutch claw turn left right stamina consume
+596 clutch claw stamina drain when u grab into monster while idle
+568 hammer and bow charge stamina drain
+492 SA wild swing stamina consume
+8675 Wyrmstake Blast health regen
+for monster hitzone dtt_epg the index for part name from what i see look like it follow the same part name order in kiranico site
+kulve seem like they group by the same hitzone for safi im not sure that monster have too many parts
