@@ -1,10 +1,208 @@
-TODO:
-(Altraz1234) For anyone interested, offset 532 in pl_param.plp refers to the stamina drain amount for each claw attack, while offset 596 refers to the gradual drain that occurs while you're clutched onto a monster.
-(renkian) in pl_param
-offset 532 is clutch claw turn left right stamina consume
-596 clutch claw stamina drain when u grab into monster while idle
-568 hammer and bow charge stamina drain
-492 SA wild swing stamina consume
-8675 Wyrmstake Blast health regen
-for monster hitzone dtt_epg the index for part name from what i see look like it follow the same part name order in kiranico site
-kulve seem like they group by the same hitzone for safi im not sure that monster have too many parts
+renkian:
+
+wp param
+global
+wp xx param(2, shared)
+unk 22 weapon sweetspot
+unk 25 i supspect this is elderseal modifier but this sht effect is so vague i so can anyone confirm test this
+///////////////////////////////////
+Ig wp10
+param(10) is kinsect weapon boost effect
+param(11) kinsect power/spirit buff and it duration
+
+Unk Arr 3 kinsect stat
+index 0 :attack power - 1 :speed2 :healing3 :stamina regen/s 4 heal dust 5 bast dust6 para dust 7 poison dust8 element
+
+param 5
+unk 94 speed buff white extract
+unk 92 R+W dmg buff
+unk93 R+W+O dmg buff
+unk96Orange def buff
+unk97 O+W def buff
+/////////////////////////////////////
+DB
+wp02p param 5
+unk 95speed increase while draw wp and arch demon full gauge
+unk 96 gauge decay time
+unk 97 demon flurry rush cost
+unk 98 demon flurry cost
+unk 104 arch demon animation speed increased
+/////////////////////////////
+Ls
+wp03p param(5)
+113 White gauge duration
+114 yellow gauge duration
+155red gauge duration
+117white gauge dmg buff
+118 yellow gauge dmg buff
+119 red gauge dmg buff
+92 spirit gauge decay
+134 iai sheathe time
+135 iiai super armor on succes counter
+137iai spirit slash second hit time delay look like if you set it to 0 the second hit will be remove ¯\_(?_??)_/¯
+
+wp09 CB
+param 5
+101 charge to reach yellow phial
+102 reach red
+106 overcharge phial
+108 dmg multi in axe mode
+113 elemental phial dmg multi not apply to saed
+114 phial duration
+////////////
+wp11
+param(6) is bow coating param
+////////////////
+wp07 GL
+
+param 5 shelling param
+
+param 8 wyrmstake blast param:
+323 fullburst dmg multi
+324+325 charge shell and wyvernfire dmg multi
+326 wyrmstake explo dmg multi
+327 ally attack
+//wyrmstake blast duration
+328 thorn pod base duration
+329 thorn pod extra duration
+330 bomb+pierce duration
+331 (unk 330 extra duration
+332 scatternut + crystalburstt + torch + brightmoss duration
+333: 332 extra duration
+334 puddle+dragon duration
+335:334 extra duration
+338 redpit duration
+339 redpit extra
+340 stone
+341 stone extra
+
+
+
+
+
+
+dudou:
+
+I took the liberty of supplementing the contents of the shelling param.
+I think it probably is.
+
+wp07 GL
+param 5 shelling param
+
+91~93 (normal,scatter,radiation)ammo
+114~120 : normalshell dmg
+121~127 : normalshell firedmg
+128 : normal chargeshell multi
+129 : normal fullburst multi?
+131~137 : normal wyvernfire dmg
+138~144 : normal wyvernfire firedmg
+145~151 : normal pilebunker dmg
+152~158 : normal pilebunker blastdmg
+159~165 : normal wyrmstake dmg?
+166~172 : normal wyrmstake adddmg
+
+
+173~179 : radiationshell dmg
+179~186 : radiationshell fire dmg?
+187 : radiation chargeshell multi
+188,189 : radiation fullburst multi?
+190~196 : radiation wyvernfire dmg
+197~203 : radiation wyvernfire firedmg
+204~210 : radiation pilebunker dmg
+211~217 : radiation pilebunker blastdmg
+218~224 : radiation wyrmstake dmg?
+225~231 : radiation wyrmstake adddmg
+
+
+
+232~238 : scattershell dmg
+239~245 : scattershell fire dmg?
+246 : scatter chargeshell multi
+247,248 : scatter fullburst multi?
+249~255 : scatter wyvernfire dmg
+256~262 : scatter wyvernfire firedmg
+263~269 : scatter pilebunker dmg
+270~276 : scatter pilebunker blastdmg
+277~283 : scatter wyrmstake dmg?
+284~290 : scatter wyrmstake adddmg
+
+291 : yellow gauge debuff
+
+
+
+
+renkian:
+
+radiation shell is long shell
+scatter is wide shell
+pilebunker is wyrmstake
+
+
+
+creepycrops:
+
+wp07 GL
+param 5 shelling param
+94 charge shelling delay time (second)
+95 charge shelling recoil action distance multflier
+96 wyvernfire charging time (second)
+97 wyvernfire cooldown time (second)
+101 shelling time of [shelling -> wyrmstake] connection ex) 2 : shelling->shelling->wyrmstake , 0 : shelling->wyrmstake , 3 : shellingx3->wyrmstake
+159~165 : normal wyrmstake blast fire dmg
+218~224 : radiation wyrmstake blast fire dmg
+277~283 : scatter wyrmstake blast fire dmg
+
+
+
+renkian:
+
+LS
+param 9
+148 helmbreaker hit limit
+146+147 helmbreaker delay between hit ( need 146 value <= 147 or helm will not work properly need someone further testing this)
+CB
+param 5
+115 shield charge guard threshold increase
+118 sword charge duration (look like limit at 60s)
+param 18
+189 savege axe duration
+SA
+param 7
+171 power axe duration
+param 6
+102 power phial dmg multi (sword mode)
+103 element phial dmg multi(sword mode)
+115 amount sword gauge regen in axe mode
+116 time delay between sword regen in axe mode
+117 sword gauge when switch between axe/sword attack
+124 sword amp duration
+
+bow
+param 6
+122 close range coating dmg
+125 power coating dmg
+133 blast coating
+134 blast coating plus
+
+
+
+ristora777:
+
+03 June 2020, 9:40AM
+I found kinsect param in wp10_param.w10p.
+
+W10p params(10)
+UnK139 - Kinsect's stamina consumption(Default 4)
+UnK140 - Kinsect's maximum stamina (Default 100)
+Unk146 - Interval when kinsect powedr(Default 5.5)
+
+W10p params(11)
+Unk161 - Kinsect Charge(Power) attack power(Default 1.5)
+Unk162 - Kinsect Charge(Power) elemental attack power(Default 3.5)
+Unk164 - Kinsect Charge(Spirit) maximum stamina(Default 2)
+Unk165 - Kinsect Charge(Power) Interval when kinsect powedr(Default 1.5)
+Unk166~167 - Kinsect Charge Duration by silnger ammo
+
+It's a typo. It means kinsect dust (or kinsect powder).
+Unk146 and Unk165 are the values that affect the interval at which kinsect dust is generated.
+And Kinsect Charge Duration by Silenger ammo is from 166 to 176.
