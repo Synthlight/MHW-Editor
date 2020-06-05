@@ -12177,59 +12177,59 @@ namespace MHW_Editor.PlData {
             }
         }
 
-        public const string Unk_Safi_8_displayName = "Unk Safi 8";
-        public const int Unk_Safi_8_sortIndex = 43100;
-        [SortOrder(Unk_Safi_8_sortIndex)]
-        [DisplayName(Unk_Safi_8_displayName)]
-        public virtual float Unk_Safi_8 {
+        public const string Safi_Recovery_Interval_displayName = "Safi: Recovery Interval";
+        public const int Safi_Recovery_Interval_sortIndex = 43100;
+        [SortOrder(Safi_Recovery_Interval_sortIndex)]
+        [DisplayName(Safi_Recovery_Interval_displayName)]
+        public virtual float Safi_Recovery_Interval {
             get => GetData<float>(2009);
             set {
                 if (GetData<float>(2009) == value) return;
-                SetData(2009, value, nameof(Unk_Safi_8));
+                SetData(2009, value, nameof(Safi_Recovery_Interval));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk_Safi_8));
+                OnPropertyChanged(nameof(Safi_Recovery_Interval));
             }
         }
 
-        public const string Unk_Safi_9_displayName = "Unk Safi 9";
-        public const int Unk_Safi_9_sortIndex = 43150;
-        [SortOrder(Unk_Safi_9_sortIndex)]
-        [DisplayName(Unk_Safi_9_displayName)]
-        public virtual float Unk_Safi_9 {
+        public const string Safi_Recovery_Amount_displayName = "Safi: Recovery Amount";
+        public const int Safi_Recovery_Amount_sortIndex = 43150;
+        [SortOrder(Safi_Recovery_Amount_sortIndex)]
+        [DisplayName(Safi_Recovery_Amount_displayName)]
+        public virtual float Safi_Recovery_Amount {
             get => GetData<float>(2013);
             set {
                 if (GetData<float>(2013) == value) return;
-                SetData(2013, value, nameof(Unk_Safi_9));
+                SetData(2013, value, nameof(Safi_Recovery_Amount));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk_Safi_9));
+                OnPropertyChanged(nameof(Safi_Recovery_Amount));
             }
         }
 
-        public const string Unk_Safi_10_displayName = "Unk Safi 10";
-        public const int Unk_Safi_10_sortIndex = 43200;
-        [SortOrder(Unk_Safi_10_sortIndex)]
-        [DisplayName(Unk_Safi_10_displayName)]
-        public virtual float Unk_Safi_10 {
+        public const string Safi_Recovery_Time_displayName = "Safi: Recovery Time";
+        public const int Safi_Recovery_Time_sortIndex = 43200;
+        [SortOrder(Safi_Recovery_Time_sortIndex)]
+        [DisplayName(Safi_Recovery_Time_displayName)]
+        public virtual float Safi_Recovery_Time {
             get => GetData<float>(2017);
             set {
                 if (GetData<float>(2017) == value) return;
-                SetData(2017, value, nameof(Unk_Safi_10));
+                SetData(2017, value, nameof(Safi_Recovery_Time));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk_Safi_10));
+                OnPropertyChanged(nameof(Safi_Recovery_Time));
             }
         }
 
-        public const string Unk_Safi_11_displayName = "Unk Safi 11";
-        public const int Unk_Safi_11_sortIndex = 43250;
-        [SortOrder(Unk_Safi_11_sortIndex)]
-        [DisplayName(Unk_Safi_11_displayName)]
-        public virtual float Unk_Safi_11 {
+        public const string Unk_Safi_8_displayName = "Unk Safi 8";
+        public const int Unk_Safi_8_sortIndex = 43250;
+        [SortOrder(Unk_Safi_8_sortIndex)]
+        [DisplayName(Unk_Safi_8_displayName)]
+        public virtual float Unk_Safi_8 {
             get => GetData<float>(2021);
             set {
                 if (GetData<float>(2021) == value) return;
-                SetData(2021, value, nameof(Unk_Safi_11));
+                SetData(2021, value, nameof(Unk_Safi_8));
                 OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk_Safi_11));
+                OnPropertyChanged(nameof(Unk_Safi_8));
             }
         }
 

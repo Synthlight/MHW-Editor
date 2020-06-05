@@ -756,10 +756,10 @@ namespace MHW_Editor.PlData {
         public float Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit; // Offset: 1997
         public float Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit; // Offset: 2001
         public float Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit; // Offset: 2005
-        public float Unk_Safi_8; // Offset: 2009
-        public float Unk_Safi_9; // Offset: 2013
-        public float Unk_Safi_10; // Offset: 2017
-        public float Unk_Safi_11; // Offset: 2021
+        public float Safi_Recovery_Interval; // Offset: 2009
+        public float Safi_Recovery_Amount; // Offset: 2013
+        public float Safi_Recovery_Time; // Offset: 2017
+        public float Unk_Safi_8; // Offset: 2021
         public float Set_3_Elemental_Limit; // Offset: 2025
         public float Set_5_Elemental_Limit; // Offset: 2029
         public float Set_3_Bowgun_Elemental_Limit; // Offset: 2033

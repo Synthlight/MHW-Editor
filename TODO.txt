@@ -206,3 +206,63 @@ Unk166~167 - Kinsect Charge Duration by silnger ammo
 It's a typo. It means kinsect dust (or kinsect powder).
 Unk146 and Unk165 are the values that affect the interval at which kinsect dust is generated.
 And Kinsect Charge Duration by Silenger ammo is from 166 to 176.
+
+
+
+dtlnor:
+
+float Unk_166; //Piercing Pod
+float Unk_167; //Stone
+float Unk_168; //Redpit
+float Unk_169; //Scatternut
+float Unk_170; //Crystalburst
+float Unk_171; //Thorn Pod
+float Unk_172; //Torch Pod
+float Unk_173; //Puddle Pod
+float Unk_174; //Dragon Pod
+float Unk_175; //Bomb Pod
+float Unk_176; //Brightmoss
+
+float Unk_157; //kinsect buff red +45s
+float Unk_158; //kinsect buff white +45s
+float Unk_159; //kinsect buff yellow +45s
+float Unk_160; //kinsect buff Tri +45s
+
+//did not tested properly
+float Unk_161; //kinsect power buff
+float Unk_162; //kinsect element buff
+float Unk_163; //kinsect dust??
+float Unk_164; //kinsect max Stamina
+float Unk_165; //kinsect ?? interval
+
+
+
+dudou:
+
+wp07 GL
+param 9
+345:sheling multi
+The default value is 0.64, but I assume it is a parameter to cancel out the x1.5 MR correction. 1.5*0.67=1.005
+
+wp09 CB
+param 18
+189: savege axe duration (element Phial)
+191: savege axe duration multi (Impact Phial)
+The duration of the Savage Axe is determined by 189. This is the duration if you are using an Element Phial, and if you are using an Impact Phial there is probably a correction here with a value that goes into 191.
+By default, the value of 189 is the duration of the element (18s), but the duration of the impact is divided by the value of 191. (18s/1.5=12s)
+A value of 191 to 1 would give the same savage duration for either bottle, and a decimal point would likely increase the duration of the impact Phial even further.
+
+wp05 HH
+Param 8
+112: Deflected Attack Prevention Self Buff
+Unlike the attack-up melody, the value is compensated for, including items and skill enhancements.
+The default is 1.15 (15% increase).
+
+
+
+dtlnor:
+
+float Unk_145; //kinsect blast dust interval(3)
+float Unk_146; //kinsect heal dust interval(5.5)
+float Unk_147; //kinsect para dust interval(4)
+float Unk_148; //kinsect poison dust interval(3)
