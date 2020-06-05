@@ -1,1 +1,12 @@
 Try to open file as first param.
+
+
+renkian:
+w03p (LS)
+need someone further testing param 9 unk145 + 150
+150 time delay for the red line appear when you strike down if value >1 will make it disappear i dont know if it affect anything other than that
+149time delay for your helm hit and contact monster body .
+This unk make me confuse if edit it value > 1 it can slow down helm breaker may make it hit less hit or remove it completely
+But if you lower value than it default you can make it hit faster and can hit more than helm breaker hit limit depend how low you edit
+( 149> 150 hit appear before red line 150 >149 hit appear after red line)
+dunno if unk 149 effect like pierce ammo effect but affect by monster height

@@ -46,15 +46,15 @@ namespace MHW_Generator.Weapons {
 
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 2),
 
-                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex}) - Heavenly Blade Dance Effect Params?", new List<MhwMultiStructData.Entry> {
+                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex}) - Heavenly Blade Dance Effect Params", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Number of Hits Before 1st Damage Reduction", typeof(uint)),
+                    new MhwMultiStructData.Entry("Number of Hits Before 2nd Damage Reduction", typeof(uint)),
+                    new MhwMultiStructData.Entry("Number of Hits Before 3rd Damage Reduction", typeof(uint)),
+                    new MhwMultiStructData.Entry("Damage Reduction after 1st Threshold", typeof(float)),
+                    new MhwMultiStructData.Entry("Damage Reduction after 2nd Threshold", typeof(float)),
+                    new MhwMultiStructData.Entry("Damage Reduction after 3rd Threshold", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 7}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),

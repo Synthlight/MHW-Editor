@@ -409,17 +409,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected byte Unk_18_raw;
-            public const string Unk_18_displayName = "Unk 18";
-            public const int Unk_18_sortIndex = 850;
-            [SortOrder(Unk_18_sortIndex)]
-            [DisplayName(Unk_18_displayName)]
-            public virtual byte Unk_18 {
-                get => Unk_18_raw;
+            protected byte Sharpness_Consumed_Melee_Only__raw;
+            public const string Sharpness_Consumed_Melee_Only__displayName = "Sharpness Consumed (Melee Only)";
+            public const int Sharpness_Consumed_Melee_Only__sortIndex = 850;
+            [SortOrder(Sharpness_Consumed_Melee_Only__sortIndex)]
+            [DisplayName(Sharpness_Consumed_Melee_Only__displayName)]
+            public virtual byte Sharpness_Consumed_Melee_Only_ {
+                get => Sharpness_Consumed_Melee_Only__raw;
                 set {
-                    if (Unk_18_raw == value) return;
-                    Unk_18_raw = value;
-                    OnPropertyChanged(nameof(Unk_18));
+                    if (Sharpness_Consumed_Melee_Only__raw == value) return;
+                    Sharpness_Consumed_Melee_Only__raw = value;
+                    OnPropertyChanged(nameof(Sharpness_Consumed_Melee_Only_));
                 }
             }
 
@@ -577,7 +577,7 @@ namespace MHW_Editor.Weapons {
                 data.Unk_15_raw = reader.ReadSingle();
                 data.Unk_16_raw = reader.ReadSingle();
                 data.Unk_17_raw = reader.ReadSingle();
-                data.Unk_18_raw = reader.ReadByte();
+                data.Sharpness_Consumed_Melee_Only__raw = reader.ReadByte();
                 data.Unk_19_raw = reader.ReadByte();
                 data.Unk_20_raw = reader.ReadByte();
                 data.Unk_21_raw = reader.ReadByte();
@@ -607,7 +607,7 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_15_raw);
                 writer.Write(Unk_16_raw);
                 writer.Write(Unk_17_raw);
-                writer.Write(Unk_18_raw);
+                writer.Write(Sharpness_Consumed_Melee_Only__raw);
                 writer.Write(Unk_19_raw);
                 writer.Write(Unk_20_raw);
                 writer.Write(Unk_21_raw);
@@ -637,7 +637,7 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 15", "Unk_15"),
                     new MultiStructItemCustomView(this, "Unk 16", "Unk_16"),
                     new MultiStructItemCustomView(this, "Unk 17", "Unk_17"),
-                    new MultiStructItemCustomView(this, "Unk 18", "Unk_18"),
+                    new MultiStructItemCustomView(this, "Sharpness Consumed (Melee Only)", "Sharpness_Consumed_Melee_Only_"),
                     new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
                     new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
                     new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),
@@ -2798,9 +2798,9 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public partial class W02p_Params_7_Heavenly_Blade_Dance_Effect_Params_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W02p_Params_7_Heavenly_Blade_Dance_Effect_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "W02p Params (7) - Heavenly Blade Dance Effect Params?";
+            public const string GridName = "W02p Params (7) - Heavenly Blade Dance Effect Params";
 
             protected float Unk_115_raw;
             public const string Unk_115_displayName = "Unk 115";
@@ -2816,87 +2816,87 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected uint Unk_116_raw;
-            public const string Unk_116_displayName = "Unk 116";
-            public const int Unk_116_sortIndex = 100;
-            [SortOrder(Unk_116_sortIndex)]
-            [DisplayName(Unk_116_displayName)]
-            public virtual uint Unk_116 {
-                get => Unk_116_raw;
+            protected uint Number_of_Hits_Before_1st_Damage_Reduction_raw;
+            public const string Number_of_Hits_Before_1st_Damage_Reduction_displayName = "Number of Hits Before 1st Damage Reduction";
+            public const int Number_of_Hits_Before_1st_Damage_Reduction_sortIndex = 100;
+            [SortOrder(Number_of_Hits_Before_1st_Damage_Reduction_sortIndex)]
+            [DisplayName(Number_of_Hits_Before_1st_Damage_Reduction_displayName)]
+            public virtual uint Number_of_Hits_Before_1st_Damage_Reduction {
+                get => Number_of_Hits_Before_1st_Damage_Reduction_raw;
                 set {
-                    if (Unk_116_raw == value) return;
-                    Unk_116_raw = value;
-                    OnPropertyChanged(nameof(Unk_116));
+                    if (Number_of_Hits_Before_1st_Damage_Reduction_raw == value) return;
+                    Number_of_Hits_Before_1st_Damage_Reduction_raw = value;
+                    OnPropertyChanged(nameof(Number_of_Hits_Before_1st_Damage_Reduction));
                 }
             }
 
-            protected uint Unk_117_raw;
-            public const string Unk_117_displayName = "Unk 117";
-            public const int Unk_117_sortIndex = 150;
-            [SortOrder(Unk_117_sortIndex)]
-            [DisplayName(Unk_117_displayName)]
-            public virtual uint Unk_117 {
-                get => Unk_117_raw;
+            protected uint Number_of_Hits_Before_2nd_Damage_Reduction_raw;
+            public const string Number_of_Hits_Before_2nd_Damage_Reduction_displayName = "Number of Hits Before 2nd Damage Reduction";
+            public const int Number_of_Hits_Before_2nd_Damage_Reduction_sortIndex = 150;
+            [SortOrder(Number_of_Hits_Before_2nd_Damage_Reduction_sortIndex)]
+            [DisplayName(Number_of_Hits_Before_2nd_Damage_Reduction_displayName)]
+            public virtual uint Number_of_Hits_Before_2nd_Damage_Reduction {
+                get => Number_of_Hits_Before_2nd_Damage_Reduction_raw;
                 set {
-                    if (Unk_117_raw == value) return;
-                    Unk_117_raw = value;
-                    OnPropertyChanged(nameof(Unk_117));
+                    if (Number_of_Hits_Before_2nd_Damage_Reduction_raw == value) return;
+                    Number_of_Hits_Before_2nd_Damage_Reduction_raw = value;
+                    OnPropertyChanged(nameof(Number_of_Hits_Before_2nd_Damage_Reduction));
                 }
             }
 
-            protected uint Unk_118_raw;
-            public const string Unk_118_displayName = "Unk 118";
-            public const int Unk_118_sortIndex = 200;
-            [SortOrder(Unk_118_sortIndex)]
-            [DisplayName(Unk_118_displayName)]
-            public virtual uint Unk_118 {
-                get => Unk_118_raw;
+            protected uint Number_of_Hits_Before_3rd_Damage_Reduction_raw;
+            public const string Number_of_Hits_Before_3rd_Damage_Reduction_displayName = "Number of Hits Before 3rd Damage Reduction";
+            public const int Number_of_Hits_Before_3rd_Damage_Reduction_sortIndex = 200;
+            [SortOrder(Number_of_Hits_Before_3rd_Damage_Reduction_sortIndex)]
+            [DisplayName(Number_of_Hits_Before_3rd_Damage_Reduction_displayName)]
+            public virtual uint Number_of_Hits_Before_3rd_Damage_Reduction {
+                get => Number_of_Hits_Before_3rd_Damage_Reduction_raw;
                 set {
-                    if (Unk_118_raw == value) return;
-                    Unk_118_raw = value;
-                    OnPropertyChanged(nameof(Unk_118));
+                    if (Number_of_Hits_Before_3rd_Damage_Reduction_raw == value) return;
+                    Number_of_Hits_Before_3rd_Damage_Reduction_raw = value;
+                    OnPropertyChanged(nameof(Number_of_Hits_Before_3rd_Damage_Reduction));
                 }
             }
 
-            protected float Unk_119_raw;
-            public const string Unk_119_displayName = "Unk 119";
-            public const int Unk_119_sortIndex = 250;
-            [SortOrder(Unk_119_sortIndex)]
-            [DisplayName(Unk_119_displayName)]
-            public virtual float Unk_119 {
-                get => Unk_119_raw;
+            protected float Damage_Reduction_after_1st_Threshold_raw;
+            public const string Damage_Reduction_after_1st_Threshold_displayName = "Damage Reduction after 1st Threshold";
+            public const int Damage_Reduction_after_1st_Threshold_sortIndex = 250;
+            [SortOrder(Damage_Reduction_after_1st_Threshold_sortIndex)]
+            [DisplayName(Damage_Reduction_after_1st_Threshold_displayName)]
+            public virtual float Damage_Reduction_after_1st_Threshold {
+                get => Damage_Reduction_after_1st_Threshold_raw;
                 set {
-                    if (Unk_119_raw == value) return;
-                    Unk_119_raw = value;
-                    OnPropertyChanged(nameof(Unk_119));
+                    if (Damage_Reduction_after_1st_Threshold_raw == value) return;
+                    Damage_Reduction_after_1st_Threshold_raw = value;
+                    OnPropertyChanged(nameof(Damage_Reduction_after_1st_Threshold));
                 }
             }
 
-            protected float Unk_120_raw;
-            public const string Unk_120_displayName = "Unk 120";
-            public const int Unk_120_sortIndex = 300;
-            [SortOrder(Unk_120_sortIndex)]
-            [DisplayName(Unk_120_displayName)]
-            public virtual float Unk_120 {
-                get => Unk_120_raw;
+            protected float Damage_Reduction_after_2nd_Threshold_raw;
+            public const string Damage_Reduction_after_2nd_Threshold_displayName = "Damage Reduction after 2nd Threshold";
+            public const int Damage_Reduction_after_2nd_Threshold_sortIndex = 300;
+            [SortOrder(Damage_Reduction_after_2nd_Threshold_sortIndex)]
+            [DisplayName(Damage_Reduction_after_2nd_Threshold_displayName)]
+            public virtual float Damage_Reduction_after_2nd_Threshold {
+                get => Damage_Reduction_after_2nd_Threshold_raw;
                 set {
-                    if (Unk_120_raw == value) return;
-                    Unk_120_raw = value;
-                    OnPropertyChanged(nameof(Unk_120));
+                    if (Damage_Reduction_after_2nd_Threshold_raw == value) return;
+                    Damage_Reduction_after_2nd_Threshold_raw = value;
+                    OnPropertyChanged(nameof(Damage_Reduction_after_2nd_Threshold));
                 }
             }
 
-            protected float Unk_121_raw;
-            public const string Unk_121_displayName = "Unk 121";
-            public const int Unk_121_sortIndex = 350;
-            [SortOrder(Unk_121_sortIndex)]
-            [DisplayName(Unk_121_displayName)]
-            public virtual float Unk_121 {
-                get => Unk_121_raw;
+            protected float Damage_Reduction_after_3rd_Threshold_raw;
+            public const string Damage_Reduction_after_3rd_Threshold_displayName = "Damage Reduction after 3rd Threshold";
+            public const int Damage_Reduction_after_3rd_Threshold_sortIndex = 350;
+            [SortOrder(Damage_Reduction_after_3rd_Threshold_sortIndex)]
+            [DisplayName(Damage_Reduction_after_3rd_Threshold_displayName)]
+            public virtual float Damage_Reduction_after_3rd_Threshold {
+                get => Damage_Reduction_after_3rd_Threshold_raw;
                 set {
-                    if (Unk_121_raw == value) return;
-                    Unk_121_raw = value;
-                    OnPropertyChanged(nameof(Unk_121));
+                    if (Damage_Reduction_after_3rd_Threshold_raw == value) return;
+                    Damage_Reduction_after_3rd_Threshold_raw = value;
+                    OnPropertyChanged(nameof(Damage_Reduction_after_3rd_Threshold));
                 }
             }
 
@@ -3021,16 +3021,16 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static W02p_Params_7_Heavenly_Blade_Dance_Effect_Params_ LoadData(BinaryReader reader, ulong i) {
-                var data = new W02p_Params_7_Heavenly_Blade_Dance_Effect_Params_();
+            public static W02p_Params_7_Heavenly_Blade_Dance_Effect_Params LoadData(BinaryReader reader, ulong i) {
+                var data = new W02p_Params_7_Heavenly_Blade_Dance_Effect_Params();
                 data.Index = i;
                 data.Unk_115_raw = reader.ReadSingle();
-                data.Unk_116_raw = reader.ReadUInt32();
-                data.Unk_117_raw = reader.ReadUInt32();
-                data.Unk_118_raw = reader.ReadUInt32();
-                data.Unk_119_raw = reader.ReadSingle();
-                data.Unk_120_raw = reader.ReadSingle();
-                data.Unk_121_raw = reader.ReadSingle();
+                data.Number_of_Hits_Before_1st_Damage_Reduction_raw = reader.ReadUInt32();
+                data.Number_of_Hits_Before_2nd_Damage_Reduction_raw = reader.ReadUInt32();
+                data.Number_of_Hits_Before_3rd_Damage_Reduction_raw = reader.ReadUInt32();
+                data.Damage_Reduction_after_1st_Threshold_raw = reader.ReadSingle();
+                data.Damage_Reduction_after_2nd_Threshold_raw = reader.ReadSingle();
+                data.Damage_Reduction_after_3rd_Threshold_raw = reader.ReadSingle();
                 data.Unk_122_raw = reader.ReadSingle();
                 data.Unk_123_raw = reader.ReadSingle();
                 data.Unk_124_raw = reader.ReadSingle();
@@ -3044,12 +3044,12 @@ namespace MHW_Editor.Weapons {
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Unk_115_raw);
-                writer.Write(Unk_116_raw);
-                writer.Write(Unk_117_raw);
-                writer.Write(Unk_118_raw);
-                writer.Write(Unk_119_raw);
-                writer.Write(Unk_120_raw);
-                writer.Write(Unk_121_raw);
+                writer.Write(Number_of_Hits_Before_1st_Damage_Reduction_raw);
+                writer.Write(Number_of_Hits_Before_2nd_Damage_Reduction_raw);
+                writer.Write(Number_of_Hits_Before_3rd_Damage_Reduction_raw);
+                writer.Write(Damage_Reduction_after_1st_Threshold_raw);
+                writer.Write(Damage_Reduction_after_2nd_Threshold_raw);
+                writer.Write(Damage_Reduction_after_3rd_Threshold_raw);
                 writer.Write(Unk_122_raw);
                 writer.Write(Unk_123_raw);
                 writer.Write(Unk_124_raw);
@@ -3063,12 +3063,12 @@ namespace MHW_Editor.Weapons {
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
                     new MultiStructItemCustomView(this, "Unk 115", "Unk_115"),
-                    new MultiStructItemCustomView(this, "Unk 116", "Unk_116"),
-                    new MultiStructItemCustomView(this, "Unk 117", "Unk_117"),
-                    new MultiStructItemCustomView(this, "Unk 118", "Unk_118"),
-                    new MultiStructItemCustomView(this, "Unk 119", "Unk_119"),
-                    new MultiStructItemCustomView(this, "Unk 120", "Unk_120"),
-                    new MultiStructItemCustomView(this, "Unk 121", "Unk_121"),
+                    new MultiStructItemCustomView(this, "Number of Hits Before 1st Damage Reduction", "Number_of_Hits_Before_1st_Damage_Reduction"),
+                    new MultiStructItemCustomView(this, "Number of Hits Before 2nd Damage Reduction", "Number_of_Hits_Before_2nd_Damage_Reduction"),
+                    new MultiStructItemCustomView(this, "Number of Hits Before 3rd Damage Reduction", "Number_of_Hits_Before_3rd_Damage_Reduction"),
+                    new MultiStructItemCustomView(this, "Damage Reduction after 1st Threshold", "Damage_Reduction_after_1st_Threshold"),
+                    new MultiStructItemCustomView(this, "Damage Reduction after 2nd Threshold", "Damage_Reduction_after_2nd_Threshold"),
+                    new MultiStructItemCustomView(this, "Damage Reduction after 3rd Threshold", "Damage_Reduction_after_3rd_Threshold"),
                     new MultiStructItemCustomView(this, "Unk 122", "Unk_122"),
                     new MultiStructItemCustomView(this, "Unk 123", "Unk_123"),
                     new MultiStructItemCustomView(this, "Unk 124", "Unk_124"),
@@ -3810,8 +3810,8 @@ namespace MHW_Editor.Weapons {
             data.AddLast(W02p_Params_6__);
             var Action_Param_2_ = new MhwStructDataContainer(Action_Param_2.LoadData(reader, null), typeof(Action_Param_2));
             data.AddLast(Action_Param_2_);
-            var W02p_Params_7_Heavenly_Blade_Dance_Effect_Params__ = new MhwStructDataContainer(W02p_Params_7_Heavenly_Blade_Dance_Effect_Params_.LoadData(reader, null), typeof(W02p_Params_7_Heavenly_Blade_Dance_Effect_Params_));
-            data.AddLast(W02p_Params_7_Heavenly_Blade_Dance_Effect_Params__);
+            var W02p_Params_7_Heavenly_Blade_Dance_Effect_Params_ = new MhwStructDataContainer(W02p_Params_7_Heavenly_Blade_Dance_Effect_Params.LoadData(reader, null), typeof(W02p_Params_7_Heavenly_Blade_Dance_Effect_Params));
+            data.AddLast(W02p_Params_7_Heavenly_Blade_Dance_Effect_Params_);
             var Action_Param_3_ = new MhwStructDataContainer(Action_Param_3.LoadData(reader, null), typeof(Action_Param_3));
             data.AddLast(Action_Param_3_);
             var W02p_Params_8__ = new MhwStructDataContainer(W02p_Params_8_.LoadData(reader, null), typeof(W02p_Params_8_));

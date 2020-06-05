@@ -409,17 +409,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected byte Unk_18_raw;
-            public const string Unk_18_displayName = "Unk 18";
-            public const int Unk_18_sortIndex = 850;
-            [SortOrder(Unk_18_sortIndex)]
-            [DisplayName(Unk_18_displayName)]
-            public virtual byte Unk_18 {
-                get => Unk_18_raw;
+            protected byte Sharpness_Consumed_Melee_Only__raw;
+            public const string Sharpness_Consumed_Melee_Only__displayName = "Sharpness Consumed (Melee Only)";
+            public const int Sharpness_Consumed_Melee_Only__sortIndex = 850;
+            [SortOrder(Sharpness_Consumed_Melee_Only__sortIndex)]
+            [DisplayName(Sharpness_Consumed_Melee_Only__displayName)]
+            public virtual byte Sharpness_Consumed_Melee_Only_ {
+                get => Sharpness_Consumed_Melee_Only__raw;
                 set {
-                    if (Unk_18_raw == value) return;
-                    Unk_18_raw = value;
-                    OnPropertyChanged(nameof(Unk_18));
+                    if (Sharpness_Consumed_Melee_Only__raw == value) return;
+                    Sharpness_Consumed_Melee_Only__raw = value;
+                    OnPropertyChanged(nameof(Sharpness_Consumed_Melee_Only_));
                 }
             }
 
@@ -577,7 +577,7 @@ namespace MHW_Editor.Weapons {
                 data.Unk_15_raw = reader.ReadSingle();
                 data.Unk_16_raw = reader.ReadSingle();
                 data.Unk_17_raw = reader.ReadSingle();
-                data.Unk_18_raw = reader.ReadByte();
+                data.Sharpness_Consumed_Melee_Only__raw = reader.ReadByte();
                 data.Unk_19_raw = reader.ReadByte();
                 data.Unk_20_raw = reader.ReadByte();
                 data.Unk_21_raw = reader.ReadByte();
@@ -607,7 +607,7 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_15_raw);
                 writer.Write(Unk_16_raw);
                 writer.Write(Unk_17_raw);
-                writer.Write(Unk_18_raw);
+                writer.Write(Sharpness_Consumed_Melee_Only__raw);
                 writer.Write(Unk_19_raw);
                 writer.Write(Unk_20_raw);
                 writer.Write(Unk_21_raw);
@@ -637,7 +637,7 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 15", "Unk_15"),
                     new MultiStructItemCustomView(this, "Unk 16", "Unk_16"),
                     new MultiStructItemCustomView(this, "Unk 17", "Unk_17"),
-                    new MultiStructItemCustomView(this, "Unk 18", "Unk_18"),
+                    new MultiStructItemCustomView(this, "Sharpness Consumed (Melee Only)", "Sharpness_Consumed_Melee_Only_"),
                     new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
                     new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
                     new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),

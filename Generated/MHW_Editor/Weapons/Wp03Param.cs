@@ -409,17 +409,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected byte Unk_18_raw;
-            public const string Unk_18_displayName = "Unk 18";
-            public const int Unk_18_sortIndex = 850;
-            [SortOrder(Unk_18_sortIndex)]
-            [DisplayName(Unk_18_displayName)]
-            public virtual byte Unk_18 {
-                get => Unk_18_raw;
+            protected byte Sharpness_Consumed_Melee_Only__raw;
+            public const string Sharpness_Consumed_Melee_Only__displayName = "Sharpness Consumed (Melee Only)";
+            public const int Sharpness_Consumed_Melee_Only__sortIndex = 850;
+            [SortOrder(Sharpness_Consumed_Melee_Only__sortIndex)]
+            [DisplayName(Sharpness_Consumed_Melee_Only__displayName)]
+            public virtual byte Sharpness_Consumed_Melee_Only_ {
+                get => Sharpness_Consumed_Melee_Only__raw;
                 set {
-                    if (Unk_18_raw == value) return;
-                    Unk_18_raw = value;
-                    OnPropertyChanged(nameof(Unk_18));
+                    if (Sharpness_Consumed_Melee_Only__raw == value) return;
+                    Sharpness_Consumed_Melee_Only__raw = value;
+                    OnPropertyChanged(nameof(Sharpness_Consumed_Melee_Only_));
                 }
             }
 
@@ -577,7 +577,7 @@ namespace MHW_Editor.Weapons {
                 data.Unk_15_raw = reader.ReadSingle();
                 data.Unk_16_raw = reader.ReadSingle();
                 data.Unk_17_raw = reader.ReadSingle();
-                data.Unk_18_raw = reader.ReadByte();
+                data.Sharpness_Consumed_Melee_Only__raw = reader.ReadByte();
                 data.Unk_19_raw = reader.ReadByte();
                 data.Unk_20_raw = reader.ReadByte();
                 data.Unk_21_raw = reader.ReadByte();
@@ -607,7 +607,7 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_15_raw);
                 writer.Write(Unk_16_raw);
                 writer.Write(Unk_17_raw);
-                writer.Write(Unk_18_raw);
+                writer.Write(Sharpness_Consumed_Melee_Only__raw);
                 writer.Write(Unk_19_raw);
                 writer.Write(Unk_20_raw);
                 writer.Write(Unk_21_raw);
@@ -637,7 +637,7 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 15", "Unk_15"),
                     new MultiStructItemCustomView(this, "Unk 16", "Unk_16"),
                     new MultiStructItemCustomView(this, "Unk 17", "Unk_17"),
-                    new MultiStructItemCustomView(this, "Unk 18", "Unk_18"),
+                    new MultiStructItemCustomView(this, "Sharpness Consumed (Melee Only)", "Sharpness_Consumed_Melee_Only_"),
                     new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
                     new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
                     new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),
@@ -2286,17 +2286,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_102_raw;
-            public const string Unk_102_displayName = "Unk 102";
-            public const int Unk_102_sortIndex = 600;
-            [SortOrder(Unk_102_sortIndex)]
-            [DisplayName(Unk_102_displayName)]
-            public virtual float Unk_102 {
-                get => Unk_102_raw;
+            protected float Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_raw;
+            public const string Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_displayName = "Gauge Required to Active Foresight That Gives 45 I-Frames";
+            public const int Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_sortIndex = 600;
+            [SortOrder(Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_sortIndex)]
+            [DisplayName(Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_displayName)]
+            public virtual float Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames {
+                get => Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_raw;
                 set {
-                    if (Unk_102_raw == value) return;
-                    Unk_102_raw = value;
-                    OnPropertyChanged(nameof(Unk_102));
+                    if (Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_raw == value) return;
+                    Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_raw = value;
+                    OnPropertyChanged(nameof(Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames));
                 }
             }
 
@@ -2482,17 +2482,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected uint Unk_116_raw;
-            public const string Unk_116_displayName = "Unk 116";
-            public const int Unk_116_sortIndex = 1300;
-            [SortOrder(Unk_116_sortIndex)]
-            [DisplayName(Unk_116_displayName)]
-            public virtual uint Unk_116 {
-                get => Unk_116_raw;
+            protected uint Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash_raw;
+            public const string Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash_displayName = "Gauge Consumption for Helm + Iai Spirit Slash";
+            public const int Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash_sortIndex = 1300;
+            [SortOrder(Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash_sortIndex)]
+            [DisplayName(Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash_displayName)]
+            public virtual uint Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash {
+                get => Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash_raw;
                 set {
-                    if (Unk_116_raw == value) return;
-                    Unk_116_raw = value;
-                    OnPropertyChanged(nameof(Unk_116));
+                    if (Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash_raw == value) return;
+                    Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash_raw = value;
+                    OnPropertyChanged(nameof(Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash));
                 }
             }
 
@@ -2594,17 +2594,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_124_raw;
-            public const string Unk_124_displayName = "Unk 124";
-            public const int Unk_124_sortIndex = 1700;
-            [SortOrder(Unk_124_sortIndex)]
-            [DisplayName(Unk_124_displayName)]
-            public virtual float Unk_124 {
-                get => Unk_124_raw;
+            protected float Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_raw;
+            public const string Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_displayName = "Gauge No-Decay Time after Spirit Gauge Upgrade";
+            public const int Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_sortIndex = 1700;
+            [SortOrder(Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_sortIndex)]
+            [DisplayName(Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_displayName)]
+            public virtual float Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade {
+                get => Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_raw;
                 set {
-                    if (Unk_124_raw == value) return;
-                    Unk_124_raw = value;
-                    OnPropertyChanged(nameof(Unk_124));
+                    if (Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_raw == value) return;
+                    Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_raw = value;
+                    OnPropertyChanged(nameof(Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade));
                 }
             }
 
@@ -2692,17 +2692,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_131_raw;
-            public const string Unk_131_displayName = "Unk 131";
-            public const int Unk_131_sortIndex = 2050;
-            [SortOrder(Unk_131_sortIndex)]
-            [DisplayName(Unk_131_displayName)]
-            public virtual float Unk_131 {
-                get => Unk_131_raw;
+            protected float Foresight_Slash_Super_Armor_Time_on_Successful_Evasion_raw;
+            public const string Foresight_Slash_Super_Armor_Time_on_Successful_Evasion_displayName = "Foresight Slash Super Armor Time on Successful Evasion";
+            public const int Foresight_Slash_Super_Armor_Time_on_Successful_Evasion_sortIndex = 2050;
+            [SortOrder(Foresight_Slash_Super_Armor_Time_on_Successful_Evasion_sortIndex)]
+            [DisplayName(Foresight_Slash_Super_Armor_Time_on_Successful_Evasion_displayName)]
+            public virtual float Foresight_Slash_Super_Armor_Time_on_Successful_Evasion {
+                get => Foresight_Slash_Super_Armor_Time_on_Successful_Evasion_raw;
                 set {
-                    if (Unk_131_raw == value) return;
-                    Unk_131_raw = value;
-                    OnPropertyChanged(nameof(Unk_131));
+                    if (Foresight_Slash_Super_Armor_Time_on_Successful_Evasion_raw == value) return;
+                    Foresight_Slash_Super_Armor_Time_on_Successful_Evasion_raw = value;
+                    OnPropertyChanged(nameof(Foresight_Slash_Super_Armor_Time_on_Successful_Evasion));
                 }
             }
 
@@ -2813,7 +2813,7 @@ namespace MHW_Editor.Weapons {
                 data.Unk_99_raw = reader.ReadSingle();
                 data.Unk_100_raw = reader.ReadSingle();
                 data.Unk_101_raw = reader.ReadSingle();
-                data.Unk_102_raw = reader.ReadSingle();
+                data.Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_raw = reader.ReadSingle();
                 data.Unk_103_raw = reader.ReadSingle();
                 data.Unk_104_raw = reader.ReadSingle();
                 data.Unk_105_raw = reader.ReadSingle();
@@ -2827,7 +2827,7 @@ namespace MHW_Editor.Weapons {
                 data.Gauge_Duration_White_raw = reader.ReadSingle();
                 data.Gauge_Duration_Yellow_raw = reader.ReadSingle();
                 data.Gauge_Duration_Red_raw = reader.ReadSingle();
-                data.Unk_116_raw = reader.ReadUInt32();
+                data.Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash_raw = reader.ReadUInt32();
                 data.Gauge_Damage_Buff_White_raw = reader.ReadSingle();
                 data.Gauge_Damage_Buff_Yellow_raw = reader.ReadSingle();
                 data.Gauge_Damage_Buff_Red_raw = reader.ReadSingle();
@@ -2835,14 +2835,14 @@ namespace MHW_Editor.Weapons {
                 data.Unk_121_raw = reader.ReadSingle();
                 data.Unk_122_raw = reader.ReadSingle();
                 data.Unk_123_raw = reader.ReadSingle();
-                data.Unk_124_raw = reader.ReadSingle();
+                data.Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_raw = reader.ReadSingle();
                 data.Unk_125_raw = reader.ReadSingle();
                 data.Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_raw = reader.ReadSingle();
                 data.Unk_127_raw = reader.ReadByte();
                 data.Unk_128_raw = reader.ReadUInt32();
                 data.Unk_129_raw = reader.ReadSingle();
                 data.Unk_130_raw = reader.ReadUInt16();
-                data.Unk_131_raw = reader.ReadSingle();
+                data.Foresight_Slash_Super_Armor_Time_on_Successful_Evasion_raw = reader.ReadSingle();
                 data.Unk_132_raw = reader.ReadSingle();
                 data.Unk_133_raw = reader.ReadSingle();
                 data.Iai_Sheathe_Time_raw = reader.ReadSingle();
@@ -2864,7 +2864,7 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_99_raw);
                 writer.Write(Unk_100_raw);
                 writer.Write(Unk_101_raw);
-                writer.Write(Unk_102_raw);
+                writer.Write(Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_raw);
                 writer.Write(Unk_103_raw);
                 writer.Write(Unk_104_raw);
                 writer.Write(Unk_105_raw);
@@ -2878,7 +2878,7 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Gauge_Duration_White_raw);
                 writer.Write(Gauge_Duration_Yellow_raw);
                 writer.Write(Gauge_Duration_Red_raw);
-                writer.Write(Unk_116_raw);
+                writer.Write(Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash_raw);
                 writer.Write(Gauge_Damage_Buff_White_raw);
                 writer.Write(Gauge_Damage_Buff_Yellow_raw);
                 writer.Write(Gauge_Damage_Buff_Red_raw);
@@ -2886,14 +2886,14 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_121_raw);
                 writer.Write(Unk_122_raw);
                 writer.Write(Unk_123_raw);
-                writer.Write(Unk_124_raw);
+                writer.Write(Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade_raw);
                 writer.Write(Unk_125_raw);
                 writer.Write(Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_raw);
                 writer.Write(Unk_127_raw);
                 writer.Write(Unk_128_raw);
                 writer.Write(Unk_129_raw);
                 writer.Write(Unk_130_raw);
-                writer.Write(Unk_131_raw);
+                writer.Write(Foresight_Slash_Super_Armor_Time_on_Successful_Evasion_raw);
                 writer.Write(Unk_132_raw);
                 writer.Write(Unk_133_raw);
                 writer.Write(Iai_Sheathe_Time_raw);
@@ -2915,7 +2915,7 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 99", "Unk_99"),
                     new MultiStructItemCustomView(this, "Unk 100", "Unk_100"),
                     new MultiStructItemCustomView(this, "Unk 101", "Unk_101"),
-                    new MultiStructItemCustomView(this, "Unk 102", "Unk_102"),
+                    new MultiStructItemCustomView(this, "Gauge Required to Active Foresight That Gives 45 I-Frames", "Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames"),
                     new MultiStructItemCustomView(this, "Unk 103", "Unk_103"),
                     new MultiStructItemCustomView(this, "Unk 104", "Unk_104"),
                     new MultiStructItemCustomView(this, "Unk 105", "Unk_105"),
@@ -2929,7 +2929,7 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Gauge Duration: White", "Gauge_Duration_White"),
                     new MultiStructItemCustomView(this, "Gauge Duration: Yellow", "Gauge_Duration_Yellow"),
                     new MultiStructItemCustomView(this, "Gauge Duration: Red", "Gauge_Duration_Red"),
-                    new MultiStructItemCustomView(this, "Unk 116", "Unk_116"),
+                    new MultiStructItemCustomView(this, "Gauge Consumption for Helm + Iai Spirit Slash", "Gauge_Consumption_for_Helm_Plus_Iai_Spirit_Slash"),
                     new MultiStructItemCustomView(this, "Gauge Damage Buff: White", "Gauge_Damage_Buff_White"),
                     new MultiStructItemCustomView(this, "Gauge Damage Buff: Yellow", "Gauge_Damage_Buff_Yellow"),
                     new MultiStructItemCustomView(this, "Gauge Damage Buff: Red", "Gauge_Damage_Buff_Red"),
@@ -2937,14 +2937,14 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 121", "Unk_121"),
                     new MultiStructItemCustomView(this, "Unk 122", "Unk_122"),
                     new MultiStructItemCustomView(this, "Unk 123", "Unk_123"),
-                    new MultiStructItemCustomView(this, "Unk 124", "Unk_124"),
+                    new MultiStructItemCustomView(this, "Gauge No-Decay Time after Spirit Gauge Upgrade", "Gauge_No_Decay_Time_after_Spirit_Gauge_Upgrade"),
                     new MultiStructItemCustomView(this, "Unk 125", "Unk_125"),
                     new MultiStructItemCustomView(this, "Foresight Slash Damage Multiplier on Successful Evasion", "Foresight_Slash_Damage_Multiplier_on_Successful_Evasion"),
                     new MultiStructItemCustomView(this, "Unk 127", "Unk_127"),
                     new MultiStructItemCustomView(this, "Unk 128", "Unk_128"),
                     new MultiStructItemCustomView(this, "Unk 129", "Unk_129"),
                     new MultiStructItemCustomView(this, "Unk 130", "Unk_130"),
-                    new MultiStructItemCustomView(this, "Unk 131", "Unk_131"),
+                    new MultiStructItemCustomView(this, "Foresight Slash Super Armor Time on Successful Evasion", "Foresight_Slash_Super_Armor_Time_on_Successful_Evasion"),
                     new MultiStructItemCustomView(this, "Unk 132", "Unk_132"),
                     new MultiStructItemCustomView(this, "Unk 133", "Unk_133"),
                     new MultiStructItemCustomView(this, "Iai Sheathe Time", "Iai_Sheathe_Time"),

@@ -35,7 +35,7 @@ float Unk_14<name="Unk 14">;
 float Unk_15<name="Unk 15">;
 float Unk_16<name="Unk 16">;
 float Unk_17<name="Unk 17">;
-ubyte Unk_18<name="Unk 18">;
+ubyte Sharpness_Consumed_Melee_Only_<name="Sharpness Consumed (Melee Only)">;
 ubyte Unk_19<name="Unk 19">;
 ubyte Unk_20<name="Unk 20">;
 ubyte Unk_21<name="Unk 21">;
@@ -191,12 +191,12 @@ typedef struct {
 Action_Param_2 Action_Param_2_[2]<optimize=false, name="Action Param 2">;
 
 float Unk_115<name="Unk 115">;
-uint Unk_116<name="Unk 116">;
-uint Unk_117<name="Unk 117">;
-uint Unk_118<name="Unk 118">;
-float Unk_119<name="Unk 119">;
-float Unk_120<name="Unk 120">;
-float Unk_121<name="Unk 121">;
+uint Number_of_Hits_Before_1st_Damage_Reduction<name="Number of Hits Before 1st Damage Reduction">;
+uint Number_of_Hits_Before_2nd_Damage_Reduction<name="Number of Hits Before 2nd Damage Reduction">;
+uint Number_of_Hits_Before_3rd_Damage_Reduction<name="Number of Hits Before 3rd Damage Reduction">;
+float Damage_Reduction_after_1st_Threshold<name="Damage Reduction after 1st Threshold">;
+float Damage_Reduction_after_2nd_Threshold<name="Damage Reduction after 2nd Threshold">;
+float Damage_Reduction_after_3rd_Threshold<name="Damage Reduction after 3rd Threshold">;
 float Unk_122<name="Unk 122">;
 float Unk_123<name="Unk 123">;
 float Unk_124<name="Unk 124">;
