@@ -43,7 +43,7 @@ namespace MHW_Template.Struct_Generation.Multi {
                 this.customSaveLoad = customSaveLoad;
             }
 
-            public string SafeName   => Regex.Replace(name, @"[^\w\d]+", "_");
+            public string SafeName   => Regex.Replace(name.Replace("+", "Plus"), @"[^\w\d]+", "_");
             public bool   Has010Link => _010Link != null;
         }
 
@@ -91,7 +91,7 @@ namespace MHW_Template.Struct_Generation.Multi {
                 this.subStruct              = subStruct;
             }
 
-            public string SafeName     => Regex.Replace(name, @"[^\w\d]+", "_");
+            public string SafeName     => Regex.Replace(name.Replace("+", "Plus"), @"[^\w\d]+", "_");
             public bool   HasSubStruct => subStruct != null;
         }
 
