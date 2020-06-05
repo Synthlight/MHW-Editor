@@ -223,8 +223,10 @@ namespace MHW_Generator_Data {
                     from fileType in FILE_TYPES_TO_CHECK
                     where path.EndsWith(fileType.Substring(1))
                     where !path.EndsWith("\\object.col") // Exclude due to there being 1600+ of them.
+                    where !path.EndsWith(".dtt_agr") // Names aren't unique.
                     where !path.EndsWith(".dtt_eda") // Names aren't unique.
                     where !path.EndsWith(".dtt_epg") // Names aren't unique.
+                    where !path.EndsWith(".dtt_sta") // Names aren't unique.
                     where !path.EndsWith(".mbd") // Names aren't unique.
                     select path)
                    .Distinct()
