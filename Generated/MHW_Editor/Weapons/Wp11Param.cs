@@ -2128,63 +2128,63 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public partial class Unk_Arr_3 : MhwStructItem {
+        public partial class Bow_Charge : MhwStructItem {
             public const ulong FixedSizeCount = 2;
-            public const string GridName = "Unk Arr 3";
+            public const string GridName = "Bow Charge";
 
-            protected float Unk_1_raw;
-            public const string Unk_1_displayName = "Unk 1";
-            public const int Unk_1_sortIndex = 50;
-            [SortOrder(Unk_1_sortIndex)]
-            [DisplayName(Unk_1_displayName)]
-            public virtual float Unk_1 {
-                get => Unk_1_raw;
+            protected float Level_1_raw;
+            public const string Level_1_displayName = "Level 1";
+            public const int Level_1_sortIndex = 50;
+            [SortOrder(Level_1_sortIndex)]
+            [DisplayName(Level_1_displayName)]
+            public virtual float Level_1 {
+                get => Level_1_raw;
                 set {
-                    if (Unk_1_raw == value) return;
-                    Unk_1_raw = value;
-                    OnPropertyChanged(nameof(Unk_1));
+                    if (Level_1_raw == value) return;
+                    Level_1_raw = value;
+                    OnPropertyChanged(nameof(Level_1));
                 }
             }
 
-            protected float Unk_2_raw;
-            public const string Unk_2_displayName = "Unk 2";
-            public const int Unk_2_sortIndex = 100;
-            [SortOrder(Unk_2_sortIndex)]
-            [DisplayName(Unk_2_displayName)]
-            public virtual float Unk_2 {
-                get => Unk_2_raw;
+            protected float Level_2_raw;
+            public const string Level_2_displayName = "Level 2";
+            public const int Level_2_sortIndex = 100;
+            [SortOrder(Level_2_sortIndex)]
+            [DisplayName(Level_2_displayName)]
+            public virtual float Level_2 {
+                get => Level_2_raw;
                 set {
-                    if (Unk_2_raw == value) return;
-                    Unk_2_raw = value;
-                    OnPropertyChanged(nameof(Unk_2));
+                    if (Level_2_raw == value) return;
+                    Level_2_raw = value;
+                    OnPropertyChanged(nameof(Level_2));
                 }
             }
 
-            protected float Unk_3_raw;
-            public const string Unk_3_displayName = "Unk 3";
-            public const int Unk_3_sortIndex = 150;
-            [SortOrder(Unk_3_sortIndex)]
-            [DisplayName(Unk_3_displayName)]
-            public virtual float Unk_3 {
-                get => Unk_3_raw;
+            protected float Level_3_raw;
+            public const string Level_3_displayName = "Level 3";
+            public const int Level_3_sortIndex = 150;
+            [SortOrder(Level_3_sortIndex)]
+            [DisplayName(Level_3_displayName)]
+            public virtual float Level_3 {
+                get => Level_3_raw;
                 set {
-                    if (Unk_3_raw == value) return;
-                    Unk_3_raw = value;
-                    OnPropertyChanged(nameof(Unk_3));
+                    if (Level_3_raw == value) return;
+                    Level_3_raw = value;
+                    OnPropertyChanged(nameof(Level_3));
                 }
             }
 
-            protected float Unk_4_raw;
-            public const string Unk_4_displayName = "Unk 4";
-            public const int Unk_4_sortIndex = 200;
-            [SortOrder(Unk_4_sortIndex)]
-            [DisplayName(Unk_4_displayName)]
-            public virtual float Unk_4 {
-                get => Unk_4_raw;
+            protected float Level_4_raw;
+            public const string Level_4_displayName = "Level 4";
+            public const int Level_4_sortIndex = 200;
+            [SortOrder(Level_4_sortIndex)]
+            [DisplayName(Level_4_displayName)]
+            public virtual float Level_4 {
+                get => Level_4_raw;
                 set {
-                    if (Unk_4_raw == value) return;
-                    Unk_4_raw = value;
-                    OnPropertyChanged(nameof(Unk_4));
+                    if (Level_4_raw == value) return;
+                    Level_4_raw = value;
+                    OnPropertyChanged(nameof(Level_4));
                 }
             }
 
@@ -2197,21 +2197,21 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static Unk_Arr_3 LoadData(BinaryReader reader, ulong i) {
-                var data = new Unk_Arr_3();
+            public static Bow_Charge LoadData(BinaryReader reader, ulong i) {
+                var data = new Bow_Charge();
                 data.Index = i;
-                data.Unk_1_raw = reader.ReadSingle();
-                data.Unk_2_raw = reader.ReadSingle();
-                data.Unk_3_raw = reader.ReadSingle();
-                data.Unk_4_raw = reader.ReadSingle();
+                data.Level_1_raw = reader.ReadSingle();
+                data.Level_2_raw = reader.ReadSingle();
+                data.Level_3_raw = reader.ReadSingle();
+                data.Level_4_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_1_raw);
-                writer.Write(Unk_2_raw);
-                writer.Write(Unk_3_raw);
-                writer.Write(Unk_4_raw);
+                writer.Write(Level_1_raw);
+                writer.Write(Level_2_raw);
+                writer.Write(Level_3_raw);
+                writer.Write(Level_4_raw);
             }
         }
 
@@ -2771,63 +2771,63 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public partial class Unk_Arr_4 : MhwStructItem {
+        public partial class Arrows_Shot : MhwStructItem {
             public const ulong FixedSizeCount = 3;
-            public const string GridName = "Unk Arr 4";
+            public const string GridName = "Arrows Shot";
 
-            protected uint Unk_1_raw;
-            public const string Unk_1_displayName = "Unk 1";
-            public const int Unk_1_sortIndex = 50;
-            [SortOrder(Unk_1_sortIndex)]
-            [DisplayName(Unk_1_displayName)]
-            public virtual uint Unk_1 {
-                get => Unk_1_raw;
+            protected uint Level_1_raw;
+            public const string Level_1_displayName = "Level 1";
+            public const int Level_1_sortIndex = 50;
+            [SortOrder(Level_1_sortIndex)]
+            [DisplayName(Level_1_displayName)]
+            public virtual uint Level_1 {
+                get => Level_1_raw;
                 set {
-                    if (Unk_1_raw == value) return;
-                    Unk_1_raw = value;
-                    OnPropertyChanged(nameof(Unk_1));
+                    if (Level_1_raw == value) return;
+                    Level_1_raw = value;
+                    OnPropertyChanged(nameof(Level_1));
                 }
             }
 
-            protected uint Unk_2_raw;
-            public const string Unk_2_displayName = "Unk 2";
-            public const int Unk_2_sortIndex = 100;
-            [SortOrder(Unk_2_sortIndex)]
-            [DisplayName(Unk_2_displayName)]
-            public virtual uint Unk_2 {
-                get => Unk_2_raw;
+            protected uint Level_2_raw;
+            public const string Level_2_displayName = "Level 2";
+            public const int Level_2_sortIndex = 100;
+            [SortOrder(Level_2_sortIndex)]
+            [DisplayName(Level_2_displayName)]
+            public virtual uint Level_2 {
+                get => Level_2_raw;
                 set {
-                    if (Unk_2_raw == value) return;
-                    Unk_2_raw = value;
-                    OnPropertyChanged(nameof(Unk_2));
+                    if (Level_2_raw == value) return;
+                    Level_2_raw = value;
+                    OnPropertyChanged(nameof(Level_2));
                 }
             }
 
-            protected uint Unk_3_raw;
-            public const string Unk_3_displayName = "Unk 3";
-            public const int Unk_3_sortIndex = 150;
-            [SortOrder(Unk_3_sortIndex)]
-            [DisplayName(Unk_3_displayName)]
-            public virtual uint Unk_3 {
-                get => Unk_3_raw;
+            protected uint Level_3_raw;
+            public const string Level_3_displayName = "Level 3";
+            public const int Level_3_sortIndex = 150;
+            [SortOrder(Level_3_sortIndex)]
+            [DisplayName(Level_3_displayName)]
+            public virtual uint Level_3 {
+                get => Level_3_raw;
                 set {
-                    if (Unk_3_raw == value) return;
-                    Unk_3_raw = value;
-                    OnPropertyChanged(nameof(Unk_3));
+                    if (Level_3_raw == value) return;
+                    Level_3_raw = value;
+                    OnPropertyChanged(nameof(Level_3));
                 }
             }
 
-            protected uint Unk_4_raw;
-            public const string Unk_4_displayName = "Unk 4";
-            public const int Unk_4_sortIndex = 200;
-            [SortOrder(Unk_4_sortIndex)]
-            [DisplayName(Unk_4_displayName)]
-            public virtual uint Unk_4 {
-                get => Unk_4_raw;
+            protected uint Level_4_raw;
+            public const string Level_4_displayName = "Level 4";
+            public const int Level_4_sortIndex = 200;
+            [SortOrder(Level_4_sortIndex)]
+            [DisplayName(Level_4_displayName)]
+            public virtual uint Level_4 {
+                get => Level_4_raw;
                 set {
-                    if (Unk_4_raw == value) return;
-                    Unk_4_raw = value;
-                    OnPropertyChanged(nameof(Unk_4));
+                    if (Level_4_raw == value) return;
+                    Level_4_raw = value;
+                    OnPropertyChanged(nameof(Level_4));
                 }
             }
 
@@ -2840,21 +2840,21 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static Unk_Arr_4 LoadData(BinaryReader reader, ulong i) {
-                var data = new Unk_Arr_4();
+            public static Arrows_Shot LoadData(BinaryReader reader, ulong i) {
+                var data = new Arrows_Shot();
                 data.Index = i;
-                data.Unk_1_raw = reader.ReadUInt32();
-                data.Unk_2_raw = reader.ReadUInt32();
-                data.Unk_3_raw = reader.ReadUInt32();
-                data.Unk_4_raw = reader.ReadUInt32();
+                data.Level_1_raw = reader.ReadUInt32();
+                data.Level_2_raw = reader.ReadUInt32();
+                data.Level_3_raw = reader.ReadUInt32();
+                data.Level_4_raw = reader.ReadUInt32();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_1_raw);
-                writer.Write(Unk_2_raw);
-                writer.Write(Unk_3_raw);
-                writer.Write(Unk_4_raw);
+                writer.Write(Level_1_raw);
+                writer.Write(Level_2_raw);
+                writer.Write(Level_3_raw);
+                writer.Write(Level_4_raw);
             }
         }
 
@@ -3212,129 +3212,129 @@ namespace MHW_Editor.Weapons {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W11p Params (6) - Bow Coating Params";
 
-            protected byte Unk_112_raw;
-            public const string Unk_112_displayName = "Unk 112";
-            public const int Unk_112_sortIndex = 50;
-            [SortOrder(Unk_112_sortIndex)]
-            [DisplayName(Unk_112_displayName)]
-            public virtual byte Unk_112 {
-                get => Unk_112_raw;
+            protected sbyte Level_Charge_per_Shot_Dash_Normal_Shot_raw;
+            public const string Level_Charge_per_Shot_Dash_Normal_Shot_displayName = "Level Charge per Shot/Dash: Normal Shot";
+            public const int Level_Charge_per_Shot_Dash_Normal_Shot_sortIndex = 50;
+            [SortOrder(Level_Charge_per_Shot_Dash_Normal_Shot_sortIndex)]
+            [DisplayName(Level_Charge_per_Shot_Dash_Normal_Shot_displayName)]
+            public virtual sbyte Level_Charge_per_Shot_Dash_Normal_Shot {
+                get => Level_Charge_per_Shot_Dash_Normal_Shot_raw;
                 set {
-                    if (Unk_112_raw == value) return;
-                    Unk_112_raw = value;
-                    OnPropertyChanged(nameof(Unk_112));
+                    if (Level_Charge_per_Shot_Dash_Normal_Shot_raw == value) return;
+                    Level_Charge_per_Shot_Dash_Normal_Shot_raw = value;
+                    OnPropertyChanged(nameof(Level_Charge_per_Shot_Dash_Normal_Shot));
                 }
             }
 
-            protected byte Unk_113_raw;
-            public const string Unk_113_displayName = "Unk 113";
-            public const int Unk_113_sortIndex = 100;
-            [SortOrder(Unk_113_sortIndex)]
-            [DisplayName(Unk_113_displayName)]
-            public virtual byte Unk_113 {
-                get => Unk_113_raw;
+            protected sbyte Level_Charge_per_Shot_Dash_Quick_Shot_raw;
+            public const string Level_Charge_per_Shot_Dash_Quick_Shot_displayName = "Level Charge per Shot/Dash: Quick Shot";
+            public const int Level_Charge_per_Shot_Dash_Quick_Shot_sortIndex = 100;
+            [SortOrder(Level_Charge_per_Shot_Dash_Quick_Shot_sortIndex)]
+            [DisplayName(Level_Charge_per_Shot_Dash_Quick_Shot_displayName)]
+            public virtual sbyte Level_Charge_per_Shot_Dash_Quick_Shot {
+                get => Level_Charge_per_Shot_Dash_Quick_Shot_raw;
                 set {
-                    if (Unk_113_raw == value) return;
-                    Unk_113_raw = value;
-                    OnPropertyChanged(nameof(Unk_113));
+                    if (Level_Charge_per_Shot_Dash_Quick_Shot_raw == value) return;
+                    Level_Charge_per_Shot_Dash_Quick_Shot_raw = value;
+                    OnPropertyChanged(nameof(Level_Charge_per_Shot_Dash_Quick_Shot));
                 }
             }
 
-            protected byte Unk_114_raw;
-            public const string Unk_114_displayName = "Unk 114";
-            public const int Unk_114_sortIndex = 150;
-            [SortOrder(Unk_114_sortIndex)]
-            [DisplayName(Unk_114_displayName)]
-            public virtual byte Unk_114 {
-                get => Unk_114_raw;
+            protected sbyte Level_Charge_per_Shot_Dash_Power_Shot_raw;
+            public const string Level_Charge_per_Shot_Dash_Power_Shot_displayName = "Level Charge per Shot/Dash: Power Shot";
+            public const int Level_Charge_per_Shot_Dash_Power_Shot_sortIndex = 150;
+            [SortOrder(Level_Charge_per_Shot_Dash_Power_Shot_sortIndex)]
+            [DisplayName(Level_Charge_per_Shot_Dash_Power_Shot_displayName)]
+            public virtual sbyte Level_Charge_per_Shot_Dash_Power_Shot {
+                get => Level_Charge_per_Shot_Dash_Power_Shot_raw;
                 set {
-                    if (Unk_114_raw == value) return;
-                    Unk_114_raw = value;
-                    OnPropertyChanged(nameof(Unk_114));
+                    if (Level_Charge_per_Shot_Dash_Power_Shot_raw == value) return;
+                    Level_Charge_per_Shot_Dash_Power_Shot_raw = value;
+                    OnPropertyChanged(nameof(Level_Charge_per_Shot_Dash_Power_Shot));
                 }
             }
 
-            protected byte Unk_115_raw;
-            public const string Unk_115_displayName = "Unk 115";
-            public const int Unk_115_sortIndex = 200;
-            [SortOrder(Unk_115_sortIndex)]
-            [DisplayName(Unk_115_displayName)]
-            public virtual byte Unk_115 {
-                get => Unk_115_raw;
+            protected sbyte Level_Charge_per_Shot_Dash_Arc_Shot_raw;
+            public const string Level_Charge_per_Shot_Dash_Arc_Shot_displayName = "Level Charge per Shot/Dash: Arc Shot";
+            public const int Level_Charge_per_Shot_Dash_Arc_Shot_sortIndex = 200;
+            [SortOrder(Level_Charge_per_Shot_Dash_Arc_Shot_sortIndex)]
+            [DisplayName(Level_Charge_per_Shot_Dash_Arc_Shot_displayName)]
+            public virtual sbyte Level_Charge_per_Shot_Dash_Arc_Shot {
+                get => Level_Charge_per_Shot_Dash_Arc_Shot_raw;
                 set {
-                    if (Unk_115_raw == value) return;
-                    Unk_115_raw = value;
-                    OnPropertyChanged(nameof(Unk_115));
+                    if (Level_Charge_per_Shot_Dash_Arc_Shot_raw == value) return;
+                    Level_Charge_per_Shot_Dash_Arc_Shot_raw = value;
+                    OnPropertyChanged(nameof(Level_Charge_per_Shot_Dash_Arc_Shot));
                 }
             }
 
-            protected byte Unk_116_raw;
-            public const string Unk_116_displayName = "Unk 116";
-            public const int Unk_116_sortIndex = 250;
-            [SortOrder(Unk_116_sortIndex)]
-            [DisplayName(Unk_116_displayName)]
-            public virtual byte Unk_116 {
-                get => Unk_116_raw;
+            protected sbyte Level_Charge_per_Shot_Dash_Unk_1_raw;
+            public const string Level_Charge_per_Shot_Dash_Unk_1_displayName = "Level Charge per Shot/Dash: Unk 1";
+            public const int Level_Charge_per_Shot_Dash_Unk_1_sortIndex = 250;
+            [SortOrder(Level_Charge_per_Shot_Dash_Unk_1_sortIndex)]
+            [DisplayName(Level_Charge_per_Shot_Dash_Unk_1_displayName)]
+            public virtual sbyte Level_Charge_per_Shot_Dash_Unk_1 {
+                get => Level_Charge_per_Shot_Dash_Unk_1_raw;
                 set {
-                    if (Unk_116_raw == value) return;
-                    Unk_116_raw = value;
-                    OnPropertyChanged(nameof(Unk_116));
+                    if (Level_Charge_per_Shot_Dash_Unk_1_raw == value) return;
+                    Level_Charge_per_Shot_Dash_Unk_1_raw = value;
+                    OnPropertyChanged(nameof(Level_Charge_per_Shot_Dash_Unk_1));
                 }
             }
 
-            protected byte Unk_117_raw;
-            public const string Unk_117_displayName = "Unk 117";
-            public const int Unk_117_sortIndex = 300;
-            [SortOrder(Unk_117_sortIndex)]
-            [DisplayName(Unk_117_displayName)]
-            public virtual byte Unk_117 {
-                get => Unk_117_raw;
+            protected sbyte Level_Charge_per_Shot_Dash_Side_Step_raw;
+            public const string Level_Charge_per_Shot_Dash_Side_Step_displayName = "Level Charge per Shot/Dash: Side Step";
+            public const int Level_Charge_per_Shot_Dash_Side_Step_sortIndex = 300;
+            [SortOrder(Level_Charge_per_Shot_Dash_Side_Step_sortIndex)]
+            [DisplayName(Level_Charge_per_Shot_Dash_Side_Step_displayName)]
+            public virtual sbyte Level_Charge_per_Shot_Dash_Side_Step {
+                get => Level_Charge_per_Shot_Dash_Side_Step_raw;
                 set {
-                    if (Unk_117_raw == value) return;
-                    Unk_117_raw = value;
-                    OnPropertyChanged(nameof(Unk_117));
+                    if (Level_Charge_per_Shot_Dash_Side_Step_raw == value) return;
+                    Level_Charge_per_Shot_Dash_Side_Step_raw = value;
+                    OnPropertyChanged(nameof(Level_Charge_per_Shot_Dash_Side_Step));
                 }
             }
 
-            protected byte Unk_118_raw;
-            public const string Unk_118_displayName = "Unk 118";
-            public const int Unk_118_sortIndex = 350;
-            [SortOrder(Unk_118_sortIndex)]
-            [DisplayName(Unk_118_displayName)]
-            public virtual byte Unk_118 {
-                get => Unk_118_raw;
+            protected sbyte Level_Charge_per_Shot_Dash_Unk_2_raw;
+            public const string Level_Charge_per_Shot_Dash_Unk_2_displayName = "Level Charge per Shot/Dash: Unk 2";
+            public const int Level_Charge_per_Shot_Dash_Unk_2_sortIndex = 350;
+            [SortOrder(Level_Charge_per_Shot_Dash_Unk_2_sortIndex)]
+            [DisplayName(Level_Charge_per_Shot_Dash_Unk_2_displayName)]
+            public virtual sbyte Level_Charge_per_Shot_Dash_Unk_2 {
+                get => Level_Charge_per_Shot_Dash_Unk_2_raw;
                 set {
-                    if (Unk_118_raw == value) return;
-                    Unk_118_raw = value;
-                    OnPropertyChanged(nameof(Unk_118));
+                    if (Level_Charge_per_Shot_Dash_Unk_2_raw == value) return;
+                    Level_Charge_per_Shot_Dash_Unk_2_raw = value;
+                    OnPropertyChanged(nameof(Level_Charge_per_Shot_Dash_Unk_2));
                 }
             }
 
-            protected float Unk_119_raw;
-            public const string Unk_119_displayName = "Unk 119";
-            public const int Unk_119_sortIndex = 400;
-            [SortOrder(Unk_119_sortIndex)]
-            [DisplayName(Unk_119_displayName)]
-            public virtual float Unk_119 {
-                get => Unk_119_raw;
+            protected float Close_Range_Coating_Critical_End_Multiplier_raw;
+            public const string Close_Range_Coating_Critical_End_Multiplier_displayName = "Close Range Coating Critical End Multiplier";
+            public const int Close_Range_Coating_Critical_End_Multiplier_sortIndex = 400;
+            [SortOrder(Close_Range_Coating_Critical_End_Multiplier_sortIndex)]
+            [DisplayName(Close_Range_Coating_Critical_End_Multiplier_displayName)]
+            public virtual float Close_Range_Coating_Critical_End_Multiplier {
+                get => Close_Range_Coating_Critical_End_Multiplier_raw;
                 set {
-                    if (Unk_119_raw == value) return;
-                    Unk_119_raw = value;
-                    OnPropertyChanged(nameof(Unk_119));
+                    if (Close_Range_Coating_Critical_End_Multiplier_raw == value) return;
+                    Close_Range_Coating_Critical_End_Multiplier_raw = value;
+                    OnPropertyChanged(nameof(Close_Range_Coating_Critical_End_Multiplier));
                 }
             }
 
-            protected float Unk_120_raw;
-            public const string Unk_120_displayName = "Unk 120";
-            public const int Unk_120_sortIndex = 450;
-            [SortOrder(Unk_120_sortIndex)]
-            [DisplayName(Unk_120_displayName)]
-            public virtual float Unk_120 {
-                get => Unk_120_raw;
+            protected float Close_Range_Coating_Critical_Start_Multiplier_raw;
+            public const string Close_Range_Coating_Critical_Start_Multiplier_displayName = "Close Range Coating Critical Start Multiplier";
+            public const int Close_Range_Coating_Critical_Start_Multiplier_sortIndex = 450;
+            [SortOrder(Close_Range_Coating_Critical_Start_Multiplier_sortIndex)]
+            [DisplayName(Close_Range_Coating_Critical_Start_Multiplier_displayName)]
+            public virtual float Close_Range_Coating_Critical_Start_Multiplier {
+                get => Close_Range_Coating_Critical_Start_Multiplier_raw;
                 set {
-                    if (Unk_120_raw == value) return;
-                    Unk_120_raw = value;
-                    OnPropertyChanged(nameof(Unk_120));
+                    if (Close_Range_Coating_Critical_Start_Multiplier_raw == value) return;
+                    Close_Range_Coating_Critical_Start_Multiplier_raw = value;
+                    OnPropertyChanged(nameof(Close_Range_Coating_Critical_Start_Multiplier));
                 }
             }
 
@@ -3422,87 +3422,87 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected short Unk_127_raw;
-            public const string Unk_127_displayName = "Unk 127";
-            public const int Unk_127_sortIndex = 800;
-            [SortOrder(Unk_127_sortIndex)]
-            [DisplayName(Unk_127_displayName)]
-            public virtual short Unk_127 {
-                get => Unk_127_raw;
+            protected short Paralysis_Coating_Damage_raw;
+            public const string Paralysis_Coating_Damage_displayName = "Paralysis Coating Damage";
+            public const int Paralysis_Coating_Damage_sortIndex = 800;
+            [SortOrder(Paralysis_Coating_Damage_sortIndex)]
+            [DisplayName(Paralysis_Coating_Damage_displayName)]
+            public virtual short Paralysis_Coating_Damage {
+                get => Paralysis_Coating_Damage_raw;
                 set {
-                    if (Unk_127_raw == value) return;
-                    Unk_127_raw = value;
-                    OnPropertyChanged(nameof(Unk_127));
+                    if (Paralysis_Coating_Damage_raw == value) return;
+                    Paralysis_Coating_Damage_raw = value;
+                    OnPropertyChanged(nameof(Paralysis_Coating_Damage));
                 }
             }
 
-            protected short Unk_128_raw;
-            public const string Unk_128_displayName = "Unk 128";
-            public const int Unk_128_sortIndex = 850;
-            [SortOrder(Unk_128_sortIndex)]
-            [DisplayName(Unk_128_displayName)]
-            public virtual short Unk_128 {
-                get => Unk_128_raw;
+            protected short Paralysis_CoatingPlus_Damage_raw;
+            public const string Paralysis_CoatingPlus_Damage_displayName = "Paralysis Coating+ Damage";
+            public const int Paralysis_CoatingPlus_Damage_sortIndex = 850;
+            [SortOrder(Paralysis_CoatingPlus_Damage_sortIndex)]
+            [DisplayName(Paralysis_CoatingPlus_Damage_displayName)]
+            public virtual short Paralysis_CoatingPlus_Damage {
+                get => Paralysis_CoatingPlus_Damage_raw;
                 set {
-                    if (Unk_128_raw == value) return;
-                    Unk_128_raw = value;
-                    OnPropertyChanged(nameof(Unk_128));
+                    if (Paralysis_CoatingPlus_Damage_raw == value) return;
+                    Paralysis_CoatingPlus_Damage_raw = value;
+                    OnPropertyChanged(nameof(Paralysis_CoatingPlus_Damage));
                 }
             }
 
-            protected short Unk_129_raw;
-            public const string Unk_129_displayName = "Unk 129";
-            public const int Unk_129_sortIndex = 900;
-            [SortOrder(Unk_129_sortIndex)]
-            [DisplayName(Unk_129_displayName)]
-            public virtual short Unk_129 {
-                get => Unk_129_raw;
+            protected short Poison_Coating_Damage_raw;
+            public const string Poison_Coating_Damage_displayName = "Poison Coating Damage";
+            public const int Poison_Coating_Damage_sortIndex = 900;
+            [SortOrder(Poison_Coating_Damage_sortIndex)]
+            [DisplayName(Poison_Coating_Damage_displayName)]
+            public virtual short Poison_Coating_Damage {
+                get => Poison_Coating_Damage_raw;
                 set {
-                    if (Unk_129_raw == value) return;
-                    Unk_129_raw = value;
-                    OnPropertyChanged(nameof(Unk_129));
+                    if (Poison_Coating_Damage_raw == value) return;
+                    Poison_Coating_Damage_raw = value;
+                    OnPropertyChanged(nameof(Poison_Coating_Damage));
                 }
             }
 
-            protected short Unk_130_raw;
-            public const string Unk_130_displayName = "Unk 130";
-            public const int Unk_130_sortIndex = 950;
-            [SortOrder(Unk_130_sortIndex)]
-            [DisplayName(Unk_130_displayName)]
-            public virtual short Unk_130 {
-                get => Unk_130_raw;
+            protected short Poison_CoatingPlus_Damage_raw;
+            public const string Poison_CoatingPlus_Damage_displayName = "Poison Coating+ Damage";
+            public const int Poison_CoatingPlus_Damage_sortIndex = 950;
+            [SortOrder(Poison_CoatingPlus_Damage_sortIndex)]
+            [DisplayName(Poison_CoatingPlus_Damage_displayName)]
+            public virtual short Poison_CoatingPlus_Damage {
+                get => Poison_CoatingPlus_Damage_raw;
                 set {
-                    if (Unk_130_raw == value) return;
-                    Unk_130_raw = value;
-                    OnPropertyChanged(nameof(Unk_130));
+                    if (Poison_CoatingPlus_Damage_raw == value) return;
+                    Poison_CoatingPlus_Damage_raw = value;
+                    OnPropertyChanged(nameof(Poison_CoatingPlus_Damage));
                 }
             }
 
-            protected short Unk_131_raw;
-            public const string Unk_131_displayName = "Unk 131";
-            public const int Unk_131_sortIndex = 1000;
-            [SortOrder(Unk_131_sortIndex)]
-            [DisplayName(Unk_131_displayName)]
-            public virtual short Unk_131 {
-                get => Unk_131_raw;
+            protected short Sleep_Coating_Damage_raw;
+            public const string Sleep_Coating_Damage_displayName = "Sleep Coating Damage";
+            public const int Sleep_Coating_Damage_sortIndex = 1000;
+            [SortOrder(Sleep_Coating_Damage_sortIndex)]
+            [DisplayName(Sleep_Coating_Damage_displayName)]
+            public virtual short Sleep_Coating_Damage {
+                get => Sleep_Coating_Damage_raw;
                 set {
-                    if (Unk_131_raw == value) return;
-                    Unk_131_raw = value;
-                    OnPropertyChanged(nameof(Unk_131));
+                    if (Sleep_Coating_Damage_raw == value) return;
+                    Sleep_Coating_Damage_raw = value;
+                    OnPropertyChanged(nameof(Sleep_Coating_Damage));
                 }
             }
 
-            protected short Unk_132_raw;
-            public const string Unk_132_displayName = "Unk 132";
-            public const int Unk_132_sortIndex = 1050;
-            [SortOrder(Unk_132_sortIndex)]
-            [DisplayName(Unk_132_displayName)]
-            public virtual short Unk_132 {
-                get => Unk_132_raw;
+            protected short Sleep_CoatingPlus_Damage_raw;
+            public const string Sleep_CoatingPlus_Damage_displayName = "Sleep Coating+ Damage";
+            public const int Sleep_CoatingPlus_Damage_sortIndex = 1050;
+            [SortOrder(Sleep_CoatingPlus_Damage_sortIndex)]
+            [DisplayName(Sleep_CoatingPlus_Damage_displayName)]
+            public virtual short Sleep_CoatingPlus_Damage {
+                get => Sleep_CoatingPlus_Damage_raw;
                 set {
-                    if (Unk_132_raw == value) return;
-                    Unk_132_raw = value;
-                    OnPropertyChanged(nameof(Unk_132));
+                    if (Sleep_CoatingPlus_Damage_raw == value) return;
+                    Sleep_CoatingPlus_Damage_raw = value;
+                    OnPropertyChanged(nameof(Sleep_CoatingPlus_Damage));
                 }
             }
 
@@ -3520,17 +3520,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected short Blast_Coating_Plus_Damage_raw;
-            public const string Blast_Coating_Plus_Damage_displayName = "Blast Coating Plus Damage";
-            public const int Blast_Coating_Plus_Damage_sortIndex = 1150;
-            [SortOrder(Blast_Coating_Plus_Damage_sortIndex)]
-            [DisplayName(Blast_Coating_Plus_Damage_displayName)]
-            public virtual short Blast_Coating_Plus_Damage {
-                get => Blast_Coating_Plus_Damage_raw;
+            protected short Blast_CoatingPlus_Damage_raw;
+            public const string Blast_CoatingPlus_Damage_displayName = "Blast Coating+ Damage";
+            public const int Blast_CoatingPlus_Damage_sortIndex = 1150;
+            [SortOrder(Blast_CoatingPlus_Damage_sortIndex)]
+            [DisplayName(Blast_CoatingPlus_Damage_displayName)]
+            public virtual short Blast_CoatingPlus_Damage {
+                get => Blast_CoatingPlus_Damage_raw;
                 set {
-                    if (Blast_Coating_Plus_Damage_raw == value) return;
-                    Blast_Coating_Plus_Damage_raw = value;
-                    OnPropertyChanged(nameof(Blast_Coating_Plus_Damage));
+                    if (Blast_CoatingPlus_Damage_raw == value) return;
+                    Blast_CoatingPlus_Damage_raw = value;
+                    OnPropertyChanged(nameof(Blast_CoatingPlus_Damage));
                 }
             }
 
@@ -3560,85 +3560,85 @@ namespace MHW_Editor.Weapons {
             public static W11p_Params_6_Bow_Coating_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new W11p_Params_6_Bow_Coating_Params();
                 data.Index = i;
-                data.Unk_112_raw = reader.ReadByte();
-                data.Unk_113_raw = reader.ReadByte();
-                data.Unk_114_raw = reader.ReadByte();
-                data.Unk_115_raw = reader.ReadByte();
-                data.Unk_116_raw = reader.ReadByte();
-                data.Unk_117_raw = reader.ReadByte();
-                data.Unk_118_raw = reader.ReadByte();
-                data.Unk_119_raw = reader.ReadSingle();
-                data.Unk_120_raw = reader.ReadSingle();
+                data.Level_Charge_per_Shot_Dash_Normal_Shot_raw = reader.ReadSByte();
+                data.Level_Charge_per_Shot_Dash_Quick_Shot_raw = reader.ReadSByte();
+                data.Level_Charge_per_Shot_Dash_Power_Shot_raw = reader.ReadSByte();
+                data.Level_Charge_per_Shot_Dash_Arc_Shot_raw = reader.ReadSByte();
+                data.Level_Charge_per_Shot_Dash_Unk_1_raw = reader.ReadSByte();
+                data.Level_Charge_per_Shot_Dash_Side_Step_raw = reader.ReadSByte();
+                data.Level_Charge_per_Shot_Dash_Unk_2_raw = reader.ReadSByte();
+                data.Close_Range_Coating_Critical_End_Multiplier_raw = reader.ReadSingle();
+                data.Close_Range_Coating_Critical_Start_Multiplier_raw = reader.ReadSingle();
                 data.Unk_121_raw = reader.ReadSingle();
                 data.Close_Range_Coating_Damage_raw = reader.ReadSingle();
                 data.Unk_123_raw = reader.ReadSingle();
                 data.Unk_124_raw = reader.ReadSingle();
                 data.Power_Coating_Damage_raw = reader.ReadSingle();
                 data.Unk_126_raw = reader.ReadSingle();
-                data.Unk_127_raw = reader.ReadInt16();
-                data.Unk_128_raw = reader.ReadInt16();
-                data.Unk_129_raw = reader.ReadInt16();
-                data.Unk_130_raw = reader.ReadInt16();
-                data.Unk_131_raw = reader.ReadInt16();
-                data.Unk_132_raw = reader.ReadInt16();
+                data.Paralysis_Coating_Damage_raw = reader.ReadInt16();
+                data.Paralysis_CoatingPlus_Damage_raw = reader.ReadInt16();
+                data.Poison_Coating_Damage_raw = reader.ReadInt16();
+                data.Poison_CoatingPlus_Damage_raw = reader.ReadInt16();
+                data.Sleep_Coating_Damage_raw = reader.ReadInt16();
+                data.Sleep_CoatingPlus_Damage_raw = reader.ReadInt16();
                 data.Blast_Coating_Damage_raw = reader.ReadInt16();
-                data.Blast_Coating_Plus_Damage_raw = reader.ReadInt16();
+                data.Blast_CoatingPlus_Damage_raw = reader.ReadInt16();
                 data.Unk_135_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_112_raw);
-                writer.Write(Unk_113_raw);
-                writer.Write(Unk_114_raw);
-                writer.Write(Unk_115_raw);
-                writer.Write(Unk_116_raw);
-                writer.Write(Unk_117_raw);
-                writer.Write(Unk_118_raw);
-                writer.Write(Unk_119_raw);
-                writer.Write(Unk_120_raw);
+                writer.Write(Level_Charge_per_Shot_Dash_Normal_Shot_raw);
+                writer.Write(Level_Charge_per_Shot_Dash_Quick_Shot_raw);
+                writer.Write(Level_Charge_per_Shot_Dash_Power_Shot_raw);
+                writer.Write(Level_Charge_per_Shot_Dash_Arc_Shot_raw);
+                writer.Write(Level_Charge_per_Shot_Dash_Unk_1_raw);
+                writer.Write(Level_Charge_per_Shot_Dash_Side_Step_raw);
+                writer.Write(Level_Charge_per_Shot_Dash_Unk_2_raw);
+                writer.Write(Close_Range_Coating_Critical_End_Multiplier_raw);
+                writer.Write(Close_Range_Coating_Critical_Start_Multiplier_raw);
                 writer.Write(Unk_121_raw);
                 writer.Write(Close_Range_Coating_Damage_raw);
                 writer.Write(Unk_123_raw);
                 writer.Write(Unk_124_raw);
                 writer.Write(Power_Coating_Damage_raw);
                 writer.Write(Unk_126_raw);
-                writer.Write(Unk_127_raw);
-                writer.Write(Unk_128_raw);
-                writer.Write(Unk_129_raw);
-                writer.Write(Unk_130_raw);
-                writer.Write(Unk_131_raw);
-                writer.Write(Unk_132_raw);
+                writer.Write(Paralysis_Coating_Damage_raw);
+                writer.Write(Paralysis_CoatingPlus_Damage_raw);
+                writer.Write(Poison_Coating_Damage_raw);
+                writer.Write(Poison_CoatingPlus_Damage_raw);
+                writer.Write(Sleep_Coating_Damage_raw);
+                writer.Write(Sleep_CoatingPlus_Damage_raw);
                 writer.Write(Blast_Coating_Damage_raw);
-                writer.Write(Blast_Coating_Plus_Damage_raw);
+                writer.Write(Blast_CoatingPlus_Damage_raw);
                 writer.Write(Unk_135_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 112", "Unk_112"),
-                    new MultiStructItemCustomView(this, "Unk 113", "Unk_113"),
-                    new MultiStructItemCustomView(this, "Unk 114", "Unk_114"),
-                    new MultiStructItemCustomView(this, "Unk 115", "Unk_115"),
-                    new MultiStructItemCustomView(this, "Unk 116", "Unk_116"),
-                    new MultiStructItemCustomView(this, "Unk 117", "Unk_117"),
-                    new MultiStructItemCustomView(this, "Unk 118", "Unk_118"),
-                    new MultiStructItemCustomView(this, "Unk 119", "Unk_119"),
-                    new MultiStructItemCustomView(this, "Unk 120", "Unk_120"),
+                    new MultiStructItemCustomView(this, "Level Charge per Shot/Dash: Normal Shot", "Level_Charge_per_Shot_Dash_Normal_Shot"),
+                    new MultiStructItemCustomView(this, "Level Charge per Shot/Dash: Quick Shot", "Level_Charge_per_Shot_Dash_Quick_Shot"),
+                    new MultiStructItemCustomView(this, "Level Charge per Shot/Dash: Power Shot", "Level_Charge_per_Shot_Dash_Power_Shot"),
+                    new MultiStructItemCustomView(this, "Level Charge per Shot/Dash: Arc Shot", "Level_Charge_per_Shot_Dash_Arc_Shot"),
+                    new MultiStructItemCustomView(this, "Level Charge per Shot/Dash: Unk 1", "Level_Charge_per_Shot_Dash_Unk_1"),
+                    new MultiStructItemCustomView(this, "Level Charge per Shot/Dash: Side Step", "Level_Charge_per_Shot_Dash_Side_Step"),
+                    new MultiStructItemCustomView(this, "Level Charge per Shot/Dash: Unk 2", "Level_Charge_per_Shot_Dash_Unk_2"),
+                    new MultiStructItemCustomView(this, "Close Range Coating Critical End Multiplier", "Close_Range_Coating_Critical_End_Multiplier"),
+                    new MultiStructItemCustomView(this, "Close Range Coating Critical Start Multiplier", "Close_Range_Coating_Critical_Start_Multiplier"),
                     new MultiStructItemCustomView(this, "Unk 121", "Unk_121"),
                     new MultiStructItemCustomView(this, "Close Range Coating Damage", "Close_Range_Coating_Damage"),
                     new MultiStructItemCustomView(this, "Unk 123", "Unk_123"),
                     new MultiStructItemCustomView(this, "Unk 124", "Unk_124"),
                     new MultiStructItemCustomView(this, "Power Coating Damage", "Power_Coating_Damage"),
                     new MultiStructItemCustomView(this, "Unk 126", "Unk_126"),
-                    new MultiStructItemCustomView(this, "Unk 127", "Unk_127"),
-                    new MultiStructItemCustomView(this, "Unk 128", "Unk_128"),
-                    new MultiStructItemCustomView(this, "Unk 129", "Unk_129"),
-                    new MultiStructItemCustomView(this, "Unk 130", "Unk_130"),
-                    new MultiStructItemCustomView(this, "Unk 131", "Unk_131"),
-                    new MultiStructItemCustomView(this, "Unk 132", "Unk_132"),
+                    new MultiStructItemCustomView(this, "Paralysis Coating Damage", "Paralysis_Coating_Damage"),
+                    new MultiStructItemCustomView(this, "Paralysis Coating+ Damage", "Paralysis_CoatingPlus_Damage"),
+                    new MultiStructItemCustomView(this, "Poison Coating Damage", "Poison_Coating_Damage"),
+                    new MultiStructItemCustomView(this, "Poison Coating+ Damage", "Poison_CoatingPlus_Damage"),
+                    new MultiStructItemCustomView(this, "Sleep Coating Damage", "Sleep_Coating_Damage"),
+                    new MultiStructItemCustomView(this, "Sleep Coating+ Damage", "Sleep_CoatingPlus_Damage"),
                     new MultiStructItemCustomView(this, "Blast Coating Damage", "Blast_Coating_Damage"),
-                    new MultiStructItemCustomView(this, "Blast Coating Plus Damage", "Blast_Coating_Plus_Damage"),
+                    new MultiStructItemCustomView(this, "Blast Coating+ Damage", "Blast_CoatingPlus_Damage"),
                     new MultiStructItemCustomView(this, "Unk 135", "Unk_135"),
                 };
             }
@@ -4949,35 +4949,35 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public partial class W11p_Params_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W11p_Params_8_Thousand_Dragons : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "W11p Params (8)";
+            public const string GridName = "W11p Params (8) - Thousand Dragons";
 
-            protected float Unk_199_raw;
-            public const string Unk_199_displayName = "Unk 199";
-            public const int Unk_199_sortIndex = 50;
-            [SortOrder(Unk_199_sortIndex)]
-            [DisplayName(Unk_199_displayName)]
-            public virtual float Unk_199 {
-                get => Unk_199_raw;
+            protected float Critical_Range_End_Multiplier__raw;
+            public const string Critical_Range_End_Multiplier__displayName = "Critical Range End Multiplier?";
+            public const int Critical_Range_End_Multiplier__sortIndex = 50;
+            [SortOrder(Critical_Range_End_Multiplier__sortIndex)]
+            [DisplayName(Critical_Range_End_Multiplier__displayName)]
+            public virtual float Critical_Range_End_Multiplier_ {
+                get => Critical_Range_End_Multiplier__raw;
                 set {
-                    if (Unk_199_raw == value) return;
-                    Unk_199_raw = value;
-                    OnPropertyChanged(nameof(Unk_199));
+                    if (Critical_Range_End_Multiplier__raw == value) return;
+                    Critical_Range_End_Multiplier__raw = value;
+                    OnPropertyChanged(nameof(Critical_Range_End_Multiplier_));
                 }
             }
 
-            protected float Unk_200_raw;
-            public const string Unk_200_displayName = "Unk 200";
-            public const int Unk_200_sortIndex = 100;
-            [SortOrder(Unk_200_sortIndex)]
-            [DisplayName(Unk_200_displayName)]
-            public virtual float Unk_200 {
-                get => Unk_200_raw;
+            protected float Critical_Range_Start_Multiplier__raw;
+            public const string Critical_Range_Start_Multiplier__displayName = "Critical Range Start Multiplier?";
+            public const int Critical_Range_Start_Multiplier__sortIndex = 100;
+            [SortOrder(Critical_Range_Start_Multiplier__sortIndex)]
+            [DisplayName(Critical_Range_Start_Multiplier__displayName)]
+            public virtual float Critical_Range_Start_Multiplier_ {
+                get => Critical_Range_Start_Multiplier__raw;
                 set {
-                    if (Unk_200_raw == value) return;
-                    Unk_200_raw = value;
-                    OnPropertyChanged(nameof(Unk_200));
+                    if (Critical_Range_Start_Multiplier__raw == value) return;
+                    Critical_Range_Start_Multiplier__raw = value;
+                    OnPropertyChanged(nameof(Critical_Range_Start_Multiplier_));
                 }
             }
 
@@ -4995,31 +4995,31 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_202_raw;
-            public const string Unk_202_displayName = "Unk 202";
-            public const int Unk_202_sortIndex = 200;
-            [SortOrder(Unk_202_sortIndex)]
-            [DisplayName(Unk_202_displayName)]
-            public virtual float Unk_202 {
-                get => Unk_202_raw;
+            protected float Main_Arrow_Spread_Angle__raw;
+            public const string Main_Arrow_Spread_Angle__displayName = "Main Arrow Spread Angle?";
+            public const int Main_Arrow_Spread_Angle__sortIndex = 200;
+            [SortOrder(Main_Arrow_Spread_Angle__sortIndex)]
+            [DisplayName(Main_Arrow_Spread_Angle__displayName)]
+            public virtual float Main_Arrow_Spread_Angle_ {
+                get => Main_Arrow_Spread_Angle__raw;
                 set {
-                    if (Unk_202_raw == value) return;
-                    Unk_202_raw = value;
-                    OnPropertyChanged(nameof(Unk_202));
+                    if (Main_Arrow_Spread_Angle__raw == value) return;
+                    Main_Arrow_Spread_Angle__raw = value;
+                    OnPropertyChanged(nameof(Main_Arrow_Spread_Angle_));
                 }
             }
 
-            protected uint Unk_203_raw;
-            public const string Unk_203_displayName = "Unk 203";
-            public const int Unk_203_sortIndex = 250;
-            [SortOrder(Unk_203_sortIndex)]
-            [DisplayName(Unk_203_displayName)]
-            public virtual uint Unk_203 {
-                get => Unk_203_raw;
+            protected uint Number_of_Arrows_Shot_raw;
+            public const string Number_of_Arrows_Shot_displayName = "Number of Arrows Shot";
+            public const int Number_of_Arrows_Shot_sortIndex = 250;
+            [SortOrder(Number_of_Arrows_Shot_sortIndex)]
+            [DisplayName(Number_of_Arrows_Shot_displayName)]
+            public virtual uint Number_of_Arrows_Shot {
+                get => Number_of_Arrows_Shot_raw;
                 set {
-                    if (Unk_203_raw == value) return;
-                    Unk_203_raw = value;
-                    OnPropertyChanged(nameof(Unk_203));
+                    if (Number_of_Arrows_Shot_raw == value) return;
+                    Number_of_Arrows_Shot_raw = value;
+                    OnPropertyChanged(nameof(Number_of_Arrows_Shot));
                 }
             }
 
@@ -5032,32 +5032,32 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static W11p_Params_8_ LoadData(BinaryReader reader, ulong i) {
-                var data = new W11p_Params_8_();
+            public static W11p_Params_8_Thousand_Dragons LoadData(BinaryReader reader, ulong i) {
+                var data = new W11p_Params_8_Thousand_Dragons();
                 data.Index = i;
-                data.Unk_199_raw = reader.ReadSingle();
-                data.Unk_200_raw = reader.ReadSingle();
+                data.Critical_Range_End_Multiplier__raw = reader.ReadSingle();
+                data.Critical_Range_Start_Multiplier__raw = reader.ReadSingle();
                 data.Unk_201_raw = reader.ReadByte();
-                data.Unk_202_raw = reader.ReadSingle();
-                data.Unk_203_raw = reader.ReadUInt32();
+                data.Main_Arrow_Spread_Angle__raw = reader.ReadSingle();
+                data.Number_of_Arrows_Shot_raw = reader.ReadUInt32();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_199_raw);
-                writer.Write(Unk_200_raw);
+                writer.Write(Critical_Range_End_Multiplier__raw);
+                writer.Write(Critical_Range_Start_Multiplier__raw);
                 writer.Write(Unk_201_raw);
-                writer.Write(Unk_202_raw);
-                writer.Write(Unk_203_raw);
+                writer.Write(Main_Arrow_Spread_Angle__raw);
+                writer.Write(Number_of_Arrows_Shot_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 199", "Unk_199"),
-                    new MultiStructItemCustomView(this, "Unk 200", "Unk_200"),
+                    new MultiStructItemCustomView(this, "Critical Range End Multiplier?", "Critical_Range_End_Multiplier_"),
+                    new MultiStructItemCustomView(this, "Critical Range Start Multiplier?", "Critical_Range_Start_Multiplier_"),
                     new MultiStructItemCustomView(this, "Unk 201", "Unk_201"),
-                    new MultiStructItemCustomView(this, "Unk 202", "Unk_202"),
-                    new MultiStructItemCustomView(this, "Unk 203", "Unk_203"),
+                    new MultiStructItemCustomView(this, "Main Arrow Spread Angle?", "Main_Arrow_Spread_Angle_"),
+                    new MultiStructItemCustomView(this, "Number of Arrows Shot", "Number_of_Arrows_Shot"),
                 };
             }
         }
@@ -5939,14 +5939,14 @@ namespace MHW_Editor.Weapons {
             data.AddLast(Unk_Arr_2_Shared__);
             var W11p_Params_4_Shared__ = new MhwStructDataContainer(W11p_Params_4_Shared_.LoadData(reader, null), typeof(W11p_Params_4_Shared_));
             data.AddLast(W11p_Params_4_Shared__);
-            var Unk_Arr_3_ = new MhwStructDataContainer(Unk_Arr_3.LoadData(reader, null), typeof(Unk_Arr_3));
-            data.AddLast(Unk_Arr_3_);
+            var Bow_Charge_ = new MhwStructDataContainer(Bow_Charge.LoadData(reader, null), typeof(Bow_Charge));
+            data.AddLast(Bow_Charge_);
             var Event_Pad_Vib_ = new MhwStructDataContainer(Event_Pad_Vib.LoadData(reader, null), typeof(Event_Pad_Vib));
             data.AddLast(Event_Pad_Vib_);
             var W11p_Params_5__ = new MhwStructDataContainer(W11p_Params_5_.LoadData(reader, null), typeof(W11p_Params_5_));
             data.AddLast(W11p_Params_5__);
-            var Unk_Arr_4_ = new MhwStructDataContainer(Unk_Arr_4.LoadData(reader, null), typeof(Unk_Arr_4));
-            data.AddLast(Unk_Arr_4_);
+            var Arrows_Shot_ = new MhwStructDataContainer(Arrows_Shot.LoadData(reader, null), typeof(Arrows_Shot));
+            data.AddLast(Arrows_Shot_);
             var Unk_Arr_5_ = new MhwStructDataContainer(Unk_Arr_5.LoadData(reader, null), typeof(Unk_Arr_5));
             data.AddLast(Unk_Arr_5_);
             var Action_Param_1_ = new MhwStructDataContainer(Action_Param_1.LoadData(reader, null), typeof(Action_Param_1));
@@ -5959,8 +5959,8 @@ namespace MHW_Editor.Weapons {
             data.AddLast(W11p_Params_7__);
             var Action_Param_3_ = new MhwStructDataContainer(Action_Param_3.LoadData(reader, null), typeof(Action_Param_3));
             data.AddLast(Action_Param_3_);
-            var W11p_Params_8__ = new MhwStructDataContainer(W11p_Params_8_.LoadData(reader, null), typeof(W11p_Params_8_));
-            data.AddLast(W11p_Params_8__);
+            var W11p_Params_8_Thousand_Dragons_ = new MhwStructDataContainer(W11p_Params_8_Thousand_Dragons.LoadData(reader, null), typeof(W11p_Params_8_Thousand_Dragons));
+            data.AddLast(W11p_Params_8_Thousand_Dragons_);
             var Unk_Arr_6_ = new MhwStructDataContainer(Unk_Arr_6.LoadData(reader, null), typeof(Unk_Arr_6));
             data.AddLast(Unk_Arr_6_);
             var W11p_Params_9__ = new MhwStructDataContainer(W11p_Params_9_.LoadData(reader, null), typeof(W11p_Params_9_));

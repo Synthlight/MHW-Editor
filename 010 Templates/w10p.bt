@@ -147,12 +147,12 @@ float White_Extract_Duration<name="White Extract Duration">;
 float Orange_Extract_Duration<name="Orange Extract Duration">;
 float Triple_Extract_Duration<name="Triple Extract Duration">;
 float Unk_91<name="Unk 91">;
-float Damage_Buff_Red_White<name="Damage Buff: Red + White">;
+float Damage_Buff_Red_Plus_White<name="Damage Buff: Red + White">;
 float Damage_Buff_All_Three_Extracts<name="Damage Buff: All Three Extracts">;
 float Speed_Buff_White<name="Speed Buff: White">;
 float Unk_95<name="Unk 95">;
 float Defense_Buff_Orange<name="Defense Buff: Orange">;
-float Defense_Buff_Orange_White<name="Defense Buff: Orange + White">;
+float Defense_Buff_Orange_Plus_White<name="Defense Buff: Orange + White">;
 
 // Action Param 1
 typedef struct {

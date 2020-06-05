@@ -142,15 +142,15 @@ float Unk_88<name="Unk 88">;
 float Unk_89<name="Unk 89">;
 float Unk_90<name="Unk 90">;
 
-// Unk Arr 3
+// Bow Charge
 typedef struct {
-    float Unk_1<name="Unk 1">;
-    float Unk_2<name="Unk 2">;
-    float Unk_3<name="Unk 3">;
-    float Unk_4<name="Unk 4">;
-} Unk_Arr_3;
+    float Level_1<name="Level 1">;
+    float Level_2<name="Level 2">;
+    float Level_3<name="Level 3">;
+    float Level_4<name="Level 4">;
+} Bow_Charge;
 
-Unk_Arr_3 Unk_Arr_3_[2]<optimize=false, name="Unk Arr 3">;
+Bow_Charge Bow_Charge_[2]<optimize=false, name="Bow Charge">;
 
 // Event Pad Vib
 typedef struct {
@@ -189,15 +189,15 @@ float Dragonpiercer_Y1<name="Dragonpiercer Y1">;
 float Dragonpiercer_X2<name="Dragonpiercer X2">;
 float Dragonpiercer_Y2<name="Dragonpiercer Y2">;
 
-// Unk Arr 4
+// Arrows Shot
 typedef struct {
-    uint Unk_1<name="Unk 1">;
-    uint Unk_2<name="Unk 2">;
-    uint Unk_3<name="Unk 3">;
-    uint Unk_4<name="Unk 4">;
-} Unk_Arr_4;
+    uint Level_1<name="Level 1">;
+    uint Level_2<name="Level 2">;
+    uint Level_3<name="Level 3">;
+    uint Level_4<name="Level 4">;
+} Arrows_Shot;
 
-Unk_Arr_4 Unk_Arr_4_[3]<optimize=false, name="Unk Arr 4">;
+Arrows_Shot Arrows_Shot_[3]<optimize=false, name="Arrows Shot">;
 
 // Unk Arr 5
 typedef struct {
@@ -230,29 +230,29 @@ typedef struct {
 
 Action_Param_1 Action_Param_1_[2]<optimize=false, name="Action Param 1">;
 
-ubyte Unk_112<name="Unk 112">;
-ubyte Unk_113<name="Unk 113">;
-ubyte Unk_114<name="Unk 114">;
-ubyte Unk_115<name="Unk 115">;
-ubyte Unk_116<name="Unk 116">;
-ubyte Unk_117<name="Unk 117">;
-ubyte Unk_118<name="Unk 118">;
-float Unk_119<name="Unk 119">;
-float Unk_120<name="Unk 120">;
+byte Level_Charge_per_Shot_Dash_Normal_Shot<name="Level Charge per Shot/Dash: Normal Shot">;
+byte Level_Charge_per_Shot_Dash_Quick_Shot<name="Level Charge per Shot/Dash: Quick Shot">;
+byte Level_Charge_per_Shot_Dash_Power_Shot<name="Level Charge per Shot/Dash: Power Shot">;
+byte Level_Charge_per_Shot_Dash_Arc_Shot<name="Level Charge per Shot/Dash: Arc Shot">;
+byte Level_Charge_per_Shot_Dash_Unk_1<name="Level Charge per Shot/Dash: Unk 1">;
+byte Level_Charge_per_Shot_Dash_Side_Step<name="Level Charge per Shot/Dash: Side Step">;
+byte Level_Charge_per_Shot_Dash_Unk_2<name="Level Charge per Shot/Dash: Unk 2">;
+float Close_Range_Coating_Critical_End_Multiplier<name="Close Range Coating Critical End Multiplier">;
+float Close_Range_Coating_Critical_Start_Multiplier<name="Close Range Coating Critical Start Multiplier">;
 float Unk_121<name="Unk 121">;
 float Close_Range_Coating_Damage<name="Close Range Coating Damage">;
 float Unk_123<name="Unk 123">;
 float Unk_124<name="Unk 124">;
 float Power_Coating_Damage<name="Power Coating Damage">;
 float Unk_126<name="Unk 126">;
-short Unk_127<name="Unk 127">;
-short Unk_128<name="Unk 128">;
-short Unk_129<name="Unk 129">;
-short Unk_130<name="Unk 130">;
-short Unk_131<name="Unk 131">;
-short Unk_132<name="Unk 132">;
+short Paralysis_Coating_Damage<name="Paralysis Coating Damage">;
+short Paralysis_CoatingPlus_Damage<name="Paralysis Coating+ Damage">;
+short Poison_Coating_Damage<name="Poison Coating Damage">;
+short Poison_CoatingPlus_Damage<name="Poison Coating+ Damage">;
+short Sleep_Coating_Damage<name="Sleep Coating Damage">;
+short Sleep_CoatingPlus_Damage<name="Sleep Coating+ Damage">;
 short Blast_Coating_Damage<name="Blast Coating Damage">;
-short Blast_Coating_Plus_Damage<name="Blast Coating Plus Damage">;
+short Blast_CoatingPlus_Damage<name="Blast Coating+ Damage">;
 float Unk_135<name="Unk 135">;
 
 // Action Param 2
@@ -341,11 +341,11 @@ typedef struct {
 
 Action_Param_3 Action_Param_3_<name="Action Param 3">;
 
-float Unk_199<name="Unk 199">;
-float Unk_200<name="Unk 200">;
+float Critical_Range_End_Multiplier_<name="Critical Range End Multiplier?">;
+float Critical_Range_Start_Multiplier_<name="Critical Range Start Multiplier?">;
 ubyte Unk_201<name="Unk 201">;
-float Unk_202<name="Unk 202">;
-uint Unk_203<name="Unk 203">;
+float Main_Arrow_Spread_Angle_<name="Main Arrow Spread Angle?">;
+uint Number_of_Arrows_Shot<name="Number of Arrows Shot">;
 
 // Unk Arr 6
 typedef struct {

@@ -2202,17 +2202,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Damage_Buff_Red_White_raw;
-            public const string Damage_Buff_Red_White_displayName = "Damage Buff: Red + White";
-            public const int Damage_Buff_Red_White_sortIndex = 300;
-            [SortOrder(Damage_Buff_Red_White_sortIndex)]
-            [DisplayName(Damage_Buff_Red_White_displayName)]
-            public virtual float Damage_Buff_Red_White {
-                get => Damage_Buff_Red_White_raw;
+            protected float Damage_Buff_Red_Plus_White_raw;
+            public const string Damage_Buff_Red_Plus_White_displayName = "Damage Buff: Red + White";
+            public const int Damage_Buff_Red_Plus_White_sortIndex = 300;
+            [SortOrder(Damage_Buff_Red_Plus_White_sortIndex)]
+            [DisplayName(Damage_Buff_Red_Plus_White_displayName)]
+            public virtual float Damage_Buff_Red_Plus_White {
+                get => Damage_Buff_Red_Plus_White_raw;
                 set {
-                    if (Damage_Buff_Red_White_raw == value) return;
-                    Damage_Buff_Red_White_raw = value;
-                    OnPropertyChanged(nameof(Damage_Buff_Red_White));
+                    if (Damage_Buff_Red_Plus_White_raw == value) return;
+                    Damage_Buff_Red_Plus_White_raw = value;
+                    OnPropertyChanged(nameof(Damage_Buff_Red_Plus_White));
                 }
             }
 
@@ -2272,17 +2272,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Defense_Buff_Orange_White_raw;
-            public const string Defense_Buff_Orange_White_displayName = "Defense Buff: Orange + White";
-            public const int Defense_Buff_Orange_White_sortIndex = 550;
-            [SortOrder(Defense_Buff_Orange_White_sortIndex)]
-            [DisplayName(Defense_Buff_Orange_White_displayName)]
-            public virtual float Defense_Buff_Orange_White {
-                get => Defense_Buff_Orange_White_raw;
+            protected float Defense_Buff_Orange_Plus_White_raw;
+            public const string Defense_Buff_Orange_Plus_White_displayName = "Defense Buff: Orange + White";
+            public const int Defense_Buff_Orange_Plus_White_sortIndex = 550;
+            [SortOrder(Defense_Buff_Orange_Plus_White_sortIndex)]
+            [DisplayName(Defense_Buff_Orange_Plus_White_displayName)]
+            public virtual float Defense_Buff_Orange_Plus_White {
+                get => Defense_Buff_Orange_Plus_White_raw;
                 set {
-                    if (Defense_Buff_Orange_White_raw == value) return;
-                    Defense_Buff_Orange_White_raw = value;
-                    OnPropertyChanged(nameof(Defense_Buff_Orange_White));
+                    if (Defense_Buff_Orange_Plus_White_raw == value) return;
+                    Defense_Buff_Orange_Plus_White_raw = value;
+                    OnPropertyChanged(nameof(Defense_Buff_Orange_Plus_White));
                 }
             }
 
@@ -2303,12 +2303,12 @@ namespace MHW_Editor.Weapons {
                 data.Orange_Extract_Duration_raw = reader.ReadSingle();
                 data.Triple_Extract_Duration_raw = reader.ReadSingle();
                 data.Unk_91_raw = reader.ReadSingle();
-                data.Damage_Buff_Red_White_raw = reader.ReadSingle();
+                data.Damage_Buff_Red_Plus_White_raw = reader.ReadSingle();
                 data.Damage_Buff_All_Three_Extracts_raw = reader.ReadSingle();
                 data.Speed_Buff_White_raw = reader.ReadSingle();
                 data.Unk_95_raw = reader.ReadSingle();
                 data.Defense_Buff_Orange_raw = reader.ReadSingle();
-                data.Defense_Buff_Orange_White_raw = reader.ReadSingle();
+                data.Defense_Buff_Orange_Plus_White_raw = reader.ReadSingle();
                 return data;
             }
 
@@ -2318,12 +2318,12 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Orange_Extract_Duration_raw);
                 writer.Write(Triple_Extract_Duration_raw);
                 writer.Write(Unk_91_raw);
-                writer.Write(Damage_Buff_Red_White_raw);
+                writer.Write(Damage_Buff_Red_Plus_White_raw);
                 writer.Write(Damage_Buff_All_Three_Extracts_raw);
                 writer.Write(Speed_Buff_White_raw);
                 writer.Write(Unk_95_raw);
                 writer.Write(Defense_Buff_Orange_raw);
-                writer.Write(Defense_Buff_Orange_White_raw);
+                writer.Write(Defense_Buff_Orange_Plus_White_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
@@ -2333,12 +2333,12 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Orange Extract Duration", "Orange_Extract_Duration"),
                     new MultiStructItemCustomView(this, "Triple Extract Duration", "Triple_Extract_Duration"),
                     new MultiStructItemCustomView(this, "Unk 91", "Unk_91"),
-                    new MultiStructItemCustomView(this, "Damage Buff: Red + White", "Damage_Buff_Red_White"),
+                    new MultiStructItemCustomView(this, "Damage Buff: Red + White", "Damage_Buff_Red_Plus_White"),
                     new MultiStructItemCustomView(this, "Damage Buff: All Three Extracts", "Damage_Buff_All_Three_Extracts"),
                     new MultiStructItemCustomView(this, "Speed Buff: White", "Speed_Buff_White"),
                     new MultiStructItemCustomView(this, "Unk 95", "Unk_95"),
                     new MultiStructItemCustomView(this, "Defense Buff: Orange", "Defense_Buff_Orange"),
-                    new MultiStructItemCustomView(this, "Defense Buff: Orange + White", "Defense_Buff_Orange_White"),
+                    new MultiStructItemCustomView(this, "Defense Buff: Orange + White", "Defense_Buff_Orange_Plus_White"),
                 };
             }
         }
