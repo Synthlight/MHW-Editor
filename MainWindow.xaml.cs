@@ -144,6 +144,16 @@ namespace MHW_Editor {
             Height = SystemParameters.MaximizedPrimaryScreenHeight * 0.5;
 
             UpdateCheck.Run(this);
+
+            TryLoad(args);
+        }
+
+        private async void TryLoad(string[] args) {
+            if (args.Length >= 2) {
+                // Tiny delay so the UI is visible to the user before we load.
+                await Task.Delay(10);
+                Load(args[1]);
+            }
         }
 
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e) {
@@ -172,9 +182,9 @@ namespace MHW_Editor {
             return dataGrid;
         }
 
-        private void Load() {
+        private void Load(string file = null) {
             try {
-                var target = GetOpenTarget($"MHW Data Files (See mod description for full list.)|{string.Join(";", Global.FILE_TYPES)}");
+                var target = file ?? GetOpenTarget($"MHW Data Files (See mod description for full list.)|{string.Join(";", Global.FILE_TYPES)}");
                 if (string.IsNullOrEmpty(target)) return;
 
                 targetFile     = target;
@@ -362,6 +372,7 @@ namespace MHW_Editor {
                     foreach (var changedItem in changedItems) {
                         var propertyInfo = item.GetType().GetProperty(changedItem.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
 
+                        // ReSharper disable once PossibleNullReferenceException
                         if (propertyInfo.PropertyType.IsEnum) {
                             var value = Enum.ToObject(propertyInfo.PropertyType, changedItem.Value);
                             propertyInfo.SetValue(item, value);
@@ -420,6 +431,7 @@ namespace MHW_Editor {
                     }
 
                     foreach (var changedItem in item.changed) {
+                        // ReSharper disable once PossibleNullReferenceException
                         var value = item.GetType().GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
                         changesToSave.changes[id][changedItem] = value;
                     }
