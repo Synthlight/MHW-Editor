@@ -5,41 +5,45 @@
 //  Category: MHW_Editor.Misc
 //------------------------------------------------
 
+// Motion Blend Data (1)
 typedef struct {
-    uint Magic_1;
-    uint Magic_2;
-    uint Entry_Count;
+    uint Magic_1<name="Magic 1">;
+    uint Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
 } Motion_Blend_Data_1_;
 
-Motion_Blend_Data_1_ Motion_Blend_Data_1__;
+Motion_Blend_Data_1_ Motion_Blend_Data_1__<name="Motion Blend Data (1)">;
 
+// Default
 typedef struct {
-    uint Unk_1;
-    uint lmt_Offset_Index;
-    uint Num_of_Values;
-    uint Unk_2;
-    uint Unk_3;
+    uint Unk_1<name="Unk 1">;
+    uint lmt_Offset_Index<name="lmt Offset Index">;
+    uint Num_of_Values<name="Num of Values">;
+    uint Unk_2<name="Unk 2">;
+    uint Unk_3<name="Unk 3">;
 
+    // Unk Array
     typedef struct {
-        string Unk_1;
-        uint Unk_2;
-        uint Unk_3;
-        uint Unk_4;
-        uint Unk_5;
-        float Unk_6;
-        uint Unk_7;
-        int Unk_8;
-        uint Unk_9;
+        string Unk_1<name="Unk 1">;
+        uint Unk_2<name="Unk 2">;
+        uint Unk_3<name="Unk 3">;
+        uint Unk_4<name="Unk 4">;
+        uint Unk_5<name="Unk 5">;
+        float Unk_6<name="Unk 6">;
+        uint Unk_7<name="Unk 7">;
+        int Unk_8<name="Unk 8">;
+        uint Unk_9<name="Unk 9">;
     } Unk_Array;
 
-    Unk_Array Unk_Array_[Num_of_Values]<optimize=false>;
-    uint Unk_5;
+    Unk_Array Unk_Array_[Num_of_Values]<optimize=false, name="Unk Array">;
+    uint Unk_5<name="Unk 5">;
 } Default;
 
-Default Default_[Motion_Blend_Data_1__.Entry_Count]<optimize=false>;
+Default Default_[Motion_Blend_Data_1__.Entry_Count]<optimize=false, name="Default">;
 
+// Motion Blend Data (2)
 typedef struct {
-    uint End;
+    uint End<name="End">;
 } Motion_Blend_Data_2_;
 
-Motion_Blend_Data_2_ Motion_Blend_Data_2__;
+Motion_Blend_Data_2_ Motion_Blend_Data_2__<name="Motion Blend Data (2)">;

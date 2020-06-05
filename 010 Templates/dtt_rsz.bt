@@ -5,39 +5,44 @@
 //  Category: MHW_Editor.Monsters
 //------------------------------------------------
 
+// Monster Random Sizes
 typedef struct {
-    uint Magic_1;
-    uint Magic_2;
-    uint Number_of_Monsters;
+    uint Magic_1<name="Magic 1">;
+    uint Magic_2<name="Magic 2">;
+    uint Number_of_Monsters<name="Number of Monsters">;
 } Monster_Random_Sizes;
 
-Monster_Random_Sizes Monster_Random_Sizes_;
+Monster_Random_Sizes Monster_Random_Sizes_<name="Monster Random Sizes">;
 
+// Monsters
 typedef struct {
-    uint Monster_Id;
-    uint Gold_Small_Crown_Limit;
-    uint Silver_Crown_Limit;
-    uint Gold_Big_Crown_Limit;
-    float Base_Size;
+    uint Monster_Id<name="Monster Id">;
+    uint Gold_Small_Crown_Limit<name="Gold Small Crown Limit">;
+    uint Silver_Crown_Limit<name="Silver Crown Limit">;
+    uint Gold_Big_Crown_Limit<name="Gold Big Crown Limit">;
+    float Base_Size<name="Base Size">;
 } Monsters;
 
-Monsters Monsters_[Monster_Random_Sizes_.Number_of_Monsters]<optimize=false>;
+Monsters Monsters_[Monster_Random_Sizes_.Number_of_Monsters]<optimize=false, name="Monsters">;
 
+// Crown Table Count
 typedef struct {
-    uint Number_of_Crown_Tables;
+    uint Number_of_Crown_Tables<name="Number of Crown Tables">;
 } Crown_Table_Count;
 
-Crown_Table_Count Crown_Table_Count_;
+Crown_Table_Count Crown_Table_Count_<name="Crown Table Count">;
 
+// Crown Tables
 typedef struct {
-    string Name_Jap_;
+    string Name_Jap_<name="Name (Jap)">;
 
+    // Crown Sizes
     typedef struct {
-        int Crown_Size_Multiplier;
-        int Crown_Size_Rarity;
+        int Crown_Size_Multiplier<name="Crown Size Multiplier">;
+        int Crown_Size_Rarity<name="Crown Size Rarity">;
     } Crown_Sizes;
 
-    Crown_Sizes Crown_Sizes_[38]<optimize=false>;
+    Crown_Sizes Crown_Sizes_[38]<optimize=false, name="Crown Sizes">;
 } Crown_Tables;
 
-Crown_Tables Crown_Tables_[Crown_Table_Count_.Number_of_Crown_Tables]<optimize=false>;
+Crown_Tables Crown_Tables_[Crown_Table_Count_.Number_of_Crown_Tables]<optimize=false, name="Crown Tables">;

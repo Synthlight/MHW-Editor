@@ -5,367 +5,383 @@
 //  Category: MHW_Editor.Weapons
 //------------------------------------------------
 
-char Weapon[4]<optimize=false>;
-uint Unk_1;
+char Weapon[4]<optimize=false, name="Weapon">;
+uint Unk_1<name="Unk 1">;
 
+// Unk Arr 1 (Shared)
 typedef struct {
-    float Unk_1;
-    float Unk_2;
-    float Unk_3;
-    ubyte Unk_4;
-    float Unk_5;
+    float Unk_1<name="Unk 1">;
+    float Unk_2<name="Unk 2">;
+    float Unk_3<name="Unk 3">;
+    ubyte Unk_4<name="Unk 4">;
+    float Unk_5<name="Unk 5">;
 } Unk_Arr_1_Shared_;
 
-Unk_Arr_1_Shared_ Unk_Arr_1_Shared__[20]<optimize=false>;
+Unk_Arr_1_Shared_ Unk_Arr_1_Shared__[20]<optimize=false, name="Unk Arr 1 (Shared)">;
 
-float Unk_2;
-float Unk_3;
-float Unk_4;
-float Unk_5;
-float Unk_6;
-float Unk_7;
-float Unk_8;
-float Unk_9;
-float Unk_10;
-float Unk_11;
-float Unk_12;
-float Unk_13;
-float Unk_14;
-float Unk_15;
-float Unk_16;
-float Unk_17;
-ubyte Unk_18;
-ubyte Unk_19;
-ubyte Unk_20;
-ubyte Unk_21;
-float Weapon_Sweet_spot;
-float Unk_23;
-float Unk_24;
-float Elderseal_Modifier_;
-ubyte Unk_26;
-float Unk_27;
+float Unk_2<name="Unk 2">;
+float Unk_3<name="Unk 3">;
+float Unk_4<name="Unk 4">;
+float Unk_5<name="Unk 5">;
+float Unk_6<name="Unk 6">;
+float Unk_7<name="Unk 7">;
+float Unk_8<name="Unk 8">;
+float Unk_9<name="Unk 9">;
+float Unk_10<name="Unk 10">;
+float Unk_11<name="Unk 11">;
+float Unk_12<name="Unk 12">;
+float Unk_13<name="Unk 13">;
+float Unk_14<name="Unk 14">;
+float Unk_15<name="Unk 15">;
+float Unk_16<name="Unk 16">;
+float Unk_17<name="Unk 17">;
+ubyte Unk_18<name="Unk 18">;
+ubyte Unk_19<name="Unk 19">;
+ubyte Unk_20<name="Unk 20">;
+ubyte Unk_21<name="Unk 21">;
+float Weapon_Sweet_spot<name="Weapon Sweet-spot">;
+float Unk_23<name="Unk 23">;
+float Unk_24<name="Unk 24">;
+float Elderseal_Modifier_<name="Elderseal Modifier?">;
+ubyte Unk_26<name="Unk 26">;
+float Unk_27<name="Unk 27">;
 
+// Guard Angles (Shared)
 typedef struct {
-    float Guard_Angle_Both_Sides_;
-    ubyte Knockback_Threshold_Small;
-    ubyte Knockback_Threshold_Medium;
-    ubyte Knockback_Threshold_Large;
+    float Guard_Angle_Both_Sides_<name="Guard Angle (Both Sides)">;
+    ubyte Knockback_Threshold_Small<name="Knockback Threshold Small">;
+    ubyte Knockback_Threshold_Medium<name="Knockback Threshold Medium">;
+    ubyte Knockback_Threshold_Large<name="Knockback Threshold Large">;
 } Guard_Angles_Shared_;
 
-Guard_Angles_Shared_ Guard_Angles_Shared__[2]<optimize=false>;
+Guard_Angles_Shared_ Guard_Angles_Shared__[2]<optimize=false, name="Guard Angles (Shared)">;
 
-float Unk_28;
-float Unk_29;
-float Unk_30;
-float Unk_31;
-float Unk_32;
-float Unk_33;
-float Unk_34;
-float Unk_35;
-float Unk_36;
-float Unk_37;
-float Unk_38;
-float Unk_39;
-float Unk_40;
-float Unk_41;
-float Unk_42;
-float Unk_43;
-float Unk_44;
-float Unk_45;
-float Unk_46;
-float Unk_47;
-float Unk_48;
-uint Unk_49;
-uint Unk_50;
-float Unk_51;
-float Unk_52;
-float Unk_53;
-float Unk_54;
-float Unk_55;
-float Unk_56;
-float Unk_57;
-float Unk_58;
-float Unk_59;
-float Unk_60;
-float Unk_61;
-float Unk_62;
-float Unk_63;
-float Unk_64;
-float Unk_65;
-float Unk_66;
-float Unk_67;
-float Unk_68;
-float Unk_69;
-float Unk_70;
-float Unk_71;
-ubyte Unk_72;
-uint Unk_73;
-float Unk_74;
-float Unk_75;
-float Unk_76;
-ubyte Unk_77;
-int Unk_78;
+float Unk_28<name="Unk 28">;
+float Unk_29<name="Unk 29">;
+float Unk_30<name="Unk 30">;
+float Unk_31<name="Unk 31">;
+float Unk_32<name="Unk 32">;
+float Unk_33<name="Unk 33">;
+float Unk_34<name="Unk 34">;
+float Unk_35<name="Unk 35">;
+float Unk_36<name="Unk 36">;
+float Unk_37<name="Unk 37">;
+float Unk_38<name="Unk 38">;
+float Unk_39<name="Unk 39">;
+float Unk_40<name="Unk 40">;
+float Unk_41<name="Unk 41">;
+float Unk_42<name="Unk 42">;
+float Unk_43<name="Unk 43">;
+float Unk_44<name="Unk 44">;
+float Unk_45<name="Unk 45">;
+float Unk_46<name="Unk 46">;
+float Unk_47<name="Unk 47">;
+float Unk_48<name="Unk 48">;
+uint Unk_49<name="Unk 49">;
+uint Unk_50<name="Unk 50">;
+float Unk_51<name="Unk 51">;
+float Unk_52<name="Unk 52">;
+float Unk_53<name="Unk 53">;
+float Unk_54<name="Unk 54">;
+float Unk_55<name="Unk 55">;
+float Unk_56<name="Unk 56">;
+float Unk_57<name="Unk 57">;
+float Unk_58<name="Unk 58">;
+float Unk_59<name="Unk 59">;
+float Unk_60<name="Unk 60">;
+float Unk_61<name="Unk 61">;
+float Unk_62<name="Unk 62">;
+float Unk_63<name="Unk 63">;
+float Unk_64<name="Unk 64">;
+float Unk_65<name="Unk 65">;
+float Unk_66<name="Unk 66">;
+float Unk_67<name="Unk 67">;
+float Unk_68<name="Unk 68">;
+float Unk_69<name="Unk 69">;
+float Unk_70<name="Unk 70">;
+float Unk_71<name="Unk 71">;
+ubyte Unk_72<name="Unk 72">;
+uint Unk_73<name="Unk 73">;
+float Unk_74<name="Unk 74">;
+float Unk_75<name="Unk 75">;
+float Unk_76<name="Unk 76">;
+ubyte Unk_77<name="Unk 77">;
+int Unk_78<name="Unk 78">;
 
+// Unk Arr 2 (Shared)
 typedef struct {
-    float Unk_1;
-    float Unk_2;
-    float Unk_3;
-    float Unk_4;
-    float Unk_5;
-    float Unk_6;
-    float Unk_7;
-    float Unk_8;
-    float Unk_9;
-    float Unk_10;
-    float Unk_11;
-    float Unk_12;
-    float Unk_13;
-    ubyte Unk_14;
-    int Unk_15;
+    float Unk_1<name="Unk 1">;
+    float Unk_2<name="Unk 2">;
+    float Unk_3<name="Unk 3">;
+    float Unk_4<name="Unk 4">;
+    float Unk_5<name="Unk 5">;
+    float Unk_6<name="Unk 6">;
+    float Unk_7<name="Unk 7">;
+    float Unk_8<name="Unk 8">;
+    float Unk_9<name="Unk 9">;
+    float Unk_10<name="Unk 10">;
+    float Unk_11<name="Unk 11">;
+    float Unk_12<name="Unk 12">;
+    float Unk_13<name="Unk 13">;
+    ubyte Unk_14<name="Unk 14">;
+    int Unk_15<name="Unk 15">;
 } Unk_Arr_2_Shared_;
 
-Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false>;
+Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false, name="Unk Arr 2 (Shared)">;
 
-float Unk_79;
-float Unk_80;
-float Unk_81;
-float Unk_82;
-float Unk_83;
-float Unk_84;
-float Unk_85;
-float Unk_86;
-float Unk_87;
-float Unk_88;
-float Unk_89;
-float Unk_90;
+float Unk_79<name="Unk 79">;
+float Unk_80<name="Unk 80">;
+float Unk_81<name="Unk 81">;
+float Unk_82<name="Unk 82">;
+float Unk_83<name="Unk 83">;
+float Unk_84<name="Unk 84">;
+float Unk_85<name="Unk 85">;
+float Unk_86<name="Unk 86">;
+float Unk_87<name="Unk 87">;
+float Unk_88<name="Unk 88">;
+float Unk_89<name="Unk 89">;
+float Unk_90<name="Unk 90">;
 
-uint Normal_Ammo;
-uint Wide_Shell;
-uint Long_Shell;
-float Shelling_Charge_Delay_Seconds_;
-float Shelling_Charge_Recoil_Distance_Multiplier;
-float Wyvernfire_Charging_Time_Seconds_;
-float Wyvernfire_Cooldown_Time_Seconds_;
-float Unk_98;
-float Unk_99;
-float Unk_100;
-uint Shelling_Count_for_Shelling_N_Times_Wyrmstake_e_g_2_Shelling_Twice_Then_Wyrmstake_;
-float Unk_102;
-float Unk_103;
-float Unk_104;
-float Unk_105;
-float Unk_106;
-float Unk_107;
-float Unk_108;
-float Unk_109;
-float Unk_110;
-float Unk_111;
-float Unk_112;
-float Unk_113;
+uint Normal_Ammo<name="Normal Ammo">;
+uint Wide_Shell<name="Wide Shell">;
+uint Long_Shell<name="Long Shell">;
+float Shelling_Charge_Delay_Seconds_<name="Shelling Charge Delay (Seconds)">;
+float Shelling_Charge_Recoil_Distance_Multiplier<name="Shelling Charge Recoil Distance Multiplier">;
+float Wyvernfire_Charging_Time_Seconds_<name="Wyvernfire Charging Time (Seconds)">;
+float Wyvernfire_Cooldown_Time_Seconds_<name="Wyvernfire Cooldown Time (Seconds)">;
+float Unk_98<name="Unk 98">;
+float Unk_99<name="Unk 99">;
+float Unk_100<name="Unk 100">;
+uint Shelling_Count_for_Shelling_N_Times_Wyrmstake_e_g_2_Shelling_Twice_Then_Wyrmstake_<name="Shelling Count for [Shelling (N Times) -> Wyrmstake] (e.g. 2: Shelling (Twice), Then Wyrmstake)">;
+float Unk_102<name="Unk 102">;
+float Unk_103<name="Unk 103">;
+float Unk_104<name="Unk 104">;
+float Unk_105<name="Unk 105">;
+float Unk_106<name="Unk 106">;
+float Unk_107<name="Unk 107">;
+float Unk_108<name="Unk 108">;
+float Unk_109<name="Unk 109">;
+float Unk_110<name="Unk 110">;
+float Unk_111<name="Unk 111">;
+float Unk_112<name="Unk 112">;
+float Unk_113<name="Unk 113">;
 
+// Shell/Ammo Params
 typedef struct {
 
+    // Shell Damage
     typedef struct {
-        float Shell_Damage_1;
-        float Shell_Damage_2;
-        float Shell_Damage_3;
-        float Shell_Damage_4;
-        float Shell_Damage_5;
-        float Shell_Damage_6;
-        float Shell_Damage_7;
+        float Shell_Damage_1<name="Shell Damage 1">;
+        float Shell_Damage_2<name="Shell Damage 2">;
+        float Shell_Damage_3<name="Shell Damage 3">;
+        float Shell_Damage_4<name="Shell Damage 4">;
+        float Shell_Damage_5<name="Shell Damage 5">;
+        float Shell_Damage_6<name="Shell Damage 6">;
+        float Shell_Damage_7<name="Shell Damage 7">;
     } Shell_Damage;
 
-    Shell_Damage Shell_Damage_;
+    Shell_Damage Shell_Damage_<name="Shell Damage">;
 
+    // Shell Fire Damage
     typedef struct {
-        float Shell_Fire_Damage_1;
-        float Shell_Fire_Damage_2;
-        float Shell_Fire_Damage_3;
-        float Shell_Fire_Damage_4;
-        float Shell_Fire_Damage_5;
-        float Shell_Fire_Damage_6;
-        float Shell_Fire_Damage_7;
+        float Shell_Fire_Damage_1<name="Shell Fire Damage 1">;
+        float Shell_Fire_Damage_2<name="Shell Fire Damage 2">;
+        float Shell_Fire_Damage_3<name="Shell Fire Damage 3">;
+        float Shell_Fire_Damage_4<name="Shell Fire Damage 4">;
+        float Shell_Fire_Damage_5<name="Shell Fire Damage 5">;
+        float Shell_Fire_Damage_6<name="Shell Fire Damage 6">;
+        float Shell_Fire_Damage_7<name="Shell Fire Damage 7">;
     } Shell_Fire_Damage;
 
-    Shell_Fire_Damage Shell_Fire_Damage_;
-    float Shell_Charged_Multiplier;
-    float Full_burst_Multiplier;
-    float Shell_Unk_1;
+    Shell_Fire_Damage Shell_Fire_Damage_<name="Shell Fire Damage">;
+    float Shell_Charged_Multiplier<name="Shell Charged Multiplier">;
+    float Full_burst_Multiplier<name="Full-burst Multiplier">;
+    float Shell_Unk_1<name="Shell Unk 1">;
 
+    // Wyvernfire Damage
     typedef struct {
-        float Wyvernfire_Damage_1;
-        float Wyvernfire_Damage_2;
-        float Wyvernfire_Damage_3;
-        float Wyvernfire_Damage_4;
-        float Wyvernfire_Damage_5;
-        float Wyvernfire_Damage_6;
-        float Wyvernfire_Damage_7;
+        float Wyvernfire_Damage_1<name="Wyvernfire Damage 1">;
+        float Wyvernfire_Damage_2<name="Wyvernfire Damage 2">;
+        float Wyvernfire_Damage_3<name="Wyvernfire Damage 3">;
+        float Wyvernfire_Damage_4<name="Wyvernfire Damage 4">;
+        float Wyvernfire_Damage_5<name="Wyvernfire Damage 5">;
+        float Wyvernfire_Damage_6<name="Wyvernfire Damage 6">;
+        float Wyvernfire_Damage_7<name="Wyvernfire Damage 7">;
     } Wyvernfire_Damage;
 
-    Wyvernfire_Damage Wyvernfire_Damage_;
+    Wyvernfire_Damage Wyvernfire_Damage_<name="Wyvernfire Damage">;
 
+    // Wyvernfire Fire Damage
     typedef struct {
-        float Wyvernfire_Fire_Damage_1;
-        float Wyvernfire_Fire_Damage_2;
-        float Wyvernfire_Fire_Damage_3;
-        float Wyvernfire_Fire_Damage_4;
-        float Wyvernfire_Fire_Damage_5;
-        float Wyvernfire_Fire_Damage_6;
-        float Wyvernfire_Fire_Damage_7;
+        float Wyvernfire_Fire_Damage_1<name="Wyvernfire Fire Damage 1">;
+        float Wyvernfire_Fire_Damage_2<name="Wyvernfire Fire Damage 2">;
+        float Wyvernfire_Fire_Damage_3<name="Wyvernfire Fire Damage 3">;
+        float Wyvernfire_Fire_Damage_4<name="Wyvernfire Fire Damage 4">;
+        float Wyvernfire_Fire_Damage_5<name="Wyvernfire Fire Damage 5">;
+        float Wyvernfire_Fire_Damage_6<name="Wyvernfire Fire Damage 6">;
+        float Wyvernfire_Fire_Damage_7<name="Wyvernfire Fire Damage 7">;
     } Wyvernfire_Fire_Damage;
 
-    Wyvernfire_Fire_Damage Wyvernfire_Fire_Damage_;
+    Wyvernfire_Fire_Damage Wyvernfire_Fire_Damage_<name="Wyvernfire Fire Damage">;
 
+    // Wyrmstake Damage
     typedef struct {
-        float Wyrmstake_Damage_1;
-        float Wyrmstake_Damage_2;
-        float Wyrmstake_Damage_3;
-        float Wyrmstake_Damage_4;
-        float Wyrmstake_Damage_5;
-        float Wyrmstake_Damage_6;
-        float Wyrmstake_Damage_7;
+        float Wyrmstake_Damage_1<name="Wyrmstake Damage 1">;
+        float Wyrmstake_Damage_2<name="Wyrmstake Damage 2">;
+        float Wyrmstake_Damage_3<name="Wyrmstake Damage 3">;
+        float Wyrmstake_Damage_4<name="Wyrmstake Damage 4">;
+        float Wyrmstake_Damage_5<name="Wyrmstake Damage 5">;
+        float Wyrmstake_Damage_6<name="Wyrmstake Damage 6">;
+        float Wyrmstake_Damage_7<name="Wyrmstake Damage 7">;
     } Wyrmstake_Damage;
 
-    Wyrmstake_Damage Wyrmstake_Damage_;
+    Wyrmstake_Damage Wyrmstake_Damage_<name="Wyrmstake Damage">;
 
+    // Wyrmstake Blast Damage
     typedef struct {
-        float Wyrmstake_Blast_Damage_1;
-        float Wyrmstake_Blast_Damage_2;
-        float Wyrmstake_Blast_Damage_3;
-        float Wyrmstake_Blast_Damage_4;
-        float Wyrmstake_Blast_Damage_5;
-        float Wyrmstake_Blast_Damage_6;
-        float Wyrmstake_Blast_Damage_7;
+        float Wyrmstake_Blast_Damage_1<name="Wyrmstake Blast Damage 1">;
+        float Wyrmstake_Blast_Damage_2<name="Wyrmstake Blast Damage 2">;
+        float Wyrmstake_Blast_Damage_3<name="Wyrmstake Blast Damage 3">;
+        float Wyrmstake_Blast_Damage_4<name="Wyrmstake Blast Damage 4">;
+        float Wyrmstake_Blast_Damage_5<name="Wyrmstake Blast Damage 5">;
+        float Wyrmstake_Blast_Damage_6<name="Wyrmstake Blast Damage 6">;
+        float Wyrmstake_Blast_Damage_7<name="Wyrmstake Blast Damage 7">;
     } Wyrmstake_Blast_Damage;
 
-    Wyrmstake_Blast_Damage Wyrmstake_Blast_Damage_;
+    Wyrmstake_Blast_Damage Wyrmstake_Blast_Damage_<name="Wyrmstake Blast Damage">;
 
+    // Wyrmstake Blast Fire Damage
     typedef struct {
-        float Wyrmstake_Blast_Fire_Damage_1;
-        float Wyrmstake_Blast_Fire_Damage_2;
-        float Wyrmstake_Blast_Fire_Damage_3;
-        float Wyrmstake_Blast_Fire_Damage_4;
-        float Wyrmstake_Blast_Fire_Damage_5;
-        float Wyrmstake_Blast_Fire_Damage_6;
-        float Wyrmstake_Blast_Fire_Damage_7;
+        float Wyrmstake_Blast_Fire_Damage_1<name="Wyrmstake Blast Fire Damage 1">;
+        float Wyrmstake_Blast_Fire_Damage_2<name="Wyrmstake Blast Fire Damage 2">;
+        float Wyrmstake_Blast_Fire_Damage_3<name="Wyrmstake Blast Fire Damage 3">;
+        float Wyrmstake_Blast_Fire_Damage_4<name="Wyrmstake Blast Fire Damage 4">;
+        float Wyrmstake_Blast_Fire_Damage_5<name="Wyrmstake Blast Fire Damage 5">;
+        float Wyrmstake_Blast_Fire_Damage_6<name="Wyrmstake Blast Fire Damage 6">;
+        float Wyrmstake_Blast_Fire_Damage_7<name="Wyrmstake Blast Fire Damage 7">;
     } Wyrmstake_Blast_Fire_Damage;
 
-    Wyrmstake_Blast_Fire_Damage Wyrmstake_Blast_Fire_Damage_;
+    Wyrmstake_Blast_Fire_Damage Wyrmstake_Blast_Fire_Damage_<name="Wyrmstake Blast Fire Damage">;
 
+    // Wyrmstake Add Damage
     typedef struct {
-        float Wyrmstake_Add_Damage_1;
-        float Wyrmstake_Add_Damage_2;
-        float Wyrmstake_Add_Damage_3;
-        float Wyrmstake_Add_Damage_4;
-        float Wyrmstake_Add_Damage_5;
-        float Wyrmstake_Add_Damage_6;
-        float Wyrmstake_Add_Damage_7;
+        float Wyrmstake_Add_Damage_1<name="Wyrmstake Add Damage 1">;
+        float Wyrmstake_Add_Damage_2<name="Wyrmstake Add Damage 2">;
+        float Wyrmstake_Add_Damage_3<name="Wyrmstake Add Damage 3">;
+        float Wyrmstake_Add_Damage_4<name="Wyrmstake Add Damage 4">;
+        float Wyrmstake_Add_Damage_5<name="Wyrmstake Add Damage 5">;
+        float Wyrmstake_Add_Damage_6<name="Wyrmstake Add Damage 6">;
+        float Wyrmstake_Add_Damage_7<name="Wyrmstake Add Damage 7">;
     } Wyrmstake_Add_Damage;
 
-    Wyrmstake_Add_Damage Wyrmstake_Add_Damage_;
+    Wyrmstake_Add_Damage Wyrmstake_Add_Damage_<name="Wyrmstake Add Damage">;
 } Shell_Ammo_Params;
 
-Shell_Ammo_Params Shell_Ammo_Params_[3]<optimize=false>;
+Shell_Ammo_Params Shell_Ammo_Params_[3]<optimize=false, name="Shell/Ammo Params">;
 
-float Yellow_Gauge_Debuff;
+float Yellow_Gauge_Debuff<name="Yellow Gauge Debuff">;
 
+// Unk Arr 3
 typedef struct {
-    uint Unk_1;
-    uint Unk_2;
-    uint Unk_3;
-    uint Unk_4;
-    uint Unk_5;
-    uint Unk_6;
+    uint Unk_1<name="Unk 1">;
+    uint Unk_2<name="Unk 2">;
+    uint Unk_3<name="Unk 3">;
+    uint Unk_4<name="Unk 4">;
+    uint Unk_5<name="Unk 5">;
+    uint Unk_6<name="Unk 6">;
 } Unk_Arr_3;
 
-Unk_Arr_3 Unk_Arr_3_[3]<optimize=false>;
+Unk_Arr_3 Unk_Arr_3_[3]<optimize=false, name="Unk Arr 3">;
 
-float Unk_292;
-float Unk_293;
+float Unk_292<name="Unk 292">;
+float Unk_293<name="Unk 293">;
 
+// Action Param 1
 typedef struct {
-    float Gravity;
-    float G_Rate;
-    float Momentum;
-    float V_Offset;
-    float H_Offset;
+    float Gravity<name="Gravity">;
+    float G_Rate<name="G Rate">;
+    float Momentum<name="Momentum">;
+    float V_Offset<name="V Offset">;
+    float H_Offset<name="H Offset">;
 } Action_Param_1;
 
-Action_Param_1 Action_Param_1_[10]<optimize=false>;
+Action_Param_1 Action_Param_1_[10]<optimize=false, name="Action Param 1">;
 
-float Unk_294;
-float Unk_295;
-float Unk_296;
-float Unk_297;
-float Unk_298;
-float Unk_299;
-float Unk_300;
-float Unk_301;
-float Unk_302;
-float Unk_303;
+float Unk_294<name="Unk 294">;
+float Unk_295<name="Unk 295">;
+float Unk_296<name="Unk 296">;
+float Unk_297<name="Unk 297">;
+float Unk_298<name="Unk 298">;
+float Unk_299<name="Unk 299">;
+float Unk_300<name="Unk 300">;
+float Unk_301<name="Unk 301">;
+float Unk_302<name="Unk 302">;
+float Unk_303<name="Unk 303">;
 
+// Action Param 2
 typedef struct {
-    float Gravity;
-    float G_Rate;
-    float Momentum;
-    float V_Offset;
-    float H_Offset;
+    float Gravity<name="Gravity">;
+    float G_Rate<name="G Rate">;
+    float Momentum<name="Momentum">;
+    float V_Offset<name="V Offset">;
+    float H_Offset<name="H Offset">;
 } Action_Param_2;
 
-Action_Param_2 Action_Param_2_;
+Action_Param_2 Action_Param_2_<name="Action Param 2">;
 
-float Unk_304;
-float Unk_305;
-float Unk_306;
-float Unk_307;
-float Unk_308;
-float Unk_309;
-float Unk_310;
-float Unk_311;
-float Unk_312;
-float Unk_313;
-float Unk_314;
-float Unk_315;
-float Unk_316;
-float Unk_317;
-float Unk_318;
-float Unk_319;
-float Unk_320;
-float Unk_321;
-float Unk_322;
-float Full_burst_Damage_Multiplier;
-float Charge_Shell_Damage_Multiplier;
-float Wyvernfire_Damage_Multiplier;
-float Wyrmstake_Explosion_Damage_Multiplier;
-float Ally_Attack_Trigger_Explosion;
-float Thorn_Pod_Base_Duration;
-float Thorn_Pod_Extra_Duration;
-float Bomb_Pierce_Pod_Base_Duration;
-float Bomb_Pierce_Pod_Extra_Duration;
-float Scatternut_Crystalburst_Torch_Pod_Brightmoss_Base_Duration;
-float Scatternut_Crystalburst_Torch_Pod_Brightmoss_Extra_Duration;
-float Puddle_Dragon_Base_Duration;
-float Puddle_Dragon_Pod_Extra_Duration;
-float Unk_336;
-float Unk_337;
-float Redpit_Base_Duration;
-float Redpit_Extra_Duration;
-float Stone_Base_Duration;
-float Stone_Extra_Duration;
-float Unk_342;
-float Unk_343;
-float Unk_344;
+float Unk_304<name="Unk 304">;
+float Unk_305<name="Unk 305">;
+float Unk_306<name="Unk 306">;
+float Unk_307<name="Unk 307">;
+float Unk_308<name="Unk 308">;
+float Unk_309<name="Unk 309">;
+float Unk_310<name="Unk 310">;
+float Unk_311<name="Unk 311">;
+float Unk_312<name="Unk 312">;
+float Unk_313<name="Unk 313">;
+float Unk_314<name="Unk 314">;
+float Unk_315<name="Unk 315">;
+float Unk_316<name="Unk 316">;
+float Unk_317<name="Unk 317">;
+float Unk_318<name="Unk 318">;
+float Unk_319<name="Unk 319">;
+float Unk_320<name="Unk 320">;
+float Unk_321<name="Unk 321">;
+float Unk_322<name="Unk 322">;
+float Full_burst_Damage_Multiplier<name="Full-burst Damage Multiplier">;
+float Charge_Shell_Damage_Multiplier<name="Charge Shell Damage Multiplier">;
+float Wyvernfire_Damage_Multiplier<name="Wyvernfire Damage Multiplier">;
+float Wyrmstake_Explosion_Damage_Multiplier<name="Wyrmstake Explosion Damage Multiplier">;
+float Ally_Attack_Trigger_Explosion<name="Ally Attack Trigger Explosion">;
+float Thorn_Pod_Base_Duration<name="Thorn Pod Base Duration">;
+float Thorn_Pod_Extra_Duration<name="Thorn Pod Extra Duration">;
+float Bomb_Pierce_Pod_Base_Duration<name="Bomb/Pierce Pod Base Duration">;
+float Bomb_Pierce_Pod_Extra_Duration<name="Bomb/Pierce Pod Extra Duration">;
+float Scatternut_Crystalburst_Torch_Pod_Brightmoss_Base_Duration<name="Scatternut/Crystalburst/Torch Pod/Brightmoss Base Duration">;
+float Scatternut_Crystalburst_Torch_Pod_Brightmoss_Extra_Duration<name="Scatternut/Crystalburst/Torch Pod/Brightmoss Extra Duration">;
+float Puddle_Dragon_Base_Duration<name="Puddle/Dragon Base Duration">;
+float Puddle_Dragon_Pod_Extra_Duration<name="Puddle/Dragon Pod Extra Duration">;
+float Unk_336<name="Unk 336">;
+float Unk_337<name="Unk 337">;
+float Redpit_Base_Duration<name="Redpit Base Duration">;
+float Redpit_Extra_Duration<name="Redpit Extra Duration">;
+float Stone_Base_Duration<name="Stone Base Duration">;
+float Stone_Extra_Duration<name="Stone Extra Duration">;
+float Unk_342<name="Unk 342">;
+float Unk_343<name="Unk 343">;
+float Unk_344<name="Unk 344">;
 
+// Action Param 3
 typedef struct {
-    float Gravity;
-    float G_Rate;
-    float Momentum;
-    float V_Offset;
-    float H_Offset;
+    float Gravity<name="Gravity">;
+    float G_Rate<name="G Rate">;
+    float Momentum<name="Momentum">;
+    float V_Offset<name="V Offset">;
+    float H_Offset<name="H Offset">;
 } Action_Param_3;
 
-Action_Param_3 Action_Param_3_;
+Action_Param_3 Action_Param_3_<name="Action Param 3">;
 
-float Shelling_Multiplier;
-float Unk_346;
-float Unk_347;
+float Shelling_Multiplier<name="Shelling Multiplier">;
+float Unk_346<name="Unk 346">;
+float Unk_347<name="Unk 347">;

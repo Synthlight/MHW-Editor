@@ -5,23 +5,26 @@
 //  Category: MHW_Editor.Items
 //------------------------------------------------
 
+// Melder Exchange
 typedef struct {
-    uint Magic_1;
-    ushort Magic_2;
-    uint Entry_Count;
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
 } Melder_Exchange;
 
-Melder_Exchange Melder_Exchange_;
+Melder_Exchange Melder_Exchange_<name="Melder Exchange">;
 
+// Item Box
 typedef struct {
-    uint Source_Item_Id;
-    uint Unk_1;
+    uint Source_Item_Id<name="Source Item Id">;
+    uint Unk_1<name="Unk 1">;
 
+    // Items
     typedef struct {
-        ushort Unk;
+        ushort Unk<name="Unk">;
     } Items;
 
-    Items Items_[215]<optimize=false>;
+    Items Items_[215]<optimize=false, name="Items">;
 } Item_Box;
 
-Item_Box Item_Box_[Melder_Exchange_.Entry_Count]<optimize=false>;
+Item_Box Item_Box_[Melder_Exchange_.Entry_Count]<optimize=false, name="Item Box">;

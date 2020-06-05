@@ -1,5 +1,1 @@
-010 templates:
-    Add display name to entries.
-    Add section name as a comment at the start of vertical structs.
-
 Try to open file as first param.

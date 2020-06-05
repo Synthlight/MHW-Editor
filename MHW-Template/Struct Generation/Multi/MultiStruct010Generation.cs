@@ -19,6 +19,7 @@ namespace MHW_Template.Struct_Generation.Multi {
             template.WriteLine("");
 
             if (!@struct.showVertically || isInnerStruct) {
+                template.WriteLine(indentation, $"// {@struct.name}");
                 template.WriteLine(indentation, "typedef struct {");
                 innerIndentation++;
             }
@@ -37,7 +38,8 @@ namespace MHW_Template.Struct_Generation.Multi {
                 if (typeString == "byte") typeString  = "ubyte";
                 if (typeString == "sbyte") typeString = "byte";
 
-                if (entry.arrayCount > -1) propName += $"[{entry.arrayCount}]<optimize=false>";
+                if (entry.arrayCount > -1) propName += $"[{entry.arrayCount}]<optimize=false, name=\"{entry.name}\">";
+                else propName                       += $"<name=\"{entry.name}\">";
 
                 if (entry.condition != null) {
                     var condition = entry.condition.Replace("|ref|", "").Replace("_raw", "").Replace("parent.", "");
@@ -63,7 +65,7 @@ namespace MHW_Template.Struct_Generation.Multi {
             string entryText;
 
             if (@struct.fixedSizeCount > 1) {
-                entryText = $"{name} {name}_[{@struct.fixedSizeCount}]<optimize=false>;";
+                entryText = $"{name} {name}_[{@struct.fixedSizeCount}]<optimize=false, name=\"{@struct.name}\">;";
             } else if (@struct.Has010Link) {
                 var linkStruct = @struct._010Link.@struct;
                 var linkEntry  = @struct._010Link.entry;
@@ -76,9 +78,9 @@ namespace MHW_Template.Struct_Generation.Multi {
                     countTarget = $"{linkStruct.SafeName}_.{linkEntry.SafeName}";
                 }
 
-                entryText = $"{name} {name}_[{countTarget}]<optimize=false>;";
+                entryText = $"{name} {name}_[{countTarget}]<optimize=false, name=\"{@struct.name}\">;";
             } else {
-                entryText = $"{name} {name}_;";
+                entryText = $"{name} {name}_<name=\"{@struct.name}\">;";
             }
 
             if (entry?.condition != null) {

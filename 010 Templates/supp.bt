@@ -5,37 +5,42 @@
 //  Category: MHW_Editor.Items
 //------------------------------------------------
 
+// Supply Data
 typedef struct {
-    uint Magic_1;
-    uint Magic_2;
-    ushort Magic_3;
-    uint Supply_Id;
+    uint Magic_1<name="Magic 1">;
+    uint Magic_2<name="Magic 2">;
+    ushort Magic_3<name="Magic 3">;
+    uint Supply_Id<name="Supply Id">;
 } Supply_Data;
 
-Supply_Data Supply_Data_;
+Supply_Data Supply_Data_<name="Supply Data">;
 
+// Item Box
 typedef struct {
-    ushort Item_Id;
-    ushort Item_Count;
+    ushort Item_Id<name="Item Id">;
+    ushort Item_Count<name="Item Count">;
 } Item_Box;
 
-Item_Box Item_Box_[24]<optimize=false>;
+Item_Box Item_Box_[24]<optimize=false, name="Item Box">;
 
+// Item Box Scaling
 typedef struct {
-    ubyte Items_to_Show;
+    ubyte Items_to_Show<name="Items to Show">;
 } Item_Box_Scaling;
 
-Item_Box_Scaling Item_Box_Scaling_[3]<optimize=false>;
+Item_Box_Scaling Item_Box_Scaling_[3]<optimize=false, name="Item Box Scaling">;
 
+// Ammo Box
 typedef struct {
-    ushort Ammo_Id;
-    ushort Ammo_Count;
+    ushort Ammo_Id<name="Ammo Id">;
+    ushort Ammo_Count<name="Ammo Count">;
 } Ammo_Box;
 
-Ammo_Box Ammo_Box_[16]<optimize=false>;
+Ammo_Box Ammo_Box_[16]<optimize=false, name="Ammo Box">;
 
+// Ammo Box Scaling
 typedef struct {
-    ubyte Ammo_Items_to_Show;
+    ubyte Ammo_Items_to_Show<name="Ammo Items to Show">;
 } Ammo_Box_Scaling;
 
-Ammo_Box_Scaling Ammo_Box_Scaling_[3]<optimize=false>;
+Ammo_Box_Scaling Ammo_Box_Scaling_[3]<optimize=false, name="Ammo Box Scaling">;

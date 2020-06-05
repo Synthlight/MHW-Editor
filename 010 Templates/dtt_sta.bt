@@ -5,80 +5,91 @@
 //  Category: MHW_Editor.Monsters
 //------------------------------------------------
 
+// Monster Stamina (1)
 typedef struct {
-    uint Magic_1;
-    uint Magic_2;
-    uint Monster_Id;
-    uint Magic_3;
+    uint Magic_1<name="Magic 1">;
+    uint Magic_2<name="Magic 2">;
+    uint Monster_Id<name="Monster Id">;
+    uint Magic_3<name="Magic 3">;
 } Monster_Stamina_1_;
 
-Monster_Stamina_1_ Monster_Stamina_1__;
+Monster_Stamina_1_ Monster_Stamina_1__<name="Monster Stamina (1)">;
 
+// Fatigue (LR)
 typedef struct {
-    float Duration;
-    uint Stamina_Min;
-    uint Stamina_Max;
+    float Duration<name="Duration">;
+    uint Stamina_Min<name="Stamina Min">;
+    uint Stamina_Max<name="Stamina Max">;
 } Fatigue_LR_;
 
-Fatigue_LR_ Fatigue_LR__;
+Fatigue_LR_ Fatigue_LR__<name="Fatigue (LR)">;
 
+// Stamina Count (LR)
 typedef struct {
-    uint Number_of_Stamina_Entries;
+    uint Number_of_Stamina_Entries<name="Number of Stamina Entries">;
 } Stamina_Count_LR_;
 
-Stamina_Count_LR_ Stamina_Count_LR__;
+Stamina_Count_LR_ Stamina_Count_LR__<name="Stamina Count (LR)">;
 
+// Stamina (LR)
 typedef struct {
-    uint Unk;
-    uint Base;
+    uint Unk<name="Unk">;
+    uint Base<name="Base">;
 } Stamina_LR_;
 
-Stamina_LR_ Stamina_LR__[Stamina_Count_LR__.Number_of_Stamina_Entries]<optimize=false>;
+Stamina_LR_ Stamina_LR__[Stamina_Count_LR__.Number_of_Stamina_Entries]<optimize=false, name="Stamina (LR)">;
 
+// Fatigue (HR)
 typedef struct {
-    float Duration;
-    uint Stamina_Min;
-    uint Stamina_Max;
+    float Duration<name="Duration">;
+    uint Stamina_Min<name="Stamina Min">;
+    uint Stamina_Max<name="Stamina Max">;
 } Fatigue_HR_;
 
-Fatigue_HR_ Fatigue_HR__;
+Fatigue_HR_ Fatigue_HR__<name="Fatigue (HR)">;
 
+// Stamina Count (HR)
 typedef struct {
-    uint Number_of_Stamina_Entries;
+    uint Number_of_Stamina_Entries<name="Number of Stamina Entries">;
 } Stamina_Count_HR_;
 
-Stamina_Count_HR_ Stamina_Count_HR__;
+Stamina_Count_HR_ Stamina_Count_HR__<name="Stamina Count (HR)">;
 
+// Stamina (HR)
 typedef struct {
-    uint Unk;
-    uint Base;
+    uint Unk<name="Unk">;
+    uint Base<name="Base">;
 } Stamina_HR_;
 
-Stamina_HR_ Stamina_HR__[Stamina_Count_HR__.Number_of_Stamina_Entries]<optimize=false>;
+Stamina_HR_ Stamina_HR__[Stamina_Count_HR__.Number_of_Stamina_Entries]<optimize=false, name="Stamina (HR)">;
 
+// Fatigue (MR)
 typedef struct {
-    float Duration;
-    uint Stamina_Min;
-    uint Stamina_Max;
+    float Duration<name="Duration">;
+    uint Stamina_Min<name="Stamina Min">;
+    uint Stamina_Max<name="Stamina Max">;
 } Fatigue_MR_;
 
-Fatigue_MR_ Fatigue_MR__;
+Fatigue_MR_ Fatigue_MR__<name="Fatigue (MR)">;
 
+// Stamina Count (MR)
 typedef struct {
-    uint Number_of_Stamina_Entries;
+    uint Number_of_Stamina_Entries<name="Number of Stamina Entries">;
 } Stamina_Count_MR_;
 
-Stamina_Count_MR_ Stamina_Count_MR__;
+Stamina_Count_MR_ Stamina_Count_MR__<name="Stamina Count (MR)">;
 
+// Stamina (MR)
 typedef struct {
-    uint Unk;
-    uint Base;
+    uint Unk<name="Unk">;
+    uint Base<name="Base">;
 } Stamina_MR_;
 
-Stamina_MR_ Stamina_MR__[Stamina_Count_MR__.Number_of_Stamina_Entries]<optimize=false>;
+Stamina_MR_ Stamina_MR__[Stamina_Count_MR__.Number_of_Stamina_Entries]<optimize=false, name="Stamina (MR)">;
 
+// Monster Stamina (2)
 typedef struct {
-    float Fatigue_Speed;
+    float Fatigue_Speed<name="Fatigue Speed">;
 } Monster_Stamina_2_;
 
-Monster_Stamina_2_ Monster_Stamina_2__;
+Monster_Stamina_2_ Monster_Stamina_2__<name="Monster Stamina (2)">;

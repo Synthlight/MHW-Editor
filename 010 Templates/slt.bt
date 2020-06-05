@@ -5,19 +5,21 @@
 //  Category: MHW_Editor.Items
 //------------------------------------------------
 
+// Shop List
 typedef struct {
-    uint Magic_1;
-    ushort Magic_2;
-    uint Item_Count;
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Item_Count<name="Item Count">;
 } Shop_List;
 
-Shop_List Shop_List_;
+Shop_List Shop_List_<name="Shop List">;
 
+// Entries
 typedef struct {
-    uint Index;
-    uint Item_Id;
-    uint Story_Unlock;
-    ushort Unk;
+    uint Index<name="Index">;
+    uint Item_Id<name="Item Id">;
+    uint Story_Unlock<name="Story Unlock">;
+    ushort Unk<name="Unk">;
 } Entries;
 
-Entries Entries_[Shop_List_.Item_Count]<optimize=false>;
+Entries Entries_[Shop_List_.Item_Count]<optimize=false, name="Entries">;

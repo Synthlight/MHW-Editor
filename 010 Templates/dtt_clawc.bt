@@ -5,36 +5,38 @@
 //  Category: MHW_Editor.Monsters
 //------------------------------------------------
 
+// Monster Claw Grab
 typedef struct {
-    uint Magic_1;
-    uint Magic_2;
-    uint Number_of_Claggers;
+    uint Magic_1<name="Magic 1">;
+    uint Magic_2<name="Magic 2">;
+    uint Number_of_Claggers<name="Number of Claggers">;
 } Monster_Claw_Grab;
 
-Monster_Claw_Grab Monster_Claw_Grab_;
+Monster_Claw_Grab Monster_Claw_Grab_<name="Monster Claw Grab">;
 
+// Clagger Params
 typedef struct {
-    float Unk_f32_;
-    float Normal;
-    float Enraged;
-    float Tired;
-    float Build_by_HP_90_100;
-    float Build_by_HP_80_90;
-    float Build_by_HP_70_80;
-    float Build_by_HP_60_70;
-    float Build_by_HP_50_60;
-    float Build_by_HP_40_50;
-    float Build_by_HP_30_40;
-    float Build_by_HP_20_30;
-    float Build_by_HP_10_20;
-    float Build_by_HP_0_10;
-    float Tenderize_Lv_State_LR;
-    float Tenderize_Lv_State_HR;
-    float Tenderize_Lv_State_MR;
+    float Unk_f32_<name="Unk (f32)">;
+    float Normal<name="Normal">;
+    float Enraged<name="Enraged">;
+    float Tired<name="Tired">;
+    float Build_by_HP_90_100<name="Build by HP%: 90-100">;
+    float Build_by_HP_80_90<name="Build by HP%: 80-90">;
+    float Build_by_HP_70_80<name="Build by HP%: 70-80">;
+    float Build_by_HP_60_70<name="Build by HP%: 60-70">;
+    float Build_by_HP_50_60<name="Build by HP%: 50-60">;
+    float Build_by_HP_40_50<name="Build by HP%: 40-50">;
+    float Build_by_HP_30_40<name="Build by HP%: 30-40">;
+    float Build_by_HP_20_30<name="Build by HP%: 20-30">;
+    float Build_by_HP_10_20<name="Build by HP%: 10-20">;
+    float Build_by_HP_0_10<name="Build by HP%: 0-10">;
+    float Tenderize_Lv_State_LR<name="Tenderize Lv State LR">;
+    float Tenderize_Lv_State_HR<name="Tenderize Lv State HR">;
+    float Tenderize_Lv_State_MR<name="Tenderize Lv State MR">;
 } Clagger_Params;
 
-Clagger_Params Clagger_Params_[Monster_Claw_Grab_.Number_of_Claggers]<optimize=false>;
+Clagger_Params Clagger_Params_[Monster_Claw_Grab_.Number_of_Claggers]<optimize=false, name="Clagger Params">;
 
-uint Gimmick_Breaker_Collision_Unique_Id_Small;
-uint Gimmick_Breaker_Collision_Unique_Id_Middle;
-uint Gimmick_Breaker_Collision_Unique_Id_Large;
+uint Gimmick_Breaker_Collision_Unique_Id_Small<name="Gimmick Breaker Collision Unique Id Small">;
+uint Gimmick_Breaker_Collision_Unique_Id_Middle<name="Gimmick Breaker Collision Unique Id Middle">;
+uint Gimmick_Breaker_Collision_Unique_Id_Large<name="Gimmick Breaker Collision Unique Id Large">;
