@@ -465,17 +465,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_22_raw;
-            public const string Unk_22_displayName = "Unk 22";
-            public const int Unk_22_sortIndex = 1050;
-            [SortOrder(Unk_22_sortIndex)]
-            [DisplayName(Unk_22_displayName)]
-            public virtual float Unk_22 {
-                get => Unk_22_raw;
+            protected float Weapon_Sweet_spot_raw;
+            public const string Weapon_Sweet_spot_displayName = "Weapon Sweet-spot";
+            public const int Weapon_Sweet_spot_sortIndex = 1050;
+            [SortOrder(Weapon_Sweet_spot_sortIndex)]
+            [DisplayName(Weapon_Sweet_spot_displayName)]
+            public virtual float Weapon_Sweet_spot {
+                get => Weapon_Sweet_spot_raw;
                 set {
-                    if (Unk_22_raw == value) return;
-                    Unk_22_raw = value;
-                    OnPropertyChanged(nameof(Unk_22));
+                    if (Weapon_Sweet_spot_raw == value) return;
+                    Weapon_Sweet_spot_raw = value;
+                    OnPropertyChanged(nameof(Weapon_Sweet_spot));
                 }
             }
 
@@ -507,17 +507,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_25_raw;
-            public const string Unk_25_displayName = "Unk 25";
-            public const int Unk_25_sortIndex = 1200;
-            [SortOrder(Unk_25_sortIndex)]
-            [DisplayName(Unk_25_displayName)]
-            public virtual float Unk_25 {
-                get => Unk_25_raw;
+            protected float Elderseal_Modifier__raw;
+            public const string Elderseal_Modifier__displayName = "Elderseal Modifier?";
+            public const int Elderseal_Modifier__sortIndex = 1200;
+            [SortOrder(Elderseal_Modifier__sortIndex)]
+            [DisplayName(Elderseal_Modifier__displayName)]
+            public virtual float Elderseal_Modifier_ {
+                get => Elderseal_Modifier__raw;
                 set {
-                    if (Unk_25_raw == value) return;
-                    Unk_25_raw = value;
-                    OnPropertyChanged(nameof(Unk_25));
+                    if (Elderseal_Modifier__raw == value) return;
+                    Elderseal_Modifier__raw = value;
+                    OnPropertyChanged(nameof(Elderseal_Modifier_));
                 }
             }
 
@@ -581,10 +581,10 @@ namespace MHW_Editor.Weapons {
                 data.Unk_19_raw = reader.ReadByte();
                 data.Unk_20_raw = reader.ReadByte();
                 data.Unk_21_raw = reader.ReadByte();
-                data.Unk_22_raw = reader.ReadSingle();
+                data.Weapon_Sweet_spot_raw = reader.ReadSingle();
                 data.Unk_23_raw = reader.ReadSingle();
                 data.Unk_24_raw = reader.ReadSingle();
-                data.Unk_25_raw = reader.ReadSingle();
+                data.Elderseal_Modifier__raw = reader.ReadSingle();
                 data.Unk_26_raw = reader.ReadByte();
                 data.Unk_27_raw = reader.ReadSingle();
                 return data;
@@ -611,10 +611,10 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_19_raw);
                 writer.Write(Unk_20_raw);
                 writer.Write(Unk_21_raw);
-                writer.Write(Unk_22_raw);
+                writer.Write(Weapon_Sweet_spot_raw);
                 writer.Write(Unk_23_raw);
                 writer.Write(Unk_24_raw);
-                writer.Write(Unk_25_raw);
+                writer.Write(Elderseal_Modifier__raw);
                 writer.Write(Unk_26_raw);
                 writer.Write(Unk_27_raw);
             }
@@ -641,10 +641,10 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
                     new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
                     new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),
-                    new MultiStructItemCustomView(this, "Unk 22", "Unk_22"),
+                    new MultiStructItemCustomView(this, "Weapon Sweet-spot", "Weapon_Sweet_spot"),
                     new MultiStructItemCustomView(this, "Unk 23", "Unk_23"),
                     new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),
-                    new MultiStructItemCustomView(this, "Unk 25", "Unk_25"),
+                    new MultiStructItemCustomView(this, "Elderseal Modifier?", "Elderseal_Modifier_"),
                     new MultiStructItemCustomView(this, "Unk 26", "Unk_26"),
                     new MultiStructItemCustomView(this, "Unk 27", "Unk_27"),
                 };
@@ -2202,45 +2202,45 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_92_raw;
-            public const string Unk_92_displayName = "Unk 92";
-            public const int Unk_92_sortIndex = 300;
-            [SortOrder(Unk_92_sortIndex)]
-            [DisplayName(Unk_92_displayName)]
-            public virtual float Unk_92 {
-                get => Unk_92_raw;
+            protected float Damage_Buff_Red_White_raw;
+            public const string Damage_Buff_Red_White_displayName = "Damage Buff: Red + White";
+            public const int Damage_Buff_Red_White_sortIndex = 300;
+            [SortOrder(Damage_Buff_Red_White_sortIndex)]
+            [DisplayName(Damage_Buff_Red_White_displayName)]
+            public virtual float Damage_Buff_Red_White {
+                get => Damage_Buff_Red_White_raw;
                 set {
-                    if (Unk_92_raw == value) return;
-                    Unk_92_raw = value;
-                    OnPropertyChanged(nameof(Unk_92));
+                    if (Damage_Buff_Red_White_raw == value) return;
+                    Damage_Buff_Red_White_raw = value;
+                    OnPropertyChanged(nameof(Damage_Buff_Red_White));
                 }
             }
 
-            protected float Unk_93_raw;
-            public const string Unk_93_displayName = "Unk 93";
-            public const int Unk_93_sortIndex = 350;
-            [SortOrder(Unk_93_sortIndex)]
-            [DisplayName(Unk_93_displayName)]
-            public virtual float Unk_93 {
-                get => Unk_93_raw;
+            protected float Damage_Buff_All_Three_Extracts_raw;
+            public const string Damage_Buff_All_Three_Extracts_displayName = "Damage Buff: All Three Extracts";
+            public const int Damage_Buff_All_Three_Extracts_sortIndex = 350;
+            [SortOrder(Damage_Buff_All_Three_Extracts_sortIndex)]
+            [DisplayName(Damage_Buff_All_Three_Extracts_displayName)]
+            public virtual float Damage_Buff_All_Three_Extracts {
+                get => Damage_Buff_All_Three_Extracts_raw;
                 set {
-                    if (Unk_93_raw == value) return;
-                    Unk_93_raw = value;
-                    OnPropertyChanged(nameof(Unk_93));
+                    if (Damage_Buff_All_Three_Extracts_raw == value) return;
+                    Damage_Buff_All_Three_Extracts_raw = value;
+                    OnPropertyChanged(nameof(Damage_Buff_All_Three_Extracts));
                 }
             }
 
-            protected float Unk_94_raw;
-            public const string Unk_94_displayName = "Unk 94";
-            public const int Unk_94_sortIndex = 400;
-            [SortOrder(Unk_94_sortIndex)]
-            [DisplayName(Unk_94_displayName)]
-            public virtual float Unk_94 {
-                get => Unk_94_raw;
+            protected float Speed_Buff_White_raw;
+            public const string Speed_Buff_White_displayName = "Speed Buff: White";
+            public const int Speed_Buff_White_sortIndex = 400;
+            [SortOrder(Speed_Buff_White_sortIndex)]
+            [DisplayName(Speed_Buff_White_displayName)]
+            public virtual float Speed_Buff_White {
+                get => Speed_Buff_White_raw;
                 set {
-                    if (Unk_94_raw == value) return;
-                    Unk_94_raw = value;
-                    OnPropertyChanged(nameof(Unk_94));
+                    if (Speed_Buff_White_raw == value) return;
+                    Speed_Buff_White_raw = value;
+                    OnPropertyChanged(nameof(Speed_Buff_White));
                 }
             }
 
@@ -2258,31 +2258,31 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_96_raw;
-            public const string Unk_96_displayName = "Unk 96";
-            public const int Unk_96_sortIndex = 500;
-            [SortOrder(Unk_96_sortIndex)]
-            [DisplayName(Unk_96_displayName)]
-            public virtual float Unk_96 {
-                get => Unk_96_raw;
+            protected float Defense_Buff_Orange_raw;
+            public const string Defense_Buff_Orange_displayName = "Defense Buff: Orange";
+            public const int Defense_Buff_Orange_sortIndex = 500;
+            [SortOrder(Defense_Buff_Orange_sortIndex)]
+            [DisplayName(Defense_Buff_Orange_displayName)]
+            public virtual float Defense_Buff_Orange {
+                get => Defense_Buff_Orange_raw;
                 set {
-                    if (Unk_96_raw == value) return;
-                    Unk_96_raw = value;
-                    OnPropertyChanged(nameof(Unk_96));
+                    if (Defense_Buff_Orange_raw == value) return;
+                    Defense_Buff_Orange_raw = value;
+                    OnPropertyChanged(nameof(Defense_Buff_Orange));
                 }
             }
 
-            protected float Unk_97_raw;
-            public const string Unk_97_displayName = "Unk 97";
-            public const int Unk_97_sortIndex = 550;
-            [SortOrder(Unk_97_sortIndex)]
-            [DisplayName(Unk_97_displayName)]
-            public virtual float Unk_97 {
-                get => Unk_97_raw;
+            protected float Defense_Buff_Orange_White_raw;
+            public const string Defense_Buff_Orange_White_displayName = "Defense Buff: Orange + White";
+            public const int Defense_Buff_Orange_White_sortIndex = 550;
+            [SortOrder(Defense_Buff_Orange_White_sortIndex)]
+            [DisplayName(Defense_Buff_Orange_White_displayName)]
+            public virtual float Defense_Buff_Orange_White {
+                get => Defense_Buff_Orange_White_raw;
                 set {
-                    if (Unk_97_raw == value) return;
-                    Unk_97_raw = value;
-                    OnPropertyChanged(nameof(Unk_97));
+                    if (Defense_Buff_Orange_White_raw == value) return;
+                    Defense_Buff_Orange_White_raw = value;
+                    OnPropertyChanged(nameof(Defense_Buff_Orange_White));
                 }
             }
 
@@ -2303,12 +2303,12 @@ namespace MHW_Editor.Weapons {
                 data.Orange_Extract_Duration_raw = reader.ReadSingle();
                 data.Triple_Extract_Duration_raw = reader.ReadSingle();
                 data.Unk_91_raw = reader.ReadSingle();
-                data.Unk_92_raw = reader.ReadSingle();
-                data.Unk_93_raw = reader.ReadSingle();
-                data.Unk_94_raw = reader.ReadSingle();
+                data.Damage_Buff_Red_White_raw = reader.ReadSingle();
+                data.Damage_Buff_All_Three_Extracts_raw = reader.ReadSingle();
+                data.Speed_Buff_White_raw = reader.ReadSingle();
                 data.Unk_95_raw = reader.ReadSingle();
-                data.Unk_96_raw = reader.ReadSingle();
-                data.Unk_97_raw = reader.ReadSingle();
+                data.Defense_Buff_Orange_raw = reader.ReadSingle();
+                data.Defense_Buff_Orange_White_raw = reader.ReadSingle();
                 return data;
             }
 
@@ -2318,12 +2318,12 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Orange_Extract_Duration_raw);
                 writer.Write(Triple_Extract_Duration_raw);
                 writer.Write(Unk_91_raw);
-                writer.Write(Unk_92_raw);
-                writer.Write(Unk_93_raw);
-                writer.Write(Unk_94_raw);
+                writer.Write(Damage_Buff_Red_White_raw);
+                writer.Write(Damage_Buff_All_Three_Extracts_raw);
+                writer.Write(Speed_Buff_White_raw);
                 writer.Write(Unk_95_raw);
-                writer.Write(Unk_96_raw);
-                writer.Write(Unk_97_raw);
+                writer.Write(Defense_Buff_Orange_raw);
+                writer.Write(Defense_Buff_Orange_White_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
@@ -2333,12 +2333,12 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Orange Extract Duration", "Orange_Extract_Duration"),
                     new MultiStructItemCustomView(this, "Triple Extract Duration", "Triple_Extract_Duration"),
                     new MultiStructItemCustomView(this, "Unk 91", "Unk_91"),
-                    new MultiStructItemCustomView(this, "Unk 92", "Unk_92"),
-                    new MultiStructItemCustomView(this, "Unk 93", "Unk_93"),
-                    new MultiStructItemCustomView(this, "Unk 94", "Unk_94"),
+                    new MultiStructItemCustomView(this, "Damage Buff: Red + White", "Damage_Buff_Red_White"),
+                    new MultiStructItemCustomView(this, "Damage Buff: All Three Extracts", "Damage_Buff_All_Three_Extracts"),
+                    new MultiStructItemCustomView(this, "Speed Buff: White", "Speed_Buff_White"),
                     new MultiStructItemCustomView(this, "Unk 95", "Unk_95"),
-                    new MultiStructItemCustomView(this, "Unk 96", "Unk_96"),
-                    new MultiStructItemCustomView(this, "Unk 97", "Unk_97"),
+                    new MultiStructItemCustomView(this, "Defense Buff: Orange", "Defense_Buff_Orange"),
+                    new MultiStructItemCustomView(this, "Defense Buff: Orange + White", "Defense_Buff_Orange_White"),
                 };
             }
         }
@@ -3581,31 +3581,31 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_139_raw;
-            public const string Unk_139_displayName = "Unk 139";
-            public const int Unk_139_sortIndex = 1550;
-            [SortOrder(Unk_139_sortIndex)]
-            [DisplayName(Unk_139_displayName)]
-            public virtual float Unk_139 {
-                get => Unk_139_raw;
+            protected float Kinsect_Stamina_Consumption_raw;
+            public const string Kinsect_Stamina_Consumption_displayName = "Kinsect Stamina Consumption";
+            public const int Kinsect_Stamina_Consumption_sortIndex = 1550;
+            [SortOrder(Kinsect_Stamina_Consumption_sortIndex)]
+            [DisplayName(Kinsect_Stamina_Consumption_displayName)]
+            public virtual float Kinsect_Stamina_Consumption {
+                get => Kinsect_Stamina_Consumption_raw;
                 set {
-                    if (Unk_139_raw == value) return;
-                    Unk_139_raw = value;
-                    OnPropertyChanged(nameof(Unk_139));
+                    if (Kinsect_Stamina_Consumption_raw == value) return;
+                    Kinsect_Stamina_Consumption_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Stamina_Consumption));
                 }
             }
 
-            protected float Unk_140_raw;
-            public const string Unk_140_displayName = "Unk 140";
-            public const int Unk_140_sortIndex = 1600;
-            [SortOrder(Unk_140_sortIndex)]
-            [DisplayName(Unk_140_displayName)]
-            public virtual float Unk_140 {
-                get => Unk_140_raw;
+            protected float Kinsect_Max_Stamina_raw;
+            public const string Kinsect_Max_Stamina_displayName = "Kinsect Max Stamina";
+            public const int Kinsect_Max_Stamina_sortIndex = 1600;
+            [SortOrder(Kinsect_Max_Stamina_sortIndex)]
+            [DisplayName(Kinsect_Max_Stamina_displayName)]
+            public virtual float Kinsect_Max_Stamina {
+                get => Kinsect_Max_Stamina_raw;
                 set {
-                    if (Unk_140_raw == value) return;
-                    Unk_140_raw = value;
-                    OnPropertyChanged(nameof(Unk_140));
+                    if (Kinsect_Max_Stamina_raw == value) return;
+                    Kinsect_Max_Stamina_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Max_Stamina));
                 }
             }
 
@@ -3665,59 +3665,59 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_145_raw;
-            public const string Unk_145_displayName = "Unk 145";
-            public const int Unk_145_sortIndex = 1850;
-            [SortOrder(Unk_145_sortIndex)]
-            [DisplayName(Unk_145_displayName)]
-            public virtual float Unk_145 {
-                get => Unk_145_raw;
+            protected float Kinsect_Dust_Interval_Blast_raw;
+            public const string Kinsect_Dust_Interval_Blast_displayName = "Kinsect Dust Interval: Blast";
+            public const int Kinsect_Dust_Interval_Blast_sortIndex = 1850;
+            [SortOrder(Kinsect_Dust_Interval_Blast_sortIndex)]
+            [DisplayName(Kinsect_Dust_Interval_Blast_displayName)]
+            public virtual float Kinsect_Dust_Interval_Blast {
+                get => Kinsect_Dust_Interval_Blast_raw;
                 set {
-                    if (Unk_145_raw == value) return;
-                    Unk_145_raw = value;
-                    OnPropertyChanged(nameof(Unk_145));
+                    if (Kinsect_Dust_Interval_Blast_raw == value) return;
+                    Kinsect_Dust_Interval_Blast_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Dust_Interval_Blast));
                 }
             }
 
-            protected float Unk_146_raw;
-            public const string Unk_146_displayName = "Unk 146";
-            public const int Unk_146_sortIndex = 1900;
-            [SortOrder(Unk_146_sortIndex)]
-            [DisplayName(Unk_146_displayName)]
-            public virtual float Unk_146 {
-                get => Unk_146_raw;
+            protected float Kinsect_Dust_Interval_Heal_raw;
+            public const string Kinsect_Dust_Interval_Heal_displayName = "Kinsect Dust Interval: Heal";
+            public const int Kinsect_Dust_Interval_Heal_sortIndex = 1900;
+            [SortOrder(Kinsect_Dust_Interval_Heal_sortIndex)]
+            [DisplayName(Kinsect_Dust_Interval_Heal_displayName)]
+            public virtual float Kinsect_Dust_Interval_Heal {
+                get => Kinsect_Dust_Interval_Heal_raw;
                 set {
-                    if (Unk_146_raw == value) return;
-                    Unk_146_raw = value;
-                    OnPropertyChanged(nameof(Unk_146));
+                    if (Kinsect_Dust_Interval_Heal_raw == value) return;
+                    Kinsect_Dust_Interval_Heal_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Dust_Interval_Heal));
                 }
             }
 
-            protected float Unk_147_raw;
-            public const string Unk_147_displayName = "Unk 147";
-            public const int Unk_147_sortIndex = 1950;
-            [SortOrder(Unk_147_sortIndex)]
-            [DisplayName(Unk_147_displayName)]
-            public virtual float Unk_147 {
-                get => Unk_147_raw;
+            protected float Kinsect_Dust_Interval_Paralysis_raw;
+            public const string Kinsect_Dust_Interval_Paralysis_displayName = "Kinsect Dust Interval: Paralysis";
+            public const int Kinsect_Dust_Interval_Paralysis_sortIndex = 1950;
+            [SortOrder(Kinsect_Dust_Interval_Paralysis_sortIndex)]
+            [DisplayName(Kinsect_Dust_Interval_Paralysis_displayName)]
+            public virtual float Kinsect_Dust_Interval_Paralysis {
+                get => Kinsect_Dust_Interval_Paralysis_raw;
                 set {
-                    if (Unk_147_raw == value) return;
-                    Unk_147_raw = value;
-                    OnPropertyChanged(nameof(Unk_147));
+                    if (Kinsect_Dust_Interval_Paralysis_raw == value) return;
+                    Kinsect_Dust_Interval_Paralysis_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Dust_Interval_Paralysis));
                 }
             }
 
-            protected float Unk_148_raw;
-            public const string Unk_148_displayName = "Unk 148";
-            public const int Unk_148_sortIndex = 2000;
-            [SortOrder(Unk_148_sortIndex)]
-            [DisplayName(Unk_148_displayName)]
-            public virtual float Unk_148 {
-                get => Unk_148_raw;
+            protected float Kinsect_Dust_Interval_Poison_raw;
+            public const string Kinsect_Dust_Interval_Poison_displayName = "Kinsect Dust Interval: Poison";
+            public const int Kinsect_Dust_Interval_Poison_sortIndex = 2000;
+            [SortOrder(Kinsect_Dust_Interval_Poison_sortIndex)]
+            [DisplayName(Kinsect_Dust_Interval_Poison_displayName)]
+            public virtual float Kinsect_Dust_Interval_Poison {
+                get => Kinsect_Dust_Interval_Poison_raw;
                 set {
-                    if (Unk_148_raw == value) return;
-                    Unk_148_raw = value;
-                    OnPropertyChanged(nameof(Unk_148));
+                    if (Kinsect_Dust_Interval_Poison_raw == value) return;
+                    Kinsect_Dust_Interval_Poison_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Dust_Interval_Poison));
                 }
             }
 
@@ -3791,16 +3791,16 @@ namespace MHW_Editor.Weapons {
                 data.Unk_136_raw = reader.ReadSingle();
                 data.Unk_137_raw = reader.ReadSingle();
                 data.Unk_138_raw = reader.ReadSingle();
-                data.Unk_139_raw = reader.ReadSingle();
-                data.Unk_140_raw = reader.ReadSingle();
+                data.Kinsect_Stamina_Consumption_raw = reader.ReadSingle();
+                data.Kinsect_Max_Stamina_raw = reader.ReadSingle();
                 data.Unk_141_raw = reader.ReadSingle();
                 data.Unk_142_raw = reader.ReadSingle();
                 data.Unk_143_raw = reader.ReadSingle();
                 data.Unk_144_raw = reader.ReadSingle();
-                data.Unk_145_raw = reader.ReadSingle();
-                data.Unk_146_raw = reader.ReadSingle();
-                data.Unk_147_raw = reader.ReadSingle();
-                data.Unk_148_raw = reader.ReadSingle();
+                data.Kinsect_Dust_Interval_Blast_raw = reader.ReadSingle();
+                data.Kinsect_Dust_Interval_Heal_raw = reader.ReadSingle();
+                data.Kinsect_Dust_Interval_Paralysis_raw = reader.ReadSingle();
+                data.Kinsect_Dust_Interval_Poison_raw = reader.ReadSingle();
                 data.Unk_149_raw = reader.ReadSingle();
                 data.Unk_150_raw = reader.ReadSingle();
                 return data;
@@ -3837,16 +3837,16 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_136_raw);
                 writer.Write(Unk_137_raw);
                 writer.Write(Unk_138_raw);
-                writer.Write(Unk_139_raw);
-                writer.Write(Unk_140_raw);
+                writer.Write(Kinsect_Stamina_Consumption_raw);
+                writer.Write(Kinsect_Max_Stamina_raw);
                 writer.Write(Unk_141_raw);
                 writer.Write(Unk_142_raw);
                 writer.Write(Unk_143_raw);
                 writer.Write(Unk_144_raw);
-                writer.Write(Unk_145_raw);
-                writer.Write(Unk_146_raw);
-                writer.Write(Unk_147_raw);
-                writer.Write(Unk_148_raw);
+                writer.Write(Kinsect_Dust_Interval_Blast_raw);
+                writer.Write(Kinsect_Dust_Interval_Heal_raw);
+                writer.Write(Kinsect_Dust_Interval_Paralysis_raw);
+                writer.Write(Kinsect_Dust_Interval_Poison_raw);
                 writer.Write(Unk_149_raw);
                 writer.Write(Unk_150_raw);
             }
@@ -3883,303 +3883,303 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 136", "Unk_136"),
                     new MultiStructItemCustomView(this, "Unk 137", "Unk_137"),
                     new MultiStructItemCustomView(this, "Unk 138", "Unk_138"),
-                    new MultiStructItemCustomView(this, "Unk 139", "Unk_139"),
-                    new MultiStructItemCustomView(this, "Unk 140", "Unk_140"),
+                    new MultiStructItemCustomView(this, "Kinsect Stamina Consumption", "Kinsect_Stamina_Consumption"),
+                    new MultiStructItemCustomView(this, "Kinsect Max Stamina", "Kinsect_Max_Stamina"),
                     new MultiStructItemCustomView(this, "Unk 141", "Unk_141"),
                     new MultiStructItemCustomView(this, "Unk 142", "Unk_142"),
                     new MultiStructItemCustomView(this, "Unk 143", "Unk_143"),
                     new MultiStructItemCustomView(this, "Unk 144", "Unk_144"),
-                    new MultiStructItemCustomView(this, "Unk 145", "Unk_145"),
-                    new MultiStructItemCustomView(this, "Unk 146", "Unk_146"),
-                    new MultiStructItemCustomView(this, "Unk 147", "Unk_147"),
-                    new MultiStructItemCustomView(this, "Unk 148", "Unk_148"),
+                    new MultiStructItemCustomView(this, "Kinsect Dust Interval: Blast", "Kinsect_Dust_Interval_Blast"),
+                    new MultiStructItemCustomView(this, "Kinsect Dust Interval: Heal", "Kinsect_Dust_Interval_Heal"),
+                    new MultiStructItemCustomView(this, "Kinsect Dust Interval: Paralysis", "Kinsect_Dust_Interval_Paralysis"),
+                    new MultiStructItemCustomView(this, "Kinsect Dust Interval: Poison", "Kinsect_Dust_Interval_Poison"),
                     new MultiStructItemCustomView(this, "Unk 149", "Unk_149"),
                     new MultiStructItemCustomView(this, "Unk 150", "Unk_150"),
                 };
             }
         }
 
-        public partial class Unk_Arr_3 : MhwStructItem {
+        public partial class Kinsect_Stats : MhwStructItem {
             public const ulong FixedSizeCount = 9;
-            public const string GridName = "Unk Arr 3";
+            public const string GridName = "Kinsect Stats";
 
-            protected float Unk_1_raw;
-            public const string Unk_1_displayName = "Unk 1";
-            public const int Unk_1_sortIndex = 50;
-            [SortOrder(Unk_1_sortIndex)]
-            [DisplayName(Unk_1_displayName)]
-            public virtual float Unk_1 {
-                get => Unk_1_raw;
+            protected float Level_1_raw;
+            public const string Level_1_displayName = "Level 1";
+            public const int Level_1_sortIndex = 50;
+            [SortOrder(Level_1_sortIndex)]
+            [DisplayName(Level_1_displayName)]
+            public virtual float Level_1 {
+                get => Level_1_raw;
                 set {
-                    if (Unk_1_raw == value) return;
-                    Unk_1_raw = value;
-                    OnPropertyChanged(nameof(Unk_1));
+                    if (Level_1_raw == value) return;
+                    Level_1_raw = value;
+                    OnPropertyChanged(nameof(Level_1));
                 }
             }
 
-            protected float Unk_2_raw;
-            public const string Unk_2_displayName = "Unk 2";
-            public const int Unk_2_sortIndex = 100;
-            [SortOrder(Unk_2_sortIndex)]
-            [DisplayName(Unk_2_displayName)]
-            public virtual float Unk_2 {
-                get => Unk_2_raw;
+            protected float Level_2_raw;
+            public const string Level_2_displayName = "Level 2";
+            public const int Level_2_sortIndex = 100;
+            [SortOrder(Level_2_sortIndex)]
+            [DisplayName(Level_2_displayName)]
+            public virtual float Level_2 {
+                get => Level_2_raw;
                 set {
-                    if (Unk_2_raw == value) return;
-                    Unk_2_raw = value;
-                    OnPropertyChanged(nameof(Unk_2));
+                    if (Level_2_raw == value) return;
+                    Level_2_raw = value;
+                    OnPropertyChanged(nameof(Level_2));
                 }
             }
 
-            protected float Unk_3_raw;
-            public const string Unk_3_displayName = "Unk 3";
-            public const int Unk_3_sortIndex = 150;
-            [SortOrder(Unk_3_sortIndex)]
-            [DisplayName(Unk_3_displayName)]
-            public virtual float Unk_3 {
-                get => Unk_3_raw;
+            protected float Level_3_raw;
+            public const string Level_3_displayName = "Level 3";
+            public const int Level_3_sortIndex = 150;
+            [SortOrder(Level_3_sortIndex)]
+            [DisplayName(Level_3_displayName)]
+            public virtual float Level_3 {
+                get => Level_3_raw;
                 set {
-                    if (Unk_3_raw == value) return;
-                    Unk_3_raw = value;
-                    OnPropertyChanged(nameof(Unk_3));
+                    if (Level_3_raw == value) return;
+                    Level_3_raw = value;
+                    OnPropertyChanged(nameof(Level_3));
                 }
             }
 
-            protected float Unk_4_raw;
-            public const string Unk_4_displayName = "Unk 4";
-            public const int Unk_4_sortIndex = 200;
-            [SortOrder(Unk_4_sortIndex)]
-            [DisplayName(Unk_4_displayName)]
-            public virtual float Unk_4 {
-                get => Unk_4_raw;
+            protected float Level_4_raw;
+            public const string Level_4_displayName = "Level 4";
+            public const int Level_4_sortIndex = 200;
+            [SortOrder(Level_4_sortIndex)]
+            [DisplayName(Level_4_displayName)]
+            public virtual float Level_4 {
+                get => Level_4_raw;
                 set {
-                    if (Unk_4_raw == value) return;
-                    Unk_4_raw = value;
-                    OnPropertyChanged(nameof(Unk_4));
+                    if (Level_4_raw == value) return;
+                    Level_4_raw = value;
+                    OnPropertyChanged(nameof(Level_4));
                 }
             }
 
-            protected float Unk_5_raw;
-            public const string Unk_5_displayName = "Unk 5";
-            public const int Unk_5_sortIndex = 250;
-            [SortOrder(Unk_5_sortIndex)]
-            [DisplayName(Unk_5_displayName)]
-            public virtual float Unk_5 {
-                get => Unk_5_raw;
+            protected float Level_5_raw;
+            public const string Level_5_displayName = "Level 5";
+            public const int Level_5_sortIndex = 250;
+            [SortOrder(Level_5_sortIndex)]
+            [DisplayName(Level_5_displayName)]
+            public virtual float Level_5 {
+                get => Level_5_raw;
                 set {
-                    if (Unk_5_raw == value) return;
-                    Unk_5_raw = value;
-                    OnPropertyChanged(nameof(Unk_5));
+                    if (Level_5_raw == value) return;
+                    Level_5_raw = value;
+                    OnPropertyChanged(nameof(Level_5));
                 }
             }
 
-            protected float Unk_6_raw;
-            public const string Unk_6_displayName = "Unk 6";
-            public const int Unk_6_sortIndex = 300;
-            [SortOrder(Unk_6_sortIndex)]
-            [DisplayName(Unk_6_displayName)]
-            public virtual float Unk_6 {
-                get => Unk_6_raw;
+            protected float Level_6_raw;
+            public const string Level_6_displayName = "Level 6";
+            public const int Level_6_sortIndex = 300;
+            [SortOrder(Level_6_sortIndex)]
+            [DisplayName(Level_6_displayName)]
+            public virtual float Level_6 {
+                get => Level_6_raw;
                 set {
-                    if (Unk_6_raw == value) return;
-                    Unk_6_raw = value;
-                    OnPropertyChanged(nameof(Unk_6));
+                    if (Level_6_raw == value) return;
+                    Level_6_raw = value;
+                    OnPropertyChanged(nameof(Level_6));
                 }
             }
 
-            protected float Unk_7_raw;
-            public const string Unk_7_displayName = "Unk 7";
-            public const int Unk_7_sortIndex = 350;
-            [SortOrder(Unk_7_sortIndex)]
-            [DisplayName(Unk_7_displayName)]
-            public virtual float Unk_7 {
-                get => Unk_7_raw;
+            protected float Level_7_raw;
+            public const string Level_7_displayName = "Level 7";
+            public const int Level_7_sortIndex = 350;
+            [SortOrder(Level_7_sortIndex)]
+            [DisplayName(Level_7_displayName)]
+            public virtual float Level_7 {
+                get => Level_7_raw;
                 set {
-                    if (Unk_7_raw == value) return;
-                    Unk_7_raw = value;
-                    OnPropertyChanged(nameof(Unk_7));
+                    if (Level_7_raw == value) return;
+                    Level_7_raw = value;
+                    OnPropertyChanged(nameof(Level_7));
                 }
             }
 
-            protected float Unk_8_raw;
-            public const string Unk_8_displayName = "Unk 8";
-            public const int Unk_8_sortIndex = 400;
-            [SortOrder(Unk_8_sortIndex)]
-            [DisplayName(Unk_8_displayName)]
-            public virtual float Unk_8 {
-                get => Unk_8_raw;
+            protected float Level_8_raw;
+            public const string Level_8_displayName = "Level 8";
+            public const int Level_8_sortIndex = 400;
+            [SortOrder(Level_8_sortIndex)]
+            [DisplayName(Level_8_displayName)]
+            public virtual float Level_8 {
+                get => Level_8_raw;
                 set {
-                    if (Unk_8_raw == value) return;
-                    Unk_8_raw = value;
-                    OnPropertyChanged(nameof(Unk_8));
+                    if (Level_8_raw == value) return;
+                    Level_8_raw = value;
+                    OnPropertyChanged(nameof(Level_8));
                 }
             }
 
-            protected float Unk_9_raw;
-            public const string Unk_9_displayName = "Unk 9";
-            public const int Unk_9_sortIndex = 450;
-            [SortOrder(Unk_9_sortIndex)]
-            [DisplayName(Unk_9_displayName)]
-            public virtual float Unk_9 {
-                get => Unk_9_raw;
+            protected float Level_9_raw;
+            public const string Level_9_displayName = "Level 9";
+            public const int Level_9_sortIndex = 450;
+            [SortOrder(Level_9_sortIndex)]
+            [DisplayName(Level_9_displayName)]
+            public virtual float Level_9 {
+                get => Level_9_raw;
                 set {
-                    if (Unk_9_raw == value) return;
-                    Unk_9_raw = value;
-                    OnPropertyChanged(nameof(Unk_9));
+                    if (Level_9_raw == value) return;
+                    Level_9_raw = value;
+                    OnPropertyChanged(nameof(Level_9));
                 }
             }
 
-            protected float Unk_10_raw;
-            public const string Unk_10_displayName = "Unk 10";
-            public const int Unk_10_sortIndex = 500;
-            [SortOrder(Unk_10_sortIndex)]
-            [DisplayName(Unk_10_displayName)]
-            public virtual float Unk_10 {
-                get => Unk_10_raw;
+            protected float Level_10_raw;
+            public const string Level_10_displayName = "Level 10";
+            public const int Level_10_sortIndex = 500;
+            [SortOrder(Level_10_sortIndex)]
+            [DisplayName(Level_10_displayName)]
+            public virtual float Level_10 {
+                get => Level_10_raw;
                 set {
-                    if (Unk_10_raw == value) return;
-                    Unk_10_raw = value;
-                    OnPropertyChanged(nameof(Unk_10));
+                    if (Level_10_raw == value) return;
+                    Level_10_raw = value;
+                    OnPropertyChanged(nameof(Level_10));
                 }
             }
 
-            protected float Unk_11_raw;
-            public const string Unk_11_displayName = "Unk 11";
-            public const int Unk_11_sortIndex = 550;
-            [SortOrder(Unk_11_sortIndex)]
-            [DisplayName(Unk_11_displayName)]
-            public virtual float Unk_11 {
-                get => Unk_11_raw;
+            protected float Level_11_raw;
+            public const string Level_11_displayName = "Level 11";
+            public const int Level_11_sortIndex = 550;
+            [SortOrder(Level_11_sortIndex)]
+            [DisplayName(Level_11_displayName)]
+            public virtual float Level_11 {
+                get => Level_11_raw;
                 set {
-                    if (Unk_11_raw == value) return;
-                    Unk_11_raw = value;
-                    OnPropertyChanged(nameof(Unk_11));
+                    if (Level_11_raw == value) return;
+                    Level_11_raw = value;
+                    OnPropertyChanged(nameof(Level_11));
                 }
             }
 
-            protected float Unk_12_raw;
-            public const string Unk_12_displayName = "Unk 12";
-            public const int Unk_12_sortIndex = 600;
-            [SortOrder(Unk_12_sortIndex)]
-            [DisplayName(Unk_12_displayName)]
-            public virtual float Unk_12 {
-                get => Unk_12_raw;
+            protected float Level_12_raw;
+            public const string Level_12_displayName = "Level 12";
+            public const int Level_12_sortIndex = 600;
+            [SortOrder(Level_12_sortIndex)]
+            [DisplayName(Level_12_displayName)]
+            public virtual float Level_12 {
+                get => Level_12_raw;
                 set {
-                    if (Unk_12_raw == value) return;
-                    Unk_12_raw = value;
-                    OnPropertyChanged(nameof(Unk_12));
+                    if (Level_12_raw == value) return;
+                    Level_12_raw = value;
+                    OnPropertyChanged(nameof(Level_12));
                 }
             }
 
-            protected float Unk_13_raw;
-            public const string Unk_13_displayName = "Unk 13";
-            public const int Unk_13_sortIndex = 650;
-            [SortOrder(Unk_13_sortIndex)]
-            [DisplayName(Unk_13_displayName)]
-            public virtual float Unk_13 {
-                get => Unk_13_raw;
+            protected float Level_13_raw;
+            public const string Level_13_displayName = "Level 13";
+            public const int Level_13_sortIndex = 650;
+            [SortOrder(Level_13_sortIndex)]
+            [DisplayName(Level_13_displayName)]
+            public virtual float Level_13 {
+                get => Level_13_raw;
                 set {
-                    if (Unk_13_raw == value) return;
-                    Unk_13_raw = value;
-                    OnPropertyChanged(nameof(Unk_13));
+                    if (Level_13_raw == value) return;
+                    Level_13_raw = value;
+                    OnPropertyChanged(nameof(Level_13));
                 }
             }
 
-            protected float Unk_14_raw;
-            public const string Unk_14_displayName = "Unk 14";
-            public const int Unk_14_sortIndex = 700;
-            [SortOrder(Unk_14_sortIndex)]
-            [DisplayName(Unk_14_displayName)]
-            public virtual float Unk_14 {
-                get => Unk_14_raw;
+            protected float Level_14_raw;
+            public const string Level_14_displayName = "Level 14";
+            public const int Level_14_sortIndex = 700;
+            [SortOrder(Level_14_sortIndex)]
+            [DisplayName(Level_14_displayName)]
+            public virtual float Level_14 {
+                get => Level_14_raw;
                 set {
-                    if (Unk_14_raw == value) return;
-                    Unk_14_raw = value;
-                    OnPropertyChanged(nameof(Unk_14));
+                    if (Level_14_raw == value) return;
+                    Level_14_raw = value;
+                    OnPropertyChanged(nameof(Level_14));
                 }
             }
 
-            protected float Unk_15_raw;
-            public const string Unk_15_displayName = "Unk 15";
-            public const int Unk_15_sortIndex = 750;
-            [SortOrder(Unk_15_sortIndex)]
-            [DisplayName(Unk_15_displayName)]
-            public virtual float Unk_15 {
-                get => Unk_15_raw;
+            protected float Level_15_raw;
+            public const string Level_15_displayName = "Level 15";
+            public const int Level_15_sortIndex = 750;
+            [SortOrder(Level_15_sortIndex)]
+            [DisplayName(Level_15_displayName)]
+            public virtual float Level_15 {
+                get => Level_15_raw;
                 set {
-                    if (Unk_15_raw == value) return;
-                    Unk_15_raw = value;
-                    OnPropertyChanged(nameof(Unk_15));
+                    if (Level_15_raw == value) return;
+                    Level_15_raw = value;
+                    OnPropertyChanged(nameof(Level_15));
                 }
             }
 
-            protected float Unk_16_raw;
-            public const string Unk_16_displayName = "Unk 16";
-            public const int Unk_16_sortIndex = 800;
-            [SortOrder(Unk_16_sortIndex)]
-            [DisplayName(Unk_16_displayName)]
-            public virtual float Unk_16 {
-                get => Unk_16_raw;
+            protected float Level_16_raw;
+            public const string Level_16_displayName = "Level 16";
+            public const int Level_16_sortIndex = 800;
+            [SortOrder(Level_16_sortIndex)]
+            [DisplayName(Level_16_displayName)]
+            public virtual float Level_16 {
+                get => Level_16_raw;
                 set {
-                    if (Unk_16_raw == value) return;
-                    Unk_16_raw = value;
-                    OnPropertyChanged(nameof(Unk_16));
+                    if (Level_16_raw == value) return;
+                    Level_16_raw = value;
+                    OnPropertyChanged(nameof(Level_16));
                 }
             }
 
-            protected float Unk_17_raw;
-            public const string Unk_17_displayName = "Unk 17";
-            public const int Unk_17_sortIndex = 850;
-            [SortOrder(Unk_17_sortIndex)]
-            [DisplayName(Unk_17_displayName)]
-            public virtual float Unk_17 {
-                get => Unk_17_raw;
+            protected float Level_17_raw;
+            public const string Level_17_displayName = "Level 17";
+            public const int Level_17_sortIndex = 850;
+            [SortOrder(Level_17_sortIndex)]
+            [DisplayName(Level_17_displayName)]
+            public virtual float Level_17 {
+                get => Level_17_raw;
                 set {
-                    if (Unk_17_raw == value) return;
-                    Unk_17_raw = value;
-                    OnPropertyChanged(nameof(Unk_17));
+                    if (Level_17_raw == value) return;
+                    Level_17_raw = value;
+                    OnPropertyChanged(nameof(Level_17));
                 }
             }
 
-            protected float Unk_18_raw;
-            public const string Unk_18_displayName = "Unk 18";
-            public const int Unk_18_sortIndex = 900;
-            [SortOrder(Unk_18_sortIndex)]
-            [DisplayName(Unk_18_displayName)]
-            public virtual float Unk_18 {
-                get => Unk_18_raw;
+            protected float Level_18_raw;
+            public const string Level_18_displayName = "Level 18";
+            public const int Level_18_sortIndex = 900;
+            [SortOrder(Level_18_sortIndex)]
+            [DisplayName(Level_18_displayName)]
+            public virtual float Level_18 {
+                get => Level_18_raw;
                 set {
-                    if (Unk_18_raw == value) return;
-                    Unk_18_raw = value;
-                    OnPropertyChanged(nameof(Unk_18));
+                    if (Level_18_raw == value) return;
+                    Level_18_raw = value;
+                    OnPropertyChanged(nameof(Level_18));
                 }
             }
 
-            protected float Unk_19_raw;
-            public const string Unk_19_displayName = "Unk 19";
-            public const int Unk_19_sortIndex = 950;
-            [SortOrder(Unk_19_sortIndex)]
-            [DisplayName(Unk_19_displayName)]
-            public virtual float Unk_19 {
-                get => Unk_19_raw;
+            protected float Level_19_raw;
+            public const string Level_19_displayName = "Level 19";
+            public const int Level_19_sortIndex = 950;
+            [SortOrder(Level_19_sortIndex)]
+            [DisplayName(Level_19_displayName)]
+            public virtual float Level_19 {
+                get => Level_19_raw;
                 set {
-                    if (Unk_19_raw == value) return;
-                    Unk_19_raw = value;
-                    OnPropertyChanged(nameof(Unk_19));
+                    if (Level_19_raw == value) return;
+                    Level_19_raw = value;
+                    OnPropertyChanged(nameof(Level_19));
                 }
             }
 
-            protected float Unk_20_raw;
-            public const string Unk_20_displayName = "Unk 20";
-            public const int Unk_20_sortIndex = 1000;
-            [SortOrder(Unk_20_sortIndex)]
-            [DisplayName(Unk_20_displayName)]
-            public virtual float Unk_20 {
-                get => Unk_20_raw;
+            protected float Level_20_raw;
+            public const string Level_20_displayName = "Level 20";
+            public const int Level_20_sortIndex = 1000;
+            [SortOrder(Level_20_sortIndex)]
+            [DisplayName(Level_20_displayName)]
+            public virtual float Level_20 {
+                get => Level_20_raw;
                 set {
-                    if (Unk_20_raw == value) return;
-                    Unk_20_raw = value;
-                    OnPropertyChanged(nameof(Unk_20));
+                    if (Level_20_raw == value) return;
+                    Level_20_raw = value;
+                    OnPropertyChanged(nameof(Level_20));
                 }
             }
 
@@ -4192,53 +4192,53 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static Unk_Arr_3 LoadData(BinaryReader reader, ulong i) {
-                var data = new Unk_Arr_3();
+            public static Kinsect_Stats LoadData(BinaryReader reader, ulong i) {
+                var data = new Kinsect_Stats();
                 data.Index = i;
-                data.Unk_1_raw = reader.ReadSingle();
-                data.Unk_2_raw = reader.ReadSingle();
-                data.Unk_3_raw = reader.ReadSingle();
-                data.Unk_4_raw = reader.ReadSingle();
-                data.Unk_5_raw = reader.ReadSingle();
-                data.Unk_6_raw = reader.ReadSingle();
-                data.Unk_7_raw = reader.ReadSingle();
-                data.Unk_8_raw = reader.ReadSingle();
-                data.Unk_9_raw = reader.ReadSingle();
-                data.Unk_10_raw = reader.ReadSingle();
-                data.Unk_11_raw = reader.ReadSingle();
-                data.Unk_12_raw = reader.ReadSingle();
-                data.Unk_13_raw = reader.ReadSingle();
-                data.Unk_14_raw = reader.ReadSingle();
-                data.Unk_15_raw = reader.ReadSingle();
-                data.Unk_16_raw = reader.ReadSingle();
-                data.Unk_17_raw = reader.ReadSingle();
-                data.Unk_18_raw = reader.ReadSingle();
-                data.Unk_19_raw = reader.ReadSingle();
-                data.Unk_20_raw = reader.ReadSingle();
+                data.Level_1_raw = reader.ReadSingle();
+                data.Level_2_raw = reader.ReadSingle();
+                data.Level_3_raw = reader.ReadSingle();
+                data.Level_4_raw = reader.ReadSingle();
+                data.Level_5_raw = reader.ReadSingle();
+                data.Level_6_raw = reader.ReadSingle();
+                data.Level_7_raw = reader.ReadSingle();
+                data.Level_8_raw = reader.ReadSingle();
+                data.Level_9_raw = reader.ReadSingle();
+                data.Level_10_raw = reader.ReadSingle();
+                data.Level_11_raw = reader.ReadSingle();
+                data.Level_12_raw = reader.ReadSingle();
+                data.Level_13_raw = reader.ReadSingle();
+                data.Level_14_raw = reader.ReadSingle();
+                data.Level_15_raw = reader.ReadSingle();
+                data.Level_16_raw = reader.ReadSingle();
+                data.Level_17_raw = reader.ReadSingle();
+                data.Level_18_raw = reader.ReadSingle();
+                data.Level_19_raw = reader.ReadSingle();
+                data.Level_20_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_1_raw);
-                writer.Write(Unk_2_raw);
-                writer.Write(Unk_3_raw);
-                writer.Write(Unk_4_raw);
-                writer.Write(Unk_5_raw);
-                writer.Write(Unk_6_raw);
-                writer.Write(Unk_7_raw);
-                writer.Write(Unk_8_raw);
-                writer.Write(Unk_9_raw);
-                writer.Write(Unk_10_raw);
-                writer.Write(Unk_11_raw);
-                writer.Write(Unk_12_raw);
-                writer.Write(Unk_13_raw);
-                writer.Write(Unk_14_raw);
-                writer.Write(Unk_15_raw);
-                writer.Write(Unk_16_raw);
-                writer.Write(Unk_17_raw);
-                writer.Write(Unk_18_raw);
-                writer.Write(Unk_19_raw);
-                writer.Write(Unk_20_raw);
+                writer.Write(Level_1_raw);
+                writer.Write(Level_2_raw);
+                writer.Write(Level_3_raw);
+                writer.Write(Level_4_raw);
+                writer.Write(Level_5_raw);
+                writer.Write(Level_6_raw);
+                writer.Write(Level_7_raw);
+                writer.Write(Level_8_raw);
+                writer.Write(Level_9_raw);
+                writer.Write(Level_10_raw);
+                writer.Write(Level_11_raw);
+                writer.Write(Level_12_raw);
+                writer.Write(Level_13_raw);
+                writer.Write(Level_14_raw);
+                writer.Write(Level_15_raw);
+                writer.Write(Level_16_raw);
+                writer.Write(Level_17_raw);
+                writer.Write(Level_18_raw);
+                writer.Write(Level_19_raw);
+                writer.Write(Level_20_raw);
             }
         }
 
@@ -4330,283 +4330,283 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_157_raw;
-            public const string Unk_157_displayName = "Unk 157";
-            public const int Unk_157_sortIndex = 350;
-            [SortOrder(Unk_157_sortIndex)]
-            [DisplayName(Unk_157_displayName)]
-            public virtual float Unk_157 {
-                get => Unk_157_raw;
+            protected float Kinsect_Buff_Red_raw;
+            public const string Kinsect_Buff_Red_displayName = "Kinsect Buff: Red";
+            public const int Kinsect_Buff_Red_sortIndex = 350;
+            [SortOrder(Kinsect_Buff_Red_sortIndex)]
+            [DisplayName(Kinsect_Buff_Red_displayName)]
+            public virtual float Kinsect_Buff_Red {
+                get => Kinsect_Buff_Red_raw;
                 set {
-                    if (Unk_157_raw == value) return;
-                    Unk_157_raw = value;
-                    OnPropertyChanged(nameof(Unk_157));
+                    if (Kinsect_Buff_Red_raw == value) return;
+                    Kinsect_Buff_Red_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Buff_Red));
                 }
             }
 
-            protected float Unk_158_raw;
-            public const string Unk_158_displayName = "Unk 158";
-            public const int Unk_158_sortIndex = 400;
-            [SortOrder(Unk_158_sortIndex)]
-            [DisplayName(Unk_158_displayName)]
-            public virtual float Unk_158 {
-                get => Unk_158_raw;
+            protected float Kinsect_Buff_White_raw;
+            public const string Kinsect_Buff_White_displayName = "Kinsect Buff: White";
+            public const int Kinsect_Buff_White_sortIndex = 400;
+            [SortOrder(Kinsect_Buff_White_sortIndex)]
+            [DisplayName(Kinsect_Buff_White_displayName)]
+            public virtual float Kinsect_Buff_White {
+                get => Kinsect_Buff_White_raw;
                 set {
-                    if (Unk_158_raw == value) return;
-                    Unk_158_raw = value;
-                    OnPropertyChanged(nameof(Unk_158));
+                    if (Kinsect_Buff_White_raw == value) return;
+                    Kinsect_Buff_White_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Buff_White));
                 }
             }
 
-            protected float Unk_159_raw;
-            public const string Unk_159_displayName = "Unk 159";
-            public const int Unk_159_sortIndex = 450;
-            [SortOrder(Unk_159_sortIndex)]
-            [DisplayName(Unk_159_displayName)]
-            public virtual float Unk_159 {
-                get => Unk_159_raw;
+            protected float Kinsect_Buff_Orange_raw;
+            public const string Kinsect_Buff_Orange_displayName = "Kinsect Buff: Orange";
+            public const int Kinsect_Buff_Orange_sortIndex = 450;
+            [SortOrder(Kinsect_Buff_Orange_sortIndex)]
+            [DisplayName(Kinsect_Buff_Orange_displayName)]
+            public virtual float Kinsect_Buff_Orange {
+                get => Kinsect_Buff_Orange_raw;
                 set {
-                    if (Unk_159_raw == value) return;
-                    Unk_159_raw = value;
-                    OnPropertyChanged(nameof(Unk_159));
+                    if (Kinsect_Buff_Orange_raw == value) return;
+                    Kinsect_Buff_Orange_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Buff_Orange));
                 }
             }
 
-            protected float Unk_160_raw;
-            public const string Unk_160_displayName = "Unk 160";
-            public const int Unk_160_sortIndex = 500;
-            [SortOrder(Unk_160_sortIndex)]
-            [DisplayName(Unk_160_displayName)]
-            public virtual float Unk_160 {
-                get => Unk_160_raw;
+            protected float Kinsect_Buff_All_Three_Extracts_raw;
+            public const string Kinsect_Buff_All_Three_Extracts_displayName = "Kinsect Buff: All Three Extracts";
+            public const int Kinsect_Buff_All_Three_Extracts_sortIndex = 500;
+            [SortOrder(Kinsect_Buff_All_Three_Extracts_sortIndex)]
+            [DisplayName(Kinsect_Buff_All_Three_Extracts_displayName)]
+            public virtual float Kinsect_Buff_All_Three_Extracts {
+                get => Kinsect_Buff_All_Three_Extracts_raw;
                 set {
-                    if (Unk_160_raw == value) return;
-                    Unk_160_raw = value;
-                    OnPropertyChanged(nameof(Unk_160));
+                    if (Kinsect_Buff_All_Three_Extracts_raw == value) return;
+                    Kinsect_Buff_All_Three_Extracts_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Buff_All_Three_Extracts));
                 }
             }
 
-            protected float Unk_161_raw;
-            public const string Unk_161_displayName = "Unk 161";
-            public const int Unk_161_sortIndex = 550;
-            [SortOrder(Unk_161_sortIndex)]
-            [DisplayName(Unk_161_displayName)]
-            public virtual float Unk_161 {
-                get => Unk_161_raw;
+            protected float Kinsect_Charge_Power_Attack_Power_raw;
+            public const string Kinsect_Charge_Power_Attack_Power_displayName = "Kinsect Charge(Power) Attack Power";
+            public const int Kinsect_Charge_Power_Attack_Power_sortIndex = 550;
+            [SortOrder(Kinsect_Charge_Power_Attack_Power_sortIndex)]
+            [DisplayName(Kinsect_Charge_Power_Attack_Power_displayName)]
+            public virtual float Kinsect_Charge_Power_Attack_Power {
+                get => Kinsect_Charge_Power_Attack_Power_raw;
                 set {
-                    if (Unk_161_raw == value) return;
-                    Unk_161_raw = value;
-                    OnPropertyChanged(nameof(Unk_161));
+                    if (Kinsect_Charge_Power_Attack_Power_raw == value) return;
+                    Kinsect_Charge_Power_Attack_Power_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Power_Attack_Power));
                 }
             }
 
-            protected float Unk_162_raw;
-            public const string Unk_162_displayName = "Unk 162";
-            public const int Unk_162_sortIndex = 600;
-            [SortOrder(Unk_162_sortIndex)]
-            [DisplayName(Unk_162_displayName)]
-            public virtual float Unk_162 {
-                get => Unk_162_raw;
+            protected float Kinsect_Charge_Power_Elemental_Attack_Power_raw;
+            public const string Kinsect_Charge_Power_Elemental_Attack_Power_displayName = "Kinsect Charge(Power) Elemental Attack Power";
+            public const int Kinsect_Charge_Power_Elemental_Attack_Power_sortIndex = 600;
+            [SortOrder(Kinsect_Charge_Power_Elemental_Attack_Power_sortIndex)]
+            [DisplayName(Kinsect_Charge_Power_Elemental_Attack_Power_displayName)]
+            public virtual float Kinsect_Charge_Power_Elemental_Attack_Power {
+                get => Kinsect_Charge_Power_Elemental_Attack_Power_raw;
                 set {
-                    if (Unk_162_raw == value) return;
-                    Unk_162_raw = value;
-                    OnPropertyChanged(nameof(Unk_162));
+                    if (Kinsect_Charge_Power_Elemental_Attack_Power_raw == value) return;
+                    Kinsect_Charge_Power_Elemental_Attack_Power_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Power_Elemental_Attack_Power));
                 }
             }
 
-            protected float Unk_163_raw;
-            public const string Unk_163_displayName = "Unk 163";
-            public const int Unk_163_sortIndex = 650;
-            [SortOrder(Unk_163_sortIndex)]
-            [DisplayName(Unk_163_displayName)]
-            public virtual float Unk_163 {
-                get => Unk_163_raw;
+            protected float Kinsect_Charge_Spirit_Maximum_Stamina_raw;
+            public const string Kinsect_Charge_Spirit_Maximum_Stamina_displayName = "Kinsect Charge(Spirit) Maximum Stamina";
+            public const int Kinsect_Charge_Spirit_Maximum_Stamina_sortIndex = 650;
+            [SortOrder(Kinsect_Charge_Spirit_Maximum_Stamina_sortIndex)]
+            [DisplayName(Kinsect_Charge_Spirit_Maximum_Stamina_displayName)]
+            public virtual float Kinsect_Charge_Spirit_Maximum_Stamina {
+                get => Kinsect_Charge_Spirit_Maximum_Stamina_raw;
                 set {
-                    if (Unk_163_raw == value) return;
-                    Unk_163_raw = value;
-                    OnPropertyChanged(nameof(Unk_163));
+                    if (Kinsect_Charge_Spirit_Maximum_Stamina_raw == value) return;
+                    Kinsect_Charge_Spirit_Maximum_Stamina_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Spirit_Maximum_Stamina));
                 }
             }
 
-            protected float Unk_164_raw;
-            public const string Unk_164_displayName = "Unk 164";
-            public const int Unk_164_sortIndex = 700;
-            [SortOrder(Unk_164_sortIndex)]
-            [DisplayName(Unk_164_displayName)]
-            public virtual float Unk_164 {
-                get => Unk_164_raw;
+            protected float Kinsect_Charge_Unk__raw;
+            public const string Kinsect_Charge_Unk__displayName = "Kinsect Charge Unk?";
+            public const int Kinsect_Charge_Unk__sortIndex = 700;
+            [SortOrder(Kinsect_Charge_Unk__sortIndex)]
+            [DisplayName(Kinsect_Charge_Unk__displayName)]
+            public virtual float Kinsect_Charge_Unk_ {
+                get => Kinsect_Charge_Unk__raw;
                 set {
-                    if (Unk_164_raw == value) return;
-                    Unk_164_raw = value;
-                    OnPropertyChanged(nameof(Unk_164));
+                    if (Kinsect_Charge_Unk__raw == value) return;
+                    Kinsect_Charge_Unk__raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Unk_));
                 }
             }
 
-            protected float Unk_165_raw;
-            public const string Unk_165_displayName = "Unk 165";
-            public const int Unk_165_sortIndex = 750;
-            [SortOrder(Unk_165_sortIndex)]
-            [DisplayName(Unk_165_displayName)]
-            public virtual float Unk_165 {
-                get => Unk_165_raw;
+            protected float Kinsect_Charge_Power_Dust_Interval_raw;
+            public const string Kinsect_Charge_Power_Dust_Interval_displayName = "Kinsect Charge(Power) Dust Interval";
+            public const int Kinsect_Charge_Power_Dust_Interval_sortIndex = 750;
+            [SortOrder(Kinsect_Charge_Power_Dust_Interval_sortIndex)]
+            [DisplayName(Kinsect_Charge_Power_Dust_Interval_displayName)]
+            public virtual float Kinsect_Charge_Power_Dust_Interval {
+                get => Kinsect_Charge_Power_Dust_Interval_raw;
                 set {
-                    if (Unk_165_raw == value) return;
-                    Unk_165_raw = value;
-                    OnPropertyChanged(nameof(Unk_165));
+                    if (Kinsect_Charge_Power_Dust_Interval_raw == value) return;
+                    Kinsect_Charge_Power_Dust_Interval_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Power_Dust_Interval));
                 }
             }
 
-            protected float Unk_166_raw;
-            public const string Unk_166_displayName = "Unk 166";
-            public const int Unk_166_sortIndex = 800;
-            [SortOrder(Unk_166_sortIndex)]
-            [DisplayName(Unk_166_displayName)]
-            public virtual float Unk_166 {
-                get => Unk_166_raw;
+            protected float Kinsect_Charge_Piercing_Pod_raw;
+            public const string Kinsect_Charge_Piercing_Pod_displayName = "Kinsect Charge: Piercing Pod";
+            public const int Kinsect_Charge_Piercing_Pod_sortIndex = 800;
+            [SortOrder(Kinsect_Charge_Piercing_Pod_sortIndex)]
+            [DisplayName(Kinsect_Charge_Piercing_Pod_displayName)]
+            public virtual float Kinsect_Charge_Piercing_Pod {
+                get => Kinsect_Charge_Piercing_Pod_raw;
                 set {
-                    if (Unk_166_raw == value) return;
-                    Unk_166_raw = value;
-                    OnPropertyChanged(nameof(Unk_166));
+                    if (Kinsect_Charge_Piercing_Pod_raw == value) return;
+                    Kinsect_Charge_Piercing_Pod_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Piercing_Pod));
                 }
             }
 
-            protected float Unk_167_raw;
-            public const string Unk_167_displayName = "Unk 167";
-            public const int Unk_167_sortIndex = 850;
-            [SortOrder(Unk_167_sortIndex)]
-            [DisplayName(Unk_167_displayName)]
-            public virtual float Unk_167 {
-                get => Unk_167_raw;
+            protected float Kinsect_Charge_Stone_raw;
+            public const string Kinsect_Charge_Stone_displayName = "Kinsect Charge: Stone";
+            public const int Kinsect_Charge_Stone_sortIndex = 850;
+            [SortOrder(Kinsect_Charge_Stone_sortIndex)]
+            [DisplayName(Kinsect_Charge_Stone_displayName)]
+            public virtual float Kinsect_Charge_Stone {
+                get => Kinsect_Charge_Stone_raw;
                 set {
-                    if (Unk_167_raw == value) return;
-                    Unk_167_raw = value;
-                    OnPropertyChanged(nameof(Unk_167));
+                    if (Kinsect_Charge_Stone_raw == value) return;
+                    Kinsect_Charge_Stone_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Stone));
                 }
             }
 
-            protected float Unk_168_raw;
-            public const string Unk_168_displayName = "Unk 168";
-            public const int Unk_168_sortIndex = 900;
-            [SortOrder(Unk_168_sortIndex)]
-            [DisplayName(Unk_168_displayName)]
-            public virtual float Unk_168 {
-                get => Unk_168_raw;
+            protected float Kinsect_Charge_Redpit_raw;
+            public const string Kinsect_Charge_Redpit_displayName = "Kinsect Charge: Redpit";
+            public const int Kinsect_Charge_Redpit_sortIndex = 900;
+            [SortOrder(Kinsect_Charge_Redpit_sortIndex)]
+            [DisplayName(Kinsect_Charge_Redpit_displayName)]
+            public virtual float Kinsect_Charge_Redpit {
+                get => Kinsect_Charge_Redpit_raw;
                 set {
-                    if (Unk_168_raw == value) return;
-                    Unk_168_raw = value;
-                    OnPropertyChanged(nameof(Unk_168));
+                    if (Kinsect_Charge_Redpit_raw == value) return;
+                    Kinsect_Charge_Redpit_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Redpit));
                 }
             }
 
-            protected float Unk_169_raw;
-            public const string Unk_169_displayName = "Unk 169";
-            public const int Unk_169_sortIndex = 950;
-            [SortOrder(Unk_169_sortIndex)]
-            [DisplayName(Unk_169_displayName)]
-            public virtual float Unk_169 {
-                get => Unk_169_raw;
+            protected float Kinsect_Charge_Scatternut_raw;
+            public const string Kinsect_Charge_Scatternut_displayName = "Kinsect Charge: Scatternut";
+            public const int Kinsect_Charge_Scatternut_sortIndex = 950;
+            [SortOrder(Kinsect_Charge_Scatternut_sortIndex)]
+            [DisplayName(Kinsect_Charge_Scatternut_displayName)]
+            public virtual float Kinsect_Charge_Scatternut {
+                get => Kinsect_Charge_Scatternut_raw;
                 set {
-                    if (Unk_169_raw == value) return;
-                    Unk_169_raw = value;
-                    OnPropertyChanged(nameof(Unk_169));
+                    if (Kinsect_Charge_Scatternut_raw == value) return;
+                    Kinsect_Charge_Scatternut_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Scatternut));
                 }
             }
 
-            protected float Unk_170_raw;
-            public const string Unk_170_displayName = "Unk 170";
-            public const int Unk_170_sortIndex = 1000;
-            [SortOrder(Unk_170_sortIndex)]
-            [DisplayName(Unk_170_displayName)]
-            public virtual float Unk_170 {
-                get => Unk_170_raw;
+            protected float Kinsect_Charge_Crystalburst_raw;
+            public const string Kinsect_Charge_Crystalburst_displayName = "Kinsect Charge: Crystalburst";
+            public const int Kinsect_Charge_Crystalburst_sortIndex = 1000;
+            [SortOrder(Kinsect_Charge_Crystalburst_sortIndex)]
+            [DisplayName(Kinsect_Charge_Crystalburst_displayName)]
+            public virtual float Kinsect_Charge_Crystalburst {
+                get => Kinsect_Charge_Crystalburst_raw;
                 set {
-                    if (Unk_170_raw == value) return;
-                    Unk_170_raw = value;
-                    OnPropertyChanged(nameof(Unk_170));
+                    if (Kinsect_Charge_Crystalburst_raw == value) return;
+                    Kinsect_Charge_Crystalburst_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Crystalburst));
                 }
             }
 
-            protected float Unk_171_raw;
-            public const string Unk_171_displayName = "Unk 171";
-            public const int Unk_171_sortIndex = 1050;
-            [SortOrder(Unk_171_sortIndex)]
-            [DisplayName(Unk_171_displayName)]
-            public virtual float Unk_171 {
-                get => Unk_171_raw;
+            protected float Kinsect_Charge_Thorn_Pod_raw;
+            public const string Kinsect_Charge_Thorn_Pod_displayName = "Kinsect Charge: Thorn Pod";
+            public const int Kinsect_Charge_Thorn_Pod_sortIndex = 1050;
+            [SortOrder(Kinsect_Charge_Thorn_Pod_sortIndex)]
+            [DisplayName(Kinsect_Charge_Thorn_Pod_displayName)]
+            public virtual float Kinsect_Charge_Thorn_Pod {
+                get => Kinsect_Charge_Thorn_Pod_raw;
                 set {
-                    if (Unk_171_raw == value) return;
-                    Unk_171_raw = value;
-                    OnPropertyChanged(nameof(Unk_171));
+                    if (Kinsect_Charge_Thorn_Pod_raw == value) return;
+                    Kinsect_Charge_Thorn_Pod_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Thorn_Pod));
                 }
             }
 
-            protected float Unk_172_raw;
-            public const string Unk_172_displayName = "Unk 172";
-            public const int Unk_172_sortIndex = 1100;
-            [SortOrder(Unk_172_sortIndex)]
-            [DisplayName(Unk_172_displayName)]
-            public virtual float Unk_172 {
-                get => Unk_172_raw;
+            protected float Kinsect_Charge_Torch_Pod_raw;
+            public const string Kinsect_Charge_Torch_Pod_displayName = "Kinsect Charge: Torch Pod";
+            public const int Kinsect_Charge_Torch_Pod_sortIndex = 1100;
+            [SortOrder(Kinsect_Charge_Torch_Pod_sortIndex)]
+            [DisplayName(Kinsect_Charge_Torch_Pod_displayName)]
+            public virtual float Kinsect_Charge_Torch_Pod {
+                get => Kinsect_Charge_Torch_Pod_raw;
                 set {
-                    if (Unk_172_raw == value) return;
-                    Unk_172_raw = value;
-                    OnPropertyChanged(nameof(Unk_172));
+                    if (Kinsect_Charge_Torch_Pod_raw == value) return;
+                    Kinsect_Charge_Torch_Pod_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Torch_Pod));
                 }
             }
 
-            protected float Unk_173_raw;
-            public const string Unk_173_displayName = "Unk 173";
-            public const int Unk_173_sortIndex = 1150;
-            [SortOrder(Unk_173_sortIndex)]
-            [DisplayName(Unk_173_displayName)]
-            public virtual float Unk_173 {
-                get => Unk_173_raw;
+            protected float Kinsect_Charge_Puddle_Pod_raw;
+            public const string Kinsect_Charge_Puddle_Pod_displayName = "Kinsect Charge: Puddle Pod";
+            public const int Kinsect_Charge_Puddle_Pod_sortIndex = 1150;
+            [SortOrder(Kinsect_Charge_Puddle_Pod_sortIndex)]
+            [DisplayName(Kinsect_Charge_Puddle_Pod_displayName)]
+            public virtual float Kinsect_Charge_Puddle_Pod {
+                get => Kinsect_Charge_Puddle_Pod_raw;
                 set {
-                    if (Unk_173_raw == value) return;
-                    Unk_173_raw = value;
-                    OnPropertyChanged(nameof(Unk_173));
+                    if (Kinsect_Charge_Puddle_Pod_raw == value) return;
+                    Kinsect_Charge_Puddle_Pod_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Puddle_Pod));
                 }
             }
 
-            protected float Unk_174_raw;
-            public const string Unk_174_displayName = "Unk 174";
-            public const int Unk_174_sortIndex = 1200;
-            [SortOrder(Unk_174_sortIndex)]
-            [DisplayName(Unk_174_displayName)]
-            public virtual float Unk_174 {
-                get => Unk_174_raw;
+            protected float Kinsect_Charge_Dragon_Pod_raw;
+            public const string Kinsect_Charge_Dragon_Pod_displayName = "Kinsect Charge: Dragon Pod";
+            public const int Kinsect_Charge_Dragon_Pod_sortIndex = 1200;
+            [SortOrder(Kinsect_Charge_Dragon_Pod_sortIndex)]
+            [DisplayName(Kinsect_Charge_Dragon_Pod_displayName)]
+            public virtual float Kinsect_Charge_Dragon_Pod {
+                get => Kinsect_Charge_Dragon_Pod_raw;
                 set {
-                    if (Unk_174_raw == value) return;
-                    Unk_174_raw = value;
-                    OnPropertyChanged(nameof(Unk_174));
+                    if (Kinsect_Charge_Dragon_Pod_raw == value) return;
+                    Kinsect_Charge_Dragon_Pod_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Dragon_Pod));
                 }
             }
 
-            protected float Unk_175_raw;
-            public const string Unk_175_displayName = "Unk 175";
-            public const int Unk_175_sortIndex = 1250;
-            [SortOrder(Unk_175_sortIndex)]
-            [DisplayName(Unk_175_displayName)]
-            public virtual float Unk_175 {
-                get => Unk_175_raw;
+            protected float Kinsect_Charge_Bomb_Pod_raw;
+            public const string Kinsect_Charge_Bomb_Pod_displayName = "Kinsect Charge: Bomb Pod";
+            public const int Kinsect_Charge_Bomb_Pod_sortIndex = 1250;
+            [SortOrder(Kinsect_Charge_Bomb_Pod_sortIndex)]
+            [DisplayName(Kinsect_Charge_Bomb_Pod_displayName)]
+            public virtual float Kinsect_Charge_Bomb_Pod {
+                get => Kinsect_Charge_Bomb_Pod_raw;
                 set {
-                    if (Unk_175_raw == value) return;
-                    Unk_175_raw = value;
-                    OnPropertyChanged(nameof(Unk_175));
+                    if (Kinsect_Charge_Bomb_Pod_raw == value) return;
+                    Kinsect_Charge_Bomb_Pod_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Bomb_Pod));
                 }
             }
 
-            protected float Unk_176_raw;
-            public const string Unk_176_displayName = "Unk 176";
-            public const int Unk_176_sortIndex = 1300;
-            [SortOrder(Unk_176_sortIndex)]
-            [DisplayName(Unk_176_displayName)]
-            public virtual float Unk_176 {
-                get => Unk_176_raw;
+            protected float Kinsect_Charge_Brightmoss_raw;
+            public const string Kinsect_Charge_Brightmoss_displayName = "Kinsect Charge: Brightmoss";
+            public const int Kinsect_Charge_Brightmoss_sortIndex = 1300;
+            [SortOrder(Kinsect_Charge_Brightmoss_sortIndex)]
+            [DisplayName(Kinsect_Charge_Brightmoss_displayName)]
+            public virtual float Kinsect_Charge_Brightmoss {
+                get => Kinsect_Charge_Brightmoss_raw;
                 set {
-                    if (Unk_176_raw == value) return;
-                    Unk_176_raw = value;
-                    OnPropertyChanged(nameof(Unk_176));
+                    if (Kinsect_Charge_Brightmoss_raw == value) return;
+                    Kinsect_Charge_Brightmoss_raw = value;
+                    OnPropertyChanged(nameof(Kinsect_Charge_Brightmoss));
                 }
             }
 
@@ -4628,26 +4628,26 @@ namespace MHW_Editor.Weapons {
                 data.Unk_154_raw = reader.ReadSingle();
                 data.Unk_155_raw = reader.ReadSingle();
                 data.Unk_156_raw = reader.ReadSingle();
-                data.Unk_157_raw = reader.ReadSingle();
-                data.Unk_158_raw = reader.ReadSingle();
-                data.Unk_159_raw = reader.ReadSingle();
-                data.Unk_160_raw = reader.ReadSingle();
-                data.Unk_161_raw = reader.ReadSingle();
-                data.Unk_162_raw = reader.ReadSingle();
-                data.Unk_163_raw = reader.ReadSingle();
-                data.Unk_164_raw = reader.ReadSingle();
-                data.Unk_165_raw = reader.ReadSingle();
-                data.Unk_166_raw = reader.ReadSingle();
-                data.Unk_167_raw = reader.ReadSingle();
-                data.Unk_168_raw = reader.ReadSingle();
-                data.Unk_169_raw = reader.ReadSingle();
-                data.Unk_170_raw = reader.ReadSingle();
-                data.Unk_171_raw = reader.ReadSingle();
-                data.Unk_172_raw = reader.ReadSingle();
-                data.Unk_173_raw = reader.ReadSingle();
-                data.Unk_174_raw = reader.ReadSingle();
-                data.Unk_175_raw = reader.ReadSingle();
-                data.Unk_176_raw = reader.ReadSingle();
+                data.Kinsect_Buff_Red_raw = reader.ReadSingle();
+                data.Kinsect_Buff_White_raw = reader.ReadSingle();
+                data.Kinsect_Buff_Orange_raw = reader.ReadSingle();
+                data.Kinsect_Buff_All_Three_Extracts_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Power_Attack_Power_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Power_Elemental_Attack_Power_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Spirit_Maximum_Stamina_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Unk__raw = reader.ReadSingle();
+                data.Kinsect_Charge_Power_Dust_Interval_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Piercing_Pod_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Stone_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Redpit_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Scatternut_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Crystalburst_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Thorn_Pod_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Torch_Pod_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Puddle_Pod_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Dragon_Pod_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Bomb_Pod_raw = reader.ReadSingle();
+                data.Kinsect_Charge_Brightmoss_raw = reader.ReadSingle();
                 return data;
             }
 
@@ -4658,26 +4658,26 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_154_raw);
                 writer.Write(Unk_155_raw);
                 writer.Write(Unk_156_raw);
-                writer.Write(Unk_157_raw);
-                writer.Write(Unk_158_raw);
-                writer.Write(Unk_159_raw);
-                writer.Write(Unk_160_raw);
-                writer.Write(Unk_161_raw);
-                writer.Write(Unk_162_raw);
-                writer.Write(Unk_163_raw);
-                writer.Write(Unk_164_raw);
-                writer.Write(Unk_165_raw);
-                writer.Write(Unk_166_raw);
-                writer.Write(Unk_167_raw);
-                writer.Write(Unk_168_raw);
-                writer.Write(Unk_169_raw);
-                writer.Write(Unk_170_raw);
-                writer.Write(Unk_171_raw);
-                writer.Write(Unk_172_raw);
-                writer.Write(Unk_173_raw);
-                writer.Write(Unk_174_raw);
-                writer.Write(Unk_175_raw);
-                writer.Write(Unk_176_raw);
+                writer.Write(Kinsect_Buff_Red_raw);
+                writer.Write(Kinsect_Buff_White_raw);
+                writer.Write(Kinsect_Buff_Orange_raw);
+                writer.Write(Kinsect_Buff_All_Three_Extracts_raw);
+                writer.Write(Kinsect_Charge_Power_Attack_Power_raw);
+                writer.Write(Kinsect_Charge_Power_Elemental_Attack_Power_raw);
+                writer.Write(Kinsect_Charge_Spirit_Maximum_Stamina_raw);
+                writer.Write(Kinsect_Charge_Unk__raw);
+                writer.Write(Kinsect_Charge_Power_Dust_Interval_raw);
+                writer.Write(Kinsect_Charge_Piercing_Pod_raw);
+                writer.Write(Kinsect_Charge_Stone_raw);
+                writer.Write(Kinsect_Charge_Redpit_raw);
+                writer.Write(Kinsect_Charge_Scatternut_raw);
+                writer.Write(Kinsect_Charge_Crystalburst_raw);
+                writer.Write(Kinsect_Charge_Thorn_Pod_raw);
+                writer.Write(Kinsect_Charge_Torch_Pod_raw);
+                writer.Write(Kinsect_Charge_Puddle_Pod_raw);
+                writer.Write(Kinsect_Charge_Dragon_Pod_raw);
+                writer.Write(Kinsect_Charge_Bomb_Pod_raw);
+                writer.Write(Kinsect_Charge_Brightmoss_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
@@ -4688,26 +4688,26 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 154", "Unk_154"),
                     new MultiStructItemCustomView(this, "Unk 155", "Unk_155"),
                     new MultiStructItemCustomView(this, "Unk 156", "Unk_156"),
-                    new MultiStructItemCustomView(this, "Unk 157", "Unk_157"),
-                    new MultiStructItemCustomView(this, "Unk 158", "Unk_158"),
-                    new MultiStructItemCustomView(this, "Unk 159", "Unk_159"),
-                    new MultiStructItemCustomView(this, "Unk 160", "Unk_160"),
-                    new MultiStructItemCustomView(this, "Unk 161", "Unk_161"),
-                    new MultiStructItemCustomView(this, "Unk 162", "Unk_162"),
-                    new MultiStructItemCustomView(this, "Unk 163", "Unk_163"),
-                    new MultiStructItemCustomView(this, "Unk 164", "Unk_164"),
-                    new MultiStructItemCustomView(this, "Unk 165", "Unk_165"),
-                    new MultiStructItemCustomView(this, "Unk 166", "Unk_166"),
-                    new MultiStructItemCustomView(this, "Unk 167", "Unk_167"),
-                    new MultiStructItemCustomView(this, "Unk 168", "Unk_168"),
-                    new MultiStructItemCustomView(this, "Unk 169", "Unk_169"),
-                    new MultiStructItemCustomView(this, "Unk 170", "Unk_170"),
-                    new MultiStructItemCustomView(this, "Unk 171", "Unk_171"),
-                    new MultiStructItemCustomView(this, "Unk 172", "Unk_172"),
-                    new MultiStructItemCustomView(this, "Unk 173", "Unk_173"),
-                    new MultiStructItemCustomView(this, "Unk 174", "Unk_174"),
-                    new MultiStructItemCustomView(this, "Unk 175", "Unk_175"),
-                    new MultiStructItemCustomView(this, "Unk 176", "Unk_176"),
+                    new MultiStructItemCustomView(this, "Kinsect Buff: Red", "Kinsect_Buff_Red"),
+                    new MultiStructItemCustomView(this, "Kinsect Buff: White", "Kinsect_Buff_White"),
+                    new MultiStructItemCustomView(this, "Kinsect Buff: Orange", "Kinsect_Buff_Orange"),
+                    new MultiStructItemCustomView(this, "Kinsect Buff: All Three Extracts", "Kinsect_Buff_All_Three_Extracts"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge(Power) Attack Power", "Kinsect_Charge_Power_Attack_Power"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge(Power) Elemental Attack Power", "Kinsect_Charge_Power_Elemental_Attack_Power"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge(Spirit) Maximum Stamina", "Kinsect_Charge_Spirit_Maximum_Stamina"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge Unk?", "Kinsect_Charge_Unk_"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge(Power) Dust Interval", "Kinsect_Charge_Power_Dust_Interval"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge: Piercing Pod", "Kinsect_Charge_Piercing_Pod"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge: Stone", "Kinsect_Charge_Stone"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge: Redpit", "Kinsect_Charge_Redpit"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge: Scatternut", "Kinsect_Charge_Scatternut"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge: Crystalburst", "Kinsect_Charge_Crystalburst"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge: Thorn Pod", "Kinsect_Charge_Thorn_Pod"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge: Torch Pod", "Kinsect_Charge_Torch_Pod"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge: Puddle Pod", "Kinsect_Charge_Puddle_Pod"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge: Dragon Pod", "Kinsect_Charge_Dragon_Pod"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge: Bomb Pod", "Kinsect_Charge_Bomb_Pod"),
+                    new MultiStructItemCustomView(this, "Kinsect Charge: Brightmoss", "Kinsect_Charge_Brightmoss"),
                 };
             }
         }
@@ -5475,8 +5475,8 @@ namespace MHW_Editor.Weapons {
             data.AddLast(Action_Param_5_);
             var W10p_Params_10__ = new MhwStructDataContainer(W10p_Params_10_.LoadData(reader, null), typeof(W10p_Params_10_));
             data.AddLast(W10p_Params_10__);
-            var Unk_Arr_3_ = new MhwStructDataContainer(Unk_Arr_3.LoadData(reader, null), typeof(Unk_Arr_3));
-            data.AddLast(Unk_Arr_3_);
+            var Kinsect_Stats_ = new MhwStructDataContainer(Kinsect_Stats.LoadData(reader, null), typeof(Kinsect_Stats));
+            data.AddLast(Kinsect_Stats_);
             var W10p_Params_11__ = new MhwStructDataContainer(W10p_Params_11_.LoadData(reader, null), typeof(W10p_Params_11_));
             data.AddLast(W10p_Params_11__);
             var Unk_Arr_4_ = new MhwStructDataContainer(Unk_Arr_4.LoadData(reader, null), typeof(Unk_Arr_4));

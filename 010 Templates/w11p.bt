@@ -38,10 +38,10 @@ ubyte Unk_18;
 ubyte Unk_19;
 ubyte Unk_20;
 ubyte Unk_21;
-float Unk_22;
+float Weapon_Sweet_spot;
 float Unk_23;
 float Unk_24;
-float Unk_25;
+float Elderseal_Modifier_;
 ubyte Unk_26;
 float Unk_27;
 
@@ -232,10 +232,10 @@ ubyte Unk_118;
 float Unk_119;
 float Unk_120;
 float Unk_121;
-float Unk_122;
+float Close_Range_Coating_Damage;
 float Unk_123;
 float Unk_124;
-float Unk_125;
+float Power_Coating_Damage;
 float Unk_126;
 short Unk_127;
 short Unk_128;
@@ -243,8 +243,8 @@ short Unk_129;
 short Unk_130;
 short Unk_131;
 short Unk_132;
-short Unk_133;
-short Unk_134;
+short Blast_Coating_Damage;
+short Blast_Coating_Plus_Damage;
 float Unk_135;
 
 typedef struct {

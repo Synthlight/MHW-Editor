@@ -13,21 +13,21 @@ namespace MHW_Generator.Weapons {
 
             structs.AddRange(new List<MhwMultiStructData.StructData> {
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
+                    new MhwMultiStructData.Entry("DB Sharpness: Consumed Every N Hits", typeof(uint)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Speed Increase When Drawn With Full Gauge", typeof(float)),
+                    new MhwMultiStructData.Entry("Gauge Decay Time", typeof(float)),
+                    new MhwMultiStructData.Entry("Demon Flurry Rush Cost", typeof(float)),
+                    new MhwMultiStructData.Entry("Demon Flurry Cost", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 5}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Demon Mode Animation Speed Increase", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
@@ -46,7 +46,7 @@ namespace MHW_Generator.Weapons {
 
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 2),
 
-                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
+                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex}) - Heavenly Blade Dance Effect Params?", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),

@@ -465,17 +465,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_22_raw;
-            public const string Unk_22_displayName = "Unk 22";
-            public const int Unk_22_sortIndex = 1050;
-            [SortOrder(Unk_22_sortIndex)]
-            [DisplayName(Unk_22_displayName)]
-            public virtual float Unk_22 {
-                get => Unk_22_raw;
+            protected float Weapon_Sweet_spot_raw;
+            public const string Weapon_Sweet_spot_displayName = "Weapon Sweet-spot";
+            public const int Weapon_Sweet_spot_sortIndex = 1050;
+            [SortOrder(Weapon_Sweet_spot_sortIndex)]
+            [DisplayName(Weapon_Sweet_spot_displayName)]
+            public virtual float Weapon_Sweet_spot {
+                get => Weapon_Sweet_spot_raw;
                 set {
-                    if (Unk_22_raw == value) return;
-                    Unk_22_raw = value;
-                    OnPropertyChanged(nameof(Unk_22));
+                    if (Weapon_Sweet_spot_raw == value) return;
+                    Weapon_Sweet_spot_raw = value;
+                    OnPropertyChanged(nameof(Weapon_Sweet_spot));
                 }
             }
 
@@ -507,17 +507,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_25_raw;
-            public const string Unk_25_displayName = "Unk 25";
-            public const int Unk_25_sortIndex = 1200;
-            [SortOrder(Unk_25_sortIndex)]
-            [DisplayName(Unk_25_displayName)]
-            public virtual float Unk_25 {
-                get => Unk_25_raw;
+            protected float Elderseal_Modifier__raw;
+            public const string Elderseal_Modifier__displayName = "Elderseal Modifier?";
+            public const int Elderseal_Modifier__sortIndex = 1200;
+            [SortOrder(Elderseal_Modifier__sortIndex)]
+            [DisplayName(Elderseal_Modifier__displayName)]
+            public virtual float Elderseal_Modifier_ {
+                get => Elderseal_Modifier__raw;
                 set {
-                    if (Unk_25_raw == value) return;
-                    Unk_25_raw = value;
-                    OnPropertyChanged(nameof(Unk_25));
+                    if (Elderseal_Modifier__raw == value) return;
+                    Elderseal_Modifier__raw = value;
+                    OnPropertyChanged(nameof(Elderseal_Modifier_));
                 }
             }
 
@@ -581,10 +581,10 @@ namespace MHW_Editor.Weapons {
                 data.Unk_19_raw = reader.ReadByte();
                 data.Unk_20_raw = reader.ReadByte();
                 data.Unk_21_raw = reader.ReadByte();
-                data.Unk_22_raw = reader.ReadSingle();
+                data.Weapon_Sweet_spot_raw = reader.ReadSingle();
                 data.Unk_23_raw = reader.ReadSingle();
                 data.Unk_24_raw = reader.ReadSingle();
-                data.Unk_25_raw = reader.ReadSingle();
+                data.Elderseal_Modifier__raw = reader.ReadSingle();
                 data.Unk_26_raw = reader.ReadByte();
                 data.Unk_27_raw = reader.ReadSingle();
                 return data;
@@ -611,10 +611,10 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_19_raw);
                 writer.Write(Unk_20_raw);
                 writer.Write(Unk_21_raw);
-                writer.Write(Unk_22_raw);
+                writer.Write(Weapon_Sweet_spot_raw);
                 writer.Write(Unk_23_raw);
                 writer.Write(Unk_24_raw);
-                writer.Write(Unk_25_raw);
+                writer.Write(Elderseal_Modifier__raw);
                 writer.Write(Unk_26_raw);
                 writer.Write(Unk_27_raw);
             }
@@ -641,10 +641,10 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
                     new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
                     new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),
-                    new MultiStructItemCustomView(this, "Unk 22", "Unk_22"),
+                    new MultiStructItemCustomView(this, "Weapon Sweet-spot", "Weapon_Sweet_spot"),
                     new MultiStructItemCustomView(this, "Unk 23", "Unk_23"),
                     new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),
-                    new MultiStructItemCustomView(this, "Unk 25", "Unk_25"),
+                    new MultiStructItemCustomView(this, "Elderseal Modifier?", "Elderseal_Modifier_"),
                     new MultiStructItemCustomView(this, "Unk 26", "Unk_26"),
                     new MultiStructItemCustomView(this, "Unk 27", "Unk_27"),
                 };
@@ -3208,9 +3208,9 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public partial class W11p_Params_6_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W11p_Params_6_Bow_Coating_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "W11p Params (6)";
+            public const string GridName = "W11p Params (6) - Bow Coating Params";
 
             protected byte Unk_112_raw;
             public const string Unk_112_displayName = "Unk 112";
@@ -3352,17 +3352,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_122_raw;
-            public const string Unk_122_displayName = "Unk 122";
-            public const int Unk_122_sortIndex = 550;
-            [SortOrder(Unk_122_sortIndex)]
-            [DisplayName(Unk_122_displayName)]
-            public virtual float Unk_122 {
-                get => Unk_122_raw;
+            protected float Close_Range_Coating_Damage_raw;
+            public const string Close_Range_Coating_Damage_displayName = "Close Range Coating Damage";
+            public const int Close_Range_Coating_Damage_sortIndex = 550;
+            [SortOrder(Close_Range_Coating_Damage_sortIndex)]
+            [DisplayName(Close_Range_Coating_Damage_displayName)]
+            public virtual float Close_Range_Coating_Damage {
+                get => Close_Range_Coating_Damage_raw;
                 set {
-                    if (Unk_122_raw == value) return;
-                    Unk_122_raw = value;
-                    OnPropertyChanged(nameof(Unk_122));
+                    if (Close_Range_Coating_Damage_raw == value) return;
+                    Close_Range_Coating_Damage_raw = value;
+                    OnPropertyChanged(nameof(Close_Range_Coating_Damage));
                 }
             }
 
@@ -3394,17 +3394,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_125_raw;
-            public const string Unk_125_displayName = "Unk 125";
-            public const int Unk_125_sortIndex = 700;
-            [SortOrder(Unk_125_sortIndex)]
-            [DisplayName(Unk_125_displayName)]
-            public virtual float Unk_125 {
-                get => Unk_125_raw;
+            protected float Power_Coating_Damage_raw;
+            public const string Power_Coating_Damage_displayName = "Power Coating Damage";
+            public const int Power_Coating_Damage_sortIndex = 700;
+            [SortOrder(Power_Coating_Damage_sortIndex)]
+            [DisplayName(Power_Coating_Damage_displayName)]
+            public virtual float Power_Coating_Damage {
+                get => Power_Coating_Damage_raw;
                 set {
-                    if (Unk_125_raw == value) return;
-                    Unk_125_raw = value;
-                    OnPropertyChanged(nameof(Unk_125));
+                    if (Power_Coating_Damage_raw == value) return;
+                    Power_Coating_Damage_raw = value;
+                    OnPropertyChanged(nameof(Power_Coating_Damage));
                 }
             }
 
@@ -3506,31 +3506,31 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected short Unk_133_raw;
-            public const string Unk_133_displayName = "Unk 133";
-            public const int Unk_133_sortIndex = 1100;
-            [SortOrder(Unk_133_sortIndex)]
-            [DisplayName(Unk_133_displayName)]
-            public virtual short Unk_133 {
-                get => Unk_133_raw;
+            protected short Blast_Coating_Damage_raw;
+            public const string Blast_Coating_Damage_displayName = "Blast Coating Damage";
+            public const int Blast_Coating_Damage_sortIndex = 1100;
+            [SortOrder(Blast_Coating_Damage_sortIndex)]
+            [DisplayName(Blast_Coating_Damage_displayName)]
+            public virtual short Blast_Coating_Damage {
+                get => Blast_Coating_Damage_raw;
                 set {
-                    if (Unk_133_raw == value) return;
-                    Unk_133_raw = value;
-                    OnPropertyChanged(nameof(Unk_133));
+                    if (Blast_Coating_Damage_raw == value) return;
+                    Blast_Coating_Damage_raw = value;
+                    OnPropertyChanged(nameof(Blast_Coating_Damage));
                 }
             }
 
-            protected short Unk_134_raw;
-            public const string Unk_134_displayName = "Unk 134";
-            public const int Unk_134_sortIndex = 1150;
-            [SortOrder(Unk_134_sortIndex)]
-            [DisplayName(Unk_134_displayName)]
-            public virtual short Unk_134 {
-                get => Unk_134_raw;
+            protected short Blast_Coating_Plus_Damage_raw;
+            public const string Blast_Coating_Plus_Damage_displayName = "Blast Coating Plus Damage";
+            public const int Blast_Coating_Plus_Damage_sortIndex = 1150;
+            [SortOrder(Blast_Coating_Plus_Damage_sortIndex)]
+            [DisplayName(Blast_Coating_Plus_Damage_displayName)]
+            public virtual short Blast_Coating_Plus_Damage {
+                get => Blast_Coating_Plus_Damage_raw;
                 set {
-                    if (Unk_134_raw == value) return;
-                    Unk_134_raw = value;
-                    OnPropertyChanged(nameof(Unk_134));
+                    if (Blast_Coating_Plus_Damage_raw == value) return;
+                    Blast_Coating_Plus_Damage_raw = value;
+                    OnPropertyChanged(nameof(Blast_Coating_Plus_Damage));
                 }
             }
 
@@ -3557,8 +3557,8 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static W11p_Params_6_ LoadData(BinaryReader reader, ulong i) {
-                var data = new W11p_Params_6_();
+            public static W11p_Params_6_Bow_Coating_Params LoadData(BinaryReader reader, ulong i) {
+                var data = new W11p_Params_6_Bow_Coating_Params();
                 data.Index = i;
                 data.Unk_112_raw = reader.ReadByte();
                 data.Unk_113_raw = reader.ReadByte();
@@ -3570,10 +3570,10 @@ namespace MHW_Editor.Weapons {
                 data.Unk_119_raw = reader.ReadSingle();
                 data.Unk_120_raw = reader.ReadSingle();
                 data.Unk_121_raw = reader.ReadSingle();
-                data.Unk_122_raw = reader.ReadSingle();
+                data.Close_Range_Coating_Damage_raw = reader.ReadSingle();
                 data.Unk_123_raw = reader.ReadSingle();
                 data.Unk_124_raw = reader.ReadSingle();
-                data.Unk_125_raw = reader.ReadSingle();
+                data.Power_Coating_Damage_raw = reader.ReadSingle();
                 data.Unk_126_raw = reader.ReadSingle();
                 data.Unk_127_raw = reader.ReadInt16();
                 data.Unk_128_raw = reader.ReadInt16();
@@ -3581,8 +3581,8 @@ namespace MHW_Editor.Weapons {
                 data.Unk_130_raw = reader.ReadInt16();
                 data.Unk_131_raw = reader.ReadInt16();
                 data.Unk_132_raw = reader.ReadInt16();
-                data.Unk_133_raw = reader.ReadInt16();
-                data.Unk_134_raw = reader.ReadInt16();
+                data.Blast_Coating_Damage_raw = reader.ReadInt16();
+                data.Blast_Coating_Plus_Damage_raw = reader.ReadInt16();
                 data.Unk_135_raw = reader.ReadSingle();
                 return data;
             }
@@ -3598,10 +3598,10 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_119_raw);
                 writer.Write(Unk_120_raw);
                 writer.Write(Unk_121_raw);
-                writer.Write(Unk_122_raw);
+                writer.Write(Close_Range_Coating_Damage_raw);
                 writer.Write(Unk_123_raw);
                 writer.Write(Unk_124_raw);
-                writer.Write(Unk_125_raw);
+                writer.Write(Power_Coating_Damage_raw);
                 writer.Write(Unk_126_raw);
                 writer.Write(Unk_127_raw);
                 writer.Write(Unk_128_raw);
@@ -3609,8 +3609,8 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_130_raw);
                 writer.Write(Unk_131_raw);
                 writer.Write(Unk_132_raw);
-                writer.Write(Unk_133_raw);
-                writer.Write(Unk_134_raw);
+                writer.Write(Blast_Coating_Damage_raw);
+                writer.Write(Blast_Coating_Plus_Damage_raw);
                 writer.Write(Unk_135_raw);
             }
 
@@ -3626,10 +3626,10 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 119", "Unk_119"),
                     new MultiStructItemCustomView(this, "Unk 120", "Unk_120"),
                     new MultiStructItemCustomView(this, "Unk 121", "Unk_121"),
-                    new MultiStructItemCustomView(this, "Unk 122", "Unk_122"),
+                    new MultiStructItemCustomView(this, "Close Range Coating Damage", "Close_Range_Coating_Damage"),
                     new MultiStructItemCustomView(this, "Unk 123", "Unk_123"),
                     new MultiStructItemCustomView(this, "Unk 124", "Unk_124"),
-                    new MultiStructItemCustomView(this, "Unk 125", "Unk_125"),
+                    new MultiStructItemCustomView(this, "Power Coating Damage", "Power_Coating_Damage"),
                     new MultiStructItemCustomView(this, "Unk 126", "Unk_126"),
                     new MultiStructItemCustomView(this, "Unk 127", "Unk_127"),
                     new MultiStructItemCustomView(this, "Unk 128", "Unk_128"),
@@ -3637,8 +3637,8 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 130", "Unk_130"),
                     new MultiStructItemCustomView(this, "Unk 131", "Unk_131"),
                     new MultiStructItemCustomView(this, "Unk 132", "Unk_132"),
-                    new MultiStructItemCustomView(this, "Unk 133", "Unk_133"),
-                    new MultiStructItemCustomView(this, "Unk 134", "Unk_134"),
+                    new MultiStructItemCustomView(this, "Blast Coating Damage", "Blast_Coating_Damage"),
+                    new MultiStructItemCustomView(this, "Blast Coating Plus Damage", "Blast_Coating_Plus_Damage"),
                     new MultiStructItemCustomView(this, "Unk 135", "Unk_135"),
                 };
             }
@@ -5951,8 +5951,8 @@ namespace MHW_Editor.Weapons {
             data.AddLast(Unk_Arr_5_);
             var Action_Param_1_ = new MhwStructDataContainer(Action_Param_1.LoadData(reader, null), typeof(Action_Param_1));
             data.AddLast(Action_Param_1_);
-            var W11p_Params_6__ = new MhwStructDataContainer(W11p_Params_6_.LoadData(reader, null), typeof(W11p_Params_6_));
-            data.AddLast(W11p_Params_6__);
+            var W11p_Params_6_Bow_Coating_Params_ = new MhwStructDataContainer(W11p_Params_6_Bow_Coating_Params.LoadData(reader, null), typeof(W11p_Params_6_Bow_Coating_Params));
+            data.AddLast(W11p_Params_6_Bow_Coating_Params_);
             var Action_Param_2_ = new MhwStructDataContainer(Action_Param_2.LoadData(reader, null), typeof(Action_Param_2));
             data.AddLast(Action_Param_2_);
             var W11p_Params_7__ = new MhwStructDataContainer(W11p_Params_7_.LoadData(reader, null), typeof(W11p_Params_7_));

@@ -465,17 +465,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_22_raw;
-            public const string Unk_22_displayName = "Unk 22";
-            public const int Unk_22_sortIndex = 1050;
-            [SortOrder(Unk_22_sortIndex)]
-            [DisplayName(Unk_22_displayName)]
-            public virtual float Unk_22 {
-                get => Unk_22_raw;
+            protected float Weapon_Sweet_spot_raw;
+            public const string Weapon_Sweet_spot_displayName = "Weapon Sweet-spot";
+            public const int Weapon_Sweet_spot_sortIndex = 1050;
+            [SortOrder(Weapon_Sweet_spot_sortIndex)]
+            [DisplayName(Weapon_Sweet_spot_displayName)]
+            public virtual float Weapon_Sweet_spot {
+                get => Weapon_Sweet_spot_raw;
                 set {
-                    if (Unk_22_raw == value) return;
-                    Unk_22_raw = value;
-                    OnPropertyChanged(nameof(Unk_22));
+                    if (Weapon_Sweet_spot_raw == value) return;
+                    Weapon_Sweet_spot_raw = value;
+                    OnPropertyChanged(nameof(Weapon_Sweet_spot));
                 }
             }
 
@@ -507,17 +507,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_25_raw;
-            public const string Unk_25_displayName = "Unk 25";
-            public const int Unk_25_sortIndex = 1200;
-            [SortOrder(Unk_25_sortIndex)]
-            [DisplayName(Unk_25_displayName)]
-            public virtual float Unk_25 {
-                get => Unk_25_raw;
+            protected float Elderseal_Modifier__raw;
+            public const string Elderseal_Modifier__displayName = "Elderseal Modifier?";
+            public const int Elderseal_Modifier__sortIndex = 1200;
+            [SortOrder(Elderseal_Modifier__sortIndex)]
+            [DisplayName(Elderseal_Modifier__displayName)]
+            public virtual float Elderseal_Modifier_ {
+                get => Elderseal_Modifier__raw;
                 set {
-                    if (Unk_25_raw == value) return;
-                    Unk_25_raw = value;
-                    OnPropertyChanged(nameof(Unk_25));
+                    if (Elderseal_Modifier__raw == value) return;
+                    Elderseal_Modifier__raw = value;
+                    OnPropertyChanged(nameof(Elderseal_Modifier_));
                 }
             }
 
@@ -581,10 +581,10 @@ namespace MHW_Editor.Weapons {
                 data.Unk_19_raw = reader.ReadByte();
                 data.Unk_20_raw = reader.ReadByte();
                 data.Unk_21_raw = reader.ReadByte();
-                data.Unk_22_raw = reader.ReadSingle();
+                data.Weapon_Sweet_spot_raw = reader.ReadSingle();
                 data.Unk_23_raw = reader.ReadSingle();
                 data.Unk_24_raw = reader.ReadSingle();
-                data.Unk_25_raw = reader.ReadSingle();
+                data.Elderseal_Modifier__raw = reader.ReadSingle();
                 data.Unk_26_raw = reader.ReadByte();
                 data.Unk_27_raw = reader.ReadSingle();
                 return data;
@@ -611,10 +611,10 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_19_raw);
                 writer.Write(Unk_20_raw);
                 writer.Write(Unk_21_raw);
-                writer.Write(Unk_22_raw);
+                writer.Write(Weapon_Sweet_spot_raw);
                 writer.Write(Unk_23_raw);
                 writer.Write(Unk_24_raw);
-                writer.Write(Unk_25_raw);
+                writer.Write(Elderseal_Modifier__raw);
                 writer.Write(Unk_26_raw);
                 writer.Write(Unk_27_raw);
             }
@@ -641,10 +641,10 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
                     new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
                     new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),
-                    new MultiStructItemCustomView(this, "Unk 22", "Unk_22"),
+                    new MultiStructItemCustomView(this, "Weapon Sweet-spot", "Weapon_Sweet_spot"),
                     new MultiStructItemCustomView(this, "Unk 23", "Unk_23"),
                     new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),
-                    new MultiStructItemCustomView(this, "Unk 25", "Unk_25"),
+                    new MultiStructItemCustomView(this, "Elderseal Modifier?", "Elderseal_Modifier_"),
                     new MultiStructItemCustomView(this, "Unk 26", "Unk_26"),
                     new MultiStructItemCustomView(this, "Unk 27", "Unk_27"),
                 };
@@ -2146,17 +2146,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_92_raw;
-            public const string Unk_92_displayName = "Unk 92";
-            public const int Unk_92_sortIndex = 100;
-            [SortOrder(Unk_92_sortIndex)]
-            [DisplayName(Unk_92_displayName)]
-            public virtual float Unk_92 {
-                get => Unk_92_raw;
+            protected float Spirit_Gauge_Decay_raw;
+            public const string Spirit_Gauge_Decay_displayName = "Spirit Gauge Decay";
+            public const int Spirit_Gauge_Decay_sortIndex = 100;
+            [SortOrder(Spirit_Gauge_Decay_sortIndex)]
+            [DisplayName(Spirit_Gauge_Decay_displayName)]
+            public virtual float Spirit_Gauge_Decay {
+                get => Spirit_Gauge_Decay_raw;
                 set {
-                    if (Unk_92_raw == value) return;
-                    Unk_92_raw = value;
-                    OnPropertyChanged(nameof(Unk_92));
+                    if (Spirit_Gauge_Decay_raw == value) return;
+                    Spirit_Gauge_Decay_raw = value;
+                    OnPropertyChanged(nameof(Spirit_Gauge_Decay));
                 }
             }
 
@@ -2440,45 +2440,45 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_113_raw;
-            public const string Unk_113_displayName = "Unk 113";
-            public const int Unk_113_sortIndex = 1150;
-            [SortOrder(Unk_113_sortIndex)]
-            [DisplayName(Unk_113_displayName)]
-            public virtual float Unk_113 {
-                get => Unk_113_raw;
+            protected float Gauge_Duration_White_raw;
+            public const string Gauge_Duration_White_displayName = "Gauge Duration: White";
+            public const int Gauge_Duration_White_sortIndex = 1150;
+            [SortOrder(Gauge_Duration_White_sortIndex)]
+            [DisplayName(Gauge_Duration_White_displayName)]
+            public virtual float Gauge_Duration_White {
+                get => Gauge_Duration_White_raw;
                 set {
-                    if (Unk_113_raw == value) return;
-                    Unk_113_raw = value;
-                    OnPropertyChanged(nameof(Unk_113));
+                    if (Gauge_Duration_White_raw == value) return;
+                    Gauge_Duration_White_raw = value;
+                    OnPropertyChanged(nameof(Gauge_Duration_White));
                 }
             }
 
-            protected float Unk_114_raw;
-            public const string Unk_114_displayName = "Unk 114";
-            public const int Unk_114_sortIndex = 1200;
-            [SortOrder(Unk_114_sortIndex)]
-            [DisplayName(Unk_114_displayName)]
-            public virtual float Unk_114 {
-                get => Unk_114_raw;
+            protected float Gauge_Duration_Yellow_raw;
+            public const string Gauge_Duration_Yellow_displayName = "Gauge Duration: Yellow";
+            public const int Gauge_Duration_Yellow_sortIndex = 1200;
+            [SortOrder(Gauge_Duration_Yellow_sortIndex)]
+            [DisplayName(Gauge_Duration_Yellow_displayName)]
+            public virtual float Gauge_Duration_Yellow {
+                get => Gauge_Duration_Yellow_raw;
                 set {
-                    if (Unk_114_raw == value) return;
-                    Unk_114_raw = value;
-                    OnPropertyChanged(nameof(Unk_114));
+                    if (Gauge_Duration_Yellow_raw == value) return;
+                    Gauge_Duration_Yellow_raw = value;
+                    OnPropertyChanged(nameof(Gauge_Duration_Yellow));
                 }
             }
 
-            protected float Unk_115_raw;
-            public const string Unk_115_displayName = "Unk 115";
-            public const int Unk_115_sortIndex = 1250;
-            [SortOrder(Unk_115_sortIndex)]
-            [DisplayName(Unk_115_displayName)]
-            public virtual float Unk_115 {
-                get => Unk_115_raw;
+            protected float Gauge_Duration_Red_raw;
+            public const string Gauge_Duration_Red_displayName = "Gauge Duration: Red";
+            public const int Gauge_Duration_Red_sortIndex = 1250;
+            [SortOrder(Gauge_Duration_Red_sortIndex)]
+            [DisplayName(Gauge_Duration_Red_displayName)]
+            public virtual float Gauge_Duration_Red {
+                get => Gauge_Duration_Red_raw;
                 set {
-                    if (Unk_115_raw == value) return;
-                    Unk_115_raw = value;
-                    OnPropertyChanged(nameof(Unk_115));
+                    if (Gauge_Duration_Red_raw == value) return;
+                    Gauge_Duration_Red_raw = value;
+                    OnPropertyChanged(nameof(Gauge_Duration_Red));
                 }
             }
 
@@ -2496,45 +2496,45 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_117_raw;
-            public const string Unk_117_displayName = "Unk 117";
-            public const int Unk_117_sortIndex = 1350;
-            [SortOrder(Unk_117_sortIndex)]
-            [DisplayName(Unk_117_displayName)]
-            public virtual float Unk_117 {
-                get => Unk_117_raw;
+            protected float Gauge_Damage_Buff_White_raw;
+            public const string Gauge_Damage_Buff_White_displayName = "Gauge Damage Buff: White";
+            public const int Gauge_Damage_Buff_White_sortIndex = 1350;
+            [SortOrder(Gauge_Damage_Buff_White_sortIndex)]
+            [DisplayName(Gauge_Damage_Buff_White_displayName)]
+            public virtual float Gauge_Damage_Buff_White {
+                get => Gauge_Damage_Buff_White_raw;
                 set {
-                    if (Unk_117_raw == value) return;
-                    Unk_117_raw = value;
-                    OnPropertyChanged(nameof(Unk_117));
+                    if (Gauge_Damage_Buff_White_raw == value) return;
+                    Gauge_Damage_Buff_White_raw = value;
+                    OnPropertyChanged(nameof(Gauge_Damage_Buff_White));
                 }
             }
 
-            protected float Unk_118_raw;
-            public const string Unk_118_displayName = "Unk 118";
-            public const int Unk_118_sortIndex = 1400;
-            [SortOrder(Unk_118_sortIndex)]
-            [DisplayName(Unk_118_displayName)]
-            public virtual float Unk_118 {
-                get => Unk_118_raw;
+            protected float Gauge_Damage_Buff_Yellow_raw;
+            public const string Gauge_Damage_Buff_Yellow_displayName = "Gauge Damage Buff: Yellow";
+            public const int Gauge_Damage_Buff_Yellow_sortIndex = 1400;
+            [SortOrder(Gauge_Damage_Buff_Yellow_sortIndex)]
+            [DisplayName(Gauge_Damage_Buff_Yellow_displayName)]
+            public virtual float Gauge_Damage_Buff_Yellow {
+                get => Gauge_Damage_Buff_Yellow_raw;
                 set {
-                    if (Unk_118_raw == value) return;
-                    Unk_118_raw = value;
-                    OnPropertyChanged(nameof(Unk_118));
+                    if (Gauge_Damage_Buff_Yellow_raw == value) return;
+                    Gauge_Damage_Buff_Yellow_raw = value;
+                    OnPropertyChanged(nameof(Gauge_Damage_Buff_Yellow));
                 }
             }
 
-            protected float Unk_119_raw;
-            public const string Unk_119_displayName = "Unk 119";
-            public const int Unk_119_sortIndex = 1450;
-            [SortOrder(Unk_119_sortIndex)]
-            [DisplayName(Unk_119_displayName)]
-            public virtual float Unk_119 {
-                get => Unk_119_raw;
+            protected float Gauge_Damage_Buff_Red_raw;
+            public const string Gauge_Damage_Buff_Red_displayName = "Gauge Damage Buff: Red";
+            public const int Gauge_Damage_Buff_Red_sortIndex = 1450;
+            [SortOrder(Gauge_Damage_Buff_Red_sortIndex)]
+            [DisplayName(Gauge_Damage_Buff_Red_displayName)]
+            public virtual float Gauge_Damage_Buff_Red {
+                get => Gauge_Damage_Buff_Red_raw;
                 set {
-                    if (Unk_119_raw == value) return;
-                    Unk_119_raw = value;
-                    OnPropertyChanged(nameof(Unk_119));
+                    if (Gauge_Damage_Buff_Red_raw == value) return;
+                    Gauge_Damage_Buff_Red_raw = value;
+                    OnPropertyChanged(nameof(Gauge_Damage_Buff_Red));
                 }
             }
 
@@ -2622,17 +2622,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_126_raw;
-            public const string Unk_126_displayName = "Unk 126";
-            public const int Unk_126_sortIndex = 1800;
-            [SortOrder(Unk_126_sortIndex)]
-            [DisplayName(Unk_126_displayName)]
-            public virtual float Unk_126 {
-                get => Unk_126_raw;
+            protected float Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_raw;
+            public const string Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_displayName = "Foresight Slash Damage Multiplier on Successful Evasion";
+            public const int Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_sortIndex = 1800;
+            [SortOrder(Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_sortIndex)]
+            [DisplayName(Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_displayName)]
+            public virtual float Foresight_Slash_Damage_Multiplier_on_Successful_Evasion {
+                get => Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_raw;
                 set {
-                    if (Unk_126_raw == value) return;
-                    Unk_126_raw = value;
-                    OnPropertyChanged(nameof(Unk_126));
+                    if (Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_raw == value) return;
+                    Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_raw = value;
+                    OnPropertyChanged(nameof(Foresight_Slash_Damage_Multiplier_on_Successful_Evasion));
                 }
             }
 
@@ -2734,59 +2734,59 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_134_raw;
-            public const string Unk_134_displayName = "Unk 134";
-            public const int Unk_134_sortIndex = 2200;
-            [SortOrder(Unk_134_sortIndex)]
-            [DisplayName(Unk_134_displayName)]
-            public virtual float Unk_134 {
-                get => Unk_134_raw;
+            protected float Iai_Sheathe_Time_raw;
+            public const string Iai_Sheathe_Time_displayName = "Iai Sheathe Time";
+            public const int Iai_Sheathe_Time_sortIndex = 2200;
+            [SortOrder(Iai_Sheathe_Time_sortIndex)]
+            [DisplayName(Iai_Sheathe_Time_displayName)]
+            public virtual float Iai_Sheathe_Time {
+                get => Iai_Sheathe_Time_raw;
                 set {
-                    if (Unk_134_raw == value) return;
-                    Unk_134_raw = value;
-                    OnPropertyChanged(nameof(Unk_134));
+                    if (Iai_Sheathe_Time_raw == value) return;
+                    Iai_Sheathe_Time_raw = value;
+                    OnPropertyChanged(nameof(Iai_Sheathe_Time));
                 }
             }
 
-            protected float Unk_135_raw;
-            public const string Unk_135_displayName = "Unk 135";
-            public const int Unk_135_sortIndex = 2250;
-            [SortOrder(Unk_135_sortIndex)]
-            [DisplayName(Unk_135_displayName)]
-            public virtual float Unk_135 {
-                get => Unk_135_raw;
+            protected float Iai_Super_Armor_on_Successful_Counter_raw;
+            public const string Iai_Super_Armor_on_Successful_Counter_displayName = "Iai Super Armor on Successful Counter";
+            public const int Iai_Super_Armor_on_Successful_Counter_sortIndex = 2250;
+            [SortOrder(Iai_Super_Armor_on_Successful_Counter_sortIndex)]
+            [DisplayName(Iai_Super_Armor_on_Successful_Counter_displayName)]
+            public virtual float Iai_Super_Armor_on_Successful_Counter {
+                get => Iai_Super_Armor_on_Successful_Counter_raw;
                 set {
-                    if (Unk_135_raw == value) return;
-                    Unk_135_raw = value;
-                    OnPropertyChanged(nameof(Unk_135));
+                    if (Iai_Super_Armor_on_Successful_Counter_raw == value) return;
+                    Iai_Super_Armor_on_Successful_Counter_raw = value;
+                    OnPropertyChanged(nameof(Iai_Super_Armor_on_Successful_Counter));
                 }
             }
 
-            protected float Unk_136_raw;
-            public const string Unk_136_displayName = "Unk 136";
-            public const int Unk_136_sortIndex = 2300;
-            [SortOrder(Unk_136_sortIndex)]
-            [DisplayName(Unk_136_displayName)]
-            public virtual float Unk_136 {
-                get => Unk_136_raw;
+            protected float Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_raw;
+            public const string Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_displayName = "Iai Spirit Slash Second Hit Part Damage on Successful Counter";
+            public const int Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_sortIndex = 2300;
+            [SortOrder(Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_sortIndex)]
+            [DisplayName(Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_displayName)]
+            public virtual float Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter {
+                get => Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_raw;
                 set {
-                    if (Unk_136_raw == value) return;
-                    Unk_136_raw = value;
-                    OnPropertyChanged(nameof(Unk_136));
+                    if (Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_raw == value) return;
+                    Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_raw = value;
+                    OnPropertyChanged(nameof(Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter));
                 }
             }
 
-            protected float Unk_137_raw;
-            public const string Unk_137_displayName = "Unk 137";
-            public const int Unk_137_sortIndex = 2350;
-            [SortOrder(Unk_137_sortIndex)]
-            [DisplayName(Unk_137_displayName)]
-            public virtual float Unk_137 {
-                get => Unk_137_raw;
+            protected float Iai_Spirit_Slash_Second_Hit_Time_Delay_raw;
+            public const string Iai_Spirit_Slash_Second_Hit_Time_Delay_displayName = "Iai Spirit Slash Second Hit Time Delay";
+            public const int Iai_Spirit_Slash_Second_Hit_Time_Delay_sortIndex = 2350;
+            [SortOrder(Iai_Spirit_Slash_Second_Hit_Time_Delay_sortIndex)]
+            [DisplayName(Iai_Spirit_Slash_Second_Hit_Time_Delay_displayName)]
+            public virtual float Iai_Spirit_Slash_Second_Hit_Time_Delay {
+                get => Iai_Spirit_Slash_Second_Hit_Time_Delay_raw;
                 set {
-                    if (Unk_137_raw == value) return;
-                    Unk_137_raw = value;
-                    OnPropertyChanged(nameof(Unk_137));
+                    if (Iai_Spirit_Slash_Second_Hit_Time_Delay_raw == value) return;
+                    Iai_Spirit_Slash_Second_Hit_Time_Delay_raw = value;
+                    OnPropertyChanged(nameof(Iai_Spirit_Slash_Second_Hit_Time_Delay));
                 }
             }
 
@@ -2803,7 +2803,7 @@ namespace MHW_Editor.Weapons {
                 var data = new W03p_Params_5_();
                 data.Index = i;
                 data.Unk_91_raw = reader.ReadSingle();
-                data.Unk_92_raw = reader.ReadSingle();
+                data.Spirit_Gauge_Decay_raw = reader.ReadSingle();
                 data.Unk_93_raw = reader.ReadSingle();
                 data.Unk_94_raw = reader.ReadSingle();
                 data.Unk_95_raw = reader.ReadSingle();
@@ -2824,20 +2824,20 @@ namespace MHW_Editor.Weapons {
                 data.Unk_110_raw = reader.ReadSingle();
                 data.Unk_111_raw = reader.ReadSingle();
                 data.Unk_112_raw = reader.ReadSingle();
-                data.Unk_113_raw = reader.ReadSingle();
-                data.Unk_114_raw = reader.ReadSingle();
-                data.Unk_115_raw = reader.ReadSingle();
+                data.Gauge_Duration_White_raw = reader.ReadSingle();
+                data.Gauge_Duration_Yellow_raw = reader.ReadSingle();
+                data.Gauge_Duration_Red_raw = reader.ReadSingle();
                 data.Unk_116_raw = reader.ReadUInt32();
-                data.Unk_117_raw = reader.ReadSingle();
-                data.Unk_118_raw = reader.ReadSingle();
-                data.Unk_119_raw = reader.ReadSingle();
+                data.Gauge_Damage_Buff_White_raw = reader.ReadSingle();
+                data.Gauge_Damage_Buff_Yellow_raw = reader.ReadSingle();
+                data.Gauge_Damage_Buff_Red_raw = reader.ReadSingle();
                 data.Unk_120_raw = reader.ReadSingle();
                 data.Unk_121_raw = reader.ReadSingle();
                 data.Unk_122_raw = reader.ReadSingle();
                 data.Unk_123_raw = reader.ReadSingle();
                 data.Unk_124_raw = reader.ReadSingle();
                 data.Unk_125_raw = reader.ReadSingle();
-                data.Unk_126_raw = reader.ReadSingle();
+                data.Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_raw = reader.ReadSingle();
                 data.Unk_127_raw = reader.ReadByte();
                 data.Unk_128_raw = reader.ReadUInt32();
                 data.Unk_129_raw = reader.ReadSingle();
@@ -2845,16 +2845,16 @@ namespace MHW_Editor.Weapons {
                 data.Unk_131_raw = reader.ReadSingle();
                 data.Unk_132_raw = reader.ReadSingle();
                 data.Unk_133_raw = reader.ReadSingle();
-                data.Unk_134_raw = reader.ReadSingle();
-                data.Unk_135_raw = reader.ReadSingle();
-                data.Unk_136_raw = reader.ReadSingle();
-                data.Unk_137_raw = reader.ReadSingle();
+                data.Iai_Sheathe_Time_raw = reader.ReadSingle();
+                data.Iai_Super_Armor_on_Successful_Counter_raw = reader.ReadSingle();
+                data.Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_raw = reader.ReadSingle();
+                data.Iai_Spirit_Slash_Second_Hit_Time_Delay_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Unk_91_raw);
-                writer.Write(Unk_92_raw);
+                writer.Write(Spirit_Gauge_Decay_raw);
                 writer.Write(Unk_93_raw);
                 writer.Write(Unk_94_raw);
                 writer.Write(Unk_95_raw);
@@ -2875,20 +2875,20 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_110_raw);
                 writer.Write(Unk_111_raw);
                 writer.Write(Unk_112_raw);
-                writer.Write(Unk_113_raw);
-                writer.Write(Unk_114_raw);
-                writer.Write(Unk_115_raw);
+                writer.Write(Gauge_Duration_White_raw);
+                writer.Write(Gauge_Duration_Yellow_raw);
+                writer.Write(Gauge_Duration_Red_raw);
                 writer.Write(Unk_116_raw);
-                writer.Write(Unk_117_raw);
-                writer.Write(Unk_118_raw);
-                writer.Write(Unk_119_raw);
+                writer.Write(Gauge_Damage_Buff_White_raw);
+                writer.Write(Gauge_Damage_Buff_Yellow_raw);
+                writer.Write(Gauge_Damage_Buff_Red_raw);
                 writer.Write(Unk_120_raw);
                 writer.Write(Unk_121_raw);
                 writer.Write(Unk_122_raw);
                 writer.Write(Unk_123_raw);
                 writer.Write(Unk_124_raw);
                 writer.Write(Unk_125_raw);
-                writer.Write(Unk_126_raw);
+                writer.Write(Foresight_Slash_Damage_Multiplier_on_Successful_Evasion_raw);
                 writer.Write(Unk_127_raw);
                 writer.Write(Unk_128_raw);
                 writer.Write(Unk_129_raw);
@@ -2896,16 +2896,16 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_131_raw);
                 writer.Write(Unk_132_raw);
                 writer.Write(Unk_133_raw);
-                writer.Write(Unk_134_raw);
-                writer.Write(Unk_135_raw);
-                writer.Write(Unk_136_raw);
-                writer.Write(Unk_137_raw);
+                writer.Write(Iai_Sheathe_Time_raw);
+                writer.Write(Iai_Super_Armor_on_Successful_Counter_raw);
+                writer.Write(Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter_raw);
+                writer.Write(Iai_Spirit_Slash_Second_Hit_Time_Delay_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
                     new MultiStructItemCustomView(this, "Unk 91", "Unk_91"),
-                    new MultiStructItemCustomView(this, "Unk 92", "Unk_92"),
+                    new MultiStructItemCustomView(this, "Spirit Gauge Decay", "Spirit_Gauge_Decay"),
                     new MultiStructItemCustomView(this, "Unk 93", "Unk_93"),
                     new MultiStructItemCustomView(this, "Unk 94", "Unk_94"),
                     new MultiStructItemCustomView(this, "Unk 95", "Unk_95"),
@@ -2926,20 +2926,20 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 110", "Unk_110"),
                     new MultiStructItemCustomView(this, "Unk 111", "Unk_111"),
                     new MultiStructItemCustomView(this, "Unk 112", "Unk_112"),
-                    new MultiStructItemCustomView(this, "Unk 113", "Unk_113"),
-                    new MultiStructItemCustomView(this, "Unk 114", "Unk_114"),
-                    new MultiStructItemCustomView(this, "Unk 115", "Unk_115"),
+                    new MultiStructItemCustomView(this, "Gauge Duration: White", "Gauge_Duration_White"),
+                    new MultiStructItemCustomView(this, "Gauge Duration: Yellow", "Gauge_Duration_Yellow"),
+                    new MultiStructItemCustomView(this, "Gauge Duration: Red", "Gauge_Duration_Red"),
                     new MultiStructItemCustomView(this, "Unk 116", "Unk_116"),
-                    new MultiStructItemCustomView(this, "Unk 117", "Unk_117"),
-                    new MultiStructItemCustomView(this, "Unk 118", "Unk_118"),
-                    new MultiStructItemCustomView(this, "Unk 119", "Unk_119"),
+                    new MultiStructItemCustomView(this, "Gauge Damage Buff: White", "Gauge_Damage_Buff_White"),
+                    new MultiStructItemCustomView(this, "Gauge Damage Buff: Yellow", "Gauge_Damage_Buff_Yellow"),
+                    new MultiStructItemCustomView(this, "Gauge Damage Buff: Red", "Gauge_Damage_Buff_Red"),
                     new MultiStructItemCustomView(this, "Unk 120", "Unk_120"),
                     new MultiStructItemCustomView(this, "Unk 121", "Unk_121"),
                     new MultiStructItemCustomView(this, "Unk 122", "Unk_122"),
                     new MultiStructItemCustomView(this, "Unk 123", "Unk_123"),
                     new MultiStructItemCustomView(this, "Unk 124", "Unk_124"),
                     new MultiStructItemCustomView(this, "Unk 125", "Unk_125"),
-                    new MultiStructItemCustomView(this, "Unk 126", "Unk_126"),
+                    new MultiStructItemCustomView(this, "Foresight Slash Damage Multiplier on Successful Evasion", "Foresight_Slash_Damage_Multiplier_on_Successful_Evasion"),
                     new MultiStructItemCustomView(this, "Unk 127", "Unk_127"),
                     new MultiStructItemCustomView(this, "Unk 128", "Unk_128"),
                     new MultiStructItemCustomView(this, "Unk 129", "Unk_129"),
@@ -2947,10 +2947,10 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 131", "Unk_131"),
                     new MultiStructItemCustomView(this, "Unk 132", "Unk_132"),
                     new MultiStructItemCustomView(this, "Unk 133", "Unk_133"),
-                    new MultiStructItemCustomView(this, "Unk 134", "Unk_134"),
-                    new MultiStructItemCustomView(this, "Unk 135", "Unk_135"),
-                    new MultiStructItemCustomView(this, "Unk 136", "Unk_136"),
-                    new MultiStructItemCustomView(this, "Unk 137", "Unk_137"),
+                    new MultiStructItemCustomView(this, "Iai Sheathe Time", "Iai_Sheathe_Time"),
+                    new MultiStructItemCustomView(this, "Iai Super Armor on Successful Counter", "Iai_Super_Armor_on_Successful_Counter"),
+                    new MultiStructItemCustomView(this, "Iai Spirit Slash Second Hit Part Damage on Successful Counter", "Iai_Spirit_Slash_Second_Hit_Part_Damage_on_Successful_Counter"),
+                    new MultiStructItemCustomView(this, "Iai Spirit Slash Second Hit Time Delay", "Iai_Spirit_Slash_Second_Hit_Time_Delay"),
                 };
             }
         }
@@ -3579,45 +3579,45 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_146_raw;
-            public const string Unk_146_displayName = "Unk 146";
-            public const int Unk_146_sortIndex = 250;
-            [SortOrder(Unk_146_sortIndex)]
-            [DisplayName(Unk_146_displayName)]
-            public virtual float Unk_146 {
-                get => Unk_146_raw;
+            protected float Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value__raw;
+            public const string Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value__displayName = "Helmbreaker Delay Between Hits 1 (Must be <= the 2nd value.)";
+            public const int Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value__sortIndex = 250;
+            [SortOrder(Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value__sortIndex)]
+            [DisplayName(Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value__displayName)]
+            public virtual float Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value_ {
+                get => Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value__raw;
                 set {
-                    if (Unk_146_raw == value) return;
-                    Unk_146_raw = value;
-                    OnPropertyChanged(nameof(Unk_146));
+                    if (Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value__raw == value) return;
+                    Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value__raw = value;
+                    OnPropertyChanged(nameof(Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value_));
                 }
             }
 
-            protected float Unk_147_raw;
-            public const string Unk_147_displayName = "Unk 147";
-            public const int Unk_147_sortIndex = 300;
-            [SortOrder(Unk_147_sortIndex)]
-            [DisplayName(Unk_147_displayName)]
-            public virtual float Unk_147 {
-                get => Unk_147_raw;
+            protected float Helmbreaker_Delay_Between_Hits_2_raw;
+            public const string Helmbreaker_Delay_Between_Hits_2_displayName = "Helmbreaker Delay Between Hits 2";
+            public const int Helmbreaker_Delay_Between_Hits_2_sortIndex = 300;
+            [SortOrder(Helmbreaker_Delay_Between_Hits_2_sortIndex)]
+            [DisplayName(Helmbreaker_Delay_Between_Hits_2_displayName)]
+            public virtual float Helmbreaker_Delay_Between_Hits_2 {
+                get => Helmbreaker_Delay_Between_Hits_2_raw;
                 set {
-                    if (Unk_147_raw == value) return;
-                    Unk_147_raw = value;
-                    OnPropertyChanged(nameof(Unk_147));
+                    if (Helmbreaker_Delay_Between_Hits_2_raw == value) return;
+                    Helmbreaker_Delay_Between_Hits_2_raw = value;
+                    OnPropertyChanged(nameof(Helmbreaker_Delay_Between_Hits_2));
                 }
             }
 
-            protected uint Unk_148_raw;
-            public const string Unk_148_displayName = "Unk 148";
-            public const int Unk_148_sortIndex = 350;
-            [SortOrder(Unk_148_sortIndex)]
-            [DisplayName(Unk_148_displayName)]
-            public virtual uint Unk_148 {
-                get => Unk_148_raw;
+            protected uint Helmbreaker_Hit_Limit_raw;
+            public const string Helmbreaker_Hit_Limit_displayName = "Helmbreaker Hit Limit";
+            public const int Helmbreaker_Hit_Limit_sortIndex = 350;
+            [SortOrder(Helmbreaker_Hit_Limit_sortIndex)]
+            [DisplayName(Helmbreaker_Hit_Limit_displayName)]
+            public virtual uint Helmbreaker_Hit_Limit {
+                get => Helmbreaker_Hit_Limit_raw;
                 set {
-                    if (Unk_148_raw == value) return;
-                    Unk_148_raw = value;
-                    OnPropertyChanged(nameof(Unk_148));
+                    if (Helmbreaker_Hit_Limit_raw == value) return;
+                    Helmbreaker_Hit_Limit_raw = value;
+                    OnPropertyChanged(nameof(Helmbreaker_Hit_Limit));
                 }
             }
 
@@ -3665,9 +3665,9 @@ namespace MHW_Editor.Weapons {
                 data.Unk_143_raw = reader.ReadSingle();
                 data.Unk_144_raw = reader.ReadSingle();
                 data.Unk_145_raw = reader.ReadSingle();
-                data.Unk_146_raw = reader.ReadSingle();
-                data.Unk_147_raw = reader.ReadSingle();
-                data.Unk_148_raw = reader.ReadUInt32();
+                data.Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value__raw = reader.ReadSingle();
+                data.Helmbreaker_Delay_Between_Hits_2_raw = reader.ReadSingle();
+                data.Helmbreaker_Hit_Limit_raw = reader.ReadUInt32();
                 data.Unk_149_raw = reader.ReadSingle();
                 data.Unk_150_raw = reader.ReadSingle();
                 return data;
@@ -3678,9 +3678,9 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_143_raw);
                 writer.Write(Unk_144_raw);
                 writer.Write(Unk_145_raw);
-                writer.Write(Unk_146_raw);
-                writer.Write(Unk_147_raw);
-                writer.Write(Unk_148_raw);
+                writer.Write(Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value__raw);
+                writer.Write(Helmbreaker_Delay_Between_Hits_2_raw);
+                writer.Write(Helmbreaker_Hit_Limit_raw);
                 writer.Write(Unk_149_raw);
                 writer.Write(Unk_150_raw);
             }
@@ -3691,9 +3691,9 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 143", "Unk_143"),
                     new MultiStructItemCustomView(this, "Unk 144", "Unk_144"),
                     new MultiStructItemCustomView(this, "Unk 145", "Unk_145"),
-                    new MultiStructItemCustomView(this, "Unk 146", "Unk_146"),
-                    new MultiStructItemCustomView(this, "Unk 147", "Unk_147"),
-                    new MultiStructItemCustomView(this, "Unk 148", "Unk_148"),
+                    new MultiStructItemCustomView(this, "Helmbreaker Delay Between Hits 1 (Must be <= the 2nd value.)", "Helmbreaker_Delay_Between_Hits_1_Must_be_the_2nd_value_"),
+                    new MultiStructItemCustomView(this, "Helmbreaker Delay Between Hits 2", "Helmbreaker_Delay_Between_Hits_2"),
+                    new MultiStructItemCustomView(this, "Helmbreaker Hit Limit", "Helmbreaker_Hit_Limit"),
                     new MultiStructItemCustomView(this, "Unk 149", "Unk_149"),
                     new MultiStructItemCustomView(this, "Unk 150", "Unk_150"),
                 };

@@ -465,17 +465,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_22_raw;
-            public const string Unk_22_displayName = "Unk 22";
-            public const int Unk_22_sortIndex = 1050;
-            [SortOrder(Unk_22_sortIndex)]
-            [DisplayName(Unk_22_displayName)]
-            public virtual float Unk_22 {
-                get => Unk_22_raw;
+            protected float Weapon_Sweet_spot_raw;
+            public const string Weapon_Sweet_spot_displayName = "Weapon Sweet-spot";
+            public const int Weapon_Sweet_spot_sortIndex = 1050;
+            [SortOrder(Weapon_Sweet_spot_sortIndex)]
+            [DisplayName(Weapon_Sweet_spot_displayName)]
+            public virtual float Weapon_Sweet_spot {
+                get => Weapon_Sweet_spot_raw;
                 set {
-                    if (Unk_22_raw == value) return;
-                    Unk_22_raw = value;
-                    OnPropertyChanged(nameof(Unk_22));
+                    if (Weapon_Sweet_spot_raw == value) return;
+                    Weapon_Sweet_spot_raw = value;
+                    OnPropertyChanged(nameof(Weapon_Sweet_spot));
                 }
             }
 
@@ -507,17 +507,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_25_raw;
-            public const string Unk_25_displayName = "Unk 25";
-            public const int Unk_25_sortIndex = 1200;
-            [SortOrder(Unk_25_sortIndex)]
-            [DisplayName(Unk_25_displayName)]
-            public virtual float Unk_25 {
-                get => Unk_25_raw;
+            protected float Elderseal_Modifier__raw;
+            public const string Elderseal_Modifier__displayName = "Elderseal Modifier?";
+            public const int Elderseal_Modifier__sortIndex = 1200;
+            [SortOrder(Elderseal_Modifier__sortIndex)]
+            [DisplayName(Elderseal_Modifier__displayName)]
+            public virtual float Elderseal_Modifier_ {
+                get => Elderseal_Modifier__raw;
                 set {
-                    if (Unk_25_raw == value) return;
-                    Unk_25_raw = value;
-                    OnPropertyChanged(nameof(Unk_25));
+                    if (Elderseal_Modifier__raw == value) return;
+                    Elderseal_Modifier__raw = value;
+                    OnPropertyChanged(nameof(Elderseal_Modifier_));
                 }
             }
 
@@ -581,10 +581,10 @@ namespace MHW_Editor.Weapons {
                 data.Unk_19_raw = reader.ReadByte();
                 data.Unk_20_raw = reader.ReadByte();
                 data.Unk_21_raw = reader.ReadByte();
-                data.Unk_22_raw = reader.ReadSingle();
+                data.Weapon_Sweet_spot_raw = reader.ReadSingle();
                 data.Unk_23_raw = reader.ReadSingle();
                 data.Unk_24_raw = reader.ReadSingle();
-                data.Unk_25_raw = reader.ReadSingle();
+                data.Elderseal_Modifier__raw = reader.ReadSingle();
                 data.Unk_26_raw = reader.ReadByte();
                 data.Unk_27_raw = reader.ReadSingle();
                 return data;
@@ -611,10 +611,10 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_19_raw);
                 writer.Write(Unk_20_raw);
                 writer.Write(Unk_21_raw);
-                writer.Write(Unk_22_raw);
+                writer.Write(Weapon_Sweet_spot_raw);
                 writer.Write(Unk_23_raw);
                 writer.Write(Unk_24_raw);
-                writer.Write(Unk_25_raw);
+                writer.Write(Elderseal_Modifier__raw);
                 writer.Write(Unk_26_raw);
                 writer.Write(Unk_27_raw);
             }
@@ -641,10 +641,10 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
                     new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
                     new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),
-                    new MultiStructItemCustomView(this, "Unk 22", "Unk_22"),
+                    new MultiStructItemCustomView(this, "Weapon Sweet-spot", "Weapon_Sweet_spot"),
                     new MultiStructItemCustomView(this, "Unk 23", "Unk_23"),
                     new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),
-                    new MultiStructItemCustomView(this, "Unk 25", "Unk_25"),
+                    new MultiStructItemCustomView(this, "Elderseal Modifier?", "Elderseal_Modifier_"),
                     new MultiStructItemCustomView(this, "Unk 26", "Unk_26"),
                     new MultiStructItemCustomView(this, "Unk 27", "Unk_27"),
                 };
@@ -2132,17 +2132,17 @@ namespace MHW_Editor.Weapons {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W02p Params (5)";
 
-            protected uint Unk_91_raw;
-            public const string Unk_91_displayName = "Unk 91";
-            public const int Unk_91_sortIndex = 50;
-            [SortOrder(Unk_91_sortIndex)]
-            [DisplayName(Unk_91_displayName)]
-            public virtual uint Unk_91 {
-                get => Unk_91_raw;
+            protected uint DB_Sharpness_Consumed_Every_N_Hits_raw;
+            public const string DB_Sharpness_Consumed_Every_N_Hits_displayName = "DB Sharpness: Consumed Every N Hits";
+            public const int DB_Sharpness_Consumed_Every_N_Hits_sortIndex = 50;
+            [SortOrder(DB_Sharpness_Consumed_Every_N_Hits_sortIndex)]
+            [DisplayName(DB_Sharpness_Consumed_Every_N_Hits_displayName)]
+            public virtual uint DB_Sharpness_Consumed_Every_N_Hits {
+                get => DB_Sharpness_Consumed_Every_N_Hits_raw;
                 set {
-                    if (Unk_91_raw == value) return;
-                    Unk_91_raw = value;
-                    OnPropertyChanged(nameof(Unk_91));
+                    if (DB_Sharpness_Consumed_Every_N_Hits_raw == value) return;
+                    DB_Sharpness_Consumed_Every_N_Hits_raw = value;
+                    OnPropertyChanged(nameof(DB_Sharpness_Consumed_Every_N_Hits));
                 }
             }
 
@@ -2188,59 +2188,59 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_95_raw;
-            public const string Unk_95_displayName = "Unk 95";
-            public const int Unk_95_sortIndex = 250;
-            [SortOrder(Unk_95_sortIndex)]
-            [DisplayName(Unk_95_displayName)]
-            public virtual float Unk_95 {
-                get => Unk_95_raw;
+            protected float Speed_Increase_When_Drawn_With_Full_Gauge_raw;
+            public const string Speed_Increase_When_Drawn_With_Full_Gauge_displayName = "Speed Increase When Drawn With Full Gauge";
+            public const int Speed_Increase_When_Drawn_With_Full_Gauge_sortIndex = 250;
+            [SortOrder(Speed_Increase_When_Drawn_With_Full_Gauge_sortIndex)]
+            [DisplayName(Speed_Increase_When_Drawn_With_Full_Gauge_displayName)]
+            public virtual float Speed_Increase_When_Drawn_With_Full_Gauge {
+                get => Speed_Increase_When_Drawn_With_Full_Gauge_raw;
                 set {
-                    if (Unk_95_raw == value) return;
-                    Unk_95_raw = value;
-                    OnPropertyChanged(nameof(Unk_95));
+                    if (Speed_Increase_When_Drawn_With_Full_Gauge_raw == value) return;
+                    Speed_Increase_When_Drawn_With_Full_Gauge_raw = value;
+                    OnPropertyChanged(nameof(Speed_Increase_When_Drawn_With_Full_Gauge));
                 }
             }
 
-            protected float Unk_96_raw;
-            public const string Unk_96_displayName = "Unk 96";
-            public const int Unk_96_sortIndex = 300;
-            [SortOrder(Unk_96_sortIndex)]
-            [DisplayName(Unk_96_displayName)]
-            public virtual float Unk_96 {
-                get => Unk_96_raw;
+            protected float Gauge_Decay_Time_raw;
+            public const string Gauge_Decay_Time_displayName = "Gauge Decay Time";
+            public const int Gauge_Decay_Time_sortIndex = 300;
+            [SortOrder(Gauge_Decay_Time_sortIndex)]
+            [DisplayName(Gauge_Decay_Time_displayName)]
+            public virtual float Gauge_Decay_Time {
+                get => Gauge_Decay_Time_raw;
                 set {
-                    if (Unk_96_raw == value) return;
-                    Unk_96_raw = value;
-                    OnPropertyChanged(nameof(Unk_96));
+                    if (Gauge_Decay_Time_raw == value) return;
+                    Gauge_Decay_Time_raw = value;
+                    OnPropertyChanged(nameof(Gauge_Decay_Time));
                 }
             }
 
-            protected float Unk_97_raw;
-            public const string Unk_97_displayName = "Unk 97";
-            public const int Unk_97_sortIndex = 350;
-            [SortOrder(Unk_97_sortIndex)]
-            [DisplayName(Unk_97_displayName)]
-            public virtual float Unk_97 {
-                get => Unk_97_raw;
+            protected float Demon_Flurry_Rush_Cost_raw;
+            public const string Demon_Flurry_Rush_Cost_displayName = "Demon Flurry Rush Cost";
+            public const int Demon_Flurry_Rush_Cost_sortIndex = 350;
+            [SortOrder(Demon_Flurry_Rush_Cost_sortIndex)]
+            [DisplayName(Demon_Flurry_Rush_Cost_displayName)]
+            public virtual float Demon_Flurry_Rush_Cost {
+                get => Demon_Flurry_Rush_Cost_raw;
                 set {
-                    if (Unk_97_raw == value) return;
-                    Unk_97_raw = value;
-                    OnPropertyChanged(nameof(Unk_97));
+                    if (Demon_Flurry_Rush_Cost_raw == value) return;
+                    Demon_Flurry_Rush_Cost_raw = value;
+                    OnPropertyChanged(nameof(Demon_Flurry_Rush_Cost));
                 }
             }
 
-            protected float Unk_98_raw;
-            public const string Unk_98_displayName = "Unk 98";
-            public const int Unk_98_sortIndex = 400;
-            [SortOrder(Unk_98_sortIndex)]
-            [DisplayName(Unk_98_displayName)]
-            public virtual float Unk_98 {
-                get => Unk_98_raw;
+            protected float Demon_Flurry_Cost_raw;
+            public const string Demon_Flurry_Cost_displayName = "Demon Flurry Cost";
+            public const int Demon_Flurry_Cost_sortIndex = 400;
+            [SortOrder(Demon_Flurry_Cost_sortIndex)]
+            [DisplayName(Demon_Flurry_Cost_displayName)]
+            public virtual float Demon_Flurry_Cost {
+                get => Demon_Flurry_Cost_raw;
                 set {
-                    if (Unk_98_raw == value) return;
-                    Unk_98_raw = value;
-                    OnPropertyChanged(nameof(Unk_98));
+                    if (Demon_Flurry_Cost_raw == value) return;
+                    Demon_Flurry_Cost_raw = value;
+                    OnPropertyChanged(nameof(Demon_Flurry_Cost));
                 }
             }
 
@@ -2314,17 +2314,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_104_raw;
-            public const string Unk_104_displayName = "Unk 104";
-            public const int Unk_104_sortIndex = 700;
-            [SortOrder(Unk_104_sortIndex)]
-            [DisplayName(Unk_104_displayName)]
-            public virtual float Unk_104 {
-                get => Unk_104_raw;
+            protected float Demon_Mode_Animation_Speed_Increase_raw;
+            public const string Demon_Mode_Animation_Speed_Increase_displayName = "Demon Mode Animation Speed Increase";
+            public const int Demon_Mode_Animation_Speed_Increase_sortIndex = 700;
+            [SortOrder(Demon_Mode_Animation_Speed_Increase_sortIndex)]
+            [DisplayName(Demon_Mode_Animation_Speed_Increase_displayName)]
+            public virtual float Demon_Mode_Animation_Speed_Increase {
+                get => Demon_Mode_Animation_Speed_Increase_raw;
                 set {
-                    if (Unk_104_raw == value) return;
-                    Unk_104_raw = value;
-                    OnPropertyChanged(nameof(Unk_104));
+                    if (Demon_Mode_Animation_Speed_Increase_raw == value) return;
+                    Demon_Mode_Animation_Speed_Increase_raw = value;
+                    OnPropertyChanged(nameof(Demon_Mode_Animation_Speed_Increase));
                 }
             }
 
@@ -2424,20 +2424,20 @@ namespace MHW_Editor.Weapons {
             public static W02p_Params_5_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W02p_Params_5_();
                 data.Index = i;
-                data.Unk_91_raw = reader.ReadUInt32();
+                data.DB_Sharpness_Consumed_Every_N_Hits_raw = reader.ReadUInt32();
                 data.Unk_92_raw = reader.ReadSingle();
                 data.Unk_93_raw = reader.ReadSingle();
                 data.Unk_94_raw = reader.ReadSingle();
-                data.Unk_95_raw = reader.ReadSingle();
-                data.Unk_96_raw = reader.ReadSingle();
-                data.Unk_97_raw = reader.ReadSingle();
-                data.Unk_98_raw = reader.ReadSingle();
+                data.Speed_Increase_When_Drawn_With_Full_Gauge_raw = reader.ReadSingle();
+                data.Gauge_Decay_Time_raw = reader.ReadSingle();
+                data.Demon_Flurry_Rush_Cost_raw = reader.ReadSingle();
+                data.Demon_Flurry_Cost_raw = reader.ReadSingle();
                 data.Unk_99_raw = reader.ReadSingle();
                 data.Unk_100_raw = reader.ReadSingle();
                 data.Unk_101_raw = reader.ReadSingle();
                 data.Unk_102_raw = reader.ReadSingle();
                 data.Unk_103_raw = reader.ReadSingle();
-                data.Unk_104_raw = reader.ReadSingle();
+                data.Demon_Mode_Animation_Speed_Increase_raw = reader.ReadSingle();
                 data.Unk_105_raw = reader.ReadSingle();
                 data.Unk_106_raw = reader.ReadSingle();
                 data.Unk_107_raw = reader.ReadSingle();
@@ -2448,20 +2448,20 @@ namespace MHW_Editor.Weapons {
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_91_raw);
+                writer.Write(DB_Sharpness_Consumed_Every_N_Hits_raw);
                 writer.Write(Unk_92_raw);
                 writer.Write(Unk_93_raw);
                 writer.Write(Unk_94_raw);
-                writer.Write(Unk_95_raw);
-                writer.Write(Unk_96_raw);
-                writer.Write(Unk_97_raw);
-                writer.Write(Unk_98_raw);
+                writer.Write(Speed_Increase_When_Drawn_With_Full_Gauge_raw);
+                writer.Write(Gauge_Decay_Time_raw);
+                writer.Write(Demon_Flurry_Rush_Cost_raw);
+                writer.Write(Demon_Flurry_Cost_raw);
                 writer.Write(Unk_99_raw);
                 writer.Write(Unk_100_raw);
                 writer.Write(Unk_101_raw);
                 writer.Write(Unk_102_raw);
                 writer.Write(Unk_103_raw);
-                writer.Write(Unk_104_raw);
+                writer.Write(Demon_Mode_Animation_Speed_Increase_raw);
                 writer.Write(Unk_105_raw);
                 writer.Write(Unk_106_raw);
                 writer.Write(Unk_107_raw);
@@ -2472,20 +2472,20 @@ namespace MHW_Editor.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 91", "Unk_91"),
+                    new MultiStructItemCustomView(this, "DB Sharpness: Consumed Every N Hits", "DB_Sharpness_Consumed_Every_N_Hits"),
                     new MultiStructItemCustomView(this, "Unk 92", "Unk_92"),
                     new MultiStructItemCustomView(this, "Unk 93", "Unk_93"),
                     new MultiStructItemCustomView(this, "Unk 94", "Unk_94"),
-                    new MultiStructItemCustomView(this, "Unk 95", "Unk_95"),
-                    new MultiStructItemCustomView(this, "Unk 96", "Unk_96"),
-                    new MultiStructItemCustomView(this, "Unk 97", "Unk_97"),
-                    new MultiStructItemCustomView(this, "Unk 98", "Unk_98"),
+                    new MultiStructItemCustomView(this, "Speed Increase When Drawn With Full Gauge", "Speed_Increase_When_Drawn_With_Full_Gauge"),
+                    new MultiStructItemCustomView(this, "Gauge Decay Time", "Gauge_Decay_Time"),
+                    new MultiStructItemCustomView(this, "Demon Flurry Rush Cost", "Demon_Flurry_Rush_Cost"),
+                    new MultiStructItemCustomView(this, "Demon Flurry Cost", "Demon_Flurry_Cost"),
                     new MultiStructItemCustomView(this, "Unk 99", "Unk_99"),
                     new MultiStructItemCustomView(this, "Unk 100", "Unk_100"),
                     new MultiStructItemCustomView(this, "Unk 101", "Unk_101"),
                     new MultiStructItemCustomView(this, "Unk 102", "Unk_102"),
                     new MultiStructItemCustomView(this, "Unk 103", "Unk_103"),
-                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104"),
+                    new MultiStructItemCustomView(this, "Demon Mode Animation Speed Increase", "Demon_Mode_Animation_Speed_Increase"),
                     new MultiStructItemCustomView(this, "Unk 105", "Unk_105"),
                     new MultiStructItemCustomView(this, "Unk 106", "Unk_106"),
                     new MultiStructItemCustomView(this, "Unk 107", "Unk_107"),
@@ -2798,9 +2798,9 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public partial class W02p_Params_7_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W02p_Params_7_Heavenly_Blade_Dance_Effect_Params_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "W02p Params (7)";
+            public const string GridName = "W02p Params (7) - Heavenly Blade Dance Effect Params?";
 
             protected float Unk_115_raw;
             public const string Unk_115_displayName = "Unk 115";
@@ -3021,8 +3021,8 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static W02p_Params_7_ LoadData(BinaryReader reader, ulong i) {
-                var data = new W02p_Params_7_();
+            public static W02p_Params_7_Heavenly_Blade_Dance_Effect_Params_ LoadData(BinaryReader reader, ulong i) {
+                var data = new W02p_Params_7_Heavenly_Blade_Dance_Effect_Params_();
                 data.Index = i;
                 data.Unk_115_raw = reader.ReadSingle();
                 data.Unk_116_raw = reader.ReadUInt32();
@@ -3810,8 +3810,8 @@ namespace MHW_Editor.Weapons {
             data.AddLast(W02p_Params_6__);
             var Action_Param_2_ = new MhwStructDataContainer(Action_Param_2.LoadData(reader, null), typeof(Action_Param_2));
             data.AddLast(Action_Param_2_);
-            var W02p_Params_7__ = new MhwStructDataContainer(W02p_Params_7_.LoadData(reader, null), typeof(W02p_Params_7_));
-            data.AddLast(W02p_Params_7__);
+            var W02p_Params_7_Heavenly_Blade_Dance_Effect_Params__ = new MhwStructDataContainer(W02p_Params_7_Heavenly_Blade_Dance_Effect_Params_.LoadData(reader, null), typeof(W02p_Params_7_Heavenly_Blade_Dance_Effect_Params_));
+            data.AddLast(W02p_Params_7_Heavenly_Blade_Dance_Effect_Params__);
             var Action_Param_3_ = new MhwStructDataContainer(Action_Param_3.LoadData(reader, null), typeof(Action_Param_3));
             data.AddLast(Action_Param_3_);
             var W02p_Params_8__ = new MhwStructDataContainer(W02p_Params_8_.LoadData(reader, null), typeof(W02p_Params_8_));

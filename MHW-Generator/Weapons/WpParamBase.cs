@@ -67,11 +67,11 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
+                    new MhwMultiStructData.Entry("Weapon Sweet-spot", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
+                    new MhwMultiStructData.Entry("Elderseal Modifier?", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),
 

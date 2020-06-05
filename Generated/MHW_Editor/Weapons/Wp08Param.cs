@@ -465,17 +465,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_22_raw;
-            public const string Unk_22_displayName = "Unk 22";
-            public const int Unk_22_sortIndex = 1050;
-            [SortOrder(Unk_22_sortIndex)]
-            [DisplayName(Unk_22_displayName)]
-            public virtual float Unk_22 {
-                get => Unk_22_raw;
+            protected float Weapon_Sweet_spot_raw;
+            public const string Weapon_Sweet_spot_displayName = "Weapon Sweet-spot";
+            public const int Weapon_Sweet_spot_sortIndex = 1050;
+            [SortOrder(Weapon_Sweet_spot_sortIndex)]
+            [DisplayName(Weapon_Sweet_spot_displayName)]
+            public virtual float Weapon_Sweet_spot {
+                get => Weapon_Sweet_spot_raw;
                 set {
-                    if (Unk_22_raw == value) return;
-                    Unk_22_raw = value;
-                    OnPropertyChanged(nameof(Unk_22));
+                    if (Weapon_Sweet_spot_raw == value) return;
+                    Weapon_Sweet_spot_raw = value;
+                    OnPropertyChanged(nameof(Weapon_Sweet_spot));
                 }
             }
 
@@ -507,17 +507,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_25_raw;
-            public const string Unk_25_displayName = "Unk 25";
-            public const int Unk_25_sortIndex = 1200;
-            [SortOrder(Unk_25_sortIndex)]
-            [DisplayName(Unk_25_displayName)]
-            public virtual float Unk_25 {
-                get => Unk_25_raw;
+            protected float Elderseal_Modifier__raw;
+            public const string Elderseal_Modifier__displayName = "Elderseal Modifier?";
+            public const int Elderseal_Modifier__sortIndex = 1200;
+            [SortOrder(Elderseal_Modifier__sortIndex)]
+            [DisplayName(Elderseal_Modifier__displayName)]
+            public virtual float Elderseal_Modifier_ {
+                get => Elderseal_Modifier__raw;
                 set {
-                    if (Unk_25_raw == value) return;
-                    Unk_25_raw = value;
-                    OnPropertyChanged(nameof(Unk_25));
+                    if (Elderseal_Modifier__raw == value) return;
+                    Elderseal_Modifier__raw = value;
+                    OnPropertyChanged(nameof(Elderseal_Modifier_));
                 }
             }
 
@@ -581,10 +581,10 @@ namespace MHW_Editor.Weapons {
                 data.Unk_19_raw = reader.ReadByte();
                 data.Unk_20_raw = reader.ReadByte();
                 data.Unk_21_raw = reader.ReadByte();
-                data.Unk_22_raw = reader.ReadSingle();
+                data.Weapon_Sweet_spot_raw = reader.ReadSingle();
                 data.Unk_23_raw = reader.ReadSingle();
                 data.Unk_24_raw = reader.ReadSingle();
-                data.Unk_25_raw = reader.ReadSingle();
+                data.Elderseal_Modifier__raw = reader.ReadSingle();
                 data.Unk_26_raw = reader.ReadByte();
                 data.Unk_27_raw = reader.ReadSingle();
                 return data;
@@ -611,10 +611,10 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_19_raw);
                 writer.Write(Unk_20_raw);
                 writer.Write(Unk_21_raw);
-                writer.Write(Unk_22_raw);
+                writer.Write(Weapon_Sweet_spot_raw);
                 writer.Write(Unk_23_raw);
                 writer.Write(Unk_24_raw);
-                writer.Write(Unk_25_raw);
+                writer.Write(Elderseal_Modifier__raw);
                 writer.Write(Unk_26_raw);
                 writer.Write(Unk_27_raw);
             }
@@ -641,10 +641,10 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
                     new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
                     new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),
-                    new MultiStructItemCustomView(this, "Unk 22", "Unk_22"),
+                    new MultiStructItemCustomView(this, "Weapon Sweet-spot", "Weapon_Sweet_spot"),
                     new MultiStructItemCustomView(this, "Unk 23", "Unk_23"),
                     new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),
-                    new MultiStructItemCustomView(this, "Unk 25", "Unk_25"),
+                    new MultiStructItemCustomView(this, "Elderseal Modifier?", "Elderseal_Modifier_"),
                     new MultiStructItemCustomView(this, "Unk 26", "Unk_26"),
                     new MultiStructItemCustomView(this, "Unk 27", "Unk_27"),
                 };
@@ -2429,31 +2429,31 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_102_raw;
-            public const string Unk_102_displayName = "Unk 102";
-            public const int Unk_102_sortIndex = 400;
-            [SortOrder(Unk_102_sortIndex)]
-            [DisplayName(Unk_102_displayName)]
-            public virtual float Unk_102 {
-                get => Unk_102_raw;
+            protected float Power_Phial_Damage_Multiplier_Sword_Mode__raw;
+            public const string Power_Phial_Damage_Multiplier_Sword_Mode__displayName = "Power Phial Damage Multiplier (Sword Mode)";
+            public const int Power_Phial_Damage_Multiplier_Sword_Mode__sortIndex = 400;
+            [SortOrder(Power_Phial_Damage_Multiplier_Sword_Mode__sortIndex)]
+            [DisplayName(Power_Phial_Damage_Multiplier_Sword_Mode__displayName)]
+            public virtual float Power_Phial_Damage_Multiplier_Sword_Mode_ {
+                get => Power_Phial_Damage_Multiplier_Sword_Mode__raw;
                 set {
-                    if (Unk_102_raw == value) return;
-                    Unk_102_raw = value;
-                    OnPropertyChanged(nameof(Unk_102));
+                    if (Power_Phial_Damage_Multiplier_Sword_Mode__raw == value) return;
+                    Power_Phial_Damage_Multiplier_Sword_Mode__raw = value;
+                    OnPropertyChanged(nameof(Power_Phial_Damage_Multiplier_Sword_Mode_));
                 }
             }
 
-            protected float Unk_103_raw;
-            public const string Unk_103_displayName = "Unk 103";
-            public const int Unk_103_sortIndex = 450;
-            [SortOrder(Unk_103_sortIndex)]
-            [DisplayName(Unk_103_displayName)]
-            public virtual float Unk_103 {
-                get => Unk_103_raw;
+            protected float Element_Phial_Damage_Multiplier_Sword_Mode__raw;
+            public const string Element_Phial_Damage_Multiplier_Sword_Mode__displayName = "Element Phial Damage Multiplier (Sword Mode)";
+            public const int Element_Phial_Damage_Multiplier_Sword_Mode__sortIndex = 450;
+            [SortOrder(Element_Phial_Damage_Multiplier_Sword_Mode__sortIndex)]
+            [DisplayName(Element_Phial_Damage_Multiplier_Sword_Mode__displayName)]
+            public virtual float Element_Phial_Damage_Multiplier_Sword_Mode_ {
+                get => Element_Phial_Damage_Multiplier_Sword_Mode__raw;
                 set {
-                    if (Unk_103_raw == value) return;
-                    Unk_103_raw = value;
-                    OnPropertyChanged(nameof(Unk_103));
+                    if (Element_Phial_Damage_Multiplier_Sword_Mode__raw == value) return;
+                    Element_Phial_Damage_Multiplier_Sword_Mode__raw = value;
+                    OnPropertyChanged(nameof(Element_Phial_Damage_Multiplier_Sword_Mode_));
                 }
             }
 
@@ -2611,45 +2611,45 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected ushort Unk_115_raw;
-            public const string Unk_115_displayName = "Unk 115";
-            public const int Unk_115_sortIndex = 1050;
-            [SortOrder(Unk_115_sortIndex)]
-            [DisplayName(Unk_115_displayName)]
-            public virtual ushort Unk_115 {
-                get => Unk_115_raw;
+            protected ushort Sword_Gauge_Regeneration_Axe_Mode__raw;
+            public const string Sword_Gauge_Regeneration_Axe_Mode__displayName = "Sword Gauge Regeneration (Axe Mode)";
+            public const int Sword_Gauge_Regeneration_Axe_Mode__sortIndex = 1050;
+            [SortOrder(Sword_Gauge_Regeneration_Axe_Mode__sortIndex)]
+            [DisplayName(Sword_Gauge_Regeneration_Axe_Mode__displayName)]
+            public virtual ushort Sword_Gauge_Regeneration_Axe_Mode_ {
+                get => Sword_Gauge_Regeneration_Axe_Mode__raw;
                 set {
-                    if (Unk_115_raw == value) return;
-                    Unk_115_raw = value;
-                    OnPropertyChanged(nameof(Unk_115));
+                    if (Sword_Gauge_Regeneration_Axe_Mode__raw == value) return;
+                    Sword_Gauge_Regeneration_Axe_Mode__raw = value;
+                    OnPropertyChanged(nameof(Sword_Gauge_Regeneration_Axe_Mode_));
                 }
             }
 
-            protected float Unk_116_raw;
-            public const string Unk_116_displayName = "Unk 116";
-            public const int Unk_116_sortIndex = 1100;
-            [SortOrder(Unk_116_sortIndex)]
-            [DisplayName(Unk_116_displayName)]
-            public virtual float Unk_116 {
-                get => Unk_116_raw;
+            protected float Sword_Gauge_Regeneration_Interval_Axe_Mode__raw;
+            public const string Sword_Gauge_Regeneration_Interval_Axe_Mode__displayName = "Sword Gauge Regeneration Interval (Axe Mode)";
+            public const int Sword_Gauge_Regeneration_Interval_Axe_Mode__sortIndex = 1100;
+            [SortOrder(Sword_Gauge_Regeneration_Interval_Axe_Mode__sortIndex)]
+            [DisplayName(Sword_Gauge_Regeneration_Interval_Axe_Mode__displayName)]
+            public virtual float Sword_Gauge_Regeneration_Interval_Axe_Mode_ {
+                get => Sword_Gauge_Regeneration_Interval_Axe_Mode__raw;
                 set {
-                    if (Unk_116_raw == value) return;
-                    Unk_116_raw = value;
-                    OnPropertyChanged(nameof(Unk_116));
+                    if (Sword_Gauge_Regeneration_Interval_Axe_Mode__raw == value) return;
+                    Sword_Gauge_Regeneration_Interval_Axe_Mode__raw = value;
+                    OnPropertyChanged(nameof(Sword_Gauge_Regeneration_Interval_Axe_Mode_));
                 }
             }
 
-            protected byte Unk_117_raw;
-            public const string Unk_117_displayName = "Unk 117";
-            public const int Unk_117_sortIndex = 1150;
-            [SortOrder(Unk_117_sortIndex)]
-            [DisplayName(Unk_117_displayName)]
-            public virtual byte Unk_117 {
-                get => Unk_117_raw;
+            protected byte Sword_Gauge_When_Switching_Between_Axe_Sword_Attack_raw;
+            public const string Sword_Gauge_When_Switching_Between_Axe_Sword_Attack_displayName = "Sword Gauge When Switching Between Axe/Sword Attack";
+            public const int Sword_Gauge_When_Switching_Between_Axe_Sword_Attack_sortIndex = 1150;
+            [SortOrder(Sword_Gauge_When_Switching_Between_Axe_Sword_Attack_sortIndex)]
+            [DisplayName(Sword_Gauge_When_Switching_Between_Axe_Sword_Attack_displayName)]
+            public virtual byte Sword_Gauge_When_Switching_Between_Axe_Sword_Attack {
+                get => Sword_Gauge_When_Switching_Between_Axe_Sword_Attack_raw;
                 set {
-                    if (Unk_117_raw == value) return;
-                    Unk_117_raw = value;
-                    OnPropertyChanged(nameof(Unk_117));
+                    if (Sword_Gauge_When_Switching_Between_Axe_Sword_Attack_raw == value) return;
+                    Sword_Gauge_When_Switching_Between_Axe_Sword_Attack_raw = value;
+                    OnPropertyChanged(nameof(Sword_Gauge_When_Switching_Between_Axe_Sword_Attack));
                 }
             }
 
@@ -2737,17 +2737,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_124_raw;
-            public const string Unk_124_displayName = "Unk 124";
-            public const int Unk_124_sortIndex = 1500;
-            [SortOrder(Unk_124_sortIndex)]
-            [DisplayName(Unk_124_displayName)]
-            public virtual float Unk_124 {
-                get => Unk_124_raw;
+            protected float Sword_Amp_Duration_raw;
+            public const string Sword_Amp_Duration_displayName = "Sword Amp Duration";
+            public const int Sword_Amp_Duration_sortIndex = 1500;
+            [SortOrder(Sword_Amp_Duration_sortIndex)]
+            [DisplayName(Sword_Amp_Duration_displayName)]
+            public virtual float Sword_Amp_Duration {
+                get => Sword_Amp_Duration_raw;
                 set {
-                    if (Unk_124_raw == value) return;
-                    Unk_124_raw = value;
-                    OnPropertyChanged(nameof(Unk_124));
+                    if (Sword_Amp_Duration_raw == value) return;
+                    Sword_Amp_Duration_raw = value;
+                    OnPropertyChanged(nameof(Sword_Amp_Duration));
                 }
             }
 
@@ -3022,8 +3022,8 @@ namespace MHW_Editor.Weapons {
                 data.Unk_99_raw = reader.ReadSingle();
                 data.Unk_100_raw = reader.ReadSingle();
                 data.Unk_101_raw = reader.ReadSingle();
-                data.Unk_102_raw = reader.ReadSingle();
-                data.Unk_103_raw = reader.ReadSingle();
+                data.Power_Phial_Damage_Multiplier_Sword_Mode__raw = reader.ReadSingle();
+                data.Element_Phial_Damage_Multiplier_Sword_Mode__raw = reader.ReadSingle();
                 data.Unk_104_raw = reader.ReadSingle();
                 data.Unk_105_raw = reader.ReadSingle();
                 data.Unk_106_raw = reader.ReadSingle();
@@ -3035,16 +3035,16 @@ namespace MHW_Editor.Weapons {
                 data.Unk_112_raw = reader.ReadUInt16();
                 data.Unk_113_raw = reader.ReadUInt16();
                 data.Unk_114_raw = reader.ReadUInt16();
-                data.Unk_115_raw = reader.ReadUInt16();
-                data.Unk_116_raw = reader.ReadSingle();
-                data.Unk_117_raw = reader.ReadByte();
+                data.Sword_Gauge_Regeneration_Axe_Mode__raw = reader.ReadUInt16();
+                data.Sword_Gauge_Regeneration_Interval_Axe_Mode__raw = reader.ReadSingle();
+                data.Sword_Gauge_When_Switching_Between_Axe_Sword_Attack_raw = reader.ReadByte();
                 data.Unk_118_raw = reader.ReadUInt16();
                 data.Unk_119_raw = reader.ReadUInt16();
                 data.Unk_120_raw = reader.ReadUInt16();
                 data.Unk_121_raw = reader.ReadUInt16();
                 data.Unk_122_raw = reader.ReadUInt16();
                 data.Unk_123_raw = reader.ReadUInt16();
-                data.Unk_124_raw = reader.ReadSingle();
+                data.Sword_Amp_Duration_raw = reader.ReadSingle();
                 data.Unk_125_raw = reader.ReadUInt32();
                 data.Unk_126_raw = reader.ReadByte();
                 data.Unk_127_raw = reader.ReadByte();
@@ -3074,8 +3074,8 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_99_raw);
                 writer.Write(Unk_100_raw);
                 writer.Write(Unk_101_raw);
-                writer.Write(Unk_102_raw);
-                writer.Write(Unk_103_raw);
+                writer.Write(Power_Phial_Damage_Multiplier_Sword_Mode__raw);
+                writer.Write(Element_Phial_Damage_Multiplier_Sword_Mode__raw);
                 writer.Write(Unk_104_raw);
                 writer.Write(Unk_105_raw);
                 writer.Write(Unk_106_raw);
@@ -3087,16 +3087,16 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_112_raw);
                 writer.Write(Unk_113_raw);
                 writer.Write(Unk_114_raw);
-                writer.Write(Unk_115_raw);
-                writer.Write(Unk_116_raw);
-                writer.Write(Unk_117_raw);
+                writer.Write(Sword_Gauge_Regeneration_Axe_Mode__raw);
+                writer.Write(Sword_Gauge_Regeneration_Interval_Axe_Mode__raw);
+                writer.Write(Sword_Gauge_When_Switching_Between_Axe_Sword_Attack_raw);
                 writer.Write(Unk_118_raw);
                 writer.Write(Unk_119_raw);
                 writer.Write(Unk_120_raw);
                 writer.Write(Unk_121_raw);
                 writer.Write(Unk_122_raw);
                 writer.Write(Unk_123_raw);
-                writer.Write(Unk_124_raw);
+                writer.Write(Sword_Amp_Duration_raw);
                 writer.Write(Unk_125_raw);
                 writer.Write(Unk_126_raw);
                 writer.Write(Unk_127_raw);
@@ -3126,8 +3126,8 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 99", "Unk_99"),
                     new MultiStructItemCustomView(this, "Unk 100", "Unk_100"),
                     new MultiStructItemCustomView(this, "Unk 101", "Unk_101"),
-                    new MultiStructItemCustomView(this, "Unk 102", "Unk_102"),
-                    new MultiStructItemCustomView(this, "Unk 103", "Unk_103"),
+                    new MultiStructItemCustomView(this, "Power Phial Damage Multiplier (Sword Mode)", "Power_Phial_Damage_Multiplier_Sword_Mode_"),
+                    new MultiStructItemCustomView(this, "Element Phial Damage Multiplier (Sword Mode)", "Element_Phial_Damage_Multiplier_Sword_Mode_"),
                     new MultiStructItemCustomView(this, "Unk 104", "Unk_104"),
                     new MultiStructItemCustomView(this, "Unk 105", "Unk_105"),
                     new MultiStructItemCustomView(this, "Unk 106", "Unk_106"),
@@ -3139,16 +3139,16 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 112", "Unk_112"),
                     new MultiStructItemCustomView(this, "Unk 113", "Unk_113"),
                     new MultiStructItemCustomView(this, "Unk 114", "Unk_114"),
-                    new MultiStructItemCustomView(this, "Unk 115", "Unk_115"),
-                    new MultiStructItemCustomView(this, "Unk 116", "Unk_116"),
-                    new MultiStructItemCustomView(this, "Unk 117", "Unk_117"),
+                    new MultiStructItemCustomView(this, "Sword Gauge Regeneration (Axe Mode)", "Sword_Gauge_Regeneration_Axe_Mode_"),
+                    new MultiStructItemCustomView(this, "Sword Gauge Regeneration Interval (Axe Mode)", "Sword_Gauge_Regeneration_Interval_Axe_Mode_"),
+                    new MultiStructItemCustomView(this, "Sword Gauge When Switching Between Axe/Sword Attack", "Sword_Gauge_When_Switching_Between_Axe_Sword_Attack"),
                     new MultiStructItemCustomView(this, "Unk 118", "Unk_118"),
                     new MultiStructItemCustomView(this, "Unk 119", "Unk_119"),
                     new MultiStructItemCustomView(this, "Unk 120", "Unk_120"),
                     new MultiStructItemCustomView(this, "Unk 121", "Unk_121"),
                     new MultiStructItemCustomView(this, "Unk 122", "Unk_122"),
                     new MultiStructItemCustomView(this, "Unk 123", "Unk_123"),
-                    new MultiStructItemCustomView(this, "Unk 124", "Unk_124"),
+                    new MultiStructItemCustomView(this, "Sword Amp Duration", "Sword_Amp_Duration"),
                     new MultiStructItemCustomView(this, "Unk 125", "Unk_125"),
                     new MultiStructItemCustomView(this, "Unk 126", "Unk_126"),
                     new MultiStructItemCustomView(this, "Unk 127", "Unk_127"),
@@ -3670,17 +3670,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_171_raw;
-            public const string Unk_171_displayName = "Unk 171";
-            public const int Unk_171_sortIndex = 1450;
-            [SortOrder(Unk_171_sortIndex)]
-            [DisplayName(Unk_171_displayName)]
-            public virtual float Unk_171 {
-                get => Unk_171_raw;
+            protected float Power_Axe_Duration_raw;
+            public const string Power_Axe_Duration_displayName = "Power Axe Duration";
+            public const int Power_Axe_Duration_sortIndex = 1450;
+            [SortOrder(Power_Axe_Duration_sortIndex)]
+            [DisplayName(Power_Axe_Duration_displayName)]
+            public virtual float Power_Axe_Duration {
+                get => Power_Axe_Duration_raw;
                 set {
-                    if (Unk_171_raw == value) return;
-                    Unk_171_raw = value;
-                    OnPropertyChanged(nameof(Unk_171));
+                    if (Power_Axe_Duration_raw == value) return;
+                    Power_Axe_Duration_raw = value;
+                    OnPropertyChanged(nameof(Power_Axe_Duration));
                 }
             }
 
@@ -3724,7 +3724,7 @@ namespace MHW_Editor.Weapons {
                 data.Unk_168_raw = reader.ReadSingle();
                 data.Unk_169_raw = reader.ReadSingle();
                 data.Unk_170_raw = reader.ReadSingle();
-                data.Unk_171_raw = reader.ReadSingle();
+                data.Power_Axe_Duration_raw = reader.ReadSingle();
                 return data;
             }
 
@@ -3757,7 +3757,7 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_168_raw);
                 writer.Write(Unk_169_raw);
                 writer.Write(Unk_170_raw);
-                writer.Write(Unk_171_raw);
+                writer.Write(Power_Axe_Duration_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
@@ -3790,7 +3790,7 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 168", "Unk_168"),
                     new MultiStructItemCustomView(this, "Unk 169", "Unk_169"),
                     new MultiStructItemCustomView(this, "Unk 170", "Unk_170"),
-                    new MultiStructItemCustomView(this, "Unk 171", "Unk_171"),
+                    new MultiStructItemCustomView(this, "Power Axe Duration", "Power_Axe_Duration"),
                 };
             }
         }

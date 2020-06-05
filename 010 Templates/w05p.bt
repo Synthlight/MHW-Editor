@@ -38,10 +38,10 @@ ubyte Unk_18;
 ubyte Unk_19;
 ubyte Unk_20;
 ubyte Unk_21;
-float Unk_22;
+float Weapon_Sweet_spot;
 float Unk_23;
 float Unk_24;
-float Unk_25;
+float Elderseal_Modifier_;
 ubyte Unk_26;
 float Unk_27;
 
@@ -193,6 +193,6 @@ typedef struct {
 
 Action_Param_3 Action_Param_3_;
 
-float Unk_112;
+float Deflected_Attack_Prevention_Self_Buff_Multiplier;
 float Unk_113;
 float Unk_114;

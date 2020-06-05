@@ -75,7 +75,7 @@ namespace MHW_Generator.Weapons {
 
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 2),
 
-                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
+                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex}) - Bow Coating Params", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
@@ -86,20 +86,20 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Close Range Coating Damage", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Power Coating Damage", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(short)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(short)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(short)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(short)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(short)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(short)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(short)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(short)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Blast Coating Damage", typeof(short)),
+                    new MhwMultiStructData.Entry("Blast Coating Plus Damage", typeof(short)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 3}", typeof(float)),
                 }, 1, showVertically: true),
 
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1),
