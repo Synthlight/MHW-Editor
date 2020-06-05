@@ -13,20 +13,21 @@ namespace MHW_Template.Struct_Generation.Multi {
 
         private static void CreateStruct(MultiStruct010TemplateBase template, MhwMultiStructData.StructData @struct, uint indentation = 0) {
             var name             = @struct.SafeName;
-            var innerIndentation = 0U;
+            var innerIndentation = indentation;
+            var isInnerStruct    = indentation > 0;
 
             template.WriteLine("");
 
-            if (!@struct.showVertically || indentation > 0) {
+            if (!@struct.showVertically || isInnerStruct) {
                 template.WriteLine(indentation, "typedef struct {");
                 innerIndentation++;
             }
 
             foreach (var entry in @struct.entries) {
                 if (entry.HasSubStruct) {
-                    CreateStruct(template, entry.subStruct, indentation + 1);
+                    CreateStruct(template, entry.subStruct, innerIndentation);
                     template.WriteLine("");
-                    CreateStructField(template, entry.subStruct, entry, indentation + 1);
+                    CreateStructField(template, entry.subStruct, entry, innerIndentation);
                     continue;
                 }
 
@@ -46,7 +47,7 @@ namespace MHW_Template.Struct_Generation.Multi {
                 }
             }
 
-            if (!@struct.showVertically || indentation > 0) {
+            if (!@struct.showVertically || isInnerStruct) {
                 template.WriteLine(indentation, $"}} {name};");
 
                 if (indentation == 0) {

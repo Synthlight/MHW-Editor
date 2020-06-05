@@ -19,34 +19,34 @@ typedef struct {
     uint Weapon_Id;
 
     typedef struct {
-    int Mod;
+        int Mod;
     } Custom_Mods;
 
     Custom_Mods Custom_Mods_[5]<optimize=false>;
 
     typedef struct {
-    int Armor_Id;
+        int Armor_Id;
     } Armors;
 
     Armors Armors_[6]<optimize=false>;
 
     typedef struct {
-    int Mantle_Id;
+        int Mantle_Id;
     } Mantles;
 
     Mantles Mantles_[2]<optimize=false>;
 
     typedef struct {
-    uint Armor_Lvl;
+        uint Armor_Lvl;
     } Armor_Level;
 
     Armor_Level Armor_Level_[5]<optimize=false>;
     ushort Unk_1;
 
     typedef struct {
-    uint Deco_1;
-    uint Deco_2;
-    uint Deco_3;
+        uint Deco_1;
+        uint Deco_2;
+        uint Deco_3;
     } Decorations;
 
     Decorations Decorations_[9]<optimize=false>;
@@ -59,15 +59,15 @@ typedef struct {
     uint Unk_8;
 
     typedef struct {
-    uint Item_Id;
-    uint Item_Cnt;
+        uint Item_Id;
+        uint Item_Cnt;
     } Items;
 
     Items Items_[24]<optimize=false>;
 
     typedef struct {
-    uint Ammo_Id;
-    uint Ammo_Cnt;
+        uint Ammo_Id;
+        uint Ammo_Cnt;
     } Ammo;
 
     Ammo Ammo_[16]<optimize=false>;

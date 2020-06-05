@@ -1,4 +1,5 @@
 010 templates:
     Add display name to entries.
     Add section name as a comment at the start of vertical structs.
-    Inner Struct with "showVertically=true" isn't indented right. (See w07p)
+
+Try to open file as first param.

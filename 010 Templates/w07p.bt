@@ -166,25 +166,25 @@ float Unk_113;
 typedef struct {
 
     typedef struct {
-    float Shell_Damage_1;
-    float Shell_Damage_2;
-    float Shell_Damage_3;
-    float Shell_Damage_4;
-    float Shell_Damage_5;
-    float Shell_Damage_6;
-    float Shell_Damage_7;
+        float Shell_Damage_1;
+        float Shell_Damage_2;
+        float Shell_Damage_3;
+        float Shell_Damage_4;
+        float Shell_Damage_5;
+        float Shell_Damage_6;
+        float Shell_Damage_7;
     } Shell_Damage;
 
     Shell_Damage Shell_Damage_;
 
     typedef struct {
-    float Shell_Fire_Damage_1;
-    float Shell_Fire_Damage_2;
-    float Shell_Fire_Damage_3;
-    float Shell_Fire_Damage_4;
-    float Shell_Fire_Damage_5;
-    float Shell_Fire_Damage_6;
-    float Shell_Fire_Damage_7;
+        float Shell_Fire_Damage_1;
+        float Shell_Fire_Damage_2;
+        float Shell_Fire_Damage_3;
+        float Shell_Fire_Damage_4;
+        float Shell_Fire_Damage_5;
+        float Shell_Fire_Damage_6;
+        float Shell_Fire_Damage_7;
     } Shell_Fire_Damage;
 
     Shell_Fire_Damage Shell_Fire_Damage_;
@@ -193,73 +193,73 @@ typedef struct {
     float Shell_Unk_1;
 
     typedef struct {
-    float Wyvernfire_Damage_1;
-    float Wyvernfire_Damage_2;
-    float Wyvernfire_Damage_3;
-    float Wyvernfire_Damage_4;
-    float Wyvernfire_Damage_5;
-    float Wyvernfire_Damage_6;
-    float Wyvernfire_Damage_7;
+        float Wyvernfire_Damage_1;
+        float Wyvernfire_Damage_2;
+        float Wyvernfire_Damage_3;
+        float Wyvernfire_Damage_4;
+        float Wyvernfire_Damage_5;
+        float Wyvernfire_Damage_6;
+        float Wyvernfire_Damage_7;
     } Wyvernfire_Damage;
 
     Wyvernfire_Damage Wyvernfire_Damage_;
 
     typedef struct {
-    float Wyvernfire_Fire_Damage_1;
-    float Wyvernfire_Fire_Damage_2;
-    float Wyvernfire_Fire_Damage_3;
-    float Wyvernfire_Fire_Damage_4;
-    float Wyvernfire_Fire_Damage_5;
-    float Wyvernfire_Fire_Damage_6;
-    float Wyvernfire_Fire_Damage_7;
+        float Wyvernfire_Fire_Damage_1;
+        float Wyvernfire_Fire_Damage_2;
+        float Wyvernfire_Fire_Damage_3;
+        float Wyvernfire_Fire_Damage_4;
+        float Wyvernfire_Fire_Damage_5;
+        float Wyvernfire_Fire_Damage_6;
+        float Wyvernfire_Fire_Damage_7;
     } Wyvernfire_Fire_Damage;
 
     Wyvernfire_Fire_Damage Wyvernfire_Fire_Damage_;
 
     typedef struct {
-    float Wyrmstake_Damage_1;
-    float Wyrmstake_Damage_2;
-    float Wyrmstake_Damage_3;
-    float Wyrmstake_Damage_4;
-    float Wyrmstake_Damage_5;
-    float Wyrmstake_Damage_6;
-    float Wyrmstake_Damage_7;
+        float Wyrmstake_Damage_1;
+        float Wyrmstake_Damage_2;
+        float Wyrmstake_Damage_3;
+        float Wyrmstake_Damage_4;
+        float Wyrmstake_Damage_5;
+        float Wyrmstake_Damage_6;
+        float Wyrmstake_Damage_7;
     } Wyrmstake_Damage;
 
     Wyrmstake_Damage Wyrmstake_Damage_;
 
     typedef struct {
-    float Wyrmstake_Blast_Damage_1;
-    float Wyrmstake_Blast_Damage_2;
-    float Wyrmstake_Blast_Damage_3;
-    float Wyrmstake_Blast_Damage_4;
-    float Wyrmstake_Blast_Damage_5;
-    float Wyrmstake_Blast_Damage_6;
-    float Wyrmstake_Blast_Damage_7;
+        float Wyrmstake_Blast_Damage_1;
+        float Wyrmstake_Blast_Damage_2;
+        float Wyrmstake_Blast_Damage_3;
+        float Wyrmstake_Blast_Damage_4;
+        float Wyrmstake_Blast_Damage_5;
+        float Wyrmstake_Blast_Damage_6;
+        float Wyrmstake_Blast_Damage_7;
     } Wyrmstake_Blast_Damage;
 
     Wyrmstake_Blast_Damage Wyrmstake_Blast_Damage_;
 
     typedef struct {
-    float Wyrmstake_Blast_Fire_Damage_1;
-    float Wyrmstake_Blast_Fire_Damage_2;
-    float Wyrmstake_Blast_Fire_Damage_3;
-    float Wyrmstake_Blast_Fire_Damage_4;
-    float Wyrmstake_Blast_Fire_Damage_5;
-    float Wyrmstake_Blast_Fire_Damage_6;
-    float Wyrmstake_Blast_Fire_Damage_7;
+        float Wyrmstake_Blast_Fire_Damage_1;
+        float Wyrmstake_Blast_Fire_Damage_2;
+        float Wyrmstake_Blast_Fire_Damage_3;
+        float Wyrmstake_Blast_Fire_Damage_4;
+        float Wyrmstake_Blast_Fire_Damage_5;
+        float Wyrmstake_Blast_Fire_Damage_6;
+        float Wyrmstake_Blast_Fire_Damage_7;
     } Wyrmstake_Blast_Fire_Damage;
 
     Wyrmstake_Blast_Fire_Damage Wyrmstake_Blast_Fire_Damage_;
 
     typedef struct {
-    float Wyrmstake_Add_Damage_1;
-    float Wyrmstake_Add_Damage_2;
-    float Wyrmstake_Add_Damage_3;
-    float Wyrmstake_Add_Damage_4;
-    float Wyrmstake_Add_Damage_5;
-    float Wyrmstake_Add_Damage_6;
-    float Wyrmstake_Add_Damage_7;
+        float Wyrmstake_Add_Damage_1;
+        float Wyrmstake_Add_Damage_2;
+        float Wyrmstake_Add_Damage_3;
+        float Wyrmstake_Add_Damage_4;
+        float Wyrmstake_Add_Damage_5;
+        float Wyrmstake_Add_Damage_6;
+        float Wyrmstake_Add_Damage_7;
     } Wyrmstake_Add_Damage;
 
     Wyrmstake_Add_Damage Wyrmstake_Add_Damage_;

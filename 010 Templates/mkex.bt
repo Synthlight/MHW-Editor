@@ -18,7 +18,7 @@ typedef struct {
     uint Unk_1;
 
     typedef struct {
-    ushort Unk;
+        ushort Unk;
     } Items;
 
     Items Items_[215]<optimize=false>;
