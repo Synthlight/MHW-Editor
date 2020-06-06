@@ -1,4 +1,3 @@
-- Filtering.
 - Grid Ctrl+V.
 - Json for multi-struct.
 

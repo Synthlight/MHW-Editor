@@ -243,7 +243,11 @@ namespace MHW_Editor.Controls {
                     columns[i].column.DisplayIndex = i;
                 }
 
-                var outType = items[0].GetType(); // Since T may be dynamic/object.
+                var hasCustomView = items[0].GetType().IsGeneric(typeof(IHasCustomView<>));
+
+                // Since T may be dynamic/object. Also need to account for custom views.
+                var outType = hasCustomView ? ((dynamic) items)[0].GetCustomView()[0].GetType() : items[0].GetType();
+
                 foreach (var propertyName in columnMap.Keys) {
                     groupFilter.AddFilter(outType.GetProperty(propertyName));
                 }
