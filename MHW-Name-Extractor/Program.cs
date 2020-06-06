@@ -24,7 +24,7 @@ namespace MHW_Name_Extractor {
                 colTrans[fileName ?? throw new InvalidOperationException()] = entries;
             }
 
-            var colTransFile = $@"{Global.ASSETS_ROOT}\CollisionTranslationsData.json";
+            var colTransFile = $@"{Global.ASSETS_ROOT}\EditorData\CollisionTranslationsData.json";
             var dir          = Path.GetDirectoryName(colTransFile);
             if (!Directory.Exists(dir)) {
                 Directory.CreateDirectory(dir ?? throw new InvalidOperationException());

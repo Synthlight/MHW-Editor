@@ -497,7 +497,7 @@
     <None Include="Assets\BountyData\ptB_bountyData.json" />
     <None Include="Assets\BountyData\rus_bountyData.json" />
     <None Include="Assets\BountyData\spa_bountyData.json" />
-    <None Include="Assets\CollisionTranslationsData.json" />
+    <None Include="Assets\EditorData\CollisionTranslationsData.json" />
     <None Include="Assets\CustomPartsData\ara_customPartsData.json" />
     <None Include="Assets\CustomPartsData\chS_customPartsData.json" />
     <None Include="Assets\CustomPartsData\chT_customPartsData.json" />
@@ -873,6 +873,7 @@
     <None Include="Assets\WeaponData\spa_tachi.json" />
     <None Include="Assets\WeaponData\spa_whistle.json" />
     <None Include="Assets\WeaponData\spa_w_sword.json" />
+    <None Include="CollisionTranslations\README.md" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -892,6 +893,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="README.md" />
     <None Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

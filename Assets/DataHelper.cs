@@ -64,7 +64,7 @@ namespace MHW_Editor.Assets {
             FILE_PATH_MAP     = LoadDict<string, string>(EditorAssets.FilePathMap);
             FILE_SIZE_MAP     = LoadDict<string, ulong>(EditorAssets.FileSizeMap);
 
-            collisionTranslationsData = LoadDict<string, Dictionary<int, NameDescPair>>(Assets.CollisionTranslationsData);
+            collisionTranslationsData = LoadDict<string, Dictionary<int, NameDescPair>>(EditorAssets.CollisionTranslationsData);
 
             armorIdNameLookup           = LoadDict<ArmorType, LangMap>(EditorAssets.ArmorNameLookupById);
             armorIndexNameLookup        = LoadDict<ArmorType, LangMap>(EditorAssets.ArmorNameLookupByIndex);

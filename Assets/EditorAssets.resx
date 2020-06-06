@@ -130,6 +130,9 @@
   <data name="BadHashMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>editordata\badhashmap.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="CollisionTranslationsData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>editordata\collisiontranslationsdata.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="FilePathMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>editordata\filepathmap.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
