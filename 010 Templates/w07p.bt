@@ -36,9 +36,9 @@ float Unk_15<name="Unk 15">;
 float Unk_16<name="Unk 16">;
 float Unk_17<name="Unk 17">;
 ubyte Sharpness_Consumed_Melee_Only_<name="Sharpness Consumed (Melee Only)">;
-ubyte Unk_19<name="Unk 19">;
-ubyte Unk_20<name="Unk 20">;
-ubyte Unk_21<name="Unk 21">;
+ubyte Guard_Knockback_Sharpness_Usage_Small<name="Guard Knockback Sharpness Usage: Small">;
+ubyte Guard_Knockback_Sharpness_Usage_Medium<name="Guard Knockback Sharpness Usage: Medium">;
+ubyte Guard_Knockback_Sharpness_Usage_Large<name="Guard Knockback Sharpness Usage: Large">;
 float Weapon_Sweet_spot<name="Weapon Sweet-spot">;
 float Unk_23<name="Unk 23">;
 float Unk_24<name="Unk 24">;
@@ -142,7 +142,7 @@ float Unk_88<name="Unk 88">;
 float Unk_89<name="Unk 89">;
 float Unk_90<name="Unk 90">;
 
-uint Normal_Ammo<name="Normal Ammo">;
+uint Normal_Shell<name="Normal Shell">;
 uint Wide_Shell<name="Wide Shell">;
 uint Long_Shell<name="Long Shell">;
 float Shelling_Charge_Delay_Seconds_<name="Shelling Charge Delay (Seconds)">;
@@ -224,44 +224,44 @@ typedef struct {
 
     Wyvernfire_Fire_Damage Wyvernfire_Fire_Damage_<name="Wyvernfire Fire Damage">;
 
-    // Wyrmstake Damage
+    // Wyrmstake Tick Raw Damage
     typedef struct {
-        float Wyrmstake_Damage_1<name="Wyrmstake Damage 1">;
-        float Wyrmstake_Damage_2<name="Wyrmstake Damage 2">;
-        float Wyrmstake_Damage_3<name="Wyrmstake Damage 3">;
-        float Wyrmstake_Damage_4<name="Wyrmstake Damage 4">;
-        float Wyrmstake_Damage_5<name="Wyrmstake Damage 5">;
-        float Wyrmstake_Damage_6<name="Wyrmstake Damage 6">;
-        float Wyrmstake_Damage_7<name="Wyrmstake Damage 7">;
-    } Wyrmstake_Damage;
+        float Wyrmstake_Tick_Raw_Damage_1<name="Wyrmstake Tick Raw Damage 1">;
+        float Wyrmstake_Tick_Raw_Damage_2<name="Wyrmstake Tick Raw Damage 2">;
+        float Wyrmstake_Tick_Raw_Damage_3<name="Wyrmstake Tick Raw Damage 3">;
+        float Wyrmstake_Tick_Raw_Damage_4<name="Wyrmstake Tick Raw Damage 4">;
+        float Wyrmstake_Tick_Raw_Damage_5<name="Wyrmstake Tick Raw Damage 5">;
+        float Wyrmstake_Tick_Raw_Damage_6<name="Wyrmstake Tick Raw Damage 6">;
+        float Wyrmstake_Tick_Raw_Damage_7<name="Wyrmstake Tick Raw Damage 7">;
+    } Wyrmstake_Tick_Raw_Damage;
 
-    Wyrmstake_Damage Wyrmstake_Damage_<name="Wyrmstake Damage">;
+    Wyrmstake_Tick_Raw_Damage Wyrmstake_Tick_Raw_Damage_<name="Wyrmstake Tick Raw Damage">;
 
-    // Wyrmstake Blast Damage
+    // Wyrmstake Fixed Blast Damage
     typedef struct {
-        float Wyrmstake_Blast_Damage_1<name="Wyrmstake Blast Damage 1">;
-        float Wyrmstake_Blast_Damage_2<name="Wyrmstake Blast Damage 2">;
-        float Wyrmstake_Blast_Damage_3<name="Wyrmstake Blast Damage 3">;
-        float Wyrmstake_Blast_Damage_4<name="Wyrmstake Blast Damage 4">;
-        float Wyrmstake_Blast_Damage_5<name="Wyrmstake Blast Damage 5">;
-        float Wyrmstake_Blast_Damage_6<name="Wyrmstake Blast Damage 6">;
-        float Wyrmstake_Blast_Damage_7<name="Wyrmstake Blast Damage 7">;
-    } Wyrmstake_Blast_Damage;
+        float Wyrmstake_Fixed_Blast_Damage_1<name="Wyrmstake Fixed Blast Damage 1">;
+        float Wyrmstake_Fixed_Blast_Damage_2<name="Wyrmstake Fixed Blast Damage 2">;
+        float Wyrmstake_Fixed_Blast_Damage_3<name="Wyrmstake Fixed Blast Damage 3">;
+        float Wyrmstake_Fixed_Blast_Damage_4<name="Wyrmstake Fixed Blast Damage 4">;
+        float Wyrmstake_Fixed_Blast_Damage_5<name="Wyrmstake Fixed Blast Damage 5">;
+        float Wyrmstake_Fixed_Blast_Damage_6<name="Wyrmstake Fixed Blast Damage 6">;
+        float Wyrmstake_Fixed_Blast_Damage_7<name="Wyrmstake Fixed Blast Damage 7">;
+    } Wyrmstake_Fixed_Blast_Damage;
 
-    Wyrmstake_Blast_Damage Wyrmstake_Blast_Damage_<name="Wyrmstake Blast Damage">;
+    Wyrmstake_Fixed_Blast_Damage Wyrmstake_Fixed_Blast_Damage_<name="Wyrmstake Fixed Blast Damage">;
 
-    // Wyrmstake Blast Fire Damage
+    // Wyrmstake Fire Damage
     typedef struct {
-        float Wyrmstake_Blast_Fire_Damage_1<name="Wyrmstake Blast Fire Damage 1">;
-        float Wyrmstake_Blast_Fire_Damage_2<name="Wyrmstake Blast Fire Damage 2">;
-        float Wyrmstake_Blast_Fire_Damage_3<name="Wyrmstake Blast Fire Damage 3">;
-        float Wyrmstake_Blast_Fire_Damage_4<name="Wyrmstake Blast Fire Damage 4">;
-        float Wyrmstake_Blast_Fire_Damage_5<name="Wyrmstake Blast Fire Damage 5">;
-        float Wyrmstake_Blast_Fire_Damage_6<name="Wyrmstake Blast Fire Damage 6">;
-        float Wyrmstake_Blast_Fire_Damage_7<name="Wyrmstake Blast Fire Damage 7">;
-    } Wyrmstake_Blast_Fire_Damage;
+        float Wyrmstake_Fire_Damage_1<name="Wyrmstake Fire Damage 1">;
+        float Wyrmstake_Fire_Damage_2<name="Wyrmstake Fire Damage 2">;
+        float Wyrmstake_Fire_Damage_3<name="Wyrmstake Fire Damage 3">;
+        float Wyrmstake_Fire_Damage_4<name="Wyrmstake Fire Damage 4">;
+        float Wyrmstake_Fire_Damage_5<name="Wyrmstake Fire Damage 5">;
+        float Wyrmstake_Fire_Damage_6<name="Wyrmstake Fire Damage 6">;
+        float Wyrmstake_Fire_Damage_7<name="Wyrmstake Fire Damage 7">;
+    } Wyrmstake_Fire_Damage;
 
-    Wyrmstake_Blast_Fire_Damage Wyrmstake_Blast_Fire_Damage_<name="Wyrmstake Blast Fire Damage">;
+    Wyrmstake_Fire_Damage Wyrmstake_Fire_Damage_<name="Wyrmstake Fire Damage">;
 
     // Wyrmstake Add Damage
     typedef struct {
@@ -281,17 +281,17 @@ Shell_Ammo_Params Shell_Ammo_Params_[3]<optimize=false, name="Shell/Ammo Params"
 
 float Yellow_Gauge_Debuff<name="Yellow Gauge Debuff">;
 
-// Unk Arr 3
+// Shelling Sharpness Usage
 typedef struct {
-    uint Unk_1<name="Unk 1">;
-    uint Unk_2<name="Unk 2">;
-    uint Unk_3<name="Unk 3">;
-    uint Unk_4<name="Unk 4">;
-    uint Unk_5<name="Unk 5">;
+    uint Shell<name="Shell">;
+    uint Charged_Shell<name="Charged Shell">;
+    uint Full_Burst_Per_Shell_<name="Full Burst (Per Shell)">;
+    uint Wyvernfire<name="Wyvernfire">;
+    uint Wyrmstake<name="Wyrmstake">;
     uint Unk_6<name="Unk 6">;
-} Unk_Arr_3;
+} Shelling_Sharpness_Usage;
 
-Unk_Arr_3 Unk_Arr_3_[3]<optimize=false, name="Unk Arr 3">;
+Shelling_Sharpness_Usage Shelling_Sharpness_Usage_[3]<optimize=false, name="Shelling Sharpness Usage">;
 
 float Unk_292<name="Unk 292">;
 float Unk_293<name="Unk 293">;

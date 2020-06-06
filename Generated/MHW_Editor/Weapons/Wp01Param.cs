@@ -423,45 +423,45 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected byte Unk_19_raw;
-            public const string Unk_19_displayName = "Unk 19";
-            public const int Unk_19_sortIndex = 900;
-            [SortOrder(Unk_19_sortIndex)]
-            [DisplayName(Unk_19_displayName)]
-            public virtual byte Unk_19 {
-                get => Unk_19_raw;
+            protected byte Guard_Knockback_Sharpness_Usage_Small_raw;
+            public const string Guard_Knockback_Sharpness_Usage_Small_displayName = "Guard Knockback Sharpness Usage: Small";
+            public const int Guard_Knockback_Sharpness_Usage_Small_sortIndex = 900;
+            [SortOrder(Guard_Knockback_Sharpness_Usage_Small_sortIndex)]
+            [DisplayName(Guard_Knockback_Sharpness_Usage_Small_displayName)]
+            public virtual byte Guard_Knockback_Sharpness_Usage_Small {
+                get => Guard_Knockback_Sharpness_Usage_Small_raw;
                 set {
-                    if (Unk_19_raw == value) return;
-                    Unk_19_raw = value;
-                    OnPropertyChanged(nameof(Unk_19));
+                    if (Guard_Knockback_Sharpness_Usage_Small_raw == value) return;
+                    Guard_Knockback_Sharpness_Usage_Small_raw = value;
+                    OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Small));
                 }
             }
 
-            protected byte Unk_20_raw;
-            public const string Unk_20_displayName = "Unk 20";
-            public const int Unk_20_sortIndex = 950;
-            [SortOrder(Unk_20_sortIndex)]
-            [DisplayName(Unk_20_displayName)]
-            public virtual byte Unk_20 {
-                get => Unk_20_raw;
+            protected byte Guard_Knockback_Sharpness_Usage_Medium_raw;
+            public const string Guard_Knockback_Sharpness_Usage_Medium_displayName = "Guard Knockback Sharpness Usage: Medium";
+            public const int Guard_Knockback_Sharpness_Usage_Medium_sortIndex = 950;
+            [SortOrder(Guard_Knockback_Sharpness_Usage_Medium_sortIndex)]
+            [DisplayName(Guard_Knockback_Sharpness_Usage_Medium_displayName)]
+            public virtual byte Guard_Knockback_Sharpness_Usage_Medium {
+                get => Guard_Knockback_Sharpness_Usage_Medium_raw;
                 set {
-                    if (Unk_20_raw == value) return;
-                    Unk_20_raw = value;
-                    OnPropertyChanged(nameof(Unk_20));
+                    if (Guard_Knockback_Sharpness_Usage_Medium_raw == value) return;
+                    Guard_Knockback_Sharpness_Usage_Medium_raw = value;
+                    OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Medium));
                 }
             }
 
-            protected byte Unk_21_raw;
-            public const string Unk_21_displayName = "Unk 21";
-            public const int Unk_21_sortIndex = 1000;
-            [SortOrder(Unk_21_sortIndex)]
-            [DisplayName(Unk_21_displayName)]
-            public virtual byte Unk_21 {
-                get => Unk_21_raw;
+            protected byte Guard_Knockback_Sharpness_Usage_Large_raw;
+            public const string Guard_Knockback_Sharpness_Usage_Large_displayName = "Guard Knockback Sharpness Usage: Large";
+            public const int Guard_Knockback_Sharpness_Usage_Large_sortIndex = 1000;
+            [SortOrder(Guard_Knockback_Sharpness_Usage_Large_sortIndex)]
+            [DisplayName(Guard_Knockback_Sharpness_Usage_Large_displayName)]
+            public virtual byte Guard_Knockback_Sharpness_Usage_Large {
+                get => Guard_Knockback_Sharpness_Usage_Large_raw;
                 set {
-                    if (Unk_21_raw == value) return;
-                    Unk_21_raw = value;
-                    OnPropertyChanged(nameof(Unk_21));
+                    if (Guard_Knockback_Sharpness_Usage_Large_raw == value) return;
+                    Guard_Knockback_Sharpness_Usage_Large_raw = value;
+                    OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Large));
                 }
             }
 
@@ -578,9 +578,9 @@ namespace MHW_Editor.Weapons {
                 data.Unk_16_raw = reader.ReadSingle();
                 data.Unk_17_raw = reader.ReadSingle();
                 data.Sharpness_Consumed_Melee_Only__raw = reader.ReadByte();
-                data.Unk_19_raw = reader.ReadByte();
-                data.Unk_20_raw = reader.ReadByte();
-                data.Unk_21_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Small_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Medium_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Large_raw = reader.ReadByte();
                 data.Weapon_Sweet_spot_raw = reader.ReadSingle();
                 data.Unk_23_raw = reader.ReadSingle();
                 data.Unk_24_raw = reader.ReadSingle();
@@ -608,9 +608,9 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_16_raw);
                 writer.Write(Unk_17_raw);
                 writer.Write(Sharpness_Consumed_Melee_Only__raw);
-                writer.Write(Unk_19_raw);
-                writer.Write(Unk_20_raw);
-                writer.Write(Unk_21_raw);
+                writer.Write(Guard_Knockback_Sharpness_Usage_Small_raw);
+                writer.Write(Guard_Knockback_Sharpness_Usage_Medium_raw);
+                writer.Write(Guard_Knockback_Sharpness_Usage_Large_raw);
                 writer.Write(Weapon_Sweet_spot_raw);
                 writer.Write(Unk_23_raw);
                 writer.Write(Unk_24_raw);
@@ -638,9 +638,9 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 16", "Unk_16"),
                     new MultiStructItemCustomView(this, "Unk 17", "Unk_17"),
                     new MultiStructItemCustomView(this, "Sharpness Consumed (Melee Only)", "Sharpness_Consumed_Melee_Only_"),
-                    new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
-                    new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
-                    new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Small", "Guard_Knockback_Sharpness_Usage_Small"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Medium", "Guard_Knockback_Sharpness_Usage_Medium"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Large", "Guard_Knockback_Sharpness_Usage_Large"),
                     new MultiStructItemCustomView(this, "Weapon Sweet-spot", "Weapon_Sweet_spot"),
                     new MultiStructItemCustomView(this, "Unk 23", "Unk_23"),
                     new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),

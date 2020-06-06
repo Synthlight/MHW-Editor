@@ -423,45 +423,45 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected byte Unk_19_raw;
-            public const string Unk_19_displayName = "Unk 19";
-            public const int Unk_19_sortIndex = 900;
-            [SortOrder(Unk_19_sortIndex)]
-            [DisplayName(Unk_19_displayName)]
-            public virtual byte Unk_19 {
-                get => Unk_19_raw;
+            protected byte Guard_Knockback_Sharpness_Usage_Small_raw;
+            public const string Guard_Knockback_Sharpness_Usage_Small_displayName = "Guard Knockback Sharpness Usage: Small";
+            public const int Guard_Knockback_Sharpness_Usage_Small_sortIndex = 900;
+            [SortOrder(Guard_Knockback_Sharpness_Usage_Small_sortIndex)]
+            [DisplayName(Guard_Knockback_Sharpness_Usage_Small_displayName)]
+            public virtual byte Guard_Knockback_Sharpness_Usage_Small {
+                get => Guard_Knockback_Sharpness_Usage_Small_raw;
                 set {
-                    if (Unk_19_raw == value) return;
-                    Unk_19_raw = value;
-                    OnPropertyChanged(nameof(Unk_19));
+                    if (Guard_Knockback_Sharpness_Usage_Small_raw == value) return;
+                    Guard_Knockback_Sharpness_Usage_Small_raw = value;
+                    OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Small));
                 }
             }
 
-            protected byte Unk_20_raw;
-            public const string Unk_20_displayName = "Unk 20";
-            public const int Unk_20_sortIndex = 950;
-            [SortOrder(Unk_20_sortIndex)]
-            [DisplayName(Unk_20_displayName)]
-            public virtual byte Unk_20 {
-                get => Unk_20_raw;
+            protected byte Guard_Knockback_Sharpness_Usage_Medium_raw;
+            public const string Guard_Knockback_Sharpness_Usage_Medium_displayName = "Guard Knockback Sharpness Usage: Medium";
+            public const int Guard_Knockback_Sharpness_Usage_Medium_sortIndex = 950;
+            [SortOrder(Guard_Knockback_Sharpness_Usage_Medium_sortIndex)]
+            [DisplayName(Guard_Knockback_Sharpness_Usage_Medium_displayName)]
+            public virtual byte Guard_Knockback_Sharpness_Usage_Medium {
+                get => Guard_Knockback_Sharpness_Usage_Medium_raw;
                 set {
-                    if (Unk_20_raw == value) return;
-                    Unk_20_raw = value;
-                    OnPropertyChanged(nameof(Unk_20));
+                    if (Guard_Knockback_Sharpness_Usage_Medium_raw == value) return;
+                    Guard_Knockback_Sharpness_Usage_Medium_raw = value;
+                    OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Medium));
                 }
             }
 
-            protected byte Unk_21_raw;
-            public const string Unk_21_displayName = "Unk 21";
-            public const int Unk_21_sortIndex = 1000;
-            [SortOrder(Unk_21_sortIndex)]
-            [DisplayName(Unk_21_displayName)]
-            public virtual byte Unk_21 {
-                get => Unk_21_raw;
+            protected byte Guard_Knockback_Sharpness_Usage_Large_raw;
+            public const string Guard_Knockback_Sharpness_Usage_Large_displayName = "Guard Knockback Sharpness Usage: Large";
+            public const int Guard_Knockback_Sharpness_Usage_Large_sortIndex = 1000;
+            [SortOrder(Guard_Knockback_Sharpness_Usage_Large_sortIndex)]
+            [DisplayName(Guard_Knockback_Sharpness_Usage_Large_displayName)]
+            public virtual byte Guard_Knockback_Sharpness_Usage_Large {
+                get => Guard_Knockback_Sharpness_Usage_Large_raw;
                 set {
-                    if (Unk_21_raw == value) return;
-                    Unk_21_raw = value;
-                    OnPropertyChanged(nameof(Unk_21));
+                    if (Guard_Knockback_Sharpness_Usage_Large_raw == value) return;
+                    Guard_Knockback_Sharpness_Usage_Large_raw = value;
+                    OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Large));
                 }
             }
 
@@ -578,9 +578,9 @@ namespace MHW_Editor.Weapons {
                 data.Unk_16_raw = reader.ReadSingle();
                 data.Unk_17_raw = reader.ReadSingle();
                 data.Sharpness_Consumed_Melee_Only__raw = reader.ReadByte();
-                data.Unk_19_raw = reader.ReadByte();
-                data.Unk_20_raw = reader.ReadByte();
-                data.Unk_21_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Small_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Medium_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Large_raw = reader.ReadByte();
                 data.Weapon_Sweet_spot_raw = reader.ReadSingle();
                 data.Unk_23_raw = reader.ReadSingle();
                 data.Unk_24_raw = reader.ReadSingle();
@@ -608,9 +608,9 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_16_raw);
                 writer.Write(Unk_17_raw);
                 writer.Write(Sharpness_Consumed_Melee_Only__raw);
-                writer.Write(Unk_19_raw);
-                writer.Write(Unk_20_raw);
-                writer.Write(Unk_21_raw);
+                writer.Write(Guard_Knockback_Sharpness_Usage_Small_raw);
+                writer.Write(Guard_Knockback_Sharpness_Usage_Medium_raw);
+                writer.Write(Guard_Knockback_Sharpness_Usage_Large_raw);
                 writer.Write(Weapon_Sweet_spot_raw);
                 writer.Write(Unk_23_raw);
                 writer.Write(Unk_24_raw);
@@ -638,9 +638,9 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 16", "Unk_16"),
                     new MultiStructItemCustomView(this, "Unk 17", "Unk_17"),
                     new MultiStructItemCustomView(this, "Sharpness Consumed (Melee Only)", "Sharpness_Consumed_Melee_Only_"),
-                    new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
-                    new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
-                    new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Small", "Guard_Knockback_Sharpness_Usage_Small"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Medium", "Guard_Knockback_Sharpness_Usage_Medium"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Large", "Guard_Knockback_Sharpness_Usage_Large"),
                     new MultiStructItemCustomView(this, "Weapon Sweet-spot", "Weapon_Sweet_spot"),
                     new MultiStructItemCustomView(this, "Unk 23", "Unk_23"),
                     new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),
@@ -2457,17 +2457,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_104_raw;
-            public const string Unk_104_displayName = "Unk 104";
-            public const int Unk_104_sortIndex = 500;
-            [SortOrder(Unk_104_sortIndex)]
-            [DisplayName(Unk_104_displayName)]
-            public virtual float Unk_104 {
-                get => Unk_104_raw;
+            protected float Stun_Buildup_Exhaust_Phial__raw;
+            public const string Stun_Buildup_Exhaust_Phial__displayName = "Stun Buildup (Exhaust Phial)";
+            public const int Stun_Buildup_Exhaust_Phial__sortIndex = 500;
+            [SortOrder(Stun_Buildup_Exhaust_Phial__sortIndex)]
+            [DisplayName(Stun_Buildup_Exhaust_Phial__displayName)]
+            public virtual float Stun_Buildup_Exhaust_Phial_ {
+                get => Stun_Buildup_Exhaust_Phial__raw;
                 set {
-                    if (Unk_104_raw == value) return;
-                    Unk_104_raw = value;
-                    OnPropertyChanged(nameof(Unk_104));
+                    if (Stun_Buildup_Exhaust_Phial__raw == value) return;
+                    Stun_Buildup_Exhaust_Phial__raw = value;
+                    OnPropertyChanged(nameof(Stun_Buildup_Exhaust_Phial_));
                 }
             }
 
@@ -2583,17 +2583,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected ushort Unk_113_raw;
-            public const string Unk_113_displayName = "Unk 113";
-            public const int Unk_113_sortIndex = 950;
-            [SortOrder(Unk_113_sortIndex)]
-            [DisplayName(Unk_113_displayName)]
-            public virtual ushort Unk_113 {
-                get => Unk_113_raw;
+            protected ushort Gauge_Amount_Regen_on_Reload_raw;
+            public const string Gauge_Amount_Regen_on_Reload_displayName = "Gauge Amount Regen on Reload";
+            public const int Gauge_Amount_Regen_on_Reload_sortIndex = 950;
+            [SortOrder(Gauge_Amount_Regen_on_Reload_sortIndex)]
+            [DisplayName(Gauge_Amount_Regen_on_Reload_displayName)]
+            public virtual ushort Gauge_Amount_Regen_on_Reload {
+                get => Gauge_Amount_Regen_on_Reload_raw;
                 set {
-                    if (Unk_113_raw == value) return;
-                    Unk_113_raw = value;
-                    OnPropertyChanged(nameof(Unk_113));
+                    if (Gauge_Amount_Regen_on_Reload_raw == value) return;
+                    Gauge_Amount_Regen_on_Reload_raw = value;
+                    OnPropertyChanged(nameof(Gauge_Amount_Regen_on_Reload));
                 }
             }
 
@@ -2653,45 +2653,45 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected ushort Unk_118_raw;
-            public const string Unk_118_displayName = "Unk 118";
-            public const int Unk_118_sortIndex = 1200;
-            [SortOrder(Unk_118_sortIndex)]
-            [DisplayName(Unk_118_displayName)]
-            public virtual ushort Unk_118 {
-                get => Unk_118_raw;
+            protected ushort Impact_Paralysis_Poison_Amp_Threshold_to_Activate_raw;
+            public const string Impact_Paralysis_Poison_Amp_Threshold_to_Activate_displayName = "Impact/Paralysis/Poison Amp Threshold to Activate";
+            public const int Impact_Paralysis_Poison_Amp_Threshold_to_Activate_sortIndex = 1200;
+            [SortOrder(Impact_Paralysis_Poison_Amp_Threshold_to_Activate_sortIndex)]
+            [DisplayName(Impact_Paralysis_Poison_Amp_Threshold_to_Activate_displayName)]
+            public virtual ushort Impact_Paralysis_Poison_Amp_Threshold_to_Activate {
+                get => Impact_Paralysis_Poison_Amp_Threshold_to_Activate_raw;
                 set {
-                    if (Unk_118_raw == value) return;
-                    Unk_118_raw = value;
-                    OnPropertyChanged(nameof(Unk_118));
+                    if (Impact_Paralysis_Poison_Amp_Threshold_to_Activate_raw == value) return;
+                    Impact_Paralysis_Poison_Amp_Threshold_to_Activate_raw = value;
+                    OnPropertyChanged(nameof(Impact_Paralysis_Poison_Amp_Threshold_to_Activate));
                 }
             }
 
-            protected ushort Unk_119_raw;
-            public const string Unk_119_displayName = "Unk 119";
-            public const int Unk_119_sortIndex = 1250;
-            [SortOrder(Unk_119_sortIndex)]
-            [DisplayName(Unk_119_displayName)]
-            public virtual ushort Unk_119 {
-                get => Unk_119_raw;
+            protected ushort Element_Exhaust_Amp_Threshold_to_Activate_raw;
+            public const string Element_Exhaust_Amp_Threshold_to_Activate_displayName = "Element/Exhaust Amp Threshold to Activate";
+            public const int Element_Exhaust_Amp_Threshold_to_Activate_sortIndex = 1250;
+            [SortOrder(Element_Exhaust_Amp_Threshold_to_Activate_sortIndex)]
+            [DisplayName(Element_Exhaust_Amp_Threshold_to_Activate_displayName)]
+            public virtual ushort Element_Exhaust_Amp_Threshold_to_Activate {
+                get => Element_Exhaust_Amp_Threshold_to_Activate_raw;
                 set {
-                    if (Unk_119_raw == value) return;
-                    Unk_119_raw = value;
-                    OnPropertyChanged(nameof(Unk_119));
+                    if (Element_Exhaust_Amp_Threshold_to_Activate_raw == value) return;
+                    Element_Exhaust_Amp_Threshold_to_Activate_raw = value;
+                    OnPropertyChanged(nameof(Element_Exhaust_Amp_Threshold_to_Activate));
                 }
             }
 
-            protected ushort Unk_120_raw;
-            public const string Unk_120_displayName = "Unk 120";
-            public const int Unk_120_sortIndex = 1300;
-            [SortOrder(Unk_120_sortIndex)]
-            [DisplayName(Unk_120_displayName)]
-            public virtual ushort Unk_120 {
-                get => Unk_120_raw;
+            protected ushort Dragon_Phial_Amp_Threshold_to_Activate_raw;
+            public const string Dragon_Phial_Amp_Threshold_to_Activate_displayName = "Dragon Phial Amp Threshold to Activate";
+            public const int Dragon_Phial_Amp_Threshold_to_Activate_sortIndex = 1300;
+            [SortOrder(Dragon_Phial_Amp_Threshold_to_Activate_sortIndex)]
+            [DisplayName(Dragon_Phial_Amp_Threshold_to_Activate_displayName)]
+            public virtual ushort Dragon_Phial_Amp_Threshold_to_Activate {
+                get => Dragon_Phial_Amp_Threshold_to_Activate_raw;
                 set {
-                    if (Unk_120_raw == value) return;
-                    Unk_120_raw = value;
-                    OnPropertyChanged(nameof(Unk_120));
+                    if (Dragon_Phial_Amp_Threshold_to_Activate_raw == value) return;
+                    Dragon_Phial_Amp_Threshold_to_Activate_raw = value;
+                    OnPropertyChanged(nameof(Dragon_Phial_Amp_Threshold_to_Activate));
                 }
             }
 
@@ -2751,17 +2751,17 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected uint Unk_125_raw;
-            public const string Unk_125_displayName = "Unk 125";
-            public const int Unk_125_sortIndex = 1550;
-            [SortOrder(Unk_125_sortIndex)]
-            [DisplayName(Unk_125_displayName)]
-            public virtual uint Unk_125 {
-                get => Unk_125_raw;
+            protected uint Sword_Amp_Decay_Amount_When_Not_Fully_Charged_raw;
+            public const string Sword_Amp_Decay_Amount_When_Not_Fully_Charged_displayName = "Sword Amp Decay Amount When Not Fully Charged";
+            public const int Sword_Amp_Decay_Amount_When_Not_Fully_Charged_sortIndex = 1550;
+            [SortOrder(Sword_Amp_Decay_Amount_When_Not_Fully_Charged_sortIndex)]
+            [DisplayName(Sword_Amp_Decay_Amount_When_Not_Fully_Charged_displayName)]
+            public virtual uint Sword_Amp_Decay_Amount_When_Not_Fully_Charged {
+                get => Sword_Amp_Decay_Amount_When_Not_Fully_Charged_raw;
                 set {
-                    if (Unk_125_raw == value) return;
-                    Unk_125_raw = value;
-                    OnPropertyChanged(nameof(Unk_125));
+                    if (Sword_Amp_Decay_Amount_When_Not_Fully_Charged_raw == value) return;
+                    Sword_Amp_Decay_Amount_When_Not_Fully_Charged_raw = value;
+                    OnPropertyChanged(nameof(Sword_Amp_Decay_Amount_When_Not_Fully_Charged));
                 }
             }
 
@@ -2947,45 +2947,45 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_139_raw;
-            public const string Unk_139_displayName = "Unk 139";
-            public const int Unk_139_sortIndex = 2250;
-            [SortOrder(Unk_139_sortIndex)]
-            [DisplayName(Unk_139_displayName)]
-            public virtual float Unk_139 {
-                get => Unk_139_raw;
+            protected float Elemental_Discharge_Finisher_Damage_Multiplier_raw;
+            public const string Elemental_Discharge_Finisher_Damage_Multiplier_displayName = "Elemental Discharge Finisher Damage Multiplier";
+            public const int Elemental_Discharge_Finisher_Damage_Multiplier_sortIndex = 2250;
+            [SortOrder(Elemental_Discharge_Finisher_Damage_Multiplier_sortIndex)]
+            [DisplayName(Elemental_Discharge_Finisher_Damage_Multiplier_displayName)]
+            public virtual float Elemental_Discharge_Finisher_Damage_Multiplier {
+                get => Elemental_Discharge_Finisher_Damage_Multiplier_raw;
                 set {
-                    if (Unk_139_raw == value) return;
-                    Unk_139_raw = value;
-                    OnPropertyChanged(nameof(Unk_139));
+                    if (Elemental_Discharge_Finisher_Damage_Multiplier_raw == value) return;
+                    Elemental_Discharge_Finisher_Damage_Multiplier_raw = value;
+                    OnPropertyChanged(nameof(Elemental_Discharge_Finisher_Damage_Multiplier));
                 }
             }
 
-            protected float Unk_140_raw;
-            public const string Unk_140_displayName = "Unk 140";
-            public const int Unk_140_sortIndex = 2300;
-            [SortOrder(Unk_140_sortIndex)]
-            [DisplayName(Unk_140_displayName)]
-            public virtual float Unk_140 {
-                get => Unk_140_raw;
+            protected float Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early_raw;
+            public const string Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early_displayName = "Zero Sum/Elemental Discharge Damage Multiplier When Released Early";
+            public const int Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early_sortIndex = 2300;
+            [SortOrder(Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early_sortIndex)]
+            [DisplayName(Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early_displayName)]
+            public virtual float Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early {
+                get => Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early_raw;
                 set {
-                    if (Unk_140_raw == value) return;
-                    Unk_140_raw = value;
-                    OnPropertyChanged(nameof(Unk_140));
+                    if (Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early_raw == value) return;
+                    Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early_raw = value;
+                    OnPropertyChanged(nameof(Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early));
                 }
             }
 
-            protected float Unk_141_raw;
-            public const string Unk_141_displayName = "Unk 141";
-            public const int Unk_141_sortIndex = 2350;
-            [SortOrder(Unk_141_sortIndex)]
-            [DisplayName(Unk_141_displayName)]
-            public virtual float Unk_141 {
-                get => Unk_141_raw;
+            protected float Zero_Sum_Discharge_Damage_Multiplier_raw;
+            public const string Zero_Sum_Discharge_Damage_Multiplier_displayName = "Zero Sum Discharge Damage Multiplier";
+            public const int Zero_Sum_Discharge_Damage_Multiplier_sortIndex = 2350;
+            [SortOrder(Zero_Sum_Discharge_Damage_Multiplier_sortIndex)]
+            [DisplayName(Zero_Sum_Discharge_Damage_Multiplier_displayName)]
+            public virtual float Zero_Sum_Discharge_Damage_Multiplier {
+                get => Zero_Sum_Discharge_Damage_Multiplier_raw;
                 set {
-                    if (Unk_141_raw == value) return;
-                    Unk_141_raw = value;
-                    OnPropertyChanged(nameof(Unk_141));
+                    if (Zero_Sum_Discharge_Damage_Multiplier_raw == value) return;
+                    Zero_Sum_Discharge_Damage_Multiplier_raw = value;
+                    OnPropertyChanged(nameof(Zero_Sum_Discharge_Damage_Multiplier));
                 }
             }
 
@@ -3024,7 +3024,7 @@ namespace MHW_Editor.Weapons {
                 data.Unk_101_raw = reader.ReadSingle();
                 data.Power_Phial_Damage_Multiplier_Sword_Mode__raw = reader.ReadSingle();
                 data.Element_Phial_Damage_Multiplier_Sword_Mode__raw = reader.ReadSingle();
-                data.Unk_104_raw = reader.ReadSingle();
+                data.Stun_Buildup_Exhaust_Phial__raw = reader.ReadSingle();
                 data.Unk_105_raw = reader.ReadSingle();
                 data.Unk_106_raw = reader.ReadSingle();
                 data.Unk_107_raw = reader.ReadSingle();
@@ -3033,19 +3033,19 @@ namespace MHW_Editor.Weapons {
                 data.Unk_110_raw = reader.ReadSingle();
                 data.Unk_111_raw = reader.ReadSingle();
                 data.Unk_112_raw = reader.ReadUInt16();
-                data.Unk_113_raw = reader.ReadUInt16();
+                data.Gauge_Amount_Regen_on_Reload_raw = reader.ReadUInt16();
                 data.Unk_114_raw = reader.ReadUInt16();
                 data.Sword_Gauge_Regeneration_Axe_Mode__raw = reader.ReadUInt16();
                 data.Sword_Gauge_Regeneration_Interval_Axe_Mode__raw = reader.ReadSingle();
                 data.Sword_Gauge_When_Switching_Between_Axe_Sword_Attack_raw = reader.ReadByte();
-                data.Unk_118_raw = reader.ReadUInt16();
-                data.Unk_119_raw = reader.ReadUInt16();
-                data.Unk_120_raw = reader.ReadUInt16();
+                data.Impact_Paralysis_Poison_Amp_Threshold_to_Activate_raw = reader.ReadUInt16();
+                data.Element_Exhaust_Amp_Threshold_to_Activate_raw = reader.ReadUInt16();
+                data.Dragon_Phial_Amp_Threshold_to_Activate_raw = reader.ReadUInt16();
                 data.Unk_121_raw = reader.ReadUInt16();
                 data.Unk_122_raw = reader.ReadUInt16();
                 data.Unk_123_raw = reader.ReadUInt16();
                 data.Sword_Amp_Duration_raw = reader.ReadSingle();
-                data.Unk_125_raw = reader.ReadUInt32();
+                data.Sword_Amp_Decay_Amount_When_Not_Fully_Charged_raw = reader.ReadUInt32();
                 data.Unk_126_raw = reader.ReadByte();
                 data.Unk_127_raw = reader.ReadByte();
                 data.Unk_128_raw = reader.ReadByte();
@@ -3059,9 +3059,9 @@ namespace MHW_Editor.Weapons {
                 data.Unk_136_raw = reader.ReadSingle();
                 data.Unk_137_raw = reader.ReadSingle();
                 data.Unk_138_raw = reader.ReadSingle();
-                data.Unk_139_raw = reader.ReadSingle();
-                data.Unk_140_raw = reader.ReadSingle();
-                data.Unk_141_raw = reader.ReadSingle();
+                data.Elemental_Discharge_Finisher_Damage_Multiplier_raw = reader.ReadSingle();
+                data.Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early_raw = reader.ReadSingle();
+                data.Zero_Sum_Discharge_Damage_Multiplier_raw = reader.ReadSingle();
                 data.Unk_142_raw = reader.ReadSingle();
                 return data;
             }
@@ -3076,7 +3076,7 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_101_raw);
                 writer.Write(Power_Phial_Damage_Multiplier_Sword_Mode__raw);
                 writer.Write(Element_Phial_Damage_Multiplier_Sword_Mode__raw);
-                writer.Write(Unk_104_raw);
+                writer.Write(Stun_Buildup_Exhaust_Phial__raw);
                 writer.Write(Unk_105_raw);
                 writer.Write(Unk_106_raw);
                 writer.Write(Unk_107_raw);
@@ -3085,19 +3085,19 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_110_raw);
                 writer.Write(Unk_111_raw);
                 writer.Write(Unk_112_raw);
-                writer.Write(Unk_113_raw);
+                writer.Write(Gauge_Amount_Regen_on_Reload_raw);
                 writer.Write(Unk_114_raw);
                 writer.Write(Sword_Gauge_Regeneration_Axe_Mode__raw);
                 writer.Write(Sword_Gauge_Regeneration_Interval_Axe_Mode__raw);
                 writer.Write(Sword_Gauge_When_Switching_Between_Axe_Sword_Attack_raw);
-                writer.Write(Unk_118_raw);
-                writer.Write(Unk_119_raw);
-                writer.Write(Unk_120_raw);
+                writer.Write(Impact_Paralysis_Poison_Amp_Threshold_to_Activate_raw);
+                writer.Write(Element_Exhaust_Amp_Threshold_to_Activate_raw);
+                writer.Write(Dragon_Phial_Amp_Threshold_to_Activate_raw);
                 writer.Write(Unk_121_raw);
                 writer.Write(Unk_122_raw);
                 writer.Write(Unk_123_raw);
                 writer.Write(Sword_Amp_Duration_raw);
-                writer.Write(Unk_125_raw);
+                writer.Write(Sword_Amp_Decay_Amount_When_Not_Fully_Charged_raw);
                 writer.Write(Unk_126_raw);
                 writer.Write(Unk_127_raw);
                 writer.Write(Unk_128_raw);
@@ -3111,9 +3111,9 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_136_raw);
                 writer.Write(Unk_137_raw);
                 writer.Write(Unk_138_raw);
-                writer.Write(Unk_139_raw);
-                writer.Write(Unk_140_raw);
-                writer.Write(Unk_141_raw);
+                writer.Write(Elemental_Discharge_Finisher_Damage_Multiplier_raw);
+                writer.Write(Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early_raw);
+                writer.Write(Zero_Sum_Discharge_Damage_Multiplier_raw);
                 writer.Write(Unk_142_raw);
             }
 
@@ -3128,7 +3128,7 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 101", "Unk_101"),
                     new MultiStructItemCustomView(this, "Power Phial Damage Multiplier (Sword Mode)", "Power_Phial_Damage_Multiplier_Sword_Mode_"),
                     new MultiStructItemCustomView(this, "Element Phial Damage Multiplier (Sword Mode)", "Element_Phial_Damage_Multiplier_Sword_Mode_"),
-                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104"),
+                    new MultiStructItemCustomView(this, "Stun Buildup (Exhaust Phial)", "Stun_Buildup_Exhaust_Phial_"),
                     new MultiStructItemCustomView(this, "Unk 105", "Unk_105"),
                     new MultiStructItemCustomView(this, "Unk 106", "Unk_106"),
                     new MultiStructItemCustomView(this, "Unk 107", "Unk_107"),
@@ -3137,19 +3137,19 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 110", "Unk_110"),
                     new MultiStructItemCustomView(this, "Unk 111", "Unk_111"),
                     new MultiStructItemCustomView(this, "Unk 112", "Unk_112"),
-                    new MultiStructItemCustomView(this, "Unk 113", "Unk_113"),
+                    new MultiStructItemCustomView(this, "Gauge Amount Regen on Reload", "Gauge_Amount_Regen_on_Reload"),
                     new MultiStructItemCustomView(this, "Unk 114", "Unk_114"),
                     new MultiStructItemCustomView(this, "Sword Gauge Regeneration (Axe Mode)", "Sword_Gauge_Regeneration_Axe_Mode_"),
                     new MultiStructItemCustomView(this, "Sword Gauge Regeneration Interval (Axe Mode)", "Sword_Gauge_Regeneration_Interval_Axe_Mode_"),
                     new MultiStructItemCustomView(this, "Sword Gauge When Switching Between Axe/Sword Attack", "Sword_Gauge_When_Switching_Between_Axe_Sword_Attack"),
-                    new MultiStructItemCustomView(this, "Unk 118", "Unk_118"),
-                    new MultiStructItemCustomView(this, "Unk 119", "Unk_119"),
-                    new MultiStructItemCustomView(this, "Unk 120", "Unk_120"),
+                    new MultiStructItemCustomView(this, "Impact/Paralysis/Poison Amp Threshold to Activate", "Impact_Paralysis_Poison_Amp_Threshold_to_Activate"),
+                    new MultiStructItemCustomView(this, "Element/Exhaust Amp Threshold to Activate", "Element_Exhaust_Amp_Threshold_to_Activate"),
+                    new MultiStructItemCustomView(this, "Dragon Phial Amp Threshold to Activate", "Dragon_Phial_Amp_Threshold_to_Activate"),
                     new MultiStructItemCustomView(this, "Unk 121", "Unk_121"),
                     new MultiStructItemCustomView(this, "Unk 122", "Unk_122"),
                     new MultiStructItemCustomView(this, "Unk 123", "Unk_123"),
                     new MultiStructItemCustomView(this, "Sword Amp Duration", "Sword_Amp_Duration"),
-                    new MultiStructItemCustomView(this, "Unk 125", "Unk_125"),
+                    new MultiStructItemCustomView(this, "Sword Amp Decay Amount When Not Fully Charged", "Sword_Amp_Decay_Amount_When_Not_Fully_Charged"),
                     new MultiStructItemCustomView(this, "Unk 126", "Unk_126"),
                     new MultiStructItemCustomView(this, "Unk 127", "Unk_127"),
                     new MultiStructItemCustomView(this, "Unk 128", "Unk_128"),
@@ -3163,9 +3163,9 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 136", "Unk_136"),
                     new MultiStructItemCustomView(this, "Unk 137", "Unk_137"),
                     new MultiStructItemCustomView(this, "Unk 138", "Unk_138"),
-                    new MultiStructItemCustomView(this, "Unk 139", "Unk_139"),
-                    new MultiStructItemCustomView(this, "Unk 140", "Unk_140"),
-                    new MultiStructItemCustomView(this, "Unk 141", "Unk_141"),
+                    new MultiStructItemCustomView(this, "Elemental Discharge Finisher Damage Multiplier", "Elemental_Discharge_Finisher_Damage_Multiplier"),
+                    new MultiStructItemCustomView(this, "Zero Sum/Elemental Discharge Damage Multiplier When Released Early", "Zero_Sum_Elemental_Discharge_Damage_Multiplier_When_Released_Early"),
+                    new MultiStructItemCustomView(this, "Zero Sum Discharge Damage Multiplier", "Zero_Sum_Discharge_Damage_Multiplier"),
                     new MultiStructItemCustomView(this, "Unk 142", "Unk_142"),
                 };
             }

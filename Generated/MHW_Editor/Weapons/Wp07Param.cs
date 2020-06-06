@@ -423,45 +423,45 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected byte Unk_19_raw;
-            public const string Unk_19_displayName = "Unk 19";
-            public const int Unk_19_sortIndex = 900;
-            [SortOrder(Unk_19_sortIndex)]
-            [DisplayName(Unk_19_displayName)]
-            public virtual byte Unk_19 {
-                get => Unk_19_raw;
+            protected byte Guard_Knockback_Sharpness_Usage_Small_raw;
+            public const string Guard_Knockback_Sharpness_Usage_Small_displayName = "Guard Knockback Sharpness Usage: Small";
+            public const int Guard_Knockback_Sharpness_Usage_Small_sortIndex = 900;
+            [SortOrder(Guard_Knockback_Sharpness_Usage_Small_sortIndex)]
+            [DisplayName(Guard_Knockback_Sharpness_Usage_Small_displayName)]
+            public virtual byte Guard_Knockback_Sharpness_Usage_Small {
+                get => Guard_Knockback_Sharpness_Usage_Small_raw;
                 set {
-                    if (Unk_19_raw == value) return;
-                    Unk_19_raw = value;
-                    OnPropertyChanged(nameof(Unk_19));
+                    if (Guard_Knockback_Sharpness_Usage_Small_raw == value) return;
+                    Guard_Knockback_Sharpness_Usage_Small_raw = value;
+                    OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Small));
                 }
             }
 
-            protected byte Unk_20_raw;
-            public const string Unk_20_displayName = "Unk 20";
-            public const int Unk_20_sortIndex = 950;
-            [SortOrder(Unk_20_sortIndex)]
-            [DisplayName(Unk_20_displayName)]
-            public virtual byte Unk_20 {
-                get => Unk_20_raw;
+            protected byte Guard_Knockback_Sharpness_Usage_Medium_raw;
+            public const string Guard_Knockback_Sharpness_Usage_Medium_displayName = "Guard Knockback Sharpness Usage: Medium";
+            public const int Guard_Knockback_Sharpness_Usage_Medium_sortIndex = 950;
+            [SortOrder(Guard_Knockback_Sharpness_Usage_Medium_sortIndex)]
+            [DisplayName(Guard_Knockback_Sharpness_Usage_Medium_displayName)]
+            public virtual byte Guard_Knockback_Sharpness_Usage_Medium {
+                get => Guard_Knockback_Sharpness_Usage_Medium_raw;
                 set {
-                    if (Unk_20_raw == value) return;
-                    Unk_20_raw = value;
-                    OnPropertyChanged(nameof(Unk_20));
+                    if (Guard_Knockback_Sharpness_Usage_Medium_raw == value) return;
+                    Guard_Knockback_Sharpness_Usage_Medium_raw = value;
+                    OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Medium));
                 }
             }
 
-            protected byte Unk_21_raw;
-            public const string Unk_21_displayName = "Unk 21";
-            public const int Unk_21_sortIndex = 1000;
-            [SortOrder(Unk_21_sortIndex)]
-            [DisplayName(Unk_21_displayName)]
-            public virtual byte Unk_21 {
-                get => Unk_21_raw;
+            protected byte Guard_Knockback_Sharpness_Usage_Large_raw;
+            public const string Guard_Knockback_Sharpness_Usage_Large_displayName = "Guard Knockback Sharpness Usage: Large";
+            public const int Guard_Knockback_Sharpness_Usage_Large_sortIndex = 1000;
+            [SortOrder(Guard_Knockback_Sharpness_Usage_Large_sortIndex)]
+            [DisplayName(Guard_Knockback_Sharpness_Usage_Large_displayName)]
+            public virtual byte Guard_Knockback_Sharpness_Usage_Large {
+                get => Guard_Knockback_Sharpness_Usage_Large_raw;
                 set {
-                    if (Unk_21_raw == value) return;
-                    Unk_21_raw = value;
-                    OnPropertyChanged(nameof(Unk_21));
+                    if (Guard_Knockback_Sharpness_Usage_Large_raw == value) return;
+                    Guard_Knockback_Sharpness_Usage_Large_raw = value;
+                    OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Large));
                 }
             }
 
@@ -578,9 +578,9 @@ namespace MHW_Editor.Weapons {
                 data.Unk_16_raw = reader.ReadSingle();
                 data.Unk_17_raw = reader.ReadSingle();
                 data.Sharpness_Consumed_Melee_Only__raw = reader.ReadByte();
-                data.Unk_19_raw = reader.ReadByte();
-                data.Unk_20_raw = reader.ReadByte();
-                data.Unk_21_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Small_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Medium_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Large_raw = reader.ReadByte();
                 data.Weapon_Sweet_spot_raw = reader.ReadSingle();
                 data.Unk_23_raw = reader.ReadSingle();
                 data.Unk_24_raw = reader.ReadSingle();
@@ -608,9 +608,9 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_16_raw);
                 writer.Write(Unk_17_raw);
                 writer.Write(Sharpness_Consumed_Melee_Only__raw);
-                writer.Write(Unk_19_raw);
-                writer.Write(Unk_20_raw);
-                writer.Write(Unk_21_raw);
+                writer.Write(Guard_Knockback_Sharpness_Usage_Small_raw);
+                writer.Write(Guard_Knockback_Sharpness_Usage_Medium_raw);
+                writer.Write(Guard_Knockback_Sharpness_Usage_Large_raw);
                 writer.Write(Weapon_Sweet_spot_raw);
                 writer.Write(Unk_23_raw);
                 writer.Write(Unk_24_raw);
@@ -638,9 +638,9 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 16", "Unk_16"),
                     new MultiStructItemCustomView(this, "Unk 17", "Unk_17"),
                     new MultiStructItemCustomView(this, "Sharpness Consumed (Melee Only)", "Sharpness_Consumed_Melee_Only_"),
-                    new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
-                    new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
-                    new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Small", "Guard_Knockback_Sharpness_Usage_Small"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Medium", "Guard_Knockback_Sharpness_Usage_Medium"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Large", "Guard_Knockback_Sharpness_Usage_Large"),
                     new MultiStructItemCustomView(this, "Weapon Sweet-spot", "Weapon_Sweet_spot"),
                     new MultiStructItemCustomView(this, "Unk 23", "Unk_23"),
                     new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),
@@ -2132,17 +2132,17 @@ namespace MHW_Editor.Weapons {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W07p Params (5) - Shelling Params";
 
-            protected uint Normal_Ammo_raw;
-            public const string Normal_Ammo_displayName = "Normal Ammo";
-            public const int Normal_Ammo_sortIndex = 50;
-            [SortOrder(Normal_Ammo_sortIndex)]
-            [DisplayName(Normal_Ammo_displayName)]
-            public virtual uint Normal_Ammo {
-                get => Normal_Ammo_raw;
+            protected uint Normal_Shell_raw;
+            public const string Normal_Shell_displayName = "Normal Shell";
+            public const int Normal_Shell_sortIndex = 50;
+            [SortOrder(Normal_Shell_sortIndex)]
+            [DisplayName(Normal_Shell_displayName)]
+            public virtual uint Normal_Shell {
+                get => Normal_Shell_raw;
                 set {
-                    if (Normal_Ammo_raw == value) return;
-                    Normal_Ammo_raw = value;
-                    OnPropertyChanged(nameof(Normal_Ammo));
+                    if (Normal_Shell_raw == value) return;
+                    Normal_Shell_raw = value;
+                    OnPropertyChanged(nameof(Normal_Shell));
                 }
             }
 
@@ -2466,7 +2466,7 @@ namespace MHW_Editor.Weapons {
             public static W07p_Params_5_Shelling_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new W07p_Params_5_Shelling_Params();
                 data.Index = i;
-                data.Normal_Ammo_raw = reader.ReadUInt32();
+                data.Normal_Shell_raw = reader.ReadUInt32();
                 data.Wide_Shell_raw = reader.ReadUInt32();
                 data.Long_Shell_raw = reader.ReadUInt32();
                 data.Shelling_Charge_Delay_Seconds__raw = reader.ReadSingle();
@@ -2493,7 +2493,7 @@ namespace MHW_Editor.Weapons {
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Normal_Ammo_raw);
+                writer.Write(Normal_Shell_raw);
                 writer.Write(Wide_Shell_raw);
                 writer.Write(Long_Shell_raw);
                 writer.Write(Shelling_Charge_Delay_Seconds__raw);
@@ -2520,7 +2520,7 @@ namespace MHW_Editor.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Normal Ammo", "Normal_Ammo"),
+                    new MultiStructItemCustomView(this, "Normal Shell", "Normal_Shell"),
                     new MultiStructItemCustomView(this, "Wide Shell", "Wide_Shell"),
                     new MultiStructItemCustomView(this, "Long Shell", "Long_Shell"),
                     new MultiStructItemCustomView(this, "Shelling Charge Delay (Seconds)", "Shelling_Charge_Delay_Seconds_"),
@@ -3205,110 +3205,110 @@ namespace MHW_Editor.Weapons {
             [DisplayName(Wyvernfire_Fire_Damage_displayName)]
             public virtual ObservableCollection<Wyvernfire_Fire_Damage> Wyvernfire_Fire_Damage_raw { get; protected set; }
 
-            public partial class Wyrmstake_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Wyrmstake_Tick_Raw_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
                 public const ulong FixedSizeCount = 1;
-                public const string GridName = "Wyrmstake Damage";
+                public const string GridName = "Wyrmstake Tick Raw Damage";
 
-                protected float Wyrmstake_Damage_1_raw;
-                public const string Wyrmstake_Damage_1_displayName = "Wyrmstake Damage 1";
-                public const int Wyrmstake_Damage_1_sortIndex = 50;
-                [SortOrder(Wyrmstake_Damage_1_sortIndex)]
-                [DisplayName(Wyrmstake_Damage_1_displayName)]
-                public virtual float Wyrmstake_Damage_1 {
-                    get => Wyrmstake_Damage_1_raw;
+                protected float Wyrmstake_Tick_Raw_Damage_1_raw;
+                public const string Wyrmstake_Tick_Raw_Damage_1_displayName = "Wyrmstake Tick Raw Damage 1";
+                public const int Wyrmstake_Tick_Raw_Damage_1_sortIndex = 50;
+                [SortOrder(Wyrmstake_Tick_Raw_Damage_1_sortIndex)]
+                [DisplayName(Wyrmstake_Tick_Raw_Damage_1_displayName)]
+                public virtual float Wyrmstake_Tick_Raw_Damage_1 {
+                    get => Wyrmstake_Tick_Raw_Damage_1_raw;
                     set {
-                        if (Wyrmstake_Damage_1_raw == value) return;
-                        Wyrmstake_Damage_1_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Damage_1));
+                        if (Wyrmstake_Tick_Raw_Damage_1_raw == value) return;
+                        Wyrmstake_Tick_Raw_Damage_1_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Tick_Raw_Damage_1));
                     }
                 }
 
-                protected float Wyrmstake_Damage_2_raw;
-                public const string Wyrmstake_Damage_2_displayName = "Wyrmstake Damage 2";
-                public const int Wyrmstake_Damage_2_sortIndex = 100;
-                [SortOrder(Wyrmstake_Damage_2_sortIndex)]
-                [DisplayName(Wyrmstake_Damage_2_displayName)]
-                public virtual float Wyrmstake_Damage_2 {
-                    get => Wyrmstake_Damage_2_raw;
+                protected float Wyrmstake_Tick_Raw_Damage_2_raw;
+                public const string Wyrmstake_Tick_Raw_Damage_2_displayName = "Wyrmstake Tick Raw Damage 2";
+                public const int Wyrmstake_Tick_Raw_Damage_2_sortIndex = 100;
+                [SortOrder(Wyrmstake_Tick_Raw_Damage_2_sortIndex)]
+                [DisplayName(Wyrmstake_Tick_Raw_Damage_2_displayName)]
+                public virtual float Wyrmstake_Tick_Raw_Damage_2 {
+                    get => Wyrmstake_Tick_Raw_Damage_2_raw;
                     set {
-                        if (Wyrmstake_Damage_2_raw == value) return;
-                        Wyrmstake_Damage_2_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Damage_2));
+                        if (Wyrmstake_Tick_Raw_Damage_2_raw == value) return;
+                        Wyrmstake_Tick_Raw_Damage_2_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Tick_Raw_Damage_2));
                     }
                 }
 
-                protected float Wyrmstake_Damage_3_raw;
-                public const string Wyrmstake_Damage_3_displayName = "Wyrmstake Damage 3";
-                public const int Wyrmstake_Damage_3_sortIndex = 150;
-                [SortOrder(Wyrmstake_Damage_3_sortIndex)]
-                [DisplayName(Wyrmstake_Damage_3_displayName)]
-                public virtual float Wyrmstake_Damage_3 {
-                    get => Wyrmstake_Damage_3_raw;
+                protected float Wyrmstake_Tick_Raw_Damage_3_raw;
+                public const string Wyrmstake_Tick_Raw_Damage_3_displayName = "Wyrmstake Tick Raw Damage 3";
+                public const int Wyrmstake_Tick_Raw_Damage_3_sortIndex = 150;
+                [SortOrder(Wyrmstake_Tick_Raw_Damage_3_sortIndex)]
+                [DisplayName(Wyrmstake_Tick_Raw_Damage_3_displayName)]
+                public virtual float Wyrmstake_Tick_Raw_Damage_3 {
+                    get => Wyrmstake_Tick_Raw_Damage_3_raw;
                     set {
-                        if (Wyrmstake_Damage_3_raw == value) return;
-                        Wyrmstake_Damage_3_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Damage_3));
+                        if (Wyrmstake_Tick_Raw_Damage_3_raw == value) return;
+                        Wyrmstake_Tick_Raw_Damage_3_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Tick_Raw_Damage_3));
                     }
                 }
 
-                protected float Wyrmstake_Damage_4_raw;
-                public const string Wyrmstake_Damage_4_displayName = "Wyrmstake Damage 4";
-                public const int Wyrmstake_Damage_4_sortIndex = 200;
-                [SortOrder(Wyrmstake_Damage_4_sortIndex)]
-                [DisplayName(Wyrmstake_Damage_4_displayName)]
-                public virtual float Wyrmstake_Damage_4 {
-                    get => Wyrmstake_Damage_4_raw;
+                protected float Wyrmstake_Tick_Raw_Damage_4_raw;
+                public const string Wyrmstake_Tick_Raw_Damage_4_displayName = "Wyrmstake Tick Raw Damage 4";
+                public const int Wyrmstake_Tick_Raw_Damage_4_sortIndex = 200;
+                [SortOrder(Wyrmstake_Tick_Raw_Damage_4_sortIndex)]
+                [DisplayName(Wyrmstake_Tick_Raw_Damage_4_displayName)]
+                public virtual float Wyrmstake_Tick_Raw_Damage_4 {
+                    get => Wyrmstake_Tick_Raw_Damage_4_raw;
                     set {
-                        if (Wyrmstake_Damage_4_raw == value) return;
-                        Wyrmstake_Damage_4_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Damage_4));
+                        if (Wyrmstake_Tick_Raw_Damage_4_raw == value) return;
+                        Wyrmstake_Tick_Raw_Damage_4_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Tick_Raw_Damage_4));
                     }
                 }
 
-                protected float Wyrmstake_Damage_5_raw;
-                public const string Wyrmstake_Damage_5_displayName = "Wyrmstake Damage 5";
-                public const int Wyrmstake_Damage_5_sortIndex = 250;
-                [SortOrder(Wyrmstake_Damage_5_sortIndex)]
-                [DisplayName(Wyrmstake_Damage_5_displayName)]
-                public virtual float Wyrmstake_Damage_5 {
-                    get => Wyrmstake_Damage_5_raw;
+                protected float Wyrmstake_Tick_Raw_Damage_5_raw;
+                public const string Wyrmstake_Tick_Raw_Damage_5_displayName = "Wyrmstake Tick Raw Damage 5";
+                public const int Wyrmstake_Tick_Raw_Damage_5_sortIndex = 250;
+                [SortOrder(Wyrmstake_Tick_Raw_Damage_5_sortIndex)]
+                [DisplayName(Wyrmstake_Tick_Raw_Damage_5_displayName)]
+                public virtual float Wyrmstake_Tick_Raw_Damage_5 {
+                    get => Wyrmstake_Tick_Raw_Damage_5_raw;
                     set {
-                        if (Wyrmstake_Damage_5_raw == value) return;
-                        Wyrmstake_Damage_5_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Damage_5));
+                        if (Wyrmstake_Tick_Raw_Damage_5_raw == value) return;
+                        Wyrmstake_Tick_Raw_Damage_5_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Tick_Raw_Damage_5));
                     }
                 }
 
-                protected float Wyrmstake_Damage_6_raw;
-                public const string Wyrmstake_Damage_6_displayName = "Wyrmstake Damage 6";
-                public const int Wyrmstake_Damage_6_sortIndex = 300;
-                [SortOrder(Wyrmstake_Damage_6_sortIndex)]
-                [DisplayName(Wyrmstake_Damage_6_displayName)]
-                public virtual float Wyrmstake_Damage_6 {
-                    get => Wyrmstake_Damage_6_raw;
+                protected float Wyrmstake_Tick_Raw_Damage_6_raw;
+                public const string Wyrmstake_Tick_Raw_Damage_6_displayName = "Wyrmstake Tick Raw Damage 6";
+                public const int Wyrmstake_Tick_Raw_Damage_6_sortIndex = 300;
+                [SortOrder(Wyrmstake_Tick_Raw_Damage_6_sortIndex)]
+                [DisplayName(Wyrmstake_Tick_Raw_Damage_6_displayName)]
+                public virtual float Wyrmstake_Tick_Raw_Damage_6 {
+                    get => Wyrmstake_Tick_Raw_Damage_6_raw;
                     set {
-                        if (Wyrmstake_Damage_6_raw == value) return;
-                        Wyrmstake_Damage_6_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Damage_6));
+                        if (Wyrmstake_Tick_Raw_Damage_6_raw == value) return;
+                        Wyrmstake_Tick_Raw_Damage_6_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Tick_Raw_Damage_6));
                     }
                 }
 
-                protected float Wyrmstake_Damage_7_raw;
-                public const string Wyrmstake_Damage_7_displayName = "Wyrmstake Damage 7";
-                public const int Wyrmstake_Damage_7_sortIndex = 350;
-                [SortOrder(Wyrmstake_Damage_7_sortIndex)]
-                [DisplayName(Wyrmstake_Damage_7_displayName)]
-                public virtual float Wyrmstake_Damage_7 {
-                    get => Wyrmstake_Damage_7_raw;
+                protected float Wyrmstake_Tick_Raw_Damage_7_raw;
+                public const string Wyrmstake_Tick_Raw_Damage_7_displayName = "Wyrmstake Tick Raw Damage 7";
+                public const int Wyrmstake_Tick_Raw_Damage_7_sortIndex = 350;
+                [SortOrder(Wyrmstake_Tick_Raw_Damage_7_sortIndex)]
+                [DisplayName(Wyrmstake_Tick_Raw_Damage_7_displayName)]
+                public virtual float Wyrmstake_Tick_Raw_Damage_7 {
+                    get => Wyrmstake_Tick_Raw_Damage_7_raw;
                     set {
-                        if (Wyrmstake_Damage_7_raw == value) return;
-                        Wyrmstake_Damage_7_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Damage_7));
+                        if (Wyrmstake_Tick_Raw_Damage_7_raw == value) return;
+                        Wyrmstake_Tick_Raw_Damage_7_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Tick_Raw_Damage_7));
                     }
                 }
 
-                public static ObservableCollection<Wyrmstake_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
-                    var list = new ObservableCollection<Wyrmstake_Damage>();
+                public static ObservableCollection<Wyrmstake_Tick_Raw_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
+                    var list = new ObservableCollection<Wyrmstake_Tick_Raw_Damage>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -3316,152 +3316,152 @@ namespace MHW_Editor.Weapons {
                     return list;
                 }
 
-                public static Wyrmstake_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
-                    var data = new Wyrmstake_Damage();
+                public static Wyrmstake_Tick_Raw_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
+                    var data = new Wyrmstake_Tick_Raw_Damage();
                     data.Index = i;
-                    data.Wyrmstake_Damage_1_raw = reader.ReadSingle();
-                    data.Wyrmstake_Damage_2_raw = reader.ReadSingle();
-                    data.Wyrmstake_Damage_3_raw = reader.ReadSingle();
-                    data.Wyrmstake_Damage_4_raw = reader.ReadSingle();
-                    data.Wyrmstake_Damage_5_raw = reader.ReadSingle();
-                    data.Wyrmstake_Damage_6_raw = reader.ReadSingle();
-                    data.Wyrmstake_Damage_7_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_1_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_2_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_3_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_4_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_5_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_6_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_7_raw = reader.ReadSingle();
                     return data;
                 }
 
                 public void WriteData(BinaryWriter writer, Shell_Ammo_Params parent) {
-                    writer.Write(Wyrmstake_Damage_1_raw);
-                    writer.Write(Wyrmstake_Damage_2_raw);
-                    writer.Write(Wyrmstake_Damage_3_raw);
-                    writer.Write(Wyrmstake_Damage_4_raw);
-                    writer.Write(Wyrmstake_Damage_5_raw);
-                    writer.Write(Wyrmstake_Damage_6_raw);
-                    writer.Write(Wyrmstake_Damage_7_raw);
+                    writer.Write(Wyrmstake_Tick_Raw_Damage_1_raw);
+                    writer.Write(Wyrmstake_Tick_Raw_Damage_2_raw);
+                    writer.Write(Wyrmstake_Tick_Raw_Damage_3_raw);
+                    writer.Write(Wyrmstake_Tick_Raw_Damage_4_raw);
+                    writer.Write(Wyrmstake_Tick_Raw_Damage_5_raw);
+                    writer.Write(Wyrmstake_Tick_Raw_Damage_6_raw);
+                    writer.Write(Wyrmstake_Tick_Raw_Damage_7_raw);
                 }
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Wyrmstake Damage 1", "Wyrmstake_Damage_1"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Damage 2", "Wyrmstake_Damage_2"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Damage 3", "Wyrmstake_Damage_3"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Damage 4", "Wyrmstake_Damage_4"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Damage 5", "Wyrmstake_Damage_5"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Damage 6", "Wyrmstake_Damage_6"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Damage 7", "Wyrmstake_Damage_7"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 1", "Wyrmstake_Tick_Raw_Damage_1"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 2", "Wyrmstake_Tick_Raw_Damage_2"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 3", "Wyrmstake_Tick_Raw_Damage_3"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 4", "Wyrmstake_Tick_Raw_Damage_4"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 5", "Wyrmstake_Tick_Raw_Damage_5"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 6", "Wyrmstake_Tick_Raw_Damage_6"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 7", "Wyrmstake_Tick_Raw_Damage_7"),
                     };
                 }
             }
 
-            public const string Wyrmstake_Damage_displayName = "Wyrmstake Damage";
-            public const int Wyrmstake_Damage_sortIndex = 400;
-            [SortOrder(Wyrmstake_Damage_sortIndex)]
-            [DisplayName(Wyrmstake_Damage_displayName)]
-            public virtual ObservableCollection<Wyrmstake_Damage> Wyrmstake_Damage_raw { get; protected set; }
+            public const string Wyrmstake_Tick_Raw_Damage_displayName = "Wyrmstake Tick Raw Damage";
+            public const int Wyrmstake_Tick_Raw_Damage_sortIndex = 400;
+            [SortOrder(Wyrmstake_Tick_Raw_Damage_sortIndex)]
+            [DisplayName(Wyrmstake_Tick_Raw_Damage_displayName)]
+            public virtual ObservableCollection<Wyrmstake_Tick_Raw_Damage> Wyrmstake_Tick_Raw_Damage_raw { get; protected set; }
 
-            public partial class Wyrmstake_Blast_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Wyrmstake_Fixed_Blast_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
                 public const ulong FixedSizeCount = 1;
-                public const string GridName = "Wyrmstake Blast Damage";
+                public const string GridName = "Wyrmstake Fixed Blast Damage";
 
-                protected float Wyrmstake_Blast_Damage_1_raw;
-                public const string Wyrmstake_Blast_Damage_1_displayName = "Wyrmstake Blast Damage 1";
-                public const int Wyrmstake_Blast_Damage_1_sortIndex = 50;
-                [SortOrder(Wyrmstake_Blast_Damage_1_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Damage_1_displayName)]
-                public virtual float Wyrmstake_Blast_Damage_1 {
-                    get => Wyrmstake_Blast_Damage_1_raw;
+                protected float Wyrmstake_Fixed_Blast_Damage_1_raw;
+                public const string Wyrmstake_Fixed_Blast_Damage_1_displayName = "Wyrmstake Fixed Blast Damage 1";
+                public const int Wyrmstake_Fixed_Blast_Damage_1_sortIndex = 50;
+                [SortOrder(Wyrmstake_Fixed_Blast_Damage_1_sortIndex)]
+                [DisplayName(Wyrmstake_Fixed_Blast_Damage_1_displayName)]
+                public virtual float Wyrmstake_Fixed_Blast_Damage_1 {
+                    get => Wyrmstake_Fixed_Blast_Damage_1_raw;
                     set {
-                        if (Wyrmstake_Blast_Damage_1_raw == value) return;
-                        Wyrmstake_Blast_Damage_1_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Damage_1));
+                        if (Wyrmstake_Fixed_Blast_Damage_1_raw == value) return;
+                        Wyrmstake_Fixed_Blast_Damage_1_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fixed_Blast_Damage_1));
                     }
                 }
 
-                protected float Wyrmstake_Blast_Damage_2_raw;
-                public const string Wyrmstake_Blast_Damage_2_displayName = "Wyrmstake Blast Damage 2";
-                public const int Wyrmstake_Blast_Damage_2_sortIndex = 100;
-                [SortOrder(Wyrmstake_Blast_Damage_2_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Damage_2_displayName)]
-                public virtual float Wyrmstake_Blast_Damage_2 {
-                    get => Wyrmstake_Blast_Damage_2_raw;
+                protected float Wyrmstake_Fixed_Blast_Damage_2_raw;
+                public const string Wyrmstake_Fixed_Blast_Damage_2_displayName = "Wyrmstake Fixed Blast Damage 2";
+                public const int Wyrmstake_Fixed_Blast_Damage_2_sortIndex = 100;
+                [SortOrder(Wyrmstake_Fixed_Blast_Damage_2_sortIndex)]
+                [DisplayName(Wyrmstake_Fixed_Blast_Damage_2_displayName)]
+                public virtual float Wyrmstake_Fixed_Blast_Damage_2 {
+                    get => Wyrmstake_Fixed_Blast_Damage_2_raw;
                     set {
-                        if (Wyrmstake_Blast_Damage_2_raw == value) return;
-                        Wyrmstake_Blast_Damage_2_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Damage_2));
+                        if (Wyrmstake_Fixed_Blast_Damage_2_raw == value) return;
+                        Wyrmstake_Fixed_Blast_Damage_2_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fixed_Blast_Damage_2));
                     }
                 }
 
-                protected float Wyrmstake_Blast_Damage_3_raw;
-                public const string Wyrmstake_Blast_Damage_3_displayName = "Wyrmstake Blast Damage 3";
-                public const int Wyrmstake_Blast_Damage_3_sortIndex = 150;
-                [SortOrder(Wyrmstake_Blast_Damage_3_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Damage_3_displayName)]
-                public virtual float Wyrmstake_Blast_Damage_3 {
-                    get => Wyrmstake_Blast_Damage_3_raw;
+                protected float Wyrmstake_Fixed_Blast_Damage_3_raw;
+                public const string Wyrmstake_Fixed_Blast_Damage_3_displayName = "Wyrmstake Fixed Blast Damage 3";
+                public const int Wyrmstake_Fixed_Blast_Damage_3_sortIndex = 150;
+                [SortOrder(Wyrmstake_Fixed_Blast_Damage_3_sortIndex)]
+                [DisplayName(Wyrmstake_Fixed_Blast_Damage_3_displayName)]
+                public virtual float Wyrmstake_Fixed_Blast_Damage_3 {
+                    get => Wyrmstake_Fixed_Blast_Damage_3_raw;
                     set {
-                        if (Wyrmstake_Blast_Damage_3_raw == value) return;
-                        Wyrmstake_Blast_Damage_3_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Damage_3));
+                        if (Wyrmstake_Fixed_Blast_Damage_3_raw == value) return;
+                        Wyrmstake_Fixed_Blast_Damage_3_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fixed_Blast_Damage_3));
                     }
                 }
 
-                protected float Wyrmstake_Blast_Damage_4_raw;
-                public const string Wyrmstake_Blast_Damage_4_displayName = "Wyrmstake Blast Damage 4";
-                public const int Wyrmstake_Blast_Damage_4_sortIndex = 200;
-                [SortOrder(Wyrmstake_Blast_Damage_4_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Damage_4_displayName)]
-                public virtual float Wyrmstake_Blast_Damage_4 {
-                    get => Wyrmstake_Blast_Damage_4_raw;
+                protected float Wyrmstake_Fixed_Blast_Damage_4_raw;
+                public const string Wyrmstake_Fixed_Blast_Damage_4_displayName = "Wyrmstake Fixed Blast Damage 4";
+                public const int Wyrmstake_Fixed_Blast_Damage_4_sortIndex = 200;
+                [SortOrder(Wyrmstake_Fixed_Blast_Damage_4_sortIndex)]
+                [DisplayName(Wyrmstake_Fixed_Blast_Damage_4_displayName)]
+                public virtual float Wyrmstake_Fixed_Blast_Damage_4 {
+                    get => Wyrmstake_Fixed_Blast_Damage_4_raw;
                     set {
-                        if (Wyrmstake_Blast_Damage_4_raw == value) return;
-                        Wyrmstake_Blast_Damage_4_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Damage_4));
+                        if (Wyrmstake_Fixed_Blast_Damage_4_raw == value) return;
+                        Wyrmstake_Fixed_Blast_Damage_4_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fixed_Blast_Damage_4));
                     }
                 }
 
-                protected float Wyrmstake_Blast_Damage_5_raw;
-                public const string Wyrmstake_Blast_Damage_5_displayName = "Wyrmstake Blast Damage 5";
-                public const int Wyrmstake_Blast_Damage_5_sortIndex = 250;
-                [SortOrder(Wyrmstake_Blast_Damage_5_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Damage_5_displayName)]
-                public virtual float Wyrmstake_Blast_Damage_5 {
-                    get => Wyrmstake_Blast_Damage_5_raw;
+                protected float Wyrmstake_Fixed_Blast_Damage_5_raw;
+                public const string Wyrmstake_Fixed_Blast_Damage_5_displayName = "Wyrmstake Fixed Blast Damage 5";
+                public const int Wyrmstake_Fixed_Blast_Damage_5_sortIndex = 250;
+                [SortOrder(Wyrmstake_Fixed_Blast_Damage_5_sortIndex)]
+                [DisplayName(Wyrmstake_Fixed_Blast_Damage_5_displayName)]
+                public virtual float Wyrmstake_Fixed_Blast_Damage_5 {
+                    get => Wyrmstake_Fixed_Blast_Damage_5_raw;
                     set {
-                        if (Wyrmstake_Blast_Damage_5_raw == value) return;
-                        Wyrmstake_Blast_Damage_5_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Damage_5));
+                        if (Wyrmstake_Fixed_Blast_Damage_5_raw == value) return;
+                        Wyrmstake_Fixed_Blast_Damage_5_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fixed_Blast_Damage_5));
                     }
                 }
 
-                protected float Wyrmstake_Blast_Damage_6_raw;
-                public const string Wyrmstake_Blast_Damage_6_displayName = "Wyrmstake Blast Damage 6";
-                public const int Wyrmstake_Blast_Damage_6_sortIndex = 300;
-                [SortOrder(Wyrmstake_Blast_Damage_6_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Damage_6_displayName)]
-                public virtual float Wyrmstake_Blast_Damage_6 {
-                    get => Wyrmstake_Blast_Damage_6_raw;
+                protected float Wyrmstake_Fixed_Blast_Damage_6_raw;
+                public const string Wyrmstake_Fixed_Blast_Damage_6_displayName = "Wyrmstake Fixed Blast Damage 6";
+                public const int Wyrmstake_Fixed_Blast_Damage_6_sortIndex = 300;
+                [SortOrder(Wyrmstake_Fixed_Blast_Damage_6_sortIndex)]
+                [DisplayName(Wyrmstake_Fixed_Blast_Damage_6_displayName)]
+                public virtual float Wyrmstake_Fixed_Blast_Damage_6 {
+                    get => Wyrmstake_Fixed_Blast_Damage_6_raw;
                     set {
-                        if (Wyrmstake_Blast_Damage_6_raw == value) return;
-                        Wyrmstake_Blast_Damage_6_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Damage_6));
+                        if (Wyrmstake_Fixed_Blast_Damage_6_raw == value) return;
+                        Wyrmstake_Fixed_Blast_Damage_6_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fixed_Blast_Damage_6));
                     }
                 }
 
-                protected float Wyrmstake_Blast_Damage_7_raw;
-                public const string Wyrmstake_Blast_Damage_7_displayName = "Wyrmstake Blast Damage 7";
-                public const int Wyrmstake_Blast_Damage_7_sortIndex = 350;
-                [SortOrder(Wyrmstake_Blast_Damage_7_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Damage_7_displayName)]
-                public virtual float Wyrmstake_Blast_Damage_7 {
-                    get => Wyrmstake_Blast_Damage_7_raw;
+                protected float Wyrmstake_Fixed_Blast_Damage_7_raw;
+                public const string Wyrmstake_Fixed_Blast_Damage_7_displayName = "Wyrmstake Fixed Blast Damage 7";
+                public const int Wyrmstake_Fixed_Blast_Damage_7_sortIndex = 350;
+                [SortOrder(Wyrmstake_Fixed_Blast_Damage_7_sortIndex)]
+                [DisplayName(Wyrmstake_Fixed_Blast_Damage_7_displayName)]
+                public virtual float Wyrmstake_Fixed_Blast_Damage_7 {
+                    get => Wyrmstake_Fixed_Blast_Damage_7_raw;
                     set {
-                        if (Wyrmstake_Blast_Damage_7_raw == value) return;
-                        Wyrmstake_Blast_Damage_7_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Damage_7));
+                        if (Wyrmstake_Fixed_Blast_Damage_7_raw == value) return;
+                        Wyrmstake_Fixed_Blast_Damage_7_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fixed_Blast_Damage_7));
                     }
                 }
 
-                public static ObservableCollection<Wyrmstake_Blast_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
-                    var list = new ObservableCollection<Wyrmstake_Blast_Damage>();
+                public static ObservableCollection<Wyrmstake_Fixed_Blast_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
+                    var list = new ObservableCollection<Wyrmstake_Fixed_Blast_Damage>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -3469,152 +3469,152 @@ namespace MHW_Editor.Weapons {
                     return list;
                 }
 
-                public static Wyrmstake_Blast_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
-                    var data = new Wyrmstake_Blast_Damage();
+                public static Wyrmstake_Fixed_Blast_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
+                    var data = new Wyrmstake_Fixed_Blast_Damage();
                     data.Index = i;
-                    data.Wyrmstake_Blast_Damage_1_raw = reader.ReadSingle();
-                    data.Wyrmstake_Blast_Damage_2_raw = reader.ReadSingle();
-                    data.Wyrmstake_Blast_Damage_3_raw = reader.ReadSingle();
-                    data.Wyrmstake_Blast_Damage_4_raw = reader.ReadSingle();
-                    data.Wyrmstake_Blast_Damage_5_raw = reader.ReadSingle();
-                    data.Wyrmstake_Blast_Damage_6_raw = reader.ReadSingle();
-                    data.Wyrmstake_Blast_Damage_7_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_1_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_2_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_3_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_4_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_5_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_6_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_7_raw = reader.ReadSingle();
                     return data;
                 }
 
                 public void WriteData(BinaryWriter writer, Shell_Ammo_Params parent) {
-                    writer.Write(Wyrmstake_Blast_Damage_1_raw);
-                    writer.Write(Wyrmstake_Blast_Damage_2_raw);
-                    writer.Write(Wyrmstake_Blast_Damage_3_raw);
-                    writer.Write(Wyrmstake_Blast_Damage_4_raw);
-                    writer.Write(Wyrmstake_Blast_Damage_5_raw);
-                    writer.Write(Wyrmstake_Blast_Damage_6_raw);
-                    writer.Write(Wyrmstake_Blast_Damage_7_raw);
+                    writer.Write(Wyrmstake_Fixed_Blast_Damage_1_raw);
+                    writer.Write(Wyrmstake_Fixed_Blast_Damage_2_raw);
+                    writer.Write(Wyrmstake_Fixed_Blast_Damage_3_raw);
+                    writer.Write(Wyrmstake_Fixed_Blast_Damage_4_raw);
+                    writer.Write(Wyrmstake_Fixed_Blast_Damage_5_raw);
+                    writer.Write(Wyrmstake_Fixed_Blast_Damage_6_raw);
+                    writer.Write(Wyrmstake_Fixed_Blast_Damage_7_raw);
                 }
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Damage 1", "Wyrmstake_Blast_Damage_1"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Damage 2", "Wyrmstake_Blast_Damage_2"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Damage 3", "Wyrmstake_Blast_Damage_3"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Damage 4", "Wyrmstake_Blast_Damage_4"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Damage 5", "Wyrmstake_Blast_Damage_5"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Damage 6", "Wyrmstake_Blast_Damage_6"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Damage 7", "Wyrmstake_Blast_Damage_7"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 1", "Wyrmstake_Fixed_Blast_Damage_1"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 2", "Wyrmstake_Fixed_Blast_Damage_2"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 3", "Wyrmstake_Fixed_Blast_Damage_3"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 4", "Wyrmstake_Fixed_Blast_Damage_4"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 5", "Wyrmstake_Fixed_Blast_Damage_5"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 6", "Wyrmstake_Fixed_Blast_Damage_6"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 7", "Wyrmstake_Fixed_Blast_Damage_7"),
                     };
                 }
             }
 
-            public const string Wyrmstake_Blast_Damage_displayName = "Wyrmstake Blast Damage";
-            public const int Wyrmstake_Blast_Damage_sortIndex = 450;
-            [SortOrder(Wyrmstake_Blast_Damage_sortIndex)]
-            [DisplayName(Wyrmstake_Blast_Damage_displayName)]
-            public virtual ObservableCollection<Wyrmstake_Blast_Damage> Wyrmstake_Blast_Damage_raw { get; protected set; }
+            public const string Wyrmstake_Fixed_Blast_Damage_displayName = "Wyrmstake Fixed Blast Damage";
+            public const int Wyrmstake_Fixed_Blast_Damage_sortIndex = 450;
+            [SortOrder(Wyrmstake_Fixed_Blast_Damage_sortIndex)]
+            [DisplayName(Wyrmstake_Fixed_Blast_Damage_displayName)]
+            public virtual ObservableCollection<Wyrmstake_Fixed_Blast_Damage> Wyrmstake_Fixed_Blast_Damage_raw { get; protected set; }
 
-            public partial class Wyrmstake_Blast_Fire_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Wyrmstake_Fire_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
                 public const ulong FixedSizeCount = 1;
-                public const string GridName = "Wyrmstake Blast Fire Damage";
+                public const string GridName = "Wyrmstake Fire Damage";
 
-                protected float Wyrmstake_Blast_Fire_Damage_1_raw;
-                public const string Wyrmstake_Blast_Fire_Damage_1_displayName = "Wyrmstake Blast Fire Damage 1";
-                public const int Wyrmstake_Blast_Fire_Damage_1_sortIndex = 50;
-                [SortOrder(Wyrmstake_Blast_Fire_Damage_1_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Fire_Damage_1_displayName)]
-                public virtual float Wyrmstake_Blast_Fire_Damage_1 {
-                    get => Wyrmstake_Blast_Fire_Damage_1_raw;
+                protected float Wyrmstake_Fire_Damage_1_raw;
+                public const string Wyrmstake_Fire_Damage_1_displayName = "Wyrmstake Fire Damage 1";
+                public const int Wyrmstake_Fire_Damage_1_sortIndex = 50;
+                [SortOrder(Wyrmstake_Fire_Damage_1_sortIndex)]
+                [DisplayName(Wyrmstake_Fire_Damage_1_displayName)]
+                public virtual float Wyrmstake_Fire_Damage_1 {
+                    get => Wyrmstake_Fire_Damage_1_raw;
                     set {
-                        if (Wyrmstake_Blast_Fire_Damage_1_raw == value) return;
-                        Wyrmstake_Blast_Fire_Damage_1_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Fire_Damage_1));
+                        if (Wyrmstake_Fire_Damage_1_raw == value) return;
+                        Wyrmstake_Fire_Damage_1_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fire_Damage_1));
                     }
                 }
 
-                protected float Wyrmstake_Blast_Fire_Damage_2_raw;
-                public const string Wyrmstake_Blast_Fire_Damage_2_displayName = "Wyrmstake Blast Fire Damage 2";
-                public const int Wyrmstake_Blast_Fire_Damage_2_sortIndex = 100;
-                [SortOrder(Wyrmstake_Blast_Fire_Damage_2_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Fire_Damage_2_displayName)]
-                public virtual float Wyrmstake_Blast_Fire_Damage_2 {
-                    get => Wyrmstake_Blast_Fire_Damage_2_raw;
+                protected float Wyrmstake_Fire_Damage_2_raw;
+                public const string Wyrmstake_Fire_Damage_2_displayName = "Wyrmstake Fire Damage 2";
+                public const int Wyrmstake_Fire_Damage_2_sortIndex = 100;
+                [SortOrder(Wyrmstake_Fire_Damage_2_sortIndex)]
+                [DisplayName(Wyrmstake_Fire_Damage_2_displayName)]
+                public virtual float Wyrmstake_Fire_Damage_2 {
+                    get => Wyrmstake_Fire_Damage_2_raw;
                     set {
-                        if (Wyrmstake_Blast_Fire_Damage_2_raw == value) return;
-                        Wyrmstake_Blast_Fire_Damage_2_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Fire_Damage_2));
+                        if (Wyrmstake_Fire_Damage_2_raw == value) return;
+                        Wyrmstake_Fire_Damage_2_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fire_Damage_2));
                     }
                 }
 
-                protected float Wyrmstake_Blast_Fire_Damage_3_raw;
-                public const string Wyrmstake_Blast_Fire_Damage_3_displayName = "Wyrmstake Blast Fire Damage 3";
-                public const int Wyrmstake_Blast_Fire_Damage_3_sortIndex = 150;
-                [SortOrder(Wyrmstake_Blast_Fire_Damage_3_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Fire_Damage_3_displayName)]
-                public virtual float Wyrmstake_Blast_Fire_Damage_3 {
-                    get => Wyrmstake_Blast_Fire_Damage_3_raw;
+                protected float Wyrmstake_Fire_Damage_3_raw;
+                public const string Wyrmstake_Fire_Damage_3_displayName = "Wyrmstake Fire Damage 3";
+                public const int Wyrmstake_Fire_Damage_3_sortIndex = 150;
+                [SortOrder(Wyrmstake_Fire_Damage_3_sortIndex)]
+                [DisplayName(Wyrmstake_Fire_Damage_3_displayName)]
+                public virtual float Wyrmstake_Fire_Damage_3 {
+                    get => Wyrmstake_Fire_Damage_3_raw;
                     set {
-                        if (Wyrmstake_Blast_Fire_Damage_3_raw == value) return;
-                        Wyrmstake_Blast_Fire_Damage_3_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Fire_Damage_3));
+                        if (Wyrmstake_Fire_Damage_3_raw == value) return;
+                        Wyrmstake_Fire_Damage_3_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fire_Damage_3));
                     }
                 }
 
-                protected float Wyrmstake_Blast_Fire_Damage_4_raw;
-                public const string Wyrmstake_Blast_Fire_Damage_4_displayName = "Wyrmstake Blast Fire Damage 4";
-                public const int Wyrmstake_Blast_Fire_Damage_4_sortIndex = 200;
-                [SortOrder(Wyrmstake_Blast_Fire_Damage_4_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Fire_Damage_4_displayName)]
-                public virtual float Wyrmstake_Blast_Fire_Damage_4 {
-                    get => Wyrmstake_Blast_Fire_Damage_4_raw;
+                protected float Wyrmstake_Fire_Damage_4_raw;
+                public const string Wyrmstake_Fire_Damage_4_displayName = "Wyrmstake Fire Damage 4";
+                public const int Wyrmstake_Fire_Damage_4_sortIndex = 200;
+                [SortOrder(Wyrmstake_Fire_Damage_4_sortIndex)]
+                [DisplayName(Wyrmstake_Fire_Damage_4_displayName)]
+                public virtual float Wyrmstake_Fire_Damage_4 {
+                    get => Wyrmstake_Fire_Damage_4_raw;
                     set {
-                        if (Wyrmstake_Blast_Fire_Damage_4_raw == value) return;
-                        Wyrmstake_Blast_Fire_Damage_4_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Fire_Damage_4));
+                        if (Wyrmstake_Fire_Damage_4_raw == value) return;
+                        Wyrmstake_Fire_Damage_4_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fire_Damage_4));
                     }
                 }
 
-                protected float Wyrmstake_Blast_Fire_Damage_5_raw;
-                public const string Wyrmstake_Blast_Fire_Damage_5_displayName = "Wyrmstake Blast Fire Damage 5";
-                public const int Wyrmstake_Blast_Fire_Damage_5_sortIndex = 250;
-                [SortOrder(Wyrmstake_Blast_Fire_Damage_5_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Fire_Damage_5_displayName)]
-                public virtual float Wyrmstake_Blast_Fire_Damage_5 {
-                    get => Wyrmstake_Blast_Fire_Damage_5_raw;
+                protected float Wyrmstake_Fire_Damage_5_raw;
+                public const string Wyrmstake_Fire_Damage_5_displayName = "Wyrmstake Fire Damage 5";
+                public const int Wyrmstake_Fire_Damage_5_sortIndex = 250;
+                [SortOrder(Wyrmstake_Fire_Damage_5_sortIndex)]
+                [DisplayName(Wyrmstake_Fire_Damage_5_displayName)]
+                public virtual float Wyrmstake_Fire_Damage_5 {
+                    get => Wyrmstake_Fire_Damage_5_raw;
                     set {
-                        if (Wyrmstake_Blast_Fire_Damage_5_raw == value) return;
-                        Wyrmstake_Blast_Fire_Damage_5_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Fire_Damage_5));
+                        if (Wyrmstake_Fire_Damage_5_raw == value) return;
+                        Wyrmstake_Fire_Damage_5_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fire_Damage_5));
                     }
                 }
 
-                protected float Wyrmstake_Blast_Fire_Damage_6_raw;
-                public const string Wyrmstake_Blast_Fire_Damage_6_displayName = "Wyrmstake Blast Fire Damage 6";
-                public const int Wyrmstake_Blast_Fire_Damage_6_sortIndex = 300;
-                [SortOrder(Wyrmstake_Blast_Fire_Damage_6_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Fire_Damage_6_displayName)]
-                public virtual float Wyrmstake_Blast_Fire_Damage_6 {
-                    get => Wyrmstake_Blast_Fire_Damage_6_raw;
+                protected float Wyrmstake_Fire_Damage_6_raw;
+                public const string Wyrmstake_Fire_Damage_6_displayName = "Wyrmstake Fire Damage 6";
+                public const int Wyrmstake_Fire_Damage_6_sortIndex = 300;
+                [SortOrder(Wyrmstake_Fire_Damage_6_sortIndex)]
+                [DisplayName(Wyrmstake_Fire_Damage_6_displayName)]
+                public virtual float Wyrmstake_Fire_Damage_6 {
+                    get => Wyrmstake_Fire_Damage_6_raw;
                     set {
-                        if (Wyrmstake_Blast_Fire_Damage_6_raw == value) return;
-                        Wyrmstake_Blast_Fire_Damage_6_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Fire_Damage_6));
+                        if (Wyrmstake_Fire_Damage_6_raw == value) return;
+                        Wyrmstake_Fire_Damage_6_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fire_Damage_6));
                     }
                 }
 
-                protected float Wyrmstake_Blast_Fire_Damage_7_raw;
-                public const string Wyrmstake_Blast_Fire_Damage_7_displayName = "Wyrmstake Blast Fire Damage 7";
-                public const int Wyrmstake_Blast_Fire_Damage_7_sortIndex = 350;
-                [SortOrder(Wyrmstake_Blast_Fire_Damage_7_sortIndex)]
-                [DisplayName(Wyrmstake_Blast_Fire_Damage_7_displayName)]
-                public virtual float Wyrmstake_Blast_Fire_Damage_7 {
-                    get => Wyrmstake_Blast_Fire_Damage_7_raw;
+                protected float Wyrmstake_Fire_Damage_7_raw;
+                public const string Wyrmstake_Fire_Damage_7_displayName = "Wyrmstake Fire Damage 7";
+                public const int Wyrmstake_Fire_Damage_7_sortIndex = 350;
+                [SortOrder(Wyrmstake_Fire_Damage_7_sortIndex)]
+                [DisplayName(Wyrmstake_Fire_Damage_7_displayName)]
+                public virtual float Wyrmstake_Fire_Damage_7 {
+                    get => Wyrmstake_Fire_Damage_7_raw;
                     set {
-                        if (Wyrmstake_Blast_Fire_Damage_7_raw == value) return;
-                        Wyrmstake_Blast_Fire_Damage_7_raw = value;
-                        OnPropertyChanged(nameof(Wyrmstake_Blast_Fire_Damage_7));
+                        if (Wyrmstake_Fire_Damage_7_raw == value) return;
+                        Wyrmstake_Fire_Damage_7_raw = value;
+                        OnPropertyChanged(nameof(Wyrmstake_Fire_Damage_7));
                     }
                 }
 
-                public static ObservableCollection<Wyrmstake_Blast_Fire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
-                    var list = new ObservableCollection<Wyrmstake_Blast_Fire_Damage>();
+                public static ObservableCollection<Wyrmstake_Fire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
+                    var list = new ObservableCollection<Wyrmstake_Fire_Damage>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -3622,47 +3622,47 @@ namespace MHW_Editor.Weapons {
                     return list;
                 }
 
-                public static Wyrmstake_Blast_Fire_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
-                    var data = new Wyrmstake_Blast_Fire_Damage();
+                public static Wyrmstake_Fire_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
+                    var data = new Wyrmstake_Fire_Damage();
                     data.Index = i;
-                    data.Wyrmstake_Blast_Fire_Damage_1_raw = reader.ReadSingle();
-                    data.Wyrmstake_Blast_Fire_Damage_2_raw = reader.ReadSingle();
-                    data.Wyrmstake_Blast_Fire_Damage_3_raw = reader.ReadSingle();
-                    data.Wyrmstake_Blast_Fire_Damage_4_raw = reader.ReadSingle();
-                    data.Wyrmstake_Blast_Fire_Damage_5_raw = reader.ReadSingle();
-                    data.Wyrmstake_Blast_Fire_Damage_6_raw = reader.ReadSingle();
-                    data.Wyrmstake_Blast_Fire_Damage_7_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_1_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_2_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_3_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_4_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_5_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_6_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_7_raw = reader.ReadSingle();
                     return data;
                 }
 
                 public void WriteData(BinaryWriter writer, Shell_Ammo_Params parent) {
-                    writer.Write(Wyrmstake_Blast_Fire_Damage_1_raw);
-                    writer.Write(Wyrmstake_Blast_Fire_Damage_2_raw);
-                    writer.Write(Wyrmstake_Blast_Fire_Damage_3_raw);
-                    writer.Write(Wyrmstake_Blast_Fire_Damage_4_raw);
-                    writer.Write(Wyrmstake_Blast_Fire_Damage_5_raw);
-                    writer.Write(Wyrmstake_Blast_Fire_Damage_6_raw);
-                    writer.Write(Wyrmstake_Blast_Fire_Damage_7_raw);
+                    writer.Write(Wyrmstake_Fire_Damage_1_raw);
+                    writer.Write(Wyrmstake_Fire_Damage_2_raw);
+                    writer.Write(Wyrmstake_Fire_Damage_3_raw);
+                    writer.Write(Wyrmstake_Fire_Damage_4_raw);
+                    writer.Write(Wyrmstake_Fire_Damage_5_raw);
+                    writer.Write(Wyrmstake_Fire_Damage_6_raw);
+                    writer.Write(Wyrmstake_Fire_Damage_7_raw);
                 }
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Fire Damage 1", "Wyrmstake_Blast_Fire_Damage_1"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Fire Damage 2", "Wyrmstake_Blast_Fire_Damage_2"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Fire Damage 3", "Wyrmstake_Blast_Fire_Damage_3"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Fire Damage 4", "Wyrmstake_Blast_Fire_Damage_4"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Fire Damage 5", "Wyrmstake_Blast_Fire_Damage_5"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Fire Damage 6", "Wyrmstake_Blast_Fire_Damage_6"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Blast Fire Damage 7", "Wyrmstake_Blast_Fire_Damage_7"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 1", "Wyrmstake_Fire_Damage_1"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 2", "Wyrmstake_Fire_Damage_2"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 3", "Wyrmstake_Fire_Damage_3"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 4", "Wyrmstake_Fire_Damage_4"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 5", "Wyrmstake_Fire_Damage_5"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 6", "Wyrmstake_Fire_Damage_6"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 7", "Wyrmstake_Fire_Damage_7"),
                     };
                 }
             }
 
-            public const string Wyrmstake_Blast_Fire_Damage_displayName = "Wyrmstake Blast Fire Damage";
-            public const int Wyrmstake_Blast_Fire_Damage_sortIndex = 500;
-            [SortOrder(Wyrmstake_Blast_Fire_Damage_sortIndex)]
-            [DisplayName(Wyrmstake_Blast_Fire_Damage_displayName)]
-            public virtual ObservableCollection<Wyrmstake_Blast_Fire_Damage> Wyrmstake_Blast_Fire_Damage_raw { get; protected set; }
+            public const string Wyrmstake_Fire_Damage_displayName = "Wyrmstake Fire Damage";
+            public const int Wyrmstake_Fire_Damage_sortIndex = 500;
+            [SortOrder(Wyrmstake_Fire_Damage_sortIndex)]
+            [DisplayName(Wyrmstake_Fire_Damage_displayName)]
+            public virtual ObservableCollection<Wyrmstake_Fire_Damage> Wyrmstake_Fire_Damage_raw { get; protected set; }
 
             public partial class Wyrmstake_Add_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
                 public const ulong FixedSizeCount = 1;
@@ -3836,9 +3836,9 @@ namespace MHW_Editor.Weapons {
                 data.Shell_Unk_1_raw = reader.ReadSingle();
                 data.Wyvernfire_Damage_raw = Wyvernfire_Damage.LoadData(reader, data);
                 data.Wyvernfire_Fire_Damage_raw = Wyvernfire_Fire_Damage.LoadData(reader, data);
-                data.Wyrmstake_Damage_raw = Wyrmstake_Damage.LoadData(reader, data);
-                data.Wyrmstake_Blast_Damage_raw = Wyrmstake_Blast_Damage.LoadData(reader, data);
-                data.Wyrmstake_Blast_Fire_Damage_raw = Wyrmstake_Blast_Fire_Damage.LoadData(reader, data);
+                data.Wyrmstake_Tick_Raw_Damage_raw = Wyrmstake_Tick_Raw_Damage.LoadData(reader, data);
+                data.Wyrmstake_Fixed_Blast_Damage_raw = Wyrmstake_Fixed_Blast_Damage.LoadData(reader, data);
+                data.Wyrmstake_Fire_Damage_raw = Wyrmstake_Fire_Damage.LoadData(reader, data);
                 data.Wyrmstake_Add_Damage_raw = Wyrmstake_Add_Damage.LoadData(reader, data);
                 return data;
             }
@@ -3859,13 +3859,13 @@ namespace MHW_Editor.Weapons {
                 foreach (var obj in Wyvernfire_Fire_Damage_raw) {
                     obj.WriteData(writer, this);
                 }
-                foreach (var obj in Wyrmstake_Damage_raw) {
+                foreach (var obj in Wyrmstake_Tick_Raw_Damage_raw) {
                     obj.WriteData(writer, this);
                 }
-                foreach (var obj in Wyrmstake_Blast_Damage_raw) {
+                foreach (var obj in Wyrmstake_Fixed_Blast_Damage_raw) {
                     obj.WriteData(writer, this);
                 }
-                foreach (var obj in Wyrmstake_Blast_Fire_Damage_raw) {
+                foreach (var obj in Wyrmstake_Fire_Damage_raw) {
                     obj.WriteData(writer, this);
                 }
                 foreach (var obj in Wyrmstake_Add_Damage_raw) {
@@ -3919,77 +3919,77 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public partial class Unk_Arr_3 : MhwStructItem {
+        public partial class Shelling_Sharpness_Usage : MhwStructItem {
             public const ulong FixedSizeCount = 3;
-            public const string GridName = "Unk Arr 3";
+            public const string GridName = "Shelling Sharpness Usage";
 
-            protected uint Unk_1_raw;
-            public const string Unk_1_displayName = "Unk 1";
-            public const int Unk_1_sortIndex = 50;
-            [SortOrder(Unk_1_sortIndex)]
-            [DisplayName(Unk_1_displayName)]
-            public virtual uint Unk_1 {
-                get => Unk_1_raw;
+            protected uint Shell_raw;
+            public const string Shell_displayName = "Shell";
+            public const int Shell_sortIndex = 50;
+            [SortOrder(Shell_sortIndex)]
+            [DisplayName(Shell_displayName)]
+            public virtual uint Shell {
+                get => Shell_raw;
                 set {
-                    if (Unk_1_raw == value) return;
-                    Unk_1_raw = value;
-                    OnPropertyChanged(nameof(Unk_1));
+                    if (Shell_raw == value) return;
+                    Shell_raw = value;
+                    OnPropertyChanged(nameof(Shell));
                 }
             }
 
-            protected uint Unk_2_raw;
-            public const string Unk_2_displayName = "Unk 2";
-            public const int Unk_2_sortIndex = 100;
-            [SortOrder(Unk_2_sortIndex)]
-            [DisplayName(Unk_2_displayName)]
-            public virtual uint Unk_2 {
-                get => Unk_2_raw;
+            protected uint Charged_Shell_raw;
+            public const string Charged_Shell_displayName = "Charged Shell";
+            public const int Charged_Shell_sortIndex = 100;
+            [SortOrder(Charged_Shell_sortIndex)]
+            [DisplayName(Charged_Shell_displayName)]
+            public virtual uint Charged_Shell {
+                get => Charged_Shell_raw;
                 set {
-                    if (Unk_2_raw == value) return;
-                    Unk_2_raw = value;
-                    OnPropertyChanged(nameof(Unk_2));
+                    if (Charged_Shell_raw == value) return;
+                    Charged_Shell_raw = value;
+                    OnPropertyChanged(nameof(Charged_Shell));
                 }
             }
 
-            protected uint Unk_3_raw;
-            public const string Unk_3_displayName = "Unk 3";
-            public const int Unk_3_sortIndex = 150;
-            [SortOrder(Unk_3_sortIndex)]
-            [DisplayName(Unk_3_displayName)]
-            public virtual uint Unk_3 {
-                get => Unk_3_raw;
+            protected uint Full_Burst_Per_Shell__raw;
+            public const string Full_Burst_Per_Shell__displayName = "Full Burst (Per Shell)";
+            public const int Full_Burst_Per_Shell__sortIndex = 150;
+            [SortOrder(Full_Burst_Per_Shell__sortIndex)]
+            [DisplayName(Full_Burst_Per_Shell__displayName)]
+            public virtual uint Full_Burst_Per_Shell_ {
+                get => Full_Burst_Per_Shell__raw;
                 set {
-                    if (Unk_3_raw == value) return;
-                    Unk_3_raw = value;
-                    OnPropertyChanged(nameof(Unk_3));
+                    if (Full_Burst_Per_Shell__raw == value) return;
+                    Full_Burst_Per_Shell__raw = value;
+                    OnPropertyChanged(nameof(Full_Burst_Per_Shell_));
                 }
             }
 
-            protected uint Unk_4_raw;
-            public const string Unk_4_displayName = "Unk 4";
-            public const int Unk_4_sortIndex = 200;
-            [SortOrder(Unk_4_sortIndex)]
-            [DisplayName(Unk_4_displayName)]
-            public virtual uint Unk_4 {
-                get => Unk_4_raw;
+            protected uint Wyvernfire_raw;
+            public const string Wyvernfire_displayName = "Wyvernfire";
+            public const int Wyvernfire_sortIndex = 200;
+            [SortOrder(Wyvernfire_sortIndex)]
+            [DisplayName(Wyvernfire_displayName)]
+            public virtual uint Wyvernfire {
+                get => Wyvernfire_raw;
                 set {
-                    if (Unk_4_raw == value) return;
-                    Unk_4_raw = value;
-                    OnPropertyChanged(nameof(Unk_4));
+                    if (Wyvernfire_raw == value) return;
+                    Wyvernfire_raw = value;
+                    OnPropertyChanged(nameof(Wyvernfire));
                 }
             }
 
-            protected uint Unk_5_raw;
-            public const string Unk_5_displayName = "Unk 5";
-            public const int Unk_5_sortIndex = 250;
-            [SortOrder(Unk_5_sortIndex)]
-            [DisplayName(Unk_5_displayName)]
-            public virtual uint Unk_5 {
-                get => Unk_5_raw;
+            protected uint Wyrmstake_raw;
+            public const string Wyrmstake_displayName = "Wyrmstake";
+            public const int Wyrmstake_sortIndex = 250;
+            [SortOrder(Wyrmstake_sortIndex)]
+            [DisplayName(Wyrmstake_displayName)]
+            public virtual uint Wyrmstake {
+                get => Wyrmstake_raw;
                 set {
-                    if (Unk_5_raw == value) return;
-                    Unk_5_raw = value;
-                    OnPropertyChanged(nameof(Unk_5));
+                    if (Wyrmstake_raw == value) return;
+                    Wyrmstake_raw = value;
+                    OnPropertyChanged(nameof(Wyrmstake));
                 }
             }
 
@@ -4016,24 +4016,24 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static Unk_Arr_3 LoadData(BinaryReader reader, ulong i) {
-                var data = new Unk_Arr_3();
+            public static Shelling_Sharpness_Usage LoadData(BinaryReader reader, ulong i) {
+                var data = new Shelling_Sharpness_Usage();
                 data.Index = i;
-                data.Unk_1_raw = reader.ReadUInt32();
-                data.Unk_2_raw = reader.ReadUInt32();
-                data.Unk_3_raw = reader.ReadUInt32();
-                data.Unk_4_raw = reader.ReadUInt32();
-                data.Unk_5_raw = reader.ReadUInt32();
+                data.Shell_raw = reader.ReadUInt32();
+                data.Charged_Shell_raw = reader.ReadUInt32();
+                data.Full_Burst_Per_Shell__raw = reader.ReadUInt32();
+                data.Wyvernfire_raw = reader.ReadUInt32();
+                data.Wyrmstake_raw = reader.ReadUInt32();
                 data.Unk_6_raw = reader.ReadUInt32();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_1_raw);
-                writer.Write(Unk_2_raw);
-                writer.Write(Unk_3_raw);
-                writer.Write(Unk_4_raw);
-                writer.Write(Unk_5_raw);
+                writer.Write(Shell_raw);
+                writer.Write(Charged_Shell_raw);
+                writer.Write(Full_Burst_Per_Shell__raw);
+                writer.Write(Wyvernfire_raw);
+                writer.Write(Wyrmstake_raw);
                 writer.Write(Unk_6_raw);
             }
         }
@@ -5434,8 +5434,8 @@ namespace MHW_Editor.Weapons {
             data.AddLast(Shell_Ammo_Params_);
             var W07p_Params_6_Shelling_Params_ = new MhwStructDataContainer(W07p_Params_6_Shelling_Params.LoadData(reader, null), typeof(W07p_Params_6_Shelling_Params));
             data.AddLast(W07p_Params_6_Shelling_Params_);
-            var Unk_Arr_3_ = new MhwStructDataContainer(Unk_Arr_3.LoadData(reader, null), typeof(Unk_Arr_3));
-            data.AddLast(Unk_Arr_3_);
+            var Shelling_Sharpness_Usage_ = new MhwStructDataContainer(Shelling_Sharpness_Usage.LoadData(reader, null), typeof(Shelling_Sharpness_Usage));
+            data.AddLast(Shelling_Sharpness_Usage_);
             var W07p_Params_7__ = new MhwStructDataContainer(W07p_Params_7_.LoadData(reader, null), typeof(W07p_Params_7_));
             data.AddLast(W07p_Params_7__);
             var Action_Param_1_ = new MhwStructDataContainer(Action_Param_1.LoadData(reader, null), typeof(Action_Param_1));

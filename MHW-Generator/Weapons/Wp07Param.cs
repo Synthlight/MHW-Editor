@@ -23,7 +23,7 @@ namespace MHW_Generator.Weapons {
 
             structs.AddRange(new List<MhwMultiStructData.StructData> {
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex}) - Shelling Params", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Normal Ammo", typeof(uint)),
+                    new MhwMultiStructData.Entry("Normal Shell", typeof(uint)),
                     new MhwMultiStructData.Entry("Wide Shell", typeof(uint)),
                     new MhwMultiStructData.Entry("Long Shell", typeof(uint)),
                     new MhwMultiStructData.Entry("Shelling Charge Delay (Seconds)", typeof(float)),
@@ -56,9 +56,9 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Shell Unk 1", typeof(float)),
                     new MhwMultiStructData.Entry("Wyvernfire Damage".Out(out var wyvernfireDamage), typeof(void), subStruct: CreateShellInnerStruct(wyvernfireDamage)),
                     new MhwMultiStructData.Entry("Wyvernfire Fire Damage".Out(out var wyvernfireFireDamage), typeof(void), subStruct: CreateShellInnerStruct(wyvernfireFireDamage)),
-                    new MhwMultiStructData.Entry("Wyrmstake Damage".Out(out var wyrmstakeDamage), typeof(void), subStruct: CreateShellInnerStruct(wyrmstakeDamage)),
-                    new MhwMultiStructData.Entry("Wyrmstake Blast Damage".Out(out var wyrmstakeBlastDamage), typeof(void), subStruct: CreateShellInnerStruct(wyrmstakeBlastDamage)),
-                    new MhwMultiStructData.Entry("Wyrmstake Blast Fire Damage".Out(out var wyrmstakeBlastFireDamage), typeof(void), subStruct: CreateShellInnerStruct(wyrmstakeBlastFireDamage)),
+                    new MhwMultiStructData.Entry("Wyrmstake Tick Raw Damage".Out(out var wyrmstakeDamage), typeof(void), subStruct: CreateShellInnerStruct(wyrmstakeDamage)),
+                    new MhwMultiStructData.Entry("Wyrmstake Fixed Blast Damage".Out(out var wyrmstakeBlastDamage), typeof(void), subStruct: CreateShellInnerStruct(wyrmstakeBlastDamage)),
+                    new MhwMultiStructData.Entry("Wyrmstake Fire Damage".Out(out var wyrmstakeBlastFireDamage), typeof(void), subStruct: CreateShellInnerStruct(wyrmstakeBlastFireDamage)),
                     new MhwMultiStructData.Entry("Wyrmstake Add Damage".Out(out var wyrmstakeAddDamage), typeof(void), subStruct: CreateShellInnerStruct(wyrmstakeAddDamage))
                 }, 3),
 
@@ -66,12 +66,12 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Yellow Gauge Debuff", typeof(float))
                 }, 1, showVertically: true),
 
-                new MhwMultiStructData.StructData($"Unk Arr {++arrayIndex}", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Unk 1", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk 2", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk 3", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk 4", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk 5", typeof(uint)),
+                new MhwMultiStructData.StructData("Shelling Sharpness Usage", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Shell", typeof(uint)),
+                    new MhwMultiStructData.Entry("Charged Shell", typeof(uint)),
+                    new MhwMultiStructData.Entry("Full Burst (Per Shell)", typeof(uint)),
+                    new MhwMultiStructData.Entry("Wyvernfire", typeof(uint)),
+                    new MhwMultiStructData.Entry("Wyrmstake", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk 6", typeof(uint))
                 }, 3),
 

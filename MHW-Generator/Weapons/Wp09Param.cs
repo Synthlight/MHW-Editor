@@ -194,8 +194,8 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Savage Axe Duration Multiplier (Impact Phial)", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Savage Axe Tick Sharpness Use on N Hit", typeof(uint)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true)
