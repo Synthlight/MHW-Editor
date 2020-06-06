@@ -107,6 +107,9 @@
     <Compile Include="Assets\LangMapNeg.cs" />
     <Compile Include="Assets\LangMap.cs" />
     <Compile Include="Controls\AutoFilteredComboBox.cs" />
+    <Compile Include="Controls\HeaderFilter.xaml.cs">
+      <DependentUpon>HeaderFilter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MhwDataGrid.xaml.cs">
       <DependentUpon>MhwDataGrid.xaml</DependentUpon>
     </Compile>
@@ -242,6 +245,7 @@
     <Compile Include="Items\ShopList.cs" />
     <Compile Include="Misc\MotionBlendData.cs" />
     <Compile Include="Models\CustomSaveLoad.cs" />
+    <Compile Include="Models\GroupFilter.cs" />
     <Compile Include="Models\ICustomSaveLoad.cs" />
     <Compile Include="Models\IHasEquipmentType.cs" />
     <Compile Include="Models\IHasWeaponType.cs" />
@@ -385,6 +389,10 @@
     <Compile Include="Weapons\WeaponWhistle.cs" />
     <Compile Include="Weapons\WeaponGunLance.cs" />
     <Compile Include="Weapons\WeaponWSword.cs" />
+    <Page Include="Controls\HeaderFilter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\MhwDataGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

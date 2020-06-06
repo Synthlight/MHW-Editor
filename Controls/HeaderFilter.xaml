@@ -1,0 +1,55 @@
+﻿<Grid x:Class="MHW_Editor.Controls.HeaderFilter"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      Name="this"
+      d:DesignHeight="50"
+      d:DesignWidth="100"
+      DataContext="{x:Reference this}"
+      mc:Ignorable="d">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+    <TextBlock Grid.Row="0"
+               Grid.Column="0"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Center"
+               Text="{Binding HeaderText}"/>
+    <TextBox Grid.Row="1"
+             Grid.Column="0"
+             Text="{Binding FilterText, UpdateSourceTrigger=PropertyChanged}"
+             TextChanged="OnFilterTextChanged">
+        <TextBox.Style>
+            <Style TargetType="TextBox">
+                <Style.Resources>
+                    <VisualBrush x:Key="CueBannerBrush"
+                                 AlignmentX="Left"
+                                 AlignmentY="Center"
+                                 Stretch="None">
+                        <VisualBrush.Visual>
+                            <Label Content="Filter..."
+                                   Foreground="LightGray"/>
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </Style.Resources>
+                <Style.Triggers>
+                    <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+                        <Setter Property="Background" Value="{StaticResource CueBannerBrush}"/>
+                    </Trigger>
+                    <Trigger Property="Text" Value="{x:Null}">
+                        <Setter Property="Background" Value="{StaticResource CueBannerBrush}"/>
+                    </Trigger>
+                    <Trigger Property="IsKeyboardFocused" Value="True">
+                        <Setter Property="Background" Value="White"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </TextBox.Style>
+    </TextBox>
+</Grid>

@@ -26,4 +26,9 @@
                          Handler="On_Cell_MouseClick"/>
         </Style>
     </DataGrid.Resources>
+    <DataGrid.ColumnHeaderStyle>
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        </Style>
+    </DataGrid.ColumnHeaderStyle>
 </DataGrid>
