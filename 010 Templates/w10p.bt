@@ -154,59 +154,59 @@ float Unk_95<name="Unk 95">;
 float Defense_Buff_Orange<name="Defense Buff: Orange">;
 float Defense_Buff_Orange_Plus_White<name="Defense Buff: Orange + White">;
 
-// Action Param 1
+// Action Param (Relate Vault)
 typedef struct {
     float Gravity<name="Gravity">;
     float G_Rate<name="G Rate">;
     float Momentum<name="Momentum">;
     float V_Offset<name="V Offset">;
     float H_Offset<name="H Offset">;
-} Action_Param_1;
+} Action_Param_Relate_Vault_;
 
-Action_Param_1 Action_Param_1_[16]<optimize=false, name="Action Param 1">;
+Action_Param_Relate_Vault_ Action_Param_Relate_Vault__[16]<optimize=false, name="Action Param (Relate Vault)">;
 
 float Unk_98<name="Unk 98">;
 float Unk_99<name="Unk 99">;
 float Unk_100<name="Unk 100">;
 
-// Action Param 2
+// Action Param (Relate Vault Dance)
 typedef struct {
     float Gravity<name="Gravity">;
     float G_Rate<name="G Rate">;
     float Momentum<name="Momentum">;
     float V_Offset<name="V Offset">;
     float H_Offset<name="H Offset">;
-} Action_Param_2;
+} Action_Param_Relate_Vault_Dance_;
 
-Action_Param_2 Action_Param_2_<name="Action Param 2">;
+Action_Param_Relate_Vault_Dance_ Action_Param_Relate_Vault_Dance__<name="Action Param (Relate Vault Dance)">;
 
-uint Unk_101<name="Unk 101">;
+uint Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump_<name="Jumping Advancing Slashes Repeat Limit Count (Can vault dance N times per jump.)">;
 float Unk_102<name="Unk 102">;
 
-// Action Param 3
+// Action Param (Relate Mid-air Evade)
 typedef struct {
     float Gravity<name="Gravity">;
     float G_Rate<name="G Rate">;
     float Momentum<name="Momentum">;
     float V_Offset<name="V Offset">;
     float H_Offset<name="H Offset">;
-} Action_Param_3;
+} Action_Param_Relate_Mid_air_Evade_;
 
-Action_Param_3 Action_Param_3_[9]<optimize=false, name="Action Param 3">;
+Action_Param_Relate_Mid_air_Evade_ Action_Param_Relate_Mid_air_Evade__[9]<optimize=false, name="Action Param (Relate Mid-air Evade)">;
 
 float Unk_103<name="Unk 103">;
 float Unk_104<name="Unk 104">;
 
-// Action Param 4
+// Action Param (Relate Jumping Slash And Jumping Advancing Slash)
 typedef struct {
     float Gravity<name="Gravity">;
     float G_Rate<name="G Rate">;
     float Momentum<name="Momentum">;
     float V_Offset<name="V Offset">;
     float H_Offset<name="H Offset">;
-} Action_Param_4;
+} Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_;
 
-Action_Param_4 Action_Param_4_[22]<optimize=false, name="Action Param 4">;
+Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_ Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash__[22]<optimize=false, name="Action Param (Relate Jumping Slash And Jumping Advancing Slash)">;
 
 float Unk_105<name="Unk 105">;
 float Unk_106<name="Unk 106">;

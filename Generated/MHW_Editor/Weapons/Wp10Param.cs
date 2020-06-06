@@ -2343,9 +2343,9 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public partial class Action_Param_1 : MhwStructItem {
+        public partial class Action_Param_Relate_Vault_ : MhwStructItem {
             public const ulong FixedSizeCount = 16;
-            public const string GridName = "Action Param 1";
+            public const string GridName = "Action Param (Relate Vault)";
 
             protected float Gravity_raw;
             public const string Gravity_displayName = "Gravity";
@@ -2426,8 +2426,8 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static Action_Param_1 LoadData(BinaryReader reader, ulong i) {
-                var data = new Action_Param_1();
+            public static Action_Param_Relate_Vault_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Action_Param_Relate_Vault_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
                 data.G_Rate_raw = reader.ReadSingle();
@@ -2525,9 +2525,9 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public partial class Action_Param_2 : MhwStructItem {
+        public partial class Action_Param_Relate_Vault_Dance_ : MhwStructItem {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "Action Param 2";
+            public const string GridName = "Action Param (Relate Vault Dance)";
 
             protected float Gravity_raw;
             public const string Gravity_displayName = "Gravity";
@@ -2608,8 +2608,8 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static Action_Param_2 LoadData(BinaryReader reader, ulong i) {
-                var data = new Action_Param_2();
+            public static Action_Param_Relate_Vault_Dance_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Action_Param_Relate_Vault_Dance_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
                 data.G_Rate_raw = reader.ReadSingle();
@@ -2632,17 +2632,17 @@ namespace MHW_Editor.Weapons {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W10p Params (7)";
 
-            protected uint Unk_101_raw;
-            public const string Unk_101_displayName = "Unk 101";
-            public const int Unk_101_sortIndex = 50;
-            [SortOrder(Unk_101_sortIndex)]
-            [DisplayName(Unk_101_displayName)]
-            public virtual uint Unk_101 {
-                get => Unk_101_raw;
+            protected uint Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump__raw;
+            public const string Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump__displayName = "Jumping Advancing Slashes Repeat Limit Count (Can vault dance N times per jump.)";
+            public const int Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump__sortIndex = 50;
+            [SortOrder(Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump__sortIndex)]
+            [DisplayName(Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump__displayName)]
+            public virtual uint Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump_ {
+                get => Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump__raw;
                 set {
-                    if (Unk_101_raw == value) return;
-                    Unk_101_raw = value;
-                    OnPropertyChanged(nameof(Unk_101));
+                    if (Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump__raw == value) return;
+                    Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump__raw = value;
+                    OnPropertyChanged(nameof(Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump_));
                 }
             }
 
@@ -2672,27 +2672,27 @@ namespace MHW_Editor.Weapons {
             public static W10p_Params_7_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W10p_Params_7_();
                 data.Index = i;
-                data.Unk_101_raw = reader.ReadUInt32();
+                data.Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump__raw = reader.ReadUInt32();
                 data.Unk_102_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_101_raw);
+                writer.Write(Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump__raw);
                 writer.Write(Unk_102_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 101", "Unk_101"),
+                    new MultiStructItemCustomView(this, "Jumping Advancing Slashes Repeat Limit Count (Can vault dance N times per jump.)", "Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump_"),
                     new MultiStructItemCustomView(this, "Unk 102", "Unk_102"),
                 };
             }
         }
 
-        public partial class Action_Param_3 : MhwStructItem {
+        public partial class Action_Param_Relate_Mid_air_Evade_ : MhwStructItem {
             public const ulong FixedSizeCount = 9;
-            public const string GridName = "Action Param 3";
+            public const string GridName = "Action Param (Relate Mid-air Evade)";
 
             protected float Gravity_raw;
             public const string Gravity_displayName = "Gravity";
@@ -2773,8 +2773,8 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static Action_Param_3 LoadData(BinaryReader reader, ulong i) {
-                var data = new Action_Param_3();
+            public static Action_Param_Relate_Mid_air_Evade_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Action_Param_Relate_Mid_air_Evade_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
                 data.G_Rate_raw = reader.ReadSingle();
@@ -2855,9 +2855,9 @@ namespace MHW_Editor.Weapons {
             }
         }
 
-        public partial class Action_Param_4 : MhwStructItem {
+        public partial class Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_ : MhwStructItem {
             public const ulong FixedSizeCount = 22;
-            public const string GridName = "Action Param 4";
+            public const string GridName = "Action Param (Relate Jumping Slash And Jumping Advancing Slash)";
 
             protected float Gravity_raw;
             public const string Gravity_displayName = "Gravity";
@@ -2938,8 +2938,8 @@ namespace MHW_Editor.Weapons {
                 return list;
             }
 
-            public static Action_Param_4 LoadData(BinaryReader reader, ulong i) {
-                var data = new Action_Param_4();
+            public static Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
                 data.G_Rate_raw = reader.ReadSingle();
@@ -5455,20 +5455,20 @@ namespace MHW_Editor.Weapons {
             data.AddLast(W10p_Params_4_Shared__);
             var W10p_Params_5__ = new MhwStructDataContainer(W10p_Params_5_.LoadData(reader, null), typeof(W10p_Params_5_));
             data.AddLast(W10p_Params_5__);
-            var Action_Param_1_ = new MhwStructDataContainer(Action_Param_1.LoadData(reader, null), typeof(Action_Param_1));
-            data.AddLast(Action_Param_1_);
+            var Action_Param_Relate_Vault__ = new MhwStructDataContainer(Action_Param_Relate_Vault_.LoadData(reader, null), typeof(Action_Param_Relate_Vault_));
+            data.AddLast(Action_Param_Relate_Vault__);
             var W10p_Params_6__ = new MhwStructDataContainer(W10p_Params_6_.LoadData(reader, null), typeof(W10p_Params_6_));
             data.AddLast(W10p_Params_6__);
-            var Action_Param_2_ = new MhwStructDataContainer(Action_Param_2.LoadData(reader, null), typeof(Action_Param_2));
-            data.AddLast(Action_Param_2_);
+            var Action_Param_Relate_Vault_Dance__ = new MhwStructDataContainer(Action_Param_Relate_Vault_Dance_.LoadData(reader, null), typeof(Action_Param_Relate_Vault_Dance_));
+            data.AddLast(Action_Param_Relate_Vault_Dance__);
             var W10p_Params_7__ = new MhwStructDataContainer(W10p_Params_7_.LoadData(reader, null), typeof(W10p_Params_7_));
             data.AddLast(W10p_Params_7__);
-            var Action_Param_3_ = new MhwStructDataContainer(Action_Param_3.LoadData(reader, null), typeof(Action_Param_3));
-            data.AddLast(Action_Param_3_);
+            var Action_Param_Relate_Mid_air_Evade__ = new MhwStructDataContainer(Action_Param_Relate_Mid_air_Evade_.LoadData(reader, null), typeof(Action_Param_Relate_Mid_air_Evade_));
+            data.AddLast(Action_Param_Relate_Mid_air_Evade__);
             var W10p_Params_8__ = new MhwStructDataContainer(W10p_Params_8_.LoadData(reader, null), typeof(W10p_Params_8_));
             data.AddLast(W10p_Params_8__);
-            var Action_Param_4_ = new MhwStructDataContainer(Action_Param_4.LoadData(reader, null), typeof(Action_Param_4));
-            data.AddLast(Action_Param_4_);
+            var Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash__ = new MhwStructDataContainer(Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_.LoadData(reader, null), typeof(Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_));
+            data.AddLast(Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash__);
             var W10p_Params_9__ = new MhwStructDataContainer(W10p_Params_9_.LoadData(reader, null), typeof(W10p_Params_9_));
             data.AddLast(W10p_Params_9__);
             var Action_Param_5_ = new MhwStructDataContainer(Action_Param_5.LoadData(reader, null), typeof(Action_Param_5));
