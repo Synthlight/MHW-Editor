@@ -50,7 +50,7 @@ namespace MHW_Editor.Windows {
                 return;
             }
 
-            foreach (var item in dataGrids[0].Items) {
+            foreach (var item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
                 switch (item) {
                     case SkillDat.Entries skillDat: {
                         switch (skillDat.Id) {
@@ -179,7 +179,7 @@ namespace MHW_Editor.Windows {
                 return;
             }
 
-            foreach (var item in dataGrids[0].Items) {
+            foreach (var item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
                 switch (item) {
                     case ISlots slotItem: {
                         slotItem.Slot_Count  = 3;
@@ -205,7 +205,7 @@ namespace MHW_Editor.Windows {
 
             if (!targetFileType.Is(typeof(Armor))) return;
 
-            foreach (Armor.Entries item in dataGrids[0].Items) {
+            foreach (Armor.Entries item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
                 if (item.Set_Skill_1_Level > 0) item.Set_Skill_1_Level = 5;
             }
         }
@@ -218,7 +218,7 @@ namespace MHW_Editor.Windows {
                 return;
             }
 
-            foreach (var item in dataGrids[0].Items) {
+            foreach (var item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
                 switch (item) {
                     case Gem.Entries gem: {
                         gem.Skill_1_Level = 10;
@@ -252,7 +252,7 @@ namespace MHW_Editor.Windows {
                 return;
             }
 
-            foreach (var item in dataGrids[0].Items) {
+            foreach (var item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
                 switch (item) {
                     case Item.Entries itm: {
                         if (itm.Buy_Price > 0) itm.Buy_Price = 1;
@@ -329,7 +329,7 @@ namespace MHW_Editor.Windows {
                 return;
             }
 
-            foreach (var item in dataGrids[0].Items) {
+            foreach (var item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
                 switch (item) {
                     case OtomoWeaponDat.Entries palicoWeapon: {
                         if (palicoWeapon.Melee_Damage > 0) palicoWeapon.Melee_Damage   = 50000;
@@ -349,7 +349,7 @@ namespace MHW_Editor.Windows {
 
             if (!targetFileType.Is(typeof(BottleTable))) return;
 
-            foreach (BottleTable.Entries item in dataGrids[0].Items) {
+            foreach (BottleTable.Entries item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
                 item.Close_Range = CoatingType.Plus;
                 item.Power       = CoatingType.Plus;
                 item.Paralysis   = CoatingType.Plus;
@@ -367,7 +367,7 @@ namespace MHW_Editor.Windows {
                 return;
             }
 
-            foreach (var item in dataGrids[0].Items) {
+            foreach (var item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
                 switch (item) {
                     case Sharpness.Entries sharpness: {
                         sharpness.Red    = 1;
@@ -392,7 +392,7 @@ namespace MHW_Editor.Windows {
 
             if (!targetFileType.Is(typeof(SkillDat))) return;
 
-            foreach (SkillDat.Entries item in dataGrids[0].Items) {
+            foreach (SkillDat.Entries item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
                 item.Unlock_Skill_1 = 0;
                 item.Unlock_Skill_2 = 0;
                 item.Unlock_Skill_3 = 0;
@@ -408,7 +408,7 @@ namespace MHW_Editor.Windows {
             const int reloadSpeed  = 17;
             const int recoilAmount = 29;
 
-            foreach (ShellTable.Entries item in dataGrids[0].Items) {
+            foreach (ShellTable.Entries item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
                 item.Normal_1_Rel_Spd  = reloadSpeed;
                 item.Normal_1_Rec_Amnt = recoilAmount;
                 item.Normal_2_Rel_Spd  = reloadSpeed;
@@ -488,8 +488,10 @@ namespace MHW_Editor.Windows {
             if (!targetFileType.Is(typeof(Item))) return;
 
             var rawList = new List<GemData>();
+            var items   = fileData.GetStructList<Item.Entries>();
+
             foreach (var itemId in DataHelper.gemItemIds) {
-                var item = (Item.Entries) dataGrids[0].Items[(int) itemId];
+                var item = items[(int) itemId];
                 rawList.Add(new GemData {index = itemId, itemName = item.Name, sortOrder = item.Sort_Order});
             }
 
@@ -505,9 +507,9 @@ namespace MHW_Editor.Windows {
                                        .ToList();
 
             for (var i = 0; i < sortedSortIndexes.Count; i++) {
-                var          index        = sortedGemNameIndexes[i];
-                var          newSortIndex = sortedSortIndexes[i];
-                var item         = (Item.Entries) dataGrids[0].Items[(int) index];
+                var index        = sortedGemNameIndexes[i];
+                var newSortIndex = sortedSortIndexes[i];
+                var item         = items[(int) index];
                 item.Sort_Order = newSortIndex;
             }
         }

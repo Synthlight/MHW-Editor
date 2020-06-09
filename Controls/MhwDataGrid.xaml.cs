@@ -256,10 +256,10 @@ namespace MHW_Editor.Controls {
                     columns[i].column.DisplayIndex = i;
                 }
 
-                var hasCustomView = items[0].GetType().IsGeneric(typeof(IHasCustomView<>));
+                var hasCustomView = typeof(T).IsGeneric(typeof(IHasCustomView<>));
 
                 // Since T may be dynamic/object. Also need to account for custom views.
-                var outType = hasCustomView ? ((dynamic) items)[0].GetCustomView()[0].GetType() : items[0].GetType();
+                var outType = hasCustomView ? ((dynamic) items)[0].GetCustomView()[0].GetType() : typeof(T);
 
                 foreach (var propertyName in columnMap.Keys) {
                     groupFilter.AddFilter(outType.GetProperty(propertyName));

@@ -6,6 +6,7 @@ using System.Windows.Controls;
 using JetBrains.Annotations;
 using MHW_Editor.Util;
 using MHW_Editor.Windows;
+using MHW_Template;
 
 namespace MHW_Editor.Models {
     public interface IMhwMultiStructFile {
@@ -13,6 +14,7 @@ namespace MHW_Editor.Models {
 
         void                             SetupViews(Grid grid, MainWindow main);
         ObservableMhwStructCollection<F> GetStructList<F>() where F : class, IMhwStructItem, IWriteData;
+        IEnumerable<F>                   GetAllEnumerableOfType<F>();
     }
 
     public abstract class MhwMultiStructFile<T> : SaveLoad<T>, ISaveLoad, IMhwMultiStructFile where T : ISaveLoad, IMhwMultiStructFile, new() {
@@ -38,6 +40,16 @@ namespace MHW_Editor.Models {
                 }
             }
             throw new InvalidOperationException("GetSingleStructList can't find the requested type.");
+        }
+
+        public IEnumerable<F> GetAllEnumerableOfType<F>() {
+            foreach (var container in data) {
+                if (container.type.Is(typeof(F)) || container.type.IsGeneric(typeof(F))) {
+                    foreach (var item in container.GetEnumerable<F>()) {
+                        yield return item;
+                    }
+                }
+            }
         }
 
         public abstract void LoadFile(string targetFile);

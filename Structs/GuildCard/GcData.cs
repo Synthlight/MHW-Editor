@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.IO;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Editor.Windows;
@@ -7,8 +8,9 @@ using MHW_Template;
 namespace MHW_Editor.Structs.GuildCard {
     public partial class GcData : MhwSingleStructFile<GcData, GcData.Entries> {
         public void Init(string targetFile) {
+            var target = Path.GetFileNameWithoutExtension(targetFile);
             foreach (var entry in GetSingleStructList()) {
-                entry.Init(targetFile);
+                entry.Init(target);
             }
         }
 

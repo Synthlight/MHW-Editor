@@ -23,7 +23,7 @@ namespace MHW_Editor.Structs.Items {
 
                 for (var i = 0; i < (int) Items.FixedSizeCount; i++) {
                     var customView = customViews[i];
-                    var entryItem  = ((dynamic) entry).list[i]; // TODO: Test, and maybe there's a better way?
+                    var entryItem  = ((dynamic) entry).list[i];
 
                     if (entry.type.Is(typeof(Items))) {
                         customView.itemIdEntry = (Items) entryItem;

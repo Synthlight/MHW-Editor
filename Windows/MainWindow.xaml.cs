@@ -46,12 +46,9 @@ namespace MHW_Editor.Windows {
 
         [CanBeNull] private CancellationTokenSource savedTimer;
 
-        private readonly List<MhwDataGrid> dataGrids       = new List<MhwDataGrid>();
-        private          bool              hasMainDataGrid = false;
-
         public  string              targetFile     { get; private set; }
         public  Type                targetFileType { get; private set; }
-        private IMhwMultiStructFile customFileData;
+        private IMhwMultiStructFile fileData;
 
         public bool unlockFields { get; }
 
@@ -60,15 +57,13 @@ namespace MHW_Editor.Windows {
             get => locale;
             set {
                 locale = value;
-                foreach (var dataGrid in dataGrids) {
-                    foreach (IOnPropertyChanged item in dataGrid.Items) {
-                        item.OnPropertyChanged("Name",
-                                               nameof(SkillDat.Entries.Description),
-                                               nameof(SkillDat.Entries.Name_And_Id),
-                                               nameof(MusicSkill.Entries.Song_And_Id));
+                foreach (var item in fileData.GetAllEnumerableOfType<IOnPropertyChanged>()) {
+                    item.OnPropertyChanged("Name",
+                                           nameof(SkillDat.Entries.Description),
+                                           nameof(SkillDat.Entries.Name_And_Id),
+                                           nameof(MusicSkill.Entries.Song_And_Id));
 
-                        item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
-                    }
+                    item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
                 }
             }
         }
@@ -78,13 +73,11 @@ namespace MHW_Editor.Windows {
             get => showIdBeforeName;
             set {
                 showIdBeforeName = value;
-                foreach (var dataGrid in dataGrids) {
-                    foreach (IOnPropertyChanged item in dataGrid.Items) {
-                        item.OnPropertyChanged(nameof(SkillDat.Entries.Name_And_Id),
-                                               nameof(MusicSkill.Entries.Song_And_Id));
+                foreach (var item in fileData.GetAllEnumerableOfType<IOnPropertyChanged>()) {
+                    item.OnPropertyChanged(nameof(SkillDat.Entries.Name_And_Id),
+                                           nameof(MusicSkill.Entries.Song_And_Id));
 
-                        item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
-                    }
+                    item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
                 }
             }
         }
@@ -176,20 +169,16 @@ namespace MHW_Editor.Windows {
         public MhwDataGrid AddDataGrid<T>(IEnumerable<T> itemSource) {
             var dataGrid = new MhwDataGridGeneric<T>();
             dataGrid.SetItems(this, itemSource is ObservableCollection<T> source ? source : new ObservableCollection<T>(itemSource));
-            dataGrids.Add(dataGrid);
             sub_grids.AddControl(dataGrid);
             return dataGrid;
         }
 
         public MhwDataGrid AddMainDataGrid(Type gridType) {
-            if (hasMainDataGrid) throw new InvalidOperationException("Main data grid already added.");
-
             var genericType = typeof(MhwDataGridGeneric<>).MakeGenericType(gridType);
             var dataGrid    = (MhwDataGrid) Activator.CreateInstance(genericType);
             dataGrid.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
             dataGrid.VerticalScrollBarVisibility   = ScrollBarVisibility.Auto;
 
-            dataGrids.Add(dataGrid);
             main_grid.AddControl(dataGrid);
 
             Grid.SetRow(dataGrid, 1);
@@ -198,17 +187,25 @@ namespace MHW_Editor.Windows {
 
             main_grid.UpdateLayout();
 
-            hasMainDataGrid = true;
             return dataGrid;
         }
 
-        public void ClearMainDataGrid() {
-            if (!hasMainDataGrid) return;
-            if (dataGrids.Count == 0) throw new InvalidOperationException("No data grids to remove.");
+        public void ClearDataGrids(Panel panel) {
+            var grids = new List<UIElement>();
+            foreach (UIElement child in main_grid.Children) {
+                if (child is MhwDataGrid mhwGrid) {
+                    grids.Add(child);
+                    mhwGrid.SetItems(null, null);
+                }
+            }
 
-            main_grid.Children.Remove(dataGrids[0]);
-            main_grid.UpdateLayout();
-            hasMainDataGrid = false;
+            foreach (var grid in grids) {
+                panel.Children.Remove(grid);
+            }
+
+            if (grids.Count > 0) {
+                panel.UpdateLayout();
+            }
         }
 
         private void Load(string file = null) {
@@ -225,12 +222,8 @@ namespace MHW_Editor.Windows {
                 sub_grids.Children.Clear();
                 sub_grids.UpdateLayout();
 
-                foreach (dynamic dg in dataGrids) {
-                    dg.SetItems(null, null);
-                }
-
-                ClearMainDataGrid();
-                dataGrids.Clear();
+                ClearDataGrids(main_grid);
+                ClearDataGrids(sub_grids);
 
                 GC.Collect();
 
@@ -247,14 +240,14 @@ namespace MHW_Editor.Windows {
 
             var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
             Debug.Assert(loadData != null, nameof(loadData) + " != null");
-            customFileData = (IMhwMultiStructFile) loadData.Invoke(null, new object[] {targetFile});
+            fileData = (IMhwMultiStructFile) loadData.Invoke(null, new object[] {targetFile});
 
-            switch (customFileData) {
+            switch (fileData) {
                 case Collision col:
                     col.Init(targetFile);
                     break;
                 case GcData gcData:
-                    gcData.Init(Title);
+                    gcData.Init(targetFile);
                     break;
                 case Melee melee:
                     melee.Init(targetFile);
@@ -272,27 +265,32 @@ namespace MHW_Editor.Windows {
             scroll_viewer.Visibility = showAsSingleView ? Visibility.Collapsed : Visibility.Visible;
 
             if (showAsSingleView) {
-                var structType = ((IShowAsSingleStruct) customFileData).GetSingleStructType();
+                var structType = ((IShowAsSingleStruct) fileData).GetSingleStructType();
                 var getStructList = targetFileType.GetMethod("GetStructList", BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy)
                                                   ?.MakeGenericMethod(structType);
 
                 var mainDataGrid = AddMainDataGrid(structType);
 
-                var items = getStructList?.Invoke(customFileData, null) ?? throw new Exception("getStructList failure.");
+                var items = getStructList?.Invoke(fileData, null) ?? throw new Exception("getStructList failure.");
                 mainDataGrid.SetItems(this, items);
             } else {
                 var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
                 Debug.Assert(setupViews != null, nameof(setupViews) + " != null");
-                setupViews.Invoke(null, new object[] {customFileData, sub_grids, this});
+                setupViews.Invoke(null, new object[] {fileData, sub_grids, this});
             }
         }
 
         public static void CheckHashAndSize(string targetFile) {
-            var       fileName     = Path.GetFileName(targetFile);
-            using var file         = File.OpenRead(targetFile);
-            var       ourLength    = (ulong) file.Length;
-            var       properLength = DataHelper.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
-            var       sha512       = file.SHA512();
+            var   nameWithoutExt = Path.GetFileName(targetFile);
+            var   fileName       = nameWithoutExt;
+            ulong properLength;
+
+            if (DataHelper.FILE_SIZE_MAP.ContainsKey(nameWithoutExt)) properLength = DataHelper.FILE_SIZE_MAP[nameWithoutExt];
+            else return;
+
+            using var file      = File.OpenRead(targetFile);
+            var       ourLength = (ulong) file.Length;
+            var       sha512    = file.SHA512();
 
             // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
             foreach (var pair in DataHelper.BAD_FILE_HASH_MAP) {
@@ -324,7 +322,7 @@ namespace MHW_Editor.Windows {
             try {
                 var saveData = targetFileType.GetMethod("SaveData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
                 Debug.Assert(saveData != null, nameof(saveData) + " != null");
-                saveData.Invoke(null, new object[] {customFileData, targetFile});
+                saveData.Invoke(null, new object[] {fileData, targetFile});
 
                 await ShowChangesSaved(true);
             } catch (Exception e) when (!Debugger.IsAttached) {
@@ -445,13 +443,13 @@ namespace MHW_Editor.Windows {
                         }
                     }
                 }
-*/
 
                 if (targetFileType.IsGeneric(typeof(IHasCustomView<>))) {
                     foreach (var dataGrid in dataGrids) {
                         ((ListCollectionView) dataGrid.ItemsSource).Refresh();
                     }
                 }
+*/
             } catch (Exception e) when (!Debugger.IsAttached) {
                 ShowError(e, "Load Error");
             }
