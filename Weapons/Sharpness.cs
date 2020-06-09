@@ -1,12 +1,16 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons {
-    public partial class Sharpness : MhwItem {
-        public Sharpness(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class Sharpness : MhwMultiStructItem<Sharpness>, IShowAsSingleStruct<Sharpness.Entries> {
+        public ObservableCollection<object> GetStructList() {
+            return data.Last.Value.list;
         }
 
-        [DisplayName("")]
-        public override string Name => "None";
+        public IEnumerable<Entries> GetIterableStructList() {
+            return GetStructList().Cast<Entries>();
+        }
     }
 }

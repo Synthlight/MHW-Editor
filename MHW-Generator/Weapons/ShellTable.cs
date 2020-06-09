@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 using MHW_Template.Weapons.Model;
 
 namespace MHW_Generator.Weapons {
-    public class ShellTable : ISingleStruct {
-        public SingleStruct Generate() { // .shl_tbl
+    public class ShellTable : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .shl_tbl
             var types = new List<ShellTableTypes> {
                 new ShellTableTypes("Normal", 3),
                 new ShellTableTypes("Pierce", 3),
@@ -31,34 +31,28 @@ namespace MHW_Generator.Weapons {
                 new ShellTableTypes("Tranq", 1)
             };
 
-            var entries = new List<MhwStructData.Entry>();
+            var entries = new List<MhwMultiStructData.Entry>();
 
-            ulong x = 0;
             foreach (var type in types) {
                 for (var i = 0; i < type.num; i++) {
-                    if (type.name == "Unknown") {
-                        x += 3;
-                        continue;
-                    }
-
                     var name = type.name;
                     if (type.num > 1) {
                         name += $" {i + 1}";
                     }
 
-                    entries.Add(new MhwStructData.Entry($"{name} Mag Cnt", x++, typeof(byte), valueString: "value.Clamp((byte) 0, (byte) 10)"));
-                    entries.Add(new MhwStructData.Entry($"{name} Rec Amnt", x++, typeof(byte), dataSourceType: DataSourceType.ShellRecoil));
-                    entries.Add(new MhwStructData.Entry($"{name} Rel Spd", x++, typeof(byte), dataSourceType: DataSourceType.ShellReload));
+                    entries.Add(new MhwMultiStructData.Entry($"{name} Mag Cnt", typeof(byte), valueString: "value.Clamp((byte) 0, (byte) 10)"));
+                    entries.Add(new MhwMultiStructData.Entry($"{name} Rec Amnt", typeof(byte), dataSourceType: DataSourceType.ShellRecoil));
+                    entries.Add(new MhwMultiStructData.Entry($"{name} Rel Spd", typeof(byte), dataSourceType: DataSourceType.ShellReload));
                 }
             }
 
-            return new SingleStruct("MHW_Editor.Weapons", "ShellTable", new MhwStructData {
-                size             = 111,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Id}",
-                entries          = entries
-            });
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", entries, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Weapons", "ShellTable", new MhwMultiStructData(structs, "shl_tbl"));
         }
     }
 }

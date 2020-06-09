@@ -1,0 +1,28 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.lbm_base
+//  Category: MHW_Editor.Weapons
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    ubyte Rarity<name="Rarity">;
+    ubyte Equip_Type<name="Equip Type">;
+    uint Cost<name="Cost">;
+    ushort Item_1_Id<name="Item 1 Id">;
+    ushort Item_1_Cnt<name="Item 1 Cnt">;
+    ushort Item_2_Id<name="Item 2 Id">;
+    ushort Item_2_Cnt<name="Item 2 Cnt">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

@@ -1,0 +1,40 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.eq_crt
+//  Category: MHW_Editor.Items
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    ubyte Equipment_Category_Raw<name="Equipment Category Raw">;
+    ushort Equipment_Index_Raw<name="Equipment Index Raw">;
+    ushort Needed_Item_Id_to_Unlock<name="Needed Item Id to Unlock">;
+    int Monster_Unlock<name="Monster Unlock">;
+    uint Story_Unlock<name="Story Unlock">;
+    uint Unknown_uint32_<name="Unknown (uint32)">;
+    uint Item_Rank<name="Item Rank">;
+    ushort Mat_1_Id<name="Mat 1 Id">;
+    ubyte Mat_1_Count<name="Mat 1 Count">;
+    ushort Mat_2_Id<name="Mat 2 Id">;
+    ubyte Mat_2_Count<name="Mat 2 Count">;
+    ushort Mat_3_Id<name="Mat 3 Id">;
+    ubyte Mat_3_Count<name="Mat 3 Count">;
+    ushort Mat_4_Id<name="Mat 4 Id">;
+    ubyte Mat_4_Count<name="Mat 4 Count">;
+    ubyte Unknown_uint8_1<name="Unknown (uint8) 1">;
+    ubyte Unknown_uint8_2<name="Unknown (uint8) 2">;
+    ubyte Unknown_uint8_3<name="Unknown (uint8) 3">;
+    ubyte Unknown_uint8_4<name="Unknown (uint8) 4">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

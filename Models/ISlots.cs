@@ -1,5 +1,5 @@
 ﻿namespace MHW_Editor.Models {
-    public interface ISlots : IMhwItem {
+    public interface ISlots : IJsonItem {
         byte Slot_Count  { get; set; }
         byte Slot_1_Size { get; set; }
         byte Slot_2_Size { get; set; }

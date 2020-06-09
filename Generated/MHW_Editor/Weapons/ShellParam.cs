@@ -64,6 +64,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 200;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -120,6 +122,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Path));
                 }
             }
+
+            public const int lastSortIndex = 150;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -400,6 +404,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 950;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -497,6 +503,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Number_of_Linked_Shell_Params));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -598,6 +606,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_3));
                 }
             }
+
+            public const int lastSortIndex = 300;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1221,6 +1231,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 2150;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -1738,6 +1750,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Sound_Custom_3));
                 }
             }
+
+            public const int lastSortIndex = 1350;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -2377,6 +2391,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 1950;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -2534,6 +2550,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Number_of_Modifiers));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -2832,6 +2850,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 1000;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var countTarget = (Number_of_Modifiers_Holder) lastStruct.Last();
@@ -2907,6 +2927,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_55));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

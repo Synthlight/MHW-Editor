@@ -105,13 +105,11 @@ uint Unk_73<name="Unk 73">;
 float Unk_74<name="Unk 74">;
 float Unk_75<name="Unk 75">;
 float Unk_76<name="Unk 76">;
-ubyte Unk_77<name="Unk 77">;
-int Unk_78<name="Unk 78">;
 
 // Unk Arr 2 (Shared)
 typedef struct {
-    float Unk_1<name="Unk 1">;
-    float Unk_2<name="Unk 2">;
+    ubyte Unk_1<name="Unk 1">;
+    int Unk_2<name="Unk 2">;
     float Unk_3<name="Unk 3">;
     float Unk_4<name="Unk 4">;
     float Unk_5<name="Unk 5">;
@@ -123,12 +121,14 @@ typedef struct {
     float Unk_11<name="Unk 11">;
     float Unk_12<name="Unk 12">;
     float Unk_13<name="Unk 13">;
-    ubyte Unk_14<name="Unk 14">;
-    int Unk_15<name="Unk 15">;
+    float Unk_14<name="Unk 14">;
+    float Unk_15<name="Unk 15">;
 } Unk_Arr_2_Shared_;
 
 Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false, name="Unk Arr 2 (Shared)">;
 
+ubyte Unk_77<name="Unk 77">;
+int Unk_78<name="Unk 78">;
 float Unk_79<name="Unk 79">;
 float Unk_80<name="Unk 80">;
 float Unk_81<name="Unk 81">;
@@ -159,7 +159,7 @@ float Unk_104<name="Unk 104">;
 float Unk_105<name="Unk 105">;
 float Unk_106<name="Unk 106">;
 float Unk_107<name="Unk 107">;
-float Unk_108<name="Unk 108">;
+float Fullburst_Rounds_per_Second_0_05_1200RPM_<name="Fullburst Rounds per Second (0.05 = 1200RPM)">;
 float Unk_109<name="Unk 109">;
 float Unk_110<name="Unk 110">;
 float Unk_111<name="Unk 111">;
@@ -288,7 +288,7 @@ typedef struct {
     uint Full_Burst_Per_Shell_<name="Full Burst (Per Shell)">;
     uint Wyvernfire<name="Wyvernfire">;
     uint Wyrmstake<name="Wyrmstake">;
-    uint Unk_6<name="Unk 6">;
+    uint Slinger_Wyrmstake<name="Slinger Wyrmstake">;
 } Shelling_Sharpness_Usage;
 
 Shelling_Sharpness_Usage Shelling_Sharpness_Usage_[3]<optimize=false, name="Shelling Sharpness Usage">;
@@ -299,10 +299,10 @@ float Unk_293<name="Unk 293">;
 // Action Param 1
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_1;
 
 Action_Param_1 Action_Param_1_[10]<optimize=false, name="Action Param 1">;
@@ -321,10 +321,10 @@ float Unk_303<name="Unk 303">;
 // Action Param 2
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_2;
 
 Action_Param_2 Action_Param_2_<name="Action Param 2">;
@@ -353,20 +353,15 @@ float Charge_Shell_Damage_Multiplier<name="Charge Shell Damage Multiplier">;
 float Wyvernfire_Damage_Multiplier<name="Wyvernfire Damage Multiplier">;
 float Wyrmstake_Explosion_Damage_Multiplier<name="Wyrmstake Explosion Damage Multiplier">;
 float Ally_Attack_Trigger_Explosion<name="Ally Attack Trigger Explosion">;
-float Thorn_Pod_Base_Duration<name="Thorn Pod Base Duration">;
-float Thorn_Pod_Extra_Duration<name="Thorn Pod Extra Duration">;
-float Bomb_Pierce_Pod_Base_Duration<name="Bomb/Pierce Pod Base Duration">;
-float Bomb_Pierce_Pod_Extra_Duration<name="Bomb/Pierce Pod Extra Duration">;
-float Scatternut_Crystalburst_Torch_Pod_Brightmoss_Base_Duration<name="Scatternut/Crystalburst/Torch Pod/Brightmoss Base Duration">;
-float Scatternut_Crystalburst_Torch_Pod_Brightmoss_Extra_Duration<name="Scatternut/Crystalburst/Torch Pod/Brightmoss Extra Duration">;
-float Puddle_Dragon_Base_Duration<name="Puddle/Dragon Base Duration">;
-float Puddle_Dragon_Pod_Extra_Duration<name="Puddle/Dragon Pod Extra Duration">;
-float Unk_336<name="Unk 336">;
-float Unk_337<name="Unk 337">;
-float Redpit_Base_Duration<name="Redpit Base Duration">;
-float Redpit_Extra_Duration<name="Redpit Extra Duration">;
-float Stone_Base_Duration<name="Stone Base Duration">;
-float Stone_Extra_Duration<name="Stone Extra Duration">;
+
+// W07p Params (10) - Wyrmstake Blast Duration per Pod
+typedef struct {
+    float Base<name="Base">;
+    float Extra<name="Extra">;
+} W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod;
+
+W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod_[7]<optimize=false, name="W07p Params (10) - Wyrmstake Blast Duration per Pod">;
+
 float Unk_342<name="Unk 342">;
 float Unk_343<name="Unk 343">;
 float Unk_344<name="Unk 344">;
@@ -374,10 +369,10 @@ float Unk_344<name="Unk 344">;
 // Action Param 3
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_3;
 
 Action_Param_3 Action_Param_3_<name="Action Param 3">;

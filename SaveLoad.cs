@@ -39,10 +39,10 @@ namespace MHW_Editor {
 
             const BindingFlags flags = BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy;
             // ReSharper disable PossibleNullReferenceException
-            var initialOffset    = (ulong) targetFileType.GetField(nameof(Armor.InitialOffset), flags).GetValue(null);
-            var structSize       = (uint) targetFileType.GetField(nameof(Armor.StructSize), flags).GetValue(null);
-            var entryCountOffset = (long) targetFileType.GetField(nameof(Armor.EntryCountOffset), flags).GetValue(null);
-            var encryptionKey    = (string) targetFileType.GetField(nameof(Armor.EncryptionKey), flags).GetValue(null);
+            var initialOffset    = (ulong) targetFileType.GetField("InitialOffset", flags).GetValue(null);
+            var structSize       = (uint) targetFileType.GetField("StructSize", flags).GetValue(null);
+            var entryCountOffset = (long) targetFileType.GetField("EntryCountOffset", flags).GetValue(null);
+            var encryptionKey    = (string) targetFileType.GetField("EncryptionKey", flags).GetValue(null);
 
             var weaponFilename = Path.GetFileNameWithoutExtension(targetFile);
 

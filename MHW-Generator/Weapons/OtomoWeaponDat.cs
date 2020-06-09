@@ -1,39 +1,38 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 using MHW_Template.Weapons;
 
 namespace MHW_Generator.Weapons {
-    public class OtomoWeaponDat : ISingleStruct {
-        public SingleStruct Generate() { // .owp_dat
-            return new SingleStruct("MHW_Editor.Weapons", "OtomoWeaponDat", new MhwStructData {
-                size             = 38,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                encryptionKey    = EncryptionKeys.OWP_DAT_KEY,
-                uniqueIdFormula  = "{Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Index", 0, typeof(uint)),
-                    new MhwStructData.Entry("Id", 32, typeof(ushort)),
-                    new MhwStructData.Entry("Set Id", 4, typeof(ushort)),
-                    new MhwStructData.Entry("Element", 6, typeof(byte), typeof(Element)),
-                    new MhwStructData.Entry("Attack Type", 7, typeof(ushort), typeof(AttackType)),
-                    new MhwStructData.Entry("Melee Damage", 9, typeof(ushort)),
-                    new MhwStructData.Entry("Ranged Damage", 11, typeof(ushort)),
-                    new MhwStructData.Entry("Elemental Damage", 13, typeof(ushort)),
-                    new MhwStructData.Entry("Affinity", 15, typeof(short)),
-                    new MhwStructData.Entry("Defense", 17, typeof(ushort)),
-                    new MhwStructData.Entry("Elderseal", 19, typeof(byte)),
-                    new MhwStructData.Entry("Rarity", 20, typeof(byte)),
-                    new MhwStructData.Entry("Order", 21, typeof(ushort)),
-                    new MhwStructData.Entry("Unk", 23, typeof(uint)),
-                    new MhwStructData.Entry("Cost", 27, typeof(uint)),
-                    new MhwStructData.Entry("Unknown (byte) 1", 31, typeof(byte)),
-                    new MhwStructData.Entry("GMD Name Index", 34, typeof(ushort), true),
-                    new MhwStructData.Entry("GMD Description Index", 36, typeof(ushort), true)
-                }
-            });
+    public class OtomoWeaponDat : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .owp_dat
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Index", typeof(uint)),
+                    new MhwMultiStructData.Entry("Set Id", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Element", typeof(byte), enumReturn: typeof(Element)),
+                    new MhwMultiStructData.Entry("Attack Type", typeof(ushort), enumReturn: typeof(AttackType)),
+                    new MhwMultiStructData.Entry("Melee Damage", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Ranged Damage", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Elemental Damage", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Affinity", typeof(short)),
+                    new MhwMultiStructData.Entry("Defense", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Elderseal", typeof(byte)),
+                    new MhwMultiStructData.Entry("Rarity", typeof(byte)),
+                    new MhwMultiStructData.Entry("Order", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk", typeof(uint)),
+                    new MhwMultiStructData.Entry("Cost", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unknown (byte) 1", typeof(byte)),
+                    new MhwMultiStructData.Entry("Id", typeof(ushort), overrideSortIndex: true),
+                    new MhwMultiStructData.Entry("GMD Name Index", typeof(ushort), true),
+                    new MhwMultiStructData.Entry("GMD Description Index", typeof(ushort), true)
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Weapons", "OtomoWeaponDat", new MhwMultiStructData(structs, "owp_dat", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".owp_dat"]));
         }
     }
 }

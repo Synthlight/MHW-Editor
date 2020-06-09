@@ -48,6 +48,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 150;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -151,6 +153,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_5));
                 }
             }
+
+            public const int lastSortIndex = 300;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -549,6 +553,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 1350;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -710,6 +716,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Knockback_Threshold_Large));
                 }
             }
+
+            public const int lastSortIndex = 250;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1428,33 +1436,7 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected byte Unk_77_raw;
-            public const string Unk_77_displayName = "Unk 77";
-            public const int Unk_77_sortIndex = 2500;
-            [SortOrder(Unk_77_sortIndex)]
-            [DisplayName(Unk_77_displayName)]
-            public virtual byte Unk_77 {
-                get => Unk_77_raw;
-                set {
-                    if (Unk_77_raw == value) return;
-                    Unk_77_raw = value;
-                    OnPropertyChanged(nameof(Unk_77));
-                }
-            }
-
-            protected int Unk_78_raw;
-            public const string Unk_78_displayName = "Unk 78";
-            public const int Unk_78_sortIndex = 2550;
-            [SortOrder(Unk_78_sortIndex)]
-            [DisplayName(Unk_78_displayName)]
-            public virtual int Unk_78 {
-                get => Unk_78_raw;
-                set {
-                    if (Unk_78_raw == value) return;
-                    Unk_78_raw = value;
-                    OnPropertyChanged(nameof(Unk_78));
-                }
-            }
+            public const int lastSortIndex = 2500;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1517,8 +1499,6 @@ namespace MHW_Editor.Weapons {
                 data.Unk_74_raw = reader.ReadSingle();
                 data.Unk_75_raw = reader.ReadSingle();
                 data.Unk_76_raw = reader.ReadSingle();
-                data.Unk_77_raw = reader.ReadByte();
-                data.Unk_78_raw = reader.ReadInt32();
                 return data;
             }
 
@@ -1572,8 +1552,6 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_74_raw);
                 writer.Write(Unk_75_raw);
                 writer.Write(Unk_76_raw);
-                writer.Write(Unk_77_raw);
-                writer.Write(Unk_78_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
@@ -1627,8 +1605,6 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 74", "Unk_74"),
                     new MultiStructItemCustomView(this, "Unk 75", "Unk_75"),
                     new MultiStructItemCustomView(this, "Unk 76", "Unk_76"),
-                    new MultiStructItemCustomView(this, "Unk 77", "Unk_77"),
-                    new MultiStructItemCustomView(this, "Unk 78", "Unk_78"),
                 };
             }
         }
@@ -1637,12 +1613,12 @@ namespace MHW_Editor.Weapons {
             public const ulong FixedSizeCount = 8;
             public const string GridName = "Unk Arr 2 (Shared)";
 
-            protected float Unk_1_raw;
+            protected byte Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
             public const int Unk_1_sortIndex = 50;
             [SortOrder(Unk_1_sortIndex)]
             [DisplayName(Unk_1_displayName)]
-            public virtual float Unk_1 {
+            public virtual byte Unk_1 {
                 get => Unk_1_raw;
                 set {
                     if (Unk_1_raw == value) return;
@@ -1651,12 +1627,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_2_raw;
+            protected int Unk_2_raw;
             public const string Unk_2_displayName = "Unk 2";
             public const int Unk_2_sortIndex = 100;
             [SortOrder(Unk_2_sortIndex)]
             [DisplayName(Unk_2_displayName)]
-            public virtual float Unk_2 {
+            public virtual int Unk_2 {
                 get => Unk_2_raw;
                 set {
                     if (Unk_2_raw == value) return;
@@ -1819,12 +1795,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected byte Unk_14_raw;
+            protected float Unk_14_raw;
             public const string Unk_14_displayName = "Unk 14";
             public const int Unk_14_sortIndex = 700;
             [SortOrder(Unk_14_sortIndex)]
             [DisplayName(Unk_14_displayName)]
-            public virtual byte Unk_14 {
+            public virtual float Unk_14 {
                 get => Unk_14_raw;
                 set {
                     if (Unk_14_raw == value) return;
@@ -1833,12 +1809,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected int Unk_15_raw;
+            protected float Unk_15_raw;
             public const string Unk_15_displayName = "Unk 15";
             public const int Unk_15_sortIndex = 750;
             [SortOrder(Unk_15_sortIndex)]
             [DisplayName(Unk_15_displayName)]
-            public virtual int Unk_15 {
+            public virtual float Unk_15 {
                 get => Unk_15_raw;
                 set {
                     if (Unk_15_raw == value) return;
@@ -1846,6 +1822,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_15));
                 }
             }
+
+            public const int lastSortIndex = 800;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1859,8 +1837,8 @@ namespace MHW_Editor.Weapons {
             public static Unk_Arr_2_Shared_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Unk_Arr_2_Shared_();
                 data.Index = i;
-                data.Unk_1_raw = reader.ReadSingle();
-                data.Unk_2_raw = reader.ReadSingle();
+                data.Unk_1_raw = reader.ReadByte();
+                data.Unk_2_raw = reader.ReadInt32();
                 data.Unk_3_raw = reader.ReadSingle();
                 data.Unk_4_raw = reader.ReadSingle();
                 data.Unk_5_raw = reader.ReadSingle();
@@ -1872,8 +1850,8 @@ namespace MHW_Editor.Weapons {
                 data.Unk_11_raw = reader.ReadSingle();
                 data.Unk_12_raw = reader.ReadSingle();
                 data.Unk_13_raw = reader.ReadSingle();
-                data.Unk_14_raw = reader.ReadByte();
-                data.Unk_15_raw = reader.ReadInt32();
+                data.Unk_14_raw = reader.ReadSingle();
+                data.Unk_15_raw = reader.ReadSingle();
                 return data;
             }
 
@@ -1900,9 +1878,37 @@ namespace MHW_Editor.Weapons {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W13p Params (4, Shared)";
 
+            protected byte Unk_77_raw;
+            public const string Unk_77_displayName = "Unk 77";
+            public const int Unk_77_sortIndex = 50;
+            [SortOrder(Unk_77_sortIndex)]
+            [DisplayName(Unk_77_displayName)]
+            public virtual byte Unk_77 {
+                get => Unk_77_raw;
+                set {
+                    if (Unk_77_raw == value) return;
+                    Unk_77_raw = value;
+                    OnPropertyChanged(nameof(Unk_77));
+                }
+            }
+
+            protected int Unk_78_raw;
+            public const string Unk_78_displayName = "Unk 78";
+            public const int Unk_78_sortIndex = 100;
+            [SortOrder(Unk_78_sortIndex)]
+            [DisplayName(Unk_78_displayName)]
+            public virtual int Unk_78 {
+                get => Unk_78_raw;
+                set {
+                    if (Unk_78_raw == value) return;
+                    Unk_78_raw = value;
+                    OnPropertyChanged(nameof(Unk_78));
+                }
+            }
+
             protected float Unk_79_raw;
             public const string Unk_79_displayName = "Unk 79";
-            public const int Unk_79_sortIndex = 50;
+            public const int Unk_79_sortIndex = 150;
             [SortOrder(Unk_79_sortIndex)]
             [DisplayName(Unk_79_displayName)]
             public virtual float Unk_79 {
@@ -1916,7 +1922,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_80_raw;
             public const string Unk_80_displayName = "Unk 80";
-            public const int Unk_80_sortIndex = 100;
+            public const int Unk_80_sortIndex = 200;
             [SortOrder(Unk_80_sortIndex)]
             [DisplayName(Unk_80_displayName)]
             public virtual float Unk_80 {
@@ -1930,7 +1936,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_81_raw;
             public const string Unk_81_displayName = "Unk 81";
-            public const int Unk_81_sortIndex = 150;
+            public const int Unk_81_sortIndex = 250;
             [SortOrder(Unk_81_sortIndex)]
             [DisplayName(Unk_81_displayName)]
             public virtual float Unk_81 {
@@ -1944,7 +1950,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_82_raw;
             public const string Unk_82_displayName = "Unk 82";
-            public const int Unk_82_sortIndex = 200;
+            public const int Unk_82_sortIndex = 300;
             [SortOrder(Unk_82_sortIndex)]
             [DisplayName(Unk_82_displayName)]
             public virtual float Unk_82 {
@@ -1958,7 +1964,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_83_raw;
             public const string Unk_83_displayName = "Unk 83";
-            public const int Unk_83_sortIndex = 250;
+            public const int Unk_83_sortIndex = 350;
             [SortOrder(Unk_83_sortIndex)]
             [DisplayName(Unk_83_displayName)]
             public virtual float Unk_83 {
@@ -1972,7 +1978,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_84_raw;
             public const string Unk_84_displayName = "Unk 84";
-            public const int Unk_84_sortIndex = 300;
+            public const int Unk_84_sortIndex = 400;
             [SortOrder(Unk_84_sortIndex)]
             [DisplayName(Unk_84_displayName)]
             public virtual float Unk_84 {
@@ -1986,7 +1992,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_85_raw;
             public const string Unk_85_displayName = "Unk 85";
-            public const int Unk_85_sortIndex = 350;
+            public const int Unk_85_sortIndex = 450;
             [SortOrder(Unk_85_sortIndex)]
             [DisplayName(Unk_85_displayName)]
             public virtual float Unk_85 {
@@ -2000,7 +2006,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_86_raw;
             public const string Unk_86_displayName = "Unk 86";
-            public const int Unk_86_sortIndex = 400;
+            public const int Unk_86_sortIndex = 500;
             [SortOrder(Unk_86_sortIndex)]
             [DisplayName(Unk_86_displayName)]
             public virtual float Unk_86 {
@@ -2014,7 +2020,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_87_raw;
             public const string Unk_87_displayName = "Unk 87";
-            public const int Unk_87_sortIndex = 450;
+            public const int Unk_87_sortIndex = 550;
             [SortOrder(Unk_87_sortIndex)]
             [DisplayName(Unk_87_displayName)]
             public virtual float Unk_87 {
@@ -2028,7 +2034,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_88_raw;
             public const string Unk_88_displayName = "Unk 88";
-            public const int Unk_88_sortIndex = 500;
+            public const int Unk_88_sortIndex = 600;
             [SortOrder(Unk_88_sortIndex)]
             [DisplayName(Unk_88_displayName)]
             public virtual float Unk_88 {
@@ -2042,7 +2048,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_89_raw;
             public const string Unk_89_displayName = "Unk 89";
-            public const int Unk_89_sortIndex = 550;
+            public const int Unk_89_sortIndex = 650;
             [SortOrder(Unk_89_sortIndex)]
             [DisplayName(Unk_89_displayName)]
             public virtual float Unk_89 {
@@ -2056,7 +2062,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_90_raw;
             public const string Unk_90_displayName = "Unk 90";
-            public const int Unk_90_sortIndex = 600;
+            public const int Unk_90_sortIndex = 700;
             [SortOrder(Unk_90_sortIndex)]
             [DisplayName(Unk_90_displayName)]
             public virtual float Unk_90 {
@@ -2067,6 +2073,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_90));
                 }
             }
+
+            public const int lastSortIndex = 750;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -2080,6 +2088,8 @@ namespace MHW_Editor.Weapons {
             public static W13p_Params_4_Shared_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_4_Shared_();
                 data.Index = i;
+                data.Unk_77_raw = reader.ReadByte();
+                data.Unk_78_raw = reader.ReadInt32();
                 data.Unk_79_raw = reader.ReadSingle();
                 data.Unk_80_raw = reader.ReadSingle();
                 data.Unk_81_raw = reader.ReadSingle();
@@ -2096,6 +2106,8 @@ namespace MHW_Editor.Weapons {
             }
 
             public void WriteData(BinaryWriter writer) {
+                writer.Write(Unk_77_raw);
+                writer.Write(Unk_78_raw);
                 writer.Write(Unk_79_raw);
                 writer.Write(Unk_80_raw);
                 writer.Write(Unk_81_raw);
@@ -2112,6 +2124,8 @@ namespace MHW_Editor.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
+                    new MultiStructItemCustomView(this, "Unk 77", "Unk_77"),
+                    new MultiStructItemCustomView(this, "Unk 78", "Unk_78"),
                     new MultiStructItemCustomView(this, "Unk 79", "Unk_79"),
                     new MultiStructItemCustomView(this, "Unk 80", "Unk_80"),
                     new MultiStructItemCustomView(this, "Unk 81", "Unk_81"),
@@ -4218,6 +4232,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 7500;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -4763,6 +4779,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 300;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 16UL;
@@ -4879,6 +4897,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_6));
                 }
             }
+
+            public const int lastSortIndex = 350;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -5629,6 +5649,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 2600;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -5825,6 +5847,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 100;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -5897,6 +5921,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Large));
                 }
             }
+
+            public const int lastSortIndex = 200;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -6068,6 +6094,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 550;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -6181,6 +6209,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_4));
                 }
             }
+
+            public const int lastSortIndex = 250;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -6955,6 +6985,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 2700;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -7253,6 +7285,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_5));
                 }
             }
+
+            public const int lastSortIndex = 450;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

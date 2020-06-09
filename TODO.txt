@@ -1,5 +1,7 @@
 - Grid Ctrl+V.
 - Json for multi-struct.
+- Save file as.
+- Ability to add rows in single struct view.
 
 
 renkian:

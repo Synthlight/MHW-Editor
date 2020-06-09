@@ -1,29 +1,29 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Skills {
-    public class SkillDat : ISingleStruct {
-        public SingleStruct Generate() { // .skl_dat
-            return new SingleStruct("MHW_Editor.Skills", "SkillDat", new MhwStructData {
-                size             = 27,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Id}|{Level}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(ushort), true),
-                    new MhwStructData.Entry("Level", 2, typeof(byte), true),
-                    new MhwStructData.Entry("Unlock Skill 1", 3, typeof(uint), dataSourceType: DataSourceType.SkillDat),
-                    new MhwStructData.Entry("Unlock Skill 2", 7, typeof(uint), dataSourceType: DataSourceType.SkillDat),
-                    new MhwStructData.Entry("Unlock Skill 3", 11, typeof(uint), dataSourceType: DataSourceType.SkillDat),
-                    new MhwStructData.Entry("Unlock Skill 4", 15, typeof(uint), dataSourceType: DataSourceType.SkillDat),
-                    new MhwStructData.Entry("Param 5", 19, typeof(ushort)),
-                    new MhwStructData.Entry("Param 6", 21, typeof(ushort)),
-                    new MhwStructData.Entry("Param 7", 23, typeof(ushort)),
-                    new MhwStructData.Entry("Param 8", 25, typeof(ushort))
-                }
-            });
+    public class SkillDat : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .skl_dat
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Id", typeof(ushort), true),
+                    new MhwMultiStructData.Entry("Level", typeof(byte), true),
+                    new MhwMultiStructData.Entry("Unlock Skill 1", typeof(uint), dataSourceType: DataSourceType.SkillDat),
+                    new MhwMultiStructData.Entry("Unlock Skill 2", typeof(uint), dataSourceType: DataSourceType.SkillDat),
+                    new MhwMultiStructData.Entry("Unlock Skill 3", typeof(uint), dataSourceType: DataSourceType.SkillDat),
+                    new MhwMultiStructData.Entry("Unlock Skill 4", typeof(uint), dataSourceType: DataSourceType.SkillDat),
+                    new MhwMultiStructData.Entry("Param 5", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Param 6", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Param 7", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Param 8", typeof(ushort))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}|{Level}")
+            };
+
+            return new MultiStruct("MHW_Editor.Skills", "SkillDat", new MhwMultiStructData(structs, "skl_dat"));
         }
     }
 }

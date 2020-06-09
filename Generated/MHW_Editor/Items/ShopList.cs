@@ -64,6 +64,8 @@ namespace MHW_Editor.Items {
                 }
             }
 
+            public const int lastSortIndex = 200;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -161,6 +163,8 @@ namespace MHW_Editor.Items {
                     OnPropertyChanged(nameof(Unk));
                 }
             }
+
+            public const int lastSortIndex = 250;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

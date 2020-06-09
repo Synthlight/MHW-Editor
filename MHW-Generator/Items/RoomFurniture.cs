@@ -1,40 +1,40 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Items {
-    public class RoomFurniture : ISingleStruct {
-        public SingleStruct Generate() { // .rfur
-            return new SingleStruct("MHW_Editor.Items", "RoomFurniture", new MhwStructData {
-                size             = 47,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Index}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
-                    new MhwStructData.Entry("Unk1", 4, typeof(uint)),
-                    new MhwStructData.Entry("Unk2", 8, typeof(uint)),
-                    new MhwStructData.Entry("Unk3", 12, typeof(uint)),
-                    new MhwStructData.Entry("Unk4", 16, typeof(byte), typeof(bool)),
-                    new MhwStructData.Entry("Unk5", 17, typeof(byte)),
-                    new MhwStructData.Entry("Unk6", 18, typeof(byte), typeof(bool)),
-                    new MhwStructData.Entry("Unk7", 19, typeof(byte), typeof(bool)),
-                    new MhwStructData.Entry("Unk8", 20, typeof(byte), typeof(bool)),
-                    new MhwStructData.Entry("Unk9", 21, typeof(byte), typeof(bool)),
-                    new MhwStructData.Entry("Unk10", 22, typeof(byte), typeof(bool)),
-                    new MhwStructData.Entry("Unk11", 23, typeof(byte), typeof(bool)),
-                    new MhwStructData.Entry("Unk12", 24, typeof(byte), typeof(bool)),
-                    new MhwStructData.Entry("Unk13", 25, typeof(byte), typeof(bool)),
-                    new MhwStructData.Entry("Unk14", 26, typeof(byte), typeof(bool)),
-                    new MhwStructData.Entry("Unk15", 27, typeof(int)),
-                    new MhwStructData.Entry("Unk16", 31, typeof(uint)),
-                    new MhwStructData.Entry("Unk17", 35, typeof(ushort)),
-                    new MhwStructData.Entry("Unk18", 37, typeof(ushort)),
-                    new MhwStructData.Entry("Unk19", 39, typeof(uint)),
-                    new MhwStructData.Entry("Unk21", 43, typeof(uint))
-                }
-            });
+    public class RoomFurniture : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .rfur
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Item Id", typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwMultiStructData.Entry("Unk1", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk2", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk3", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk4", typeof(byte), enumReturn: typeof(bool)),
+                    new MhwMultiStructData.Entry("Unk5", typeof(byte)),
+                    new MhwMultiStructData.Entry("Unk6", typeof(byte), enumReturn: typeof(bool)),
+                    new MhwMultiStructData.Entry("Unk7", typeof(byte), enumReturn: typeof(bool)),
+                    new MhwMultiStructData.Entry("Unk8", typeof(byte), enumReturn: typeof(bool)),
+                    new MhwMultiStructData.Entry("Unk9", typeof(byte), enumReturn: typeof(bool)),
+                    new MhwMultiStructData.Entry("Unk10", typeof(byte), enumReturn: typeof(bool)),
+                    new MhwMultiStructData.Entry("Unk11", typeof(byte), enumReturn: typeof(bool)),
+                    new MhwMultiStructData.Entry("Unk12", typeof(byte), enumReturn: typeof(bool)),
+                    new MhwMultiStructData.Entry("Unk13", typeof(byte), enumReturn: typeof(bool)),
+                    new MhwMultiStructData.Entry("Unk14", typeof(byte), enumReturn: typeof(bool)),
+                    new MhwMultiStructData.Entry("Unk15", typeof(int)),
+                    new MhwMultiStructData.Entry("Unk16", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk17", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk18", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk19", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk21", typeof(uint))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
+            };
+
+            return new MultiStruct("MHW_Editor.Items", "RoomFurniture", new MhwMultiStructData(structs, "rfur"));
         }
     }
 }

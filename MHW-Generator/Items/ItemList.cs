@@ -1,21 +1,21 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Items {
-    public class ItemList : ISingleStruct {
-        public SingleStruct Generate() { // .itlist
-            return new SingleStruct("MHW_Editor.Items", "ItemList", new MhwStructData {
-                size             = 8,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Index}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
-                    new MhwStructData.Entry("Quantity", 4, typeof(uint))
-                }
-            });
+    public class ItemList : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .itlist
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Item Id", typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwMultiStructData.Entry("Quantity", typeof(uint))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
+            };
+
+            return new MultiStruct("MHW_Editor.Items", "ItemList", new MhwMultiStructData(structs, "itlist"));
         }
     }
 }

@@ -1,18 +1,25 @@
-﻿using MHW_Editor.Assets;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
 
 namespace MHW_Editor.Weapons {
-    public partial class CustomParts : MhwItem {
-        public CustomParts(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class CustomParts : MhwMultiStructItem<CustomParts>, IShowAsSingleStruct<CustomParts.Entries> {
+        public partial class Entries {
+            public string Name => DataHelper.customPartsNames[MainWindow.locale].TryGet((uint) Index);
+
+            [SortOrder(lastSortIndex + 1)]
+            public string Description => DataHelper.customPartsDescriptions[MainWindow.locale].TryGet((uint) Index);
         }
 
-        public override string Name => DataHelper.customPartsNames[MainWindow.locale].TryGet((uint) Index);
+        public ObservableCollection<object> GetStructList() {
+            return data.Last.Value.list;
+        }
 
-        [SortOrder(lastSortIndex + 1)]
-        public string Description => DataHelper.customPartsDescriptions[MainWindow.locale].TryGet((uint) Index);
-
-        [SortOrder(0)]
-        public ulong Index => (Offset - InitialOffset) / StructSize;
+        public IEnumerable<Entries> GetIterableStructList() {
+            return GetStructList().Cast<Entries>();
+        }
     }
 }

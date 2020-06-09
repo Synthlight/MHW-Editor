@@ -1,26 +1,25 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 using MHW_Template.Weapons;
 
 namespace MHW_Generator.Skills {
-    public class MusicSkill : ISingleStruct {
-        public SingleStruct Generate() { // .msk
-            return new SingleStruct("MHW_Editor.Skills", "MusicSkill", new MhwStructData {
-                size             = 20,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                encryptionKey    = EncryptionKeys.MSK_KEY,
-                uniqueIdFormula  = "{Song_Id_Raw}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Song Id Raw", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Note 1", 4, typeof(int), typeof(NoteColorWithDisabled)),
-                    new MhwStructData.Entry("Note 2", 8, typeof(int), typeof(NoteColorWithDisabled)),
-                    new MhwStructData.Entry("Note 3", 12, typeof(int), typeof(NoteColorWithDisabled)),
-                    new MhwStructData.Entry("Note 4", 16, typeof(int), typeof(NoteColorWithDisabled))
-                }
-            });
+    public class MusicSkill : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .msk
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Song Id Raw", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Note 1", typeof(int), enumReturn: typeof(NoteColorWithDisabled)),
+                    new MhwMultiStructData.Entry("Note 2", typeof(int), enumReturn: typeof(NoteColorWithDisabled)),
+                    new MhwMultiStructData.Entry("Note 3", typeof(int), enumReturn: typeof(NoteColorWithDisabled)),
+                    new MhwMultiStructData.Entry("Note 4", typeof(int), enumReturn: typeof(NoteColorWithDisabled))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Song_Id_Raw}")
+            };
+
+            return new MultiStruct("MHW_Editor.Skills", "MusicSkill", new MhwMultiStructData(structs, "msk", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".msk"]));
         }
     }
 }

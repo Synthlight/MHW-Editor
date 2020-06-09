@@ -48,6 +48,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 150;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -151,6 +153,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_5));
                 }
             }
+
+            public const int lastSortIndex = 300;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -549,6 +553,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 1350;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -710,6 +716,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Knockback_Threshold_Large));
                 }
             }
+
+            public const int lastSortIndex = 250;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1428,33 +1436,7 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected byte Unk_77_raw;
-            public const string Unk_77_displayName = "Unk 77";
-            public const int Unk_77_sortIndex = 2500;
-            [SortOrder(Unk_77_sortIndex)]
-            [DisplayName(Unk_77_displayName)]
-            public virtual byte Unk_77 {
-                get => Unk_77_raw;
-                set {
-                    if (Unk_77_raw == value) return;
-                    Unk_77_raw = value;
-                    OnPropertyChanged(nameof(Unk_77));
-                }
-            }
-
-            protected int Unk_78_raw;
-            public const string Unk_78_displayName = "Unk 78";
-            public const int Unk_78_sortIndex = 2550;
-            [SortOrder(Unk_78_sortIndex)]
-            [DisplayName(Unk_78_displayName)]
-            public virtual int Unk_78 {
-                get => Unk_78_raw;
-                set {
-                    if (Unk_78_raw == value) return;
-                    Unk_78_raw = value;
-                    OnPropertyChanged(nameof(Unk_78));
-                }
-            }
+            public const int lastSortIndex = 2500;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1517,8 +1499,6 @@ namespace MHW_Editor.Weapons {
                 data.Unk_74_raw = reader.ReadSingle();
                 data.Unk_75_raw = reader.ReadSingle();
                 data.Unk_76_raw = reader.ReadSingle();
-                data.Unk_77_raw = reader.ReadByte();
-                data.Unk_78_raw = reader.ReadInt32();
                 return data;
             }
 
@@ -1572,8 +1552,6 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Unk_74_raw);
                 writer.Write(Unk_75_raw);
                 writer.Write(Unk_76_raw);
-                writer.Write(Unk_77_raw);
-                writer.Write(Unk_78_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
@@ -1627,8 +1605,6 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Unk 74", "Unk_74"),
                     new MultiStructItemCustomView(this, "Unk 75", "Unk_75"),
                     new MultiStructItemCustomView(this, "Unk 76", "Unk_76"),
-                    new MultiStructItemCustomView(this, "Unk 77", "Unk_77"),
-                    new MultiStructItemCustomView(this, "Unk 78", "Unk_78"),
                 };
             }
         }
@@ -1637,12 +1613,12 @@ namespace MHW_Editor.Weapons {
             public const ulong FixedSizeCount = 8;
             public const string GridName = "Unk Arr 2 (Shared)";
 
-            protected float Unk_1_raw;
+            protected byte Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
             public const int Unk_1_sortIndex = 50;
             [SortOrder(Unk_1_sortIndex)]
             [DisplayName(Unk_1_displayName)]
-            public virtual float Unk_1 {
+            public virtual byte Unk_1 {
                 get => Unk_1_raw;
                 set {
                     if (Unk_1_raw == value) return;
@@ -1651,12 +1627,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_2_raw;
+            protected int Unk_2_raw;
             public const string Unk_2_displayName = "Unk 2";
             public const int Unk_2_sortIndex = 100;
             [SortOrder(Unk_2_sortIndex)]
             [DisplayName(Unk_2_displayName)]
-            public virtual float Unk_2 {
+            public virtual int Unk_2 {
                 get => Unk_2_raw;
                 set {
                     if (Unk_2_raw == value) return;
@@ -1819,12 +1795,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected byte Unk_14_raw;
+            protected float Unk_14_raw;
             public const string Unk_14_displayName = "Unk 14";
             public const int Unk_14_sortIndex = 700;
             [SortOrder(Unk_14_sortIndex)]
             [DisplayName(Unk_14_displayName)]
-            public virtual byte Unk_14 {
+            public virtual float Unk_14 {
                 get => Unk_14_raw;
                 set {
                     if (Unk_14_raw == value) return;
@@ -1833,12 +1809,12 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected int Unk_15_raw;
+            protected float Unk_15_raw;
             public const string Unk_15_displayName = "Unk 15";
             public const int Unk_15_sortIndex = 750;
             [SortOrder(Unk_15_sortIndex)]
             [DisplayName(Unk_15_displayName)]
-            public virtual int Unk_15 {
+            public virtual float Unk_15 {
                 get => Unk_15_raw;
                 set {
                     if (Unk_15_raw == value) return;
@@ -1846,6 +1822,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_15));
                 }
             }
+
+            public const int lastSortIndex = 800;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1859,8 +1837,8 @@ namespace MHW_Editor.Weapons {
             public static Unk_Arr_2_Shared_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Unk_Arr_2_Shared_();
                 data.Index = i;
-                data.Unk_1_raw = reader.ReadSingle();
-                data.Unk_2_raw = reader.ReadSingle();
+                data.Unk_1_raw = reader.ReadByte();
+                data.Unk_2_raw = reader.ReadInt32();
                 data.Unk_3_raw = reader.ReadSingle();
                 data.Unk_4_raw = reader.ReadSingle();
                 data.Unk_5_raw = reader.ReadSingle();
@@ -1872,8 +1850,8 @@ namespace MHW_Editor.Weapons {
                 data.Unk_11_raw = reader.ReadSingle();
                 data.Unk_12_raw = reader.ReadSingle();
                 data.Unk_13_raw = reader.ReadSingle();
-                data.Unk_14_raw = reader.ReadByte();
-                data.Unk_15_raw = reader.ReadInt32();
+                data.Unk_14_raw = reader.ReadSingle();
+                data.Unk_15_raw = reader.ReadSingle();
                 return data;
             }
 
@@ -1900,9 +1878,37 @@ namespace MHW_Editor.Weapons {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W11p Params (4, Shared)";
 
+            protected byte Unk_77_raw;
+            public const string Unk_77_displayName = "Unk 77";
+            public const int Unk_77_sortIndex = 50;
+            [SortOrder(Unk_77_sortIndex)]
+            [DisplayName(Unk_77_displayName)]
+            public virtual byte Unk_77 {
+                get => Unk_77_raw;
+                set {
+                    if (Unk_77_raw == value) return;
+                    Unk_77_raw = value;
+                    OnPropertyChanged(nameof(Unk_77));
+                }
+            }
+
+            protected int Unk_78_raw;
+            public const string Unk_78_displayName = "Unk 78";
+            public const int Unk_78_sortIndex = 100;
+            [SortOrder(Unk_78_sortIndex)]
+            [DisplayName(Unk_78_displayName)]
+            public virtual int Unk_78 {
+                get => Unk_78_raw;
+                set {
+                    if (Unk_78_raw == value) return;
+                    Unk_78_raw = value;
+                    OnPropertyChanged(nameof(Unk_78));
+                }
+            }
+
             protected float Unk_79_raw;
             public const string Unk_79_displayName = "Unk 79";
-            public const int Unk_79_sortIndex = 50;
+            public const int Unk_79_sortIndex = 150;
             [SortOrder(Unk_79_sortIndex)]
             [DisplayName(Unk_79_displayName)]
             public virtual float Unk_79 {
@@ -1916,7 +1922,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_80_raw;
             public const string Unk_80_displayName = "Unk 80";
-            public const int Unk_80_sortIndex = 100;
+            public const int Unk_80_sortIndex = 200;
             [SortOrder(Unk_80_sortIndex)]
             [DisplayName(Unk_80_displayName)]
             public virtual float Unk_80 {
@@ -1930,7 +1936,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_81_raw;
             public const string Unk_81_displayName = "Unk 81";
-            public const int Unk_81_sortIndex = 150;
+            public const int Unk_81_sortIndex = 250;
             [SortOrder(Unk_81_sortIndex)]
             [DisplayName(Unk_81_displayName)]
             public virtual float Unk_81 {
@@ -1944,7 +1950,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_82_raw;
             public const string Unk_82_displayName = "Unk 82";
-            public const int Unk_82_sortIndex = 200;
+            public const int Unk_82_sortIndex = 300;
             [SortOrder(Unk_82_sortIndex)]
             [DisplayName(Unk_82_displayName)]
             public virtual float Unk_82 {
@@ -1958,7 +1964,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_83_raw;
             public const string Unk_83_displayName = "Unk 83";
-            public const int Unk_83_sortIndex = 250;
+            public const int Unk_83_sortIndex = 350;
             [SortOrder(Unk_83_sortIndex)]
             [DisplayName(Unk_83_displayName)]
             public virtual float Unk_83 {
@@ -1972,7 +1978,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_84_raw;
             public const string Unk_84_displayName = "Unk 84";
-            public const int Unk_84_sortIndex = 300;
+            public const int Unk_84_sortIndex = 400;
             [SortOrder(Unk_84_sortIndex)]
             [DisplayName(Unk_84_displayName)]
             public virtual float Unk_84 {
@@ -1986,7 +1992,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_85_raw;
             public const string Unk_85_displayName = "Unk 85";
-            public const int Unk_85_sortIndex = 350;
+            public const int Unk_85_sortIndex = 450;
             [SortOrder(Unk_85_sortIndex)]
             [DisplayName(Unk_85_displayName)]
             public virtual float Unk_85 {
@@ -2000,7 +2006,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_86_raw;
             public const string Unk_86_displayName = "Unk 86";
-            public const int Unk_86_sortIndex = 400;
+            public const int Unk_86_sortIndex = 500;
             [SortOrder(Unk_86_sortIndex)]
             [DisplayName(Unk_86_displayName)]
             public virtual float Unk_86 {
@@ -2014,7 +2020,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_87_raw;
             public const string Unk_87_displayName = "Unk 87";
-            public const int Unk_87_sortIndex = 450;
+            public const int Unk_87_sortIndex = 550;
             [SortOrder(Unk_87_sortIndex)]
             [DisplayName(Unk_87_displayName)]
             public virtual float Unk_87 {
@@ -2028,7 +2034,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_88_raw;
             public const string Unk_88_displayName = "Unk 88";
-            public const int Unk_88_sortIndex = 500;
+            public const int Unk_88_sortIndex = 600;
             [SortOrder(Unk_88_sortIndex)]
             [DisplayName(Unk_88_displayName)]
             public virtual float Unk_88 {
@@ -2042,7 +2048,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_89_raw;
             public const string Unk_89_displayName = "Unk 89";
-            public const int Unk_89_sortIndex = 550;
+            public const int Unk_89_sortIndex = 650;
             [SortOrder(Unk_89_sortIndex)]
             [DisplayName(Unk_89_displayName)]
             public virtual float Unk_89 {
@@ -2056,7 +2062,7 @@ namespace MHW_Editor.Weapons {
 
             protected float Unk_90_raw;
             public const string Unk_90_displayName = "Unk 90";
-            public const int Unk_90_sortIndex = 600;
+            public const int Unk_90_sortIndex = 700;
             [SortOrder(Unk_90_sortIndex)]
             [DisplayName(Unk_90_displayName)]
             public virtual float Unk_90 {
@@ -2067,6 +2073,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_90));
                 }
             }
+
+            public const int lastSortIndex = 750;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -2080,6 +2088,8 @@ namespace MHW_Editor.Weapons {
             public static W11p_Params_4_Shared_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W11p_Params_4_Shared_();
                 data.Index = i;
+                data.Unk_77_raw = reader.ReadByte();
+                data.Unk_78_raw = reader.ReadInt32();
                 data.Unk_79_raw = reader.ReadSingle();
                 data.Unk_80_raw = reader.ReadSingle();
                 data.Unk_81_raw = reader.ReadSingle();
@@ -2096,6 +2106,8 @@ namespace MHW_Editor.Weapons {
             }
 
             public void WriteData(BinaryWriter writer) {
+                writer.Write(Unk_77_raw);
+                writer.Write(Unk_78_raw);
                 writer.Write(Unk_79_raw);
                 writer.Write(Unk_80_raw);
                 writer.Write(Unk_81_raw);
@@ -2112,6 +2124,8 @@ namespace MHW_Editor.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
+                    new MultiStructItemCustomView(this, "Unk 77", "Unk_77"),
+                    new MultiStructItemCustomView(this, "Unk 78", "Unk_78"),
                     new MultiStructItemCustomView(this, "Unk 79", "Unk_79"),
                     new MultiStructItemCustomView(this, "Unk 80", "Unk_80"),
                     new MultiStructItemCustomView(this, "Unk 81", "Unk_81"),
@@ -2187,6 +2201,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Level_4));
                 }
             }
+
+            public const int lastSortIndex = 250;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -2288,6 +2304,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(P));
                 }
             }
+
+            public const int lastSortIndex = 300;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -2672,6 +2690,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 1300;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -2830,6 +2850,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Level_4));
                 }
             }
+
+            public const int lastSortIndex = 250;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -3058,6 +3080,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 750;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 12UL;
@@ -3123,61 +3147,63 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float G_Rate_raw;
-            public const string G_Rate_displayName = "G Rate";
-            public const int G_Rate_sortIndex = 100;
-            [SortOrder(G_Rate_sortIndex)]
-            [DisplayName(G_Rate_displayName)]
-            public virtual float G_Rate {
-                get => G_Rate_raw;
+            protected float Speed_Rate_raw;
+            public const string Speed_Rate_displayName = "Speed Rate";
+            public const int Speed_Rate_sortIndex = 100;
+            [SortOrder(Speed_Rate_sortIndex)]
+            [DisplayName(Speed_Rate_displayName)]
+            public virtual float Speed_Rate {
+                get => Speed_Rate_raw;
                 set {
-                    if (G_Rate_raw == value) return;
-                    G_Rate_raw = value;
-                    OnPropertyChanged(nameof(G_Rate));
+                    if (Speed_Rate_raw == value) return;
+                    Speed_Rate_raw = value;
+                    OnPropertyChanged(nameof(Speed_Rate));
                 }
             }
 
-            protected float Momentum_raw;
-            public const string Momentum_displayName = "Momentum";
-            public const int Momentum_sortIndex = 150;
-            [SortOrder(Momentum_sortIndex)]
-            [DisplayName(Momentum_displayName)]
-            public virtual float Momentum {
-                get => Momentum_raw;
+            protected float X_Offset_raw;
+            public const string X_Offset_displayName = "X Offset";
+            public const int X_Offset_sortIndex = 150;
+            [SortOrder(X_Offset_sortIndex)]
+            [DisplayName(X_Offset_displayName)]
+            public virtual float X_Offset {
+                get => X_Offset_raw;
                 set {
-                    if (Momentum_raw == value) return;
-                    Momentum_raw = value;
-                    OnPropertyChanged(nameof(Momentum));
+                    if (X_Offset_raw == value) return;
+                    X_Offset_raw = value;
+                    OnPropertyChanged(nameof(X_Offset));
                 }
             }
 
-            protected float V_Offset_raw;
-            public const string V_Offset_displayName = "V Offset";
-            public const int V_Offset_sortIndex = 200;
-            [SortOrder(V_Offset_sortIndex)]
-            [DisplayName(V_Offset_displayName)]
-            public virtual float V_Offset {
-                get => V_Offset_raw;
+            protected float Y_Offset_raw;
+            public const string Y_Offset_displayName = "Y Offset";
+            public const int Y_Offset_sortIndex = 200;
+            [SortOrder(Y_Offset_sortIndex)]
+            [DisplayName(Y_Offset_displayName)]
+            public virtual float Y_Offset {
+                get => Y_Offset_raw;
                 set {
-                    if (V_Offset_raw == value) return;
-                    V_Offset_raw = value;
-                    OnPropertyChanged(nameof(V_Offset));
+                    if (Y_Offset_raw == value) return;
+                    Y_Offset_raw = value;
+                    OnPropertyChanged(nameof(Y_Offset));
                 }
             }
 
-            protected float H_Offset_raw;
-            public const string H_Offset_displayName = "H Offset";
-            public const int H_Offset_sortIndex = 250;
-            [SortOrder(H_Offset_sortIndex)]
-            [DisplayName(H_Offset_displayName)]
-            public virtual float H_Offset {
-                get => H_Offset_raw;
+            protected float Z_Offset_raw;
+            public const string Z_Offset_displayName = "Z Offset";
+            public const int Z_Offset_sortIndex = 250;
+            [SortOrder(Z_Offset_sortIndex)]
+            [DisplayName(Z_Offset_displayName)]
+            public virtual float Z_Offset {
+                get => Z_Offset_raw;
                 set {
-                    if (H_Offset_raw == value) return;
-                    H_Offset_raw = value;
-                    OnPropertyChanged(nameof(H_Offset));
+                    if (Z_Offset_raw == value) return;
+                    Z_Offset_raw = value;
+                    OnPropertyChanged(nameof(Z_Offset));
                 }
             }
+
+            public const int lastSortIndex = 300;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -3192,19 +3218,19 @@ namespace MHW_Editor.Weapons {
                 var data = new Action_Param_1();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
-                data.G_Rate_raw = reader.ReadSingle();
-                data.Momentum_raw = reader.ReadSingle();
-                data.V_Offset_raw = reader.ReadSingle();
-                data.H_Offset_raw = reader.ReadSingle();
+                data.Speed_Rate_raw = reader.ReadSingle();
+                data.X_Offset_raw = reader.ReadSingle();
+                data.Y_Offset_raw = reader.ReadSingle();
+                data.Z_Offset_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Gravity_raw);
-                writer.Write(G_Rate_raw);
-                writer.Write(Momentum_raw);
-                writer.Write(V_Offset_raw);
-                writer.Write(H_Offset_raw);
+                writer.Write(Speed_Rate_raw);
+                writer.Write(X_Offset_raw);
+                writer.Write(Y_Offset_raw);
+                writer.Write(Z_Offset_raw);
             }
         }
 
@@ -3548,6 +3574,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 1250;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -3662,61 +3690,63 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float G_Rate_raw;
-            public const string G_Rate_displayName = "G Rate";
-            public const int G_Rate_sortIndex = 100;
-            [SortOrder(G_Rate_sortIndex)]
-            [DisplayName(G_Rate_displayName)]
-            public virtual float G_Rate {
-                get => G_Rate_raw;
+            protected float Speed_Rate_raw;
+            public const string Speed_Rate_displayName = "Speed Rate";
+            public const int Speed_Rate_sortIndex = 100;
+            [SortOrder(Speed_Rate_sortIndex)]
+            [DisplayName(Speed_Rate_displayName)]
+            public virtual float Speed_Rate {
+                get => Speed_Rate_raw;
                 set {
-                    if (G_Rate_raw == value) return;
-                    G_Rate_raw = value;
-                    OnPropertyChanged(nameof(G_Rate));
+                    if (Speed_Rate_raw == value) return;
+                    Speed_Rate_raw = value;
+                    OnPropertyChanged(nameof(Speed_Rate));
                 }
             }
 
-            protected float Momentum_raw;
-            public const string Momentum_displayName = "Momentum";
-            public const int Momentum_sortIndex = 150;
-            [SortOrder(Momentum_sortIndex)]
-            [DisplayName(Momentum_displayName)]
-            public virtual float Momentum {
-                get => Momentum_raw;
+            protected float X_Offset_raw;
+            public const string X_Offset_displayName = "X Offset";
+            public const int X_Offset_sortIndex = 150;
+            [SortOrder(X_Offset_sortIndex)]
+            [DisplayName(X_Offset_displayName)]
+            public virtual float X_Offset {
+                get => X_Offset_raw;
                 set {
-                    if (Momentum_raw == value) return;
-                    Momentum_raw = value;
-                    OnPropertyChanged(nameof(Momentum));
+                    if (X_Offset_raw == value) return;
+                    X_Offset_raw = value;
+                    OnPropertyChanged(nameof(X_Offset));
                 }
             }
 
-            protected float V_Offset_raw;
-            public const string V_Offset_displayName = "V Offset";
-            public const int V_Offset_sortIndex = 200;
-            [SortOrder(V_Offset_sortIndex)]
-            [DisplayName(V_Offset_displayName)]
-            public virtual float V_Offset {
-                get => V_Offset_raw;
+            protected float Y_Offset_raw;
+            public const string Y_Offset_displayName = "Y Offset";
+            public const int Y_Offset_sortIndex = 200;
+            [SortOrder(Y_Offset_sortIndex)]
+            [DisplayName(Y_Offset_displayName)]
+            public virtual float Y_Offset {
+                get => Y_Offset_raw;
                 set {
-                    if (V_Offset_raw == value) return;
-                    V_Offset_raw = value;
-                    OnPropertyChanged(nameof(V_Offset));
+                    if (Y_Offset_raw == value) return;
+                    Y_Offset_raw = value;
+                    OnPropertyChanged(nameof(Y_Offset));
                 }
             }
 
-            protected float H_Offset_raw;
-            public const string H_Offset_displayName = "H Offset";
-            public const int H_Offset_sortIndex = 250;
-            [SortOrder(H_Offset_sortIndex)]
-            [DisplayName(H_Offset_displayName)]
-            public virtual float H_Offset {
-                get => H_Offset_raw;
+            protected float Z_Offset_raw;
+            public const string Z_Offset_displayName = "Z Offset";
+            public const int Z_Offset_sortIndex = 250;
+            [SortOrder(Z_Offset_sortIndex)]
+            [DisplayName(Z_Offset_displayName)]
+            public virtual float Z_Offset {
+                get => Z_Offset_raw;
                 set {
-                    if (H_Offset_raw == value) return;
-                    H_Offset_raw = value;
-                    OnPropertyChanged(nameof(H_Offset));
+                    if (Z_Offset_raw == value) return;
+                    Z_Offset_raw = value;
+                    OnPropertyChanged(nameof(Z_Offset));
                 }
             }
+
+            public const int lastSortIndex = 300;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -3731,19 +3761,19 @@ namespace MHW_Editor.Weapons {
                 var data = new Action_Param_2();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
-                data.G_Rate_raw = reader.ReadSingle();
-                data.Momentum_raw = reader.ReadSingle();
-                data.V_Offset_raw = reader.ReadSingle();
-                data.H_Offset_raw = reader.ReadSingle();
+                data.Speed_Rate_raw = reader.ReadSingle();
+                data.X_Offset_raw = reader.ReadSingle();
+                data.Y_Offset_raw = reader.ReadSingle();
+                data.Z_Offset_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Gravity_raw);
-                writer.Write(G_Rate_raw);
-                writer.Write(Momentum_raw);
-                writer.Write(V_Offset_raw);
-                writer.Write(H_Offset_raw);
+                writer.Write(Speed_Rate_raw);
+                writer.Write(X_Offset_raw);
+                writer.Write(Y_Offset_raw);
+                writer.Write(Z_Offset_raw);
             }
         }
 
@@ -4633,6 +4663,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 3200;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -4864,61 +4896,63 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float G_Rate_raw;
-            public const string G_Rate_displayName = "G Rate";
-            public const int G_Rate_sortIndex = 100;
-            [SortOrder(G_Rate_sortIndex)]
-            [DisplayName(G_Rate_displayName)]
-            public virtual float G_Rate {
-                get => G_Rate_raw;
+            protected float Speed_Rate_raw;
+            public const string Speed_Rate_displayName = "Speed Rate";
+            public const int Speed_Rate_sortIndex = 100;
+            [SortOrder(Speed_Rate_sortIndex)]
+            [DisplayName(Speed_Rate_displayName)]
+            public virtual float Speed_Rate {
+                get => Speed_Rate_raw;
                 set {
-                    if (G_Rate_raw == value) return;
-                    G_Rate_raw = value;
-                    OnPropertyChanged(nameof(G_Rate));
+                    if (Speed_Rate_raw == value) return;
+                    Speed_Rate_raw = value;
+                    OnPropertyChanged(nameof(Speed_Rate));
                 }
             }
 
-            protected float Momentum_raw;
-            public const string Momentum_displayName = "Momentum";
-            public const int Momentum_sortIndex = 150;
-            [SortOrder(Momentum_sortIndex)]
-            [DisplayName(Momentum_displayName)]
-            public virtual float Momentum {
-                get => Momentum_raw;
+            protected float X_Offset_raw;
+            public const string X_Offset_displayName = "X Offset";
+            public const int X_Offset_sortIndex = 150;
+            [SortOrder(X_Offset_sortIndex)]
+            [DisplayName(X_Offset_displayName)]
+            public virtual float X_Offset {
+                get => X_Offset_raw;
                 set {
-                    if (Momentum_raw == value) return;
-                    Momentum_raw = value;
-                    OnPropertyChanged(nameof(Momentum));
+                    if (X_Offset_raw == value) return;
+                    X_Offset_raw = value;
+                    OnPropertyChanged(nameof(X_Offset));
                 }
             }
 
-            protected float V_Offset_raw;
-            public const string V_Offset_displayName = "V Offset";
-            public const int V_Offset_sortIndex = 200;
-            [SortOrder(V_Offset_sortIndex)]
-            [DisplayName(V_Offset_displayName)]
-            public virtual float V_Offset {
-                get => V_Offset_raw;
+            protected float Y_Offset_raw;
+            public const string Y_Offset_displayName = "Y Offset";
+            public const int Y_Offset_sortIndex = 200;
+            [SortOrder(Y_Offset_sortIndex)]
+            [DisplayName(Y_Offset_displayName)]
+            public virtual float Y_Offset {
+                get => Y_Offset_raw;
                 set {
-                    if (V_Offset_raw == value) return;
-                    V_Offset_raw = value;
-                    OnPropertyChanged(nameof(V_Offset));
+                    if (Y_Offset_raw == value) return;
+                    Y_Offset_raw = value;
+                    OnPropertyChanged(nameof(Y_Offset));
                 }
             }
 
-            protected float H_Offset_raw;
-            public const string H_Offset_displayName = "H Offset";
-            public const int H_Offset_sortIndex = 250;
-            [SortOrder(H_Offset_sortIndex)]
-            [DisplayName(H_Offset_displayName)]
-            public virtual float H_Offset {
-                get => H_Offset_raw;
+            protected float Z_Offset_raw;
+            public const string Z_Offset_displayName = "Z Offset";
+            public const int Z_Offset_sortIndex = 250;
+            [SortOrder(Z_Offset_sortIndex)]
+            [DisplayName(Z_Offset_displayName)]
+            public virtual float Z_Offset {
+                get => Z_Offset_raw;
                 set {
-                    if (H_Offset_raw == value) return;
-                    H_Offset_raw = value;
-                    OnPropertyChanged(nameof(H_Offset));
+                    if (Z_Offset_raw == value) return;
+                    Z_Offset_raw = value;
+                    OnPropertyChanged(nameof(Z_Offset));
                 }
             }
+
+            public const int lastSortIndex = 300;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -4933,19 +4967,19 @@ namespace MHW_Editor.Weapons {
                 var data = new Action_Param_3();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
-                data.G_Rate_raw = reader.ReadSingle();
-                data.Momentum_raw = reader.ReadSingle();
-                data.V_Offset_raw = reader.ReadSingle();
-                data.H_Offset_raw = reader.ReadSingle();
+                data.Speed_Rate_raw = reader.ReadSingle();
+                data.X_Offset_raw = reader.ReadSingle();
+                data.Y_Offset_raw = reader.ReadSingle();
+                data.Z_Offset_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Gravity_raw);
-                writer.Write(G_Rate_raw);
-                writer.Write(Momentum_raw);
-                writer.Write(V_Offset_raw);
-                writer.Write(H_Offset_raw);
+                writer.Write(Speed_Rate_raw);
+                writer.Write(X_Offset_raw);
+                writer.Write(Y_Offset_raw);
+                writer.Write(Z_Offset_raw);
             }
         }
 
@@ -5022,6 +5056,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Number_of_Arrows_Shot));
                 }
             }
+
+            public const int lastSortIndex = 300;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -5164,6 +5200,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 400;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 7UL;
@@ -5257,493 +5295,493 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
-            protected float Unk_204_raw;
-            public const string Unk_204_displayName = "Unk 204";
-            public const int Unk_204_sortIndex = 250;
-            [SortOrder(Unk_204_sortIndex)]
-            [DisplayName(Unk_204_displayName)]
-            public virtual float Unk_204 {
-                get => Unk_204_raw;
+            protected float For_Every_Stone_Attack_raw;
+            public const string For_Every_Stone_Attack_displayName = "For Every Stone Attack";
+            public const int For_Every_Stone_Attack_sortIndex = 250;
+            [SortOrder(For_Every_Stone_Attack_sortIndex)]
+            [DisplayName(For_Every_Stone_Attack_displayName)]
+            public virtual float For_Every_Stone_Attack {
+                get => For_Every_Stone_Attack_raw;
                 set {
-                    if (Unk_204_raw == value) return;
-                    Unk_204_raw = value;
-                    OnPropertyChanged(nameof(Unk_204));
+                    if (For_Every_Stone_Attack_raw == value) return;
+                    For_Every_Stone_Attack_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Stone_Attack));
                 }
             }
 
-            protected float Unk_205_raw;
-            public const string Unk_205_displayName = "Unk 205";
-            public const int Unk_205_sortIndex = 300;
-            [SortOrder(Unk_205_sortIndex)]
-            [DisplayName(Unk_205_displayName)]
-            public virtual float Unk_205 {
-                get => Unk_205_raw;
+            protected float For_Every_Stone_Exhaust_raw;
+            public const string For_Every_Stone_Exhaust_displayName = "For Every Stone Exhaust";
+            public const int For_Every_Stone_Exhaust_sortIndex = 300;
+            [SortOrder(For_Every_Stone_Exhaust_sortIndex)]
+            [DisplayName(For_Every_Stone_Exhaust_displayName)]
+            public virtual float For_Every_Stone_Exhaust {
+                get => For_Every_Stone_Exhaust_raw;
                 set {
-                    if (Unk_205_raw == value) return;
-                    Unk_205_raw = value;
-                    OnPropertyChanged(nameof(Unk_205));
+                    if (For_Every_Stone_Exhaust_raw == value) return;
+                    For_Every_Stone_Exhaust_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Stone_Exhaust));
                 }
             }
 
-            protected float Unk_206_raw;
-            public const string Unk_206_displayName = "Unk 206";
-            public const int Unk_206_sortIndex = 350;
-            [SortOrder(Unk_206_sortIndex)]
-            [DisplayName(Unk_206_displayName)]
-            public virtual float Unk_206 {
-                get => Unk_206_raw;
+            protected float For_Every_Stone_Stun_raw;
+            public const string For_Every_Stone_Stun_displayName = "For Every Stone Stun";
+            public const int For_Every_Stone_Stun_sortIndex = 350;
+            [SortOrder(For_Every_Stone_Stun_sortIndex)]
+            [DisplayName(For_Every_Stone_Stun_displayName)]
+            public virtual float For_Every_Stone_Stun {
+                get => For_Every_Stone_Stun_raw;
                 set {
-                    if (Unk_206_raw == value) return;
-                    Unk_206_raw = value;
-                    OnPropertyChanged(nameof(Unk_206));
+                    if (For_Every_Stone_Stun_raw == value) return;
+                    For_Every_Stone_Stun_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Stone_Stun));
                 }
             }
 
-            protected uint Unk_207_raw;
-            public const string Unk_207_displayName = "Unk 207";
-            public const int Unk_207_sortIndex = 400;
-            [SortOrder(Unk_207_sortIndex)]
-            [DisplayName(Unk_207_displayName)]
-            public virtual uint Unk_207 {
-                get => Unk_207_raw;
+            protected uint For_Every_Stone_Attack_Type_raw;
+            public const string For_Every_Stone_Attack_Type_displayName = "For Every Stone Attack Type";
+            public const int For_Every_Stone_Attack_Type_sortIndex = 400;
+            [SortOrder(For_Every_Stone_Attack_Type_sortIndex)]
+            [DisplayName(For_Every_Stone_Attack_Type_displayName)]
+            public virtual uint For_Every_Stone_Attack_Type {
+                get => For_Every_Stone_Attack_Type_raw;
                 set {
-                    if (Unk_207_raw == value) return;
-                    Unk_207_raw = value;
-                    OnPropertyChanged(nameof(Unk_207));
+                    if (For_Every_Stone_Attack_Type_raw == value) return;
+                    For_Every_Stone_Attack_Type_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Stone_Attack_Type));
                 }
             }
 
-            protected float Unk_208_raw;
-            public const string Unk_208_displayName = "Unk 208";
-            public const int Unk_208_sortIndex = 450;
-            [SortOrder(Unk_208_sortIndex)]
-            [DisplayName(Unk_208_displayName)]
-            public virtual float Unk_208 {
-                get => Unk_208_raw;
+            protected float For_Every_Redpit_Attack_raw;
+            public const string For_Every_Redpit_Attack_displayName = "For Every Redpit Attack";
+            public const int For_Every_Redpit_Attack_sortIndex = 450;
+            [SortOrder(For_Every_Redpit_Attack_sortIndex)]
+            [DisplayName(For_Every_Redpit_Attack_displayName)]
+            public virtual float For_Every_Redpit_Attack {
+                get => For_Every_Redpit_Attack_raw;
                 set {
-                    if (Unk_208_raw == value) return;
-                    Unk_208_raw = value;
-                    OnPropertyChanged(nameof(Unk_208));
+                    if (For_Every_Redpit_Attack_raw == value) return;
+                    For_Every_Redpit_Attack_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Redpit_Attack));
                 }
             }
 
-            protected float Unk_209_raw;
-            public const string Unk_209_displayName = "Unk 209";
-            public const int Unk_209_sortIndex = 500;
-            [SortOrder(Unk_209_sortIndex)]
-            [DisplayName(Unk_209_displayName)]
-            public virtual float Unk_209 {
-                get => Unk_209_raw;
+            protected float For_Every_Redpit_Exhaust_raw;
+            public const string For_Every_Redpit_Exhaust_displayName = "For Every Redpit Exhaust";
+            public const int For_Every_Redpit_Exhaust_sortIndex = 500;
+            [SortOrder(For_Every_Redpit_Exhaust_sortIndex)]
+            [DisplayName(For_Every_Redpit_Exhaust_displayName)]
+            public virtual float For_Every_Redpit_Exhaust {
+                get => For_Every_Redpit_Exhaust_raw;
                 set {
-                    if (Unk_209_raw == value) return;
-                    Unk_209_raw = value;
-                    OnPropertyChanged(nameof(Unk_209));
+                    if (For_Every_Redpit_Exhaust_raw == value) return;
+                    For_Every_Redpit_Exhaust_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Redpit_Exhaust));
                 }
             }
 
-            protected float Unk_210_raw;
-            public const string Unk_210_displayName = "Unk 210";
-            public const int Unk_210_sortIndex = 550;
-            [SortOrder(Unk_210_sortIndex)]
-            [DisplayName(Unk_210_displayName)]
-            public virtual float Unk_210 {
-                get => Unk_210_raw;
+            protected float For_Every_Redpit_Stun_raw;
+            public const string For_Every_Redpit_Stun_displayName = "For Every Redpit Stun";
+            public const int For_Every_Redpit_Stun_sortIndex = 550;
+            [SortOrder(For_Every_Redpit_Stun_sortIndex)]
+            [DisplayName(For_Every_Redpit_Stun_displayName)]
+            public virtual float For_Every_Redpit_Stun {
+                get => For_Every_Redpit_Stun_raw;
                 set {
-                    if (Unk_210_raw == value) return;
-                    Unk_210_raw = value;
-                    OnPropertyChanged(nameof(Unk_210));
+                    if (For_Every_Redpit_Stun_raw == value) return;
+                    For_Every_Redpit_Stun_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Redpit_Stun));
                 }
             }
 
-            protected uint Unk_211_raw;
-            public const string Unk_211_displayName = "Unk 211";
-            public const int Unk_211_sortIndex = 600;
-            [SortOrder(Unk_211_sortIndex)]
-            [DisplayName(Unk_211_displayName)]
-            public virtual uint Unk_211 {
-                get => Unk_211_raw;
+            protected uint For_Every_Redpit_Attack_Type_raw;
+            public const string For_Every_Redpit_Attack_Type_displayName = "For Every Redpit Attack Type";
+            public const int For_Every_Redpit_Attack_Type_sortIndex = 600;
+            [SortOrder(For_Every_Redpit_Attack_Type_sortIndex)]
+            [DisplayName(For_Every_Redpit_Attack_Type_displayName)]
+            public virtual uint For_Every_Redpit_Attack_Type {
+                get => For_Every_Redpit_Attack_Type_raw;
                 set {
-                    if (Unk_211_raw == value) return;
-                    Unk_211_raw = value;
-                    OnPropertyChanged(nameof(Unk_211));
+                    if (For_Every_Redpit_Attack_Type_raw == value) return;
+                    For_Every_Redpit_Attack_Type_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Redpit_Attack_Type));
                 }
             }
 
-            protected float Unk_212_raw;
-            public const string Unk_212_displayName = "Unk 212";
-            public const int Unk_212_sortIndex = 650;
-            [SortOrder(Unk_212_sortIndex)]
-            [DisplayName(Unk_212_displayName)]
-            public virtual float Unk_212 {
-                get => Unk_212_raw;
+            protected float For_Every_Brightmoss_Attack_raw;
+            public const string For_Every_Brightmoss_Attack_displayName = "For Every Brightmoss Attack";
+            public const int For_Every_Brightmoss_Attack_sortIndex = 650;
+            [SortOrder(For_Every_Brightmoss_Attack_sortIndex)]
+            [DisplayName(For_Every_Brightmoss_Attack_displayName)]
+            public virtual float For_Every_Brightmoss_Attack {
+                get => For_Every_Brightmoss_Attack_raw;
                 set {
-                    if (Unk_212_raw == value) return;
-                    Unk_212_raw = value;
-                    OnPropertyChanged(nameof(Unk_212));
+                    if (For_Every_Brightmoss_Attack_raw == value) return;
+                    For_Every_Brightmoss_Attack_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Brightmoss_Attack));
                 }
             }
 
-            protected float Unk_213_raw;
-            public const string Unk_213_displayName = "Unk 213";
-            public const int Unk_213_sortIndex = 700;
-            [SortOrder(Unk_213_sortIndex)]
-            [DisplayName(Unk_213_displayName)]
-            public virtual float Unk_213 {
-                get => Unk_213_raw;
+            protected float For_Every_Brightmoss_Element_raw;
+            public const string For_Every_Brightmoss_Element_displayName = "For Every Brightmoss Element";
+            public const int For_Every_Brightmoss_Element_sortIndex = 700;
+            [SortOrder(For_Every_Brightmoss_Element_sortIndex)]
+            [DisplayName(For_Every_Brightmoss_Element_displayName)]
+            public virtual float For_Every_Brightmoss_Element {
+                get => For_Every_Brightmoss_Element_raw;
                 set {
-                    if (Unk_213_raw == value) return;
-                    Unk_213_raw = value;
-                    OnPropertyChanged(nameof(Unk_213));
+                    if (For_Every_Brightmoss_Element_raw == value) return;
+                    For_Every_Brightmoss_Element_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Brightmoss_Element));
                 }
             }
 
-            protected uint Unk_214_raw;
-            public const string Unk_214_displayName = "Unk 214";
-            public const int Unk_214_sortIndex = 750;
-            [SortOrder(Unk_214_sortIndex)]
-            [DisplayName(Unk_214_displayName)]
-            public virtual uint Unk_214 {
-                get => Unk_214_raw;
+            protected uint For_Every_Brightmoss_Attack_Type_raw;
+            public const string For_Every_Brightmoss_Attack_Type_displayName = "For Every Brightmoss Attack Type";
+            public const int For_Every_Brightmoss_Attack_Type_sortIndex = 750;
+            [SortOrder(For_Every_Brightmoss_Attack_Type_sortIndex)]
+            [DisplayName(For_Every_Brightmoss_Attack_Type_displayName)]
+            public virtual uint For_Every_Brightmoss_Attack_Type {
+                get => For_Every_Brightmoss_Attack_Type_raw;
                 set {
-                    if (Unk_214_raw == value) return;
-                    Unk_214_raw = value;
-                    OnPropertyChanged(nameof(Unk_214));
+                    if (For_Every_Brightmoss_Attack_Type_raw == value) return;
+                    For_Every_Brightmoss_Attack_Type_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Brightmoss_Attack_Type));
                 }
             }
 
-            protected float Unk_215_raw;
-            public const string Unk_215_displayName = "Unk 215";
-            public const int Unk_215_sortIndex = 800;
-            [SortOrder(Unk_215_sortIndex)]
-            [DisplayName(Unk_215_displayName)]
-            public virtual float Unk_215 {
-                get => Unk_215_raw;
+            protected float For_Every_Scatternut_Crystalburst_Attack_raw;
+            public const string For_Every_Scatternut_Crystalburst_Attack_displayName = "For Every Scatternut/Crystalburst Attack";
+            public const int For_Every_Scatternut_Crystalburst_Attack_sortIndex = 800;
+            [SortOrder(For_Every_Scatternut_Crystalburst_Attack_sortIndex)]
+            [DisplayName(For_Every_Scatternut_Crystalburst_Attack_displayName)]
+            public virtual float For_Every_Scatternut_Crystalburst_Attack {
+                get => For_Every_Scatternut_Crystalburst_Attack_raw;
                 set {
-                    if (Unk_215_raw == value) return;
-                    Unk_215_raw = value;
-                    OnPropertyChanged(nameof(Unk_215));
+                    if (For_Every_Scatternut_Crystalburst_Attack_raw == value) return;
+                    For_Every_Scatternut_Crystalburst_Attack_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Scatternut_Crystalburst_Attack));
                 }
             }
 
-            protected float Unk_216_raw;
-            public const string Unk_216_displayName = "Unk 216";
-            public const int Unk_216_sortIndex = 850;
-            [SortOrder(Unk_216_sortIndex)]
-            [DisplayName(Unk_216_displayName)]
-            public virtual float Unk_216 {
-                get => Unk_216_raw;
+            protected float For_Every_Scatternut_Crystalburst__raw;
+            public const string For_Every_Scatternut_Crystalburst__displayName = "For Every Scatternut/Crystalburst?";
+            public const int For_Every_Scatternut_Crystalburst__sortIndex = 850;
+            [SortOrder(For_Every_Scatternut_Crystalburst__sortIndex)]
+            [DisplayName(For_Every_Scatternut_Crystalburst__displayName)]
+            public virtual float For_Every_Scatternut_Crystalburst_ {
+                get => For_Every_Scatternut_Crystalburst__raw;
                 set {
-                    if (Unk_216_raw == value) return;
-                    Unk_216_raw = value;
-                    OnPropertyChanged(nameof(Unk_216));
+                    if (For_Every_Scatternut_Crystalburst__raw == value) return;
+                    For_Every_Scatternut_Crystalburst__raw = value;
+                    OnPropertyChanged(nameof(For_Every_Scatternut_Crystalburst_));
                 }
             }
 
-            protected float Unk_217_raw;
-            public const string Unk_217_displayName = "Unk 217";
-            public const int Unk_217_sortIndex = 900;
-            [SortOrder(Unk_217_sortIndex)]
-            [DisplayName(Unk_217_displayName)]
-            public virtual float Unk_217 {
-                get => Unk_217_raw;
+            protected float For_Every_Scatternut_Crystalburst_Exhaust_raw;
+            public const string For_Every_Scatternut_Crystalburst_Exhaust_displayName = "For Every Scatternut/Crystalburst Exhaust";
+            public const int For_Every_Scatternut_Crystalburst_Exhaust_sortIndex = 900;
+            [SortOrder(For_Every_Scatternut_Crystalburst_Exhaust_sortIndex)]
+            [DisplayName(For_Every_Scatternut_Crystalburst_Exhaust_displayName)]
+            public virtual float For_Every_Scatternut_Crystalburst_Exhaust {
+                get => For_Every_Scatternut_Crystalburst_Exhaust_raw;
                 set {
-                    if (Unk_217_raw == value) return;
-                    Unk_217_raw = value;
-                    OnPropertyChanged(nameof(Unk_217));
+                    if (For_Every_Scatternut_Crystalburst_Exhaust_raw == value) return;
+                    For_Every_Scatternut_Crystalburst_Exhaust_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Scatternut_Crystalburst_Exhaust));
                 }
             }
 
-            protected uint Unk_218_raw;
-            public const string Unk_218_displayName = "Unk 218";
-            public const int Unk_218_sortIndex = 950;
-            [SortOrder(Unk_218_sortIndex)]
-            [DisplayName(Unk_218_displayName)]
-            public virtual uint Unk_218 {
-                get => Unk_218_raw;
+            protected uint For_Every_Scatternut_Crystalburst_Attack_Type_raw;
+            public const string For_Every_Scatternut_Crystalburst_Attack_Type_displayName = "For Every Scatternut/Crystalburst Attack Type";
+            public const int For_Every_Scatternut_Crystalburst_Attack_Type_sortIndex = 950;
+            [SortOrder(For_Every_Scatternut_Crystalburst_Attack_Type_sortIndex)]
+            [DisplayName(For_Every_Scatternut_Crystalburst_Attack_Type_displayName)]
+            public virtual uint For_Every_Scatternut_Crystalburst_Attack_Type {
+                get => For_Every_Scatternut_Crystalburst_Attack_Type_raw;
                 set {
-                    if (Unk_218_raw == value) return;
-                    Unk_218_raw = value;
-                    OnPropertyChanged(nameof(Unk_218));
+                    if (For_Every_Scatternut_Crystalburst_Attack_Type_raw == value) return;
+                    For_Every_Scatternut_Crystalburst_Attack_Type_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Scatternut_Crystalburst_Attack_Type));
                 }
             }
 
-            protected float Unk_219_raw;
-            public const string Unk_219_displayName = "Unk 219";
-            public const int Unk_219_sortIndex = 1000;
-            [SortOrder(Unk_219_sortIndex)]
-            [DisplayName(Unk_219_displayName)]
-            public virtual float Unk_219 {
-                get => Unk_219_raw;
+            protected float For_Every_Torch_Pod_Attack_raw;
+            public const string For_Every_Torch_Pod_Attack_displayName = "For Every Torch Pod Attack";
+            public const int For_Every_Torch_Pod_Attack_sortIndex = 1000;
+            [SortOrder(For_Every_Torch_Pod_Attack_sortIndex)]
+            [DisplayName(For_Every_Torch_Pod_Attack_displayName)]
+            public virtual float For_Every_Torch_Pod_Attack {
+                get => For_Every_Torch_Pod_Attack_raw;
                 set {
-                    if (Unk_219_raw == value) return;
-                    Unk_219_raw = value;
-                    OnPropertyChanged(nameof(Unk_219));
+                    if (For_Every_Torch_Pod_Attack_raw == value) return;
+                    For_Every_Torch_Pod_Attack_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Torch_Pod_Attack));
                 }
             }
 
-            protected float Unk_220_raw;
-            public const string Unk_220_displayName = "Unk 220";
-            public const int Unk_220_sortIndex = 1050;
-            [SortOrder(Unk_220_sortIndex)]
-            [DisplayName(Unk_220_displayName)]
-            public virtual float Unk_220 {
-                get => Unk_220_raw;
+            protected float For_Every_Torch_Pod_Element_raw;
+            public const string For_Every_Torch_Pod_Element_displayName = "For Every Torch Pod Element";
+            public const int For_Every_Torch_Pod_Element_sortIndex = 1050;
+            [SortOrder(For_Every_Torch_Pod_Element_sortIndex)]
+            [DisplayName(For_Every_Torch_Pod_Element_displayName)]
+            public virtual float For_Every_Torch_Pod_Element {
+                get => For_Every_Torch_Pod_Element_raw;
                 set {
-                    if (Unk_220_raw == value) return;
-                    Unk_220_raw = value;
-                    OnPropertyChanged(nameof(Unk_220));
+                    if (For_Every_Torch_Pod_Element_raw == value) return;
+                    For_Every_Torch_Pod_Element_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Torch_Pod_Element));
                 }
             }
 
-            protected uint Unk_221_raw;
-            public const string Unk_221_displayName = "Unk 221";
-            public const int Unk_221_sortIndex = 1100;
-            [SortOrder(Unk_221_sortIndex)]
-            [DisplayName(Unk_221_displayName)]
-            public virtual uint Unk_221 {
-                get => Unk_221_raw;
+            protected uint For_Every_Torch_Pod_Attack_Type_raw;
+            public const string For_Every_Torch_Pod_Attack_Type_displayName = "For Every Torch Pod Attack Type";
+            public const int For_Every_Torch_Pod_Attack_Type_sortIndex = 1100;
+            [SortOrder(For_Every_Torch_Pod_Attack_Type_sortIndex)]
+            [DisplayName(For_Every_Torch_Pod_Attack_Type_displayName)]
+            public virtual uint For_Every_Torch_Pod_Attack_Type {
+                get => For_Every_Torch_Pod_Attack_Type_raw;
                 set {
-                    if (Unk_221_raw == value) return;
-                    Unk_221_raw = value;
-                    OnPropertyChanged(nameof(Unk_221));
+                    if (For_Every_Torch_Pod_Attack_Type_raw == value) return;
+                    For_Every_Torch_Pod_Attack_Type_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Torch_Pod_Attack_Type));
                 }
             }
 
-            protected float Unk_222_raw;
-            public const string Unk_222_displayName = "Unk 222";
-            public const int Unk_222_sortIndex = 1150;
-            [SortOrder(Unk_222_sortIndex)]
-            [DisplayName(Unk_222_displayName)]
-            public virtual float Unk_222 {
-                get => Unk_222_raw;
+            protected float For_Every_Bomb_Pod_Attack_raw;
+            public const string For_Every_Bomb_Pod_Attack_displayName = "For Every Bomb Pod Attack";
+            public const int For_Every_Bomb_Pod_Attack_sortIndex = 1150;
+            [SortOrder(For_Every_Bomb_Pod_Attack_sortIndex)]
+            [DisplayName(For_Every_Bomb_Pod_Attack_displayName)]
+            public virtual float For_Every_Bomb_Pod_Attack {
+                get => For_Every_Bomb_Pod_Attack_raw;
                 set {
-                    if (Unk_222_raw == value) return;
-                    Unk_222_raw = value;
-                    OnPropertyChanged(nameof(Unk_222));
+                    if (For_Every_Bomb_Pod_Attack_raw == value) return;
+                    For_Every_Bomb_Pod_Attack_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Bomb_Pod_Attack));
                 }
             }
 
-            protected float Unk_223_raw;
-            public const string Unk_223_displayName = "Unk 223";
-            public const int Unk_223_sortIndex = 1200;
-            [SortOrder(Unk_223_sortIndex)]
-            [DisplayName(Unk_223_displayName)]
-            public virtual float Unk_223 {
-                get => Unk_223_raw;
+            protected float For_Every_Bomb_Pod_Element_raw;
+            public const string For_Every_Bomb_Pod_Element_displayName = "For Every Bomb Pod Element";
+            public const int For_Every_Bomb_Pod_Element_sortIndex = 1200;
+            [SortOrder(For_Every_Bomb_Pod_Element_sortIndex)]
+            [DisplayName(For_Every_Bomb_Pod_Element_displayName)]
+            public virtual float For_Every_Bomb_Pod_Element {
+                get => For_Every_Bomb_Pod_Element_raw;
                 set {
-                    if (Unk_223_raw == value) return;
-                    Unk_223_raw = value;
-                    OnPropertyChanged(nameof(Unk_223));
+                    if (For_Every_Bomb_Pod_Element_raw == value) return;
+                    For_Every_Bomb_Pod_Element_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Bomb_Pod_Element));
                 }
             }
 
-            protected float Unk_224_raw;
-            public const string Unk_224_displayName = "Unk 224";
-            public const int Unk_224_sortIndex = 1250;
-            [SortOrder(Unk_224_sortIndex)]
-            [DisplayName(Unk_224_displayName)]
-            public virtual float Unk_224 {
-                get => Unk_224_raw;
+            protected float For_Every_Bomb_Pod_1__raw;
+            public const string For_Every_Bomb_Pod_1__displayName = "For Every Bomb Pod 1?";
+            public const int For_Every_Bomb_Pod_1__sortIndex = 1250;
+            [SortOrder(For_Every_Bomb_Pod_1__sortIndex)]
+            [DisplayName(For_Every_Bomb_Pod_1__displayName)]
+            public virtual float For_Every_Bomb_Pod_1_ {
+                get => For_Every_Bomb_Pod_1__raw;
                 set {
-                    if (Unk_224_raw == value) return;
-                    Unk_224_raw = value;
-                    OnPropertyChanged(nameof(Unk_224));
+                    if (For_Every_Bomb_Pod_1__raw == value) return;
+                    For_Every_Bomb_Pod_1__raw = value;
+                    OnPropertyChanged(nameof(For_Every_Bomb_Pod_1_));
                 }
             }
 
-            protected float Unk_225_raw;
-            public const string Unk_225_displayName = "Unk 225";
-            public const int Unk_225_sortIndex = 1300;
-            [SortOrder(Unk_225_sortIndex)]
-            [DisplayName(Unk_225_displayName)]
-            public virtual float Unk_225 {
-                get => Unk_225_raw;
+            protected float For_Every_Bomb_Pod_2__raw;
+            public const string For_Every_Bomb_Pod_2__displayName = "For Every Bomb Pod 2?";
+            public const int For_Every_Bomb_Pod_2__sortIndex = 1300;
+            [SortOrder(For_Every_Bomb_Pod_2__sortIndex)]
+            [DisplayName(For_Every_Bomb_Pod_2__displayName)]
+            public virtual float For_Every_Bomb_Pod_2_ {
+                get => For_Every_Bomb_Pod_2__raw;
                 set {
-                    if (Unk_225_raw == value) return;
-                    Unk_225_raw = value;
-                    OnPropertyChanged(nameof(Unk_225));
+                    if (For_Every_Bomb_Pod_2__raw == value) return;
+                    For_Every_Bomb_Pod_2__raw = value;
+                    OnPropertyChanged(nameof(For_Every_Bomb_Pod_2_));
                 }
             }
 
-            protected uint Unk_226_raw;
-            public const string Unk_226_displayName = "Unk 226";
-            public const int Unk_226_sortIndex = 1350;
-            [SortOrder(Unk_226_sortIndex)]
-            [DisplayName(Unk_226_displayName)]
-            public virtual uint Unk_226 {
-                get => Unk_226_raw;
+            protected uint For_Every_Bomb_Pod_Attack_Type_raw;
+            public const string For_Every_Bomb_Pod_Attack_Type_displayName = "For Every Bomb Pod Attack Type";
+            public const int For_Every_Bomb_Pod_Attack_Type_sortIndex = 1350;
+            [SortOrder(For_Every_Bomb_Pod_Attack_Type_sortIndex)]
+            [DisplayName(For_Every_Bomb_Pod_Attack_Type_displayName)]
+            public virtual uint For_Every_Bomb_Pod_Attack_Type {
+                get => For_Every_Bomb_Pod_Attack_Type_raw;
                 set {
-                    if (Unk_226_raw == value) return;
-                    Unk_226_raw = value;
-                    OnPropertyChanged(nameof(Unk_226));
+                    if (For_Every_Bomb_Pod_Attack_Type_raw == value) return;
+                    For_Every_Bomb_Pod_Attack_Type_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Bomb_Pod_Attack_Type));
                 }
             }
 
-            protected float Unk_227_raw;
-            public const string Unk_227_displayName = "Unk 227";
-            public const int Unk_227_sortIndex = 1400;
-            [SortOrder(Unk_227_sortIndex)]
-            [DisplayName(Unk_227_displayName)]
-            public virtual float Unk_227 {
-                get => Unk_227_raw;
+            protected float For_Every_Piercing_Pod_Attack_raw;
+            public const string For_Every_Piercing_Pod_Attack_displayName = "For Every Piercing Pod Attack";
+            public const int For_Every_Piercing_Pod_Attack_sortIndex = 1400;
+            [SortOrder(For_Every_Piercing_Pod_Attack_sortIndex)]
+            [DisplayName(For_Every_Piercing_Pod_Attack_displayName)]
+            public virtual float For_Every_Piercing_Pod_Attack {
+                get => For_Every_Piercing_Pod_Attack_raw;
                 set {
-                    if (Unk_227_raw == value) return;
-                    Unk_227_raw = value;
-                    OnPropertyChanged(nameof(Unk_227));
+                    if (For_Every_Piercing_Pod_Attack_raw == value) return;
+                    For_Every_Piercing_Pod_Attack_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Piercing_Pod_Attack));
                 }
             }
 
-            protected uint Unk_228_raw;
-            public const string Unk_228_displayName = "Unk 228";
-            public const int Unk_228_sortIndex = 1450;
-            [SortOrder(Unk_228_sortIndex)]
-            [DisplayName(Unk_228_displayName)]
-            public virtual uint Unk_228 {
-                get => Unk_228_raw;
+            protected uint For_Every_Piercing_Pod_Attack_Type_raw;
+            public const string For_Every_Piercing_Pod_Attack_Type_displayName = "For Every Piercing Pod Attack Type";
+            public const int For_Every_Piercing_Pod_Attack_Type_sortIndex = 1450;
+            [SortOrder(For_Every_Piercing_Pod_Attack_Type_sortIndex)]
+            [DisplayName(For_Every_Piercing_Pod_Attack_Type_displayName)]
+            public virtual uint For_Every_Piercing_Pod_Attack_Type {
+                get => For_Every_Piercing_Pod_Attack_Type_raw;
                 set {
-                    if (Unk_228_raw == value) return;
-                    Unk_228_raw = value;
-                    OnPropertyChanged(nameof(Unk_228));
+                    if (For_Every_Piercing_Pod_Attack_Type_raw == value) return;
+                    For_Every_Piercing_Pod_Attack_Type_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Piercing_Pod_Attack_Type));
                 }
             }
 
-            protected float Unk_229_raw;
-            public const string Unk_229_displayName = "Unk 229";
-            public const int Unk_229_sortIndex = 1500;
-            [SortOrder(Unk_229_sortIndex)]
-            [DisplayName(Unk_229_displayName)]
-            public virtual float Unk_229 {
-                get => Unk_229_raw;
+            protected float For_Every_Thorn_Pod_Attack_raw;
+            public const string For_Every_Thorn_Pod_Attack_displayName = "For Every Thorn Pod Attack";
+            public const int For_Every_Thorn_Pod_Attack_sortIndex = 1500;
+            [SortOrder(For_Every_Thorn_Pod_Attack_sortIndex)]
+            [DisplayName(For_Every_Thorn_Pod_Attack_displayName)]
+            public virtual float For_Every_Thorn_Pod_Attack {
+                get => For_Every_Thorn_Pod_Attack_raw;
                 set {
-                    if (Unk_229_raw == value) return;
-                    Unk_229_raw = value;
-                    OnPropertyChanged(nameof(Unk_229));
+                    if (For_Every_Thorn_Pod_Attack_raw == value) return;
+                    For_Every_Thorn_Pod_Attack_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Thorn_Pod_Attack));
                 }
             }
 
-            protected float Unk_230_raw;
-            public const string Unk_230_displayName = "Unk 230";
-            public const int Unk_230_sortIndex = 1550;
-            [SortOrder(Unk_230_sortIndex)]
-            [DisplayName(Unk_230_displayName)]
-            public virtual float Unk_230 {
-                get => Unk_230_raw;
+            protected float For_Every_Thorn_Pod_Exhaust_raw;
+            public const string For_Every_Thorn_Pod_Exhaust_displayName = "For Every Thorn Pod Exhaust";
+            public const int For_Every_Thorn_Pod_Exhaust_sortIndex = 1550;
+            [SortOrder(For_Every_Thorn_Pod_Exhaust_sortIndex)]
+            [DisplayName(For_Every_Thorn_Pod_Exhaust_displayName)]
+            public virtual float For_Every_Thorn_Pod_Exhaust {
+                get => For_Every_Thorn_Pod_Exhaust_raw;
                 set {
-                    if (Unk_230_raw == value) return;
-                    Unk_230_raw = value;
-                    OnPropertyChanged(nameof(Unk_230));
+                    if (For_Every_Thorn_Pod_Exhaust_raw == value) return;
+                    For_Every_Thorn_Pod_Exhaust_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Thorn_Pod_Exhaust));
                 }
             }
 
-            protected float Unk_231_raw;
-            public const string Unk_231_displayName = "Unk 231";
-            public const int Unk_231_sortIndex = 1600;
-            [SortOrder(Unk_231_sortIndex)]
-            [DisplayName(Unk_231_displayName)]
-            public virtual float Unk_231 {
-                get => Unk_231_raw;
+            protected float For_Every_Thorn_Pod_Stun_raw;
+            public const string For_Every_Thorn_Pod_Stun_displayName = "For Every Thorn Pod Stun";
+            public const int For_Every_Thorn_Pod_Stun_sortIndex = 1600;
+            [SortOrder(For_Every_Thorn_Pod_Stun_sortIndex)]
+            [DisplayName(For_Every_Thorn_Pod_Stun_displayName)]
+            public virtual float For_Every_Thorn_Pod_Stun {
+                get => For_Every_Thorn_Pod_Stun_raw;
                 set {
-                    if (Unk_231_raw == value) return;
-                    Unk_231_raw = value;
-                    OnPropertyChanged(nameof(Unk_231));
+                    if (For_Every_Thorn_Pod_Stun_raw == value) return;
+                    For_Every_Thorn_Pod_Stun_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Thorn_Pod_Stun));
                 }
             }
 
-            protected uint Unk_232_raw;
-            public const string Unk_232_displayName = "Unk 232";
-            public const int Unk_232_sortIndex = 1650;
-            [SortOrder(Unk_232_sortIndex)]
-            [DisplayName(Unk_232_displayName)]
-            public virtual uint Unk_232 {
-                get => Unk_232_raw;
+            protected uint For_Every_Thorn_Pod_Attack_Type_raw;
+            public const string For_Every_Thorn_Pod_Attack_Type_displayName = "For Every Thorn Pod Attack Type";
+            public const int For_Every_Thorn_Pod_Attack_Type_sortIndex = 1650;
+            [SortOrder(For_Every_Thorn_Pod_Attack_Type_sortIndex)]
+            [DisplayName(For_Every_Thorn_Pod_Attack_Type_displayName)]
+            public virtual uint For_Every_Thorn_Pod_Attack_Type {
+                get => For_Every_Thorn_Pod_Attack_Type_raw;
                 set {
-                    if (Unk_232_raw == value) return;
-                    Unk_232_raw = value;
-                    OnPropertyChanged(nameof(Unk_232));
+                    if (For_Every_Thorn_Pod_Attack_Type_raw == value) return;
+                    For_Every_Thorn_Pod_Attack_Type_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Thorn_Pod_Attack_Type));
                 }
             }
 
-            protected float Unk_233_raw;
-            public const string Unk_233_displayName = "Unk 233";
-            public const int Unk_233_sortIndex = 1700;
-            [SortOrder(Unk_233_sortIndex)]
-            [DisplayName(Unk_233_displayName)]
-            public virtual float Unk_233 {
-                get => Unk_233_raw;
+            protected float For_Every_Dragon_Pod_Attack_raw;
+            public const string For_Every_Dragon_Pod_Attack_displayName = "For Every Dragon Pod Attack";
+            public const int For_Every_Dragon_Pod_Attack_sortIndex = 1700;
+            [SortOrder(For_Every_Dragon_Pod_Attack_sortIndex)]
+            [DisplayName(For_Every_Dragon_Pod_Attack_displayName)]
+            public virtual float For_Every_Dragon_Pod_Attack {
+                get => For_Every_Dragon_Pod_Attack_raw;
                 set {
-                    if (Unk_233_raw == value) return;
-                    Unk_233_raw = value;
-                    OnPropertyChanged(nameof(Unk_233));
+                    if (For_Every_Dragon_Pod_Attack_raw == value) return;
+                    For_Every_Dragon_Pod_Attack_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Dragon_Pod_Attack));
                 }
             }
 
-            protected float Unk_234_raw;
-            public const string Unk_234_displayName = "Unk 234";
-            public const int Unk_234_sortIndex = 1750;
-            [SortOrder(Unk_234_sortIndex)]
-            [DisplayName(Unk_234_displayName)]
-            public virtual float Unk_234 {
-                get => Unk_234_raw;
+            protected float For_Every_Dragon_Pod_Element_raw;
+            public const string For_Every_Dragon_Pod_Element_displayName = "For Every Dragon Pod Element";
+            public const int For_Every_Dragon_Pod_Element_sortIndex = 1750;
+            [SortOrder(For_Every_Dragon_Pod_Element_sortIndex)]
+            [DisplayName(For_Every_Dragon_Pod_Element_displayName)]
+            public virtual float For_Every_Dragon_Pod_Element {
+                get => For_Every_Dragon_Pod_Element_raw;
                 set {
-                    if (Unk_234_raw == value) return;
-                    Unk_234_raw = value;
-                    OnPropertyChanged(nameof(Unk_234));
+                    if (For_Every_Dragon_Pod_Element_raw == value) return;
+                    For_Every_Dragon_Pod_Element_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Dragon_Pod_Element));
                 }
             }
 
-            protected uint Unk_235_raw;
-            public const string Unk_235_displayName = "Unk 235";
-            public const int Unk_235_sortIndex = 1800;
-            [SortOrder(Unk_235_sortIndex)]
-            [DisplayName(Unk_235_displayName)]
-            public virtual uint Unk_235 {
-                get => Unk_235_raw;
+            protected uint For_Every_Dragon_Pod_Attack_Type_raw;
+            public const string For_Every_Dragon_Pod_Attack_Type_displayName = "For Every Dragon Pod Attack Type";
+            public const int For_Every_Dragon_Pod_Attack_Type_sortIndex = 1800;
+            [SortOrder(For_Every_Dragon_Pod_Attack_Type_sortIndex)]
+            [DisplayName(For_Every_Dragon_Pod_Attack_Type_displayName)]
+            public virtual uint For_Every_Dragon_Pod_Attack_Type {
+                get => For_Every_Dragon_Pod_Attack_Type_raw;
                 set {
-                    if (Unk_235_raw == value) return;
-                    Unk_235_raw = value;
-                    OnPropertyChanged(nameof(Unk_235));
+                    if (For_Every_Dragon_Pod_Attack_Type_raw == value) return;
+                    For_Every_Dragon_Pod_Attack_Type_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Dragon_Pod_Attack_Type));
                 }
             }
 
-            protected float Unk_236_raw;
-            public const string Unk_236_displayName = "Unk 236";
-            public const int Unk_236_sortIndex = 1850;
-            [SortOrder(Unk_236_sortIndex)]
-            [DisplayName(Unk_236_displayName)]
-            public virtual float Unk_236 {
-                get => Unk_236_raw;
+            protected float For_Every_Puddle_Pod_Attack_raw;
+            public const string For_Every_Puddle_Pod_Attack_displayName = "For Every Puddle Pod Attack";
+            public const int For_Every_Puddle_Pod_Attack_sortIndex = 1850;
+            [SortOrder(For_Every_Puddle_Pod_Attack_sortIndex)]
+            [DisplayName(For_Every_Puddle_Pod_Attack_displayName)]
+            public virtual float For_Every_Puddle_Pod_Attack {
+                get => For_Every_Puddle_Pod_Attack_raw;
                 set {
-                    if (Unk_236_raw == value) return;
-                    Unk_236_raw = value;
-                    OnPropertyChanged(nameof(Unk_236));
+                    if (For_Every_Puddle_Pod_Attack_raw == value) return;
+                    For_Every_Puddle_Pod_Attack_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Puddle_Pod_Attack));
                 }
             }
 
-            protected float Unk_237_raw;
-            public const string Unk_237_displayName = "Unk 237";
-            public const int Unk_237_sortIndex = 1900;
-            [SortOrder(Unk_237_sortIndex)]
-            [DisplayName(Unk_237_displayName)]
-            public virtual float Unk_237 {
-                get => Unk_237_raw;
+            protected float For_Every_Puddle_Pod_Element_raw;
+            public const string For_Every_Puddle_Pod_Element_displayName = "For Every Puddle Pod Element";
+            public const int For_Every_Puddle_Pod_Element_sortIndex = 1900;
+            [SortOrder(For_Every_Puddle_Pod_Element_sortIndex)]
+            [DisplayName(For_Every_Puddle_Pod_Element_displayName)]
+            public virtual float For_Every_Puddle_Pod_Element {
+                get => For_Every_Puddle_Pod_Element_raw;
                 set {
-                    if (Unk_237_raw == value) return;
-                    Unk_237_raw = value;
-                    OnPropertyChanged(nameof(Unk_237));
+                    if (For_Every_Puddle_Pod_Element_raw == value) return;
+                    For_Every_Puddle_Pod_Element_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Puddle_Pod_Element));
                 }
             }
 
-            protected uint Unk_238_raw;
-            public const string Unk_238_displayName = "Unk 238";
-            public const int Unk_238_sortIndex = 1950;
-            [SortOrder(Unk_238_sortIndex)]
-            [DisplayName(Unk_238_displayName)]
-            public virtual uint Unk_238 {
-                get => Unk_238_raw;
+            protected uint For_Every_Puddle_Pod_Attack_Type_raw;
+            public const string For_Every_Puddle_Pod_Attack_Type_displayName = "For Every Puddle Pod Attack Type";
+            public const int For_Every_Puddle_Pod_Attack_Type_sortIndex = 1950;
+            [SortOrder(For_Every_Puddle_Pod_Attack_Type_sortIndex)]
+            [DisplayName(For_Every_Puddle_Pod_Attack_Type_displayName)]
+            public virtual uint For_Every_Puddle_Pod_Attack_Type {
+                get => For_Every_Puddle_Pod_Attack_Type_raw;
                 set {
-                    if (Unk_238_raw == value) return;
-                    Unk_238_raw = value;
-                    OnPropertyChanged(nameof(Unk_238));
+                    if (For_Every_Puddle_Pod_Attack_Type_raw == value) return;
+                    For_Every_Puddle_Pod_Attack_Type_raw = value;
+                    OnPropertyChanged(nameof(For_Every_Puddle_Pod_Attack_Type));
                 }
             }
 
@@ -5775,6 +5813,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 2100;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -5791,41 +5831,41 @@ namespace MHW_Editor.Weapons {
                 data.Thousand_Dragons_Y1_raw = reader.ReadSingle();
                 data.Thousand_Dragons_X2_raw = reader.ReadSingle();
                 data.Thousand_Dragons_Y2_raw = reader.ReadSingle();
-                data.Unk_204_raw = reader.ReadSingle();
-                data.Unk_205_raw = reader.ReadSingle();
-                data.Unk_206_raw = reader.ReadSingle();
-                data.Unk_207_raw = reader.ReadUInt32();
-                data.Unk_208_raw = reader.ReadSingle();
-                data.Unk_209_raw = reader.ReadSingle();
-                data.Unk_210_raw = reader.ReadSingle();
-                data.Unk_211_raw = reader.ReadUInt32();
-                data.Unk_212_raw = reader.ReadSingle();
-                data.Unk_213_raw = reader.ReadSingle();
-                data.Unk_214_raw = reader.ReadUInt32();
-                data.Unk_215_raw = reader.ReadSingle();
-                data.Unk_216_raw = reader.ReadSingle();
-                data.Unk_217_raw = reader.ReadSingle();
-                data.Unk_218_raw = reader.ReadUInt32();
-                data.Unk_219_raw = reader.ReadSingle();
-                data.Unk_220_raw = reader.ReadSingle();
-                data.Unk_221_raw = reader.ReadUInt32();
-                data.Unk_222_raw = reader.ReadSingle();
-                data.Unk_223_raw = reader.ReadSingle();
-                data.Unk_224_raw = reader.ReadSingle();
-                data.Unk_225_raw = reader.ReadSingle();
-                data.Unk_226_raw = reader.ReadUInt32();
-                data.Unk_227_raw = reader.ReadSingle();
-                data.Unk_228_raw = reader.ReadUInt32();
-                data.Unk_229_raw = reader.ReadSingle();
-                data.Unk_230_raw = reader.ReadSingle();
-                data.Unk_231_raw = reader.ReadSingle();
-                data.Unk_232_raw = reader.ReadUInt32();
-                data.Unk_233_raw = reader.ReadSingle();
-                data.Unk_234_raw = reader.ReadSingle();
-                data.Unk_235_raw = reader.ReadUInt32();
-                data.Unk_236_raw = reader.ReadSingle();
-                data.Unk_237_raw = reader.ReadSingle();
-                data.Unk_238_raw = reader.ReadUInt32();
+                data.For_Every_Stone_Attack_raw = reader.ReadSingle();
+                data.For_Every_Stone_Exhaust_raw = reader.ReadSingle();
+                data.For_Every_Stone_Stun_raw = reader.ReadSingle();
+                data.For_Every_Stone_Attack_Type_raw = reader.ReadUInt32();
+                data.For_Every_Redpit_Attack_raw = reader.ReadSingle();
+                data.For_Every_Redpit_Exhaust_raw = reader.ReadSingle();
+                data.For_Every_Redpit_Stun_raw = reader.ReadSingle();
+                data.For_Every_Redpit_Attack_Type_raw = reader.ReadUInt32();
+                data.For_Every_Brightmoss_Attack_raw = reader.ReadSingle();
+                data.For_Every_Brightmoss_Element_raw = reader.ReadSingle();
+                data.For_Every_Brightmoss_Attack_Type_raw = reader.ReadUInt32();
+                data.For_Every_Scatternut_Crystalburst_Attack_raw = reader.ReadSingle();
+                data.For_Every_Scatternut_Crystalburst__raw = reader.ReadSingle();
+                data.For_Every_Scatternut_Crystalburst_Exhaust_raw = reader.ReadSingle();
+                data.For_Every_Scatternut_Crystalburst_Attack_Type_raw = reader.ReadUInt32();
+                data.For_Every_Torch_Pod_Attack_raw = reader.ReadSingle();
+                data.For_Every_Torch_Pod_Element_raw = reader.ReadSingle();
+                data.For_Every_Torch_Pod_Attack_Type_raw = reader.ReadUInt32();
+                data.For_Every_Bomb_Pod_Attack_raw = reader.ReadSingle();
+                data.For_Every_Bomb_Pod_Element_raw = reader.ReadSingle();
+                data.For_Every_Bomb_Pod_1__raw = reader.ReadSingle();
+                data.For_Every_Bomb_Pod_2__raw = reader.ReadSingle();
+                data.For_Every_Bomb_Pod_Attack_Type_raw = reader.ReadUInt32();
+                data.For_Every_Piercing_Pod_Attack_raw = reader.ReadSingle();
+                data.For_Every_Piercing_Pod_Attack_Type_raw = reader.ReadUInt32();
+                data.For_Every_Thorn_Pod_Attack_raw = reader.ReadSingle();
+                data.For_Every_Thorn_Pod_Exhaust_raw = reader.ReadSingle();
+                data.For_Every_Thorn_Pod_Stun_raw = reader.ReadSingle();
+                data.For_Every_Thorn_Pod_Attack_Type_raw = reader.ReadUInt32();
+                data.For_Every_Dragon_Pod_Attack_raw = reader.ReadSingle();
+                data.For_Every_Dragon_Pod_Element_raw = reader.ReadSingle();
+                data.For_Every_Dragon_Pod_Attack_Type_raw = reader.ReadUInt32();
+                data.For_Every_Puddle_Pod_Attack_raw = reader.ReadSingle();
+                data.For_Every_Puddle_Pod_Element_raw = reader.ReadSingle();
+                data.For_Every_Puddle_Pod_Attack_Type_raw = reader.ReadUInt32();
                 data.Unk_239_raw = reader.ReadSingle();
                 data.Unk_240_raw = reader.ReadSingle();
                 return data;
@@ -5836,41 +5876,41 @@ namespace MHW_Editor.Weapons {
                 writer.Write(Thousand_Dragons_Y1_raw);
                 writer.Write(Thousand_Dragons_X2_raw);
                 writer.Write(Thousand_Dragons_Y2_raw);
-                writer.Write(Unk_204_raw);
-                writer.Write(Unk_205_raw);
-                writer.Write(Unk_206_raw);
-                writer.Write(Unk_207_raw);
-                writer.Write(Unk_208_raw);
-                writer.Write(Unk_209_raw);
-                writer.Write(Unk_210_raw);
-                writer.Write(Unk_211_raw);
-                writer.Write(Unk_212_raw);
-                writer.Write(Unk_213_raw);
-                writer.Write(Unk_214_raw);
-                writer.Write(Unk_215_raw);
-                writer.Write(Unk_216_raw);
-                writer.Write(Unk_217_raw);
-                writer.Write(Unk_218_raw);
-                writer.Write(Unk_219_raw);
-                writer.Write(Unk_220_raw);
-                writer.Write(Unk_221_raw);
-                writer.Write(Unk_222_raw);
-                writer.Write(Unk_223_raw);
-                writer.Write(Unk_224_raw);
-                writer.Write(Unk_225_raw);
-                writer.Write(Unk_226_raw);
-                writer.Write(Unk_227_raw);
-                writer.Write(Unk_228_raw);
-                writer.Write(Unk_229_raw);
-                writer.Write(Unk_230_raw);
-                writer.Write(Unk_231_raw);
-                writer.Write(Unk_232_raw);
-                writer.Write(Unk_233_raw);
-                writer.Write(Unk_234_raw);
-                writer.Write(Unk_235_raw);
-                writer.Write(Unk_236_raw);
-                writer.Write(Unk_237_raw);
-                writer.Write(Unk_238_raw);
+                writer.Write(For_Every_Stone_Attack_raw);
+                writer.Write(For_Every_Stone_Exhaust_raw);
+                writer.Write(For_Every_Stone_Stun_raw);
+                writer.Write(For_Every_Stone_Attack_Type_raw);
+                writer.Write(For_Every_Redpit_Attack_raw);
+                writer.Write(For_Every_Redpit_Exhaust_raw);
+                writer.Write(For_Every_Redpit_Stun_raw);
+                writer.Write(For_Every_Redpit_Attack_Type_raw);
+                writer.Write(For_Every_Brightmoss_Attack_raw);
+                writer.Write(For_Every_Brightmoss_Element_raw);
+                writer.Write(For_Every_Brightmoss_Attack_Type_raw);
+                writer.Write(For_Every_Scatternut_Crystalburst_Attack_raw);
+                writer.Write(For_Every_Scatternut_Crystalburst__raw);
+                writer.Write(For_Every_Scatternut_Crystalburst_Exhaust_raw);
+                writer.Write(For_Every_Scatternut_Crystalburst_Attack_Type_raw);
+                writer.Write(For_Every_Torch_Pod_Attack_raw);
+                writer.Write(For_Every_Torch_Pod_Element_raw);
+                writer.Write(For_Every_Torch_Pod_Attack_Type_raw);
+                writer.Write(For_Every_Bomb_Pod_Attack_raw);
+                writer.Write(For_Every_Bomb_Pod_Element_raw);
+                writer.Write(For_Every_Bomb_Pod_1__raw);
+                writer.Write(For_Every_Bomb_Pod_2__raw);
+                writer.Write(For_Every_Bomb_Pod_Attack_Type_raw);
+                writer.Write(For_Every_Piercing_Pod_Attack_raw);
+                writer.Write(For_Every_Piercing_Pod_Attack_Type_raw);
+                writer.Write(For_Every_Thorn_Pod_Attack_raw);
+                writer.Write(For_Every_Thorn_Pod_Exhaust_raw);
+                writer.Write(For_Every_Thorn_Pod_Stun_raw);
+                writer.Write(For_Every_Thorn_Pod_Attack_Type_raw);
+                writer.Write(For_Every_Dragon_Pod_Attack_raw);
+                writer.Write(For_Every_Dragon_Pod_Element_raw);
+                writer.Write(For_Every_Dragon_Pod_Attack_Type_raw);
+                writer.Write(For_Every_Puddle_Pod_Attack_raw);
+                writer.Write(For_Every_Puddle_Pod_Element_raw);
+                writer.Write(For_Every_Puddle_Pod_Attack_Type_raw);
                 writer.Write(Unk_239_raw);
                 writer.Write(Unk_240_raw);
             }
@@ -5881,41 +5921,41 @@ namespace MHW_Editor.Weapons {
                     new MultiStructItemCustomView(this, "Thousand Dragons Y1", "Thousand_Dragons_Y1"),
                     new MultiStructItemCustomView(this, "Thousand Dragons X2", "Thousand_Dragons_X2"),
                     new MultiStructItemCustomView(this, "Thousand Dragons Y2", "Thousand_Dragons_Y2"),
-                    new MultiStructItemCustomView(this, "Unk 204", "Unk_204"),
-                    new MultiStructItemCustomView(this, "Unk 205", "Unk_205"),
-                    new MultiStructItemCustomView(this, "Unk 206", "Unk_206"),
-                    new MultiStructItemCustomView(this, "Unk 207", "Unk_207"),
-                    new MultiStructItemCustomView(this, "Unk 208", "Unk_208"),
-                    new MultiStructItemCustomView(this, "Unk 209", "Unk_209"),
-                    new MultiStructItemCustomView(this, "Unk 210", "Unk_210"),
-                    new MultiStructItemCustomView(this, "Unk 211", "Unk_211"),
-                    new MultiStructItemCustomView(this, "Unk 212", "Unk_212"),
-                    new MultiStructItemCustomView(this, "Unk 213", "Unk_213"),
-                    new MultiStructItemCustomView(this, "Unk 214", "Unk_214"),
-                    new MultiStructItemCustomView(this, "Unk 215", "Unk_215"),
-                    new MultiStructItemCustomView(this, "Unk 216", "Unk_216"),
-                    new MultiStructItemCustomView(this, "Unk 217", "Unk_217"),
-                    new MultiStructItemCustomView(this, "Unk 218", "Unk_218"),
-                    new MultiStructItemCustomView(this, "Unk 219", "Unk_219"),
-                    new MultiStructItemCustomView(this, "Unk 220", "Unk_220"),
-                    new MultiStructItemCustomView(this, "Unk 221", "Unk_221"),
-                    new MultiStructItemCustomView(this, "Unk 222", "Unk_222"),
-                    new MultiStructItemCustomView(this, "Unk 223", "Unk_223"),
-                    new MultiStructItemCustomView(this, "Unk 224", "Unk_224"),
-                    new MultiStructItemCustomView(this, "Unk 225", "Unk_225"),
-                    new MultiStructItemCustomView(this, "Unk 226", "Unk_226"),
-                    new MultiStructItemCustomView(this, "Unk 227", "Unk_227"),
-                    new MultiStructItemCustomView(this, "Unk 228", "Unk_228"),
-                    new MultiStructItemCustomView(this, "Unk 229", "Unk_229"),
-                    new MultiStructItemCustomView(this, "Unk 230", "Unk_230"),
-                    new MultiStructItemCustomView(this, "Unk 231", "Unk_231"),
-                    new MultiStructItemCustomView(this, "Unk 232", "Unk_232"),
-                    new MultiStructItemCustomView(this, "Unk 233", "Unk_233"),
-                    new MultiStructItemCustomView(this, "Unk 234", "Unk_234"),
-                    new MultiStructItemCustomView(this, "Unk 235", "Unk_235"),
-                    new MultiStructItemCustomView(this, "Unk 236", "Unk_236"),
-                    new MultiStructItemCustomView(this, "Unk 237", "Unk_237"),
-                    new MultiStructItemCustomView(this, "Unk 238", "Unk_238"),
+                    new MultiStructItemCustomView(this, "For Every Stone Attack", "For_Every_Stone_Attack"),
+                    new MultiStructItemCustomView(this, "For Every Stone Exhaust", "For_Every_Stone_Exhaust"),
+                    new MultiStructItemCustomView(this, "For Every Stone Stun", "For_Every_Stone_Stun"),
+                    new MultiStructItemCustomView(this, "For Every Stone Attack Type", "For_Every_Stone_Attack_Type"),
+                    new MultiStructItemCustomView(this, "For Every Redpit Attack", "For_Every_Redpit_Attack"),
+                    new MultiStructItemCustomView(this, "For Every Redpit Exhaust", "For_Every_Redpit_Exhaust"),
+                    new MultiStructItemCustomView(this, "For Every Redpit Stun", "For_Every_Redpit_Stun"),
+                    new MultiStructItemCustomView(this, "For Every Redpit Attack Type", "For_Every_Redpit_Attack_Type"),
+                    new MultiStructItemCustomView(this, "For Every Brightmoss Attack", "For_Every_Brightmoss_Attack"),
+                    new MultiStructItemCustomView(this, "For Every Brightmoss Element", "For_Every_Brightmoss_Element"),
+                    new MultiStructItemCustomView(this, "For Every Brightmoss Attack Type", "For_Every_Brightmoss_Attack_Type"),
+                    new MultiStructItemCustomView(this, "For Every Scatternut/Crystalburst Attack", "For_Every_Scatternut_Crystalburst_Attack"),
+                    new MultiStructItemCustomView(this, "For Every Scatternut/Crystalburst?", "For_Every_Scatternut_Crystalburst_"),
+                    new MultiStructItemCustomView(this, "For Every Scatternut/Crystalburst Exhaust", "For_Every_Scatternut_Crystalburst_Exhaust"),
+                    new MultiStructItemCustomView(this, "For Every Scatternut/Crystalburst Attack Type", "For_Every_Scatternut_Crystalburst_Attack_Type"),
+                    new MultiStructItemCustomView(this, "For Every Torch Pod Attack", "For_Every_Torch_Pod_Attack"),
+                    new MultiStructItemCustomView(this, "For Every Torch Pod Element", "For_Every_Torch_Pod_Element"),
+                    new MultiStructItemCustomView(this, "For Every Torch Pod Attack Type", "For_Every_Torch_Pod_Attack_Type"),
+                    new MultiStructItemCustomView(this, "For Every Bomb Pod Attack", "For_Every_Bomb_Pod_Attack"),
+                    new MultiStructItemCustomView(this, "For Every Bomb Pod Element", "For_Every_Bomb_Pod_Element"),
+                    new MultiStructItemCustomView(this, "For Every Bomb Pod 1?", "For_Every_Bomb_Pod_1_"),
+                    new MultiStructItemCustomView(this, "For Every Bomb Pod 2?", "For_Every_Bomb_Pod_2_"),
+                    new MultiStructItemCustomView(this, "For Every Bomb Pod Attack Type", "For_Every_Bomb_Pod_Attack_Type"),
+                    new MultiStructItemCustomView(this, "For Every Piercing Pod Attack", "For_Every_Piercing_Pod_Attack"),
+                    new MultiStructItemCustomView(this, "For Every Piercing Pod Attack Type", "For_Every_Piercing_Pod_Attack_Type"),
+                    new MultiStructItemCustomView(this, "For Every Thorn Pod Attack", "For_Every_Thorn_Pod_Attack"),
+                    new MultiStructItemCustomView(this, "For Every Thorn Pod Exhaust", "For_Every_Thorn_Pod_Exhaust"),
+                    new MultiStructItemCustomView(this, "For Every Thorn Pod Stun", "For_Every_Thorn_Pod_Stun"),
+                    new MultiStructItemCustomView(this, "For Every Thorn Pod Attack Type", "For_Every_Thorn_Pod_Attack_Type"),
+                    new MultiStructItemCustomView(this, "For Every Dragon Pod Attack", "For_Every_Dragon_Pod_Attack"),
+                    new MultiStructItemCustomView(this, "For Every Dragon Pod Element", "For_Every_Dragon_Pod_Element"),
+                    new MultiStructItemCustomView(this, "For Every Dragon Pod Attack Type", "For_Every_Dragon_Pod_Attack_Type"),
+                    new MultiStructItemCustomView(this, "For Every Puddle Pod Attack", "For_Every_Puddle_Pod_Attack"),
+                    new MultiStructItemCustomView(this, "For Every Puddle Pod Element", "For_Every_Puddle_Pod_Element"),
+                    new MultiStructItemCustomView(this, "For Every Puddle Pod Attack Type", "For_Every_Puddle_Pod_Attack_Type"),
                     new MultiStructItemCustomView(this, "Unk 239", "Unk_239"),
                     new MultiStructItemCustomView(this, "Unk 240", "Unk_240"),
                 };

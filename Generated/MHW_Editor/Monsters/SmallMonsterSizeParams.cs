@@ -79,6 +79,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 250;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -192,6 +194,8 @@ namespace MHW_Editor.Monsters {
             [DisplayName(Monster_Id_displayName)]
             [CustomSorter(typeof(ButtonSorter))]
             public string Monster_Id_button => DataHelper.monsterNames[MainWindow.locale].TryGet(Monster_Id).ToStringWithId(Monster_Id);
+
+            public const int lastSortIndex = 300;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

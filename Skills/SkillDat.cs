@@ -1,35 +1,41 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
 
 namespace MHW_Editor.Skills {
-    public partial class SkillDat : MhwItem {
-        public SkillDat(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class SkillDat : MhwMultiStructItem<SkillDat>, IShowAsSingleStruct<SkillDat.Entries> {
+        public partial class Entries {
+            [SortOrder(0)]
+            [DisplayName("Name/Id")]
+            [CustomSorter(typeof(SkillDatNameIdSorter))]
+            public string Name_And_Id => Name.ToStringWithId(Id);
+
+            [DisplayName("")]
+            public string Name => DataHelper.skillNames[MainWindow.locale].TryGet(Id);
+
+            [SortOrder(Param_8_sortIndex + 1)]
+            public string Description => DataHelper.skillDescriptions[MainWindow.locale].TryGet(Id);
         }
 
-        [SortOrder(0)]
-        [DisplayName("Name/Id")]
-        [CustomSorter(typeof(SkillDatNameIdSorter))]
-        public string Name_And_Id => Name.ToStringWithId(Id);
+        public ObservableCollection<object> GetStructList() {
+            return data.Last.Value.list;
+        }
 
-        [DisplayName("")]
-        public override string Name => DataHelper.skillNames[MainWindow.locale].TryGet(Id);
-
-        [SortOrder(Param_8_sortIndex + 1)]
-        public string Description => DataHelper.skillDescriptions[MainWindow.locale].TryGet(Id);
-
-        [SortOrder(0)]
-        [DisplayName("")]
-        public ulong Index => (Offset - InitialOffset) / StructSize;
+        public IEnumerable<Entries> GetIterableStructList() {
+            return GetStructList().Cast<Entries>();
+        }
     }
 
     public class SkillDatNameIdSorter : ICustomSorter {
         public ListSortDirection SortDirection { get; set; } = ListSortDirection.Ascending;
 
         public int Compare(object x, object y) {
-            if (x is SkillDat x1 && y is SkillDat x2) {
+            if (x is SkillDat.Entries x1 && y is SkillDat.Entries x2) {
                 if (MainWindow.showIdBeforeName) {
                     var idCompare    = x1.Id.CompareTo(x2.Id) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
                     var levelCompare = x1.Level.CompareTo(x2.Level) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);

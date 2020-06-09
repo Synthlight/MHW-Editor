@@ -1,0 +1,31 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.plit
+//  Category: MHW_Editor.Items
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Cultivation_category<name="Cultivation category">;
+    uint Unk_1<name="Unk 1">;
+    ubyte Unlocked_from_start<name="Unlocked from start">;
+    uint Item<name="Item">;
+    uint Required_time<name="Required time">;
+    uint Catalyst_time_bonus<name="Catalyst time bonus">;
+    uint Unk_2<name="Unk 2">;
+    uint Amount_Base_<name="Amount (Base)">;
+    uint Amount_Plus1_<name="Amount (+1)">;
+    uint Amount_Plus2_<name="Amount (+2)">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

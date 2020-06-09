@@ -2,25 +2,25 @@
 using MHW_Generator.Models;
 using MHW_Template.Items;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Items {
-    public class MelderItem : ISingleStruct {
-        public SingleStruct Generate() { // .mkit
-            return new SingleStruct("MHW_Editor.Items", "MelderItem", new MhwStructData {
-                size             = 21,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Index}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Result Item Id", 0, typeof(uint), dataSourceType: DataSourceType.Items),
-                    new MhwStructData.Entry("Research Points", 4, typeof(uint)),
-                    new MhwStructData.Entry("Melding Points", 8, typeof(uint)),
-                    new MhwStructData.Entry("Category", 12, typeof(uint), typeof(ItemCategory)),
-                    new MhwStructData.Entry("Unlock Flag", 16, typeof(uint)),
-                    new MhwStructData.Entry("Unknown (uint8)", 20, typeof(byte))
-                }
-            });
+    public class MelderItem : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .mkit
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Result Item Id", typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwMultiStructData.Entry("Research Points", typeof(uint)),
+                    new MhwMultiStructData.Entry("Melding Points", typeof(uint)),
+                    new MhwMultiStructData.Entry("Category", typeof(uint), enumReturn: typeof(ItemCategory)),
+                    new MhwMultiStructData.Entry("Unlock Flag", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unknown (uint8)", typeof(byte))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
+            };
+
+            return new MultiStruct("MHW_Editor.Items", "MelderItem", new MhwMultiStructData(structs, "mkit"));
         }
     }
 }

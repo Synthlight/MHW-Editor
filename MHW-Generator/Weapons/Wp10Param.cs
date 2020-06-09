@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template;
-using MHW_Template.Struct_Generation.Multi;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Weapons {
     public class Wp10Param : WpParamBase, IMultiStruct {
@@ -90,7 +90,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry("Kinsect Stamina Consumption", typeof(float)),
+                    new MhwMultiStructData.Entry("Kinsect Stamina Drain per Second", typeof(float)),
                     new MhwMultiStructData.Entry("Kinsect Max Stamina", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {unkIndex += 3}", typeof(float)),
                     new MhwMultiStructData.Entry("Kinsect Stamina on Recall", typeof(float)),
@@ -183,16 +183,13 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Unk 9", typeof(sbyte)),
                     new MhwMultiStructData.Entry("Unk 10", typeof(sbyte)),
                     new MhwMultiStructData.Entry("Unk 11", typeof(sbyte)),
-                    new MhwMultiStructData.Entry("Unk 12", typeof(sbyte)),
-                    new MhwMultiStructData.Entry("Unk 13", typeof(sbyte)),
-                    new MhwMultiStructData.Entry("Unk 14", typeof(sbyte)),
-                    new MhwMultiStructData.Entry("Unk 15", typeof(sbyte))
+                    new MhwMultiStructData.Entry("Unk 12", typeof(sbyte))
                 }, 1),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),

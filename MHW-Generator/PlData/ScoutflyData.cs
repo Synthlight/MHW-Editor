@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
-using MHW_Template.Struct_Generation.Multi;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.PlData {
     public class ScoutflyData : IMultiStruct {

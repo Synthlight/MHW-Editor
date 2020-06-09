@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template;
-using MHW_Template.Struct_Generation.Multi;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Weapons {
     public class Wp02Param : WpParamBase, IMultiStruct {
@@ -48,9 +48,9 @@ namespace MHW_Generator.Weapons {
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex}) - Heavenly Blade Dance Effect Params", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry("Number of Hits Before 1st Damage Reduction", typeof(uint)),
-                    new MhwMultiStructData.Entry("Number of Hits Before 2nd Damage Reduction", typeof(uint)),
-                    new MhwMultiStructData.Entry("Number of Hits Before 3rd Damage Reduction", typeof(uint)),
+                    new MhwMultiStructData.Entry("Number of Hits to Trigger 1st Damage Reduction", typeof(uint)),
+                    new MhwMultiStructData.Entry("Number of Hits to Trigger 2nd Damage Reduction", typeof(uint)),
+                    new MhwMultiStructData.Entry("Number of Hits to Trigger 3rd Damage Reduction", typeof(uint)),
                     new MhwMultiStructData.Entry("Damage Reduction after 1st Threshold", typeof(float)),
                     new MhwMultiStructData.Entry("Damage Reduction after 2nd Threshold", typeof(float)),
                     new MhwMultiStructData.Entry("Damage Reduction after 3rd Threshold", typeof(float)),

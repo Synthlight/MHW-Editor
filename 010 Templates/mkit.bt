@@ -1,0 +1,27 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.mkit
+//  Category: MHW_Editor.Items
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Result_Item_Id<name="Result Item Id">;
+    uint Research_Points<name="Research Points">;
+    uint Melding_Points<name="Melding Points">;
+    uint Category<name="Category">;
+    uint Unlock_Flag<name="Unlock Flag">;
+    ubyte Unknown_uint8_<name="Unknown (uint8)">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

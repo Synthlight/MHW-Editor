@@ -1,23 +1,23 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 using MHW_Template.Weapons;
 
 namespace MHW_Generator.Weapons {
-    public class WeaponWhistle : ISingleStruct {
-        public SingleStruct Generate() { // .wep_wsl
-            return new SingleStruct("MHW_Editor.Weapons", "WeaponWhistle", new MhwStructData {
-                size             = 7,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Note 1", 4, typeof(byte), typeof(NoteColor)),
-                    new MhwStructData.Entry("Note 2", 5, typeof(byte), typeof(NoteColor)),
-                    new MhwStructData.Entry("Note 3", 6, typeof(byte), typeof(NoteColor))
-                }
-            });
+    public class WeaponWhistle : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .wep_wsl
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Id", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Note 1", typeof(byte), enumReturn: typeof(NoteColor)),
+                    new MhwMultiStructData.Entry("Note 2", typeof(byte), enumReturn: typeof(NoteColor)),
+                    new MhwMultiStructData.Entry("Note 3", typeof(byte), enumReturn: typeof(NoteColor))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Weapons", "WeaponWhistle", new MhwMultiStructData(structs, "wep_wsl"));
         }
     }
 }

@@ -1,24 +1,24 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Weapons {
-    public class GunnerShoot : ISingleStruct {
-        public SingleStruct Generate() { // .gun_sd
-            return new SingleStruct("MHW_Editor.Weapons", "GunnerShoot", new MhwStructData {
-                size             = 5,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("No Mods", 0, typeof(byte), dataSourceType: DataSourceType.GunnerRecoil),
-                    new MhwStructData.Entry("Mod 1", 1, typeof(byte), dataSourceType: DataSourceType.GunnerRecoil),
-                    new MhwStructData.Entry("Mod 2", 2, typeof(byte), dataSourceType: DataSourceType.GunnerRecoil),
-                    new MhwStructData.Entry("Mod 3", 3, typeof(byte), dataSourceType: DataSourceType.GunnerRecoil),
-                    new MhwStructData.Entry("Mod 4", 4, typeof(byte), dataSourceType: DataSourceType.GunnerRecoil)
-                }
-            });
+    public class GunnerShoot : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .gun_sd
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("No Mods", typeof(byte), dataSourceType: DataSourceType.GunnerRecoil),
+                    new MhwMultiStructData.Entry("Mod 1", typeof(byte), dataSourceType: DataSourceType.GunnerRecoil),
+                    new MhwMultiStructData.Entry("Mod 2", typeof(byte), dataSourceType: DataSourceType.GunnerRecoil),
+                    new MhwMultiStructData.Entry("Mod 3", typeof(byte), dataSourceType: DataSourceType.GunnerRecoil),
+                    new MhwMultiStructData.Entry("Mod 4", typeof(byte), dataSourceType: DataSourceType.GunnerRecoil)
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Weapons", "GunnerShoot", new MhwMultiStructData(structs, "gun_sd"));
         }
     }
 }

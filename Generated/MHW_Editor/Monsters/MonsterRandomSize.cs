@@ -64,6 +64,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 200;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -177,6 +179,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 300;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var countTarget = (Monster_Random_Sizes) lastStruct.Last();
@@ -226,6 +230,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Number_of_Crown_Tables));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -304,6 +310,8 @@ namespace MHW_Editor.Monsters {
                     }
                 }
 
+                public const int lastSortIndex = 150;
+
                 public static ObservableCollection<Crown_Sizes> LoadData(BinaryReader reader, Crown_Tables parent) {
                     var list = new ObservableCollection<Crown_Sizes>();
                     var count = 38UL;
@@ -332,6 +340,8 @@ namespace MHW_Editor.Monsters {
             [SortOrder(Crown_Sizes_sortIndex)]
             [DisplayName(Crown_Sizes_displayName)]
             public virtual ObservableCollection<Crown_Sizes> Crown_Sizes_raw { get; protected set; }
+
+            public const int lastSortIndex = 150;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

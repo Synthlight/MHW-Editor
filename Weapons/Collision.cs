@@ -155,6 +155,10 @@ namespace MHW_Editor.Weapons {
         }
 
         public partial class OAP {
+            [SortOrder(The_rest_of_the_file_as_bytes__sortIndex - 1)]
+            [DisplayName("Bytes Skipped")]
+            public uint BytesSkipped => (uint) The_rest_of_the_file_as_bytes__raw.Count;
+
             public partial class End_Junk {
                 public static ObservableCollection<End_Junk> LoadData(BinaryReader reader, OAP parent) {
                     var list  = new ObservableCollection<End_Junk>();

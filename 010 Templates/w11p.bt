@@ -105,13 +105,11 @@ uint Unk_73<name="Unk 73">;
 float Unk_74<name="Unk 74">;
 float Unk_75<name="Unk 75">;
 float Unk_76<name="Unk 76">;
-ubyte Unk_77<name="Unk 77">;
-int Unk_78<name="Unk 78">;
 
 // Unk Arr 2 (Shared)
 typedef struct {
-    float Unk_1<name="Unk 1">;
-    float Unk_2<name="Unk 2">;
+    ubyte Unk_1<name="Unk 1">;
+    int Unk_2<name="Unk 2">;
     float Unk_3<name="Unk 3">;
     float Unk_4<name="Unk 4">;
     float Unk_5<name="Unk 5">;
@@ -123,12 +121,14 @@ typedef struct {
     float Unk_11<name="Unk 11">;
     float Unk_12<name="Unk 12">;
     float Unk_13<name="Unk 13">;
-    ubyte Unk_14<name="Unk 14">;
-    int Unk_15<name="Unk 15">;
+    float Unk_14<name="Unk 14">;
+    float Unk_15<name="Unk 15">;
 } Unk_Arr_2_Shared_;
 
 Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false, name="Unk Arr 2 (Shared)">;
 
+ubyte Unk_77<name="Unk 77">;
+int Unk_78<name="Unk 78">;
 float Unk_79<name="Unk 79">;
 float Unk_80<name="Unk 80">;
 float Unk_81<name="Unk 81">;
@@ -222,10 +222,10 @@ Unk_Arr_5 Unk_Arr_5_[12]<optimize=false, name="Unk Arr 5">;
 // Action Param 1
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_1;
 
 Action_Param_1 Action_Param_1_[2]<optimize=false, name="Action Param 1">;
@@ -258,10 +258,10 @@ float Unk_135<name="Unk 135">;
 // Action Param 2
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_2;
 
 Action_Param_2 Action_Param_2_<name="Action Param 2">;
@@ -333,10 +333,10 @@ float Unk_198<name="Unk 198">;
 // Action Param 3
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_3;
 
 Action_Param_3 Action_Param_3_<name="Action Param 3">;
@@ -364,40 +364,40 @@ float Thousand_Dragons_X1<name="Thousand Dragons X1">;
 float Thousand_Dragons_Y1<name="Thousand Dragons Y1">;
 float Thousand_Dragons_X2<name="Thousand Dragons X2">;
 float Thousand_Dragons_Y2<name="Thousand Dragons Y2">;
-float Unk_204<name="Unk 204">;
-float Unk_205<name="Unk 205">;
-float Unk_206<name="Unk 206">;
-uint Unk_207<name="Unk 207">;
-float Unk_208<name="Unk 208">;
-float Unk_209<name="Unk 209">;
-float Unk_210<name="Unk 210">;
-uint Unk_211<name="Unk 211">;
-float Unk_212<name="Unk 212">;
-float Unk_213<name="Unk 213">;
-uint Unk_214<name="Unk 214">;
-float Unk_215<name="Unk 215">;
-float Unk_216<name="Unk 216">;
-float Unk_217<name="Unk 217">;
-uint Unk_218<name="Unk 218">;
-float Unk_219<name="Unk 219">;
-float Unk_220<name="Unk 220">;
-uint Unk_221<name="Unk 221">;
-float Unk_222<name="Unk 222">;
-float Unk_223<name="Unk 223">;
-float Unk_224<name="Unk 224">;
-float Unk_225<name="Unk 225">;
-uint Unk_226<name="Unk 226">;
-float Unk_227<name="Unk 227">;
-uint Unk_228<name="Unk 228">;
-float Unk_229<name="Unk 229">;
-float Unk_230<name="Unk 230">;
-float Unk_231<name="Unk 231">;
-uint Unk_232<name="Unk 232">;
-float Unk_233<name="Unk 233">;
-float Unk_234<name="Unk 234">;
-uint Unk_235<name="Unk 235">;
-float Unk_236<name="Unk 236">;
-float Unk_237<name="Unk 237">;
-uint Unk_238<name="Unk 238">;
+float For_Every_Stone_Attack<name="For Every Stone Attack">;
+float For_Every_Stone_Exhaust<name="For Every Stone Exhaust">;
+float For_Every_Stone_Stun<name="For Every Stone Stun">;
+uint For_Every_Stone_Attack_Type<name="For Every Stone Attack Type">;
+float For_Every_Redpit_Attack<name="For Every Redpit Attack">;
+float For_Every_Redpit_Exhaust<name="For Every Redpit Exhaust">;
+float For_Every_Redpit_Stun<name="For Every Redpit Stun">;
+uint For_Every_Redpit_Attack_Type<name="For Every Redpit Attack Type">;
+float For_Every_Brightmoss_Attack<name="For Every Brightmoss Attack">;
+float For_Every_Brightmoss_Element<name="For Every Brightmoss Element">;
+uint For_Every_Brightmoss_Attack_Type<name="For Every Brightmoss Attack Type">;
+float For_Every_Scatternut_Crystalburst_Attack<name="For Every Scatternut/Crystalburst Attack">;
+float For_Every_Scatternut_Crystalburst_<name="For Every Scatternut/Crystalburst?">;
+float For_Every_Scatternut_Crystalburst_Exhaust<name="For Every Scatternut/Crystalburst Exhaust">;
+uint For_Every_Scatternut_Crystalburst_Attack_Type<name="For Every Scatternut/Crystalburst Attack Type">;
+float For_Every_Torch_Pod_Attack<name="For Every Torch Pod Attack">;
+float For_Every_Torch_Pod_Element<name="For Every Torch Pod Element">;
+uint For_Every_Torch_Pod_Attack_Type<name="For Every Torch Pod Attack Type">;
+float For_Every_Bomb_Pod_Attack<name="For Every Bomb Pod Attack">;
+float For_Every_Bomb_Pod_Element<name="For Every Bomb Pod Element">;
+float For_Every_Bomb_Pod_1_<name="For Every Bomb Pod 1?">;
+float For_Every_Bomb_Pod_2_<name="For Every Bomb Pod 2?">;
+uint For_Every_Bomb_Pod_Attack_Type<name="For Every Bomb Pod Attack Type">;
+float For_Every_Piercing_Pod_Attack<name="For Every Piercing Pod Attack">;
+uint For_Every_Piercing_Pod_Attack_Type<name="For Every Piercing Pod Attack Type">;
+float For_Every_Thorn_Pod_Attack<name="For Every Thorn Pod Attack">;
+float For_Every_Thorn_Pod_Exhaust<name="For Every Thorn Pod Exhaust">;
+float For_Every_Thorn_Pod_Stun<name="For Every Thorn Pod Stun">;
+uint For_Every_Thorn_Pod_Attack_Type<name="For Every Thorn Pod Attack Type">;
+float For_Every_Dragon_Pod_Attack<name="For Every Dragon Pod Attack">;
+float For_Every_Dragon_Pod_Element<name="For Every Dragon Pod Element">;
+uint For_Every_Dragon_Pod_Attack_Type<name="For Every Dragon Pod Attack Type">;
+float For_Every_Puddle_Pod_Attack<name="For Every Puddle Pod Attack">;
+float For_Every_Puddle_Pod_Element<name="For Every Puddle Pod Element">;
+uint For_Every_Puddle_Pod_Attack_Type<name="For Every Puddle Pod Attack Type">;
 float Unk_239<name="Unk 239">;
 float Unk_240<name="Unk 240">;

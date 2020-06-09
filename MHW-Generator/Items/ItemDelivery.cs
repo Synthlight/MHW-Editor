@@ -1,30 +1,30 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Items {
-    public class ItemDelivery : ISingleStruct {
-        public SingleStruct Generate() { // .stmp
-            return new SingleStruct("MHW_Editor.Items", "ItemDelivery", new MhwStructData {
-                size             = 44,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Unk1", 4, typeof(uint)),
-                    new MhwStructData.Entry("Unk2", 8, typeof(uint)),
-                    new MhwStructData.Entry("Client Id", 12, typeof(int)),
-                    new MhwStructData.Entry("Decoration Reward", 16, typeof(uint), dataSourceType: DataSourceType.Items),
-                    new MhwStructData.Entry("Unk3", 20, typeof(uint)),
-                    new MhwStructData.Entry("Cost", 24, typeof(uint)),
-                    new MhwStructData.Entry("Item 1 Id", 28, typeof(uint), dataSourceType: DataSourceType.Items),
-                    new MhwStructData.Entry("Item 1 Cnt", 36, typeof(uint)),
-                    new MhwStructData.Entry("Item 2 Id", 32, typeof(uint), dataSourceType: DataSourceType.Items),
-                    new MhwStructData.Entry("Item 2 Cnt", 40, typeof(uint))
-                }
-            });
+    public class ItemDelivery : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .stmp
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Id", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Unk1", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk2", typeof(uint)),
+                    new MhwMultiStructData.Entry("Client Id", typeof(int)),
+                    new MhwMultiStructData.Entry("Decoration Reward", typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwMultiStructData.Entry("Unk3", typeof(uint)),
+                    new MhwMultiStructData.Entry("Cost", typeof(uint)),
+                    new MhwMultiStructData.Entry("Item 1 Id", typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwMultiStructData.Entry("Item 1 Cnt", typeof(uint)),
+                    new MhwMultiStructData.Entry("Item 2 Id", typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwMultiStructData.Entry("Item 2 Cnt", typeof(uint))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Items", "ItemDelivery", new MhwMultiStructData(structs, "stmp"));
         }
     }
 }

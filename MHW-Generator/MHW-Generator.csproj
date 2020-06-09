@@ -51,8 +51,8 @@
     <Compile Include="Items\ArmUp.cs" />
     <Compile Include="Items\BottleTable.cs" />
     <Compile Include="Items\Bounty.cs" />
-    <Compile Include="Items\EqCrt_Base.cs" />
-    <Compile Include="Items\EqCus_Base.cs" />
+    <Compile Include="Items\EqCrt.cs" />
+    <Compile Include="Items\EqCus.cs" />
     <Compile Include="Items\Item.cs" />
     <Compile Include="Items\ItemDelivery.cs" />
     <Compile Include="Items\ItemList.cs" />
@@ -80,11 +80,8 @@
     <Compile Include="Items\ValueTrader.cs" />
     <Compile Include="Misc\MotionBlendData.cs" />
     <Compile Include="Models\IMultiStruct.cs" />
-    <Compile Include="Models\IVerticalStruct.cs" />
-    <Compile Include="Models\ISingleStruct.cs" />
     <Compile Include="Models\MultiStruct.cs" />
-    <Compile Include="Models\SingleStruct.cs" />
-    <Compile Include="Models\VerticalStruct.cs" />
+    <Compile Include="Models\SingleStructBase.cs" />
     <Compile Include="Monsters\AnimalSize.cs" />
     <Compile Include="Monsters\MonsterDamageAttributes.cs" />
     <Compile Include="Monsters\MonsterParts.cs" />

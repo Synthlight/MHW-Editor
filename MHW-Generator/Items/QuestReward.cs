@@ -1,31 +1,34 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Models;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Items {
-    public class QuestReward : ISingleStruct {
-        public SingleStruct Generate() { // .rem
-            var entries = new List<MhwStructData.Entry> {
-                new MhwStructData.Entry("Id", 0, typeof(uint), true)
+    public class QuestReward : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .rem
+            var structs = new List<MhwMultiStructData.StructData> {
+                new MhwMultiStructData.StructData("Header", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Magic 2", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Magic 3", typeof(ushort), true),
+                    new MhwMultiStructData.Entry("Magic 4", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Magic 5", typeof(uint), true)
+                }, 1),
+
+                new MhwMultiStructData.StructData("Items", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Item Id", typeof(uint), dataSourceType: DataSourceType.Items)
+                }, 16),
+
+                new MhwMultiStructData.StructData("Counts", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Item Count", typeof(byte))
+                }, 16),
+
+                new MhwMultiStructData.StructData("Weights", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Item Weight", typeof(byte))
+                }, 16)
             };
 
-            const ulong itemIdStart     = 8;
-            const ulong itemCountStart  = 72;
-            const ulong itemWeightStart = 88;
-
-            for (ulong i = 0; i <= 15; i++) {
-                entries.Add(new MhwStructData.Entry($"Item {i + 1} Id", itemIdStart + i * 4, typeof(uint)));
-                entries.Add(new MhwStructData.Entry($"Item {i + 1} Cnt", itemCountStart + i, typeof(byte)));
-                entries.Add(new MhwStructData.Entry($"Item {i + 1} Wt", itemWeightStart + i, typeof(byte)));
-            }
-
-            return new SingleStruct("MHW_Editor.Items", "QuestReward", new MhwStructData {
-                size             = 104,
-                offsetInitial    = 10,
-                entryCountOffset = -1,
-                uniqueIdFormula  = "{Id}",
-                entries          = entries
-            });
+            return new MultiStruct("MHW_Editor.Items", "QuestReward", new MhwMultiStructData(structs, "rem"));
         }
     }
 }

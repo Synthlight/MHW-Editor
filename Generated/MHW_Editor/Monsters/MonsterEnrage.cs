@@ -86,6 +86,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 250;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -340,6 +342,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Out_of_Combat_Decay_Multiplier));
                 }
             }
+
+            public const int lastSortIndex = 850;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

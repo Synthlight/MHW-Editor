@@ -1,22 +1,22 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 using MHW_Template.Weapons;
 
 namespace MHW_Generator.Weapons {
-    public class WeaponGunLance : ISingleStruct {
-        public SingleStruct Generate() { // .wep_glan
-            return new SingleStruct("MHW_Editor.Weapons", "WeaponGunLance", new MhwStructData {
-                size             = 8,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Shell Type", 4, typeof(ushort), typeof(ShellType)),
-                    new MhwStructData.Entry("Shell Level", 6, typeof(ushort))
-                }
-            });
+    public class WeaponGunLance : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .wep_glan
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Id", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Shell Type", typeof(ushort), enumReturn: typeof(ShellType)),
+                    new MhwMultiStructData.Entry("Shell Level", typeof(ushort))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Weapons", "WeaponGunLance", new MhwMultiStructData(structs, "wep_glan"));
         }
     }
 }

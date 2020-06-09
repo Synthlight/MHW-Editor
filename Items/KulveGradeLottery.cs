@@ -1,12 +1,16 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Items {
-    public partial class KulveGradeLottery : MhwItem {
-        public KulveGradeLottery(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class KulveGradeLottery : MhwMultiStructItem<KulveGradeLottery>, IShowAsSingleStruct<KulveGradeLottery.Entries> {
+        public ObservableCollection<object> GetStructList() {
+            return data.Last.Value.list;
         }
 
-        [DisplayName("")]
-        public override string Name => "None";
+        public IEnumerable<Entries> GetIterableStructList() {
+            return GetStructList().Cast<Entries>();
+        }
     }
 }

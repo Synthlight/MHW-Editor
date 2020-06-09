@@ -1,31 +1,31 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Items;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Items {
-    public class Item : ISingleStruct {
-        public SingleStruct Generate() { // .itm
-            return new SingleStruct("MHW_Editor.Items", "Item", new MhwStructData {
-                size             = 32,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Sub Type", 4, typeof(byte), typeof(ItemSubType)),
-                    new MhwStructData.Entry("Type", 5, typeof(uint), typeof(ItemType)),
-                    new MhwStructData.Entry("Rarity", 9, typeof(byte)),
-                    new MhwStructData.Entry("Carry Limit", 10, typeof(sbyte)),
-                    new MhwStructData.Entry("Unknown (sint8)", 11, typeof(sbyte)),
-                    new MhwStructData.Entry("Sort Order", 12, typeof(ushort)),
-                    new MhwStructData.Entry("Icon Id", 18, typeof(uint)),
-                    new MhwStructData.Entry("Icon Color Id", 22, typeof(ushort)),
-                    new MhwStructData.Entry("Sell Price", 24, typeof(uint)),
-                    new MhwStructData.Entry("Buy Price", 28, typeof(uint)),
-                    new MhwStructData.Entry("Flags Raw", 14, typeof(uint), accessLevel: "private", extraOnPropertyChanged: new[] {"Flags"})
-                }
-            });
+    public class Item : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .itm
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Id", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Sub Type", typeof(byte), enumReturn: typeof(ItemSubType)),
+                    new MhwMultiStructData.Entry("Type", typeof(uint), enumReturn: typeof(ItemType)),
+                    new MhwMultiStructData.Entry("Rarity", typeof(byte)),
+                    new MhwMultiStructData.Entry("Carry Limit", typeof(sbyte)),
+                    new MhwMultiStructData.Entry("Unknown (sint8)", typeof(sbyte)),
+                    new MhwMultiStructData.Entry("Sort Order", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Flags Raw", typeof(uint), accessLevel: "private", extraOnPropertyChanged: new[] {"Flags"}, overrideSortIndex: true),
+                    new MhwMultiStructData.Entry("Icon Id", typeof(uint)),
+                    new MhwMultiStructData.Entry("Icon Color Id", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Sell Price", typeof(uint)),
+                    new MhwMultiStructData.Entry("Buy Price", typeof(uint))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Items", "Item", new MhwMultiStructData(structs, "itm"));
         }
     }
 }

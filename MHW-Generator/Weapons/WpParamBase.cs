@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MHW_Template.Struct_Generation.Multi;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Weapons {
     public class WpParamBase {
@@ -17,10 +17,10 @@ namespace MHW_Generator.Weapons {
 
         protected readonly List<MhwMultiStructData.Entry> actionParam = new List<MhwMultiStructData.Entry> {
             new MhwMultiStructData.Entry("Gravity", typeof(float)),
-            new MhwMultiStructData.Entry("G Rate", typeof(float)),
-            new MhwMultiStructData.Entry("Momentum", typeof(float)),
-            new MhwMultiStructData.Entry("V Offset", typeof(float)),
-            new MhwMultiStructData.Entry("H Offset", typeof(float))
+            new MhwMultiStructData.Entry("Speed Rate", typeof(float)),
+            new MhwMultiStructData.Entry("X Offset", typeof(float)),
+            new MhwMultiStructData.Entry("Y Offset", typeof(float)),
+            new MhwMultiStructData.Entry("Z Offset", typeof(float))
         };
 
         protected readonly List<MhwMultiStructData.Entry> eventPadVib = new List<MhwMultiStructData.Entry> {
@@ -126,14 +126,12 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(int))
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),
 
                 new MhwMultiStructData.StructData($"Unk Arr {++arrayIndex} (Shared)", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Unk 1", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk 2", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk 1", typeof(byte)),
+                    new MhwMultiStructData.Entry("Unk 2", typeof(int)),
                     new MhwMultiStructData.Entry("Unk 3", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 4", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 5", typeof(float)),
@@ -145,11 +143,13 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Unk 11", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 12", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 13", typeof(float)),
-                    new MhwMultiStructData.Entry("Unk 14", typeof(byte)),
-                    new MhwMultiStructData.Entry("Unk 15", typeof(int))
+                    new MhwMultiStructData.Entry("Unk 14", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk 15", typeof(float))
                 }, 8),
 
                 new MhwMultiStructData.StructData($"W{wpNum}p Params ({++paramIndex}, Shared)", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(int)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),

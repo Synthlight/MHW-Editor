@@ -2,7 +2,7 @@
 using MHW_Generator.Models;
 using MHW_Template;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Multi;
+using MHW_Template.Struct_Generation;
 using MHW_Template.Weapons;
 
 namespace MHW_Generator.Weapons {

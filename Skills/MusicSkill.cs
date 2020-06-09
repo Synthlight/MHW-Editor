@@ -1,21 +1,31 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
 
 namespace MHW_Editor.Skills {
-    public partial class MusicSkill : MhwItem {
-        public MusicSkill(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class MusicSkill : MhwMultiStructItem<MusicSkill>, IShowAsSingleStruct<MusicSkill.Entries> {
+        public partial class Entries {
+            [SortOrder(Song_Id_Raw_sortIndex)]
+            [DisplayName("Song/Id")]
+            [CustomSorter(typeof(MusicSkillSorter))]
+            public string Song_And_Id => Name.ToStringWithId(Song_Id_Raw);
+
+            [DisplayName("")]
+            public string Name => DataHelper.songNames.TryGet(Song_Id_Raw);
         }
 
-        [SortOrder(Song_Id_Raw_sortIndex)]
-        [DisplayName("Song/Id")]
-        [CustomSorter(typeof(MusicSkillSorter))]
-        public string Song_And_Id => Name.ToStringWithId(Song_Id_Raw);
+        public ObservableCollection<object> GetStructList() {
+            return data.Last.Value.list;
+        }
 
-        [DisplayName("")]
-        public override string Name => DataHelper.songNames.TryGet(Song_Id_Raw);
+        public IEnumerable<Entries> GetIterableStructList() {
+            return GetStructList().Cast<Entries>();
+        }
     }
 
     public class MusicSkillSorter : ICustomSorterWithPropertyName {
@@ -23,7 +33,7 @@ namespace MHW_Editor.Skills {
         public string            PropertyName  { get; set; }
 
         public int Compare(object x, object y) {
-            if (x is MusicSkill x1 && y is MusicSkill x2) {
+            if (x is MusicSkill.Entries x1 && y is MusicSkill.Entries x2) {
                 if (MainWindow.showIdBeforeName) {
                     return x1.Song_Id_Raw.CompareTo(x2.Song_Id_Raw) * (SortDirection == ListSortDirection.Ascending ? 1 : -1);
                 } else {

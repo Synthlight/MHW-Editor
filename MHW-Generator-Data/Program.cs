@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading;
+using MHW_Editor;
 using MHW_Editor.Models;
 using MHW_Template;
 using MHW_Template.Models;
@@ -70,6 +71,9 @@ namespace MHW_Generator_Data {
 
                 if (buttons.Any()) {
                     typesWithButtons.Add(type.Name);
+                    if (type.DeclaringType?.IsGeneric(typeof(MhwMultiStructItem<>)) ?? false) {
+                        typesWithButtons.Add(type.DeclaringType.Name);
+                    }
 
                     typeAndName[type] = buttons;
                 }

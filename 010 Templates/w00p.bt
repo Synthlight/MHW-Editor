@@ -105,13 +105,11 @@ uint Unk_73<name="Unk 73">;
 float Unk_74<name="Unk 74">;
 float Unk_75<name="Unk 75">;
 float Unk_76<name="Unk 76">;
-ubyte Unk_77<name="Unk 77">;
-int Unk_78<name="Unk 78">;
 
 // Unk Arr 2 (Shared)
 typedef struct {
-    float Unk_1<name="Unk 1">;
-    float Unk_2<name="Unk 2">;
+    ubyte Unk_1<name="Unk 1">;
+    int Unk_2<name="Unk 2">;
     float Unk_3<name="Unk 3">;
     float Unk_4<name="Unk 4">;
     float Unk_5<name="Unk 5">;
@@ -123,12 +121,14 @@ typedef struct {
     float Unk_11<name="Unk 11">;
     float Unk_12<name="Unk 12">;
     float Unk_13<name="Unk 13">;
-    ubyte Unk_14<name="Unk 14">;
-    int Unk_15<name="Unk 15">;
+    float Unk_14<name="Unk 14">;
+    float Unk_15<name="Unk 15">;
 } Unk_Arr_2_Shared_;
 
 Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false, name="Unk Arr 2 (Shared)">;
 
+ubyte Unk_77<name="Unk 77">;
+int Unk_78<name="Unk 78">;
 float Unk_79<name="Unk 79">;
 float Unk_80<name="Unk 80">;
 float Unk_81<name="Unk 81">;
@@ -195,10 +195,10 @@ float Unk_107<name="Unk 107">;
 // Action Param 1
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_1;
 
 Action_Param_1 Action_Param_1_[2]<optimize=false, name="Action Param 1">;
@@ -226,10 +226,10 @@ float Unk_126<name="Unk 126">;
 // Action Param 2
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_2;
 
 Action_Param_2 Action_Param_2_[7]<optimize=false, name="Action Param 2">;
@@ -244,10 +244,10 @@ float Unk_132<name="Unk 132">;
 // Action Param 3
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_3;
 
 Action_Param_3 Action_Param_3_[2]<optimize=false, name="Action Param 3">;

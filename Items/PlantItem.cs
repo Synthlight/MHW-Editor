@@ -1,12 +1,16 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Items {
-    public partial class PlantItem : MhwItem {
-        public PlantItem(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class PlantItem : MhwMultiStructItem<PlantItem>, IShowAsSingleStruct<PlantItem.Entries> {
+        public ObservableCollection<object> GetStructList() {
+            return data.Last.Value.list;
         }
 
-        [DisplayName("")]
-        public override string Name => "None";
+        public IEnumerable<Entries> GetIterableStructList() {
+            return GetStructList().Cast<Entries>();
+        }
     }
 }

@@ -1,0 +1,38 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.cus_otr
+//  Category: MHW_Editor.Weapons
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    ubyte Unk1<name="Unk1">;
+    ushort Needed_Item_Id_to_Unlock<name="Needed Item Id to Unlock">;
+    int Unk3<name="Unk3">;
+    int Unk4<name="Unk4">;
+    uint Cost<name="Cost">;
+    ushort Mat_1_Id<name="Mat 1 Id">;
+    ubyte Mat_1_Count<name="Mat 1 Count">;
+    ushort Mat_2_Id<name="Mat 2 Id">;
+    ubyte Mat_2_Count<name="Mat 2 Count">;
+    ushort Mat_3_Id<name="Mat 3 Id">;
+    ubyte Mat_3_Count<name="Mat 3 Count">;
+    ushort Mat_4_Id<name="Mat 4 Id">;
+    ubyte Mat_4_Count<name="Mat 4 Count">;
+    ubyte Unk5<name="Unk5">;
+    ubyte Unk6<name="Unk6">;
+    ubyte Unk7<name="Unk7">;
+    ubyte Unk8<name="Unk8">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

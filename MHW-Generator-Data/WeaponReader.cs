@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 using MHW_Editor;
-using MHW_Editor.Armors;
 using MHW_Editor.Assets;
 using MHW_Editor.Weapons;
 using MHW_Template;
@@ -26,30 +24,25 @@ namespace MHW_Generator_Data {
         }
 
         public static LangMap GetWeaponsOfType(string targetFile, WeaponType weaponType, IndexOrId by) {
-            using var dat = new BinaryReader(new FileStream(targetFile, FileMode.Open, FileAccess.Read));
-            dat.BaseStream.Seek(6, SeekOrigin.Begin);
-            var count = dat.ReadUInt32();
-
-            dat.BaseStream.Seek(10, SeekOrigin.Begin);
-
             var weaponClassType = weaponType.ToClassType();
+            var weaponTypeName  = Path.GetFileNameWithoutExtension(weaponType.ToDatFileName());
+            var values          = new LangMap();
 
-            var weaponTypeName = Path.GetFileNameWithoutExtension(weaponType.ToDatFileName());
-            // ReSharper disable once PossibleNullReferenceException
-            var structSize = (uint) weaponClassType.GetField(nameof(Armor.StructSize), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy).GetValue(null);
+            IEnumerable<IWeapon> weapons;
 
-            var values = new LangMap();
+            if (weaponClassType == typeof(Melee)) {
+                weapons = Melee.LoadData(targetFile).GetIterableStructList();
+            } else if (weaponClassType == typeof(Ranged)) {
+                weapons = Ranged.LoadData(targetFile).GetIterableStructList();
+            } else {
+                throw new InvalidOperationException($"Unrecognized weapon type: {weaponClassType.Name}");
+            }
 
-            for (var i = 0; i < count; i++) {
-                var position = dat.BaseStream.Position;
-                var buff     = dat.ReadBytes((int) structSize);
-
-                var weapon = (IWeapon) Activator.CreateInstance(weaponClassType, buff, (ulong) position, "");
-
+            foreach (var weapon in weapons) {
                 foreach (var lang in Global.LANGUAGES) {
                     if (!values.ContainsKey(lang)) values[lang] = new Dictionary<uint, string>();
 
-                    values[lang][by == IndexOrId.Id ? weapon.Id : weapon.Index] = DataHelper.weaponData[lang][weaponTypeName ?? throw new InvalidOperationException()][weapon.GMD_Name_Index];
+                    values[lang][(uint) (by == IndexOrId.Id ? weapon.Id : weapon.Index)] = DataHelper.weaponData[lang][weaponTypeName ?? throw new InvalidOperationException()][weapon.GMD_Name_Index];
                 }
             }
 

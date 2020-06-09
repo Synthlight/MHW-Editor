@@ -1,15 +1,21 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Items {
-    public partial class ArmUp : MhwItem {
-        public ArmUp(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class ArmUp : MhwMultiStructItem<ArmUp>, IShowAsSingleStruct<ArmUp.Entries> {
+        public partial class Entries {
+            [SortOrder(20)]
+            public ulong Rarity => Index;
         }
 
-        [DisplayName("")]
-        public override string Name => "None";
+        public ObservableCollection<object> GetStructList() {
+            return data.Last.Value.list;
+        }
 
-        [SortOrder(0)]
-        public ulong Rarity => (Offset - InitialOffset) / StructSize;
+        public IEnumerable<Entries> GetIterableStructList() {
+            return GetStructList().Cast<Entries>();
+        }
     }
 }

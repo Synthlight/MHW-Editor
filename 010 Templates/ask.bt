@@ -1,0 +1,31 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.ask
+//  Category: MHW_Editor.Armors
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Icon_Id<name="Icon Id">;
+    uint Color<name="Color">;
+    uint Sort_Order<name="Sort Order">;
+    uint Mantle_Item_Id<name="Mantle Item Id">;
+    uint Mantle_Id<name="Mantle Id">;
+    uint Unlock_Flag_or_Item_Id_<name="Unlock Flag or Item Id?">;
+    ubyte Deco_Count<name="Deco Count">;
+    ubyte Deco_Lvl_1<name="Deco Lvl 1">;
+    ubyte Deco_Lvl_2<name="Deco Lvl 2">;
+    ubyte Deco_Lvl_3<name="Deco Lvl 3">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

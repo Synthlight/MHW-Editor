@@ -86,6 +86,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 250;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -159,6 +161,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 200;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -203,6 +207,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Number_of_Stamina_Entries));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -262,6 +268,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Base));
                 }
             }
+
+            public const int lastSortIndex = 150;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -333,6 +341,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 200;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -377,6 +387,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Number_of_Stamina_Entries));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -436,6 +448,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Base));
                 }
             }
+
+            public const int lastSortIndex = 150;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -507,6 +521,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 200;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -551,6 +567,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Number_of_Stamina_Entries));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -611,6 +629,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 150;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var countTarget = (Stamina_Count_MR_) lastStruct.Last();
@@ -652,6 +672,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Fatigue_Speed));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

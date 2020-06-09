@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template;
-using MHW_Template.Struct_Generation.Multi;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Weapons {
     public class Wp07Param : WpParamBase, IMultiStruct {
@@ -40,8 +40,8 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Fullburst Rounds per Second (0.05 = 1200RPM)", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
@@ -72,7 +72,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Full Burst (Per Shell)", typeof(uint)),
                     new MhwMultiStructData.Entry("Wyvernfire", typeof(uint)),
                     new MhwMultiStructData.Entry("Wyrmstake", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk 6", typeof(uint))
+                    new MhwMultiStructData.Entry("Slinger Wyrmstake", typeof(uint))
                 }, 3),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
@@ -121,22 +121,16 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Charge Shell Damage Multiplier", typeof(float)),
                     new MhwMultiStructData.Entry("Wyvernfire Damage Multiplier", typeof(float)),
                     new MhwMultiStructData.Entry("Wyrmstake Explosion Damage Multiplier", typeof(float)),
-                    new MhwMultiStructData.Entry("Ally Attack Trigger Explosion", typeof(float)),
-                    new MhwMultiStructData.Entry("Thorn Pod Base Duration", typeof(float)),
-                    new MhwMultiStructData.Entry("Thorn Pod Extra Duration", typeof(float)),
-                    new MhwMultiStructData.Entry("Bomb/Pierce Pod Base Duration", typeof(float)),
-                    new MhwMultiStructData.Entry("Bomb/Pierce Pod Extra Duration", typeof(float)),
-                    new MhwMultiStructData.Entry("Scatternut/Crystalburst/Torch Pod/Brightmoss Base Duration", typeof(float)),
-                    new MhwMultiStructData.Entry("Scatternut/Crystalburst/Torch Pod/Brightmoss Extra Duration", typeof(float)),
-                    new MhwMultiStructData.Entry("Puddle/Dragon Base Duration", typeof(float)),
-                    new MhwMultiStructData.Entry("Puddle/Dragon Pod Extra Duration", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 14}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry("Redpit Base Duration", typeof(float)),
-                    new MhwMultiStructData.Entry("Redpit Extra Duration", typeof(float)),
-                    new MhwMultiStructData.Entry("Stone Base Duration", typeof(float)),
-                    new MhwMultiStructData.Entry("Stone Extra Duration", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 5}", typeof(float)),
+                    new MhwMultiStructData.Entry("Ally Attack Trigger Explosion", typeof(float))
+                }, 1, showVertically: true),
+
+                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex}) - Wyrmstake Blast Duration per Pod", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Base", typeof(float)),
+                    new MhwMultiStructData.Entry("Extra", typeof(float))
+                }, 7),
+
+                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex}) - Wyrmstake Blast Params", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 20}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),

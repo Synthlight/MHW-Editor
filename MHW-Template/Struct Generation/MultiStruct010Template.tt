@@ -1,0 +1,15 @@
+﻿<#@ template language="C#" #>
+<#@ output extension=".bt" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(TargetDir)\MHW-Template.dll" #>
+<#@ parameter type="System.String" name="_namespace" #>
+<#@ parameter type="MHW_Template.Struct_Generation.MhwMultiStructData" name="structData" #>
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.<#= structData.ext #>
+//  Category: <#= _namespace #>
+//------------------------------------------------
+<#
+    MultiStruct010Generation.Generate(this, structData);
+#>

@@ -1,25 +1,28 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel;
+using System.Collections.ObjectModel;
+using System.Linq;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons {
-    public partial class GunnerReload : MhwItem {
-        public static readonly Dictionary<byte, string> reloadLookup = new Dictionary<byte, string>();
+    public partial class GunnerReload : MhwMultiStructItem<GunnerReload>, IShowAsSingleStruct<GunnerReload.Entries> {
+        public static readonly Dictionary<byte, string> reloadLookup = new Dictionary<byte, string> {
+            {0, "Fast"},
+            {1, "Normal"},
+            {2, "Slow"},
+            {3, "Very Slow"}
+        };
 
-        static GunnerReload() {
-            reloadLookup[0] = "Fast";
-            reloadLookup[1] = "Normal";
-            reloadLookup[2] = "Slow";
-            reloadLookup[3] = "Very Slow";
+        public partial class Entries {
+            [SortOrder(20)]
+            public ulong Id => Index;
         }
 
-        public GunnerReload(byte[] bytes, ulong offset) : base(bytes, offset) {
+        public ObservableCollection<object> GetStructList() {
+            return data.Last.Value.list;
         }
 
-        [DisplayName("")]
-        public override string Name => "None";
-
-        [SortOrder(0)]
-        public ulong Id => (Offset - InitialOffset) / StructSize;
+        public IEnumerable<Entries> GetIterableStructList() {
+            return GetStructList().Cast<Entries>();
+        }
     }
 }

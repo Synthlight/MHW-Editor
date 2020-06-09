@@ -100,23 +100,27 @@ namespace MHW_Editor.Controls {
             switch (e.PropertyName) {
                 case nameof(IMhwItem.Bytes):
                 case nameof(IMhwItem.UniqueId):
-                case nameof(Melee.GMD_Name_Index):
-                case nameof(Melee.GMD_Description_Index):
+                case nameof(Melee.Entries.GMD_Name_Index):
+                case nameof(Melee.Entries.GMD_Description_Index):
                     e.Cancel = true; // Internal.
                     break;
                 case nameof(IMhwItem.Raw_Data):
                     e.Cancel = !MainWindow.SHOW_RAW_BYTES; // Only for debug builds.
                     break;
-                case nameof(Ranged.Barrel_Type):
-                case nameof(Ranged.Deviation):
-                case nameof(Ranged.Magazine_Type):
-                case nameof(Ranged.Muzzle_Type):
-                case nameof(Ranged.Scope_Type):
-                case nameof(Ranged.Shell_Type_Id):
-                    e.Cancel = mainWindow.targetFileType.Is(typeof(Bow));
-                    break;
-                case nameof(SkillDat.Id):
+                case nameof(SkillDat.Entries.Id):
                     e.Cancel = mainWindow.targetFileType.Is(typeof(SkillDat));
+                    break;
+                case "Index":
+                    e.Cancel = mainWindow.targetFileType.Is(typeof(AwakenedExp),
+                                                            typeof(GunnerReload),
+                                                            typeof(GunnerShoot),
+                                                            typeof(Item),
+                                                            typeof(ItemMake),
+                                                            typeof(Sharpness),
+                                                            typeof(WeaponGunLance),
+                                                            typeof(WeaponSwitchAxe),
+                                                            typeof(WeaponWSword),
+                                                            typeof(WeaponWhistle));
                     break;
                 default:
                     e.Cancel = e.PropertyName.EndsWith("Raw");
@@ -128,6 +132,14 @@ namespace MHW_Editor.Controls {
             // Cancel for _button columns as we will use a text version with onClick opening a selector.
             if (ButtonTypeInfo.TYPE_AND_NAME.ContainsKey(sourceClassType)
                 && ButtonTypeInfo.TYPE_AND_NAME[sourceClassType].Contains(e.PropertyName)) {
+                e.Cancel = true;
+            }
+
+            if (mainWindow.targetFileType.Is(typeof(EqCrt)) && EqCrt.ShouldCancel(e.PropertyName, mainWindow)) {
+                e.Cancel = true;
+            }
+
+            if (mainWindow.targetFileType.Is(typeof(EqCus)) && EqCus.ShouldCancel(e.PropertyName, mainWindow)) {
                 e.Cancel = true;
             }
 
@@ -463,7 +475,7 @@ namespace MHW_Editor.Controls {
                     dict[i] = 0;
                 }
 
-                foreach (DecoLottery item in ItemsSource) {
+                foreach (DecoLottery.Entries item in ItemsSource) {
                     dict[0]  += item.Grade_1;
                     dict[1]  += item.Grade_2;
                     dict[2]  += item.Grade_3;
@@ -477,7 +489,7 @@ namespace MHW_Editor.Controls {
                     dict[10] += item.Stream_R8_;
                 }
 
-                foreach (DecoLottery item in ItemsSource) {
+                foreach (DecoLottery.Entries item in ItemsSource) {
                     item.Grade_1_percent    = item.Grade_1 > 0f ? (float) item.Grade_1 / dict[0] : 0f;
                     item.Grade_2_percent    = item.Grade_2 > 0f ? (float) item.Grade_2 / dict[1] : 0f;
                     item.Grade_3_percent    = item.Grade_3 > 0f ? (float) item.Grade_3 / dict[2] : 0f;
@@ -491,7 +503,7 @@ namespace MHW_Editor.Controls {
                     item.Stream_R8__percent = item.Stream_R8_ > 0f ? (float) item.Stream_R8_ / dict[10] : 0f;
                 }
             } else if (mainWindow.targetFileType.Is(typeof(DecoGradeLottery))) {
-                foreach (DecoGradeLottery item in ItemsSource) {
+                foreach (DecoGradeLottery.Entries item in ItemsSource) {
                     var total = item.Grade_1
                                 + item.Grade_2
                                 + item.Grade_3
@@ -517,7 +529,7 @@ namespace MHW_Editor.Controls {
                     item.Stream_R8__percent = item.Stream_R8_ > 0f ? (float) item.Stream_R8_ / total : 0f;
                 }
             } else if (mainWindow.targetFileType.Is(typeof(SafiItemGradeLottery))) {
-                foreach (SafiItemGradeLottery item in ItemsSource) {
+                foreach (SafiItemGradeLottery.Entries item in ItemsSource) {
                     var total = item.Grade_1
                                 + item.Grade_2
                                 + item.Grade_3
@@ -551,7 +563,7 @@ namespace MHW_Editor.Controls {
                     item.Grade_15_percent = item.Grade_15 > 0f ? (float) item.Grade_15 / total : 0f;
                 }
             } else if (mainWindow.targetFileType.Is(typeof(KulveGradeLottery))) {
-                foreach (KulveGradeLottery item in ItemsSource) {
+                foreach (KulveGradeLottery.Entries item in ItemsSource) {
                     var total = item.Grade_1
                                 + item.Grade_2
                                 + item.Grade_3

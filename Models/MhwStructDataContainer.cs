@@ -47,6 +47,7 @@ namespace MHW_Editor.Models {
         public string GridName        => (string) (type.GetField(nameof(GridName), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
         public bool   IsHidden        => (bool) (type.GetField(nameof(IsHidden), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
         public bool   IsAddingAllowed => (bool) (type.GetField(nameof(IsAddingAllowed), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
+        public string Description     => (string) type.GetField(nameof(Description), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null);
 
         public void Add_Click(object sender, RoutedEventArgs e) {
             var instance = (MhwStructItem) Activator.CreateInstance(type);

@@ -49,8 +49,8 @@ namespace MHW_Editor {
 
             foreach (var item in main_grid.Items) {
                 switch (item) {
-                    case SkillDat _: {
-                        SkillDat skillDat = item;
+                    case SkillDat.Entries _: {
+                        SkillDat.Entries skillDat = item;
 
                         switch (skillDat.Id) {
                             case SkillDataValueClass.Scholar:
@@ -70,8 +70,8 @@ namespace MHW_Editor {
 
                         break;
                     }
-                    case Armor _: {
-                        Armor armor = item;
+                    case Armor.Entries _: {
+                        Armor.Entries armor = item;
 
                         switch (armor.Index) {
                             case ArmorDataValueClass.Guildwork_Head_a_plus:
@@ -190,8 +190,8 @@ namespace MHW_Editor {
 
                         break;
                     }
-                    case ASkill _: {
-                        ASkill aSkill = item;
+                    case ASkill.Entries _: {
+                        ASkill.Entries aSkill = item;
                         aSkill.Deco_Count = 2;
                         aSkill.Deco_Lvl_1 = 4;
                         aSkill.Deco_Lvl_2 = 4;
@@ -207,7 +207,7 @@ namespace MHW_Editor {
 
             if (!targetFileType.Is(typeof(Armor))) return;
 
-            foreach (Armor item in main_grid.Items) {
+            foreach (Armor.Entries item in main_grid.Items) {
                 if (item.Set_Skill_1_Level > 0) item.Set_Skill_1_Level = 5;
             }
         }
@@ -222,14 +222,14 @@ namespace MHW_Editor {
 
             foreach (var item in main_grid.Items) {
                 switch (item) {
-                    case Gem _: {
-                        Gem gem = item;
+                    case Gem.Entries _: {
+                        Gem.Entries gem = item;
                         gem.Skill_1_Level = 10;
                         if (gem.Skill_2_Level > 0) gem.Skill_2_Level = 10;
                         break;
                     }
-                    case Armor _: {
-                        Armor armor                                      = item;
+                    case Armor.Entries _: {
+                        Armor.Entries armor                              = item;
                         if (armor.Skill_1_Level > 0) armor.Skill_1_Level = 10;
                         if (armor.Skill_2_Level > 0) armor.Skill_2_Level = 10;
                         if (armor.Skill_3_Level > 0) armor.Skill_3_Level = 10;
@@ -246,8 +246,8 @@ namespace MHW_Editor {
                                    typeof(CustomOuterRecipe),
                                    typeof(CustomParts),
                                    typeof(CustomPartsR),
-                                   typeof(EqCrt_Base),
-                                   typeof(EqCus_Base),
+                                   typeof(EqCrt),
+                                   typeof(EqCus),
                                    typeof(Item),
                                    typeof(IWeapon),
                                    typeof(NewLimitBreak),
@@ -258,13 +258,13 @@ namespace MHW_Editor {
 
             foreach (var item in main_grid.Items) {
                 switch (item) {
-                    case Item _: {
-                        Item itm                             = item;
+                    case Item.Entries _: {
+                        Item.Entries itm                     = item;
                         if (itm.Buy_Price > 0) itm.Buy_Price = 1;
                         break;
                     }
-                    case Armor _: {
-                        Armor armor                    = item;
+                    case Armor.Entries _: {
+                        Armor.Entries armor            = item;
                         if (armor.Cost > 0) armor.Cost = 1;
                         break;
                     }
@@ -273,58 +273,58 @@ namespace MHW_Editor {
                         if (weapon.Cost > 0) weapon.Cost = 1;
                         break;
                     }
-                    case EqCrt_Base _: {
-                        EqCrt_Base eqCrt                             = item;
+                    case EqCrt.Entries _: {
+                        EqCrt.Entries eqCrt                          = item;
                         if (eqCrt.Mat_1_Count > 0) eqCrt.Mat_1_Count = 1;
                         if (eqCrt.Mat_2_Count > 0) eqCrt.Mat_2_Count = 1;
                         if (eqCrt.Mat_3_Count > 0) eqCrt.Mat_3_Count = 1;
                         if (eqCrt.Mat_4_Count > 0) eqCrt.Mat_4_Count = 1;
                         break;
                     }
-                    case EqCus_Base _: {
-                        EqCus_Base eqCus                             = item;
+                    case EqCus.Entries _: {
+                        EqCus.Entries eqCus                          = item;
                         if (eqCus.Mat_1_Count > 0) eqCus.Mat_1_Count = 1;
                         if (eqCus.Mat_2_Count > 0) eqCus.Mat_2_Count = 1;
                         if (eqCus.Mat_3_Count > 0) eqCus.Mat_3_Count = 1;
                         if (eqCus.Mat_4_Count > 0) eqCus.Mat_4_Count = 1;
                         break;
                     }
-                    case NewLimitBreakR _: {
-                        NewLimitBreakR newLimitBreakR                                  = item;
+                    case NewLimitBreakR.Entries _: {
+                        NewLimitBreakR.Entries newLimitBreakR                          = item;
                         if (newLimitBreakR.Mat_1_Count > 0) newLimitBreakR.Mat_1_Count = 1;
                         if (newLimitBreakR.Mat_2_Count > 0) newLimitBreakR.Mat_2_Count = 1;
                         if (newLimitBreakR.Mat_3_Count > 0) newLimitBreakR.Mat_3_Count = 1;
                         if (newLimitBreakR.Mat_4_Count > 0) newLimitBreakR.Mat_4_Count = 1;
                         break;
                     }
-                    case NewLimitBreak _: {
-                        NewLimitBreak newLimitBreak                                                = item;
+                    case NewLimitBreak.Entries _: {
+                        NewLimitBreak.Entries newLimitBreak                                        = item;
                         if (newLimitBreak.Research_Cost_r10_ > 0) newLimitBreak.Research_Cost_r10_ = 1;
                         if (newLimitBreak.Research_Cost_r11_ > 0) newLimitBreak.Research_Cost_r11_ = 1;
                         if (newLimitBreak.Research_Cost_r12_ > 0) newLimitBreak.Research_Cost_r12_ = 1;
                         if (newLimitBreak.Aug_Slot_Cost > 1) newLimitBreak.Aug_Slot_Cost           = 1;
                         break;
                     }
-                    case CustomParts _: {
-                        CustomParts customParts                                = item;
+                    case CustomParts.Entries _: {
+                        CustomParts.Entries customParts                        = item;
                         if (customParts.Craft_Cost > 0) customParts.Craft_Cost = 1;
                         break;
                     }
-                    case CustomPartsR _: {
-                        CustomPartsR customPartsR                                  = item;
+                    case CustomPartsR.Entries _: {
+                        CustomPartsR.Entries customPartsR                          = item;
                         if (customPartsR.Mat_1_Count > 0) customPartsR.Mat_1_Count = 1;
                         if (customPartsR.Mat_2_Count > 0) customPartsR.Mat_2_Count = 1;
                         if (customPartsR.Mat_3_Count > 0) customPartsR.Mat_3_Count = 1;
                         if (customPartsR.Mat_4_Count > 0) customPartsR.Mat_4_Count = 1;
                         break;
                     }
-                    case RodInsect _: {
-                        RodInsect rodInsect                                = item;
+                    case RodInsect.Entries _: {
+                        RodInsect.Entries rodInsect                        = item;
                         if (rodInsect.Craft_Cost > 0) rodInsect.Craft_Cost = 1;
                         break;
                     }
-                    case CustomOuterRecipe _: {
-                        CustomOuterRecipe recipe                       = item;
+                    case CustomOuterRecipe.Entries _: {
+                        CustomOuterRecipe.Entries recipe               = item;
                         if (recipe.Cost > 0) recipe.Cost               = 1;
                         if (recipe.Mat_1_Count > 0) recipe.Mat_1_Count = 1;
                         if (recipe.Mat_2_Count > 0) recipe.Mat_2_Count = 1;
@@ -346,8 +346,8 @@ namespace MHW_Editor {
 
             foreach (var item in main_grid.Items) {
                 switch (item) {
-                    case OtomoWeaponDat _: {
-                        OtomoWeaponDat otomoWeapon                                   = item;
+                    case OtomoWeaponDat.Entries _: {
+                        OtomoWeaponDat.Entries otomoWeapon                           = item;
                         if (otomoWeapon.Melee_Damage > 0) otomoWeapon.Melee_Damage   = 50000;
                         if (otomoWeapon.Ranged_Damage > 0) otomoWeapon.Ranged_Damage = 50000;
                         break;
@@ -366,7 +366,7 @@ namespace MHW_Editor {
 
             if (!targetFileType.Is(typeof(BottleTable))) return;
 
-            foreach (BottleTable item in main_grid.Items) {
+            foreach (BottleTable.Entries item in main_grid.Items) {
                 item.Close_Range = CoatingType.Plus;
                 item.Power       = CoatingType.Plus;
                 item.Paralysis   = CoatingType.Plus;
@@ -386,8 +386,8 @@ namespace MHW_Editor {
 
             foreach (var item in main_grid.Items) {
                 switch (item) {
-                    case Sharpness _: {
-                        Sharpness sharpness = item;
+                    case Sharpness.Entries _: {
+                        Sharpness.Entries sharpness = item;
                         sharpness.Red    = 1;
                         sharpness.Orange = 1;
                         sharpness.Yellow = 1;
@@ -397,8 +397,8 @@ namespace MHW_Editor {
                         sharpness.Purple = 400;
                         break;
                     }
-                    case Melee _: {
-                        Melee weapon                                             = item;
+                    case Melee.Entries _: {
+                        Melee.Entries weapon                                     = item;
                         if (weapon.Sharpness_Amount > 0) weapon.Sharpness_Amount = 5;
                         break;
                     }
@@ -411,7 +411,7 @@ namespace MHW_Editor {
 
             if (!targetFileType.Is(typeof(SkillDat))) return;
 
-            foreach (SkillDat item in main_grid.Items) {
+            foreach (SkillDat.Entries item in main_grid.Items) {
                 item.Unlock_Skill_1 = 0;
                 item.Unlock_Skill_2 = 0;
                 item.Unlock_Skill_3 = 0;
@@ -427,7 +427,7 @@ namespace MHW_Editor {
             const int reloadSpeed  = 17;
             const int recoilAmount = 29;
 
-            foreach (ShellTable item in main_grid.Items) {
+            foreach (ShellTable.Entries item in main_grid.Items) {
                 item.Normal_1_Rel_Spd  = reloadSpeed;
                 item.Normal_1_Rec_Amnt = recoilAmount;
                 item.Normal_2_Rel_Spd  = reloadSpeed;
@@ -508,7 +508,7 @@ namespace MHW_Editor {
 
             var rawList = new List<GemData>();
             foreach (var itemId in DataHelper.gemItemIds) {
-                Item item = main_grid.Items[(int) itemId];
+                Item.Entries item = main_grid.Items[(int) itemId];
                 rawList.Add(new GemData {index = itemId, itemName = item.Name, sortOrder = item.Sort_Order});
             }
 
@@ -524,9 +524,9 @@ namespace MHW_Editor {
                                        .ToList();
 
             for (var i = 0; i < sortedSortIndexes.Count; i++) {
-                var  index        = sortedGemNameIndexes[i];
-                var  newSortIndex = sortedSortIndexes[i];
-                Item item         = main_grid.Items[(int) index];
+                var          index        = sortedGemNameIndexes[i];
+                var          newSortIndex = sortedSortIndexes[i];
+                Item.Entries item         = main_grid.Items[(int) index];
                 item.Sort_Order = newSortIndex;
             }
         }

@@ -86,6 +86,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 250;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -229,6 +231,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 450;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -295,6 +299,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Poison_Interval));
                 }
             }
+
+            public const int lastSortIndex = 150;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -442,6 +448,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 450;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 4UL;
@@ -508,6 +516,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Exhaustion_Damage));
                 }
             }
+
+            public const int lastSortIndex = 150;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -655,6 +665,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 450;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 2UL;
@@ -707,6 +719,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Blastblight_Damage));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -851,6 +865,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 450;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -917,6 +933,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Capture_MR));
                 }
             }
+
+            public const int lastSortIndex = 150;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1064,6 +1082,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 450;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -1116,6 +1136,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Unk_1));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1259,6 +1281,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
+
+            public const int lastSortIndex = 450;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1410,6 +1434,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Dizziness_MR_Duration_Initial_Use));
                 }
             }
+
+            public const int lastSortIndex = 450;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1575,6 +1601,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 450;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -1627,6 +1655,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Mount_Knock_Down_Damage));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1771,6 +1801,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 450;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -1837,6 +1869,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Unk_2));
                 }
             }
+
+            public const int lastSortIndex = 150;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1984,6 +2018,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 450;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 4UL;
@@ -2050,6 +2086,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Unk_2));
                 }
             }
+
+            public const int lastSortIndex = 150;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -2197,6 +2235,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 450;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -2249,6 +2289,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Dragonseal_Aura));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -2393,6 +2435,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 450;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 2UL;
@@ -2473,6 +2517,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Unk_3));
                 }
             }
+
+            public const int lastSortIndex = 200;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -2615,6 +2661,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 450;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -2723,6 +2771,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Claw_Flinch_Shot_Ledge_));
                 }
             }
+
+            public const int lastSortIndex = 300;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -2868,6 +2918,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
+
+            public const int lastSortIndex = 450;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

@@ -127,8 +127,8 @@
     <Compile Include="Generated\MHW_Editor\Gems\DecoGradeLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Gems\DecoLottery.cs" />
     <Compile Include="Generated\MHW_Editor\GuildCard\GcData.cs" />
-    <Compile Include="Generated\MHW_Editor\Items\EqCrt_Base.cs" />
-    <Compile Include="Generated\MHW_Editor\Items\EqCus_Base.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\EqCrt.cs" />
+    <Compile Include="Generated\MHW_Editor\Items\EqCus.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemDelivery.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemList.cs" />
     <Compile Include="Generated\MHW_Editor\Items\ItemLottery.cs" />
@@ -166,14 +166,10 @@
     <Compile Include="Generated\MHW_Editor\Monsters\SmallMonsterSizeParams.cs" />
     <Compile Include="Generated\MHW_Editor\Monsters\MonsterStamina.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlItemParam.cs" />
-    <Compile Include="Generated\MHW_Editor\PlData\PlItemParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlMantleParam.cs" />
-    <Compile Include="Generated\MHW_Editor\PlData\PlMantleParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlMusicSkillParam.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlPlayerParam.cs" />
-    <Compile Include="Generated\MHW_Editor\PlData\PlPlayerParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\PlSkillParam.cs" />
-    <Compile Include="Generated\MHW_Editor\PlData\PlSkillParamInternal.cs" />
     <Compile Include="Generated\MHW_Editor\PlData\ScoutflyData.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\MusicSkill.cs" />
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
@@ -213,11 +209,6 @@
     <Compile Include="GetNewItemId.xaml.cs">
       <DependentUpon>GetNewItemId.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GuildCard\GcData_Poses.cs" />
-    <Compile Include="GuildCard\GcData_Expressions.cs" />
-    <Compile Include="GuildCard\GcData_Title2.cs" />
-    <Compile Include="GuildCard\GcData_Title1.cs" />
-    <Compile Include="GuildCard\GcData_Backgrounds.cs" />
     <Compile Include="GuildCard\GcData.cs" />
     <Compile Include="Items\TimeGate\Models\Armor.cs" />
     <Compile Include="Items\TimeGate\Models\Unk3.cs" />
@@ -228,13 +219,7 @@
     <Compile Include="Items\TimeGate\Models\Weapon.cs" />
     <Compile Include="Items\TimeGate\TimeGate.cs" />
     <Compile Include="Items\TimeGate\TimeGate.io.cs" />
-    <Compile Include="Items\EqCus_Weapon.cs" />
-    <Compile Include="Items\EqCus_Misc.cs" />
-    <Compile Include="Items\EqCus_Armor.cs" />
-    <Compile Include="Items\EqCrt_Palico.cs" />
-    <Compile Include="Items\EqCrt_Charm.cs" />
-    <Compile Include="Items\EqCrt_Base.cs" />
-    <Compile Include="Items\EqCrt_Weapon.cs" />
+    <Compile Include="Items\EqCrt.cs" />
     <Compile Include="Items\ItemDelivery.cs" />
     <Compile Include="Items\KulveGradeLottery.cs" />
     <Compile Include="Items\SafiItemGradeLottery.cs" />
@@ -250,7 +235,9 @@
     <Compile Include="Models\IHasEquipmentType.cs" />
     <Compile Include="Models\IHasWeaponType.cs" />
     <Compile Include="Models\IHasArmorType.cs" />
+    <Compile Include="Models\IJsonItem.cs" />
     <Compile Include="Models\IMhwMultiStructItem.cs" />
+    <Compile Include="Models\IShowAsSingleStruct.cs" />
     <Compile Include="Models\IsListAttribute.cs" />
     <Compile Include="Models\ObservableMhwStructCollection.cs" />
     <Compile Include="Models\MhwStructDataContainer.cs" />
@@ -279,8 +266,7 @@
     <Compile Include="Items\ItemMake.cs" />
     <Compile Include="Items\PlantFertilizer.cs" />
     <Compile Include="Items\PlantItem.cs" />
-    <Compile Include="Items\EqCus_Base.cs" />
-    <Compile Include="Items\EqCrt_Armor.cs" />
+    <Compile Include="Items\EqCus.cs" />
     <Compile Include="Items\ShopSed.cs" />
     <Compile Include="JsonMigrations.cs" />
     <Compile Include="MainWindow.xaml.buttons.cs">
@@ -349,7 +335,6 @@
     <Compile Include="Weapons\AwakenedWpUpgrade.cs" />
     <Compile Include="Weapons\AwakenedWpCustom.cs" />
     <Compile Include="Weapons\AwakenedLimitBreakR.cs" />
-    <Compile Include="Weapons\Bow.cs" />
     <Compile Include="Weapons\AwakenedLimitBreak.cs" />
     <Compile Include="Weapons\CustomOuterRecipe.cs" />
     <Compile Include="Weapons\CustomOuterWeapon.cs" />
@@ -379,7 +364,6 @@
     <Compile Include="Weapons\Wp10Param.cs" />
     <Compile Include="Weapons\RodInsect.cs" />
     <Compile Include="Weapons\Sharpness.cs" />
-    <Compile Include="Weapons\BowGun.cs" />
     <Compile Include="Weapons\IWeapon.cs" />
     <Compile Include="Weapons\Melee.cs" />
     <Compile Include="Weapons\Ranged.cs" />

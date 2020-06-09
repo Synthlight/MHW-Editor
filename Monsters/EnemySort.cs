@@ -1,15 +1,16 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Monsters {
-    public partial class EnemySort : MhwItem {
-        public EnemySort(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class EnemySort : MhwMultiStructItem<EnemySort>, IShowAsSingleStruct<EnemySort.Entries> {
+        public ObservableCollection<object> GetStructList() {
+            return data.Last.Value.list;
         }
 
-        [DisplayName("")]
-        public override string Name => "None";
-
-        [SortOrder(0)]
-        public ulong Index => (Offset - InitialOffset) / StructSize;
+        public IEnumerable<Entries> GetIterableStructList() {
+            return GetStructList().Cast<Entries>();
+        }
     }
 }

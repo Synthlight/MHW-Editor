@@ -37,6 +37,11 @@ namespace MHW_Editor.Models {
                 grid.AddControl(new Label {Content = entry.GridName, FontSize = MainWindow.FONT_SIZE});
             }
 
+            var desc = entry.Description;
+            if (desc != null) {
+                grid.AddControl(new Label {Content = desc, FontSize = MainWindow.FONT_SIZE * .8});
+            }
+
             if (entry.type.IsGeneric(typeof(IHasCustomView<>))) {
                 main.AddDataGrid(((IHasCustomView<MultiStructItemCustomView>) entry.list[0]).GetCustomView());
             } else {

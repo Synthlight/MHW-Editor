@@ -1,51 +1,56 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 using MHW_Template.Weapons;
 
 namespace MHW_Generator.Weapons {
-    public class Melee : ISingleStruct {
-        public SingleStruct Generate() { // .wp_dat
-            return new SingleStruct("MHW_Editor.Weapons", "Melee", new MhwStructData {
-                size             = 66,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Index", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Id", 56, typeof(ushort), true),
-                    new MhwStructData.Entry("Unk1", 4, typeof(short)),
-                    new MhwStructData.Entry("Base Model Id", 6, typeof(short)),
-                    new MhwStructData.Entry("Part 1 Id", 8, typeof(short)),
-                    new MhwStructData.Entry("Part 2 Id", 10, typeof(short)),
-                    new MhwStructData.Entry("Color", 13, typeof(byte)),
-                    new MhwStructData.Entry("Is Fixed Upgrade", 15, typeof(byte), typeof(bool)),
-                    new MhwStructData.Entry("Cost", 16, typeof(uint)),
-                    new MhwStructData.Entry("Rarity", 20, typeof(byte)),
-                    new MhwStructData.Entry("Sharpness (.kire) Id", 21, typeof(byte)),
-                    new MhwStructData.Entry("Sharpness Amount", 22, typeof(byte)),
-                    new MhwStructData.Entry("Damage", 23, typeof(ushort)),
-                    new MhwStructData.Entry("Defense", 25, typeof(ushort)),
-                    new MhwStructData.Entry("Affinity", 27, typeof(sbyte), valueString: "value.Clamp((sbyte) -100, (sbyte) 100)"),
-                    new MhwStructData.Entry("Element", 28, typeof(byte), typeof(Element)),
-                    new MhwStructData.Entry("Element Damage", 29, typeof(ushort)),
-                    new MhwStructData.Entry("Element (Hidden)", 31, typeof(byte), typeof(Element)),
-                    new MhwStructData.Entry("Element (Hidden) Damage", 32, typeof(ushort)),
-                    new MhwStructData.Entry("Elderseal", 34, typeof(byte), typeof(Elderseal)),
-                    new MhwStructData.Entry("Slot Count", 35, typeof(byte)),
-                    new MhwStructData.Entry("Slot 1 Size", 36, typeof(byte)),
-                    new MhwStructData.Entry("Slot 2 Size", 37, typeof(byte)),
-                    new MhwStructData.Entry("Slot 3 Size", 38, typeof(byte)),
-                    new MhwStructData.Entry("Special Ability 1 ID", 39, typeof(ushort)),
-                    new MhwStructData.Entry("Special Ability 2 ID", 41, typeof(ushort)),
-                    new MhwStructData.Entry("Tree Id", 14, typeof(byte)),
-                    new MhwStructData.Entry("Tree Position", 55, typeof(byte)),
-                    new MhwStructData.Entry("Skill", 62, typeof(ushort), dataSourceType: DataSourceType.Skills),
-                    new MhwStructData.Entry("GMD Name Index", 58, typeof(ushort), true),
-                    new MhwStructData.Entry("GMD Description Index", 60, typeof(ushort), true)
-                }
-            });
+    public class Melee : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .wp_dat
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Index", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Unk1", typeof(short)),
+                    new MhwMultiStructData.Entry("Base Model Id", typeof(short)),
+                    new MhwMultiStructData.Entry("Part 1 Id", typeof(short)),
+                    new MhwMultiStructData.Entry("Part 2 Id", typeof(short)),
+                    new MhwMultiStructData.Entry("Unk 1", typeof(byte)),
+                    new MhwMultiStructData.Entry("Color", typeof(byte)),
+                    new MhwMultiStructData.Entry("Tree Id", typeof(byte), overrideSortIndex: true),
+                    new MhwMultiStructData.Entry("Is Fixed Upgrade", typeof(byte), enumReturn: typeof(bool)),
+                    new MhwMultiStructData.Entry("Cost", typeof(uint)),
+                    new MhwMultiStructData.Entry("Rarity", typeof(byte)),
+                    new MhwMultiStructData.Entry("Sharpness (.kire) Id", typeof(byte)),
+                    new MhwMultiStructData.Entry("Sharpness Amount", typeof(byte)),
+                    new MhwMultiStructData.Entry("Damage", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Defense", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Affinity", typeof(sbyte), valueString: "value.Clamp((sbyte) -100, (sbyte) 100)"),
+                    new MhwMultiStructData.Entry("Element", typeof(byte), enumReturn: typeof(Element)),
+                    new MhwMultiStructData.Entry("Element Damage", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Element (Hidden)", typeof(byte), enumReturn: typeof(Element)),
+                    new MhwMultiStructData.Entry("Element (Hidden) Damage", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Elderseal", typeof(byte), enumReturn: typeof(Elderseal)),
+                    new MhwMultiStructData.Entry("Slot Count", typeof(byte)),
+                    new MhwMultiStructData.Entry("Slot 1 Size", typeof(byte)),
+                    new MhwMultiStructData.Entry("Slot 2 Size", typeof(byte)),
+                    new MhwMultiStructData.Entry("Slot 3 Size", typeof(byte)),
+                    new MhwMultiStructData.Entry("Special Ability 1 ID", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Special Ability 2 ID", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk 2", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk 3", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk 4", typeof(uint)),
+                    new MhwMultiStructData.Entry("Tree Position", typeof(byte)),
+                    new MhwMultiStructData.Entry("Id", typeof(ushort), true, overrideSortIndex: true),
+                    new MhwMultiStructData.Entry("GMD Name Index", typeof(ushort), true),
+                    new MhwMultiStructData.Entry("GMD Description Index", typeof(ushort), true),
+                    new MhwMultiStructData.Entry("Skill", typeof(ushort), dataSourceType: DataSourceType.Skills),
+                    new MhwMultiStructData.Entry("Unk 5", typeof(ushort))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Weapons", "Melee", new MhwMultiStructData(structs, "wp_dat"));
         }
     }
 }

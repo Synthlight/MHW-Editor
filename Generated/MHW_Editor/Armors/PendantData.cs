@@ -1,5 +1,11 @@
 using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Text;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Template;
@@ -7,181 +13,344 @@ using MHW_Template.Models;
 
 namespace MHW_Editor.Armors {
     public partial class PendantData {
-        public const uint StructSize = 27;
-        public const ulong InitialOffset = 10;
-        public const long EntryCountOffset = 6;
-        public const string EncryptionKey = null;
-        public override string UniqueId => $"{Id}";
+        public override string EncryptionKey => null;
 
-        public const string Id_displayName = "Id";
-        public const int Id_sortIndex = 50;
-        [SortOrder(Id_sortIndex)]
-        [DisplayName(Id_displayName)]
-        [IsReadOnly]
-        public virtual uint Id {
-            get => GetData<uint>(0);
-            set {
-                if (GetData<uint>(0) == value) return;
-                SetData(0, value, nameof(Id));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Id));
+        public partial class Header : MhwStructItem {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "Header";
+
+            protected uint Magic_1_raw;
+            public const string Magic_1_displayName = "Magic 1";
+            public const int Magic_1_sortIndex = 50;
+            [SortOrder(Magic_1_sortIndex)]
+            [DisplayName(Magic_1_displayName)]
+            [IsReadOnly]
+            public virtual uint Magic_1 {
+                get => Magic_1_raw;
+                set {
+                    if (Magic_1_raw == value) return;
+                    Magic_1_raw = value;
+                    OnPropertyChanged(nameof(Magic_1));
+                }
+            }
+
+            protected ushort Magic_2_raw;
+            public const string Magic_2_displayName = "Magic 2";
+            public const int Magic_2_sortIndex = 100;
+            [SortOrder(Magic_2_sortIndex)]
+            [DisplayName(Magic_2_displayName)]
+            [IsReadOnly]
+            public virtual ushort Magic_2 {
+                get => Magic_2_raw;
+                set {
+                    if (Magic_2_raw == value) return;
+                    Magic_2_raw = value;
+                    OnPropertyChanged(nameof(Magic_2));
+                }
+            }
+
+            protected uint Entry_Count_raw;
+            public const string Entry_Count_displayName = "Entry Count";
+            public const int Entry_Count_sortIndex = 150;
+            [SortOrder(Entry_Count_sortIndex)]
+            [DisplayName(Entry_Count_displayName)]
+            [IsReadOnly]
+            public virtual uint Entry_Count {
+                get => Entry_Count_raw;
+                set {
+                    if (Entry_Count_raw == value) return;
+                    Entry_Count_raw = value;
+                    OnPropertyChanged(nameof(Entry_Count));
+                }
+            }
+
+            public const int lastSortIndex = 200;
+
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static Header LoadData(BinaryReader reader, ulong i) {
+                var data = new Header();
+                data.Index = i;
+                data.Magic_1_raw = reader.ReadUInt32();
+                data.Magic_2_raw = reader.ReadUInt16();
+                data.Entry_Count_raw = reader.ReadUInt32();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Magic_1_raw);
+                writer.Write(Magic_2_raw);
+                writer.Write(Entry_Count_raw);
             }
         }
 
-        public const string Unk1_displayName = "Unk1";
-        public const int Unk1_sortIndex = 100;
-        [SortOrder(Unk1_sortIndex)]
-        [DisplayName(Unk1_displayName)]
-        public virtual byte Unk1 {
-            get => GetData<byte>(4);
-            set {
-                if (GetData<byte>(4) == value) return;
-                SetData(4, value, nameof(Unk1));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk1));
+        public partial class Entries : MhwStructItem {
+            public const ulong FixedSizeCount = 0;
+            public const string GridName = "Entries";
+            public override string UniqueId => "{Id}";
+
+            protected uint Id_raw;
+            public const string Id_displayName = "Id";
+            public const int Id_sortIndex = 50;
+            [SortOrder(Id_sortIndex)]
+            [DisplayName(Id_displayName)]
+            [IsReadOnly]
+            public virtual uint Id {
+                get => Id_raw;
+                set {
+                    if (Id_raw == value) return;
+                    Id_raw = value;
+                    OnPropertyChanged(nameof(Id));
+                }
+            }
+
+            protected byte Unk1_raw;
+            public const string Unk1_displayName = "Unk1";
+            public const int Unk1_sortIndex = 100;
+            [SortOrder(Unk1_sortIndex)]
+            [DisplayName(Unk1_displayName)]
+            public virtual byte Unk1 {
+                get => Unk1_raw;
+                set {
+                    if (Unk1_raw == value) return;
+                    Unk1_raw = value;
+                    OnPropertyChanged(nameof(Unk1));
+                }
+            }
+
+            protected byte Unk2_raw;
+            public const string Unk2_displayName = "Unk2";
+            public const int Unk2_sortIndex = 150;
+            [SortOrder(Unk2_sortIndex)]
+            [DisplayName(Unk2_displayName)]
+            public virtual byte Unk2 {
+                get => Unk2_raw;
+                set {
+                    if (Unk2_raw == value) return;
+                    Unk2_raw = value;
+                    OnPropertyChanged(nameof(Unk2));
+                }
+            }
+
+            protected byte Unk3_raw;
+            public const string Unk3_displayName = "Unk3";
+            public const int Unk3_sortIndex = 200;
+            [SortOrder(Unk3_sortIndex)]
+            [DisplayName(Unk3_displayName)]
+            public virtual byte Unk3 {
+                get => Unk3_raw;
+                set {
+                    if (Unk3_raw == value) return;
+                    Unk3_raw = value;
+                    OnPropertyChanged(nameof(Unk3));
+                }
+            }
+
+            protected byte Unk4_raw;
+            public const string Unk4_displayName = "Unk4";
+            public const int Unk4_sortIndex = 250;
+            [SortOrder(Unk4_sortIndex)]
+            [DisplayName(Unk4_displayName)]
+            public virtual byte Unk4 {
+                get => Unk4_raw;
+                set {
+                    if (Unk4_raw == value) return;
+                    Unk4_raw = value;
+                    OnPropertyChanged(nameof(Unk4));
+                }
+            }
+
+            protected byte Unk5_raw;
+            public const string Unk5_displayName = "Unk5";
+            public const int Unk5_sortIndex = 300;
+            [SortOrder(Unk5_sortIndex)]
+            [DisplayName(Unk5_displayName)]
+            public virtual byte Unk5 {
+                get => Unk5_raw;
+                set {
+                    if (Unk5_raw == value) return;
+                    Unk5_raw = value;
+                    OnPropertyChanged(nameof(Unk5));
+                }
+            }
+
+            protected ushort Unk6_raw;
+            public const string Unk6_displayName = "Unk6";
+            public const int Unk6_sortIndex = 350;
+            [SortOrder(Unk6_sortIndex)]
+            [DisplayName(Unk6_displayName)]
+            public virtual ushort Unk6 {
+                get => Unk6_raw;
+                set {
+                    if (Unk6_raw == value) return;
+                    Unk6_raw = value;
+                    OnPropertyChanged(nameof(Unk6));
+                }
+            }
+
+            protected ushort Unk7_raw;
+            public const string Unk7_displayName = "Unk7";
+            public const int Unk7_sortIndex = 400;
+            [SortOrder(Unk7_sortIndex)]
+            [DisplayName(Unk7_displayName)]
+            public virtual ushort Unk7 {
+                get => Unk7_raw;
+                set {
+                    if (Unk7_raw == value) return;
+                    Unk7_raw = value;
+                    OnPropertyChanged(nameof(Unk7));
+                }
+            }
+
+            protected byte Unk8_raw;
+            public const string Unk8_displayName = "Unk8";
+            public const int Unk8_sortIndex = 450;
+            [SortOrder(Unk8_sortIndex)]
+            [DisplayName(Unk8_displayName)]
+            public virtual byte Unk8 {
+                get => Unk8_raw;
+                set {
+                    if (Unk8_raw == value) return;
+                    Unk8_raw = value;
+                    OnPropertyChanged(nameof(Unk8));
+                }
+            }
+
+            protected byte Unk9_raw;
+            public const string Unk9_displayName = "Unk9";
+            public const int Unk9_sortIndex = 500;
+            [SortOrder(Unk9_sortIndex)]
+            [DisplayName(Unk9_displayName)]
+            public virtual byte Unk9 {
+                get => Unk9_raw;
+                set {
+                    if (Unk9_raw == value) return;
+                    Unk9_raw = value;
+                    OnPropertyChanged(nameof(Unk9));
+                }
+            }
+
+            protected uint Cost_raw;
+            public const string Cost_displayName = "Cost";
+            public const int Cost_sortIndex = 550;
+            [SortOrder(Cost_sortIndex)]
+            [DisplayName(Cost_displayName)]
+            public virtual uint Cost {
+                get => Cost_raw;
+                set {
+                    if (Cost_raw == value) return;
+                    Cost_raw = value;
+                    OnPropertyChanged(nameof(Cost));
+                }
+            }
+
+            protected int Story_Unlock_raw;
+            public const string Story_Unlock_displayName = "Story Unlock";
+            public const int Story_Unlock_sortIndex = 600;
+            [SortOrder(Story_Unlock_sortIndex)]
+            [DisplayName(Story_Unlock_displayName)]
+            public virtual int Story_Unlock {
+                get => Story_Unlock_raw;
+                set {
+                    if (Story_Unlock_raw == value) return;
+                    Story_Unlock_raw = value;
+                    OnPropertyChanged(nameof(Story_Unlock));
+                }
+            }
+
+            protected ushort Unk10_raw;
+            public const string Unk10_displayName = "Unk10";
+            public const int Unk10_sortIndex = 650;
+            [SortOrder(Unk10_sortIndex)]
+            [DisplayName(Unk10_displayName)]
+            public virtual ushort Unk10 {
+                get => Unk10_raw;
+                set {
+                    if (Unk10_raw == value) return;
+                    Unk10_raw = value;
+                    OnPropertyChanged(nameof(Unk10));
+                }
+            }
+
+            protected ushort Unk11_raw;
+            public const string Unk11_displayName = "Unk11";
+            public const int Unk11_sortIndex = 700;
+            [SortOrder(Unk11_sortIndex)]
+            [DisplayName(Unk11_displayName)]
+            public virtual ushort Unk11 {
+                get => Unk11_raw;
+                set {
+                    if (Unk11_raw == value) return;
+                    Unk11_raw = value;
+                    OnPropertyChanged(nameof(Unk11));
+                }
+            }
+
+            public const int lastSortIndex = 750;
+
+            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
+                var list = new ObservableCollection<object>();
+                var countTarget = (Header) lastStruct.Last();
+                var count = (ulong) countTarget.Entry_Count;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static Entries LoadData(BinaryReader reader, ulong i) {
+                var data = new Entries();
+                data.Index = i;
+                data.Id_raw = reader.ReadUInt32();
+                data.Unk1_raw = reader.ReadByte();
+                data.Unk2_raw = reader.ReadByte();
+                data.Unk3_raw = reader.ReadByte();
+                data.Unk4_raw = reader.ReadByte();
+                data.Unk5_raw = reader.ReadByte();
+                data.Unk6_raw = reader.ReadUInt16();
+                data.Unk7_raw = reader.ReadUInt16();
+                data.Unk8_raw = reader.ReadByte();
+                data.Unk9_raw = reader.ReadByte();
+                data.Cost_raw = reader.ReadUInt32();
+                data.Story_Unlock_raw = reader.ReadInt32();
+                data.Unk10_raw = reader.ReadUInt16();
+                data.Unk11_raw = reader.ReadUInt16();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Id_raw);
+                writer.Write(Unk1_raw);
+                writer.Write(Unk2_raw);
+                writer.Write(Unk3_raw);
+                writer.Write(Unk4_raw);
+                writer.Write(Unk5_raw);
+                writer.Write(Unk6_raw);
+                writer.Write(Unk7_raw);
+                writer.Write(Unk8_raw);
+                writer.Write(Unk9_raw);
+                writer.Write(Cost_raw);
+                writer.Write(Story_Unlock_raw);
+                writer.Write(Unk10_raw);
+                writer.Write(Unk11_raw);
             }
         }
 
-        public const string Unk2_displayName = "Unk2";
-        public const int Unk2_sortIndex = 150;
-        [SortOrder(Unk2_sortIndex)]
-        [DisplayName(Unk2_displayName)]
-        public virtual byte Unk2 {
-            get => GetData<byte>(5);
-            set {
-                if (GetData<byte>(5) == value) return;
-                SetData(5, value, nameof(Unk2));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk2));
-            }
+        public override void LoadFile(string targetFile) {
+            using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
+            data = new LinkedList<MhwStructDataContainer>();
+            var Header_ = new MhwStructDataContainer(Header.LoadData(reader, null), typeof(Header));
+            data.AddLast(Header_);
+            var Entries_ = new MhwStructDataContainer(Entries.LoadData(reader, Header_.list), typeof(Entries));
+            Entries_.SetCountTargetToUpdate(Header_, -1, "Entry_Count");
+            data.AddLast(Entries_);
         }
-
-        public const string Unk3_displayName = "Unk3";
-        public const int Unk3_sortIndex = 200;
-        [SortOrder(Unk3_sortIndex)]
-        [DisplayName(Unk3_displayName)]
-        public virtual byte Unk3 {
-            get => GetData<byte>(6);
-            set {
-                if (GetData<byte>(6) == value) return;
-                SetData(6, value, nameof(Unk3));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk3));
-            }
-        }
-
-        public const string Unk4_displayName = "Unk4";
-        public const int Unk4_sortIndex = 250;
-        [SortOrder(Unk4_sortIndex)]
-        [DisplayName(Unk4_displayName)]
-        public virtual byte Unk4 {
-            get => GetData<byte>(7);
-            set {
-                if (GetData<byte>(7) == value) return;
-                SetData(7, value, nameof(Unk4));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk4));
-            }
-        }
-
-        public const string Unk5_displayName = "Unk5";
-        public const int Unk5_sortIndex = 300;
-        [SortOrder(Unk5_sortIndex)]
-        [DisplayName(Unk5_displayName)]
-        public virtual byte Unk5 {
-            get => GetData<byte>(8);
-            set {
-                if (GetData<byte>(8) == value) return;
-                SetData(8, value, nameof(Unk5));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk5));
-            }
-        }
-
-        public const string Unk6_displayName = "Unk6";
-        public const int Unk6_sortIndex = 350;
-        [SortOrder(Unk6_sortIndex)]
-        [DisplayName(Unk6_displayName)]
-        public virtual ushort Unk6 {
-            get => GetData<ushort>(9);
-            set {
-                if (GetData<ushort>(9) == value) return;
-                SetData(9, value, nameof(Unk6));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk6));
-            }
-        }
-
-        public const string Unk7_displayName = "Unk7";
-        public const int Unk7_sortIndex = 400;
-        [SortOrder(Unk7_sortIndex)]
-        [DisplayName(Unk7_displayName)]
-        public virtual ushort Unk7 {
-            get => GetData<ushort>(11);
-            set {
-                if (GetData<ushort>(11) == value) return;
-                SetData(11, value, nameof(Unk7));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk7));
-            }
-        }
-
-        public const string Unk8_displayName = "Unk8";
-        public const int Unk8_sortIndex = 450;
-        [SortOrder(Unk8_sortIndex)]
-        [DisplayName(Unk8_displayName)]
-        public virtual byte Unk8 {
-            get => GetData<byte>(13);
-            set {
-                if (GetData<byte>(13) == value) return;
-                SetData(13, value, nameof(Unk8));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk8));
-            }
-        }
-
-        public const string Unk9_displayName = "Unk9";
-        public const int Unk9_sortIndex = 500;
-        [SortOrder(Unk9_sortIndex)]
-        [DisplayName(Unk9_displayName)]
-        public virtual byte Unk9 {
-            get => GetData<byte>(14);
-            set {
-                if (GetData<byte>(14) == value) return;
-                SetData(14, value, nameof(Unk9));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Unk9));
-            }
-        }
-
-        public const string Cost_displayName = "Cost";
-        public const int Cost_sortIndex = 550;
-        [SortOrder(Cost_sortIndex)]
-        [DisplayName(Cost_displayName)]
-        public virtual uint Cost {
-            get => GetData<uint>(15);
-            set {
-                if (GetData<uint>(15) == value) return;
-                SetData(15, value, nameof(Cost));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Cost));
-            }
-        }
-
-        public const string Story_Unlock_displayName = "Story Unlock";
-        public const int Story_Unlock_sortIndex = 600;
-        [SortOrder(Story_Unlock_sortIndex)]
-        [DisplayName(Story_Unlock_displayName)]
-        public virtual int Story_Unlock {
-            get => GetData<int>(19);
-            set {
-                if (GetData<int>(19) == value) return;
-                SetData(19, value, nameof(Story_Unlock));
-                OnPropertyChanged(nameof(Raw_Data));
-                OnPropertyChanged(nameof(Story_Unlock));
-            }
-        }
-
-        public const int lastSortIndex = 650;
     }
 }

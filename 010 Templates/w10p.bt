@@ -105,13 +105,11 @@ uint Unk_73<name="Unk 73">;
 float Unk_74<name="Unk 74">;
 float Unk_75<name="Unk 75">;
 float Unk_76<name="Unk 76">;
-ubyte Unk_77<name="Unk 77">;
-int Unk_78<name="Unk 78">;
 
 // Unk Arr 2 (Shared)
 typedef struct {
-    float Unk_1<name="Unk 1">;
-    float Unk_2<name="Unk 2">;
+    ubyte Unk_1<name="Unk 1">;
+    int Unk_2<name="Unk 2">;
     float Unk_3<name="Unk 3">;
     float Unk_4<name="Unk 4">;
     float Unk_5<name="Unk 5">;
@@ -123,12 +121,14 @@ typedef struct {
     float Unk_11<name="Unk 11">;
     float Unk_12<name="Unk 12">;
     float Unk_13<name="Unk 13">;
-    ubyte Unk_14<name="Unk 14">;
-    int Unk_15<name="Unk 15">;
+    float Unk_14<name="Unk 14">;
+    float Unk_15<name="Unk 15">;
 } Unk_Arr_2_Shared_;
 
 Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false, name="Unk Arr 2 (Shared)">;
 
+ubyte Unk_77<name="Unk 77">;
+int Unk_78<name="Unk 78">;
 float Unk_79<name="Unk 79">;
 float Unk_80<name="Unk 80">;
 float Unk_81<name="Unk 81">;
@@ -157,10 +157,10 @@ float Defense_Buff_Orange_Plus_White<name="Defense Buff: Orange + White">;
 // Action Param (Relate Vault)
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_Relate_Vault_;
 
 Action_Param_Relate_Vault_ Action_Param_Relate_Vault__[16]<optimize=false, name="Action Param (Relate Vault)">;
@@ -172,10 +172,10 @@ float Unk_100<name="Unk 100">;
 // Action Param (Relate Vault Dance)
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_Relate_Vault_Dance_;
 
 Action_Param_Relate_Vault_Dance_ Action_Param_Relate_Vault_Dance__<name="Action Param (Relate Vault Dance)">;
@@ -186,10 +186,10 @@ float Unk_102<name="Unk 102">;
 // Action Param (Relate Mid-air Evade)
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_Relate_Mid_air_Evade_;
 
 Action_Param_Relate_Mid_air_Evade_ Action_Param_Relate_Mid_air_Evade__[9]<optimize=false, name="Action Param (Relate Mid-air Evade)">;
@@ -200,10 +200,10 @@ float Unk_104<name="Unk 104">;
 // Action Param (Relate Jumping Slash And Jumping Advancing Slash)
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_;
 
 Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_ Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash__[22]<optimize=false, name="Action Param (Relate Jumping Slash And Jumping Advancing Slash)">;
@@ -216,10 +216,10 @@ float Unk_108<name="Unk 108">;
 // Action Param 5
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_5;
 
 Action_Param_5 Action_Param_5_[4]<optimize=false, name="Action Param 5">;
@@ -254,7 +254,7 @@ float Unk_135<name="Unk 135">;
 float Unk_136<name="Unk 136">;
 float Unk_137<name="Unk 137">;
 float Unk_138<name="Unk 138">;
-float Kinsect_Stamina_Consumption<name="Kinsect Stamina Consumption">;
+float Kinsect_Stamina_Drain_per_Second<name="Kinsect Stamina Drain per Second">;
 float Kinsect_Max_Stamina<name="Kinsect Max Stamina">;
 float Unk_141<name="Unk 141">;
 float Kinsect_Stamina_on_Recall<name="Kinsect Stamina on Recall">;
@@ -350,26 +350,23 @@ typedef struct {
     byte Unk_10<name="Unk 10">;
     byte Unk_11<name="Unk 11">;
     byte Unk_12<name="Unk 12">;
-    byte Unk_13<name="Unk 13">;
-    byte Unk_14<name="Unk 14">;
-    byte Unk_15<name="Unk 15">;
 } Unk_Arr_5;
 
 Unk_Arr_5 Unk_Arr_5_<name="Unk Arr 5">;
 
-uint Unk_182<name="Unk 182">;
-uint Unk_183<name="Unk 183">;
-ubyte Unk_184<name="Unk 184">;
+float Unk_182<name="Unk 182">;
+float Unk_183<name="Unk 183">;
+float Unk_184<name="Unk 184">;
 float Unk_185<name="Unk 185">;
 float Unk_186<name="Unk 186">;
 
 // Action Param 6
 typedef struct {
     float Gravity<name="Gravity">;
-    float G_Rate<name="G Rate">;
-    float Momentum<name="Momentum">;
-    float V_Offset<name="V Offset">;
-    float H_Offset<name="H Offset">;
+    float Speed_Rate<name="Speed Rate">;
+    float X_Offset<name="X Offset">;
+    float Y_Offset<name="Y Offset">;
+    float Z_Offset<name="Z Offset">;
 } Action_Param_6;
 
 Action_Param_6 Action_Param_6_<name="Action Param 6">;

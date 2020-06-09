@@ -5,8 +5,7 @@ namespace MHW_Editor.Weapons {
         public partial class Kinsect_Stats {
             public string Name {
                 get {
-                    return Index switch
-                    {
+                    return Index switch {
                         0 => "Attack Power",
                         1 => "Speed",
                         2 => "Healing",

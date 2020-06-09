@@ -1,0 +1,36 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.mske
+//  Category: MHW_Editor.PlData
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+    uint Magic_3<name="Magic 3">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    float Duration<name="Duration">;
+    float Extension<name="Extension">;
+    float M1_Duration<name="M1 Duration">;
+    float M1_Extension<name="M1 Extension">;
+    float M2_Duration<name="M2 Duration">;
+    float M2_Extension<name="M2 Extension">;
+    float Effect<name="Effect">;
+    float Recast_Effect<name="Recast Effect">;
+    uint Unk_1<name="Unk 1">;
+    uint Unk_2<name="Unk 2">;
+    uint Unk_3<name="Unk 3">;
+    uint Unk_4<name="Unk 4">;
+    uint Unk_5<name="Unk 5">;
+    uint Unk_6<name="Unk 6">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

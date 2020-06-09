@@ -109,6 +109,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 350;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -243,6 +245,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_4));
                 }
             }
+
+            public const int lastSortIndex = 400;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -747,6 +751,8 @@ namespace MHW_Editor.Weapons {
                         }
                     }
 
+                    public const int lastSortIndex = 1150;
+
                     public static ObservableCollection<CLGM_Inner> LoadData(BinaryReader reader, CLGMs parent) {
                         var list = new ObservableCollection<CLGM_Inner>();
                         var count = (ulong) parent.Clgm_Inner_Count;
@@ -1096,6 +1102,8 @@ namespace MHW_Editor.Weapons {
                     }
                 }
 
+                public const int lastSortIndex = 1300;
+
                 public static ObservableCollection<CLGMs> LoadData(BinaryReader reader, CLND parent) {
                     var list = new ObservableCollection<CLGMs>();
                     var count = (ulong) parent.Clgm_Count;
@@ -1215,6 +1223,8 @@ namespace MHW_Editor.Weapons {
                     OnPropertyChanged(nameof(Unk_4));
                 }
             }
+
+            public const int lastSortIndex = 550;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1984,6 +1994,8 @@ namespace MHW_Editor.Weapons {
                         OnPropertyChanged(nameof(Unk_45));
                     }
                 }
+
+                public const int lastSortIndex = 2350;
 
                 public static ObservableCollection<Atk0> LoadData(BinaryReader reader, Moves parent) {
                     var list = new ObservableCollection<Atk0>();
@@ -2946,6 +2958,8 @@ namespace MHW_Editor.Weapons {
                     }
                 }
 
+                public const int lastSortIndex = 3050;
+
                 public static ObservableCollection<Atk1> LoadData(BinaryReader reader, Moves parent) {
                     var list = new ObservableCollection<Atk1>();
                     var count = (ulong) parent.Move_Count;
@@ -3752,6 +3766,8 @@ namespace MHW_Editor.Weapons {
                         OnPropertyChanged(nameof(Unk_27));
                     }
                 }
+
+                public const int lastSortIndex = 2400;
 
                 public static ObservableCollection<Atk2> LoadData(BinaryReader reader, Moves parent) {
                     var list = new ObservableCollection<Atk2>();
@@ -4632,6 +4648,8 @@ namespace MHW_Editor.Weapons {
                     }
                 }
 
+                public const int lastSortIndex = 2750;
+
                 public static ObservableCollection<Atk3> LoadData(BinaryReader reader, Moves parent) {
                     var list = new ObservableCollection<Atk3>();
                     var count = (ulong) parent.Move_Count;
@@ -4764,6 +4782,8 @@ namespace MHW_Editor.Weapons {
             [SortOrder(Atk3_sortIndex)]
             [DisplayName(Atk3_displayName)]
             protected virtual ObservableCollection<Atk3> Atk3_raw { get; set; }
+
+            public const int lastSortIndex = 500;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -4901,6 +4921,8 @@ namespace MHW_Editor.Weapons {
                     }
                 }
 
+                public const int lastSortIndex = 100;
+
                 public void WriteData(BinaryWriter writer, OAP parent) {
                     writer.Write(Unk_raw);
                 }
@@ -4911,6 +4933,8 @@ namespace MHW_Editor.Weapons {
             [SortOrder(The_rest_of_the_file_as_bytes__sortIndex)]
             [DisplayName(The_rest_of_the_file_as_bytes__displayName)]
             public virtual ObservableCollection<End_Junk> The_rest_of_the_file_as_bytes__raw { get; protected set; }
+
+            public const int lastSortIndex = 300;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

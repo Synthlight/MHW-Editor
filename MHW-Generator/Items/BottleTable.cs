@@ -1,25 +1,25 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 using MHW_Template.Weapons;
 
 namespace MHW_Generator.Items {
-    public class BottleTable : ISingleStruct {
-        public SingleStruct Generate() { // .bbtbl
-            return new SingleStruct("MHW_Editor.Items", "BottleTable", new MhwStructData {
-                size             = 6,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Index}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Close Range", 0, typeof(byte), typeof(CoatingType)),
-                    new MhwStructData.Entry("Power", 1, typeof(byte), typeof(CoatingType)),
-                    new MhwStructData.Entry("Paralysis", 2, typeof(byte), typeof(CoatingType)),
-                    new MhwStructData.Entry("Poison", 3, typeof(byte), typeof(CoatingType)),
-                    new MhwStructData.Entry("Sleep", 4, typeof(byte), typeof(CoatingType)),
-                    new MhwStructData.Entry("Blast", 5, typeof(byte), typeof(CoatingType))
-                }
-            });
+    public class BottleTable : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .bbtbl
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Close Range", typeof(byte), enumReturn: typeof(CoatingType)),
+                    new MhwMultiStructData.Entry("Power", typeof(byte), enumReturn: typeof(CoatingType)),
+                    new MhwMultiStructData.Entry("Paralysis", typeof(byte), enumReturn: typeof(CoatingType)),
+                    new MhwMultiStructData.Entry("Poison", typeof(byte), enumReturn: typeof(CoatingType)),
+                    new MhwMultiStructData.Entry("Sleep", typeof(byte), enumReturn: typeof(CoatingType)),
+                    new MhwMultiStructData.Entry("Blast", typeof(byte), enumReturn: typeof(CoatingType))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
+            };
+
+            return new MultiStruct("MHW_Editor.Items", "BottleTable", new MhwMultiStructData(structs, "bbtbl"));
         }
     }
 }

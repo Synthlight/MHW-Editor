@@ -64,6 +64,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 200;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -337,6 +339,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 900;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var countTarget = (Monster_Claw_Grab) lastStruct.Last();
@@ -436,6 +440,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Gimmick_Breaker_Collision_Unique_Id_Large));
                 }
             }
+
+            public const int lastSortIndex = 200;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

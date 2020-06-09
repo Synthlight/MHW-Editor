@@ -1,0 +1,35 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.trsr
+//  Category: MHW_Editor.Items
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Item_Id<name="Item Id">;
+    uint Unk2<name="Unk2">;
+    uint Unk3<name="Unk3">;
+    uint Unk4<name="Unk4">;
+    uint Unk5<name="Unk5">;
+    uint Unk6<name="Unk6">;
+    uint Unk7<name="Unk7">;
+    uint Unk8<name="Unk8">;
+    uint Unk9<name="Unk9">;
+    uint Unk10<name="Unk10">;
+    uint Unk11<name="Unk11">;
+    uint Unk12<name="Unk12">;
+    uint Unk13<name="Unk13">;
+    uint Unk14<name="Unk14">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

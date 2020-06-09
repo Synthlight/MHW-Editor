@@ -1,26 +1,30 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Items {
-    public class SwapItem : ISingleStruct {
-        public SingleStruct Generate() { // .swpi
-            return new SingleStruct("MHW_Editor.Items", "SwapItem", new MhwStructData {
-                size             = 26,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Index}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Unk1", 0, typeof(uint)),
-                    new MhwStructData.Entry("Item Id", 4, typeof(uint), dataSourceType: DataSourceType.Items),
-                    new MhwStructData.Entry("Unk2", 16, typeof(ushort)),
-                    new MhwStructData.Entry("Unk3", 18, typeof(ushort)),
-                    new MhwStructData.Entry("Unk4", 20, typeof(ushort)),
-                    new MhwStructData.Entry("Unk5", 22, typeof(ushort)),
-                    new MhwStructData.Entry("Unk6", 24, typeof(ushort))
-                }
-            });
+    public class SwapItem : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .swpi
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Unk1", typeof(uint)),
+                    new MhwMultiStructData.Entry("Item Id", typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwMultiStructData.Entry("Unk2", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk3", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk4", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk5", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk6", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk7", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk8", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk9", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk10", typeof(ushort))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
+            };
+
+            return new MultiStruct("MHW_Editor.Items", "SwapItem", new MhwMultiStructData(structs, "swpi"));
         }
     }
 }

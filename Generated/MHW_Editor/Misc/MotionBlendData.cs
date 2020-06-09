@@ -64,6 +64,8 @@ namespace MHW_Editor.Misc {
                 }
             }
 
+            public const int lastSortIndex = 200;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -308,6 +310,8 @@ namespace MHW_Editor.Misc {
                     }
                 }
 
+                public const int lastSortIndex = 500;
+
                 public static ObservableCollection<Unk_Array> LoadData(BinaryReader reader, Default parent) {
                     var list = new ObservableCollection<Unk_Array>();
                     var count = (ulong) parent.Num_of_Values;
@@ -366,6 +370,8 @@ namespace MHW_Editor.Misc {
                 }
             }
 
+            public const int lastSortIndex = 400;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var countTarget = (Motion_Blend_Data_1_) lastStruct.Last();
@@ -420,6 +426,8 @@ namespace MHW_Editor.Misc {
                     OnPropertyChanged(nameof(End));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

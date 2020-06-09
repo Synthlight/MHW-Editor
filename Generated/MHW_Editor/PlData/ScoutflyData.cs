@@ -791,6 +791,8 @@ namespace MHW_Editor.PlData {
                 }
             }
 
+            public const int lastSortIndex = 2800;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -1039,6 +1041,8 @@ namespace MHW_Editor.PlData {
                     OnPropertyChanged(nameof(Unk_4));
                 }
             }
+
+            public const int lastSortIndex = 250;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -1799,6 +1803,8 @@ namespace MHW_Editor.PlData {
                 }
             }
 
+            public const int lastSortIndex = 2650;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -2262,6 +2268,8 @@ namespace MHW_Editor.PlData {
                     OnPropertyChanged(nameof(Unk_20));
                 }
             }
+
+            public const int lastSortIndex = 1050;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -4117,6 +4125,8 @@ namespace MHW_Editor.PlData {
                     OnPropertyChanged(nameof(Unk_233));
                 }
             }
+
+            public const int lastSortIndex = 6450;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

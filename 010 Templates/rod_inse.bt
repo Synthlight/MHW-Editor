@@ -1,0 +1,36 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.rod_inse
+//  Category: MHW_Editor.Weapons
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Index<name="Index">;
+    ubyte Attack_Type<name="Attack Type">;
+    ubyte Id<name="Id">;
+    ubyte Tree_Position_Id<name="Tree Position Id">;
+    ushort Base_Model_Id<name="Base Model Id">;
+    ubyte Tree_Id<name="Tree Id">;
+    uint Craft_Cost<name="Craft Cost">;
+    ubyte Rarity<name="Rarity">;
+    ushort Power<name="Power">;
+    ushort Speed<name="Speed">;
+    ushort Heal<name="Heal">;
+    ushort Element<name="Element">;
+    ushort Dust_Effect<name="Dust Effect">;
+    ubyte Tree_Position<name="Tree Position">;
+    ushort Equip_Id<name="Equip Id">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

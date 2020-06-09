@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
-using MHW_Template.Struct_Generation.Multi;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Weapons {
     public class Collision : IMultiStruct {
@@ -11,7 +11,7 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Magic 2", typeof(uint), true),
                 new MhwMultiStructData.Entry("Unk 1", typeof(uint), true),
                 new MhwMultiStructData.Entry("Unk 2", typeof(uint), true),
-                new MhwMultiStructData.Entry("Name Count", typeof(uint), true).Out(out var nameCount),
+                new MhwMultiStructData.Entry("Name Count", typeof(uint), true).Out(out var nameCount)
             }, 1);
 
             var names = new MhwMultiStructData.StructData("Names", new List<MhwMultiStructData.Entry> {
@@ -21,7 +21,7 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Unk 1", typeof(int)),
                 new MhwMultiStructData.Entry("Unk 2", typeof(ushort)),
                 new MhwMultiStructData.Entry("Unk 3", typeof(byte)),
-                new MhwMultiStructData.Entry("Unk 4", typeof(uint)),
+                new MhwMultiStructData.Entry("Unk 4", typeof(uint))
             }, _010Link: new MhwMultiStructData.ArrayLink(header, nameCount));
 
             var clnd = new MhwMultiStructData.StructData("CLND", new List<MhwMultiStructData.Entry> {
@@ -60,7 +60,7 @@ namespace MHW_Generator.Weapons {
                         new MhwMultiStructData.Entry("Unk 19", typeof(float)),
                         new MhwMultiStructData.Entry("Unk 20", typeof(float)),
                         new MhwMultiStructData.Entry("Unk 21", typeof(float)),
-                        new MhwMultiStructData.Entry("Unk 22", typeof(ushort)),
+                        new MhwMultiStructData.Entry("Unk 22", typeof(ushort))
                     }, _010Link: new MhwMultiStructData.ArrayLink(null, clgmInnerCount))),
 
                     new MhwMultiStructData.Entry("Unk 1", typeof(uint)),
@@ -84,12 +84,12 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Unk 17", typeof(int), condition: "if (parent.Clgm_Type_raw == 2)"),
                     new MhwMultiStructData.Entry("Unk 18", typeof(int), condition: "if (parent.Clgm_Type_raw == 2)"),
 
-                    new MhwMultiStructData.Entry("Unk 19", typeof(byte)),
+                    new MhwMultiStructData.Entry("Unk 19", typeof(byte))
                 }, _010Link: new MhwMultiStructData.ArrayLink(null, clgmCount))),
 
                 new MhwMultiStructData.Entry("Unk 2", typeof(byte)),
                 new MhwMultiStructData.Entry("Unk 3", typeof(byte)),
-                new MhwMultiStructData.Entry("Unk 4", typeof(byte)),
+                new MhwMultiStructData.Entry("Unk 4", typeof(byte))
             }, 1);
 
             var i = 0U;
@@ -140,7 +140,7 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
                 new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
                 new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
-                new MhwMultiStructData.Entry($"Unk {++i}", typeof(ushort)),
+                new MhwMultiStructData.Entry($"Unk {++i}", typeof(ushort))
             };
 
             i = 0U;
@@ -205,7 +205,7 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
                 new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
                 new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
-                new MhwMultiStructData.Entry($"Unk {++i}", typeof(ushort)),
+                new MhwMultiStructData.Entry($"Unk {++i}", typeof(ushort))
             };
 
             i = 0U;
@@ -257,7 +257,7 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
                 new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
                 new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
-                new MhwMultiStructData.Entry($"Unk {++i}", typeof(ushort)),
+                new MhwMultiStructData.Entry($"Unk {++i}", typeof(ushort))
             };
 
             i = 0U;
@@ -316,7 +316,7 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
                 new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
                 new MhwMultiStructData.Entry($"Unk {++i}", typeof(uint)),
-                new MhwMultiStructData.Entry($"Unk {++i}", typeof(ushort)),
+                new MhwMultiStructData.Entry($"Unk {++i}", typeof(ushort))
             };
 
             var moves = new MhwMultiStructData.StructData("Moves", new List<MhwMultiStructData.Entry> {
@@ -333,7 +333,7 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Atk2", typeof(void), subStruct: new MhwMultiStructData.StructData("Atk2", atk2, _010Link: new MhwMultiStructData.ArrayLink(null, moveCount))
                                              , condition: "if (|ref|Move_Type_raw == 2)", accessLevel: "protected"),
                 new MhwMultiStructData.Entry("Atk3", typeof(void), subStruct: new MhwMultiStructData.StructData("Atk3", atk3, _010Link: new MhwMultiStructData.ArrayLink(null, moveCount))
-                                             , condition: "if (|ref|Move_Type_raw == 3)", accessLevel: "protected"),
+                                             , condition: "if (|ref|Move_Type_raw == 3)", accessLevel: "protected")
             }, 1);
 
             var oap = new MhwMultiStructData.StructData("OAP", new List<MhwMultiStructData.Entry> {
@@ -342,8 +342,8 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Name", typeof(char), true, typeof(string), arrayCount: 4),
                 new MhwMultiStructData.Entry("Magic 3", typeof(uint), true),
                 new MhwMultiStructData.Entry("The rest of the file as bytes.", typeof(void), true, subStruct: new MhwMultiStructData.StructData("End Junk", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Unk", typeof(byte), true),
-                }, customSaveLoad: true)),
+                    new MhwMultiStructData.Entry("Unk", typeof(byte), true)
+                }, customSaveLoad: true))
             }, 1);
 
             var structs = new List<MhwMultiStructData.StructData> {
@@ -351,7 +351,7 @@ namespace MHW_Generator.Weapons {
                 names,
                 clnd,
                 moves,
-                oap,
+                oap
             };
 
             return new MultiStruct("MHW_Editor.Weapons", "Collision", new MhwMultiStructData(structs, "col"));

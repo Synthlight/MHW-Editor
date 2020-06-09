@@ -1,26 +1,26 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Weapons {
-    public class Sharpness : ISingleStruct {
-        public SingleStruct Generate() { // .kire
-            return new SingleStruct("MHW_Editor.Weapons", "Sharpness", new MhwStructData {
-                size             = 18,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Red", 4, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
-                    new MhwStructData.Entry("Orange", 6, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
-                    new MhwStructData.Entry("Yellow", 8, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
-                    new MhwStructData.Entry("Green", 10, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
-                    new MhwStructData.Entry("Blue", 12, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
-                    new MhwStructData.Entry("White", 14, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
-                    new MhwStructData.Entry("Purple", 16, typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)")
-                }
-            });
+    public class Sharpness : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .kire
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Id", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Red", typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwMultiStructData.Entry("Orange", typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwMultiStructData.Entry("Yellow", typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwMultiStructData.Entry("Green", typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwMultiStructData.Entry("Blue", typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwMultiStructData.Entry("White", typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)"),
+                    new MhwMultiStructData.Entry("Purple", typeof(ushort), valueString: "value.Clamp((ushort) 0, (ushort) 400)")
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Weapons", "Sharpness", new MhwMultiStructData(structs, "kire"));
         }
     }
 }

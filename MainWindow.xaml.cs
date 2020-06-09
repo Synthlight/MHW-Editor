@@ -62,9 +62,9 @@ namespace MHW_Editor {
                 foreach (var dataGrid in dataGrids) {
                     foreach (IOnPropertyChanged item in dataGrid.Items) {
                         item.OnPropertyChanged(nameof(IMhwItem.Name),
-                                               nameof(SkillDat.Description),
-                                               nameof(SkillDat.Name_And_Id),
-                                               nameof(MusicSkill.Song_And_Id));
+                                               nameof(SkillDat.Entries.Description),
+                                               nameof(SkillDat.Entries.Name_And_Id),
+                                               nameof(MusicSkill.Entries.Song_And_Id));
 
                         item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
                     }
@@ -79,8 +79,8 @@ namespace MHW_Editor {
                 showIdBeforeName = value;
                 foreach (var dataGrid in dataGrids) {
                     foreach (IOnPropertyChanged item in dataGrid.Items) {
-                        item.OnPropertyChanged(nameof(SkillDat.Name_And_Id),
-                                               nameof(MusicSkill.Song_And_Id));
+                        item.OnPropertyChanged(nameof(SkillDat.Entries.Name_And_Id),
+                                               nameof(MusicSkill.Entries.Song_And_Id));
 
                         item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
                     }
@@ -162,12 +162,13 @@ namespace MHW_Editor {
             e.Handled = true;
         }
 
-        private void FillSkillDatDictionary(ObservableCollection<dynamic> items) {
+        private void FillSkillDatDictionary(IEnumerable<SkillDat.Entries> entries) {
             // Makes the lookup table for skill dat unlock columns which reference themselves by index.
             skillDatLookup = new LangMap();
+            var items = entries.ToList();
             foreach (var lang in Global.LANGUAGES) {
                 skillDatLookup[lang] = new Dictionary<uint, string>();
-                foreach (SkillDat item in items) {
+                foreach (var item in items) {
                     var name = DataHelper.skillNames[lang].TryGet(item.Id);
                     skillDatLookup[lang][(uint) item.Index] = name;
                 }
@@ -228,22 +229,45 @@ namespace MHW_Editor {
             Debug.Assert(loadData != null, nameof(loadData) + " != null");
             customFileData = loadData.Invoke(null, new object[] {targetFile});
 
-            if (customFileData is Collision col) {
-                col.Init(targetFile);
+            switch (customFileData) {
+                case Collision col:
+                    col.Init(targetFile);
+                    break;
+                case GcData gcData:
+                    gcData.Init(Title);
+                    break;
+                case Melee melee:
+                    melee.Init(targetFile);
+                    break;
+                case Ranged ranged:
+                    ranged.Init(targetFile);
+                    break;
+                case SkillDat skillDat:
+                    FillSkillDatDictionary(skillDat.GetIterableStructList());
+                    break;
             }
 
-            var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
-            Debug.Assert(setupViews != null, nameof(setupViews) + " != null");
-            setupViews.Invoke(null, new object[] {customFileData, grid, this});
+            var showAsSingleView = targetFileType.IsGeneric(typeof(IShowAsSingleStruct<>));
+
+            if (showAsSingleView) {
+                var getStructList = targetFileType.GetMethod("GetStructList", BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+
+                dataGrids.Add(main_grid);
+                var items = getStructList?.Invoke(customFileData, null) ?? throw new Exception("getStructList failure.");
+                main_grid.SetItems(this, items);
+
+                scroll_viewer.Visibility = Visibility.Collapsed;
+                main_grid.Visibility     = Visibility.Visible;
+            } else {
+                var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+                Debug.Assert(setupViews != null, nameof(setupViews) + " != null");
+                setupViews.Invoke(null, new object[] {customFileData, grid, this});
+            }
         }
 
         private void LoadSingleStruct() {
             var items = SaveLoad.LoadFile(targetFile, targetFileType);
             if (items == null) return;
-
-            if (targetFileType.Is(typeof(SkillDat))) {
-                FillSkillDatDictionary(items);
-            }
 
             dataGrids.Add(main_grid);
             main_grid.SetItems(this, items);
@@ -307,8 +331,8 @@ namespace MHW_Editor {
                                                               typeof(CustomOuterRecipe),
                                                               typeof(CustomParts),
                                                               typeof(CustomPartsR),
-                                                              typeof(EqCrt_Base),
-                                                              typeof(EqCus_Base),
+                                                              typeof(EqCrt),
+                                                              typeof(EqCus),
                                                               typeof(Item),
                                                               typeof(IWeapon),
                                                               typeof(NewLimitBreak),
@@ -512,29 +536,8 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".em117iot")) return typeof(KulveItemLottery);
             if (fileName.EndsWith(".emst")) return typeof(EnemySort);
             if (fileName.EndsWith(".em_ss")) return typeof(SmallMonsterSizeParams);
-
-            if (fileName.EndsWith(".eq_crt")) {
-                if (fileName.StartsWith("armor")) return typeof(EqCrt_Armor);
-                if (fileName.StartsWith("charm")) return typeof(EqCrt_Charm);
-                if (fileName.StartsWith("ot_equip")) return typeof(EqCrt_Palico);
-                if (fileName.StartsWith("weapon")) return typeof(EqCrt_Weapon);
-            }
-
-            if (fileName.EndsWith(".eq_cus")) {
-                if (fileName.StartsWith("equip_custom")) return typeof(EqCus_Armor);
-                if (fileName.StartsWith("insect_element")) return typeof(EqCus_Misc);
-                if (fileName.StartsWith("insect")) return typeof(EqCus_Misc);
-                if (fileName.StartsWith("weapon")) return typeof(EqCus_Weapon);
-            }
-
-            if (fileName.EndsWith(".gcod")) {
-                if (fileName.StartsWith("gc_data_bg")) return typeof(GcData_Backgrounds);
-                if (fileName.StartsWith("gc_data_face")) return typeof(GcData_Expressions);
-                if (fileName.StartsWith("gc_data_pose")) return typeof(GcData_Poses);
-                if (fileName.StartsWith("gc_data_title1")) return typeof(GcData_Title1);
-                if (fileName.StartsWith("gc_data_title2")) return typeof(GcData_Title2);
-            }
-
+            if (fileName.EndsWith(".eq_crt")) return typeof(EqCrt);
+            if (fileName.EndsWith(".eq_cus")) return typeof(EqCus);
             if (fileName.EndsWith(".gcod")) return typeof(GcData);
             if (fileName.EndsWith(".gip")) return typeof(ScoutflyData);
             if (fileName.EndsWith(".gun_rd")) return typeof(GunnerReload);
@@ -600,10 +603,7 @@ namespace MHW_Editor {
             if (fileName.EndsWith(".wep_wsd")) return typeof(WeaponWSword);
             if (fileName.EndsWith(".wep_wsl")) return typeof(WeaponWhistle);
             if (fileName.EndsWith(".wp_dat")) return typeof(Melee);
-            if (fileName.EndsWith(".wp_dat_g")) {
-                if (fileName.StartsWith("bow")) return typeof(Bow);
-                if (fileName.StartsWith("lbg") || fileName.StartsWith("hbg")) return typeof(BowGun);
-            }
+            if (fileName.EndsWith(".wp_dat_g")) return typeof(Ranged);
 
             // Special Cases
             if (fileName == "block_26.bin") return typeof(TimeGate);

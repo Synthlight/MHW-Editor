@@ -1,32 +1,33 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Items {
-    public class ValueTrader : ISingleStruct {
-        public SingleStruct Generate() { // .trdr
-            return new SingleStruct("MHW_Editor.Items", "ValueTrader", new MhwStructData {
-                size             = 56,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Index}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Item Id", 4, typeof(uint), dataSourceType: DataSourceType.Items),
-                    new MhwStructData.Entry("Unk3", 8, typeof(uint)),
-                    new MhwStructData.Entry("Unk4", 12, typeof(uint)),
-                    new MhwStructData.Entry("Unk5", 16, typeof(uint)),
-                    new MhwStructData.Entry("Unk6", 20, typeof(uint)),
-                    new MhwStructData.Entry("Unk7", 24, typeof(uint)),
-                    new MhwStructData.Entry("Unk8", 28, typeof(uint)),
-                    new MhwStructData.Entry("Unk9", 32, typeof(uint)),
-                    new MhwStructData.Entry("Unk10", 36, typeof(uint)),
-                    new MhwStructData.Entry("Unk11", 40, typeof(uint)),
-                    new MhwStructData.Entry("Unk12", 44, typeof(uint)),
-                    new MhwStructData.Entry("Unk13", 48, typeof(uint)),
-                    new MhwStructData.Entry("Unk14", 52, typeof(uint))
-                }
-            });
+    public class ValueTrader : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .trdr
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Rarity", typeof(uint)),
+                    new MhwMultiStructData.Entry("Item Id", typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwMultiStructData.Entry("Unk3", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk4", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk5", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk6", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk7", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk8", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk9", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk10", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk11", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk12", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk13", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk14", typeof(uint))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
+            };
+
+            return new MultiStruct("MHW_Editor.Items", "ValueTrader", new MhwMultiStructData(structs, "trdr"));
         }
     }
 }

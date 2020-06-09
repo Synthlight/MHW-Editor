@@ -78,6 +78,8 @@ namespace MHW_Editor.Items {
                 }
             }
 
+            public const int lastSortIndex = 250;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -144,6 +146,8 @@ namespace MHW_Editor.Items {
                 }
             }
 
+            public const int lastSortIndex = 150;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 24UL;
@@ -184,6 +188,8 @@ namespace MHW_Editor.Items {
                     OnPropertyChanged(nameof(Items_to_Show));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -245,6 +251,8 @@ namespace MHW_Editor.Items {
                 }
             }
 
+            public const int lastSortIndex = 150;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 16UL;
@@ -285,6 +293,8 @@ namespace MHW_Editor.Items {
                     OnPropertyChanged(nameof(Ammo_Items_to_Show));
                 }
             }
+
+            public const int lastSortIndex = 100;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

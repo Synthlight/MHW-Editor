@@ -1,25 +1,25 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Items;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Items {
-    public class PlantFertilizer : ISingleStruct { // .plfe
-        public SingleStruct Generate() {
-            return new SingleStruct("MHW_Editor.Items", "PlantFertilizer", new MhwStructData {
-                size             = 24,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Fertilizer_Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Fertilizer Id", 0, typeof(uint), typeof(Fertilizer)),
-                    new MhwStructData.Entry("Prize", 4, typeof(uint)),
-                    new MhwStructData.Entry("Base duration", 8, typeof(uint)),
-                    new MhwStructData.Entry("Unknown (int32) 1", 12, typeof(uint)),
-                    new MhwStructData.Entry("Unknown (int32) 2", 16, typeof(uint)),
-                    new MhwStructData.Entry("Unknown (int32) 3", 20, typeof(uint))
-                }
-            });
+    public class PlantFertilizer : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .plfe
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Fertilizer Id", typeof(uint), enumReturn: typeof(Fertilizer)),
+                    new MhwMultiStructData.Entry("Prize", typeof(uint)),
+                    new MhwMultiStructData.Entry("Base duration", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unknown (int32) 1", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unknown (int32) 2", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unknown (int32) 3", typeof(uint))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Fertilizer_Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Items", "PlantFertilizer", new MhwMultiStructData(structs, "plfe"));
         }
     }
 }

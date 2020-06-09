@@ -1,21 +1,21 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Items {
-    public class SwapEnemyRate : ISingleStruct {
-        public SingleStruct Generate() { // .swer
-            return new SingleStruct("MHW_Editor.Items", "SwapEnemyRate", new MhwStructData {
-                size             = 12,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Unk1", 4, typeof(uint)),
-                    new MhwStructData.Entry("Unk2", 8, typeof(uint))
-                }
-            });
+    public class SwapEnemyRate : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .swer
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Id", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Unk1", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk2", typeof(uint))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Items", "SwapEnemyRate", new MhwMultiStructData(structs, "swer"));
         }
     }
 }

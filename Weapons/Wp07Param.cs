@@ -27,5 +27,22 @@ namespace MHW_Editor.Weapons {
                 }
             }
         }
+
+        public partial class W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod {
+            public string Name {
+                get {
+                    return Index switch {
+                        0 => "Thorn Pod",
+                        1 => "Bomb/Pierce Pod",
+                        2 => "Scatternut/Crystalburst/Torch Pod/Brightmoss",
+                        3 => "Puddle/Dragon Pod",
+                        4 => "Unk 1",
+                        5 => "Redpit",
+                        6 => "Stone",
+                        _ => "Unknown"
+                    };
+                }
+            }
+        }
     }
 }

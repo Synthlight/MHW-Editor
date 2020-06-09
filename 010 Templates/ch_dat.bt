@@ -1,0 +1,35 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.ch_dat
+//  Category: MHW_Editor.Armors
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Id<name="Id">;
+    ubyte Unk1<name="Unk1">;
+    ubyte Unk2<name="Unk2">;
+    ubyte Unk3<name="Unk3">;
+    ubyte Unk4<name="Unk4">;
+    ubyte Unk5<name="Unk5">;
+    ushort Unk6<name="Unk6">;
+    ushort Unk7<name="Unk7">;
+    ubyte Unk8<name="Unk8">;
+    ubyte Unk9<name="Unk9">;
+    uint Cost<name="Cost">;
+    int Story_Unlock<name="Story Unlock">;
+    ushort Unk10<name="Unk10">;
+    ushort Unk11<name="Unk11">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

@@ -1,0 +1,27 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.bbtbl
+//  Category: MHW_Editor.Items
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    ubyte Close_Range<name="Close Range">;
+    ubyte Power<name="Power">;
+    ubyte Paralysis<name="Paralysis">;
+    ubyte Poison<name="Poison">;
+    ubyte Sleep<name="Sleep">;
+    ubyte Blast<name="Blast">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

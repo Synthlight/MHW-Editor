@@ -1,0 +1,42 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.rfur
+//  Category: MHW_Editor.Items
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Item_Id<name="Item Id">;
+    uint Unk1<name="Unk1">;
+    uint Unk2<name="Unk2">;
+    uint Unk3<name="Unk3">;
+    ubyte Unk4<name="Unk4">;
+    ubyte Unk5<name="Unk5">;
+    ubyte Unk6<name="Unk6">;
+    ubyte Unk7<name="Unk7">;
+    ubyte Unk8<name="Unk8">;
+    ubyte Unk9<name="Unk9">;
+    ubyte Unk10<name="Unk10">;
+    ubyte Unk11<name="Unk11">;
+    ubyte Unk12<name="Unk12">;
+    ubyte Unk13<name="Unk13">;
+    ubyte Unk14<name="Unk14">;
+    int Unk15<name="Unk15">;
+    uint Unk16<name="Unk16">;
+    ushort Unk17<name="Unk17">;
+    ushort Unk18<name="Unk18">;
+    uint Unk19<name="Unk19">;
+    uint Unk21<name="Unk21">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

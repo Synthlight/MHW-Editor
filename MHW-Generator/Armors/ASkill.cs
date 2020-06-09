@@ -1,29 +1,29 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Armors {
-    public class ASkill : ISingleStruct {
-        public SingleStruct Generate() { // .ask
-            return new SingleStruct("MHW_Editor.Armors", "ASkill", new MhwStructData {
-                size             = 28,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Mantle_Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Mantle Id", 16, typeof(uint), true),
-                    new MhwStructData.Entry("Icon Id", 0, typeof(uint)),
-                    new MhwStructData.Entry("Color", 4, typeof(uint)),
-                    new MhwStructData.Entry("Sort Order", 8, typeof(uint)),
-                    new MhwStructData.Entry("Mantle Item Id", 12, typeof(uint), dataSourceType: DataSourceType.Items),
-                    new MhwStructData.Entry("Unlock Flag or Item Id?", 20, typeof(uint)),
-                    new MhwStructData.Entry("Deco Count", 24, typeof(byte)),
-                    new MhwStructData.Entry("Deco Lvl 1", 25, typeof(byte)),
-                    new MhwStructData.Entry("Deco Lvl 2", 26, typeof(byte)),
-                    new MhwStructData.Entry("Deco Lvl 3", 27, typeof(byte))
-                }
-            });
+    public class ASkill : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .ask
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Icon Id", typeof(uint)),
+                    new MhwMultiStructData.Entry("Color", typeof(uint)),
+                    new MhwMultiStructData.Entry("Sort Order", typeof(uint)),
+                    new MhwMultiStructData.Entry("Mantle Item Id", typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwMultiStructData.Entry("Mantle Id", typeof(uint), true, overrideSortIndex: true),
+                    new MhwMultiStructData.Entry("Unlock Flag or Item Id?", typeof(uint)),
+                    new MhwMultiStructData.Entry("Deco Count", typeof(byte)),
+                    new MhwMultiStructData.Entry("Deco Lvl 1", typeof(byte)),
+                    new MhwMultiStructData.Entry("Deco Lvl 2", typeof(byte)),
+                    new MhwMultiStructData.Entry("Deco Lvl 3", typeof(byte))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Mantle_Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Armors", "ASkill", new MhwMultiStructData(structs, "ask"));
         }
     }
 }

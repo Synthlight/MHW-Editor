@@ -1,0 +1,26 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.gun_sd
+//  Category: MHW_Editor.Weapons
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    ubyte No_Mods<name="No Mods">;
+    ubyte Mod_1<name="Mod 1">;
+    ubyte Mod_2<name="Mod 2">;
+    ubyte Mod_3<name="Mod 3">;
+    ubyte Mod_4<name="Mod 4">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

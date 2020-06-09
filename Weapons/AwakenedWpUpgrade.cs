@@ -1,15 +1,16 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Weapons {
-    public partial class AwakenedWpUpgrade : MhwItem {
-        public AwakenedWpUpgrade(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class AwakenedWpUpgrade : MhwMultiStructItem<AwakenedWpUpgrade>, IShowAsSingleStruct<AwakenedWpUpgrade.Entries> {
+        public ObservableCollection<object> GetStructList() {
+            return data.Last.Value.list;
         }
 
-        [DisplayName("")]
-        public override string Name => "None";
-
-        [SortOrder(0)]
-        public ulong Index => (Offset - InitialOffset) / StructSize;
+        public IEnumerable<Entries> GetIterableStructList() {
+            return GetStructList().Cast<Entries>();
+        }
     }
 }

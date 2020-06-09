@@ -114,10 +114,10 @@ namespace MHW_Editor {
                 case WeaponType.Charge_Blade:
                 case WeaponType.Insect_Glaive:
                     return typeof(Melee);
-                case WeaponType.Bow: return typeof(Bow);
+                case WeaponType.Bow:
                 case WeaponType.Light_Bowgun:
                 case WeaponType.Heavy_Bowgun:
-                    return typeof(BowGun);
+                    return typeof(Ranged);
                 default: throw new ArgumentOutOfRangeException(nameof(weaponType), weaponType, null);
             }
         }
@@ -136,10 +136,10 @@ namespace MHW_Editor {
                 case EquipmentType.Charge_Blade:
                 case EquipmentType.Insect_Glaive:
                     return typeof(Melee);
-                case EquipmentType.Bow: return typeof(Bow);
+                case EquipmentType.Bow:
                 case EquipmentType.Light_Bowgun:
                 case EquipmentType.Heavy_Bowgun:
-                    return typeof(BowGun);
+                    return typeof(Ranged);
                 case EquipmentType.Armor_Head:
                 case EquipmentType.Armor_Chest:
                 case EquipmentType.Armor_Arms:

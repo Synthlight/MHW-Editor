@@ -1,0 +1,40 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.owp_dat
+//  Category: MHW_Editor.Armors
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Index<name="Index">;
+    ushort Set_Id<name="Set Id">;
+    ubyte Equip_Slot<name="Equip Slot">;
+    ubyte Is_Full_Set<name="Is Full Set">;
+    uint Defense<name="Defense">;
+    ubyte Rarity<name="Rarity">;
+    ushort Order<name="Order">;
+    uint Model_Id<name="Model Id">;
+    uint Cost<name="Cost">;
+    uint Variant<name="Variant">;
+    byte Fire_Res<name="Fire Res">;
+    byte Water_Res<name="Water Res">;
+    byte Ice_Res<name="Ice Res">;
+    byte Thunder_Res<name="Thunder Res">;
+    byte Dragon_Res<name="Dragon Res">;
+    uint Unk<name="Unk">;
+    ushort Set_Group<name="Set Group">;
+    ushort GMD_Name_Index<name="GMD Name Index">;
+    ushort GMD_Description_Index<name="GMD Description Index">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

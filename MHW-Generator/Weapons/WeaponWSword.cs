@@ -1,24 +1,24 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 using MHW_Template.Weapons;
 
 namespace MHW_Generator.Weapons {
-    public class WeaponWSword : ISingleStruct {
-        public SingleStruct Generate() { // .wep_wsd
-            return new SingleStruct("MHW_Editor.Weapons", "WeaponWSword", new MhwStructData {
-                size             = 10,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Element 1 Type", 4, typeof(byte), typeof(Element)),
-                    new MhwStructData.Entry("Element 1 Dmg", 5, typeof(short)),
-                    new MhwStructData.Entry("Element 2 Type", 7, typeof(byte), typeof(Element)),
-                    new MhwStructData.Entry("Element 2 Dmg", 8, typeof(short))
-                }
-            });
+    public class WeaponWSword : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .wep_wsd
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Id", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Element 1 Type", typeof(byte), enumReturn: typeof(Element)),
+                    new MhwMultiStructData.Entry("Element 1 Dmg", typeof(short)),
+                    new MhwMultiStructData.Entry("Element 2 Type", typeof(byte), enumReturn: typeof(Element)),
+                    new MhwMultiStructData.Entry("Element 2 Dmg", typeof(short))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Weapons", "WeaponWSword", new MhwMultiStructData(structs, "wep_wsd"));
         }
     }
 }

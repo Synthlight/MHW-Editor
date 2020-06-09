@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
 using MHW_Template;
-using MHW_Template.Struct_Generation.Multi;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Weapons {
     public class Wp03Param : WpParamBase, IMultiStruct {
@@ -87,18 +87,18 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry("Helmbreaker Delay Between Hits 1 (Must be <= the 2nd value.)", typeof(float)),
-                    new MhwMultiStructData.Entry("Helmbreaker Delay Between Hits 2", typeof(float)),
+                    new MhwMultiStructData.Entry("Helmbreaker Hit Delay of First Hit", typeof(float)),
+                    new MhwMultiStructData.Entry("Helmbreaker Hit Delay of Hits Between First & Last", typeof(float)),
+                    new MhwMultiStructData.Entry("Helmbreaker Hit Delay of Last Hit", typeof(float)),
                     new MhwMultiStructData.Entry("Helmbreaker Hit Limit", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 4}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
-                }, 1, showVertically: true),
+                    new MhwMultiStructData.Entry("Helmbreaker Unk", typeof(float)),
+                    new MhwMultiStructData.Entry("Helmbreaker Red Line Delay", typeof(float))
+                }, 1, showVertically: true, description:"For Helmbreaker Hit Delay, some situations, like low or unstable fps, may cause less than 7 hits if the hit delays are <= 0."),
 
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 7}", typeof(float))
                 }, 1, showVertically: true)
             });
 

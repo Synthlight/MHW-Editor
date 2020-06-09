@@ -1,17 +1,23 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using MHW_Editor.Models;
 using MHW_Template.Weapons;
 
 namespace MHW_Editor.Items {
-    public partial class KulveItemLottery : MhwItem, IHasWeaponType {
-        public KulveItemLottery(byte[] bytes, ulong offset) : base(bytes, offset) {
+    public partial class KulveItemLottery : MhwMultiStructItem<KulveItemLottery>, IShowAsSingleStruct<KulveItemLottery.Entries> {
+        public partial class Entries : IHasWeaponType {
+            public WeaponType GetWeaponType() {
+                return Weapon_Type;
+            }
         }
 
-        [DisplayName("")]
-        public override string Name => "None";
+        public ObservableCollection<object> GetStructList() {
+            return data.Last.Value.list;
+        }
 
-        public WeaponType GetWeaponType() {
-            return Weapon_Type;
+        public IEnumerable<Entries> GetIterableStructList() {
+            return GetStructList().Cast<Entries>();
         }
     }
 }

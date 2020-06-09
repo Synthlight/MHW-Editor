@@ -64,6 +64,8 @@ namespace MHW_Editor.Items {
                 }
             }
 
+            public const int lastSortIndex = 200;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -152,6 +154,8 @@ namespace MHW_Editor.Items {
                     }
                 }
 
+                public const int lastSortIndex = 100;
+
                 public static ObservableCollection<Items> LoadData(BinaryReader reader, Item_Box parent) {
                     var list = new ObservableCollection<Items>();
                     var count = 215UL;
@@ -178,6 +182,8 @@ namespace MHW_Editor.Items {
             [SortOrder(Items_sortIndex)]
             [DisplayName(Items_displayName)]
             public virtual ObservableCollection<Items> Items_raw { get; protected set; }
+
+            public const int lastSortIndex = 200;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

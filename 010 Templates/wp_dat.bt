@@ -1,0 +1,57 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.wp_dat
+//  Category: MHW_Editor.Weapons
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Index<name="Index">;
+    short Unk1<name="Unk1">;
+    short Base_Model_Id<name="Base Model Id">;
+    short Part_1_Id<name="Part 1 Id">;
+    short Part_2_Id<name="Part 2 Id">;
+    ubyte Unk_1<name="Unk 1">;
+    ubyte Color<name="Color">;
+    ubyte Tree_Id<name="Tree Id">;
+    ubyte Is_Fixed_Upgrade<name="Is Fixed Upgrade">;
+    uint Cost<name="Cost">;
+    ubyte Rarity<name="Rarity">;
+    ubyte Sharpness_kire_Id<name="Sharpness (.kire) Id">;
+    ubyte Sharpness_Amount<name="Sharpness Amount">;
+    ushort Damage<name="Damage">;
+    ushort Defense<name="Defense">;
+    byte Affinity<name="Affinity">;
+    ubyte Element<name="Element">;
+    ushort Element_Damage<name="Element Damage">;
+    ubyte Element_Hidden_<name="Element (Hidden)">;
+    ushort Element_Hidden_Damage<name="Element (Hidden) Damage">;
+    ubyte Elderseal<name="Elderseal">;
+    ubyte Slot_Count<name="Slot Count">;
+    ubyte Slot_1_Size<name="Slot 1 Size">;
+    ubyte Slot_2_Size<name="Slot 2 Size">;
+    ubyte Slot_3_Size<name="Slot 3 Size">;
+    ushort Special_Ability_1_ID<name="Special Ability 1 ID">;
+    ushort Special_Ability_2_ID<name="Special Ability 2 ID">;
+    uint Unk_2<name="Unk 2">;
+    uint Unk_3<name="Unk 3">;
+    uint Unk_4<name="Unk 4">;
+    ubyte Tree_Position<name="Tree Position">;
+    ushort Id<name="Id">;
+    ushort GMD_Name_Index<name="GMD Name Index">;
+    ushort GMD_Description_Index<name="GMD Description Index">;
+    ushort Skill<name="Skill">;
+    ushort Unk_5<name="Unk 5">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

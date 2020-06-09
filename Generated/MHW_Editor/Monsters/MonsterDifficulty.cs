@@ -49,6 +49,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 150;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -201,6 +203,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Monster_Mount));
                 }
             }
+
+            public const int lastSortIndex = 500;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
@@ -369,6 +373,8 @@ namespace MHW_Editor.Monsters {
                 }
             }
 
+            public const int lastSortIndex = 500;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1000UL;
@@ -514,6 +520,8 @@ namespace MHW_Editor.Monsters {
                     OnPropertyChanged(nameof(Unk_7));
                 }
             }
+
+            public const int lastSortIndex = 400;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

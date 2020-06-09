@@ -64,6 +64,8 @@ namespace MHW_Editor.Weapons {
                 }
             }
 
+            public const int lastSortIndex = 200;
+
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();
                 var count = 1UL;
@@ -166,6 +168,8 @@ namespace MHW_Editor.Weapons {
                     }
                 }
 
+                public const int lastSortIndex = 100;
+
                 public static ObservableCollection<Custom_Mods> LoadData(BinaryReader reader, Entries parent) {
                     var list = new ObservableCollection<Custom_Mods>();
                     var count = 5UL;
@@ -217,6 +221,8 @@ namespace MHW_Editor.Weapons {
                 [DisplayName(Armor_Id_displayName)]
                 [CustomSorter(typeof(ButtonSorter))]
                 public string Armor_Id_button => DataHelper.armorFileIndexNegNameLookup[MainWindow.locale].TryGet(Armor_Id).ToStringWithId(Armor_Id);
+
+                public const int lastSortIndex = 100;
 
                 public static ObservableCollection<Armors> LoadData(BinaryReader reader, Entries parent) {
                     var list = new ObservableCollection<Armors>();
@@ -270,6 +276,8 @@ namespace MHW_Editor.Weapons {
                 [CustomSorter(typeof(ButtonSorter))]
                 public string Mantle_Id_button => DataHelper.mantleNamesNeg[MainWindow.locale].TryGet(Mantle_Id).ToStringWithId(Mantle_Id);
 
+                public const int lastSortIndex = 100;
+
                 public static ObservableCollection<Mantles> LoadData(BinaryReader reader, Entries parent) {
                     var list = new ObservableCollection<Mantles>();
                     var count = 2UL;
@@ -314,6 +322,8 @@ namespace MHW_Editor.Weapons {
                         OnPropertyChanged(nameof(Armor_Lvl));
                     }
                 }
+
+                public const int lastSortIndex = 100;
 
                 public static ObservableCollection<Armor_Level> LoadData(BinaryReader reader, Entries parent) {
                     var list = new ObservableCollection<Armor_Level>();
@@ -422,6 +432,8 @@ namespace MHW_Editor.Weapons {
                 [DisplayName(Deco_3_displayName)]
                 [CustomSorter(typeof(ButtonSorter))]
                 public string Deco_3_button => DataHelper.itemNames[MainWindow.locale].TryGet(Deco_3).ToStringWithId(Deco_3);
+
+                public const int lastSortIndex = 200;
 
                 public static ObservableCollection<Decorations> LoadData(BinaryReader reader, Entries parent) {
                     var list = new ObservableCollection<Decorations>();
@@ -591,6 +603,8 @@ namespace MHW_Editor.Weapons {
                     }
                 }
 
+                public const int lastSortIndex = 150;
+
                 public static ObservableCollection<Items> LoadData(BinaryReader reader, Entries parent) {
                     var list = new ObservableCollection<Items>();
                     var count = 24UL;
@@ -659,6 +673,8 @@ namespace MHW_Editor.Weapons {
                     }
                 }
 
+                public const int lastSortIndex = 150;
+
                 public static ObservableCollection<Ammo> LoadData(BinaryReader reader, Entries parent) {
                     var list = new ObservableCollection<Ammo>();
                     var count = 16UL;
@@ -687,6 +703,8 @@ namespace MHW_Editor.Weapons {
             [SortOrder(Ammo_sortIndex)]
             [DisplayName(Ammo_displayName)]
             public virtual ObservableCollection<Ammo> Ammo_raw { get; protected set; }
+
+            public const int lastSortIndex = 950;
 
             public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
                 var list = new ObservableCollection<object>();

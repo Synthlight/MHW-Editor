@@ -1,0 +1,27 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.plfe
+//  Category: MHW_Editor.Items
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1">;
+    ushort Magic_2<name="Magic 2">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Fertilizer_Id<name="Fertilizer Id">;
+    uint Prize<name="Prize">;
+    uint Base_duration<name="Base duration">;
+    uint Unknown_int32_1<name="Unknown (int32) 1">;
+    uint Unknown_int32_2<name="Unknown (int32) 2">;
+    uint Unknown_int32_3<name="Unknown (int32) 3">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

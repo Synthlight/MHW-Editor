@@ -1,30 +1,32 @@
 ﻿using System.Collections.Generic;
 using MHW_Generator.Models;
-using MHW_Template.Struct_Generation.Single;
+using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Armors {
-    public class PendantData : ISingleStruct {
-        public SingleStruct Generate() { // .ch_dat
-            return new SingleStruct("MHW_Editor.Armors", "PendantData", new MhwStructData {
-                size             = 27,
-                offsetInitial    = 10,
-                entryCountOffset = 6,
-                uniqueIdFormula  = "{Id}",
-                entries = new List<MhwStructData.Entry> {
-                    new MhwStructData.Entry("Id", 0, typeof(uint), true),
-                    new MhwStructData.Entry("Unk1", 4, typeof(byte)),
-                    new MhwStructData.Entry("Unk2", 5, typeof(byte)),
-                    new MhwStructData.Entry("Unk3", 6, typeof(byte)),
-                    new MhwStructData.Entry("Unk4", 7, typeof(byte)),
-                    new MhwStructData.Entry("Unk5", 8, typeof(byte)),
-                    new MhwStructData.Entry("Unk6", 9, typeof(ushort)),
-                    new MhwStructData.Entry("Unk7", 11, typeof(ushort)),
-                    new MhwStructData.Entry("Unk8", 13, typeof(byte)),
-                    new MhwStructData.Entry("Unk9", 14, typeof(byte)),
-                    new MhwStructData.Entry("Cost", 15, typeof(uint)),
-                    new MhwStructData.Entry("Story Unlock", 19, typeof(int))
-                }
-            });
+    public class PendantData : SingleStructBase, IMultiStruct {
+        public MultiStruct Generate() { // .ch_dat
+            var structs = new List<MhwMultiStructData.StructData> {
+                CreateSingleStructBase(out var header, out var itemCount),
+
+                new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Id", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Unk1", typeof(byte)),
+                    new MhwMultiStructData.Entry("Unk2", typeof(byte)),
+                    new MhwMultiStructData.Entry("Unk3", typeof(byte)),
+                    new MhwMultiStructData.Entry("Unk4", typeof(byte)),
+                    new MhwMultiStructData.Entry("Unk5", typeof(byte)),
+                    new MhwMultiStructData.Entry("Unk6", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk7", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk8", typeof(byte)),
+                    new MhwMultiStructData.Entry("Unk9", typeof(byte)),
+                    new MhwMultiStructData.Entry("Cost", typeof(uint)),
+                    new MhwMultiStructData.Entry("Story Unlock", typeof(int)),
+                    new MhwMultiStructData.Entry("Unk10", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Unk11", typeof(ushort))
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+            };
+
+            return new MultiStruct("MHW_Editor.Armors", "PendantData", new MhwMultiStructData(structs, "ch_dat"));
         }
     }
 }

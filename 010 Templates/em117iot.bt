@@ -1,0 +1,28 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.em117iot
+//  Category: MHW_Editor.Items
+//------------------------------------------------
+
+// Header
+typedef struct {
+    ushort Magic_1<name="Magic 1">;
+    uint Entry_Count<name="Entry Count">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    uint Index<name="Index">;
+    uint Weapon_Type<name="Weapon Type">;
+    uint Weapon_Id<name="Weapon Id">;
+    uint Grade_1<name="Grade 1">;
+    uint Grade_2<name="Grade 2">;
+    uint Grade_3<name="Grade 3">;
+    uint Grade_4<name="Grade 4">;
+    uint Grade_5<name="Grade 5">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;
