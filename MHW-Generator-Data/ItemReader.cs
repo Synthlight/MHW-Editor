@@ -9,7 +9,7 @@ namespace MHW_Generator_Data {
             // ReSharper disable once StringLiteralTypo
             const string targetFile = @"V:\MHW\IB\chunk_combined\common\item\itemData.itm";
 
-            foreach (var item in Item.LoadData(targetFile).GetIterableStructList()) {
+            foreach (var item in Item.LoadData(targetFile).GetSingleStructList()) {
                 var itemId = item.Id;
                 if (DataHelper.itemNames["eng"].TryGet(itemId).Contains(" Jewel")) {
                     yield return itemId;

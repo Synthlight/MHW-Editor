@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Structs.Weapons {
-    public partial class ShellTable : MhwMultiStructItem<ShellTable>, IShowAsSingleStruct<ShellTable.Entries> {
+    public partial class ShellTable : MhwSingleStructFile<ShellTable, ShellTable.Entries> {
         public static readonly Dictionary<byte, string> recoilLookup = new Dictionary<byte, string> {
             {0, "Normal (Recoil +1)"},
 
@@ -82,13 +80,5 @@ namespace MHW_Editor.Structs.Weapons {
             {7, "Very Slow Reload M3"},
             {10, "Very Slow Reload"}
         };
-
-        public ObservableCollection<object> GetStructList() {
-            return data.Last.Value.list;
-        }
-
-        public IEnumerable<Entries> GetIterableStructList() {
-            return GetStructList().Cast<Entries>();
-        }
     }
 }

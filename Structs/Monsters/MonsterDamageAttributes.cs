@@ -7,7 +7,7 @@ using MHW_Editor.Windows;
 using MHW_Template;
 
 namespace MHW_Editor.Structs.Monsters {
-    public partial class MonsterDamageAttributes : MhwMultiStructItem<MonsterDamageAttributes> {
+    public partial class MonsterDamageAttributes : MhwMultiStructFile<MonsterDamageAttributes> {
         public override void SetupViews(Grid grid, MainWindow main) {
             var mainEntries    = new ObservableCollection<MultiStructItemCustomView>();
             var statusBuildups = new ObservableCollection<IStatusBuildup>();
@@ -15,16 +15,16 @@ namespace MHW_Editor.Structs.Monsters {
 
             foreach (var entry in data) {
                 if (entry.type.Is(typeof(IStatusBuildup))) {
-                    foreach (var item in entry.list) {
-                        statusBuildups.Add((IStatusBuildup) item);
+                    foreach (var item in entry.GetEnumerable<IStatusBuildup>()) {
+                        statusBuildups.Add(item);
                     }
                 } else if (entry.type.IsGeneric(typeof(IHasCustomView<>))) {
-                    var list = (IHasCustomView<MultiStructItemCustomView>) entry.list[0];
+                    var list = (IHasCustomView<MultiStructItemCustomView>) entry.First();
                     foreach (var view in list.GetCustomView()) {
                         mainEntries.Add(view);
                     }
                 } else if (entry.type == typeof(Monster_Damage_Attributes_1_)) {
-                    SetupView(entry, grid, main);
+                    entry.SetupView(grid, main);
                 } else {
                     theRest.Add(entry);
                 }
@@ -37,11 +37,11 @@ namespace MHW_Editor.Structs.Monsters {
             main.AddDataGrid(statusBuildups);
 
             foreach (var entry in theRest) {
-                SetupView(entry, grid, main);
+                entry.SetupView(grid, main);
             }
         }
 
-        public interface IStatusBuildup {
+        public interface IStatusBuildup : IMhwStructItem, IWriteData {
             string Name    { get; }
             uint   Base    { get; set; }
             uint   Buildup { get; set; }

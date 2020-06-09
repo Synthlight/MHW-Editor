@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
+﻿using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Editor.Windows;
@@ -9,7 +6,7 @@ using MHW_Template;
 using MHW_Template.Items;
 
 namespace MHW_Editor.Structs.Items {
-    public partial class Item : MhwMultiStructItem<Item>, IShowAsSingleStruct<Item.Entries> {
+    public partial class Item : MhwSingleStructFile<Item, Item.Entries> {
         public partial class Entries {
             public const int Flags_Raw_sortIndex = Buy_Price_sortIndex + 1;
 
@@ -249,14 +246,6 @@ namespace MHW_Editor.Structs.Items {
                     OnPropertyChanged(nameof(Flags));
                 }
             }
-        }
-
-        public ObservableCollection<object> GetStructList() {
-            return data.Last.Value.list;
-        }
-
-        public IEnumerable<Entries> GetIterableStructList() {
-            return GetStructList().Cast<Entries>();
         }
     }
 }

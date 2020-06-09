@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.PlData {
     public partial class PlItemParam {
         public override string EncryptionKey => "j1P15gEkgVa7NdFxiqwCPitykHctY2nZPjSaElvqb0eSwcLO1cOlTqqv";
 
-        public partial class Header : MhwStructItem {
+        public partial class Header : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Header";
 
@@ -53,8 +53,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Header> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Header>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -76,7 +76,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Item_Params_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Item_Params_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Item Params (1)";
 
@@ -2000,8 +2000,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 6900;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Item_Params_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Item_Params_1_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2435,11 +2435,11 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class The_Rest : MhwStructItem {
+        public partial class The_Rest : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "The Rest";
 
-            public partial class End_Junk : MhwStructItem {
+            public partial class End_Junk : MhwStructItem, IWriteDataInner<The_Rest> {
                 public const ulong FixedSizeCount = 0;
                 public const string GridName = "End Junk";
 
@@ -2473,8 +2473,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<The_Rest> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<The_Rest>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2499,11 +2499,11 @@ namespace MHW_Editor.Structs.PlData {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Header_ = new MhwStructDataContainer(Header.LoadData(reader, null), typeof(Header));
+            var Header_ = new MhwStructDataContainer<Header>(Header.LoadData(reader), typeof(Header));
             data.AddLast(Header_);
-            var Item_Params_1__ = new MhwStructDataContainer(Item_Params_1_.LoadData(reader, null), typeof(Item_Params_1_));
+            var Item_Params_1__ = new MhwStructDataContainer<Item_Params_1_>(Item_Params_1_.LoadData(reader), typeof(Item_Params_1_));
             data.AddLast(Item_Params_1__);
-            var The_Rest_ = new MhwStructDataContainer(The_Rest.LoadData(reader, null), typeof(The_Rest));
+            var The_Rest_ = new MhwStructDataContainer<The_Rest>(The_Rest.LoadData(reader), typeof(The_Rest));
             data.AddLast(The_Rest_);
         }
     }

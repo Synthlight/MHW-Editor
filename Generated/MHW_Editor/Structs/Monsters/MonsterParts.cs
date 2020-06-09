@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Monsters {
     public partial class MonsterParts {
         public override string EncryptionKey => "sJV4g7d55gKnQB5nS6XJ9pZ1qZmmQwNnSbidUW1OeAhHrpPd6MKbfsrt";
 
-        public partial class Monster_Parts : MhwStructItem {
+        public partial class Monster_Parts : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Parts";
 
@@ -119,8 +119,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 350;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Parts> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Parts>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -150,7 +150,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Flinches : MhwStructItem {
+        public partial class Flinches : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Flinches";
 
@@ -239,7 +239,7 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
-            public partial class Parts1 : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Parts1 : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteDataInner<Flinches> {
                 public const ulong FixedSizeCount = 1;
                 public const string GridName = "Parts1";
 
@@ -455,8 +455,8 @@ namespace MHW_Editor.Structs.Monsters {
 
                 public const int lastSortIndex = 800;
 
-                public static ObservableCollection<Parts1> LoadData(BinaryReader reader, Flinches parent) {
-                    var list = new ObservableCollection<Parts1>();
+                public static ObservableMhwStructCollection<Parts1> LoadData(BinaryReader reader, Flinches parent) {
+                    var list = new ObservableMhwStructCollection<Parts1>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -530,7 +530,7 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName(Parts1_displayName)]
             protected virtual ObservableCollection<Parts1> Parts1_raw { get; set; }
 
-            public partial class Parts2 : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Parts2 : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteDataInner<Flinches> {
                 public const ulong FixedSizeCount = 1;
                 public const string GridName = "Parts2";
 
@@ -886,8 +886,8 @@ namespace MHW_Editor.Structs.Monsters {
 
                 public const int lastSortIndex = 1300;
 
-                public static ObservableCollection<Parts2> LoadData(BinaryReader reader, Flinches parent) {
-                    var list = new ObservableCollection<Parts2>();
+                public static ObservableMhwStructCollection<Parts2> LoadData(BinaryReader reader, Flinches parent) {
+                    var list = new ObservableMhwStructCollection<Parts2>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -991,7 +991,7 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName(Parts2_displayName)]
             protected virtual ObservableCollection<Parts2> Parts2_raw { get; set; }
 
-            public partial class Parts3 : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Parts3 : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteDataInner<Flinches> {
                 public const ulong FixedSizeCount = 1;
                 public const string GridName = "Parts3";
 
@@ -1487,8 +1487,8 @@ namespace MHW_Editor.Structs.Monsters {
 
                 public const int lastSortIndex = 1800;
 
-                public static ObservableCollection<Parts3> LoadData(BinaryReader reader, Flinches parent) {
-                    var list = new ObservableCollection<Parts3>();
+                public static ObservableMhwStructCollection<Parts3> LoadData(BinaryReader reader, Flinches parent) {
+                    var list = new ObservableMhwStructCollection<Parts3>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -1624,8 +1624,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 500;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Flinches> LoadData(BinaryReader reader, ObservableMhwStructCollection<Monster_Parts> lastStruct) {
+                var list = new ObservableMhwStructCollection<Flinches>();
                 var countTarget = (Monster_Parts) lastStruct.Last();
                 var count = (ulong) countTarget.Flinches_Count;
                 for (ulong i = 0; i < count; i++) {
@@ -1671,7 +1671,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Hitzone_Header : MhwStructItem {
+        public partial class Hitzone_Header : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Hitzone Header";
             public const bool IsHidden = true;
@@ -1693,8 +1693,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Hitzone_Header> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Hitzone_Header>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1714,7 +1714,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Hitzones : MhwStructItem {
+        public partial class Hitzones : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Hitzones";
 
@@ -1874,8 +1874,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 600;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Hitzones> LoadData(BinaryReader reader, ObservableMhwStructCollection<Hitzone_Header> lastStruct) {
+                var list = new ObservableMhwStructCollection<Hitzones>();
                 var countTarget = (Hitzone_Header) lastStruct.Last();
                 var count = (ulong) countTarget.Hitzone_Count;
                 for (ulong i = 0; i < count; i++) {
@@ -1916,7 +1916,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Sever_Header : MhwStructItem {
+        public partial class Sever_Header : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Sever Header";
             public const bool IsHidden = true;
@@ -1938,8 +1938,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Sever_Header> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Sever_Header>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1959,7 +1959,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Severs : MhwStructItem {
+        public partial class Severs : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Severs";
 
@@ -2077,8 +2077,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Severs> LoadData(BinaryReader reader, ObservableMhwStructCollection<Sever_Header> lastStruct) {
+                var list = new ObservableMhwStructCollection<Severs>();
                 var countTarget = (Sever_Header) lastStruct.Last();
                 var count = (ulong) countTarget.Sever_Count;
                 for (ulong i = 0; i < count; i++) {
@@ -2113,7 +2113,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Unk_Header : MhwStructItem {
+        public partial class Unk_Header : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Unk Header";
             public const bool IsHidden = true;
@@ -2135,8 +2135,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Unk_Header> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Unk_Header>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2156,7 +2156,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Unknowns : MhwStructItem {
+        public partial class Unknowns : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Unknowns";
 
@@ -2316,8 +2316,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 600;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Unknowns> LoadData(BinaryReader reader, ObservableMhwStructCollection<Unk_Header> lastStruct) {
+                var list = new ObservableMhwStructCollection<Unknowns>();
                 var countTarget = (Unk_Header) lastStruct.Last();
                 var count = (ulong) countTarget.Unk_Count;
                 for (ulong i = 0; i < count; i++) {
@@ -2358,7 +2358,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Unknown : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Unknown : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Unknown";
 
@@ -2392,8 +2392,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Unknown> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Unknown>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2425,27 +2425,27 @@ namespace MHW_Editor.Structs.Monsters {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Monster_Parts_ = new MhwStructDataContainer(Monster_Parts.LoadData(reader, null), typeof(Monster_Parts));
+            var Monster_Parts_ = new MhwStructDataContainer<Monster_Parts>(Monster_Parts.LoadData(reader), typeof(Monster_Parts));
             data.AddLast(Monster_Parts_);
-            var Flinches_ = new MhwStructDataContainer(Flinches.LoadData(reader, Monster_Parts_.list), typeof(Flinches));
+            var Flinches_ = new MhwStructDataContainer<Flinches, Monster_Parts>(Flinches.LoadData(reader, Monster_Parts_.list), typeof(Flinches));
             Flinches_.SetCountTargetToUpdate(Monster_Parts_, -1, "Flinches_Count");
             data.AddLast(Flinches_);
-            var Hitzone_Header_ = new MhwStructDataContainer(Hitzone_Header.LoadData(reader, null), typeof(Hitzone_Header));
+            var Hitzone_Header_ = new MhwStructDataContainer<Hitzone_Header>(Hitzone_Header.LoadData(reader), typeof(Hitzone_Header));
             data.AddLast(Hitzone_Header_);
-            var Hitzones_ = new MhwStructDataContainer(Hitzones.LoadData(reader, Hitzone_Header_.list), typeof(Hitzones));
+            var Hitzones_ = new MhwStructDataContainer<Hitzones, Hitzone_Header>(Hitzones.LoadData(reader, Hitzone_Header_.list), typeof(Hitzones));
             Hitzones_.SetCountTargetToUpdate(Hitzone_Header_, -1, "Hitzone_Count");
             data.AddLast(Hitzones_);
-            var Sever_Header_ = new MhwStructDataContainer(Sever_Header.LoadData(reader, null), typeof(Sever_Header));
+            var Sever_Header_ = new MhwStructDataContainer<Sever_Header>(Sever_Header.LoadData(reader), typeof(Sever_Header));
             data.AddLast(Sever_Header_);
-            var Severs_ = new MhwStructDataContainer(Severs.LoadData(reader, Sever_Header_.list), typeof(Severs));
+            var Severs_ = new MhwStructDataContainer<Severs, Sever_Header>(Severs.LoadData(reader, Sever_Header_.list), typeof(Severs));
             Severs_.SetCountTargetToUpdate(Sever_Header_, -1, "Sever_Count");
             data.AddLast(Severs_);
-            var Unk_Header_ = new MhwStructDataContainer(Unk_Header.LoadData(reader, null), typeof(Unk_Header));
+            var Unk_Header_ = new MhwStructDataContainer<Unk_Header>(Unk_Header.LoadData(reader), typeof(Unk_Header));
             data.AddLast(Unk_Header_);
-            var Unknowns_ = new MhwStructDataContainer(Unknowns.LoadData(reader, Unk_Header_.list), typeof(Unknowns));
+            var Unknowns_ = new MhwStructDataContainer<Unknowns, Unk_Header>(Unknowns.LoadData(reader, Unk_Header_.list), typeof(Unknowns));
             Unknowns_.SetCountTargetToUpdate(Unk_Header_, -1, "Unk_Count");
             data.AddLast(Unknowns_);
-            var Unknown_ = new MhwStructDataContainer(Unknown.LoadData(reader, null), typeof(Unknown));
+            var Unknown_ = new MhwStructDataContainer<Unknown>(Unknown.LoadData(reader), typeof(Unknown));
             data.AddLast(Unknown_);
         }
     }

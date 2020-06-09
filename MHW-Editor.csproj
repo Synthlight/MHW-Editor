@@ -191,6 +191,9 @@
     <Compile Include="Generated\MHW_Editor\Structs\Weapons\Wp11Param.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Weapons\Wp12Param.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Weapons\Wp13Param.cs" />
+    <Compile Include="Models\IWriteDataInner.cs" />
+    <Compile Include="Models\IWriteData.cs" />
+    <Compile Include="Models\MhwSingleStructFile.cs" />
     <Compile Include="Structs\Armors\Armor.cs" />
     <Compile Include="Structs\Armors\PendantData.cs" />
     <Compile Include="Structs\Armors\OtomoArmorDat.cs" />
@@ -253,15 +256,13 @@
     <Compile Include="Models\IHasWeaponType.cs" />
     <Compile Include="Models\IHasArmorType.cs" />
     <Compile Include="Models\IJsonItem.cs" />
-    <Compile Include="Models\IMhwMultiStructItem.cs" />
     <Compile Include="Models\IShowAsSingleStruct.cs" />
     <Compile Include="Models\IsListAttribute.cs" />
     <Compile Include="Models\ObservableMhwStructCollection.cs" />
     <Compile Include="Models\MhwStructDataContainer.cs" />
-    <Compile Include="Models\IMhwStructItem.cs" />
     <Compile Include="Models\IOnPropertyChanged.cs" />
     <Compile Include="Models\IsReadOnlyAttribute.cs" />
-    <Compile Include="Models\MhwMultiStructItem.cs" />
+    <Compile Include="Models\MhwMultiStructFile.cs" />
     <Compile Include="Models\MhwStructItem.cs" />
     <Compile Include="Models\MultiStructItemCustomView.cs" />
     <Compile Include="Structs\Monsters\AnimalSize.cs" />

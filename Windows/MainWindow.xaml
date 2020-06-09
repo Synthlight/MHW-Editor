@@ -11,7 +11,7 @@
         Height="500"
         DataContext="{x:Reference this}"
         WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid Name="main_grid">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -185,10 +185,6 @@
                           Visibility="Visible"/>
             </StackPanel>
         </DockPanel>
-        <controls:MhwDataGridDynamic x:Name="main_grid"
-                                     Grid.Row="1"
-                                     Grid.Column="0"
-                                     Grid.ColumnSpan="3"/>
         <ScrollViewer Name="scroll_viewer"
                       Grid.Row="1"
                       Grid.Column="0"
@@ -196,7 +192,7 @@
                       HorizontalScrollBarVisibility="Auto"
                       IsDeferredScrollingEnabled="True"
                       PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
-            <Grid Name="grid"/>
+            <Grid Name="sub_grids"/>
         </ScrollViewer>
     </Grid>
 </Window>

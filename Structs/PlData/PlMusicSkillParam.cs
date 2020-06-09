@@ -1,11 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
 using MHW_Editor.Models;
 using MHW_Template;
 
 namespace MHW_Editor.Structs.PlData {
-    public partial class PlMusicSkillParam : MhwMultiStructItem<PlMusicSkillParam>, IShowAsSingleStruct<PlMusicSkillParam.Entries> {
+    public partial class PlMusicSkillParam : MhwSingleStructFile<PlMusicSkillParam, PlMusicSkillParam.Entries> {
         private static readonly Dictionary<uint, string> musicList = new Dictionary<uint, string> {
             {1, "Self-improvement"},
             {2, "Attack Up (S)"},
@@ -69,14 +67,6 @@ namespace MHW_Editor.Structs.PlData {
 
         public partial class Entries {
             public string Name => musicList.TryGet((uint) Index);
-        }
-
-        public ObservableCollection<object> GetStructList() {
-            return data.Last.Value.list;
-        }
-
-        public IEnumerable<Entries> GetIterableStructList() {
-            return GetStructList().Cast<Entries>();
         }
     }
 }

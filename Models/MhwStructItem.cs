@@ -4,6 +4,11 @@ using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 
 namespace MHW_Editor.Models {
+    public interface IMhwStructItem : INotifyPropertyChanged, IOnPropertyChanged {
+        [IsReadOnly]
+        ulong Index { get; set; }
+    }
+
     public abstract class MhwStructItem : IMhwStructItem, IJsonItem {
         public event PropertyChangedEventHandler PropertyChanged;
 

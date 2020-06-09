@@ -1,7 +1,7 @@
 ﻿using MHW_Editor.Models;
 
 namespace MHW_Editor.Structs.PlData {
-    public partial class PlSkillParam : MhwMultiStructItem<PlSkillParam> {
+    public partial class PlSkillParam : MhwMultiStructFile<PlSkillParam> {
         public partial class Wide_Range {
             public string Name {
                 get {

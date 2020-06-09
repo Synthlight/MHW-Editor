@@ -46,11 +46,12 @@ namespace MHW_Editor.Windows {
 
         [CanBeNull] private CancellationTokenSource savedTimer;
 
-        private readonly List<MhwDataGrid> dataGrids = new List<MhwDataGrid>();
+        private readonly List<MhwDataGrid> dataGrids       = new List<MhwDataGrid>();
+        private          bool              hasMainDataGrid = false;
 
-        public  string  targetFile     { get; private set; }
-        public  Type    targetFileType { get; private set; }
-        private dynamic customFileData;
+        public  string              targetFile     { get; private set; }
+        public  Type                targetFileType { get; private set; }
+        private IMhwMultiStructFile customFileData;
 
         public bool unlockFields { get; }
 
@@ -135,9 +136,6 @@ namespace MHW_Editor.Windows {
             InitializeComponent();
             Title = TITLE;
 
-            main_grid.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
-            main_grid.VerticalScrollBarVisibility   = ScrollBarVisibility.Auto;
-
             cbx_localization.ItemsSource = Global.LANGUAGE_NAME_LOOKUP;
 
             Width  = SystemParameters.MaximizedPrimaryScreenWidth * 0.8;
@@ -175,12 +173,42 @@ namespace MHW_Editor.Windows {
             }
         }
 
-        public DataGrid AddDataGrid<T>(IEnumerable<T> itemSource) where T : class {
+        public MhwDataGrid AddDataGrid<T>(IEnumerable<T> itemSource) {
             var dataGrid = new MhwDataGridGeneric<T>();
             dataGrid.SetItems(this, itemSource is ObservableCollection<T> source ? source : new ObservableCollection<T>(itemSource));
             dataGrids.Add(dataGrid);
-            grid.AddControl(dataGrid);
+            sub_grids.AddControl(dataGrid);
             return dataGrid;
+        }
+
+        public MhwDataGrid AddMainDataGrid(Type gridType) {
+            if (hasMainDataGrid) throw new InvalidOperationException("Main data grid already added.");
+
+            var genericType = typeof(MhwDataGridGeneric<>).MakeGenericType(gridType);
+            var dataGrid    = (MhwDataGrid) Activator.CreateInstance(genericType);
+            dataGrid.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
+            dataGrid.VerticalScrollBarVisibility   = ScrollBarVisibility.Auto;
+
+            dataGrids.Add(dataGrid);
+            main_grid.AddControl(dataGrid);
+
+            Grid.SetRow(dataGrid, 1);
+            Grid.SetColumn(dataGrid, 0);
+            Grid.SetColumnSpan(dataGrid, 3);
+
+            main_grid.UpdateLayout();
+
+            hasMainDataGrid = true;
+            return dataGrid;
+        }
+
+        public void ClearMainDataGrid() {
+            if (!hasMainDataGrid) return;
+            if (dataGrids.Count == 0) throw new InvalidOperationException("No data grids to remove.");
+
+            main_grid.Children.Remove(dataGrids[0]);
+            main_grid.UpdateLayout();
+            hasMainDataGrid = false;
         }
 
         private void Load(string file = null) {
@@ -194,13 +222,14 @@ namespace MHW_Editor.Windows {
 
                 Debug.Assert(targetFile != null, nameof(targetFile) + " != null");
 
-                grid.Children.Clear();
-                grid.UpdateLayout();
+                sub_grids.Children.Clear();
+                sub_grids.UpdateLayout();
 
                 foreach (dynamic dg in dataGrids) {
                     dg.SetItems(null, null);
                 }
 
+                ClearMainDataGrid();
                 dataGrids.Clear();
 
                 GC.Collect();
@@ -218,7 +247,7 @@ namespace MHW_Editor.Windows {
 
             var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
             Debug.Assert(loadData != null, nameof(loadData) + " != null");
-            customFileData = loadData.Invoke(null, new object[] {targetFile});
+            customFileData = (IMhwMultiStructFile) loadData.Invoke(null, new object[] {targetFile});
 
             switch (customFileData) {
                 case Collision col:
@@ -234,26 +263,28 @@ namespace MHW_Editor.Windows {
                     ranged.Init(targetFile);
                     break;
                 case SkillDat skillDat:
-                    FillSkillDatDictionary(skillDat.GetIterableStructList());
+                    FillSkillDatDictionary(skillDat.GetSingleStructList());
                     break;
             }
 
-            var showAsSingleView = targetFileType.IsGeneric(typeof(IShowAsSingleStruct<>));
+            var showAsSingleView = targetFileType.Is(typeof(IShowAsSingleStruct));
+
+            scroll_viewer.Visibility = showAsSingleView ? Visibility.Collapsed : Visibility.Visible;
 
             if (showAsSingleView) {
-                var getStructList = targetFileType.GetMethod("GetStructList", BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+                var structType = ((IShowAsSingleStruct) customFileData).GetSingleStructType();
+                var getStructList = targetFileType.GetMethod("GetStructList", BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy)
+                                                  ?.MakeGenericMethod(structType);
 
-                dataGrids.Add(main_grid);
+                var mainDataGrid = AddMainDataGrid(structType);
+
                 var items = getStructList?.Invoke(customFileData, null) ?? throw new Exception("getStructList failure.");
-                main_grid.SetItems(this, items);
+                mainDataGrid.SetItems(this, items);
             } else {
                 var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
                 Debug.Assert(setupViews != null, nameof(setupViews) + " != null");
-                setupViews.Invoke(null, new object[] {customFileData, grid, this});
+                setupViews.Invoke(null, new object[] {customFileData, sub_grids, this});
             }
-
-            scroll_viewer.Visibility = showAsSingleView ? Visibility.Collapsed : Visibility.Visible;
-            main_grid.Visibility     = showAsSingleView ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public static void CheckHashAndSize(string targetFile) {
@@ -385,13 +416,13 @@ namespace MHW_Editor.Windows {
 
                 var fileName = Path.GetFileName(targetFile);
 
+/* TODO: Fix Json.
                 var json          = File.ReadAllText(target);
-                var changesToLoad = JsonMigrations.Migrate(json, fileName, main_grid.Items);
+                var changesToLoad = JsonMigrations.Migrate(json, fileName, main_data_grid.Items);
 
                 if (!changesToLoad.changes.Any()) return;
                 if (fileName != changesToLoad.targetFile && changesToLoad.targetFile != "*") return;
 
-/* TODO: Fix Json.
                 foreach (MhwItem item in main_grid.Items) {
                     var id           = item.UniqueId;
                     var changedItems = changesToLoad.changes.TryGet(id, null);
@@ -433,11 +464,12 @@ namespace MHW_Editor.Windows {
                 var         fileName      = Path.GetFileName(targetFile);
                 JsonChanges changesToSave = null;
 
+/* TODO: Fix Json.
                 if (mergeWithTarget) {
                     try {
                         var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
                         // Should migrate the loaded changes too.
-                        changesToSave = JsonMigrations.Migrate(File.ReadAllText(target), fileName, main_grid.Items);
+                        changesToSave = JsonMigrations.Migrate(File.ReadAllText(target), fileName, main_data_grid.Items);
                     } catch (Exception) {
                         // Don't care. If it doesn't exist or can't be read, it gets overwritten.
                     }
@@ -454,7 +486,6 @@ namespace MHW_Editor.Windows {
                     changesToSave.version    = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1);
                 }
 
-/* TODO: Fix Json.
                 foreach (MhwItem item in main_grid.Items) {
                     if (item.changed.Count == 0) continue;
 

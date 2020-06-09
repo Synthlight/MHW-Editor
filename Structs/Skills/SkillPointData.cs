@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
 using MHW_Editor.Assets;
 using MHW_Editor.Controls.Models;
 using MHW_Editor.Models;
@@ -10,7 +7,7 @@ using MHW_Editor.Windows;
 using MHW_Template;
 
 namespace MHW_Editor.Structs.Skills {
-    public partial class SkillPointData : MhwMultiStructItem<SkillPointData>, IShowAsSingleStruct<SkillPointData.Entries> {
+    public partial class SkillPointData : MhwSingleStructFile<SkillPointData, SkillPointData.Entries> {
         public partial class Entries {
             [SortOrder(0)]
             [DisplayName("Name/Id")]
@@ -23,14 +20,6 @@ namespace MHW_Editor.Structs.Skills {
             [SortOrder(0)]
             [DisplayName("")]
             public ulong Id => Index;
-        }
-
-        public ObservableCollection<object> GetStructList() {
-            return data.Last.Value.list;
-        }
-
-        public IEnumerable<Entries> GetIterableStructList() {
-            return GetStructList().Cast<Entries>();
         }
     }
 

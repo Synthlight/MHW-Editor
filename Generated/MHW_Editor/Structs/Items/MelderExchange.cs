@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Items {
     public partial class MelderExchange {
         public override string EncryptionKey => null;
 
-        public partial class Melder_Exchange : MhwStructItem {
+        public partial class Melder_Exchange : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Melder Exchange";
 
@@ -68,8 +68,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Melder_Exchange> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Melder_Exchange>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -93,7 +93,7 @@ namespace MHW_Editor.Structs.Items {
             }
         }
 
-        public partial class Item_Box : MhwStructItem {
+        public partial class Item_Box : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Item Box";
             public const bool IsAddingAllowed = true;
@@ -138,7 +138,7 @@ namespace MHW_Editor.Structs.Items {
                 }
             }
 
-            public partial class Items : MhwStructItem {
+            public partial class Items : MhwStructItem, IWriteDataInner<Item_Box> {
                 public const ulong FixedSizeCount = 215;
                 public const string GridName = "Items";
 
@@ -158,8 +158,8 @@ namespace MHW_Editor.Structs.Items {
 
                 public const int lastSortIndex = 100;
 
-                public static ObservableCollection<Items> LoadData(BinaryReader reader, Item_Box parent) {
-                    var list = new ObservableCollection<Items>();
+                public static ObservableMhwStructCollection<Items> LoadData(BinaryReader reader, Item_Box parent) {
+                    var list = new ObservableMhwStructCollection<Items>();
                     var count = 215UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -187,8 +187,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Item_Box> LoadData(BinaryReader reader, ObservableMhwStructCollection<Melder_Exchange> lastStruct) {
+                var list = new ObservableMhwStructCollection<Item_Box>();
                 var countTarget = (Melder_Exchange) lastStruct.Last();
                 var count = (ulong) countTarget.Entry_Count;
                 for (ulong i = 0; i < count; i++) {
@@ -218,9 +218,9 @@ namespace MHW_Editor.Structs.Items {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Melder_Exchange_ = new MhwStructDataContainer(Melder_Exchange.LoadData(reader, null), typeof(Melder_Exchange));
+            var Melder_Exchange_ = new MhwStructDataContainer<Melder_Exchange>(Melder_Exchange.LoadData(reader), typeof(Melder_Exchange));
             data.AddLast(Melder_Exchange_);
-            var Item_Box_ = new MhwStructDataContainer(Item_Box.LoadData(reader, Melder_Exchange_.list), typeof(Item_Box));
+            var Item_Box_ = new MhwStructDataContainer<Item_Box, Melder_Exchange>(Item_Box.LoadData(reader, Melder_Exchange_.list), typeof(Item_Box));
             Item_Box_.SetCountTargetToUpdate(Melder_Exchange_, -1, "Entry_Count");
             data.AddLast(Item_Box_);
         }

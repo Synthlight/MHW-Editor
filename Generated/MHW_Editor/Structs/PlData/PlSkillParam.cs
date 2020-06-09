@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.PlData {
     public partial class PlSkillParam {
         public override string EncryptionKey => "j1P15gEkgVa7NdFxiqwCPitykHctY2nZPjSaElvqb0eSwcLO1cOlTqqv";
 
-        public partial class Header : MhwStructItem {
+        public partial class Header : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Header";
 
@@ -53,8 +53,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Header> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Header>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -76,7 +76,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skill_Params_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Skill_Params_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Skill Params (1)";
 
@@ -502,8 +502,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 1550;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Skill_Params_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skill_Params_1_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -616,7 +616,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Wide_Range : MhwStructItem {
+        public partial class Wide_Range : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 2;
             public const string GridName = "Wide Range";
 
@@ -692,8 +692,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Wide_Range> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Wide_Range>();
                 var count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -721,7 +721,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skill_Params_2_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Skill_Params_2_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Skill Params (2)";
 
@@ -979,8 +979,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 950;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Skill_Params_2_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skill_Params_2_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1057,7 +1057,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Focus : MhwStructItem {
+        public partial class Focus : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 3;
             public const string GridName = "Focus";
 
@@ -1105,8 +1105,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Focus> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Focus>();
                 var count = 3UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1130,7 +1130,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Punishing_Draw : MhwStructItem {
+        public partial class Punishing_Draw : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 14;
             public const string GridName = "Punishing Draw";
 
@@ -1220,8 +1220,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 350;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Punishing_Draw> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Punishing_Draw>();
                 var count = 14UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1251,7 +1251,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Razor_Sharp : MhwStructItem {
+        public partial class Razor_Sharp : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 2;
             public const string GridName = "Razor Sharp";
 
@@ -1341,8 +1341,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 350;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Razor_Sharp> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Razor_Sharp>();
                 var count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1372,7 +1372,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Minds_Eye_Ballistics : MhwStructItem {
+        public partial class Minds_Eye_Ballistics : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 2;
             public const string GridName = "Minds Eye / Ballistics";
 
@@ -1406,8 +1406,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Minds_Eye_Ballistics> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Minds_Eye_Ballistics>();
                 var count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1429,7 +1429,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Critical_Element_Multipliers : MhwStructItem {
+        public partial class Critical_Element_Multipliers : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 2;
             public const string GridName = "Critical Element Multipliers";
 
@@ -1645,8 +1645,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 800;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Critical_Element_Multipliers> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Critical_Element_Multipliers>();
                 var count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1694,7 +1694,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Critical_Condition_Multipliers : MhwStructItem {
+        public partial class Critical_Condition_Multipliers : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 2;
             public const string GridName = "Critical Condition Multipliers";
 
@@ -1896,8 +1896,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 750;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Critical_Condition_Multipliers> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Critical_Condition_Multipliers>();
                 var count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1943,7 +1943,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skill_Params_3_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Skill_Params_3_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Skill Params (3)";
 
@@ -2117,8 +2117,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 650;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Skill_Params_3_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skill_Params_3_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2177,7 +2177,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Artillery : MhwStructItem {
+        public partial class Artillery : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 9;
             public const string GridName = "Artillery";
 
@@ -2253,8 +2253,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Artillery> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Artillery>();
                 var count = 9UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2282,7 +2282,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skill_Params_4_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Skill_Params_4_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Skill Params (4)";
 
@@ -2470,8 +2470,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 700;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Skill_Params_4_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skill_Params_4_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2533,7 +2533,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Ammo_Up : MhwStructItem {
+        public partial class Ammo_Up : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 3;
             public const string GridName = "Ammo Up";
 
@@ -2651,8 +2651,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Ammo_Up> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Ammo_Up>();
                 var count = 3UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2686,7 +2686,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Power_Prolonger : MhwStructItem {
+        public partial class Power_Prolonger : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 5;
             public const string GridName = "Power Prolonger";
 
@@ -2734,8 +2734,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Power_Prolonger> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Power_Prolonger>();
                 var count = 5UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2759,7 +2759,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skill_Params_5_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Skill_Params_5_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Skill Params (5)";
 
@@ -3073,8 +3073,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 1150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Skill_Params_5_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skill_Params_5_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -3163,7 +3163,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Slinger_Up : MhwStructItem {
+        public partial class Slinger_Up : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 31;
             public const string GridName = "Slinger Up";
 
@@ -3239,8 +3239,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Slinger_Up> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Slinger_Up>();
                 var count = 31UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -3268,7 +3268,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skill_Params_6_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Skill_Params_6_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Skill Params (6)";
 
@@ -3666,8 +3666,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 1450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Skill_Params_6_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skill_Params_6_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -3774,7 +3774,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Frostcraft_1_ : MhwStructItem {
+        public partial class Frostcraft_1_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 14;
             public const string GridName = "Frostcraft (1)";
 
@@ -3878,8 +3878,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 400;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Frostcraft_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Frostcraft_1_>();
                 var count = 14UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -3911,7 +3911,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Frostcraft_2_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Frostcraft_2_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Frostcraft (2)";
 
@@ -4267,8 +4267,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 1300;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Frostcraft_2_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Frostcraft_2_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4366,7 +4366,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skill_Params_7_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Skill_Params_7_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Skill Params (7)";
 
@@ -5758,8 +5758,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 5000;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Skill_Params_7_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skill_Params_7_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -6079,7 +6079,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Food_Effects : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Food_Effects : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Food Effects";
 
@@ -6379,8 +6379,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 1100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Food_Effects> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Food_Effects>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -6466,7 +6466,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Feline_Skill : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Feline_Skill : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Feline Skill";
 
@@ -7368,8 +7368,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 3250;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Feline_Skill> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Feline_Skill>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -7584,7 +7584,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skill_Params_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Skill_Params_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Skill Params (8)";
 
@@ -8010,8 +8010,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 1550;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Skill_Params_8_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skill_Params_8_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -8127,53 +8127,53 @@ namespace MHW_Editor.Structs.PlData {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Header_ = new MhwStructDataContainer(Header.LoadData(reader, null), typeof(Header));
+            var Header_ = new MhwStructDataContainer<Header>(Header.LoadData(reader), typeof(Header));
             data.AddLast(Header_);
-            var Skill_Params_1__ = new MhwStructDataContainer(Skill_Params_1_.LoadData(reader, null), typeof(Skill_Params_1_));
+            var Skill_Params_1__ = new MhwStructDataContainer<Skill_Params_1_>(Skill_Params_1_.LoadData(reader), typeof(Skill_Params_1_));
             data.AddLast(Skill_Params_1__);
-            var Wide_Range_ = new MhwStructDataContainer(Wide_Range.LoadData(reader, null), typeof(Wide_Range));
+            var Wide_Range_ = new MhwStructDataContainer<Wide_Range>(Wide_Range.LoadData(reader), typeof(Wide_Range));
             data.AddLast(Wide_Range_);
-            var Skill_Params_2__ = new MhwStructDataContainer(Skill_Params_2_.LoadData(reader, null), typeof(Skill_Params_2_));
+            var Skill_Params_2__ = new MhwStructDataContainer<Skill_Params_2_>(Skill_Params_2_.LoadData(reader), typeof(Skill_Params_2_));
             data.AddLast(Skill_Params_2__);
-            var Focus_ = new MhwStructDataContainer(Focus.LoadData(reader, null), typeof(Focus));
+            var Focus_ = new MhwStructDataContainer<Focus>(Focus.LoadData(reader), typeof(Focus));
             data.AddLast(Focus_);
-            var Punishing_Draw_ = new MhwStructDataContainer(Punishing_Draw.LoadData(reader, null), typeof(Punishing_Draw));
+            var Punishing_Draw_ = new MhwStructDataContainer<Punishing_Draw>(Punishing_Draw.LoadData(reader), typeof(Punishing_Draw));
             data.AddLast(Punishing_Draw_);
-            var Razor_Sharp_ = new MhwStructDataContainer(Razor_Sharp.LoadData(reader, null), typeof(Razor_Sharp));
+            var Razor_Sharp_ = new MhwStructDataContainer<Razor_Sharp>(Razor_Sharp.LoadData(reader), typeof(Razor_Sharp));
             data.AddLast(Razor_Sharp_);
-            var Minds_Eye_Ballistics_ = new MhwStructDataContainer(Minds_Eye_Ballistics.LoadData(reader, null), typeof(Minds_Eye_Ballistics));
+            var Minds_Eye_Ballistics_ = new MhwStructDataContainer<Minds_Eye_Ballistics>(Minds_Eye_Ballistics.LoadData(reader), typeof(Minds_Eye_Ballistics));
             data.AddLast(Minds_Eye_Ballistics_);
-            var Critical_Element_Multipliers_ = new MhwStructDataContainer(Critical_Element_Multipliers.LoadData(reader, null), typeof(Critical_Element_Multipliers));
+            var Critical_Element_Multipliers_ = new MhwStructDataContainer<Critical_Element_Multipliers>(Critical_Element_Multipliers.LoadData(reader), typeof(Critical_Element_Multipliers));
             data.AddLast(Critical_Element_Multipliers_);
-            var Critical_Condition_Multipliers_ = new MhwStructDataContainer(Critical_Condition_Multipliers.LoadData(reader, null), typeof(Critical_Condition_Multipliers));
+            var Critical_Condition_Multipliers_ = new MhwStructDataContainer<Critical_Condition_Multipliers>(Critical_Condition_Multipliers.LoadData(reader), typeof(Critical_Condition_Multipliers));
             data.AddLast(Critical_Condition_Multipliers_);
-            var Skill_Params_3__ = new MhwStructDataContainer(Skill_Params_3_.LoadData(reader, null), typeof(Skill_Params_3_));
+            var Skill_Params_3__ = new MhwStructDataContainer<Skill_Params_3_>(Skill_Params_3_.LoadData(reader), typeof(Skill_Params_3_));
             data.AddLast(Skill_Params_3__);
-            var Artillery_ = new MhwStructDataContainer(Artillery.LoadData(reader, null), typeof(Artillery));
+            var Artillery_ = new MhwStructDataContainer<Artillery>(Artillery.LoadData(reader), typeof(Artillery));
             data.AddLast(Artillery_);
-            var Skill_Params_4__ = new MhwStructDataContainer(Skill_Params_4_.LoadData(reader, null), typeof(Skill_Params_4_));
+            var Skill_Params_4__ = new MhwStructDataContainer<Skill_Params_4_>(Skill_Params_4_.LoadData(reader), typeof(Skill_Params_4_));
             data.AddLast(Skill_Params_4__);
-            var Ammo_Up_ = new MhwStructDataContainer(Ammo_Up.LoadData(reader, null), typeof(Ammo_Up));
+            var Ammo_Up_ = new MhwStructDataContainer<Ammo_Up>(Ammo_Up.LoadData(reader), typeof(Ammo_Up));
             data.AddLast(Ammo_Up_);
-            var Power_Prolonger_ = new MhwStructDataContainer(Power_Prolonger.LoadData(reader, null), typeof(Power_Prolonger));
+            var Power_Prolonger_ = new MhwStructDataContainer<Power_Prolonger>(Power_Prolonger.LoadData(reader), typeof(Power_Prolonger));
             data.AddLast(Power_Prolonger_);
-            var Skill_Params_5__ = new MhwStructDataContainer(Skill_Params_5_.LoadData(reader, null), typeof(Skill_Params_5_));
+            var Skill_Params_5__ = new MhwStructDataContainer<Skill_Params_5_>(Skill_Params_5_.LoadData(reader), typeof(Skill_Params_5_));
             data.AddLast(Skill_Params_5__);
-            var Slinger_Up_ = new MhwStructDataContainer(Slinger_Up.LoadData(reader, null), typeof(Slinger_Up));
+            var Slinger_Up_ = new MhwStructDataContainer<Slinger_Up>(Slinger_Up.LoadData(reader), typeof(Slinger_Up));
             data.AddLast(Slinger_Up_);
-            var Skill_Params_6__ = new MhwStructDataContainer(Skill_Params_6_.LoadData(reader, null), typeof(Skill_Params_6_));
+            var Skill_Params_6__ = new MhwStructDataContainer<Skill_Params_6_>(Skill_Params_6_.LoadData(reader), typeof(Skill_Params_6_));
             data.AddLast(Skill_Params_6__);
-            var Frostcraft_1__ = new MhwStructDataContainer(Frostcraft_1_.LoadData(reader, null), typeof(Frostcraft_1_));
+            var Frostcraft_1__ = new MhwStructDataContainer<Frostcraft_1_>(Frostcraft_1_.LoadData(reader), typeof(Frostcraft_1_));
             data.AddLast(Frostcraft_1__);
-            var Frostcraft_2__ = new MhwStructDataContainer(Frostcraft_2_.LoadData(reader, null), typeof(Frostcraft_2_));
+            var Frostcraft_2__ = new MhwStructDataContainer<Frostcraft_2_>(Frostcraft_2_.LoadData(reader), typeof(Frostcraft_2_));
             data.AddLast(Frostcraft_2__);
-            var Skill_Params_7__ = new MhwStructDataContainer(Skill_Params_7_.LoadData(reader, null), typeof(Skill_Params_7_));
+            var Skill_Params_7__ = new MhwStructDataContainer<Skill_Params_7_>(Skill_Params_7_.LoadData(reader), typeof(Skill_Params_7_));
             data.AddLast(Skill_Params_7__);
-            var Food_Effects_ = new MhwStructDataContainer(Food_Effects.LoadData(reader, null), typeof(Food_Effects));
+            var Food_Effects_ = new MhwStructDataContainer<Food_Effects>(Food_Effects.LoadData(reader), typeof(Food_Effects));
             data.AddLast(Food_Effects_);
-            var Feline_Skill_ = new MhwStructDataContainer(Feline_Skill.LoadData(reader, null), typeof(Feline_Skill));
+            var Feline_Skill_ = new MhwStructDataContainer<Feline_Skill>(Feline_Skill.LoadData(reader), typeof(Feline_Skill));
             data.AddLast(Feline_Skill_);
-            var Skill_Params_8__ = new MhwStructDataContainer(Skill_Params_8_.LoadData(reader, null), typeof(Skill_Params_8_));
+            var Skill_Params_8__ = new MhwStructDataContainer<Skill_Params_8_>(Skill_Params_8_.LoadData(reader), typeof(Skill_Params_8_));
             data.AddLast(Skill_Params_8__);
         }
     }

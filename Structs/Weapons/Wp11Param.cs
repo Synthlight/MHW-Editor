@@ -1,7 +1,7 @@
 ﻿using MHW_Editor.Models;
 
 namespace MHW_Editor.Structs.Weapons {
-    public partial class Wp11Param : MhwMultiStructItem<Wp11Param> {
+    public partial class Wp11Param : MhwMultiStructFile<Wp11Param> {
         public partial class Bow_Charge {
             public string Name {
                 get {

@@ -1,7 +1,7 @@
 ﻿using MHW_Editor.Models;
 
 namespace MHW_Editor.Structs.Weapons {
-    public partial class Wp10Param : MhwMultiStructItem<Wp10Param> {
+    public partial class Wp10Param : MhwMultiStructFile<Wp10Param> {
         public partial class Kinsect_Stats {
             public string Name {
                 get {

@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.PlData {
     public partial class PlPlayerParam {
         public override string EncryptionKey => "j1P15gEkgVa7NdFxiqwCPitykHctY2nZPjSaElvqb0eSwcLO1cOlTqqv";
 
-        public partial class Header : MhwStructItem {
+        public partial class Header : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Header";
 
@@ -53,8 +53,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Header> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Header>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -76,7 +76,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Player_Params_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Player_Params_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Player Params (1)";
 
@@ -880,8 +880,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 2900;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Player_Params_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Player_Params_1_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1075,7 +1075,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Player_Params_2_Unk_Array_1_ : MhwStructItem {
+        public partial class Player_Params_2_Unk_Array_1_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 12;
             public const string GridName = "Player Params (2) - Unk Array (1)";
 
@@ -1151,8 +1151,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Player_Params_2_Unk_Array_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Player_Params_2_Unk_Array_1_>();
                 var count = 12UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1180,7 +1180,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Player_Params_3_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Player_Params_3_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Player Params (3)";
 
@@ -2614,8 +2614,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 5150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Player_Params_3_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Player_Params_3_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2944,7 +2944,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class CD_Block_1_ : MhwStructItem {
+        public partial class CD_Block_1_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 4;
             public const string GridName = "CD Block (1)";
             public const bool IsHidden = true;
@@ -2966,8 +2966,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<CD_Block_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<CD_Block_1_>();
                 var count = 4UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2987,7 +2987,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Player_Params_4_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Player_Params_4_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Player Params (4)";
 
@@ -4407,8 +4407,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 5100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Player_Params_4_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Player_Params_4_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4734,7 +4734,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Player_Params_5_Dodge_IFrames : MhwStructItem {
+        public partial class Player_Params_5_Dodge_IFrames : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 10;
             public const string GridName = "Player Params (5) - Dodge IFrames";
 
@@ -4838,8 +4838,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 400;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Player_Params_5_Dodge_IFrames> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Player_Params_5_Dodge_IFrames>();
                 var count = 10UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4871,7 +4871,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Player_Params_6_Evade_Distance : MhwStructItem {
+        public partial class Player_Params_6_Evade_Distance : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 11;
             public const string GridName = "Player Params (6) - Evade Distance";
 
@@ -4919,8 +4919,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Player_Params_6_Evade_Distance> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Player_Params_6_Evade_Distance>();
                 var count = 11UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4944,11 +4944,11 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skipping_Ahead_1_ : MhwStructItem {
+        public partial class Skipping_Ahead_1_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Skipping Ahead (1)";
 
-            public partial class Raw_Bytes_1_ : MhwStructItem {
+            public partial class Raw_Bytes_1_ : MhwStructItem, IWriteDataInner<Skipping_Ahead_1_> {
                 public const ulong FixedSizeCount = 7014;
                 public const string GridName = "Raw Bytes (1)";
 
@@ -4968,8 +4968,8 @@ namespace MHW_Editor.Structs.PlData {
 
                 public const int lastSortIndex = 100;
 
-                public static ObservableCollection<Raw_Bytes_1_> LoadData(BinaryReader reader, Skipping_Ahead_1_ parent) {
-                    var list = new ObservableCollection<Raw_Bytes_1_>();
+                public static ObservableMhwStructCollection<Raw_Bytes_1_> LoadData(BinaryReader reader, Skipping_Ahead_1_ parent) {
+                    var list = new ObservableMhwStructCollection<Raw_Bytes_1_>();
                     var count = 7014UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -4997,8 +4997,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Skipping_Ahead_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skipping_Ahead_1_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -5020,7 +5020,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Player_Params_7_HR_MR_Augment_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Player_Params_7_HR_MR_Augment_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Player Params (7) - HR/MR Augment Params";
 
@@ -6090,8 +6090,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 3850;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Player_Params_7_HR_MR_Augment_Params> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Player_Params_7_HR_MR_Augment_Params>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -6342,11 +6342,11 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skipping_Ahead_2_ : MhwStructItem {
+        public partial class Skipping_Ahead_2_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Skipping Ahead (2)";
 
-            public partial class Raw_Bytes_2_ : MhwStructItem {
+            public partial class Raw_Bytes_2_ : MhwStructItem, IWriteDataInner<Skipping_Ahead_2_> {
                 public const ulong FixedSizeCount = 590;
                 public const string GridName = "Raw Bytes (2)";
 
@@ -6366,8 +6366,8 @@ namespace MHW_Editor.Structs.PlData {
 
                 public const int lastSortIndex = 100;
 
-                public static ObservableCollection<Raw_Bytes_2_> LoadData(BinaryReader reader, Skipping_Ahead_2_ parent) {
-                    var list = new ObservableCollection<Raw_Bytes_2_>();
+                public static ObservableMhwStructCollection<Raw_Bytes_2_> LoadData(BinaryReader reader, Skipping_Ahead_2_ parent) {
+                    var list = new ObservableMhwStructCollection<Raw_Bytes_2_>();
                     var count = 590UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -6395,8 +6395,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Skipping_Ahead_2_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skipping_Ahead_2_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -6418,7 +6418,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Player_Params_8_Slinger_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Player_Params_8_Slinger_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Player Params (8) - Slinger Params";
 
@@ -6858,8 +6858,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 1600;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Player_Params_8_Slinger_Params> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Player_Params_8_Slinger_Params>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -6975,11 +6975,11 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class The_Rest : MhwStructItem {
+        public partial class The_Rest : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "The Rest";
 
-            public partial class End_Junk : MhwStructItem {
+            public partial class End_Junk : MhwStructItem, IWriteDataInner<The_Rest> {
                 public const ulong FixedSizeCount = 0;
                 public const string GridName = "End Junk";
 
@@ -7013,8 +7013,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<The_Rest> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<The_Rest>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -7039,31 +7039,31 @@ namespace MHW_Editor.Structs.PlData {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Header_ = new MhwStructDataContainer(Header.LoadData(reader, null), typeof(Header));
+            var Header_ = new MhwStructDataContainer<Header>(Header.LoadData(reader), typeof(Header));
             data.AddLast(Header_);
-            var Player_Params_1__ = new MhwStructDataContainer(Player_Params_1_.LoadData(reader, null), typeof(Player_Params_1_));
+            var Player_Params_1__ = new MhwStructDataContainer<Player_Params_1_>(Player_Params_1_.LoadData(reader), typeof(Player_Params_1_));
             data.AddLast(Player_Params_1__);
-            var Player_Params_2_Unk_Array_1__ = new MhwStructDataContainer(Player_Params_2_Unk_Array_1_.LoadData(reader, null), typeof(Player_Params_2_Unk_Array_1_));
+            var Player_Params_2_Unk_Array_1__ = new MhwStructDataContainer<Player_Params_2_Unk_Array_1_>(Player_Params_2_Unk_Array_1_.LoadData(reader), typeof(Player_Params_2_Unk_Array_1_));
             data.AddLast(Player_Params_2_Unk_Array_1__);
-            var Player_Params_3__ = new MhwStructDataContainer(Player_Params_3_.LoadData(reader, null), typeof(Player_Params_3_));
+            var Player_Params_3__ = new MhwStructDataContainer<Player_Params_3_>(Player_Params_3_.LoadData(reader), typeof(Player_Params_3_));
             data.AddLast(Player_Params_3__);
-            var CD_Block_1__ = new MhwStructDataContainer(CD_Block_1_.LoadData(reader, null), typeof(CD_Block_1_));
+            var CD_Block_1__ = new MhwStructDataContainer<CD_Block_1_>(CD_Block_1_.LoadData(reader), typeof(CD_Block_1_));
             data.AddLast(CD_Block_1__);
-            var Player_Params_4__ = new MhwStructDataContainer(Player_Params_4_.LoadData(reader, null), typeof(Player_Params_4_));
+            var Player_Params_4__ = new MhwStructDataContainer<Player_Params_4_>(Player_Params_4_.LoadData(reader), typeof(Player_Params_4_));
             data.AddLast(Player_Params_4__);
-            var Player_Params_5_Dodge_IFrames_ = new MhwStructDataContainer(Player_Params_5_Dodge_IFrames.LoadData(reader, null), typeof(Player_Params_5_Dodge_IFrames));
+            var Player_Params_5_Dodge_IFrames_ = new MhwStructDataContainer<Player_Params_5_Dodge_IFrames>(Player_Params_5_Dodge_IFrames.LoadData(reader), typeof(Player_Params_5_Dodge_IFrames));
             data.AddLast(Player_Params_5_Dodge_IFrames_);
-            var Player_Params_6_Evade_Distance_ = new MhwStructDataContainer(Player_Params_6_Evade_Distance.LoadData(reader, null), typeof(Player_Params_6_Evade_Distance));
+            var Player_Params_6_Evade_Distance_ = new MhwStructDataContainer<Player_Params_6_Evade_Distance>(Player_Params_6_Evade_Distance.LoadData(reader), typeof(Player_Params_6_Evade_Distance));
             data.AddLast(Player_Params_6_Evade_Distance_);
-            var Skipping_Ahead_1__ = new MhwStructDataContainer(Skipping_Ahead_1_.LoadData(reader, null), typeof(Skipping_Ahead_1_));
+            var Skipping_Ahead_1__ = new MhwStructDataContainer<Skipping_Ahead_1_>(Skipping_Ahead_1_.LoadData(reader), typeof(Skipping_Ahead_1_));
             data.AddLast(Skipping_Ahead_1__);
-            var Player_Params_7_HR_MR_Augment_Params_ = new MhwStructDataContainer(Player_Params_7_HR_MR_Augment_Params.LoadData(reader, null), typeof(Player_Params_7_HR_MR_Augment_Params));
+            var Player_Params_7_HR_MR_Augment_Params_ = new MhwStructDataContainer<Player_Params_7_HR_MR_Augment_Params>(Player_Params_7_HR_MR_Augment_Params.LoadData(reader), typeof(Player_Params_7_HR_MR_Augment_Params));
             data.AddLast(Player_Params_7_HR_MR_Augment_Params_);
-            var Skipping_Ahead_2__ = new MhwStructDataContainer(Skipping_Ahead_2_.LoadData(reader, null), typeof(Skipping_Ahead_2_));
+            var Skipping_Ahead_2__ = new MhwStructDataContainer<Skipping_Ahead_2_>(Skipping_Ahead_2_.LoadData(reader), typeof(Skipping_Ahead_2_));
             data.AddLast(Skipping_Ahead_2__);
-            var Player_Params_8_Slinger_Params_ = new MhwStructDataContainer(Player_Params_8_Slinger_Params.LoadData(reader, null), typeof(Player_Params_8_Slinger_Params));
+            var Player_Params_8_Slinger_Params_ = new MhwStructDataContainer<Player_Params_8_Slinger_Params>(Player_Params_8_Slinger_Params.LoadData(reader), typeof(Player_Params_8_Slinger_Params));
             data.AddLast(Player_Params_8_Slinger_Params_);
-            var The_Rest_ = new MhwStructDataContainer(The_Rest.LoadData(reader, null), typeof(The_Rest));
+            var The_Rest_ = new MhwStructDataContainer<The_Rest>(The_Rest.LoadData(reader), typeof(The_Rest));
             data.AddLast(The_Rest_);
         }
     }

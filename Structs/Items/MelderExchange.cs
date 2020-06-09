@@ -7,7 +7,7 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Structs.Items {
-    public partial class MelderExchange : MhwMultiStructItem<MelderExchange> {
+    public partial class MelderExchange : MhwMultiStructFile<MelderExchange> {
         public partial class Item_Box {
             public partial class Items {
                 [DisplayName("")] public override ulong Index { get; set; }

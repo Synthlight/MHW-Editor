@@ -1,16 +1,13 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
+﻿using System.Diagnostics.CodeAnalysis;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Editor.Windows;
 using MHW_Template;
 
 namespace MHW_Editor.Structs.GuildCard {
-    public partial class GcData : MhwMultiStructItem<GcData>, IShowAsSingleStruct<GcData.Entries> {
+    public partial class GcData : MhwSingleStructFile<GcData, GcData.Entries> {
         public void Init(string targetFile) {
-            foreach (var entry in GetIterableStructList()) {
+            foreach (var entry in GetSingleStructList()) {
                 entry.Init(targetFile);
             }
         }
@@ -47,14 +44,6 @@ namespace MHW_Editor.Structs.GuildCard {
                     return "Unknown";
                 }
             }
-        }
-
-        public ObservableCollection<object> GetStructList() {
-            return data.Last.Value.list;
-        }
-
-        public IEnumerable<Entries> GetIterableStructList() {
-            return GetStructList().Cast<Entries>();
         }
     }
 }

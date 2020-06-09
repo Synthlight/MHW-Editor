@@ -1,7 +1,7 @@
 ﻿using MHW_Editor.Models;
 
 namespace MHW_Editor.Structs.Weapons {
-    public partial class ShellParam : MhwMultiStructItem<ShellParam> {
+    public partial class ShellParam : MhwMultiStructFile<ShellParam> {
         public partial class Assets {
             public string Name {
                 get {

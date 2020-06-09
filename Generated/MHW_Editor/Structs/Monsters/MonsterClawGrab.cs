@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Monsters {
     public partial class MonsterClawGrab {
         public override string EncryptionKey => null;
 
-        public partial class Monster_Claw_Grab : MhwStructItem {
+        public partial class Monster_Claw_Grab : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Claw Grab";
 
@@ -68,8 +68,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Claw_Grab> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Claw_Grab>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -93,7 +93,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Clagger_Params : MhwStructItem {
+        public partial class Clagger_Params : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Clagger Params";
             public const bool IsAddingAllowed = true;
@@ -343,8 +343,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 900;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Clagger_Params> LoadData(BinaryReader reader, ObservableMhwStructCollection<Monster_Claw_Grab> lastStruct) {
+                var list = new ObservableMhwStructCollection<Clagger_Params>();
                 var countTarget = (Monster_Claw_Grab) lastStruct.Last();
                 var count = (ulong) countTarget.Number_of_Claggers;
                 for (ulong i = 0; i < count; i++) {
@@ -397,7 +397,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Claw_Chance_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Claw_Chance_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Claw Chance Params";
 
@@ -445,8 +445,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Claw_Chance_Params> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Claw_Chance_Params>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -481,12 +481,12 @@ namespace MHW_Editor.Structs.Monsters {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Monster_Claw_Grab_ = new MhwStructDataContainer(Monster_Claw_Grab.LoadData(reader, null), typeof(Monster_Claw_Grab));
+            var Monster_Claw_Grab_ = new MhwStructDataContainer<Monster_Claw_Grab>(Monster_Claw_Grab.LoadData(reader), typeof(Monster_Claw_Grab));
             data.AddLast(Monster_Claw_Grab_);
-            var Clagger_Params_ = new MhwStructDataContainer(Clagger_Params.LoadData(reader, Monster_Claw_Grab_.list), typeof(Clagger_Params));
+            var Clagger_Params_ = new MhwStructDataContainer<Clagger_Params, Monster_Claw_Grab>(Clagger_Params.LoadData(reader, Monster_Claw_Grab_.list), typeof(Clagger_Params));
             Clagger_Params_.SetCountTargetToUpdate(Monster_Claw_Grab_, -1, "Number_of_Claggers");
             data.AddLast(Clagger_Params_);
-            var Claw_Chance_Params_ = new MhwStructDataContainer(Claw_Chance_Params.LoadData(reader, null), typeof(Claw_Chance_Params));
+            var Claw_Chance_Params_ = new MhwStructDataContainer<Claw_Chance_Params>(Claw_Chance_Params.LoadData(reader), typeof(Claw_Chance_Params));
             data.AddLast(Claw_Chance_Params_);
         }
     }

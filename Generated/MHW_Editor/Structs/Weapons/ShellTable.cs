@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Weapons {
     public partial class ShellTable {
         public override string EncryptionKey => null;
 
-        public partial class Header : MhwStructItem {
+        public partial class Header : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Header";
 
@@ -68,8 +68,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Header> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Header>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -93,7 +93,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Entries : MhwStructItem {
+        public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
             public override string UniqueId => "{Id}";
@@ -2172,8 +2172,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 5600;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Entries> LoadData(BinaryReader reader, ObservableMhwStructCollection<Header> lastStruct) {
+                var list = new ObservableMhwStructCollection<Entries>();
                 var countTarget = (Header) lastStruct.Last();
                 var count = (ulong) countTarget.Entry_Count;
                 for (ulong i = 0; i < count; i++) {
@@ -2417,9 +2417,9 @@ namespace MHW_Editor.Structs.Weapons {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Header_ = new MhwStructDataContainer(Header.LoadData(reader, null), typeof(Header));
+            var Header_ = new MhwStructDataContainer<Header>(Header.LoadData(reader), typeof(Header));
             data.AddLast(Header_);
-            var Entries_ = new MhwStructDataContainer(Entries.LoadData(reader, Header_.list), typeof(Entries));
+            var Entries_ = new MhwStructDataContainer<Entries, Header>(Entries.LoadData(reader, Header_.list), typeof(Entries));
             Entries_.SetCountTargetToUpdate(Header_, -1, "Entry_Count");
             data.AddLast(Entries_);
         }

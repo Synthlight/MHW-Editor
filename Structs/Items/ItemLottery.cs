@@ -1,10 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using MHW_Editor.Models;
+﻿using MHW_Editor.Models;
 
 namespace MHW_Editor.Structs.Items {
-    public partial class ItemLottery : MhwMultiStructItem<ItemLottery>, IShowAsSingleStruct<ItemLottery.Entries> {
+    public partial class ItemLottery : MhwSingleStructFile<ItemLottery, ItemLottery.Entries> {
         public partial class Entries {
             public const int Item_1_Id_sortIndex               = 100;
             public const int Item_1_Count_sortIndex            = 101;
@@ -46,14 +43,6 @@ namespace MHW_Editor.Structs.Items {
             public const int Item_10_Count_sortIndex           = 551;
             public const int Item_10__sortIndex                = 552;
             public const int Item_10_Carve_Animation_sortIndex = 553;
-        }
-
-        public ObservableCollection<object> GetStructList() {
-            return data.Last.Value.list;
-        }
-
-        public IEnumerable<Entries> GetIterableStructList() {
-            return GetStructList().Cast<Entries>();
         }
     }
 }

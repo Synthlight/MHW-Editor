@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Monsters {
     public partial class MonsterStamina {
         public override string EncryptionKey => null;
 
-        public partial class Monster_Stamina_1_ : MhwStructItem {
+        public partial class Monster_Stamina_1_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Stamina (1)";
 
@@ -90,8 +90,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 250;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Stamina_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Stamina_1_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -117,7 +117,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Fatigue_LR_ : MhwStructItem {
+        public partial class Fatigue_LR_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Fatigue (LR)";
 
@@ -165,8 +165,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Fatigue_LR_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Fatigue_LR_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -190,7 +190,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Stamina_Count_LR_ : MhwStructItem {
+        public partial class Stamina_Count_LR_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Stamina Count (LR)";
             public const bool IsHidden = true;
@@ -212,8 +212,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Stamina_Count_LR_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Stamina_Count_LR_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -233,7 +233,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Stamina_LR_ : MhwStructItem {
+        public partial class Stamina_LR_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Stamina (LR)";
             public const bool IsAddingAllowed = true;
@@ -273,8 +273,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Stamina_LR_> LoadData(BinaryReader reader, ObservableMhwStructCollection<Stamina_Count_LR_> lastStruct) {
+                var list = new ObservableMhwStructCollection<Stamina_LR_>();
                 var countTarget = (Stamina_Count_LR_) lastStruct.Last();
                 var count = (ulong) countTarget.Number_of_Stamina_Entries;
                 for (ulong i = 0; i < count; i++) {
@@ -297,7 +297,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Fatigue_HR_ : MhwStructItem {
+        public partial class Fatigue_HR_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Fatigue (HR)";
 
@@ -345,8 +345,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Fatigue_HR_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Fatigue_HR_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -370,7 +370,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Stamina_Count_HR_ : MhwStructItem {
+        public partial class Stamina_Count_HR_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Stamina Count (HR)";
             public const bool IsHidden = true;
@@ -392,8 +392,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Stamina_Count_HR_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Stamina_Count_HR_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -413,7 +413,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Stamina_HR_ : MhwStructItem {
+        public partial class Stamina_HR_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Stamina (HR)";
             public const bool IsAddingAllowed = true;
@@ -453,8 +453,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Stamina_HR_> LoadData(BinaryReader reader, ObservableMhwStructCollection<Stamina_Count_HR_> lastStruct) {
+                var list = new ObservableMhwStructCollection<Stamina_HR_>();
                 var countTarget = (Stamina_Count_HR_) lastStruct.Last();
                 var count = (ulong) countTarget.Number_of_Stamina_Entries;
                 for (ulong i = 0; i < count; i++) {
@@ -477,7 +477,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Fatigue_MR_ : MhwStructItem {
+        public partial class Fatigue_MR_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Fatigue (MR)";
 
@@ -525,8 +525,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Fatigue_MR_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Fatigue_MR_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -550,7 +550,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Stamina_Count_MR_ : MhwStructItem {
+        public partial class Stamina_Count_MR_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Stamina Count (MR)";
             public const bool IsHidden = true;
@@ -572,8 +572,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Stamina_Count_MR_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Stamina_Count_MR_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -593,7 +593,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Stamina_MR_ : MhwStructItem {
+        public partial class Stamina_MR_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Stamina (MR)";
             public const bool IsAddingAllowed = true;
@@ -633,8 +633,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Stamina_MR_> LoadData(BinaryReader reader, ObservableMhwStructCollection<Stamina_Count_MR_> lastStruct) {
+                var list = new ObservableMhwStructCollection<Stamina_MR_>();
                 var countTarget = (Stamina_Count_MR_) lastStruct.Last();
                 var count = (ulong) countTarget.Number_of_Stamina_Entries;
                 for (ulong i = 0; i < count; i++) {
@@ -657,7 +657,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Monster_Stamina_2_ : MhwStructItem {
+        public partial class Monster_Stamina_2_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Stamina (2)";
 
@@ -677,8 +677,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Stamina_2_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Stamina_2_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -701,30 +701,30 @@ namespace MHW_Editor.Structs.Monsters {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Monster_Stamina_1__ = new MhwStructDataContainer(Monster_Stamina_1_.LoadData(reader, null), typeof(Monster_Stamina_1_));
+            var Monster_Stamina_1__ = new MhwStructDataContainer<Monster_Stamina_1_>(Monster_Stamina_1_.LoadData(reader), typeof(Monster_Stamina_1_));
             data.AddLast(Monster_Stamina_1__);
-            var Fatigue_LR__ = new MhwStructDataContainer(Fatigue_LR_.LoadData(reader, null), typeof(Fatigue_LR_));
+            var Fatigue_LR__ = new MhwStructDataContainer<Fatigue_LR_>(Fatigue_LR_.LoadData(reader), typeof(Fatigue_LR_));
             data.AddLast(Fatigue_LR__);
-            var Stamina_Count_LR__ = new MhwStructDataContainer(Stamina_Count_LR_.LoadData(reader, null), typeof(Stamina_Count_LR_));
+            var Stamina_Count_LR__ = new MhwStructDataContainer<Stamina_Count_LR_>(Stamina_Count_LR_.LoadData(reader), typeof(Stamina_Count_LR_));
             data.AddLast(Stamina_Count_LR__);
-            var Stamina_LR__ = new MhwStructDataContainer(Stamina_LR_.LoadData(reader, Stamina_Count_LR__.list), typeof(Stamina_LR_));
+            var Stamina_LR__ = new MhwStructDataContainer<Stamina_LR_, Stamina_Count_LR_>(Stamina_LR_.LoadData(reader, Stamina_Count_LR__.list), typeof(Stamina_LR_));
             Stamina_LR__.SetCountTargetToUpdate(Stamina_Count_LR__, -1, "Number_of_Stamina_Entries");
             data.AddLast(Stamina_LR__);
-            var Fatigue_HR__ = new MhwStructDataContainer(Fatigue_HR_.LoadData(reader, null), typeof(Fatigue_HR_));
+            var Fatigue_HR__ = new MhwStructDataContainer<Fatigue_HR_>(Fatigue_HR_.LoadData(reader), typeof(Fatigue_HR_));
             data.AddLast(Fatigue_HR__);
-            var Stamina_Count_HR__ = new MhwStructDataContainer(Stamina_Count_HR_.LoadData(reader, null), typeof(Stamina_Count_HR_));
+            var Stamina_Count_HR__ = new MhwStructDataContainer<Stamina_Count_HR_>(Stamina_Count_HR_.LoadData(reader), typeof(Stamina_Count_HR_));
             data.AddLast(Stamina_Count_HR__);
-            var Stamina_HR__ = new MhwStructDataContainer(Stamina_HR_.LoadData(reader, Stamina_Count_HR__.list), typeof(Stamina_HR_));
+            var Stamina_HR__ = new MhwStructDataContainer<Stamina_HR_, Stamina_Count_HR_>(Stamina_HR_.LoadData(reader, Stamina_Count_HR__.list), typeof(Stamina_HR_));
             Stamina_HR__.SetCountTargetToUpdate(Stamina_Count_HR__, -1, "Number_of_Stamina_Entries");
             data.AddLast(Stamina_HR__);
-            var Fatigue_MR__ = new MhwStructDataContainer(Fatigue_MR_.LoadData(reader, null), typeof(Fatigue_MR_));
+            var Fatigue_MR__ = new MhwStructDataContainer<Fatigue_MR_>(Fatigue_MR_.LoadData(reader), typeof(Fatigue_MR_));
             data.AddLast(Fatigue_MR__);
-            var Stamina_Count_MR__ = new MhwStructDataContainer(Stamina_Count_MR_.LoadData(reader, null), typeof(Stamina_Count_MR_));
+            var Stamina_Count_MR__ = new MhwStructDataContainer<Stamina_Count_MR_>(Stamina_Count_MR_.LoadData(reader), typeof(Stamina_Count_MR_));
             data.AddLast(Stamina_Count_MR__);
-            var Stamina_MR__ = new MhwStructDataContainer(Stamina_MR_.LoadData(reader, Stamina_Count_MR__.list), typeof(Stamina_MR_));
+            var Stamina_MR__ = new MhwStructDataContainer<Stamina_MR_, Stamina_Count_MR_>(Stamina_MR_.LoadData(reader, Stamina_Count_MR__.list), typeof(Stamina_MR_));
             Stamina_MR__.SetCountTargetToUpdate(Stamina_Count_MR__, -1, "Number_of_Stamina_Entries");
             data.AddLast(Stamina_MR__);
-            var Monster_Stamina_2__ = new MhwStructDataContainer(Monster_Stamina_2_.LoadData(reader, null), typeof(Monster_Stamina_2_));
+            var Monster_Stamina_2__ = new MhwStructDataContainer<Monster_Stamina_2_>(Monster_Stamina_2_.LoadData(reader), typeof(Monster_Stamina_2_));
             data.AddLast(Monster_Stamina_2__);
         }
     }

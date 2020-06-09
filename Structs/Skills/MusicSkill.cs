@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
 using MHW_Editor.Assets;
 using MHW_Editor.Controls.Models;
 using MHW_Editor.Models;
@@ -10,7 +7,7 @@ using MHW_Editor.Windows;
 using MHW_Template;
 
 namespace MHW_Editor.Structs.Skills {
-    public partial class MusicSkill : MhwMultiStructItem<MusicSkill>, IShowAsSingleStruct<MusicSkill.Entries> {
+    public partial class MusicSkill : MhwSingleStructFile<MusicSkill, MusicSkill.Entries> {
         public partial class Entries {
             [SortOrder(Song_Id_Raw_sortIndex)]
             [DisplayName("Song/Id")]
@@ -19,14 +16,6 @@ namespace MHW_Editor.Structs.Skills {
 
             [DisplayName("")]
             public string Name => DataHelper.songNames.TryGet(Song_Id_Raw);
-        }
-
-        public ObservableCollection<object> GetStructList() {
-            return data.Last.Value.list;
-        }
-
-        public IEnumerable<Entries> GetIterableStructList() {
-            return GetStructList().Cast<Entries>();
         }
     }
 

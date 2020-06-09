@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Structs.Weapons {
-    public partial class GunnerShoot : MhwMultiStructItem<GunnerShoot>, IShowAsSingleStruct<GunnerShoot.Entries> {
+    public partial class GunnerShoot : MhwSingleStructFile<GunnerShoot, GunnerShoot.Entries> {
         public static readonly Dictionary<byte, string> recoilLookup = new Dictionary<byte, string> {
             {0, "Normal +1"},
             {1, "Normal +2"},
@@ -24,14 +22,6 @@ namespace MHW_Editor.Structs.Weapons {
         public partial class Entries {
             [SortOrder(20)]
             public ulong Id => Index;
-        }
-
-        public ObservableCollection<object> GetStructList() {
-            return data.Last.Value.list;
-        }
-
-        public IEnumerable<Entries> GetIterableStructList() {
-            return GetStructList().Cast<Entries>();
         }
     }
 }

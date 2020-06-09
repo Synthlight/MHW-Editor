@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Items {
     public partial class SupplyData {
         public override string EncryptionKey => null;
 
-        public partial class Supply_Data : MhwStructItem {
+        public partial class Supply_Data : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Supply Data";
 
@@ -82,8 +82,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 250;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Supply_Data> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Supply_Data>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -109,7 +109,7 @@ namespace MHW_Editor.Structs.Items {
             }
         }
 
-        public partial class Item_Box : MhwStructItem {
+        public partial class Item_Box : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 24;
             public const string GridName = "Item Box";
 
@@ -150,8 +150,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Item_Box> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Item_Box>();
                 var count = 24UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -173,7 +173,7 @@ namespace MHW_Editor.Structs.Items {
             }
         }
 
-        public partial class Item_Box_Scaling : MhwStructItem {
+        public partial class Item_Box_Scaling : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 3;
             public const string GridName = "Item Box Scaling";
 
@@ -193,8 +193,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Item_Box_Scaling> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Item_Box_Scaling>();
                 var count = 3UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -214,7 +214,7 @@ namespace MHW_Editor.Structs.Items {
             }
         }
 
-        public partial class Ammo_Box : MhwStructItem {
+        public partial class Ammo_Box : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 16;
             public const string GridName = "Ammo Box";
 
@@ -255,8 +255,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Ammo_Box> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Ammo_Box>();
                 var count = 16UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -278,7 +278,7 @@ namespace MHW_Editor.Structs.Items {
             }
         }
 
-        public partial class Ammo_Box_Scaling : MhwStructItem {
+        public partial class Ammo_Box_Scaling : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 3;
             public const string GridName = "Ammo Box Scaling";
 
@@ -298,8 +298,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Ammo_Box_Scaling> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Ammo_Box_Scaling>();
                 var count = 3UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -322,15 +322,15 @@ namespace MHW_Editor.Structs.Items {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Supply_Data_ = new MhwStructDataContainer(Supply_Data.LoadData(reader, null), typeof(Supply_Data));
+            var Supply_Data_ = new MhwStructDataContainer<Supply_Data>(Supply_Data.LoadData(reader), typeof(Supply_Data));
             data.AddLast(Supply_Data_);
-            var Item_Box_ = new MhwStructDataContainer(Item_Box.LoadData(reader, null), typeof(Item_Box));
+            var Item_Box_ = new MhwStructDataContainer<Item_Box>(Item_Box.LoadData(reader), typeof(Item_Box));
             data.AddLast(Item_Box_);
-            var Item_Box_Scaling_ = new MhwStructDataContainer(Item_Box_Scaling.LoadData(reader, null), typeof(Item_Box_Scaling));
+            var Item_Box_Scaling_ = new MhwStructDataContainer<Item_Box_Scaling>(Item_Box_Scaling.LoadData(reader), typeof(Item_Box_Scaling));
             data.AddLast(Item_Box_Scaling_);
-            var Ammo_Box_ = new MhwStructDataContainer(Ammo_Box.LoadData(reader, null), typeof(Ammo_Box));
+            var Ammo_Box_ = new MhwStructDataContainer<Ammo_Box>(Ammo_Box.LoadData(reader), typeof(Ammo_Box));
             data.AddLast(Ammo_Box_);
-            var Ammo_Box_Scaling_ = new MhwStructDataContainer(Ammo_Box_Scaling.LoadData(reader, null), typeof(Ammo_Box_Scaling));
+            var Ammo_Box_Scaling_ = new MhwStructDataContainer<Ammo_Box_Scaling>(Ammo_Box_Scaling.LoadData(reader), typeof(Ammo_Box_Scaling));
             data.AddLast(Ammo_Box_Scaling_);
         }
     }

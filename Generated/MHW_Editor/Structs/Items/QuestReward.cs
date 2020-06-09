@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Items {
     public partial class QuestReward {
         public override string EncryptionKey => null;
 
-        public partial class Header : MhwStructItem {
+        public partial class Header : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Header";
 
@@ -98,8 +98,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Header> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Header>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -127,7 +127,7 @@ namespace MHW_Editor.Structs.Items {
             }
         }
 
-        public partial class Items : MhwStructItem {
+        public partial class Items : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 16;
             public const string GridName = "Items";
 
@@ -154,8 +154,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Items> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Items>();
                 var count = 16UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -175,7 +175,7 @@ namespace MHW_Editor.Structs.Items {
             }
         }
 
-        public partial class Counts : MhwStructItem {
+        public partial class Counts : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 16;
             public const string GridName = "Counts";
 
@@ -195,8 +195,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Counts> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Counts>();
                 var count = 16UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -216,7 +216,7 @@ namespace MHW_Editor.Structs.Items {
             }
         }
 
-        public partial class Weights : MhwStructItem {
+        public partial class Weights : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 16;
             public const string GridName = "Weights";
 
@@ -236,8 +236,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Weights> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Weights>();
                 var count = 16UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -260,13 +260,13 @@ namespace MHW_Editor.Structs.Items {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Header_ = new MhwStructDataContainer(Header.LoadData(reader, null), typeof(Header));
+            var Header_ = new MhwStructDataContainer<Header>(Header.LoadData(reader), typeof(Header));
             data.AddLast(Header_);
-            var Items_ = new MhwStructDataContainer(Items.LoadData(reader, null), typeof(Items));
+            var Items_ = new MhwStructDataContainer<Items>(Items.LoadData(reader), typeof(Items));
             data.AddLast(Items_);
-            var Counts_ = new MhwStructDataContainer(Counts.LoadData(reader, null), typeof(Counts));
+            var Counts_ = new MhwStructDataContainer<Counts>(Counts.LoadData(reader), typeof(Counts));
             data.AddLast(Counts_);
-            var Weights_ = new MhwStructDataContainer(Weights.LoadData(reader, null), typeof(Weights));
+            var Weights_ = new MhwStructDataContainer<Weights>(Weights.LoadData(reader), typeof(Weights));
             data.AddLast(Weights_);
         }
     }

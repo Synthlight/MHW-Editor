@@ -1,9 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
-using System.Linq;
 using MHW_Editor.Assets;
 using MHW_Editor.Models;
 using MHW_Editor.Windows;
@@ -11,10 +8,10 @@ using MHW_Template;
 using MHW_Template.Weapons;
 
 namespace MHW_Editor.Structs.Weapons {
-    public partial class Ranged : MhwMultiStructItem<Ranged>, IShowAsSingleStruct<Ranged.Entries> {
+    public partial class Ranged : MhwSingleStructFile<Ranged, Ranged.Entries> {
         public void Init(string targetFile) {
             var target = Path.GetFileNameWithoutExtension(targetFile);
-            foreach (var entry in GetIterableStructList()) {
+            foreach (var entry in GetSingleStructList()) {
                 entry.Init(target);
             }
         }
@@ -64,14 +61,6 @@ namespace MHW_Editor.Structs.Weapons {
                     return !isBow;
                 default: return false;
             }
-        }
-
-        public ObservableCollection<object> GetStructList() {
-            return data.Last.Value.list;
-        }
-
-        public IEnumerable<Entries> GetIterableStructList() {
-            return GetStructList().Cast<Entries>();
         }
     }
 }

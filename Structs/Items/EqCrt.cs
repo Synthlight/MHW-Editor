@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
+﻿using System.ComponentModel;
 using MHW_Editor.Assets;
 using MHW_Editor.Controls.Models;
 using MHW_Editor.Models;
@@ -12,7 +9,7 @@ using MHW_Template.Models;
 using MHW_Template.Weapons;
 
 namespace MHW_Editor.Structs.Items {
-    public partial class EqCrt : MhwMultiStructItem<EqCrt>, IShowAsSingleStruct<EqCrt.Entries> {
+    public partial class EqCrt : MhwSingleStructFile<EqCrt, EqCrt.Entries> {
         public partial class Entries : IHasArmorType, IHasWeaponType {
             // Armor
             [SortOrder(Equipment_Category_Raw_sortIndex)]
@@ -113,31 +110,23 @@ namespace MHW_Editor.Structs.Items {
             var isWeapon = mainWindow.Title.StartsWith("weapon");
 
             switch (propertyName) {
-                case nameof(EqCrt.Entries.Equipment_Category_Armor):
-                case nameof(EqCrt.Entries.Equipment_Index_Armor):
-                case nameof(EqCrt.Entries.Equipment_Index_Armor_button):
+                case nameof(Entries.Equipment_Category_Armor):
+                case nameof(Entries.Equipment_Index_Armor):
+                case nameof(Entries.Equipment_Index_Armor_button):
                     return !isArmor;
-                case nameof(EqCrt.Entries.Equipment_Category_Charm):
-                case nameof(EqCrt.Entries.Equipment_Id_Charm):
-                case nameof(EqCrt.Entries.Name_Charm):
+                case nameof(Entries.Equipment_Category_Charm):
+                case nameof(Entries.Equipment_Id_Charm):
+                case nameof(Entries.Name_Charm):
                     return !isCharm;
-                case nameof(EqCrt.Entries.Equipment_Category_Palico):
-                case nameof(EqCrt.Entries.Equipment_Id_Palico):
+                case nameof(Entries.Equipment_Category_Palico):
+                case nameof(Entries.Equipment_Id_Palico):
                     return !isPalico;
-                case nameof(EqCrt.Entries.Equipment_Category_Weapon):
-                case nameof(EqCrt.Entries.Equipment_Index_Weapon):
-                case nameof(EqCrt.Entries.Equipment_Index_Weapon_button):
+                case nameof(Entries.Equipment_Category_Weapon):
+                case nameof(Entries.Equipment_Index_Weapon):
+                case nameof(Entries.Equipment_Index_Weapon_button):
                     return !isWeapon;
                 default: return false;
             }
-        }
-
-        public ObservableCollection<object> GetStructList() {
-            return data.Last.Value.list;
-        }
-
-        public IEnumerable<Entries> GetIterableStructList() {
-            return GetStructList().Cast<Entries>();
         }
     }
 }

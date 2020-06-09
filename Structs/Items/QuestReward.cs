@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Windows.Controls;
 using MHW_Editor.Assets;
 using MHW_Editor.Controls.Models;
@@ -9,7 +11,7 @@ using MHW_Template;
 using MHW_Template.Models;
 
 namespace MHW_Editor.Structs.Items {
-    public partial class QuestReward : MhwMultiStructItem<QuestReward> {
+    public partial class QuestReward : MhwMultiStructFile<QuestReward> {
         public override void SetupViews(Grid grid, MainWindow main) {
             var customViews = new List<QuestRewardCustomView>((int) Items.FixedSizeCount);
             for (var i = 0; i < (int) Items.FixedSizeCount; i++) {
@@ -21,7 +23,7 @@ namespace MHW_Editor.Structs.Items {
 
                 for (var i = 0; i < (int) Items.FixedSizeCount; i++) {
                     var customView = customViews[i];
-                    var entryItem  = entry.list[i];
+                    var entryItem  = ((dynamic) entry).list[i]; // TODO: Test, and maybe there's a better way?
 
                     if (entry.type.Is(typeof(Items))) {
                         customView.itemIdEntry = (Items) entryItem;

@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Monsters {
     public partial class MonsterDifficulty {
         public override string EncryptionKey => null;
 
-        public partial class Monster_Difficulty : MhwStructItem {
+        public partial class Monster_Difficulty : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Difficulty";
 
@@ -53,8 +53,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Difficulty> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Difficulty>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -76,7 +76,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Solo_Stats : MhwStructItem {
+        public partial class Solo_Stats : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1000;
             public const string GridName = "Solo Stats";
 
@@ -208,8 +208,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 500;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Solo_Stats> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Solo_Stats>();
                 var count = 1000UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -245,7 +245,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Multi_Stats : MhwStructItem {
+        public partial class Multi_Stats : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1000;
             public const string GridName = "Multi Stats";
 
@@ -377,8 +377,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 500;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Multi_Stats> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Multi_Stats>();
                 var count = 1000UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -414,7 +414,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Unknown : MhwStructItem {
+        public partial class Unknown : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Unknown";
 
@@ -525,8 +525,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 400;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Unknown> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Unknown>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -561,13 +561,13 @@ namespace MHW_Editor.Structs.Monsters {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Monster_Difficulty_ = new MhwStructDataContainer(Monster_Difficulty.LoadData(reader, null), typeof(Monster_Difficulty));
+            var Monster_Difficulty_ = new MhwStructDataContainer<Monster_Difficulty>(Monster_Difficulty.LoadData(reader), typeof(Monster_Difficulty));
             data.AddLast(Monster_Difficulty_);
-            var Solo_Stats_ = new MhwStructDataContainer(Solo_Stats.LoadData(reader, null), typeof(Solo_Stats));
+            var Solo_Stats_ = new MhwStructDataContainer<Solo_Stats>(Solo_Stats.LoadData(reader), typeof(Solo_Stats));
             data.AddLast(Solo_Stats_);
-            var Multi_Stats_ = new MhwStructDataContainer(Multi_Stats.LoadData(reader, null), typeof(Multi_Stats));
+            var Multi_Stats_ = new MhwStructDataContainer<Multi_Stats>(Multi_Stats.LoadData(reader), typeof(Multi_Stats));
             data.AddLast(Multi_Stats_);
-            var Unknown_ = new MhwStructDataContainer(Unknown.LoadData(reader, null), typeof(Unknown));
+            var Unknown_ = new MhwStructDataContainer<Unknown>(Unknown.LoadData(reader), typeof(Unknown));
             data.AddLast(Unknown_);
         }
     }

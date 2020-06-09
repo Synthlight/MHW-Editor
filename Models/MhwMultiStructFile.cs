@@ -2,14 +2,20 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using System.Windows;
 using System.Windows.Controls;
 using JetBrains.Annotations;
 using MHW_Editor.Util;
 using MHW_Editor.Windows;
 
 namespace MHW_Editor.Models {
-    public abstract class MhwMultiStructItem<T> : SaveLoad<T>, ISaveLoad, IMhwMultiStructItem where T : ISaveLoad, IMhwMultiStructItem, new() {
+    public interface IMhwMultiStructFile {
+        LinkedList<MhwStructDataContainer> data { get; }
+
+        void                             SetupViews(Grid grid, MainWindow main);
+        ObservableMhwStructCollection<F> GetStructList<F>() where F : class, IMhwStructItem, IWriteData;
+    }
+
+    public abstract class MhwMultiStructFile<T> : SaveLoad<T>, ISaveLoad, IMhwMultiStructFile where T : ISaveLoad, IMhwMultiStructFile, new() {
         public LinkedList<MhwStructDataContainer> data { get; protected set; }
 
         public abstract string EncryptionKey { get; }
@@ -21,35 +27,17 @@ namespace MHW_Editor.Models {
 
         public virtual void SetupViews(Grid grid, MainWindow main) {
             foreach (var entry in data) {
-                SetupView(entry, grid, main);
+                entry.SetupView(grid, main);
             }
         }
 
-        protected virtual void SetupView(MhwStructDataContainer entry, Grid grid, MainWindow main) {
-            if (entry.IsHidden) return;
-
-            if (entry.IsAddingAllowed) {
-                var panel = new StackPanel {Orientation = Orientation.Horizontal};
-                panel.Children.Add(new Label {Content   = entry.GridName, FontSize       = MainWindow.FONT_SIZE, HorizontalAlignment    = HorizontalAlignment.Left});
-                var button = new Button {Content        = "Add Row", HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Center};
-                button.Click += entry.Add_Click;
-                panel.Children.Add(button);
-                grid.AddControl(panel);
-            } else {
-                grid.AddControl(new Label {Content = entry.GridName, FontSize = MainWindow.FONT_SIZE});
+        public ObservableMhwStructCollection<F> GetStructList<F>() where F : class, IMhwStructItem, IWriteData {
+            foreach (var container in data) {
+                if (container is MhwStructDataContainer<F> aaa) {
+                    return aaa.list;
+                }
             }
-
-            var desc = entry.Description;
-            if (desc != null) {
-                grid.AddControl(new Label {Content = desc, FontSize = MainWindow.FONT_SIZE * .8});
-            }
-
-            if (entry.type.IsGeneric(typeof(IHasCustomView<>))) {
-                main.AddDataGrid(((IHasCustomView<MultiStructItemCustomView>) entry.list[0]).GetCustomView());
-            } else {
-                var dataGrid = main.AddDataGrid(entry.list);
-                dataGrid.CanUserDeleteRows = entry.IsAddingAllowed;
-            }
+            throw new InvalidOperationException("GetSingleStructList can't find the requested type.");
         }
 
         public abstract void LoadFile(string targetFile);
@@ -73,12 +61,10 @@ namespace MHW_Editor.Models {
             using var memoryStream = new MemoryStream();
             using var writer       = new BinaryWriter(memoryStream, Encoding.UTF8, true);
             foreach (var entry in data) {
-                foreach (dynamic obj in entry.list) {
-                    try {
-                        obj.WriteData(writer);
-                    } catch (Exception e) {
-                        Console.Error.Write($"Save Error: {e}");
-                    }
+                try {
+                    entry.WriteData(writer);
+                } catch (Exception e) {
+                    Console.Error.Write($"Save Error: {e}");
                 }
             }
 

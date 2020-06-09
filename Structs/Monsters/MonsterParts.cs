@@ -2,7 +2,7 @@
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Structs.Monsters {
-    public partial class MonsterParts : MhwMultiStructItem<MonsterParts> {
+    public partial class MonsterParts : MhwMultiStructFile<MonsterParts> {
         public partial class Flinches {
             [SortOrder(Parts1_sortIndex)]
             [DisplayName("Parts")]

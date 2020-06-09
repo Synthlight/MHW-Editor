@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.PlData {
     public partial class PlMantleParam {
         public override string EncryptionKey => "Nb06gpPJ9WtbO6FF1ZYqm5NbLREsCzuqAY0G25ug2Ei5XkkAtVXD5Uda";
 
-        public partial class Header : MhwStructItem {
+        public partial class Header : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Header";
 
@@ -53,8 +53,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Header> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Header>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -76,7 +76,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Mantle_Params_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Mantle_Params_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Mantle Params (1)";
 
@@ -684,8 +684,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 2200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Mantle_Params_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Mantle_Params_1_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -837,7 +837,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Mantle_Params_2_ : MhwStructItem {
+        public partial class Mantle_Params_2_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 5;
             public const string GridName = "Mantle Params (2)";
 
@@ -885,8 +885,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Mantle_Params_2_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Mantle_Params_2_>();
                 var count = 5UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -910,7 +910,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Mantle_Params_3_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Mantle_Params_3_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Mantle Params (3)";
 
@@ -2120,8 +2120,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 4350;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Mantle_Params_3_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Mantle_Params_3_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2405,13 +2405,13 @@ namespace MHW_Editor.Structs.PlData {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Header_ = new MhwStructDataContainer(Header.LoadData(reader, null), typeof(Header));
+            var Header_ = new MhwStructDataContainer<Header>(Header.LoadData(reader), typeof(Header));
             data.AddLast(Header_);
-            var Mantle_Params_1__ = new MhwStructDataContainer(Mantle_Params_1_.LoadData(reader, null), typeof(Mantle_Params_1_));
+            var Mantle_Params_1__ = new MhwStructDataContainer<Mantle_Params_1_>(Mantle_Params_1_.LoadData(reader), typeof(Mantle_Params_1_));
             data.AddLast(Mantle_Params_1__);
-            var Mantle_Params_2__ = new MhwStructDataContainer(Mantle_Params_2_.LoadData(reader, null), typeof(Mantle_Params_2_));
+            var Mantle_Params_2__ = new MhwStructDataContainer<Mantle_Params_2_>(Mantle_Params_2_.LoadData(reader), typeof(Mantle_Params_2_));
             data.AddLast(Mantle_Params_2__);
-            var Mantle_Params_3__ = new MhwStructDataContainer(Mantle_Params_3_.LoadData(reader, null), typeof(Mantle_Params_3_));
+            var Mantle_Params_3__ = new MhwStructDataContainer<Mantle_Params_3_>(Mantle_Params_3_.LoadData(reader), typeof(Mantle_Params_3_));
             data.AddLast(Mantle_Params_3__);
         }
     }

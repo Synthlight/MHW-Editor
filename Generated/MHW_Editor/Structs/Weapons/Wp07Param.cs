@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Weapons {
     public partial class Wp07Param {
         public override string EncryptionKey => "j1P15gEkgVa7NdFxiqwCPitykHctY2nZPjSaElvqb0eSwcLO1cOlTqqv";
 
-        public partial class W07p_Params_1_Shared_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W07p_Params_1_Shared_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W07p Params (1, Shared)";
 
@@ -52,8 +52,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<W07p_Params_1_Shared_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W07p_Params_1_Shared_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -82,7 +82,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Unk_Arr_1_Shared_ : MhwStructItem {
+        public partial class Unk_Arr_1_Shared_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 20;
             public const string GridName = "Unk Arr 1 (Shared)";
 
@@ -158,8 +158,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Unk_Arr_1_Shared_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Unk_Arr_1_Shared_>();
                 var count = 20UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -187,7 +187,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W07p_Params_2_Shared_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W07p_Params_2_Shared_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W07p Params (2, Shared)";
 
@@ -557,8 +557,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 1350;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<W07p_Params_2_Shared_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W07p_Params_2_Shared_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -659,7 +659,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Guard_Angles_Shared_ : MhwStructItem {
+        public partial class Guard_Angles_Shared_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 2;
             public const string GridName = "Guard Angles (Shared)";
 
@@ -721,8 +721,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 250;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Guard_Angles_Shared_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Guard_Angles_Shared_>();
                 var count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -748,7 +748,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W07p_Params_3_Shared_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W07p_Params_3_Shared_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W07p Params (3, Shared)";
 
@@ -1440,8 +1440,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 2500;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<W07p_Params_3_Shared_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W07p_Params_3_Shared_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1611,7 +1611,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Unk_Arr_2_Shared_ : MhwStructItem {
+        public partial class Unk_Arr_2_Shared_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 8;
             public const string GridName = "Unk Arr 2 (Shared)";
 
@@ -1827,8 +1827,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 800;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Unk_Arr_2_Shared_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Unk_Arr_2_Shared_>();
                 var count = 8UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1876,7 +1876,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W07p_Params_4_Shared_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W07p_Params_4_Shared_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W07p Params (4, Shared)";
 
@@ -2078,8 +2078,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 750;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<W07p_Params_4_Shared_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W07p_Params_4_Shared_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2144,7 +2144,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W07p_Params_5_Shelling_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W07p_Params_5_Shelling_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W07p Params (5) - Shelling Params";
 
@@ -2472,8 +2472,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 1200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<W07p_Params_5_Shelling_Params> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W07p_Params_5_Shelling_Params>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2565,11 +2565,11 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Shell_Ammo_Params : MhwStructItem {
+        public partial class Shell_Ammo_Params : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 3;
             public const string GridName = "Shell/Ammo Params";
 
-            public partial class Shell_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Shell_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteDataInner<Shell_Ammo_Params> {
                 public const ulong FixedSizeCount = 1;
                 public const string GridName = "Shell Damage";
 
@@ -2673,8 +2673,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 400;
 
-                public static ObservableCollection<Shell_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
-                    var list = new ObservableCollection<Shell_Damage>();
+                public static ObservableMhwStructCollection<Shell_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
+                    var list = new ObservableMhwStructCollection<Shell_Damage>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -2724,7 +2724,7 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName(Shell_Damage_displayName)]
             public virtual ObservableCollection<Shell_Damage> Shell_Damage_raw { get; protected set; }
 
-            public partial class Shell_Fire_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Shell_Fire_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteDataInner<Shell_Ammo_Params> {
                 public const ulong FixedSizeCount = 1;
                 public const string GridName = "Shell Fire Damage";
 
@@ -2828,8 +2828,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 400;
 
-                public static ObservableCollection<Shell_Fire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
-                    var list = new ObservableCollection<Shell_Fire_Damage>();
+                public static ObservableMhwStructCollection<Shell_Fire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
+                    var list = new ObservableMhwStructCollection<Shell_Fire_Damage>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -2921,7 +2921,7 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            public partial class Wyvernfire_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Wyvernfire_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteDataInner<Shell_Ammo_Params> {
                 public const ulong FixedSizeCount = 1;
                 public const string GridName = "Wyvernfire Damage";
 
@@ -3025,8 +3025,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 400;
 
-                public static ObservableCollection<Wyvernfire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
-                    var list = new ObservableCollection<Wyvernfire_Damage>();
+                public static ObservableMhwStructCollection<Wyvernfire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
+                    var list = new ObservableMhwStructCollection<Wyvernfire_Damage>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -3076,7 +3076,7 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName(Wyvernfire_Damage_displayName)]
             public virtual ObservableCollection<Wyvernfire_Damage> Wyvernfire_Damage_raw { get; protected set; }
 
-            public partial class Wyvernfire_Fire_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Wyvernfire_Fire_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteDataInner<Shell_Ammo_Params> {
                 public const ulong FixedSizeCount = 1;
                 public const string GridName = "Wyvernfire Fire Damage";
 
@@ -3180,8 +3180,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 400;
 
-                public static ObservableCollection<Wyvernfire_Fire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
-                    var list = new ObservableCollection<Wyvernfire_Fire_Damage>();
+                public static ObservableMhwStructCollection<Wyvernfire_Fire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
+                    var list = new ObservableMhwStructCollection<Wyvernfire_Fire_Damage>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -3231,7 +3231,7 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName(Wyvernfire_Fire_Damage_displayName)]
             public virtual ObservableCollection<Wyvernfire_Fire_Damage> Wyvernfire_Fire_Damage_raw { get; protected set; }
 
-            public partial class Wyrmstake_Tick_Raw_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Wyrmstake_Tick_Raw_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteDataInner<Shell_Ammo_Params> {
                 public const ulong FixedSizeCount = 1;
                 public const string GridName = "Wyrmstake Tick Raw Damage";
 
@@ -3335,8 +3335,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 400;
 
-                public static ObservableCollection<Wyrmstake_Tick_Raw_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
-                    var list = new ObservableCollection<Wyrmstake_Tick_Raw_Damage>();
+                public static ObservableMhwStructCollection<Wyrmstake_Tick_Raw_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
+                    var list = new ObservableMhwStructCollection<Wyrmstake_Tick_Raw_Damage>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -3386,7 +3386,7 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName(Wyrmstake_Tick_Raw_Damage_displayName)]
             public virtual ObservableCollection<Wyrmstake_Tick_Raw_Damage> Wyrmstake_Tick_Raw_Damage_raw { get; protected set; }
 
-            public partial class Wyrmstake_Fixed_Blast_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Wyrmstake_Fixed_Blast_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteDataInner<Shell_Ammo_Params> {
                 public const ulong FixedSizeCount = 1;
                 public const string GridName = "Wyrmstake Fixed Blast Damage";
 
@@ -3490,8 +3490,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 400;
 
-                public static ObservableCollection<Wyrmstake_Fixed_Blast_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
-                    var list = new ObservableCollection<Wyrmstake_Fixed_Blast_Damage>();
+                public static ObservableMhwStructCollection<Wyrmstake_Fixed_Blast_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
+                    var list = new ObservableMhwStructCollection<Wyrmstake_Fixed_Blast_Damage>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -3541,7 +3541,7 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName(Wyrmstake_Fixed_Blast_Damage_displayName)]
             public virtual ObservableCollection<Wyrmstake_Fixed_Blast_Damage> Wyrmstake_Fixed_Blast_Damage_raw { get; protected set; }
 
-            public partial class Wyrmstake_Fire_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Wyrmstake_Fire_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteDataInner<Shell_Ammo_Params> {
                 public const ulong FixedSizeCount = 1;
                 public const string GridName = "Wyrmstake Fire Damage";
 
@@ -3645,8 +3645,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 400;
 
-                public static ObservableCollection<Wyrmstake_Fire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
-                    var list = new ObservableCollection<Wyrmstake_Fire_Damage>();
+                public static ObservableMhwStructCollection<Wyrmstake_Fire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
+                    var list = new ObservableMhwStructCollection<Wyrmstake_Fire_Damage>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -3696,7 +3696,7 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName(Wyrmstake_Fire_Damage_displayName)]
             public virtual ObservableCollection<Wyrmstake_Fire_Damage> Wyrmstake_Fire_Damage_raw { get; protected set; }
 
-            public partial class Wyrmstake_Add_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+            public partial class Wyrmstake_Add_Damage : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteDataInner<Shell_Ammo_Params> {
                 public const ulong FixedSizeCount = 1;
                 public const string GridName = "Wyrmstake Add Damage";
 
@@ -3800,8 +3800,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 400;
 
-                public static ObservableCollection<Wyrmstake_Add_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
-                    var list = new ObservableCollection<Wyrmstake_Add_Damage>();
+                public static ObservableMhwStructCollection<Wyrmstake_Add_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
+                    var list = new ObservableMhwStructCollection<Wyrmstake_Add_Damage>();
                     var count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -3853,8 +3853,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 600;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Shell_Ammo_Params> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Shell_Ammo_Params>();
                 var count = 3UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -3910,7 +3910,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W07p_Params_6_Shelling_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W07p_Params_6_Shelling_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W07p Params (6) - Shelling Params";
 
@@ -3930,8 +3930,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<W07p_Params_6_Shelling_Params> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W07p_Params_6_Shelling_Params>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -3957,7 +3957,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Shelling_Sharpness_Usage : MhwStructItem {
+        public partial class Shelling_Sharpness_Usage : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 3;
             public const string GridName = "Shelling Sharpness Usage";
 
@@ -4047,8 +4047,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 350;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Shelling_Sharpness_Usage> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Shelling_Sharpness_Usage>();
                 var count = 3UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4078,7 +4078,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W07p_Params_7_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W07p_Params_7_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W07p Params (7)";
 
@@ -4112,8 +4112,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<W07p_Params_7_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W07p_Params_7_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4142,7 +4142,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Action_Param_1 : MhwStructItem {
+        public partial class Action_Param_1 : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 10;
             public const string GridName = "Action Param 1";
 
@@ -4218,8 +4218,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Action_Param_1> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Action_Param_1>();
                 var count = 10UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4247,7 +4247,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W07p_Params_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W07p_Params_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W07p Params (8)";
 
@@ -4393,8 +4393,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 550;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<W07p_Params_8_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W07p_Params_8_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4447,7 +4447,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Action_Param_2 : MhwStructItem {
+        public partial class Action_Param_2 : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Action Param 2";
 
@@ -4523,8 +4523,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Action_Param_2> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Action_Param_2>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4552,7 +4552,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W07p_Params_9_Wyrmstake_Blast_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W07p_Params_9_Wyrmstake_Blast_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W07p Params (9) - Wyrmstake Blast Params";
 
@@ -4894,8 +4894,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 1250;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<W07p_Params_9_Wyrmstake_Blast_Params> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W07p_Params_9_Wyrmstake_Blast_Params>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4990,7 +4990,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod : MhwStructItem {
+        public partial class W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 7;
             public const string GridName = "W07p Params (10) - Wyrmstake Blast Duration per Pod";
 
@@ -5024,8 +5024,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod>();
                 var count = 7UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -5047,7 +5047,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W07p_Params_11_Wyrmstake_Blast_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W07p_Params_11_Wyrmstake_Blast_Params : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W07p Params (11) - Wyrmstake Blast Params";
 
@@ -5095,8 +5095,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<W07p_Params_11_Wyrmstake_Blast_Params> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W07p_Params_11_Wyrmstake_Blast_Params>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -5128,7 +5128,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Action_Param_3 : MhwStructItem {
+        public partial class Action_Param_3 : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Action Param 3";
 
@@ -5204,8 +5204,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Action_Param_3> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Action_Param_3>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -5233,7 +5233,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W07p_Params_12_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class W07p_Params_12_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W07p Params (12)";
 
@@ -5281,8 +5281,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<W07p_Params_12_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W07p_Params_12_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -5317,45 +5317,45 @@ namespace MHW_Editor.Structs.Weapons {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var W07p_Params_1_Shared__ = new MhwStructDataContainer(W07p_Params_1_Shared_.LoadData(reader, null), typeof(W07p_Params_1_Shared_));
+            var W07p_Params_1_Shared__ = new MhwStructDataContainer<W07p_Params_1_Shared_>(W07p_Params_1_Shared_.LoadData(reader), typeof(W07p_Params_1_Shared_));
             data.AddLast(W07p_Params_1_Shared__);
-            var Unk_Arr_1_Shared__ = new MhwStructDataContainer(Unk_Arr_1_Shared_.LoadData(reader, null), typeof(Unk_Arr_1_Shared_));
+            var Unk_Arr_1_Shared__ = new MhwStructDataContainer<Unk_Arr_1_Shared_>(Unk_Arr_1_Shared_.LoadData(reader), typeof(Unk_Arr_1_Shared_));
             data.AddLast(Unk_Arr_1_Shared__);
-            var W07p_Params_2_Shared__ = new MhwStructDataContainer(W07p_Params_2_Shared_.LoadData(reader, null), typeof(W07p_Params_2_Shared_));
+            var W07p_Params_2_Shared__ = new MhwStructDataContainer<W07p_Params_2_Shared_>(W07p_Params_2_Shared_.LoadData(reader), typeof(W07p_Params_2_Shared_));
             data.AddLast(W07p_Params_2_Shared__);
-            var Guard_Angles_Shared__ = new MhwStructDataContainer(Guard_Angles_Shared_.LoadData(reader, null), typeof(Guard_Angles_Shared_));
+            var Guard_Angles_Shared__ = new MhwStructDataContainer<Guard_Angles_Shared_>(Guard_Angles_Shared_.LoadData(reader), typeof(Guard_Angles_Shared_));
             data.AddLast(Guard_Angles_Shared__);
-            var W07p_Params_3_Shared__ = new MhwStructDataContainer(W07p_Params_3_Shared_.LoadData(reader, null), typeof(W07p_Params_3_Shared_));
+            var W07p_Params_3_Shared__ = new MhwStructDataContainer<W07p_Params_3_Shared_>(W07p_Params_3_Shared_.LoadData(reader), typeof(W07p_Params_3_Shared_));
             data.AddLast(W07p_Params_3_Shared__);
-            var Unk_Arr_2_Shared__ = new MhwStructDataContainer(Unk_Arr_2_Shared_.LoadData(reader, null), typeof(Unk_Arr_2_Shared_));
+            var Unk_Arr_2_Shared__ = new MhwStructDataContainer<Unk_Arr_2_Shared_>(Unk_Arr_2_Shared_.LoadData(reader), typeof(Unk_Arr_2_Shared_));
             data.AddLast(Unk_Arr_2_Shared__);
-            var W07p_Params_4_Shared__ = new MhwStructDataContainer(W07p_Params_4_Shared_.LoadData(reader, null), typeof(W07p_Params_4_Shared_));
+            var W07p_Params_4_Shared__ = new MhwStructDataContainer<W07p_Params_4_Shared_>(W07p_Params_4_Shared_.LoadData(reader), typeof(W07p_Params_4_Shared_));
             data.AddLast(W07p_Params_4_Shared__);
-            var W07p_Params_5_Shelling_Params_ = new MhwStructDataContainer(W07p_Params_5_Shelling_Params.LoadData(reader, null), typeof(W07p_Params_5_Shelling_Params));
+            var W07p_Params_5_Shelling_Params_ = new MhwStructDataContainer<W07p_Params_5_Shelling_Params>(W07p_Params_5_Shelling_Params.LoadData(reader), typeof(W07p_Params_5_Shelling_Params));
             data.AddLast(W07p_Params_5_Shelling_Params_);
-            var Shell_Ammo_Params_ = new MhwStructDataContainer(Shell_Ammo_Params.LoadData(reader, null), typeof(Shell_Ammo_Params));
+            var Shell_Ammo_Params_ = new MhwStructDataContainer<Shell_Ammo_Params>(Shell_Ammo_Params.LoadData(reader), typeof(Shell_Ammo_Params));
             data.AddLast(Shell_Ammo_Params_);
-            var W07p_Params_6_Shelling_Params_ = new MhwStructDataContainer(W07p_Params_6_Shelling_Params.LoadData(reader, null), typeof(W07p_Params_6_Shelling_Params));
+            var W07p_Params_6_Shelling_Params_ = new MhwStructDataContainer<W07p_Params_6_Shelling_Params>(W07p_Params_6_Shelling_Params.LoadData(reader), typeof(W07p_Params_6_Shelling_Params));
             data.AddLast(W07p_Params_6_Shelling_Params_);
-            var Shelling_Sharpness_Usage_ = new MhwStructDataContainer(Shelling_Sharpness_Usage.LoadData(reader, null), typeof(Shelling_Sharpness_Usage));
+            var Shelling_Sharpness_Usage_ = new MhwStructDataContainer<Shelling_Sharpness_Usage>(Shelling_Sharpness_Usage.LoadData(reader), typeof(Shelling_Sharpness_Usage));
             data.AddLast(Shelling_Sharpness_Usage_);
-            var W07p_Params_7__ = new MhwStructDataContainer(W07p_Params_7_.LoadData(reader, null), typeof(W07p_Params_7_));
+            var W07p_Params_7__ = new MhwStructDataContainer<W07p_Params_7_>(W07p_Params_7_.LoadData(reader), typeof(W07p_Params_7_));
             data.AddLast(W07p_Params_7__);
-            var Action_Param_1_ = new MhwStructDataContainer(Action_Param_1.LoadData(reader, null), typeof(Action_Param_1));
+            var Action_Param_1_ = new MhwStructDataContainer<Action_Param_1>(Action_Param_1.LoadData(reader), typeof(Action_Param_1));
             data.AddLast(Action_Param_1_);
-            var W07p_Params_8__ = new MhwStructDataContainer(W07p_Params_8_.LoadData(reader, null), typeof(W07p_Params_8_));
+            var W07p_Params_8__ = new MhwStructDataContainer<W07p_Params_8_>(W07p_Params_8_.LoadData(reader), typeof(W07p_Params_8_));
             data.AddLast(W07p_Params_8__);
-            var Action_Param_2_ = new MhwStructDataContainer(Action_Param_2.LoadData(reader, null), typeof(Action_Param_2));
+            var Action_Param_2_ = new MhwStructDataContainer<Action_Param_2>(Action_Param_2.LoadData(reader), typeof(Action_Param_2));
             data.AddLast(Action_Param_2_);
-            var W07p_Params_9_Wyrmstake_Blast_Params_ = new MhwStructDataContainer(W07p_Params_9_Wyrmstake_Blast_Params.LoadData(reader, null), typeof(W07p_Params_9_Wyrmstake_Blast_Params));
+            var W07p_Params_9_Wyrmstake_Blast_Params_ = new MhwStructDataContainer<W07p_Params_9_Wyrmstake_Blast_Params>(W07p_Params_9_Wyrmstake_Blast_Params.LoadData(reader), typeof(W07p_Params_9_Wyrmstake_Blast_Params));
             data.AddLast(W07p_Params_9_Wyrmstake_Blast_Params_);
-            var W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod_ = new MhwStructDataContainer(W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod.LoadData(reader, null), typeof(W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod));
+            var W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod_ = new MhwStructDataContainer<W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod>(W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod.LoadData(reader), typeof(W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod));
             data.AddLast(W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod_);
-            var W07p_Params_11_Wyrmstake_Blast_Params_ = new MhwStructDataContainer(W07p_Params_11_Wyrmstake_Blast_Params.LoadData(reader, null), typeof(W07p_Params_11_Wyrmstake_Blast_Params));
+            var W07p_Params_11_Wyrmstake_Blast_Params_ = new MhwStructDataContainer<W07p_Params_11_Wyrmstake_Blast_Params>(W07p_Params_11_Wyrmstake_Blast_Params.LoadData(reader), typeof(W07p_Params_11_Wyrmstake_Blast_Params));
             data.AddLast(W07p_Params_11_Wyrmstake_Blast_Params_);
-            var Action_Param_3_ = new MhwStructDataContainer(Action_Param_3.LoadData(reader, null), typeof(Action_Param_3));
+            var Action_Param_3_ = new MhwStructDataContainer<Action_Param_3>(Action_Param_3.LoadData(reader), typeof(Action_Param_3));
             data.AddLast(Action_Param_3_);
-            var W07p_Params_12__ = new MhwStructDataContainer(W07p_Params_12_.LoadData(reader, null), typeof(W07p_Params_12_));
+            var W07p_Params_12__ = new MhwStructDataContainer<W07p_Params_12_>(W07p_Params_12_.LoadData(reader), typeof(W07p_Params_12_));
             data.AddLast(W07p_Params_12__);
         }
     }

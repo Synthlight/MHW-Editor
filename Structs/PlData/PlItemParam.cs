@@ -4,7 +4,7 @@ using System.IO;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Structs.PlData {
-    public partial class PlItemParam : MhwMultiStructItem<PlItemParam> {
+    public partial class PlItemParam : MhwMultiStructFile<PlItemParam> {
         public partial class The_Rest {
             [SortOrder(The_rest_of_the_file_as_bytes__sortIndex - 1)]
             [DisplayName("Bytes Skipped")]

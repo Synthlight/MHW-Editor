@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Monsters {
     public partial class MonsterDamageAttributes {
         public override string EncryptionKey => "Fqkpg1xx1cMlvg3AtKOCLxFgVFBwHkCbjizBRV49hWmEe5lOAaNOTm7m";
 
-        public partial class Monster_Damage_Attributes_1_ : MhwStructItem {
+        public partial class Monster_Damage_Attributes_1_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Damage Attributes (1)";
 
@@ -90,8 +90,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 250;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Damage_Attributes_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_1_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -117,7 +117,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Poison : MhwStructItem {
+        public partial class Status_Buildup_Poison : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Status Buildup: Poison";
 
@@ -235,8 +235,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Poison> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Poison>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -270,7 +270,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Monster_Damage_Attributes_2_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Monster_Damage_Attributes_2_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Damage Attributes (2)";
 
@@ -304,8 +304,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Damage_Attributes_2_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_2_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -334,7 +334,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Sleep_Paralysis_Stun_Exhaustion : MhwStructItem {
+        public partial class Status_Buildup_Sleep_Paralysis_Stun_Exhaustion : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 4;
             public const string GridName = "Status Buildup: Sleep/Paralysis/Stun/Exhaustion";
 
@@ -452,8 +452,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Sleep_Paralysis_Stun_Exhaustion> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Sleep_Paralysis_Stun_Exhaustion>();
                 var count = 4UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -487,7 +487,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Monster_Damage_Attributes_3_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Monster_Damage_Attributes_3_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Damage Attributes (3)";
 
@@ -521,8 +521,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Damage_Attributes_3_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_3_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -551,7 +551,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Mount_Blastblight : MhwStructItem {
+        public partial class Status_Buildup_Mount_Blastblight : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 2;
             public const string GridName = "Status Buildup: Mount/Blastblight";
 
@@ -669,8 +669,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Mount_Blastblight> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Mount_Blastblight>();
                 var count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -704,7 +704,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Monster_Damage_Attributes_4_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Monster_Damage_Attributes_4_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Damage Attributes (4)";
 
@@ -724,8 +724,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Damage_Attributes_4_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_4_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -751,7 +751,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Capture : MhwStructItem {
+        public partial class Status_Buildup_Capture : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Status Buildup: Capture";
 
@@ -869,8 +869,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Capture> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Capture>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -904,7 +904,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Monster_Damage_Attributes_5_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Monster_Damage_Attributes_5_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Damage Attributes (5)";
 
@@ -938,8 +938,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Damage_Attributes_5_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_5_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -968,7 +968,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Dizziness_LR_HR : MhwStructItem {
+        public partial class Status_Buildup_Dizziness_LR_HR : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Status Buildup: Dizziness LR/HR";
 
@@ -1086,8 +1086,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Dizziness_LR_HR> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Dizziness_LR_HR>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1121,7 +1121,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Monster_Damage_Attributes_6_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Monster_Damage_Attributes_6_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Damage Attributes (6)";
 
@@ -1141,8 +1141,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Damage_Attributes_6_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_6_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1168,7 +1168,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Dizziness_MR : MhwStructItem {
+        public partial class Status_Buildup_Dizziness_MR : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Status Buildup: Dizziness MR";
 
@@ -1286,8 +1286,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Dizziness_MR> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Dizziness_MR>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1321,7 +1321,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Monster_Damage_Attributes_7_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Monster_Damage_Attributes_7_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Damage Attributes (7)";
 
@@ -1439,8 +1439,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Damage_Attributes_7_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_7_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1487,7 +1487,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Mount_Knock_Down : MhwStructItem {
+        public partial class Status_Buildup_Mount_Knock_Down : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Status Buildup: Mount Knock Down";
 
@@ -1605,8 +1605,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Mount_Knock_Down> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Mount_Knock_Down>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1640,7 +1640,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Monster_Damage_Attributes_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Monster_Damage_Attributes_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Damage Attributes (8)";
 
@@ -1660,8 +1660,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Damage_Attributes_8_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_8_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1687,7 +1687,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Dung : MhwStructItem {
+        public partial class Status_Buildup_Dung : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Status Buildup: Dung";
 
@@ -1805,8 +1805,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Dung> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Dung>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1840,7 +1840,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Monster_Damage_Attributes_9_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Monster_Damage_Attributes_9_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Damage Attributes (9)";
 
@@ -1874,8 +1874,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Damage_Attributes_9_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_9_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1904,7 +1904,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk : MhwStructItem {
+        public partial class Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 4;
             public const string GridName = "Status Buildup: Shock Trap/Pitfall Trap/Ivy Trap/Unk";
 
@@ -2022,8 +2022,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk>();
                 var count = 4UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2057,7 +2057,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Monster_Damage_Attributes_10_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Monster_Damage_Attributes_10_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Damage Attributes (10)";
 
@@ -2091,8 +2091,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 150;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Damage_Attributes_10_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_10_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2121,7 +2121,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Dragonseal : MhwStructItem {
+        public partial class Status_Buildup_Dragonseal : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Status Buildup: Dragonseal";
 
@@ -2239,8 +2239,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Dragonseal> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Dragonseal>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2274,7 +2274,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Monster_Damage_Attributes_11_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Monster_Damage_Attributes_11_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Damage Attributes (11)";
 
@@ -2294,8 +2294,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Damage_Attributes_11_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_11_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2321,7 +2321,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Unk : MhwStructItem {
+        public partial class Status_Buildup_Unk : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 2;
             public const string GridName = "Status Buildup: Unk";
 
@@ -2439,8 +2439,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Unk> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Unk>();
                 var count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2474,7 +2474,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Unk_Array : MhwStructItem {
+        public partial class Unk_Array : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 6;
             public const string GridName = "Unk Array";
 
@@ -2522,8 +2522,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Unk_Array> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Unk_Array>();
                 var count = 6UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2547,7 +2547,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Concussion : MhwStructItem {
+        public partial class Status_Buildup_Concussion : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Status Buildup: Concussion";
 
@@ -2665,8 +2665,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Concussion> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Concussion>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2700,7 +2700,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Rage_Build_Up : MhwStructItem {
+        public partial class Rage_Build_Up : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 2;
             public const string GridName = "Rage Build Up";
 
@@ -2776,8 +2776,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Rage_Build_Up> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Rage_Build_Up>();
                 var count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2805,7 +2805,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Status_Buildup_Clagger : MhwStructItem {
+        public partial class Status_Buildup_Clagger : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Status Buildup: Clagger";
 
@@ -2923,8 +2923,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Status_Buildup_Clagger> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Status_Buildup_Clagger>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2961,57 +2961,57 @@ namespace MHW_Editor.Structs.Monsters {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Monster_Damage_Attributes_1__ = new MhwStructDataContainer(Monster_Damage_Attributes_1_.LoadData(reader, null), typeof(Monster_Damage_Attributes_1_));
+            var Monster_Damage_Attributes_1__ = new MhwStructDataContainer<Monster_Damage_Attributes_1_>(Monster_Damage_Attributes_1_.LoadData(reader), typeof(Monster_Damage_Attributes_1_));
             data.AddLast(Monster_Damage_Attributes_1__);
-            var Status_Buildup_Poison_ = new MhwStructDataContainer(Status_Buildup_Poison.LoadData(reader, null), typeof(Status_Buildup_Poison));
+            var Status_Buildup_Poison_ = new MhwStructDataContainer<Status_Buildup_Poison>(Status_Buildup_Poison.LoadData(reader), typeof(Status_Buildup_Poison));
             data.AddLast(Status_Buildup_Poison_);
-            var Monster_Damage_Attributes_2__ = new MhwStructDataContainer(Monster_Damage_Attributes_2_.LoadData(reader, null), typeof(Monster_Damage_Attributes_2_));
+            var Monster_Damage_Attributes_2__ = new MhwStructDataContainer<Monster_Damage_Attributes_2_>(Monster_Damage_Attributes_2_.LoadData(reader), typeof(Monster_Damage_Attributes_2_));
             data.AddLast(Monster_Damage_Attributes_2__);
-            var Status_Buildup_Sleep_Paralysis_Stun_Exhaustion_ = new MhwStructDataContainer(Status_Buildup_Sleep_Paralysis_Stun_Exhaustion.LoadData(reader, null), typeof(Status_Buildup_Sleep_Paralysis_Stun_Exhaustion));
+            var Status_Buildup_Sleep_Paralysis_Stun_Exhaustion_ = new MhwStructDataContainer<Status_Buildup_Sleep_Paralysis_Stun_Exhaustion>(Status_Buildup_Sleep_Paralysis_Stun_Exhaustion.LoadData(reader), typeof(Status_Buildup_Sleep_Paralysis_Stun_Exhaustion));
             data.AddLast(Status_Buildup_Sleep_Paralysis_Stun_Exhaustion_);
-            var Monster_Damage_Attributes_3__ = new MhwStructDataContainer(Monster_Damage_Attributes_3_.LoadData(reader, null), typeof(Monster_Damage_Attributes_3_));
+            var Monster_Damage_Attributes_3__ = new MhwStructDataContainer<Monster_Damage_Attributes_3_>(Monster_Damage_Attributes_3_.LoadData(reader), typeof(Monster_Damage_Attributes_3_));
             data.AddLast(Monster_Damage_Attributes_3__);
-            var Status_Buildup_Mount_Blastblight_ = new MhwStructDataContainer(Status_Buildup_Mount_Blastblight.LoadData(reader, null), typeof(Status_Buildup_Mount_Blastblight));
+            var Status_Buildup_Mount_Blastblight_ = new MhwStructDataContainer<Status_Buildup_Mount_Blastblight>(Status_Buildup_Mount_Blastblight.LoadData(reader), typeof(Status_Buildup_Mount_Blastblight));
             data.AddLast(Status_Buildup_Mount_Blastblight_);
-            var Monster_Damage_Attributes_4__ = new MhwStructDataContainer(Monster_Damage_Attributes_4_.LoadData(reader, null), typeof(Monster_Damage_Attributes_4_));
+            var Monster_Damage_Attributes_4__ = new MhwStructDataContainer<Monster_Damage_Attributes_4_>(Monster_Damage_Attributes_4_.LoadData(reader), typeof(Monster_Damage_Attributes_4_));
             data.AddLast(Monster_Damage_Attributes_4__);
-            var Status_Buildup_Capture_ = new MhwStructDataContainer(Status_Buildup_Capture.LoadData(reader, null), typeof(Status_Buildup_Capture));
+            var Status_Buildup_Capture_ = new MhwStructDataContainer<Status_Buildup_Capture>(Status_Buildup_Capture.LoadData(reader), typeof(Status_Buildup_Capture));
             data.AddLast(Status_Buildup_Capture_);
-            var Monster_Damage_Attributes_5__ = new MhwStructDataContainer(Monster_Damage_Attributes_5_.LoadData(reader, null), typeof(Monster_Damage_Attributes_5_));
+            var Monster_Damage_Attributes_5__ = new MhwStructDataContainer<Monster_Damage_Attributes_5_>(Monster_Damage_Attributes_5_.LoadData(reader), typeof(Monster_Damage_Attributes_5_));
             data.AddLast(Monster_Damage_Attributes_5__);
-            var Status_Buildup_Dizziness_LR_HR_ = new MhwStructDataContainer(Status_Buildup_Dizziness_LR_HR.LoadData(reader, null), typeof(Status_Buildup_Dizziness_LR_HR));
+            var Status_Buildup_Dizziness_LR_HR_ = new MhwStructDataContainer<Status_Buildup_Dizziness_LR_HR>(Status_Buildup_Dizziness_LR_HR.LoadData(reader), typeof(Status_Buildup_Dizziness_LR_HR));
             data.AddLast(Status_Buildup_Dizziness_LR_HR_);
-            var Monster_Damage_Attributes_6__ = new MhwStructDataContainer(Monster_Damage_Attributes_6_.LoadData(reader, null), typeof(Monster_Damage_Attributes_6_));
+            var Monster_Damage_Attributes_6__ = new MhwStructDataContainer<Monster_Damage_Attributes_6_>(Monster_Damage_Attributes_6_.LoadData(reader), typeof(Monster_Damage_Attributes_6_));
             data.AddLast(Monster_Damage_Attributes_6__);
-            var Status_Buildup_Dizziness_MR_ = new MhwStructDataContainer(Status_Buildup_Dizziness_MR.LoadData(reader, null), typeof(Status_Buildup_Dizziness_MR));
+            var Status_Buildup_Dizziness_MR_ = new MhwStructDataContainer<Status_Buildup_Dizziness_MR>(Status_Buildup_Dizziness_MR.LoadData(reader), typeof(Status_Buildup_Dizziness_MR));
             data.AddLast(Status_Buildup_Dizziness_MR_);
-            var Monster_Damage_Attributes_7__ = new MhwStructDataContainer(Monster_Damage_Attributes_7_.LoadData(reader, null), typeof(Monster_Damage_Attributes_7_));
+            var Monster_Damage_Attributes_7__ = new MhwStructDataContainer<Monster_Damage_Attributes_7_>(Monster_Damage_Attributes_7_.LoadData(reader), typeof(Monster_Damage_Attributes_7_));
             data.AddLast(Monster_Damage_Attributes_7__);
-            var Status_Buildup_Mount_Knock_Down_ = new MhwStructDataContainer(Status_Buildup_Mount_Knock_Down.LoadData(reader, null), typeof(Status_Buildup_Mount_Knock_Down));
+            var Status_Buildup_Mount_Knock_Down_ = new MhwStructDataContainer<Status_Buildup_Mount_Knock_Down>(Status_Buildup_Mount_Knock_Down.LoadData(reader), typeof(Status_Buildup_Mount_Knock_Down));
             data.AddLast(Status_Buildup_Mount_Knock_Down_);
-            var Monster_Damage_Attributes_8__ = new MhwStructDataContainer(Monster_Damage_Attributes_8_.LoadData(reader, null), typeof(Monster_Damage_Attributes_8_));
+            var Monster_Damage_Attributes_8__ = new MhwStructDataContainer<Monster_Damage_Attributes_8_>(Monster_Damage_Attributes_8_.LoadData(reader), typeof(Monster_Damage_Attributes_8_));
             data.AddLast(Monster_Damage_Attributes_8__);
-            var Status_Buildup_Dung_ = new MhwStructDataContainer(Status_Buildup_Dung.LoadData(reader, null), typeof(Status_Buildup_Dung));
+            var Status_Buildup_Dung_ = new MhwStructDataContainer<Status_Buildup_Dung>(Status_Buildup_Dung.LoadData(reader), typeof(Status_Buildup_Dung));
             data.AddLast(Status_Buildup_Dung_);
-            var Monster_Damage_Attributes_9__ = new MhwStructDataContainer(Monster_Damage_Attributes_9_.LoadData(reader, null), typeof(Monster_Damage_Attributes_9_));
+            var Monster_Damage_Attributes_9__ = new MhwStructDataContainer<Monster_Damage_Attributes_9_>(Monster_Damage_Attributes_9_.LoadData(reader), typeof(Monster_Damage_Attributes_9_));
             data.AddLast(Monster_Damage_Attributes_9__);
-            var Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk_ = new MhwStructDataContainer(Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk.LoadData(reader, null), typeof(Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk));
+            var Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk_ = new MhwStructDataContainer<Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk>(Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk.LoadData(reader), typeof(Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk));
             data.AddLast(Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk_);
-            var Monster_Damage_Attributes_10__ = new MhwStructDataContainer(Monster_Damage_Attributes_10_.LoadData(reader, null), typeof(Monster_Damage_Attributes_10_));
+            var Monster_Damage_Attributes_10__ = new MhwStructDataContainer<Monster_Damage_Attributes_10_>(Monster_Damage_Attributes_10_.LoadData(reader), typeof(Monster_Damage_Attributes_10_));
             data.AddLast(Monster_Damage_Attributes_10__);
-            var Status_Buildup_Dragonseal_ = new MhwStructDataContainer(Status_Buildup_Dragonseal.LoadData(reader, null), typeof(Status_Buildup_Dragonseal));
+            var Status_Buildup_Dragonseal_ = new MhwStructDataContainer<Status_Buildup_Dragonseal>(Status_Buildup_Dragonseal.LoadData(reader), typeof(Status_Buildup_Dragonseal));
             data.AddLast(Status_Buildup_Dragonseal_);
-            var Monster_Damage_Attributes_11__ = new MhwStructDataContainer(Monster_Damage_Attributes_11_.LoadData(reader, null), typeof(Monster_Damage_Attributes_11_));
+            var Monster_Damage_Attributes_11__ = new MhwStructDataContainer<Monster_Damage_Attributes_11_>(Monster_Damage_Attributes_11_.LoadData(reader), typeof(Monster_Damage_Attributes_11_));
             data.AddLast(Monster_Damage_Attributes_11__);
-            var Status_Buildup_Unk_ = new MhwStructDataContainer(Status_Buildup_Unk.LoadData(reader, null), typeof(Status_Buildup_Unk));
+            var Status_Buildup_Unk_ = new MhwStructDataContainer<Status_Buildup_Unk>(Status_Buildup_Unk.LoadData(reader), typeof(Status_Buildup_Unk));
             data.AddLast(Status_Buildup_Unk_);
-            var Unk_Array_ = new MhwStructDataContainer(Unk_Array.LoadData(reader, null), typeof(Unk_Array));
+            var Unk_Array_ = new MhwStructDataContainer<Unk_Array>(Unk_Array.LoadData(reader), typeof(Unk_Array));
             data.AddLast(Unk_Array_);
-            var Status_Buildup_Concussion_ = new MhwStructDataContainer(Status_Buildup_Concussion.LoadData(reader, null), typeof(Status_Buildup_Concussion));
+            var Status_Buildup_Concussion_ = new MhwStructDataContainer<Status_Buildup_Concussion>(Status_Buildup_Concussion.LoadData(reader), typeof(Status_Buildup_Concussion));
             data.AddLast(Status_Buildup_Concussion_);
-            var Rage_Build_Up_ = new MhwStructDataContainer(Rage_Build_Up.LoadData(reader, null), typeof(Rage_Build_Up));
+            var Rage_Build_Up_ = new MhwStructDataContainer<Rage_Build_Up>(Rage_Build_Up.LoadData(reader), typeof(Rage_Build_Up));
             data.AddLast(Rage_Build_Up_);
-            var Status_Buildup_Clagger_ = new MhwStructDataContainer(Status_Buildup_Clagger.LoadData(reader, null), typeof(Status_Buildup_Clagger));
+            var Status_Buildup_Clagger_ = new MhwStructDataContainer<Status_Buildup_Clagger>(Status_Buildup_Clagger.LoadData(reader), typeof(Status_Buildup_Clagger));
             data.AddLast(Status_Buildup_Clagger_);
         }
     }

@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Monsters {
     public partial class MonsterEnrage {
         public override string EncryptionKey => null;
 
-        public partial class Monster_Rage : MhwStructItem {
+        public partial class Monster_Rage : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Rage";
 
@@ -90,8 +90,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 250;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Monster_Rage> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Monster_Rage>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -117,7 +117,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Rage_Stats : MhwStructItem {
+        public partial class Rage_Stats : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 2;
             public const string GridName = "Rage Stats";
 
@@ -347,8 +347,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public const int lastSortIndex = 850;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Rage_Stats> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Rage_Stats>();
                 var count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -401,9 +401,9 @@ namespace MHW_Editor.Structs.Monsters {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Monster_Rage_ = new MhwStructDataContainer(Monster_Rage.LoadData(reader, null), typeof(Monster_Rage));
+            var Monster_Rage_ = new MhwStructDataContainer<Monster_Rage>(Monster_Rage.LoadData(reader), typeof(Monster_Rage));
             data.AddLast(Monster_Rage_);
-            var Rage_Stats_ = new MhwStructDataContainer(Rage_Stats.LoadData(reader, null), typeof(Rage_Stats));
+            var Rage_Stats_ = new MhwStructDataContainer<Rage_Stats>(Rage_Stats.LoadData(reader), typeof(Rage_Stats));
             data.AddLast(Rage_Stats_);
         }
     }

@@ -1,7 +1,7 @@
 ﻿using MHW_Editor.Models;
 
 namespace MHW_Editor.Structs.PlData {
-    public partial class PlMantleParam : MhwMultiStructItem<PlMantleParam> {
+    public partial class PlMantleParam : MhwMultiStructFile<PlMantleParam> {
         public partial class Mantle_Params_2_ {
             public string Name {
                 get {

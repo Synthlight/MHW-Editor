@@ -4,7 +4,7 @@ using System.IO;
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Structs.PlData {
-    public partial class PlPlayerParam : MhwMultiStructItem<PlPlayerParam> {
+    public partial class PlPlayerParam : MhwMultiStructFile<PlPlayerParam> {
         public partial class Player_Params_5_Dodge_IFrames {
             public string Name {
                 get {

@@ -10,7 +10,7 @@ namespace MHW_Generator_Data {
             // ReSharper disable once StringLiteralTypo
             const string targetFile = @"V:\MHW\IB\chunk_combined\common\equip\armor.am_dat";
 
-            return Armor.LoadData(targetFile).GetIterableStructList();
+            return Armor.LoadData(targetFile).GetSingleStructList();
         }
 
         public static LangMap GetArmorByFileIndex() {

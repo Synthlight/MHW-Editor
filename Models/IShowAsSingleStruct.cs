@@ -1,9 +1,11 @@
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+using System;
 
 namespace MHW_Editor.Models {
-    public interface IShowAsSingleStruct<out T> where T : IMhwStructItem {
-        ObservableCollection<object> GetStructList();
-        IEnumerable<T>               GetIterableStructList();
+    public interface IShowAsSingleStruct {
+        public Type GetSingleStructType();
+    }
+
+    public interface IShowAsSingleStruct<T> : IShowAsSingleStruct where T : IMhwStructItem {
+        public ObservableMhwStructCollection<T> GetSingleStructList();
     }
 }

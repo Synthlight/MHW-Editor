@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Misc {
     public partial class MotionBlendData {
         public override string EncryptionKey => null;
 
-        public partial class Motion_Blend_Data_1_ : MhwStructItem {
+        public partial class Motion_Blend_Data_1_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Motion Blend Data (1)";
 
@@ -68,8 +68,8 @@ namespace MHW_Editor.Structs.Misc {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Motion_Blend_Data_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Motion_Blend_Data_1_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -93,7 +93,7 @@ namespace MHW_Editor.Structs.Misc {
             }
         }
 
-        public partial class Default : MhwStructItem {
+        public partial class Default : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Default";
             public const bool IsAddingAllowed = true;
@@ -176,7 +176,7 @@ namespace MHW_Editor.Structs.Misc {
                 }
             }
 
-            public partial class Unk_Array : MhwStructItem {
+            public partial class Unk_Array : MhwStructItem, IWriteDataInner<Default> {
                 public const ulong FixedSizeCount = 0;
                 public const string GridName = "Unk Array";
                 public const bool IsAddingAllowed = true;
@@ -314,8 +314,8 @@ namespace MHW_Editor.Structs.Misc {
 
                 public const int lastSortIndex = 500;
 
-                public static ObservableCollection<Unk_Array> LoadData(BinaryReader reader, Default parent) {
-                    var list = new ObservableCollection<Unk_Array>();
+                public static ObservableMhwStructCollection<Unk_Array> LoadData(BinaryReader reader, Default parent) {
+                    var list = new ObservableMhwStructCollection<Unk_Array>();
                     var count = (ulong) parent.Num_of_Values;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -374,8 +374,8 @@ namespace MHW_Editor.Structs.Misc {
 
             public const int lastSortIndex = 400;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Default> LoadData(BinaryReader reader, ObservableMhwStructCollection<Motion_Blend_Data_1_> lastStruct) {
+                var list = new ObservableMhwStructCollection<Default>();
                 var countTarget = (Motion_Blend_Data_1_) lastStruct.Last();
                 var count = (ulong) countTarget.Entry_Count;
                 for (ulong i = 0; i < count; i++) {
@@ -411,7 +411,7 @@ namespace MHW_Editor.Structs.Misc {
             }
         }
 
-        public partial class Motion_Blend_Data_2_ : MhwStructItem {
+        public partial class Motion_Blend_Data_2_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Motion Blend Data (2)";
 
@@ -431,8 +431,8 @@ namespace MHW_Editor.Structs.Misc {
 
             public const int lastSortIndex = 100;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Motion_Blend_Data_2_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Motion_Blend_Data_2_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -455,12 +455,12 @@ namespace MHW_Editor.Structs.Misc {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Motion_Blend_Data_1__ = new MhwStructDataContainer(Motion_Blend_Data_1_.LoadData(reader, null), typeof(Motion_Blend_Data_1_));
+            var Motion_Blend_Data_1__ = new MhwStructDataContainer<Motion_Blend_Data_1_>(Motion_Blend_Data_1_.LoadData(reader), typeof(Motion_Blend_Data_1_));
             data.AddLast(Motion_Blend_Data_1__);
-            var Default_ = new MhwStructDataContainer(Default.LoadData(reader, Motion_Blend_Data_1__.list), typeof(Default));
+            var Default_ = new MhwStructDataContainer<Default, Motion_Blend_Data_1_>(Default.LoadData(reader, Motion_Blend_Data_1__.list), typeof(Default));
             Default_.SetCountTargetToUpdate(Motion_Blend_Data_1__, -1, "Entry_Count");
             data.AddLast(Default_);
-            var Motion_Blend_Data_2__ = new MhwStructDataContainer(Motion_Blend_Data_2_.LoadData(reader, null), typeof(Motion_Blend_Data_2_));
+            var Motion_Blend_Data_2__ = new MhwStructDataContainer<Motion_Blend_Data_2_>(Motion_Blend_Data_2_.LoadData(reader), typeof(Motion_Blend_Data_2_));
             data.AddLast(Motion_Blend_Data_2__);
         }
     }

@@ -31,9 +31,9 @@ namespace MHW_Generator_Data {
             IEnumerable<IWeapon> weapons;
 
             if (weaponClassType == typeof(Melee)) {
-                weapons = Melee.LoadData(targetFile).GetIterableStructList();
+                weapons = Melee.LoadData(targetFile).GetSingleStructList();
             } else if (weaponClassType == typeof(Ranged)) {
-                weapons = Ranged.LoadData(targetFile).GetIterableStructList();
+                weapons = Ranged.LoadData(targetFile).GetSingleStructList();
             } else {
                 throw new InvalidOperationException($"Unrecognized weapon type: {weaponClassType.Name}");
             }

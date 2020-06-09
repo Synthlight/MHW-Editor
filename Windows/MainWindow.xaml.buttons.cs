@@ -50,11 +50,9 @@ namespace MHW_Editor.Windows {
                 return;
             }
 
-            foreach (var item in main_grid.Items) {
+            foreach (var item in dataGrids[0].Items) {
                 switch (item) {
-                    case SkillDat.Entries _: {
-                        SkillDat.Entries skillDat = item;
-
+                    case SkillDat.Entries skillDat: {
                         switch (skillDat.Id) {
                             case SkillDataValueClass.Scholar:
                             case SkillDataValueClass.Scenthound:
@@ -73,9 +71,7 @@ namespace MHW_Editor.Windows {
 
                         break;
                     }
-                    case Armor.Entries _: {
-                        Armor.Entries armor = item;
-
+                    case Armor.Entries armor: {
                         switch (armor.Index) {
                             case ArmorDataValueClass.Guildwork_Head_a_plus:
                                 armor.Skill_1       = SkillDataValueClass.Effluvial_Expert;
@@ -183,18 +179,17 @@ namespace MHW_Editor.Windows {
                 return;
             }
 
-            foreach (var item in main_grid.Items) {
+            foreach (var item in dataGrids[0].Items) {
                 switch (item) {
-                    case ISlots _: {
-                        item.Slot_Count  = 3;
-                        item.Slot_1_Size = 4;
-                        item.Slot_2_Size = 4;
-                        item.Slot_3_Size = 4;
+                    case ISlots slotItem: {
+                        slotItem.Slot_Count  = 3;
+                        slotItem.Slot_1_Size = 4;
+                        slotItem.Slot_2_Size = 4;
+                        slotItem.Slot_3_Size = 4;
 
                         break;
                     }
-                    case ASkill.Entries _: {
-                        ASkill.Entries aSkill = item;
+                    case ASkill.Entries aSkill: {
                         aSkill.Deco_Count = 2;
                         aSkill.Deco_Lvl_1 = 4;
                         aSkill.Deco_Lvl_2 = 4;
@@ -210,7 +205,7 @@ namespace MHW_Editor.Windows {
 
             if (!targetFileType.Is(typeof(Armor))) return;
 
-            foreach (Armor.Entries item in main_grid.Items) {
+            foreach (Armor.Entries item in dataGrids[0].Items) {
                 if (item.Set_Skill_1_Level > 0) item.Set_Skill_1_Level = 5;
             }
         }
@@ -223,16 +218,14 @@ namespace MHW_Editor.Windows {
                 return;
             }
 
-            foreach (var item in main_grid.Items) {
+            foreach (var item in dataGrids[0].Items) {
                 switch (item) {
-                    case Gem.Entries _: {
-                        Gem.Entries gem = item;
+                    case Gem.Entries gem: {
                         gem.Skill_1_Level = 10;
                         if (gem.Skill_2_Level > 0) gem.Skill_2_Level = 10;
                         break;
                     }
-                    case Armor.Entries _: {
-                        Armor.Entries armor                              = item;
+                    case Armor.Entries armor: {
                         if (armor.Skill_1_Level > 0) armor.Skill_1_Level = 10;
                         if (armor.Skill_2_Level > 0) armor.Skill_2_Level = 10;
                         if (armor.Skill_3_Level > 0) armor.Skill_3_Level = 10;
@@ -259,75 +252,64 @@ namespace MHW_Editor.Windows {
                 return;
             }
 
-            foreach (var item in main_grid.Items) {
+            foreach (var item in dataGrids[0].Items) {
                 switch (item) {
-                    case Item.Entries _: {
-                        Item.Entries itm                     = item;
+                    case Item.Entries itm: {
                         if (itm.Buy_Price > 0) itm.Buy_Price = 1;
                         break;
                     }
-                    case Armor.Entries _: {
-                        Armor.Entries armor            = item;
+                    case Armor.Entries armor: {
                         if (armor.Cost > 0) armor.Cost = 1;
                         break;
                     }
-                    case IWeapon _: {
-                        IWeapon weapon                   = item;
+                    case IWeapon weapon: {
                         if (weapon.Cost > 0) weapon.Cost = 1;
                         break;
                     }
-                    case EqCrt.Entries _: {
-                        EqCrt.Entries eqCrt                          = item;
+                    case EqCrt.Entries eqCrt: {
                         if (eqCrt.Mat_1_Count > 0) eqCrt.Mat_1_Count = 1;
                         if (eqCrt.Mat_2_Count > 0) eqCrt.Mat_2_Count = 1;
                         if (eqCrt.Mat_3_Count > 0) eqCrt.Mat_3_Count = 1;
                         if (eqCrt.Mat_4_Count > 0) eqCrt.Mat_4_Count = 1;
                         break;
                     }
-                    case EqCus.Entries _: {
-                        EqCus.Entries eqCus                          = item;
+                    case EqCus.Entries eqCus: {
                         if (eqCus.Mat_1_Count > 0) eqCus.Mat_1_Count = 1;
                         if (eqCus.Mat_2_Count > 0) eqCus.Mat_2_Count = 1;
                         if (eqCus.Mat_3_Count > 0) eqCus.Mat_3_Count = 1;
                         if (eqCus.Mat_4_Count > 0) eqCus.Mat_4_Count = 1;
                         break;
                     }
-                    case NewLimitBreakR.Entries _: {
-                        NewLimitBreakR.Entries newLimitBreakR                          = item;
-                        if (newLimitBreakR.Mat_1_Count > 0) newLimitBreakR.Mat_1_Count = 1;
-                        if (newLimitBreakR.Mat_2_Count > 0) newLimitBreakR.Mat_2_Count = 1;
-                        if (newLimitBreakR.Mat_3_Count > 0) newLimitBreakR.Mat_3_Count = 1;
-                        if (newLimitBreakR.Mat_4_Count > 0) newLimitBreakR.Mat_4_Count = 1;
+                    case NewLimitBreakR.Entries newLimitBreakRecipe: {
+                        if (newLimitBreakRecipe.Mat_1_Count > 0) newLimitBreakRecipe.Mat_1_Count = 1;
+                        if (newLimitBreakRecipe.Mat_2_Count > 0) newLimitBreakRecipe.Mat_2_Count = 1;
+                        if (newLimitBreakRecipe.Mat_3_Count > 0) newLimitBreakRecipe.Mat_3_Count = 1;
+                        if (newLimitBreakRecipe.Mat_4_Count > 0) newLimitBreakRecipe.Mat_4_Count = 1;
                         break;
                     }
-                    case NewLimitBreak.Entries _: {
-                        NewLimitBreak.Entries newLimitBreak                                        = item;
+                    case NewLimitBreak.Entries newLimitBreak: {
                         if (newLimitBreak.Research_Cost_r10_ > 0) newLimitBreak.Research_Cost_r10_ = 1;
                         if (newLimitBreak.Research_Cost_r11_ > 0) newLimitBreak.Research_Cost_r11_ = 1;
                         if (newLimitBreak.Research_Cost_r12_ > 0) newLimitBreak.Research_Cost_r12_ = 1;
                         if (newLimitBreak.Aug_Slot_Cost > 1) newLimitBreak.Aug_Slot_Cost           = 1;
                         break;
                     }
-                    case CustomParts.Entries _: {
-                        CustomParts.Entries customParts                        = item;
+                    case CustomParts.Entries customParts: {
                         if (customParts.Craft_Cost > 0) customParts.Craft_Cost = 1;
                         break;
                     }
-                    case CustomPartsR.Entries _: {
-                        CustomPartsR.Entries customPartsR                          = item;
-                        if (customPartsR.Mat_1_Count > 0) customPartsR.Mat_1_Count = 1;
-                        if (customPartsR.Mat_2_Count > 0) customPartsR.Mat_2_Count = 1;
-                        if (customPartsR.Mat_3_Count > 0) customPartsR.Mat_3_Count = 1;
-                        if (customPartsR.Mat_4_Count > 0) customPartsR.Mat_4_Count = 1;
+                    case CustomPartsR.Entries customPartsRecipe: {
+                        if (customPartsRecipe.Mat_1_Count > 0) customPartsRecipe.Mat_1_Count = 1;
+                        if (customPartsRecipe.Mat_2_Count > 0) customPartsRecipe.Mat_2_Count = 1;
+                        if (customPartsRecipe.Mat_3_Count > 0) customPartsRecipe.Mat_3_Count = 1;
+                        if (customPartsRecipe.Mat_4_Count > 0) customPartsRecipe.Mat_4_Count = 1;
                         break;
                     }
-                    case RodInsect.Entries _: {
-                        RodInsect.Entries rodInsect                        = item;
+                    case RodInsect.Entries rodInsect: {
                         if (rodInsect.Craft_Cost > 0) rodInsect.Craft_Cost = 1;
                         break;
                     }
-                    case CustomOuterRecipe.Entries _: {
-                        CustomOuterRecipe.Entries recipe               = item;
+                    case CustomOuterRecipe.Entries recipe: {
                         if (recipe.Cost > 0) recipe.Cost               = 1;
                         if (recipe.Mat_1_Count > 0) recipe.Mat_1_Count = 1;
                         if (recipe.Mat_2_Count > 0) recipe.Mat_2_Count = 1;
@@ -347,16 +329,14 @@ namespace MHW_Editor.Windows {
                 return;
             }
 
-            foreach (var item in main_grid.Items) {
+            foreach (var item in dataGrids[0].Items) {
                 switch (item) {
-                    case OtomoWeaponDat.Entries _: {
-                        OtomoWeaponDat.Entries otomoWeapon                           = item;
-                        if (otomoWeapon.Melee_Damage > 0) otomoWeapon.Melee_Damage   = 50000;
-                        if (otomoWeapon.Ranged_Damage > 0) otomoWeapon.Ranged_Damage = 50000;
+                    case OtomoWeaponDat.Entries palicoWeapon: {
+                        if (palicoWeapon.Melee_Damage > 0) palicoWeapon.Melee_Damage   = 50000;
+                        if (palicoWeapon.Ranged_Damage > 0) palicoWeapon.Ranged_Damage = 50000;
                         break;
                     }
-                    case IWeapon _: {
-                        IWeapon weapon                       = item;
+                    case IWeapon weapon: {
                         if (weapon.Damage > 0) weapon.Damage = 50000;
                         break;
                     }
@@ -369,7 +349,7 @@ namespace MHW_Editor.Windows {
 
             if (!targetFileType.Is(typeof(BottleTable))) return;
 
-            foreach (BottleTable.Entries item in main_grid.Items) {
+            foreach (BottleTable.Entries item in dataGrids[0].Items) {
                 item.Close_Range = CoatingType.Plus;
                 item.Power       = CoatingType.Plus;
                 item.Paralysis   = CoatingType.Plus;
@@ -387,10 +367,9 @@ namespace MHW_Editor.Windows {
                 return;
             }
 
-            foreach (var item in main_grid.Items) {
+            foreach (var item in dataGrids[0].Items) {
                 switch (item) {
-                    case Sharpness.Entries _: {
-                        Sharpness.Entries sharpness = item;
+                    case Sharpness.Entries sharpness: {
                         sharpness.Red    = 1;
                         sharpness.Orange = 1;
                         sharpness.Yellow = 1;
@@ -400,8 +379,7 @@ namespace MHW_Editor.Windows {
                         sharpness.Purple = 400;
                         break;
                     }
-                    case Melee.Entries _: {
-                        Melee.Entries weapon                                     = item;
+                    case Melee.Entries weapon: {
                         if (weapon.Sharpness_Amount > 0) weapon.Sharpness_Amount = 5;
                         break;
                     }
@@ -414,7 +392,7 @@ namespace MHW_Editor.Windows {
 
             if (!targetFileType.Is(typeof(SkillDat))) return;
 
-            foreach (SkillDat.Entries item in main_grid.Items) {
+            foreach (SkillDat.Entries item in dataGrids[0].Items) {
                 item.Unlock_Skill_1 = 0;
                 item.Unlock_Skill_2 = 0;
                 item.Unlock_Skill_3 = 0;
@@ -430,7 +408,7 @@ namespace MHW_Editor.Windows {
             const int reloadSpeed  = 17;
             const int recoilAmount = 29;
 
-            foreach (ShellTable.Entries item in main_grid.Items) {
+            foreach (ShellTable.Entries item in dataGrids[0].Items) {
                 item.Normal_1_Rel_Spd  = reloadSpeed;
                 item.Normal_1_Rec_Amnt = recoilAmount;
                 item.Normal_2_Rel_Spd  = reloadSpeed;
@@ -511,7 +489,7 @@ namespace MHW_Editor.Windows {
 
             var rawList = new List<GemData>();
             foreach (var itemId in DataHelper.gemItemIds) {
-                Item.Entries item = main_grid.Items[(int) itemId];
+                var item = (Item.Entries) dataGrids[0].Items[(int) itemId];
                 rawList.Add(new GemData {index = itemId, itemName = item.Name, sortOrder = item.Sort_Order});
             }
 
@@ -529,7 +507,7 @@ namespace MHW_Editor.Windows {
             for (var i = 0; i < sortedSortIndexes.Count; i++) {
                 var          index        = sortedGemNameIndexes[i];
                 var          newSortIndex = sortedSortIndexes[i];
-                Item.Entries item         = main_grid.Items[(int) index];
+                var item         = (Item.Entries) dataGrids[0].Items[(int) index];
                 item.Sort_Order = newSortIndex;
             }
         }

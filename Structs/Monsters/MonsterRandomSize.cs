@@ -1,7 +1,7 @@
 ﻿using MHW_Editor.Models;
 
 namespace MHW_Editor.Structs.Monsters {
-    public partial class MonsterRandomSize : MhwMultiStructItem<MonsterRandomSize> {
+    public partial class MonsterRandomSize : MhwMultiStructFile<MonsterRandomSize> {
         public partial class Crown_Tables {
             public string Name {
                 get {

@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Items {
     public partial class ShopList {
         public override string EncryptionKey => null;
 
-        public partial class Shop_List : MhwStructItem {
+        public partial class Shop_List : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Shop List";
 
@@ -68,8 +68,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 200;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Shop_List> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Shop_List>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -93,7 +93,7 @@ namespace MHW_Editor.Structs.Items {
             }
         }
 
-        public partial class Entries : MhwStructItem {
+        public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
             public const bool IsAddingAllowed = true;
@@ -168,8 +168,8 @@ namespace MHW_Editor.Structs.Items {
 
             public const int lastSortIndex = 250;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Entries> LoadData(BinaryReader reader, ObservableMhwStructCollection<Shop_List> lastStruct) {
+                var list = new ObservableMhwStructCollection<Entries>();
                 var countTarget = (Shop_List) lastStruct.Last();
                 var count = (ulong) countTarget.Item_Count;
                 for (ulong i = 0; i < count; i++) {
@@ -199,9 +199,9 @@ namespace MHW_Editor.Structs.Items {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Shop_List_ = new MhwStructDataContainer(Shop_List.LoadData(reader, null), typeof(Shop_List));
+            var Shop_List_ = new MhwStructDataContainer<Shop_List>(Shop_List.LoadData(reader), typeof(Shop_List));
             data.AddLast(Shop_List_);
-            var Entries_ = new MhwStructDataContainer(Entries.LoadData(reader, Shop_List_.list), typeof(Entries));
+            var Entries_ = new MhwStructDataContainer<Entries, Shop_List>(Entries.LoadData(reader, Shop_List_.list), typeof(Entries));
             Entries_.SetCountTargetToUpdate(Shop_List_, -1, "Item_Count");
             data.AddLast(Entries_);
         }

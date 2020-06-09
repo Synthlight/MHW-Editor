@@ -17,11 +17,16 @@ namespace MHW_Template.Struct_Generation {
         }
 
         private static void GenerateInnerClass(MultiStructItemTemplateBase template, MhwMultiStructData.StructData @struct, MhwMultiStructData.StructData parent = null, uint indentation = 0) {
-            var sortIndex = SORT_INDEX_STEP;
-            var name      = @struct.SafeName;
+            var sortIndex  = SORT_INDEX_STEP;
+            var name       = @struct.SafeName;
+            var interfaces = "MhwStructItem";
+
+            if (@struct.showVertically) interfaces += ", IHasCustomView<MultiStructItemCustomView>";
+            if (parent == null) interfaces += ", IWriteData";
+            else interfaces                += $", IWriteDataInner<{parent.SafeName}>";
 
             template.WriteLine("");
-            template.WriteLine(indentation, $"        public partial class {name} : MhwStructItem{(@struct.showVertically ? ", IHasCustomView<MultiStructItemCustomView>" : "")} {{");
+            template.WriteLine(indentation, $"        public partial class {name} : {interfaces} {{");
             template.WriteLine(indentation, $"            public const ulong FixedSizeCount = {@struct.fixedSizeCount};");
             template.WriteLine(indentation, $"            public const string GridName = \"{@struct.name}\";");
 
@@ -282,24 +287,22 @@ namespace MHW_Template.Struct_Generation {
         private static void InnerLoadData(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.StructData @struct, MhwMultiStructData.StructData parent = null) {
             if (@struct.customSaveLoad) return;
 
-            var name       = @struct.SafeName;
-            var returnType = "object";
-
-            if (indentation > 0) {
-                returnType = @struct.SafeName;
-            }
+            var name = @struct.SafeName;
 
             // Individual LoadData (loop).
             template.WriteLine("");
 
             // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
             if (parent != null) {
-                template.WriteLine(indentation, $"            public static ObservableCollection<{returnType}> LoadData(BinaryReader reader, {parent.SafeName} parent) {{");
+                template.WriteLine(indentation, $"            public static ObservableMhwStructCollection<{name}> LoadData(BinaryReader reader, {parent.SafeName} parent) {{");
+            } else if (@struct.Has010Link) {
+                var targetName = @struct._010Link.@struct.SafeName;
+                template.WriteLine(indentation, $"            public static ObservableMhwStructCollection<{name}> LoadData(BinaryReader reader, ObservableMhwStructCollection<{targetName}> lastStruct) {{");
             } else {
-                template.WriteLine(indentation, $"            public static ObservableCollection<{returnType}> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {{");
+                template.WriteLine(indentation, $"            public static ObservableMhwStructCollection<{name}> LoadData(BinaryReader reader) {{");
             }
 
-            template.WriteLine(indentation, $"                var list = new ObservableCollection<{returnType}>();");
+            template.WriteLine(indentation, $"                var list = new ObservableMhwStructCollection<{name}>();");
 
             if (@struct.Has010Link) {
                 var linkStruct = @struct._010Link.@struct;
@@ -376,14 +379,19 @@ namespace MHW_Template.Struct_Generation {
             template.WriteLine("            data = new LinkedList<MhwStructDataContainer>();");
 
             foreach (var @struct in structData.structs) {
-                var name       = @struct.SafeName;
-                var targetList = "null";
+                var name        = @struct.SafeName;
+                var targetList  = "";
+                var genericType = $"<{name}";
 
                 if (@struct.Has010Link) {
-                    targetList = $"{@struct._010Link.@struct.SafeName}_.list";
+                    var targetName = @struct._010Link.@struct.SafeName;
+                    targetList  =  $", {targetName}_.list";
+                    genericType += $", {targetName}";
                 }
 
-                template.WriteLine($"            var {name}_ = new MhwStructDataContainer({name}.LoadData(reader, {targetList}), typeof({name}));");
+                genericType += ">";
+
+                template.WriteLine($"            var {name}_ = new MhwStructDataContainer{genericType}({name}.LoadData(reader{targetList}), typeof({name}));");
 
                 if (@struct.Has010Link) {
                     template.WriteLine($"            {name}_.SetCountTargetToUpdate({@struct._010Link.@struct.SafeName}_, -1, \"{@struct._010Link.entry.SafeName}\");");

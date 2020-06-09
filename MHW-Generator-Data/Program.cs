@@ -71,7 +71,7 @@ namespace MHW_Generator_Data {
 
                 if (buttons.Any()) {
                     typesWithButtons.Add(type.Name);
-                    if (type.DeclaringType?.IsGeneric(typeof(MhwMultiStructItem<>)) ?? false) {
+                    if (type.DeclaringType?.IsGeneric(typeof(MhwMultiStructFile<>)) ?? false) {
                         typesWithButtons.Add(type.DeclaringType.Name);
                     }
 

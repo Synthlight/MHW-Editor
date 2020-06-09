@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.PlData {
     public partial class ScoutflyData {
         public override string EncryptionKey => null;
 
-        public partial class Scoutfly_Params_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Scoutfly_Params_1_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Scoutfly Params (1)";
 
@@ -795,8 +795,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 2800;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Scoutfly_Params_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Scoutfly_Params_1_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -984,7 +984,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Unknown_Arr_1_ : MhwStructItem {
+        public partial class Unknown_Arr_1_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 12;
             public const string GridName = "Unknown Arr (1)";
 
@@ -1046,8 +1046,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 250;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Unknown_Arr_1_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Unknown_Arr_1_>();
                 var count = 12UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1073,7 +1073,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Scoutfly_Params_2_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Scoutfly_Params_2_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Scoutfly Params (2)";
 
@@ -1807,8 +1807,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 2650;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Scoutfly_Params_2_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Scoutfly_Params_2_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1987,7 +1987,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Unknown_Arr_2_ : MhwStructItem {
+        public partial class Unknown_Arr_2_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 10;
             public const string GridName = "Unknown Arr (2)";
 
@@ -2273,8 +2273,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 1050;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Unknown_Arr_2_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Unknown_Arr_2_>();
                 var count = 10UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2332,7 +2332,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Scoutfly_Params_3_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView> {
+        public partial class Scoutfly_Params_3_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Scoutfly Params (3)";
 
@@ -4130,8 +4130,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 6450;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Scoutfly_Params_3_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Scoutfly_Params_3_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4541,15 +4541,15 @@ namespace MHW_Editor.Structs.PlData {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Scoutfly_Params_1__ = new MhwStructDataContainer(Scoutfly_Params_1_.LoadData(reader, null), typeof(Scoutfly_Params_1_));
+            var Scoutfly_Params_1__ = new MhwStructDataContainer<Scoutfly_Params_1_>(Scoutfly_Params_1_.LoadData(reader), typeof(Scoutfly_Params_1_));
             data.AddLast(Scoutfly_Params_1__);
-            var Unknown_Arr_1__ = new MhwStructDataContainer(Unknown_Arr_1_.LoadData(reader, null), typeof(Unknown_Arr_1_));
+            var Unknown_Arr_1__ = new MhwStructDataContainer<Unknown_Arr_1_>(Unknown_Arr_1_.LoadData(reader), typeof(Unknown_Arr_1_));
             data.AddLast(Unknown_Arr_1__);
-            var Scoutfly_Params_2__ = new MhwStructDataContainer(Scoutfly_Params_2_.LoadData(reader, null), typeof(Scoutfly_Params_2_));
+            var Scoutfly_Params_2__ = new MhwStructDataContainer<Scoutfly_Params_2_>(Scoutfly_Params_2_.LoadData(reader), typeof(Scoutfly_Params_2_));
             data.AddLast(Scoutfly_Params_2__);
-            var Unknown_Arr_2__ = new MhwStructDataContainer(Unknown_Arr_2_.LoadData(reader, null), typeof(Unknown_Arr_2_));
+            var Unknown_Arr_2__ = new MhwStructDataContainer<Unknown_Arr_2_>(Unknown_Arr_2_.LoadData(reader), typeof(Unknown_Arr_2_));
             data.AddLast(Unknown_Arr_2__);
-            var Scoutfly_Params_3__ = new MhwStructDataContainer(Scoutfly_Params_3_.LoadData(reader, null), typeof(Scoutfly_Params_3_));
+            var Scoutfly_Params_3__ = new MhwStructDataContainer<Scoutfly_Params_3_>(Scoutfly_Params_3_.LoadData(reader), typeof(Scoutfly_Params_3_));
             data.AddLast(Scoutfly_Params_3__);
         }
     }

@@ -1,35 +1,121 @@
 ﻿using System;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows;
+using System.Windows.Controls;
 using JetBrains.Annotations;
+using MHW_Editor.Windows;
 
 namespace MHW_Editor.Models {
-    public class MhwStructDataContainer {
-        public readonly     ObservableCollection<object> list;
-        public readonly     Type                         type;
-        [CanBeNull] private MhwStructDataContainer       target;
-        private             int                          targetIndex;
-        [CanBeNull] private string                       fieldName;
+    public abstract class MhwStructDataContainer {
+        public readonly Type type;
 
-        public MhwStructDataContainer(ObservableCollection<object> list, Type type) {
-            this.list = list;
+        protected MhwStructDataContainer(Type type) {
             this.type = type;
+        }
 
-            list.CollectionChanged += List_CollectionChanged;
+        public abstract void SetupView(Grid grid, MainWindow main);
+        public abstract void PrepSave();
+        public abstract void WriteData(BinaryWriter writer);
+
+        public abstract string GridName        { get; }
+        public abstract bool   IsHidden        { get; }
+        public abstract bool   IsAddingAllowed { get; }
+        public abstract string Description     { get; }
+
+        public abstract IEnumerable<object> GetGenericEnumerable();
+        public abstract IEnumerable<E>      GetEnumerable<E>();
+        public abstract object              First();
+        public abstract void                Add_Click(object sender, RoutedEventArgs e);
+    }
+
+    public class MhwStructDataContainer<T> : MhwStructDataContainer where T : IMhwStructItem, IWriteData {
+        public readonly ObservableMhwStructCollection<T> list;
+
+        public MhwStructDataContainer(ObservableMhwStructCollection<T> list, Type type) : base(type) {
+            this.list = list;
+        }
+
+        public override void SetupView(Grid grid, MainWindow main) {
+            if (IsHidden) return;
+
+            if (IsAddingAllowed) {
+                var panel = new StackPanel {Orientation = Orientation.Horizontal};
+                panel.Children.Add(new Label {Content   = GridName, FontSize             = MainWindow.FONT_SIZE, HorizontalAlignment    = HorizontalAlignment.Left});
+                var button = new Button {Content        = "Add Row", HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Center};
+                button.Click += Add_Click;
+                panel.Children.Add(button);
+                grid.AddControl(panel);
+            } else {
+                grid.AddControl(new Label {Content = GridName, FontSize = MainWindow.FONT_SIZE});
+            }
+
+            var desc = Description;
+            if (desc != null) {
+                grid.AddControl(new Label {Content = desc, FontSize = MainWindow.FONT_SIZE * .8});
+            }
+
+            if (type.IsGeneric(typeof(IHasCustomView<>))) {
+                main.AddDataGrid(((IHasCustomView<MultiStructItemCustomView>) list[0]).GetCustomView());
+            } else {
+                var dataGrid = main.AddDataGrid(list);
+                dataGrid.CanUserDeleteRows = IsAddingAllowed;
+            }
+        }
+
+        public override void PrepSave() {
+        }
+
+        public override void WriteData(BinaryWriter writer) {
+            foreach (var obj in list) {
+                obj.WriteData(writer);
+            }
+        }
+
+        public override string GridName        => (string) (typeof(T).GetField(nameof(GridName), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
+        public override bool   IsHidden        => (bool) (typeof(T).GetField(nameof(IsHidden), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
+        public override bool   IsAddingAllowed => (bool) (typeof(T).GetField(nameof(IsAddingAllowed), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
+        public override string Description     => (string) typeof(T).GetField(nameof(Description), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null);
+
+        public override IEnumerable<object> GetGenericEnumerable() {
+            return list.Cast<object>();
+        }
+
+        public override IEnumerable<E> GetEnumerable<E>() {
+            return list.Cast<E>();
+        }
+
+        public override object First() {
+            return list[0];
+        }
+
+        public override void Add_Click(object sender, RoutedEventArgs e) {
+            var instance = (T) Activator.CreateInstance(typeof(T));
+            instance.Index = (ulong) list.Count;
+            list.Add(instance);
+        }
+    }
+
+    public class MhwStructDataContainer<T, C> : MhwStructDataContainer<T> where T : IMhwStructItem, IWriteData
+                                                                          where C : IMhwStructItem, IWriteData {
+        [CanBeNull] private MhwStructDataContainer<C> target;
+        private             int                       targetIndex;
+        [CanBeNull] private string                    fieldName;
+
+        public MhwStructDataContainer(ObservableMhwStructCollection<T> list, Type type) : base(list, type) {
         }
 
         [SuppressMessage("ReSharper", "ParameterHidesMember")]
-        public void SetCountTargetToUpdate(MhwStructDataContainer target, int targetIndex, string fieldName) {
+        public void SetCountTargetToUpdate(MhwStructDataContainer<C> target, int targetIndex, string fieldName) {
             this.target      = target;
             this.targetIndex = targetIndex;
             this.fieldName   = fieldName;
         }
 
-        public void PrepSave() {
+        public override void PrepSave() {
             if (target == null || fieldName == null) return;
 
             var item = targetIndex > -1 ? target.list[targetIndex] : target.list.Last();
@@ -38,29 +124,6 @@ namespace MHW_Editor.Models {
             if (setter == null) throw new NotSupportedException($"Setter not found.\r\n\r\n{target.GetType().Name} :: {fieldName}");
 
             setter.Invoke(item, new object[] {(uint) list.Count});
-        }
-
-        private void List_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e) {
-            ResetIndexes();
-        }
-
-        public string GridName        => (string) (type.GetField(nameof(GridName), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
-        public bool   IsHidden        => (bool) (type.GetField(nameof(IsHidden), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
-        public bool   IsAddingAllowed => (bool) (type.GetField(nameof(IsAddingAllowed), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null) ?? false);
-        public string Description     => (string) type.GetField(nameof(Description), BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)?.GetValue(null);
-
-        public void Add_Click(object sender, RoutedEventArgs e) {
-            var instance = (MhwStructItem) Activator.CreateInstance(type);
-            instance.Index = (ulong) list.Count;
-            list.Add(instance);
-        }
-
-        private void ResetIndexes() {
-            for (var i = 0; i < list.Count; i++) {
-                var item = (MhwStructItem) list[i];
-                item.Index = (ulong) i;
-                item.OnPropertyChanged(nameof(MhwStructItem.Index));
-            }
         }
     }
 }

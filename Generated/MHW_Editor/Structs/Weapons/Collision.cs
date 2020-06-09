@@ -17,7 +17,7 @@ namespace MHW_Editor.Structs.Weapons {
     public partial class Collision {
         public override string EncryptionKey => null;
 
-        public partial class Collisions : MhwStructItem {
+        public partial class Collisions : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Collisions";
 
@@ -113,8 +113,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 350;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Collisions> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Collisions>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -144,7 +144,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Names : MhwStructItem {
+        public partial class Names : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Names";
 
@@ -250,8 +250,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 400;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Names> LoadData(BinaryReader reader, ObservableMhwStructCollection<Collisions> lastStruct) {
+                var list = new ObservableMhwStructCollection<Names>();
                 var countTarget = (Collisions) lastStruct.Last();
                 var count = (ulong) countTarget.Name_Count;
                 for (ulong i = 0; i < count; i++) {
@@ -284,7 +284,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class CLND : MhwStructItem {
+        public partial class CLND : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "CLND";
 
@@ -377,7 +377,7 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            public partial class CLGMs : MhwStructItem {
+            public partial class CLGMs : MhwStructItem, IWriteDataInner<CLND> {
                 public const ulong FixedSizeCount = 0;
                 public const string GridName = "CLGMs";
 
@@ -441,7 +441,7 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
-                public partial class CLGM_Inner : MhwStructItem {
+                public partial class CLGM_Inner : MhwStructItem, IWriteDataInner<CLGMs> {
                     public const ulong FixedSizeCount = 0;
                     public const string GridName = "CLGM Inner";
 
@@ -755,8 +755,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                     public const int lastSortIndex = 1150;
 
-                    public static ObservableCollection<CLGM_Inner> LoadData(BinaryReader reader, CLGMs parent) {
-                        var list = new ObservableCollection<CLGM_Inner>();
+                    public static ObservableMhwStructCollection<CLGM_Inner> LoadData(BinaryReader reader, CLGMs parent) {
+                        var list = new ObservableMhwStructCollection<CLGM_Inner>();
                         var count = (ulong) parent.Clgm_Inner_Count;
                         for (ulong i = 0; i < count; i++) {
                             list.Add(LoadData(reader, i, parent));
@@ -1106,8 +1106,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 1300;
 
-                public static ObservableCollection<CLGMs> LoadData(BinaryReader reader, CLND parent) {
-                    var list = new ObservableCollection<CLGMs>();
+                public static ObservableMhwStructCollection<CLGMs> LoadData(BinaryReader reader, CLND parent) {
+                    var list = new ObservableMhwStructCollection<CLGMs>();
                     var count = (ulong) parent.Clgm_Count;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -1228,8 +1228,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 550;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<CLND> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<CLND>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1270,7 +1270,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Moves : MhwStructItem {
+        public partial class Moves : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Moves";
 
@@ -1349,7 +1349,7 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            public partial class Atk0 : MhwStructItem {
+            public partial class Atk0 : MhwStructItem, IWriteDataInner<Moves> {
                 public const ulong FixedSizeCount = 0;
                 public const string GridName = "Atk0";
 
@@ -1999,8 +1999,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 2350;
 
-                public static ObservableCollection<Atk0> LoadData(BinaryReader reader, Moves parent) {
-                    var list = new ObservableCollection<Atk0>();
+                public static ObservableMhwStructCollection<Atk0> LoadData(BinaryReader reader, Moves parent) {
+                    var list = new ObservableMhwStructCollection<Atk0>();
                     var count = (ulong) parent.Move_Count;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -2116,7 +2116,7 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName(Atk0_displayName)]
             protected virtual ObservableCollection<Atk0> Atk0_raw { get; set; }
 
-            public partial class Atk1 : MhwStructItem {
+            public partial class Atk1 : MhwStructItem, IWriteDataInner<Moves> {
                 public const ulong FixedSizeCount = 0;
                 public const string GridName = "Atk1";
 
@@ -2962,8 +2962,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 3050;
 
-                public static ObservableCollection<Atk1> LoadData(BinaryReader reader, Moves parent) {
-                    var list = new ObservableCollection<Atk1>();
+                public static ObservableMhwStructCollection<Atk1> LoadData(BinaryReader reader, Moves parent) {
+                    var list = new ObservableMhwStructCollection<Atk1>();
                     var count = (ulong) parent.Move_Count;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -3107,7 +3107,7 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName(Atk1_displayName)]
             protected virtual ObservableCollection<Atk1> Atk1_raw { get; set; }
 
-            public partial class Atk2 : MhwStructItem {
+            public partial class Atk2 : MhwStructItem, IWriteDataInner<Moves> {
                 public const ulong FixedSizeCount = 0;
                 public const string GridName = "Atk2";
 
@@ -3771,8 +3771,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 2400;
 
-                public static ObservableCollection<Atk2> LoadData(BinaryReader reader, Moves parent) {
-                    var list = new ObservableCollection<Atk2>();
+                public static ObservableMhwStructCollection<Atk2> LoadData(BinaryReader reader, Moves parent) {
+                    var list = new ObservableMhwStructCollection<Atk2>();
                     var count = (ulong) parent.Move_Count;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -3890,7 +3890,7 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName(Atk2_displayName)]
             protected virtual ObservableCollection<Atk2> Atk2_raw { get; set; }
 
-            public partial class Atk3 : MhwStructItem {
+            public partial class Atk3 : MhwStructItem, IWriteDataInner<Moves> {
                 public const ulong FixedSizeCount = 0;
                 public const string GridName = "Atk3";
 
@@ -4652,8 +4652,8 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 2750;
 
-                public static ObservableCollection<Atk3> LoadData(BinaryReader reader, Moves parent) {
-                    var list = new ObservableCollection<Atk3>();
+                public static ObservableMhwStructCollection<Atk3> LoadData(BinaryReader reader, Moves parent) {
+                    var list = new ObservableMhwStructCollection<Atk3>();
                     var count = (ulong) parent.Move_Count;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
@@ -4787,8 +4787,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 500;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<Moves> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Moves>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4840,7 +4840,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class OAP : MhwStructItem {
+        public partial class OAP : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "OAP";
 
@@ -4904,7 +4904,7 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            public partial class End_Junk : MhwStructItem {
+            public partial class End_Junk : MhwStructItem, IWriteDataInner<OAP> {
                 public const ulong FixedSizeCount = 0;
                 public const string GridName = "End Junk";
 
@@ -4938,8 +4938,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableCollection<object> LoadData(BinaryReader reader, ObservableCollection<object> lastStruct) {
-                var list = new ObservableCollection<object>();
+            public static ObservableMhwStructCollection<OAP> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<OAP>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4972,16 +4972,16 @@ namespace MHW_Editor.Structs.Weapons {
         public override void LoadFile(string targetFile) {
             using var reader = new BinaryReader(OpenFile(targetFile, EncryptionKey), Encoding.UTF8);
             data = new LinkedList<MhwStructDataContainer>();
-            var Collisions_ = new MhwStructDataContainer(Collisions.LoadData(reader, null), typeof(Collisions));
+            var Collisions_ = new MhwStructDataContainer<Collisions>(Collisions.LoadData(reader), typeof(Collisions));
             data.AddLast(Collisions_);
-            var Names_ = new MhwStructDataContainer(Names.LoadData(reader, Collisions_.list), typeof(Names));
+            var Names_ = new MhwStructDataContainer<Names, Collisions>(Names.LoadData(reader, Collisions_.list), typeof(Names));
             Names_.SetCountTargetToUpdate(Collisions_, -1, "Name_Count");
             data.AddLast(Names_);
-            var CLND_ = new MhwStructDataContainer(CLND.LoadData(reader, null), typeof(CLND));
+            var CLND_ = new MhwStructDataContainer<CLND>(CLND.LoadData(reader), typeof(CLND));
             data.AddLast(CLND_);
-            var Moves_ = new MhwStructDataContainer(Moves.LoadData(reader, null), typeof(Moves));
+            var Moves_ = new MhwStructDataContainer<Moves>(Moves.LoadData(reader), typeof(Moves));
             data.AddLast(Moves_);
-            var OAP_ = new MhwStructDataContainer(OAP.LoadData(reader, null), typeof(OAP));
+            var OAP_ = new MhwStructDataContainer<OAP>(OAP.LoadData(reader), typeof(OAP));
             data.AddLast(OAP_);
         }
     }

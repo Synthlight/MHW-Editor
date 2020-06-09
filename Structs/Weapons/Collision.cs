@@ -8,10 +8,10 @@ using MHW_Editor.Models;
 using MHW_Template;
 
 namespace MHW_Editor.Structs.Weapons {
-    public partial class Collision : MhwMultiStructItem<Collision> {
+    public partial class Collision : MhwMultiStructFile<Collision> {
         public void Init(string targetFile) {
-            var nameContainer = data.First(o => o.list.OfType<Names>().Any());
-            foreach (Names name in nameContainer.list) {
+            var nameList = GetStructList<Names>();
+            foreach (var name in nameList) {
                 name.Init(targetFile);
 
                 var clgm = GetClgm(name.CLGM_Id);
@@ -28,13 +28,13 @@ namespace MHW_Editor.Structs.Weapons {
         }
 
         private CLND.CLGMs GetClgm(int clgmId) {
-            var clnd = (CLND) data.First(o => o.list.OfType<CLND>().Any()).list.FirstOrDefault();
+            var clnd = GetStructList<CLND>().FirstOrDefault();
             return clnd?.CLGMs_raw?.FirstOrDefault(clgm => (int) clgm.Index == clgmId);
         }
 
         private object GetMove(int moveId) {
-            var moveContainer = data.First(o => o.list.OfType<Moves>().Any());
-            return (from Moves move in moveContainer.list
+            var moveList = GetStructList<Moves>();
+            return (from Moves move in moveList
                     select GetAtk(moveId, move.Atks))
                 .FirstOrDefault(atk => atk != null);
         }
