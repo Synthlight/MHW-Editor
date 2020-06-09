@@ -1,7 +1,7 @@
 ﻿using JetBrains.Annotations;
 
 namespace MHW_Editor.Models {
-    public abstract class CustomSaveLoad<T> where T : ICustomSaveLoad, new() {
+    public abstract class SaveLoad<T> where T : ISaveLoad, new() {
         [UsedImplicitly]
         public static T LoadData(string targetFile) {
             var instance = new T();

@@ -2,7 +2,7 @@
 using MHW_Editor.Models;
 
 namespace MHW_Editor.Items.TimeGate {
-    public partial class TimeGate : CustomSaveLoad<TimeGate>, ICustomSaveLoad {
+    public partial class TimeGate : SaveLoad<TimeGate>, ISaveLoad {
         public string EncryptionKey { get; }
 
         public static void SetupViews(TimeGate timeGate, Grid grid, MainWindow main) {

@@ -7,7 +7,7 @@ using System.Windows.Controls;
 using JetBrains.Annotations;
 
 namespace MHW_Editor.Models {
-    public abstract class MhwMultiStructItem<T> : CustomSaveLoad<T>, ICustomSaveLoad, IMhwMultiStructItem where T : ICustomSaveLoad, IMhwMultiStructItem, new() {
+    public abstract class MhwMultiStructItem<T> : SaveLoad<T>, ISaveLoad, IMhwMultiStructItem where T : ISaveLoad, IMhwMultiStructItem, new() {
         public LinkedList<MhwStructDataContainer> data { get; protected set; }
 
         public abstract string EncryptionKey { get; }

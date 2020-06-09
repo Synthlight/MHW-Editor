@@ -229,9 +229,9 @@
     <Compile Include="Items\RoomFurniture.cs" />
     <Compile Include="Items\ShopList.cs" />
     <Compile Include="Misc\MotionBlendData.cs" />
-    <Compile Include="Models\CustomSaveLoad.cs" />
+    <Compile Include="Models\SaveLoad.cs" />
     <Compile Include="Models\GroupFilter.cs" />
-    <Compile Include="Models\ICustomSaveLoad.cs" />
+    <Compile Include="Models\ISaveLoad.cs" />
     <Compile Include="Models\IHasEquipmentType.cs" />
     <Compile Include="Models\IHasWeaponType.cs" />
     <Compile Include="Models\IHasArmorType.cs" />
@@ -281,7 +281,6 @@
     <Compile Include="Models\IdNamePair.cs" />
     <Compile Include="Models\IHasCustomView.cs" />
     <Compile Include="Models\JsonChanges.cs" />
-    <Compile Include="Models\PlDataItemCustomView.cs" />
     <Compile Include="Models\SortOrderAttribute.cs" />
     <Compile Include="Models\ButtonSorter.cs" />
     <Compile Include="Models\VersionCheck.cs" />
@@ -298,7 +297,6 @@
     <Compile Include="PlData\PlPlayerParam.cs" />
     <Compile Include="PlData\PlItemParam.cs" />
     <Compile Include="PlData\ScoutflyData.cs" />
-    <Compile Include="SaveLoad.cs" />
     <Compile Include="Skills\MusicSkill.cs" />
     <Compile Include="Skills\SkillDat.cs" />
     <Compile Include="Gems\Gem.cs" />
@@ -321,9 +319,7 @@
     <Compile Include="Generated\MHW_Editor\Items\Item.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Melee.cs" />
     <Compile Include="Generated\MHW_Editor\Weapons\Ranged.cs" />
-    <Compile Include="Models\IMhwItem.cs" />
     <Compile Include="Items\Item.cs" />
-    <Compile Include="Models\MhwItem.cs" />
     <Compile Include="Models\ISlots.cs" />
     <Compile Include="Skills\SkillPointData.cs" />
     <Compile Include="SubStructView.xaml.cs">

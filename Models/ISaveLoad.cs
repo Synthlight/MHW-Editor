@@ -1,5 +1,5 @@
 ﻿namespace MHW_Editor.Models {
-    public interface ICustomSaveLoad {
+    public interface ISaveLoad {
         string EncryptionKey { get; }
         void   LoadFile(string targetFile);
         void   SaveFile(string targetFile);

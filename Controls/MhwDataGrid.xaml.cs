@@ -98,14 +98,10 @@ namespace MHW_Editor.Controls {
 
         protected override void On_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e) {
             switch (e.PropertyName) {
-                case nameof(IMhwItem.Bytes):
-                case nameof(IMhwItem.UniqueId):
+                case nameof(IJsonItem.UniqueId):
                 case nameof(Melee.Entries.GMD_Name_Index):
                 case nameof(Melee.Entries.GMD_Description_Index):
                     e.Cancel = true; // Internal.
-                    break;
-                case nameof(IMhwItem.Raw_Data):
-                    e.Cancel = !MainWindow.SHOW_RAW_BYTES; // Only for debug builds.
                     break;
                 case nameof(SkillDat.Entries.Id):
                     e.Cancel = mainWindow.targetFileType.Is(typeof(SkillDat));

@@ -33,7 +33,6 @@ namespace MHW_Editor {
     public partial class MainWindow {
 #if DEBUG
         private const bool ENABLE_CHEAT_BUTTONS = true;
-        public const  bool SHOW_RAW_BYTES       = true;
 #else
         private const bool ENABLE_CHEAT_BUTTONS = false;
         public const bool SHOW_RAW_BYTES = false;
@@ -61,7 +60,7 @@ namespace MHW_Editor {
                 locale = value;
                 foreach (var dataGrid in dataGrids) {
                     foreach (IOnPropertyChanged item in dataGrid.Items) {
-                        item.OnPropertyChanged(nameof(IMhwItem.Name),
+                        item.OnPropertyChanged("Name",
                                                nameof(SkillDat.Entries.Description),
                                                nameof(SkillDat.Entries.Name_And_Id),
                                                nameof(MusicSkill.Entries.Song_And_Id));
@@ -205,16 +204,7 @@ namespace MHW_Editor {
 
                 GC.Collect();
 
-                var hasCustomLoad = targetFileType.Is(typeof(ICustomSaveLoad));
-
-                scroll_viewer.Visibility = hasCustomLoad ? Visibility.Visible : Visibility.Collapsed;
-                main_grid.Visibility     = hasCustomLoad ? Visibility.Collapsed : Visibility.Visible;
-
-                if (hasCustomLoad) { // Custom save/load.
-                    LoadCustom();
-                } else {
-                    LoadSingleStruct();
-                }
+                LoadTarget();
 
                 UpdateButtonVisibility();
             } catch (Exception e) when (!Debugger.IsAttached) {
@@ -222,8 +212,8 @@ namespace MHW_Editor {
             }
         }
 
-        private void LoadCustom() {
-            SaveLoad.CheckHashAndSize(targetFile, true);
+        private void LoadTarget() {
+            CheckHashAndSize(targetFile);
 
             var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
             Debug.Assert(loadData != null, nameof(loadData) + " != null");
@@ -255,40 +245,56 @@ namespace MHW_Editor {
                 dataGrids.Add(main_grid);
                 var items = getStructList?.Invoke(customFileData, null) ?? throw new Exception("getStructList failure.");
                 main_grid.SetItems(this, items);
-
-                scroll_viewer.Visibility = Visibility.Collapsed;
-                main_grid.Visibility     = Visibility.Visible;
             } else {
                 var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
                 Debug.Assert(setupViews != null, nameof(setupViews) + " != null");
                 setupViews.Invoke(null, new object[] {customFileData, grid, this});
             }
+
+            scroll_viewer.Visibility = showAsSingleView ? Visibility.Collapsed : Visibility.Visible;
+            main_grid.Visibility     = showAsSingleView ? Visibility.Visible : Visibility.Collapsed;
         }
 
-        private void LoadSingleStruct() {
-            var items = SaveLoad.LoadFile(targetFile, targetFileType);
-            if (items == null) return;
+        public static void CheckHashAndSize(string targetFile) {
+            var       fileName     = Path.GetFileName(targetFile);
+            using var file         = File.OpenRead(targetFile);
+            var       ourLength    = (ulong) file.Length;
+            var       properLength = DataHelper.FILE_SIZE_MAP.TryGet(Path.GetFileName(targetFile), (ulong) 0);
+            var       sha512       = file.SHA512();
 
-            dataGrids.Add(main_grid);
-            main_grid.SetItems(this, items);
+            // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
+            foreach (var pair in DataHelper.BAD_FILE_HASH_MAP) {
+                // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
+                foreach (var fileAndHash in pair.Value) {
+                    if (fileName == fileAndHash.Key && fileAndHash.Value.Contains(sha512)) {
+                        var newChunk = DataHelper.GOOD_CHUNK_MAP.TryGet(fileName);
+                        MessageBox.Show($"This file ({fileName}) is from {pair.Key} and is obsolete.\r\n" +
+                                        $"The newest version of the file is in {newChunk}.\r\n\r\n" +
+                                        "Using obsolete files is known to cause anything from blackscreens to crashes or incorrect data.\r\n\r\n" +
+                                        "The editor will attempt to load the file, but understand, it may fail due to obsolete data.", "Obsolete File Detected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        return;
+                    }
+                }
+            }
+
+            // Length check as a fallback.
+            if (ourLength == properLength) return;
+
+            MessageBox.Show($"The file size of {fileName} does not match the known file size in v{MainWindow.CURRENT_GAME_VERSION}.\r\n" +
+                            $"Expected: {properLength}\r\n" +
+                            $"Found: {ourLength}\r\n" +
+                            "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
 
         private async void Save() {
             if (string.IsNullOrEmpty(targetFile)) return;
 
             try {
-                if (targetFileType.Is(typeof(ICustomSaveLoad))) { // Custom save/load.
-                    var saveData = targetFileType.GetMethod("SaveData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
-                    Debug.Assert(saveData != null, nameof(saveData) + " != null");
-                    saveData.Invoke(null, new object[] {customFileData, targetFile});
+                var saveData = targetFileType.GetMethod("SaveData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+                Debug.Assert(saveData != null, nameof(saveData) + " != null");
+                saveData.Invoke(null, new object[] {customFileData, targetFile});
 
-                    await ShowChangesSaved(true);
-                    return;
-                }
-
-                var changesSaved = SaveLoad.SaveFile(targetFile, targetFileType, main_grid.Items);
-
-                await ShowChangesSaved(changesSaved);
+                await ShowChangesSaved(true);
             } catch (Exception e) when (!Debugger.IsAttached) {
                 ShowError(e, "Save Error");
             }
@@ -384,6 +390,7 @@ namespace MHW_Editor {
                 if (!changesToLoad.changes.Any()) return;
                 if (fileName != changesToLoad.targetFile && changesToLoad.targetFile != "*") return;
 
+/* TODO: Fix Json.
                 foreach (MhwItem item in main_grid.Items) {
                     var id           = item.UniqueId;
                     var changedItems = changesToLoad.changes.TryGet(id, null);
@@ -406,6 +413,7 @@ namespace MHW_Editor {
                         }
                     }
                 }
+*/
 
                 if (targetFileType.IsGeneric(typeof(IHasCustomView<>))) {
                     foreach (var dataGrid in dataGrids) {
@@ -445,6 +453,7 @@ namespace MHW_Editor {
                     changesToSave.version    = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1);
                 }
 
+/* TODO: Fix Json.
                 foreach (MhwItem item in main_grid.Items) {
                     if (item.changed.Count == 0) continue;
 
@@ -460,6 +469,7 @@ namespace MHW_Editor {
                         changesToSave.changes[id][changedItem] = value;
                     }
                 }
+*/
 
                 var changesSaved = changesToSave.changes.Any();
 
