@@ -28,7 +28,17 @@ using MHW_Template.Models;
 using MHW_Template.Weapons;
 
 namespace MHW_Editor.Controls {
-    public abstract partial class MhwDataGrid {
+    public interface IMhwDataGrid {
+        void SetItems(MainWindow mainWindow, object items);
+    }
+
+    public interface IMhwDataGrid<T> : IMhwDataGrid {
+        ObservableCollection<T> Items { get; }
+
+        void SetItems(MainWindow mainWindow, ObservableCollection<T> items);
+    }
+
+    public abstract partial class MhwDataGrid : IMhwDataGrid {
         protected static readonly Brush BACKGROUND_BRUSH = (Brush) new BrushConverter().ConvertFrom("#c0e1fb");
 
         protected MhwDataGrid() {
@@ -377,7 +387,8 @@ namespace MHW_Editor.Controls {
         }
 
         private bool EditSelectedItemId(FrameworkElement cell, string propertyName) {
-            var obj      = (IOnPropertyChanged) cell.DataContext;
+            if (!(cell.DataContext is IOnPropertyChanged obj)) return false;
+
             var property = obj.GetType().GetProperty(propertyName.Replace("_button", ""), BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
             Debug.Assert(property != null, nameof(property) + " != null");
             var propertyType   = property.PropertyType;

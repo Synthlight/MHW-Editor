@@ -42,16 +42,7 @@ namespace MHW_Editor.Models {
         public override void SetupView(Grid grid, MainWindow main) {
             if (IsHidden) return;
 
-            if (IsAddingAllowed) {
-                var panel = new StackPanel {Orientation = Orientation.Horizontal};
-                panel.Children.Add(new Label {Content   = GridName, FontSize             = MainWindow.FONT_SIZE, HorizontalAlignment    = HorizontalAlignment.Left});
-                var button = new Button {Content        = "Add Row", HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Center};
-                button.Click += Add_Click;
-                panel.Children.Add(button);
-                grid.AddControl(panel);
-            } else {
-                grid.AddControl(new Label {Content = GridName, FontSize = MainWindow.FONT_SIZE});
-            }
+            grid.AddControl(new Label {Content = GridName, FontSize = MainWindow.FONT_SIZE});
 
             var desc = Description;
             if (desc != null) {
@@ -62,7 +53,8 @@ namespace MHW_Editor.Models {
                 main.AddDataGrid(((IHasCustomView<MultiStructItemCustomView>) list[0]).GetCustomView());
             } else {
                 var dataGrid = main.AddDataGrid(list);
-                dataGrid.CanUserDeleteRows = IsAddingAllowed;
+
+                dataGrid.CanUserAddRows = dataGrid.CanUserDeleteRows = IsAddingAllowed;
             }
         }
 

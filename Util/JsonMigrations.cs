@@ -12,7 +12,7 @@ namespace MHW_Editor.Util {
         // ReSharper disable once ParameterTypeCanBeEnumerable.Global
         public static JsonChanges Migrate(string oldJson, string fileName, ObservableCollection<dynamic> items) {
             var changesToLoad = JsonConvert.DeserializeObject<JsonChanges>(oldJson);
-/* TODO: Fix me.
+/* TODO: Fix Json.
             switch (fileName) {
                 case "armor.am_dat":
                     if (changesToLoad.version == 1) {

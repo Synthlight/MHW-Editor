@@ -218,7 +218,6 @@
     <Compile Include="Controls\MhwDataGrid.xaml.cs">
       <DependentUpon>MhwDataGrid.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Models\IMhwDataGrid.cs" />
     <Compile Include="Util\EncryptionHelper.cs" />
     <Compile Include="Windows\FindFileInChunk.xaml.cs">
       <DependentUpon>FindFileInChunk.xaml</DependentUpon>
