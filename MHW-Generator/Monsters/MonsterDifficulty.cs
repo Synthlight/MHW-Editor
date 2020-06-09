@@ -38,7 +38,7 @@ namespace MHW_Generator.Monsters {
                 }, 1)
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "MonsterDifficulty", new MhwMultiStructData(structs, "dtt_dif"));
+            return new MultiStruct("Monsters", "MonsterDifficulty", new MhwMultiStructData(structs, "dtt_dif"));
         }
     }
 }

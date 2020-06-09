@@ -55,7 +55,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "Ranged", new MhwMultiStructData(structs, "wp_dat_g"));
+            return new MultiStruct("Weapons", "Ranged", new MhwMultiStructData(structs, "wp_dat_g"));
         }
     }
 }

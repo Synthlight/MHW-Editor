@@ -28,21 +28,14 @@ namespace MHW_Template.Struct_Generation
             this.Write("//------------------------------------------------\r\n//--- 010 Editor v10.0 Binary" +
                     " Template\r\n//   Authors: Many. See MHW Editor Cretits.\r\n// File Mask: *.");
             
-            #line 10 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\MultiStruct010Template.tt"
+            #line 9 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\MultiStruct010Template.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(structData.ext));
             
             #line default
             #line hidden
-            this.Write("\r\n//  Category: ");
+            this.Write("\r\n//  Category: MHW-Editor\r\n//------------------------------------------------\r\n");
             
-            #line 11 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\MultiStruct010Template.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_namespace));
-            
-            #line default
-            #line hidden
-            this.Write("\r\n//------------------------------------------------\r\n");
-            
-            #line 13 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\MultiStruct010Template.tt"
+            #line 12 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\MultiStruct010Template.tt"
 
     MultiStruct010Generation.Generate(this, structData);
 
@@ -53,19 +46,6 @@ namespace MHW_Template.Struct_Generation
         }
         
         #line 1 "R:\Games\Monster Hunter World\MHW-Editor\MHW-Template\Struct Generation\MultiStruct010Template.tt"
-
-private string @__namespaceField;
-
-/// <summary>
-/// Access the _namespace parameter of the template.
-/// </summary>
-private string _namespace
-{
-    get
-    {
-        return this.@__namespaceField;
-    }
-}
 
 private global::MHW_Template.Struct_Generation.MhwMultiStructData _structDataField;
 
@@ -88,20 +68,6 @@ public virtual void Initialize()
 {
     if ((this.Errors.HasErrors == false))
     {
-bool _namespaceValueAcquired = false;
-if (this.Session.ContainsKey("_namespace"))
-{
-    this.@__namespaceField = ((string)(this.Session["_namespace"]));
-    _namespaceValueAcquired = true;
-}
-if ((_namespaceValueAcquired == false))
-{
-    object data = global::System.Runtime.Remoting.Messaging.CallContext.LogicalGetData("_namespace");
-    if ((data != null))
-    {
-        this.@__namespaceField = ((string)(data));
-    }
-}
 bool structDataValueAcquired = false;
 if (this.Session.ContainsKey("structData"))
 {

@@ -18,7 +18,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "GunnerShoot", new MhwMultiStructData(structs, "gun_sd"));
+            return new MultiStruct("Weapons", "GunnerShoot", new MhwMultiStructData(structs, "gun_sd"));
         }
     }
 }

@@ -182,7 +182,7 @@ namespace MHW_Generator.Weapons {
                 remainder
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "MonsterParts", new MhwMultiStructData(structs, "dtt_epg", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".dtt_epg"]));
+            return new MultiStruct("Monsters", "MonsterParts", new MhwMultiStructData(structs, "dtt_epg", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".dtt_epg"]));
         }
     }
 }

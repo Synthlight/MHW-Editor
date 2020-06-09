@@ -209,67 +209,73 @@ namespace MHW_Editor {
         };
 
         public static readonly Dictionary<Type, List<string>> TYPE_AND_NAME = new Dictionary<Type, List<string>> {
-            {typeof(MHW_Editor.Items.TimeGate.Models.Armor), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.TimeGate.Models.Armor), new List<string> {
                 "armorId",
             }},
-            {typeof(MHW_Editor.Items.TimeGate.Models.Pendant), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.TimeGate.Models.Pendant), new List<string> {
                 "pendantId",
             }},
-            {typeof(MHW_Editor.Items.TimeGate.Models.ItemTg), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.TimeGate.Models.ItemTg), new List<string> {
                 "itemId",
             }},
-            {typeof(MHW_Editor.Items.TimeGate.Models.Weapon), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.TimeGate.Models.Weapon), new List<string> {
                 "weaponId",
             }},
-            {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.ArenaEquipment.Entries), new List<string> {
                 "Weapon_Id",
             }},
-            {typeof(MHW_Editor.Weapons.AwakenedLimitBreak.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.AwakenedLimitBreak.Entries), new List<string> {
                 "Skill_Id",
             }},
-            {typeof(MHW_Editor.Weapons.CustomOuterRecipe.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.CustomOuterRecipe.Entries), new List<string> {
                 "Needed_Item_Id_to_Unlock",
                 "Mat_1_Id",
                 "Mat_2_Id",
                 "Mat_3_Id",
                 "Mat_4_Id",
             }},
-            {typeof(MHW_Editor.Weapons.CustomPartsR.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.CustomPartsR.Entries), new List<string> {
                 "Needed_Item_Id_to_Unlock",
                 "Mat_1_Id",
                 "Mat_2_Id",
                 "Mat_3_Id",
                 "Mat_4_Id",
             }},
-            {typeof(MHW_Editor.Weapons.GunnerReload.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.GunnerReload.Entries), new List<string> {
                 "No_Mods",
                 "Mod_1",
                 "Mod_2",
                 "Mod_3",
                 "Mod_4",
             }},
-            {typeof(MHW_Editor.Weapons.GunnerShoot.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.GunnerShoot.Entries), new List<string> {
                 "No_Mods",
                 "Mod_1",
                 "Mod_2",
                 "Mod_3",
                 "Mod_4",
             }},
-            {typeof(MHW_Editor.Weapons.LimitBreakMaterialBase.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.LimitBreakMaterialBase.Entries), new List<string> {
                 "Item_1_Id",
                 "Item_2_Id",
             }},
-            {typeof(MHW_Editor.Weapons.LimitBreakMaterialSkill.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.LimitBreakMaterialSkill.Entries), new List<string> {
                 "Item_1_Id",
             }},
-            {typeof(MHW_Editor.Weapons.NewLimitBreakR.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.Melee.Entries), new List<string> {
+                "Skill",
+            }},
+            {typeof(MHW_Editor.Structs.Weapons.NewLimitBreakR.Entries), new List<string> {
                 "Needed_Item_Id_to_Unlock",
                 "Mat_1_Id",
                 "Mat_2_Id",
                 "Mat_3_Id",
                 "Mat_4_Id",
             }},
-            {typeof(MHW_Editor.Weapons.ShellTable.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.Ranged.Entries), new List<string> {
+                "Skill",
+            }},
+            {typeof(MHW_Editor.Structs.Weapons.ShellTable.Entries), new List<string> {
                 "Normal_1_Rec_Amnt",
                 "Normal_1_Rel_Spd",
                 "Normal_2_Rec_Amnt",
@@ -345,37 +351,36 @@ namespace MHW_Editor {
                 "Tranq_Rec_Amnt",
                 "Tranq_Rel_Spd",
             }},
-            {typeof(MHW_Editor.Weapons.Melee.Entries), new List<string> {
-                "Skill",
-            }},
-            {typeof(MHW_Editor.Weapons.Ranged.Entries), new List<string> {
-                "Skill",
-            }},
-            {typeof(MHW_Editor.Skills.SkillDat.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Skills.SkillDat.Entries), new List<string> {
                 "Unlock_Skill_1",
                 "Unlock_Skill_2",
                 "Unlock_Skill_3",
                 "Unlock_Skill_4",
             }},
-            {typeof(MHW_Editor.Monsters.MonsterDamageAttributes.Monster_Damage_Attributes_1_), new List<string> {
+            {typeof(MHW_Editor.Structs.Monsters.MonsterDamageAttributes.Monster_Damage_Attributes_1_), new List<string> {
                 "Monster_Id",
             }},
-            {typeof(MHW_Editor.Monsters.MonsterEnrage.Monster_Rage), new List<string> {
+            {typeof(MHW_Editor.Structs.Monsters.MonsterEnrage.Monster_Rage), new List<string> {
                 "Monster_Id",
             }},
-            {typeof(MHW_Editor.Monsters.MonsterParts.Monster_Parts), new List<string> {
+            {typeof(MHW_Editor.Structs.Monsters.MonsterParts.Monster_Parts), new List<string> {
                 "Monster_Id",
             }},
-            {typeof(MHW_Editor.Monsters.MonsterRandomSize.Monsters), new List<string> {
+            {typeof(MHW_Editor.Structs.Monsters.MonsterRandomSize.Monsters), new List<string> {
                 "Monster_Id",
             }},
-            {typeof(MHW_Editor.Monsters.SmallMonsterSizeParams.Size_Settings), new List<string> {
+            {typeof(MHW_Editor.Structs.Monsters.MonsterStamina.Monster_Stamina_1_), new List<string> {
                 "Monster_Id",
             }},
-            {typeof(MHW_Editor.Monsters.MonsterStamina.Monster_Stamina_1_), new List<string> {
+            {typeof(MHW_Editor.Structs.Monsters.SmallMonsterSizeParams.Size_Settings), new List<string> {
                 "Monster_Id",
             }},
-            {typeof(MHW_Editor.Items.EqCrt.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.Bounty.Entries), new List<string> {
+                "Item_Id_1",
+                "Item_Id_2",
+                "Item_Id_3",
+            }},
+            {typeof(MHW_Editor.Structs.Items.EqCrt.Entries), new List<string> {
                 "Needed_Item_Id_to_Unlock",
                 "Monster_Unlock",
                 "Mat_1_Id",
@@ -385,7 +390,7 @@ namespace MHW_Editor {
                 "Equipment_Index_Armor",
                 "Equipment_Index_Weapon",
             }},
-            {typeof(MHW_Editor.Items.EqCus.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.EqCus.Entries), new List<string> {
                 "Needed_Item_Id_to_Unlock",
                 "Monster_Unlock",
                 "Mat_1_Id",
@@ -395,15 +400,15 @@ namespace MHW_Editor {
                 "Equipment_Index_Armor",
                 "Equipment_Index_Weapon",
             }},
-            {typeof(MHW_Editor.Items.ItemDelivery.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.ItemDelivery.Entries), new List<string> {
                 "Decoration_Reward",
                 "Item_1_Id",
                 "Item_2_Id",
             }},
-            {typeof(MHW_Editor.Items.ItemList.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.ItemList.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Items.ItemLottery.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.ItemLottery.Entries), new List<string> {
                 "Item_1_Id",
                 "Item_2_Id",
                 "Item_3_Id",
@@ -415,115 +420,110 @@ namespace MHW_Editor {
                 "Item_9_Id",
                 "Item_10_Id",
             }},
-            {typeof(MHW_Editor.Items.ItemMake.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.ItemMake.Entries), new List<string> {
                 "Mat_1_Id",
                 "Mat_2_Id",
                 "Result_Id",
             }},
-            {typeof(MHW_Editor.Items.KulveGradeLottery.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.KulveGradeLottery.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Items.KulveItemLottery.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.KulveItemLottery.Entries), new List<string> {
                 "Weapon_Id",
             }},
-            {typeof(MHW_Editor.Items.MelderExchange.Item_Box), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.MelderExchange.Item_Box), new List<string> {
                 "Source_Item_Id",
             }},
-            {typeof(MHW_Editor.Items.MelderItem.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.MelderItem.Entries), new List<string> {
                 "Result_Item_Id",
             }},
-            {typeof(MHW_Editor.Items.Bounty.Entries), new List<string> {
-                "Item_Id_1",
-                "Item_Id_2",
-                "Item_Id_3",
-            }},
-            {typeof(MHW_Editor.Items.PlantItem.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.PlantItem.Entries), new List<string> {
                 "Item",
             }},
-            {typeof(MHW_Editor.Items.QuestReward.Items), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.QuestReward.Items), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Items.QuestReward.QuestRewardCustomView), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.QuestReward.QuestRewardCustomView), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Items.RoomFurniture.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.RoomFurniture.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Items.SafiItemGradeLottery.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.SafiItemGradeLottery.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Items.SafiItemLottery.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.SafiItemLottery.Entries), new List<string> {
                 "Weapon_Id",
             }},
-            {typeof(MHW_Editor.Items.ShopList.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.ShopList.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Items.ShopSed.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.ShopSed.Entries), new List<string> {
                 "Equip_Id",
             }},
-            {typeof(MHW_Editor.Items.SteamRewardList.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.SteamRewardList.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Items.SupplyData.Item_Box), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.SupplyData.Item_Box), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Items.SupplyData.Ammo_Box), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.SupplyData.Ammo_Box), new List<string> {
                 "Ammo_Id",
             }},
-            {typeof(MHW_Editor.Items.SwapItem.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.SwapItem.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Items.SwapN.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.SwapN.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Items.Treasure.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.Treasure.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Items.ValueTrader.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.ValueTrader.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.GuildCard.GcData.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.GuildCard.GcData.Entries), new List<string> {
                 "Monster_Id",
             }},
-            {typeof(MHW_Editor.Gems.DecoGradeLottery.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Gems.DecoGradeLottery.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Gems.DecoLottery.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Gems.DecoLottery.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Gems.Gem.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Gems.Gem.Entries), new List<string> {
                 "Id",
                 "Skill_1",
                 "Skill_2",
             }},
-            {typeof(MHW_Editor.Armors.Armor.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Armors.Armor.Entries), new List<string> {
                 "Set_Skill_1",
                 "Hidden_Skill",
                 "Skill_1",
                 "Skill_2",
                 "Skill_3",
             }},
-            {typeof(MHW_Editor.Armors.ASkill.Entries), new List<string> {
+            {typeof(MHW_Editor.Structs.Armors.ASkill.Entries), new List<string> {
                 "Mantle_Item_Id",
             }},
-            {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries.Armors), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.ArenaEquipment.Entries.Armors), new List<string> {
                 "Armor_Id",
             }},
-            {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries.Mantles), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.ArenaEquipment.Entries.Mantles), new List<string> {
                 "Mantle_Id",
             }},
-            {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries.Decorations), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.ArenaEquipment.Entries.Decorations), new List<string> {
                 "Deco_1",
                 "Deco_2",
                 "Deco_3",
             }},
-            {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries.Items), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.ArenaEquipment.Entries.Items), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Weapons.ArenaEquipment.Entries.Ammo), new List<string> {
+            {typeof(MHW_Editor.Structs.Weapons.ArenaEquipment.Entries.Ammo), new List<string> {
                 "Ammo_Id",
             }},
-            {typeof(MHW_Editor.Items.MelderExchange.Item_Box.Items), new List<string> {
+            {typeof(MHW_Editor.Structs.Items.MelderExchange.Item_Box.Items), new List<string> {
                 "Item_Id",
             }},
         };

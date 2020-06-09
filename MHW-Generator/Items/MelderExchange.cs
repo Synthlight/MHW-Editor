@@ -23,7 +23,7 @@ namespace MHW_Generator.Items {
                 }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, entryCount))
             };
 
-            return new MultiStruct("MHW_Editor.Items", "MelderExchange", new MhwMultiStructData(structs, "mkex"));
+            return new MultiStruct("Items", "MelderExchange", new MhwMultiStructData(structs, "mkex"));
         }
     }
 }

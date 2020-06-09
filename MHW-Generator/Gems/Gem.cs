@@ -20,7 +20,7 @@ namespace MHW_Generator.Gems {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Gems", "Gem", new MhwMultiStructData(structs, "sgpa"));
+            return new MultiStruct("Gems", "Gem", new MhwMultiStructData(structs, "sgpa"));
         }
     }
 }

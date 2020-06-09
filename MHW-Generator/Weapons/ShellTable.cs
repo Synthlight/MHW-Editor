@@ -52,7 +52,7 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.StructData("Entries", entries, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "ShellTable", new MhwMultiStructData(structs, "shl_tbl"));
+            return new MultiStruct("Weapons", "ShellTable", new MhwMultiStructData(structs, "shl_tbl"));
         }
     }
 }

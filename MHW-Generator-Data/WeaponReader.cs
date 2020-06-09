@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using MHW_Editor;
 using MHW_Editor.Assets;
-using MHW_Editor.Weapons;
+using MHW_Editor.Structs.Weapons;
 using MHW_Template;
 using MHW_Template.Weapons;
 

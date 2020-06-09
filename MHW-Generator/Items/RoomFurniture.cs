@@ -34,7 +34,7 @@ namespace MHW_Generator.Items {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Items", "RoomFurniture", new MhwMultiStructData(structs, "rfur"));
+            return new MultiStruct("Items", "RoomFurniture", new MhwMultiStructData(structs, "rfur"));
         }
     }
 }

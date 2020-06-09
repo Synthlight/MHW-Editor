@@ -1,0 +1,202 @@
+﻿<Window x:Class="MHW_Editor.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:MHW_Editor.Controls"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Name="this"
+        Title="MainWindow"
+        Width="1800"
+        Height="500"
+        DataContext="{x:Reference this}"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel Grid.Row="0"
+                   Grid.Column="0"
+                   VerticalAlignment="Stretch">
+            <StackPanel HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <xctk:SplitButton Name="btn_open"
+                                  Margin="0,0,0,0"
+                                  HorizontalAlignment="Left"
+                                  Click="Btn_open_Click"
+                                  Content="Open">
+                    <xctk:SplitButton.DropDownContent>
+                        <Button Name="btn_open_as_json"
+                                Margin="0,0,0,0"
+                                HorizontalAlignment="Left"
+                                Click="Btn_open_as_json_Click"
+                                Content="Import JSON Changes"/>
+                    </xctk:SplitButton.DropDownContent>
+                </xctk:SplitButton>
+                <xctk:SplitButton Name="btn_save"
+                                  Margin="8,0,0,0"
+                                  HorizontalAlignment="Left"
+                                  Click="Btn_save_Click"
+                                  Content="Save">
+                    <xctk:SplitButton.DropDownContent>
+                        <StackPanel Orientation="Vertical">
+                            <Button Name="btn_save_as_json"
+                                    Margin="0,0,0,0"
+                                    HorizontalAlignment="Left"
+                                    Click="Btn_save_as_json_Click"
+                                    Content="Save Changes (Since Last Save) as JSON"/>
+                            <Button Name="btn_save_as_json_merge"
+                                    Margin="0,0,0,0"
+                                    HorizontalAlignment="Left"
+                                    Click="Btn_save_as_json_merge_Click"
+                                    Content="Save Changes (Since Last Save, Merge With Existing JSON) as JSON"/>
+                        </StackPanel>
+                    </xctk:SplitButton.DropDownContent>
+                </xctk:SplitButton>
+                <Button Margin="8,0,0,0"
+                        HorizontalAlignment="Left"
+                        Click="Btn_chunk_search_Click">
+                    <ContentControl Content="{StaticResource FindInFile_16x}"
+                                    ToolTip="Find which chunk a file is in."/>
+                </Button>
+                <TextBlock Name="lbl_saved"
+                           Margin="8,0,0,0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="—Saved"
+                           Visibility="Collapsed"/>
+                <TextBlock Name="lbl_no_changes"
+                           Margin="8,0,0,0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text="—No Changes to Save"
+                           Visibility="Collapsed"/>
+            </StackPanel>
+        </DockPanel>
+        <DockPanel Grid.Row="0"
+                   Grid.Column="1"
+                   VerticalAlignment="Stretch">
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <CheckBox Name="cb_single_click_edit"
+                          Margin="8,0,0,0"
+                          HorizontalAlignment="Right"
+                          VerticalAlignment="Center"
+                          Content="Single Click to Edit Mode"
+                          IsChecked="{Binding SingleClickToEditMode}"/>
+                <CheckBox Name="cb_show_id_before_name"
+                          Margin="8,0,0,0"
+                          HorizontalAlignment="Right"
+                          VerticalAlignment="Center"
+                          Content="Show Id Before Name"
+                          IsChecked="{Binding ShowIdBeforeName}"
+                          Visibility="Collapsed"/>
+            </StackPanel>
+        </DockPanel>
+        <DockPanel Grid.Row="0"
+                   Grid.Column="2"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Stretch">
+            <StackPanel HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <Button Name="btn_customize"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_customize_Click"
+                        Content="GMod"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_slot_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_slot_cheat_Click"
+                        Content="Max Slots/Size"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_set_bonus_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_set_bonus_cheat_Click"
+                        Content="Max Set Bonus"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_skill_level_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_skill_level_cheat_Click"
+                        Content="Max Skills"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_cost_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_cost_cheat_Click"
+                        Content="Set Cost to 1"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_enable_all_coatings_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_enable_all_coatings_cheat_Click"
+                        Content="Enable All Coatings"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_max_sharpness_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_max_sharpness_cheat_Click"
+                        Content="Set Sharpness to Max"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_unlock_skill_limit_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_unlock_skill_limit_cheat_Click"
+                        Content="Remove Skill Limits"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_fast_reload_rapid_fire_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_fast_reload_rapid_fire_Click"
+                        Content="Fast Reload &amp; Rapid Fire"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_sort_jewel_order_by_name"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_sort_jewel_order_by_name_Click"
+                        Content="Resort All Gems by Gem Name"
+                        Visibility="Collapsed"/>
+                <Button Name="btn_open_wiki"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_open_wiki_OnClick"
+                        Content="Wiki"/>
+                <Button Name="btn_damage_cheat"
+                        Margin="8,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Btn_damage_cheat_Click"
+                        Content="Set Damage to 50000"
+                        Visibility="Collapsed"/>
+                <ComboBox Name="cbx_localization"
+                          Margin="8,0,0,0"
+                          HorizontalAlignment="Right"
+                          DisplayMemberPath="Value"
+                          SelectedValue="{Binding Locale}"
+                          SelectedValuePath="Key"
+                          Visibility="Visible"/>
+            </StackPanel>
+        </DockPanel>
+        <controls:MhwDataGridDynamic x:Name="main_grid"
+                                     Grid.Row="1"
+                                     Grid.Column="0"
+                                     Grid.ColumnSpan="3"/>
+        <ScrollViewer Name="scroll_viewer"
+                      Grid.Row="1"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="3"
+                      HorizontalScrollBarVisibility="Auto"
+                      IsDeferredScrollingEnabled="True"
+                      PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+            <Grid Name="grid"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

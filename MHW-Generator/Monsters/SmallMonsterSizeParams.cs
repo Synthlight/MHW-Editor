@@ -23,7 +23,7 @@ namespace MHW_Generator.Monsters {
                 }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, count))
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "SmallMonsterSizeParams", new MhwMultiStructData(structs, "em_ss"));
+            return new MultiStruct("Monsters", "SmallMonsterSizeParams", new MhwMultiStructData(structs, "em_ss"));
         }
     }
 }

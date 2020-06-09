@@ -199,7 +199,7 @@ namespace MHW_Generator.Weapons {
                 }, 1)
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "ShellParam", new MhwMultiStructData(structs, "shlp", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".shlp"]));
+            return new MultiStruct("Weapons", "ShellParam", new MhwMultiStructData(structs, "shlp", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".shlp"]));
         }
     }
 }

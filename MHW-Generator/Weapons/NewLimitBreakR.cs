@@ -31,7 +31,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id_1}|{Id_2}")
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "NewLimitBreakR", new MhwMultiStructData(structs, "new_lbr"));
+            return new MultiStruct("Weapons", "NewLimitBreakR", new MhwMultiStructData(structs, "new_lbr"));
         }
     }
 }

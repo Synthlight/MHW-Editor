@@ -32,7 +32,7 @@ namespace MHW_Generator.Items {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Items", "SafiItemLottery", new MhwMultiStructData(structs, "em104iot"));
+            return new MultiStruct("Items", "SafiItemLottery", new MhwMultiStructData(structs, "em104iot"));
         }
     }
 }

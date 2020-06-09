@@ -19,7 +19,7 @@ namespace MHW_Generator.Items {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Items", "SteamRewardList", new MhwMultiStructData(structs, "srl"));
+            return new MultiStruct("Items", "SteamRewardList", new MhwMultiStructData(structs, "srl"));
         }
     }
 }

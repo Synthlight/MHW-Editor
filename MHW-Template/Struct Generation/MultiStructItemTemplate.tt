@@ -14,7 +14,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using MHW_Editor.Assets;
+using MHW_Editor.Controls.Models;
 using MHW_Editor.Models;
+using MHW_Editor.Windows;
 using MHW_Template;
 using MHW_Template.Models;
 

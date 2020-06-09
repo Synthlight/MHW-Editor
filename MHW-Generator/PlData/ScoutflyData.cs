@@ -285,7 +285,7 @@ namespace MHW_Generator.PlData {
                 }, 1, showVertically: true)
             };
 
-            return new MultiStruct("MHW_Editor.PlData", "ScoutflyData", new MhwMultiStructData(structs, "gip"));
+            return new MultiStruct("PlData", "ScoutflyData", new MhwMultiStructData(structs, "gip"));
         }
     }
 }

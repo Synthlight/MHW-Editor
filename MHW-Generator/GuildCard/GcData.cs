@@ -19,7 +19,7 @@ namespace MHW_Generator.GuildCard {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.GuildCard", "GcData", new MhwMultiStructData(structs, "gcod"));
+            return new MultiStruct("GuildCard", "GcData", new MhwMultiStructData(structs, "gcod"));
         }
     }
 }

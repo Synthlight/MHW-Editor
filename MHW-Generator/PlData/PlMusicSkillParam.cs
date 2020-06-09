@@ -32,7 +32,7 @@ namespace MHW_Generator.PlData {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.PlData", "PlMusicSkillParam", new MhwMultiStructData(structs, "mske", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".mske"]));
+            return new MultiStruct("PlData", "PlMusicSkillParam", new MhwMultiStructData(structs, "mske", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".mske"]));
         }
     }
 }

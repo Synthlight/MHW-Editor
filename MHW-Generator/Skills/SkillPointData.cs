@@ -14,7 +14,7 @@ namespace MHW_Generator.Skills {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Skills", "SkillPointData", new MhwMultiStructData(structs, "skl_pt_dat"));
+            return new MultiStruct("Skills", "SkillPointData", new MhwMultiStructData(structs, "skl_pt_dat"));
         }
     }
 }

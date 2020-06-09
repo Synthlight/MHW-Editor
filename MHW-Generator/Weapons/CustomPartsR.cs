@@ -40,7 +40,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}|{Weapon_Type}")
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "CustomPartsR", new MhwMultiStructData(structs, "cus_par", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_par"]));
+            return new MultiStruct("Weapons", "CustomPartsR", new MhwMultiStructData(structs, "cus_par", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_par"]));
         }
     }
 }

@@ -174,7 +174,7 @@ namespace MHW_Generator.PlData {
                 }, 1, showVertically: true)
             };
 
-            return new MultiStruct("MHW_Editor.PlData", "PlMantleParam", new MhwMultiStructData(structs, "asp", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".asp"]));
+            return new MultiStruct("PlData", "PlMantleParam", new MhwMultiStructData(structs, "asp", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".asp"]));
         }
     }
 }

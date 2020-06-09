@@ -39,7 +39,7 @@ namespace MHW_Generator.Monsters {
                 }, 1, showVertically: true)
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "MonsterClawGrab", new MhwMultiStructData(structs, "dtt_clawc"));
+            return new MultiStruct("Monsters", "MonsterClawGrab", new MhwMultiStructData(structs, "dtt_clawc"));
         }
     }
 }

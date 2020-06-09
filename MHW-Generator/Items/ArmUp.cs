@@ -23,7 +23,7 @@ namespace MHW_Generator.Items {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Rarity}")
             };
 
-            return new MultiStruct("MHW_Editor.Items", "ArmUp", new MhwMultiStructData(structs, "arm_up"));
+            return new MultiStruct("Items", "ArmUp", new MhwMultiStructData(structs, "arm_up"));
         }
     }
 }

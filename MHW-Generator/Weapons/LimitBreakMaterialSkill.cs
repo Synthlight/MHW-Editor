@@ -19,7 +19,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "LimitBreakMaterialSkill", new MhwMultiStructData(structs, "lbm_skill"));
+            return new MultiStruct("Weapons", "LimitBreakMaterialSkill", new MhwMultiStructData(structs, "lbm_skill"));
         }
     }
 }

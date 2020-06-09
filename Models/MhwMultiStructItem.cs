@@ -5,6 +5,8 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using JetBrains.Annotations;
+using MHW_Editor.Util;
+using MHW_Editor.Windows;
 
 namespace MHW_Editor.Models {
     public abstract class MhwMultiStructItem<T> : SaveLoad<T>, ISaveLoad, IMhwMultiStructItem where T : ISaveLoad, IMhwMultiStructItem, new() {

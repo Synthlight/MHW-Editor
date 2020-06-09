@@ -21,14 +21,14 @@ namespace MHW_Generator {
             foreach (var type in types) {
                 var instance = (IMultiStruct) Activator.CreateInstance(type);
                 var data     = instance.Generate();
-                GenerateMultiStructProps(data.@namespace, data.className, data.mhwMultiStructData);
+                GenerateMultiStructProps(data.category, data.className, data.mhwMultiStructData);
             }
         }
 
-        public static void GenerateMultiStructProps(string @namespace, string className, MhwMultiStructData structData) {
-            WriteResult($"{Global.GENERATED_ROOT}\\{@namespace.Replace(".", "\\")}", className, new MultiStructItemTemplate {
+        public static void GenerateMultiStructProps(string category, string className, MhwMultiStructData structData) {
+            WriteResult($"{Global.GENERATED_ROOT}\\MHW_Editor\\Structs\\{category.Replace(".", "\\")}", className, new MultiStructItemTemplate {
                 Session = new Dictionary<string, object> {
-                    {"_namespace", @namespace},
+                    {"_namespace", $"MHW_Editor.Structs.{category}"},
                     {"className", className},
                     {"structData", structData}
                 }
@@ -36,7 +36,6 @@ namespace MHW_Generator {
 
             WriteResult($"{Global._010_OUTPUT_ROOT}", structData.ext, new MultiStruct010Template {
                 Session = new Dictionary<string, object> {
-                    {"_namespace", @namespace},
                     {"structData", structData}
                 }
             }, "bt");

@@ -45,7 +45,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "AwakenedLimitBreak", new MhwMultiStructData(structs, "em104lb"));
+            return new MultiStruct("Weapons", "AwakenedLimitBreak", new MhwMultiStructData(structs, "em104lb"));
         }
     }
 }

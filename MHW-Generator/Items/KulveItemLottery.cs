@@ -25,7 +25,7 @@ namespace MHW_Generator.Items {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Items", "KulveItemLottery", new MhwMultiStructData(structs, "em117iot"));
+            return new MultiStruct("Items", "KulveItemLottery", new MhwMultiStructData(structs, "em117iot"));
         }
     }
 }

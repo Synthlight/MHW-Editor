@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MHW_Editor.Assets;
-using MHW_Editor.Items;
+using MHW_Editor.Structs.Items;
 using MHW_Template;
 
 namespace MHW_Generator_Data {

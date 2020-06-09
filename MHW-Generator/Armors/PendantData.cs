@@ -26,7 +26,7 @@ namespace MHW_Generator.Armors {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Armors", "PendantData", new MhwMultiStructData(structs, "ch_dat"));
+            return new MultiStruct("Armors", "PendantData", new MhwMultiStructData(structs, "ch_dat"));
         }
     }
 }

@@ -19,7 +19,7 @@ namespace MHW_Generator.Items {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Fertilizer_Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Items", "PlantFertilizer", new MhwMultiStructData(structs, "plfe"));
+            return new MultiStruct("Items", "PlantFertilizer", new MhwMultiStructData(structs, "plfe"));
         }
     }
 }

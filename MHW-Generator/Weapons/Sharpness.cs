@@ -20,7 +20,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "Sharpness", new MhwMultiStructData(structs, "kire"));
+            return new MultiStruct("Weapons", "Sharpness", new MhwMultiStructData(structs, "kire"));
         }
     }
 }

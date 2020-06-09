@@ -32,7 +32,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "OtomoWeaponDat", new MhwMultiStructData(structs, "owp_dat", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".owp_dat"]));
+            return new MultiStruct("Weapons", "OtomoWeaponDat", new MhwMultiStructData(structs, "owp_dat", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".owp_dat"]));
         }
     }
 }

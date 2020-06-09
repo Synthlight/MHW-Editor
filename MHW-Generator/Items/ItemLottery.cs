@@ -43,7 +43,7 @@ namespace MHW_Generator.Items {
                 new MhwMultiStructData.StructData("Entries", flatLongView, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Items", "ItemLottery", new MhwMultiStructData(structs, "itlot", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".itlot"]));
+            return new MultiStruct("Items", "ItemLottery", new MhwMultiStructData(structs, "itlot", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".itlot"]));
         }
     }
 }

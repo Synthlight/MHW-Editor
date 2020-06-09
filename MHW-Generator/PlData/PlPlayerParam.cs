@@ -488,7 +488,7 @@ namespace MHW_Generator.PlData {
                 }, 1)
             });
 
-            return new MultiStruct("MHW_Editor.PlData", "PlPlayerParam", new MhwMultiStructData(structs, "plp", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plp"]));
+            return new MultiStruct("PlData", "PlPlayerParam", new MhwMultiStructData(structs, "plp", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plp"]));
         }
     }
 }

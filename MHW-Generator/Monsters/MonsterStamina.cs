@@ -46,7 +46,7 @@ namespace MHW_Generator.Monsters {
                 }, 1)
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "MonsterStamina", new MhwMultiStructData(structs, "dtt_sta"));
+            return new MultiStruct("Monsters", "MonsterStamina", new MhwMultiStructData(structs, "dtt_sta"));
         }
     }
 }

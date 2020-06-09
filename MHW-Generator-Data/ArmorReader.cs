@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using MHW_Editor.Armors;
 using MHW_Editor.Assets;
+using MHW_Editor.Structs.Armors;
 using MHW_Template;
 using MHW_Template.Armors;
 

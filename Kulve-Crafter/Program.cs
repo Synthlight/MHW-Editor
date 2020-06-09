@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using MHW_Editor.Assets;
-using MHW_Editor.Items;
+using MHW_Editor.Structs.Items;
 using MHW_Template.Armors;
 using MHW_Template.Weapons;
 

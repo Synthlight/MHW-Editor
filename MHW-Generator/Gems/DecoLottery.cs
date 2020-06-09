@@ -26,7 +26,7 @@ namespace MHW_Generator.Gems {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Item_Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Gems", "DecoLottery", new MhwMultiStructData(structs, "diot"));
+            return new MultiStruct("Gems", "DecoLottery", new MhwMultiStructData(structs, "diot"));
         }
     }
 }

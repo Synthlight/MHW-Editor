@@ -34,7 +34,7 @@ namespace MHW_Generator.Monsters {
                 }, 2)
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "MonsterEnrage", new MhwMultiStructData(structs, "dtt_agr"));
+            return new MultiStruct("Monsters", "MonsterEnrage", new MhwMultiStructData(structs, "dtt_agr"));
         }
     }
 }

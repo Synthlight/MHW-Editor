@@ -39,7 +39,7 @@ namespace MHW_Generator.Misc {
                 }, 1)
             };
 
-            return new MultiStruct("MHW_Editor.Misc", "MotionBlendData", new MhwMultiStructData(structs, "mbd"));
+            return new MultiStruct("Misc", "MotionBlendData", new MhwMultiStructData(structs, "mbd"));
         }
     }
 }

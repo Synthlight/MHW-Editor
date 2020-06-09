@@ -23,7 +23,7 @@ namespace MHW_Generator.Armors {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Mantle_Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Armors", "ASkill", new MhwMultiStructData(structs, "ask"));
+            return new MultiStruct("Armors", "ASkill", new MhwMultiStructData(structs, "ask"));
         }
     }
 }

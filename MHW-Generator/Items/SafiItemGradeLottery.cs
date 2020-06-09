@@ -30,7 +30,7 @@ namespace MHW_Generator.Items {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Item_Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Items", "SafiItemGradeLottery", new MhwMultiStructData(structs, "em104glt"));
+            return new MultiStruct("Items", "SafiItemGradeLottery", new MhwMultiStructData(structs, "em104glt"));
         }
     }
 }

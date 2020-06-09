@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using MHW_Editor.Windows;
 
 namespace MHW_Editor.Controls.Models {
     public interface IMhwDataGrid<T> where T : class {

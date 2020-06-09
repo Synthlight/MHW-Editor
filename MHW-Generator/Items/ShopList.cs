@@ -21,7 +21,7 @@ namespace MHW_Generator.Items {
                 }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Items", "ShopList", new MhwMultiStructData(structs, "slt"));
+            return new MultiStruct("Items", "ShopList", new MhwMultiStructData(structs, "slt"));
         }
     }
 }

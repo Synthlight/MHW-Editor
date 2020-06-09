@@ -354,7 +354,7 @@ namespace MHW_Generator.Weapons {
                 oap
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "Collision", new MhwMultiStructData(structs, "col"));
+            return new MultiStruct("Weapons", "Collision", new MhwMultiStructData(structs, "col"));
         }
     }
 }

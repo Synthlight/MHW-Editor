@@ -13,7 +13,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "AwakenedExp", new MhwMultiStructData(structs, "em104exp"));
+            return new MultiStruct("Weapons", "AwakenedExp", new MhwMultiStructData(structs, "em104exp"));
         }
     }
 }

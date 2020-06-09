@@ -29,7 +29,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "RodInsect", new MhwMultiStructData(structs, "rod_inse", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".rod_inse"]));
+            return new MultiStruct("Weapons", "RodInsect", new MhwMultiStructData(structs, "rod_inse", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".rod_inse"]));
         }
     }
 }

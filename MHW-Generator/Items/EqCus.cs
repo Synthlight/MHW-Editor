@@ -36,7 +36,7 @@ namespace MHW_Generator.Items {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Equipment_Category_Raw}|{Equipment_Index_Raw}")
             };
 
-            return new MultiStruct("MHW_Editor.Items", "EqCus", new MhwMultiStructData(structs, "eq_cus"));
+            return new MultiStruct("Items", "EqCus", new MhwMultiStructData(structs, "eq_cus"));
         }
     }
 }

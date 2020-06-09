@@ -26,7 +26,7 @@ namespace MHW_Generator.Monsters {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "EnemySort", new MhwMultiStructData(structs, "emst"));
+            return new MultiStruct("Monsters", "EnemySort", new MhwMultiStructData(structs, "emst"));
         }
     }
 }

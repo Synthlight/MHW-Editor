@@ -19,7 +19,7 @@ namespace MHW_Generator.Skills {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Song_Id_Raw}")
             };
 
-            return new MultiStruct("MHW_Editor.Skills", "MusicSkill", new MhwMultiStructData(structs, "msk", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".msk"]));
+            return new MultiStruct("Skills", "MusicSkill", new MhwMultiStructData(structs, "msk", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".msk"]));
         }
     }
 }

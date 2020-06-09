@@ -34,7 +34,7 @@ namespace MHW_Generator.Items {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Items", "Bounty", new MhwMultiStructData(structs, "odr"));
+            return new MultiStruct("Items", "Bounty", new MhwMultiStructData(structs, "odr"));
         }
     }
 }

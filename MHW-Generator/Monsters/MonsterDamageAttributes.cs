@@ -119,7 +119,7 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.StructData("Status Buildup: Clagger", statusBuildup, 1)
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "MonsterDamageAttributes", new MhwMultiStructData(structs, "dtt_eda", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".dtt_eda"]));
+            return new MultiStruct("Monsters", "MonsterDamageAttributes", new MhwMultiStructData(structs, "dtt_eda", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".dtt_eda"]));
         }
     }
 }

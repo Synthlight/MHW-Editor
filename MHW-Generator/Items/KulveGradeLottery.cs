@@ -23,7 +23,7 @@ namespace MHW_Generator.Items {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Item_Id}")
             };
 
-            return new MultiStruct("MHW_Editor.Items", "KulveGradeLottery", new MhwMultiStructData(structs, "em117glt"));
+            return new MultiStruct("Items", "KulveGradeLottery", new MhwMultiStructData(structs, "em117glt"));
         }
     }
 }

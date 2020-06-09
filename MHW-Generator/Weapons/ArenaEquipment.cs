@@ -64,7 +64,7 @@ namespace MHW_Generator.Weapons {
                 }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, entryCount))
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "ArenaEquipment", new MhwMultiStructData(structs, "aeq", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".aeq"]));
+            return new MultiStruct("Weapons", "ArenaEquipment", new MhwMultiStructData(structs, "aeq", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".aeq"]));
         }
     }
 }

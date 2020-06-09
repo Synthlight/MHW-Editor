@@ -24,7 +24,7 @@ namespace MHW_Generator.Items {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Item}")
             };
 
-            return new MultiStruct("MHW_Editor.Items", "PlantItem", new MhwMultiStructData(structs, "plit"));
+            return new MultiStruct("Items", "PlantItem", new MhwMultiStructData(structs, "plit"));
         }
     }
 }

@@ -30,7 +30,7 @@ namespace MHW_Generator.Monsters {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "AnimalSize", new MhwMultiStructData(structs, "ransz"));
+            return new MultiStruct("Monsters", "AnimalSize", new MhwMultiStructData(structs, "ransz"));
         }
     }
 }

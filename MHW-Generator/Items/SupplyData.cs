@@ -33,7 +33,7 @@ namespace MHW_Generator.Items {
                 }, 3)
             };
 
-            return new MultiStruct("MHW_Editor.Items", "SupplyData", new MhwMultiStructData(structs, "supp"));
+            return new MultiStruct("Items", "SupplyData", new MhwMultiStructData(structs, "supp"));
         }
     }
 }

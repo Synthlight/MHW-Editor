@@ -23,7 +23,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "CustomOuterWeapon", new MhwMultiStructData(structs, "cus_ou", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_ou"]));
+            return new MultiStruct("Weapons", "CustomOuterWeapon", new MhwMultiStructData(structs, "cus_ou", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_ou"]));
         }
     }
 }

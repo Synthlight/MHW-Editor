@@ -159,7 +159,7 @@ namespace MHW_Generator.PlData {
                 }, 1)
             };
 
-            return new MultiStruct("MHW_Editor.PlData", "PlItemParam", new MhwMultiStructData(structs, "plip", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plip"]));
+            return new MultiStruct("PlData", "PlItemParam", new MhwMultiStructData(structs, "plip", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plip"]));
         }
     }
 }

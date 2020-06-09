@@ -7,7 +7,7 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
-using MHW_Editor.Models;
+using MHW_Editor.Windows.Models;
 
 namespace MHW_Editor.Controls {
     public class AutoFilteredComboBox : ComboBox {

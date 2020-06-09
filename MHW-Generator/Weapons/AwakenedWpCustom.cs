@@ -17,7 +17,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "AwakenedWpCustom", new MhwMultiStructData(structs, "em104wcd"));
+            return new MultiStruct("Weapons", "AwakenedWpCustom", new MhwMultiStructData(structs, "em104wcd"));
         }
     }
 }

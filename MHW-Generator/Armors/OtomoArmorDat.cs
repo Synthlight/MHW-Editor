@@ -32,7 +32,7 @@ namespace MHW_Generator.Armors {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Set_Id}|{Variant}|{Equip_Slot}")
             };
 
-            return new MultiStruct("MHW_Editor.Armors", "OtomoArmorDat", new MhwMultiStructData(structs, "owp_dat"));
+            return new MultiStruct("Armors", "OtomoArmorDat", new MhwMultiStructData(structs, "owp_dat"));
         }
     }
 }

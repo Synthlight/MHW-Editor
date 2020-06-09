@@ -16,7 +16,7 @@ namespace MHW_Generator.Items {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Items", "SwapC", new MhwMultiStructData(structs, "swpc"));
+            return new MultiStruct("Items", "SwapC", new MhwMultiStructData(structs, "swpc"));
         }
     }
 }

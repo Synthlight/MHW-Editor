@@ -535,7 +535,7 @@ namespace MHW_Generator.PlData {
                 }, 1, showVertically: true)
             });
 
-            return new MultiStruct("MHW_Editor.PlData", "PlSkillParam", new MhwMultiStructData(structs, "plsp", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plsp"]));
+            return new MultiStruct("PlData", "PlSkillParam", new MhwMultiStructData(structs, "plsp", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".plsp"]));
         }
     }
 }

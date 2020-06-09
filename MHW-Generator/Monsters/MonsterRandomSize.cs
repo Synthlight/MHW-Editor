@@ -35,7 +35,7 @@ namespace MHW_Generator.Monsters {
                 }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(crownCountHolder, crownCount))
             };
 
-            return new MultiStruct("MHW_Editor.Monsters", "MonsterRandomSize", new MhwMultiStructData(structs, "dtt_rsz"));
+            return new MultiStruct("Monsters", "MonsterRandomSize", new MhwMultiStructData(structs, "dtt_rsz"));
         }
     }
 }

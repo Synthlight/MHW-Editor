@@ -31,7 +31,7 @@ namespace MHW_Generator.Weapons {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
-            return new MultiStruct("MHW_Editor.Weapons", "CustomOuterRecipe", new MhwMultiStructData(structs, "cus_otr", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_otr"]));
+            return new MultiStruct("Weapons", "CustomOuterRecipe", new MhwMultiStructData(structs, "cus_otr", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".cus_otr"]));
         }
     }
 }

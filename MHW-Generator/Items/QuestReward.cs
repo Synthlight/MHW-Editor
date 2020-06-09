@@ -28,7 +28,7 @@ namespace MHW_Generator.Items {
                 }, 16)
             };
 
-            return new MultiStruct("MHW_Editor.Items", "QuestReward", new MhwMultiStructData(structs, "rem"));
+            return new MultiStruct("Items", "QuestReward", new MhwMultiStructData(structs, "rem"));
         }
     }
 }

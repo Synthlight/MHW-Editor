@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Controls;
+using MHW_Editor.Windows;
 
 namespace MHW_Editor.Models {
     public interface IMhwMultiStructItem {

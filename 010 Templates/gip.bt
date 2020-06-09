@@ -2,7 +2,7 @@
 //--- 010 Editor v10.0 Binary Template
 //   Authors: Many. See MHW Editor Cretits.
 // File Mask: *.gip
-//  Category: MHW_Editor.PlData
+//  Category: MHW-Editor
 //------------------------------------------------
 
 uint Magic_1<name="Magic 1">;
