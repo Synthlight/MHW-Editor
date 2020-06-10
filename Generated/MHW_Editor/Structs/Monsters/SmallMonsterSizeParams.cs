@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_3_raw == value) return;
                     Magic_3_raw = value;
+                    ChangedItems.Add(nameof(Magic_3));
                     OnPropertyChanged(nameof(Magic_3));
                 }
             }
@@ -77,6 +80,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Number_of_Size_Settings_raw == value) return;
                     Number_of_Size_Settings_raw = value;
+                    ChangedItems.Add(nameof(Number_of_Size_Settings));
                     OnPropertyChanged(nameof(Number_of_Size_Settings));
                 }
             }
@@ -130,6 +134,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Header_raw == value) return;
                     Header_raw = value;
+                    ChangedItems.Add(nameof(Header));
                     OnPropertyChanged(nameof(Header));
                 }
             }
@@ -144,6 +149,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Min_Size_raw == value) return;
                     Min_Size_raw = value;
+                    ChangedItems.Add(nameof(Min_Size));
                     OnPropertyChanged(nameof(Min_Size));
                 }
             }
@@ -158,6 +164,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Size_raw == value) return;
                     Max_Size_raw = value;
+                    ChangedItems.Add(nameof(Max_Size));
                     OnPropertyChanged(nameof(Max_Size));
                 }
             }
@@ -172,6 +179,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_f32__raw == value) return;
                     Unk_f32__raw = value;
+                    ChangedItems.Add(nameof(Unk_f32_));
                     OnPropertyChanged(nameof(Unk_f32_));
                 }
             }
@@ -187,6 +195,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Monster_Id_raw == value) return;
                     Monster_Id_raw = value;
+                    ChangedItems.Add(nameof(Monster_Id));
                     OnPropertyChanged(nameof(Monster_Id));
                     OnPropertyChanged(nameof(Monster_Id_button));
                 }

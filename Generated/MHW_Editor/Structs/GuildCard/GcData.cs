@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.GuildCard {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.GuildCard {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.GuildCard {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -108,6 +111,7 @@ namespace MHW_Editor.Structs.GuildCard {
                 set {
                     if (Id_raw == value) return;
                     Id_raw = value;
+                    ChangedItems.Add(nameof(Id));
                     OnPropertyChanged(nameof(Id));
                 }
             }
@@ -122,6 +126,7 @@ namespace MHW_Editor.Structs.GuildCard {
                 set {
                     if ((MHW_Template.GuildCard.UnlockType) Unlock_Type_raw == value) return;
                     Unlock_Type_raw = (int) value;
+                    ChangedItems.Add(nameof(Unlock_Type));
                     OnPropertyChanged(nameof(Unlock_Type));
                 }
             }
@@ -136,6 +141,7 @@ namespace MHW_Editor.Structs.GuildCard {
                 set {
                     if (Unlock_Param_raw == value) return;
                     Unlock_Param_raw = value;
+                    ChangedItems.Add(nameof(Unlock_Param));
                     OnPropertyChanged(nameof(Unlock_Param));
                 }
             }
@@ -151,6 +157,7 @@ namespace MHW_Editor.Structs.GuildCard {
                 set {
                     if (Monster_Id_raw == value) return;
                     Monster_Id_raw = value;
+                    ChangedItems.Add(nameof(Monster_Id));
                     OnPropertyChanged(nameof(Monster_Id));
                     OnPropertyChanged(nameof(Monster_Id_button));
                 }
@@ -171,6 +178,7 @@ namespace MHW_Editor.Structs.GuildCard {
                 set {
                     if (Unk_raw == value) return;
                     Unk_raw = value;
+                    ChangedItems.Add(nameof(Unk));
                     OnPropertyChanged(nameof(Unk));
                 }
             }

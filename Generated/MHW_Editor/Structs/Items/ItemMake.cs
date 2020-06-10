@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Id_raw == value) return;
                     Id_raw = value;
+                    ChangedItems.Add(nameof(Id));
                     OnPropertyChanged(nameof(Id));
                 }
             }
@@ -123,6 +127,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk1_raw == value) return;
                     Unk1_raw = value;
+                    ChangedItems.Add(nameof(Unk1));
                     OnPropertyChanged(nameof(Unk1));
                 }
             }
@@ -138,6 +143,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Mat_1_Id_raw == value) return;
                     Mat_1_Id_raw = value;
+                    ChangedItems.Add(nameof(Mat_1_Id));
                     OnPropertyChanged(nameof(Mat_1_Id));
                     OnPropertyChanged(nameof(Mat_1_Id_button));
                 }
@@ -159,6 +165,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Mat_2_Id_raw == value) return;
                     Mat_2_Id_raw = value;
+                    ChangedItems.Add(nameof(Mat_2_Id));
                     OnPropertyChanged(nameof(Mat_2_Id));
                     OnPropertyChanged(nameof(Mat_2_Id_button));
                 }
@@ -180,6 +187,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Result_Id_raw == value) return;
                     Result_Id_raw = value;
+                    ChangedItems.Add(nameof(Result_Id));
                     OnPropertyChanged(nameof(Result_Id));
                     OnPropertyChanged(nameof(Result_Id_button));
                 }
@@ -200,6 +208,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Quantity_raw == value) return;
                     Quantity_raw = value;
+                    ChangedItems.Add(nameof(Quantity));
                     OnPropertyChanged(nameof(Quantity));
                 }
             }
@@ -214,6 +223,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk2_raw == value) return;
                     Unk2_raw = value;
+                    ChangedItems.Add(nameof(Unk2));
                     OnPropertyChanged(nameof(Unk2));
                 }
             }
@@ -228,6 +238,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.ItemCategory) Category_raw == value) return;
                     Category_raw = (uint) value;
+                    ChangedItems.Add(nameof(Category));
                     OnPropertyChanged(nameof(Category));
                 }
             }
@@ -242,6 +253,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Convert.ToBoolean(Can_Auto_Craft_raw) == value) return;
                     Can_Auto_Craft_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Can_Auto_Craft));
                     OnPropertyChanged(nameof(Can_Auto_Craft));
                 }
             }

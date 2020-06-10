@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Id_raw == value) return;
                     Id_raw = value;
+                    ChangedItems.Add(nameof(Id));
                     OnPropertyChanged(nameof(Id));
                 }
             }
@@ -124,6 +128,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Level_raw == value) return;
                     Level_raw = value;
+                    ChangedItems.Add(nameof(Level));
                     OnPropertyChanged(nameof(Level));
                 }
             }
@@ -139,6 +144,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Unlock_Skill_1_raw == value) return;
                     Unlock_Skill_1_raw = value;
+                    ChangedItems.Add(nameof(Unlock_Skill_1));
                     OnPropertyChanged(nameof(Unlock_Skill_1));
                     OnPropertyChanged(nameof(Unlock_Skill_1_button));
                 }
@@ -160,6 +166,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Unlock_Skill_2_raw == value) return;
                     Unlock_Skill_2_raw = value;
+                    ChangedItems.Add(nameof(Unlock_Skill_2));
                     OnPropertyChanged(nameof(Unlock_Skill_2));
                     OnPropertyChanged(nameof(Unlock_Skill_2_button));
                 }
@@ -181,6 +188,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Unlock_Skill_3_raw == value) return;
                     Unlock_Skill_3_raw = value;
+                    ChangedItems.Add(nameof(Unlock_Skill_3));
                     OnPropertyChanged(nameof(Unlock_Skill_3));
                     OnPropertyChanged(nameof(Unlock_Skill_3_button));
                 }
@@ -202,6 +210,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Unlock_Skill_4_raw == value) return;
                     Unlock_Skill_4_raw = value;
+                    ChangedItems.Add(nameof(Unlock_Skill_4));
                     OnPropertyChanged(nameof(Unlock_Skill_4));
                     OnPropertyChanged(nameof(Unlock_Skill_4_button));
                 }
@@ -222,6 +231,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Param_5_raw == value) return;
                     Param_5_raw = value;
+                    ChangedItems.Add(nameof(Param_5));
                     OnPropertyChanged(nameof(Param_5));
                 }
             }
@@ -236,6 +246,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Param_6_raw == value) return;
                     Param_6_raw = value;
+                    ChangedItems.Add(nameof(Param_6));
                     OnPropertyChanged(nameof(Param_6));
                 }
             }
@@ -250,6 +261,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Param_7_raw == value) return;
                     Param_7_raw = value;
+                    ChangedItems.Add(nameof(Param_7));
                     OnPropertyChanged(nameof(Param_7));
                 }
             }
@@ -264,6 +276,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Param_8_raw == value) return;
                     Param_8_raw = value;
+                    ChangedItems.Add(nameof(Param_8));
                     OnPropertyChanged(nameof(Param_8));
                 }
             }

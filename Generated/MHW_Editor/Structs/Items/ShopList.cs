@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_Count_raw == value) return;
                     Item_Count_raw = value;
+                    ChangedItems.Add(nameof(Item_Count));
                     OnPropertyChanged(nameof(Item_Count));
                 }
             }
@@ -113,6 +116,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((ulong) Index_raw == value) return;
                     Index_raw = (uint) value;
+                    ChangedItems.Add(nameof(Index));
                     OnPropertyChanged(nameof(Index));
                 }
             }
@@ -128,6 +132,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_Id_raw == value) return;
                     Item_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_Id));
                     OnPropertyChanged(nameof(Item_Id));
                     OnPropertyChanged(nameof(Item_Id_button));
                 }
@@ -148,6 +153,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Story_Unlock_raw == value) return;
                     Story_Unlock_raw = value;
+                    ChangedItems.Add(nameof(Story_Unlock));
                     OnPropertyChanged(nameof(Story_Unlock));
                 }
             }
@@ -162,6 +168,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk_raw == value) return;
                     Unk_raw = value;
+                    ChangedItems.Add(nameof(Unk));
                     OnPropertyChanged(nameof(Unk));
                 }
             }

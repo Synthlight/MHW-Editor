@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Number_of_Claggers_raw == value) return;
                     Number_of_Claggers_raw = value;
+                    ChangedItems.Add(nameof(Number_of_Claggers));
                     OnPropertyChanged(nameof(Number_of_Claggers));
                 }
             }
@@ -113,6 +116,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_f32__raw == value) return;
                     Unk_f32__raw = value;
+                    ChangedItems.Add(nameof(Unk_f32_));
                     OnPropertyChanged(nameof(Unk_f32_));
                 }
             }
@@ -127,6 +131,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Normal_raw == value) return;
                     Normal_raw = value;
+                    ChangedItems.Add(nameof(Normal));
                     OnPropertyChanged(nameof(Normal));
                 }
             }
@@ -141,6 +146,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Enraged_raw == value) return;
                     Enraged_raw = value;
+                    ChangedItems.Add(nameof(Enraged));
                     OnPropertyChanged(nameof(Enraged));
                 }
             }
@@ -155,6 +161,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Tired_raw == value) return;
                     Tired_raw = value;
+                    ChangedItems.Add(nameof(Tired));
                     OnPropertyChanged(nameof(Tired));
                 }
             }
@@ -169,6 +176,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_by_HP_90_100_raw == value) return;
                     Build_by_HP_90_100_raw = value;
+                    ChangedItems.Add(nameof(Build_by_HP_90_100));
                     OnPropertyChanged(nameof(Build_by_HP_90_100));
                 }
             }
@@ -183,6 +191,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_by_HP_80_90_raw == value) return;
                     Build_by_HP_80_90_raw = value;
+                    ChangedItems.Add(nameof(Build_by_HP_80_90));
                     OnPropertyChanged(nameof(Build_by_HP_80_90));
                 }
             }
@@ -197,6 +206,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_by_HP_70_80_raw == value) return;
                     Build_by_HP_70_80_raw = value;
+                    ChangedItems.Add(nameof(Build_by_HP_70_80));
                     OnPropertyChanged(nameof(Build_by_HP_70_80));
                 }
             }
@@ -211,6 +221,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_by_HP_60_70_raw == value) return;
                     Build_by_HP_60_70_raw = value;
+                    ChangedItems.Add(nameof(Build_by_HP_60_70));
                     OnPropertyChanged(nameof(Build_by_HP_60_70));
                 }
             }
@@ -225,6 +236,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_by_HP_50_60_raw == value) return;
                     Build_by_HP_50_60_raw = value;
+                    ChangedItems.Add(nameof(Build_by_HP_50_60));
                     OnPropertyChanged(nameof(Build_by_HP_50_60));
                 }
             }
@@ -239,6 +251,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_by_HP_40_50_raw == value) return;
                     Build_by_HP_40_50_raw = value;
+                    ChangedItems.Add(nameof(Build_by_HP_40_50));
                     OnPropertyChanged(nameof(Build_by_HP_40_50));
                 }
             }
@@ -253,6 +266,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_by_HP_30_40_raw == value) return;
                     Build_by_HP_30_40_raw = value;
+                    ChangedItems.Add(nameof(Build_by_HP_30_40));
                     OnPropertyChanged(nameof(Build_by_HP_30_40));
                 }
             }
@@ -267,6 +281,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_by_HP_20_30_raw == value) return;
                     Build_by_HP_20_30_raw = value;
+                    ChangedItems.Add(nameof(Build_by_HP_20_30));
                     OnPropertyChanged(nameof(Build_by_HP_20_30));
                 }
             }
@@ -281,6 +296,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_by_HP_10_20_raw == value) return;
                     Build_by_HP_10_20_raw = value;
+                    ChangedItems.Add(nameof(Build_by_HP_10_20));
                     OnPropertyChanged(nameof(Build_by_HP_10_20));
                 }
             }
@@ -295,6 +311,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_by_HP_0_10_raw == value) return;
                     Build_by_HP_0_10_raw = value;
+                    ChangedItems.Add(nameof(Build_by_HP_0_10));
                     OnPropertyChanged(nameof(Build_by_HP_0_10));
                 }
             }
@@ -309,6 +326,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Tenderize_Lv_State_LR_raw == value) return;
                     Tenderize_Lv_State_LR_raw = value;
+                    ChangedItems.Add(nameof(Tenderize_Lv_State_LR));
                     OnPropertyChanged(nameof(Tenderize_Lv_State_LR));
                 }
             }
@@ -323,6 +341,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Tenderize_Lv_State_HR_raw == value) return;
                     Tenderize_Lv_State_HR_raw = value;
+                    ChangedItems.Add(nameof(Tenderize_Lv_State_HR));
                     OnPropertyChanged(nameof(Tenderize_Lv_State_HR));
                 }
             }
@@ -337,6 +356,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Tenderize_Lv_State_MR_raw == value) return;
                     Tenderize_Lv_State_MR_raw = value;
+                    ChangedItems.Add(nameof(Tenderize_Lv_State_MR));
                     OnPropertyChanged(nameof(Tenderize_Lv_State_MR));
                 }
             }
@@ -411,6 +431,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Gimmick_Breaker_Collision_Unique_Id_Small_raw == value) return;
                     Gimmick_Breaker_Collision_Unique_Id_Small_raw = value;
+                    ChangedItems.Add(nameof(Gimmick_Breaker_Collision_Unique_Id_Small));
                     OnPropertyChanged(nameof(Gimmick_Breaker_Collision_Unique_Id_Small));
                 }
             }
@@ -425,6 +446,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Gimmick_Breaker_Collision_Unique_Id_Middle_raw == value) return;
                     Gimmick_Breaker_Collision_Unique_Id_Middle_raw = value;
+                    ChangedItems.Add(nameof(Gimmick_Breaker_Collision_Unique_Id_Middle));
                     OnPropertyChanged(nameof(Gimmick_Breaker_Collision_Unique_Id_Middle));
                 }
             }
@@ -439,6 +461,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Gimmick_Breaker_Collision_Unique_Id_Large_raw == value) return;
                     Gimmick_Breaker_Collision_Unique_Id_Large_raw = value;
+                    ChangedItems.Add(nameof(Gimmick_Breaker_Collision_Unique_Id_Large));
                     OnPropertyChanged(nameof(Gimmick_Breaker_Collision_Unique_Id_Large));
                 }
             }

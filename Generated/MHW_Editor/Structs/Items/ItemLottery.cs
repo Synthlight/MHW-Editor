@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -107,6 +110,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_1_Id_raw == value) return;
                     Item_1_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_1_Id));
                     OnPropertyChanged(nameof(Item_1_Id));
                     OnPropertyChanged(nameof(Item_1_Id_button));
                 }
@@ -127,6 +131,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_2_Id_raw == value) return;
                     Item_2_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_2_Id));
                     OnPropertyChanged(nameof(Item_2_Id));
                     OnPropertyChanged(nameof(Item_2_Id_button));
                 }
@@ -147,6 +152,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_3_Id_raw == value) return;
                     Item_3_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_3_Id));
                     OnPropertyChanged(nameof(Item_3_Id));
                     OnPropertyChanged(nameof(Item_3_Id_button));
                 }
@@ -167,6 +173,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_4_Id_raw == value) return;
                     Item_4_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_4_Id));
                     OnPropertyChanged(nameof(Item_4_Id));
                     OnPropertyChanged(nameof(Item_4_Id_button));
                 }
@@ -187,6 +194,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_5_Id_raw == value) return;
                     Item_5_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_5_Id));
                     OnPropertyChanged(nameof(Item_5_Id));
                     OnPropertyChanged(nameof(Item_5_Id_button));
                 }
@@ -207,6 +215,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_6_Id_raw == value) return;
                     Item_6_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_6_Id));
                     OnPropertyChanged(nameof(Item_6_Id));
                     OnPropertyChanged(nameof(Item_6_Id_button));
                 }
@@ -227,6 +236,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_7_Id_raw == value) return;
                     Item_7_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_7_Id));
                     OnPropertyChanged(nameof(Item_7_Id));
                     OnPropertyChanged(nameof(Item_7_Id_button));
                 }
@@ -247,6 +257,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_8_Id_raw == value) return;
                     Item_8_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_8_Id));
                     OnPropertyChanged(nameof(Item_8_Id));
                     OnPropertyChanged(nameof(Item_8_Id_button));
                 }
@@ -267,6 +278,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_9_Id_raw == value) return;
                     Item_9_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_9_Id));
                     OnPropertyChanged(nameof(Item_9_Id));
                     OnPropertyChanged(nameof(Item_9_Id_button));
                 }
@@ -287,6 +299,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_10_Id_raw == value) return;
                     Item_10_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_10_Id));
                     OnPropertyChanged(nameof(Item_10_Id));
                     OnPropertyChanged(nameof(Item_10_Id_button));
                 }
@@ -306,6 +319,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_1_Count_raw == value) return;
                     Item_1_Count_raw = value;
+                    ChangedItems.Add(nameof(Item_1_Count));
                     OnPropertyChanged(nameof(Item_1_Count));
                 }
             }
@@ -319,6 +333,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_2_Count_raw == value) return;
                     Item_2_Count_raw = value;
+                    ChangedItems.Add(nameof(Item_2_Count));
                     OnPropertyChanged(nameof(Item_2_Count));
                 }
             }
@@ -332,6 +347,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_3_Count_raw == value) return;
                     Item_3_Count_raw = value;
+                    ChangedItems.Add(nameof(Item_3_Count));
                     OnPropertyChanged(nameof(Item_3_Count));
                 }
             }
@@ -345,6 +361,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_4_Count_raw == value) return;
                     Item_4_Count_raw = value;
+                    ChangedItems.Add(nameof(Item_4_Count));
                     OnPropertyChanged(nameof(Item_4_Count));
                 }
             }
@@ -358,6 +375,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_5_Count_raw == value) return;
                     Item_5_Count_raw = value;
+                    ChangedItems.Add(nameof(Item_5_Count));
                     OnPropertyChanged(nameof(Item_5_Count));
                 }
             }
@@ -371,6 +389,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_6_Count_raw == value) return;
                     Item_6_Count_raw = value;
+                    ChangedItems.Add(nameof(Item_6_Count));
                     OnPropertyChanged(nameof(Item_6_Count));
                 }
             }
@@ -384,6 +403,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_7_Count_raw == value) return;
                     Item_7_Count_raw = value;
+                    ChangedItems.Add(nameof(Item_7_Count));
                     OnPropertyChanged(nameof(Item_7_Count));
                 }
             }
@@ -397,6 +417,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_8_Count_raw == value) return;
                     Item_8_Count_raw = value;
+                    ChangedItems.Add(nameof(Item_8_Count));
                     OnPropertyChanged(nameof(Item_8_Count));
                 }
             }
@@ -410,6 +431,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_9_Count_raw == value) return;
                     Item_9_Count_raw = value;
+                    ChangedItems.Add(nameof(Item_9_Count));
                     OnPropertyChanged(nameof(Item_9_Count));
                 }
             }
@@ -423,6 +445,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_10_Count_raw == value) return;
                     Item_10_Count_raw = value;
+                    ChangedItems.Add(nameof(Item_10_Count));
                     OnPropertyChanged(nameof(Item_10_Count));
                 }
             }
@@ -436,6 +459,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_1__raw == value.Clamp((byte) 0, (byte) 100)) return;
                     Item_1__raw = value.Clamp((byte) 0, (byte) 100);
+                    ChangedItems.Add(nameof(Item_1_));
                     OnPropertyChanged(nameof(Item_1_));
                 }
             }
@@ -449,6 +473,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_2__raw == value.Clamp((byte) 0, (byte) 100)) return;
                     Item_2__raw = value.Clamp((byte) 0, (byte) 100);
+                    ChangedItems.Add(nameof(Item_2_));
                     OnPropertyChanged(nameof(Item_2_));
                 }
             }
@@ -462,6 +487,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_3__raw == value.Clamp((byte) 0, (byte) 100)) return;
                     Item_3__raw = value.Clamp((byte) 0, (byte) 100);
+                    ChangedItems.Add(nameof(Item_3_));
                     OnPropertyChanged(nameof(Item_3_));
                 }
             }
@@ -475,6 +501,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_4__raw == value.Clamp((byte) 0, (byte) 100)) return;
                     Item_4__raw = value.Clamp((byte) 0, (byte) 100);
+                    ChangedItems.Add(nameof(Item_4_));
                     OnPropertyChanged(nameof(Item_4_));
                 }
             }
@@ -488,6 +515,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_5__raw == value.Clamp((byte) 0, (byte) 100)) return;
                     Item_5__raw = value.Clamp((byte) 0, (byte) 100);
+                    ChangedItems.Add(nameof(Item_5_));
                     OnPropertyChanged(nameof(Item_5_));
                 }
             }
@@ -501,6 +529,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_6__raw == value.Clamp((byte) 0, (byte) 100)) return;
                     Item_6__raw = value.Clamp((byte) 0, (byte) 100);
+                    ChangedItems.Add(nameof(Item_6_));
                     OnPropertyChanged(nameof(Item_6_));
                 }
             }
@@ -514,6 +543,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_7__raw == value.Clamp((byte) 0, (byte) 100)) return;
                     Item_7__raw = value.Clamp((byte) 0, (byte) 100);
+                    ChangedItems.Add(nameof(Item_7_));
                     OnPropertyChanged(nameof(Item_7_));
                 }
             }
@@ -527,6 +557,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_8__raw == value.Clamp((byte) 0, (byte) 100)) return;
                     Item_8__raw = value.Clamp((byte) 0, (byte) 100);
+                    ChangedItems.Add(nameof(Item_8_));
                     OnPropertyChanged(nameof(Item_8_));
                 }
             }
@@ -540,6 +571,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_9__raw == value.Clamp((byte) 0, (byte) 100)) return;
                     Item_9__raw = value.Clamp((byte) 0, (byte) 100);
+                    ChangedItems.Add(nameof(Item_9_));
                     OnPropertyChanged(nameof(Item_9_));
                 }
             }
@@ -553,6 +585,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_10__raw == value.Clamp((byte) 0, (byte) 100)) return;
                     Item_10__raw = value.Clamp((byte) 0, (byte) 100);
+                    ChangedItems.Add(nameof(Item_10_));
                     OnPropertyChanged(nameof(Item_10_));
                 }
             }
@@ -566,6 +599,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.CarveAnimation) Item_1_Carve_Animation_raw == value) return;
                     Item_1_Carve_Animation_raw = (byte) value;
+                    ChangedItems.Add(nameof(Item_1_Carve_Animation));
                     OnPropertyChanged(nameof(Item_1_Carve_Animation));
                 }
             }
@@ -579,6 +613,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.CarveAnimation) Item_2_Carve_Animation_raw == value) return;
                     Item_2_Carve_Animation_raw = (byte) value;
+                    ChangedItems.Add(nameof(Item_2_Carve_Animation));
                     OnPropertyChanged(nameof(Item_2_Carve_Animation));
                 }
             }
@@ -592,6 +627,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.CarveAnimation) Item_3_Carve_Animation_raw == value) return;
                     Item_3_Carve_Animation_raw = (byte) value;
+                    ChangedItems.Add(nameof(Item_3_Carve_Animation));
                     OnPropertyChanged(nameof(Item_3_Carve_Animation));
                 }
             }
@@ -605,6 +641,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.CarveAnimation) Item_4_Carve_Animation_raw == value) return;
                     Item_4_Carve_Animation_raw = (byte) value;
+                    ChangedItems.Add(nameof(Item_4_Carve_Animation));
                     OnPropertyChanged(nameof(Item_4_Carve_Animation));
                 }
             }
@@ -618,6 +655,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.CarveAnimation) Item_5_Carve_Animation_raw == value) return;
                     Item_5_Carve_Animation_raw = (byte) value;
+                    ChangedItems.Add(nameof(Item_5_Carve_Animation));
                     OnPropertyChanged(nameof(Item_5_Carve_Animation));
                 }
             }
@@ -631,6 +669,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.CarveAnimation) Item_6_Carve_Animation_raw == value) return;
                     Item_6_Carve_Animation_raw = (byte) value;
+                    ChangedItems.Add(nameof(Item_6_Carve_Animation));
                     OnPropertyChanged(nameof(Item_6_Carve_Animation));
                 }
             }
@@ -644,6 +683,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.CarveAnimation) Item_7_Carve_Animation_raw == value) return;
                     Item_7_Carve_Animation_raw = (byte) value;
+                    ChangedItems.Add(nameof(Item_7_Carve_Animation));
                     OnPropertyChanged(nameof(Item_7_Carve_Animation));
                 }
             }
@@ -657,6 +697,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.CarveAnimation) Item_8_Carve_Animation_raw == value) return;
                     Item_8_Carve_Animation_raw = (byte) value;
+                    ChangedItems.Add(nameof(Item_8_Carve_Animation));
                     OnPropertyChanged(nameof(Item_8_Carve_Animation));
                 }
             }
@@ -670,6 +711,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.CarveAnimation) Item_9_Carve_Animation_raw == value) return;
                     Item_9_Carve_Animation_raw = (byte) value;
+                    ChangedItems.Add(nameof(Item_9_Carve_Animation));
                     OnPropertyChanged(nameof(Item_9_Carve_Animation));
                 }
             }
@@ -683,6 +725,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.CarveAnimation) Item_10_Carve_Animation_raw == value) return;
                     Item_10_Carve_Animation_raw = (byte) value;
+                    ChangedItems.Add(nameof(Item_10_Carve_Animation));
                     OnPropertyChanged(nameof(Item_10_Carve_Animation));
                 }
             }

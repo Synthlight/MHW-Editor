@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Id_raw == value) return;
                     Id_raw = value;
+                    ChangedItems.Add(nameof(Id));
                     OnPropertyChanged(nameof(Id));
                 }
             }
@@ -123,6 +127,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk1_raw == value) return;
                     Unk1_raw = value;
+                    ChangedItems.Add(nameof(Unk1));
                     OnPropertyChanged(nameof(Unk1));
                 }
             }
@@ -137,6 +142,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk2_raw == value) return;
                     Unk2_raw = value;
+                    ChangedItems.Add(nameof(Unk2));
                     OnPropertyChanged(nameof(Unk2));
                 }
             }
@@ -151,6 +157,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk3_raw == value) return;
                     Unk3_raw = value;
+                    ChangedItems.Add(nameof(Unk3));
                     OnPropertyChanged(nameof(Unk3));
                 }
             }
@@ -165,6 +172,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk4_raw == value) return;
                     Unk4_raw = value;
+                    ChangedItems.Add(nameof(Unk4));
                     OnPropertyChanged(nameof(Unk4));
                 }
             }
@@ -179,6 +187,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk5_raw == value) return;
                     Unk5_raw = value;
+                    ChangedItems.Add(nameof(Unk5));
                     OnPropertyChanged(nameof(Unk5));
                 }
             }
@@ -193,6 +202,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.RankType) Rank_raw == value) return;
                     Rank_raw = (uint) value;
+                    ChangedItems.Add(nameof(Rank));
                     OnPropertyChanged(nameof(Rank));
                 }
             }
@@ -207,6 +217,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.BountyType) Type_raw == value) return;
                     Type_raw = (uint) value;
+                    ChangedItems.Add(nameof(Type));
                     OnPropertyChanged(nameof(Type));
                 }
             }
@@ -221,6 +232,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk8_raw == value) return;
                     Unk8_raw = value;
+                    ChangedItems.Add(nameof(Unk8));
                     OnPropertyChanged(nameof(Unk8));
                 }
             }
@@ -235,6 +247,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.MonsterType) Monster_Type_raw == value) return;
                     Monster_Type_raw = (int) value;
+                    ChangedItems.Add(nameof(Monster_Type));
                     OnPropertyChanged(nameof(Monster_Type));
                 }
             }
@@ -249,6 +262,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk10_raw == value) return;
                     Unk10_raw = value;
+                    ChangedItems.Add(nameof(Unk10));
                     OnPropertyChanged(nameof(Unk10));
                 }
             }
@@ -263,6 +277,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.Location) Map_raw == value) return;
                     Map_raw = (uint) value;
+                    ChangedItems.Add(nameof(Map));
                     OnPropertyChanged(nameof(Map));
                 }
             }
@@ -277,6 +292,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Target_Count_raw == value) return;
                     Target_Count_raw = value;
+                    ChangedItems.Add(nameof(Target_Count));
                     OnPropertyChanged(nameof(Target_Count));
                 }
             }
@@ -292,6 +308,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_Id_1_raw == value) return;
                     Item_Id_1_raw = value;
+                    ChangedItems.Add(nameof(Item_Id_1));
                     OnPropertyChanged(nameof(Item_Id_1));
                     OnPropertyChanged(nameof(Item_Id_1_button));
                 }
@@ -312,6 +329,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_Id_1_Cnt_raw == value) return;
                     Item_Id_1_Cnt_raw = value;
+                    ChangedItems.Add(nameof(Item_Id_1_Cnt));
                     OnPropertyChanged(nameof(Item_Id_1_Cnt));
                 }
             }
@@ -327,6 +345,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_Id_2_raw == value) return;
                     Item_Id_2_raw = value;
+                    ChangedItems.Add(nameof(Item_Id_2));
                     OnPropertyChanged(nameof(Item_Id_2));
                     OnPropertyChanged(nameof(Item_Id_2_button));
                 }
@@ -347,6 +366,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_Id_2_Cnt_raw == value) return;
                     Item_Id_2_Cnt_raw = value;
+                    ChangedItems.Add(nameof(Item_Id_2_Cnt));
                     OnPropertyChanged(nameof(Item_Id_2_Cnt));
                 }
             }
@@ -362,6 +382,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_Id_3_raw == value) return;
                     Item_Id_3_raw = value;
+                    ChangedItems.Add(nameof(Item_Id_3));
                     OnPropertyChanged(nameof(Item_Id_3));
                     OnPropertyChanged(nameof(Item_Id_3_button));
                 }
@@ -382,6 +403,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_Id_3_Cnt_raw == value) return;
                     Item_Id_3_Cnt_raw = value;
+                    ChangedItems.Add(nameof(Item_Id_3_Cnt));
                     OnPropertyChanged(nameof(Item_Id_3_Cnt));
                 }
             }
@@ -396,6 +418,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Research_Points_raw == value) return;
                     Research_Points_raw = value;
+                    ChangedItems.Add(nameof(Research_Points));
                     OnPropertyChanged(nameof(Research_Points));
                 }
             }

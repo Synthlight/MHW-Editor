@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -63,6 +65,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Monster_Id_raw == value) return;
                     Monster_Id_raw = value;
+                    ChangedItems.Add(nameof(Monster_Id));
                     OnPropertyChanged(nameof(Monster_Id));
                     OnPropertyChanged(nameof(Monster_Id_button));
                 }
@@ -84,6 +87,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_3_raw == value) return;
                     Magic_3_raw = value;
+                    ChangedItems.Add(nameof(Magic_3));
                     OnPropertyChanged(nameof(Magic_3));
                 }
             }
@@ -131,6 +135,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_to_Trigger_raw == value.Clamp((int) -1, (int) int.MaxValue)) return;
                     Build_to_Trigger_raw = value.Clamp((int) -1, (int) int.MaxValue);
+                    ChangedItems.Add(nameof(Build_to_Trigger));
                     OnPropertyChanged(nameof(Build_to_Trigger));
                 }
             }
@@ -145,6 +150,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -159,6 +165,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Speed_Modifier_raw == value) return;
                     Speed_Modifier_raw = value;
+                    ChangedItems.Add(nameof(Speed_Modifier));
                     OnPropertyChanged(nameof(Speed_Modifier));
                 }
             }
@@ -173,6 +180,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Damage_Modifier_raw == value) return;
                     Damage_Modifier_raw = value;
+                    ChangedItems.Add(nameof(Damage_Modifier));
                     OnPropertyChanged(nameof(Damage_Modifier));
                 }
             }
@@ -187,6 +195,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Player_Damage_Modifier_raw == value) return;
                     Player_Damage_Modifier_raw = value;
+                    ChangedItems.Add(nameof(Player_Damage_Modifier));
                     OnPropertyChanged(nameof(Player_Damage_Modifier));
                 }
             }
@@ -201,6 +210,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_Multiplier_by_HP_100__raw == value) return;
                     Build_Multiplier_by_HP_100__raw = value;
+                    ChangedItems.Add(nameof(Build_Multiplier_by_HP_100_));
                     OnPropertyChanged(nameof(Build_Multiplier_by_HP_100_));
                 }
             }
@@ -215,6 +225,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_Multiplier_by_HP_88_99__raw == value) return;
                     Build_Multiplier_by_HP_88_99__raw = value;
+                    ChangedItems.Add(nameof(Build_Multiplier_by_HP_88_99_));
                     OnPropertyChanged(nameof(Build_Multiplier_by_HP_88_99_));
                 }
             }
@@ -229,6 +240,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_Multiplier_by_HP_77_88__raw == value) return;
                     Build_Multiplier_by_HP_77_88__raw = value;
+                    ChangedItems.Add(nameof(Build_Multiplier_by_HP_77_88_));
                     OnPropertyChanged(nameof(Build_Multiplier_by_HP_77_88_));
                 }
             }
@@ -243,6 +255,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_Multiplier_by_HP_66_77__raw == value) return;
                     Build_Multiplier_by_HP_66_77__raw = value;
+                    ChangedItems.Add(nameof(Build_Multiplier_by_HP_66_77_));
                     OnPropertyChanged(nameof(Build_Multiplier_by_HP_66_77_));
                 }
             }
@@ -257,6 +270,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_Multiplier_by_HP_55_66__raw == value) return;
                     Build_Multiplier_by_HP_55_66__raw = value;
+                    ChangedItems.Add(nameof(Build_Multiplier_by_HP_55_66_));
                     OnPropertyChanged(nameof(Build_Multiplier_by_HP_55_66_));
                 }
             }
@@ -271,6 +285,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_Multiplier_by_HP_44_55__raw == value) return;
                     Build_Multiplier_by_HP_44_55__raw = value;
+                    ChangedItems.Add(nameof(Build_Multiplier_by_HP_44_55_));
                     OnPropertyChanged(nameof(Build_Multiplier_by_HP_44_55_));
                 }
             }
@@ -285,6 +300,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_Multiplier_by_HP_33_44__raw == value) return;
                     Build_Multiplier_by_HP_33_44__raw = value;
+                    ChangedItems.Add(nameof(Build_Multiplier_by_HP_33_44_));
                     OnPropertyChanged(nameof(Build_Multiplier_by_HP_33_44_));
                 }
             }
@@ -299,6 +315,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_Multiplier_by_HP_22_33__raw == value) return;
                     Build_Multiplier_by_HP_22_33__raw = value;
+                    ChangedItems.Add(nameof(Build_Multiplier_by_HP_22_33_));
                     OnPropertyChanged(nameof(Build_Multiplier_by_HP_22_33_));
                 }
             }
@@ -313,6 +330,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_Multiplier_by_HP_11_22__raw == value) return;
                     Build_Multiplier_by_HP_11_22__raw = value;
+                    ChangedItems.Add(nameof(Build_Multiplier_by_HP_11_22_));
                     OnPropertyChanged(nameof(Build_Multiplier_by_HP_11_22_));
                 }
             }
@@ -327,6 +345,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Build_Multiplier_by_HP_0_11__raw == value) return;
                     Build_Multiplier_by_HP_0_11__raw = value;
+                    ChangedItems.Add(nameof(Build_Multiplier_by_HP_0_11_));
                     OnPropertyChanged(nameof(Build_Multiplier_by_HP_0_11_));
                 }
             }
@@ -341,6 +360,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Out_of_Combat_Decay_Multiplier_raw == value) return;
                     Out_of_Combat_Decay_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Out_of_Combat_Decay_Multiplier));
                     OnPropertyChanged(nameof(Out_of_Combat_Decay_Multiplier));
                 }
             }

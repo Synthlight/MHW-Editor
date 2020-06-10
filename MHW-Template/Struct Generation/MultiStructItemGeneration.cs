@@ -157,6 +157,7 @@ namespace MHW_Template.Struct_Generation {
                 template.WriteLine(indentation, $"                    {entryName} = {setCast}{entry.valueString};");
             }
 
+            template.WriteLine(indentation, $"                    ChangedItems.Add(nameof({propName}));");
             template.WriteLine(indentation, $"                    OnPropertyChanged(nameof({propName}));");
 
             if (entry.dataSourceType != null) {

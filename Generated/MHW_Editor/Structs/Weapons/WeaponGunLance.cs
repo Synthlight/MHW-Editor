@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Id_raw == value) return;
                     Id_raw = value;
+                    ChangedItems.Add(nameof(Id));
                     OnPropertyChanged(nameof(Id));
                 }
             }
@@ -123,6 +127,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if ((MHW_Template.Weapons.ShellType) Shell_Type_raw == value) return;
                     Shell_Type_raw = (ushort) value;
+                    ChangedItems.Add(nameof(Shell_Type));
                     OnPropertyChanged(nameof(Shell_Type));
                 }
             }
@@ -137,6 +142,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Shell_Level_raw == value) return;
                     Shell_Level_raw = value;
+                    ChangedItems.Add(nameof(Shell_Level));
                     OnPropertyChanged(nameof(Shell_Level));
                 }
             }

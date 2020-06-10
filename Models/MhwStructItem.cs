@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using JetBrains.Annotations;
 using MHW_Editor.Json;
 
 namespace MHW_Editor.Models {
@@ -15,9 +14,9 @@ namespace MHW_Editor.Models {
 
         [SortOrder(10)] public virtual ulong Index { get; set; }
 
-        public virtual string UniqueId => $"{Index}";
+        public virtual string          UniqueId     => $"{Index}";
+        public         HashSet<string> ChangedItems { get; } = new HashSet<string>();
 
-        [NotifyPropertyChangedInvocator]
         public virtual void OnPropertyChanged([CallerMemberName] string propertyName = null) {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

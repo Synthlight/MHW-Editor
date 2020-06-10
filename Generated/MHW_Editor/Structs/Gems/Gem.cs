@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -110,6 +113,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Id_raw == value) return;
                     Id_raw = value;
+                    ChangedItems.Add(nameof(Id));
                     OnPropertyChanged(nameof(Id));
                     OnPropertyChanged(nameof(Id_button));
                 }
@@ -130,6 +134,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if ((ulong) Index_raw == value) return;
                     Index_raw = (uint) value;
+                    ChangedItems.Add(nameof(Index));
                     OnPropertyChanged(nameof(Index));
                 }
             }
@@ -144,6 +149,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Size_raw == value) return;
                     Size_raw = value;
+                    ChangedItems.Add(nameof(Size));
                     OnPropertyChanged(nameof(Size));
                 }
             }
@@ -159,6 +165,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Skill_1_raw == value) return;
                     Skill_1_raw = value;
+                    ChangedItems.Add(nameof(Skill_1));
                     OnPropertyChanged(nameof(Skill_1));
                     OnPropertyChanged(nameof(Skill_1_button));
                 }
@@ -179,6 +186,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Skill_1_Level_raw == value) return;
                     Skill_1_Level_raw = value;
+                    ChangedItems.Add(nameof(Skill_1_Level));
                     OnPropertyChanged(nameof(Skill_1_Level));
                 }
             }
@@ -194,6 +202,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Skill_2_raw == value) return;
                     Skill_2_raw = value;
+                    ChangedItems.Add(nameof(Skill_2));
                     OnPropertyChanged(nameof(Skill_2));
                     OnPropertyChanged(nameof(Skill_2_button));
                 }
@@ -214,6 +223,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Skill_2_Level_raw == value) return;
                     Skill_2_Level_raw = value;
+                    ChangedItems.Add(nameof(Skill_2_Level));
                     OnPropertyChanged(nameof(Skill_2_Level));
                 }
             }

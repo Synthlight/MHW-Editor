@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Id_raw == value) return;
                     Id_raw = value;
+                    ChangedItems.Add(nameof(Id));
                     OnPropertyChanged(nameof(Id));
                 }
             }
@@ -123,6 +127,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Red_raw == value.Clamp((ushort) 0, (ushort) 400)) return;
                     Red_raw = value.Clamp((ushort) 0, (ushort) 400);
+                    ChangedItems.Add(nameof(Red));
                     OnPropertyChanged(nameof(Red));
                 }
             }
@@ -137,6 +142,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Orange_raw == value.Clamp((ushort) 0, (ushort) 400)) return;
                     Orange_raw = value.Clamp((ushort) 0, (ushort) 400);
+                    ChangedItems.Add(nameof(Orange));
                     OnPropertyChanged(nameof(Orange));
                 }
             }
@@ -151,6 +157,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Yellow_raw == value.Clamp((ushort) 0, (ushort) 400)) return;
                     Yellow_raw = value.Clamp((ushort) 0, (ushort) 400);
+                    ChangedItems.Add(nameof(Yellow));
                     OnPropertyChanged(nameof(Yellow));
                 }
             }
@@ -165,6 +172,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Green_raw == value.Clamp((ushort) 0, (ushort) 400)) return;
                     Green_raw = value.Clamp((ushort) 0, (ushort) 400);
+                    ChangedItems.Add(nameof(Green));
                     OnPropertyChanged(nameof(Green));
                 }
             }
@@ -179,6 +187,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Blue_raw == value.Clamp((ushort) 0, (ushort) 400)) return;
                     Blue_raw = value.Clamp((ushort) 0, (ushort) 400);
+                    ChangedItems.Add(nameof(Blue));
                     OnPropertyChanged(nameof(Blue));
                 }
             }
@@ -193,6 +202,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (White_raw == value.Clamp((ushort) 0, (ushort) 400)) return;
                     White_raw = value.Clamp((ushort) 0, (ushort) 400);
+                    ChangedItems.Add(nameof(White));
                     OnPropertyChanged(nameof(White));
                 }
             }
@@ -207,6 +217,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Purple_raw == value.Clamp((ushort) 0, (ushort) 400)) return;
                     Purple_raw = value.Clamp((ushort) 0, (ushort) 400);
+                    ChangedItems.Add(nameof(Purple));
                     OnPropertyChanged(nameof(Purple));
                 }
             }

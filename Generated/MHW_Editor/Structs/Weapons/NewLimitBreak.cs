@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if ((MHW_Template.Weapons.AugmentationCategory) Aug_Category_raw == value) return;
                     Aug_Category_raw = (uint) value;
+                    ChangedItems.Add(nameof(Aug_Category));
                     OnPropertyChanged(nameof(Aug_Category));
                 }
             }
@@ -124,6 +128,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Aug_Level_raw == value) return;
                     Aug_Level_raw = value;
+                    ChangedItems.Add(nameof(Aug_Level));
                     OnPropertyChanged(nameof(Aug_Level));
                 }
             }
@@ -138,6 +143,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Aug_Slot_Cost_raw == value) return;
                     Aug_Slot_Cost_raw = value;
+                    ChangedItems.Add(nameof(Aug_Slot_Cost));
                     OnPropertyChanged(nameof(Aug_Slot_Cost));
                 }
             }
@@ -152,6 +158,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Research_Cost_r10__raw == value) return;
                     Research_Cost_r10__raw = value;
+                    ChangedItems.Add(nameof(Research_Cost_r10_));
                     OnPropertyChanged(nameof(Research_Cost_r10_));
                 }
             }
@@ -166,6 +173,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Research_Cost_r11__raw == value) return;
                     Research_Cost_r11__raw = value;
+                    ChangedItems.Add(nameof(Research_Cost_r11_));
                     OnPropertyChanged(nameof(Research_Cost_r11_));
                 }
             }
@@ -180,6 +188,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Research_Cost_r12__raw == value) return;
                     Research_Cost_r12__raw = value;
+                    ChangedItems.Add(nameof(Research_Cost_r12_));
                     OnPropertyChanged(nameof(Research_Cost_r12_));
                 }
             }

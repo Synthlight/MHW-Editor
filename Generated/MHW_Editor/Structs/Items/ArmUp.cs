@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -108,6 +111,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Quest_Progress_1_raw == value) return;
                     Quest_Progress_1_raw = value;
+                    ChangedItems.Add(nameof(Quest_Progress_1));
                     OnPropertyChanged(nameof(Quest_Progress_1));
                 }
             }
@@ -122,6 +126,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Quest_Progress_2_raw == value) return;
                     Quest_Progress_2_raw = value;
+                    ChangedItems.Add(nameof(Quest_Progress_2));
                     OnPropertyChanged(nameof(Quest_Progress_2));
                 }
             }
@@ -136,6 +141,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Quest_Progress_3_raw == value) return;
                     Quest_Progress_3_raw = value;
+                    ChangedItems.Add(nameof(Quest_Progress_3));
                     OnPropertyChanged(nameof(Quest_Progress_3));
                 }
             }
@@ -150,6 +156,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Quest_Progress_4_raw == value) return;
                     Quest_Progress_4_raw = value;
+                    ChangedItems.Add(nameof(Quest_Progress_4));
                     OnPropertyChanged(nameof(Quest_Progress_4));
                 }
             }
@@ -164,6 +171,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Quest_Progress_5_raw == value) return;
                     Quest_Progress_5_raw = value;
+                    ChangedItems.Add(nameof(Quest_Progress_5));
                     OnPropertyChanged(nameof(Quest_Progress_5));
                 }
             }
@@ -178,6 +186,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Quest_Progress_6_raw == value) return;
                     Quest_Progress_6_raw = value;
+                    ChangedItems.Add(nameof(Quest_Progress_6));
                     OnPropertyChanged(nameof(Quest_Progress_6));
                 }
             }
@@ -192,6 +201,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Quest_Progress_7_raw == value) return;
                     Quest_Progress_7_raw = value;
+                    ChangedItems.Add(nameof(Quest_Progress_7));
                     OnPropertyChanged(nameof(Quest_Progress_7));
                 }
             }
@@ -206,6 +216,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Quest_Progress_8_raw == value) return;
                     Quest_Progress_8_raw = value;
+                    ChangedItems.Add(nameof(Quest_Progress_8));
                     OnPropertyChanged(nameof(Quest_Progress_8));
                 }
             }
@@ -220,6 +231,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Quest_Progress_9_raw == value) return;
                     Quest_Progress_9_raw = value;
+                    ChangedItems.Add(nameof(Quest_Progress_9));
                     OnPropertyChanged(nameof(Quest_Progress_9));
                 }
             }
@@ -234,6 +246,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Quest_Progress_10_raw == value) return;
                     Quest_Progress_10_raw = value;
+                    ChangedItems.Add(nameof(Quest_Progress_10));
                     OnPropertyChanged(nameof(Quest_Progress_10));
                 }
             }
@@ -248,6 +261,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Quest_Progress_11_raw == value) return;
                     Quest_Progress_11_raw = value;
+                    ChangedItems.Add(nameof(Quest_Progress_11));
                     OnPropertyChanged(nameof(Quest_Progress_11));
                 }
             }

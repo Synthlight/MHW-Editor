@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -107,6 +110,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Weapons.CoatingType) Close_Range_raw == value) return;
                     Close_Range_raw = (byte) value;
+                    ChangedItems.Add(nameof(Close_Range));
                     OnPropertyChanged(nameof(Close_Range));
                 }
             }
@@ -121,6 +125,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Weapons.CoatingType) Power_raw == value) return;
                     Power_raw = (byte) value;
+                    ChangedItems.Add(nameof(Power));
                     OnPropertyChanged(nameof(Power));
                 }
             }
@@ -135,6 +140,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Weapons.CoatingType) Paralysis_raw == value) return;
                     Paralysis_raw = (byte) value;
+                    ChangedItems.Add(nameof(Paralysis));
                     OnPropertyChanged(nameof(Paralysis));
                 }
             }
@@ -149,6 +155,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Weapons.CoatingType) Poison_raw == value) return;
                     Poison_raw = (byte) value;
+                    ChangedItems.Add(nameof(Poison));
                     OnPropertyChanged(nameof(Poison));
                 }
             }
@@ -163,6 +170,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Weapons.CoatingType) Sleep_raw == value) return;
                     Sleep_raw = (byte) value;
+                    ChangedItems.Add(nameof(Sleep));
                     OnPropertyChanged(nameof(Sleep));
                 }
             }
@@ -177,6 +185,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Weapons.CoatingType) Blast_raw == value) return;
                     Blast_raw = (byte) value;
+                    ChangedItems.Add(nameof(Blast));
                     OnPropertyChanged(nameof(Blast));
                 }
             }

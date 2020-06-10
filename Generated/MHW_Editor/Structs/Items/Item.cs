@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Id_raw == value) return;
                     Id_raw = value;
+                    ChangedItems.Add(nameof(Id));
                     OnPropertyChanged(nameof(Id));
                 }
             }
@@ -123,6 +127,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.ItemSubType) Sub_Type_raw == value) return;
                     Sub_Type_raw = (byte) value;
+                    ChangedItems.Add(nameof(Sub_Type));
                     OnPropertyChanged(nameof(Sub_Type));
                 }
             }
@@ -137,6 +142,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.ItemType) Type_raw == value) return;
                     Type_raw = (uint) value;
+                    ChangedItems.Add(nameof(Type));
                     OnPropertyChanged(nameof(Type));
                 }
             }
@@ -151,6 +157,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Rarity_raw == value) return;
                     Rarity_raw = value;
+                    ChangedItems.Add(nameof(Rarity));
                     OnPropertyChanged(nameof(Rarity));
                 }
             }
@@ -165,6 +172,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Carry_Limit_raw == value) return;
                     Carry_Limit_raw = value;
+                    ChangedItems.Add(nameof(Carry_Limit));
                     OnPropertyChanged(nameof(Carry_Limit));
                 }
             }
@@ -179,6 +187,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unknown_sint8__raw == value) return;
                     Unknown_sint8__raw = value;
+                    ChangedItems.Add(nameof(Unknown_sint8_));
                     OnPropertyChanged(nameof(Unknown_sint8_));
                 }
             }
@@ -193,6 +202,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Sort_Order_raw == value) return;
                     Sort_Order_raw = value;
+                    ChangedItems.Add(nameof(Sort_Order));
                     OnPropertyChanged(nameof(Sort_Order));
                 }
             }
@@ -206,6 +216,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Flags_Raw_raw == value) return;
                     Flags_Raw_raw = value;
+                    ChangedItems.Add(nameof(Flags_Raw));
                     OnPropertyChanged(nameof(Flags_Raw));
                     OnPropertyChanged(nameof(Flags));
                 }
@@ -221,6 +232,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Icon_Id_raw == value) return;
                     Icon_Id_raw = value;
+                    ChangedItems.Add(nameof(Icon_Id));
                     OnPropertyChanged(nameof(Icon_Id));
                 }
             }
@@ -235,6 +247,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Icon_Color_Id_raw == value) return;
                     Icon_Color_Id_raw = value;
+                    ChangedItems.Add(nameof(Icon_Color_Id));
                     OnPropertyChanged(nameof(Icon_Color_Id));
                 }
             }
@@ -249,6 +262,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Sell_Price_raw == value) return;
                     Sell_Price_raw = value;
+                    ChangedItems.Add(nameof(Sell_Price));
                     OnPropertyChanged(nameof(Sell_Price));
                 }
             }
@@ -263,6 +277,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Buy_Price_raw == value) return;
                     Buy_Price_raw = value;
+                    ChangedItems.Add(nameof(Buy_Price));
                     OnPropertyChanged(nameof(Buy_Price));
                 }
             }

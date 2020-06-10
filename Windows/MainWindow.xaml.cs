@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -9,7 +10,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Input;
 using JetBrains.Annotations;
 using MHW_Editor.Assets;
@@ -456,6 +456,16 @@ namespace MHW_Editor.Windows {
                         }
                     }
                 }
+
+                foreach (UIElement child in sub_grids.Children) {
+                    if (child is MhwDataGrid mhwGrid) {
+                        foreach (var type in mhwGrid.GetType().GenericTypeArguments) {
+                            if (type.Is(typeof(MultiStructItemCustomView))) {
+                                mhwGrid.Refresh();
+                            }
+                        }
+                    }
+                }
             } catch (Exception e) when (!Debugger.IsAttached) {
                 ShowError(e, "Load Error");
             }
@@ -468,12 +478,11 @@ namespace MHW_Editor.Windows {
                 var         fileName      = Path.GetFileName(targetFile);
                 JsonChanges changesToSave = null;
 
-/* TODO: Fix Json.
                 if (mergeWithTarget) {
                     try {
                         var target = GetOpenTarget($"JSON|*{Path.GetExtension(targetFile)}.json");
                         // Should migrate the loaded changes too.
-                        changesToSave = JsonMigrations.Migrate(File.ReadAllText(target), fileName, main_data_grid.Items);
+                        changesToSave = JsonMigrations.Migrate(File.ReadAllText(target), fileName, fileData);
                     } catch (Exception) {
                         // Don't care. If it doesn't exist or can't be read, it gets overwritten.
                     }
@@ -482,46 +491,89 @@ namespace MHW_Editor.Windows {
                 if (changesToSave == null) {
                     changesToSave = new JsonChanges {
                         targetFile = fileName,
-                        version    = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1)
+                        version    = JsonMigrations.CURRENT_VERSION
                     };
                 } else {
                     // Set target & version explicitly in case the user is merging into a different wp_dat or something.
                     changesToSave.targetFile = fileName;
-                    changesToSave.version    = JsonMigrations.VERSION_MAP.TryGet(fileName, (uint) 1);
                 }
 
-                foreach (MhwItem item in main_grid.Items) {
-                    if (item.changed.Count == 0) continue;
+                changesToSave.changesV3 ??= new Dictionary<string, Dictionary<string, Dictionary<string, object>>>();
 
-                    var id = item.UniqueId;
+                // For all entries in all structs as a single enumerable.
+                foreach (var item in fileData.GetAllEnumerableOfType<IJsonItem>()) {
+                    var itemUniqueId   = item.UniqueId;
+                    var itemType       = item.GetType();
+                    var structTypeName = itemType.Name;
+                    var changed        = item.ChangedItems;
+                    if (changed.Count == 0) continue;
 
-                    if (!changesToSave.changes.ContainsKey(id)) {
-                        changesToSave.changes[id] = new Dictionary<string, object>();
+                    if (!changesToSave.changesV3.ContainsKey(structTypeName)) {
+                        changesToSave.changesV3[structTypeName] = new Dictionary<string, Dictionary<string, object>>();
                     }
 
-                    foreach (var changedItem in item.changed) {
+                    if (!changesToSave.changesV3[structTypeName].ContainsKey(itemUniqueId)) {
+                        changesToSave.changesV3[structTypeName][itemUniqueId] = new Dictionary<string, object>();
+                    }
+
+                    foreach (var changedItem in changed) {
+                        // Ignore. it's always 'changed' since it's computed.
+                        if (changedItem == nameof(IMhwStructItem.Index)) continue;
+
                         // ReSharper disable once PossibleNullReferenceException
-                        var value = item.GetType().GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
-                        changesToSave.changes[id][changedItem] = value;
+                        var value = itemType.GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
+                        changesToSave.changesV3[structTypeName][itemUniqueId][changedItem] = value;
                     }
                 }
-*/
 
-                var changesSaved = changesToSave.changesV1.Any();
+                // Removes empty entries.
+                CleanDictionary(changesToSave.changesV3);
 
-                if (changesSaved) {
+                if (changesToSave.changesV3.Any()) {
                     // Get file after checking for what to save else we show a dialog even if there are no changes.
                     var target = GetSaveTarget();
                     if (string.IsNullOrEmpty(target)) return;
 
                     var json = JsonConvert.SerializeObject(changesToSave, Formatting.Indented);
                     File.WriteAllText(target, json);
-                }
 
-                await ShowChangesSaved(changesSaved);
+                    // Not `await ShowChangesSaved(changesSaved)` since we may cancel the dialog.
+                    await ShowChangesSaved(true);
+                } else {
+                    await ShowChangesSaved(false);
+                }
             } catch (Exception e) when (!Debugger.IsAttached) {
                 ShowError(e, "Save Error");
             }
+        }
+
+        private bool CleanDictionary(dynamic dict) {
+            var toRemove         = new List<string>();
+            var effectivelyEmpty = true;
+
+            foreach (var key in dict.Keys) {
+                var value = dict[key];
+                if (((Type) value.GetType()).Is(typeof(IEnumerable))) {
+                    var innerEmpty = false;
+                    if (value.Count > 0) {
+                        innerEmpty = CleanDictionary(value);
+                    }
+                    // We've cleaned, now we check again.
+                    if (value.Count == 0 || innerEmpty) {
+                        toRemove.Add(key);
+                    } else {
+                        effectivelyEmpty = false;
+                    }
+                } else {
+                    effectivelyEmpty = false;
+                }
+            }
+
+            foreach (var key in toRemove) {
+                dict.Remove(key);
+            }
+
+            return effectivelyEmpty;
         }
 
         private string GetOpenTarget(string filter) {
@@ -540,9 +592,7 @@ namespace MHW_Editor.Windows {
                 FileName     = $"{Path.GetFileNameWithoutExtension(targetFile)}",
                 AddExtension = true
             };
-            sfdResult.ShowDialog();
-
-            return sfdResult.FileName;
+            return sfdResult.ShowDialog() == true ? sfdResult.FileName : null;
         }
 
         public static Type GetFileType(string targetFile) {

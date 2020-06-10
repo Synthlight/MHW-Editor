@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -107,6 +110,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.EquipmentType) Equip_Type_raw == value) return;
                     Equip_Type_raw = (uint) value;
+                    ChangedItems.Add(nameof(Equip_Type));
                     OnPropertyChanged(nameof(Equip_Type));
                 }
             }
@@ -122,6 +126,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Equip_Id_raw == value) return;
                     Equip_Id_raw = value;
+                    ChangedItems.Add(nameof(Equip_Id));
                     OnPropertyChanged(nameof(Equip_Id));
                     OnPropertyChanged(nameof(Equip_Id_button));
                 }
@@ -142,6 +147,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Story_Unlock_raw == value) return;
                     Story_Unlock_raw = value;
+                    ChangedItems.Add(nameof(Story_Unlock));
                     OnPropertyChanged(nameof(Story_Unlock));
                 }
             }

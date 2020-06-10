@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -108,6 +111,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_Id_raw == value) return;
                     Item_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_Id));
                     OnPropertyChanged(nameof(Item_Id));
                     OnPropertyChanged(nameof(Item_Id_button));
                 }
@@ -128,6 +132,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk1_raw == value) return;
                     Unk1_raw = value;
+                    ChangedItems.Add(nameof(Unk1));
                     OnPropertyChanged(nameof(Unk1));
                 }
             }
@@ -142,6 +147,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk2_raw == value) return;
                     Unk2_raw = value;
+                    ChangedItems.Add(nameof(Unk2));
                     OnPropertyChanged(nameof(Unk2));
                 }
             }
@@ -156,6 +162,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk3_raw == value) return;
                     Unk3_raw = value;
+                    ChangedItems.Add(nameof(Unk3));
                     OnPropertyChanged(nameof(Unk3));
                 }
             }
@@ -170,6 +177,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Convert.ToBoolean(Unk4_raw) == value) return;
                     Unk4_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Unk4));
                     OnPropertyChanged(nameof(Unk4));
                 }
             }
@@ -184,6 +192,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk5_raw == value) return;
                     Unk5_raw = value;
+                    ChangedItems.Add(nameof(Unk5));
                     OnPropertyChanged(nameof(Unk5));
                 }
             }
@@ -198,6 +207,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Convert.ToBoolean(Unk6_raw) == value) return;
                     Unk6_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Unk6));
                     OnPropertyChanged(nameof(Unk6));
                 }
             }
@@ -212,6 +222,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Convert.ToBoolean(Unk7_raw) == value) return;
                     Unk7_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Unk7));
                     OnPropertyChanged(nameof(Unk7));
                 }
             }
@@ -226,6 +237,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Convert.ToBoolean(Unk8_raw) == value) return;
                     Unk8_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Unk8));
                     OnPropertyChanged(nameof(Unk8));
                 }
             }
@@ -240,6 +252,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Convert.ToBoolean(Unk9_raw) == value) return;
                     Unk9_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Unk9));
                     OnPropertyChanged(nameof(Unk9));
                 }
             }
@@ -254,6 +267,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Convert.ToBoolean(Unk10_raw) == value) return;
                     Unk10_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Unk10));
                     OnPropertyChanged(nameof(Unk10));
                 }
             }
@@ -268,6 +282,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Convert.ToBoolean(Unk11_raw) == value) return;
                     Unk11_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Unk11));
                     OnPropertyChanged(nameof(Unk11));
                 }
             }
@@ -282,6 +297,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Convert.ToBoolean(Unk12_raw) == value) return;
                     Unk12_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Unk12));
                     OnPropertyChanged(nameof(Unk12));
                 }
             }
@@ -296,6 +312,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Convert.ToBoolean(Unk13_raw) == value) return;
                     Unk13_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Unk13));
                     OnPropertyChanged(nameof(Unk13));
                 }
             }
@@ -310,6 +327,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Convert.ToBoolean(Unk14_raw) == value) return;
                     Unk14_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Unk14));
                     OnPropertyChanged(nameof(Unk14));
                 }
             }
@@ -324,6 +342,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk15_raw == value) return;
                     Unk15_raw = value;
+                    ChangedItems.Add(nameof(Unk15));
                     OnPropertyChanged(nameof(Unk15));
                 }
             }
@@ -338,6 +357,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk16_raw == value) return;
                     Unk16_raw = value;
+                    ChangedItems.Add(nameof(Unk16));
                     OnPropertyChanged(nameof(Unk16));
                 }
             }
@@ -352,6 +372,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk17_raw == value) return;
                     Unk17_raw = value;
+                    ChangedItems.Add(nameof(Unk17));
                     OnPropertyChanged(nameof(Unk17));
                 }
             }
@@ -366,6 +387,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk18_raw == value) return;
                     Unk18_raw = value;
+                    ChangedItems.Add(nameof(Unk18));
                     OnPropertyChanged(nameof(Unk18));
                 }
             }
@@ -380,6 +402,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk19_raw == value) return;
                     Unk19_raw = value;
+                    ChangedItems.Add(nameof(Unk19));
                     OnPropertyChanged(nameof(Unk19));
                 }
             }
@@ -394,6 +417,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unk21_raw == value) return;
                     Unk21_raw = value;
+                    ChangedItems.Add(nameof(Unk21));
                     OnPropertyChanged(nameof(Unk21));
                 }
             }

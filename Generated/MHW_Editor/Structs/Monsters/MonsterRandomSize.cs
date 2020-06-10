@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Number_of_Monsters_raw == value) return;
                     Number_of_Monsters_raw = value;
+                    ChangedItems.Add(nameof(Number_of_Monsters));
                     OnPropertyChanged(nameof(Number_of_Monsters));
                 }
             }
@@ -115,6 +118,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Monster_Id_raw == value) return;
                     Monster_Id_raw = value;
+                    ChangedItems.Add(nameof(Monster_Id));
                     OnPropertyChanged(nameof(Monster_Id));
                     OnPropertyChanged(nameof(Monster_Id_button));
                 }
@@ -135,6 +139,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Gold_Small_Crown_Limit_raw == value) return;
                     Gold_Small_Crown_Limit_raw = value;
+                    ChangedItems.Add(nameof(Gold_Small_Crown_Limit));
                     OnPropertyChanged(nameof(Gold_Small_Crown_Limit));
                 }
             }
@@ -149,6 +154,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Silver_Crown_Limit_raw == value) return;
                     Silver_Crown_Limit_raw = value;
+                    ChangedItems.Add(nameof(Silver_Crown_Limit));
                     OnPropertyChanged(nameof(Silver_Crown_Limit));
                 }
             }
@@ -163,6 +169,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Gold_Big_Crown_Limit_raw == value) return;
                     Gold_Big_Crown_Limit_raw = value;
+                    ChangedItems.Add(nameof(Gold_Big_Crown_Limit));
                     OnPropertyChanged(nameof(Gold_Big_Crown_Limit));
                 }
             }
@@ -177,6 +184,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_Size_raw == value) return;
                     Base_Size_raw = value;
+                    ChangedItems.Add(nameof(Base_Size));
                     OnPropertyChanged(nameof(Base_Size));
                 }
             }
@@ -229,6 +237,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Number_of_Crown_Tables_raw == value) return;
                     Number_of_Crown_Tables_raw = value;
+                    ChangedItems.Add(nameof(Number_of_Crown_Tables));
                     OnPropertyChanged(nameof(Number_of_Crown_Tables));
                 }
             }
@@ -276,6 +285,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Name_Jap__raw == value) return;
                     Name_Jap__raw = value;
+                    ChangedItems.Add(nameof(Name_Jap_));
                     OnPropertyChanged(nameof(Name_Jap_));
                 }
             }
@@ -294,6 +304,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Crown_Size_Multiplier_raw == value) return;
                         Crown_Size_Multiplier_raw = value;
+                        ChangedItems.Add(nameof(Crown_Size_Multiplier));
                         OnPropertyChanged(nameof(Crown_Size_Multiplier));
                     }
                 }
@@ -308,6 +319,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Crown_Size_Rarity_raw == value) return;
                         Crown_Size_Rarity_raw = value;
+                        ChangedItems.Add(nameof(Crown_Size_Rarity));
                         OnPropertyChanged(nameof(Crown_Size_Rarity));
                     }
                 }

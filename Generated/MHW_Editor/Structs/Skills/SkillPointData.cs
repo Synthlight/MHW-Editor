@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -108,6 +111,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Convert.ToBoolean(Is_Set_Bonus_raw) == value) return;
                     Is_Set_Bonus_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Is_Set_Bonus));
                     OnPropertyChanged(nameof(Is_Set_Bonus));
                 }
             }
@@ -122,6 +126,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Icon_Color_Id_raw == value) return;
                     Icon_Color_Id_raw = value;
+                    ChangedItems.Add(nameof(Icon_Color_Id));
                     OnPropertyChanged(nameof(Icon_Color_Id));
                 }
             }

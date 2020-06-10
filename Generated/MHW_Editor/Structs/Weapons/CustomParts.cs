@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Id_raw == value) return;
                     Id_raw = value;
+                    ChangedItems.Add(nameof(Id));
                     OnPropertyChanged(nameof(Id));
                 }
             }
@@ -124,6 +128,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if ((MHW_Template.Weapons.WeaponType) Weapon_Type_raw == value) return;
                     Weapon_Type_raw = (uint) value;
+                    ChangedItems.Add(nameof(Weapon_Type));
                     OnPropertyChanged(nameof(Weapon_Type));
                 }
             }
@@ -138,6 +143,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Part_1_Id_raw == value) return;
                     Part_1_Id_raw = value;
+                    ChangedItems.Add(nameof(Part_1_Id));
                     OnPropertyChanged(nameof(Part_1_Id));
                 }
             }
@@ -152,6 +158,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Unk_uint8__raw == value) return;
                     Unk_uint8__raw = value;
+                    ChangedItems.Add(nameof(Unk_uint8_));
                     OnPropertyChanged(nameof(Unk_uint8_));
                 }
             }
@@ -166,6 +173,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Craft_Cost_raw == value) return;
                     Craft_Cost_raw = value;
+                    ChangedItems.Add(nameof(Craft_Cost));
                     OnPropertyChanged(nameof(Craft_Cost));
                 }
             }
@@ -180,6 +188,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Attack_raw == value) return;
                     Attack_raw = value;
+                    ChangedItems.Add(nameof(Attack));
                     OnPropertyChanged(nameof(Attack));
                 }
             }
@@ -194,6 +203,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Defense_raw == value) return;
                     Defense_raw = value;
+                    ChangedItems.Add(nameof(Defense));
                     OnPropertyChanged(nameof(Defense));
                 }
             }
@@ -208,6 +218,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Affinity_raw == value) return;
                     Affinity_raw = value;
+                    ChangedItems.Add(nameof(Affinity));
                     OnPropertyChanged(nameof(Affinity));
                 }
             }
@@ -222,6 +233,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Element_raw == value) return;
                     Element_raw = value;
+                    ChangedItems.Add(nameof(Element));
                     OnPropertyChanged(nameof(Element));
                 }
             }
@@ -236,6 +248,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sharpness_raw == value) return;
                     Sharpness_raw = value;
+                    ChangedItems.Add(nameof(Sharpness));
                     OnPropertyChanged(nameof(Sharpness));
                 }
             }

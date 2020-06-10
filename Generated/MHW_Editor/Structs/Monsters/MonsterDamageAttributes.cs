@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -63,6 +65,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Monster_Id_raw == value) return;
                     Monster_Id_raw = value;
+                    ChangedItems.Add(nameof(Monster_Id));
                     OnPropertyChanged(nameof(Monster_Id));
                     OnPropertyChanged(nameof(Monster_Id_button));
                 }
@@ -84,6 +87,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_3_raw == value) return;
                     Magic_3_raw = value;
+                    ChangedItems.Add(nameof(Magic_3));
                     OnPropertyChanged(nameof(Magic_3));
                 }
             }
@@ -131,6 +135,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -145,6 +150,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -159,6 +165,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -173,6 +180,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -187,6 +195,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -201,6 +210,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -215,6 +225,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -229,6 +240,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
@@ -284,6 +296,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Poison_Damage_raw == value) return;
                     Poison_Damage_raw = value;
+                    ChangedItems.Add(nameof(Poison_Damage));
                     OnPropertyChanged(nameof(Poison_Damage));
                 }
             }
@@ -298,6 +311,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Poison_Interval_raw == value) return;
                     Poison_Interval_raw = value;
+                    ChangedItems.Add(nameof(Poison_Interval));
                     OnPropertyChanged(nameof(Poison_Interval));
                 }
             }
@@ -348,6 +362,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -362,6 +377,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -376,6 +392,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -390,6 +407,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -404,6 +422,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -418,6 +437,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -432,6 +452,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -446,6 +467,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
@@ -501,6 +523,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_1_raw == value) return;
                     Unk_1_raw = value;
+                    ChangedItems.Add(nameof(Unk_1));
                     OnPropertyChanged(nameof(Unk_1));
                 }
             }
@@ -515,6 +538,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Exhaustion_Damage_raw == value) return;
                     Exhaustion_Damage_raw = value;
+                    ChangedItems.Add(nameof(Exhaustion_Damage));
                     OnPropertyChanged(nameof(Exhaustion_Damage));
                 }
             }
@@ -565,6 +589,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -579,6 +604,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -593,6 +619,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -607,6 +634,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -621,6 +649,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -635,6 +664,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -649,6 +679,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -663,6 +694,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
@@ -718,6 +750,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Blastblight_Damage_raw == value) return;
                     Blastblight_Damage_raw = value;
+                    ChangedItems.Add(nameof(Blastblight_Damage));
                     OnPropertyChanged(nameof(Blastblight_Damage));
                 }
             }
@@ -765,6 +798,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -779,6 +813,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -793,6 +828,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -807,6 +843,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -821,6 +858,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -835,6 +873,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -849,6 +888,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -863,6 +903,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
@@ -918,6 +959,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Capture_LR_HR_raw == value) return;
                     Capture_LR_HR_raw = value;
+                    ChangedItems.Add(nameof(Capture_LR_HR));
                     OnPropertyChanged(nameof(Capture_LR_HR));
                 }
             }
@@ -932,6 +974,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Capture_MR_raw == value) return;
                     Capture_MR_raw = value;
+                    ChangedItems.Add(nameof(Capture_MR));
                     OnPropertyChanged(nameof(Capture_MR));
                 }
             }
@@ -982,6 +1025,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -996,6 +1040,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -1010,6 +1055,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -1024,6 +1070,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -1038,6 +1085,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -1052,6 +1100,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -1066,6 +1115,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -1080,6 +1130,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
@@ -1135,6 +1186,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_1_raw == value) return;
                     Unk_1_raw = value;
+                    ChangedItems.Add(nameof(Unk_1));
                     OnPropertyChanged(nameof(Unk_1));
                 }
             }
@@ -1182,6 +1234,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -1196,6 +1249,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -1210,6 +1264,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -1224,6 +1279,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -1238,6 +1294,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -1252,6 +1309,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -1266,6 +1324,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -1280,6 +1339,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
@@ -1335,6 +1395,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Dizziness_MR_Buildup_raw == value) return;
                     Dizziness_MR_Buildup_raw = value;
+                    ChangedItems.Add(nameof(Dizziness_MR_Buildup));
                     OnPropertyChanged(nameof(Dizziness_MR_Buildup));
                 }
             }
@@ -1349,6 +1410,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Dizziness_MR_Max_Cap_raw == value) return;
                     Dizziness_MR_Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Dizziness_MR_Max_Cap));
                     OnPropertyChanged(nameof(Dizziness_MR_Max_Cap));
                 }
             }
@@ -1363,6 +1425,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_1_raw == value) return;
                     Unk_1_raw = value;
+                    ChangedItems.Add(nameof(Unk_1));
                     OnPropertyChanged(nameof(Unk_1));
                 }
             }
@@ -1377,6 +1440,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_2_raw == value) return;
                     Unk_2_raw = value;
+                    ChangedItems.Add(nameof(Unk_2));
                     OnPropertyChanged(nameof(Unk_2));
                 }
             }
@@ -1391,6 +1455,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Dizziness_MR_Recharge_Timer_raw == value) return;
                     Dizziness_MR_Recharge_Timer_raw = value;
+                    ChangedItems.Add(nameof(Dizziness_MR_Recharge_Timer));
                     OnPropertyChanged(nameof(Dizziness_MR_Recharge_Timer));
                 }
             }
@@ -1405,6 +1470,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_3_raw == value) return;
                     Unk_3_raw = value;
+                    ChangedItems.Add(nameof(Unk_3));
                     OnPropertyChanged(nameof(Unk_3));
                 }
             }
@@ -1419,6 +1485,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Dizziness_MR_Duration_Re_occuring_Use_raw == value) return;
                     Dizziness_MR_Duration_Re_occuring_Use_raw = value;
+                    ChangedItems.Add(nameof(Dizziness_MR_Duration_Re_occuring_Use));
                     OnPropertyChanged(nameof(Dizziness_MR_Duration_Re_occuring_Use));
                 }
             }
@@ -1433,6 +1500,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Dizziness_MR_Duration_Initial_Use_raw == value) return;
                     Dizziness_MR_Duration_Initial_Use_raw = value;
+                    ChangedItems.Add(nameof(Dizziness_MR_Duration_Initial_Use));
                     OnPropertyChanged(nameof(Dizziness_MR_Duration_Initial_Use));
                 }
             }
@@ -1501,6 +1569,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -1515,6 +1584,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -1529,6 +1599,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -1543,6 +1614,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -1557,6 +1629,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -1571,6 +1644,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -1585,6 +1659,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -1599,6 +1674,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
@@ -1654,6 +1730,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Mount_Knock_Down_Damage_raw == value) return;
                     Mount_Knock_Down_Damage_raw = value;
+                    ChangedItems.Add(nameof(Mount_Knock_Down_Damage));
                     OnPropertyChanged(nameof(Mount_Knock_Down_Damage));
                 }
             }
@@ -1701,6 +1778,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -1715,6 +1793,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -1729,6 +1808,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -1743,6 +1823,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -1757,6 +1838,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -1771,6 +1853,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -1785,6 +1868,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -1799,6 +1883,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
@@ -1854,6 +1939,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_1_raw == value) return;
                     Unk_1_raw = value;
+                    ChangedItems.Add(nameof(Unk_1));
                     OnPropertyChanged(nameof(Unk_1));
                 }
             }
@@ -1868,6 +1954,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_2_raw == value) return;
                     Unk_2_raw = value;
+                    ChangedItems.Add(nameof(Unk_2));
                     OnPropertyChanged(nameof(Unk_2));
                 }
             }
@@ -1918,6 +2005,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -1932,6 +2020,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -1946,6 +2035,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -1960,6 +2050,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -1974,6 +2065,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -1988,6 +2080,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -2002,6 +2095,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -2016,6 +2110,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
@@ -2071,6 +2166,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_1_raw == value) return;
                     Unk_1_raw = value;
+                    ChangedItems.Add(nameof(Unk_1));
                     OnPropertyChanged(nameof(Unk_1));
                 }
             }
@@ -2085,6 +2181,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_2_raw == value) return;
                     Unk_2_raw = value;
+                    ChangedItems.Add(nameof(Unk_2));
                     OnPropertyChanged(nameof(Unk_2));
                 }
             }
@@ -2135,6 +2232,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -2149,6 +2247,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -2163,6 +2262,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -2177,6 +2277,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -2191,6 +2292,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -2205,6 +2307,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -2219,6 +2322,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -2233,6 +2337,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
@@ -2288,6 +2393,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Dragonseal_Aura_raw == value) return;
                     Dragonseal_Aura_raw = value;
+                    ChangedItems.Add(nameof(Dragonseal_Aura));
                     OnPropertyChanged(nameof(Dragonseal_Aura));
                 }
             }
@@ -2335,6 +2441,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -2349,6 +2456,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -2363,6 +2471,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -2377,6 +2486,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -2391,6 +2501,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -2405,6 +2516,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -2419,6 +2531,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -2433,6 +2546,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
@@ -2488,6 +2602,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_1_raw == value) return;
                     Unk_1_raw = value;
+                    ChangedItems.Add(nameof(Unk_1));
                     OnPropertyChanged(nameof(Unk_1));
                 }
             }
@@ -2502,6 +2617,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_2_raw == value) return;
                     Unk_2_raw = value;
+                    ChangedItems.Add(nameof(Unk_2));
                     OnPropertyChanged(nameof(Unk_2));
                 }
             }
@@ -2516,6 +2632,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_3_raw == value) return;
                     Unk_3_raw = value;
+                    ChangedItems.Add(nameof(Unk_3));
                     OnPropertyChanged(nameof(Unk_3));
                 }
             }
@@ -2561,6 +2678,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -2575,6 +2693,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -2589,6 +2708,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -2603,6 +2723,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -2617,6 +2738,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -2631,6 +2753,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -2645,6 +2768,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -2659,6 +2783,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }
@@ -2714,6 +2839,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Claw_Flinch_Shot_raw == value) return;
                     Claw_Flinch_Shot_raw = value;
+                    ChangedItems.Add(nameof(Claw_Flinch_Shot));
                     OnPropertyChanged(nameof(Claw_Flinch_Shot));
                 }
             }
@@ -2728,6 +2854,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Claw_Flinch_Shot_No_Wall__raw == value) return;
                     Claw_Flinch_Shot_No_Wall__raw = value;
+                    ChangedItems.Add(nameof(Claw_Flinch_Shot_No_Wall_));
                     OnPropertyChanged(nameof(Claw_Flinch_Shot_No_Wall_));
                 }
             }
@@ -2742,6 +2869,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Claw_Attack_raw == value) return;
                     Claw_Attack_raw = value;
+                    ChangedItems.Add(nameof(Claw_Attack));
                     OnPropertyChanged(nameof(Claw_Attack));
                 }
             }
@@ -2756,6 +2884,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Claw_Flinch_Shot_Wall__raw == value) return;
                     Claw_Flinch_Shot_Wall__raw = value;
+                    ChangedItems.Add(nameof(Claw_Flinch_Shot_Wall_));
                     OnPropertyChanged(nameof(Claw_Flinch_Shot_Wall_));
                 }
             }
@@ -2770,6 +2899,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Claw_Flinch_Shot_Ledge__raw == value) return;
                     Claw_Flinch_Shot_Ledge__raw = value;
+                    ChangedItems.Add(nameof(Claw_Flinch_Shot_Ledge_));
                     OnPropertyChanged(nameof(Claw_Flinch_Shot_Ledge_));
                 }
             }
@@ -2819,6 +2949,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Base_raw == value) return;
                     Base_raw = value;
+                    ChangedItems.Add(nameof(Base));
                     OnPropertyChanged(nameof(Base));
                 }
             }
@@ -2833,6 +2964,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Buildup_raw == value) return;
                     Buildup_raw = value;
+                    ChangedItems.Add(nameof(Buildup));
                     OnPropertyChanged(nameof(Buildup));
                 }
             }
@@ -2847,6 +2979,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Max_Cap_raw == value) return;
                     Max_Cap_raw = value;
+                    ChangedItems.Add(nameof(Max_Cap));
                     OnPropertyChanged(nameof(Max_Cap));
                 }
             }
@@ -2861,6 +2994,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Time_raw == value) return;
                     Drain_Time_raw = value;
+                    ChangedItems.Add(nameof(Drain_Time));
                     OnPropertyChanged(nameof(Drain_Time));
                 }
             }
@@ -2875,6 +3009,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Drain_Value_raw == value) return;
                     Drain_Value_raw = value;
+                    ChangedItems.Add(nameof(Drain_Value));
                     OnPropertyChanged(nameof(Drain_Value));
                 }
             }
@@ -2889,6 +3024,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_raw == value) return;
                     Duration_raw = value;
+                    ChangedItems.Add(nameof(Duration));
                     OnPropertyChanged(nameof(Duration));
                 }
             }
@@ -2903,6 +3039,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Decrease_Per_Use_raw == value) return;
                     Duration_Decrease_Per_Use_raw = value;
+                    ChangedItems.Add(nameof(Duration_Decrease_Per_Use));
                     OnPropertyChanged(nameof(Duration_Decrease_Per_Use));
                 }
             }
@@ -2917,6 +3054,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Duration_Minimum_raw == value) return;
                     Duration_Minimum_raw = value;
+                    ChangedItems.Add(nameof(Duration_Minimum));
                     OnPropertyChanged(nameof(Duration_Minimum));
                 }
             }

@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Id_raw == value) return;
                     Id_raw = value;
+                    ChangedItems.Add(nameof(Id));
                     OnPropertyChanged(nameof(Id));
                 }
             }
@@ -123,6 +127,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if ((MHW_Template.Weapons.NoteColor) Note_1_raw == value) return;
                     Note_1_raw = (byte) value;
+                    ChangedItems.Add(nameof(Note_1));
                     OnPropertyChanged(nameof(Note_1));
                 }
             }
@@ -137,6 +142,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if ((MHW_Template.Weapons.NoteColor) Note_2_raw == value) return;
                     Note_2_raw = (byte) value;
+                    ChangedItems.Add(nameof(Note_2));
                     OnPropertyChanged(nameof(Note_2));
                 }
             }
@@ -151,6 +157,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if ((MHW_Template.Weapons.NoteColor) Note_3_raw == value) return;
                     Note_3_raw = (byte) value;
+                    ChangedItems.Add(nameof(Note_3));
                     OnPropertyChanged(nameof(Note_3));
                 }
             }

@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((ulong) Index_raw == value) return;
                     Index_raw = (uint) value;
+                    ChangedItems.Add(nameof(Index));
                     OnPropertyChanged(nameof(Index));
                 }
             }
@@ -125,6 +129,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Item_Id_raw == value) return;
                     Item_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_Id));
                     OnPropertyChanged(nameof(Item_Id));
                     OnPropertyChanged(nameof(Item_Id_button));
                 }
@@ -145,6 +150,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_1_raw == value) return;
                     Grade_1_raw = value;
+                    ChangedItems.Add(nameof(Grade_1));
                     OnPropertyChanged(nameof(Grade_1));
                 }
             }
@@ -170,6 +176,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_2_raw == value) return;
                     Grade_2_raw = value;
+                    ChangedItems.Add(nameof(Grade_2));
                     OnPropertyChanged(nameof(Grade_2));
                 }
             }
@@ -195,6 +202,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_3_raw == value) return;
                     Grade_3_raw = value;
+                    ChangedItems.Add(nameof(Grade_3));
                     OnPropertyChanged(nameof(Grade_3));
                 }
             }
@@ -220,6 +228,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_4_raw == value) return;
                     Grade_4_raw = value;
+                    ChangedItems.Add(nameof(Grade_4));
                     OnPropertyChanged(nameof(Grade_4));
                 }
             }
@@ -245,6 +254,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_5_raw == value) return;
                     Grade_5_raw = value;
+                    ChangedItems.Add(nameof(Grade_5));
                     OnPropertyChanged(nameof(Grade_5));
                 }
             }
@@ -270,6 +280,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_6_raw == value) return;
                     Grade_6_raw = value;
+                    ChangedItems.Add(nameof(Grade_6));
                     OnPropertyChanged(nameof(Grade_6));
                 }
             }
@@ -295,6 +306,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_7_raw == value) return;
                     Grade_7_raw = value;
+                    ChangedItems.Add(nameof(Grade_7));
                     OnPropertyChanged(nameof(Grade_7));
                 }
             }
@@ -320,6 +332,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_8_raw == value) return;
                     Grade_8_raw = value;
+                    ChangedItems.Add(nameof(Grade_8));
                     OnPropertyChanged(nameof(Grade_8));
                 }
             }
@@ -345,6 +358,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_9_raw == value) return;
                     Grade_9_raw = value;
+                    ChangedItems.Add(nameof(Grade_9));
                     OnPropertyChanged(nameof(Grade_9));
                 }
             }
@@ -370,6 +384,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_10_raw == value) return;
                     Grade_10_raw = value;
+                    ChangedItems.Add(nameof(Grade_10));
                     OnPropertyChanged(nameof(Grade_10));
                 }
             }
@@ -395,6 +410,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_11_raw == value) return;
                     Grade_11_raw = value;
+                    ChangedItems.Add(nameof(Grade_11));
                     OnPropertyChanged(nameof(Grade_11));
                 }
             }
@@ -420,6 +436,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_12_raw == value) return;
                     Grade_12_raw = value;
+                    ChangedItems.Add(nameof(Grade_12));
                     OnPropertyChanged(nameof(Grade_12));
                 }
             }
@@ -445,6 +462,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_13_raw == value) return;
                     Grade_13_raw = value;
+                    ChangedItems.Add(nameof(Grade_13));
                     OnPropertyChanged(nameof(Grade_13));
                 }
             }
@@ -470,6 +488,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_14_raw == value) return;
                     Grade_14_raw = value;
+                    ChangedItems.Add(nameof(Grade_14));
                     OnPropertyChanged(nameof(Grade_14));
                 }
             }
@@ -495,6 +514,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Grade_15_raw == value) return;
                     Grade_15_raw = value;
+                    ChangedItems.Add(nameof(Grade_15));
                     OnPropertyChanged(nameof(Grade_15));
                 }
             }

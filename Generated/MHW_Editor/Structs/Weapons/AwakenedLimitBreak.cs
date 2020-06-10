@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -108,6 +111,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Skill_Id_raw == value) return;
                     Skill_Id_raw = value;
+                    ChangedItems.Add(nameof(Skill_Id));
                     OnPropertyChanged(nameof(Skill_Id));
                     OnPropertyChanged(nameof(Skill_Id_button));
                 }
@@ -128,6 +132,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Group_Id_raw == value) return;
                     Group_Id_raw = value;
+                    ChangedItems.Add(nameof(Group_Id));
                     OnPropertyChanged(nameof(Group_Id));
                 }
             }
@@ -142,6 +147,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Rarity_raw == value) return;
                     Rarity_raw = value;
+                    ChangedItems.Add(nameof(Rarity));
                     OnPropertyChanged(nameof(Rarity));
                 }
             }
@@ -156,6 +162,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Unk_raw == value) return;
                     Unk_raw = value;
+                    ChangedItems.Add(nameof(Unk));
                     OnPropertyChanged(nameof(Unk));
                 }
             }
@@ -170,6 +177,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Has_Upgrade_raw) == value) return;
                     Has_Upgrade_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Has_Upgrade));
                     OnPropertyChanged(nameof(Has_Upgrade));
                 }
             }
@@ -184,6 +192,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Previous_Upgrade_Id_When_Max_Lvl_raw == value) return;
                     Previous_Upgrade_Id_When_Max_Lvl_raw = value;
+                    ChangedItems.Add(nameof(Previous_Upgrade_Id_When_Max_Lvl));
                     OnPropertyChanged(nameof(Previous_Upgrade_Id_When_Max_Lvl));
                 }
             }
@@ -198,6 +207,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Next_Upgrade_Id_raw == value) return;
                     Next_Upgrade_Id_raw = value;
+                    ChangedItems.Add(nameof(Next_Upgrade_Id));
                     OnPropertyChanged(nameof(Next_Upgrade_Id));
                 }
             }
@@ -212,6 +222,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Can_Stack_raw) == value) return;
                     Can_Stack_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Can_Stack));
                     OnPropertyChanged(nameof(Can_Stack));
                 }
             }
@@ -226,6 +237,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Unk8_raw) == value) return;
                     Unk8_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Unk8));
                     OnPropertyChanged(nameof(Unk8));
                 }
             }
@@ -240,6 +252,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Lvl_1_Id_raw == value) return;
                     Lvl_1_Id_raw = value;
+                    ChangedItems.Add(nameof(Lvl_1_Id));
                     OnPropertyChanged(nameof(Lvl_1_Id));
                 }
             }
@@ -254,6 +267,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Lvl_2_Id_raw == value) return;
                     Lvl_2_Id_raw = value;
+                    ChangedItems.Add(nameof(Lvl_2_Id));
                     OnPropertyChanged(nameof(Lvl_2_Id));
                 }
             }
@@ -268,6 +282,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Lvl_3_Id_raw == value) return;
                     Lvl_3_Id_raw = value;
+                    ChangedItems.Add(nameof(Lvl_3_Id));
                     OnPropertyChanged(nameof(Lvl_3_Id));
                 }
             }
@@ -282,6 +297,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Lvl_4_Id_raw == value) return;
                     Lvl_4_Id_raw = value;
+                    ChangedItems.Add(nameof(Lvl_4_Id));
                     OnPropertyChanged(nameof(Lvl_4_Id));
                 }
             }
@@ -296,6 +312,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Lvl_5_Id_raw == value) return;
                     Lvl_5_Id_raw = value;
+                    ChangedItems.Add(nameof(Lvl_5_Id));
                     OnPropertyChanged(nameof(Lvl_5_Id));
                 }
             }
@@ -310,6 +327,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_Great_Sword_raw) == value) return;
                     Works_on_Great_Sword_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_Great_Sword));
                     OnPropertyChanged(nameof(Works_on_Great_Sword));
                 }
             }
@@ -324,6 +342,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_Sword_Shield_raw) == value) return;
                     Works_on_Sword_Shield_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_Sword_Shield));
                     OnPropertyChanged(nameof(Works_on_Sword_Shield));
                 }
             }
@@ -338,6 +357,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_Dual_Blades_raw) == value) return;
                     Works_on_Dual_Blades_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_Dual_Blades));
                     OnPropertyChanged(nameof(Works_on_Dual_Blades));
                 }
             }
@@ -352,6 +372,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_Long_Sword_raw) == value) return;
                     Works_on_Long_Sword_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_Long_Sword));
                     OnPropertyChanged(nameof(Works_on_Long_Sword));
                 }
             }
@@ -366,6 +387,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_Hammer_raw) == value) return;
                     Works_on_Hammer_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_Hammer));
                     OnPropertyChanged(nameof(Works_on_Hammer));
                 }
             }
@@ -380,6 +402,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_Hunting_Horn_raw) == value) return;
                     Works_on_Hunting_Horn_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_Hunting_Horn));
                     OnPropertyChanged(nameof(Works_on_Hunting_Horn));
                 }
             }
@@ -394,6 +417,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_Lance_raw) == value) return;
                     Works_on_Lance_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_Lance));
                     OnPropertyChanged(nameof(Works_on_Lance));
                 }
             }
@@ -408,6 +432,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_Gunlance_raw) == value) return;
                     Works_on_Gunlance_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_Gunlance));
                     OnPropertyChanged(nameof(Works_on_Gunlance));
                 }
             }
@@ -422,6 +447,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_Switch_Axe_raw) == value) return;
                     Works_on_Switch_Axe_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_Switch_Axe));
                     OnPropertyChanged(nameof(Works_on_Switch_Axe));
                 }
             }
@@ -436,6 +462,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_Charge_Blade_raw) == value) return;
                     Works_on_Charge_Blade_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_Charge_Blade));
                     OnPropertyChanged(nameof(Works_on_Charge_Blade));
                 }
             }
@@ -450,6 +477,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_Insect_Glaive_raw) == value) return;
                     Works_on_Insect_Glaive_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_Insect_Glaive));
                     OnPropertyChanged(nameof(Works_on_Insect_Glaive));
                 }
             }
@@ -464,6 +492,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_Bow_raw) == value) return;
                     Works_on_Bow_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_Bow));
                     OnPropertyChanged(nameof(Works_on_Bow));
                 }
             }
@@ -478,6 +507,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_HBG_raw) == value) return;
                     Works_on_HBG_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_HBG));
                     OnPropertyChanged(nameof(Works_on_HBG));
                 }
             }
@@ -492,6 +522,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Convert.ToBoolean(Works_on_LBG_raw) == value) return;
                     Works_on_LBG_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Works_on_LBG));
                     OnPropertyChanged(nameof(Works_on_LBG));
                 }
             }
@@ -506,6 +537,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Unk_1_raw == value) return;
                     Unk_1_raw = value;
+                    ChangedItems.Add(nameof(Unk_1));
                     OnPropertyChanged(nameof(Unk_1));
                 }
             }
@@ -520,6 +552,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Unk_2_raw == value) return;
                     Unk_2_raw = value;
+                    ChangedItems.Add(nameof(Unk_2));
                     OnPropertyChanged(nameof(Unk_2));
                 }
             }
@@ -534,6 +567,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Unk_3_raw == value) return;
                     Unk_3_raw = value;
+                    ChangedItems.Add(nameof(Unk_3));
                     OnPropertyChanged(nameof(Unk_3));
                 }
             }
@@ -548,6 +582,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Unk_4_raw == value) return;
                     Unk_4_raw = value;
+                    ChangedItems.Add(nameof(Unk_4));
                     OnPropertyChanged(nameof(Unk_4));
                 }
             }

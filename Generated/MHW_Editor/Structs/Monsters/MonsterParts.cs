@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -63,6 +65,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Monster_Id_raw == value) return;
                     Monster_Id_raw = value;
+                    ChangedItems.Add(nameof(Monster_Id));
                     OnPropertyChanged(nameof(Monster_Id));
                     OnPropertyChanged(nameof(Monster_Id_button));
                 }
@@ -84,6 +87,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Magic_3_raw == value) return;
                     Magic_3_raw = value;
+                    ChangedItems.Add(nameof(Magic_3));
                     OnPropertyChanged(nameof(Magic_3));
                 }
             }
@@ -98,6 +102,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Health_raw == value) return;
                     Health_raw = value;
+                    ChangedItems.Add(nameof(Health));
                     OnPropertyChanged(nameof(Health));
                 }
             }
@@ -113,6 +118,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Flinches_Count_raw == value) return;
                     Flinches_Count_raw = value;
+                    ChangedItems.Add(nameof(Flinches_Count));
                     OnPropertyChanged(nameof(Flinches_Count));
                 }
             }
@@ -164,6 +170,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Flinch_Value_raw == value) return;
                     Flinch_Value_raw = value;
+                    ChangedItems.Add(nameof(Flinch_Value));
                     OnPropertyChanged(nameof(Flinch_Value));
                 }
             }
@@ -178,6 +185,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Special_Part_1_raw == value) return;
                     Special_Part_1_raw = value;
+                    ChangedItems.Add(nameof(Special_Part_1));
                     OnPropertyChanged(nameof(Special_Part_1));
                 }
             }
@@ -192,6 +200,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Special_Part_2_raw == value) return;
                     Special_Part_2_raw = value;
+                    ChangedItems.Add(nameof(Special_Part_2));
                     OnPropertyChanged(nameof(Special_Part_2));
                 }
             }
@@ -206,6 +215,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Special_Part_3_raw == value) return;
                     Special_Part_3_raw = value;
+                    ChangedItems.Add(nameof(Special_Part_3));
                     OnPropertyChanged(nameof(Special_Part_3));
                 }
             }
@@ -220,6 +230,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if ((MHW_Template.Weapons.KinsectColor) Kinsect_Color_raw == value) return;
                     Kinsect_Color_raw = (uint) value;
+                    ChangedItems.Add(nameof(Kinsect_Color));
                     OnPropertyChanged(nameof(Kinsect_Color));
                 }
             }
@@ -235,6 +246,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Parts_Type_raw == value) return;
                     Parts_Type_raw = value;
+                    ChangedItems.Add(nameof(Parts_Type));
                     OnPropertyChanged(nameof(Parts_Type));
                 }
             }
@@ -253,6 +265,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Normal_raw == value) return;
                         Part_Id_LR_HR1_Normal_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Normal));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Normal));
                     }
                 }
@@ -267,6 +280,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Wounded_raw == value) return;
                         Part_Id_LR_HR1_Wounded_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Wounded));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Wounded));
                     }
                 }
@@ -281,6 +295,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Special_Phase_1_raw == value) return;
                         Part_Id_LR_HR1_Special_Phase_1_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Special_Phase_1));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Special_Phase_1));
                     }
                 }
@@ -295,6 +310,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Special_Phase_2_raw == value) return;
                         Part_Id_LR_HR1_Special_Phase_2_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Special_Phase_2));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Special_Phase_2));
                     }
                 }
@@ -309,6 +325,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Special_Phase_3_raw == value) return;
                         Part_Id_LR_HR1_Special_Phase_3_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Special_Phase_3));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Special_Phase_3));
                     }
                 }
@@ -323,6 +340,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Normal_raw == value) return;
                         Part_Id_MR1_Normal_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Normal));
                         OnPropertyChanged(nameof(Part_Id_MR1_Normal));
                     }
                 }
@@ -337,6 +355,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Wounded_raw == value) return;
                         Part_Id_MR1_Wounded_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Wounded));
                         OnPropertyChanged(nameof(Part_Id_MR1_Wounded));
                     }
                 }
@@ -351,6 +370,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Special_Phase_1_raw == value) return;
                         Part_Id_MR1_Special_Phase_1_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Special_Phase_1));
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_1));
                     }
                 }
@@ -365,6 +385,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Special_Phase_2_raw == value) return;
                         Part_Id_MR1_Special_Phase_2_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Special_Phase_2));
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_2));
                     }
                 }
@@ -379,6 +400,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Special_Phase_3_raw == value) return;
                         Part_Id_MR1_Special_Phase_3_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Special_Phase_3));
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_3));
                     }
                 }
@@ -393,6 +415,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk9_raw == value) return;
                         unk9_raw = value;
+                        ChangedItems.Add(nameof(unk9));
                         OnPropertyChanged(nameof(unk9));
                     }
                 }
@@ -407,6 +430,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk10_raw == value) return;
                         unk10_raw = value;
+                        ChangedItems.Add(nameof(unk10));
                         OnPropertyChanged(nameof(unk10));
                     }
                 }
@@ -421,6 +445,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk11_raw == value) return;
                         unk11_raw = value;
+                        ChangedItems.Add(nameof(unk11));
                         OnPropertyChanged(nameof(unk11));
                     }
                 }
@@ -435,6 +460,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk12_raw == value) return;
                         unk12_raw = value;
+                        ChangedItems.Add(nameof(unk12));
                         OnPropertyChanged(nameof(unk12));
                     }
                 }
@@ -449,6 +475,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk13_raw == value) return;
                         unk13_raw = value;
+                        ChangedItems.Add(nameof(unk13));
                         OnPropertyChanged(nameof(unk13));
                     }
                 }
@@ -544,6 +571,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Normal_raw == value) return;
                         Part_Id_LR_HR1_Normal_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Normal));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Normal));
                     }
                 }
@@ -558,6 +586,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Wounded_raw == value) return;
                         Part_Id_LR_HR1_Wounded_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Wounded));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Wounded));
                     }
                 }
@@ -572,6 +601,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Special_Phase_1_raw == value) return;
                         Part_Id_LR_HR1_Special_Phase_1_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Special_Phase_1));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Special_Phase_1));
                     }
                 }
@@ -586,6 +616,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Special_Phase_2_raw == value) return;
                         Part_Id_LR_HR1_Special_Phase_2_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Special_Phase_2));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Special_Phase_2));
                     }
                 }
@@ -600,6 +631,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Special_Phase_3_raw == value) return;
                         Part_Id_LR_HR1_Special_Phase_3_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Special_Phase_3));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Special_Phase_3));
                     }
                 }
@@ -614,6 +646,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Normal_raw == value) return;
                         Part_Id_MR1_Normal_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Normal));
                         OnPropertyChanged(nameof(Part_Id_MR1_Normal));
                     }
                 }
@@ -628,6 +661,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Wounded_raw == value) return;
                         Part_Id_MR1_Wounded_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Wounded));
                         OnPropertyChanged(nameof(Part_Id_MR1_Wounded));
                     }
                 }
@@ -642,6 +676,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Special_Phase_1_raw == value) return;
                         Part_Id_MR1_Special_Phase_1_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Special_Phase_1));
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_1));
                     }
                 }
@@ -656,6 +691,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Special_Phase_2_raw == value) return;
                         Part_Id_MR1_Special_Phase_2_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Special_Phase_2));
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_2));
                     }
                 }
@@ -670,6 +706,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Special_Phase_3_raw == value) return;
                         Part_Id_MR1_Special_Phase_3_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Special_Phase_3));
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_3));
                     }
                 }
@@ -684,6 +721,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR2_Normal_raw == value) return;
                         Part_Id_LR_HR2_Normal_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR2_Normal));
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Normal));
                     }
                 }
@@ -698,6 +736,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR2_Wounded_raw == value) return;
                         Part_Id_LR_HR2_Wounded_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR2_Wounded));
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Wounded));
                     }
                 }
@@ -712,6 +751,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR2_Special_Phase_1_raw == value) return;
                         Part_Id_LR_HR2_Special_Phase_1_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR2_Special_Phase_1));
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Special_Phase_1));
                     }
                 }
@@ -726,6 +766,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR2_Special_Phase_2_raw == value) return;
                         Part_Id_LR_HR2_Special_Phase_2_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR2_Special_Phase_2));
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Special_Phase_2));
                     }
                 }
@@ -740,6 +781,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR2_Special_Phase_3_raw == value) return;
                         Part_Id_LR_HR2_Special_Phase_3_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR2_Special_Phase_3));
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Special_Phase_3));
                     }
                 }
@@ -754,6 +796,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR2_Normal_raw == value) return;
                         Part_Id_MR2_Normal_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR2_Normal));
                         OnPropertyChanged(nameof(Part_Id_MR2_Normal));
                     }
                 }
@@ -768,6 +811,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR2_Wounded_raw == value) return;
                         Part_Id_MR2_Wounded_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR2_Wounded));
                         OnPropertyChanged(nameof(Part_Id_MR2_Wounded));
                     }
                 }
@@ -782,6 +826,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR2_Special_Phase_1_raw == value) return;
                         Part_Id_MR2_Special_Phase_1_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR2_Special_Phase_1));
                         OnPropertyChanged(nameof(Part_Id_MR2_Special_Phase_1));
                     }
                 }
@@ -796,6 +841,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR2_Special_Phase_2_raw == value) return;
                         Part_Id_MR2_Special_Phase_2_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR2_Special_Phase_2));
                         OnPropertyChanged(nameof(Part_Id_MR2_Special_Phase_2));
                     }
                 }
@@ -810,6 +856,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR2_Special_Phase_3_raw == value) return;
                         Part_Id_MR2_Special_Phase_3_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR2_Special_Phase_3));
                         OnPropertyChanged(nameof(Part_Id_MR2_Special_Phase_3));
                     }
                 }
@@ -824,6 +871,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk19_raw == value) return;
                         unk19_raw = value;
+                        ChangedItems.Add(nameof(unk19));
                         OnPropertyChanged(nameof(unk19));
                     }
                 }
@@ -838,6 +886,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk20_raw == value) return;
                         unk20_raw = value;
+                        ChangedItems.Add(nameof(unk20));
                         OnPropertyChanged(nameof(unk20));
                     }
                 }
@@ -852,6 +901,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk21_raw == value) return;
                         unk21_raw = value;
+                        ChangedItems.Add(nameof(unk21));
                         OnPropertyChanged(nameof(unk21));
                     }
                 }
@@ -866,6 +916,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk22_raw == value) return;
                         unk22_raw = value;
+                        ChangedItems.Add(nameof(unk22));
                         OnPropertyChanged(nameof(unk22));
                     }
                 }
@@ -880,6 +931,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk23_raw == value) return;
                         unk23_raw = value;
+                        ChangedItems.Add(nameof(unk23));
                         OnPropertyChanged(nameof(unk23));
                     }
                 }
@@ -1005,6 +1057,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Normal_raw == value) return;
                         Part_Id_LR_HR1_Normal_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Normal));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Normal));
                     }
                 }
@@ -1019,6 +1072,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Wounded_raw == value) return;
                         Part_Id_LR_HR1_Wounded_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Wounded));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Wounded));
                     }
                 }
@@ -1033,6 +1087,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Special_Phase_1_raw == value) return;
                         Part_Id_LR_HR1_Special_Phase_1_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Special_Phase_1));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Special_Phase_1));
                     }
                 }
@@ -1047,6 +1102,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Special_Phase_2_raw == value) return;
                         Part_Id_LR_HR1_Special_Phase_2_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Special_Phase_2));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Special_Phase_2));
                     }
                 }
@@ -1061,6 +1117,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR1_Special_Phase_3_raw == value) return;
                         Part_Id_LR_HR1_Special_Phase_3_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR1_Special_Phase_3));
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Special_Phase_3));
                     }
                 }
@@ -1075,6 +1132,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Normal_raw == value) return;
                         Part_Id_MR1_Normal_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Normal));
                         OnPropertyChanged(nameof(Part_Id_MR1_Normal));
                     }
                 }
@@ -1089,6 +1147,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Wounded_raw == value) return;
                         Part_Id_MR1_Wounded_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Wounded));
                         OnPropertyChanged(nameof(Part_Id_MR1_Wounded));
                     }
                 }
@@ -1103,6 +1162,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Special_Phase_1_raw == value) return;
                         Part_Id_MR1_Special_Phase_1_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Special_Phase_1));
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_1));
                     }
                 }
@@ -1117,6 +1177,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Special_Phase_2_raw == value) return;
                         Part_Id_MR1_Special_Phase_2_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Special_Phase_2));
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_2));
                     }
                 }
@@ -1131,6 +1192,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR1_Special_Phase_3_raw == value) return;
                         Part_Id_MR1_Special_Phase_3_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR1_Special_Phase_3));
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_3));
                     }
                 }
@@ -1145,6 +1207,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR2_Normal_raw == value) return;
                         Part_Id_LR_HR2_Normal_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR2_Normal));
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Normal));
                     }
                 }
@@ -1159,6 +1222,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR2_Wounded_raw == value) return;
                         Part_Id_LR_HR2_Wounded_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR2_Wounded));
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Wounded));
                     }
                 }
@@ -1173,6 +1237,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR2_Special_Phase_1_raw == value) return;
                         Part_Id_LR_HR2_Special_Phase_1_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR2_Special_Phase_1));
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Special_Phase_1));
                     }
                 }
@@ -1187,6 +1252,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR2_Special_Phase_2_raw == value) return;
                         Part_Id_LR_HR2_Special_Phase_2_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR2_Special_Phase_2));
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Special_Phase_2));
                     }
                 }
@@ -1201,6 +1267,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR2_Special_Phase_3_raw == value) return;
                         Part_Id_LR_HR2_Special_Phase_3_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR2_Special_Phase_3));
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Special_Phase_3));
                     }
                 }
@@ -1215,6 +1282,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR2_Normal_raw == value) return;
                         Part_Id_MR2_Normal_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR2_Normal));
                         OnPropertyChanged(nameof(Part_Id_MR2_Normal));
                     }
                 }
@@ -1229,6 +1297,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR2_Wounded_raw == value) return;
                         Part_Id_MR2_Wounded_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR2_Wounded));
                         OnPropertyChanged(nameof(Part_Id_MR2_Wounded));
                     }
                 }
@@ -1243,6 +1312,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR2_Special_Phase_1_raw == value) return;
                         Part_Id_MR2_Special_Phase_1_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR2_Special_Phase_1));
                         OnPropertyChanged(nameof(Part_Id_MR2_Special_Phase_1));
                     }
                 }
@@ -1257,6 +1327,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR2_Special_Phase_2_raw == value) return;
                         Part_Id_MR2_Special_Phase_2_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR2_Special_Phase_2));
                         OnPropertyChanged(nameof(Part_Id_MR2_Special_Phase_2));
                     }
                 }
@@ -1271,6 +1342,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR2_Special_Phase_3_raw == value) return;
                         Part_Id_MR2_Special_Phase_3_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR2_Special_Phase_3));
                         OnPropertyChanged(nameof(Part_Id_MR2_Special_Phase_3));
                     }
                 }
@@ -1285,6 +1357,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR3_Normal_raw == value) return;
                         Part_Id_LR_HR3_Normal_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR3_Normal));
                         OnPropertyChanged(nameof(Part_Id_LR_HR3_Normal));
                     }
                 }
@@ -1299,6 +1372,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR3_Wounded_raw == value) return;
                         Part_Id_LR_HR3_Wounded_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR3_Wounded));
                         OnPropertyChanged(nameof(Part_Id_LR_HR3_Wounded));
                     }
                 }
@@ -1313,6 +1387,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR3_Special_Phase_1_raw == value) return;
                         Part_Id_LR_HR3_Special_Phase_1_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR3_Special_Phase_1));
                         OnPropertyChanged(nameof(Part_Id_LR_HR3_Special_Phase_1));
                     }
                 }
@@ -1327,6 +1402,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR3_Special_Phase_2_raw == value) return;
                         Part_Id_LR_HR3_Special_Phase_2_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR3_Special_Phase_2));
                         OnPropertyChanged(nameof(Part_Id_LR_HR3_Special_Phase_2));
                     }
                 }
@@ -1341,6 +1417,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_LR_HR3_Special_Phase_3_raw == value) return;
                         Part_Id_LR_HR3_Special_Phase_3_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_LR_HR3_Special_Phase_3));
                         OnPropertyChanged(nameof(Part_Id_LR_HR3_Special_Phase_3));
                     }
                 }
@@ -1355,6 +1432,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR3_Normal_raw == value) return;
                         Part_Id_MR3_Normal_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR3_Normal));
                         OnPropertyChanged(nameof(Part_Id_MR3_Normal));
                     }
                 }
@@ -1369,6 +1447,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR3_Wounded_raw == value) return;
                         Part_Id_MR3_Wounded_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR3_Wounded));
                         OnPropertyChanged(nameof(Part_Id_MR3_Wounded));
                     }
                 }
@@ -1383,6 +1462,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR3_Special_Phase_1_raw == value) return;
                         Part_Id_MR3_Special_Phase_1_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR3_Special_Phase_1));
                         OnPropertyChanged(nameof(Part_Id_MR3_Special_Phase_1));
                     }
                 }
@@ -1397,6 +1477,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR3_Special_Phase_2_raw == value) return;
                         Part_Id_MR3_Special_Phase_2_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR3_Special_Phase_2));
                         OnPropertyChanged(nameof(Part_Id_MR3_Special_Phase_2));
                     }
                 }
@@ -1411,6 +1492,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (Part_Id_MR3_Special_Phase_3_raw == value) return;
                         Part_Id_MR3_Special_Phase_3_raw = value;
+                        ChangedItems.Add(nameof(Part_Id_MR3_Special_Phase_3));
                         OnPropertyChanged(nameof(Part_Id_MR3_Special_Phase_3));
                     }
                 }
@@ -1425,6 +1507,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk29_raw == value) return;
                         unk29_raw = value;
+                        ChangedItems.Add(nameof(unk29));
                         OnPropertyChanged(nameof(unk29));
                     }
                 }
@@ -1439,6 +1522,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk30_raw == value) return;
                         unk30_raw = value;
+                        ChangedItems.Add(nameof(unk30));
                         OnPropertyChanged(nameof(unk30));
                     }
                 }
@@ -1453,6 +1537,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk31_raw == value) return;
                         unk31_raw = value;
+                        ChangedItems.Add(nameof(unk31));
                         OnPropertyChanged(nameof(unk31));
                     }
                 }
@@ -1467,6 +1552,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk32_raw == value) return;
                         unk32_raw = value;
+                        ChangedItems.Add(nameof(unk32));
                         OnPropertyChanged(nameof(unk32));
                     }
                 }
@@ -1481,6 +1567,7 @@ namespace MHW_Editor.Structs.Monsters {
                     set {
                         if (unk33_raw == value) return;
                         unk33_raw = value;
+                        ChangedItems.Add(nameof(unk33));
                         OnPropertyChanged(nameof(unk33));
                     }
                 }
@@ -1687,6 +1774,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Hitzone_Count_raw == value) return;
                     Hitzone_Count_raw = value;
+                    ChangedItems.Add(nameof(Hitzone_Count));
                     OnPropertyChanged(nameof(Hitzone_Count));
                 }
             }
@@ -1728,6 +1816,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Timer_raw == value) return;
                     Timer_raw = value;
+                    ChangedItems.Add(nameof(Timer));
                     OnPropertyChanged(nameof(Timer));
                 }
             }
@@ -1742,6 +1831,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Sever_raw == value) return;
                     Sever_raw = value;
+                    ChangedItems.Add(nameof(Sever));
                     OnPropertyChanged(nameof(Sever));
                 }
             }
@@ -1756,6 +1846,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Impact_raw == value) return;
                     Impact_raw = value;
+                    ChangedItems.Add(nameof(Impact));
                     OnPropertyChanged(nameof(Impact));
                 }
             }
@@ -1770,6 +1861,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Shot_raw == value) return;
                     Shot_raw = value;
+                    ChangedItems.Add(nameof(Shot));
                     OnPropertyChanged(nameof(Shot));
                 }
             }
@@ -1784,6 +1876,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Fire_raw == value) return;
                     Fire_raw = value;
+                    ChangedItems.Add(nameof(Fire));
                     OnPropertyChanged(nameof(Fire));
                 }
             }
@@ -1798,6 +1891,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Water_raw == value) return;
                     Water_raw = value;
+                    ChangedItems.Add(nameof(Water));
                     OnPropertyChanged(nameof(Water));
                 }
             }
@@ -1812,6 +1906,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Ice_raw == value) return;
                     Ice_raw = value;
+                    ChangedItems.Add(nameof(Ice));
                     OnPropertyChanged(nameof(Ice));
                 }
             }
@@ -1826,6 +1921,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Thunder_raw == value) return;
                     Thunder_raw = value;
+                    ChangedItems.Add(nameof(Thunder));
                     OnPropertyChanged(nameof(Thunder));
                 }
             }
@@ -1840,6 +1936,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Dragon_raw == value) return;
                     Dragon_raw = value;
+                    ChangedItems.Add(nameof(Dragon));
                     OnPropertyChanged(nameof(Dragon));
                 }
             }
@@ -1854,6 +1951,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Stun_raw == value) return;
                     Stun_raw = value;
+                    ChangedItems.Add(nameof(Stun));
                     OnPropertyChanged(nameof(Stun));
                 }
             }
@@ -1868,6 +1966,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Stamina_raw == value) return;
                     Stamina_raw = value;
+                    ChangedItems.Add(nameof(Stamina));
                     OnPropertyChanged(nameof(Stamina));
                 }
             }
@@ -1932,6 +2031,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Sever_Count_raw == value) return;
                     Sever_Count_raw = value;
+                    ChangedItems.Add(nameof(Sever_Count));
                     OnPropertyChanged(nameof(Sever_Count));
                 }
             }
@@ -1973,6 +2073,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if ((MHW_Template.Weapons.DamageType) Damage_raw == value) return;
                     Damage_raw = (uint) value;
+                    ChangedItems.Add(nameof(Damage));
                     OnPropertyChanged(nameof(Damage));
                 }
             }
@@ -1987,6 +2088,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk1_raw == value) return;
                     unk1_raw = value;
+                    ChangedItems.Add(nameof(unk1));
                     OnPropertyChanged(nameof(unk1));
                 }
             }
@@ -2001,6 +2103,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk2_raw == value) return;
                     unk2_raw = value;
+                    ChangedItems.Add(nameof(unk2));
                     OnPropertyChanged(nameof(unk2));
                 }
             }
@@ -2015,6 +2118,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Sever_raw == value) return;
                     Sever_raw = value;
+                    ChangedItems.Add(nameof(Sever));
                     OnPropertyChanged(nameof(Sever));
                 }
             }
@@ -2029,6 +2133,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk5_raw == value) return;
                     unk5_raw = value;
+                    ChangedItems.Add(nameof(unk5));
                     OnPropertyChanged(nameof(unk5));
                 }
             }
@@ -2043,6 +2148,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Convert.ToBoolean(Special_raw) == value) return;
                     Special_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Special));
                     OnPropertyChanged(nameof(Special));
                 }
             }
@@ -2057,6 +2163,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Convert.ToBoolean(Blunt_raw) == value) return;
                     Blunt_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Blunt));
                     OnPropertyChanged(nameof(Blunt));
                 }
             }
@@ -2071,6 +2178,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Convert.ToBoolean(Shot_raw) == value) return;
                     Shot_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Shot));
                     OnPropertyChanged(nameof(Shot));
                 }
             }
@@ -2129,6 +2237,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (Unk_Count_raw == value) return;
                     Unk_Count_raw = value;
+                    ChangedItems.Add(nameof(Unk_Count));
                     OnPropertyChanged(nameof(Unk_Count));
                 }
             }
@@ -2170,6 +2279,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk1_raw == value) return;
                     unk1_raw = value;
+                    ChangedItems.Add(nameof(unk1));
                     OnPropertyChanged(nameof(unk1));
                 }
             }
@@ -2184,6 +2294,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk2_raw == value) return;
                     unk2_raw = value;
+                    ChangedItems.Add(nameof(unk2));
                     OnPropertyChanged(nameof(unk2));
                 }
             }
@@ -2198,6 +2309,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk3_raw == value) return;
                     unk3_raw = value;
+                    ChangedItems.Add(nameof(unk3));
                     OnPropertyChanged(nameof(unk3));
                 }
             }
@@ -2212,6 +2324,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk4_raw == value) return;
                     unk4_raw = value;
+                    ChangedItems.Add(nameof(unk4));
                     OnPropertyChanged(nameof(unk4));
                 }
             }
@@ -2226,6 +2339,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk5_raw == value) return;
                     unk5_raw = value;
+                    ChangedItems.Add(nameof(unk5));
                     OnPropertyChanged(nameof(unk5));
                 }
             }
@@ -2240,6 +2354,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk6_raw == value) return;
                     unk6_raw = value;
+                    ChangedItems.Add(nameof(unk6));
                     OnPropertyChanged(nameof(unk6));
                 }
             }
@@ -2254,6 +2369,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk7_raw == value) return;
                     unk7_raw = value;
+                    ChangedItems.Add(nameof(unk7));
                     OnPropertyChanged(nameof(unk7));
                 }
             }
@@ -2268,6 +2384,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk8_raw == value) return;
                     unk8_raw = value;
+                    ChangedItems.Add(nameof(unk8));
                     OnPropertyChanged(nameof(unk8));
                 }
             }
@@ -2282,6 +2399,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk9_raw == value) return;
                     unk9_raw = value;
+                    ChangedItems.Add(nameof(unk9));
                     OnPropertyChanged(nameof(unk9));
                 }
             }
@@ -2296,6 +2414,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk10_raw == value) return;
                     unk10_raw = value;
+                    ChangedItems.Add(nameof(unk10));
                     OnPropertyChanged(nameof(unk10));
                 }
             }
@@ -2310,6 +2429,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk11_raw == value) return;
                     unk11_raw = value;
+                    ChangedItems.Add(nameof(unk11));
                     OnPropertyChanged(nameof(unk11));
                 }
             }
@@ -2372,6 +2492,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk1_raw == value) return;
                     unk1_raw = value;
+                    ChangedItems.Add(nameof(unk1));
                     OnPropertyChanged(nameof(unk1));
                 }
             }
@@ -2386,6 +2507,7 @@ namespace MHW_Editor.Structs.Monsters {
                 set {
                     if (unk2_raw == value) return;
                     unk2_raw = value;
+                    ChangedItems.Add(nameof(unk2));
                     OnPropertyChanged(nameof(unk2));
                 }
             }

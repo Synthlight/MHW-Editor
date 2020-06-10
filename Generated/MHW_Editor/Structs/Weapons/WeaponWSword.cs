@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Id_raw == value) return;
                     Id_raw = value;
+                    ChangedItems.Add(nameof(Id));
                     OnPropertyChanged(nameof(Id));
                 }
             }
@@ -123,6 +127,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if ((MHW_Template.Weapons.Element) Element_1_Type_raw == value) return;
                     Element_1_Type_raw = (byte) value;
+                    ChangedItems.Add(nameof(Element_1_Type));
                     OnPropertyChanged(nameof(Element_1_Type));
                 }
             }
@@ -137,6 +142,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Element_1_Dmg_raw == value) return;
                     Element_1_Dmg_raw = value;
+                    ChangedItems.Add(nameof(Element_1_Dmg));
                     OnPropertyChanged(nameof(Element_1_Dmg));
                 }
             }
@@ -151,6 +157,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if ((MHW_Template.Weapons.Element) Element_2_Type_raw == value) return;
                     Element_2_Type_raw = (byte) value;
+                    ChangedItems.Add(nameof(Element_2_Type));
                     OnPropertyChanged(nameof(Element_2_Type));
                 }
             }
@@ -165,6 +172,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Element_2_Dmg_raw == value) return;
                     Element_2_Dmg_raw = value;
+                    ChangedItems.Add(nameof(Element_2_Dmg));
                     OnPropertyChanged(nameof(Element_2_Dmg));
                 }
             }

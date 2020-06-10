@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if ((ulong) Index_raw == value) return;
                     Index_raw = (uint) value;
+                    ChangedItems.Add(nameof(Index));
                     OnPropertyChanged(nameof(Index));
                 }
             }
@@ -125,6 +129,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Item_Id_raw == value) return;
                     Item_Id_raw = value;
+                    ChangedItems.Add(nameof(Item_Id));
                     OnPropertyChanged(nameof(Item_Id));
                     OnPropertyChanged(nameof(Item_Id_button));
                 }
@@ -145,6 +150,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Grade_1_raw == value) return;
                     Grade_1_raw = value;
+                    ChangedItems.Add(nameof(Grade_1));
                     OnPropertyChanged(nameof(Grade_1));
                 }
             }
@@ -170,6 +176,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Grade_2_raw == value) return;
                     Grade_2_raw = value;
+                    ChangedItems.Add(nameof(Grade_2));
                     OnPropertyChanged(nameof(Grade_2));
                 }
             }
@@ -195,6 +202,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Grade_3_raw == value) return;
                     Grade_3_raw = value;
+                    ChangedItems.Add(nameof(Grade_3));
                     OnPropertyChanged(nameof(Grade_3));
                 }
             }
@@ -220,6 +228,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Grade_4_raw == value) return;
                     Grade_4_raw = value;
+                    ChangedItems.Add(nameof(Grade_4));
                     OnPropertyChanged(nameof(Grade_4));
                 }
             }
@@ -244,6 +253,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Stream_R6__raw == value) return;
                     Stream_R6__raw = value;
+                    ChangedItems.Add(nameof(Stream_R6_));
                     OnPropertyChanged(nameof(Stream_R6_));
                 }
             }
@@ -268,6 +278,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Stream_R8__raw == value) return;
                     Stream_R8__raw = value;
+                    ChangedItems.Add(nameof(Stream_R8_));
                     OnPropertyChanged(nameof(Stream_R8_));
                 }
             }
@@ -293,6 +304,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Grade_5_raw == value) return;
                     Grade_5_raw = value;
+                    ChangedItems.Add(nameof(Grade_5));
                     OnPropertyChanged(nameof(Grade_5));
                 }
             }
@@ -318,6 +330,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Grade_6_raw == value) return;
                     Grade_6_raw = value;
+                    ChangedItems.Add(nameof(Grade_6));
                     OnPropertyChanged(nameof(Grade_6));
                 }
             }
@@ -343,6 +356,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Grade_7_raw == value) return;
                     Grade_7_raw = value;
+                    ChangedItems.Add(nameof(Grade_7));
                     OnPropertyChanged(nameof(Grade_7));
                 }
             }
@@ -368,6 +382,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Grade_8_raw == value) return;
                     Grade_8_raw = value;
+                    ChangedItems.Add(nameof(Grade_8));
                     OnPropertyChanged(nameof(Grade_8));
                 }
             }
@@ -393,6 +408,7 @@ namespace MHW_Editor.Structs.Gems {
                 set {
                     if (Grade_9_raw == value) return;
                     Grade_9_raw = value;
+                    ChangedItems.Add(nameof(Grade_9));
                     OnPropertyChanged(nameof(Grade_9));
                 }
             }

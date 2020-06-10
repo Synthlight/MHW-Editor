@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if ((ulong) Index_raw == value) return;
                     Index_raw = (uint) value;
+                    ChangedItems.Add(nameof(Index));
                     OnPropertyChanged(nameof(Index));
                 }
             }
@@ -124,6 +128,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Set_Id_raw == value) return;
                     Set_Id_raw = value;
+                    ChangedItems.Add(nameof(Set_Id));
                     OnPropertyChanged(nameof(Set_Id));
                 }
             }
@@ -139,6 +144,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if ((MHW_Template.Armors.ArmorType) Equip_Slot_raw == value) return;
                     Equip_Slot_raw = (byte) value;
+                    ChangedItems.Add(nameof(Equip_Slot));
                     OnPropertyChanged(nameof(Equip_Slot));
                 }
             }
@@ -153,6 +159,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Convert.ToBoolean(Is_Full_Set_raw) == value) return;
                     Is_Full_Set_raw = Convert.ToByte(value);
+                    ChangedItems.Add(nameof(Is_Full_Set));
                     OnPropertyChanged(nameof(Is_Full_Set));
                 }
             }
@@ -167,6 +174,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Defense_raw == value) return;
                     Defense_raw = value;
+                    ChangedItems.Add(nameof(Defense));
                     OnPropertyChanged(nameof(Defense));
                 }
             }
@@ -181,6 +189,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Rarity_raw == value) return;
                     Rarity_raw = value;
+                    ChangedItems.Add(nameof(Rarity));
                     OnPropertyChanged(nameof(Rarity));
                 }
             }
@@ -195,6 +204,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Order_raw == value) return;
                     Order_raw = value;
+                    ChangedItems.Add(nameof(Order));
                     OnPropertyChanged(nameof(Order));
                 }
             }
@@ -209,6 +219,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Model_Id_raw == value) return;
                     Model_Id_raw = value;
+                    ChangedItems.Add(nameof(Model_Id));
                     OnPropertyChanged(nameof(Model_Id));
                 }
             }
@@ -223,6 +234,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Cost_raw == value) return;
                     Cost_raw = value;
+                    ChangedItems.Add(nameof(Cost));
                     OnPropertyChanged(nameof(Cost));
                 }
             }
@@ -237,6 +249,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if ((MHW_Template.Armors.Variant) Variant_raw == value) return;
                     Variant_raw = (uint) value;
+                    ChangedItems.Add(nameof(Variant));
                     OnPropertyChanged(nameof(Variant));
                 }
             }
@@ -251,6 +264,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Fire_Res_raw == value) return;
                     Fire_Res_raw = value;
+                    ChangedItems.Add(nameof(Fire_Res));
                     OnPropertyChanged(nameof(Fire_Res));
                 }
             }
@@ -265,6 +279,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Water_Res_raw == value) return;
                     Water_Res_raw = value;
+                    ChangedItems.Add(nameof(Water_Res));
                     OnPropertyChanged(nameof(Water_Res));
                 }
             }
@@ -279,6 +294,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Ice_Res_raw == value) return;
                     Ice_Res_raw = value;
+                    ChangedItems.Add(nameof(Ice_Res));
                     OnPropertyChanged(nameof(Ice_Res));
                 }
             }
@@ -293,6 +309,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Thunder_Res_raw == value) return;
                     Thunder_Res_raw = value;
+                    ChangedItems.Add(nameof(Thunder_Res));
                     OnPropertyChanged(nameof(Thunder_Res));
                 }
             }
@@ -307,6 +324,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Dragon_Res_raw == value) return;
                     Dragon_Res_raw = value;
+                    ChangedItems.Add(nameof(Dragon_Res));
                     OnPropertyChanged(nameof(Dragon_Res));
                 }
             }
@@ -321,6 +339,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Unk_raw == value) return;
                     Unk_raw = value;
+                    ChangedItems.Add(nameof(Unk));
                     OnPropertyChanged(nameof(Unk));
                 }
             }
@@ -335,6 +354,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (Set_Group_raw == value) return;
                     Set_Group_raw = value;
+                    ChangedItems.Add(nameof(Set_Group));
                     OnPropertyChanged(nameof(Set_Group));
                 }
             }
@@ -350,6 +370,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (GMD_Name_Index_raw == value) return;
                     GMD_Name_Index_raw = value;
+                    ChangedItems.Add(nameof(GMD_Name_Index));
                     OnPropertyChanged(nameof(GMD_Name_Index));
                 }
             }
@@ -365,6 +386,7 @@ namespace MHW_Editor.Structs.Armors {
                 set {
                     if (GMD_Description_Index_raw == value) return;
                     GMD_Description_Index_raw = value;
+                    ChangedItems.Add(nameof(GMD_Description_Index));
                     OnPropertyChanged(nameof(GMD_Description_Index));
                 }
             }

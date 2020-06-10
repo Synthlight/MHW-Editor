@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -109,6 +112,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if (Song_Id_Raw_raw == value) return;
                     Song_Id_Raw_raw = value;
+                    ChangedItems.Add(nameof(Song_Id_Raw));
                     OnPropertyChanged(nameof(Song_Id_Raw));
                 }
             }
@@ -123,6 +127,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if ((MHW_Template.Weapons.NoteColorWithDisabled) Note_1_raw == value) return;
                     Note_1_raw = (int) value;
+                    ChangedItems.Add(nameof(Note_1));
                     OnPropertyChanged(nameof(Note_1));
                 }
             }
@@ -137,6 +142,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if ((MHW_Template.Weapons.NoteColorWithDisabled) Note_2_raw == value) return;
                     Note_2_raw = (int) value;
+                    ChangedItems.Add(nameof(Note_2));
                     OnPropertyChanged(nameof(Note_2));
                 }
             }
@@ -151,6 +157,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if ((MHW_Template.Weapons.NoteColorWithDisabled) Note_3_raw == value) return;
                     Note_3_raw = (int) value;
+                    ChangedItems.Add(nameof(Note_3));
                     OnPropertyChanged(nameof(Note_3));
                 }
             }
@@ -165,6 +172,7 @@ namespace MHW_Editor.Structs.Skills {
                 set {
                     if ((MHW_Template.Weapons.NoteColorWithDisabled) Note_4_raw == value) return;
                     Note_4_raw = (int) value;
+                    ChangedItems.Add(nameof(Note_4));
                     OnPropertyChanged(nameof(Note_4));
                 }
             }

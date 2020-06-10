@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -107,6 +110,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Normal_1_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Normal_1_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Normal_1_Mag_Cnt));
                     OnPropertyChanged(nameof(Normal_1_Mag_Cnt));
                 }
             }
@@ -122,6 +126,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Normal_1_Rec_Amnt_raw == value) return;
                     Normal_1_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Normal_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Normal_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Normal_1_Rec_Amnt_button));
                 }
@@ -143,6 +148,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Normal_1_Rel_Spd_raw == value) return;
                     Normal_1_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Normal_1_Rel_Spd));
                     OnPropertyChanged(nameof(Normal_1_Rel_Spd));
                     OnPropertyChanged(nameof(Normal_1_Rel_Spd_button));
                 }
@@ -163,6 +169,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Normal_2_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Normal_2_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Normal_2_Mag_Cnt));
                     OnPropertyChanged(nameof(Normal_2_Mag_Cnt));
                 }
             }
@@ -178,6 +185,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Normal_2_Rec_Amnt_raw == value) return;
                     Normal_2_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Normal_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Normal_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Normal_2_Rec_Amnt_button));
                 }
@@ -199,6 +207,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Normal_2_Rel_Spd_raw == value) return;
                     Normal_2_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Normal_2_Rel_Spd));
                     OnPropertyChanged(nameof(Normal_2_Rel_Spd));
                     OnPropertyChanged(nameof(Normal_2_Rel_Spd_button));
                 }
@@ -219,6 +228,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Normal_3_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Normal_3_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Normal_3_Mag_Cnt));
                     OnPropertyChanged(nameof(Normal_3_Mag_Cnt));
                 }
             }
@@ -234,6 +244,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Normal_3_Rec_Amnt_raw == value) return;
                     Normal_3_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Normal_3_Rec_Amnt));
                     OnPropertyChanged(nameof(Normal_3_Rec_Amnt));
                     OnPropertyChanged(nameof(Normal_3_Rec_Amnt_button));
                 }
@@ -255,6 +266,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Normal_3_Rel_Spd_raw == value) return;
                     Normal_3_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Normal_3_Rel_Spd));
                     OnPropertyChanged(nameof(Normal_3_Rel_Spd));
                     OnPropertyChanged(nameof(Normal_3_Rel_Spd_button));
                 }
@@ -275,6 +287,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Pierce_1_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Pierce_1_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Pierce_1_Mag_Cnt));
                     OnPropertyChanged(nameof(Pierce_1_Mag_Cnt));
                 }
             }
@@ -290,6 +303,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Pierce_1_Rec_Amnt_raw == value) return;
                     Pierce_1_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Pierce_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Pierce_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Pierce_1_Rec_Amnt_button));
                 }
@@ -311,6 +325,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Pierce_1_Rel_Spd_raw == value) return;
                     Pierce_1_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Pierce_1_Rel_Spd));
                     OnPropertyChanged(nameof(Pierce_1_Rel_Spd));
                     OnPropertyChanged(nameof(Pierce_1_Rel_Spd_button));
                 }
@@ -331,6 +346,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Pierce_2_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Pierce_2_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Pierce_2_Mag_Cnt));
                     OnPropertyChanged(nameof(Pierce_2_Mag_Cnt));
                 }
             }
@@ -346,6 +362,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Pierce_2_Rec_Amnt_raw == value) return;
                     Pierce_2_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Pierce_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Pierce_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Pierce_2_Rec_Amnt_button));
                 }
@@ -367,6 +384,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Pierce_2_Rel_Spd_raw == value) return;
                     Pierce_2_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Pierce_2_Rel_Spd));
                     OnPropertyChanged(nameof(Pierce_2_Rel_Spd));
                     OnPropertyChanged(nameof(Pierce_2_Rel_Spd_button));
                 }
@@ -387,6 +405,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Pierce_3_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Pierce_3_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Pierce_3_Mag_Cnt));
                     OnPropertyChanged(nameof(Pierce_3_Mag_Cnt));
                 }
             }
@@ -402,6 +421,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Pierce_3_Rec_Amnt_raw == value) return;
                     Pierce_3_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Pierce_3_Rec_Amnt));
                     OnPropertyChanged(nameof(Pierce_3_Rec_Amnt));
                     OnPropertyChanged(nameof(Pierce_3_Rec_Amnt_button));
                 }
@@ -423,6 +443,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Pierce_3_Rel_Spd_raw == value) return;
                     Pierce_3_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Pierce_3_Rel_Spd));
                     OnPropertyChanged(nameof(Pierce_3_Rel_Spd));
                     OnPropertyChanged(nameof(Pierce_3_Rel_Spd_button));
                 }
@@ -443,6 +464,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Spread_1_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Spread_1_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Spread_1_Mag_Cnt));
                     OnPropertyChanged(nameof(Spread_1_Mag_Cnt));
                 }
             }
@@ -458,6 +480,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Spread_1_Rec_Amnt_raw == value) return;
                     Spread_1_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Spread_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Spread_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Spread_1_Rec_Amnt_button));
                 }
@@ -479,6 +502,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Spread_1_Rel_Spd_raw == value) return;
                     Spread_1_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Spread_1_Rel_Spd));
                     OnPropertyChanged(nameof(Spread_1_Rel_Spd));
                     OnPropertyChanged(nameof(Spread_1_Rel_Spd_button));
                 }
@@ -499,6 +523,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Spread_2_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Spread_2_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Spread_2_Mag_Cnt));
                     OnPropertyChanged(nameof(Spread_2_Mag_Cnt));
                 }
             }
@@ -514,6 +539,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Spread_2_Rec_Amnt_raw == value) return;
                     Spread_2_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Spread_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Spread_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Spread_2_Rec_Amnt_button));
                 }
@@ -535,6 +561,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Spread_2_Rel_Spd_raw == value) return;
                     Spread_2_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Spread_2_Rel_Spd));
                     OnPropertyChanged(nameof(Spread_2_Rel_Spd));
                     OnPropertyChanged(nameof(Spread_2_Rel_Spd_button));
                 }
@@ -555,6 +582,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Spread_3_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Spread_3_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Spread_3_Mag_Cnt));
                     OnPropertyChanged(nameof(Spread_3_Mag_Cnt));
                 }
             }
@@ -570,6 +598,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Spread_3_Rec_Amnt_raw == value) return;
                     Spread_3_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Spread_3_Rec_Amnt));
                     OnPropertyChanged(nameof(Spread_3_Rec_Amnt));
                     OnPropertyChanged(nameof(Spread_3_Rec_Amnt_button));
                 }
@@ -591,6 +620,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Spread_3_Rel_Spd_raw == value) return;
                     Spread_3_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Spread_3_Rel_Spd));
                     OnPropertyChanged(nameof(Spread_3_Rel_Spd));
                     OnPropertyChanged(nameof(Spread_3_Rel_Spd_button));
                 }
@@ -611,6 +641,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Cluster_1_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Cluster_1_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Cluster_1_Mag_Cnt));
                     OnPropertyChanged(nameof(Cluster_1_Mag_Cnt));
                 }
             }
@@ -626,6 +657,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Cluster_1_Rec_Amnt_raw == value) return;
                     Cluster_1_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Cluster_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Cluster_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Cluster_1_Rec_Amnt_button));
                 }
@@ -647,6 +679,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Cluster_1_Rel_Spd_raw == value) return;
                     Cluster_1_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Cluster_1_Rel_Spd));
                     OnPropertyChanged(nameof(Cluster_1_Rel_Spd));
                     OnPropertyChanged(nameof(Cluster_1_Rel_Spd_button));
                 }
@@ -667,6 +700,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Cluster_2_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Cluster_2_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Cluster_2_Mag_Cnt));
                     OnPropertyChanged(nameof(Cluster_2_Mag_Cnt));
                 }
             }
@@ -682,6 +716,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Cluster_2_Rec_Amnt_raw == value) return;
                     Cluster_2_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Cluster_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Cluster_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Cluster_2_Rec_Amnt_button));
                 }
@@ -703,6 +738,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Cluster_2_Rel_Spd_raw == value) return;
                     Cluster_2_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Cluster_2_Rel_Spd));
                     OnPropertyChanged(nameof(Cluster_2_Rel_Spd));
                     OnPropertyChanged(nameof(Cluster_2_Rel_Spd_button));
                 }
@@ -723,6 +759,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Cluster_3_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Cluster_3_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Cluster_3_Mag_Cnt));
                     OnPropertyChanged(nameof(Cluster_3_Mag_Cnt));
                 }
             }
@@ -738,6 +775,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Cluster_3_Rec_Amnt_raw == value) return;
                     Cluster_3_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Cluster_3_Rec_Amnt));
                     OnPropertyChanged(nameof(Cluster_3_Rec_Amnt));
                     OnPropertyChanged(nameof(Cluster_3_Rec_Amnt_button));
                 }
@@ -759,6 +797,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Cluster_3_Rel_Spd_raw == value) return;
                     Cluster_3_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Cluster_3_Rel_Spd));
                     OnPropertyChanged(nameof(Cluster_3_Rel_Spd));
                     OnPropertyChanged(nameof(Cluster_3_Rel_Spd_button));
                 }
@@ -779,6 +818,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Wyvern_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Wyvern_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Wyvern_Mag_Cnt));
                     OnPropertyChanged(nameof(Wyvern_Mag_Cnt));
                 }
             }
@@ -794,6 +834,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Wyvern_Rec_Amnt_raw == value) return;
                     Wyvern_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Wyvern_Rec_Amnt));
                     OnPropertyChanged(nameof(Wyvern_Rec_Amnt));
                     OnPropertyChanged(nameof(Wyvern_Rec_Amnt_button));
                 }
@@ -815,6 +856,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Wyvern_Rel_Spd_raw == value) return;
                     Wyvern_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Wyvern_Rel_Spd));
                     OnPropertyChanged(nameof(Wyvern_Rel_Spd));
                     OnPropertyChanged(nameof(Wyvern_Rel_Spd_button));
                 }
@@ -835,6 +877,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sticky_1_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Sticky_1_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Sticky_1_Mag_Cnt));
                     OnPropertyChanged(nameof(Sticky_1_Mag_Cnt));
                 }
             }
@@ -850,6 +893,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sticky_1_Rec_Amnt_raw == value) return;
                     Sticky_1_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Sticky_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Sticky_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Sticky_1_Rec_Amnt_button));
                 }
@@ -871,6 +915,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sticky_1_Rel_Spd_raw == value) return;
                     Sticky_1_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Sticky_1_Rel_Spd));
                     OnPropertyChanged(nameof(Sticky_1_Rel_Spd));
                     OnPropertyChanged(nameof(Sticky_1_Rel_Spd_button));
                 }
@@ -891,6 +936,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sticky_2_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Sticky_2_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Sticky_2_Mag_Cnt));
                     OnPropertyChanged(nameof(Sticky_2_Mag_Cnt));
                 }
             }
@@ -906,6 +952,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sticky_2_Rec_Amnt_raw == value) return;
                     Sticky_2_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Sticky_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Sticky_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Sticky_2_Rec_Amnt_button));
                 }
@@ -927,6 +974,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sticky_2_Rel_Spd_raw == value) return;
                     Sticky_2_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Sticky_2_Rel_Spd));
                     OnPropertyChanged(nameof(Sticky_2_Rel_Spd));
                     OnPropertyChanged(nameof(Sticky_2_Rel_Spd_button));
                 }
@@ -947,6 +995,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sticky_3_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Sticky_3_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Sticky_3_Mag_Cnt));
                     OnPropertyChanged(nameof(Sticky_3_Mag_Cnt));
                 }
             }
@@ -962,6 +1011,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sticky_3_Rec_Amnt_raw == value) return;
                     Sticky_3_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Sticky_3_Rec_Amnt));
                     OnPropertyChanged(nameof(Sticky_3_Rec_Amnt));
                     OnPropertyChanged(nameof(Sticky_3_Rec_Amnt_button));
                 }
@@ -983,6 +1033,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sticky_3_Rel_Spd_raw == value) return;
                     Sticky_3_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Sticky_3_Rel_Spd));
                     OnPropertyChanged(nameof(Sticky_3_Rel_Spd));
                     OnPropertyChanged(nameof(Sticky_3_Rel_Spd_button));
                 }
@@ -1003,6 +1054,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Slicing_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Slicing_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Slicing_Mag_Cnt));
                     OnPropertyChanged(nameof(Slicing_Mag_Cnt));
                 }
             }
@@ -1018,6 +1070,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Slicing_Rec_Amnt_raw == value) return;
                     Slicing_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Slicing_Rec_Amnt));
                     OnPropertyChanged(nameof(Slicing_Rec_Amnt));
                     OnPropertyChanged(nameof(Slicing_Rec_Amnt_button));
                 }
@@ -1039,6 +1092,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Slicing_Rel_Spd_raw == value) return;
                     Slicing_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Slicing_Rel_Spd));
                     OnPropertyChanged(nameof(Slicing_Rel_Spd));
                     OnPropertyChanged(nameof(Slicing_Rel_Spd_button));
                 }
@@ -1059,6 +1113,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Flaming_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Flaming_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Flaming_Mag_Cnt));
                     OnPropertyChanged(nameof(Flaming_Mag_Cnt));
                 }
             }
@@ -1074,6 +1129,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Flaming_Rec_Amnt_raw == value) return;
                     Flaming_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Flaming_Rec_Amnt));
                     OnPropertyChanged(nameof(Flaming_Rec_Amnt));
                     OnPropertyChanged(nameof(Flaming_Rec_Amnt_button));
                 }
@@ -1095,6 +1151,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Flaming_Rel_Spd_raw == value) return;
                     Flaming_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Flaming_Rel_Spd));
                     OnPropertyChanged(nameof(Flaming_Rel_Spd));
                     OnPropertyChanged(nameof(Flaming_Rel_Spd_button));
                 }
@@ -1115,6 +1172,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Water_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Water_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Water_Mag_Cnt));
                     OnPropertyChanged(nameof(Water_Mag_Cnt));
                 }
             }
@@ -1130,6 +1188,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Water_Rec_Amnt_raw == value) return;
                     Water_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Water_Rec_Amnt));
                     OnPropertyChanged(nameof(Water_Rec_Amnt));
                     OnPropertyChanged(nameof(Water_Rec_Amnt_button));
                 }
@@ -1151,6 +1210,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Water_Rel_Spd_raw == value) return;
                     Water_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Water_Rel_Spd));
                     OnPropertyChanged(nameof(Water_Rel_Spd));
                     OnPropertyChanged(nameof(Water_Rel_Spd_button));
                 }
@@ -1171,6 +1231,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Freeze_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Freeze_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Freeze_Mag_Cnt));
                     OnPropertyChanged(nameof(Freeze_Mag_Cnt));
                 }
             }
@@ -1186,6 +1247,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Freeze_Rec_Amnt_raw == value) return;
                     Freeze_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Freeze_Rec_Amnt));
                     OnPropertyChanged(nameof(Freeze_Rec_Amnt));
                     OnPropertyChanged(nameof(Freeze_Rec_Amnt_button));
                 }
@@ -1207,6 +1269,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Freeze_Rel_Spd_raw == value) return;
                     Freeze_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Freeze_Rel_Spd));
                     OnPropertyChanged(nameof(Freeze_Rel_Spd));
                     OnPropertyChanged(nameof(Freeze_Rel_Spd_button));
                 }
@@ -1227,6 +1290,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Thunder_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Thunder_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Thunder_Mag_Cnt));
                     OnPropertyChanged(nameof(Thunder_Mag_Cnt));
                 }
             }
@@ -1242,6 +1306,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Thunder_Rec_Amnt_raw == value) return;
                     Thunder_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Thunder_Rec_Amnt));
                     OnPropertyChanged(nameof(Thunder_Rec_Amnt));
                     OnPropertyChanged(nameof(Thunder_Rec_Amnt_button));
                 }
@@ -1263,6 +1328,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Thunder_Rel_Spd_raw == value) return;
                     Thunder_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Thunder_Rel_Spd));
                     OnPropertyChanged(nameof(Thunder_Rel_Spd));
                     OnPropertyChanged(nameof(Thunder_Rel_Spd_button));
                 }
@@ -1283,6 +1349,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Dragon_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Dragon_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Dragon_Mag_Cnt));
                     OnPropertyChanged(nameof(Dragon_Mag_Cnt));
                 }
             }
@@ -1298,6 +1365,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Dragon_Rec_Amnt_raw == value) return;
                     Dragon_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Dragon_Rec_Amnt));
                     OnPropertyChanged(nameof(Dragon_Rec_Amnt));
                     OnPropertyChanged(nameof(Dragon_Rec_Amnt_button));
                 }
@@ -1319,6 +1387,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Dragon_Rel_Spd_raw == value) return;
                     Dragon_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Dragon_Rel_Spd));
                     OnPropertyChanged(nameof(Dragon_Rel_Spd));
                     OnPropertyChanged(nameof(Dragon_Rel_Spd_button));
                 }
@@ -1339,6 +1408,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Poison_1_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Poison_1_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Poison_1_Mag_Cnt));
                     OnPropertyChanged(nameof(Poison_1_Mag_Cnt));
                 }
             }
@@ -1354,6 +1424,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Poison_1_Rec_Amnt_raw == value) return;
                     Poison_1_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Poison_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Poison_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Poison_1_Rec_Amnt_button));
                 }
@@ -1375,6 +1446,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Poison_1_Rel_Spd_raw == value) return;
                     Poison_1_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Poison_1_Rel_Spd));
                     OnPropertyChanged(nameof(Poison_1_Rel_Spd));
                     OnPropertyChanged(nameof(Poison_1_Rel_Spd_button));
                 }
@@ -1395,6 +1467,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Poison_2_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Poison_2_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Poison_2_Mag_Cnt));
                     OnPropertyChanged(nameof(Poison_2_Mag_Cnt));
                 }
             }
@@ -1410,6 +1483,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Poison_2_Rec_Amnt_raw == value) return;
                     Poison_2_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Poison_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Poison_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Poison_2_Rec_Amnt_button));
                 }
@@ -1431,6 +1505,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Poison_2_Rel_Spd_raw == value) return;
                     Poison_2_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Poison_2_Rel_Spd));
                     OnPropertyChanged(nameof(Poison_2_Rel_Spd));
                     OnPropertyChanged(nameof(Poison_2_Rel_Spd_button));
                 }
@@ -1451,6 +1526,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Paralysis_1_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Paralysis_1_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Paralysis_1_Mag_Cnt));
                     OnPropertyChanged(nameof(Paralysis_1_Mag_Cnt));
                 }
             }
@@ -1466,6 +1542,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Paralysis_1_Rec_Amnt_raw == value) return;
                     Paralysis_1_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Paralysis_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Paralysis_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Paralysis_1_Rec_Amnt_button));
                 }
@@ -1487,6 +1564,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Paralysis_1_Rel_Spd_raw == value) return;
                     Paralysis_1_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Paralysis_1_Rel_Spd));
                     OnPropertyChanged(nameof(Paralysis_1_Rel_Spd));
                     OnPropertyChanged(nameof(Paralysis_1_Rel_Spd_button));
                 }
@@ -1507,6 +1585,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Paralysis_2_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Paralysis_2_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Paralysis_2_Mag_Cnt));
                     OnPropertyChanged(nameof(Paralysis_2_Mag_Cnt));
                 }
             }
@@ -1522,6 +1601,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Paralysis_2_Rec_Amnt_raw == value) return;
                     Paralysis_2_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Paralysis_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Paralysis_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Paralysis_2_Rec_Amnt_button));
                 }
@@ -1543,6 +1623,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Paralysis_2_Rel_Spd_raw == value) return;
                     Paralysis_2_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Paralysis_2_Rel_Spd));
                     OnPropertyChanged(nameof(Paralysis_2_Rel_Spd));
                     OnPropertyChanged(nameof(Paralysis_2_Rel_Spd_button));
                 }
@@ -1563,6 +1644,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sleep_1_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Sleep_1_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Sleep_1_Mag_Cnt));
                     OnPropertyChanged(nameof(Sleep_1_Mag_Cnt));
                 }
             }
@@ -1578,6 +1660,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sleep_1_Rec_Amnt_raw == value) return;
                     Sleep_1_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Sleep_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Sleep_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Sleep_1_Rec_Amnt_button));
                 }
@@ -1599,6 +1682,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sleep_1_Rel_Spd_raw == value) return;
                     Sleep_1_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Sleep_1_Rel_Spd));
                     OnPropertyChanged(nameof(Sleep_1_Rel_Spd));
                     OnPropertyChanged(nameof(Sleep_1_Rel_Spd_button));
                 }
@@ -1619,6 +1703,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sleep_2_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Sleep_2_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Sleep_2_Mag_Cnt));
                     OnPropertyChanged(nameof(Sleep_2_Mag_Cnt));
                 }
             }
@@ -1634,6 +1719,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sleep_2_Rec_Amnt_raw == value) return;
                     Sleep_2_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Sleep_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Sleep_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Sleep_2_Rec_Amnt_button));
                 }
@@ -1655,6 +1741,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Sleep_2_Rel_Spd_raw == value) return;
                     Sleep_2_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Sleep_2_Rel_Spd));
                     OnPropertyChanged(nameof(Sleep_2_Rel_Spd));
                     OnPropertyChanged(nameof(Sleep_2_Rel_Spd_button));
                 }
@@ -1675,6 +1762,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Exhaust_1_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Exhaust_1_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Exhaust_1_Mag_Cnt));
                     OnPropertyChanged(nameof(Exhaust_1_Mag_Cnt));
                 }
             }
@@ -1690,6 +1778,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Exhaust_1_Rec_Amnt_raw == value) return;
                     Exhaust_1_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Exhaust_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Exhaust_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Exhaust_1_Rec_Amnt_button));
                 }
@@ -1711,6 +1800,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Exhaust_1_Rel_Spd_raw == value) return;
                     Exhaust_1_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Exhaust_1_Rel_Spd));
                     OnPropertyChanged(nameof(Exhaust_1_Rel_Spd));
                     OnPropertyChanged(nameof(Exhaust_1_Rel_Spd_button));
                 }
@@ -1731,6 +1821,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Exhaust_2_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Exhaust_2_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Exhaust_2_Mag_Cnt));
                     OnPropertyChanged(nameof(Exhaust_2_Mag_Cnt));
                 }
             }
@@ -1746,6 +1837,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Exhaust_2_Rec_Amnt_raw == value) return;
                     Exhaust_2_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Exhaust_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Exhaust_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Exhaust_2_Rec_Amnt_button));
                 }
@@ -1767,6 +1859,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Exhaust_2_Rel_Spd_raw == value) return;
                     Exhaust_2_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Exhaust_2_Rel_Spd));
                     OnPropertyChanged(nameof(Exhaust_2_Rel_Spd));
                     OnPropertyChanged(nameof(Exhaust_2_Rel_Spd_button));
                 }
@@ -1787,6 +1880,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Recover_1_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Recover_1_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Recover_1_Mag_Cnt));
                     OnPropertyChanged(nameof(Recover_1_Mag_Cnt));
                 }
             }
@@ -1802,6 +1896,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Recover_1_Rec_Amnt_raw == value) return;
                     Recover_1_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Recover_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Recover_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Recover_1_Rec_Amnt_button));
                 }
@@ -1823,6 +1918,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Recover_1_Rel_Spd_raw == value) return;
                     Recover_1_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Recover_1_Rel_Spd));
                     OnPropertyChanged(nameof(Recover_1_Rel_Spd));
                     OnPropertyChanged(nameof(Recover_1_Rel_Spd_button));
                 }
@@ -1843,6 +1939,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Recover_2_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Recover_2_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Recover_2_Mag_Cnt));
                     OnPropertyChanged(nameof(Recover_2_Mag_Cnt));
                 }
             }
@@ -1858,6 +1955,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Recover_2_Rec_Amnt_raw == value) return;
                     Recover_2_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Recover_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Recover_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Recover_2_Rec_Amnt_button));
                 }
@@ -1879,6 +1977,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Recover_2_Rel_Spd_raw == value) return;
                     Recover_2_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Recover_2_Rel_Spd));
                     OnPropertyChanged(nameof(Recover_2_Rel_Spd));
                     OnPropertyChanged(nameof(Recover_2_Rel_Spd_button));
                 }
@@ -1899,6 +1998,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Demon_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Demon_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Demon_Mag_Cnt));
                     OnPropertyChanged(nameof(Demon_Mag_Cnt));
                 }
             }
@@ -1914,6 +2014,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Demon_Rec_Amnt_raw == value) return;
                     Demon_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Demon_Rec_Amnt));
                     OnPropertyChanged(nameof(Demon_Rec_Amnt));
                     OnPropertyChanged(nameof(Demon_Rec_Amnt_button));
                 }
@@ -1935,6 +2036,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Demon_Rel_Spd_raw == value) return;
                     Demon_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Demon_Rel_Spd));
                     OnPropertyChanged(nameof(Demon_Rel_Spd));
                     OnPropertyChanged(nameof(Demon_Rel_Spd_button));
                 }
@@ -1955,6 +2057,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Armor_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Armor_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Armor_Mag_Cnt));
                     OnPropertyChanged(nameof(Armor_Mag_Cnt));
                 }
             }
@@ -1970,6 +2073,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Armor_Rec_Amnt_raw == value) return;
                     Armor_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Armor_Rec_Amnt));
                     OnPropertyChanged(nameof(Armor_Rec_Amnt));
                     OnPropertyChanged(nameof(Armor_Rec_Amnt_button));
                 }
@@ -1991,6 +2095,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Armor_Rel_Spd_raw == value) return;
                     Armor_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Armor_Rel_Spd));
                     OnPropertyChanged(nameof(Armor_Rel_Spd));
                     OnPropertyChanged(nameof(Armor_Rel_Spd_button));
                 }
@@ -2011,6 +2116,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Unknown_1_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Unknown_1_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Unknown_1_Mag_Cnt));
                     OnPropertyChanged(nameof(Unknown_1_Mag_Cnt));
                 }
             }
@@ -2026,6 +2132,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Unknown_1_Rec_Amnt_raw == value) return;
                     Unknown_1_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Unknown_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Unknown_1_Rec_Amnt));
                     OnPropertyChanged(nameof(Unknown_1_Rec_Amnt_button));
                 }
@@ -2047,6 +2154,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Unknown_1_Rel_Spd_raw == value) return;
                     Unknown_1_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Unknown_1_Rel_Spd));
                     OnPropertyChanged(nameof(Unknown_1_Rel_Spd));
                     OnPropertyChanged(nameof(Unknown_1_Rel_Spd_button));
                 }
@@ -2067,6 +2175,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Unknown_2_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Unknown_2_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Unknown_2_Mag_Cnt));
                     OnPropertyChanged(nameof(Unknown_2_Mag_Cnt));
                 }
             }
@@ -2082,6 +2191,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Unknown_2_Rec_Amnt_raw == value) return;
                     Unknown_2_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Unknown_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Unknown_2_Rec_Amnt));
                     OnPropertyChanged(nameof(Unknown_2_Rec_Amnt_button));
                 }
@@ -2103,6 +2213,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Unknown_2_Rel_Spd_raw == value) return;
                     Unknown_2_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Unknown_2_Rel_Spd));
                     OnPropertyChanged(nameof(Unknown_2_Rel_Spd));
                     OnPropertyChanged(nameof(Unknown_2_Rel_Spd_button));
                 }
@@ -2123,6 +2234,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Tranq_Mag_Cnt_raw == value.Clamp((byte) 0, (byte) 10)) return;
                     Tranq_Mag_Cnt_raw = value.Clamp((byte) 0, (byte) 10);
+                    ChangedItems.Add(nameof(Tranq_Mag_Cnt));
                     OnPropertyChanged(nameof(Tranq_Mag_Cnt));
                 }
             }
@@ -2138,6 +2250,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Tranq_Rec_Amnt_raw == value) return;
                     Tranq_Rec_Amnt_raw = value;
+                    ChangedItems.Add(nameof(Tranq_Rec_Amnt));
                     OnPropertyChanged(nameof(Tranq_Rec_Amnt));
                     OnPropertyChanged(nameof(Tranq_Rec_Amnt_button));
                 }
@@ -2159,6 +2272,7 @@ namespace MHW_Editor.Structs.Weapons {
                 set {
                     if (Tranq_Rel_Spd_raw == value) return;
                     Tranq_Rel_Spd_raw = value;
+                    ChangedItems.Add(nameof(Tranq_Rel_Spd));
                     OnPropertyChanged(nameof(Tranq_Rel_Spd));
                     OnPropertyChanged(nameof(Tranq_Rel_Spd_button));
                 }

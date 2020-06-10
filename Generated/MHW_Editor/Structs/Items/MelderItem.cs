@@ -32,6 +32,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_1_raw == value) return;
                     Magic_1_raw = value;
+                    ChangedItems.Add(nameof(Magic_1));
                     OnPropertyChanged(nameof(Magic_1));
                 }
             }
@@ -47,6 +48,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Magic_2_raw == value) return;
                     Magic_2_raw = value;
+                    ChangedItems.Add(nameof(Magic_2));
                     OnPropertyChanged(nameof(Magic_2));
                 }
             }
@@ -62,6 +64,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Entry_Count_raw == value) return;
                     Entry_Count_raw = value;
+                    ChangedItems.Add(nameof(Entry_Count));
                     OnPropertyChanged(nameof(Entry_Count));
                 }
             }
@@ -108,6 +111,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Result_Item_Id_raw == value) return;
                     Result_Item_Id_raw = value;
+                    ChangedItems.Add(nameof(Result_Item_Id));
                     OnPropertyChanged(nameof(Result_Item_Id));
                     OnPropertyChanged(nameof(Result_Item_Id_button));
                 }
@@ -128,6 +132,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Research_Points_raw == value) return;
                     Research_Points_raw = value;
+                    ChangedItems.Add(nameof(Research_Points));
                     OnPropertyChanged(nameof(Research_Points));
                 }
             }
@@ -142,6 +147,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Melding_Points_raw == value) return;
                     Melding_Points_raw = value;
+                    ChangedItems.Add(nameof(Melding_Points));
                     OnPropertyChanged(nameof(Melding_Points));
                 }
             }
@@ -156,6 +162,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if ((MHW_Template.Items.ItemCategory) Category_raw == value) return;
                     Category_raw = (uint) value;
+                    ChangedItems.Add(nameof(Category));
                     OnPropertyChanged(nameof(Category));
                 }
             }
@@ -170,6 +177,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unlock_Flag_raw == value) return;
                     Unlock_Flag_raw = value;
+                    ChangedItems.Add(nameof(Unlock_Flag));
                     OnPropertyChanged(nameof(Unlock_Flag));
                 }
             }
@@ -184,6 +192,7 @@ namespace MHW_Editor.Structs.Items {
                 set {
                     if (Unknown_uint8__raw == value) return;
                     Unknown_uint8__raw = value;
+                    ChangedItems.Add(nameof(Unknown_uint8_));
                     OnPropertyChanged(nameof(Unknown_uint8_));
                 }
             }
