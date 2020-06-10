@@ -10,5 +10,9 @@ namespace MHW_Editor.Models {
         public ObservableMhwStructCollection<E> GetSingleStructList() {
             return GetStructList<E>();
         }
+
+        public MhwStructDataContainer GetSingleStructContainer() {
+            return GetStructContainer<E>();
+        }
     }
 }

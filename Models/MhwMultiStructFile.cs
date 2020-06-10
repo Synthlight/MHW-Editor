@@ -10,11 +10,12 @@ using MHW_Template;
 
 namespace MHW_Editor.Models {
     public interface IMhwMultiStructFile {
-        LinkedList<MhwStructDataContainer> data { get; }
+        public LinkedList<MhwStructDataContainer> data { get; }
 
-        void                             SetupViews(Grid grid, MainWindow main);
-        ObservableMhwStructCollection<F> GetStructList<F>() where F : class, IMhwStructItem, IWriteData;
-        IEnumerable<F>                   GetAllEnumerableOfType<F>();
+        public void                             SetupViews(Grid grid, MainWindow main);
+        public MhwStructDataContainer<F>        GetStructContainer<F>() where F : IMhwStructItem, IWriteData;
+        public ObservableMhwStructCollection<F> GetStructList<F>() where F : class, IMhwStructItem, IWriteData;
+        public IEnumerable<F>                   GetAllEnumerableOfType<F>();
     }
 
     public abstract class MhwMultiStructFile<T> : SaveLoad<T>, ISaveLoad, IMhwMultiStructFile where T : ISaveLoad, IMhwMultiStructFile, new() {
@@ -33,13 +34,17 @@ namespace MHW_Editor.Models {
             }
         }
 
-        public ObservableMhwStructCollection<F> GetStructList<F>() where F : class, IMhwStructItem, IWriteData {
+        public MhwStructDataContainer<F> GetStructContainer<F>() where F : IMhwStructItem, IWriteData {
             foreach (var container in data) {
                 if (container is MhwStructDataContainer<F> aaa) {
-                    return aaa.list;
+                    return aaa;
                 }
             }
-            throw new InvalidOperationException("GetSingleStructList can't find the requested type.");
+            throw new InvalidOperationException("GetStructContainer can't find the requested type.");
+        }
+
+        public ObservableMhwStructCollection<F> GetStructList<F>() where F : class, IMhwStructItem, IWriteData {
+            return GetStructContainer<F>().list;
         }
 
         public IEnumerable<F> GetAllEnumerableOfType<F>() {

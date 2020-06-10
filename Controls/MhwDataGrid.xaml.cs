@@ -29,6 +29,7 @@ using MHW_Template.Weapons;
 
 namespace MHW_Editor.Controls {
     public interface IMhwDataGrid {
+        bool IsAddingAllowed { get; set; }
         void SetItems(MainWindow mainWindow, object items);
     }
 
@@ -40,6 +41,8 @@ namespace MHW_Editor.Controls {
 
     public abstract partial class MhwDataGrid : IMhwDataGrid {
         protected static readonly Brush BACKGROUND_BRUSH = (Brush) new BrushConverter().ConvertFrom("#c0e1fb");
+
+        public abstract bool IsAddingAllowed { get; set; }
 
         protected MhwDataGrid() {
             InitializeComponent();
@@ -98,6 +101,11 @@ namespace MHW_Editor.Controls {
                     CalculatePercents();
                 }
             }
+        }
+
+        public override bool IsAddingAllowed {
+            get => CanUserAddRows || CanUserDeleteRows;
+            set => CanUserAddRows = CanUserDeleteRows = value;
         }
 
         [SuppressMessage("ReSharper", "ParameterHidesMember")]

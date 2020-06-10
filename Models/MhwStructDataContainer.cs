@@ -53,8 +53,7 @@ namespace MHW_Editor.Models {
                 main.AddDataGrid(((IHasCustomView<MultiStructItemCustomView>) list[0]).GetCustomView());
             } else {
                 var dataGrid = main.AddDataGrid(list);
-
-                dataGrid.CanUserAddRows = dataGrid.CanUserDeleteRows = IsAddingAllowed;
+                dataGrid.IsAddingAllowed = IsAddingAllowed;
             }
         }
 

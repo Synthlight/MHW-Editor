@@ -260,20 +260,21 @@ namespace MHW_Editor.Windows {
                     break;
             }
 
-            var showAsSingleView = targetFileType.Is(typeof(IShowAsSingleStruct));
+            scroll_viewer.Visibility = fileData is IShowAsSingleStruct ? Visibility.Collapsed : Visibility.Visible;
 
-            scroll_viewer.Visibility = showAsSingleView ? Visibility.Collapsed : Visibility.Visible;
+            if (fileData is IShowAsSingleStruct singleStruct) {
+                scroll_viewer.Visibility = Visibility.Collapsed;
 
-            if (showAsSingleView) {
-                var structType = ((IShowAsSingleStruct) fileData).GetSingleStructType();
-                var getStructList = targetFileType.GetMethod("GetStructList", BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy)
-                                                  ?.MakeGenericMethod(structType);
-
-                var mainDataGrid = AddMainDataGrid(structType);
+                var structType    = singleStruct.GetSingleStructType();
+                var getStructList = targetFileType.GetMethod("GetStructList", BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy)?.MakeGenericMethod(structType);
+                var mainDataGrid  = AddMainDataGrid(structType);
 
                 var items = getStructList?.Invoke(fileData, null) ?? throw new Exception("getStructList failure.");
                 mainDataGrid.SetItems(this, items);
+                mainDataGrid.IsAddingAllowed = singleStruct.GetSingleStructContainer().IsAddingAllowed;
             } else {
+                scroll_viewer.Visibility = Visibility.Visible;
+
                 var setupViews = targetFileType.GetMethod("SetupViews", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
                 Debug.Assert(setupViews != null, nameof(setupViews) + " != null");
                 setupViews.Invoke(null, new object[] {fileData, sub_grids, this});
@@ -294,7 +295,6 @@ namespace MHW_Editor.Windows {
 
             // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
             foreach (var pair in DataHelper.BAD_FILE_HASH_MAP) {
-                // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
                 foreach (var fileAndHash in pair.Value) {
                     if (fileName == fileAndHash.Key && fileAndHash.Value.Contains(sha512)) {
                         var newChunk = DataHelper.GOOD_CHUNK_MAP.TryGet(fileName);
