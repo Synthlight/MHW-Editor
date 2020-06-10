@@ -15,6 +15,7 @@ using System.Windows.Media;
 using JetBrains.Annotations;
 using MHW_Editor.Assets;
 using MHW_Editor.Controls.Models;
+using MHW_Editor.Json;
 using MHW_Editor.Models;
 using MHW_Editor.Structs.Gems;
 using MHW_Editor.Structs.Items;

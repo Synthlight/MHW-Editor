@@ -96,7 +96,7 @@ namespace MHW_Editor.Structs.Armors {
         public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
-            public override string UniqueId => "{Mantle_Id}";
+            public override string UniqueId => $"{Mantle_Id}";
 
             protected uint Icon_Id_raw;
             public const string Icon_Id_displayName = "Icon Id";

@@ -14,6 +14,7 @@ using System.Windows.Input;
 using JetBrains.Annotations;
 using MHW_Editor.Assets;
 using MHW_Editor.Controls;
+using MHW_Editor.Json;
 using MHW_Editor.Models;
 using MHW_Editor.Structs.Armors;
 using MHW_Editor.Structs.Gems;
@@ -214,7 +215,7 @@ namespace MHW_Editor.Windows {
                 if (string.IsNullOrEmpty(target)) return;
 
                 targetFile     = target;
-                targetFileType = GetFileType();
+                targetFileType = GetFileType(targetFile);
                 Title          = Path.GetFileName(targetFile);
 
                 Debug.Assert(targetFile != null, nameof(targetFile) + " != null");
@@ -414,42 +415,47 @@ namespace MHW_Editor.Windows {
 
                 var fileName = Path.GetFileName(targetFile);
 
-/* TODO: Fix Json.
                 var json          = File.ReadAllText(target);
-                var changesToLoad = JsonMigrations.Migrate(json, fileName, main_data_grid.Items);
+                var changesToLoad = JsonMigrations.Migrate(json, fileName, fileData);
 
-                if (!changesToLoad.changes.Any()) return;
+                if (!changesToLoad.changesV3.Any()) return;
                 if (fileName != changesToLoad.targetFile && changesToLoad.targetFile != "*") return;
 
-                foreach (MhwItem item in main_grid.Items) {
-                    var id           = item.UniqueId;
-                    var changedItems = changesToLoad.changes.TryGet(id, null);
-                    if (changedItems == null) {
-                        // Try for wildcard option.
-                        changedItems = changesToLoad.changes.TryGet("*", null);
-                        if (changedItems == null) continue;
-                    }
+                const BindingFlags flags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.FlattenHierarchy;
 
-                    foreach (var changedItem in changedItems) {
-                        var propertyInfo = item.GetType().GetProperty(changedItem.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+                // For all entries in all structs as a single enumerable.
+                foreach (var item in fileData.GetAllEnumerableOfType<IJsonItem>()) {
+                    var itemUniqueId   = item.UniqueId;
+                    var itemType       = item.GetType();
+                    var structTypeName = itemType.Name;
 
-                        // ReSharper disable once PossibleNullReferenceException
-                        if (propertyInfo.PropertyType.IsEnum) {
-                            var value = Enum.ToObject(propertyInfo.PropertyType, changedItem.Value);
-                            propertyInfo.SetValue(item, value);
-                        } else {
-                            var value = Convert.ChangeType(changedItem.Value, propertyInfo.PropertyType);
-                            propertyInfo.SetValue(item, value);
+                    // For each struct we have changes for.
+                    if (changesToLoad.changesV3.ContainsKey(structTypeName)) {
+                        foreach (var x in changesToLoad.changesV3[structTypeName]) {
+                            var uniqueId = x.Key;
+                            var changes  = x.Value;
+
+                            // If the uniqueId computation matches, or wildcard.
+                            if (uniqueId == itemUniqueId || uniqueId == "*") {
+                                // For each change.
+                                foreach (var change in changes) {
+                                    var targetField  = change.Key;
+                                    var targetValue  = change.Value;
+                                    var propertyInfo = itemType.GetProperty(targetField, flags);
+
+                                    // ReSharper disable once PossibleNullReferenceException
+                                    if (propertyInfo.PropertyType.IsEnum) {
+                                        var value = Enum.ToObject(propertyInfo.PropertyType, targetValue);
+                                        propertyInfo.SetValue(item, value);
+                                    } else {
+                                        var value = Convert.ChangeType(targetValue, propertyInfo.PropertyType);
+                                        propertyInfo.SetValue(item, value);
+                                    }
+                                }
+                            }
                         }
                     }
                 }
-
-                if (targetFileType.IsGeneric(typeof(IHasCustomView<>))) {
-                    foreach (var dataGrid in dataGrids) {
-                        ((ListCollectionView) dataGrid.ItemsSource).Refresh();
-                    }
-                }
-*/
             } catch (Exception e) when (!Debugger.IsAttached) {
                 ShowError(e, "Load Error");
             }
@@ -501,7 +507,7 @@ namespace MHW_Editor.Windows {
                 }
 */
 
-                var changesSaved = changesToSave.changes.Any();
+                var changesSaved = changesToSave.changesV1.Any();
 
                 if (changesSaved) {
                     // Get file after checking for what to save else we show a dialog even if there are no changes.
@@ -539,7 +545,7 @@ namespace MHW_Editor.Windows {
             return sfdResult.FileName;
         }
 
-        private Type GetFileType() {
+        public static Type GetFileType(string targetFile) {
             var fileName = Path.GetFileName(targetFile).ToLower();
             Debug.Assert(fileName != null, nameof(fileName) + " != null");
 

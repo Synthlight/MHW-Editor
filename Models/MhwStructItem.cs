@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
+using MHW_Editor.Json;
 
 namespace MHW_Editor.Models {
     public interface IMhwStructItem : INotifyPropertyChanged, IOnPropertyChanged {
@@ -14,7 +15,7 @@ namespace MHW_Editor.Models {
 
         [SortOrder(10)] public virtual ulong Index { get; set; }
 
-        public virtual string UniqueId { get; } = "{Index}";
+        public virtual string UniqueId => $"{Index}";
 
         [NotifyPropertyChangedInvocator]
         public virtual void OnPropertyChanged([CallerMemberName] string propertyName = null) {

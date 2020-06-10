@@ -96,7 +96,6 @@ namespace MHW_Editor.Structs.Weapons {
         public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
-            public override string UniqueId => "{Id}";
 
             protected byte Normal_1_Mag_Cnt_raw;
             public const string Normal_1_Mag_Cnt_displayName = "Normal 1 Mag Cnt";

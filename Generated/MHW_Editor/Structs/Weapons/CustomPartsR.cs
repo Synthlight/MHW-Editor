@@ -96,7 +96,7 @@ namespace MHW_Editor.Structs.Weapons {
         public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
-            public override string UniqueId => "{Id}|{Weapon_Type}";
+            public override string UniqueId => $"{Id}|{Weapon_Type}";
 
             protected byte Weapon_Type_raw;
             public const string Weapon_Type_displayName = "Weapon Type";

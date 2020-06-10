@@ -96,7 +96,7 @@ namespace MHW_Editor.Structs.Items {
         public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
-            public override string UniqueId => "{Item}";
+            public override string UniqueId => $"{Item}";
 
             protected uint Cultivation_category_raw;
             public const string Cultivation_category_displayName = "Cultivation category";

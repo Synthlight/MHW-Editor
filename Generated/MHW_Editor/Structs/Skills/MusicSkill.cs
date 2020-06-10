@@ -96,7 +96,7 @@ namespace MHW_Editor.Structs.Skills {
         public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
-            public override string UniqueId => "{Song_Id_Raw}";
+            public override string UniqueId => $"{Song_Id_Raw}";
 
             protected uint Song_Id_Raw_raw;
             public const string Song_Id_Raw_displayName = "Song Id Raw";

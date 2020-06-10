@@ -96,7 +96,7 @@ namespace MHW_Editor.Structs.Items {
         public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
-            public override string UniqueId => "{Fertilizer_Id}";
+            public override string UniqueId => $"{Fertilizer_Id}";
 
             protected uint Fertilizer_Id_raw;
             public const string Fertilizer_Id_displayName = "Fertilizer Id";

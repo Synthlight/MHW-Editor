@@ -79,7 +79,7 @@ namespace MHW_Editor.Structs.Items {
         public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
-            public override string UniqueId => "{Item_Id}";
+            public override string UniqueId => $"{Item_Id}";
 
             protected uint Index_raw;
             public const string Index_displayName = "Index";

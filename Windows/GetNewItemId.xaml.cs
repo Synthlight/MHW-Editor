@@ -26,7 +26,7 @@ namespace MHW_Editor.Windows {
             // ReSharper disable PossibleNullReferenceException
             var transform = PresentationSource.FromVisual(Application.Current.MainWindow).CompositionTarget.TransformFromDevice;
             // ReSharper restore PossibleNullReferenceException
-            var mouse     = transform.Transform(GetMousePosition());
+            var mouse = transform.Transform(GetMousePosition());
             Left = mouse.X - Width / 2;
             Top  = mouse.Y - 10;
 

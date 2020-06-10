@@ -31,7 +31,7 @@ namespace MHW_Template.Struct_Generation {
             template.WriteLine(indentation, $"            public const string GridName = \"{@struct.name}\";");
 
             if (@struct.uniqueIdFormula != null) {
-                template.WriteLine(indentation, $"            public override string UniqueId => \"{@struct.uniqueIdFormula}\";");
+                template.WriteLine(indentation, $"            public override string UniqueId => $\"{@struct.uniqueIdFormula}\";");
             }
 
             if (@struct.hidden) {

@@ -96,7 +96,7 @@ namespace MHW_Editor.Structs.Skills {
         public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
-            public override string UniqueId => "{Id}";
+            public override string UniqueId => $"{Id}";
 
             protected byte Is_Set_Bonus_raw;
             public const string Is_Set_Bonus_displayName = "Is Set Bonus";

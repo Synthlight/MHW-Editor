@@ -49,7 +49,7 @@ namespace MHW_Generator.Weapons {
             var structs = new List<MhwMultiStructData.StructData> {
                 CreateSingleStructBase(out var header, out var itemCount),
 
-                new MhwMultiStructData.StructData("Entries", entries, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+                new MhwMultiStructData.StructData("Entries", entries, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
             return new MultiStruct("Weapons", "ShellTable", new MhwMultiStructData(structs, "shl_tbl"));
