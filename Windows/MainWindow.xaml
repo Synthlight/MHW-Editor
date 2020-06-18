@@ -32,11 +32,18 @@
                                   Click="Btn_open_Click"
                                   Content="Open">
                     <xctk:SplitButton.DropDownContent>
-                        <Button Name="btn_open_as_json"
-                                Margin="0,0,0,0"
-                                HorizontalAlignment="Left"
-                                Click="Btn_open_as_json_Click"
-                                Content="Import JSON Changes"/>
+                        <StackPanel Orientation="Vertical">
+                            <Button Name="btn_open_as_json"
+                                    Margin="0,0,0,0"
+                                    HorizontalAlignment="Left"
+                                    Click="Btn_open_as_json_Click"
+                                    Content="Import JSON Changes"/>
+                            <Button Name="btn_convert_to_json"
+                                    Margin="0,0,0,0"
+                                    HorizontalAlignment="Left"
+                                    Click="Btn_convert_to_json_Click"
+                                    Content="Convert existing file to JSON Changes (Read wiki for instructions)"/>
+                        </StackPanel>
                     </xctk:SplitButton.DropDownContent>
                 </xctk:SplitButton>
                 <xctk:SplitButton Name="btn_save"

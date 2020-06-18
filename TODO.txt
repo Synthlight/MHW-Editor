@@ -1,6 +1,6 @@
 - Grid Ctrl+V.
-- Json for multi-struct.
 - Save file as.
+- Fix highlighted row being recycled in the list.
 
 
 renkian:

@@ -47,9 +47,10 @@ namespace MHW_Editor.Windows {
 
         [CanBeNull] private CancellationTokenSource savedTimer;
 
-        public  string              targetFile     { get; private set; }
-        public  Type                targetFileType { get; private set; }
-        private IMhwMultiStructFile fileData;
+        public         string              targetFile     { get; private set; }
+        public         Type                targetFileType { get; private set; }
+        private static ulong               targetFileLength;
+        private        IMhwMultiStructFile fileData;
 
         public bool unlockFields { get; }
 
@@ -283,16 +284,16 @@ namespace MHW_Editor.Windows {
         }
 
         public static void CheckHashAndSize(string targetFile) {
-            var   nameWithoutExt = Path.GetFileName(targetFile);
-            var   fileName       = nameWithoutExt;
-            ulong properLength;
+            var       nameWithoutExt = Path.GetFileName(targetFile);
+            var       fileName       = nameWithoutExt;
+            using var file           = File.OpenRead(targetFile);
+            var       sha512         = file.SHA512();
+            ulong     properLength;
+
+            targetFileLength = (ulong) file.Length;
 
             if (DataHelper.FILE_SIZE_MAP.ContainsKey(nameWithoutExt)) properLength = DataHelper.FILE_SIZE_MAP[nameWithoutExt];
             else return;
-
-            using var file      = File.OpenRead(targetFile);
-            var       ourLength = (ulong) file.Length;
-            var       sha512    = file.SHA512();
 
             // Look for known bad hashes first to ensure it's not an unedited file from a previous chunk.
             foreach (var pair in DataHelper.BAD_FILE_HASH_MAP) {
@@ -309,11 +310,11 @@ namespace MHW_Editor.Windows {
             }
 
             // Length check as a fallback.
-            if (ourLength == properLength) return;
+            if (targetFileLength == properLength) return;
 
             MessageBox.Show($"The file size of {fileName} does not match the known file size in v{MainWindow.CURRENT_GAME_VERSION}.\r\n" +
                             $"Expected: {properLength}\r\n" +
-                            $"Found: {ourLength}\r\n" +
+                            $"Found: {targetFileLength}\r\n" +
                             "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
 
@@ -404,6 +405,52 @@ namespace MHW_Editor.Windows {
                                                                    typeof(SkillDat),
                                                                    typeof(SkillPointData))
                                                  || ButtonTypeInfo.TYPES_WITH_BUTTONS.Contains(targetFileType.Name)).VisibleIfTrue();
+        }
+
+        private void CreateJson() {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            try {
+                var target = GetOpenTarget($"Matching File|{Path.GetFileName(targetFile)}");
+                if (string.IsNullOrEmpty(target)) return;
+
+                var       otherFileName   = Path.GetFileName(target);
+                using var otherFile       = File.OpenRead(target);
+                var       otherFileLength = (ulong) otherFile.Length;
+
+                if (otherFileLength != targetFileLength) {
+                    MessageBox.Show($"The file size of {otherFileName} does not match the file size of our current file.\r\n" +
+                                    $"Cannot guess changes since they aren't from the same chunk.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Error);
+
+                    return;
+                }
+
+                // Type must be the same.
+                var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+                Debug.Assert(loadData != null, nameof(loadData) + " != null");
+                var otherFileData = (IMhwMultiStructFile) loadData.Invoke(null, new object[] {target});
+
+                var ourData   = fileData.GetAllEnumerableOfType<IJsonItem>().ToList();
+                var otherData = otherFileData.GetAllEnumerableOfType<IJsonItem>().ToList();
+
+                for (var i = 0; i < otherData.Count; i++) {
+                    var ourObj   = ourData[i];
+                    var otherObj = otherData[i];
+
+                    foreach (var property in ourObj.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy)) {
+                        var getMethod = property.GetGetMethod();
+                        var setMethod = property.GetSetMethod();
+
+                        if (setMethod == null) continue;
+
+                        var value = getMethod.Invoke(otherObj, null);
+
+                        setMethod.Invoke(ourObj, new[] {value});
+                    }
+                }
+            } catch (Exception e) when (!Debugger.IsAttached) {
+                ShowError(e, "Load Error");
+            }
         }
 
         private void LoadJson() {
@@ -708,7 +755,7 @@ namespace MHW_Editor.Windows {
         }
 
         public static void ShowError(Exception err, string title) {
-            var errMsg = "Error occured. Press Ctrl+C to copy the contents of ths window and report to the developer.\r\n\r\n";
+            var errMsg = "Error occurred. Press Ctrl+C to copy the contents of th.s window and report to the developer.\r\n\r\n";
 
             if (title == "Load Error") {
                 errMsg += "If this is the result of ignoring the obsolete data warning, it is safe to ignore.\r\n\r\n";

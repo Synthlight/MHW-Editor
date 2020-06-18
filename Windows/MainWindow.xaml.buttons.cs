@@ -26,6 +26,10 @@ namespace MHW_Editor.Windows {
             LoadJson();
         }
 
+        private void Btn_convert_to_json_Click(object sender, RoutedEventArgs e) {
+            CreateJson();
+        }
+
         private void Btn_save_Click(object sender, RoutedEventArgs e) {
             Save();
         }
