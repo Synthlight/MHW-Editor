@@ -287,11 +287,15 @@ namespace MHW_Editor.Controls {
                 // Since T may be dynamic/object. Also need to account for custom views.
                 var outType = hasCustomView ? ((dynamic) items)[0].GetCustomView()[0].GetType() : typeof(T);
 
+                if (outType == typeof(object)) {
+                    outType = ((dynamic) items)[0].GetType();
+                }
+
                 foreach (var propertyName in columnMap.Keys) {
                     groupFilter.AddFilter(outType.GetProperty(propertyName));
                 }
             } catch (Exception err) when (!Debugger.IsAttached) {
-                MainWindow.ShowError(err, "Error Occured");
+                MainWindow.ShowError(err, "Error Occurred");
             }
         }
 
@@ -304,7 +308,7 @@ namespace MHW_Editor.Controls {
                 var listColView = (ListCollectionView) grid.ItemsSource;
                 listColView.Refresh();
             } catch (Exception err) when (!Debugger.IsAttached) {
-                MainWindow.ShowError(err, "Error Occured");
+                MainWindow.ShowError(err, "Error Occurred");
             }
         }
 
@@ -330,7 +334,7 @@ namespace MHW_Editor.Controls {
                     }
                 }
             } catch (Exception err) when (!Debugger.IsAttached) {
-                MainWindow.ShowError(err, "Error Occured");
+                MainWindow.ShowError(err, "Error Occurred");
             }
         }
 
@@ -350,7 +354,7 @@ namespace MHW_Editor.Controls {
                     CheckCellForButtonTypeAndHandleClick(cell);
                 }
             } catch (Exception err) when (!Debugger.IsAttached) {
-                MainWindow.ShowError(err, "Error Occured");
+                MainWindow.ShowError(err, "Error Occurred");
             }
         }
 
@@ -360,7 +364,7 @@ namespace MHW_Editor.Controls {
                 if (obj.ToString() == "{DataGrid.NewItemPlaceholder}") return;
                 Items.Remove((T) obj);
             } catch (Exception err) when (!Debugger.IsAttached) {
-                MainWindow.ShowError(err, "Error Occured");
+                MainWindow.ShowError(err, "Error Occurred");
             }
         }
 
@@ -389,7 +393,7 @@ namespace MHW_Editor.Controls {
                 ColorCell(frameworkElement);
                 subStructView.ShowDialog();
             } catch (Exception err) when (!Debugger.IsAttached) {
-                MainWindow.ShowError(err, "Error Occured");
+                MainWindow.ShowError(err, "Error Occurred");
             }
         }
 
@@ -475,7 +479,7 @@ namespace MHW_Editor.Controls {
 
                 e.Handled = true;
             } catch (Exception err) when (!Debugger.IsAttached) {
-                MainWindow.ShowError(err, "Error Occured");
+                MainWindow.ShowError(err, "Error Occurred");
             }
         }
 
@@ -490,7 +494,7 @@ namespace MHW_Editor.Controls {
 
                 CalculatePercents();
             } catch (Exception err) when (!Debugger.IsAttached) {
-                MainWindow.ShowError(err, "Error Occured");
+                MainWindow.ShowError(err, "Error Occurred");
             }
         }
 
