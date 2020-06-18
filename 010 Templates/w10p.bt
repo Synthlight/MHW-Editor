@@ -197,32 +197,32 @@ Action_Param_Relate_Mid_air_Evade_ Action_Param_Relate_Mid_air_Evade__[9]<optimi
 float Unk_103<name="Unk 103">;
 float Unk_104<name="Unk 104">;
 
-// Action Param (Relate Jumping Slash And Jumping Advancing Slash)
+// Action Param (Relate Jumping Attacks)
 typedef struct {
     float Gravity<name="Gravity">;
     float Speed_Rate<name="Speed Rate">;
     float X_Offset<name="X Offset">;
     float Y_Offset<name="Y Offset">;
     float Z_Offset<name="Z Offset">;
-} Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_;
+} Action_Param_Relate_Jumping_Attacks_;
 
-Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_ Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash__[22]<optimize=false, name="Action Param (Relate Jumping Slash And Jumping Advancing Slash)">;
+Action_Param_Relate_Jumping_Attacks_ Action_Param_Relate_Jumping_Attacks__[22]<optimize=false, name="Action Param (Relate Jumping Attacks)">;
 
 float Unk_105<name="Unk 105">;
 float Unk_106<name="Unk 106">;
 float Unk_107<name="Unk 107">;
 float Unk_108<name="Unk 108">;
 
-// Action Param 5
+// Action Param (Relate Wall Vault, Wall Opposite Vault, White Extract or Not)
 typedef struct {
     float Gravity<name="Gravity">;
     float Speed_Rate<name="Speed Rate">;
     float X_Offset<name="X Offset">;
     float Y_Offset<name="Y Offset">;
     float Z_Offset<name="Z Offset">;
-} Action_Param_5;
+} Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_;
 
-Action_Param_5 Action_Param_5_[4]<optimize=false, name="Action Param 5">;
+Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_ Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not__[4]<optimize=false, name="Action Param (Relate Wall Vault, Wall Opposite Vault, White Extract or Not)">;
 
 float Unk_109<name="Unk 109">;
 float Unk_110<name="Unk 110">;
@@ -258,7 +258,7 @@ float Kinsect_Stamina_Drain_per_Second<name="Kinsect Stamina Drain per Second">;
 float Kinsect_Max_Stamina<name="Kinsect Max Stamina">;
 float Unk_141<name="Unk 141">;
 float Kinsect_Stamina_on_Recall<name="Kinsect Stamina on Recall">;
-float Descending_Thrust_Kinsect_Speed_Multiplier<name="Descending Thrust Kinsect Speed Multiplier">;
+float Unk_143<name="Unk 143">;
 float Unk_144<name="Unk 144">;
 float Kinsect_Dust_Interval_Blast<name="Kinsect Dust Interval: Blast">;
 float Kinsect_Dust_Interval_Heal<name="Kinsect Dust Interval: Heal">;
@@ -320,15 +320,15 @@ float Kinsect_Charge_Dragon_Pod<name="Kinsect Charge: Dragon Pod">;
 float Kinsect_Charge_Bomb_Pod<name="Kinsect Charge: Bomb Pod">;
 float Kinsect_Charge_Brightmoss<name="Kinsect Charge: Brightmoss">;
 
-// Unk Arr 4
+// Unk Arr 4 (All sint8)
 typedef struct {
     byte Unk_1<name="Unk 1">;
     byte Unk_2<name="Unk 2">;
     byte Unk_3<name="Unk 3">;
     byte Unk_4<name="Unk 4">;
-} Unk_Arr_4;
+} Unk_Arr_4_All_sint8_;
 
-Unk_Arr_4 Unk_Arr_4_[14]<optimize=false, name="Unk Arr 4">;
+Unk_Arr_4_All_sint8_ Unk_Arr_4_All_sint8__[14]<optimize=false, name="Unk Arr 4 (All sint8)">;
 
 float Unk_177<name="Unk 177">;
 float Unk_178<name="Unk 178">;
@@ -336,7 +336,7 @@ float Unk_179<name="Unk 179">;
 float Unk_180<name="Unk 180">;
 float Unk_181<name="Unk 181">;
 
-// Unk Arr 5
+// Unk Arr 5 (All sint8)
 typedef struct {
     byte Unk_1<name="Unk 1">;
     byte Unk_2<name="Unk 2">;
@@ -350,25 +350,25 @@ typedef struct {
     byte Unk_10<name="Unk 10">;
     byte Unk_11<name="Unk 11">;
     byte Unk_12<name="Unk 12">;
-} Unk_Arr_5;
+} Unk_Arr_5_All_sint8_;
 
-Unk_Arr_5 Unk_Arr_5_<name="Unk Arr 5">;
+Unk_Arr_5_All_sint8_ Unk_Arr_5_All_sint8__<name="Unk Arr 5 (All sint8)">;
 
 float Unk_182<name="Unk 182">;
-float Unk_183<name="Unk 183">;
+float Descending_Thrust_Kinsect_Following_Speed_Multiplier<name="Descending Thrust Kinsect Following Speed Multiplier">;
 float Unk_184<name="Unk 184">;
-float Unk_185<name="Unk 185">;
-float Unk_186<name="Unk 186">;
+float Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset<name="Descending Thrust Kinsect Following Coordinate Y Offset">;
+float Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset<name="Descending Thrust Kinsect Following Coordinate Z Offset">;
 
-// Action Param 6
+// Action Param (Relate Clutch Attack Finish)
 typedef struct {
     float Gravity<name="Gravity">;
     float Speed_Rate<name="Speed Rate">;
     float X_Offset<name="X Offset">;
     float Y_Offset<name="Y Offset">;
     float Z_Offset<name="Z Offset">;
-} Action_Param_6;
+} Action_Param_Relate_Clutch_Attack_Finish_;
 
-Action_Param_6 Action_Param_6_<name="Action Param 6">;
+Action_Param_Relate_Clutch_Attack_Finish_ Action_Param_Relate_Clutch_Attack_Finish__<name="Action Param (Relate Clutch Attack Finish)">;
 
 float Unk_187<name="Unk 187">;

@@ -2443,48 +2443,48 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected byte Unk_103_raw;
-            public const string Unk_103_displayName = "Unk 103";
-            public const int Unk_103_sortIndex = 650;
-            [SortOrder(Unk_103_sortIndex)]
-            [DisplayName(Unk_103_displayName)]
-            public virtual byte Unk_103 {
-                get => Unk_103_raw;
+            protected byte Charge_Gained_When_Blocking_a_Small_Knock_back_raw;
+            public const string Charge_Gained_When_Blocking_a_Small_Knock_back_displayName = "Charge Gained When Blocking a Small Knock-back";
+            public const int Charge_Gained_When_Blocking_a_Small_Knock_back_sortIndex = 650;
+            [SortOrder(Charge_Gained_When_Blocking_a_Small_Knock_back_sortIndex)]
+            [DisplayName(Charge_Gained_When_Blocking_a_Small_Knock_back_displayName)]
+            public virtual byte Charge_Gained_When_Blocking_a_Small_Knock_back {
+                get => Charge_Gained_When_Blocking_a_Small_Knock_back_raw;
                 set {
-                    if (Unk_103_raw == value) return;
-                    Unk_103_raw = value;
-                    ChangedItems.Add(nameof(Unk_103));
-                    OnPropertyChanged(nameof(Unk_103));
+                    if (Charge_Gained_When_Blocking_a_Small_Knock_back_raw == value) return;
+                    Charge_Gained_When_Blocking_a_Small_Knock_back_raw = value;
+                    ChangedItems.Add(nameof(Charge_Gained_When_Blocking_a_Small_Knock_back));
+                    OnPropertyChanged(nameof(Charge_Gained_When_Blocking_a_Small_Knock_back));
                 }
             }
 
-            protected byte Unk_104_raw;
-            public const string Unk_104_displayName = "Unk 104";
-            public const int Unk_104_sortIndex = 700;
-            [SortOrder(Unk_104_sortIndex)]
-            [DisplayName(Unk_104_displayName)]
-            public virtual byte Unk_104 {
-                get => Unk_104_raw;
+            protected byte Charge_Gained_When_Blocking_a_Medium_Knock_back_raw;
+            public const string Charge_Gained_When_Blocking_a_Medium_Knock_back_displayName = "Charge Gained When Blocking a Medium Knock-back";
+            public const int Charge_Gained_When_Blocking_a_Medium_Knock_back_sortIndex = 700;
+            [SortOrder(Charge_Gained_When_Blocking_a_Medium_Knock_back_sortIndex)]
+            [DisplayName(Charge_Gained_When_Blocking_a_Medium_Knock_back_displayName)]
+            public virtual byte Charge_Gained_When_Blocking_a_Medium_Knock_back {
+                get => Charge_Gained_When_Blocking_a_Medium_Knock_back_raw;
                 set {
-                    if (Unk_104_raw == value) return;
-                    Unk_104_raw = value;
-                    ChangedItems.Add(nameof(Unk_104));
-                    OnPropertyChanged(nameof(Unk_104));
+                    if (Charge_Gained_When_Blocking_a_Medium_Knock_back_raw == value) return;
+                    Charge_Gained_When_Blocking_a_Medium_Knock_back_raw = value;
+                    ChangedItems.Add(nameof(Charge_Gained_When_Blocking_a_Medium_Knock_back));
+                    OnPropertyChanged(nameof(Charge_Gained_When_Blocking_a_Medium_Knock_back));
                 }
             }
 
-            protected byte Unk_105_raw;
-            public const string Unk_105_displayName = "Unk 105";
-            public const int Unk_105_sortIndex = 750;
-            [SortOrder(Unk_105_sortIndex)]
-            [DisplayName(Unk_105_displayName)]
-            public virtual byte Unk_105 {
-                get => Unk_105_raw;
+            protected byte Charge_Gained_When_Blocking_a_Large_Knock_back_raw;
+            public const string Charge_Gained_When_Blocking_a_Large_Knock_back_displayName = "Charge Gained When Blocking a Large Knock-back";
+            public const int Charge_Gained_When_Blocking_a_Large_Knock_back_sortIndex = 750;
+            [SortOrder(Charge_Gained_When_Blocking_a_Large_Knock_back_sortIndex)]
+            [DisplayName(Charge_Gained_When_Blocking_a_Large_Knock_back_displayName)]
+            public virtual byte Charge_Gained_When_Blocking_a_Large_Knock_back {
+                get => Charge_Gained_When_Blocking_a_Large_Knock_back_raw;
                 set {
-                    if (Unk_105_raw == value) return;
-                    Unk_105_raw = value;
-                    ChangedItems.Add(nameof(Unk_105));
-                    OnPropertyChanged(nameof(Unk_105));
+                    if (Charge_Gained_When_Blocking_a_Large_Knock_back_raw == value) return;
+                    Charge_Gained_When_Blocking_a_Large_Knock_back_raw = value;
+                    ChangedItems.Add(nameof(Charge_Gained_When_Blocking_a_Large_Knock_back));
+                    OnPropertyChanged(nameof(Charge_Gained_When_Blocking_a_Large_Knock_back));
                 }
             }
 
@@ -2533,63 +2533,63 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Unk_109_raw;
-            public const string Unk_109_displayName = "Unk 109";
-            public const int Unk_109_sortIndex = 950;
-            [SortOrder(Unk_109_sortIndex)]
-            [DisplayName(Unk_109_displayName)]
-            public virtual float Unk_109 {
-                get => Unk_109_raw;
+            protected float Guard_Point_Sharpness_Cost_Multiplier_raw;
+            public const string Guard_Point_Sharpness_Cost_Multiplier_displayName = "Guard Point Sharpness Cost Multiplier";
+            public const int Guard_Point_Sharpness_Cost_Multiplier_sortIndex = 950;
+            [SortOrder(Guard_Point_Sharpness_Cost_Multiplier_sortIndex)]
+            [DisplayName(Guard_Point_Sharpness_Cost_Multiplier_displayName)]
+            public virtual float Guard_Point_Sharpness_Cost_Multiplier {
+                get => Guard_Point_Sharpness_Cost_Multiplier_raw;
                 set {
-                    if (Unk_109_raw == value) return;
-                    Unk_109_raw = value;
-                    ChangedItems.Add(nameof(Unk_109));
-                    OnPropertyChanged(nameof(Unk_109));
+                    if (Guard_Point_Sharpness_Cost_Multiplier_raw == value) return;
+                    Guard_Point_Sharpness_Cost_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Guard_Point_Sharpness_Cost_Multiplier));
+                    OnPropertyChanged(nameof(Guard_Point_Sharpness_Cost_Multiplier));
                 }
             }
 
-            protected float Unk_110_raw;
-            public const string Unk_110_displayName = "Unk 110";
-            public const int Unk_110_sortIndex = 1000;
-            [SortOrder(Unk_110_sortIndex)]
-            [DisplayName(Unk_110_displayName)]
-            public virtual float Unk_110 {
-                get => Unk_110_raw;
+            protected float Impact_Phial_Damage_Multiplier_Not_for_SAED__raw;
+            public const string Impact_Phial_Damage_Multiplier_Not_for_SAED__displayName = "Impact Phial Damage Multiplier (Not for SAED)";
+            public const int Impact_Phial_Damage_Multiplier_Not_for_SAED__sortIndex = 1000;
+            [SortOrder(Impact_Phial_Damage_Multiplier_Not_for_SAED__sortIndex)]
+            [DisplayName(Impact_Phial_Damage_Multiplier_Not_for_SAED__displayName)]
+            public virtual float Impact_Phial_Damage_Multiplier_Not_for_SAED_ {
+                get => Impact_Phial_Damage_Multiplier_Not_for_SAED__raw;
                 set {
-                    if (Unk_110_raw == value) return;
-                    Unk_110_raw = value;
-                    ChangedItems.Add(nameof(Unk_110));
-                    OnPropertyChanged(nameof(Unk_110));
+                    if (Impact_Phial_Damage_Multiplier_Not_for_SAED__raw == value) return;
+                    Impact_Phial_Damage_Multiplier_Not_for_SAED__raw = value;
+                    ChangedItems.Add(nameof(Impact_Phial_Damage_Multiplier_Not_for_SAED_));
+                    OnPropertyChanged(nameof(Impact_Phial_Damage_Multiplier_Not_for_SAED_));
                 }
             }
 
-            protected float Unk_111_raw;
-            public const string Unk_111_displayName = "Unk 111";
-            public const int Unk_111_sortIndex = 1050;
-            [SortOrder(Unk_111_sortIndex)]
-            [DisplayName(Unk_111_displayName)]
-            public virtual float Unk_111 {
-                get => Unk_111_raw;
+            protected float Impact_Phial_Stun_Buildup_Multiplier_raw;
+            public const string Impact_Phial_Stun_Buildup_Multiplier_displayName = "Impact Phial Stun Buildup Multiplier";
+            public const int Impact_Phial_Stun_Buildup_Multiplier_sortIndex = 1050;
+            [SortOrder(Impact_Phial_Stun_Buildup_Multiplier_sortIndex)]
+            [DisplayName(Impact_Phial_Stun_Buildup_Multiplier_displayName)]
+            public virtual float Impact_Phial_Stun_Buildup_Multiplier {
+                get => Impact_Phial_Stun_Buildup_Multiplier_raw;
                 set {
-                    if (Unk_111_raw == value) return;
-                    Unk_111_raw = value;
-                    ChangedItems.Add(nameof(Unk_111));
-                    OnPropertyChanged(nameof(Unk_111));
+                    if (Impact_Phial_Stun_Buildup_Multiplier_raw == value) return;
+                    Impact_Phial_Stun_Buildup_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Impact_Phial_Stun_Buildup_Multiplier));
+                    OnPropertyChanged(nameof(Impact_Phial_Stun_Buildup_Multiplier));
                 }
             }
 
-            protected float Unk_112_raw;
-            public const string Unk_112_displayName = "Unk 112";
-            public const int Unk_112_sortIndex = 1100;
-            [SortOrder(Unk_112_sortIndex)]
-            [DisplayName(Unk_112_displayName)]
-            public virtual float Unk_112 {
-                get => Unk_112_raw;
+            protected float Impact_Phial_Exhaust_Buildup_Multiplier_raw;
+            public const string Impact_Phial_Exhaust_Buildup_Multiplier_displayName = "Impact Phial Exhaust Buildup Multiplier";
+            public const int Impact_Phial_Exhaust_Buildup_Multiplier_sortIndex = 1100;
+            [SortOrder(Impact_Phial_Exhaust_Buildup_Multiplier_sortIndex)]
+            [DisplayName(Impact_Phial_Exhaust_Buildup_Multiplier_displayName)]
+            public virtual float Impact_Phial_Exhaust_Buildup_Multiplier {
+                get => Impact_Phial_Exhaust_Buildup_Multiplier_raw;
                 set {
-                    if (Unk_112_raw == value) return;
-                    Unk_112_raw = value;
-                    ChangedItems.Add(nameof(Unk_112));
-                    OnPropertyChanged(nameof(Unk_112));
+                    if (Impact_Phial_Exhaust_Buildup_Multiplier_raw == value) return;
+                    Impact_Phial_Exhaust_Buildup_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Impact_Phial_Exhaust_Buildup_Multiplier));
+                    OnPropertyChanged(nameof(Impact_Phial_Exhaust_Buildup_Multiplier));
                 }
             }
 
@@ -2769,16 +2769,16 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_100_raw = reader.ReadSingle();
                 data.Charge_to_Reach_Yellow_Phial_raw = reader.ReadByte();
                 data.Charge_to_Reach_Red_Phial_raw = reader.ReadByte();
-                data.Unk_103_raw = reader.ReadByte();
-                data.Unk_104_raw = reader.ReadByte();
-                data.Unk_105_raw = reader.ReadByte();
+                data.Charge_Gained_When_Blocking_a_Small_Knock_back_raw = reader.ReadByte();
+                data.Charge_Gained_When_Blocking_a_Medium_Knock_back_raw = reader.ReadByte();
+                data.Charge_Gained_When_Blocking_a_Large_Knock_back_raw = reader.ReadByte();
                 data.Overcharged_Phial_raw = reader.ReadByte();
                 data.Unk_107_raw = reader.ReadByte();
                 data.Axe_Mode_Damage_Multiplier_raw = reader.ReadSingle();
-                data.Unk_109_raw = reader.ReadSingle();
-                data.Unk_110_raw = reader.ReadSingle();
-                data.Unk_111_raw = reader.ReadSingle();
-                data.Unk_112_raw = reader.ReadSingle();
+                data.Guard_Point_Sharpness_Cost_Multiplier_raw = reader.ReadSingle();
+                data.Impact_Phial_Damage_Multiplier_Not_for_SAED__raw = reader.ReadSingle();
+                data.Impact_Phial_Stun_Buildup_Multiplier_raw = reader.ReadSingle();
+                data.Impact_Phial_Exhaust_Buildup_Multiplier_raw = reader.ReadSingle();
                 data.Elemental_Phial_Damage_Multiplier_Not_for_SAED__raw = reader.ReadSingle();
                 data.Phial_Duration_raw = reader.ReadSingle();
                 data.Shield_Charge_Guard_Threshold_Bonus_raw = reader.ReadByte();
@@ -2805,16 +2805,16 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_100_raw);
                 writer.Write(Charge_to_Reach_Yellow_Phial_raw);
                 writer.Write(Charge_to_Reach_Red_Phial_raw);
-                writer.Write(Unk_103_raw);
-                writer.Write(Unk_104_raw);
-                writer.Write(Unk_105_raw);
+                writer.Write(Charge_Gained_When_Blocking_a_Small_Knock_back_raw);
+                writer.Write(Charge_Gained_When_Blocking_a_Medium_Knock_back_raw);
+                writer.Write(Charge_Gained_When_Blocking_a_Large_Knock_back_raw);
                 writer.Write(Overcharged_Phial_raw);
                 writer.Write(Unk_107_raw);
                 writer.Write(Axe_Mode_Damage_Multiplier_raw);
-                writer.Write(Unk_109_raw);
-                writer.Write(Unk_110_raw);
-                writer.Write(Unk_111_raw);
-                writer.Write(Unk_112_raw);
+                writer.Write(Guard_Point_Sharpness_Cost_Multiplier_raw);
+                writer.Write(Impact_Phial_Damage_Multiplier_Not_for_SAED__raw);
+                writer.Write(Impact_Phial_Stun_Buildup_Multiplier_raw);
+                writer.Write(Impact_Phial_Exhaust_Buildup_Multiplier_raw);
                 writer.Write(Elemental_Phial_Damage_Multiplier_Not_for_SAED__raw);
                 writer.Write(Phial_Duration_raw);
                 writer.Write(Shield_Charge_Guard_Threshold_Bonus_raw);
@@ -2841,16 +2841,16 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 100", "Unk_100"),
                     new MultiStructItemCustomView(this, "Charge to Reach Yellow Phial", "Charge_to_Reach_Yellow_Phial"),
                     new MultiStructItemCustomView(this, "Charge to Reach Red Phial", "Charge_to_Reach_Red_Phial"),
-                    new MultiStructItemCustomView(this, "Unk 103", "Unk_103"),
-                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104"),
-                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105"),
+                    new MultiStructItemCustomView(this, "Charge Gained When Blocking a Small Knock-back", "Charge_Gained_When_Blocking_a_Small_Knock_back"),
+                    new MultiStructItemCustomView(this, "Charge Gained When Blocking a Medium Knock-back", "Charge_Gained_When_Blocking_a_Medium_Knock_back"),
+                    new MultiStructItemCustomView(this, "Charge Gained When Blocking a Large Knock-back", "Charge_Gained_When_Blocking_a_Large_Knock_back"),
                     new MultiStructItemCustomView(this, "Overcharged Phial", "Overcharged_Phial"),
                     new MultiStructItemCustomView(this, "Unk 107", "Unk_107"),
                     new MultiStructItemCustomView(this, "Axe Mode Damage Multiplier", "Axe_Mode_Damage_Multiplier"),
-                    new MultiStructItemCustomView(this, "Unk 109", "Unk_109"),
-                    new MultiStructItemCustomView(this, "Unk 110", "Unk_110"),
-                    new MultiStructItemCustomView(this, "Unk 111", "Unk_111"),
-                    new MultiStructItemCustomView(this, "Unk 112", "Unk_112"),
+                    new MultiStructItemCustomView(this, "Guard Point Sharpness Cost Multiplier", "Guard_Point_Sharpness_Cost_Multiplier"),
+                    new MultiStructItemCustomView(this, "Impact Phial Damage Multiplier (Not for SAED)", "Impact_Phial_Damage_Multiplier_Not_for_SAED_"),
+                    new MultiStructItemCustomView(this, "Impact Phial Stun Buildup Multiplier", "Impact_Phial_Stun_Buildup_Multiplier"),
+                    new MultiStructItemCustomView(this, "Impact Phial Exhaust Buildup Multiplier", "Impact_Phial_Exhaust_Buildup_Multiplier"),
                     new MultiStructItemCustomView(this, "Elemental Phial Damage Multiplier (Not for SAED)", "Elemental_Phial_Damage_Multiplier_Not_for_SAED_"),
                     new MultiStructItemCustomView(this, "Phial Duration", "Phial_Duration"),
                     new MultiStructItemCustomView(this, "Shield Charge Guard Threshold Bonus", "Shield_Charge_Guard_Threshold_Bonus"),

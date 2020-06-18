@@ -3033,9 +3033,9 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_ : MhwStructItem, IWriteData {
+        public partial class Action_Param_Relate_Jumping_Attacks_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 22;
-            public const string GridName = "Action Param (Relate Jumping Slash And Jumping Advancing Slash)";
+            public const string GridName = "Action Param (Relate Jumping Attacks)";
 
             protected float Gravity_raw;
             public const string Gravity_displayName = "Gravity";
@@ -3114,8 +3114,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableMhwStructCollection<Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_>();
+            public static ObservableMhwStructCollection<Action_Param_Relate_Jumping_Attacks_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Action_Param_Relate_Jumping_Attacks_>();
                 var count = 22UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -3123,8 +3123,8 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_ LoadData(BinaryReader reader, ulong i) {
-                var data = new Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_();
+            public static Action_Param_Relate_Jumping_Attacks_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Action_Param_Relate_Jumping_Attacks_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
                 data.Speed_Rate_raw = reader.ReadSingle();
@@ -3245,9 +3245,9 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Action_Param_5 : MhwStructItem, IWriteData {
+        public partial class Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 4;
-            public const string GridName = "Action Param 5";
+            public const string GridName = "Action Param (Relate Wall Vault, Wall Opposite Vault, White Extract or Not)";
 
             protected float Gravity_raw;
             public const string Gravity_displayName = "Gravity";
@@ -3326,8 +3326,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableMhwStructCollection<Action_Param_5> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Action_Param_5>();
+            public static ObservableMhwStructCollection<Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_>();
                 var count = 4UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -3335,8 +3335,8 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static Action_Param_5 LoadData(BinaryReader reader, ulong i) {
-                var data = new Action_Param_5();
+            public static Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
                 data.Speed_Rate_raw = reader.ReadSingle();
@@ -3869,18 +3869,18 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Descending_Thrust_Kinsect_Speed_Multiplier_raw;
-            public const string Descending_Thrust_Kinsect_Speed_Multiplier_displayName = "Descending Thrust Kinsect Speed Multiplier";
-            public const int Descending_Thrust_Kinsect_Speed_Multiplier_sortIndex = 1750;
-            [SortOrder(Descending_Thrust_Kinsect_Speed_Multiplier_sortIndex)]
-            [DisplayName(Descending_Thrust_Kinsect_Speed_Multiplier_displayName)]
-            public virtual float Descending_Thrust_Kinsect_Speed_Multiplier {
-                get => Descending_Thrust_Kinsect_Speed_Multiplier_raw;
+            protected float Unk_143_raw;
+            public const string Unk_143_displayName = "Unk 143";
+            public const int Unk_143_sortIndex = 1750;
+            [SortOrder(Unk_143_sortIndex)]
+            [DisplayName(Unk_143_displayName)]
+            public virtual float Unk_143 {
+                get => Unk_143_raw;
                 set {
-                    if (Descending_Thrust_Kinsect_Speed_Multiplier_raw == value) return;
-                    Descending_Thrust_Kinsect_Speed_Multiplier_raw = value;
-                    ChangedItems.Add(nameof(Descending_Thrust_Kinsect_Speed_Multiplier));
-                    OnPropertyChanged(nameof(Descending_Thrust_Kinsect_Speed_Multiplier));
+                    if (Unk_143_raw == value) return;
+                    Unk_143_raw = value;
+                    ChangedItems.Add(nameof(Unk_143));
+                    OnPropertyChanged(nameof(Unk_143));
                 }
             }
 
@@ -4037,7 +4037,7 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Kinsect_Max_Stamina_raw = reader.ReadSingle();
                 data.Unk_141_raw = reader.ReadSingle();
                 data.Kinsect_Stamina_on_Recall_raw = reader.ReadSingle();
-                data.Descending_Thrust_Kinsect_Speed_Multiplier_raw = reader.ReadSingle();
+                data.Unk_143_raw = reader.ReadSingle();
                 data.Unk_144_raw = reader.ReadSingle();
                 data.Kinsect_Dust_Interval_Blast_raw = reader.ReadSingle();
                 data.Kinsect_Dust_Interval_Heal_raw = reader.ReadSingle();
@@ -4083,7 +4083,7 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Kinsect_Max_Stamina_raw);
                 writer.Write(Unk_141_raw);
                 writer.Write(Kinsect_Stamina_on_Recall_raw);
-                writer.Write(Descending_Thrust_Kinsect_Speed_Multiplier_raw);
+                writer.Write(Unk_143_raw);
                 writer.Write(Unk_144_raw);
                 writer.Write(Kinsect_Dust_Interval_Blast_raw);
                 writer.Write(Kinsect_Dust_Interval_Heal_raw);
@@ -4129,7 +4129,7 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Kinsect Max Stamina", "Kinsect_Max_Stamina"),
                     new MultiStructItemCustomView(this, "Unk 141", "Unk_141"),
                     new MultiStructItemCustomView(this, "Kinsect Stamina on Recall", "Kinsect_Stamina_on_Recall"),
-                    new MultiStructItemCustomView(this, "Descending Thrust Kinsect Speed Multiplier", "Descending_Thrust_Kinsect_Speed_Multiplier"),
+                    new MultiStructItemCustomView(this, "Unk 143", "Unk_143"),
                     new MultiStructItemCustomView(this, "Unk 144", "Unk_144"),
                     new MultiStructItemCustomView(this, "Kinsect Dust Interval: Blast", "Kinsect_Dust_Interval_Blast"),
                     new MultiStructItemCustomView(this, "Kinsect Dust Interval: Heal", "Kinsect_Dust_Interval_Heal"),
@@ -5004,9 +5004,9 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Unk_Arr_4 : MhwStructItem, IWriteData {
+        public partial class Unk_Arr_4_All_sint8_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 14;
-            public const string GridName = "Unk Arr 4";
+            public const string GridName = "Unk Arr 4 (All sint8)";
 
             protected sbyte Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
@@ -5070,8 +5070,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 250;
 
-            public static ObservableMhwStructCollection<Unk_Arr_4> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Unk_Arr_4>();
+            public static ObservableMhwStructCollection<Unk_Arr_4_All_sint8_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Unk_Arr_4_All_sint8_>();
                 var count = 14UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -5079,8 +5079,8 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static Unk_Arr_4 LoadData(BinaryReader reader, ulong i) {
-                var data = new Unk_Arr_4();
+            public static Unk_Arr_4_All_sint8_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Unk_Arr_4_All_sint8_();
                 data.Index = i;
                 data.Unk_1_raw = reader.ReadSByte();
                 data.Unk_2_raw = reader.ReadSByte();
@@ -5217,9 +5217,9 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Unk_Arr_5 : MhwStructItem, IWriteData {
+        public partial class Unk_Arr_5_All_sint8_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "Unk Arr 5";
+            public const string GridName = "Unk Arr 5 (All sint8)";
 
             protected sbyte Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
@@ -5403,8 +5403,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 650;
 
-            public static ObservableMhwStructCollection<Unk_Arr_5> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Unk_Arr_5>();
+            public static ObservableMhwStructCollection<Unk_Arr_5_All_sint8_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Unk_Arr_5_All_sint8_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -5412,8 +5412,8 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static Unk_Arr_5 LoadData(BinaryReader reader, ulong i) {
-                var data = new Unk_Arr_5();
+            public static Unk_Arr_5_All_sint8_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Unk_Arr_5_All_sint8_();
                 data.Index = i;
                 data.Unk_1_raw = reader.ReadSByte();
                 data.Unk_2_raw = reader.ReadSByte();
@@ -5465,18 +5465,18 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Unk_183_raw;
-            public const string Unk_183_displayName = "Unk 183";
-            public const int Unk_183_sortIndex = 100;
-            [SortOrder(Unk_183_sortIndex)]
-            [DisplayName(Unk_183_displayName)]
-            public virtual float Unk_183 {
-                get => Unk_183_raw;
+            protected float Descending_Thrust_Kinsect_Following_Speed_Multiplier_raw;
+            public const string Descending_Thrust_Kinsect_Following_Speed_Multiplier_displayName = "Descending Thrust Kinsect Following Speed Multiplier";
+            public const int Descending_Thrust_Kinsect_Following_Speed_Multiplier_sortIndex = 100;
+            [SortOrder(Descending_Thrust_Kinsect_Following_Speed_Multiplier_sortIndex)]
+            [DisplayName(Descending_Thrust_Kinsect_Following_Speed_Multiplier_displayName)]
+            public virtual float Descending_Thrust_Kinsect_Following_Speed_Multiplier {
+                get => Descending_Thrust_Kinsect_Following_Speed_Multiplier_raw;
                 set {
-                    if (Unk_183_raw == value) return;
-                    Unk_183_raw = value;
-                    ChangedItems.Add(nameof(Unk_183));
-                    OnPropertyChanged(nameof(Unk_183));
+                    if (Descending_Thrust_Kinsect_Following_Speed_Multiplier_raw == value) return;
+                    Descending_Thrust_Kinsect_Following_Speed_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Descending_Thrust_Kinsect_Following_Speed_Multiplier));
+                    OnPropertyChanged(nameof(Descending_Thrust_Kinsect_Following_Speed_Multiplier));
                 }
             }
 
@@ -5495,33 +5495,33 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Unk_185_raw;
-            public const string Unk_185_displayName = "Unk 185";
-            public const int Unk_185_sortIndex = 200;
-            [SortOrder(Unk_185_sortIndex)]
-            [DisplayName(Unk_185_displayName)]
-            public virtual float Unk_185 {
-                get => Unk_185_raw;
+            protected float Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset_raw;
+            public const string Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset_displayName = "Descending Thrust Kinsect Following Coordinate Y Offset";
+            public const int Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset_sortIndex = 200;
+            [SortOrder(Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset_sortIndex)]
+            [DisplayName(Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset_displayName)]
+            public virtual float Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset {
+                get => Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset_raw;
                 set {
-                    if (Unk_185_raw == value) return;
-                    Unk_185_raw = value;
-                    ChangedItems.Add(nameof(Unk_185));
-                    OnPropertyChanged(nameof(Unk_185));
+                    if (Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset_raw == value) return;
+                    Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset_raw = value;
+                    ChangedItems.Add(nameof(Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset));
+                    OnPropertyChanged(nameof(Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset));
                 }
             }
 
-            protected float Unk_186_raw;
-            public const string Unk_186_displayName = "Unk 186";
-            public const int Unk_186_sortIndex = 250;
-            [SortOrder(Unk_186_sortIndex)]
-            [DisplayName(Unk_186_displayName)]
-            public virtual float Unk_186 {
-                get => Unk_186_raw;
+            protected float Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset_raw;
+            public const string Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset_displayName = "Descending Thrust Kinsect Following Coordinate Z Offset";
+            public const int Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset_sortIndex = 250;
+            [SortOrder(Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset_sortIndex)]
+            [DisplayName(Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset_displayName)]
+            public virtual float Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset {
+                get => Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset_raw;
                 set {
-                    if (Unk_186_raw == value) return;
-                    Unk_186_raw = value;
-                    ChangedItems.Add(nameof(Unk_186));
-                    OnPropertyChanged(nameof(Unk_186));
+                    if (Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset_raw == value) return;
+                    Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset_raw = value;
+                    ChangedItems.Add(nameof(Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset));
+                    OnPropertyChanged(nameof(Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset));
                 }
             }
 
@@ -5540,35 +5540,35 @@ namespace MHW_Editor.Structs.Weapons {
                 var data = new W10p_Params_13_();
                 data.Index = i;
                 data.Unk_182_raw = reader.ReadSingle();
-                data.Unk_183_raw = reader.ReadSingle();
+                data.Descending_Thrust_Kinsect_Following_Speed_Multiplier_raw = reader.ReadSingle();
                 data.Unk_184_raw = reader.ReadSingle();
-                data.Unk_185_raw = reader.ReadSingle();
-                data.Unk_186_raw = reader.ReadSingle();
+                data.Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset_raw = reader.ReadSingle();
+                data.Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Unk_182_raw);
-                writer.Write(Unk_183_raw);
+                writer.Write(Descending_Thrust_Kinsect_Following_Speed_Multiplier_raw);
                 writer.Write(Unk_184_raw);
-                writer.Write(Unk_185_raw);
-                writer.Write(Unk_186_raw);
+                writer.Write(Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset_raw);
+                writer.Write(Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
                     new MultiStructItemCustomView(this, "Unk 182", "Unk_182"),
-                    new MultiStructItemCustomView(this, "Unk 183", "Unk_183"),
+                    new MultiStructItemCustomView(this, "Descending Thrust Kinsect Following Speed Multiplier", "Descending_Thrust_Kinsect_Following_Speed_Multiplier"),
                     new MultiStructItemCustomView(this, "Unk 184", "Unk_184"),
-                    new MultiStructItemCustomView(this, "Unk 185", "Unk_185"),
-                    new MultiStructItemCustomView(this, "Unk 186", "Unk_186"),
+                    new MultiStructItemCustomView(this, "Descending Thrust Kinsect Following Coordinate Y Offset", "Descending_Thrust_Kinsect_Following_Coordinate_Y_Offset"),
+                    new MultiStructItemCustomView(this, "Descending Thrust Kinsect Following Coordinate Z Offset", "Descending_Thrust_Kinsect_Following_Coordinate_Z_Offset"),
                 };
             }
         }
 
-        public partial class Action_Param_6 : MhwStructItem, IWriteData {
+        public partial class Action_Param_Relate_Clutch_Attack_Finish_ : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "Action Param 6";
+            public const string GridName = "Action Param (Relate Clutch Attack Finish)";
 
             protected float Gravity_raw;
             public const string Gravity_displayName = "Gravity";
@@ -5647,8 +5647,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 300;
 
-            public static ObservableMhwStructCollection<Action_Param_6> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Action_Param_6>();
+            public static ObservableMhwStructCollection<Action_Param_Relate_Clutch_Attack_Finish_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Action_Param_Relate_Clutch_Attack_Finish_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -5656,8 +5656,8 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static Action_Param_6 LoadData(BinaryReader reader, ulong i) {
-                var data = new Action_Param_6();
+            public static Action_Param_Relate_Clutch_Attack_Finish_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Action_Param_Relate_Clutch_Attack_Finish_();
                 data.Index = i;
                 data.Gravity_raw = reader.ReadSingle();
                 data.Speed_Rate_raw = reader.ReadSingle();
@@ -5755,28 +5755,28 @@ namespace MHW_Editor.Structs.Weapons {
             data.AddLast(Action_Param_Relate_Mid_air_Evade__);
             var W10p_Params_8__ = new MhwStructDataContainer<W10p_Params_8_>(W10p_Params_8_.LoadData(reader), typeof(W10p_Params_8_));
             data.AddLast(W10p_Params_8__);
-            var Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash__ = new MhwStructDataContainer<Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_>(Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_.LoadData(reader), typeof(Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash_));
-            data.AddLast(Action_Param_Relate_Jumping_Slash_And_Jumping_Advancing_Slash__);
+            var Action_Param_Relate_Jumping_Attacks__ = new MhwStructDataContainer<Action_Param_Relate_Jumping_Attacks_>(Action_Param_Relate_Jumping_Attacks_.LoadData(reader), typeof(Action_Param_Relate_Jumping_Attacks_));
+            data.AddLast(Action_Param_Relate_Jumping_Attacks__);
             var W10p_Params_9__ = new MhwStructDataContainer<W10p_Params_9_>(W10p_Params_9_.LoadData(reader), typeof(W10p_Params_9_));
             data.AddLast(W10p_Params_9__);
-            var Action_Param_5_ = new MhwStructDataContainer<Action_Param_5>(Action_Param_5.LoadData(reader), typeof(Action_Param_5));
-            data.AddLast(Action_Param_5_);
+            var Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not__ = new MhwStructDataContainer<Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_>(Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_.LoadData(reader), typeof(Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_));
+            data.AddLast(Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not__);
             var W10p_Params_10__ = new MhwStructDataContainer<W10p_Params_10_>(W10p_Params_10_.LoadData(reader), typeof(W10p_Params_10_));
             data.AddLast(W10p_Params_10__);
             var Kinsect_Stats_ = new MhwStructDataContainer<Kinsect_Stats>(Kinsect_Stats.LoadData(reader), typeof(Kinsect_Stats));
             data.AddLast(Kinsect_Stats_);
             var W10p_Params_11__ = new MhwStructDataContainer<W10p_Params_11_>(W10p_Params_11_.LoadData(reader), typeof(W10p_Params_11_));
             data.AddLast(W10p_Params_11__);
-            var Unk_Arr_4_ = new MhwStructDataContainer<Unk_Arr_4>(Unk_Arr_4.LoadData(reader), typeof(Unk_Arr_4));
-            data.AddLast(Unk_Arr_4_);
+            var Unk_Arr_4_All_sint8__ = new MhwStructDataContainer<Unk_Arr_4_All_sint8_>(Unk_Arr_4_All_sint8_.LoadData(reader), typeof(Unk_Arr_4_All_sint8_));
+            data.AddLast(Unk_Arr_4_All_sint8__);
             var W10p_Params_12__ = new MhwStructDataContainer<W10p_Params_12_>(W10p_Params_12_.LoadData(reader), typeof(W10p_Params_12_));
             data.AddLast(W10p_Params_12__);
-            var Unk_Arr_5_ = new MhwStructDataContainer<Unk_Arr_5>(Unk_Arr_5.LoadData(reader), typeof(Unk_Arr_5));
-            data.AddLast(Unk_Arr_5_);
+            var Unk_Arr_5_All_sint8__ = new MhwStructDataContainer<Unk_Arr_5_All_sint8_>(Unk_Arr_5_All_sint8_.LoadData(reader), typeof(Unk_Arr_5_All_sint8_));
+            data.AddLast(Unk_Arr_5_All_sint8__);
             var W10p_Params_13__ = new MhwStructDataContainer<W10p_Params_13_>(W10p_Params_13_.LoadData(reader), typeof(W10p_Params_13_));
             data.AddLast(W10p_Params_13__);
-            var Action_Param_6_ = new MhwStructDataContainer<Action_Param_6>(Action_Param_6.LoadData(reader), typeof(Action_Param_6));
-            data.AddLast(Action_Param_6_);
+            var Action_Param_Relate_Clutch_Attack_Finish__ = new MhwStructDataContainer<Action_Param_Relate_Clutch_Attack_Finish_>(Action_Param_Relate_Clutch_Attack_Finish_.LoadData(reader), typeof(Action_Param_Relate_Clutch_Attack_Finish_));
+            data.AddLast(Action_Param_Relate_Clutch_Attack_Finish__);
             var W10p_Params_14__ = new MhwStructDataContainer<W10p_Params_14_>(W10p_Params_14_.LoadData(reader), typeof(W10p_Params_14_));
             data.AddLast(W10p_Params_14__);
         }

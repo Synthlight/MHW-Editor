@@ -2388,33 +2388,33 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Unk_92_raw;
-            public const string Unk_92_displayName = "Unk 92";
-            public const int Unk_92_sortIndex = 100;
-            [SortOrder(Unk_92_sortIndex)]
-            [DisplayName(Unk_92_displayName)]
-            public virtual float Unk_92 {
-                get => Unk_92_raw;
+            protected float Charge_Dash_lvl_2_Charge_Time_raw;
+            public const string Charge_Dash_lvl_2_Charge_Time_displayName = "Charge Dash lvl 2 Charge Time";
+            public const int Charge_Dash_lvl_2_Charge_Time_sortIndex = 100;
+            [SortOrder(Charge_Dash_lvl_2_Charge_Time_sortIndex)]
+            [DisplayName(Charge_Dash_lvl_2_Charge_Time_displayName)]
+            public virtual float Charge_Dash_lvl_2_Charge_Time {
+                get => Charge_Dash_lvl_2_Charge_Time_raw;
                 set {
-                    if (Unk_92_raw == value) return;
-                    Unk_92_raw = value;
-                    ChangedItems.Add(nameof(Unk_92));
-                    OnPropertyChanged(nameof(Unk_92));
+                    if (Charge_Dash_lvl_2_Charge_Time_raw == value) return;
+                    Charge_Dash_lvl_2_Charge_Time_raw = value;
+                    ChangedItems.Add(nameof(Charge_Dash_lvl_2_Charge_Time));
+                    OnPropertyChanged(nameof(Charge_Dash_lvl_2_Charge_Time));
                 }
             }
 
-            protected float Unk_93_raw;
-            public const string Unk_93_displayName = "Unk 93";
-            public const int Unk_93_sortIndex = 150;
-            [SortOrder(Unk_93_sortIndex)]
-            [DisplayName(Unk_93_displayName)]
-            public virtual float Unk_93 {
-                get => Unk_93_raw;
+            protected float Charge_Dash_lvl_2_Speed_Multiplier_raw;
+            public const string Charge_Dash_lvl_2_Speed_Multiplier_displayName = "Charge Dash lvl 2 Speed Multiplier";
+            public const int Charge_Dash_lvl_2_Speed_Multiplier_sortIndex = 150;
+            [SortOrder(Charge_Dash_lvl_2_Speed_Multiplier_sortIndex)]
+            [DisplayName(Charge_Dash_lvl_2_Speed_Multiplier_displayName)]
+            public virtual float Charge_Dash_lvl_2_Speed_Multiplier {
+                get => Charge_Dash_lvl_2_Speed_Multiplier_raw;
                 set {
-                    if (Unk_93_raw == value) return;
-                    Unk_93_raw = value;
-                    ChangedItems.Add(nameof(Unk_93));
-                    OnPropertyChanged(nameof(Unk_93));
+                    if (Charge_Dash_lvl_2_Speed_Multiplier_raw == value) return;
+                    Charge_Dash_lvl_2_Speed_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Charge_Dash_lvl_2_Speed_Multiplier));
+                    OnPropertyChanged(nameof(Charge_Dash_lvl_2_Speed_Multiplier));
                 }
             }
 
@@ -2448,33 +2448,33 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Unk_96_raw;
-            public const string Unk_96_displayName = "Unk 96";
-            public const int Unk_96_sortIndex = 300;
-            [SortOrder(Unk_96_sortIndex)]
-            [DisplayName(Unk_96_displayName)]
-            public virtual float Unk_96 {
-                get => Unk_96_raw;
+            protected float Charge_Dash_lvl_3_Charge_Time_raw;
+            public const string Charge_Dash_lvl_3_Charge_Time_displayName = "Charge Dash lvl 3 Charge Time";
+            public const int Charge_Dash_lvl_3_Charge_Time_sortIndex = 300;
+            [SortOrder(Charge_Dash_lvl_3_Charge_Time_sortIndex)]
+            [DisplayName(Charge_Dash_lvl_3_Charge_Time_displayName)]
+            public virtual float Charge_Dash_lvl_3_Charge_Time {
+                get => Charge_Dash_lvl_3_Charge_Time_raw;
                 set {
-                    if (Unk_96_raw == value) return;
-                    Unk_96_raw = value;
-                    ChangedItems.Add(nameof(Unk_96));
-                    OnPropertyChanged(nameof(Unk_96));
+                    if (Charge_Dash_lvl_3_Charge_Time_raw == value) return;
+                    Charge_Dash_lvl_3_Charge_Time_raw = value;
+                    ChangedItems.Add(nameof(Charge_Dash_lvl_3_Charge_Time));
+                    OnPropertyChanged(nameof(Charge_Dash_lvl_3_Charge_Time));
                 }
             }
 
-            protected float Unk_97_raw;
-            public const string Unk_97_displayName = "Unk 97";
-            public const int Unk_97_sortIndex = 350;
-            [SortOrder(Unk_97_sortIndex)]
-            [DisplayName(Unk_97_displayName)]
-            public virtual float Unk_97 {
-                get => Unk_97_raw;
+            protected float Charge_Dash_lvl_3_Speed_Multiplier_raw;
+            public const string Charge_Dash_lvl_3_Speed_Multiplier_displayName = "Charge Dash lvl 3 Speed Multiplier";
+            public const int Charge_Dash_lvl_3_Speed_Multiplier_sortIndex = 350;
+            [SortOrder(Charge_Dash_lvl_3_Speed_Multiplier_sortIndex)]
+            [DisplayName(Charge_Dash_lvl_3_Speed_Multiplier_displayName)]
+            public virtual float Charge_Dash_lvl_3_Speed_Multiplier {
+                get => Charge_Dash_lvl_3_Speed_Multiplier_raw;
                 set {
-                    if (Unk_97_raw == value) return;
-                    Unk_97_raw = value;
-                    ChangedItems.Add(nameof(Unk_97));
-                    OnPropertyChanged(nameof(Unk_97));
+                    if (Charge_Dash_lvl_3_Speed_Multiplier_raw == value) return;
+                    Charge_Dash_lvl_3_Speed_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Charge_Dash_lvl_3_Speed_Multiplier));
+                    OnPropertyChanged(nameof(Charge_Dash_lvl_3_Speed_Multiplier));
                 }
             }
 
@@ -2583,33 +2583,33 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Unk_105_raw;
-            public const string Unk_105_displayName = "Unk 105";
-            public const int Unk_105_sortIndex = 750;
-            [SortOrder(Unk_105_sortIndex)]
-            [DisplayName(Unk_105_displayName)]
-            public virtual float Unk_105 {
-                get => Unk_105_raw;
+            protected float Charge_Dash_lvl_2_Damage_Multiplier_raw;
+            public const string Charge_Dash_lvl_2_Damage_Multiplier_displayName = "Charge Dash lvl 2 Damage Multiplier";
+            public const int Charge_Dash_lvl_2_Damage_Multiplier_sortIndex = 750;
+            [SortOrder(Charge_Dash_lvl_2_Damage_Multiplier_sortIndex)]
+            [DisplayName(Charge_Dash_lvl_2_Damage_Multiplier_displayName)]
+            public virtual float Charge_Dash_lvl_2_Damage_Multiplier {
+                get => Charge_Dash_lvl_2_Damage_Multiplier_raw;
                 set {
-                    if (Unk_105_raw == value) return;
-                    Unk_105_raw = value;
-                    ChangedItems.Add(nameof(Unk_105));
-                    OnPropertyChanged(nameof(Unk_105));
+                    if (Charge_Dash_lvl_2_Damage_Multiplier_raw == value) return;
+                    Charge_Dash_lvl_2_Damage_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Charge_Dash_lvl_2_Damage_Multiplier));
+                    OnPropertyChanged(nameof(Charge_Dash_lvl_2_Damage_Multiplier));
                 }
             }
 
-            protected float Unk_106_raw;
-            public const string Unk_106_displayName = "Unk 106";
-            public const int Unk_106_sortIndex = 800;
-            [SortOrder(Unk_106_sortIndex)]
-            [DisplayName(Unk_106_displayName)]
-            public virtual float Unk_106 {
-                get => Unk_106_raw;
+            protected float Charge_Dash_lvl_3_Damage_Multiplier_raw;
+            public const string Charge_Dash_lvl_3_Damage_Multiplier_displayName = "Charge Dash lvl 3 Damage Multiplier";
+            public const int Charge_Dash_lvl_3_Damage_Multiplier_sortIndex = 800;
+            [SortOrder(Charge_Dash_lvl_3_Damage_Multiplier_sortIndex)]
+            [DisplayName(Charge_Dash_lvl_3_Damage_Multiplier_displayName)]
+            public virtual float Charge_Dash_lvl_3_Damage_Multiplier {
+                get => Charge_Dash_lvl_3_Damage_Multiplier_raw;
                 set {
-                    if (Unk_106_raw == value) return;
-                    Unk_106_raw = value;
-                    ChangedItems.Add(nameof(Unk_106));
-                    OnPropertyChanged(nameof(Unk_106));
+                    if (Charge_Dash_lvl_3_Damage_Multiplier_raw == value) return;
+                    Charge_Dash_lvl_3_Damage_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Charge_Dash_lvl_3_Damage_Multiplier));
+                    OnPropertyChanged(nameof(Charge_Dash_lvl_3_Damage_Multiplier));
                 }
             }
 
@@ -2928,12 +2928,12 @@ namespace MHW_Editor.Structs.Weapons {
                 var data = new W06p_Params_5_();
                 data.Index = i;
                 data.Unk_91_raw = reader.ReadSingle();
-                data.Unk_92_raw = reader.ReadSingle();
-                data.Unk_93_raw = reader.ReadSingle();
+                data.Charge_Dash_lvl_2_Charge_Time_raw = reader.ReadSingle();
+                data.Charge_Dash_lvl_2_Speed_Multiplier_raw = reader.ReadSingle();
                 data.Unk_94_raw = reader.ReadSingle();
                 data.Unk_95_raw = reader.ReadSingle();
-                data.Unk_96_raw = reader.ReadSingle();
-                data.Unk_97_raw = reader.ReadSingle();
+                data.Charge_Dash_lvl_3_Charge_Time_raw = reader.ReadSingle();
+                data.Charge_Dash_lvl_3_Speed_Multiplier_raw = reader.ReadSingle();
                 data.Unk_98_raw = reader.ReadSingle();
                 data.Unk_99_raw = reader.ReadSingle();
                 data.Unk_100_raw = reader.ReadSingle();
@@ -2941,8 +2941,8 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_102_raw = reader.ReadSingle();
                 data.Unk_103_raw = reader.ReadSingle();
                 data.Unk_104_raw = reader.ReadSingle();
-                data.Unk_105_raw = reader.ReadSingle();
-                data.Unk_106_raw = reader.ReadSingle();
+                data.Charge_Dash_lvl_2_Damage_Multiplier_raw = reader.ReadSingle();
+                data.Charge_Dash_lvl_3_Damage_Multiplier_raw = reader.ReadSingle();
                 data.Unk_107_raw = reader.ReadSingle();
                 data.Unk_108_raw = reader.ReadSingle();
                 data.Unk_109_raw = reader.ReadUInt32();
@@ -2968,12 +2968,12 @@ namespace MHW_Editor.Structs.Weapons {
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Unk_91_raw);
-                writer.Write(Unk_92_raw);
-                writer.Write(Unk_93_raw);
+                writer.Write(Charge_Dash_lvl_2_Charge_Time_raw);
+                writer.Write(Charge_Dash_lvl_2_Speed_Multiplier_raw);
                 writer.Write(Unk_94_raw);
                 writer.Write(Unk_95_raw);
-                writer.Write(Unk_96_raw);
-                writer.Write(Unk_97_raw);
+                writer.Write(Charge_Dash_lvl_3_Charge_Time_raw);
+                writer.Write(Charge_Dash_lvl_3_Speed_Multiplier_raw);
                 writer.Write(Unk_98_raw);
                 writer.Write(Unk_99_raw);
                 writer.Write(Unk_100_raw);
@@ -2981,8 +2981,8 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_102_raw);
                 writer.Write(Unk_103_raw);
                 writer.Write(Unk_104_raw);
-                writer.Write(Unk_105_raw);
-                writer.Write(Unk_106_raw);
+                writer.Write(Charge_Dash_lvl_2_Damage_Multiplier_raw);
+                writer.Write(Charge_Dash_lvl_3_Damage_Multiplier_raw);
                 writer.Write(Unk_107_raw);
                 writer.Write(Unk_108_raw);
                 writer.Write(Unk_109_raw);
@@ -3008,12 +3008,12 @@ namespace MHW_Editor.Structs.Weapons {
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
                     new MultiStructItemCustomView(this, "Unk 91", "Unk_91"),
-                    new MultiStructItemCustomView(this, "Unk 92", "Unk_92"),
-                    new MultiStructItemCustomView(this, "Unk 93", "Unk_93"),
+                    new MultiStructItemCustomView(this, "Charge Dash lvl 2 Charge Time", "Charge_Dash_lvl_2_Charge_Time"),
+                    new MultiStructItemCustomView(this, "Charge Dash lvl 2 Speed Multiplier", "Charge_Dash_lvl_2_Speed_Multiplier"),
                     new MultiStructItemCustomView(this, "Unk 94", "Unk_94"),
                     new MultiStructItemCustomView(this, "Unk 95", "Unk_95"),
-                    new MultiStructItemCustomView(this, "Unk 96", "Unk_96"),
-                    new MultiStructItemCustomView(this, "Unk 97", "Unk_97"),
+                    new MultiStructItemCustomView(this, "Charge Dash lvl 3 Charge Time", "Charge_Dash_lvl_3_Charge_Time"),
+                    new MultiStructItemCustomView(this, "Charge Dash lvl 3 Speed Multiplier", "Charge_Dash_lvl_3_Speed_Multiplier"),
                     new MultiStructItemCustomView(this, "Unk 98", "Unk_98"),
                     new MultiStructItemCustomView(this, "Unk 99", "Unk_99"),
                     new MultiStructItemCustomView(this, "Unk 100", "Unk_100"),
@@ -3021,8 +3021,8 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 102", "Unk_102"),
                     new MultiStructItemCustomView(this, "Unk 103", "Unk_103"),
                     new MultiStructItemCustomView(this, "Unk 104", "Unk_104"),
-                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105"),
-                    new MultiStructItemCustomView(this, "Unk 106", "Unk_106"),
+                    new MultiStructItemCustomView(this, "Charge Dash lvl 2 Damage Multiplier", "Charge_Dash_lvl_2_Damage_Multiplier"),
+                    new MultiStructItemCustomView(this, "Charge Dash lvl 3 Damage Multiplier", "Charge_Dash_lvl_3_Damage_Multiplier"),
                     new MultiStructItemCustomView(this, "Unk 107", "Unk_107"),
                     new MultiStructItemCustomView(this, "Unk 108", "Unk_108"),
                     new MultiStructItemCustomView(this, "Unk 109", "Unk_109"),
