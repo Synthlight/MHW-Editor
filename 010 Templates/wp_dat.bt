@@ -7,51 +7,51 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Index<name="Index">;
-    short Unk1<name="Unk1">;
-    short Base_Model_Id<name="Base Model Id">;
-    short Part_1_Id<name="Part 1 Id">;
-    short Part_2_Id<name="Part 2 Id">;
-    ubyte Unk_1<name="Unk 1">;
-    ubyte Color<name="Color">;
-    ubyte Tree_Id<name="Tree Id">;
-    ubyte Is_Fixed_Upgrade<name="Is Fixed Upgrade">;
-    uint Cost<name="Cost">;
-    ubyte Rarity<name="Rarity">;
-    ubyte Sharpness_kire_Id<name="Sharpness (.kire) Id">;
-    ubyte Sharpness_Amount<name="Sharpness Amount">;
-    ushort Damage<name="Damage">;
-    ushort Defense<name="Defense">;
-    byte Affinity<name="Affinity">;
-    ubyte Element<name="Element">;
-    ushort Element_Damage<name="Element Damage">;
-    ubyte Element_Hidden_<name="Element (Hidden)">;
-    ushort Element_Hidden_Damage<name="Element (Hidden) Damage">;
-    ubyte Elderseal<name="Elderseal">;
-    ubyte Slot_Count<name="Slot Count">;
-    ubyte Slot_1_Size<name="Slot 1 Size">;
-    ubyte Slot_2_Size<name="Slot 2 Size">;
-    ubyte Slot_3_Size<name="Slot 3 Size">;
-    ushort Special_Ability_1_ID<name="Special Ability 1 ID">;
-    ushort Special_Ability_2_ID<name="Special Ability 2 ID">;
-    uint Unk_2<name="Unk 2">;
-    uint Unk_3<name="Unk 3">;
-    uint Unk_4<name="Unk 4">;
-    ubyte Tree_Position<name="Tree Position">;
-    ushort Id<name="Id">;
-    ushort GMD_Name_Index<name="GMD Name Index">;
-    ushort GMD_Description_Index<name="GMD Description Index">;
-    ushort Skill<name="Skill">;
-    ushort Unk_5<name="Unk 5">;
+    uint Index<name="Index (uint)">;
+    short Unk1<name="Unk1 (short)">;
+    short Base_Model_Id<name="Base Model Id (short)">;
+    short Part_1_Id<name="Part 1 Id (short)">;
+    short Part_2_Id<name="Part 2 Id (short)">;
+    ubyte Unk_1<name="Unk 1 (ubyte)">;
+    ubyte Color<name="Color (ubyte)">;
+    ubyte Tree_Id<name="Tree Id (ubyte)">;
+    ubyte Is_Fixed_Upgrade<name="Is Fixed Upgrade (ubyte)">;
+    uint Cost<name="Cost (uint)">;
+    ubyte Rarity<name="Rarity (ubyte)">;
+    ubyte Sharpness_kire_Id<name="Sharpness (.kire) Id (ubyte)">;
+    ubyte Sharpness_Amount<name="Sharpness Amount (ubyte)">;
+    ushort Damage<name="Damage (ushort)">;
+    ushort Defense<name="Defense (ushort)">;
+    byte Affinity<name="Affinity (byte)">;
+    ubyte Element<name="Element (ubyte)">;
+    ushort Element_Damage<name="Element Damage (ushort)">;
+    ubyte Element_Hidden_<name="Element (Hidden) (ubyte)">;
+    ushort Element_Hidden_Damage<name="Element (Hidden) Damage (ushort)">;
+    ubyte Elderseal<name="Elderseal (ubyte)">;
+    ubyte Slot_Count<name="Slot Count (ubyte)">;
+    ubyte Slot_1_Size<name="Slot 1 Size (ubyte)">;
+    ubyte Slot_2_Size<name="Slot 2 Size (ubyte)">;
+    ubyte Slot_3_Size<name="Slot 3 Size (ubyte)">;
+    ushort Special_Ability_1_ID<name="Special Ability 1 ID (ushort)">;
+    ushort Special_Ability_2_ID<name="Special Ability 2 ID (ushort)">;
+    uint Unk_2<name="Unk 2 (uint)">;
+    uint Unk_3<name="Unk 3 (uint)">;
+    uint Unk_4<name="Unk 4 (uint)">;
+    ubyte Tree_Position<name="Tree Position (ubyte)">;
+    ushort Id<name="Id (ushort)">;
+    ushort GMD_Name_Index<name="GMD Name Index (ushort)">;
+    ushort GMD_Description_Index<name="GMD Description Index (ushort)">;
+    ushort Skill<name="Skill (ushort)">;
+    ushort Unk_5<name="Unk 5 (ushort)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

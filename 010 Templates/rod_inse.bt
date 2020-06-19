@@ -7,30 +7,30 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Index<name="Index">;
-    ubyte Attack_Type<name="Attack Type">;
-    ubyte Id<name="Id">;
-    ubyte Tree_Position_Id<name="Tree Position Id">;
-    ushort Base_Model_Id<name="Base Model Id">;
-    ubyte Tree_Id<name="Tree Id">;
-    uint Craft_Cost<name="Craft Cost">;
-    ubyte Rarity<name="Rarity">;
-    ushort Power<name="Power">;
-    ushort Speed<name="Speed">;
-    ushort Heal<name="Heal">;
-    ushort Element<name="Element">;
-    ushort Dust_Effect<name="Dust Effect">;
-    ubyte Tree_Position<name="Tree Position">;
-    ushort Equip_Id<name="Equip Id">;
+    uint Index<name="Index (uint)">;
+    ubyte Attack_Type<name="Attack Type (ubyte)">;
+    ubyte Id<name="Id (ubyte)">;
+    ubyte Tree_Position_Id<name="Tree Position Id (ubyte)">;
+    ushort Base_Model_Id<name="Base Model Id (ushort)">;
+    ubyte Tree_Id<name="Tree Id (ubyte)">;
+    uint Craft_Cost<name="Craft Cost (uint)">;
+    ubyte Rarity<name="Rarity (ubyte)">;
+    ushort Power<name="Power (ushort)">;
+    ushort Speed<name="Speed (ushort)">;
+    ushort Heal<name="Heal (ushort)">;
+    ushort Element<name="Element (ushort)">;
+    ushort Dust_Effect<name="Dust Effect (ushort)">;
+    ubyte Tree_Position<name="Tree Position (ubyte)">;
+    ushort Equip_Id<name="Equip Id (ushort)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

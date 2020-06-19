@@ -7,21 +7,21 @@
 
 // Melder Exchange
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Melder_Exchange;
 
 Melder_Exchange Melder_Exchange_<name="Melder Exchange">;
 
 // Item Box
 typedef struct {
-    uint Source_Item_Id<name="Source Item Id">;
-    uint Unk_1<name="Unk 1">;
+    uint Source_Item_Id<name="Source Item Id (uint)">;
+    uint Unk_1<name="Unk 1 (uint)">;
 
     // Items
     typedef struct {
-        ushort Unk<name="Unk">;
+        ushort Unk<name="Unk (ushort)">;
     } Items;
 
     Items Items_[215]<optimize=false, name="Items">;

@@ -7,202 +7,202 @@
 
 // Shlp
 typedef struct {
-    uint Magic_1<name="Magic 1">;
+    uint Magic_1<name="Magic 1 (uint)">;
     char SLP[4]<optimize=false, name="SLP">;
-    uint Magic_2<name="Magic 2">;
+    uint Magic_2<name="Magic 2 (uint)">;
 } Shlp;
 
 Shlp Shlp_<name="Shlp">;
 
 // Assets
 typedef struct {
-    uint Header<name="Header">;
-    if (Header != 0) { string Path<name="Path">; }
+    uint Header<name="Header (uint)">;
+    if (Header != 0) { string Path<name="Path (string)">; }
 } Assets;
 
 Assets Assets_[25]<optimize=false, name="Assets">;
 
-uint Projectile_Body_EPV_Index<name="Projectile Body: EPV Index">;
-uint Projectile_Body_EPV_Element_<name="Projectile Body: EPV Element #">;
-uint Muzzle_EPV_Index<name="Muzzle: EPV Index">;
-uint Muzzle_EPV_Element_<name="Muzzle: EPV Element #">;
-ubyte Muzzle_Joint_1<name="Muzzle: Joint 1">;
-ubyte Muzzle_Joint_2<name="Muzzle: Joint 2">;
-ubyte Muzzle_Joint_3<name="Muzzle: Joint 3">;
-ubyte Muzzle_Joint_4<name="Muzzle: Joint 4">;
-uint Obj_Collision_Header<name="Obj Collision Header">;
-if (Obj_Collision_Header != 0) { string Obj_Collision<name="Obj Collision">; }
-uint Obj_Collision_Index<name="Obj Collision Index">;
-uint Timeline_List_Header<name="Timeline List Header">;
-if (Timeline_List_Header != 0) { string Timeline_List<name="Timeline List">; }
-uint Unk_2<name="Unk 2">;
-uint Unk_3<name="Unk 3">;
-uint Unk_4<name="Unk 4">;
-uint Unk_5<name="Unk 5">;
-uint Unk_6<name="Unk 6">;
+uint Projectile_Body_EPV_Index<name="Projectile Body: EPV Index (uint)">;
+uint Projectile_Body_EPV_Element_<name="Projectile Body: EPV Element # (uint)">;
+uint Muzzle_EPV_Index<name="Muzzle: EPV Index (uint)">;
+uint Muzzle_EPV_Element_<name="Muzzle: EPV Element # (uint)">;
+ubyte Muzzle_Joint_1<name="Muzzle: Joint 1 (ubyte)">;
+ubyte Muzzle_Joint_2<name="Muzzle: Joint 2 (ubyte)">;
+ubyte Muzzle_Joint_3<name="Muzzle: Joint 3 (ubyte)">;
+ubyte Muzzle_Joint_4<name="Muzzle: Joint 4 (ubyte)">;
+uint Obj_Collision_Header<name="Obj Collision Header (uint)">;
+if (Obj_Collision_Header != 0) { string Obj_Collision<name="Obj Collision (string)">; }
+uint Obj_Collision_Index<name="Obj Collision Index (uint)">;
+uint Timeline_List_Header<name="Timeline List Header (uint)">;
+if (Timeline_List_Header != 0) { string Timeline_List<name="Timeline List (string)">; }
+uint Unk_2<name="Unk 2 (uint)">;
+uint Unk_3<name="Unk 3 (uint)">;
+uint Unk_4<name="Unk 4 (uint)">;
+uint Unk_5<name="Unk 5 (uint)">;
+uint Unk_6<name="Unk 6 (uint)">;
 
 // Number of Linked Shell Params Holder
 typedef struct {
-    uint Number_of_Linked_Shell_Params<name="Number of Linked Shell Params">;
+    uint Number_of_Linked_Shell_Params<name="Number of Linked Shell Params (uint)">;
 } Number_of_Linked_Shell_Params_Holder;
 
 Number_of_Linked_Shell_Params_Holder Number_of_Linked_Shell_Params_Holder_<name="Number of Linked Shell Params Holder">;
 
 // Child Shell Params
 typedef struct {
-    uint Header<name="Header">;
-    string Path<name="Path">;
-    uint Unk_1<name="Unk 1">;
-    uint Flags<name="Flags">;
-    uint Unk_3<name="Unk 3">;
+    uint Header<name="Header (uint)">;
+    string Path<name="Path (string)">;
+    uint Unk_1<name="Unk 1 (uint)">;
+    uint Flags<name="Flags (uint)">;
+    uint Unk_3<name="Unk 3 (uint)">;
 } Child_Shell_Params;
 
 Child_Shell_Params Child_Shell_Params_[Number_of_Linked_Shell_Params_Holder_.Number_of_Linked_Shell_Params]<optimize=false, name="Child Shell Params">;
 
-uint Ground_Hit_EPV_Index<name="Ground Hit: EPV Index">;
-uint Ground_Hit_EPV_Element_<name="Ground Hit: EPV Element #">;
-uint Wall_Hit_EPV_Index<name="Wall Hit: EPV Index">;
-uint Wall_Hit_EPV_Element_<name="Wall Hit: EPV Element #">;
-uint Unk_1<name="Unk 1">;
-uint Unk_2<name="Unk 2">;
-uint Obj_Hit_EPV_Index<name="Obj Hit: EPV Index">;
-uint Obj_Hit_EPV_Element_<name="Obj Hit: EPV Element #">;
-ubyte Unk_3<name="Unk 3">;
-ubyte Unk_4<name="Unk 4">;
-ubyte Unk_5<name="Unk 5">;
-ubyte Unk_6<name="Unk 6">;
-ubyte Unk_7<name="Unk 7">;
-ubyte Unk_8<name="Unk 8">;
-ubyte Unk_9<name="Unk 9">;
-ubyte Unk_10<name="Unk 10">;
-ubyte Unk_11<name="Unk 11">;
-ubyte Unk_12<name="Unk 12">;
-ubyte Unk_13<name="Unk 13">;
-ubyte Unk_14<name="Unk 14">;
-ubyte Unk_15<name="Unk 15">;
-ubyte Unk_16<name="Unk 16">;
-uint Unk_17<name="Unk 17">;
-uint Unk_18<name="Unk 18">;
-float Unk_19<name="Unk 19">;
-uint Unk_20<name="Unk 20">;
-uint Unk_21<name="Unk 21">;
-int Unk_22<name="Unk 22">;
-uint Unk_23<name="Unk 23">;
-uint Unk_24<name="Unk 24">;
-uint Unk_25<name="Unk 25">;
-uint Unk_26<name="Unk 26">;
-uint Locus_EPV_Index<name="Locus: EPV Index">;
-uint Locus_EPV_Element_<name="Locus: EPV Element #">;
-uint Unk_27<name="Unk 27">;
-uint Unk_28<name="Unk 28">;
-uint Unk_29<name="Unk 29">;
-uint Unk_30<name="Unk 30">;
-uint Unk_31<name="Unk 31">;
-uint Unk_32<name="Unk 32">;
-uint Unk_33<name="Unk 33">;
-uint Unk_34<name="Unk 34">;
+uint Ground_Hit_EPV_Index<name="Ground Hit: EPV Index (uint)">;
+uint Ground_Hit_EPV_Element_<name="Ground Hit: EPV Element # (uint)">;
+uint Wall_Hit_EPV_Index<name="Wall Hit: EPV Index (uint)">;
+uint Wall_Hit_EPV_Element_<name="Wall Hit: EPV Element # (uint)">;
+uint Unk_1<name="Unk 1 (uint)">;
+uint Unk_2<name="Unk 2 (uint)">;
+uint Obj_Hit_EPV_Index<name="Obj Hit: EPV Index (uint)">;
+uint Obj_Hit_EPV_Element_<name="Obj Hit: EPV Element # (uint)">;
+ubyte Unk_3<name="Unk 3 (ubyte)">;
+ubyte Unk_4<name="Unk 4 (ubyte)">;
+ubyte Unk_5<name="Unk 5 (ubyte)">;
+ubyte Unk_6<name="Unk 6 (ubyte)">;
+ubyte Unk_7<name="Unk 7 (ubyte)">;
+ubyte Unk_8<name="Unk 8 (ubyte)">;
+ubyte Unk_9<name="Unk 9 (ubyte)">;
+ubyte Unk_10<name="Unk 10 (ubyte)">;
+ubyte Unk_11<name="Unk 11 (ubyte)">;
+ubyte Unk_12<name="Unk 12 (ubyte)">;
+ubyte Unk_13<name="Unk 13 (ubyte)">;
+ubyte Unk_14<name="Unk 14 (ubyte)">;
+ubyte Unk_15<name="Unk 15 (ubyte)">;
+ubyte Unk_16<name="Unk 16 (ubyte)">;
+uint Unk_17<name="Unk 17 (uint)">;
+uint Unk_18<name="Unk 18 (uint)">;
+float Unk_19<name="Unk 19 (float)">;
+uint Unk_20<name="Unk 20 (uint)">;
+uint Unk_21<name="Unk 21 (uint)">;
+int Unk_22<name="Unk 22 (int)">;
+uint Unk_23<name="Unk 23 (uint)">;
+uint Unk_24<name="Unk 24 (uint)">;
+uint Unk_25<name="Unk 25 (uint)">;
+uint Unk_26<name="Unk 26 (uint)">;
+uint Locus_EPV_Index<name="Locus: EPV Index (uint)">;
+uint Locus_EPV_Element_<name="Locus: EPV Element # (uint)">;
+uint Unk_27<name="Unk 27 (uint)">;
+uint Unk_28<name="Unk 28 (uint)">;
+uint Unk_29<name="Unk 29 (uint)">;
+uint Unk_30<name="Unk 30 (uint)">;
+uint Unk_31<name="Unk 31 (uint)">;
+uint Unk_32<name="Unk 32 (uint)">;
+uint Unk_33<name="Unk 33 (uint)">;
+uint Unk_34<name="Unk 34 (uint)">;
 
-uint Wwise_Container_Header<name="Wwise Container Header">;
-if (Wwise_Container_Header != 0) { string Wwise_Container<name="Wwise Container">; }
-int Sound_Shoot_Header<name="Sound: Shoot Header">;
-int Sound_Shoot<name="Sound: Shoot">;
-int Sound_Loop_Header<name="Sound: Loop Header">;
-int Sound_Loop<name="Sound: Loop">;
-int Sound_Kill_Header<name="Sound: Kill Header">;
-int Sound_Kill<name="Sound: Kill">;
-int Sound_Wall_Ground_Hit_Header<name="Sound: Wall/Ground Hit Header">;
-int Sound_Wall_Ground_Hit<name="Sound: Wall/Ground Hit">;
-int Sound_Water_Hit_Header<name="Sound: Water Hit Header">;
-int Sound_Water_Hit<name="Sound: Water Hit">;
-int Sound_Player_Hit_Header<name="Sound: Player Hit Header">;
-int Sound_Player_Hit<name="Sound: Player Hit">;
-int Sound_Delay_Set_Header_Slinger_<name="Sound: Delay Set Header (Slinger)">;
-int Sound_Delay_Set_Slinger_<name="Sound: Delay Set (Slinger)">;
-int Sound_Life_End_Header_Slinger_<name="Sound: Life End Header (Slinger)">;
-int Sound_Life_End_Slinger_<name="Sound: Life End (Slinger)">;
-int Sound_Monster_Reflect_Header<name="Sound: Monster Reflect Header">;
-int Sound_Monster_Reflect<name="Sound: Monster Reflect">;
-int Sound_Custom_Header_1<name="Sound: Custom Header 1">;
-int Sound_Custom_1<name="Sound: Custom 1">;
-int Sound_Custom_Header_2<name="Sound: Custom Header 2">;
-int Sound_Custom_2<name="Sound: Custom 2">;
-int Sound_Custom_Header_3<name="Sound: Custom Header 3">;
-int Sound_Custom_3<name="Sound: Custom 3">;
+uint Wwise_Container_Header<name="Wwise Container Header (uint)">;
+if (Wwise_Container_Header != 0) { string Wwise_Container<name="Wwise Container (string)">; }
+int Sound_Shoot_Header<name="Sound: Shoot Header (int)">;
+int Sound_Shoot<name="Sound: Shoot (int)">;
+int Sound_Loop_Header<name="Sound: Loop Header (int)">;
+int Sound_Loop<name="Sound: Loop (int)">;
+int Sound_Kill_Header<name="Sound: Kill Header (int)">;
+int Sound_Kill<name="Sound: Kill (int)">;
+int Sound_Wall_Ground_Hit_Header<name="Sound: Wall/Ground Hit Header (int)">;
+int Sound_Wall_Ground_Hit<name="Sound: Wall/Ground Hit (int)">;
+int Sound_Water_Hit_Header<name="Sound: Water Hit Header (int)">;
+int Sound_Water_Hit<name="Sound: Water Hit (int)">;
+int Sound_Player_Hit_Header<name="Sound: Player Hit Header (int)">;
+int Sound_Player_Hit<name="Sound: Player Hit (int)">;
+int Sound_Delay_Set_Header_Slinger_<name="Sound: Delay Set Header (Slinger) (int)">;
+int Sound_Delay_Set_Slinger_<name="Sound: Delay Set (Slinger) (int)">;
+int Sound_Life_End_Header_Slinger_<name="Sound: Life End Header (Slinger) (int)">;
+int Sound_Life_End_Slinger_<name="Sound: Life End (Slinger) (int)">;
+int Sound_Monster_Reflect_Header<name="Sound: Monster Reflect Header (int)">;
+int Sound_Monster_Reflect<name="Sound: Monster Reflect (int)">;
+int Sound_Custom_Header_1<name="Sound: Custom Header 1 (int)">;
+int Sound_Custom_1<name="Sound: Custom 1 (int)">;
+int Sound_Custom_Header_2<name="Sound: Custom Header 2 (int)">;
+int Sound_Custom_2<name="Sound: Custom 2 (int)">;
+int Sound_Custom_Header_3<name="Sound: Custom Header 3 (int)">;
+int Sound_Custom_3<name="Sound: Custom 3 (int)">;
 
-uint Header<name="Header">;
-uint Projectile_Entity_Collider<name="Projectile: Entity Collider">;
-float Projectile_Model_Lifespan<name="Projectile: Model Lifespan">;
-uint Projectile_Distance_Range<name="Projectile: Distance Range">;
-ubyte Unk_35<name="Unk 35">;
-ubyte Unk_36<name="Unk 36">;
-ubyte Unk_37<name="Unk 37">;
-ubyte Unk_38<name="Unk 38">;
-uint Unk_39<name="Unk 39">;
-uint Unk_40<name="Unk 40">;
-uint Unk_41<name="Unk 41">;
-float Projectile_Spawn_Pos_Y<name="Projectile: Spawn Pos Y">;
-float Projectile_Spawn_Pos_X<name="Projectile: Spawn Pos X">;
-float Projectile_Velocity<name="Projectile: Velocity">;
-float Projectile_Falloff<name="Projectile: Falloff">;
-float Unk_42<name="Unk 42">;
-float Unk_43<name="Unk 43">;
-float Unk_44<name="Unk 44">;
-float Angle_Unk_1<name="Angle Unk 1">;
-float Angle_Unk_2<name="Angle Unk 2">;
-float Angle_Unk_3<name="Angle Unk 3">;
-float Angle_Unk_4<name="Angle Unk 4">;
-float Projectile_Hitbox_Range<name="Projectile: Hitbox Range">;
-uint Unk_45<name="Unk 45">;
-uint Insta_Kill_Trigger<name="Insta-Kill Trigger">;
-uint Unk_46<name="Unk 46">;
-ushort Unk_47<name="Unk 47">;
-float Entity_Collide_1<name="Entity: Collide 1">;
-float Unk_48<name="Unk 48">;
-float Unk_49<name="Unk 49">;
-ubyte Entity_Collide_2<name="Entity: Collide 2">;
-ubyte Unk_50<name="Unk 50">;
-ubyte Entity_Spawn_Location<name="Entity: Spawn Location">;
-ubyte Entity_Range<name="Entity: Range">;
-ubyte Unk_51<name="Unk 51">;
-ubyte Unk_52<name="Unk 52">;
-ushort Unk_53<name="Unk 53">;
-uint Unk_54<name="Unk 54">;
+uint Header<name="Header (uint)">;
+uint Projectile_Entity_Collider<name="Projectile: Entity Collider (uint)">;
+float Projectile_Model_Lifespan<name="Projectile: Model Lifespan (float)">;
+uint Projectile_Distance_Range<name="Projectile: Distance Range (uint)">;
+ubyte Unk_35<name="Unk 35 (ubyte)">;
+ubyte Unk_36<name="Unk 36 (ubyte)">;
+ubyte Unk_37<name="Unk 37 (ubyte)">;
+ubyte Unk_38<name="Unk 38 (ubyte)">;
+uint Unk_39<name="Unk 39 (uint)">;
+uint Unk_40<name="Unk 40 (uint)">;
+uint Unk_41<name="Unk 41 (uint)">;
+float Projectile_Spawn_Pos_Y<name="Projectile: Spawn Pos Y (float)">;
+float Projectile_Spawn_Pos_X<name="Projectile: Spawn Pos X (float)">;
+float Projectile_Velocity<name="Projectile: Velocity (float)">;
+float Projectile_Falloff<name="Projectile: Falloff (float)">;
+float Unk_42<name="Unk 42 (float)">;
+float Unk_43<name="Unk 43 (float)">;
+float Unk_44<name="Unk 44 (float)">;
+float Angle_Unk_1<name="Angle Unk 1 (float)">;
+float Angle_Unk_2<name="Angle Unk 2 (float)">;
+float Angle_Unk_3<name="Angle Unk 3 (float)">;
+float Angle_Unk_4<name="Angle Unk 4 (float)">;
+float Projectile_Hitbox_Range<name="Projectile: Hitbox Range (float)">;
+uint Unk_45<name="Unk 45 (uint)">;
+uint Insta_Kill_Trigger<name="Insta-Kill Trigger (uint)">;
+uint Unk_46<name="Unk 46 (uint)">;
+ushort Unk_47<name="Unk 47 (ushort)">;
+float Entity_Collide_1<name="Entity: Collide 1 (float)">;
+float Unk_48<name="Unk 48 (float)">;
+float Unk_49<name="Unk 49 (float)">;
+ubyte Entity_Collide_2<name="Entity: Collide 2 (ubyte)">;
+ubyte Unk_50<name="Unk 50 (ubyte)">;
+ubyte Entity_Spawn_Location<name="Entity: Spawn Location (ubyte)">;
+ubyte Entity_Range<name="Entity: Range (ubyte)">;
+ubyte Unk_51<name="Unk 51 (ubyte)">;
+ubyte Unk_52<name="Unk 52 (ubyte)">;
+ushort Unk_53<name="Unk 53 (ushort)">;
+uint Unk_54<name="Unk 54 (uint)">;
 
 // Number of Modifiers Holder
 typedef struct {
-    uint Number_of_Modifiers<name="Number of Modifiers">;
+    uint Number_of_Modifiers<name="Number of Modifiers (uint)">;
 } Number_of_Modifiers_Holder;
 
 Number_of_Modifiers_Holder Number_of_Modifiers_Holder_<name="Number of Modifiers Holder">;
 
 // Modifiers
 typedef struct {
-    uint Header<name="Header">;
-    if (Header == 412627386) { byte Value_1_if_412627386_<name="Value 1 (if 412627386)">; }
-    if (Header == 412627386) { byte Value_2_if_412627386_<name="Value 2 (if 412627386)">; }
-    if (Header == 412627386) { byte Value_3_if_412627386_<name="Value 3 (if 412627386)">; }
-    if (Header == 412627386) { byte Value_4_if_412627386_<name="Value 4 (if 412627386)">; }
-    if (Header == 3289971) { int Value_if_3289971_<name="Value (if 3289971)">; }
-    if (Header == 79120377) { float Value_if_79120377_<name="Value (if 79120377)">; }
-    if (Header == 306780182) { byte Value_if_306780182_<name="Value (if 306780182)">; }
-    if (Header == 1335056316) { float Value_X_if_1335056316_<name="Value X (if 1335056316)">; }
-    if (Header == 1335056316) { float Value_Y_if_1335056316_<name="Value Y (if 1335056316)">; }
-    if (Header == 1335056316) { float Value_Z_if_1335056316_<name="Value Z (if 1335056316)">; }
-    if (Header == 1335056316) { float Value_Unk_if_1335056316_<name="Value Unk (if 1335056316)">; }
-    string Name<name="Name">;
-    uint Unk_1<name="Unk 1">;
-    string DataType<name="DataType">;
-    uint Unk_2<name="Unk 2">;
-    uint Unk_3<name="Unk 3">;
-    uint Unk_4<name="Unk 4">;
-    ubyte Unk_5<name="Unk 5">;
+    uint Header<name="Header (uint)">;
+    if (Header == 412627386) { byte Value_1_if_412627386_<name="Value 1 (if 412627386) (byte)">; }
+    if (Header == 412627386) { byte Value_2_if_412627386_<name="Value 2 (if 412627386) (byte)">; }
+    if (Header == 412627386) { byte Value_3_if_412627386_<name="Value 3 (if 412627386) (byte)">; }
+    if (Header == 412627386) { byte Value_4_if_412627386_<name="Value 4 (if 412627386) (byte)">; }
+    if (Header == 3289971) { int Value_if_3289971_<name="Value (if 3289971) (int)">; }
+    if (Header == 79120377) { float Value_if_79120377_<name="Value (if 79120377) (float)">; }
+    if (Header == 306780182) { byte Value_if_306780182_<name="Value (if 306780182) (byte)">; }
+    if (Header == 1335056316) { float Value_X_if_1335056316_<name="Value X (if 1335056316) (float)">; }
+    if (Header == 1335056316) { float Value_Y_if_1335056316_<name="Value Y (if 1335056316) (float)">; }
+    if (Header == 1335056316) { float Value_Z_if_1335056316_<name="Value Z (if 1335056316) (float)">; }
+    if (Header == 1335056316) { float Value_Unk_if_1335056316_<name="Value Unk (if 1335056316) (float)">; }
+    string Name<name="Name (string)">;
+    uint Unk_1<name="Unk 1 (uint)">;
+    string DataType<name="DataType (string)">;
+    uint Unk_2<name="Unk 2 (uint)">;
+    uint Unk_3<name="Unk 3 (uint)">;
+    uint Unk_4<name="Unk 4 (uint)">;
+    ubyte Unk_5<name="Unk 5 (ubyte)">;
 } Modifiers;
 
 Modifiers Modifiers_[Number_of_Modifiers_Holder_.Number_of_Modifiers]<optimize=false, name="Modifiers">;
 
 // Unknown
 typedef struct {
-    uint Unk_55<name="Unk 55">;
+    uint Unk_55<name="Unk 55 (uint)">;
 } Unknown;
 
 Unknown Unknown_<name="Unknown">;

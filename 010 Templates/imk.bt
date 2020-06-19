@@ -7,24 +7,24 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Id<name="Id">;
-    ushort Unk1<name="Unk1">;
-    uint Mat_1_Id<name="Mat 1 Id">;
-    uint Mat_2_Id<name="Mat 2 Id">;
-    uint Result_Id<name="Result Id">;
-    uint Quantity<name="Quantity">;
-    uint Unk2<name="Unk2">;
-    uint Category<name="Category">;
-    ubyte Can_Auto_Craft<name="Can Auto-Craft">;
+    uint Id<name="Id (uint)">;
+    ushort Unk1<name="Unk1 (ushort)">;
+    uint Mat_1_Id<name="Mat 1 Id (uint)">;
+    uint Mat_2_Id<name="Mat 2 Id (uint)">;
+    uint Result_Id<name="Result Id (uint)">;
+    uint Quantity<name="Quantity (uint)">;
+    uint Unk2<name="Unk2 (uint)">;
+    uint Category<name="Category (uint)">;
+    ubyte Can_Auto_Craft<name="Can Auto-Craft (ubyte)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

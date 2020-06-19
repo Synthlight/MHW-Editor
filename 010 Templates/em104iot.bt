@@ -7,33 +7,33 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Index<name="Index">;
-    uint Weapon_Type<name="Weapon Type">;
-    uint Weapon_Id<name="Weapon Id">;
-    uint All_Rarity<name="All Rarity">;
-    uint GS_Rarity<name="GS Rarity">;
-    uint LS_Rarity<name="LS Rarity">;
-    uint SnS_Rarity<name="SnS Rarity">;
-    uint DB_Rarity<name="DB Rarity">;
-    uint Lance_Rarity<name="Lance Rarity">;
-    uint GL_Rarity<name="GL Rarity">;
-    uint Hammer_Rarity<name="Hammer Rarity">;
-    uint HH_Rarity<name="HH Rarity">;
-    uint SA_Rarity<name="SA Rarity">;
-    uint CB_Rarity<name="CB Rarity">;
-    uint IG_Rarity<name="IG Rarity">;
-    uint LBG_Rarity<name="LBG Rarity">;
-    uint HBG_Rarity<name="HBG Rarity">;
-    uint Bow_Rarity<name="Bow Rarity">;
+    uint Index<name="Index (uint)">;
+    uint Weapon_Type<name="Weapon Type (uint)">;
+    uint Weapon_Id<name="Weapon Id (uint)">;
+    uint All_Rarity<name="All Rarity (uint)">;
+    uint GS_Rarity<name="GS Rarity (uint)">;
+    uint LS_Rarity<name="LS Rarity (uint)">;
+    uint SnS_Rarity<name="SnS Rarity (uint)">;
+    uint DB_Rarity<name="DB Rarity (uint)">;
+    uint Lance_Rarity<name="Lance Rarity (uint)">;
+    uint GL_Rarity<name="GL Rarity (uint)">;
+    uint Hammer_Rarity<name="Hammer Rarity (uint)">;
+    uint HH_Rarity<name="HH Rarity (uint)">;
+    uint SA_Rarity<name="SA Rarity (uint)">;
+    uint CB_Rarity<name="CB Rarity (uint)">;
+    uint IG_Rarity<name="IG Rarity (uint)">;
+    uint LBG_Rarity<name="LBG Rarity (uint)">;
+    uint HBG_Rarity<name="HBG Rarity (uint)">;
+    uint Bow_Rarity<name="Bow Rarity (uint)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

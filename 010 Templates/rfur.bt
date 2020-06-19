@@ -7,36 +7,36 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Item_Id<name="Item Id">;
-    uint Unk1<name="Unk1">;
-    uint Unk2<name="Unk2">;
-    uint Unk3<name="Unk3">;
-    ubyte Unk4<name="Unk4">;
-    ubyte Unk5<name="Unk5">;
-    ubyte Unk6<name="Unk6">;
-    ubyte Unk7<name="Unk7">;
-    ubyte Unk8<name="Unk8">;
-    ubyte Unk9<name="Unk9">;
-    ubyte Unk10<name="Unk10">;
-    ubyte Unk11<name="Unk11">;
-    ubyte Unk12<name="Unk12">;
-    ubyte Unk13<name="Unk13">;
-    ubyte Unk14<name="Unk14">;
-    int Unk15<name="Unk15">;
-    uint Unk16<name="Unk16">;
-    ushort Unk17<name="Unk17">;
-    ushort Unk18<name="Unk18">;
-    uint Unk19<name="Unk19">;
-    uint Unk21<name="Unk21">;
+    uint Item_Id<name="Item Id (uint)">;
+    uint Unk1<name="Unk1 (uint)">;
+    uint Unk2<name="Unk2 (uint)">;
+    uint Unk3<name="Unk3 (uint)">;
+    ubyte Unk4<name="Unk4 (ubyte)">;
+    ubyte Unk5<name="Unk5 (ubyte)">;
+    ubyte Unk6<name="Unk6 (ubyte)">;
+    ubyte Unk7<name="Unk7 (ubyte)">;
+    ubyte Unk8<name="Unk8 (ubyte)">;
+    ubyte Unk9<name="Unk9 (ubyte)">;
+    ubyte Unk10<name="Unk10 (ubyte)">;
+    ubyte Unk11<name="Unk11 (ubyte)">;
+    ubyte Unk12<name="Unk12 (ubyte)">;
+    ubyte Unk13<name="Unk13 (ubyte)">;
+    ubyte Unk14<name="Unk14 (ubyte)">;
+    int Unk15<name="Unk15 (int)">;
+    uint Unk16<name="Unk16 (uint)">;
+    ushort Unk17<name="Unk17 (ushort)">;
+    ushort Unk18<name="Unk18 (ushort)">;
+    uint Unk19<name="Unk19 (uint)">;
+    uint Unk21<name="Unk21 (uint)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

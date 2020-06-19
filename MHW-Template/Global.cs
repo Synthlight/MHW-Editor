@@ -58,6 +58,7 @@ namespace MHW_Template {
             "*.dtt_epg",
             "*.dtt_rsz",
             "*.dtt_sta",
+            "*.ecp",
             "*.em104exp",
             "*.em104glt",
             "*.em104iot",

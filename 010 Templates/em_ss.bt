@@ -7,21 +7,21 @@
 
 // Small Monster Size Params
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    uint Magic_2<name="Magic 2">;
-    uint Magic_3<name="Magic 3">;
-    uint Number_of_Size_Settings<name="Number of Size Settings">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    uint Magic_2<name="Magic 2 (uint)">;
+    uint Magic_3<name="Magic 3 (uint)">;
+    uint Number_of_Size_Settings<name="Number of Size Settings (uint)">;
 } Small_Monster_Size_Params;
 
 Small_Monster_Size_Params Small_Monster_Size_Params_<name="Small Monster Size Params">;
 
 // Size Settings
 typedef struct {
-    uint Header<name="Header">;
-    float Min_Size<name="Min Size">;
-    float Max_Size<name="Max Size">;
-    float Unk_f32_<name="Unk (f32)">;
-    uint Monster_Id<name="Monster Id">;
+    uint Header<name="Header (uint)">;
+    float Min_Size<name="Min Size (float)">;
+    float Max_Size<name="Max Size (float)">;
+    float Unk_f32_<name="Unk (f32) (float)">;
+    uint Monster_Id<name="Monster Id (uint)">;
 } Size_Settings;
 
 Size_Settings Size_Settings_[Small_Monster_Size_Params_.Number_of_Size_Settings]<optimize=false, name="Size Settings">;

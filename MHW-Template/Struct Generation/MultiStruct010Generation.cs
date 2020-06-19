@@ -39,7 +39,7 @@ namespace MHW_Template.Struct_Generation {
                 if (typeString == "sbyte") typeString = "byte";
 
                 if (entry.arrayCount > -1) propName += $"[{entry.arrayCount}]<optimize=false, name=\"{entry.name}\">";
-                else propName                       += $"<name=\"{entry.name}\">";
+                else propName                       += $"<name=\"{entry.name} ({typeString})\">";
 
                 if (entry.condition != null) {
                     var condition = entry.condition.Replace("|ref|", "").Replace("_raw", "").Replace("parent.", "");
@@ -72,7 +72,7 @@ namespace MHW_Template.Struct_Generation {
 
                 string countTarget;
                 // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
-                if (linkStruct == null) {
+                if (linkStruct == null || linkStruct.showVertically) {
                     countTarget = linkEntry.SafeName;
                 } else {
                     countTarget = $"{linkStruct.SafeName}_.{linkEntry.SafeName}";

@@ -7,52 +7,52 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Index<name="Index">;
-    ushort Order<name="Order">;
-    ubyte Variant<name="Variant">;
-    ushort Set_Layered_Id<name="Set (Layered) Id">;
-    ubyte Type<name="Type">;
-    ubyte Equip_Slot<name="Equip Slot">;
-    ushort Defense<name="Defense">;
-    ushort Model_Id_1<name="Model Id 1">;
-    ushort Model_Id_2<name="Model Id 2">;
-    ushort Icon_Color<name="Icon Color">;
-    ubyte Icon_Effect<name="Icon Effect">;
-    ubyte Rarity<name="Rarity">;
-    uint Cost<name="Cost">;
-    byte Fire_Res<name="Fire Res">;
-    byte Water_Res<name="Water Res">;
-    byte Ice_Res<name="Ice Res">;
-    byte Thunder_Res<name="Thunder Res">;
-    byte Dragon_Res<name="Dragon Res">;
-    ubyte Slot_Count<name="Slot Count">;
-    ubyte Slot_1_Size<name="Slot 1 Size">;
-    ubyte Slot_2_Size<name="Slot 2 Size">;
-    ubyte Slot_3_Size<name="Slot 3 Size">;
-    ushort Set_Skill_1<name="Set Skill 1">;
-    ubyte Set_Skill_1_Level<name="Set Skill 1 Level">;
-    ushort Hidden_Skill<name="Hidden Skill">;
-    ubyte Hidden_Skill_Level<name="Hidden Skill Level">;
-    ushort Skill_1<name="Skill 1">;
-    ubyte Skill_1_Level<name="Skill 1 Level">;
-    ushort Skill_2<name="Skill 2">;
-    ubyte Skill_2_Level<name="Skill 2 Level">;
-    ushort Skill_3<name="Skill 3">;
-    ubyte Skill_3_Level<name="Skill 3 Level">;
-    uint Gender<name="Gender">;
-    ushort Set_Group<name="Set Group">;
-    ushort GMD_Name_Index<name="GMD Name Index">;
-    ushort GMD_Description_Index<name="GMD Description Index">;
-    ubyte Is_Permanent<name="Is Permanent">;
+    uint Index<name="Index (uint)">;
+    ushort Order<name="Order (ushort)">;
+    ubyte Variant<name="Variant (ubyte)">;
+    ushort Set_Layered_Id<name="Set (Layered) Id (ushort)">;
+    ubyte Type<name="Type (ubyte)">;
+    ubyte Equip_Slot<name="Equip Slot (ubyte)">;
+    ushort Defense<name="Defense (ushort)">;
+    ushort Model_Id_1<name="Model Id 1 (ushort)">;
+    ushort Model_Id_2<name="Model Id 2 (ushort)">;
+    ushort Icon_Color<name="Icon Color (ushort)">;
+    ubyte Icon_Effect<name="Icon Effect (ubyte)">;
+    ubyte Rarity<name="Rarity (ubyte)">;
+    uint Cost<name="Cost (uint)">;
+    byte Fire_Res<name="Fire Res (byte)">;
+    byte Water_Res<name="Water Res (byte)">;
+    byte Ice_Res<name="Ice Res (byte)">;
+    byte Thunder_Res<name="Thunder Res (byte)">;
+    byte Dragon_Res<name="Dragon Res (byte)">;
+    ubyte Slot_Count<name="Slot Count (ubyte)">;
+    ubyte Slot_1_Size<name="Slot 1 Size (ubyte)">;
+    ubyte Slot_2_Size<name="Slot 2 Size (ubyte)">;
+    ubyte Slot_3_Size<name="Slot 3 Size (ubyte)">;
+    ushort Set_Skill_1<name="Set Skill 1 (ushort)">;
+    ubyte Set_Skill_1_Level<name="Set Skill 1 Level (ubyte)">;
+    ushort Hidden_Skill<name="Hidden Skill (ushort)">;
+    ubyte Hidden_Skill_Level<name="Hidden Skill Level (ubyte)">;
+    ushort Skill_1<name="Skill 1 (ushort)">;
+    ubyte Skill_1_Level<name="Skill 1 Level (ubyte)">;
+    ushort Skill_2<name="Skill 2 (ushort)">;
+    ubyte Skill_2_Level<name="Skill 2 Level (ubyte)">;
+    ushort Skill_3<name="Skill 3 (ushort)">;
+    ubyte Skill_3_Level<name="Skill 3 Level (ubyte)">;
+    uint Gender<name="Gender (uint)">;
+    ushort Set_Group<name="Set Group (ushort)">;
+    ushort GMD_Name_Index<name="GMD Name Index (ushort)">;
+    ushort GMD_Description_Index<name="GMD Description Index (ushort)">;
+    ubyte Is_Permanent<name="Is Permanent (ubyte)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

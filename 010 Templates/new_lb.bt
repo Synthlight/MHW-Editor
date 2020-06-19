@@ -7,21 +7,21 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Aug_Category<name="Aug Category">;
-    uint Aug_Level<name="Aug Level">;
-    uint Aug_Slot_Cost<name="Aug Slot Cost">;
-    uint Research_Cost_r10_<name="Research Cost (r10)">;
-    uint Research_Cost_r11_<name="Research Cost (r11)">;
-    uint Research_Cost_r12_<name="Research Cost (r12)">;
+    uint Aug_Category<name="Aug Category (uint)">;
+    uint Aug_Level<name="Aug Level (uint)">;
+    uint Aug_Slot_Cost<name="Aug Slot Cost (uint)">;
+    uint Research_Cost_r10_<name="Research Cost (r10) (uint)">;
+    uint Research_Cost_r11_<name="Research Cost (r11) (uint)">;
+    uint Research_Cost_r12_<name="Research Cost (r12) (uint)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

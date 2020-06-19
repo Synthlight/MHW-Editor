@@ -7,22 +7,22 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Id<name="Id">;
-    uint Index<name="Index">;
-    uint Size<name="Size">;
-    uint Skill_1<name="Skill 1">;
-    uint Skill_1_Level<name="Skill 1 Level">;
-    uint Skill_2<name="Skill 2">;
-    uint Skill_2_Level<name="Skill 2 Level">;
+    uint Id<name="Id (uint)">;
+    uint Index<name="Index (uint)">;
+    uint Size<name="Size (uint)">;
+    uint Skill_1<name="Skill 1 (uint)">;
+    uint Skill_1_Level<name="Skill 1 Level (uint)">;
+    uint Skill_2<name="Skill 2 (uint)">;
+    uint Skill_2_Level<name="Skill 2 Level (uint)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

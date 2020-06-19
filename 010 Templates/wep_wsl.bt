@@ -7,19 +7,19 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Id<name="Id">;
-    ubyte Note_1<name="Note 1">;
-    ubyte Note_2<name="Note 2">;
-    ubyte Note_3<name="Note 3">;
+    uint Id<name="Id (uint)">;
+    ubyte Note_1<name="Note 1 (ubyte)">;
+    ubyte Note_2<name="Note 2 (ubyte)">;
+    ubyte Note_3<name="Note 3 (ubyte)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

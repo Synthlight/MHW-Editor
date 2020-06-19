@@ -7,337 +7,337 @@
 
 // Collisions
 typedef struct {
-    uint Magic_1<name="Magic 1">;
+    uint Magic_1<name="Magic 1 (uint)">;
     char Name[4]<optimize=false, name="Name">;
-    uint Magic_2<name="Magic 2">;
-    uint Unk_1<name="Unk 1">;
-    uint Unk_2<name="Unk 2">;
-    uint Name_Count<name="Name Count">;
+    uint Magic_2<name="Magic 2 (uint)">;
+    uint Unk_1<name="Unk 1 (uint)">;
+    uint Unk_2<name="Unk 2 (uint)">;
+    uint Name_Count<name="Name Count (uint)">;
 } Collisions;
 
 Collisions Collisions_<name="Collisions">;
 
 // Names
 typedef struct {
-    string Name<name="Name">;
-    int CLGM_Id<name="CLGM Id">;
-    int Move_Id<name="Move Id">;
-    int Unk_1<name="Unk 1">;
-    ushort Unk_2<name="Unk 2">;
-    ubyte Unk_3<name="Unk 3">;
-    uint Unk_4<name="Unk 4">;
+    string Name<name="Name (string)">;
+    int CLGM_Id<name="CLGM Id (int)">;
+    int Move_Id<name="Move Id (int)">;
+    int Unk_1<name="Unk 1 (int)">;
+    ushort Unk_2<name="Unk 2 (ushort)">;
+    ubyte Unk_3<name="Unk 3 (ubyte)">;
+    uint Unk_4<name="Unk 4 (uint)">;
 } Names;
 
 Names Names_[Collisions_.Name_Count]<optimize=false, name="Names">;
 
 // CLND
 typedef struct {
-    uint Magic_1<name="Magic 1">;
+    uint Magic_1<name="Magic 1 (uint)">;
     char Name[4]<optimize=false, name="Name">;
-    uint Magic_2<name="Magic 2">;
-    uint Clgm_Count<name="Clgm Count">;
-    uint Clgm_Type<name="Clgm Type">;
-    ubyte Unk_1<name="Unk 1">;
+    uint Magic_2<name="Magic 2 (uint)">;
+    uint Clgm_Count<name="Clgm Count (uint)">;
+    uint Clgm_Type<name="Clgm Type (uint)">;
+    ubyte Unk_1<name="Unk 1 (ubyte)">;
 
     // CLGMs
     typedef struct {
-        uint Magic_1<name="Magic 1">;
+        uint Magic_1<name="Magic 1 (uint)">;
         char Name[4]<optimize=false, name="Name">;
-        uint Magic_2<name="Magic 2">;
-        uint Clgm_Inner_Count<name="Clgm Inner Count">;
+        uint Magic_2<name="Magic 2 (uint)">;
+        uint Clgm_Inner_Count<name="Clgm Inner Count (uint)">;
 
         // CLGM Inner
         typedef struct {
-            ubyte Unk_1<name="Unk 1">;
-            ubyte Unk_2<name="Unk 2">;
-            float Attack_Range<name="Attack Range">;
-            float Unk_4<name="Unk 4">;
-            float Unk_5<name="Unk 5">;
-            float Unk_6<name="Unk 6">;
-            short Unk_7<name="Unk 7">;
-            short Unk_8<name="Unk 8">;
-            float Unk_9<name="Unk 9">;
-            float Unk_10<name="Unk 10">;
-            float Unk_11<name="Unk 11">;
-            float Unk_12<name="Unk 12">;
-            float Unk_13<name="Unk 13">;
-            float Unk_14<name="Unk 14">;
-            ushort Unk_15<name="Unk 15">;
-            uint Unk_16<name="Unk 16">;
-            short Unk_17<name="Unk 17">;
-            float Unk_18<name="Unk 18">;
-            float Unk_19<name="Unk 19">;
-            float Unk_20<name="Unk 20">;
-            float Unk_21<name="Unk 21">;
-            ushort Unk_22<name="Unk 22">;
+            ubyte Unk_1<name="Unk 1 (ubyte)">;
+            ubyte Unk_2<name="Unk 2 (ubyte)">;
+            float Attack_Range<name="Attack Range (float)">;
+            float Unk_4<name="Unk 4 (float)">;
+            float Unk_5<name="Unk 5 (float)">;
+            float Unk_6<name="Unk 6 (float)">;
+            short Unk_7<name="Unk 7 (short)">;
+            short Unk_8<name="Unk 8 (short)">;
+            float Unk_9<name="Unk 9 (float)">;
+            float Unk_10<name="Unk 10 (float)">;
+            float Unk_11<name="Unk 11 (float)">;
+            float Unk_12<name="Unk 12 (float)">;
+            float Unk_13<name="Unk 13 (float)">;
+            float Unk_14<name="Unk 14 (float)">;
+            ushort Unk_15<name="Unk 15 (ushort)">;
+            uint Unk_16<name="Unk 16 (uint)">;
+            short Unk_17<name="Unk 17 (short)">;
+            float Unk_18<name="Unk 18 (float)">;
+            float Unk_19<name="Unk 19 (float)">;
+            float Unk_20<name="Unk 20 (float)">;
+            float Unk_21<name="Unk 21 (float)">;
+            ushort Unk_22<name="Unk 22 (ushort)">;
         } CLGM_Inner;
 
         CLGM_Inner CLGM_Inner_[Clgm_Inner_Count]<optimize=false, name="CLGM Inner">;
-        uint Unk_1<name="Unk 1">;
-        uint Attack_Range_if_Unk_1_1_<name="Attack Range (if 'Unk 1' == 1)">;
-        ubyte Unk_2<name="Unk 2">;
-        ubyte Unk_3<name="Unk 3">;
-        ubyte Unk_4<name="Unk 4">;
-        ubyte Unk_5<name="Unk 5">;
-        uint Unk_6<name="Unk 6">;
-        uint Unk_7<name="Unk 7">;
-        short Unk_8<name="Unk 8">;
-        ushort Unk_9<name="Unk 9">;
-        ushort Unk_10<name="Unk 10">;
-        if (Clgm_Type == 2) { int Unk_11<name="Unk 11">; }
-        if (Clgm_Type == 2) { int Unk_12<name="Unk 12">; }
-        if (Clgm_Type == 2) { int Unk_13<name="Unk 13">; }
-        if (Clgm_Type == 2) { int Unk_14<name="Unk 14">; }
-        if (Clgm_Type == 2) { int Unk_15<name="Unk 15">; }
-        if (Clgm_Type == 2) { int Unk_16<name="Unk 16">; }
-        if (Clgm_Type == 2) { int Unk_17<name="Unk 17">; }
-        if (Clgm_Type == 2) { int Unk_18<name="Unk 18">; }
-        ubyte Unk_19<name="Unk 19">;
+        uint Unk_1<name="Unk 1 (uint)">;
+        uint Attack_Range_if_Unk_1_1_<name="Attack Range (if 'Unk 1' == 1) (uint)">;
+        ubyte Unk_2<name="Unk 2 (ubyte)">;
+        ubyte Unk_3<name="Unk 3 (ubyte)">;
+        ubyte Unk_4<name="Unk 4 (ubyte)">;
+        ubyte Unk_5<name="Unk 5 (ubyte)">;
+        uint Unk_6<name="Unk 6 (uint)">;
+        uint Unk_7<name="Unk 7 (uint)">;
+        short Unk_8<name="Unk 8 (short)">;
+        ushort Unk_9<name="Unk 9 (ushort)">;
+        ushort Unk_10<name="Unk 10 (ushort)">;
+        if (Clgm_Type == 2) { int Unk_11<name="Unk 11 (int)">; }
+        if (Clgm_Type == 2) { int Unk_12<name="Unk 12 (int)">; }
+        if (Clgm_Type == 2) { int Unk_13<name="Unk 13 (int)">; }
+        if (Clgm_Type == 2) { int Unk_14<name="Unk 14 (int)">; }
+        if (Clgm_Type == 2) { int Unk_15<name="Unk 15 (int)">; }
+        if (Clgm_Type == 2) { int Unk_16<name="Unk 16 (int)">; }
+        if (Clgm_Type == 2) { int Unk_17<name="Unk 17 (int)">; }
+        if (Clgm_Type == 2) { int Unk_18<name="Unk 18 (int)">; }
+        ubyte Unk_19<name="Unk 19 (ubyte)">;
     } CLGMs;
 
     CLGMs CLGMs_[Clgm_Count]<optimize=false, name="CLGMs">;
-    ubyte Unk_2<name="Unk 2">;
-    ubyte Unk_3<name="Unk 3">;
-    ubyte Unk_4<name="Unk 4">;
+    ubyte Unk_2<name="Unk 2 (ubyte)">;
+    ubyte Unk_3<name="Unk 3 (ubyte)">;
+    ubyte Unk_4<name="Unk 4 (ubyte)">;
 } CLND;
 
 CLND CLND_<name="CLND">;
 
 // Moves
 typedef struct {
-    uint Magic_1<name="Magic 1">;
+    uint Magic_1<name="Magic 1 (uint)">;
     char Name[4]<optimize=false, name="Name">;
-    uint Magic_2<name="Magic 2">;
-    uint Move_Count<name="Move Count">;
-    uint Move_Type<name="Move Type">;
+    uint Magic_2<name="Magic 2 (uint)">;
+    uint Move_Count<name="Move Count (uint)">;
+    uint Move_Type<name="Move Type (uint)">;
 
     // Atk0
     typedef struct {
-        uint Index<name="Index">;
-        uint Unk_1<name="Unk 1">;
-        uint Unk_2<name="Unk 2">;
-        float Unk_3<name="Unk 3">;
-        float Unk_4<name="Unk 4">;
-        float Unk_5<name="Unk 5">;
-        uint Unk_6<name="Unk 6">;
-        uint Unk_7<name="Unk 7">;
-        uint Unk_8<name="Unk 8">;
-        uint Unk_9<name="Unk 9">;
-        uint Unk_10<name="Unk 10">;
-        uint Unk_11<name="Unk 11">;
-        uint Unk_12<name="Unk 12">;
-        uint Unk_13<name="Unk 13">;
-        uint Unk_14<name="Unk 14">;
-        uint Unk_15<name="Unk 15">;
-        uint Unk_16<name="Unk 16">;
-        uint Unk_17<name="Unk 17">;
-        uint Unk_18<name="Unk 18">;
-        uint Unk_19<name="Unk 19">;
-        uint Unk_20<name="Unk 20">;
-        uint Unk_21<name="Unk 21">;
-        uint Unk_22<name="Unk 22">;
-        float Unk_23<name="Unk 23">;
-        float Unk_24<name="Unk 24">;
-        float Unk_25<name="Unk 25">;
-        uint Unk_26<name="Unk 26">;
-        uint Unk_27<name="Unk 27">;
-        uint Unk_28<name="Unk 28">;
-        uint Unk_29<name="Unk 29">;
-        float Unk_30<name="Unk 30">;
-        uint Unk_31<name="Unk 31">;
-        uint Unk_32<name="Unk 32">;
-        ubyte Unk_33<name="Unk 33">;
-        uint Unk_34<name="Unk 34">;
-        float Unk_35<name="Unk 35">;
-        float Unk_36<name="Unk 36">;
-        uint Unk_37<name="Unk 37">;
-        uint Unk_38<name="Unk 38">;
-        uint Unk_39<name="Unk 39">;
-        uint Unk_40<name="Unk 40">;
-        uint Unk_41<name="Unk 41">;
-        uint Unk_42<name="Unk 42">;
-        uint Unk_43<name="Unk 43">;
-        uint Unk_44<name="Unk 44">;
-        ushort Unk_45<name="Unk 45">;
+        uint Index<name="Index (uint)">;
+        uint Unk_1<name="Unk 1 (uint)">;
+        uint Unk_2<name="Unk 2 (uint)">;
+        float Unk_3<name="Unk 3 (float)">;
+        float Unk_4<name="Unk 4 (float)">;
+        float Unk_5<name="Unk 5 (float)">;
+        uint Unk_6<name="Unk 6 (uint)">;
+        uint Unk_7<name="Unk 7 (uint)">;
+        uint Unk_8<name="Unk 8 (uint)">;
+        uint Unk_9<name="Unk 9 (uint)">;
+        uint Unk_10<name="Unk 10 (uint)">;
+        uint Unk_11<name="Unk 11 (uint)">;
+        uint Unk_12<name="Unk 12 (uint)">;
+        uint Unk_13<name="Unk 13 (uint)">;
+        uint Unk_14<name="Unk 14 (uint)">;
+        uint Unk_15<name="Unk 15 (uint)">;
+        uint Unk_16<name="Unk 16 (uint)">;
+        uint Unk_17<name="Unk 17 (uint)">;
+        uint Unk_18<name="Unk 18 (uint)">;
+        uint Unk_19<name="Unk 19 (uint)">;
+        uint Unk_20<name="Unk 20 (uint)">;
+        uint Unk_21<name="Unk 21 (uint)">;
+        uint Unk_22<name="Unk 22 (uint)">;
+        float Unk_23<name="Unk 23 (float)">;
+        float Unk_24<name="Unk 24 (float)">;
+        float Unk_25<name="Unk 25 (float)">;
+        uint Unk_26<name="Unk 26 (uint)">;
+        uint Unk_27<name="Unk 27 (uint)">;
+        uint Unk_28<name="Unk 28 (uint)">;
+        uint Unk_29<name="Unk 29 (uint)">;
+        float Unk_30<name="Unk 30 (float)">;
+        uint Unk_31<name="Unk 31 (uint)">;
+        uint Unk_32<name="Unk 32 (uint)">;
+        ubyte Unk_33<name="Unk 33 (ubyte)">;
+        uint Unk_34<name="Unk 34 (uint)">;
+        float Unk_35<name="Unk 35 (float)">;
+        float Unk_36<name="Unk 36 (float)">;
+        uint Unk_37<name="Unk 37 (uint)">;
+        uint Unk_38<name="Unk 38 (uint)">;
+        uint Unk_39<name="Unk 39 (uint)">;
+        uint Unk_40<name="Unk 40 (uint)">;
+        uint Unk_41<name="Unk 41 (uint)">;
+        uint Unk_42<name="Unk 42 (uint)">;
+        uint Unk_43<name="Unk 43 (uint)">;
+        uint Unk_44<name="Unk 44 (uint)">;
+        ushort Unk_45<name="Unk 45 (ushort)">;
     } Atk0;
 
     if (Move_Type == 0) { Atk0 Atk0_[Move_Count]<optimize=false, name="Atk0">; }
 
     // Atk1
     typedef struct {
-        uint Index<name="Index">;
-        uint Attack_Type<name="Attack Type">;
-        float Motion_Value<name="Motion Value">;
-        float Fixed_Damage<name="Fixed Damage">;
-        float Part_Modifier<name="Part Modifier">;
-        float Elemental_Modifier<name="Elemental Modifier">;
-        float Status_Modifier<name="Status Modifier">;
-        float Stun<name="Stun">;
-        float Exhaust<name="Exhaust">;
-        float Mount<name="Mount">;
-        float Unk_1<name="Unk 1">;
-        float Unk_2<name="Unk 2">;
-        ubyte Unk_3<name="Unk 3">;
-        float Soften_Value<name="Soften Value">;
-        float Unk_4<name="Unk 4">;
-        float Unk_5<name="Unk 5">;
-        float Unk_6<name="Unk 6">;
-        float Unk_7<name="Unk 7">;
-        float Unk_8<name="Unk 8">;
-        float Unk_9<name="Unk 9">;
-        float Unk_10<name="Unk 10">;
-        float Unk_11<name="Unk 11">;
-        uint Flinch_Value<name="Flinch Value">;
-        uint Unk_12<name="Unk 12">;
-        ubyte Mind_s_Eye<name="Mind's Eye">;
-        float Unk_13<name="Unk 13">;
-        float Unk_14<name="Unk 14">;
-        ubyte Unk_15<name="Unk 15">;
-        float Hit_Lag_Speed_Multiplier_a_<name="Hit Lag Speed Multiplier (a)">;
-        float Unk_16<name="Unk 16">;
-        float Hit_Lag_a_<name="Hit Lag (a)">;
-        float Unk_17<name="Unk 17">;
-        float Unk_18<name="Unk 18">;
-        float Hit_Lag_Speed_Multiplier_b_<name="Hit Lag Speed Multiplier (b)">;
-        float Unk_19<name="Unk 19">;
-        float Hit_Lag_b_<name="Hit Lag (b)">;
-        float Unk_20<name="Unk 20">;
-        float Unk_21<name="Unk 21">;
-        uint Unk_22<name="Unk 22">;
-        byte Unk_23<name="Unk 23">;
-        ubyte Unk_24<name="Unk 24">;
-        uint Unk_25<name="Unk 25">;
-        float Unk_26<name="Unk 26">;
-        float Unk_27<name="Unk 27">;
-        float Unk_28<name="Unk 28">;
-        ubyte Lingering_Hurtbox<name="Lingering Hurtbox">;
-        float Frame_Delay<name="Frame Delay">;
-        uint Unk_29<name="Unk 29">;
-        ushort Unk_30<name="Unk 30">;
-        float Energy_Gen<name="Energy Gen">;
-        float Conditional_Motion_value_change_replace<name="Conditional Motion value change/replace">;
-        float Conditional_element_modifier_change_replace<name="Conditional element modifier change/replace">;
-        uint Unk_31<name="Unk 31">;
-        uint Unk_32<name="Unk 32">;
-        uint Unk_33<name="Unk 33">;
-        uint Unk_34<name="Unk 34">;
-        uint Unk_35<name="Unk 35">;
-        uint Unk_36<name="Unk 36">;
-        uint Unk_37<name="Unk 37">;
-        ushort Unk_38<name="Unk 38">;
+        uint Index<name="Index (uint)">;
+        uint Attack_Type<name="Attack Type (uint)">;
+        float Motion_Value<name="Motion Value (float)">;
+        float Fixed_Damage<name="Fixed Damage (float)">;
+        float Part_Modifier<name="Part Modifier (float)">;
+        float Elemental_Modifier<name="Elemental Modifier (float)">;
+        float Status_Modifier<name="Status Modifier (float)">;
+        float Stun<name="Stun (float)">;
+        float Exhaust<name="Exhaust (float)">;
+        float Mount<name="Mount (float)">;
+        float Unk_1<name="Unk 1 (float)">;
+        float Unk_2<name="Unk 2 (float)">;
+        ubyte Unk_3<name="Unk 3 (ubyte)">;
+        float Soften_Value<name="Soften Value (float)">;
+        float Unk_4<name="Unk 4 (float)">;
+        float Unk_5<name="Unk 5 (float)">;
+        float Unk_6<name="Unk 6 (float)">;
+        float Unk_7<name="Unk 7 (float)">;
+        float Unk_8<name="Unk 8 (float)">;
+        float Unk_9<name="Unk 9 (float)">;
+        float Unk_10<name="Unk 10 (float)">;
+        float Unk_11<name="Unk 11 (float)">;
+        uint Flinch_Value<name="Flinch Value (uint)">;
+        uint Unk_12<name="Unk 12 (uint)">;
+        ubyte Mind_s_Eye<name="Mind's Eye (ubyte)">;
+        float Unk_13<name="Unk 13 (float)">;
+        float Unk_14<name="Unk 14 (float)">;
+        ubyte Unk_15<name="Unk 15 (ubyte)">;
+        float Hit_Lag_Speed_Multiplier_a_<name="Hit Lag Speed Multiplier (a) (float)">;
+        float Unk_16<name="Unk 16 (float)">;
+        float Hit_Lag_a_<name="Hit Lag (a) (float)">;
+        float Unk_17<name="Unk 17 (float)">;
+        float Unk_18<name="Unk 18 (float)">;
+        float Hit_Lag_Speed_Multiplier_b_<name="Hit Lag Speed Multiplier (b) (float)">;
+        float Unk_19<name="Unk 19 (float)">;
+        float Hit_Lag_b_<name="Hit Lag (b) (float)">;
+        float Unk_20<name="Unk 20 (float)">;
+        float Unk_21<name="Unk 21 (float)">;
+        uint Unk_22<name="Unk 22 (uint)">;
+        byte Unk_23<name="Unk 23 (byte)">;
+        ubyte Unk_24<name="Unk 24 (ubyte)">;
+        uint Unk_25<name="Unk 25 (uint)">;
+        float Unk_26<name="Unk 26 (float)">;
+        float Unk_27<name="Unk 27 (float)">;
+        float Unk_28<name="Unk 28 (float)">;
+        ubyte Lingering_Hurtbox<name="Lingering Hurtbox (ubyte)">;
+        float Frame_Delay<name="Frame Delay (float)">;
+        uint Unk_29<name="Unk 29 (uint)">;
+        ushort Unk_30<name="Unk 30 (ushort)">;
+        float Energy_Gen<name="Energy Gen (float)">;
+        float Conditional_Motion_value_change_replace<name="Conditional Motion value change/replace (float)">;
+        float Conditional_element_modifier_change_replace<name="Conditional element modifier change/replace (float)">;
+        uint Unk_31<name="Unk 31 (uint)">;
+        uint Unk_32<name="Unk 32 (uint)">;
+        uint Unk_33<name="Unk 33 (uint)">;
+        uint Unk_34<name="Unk 34 (uint)">;
+        uint Unk_35<name="Unk 35 (uint)">;
+        uint Unk_36<name="Unk 36 (uint)">;
+        uint Unk_37<name="Unk 37 (uint)">;
+        ushort Unk_38<name="Unk 38 (ushort)">;
     } Atk1;
 
     if (Move_Type == 1) { Atk1 Atk1_[Move_Count]<optimize=false, name="Atk1">; }
 
     // Atk2
     typedef struct {
-        uint Index<name="Index">;
-        uint Knock_back_Type<name="Knock-back Type">;
-        uint Knock_back_Lvl<name="Knock-back Lvl">;
-        uint Unk_1<name="Unk 1">;
-        float Motion_Value<name="Motion Value">;
-        uint Unk_2<name="Unk 2">;
-        uint Unk_3<name="Unk 3">;
-        float Guard_Stamina_Cost<name="Guard Stamina Cost">;
-        uint Guard_Req<name="Guard Req">;
-        uint Element_Id<name="Element Id">;
-        uint Unk_4<name="Unk 4">;
-        float Element_Dmg<name="Element Dmg">;
-        float Unk_5<name="Unk 5">;
-        float Deadly_Poison<name="Deadly Poison">;
-        float Paralysis<name="Paralysis">;
-        float Sleep<name="Sleep">;
-        float Blast<name="Blast">;
-        float Blast_Scourge<name="Blast Scourge">;
-        float Stun<name="Stun">;
-        float Bleed<name="Bleed">;
-        float Miasma<name="Miasma">;
-        ubyte Ele_Res_Down_Double<name="Ele Res Down Double">;
-        ubyte Ele_Res_Down<name="Ele Res Down">;
-        ubyte Def_Down_Double<name="Def Down Double">;
-        ubyte Def_Down<name="Def Down">;
-        uint Unk_6<name="Unk 6">;
-        uint Unk_7<name="Unk 7">;
-        float Unk_8<name="Unk 8">;
-        float Unk_9<name="Unk 9">;
-        float Unk_10<name="Unk 10">;
-        float Unk_11<name="Unk 11">;
-        float Unk_12<name="Unk 12">;
-        uint Unk_13<name="Unk 13">;
-        uint Unk_14<name="Unk 14">;
-        uint Unk_15<name="Unk 15">;
-        ubyte Unk_16<name="Unk 16">;
-        float Unk_17<name="Unk 17">;
-        uint Unk_18<name="Unk 18">;
-        uint Unk_19<name="Unk 19">;
-        uint Unk_20<name="Unk 20">;
-        uint Unk_21<name="Unk 21">;
-        uint Unk_22<name="Unk 22">;
-        uint Unk_23<name="Unk 23">;
-        uint Unk_24<name="Unk 24">;
-        uint Unk_25<name="Unk 25">;
-        uint Unk_26<name="Unk 26">;
-        ushort Unk_27<name="Unk 27">;
+        uint Index<name="Index (uint)">;
+        uint Knock_back_Type<name="Knock-back Type (uint)">;
+        uint Knock_back_Lvl<name="Knock-back Lvl (uint)">;
+        uint Unk_1<name="Unk 1 (uint)">;
+        float Motion_Value<name="Motion Value (float)">;
+        uint Unk_2<name="Unk 2 (uint)">;
+        uint Unk_3<name="Unk 3 (uint)">;
+        float Guard_Stamina_Cost<name="Guard Stamina Cost (float)">;
+        uint Guard_Req<name="Guard Req (uint)">;
+        uint Element_Id<name="Element Id (uint)">;
+        uint Unk_4<name="Unk 4 (uint)">;
+        float Element_Dmg<name="Element Dmg (float)">;
+        float Unk_5<name="Unk 5 (float)">;
+        float Deadly_Poison<name="Deadly Poison (float)">;
+        float Paralysis<name="Paralysis (float)">;
+        float Sleep<name="Sleep (float)">;
+        float Blast<name="Blast (float)">;
+        float Blast_Scourge<name="Blast Scourge (float)">;
+        float Stun<name="Stun (float)">;
+        float Bleed<name="Bleed (float)">;
+        float Miasma<name="Miasma (float)">;
+        ubyte Ele_Res_Down_Double<name="Ele Res Down Double (ubyte)">;
+        ubyte Ele_Res_Down<name="Ele Res Down (ubyte)">;
+        ubyte Def_Down_Double<name="Def Down Double (ubyte)">;
+        ubyte Def_Down<name="Def Down (ubyte)">;
+        uint Unk_6<name="Unk 6 (uint)">;
+        uint Unk_7<name="Unk 7 (uint)">;
+        float Unk_8<name="Unk 8 (float)">;
+        float Unk_9<name="Unk 9 (float)">;
+        float Unk_10<name="Unk 10 (float)">;
+        float Unk_11<name="Unk 11 (float)">;
+        float Unk_12<name="Unk 12 (float)">;
+        uint Unk_13<name="Unk 13 (uint)">;
+        uint Unk_14<name="Unk 14 (uint)">;
+        uint Unk_15<name="Unk 15 (uint)">;
+        ubyte Unk_16<name="Unk 16 (ubyte)">;
+        float Unk_17<name="Unk 17 (float)">;
+        uint Unk_18<name="Unk 18 (uint)">;
+        uint Unk_19<name="Unk 19 (uint)">;
+        uint Unk_20<name="Unk 20 (uint)">;
+        uint Unk_21<name="Unk 21 (uint)">;
+        uint Unk_22<name="Unk 22 (uint)">;
+        uint Unk_23<name="Unk 23 (uint)">;
+        uint Unk_24<name="Unk 24 (uint)">;
+        uint Unk_25<name="Unk 25 (uint)">;
+        uint Unk_26<name="Unk 26 (uint)">;
+        ushort Unk_27<name="Unk 27 (ushort)">;
     } Atk2;
 
     if (Move_Type == 2) { Atk2 Atk2_[Move_Count]<optimize=false, name="Atk2">; }
 
     // Atk3
     typedef struct {
-        uint Index<name="Index">;
-        uint Damage_Type_1<name="Damage Type 1">;
-        uint Damage_Type_2<name="Damage Type 2">;
-        float Damage_Motion_Value<name="Damage Motion Value">;
-        float Fixed_Damage<name="Fixed Damage">;
-        float Modifier_PartDamage<name="Modifier PartDamage">;
-        uint Element_Type<name="Element Type">;
-        float Fixed_Elemental_Damage<name="Fixed Elemental Damage">;
-        float Modifier_Element<name="Modifier Element">;
-        float Modifier_Status<name="Modifier Status">;
-        float Fixed_Status_Value_Poison<name="Fixed Status Value: Poison">;
-        float Fixed_Status_Value_Paralysis<name="Fixed Status Value: Paralysis">;
-        float Fixed_Status_Value_Sleep<name="Fixed Status Value: Sleep">;
-        float Fixed_Status_Value_Blast<name="Fixed Status Value: Blast">;
-        float Extra_Stun<name="Extra Stun">;
-        float Extra_Exhaust<name="Extra Exhaust">;
-        float Fixed_Status_Value_Traq<name="Fixed Status Value: Traq">;
-        float Unk_1<name="Unk 1">;
-        float Unk_2<name="Unk 2">;
-        float Soften_Value<name="Soften Value">;
-        float Unk_3<name="Unk 3">;
-        float Unk_4<name="Unk 4">;
-        float Unk_5<name="Unk 5">;
-        float Unk_6<name="Unk 6">;
-        float Unk_7<name="Unk 7">;
-        float Unk_8<name="Unk 8">;
-        uint Unk_9<name="Unk 9">;
-        uint Unk_10<name="Unk 10">;
-        uint Unk_11<name="Unk 11">;
-        uint Unk_12<name="Unk 12">;
-        uint Unk_13<name="Unk 13">;
-        uint Unk_14<name="Unk 14">;
-        byte Unk_15<name="Unk 15">;
-        ubyte Unk_16<name="Unk 16">;
-        ubyte Unk_17<name="Unk 17">;
-        uint Unk_18<name="Unk 18">;
-        uint Unk_19<name="Unk 19">;
-        float Unk_20<name="Unk 20">;
-        uint Unk_21<name="Unk 21">;
-        ubyte Piercing_Attack<name="Piercing Attack">;
-        float Delay_Between_Attack_Frames<name="Delay Between Attack Frames">;
-        ubyte Unk_22<name="Unk 22">;
-        uint Unk_23<name="Unk 23">;
-        uint Unk_24<name="Unk 24">;
-        uint Unk_25<name="Unk 25">;
-        uint Unk_26<name="Unk 26">;
-        uint Unk_27<name="Unk 27">;
-        uint Unk_28<name="Unk 28">;
-        uint Unk_29<name="Unk 29">;
-        uint Unk_30<name="Unk 30">;
-        uint Unk_31<name="Unk 31">;
-        uint Unk_32<name="Unk 32">;
-        uint Unk_33<name="Unk 33">;
-        ushort Unk_34<name="Unk 34">;
+        uint Index<name="Index (uint)">;
+        uint Damage_Type_1<name="Damage Type 1 (uint)">;
+        uint Damage_Type_2<name="Damage Type 2 (uint)">;
+        float Damage_Motion_Value<name="Damage Motion Value (float)">;
+        float Fixed_Damage<name="Fixed Damage (float)">;
+        float Modifier_PartDamage<name="Modifier PartDamage (float)">;
+        uint Element_Type<name="Element Type (uint)">;
+        float Fixed_Elemental_Damage<name="Fixed Elemental Damage (float)">;
+        float Modifier_Element<name="Modifier Element (float)">;
+        float Modifier_Status<name="Modifier Status (float)">;
+        float Fixed_Status_Value_Poison<name="Fixed Status Value: Poison (float)">;
+        float Fixed_Status_Value_Paralysis<name="Fixed Status Value: Paralysis (float)">;
+        float Fixed_Status_Value_Sleep<name="Fixed Status Value: Sleep (float)">;
+        float Fixed_Status_Value_Blast<name="Fixed Status Value: Blast (float)">;
+        float Extra_Stun<name="Extra Stun (float)">;
+        float Extra_Exhaust<name="Extra Exhaust (float)">;
+        float Fixed_Status_Value_Traq<name="Fixed Status Value: Traq (float)">;
+        float Unk_1<name="Unk 1 (float)">;
+        float Unk_2<name="Unk 2 (float)">;
+        float Soften_Value<name="Soften Value (float)">;
+        float Unk_3<name="Unk 3 (float)">;
+        float Unk_4<name="Unk 4 (float)">;
+        float Unk_5<name="Unk 5 (float)">;
+        float Unk_6<name="Unk 6 (float)">;
+        float Unk_7<name="Unk 7 (float)">;
+        float Unk_8<name="Unk 8 (float)">;
+        uint Unk_9<name="Unk 9 (uint)">;
+        uint Unk_10<name="Unk 10 (uint)">;
+        uint Unk_11<name="Unk 11 (uint)">;
+        uint Unk_12<name="Unk 12 (uint)">;
+        uint Unk_13<name="Unk 13 (uint)">;
+        uint Unk_14<name="Unk 14 (uint)">;
+        byte Unk_15<name="Unk 15 (byte)">;
+        ubyte Unk_16<name="Unk 16 (ubyte)">;
+        ubyte Unk_17<name="Unk 17 (ubyte)">;
+        uint Unk_18<name="Unk 18 (uint)">;
+        uint Unk_19<name="Unk 19 (uint)">;
+        float Unk_20<name="Unk 20 (float)">;
+        uint Unk_21<name="Unk 21 (uint)">;
+        ubyte Piercing_Attack<name="Piercing Attack (ubyte)">;
+        float Delay_Between_Attack_Frames<name="Delay Between Attack Frames (float)">;
+        ubyte Unk_22<name="Unk 22 (ubyte)">;
+        uint Unk_23<name="Unk 23 (uint)">;
+        uint Unk_24<name="Unk 24 (uint)">;
+        uint Unk_25<name="Unk 25 (uint)">;
+        uint Unk_26<name="Unk 26 (uint)">;
+        uint Unk_27<name="Unk 27 (uint)">;
+        uint Unk_28<name="Unk 28 (uint)">;
+        uint Unk_29<name="Unk 29 (uint)">;
+        uint Unk_30<name="Unk 30 (uint)">;
+        uint Unk_31<name="Unk 31 (uint)">;
+        uint Unk_32<name="Unk 32 (uint)">;
+        uint Unk_33<name="Unk 33 (uint)">;
+        ushort Unk_34<name="Unk 34 (ushort)">;
     } Atk3;
 
     if (Move_Type == 3) { Atk3 Atk3_[Move_Count]<optimize=false, name="Atk3">; }
@@ -347,14 +347,14 @@ Moves Moves_<name="Moves">;
 
 // OAP
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    uint Magic_2<name="Magic 2">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    uint Magic_2<name="Magic 2 (uint)">;
     char Name[4]<optimize=false, name="Name">;
-    uint Magic_3<name="Magic 3">;
+    uint Magic_3<name="Magic 3 (uint)">;
 
     // End Junk
     typedef struct {
-        ubyte Unk<name="Unk">;
+        ubyte Unk<name="Unk (ubyte)">;
     } End_Junk;
 
     End_Junk End_Junk_<name="End Junk">;

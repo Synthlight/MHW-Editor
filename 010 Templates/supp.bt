@@ -7,40 +7,40 @@
 
 // Supply Data
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    uint Magic_2<name="Magic 2">;
-    ushort Magic_3<name="Magic 3">;
-    uint Supply_Id<name="Supply Id">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    uint Magic_2<name="Magic 2 (uint)">;
+    ushort Magic_3<name="Magic 3 (ushort)">;
+    uint Supply_Id<name="Supply Id (uint)">;
 } Supply_Data;
 
 Supply_Data Supply_Data_<name="Supply Data">;
 
 // Item Box
 typedef struct {
-    ushort Item_Id<name="Item Id">;
-    ushort Item_Count<name="Item Count">;
+    ushort Item_Id<name="Item Id (ushort)">;
+    ushort Item_Count<name="Item Count (ushort)">;
 } Item_Box;
 
 Item_Box Item_Box_[24]<optimize=false, name="Item Box">;
 
 // Item Box Scaling
 typedef struct {
-    ubyte Items_to_Show<name="Items to Show">;
+    ubyte Items_to_Show<name="Items to Show (ubyte)">;
 } Item_Box_Scaling;
 
 Item_Box_Scaling Item_Box_Scaling_[3]<optimize=false, name="Item Box Scaling">;
 
 // Ammo Box
 typedef struct {
-    ushort Ammo_Id<name="Ammo Id">;
-    ushort Ammo_Count<name="Ammo Count">;
+    ushort Ammo_Id<name="Ammo Id (ushort)">;
+    ushort Ammo_Count<name="Ammo Count (ushort)">;
 } Ammo_Box;
 
 Ammo_Box Ammo_Box_[16]<optimize=false, name="Ammo Box">;
 
 // Ammo Box Scaling
 typedef struct {
-    ubyte Ammo_Items_to_Show<name="Ammo Items to Show">;
+    ubyte Ammo_Items_to_Show<name="Ammo Items to Show (ubyte)">;
 } Ammo_Box_Scaling;
 
 Ammo_Box_Scaling Ammo_Box_Scaling_[3]<optimize=false, name="Ammo Box Scaling">;

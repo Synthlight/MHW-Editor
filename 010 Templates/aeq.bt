@@ -7,76 +7,76 @@
 
 // Aeq
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Aeq;
 
 Aeq Aeq_<name="Aeq">;
 
 // Entries
 typedef struct {
-    uint Id<name="Id">;
-    uint Weapon_Type<name="Weapon Type">;
-    uint Weapon_Id<name="Weapon Id">;
+    uint Id<name="Id (uint)">;
+    uint Weapon_Type<name="Weapon Type (uint)">;
+    uint Weapon_Id<name="Weapon Id (uint)">;
 
     // Custom Mods
     typedef struct {
-        int Mod<name="Mod">;
+        int Mod<name="Mod (int)">;
     } Custom_Mods;
 
     Custom_Mods Custom_Mods_[5]<optimize=false, name="Custom Mods">;
 
     // Armors
     typedef struct {
-        int Armor_Id<name="Armor Id">;
+        int Armor_Id<name="Armor Id (int)">;
     } Armors;
 
     Armors Armors_[6]<optimize=false, name="Armors">;
 
     // Mantles
     typedef struct {
-        int Mantle_Id<name="Mantle Id">;
+        int Mantle_Id<name="Mantle Id (int)">;
     } Mantles;
 
     Mantles Mantles_[2]<optimize=false, name="Mantles">;
 
     // Armor Level
     typedef struct {
-        uint Armor_Lvl<name="Armor Lvl">;
+        uint Armor_Lvl<name="Armor Lvl (uint)">;
     } Armor_Level;
 
     Armor_Level Armor_Level_[5]<optimize=false, name="Armor Level">;
-    ushort Unk_1<name="Unk 1">;
+    ushort Unk_1<name="Unk 1 (ushort)">;
 
     // Decorations
     typedef struct {
-        uint Deco_1<name="Deco 1">;
-        uint Deco_2<name="Deco 2">;
-        uint Deco_3<name="Deco 3">;
+        uint Deco_1<name="Deco 1 (uint)">;
+        uint Deco_2<name="Deco 2 (uint)">;
+        uint Deco_3<name="Deco 3 (uint)">;
     } Decorations;
 
     Decorations Decorations_[9]<optimize=false, name="Decorations">;
-    uint Unk_2<name="Unk 2">;
-    uint Unk_3<name="Unk 3">;
-    uint Unk_4<name="Unk 4">;
-    uint Unk_5<name="Unk 5">;
-    uint Unk_6<name="Unk 6">;
-    uint Unk_7<name="Unk 7">;
-    uint Unk_8<name="Unk 8">;
+    uint Unk_2<name="Unk 2 (uint)">;
+    uint Unk_3<name="Unk 3 (uint)">;
+    uint Unk_4<name="Unk 4 (uint)">;
+    uint Unk_5<name="Unk 5 (uint)">;
+    uint Unk_6<name="Unk 6 (uint)">;
+    uint Unk_7<name="Unk 7 (uint)">;
+    uint Unk_8<name="Unk 8 (uint)">;
 
     // Items
     typedef struct {
-        uint Item_Id<name="Item Id">;
-        uint Item_Cnt<name="Item Cnt">;
+        uint Item_Id<name="Item Id (uint)">;
+        uint Item_Cnt<name="Item Cnt (uint)">;
     } Items;
 
     Items Items_[24]<optimize=false, name="Items">;
 
     // Ammo
     typedef struct {
-        uint Ammo_Id<name="Ammo Id">;
-        uint Ammo_Cnt<name="Ammo Cnt">;
+        uint Ammo_Id<name="Ammo Id (uint)">;
+        uint Ammo_Cnt<name="Ammo Cnt (uint)">;
     } Ammo;
 
     Ammo Ammo_[16]<optimize=false, name="Ammo">;

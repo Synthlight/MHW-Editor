@@ -7,21 +7,21 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Fertilizer_Id<name="Fertilizer Id">;
-    uint Prize<name="Prize">;
-    uint Base_duration<name="Base duration">;
-    uint Unknown_int32_1<name="Unknown (int32) 1">;
-    uint Unknown_int32_2<name="Unknown (int32) 2">;
-    uint Unknown_int32_3<name="Unknown (int32) 3">;
+    uint Fertilizer_Id<name="Fertilizer Id (uint)">;
+    uint Prize<name="Prize (uint)">;
+    uint Base_duration<name="Base duration (uint)">;
+    uint Unknown_int32_1<name="Unknown (int32) 1 (uint)">;
+    uint Unknown_int32_2<name="Unknown (int32) 2 (uint)">;
+    uint Unknown_int32_3<name="Unknown (int32) 3 (uint)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

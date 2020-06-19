@@ -7,34 +7,34 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    ushort Id<name="Id">;
-    ushort Great_Sword<name="Great Sword">;
-    ushort Sword_Shield<name="Sword & Shield">;
-    ushort Dual_Blades<name="Dual Blades">;
-    ushort Long_Sword<name="Long Sword">;
-    ushort Hammer<name="Hammer">;
-    ushort Hunting_Horn<name="Hunting Horn">;
-    ushort Lance<name="Lance">;
-    ushort Gunlance<name="Gunlance">;
-    ushort Switch_Axe<name="Switch Axe">;
-    ushort Charge_Blade<name="Charge Blade">;
-    ushort Insect_Glaive<name="Insect Glaive">;
-    ushort Bow<name="Bow">;
-    ushort HBG<name="HBG">;
-    ushort LBG<name="LBG">;
-    ubyte Unk_1<name="Unk 1">;
-    ubyte Unk_2<name="Unk 2">;
-    ubyte Unk_3<name="Unk 3">;
-    ubyte Unk_4<name="Unk 4">;
+    ushort Id<name="Id (ushort)">;
+    ushort Great_Sword<name="Great Sword (ushort)">;
+    ushort Sword_Shield<name="Sword & Shield (ushort)">;
+    ushort Dual_Blades<name="Dual Blades (ushort)">;
+    ushort Long_Sword<name="Long Sword (ushort)">;
+    ushort Hammer<name="Hammer (ushort)">;
+    ushort Hunting_Horn<name="Hunting Horn (ushort)">;
+    ushort Lance<name="Lance (ushort)">;
+    ushort Gunlance<name="Gunlance (ushort)">;
+    ushort Switch_Axe<name="Switch Axe (ushort)">;
+    ushort Charge_Blade<name="Charge Blade (ushort)">;
+    ushort Insect_Glaive<name="Insect Glaive (ushort)">;
+    ushort Bow<name="Bow (ushort)">;
+    ushort HBG<name="HBG (ushort)">;
+    ushort LBG<name="LBG (ushort)">;
+    ubyte Unk_1<name="Unk 1 (ubyte)">;
+    ubyte Unk_2<name="Unk 2 (ubyte)">;
+    ubyte Unk_3<name="Unk 3 (ubyte)">;
+    ubyte Unk_4<name="Unk 4 (ubyte)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

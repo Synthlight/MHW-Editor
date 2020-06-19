@@ -7,27 +7,27 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Id<name="Id">;
-    ubyte Sub_Type<name="Sub Type">;
-    uint Type<name="Type">;
-    ubyte Rarity<name="Rarity">;
-    byte Carry_Limit<name="Carry Limit">;
-    byte Unknown_sint8_<name="Unknown (sint8)">;
-    ushort Sort_Order<name="Sort Order">;
-    uint Flags_Raw<name="Flags Raw">;
-    uint Icon_Id<name="Icon Id">;
-    ushort Icon_Color_Id<name="Icon Color Id">;
-    uint Sell_Price<name="Sell Price">;
-    uint Buy_Price<name="Buy Price">;
+    uint Id<name="Id (uint)">;
+    ubyte Sub_Type<name="Sub Type (ubyte)">;
+    uint Type<name="Type (uint)">;
+    ubyte Rarity<name="Rarity (ubyte)">;
+    byte Carry_Limit<name="Carry Limit (byte)">;
+    byte Unknown_sint8_<name="Unknown (sint8) (byte)">;
+    ushort Sort_Order<name="Sort Order (ushort)">;
+    uint Flags_Raw<name="Flags Raw (uint)">;
+    uint Icon_Id<name="Icon Id (uint)">;
+    ushort Icon_Color_Id<name="Icon Color Id (ushort)">;
+    uint Sell_Price<name="Sell Price (uint)">;
+    uint Buy_Price<name="Buy Price (uint)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

@@ -7,25 +7,25 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    ushort Id<name="Id">;
-    ubyte Level<name="Level">;
-    uint Unlock_Skill_1<name="Unlock Skill 1">;
-    uint Unlock_Skill_2<name="Unlock Skill 2">;
-    uint Unlock_Skill_3<name="Unlock Skill 3">;
-    uint Unlock_Skill_4<name="Unlock Skill 4">;
-    ushort Param_5<name="Param 5">;
-    ushort Param_6<name="Param 6">;
-    ushort Param_7<name="Param 7">;
-    ushort Param_8<name="Param 8">;
+    ushort Id<name="Id (ushort)">;
+    ubyte Level<name="Level (ubyte)">;
+    uint Unlock_Skill_1<name="Unlock Skill 1 (uint)">;
+    uint Unlock_Skill_2<name="Unlock Skill 2 (uint)">;
+    uint Unlock_Skill_3<name="Unlock Skill 3 (uint)">;
+    uint Unlock_Skill_4<name="Unlock Skill 4 (uint)">;
+    ushort Param_5<name="Param 5 (ushort)">;
+    ushort Param_6<name="Param 6 (ushort)">;
+    ushort Param_7<name="Param 7 (ushort)">;
+    ushort Param_8<name="Param 8 (ushort)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

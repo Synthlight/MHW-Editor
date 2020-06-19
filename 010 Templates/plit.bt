@@ -7,25 +7,25 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Cultivation_category<name="Cultivation category">;
-    uint Unk_1<name="Unk 1">;
-    ubyte Unlocked_from_start<name="Unlocked from start">;
-    uint Item<name="Item">;
-    uint Required_time<name="Required time">;
-    uint Catalyst_time_bonus<name="Catalyst time bonus">;
-    uint Unk_2<name="Unk 2">;
-    uint Amount_Base_<name="Amount (Base)">;
-    uint Amount_Plus1_<name="Amount (+1)">;
-    uint Amount_Plus2_<name="Amount (+2)">;
+    uint Cultivation_category<name="Cultivation category (uint)">;
+    uint Unk_1<name="Unk 1 (uint)">;
+    ubyte Unlocked_from_start<name="Unlocked from start (ubyte)">;
+    uint Item<name="Item (uint)">;
+    uint Required_time<name="Required time (uint)">;
+    uint Catalyst_time_bonus<name="Catalyst time bonus (uint)">;
+    uint Unk_2<name="Unk 2 (uint)">;
+    uint Amount_Base_<name="Amount (Base) (uint)">;
+    uint Amount_Plus1_<name="Amount (+1) (uint)">;
+    uint Amount_Plus2_<name="Amount (+2) (uint)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

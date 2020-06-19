@@ -7,21 +7,21 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    ubyte Close_Range<name="Close Range">;
-    ubyte Power<name="Power">;
-    ubyte Paralysis<name="Paralysis">;
-    ubyte Poison<name="Poison">;
-    ubyte Sleep<name="Sleep">;
-    ubyte Blast<name="Blast">;
+    ubyte Close_Range<name="Close Range (ubyte)">;
+    ubyte Power<name="Power (ubyte)">;
+    ubyte Paralysis<name="Paralysis (ubyte)">;
+    ubyte Poison<name="Poison (ubyte)">;
+    ubyte Sleep<name="Sleep (ubyte)">;
+    ubyte Blast<name="Blast (ubyte)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

@@ -7,55 +7,55 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    ushort Item_1_Id<name="Item 1 Id">;
-    ushort Item_2_Id<name="Item 2 Id">;
-    ushort Item_3_Id<name="Item 3 Id">;
-    ushort Item_4_Id<name="Item 4 Id">;
-    ushort Item_5_Id<name="Item 5 Id">;
-    ushort Item_6_Id<name="Item 6 Id">;
-    ushort Item_7_Id<name="Item 7 Id">;
-    ushort Item_8_Id<name="Item 8 Id">;
-    ushort Item_9_Id<name="Item 9 Id">;
-    ushort Item_10_Id<name="Item 10 Id">;
-    ubyte Item_1_Count<name="Item 1 Count">;
-    ubyte Item_2_Count<name="Item 2 Count">;
-    ubyte Item_3_Count<name="Item 3 Count">;
-    ubyte Item_4_Count<name="Item 4 Count">;
-    ubyte Item_5_Count<name="Item 5 Count">;
-    ubyte Item_6_Count<name="Item 6 Count">;
-    ubyte Item_7_Count<name="Item 7 Count">;
-    ubyte Item_8_Count<name="Item 8 Count">;
-    ubyte Item_9_Count<name="Item 9 Count">;
-    ubyte Item_10_Count<name="Item 10 Count">;
-    ubyte Item_1_<name="Item 1 %">;
-    ubyte Item_2_<name="Item 2 %">;
-    ubyte Item_3_<name="Item 3 %">;
-    ubyte Item_4_<name="Item 4 %">;
-    ubyte Item_5_<name="Item 5 %">;
-    ubyte Item_6_<name="Item 6 %">;
-    ubyte Item_7_<name="Item 7 %">;
-    ubyte Item_8_<name="Item 8 %">;
-    ubyte Item_9_<name="Item 9 %">;
-    ubyte Item_10_<name="Item 10 %">;
-    ubyte Item_1_Carve_Animation<name="Item 1 Carve Animation">;
-    ubyte Item_2_Carve_Animation<name="Item 2 Carve Animation">;
-    ubyte Item_3_Carve_Animation<name="Item 3 Carve Animation">;
-    ubyte Item_4_Carve_Animation<name="Item 4 Carve Animation">;
-    ubyte Item_5_Carve_Animation<name="Item 5 Carve Animation">;
-    ubyte Item_6_Carve_Animation<name="Item 6 Carve Animation">;
-    ubyte Item_7_Carve_Animation<name="Item 7 Carve Animation">;
-    ubyte Item_8_Carve_Animation<name="Item 8 Carve Animation">;
-    ubyte Item_9_Carve_Animation<name="Item 9 Carve Animation">;
-    ubyte Item_10_Carve_Animation<name="Item 10 Carve Animation">;
+    ushort Item_1_Id<name="Item 1 Id (ushort)">;
+    ushort Item_2_Id<name="Item 2 Id (ushort)">;
+    ushort Item_3_Id<name="Item 3 Id (ushort)">;
+    ushort Item_4_Id<name="Item 4 Id (ushort)">;
+    ushort Item_5_Id<name="Item 5 Id (ushort)">;
+    ushort Item_6_Id<name="Item 6 Id (ushort)">;
+    ushort Item_7_Id<name="Item 7 Id (ushort)">;
+    ushort Item_8_Id<name="Item 8 Id (ushort)">;
+    ushort Item_9_Id<name="Item 9 Id (ushort)">;
+    ushort Item_10_Id<name="Item 10 Id (ushort)">;
+    ubyte Item_1_Count<name="Item 1 Count (ubyte)">;
+    ubyte Item_2_Count<name="Item 2 Count (ubyte)">;
+    ubyte Item_3_Count<name="Item 3 Count (ubyte)">;
+    ubyte Item_4_Count<name="Item 4 Count (ubyte)">;
+    ubyte Item_5_Count<name="Item 5 Count (ubyte)">;
+    ubyte Item_6_Count<name="Item 6 Count (ubyte)">;
+    ubyte Item_7_Count<name="Item 7 Count (ubyte)">;
+    ubyte Item_8_Count<name="Item 8 Count (ubyte)">;
+    ubyte Item_9_Count<name="Item 9 Count (ubyte)">;
+    ubyte Item_10_Count<name="Item 10 Count (ubyte)">;
+    ubyte Item_1_<name="Item 1 % (ubyte)">;
+    ubyte Item_2_<name="Item 2 % (ubyte)">;
+    ubyte Item_3_<name="Item 3 % (ubyte)">;
+    ubyte Item_4_<name="Item 4 % (ubyte)">;
+    ubyte Item_5_<name="Item 5 % (ubyte)">;
+    ubyte Item_6_<name="Item 6 % (ubyte)">;
+    ubyte Item_7_<name="Item 7 % (ubyte)">;
+    ubyte Item_8_<name="Item 8 % (ubyte)">;
+    ubyte Item_9_<name="Item 9 % (ubyte)">;
+    ubyte Item_10_<name="Item 10 % (ubyte)">;
+    ubyte Item_1_Carve_Animation<name="Item 1 Carve Animation (ubyte)">;
+    ubyte Item_2_Carve_Animation<name="Item 2 Carve Animation (ubyte)">;
+    ubyte Item_3_Carve_Animation<name="Item 3 Carve Animation (ubyte)">;
+    ubyte Item_4_Carve_Animation<name="Item 4 Carve Animation (ubyte)">;
+    ubyte Item_5_Carve_Animation<name="Item 5 Carve Animation (ubyte)">;
+    ubyte Item_6_Carve_Animation<name="Item 6 Carve Animation (ubyte)">;
+    ubyte Item_7_Carve_Animation<name="Item 7 Carve Animation (ubyte)">;
+    ubyte Item_8_Carve_Animation<name="Item 8 Carve Animation (ubyte)">;
+    ubyte Item_9_Carve_Animation<name="Item 9 Carve Animation (ubyte)">;
+    ubyte Item_10_Carve_Animation<name="Item 10 Carve Animation (ubyte)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

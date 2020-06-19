@@ -7,29 +7,29 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Id<name="Id">;
-    ubyte Unk1<name="Unk1">;
-    ubyte Unk2<name="Unk2">;
-    ubyte Unk3<name="Unk3">;
-    ubyte Unk4<name="Unk4">;
-    ubyte Unk5<name="Unk5">;
-    ushort Unk6<name="Unk6">;
-    ushort Unk7<name="Unk7">;
-    ubyte Unk8<name="Unk8">;
-    ubyte Unk9<name="Unk9">;
-    uint Cost<name="Cost">;
-    int Story_Unlock<name="Story Unlock">;
-    ushort Unk10<name="Unk10">;
-    ushort Unk11<name="Unk11">;
+    uint Id<name="Id (uint)">;
+    ubyte Unk1<name="Unk1 (ubyte)">;
+    ubyte Unk2<name="Unk2 (ubyte)">;
+    ubyte Unk3<name="Unk3 (ubyte)">;
+    ubyte Unk4<name="Unk4 (ubyte)">;
+    ubyte Unk5<name="Unk5 (ubyte)">;
+    ushort Unk6<name="Unk6 (ushort)">;
+    ushort Unk7<name="Unk7 (ushort)">;
+    ubyte Unk8<name="Unk8 (ubyte)">;
+    ubyte Unk9<name="Unk9 (ubyte)">;
+    uint Cost<name="Cost (uint)">;
+    int Story_Unlock<name="Story Unlock (int)">;
+    ushort Unk10<name="Unk10 (ushort)">;
+    ushort Unk11<name="Unk11 (ushort)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

@@ -7,33 +7,33 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Endemic_Id<name="Endemic Id">;
-    uint Endemic_Sub_Species_Id<name="Endemic Sub Species Id">;
-    float Unk3<name="Unk3">;
-    float Unk4<name="Unk4">;
-    float Unk5<name="Unk5">;
-    float Unk6<name="Unk6">;
-    float Animal_Base_Size<name="Animal Base Size">;
-    float Model_Size_Multi<name="Model Size Multi">;
-    float Minimum_Size_Limit<name="Minimum Size Limit">;
-    float Maximum_Size_Limit<name="Maximum Size Limit">;
-    uint Unk11<name="Unk11">;
-    float Unk12<name="Unk12">;
-    float Unk13<name="Unk13">;
-    float Unk14<name="Unk14">;
-    float Unk15<name="Unk15">;
-    uint Unk16<name="Unk16">;
-    float Small_Gold_Crown_Limit<name="Small Gold Crown Limit">;
-    float Big_Gold_Crown_Limit<name="Big Gold Crown Limit">;
+    uint Endemic_Id<name="Endemic Id (uint)">;
+    uint Endemic_Sub_Species_Id<name="Endemic Sub Species Id (uint)">;
+    float Unk3<name="Unk3 (float)">;
+    float Unk4<name="Unk4 (float)">;
+    float Unk5<name="Unk5 (float)">;
+    float Unk6<name="Unk6 (float)">;
+    float Animal_Base_Size<name="Animal Base Size (float)">;
+    float Model_Size_Multi<name="Model Size Multi (float)">;
+    float Minimum_Size_Limit<name="Minimum Size Limit (float)">;
+    float Maximum_Size_Limit<name="Maximum Size Limit (float)">;
+    uint Unk11<name="Unk11 (uint)">;
+    float Unk12<name="Unk12 (float)">;
+    float Unk13<name="Unk13 (float)">;
+    float Unk14<name="Unk14 (float)">;
+    float Unk15<name="Unk15 (float)">;
+    uint Unk16<name="Unk16 (uint)">;
+    float Small_Gold_Crown_Limit<name="Small Gold Crown Limit (float)">;
+    float Big_Gold_Crown_Limit<name="Big Gold Crown Limit (float)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

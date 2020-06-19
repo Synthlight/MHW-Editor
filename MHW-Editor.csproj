@@ -133,6 +133,7 @@
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\AnimalSize.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\EnemySort.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\MonsterClawGrab.cs" />
+    <Compile Include="Generated\MHW_Editor\Structs\Monsters\MonsterCommonParam.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\MonsterDamageAttributes.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\MonsterDifficulty.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\MonsterEnrage.cs" />
@@ -218,6 +219,7 @@
     <Compile Include="Controls\MhwDataGrid.xaml.cs">
       <DependentUpon>MhwDataGrid.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Structs\Monsters\MonsterCommonParam.cs" />
     <Compile Include="Util\EncryptionHelper.cs" />
     <Compile Include="Windows\FindFileInChunk.xaml.cs">
       <DependentUpon>FindFileInChunk.xaml</DependentUpon>

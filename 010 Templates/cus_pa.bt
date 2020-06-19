@@ -7,25 +7,25 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Id<name="Id">;
-    uint Weapon_Type<name="Weapon Type">;
-    uint Part_1_Id<name="Part 1 Id">;
-    ubyte Unk_uint8_<name="Unk (uint8)">;
-    uint Craft_Cost<name="Craft Cost">;
-    ushort Attack<name="Attack">;
-    ushort Defense<name="Defense">;
-    ubyte Affinity<name="Affinity">;
-    ushort Element<name="Element">;
-    ubyte Sharpness<name="Sharpness">;
+    uint Id<name="Id (uint)">;
+    uint Weapon_Type<name="Weapon Type (uint)">;
+    uint Part_1_Id<name="Part 1 Id (uint)">;
+    ubyte Unk_uint8_<name="Unk (uint8) (ubyte)">;
+    uint Craft_Cost<name="Craft Cost (uint)">;
+    ushort Attack<name="Attack (ushort)">;
+    ushort Defense<name="Defense (ushort)">;
+    ubyte Affinity<name="Affinity (ubyte)">;
+    ushort Element<name="Element (ushort)">;
+    ubyte Sharpness<name="Sharpness (ubyte)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

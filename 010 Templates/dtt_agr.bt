@@ -7,32 +7,32 @@
 
 // Monster Rage
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    uint Magic_2<name="Magic 2">;
-    uint Monster_Id<name="Monster Id">;
-    uint Magic_3<name="Magic 3">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    uint Magic_2<name="Magic 2 (uint)">;
+    uint Monster_Id<name="Monster Id (uint)">;
+    uint Magic_3<name="Magic 3 (uint)">;
 } Monster_Rage;
 
 Monster_Rage Monster_Rage_<name="Monster Rage">;
 
 // Rage Stats
 typedef struct {
-    int Build_to_Trigger<name="Build to Trigger">;
-    float Duration<name="Duration">;
-    float Speed_Modifier<name="Speed Modifier">;
-    float Damage_Modifier<name="Damage Modifier">;
-    float Player_Damage_Modifier<name="Player Damage Modifier">;
-    float Build_Multiplier_by_HP_100_<name="Build Multiplier by HP (100%)">;
-    float Build_Multiplier_by_HP_88_99_<name="Build Multiplier by HP (88%-99%)">;
-    float Build_Multiplier_by_HP_77_88_<name="Build Multiplier by HP (77%-88%)">;
-    float Build_Multiplier_by_HP_66_77_<name="Build Multiplier by HP (66%-77%)">;
-    float Build_Multiplier_by_HP_55_66_<name="Build Multiplier by HP (55%-66%)">;
-    float Build_Multiplier_by_HP_44_55_<name="Build Multiplier by HP (44%-55%)">;
-    float Build_Multiplier_by_HP_33_44_<name="Build Multiplier by HP (33%-44%)">;
-    float Build_Multiplier_by_HP_22_33_<name="Build Multiplier by HP (22%-33%)">;
-    float Build_Multiplier_by_HP_11_22_<name="Build Multiplier by HP (11%-22%)">;
-    float Build_Multiplier_by_HP_0_11_<name="Build Multiplier by HP (0%-11%)">;
-    float Out_of_Combat_Decay_Multiplier<name="Out of Combat Decay Multiplier">;
+    int Build_to_Trigger<name="Build to Trigger (int)">;
+    float Duration<name="Duration (float)">;
+    float Speed_Modifier<name="Speed Modifier (float)">;
+    float Damage_Modifier<name="Damage Modifier (float)">;
+    float Player_Damage_Modifier<name="Player Damage Modifier (float)">;
+    float Build_Multiplier_by_HP_100_<name="Build Multiplier by HP (100%) (float)">;
+    float Build_Multiplier_by_HP_88_99_<name="Build Multiplier by HP (88%-99%) (float)">;
+    float Build_Multiplier_by_HP_77_88_<name="Build Multiplier by HP (77%-88%) (float)">;
+    float Build_Multiplier_by_HP_66_77_<name="Build Multiplier by HP (66%-77%) (float)">;
+    float Build_Multiplier_by_HP_55_66_<name="Build Multiplier by HP (55%-66%) (float)">;
+    float Build_Multiplier_by_HP_44_55_<name="Build Multiplier by HP (44%-55%) (float)">;
+    float Build_Multiplier_by_HP_33_44_<name="Build Multiplier by HP (33%-44%) (float)">;
+    float Build_Multiplier_by_HP_22_33_<name="Build Multiplier by HP (22%-33%) (float)">;
+    float Build_Multiplier_by_HP_11_22_<name="Build Multiplier by HP (11%-22%) (float)">;
+    float Build_Multiplier_by_HP_0_11_<name="Build Multiplier by HP (0%-11%) (float)">;
+    float Out_of_Combat_Decay_Multiplier<name="Out of Combat Decay Multiplier (float)">;
 } Rage_Stats;
 
 Rage_Stats Rage_Stats_[2]<optimize=false, name="Rage Stats">;

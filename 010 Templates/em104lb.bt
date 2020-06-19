@@ -7,47 +7,47 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    ushort Skill_Id<name="Skill Id">;
-    uint Group_Id<name="Group Id">;
-    uint Rarity<name="Rarity">;
-    uint Unk<name="Unk">;
-    ubyte Has_Upgrade<name="Has Upgrade">;
-    ushort Previous_Upgrade_Id_When_Max_Lvl<name="Previous Upgrade Id When Max Lvl">;
-    ushort Next_Upgrade_Id<name="Next Upgrade Id">;
-    ubyte Can_Stack<name="Can Stack">;
-    ubyte Unk8<name="Unk8">;
-    ushort Lvl_1_Id<name="Lvl 1 Id">;
-    ushort Lvl_2_Id<name="Lvl 2 Id">;
-    ushort Lvl_3_Id<name="Lvl 3 Id">;
-    ushort Lvl_4_Id<name="Lvl 4 Id">;
-    ushort Lvl_5_Id<name="Lvl 5 Id">;
-    ubyte Works_on_Great_Sword<name="Works on Great Sword">;
-    ubyte Works_on_Sword_Shield<name="Works on Sword & Shield">;
-    ubyte Works_on_Dual_Blades<name="Works on Dual Blades">;
-    ubyte Works_on_Long_Sword<name="Works on Long Sword">;
-    ubyte Works_on_Hammer<name="Works on Hammer">;
-    ubyte Works_on_Hunting_Horn<name="Works on Hunting Horn">;
-    ubyte Works_on_Lance<name="Works on Lance">;
-    ubyte Works_on_Gunlance<name="Works on Gunlance">;
-    ubyte Works_on_Switch_Axe<name="Works on Switch Axe">;
-    ubyte Works_on_Charge_Blade<name="Works on Charge Blade">;
-    ubyte Works_on_Insect_Glaive<name="Works on Insect Glaive">;
-    ubyte Works_on_Bow<name="Works on Bow">;
-    ubyte Works_on_HBG<name="Works on HBG">;
-    ubyte Works_on_LBG<name="Works on LBG">;
-    ubyte Unk_1<name="Unk 1">;
-    ubyte Unk_2<name="Unk 2">;
-    ubyte Unk_3<name="Unk 3">;
-    ubyte Unk_4<name="Unk 4">;
+    ushort Skill_Id<name="Skill Id (ushort)">;
+    uint Group_Id<name="Group Id (uint)">;
+    uint Rarity<name="Rarity (uint)">;
+    uint Unk<name="Unk (uint)">;
+    ubyte Has_Upgrade<name="Has Upgrade (ubyte)">;
+    ushort Previous_Upgrade_Id_When_Max_Lvl<name="Previous Upgrade Id When Max Lvl (ushort)">;
+    ushort Next_Upgrade_Id<name="Next Upgrade Id (ushort)">;
+    ubyte Can_Stack<name="Can Stack (ubyte)">;
+    ubyte Unk8<name="Unk8 (ubyte)">;
+    ushort Lvl_1_Id<name="Lvl 1 Id (ushort)">;
+    ushort Lvl_2_Id<name="Lvl 2 Id (ushort)">;
+    ushort Lvl_3_Id<name="Lvl 3 Id (ushort)">;
+    ushort Lvl_4_Id<name="Lvl 4 Id (ushort)">;
+    ushort Lvl_5_Id<name="Lvl 5 Id (ushort)">;
+    ubyte Works_on_Great_Sword<name="Works on Great Sword (ubyte)">;
+    ubyte Works_on_Sword_Shield<name="Works on Sword & Shield (ubyte)">;
+    ubyte Works_on_Dual_Blades<name="Works on Dual Blades (ubyte)">;
+    ubyte Works_on_Long_Sword<name="Works on Long Sword (ubyte)">;
+    ubyte Works_on_Hammer<name="Works on Hammer (ubyte)">;
+    ubyte Works_on_Hunting_Horn<name="Works on Hunting Horn (ubyte)">;
+    ubyte Works_on_Lance<name="Works on Lance (ubyte)">;
+    ubyte Works_on_Gunlance<name="Works on Gunlance (ubyte)">;
+    ubyte Works_on_Switch_Axe<name="Works on Switch Axe (ubyte)">;
+    ubyte Works_on_Charge_Blade<name="Works on Charge Blade (ubyte)">;
+    ubyte Works_on_Insect_Glaive<name="Works on Insect Glaive (ubyte)">;
+    ubyte Works_on_Bow<name="Works on Bow (ubyte)">;
+    ubyte Works_on_HBG<name="Works on HBG (ubyte)">;
+    ubyte Works_on_LBG<name="Works on LBG (ubyte)">;
+    ubyte Unk_1<name="Unk 1 (ubyte)">;
+    ubyte Unk_2<name="Unk 2 (ubyte)">;
+    ubyte Unk_3<name="Unk 3 (ubyte)">;
+    ubyte Unk_4<name="Unk 4 (ubyte)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

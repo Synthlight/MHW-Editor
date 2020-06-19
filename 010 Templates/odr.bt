@@ -7,35 +7,35 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Id<name="Id">;
-    uint Unk1<name="Unk1">;
-    ubyte Unk2<name="Unk2">;
-    uint Unk3<name="Unk3">;
-    uint Unk4<name="Unk4">;
-    int Unk5<name="Unk5">;
-    uint Rank<name="Rank">;
-    uint Type<name="Type">;
-    uint Unk8<name="Unk8">;
-    int Monster_Type<name="Monster Type">;
-    uint Unk10<name="Unk10">;
-    uint Map<name="Map">;
-    uint Target_Count<name="Target Count">;
-    uint Item_Id_1<name="Item Id 1">;
-    uint Item_Id_1_Cnt<name="Item Id 1 Cnt">;
-    uint Item_Id_2<name="Item Id 2">;
-    uint Item_Id_2_Cnt<name="Item Id 2 Cnt">;
-    uint Item_Id_3<name="Item Id 3">;
-    uint Item_Id_3_Cnt<name="Item Id 3 Cnt">;
-    uint Research_Points<name="Research Points">;
+    uint Id<name="Id (uint)">;
+    uint Unk1<name="Unk1 (uint)">;
+    ubyte Unk2<name="Unk2 (ubyte)">;
+    uint Unk3<name="Unk3 (uint)">;
+    uint Unk4<name="Unk4 (uint)">;
+    int Unk5<name="Unk5 (int)">;
+    uint Rank<name="Rank (uint)">;
+    uint Type<name="Type (uint)">;
+    uint Unk8<name="Unk8 (uint)">;
+    int Monster_Type<name="Monster Type (int)">;
+    uint Unk10<name="Unk10 (uint)">;
+    uint Map<name="Map (uint)">;
+    uint Target_Count<name="Target Count (uint)">;
+    uint Item_Id_1<name="Item Id 1 (uint)">;
+    uint Item_Id_1_Cnt<name="Item Id 1 Cnt (uint)">;
+    uint Item_Id_2<name="Item Id 2 (uint)">;
+    uint Item_Id_2_Cnt<name="Item Id 2 Cnt (uint)">;
+    uint Item_Id_3<name="Item Id 3 (uint)">;
+    uint Item_Id_3_Cnt<name="Item Id 3 Cnt (uint)">;
+    uint Research_Points<name="Research Points (uint)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

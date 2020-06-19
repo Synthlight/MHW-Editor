@@ -7,244 +7,244 @@
 
 // Monster Damage Attributes (1)
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    uint Magic_2<name="Magic 2">;
-    uint Monster_Id<name="Monster Id">;
-    uint Magic_3<name="Magic 3">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    uint Magic_2<name="Magic 2 (uint)">;
+    uint Monster_Id<name="Monster Id (uint)">;
+    uint Magic_3<name="Magic 3 (uint)">;
 } Monster_Damage_Attributes_1_;
 
 Monster_Damage_Attributes_1_ Monster_Damage_Attributes_1__<name="Monster Damage Attributes (1)">;
 
 // Status Buildup: Poison
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Poison;
 
 Status_Buildup_Poison Status_Buildup_Poison_<name="Status Buildup: Poison">;
 
-uint Poison_Damage<name="Poison Damage">;
-float Poison_Interval<name="Poison Interval">;
+uint Poison_Damage<name="Poison Damage (uint)">;
+float Poison_Interval<name="Poison Interval (float)">;
 
 // Status Buildup: Sleep/Paralysis/Stun/Exhaustion
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Sleep_Paralysis_Stun_Exhaustion;
 
 Status_Buildup_Sleep_Paralysis_Stun_Exhaustion Status_Buildup_Sleep_Paralysis_Stun_Exhaustion_[4]<optimize=false, name="Status Buildup: Sleep/Paralysis/Stun/Exhaustion">;
 
-uint Unk_1<name="Unk 1">;
-float Exhaustion_Damage<name="Exhaustion Damage">;
+uint Unk_1<name="Unk 1 (uint)">;
+float Exhaustion_Damage<name="Exhaustion Damage (float)">;
 
 // Status Buildup: Mount/Blastblight
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Mount_Blastblight;
 
 Status_Buildup_Mount_Blastblight Status_Buildup_Mount_Blastblight_[2]<optimize=false, name="Status Buildup: Mount/Blastblight">;
 
-uint Blastblight_Damage<name="Blastblight Damage">;
+uint Blastblight_Damage<name="Blastblight Damage (uint)">;
 
 // Status Buildup: Capture
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Capture;
 
 Status_Buildup_Capture Status_Buildup_Capture_<name="Status Buildup: Capture">;
 
-uint Capture_LR_HR<name="Capture LR/HR">;
-uint Capture_MR<name="Capture MR">;
+uint Capture_LR_HR<name="Capture LR/HR (uint)">;
+uint Capture_MR<name="Capture MR (uint)">;
 
 // Status Buildup: Dizziness LR/HR
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Dizziness_LR_HR;
 
 Status_Buildup_Dizziness_LR_HR Status_Buildup_Dizziness_LR_HR_<name="Status Buildup: Dizziness LR/HR">;
 
-uint Unk_1<name="Unk 1">;
+uint Unk_1<name="Unk 1 (uint)">;
 
 // Status Buildup: Dizziness MR
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Dizziness_MR;
 
 Status_Buildup_Dizziness_MR Status_Buildup_Dizziness_MR_<name="Status Buildup: Dizziness MR">;
 
-float Dizziness_MR_Buildup<name="Dizziness MR Buildup">;
-float Dizziness_MR_Max_Cap<name="Dizziness MR Max Cap">;
-float Unk_1<name="Unk 1">;
-float Unk_2<name="Unk 2">;
-float Dizziness_MR_Recharge_Timer<name="Dizziness MR Recharge Timer">;
-float Unk_3<name="Unk 3">;
-float Dizziness_MR_Duration_Re_occuring_Use<name="Dizziness MR Duration Re-occuring Use">;
-float Dizziness_MR_Duration_Initial_Use<name="Dizziness MR Duration Initial Use">;
+float Dizziness_MR_Buildup<name="Dizziness MR Buildup (float)">;
+float Dizziness_MR_Max_Cap<name="Dizziness MR Max Cap (float)">;
+float Unk_1<name="Unk 1 (float)">;
+float Unk_2<name="Unk 2 (float)">;
+float Dizziness_MR_Recharge_Timer<name="Dizziness MR Recharge Timer (float)">;
+float Unk_3<name="Unk 3 (float)">;
+float Dizziness_MR_Duration_Re_occuring_Use<name="Dizziness MR Duration Re-occuring Use (float)">;
+float Dizziness_MR_Duration_Initial_Use<name="Dizziness MR Duration Initial Use (float)">;
 
 // Status Buildup: Mount Knock Down
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Mount_Knock_Down;
 
 Status_Buildup_Mount_Knock_Down Status_Buildup_Mount_Knock_Down_<name="Status Buildup: Mount Knock Down">;
 
-uint Mount_Knock_Down_Damage<name="Mount Knock Down Damage">;
+uint Mount_Knock_Down_Damage<name="Mount Knock Down Damage (uint)">;
 
 // Status Buildup: Dung
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Dung;
 
 Status_Buildup_Dung Status_Buildup_Dung_<name="Status Buildup: Dung">;
 
-uint Unk_1<name="Unk 1">;
-float Unk_2<name="Unk 2">;
+uint Unk_1<name="Unk 1 (uint)">;
+float Unk_2<name="Unk 2 (float)">;
 
 // Status Buildup: Shock Trap/Pitfall Trap/Ivy Trap/Unk
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk;
 
 Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk_[4]<optimize=false, name="Status Buildup: Shock Trap/Pitfall Trap/Ivy Trap/Unk">;
 
-uint Unk_1<name="Unk 1">;
-float Unk_2<name="Unk 2">;
+uint Unk_1<name="Unk 1 (uint)">;
+float Unk_2<name="Unk 2 (float)">;
 
 // Status Buildup: Dragonseal
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Dragonseal;
 
 Status_Buildup_Dragonseal Status_Buildup_Dragonseal_<name="Status Buildup: Dragonseal">;
 
-uint Dragonseal_Aura<name="Dragonseal Aura">;
+uint Dragonseal_Aura<name="Dragonseal Aura (uint)">;
 
 // Status Buildup: Unk
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Unk;
 
 Status_Buildup_Unk Status_Buildup_Unk_[2]<optimize=false, name="Status Buildup: Unk">;
 
 // Unk Array
 typedef struct {
-    int Unk_1<name="Unk 1">;
-    int Unk_2<name="Unk 2">;
-    int Unk_3<name="Unk 3">;
+    int Unk_1<name="Unk 1 (int)">;
+    int Unk_2<name="Unk 2 (int)">;
+    int Unk_3<name="Unk 3 (int)">;
 } Unk_Array;
 
 Unk_Array Unk_Array_[6]<optimize=false, name="Unk Array">;
 
 // Status Buildup: Concussion
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Concussion;
 
 Status_Buildup_Concussion Status_Buildup_Concussion_<name="Status Buildup: Concussion">;
 
 // Rage Build Up
 typedef struct {
-    float Claw_Flinch_Shot<name="Claw Flinch Shot">;
-    float Claw_Flinch_Shot_No_Wall_<name="Claw Flinch Shot (No Wall)">;
-    float Claw_Attack<name="Claw Attack">;
-    float Claw_Flinch_Shot_Wall_<name="Claw Flinch Shot (Wall)">;
-    float Claw_Flinch_Shot_Ledge_<name="Claw Flinch Shot (Ledge)">;
+    float Claw_Flinch_Shot<name="Claw Flinch Shot (float)">;
+    float Claw_Flinch_Shot_No_Wall_<name="Claw Flinch Shot (No Wall) (float)">;
+    float Claw_Attack<name="Claw Attack (float)">;
+    float Claw_Flinch_Shot_Wall_<name="Claw Flinch Shot (Wall) (float)">;
+    float Claw_Flinch_Shot_Ledge_<name="Claw Flinch Shot (Ledge) (float)">;
 } Rage_Build_Up;
 
 Rage_Build_Up Rage_Build_Up_[2]<optimize=false, name="Rage Build Up">;
 
 // Status Buildup: Clagger
 typedef struct {
-    uint Base<name="Base">;
-    uint Buildup<name="Buildup">;
-    uint Max_Cap<name="Max Cap">;
-    float Drain_Time<name="Drain Time">;
-    uint Drain_Value<name="Drain Value">;
-    float Duration<name="Duration">;
-    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use">;
-    float Duration_Minimum<name="Duration Minimum">;
+    uint Base<name="Base (uint)">;
+    uint Buildup<name="Buildup (uint)">;
+    uint Max_Cap<name="Max Cap (uint)">;
+    float Drain_Time<name="Drain Time (float)">;
+    uint Drain_Value<name="Drain Value (uint)">;
+    float Duration<name="Duration (float)">;
+    float Duration_Decrease_Per_Use<name="Duration Decrease Per Use (float)">;
+    float Duration_Minimum<name="Duration Minimum (float)">;
 } Status_Buildup_Clagger;
 
 Status_Buildup_Clagger Status_Buildup_Clagger_<name="Status Buildup: Clagger">;

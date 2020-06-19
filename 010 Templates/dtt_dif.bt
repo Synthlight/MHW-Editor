@@ -7,51 +7,51 @@
 
 // Monster Difficulty
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    uint Magic_2<name="Magic 2">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    uint Magic_2<name="Magic 2 (uint)">;
 } Monster_Difficulty;
 
 Monster_Difficulty Monster_Difficulty_<name="Monster Difficulty">;
 
 // Solo Stats
 typedef struct {
-    float Monster_HP_Multiplier<name="Monster HP Multiplier">;
-    float Monster_Damage_Multiplier<name="Monster Damage Multiplier">;
-    float Player_Damage_Multiplier<name="Player Damage Multiplier">;
-    float Monster_Part_HP<name="Monster Part HP">;
-    float Monster_Status_Base<name="Monster Status Base">;
-    float Monster_Status_Buildup<name="Monster Status Buildup">;
-    float Monster_Stun<name="Monster Stun">;
-    float Monster_Exhaust<name="Monster Exhaust">;
-    float Monster_Mount<name="Monster Mount">;
+    float Monster_HP_Multiplier<name="Monster HP Multiplier (float)">;
+    float Monster_Damage_Multiplier<name="Monster Damage Multiplier (float)">;
+    float Player_Damage_Multiplier<name="Player Damage Multiplier (float)">;
+    float Monster_Part_HP<name="Monster Part HP (float)">;
+    float Monster_Status_Base<name="Monster Status Base (float)">;
+    float Monster_Status_Buildup<name="Monster Status Buildup (float)">;
+    float Monster_Stun<name="Monster Stun (float)">;
+    float Monster_Exhaust<name="Monster Exhaust (float)">;
+    float Monster_Mount<name="Monster Mount (float)">;
 } Solo_Stats;
 
 Solo_Stats Solo_Stats_[1000]<optimize=false, name="Solo Stats">;
 
 // Multi Stats
 typedef struct {
-    float Monster_HP_Multiplier<name="Monster HP Multiplier">;
-    float Monster_Damage_Multiplier<name="Monster Damage Multiplier">;
-    float Player_Damage_Multiplier<name="Player Damage Multiplier">;
-    float Monster_Part_HP<name="Monster Part HP">;
-    float Monster_Status_Base<name="Monster Status Base">;
-    float Monster_Status_Buildup<name="Monster Status Buildup">;
-    float Monster_Stun<name="Monster Stun">;
-    float Monster_Exhaust<name="Monster Exhaust">;
-    float Monster_Mount<name="Monster Mount">;
+    float Monster_HP_Multiplier<name="Monster HP Multiplier (float)">;
+    float Monster_Damage_Multiplier<name="Monster Damage Multiplier (float)">;
+    float Player_Damage_Multiplier<name="Player Damage Multiplier (float)">;
+    float Monster_Part_HP<name="Monster Part HP (float)">;
+    float Monster_Status_Base<name="Monster Status Base (float)">;
+    float Monster_Status_Buildup<name="Monster Status Buildup (float)">;
+    float Monster_Stun<name="Monster Stun (float)">;
+    float Monster_Exhaust<name="Monster Exhaust (float)">;
+    float Monster_Mount<name="Monster Mount (float)">;
 } Multi_Stats;
 
 Multi_Stats Multi_Stats_[1000]<optimize=false, name="Multi Stats">;
 
 // Unknown
 typedef struct {
-    uint Unk_1<name="Unk 1">;
-    uint Unk_2<name="Unk 2">;
-    uint Unk_3<name="Unk 3">;
-    uint Unk_4<name="Unk 4">;
-    uint Unk_5<name="Unk 5">;
-    uint Unk_6<name="Unk 6">;
-    uint Unk_7<name="Unk 7">;
+    uint Unk_1<name="Unk 1 (uint)">;
+    uint Unk_2<name="Unk 2 (uint)">;
+    uint Unk_3<name="Unk 3 (uint)">;
+    uint Unk_4<name="Unk 4 (uint)">;
+    uint Unk_5<name="Unk 5 (uint)">;
+    uint Unk_6<name="Unk 6 (uint)">;
+    uint Unk_7<name="Unk 7 (uint)">;
 } Unknown;
 
 Unknown Unknown_<name="Unknown">;

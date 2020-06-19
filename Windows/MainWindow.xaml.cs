@@ -668,6 +668,7 @@ namespace MHW_Editor.Windows {
             if (fileName.EndsWith(".dtt_epg")) return typeof(MonsterParts);
             if (fileName.EndsWith(".dtt_rsz")) return typeof(MonsterRandomSize);
             if (fileName.EndsWith(".dtt_sta")) return typeof(MonsterStamina);
+            if (fileName.EndsWith(".ecp")) return typeof(MonsterCommonParam);
             if (fileName.EndsWith(".em104exp")) return typeof(AwakenedExp);
             if (fileName.EndsWith(".em104glt")) return typeof(SafiItemGradeLottery);
             if (fileName.EndsWith(".em104iot")) return typeof(SafiItemLottery);

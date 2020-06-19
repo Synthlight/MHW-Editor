@@ -7,32 +7,32 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    uint Magic_2<name="Magic 2">;
-    ushort Magic_3<name="Magic 3">;
-    uint Magic_4<name="Magic 4">;
-    uint Magic_5<name="Magic 5">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    uint Magic_2<name="Magic 2 (uint)">;
+    ushort Magic_3<name="Magic 3 (ushort)">;
+    uint Magic_4<name="Magic 4 (uint)">;
+    uint Magic_5<name="Magic 5 (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Items
 typedef struct {
-    uint Item_Id<name="Item Id">;
+    uint Item_Id<name="Item Id (uint)">;
 } Items;
 
 Items Items_[16]<optimize=false, name="Items">;
 
 // Counts
 typedef struct {
-    ubyte Item_Count<name="Item Count">;
+    ubyte Item_Count<name="Item Count (ubyte)">;
 } Counts;
 
 Counts Counts_[16]<optimize=false, name="Counts">;
 
 // Weights
 typedef struct {
-    ubyte Item_Weight<name="Item Weight">;
+    ubyte Item_Weight<name="Item Weight (ubyte)">;
 } Weights;
 
 Weights Weights_[16]<optimize=false, name="Weights">;

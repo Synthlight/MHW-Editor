@@ -7,26 +7,26 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    short Quest_Progress_1<name="Quest Progress 1">;
-    short Quest_Progress_2<name="Quest Progress 2">;
-    short Quest_Progress_3<name="Quest Progress 3">;
-    short Quest_Progress_4<name="Quest Progress 4">;
-    short Quest_Progress_5<name="Quest Progress 5">;
-    short Quest_Progress_6<name="Quest Progress 6">;
-    short Quest_Progress_7<name="Quest Progress 7">;
-    short Quest_Progress_8<name="Quest Progress 8">;
-    short Quest_Progress_9<name="Quest Progress 9">;
-    short Quest_Progress_10<name="Quest Progress 10">;
-    short Quest_Progress_11<name="Quest Progress 11">;
+    short Quest_Progress_1<name="Quest Progress 1 (short)">;
+    short Quest_Progress_2<name="Quest Progress 2 (short)">;
+    short Quest_Progress_3<name="Quest Progress 3 (short)">;
+    short Quest_Progress_4<name="Quest Progress 4 (short)">;
+    short Quest_Progress_5<name="Quest Progress 5 (short)">;
+    short Quest_Progress_6<name="Quest Progress 6 (short)">;
+    short Quest_Progress_7<name="Quest Progress 7 (short)">;
+    short Quest_Progress_8<name="Quest Progress 8 (short)">;
+    short Quest_Progress_9<name="Quest Progress 9 (short)">;
+    short Quest_Progress_10<name="Quest Progress 10 (short)">;
+    short Quest_Progress_11<name="Quest Progress 11 (short)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

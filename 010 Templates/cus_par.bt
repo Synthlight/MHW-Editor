@@ -7,40 +7,40 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    ubyte Weapon_Type<name="Weapon Type">;
-    uint Id<name="Id">;
-    ushort Needed_Item_Id_to_Unlock<name="Needed Item Id to Unlock">;
-    int Unk_1<name="Unk 1">;
-    int Unk_2<name="Unk 2">;
-    ushort Mat_1_Id<name="Mat 1 Id">;
-    ubyte Mat_1_Count<name="Mat 1 Count">;
-    ushort Mat_2_Id<name="Mat 2 Id">;
-    ubyte Mat_2_Count<name="Mat 2 Count">;
-    ushort Mat_3_Id<name="Mat 3 Id">;
-    ubyte Mat_3_Count<name="Mat 3 Count">;
-    ushort Mat_4_Id<name="Mat 4 Id">;
-    ubyte Mat_4_Count<name="Mat 4 Count">;
-    ushort Unk_3<name="Unk 3">;
-    ushort Unk_4<name="Unk 4">;
-    ushort Unk_5<name="Unk 5">;
-    ushort Unk_6<name="Unk 6">;
-    ushort Unk_7<name="Unk 7">;
-    ushort Unk_8<name="Unk 8">;
-    ushort Unk_9<name="Unk 9">;
-    ushort Unk_10<name="Unk 10">;
-    ushort Unk_11<name="Unk 11">;
-    ushort Unk_12<name="Unk 12">;
-    ushort Unk_13<name="Unk 13">;
-    ushort Unk_14<name="Unk 14">;
+    ubyte Weapon_Type<name="Weapon Type (ubyte)">;
+    uint Id<name="Id (uint)">;
+    ushort Needed_Item_Id_to_Unlock<name="Needed Item Id to Unlock (ushort)">;
+    int Unk_1<name="Unk 1 (int)">;
+    int Unk_2<name="Unk 2 (int)">;
+    ushort Mat_1_Id<name="Mat 1 Id (ushort)">;
+    ubyte Mat_1_Count<name="Mat 1 Count (ubyte)">;
+    ushort Mat_2_Id<name="Mat 2 Id (ushort)">;
+    ubyte Mat_2_Count<name="Mat 2 Count (ubyte)">;
+    ushort Mat_3_Id<name="Mat 3 Id (ushort)">;
+    ubyte Mat_3_Count<name="Mat 3 Count (ubyte)">;
+    ushort Mat_4_Id<name="Mat 4 Id (ushort)">;
+    ubyte Mat_4_Count<name="Mat 4 Count (ubyte)">;
+    ushort Unk_3<name="Unk 3 (ushort)">;
+    ushort Unk_4<name="Unk 4 (ushort)">;
+    ushort Unk_5<name="Unk 5 (ushort)">;
+    ushort Unk_6<name="Unk 6 (ushort)">;
+    ushort Unk_7<name="Unk 7 (ushort)">;
+    ushort Unk_8<name="Unk 8 (ushort)">;
+    ushort Unk_9<name="Unk 9 (ushort)">;
+    ushort Unk_10<name="Unk 10 (ushort)">;
+    ushort Unk_11<name="Unk 11 (ushort)">;
+    ushort Unk_12<name="Unk 12 (ushort)">;
+    ushort Unk_13<name="Unk 13 (ushort)">;
+    ushort Unk_14<name="Unk 14 (ushort)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

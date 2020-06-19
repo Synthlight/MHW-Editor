@@ -7,18 +7,18 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Equip_Type<name="Equip Type">;
-    uint Equip_Id<name="Equip Id">;
-    uint Story_Unlock<name="Story Unlock">;
+    uint Equip_Type<name="Equip Type (uint)">;
+    uint Equip_Id<name="Equip Id (uint)">;
+    uint Story_Unlock<name="Story Unlock (uint)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

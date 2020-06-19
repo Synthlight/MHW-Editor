@@ -83,6 +83,7 @@
     <Compile Include="Models\MultiStruct.cs" />
     <Compile Include="Models\SingleStructBase.cs" />
     <Compile Include="Monsters\AnimalSize.cs" />
+    <Compile Include="Monsters\MonsterCommonParam.cs" />
     <Compile Include="Monsters\MonsterDamageAttributes.cs" />
     <Compile Include="Monsters\MonsterParts.cs" />
     <Compile Include="Monsters\EnemySort.cs" />

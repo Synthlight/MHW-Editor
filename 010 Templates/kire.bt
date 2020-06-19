@@ -7,23 +7,23 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    uint Id<name="Id">;
-    ushort Red<name="Red">;
-    ushort Orange<name="Orange">;
-    ushort Yellow<name="Yellow">;
-    ushort Green<name="Green">;
-    ushort Blue<name="Blue">;
-    ushort White<name="White">;
-    ushort Purple<name="Purple">;
+    uint Id<name="Id (uint)">;
+    ushort Red<name="Red (ushort)">;
+    ushort Orange<name="Orange (ushort)">;
+    ushort Yellow<name="Yellow (ushort)">;
+    ushort Green<name="Green (ushort)">;
+    ushort Blue<name="Blue (ushort)">;
+    ushort White<name="White (ushort)">;
+    ushort Purple<name="Purple (ushort)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

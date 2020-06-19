@@ -7,30 +7,30 @@
 
 // Header
 typedef struct {
-    uint Magic_1<name="Magic 1">;
-    ushort Magic_2<name="Magic 2">;
-    uint Entry_Count<name="Entry Count">;
-    uint Magic_3<name="Magic 3">;
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    uint Entry_Count<name="Entry Count (uint)">;
+    uint Magic_3<name="Magic 3 (uint)">;
 } Header;
 
 Header Header_<name="Header">;
 
 // Entries
 typedef struct {
-    float Duration<name="Duration">;
-    float Extension<name="Extension">;
-    float M1_Duration<name="M1 Duration">;
-    float M1_Extension<name="M1 Extension">;
-    float M2_Duration<name="M2 Duration">;
-    float M2_Extension<name="M2 Extension">;
-    float Effect<name="Effect">;
-    float Recast_Effect<name="Recast Effect">;
-    uint Unk_1<name="Unk 1">;
-    uint Unk_2<name="Unk 2">;
-    uint Unk_3<name="Unk 3">;
-    uint Unk_4<name="Unk 4">;
-    uint Unk_5<name="Unk 5">;
-    uint Unk_6<name="Unk 6">;
+    float Duration<name="Duration (float)">;
+    float Extension<name="Extension (float)">;
+    float M1_Duration<name="M1 Duration (float)">;
+    float M1_Extension<name="M1 Extension (float)">;
+    float M2_Duration<name="M2 Duration (float)">;
+    float M2_Extension<name="M2 Extension (float)">;
+    float Effect<name="Effect (float)">;
+    float Recast_Effect<name="Recast Effect (float)">;
+    uint Unk_1<name="Unk 1 (uint)">;
+    uint Unk_2<name="Unk 2 (uint)">;
+    uint Unk_3<name="Unk 3 (uint)">;
+    uint Unk_4<name="Unk 4 (uint)">;
+    uint Unk_5<name="Unk 5 (uint)">;
+    uint Unk_6<name="Unk 6 (uint)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;
