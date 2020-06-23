@@ -82,138 +82,138 @@ namespace MHW_Editor.Structs.PlData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Mantle Params (1)";
 
-            protected float Unk_Unk1_raw;
-            public const string Unk_Unk1_displayName = "Unk: Unk1";
-            public const int Unk_Unk1_sortIndex = 50;
-            [SortOrder(Unk_Unk1_sortIndex)]
-            [DisplayName(Unk_Unk1_displayName)]
-            public virtual float Unk_Unk1 {
-                get => Unk_Unk1_raw;
+            protected float Unk_1_raw;
+            public const string Unk_1_displayName = "Unk 1";
+            public const int Unk_1_sortIndex = 50;
+            [SortOrder(Unk_1_sortIndex)]
+            [DisplayName(Unk_1_displayName)]
+            public virtual float Unk_1 {
+                get => Unk_1_raw;
                 set {
-                    if (Unk_Unk1_raw == value) return;
-                    Unk_Unk1_raw = value;
-                    ChangedItems.Add(nameof(Unk_Unk1));
-                    OnPropertyChanged(nameof(Unk_Unk1));
+                    if (Unk_1_raw == value) return;
+                    Unk_1_raw = value;
+                    ChangedItems.Add(nameof(Unk_1));
+                    OnPropertyChanged(nameof(Unk_1));
                 }
             }
 
-            protected float Unk_Unk2_raw;
-            public const string Unk_Unk2_displayName = "Unk: Unk2";
-            public const int Unk_Unk2_sortIndex = 100;
-            [SortOrder(Unk_Unk2_sortIndex)]
-            [DisplayName(Unk_Unk2_displayName)]
-            public virtual float Unk_Unk2 {
-                get => Unk_Unk2_raw;
+            protected float Unk_2_raw;
+            public const string Unk_2_displayName = "Unk 2";
+            public const int Unk_2_sortIndex = 100;
+            [SortOrder(Unk_2_sortIndex)]
+            [DisplayName(Unk_2_displayName)]
+            public virtual float Unk_2 {
+                get => Unk_2_raw;
                 set {
-                    if (Unk_Unk2_raw == value) return;
-                    Unk_Unk2_raw = value;
-                    ChangedItems.Add(nameof(Unk_Unk2));
-                    OnPropertyChanged(nameof(Unk_Unk2));
+                    if (Unk_2_raw == value) return;
+                    Unk_2_raw = value;
+                    ChangedItems.Add(nameof(Unk_2));
+                    OnPropertyChanged(nameof(Unk_2));
                 }
             }
 
-            protected float Unk_Unk3_raw;
-            public const string Unk_Unk3_displayName = "Unk: Unk3";
-            public const int Unk_Unk3_sortIndex = 150;
-            [SortOrder(Unk_Unk3_sortIndex)]
-            [DisplayName(Unk_Unk3_displayName)]
-            public virtual float Unk_Unk3 {
-                get => Unk_Unk3_raw;
+            protected float Unk_3_raw;
+            public const string Unk_3_displayName = "Unk 3";
+            public const int Unk_3_sortIndex = 150;
+            [SortOrder(Unk_3_sortIndex)]
+            [DisplayName(Unk_3_displayName)]
+            public virtual float Unk_3 {
+                get => Unk_3_raw;
                 set {
-                    if (Unk_Unk3_raw == value) return;
-                    Unk_Unk3_raw = value;
-                    ChangedItems.Add(nameof(Unk_Unk3));
-                    OnPropertyChanged(nameof(Unk_Unk3));
+                    if (Unk_3_raw == value) return;
+                    Unk_3_raw = value;
+                    ChangedItems.Add(nameof(Unk_3));
+                    OnPropertyChanged(nameof(Unk_3));
                 }
             }
 
-            protected float Unk_Unk4_raw;
-            public const string Unk_Unk4_displayName = "Unk: Unk4";
-            public const int Unk_Unk4_sortIndex = 200;
-            [SortOrder(Unk_Unk4_sortIndex)]
-            [DisplayName(Unk_Unk4_displayName)]
-            public virtual float Unk_Unk4 {
-                get => Unk_Unk4_raw;
+            protected float Unk_4_raw;
+            public const string Unk_4_displayName = "Unk 4";
+            public const int Unk_4_sortIndex = 200;
+            [SortOrder(Unk_4_sortIndex)]
+            [DisplayName(Unk_4_displayName)]
+            public virtual float Unk_4 {
+                get => Unk_4_raw;
                 set {
-                    if (Unk_Unk4_raw == value) return;
-                    Unk_Unk4_raw = value;
-                    ChangedItems.Add(nameof(Unk_Unk4));
-                    OnPropertyChanged(nameof(Unk_Unk4));
+                    if (Unk_4_raw == value) return;
+                    Unk_4_raw = value;
+                    ChangedItems.Add(nameof(Unk_4));
+                    OnPropertyChanged(nameof(Unk_4));
                 }
             }
 
-            protected float Unk_Unk5_raw;
-            public const string Unk_Unk5_displayName = "Unk: Unk5";
-            public const int Unk_Unk5_sortIndex = 250;
-            [SortOrder(Unk_Unk5_sortIndex)]
-            [DisplayName(Unk_Unk5_displayName)]
-            public virtual float Unk_Unk5 {
-                get => Unk_Unk5_raw;
+            protected float Unk_5_raw;
+            public const string Unk_5_displayName = "Unk 5";
+            public const int Unk_5_sortIndex = 250;
+            [SortOrder(Unk_5_sortIndex)]
+            [DisplayName(Unk_5_displayName)]
+            public virtual float Unk_5 {
+                get => Unk_5_raw;
                 set {
-                    if (Unk_Unk5_raw == value) return;
-                    Unk_Unk5_raw = value;
-                    ChangedItems.Add(nameof(Unk_Unk5));
-                    OnPropertyChanged(nameof(Unk_Unk5));
+                    if (Unk_5_raw == value) return;
+                    Unk_5_raw = value;
+                    ChangedItems.Add(nameof(Unk_5));
+                    OnPropertyChanged(nameof(Unk_5));
                 }
             }
 
-            protected uint Unk_Unk6_raw;
-            public const string Unk_Unk6_displayName = "Unk: Unk6";
-            public const int Unk_Unk6_sortIndex = 300;
-            [SortOrder(Unk_Unk6_sortIndex)]
-            [DisplayName(Unk_Unk6_displayName)]
-            public virtual uint Unk_Unk6 {
-                get => Unk_Unk6_raw;
+            protected uint Unk_6_raw;
+            public const string Unk_6_displayName = "Unk 6";
+            public const int Unk_6_sortIndex = 300;
+            [SortOrder(Unk_6_sortIndex)]
+            [DisplayName(Unk_6_displayName)]
+            public virtual uint Unk_6 {
+                get => Unk_6_raw;
                 set {
-                    if (Unk_Unk6_raw == value) return;
-                    Unk_Unk6_raw = value;
-                    ChangedItems.Add(nameof(Unk_Unk6));
-                    OnPropertyChanged(nameof(Unk_Unk6));
+                    if (Unk_6_raw == value) return;
+                    Unk_6_raw = value;
+                    ChangedItems.Add(nameof(Unk_6));
+                    OnPropertyChanged(nameof(Unk_6));
                 }
             }
 
-            protected float Unk_Unk7_raw;
-            public const string Unk_Unk7_displayName = "Unk: Unk7";
-            public const int Unk_Unk7_sortIndex = 350;
-            [SortOrder(Unk_Unk7_sortIndex)]
-            [DisplayName(Unk_Unk7_displayName)]
-            public virtual float Unk_Unk7 {
-                get => Unk_Unk7_raw;
+            protected float Unk_7_raw;
+            public const string Unk_7_displayName = "Unk 7";
+            public const int Unk_7_sortIndex = 350;
+            [SortOrder(Unk_7_sortIndex)]
+            [DisplayName(Unk_7_displayName)]
+            public virtual float Unk_7 {
+                get => Unk_7_raw;
                 set {
-                    if (Unk_Unk7_raw == value) return;
-                    Unk_Unk7_raw = value;
-                    ChangedItems.Add(nameof(Unk_Unk7));
-                    OnPropertyChanged(nameof(Unk_Unk7));
+                    if (Unk_7_raw == value) return;
+                    Unk_7_raw = value;
+                    ChangedItems.Add(nameof(Unk_7));
+                    OnPropertyChanged(nameof(Unk_7));
                 }
             }
 
-            protected float Unk_Unk8_raw;
-            public const string Unk_Unk8_displayName = "Unk: Unk8";
-            public const int Unk_Unk8_sortIndex = 400;
-            [SortOrder(Unk_Unk8_sortIndex)]
-            [DisplayName(Unk_Unk8_displayName)]
-            public virtual float Unk_Unk8 {
-                get => Unk_Unk8_raw;
+            protected float Unk_8_raw;
+            public const string Unk_8_displayName = "Unk 8";
+            public const int Unk_8_sortIndex = 400;
+            [SortOrder(Unk_8_sortIndex)]
+            [DisplayName(Unk_8_displayName)]
+            public virtual float Unk_8 {
+                get => Unk_8_raw;
                 set {
-                    if (Unk_Unk8_raw == value) return;
-                    Unk_Unk8_raw = value;
-                    ChangedItems.Add(nameof(Unk_Unk8));
-                    OnPropertyChanged(nameof(Unk_Unk8));
+                    if (Unk_8_raw == value) return;
+                    Unk_8_raw = value;
+                    ChangedItems.Add(nameof(Unk_8));
+                    OnPropertyChanged(nameof(Unk_8));
                 }
             }
 
-            protected float Unk_Unk9_raw;
-            public const string Unk_Unk9_displayName = "Unk: Unk9";
-            public const int Unk_Unk9_sortIndex = 450;
-            [SortOrder(Unk_Unk9_sortIndex)]
-            [DisplayName(Unk_Unk9_displayName)]
-            public virtual float Unk_Unk9 {
-                get => Unk_Unk9_raw;
+            protected float Unk_9_raw;
+            public const string Unk_9_displayName = "Unk 9";
+            public const int Unk_9_sortIndex = 450;
+            [SortOrder(Unk_9_sortIndex)]
+            [DisplayName(Unk_9_displayName)]
+            public virtual float Unk_9 {
+                get => Unk_9_raw;
                 set {
-                    if (Unk_Unk9_raw == value) return;
-                    Unk_Unk9_raw = value;
-                    ChangedItems.Add(nameof(Unk_Unk9));
-                    OnPropertyChanged(nameof(Unk_Unk9));
+                    if (Unk_9_raw == value) return;
+                    Unk_9_raw = value;
+                    ChangedItems.Add(nameof(Unk_9));
+                    OnPropertyChanged(nameof(Unk_9));
                 }
             }
 
@@ -741,15 +741,15 @@ namespace MHW_Editor.Structs.PlData {
             public static Mantle_Params_1_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Mantle_Params_1_();
                 data.Index = i;
-                data.Unk_Unk1_raw = reader.ReadSingle();
-                data.Unk_Unk2_raw = reader.ReadSingle();
-                data.Unk_Unk3_raw = reader.ReadSingle();
-                data.Unk_Unk4_raw = reader.ReadSingle();
-                data.Unk_Unk5_raw = reader.ReadSingle();
-                data.Unk_Unk6_raw = reader.ReadUInt32();
-                data.Unk_Unk7_raw = reader.ReadSingle();
-                data.Unk_Unk8_raw = reader.ReadSingle();
-                data.Unk_Unk9_raw = reader.ReadSingle();
+                data.Unk_1_raw = reader.ReadSingle();
+                data.Unk_2_raw = reader.ReadSingle();
+                data.Unk_3_raw = reader.ReadSingle();
+                data.Unk_4_raw = reader.ReadSingle();
+                data.Unk_5_raw = reader.ReadSingle();
+                data.Unk_6_raw = reader.ReadUInt32();
+                data.Unk_7_raw = reader.ReadSingle();
+                data.Unk_8_raw = reader.ReadSingle();
+                data.Unk_9_raw = reader.ReadSingle();
                 data.Ghillie_Mantle_Cooldown_raw = reader.ReadSingle();
                 data.Ghillie_Mantle_Duration_raw = reader.ReadSingle();
                 data.Ghillie_Mantle_Unk1_raw = reader.ReadSingle();
@@ -788,15 +788,15 @@ namespace MHW_Editor.Structs.PlData {
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_Unk1_raw);
-                writer.Write(Unk_Unk2_raw);
-                writer.Write(Unk_Unk3_raw);
-                writer.Write(Unk_Unk4_raw);
-                writer.Write(Unk_Unk5_raw);
-                writer.Write(Unk_Unk6_raw);
-                writer.Write(Unk_Unk7_raw);
-                writer.Write(Unk_Unk8_raw);
-                writer.Write(Unk_Unk9_raw);
+                writer.Write(Unk_1_raw);
+                writer.Write(Unk_2_raw);
+                writer.Write(Unk_3_raw);
+                writer.Write(Unk_4_raw);
+                writer.Write(Unk_5_raw);
+                writer.Write(Unk_6_raw);
+                writer.Write(Unk_7_raw);
+                writer.Write(Unk_8_raw);
+                writer.Write(Unk_9_raw);
                 writer.Write(Ghillie_Mantle_Cooldown_raw);
                 writer.Write(Ghillie_Mantle_Duration_raw);
                 writer.Write(Ghillie_Mantle_Unk1_raw);
@@ -835,15 +835,15 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk: Unk1", "Unk_Unk1"),
-                    new MultiStructItemCustomView(this, "Unk: Unk2", "Unk_Unk2"),
-                    new MultiStructItemCustomView(this, "Unk: Unk3", "Unk_Unk3"),
-                    new MultiStructItemCustomView(this, "Unk: Unk4", "Unk_Unk4"),
-                    new MultiStructItemCustomView(this, "Unk: Unk5", "Unk_Unk5"),
-                    new MultiStructItemCustomView(this, "Unk: Unk6", "Unk_Unk6"),
-                    new MultiStructItemCustomView(this, "Unk: Unk7", "Unk_Unk7"),
-                    new MultiStructItemCustomView(this, "Unk: Unk8", "Unk_Unk8"),
-                    new MultiStructItemCustomView(this, "Unk: Unk9", "Unk_Unk9"),
+                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
+                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2"),
+                    new MultiStructItemCustomView(this, "Unk 3", "Unk_3"),
+                    new MultiStructItemCustomView(this, "Unk 4", "Unk_4"),
+                    new MultiStructItemCustomView(this, "Unk 5", "Unk_5"),
+                    new MultiStructItemCustomView(this, "Unk 6", "Unk_6"),
+                    new MultiStructItemCustomView(this, "Unk 7", "Unk_7"),
+                    new MultiStructItemCustomView(this, "Unk 8", "Unk_8"),
+                    new MultiStructItemCustomView(this, "Unk 9", "Unk_9"),
                     new MultiStructItemCustomView(this, "Ghillie Mantle: Cooldown", "Ghillie_Mantle_Cooldown"),
                     new MultiStructItemCustomView(this, "Ghillie Mantle: Duration", "Ghillie_Mantle_Duration"),
                     new MultiStructItemCustomView(this, "Ghillie Mantle: Unk1", "Ghillie_Mantle_Unk1"),

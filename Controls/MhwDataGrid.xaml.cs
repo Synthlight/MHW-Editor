@@ -231,6 +231,10 @@ namespace MHW_Editor.Controls {
                     return;
                 }
 
+                if (DataHelper.translations.TryGet(MainWindow.locale, null)?.ContainsKey(displayName) ?? false) {
+                    displayName = DataHelper.translations[MainWindow.locale][displayName];
+                }
+
                 e.Column.Header = displayName;
             }
 

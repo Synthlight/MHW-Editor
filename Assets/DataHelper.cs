@@ -43,6 +43,7 @@ namespace MHW_Editor.Assets {
         public static readonly Dictionary<string, LangMap> weaponData                    = new Dictionary<string, LangMap>(); // Has wp file name too. Uses GMD reference.
 
         public static readonly Dictionary<string, Dictionary<int, NameDescPair>> collisionTranslationsData;
+        public static readonly Dictionary<string, Dictionary<string, string>>    translations;
 
         public static readonly Dictionary<ArmorType, LangMap>     armorIdNameLookup;
         public static readonly Dictionary<ArmorType, LangMap>     armorIndexNameLookup;
@@ -65,6 +66,7 @@ namespace MHW_Editor.Assets {
             FILE_SIZE_MAP     = LoadDict<string, ulong>(EditorAssets.FileSizeMap);
 
             collisionTranslationsData = LoadDict<string, Dictionary<int, NameDescPair>>(EditorAssets.CollisionTranslationsData);
+            translations              = LoadDict<string, Dictionary<string, string>>(EditorAssets.Translations);
 
             armorIdNameLookup           = LoadDict<ArmorType, LangMap>(EditorAssets.ArmorNameLookupById);
             armorIndexNameLookup        = LoadDict<ArmorType, LangMap>(EditorAssets.ArmorNameLookupByIndex);

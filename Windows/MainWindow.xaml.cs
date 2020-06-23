@@ -67,6 +67,17 @@ namespace MHW_Editor.Windows {
 
                     item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
                 }
+
+                foreach (UIElement child in sub_grids.Children) {
+                    if (child is MhwDataGrid grid) {
+                        foreach (var entry in grid.ItemsSource) {
+                            if (entry is IOnPropertyChanged propEntry) {
+                                // ReSharper disable once UseNameofExpression
+                                propEntry.OnPropertyChanged("Name");
+                            }
+                        }
+                    }
+                }
             }
         }
 

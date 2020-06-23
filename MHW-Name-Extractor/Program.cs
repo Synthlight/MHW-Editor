@@ -13,24 +13,8 @@ namespace MHW_Name_Extractor {
     public static class Program {
         [STAThread]
         public static void Main() {
-            var colTrans = new Dictionary<string, Dictionary<int, NameDescPair>>();
-
-            foreach (var file in Directory.EnumerateFiles(@"..\..\..\CollisionTranslations", "*.csv", SearchOption.TopDirectoryOnly)) {
-                var entries = ParseCsv(file);
-                if (entries.Count == 0) continue;
-
-                var fileName = Path.GetFileNameWithoutExtension(file)?.Replace('-', '\\');
-
-                colTrans[fileName ?? throw new InvalidOperationException()] = entries;
-            }
-
-            var colTransFile = $@"{Global.ASSETS_ROOT}\EditorData\CollisionTranslationsData.json";
-            var dir          = Path.GetDirectoryName(colTransFile);
-            if (!Directory.Exists(dir)) {
-                Directory.CreateDirectory(dir ?? throw new InvalidOperationException());
-            }
-
-            File.WriteAllText(colTransFile, JsonConvert.SerializeObject(colTrans, Formatting.Indented));
+            CreateColTranslations();
+            CreateEditorTranslations();
 
             if (Environment.GetCommandLineArgs().ContainsIgnoreCase("-transOnly")) return;
 
@@ -66,7 +50,57 @@ namespace MHW_Name_Extractor {
             }
         }
 
-        private static Dictionary<int, NameDescPair> ParseCsv(string file) {
+        private static void CreateEditorTranslations() {
+            var trans = new Dictionary<string, Dictionary<string, string>>();
+
+            foreach (var file in Directory.EnumerateFiles(@"..\..\..\Translations", "*.csv", SearchOption.TopDirectoryOnly)) {
+                var langKey = Path.GetFileNameWithoutExtension(file);
+                var entries = ParseEditorCsv(file);
+                if (entries.Count == 0) continue;
+
+                trans[langKey ?? throw new InvalidOperationException()] = entries;
+            }
+
+            WriteToFile($@"{Global.ASSETS_ROOT}\EditorData\Translations.json", trans);
+        }
+
+        private static Dictionary<string, string> ParseEditorCsv(string file) {
+            var dict = new Dictionary<string, string>();
+
+            var text  = File.ReadAllText(file);
+            var lines = text.Split(new[] {'\r', '\n'}, StringSplitOptions.RemoveEmptyEntries);
+            var entries = from line in lines.Subsequence(1, lines.Length - 1)
+                          let parts = line.Split('|')
+                          let original = parts[0]
+                          let translated = parts[1]
+                          select new {
+                              original,
+                              translated
+                          };
+
+            foreach (var entry in entries) {
+                dict[entry.original] = entry.translated;
+            }
+
+            return dict;
+        }
+
+        private static void CreateColTranslations() {
+            var colTrans = new Dictionary<string, Dictionary<int, NameDescPair>>();
+
+            foreach (var file in Directory.EnumerateFiles(@"..\..\..\CollisionTranslations", "*.csv", SearchOption.TopDirectoryOnly)) {
+                var entries = ParseColCsv(file);
+                if (entries.Count == 0) continue;
+
+                var fileName = Path.GetFileNameWithoutExtension(file)?.Replace('-', '\\');
+
+                colTrans[fileName ?? throw new InvalidOperationException()] = entries;
+            }
+
+            WriteToFile($@"{Global.ASSETS_ROOT}\EditorData\CollisionTranslationsData.json", colTrans);
+        }
+
+        private static Dictionary<int, NameDescPair> ParseColCsv(string file) {
             var dict = new Dictionary<int, NameDescPair>();
 
             var text  = File.ReadAllText(file);
@@ -88,6 +122,15 @@ namespace MHW_Name_Extractor {
             }
 
             return dict;
+        }
+
+        private static void WriteToFile(string file, object data) {
+            var dir = Path.GetDirectoryName(file);
+            if (!Directory.Exists(dir)) {
+                Directory.CreateDirectory(dir ?? throw new InvalidOperationException());
+            }
+
+            File.WriteAllText(file, JsonConvert.SerializeObject(data, Formatting.Indented));
         }
 
         private static void GetAndWriteGmdStringsAsJson(string targetFile, string destFile, bool includeKeys = false) {

@@ -145,6 +145,9 @@
   <data name="GoodChunkMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>editordata\goodchunkmap.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Translations" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>editordata\translations.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="WeaponNameLookupById" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>editordata\weaponnamelookupbyid.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

@@ -3,10 +3,14 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Reflection;
 using JetBrains.Annotations;
+using MHW_Editor.Assets;
+using MHW_Editor.Windows;
+using MHW_Template;
 
 namespace MHW_Editor.Models {
     public class MultiStructItemCustomView : MhwStructItem {
         private readonly IHasCustomView<MultiStructItemCustomView> parent;
+        private readonly string                                    name;
         private readonly MethodInfo                                getMethod;
         private readonly MethodInfo                                setMethod;
         private readonly Type                                      propertyType;
@@ -14,7 +18,7 @@ namespace MHW_Editor.Models {
 
         public MultiStructItemCustomView(IHasCustomView<MultiStructItemCustomView> parent, string name, string propertyName) {
             this.parent = parent;
-            Name        = name;
+            this.name   = name;
 
             var property = parent.GetType().GetProperty(propertyName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
             Debug.Assert(property != null, nameof(property) + " != null");
@@ -26,7 +30,16 @@ namespace MHW_Editor.Models {
             isReadOnly = (IsReadOnlyAttribute) property.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
         }
 
-        [SortOrder(0)] [UsedImplicitly] public string Name { get; }
+        [SortOrder(0)]
+        [UsedImplicitly]
+        public string Name {
+            get {
+                if (DataHelper.translations.TryGet(MainWindow.locale, null)?.ContainsKey(name) ?? false) {
+                    return DataHelper.translations[MainWindow.locale][name];
+                }
+                return name;
+            }
+        }
 
         [DisplayName("")] // Hide it for vertical view since it will always be 0;
         public override ulong Index => base.Index;

@@ -13,15 +13,15 @@ typedef struct {
 
 Header Header_<name="Header">;
 
-float Unk_Unk1<name="Unk: Unk1 (float)">;
-float Unk_Unk2<name="Unk: Unk2 (float)">;
-float Unk_Unk3<name="Unk: Unk3 (float)">;
-float Unk_Unk4<name="Unk: Unk4 (float)">;
-float Unk_Unk5<name="Unk: Unk5 (float)">;
-uint Unk_Unk6<name="Unk: Unk6 (uint)">;
-float Unk_Unk7<name="Unk: Unk7 (float)">;
-float Unk_Unk8<name="Unk: Unk8 (float)">;
-float Unk_Unk9<name="Unk: Unk9 (float)">;
+float Unk_1<name="Unk 1 (float)">;
+float Unk_2<name="Unk 2 (float)">;
+float Unk_3<name="Unk 3 (float)">;
+float Unk_4<name="Unk 4 (float)">;
+float Unk_5<name="Unk 5 (float)">;
+uint Unk_6<name="Unk 6 (uint)">;
+float Unk_7<name="Unk 7 (float)">;
+float Unk_8<name="Unk 8 (float)">;
+float Unk_9<name="Unk 9 (float)">;
 float Ghillie_Mantle_Cooldown<name="Ghillie Mantle: Cooldown (float)">;
 float Ghillie_Mantle_Duration<name="Ghillie Mantle: Duration (float)">;
 float Ghillie_Mantle_Unk1<name="Ghillie Mantle: Unk1 (float)">;

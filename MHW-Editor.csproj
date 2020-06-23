@@ -501,6 +501,7 @@
     <None Include="Assets\EditorData\FileSizeMap.json" />
     <None Include="Assets\EditorData\GemItemIds.json" />
     <None Include="Assets\EditorData\GoodChunkMap.json" />
+    <None Include="Assets\EditorData\Translations.json" />
     <None Include="Assets\EditorData\WeaponNameLookupById.json" />
     <None Include="Assets\EditorData\WeaponNameLookupByIndex.json" />
     <None Include="Assets\GuildCardData\Backgrounds\ara_backgroundData.json" />
