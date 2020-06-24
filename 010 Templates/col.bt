@@ -212,7 +212,7 @@ typedef struct {
         float Unk_28<name="Unk 28 (float)">;
         ubyte Lingering_Hurtbox<name="Lingering Hurtbox (ubyte)">;
         float Frame_Delay<name="Frame Delay (float)">;
-        uint Unk_29<name="Unk 29 (uint)">;
+        uint No_Sharpness_Consumed<name="No Sharpness Consumed (uint)">;
         ushort Unk_30<name="Unk 30 (ushort)">;
         float Energy_Gen<name="Energy Gen (float)">;
         float Conditional_Motion_value_change_replace<name="Conditional Motion value change/replace (float)">;

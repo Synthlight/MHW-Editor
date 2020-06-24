@@ -2944,18 +2944,18 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
-                protected uint Unk_29_raw;
-                public const string Unk_29_displayName = "Unk 29";
-                public const int Unk_29_sortIndex = 2400;
-                [SortOrder(Unk_29_sortIndex)]
-                [DisplayName(Unk_29_displayName)]
-                public virtual uint Unk_29 {
-                    get => Unk_29_raw;
+                protected uint No_Sharpness_Consumed_raw;
+                public const string No_Sharpness_Consumed_displayName = "No Sharpness Consumed";
+                public const int No_Sharpness_Consumed_sortIndex = 2400;
+                [SortOrder(No_Sharpness_Consumed_sortIndex)]
+                [DisplayName(No_Sharpness_Consumed_displayName)]
+                public virtual bool No_Sharpness_Consumed {
+                    get => (bool) Convert.ToBoolean(No_Sharpness_Consumed_raw);
                     set {
-                        if (Unk_29_raw == value) return;
-                        Unk_29_raw = value;
-                        ChangedItems.Add(nameof(Unk_29));
-                        OnPropertyChanged(nameof(Unk_29));
+                        if (Convert.ToBoolean(No_Sharpness_Consumed_raw) == value) return;
+                        No_Sharpness_Consumed_raw = Convert.ToByte(value);
+                        ChangedItems.Add(nameof(No_Sharpness_Consumed));
+                        OnPropertyChanged(nameof(No_Sharpness_Consumed));
                     }
                 }
 
@@ -3200,7 +3200,7 @@ namespace MHW_Editor.Structs.Weapons {
                     data.Unk_28_raw = reader.ReadSingle();
                     data.Lingering_Hurtbox_raw = reader.ReadByte();
                     data.Frame_Delay_raw = reader.ReadSingle();
-                    data.Unk_29_raw = reader.ReadUInt32();
+                    data.No_Sharpness_Consumed_raw = reader.ReadUInt32();
                     data.Unk_30_raw = reader.ReadUInt16();
                     data.Energy_Gen_raw = reader.ReadSingle();
                     data.Conditional_Motion_value_change_replace_raw = reader.ReadSingle();
@@ -3264,7 +3264,7 @@ namespace MHW_Editor.Structs.Weapons {
                     writer.Write(Unk_28_raw);
                     writer.Write(Lingering_Hurtbox_raw);
                     writer.Write(Frame_Delay_raw);
-                    writer.Write(Unk_29_raw);
+                    writer.Write(No_Sharpness_Consumed_raw);
                     writer.Write(Unk_30_raw);
                     writer.Write(Energy_Gen_raw);
                     writer.Write(Conditional_Motion_value_change_replace_raw);
