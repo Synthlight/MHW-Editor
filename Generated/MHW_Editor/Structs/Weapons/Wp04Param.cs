@@ -2887,48 +2887,48 @@ namespace MHW_Editor.Structs.Weapons {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "W04p Params (7)";
 
-            protected float Unk_104_raw;
-            public const string Unk_104_displayName = "Unk 104";
-            public const int Unk_104_sortIndex = 50;
-            [SortOrder(Unk_104_sortIndex)]
-            [DisplayName(Unk_104_displayName)]
-            public virtual float Unk_104 {
-                get => Unk_104_raw;
+            protected float Level_1_Charge_Time_raw;
+            public const string Level_1_Charge_Time_displayName = "Level 1 Charge Time";
+            public const int Level_1_Charge_Time_sortIndex = 50;
+            [SortOrder(Level_1_Charge_Time_sortIndex)]
+            [DisplayName(Level_1_Charge_Time_displayName)]
+            public virtual float Level_1_Charge_Time {
+                get => Level_1_Charge_Time_raw;
                 set {
-                    if (Unk_104_raw == value) return;
-                    Unk_104_raw = value;
-                    ChangedItems.Add(nameof(Unk_104));
-                    OnPropertyChanged(nameof(Unk_104));
+                    if (Level_1_Charge_Time_raw == value) return;
+                    Level_1_Charge_Time_raw = value;
+                    ChangedItems.Add(nameof(Level_1_Charge_Time));
+                    OnPropertyChanged(nameof(Level_1_Charge_Time));
                 }
             }
 
-            protected float Unk_105_raw;
-            public const string Unk_105_displayName = "Unk 105";
-            public const int Unk_105_sortIndex = 100;
-            [SortOrder(Unk_105_sortIndex)]
-            [DisplayName(Unk_105_displayName)]
-            public virtual float Unk_105 {
-                get => Unk_105_raw;
+            protected float Level_2_Charge_Time_raw;
+            public const string Level_2_Charge_Time_displayName = "Level 2 Charge Time";
+            public const int Level_2_Charge_Time_sortIndex = 100;
+            [SortOrder(Level_2_Charge_Time_sortIndex)]
+            [DisplayName(Level_2_Charge_Time_displayName)]
+            public virtual float Level_2_Charge_Time {
+                get => Level_2_Charge_Time_raw;
                 set {
-                    if (Unk_105_raw == value) return;
-                    Unk_105_raw = value;
-                    ChangedItems.Add(nameof(Unk_105));
-                    OnPropertyChanged(nameof(Unk_105));
+                    if (Level_2_Charge_Time_raw == value) return;
+                    Level_2_Charge_Time_raw = value;
+                    ChangedItems.Add(nameof(Level_2_Charge_Time));
+                    OnPropertyChanged(nameof(Level_2_Charge_Time));
                 }
             }
 
-            protected float Unk_106_raw;
-            public const string Unk_106_displayName = "Unk 106";
-            public const int Unk_106_sortIndex = 150;
-            [SortOrder(Unk_106_sortIndex)]
-            [DisplayName(Unk_106_displayName)]
-            public virtual float Unk_106 {
-                get => Unk_106_raw;
+            protected float Level_3_Charge_Time_raw;
+            public const string Level_3_Charge_Time_displayName = "Level 3 Charge Time";
+            public const int Level_3_Charge_Time_sortIndex = 150;
+            [SortOrder(Level_3_Charge_Time_sortIndex)]
+            [DisplayName(Level_3_Charge_Time_displayName)]
+            public virtual float Level_3_Charge_Time {
+                get => Level_3_Charge_Time_raw;
                 set {
-                    if (Unk_106_raw == value) return;
-                    Unk_106_raw = value;
-                    ChangedItems.Add(nameof(Unk_106));
-                    OnPropertyChanged(nameof(Unk_106));
+                    if (Level_3_Charge_Time_raw == value) return;
+                    Level_3_Charge_Time_raw = value;
+                    ChangedItems.Add(nameof(Level_3_Charge_Time));
+                    OnPropertyChanged(nameof(Level_3_Charge_Time));
                 }
             }
 
@@ -2946,23 +2946,23 @@ namespace MHW_Editor.Structs.Weapons {
             public static W04p_Params_7_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W04p_Params_7_();
                 data.Index = i;
-                data.Unk_104_raw = reader.ReadSingle();
-                data.Unk_105_raw = reader.ReadSingle();
-                data.Unk_106_raw = reader.ReadSingle();
+                data.Level_1_Charge_Time_raw = reader.ReadSingle();
+                data.Level_2_Charge_Time_raw = reader.ReadSingle();
+                data.Level_3_Charge_Time_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_104_raw);
-                writer.Write(Unk_105_raw);
-                writer.Write(Unk_106_raw);
+                writer.Write(Level_1_Charge_Time_raw);
+                writer.Write(Level_2_Charge_Time_raw);
+                writer.Write(Level_3_Charge_Time_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104"),
-                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105"),
-                    new MultiStructItemCustomView(this, "Unk 106", "Unk_106"),
+                    new MultiStructItemCustomView(this, "Level 1 Charge Time", "Level_1_Charge_Time"),
+                    new MultiStructItemCustomView(this, "Level 2 Charge Time", "Level_2_Charge_Time"),
+                    new MultiStructItemCustomView(this, "Level 3 Charge Time", "Level_3_Charge_Time"),
                 };
             }
         }
