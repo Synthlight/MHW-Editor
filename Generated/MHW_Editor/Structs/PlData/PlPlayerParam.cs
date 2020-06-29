@@ -4448,18 +4448,18 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
-            protected float Unk_143_raw;
-            public const string Unk_143_displayName = "Unk 143";
-            public const int Unk_143_sortIndex = 4350;
-            [SortOrder(Unk_143_sortIndex)]
-            [DisplayName(Unk_143_displayName)]
-            public virtual float Unk_143 {
-                get => Unk_143_raw;
+            protected float Escape_Run_From_Monster_Speed_Multiplier_raw;
+            public const string Escape_Run_From_Monster_Speed_Multiplier_displayName = "Escape (Run) From Monster Speed Multiplier";
+            public const int Escape_Run_From_Monster_Speed_Multiplier_sortIndex = 4350;
+            [SortOrder(Escape_Run_From_Monster_Speed_Multiplier_sortIndex)]
+            [DisplayName(Escape_Run_From_Monster_Speed_Multiplier_displayName)]
+            public virtual float Escape_Run_From_Monster_Speed_Multiplier {
+                get => Escape_Run_From_Monster_Speed_Multiplier_raw;
                 set {
-                    if (Unk_143_raw == value) return;
-                    Unk_143_raw = value;
-                    ChangedItems.Add(nameof(Unk_143));
-                    OnPropertyChanged(nameof(Unk_143));
+                    if (Escape_Run_From_Monster_Speed_Multiplier_raw == value) return;
+                    Escape_Run_From_Monster_Speed_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Escape_Run_From_Monster_Speed_Multiplier));
+                    OnPropertyChanged(nameof(Escape_Run_From_Monster_Speed_Multiplier));
                 }
             }
 
@@ -4773,7 +4773,7 @@ namespace MHW_Editor.Structs.PlData {
                 data.Unk_140_raw = reader.ReadSingle();
                 data.Unk_141_raw = reader.ReadSingle();
                 data.Unk_142_raw = reader.ReadSingle();
-                data.Unk_143_raw = reader.ReadSingle();
+                data.Escape_Run_From_Monster_Speed_Multiplier_raw = reader.ReadSingle();
                 data.Unk_144_raw = reader.ReadSingle();
                 data.Unk_145_raw = reader.ReadSingle();
                 data.Unk_146_raw = reader.ReadSingle();
@@ -4878,7 +4878,7 @@ namespace MHW_Editor.Structs.PlData {
                 writer.Write(Unk_140_raw);
                 writer.Write(Unk_141_raw);
                 writer.Write(Unk_142_raw);
-                writer.Write(Unk_143_raw);
+                writer.Write(Escape_Run_From_Monster_Speed_Multiplier_raw);
                 writer.Write(Unk_144_raw);
                 writer.Write(Unk_145_raw);
                 writer.Write(Unk_146_raw);
@@ -4983,7 +4983,7 @@ namespace MHW_Editor.Structs.PlData {
                     new MultiStructItemCustomView(this, "Unk 140", "Unk_140"),
                     new MultiStructItemCustomView(this, "Unk 141", "Unk_141"),
                     new MultiStructItemCustomView(this, "Unk 142", "Unk_142"),
-                    new MultiStructItemCustomView(this, "Unk 143", "Unk_143"),
+                    new MultiStructItemCustomView(this, "Escape (Run) From Monster Speed Multiplier", "Escape_Run_From_Monster_Speed_Multiplier"),
                     new MultiStructItemCustomView(this, "Unk 144", "Unk_144"),
                     new MultiStructItemCustomView(this, "Unk 145", "Unk_145"),
                     new MultiStructItemCustomView(this, "Unk 146", "Unk_146"),
