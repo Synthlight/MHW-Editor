@@ -3449,63 +3449,63 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Unk_115_raw;
-            public const string Unk_115_displayName = "Unk 115";
-            public const int Unk_115_sortIndex = 350;
-            [SortOrder(Unk_115_sortIndex)]
-            [DisplayName(Unk_115_displayName)]
-            public virtual float Unk_115 {
-                get => Unk_115_raw;
+            protected float Kinsect_Stamina_Extract_Boost_raw;
+            public const string Kinsect_Stamina_Extract_Boost_displayName = "Kinsect Stamina Extract Boost";
+            public const int Kinsect_Stamina_Extract_Boost_sortIndex = 350;
+            [SortOrder(Kinsect_Stamina_Extract_Boost_sortIndex)]
+            [DisplayName(Kinsect_Stamina_Extract_Boost_displayName)]
+            public virtual float Kinsect_Stamina_Extract_Boost {
+                get => Kinsect_Stamina_Extract_Boost_raw;
                 set {
-                    if (Unk_115_raw == value) return;
-                    Unk_115_raw = value;
-                    ChangedItems.Add(nameof(Unk_115));
-                    OnPropertyChanged(nameof(Unk_115));
+                    if (Kinsect_Stamina_Extract_Boost_raw == value) return;
+                    Kinsect_Stamina_Extract_Boost_raw = value;
+                    ChangedItems.Add(nameof(Kinsect_Stamina_Extract_Boost));
+                    OnPropertyChanged(nameof(Kinsect_Stamina_Extract_Boost));
                 }
             }
 
-            protected float Unk_116_raw;
-            public const string Unk_116_displayName = "Unk 116";
-            public const int Unk_116_sortIndex = 400;
-            [SortOrder(Unk_116_sortIndex)]
-            [DisplayName(Unk_116_displayName)]
-            public virtual float Unk_116 {
-                get => Unk_116_raw;
+            protected float Kinsect_Stamina_On_Recall_Boost_raw;
+            public const string Kinsect_Stamina_On_Recall_Boost_displayName = "Kinsect Stamina On Recall Boost";
+            public const int Kinsect_Stamina_On_Recall_Boost_sortIndex = 400;
+            [SortOrder(Kinsect_Stamina_On_Recall_Boost_sortIndex)]
+            [DisplayName(Kinsect_Stamina_On_Recall_Boost_displayName)]
+            public virtual float Kinsect_Stamina_On_Recall_Boost {
+                get => Kinsect_Stamina_On_Recall_Boost_raw;
                 set {
-                    if (Unk_116_raw == value) return;
-                    Unk_116_raw = value;
-                    ChangedItems.Add(nameof(Unk_116));
-                    OnPropertyChanged(nameof(Unk_116));
+                    if (Kinsect_Stamina_On_Recall_Boost_raw == value) return;
+                    Kinsect_Stamina_On_Recall_Boost_raw = value;
+                    ChangedItems.Add(nameof(Kinsect_Stamina_On_Recall_Boost));
+                    OnPropertyChanged(nameof(Kinsect_Stamina_On_Recall_Boost));
                 }
             }
 
-            protected float Unk_117_raw;
-            public const string Unk_117_displayName = "Unk 117";
-            public const int Unk_117_sortIndex = 450;
-            [SortOrder(Unk_117_sortIndex)]
-            [DisplayName(Unk_117_displayName)]
-            public virtual float Unk_117 {
-                get => Unk_117_raw;
+            protected float Kinsect_Stamina_Drain_Boost_raw;
+            public const string Kinsect_Stamina_Drain_Boost_displayName = "Kinsect Stamina Drain Boost";
+            public const int Kinsect_Stamina_Drain_Boost_sortIndex = 450;
+            [SortOrder(Kinsect_Stamina_Drain_Boost_sortIndex)]
+            [DisplayName(Kinsect_Stamina_Drain_Boost_displayName)]
+            public virtual float Kinsect_Stamina_Drain_Boost {
+                get => Kinsect_Stamina_Drain_Boost_raw;
                 set {
-                    if (Unk_117_raw == value) return;
-                    Unk_117_raw = value;
-                    ChangedItems.Add(nameof(Unk_117));
-                    OnPropertyChanged(nameof(Unk_117));
+                    if (Kinsect_Stamina_Drain_Boost_raw == value) return;
+                    Kinsect_Stamina_Drain_Boost_raw = value;
+                    ChangedItems.Add(nameof(Kinsect_Stamina_Drain_Boost));
+                    OnPropertyChanged(nameof(Kinsect_Stamina_Drain_Boost));
                 }
             }
 
-            protected float Unk_118_raw;
-            public const string Unk_118_displayName = "Unk 118";
-            public const int Unk_118_sortIndex = 500;
-            [SortOrder(Unk_118_sortIndex)]
-            [DisplayName(Unk_118_displayName)]
-            public virtual float Unk_118 {
-                get => Unk_118_raw;
+            protected float Kinsect_Healing_Extract_Boost_raw;
+            public const string Kinsect_Healing_Extract_Boost_displayName = "Kinsect Healing Extract Boost";
+            public const int Kinsect_Healing_Extract_Boost_sortIndex = 500;
+            [SortOrder(Kinsect_Healing_Extract_Boost_sortIndex)]
+            [DisplayName(Kinsect_Healing_Extract_Boost_displayName)]
+            public virtual float Kinsect_Healing_Extract_Boost {
+                get => Kinsect_Healing_Extract_Boost_raw;
                 set {
-                    if (Unk_118_raw == value) return;
-                    Unk_118_raw = value;
-                    ChangedItems.Add(nameof(Unk_118));
-                    OnPropertyChanged(nameof(Unk_118));
+                    if (Kinsect_Healing_Extract_Boost_raw == value) return;
+                    Kinsect_Healing_Extract_Boost_raw = value;
+                    ChangedItems.Add(nameof(Kinsect_Healing_Extract_Boost));
+                    OnPropertyChanged(nameof(Kinsect_Healing_Extract_Boost));
                 }
             }
 
@@ -3614,18 +3614,18 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Unk_126_raw;
-            public const string Unk_126_displayName = "Unk 126";
-            public const int Unk_126_sortIndex = 900;
-            [SortOrder(Unk_126_sortIndex)]
-            [DisplayName(Unk_126_displayName)]
-            public virtual float Unk_126 {
-                get => Unk_126_raw;
+            protected float Kinsect_Max_Flight_Range_raw;
+            public const string Kinsect_Max_Flight_Range_displayName = "Kinsect Max Flight Range";
+            public const int Kinsect_Max_Flight_Range_sortIndex = 900;
+            [SortOrder(Kinsect_Max_Flight_Range_sortIndex)]
+            [DisplayName(Kinsect_Max_Flight_Range_displayName)]
+            public virtual float Kinsect_Max_Flight_Range {
+                get => Kinsect_Max_Flight_Range_raw;
                 set {
-                    if (Unk_126_raw == value) return;
-                    Unk_126_raw = value;
-                    ChangedItems.Add(nameof(Unk_126));
-                    OnPropertyChanged(nameof(Unk_126));
+                    if (Kinsect_Max_Flight_Range_raw == value) return;
+                    Kinsect_Max_Flight_Range_raw = value;
+                    ChangedItems.Add(nameof(Kinsect_Max_Flight_Range));
+                    OnPropertyChanged(nameof(Kinsect_Max_Flight_Range));
                 }
             }
 
@@ -4009,10 +4009,10 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Blunt_Boost_raw = reader.ReadSingle();
                 data.Elemental_Boost_raw = reader.ReadSingle();
                 data.Speed_Boost_raw = reader.ReadSingle();
-                data.Unk_115_raw = reader.ReadSingle();
-                data.Unk_116_raw = reader.ReadSingle();
-                data.Unk_117_raw = reader.ReadSingle();
-                data.Unk_118_raw = reader.ReadSingle();
+                data.Kinsect_Stamina_Extract_Boost_raw = reader.ReadSingle();
+                data.Kinsect_Stamina_On_Recall_Boost_raw = reader.ReadSingle();
+                data.Kinsect_Stamina_Drain_Boost_raw = reader.ReadSingle();
+                data.Kinsect_Healing_Extract_Boost_raw = reader.ReadSingle();
                 data.Unk_119_raw = reader.ReadSingle();
                 data.Unk_120_raw = reader.ReadSingle();
                 data.Unk_121_raw = reader.ReadSingle();
@@ -4020,7 +4020,7 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_123_raw = reader.ReadSingle();
                 data.Unk_124_raw = reader.ReadSingle();
                 data.Unk_125_raw = reader.ReadSingle();
-                data.Unk_126_raw = reader.ReadSingle();
+                data.Kinsect_Max_Flight_Range_raw = reader.ReadSingle();
                 data.Unk_127_raw = reader.ReadSingle();
                 data.Unk_128_raw = reader.ReadSingle();
                 data.Unk_129_raw = reader.ReadSingle();
@@ -4055,10 +4055,10 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Blunt_Boost_raw);
                 writer.Write(Elemental_Boost_raw);
                 writer.Write(Speed_Boost_raw);
-                writer.Write(Unk_115_raw);
-                writer.Write(Unk_116_raw);
-                writer.Write(Unk_117_raw);
-                writer.Write(Unk_118_raw);
+                writer.Write(Kinsect_Stamina_Extract_Boost_raw);
+                writer.Write(Kinsect_Stamina_On_Recall_Boost_raw);
+                writer.Write(Kinsect_Stamina_Drain_Boost_raw);
+                writer.Write(Kinsect_Healing_Extract_Boost_raw);
                 writer.Write(Unk_119_raw);
                 writer.Write(Unk_120_raw);
                 writer.Write(Unk_121_raw);
@@ -4066,7 +4066,7 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_123_raw);
                 writer.Write(Unk_124_raw);
                 writer.Write(Unk_125_raw);
-                writer.Write(Unk_126_raw);
+                writer.Write(Kinsect_Max_Flight_Range_raw);
                 writer.Write(Unk_127_raw);
                 writer.Write(Unk_128_raw);
                 writer.Write(Unk_129_raw);
@@ -4101,10 +4101,10 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Blunt Boost", "Blunt_Boost"),
                     new MultiStructItemCustomView(this, "Elemental Boost", "Elemental_Boost"),
                     new MultiStructItemCustomView(this, "Speed Boost", "Speed_Boost"),
-                    new MultiStructItemCustomView(this, "Unk 115", "Unk_115"),
-                    new MultiStructItemCustomView(this, "Unk 116", "Unk_116"),
-                    new MultiStructItemCustomView(this, "Unk 117", "Unk_117"),
-                    new MultiStructItemCustomView(this, "Unk 118", "Unk_118"),
+                    new MultiStructItemCustomView(this, "Kinsect Stamina Extract Boost", "Kinsect_Stamina_Extract_Boost"),
+                    new MultiStructItemCustomView(this, "Kinsect Stamina On Recall Boost", "Kinsect_Stamina_On_Recall_Boost"),
+                    new MultiStructItemCustomView(this, "Kinsect Stamina Drain Boost", "Kinsect_Stamina_Drain_Boost"),
+                    new MultiStructItemCustomView(this, "Kinsect Healing Extract Boost", "Kinsect_Healing_Extract_Boost"),
                     new MultiStructItemCustomView(this, "Unk 119", "Unk_119"),
                     new MultiStructItemCustomView(this, "Unk 120", "Unk_120"),
                     new MultiStructItemCustomView(this, "Unk 121", "Unk_121"),
@@ -4112,7 +4112,7 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 123", "Unk_123"),
                     new MultiStructItemCustomView(this, "Unk 124", "Unk_124"),
                     new MultiStructItemCustomView(this, "Unk 125", "Unk_125"),
-                    new MultiStructItemCustomView(this, "Unk 126", "Unk_126"),
+                    new MultiStructItemCustomView(this, "Kinsect Max Flight Range", "Kinsect_Max_Flight_Range"),
                     new MultiStructItemCustomView(this, "Unk 127", "Unk_127"),
                     new MultiStructItemCustomView(this, "Unk 128", "Unk_128"),
                     new MultiStructItemCustomView(this, "Unk 129", "Unk_129"),
