@@ -190,9 +190,9 @@ typedef struct {
 
 Action_Param_2 Action_Param_2_<name="Action Param 2">;
 
-float Level_1_Charge_Time<name="Level 1 Charge Time (float)">;
-float Level_2_Charge_Time<name="Level 2 Charge Time (float)">;
-float Level_3_Charge_Time<name="Level 3 Charge Time (float)">;
+float Unk_104<name="Unk 104 (float)">;
+float Unk_105<name="Unk 105 (float)">;
+float Unk_106<name="Unk 106 (float)">;
 
 // Action Param 3
 typedef struct {
