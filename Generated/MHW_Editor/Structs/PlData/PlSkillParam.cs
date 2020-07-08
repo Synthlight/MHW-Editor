@@ -97,6 +97,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Speed_Eating_1_Drink_Motion_Speed_offset { get; private set; }
+
             protected float Speed_Eating_2_Drink_Motion_Speed_raw;
             public const string Speed_Eating_2_Drink_Motion_Speed_displayName = "Speed Eating 2 Drink Motion Speed";
             public const int Speed_Eating_2_Drink_Motion_Speed_sortIndex = 100;
@@ -111,6 +114,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Speed_Eating_2_Drink_Motion_Speed));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Speed_Eating_2_Drink_Motion_Speed_offset { get; private set; }
 
             protected float Speed_Eating_3_Drink_Motion_Speed_raw;
             public const string Speed_Eating_3_Drink_Motion_Speed_displayName = "Speed Eating 3 Drink Motion Speed";
@@ -127,6 +133,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Speed_Eating_3_Drink_Motion_Speed_offset { get; private set; }
+
             protected float Speed_Eating_1_Drink_End_Frame_raw;
             public const string Speed_Eating_1_Drink_End_Frame_displayName = "Speed Eating 1 Drink End Frame";
             public const int Speed_Eating_1_Drink_End_Frame_sortIndex = 200;
@@ -141,6 +150,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Speed_Eating_1_Drink_End_Frame));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Speed_Eating_1_Drink_End_Frame_offset { get; private set; }
 
             protected float Speed_Eating_2_Drink_End_Frame_raw;
             public const string Speed_Eating_2_Drink_End_Frame_displayName = "Speed Eating 2 Drink End Frame";
@@ -157,6 +169,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Speed_Eating_2_Drink_End_Frame_offset { get; private set; }
+
             protected float Speed_Eating_3_Drink_End_Frame_raw;
             public const string Speed_Eating_3_Drink_End_Frame_displayName = "Speed Eating 3 Drink End Frame";
             public const int Speed_Eating_3_Drink_End_Frame_sortIndex = 300;
@@ -171,6 +186,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Speed_Eating_3_Drink_End_Frame));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Speed_Eating_3_Drink_End_Frame_offset { get; private set; }
 
             protected float Speed_Eating_1_Heal_Speed_Rate_raw;
             public const string Speed_Eating_1_Heal_Speed_Rate_displayName = "Speed Eating 1 Heal Speed Rate";
@@ -187,6 +205,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Speed_Eating_1_Heal_Speed_Rate_offset { get; private set; }
+
             protected float Speed_Eating_2_Heal_Speed_Rate_raw;
             public const string Speed_Eating_2_Heal_Speed_Rate_displayName = "Speed Eating 2 Heal Speed Rate";
             public const int Speed_Eating_2_Heal_Speed_Rate_sortIndex = 400;
@@ -201,6 +222,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Speed_Eating_2_Heal_Speed_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Speed_Eating_2_Heal_Speed_Rate_offset { get; private set; }
 
             protected float Speed_Eating_3_Heal_Speed_Rate_raw;
             public const string Speed_Eating_3_Heal_Speed_Rate_displayName = "Speed Eating 3 Heal Speed Rate";
@@ -217,6 +241,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Speed_Eating_3_Heal_Speed_Rate_offset { get; private set; }
+
             protected float Speed_Eating_1_Meat_Motion_Speed_raw;
             public const string Speed_Eating_1_Meat_Motion_Speed_displayName = "Speed Eating 1 Meat Motion Speed";
             public const int Speed_Eating_1_Meat_Motion_Speed_sortIndex = 500;
@@ -231,6 +258,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Speed_Eating_1_Meat_Motion_Speed));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Speed_Eating_1_Meat_Motion_Speed_offset { get; private set; }
 
             protected float Speed_Eating_2_Meat_Motion_Speed_raw;
             public const string Speed_Eating_2_Meat_Motion_Speed_displayName = "Speed Eating 2 Meat Motion Speed";
@@ -247,6 +277,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Speed_Eating_2_Meat_Motion_Speed_offset { get; private set; }
+
             protected float Speed_Eating_3_Meat_Motion_Speed_raw;
             public const string Speed_Eating_3_Meat_Motion_Speed_displayName = "Speed Eating 3 Meat Motion Speed";
             public const int Speed_Eating_3_Meat_Motion_Speed_sortIndex = 600;
@@ -261,6 +294,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Speed_Eating_3_Meat_Motion_Speed));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Speed_Eating_3_Meat_Motion_Speed_offset { get; private set; }
 
             protected byte Speed_Eating_1_Meat_Loop_Count_raw;
             public const string Speed_Eating_1_Meat_Loop_Count_displayName = "Speed Eating 1 Meat Loop Count";
@@ -277,6 +313,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Speed_Eating_1_Meat_Loop_Count_offset { get; private set; }
+
             protected byte Speed_Eating_2_Meat_Loop_Count_raw;
             public const string Speed_Eating_2_Meat_Loop_Count_displayName = "Speed Eating 2 Meat Loop Count";
             public const int Speed_Eating_2_Meat_Loop_Count_sortIndex = 700;
@@ -291,6 +330,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Speed_Eating_2_Meat_Loop_Count));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Speed_Eating_2_Meat_Loop_Count_offset { get; private set; }
 
             protected byte Speed_Eating_3_Meat_Loop_Count_raw;
             public const string Speed_Eating_3_Meat_Loop_Count_displayName = "Speed Eating 3 Meat Loop Count";
@@ -307,6 +349,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Speed_Eating_3_Meat_Loop_Count_offset { get; private set; }
+
             protected float Speed_Eating_1_2_3_Meat_End_Frame_raw;
             public const string Speed_Eating_1_2_3_Meat_End_Frame_displayName = "Speed Eating 1/2/3 Meat End Frame";
             public const int Speed_Eating_1_2_3_Meat_End_Frame_sortIndex = 800;
@@ -321,6 +366,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Speed_Eating_1_2_3_Meat_End_Frame));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Speed_Eating_1_2_3_Meat_End_Frame_offset { get; private set; }
 
             protected float Speed_Eating_1_Tablet_Motion_Speed_raw;
             public const string Speed_Eating_1_Tablet_Motion_Speed_displayName = "Speed Eating 1 Tablet Motion Speed";
@@ -337,6 +385,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Speed_Eating_1_Tablet_Motion_Speed_offset { get; private set; }
+
             protected float Speed_Eating_2_Tablet_Motion_Speed_raw;
             public const string Speed_Eating_2_Tablet_Motion_Speed_displayName = "Speed Eating 2 Tablet Motion Speed";
             public const int Speed_Eating_2_Tablet_Motion_Speed_sortIndex = 900;
@@ -351,6 +402,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Speed_Eating_2_Tablet_Motion_Speed));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Speed_Eating_2_Tablet_Motion_Speed_offset { get; private set; }
 
             protected float Speed_Eating_3_Tablet_Motion_Speed_raw;
             public const string Speed_Eating_3_Tablet_Motion_Speed_displayName = "Speed Eating 3 Tablet Motion Speed";
@@ -367,6 +421,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Speed_Eating_3_Tablet_Motion_Speed_offset { get; private set; }
+
             protected float Mud_Motion_Speed_raw;
             public const string Mud_Motion_Speed_displayName = "Mud Motion Speed";
             public const int Mud_Motion_Speed_sortIndex = 1000;
@@ -381,6 +438,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Mud_Motion_Speed));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Mud_Motion_Speed_offset { get; private set; }
 
             protected float Mud_Trans_Rate_raw;
             public const string Mud_Trans_Rate_displayName = "Mud Trans Rate";
@@ -397,6 +457,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Mud_Trans_Rate_offset { get; private set; }
+
             protected byte Elemental_Damage_Defense__raw;
             public const string Elemental_Damage_Defense__displayName = "Elemental Damage Defense %";
             public const int Elemental_Damage_Defense__sortIndex = 1100;
@@ -411,6 +474,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Elemental_Damage_Defense_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Elemental_Damage_Defense__offset { get; private set; }
 
             protected byte Elemental_Damage_Resist__raw;
             public const string Elemental_Damage_Resist__displayName = "Elemental Damage Resist %";
@@ -427,6 +493,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Elemental_Damage_Resist__offset { get; private set; }
+
             protected byte Elemental_Damage_Resist_raw;
             public const string Elemental_Damage_Resist_displayName = "Elemental Damage Resist";
             public const int Elemental_Damage_Resist_sortIndex = 1200;
@@ -441,6 +510,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Elemental_Damage_Resist));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Elemental_Damage_Resist_offset { get; private set; }
 
             protected byte Weakness_Exploit_Hit_Zone_Threshold_raw;
             public const string Weakness_Exploit_Hit_Zone_Threshold_displayName = "Weakness Exploit Hit-Zone Threshold";
@@ -457,6 +529,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Weakness_Exploit_Hit_Zone_Threshold_offset { get; private set; }
+
             protected ushort Latent_Power_Activation_Time_raw;
             public const string Latent_Power_Activation_Time_displayName = "Latent Power Activation Time";
             public const int Latent_Power_Activation_Time_sortIndex = 1300;
@@ -471,6 +546,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Latent_Power_Activation_Time));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Latent_Power_Activation_Time_offset { get; private set; }
 
             protected ushort Latent_Power_Total_Damage_to_Trigger_raw;
             public const string Latent_Power_Total_Damage_to_Trigger_displayName = "Latent Power Total Damage to Trigger";
@@ -487,6 +565,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Latent_Power_Total_Damage_to_Trigger_offset { get; private set; }
+
             protected ushort Latent_Power_Secret_Total_Damage_to_Trigger_raw;
             public const string Latent_Power_Secret_Total_Damage_to_Trigger_displayName = "Latent Power Secret Total Damage to Trigger";
             public const int Latent_Power_Secret_Total_Damage_to_Trigger_sortIndex = 1400;
@@ -501,6 +582,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Latent_Power_Secret_Total_Damage_to_Trigger));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Latent_Power_Secret_Total_Damage_to_Trigger_offset { get; private set; }
 
             protected float Heroics_Activation_Health__raw;
             public const string Heroics_Activation_Health__displayName = "Heroics Activation Health %";
@@ -517,6 +601,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Heroics_Activation_Health__offset { get; private set; }
+
             protected byte Guts_Health_Threshold_raw;
             public const string Guts_Health_Threshold_displayName = "Guts Health Threshold";
             public const int Guts_Health_Threshold_sortIndex = 1500;
@@ -532,6 +619,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Guts_Health_Threshold_offset { get; private set; }
+
             public const int lastSortIndex = 1550;
 
             public static ObservableMhwStructCollection<Skill_Params_1_> LoadData(BinaryReader reader) {
@@ -546,35 +636,65 @@ namespace MHW_Editor.Structs.PlData {
             public static Skill_Params_1_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Skill_Params_1_();
                 data.Index = i;
+                data.Speed_Eating_1_Drink_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Speed_Eating_1_Drink_Motion_Speed_raw = reader.ReadSingle();
+                data.Speed_Eating_2_Drink_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Speed_Eating_2_Drink_Motion_Speed_raw = reader.ReadSingle();
+                data.Speed_Eating_3_Drink_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Speed_Eating_3_Drink_Motion_Speed_raw = reader.ReadSingle();
+                data.Speed_Eating_1_Drink_End_Frame_offset = reader.BaseStream.Position;
                 data.Speed_Eating_1_Drink_End_Frame_raw = reader.ReadSingle();
+                data.Speed_Eating_2_Drink_End_Frame_offset = reader.BaseStream.Position;
                 data.Speed_Eating_2_Drink_End_Frame_raw = reader.ReadSingle();
+                data.Speed_Eating_3_Drink_End_Frame_offset = reader.BaseStream.Position;
                 data.Speed_Eating_3_Drink_End_Frame_raw = reader.ReadSingle();
+                data.Speed_Eating_1_Heal_Speed_Rate_offset = reader.BaseStream.Position;
                 data.Speed_Eating_1_Heal_Speed_Rate_raw = reader.ReadSingle();
+                data.Speed_Eating_2_Heal_Speed_Rate_offset = reader.BaseStream.Position;
                 data.Speed_Eating_2_Heal_Speed_Rate_raw = reader.ReadSingle();
+                data.Speed_Eating_3_Heal_Speed_Rate_offset = reader.BaseStream.Position;
                 data.Speed_Eating_3_Heal_Speed_Rate_raw = reader.ReadSingle();
+                data.Speed_Eating_1_Meat_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Speed_Eating_1_Meat_Motion_Speed_raw = reader.ReadSingle();
+                data.Speed_Eating_2_Meat_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Speed_Eating_2_Meat_Motion_Speed_raw = reader.ReadSingle();
+                data.Speed_Eating_3_Meat_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Speed_Eating_3_Meat_Motion_Speed_raw = reader.ReadSingle();
+                data.Speed_Eating_1_Meat_Loop_Count_offset = reader.BaseStream.Position;
                 data.Speed_Eating_1_Meat_Loop_Count_raw = reader.ReadByte();
+                data.Speed_Eating_2_Meat_Loop_Count_offset = reader.BaseStream.Position;
                 data.Speed_Eating_2_Meat_Loop_Count_raw = reader.ReadByte();
+                data.Speed_Eating_3_Meat_Loop_Count_offset = reader.BaseStream.Position;
                 data.Speed_Eating_3_Meat_Loop_Count_raw = reader.ReadByte();
+                data.Speed_Eating_1_2_3_Meat_End_Frame_offset = reader.BaseStream.Position;
                 data.Speed_Eating_1_2_3_Meat_End_Frame_raw = reader.ReadSingle();
+                data.Speed_Eating_1_Tablet_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Speed_Eating_1_Tablet_Motion_Speed_raw = reader.ReadSingle();
+                data.Speed_Eating_2_Tablet_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Speed_Eating_2_Tablet_Motion_Speed_raw = reader.ReadSingle();
+                data.Speed_Eating_3_Tablet_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Speed_Eating_3_Tablet_Motion_Speed_raw = reader.ReadSingle();
+                data.Mud_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Mud_Motion_Speed_raw = reader.ReadSingle();
+                data.Mud_Trans_Rate_offset = reader.BaseStream.Position;
                 data.Mud_Trans_Rate_raw = reader.ReadSingle();
+                data.Elemental_Damage_Defense__offset = reader.BaseStream.Position;
                 data.Elemental_Damage_Defense__raw = reader.ReadByte();
+                data.Elemental_Damage_Resist__offset = reader.BaseStream.Position;
                 data.Elemental_Damage_Resist__raw = reader.ReadByte();
+                data.Elemental_Damage_Resist_offset = reader.BaseStream.Position;
                 data.Elemental_Damage_Resist_raw = reader.ReadByte();
+                data.Weakness_Exploit_Hit_Zone_Threshold_offset = reader.BaseStream.Position;
                 data.Weakness_Exploit_Hit_Zone_Threshold_raw = reader.ReadByte();
+                data.Latent_Power_Activation_Time_offset = reader.BaseStream.Position;
                 data.Latent_Power_Activation_Time_raw = reader.ReadUInt16();
+                data.Latent_Power_Total_Damage_to_Trigger_offset = reader.BaseStream.Position;
                 data.Latent_Power_Total_Damage_to_Trigger_raw = reader.ReadUInt16();
+                data.Latent_Power_Secret_Total_Damage_to_Trigger_offset = reader.BaseStream.Position;
                 data.Latent_Power_Secret_Total_Damage_to_Trigger_raw = reader.ReadUInt16();
+                data.Heroics_Activation_Health__offset = reader.BaseStream.Position;
                 data.Heroics_Activation_Health__raw = reader.ReadSingle();
+                data.Guts_Health_Threshold_offset = reader.BaseStream.Position;
                 data.Guts_Health_Threshold_raw = reader.ReadByte();
                 return data;
             }
@@ -614,36 +734,36 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Speed Eating 1 Drink Motion Speed", "Speed_Eating_1_Drink_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Speed Eating 2 Drink Motion Speed", "Speed_Eating_2_Drink_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Speed Eating 3 Drink Motion Speed", "Speed_Eating_3_Drink_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Speed Eating 1 Drink End Frame", "Speed_Eating_1_Drink_End_Frame"),
-                    new MultiStructItemCustomView(this, "Speed Eating 2 Drink End Frame", "Speed_Eating_2_Drink_End_Frame"),
-                    new MultiStructItemCustomView(this, "Speed Eating 3 Drink End Frame", "Speed_Eating_3_Drink_End_Frame"),
-                    new MultiStructItemCustomView(this, "Speed Eating 1 Heal Speed Rate", "Speed_Eating_1_Heal_Speed_Rate"),
-                    new MultiStructItemCustomView(this, "Speed Eating 2 Heal Speed Rate", "Speed_Eating_2_Heal_Speed_Rate"),
-                    new MultiStructItemCustomView(this, "Speed Eating 3 Heal Speed Rate", "Speed_Eating_3_Heal_Speed_Rate"),
-                    new MultiStructItemCustomView(this, "Speed Eating 1 Meat Motion Speed", "Speed_Eating_1_Meat_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Speed Eating 2 Meat Motion Speed", "Speed_Eating_2_Meat_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Speed Eating 3 Meat Motion Speed", "Speed_Eating_3_Meat_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Speed Eating 1 Meat Loop Count", "Speed_Eating_1_Meat_Loop_Count"),
-                    new MultiStructItemCustomView(this, "Speed Eating 2 Meat Loop Count", "Speed_Eating_2_Meat_Loop_Count"),
-                    new MultiStructItemCustomView(this, "Speed Eating 3 Meat Loop Count", "Speed_Eating_3_Meat_Loop_Count"),
-                    new MultiStructItemCustomView(this, "Speed Eating 1/2/3 Meat End Frame", "Speed_Eating_1_2_3_Meat_End_Frame"),
-                    new MultiStructItemCustomView(this, "Speed Eating 1 Tablet Motion Speed", "Speed_Eating_1_Tablet_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Speed Eating 2 Tablet Motion Speed", "Speed_Eating_2_Tablet_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Speed Eating 3 Tablet Motion Speed", "Speed_Eating_3_Tablet_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Mud Motion Speed", "Mud_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Mud Trans Rate", "Mud_Trans_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Damage Defense %", "Elemental_Damage_Defense_"),
-                    new MultiStructItemCustomView(this, "Elemental Damage Resist %", "Elemental_Damage_Resist_"),
-                    new MultiStructItemCustomView(this, "Elemental Damage Resist", "Elemental_Damage_Resist"),
-                    new MultiStructItemCustomView(this, "Weakness Exploit Hit-Zone Threshold", "Weakness_Exploit_Hit_Zone_Threshold"),
-                    new MultiStructItemCustomView(this, "Latent Power Activation Time", "Latent_Power_Activation_Time"),
-                    new MultiStructItemCustomView(this, "Latent Power Total Damage to Trigger", "Latent_Power_Total_Damage_to_Trigger"),
-                    new MultiStructItemCustomView(this, "Latent Power Secret Total Damage to Trigger", "Latent_Power_Secret_Total_Damage_to_Trigger"),
-                    new MultiStructItemCustomView(this, "Heroics Activation Health %", "Heroics_Activation_Health_"),
-                    new MultiStructItemCustomView(this, "Guts Health Threshold", "Guts_Health_Threshold"),
+                    new MultiStructItemCustomView(this, "Speed Eating 1 Drink Motion Speed", "Speed_Eating_1_Drink_Motion_Speed", "Speed_Eating_1_Drink_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 2 Drink Motion Speed", "Speed_Eating_2_Drink_Motion_Speed", "Speed_Eating_2_Drink_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 3 Drink Motion Speed", "Speed_Eating_3_Drink_Motion_Speed", "Speed_Eating_3_Drink_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 1 Drink End Frame", "Speed_Eating_1_Drink_End_Frame", "Speed_Eating_1_Drink_End_Frame_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 2 Drink End Frame", "Speed_Eating_2_Drink_End_Frame", "Speed_Eating_2_Drink_End_Frame_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 3 Drink End Frame", "Speed_Eating_3_Drink_End_Frame", "Speed_Eating_3_Drink_End_Frame_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 1 Heal Speed Rate", "Speed_Eating_1_Heal_Speed_Rate", "Speed_Eating_1_Heal_Speed_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 2 Heal Speed Rate", "Speed_Eating_2_Heal_Speed_Rate", "Speed_Eating_2_Heal_Speed_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 3 Heal Speed Rate", "Speed_Eating_3_Heal_Speed_Rate", "Speed_Eating_3_Heal_Speed_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 1 Meat Motion Speed", "Speed_Eating_1_Meat_Motion_Speed", "Speed_Eating_1_Meat_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 2 Meat Motion Speed", "Speed_Eating_2_Meat_Motion_Speed", "Speed_Eating_2_Meat_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 3 Meat Motion Speed", "Speed_Eating_3_Meat_Motion_Speed", "Speed_Eating_3_Meat_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 1 Meat Loop Count", "Speed_Eating_1_Meat_Loop_Count", "Speed_Eating_1_Meat_Loop_Count_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 2 Meat Loop Count", "Speed_Eating_2_Meat_Loop_Count", "Speed_Eating_2_Meat_Loop_Count_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 3 Meat Loop Count", "Speed_Eating_3_Meat_Loop_Count", "Speed_Eating_3_Meat_Loop_Count_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 1/2/3 Meat End Frame", "Speed_Eating_1_2_3_Meat_End_Frame", "Speed_Eating_1_2_3_Meat_End_Frame_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 1 Tablet Motion Speed", "Speed_Eating_1_Tablet_Motion_Speed", "Speed_Eating_1_Tablet_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 2 Tablet Motion Speed", "Speed_Eating_2_Tablet_Motion_Speed", "Speed_Eating_2_Tablet_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Speed Eating 3 Tablet Motion Speed", "Speed_Eating_3_Tablet_Motion_Speed", "Speed_Eating_3_Tablet_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Mud Motion Speed", "Mud_Motion_Speed", "Mud_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Mud Trans Rate", "Mud_Trans_Rate", "Mud_Trans_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Damage Defense %", "Elemental_Damage_Defense_", "Elemental_Damage_Defense__offset"),
+                    new MultiStructItemCustomView(this, "Elemental Damage Resist %", "Elemental_Damage_Resist_", "Elemental_Damage_Resist__offset"),
+                    new MultiStructItemCustomView(this, "Elemental Damage Resist", "Elemental_Damage_Resist", "Elemental_Damage_Resist_offset"),
+                    new MultiStructItemCustomView(this, "Weakness Exploit Hit-Zone Threshold", "Weakness_Exploit_Hit_Zone_Threshold", "Weakness_Exploit_Hit_Zone_Threshold_offset"),
+                    new MultiStructItemCustomView(this, "Latent Power Activation Time", "Latent_Power_Activation_Time", "Latent_Power_Activation_Time_offset"),
+                    new MultiStructItemCustomView(this, "Latent Power Total Damage to Trigger", "Latent_Power_Total_Damage_to_Trigger", "Latent_Power_Total_Damage_to_Trigger_offset"),
+                    new MultiStructItemCustomView(this, "Latent Power Secret Total Damage to Trigger", "Latent_Power_Secret_Total_Damage_to_Trigger", "Latent_Power_Secret_Total_Damage_to_Trigger_offset"),
+                    new MultiStructItemCustomView(this, "Heroics Activation Health %", "Heroics_Activation_Health_", "Heroics_Activation_Health__offset"),
+                    new MultiStructItemCustomView(this, "Guts Health Threshold", "Guts_Health_Threshold", "Guts_Health_Threshold_offset"),
                 };
             }
         }
@@ -777,6 +897,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk1_offset { get; private set; }
+
             protected float Unk2_raw;
             public const string Unk2_displayName = "Unk2";
             public const int Unk2_sortIndex = 100;
@@ -791,6 +914,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk2_offset { get; private set; }
 
             protected float Unk3_raw;
             public const string Unk3_displayName = "Unk3";
@@ -807,6 +933,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk3_offset { get; private set; }
+
             protected float Unk4_raw;
             public const string Unk4_displayName = "Unk4";
             public const int Unk4_sortIndex = 200;
@@ -821,6 +950,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk4_offset { get; private set; }
 
             protected float Unk5_raw;
             public const string Unk5_displayName = "Unk5";
@@ -837,6 +969,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk5_offset { get; private set; }
+
             protected float Unk6_raw;
             public const string Unk6_displayName = "Unk6";
             public const int Unk6_sortIndex = 300;
@@ -851,6 +986,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk6));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk6_offset { get; private set; }
 
             protected float Unk7_raw;
             public const string Unk7_displayName = "Unk7";
@@ -867,6 +1005,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk7_offset { get; private set; }
+
             protected float Unk8_raw;
             public const string Unk8_displayName = "Unk8";
             public const int Unk8_sortIndex = 400;
@@ -881,6 +1022,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk8));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk8_offset { get; private set; }
 
             protected float Unk9_raw;
             public const string Unk9_displayName = "Unk9";
@@ -897,6 +1041,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk9_offset { get; private set; }
+
             protected float Unk10_raw;
             public const string Unk10_displayName = "Unk10";
             public const int Unk10_sortIndex = 500;
@@ -911,6 +1058,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk10));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk10_offset { get; private set; }
 
             protected float Unk11_raw;
             public const string Unk11_displayName = "Unk11";
@@ -927,6 +1077,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk11_offset { get; private set; }
+
             protected float Unk12_raw;
             public const string Unk12_displayName = "Unk12";
             public const int Unk12_sortIndex = 600;
@@ -941,6 +1094,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk12));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk12_offset { get; private set; }
 
             protected float Unk13_raw;
             public const string Unk13_displayName = "Unk13";
@@ -957,6 +1113,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk13_offset { get; private set; }
+
             protected float Unk14_raw;
             public const string Unk14_displayName = "Unk14";
             public const int Unk14_sortIndex = 700;
@@ -971,6 +1130,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk14));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk14_offset { get; private set; }
 
             protected float Unk15_raw;
             public const string Unk15_displayName = "Unk15";
@@ -987,6 +1149,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk15_offset { get; private set; }
+
             protected float Unk16_raw;
             public const string Unk16_displayName = "Unk16";
             public const int Unk16_sortIndex = 800;
@@ -1001,6 +1166,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk16));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk16_offset { get; private set; }
 
             protected float Unk17_raw;
             public const string Unk17_displayName = "Unk17";
@@ -1017,6 +1185,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk17_offset { get; private set; }
+
             protected float Unk18_raw;
             public const string Unk18_displayName = "Unk18";
             public const int Unk18_sortIndex = 900;
@@ -1032,6 +1203,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk18_offset { get; private set; }
+
             public const int lastSortIndex = 950;
 
             public static ObservableMhwStructCollection<Skill_Params_2_> LoadData(BinaryReader reader) {
@@ -1046,23 +1220,41 @@ namespace MHW_Editor.Structs.PlData {
             public static Skill_Params_2_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Skill_Params_2_();
                 data.Index = i;
+                data.Unk1_offset = reader.BaseStream.Position;
                 data.Unk1_raw = reader.ReadSingle();
+                data.Unk2_offset = reader.BaseStream.Position;
                 data.Unk2_raw = reader.ReadSingle();
+                data.Unk3_offset = reader.BaseStream.Position;
                 data.Unk3_raw = reader.ReadSingle();
+                data.Unk4_offset = reader.BaseStream.Position;
                 data.Unk4_raw = reader.ReadSingle();
+                data.Unk5_offset = reader.BaseStream.Position;
                 data.Unk5_raw = reader.ReadSingle();
+                data.Unk6_offset = reader.BaseStream.Position;
                 data.Unk6_raw = reader.ReadSingle();
+                data.Unk7_offset = reader.BaseStream.Position;
                 data.Unk7_raw = reader.ReadSingle();
+                data.Unk8_offset = reader.BaseStream.Position;
                 data.Unk8_raw = reader.ReadSingle();
+                data.Unk9_offset = reader.BaseStream.Position;
                 data.Unk9_raw = reader.ReadSingle();
+                data.Unk10_offset = reader.BaseStream.Position;
                 data.Unk10_raw = reader.ReadSingle();
+                data.Unk11_offset = reader.BaseStream.Position;
                 data.Unk11_raw = reader.ReadSingle();
+                data.Unk12_offset = reader.BaseStream.Position;
                 data.Unk12_raw = reader.ReadSingle();
+                data.Unk13_offset = reader.BaseStream.Position;
                 data.Unk13_raw = reader.ReadSingle();
+                data.Unk14_offset = reader.BaseStream.Position;
                 data.Unk14_raw = reader.ReadSingle();
+                data.Unk15_offset = reader.BaseStream.Position;
                 data.Unk15_raw = reader.ReadSingle();
+                data.Unk16_offset = reader.BaseStream.Position;
                 data.Unk16_raw = reader.ReadSingle();
+                data.Unk17_offset = reader.BaseStream.Position;
                 data.Unk17_raw = reader.ReadSingle();
+                data.Unk18_offset = reader.BaseStream.Position;
                 data.Unk18_raw = reader.ReadSingle();
                 return data;
             }
@@ -1090,24 +1282,24 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk1", "Unk1"),
-                    new MultiStructItemCustomView(this, "Unk2", "Unk2"),
-                    new MultiStructItemCustomView(this, "Unk3", "Unk3"),
-                    new MultiStructItemCustomView(this, "Unk4", "Unk4"),
-                    new MultiStructItemCustomView(this, "Unk5", "Unk5"),
-                    new MultiStructItemCustomView(this, "Unk6", "Unk6"),
-                    new MultiStructItemCustomView(this, "Unk7", "Unk7"),
-                    new MultiStructItemCustomView(this, "Unk8", "Unk8"),
-                    new MultiStructItemCustomView(this, "Unk9", "Unk9"),
-                    new MultiStructItemCustomView(this, "Unk10", "Unk10"),
-                    new MultiStructItemCustomView(this, "Unk11", "Unk11"),
-                    new MultiStructItemCustomView(this, "Unk12", "Unk12"),
-                    new MultiStructItemCustomView(this, "Unk13", "Unk13"),
-                    new MultiStructItemCustomView(this, "Unk14", "Unk14"),
-                    new MultiStructItemCustomView(this, "Unk15", "Unk15"),
-                    new MultiStructItemCustomView(this, "Unk16", "Unk16"),
-                    new MultiStructItemCustomView(this, "Unk17", "Unk17"),
-                    new MultiStructItemCustomView(this, "Unk18", "Unk18"),
+                    new MultiStructItemCustomView(this, "Unk1", "Unk1", "Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Unk2", "Unk2", "Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Unk3", "Unk3", "Unk3_offset"),
+                    new MultiStructItemCustomView(this, "Unk4", "Unk4", "Unk4_offset"),
+                    new MultiStructItemCustomView(this, "Unk5", "Unk5", "Unk5_offset"),
+                    new MultiStructItemCustomView(this, "Unk6", "Unk6", "Unk6_offset"),
+                    new MultiStructItemCustomView(this, "Unk7", "Unk7", "Unk7_offset"),
+                    new MultiStructItemCustomView(this, "Unk8", "Unk8", "Unk8_offset"),
+                    new MultiStructItemCustomView(this, "Unk9", "Unk9", "Unk9_offset"),
+                    new MultiStructItemCustomView(this, "Unk10", "Unk10", "Unk10_offset"),
+                    new MultiStructItemCustomView(this, "Unk11", "Unk11", "Unk11_offset"),
+                    new MultiStructItemCustomView(this, "Unk12", "Unk12", "Unk12_offset"),
+                    new MultiStructItemCustomView(this, "Unk13", "Unk13", "Unk13_offset"),
+                    new MultiStructItemCustomView(this, "Unk14", "Unk14", "Unk14_offset"),
+                    new MultiStructItemCustomView(this, "Unk15", "Unk15", "Unk15_offset"),
+                    new MultiStructItemCustomView(this, "Unk16", "Unk16", "Unk16_offset"),
+                    new MultiStructItemCustomView(this, "Unk17", "Unk17", "Unk17_offset"),
+                    new MultiStructItemCustomView(this, "Unk18", "Unk18", "Unk18_offset"),
                 };
             }
         }
@@ -2063,6 +2255,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee__offset { get; private set; }
+
             protected ushort Bludgeoner_Orange_Sharpness_Attack_Bonus_raw;
             public const string Bludgeoner_Orange_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Orange Sharpness Attack Bonus";
             public const int Bludgeoner_Orange_Sharpness_Attack_Bonus_sortIndex = 100;
@@ -2077,6 +2272,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bludgeoner_Orange_Sharpness_Attack_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bludgeoner_Orange_Sharpness_Attack_Bonus_offset { get; private set; }
 
             protected ushort Bludgeoner_Yellow_Sharpness_Attack_Bonus_raw;
             public const string Bludgeoner_Yellow_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Yellow Sharpness Attack Bonus";
@@ -2093,6 +2291,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bludgeoner_Yellow_Sharpness_Attack_Bonus_offset { get; private set; }
+
             protected ushort Bludgeoner_Green_Sharpness_Attack_Bonus_raw;
             public const string Bludgeoner_Green_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Green Sharpness Attack Bonus";
             public const int Bludgeoner_Green_Sharpness_Attack_Bonus_sortIndex = 200;
@@ -2107,6 +2308,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bludgeoner_Green_Sharpness_Attack_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bludgeoner_Green_Sharpness_Attack_Bonus_offset { get; private set; }
 
             protected ushort Bludgeoner_Blue_Sharpness_Attack_Bonus_raw;
             public const string Bludgeoner_Blue_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Blue Sharpness Attack Bonus";
@@ -2123,6 +2327,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bludgeoner_Blue_Sharpness_Attack_Bonus_offset { get; private set; }
+
             protected ushort Bludgeoner_White_Sharpness_Attack_Bonus_raw;
             public const string Bludgeoner_White_Sharpness_Attack_Bonus_displayName = "Bludgeoner: White Sharpness Attack Bonus";
             public const int Bludgeoner_White_Sharpness_Attack_Bonus_sortIndex = 300;
@@ -2137,6 +2344,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bludgeoner_White_Sharpness_Attack_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bludgeoner_White_Sharpness_Attack_Bonus_offset { get; private set; }
 
             protected ushort Bludgeoner_Purple_Sharpness_Attack_Bonus_raw;
             public const string Bludgeoner_Purple_Sharpness_Attack_Bonus_displayName = "Bludgeoner: Purple Sharpness Attack Bonus";
@@ -2153,6 +2363,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bludgeoner_Purple_Sharpness_Attack_Bonus_offset { get; private set; }
+
             protected ushort Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus_raw;
             public const string Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus_displayName = "Bludgeoner: Bowgun Melee Attack Stun Bonus";
             public const int Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus_sortIndex = 400;
@@ -2167,6 +2380,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus_offset { get; private set; }
 
             protected float Non_Elemental_Boost_Attack_Multiplier_raw;
             public const string Non_Elemental_Boost_Attack_Multiplier_displayName = "Non-Elemental Boost: Attack Multiplier";
@@ -2183,6 +2399,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Non_Elemental_Boost_Attack_Multiplier_offset { get; private set; }
+
             protected float Affinity_Slider_Attack_Up_Activate_Time_raw;
             public const string Affinity_Slider_Attack_Up_Activate_Time_displayName = "Affinity Slider: Attack Up Activate Time";
             public const int Affinity_Slider_Attack_Up_Activate_Time_sortIndex = 500;
@@ -2197,6 +2416,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Affinity_Slider_Attack_Up_Activate_Time));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Affinity_Slider_Attack_Up_Activate_Time_offset { get; private set; }
 
             protected float Affinity_Slider_Attack_Up_Duration_raw;
             public const string Affinity_Slider_Attack_Up_Duration_displayName = "Affinity Slider: Attack Up Duration";
@@ -2213,6 +2435,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Affinity_Slider_Attack_Up_Duration_offset { get; private set; }
+
             protected byte Affinity_Slider_Attack_Critical_Bonus_raw;
             public const string Affinity_Slider_Attack_Critical_Bonus_displayName = "Affinity Slider: Attack Critical Bonus";
             public const int Affinity_Slider_Attack_Critical_Bonus_sortIndex = 600;
@@ -2228,6 +2453,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Affinity_Slider_Attack_Critical_Bonus_offset { get; private set; }
+
             public const int lastSortIndex = 650;
 
             public static ObservableMhwStructCollection<Skill_Params_3_> LoadData(BinaryReader reader) {
@@ -2242,17 +2470,29 @@ namespace MHW_Editor.Structs.PlData {
             public static Skill_Params_3_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Skill_Params_3_();
                 data.Index = i;
+                data.Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee__offset = reader.BaseStream.Position;
                 data.Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee__raw = reader.ReadUInt16();
+                data.Bludgeoner_Orange_Sharpness_Attack_Bonus_offset = reader.BaseStream.Position;
                 data.Bludgeoner_Orange_Sharpness_Attack_Bonus_raw = reader.ReadUInt16();
+                data.Bludgeoner_Yellow_Sharpness_Attack_Bonus_offset = reader.BaseStream.Position;
                 data.Bludgeoner_Yellow_Sharpness_Attack_Bonus_raw = reader.ReadUInt16();
+                data.Bludgeoner_Green_Sharpness_Attack_Bonus_offset = reader.BaseStream.Position;
                 data.Bludgeoner_Green_Sharpness_Attack_Bonus_raw = reader.ReadUInt16();
+                data.Bludgeoner_Blue_Sharpness_Attack_Bonus_offset = reader.BaseStream.Position;
                 data.Bludgeoner_Blue_Sharpness_Attack_Bonus_raw = reader.ReadUInt16();
+                data.Bludgeoner_White_Sharpness_Attack_Bonus_offset = reader.BaseStream.Position;
                 data.Bludgeoner_White_Sharpness_Attack_Bonus_raw = reader.ReadUInt16();
+                data.Bludgeoner_Purple_Sharpness_Attack_Bonus_offset = reader.BaseStream.Position;
                 data.Bludgeoner_Purple_Sharpness_Attack_Bonus_raw = reader.ReadUInt16();
+                data.Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus_offset = reader.BaseStream.Position;
                 data.Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus_raw = reader.ReadUInt16();
+                data.Non_Elemental_Boost_Attack_Multiplier_offset = reader.BaseStream.Position;
                 data.Non_Elemental_Boost_Attack_Multiplier_raw = reader.ReadSingle();
+                data.Affinity_Slider_Attack_Up_Activate_Time_offset = reader.BaseStream.Position;
                 data.Affinity_Slider_Attack_Up_Activate_Time_raw = reader.ReadSingle();
+                data.Affinity_Slider_Attack_Up_Duration_offset = reader.BaseStream.Position;
                 data.Affinity_Slider_Attack_Up_Duration_raw = reader.ReadSingle();
+                data.Affinity_Slider_Attack_Critical_Bonus_offset = reader.BaseStream.Position;
                 data.Affinity_Slider_Attack_Critical_Bonus_raw = reader.ReadByte();
                 return data;
             }
@@ -2274,18 +2514,18 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Bludgeoner: Red Sharpness Attack Bonus (& BG Melee)", "Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee_"),
-                    new MultiStructItemCustomView(this, "Bludgeoner: Orange Sharpness Attack Bonus", "Bludgeoner_Orange_Sharpness_Attack_Bonus"),
-                    new MultiStructItemCustomView(this, "Bludgeoner: Yellow Sharpness Attack Bonus", "Bludgeoner_Yellow_Sharpness_Attack_Bonus"),
-                    new MultiStructItemCustomView(this, "Bludgeoner: Green Sharpness Attack Bonus", "Bludgeoner_Green_Sharpness_Attack_Bonus"),
-                    new MultiStructItemCustomView(this, "Bludgeoner: Blue Sharpness Attack Bonus", "Bludgeoner_Blue_Sharpness_Attack_Bonus"),
-                    new MultiStructItemCustomView(this, "Bludgeoner: White Sharpness Attack Bonus", "Bludgeoner_White_Sharpness_Attack_Bonus"),
-                    new MultiStructItemCustomView(this, "Bludgeoner: Purple Sharpness Attack Bonus", "Bludgeoner_Purple_Sharpness_Attack_Bonus"),
-                    new MultiStructItemCustomView(this, "Bludgeoner: Bowgun Melee Attack Stun Bonus", "Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus"),
-                    new MultiStructItemCustomView(this, "Non-Elemental Boost: Attack Multiplier", "Non_Elemental_Boost_Attack_Multiplier"),
-                    new MultiStructItemCustomView(this, "Affinity Slider: Attack Up Activate Time", "Affinity_Slider_Attack_Up_Activate_Time"),
-                    new MultiStructItemCustomView(this, "Affinity Slider: Attack Up Duration", "Affinity_Slider_Attack_Up_Duration"),
-                    new MultiStructItemCustomView(this, "Affinity Slider: Attack Critical Bonus", "Affinity_Slider_Attack_Critical_Bonus"),
+                    new MultiStructItemCustomView(this, "Bludgeoner: Red Sharpness Attack Bonus (& BG Melee)", "Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee_", "Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee__offset"),
+                    new MultiStructItemCustomView(this, "Bludgeoner: Orange Sharpness Attack Bonus", "Bludgeoner_Orange_Sharpness_Attack_Bonus", "Bludgeoner_Orange_Sharpness_Attack_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Bludgeoner: Yellow Sharpness Attack Bonus", "Bludgeoner_Yellow_Sharpness_Attack_Bonus", "Bludgeoner_Yellow_Sharpness_Attack_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Bludgeoner: Green Sharpness Attack Bonus", "Bludgeoner_Green_Sharpness_Attack_Bonus", "Bludgeoner_Green_Sharpness_Attack_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Bludgeoner: Blue Sharpness Attack Bonus", "Bludgeoner_Blue_Sharpness_Attack_Bonus", "Bludgeoner_Blue_Sharpness_Attack_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Bludgeoner: White Sharpness Attack Bonus", "Bludgeoner_White_Sharpness_Attack_Bonus", "Bludgeoner_White_Sharpness_Attack_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Bludgeoner: Purple Sharpness Attack Bonus", "Bludgeoner_Purple_Sharpness_Attack_Bonus", "Bludgeoner_Purple_Sharpness_Attack_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Bludgeoner: Bowgun Melee Attack Stun Bonus", "Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus", "Bludgeoner_Bowgun_Melee_Attack_Stun_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Non-Elemental Boost: Attack Multiplier", "Non_Elemental_Boost_Attack_Multiplier", "Non_Elemental_Boost_Attack_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Affinity Slider: Attack Up Activate Time", "Affinity_Slider_Attack_Up_Activate_Time", "Affinity_Slider_Attack_Up_Activate_Time_offset"),
+                    new MultiStructItemCustomView(this, "Affinity Slider: Attack Up Duration", "Affinity_Slider_Attack_Up_Duration", "Affinity_Slider_Attack_Up_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Affinity Slider: Attack Critical Bonus", "Affinity_Slider_Attack_Critical_Bonus", "Affinity_Slider_Attack_Critical_Bonus_offset"),
                 };
             }
         }
@@ -2419,6 +2659,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Heavy_Artillery_Ballista_Attack_Rate_1_offset { get; private set; }
+
             protected float Heavy_Artillery_Ballista_Attack_Rate_2_raw;
             public const string Heavy_Artillery_Ballista_Attack_Rate_2_displayName = "Heavy Artillery: Ballista Attack Rate 2";
             public const int Heavy_Artillery_Ballista_Attack_Rate_2_sortIndex = 100;
@@ -2433,6 +2676,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Heavy_Artillery_Ballista_Attack_Rate_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Heavy_Artillery_Ballista_Attack_Rate_2_offset { get; private set; }
 
             protected float Heavy_Artillery_Cannon_Attack_Rate_1_raw;
             public const string Heavy_Artillery_Cannon_Attack_Rate_1_displayName = "Heavy Artillery: Cannon Attack Rate 1";
@@ -2449,6 +2695,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Heavy_Artillery_Cannon_Attack_Rate_1_offset { get; private set; }
+
             protected float Heavy_Artillery_Cannon_Attack_Rate_2_raw;
             public const string Heavy_Artillery_Cannon_Attack_Rate_2_displayName = "Heavy Artillery: Cannon Attack Rate 2";
             public const int Heavy_Artillery_Cannon_Attack_Rate_2_sortIndex = 200;
@@ -2463,6 +2712,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Heavy_Artillery_Cannon_Attack_Rate_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Heavy_Artillery_Cannon_Attack_Rate_2_offset { get; private set; }
 
             protected float Bombardier_Attack_Rate_1_raw;
             public const string Bombardier_Attack_Rate_1_displayName = "Bombardier: Attack Rate 1";
@@ -2479,6 +2731,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bombardier_Attack_Rate_1_offset { get; private set; }
+
             protected float Bombardier_Attack_Rate_2_raw;
             public const string Bombardier_Attack_Rate_2_displayName = "Bombardier: Attack Rate 2";
             public const int Bombardier_Attack_Rate_2_sortIndex = 300;
@@ -2493,6 +2748,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bombardier_Attack_Rate_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bombardier_Attack_Rate_2_offset { get; private set; }
 
             protected float Bombardier_Attack_Rate_3_raw;
             public const string Bombardier_Attack_Rate_3_displayName = "Bombardier: Attack Rate 3";
@@ -2509,6 +2767,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bombardier_Attack_Rate_3_offset { get; private set; }
+
             protected float Bombardier_Attack_Rate_4_raw;
             public const string Bombardier_Attack_Rate_4_displayName = "Bombardier: Attack Rate 4";
             public const int Bombardier_Attack_Rate_4_sortIndex = 400;
@@ -2523,6 +2784,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bombardier_Attack_Rate_4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bombardier_Attack_Rate_4_offset { get; private set; }
 
             protected float Bombardier_Attack_Rate_5_raw;
             public const string Bombardier_Attack_Rate_5_displayName = "Bombardier: Attack Rate 5";
@@ -2539,6 +2803,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bombardier_Attack_Rate_5_offset { get; private set; }
+
             protected byte Capacity_Boost_Gunlance_Normal_Bonus_raw;
             public const string Capacity_Boost_Gunlance_Normal_Bonus_displayName = "Capacity Boost: Gunlance Normal Bonus";
             public const int Capacity_Boost_Gunlance_Normal_Bonus_sortIndex = 500;
@@ -2553,6 +2820,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Capacity_Boost_Gunlance_Normal_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Capacity_Boost_Gunlance_Normal_Bonus_offset { get; private set; }
 
             protected byte Capacity_Boost_Gunlance_Radiation_Bonus_raw;
             public const string Capacity_Boost_Gunlance_Radiation_Bonus_displayName = "Capacity Boost: Gunlance Radiation Bonus";
@@ -2569,6 +2839,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Capacity_Boost_Gunlance_Radiation_Bonus_offset { get; private set; }
+
             protected byte Capacity_Boost_Gunlance_Scatter_Bonus_raw;
             public const string Capacity_Boost_Gunlance_Scatter_Bonus_displayName = "Capacity Boost: Gunlance Scatter Bonus";
             public const int Capacity_Boost_Gunlance_Scatter_Bonus_sortIndex = 600;
@@ -2583,6 +2856,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Capacity_Boost_Gunlance_Scatter_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Capacity_Boost_Gunlance_Scatter_Bonus_offset { get; private set; }
 
             protected byte Capacity_Boost_Charge_Blade_Shield_Duration_Bonus_raw;
             public const string Capacity_Boost_Charge_Blade_Shield_Duration_Bonus_displayName = "Capacity Boost: Charge Blade Shield Duration Bonus";
@@ -2599,6 +2875,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Capacity_Boost_Charge_Blade_Shield_Duration_Bonus_offset { get; private set; }
+
             public const int lastSortIndex = 700;
 
             public static ObservableMhwStructCollection<Skill_Params_4_> LoadData(BinaryReader reader) {
@@ -2613,18 +2892,31 @@ namespace MHW_Editor.Structs.PlData {
             public static Skill_Params_4_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Skill_Params_4_();
                 data.Index = i;
+                data.Heavy_Artillery_Ballista_Attack_Rate_1_offset = reader.BaseStream.Position;
                 data.Heavy_Artillery_Ballista_Attack_Rate_1_raw = reader.ReadSingle();
+                data.Heavy_Artillery_Ballista_Attack_Rate_2_offset = reader.BaseStream.Position;
                 data.Heavy_Artillery_Ballista_Attack_Rate_2_raw = reader.ReadSingle();
+                data.Heavy_Artillery_Cannon_Attack_Rate_1_offset = reader.BaseStream.Position;
                 data.Heavy_Artillery_Cannon_Attack_Rate_1_raw = reader.ReadSingle();
+                data.Heavy_Artillery_Cannon_Attack_Rate_2_offset = reader.BaseStream.Position;
                 data.Heavy_Artillery_Cannon_Attack_Rate_2_raw = reader.ReadSingle();
+                data.Bombardier_Attack_Rate_1_offset = reader.BaseStream.Position;
                 data.Bombardier_Attack_Rate_1_raw = reader.ReadSingle();
+                data.Bombardier_Attack_Rate_2_offset = reader.BaseStream.Position;
                 data.Bombardier_Attack_Rate_2_raw = reader.ReadSingle();
+                data.Bombardier_Attack_Rate_3_offset = reader.BaseStream.Position;
                 data.Bombardier_Attack_Rate_3_raw = reader.ReadSingle();
+                data.Bombardier_Attack_Rate_4_offset = reader.BaseStream.Position;
                 data.Bombardier_Attack_Rate_4_raw = reader.ReadSingle();
+                data.Bombardier_Attack_Rate_5_offset = reader.BaseStream.Position;
                 data.Bombardier_Attack_Rate_5_raw = reader.ReadSingle();
+                data.Capacity_Boost_Gunlance_Normal_Bonus_offset = reader.BaseStream.Position;
                 data.Capacity_Boost_Gunlance_Normal_Bonus_raw = reader.ReadByte();
+                data.Capacity_Boost_Gunlance_Radiation_Bonus_offset = reader.BaseStream.Position;
                 data.Capacity_Boost_Gunlance_Radiation_Bonus_raw = reader.ReadByte();
+                data.Capacity_Boost_Gunlance_Scatter_Bonus_offset = reader.BaseStream.Position;
                 data.Capacity_Boost_Gunlance_Scatter_Bonus_raw = reader.ReadByte();
+                data.Capacity_Boost_Charge_Blade_Shield_Duration_Bonus_offset = reader.BaseStream.Position;
                 data.Capacity_Boost_Charge_Blade_Shield_Duration_Bonus_raw = reader.ReadByte();
                 return data;
             }
@@ -2647,19 +2939,19 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Heavy Artillery: Ballista Attack Rate 1", "Heavy_Artillery_Ballista_Attack_Rate_1"),
-                    new MultiStructItemCustomView(this, "Heavy Artillery: Ballista Attack Rate 2", "Heavy_Artillery_Ballista_Attack_Rate_2"),
-                    new MultiStructItemCustomView(this, "Heavy Artillery: Cannon Attack Rate 1", "Heavy_Artillery_Cannon_Attack_Rate_1"),
-                    new MultiStructItemCustomView(this, "Heavy Artillery: Cannon Attack Rate 2", "Heavy_Artillery_Cannon_Attack_Rate_2"),
-                    new MultiStructItemCustomView(this, "Bombardier: Attack Rate 1", "Bombardier_Attack_Rate_1"),
-                    new MultiStructItemCustomView(this, "Bombardier: Attack Rate 2", "Bombardier_Attack_Rate_2"),
-                    new MultiStructItemCustomView(this, "Bombardier: Attack Rate 3", "Bombardier_Attack_Rate_3"),
-                    new MultiStructItemCustomView(this, "Bombardier: Attack Rate 4", "Bombardier_Attack_Rate_4"),
-                    new MultiStructItemCustomView(this, "Bombardier: Attack Rate 5", "Bombardier_Attack_Rate_5"),
-                    new MultiStructItemCustomView(this, "Capacity Boost: Gunlance Normal Bonus", "Capacity_Boost_Gunlance_Normal_Bonus"),
-                    new MultiStructItemCustomView(this, "Capacity Boost: Gunlance Radiation Bonus", "Capacity_Boost_Gunlance_Radiation_Bonus"),
-                    new MultiStructItemCustomView(this, "Capacity Boost: Gunlance Scatter Bonus", "Capacity_Boost_Gunlance_Scatter_Bonus"),
-                    new MultiStructItemCustomView(this, "Capacity Boost: Charge Blade Shield Duration Bonus", "Capacity_Boost_Charge_Blade_Shield_Duration_Bonus"),
+                    new MultiStructItemCustomView(this, "Heavy Artillery: Ballista Attack Rate 1", "Heavy_Artillery_Ballista_Attack_Rate_1", "Heavy_Artillery_Ballista_Attack_Rate_1_offset"),
+                    new MultiStructItemCustomView(this, "Heavy Artillery: Ballista Attack Rate 2", "Heavy_Artillery_Ballista_Attack_Rate_2", "Heavy_Artillery_Ballista_Attack_Rate_2_offset"),
+                    new MultiStructItemCustomView(this, "Heavy Artillery: Cannon Attack Rate 1", "Heavy_Artillery_Cannon_Attack_Rate_1", "Heavy_Artillery_Cannon_Attack_Rate_1_offset"),
+                    new MultiStructItemCustomView(this, "Heavy Artillery: Cannon Attack Rate 2", "Heavy_Artillery_Cannon_Attack_Rate_2", "Heavy_Artillery_Cannon_Attack_Rate_2_offset"),
+                    new MultiStructItemCustomView(this, "Bombardier: Attack Rate 1", "Bombardier_Attack_Rate_1", "Bombardier_Attack_Rate_1_offset"),
+                    new MultiStructItemCustomView(this, "Bombardier: Attack Rate 2", "Bombardier_Attack_Rate_2", "Bombardier_Attack_Rate_2_offset"),
+                    new MultiStructItemCustomView(this, "Bombardier: Attack Rate 3", "Bombardier_Attack_Rate_3", "Bombardier_Attack_Rate_3_offset"),
+                    new MultiStructItemCustomView(this, "Bombardier: Attack Rate 4", "Bombardier_Attack_Rate_4", "Bombardier_Attack_Rate_4_offset"),
+                    new MultiStructItemCustomView(this, "Bombardier: Attack Rate 5", "Bombardier_Attack_Rate_5", "Bombardier_Attack_Rate_5_offset"),
+                    new MultiStructItemCustomView(this, "Capacity Boost: Gunlance Normal Bonus", "Capacity_Boost_Gunlance_Normal_Bonus", "Capacity_Boost_Gunlance_Normal_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Capacity Boost: Gunlance Radiation Bonus", "Capacity_Boost_Gunlance_Radiation_Bonus", "Capacity_Boost_Gunlance_Radiation_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Capacity Boost: Gunlance Scatter Bonus", "Capacity_Boost_Gunlance_Scatter_Bonus", "Capacity_Boost_Gunlance_Scatter_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Capacity Boost: Charge Blade Shield Duration Bonus", "Capacity_Boost_Charge_Blade_Shield_Duration_Bonus", "Capacity_Boost_Charge_Blade_Shield_Duration_Bonus_offset"),
                 };
             }
         }
@@ -2920,6 +3212,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Health_Auto_Recover_Interval_offset { get; private set; }
+
             protected byte Health_Auto_Recover_Value_raw;
             public const string Health_Auto_Recover_Value_displayName = "Health Auto Recover Value";
             public const int Health_Auto_Recover_Value_sortIndex = 100;
@@ -2934,6 +3229,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Health_Auto_Recover_Value));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Health_Auto_Recover_Value_offset { get; private set; }
 
             protected byte Hasten_Recovery_Great_Sword_Recovery_Health_raw;
             public const string Hasten_Recovery_Great_Sword_Recovery_Health_displayName = "Hasten Recovery: (Great Sword) Recovery Health";
@@ -2950,6 +3248,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Great_Sword_Recovery_Health_offset { get; private set; }
+
             protected byte Hasten_Recovery_Sword_Shield_Recovery_Health_raw;
             public const string Hasten_Recovery_Sword_Shield_Recovery_Health_displayName = "Hasten Recovery: (Sword & Shield) Recovery Health";
             public const int Hasten_Recovery_Sword_Shield_Recovery_Health_sortIndex = 200;
@@ -2964,6 +3265,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Hasten_Recovery_Sword_Shield_Recovery_Health));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Sword_Shield_Recovery_Health_offset { get; private set; }
 
             protected byte Hasten_Recovery_Dual_Blades_Recovery_Health_raw;
             public const string Hasten_Recovery_Dual_Blades_Recovery_Health_displayName = "Hasten Recovery: (Dual Blades) Recovery Health";
@@ -2980,6 +3284,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Dual_Blades_Recovery_Health_offset { get; private set; }
+
             protected byte Hasten_Recovery_Long_Sword_Recovery_Health_raw;
             public const string Hasten_Recovery_Long_Sword_Recovery_Health_displayName = "Hasten Recovery: (Long Sword) Recovery Health";
             public const int Hasten_Recovery_Long_Sword_Recovery_Health_sortIndex = 300;
@@ -2994,6 +3301,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Hasten_Recovery_Long_Sword_Recovery_Health));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Long_Sword_Recovery_Health_offset { get; private set; }
 
             protected byte Hasten_Recovery_Hammer_Recovery_Health_raw;
             public const string Hasten_Recovery_Hammer_Recovery_Health_displayName = "Hasten Recovery: (Hammer) Recovery Health";
@@ -3010,6 +3320,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Hammer_Recovery_Health_offset { get; private set; }
+
             protected byte Hasten_Recovery_Hunting_Horn_Recovery_Health_raw;
             public const string Hasten_Recovery_Hunting_Horn_Recovery_Health_displayName = "Hasten Recovery: (Hunting Horn) Recovery Health";
             public const int Hasten_Recovery_Hunting_Horn_Recovery_Health_sortIndex = 400;
@@ -3024,6 +3337,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Hasten_Recovery_Hunting_Horn_Recovery_Health));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Hunting_Horn_Recovery_Health_offset { get; private set; }
 
             protected byte Hasten_Recovery_Lance_Recovery_Health_raw;
             public const string Hasten_Recovery_Lance_Recovery_Health_displayName = "Hasten Recovery: (Lance) Recovery Health";
@@ -3040,6 +3356,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Lance_Recovery_Health_offset { get; private set; }
+
             protected byte Hasten_Recovery_Gunlance_Recovery_Health_raw;
             public const string Hasten_Recovery_Gunlance_Recovery_Health_displayName = "Hasten Recovery: (Gunlance) Recovery Health";
             public const int Hasten_Recovery_Gunlance_Recovery_Health_sortIndex = 500;
@@ -3054,6 +3373,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Hasten_Recovery_Gunlance_Recovery_Health));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Gunlance_Recovery_Health_offset { get; private set; }
 
             protected byte Hasten_Recovery_Switch_Axe_Recovery_Health_raw;
             public const string Hasten_Recovery_Switch_Axe_Recovery_Health_displayName = "Hasten Recovery: (Switch Axe) Recovery Health";
@@ -3070,6 +3392,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Switch_Axe_Recovery_Health_offset { get; private set; }
+
             protected byte Hasten_Recovery_Charge_Blade_Recovery_Health_raw;
             public const string Hasten_Recovery_Charge_Blade_Recovery_Health_displayName = "Hasten Recovery: (Charge Blade) Recovery Health";
             public const int Hasten_Recovery_Charge_Blade_Recovery_Health_sortIndex = 600;
@@ -3084,6 +3409,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Hasten_Recovery_Charge_Blade_Recovery_Health));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Charge_Blade_Recovery_Health_offset { get; private set; }
 
             protected byte Hasten_Recovery_Insect_Glaive_Recovery_Health_raw;
             public const string Hasten_Recovery_Insect_Glaive_Recovery_Health_displayName = "Hasten Recovery: (Insect Glaive) Recovery Health";
@@ -3100,6 +3428,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Insect_Glaive_Recovery_Health_offset { get; private set; }
+
             protected byte Hasten_Recovery_Bow_Recovery_Health_raw;
             public const string Hasten_Recovery_Bow_Recovery_Health_displayName = "Hasten Recovery: (Bow) Recovery Health";
             public const int Hasten_Recovery_Bow_Recovery_Health_sortIndex = 700;
@@ -3114,6 +3445,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Hasten_Recovery_Bow_Recovery_Health));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Bow_Recovery_Health_offset { get; private set; }
 
             protected byte Hasten_Recovery_HBG_Recovery_Health_raw;
             public const string Hasten_Recovery_HBG_Recovery_Health_displayName = "Hasten Recovery: (HBG) Recovery Health";
@@ -3130,6 +3464,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_HBG_Recovery_Health_offset { get; private set; }
+
             protected byte Hasten_Recovery_LBG_Recovery_Health_raw;
             public const string Hasten_Recovery_LBG_Recovery_Health_displayName = "Hasten Recovery: (LBG) Recovery Health";
             public const int Hasten_Recovery_LBG_Recovery_Health_sortIndex = 800;
@@ -3144,6 +3481,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Hasten_Recovery_LBG_Recovery_Health));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_LBG_Recovery_Health_offset { get; private set; }
 
             protected byte Hasten_Recovery_Success_Combo__raw;
             public const string Hasten_Recovery_Success_Combo__displayName = "Hasten Recovery: Success Combo #";
@@ -3160,6 +3500,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Success_Combo__offset { get; private set; }
+
             protected float Hasten_Recovery_Combo_Duration_raw;
             public const string Hasten_Recovery_Combo_Duration_displayName = "Hasten Recovery: Combo Duration";
             public const int Hasten_Recovery_Combo_Duration_sortIndex = 900;
@@ -3174,6 +3517,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Hasten_Recovery_Combo_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Combo_Duration_offset { get; private set; }
 
             protected float Hasten_Recovery_Combo_Ignore_Time_raw;
             public const string Hasten_Recovery_Combo_Ignore_Time_displayName = "Hasten Recovery: Combo Ignore Time";
@@ -3190,6 +3536,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Hasten_Recovery_Combo_Ignore_Time_offset { get; private set; }
+
             protected byte Unk19_raw;
             public const string Unk19_displayName = "Unk19";
             public const int Unk19_sortIndex = 1000;
@@ -3204,6 +3553,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk19));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk19_offset { get; private set; }
 
             protected float Unk20_raw;
             public const string Unk20_displayName = "Unk20";
@@ -3220,6 +3572,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk20_offset { get; private set; }
+
             protected float Unk21_raw;
             public const string Unk21_displayName = "Unk21";
             public const int Unk21_sortIndex = 1100;
@@ -3235,6 +3590,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk21_offset { get; private set; }
+
             public const int lastSortIndex = 1150;
 
             public static ObservableMhwStructCollection<Skill_Params_5_> LoadData(BinaryReader reader) {
@@ -3249,27 +3607,49 @@ namespace MHW_Editor.Structs.PlData {
             public static Skill_Params_5_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Skill_Params_5_();
                 data.Index = i;
+                data.Health_Auto_Recover_Interval_offset = reader.BaseStream.Position;
                 data.Health_Auto_Recover_Interval_raw = reader.ReadSingle();
+                data.Health_Auto_Recover_Value_offset = reader.BaseStream.Position;
                 data.Health_Auto_Recover_Value_raw = reader.ReadByte();
+                data.Hasten_Recovery_Great_Sword_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Great_Sword_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_Sword_Shield_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Sword_Shield_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_Dual_Blades_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Dual_Blades_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_Long_Sword_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Long_Sword_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_Hammer_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Hammer_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_Hunting_Horn_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Hunting_Horn_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_Lance_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Lance_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_Gunlance_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Gunlance_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_Switch_Axe_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Switch_Axe_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_Charge_Blade_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Charge_Blade_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_Insect_Glaive_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Insect_Glaive_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_Bow_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Bow_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_HBG_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_HBG_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_LBG_Recovery_Health_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_LBG_Recovery_Health_raw = reader.ReadByte();
+                data.Hasten_Recovery_Success_Combo__offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Success_Combo__raw = reader.ReadByte();
+                data.Hasten_Recovery_Combo_Duration_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Combo_Duration_raw = reader.ReadSingle();
+                data.Hasten_Recovery_Combo_Ignore_Time_offset = reader.BaseStream.Position;
                 data.Hasten_Recovery_Combo_Ignore_Time_raw = reader.ReadSingle();
+                data.Unk19_offset = reader.BaseStream.Position;
                 data.Unk19_raw = reader.ReadByte();
+                data.Unk20_offset = reader.BaseStream.Position;
                 data.Unk20_raw = reader.ReadSingle();
+                data.Unk21_offset = reader.BaseStream.Position;
                 data.Unk21_raw = reader.ReadSingle();
                 return data;
             }
@@ -3301,28 +3681,28 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Health Auto Recover Interval", "Health_Auto_Recover_Interval"),
-                    new MultiStructItemCustomView(this, "Health Auto Recover Value", "Health_Auto_Recover_Value"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (Great Sword) Recovery Health", "Hasten_Recovery_Great_Sword_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (Sword & Shield) Recovery Health", "Hasten_Recovery_Sword_Shield_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (Dual Blades) Recovery Health", "Hasten_Recovery_Dual_Blades_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (Long Sword) Recovery Health", "Hasten_Recovery_Long_Sword_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (Hammer) Recovery Health", "Hasten_Recovery_Hammer_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (Hunting Horn) Recovery Health", "Hasten_Recovery_Hunting_Horn_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (Lance) Recovery Health", "Hasten_Recovery_Lance_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (Gunlance) Recovery Health", "Hasten_Recovery_Gunlance_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (Switch Axe) Recovery Health", "Hasten_Recovery_Switch_Axe_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (Charge Blade) Recovery Health", "Hasten_Recovery_Charge_Blade_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (Insect Glaive) Recovery Health", "Hasten_Recovery_Insect_Glaive_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (Bow) Recovery Health", "Hasten_Recovery_Bow_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (HBG) Recovery Health", "Hasten_Recovery_HBG_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: (LBG) Recovery Health", "Hasten_Recovery_LBG_Recovery_Health"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: Success Combo #", "Hasten_Recovery_Success_Combo_"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: Combo Duration", "Hasten_Recovery_Combo_Duration"),
-                    new MultiStructItemCustomView(this, "Hasten Recovery: Combo Ignore Time", "Hasten_Recovery_Combo_Ignore_Time"),
-                    new MultiStructItemCustomView(this, "Unk19", "Unk19"),
-                    new MultiStructItemCustomView(this, "Unk20", "Unk20"),
-                    new MultiStructItemCustomView(this, "Unk21", "Unk21"),
+                    new MultiStructItemCustomView(this, "Health Auto Recover Interval", "Health_Auto_Recover_Interval", "Health_Auto_Recover_Interval_offset"),
+                    new MultiStructItemCustomView(this, "Health Auto Recover Value", "Health_Auto_Recover_Value", "Health_Auto_Recover_Value_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (Great Sword) Recovery Health", "Hasten_Recovery_Great_Sword_Recovery_Health", "Hasten_Recovery_Great_Sword_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (Sword & Shield) Recovery Health", "Hasten_Recovery_Sword_Shield_Recovery_Health", "Hasten_Recovery_Sword_Shield_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (Dual Blades) Recovery Health", "Hasten_Recovery_Dual_Blades_Recovery_Health", "Hasten_Recovery_Dual_Blades_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (Long Sword) Recovery Health", "Hasten_Recovery_Long_Sword_Recovery_Health", "Hasten_Recovery_Long_Sword_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (Hammer) Recovery Health", "Hasten_Recovery_Hammer_Recovery_Health", "Hasten_Recovery_Hammer_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (Hunting Horn) Recovery Health", "Hasten_Recovery_Hunting_Horn_Recovery_Health", "Hasten_Recovery_Hunting_Horn_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (Lance) Recovery Health", "Hasten_Recovery_Lance_Recovery_Health", "Hasten_Recovery_Lance_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (Gunlance) Recovery Health", "Hasten_Recovery_Gunlance_Recovery_Health", "Hasten_Recovery_Gunlance_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (Switch Axe) Recovery Health", "Hasten_Recovery_Switch_Axe_Recovery_Health", "Hasten_Recovery_Switch_Axe_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (Charge Blade) Recovery Health", "Hasten_Recovery_Charge_Blade_Recovery_Health", "Hasten_Recovery_Charge_Blade_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (Insect Glaive) Recovery Health", "Hasten_Recovery_Insect_Glaive_Recovery_Health", "Hasten_Recovery_Insect_Glaive_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (Bow) Recovery Health", "Hasten_Recovery_Bow_Recovery_Health", "Hasten_Recovery_Bow_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (HBG) Recovery Health", "Hasten_Recovery_HBG_Recovery_Health", "Hasten_Recovery_HBG_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: (LBG) Recovery Health", "Hasten_Recovery_LBG_Recovery_Health", "Hasten_Recovery_LBG_Recovery_Health_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: Success Combo #", "Hasten_Recovery_Success_Combo_", "Hasten_Recovery_Success_Combo__offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: Combo Duration", "Hasten_Recovery_Combo_Duration", "Hasten_Recovery_Combo_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Hasten Recovery: Combo Ignore Time", "Hasten_Recovery_Combo_Ignore_Time", "Hasten_Recovery_Combo_Ignore_Time_offset"),
+                    new MultiStructItemCustomView(this, "Unk19", "Unk19", "Unk19_offset"),
+                    new MultiStructItemCustomView(this, "Unk20", "Unk20", "Unk20_offset"),
+                    new MultiStructItemCustomView(this, "Unk21", "Unk21", "Unk21_offset"),
                 };
             }
         }
@@ -3456,6 +3836,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Master_Fisher_Add_Hook_Time_offset { get; private set; }
+
             protected float Master_Fisher_Big_Fish_Catch_Rate_raw;
             public const string Master_Fisher_Big_Fish_Catch_Rate_displayName = "Master Fisher: Big Fish Catch Rate";
             public const int Master_Fisher_Big_Fish_Catch_Rate_sortIndex = 100;
@@ -3470,6 +3853,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Master_Fisher_Big_Fish_Catch_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Master_Fisher_Big_Fish_Catch_Rate_offset { get; private set; }
 
             protected float Adrenaline_Stamina_Rate_raw;
             public const string Adrenaline_Stamina_Rate_displayName = "Adrenaline: Stamina Rate";
@@ -3486,6 +3872,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Adrenaline_Stamina_Rate_offset { get; private set; }
+
             protected float Elemental_Airborne_Great_Sword_Rate_raw;
             public const string Elemental_Airborne_Great_Sword_Rate_displayName = "Elemental Airborne: (Great Sword) Rate";
             public const int Elemental_Airborne_Great_Sword_Rate_sortIndex = 200;
@@ -3500,6 +3889,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Elemental_Airborne_Great_Sword_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_Great_Sword_Rate_offset { get; private set; }
 
             protected float Elemental_Airborne_Sword_Shield_Rate_raw;
             public const string Elemental_Airborne_Sword_Shield_Rate_displayName = "Elemental Airborne: (Sword & Shield) Rate";
@@ -3516,6 +3908,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_Sword_Shield_Rate_offset { get; private set; }
+
             protected float Elemental_Airborne_Dual_Blades_Rate_raw;
             public const string Elemental_Airborne_Dual_Blades_Rate_displayName = "Elemental Airborne: (Dual Blades) Rate";
             public const int Elemental_Airborne_Dual_Blades_Rate_sortIndex = 300;
@@ -3530,6 +3925,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Elemental_Airborne_Dual_Blades_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_Dual_Blades_Rate_offset { get; private set; }
 
             protected float Elemental_Airborne_Long_Sword_Rate_raw;
             public const string Elemental_Airborne_Long_Sword_Rate_displayName = "Elemental Airborne: (Long Sword) Rate";
@@ -3546,6 +3944,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_Long_Sword_Rate_offset { get; private set; }
+
             protected float Elemental_Airborne_Hammer_Rate_raw;
             public const string Elemental_Airborne_Hammer_Rate_displayName = "Elemental Airborne: (Hammer) Rate";
             public const int Elemental_Airborne_Hammer_Rate_sortIndex = 400;
@@ -3560,6 +3961,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Elemental_Airborne_Hammer_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_Hammer_Rate_offset { get; private set; }
 
             protected float Elemental_Airborne_Hunting_Horn_Rate_raw;
             public const string Elemental_Airborne_Hunting_Horn_Rate_displayName = "Elemental Airborne: (Hunting Horn) Rate";
@@ -3576,6 +3980,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_Hunting_Horn_Rate_offset { get; private set; }
+
             protected float Elemental_Airborne_Lance_Rate_raw;
             public const string Elemental_Airborne_Lance_Rate_displayName = "Elemental Airborne: (Lance) Rate";
             public const int Elemental_Airborne_Lance_Rate_sortIndex = 500;
@@ -3590,6 +3997,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Elemental_Airborne_Lance_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_Lance_Rate_offset { get; private set; }
 
             protected float Elemental_Airborne_Gunlance_Rate_raw;
             public const string Elemental_Airborne_Gunlance_Rate_displayName = "Elemental Airborne: (Gunlance) Rate";
@@ -3606,6 +4016,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_Gunlance_Rate_offset { get; private set; }
+
             protected float Elemental_Airborne_Switch_Axe_Rate_raw;
             public const string Elemental_Airborne_Switch_Axe_Rate_displayName = "Elemental Airborne: (Switch Axe) Rate";
             public const int Elemental_Airborne_Switch_Axe_Rate_sortIndex = 600;
@@ -3620,6 +4033,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Elemental_Airborne_Switch_Axe_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_Switch_Axe_Rate_offset { get; private set; }
 
             protected float Elemental_Airborne_Charge_Blade_Rate_raw;
             public const string Elemental_Airborne_Charge_Blade_Rate_displayName = "Elemental Airborne: (Charge Blade) Rate";
@@ -3636,6 +4052,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_Charge_Blade_Rate_offset { get; private set; }
+
             protected float Elemental_Airborne_Insect_Glaive_Rate_raw;
             public const string Elemental_Airborne_Insect_Glaive_Rate_displayName = "Elemental Airborne: (Insect Glaive) Rate";
             public const int Elemental_Airborne_Insect_Glaive_Rate_sortIndex = 700;
@@ -3650,6 +4069,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Elemental_Airborne_Insect_Glaive_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_Insect_Glaive_Rate_offset { get; private set; }
 
             protected float Elemental_Airborne_Bow_Rate_raw;
             public const string Elemental_Airborne_Bow_Rate_displayName = "Elemental Airborne: (Bow) Rate";
@@ -3666,6 +4088,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_Bow_Rate_offset { get; private set; }
+
             protected float Elemental_Airborne_HBG_Rate_raw;
             public const string Elemental_Airborne_HBG_Rate_displayName = "Elemental Airborne: (HBG) Rate";
             public const int Elemental_Airborne_HBG_Rate_sortIndex = 800;
@@ -3680,6 +4105,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Elemental_Airborne_HBG_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_HBG_Rate_offset { get; private set; }
 
             protected float Elemental_Airborne_LBG_Rate_raw;
             public const string Elemental_Airborne_LBG_Rate_displayName = "Elemental Airborne: (LBG) Rate";
@@ -3696,6 +4124,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Elemental_Airborne_LBG_Rate_offset { get; private set; }
+
             protected byte Unk22_raw;
             public const string Unk22_displayName = "Unk22";
             public const int Unk22_sortIndex = 900;
@@ -3710,6 +4141,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk22));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk22_offset { get; private set; }
 
             protected byte Unk23_raw;
             public const string Unk23_displayName = "Unk23";
@@ -3726,6 +4160,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk23_offset { get; private set; }
+
             protected byte Unk24_raw;
             public const string Unk24_displayName = "Unk24";
             public const int Unk24_sortIndex = 1000;
@@ -3740,6 +4177,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk24));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk24_offset { get; private set; }
 
             protected byte Unk25_raw;
             public const string Unk25_displayName = "Unk25";
@@ -3756,6 +4196,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk25_offset { get; private set; }
+
             protected byte Unk26_raw;
             public const string Unk26_displayName = "Unk26";
             public const int Unk26_sortIndex = 1100;
@@ -3770,6 +4213,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk26));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk26_offset { get; private set; }
 
             protected byte Unk27_raw;
             public const string Unk27_displayName = "Unk27";
@@ -3786,6 +4232,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk27_offset { get; private set; }
+
             protected byte Unk28_raw;
             public const string Unk28_displayName = "Unk28";
             public const int Unk28_sortIndex = 1200;
@@ -3800,6 +4249,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk28));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk28_offset { get; private set; }
 
             protected byte Unk29_raw;
             public const string Unk29_displayName = "Unk29";
@@ -3816,6 +4268,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk29_offset { get; private set; }
+
             protected byte Unk30_raw;
             public const string Unk30_displayName = "Unk30";
             public const int Unk30_sortIndex = 1300;
@@ -3830,6 +4285,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk30));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk30_offset { get; private set; }
 
             protected byte Unk31_raw;
             public const string Unk31_displayName = "Unk31";
@@ -3846,6 +4304,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk31_offset { get; private set; }
+
             protected float Unk32_raw;
             public const string Unk32_displayName = "Unk32";
             public const int Unk32_sortIndex = 1400;
@@ -3861,6 +4322,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk32_offset { get; private set; }
+
             public const int lastSortIndex = 1450;
 
             public static ObservableMhwStructCollection<Skill_Params_6_> LoadData(BinaryReader reader) {
@@ -3875,33 +4339,61 @@ namespace MHW_Editor.Structs.PlData {
             public static Skill_Params_6_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Skill_Params_6_();
                 data.Index = i;
+                data.Master_Fisher_Add_Hook_Time_offset = reader.BaseStream.Position;
                 data.Master_Fisher_Add_Hook_Time_raw = reader.ReadSingle();
+                data.Master_Fisher_Big_Fish_Catch_Rate_offset = reader.BaseStream.Position;
                 data.Master_Fisher_Big_Fish_Catch_Rate_raw = reader.ReadSingle();
+                data.Adrenaline_Stamina_Rate_offset = reader.BaseStream.Position;
                 data.Adrenaline_Stamina_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_Great_Sword_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_Great_Sword_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_Sword_Shield_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_Sword_Shield_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_Dual_Blades_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_Dual_Blades_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_Long_Sword_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_Long_Sword_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_Hammer_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_Hammer_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_Hunting_Horn_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_Hunting_Horn_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_Lance_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_Lance_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_Gunlance_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_Gunlance_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_Switch_Axe_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_Switch_Axe_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_Charge_Blade_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_Charge_Blade_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_Insect_Glaive_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_Insect_Glaive_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_Bow_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_Bow_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_HBG_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_HBG_Rate_raw = reader.ReadSingle();
+                data.Elemental_Airborne_LBG_Rate_offset = reader.BaseStream.Position;
                 data.Elemental_Airborne_LBG_Rate_raw = reader.ReadSingle();
+                data.Unk22_offset = reader.BaseStream.Position;
                 data.Unk22_raw = reader.ReadByte();
+                data.Unk23_offset = reader.BaseStream.Position;
                 data.Unk23_raw = reader.ReadByte();
+                data.Unk24_offset = reader.BaseStream.Position;
                 data.Unk24_raw = reader.ReadByte();
+                data.Unk25_offset = reader.BaseStream.Position;
                 data.Unk25_raw = reader.ReadByte();
+                data.Unk26_offset = reader.BaseStream.Position;
                 data.Unk26_raw = reader.ReadByte();
+                data.Unk27_offset = reader.BaseStream.Position;
                 data.Unk27_raw = reader.ReadByte();
+                data.Unk28_offset = reader.BaseStream.Position;
                 data.Unk28_raw = reader.ReadByte();
+                data.Unk29_offset = reader.BaseStream.Position;
                 data.Unk29_raw = reader.ReadByte();
+                data.Unk30_offset = reader.BaseStream.Position;
                 data.Unk30_raw = reader.ReadByte();
+                data.Unk31_offset = reader.BaseStream.Position;
                 data.Unk31_raw = reader.ReadByte();
+                data.Unk32_offset = reader.BaseStream.Position;
                 data.Unk32_raw = reader.ReadSingle();
                 return data;
             }
@@ -3939,34 +4431,34 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Master Fisher: Add Hook Time", "Master_Fisher_Add_Hook_Time"),
-                    new MultiStructItemCustomView(this, "Master Fisher: Big Fish Catch Rate", "Master_Fisher_Big_Fish_Catch_Rate"),
-                    new MultiStructItemCustomView(this, "Adrenaline: Stamina Rate", "Adrenaline_Stamina_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (Great Sword) Rate", "Elemental_Airborne_Great_Sword_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (Sword & Shield) Rate", "Elemental_Airborne_Sword_Shield_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (Dual Blades) Rate", "Elemental_Airborne_Dual_Blades_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (Long Sword) Rate", "Elemental_Airborne_Long_Sword_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (Hammer) Rate", "Elemental_Airborne_Hammer_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (Hunting Horn) Rate", "Elemental_Airborne_Hunting_Horn_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (Lance) Rate", "Elemental_Airborne_Lance_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (Gunlance) Rate", "Elemental_Airborne_Gunlance_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (Switch Axe) Rate", "Elemental_Airborne_Switch_Axe_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (Charge Blade) Rate", "Elemental_Airborne_Charge_Blade_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (Insect Glaive) Rate", "Elemental_Airborne_Insect_Glaive_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (Bow) Rate", "Elemental_Airborne_Bow_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (HBG) Rate", "Elemental_Airborne_HBG_Rate"),
-                    new MultiStructItemCustomView(this, "Elemental Airborne: (LBG) Rate", "Elemental_Airborne_LBG_Rate"),
-                    new MultiStructItemCustomView(this, "Unk22", "Unk22"),
-                    new MultiStructItemCustomView(this, "Unk23", "Unk23"),
-                    new MultiStructItemCustomView(this, "Unk24", "Unk24"),
-                    new MultiStructItemCustomView(this, "Unk25", "Unk25"),
-                    new MultiStructItemCustomView(this, "Unk26", "Unk26"),
-                    new MultiStructItemCustomView(this, "Unk27", "Unk27"),
-                    new MultiStructItemCustomView(this, "Unk28", "Unk28"),
-                    new MultiStructItemCustomView(this, "Unk29", "Unk29"),
-                    new MultiStructItemCustomView(this, "Unk30", "Unk30"),
-                    new MultiStructItemCustomView(this, "Unk31", "Unk31"),
-                    new MultiStructItemCustomView(this, "Unk32", "Unk32"),
+                    new MultiStructItemCustomView(this, "Master Fisher: Add Hook Time", "Master_Fisher_Add_Hook_Time", "Master_Fisher_Add_Hook_Time_offset"),
+                    new MultiStructItemCustomView(this, "Master Fisher: Big Fish Catch Rate", "Master_Fisher_Big_Fish_Catch_Rate", "Master_Fisher_Big_Fish_Catch_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Adrenaline: Stamina Rate", "Adrenaline_Stamina_Rate", "Adrenaline_Stamina_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (Great Sword) Rate", "Elemental_Airborne_Great_Sword_Rate", "Elemental_Airborne_Great_Sword_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (Sword & Shield) Rate", "Elemental_Airborne_Sword_Shield_Rate", "Elemental_Airborne_Sword_Shield_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (Dual Blades) Rate", "Elemental_Airborne_Dual_Blades_Rate", "Elemental_Airborne_Dual_Blades_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (Long Sword) Rate", "Elemental_Airborne_Long_Sword_Rate", "Elemental_Airborne_Long_Sword_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (Hammer) Rate", "Elemental_Airborne_Hammer_Rate", "Elemental_Airborne_Hammer_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (Hunting Horn) Rate", "Elemental_Airborne_Hunting_Horn_Rate", "Elemental_Airborne_Hunting_Horn_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (Lance) Rate", "Elemental_Airborne_Lance_Rate", "Elemental_Airborne_Lance_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (Gunlance) Rate", "Elemental_Airborne_Gunlance_Rate", "Elemental_Airborne_Gunlance_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (Switch Axe) Rate", "Elemental_Airborne_Switch_Axe_Rate", "Elemental_Airborne_Switch_Axe_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (Charge Blade) Rate", "Elemental_Airborne_Charge_Blade_Rate", "Elemental_Airborne_Charge_Blade_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (Insect Glaive) Rate", "Elemental_Airborne_Insect_Glaive_Rate", "Elemental_Airborne_Insect_Glaive_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (Bow) Rate", "Elemental_Airborne_Bow_Rate", "Elemental_Airborne_Bow_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (HBG) Rate", "Elemental_Airborne_HBG_Rate", "Elemental_Airborne_HBG_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Airborne: (LBG) Rate", "Elemental_Airborne_LBG_Rate", "Elemental_Airborne_LBG_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Unk22", "Unk22", "Unk22_offset"),
+                    new MultiStructItemCustomView(this, "Unk23", "Unk23", "Unk23_offset"),
+                    new MultiStructItemCustomView(this, "Unk24", "Unk24", "Unk24_offset"),
+                    new MultiStructItemCustomView(this, "Unk25", "Unk25", "Unk25_offset"),
+                    new MultiStructItemCustomView(this, "Unk26", "Unk26", "Unk26_offset"),
+                    new MultiStructItemCustomView(this, "Unk27", "Unk27", "Unk27_offset"),
+                    new MultiStructItemCustomView(this, "Unk28", "Unk28", "Unk28_offset"),
+                    new MultiStructItemCustomView(this, "Unk29", "Unk29", "Unk29_offset"),
+                    new MultiStructItemCustomView(this, "Unk30", "Unk30", "Unk30_offset"),
+                    new MultiStructItemCustomView(this, "Unk31", "Unk31", "Unk31_offset"),
+                    new MultiStructItemCustomView(this, "Unk32", "Unk32", "Unk32_offset"),
                 };
             }
         }
@@ -4134,6 +4626,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk33_offset { get; private set; }
+
             protected byte Unk34_raw;
             public const string Unk34_displayName = "Unk34";
             public const int Unk34_sortIndex = 100;
@@ -4148,6 +4643,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk34));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk34_offset { get; private set; }
 
             protected byte Unk35_raw;
             public const string Unk35_displayName = "Unk35";
@@ -4164,6 +4662,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk35_offset { get; private set; }
+
             protected byte Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit_raw;
             public const string Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit_displayName = "Frostcraft: Bow: (Rapid Shot & Clutch Claw Arrow) Consumption per Hit";
             public const int Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit_sortIndex = 200;
@@ -4178,6 +4679,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit_offset { get; private set; }
 
             protected byte Frostcraft_Bow_Power_Shot_Consumption_per_Hit_raw;
             public const string Frostcraft_Bow_Power_Shot_Consumption_per_Hit_displayName = "Frostcraft: Bow: (Power Shot) Consumption per Hit";
@@ -4194,6 +4698,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Frostcraft_Bow_Power_Shot_Consumption_per_Hit_offset { get; private set; }
+
             protected byte Frostcraft_Bow_Arc_Shot_Consumption_per_Hit_raw;
             public const string Frostcraft_Bow_Arc_Shot_Consumption_per_Hit_displayName = "Frostcraft: Bow: (Arc Shot) Consumption per Hit";
             public const int Frostcraft_Bow_Arc_Shot_Consumption_per_Hit_sortIndex = 300;
@@ -4208,6 +4715,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Frostcraft_Bow_Arc_Shot_Consumption_per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Frostcraft_Bow_Arc_Shot_Consumption_per_Hit_offset { get; private set; }
 
             protected byte Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit_raw;
             public const string Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit_displayName = "Frostcraft: Bow: (Dragonpiercer) Consumption per Hit";
@@ -4224,6 +4734,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit_offset { get; private set; }
+
             protected byte Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit_raw;
             public const string Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit_displayName = "Frostcraft: Bow: (Thousand Dragons) Consumption per Hit";
             public const int Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit_sortIndex = 400;
@@ -4238,6 +4751,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit_offset { get; private set; }
 
             protected byte Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit_raw;
             public const string Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Normal Ammo) Consumption per Hit";
@@ -4254,6 +4770,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit_offset { get; private set; }
+
             protected byte Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit_raw;
             public const string Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Pierce Ammo) Consumption per Hit";
             public const int Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit_sortIndex = 500;
@@ -4268,6 +4787,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit_offset { get; private set; }
 
             protected byte Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit_raw;
             public const string Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Spread Ammo) Consumption per Hit";
@@ -4284,6 +4806,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit_offset { get; private set; }
+
             protected byte Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit_raw;
             public const string Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Sticky Ammo) Consumption per Hit";
             public const int Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit_sortIndex = 600;
@@ -4298,6 +4823,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit_offset { get; private set; }
 
             protected byte Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit_raw;
             public const string Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Cluster Ammo) Consumption per Hit";
@@ -4314,6 +4842,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit_offset { get; private set; }
+
             protected byte Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit_raw;
             public const string Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Elemental Ammo) Consumption per Hit";
             public const int Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit_sortIndex = 700;
@@ -4328,6 +4859,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit_offset { get; private set; }
 
             protected byte Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit_raw;
             public const string Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Status Ammo) Consumption per Hit";
@@ -4344,6 +4878,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit_offset { get; private set; }
+
             protected byte Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit_raw;
             public const string Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Wyvern Ammo) Consumption per Hit";
             public const int Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit_sortIndex = 800;
@@ -4358,6 +4895,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit_offset { get; private set; }
 
             protected byte Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit_raw;
             public const string Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit_displayName = "Frostcraft: Bowgun: (Slicing Ammo) Consumption per Hit";
@@ -4374,6 +4914,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit_offset { get; private set; }
+
             protected byte Frostcraft_HBG_Wyvernheart_Consumption_per_Hit_raw;
             public const string Frostcraft_HBG_Wyvernheart_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Wyvernheart) Consumption per Hit";
             public const int Frostcraft_HBG_Wyvernheart_Consumption_per_Hit_sortIndex = 900;
@@ -4388,6 +4931,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Frostcraft_HBG_Wyvernheart_Consumption_per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Frostcraft_HBG_Wyvernheart_Consumption_per_Hit_offset { get; private set; }
 
             protected byte Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit_raw;
             public const string Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Wyvernsnipe) Consumption per Hit";
@@ -4404,6 +4950,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit_offset { get; private set; }
+
             protected byte Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit_raw;
             public const string Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Wyvernsnipe Type 2) Consumption per Hit";
             public const int Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit_sortIndex = 1000;
@@ -4418,6 +4967,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit_offset { get; private set; }
 
             protected byte Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit_raw;
             public const string Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Claw Wyvernheart Gatling) Consumption per Hit";
@@ -4434,6 +4986,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit_offset { get; private set; }
+
             protected byte Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit_raw;
             public const string Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Claw Wyvernheart Finish) Consumption per Hit";
             public const int Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit_sortIndex = 1100;
@@ -4448,6 +5003,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit_offset { get; private set; }
 
             protected byte Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit_raw;
             public const string Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit_displayName = "Frostcraft: HBG: (Wyvernsnipe Claw) Consumption per Hit";
@@ -4464,6 +5022,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit_offset { get; private set; }
+
             protected byte Frostcraft_LBG_Wyvernblast_Consumption_per_Hit_raw;
             public const string Frostcraft_LBG_Wyvernblast_Consumption_per_Hit_displayName = "Frostcraft: LBG: (Wyvernblast) Consumption per Hit";
             public const int Frostcraft_LBG_Wyvernblast_Consumption_per_Hit_sortIndex = 1200;
@@ -4478,6 +5039,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Frostcraft_LBG_Wyvernblast_Consumption_per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Frostcraft_LBG_Wyvernblast_Consumption_per_Hit_offset { get; private set; }
 
             protected byte Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit_raw;
             public const string Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit_displayName = "Frostcraft: LBG: (Wyvernblast Claw) Consumption per Hit";
@@ -4494,6 +5058,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit_offset { get; private set; }
+
             public const int lastSortIndex = 1300;
 
             public static ObservableMhwStructCollection<Frostcraft_2_> LoadData(BinaryReader reader) {
@@ -4508,30 +5075,55 @@ namespace MHW_Editor.Structs.PlData {
             public static Frostcraft_2_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Frostcraft_2_();
                 data.Index = i;
+                data.Unk33_offset = reader.BaseStream.Position;
                 data.Unk33_raw = reader.ReadByte();
+                data.Unk34_offset = reader.BaseStream.Position;
                 data.Unk34_raw = reader.ReadByte();
+                data.Unk35_offset = reader.BaseStream.Position;
                 data.Unk35_raw = reader.ReadByte();
+                data.Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bow_Power_Shot_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bow_Power_Shot_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bow_Arc_Shot_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bow_Arc_Shot_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_HBG_Wyvernheart_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_HBG_Wyvernheart_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_LBG_Wyvernblast_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_LBG_Wyvernblast_Consumption_per_Hit_raw = reader.ReadByte();
+                data.Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit_offset = reader.BaseStream.Position;
                 data.Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit_raw = reader.ReadByte();
                 return data;
             }
@@ -4566,31 +5158,31 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk33", "Unk33"),
-                    new MultiStructItemCustomView(this, "Unk34", "Unk34"),
-                    new MultiStructItemCustomView(this, "Unk35", "Unk35"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bow: (Rapid Shot & Clutch Claw Arrow) Consumption per Hit", "Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bow: (Power Shot) Consumption per Hit", "Frostcraft_Bow_Power_Shot_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bow: (Arc Shot) Consumption per Hit", "Frostcraft_Bow_Arc_Shot_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bow: (Dragonpiercer) Consumption per Hit", "Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bow: (Thousand Dragons) Consumption per Hit", "Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Normal Ammo) Consumption per Hit", "Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Pierce Ammo) Consumption per Hit", "Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Spread Ammo) Consumption per Hit", "Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Sticky Ammo) Consumption per Hit", "Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Cluster Ammo) Consumption per Hit", "Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Elemental Ammo) Consumption per Hit", "Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Status Ammo) Consumption per Hit", "Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Wyvern Ammo) Consumption per Hit", "Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Slicing Ammo) Consumption per Hit", "Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: HBG: (Wyvernheart) Consumption per Hit", "Frostcraft_HBG_Wyvernheart_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: HBG: (Wyvernsnipe) Consumption per Hit", "Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: HBG: (Wyvernsnipe Type 2) Consumption per Hit", "Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: HBG: (Claw Wyvernheart Gatling) Consumption per Hit", "Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: HBG: (Claw Wyvernheart Finish) Consumption per Hit", "Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: HBG: (Wyvernsnipe Claw) Consumption per Hit", "Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: LBG: (Wyvernblast) Consumption per Hit", "Frostcraft_LBG_Wyvernblast_Consumption_per_Hit"),
-                    new MultiStructItemCustomView(this, "Frostcraft: LBG: (Wyvernblast Claw) Consumption per Hit", "Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit"),
+                    new MultiStructItemCustomView(this, "Unk33", "Unk33", "Unk33_offset"),
+                    new MultiStructItemCustomView(this, "Unk34", "Unk34", "Unk34_offset"),
+                    new MultiStructItemCustomView(this, "Unk35", "Unk35", "Unk35_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bow: (Rapid Shot & Clutch Claw Arrow) Consumption per Hit", "Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit", "Frostcraft_Bow_Rapid_Shot_Clutch_Claw_Arrow_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bow: (Power Shot) Consumption per Hit", "Frostcraft_Bow_Power_Shot_Consumption_per_Hit", "Frostcraft_Bow_Power_Shot_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bow: (Arc Shot) Consumption per Hit", "Frostcraft_Bow_Arc_Shot_Consumption_per_Hit", "Frostcraft_Bow_Arc_Shot_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bow: (Dragonpiercer) Consumption per Hit", "Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit", "Frostcraft_Bow_Dragonpiercer_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bow: (Thousand Dragons) Consumption per Hit", "Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit", "Frostcraft_Bow_Thousand_Dragons_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Normal Ammo) Consumption per Hit", "Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit", "Frostcraft_Bowgun_Normal_Ammo_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Pierce Ammo) Consumption per Hit", "Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit", "Frostcraft_Bowgun_Pierce_Ammo_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Spread Ammo) Consumption per Hit", "Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit", "Frostcraft_Bowgun_Spread_Ammo_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Sticky Ammo) Consumption per Hit", "Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit", "Frostcraft_Bowgun_Sticky_Ammo_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Cluster Ammo) Consumption per Hit", "Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit", "Frostcraft_Bowgun_Cluster_Ammo_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Elemental Ammo) Consumption per Hit", "Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit", "Frostcraft_Bowgun_Elemental_Ammo_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Status Ammo) Consumption per Hit", "Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit", "Frostcraft_Bowgun_Status_Ammo_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Wyvern Ammo) Consumption per Hit", "Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit", "Frostcraft_Bowgun_Wyvern_Ammo_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: Bowgun: (Slicing Ammo) Consumption per Hit", "Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit", "Frostcraft_Bowgun_Slicing_Ammo_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: HBG: (Wyvernheart) Consumption per Hit", "Frostcraft_HBG_Wyvernheart_Consumption_per_Hit", "Frostcraft_HBG_Wyvernheart_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: HBG: (Wyvernsnipe) Consumption per Hit", "Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit", "Frostcraft_HBG_Wyvernsnipe_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: HBG: (Wyvernsnipe Type 2) Consumption per Hit", "Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit", "Frostcraft_HBG_Wyvernsnipe_Type_2_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: HBG: (Claw Wyvernheart Gatling) Consumption per Hit", "Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit", "Frostcraft_HBG_Claw_Wyvernheart_Gatling_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: HBG: (Claw Wyvernheart Finish) Consumption per Hit", "Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit", "Frostcraft_HBG_Claw_Wyvernheart_Finish_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: HBG: (Wyvernsnipe Claw) Consumption per Hit", "Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit", "Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: LBG: (Wyvernblast) Consumption per Hit", "Frostcraft_LBG_Wyvernblast_Consumption_per_Hit", "Frostcraft_LBG_Wyvernblast_Consumption_per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Frostcraft: LBG: (Wyvernblast Claw) Consumption per Hit", "Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit", "Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit_offset"),
                 };
             }
         }
@@ -4614,6 +5206,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_Safi_1_offset { get; private set; }
+
             protected float Unk36_raw;
             public const string Unk36_displayName = "Unk36";
             public const int Unk36_sortIndex = 100;
@@ -4628,6 +5223,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk36));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk36_offset { get; private set; }
 
             protected float Unk37_raw;
             public const string Unk37_displayName = "Unk37";
@@ -4644,6 +5242,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk37_offset { get; private set; }
+
             protected float Unk38_raw;
             public const string Unk38_displayName = "Unk38";
             public const int Unk38_sortIndex = 200;
@@ -4658,6 +5259,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk38));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk38_offset { get; private set; }
 
             protected float Unk39_raw;
             public const string Unk39_displayName = "Unk39";
@@ -4674,6 +5278,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk39_offset { get; private set; }
+
             protected float Unk40_raw;
             public const string Unk40_displayName = "Unk40";
             public const int Unk40_sortIndex = 300;
@@ -4688,6 +5295,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk40));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk40_offset { get; private set; }
 
             protected float Unk41_raw;
             public const string Unk41_displayName = "Unk41";
@@ -4704,6 +5314,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk41_offset { get; private set; }
+
             protected float Unk42_raw;
             public const string Unk42_displayName = "Unk42";
             public const int Unk42_sortIndex = 400;
@@ -4718,6 +5331,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk42));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk42_offset { get; private set; }
 
             protected float Unk43_raw;
             public const string Unk43_displayName = "Unk43";
@@ -4734,6 +5350,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk43_offset { get; private set; }
+
             protected float Unk44_raw;
             public const string Unk44_displayName = "Unk44";
             public const int Unk44_sortIndex = 500;
@@ -4748,6 +5367,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk44));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk44_offset { get; private set; }
 
             protected float Unk45_raw;
             public const string Unk45_displayName = "Unk45";
@@ -4764,6 +5386,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk45_offset { get; private set; }
+
             protected float Unk46_raw;
             public const string Unk46_displayName = "Unk46";
             public const int Unk46_sortIndex = 600;
@@ -4778,6 +5403,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk46));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk46_offset { get; private set; }
 
             protected float Unk47_raw;
             public const string Unk47_displayName = "Unk47";
@@ -4794,6 +5422,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk47_offset { get; private set; }
+
             protected float Unk48_raw;
             public const string Unk48_displayName = "Unk48";
             public const int Unk48_sortIndex = 700;
@@ -4808,6 +5439,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk48));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk48_offset { get; private set; }
 
             protected float Unk49_raw;
             public const string Unk49_displayName = "Unk49";
@@ -4824,6 +5458,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk49_offset { get; private set; }
+
             protected float Unk50_raw;
             public const string Unk50_displayName = "Unk50";
             public const int Unk50_sortIndex = 800;
@@ -4838,6 +5475,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk50));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk50_offset { get; private set; }
 
             protected float Unk51_raw;
             public const string Unk51_displayName = "Unk51";
@@ -4854,6 +5494,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk51_offset { get; private set; }
+
             protected float Unk52_raw;
             public const string Unk52_displayName = "Unk52";
             public const int Unk52_sortIndex = 900;
@@ -4868,6 +5511,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk52));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk52_offset { get; private set; }
 
             protected float Unk53_raw;
             public const string Unk53_displayName = "Unk53";
@@ -4884,6 +5530,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk53_offset { get; private set; }
+
             protected float Unk54_raw;
             public const string Unk54_displayName = "Unk54";
             public const int Unk54_sortIndex = 1000;
@@ -4898,6 +5547,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk54));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk54_offset { get; private set; }
 
             protected float Unk55_raw;
             public const string Unk55_displayName = "Unk55";
@@ -4914,6 +5566,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk55_offset { get; private set; }
+
             protected float Unk56_raw;
             public const string Unk56_displayName = "Unk56";
             public const int Unk56_sortIndex = 1100;
@@ -4928,6 +5583,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk56));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk56_offset { get; private set; }
 
             protected float Unk57_raw;
             public const string Unk57_displayName = "Unk57";
@@ -4944,6 +5602,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk57_offset { get; private set; }
+
             protected float Unk58_raw;
             public const string Unk58_displayName = "Unk58";
             public const int Unk58_sortIndex = 1200;
@@ -4958,6 +5619,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk58));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk58_offset { get; private set; }
 
             protected float Unk59_raw;
             public const string Unk59_displayName = "Unk59";
@@ -4974,6 +5638,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk59_offset { get; private set; }
+
             protected float Unk60_raw;
             public const string Unk60_displayName = "Unk60";
             public const int Unk60_sortIndex = 1300;
@@ -4988,6 +5655,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk60));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk60_offset { get; private set; }
 
             protected float Unk61_raw;
             public const string Unk61_displayName = "Unk61";
@@ -5004,6 +5674,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk61_offset { get; private set; }
+
             protected float Unk62_raw;
             public const string Unk62_displayName = "Unk62";
             public const int Unk62_sortIndex = 1400;
@@ -5018,6 +5691,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk62));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk62_offset { get; private set; }
 
             protected float Unk63_raw;
             public const string Unk63_displayName = "Unk63";
@@ -5034,6 +5710,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk63_offset { get; private set; }
+
             protected float Unk64_raw;
             public const string Unk64_displayName = "Unk64";
             public const int Unk64_sortIndex = 1500;
@@ -5048,6 +5727,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk64));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk64_offset { get; private set; }
 
             protected float Unk65_raw;
             public const string Unk65_displayName = "Unk65";
@@ -5064,6 +5746,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk65_offset { get; private set; }
+
             protected float Unk66_raw;
             public const string Unk66_displayName = "Unk66";
             public const int Unk66_sortIndex = 1600;
@@ -5078,6 +5763,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk66));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk66_offset { get; private set; }
 
             protected float Unk67_raw;
             public const string Unk67_displayName = "Unk67";
@@ -5094,6 +5782,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk67_offset { get; private set; }
+
             protected float Unk68_raw;
             public const string Unk68_displayName = "Unk68";
             public const int Unk68_sortIndex = 1700;
@@ -5108,6 +5799,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk68));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk68_offset { get; private set; }
 
             protected float Unk69_raw;
             public const string Unk69_displayName = "Unk69";
@@ -5124,6 +5818,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk69_offset { get; private set; }
+
             protected float Unk70_raw;
             public const string Unk70_displayName = "Unk70";
             public const int Unk70_sortIndex = 1800;
@@ -5138,6 +5835,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk70));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk70_offset { get; private set; }
 
             protected float Unk71_raw;
             public const string Unk71_displayName = "Unk71";
@@ -5154,6 +5854,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk71_offset { get; private set; }
+
             protected float Unk72_raw;
             public const string Unk72_displayName = "Unk72";
             public const int Unk72_sortIndex = 1900;
@@ -5168,6 +5871,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk72));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk72_offset { get; private set; }
 
             protected float Unk73_raw;
             public const string Unk73_displayName = "Unk73";
@@ -5184,6 +5890,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk73_offset { get; private set; }
+
             protected float Unk74_raw;
             public const string Unk74_displayName = "Unk74";
             public const int Unk74_sortIndex = 2000;
@@ -5198,6 +5907,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk74));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk74_offset { get; private set; }
 
             protected float Unk75_raw;
             public const string Unk75_displayName = "Unk75";
@@ -5214,6 +5926,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk75_offset { get; private set; }
+
             protected float Unk76_raw;
             public const string Unk76_displayName = "Unk76";
             public const int Unk76_sortIndex = 2100;
@@ -5228,6 +5943,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk76));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk76_offset { get; private set; }
 
             protected float Unk77_raw;
             public const string Unk77_displayName = "Unk77";
@@ -5244,6 +5962,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk77_offset { get; private set; }
+
             protected float Unk78_raw;
             public const string Unk78_displayName = "Unk78";
             public const int Unk78_sortIndex = 2200;
@@ -5258,6 +5979,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk78));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk78_offset { get; private set; }
 
             protected float Unk79_raw;
             public const string Unk79_displayName = "Unk79";
@@ -5274,6 +5998,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk79_offset { get; private set; }
+
             protected float Unk80_raw;
             public const string Unk80_displayName = "Unk80";
             public const int Unk80_sortIndex = 2300;
@@ -5288,6 +6015,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk80));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk80_offset { get; private set; }
 
             protected float Unk81_raw;
             public const string Unk81_displayName = "Unk81";
@@ -5304,6 +6034,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk81_offset { get; private set; }
+
             protected float Offensive_Guard_raw;
             public const string Offensive_Guard_displayName = "Offensive Guard";
             public const int Offensive_Guard_sortIndex = 2400;
@@ -5318,6 +6051,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Offensive_Guard));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Offensive_Guard_offset { get; private set; }
 
             protected float Coalescence_raw;
             public const string Coalescence_displayName = "Coalescence";
@@ -5334,6 +6070,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Coalescence_offset { get; private set; }
+
             protected float Unk_Safi_2_raw;
             public const string Unk_Safi_2_displayName = "Unk Safi 2";
             public const int Unk_Safi_2_sortIndex = 2500;
@@ -5348,6 +6087,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_Safi_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_Safi_2_offset { get; private set; }
 
             protected float Unk_Safi_3_raw;
             public const string Unk_Safi_3_displayName = "Unk Safi 3";
@@ -5364,6 +6106,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_Safi_3_offset { get; private set; }
+
             protected float Unk_Safi_4_raw;
             public const string Unk_Safi_4_displayName = "Unk Safi 4";
             public const int Unk_Safi_4_sortIndex = 2600;
@@ -5378,6 +6123,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_Safi_4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_Safi_4_offset { get; private set; }
 
             protected uint Unk_Safi_5_raw;
             public const string Unk_Safi_5_displayName = "Unk Safi 5";
@@ -5394,6 +6142,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_Safi_5_offset { get; private set; }
+
             protected uint Unk_Safi_6_raw;
             public const string Unk_Safi_6_displayName = "Unk Safi 6";
             public const int Unk_Safi_6_sortIndex = 2700;
@@ -5408,6 +6159,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_Safi_6));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_Safi_6_offset { get; private set; }
 
             protected float Unk_Safi_7_raw;
             public const string Unk_Safi_7_displayName = "Unk Safi 7";
@@ -5424,6 +6178,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_Safi_7_offset { get; private set; }
+
             protected float Set_3_Elemental_Bonus_raw;
             public const string Set_3_Elemental_Bonus_displayName = "Set(3) Elemental Bonus";
             public const int Set_3_Elemental_Bonus_sortIndex = 2800;
@@ -5438,6 +6195,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Set_3_Elemental_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Set_3_Elemental_Bonus_offset { get; private set; }
 
             protected float Set_5_Elemental_Bonus_raw;
             public const string Set_5_Elemental_Bonus_displayName = "Set(5) Elemental Bonus";
@@ -5454,6 +6214,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Set_5_Elemental_Bonus_offset { get; private set; }
+
             protected float Set_3_Status_Bonus_raw;
             public const string Set_3_Status_Bonus_displayName = "Set(3) Status Bonus";
             public const int Set_3_Status_Bonus_sortIndex = 2900;
@@ -5468,6 +6231,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Set_3_Status_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Set_3_Status_Bonus_offset { get; private set; }
 
             protected float Set_5_Status_Bonus_raw;
             public const string Set_5_Status_Bonus_displayName = "Set(5) Status Bonus";
@@ -5484,6 +6250,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Set_5_Status_Bonus_offset { get; private set; }
+
             protected uint Set_3_Affinity_Bonus_raw;
             public const string Set_3_Affinity_Bonus_displayName = "Set(3) Affinity Bonus";
             public const int Set_3_Affinity_Bonus_sortIndex = 3000;
@@ -5498,6 +6267,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Set_3_Affinity_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Set_3_Affinity_Bonus_offset { get; private set; }
 
             protected uint Set_5_Affinity_Bonus_raw;
             public const string Set_5_Affinity_Bonus_displayName = "Set(5) Affinity Bonus";
@@ -5514,6 +6286,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Set_5_Affinity_Bonus_offset { get; private set; }
+
             protected byte Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Great Sword) Hit Combo to Heal";
             public const int Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal_sortIndex = 3100;
@@ -5528,6 +6303,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal_offset { get; private set; }
 
             protected byte Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Sword & Shield) Hit Combo to Heal";
@@ -5544,6 +6322,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal_offset { get; private set; }
+
             protected byte Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Dual Blades) Hit Combo to Heal";
             public const int Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal_sortIndex = 3200;
@@ -5558,6 +6339,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal_offset { get; private set; }
 
             protected byte Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Long Sword) Hit Combo to Heal";
@@ -5574,6 +6358,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal_offset { get; private set; }
+
             protected byte Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Hammer) Hit Combo to Heal";
             public const int Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal_sortIndex = 3300;
@@ -5588,6 +6375,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal_offset { get; private set; }
 
             protected byte Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Hunting Horn) Hit Combo to Heal";
@@ -5604,6 +6394,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal_offset { get; private set; }
+
             protected byte Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Lance) Hit Combo to Heal";
             public const int Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal_sortIndex = 3400;
@@ -5618,6 +6411,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal_offset { get; private set; }
 
             protected byte Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Gunlance) Hit Combo to Heal";
@@ -5634,6 +6430,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal_offset { get; private set; }
+
             protected byte Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Switch Axe) Hit Combo to Heal";
             public const int Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal_sortIndex = 3500;
@@ -5648,6 +6447,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal_offset { get; private set; }
 
             protected byte Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Charge Blade) Hit Combo to Heal";
@@ -5664,6 +6466,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal_offset { get; private set; }
+
             protected byte Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Insect Glaive) Hit Combo to Heal";
             public const int Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal_sortIndex = 3600;
@@ -5678,6 +6483,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal_offset { get; private set; }
 
             protected byte Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (Bow) Hit Combo to Heal";
@@ -5694,6 +6502,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal_offset { get; private set; }
+
             protected byte Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (HBG) Hit Combo to Heal";
             public const int Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal_sortIndex = 3700;
@@ -5708,6 +6519,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal_offset { get; private set; }
 
             protected byte Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal_raw;
             public const string Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal_displayName = "Safi'Jiva Seal: (LBG) Hit Combo to Heal";
@@ -5724,6 +6538,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal_offset { get; private set; }
+
             protected float Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Great Sword) HP Lost Per Hit";
             public const int Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit_sortIndex = 3800;
@@ -5738,6 +6555,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit_offset { get; private set; }
 
             protected float Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Sword & Shield) HP Lost Per Hit";
@@ -5754,6 +6574,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit_offset { get; private set; }
+
             protected float Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Dual Blades) HP Lost Per Hit";
             public const int Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit_sortIndex = 3900;
@@ -5768,6 +6591,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit_offset { get; private set; }
 
             protected float Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Long Sword) HP Lost Per Hit";
@@ -5784,6 +6610,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit_offset { get; private set; }
+
             protected float Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Hammer) HP Lost Per Hit";
             public const int Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit_sortIndex = 4000;
@@ -5798,6 +6627,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit_offset { get; private set; }
 
             protected float Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Hunting Horn) HP Lost Per Hit";
@@ -5814,6 +6646,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit_offset { get; private set; }
+
             protected float Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Lance) HP Lost Per Hit";
             public const int Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit_sortIndex = 4100;
@@ -5828,6 +6663,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit_offset { get; private set; }
 
             protected float Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Gunlance) HP Lost Per Hit";
@@ -5844,6 +6682,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit_offset { get; private set; }
+
             protected float Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Switch Axe) HP Lost Per Hit";
             public const int Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit_sortIndex = 4200;
@@ -5858,6 +6699,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit_offset { get; private set; }
 
             protected float Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Charge Blade) HP Lost Per Hit";
@@ -5874,6 +6718,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit_offset { get; private set; }
+
             protected float Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Insect Glaive) HP Lost Per Hit";
             public const int Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit_sortIndex = 4300;
@@ -5888,6 +6735,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit_offset { get; private set; }
 
             protected float Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (Bow) HP Lost Per Hit";
@@ -5904,6 +6754,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit_offset { get; private set; }
+
             protected float Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (HBG) HP Lost Per Hit";
             public const int Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit_sortIndex = 4400;
@@ -5918,6 +6771,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit_offset { get; private set; }
 
             protected float Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit_raw;
             public const string Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit_displayName = "Safi'Jiva Seal: (LBG) HP Lost Per Hit";
@@ -5934,6 +6790,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit_offset { get; private set; }
+
             protected float Safi_Recovery_Interval_raw;
             public const string Safi_Recovery_Interval_displayName = "Safi: Recovery Interval";
             public const int Safi_Recovery_Interval_sortIndex = 4500;
@@ -5948,6 +6807,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Recovery_Interval));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Recovery_Interval_offset { get; private set; }
 
             protected float Safi_Recovery_Amount_raw;
             public const string Safi_Recovery_Amount_displayName = "Safi: Recovery Amount";
@@ -5964,6 +6826,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Safi_Recovery_Amount_offset { get; private set; }
+
             protected float Safi_Recovery_Time_raw;
             public const string Safi_Recovery_Time_displayName = "Safi: Recovery Time";
             public const int Safi_Recovery_Time_sortIndex = 4600;
@@ -5978,6 +6843,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Safi_Recovery_Time));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Safi_Recovery_Time_offset { get; private set; }
 
             protected float Unk_Safi_8_raw;
             public const string Unk_Safi_8_displayName = "Unk Safi 8";
@@ -5994,6 +6862,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_Safi_8_offset { get; private set; }
+
             protected float Set_3_Elemental_Limit_raw;
             public const string Set_3_Elemental_Limit_displayName = "Set(3) Elemental Limit";
             public const int Set_3_Elemental_Limit_sortIndex = 4700;
@@ -6008,6 +6879,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Set_3_Elemental_Limit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Set_3_Elemental_Limit_offset { get; private set; }
 
             protected float Set_5_Elemental_Limit_raw;
             public const string Set_5_Elemental_Limit_displayName = "Set(5) Elemental Limit";
@@ -6024,6 +6898,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Set_5_Elemental_Limit_offset { get; private set; }
+
             protected float Set_3_Bowgun_Elemental_Limit_raw;
             public const string Set_3_Bowgun_Elemental_Limit_displayName = "Set(3) Bowgun Elemental Limit";
             public const int Set_3_Bowgun_Elemental_Limit_sortIndex = 4800;
@@ -6038,6 +6915,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Set_3_Bowgun_Elemental_Limit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Set_3_Bowgun_Elemental_Limit_offset { get; private set; }
 
             protected float Set_5_Bowgun_Elemental_Limit_raw;
             public const string Set_5_Bowgun_Elemental_Limit_displayName = "Set(5) Bowgun Elemental Limit";
@@ -6054,6 +6934,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Set_5_Bowgun_Elemental_Limit_offset { get; private set; }
+
             protected float Set_3_Status_Limit_raw;
             public const string Set_3_Status_Limit_displayName = "Set(3) Status Limit";
             public const int Set_3_Status_Limit_sortIndex = 4900;
@@ -6068,6 +6951,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Set_3_Status_Limit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Set_3_Status_Limit_offset { get; private set; }
 
             protected float Set_5_Status_Limit_raw;
             public const string Set_5_Status_Limit_displayName = "Set(5) Status Limit";
@@ -6084,6 +6970,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Set_5_Status_Limit_offset { get; private set; }
+
             public const int lastSortIndex = 5000;
 
             public static ObservableMhwStructCollection<Skill_Params_7_> LoadData(BinaryReader reader) {
@@ -6098,104 +6987,203 @@ namespace MHW_Editor.Structs.PlData {
             public static Skill_Params_7_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Skill_Params_7_();
                 data.Index = i;
+                data.Unk_Safi_1_offset = reader.BaseStream.Position;
                 data.Unk_Safi_1_raw = reader.ReadByte();
+                data.Unk36_offset = reader.BaseStream.Position;
                 data.Unk36_raw = reader.ReadSingle();
+                data.Unk37_offset = reader.BaseStream.Position;
                 data.Unk37_raw = reader.ReadSingle();
+                data.Unk38_offset = reader.BaseStream.Position;
                 data.Unk38_raw = reader.ReadSingle();
+                data.Unk39_offset = reader.BaseStream.Position;
                 data.Unk39_raw = reader.ReadSingle();
+                data.Unk40_offset = reader.BaseStream.Position;
                 data.Unk40_raw = reader.ReadSingle();
+                data.Unk41_offset = reader.BaseStream.Position;
                 data.Unk41_raw = reader.ReadSingle();
+                data.Unk42_offset = reader.BaseStream.Position;
                 data.Unk42_raw = reader.ReadSingle();
+                data.Unk43_offset = reader.BaseStream.Position;
                 data.Unk43_raw = reader.ReadSingle();
+                data.Unk44_offset = reader.BaseStream.Position;
                 data.Unk44_raw = reader.ReadSingle();
+                data.Unk45_offset = reader.BaseStream.Position;
                 data.Unk45_raw = reader.ReadSingle();
+                data.Unk46_offset = reader.BaseStream.Position;
                 data.Unk46_raw = reader.ReadSingle();
+                data.Unk47_offset = reader.BaseStream.Position;
                 data.Unk47_raw = reader.ReadSingle();
+                data.Unk48_offset = reader.BaseStream.Position;
                 data.Unk48_raw = reader.ReadSingle();
+                data.Unk49_offset = reader.BaseStream.Position;
                 data.Unk49_raw = reader.ReadSingle();
+                data.Unk50_offset = reader.BaseStream.Position;
                 data.Unk50_raw = reader.ReadSingle();
+                data.Unk51_offset = reader.BaseStream.Position;
                 data.Unk51_raw = reader.ReadSingle();
+                data.Unk52_offset = reader.BaseStream.Position;
                 data.Unk52_raw = reader.ReadSingle();
+                data.Unk53_offset = reader.BaseStream.Position;
                 data.Unk53_raw = reader.ReadSingle();
+                data.Unk54_offset = reader.BaseStream.Position;
                 data.Unk54_raw = reader.ReadSingle();
+                data.Unk55_offset = reader.BaseStream.Position;
                 data.Unk55_raw = reader.ReadSingle();
+                data.Unk56_offset = reader.BaseStream.Position;
                 data.Unk56_raw = reader.ReadSingle();
+                data.Unk57_offset = reader.BaseStream.Position;
                 data.Unk57_raw = reader.ReadSingle();
+                data.Unk58_offset = reader.BaseStream.Position;
                 data.Unk58_raw = reader.ReadSingle();
+                data.Unk59_offset = reader.BaseStream.Position;
                 data.Unk59_raw = reader.ReadSingle();
+                data.Unk60_offset = reader.BaseStream.Position;
                 data.Unk60_raw = reader.ReadSingle();
+                data.Unk61_offset = reader.BaseStream.Position;
                 data.Unk61_raw = reader.ReadSingle();
+                data.Unk62_offset = reader.BaseStream.Position;
                 data.Unk62_raw = reader.ReadSingle();
+                data.Unk63_offset = reader.BaseStream.Position;
                 data.Unk63_raw = reader.ReadSingle();
+                data.Unk64_offset = reader.BaseStream.Position;
                 data.Unk64_raw = reader.ReadSingle();
+                data.Unk65_offset = reader.BaseStream.Position;
                 data.Unk65_raw = reader.ReadSingle();
+                data.Unk66_offset = reader.BaseStream.Position;
                 data.Unk66_raw = reader.ReadSingle();
+                data.Unk67_offset = reader.BaseStream.Position;
                 data.Unk67_raw = reader.ReadSingle();
+                data.Unk68_offset = reader.BaseStream.Position;
                 data.Unk68_raw = reader.ReadSingle();
+                data.Unk69_offset = reader.BaseStream.Position;
                 data.Unk69_raw = reader.ReadSingle();
+                data.Unk70_offset = reader.BaseStream.Position;
                 data.Unk70_raw = reader.ReadSingle();
+                data.Unk71_offset = reader.BaseStream.Position;
                 data.Unk71_raw = reader.ReadSingle();
+                data.Unk72_offset = reader.BaseStream.Position;
                 data.Unk72_raw = reader.ReadSingle();
+                data.Unk73_offset = reader.BaseStream.Position;
                 data.Unk73_raw = reader.ReadSingle();
+                data.Unk74_offset = reader.BaseStream.Position;
                 data.Unk74_raw = reader.ReadSingle();
+                data.Unk75_offset = reader.BaseStream.Position;
                 data.Unk75_raw = reader.ReadSingle();
+                data.Unk76_offset = reader.BaseStream.Position;
                 data.Unk76_raw = reader.ReadSingle();
+                data.Unk77_offset = reader.BaseStream.Position;
                 data.Unk77_raw = reader.ReadSingle();
+                data.Unk78_offset = reader.BaseStream.Position;
                 data.Unk78_raw = reader.ReadSingle();
+                data.Unk79_offset = reader.BaseStream.Position;
                 data.Unk79_raw = reader.ReadSingle();
+                data.Unk80_offset = reader.BaseStream.Position;
                 data.Unk80_raw = reader.ReadSingle();
+                data.Unk81_offset = reader.BaseStream.Position;
                 data.Unk81_raw = reader.ReadSingle();
+                data.Offensive_Guard_offset = reader.BaseStream.Position;
                 data.Offensive_Guard_raw = reader.ReadSingle();
+                data.Coalescence_offset = reader.BaseStream.Position;
                 data.Coalescence_raw = reader.ReadSingle();
+                data.Unk_Safi_2_offset = reader.BaseStream.Position;
                 data.Unk_Safi_2_raw = reader.ReadSingle();
+                data.Unk_Safi_3_offset = reader.BaseStream.Position;
                 data.Unk_Safi_3_raw = reader.ReadSingle();
+                data.Unk_Safi_4_offset = reader.BaseStream.Position;
                 data.Unk_Safi_4_raw = reader.ReadSingle();
+                data.Unk_Safi_5_offset = reader.BaseStream.Position;
                 data.Unk_Safi_5_raw = reader.ReadUInt32();
+                data.Unk_Safi_6_offset = reader.BaseStream.Position;
                 data.Unk_Safi_6_raw = reader.ReadUInt32();
+                data.Unk_Safi_7_offset = reader.BaseStream.Position;
                 data.Unk_Safi_7_raw = reader.ReadSingle();
+                data.Set_3_Elemental_Bonus_offset = reader.BaseStream.Position;
                 data.Set_3_Elemental_Bonus_raw = reader.ReadSingle();
+                data.Set_5_Elemental_Bonus_offset = reader.BaseStream.Position;
                 data.Set_5_Elemental_Bonus_raw = reader.ReadSingle();
+                data.Set_3_Status_Bonus_offset = reader.BaseStream.Position;
                 data.Set_3_Status_Bonus_raw = reader.ReadSingle();
+                data.Set_5_Status_Bonus_offset = reader.BaseStream.Position;
                 data.Set_5_Status_Bonus_raw = reader.ReadSingle();
+                data.Set_3_Affinity_Bonus_offset = reader.BaseStream.Position;
                 data.Set_3_Affinity_Bonus_raw = reader.ReadUInt32();
+                data.Set_5_Affinity_Bonus_offset = reader.BaseStream.Position;
                 data.Set_5_Affinity_Bonus_raw = reader.ReadUInt32();
+                data.Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal_raw = reader.ReadByte();
+                data.Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit_offset = reader.BaseStream.Position;
                 data.Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit_raw = reader.ReadSingle();
+                data.Safi_Recovery_Interval_offset = reader.BaseStream.Position;
                 data.Safi_Recovery_Interval_raw = reader.ReadSingle();
+                data.Safi_Recovery_Amount_offset = reader.BaseStream.Position;
                 data.Safi_Recovery_Amount_raw = reader.ReadSingle();
+                data.Safi_Recovery_Time_offset = reader.BaseStream.Position;
                 data.Safi_Recovery_Time_raw = reader.ReadSingle();
+                data.Unk_Safi_8_offset = reader.BaseStream.Position;
                 data.Unk_Safi_8_raw = reader.ReadSingle();
+                data.Set_3_Elemental_Limit_offset = reader.BaseStream.Position;
                 data.Set_3_Elemental_Limit_raw = reader.ReadSingle();
+                data.Set_5_Elemental_Limit_offset = reader.BaseStream.Position;
                 data.Set_5_Elemental_Limit_raw = reader.ReadSingle();
+                data.Set_3_Bowgun_Elemental_Limit_offset = reader.BaseStream.Position;
                 data.Set_3_Bowgun_Elemental_Limit_raw = reader.ReadSingle();
+                data.Set_5_Bowgun_Elemental_Limit_offset = reader.BaseStream.Position;
                 data.Set_5_Bowgun_Elemental_Limit_raw = reader.ReadSingle();
+                data.Set_3_Status_Limit_offset = reader.BaseStream.Position;
                 data.Set_3_Status_Limit_raw = reader.ReadSingle();
+                data.Set_5_Status_Limit_offset = reader.BaseStream.Position;
                 data.Set_5_Status_Limit_raw = reader.ReadSingle();
                 return data;
             }
@@ -6304,105 +7292,105 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk Safi 1", "Unk_Safi_1"),
-                    new MultiStructItemCustomView(this, "Unk36", "Unk36"),
-                    new MultiStructItemCustomView(this, "Unk37", "Unk37"),
-                    new MultiStructItemCustomView(this, "Unk38", "Unk38"),
-                    new MultiStructItemCustomView(this, "Unk39", "Unk39"),
-                    new MultiStructItemCustomView(this, "Unk40", "Unk40"),
-                    new MultiStructItemCustomView(this, "Unk41", "Unk41"),
-                    new MultiStructItemCustomView(this, "Unk42", "Unk42"),
-                    new MultiStructItemCustomView(this, "Unk43", "Unk43"),
-                    new MultiStructItemCustomView(this, "Unk44", "Unk44"),
-                    new MultiStructItemCustomView(this, "Unk45", "Unk45"),
-                    new MultiStructItemCustomView(this, "Unk46", "Unk46"),
-                    new MultiStructItemCustomView(this, "Unk47", "Unk47"),
-                    new MultiStructItemCustomView(this, "Unk48", "Unk48"),
-                    new MultiStructItemCustomView(this, "Unk49", "Unk49"),
-                    new MultiStructItemCustomView(this, "Unk50", "Unk50"),
-                    new MultiStructItemCustomView(this, "Unk51", "Unk51"),
-                    new MultiStructItemCustomView(this, "Unk52", "Unk52"),
-                    new MultiStructItemCustomView(this, "Unk53", "Unk53"),
-                    new MultiStructItemCustomView(this, "Unk54", "Unk54"),
-                    new MultiStructItemCustomView(this, "Unk55", "Unk55"),
-                    new MultiStructItemCustomView(this, "Unk56", "Unk56"),
-                    new MultiStructItemCustomView(this, "Unk57", "Unk57"),
-                    new MultiStructItemCustomView(this, "Unk58", "Unk58"),
-                    new MultiStructItemCustomView(this, "Unk59", "Unk59"),
-                    new MultiStructItemCustomView(this, "Unk60", "Unk60"),
-                    new MultiStructItemCustomView(this, "Unk61", "Unk61"),
-                    new MultiStructItemCustomView(this, "Unk62", "Unk62"),
-                    new MultiStructItemCustomView(this, "Unk63", "Unk63"),
-                    new MultiStructItemCustomView(this, "Unk64", "Unk64"),
-                    new MultiStructItemCustomView(this, "Unk65", "Unk65"),
-                    new MultiStructItemCustomView(this, "Unk66", "Unk66"),
-                    new MultiStructItemCustomView(this, "Unk67", "Unk67"),
-                    new MultiStructItemCustomView(this, "Unk68", "Unk68"),
-                    new MultiStructItemCustomView(this, "Unk69", "Unk69"),
-                    new MultiStructItemCustomView(this, "Unk70", "Unk70"),
-                    new MultiStructItemCustomView(this, "Unk71", "Unk71"),
-                    new MultiStructItemCustomView(this, "Unk72", "Unk72"),
-                    new MultiStructItemCustomView(this, "Unk73", "Unk73"),
-                    new MultiStructItemCustomView(this, "Unk74", "Unk74"),
-                    new MultiStructItemCustomView(this, "Unk75", "Unk75"),
-                    new MultiStructItemCustomView(this, "Unk76", "Unk76"),
-                    new MultiStructItemCustomView(this, "Unk77", "Unk77"),
-                    new MultiStructItemCustomView(this, "Unk78", "Unk78"),
-                    new MultiStructItemCustomView(this, "Unk79", "Unk79"),
-                    new MultiStructItemCustomView(this, "Unk80", "Unk80"),
-                    new MultiStructItemCustomView(this, "Unk81", "Unk81"),
-                    new MultiStructItemCustomView(this, "Offensive Guard", "Offensive_Guard"),
-                    new MultiStructItemCustomView(this, "Coalescence", "Coalescence"),
-                    new MultiStructItemCustomView(this, "Unk Safi 2", "Unk_Safi_2"),
-                    new MultiStructItemCustomView(this, "Unk Safi 3", "Unk_Safi_3"),
-                    new MultiStructItemCustomView(this, "Unk Safi 4", "Unk_Safi_4"),
-                    new MultiStructItemCustomView(this, "Unk Safi 5", "Unk_Safi_5"),
-                    new MultiStructItemCustomView(this, "Unk Safi 6", "Unk_Safi_6"),
-                    new MultiStructItemCustomView(this, "Unk Safi 7", "Unk_Safi_7"),
-                    new MultiStructItemCustomView(this, "Set(3) Elemental Bonus", "Set_3_Elemental_Bonus"),
-                    new MultiStructItemCustomView(this, "Set(5) Elemental Bonus", "Set_5_Elemental_Bonus"),
-                    new MultiStructItemCustomView(this, "Set(3) Status Bonus", "Set_3_Status_Bonus"),
-                    new MultiStructItemCustomView(this, "Set(5) Status Bonus", "Set_5_Status_Bonus"),
-                    new MultiStructItemCustomView(this, "Set(3) Affinity Bonus", "Set_3_Affinity_Bonus"),
-                    new MultiStructItemCustomView(this, "Set(5) Affinity Bonus", "Set_5_Affinity_Bonus"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Great Sword) Hit Combo to Heal", "Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Sword & Shield) Hit Combo to Heal", "Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Dual Blades) Hit Combo to Heal", "Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Long Sword) Hit Combo to Heal", "Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Hammer) Hit Combo to Heal", "Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Hunting Horn) Hit Combo to Heal", "Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Lance) Hit Combo to Heal", "Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Gunlance) Hit Combo to Heal", "Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Switch Axe) Hit Combo to Heal", "Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Charge Blade) Hit Combo to Heal", "Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Insect Glaive) Hit Combo to Heal", "Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Bow) Hit Combo to Heal", "Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (HBG) Hit Combo to Heal", "Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (LBG) Hit Combo to Heal", "Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Great Sword) HP Lost Per Hit", "Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Sword & Shield) HP Lost Per Hit", "Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Dual Blades) HP Lost Per Hit", "Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Long Sword) HP Lost Per Hit", "Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Hammer) HP Lost Per Hit", "Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Hunting Horn) HP Lost Per Hit", "Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Lance) HP Lost Per Hit", "Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Gunlance) HP Lost Per Hit", "Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Switch Axe) HP Lost Per Hit", "Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Charge Blade) HP Lost Per Hit", "Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Insect Glaive) HP Lost Per Hit", "Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Bow) HP Lost Per Hit", "Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (HBG) HP Lost Per Hit", "Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (LBG) HP Lost Per Hit", "Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Safi: Recovery Interval", "Safi_Recovery_Interval"),
-                    new MultiStructItemCustomView(this, "Safi: Recovery Amount", "Safi_Recovery_Amount"),
-                    new MultiStructItemCustomView(this, "Safi: Recovery Time", "Safi_Recovery_Time"),
-                    new MultiStructItemCustomView(this, "Unk Safi 8", "Unk_Safi_8"),
-                    new MultiStructItemCustomView(this, "Set(3) Elemental Limit", "Set_3_Elemental_Limit"),
-                    new MultiStructItemCustomView(this, "Set(5) Elemental Limit", "Set_5_Elemental_Limit"),
-                    new MultiStructItemCustomView(this, "Set(3) Bowgun Elemental Limit", "Set_3_Bowgun_Elemental_Limit"),
-                    new MultiStructItemCustomView(this, "Set(5) Bowgun Elemental Limit", "Set_5_Bowgun_Elemental_Limit"),
-                    new MultiStructItemCustomView(this, "Set(3) Status Limit", "Set_3_Status_Limit"),
-                    new MultiStructItemCustomView(this, "Set(5) Status Limit", "Set_5_Status_Limit"),
+                    new MultiStructItemCustomView(this, "Unk Safi 1", "Unk_Safi_1", "Unk_Safi_1_offset"),
+                    new MultiStructItemCustomView(this, "Unk36", "Unk36", "Unk36_offset"),
+                    new MultiStructItemCustomView(this, "Unk37", "Unk37", "Unk37_offset"),
+                    new MultiStructItemCustomView(this, "Unk38", "Unk38", "Unk38_offset"),
+                    new MultiStructItemCustomView(this, "Unk39", "Unk39", "Unk39_offset"),
+                    new MultiStructItemCustomView(this, "Unk40", "Unk40", "Unk40_offset"),
+                    new MultiStructItemCustomView(this, "Unk41", "Unk41", "Unk41_offset"),
+                    new MultiStructItemCustomView(this, "Unk42", "Unk42", "Unk42_offset"),
+                    new MultiStructItemCustomView(this, "Unk43", "Unk43", "Unk43_offset"),
+                    new MultiStructItemCustomView(this, "Unk44", "Unk44", "Unk44_offset"),
+                    new MultiStructItemCustomView(this, "Unk45", "Unk45", "Unk45_offset"),
+                    new MultiStructItemCustomView(this, "Unk46", "Unk46", "Unk46_offset"),
+                    new MultiStructItemCustomView(this, "Unk47", "Unk47", "Unk47_offset"),
+                    new MultiStructItemCustomView(this, "Unk48", "Unk48", "Unk48_offset"),
+                    new MultiStructItemCustomView(this, "Unk49", "Unk49", "Unk49_offset"),
+                    new MultiStructItemCustomView(this, "Unk50", "Unk50", "Unk50_offset"),
+                    new MultiStructItemCustomView(this, "Unk51", "Unk51", "Unk51_offset"),
+                    new MultiStructItemCustomView(this, "Unk52", "Unk52", "Unk52_offset"),
+                    new MultiStructItemCustomView(this, "Unk53", "Unk53", "Unk53_offset"),
+                    new MultiStructItemCustomView(this, "Unk54", "Unk54", "Unk54_offset"),
+                    new MultiStructItemCustomView(this, "Unk55", "Unk55", "Unk55_offset"),
+                    new MultiStructItemCustomView(this, "Unk56", "Unk56", "Unk56_offset"),
+                    new MultiStructItemCustomView(this, "Unk57", "Unk57", "Unk57_offset"),
+                    new MultiStructItemCustomView(this, "Unk58", "Unk58", "Unk58_offset"),
+                    new MultiStructItemCustomView(this, "Unk59", "Unk59", "Unk59_offset"),
+                    new MultiStructItemCustomView(this, "Unk60", "Unk60", "Unk60_offset"),
+                    new MultiStructItemCustomView(this, "Unk61", "Unk61", "Unk61_offset"),
+                    new MultiStructItemCustomView(this, "Unk62", "Unk62", "Unk62_offset"),
+                    new MultiStructItemCustomView(this, "Unk63", "Unk63", "Unk63_offset"),
+                    new MultiStructItemCustomView(this, "Unk64", "Unk64", "Unk64_offset"),
+                    new MultiStructItemCustomView(this, "Unk65", "Unk65", "Unk65_offset"),
+                    new MultiStructItemCustomView(this, "Unk66", "Unk66", "Unk66_offset"),
+                    new MultiStructItemCustomView(this, "Unk67", "Unk67", "Unk67_offset"),
+                    new MultiStructItemCustomView(this, "Unk68", "Unk68", "Unk68_offset"),
+                    new MultiStructItemCustomView(this, "Unk69", "Unk69", "Unk69_offset"),
+                    new MultiStructItemCustomView(this, "Unk70", "Unk70", "Unk70_offset"),
+                    new MultiStructItemCustomView(this, "Unk71", "Unk71", "Unk71_offset"),
+                    new MultiStructItemCustomView(this, "Unk72", "Unk72", "Unk72_offset"),
+                    new MultiStructItemCustomView(this, "Unk73", "Unk73", "Unk73_offset"),
+                    new MultiStructItemCustomView(this, "Unk74", "Unk74", "Unk74_offset"),
+                    new MultiStructItemCustomView(this, "Unk75", "Unk75", "Unk75_offset"),
+                    new MultiStructItemCustomView(this, "Unk76", "Unk76", "Unk76_offset"),
+                    new MultiStructItemCustomView(this, "Unk77", "Unk77", "Unk77_offset"),
+                    new MultiStructItemCustomView(this, "Unk78", "Unk78", "Unk78_offset"),
+                    new MultiStructItemCustomView(this, "Unk79", "Unk79", "Unk79_offset"),
+                    new MultiStructItemCustomView(this, "Unk80", "Unk80", "Unk80_offset"),
+                    new MultiStructItemCustomView(this, "Unk81", "Unk81", "Unk81_offset"),
+                    new MultiStructItemCustomView(this, "Offensive Guard", "Offensive_Guard", "Offensive_Guard_offset"),
+                    new MultiStructItemCustomView(this, "Coalescence", "Coalescence", "Coalescence_offset"),
+                    new MultiStructItemCustomView(this, "Unk Safi 2", "Unk_Safi_2", "Unk_Safi_2_offset"),
+                    new MultiStructItemCustomView(this, "Unk Safi 3", "Unk_Safi_3", "Unk_Safi_3_offset"),
+                    new MultiStructItemCustomView(this, "Unk Safi 4", "Unk_Safi_4", "Unk_Safi_4_offset"),
+                    new MultiStructItemCustomView(this, "Unk Safi 5", "Unk_Safi_5", "Unk_Safi_5_offset"),
+                    new MultiStructItemCustomView(this, "Unk Safi 6", "Unk_Safi_6", "Unk_Safi_6_offset"),
+                    new MultiStructItemCustomView(this, "Unk Safi 7", "Unk_Safi_7", "Unk_Safi_7_offset"),
+                    new MultiStructItemCustomView(this, "Set(3) Elemental Bonus", "Set_3_Elemental_Bonus", "Set_3_Elemental_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Set(5) Elemental Bonus", "Set_5_Elemental_Bonus", "Set_5_Elemental_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Set(3) Status Bonus", "Set_3_Status_Bonus", "Set_3_Status_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Set(5) Status Bonus", "Set_5_Status_Bonus", "Set_5_Status_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Set(3) Affinity Bonus", "Set_3_Affinity_Bonus", "Set_3_Affinity_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Set(5) Affinity Bonus", "Set_5_Affinity_Bonus", "Set_5_Affinity_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Great Sword) Hit Combo to Heal", "Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal", "Safi_Jiva_Seal_Great_Sword_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Sword & Shield) Hit Combo to Heal", "Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal", "Safi_Jiva_Seal_Sword_Shield_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Dual Blades) Hit Combo to Heal", "Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal", "Safi_Jiva_Seal_Dual_Blades_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Long Sword) Hit Combo to Heal", "Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal", "Safi_Jiva_Seal_Long_Sword_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Hammer) Hit Combo to Heal", "Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal", "Safi_Jiva_Seal_Hammer_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Hunting Horn) Hit Combo to Heal", "Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal", "Safi_Jiva_Seal_Hunting_Horn_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Lance) Hit Combo to Heal", "Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal", "Safi_Jiva_Seal_Lance_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Gunlance) Hit Combo to Heal", "Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal", "Safi_Jiva_Seal_Gunlance_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Switch Axe) Hit Combo to Heal", "Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal", "Safi_Jiva_Seal_Switch_Axe_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Charge Blade) Hit Combo to Heal", "Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal", "Safi_Jiva_Seal_Charge_Blade_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Insect Glaive) Hit Combo to Heal", "Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal", "Safi_Jiva_Seal_Insect_Glaive_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Bow) Hit Combo to Heal", "Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal", "Safi_Jiva_Seal_Bow_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (HBG) Hit Combo to Heal", "Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal", "Safi_Jiva_Seal_HBG_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (LBG) Hit Combo to Heal", "Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal", "Safi_Jiva_Seal_LBG_Hit_Combo_to_Heal_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Great Sword) HP Lost Per Hit", "Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit", "Safi_Jiva_Seal_Great_Sword_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Sword & Shield) HP Lost Per Hit", "Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit", "Safi_Jiva_Seal_Sword_Shield_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Dual Blades) HP Lost Per Hit", "Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit", "Safi_Jiva_Seal_Dual_Blades_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Long Sword) HP Lost Per Hit", "Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit", "Safi_Jiva_Seal_Long_Sword_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Hammer) HP Lost Per Hit", "Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit", "Safi_Jiva_Seal_Hammer_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Hunting Horn) HP Lost Per Hit", "Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit", "Safi_Jiva_Seal_Hunting_Horn_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Lance) HP Lost Per Hit", "Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit", "Safi_Jiva_Seal_Lance_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Gunlance) HP Lost Per Hit", "Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit", "Safi_Jiva_Seal_Gunlance_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Switch Axe) HP Lost Per Hit", "Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit", "Safi_Jiva_Seal_Switch_Axe_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Charge Blade) HP Lost Per Hit", "Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit", "Safi_Jiva_Seal_Charge_Blade_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Insect Glaive) HP Lost Per Hit", "Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit", "Safi_Jiva_Seal_Insect_Glaive_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (Bow) HP Lost Per Hit", "Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit", "Safi_Jiva_Seal_Bow_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (HBG) HP Lost Per Hit", "Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit", "Safi_Jiva_Seal_HBG_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi'Jiva Seal: (LBG) HP Lost Per Hit", "Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit", "Safi_Jiva_Seal_LBG_HP_Lost_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Safi: Recovery Interval", "Safi_Recovery_Interval", "Safi_Recovery_Interval_offset"),
+                    new MultiStructItemCustomView(this, "Safi: Recovery Amount", "Safi_Recovery_Amount", "Safi_Recovery_Amount_offset"),
+                    new MultiStructItemCustomView(this, "Safi: Recovery Time", "Safi_Recovery_Time", "Safi_Recovery_Time_offset"),
+                    new MultiStructItemCustomView(this, "Unk Safi 8", "Unk_Safi_8", "Unk_Safi_8_offset"),
+                    new MultiStructItemCustomView(this, "Set(3) Elemental Limit", "Set_3_Elemental_Limit", "Set_3_Elemental_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Set(5) Elemental Limit", "Set_5_Elemental_Limit", "Set_5_Elemental_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Set(3) Bowgun Elemental Limit", "Set_3_Bowgun_Elemental_Limit", "Set_3_Bowgun_Elemental_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Set(5) Bowgun Elemental Limit", "Set_5_Bowgun_Elemental_Limit", "Set_5_Bowgun_Elemental_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Set(3) Status Limit", "Set_3_Status_Limit", "Set_3_Status_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Set(5) Status Limit", "Set_5_Status_Limit", "Set_5_Status_Limit_offset"),
                 };
             }
         }
@@ -6426,6 +7414,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Food_Effect_Life_Up_1_offset { get; private set; }
+
             protected ushort Food_Effect_Life_Up_2_raw;
             public const string Food_Effect_Life_Up_2_displayName = "Food Effect: Life Up 2";
             public const int Food_Effect_Life_Up_2_sortIndex = 100;
@@ -6440,6 +7431,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Food_Effect_Life_Up_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Food_Effect_Life_Up_2_offset { get; private set; }
 
             protected ushort Food_Effect_Life_Up_3_raw;
             public const string Food_Effect_Life_Up_3_displayName = "Food Effect: Life Up 3";
@@ -6456,6 +7450,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Food_Effect_Life_Up_3_offset { get; private set; }
+
             protected ushort Food_Effect_Life_Up_4_raw;
             public const string Food_Effect_Life_Up_4_displayName = "Food Effect: Life Up 4";
             public const int Food_Effect_Life_Up_4_sortIndex = 200;
@@ -6470,6 +7467,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Food_Effect_Life_Up_4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Food_Effect_Life_Up_4_offset { get; private set; }
 
             protected ushort Food_Effect_Life_Up_5_raw;
             public const string Food_Effect_Life_Up_5_displayName = "Food Effect: Life Up 5";
@@ -6486,6 +7486,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Food_Effect_Life_Up_5_offset { get; private set; }
+
             protected ushort Food_Effect_Life_Up_6_raw;
             public const string Food_Effect_Life_Up_6_displayName = "Food Effect: Life Up 6";
             public const int Food_Effect_Life_Up_6_sortIndex = 300;
@@ -6500,6 +7503,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Food_Effect_Life_Up_6));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Food_Effect_Life_Up_6_offset { get; private set; }
 
             protected ushort Food_Effect_Stamina_Up_1_raw;
             public const string Food_Effect_Stamina_Up_1_displayName = "Food Effect: Stamina Up 1";
@@ -6516,6 +7522,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Food_Effect_Stamina_Up_1_offset { get; private set; }
+
             protected ushort Food_Effect_Stamina_Up_2_raw;
             public const string Food_Effect_Stamina_Up_2_displayName = "Food Effect: Stamina Up 2";
             public const int Food_Effect_Stamina_Up_2_sortIndex = 400;
@@ -6530,6 +7539,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Food_Effect_Stamina_Up_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Food_Effect_Stamina_Up_2_offset { get; private set; }
 
             protected ushort Food_Effect_Stamina_Up_3_raw;
             public const string Food_Effect_Stamina_Up_3_displayName = "Food Effect: Stamina Up 3";
@@ -6546,6 +7558,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Food_Effect_Stamina_Up_3_offset { get; private set; }
+
             protected ushort Food_Effect_Attack_Up_1_raw;
             public const string Food_Effect_Attack_Up_1_displayName = "Food Effect: Attack Up 1";
             public const int Food_Effect_Attack_Up_1_sortIndex = 500;
@@ -6560,6 +7575,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Food_Effect_Attack_Up_1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Food_Effect_Attack_Up_1_offset { get; private set; }
 
             protected ushort Food_Effect_Attack_Up_2_raw;
             public const string Food_Effect_Attack_Up_2_displayName = "Food Effect: Attack Up 2";
@@ -6576,6 +7594,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Food_Effect_Attack_Up_2_offset { get; private set; }
+
             protected ushort Food_Effect_Attack_Up_3_raw;
             public const string Food_Effect_Attack_Up_3_displayName = "Food Effect: Attack Up 3";
             public const int Food_Effect_Attack_Up_3_sortIndex = 600;
@@ -6590,6 +7611,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Food_Effect_Attack_Up_3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Food_Effect_Attack_Up_3_offset { get; private set; }
 
             protected ushort Food_Effect_Attack_Up_4_raw;
             public const string Food_Effect_Attack_Up_4_displayName = "Food Effect: Attack Up 4";
@@ -6606,6 +7630,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Food_Effect_Attack_Up_4_offset { get; private set; }
+
             protected ushort Food_Effect_Defense_Up_1_raw;
             public const string Food_Effect_Defense_Up_1_displayName = "Food Effect: Defense Up 1";
             public const int Food_Effect_Defense_Up_1_sortIndex = 700;
@@ -6620,6 +7647,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Food_Effect_Defense_Up_1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Food_Effect_Defense_Up_1_offset { get; private set; }
 
             protected ushort Food_Effect_Defense_Up_2_raw;
             public const string Food_Effect_Defense_Up_2_displayName = "Food Effect: Defense Up 2";
@@ -6636,6 +7666,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Food_Effect_Defense_Up_2_offset { get; private set; }
+
             protected ushort Food_Effect_Defense_Up_3_raw;
             public const string Food_Effect_Defense_Up_3_displayName = "Food Effect: Defense Up 3";
             public const int Food_Effect_Defense_Up_3_sortIndex = 800;
@@ -6650,6 +7683,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Food_Effect_Defense_Up_3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Food_Effect_Defense_Up_3_offset { get; private set; }
 
             protected ushort Food_Effect_Defense_Up_4_raw;
             public const string Food_Effect_Defense_Up_4_displayName = "Food Effect: Defense Up 4";
@@ -6666,6 +7702,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Food_Effect_Defense_Up_4_offset { get; private set; }
+
             protected ushort Food_Effect_All_Resistances_Up_1_raw;
             public const string Food_Effect_All_Resistances_Up_1_displayName = "Food Effect: All Resistances Up 1";
             public const int Food_Effect_All_Resistances_Up_1_sortIndex = 900;
@@ -6680,6 +7719,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Food_Effect_All_Resistances_Up_1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Food_Effect_All_Resistances_Up_1_offset { get; private set; }
 
             protected ushort Food_Effect_All_Resistances_Up_2_raw;
             public const string Food_Effect_All_Resistances_Up_2_displayName = "Food Effect: All Resistances Up 2";
@@ -6696,6 +7738,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Food_Effect_All_Resistances_Up_2_offset { get; private set; }
+
             protected ushort Food_Effect_All_Resistances_Up_3_raw;
             public const string Food_Effect_All_Resistances_Up_3_displayName = "Food Effect: All Resistances Up 3";
             public const int Food_Effect_All_Resistances_Up_3_sortIndex = 1000;
@@ -6710,6 +7755,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Food_Effect_All_Resistances_Up_3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Food_Effect_All_Resistances_Up_3_offset { get; private set; }
 
             protected ushort Food_Effect_All_Resistances_Up_4_raw;
             public const string Food_Effect_All_Resistances_Up_4_displayName = "Food Effect: All Resistances Up 4";
@@ -6726,6 +7774,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Food_Effect_All_Resistances_Up_4_offset { get; private set; }
+
             public const int lastSortIndex = 1100;
 
             public static ObservableMhwStructCollection<Food_Effects> LoadData(BinaryReader reader) {
@@ -6740,26 +7791,47 @@ namespace MHW_Editor.Structs.PlData {
             public static Food_Effects LoadData(BinaryReader reader, ulong i) {
                 var data = new Food_Effects();
                 data.Index = i;
+                data.Food_Effect_Life_Up_1_offset = reader.BaseStream.Position;
                 data.Food_Effect_Life_Up_1_raw = reader.ReadUInt16();
+                data.Food_Effect_Life_Up_2_offset = reader.BaseStream.Position;
                 data.Food_Effect_Life_Up_2_raw = reader.ReadUInt16();
+                data.Food_Effect_Life_Up_3_offset = reader.BaseStream.Position;
                 data.Food_Effect_Life_Up_3_raw = reader.ReadUInt16();
+                data.Food_Effect_Life_Up_4_offset = reader.BaseStream.Position;
                 data.Food_Effect_Life_Up_4_raw = reader.ReadUInt16();
+                data.Food_Effect_Life_Up_5_offset = reader.BaseStream.Position;
                 data.Food_Effect_Life_Up_5_raw = reader.ReadUInt16();
+                data.Food_Effect_Life_Up_6_offset = reader.BaseStream.Position;
                 data.Food_Effect_Life_Up_6_raw = reader.ReadUInt16();
+                data.Food_Effect_Stamina_Up_1_offset = reader.BaseStream.Position;
                 data.Food_Effect_Stamina_Up_1_raw = reader.ReadUInt16();
+                data.Food_Effect_Stamina_Up_2_offset = reader.BaseStream.Position;
                 data.Food_Effect_Stamina_Up_2_raw = reader.ReadUInt16();
+                data.Food_Effect_Stamina_Up_3_offset = reader.BaseStream.Position;
                 data.Food_Effect_Stamina_Up_3_raw = reader.ReadUInt16();
+                data.Food_Effect_Attack_Up_1_offset = reader.BaseStream.Position;
                 data.Food_Effect_Attack_Up_1_raw = reader.ReadUInt16();
+                data.Food_Effect_Attack_Up_2_offset = reader.BaseStream.Position;
                 data.Food_Effect_Attack_Up_2_raw = reader.ReadUInt16();
+                data.Food_Effect_Attack_Up_3_offset = reader.BaseStream.Position;
                 data.Food_Effect_Attack_Up_3_raw = reader.ReadUInt16();
+                data.Food_Effect_Attack_Up_4_offset = reader.BaseStream.Position;
                 data.Food_Effect_Attack_Up_4_raw = reader.ReadUInt16();
+                data.Food_Effect_Defense_Up_1_offset = reader.BaseStream.Position;
                 data.Food_Effect_Defense_Up_1_raw = reader.ReadUInt16();
+                data.Food_Effect_Defense_Up_2_offset = reader.BaseStream.Position;
                 data.Food_Effect_Defense_Up_2_raw = reader.ReadUInt16();
+                data.Food_Effect_Defense_Up_3_offset = reader.BaseStream.Position;
                 data.Food_Effect_Defense_Up_3_raw = reader.ReadUInt16();
+                data.Food_Effect_Defense_Up_4_offset = reader.BaseStream.Position;
                 data.Food_Effect_Defense_Up_4_raw = reader.ReadUInt16();
+                data.Food_Effect_All_Resistances_Up_1_offset = reader.BaseStream.Position;
                 data.Food_Effect_All_Resistances_Up_1_raw = reader.ReadUInt16();
+                data.Food_Effect_All_Resistances_Up_2_offset = reader.BaseStream.Position;
                 data.Food_Effect_All_Resistances_Up_2_raw = reader.ReadUInt16();
+                data.Food_Effect_All_Resistances_Up_3_offset = reader.BaseStream.Position;
                 data.Food_Effect_All_Resistances_Up_3_raw = reader.ReadUInt16();
+                data.Food_Effect_All_Resistances_Up_4_offset = reader.BaseStream.Position;
                 data.Food_Effect_All_Resistances_Up_4_raw = reader.ReadUInt16();
                 return data;
             }
@@ -6790,27 +7862,27 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Food Effect: Life Up 1", "Food_Effect_Life_Up_1"),
-                    new MultiStructItemCustomView(this, "Food Effect: Life Up 2", "Food_Effect_Life_Up_2"),
-                    new MultiStructItemCustomView(this, "Food Effect: Life Up 3", "Food_Effect_Life_Up_3"),
-                    new MultiStructItemCustomView(this, "Food Effect: Life Up 4", "Food_Effect_Life_Up_4"),
-                    new MultiStructItemCustomView(this, "Food Effect: Life Up 5", "Food_Effect_Life_Up_5"),
-                    new MultiStructItemCustomView(this, "Food Effect: Life Up 6", "Food_Effect_Life_Up_6"),
-                    new MultiStructItemCustomView(this, "Food Effect: Stamina Up 1", "Food_Effect_Stamina_Up_1"),
-                    new MultiStructItemCustomView(this, "Food Effect: Stamina Up 2", "Food_Effect_Stamina_Up_2"),
-                    new MultiStructItemCustomView(this, "Food Effect: Stamina Up 3", "Food_Effect_Stamina_Up_3"),
-                    new MultiStructItemCustomView(this, "Food Effect: Attack Up 1", "Food_Effect_Attack_Up_1"),
-                    new MultiStructItemCustomView(this, "Food Effect: Attack Up 2", "Food_Effect_Attack_Up_2"),
-                    new MultiStructItemCustomView(this, "Food Effect: Attack Up 3", "Food_Effect_Attack_Up_3"),
-                    new MultiStructItemCustomView(this, "Food Effect: Attack Up 4", "Food_Effect_Attack_Up_4"),
-                    new MultiStructItemCustomView(this, "Food Effect: Defense Up 1", "Food_Effect_Defense_Up_1"),
-                    new MultiStructItemCustomView(this, "Food Effect: Defense Up 2", "Food_Effect_Defense_Up_2"),
-                    new MultiStructItemCustomView(this, "Food Effect: Defense Up 3", "Food_Effect_Defense_Up_3"),
-                    new MultiStructItemCustomView(this, "Food Effect: Defense Up 4", "Food_Effect_Defense_Up_4"),
-                    new MultiStructItemCustomView(this, "Food Effect: All Resistances Up 1", "Food_Effect_All_Resistances_Up_1"),
-                    new MultiStructItemCustomView(this, "Food Effect: All Resistances Up 2", "Food_Effect_All_Resistances_Up_2"),
-                    new MultiStructItemCustomView(this, "Food Effect: All Resistances Up 3", "Food_Effect_All_Resistances_Up_3"),
-                    new MultiStructItemCustomView(this, "Food Effect: All Resistances Up 4", "Food_Effect_All_Resistances_Up_4"),
+                    new MultiStructItemCustomView(this, "Food Effect: Life Up 1", "Food_Effect_Life_Up_1", "Food_Effect_Life_Up_1_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Life Up 2", "Food_Effect_Life_Up_2", "Food_Effect_Life_Up_2_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Life Up 3", "Food_Effect_Life_Up_3", "Food_Effect_Life_Up_3_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Life Up 4", "Food_Effect_Life_Up_4", "Food_Effect_Life_Up_4_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Life Up 5", "Food_Effect_Life_Up_5", "Food_Effect_Life_Up_5_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Life Up 6", "Food_Effect_Life_Up_6", "Food_Effect_Life_Up_6_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Stamina Up 1", "Food_Effect_Stamina_Up_1", "Food_Effect_Stamina_Up_1_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Stamina Up 2", "Food_Effect_Stamina_Up_2", "Food_Effect_Stamina_Up_2_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Stamina Up 3", "Food_Effect_Stamina_Up_3", "Food_Effect_Stamina_Up_3_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Attack Up 1", "Food_Effect_Attack_Up_1", "Food_Effect_Attack_Up_1_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Attack Up 2", "Food_Effect_Attack_Up_2", "Food_Effect_Attack_Up_2_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Attack Up 3", "Food_Effect_Attack_Up_3", "Food_Effect_Attack_Up_3_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Attack Up 4", "Food_Effect_Attack_Up_4", "Food_Effect_Attack_Up_4_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Defense Up 1", "Food_Effect_Defense_Up_1", "Food_Effect_Defense_Up_1_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Defense Up 2", "Food_Effect_Defense_Up_2", "Food_Effect_Defense_Up_2_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Defense Up 3", "Food_Effect_Defense_Up_3", "Food_Effect_Defense_Up_3_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: Defense Up 4", "Food_Effect_Defense_Up_4", "Food_Effect_Defense_Up_4_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: All Resistances Up 1", "Food_Effect_All_Resistances_Up_1", "Food_Effect_All_Resistances_Up_1_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: All Resistances Up 2", "Food_Effect_All_Resistances_Up_2", "Food_Effect_All_Resistances_Up_2_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: All Resistances Up 3", "Food_Effect_All_Resistances_Up_3", "Food_Effect_All_Resistances_Up_3_offset"),
+                    new MultiStructItemCustomView(this, "Food Effect: All Resistances Up 4", "Food_Effect_All_Resistances_Up_4", "Food_Effect_All_Resistances_Up_4_offset"),
                 };
             }
         }
@@ -6834,6 +7906,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Polisher_1_offset { get; private set; }
+
             protected byte Feline_Polisher_2_raw;
             public const string Feline_Polisher_2_displayName = "Feline Polisher: % 2";
             public const int Feline_Polisher_2_sortIndex = 100;
@@ -6848,6 +7923,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Polisher_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Polisher_2_offset { get; private set; }
 
             protected byte Feline_Polisher_3_raw;
             public const string Feline_Polisher_3_displayName = "Feline Polisher: % 3";
@@ -6864,6 +7942,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Polisher_3_offset { get; private set; }
+
             protected byte Feline_Polisher_Loop_1_raw;
             public const string Feline_Polisher_Loop_1_displayName = "Feline Polisher: Loop # 1";
             public const int Feline_Polisher_Loop_1_sortIndex = 200;
@@ -6878,6 +7959,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Polisher_Loop_1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Polisher_Loop_1_offset { get; private set; }
 
             protected byte Feline_Polisher_Loop_2_raw;
             public const string Feline_Polisher_Loop_2_displayName = "Feline Polisher: Loop # 2";
@@ -6894,6 +7978,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Polisher_Loop_2_offset { get; private set; }
+
             protected byte Feline_Polisher_Loop_3_raw;
             public const string Feline_Polisher_Loop_3_displayName = "Feline Polisher: Loop # 3";
             public const int Feline_Polisher_Loop_3_sortIndex = 300;
@@ -6908,6 +7995,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Polisher_Loop_3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Polisher_Loop_3_offset { get; private set; }
 
             protected float Feline_Rider_Attack_Rate_raw;
             public const string Feline_Rider_Attack_Rate_displayName = "Feline Rider: Attack Rate";
@@ -6924,6 +8014,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Rider_Attack_Rate_offset { get; private set; }
+
             protected float Feline_Heroics_Attack_Rate_raw;
             public const string Feline_Heroics_Attack_Rate_displayName = "Feline Heroics: Attack Rate";
             public const int Feline_Heroics_Attack_Rate_sortIndex = 400;
@@ -6938,6 +8031,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Heroics_Attack_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Heroics_Attack_Rate_offset { get; private set; }
 
             protected float Feline_Heroics_Defense_Rate_raw;
             public const string Feline_Heroics_Defense_Rate_displayName = "Feline Heroics: Defense Rate";
@@ -6954,6 +8050,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Heroics_Defense_Rate_offset { get; private set; }
+
             protected byte Feline_Heroics_Life_Activation_Threshold_raw;
             public const string Feline_Heroics_Life_Activation_Threshold_displayName = "Feline Heroics: Life Activation Threshold";
             public const int Feline_Heroics_Life_Activation_Threshold_sortIndex = 500;
@@ -6968,6 +8067,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Heroics_Life_Activation_Threshold));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Heroics_Life_Activation_Threshold_offset { get; private set; }
 
             protected byte Feline_Carving_L_Lottery_1_raw;
             public const string Feline_Carving_L_Lottery_1_displayName = "Feline Carving L: Lottery % 1";
@@ -6984,6 +8086,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Carving_L_Lottery_1_offset { get; private set; }
+
             protected byte Feline_Carving_L_Lottery_2_raw;
             public const string Feline_Carving_L_Lottery_2_displayName = "Feline Carving L: Lottery % 2";
             public const int Feline_Carving_L_Lottery_2_sortIndex = 600;
@@ -6998,6 +8103,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Carving_L_Lottery_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Carving_L_Lottery_2_offset { get; private set; }
 
             protected byte Feline_Carving_L_Lottery_3_raw;
             public const string Feline_Carving_L_Lottery_3_displayName = "Feline Carving L: Lottery % 3";
@@ -7014,6 +8122,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Carving_L_Lottery_3_offset { get; private set; }
+
             protected byte Feline_Carving_L_Up_1_raw;
             public const string Feline_Carving_L_Up_1_displayName = "Feline Carving L: Up % 1";
             public const int Feline_Carving_L_Up_1_sortIndex = 700;
@@ -7028,6 +8139,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Carving_L_Up_1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Carving_L_Up_1_offset { get; private set; }
 
             protected byte Feline_Carving_L_Up_2_raw;
             public const string Feline_Carving_L_Up_2_displayName = "Feline Carving L: Up % 2";
@@ -7044,6 +8158,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Carving_L_Up_2_offset { get; private set; }
+
             protected byte Feline_Carving_L_Up_3_raw;
             public const string Feline_Carving_L_Up_3_displayName = "Feline Carving L: Up % 3";
             public const int Feline_Carving_L_Up_3_sortIndex = 800;
@@ -7058,6 +8175,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Carving_L_Up_3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Carving_L_Up_3_offset { get; private set; }
 
             protected byte Feline_Carving_L_Up_4_raw;
             public const string Feline_Carving_L_Up_4_displayName = "Feline Carving L: Up % 4";
@@ -7074,6 +8194,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Carving_L_Up_4_offset { get; private set; }
+
             protected byte Feline_Carving_S_Lottery__raw;
             public const string Feline_Carving_S_Lottery__displayName = "Feline Carving S: Lottery %";
             public const int Feline_Carving_S_Lottery__sortIndex = 900;
@@ -7088,6 +8211,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Carving_S_Lottery_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Carving_S_Lottery__offset { get; private set; }
 
             protected byte Feline_Carving_S_Up__raw;
             public const string Feline_Carving_S_Up__displayName = "Feline Carving S: Up %";
@@ -7104,6 +8230,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Carving_S_Up__offset { get; private set; }
+
             protected float Feline_Medic_Heal_Rate_raw;
             public const string Feline_Medic_Heal_Rate_displayName = "Feline Medic: Heal Rate";
             public const int Feline_Medic_Heal_Rate_sortIndex = 1000;
@@ -7118,6 +8247,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Medic_Heal_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Medic_Heal_Rate_offset { get; private set; }
 
             protected float Feline_Black_Belt_Stamina_Rate_raw;
             public const string Feline_Black_Belt_Stamina_Rate_displayName = "Feline Black Belt: Stamina Rate";
@@ -7134,6 +8266,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Black_Belt_Stamina_Rate_offset { get; private set; }
+
             protected ushort Feline_Special_Attack_Condition_Attack_Bonus_raw;
             public const string Feline_Special_Attack_Condition_Attack_Bonus_displayName = "Feline Special Attack: Condition Attack Bonus";
             public const int Feline_Special_Attack_Condition_Attack_Bonus_sortIndex = 1100;
@@ -7148,6 +8283,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Special_Attack_Condition_Attack_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Special_Attack_Condition_Attack_Bonus_offset { get; private set; }
 
             protected float Feline_Special_Attack_Capture_Attack_Rate_raw;
             public const string Feline_Special_Attack_Capture_Attack_Rate_displayName = "Feline Special Attack: Capture Attack Rate";
@@ -7164,6 +8302,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Special_Attack_Capture_Attack_Rate_offset { get; private set; }
+
             protected byte Feline_Defense_S__raw;
             public const string Feline_Defense_S__displayName = "Feline Defense S: %";
             public const int Feline_Defense_S__sortIndex = 1200;
@@ -7178,6 +8319,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Defense_S_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Defense_S__offset { get; private set; }
 
             protected float Feline_Defense_S_Damage_Rate_raw;
             public const string Feline_Defense_S_Damage_Rate_displayName = "Feline Defense S: Damage Rate";
@@ -7194,6 +8338,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Defense_S_Damage_Rate_offset { get; private set; }
+
             protected byte Feline_Defense_L__raw;
             public const string Feline_Defense_L__displayName = "Feline Defense L: %";
             public const int Feline_Defense_L__sortIndex = 1300;
@@ -7208,6 +8355,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Defense_L_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Defense_L__offset { get; private set; }
 
             protected float Feline_Defense_L_Damage_Rate_raw;
             public const string Feline_Defense_L_Damage_Rate_displayName = "Feline Defense L: Damage Rate";
@@ -7224,6 +8374,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Defense_L_Damage_Rate_offset { get; private set; }
+
             protected float Feline_Harvest_Cooldown_Multiplier_raw;
             public const string Feline_Harvest_Cooldown_Multiplier_displayName = "Feline Harvest: Cooldown Multiplier";
             public const int Feline_Harvest_Cooldown_Multiplier_sortIndex = 1400;
@@ -7238,6 +8391,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Harvest_Cooldown_Multiplier));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Harvest_Cooldown_Multiplier_offset { get; private set; }
 
             protected float Feline_Sharpshooter_Shell_Attack_Rate_raw;
             public const string Feline_Sharpshooter_Shell_Attack_Rate_displayName = "Feline Sharpshooter: Shell Attack Rate";
@@ -7254,6 +8410,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Sharpshooter_Shell_Attack_Rate_offset { get; private set; }
+
             protected float Feline_Escape_Artist_Dash_Stamina_Rate_raw;
             public const string Feline_Escape_Artist_Dash_Stamina_Rate_displayName = "Feline Escape Artist: Dash Stamina Rate";
             public const int Feline_Escape_Artist_Dash_Stamina_Rate_sortIndex = 1500;
@@ -7268,6 +8427,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Escape_Artist_Dash_Stamina_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Escape_Artist_Dash_Stamina_Rate_offset { get; private set; }
 
             protected float Feline_Delivery_Dash_Stamina_Rate_raw;
             public const string Feline_Delivery_Dash_Stamina_Rate_displayName = "Feline Delivery: Dash Stamina Rate";
@@ -7284,6 +8446,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Delivery_Dash_Stamina_Rate_offset { get; private set; }
+
             protected float Feline_Riser_S_IFrames_raw;
             public const string Feline_Riser_S_IFrames_displayName = "Feline Riser S: IFrames";
             public const int Feline_Riser_S_IFrames_sortIndex = 1600;
@@ -7298,6 +8463,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Riser_S_IFrames));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Riser_S_IFrames_offset { get; private set; }
 
             protected float Feline_Riser_L_IFrames_raw;
             public const string Feline_Riser_L_IFrames_displayName = "Feline Riser L: IFrames";
@@ -7314,6 +8482,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Riser_L_IFrames_offset { get; private set; }
+
             protected float Feline_Temper_Shell_Attack_Rate_raw;
             public const string Feline_Temper_Shell_Attack_Rate_displayName = "Feline Temper: Shell Attack Rate";
             public const int Feline_Temper_Shell_Attack_Rate_sortIndex = 1700;
@@ -7328,6 +8499,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Temper_Shell_Attack_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Temper_Shell_Attack_Rate_offset { get; private set; }
 
             protected byte Feline_Temper_Blur_Level_Bonus_raw;
             public const string Feline_Temper_Blur_Level_Bonus_displayName = "Feline Temper: Blur Level Bonus";
@@ -7344,6 +8518,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Temper_Blur_Level_Bonus_offset { get; private set; }
+
             protected float Feline_Cliffhanger_Stamina_Rate_raw;
             public const string Feline_Cliffhanger_Stamina_Rate_displayName = "Feline Cliffhanger: Stamina Rate";
             public const int Feline_Cliffhanger_Stamina_Rate_sortIndex = 1800;
@@ -7358,6 +8535,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Cliffhanger_Stamina_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Cliffhanger_Stamina_Rate_offset { get; private set; }
 
             protected float Feline_Slugger_Stun_Attack_Rate_raw;
             public const string Feline_Slugger_Stun_Attack_Rate_displayName = "Feline Slugger: Stun Attack Rate";
@@ -7374,6 +8554,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Slugger_Stun_Attack_Rate_offset { get; private set; }
+
             protected float Feline_Bombardier_Ballista_Attack_Rate_raw;
             public const string Feline_Bombardier_Ballista_Attack_Rate_displayName = "Feline Bombardier: Ballista Attack Rate";
             public const int Feline_Bombardier_Ballista_Attack_Rate_sortIndex = 1900;
@@ -7388,6 +8571,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Bombardier_Ballista_Attack_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Bombardier_Ballista_Attack_Rate_offset { get; private set; }
 
             protected float Feline_Bombardier_Cannon_Attack_Rate_raw;
             public const string Feline_Bombardier_Cannon_Attack_Rate_displayName = "Feline Bombardier: Cannon Attack Rate";
@@ -7404,6 +8590,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Bombardier_Cannon_Attack_Rate_offset { get; private set; }
+
             protected float Feline_Bombardier_Gunlance_Shell_Attack_Rate_raw;
             public const string Feline_Bombardier_Gunlance_Shell_Attack_Rate_displayName = "Feline Bombardier: Gunlance Shell Attack Rate";
             public const int Feline_Bombardier_Gunlance_Shell_Attack_Rate_sortIndex = 2000;
@@ -7418,6 +8607,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Bombardier_Gunlance_Shell_Attack_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Bombardier_Gunlance_Shell_Attack_Rate_offset { get; private set; }
 
             protected float Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_raw;
             public const string Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_displayName = "Feline Bombardier: Gunlance WyvernFire Attack Rate";
@@ -7434,6 +8626,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_offset { get; private set; }
+
             protected float Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_raw;
             public const string Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_displayName = "Feline Bombardier: Gunlance Wyrmstake Cannon Attack Rate";
             public const int Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_sortIndex = 2100;
@@ -7448,6 +8643,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_offset { get; private set; }
 
             protected float Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_raw;
             public const string Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_displayName = "Feline Bombardier: Charge Blade Impact Phial Attack Rate";
@@ -7464,6 +8662,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_offset { get; private set; }
+
             protected float Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_raw;
             public const string Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_displayName = "Feline Bombardier: Bowgun Sticky Ammo Attack Rate";
             public const int Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_sortIndex = 2200;
@@ -7478,6 +8679,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_offset { get; private set; }
 
             protected float Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_raw;
             public const string Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_displayName = "Feline Bombardier: Bowgun Wyvern Ammo Attack Rate";
@@ -7494,6 +8698,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_offset { get; private set; }
+
             protected byte Feline_Moxie_Health_Threshold_raw;
             public const string Feline_Moxie_Health_Threshold_displayName = "Feline Moxie: Health Threshold";
             public const int Feline_Moxie_Health_Threshold_sortIndex = 2300;
@@ -7508,6 +8715,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Moxie_Health_Threshold));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Moxie_Health_Threshold_offset { get; private set; }
 
             protected byte Feline_Dungmaster_Escape_Bonus_raw;
             public const string Feline_Dungmaster_Escape_Bonus_displayName = "Feline Dungmaster: Escape % Bonus";
@@ -7524,6 +8734,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Dungmaster_Escape_Bonus_offset { get; private set; }
+
             protected float Feline_Provoker_Rate_raw;
             public const string Feline_Provoker_Rate_displayName = "Feline Provoker: Rate";
             public const int Feline_Provoker_Rate_sortIndex = 2400;
@@ -7538,6 +8751,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Provoker_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Provoker_Rate_offset { get; private set; }
 
             protected float Feline_Cool_Cat_Power_UP_Time_Needed_raw;
             public const string Feline_Cool_Cat_Power_UP_Time_Needed_displayName = "Feline Cool Cat: Power UP Time Needed";
@@ -7554,6 +8770,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Cool_Cat_Power_UP_Time_Needed_offset { get; private set; }
+
             protected float Feline_Cool_Cat_Power_UP_Duration_raw;
             public const string Feline_Cool_Cat_Power_UP_Duration_displayName = "Feline Cool Cat: Power UP Duration";
             public const int Feline_Cool_Cat_Power_UP_Duration_sortIndex = 2500;
@@ -7568,6 +8787,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Cool_Cat_Power_UP_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Cool_Cat_Power_UP_Duration_offset { get; private set; }
 
             protected float Feline_Cool_Cat_Attack_Bonus_raw;
             public const string Feline_Cool_Cat_Attack_Bonus_displayName = "Feline Cool Cat: Attack Bonus";
@@ -7584,6 +8806,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Cool_Cat_Attack_Bonus_offset { get; private set; }
+
             protected float Feline_Booster_Attack_Bonus_raw;
             public const string Feline_Booster_Attack_Bonus_displayName = "Feline Booster: Attack Bonus";
             public const int Feline_Booster_Attack_Bonus_sortIndex = 2600;
@@ -7598,6 +8823,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Booster_Attack_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Booster_Attack_Bonus_offset { get; private set; }
 
             protected float Feline_Booster_Defense_Bonus_raw;
             public const string Feline_Booster_Defense_Bonus_displayName = "Feline Booster: Defense Bonus";
@@ -7614,6 +8842,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Booster_Defense_Bonus_offset { get; private set; }
+
             protected float Feline_Booster_Duration_raw;
             public const string Feline_Booster_Duration_displayName = "Feline Booster: Duration";
             public const int Feline_Booster_Duration_sortIndex = 2700;
@@ -7628,6 +8859,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Booster_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Booster_Duration_offset { get; private set; }
 
             protected float Feline_Groomer_Defense_Down_Duration_Multiplier_raw;
             public const string Feline_Groomer_Defense_Down_Duration_Multiplier_displayName = "Feline Groomer: Defense Down Duration Multiplier";
@@ -7644,6 +8878,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Groomer_Defense_Down_Duration_Multiplier_offset { get; private set; }
+
             protected float Feline_Groomer_Element_Blight_Recovery_Multiplier_raw;
             public const string Feline_Groomer_Element_Blight_Recovery_Multiplier_displayName = "Feline Groomer: Element Blight Recovery Multiplier";
             public const int Feline_Groomer_Element_Blight_Recovery_Multiplier_sortIndex = 2800;
@@ -7658,6 +8895,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Groomer_Element_Blight_Recovery_Multiplier));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Groomer_Element_Blight_Recovery_Multiplier_offset { get; private set; }
 
             protected float Feline_Parting_Gift_Radius_raw;
             public const string Feline_Parting_Gift_Radius_displayName = "Feline Parting Gift: Radius";
@@ -7674,6 +8914,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Parting_Gift_Radius_offset { get; private set; }
+
             protected ushort Feline_Parting_Gift_Recovery_Value_raw;
             public const string Feline_Parting_Gift_Recovery_Value_displayName = "Feline Parting Gift: Recovery Value";
             public const int Feline_Parting_Gift_Recovery_Value_sortIndex = 2900;
@@ -7688,6 +8931,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Parting_Gift_Recovery_Value));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Parting_Gift_Recovery_Value_offset { get; private set; }
 
             protected float Feline_Recoil_Attack_Multiplier_1_raw;
             public const string Feline_Recoil_Attack_Multiplier_1_displayName = "Feline Recoil: Attack Multiplier 1";
@@ -7704,6 +8950,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Recoil_Attack_Multiplier_1_offset { get; private set; }
+
             protected float Feline_Recoil_Attack_Multiplier_2_raw;
             public const string Feline_Recoil_Attack_Multiplier_2_displayName = "Feline Recoil: Attack Multiplier 2";
             public const int Feline_Recoil_Attack_Multiplier_2_sortIndex = 3000;
@@ -7718,6 +8967,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Recoil_Attack_Multiplier_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Recoil_Attack_Multiplier_2_offset { get; private set; }
 
             protected float Feline_Recoil_Attack_Multiplier_3_raw;
             public const string Feline_Recoil_Attack_Multiplier_3_displayName = "Feline Recoil: Attack Multiplier 3";
@@ -7734,6 +8986,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Recoil_Attack_Multiplier_3_offset { get; private set; }
+
             protected float Feline_Recoil_Attack_Multiplier_4_raw;
             public const string Feline_Recoil_Attack_Multiplier_4_displayName = "Feline Recoil: Attack Multiplier 4";
             public const int Feline_Recoil_Attack_Multiplier_4_sortIndex = 3100;
@@ -7748,6 +9003,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Feline_Recoil_Attack_Multiplier_4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Feline_Recoil_Attack_Multiplier_4_offset { get; private set; }
 
             protected float Feline_Recoil_Attack_Multiplier_5_raw;
             public const string Feline_Recoil_Attack_Multiplier_5_displayName = "Feline Recoil: Attack Multiplier 5";
@@ -7764,6 +9022,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Recoil_Attack_Multiplier_5_offset { get; private set; }
+
             protected float Feline_Tailor_raw;
             public const string Feline_Tailor_displayName = "Feline Tailor";
             public const int Feline_Tailor_sortIndex = 3200;
@@ -7779,6 +9040,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Feline_Tailor_offset { get; private set; }
+
             public const int lastSortIndex = 3250;
 
             public static ObservableMhwStructCollection<Feline_Skill> LoadData(BinaryReader reader) {
@@ -7793,69 +9057,133 @@ namespace MHW_Editor.Structs.PlData {
             public static Feline_Skill LoadData(BinaryReader reader, ulong i) {
                 var data = new Feline_Skill();
                 data.Index = i;
+                data.Feline_Polisher_1_offset = reader.BaseStream.Position;
                 data.Feline_Polisher_1_raw = reader.ReadByte();
+                data.Feline_Polisher_2_offset = reader.BaseStream.Position;
                 data.Feline_Polisher_2_raw = reader.ReadByte();
+                data.Feline_Polisher_3_offset = reader.BaseStream.Position;
                 data.Feline_Polisher_3_raw = reader.ReadByte();
+                data.Feline_Polisher_Loop_1_offset = reader.BaseStream.Position;
                 data.Feline_Polisher_Loop_1_raw = reader.ReadByte();
+                data.Feline_Polisher_Loop_2_offset = reader.BaseStream.Position;
                 data.Feline_Polisher_Loop_2_raw = reader.ReadByte();
+                data.Feline_Polisher_Loop_3_offset = reader.BaseStream.Position;
                 data.Feline_Polisher_Loop_3_raw = reader.ReadByte();
+                data.Feline_Rider_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Rider_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Heroics_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Heroics_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Heroics_Defense_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Heroics_Defense_Rate_raw = reader.ReadSingle();
+                data.Feline_Heroics_Life_Activation_Threshold_offset = reader.BaseStream.Position;
                 data.Feline_Heroics_Life_Activation_Threshold_raw = reader.ReadByte();
+                data.Feline_Carving_L_Lottery_1_offset = reader.BaseStream.Position;
                 data.Feline_Carving_L_Lottery_1_raw = reader.ReadByte();
+                data.Feline_Carving_L_Lottery_2_offset = reader.BaseStream.Position;
                 data.Feline_Carving_L_Lottery_2_raw = reader.ReadByte();
+                data.Feline_Carving_L_Lottery_3_offset = reader.BaseStream.Position;
                 data.Feline_Carving_L_Lottery_3_raw = reader.ReadByte();
+                data.Feline_Carving_L_Up_1_offset = reader.BaseStream.Position;
                 data.Feline_Carving_L_Up_1_raw = reader.ReadByte();
+                data.Feline_Carving_L_Up_2_offset = reader.BaseStream.Position;
                 data.Feline_Carving_L_Up_2_raw = reader.ReadByte();
+                data.Feline_Carving_L_Up_3_offset = reader.BaseStream.Position;
                 data.Feline_Carving_L_Up_3_raw = reader.ReadByte();
+                data.Feline_Carving_L_Up_4_offset = reader.BaseStream.Position;
                 data.Feline_Carving_L_Up_4_raw = reader.ReadByte();
+                data.Feline_Carving_S_Lottery__offset = reader.BaseStream.Position;
                 data.Feline_Carving_S_Lottery__raw = reader.ReadByte();
+                data.Feline_Carving_S_Up__offset = reader.BaseStream.Position;
                 data.Feline_Carving_S_Up__raw = reader.ReadByte();
+                data.Feline_Medic_Heal_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Medic_Heal_Rate_raw = reader.ReadSingle();
+                data.Feline_Black_Belt_Stamina_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Black_Belt_Stamina_Rate_raw = reader.ReadSingle();
+                data.Feline_Special_Attack_Condition_Attack_Bonus_offset = reader.BaseStream.Position;
                 data.Feline_Special_Attack_Condition_Attack_Bonus_raw = reader.ReadUInt16();
+                data.Feline_Special_Attack_Capture_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Special_Attack_Capture_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Defense_S__offset = reader.BaseStream.Position;
                 data.Feline_Defense_S__raw = reader.ReadByte();
+                data.Feline_Defense_S_Damage_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Defense_S_Damage_Rate_raw = reader.ReadSingle();
+                data.Feline_Defense_L__offset = reader.BaseStream.Position;
                 data.Feline_Defense_L__raw = reader.ReadByte();
+                data.Feline_Defense_L_Damage_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Defense_L_Damage_Rate_raw = reader.ReadSingle();
+                data.Feline_Harvest_Cooldown_Multiplier_offset = reader.BaseStream.Position;
                 data.Feline_Harvest_Cooldown_Multiplier_raw = reader.ReadSingle();
+                data.Feline_Sharpshooter_Shell_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Sharpshooter_Shell_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Escape_Artist_Dash_Stamina_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Escape_Artist_Dash_Stamina_Rate_raw = reader.ReadSingle();
+                data.Feline_Delivery_Dash_Stamina_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Delivery_Dash_Stamina_Rate_raw = reader.ReadSingle();
+                data.Feline_Riser_S_IFrames_offset = reader.BaseStream.Position;
                 data.Feline_Riser_S_IFrames_raw = reader.ReadSingle();
+                data.Feline_Riser_L_IFrames_offset = reader.BaseStream.Position;
                 data.Feline_Riser_L_IFrames_raw = reader.ReadSingle();
+                data.Feline_Temper_Shell_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Temper_Shell_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Temper_Blur_Level_Bonus_offset = reader.BaseStream.Position;
                 data.Feline_Temper_Blur_Level_Bonus_raw = reader.ReadByte();
+                data.Feline_Cliffhanger_Stamina_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Cliffhanger_Stamina_Rate_raw = reader.ReadSingle();
+                data.Feline_Slugger_Stun_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Slugger_Stun_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Bombardier_Ballista_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Bombardier_Ballista_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Bombardier_Cannon_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Bombardier_Cannon_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Bombardier_Gunlance_Shell_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Bombardier_Gunlance_Shell_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_raw = reader.ReadSingle();
+                data.Feline_Moxie_Health_Threshold_offset = reader.BaseStream.Position;
                 data.Feline_Moxie_Health_Threshold_raw = reader.ReadByte();
+                data.Feline_Dungmaster_Escape_Bonus_offset = reader.BaseStream.Position;
                 data.Feline_Dungmaster_Escape_Bonus_raw = reader.ReadByte();
+                data.Feline_Provoker_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Provoker_Rate_raw = reader.ReadSingle();
+                data.Feline_Cool_Cat_Power_UP_Time_Needed_offset = reader.BaseStream.Position;
                 data.Feline_Cool_Cat_Power_UP_Time_Needed_raw = reader.ReadSingle();
+                data.Feline_Cool_Cat_Power_UP_Duration_offset = reader.BaseStream.Position;
                 data.Feline_Cool_Cat_Power_UP_Duration_raw = reader.ReadSingle();
+                data.Feline_Cool_Cat_Attack_Bonus_offset = reader.BaseStream.Position;
                 data.Feline_Cool_Cat_Attack_Bonus_raw = reader.ReadSingle();
+                data.Feline_Booster_Attack_Bonus_offset = reader.BaseStream.Position;
                 data.Feline_Booster_Attack_Bonus_raw = reader.ReadSingle();
+                data.Feline_Booster_Defense_Bonus_offset = reader.BaseStream.Position;
                 data.Feline_Booster_Defense_Bonus_raw = reader.ReadSingle();
+                data.Feline_Booster_Duration_offset = reader.BaseStream.Position;
                 data.Feline_Booster_Duration_raw = reader.ReadSingle();
+                data.Feline_Groomer_Defense_Down_Duration_Multiplier_offset = reader.BaseStream.Position;
                 data.Feline_Groomer_Defense_Down_Duration_Multiplier_raw = reader.ReadSingle();
+                data.Feline_Groomer_Element_Blight_Recovery_Multiplier_offset = reader.BaseStream.Position;
                 data.Feline_Groomer_Element_Blight_Recovery_Multiplier_raw = reader.ReadSingle();
+                data.Feline_Parting_Gift_Radius_offset = reader.BaseStream.Position;
                 data.Feline_Parting_Gift_Radius_raw = reader.ReadSingle();
+                data.Feline_Parting_Gift_Recovery_Value_offset = reader.BaseStream.Position;
                 data.Feline_Parting_Gift_Recovery_Value_raw = reader.ReadUInt16();
+                data.Feline_Recoil_Attack_Multiplier_1_offset = reader.BaseStream.Position;
                 data.Feline_Recoil_Attack_Multiplier_1_raw = reader.ReadSingle();
+                data.Feline_Recoil_Attack_Multiplier_2_offset = reader.BaseStream.Position;
                 data.Feline_Recoil_Attack_Multiplier_2_raw = reader.ReadSingle();
+                data.Feline_Recoil_Attack_Multiplier_3_offset = reader.BaseStream.Position;
                 data.Feline_Recoil_Attack_Multiplier_3_raw = reader.ReadSingle();
+                data.Feline_Recoil_Attack_Multiplier_4_offset = reader.BaseStream.Position;
                 data.Feline_Recoil_Attack_Multiplier_4_raw = reader.ReadSingle();
+                data.Feline_Recoil_Attack_Multiplier_5_offset = reader.BaseStream.Position;
                 data.Feline_Recoil_Attack_Multiplier_5_raw = reader.ReadSingle();
+                data.Feline_Tailor_offset = reader.BaseStream.Position;
                 data.Feline_Tailor_raw = reader.ReadSingle();
                 return data;
             }
@@ -7929,70 +9257,70 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Feline Polisher: % 1", "Feline_Polisher_1"),
-                    new MultiStructItemCustomView(this, "Feline Polisher: % 2", "Feline_Polisher_2"),
-                    new MultiStructItemCustomView(this, "Feline Polisher: % 3", "Feline_Polisher_3"),
-                    new MultiStructItemCustomView(this, "Feline Polisher: Loop # 1", "Feline_Polisher_Loop_1"),
-                    new MultiStructItemCustomView(this, "Feline Polisher: Loop # 2", "Feline_Polisher_Loop_2"),
-                    new MultiStructItemCustomView(this, "Feline Polisher: Loop # 3", "Feline_Polisher_Loop_3"),
-                    new MultiStructItemCustomView(this, "Feline Rider: Attack Rate", "Feline_Rider_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Heroics: Attack Rate", "Feline_Heroics_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Heroics: Defense Rate", "Feline_Heroics_Defense_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Heroics: Life Activation Threshold", "Feline_Heroics_Life_Activation_Threshold"),
-                    new MultiStructItemCustomView(this, "Feline Carving L: Lottery % 1", "Feline_Carving_L_Lottery_1"),
-                    new MultiStructItemCustomView(this, "Feline Carving L: Lottery % 2", "Feline_Carving_L_Lottery_2"),
-                    new MultiStructItemCustomView(this, "Feline Carving L: Lottery % 3", "Feline_Carving_L_Lottery_3"),
-                    new MultiStructItemCustomView(this, "Feline Carving L: Up % 1", "Feline_Carving_L_Up_1"),
-                    new MultiStructItemCustomView(this, "Feline Carving L: Up % 2", "Feline_Carving_L_Up_2"),
-                    new MultiStructItemCustomView(this, "Feline Carving L: Up % 3", "Feline_Carving_L_Up_3"),
-                    new MultiStructItemCustomView(this, "Feline Carving L: Up % 4", "Feline_Carving_L_Up_4"),
-                    new MultiStructItemCustomView(this, "Feline Carving S: Lottery %", "Feline_Carving_S_Lottery_"),
-                    new MultiStructItemCustomView(this, "Feline Carving S: Up %", "Feline_Carving_S_Up_"),
-                    new MultiStructItemCustomView(this, "Feline Medic: Heal Rate", "Feline_Medic_Heal_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Black Belt: Stamina Rate", "Feline_Black_Belt_Stamina_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Special Attack: Condition Attack Bonus", "Feline_Special_Attack_Condition_Attack_Bonus"),
-                    new MultiStructItemCustomView(this, "Feline Special Attack: Capture Attack Rate", "Feline_Special_Attack_Capture_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Defense S: %", "Feline_Defense_S_"),
-                    new MultiStructItemCustomView(this, "Feline Defense S: Damage Rate", "Feline_Defense_S_Damage_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Defense L: %", "Feline_Defense_L_"),
-                    new MultiStructItemCustomView(this, "Feline Defense L: Damage Rate", "Feline_Defense_L_Damage_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Harvest: Cooldown Multiplier", "Feline_Harvest_Cooldown_Multiplier"),
-                    new MultiStructItemCustomView(this, "Feline Sharpshooter: Shell Attack Rate", "Feline_Sharpshooter_Shell_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Escape Artist: Dash Stamina Rate", "Feline_Escape_Artist_Dash_Stamina_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Delivery: Dash Stamina Rate", "Feline_Delivery_Dash_Stamina_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Riser S: IFrames", "Feline_Riser_S_IFrames"),
-                    new MultiStructItemCustomView(this, "Feline Riser L: IFrames", "Feline_Riser_L_IFrames"),
-                    new MultiStructItemCustomView(this, "Feline Temper: Shell Attack Rate", "Feline_Temper_Shell_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Temper: Blur Level Bonus", "Feline_Temper_Blur_Level_Bonus"),
-                    new MultiStructItemCustomView(this, "Feline Cliffhanger: Stamina Rate", "Feline_Cliffhanger_Stamina_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Slugger: Stun Attack Rate", "Feline_Slugger_Stun_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Bombardier: Ballista Attack Rate", "Feline_Bombardier_Ballista_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Bombardier: Cannon Attack Rate", "Feline_Bombardier_Cannon_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Bombardier: Gunlance Shell Attack Rate", "Feline_Bombardier_Gunlance_Shell_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Bombardier: Gunlance WyvernFire Attack Rate", "Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Bombardier: Gunlance Wyrmstake Cannon Attack Rate", "Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Bombardier: Charge Blade Impact Phial Attack Rate", "Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Bombardier: Bowgun Sticky Ammo Attack Rate", "Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Bombardier: Bowgun Wyvern Ammo Attack Rate", "Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Moxie: Health Threshold", "Feline_Moxie_Health_Threshold"),
-                    new MultiStructItemCustomView(this, "Feline Dungmaster: Escape % Bonus", "Feline_Dungmaster_Escape_Bonus"),
-                    new MultiStructItemCustomView(this, "Feline Provoker: Rate", "Feline_Provoker_Rate"),
-                    new MultiStructItemCustomView(this, "Feline Cool Cat: Power UP Time Needed", "Feline_Cool_Cat_Power_UP_Time_Needed"),
-                    new MultiStructItemCustomView(this, "Feline Cool Cat: Power UP Duration", "Feline_Cool_Cat_Power_UP_Duration"),
-                    new MultiStructItemCustomView(this, "Feline Cool Cat: Attack Bonus", "Feline_Cool_Cat_Attack_Bonus"),
-                    new MultiStructItemCustomView(this, "Feline Booster: Attack Bonus", "Feline_Booster_Attack_Bonus"),
-                    new MultiStructItemCustomView(this, "Feline Booster: Defense Bonus", "Feline_Booster_Defense_Bonus"),
-                    new MultiStructItemCustomView(this, "Feline Booster: Duration", "Feline_Booster_Duration"),
-                    new MultiStructItemCustomView(this, "Feline Groomer: Defense Down Duration Multiplier", "Feline_Groomer_Defense_Down_Duration_Multiplier"),
-                    new MultiStructItemCustomView(this, "Feline Groomer: Element Blight Recovery Multiplier", "Feline_Groomer_Element_Blight_Recovery_Multiplier"),
-                    new MultiStructItemCustomView(this, "Feline Parting Gift: Radius", "Feline_Parting_Gift_Radius"),
-                    new MultiStructItemCustomView(this, "Feline Parting Gift: Recovery Value", "Feline_Parting_Gift_Recovery_Value"),
-                    new MultiStructItemCustomView(this, "Feline Recoil: Attack Multiplier 1", "Feline_Recoil_Attack_Multiplier_1"),
-                    new MultiStructItemCustomView(this, "Feline Recoil: Attack Multiplier 2", "Feline_Recoil_Attack_Multiplier_2"),
-                    new MultiStructItemCustomView(this, "Feline Recoil: Attack Multiplier 3", "Feline_Recoil_Attack_Multiplier_3"),
-                    new MultiStructItemCustomView(this, "Feline Recoil: Attack Multiplier 4", "Feline_Recoil_Attack_Multiplier_4"),
-                    new MultiStructItemCustomView(this, "Feline Recoil: Attack Multiplier 5", "Feline_Recoil_Attack_Multiplier_5"),
-                    new MultiStructItemCustomView(this, "Feline Tailor", "Feline_Tailor"),
+                    new MultiStructItemCustomView(this, "Feline Polisher: % 1", "Feline_Polisher_1", "Feline_Polisher_1_offset"),
+                    new MultiStructItemCustomView(this, "Feline Polisher: % 2", "Feline_Polisher_2", "Feline_Polisher_2_offset"),
+                    new MultiStructItemCustomView(this, "Feline Polisher: % 3", "Feline_Polisher_3", "Feline_Polisher_3_offset"),
+                    new MultiStructItemCustomView(this, "Feline Polisher: Loop # 1", "Feline_Polisher_Loop_1", "Feline_Polisher_Loop_1_offset"),
+                    new MultiStructItemCustomView(this, "Feline Polisher: Loop # 2", "Feline_Polisher_Loop_2", "Feline_Polisher_Loop_2_offset"),
+                    new MultiStructItemCustomView(this, "Feline Polisher: Loop # 3", "Feline_Polisher_Loop_3", "Feline_Polisher_Loop_3_offset"),
+                    new MultiStructItemCustomView(this, "Feline Rider: Attack Rate", "Feline_Rider_Attack_Rate", "Feline_Rider_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Heroics: Attack Rate", "Feline_Heroics_Attack_Rate", "Feline_Heroics_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Heroics: Defense Rate", "Feline_Heroics_Defense_Rate", "Feline_Heroics_Defense_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Heroics: Life Activation Threshold", "Feline_Heroics_Life_Activation_Threshold", "Feline_Heroics_Life_Activation_Threshold_offset"),
+                    new MultiStructItemCustomView(this, "Feline Carving L: Lottery % 1", "Feline_Carving_L_Lottery_1", "Feline_Carving_L_Lottery_1_offset"),
+                    new MultiStructItemCustomView(this, "Feline Carving L: Lottery % 2", "Feline_Carving_L_Lottery_2", "Feline_Carving_L_Lottery_2_offset"),
+                    new MultiStructItemCustomView(this, "Feline Carving L: Lottery % 3", "Feline_Carving_L_Lottery_3", "Feline_Carving_L_Lottery_3_offset"),
+                    new MultiStructItemCustomView(this, "Feline Carving L: Up % 1", "Feline_Carving_L_Up_1", "Feline_Carving_L_Up_1_offset"),
+                    new MultiStructItemCustomView(this, "Feline Carving L: Up % 2", "Feline_Carving_L_Up_2", "Feline_Carving_L_Up_2_offset"),
+                    new MultiStructItemCustomView(this, "Feline Carving L: Up % 3", "Feline_Carving_L_Up_3", "Feline_Carving_L_Up_3_offset"),
+                    new MultiStructItemCustomView(this, "Feline Carving L: Up % 4", "Feline_Carving_L_Up_4", "Feline_Carving_L_Up_4_offset"),
+                    new MultiStructItemCustomView(this, "Feline Carving S: Lottery %", "Feline_Carving_S_Lottery_", "Feline_Carving_S_Lottery__offset"),
+                    new MultiStructItemCustomView(this, "Feline Carving S: Up %", "Feline_Carving_S_Up_", "Feline_Carving_S_Up__offset"),
+                    new MultiStructItemCustomView(this, "Feline Medic: Heal Rate", "Feline_Medic_Heal_Rate", "Feline_Medic_Heal_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Black Belt: Stamina Rate", "Feline_Black_Belt_Stamina_Rate", "Feline_Black_Belt_Stamina_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Special Attack: Condition Attack Bonus", "Feline_Special_Attack_Condition_Attack_Bonus", "Feline_Special_Attack_Condition_Attack_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Feline Special Attack: Capture Attack Rate", "Feline_Special_Attack_Capture_Attack_Rate", "Feline_Special_Attack_Capture_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Defense S: %", "Feline_Defense_S_", "Feline_Defense_S__offset"),
+                    new MultiStructItemCustomView(this, "Feline Defense S: Damage Rate", "Feline_Defense_S_Damage_Rate", "Feline_Defense_S_Damage_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Defense L: %", "Feline_Defense_L_", "Feline_Defense_L__offset"),
+                    new MultiStructItemCustomView(this, "Feline Defense L: Damage Rate", "Feline_Defense_L_Damage_Rate", "Feline_Defense_L_Damage_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Harvest: Cooldown Multiplier", "Feline_Harvest_Cooldown_Multiplier", "Feline_Harvest_Cooldown_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Feline Sharpshooter: Shell Attack Rate", "Feline_Sharpshooter_Shell_Attack_Rate", "Feline_Sharpshooter_Shell_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Escape Artist: Dash Stamina Rate", "Feline_Escape_Artist_Dash_Stamina_Rate", "Feline_Escape_Artist_Dash_Stamina_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Delivery: Dash Stamina Rate", "Feline_Delivery_Dash_Stamina_Rate", "Feline_Delivery_Dash_Stamina_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Riser S: IFrames", "Feline_Riser_S_IFrames", "Feline_Riser_S_IFrames_offset"),
+                    new MultiStructItemCustomView(this, "Feline Riser L: IFrames", "Feline_Riser_L_IFrames", "Feline_Riser_L_IFrames_offset"),
+                    new MultiStructItemCustomView(this, "Feline Temper: Shell Attack Rate", "Feline_Temper_Shell_Attack_Rate", "Feline_Temper_Shell_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Temper: Blur Level Bonus", "Feline_Temper_Blur_Level_Bonus", "Feline_Temper_Blur_Level_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Feline Cliffhanger: Stamina Rate", "Feline_Cliffhanger_Stamina_Rate", "Feline_Cliffhanger_Stamina_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Slugger: Stun Attack Rate", "Feline_Slugger_Stun_Attack_Rate", "Feline_Slugger_Stun_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Bombardier: Ballista Attack Rate", "Feline_Bombardier_Ballista_Attack_Rate", "Feline_Bombardier_Ballista_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Bombardier: Cannon Attack Rate", "Feline_Bombardier_Cannon_Attack_Rate", "Feline_Bombardier_Cannon_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Bombardier: Gunlance Shell Attack Rate", "Feline_Bombardier_Gunlance_Shell_Attack_Rate", "Feline_Bombardier_Gunlance_Shell_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Bombardier: Gunlance WyvernFire Attack Rate", "Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate", "Feline_Bombardier_Gunlance_WyvernFire_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Bombardier: Gunlance Wyrmstake Cannon Attack Rate", "Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate", "Feline_Bombardier_Gunlance_Wyrmstake_Cannon_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Bombardier: Charge Blade Impact Phial Attack Rate", "Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate", "Feline_Bombardier_Charge_Blade_Impact_Phial_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Bombardier: Bowgun Sticky Ammo Attack Rate", "Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate", "Feline_Bombardier_Bowgun_Sticky_Ammo_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Bombardier: Bowgun Wyvern Ammo Attack Rate", "Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate", "Feline_Bombardier_Bowgun_Wyvern_Ammo_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Moxie: Health Threshold", "Feline_Moxie_Health_Threshold", "Feline_Moxie_Health_Threshold_offset"),
+                    new MultiStructItemCustomView(this, "Feline Dungmaster: Escape % Bonus", "Feline_Dungmaster_Escape_Bonus", "Feline_Dungmaster_Escape_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Feline Provoker: Rate", "Feline_Provoker_Rate", "Feline_Provoker_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Feline Cool Cat: Power UP Time Needed", "Feline_Cool_Cat_Power_UP_Time_Needed", "Feline_Cool_Cat_Power_UP_Time_Needed_offset"),
+                    new MultiStructItemCustomView(this, "Feline Cool Cat: Power UP Duration", "Feline_Cool_Cat_Power_UP_Duration", "Feline_Cool_Cat_Power_UP_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Feline Cool Cat: Attack Bonus", "Feline_Cool_Cat_Attack_Bonus", "Feline_Cool_Cat_Attack_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Feline Booster: Attack Bonus", "Feline_Booster_Attack_Bonus", "Feline_Booster_Attack_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Feline Booster: Defense Bonus", "Feline_Booster_Defense_Bonus", "Feline_Booster_Defense_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Feline Booster: Duration", "Feline_Booster_Duration", "Feline_Booster_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Feline Groomer: Defense Down Duration Multiplier", "Feline_Groomer_Defense_Down_Duration_Multiplier", "Feline_Groomer_Defense_Down_Duration_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Feline Groomer: Element Blight Recovery Multiplier", "Feline_Groomer_Element_Blight_Recovery_Multiplier", "Feline_Groomer_Element_Blight_Recovery_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Feline Parting Gift: Radius", "Feline_Parting_Gift_Radius", "Feline_Parting_Gift_Radius_offset"),
+                    new MultiStructItemCustomView(this, "Feline Parting Gift: Recovery Value", "Feline_Parting_Gift_Recovery_Value", "Feline_Parting_Gift_Recovery_Value_offset"),
+                    new MultiStructItemCustomView(this, "Feline Recoil: Attack Multiplier 1", "Feline_Recoil_Attack_Multiplier_1", "Feline_Recoil_Attack_Multiplier_1_offset"),
+                    new MultiStructItemCustomView(this, "Feline Recoil: Attack Multiplier 2", "Feline_Recoil_Attack_Multiplier_2", "Feline_Recoil_Attack_Multiplier_2_offset"),
+                    new MultiStructItemCustomView(this, "Feline Recoil: Attack Multiplier 3", "Feline_Recoil_Attack_Multiplier_3", "Feline_Recoil_Attack_Multiplier_3_offset"),
+                    new MultiStructItemCustomView(this, "Feline Recoil: Attack Multiplier 4", "Feline_Recoil_Attack_Multiplier_4", "Feline_Recoil_Attack_Multiplier_4_offset"),
+                    new MultiStructItemCustomView(this, "Feline Recoil: Attack Multiplier 5", "Feline_Recoil_Attack_Multiplier_5", "Feline_Recoil_Attack_Multiplier_5_offset"),
+                    new MultiStructItemCustomView(this, "Feline Tailor", "Feline_Tailor", "Feline_Tailor_offset"),
                 };
             }
         }
@@ -8016,6 +9344,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Music_Skill_Bless_Random_Rate_offset { get; private set; }
+
             protected float Music_Skill_Bless_Damage_Cut_Rate_raw;
             public const string Music_Skill_Bless_Damage_Cut_Rate_displayName = "Music Skill: Bless: Damage Cut Rate";
             public const int Music_Skill_Bless_Damage_Cut_Rate_sortIndex = 100;
@@ -8030,6 +9361,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Music_Skill_Bless_Damage_Cut_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Music_Skill_Bless_Damage_Cut_Rate_offset { get; private set; }
 
             protected float Music_Skill_Extend_Time_raw;
             public const string Music_Skill_Extend_Time_displayName = "Music Skill: Extend: Time";
@@ -8046,6 +9380,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Music_Skill_Extend_Time_offset { get; private set; }
+
             protected float Music_Skill_Extend_Time_Master_raw;
             public const string Music_Skill_Extend_Time_Master_displayName = "Music Skill: Extend: Time Master";
             public const int Music_Skill_Extend_Time_Master_sortIndex = 200;
@@ -8060,6 +9397,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Music_Skill_Extend_Time_Master));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Music_Skill_Extend_Time_Master_offset { get; private set; }
 
             protected float Music_Skill_Extend_Time_MR_Master_raw;
             public const string Music_Skill_Extend_Time_MR_Master_displayName = "Music Skill: Extend: Time MR Master";
@@ -8076,6 +9416,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Music_Skill_Extend_Time_MR_Master_offset { get; private set; }
+
             protected float Music_Skill_Major_Heal_Rand_Rate_raw;
             public const string Music_Skill_Major_Heal_Rand_Rate_displayName = "Music Skill: Major Heal: Rand Rate";
             public const int Music_Skill_Major_Heal_Rand_Rate_sortIndex = 300;
@@ -8090,6 +9433,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Music_Skill_Major_Heal_Rand_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Music_Skill_Major_Heal_Rand_Rate_offset { get; private set; }
 
             protected float Music_Skill_Major_Heal_Rand_Master_Rate_raw;
             public const string Music_Skill_Major_Heal_Rand_Master_Rate_displayName = "Music Skill: Major Heal: Rand Master Rate";
@@ -8106,6 +9452,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Music_Skill_Major_Heal_Rand_Master_Rate_offset { get; private set; }
+
             protected float Music_Skill_Major_Heal_Rand_MR_Master_Rate_raw;
             public const string Music_Skill_Major_Heal_Rand_MR_Master_Rate_displayName = "Music Skill: Major Heal: Rand MR Master Rate";
             public const int Music_Skill_Major_Heal_Rand_MR_Master_Rate_sortIndex = 400;
@@ -8120,6 +9469,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Music_Skill_Major_Heal_Rand_MR_Master_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Music_Skill_Major_Heal_Rand_MR_Master_Rate_offset { get; private set; }
 
             protected float Music_Skill_Heal_0_Minor_raw;
             public const string Music_Skill_Heal_0_Minor_displayName = "Music Skill: Heal 0: Minor";
@@ -8136,6 +9488,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Music_Skill_Heal_0_Minor_offset { get; private set; }
+
             protected float Music_Skill_Heal_0_Major_raw;
             public const string Music_Skill_Heal_0_Major_displayName = "Music Skill: Heal 0: Major";
             public const int Music_Skill_Heal_0_Major_sortIndex = 500;
@@ -8150,6 +9505,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Music_Skill_Heal_0_Major));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Music_Skill_Heal_0_Major_offset { get; private set; }
 
             protected float Music_Skill_Heal_1_Minor_raw;
             public const string Music_Skill_Heal_1_Minor_displayName = "Music Skill: Heal 1: Minor";
@@ -8166,6 +9524,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Music_Skill_Heal_1_Minor_offset { get; private set; }
+
             protected float Music_Skill_Heal_1_Major_raw;
             public const string Music_Skill_Heal_1_Major_displayName = "Music Skill: Heal 1: Major";
             public const int Music_Skill_Heal_1_Major_sortIndex = 600;
@@ -8180,6 +9541,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Music_Skill_Heal_1_Major));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Music_Skill_Heal_1_Major_offset { get; private set; }
 
             protected float Music_Skill_Heal_2_Minor_raw;
             public const string Music_Skill_Heal_2_Minor_displayName = "Music Skill: Heal 2: Minor";
@@ -8196,6 +9560,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Music_Skill_Heal_2_Minor_offset { get; private set; }
+
             protected float Music_Skill_Heal_2_Major_raw;
             public const string Music_Skill_Heal_2_Major_displayName = "Music Skill: Heal 2: Major";
             public const int Music_Skill_Heal_2_Major_sortIndex = 700;
@@ -8210,6 +9577,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Music_Skill_Heal_2_Major));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Music_Skill_Heal_2_Major_offset { get; private set; }
 
             protected uint Music_Skill_Hp_Up_0_raw;
             public const string Music_Skill_Hp_Up_0_displayName = "Music Skill: Hp Up 0";
@@ -8226,6 +9596,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Music_Skill_Hp_Up_0_offset { get; private set; }
+
             protected uint Music_Skill_Hp_Up_1_raw;
             public const string Music_Skill_Hp_Up_1_displayName = "Music Skill: Hp Up 1";
             public const int Music_Skill_Hp_Up_1_sortIndex = 800;
@@ -8240,6 +9613,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Music_Skill_Hp_Up_1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Music_Skill_Hp_Up_1_offset { get; private set; }
 
             protected float Music_Skill_Mantle_Duration_raw;
             public const string Music_Skill_Mantle_Duration_displayName = "Music Skill: Mantle Duration";
@@ -8256,6 +9632,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Music_Skill_Mantle_Duration_offset { get; private set; }
+
             protected float Music_Skill_Mantle_Duration_Put_raw;
             public const string Music_Skill_Mantle_Duration_Put_displayName = "Music Skill: Mantle Duration Put";
             public const int Music_Skill_Mantle_Duration_Put_sortIndex = 900;
@@ -8270,6 +9649,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Music_Skill_Mantle_Duration_Put));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Music_Skill_Mantle_Duration_Put_offset { get; private set; }
 
             protected float Music_Skill_Stamina_Up_Rate_raw;
             public const string Music_Skill_Stamina_Up_Rate_displayName = "Music Skill: Stamina Up Rate";
@@ -8286,6 +9668,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Music_Skill_Stamina_Up_Rate_offset { get; private set; }
+
             protected float Unk82_raw;
             public const string Unk82_displayName = "Unk82";
             public const int Unk82_sortIndex = 1000;
@@ -8300,6 +9685,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk82));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk82_offset { get; private set; }
 
             protected float Unk83_raw;
             public const string Unk83_displayName = "Unk83";
@@ -8316,6 +9704,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk83_offset { get; private set; }
+
             protected uint Unk84_raw;
             public const string Unk84_displayName = "Unk84";
             public const int Unk84_sortIndex = 1100;
@@ -8330,6 +9721,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk84));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk84_offset { get; private set; }
 
             protected uint Unk85_raw;
             public const string Unk85_displayName = "Unk85";
@@ -8346,6 +9740,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk85_offset { get; private set; }
+
             protected float Unk86_raw;
             public const string Unk86_displayName = "Unk86";
             public const int Unk86_sortIndex = 1200;
@@ -8360,6 +9757,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk86));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk86_offset { get; private set; }
 
             protected float Unk87_raw;
             public const string Unk87_displayName = "Unk87";
@@ -8376,6 +9776,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk87_offset { get; private set; }
+
             protected float Unk88_raw;
             public const string Unk88_displayName = "Unk88";
             public const int Unk88_sortIndex = 1300;
@@ -8390,6 +9793,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk88));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk88_offset { get; private set; }
 
             protected uint Unk89_raw;
             public const string Unk89_displayName = "Unk89";
@@ -8406,6 +9812,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk89_offset { get; private set; }
+
             protected uint Unk90_raw;
             public const string Unk90_displayName = "Unk90";
             public const int Unk90_sortIndex = 1400;
@@ -8420,6 +9829,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk90));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk90_offset { get; private set; }
 
             protected float Unk91_raw;
             public const string Unk91_displayName = "Unk91";
@@ -8436,6 +9848,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk91_offset { get; private set; }
+
             protected float Unk92_raw;
             public const string Unk92_displayName = "Unk92";
             public const int Unk92_sortIndex = 1500;
@@ -8451,6 +9866,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk92_offset { get; private set; }
+
             public const int lastSortIndex = 1550;
 
             public static ObservableMhwStructCollection<Skill_Params_8_> LoadData(BinaryReader reader) {
@@ -8465,35 +9883,65 @@ namespace MHW_Editor.Structs.PlData {
             public static Skill_Params_8_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Skill_Params_8_();
                 data.Index = i;
+                data.Music_Skill_Bless_Random_Rate_offset = reader.BaseStream.Position;
                 data.Music_Skill_Bless_Random_Rate_raw = reader.ReadSingle();
+                data.Music_Skill_Bless_Damage_Cut_Rate_offset = reader.BaseStream.Position;
                 data.Music_Skill_Bless_Damage_Cut_Rate_raw = reader.ReadSingle();
+                data.Music_Skill_Extend_Time_offset = reader.BaseStream.Position;
                 data.Music_Skill_Extend_Time_raw = reader.ReadSingle();
+                data.Music_Skill_Extend_Time_Master_offset = reader.BaseStream.Position;
                 data.Music_Skill_Extend_Time_Master_raw = reader.ReadSingle();
+                data.Music_Skill_Extend_Time_MR_Master_offset = reader.BaseStream.Position;
                 data.Music_Skill_Extend_Time_MR_Master_raw = reader.ReadSingle();
+                data.Music_Skill_Major_Heal_Rand_Rate_offset = reader.BaseStream.Position;
                 data.Music_Skill_Major_Heal_Rand_Rate_raw = reader.ReadSingle();
+                data.Music_Skill_Major_Heal_Rand_Master_Rate_offset = reader.BaseStream.Position;
                 data.Music_Skill_Major_Heal_Rand_Master_Rate_raw = reader.ReadSingle();
+                data.Music_Skill_Major_Heal_Rand_MR_Master_Rate_offset = reader.BaseStream.Position;
                 data.Music_Skill_Major_Heal_Rand_MR_Master_Rate_raw = reader.ReadSingle();
+                data.Music_Skill_Heal_0_Minor_offset = reader.BaseStream.Position;
                 data.Music_Skill_Heal_0_Minor_raw = reader.ReadSingle();
+                data.Music_Skill_Heal_0_Major_offset = reader.BaseStream.Position;
                 data.Music_Skill_Heal_0_Major_raw = reader.ReadSingle();
+                data.Music_Skill_Heal_1_Minor_offset = reader.BaseStream.Position;
                 data.Music_Skill_Heal_1_Minor_raw = reader.ReadSingle();
+                data.Music_Skill_Heal_1_Major_offset = reader.BaseStream.Position;
                 data.Music_Skill_Heal_1_Major_raw = reader.ReadSingle();
+                data.Music_Skill_Heal_2_Minor_offset = reader.BaseStream.Position;
                 data.Music_Skill_Heal_2_Minor_raw = reader.ReadSingle();
+                data.Music_Skill_Heal_2_Major_offset = reader.BaseStream.Position;
                 data.Music_Skill_Heal_2_Major_raw = reader.ReadSingle();
+                data.Music_Skill_Hp_Up_0_offset = reader.BaseStream.Position;
                 data.Music_Skill_Hp_Up_0_raw = reader.ReadUInt32();
+                data.Music_Skill_Hp_Up_1_offset = reader.BaseStream.Position;
                 data.Music_Skill_Hp_Up_1_raw = reader.ReadUInt32();
+                data.Music_Skill_Mantle_Duration_offset = reader.BaseStream.Position;
                 data.Music_Skill_Mantle_Duration_raw = reader.ReadSingle();
+                data.Music_Skill_Mantle_Duration_Put_offset = reader.BaseStream.Position;
                 data.Music_Skill_Mantle_Duration_Put_raw = reader.ReadSingle();
+                data.Music_Skill_Stamina_Up_Rate_offset = reader.BaseStream.Position;
                 data.Music_Skill_Stamina_Up_Rate_raw = reader.ReadSingle();
+                data.Unk82_offset = reader.BaseStream.Position;
                 data.Unk82_raw = reader.ReadSingle();
+                data.Unk83_offset = reader.BaseStream.Position;
                 data.Unk83_raw = reader.ReadSingle();
+                data.Unk84_offset = reader.BaseStream.Position;
                 data.Unk84_raw = reader.ReadUInt32();
+                data.Unk85_offset = reader.BaseStream.Position;
                 data.Unk85_raw = reader.ReadUInt32();
+                data.Unk86_offset = reader.BaseStream.Position;
                 data.Unk86_raw = reader.ReadSingle();
+                data.Unk87_offset = reader.BaseStream.Position;
                 data.Unk87_raw = reader.ReadSingle();
+                data.Unk88_offset = reader.BaseStream.Position;
                 data.Unk88_raw = reader.ReadSingle();
+                data.Unk89_offset = reader.BaseStream.Position;
                 data.Unk89_raw = reader.ReadUInt32();
+                data.Unk90_offset = reader.BaseStream.Position;
                 data.Unk90_raw = reader.ReadUInt32();
+                data.Unk91_offset = reader.BaseStream.Position;
                 data.Unk91_raw = reader.ReadSingle();
+                data.Unk92_offset = reader.BaseStream.Position;
                 data.Unk92_raw = reader.ReadSingle();
                 return data;
             }
@@ -8533,36 +9981,36 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Music Skill: Bless: Random Rate", "Music_Skill_Bless_Random_Rate"),
-                    new MultiStructItemCustomView(this, "Music Skill: Bless: Damage Cut Rate", "Music_Skill_Bless_Damage_Cut_Rate"),
-                    new MultiStructItemCustomView(this, "Music Skill: Extend: Time", "Music_Skill_Extend_Time"),
-                    new MultiStructItemCustomView(this, "Music Skill: Extend: Time Master", "Music_Skill_Extend_Time_Master"),
-                    new MultiStructItemCustomView(this, "Music Skill: Extend: Time MR Master", "Music_Skill_Extend_Time_MR_Master"),
-                    new MultiStructItemCustomView(this, "Music Skill: Major Heal: Rand Rate", "Music_Skill_Major_Heal_Rand_Rate"),
-                    new MultiStructItemCustomView(this, "Music Skill: Major Heal: Rand Master Rate", "Music_Skill_Major_Heal_Rand_Master_Rate"),
-                    new MultiStructItemCustomView(this, "Music Skill: Major Heal: Rand MR Master Rate", "Music_Skill_Major_Heal_Rand_MR_Master_Rate"),
-                    new MultiStructItemCustomView(this, "Music Skill: Heal 0: Minor", "Music_Skill_Heal_0_Minor"),
-                    new MultiStructItemCustomView(this, "Music Skill: Heal 0: Major", "Music_Skill_Heal_0_Major"),
-                    new MultiStructItemCustomView(this, "Music Skill: Heal 1: Minor", "Music_Skill_Heal_1_Minor"),
-                    new MultiStructItemCustomView(this, "Music Skill: Heal 1: Major", "Music_Skill_Heal_1_Major"),
-                    new MultiStructItemCustomView(this, "Music Skill: Heal 2: Minor", "Music_Skill_Heal_2_Minor"),
-                    new MultiStructItemCustomView(this, "Music Skill: Heal 2: Major", "Music_Skill_Heal_2_Major"),
-                    new MultiStructItemCustomView(this, "Music Skill: Hp Up 0", "Music_Skill_Hp_Up_0"),
-                    new MultiStructItemCustomView(this, "Music Skill: Hp Up 1", "Music_Skill_Hp_Up_1"),
-                    new MultiStructItemCustomView(this, "Music Skill: Mantle Duration", "Music_Skill_Mantle_Duration"),
-                    new MultiStructItemCustomView(this, "Music Skill: Mantle Duration Put", "Music_Skill_Mantle_Duration_Put"),
-                    new MultiStructItemCustomView(this, "Music Skill: Stamina Up Rate", "Music_Skill_Stamina_Up_Rate"),
-                    new MultiStructItemCustomView(this, "Unk82", "Unk82"),
-                    new MultiStructItemCustomView(this, "Unk83", "Unk83"),
-                    new MultiStructItemCustomView(this, "Unk84", "Unk84"),
-                    new MultiStructItemCustomView(this, "Unk85", "Unk85"),
-                    new MultiStructItemCustomView(this, "Unk86", "Unk86"),
-                    new MultiStructItemCustomView(this, "Unk87", "Unk87"),
-                    new MultiStructItemCustomView(this, "Unk88", "Unk88"),
-                    new MultiStructItemCustomView(this, "Unk89", "Unk89"),
-                    new MultiStructItemCustomView(this, "Unk90", "Unk90"),
-                    new MultiStructItemCustomView(this, "Unk91", "Unk91"),
-                    new MultiStructItemCustomView(this, "Unk92", "Unk92"),
+                    new MultiStructItemCustomView(this, "Music Skill: Bless: Random Rate", "Music_Skill_Bless_Random_Rate", "Music_Skill_Bless_Random_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Bless: Damage Cut Rate", "Music_Skill_Bless_Damage_Cut_Rate", "Music_Skill_Bless_Damage_Cut_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Extend: Time", "Music_Skill_Extend_Time", "Music_Skill_Extend_Time_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Extend: Time Master", "Music_Skill_Extend_Time_Master", "Music_Skill_Extend_Time_Master_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Extend: Time MR Master", "Music_Skill_Extend_Time_MR_Master", "Music_Skill_Extend_Time_MR_Master_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Major Heal: Rand Rate", "Music_Skill_Major_Heal_Rand_Rate", "Music_Skill_Major_Heal_Rand_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Major Heal: Rand Master Rate", "Music_Skill_Major_Heal_Rand_Master_Rate", "Music_Skill_Major_Heal_Rand_Master_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Major Heal: Rand MR Master Rate", "Music_Skill_Major_Heal_Rand_MR_Master_Rate", "Music_Skill_Major_Heal_Rand_MR_Master_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Heal 0: Minor", "Music_Skill_Heal_0_Minor", "Music_Skill_Heal_0_Minor_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Heal 0: Major", "Music_Skill_Heal_0_Major", "Music_Skill_Heal_0_Major_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Heal 1: Minor", "Music_Skill_Heal_1_Minor", "Music_Skill_Heal_1_Minor_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Heal 1: Major", "Music_Skill_Heal_1_Major", "Music_Skill_Heal_1_Major_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Heal 2: Minor", "Music_Skill_Heal_2_Minor", "Music_Skill_Heal_2_Minor_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Heal 2: Major", "Music_Skill_Heal_2_Major", "Music_Skill_Heal_2_Major_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Hp Up 0", "Music_Skill_Hp_Up_0", "Music_Skill_Hp_Up_0_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Hp Up 1", "Music_Skill_Hp_Up_1", "Music_Skill_Hp_Up_1_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Mantle Duration", "Music_Skill_Mantle_Duration", "Music_Skill_Mantle_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Mantle Duration Put", "Music_Skill_Mantle_Duration_Put", "Music_Skill_Mantle_Duration_Put_offset"),
+                    new MultiStructItemCustomView(this, "Music Skill: Stamina Up Rate", "Music_Skill_Stamina_Up_Rate", "Music_Skill_Stamina_Up_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Unk82", "Unk82", "Unk82_offset"),
+                    new MultiStructItemCustomView(this, "Unk83", "Unk83", "Unk83_offset"),
+                    new MultiStructItemCustomView(this, "Unk84", "Unk84", "Unk84_offset"),
+                    new MultiStructItemCustomView(this, "Unk85", "Unk85", "Unk85_offset"),
+                    new MultiStructItemCustomView(this, "Unk86", "Unk86", "Unk86_offset"),
+                    new MultiStructItemCustomView(this, "Unk87", "Unk87", "Unk87_offset"),
+                    new MultiStructItemCustomView(this, "Unk88", "Unk88", "Unk88_offset"),
+                    new MultiStructItemCustomView(this, "Unk89", "Unk89", "Unk89_offset"),
+                    new MultiStructItemCustomView(this, "Unk90", "Unk90", "Unk90_offset"),
+                    new MultiStructItemCustomView(this, "Unk91", "Unk91", "Unk91_offset"),
+                    new MultiStructItemCustomView(this, "Unk92", "Unk92", "Unk92_offset"),
                 };
             }
         }

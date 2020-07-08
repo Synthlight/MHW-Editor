@@ -301,6 +301,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Poison_Damage_offset { get; private set; }
+
             protected float Poison_Interval_raw;
             public const string Poison_Interval_displayName = "Poison Interval";
             public const int Poison_Interval_sortIndex = 100;
@@ -316,6 +319,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Poison_Interval_offset { get; private set; }
+
             public const int lastSortIndex = 150;
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_2_> LoadData(BinaryReader reader) {
@@ -330,7 +336,9 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Damage_Attributes_2_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Damage_Attributes_2_();
                 data.Index = i;
+                data.Poison_Damage_offset = reader.BaseStream.Position;
                 data.Poison_Damage_raw = reader.ReadUInt32();
+                data.Poison_Interval_offset = reader.BaseStream.Position;
                 data.Poison_Interval_raw = reader.ReadSingle();
                 return data;
             }
@@ -342,8 +350,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Poison Damage", "Poison_Damage"),
-                    new MultiStructItemCustomView(this, "Poison Interval", "Poison_Interval"),
+                    new MultiStructItemCustomView(this, "Poison Damage", "Poison_Damage", "Poison_Damage_offset"),
+                    new MultiStructItemCustomView(this, "Poison Interval", "Poison_Interval", "Poison_Interval_offset"),
                 };
             }
         }
@@ -528,6 +536,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_1_offset { get; private set; }
+
             protected float Exhaustion_Damage_raw;
             public const string Exhaustion_Damage_displayName = "Exhaustion Damage";
             public const int Exhaustion_Damage_sortIndex = 100;
@@ -543,6 +554,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Exhaustion_Damage_offset { get; private set; }
+
             public const int lastSortIndex = 150;
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_3_> LoadData(BinaryReader reader) {
@@ -557,7 +571,9 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Damage_Attributes_3_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Damage_Attributes_3_();
                 data.Index = i;
+                data.Unk_1_offset = reader.BaseStream.Position;
                 data.Unk_1_raw = reader.ReadUInt32();
+                data.Exhaustion_Damage_offset = reader.BaseStream.Position;
                 data.Exhaustion_Damage_raw = reader.ReadSingle();
                 return data;
             }
@@ -569,8 +585,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
-                    new MultiStructItemCustomView(this, "Exhaustion Damage", "Exhaustion_Damage"),
+                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1", "Unk_1_offset"),
+                    new MultiStructItemCustomView(this, "Exhaustion Damage", "Exhaustion_Damage", "Exhaustion_Damage_offset"),
                 };
             }
         }
@@ -755,6 +771,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Blastblight_Damage_offset { get; private set; }
+
             public const int lastSortIndex = 100;
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_4_> LoadData(BinaryReader reader) {
@@ -769,6 +788,7 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Damage_Attributes_4_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Damage_Attributes_4_();
                 data.Index = i;
+                data.Blastblight_Damage_offset = reader.BaseStream.Position;
                 data.Blastblight_Damage_raw = reader.ReadUInt32();
                 return data;
             }
@@ -779,7 +799,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Blastblight Damage", "Blastblight_Damage"),
+                    new MultiStructItemCustomView(this, "Blastblight Damage", "Blastblight_Damage", "Blastblight_Damage_offset"),
                 };
             }
         }
@@ -964,6 +984,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Capture_LR_HR_offset { get; private set; }
+
             protected uint Capture_MR_raw;
             public const string Capture_MR_displayName = "Capture MR";
             public const int Capture_MR_sortIndex = 100;
@@ -979,6 +1002,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Capture_MR_offset { get; private set; }
+
             public const int lastSortIndex = 150;
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_5_> LoadData(BinaryReader reader) {
@@ -993,7 +1019,9 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Damage_Attributes_5_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Damage_Attributes_5_();
                 data.Index = i;
+                data.Capture_LR_HR_offset = reader.BaseStream.Position;
                 data.Capture_LR_HR_raw = reader.ReadUInt32();
+                data.Capture_MR_offset = reader.BaseStream.Position;
                 data.Capture_MR_raw = reader.ReadUInt32();
                 return data;
             }
@@ -1005,8 +1033,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Capture LR/HR", "Capture_LR_HR"),
-                    new MultiStructItemCustomView(this, "Capture MR", "Capture_MR"),
+                    new MultiStructItemCustomView(this, "Capture LR/HR", "Capture_LR_HR", "Capture_LR_HR_offset"),
+                    new MultiStructItemCustomView(this, "Capture MR", "Capture_MR", "Capture_MR_offset"),
                 };
             }
         }
@@ -1191,6 +1219,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_1_offset { get; private set; }
+
             public const int lastSortIndex = 100;
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_6_> LoadData(BinaryReader reader) {
@@ -1205,6 +1236,7 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Damage_Attributes_6_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Damage_Attributes_6_();
                 data.Index = i;
+                data.Unk_1_offset = reader.BaseStream.Position;
                 data.Unk_1_raw = reader.ReadUInt32();
                 return data;
             }
@@ -1215,7 +1247,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
+                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1", "Unk_1_offset"),
                 };
             }
         }
@@ -1400,6 +1432,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Dizziness_MR_Buildup_offset { get; private set; }
+
             protected float Dizziness_MR_Max_Cap_raw;
             public const string Dizziness_MR_Max_Cap_displayName = "Dizziness MR Max Cap";
             public const int Dizziness_MR_Max_Cap_sortIndex = 100;
@@ -1414,6 +1449,9 @@ namespace MHW_Editor.Structs.Monsters {
                     OnPropertyChanged(nameof(Dizziness_MR_Max_Cap));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Dizziness_MR_Max_Cap_offset { get; private set; }
 
             protected float Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
@@ -1430,6 +1468,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_1_offset { get; private set; }
+
             protected float Unk_2_raw;
             public const string Unk_2_displayName = "Unk 2";
             public const int Unk_2_sortIndex = 200;
@@ -1444,6 +1485,9 @@ namespace MHW_Editor.Structs.Monsters {
                     OnPropertyChanged(nameof(Unk_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_2_offset { get; private set; }
 
             protected float Dizziness_MR_Recharge_Timer_raw;
             public const string Dizziness_MR_Recharge_Timer_displayName = "Dizziness MR Recharge Timer";
@@ -1460,6 +1504,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Dizziness_MR_Recharge_Timer_offset { get; private set; }
+
             protected float Unk_3_raw;
             public const string Unk_3_displayName = "Unk 3";
             public const int Unk_3_sortIndex = 300;
@@ -1474,6 +1521,9 @@ namespace MHW_Editor.Structs.Monsters {
                     OnPropertyChanged(nameof(Unk_3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_3_offset { get; private set; }
 
             protected float Dizziness_MR_Duration_Re_occuring_Use_raw;
             public const string Dizziness_MR_Duration_Re_occuring_Use_displayName = "Dizziness MR Duration Re-occuring Use";
@@ -1490,6 +1540,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Dizziness_MR_Duration_Re_occuring_Use_offset { get; private set; }
+
             protected float Dizziness_MR_Duration_Initial_Use_raw;
             public const string Dizziness_MR_Duration_Initial_Use_displayName = "Dizziness MR Duration Initial Use";
             public const int Dizziness_MR_Duration_Initial_Use_sortIndex = 400;
@@ -1505,6 +1558,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Dizziness_MR_Duration_Initial_Use_offset { get; private set; }
+
             public const int lastSortIndex = 450;
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_7_> LoadData(BinaryReader reader) {
@@ -1519,13 +1575,21 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Damage_Attributes_7_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Damage_Attributes_7_();
                 data.Index = i;
+                data.Dizziness_MR_Buildup_offset = reader.BaseStream.Position;
                 data.Dizziness_MR_Buildup_raw = reader.ReadSingle();
+                data.Dizziness_MR_Max_Cap_offset = reader.BaseStream.Position;
                 data.Dizziness_MR_Max_Cap_raw = reader.ReadSingle();
+                data.Unk_1_offset = reader.BaseStream.Position;
                 data.Unk_1_raw = reader.ReadSingle();
+                data.Unk_2_offset = reader.BaseStream.Position;
                 data.Unk_2_raw = reader.ReadSingle();
+                data.Dizziness_MR_Recharge_Timer_offset = reader.BaseStream.Position;
                 data.Dizziness_MR_Recharge_Timer_raw = reader.ReadSingle();
+                data.Unk_3_offset = reader.BaseStream.Position;
                 data.Unk_3_raw = reader.ReadSingle();
+                data.Dizziness_MR_Duration_Re_occuring_Use_offset = reader.BaseStream.Position;
                 data.Dizziness_MR_Duration_Re_occuring_Use_raw = reader.ReadSingle();
+                data.Dizziness_MR_Duration_Initial_Use_offset = reader.BaseStream.Position;
                 data.Dizziness_MR_Duration_Initial_Use_raw = reader.ReadSingle();
                 return data;
             }
@@ -1543,14 +1607,14 @@ namespace MHW_Editor.Structs.Monsters {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Dizziness MR Buildup", "Dizziness_MR_Buildup"),
-                    new MultiStructItemCustomView(this, "Dizziness MR Max Cap", "Dizziness_MR_Max_Cap"),
-                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
-                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2"),
-                    new MultiStructItemCustomView(this, "Dizziness MR Recharge Timer", "Dizziness_MR_Recharge_Timer"),
-                    new MultiStructItemCustomView(this, "Unk 3", "Unk_3"),
-                    new MultiStructItemCustomView(this, "Dizziness MR Duration Re-occuring Use", "Dizziness_MR_Duration_Re_occuring_Use"),
-                    new MultiStructItemCustomView(this, "Dizziness MR Duration Initial Use", "Dizziness_MR_Duration_Initial_Use"),
+                    new MultiStructItemCustomView(this, "Dizziness MR Buildup", "Dizziness_MR_Buildup", "Dizziness_MR_Buildup_offset"),
+                    new MultiStructItemCustomView(this, "Dizziness MR Max Cap", "Dizziness_MR_Max_Cap", "Dizziness_MR_Max_Cap_offset"),
+                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1", "Unk_1_offset"),
+                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2", "Unk_2_offset"),
+                    new MultiStructItemCustomView(this, "Dizziness MR Recharge Timer", "Dizziness_MR_Recharge_Timer", "Dizziness_MR_Recharge_Timer_offset"),
+                    new MultiStructItemCustomView(this, "Unk 3", "Unk_3", "Unk_3_offset"),
+                    new MultiStructItemCustomView(this, "Dizziness MR Duration Re-occuring Use", "Dizziness_MR_Duration_Re_occuring_Use", "Dizziness_MR_Duration_Re_occuring_Use_offset"),
+                    new MultiStructItemCustomView(this, "Dizziness MR Duration Initial Use", "Dizziness_MR_Duration_Initial_Use", "Dizziness_MR_Duration_Initial_Use_offset"),
                 };
             }
         }
@@ -1735,6 +1799,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Mount_Knock_Down_Damage_offset { get; private set; }
+
             public const int lastSortIndex = 100;
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_8_> LoadData(BinaryReader reader) {
@@ -1749,6 +1816,7 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Damage_Attributes_8_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Damage_Attributes_8_();
                 data.Index = i;
+                data.Mount_Knock_Down_Damage_offset = reader.BaseStream.Position;
                 data.Mount_Knock_Down_Damage_raw = reader.ReadUInt32();
                 return data;
             }
@@ -1759,7 +1827,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Mount Knock Down Damage", "Mount_Knock_Down_Damage"),
+                    new MultiStructItemCustomView(this, "Mount Knock Down Damage", "Mount_Knock_Down_Damage", "Mount_Knock_Down_Damage_offset"),
                 };
             }
         }
@@ -1944,6 +2012,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_1_offset { get; private set; }
+
             protected float Unk_2_raw;
             public const string Unk_2_displayName = "Unk 2";
             public const int Unk_2_sortIndex = 100;
@@ -1959,6 +2030,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_2_offset { get; private set; }
+
             public const int lastSortIndex = 150;
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_9_> LoadData(BinaryReader reader) {
@@ -1973,7 +2047,9 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Damage_Attributes_9_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Damage_Attributes_9_();
                 data.Index = i;
+                data.Unk_1_offset = reader.BaseStream.Position;
                 data.Unk_1_raw = reader.ReadUInt32();
+                data.Unk_2_offset = reader.BaseStream.Position;
                 data.Unk_2_raw = reader.ReadSingle();
                 return data;
             }
@@ -1985,8 +2061,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
-                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2"),
+                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1", "Unk_1_offset"),
+                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2", "Unk_2_offset"),
                 };
             }
         }
@@ -2171,6 +2247,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_1_offset { get; private set; }
+
             protected float Unk_2_raw;
             public const string Unk_2_displayName = "Unk 2";
             public const int Unk_2_sortIndex = 100;
@@ -2186,6 +2265,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_2_offset { get; private set; }
+
             public const int lastSortIndex = 150;
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_10_> LoadData(BinaryReader reader) {
@@ -2200,7 +2282,9 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Damage_Attributes_10_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Damage_Attributes_10_();
                 data.Index = i;
+                data.Unk_1_offset = reader.BaseStream.Position;
                 data.Unk_1_raw = reader.ReadUInt32();
+                data.Unk_2_offset = reader.BaseStream.Position;
                 data.Unk_2_raw = reader.ReadSingle();
                 return data;
             }
@@ -2212,8 +2296,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
-                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2"),
+                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1", "Unk_1_offset"),
+                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2", "Unk_2_offset"),
                 };
             }
         }
@@ -2398,6 +2482,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Dragonseal_Aura_offset { get; private set; }
+
             public const int lastSortIndex = 100;
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_11_> LoadData(BinaryReader reader) {
@@ -2412,6 +2499,7 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Damage_Attributes_11_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Damage_Attributes_11_();
                 data.Index = i;
+                data.Dragonseal_Aura_offset = reader.BaseStream.Position;
                 data.Dragonseal_Aura_raw = reader.ReadUInt32();
                 return data;
             }
@@ -2422,7 +2510,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Dragonseal Aura", "Dragonseal_Aura"),
+                    new MultiStructItemCustomView(this, "Dragonseal Aura", "Dragonseal_Aura", "Dragonseal_Aura_offset"),
                 };
             }
         }

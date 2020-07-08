@@ -70,6 +70,10 @@ namespace MHW_Template.Struct_Generation {
                     if (entry.createPercentField) {
                         MakePercentProperty(template, indentation, propName);
                     }
+
+                    if (@struct.showVertically) {
+                        MakeOffsetProperty(template, indentation, entry, propName);
+                    }
                 }
 
                 sortIndex += SORT_INDEX_STEP;
@@ -203,6 +207,12 @@ namespace MHW_Template.Struct_Generation {
             template.WriteLine(indentation, $"            public string {propName}_button => {dataSourceLookup}.TryGet({propName}).ToStringWithId({propName});");
         }
 
+        private static void MakeOffsetProperty(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.Entry entry, string propName) {
+            template.WriteLine("");
+            template.WriteLine(indentation, "            [DisplayName(\"Offset\")]");
+            template.WriteLine(indentation, $"            public long {propName}_offset {{ get; private set; }}");
+        }
+
         private static void MakePercentProperty(MultiStructItemTemplateBase template, uint indentation, string propName) {
             template.WriteLine("");
             template.WriteLine(indentation, $"            private float _{propName}Percent;");
@@ -225,7 +235,7 @@ namespace MHW_Template.Struct_Generation {
             foreach (var entry in @struct.entries) {
                 var propName = entry.SafeName;
 
-                template.WriteLine(indentation, $"                    new MultiStructItemCustomView(this, \"{entry.name}\", \"{propName}\"),");
+                template.WriteLine(indentation, $"                    new MultiStructItemCustomView(this, \"{entry.name}\", \"{propName}\", \"{propName}_offset\"),");
             }
 
             template.WriteLine(indentation, "                };");
@@ -352,6 +362,10 @@ namespace MHW_Template.Struct_Generation {
                 var condition = "";
                 if (entry.condition != null) {
                     condition = $"{entry.condition} ".Replace("|ref|", "data.");
+                }
+
+                if (@struct.showVertically) {
+                    template.WriteLine(indentation, $"                {condition}data.{propName}_offset = reader.BaseStream.Position;");
                 }
 
                 if (entry.arrayCount > -1) {

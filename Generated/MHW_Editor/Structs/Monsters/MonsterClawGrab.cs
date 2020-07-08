@@ -436,6 +436,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Gimmick_Breaker_Collision_Unique_Id_Small_offset { get; private set; }
+
             protected uint Gimmick_Breaker_Collision_Unique_Id_Middle_raw;
             public const string Gimmick_Breaker_Collision_Unique_Id_Middle_displayName = "Gimmick Breaker Collision Unique Id Middle";
             public const int Gimmick_Breaker_Collision_Unique_Id_Middle_sortIndex = 100;
@@ -450,6 +453,9 @@ namespace MHW_Editor.Structs.Monsters {
                     OnPropertyChanged(nameof(Gimmick_Breaker_Collision_Unique_Id_Middle));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Gimmick_Breaker_Collision_Unique_Id_Middle_offset { get; private set; }
 
             protected uint Gimmick_Breaker_Collision_Unique_Id_Large_raw;
             public const string Gimmick_Breaker_Collision_Unique_Id_Large_displayName = "Gimmick Breaker Collision Unique Id Large";
@@ -466,6 +472,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Gimmick_Breaker_Collision_Unique_Id_Large_offset { get; private set; }
+
             public const int lastSortIndex = 200;
 
             public static ObservableMhwStructCollection<Claw_Chance_Params> LoadData(BinaryReader reader) {
@@ -480,8 +489,11 @@ namespace MHW_Editor.Structs.Monsters {
             public static Claw_Chance_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new Claw_Chance_Params();
                 data.Index = i;
+                data.Gimmick_Breaker_Collision_Unique_Id_Small_offset = reader.BaseStream.Position;
                 data.Gimmick_Breaker_Collision_Unique_Id_Small_raw = reader.ReadUInt32();
+                data.Gimmick_Breaker_Collision_Unique_Id_Middle_offset = reader.BaseStream.Position;
                 data.Gimmick_Breaker_Collision_Unique_Id_Middle_raw = reader.ReadUInt32();
+                data.Gimmick_Breaker_Collision_Unique_Id_Large_offset = reader.BaseStream.Position;
                 data.Gimmick_Breaker_Collision_Unique_Id_Large_raw = reader.ReadUInt32();
                 return data;
             }
@@ -494,9 +506,9 @@ namespace MHW_Editor.Structs.Monsters {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Gimmick Breaker Collision Unique Id Small", "Gimmick_Breaker_Collision_Unique_Id_Small"),
-                    new MultiStructItemCustomView(this, "Gimmick Breaker Collision Unique Id Middle", "Gimmick_Breaker_Collision_Unique_Id_Middle"),
-                    new MultiStructItemCustomView(this, "Gimmick Breaker Collision Unique Id Large", "Gimmick_Breaker_Collision_Unique_Id_Large"),
+                    new MultiStructItemCustomView(this, "Gimmick Breaker Collision Unique Id Small", "Gimmick_Breaker_Collision_Unique_Id_Small", "Gimmick_Breaker_Collision_Unique_Id_Small_offset"),
+                    new MultiStructItemCustomView(this, "Gimmick Breaker Collision Unique Id Middle", "Gimmick_Breaker_Collision_Unique_Id_Middle", "Gimmick_Breaker_Collision_Unique_Id_Middle_offset"),
+                    new MultiStructItemCustomView(this, "Gimmick Breaker Collision Unique Id Large", "Gimmick_Breaker_Collision_Unique_Id_Large", "Gimmick_Breaker_Collision_Unique_Id_Large_offset"),
                 };
             }
         }

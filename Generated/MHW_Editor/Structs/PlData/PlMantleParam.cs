@@ -97,6 +97,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_1_offset { get; private set; }
+
             protected float Unk_2_raw;
             public const string Unk_2_displayName = "Unk 2";
             public const int Unk_2_sortIndex = 100;
@@ -111,6 +114,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_2_offset { get; private set; }
 
             protected float Unk_3_raw;
             public const string Unk_3_displayName = "Unk 3";
@@ -127,6 +133,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_3_offset { get; private set; }
+
             protected float Unk_4_raw;
             public const string Unk_4_displayName = "Unk 4";
             public const int Unk_4_sortIndex = 200;
@@ -141,6 +150,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_4_offset { get; private set; }
 
             protected float Unk_5_raw;
             public const string Unk_5_displayName = "Unk 5";
@@ -157,6 +169,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_5_offset { get; private set; }
+
             protected uint Unk_6_raw;
             public const string Unk_6_displayName = "Unk 6";
             public const int Unk_6_sortIndex = 300;
@@ -171,6 +186,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_6));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_6_offset { get; private set; }
 
             protected float Unk_7_raw;
             public const string Unk_7_displayName = "Unk 7";
@@ -187,6 +205,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_7_offset { get; private set; }
+
             protected float Unk_8_raw;
             public const string Unk_8_displayName = "Unk 8";
             public const int Unk_8_sortIndex = 400;
@@ -201,6 +222,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_8));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_8_offset { get; private set; }
 
             protected float Unk_9_raw;
             public const string Unk_9_displayName = "Unk 9";
@@ -217,6 +241,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_9_offset { get; private set; }
+
             protected float Ghillie_Mantle_Cooldown_raw;
             public const string Ghillie_Mantle_Cooldown_displayName = "Ghillie Mantle: Cooldown";
             public const int Ghillie_Mantle_Cooldown_sortIndex = 500;
@@ -231,6 +258,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Ghillie_Mantle_Cooldown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Ghillie_Mantle_Cooldown_offset { get; private set; }
 
             protected float Ghillie_Mantle_Duration_raw;
             public const string Ghillie_Mantle_Duration_displayName = "Ghillie Mantle: Duration";
@@ -247,6 +277,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Ghillie_Mantle_Duration_offset { get; private set; }
+
             protected float Ghillie_Mantle_Unk1_raw;
             public const string Ghillie_Mantle_Unk1_displayName = "Ghillie Mantle: Unk1";
             public const int Ghillie_Mantle_Unk1_sortIndex = 600;
@@ -261,6 +294,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Ghillie_Mantle_Unk1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Ghillie_Mantle_Unk1_offset { get; private set; }
 
             protected float Ghillie_Mantle_Unk2_raw;
             public const string Ghillie_Mantle_Unk2_displayName = "Ghillie Mantle: Unk2";
@@ -277,6 +313,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Ghillie_Mantle_Unk2_offset { get; private set; }
+
             protected float Temporal_Mantle_Cooldown_raw;
             public const string Temporal_Mantle_Cooldown_displayName = "Temporal Mantle: Cooldown";
             public const int Temporal_Mantle_Cooldown_sortIndex = 700;
@@ -291,6 +330,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Temporal_Mantle_Cooldown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Cooldown_offset { get; private set; }
 
             protected float Temporal_Mantle_Duration_raw;
             public const string Temporal_Mantle_Duration_displayName = "Temporal Mantle: Duration";
@@ -307,6 +349,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Duration_offset { get; private set; }
+
             protected float Temporal_Mantle_Unk1_raw;
             public const string Temporal_Mantle_Unk1_displayName = "Temporal Mantle: Unk1";
             public const int Temporal_Mantle_Unk1_sortIndex = 800;
@@ -321,6 +366,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Temporal_Mantle_Unk1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Unk1_offset { get; private set; }
 
             protected float Temporal_Mantle_Unk2_raw;
             public const string Temporal_Mantle_Unk2_displayName = "Temporal Mantle: Unk2";
@@ -337,6 +385,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Unk2_offset { get; private set; }
+
             protected float Temporal_Mantle_Unk3_raw;
             public const string Temporal_Mantle_Unk3_displayName = "Temporal Mantle: Unk3";
             public const int Temporal_Mantle_Unk3_sortIndex = 900;
@@ -351,6 +402,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Temporal_Mantle_Unk3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Unk3_offset { get; private set; }
 
             protected float Temporal_Mantle_Unk4_raw;
             public const string Temporal_Mantle_Unk4_displayName = "Temporal Mantle: Unk4";
@@ -367,6 +421,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Unk4_offset { get; private set; }
+
             protected float Temporal_Mantle_Unk5_raw;
             public const string Temporal_Mantle_Unk5_displayName = "Temporal Mantle: Unk5";
             public const int Temporal_Mantle_Unk5_sortIndex = 1000;
@@ -381,6 +438,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Temporal_Mantle_Unk5));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Unk5_offset { get; private set; }
 
             protected float Temporal_Mantle_Unk6_raw;
             public const string Temporal_Mantle_Unk6_displayName = "Temporal Mantle: Unk6";
@@ -397,6 +457,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Unk6_offset { get; private set; }
+
             protected float Temporal_Mantle_Unk7_raw;
             public const string Temporal_Mantle_Unk7_displayName = "Temporal Mantle: Unk7";
             public const int Temporal_Mantle_Unk7_sortIndex = 1100;
@@ -411,6 +474,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Temporal_Mantle_Unk7));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Unk7_offset { get; private set; }
 
             protected float Temporal_Mantle_Unk8_raw;
             public const string Temporal_Mantle_Unk8_displayName = "Temporal Mantle: Unk8";
@@ -427,6 +493,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Unk8_offset { get; private set; }
+
             protected float Temporal_Mantle_Unk9_raw;
             public const string Temporal_Mantle_Unk9_displayName = "Temporal Mantle: Unk9";
             public const int Temporal_Mantle_Unk9_sortIndex = 1200;
@@ -441,6 +510,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Temporal_Mantle_Unk9));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Unk9_offset { get; private set; }
 
             protected float Temporal_Mantle_Unk10_raw;
             public const string Temporal_Mantle_Unk10_displayName = "Temporal Mantle: Unk10";
@@ -457,6 +529,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Unk10_offset { get; private set; }
+
             protected float Temporal_Mantle_Unk11_raw;
             public const string Temporal_Mantle_Unk11_displayName = "Temporal Mantle: Unk11";
             public const int Temporal_Mantle_Unk11_sortIndex = 1300;
@@ -471,6 +546,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Temporal_Mantle_Unk11));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Unk11_offset { get; private set; }
 
             protected float Temporal_Mantle_Unk12_raw;
             public const string Temporal_Mantle_Unk12_displayName = "Temporal Mantle: Unk12";
@@ -487,6 +565,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Unk12_offset { get; private set; }
+
             protected float Temporal_Mantle_Duration_Decrease_Per_Hit_raw;
             public const string Temporal_Mantle_Duration_Decrease_Per_Hit_displayName = "Temporal Mantle: Duration Decrease Per Hit";
             public const int Temporal_Mantle_Duration_Decrease_Per_Hit_sortIndex = 1400;
@@ -501,6 +582,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Temporal_Mantle_Duration_Decrease_Per_Hit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Temporal_Mantle_Duration_Decrease_Per_Hit_offset { get; private set; }
 
             protected float Health_Booster_Cooldown_raw;
             public const string Health_Booster_Cooldown_displayName = "Health Booster: Cooldown";
@@ -517,6 +601,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Health_Booster_Cooldown_offset { get; private set; }
+
             protected float Health_Booster_Duration_raw;
             public const string Health_Booster_Duration_displayName = "Health Booster: Duration";
             public const int Health_Booster_Duration_sortIndex = 1500;
@@ -531,6 +618,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Health_Booster_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Health_Booster_Duration_offset { get; private set; }
 
             protected float Health_Booster_Upgraded_Duration_raw;
             public const string Health_Booster_Upgraded_Duration_displayName = "Health Booster: Upgraded Duration";
@@ -547,6 +637,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Health_Booster_Upgraded_Duration_offset { get; private set; }
+
             protected float Rocksteady_Mantle_Cooldown_raw;
             public const string Rocksteady_Mantle_Cooldown_displayName = "Rocksteady Mantle: Cooldown";
             public const int Rocksteady_Mantle_Cooldown_sortIndex = 1600;
@@ -561,6 +654,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Rocksteady_Mantle_Cooldown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Rocksteady_Mantle_Cooldown_offset { get; private set; }
 
             protected float Rocksteady_Mantle_Duration_raw;
             public const string Rocksteady_Mantle_Duration_displayName = "Rocksteady Mantle: Duration";
@@ -577,6 +673,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Rocksteady_Mantle_Duration_offset { get; private set; }
+
             protected float Rocksteady_Mantle_Unk1_raw;
             public const string Rocksteady_Mantle_Unk1_displayName = "Rocksteady Mantle: Unk1";
             public const int Rocksteady_Mantle_Unk1_sortIndex = 1700;
@@ -591,6 +690,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Rocksteady_Mantle_Unk1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Rocksteady_Mantle_Unk1_offset { get; private set; }
 
             protected float Rocksteady_Mantle_Damage_Resist_raw;
             public const string Rocksteady_Mantle_Damage_Resist_displayName = "Rocksteady Mantle: Damage Resist";
@@ -607,6 +709,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Rocksteady_Mantle_Damage_Resist_offset { get; private set; }
+
             protected float Rocksteady_Mantle_Unk2_raw;
             public const string Rocksteady_Mantle_Unk2_displayName = "Rocksteady Mantle: Unk2";
             public const int Rocksteady_Mantle_Unk2_sortIndex = 1800;
@@ -621,6 +726,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Rocksteady_Mantle_Unk2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Rocksteady_Mantle_Unk2_offset { get; private set; }
 
             protected float Challenger_Mantle_Cooldown_raw;
             public const string Challenger_Mantle_Cooldown_displayName = "Challenger Mantle: Cooldown";
@@ -637,6 +745,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Challenger_Mantle_Cooldown_offset { get; private set; }
+
             protected float Challenger_Mantle_Duration_raw;
             public const string Challenger_Mantle_Duration_displayName = "Challenger Mantle: Duration";
             public const int Challenger_Mantle_Duration_sortIndex = 1900;
@@ -651,6 +762,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Challenger_Mantle_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Challenger_Mantle_Duration_offset { get; private set; }
 
             protected float Challenger_Mantle_Unk1_raw;
             public const string Challenger_Mantle_Unk1_displayName = "Challenger Mantle: Unk1";
@@ -667,6 +781,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Challenger_Mantle_Unk1_offset { get; private set; }
+
             protected float Challenger_Mantle_Unk2_raw;
             public const string Challenger_Mantle_Unk2_displayName = "Challenger Mantle: Unk2";
             public const int Challenger_Mantle_Unk2_sortIndex = 2000;
@@ -681,6 +798,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Challenger_Mantle_Unk2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Challenger_Mantle_Unk2_offset { get; private set; }
 
             protected float Vitality_Mantle_Cooldown_raw;
             public const string Vitality_Mantle_Cooldown_displayName = "Vitality Mantle: Cooldown";
@@ -697,6 +817,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Vitality_Mantle_Cooldown_offset { get; private set; }
+
             protected float Vitality_Mantle_Duration_raw;
             public const string Vitality_Mantle_Duration_displayName = "Vitality Mantle: Duration";
             public const int Vitality_Mantle_Duration_sortIndex = 2100;
@@ -711,6 +834,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Vitality_Mantle_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Vitality_Mantle_Duration_offset { get; private set; }
 
             protected float Vitality_Mantle_Mantle_Health_raw;
             public const string Vitality_Mantle_Mantle_Health_displayName = "Vitality Mantle: Mantle Health";
@@ -727,6 +853,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Vitality_Mantle_Mantle_Health_offset { get; private set; }
+
             public const int lastSortIndex = 2200;
 
             public static ObservableMhwStructCollection<Mantle_Params_1_> LoadData(BinaryReader reader) {
@@ -741,48 +870,91 @@ namespace MHW_Editor.Structs.PlData {
             public static Mantle_Params_1_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Mantle_Params_1_();
                 data.Index = i;
+                data.Unk_1_offset = reader.BaseStream.Position;
                 data.Unk_1_raw = reader.ReadSingle();
+                data.Unk_2_offset = reader.BaseStream.Position;
                 data.Unk_2_raw = reader.ReadSingle();
+                data.Unk_3_offset = reader.BaseStream.Position;
                 data.Unk_3_raw = reader.ReadSingle();
+                data.Unk_4_offset = reader.BaseStream.Position;
                 data.Unk_4_raw = reader.ReadSingle();
+                data.Unk_5_offset = reader.BaseStream.Position;
                 data.Unk_5_raw = reader.ReadSingle();
+                data.Unk_6_offset = reader.BaseStream.Position;
                 data.Unk_6_raw = reader.ReadUInt32();
+                data.Unk_7_offset = reader.BaseStream.Position;
                 data.Unk_7_raw = reader.ReadSingle();
+                data.Unk_8_offset = reader.BaseStream.Position;
                 data.Unk_8_raw = reader.ReadSingle();
+                data.Unk_9_offset = reader.BaseStream.Position;
                 data.Unk_9_raw = reader.ReadSingle();
+                data.Ghillie_Mantle_Cooldown_offset = reader.BaseStream.Position;
                 data.Ghillie_Mantle_Cooldown_raw = reader.ReadSingle();
+                data.Ghillie_Mantle_Duration_offset = reader.BaseStream.Position;
                 data.Ghillie_Mantle_Duration_raw = reader.ReadSingle();
+                data.Ghillie_Mantle_Unk1_offset = reader.BaseStream.Position;
                 data.Ghillie_Mantle_Unk1_raw = reader.ReadSingle();
+                data.Ghillie_Mantle_Unk2_offset = reader.BaseStream.Position;
                 data.Ghillie_Mantle_Unk2_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Cooldown_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Cooldown_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Duration_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Duration_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Unk1_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Unk1_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Unk2_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Unk2_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Unk3_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Unk3_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Unk4_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Unk4_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Unk5_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Unk5_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Unk6_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Unk6_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Unk7_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Unk7_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Unk8_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Unk8_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Unk9_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Unk9_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Unk10_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Unk10_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Unk11_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Unk11_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Unk12_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Unk12_raw = reader.ReadSingle();
+                data.Temporal_Mantle_Duration_Decrease_Per_Hit_offset = reader.BaseStream.Position;
                 data.Temporal_Mantle_Duration_Decrease_Per_Hit_raw = reader.ReadSingle();
+                data.Health_Booster_Cooldown_offset = reader.BaseStream.Position;
                 data.Health_Booster_Cooldown_raw = reader.ReadSingle();
+                data.Health_Booster_Duration_offset = reader.BaseStream.Position;
                 data.Health_Booster_Duration_raw = reader.ReadSingle();
+                data.Health_Booster_Upgraded_Duration_offset = reader.BaseStream.Position;
                 data.Health_Booster_Upgraded_Duration_raw = reader.ReadSingle();
+                data.Rocksteady_Mantle_Cooldown_offset = reader.BaseStream.Position;
                 data.Rocksteady_Mantle_Cooldown_raw = reader.ReadSingle();
+                data.Rocksteady_Mantle_Duration_offset = reader.BaseStream.Position;
                 data.Rocksteady_Mantle_Duration_raw = reader.ReadSingle();
+                data.Rocksteady_Mantle_Unk1_offset = reader.BaseStream.Position;
                 data.Rocksteady_Mantle_Unk1_raw = reader.ReadSingle();
+                data.Rocksteady_Mantle_Damage_Resist_offset = reader.BaseStream.Position;
                 data.Rocksteady_Mantle_Damage_Resist_raw = reader.ReadSingle();
+                data.Rocksteady_Mantle_Unk2_offset = reader.BaseStream.Position;
                 data.Rocksteady_Mantle_Unk2_raw = reader.ReadSingle();
+                data.Challenger_Mantle_Cooldown_offset = reader.BaseStream.Position;
                 data.Challenger_Mantle_Cooldown_raw = reader.ReadSingle();
+                data.Challenger_Mantle_Duration_offset = reader.BaseStream.Position;
                 data.Challenger_Mantle_Duration_raw = reader.ReadSingle();
+                data.Challenger_Mantle_Unk1_offset = reader.BaseStream.Position;
                 data.Challenger_Mantle_Unk1_raw = reader.ReadSingle();
+                data.Challenger_Mantle_Unk2_offset = reader.BaseStream.Position;
                 data.Challenger_Mantle_Unk2_raw = reader.ReadSingle();
+                data.Vitality_Mantle_Cooldown_offset = reader.BaseStream.Position;
                 data.Vitality_Mantle_Cooldown_raw = reader.ReadSingle();
+                data.Vitality_Mantle_Duration_offset = reader.BaseStream.Position;
                 data.Vitality_Mantle_Duration_raw = reader.ReadSingle();
+                data.Vitality_Mantle_Mantle_Health_offset = reader.BaseStream.Position;
                 data.Vitality_Mantle_Mantle_Health_raw = reader.ReadSingle();
                 return data;
             }
@@ -835,49 +1007,49 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
-                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2"),
-                    new MultiStructItemCustomView(this, "Unk 3", "Unk_3"),
-                    new MultiStructItemCustomView(this, "Unk 4", "Unk_4"),
-                    new MultiStructItemCustomView(this, "Unk 5", "Unk_5"),
-                    new MultiStructItemCustomView(this, "Unk 6", "Unk_6"),
-                    new MultiStructItemCustomView(this, "Unk 7", "Unk_7"),
-                    new MultiStructItemCustomView(this, "Unk 8", "Unk_8"),
-                    new MultiStructItemCustomView(this, "Unk 9", "Unk_9"),
-                    new MultiStructItemCustomView(this, "Ghillie Mantle: Cooldown", "Ghillie_Mantle_Cooldown"),
-                    new MultiStructItemCustomView(this, "Ghillie Mantle: Duration", "Ghillie_Mantle_Duration"),
-                    new MultiStructItemCustomView(this, "Ghillie Mantle: Unk1", "Ghillie_Mantle_Unk1"),
-                    new MultiStructItemCustomView(this, "Ghillie Mantle: Unk2", "Ghillie_Mantle_Unk2"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Cooldown", "Temporal_Mantle_Cooldown"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Duration", "Temporal_Mantle_Duration"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk1", "Temporal_Mantle_Unk1"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk2", "Temporal_Mantle_Unk2"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk3", "Temporal_Mantle_Unk3"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk4", "Temporal_Mantle_Unk4"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk5", "Temporal_Mantle_Unk5"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk6", "Temporal_Mantle_Unk6"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk7", "Temporal_Mantle_Unk7"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk8", "Temporal_Mantle_Unk8"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk9", "Temporal_Mantle_Unk9"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk10", "Temporal_Mantle_Unk10"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk11", "Temporal_Mantle_Unk11"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk12", "Temporal_Mantle_Unk12"),
-                    new MultiStructItemCustomView(this, "Temporal Mantle: Duration Decrease Per Hit", "Temporal_Mantle_Duration_Decrease_Per_Hit"),
-                    new MultiStructItemCustomView(this, "Health Booster: Cooldown", "Health_Booster_Cooldown"),
-                    new MultiStructItemCustomView(this, "Health Booster: Duration", "Health_Booster_Duration"),
-                    new MultiStructItemCustomView(this, "Health Booster: Upgraded Duration", "Health_Booster_Upgraded_Duration"),
-                    new MultiStructItemCustomView(this, "Rocksteady Mantle: Cooldown", "Rocksteady_Mantle_Cooldown"),
-                    new MultiStructItemCustomView(this, "Rocksteady Mantle: Duration", "Rocksteady_Mantle_Duration"),
-                    new MultiStructItemCustomView(this, "Rocksteady Mantle: Unk1", "Rocksteady_Mantle_Unk1"),
-                    new MultiStructItemCustomView(this, "Rocksteady Mantle: Damage Resist", "Rocksteady_Mantle_Damage_Resist"),
-                    new MultiStructItemCustomView(this, "Rocksteady Mantle: Unk2", "Rocksteady_Mantle_Unk2"),
-                    new MultiStructItemCustomView(this, "Challenger Mantle: Cooldown", "Challenger_Mantle_Cooldown"),
-                    new MultiStructItemCustomView(this, "Challenger Mantle: Duration", "Challenger_Mantle_Duration"),
-                    new MultiStructItemCustomView(this, "Challenger Mantle: Unk1", "Challenger_Mantle_Unk1"),
-                    new MultiStructItemCustomView(this, "Challenger Mantle: Unk2", "Challenger_Mantle_Unk2"),
-                    new MultiStructItemCustomView(this, "Vitality Mantle: Cooldown", "Vitality_Mantle_Cooldown"),
-                    new MultiStructItemCustomView(this, "Vitality Mantle: Duration", "Vitality_Mantle_Duration"),
-                    new MultiStructItemCustomView(this, "Vitality Mantle: Mantle Health", "Vitality_Mantle_Mantle_Health"),
+                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1", "Unk_1_offset"),
+                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2", "Unk_2_offset"),
+                    new MultiStructItemCustomView(this, "Unk 3", "Unk_3", "Unk_3_offset"),
+                    new MultiStructItemCustomView(this, "Unk 4", "Unk_4", "Unk_4_offset"),
+                    new MultiStructItemCustomView(this, "Unk 5", "Unk_5", "Unk_5_offset"),
+                    new MultiStructItemCustomView(this, "Unk 6", "Unk_6", "Unk_6_offset"),
+                    new MultiStructItemCustomView(this, "Unk 7", "Unk_7", "Unk_7_offset"),
+                    new MultiStructItemCustomView(this, "Unk 8", "Unk_8", "Unk_8_offset"),
+                    new MultiStructItemCustomView(this, "Unk 9", "Unk_9", "Unk_9_offset"),
+                    new MultiStructItemCustomView(this, "Ghillie Mantle: Cooldown", "Ghillie_Mantle_Cooldown", "Ghillie_Mantle_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Ghillie Mantle: Duration", "Ghillie_Mantle_Duration", "Ghillie_Mantle_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Ghillie Mantle: Unk1", "Ghillie_Mantle_Unk1", "Ghillie_Mantle_Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Ghillie Mantle: Unk2", "Ghillie_Mantle_Unk2", "Ghillie_Mantle_Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Cooldown", "Temporal_Mantle_Cooldown", "Temporal_Mantle_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Duration", "Temporal_Mantle_Duration", "Temporal_Mantle_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk1", "Temporal_Mantle_Unk1", "Temporal_Mantle_Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk2", "Temporal_Mantle_Unk2", "Temporal_Mantle_Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk3", "Temporal_Mantle_Unk3", "Temporal_Mantle_Unk3_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk4", "Temporal_Mantle_Unk4", "Temporal_Mantle_Unk4_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk5", "Temporal_Mantle_Unk5", "Temporal_Mantle_Unk5_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk6", "Temporal_Mantle_Unk6", "Temporal_Mantle_Unk6_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk7", "Temporal_Mantle_Unk7", "Temporal_Mantle_Unk7_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk8", "Temporal_Mantle_Unk8", "Temporal_Mantle_Unk8_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk9", "Temporal_Mantle_Unk9", "Temporal_Mantle_Unk9_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk10", "Temporal_Mantle_Unk10", "Temporal_Mantle_Unk10_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk11", "Temporal_Mantle_Unk11", "Temporal_Mantle_Unk11_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Unk12", "Temporal_Mantle_Unk12", "Temporal_Mantle_Unk12_offset"),
+                    new MultiStructItemCustomView(this, "Temporal Mantle: Duration Decrease Per Hit", "Temporal_Mantle_Duration_Decrease_Per_Hit", "Temporal_Mantle_Duration_Decrease_Per_Hit_offset"),
+                    new MultiStructItemCustomView(this, "Health Booster: Cooldown", "Health_Booster_Cooldown", "Health_Booster_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Health Booster: Duration", "Health_Booster_Duration", "Health_Booster_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Health Booster: Upgraded Duration", "Health_Booster_Upgraded_Duration", "Health_Booster_Upgraded_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Rocksteady Mantle: Cooldown", "Rocksteady_Mantle_Cooldown", "Rocksteady_Mantle_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Rocksteady Mantle: Duration", "Rocksteady_Mantle_Duration", "Rocksteady_Mantle_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Rocksteady Mantle: Unk1", "Rocksteady_Mantle_Unk1", "Rocksteady_Mantle_Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Rocksteady Mantle: Damage Resist", "Rocksteady_Mantle_Damage_Resist", "Rocksteady_Mantle_Damage_Resist_offset"),
+                    new MultiStructItemCustomView(this, "Rocksteady Mantle: Unk2", "Rocksteady_Mantle_Unk2", "Rocksteady_Mantle_Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Challenger Mantle: Cooldown", "Challenger_Mantle_Cooldown", "Challenger_Mantle_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Challenger Mantle: Duration", "Challenger_Mantle_Duration", "Challenger_Mantle_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Challenger Mantle: Unk1", "Challenger_Mantle_Unk1", "Challenger_Mantle_Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Challenger Mantle: Unk2", "Challenger_Mantle_Unk2", "Challenger_Mantle_Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Vitality Mantle: Cooldown", "Vitality_Mantle_Cooldown", "Vitality_Mantle_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Vitality Mantle: Duration", "Vitality_Mantle_Duration", "Vitality_Mantle_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Vitality Mantle: Mantle Health", "Vitality_Mantle_Mantle_Health", "Vitality_Mantle_Mantle_Health_offset"),
                 };
             }
         }
@@ -977,6 +1149,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Dragonproof_Mantle_Dragon_Damage_Multiplier_offset { get; private set; }
+
             protected float Cleanser_Booster_Cooldown_raw;
             public const string Cleanser_Booster_Cooldown_displayName = "Cleanser Booster: Cooldown";
             public const int Cleanser_Booster_Cooldown_sortIndex = 100;
@@ -991,6 +1166,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Cleanser_Booster_Cooldown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Cleanser_Booster_Cooldown_offset { get; private set; }
 
             protected float Cleanser_Booster_Duration_raw;
             public const string Cleanser_Booster_Duration_displayName = "Cleanser Booster: Duration";
@@ -1007,6 +1185,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Cleanser_Booster_Duration_offset { get; private set; }
+
             protected float Cleanser_Booster_Upgraded_Duration_raw;
             public const string Cleanser_Booster_Upgraded_Duration_displayName = "Cleanser Booster: Upgraded Duration";
             public const int Cleanser_Booster_Upgraded_Duration_sortIndex = 200;
@@ -1021,6 +1202,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Cleanser_Booster_Upgraded_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Cleanser_Booster_Upgraded_Duration_offset { get; private set; }
 
             protected float Cleanser_Booster_Unk1_raw;
             public const string Cleanser_Booster_Unk1_displayName = "Cleanser Booster: Unk1";
@@ -1037,6 +1221,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Cleanser_Booster_Unk1_offset { get; private set; }
+
             protected float Cleanser_Booster_Unk2_raw;
             public const string Cleanser_Booster_Unk2_displayName = "Cleanser Booster: Unk2";
             public const int Cleanser_Booster_Unk2_sortIndex = 300;
@@ -1051,6 +1238,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Cleanser_Booster_Unk2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Cleanser_Booster_Unk2_offset { get; private set; }
 
             protected float Cleanser_Booster_Unk3_raw;
             public const string Cleanser_Booster_Unk3_displayName = "Cleanser Booster: Unk3";
@@ -1067,6 +1257,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Cleanser_Booster_Unk3_offset { get; private set; }
+
             protected float Cleanser_Booster_Unk4_raw;
             public const string Cleanser_Booster_Unk4_displayName = "Cleanser Booster: Unk4";
             public const int Cleanser_Booster_Unk4_sortIndex = 400;
@@ -1081,6 +1274,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Cleanser_Booster_Unk4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Cleanser_Booster_Unk4_offset { get; private set; }
 
             protected float Glider_Mantle_Cooldown_raw;
             public const string Glider_Mantle_Cooldown_displayName = "Glider Mantle: Cooldown";
@@ -1097,6 +1293,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Glider_Mantle_Cooldown_offset { get; private set; }
+
             protected float Glider_Mantle_Duration_raw;
             public const string Glider_Mantle_Duration_displayName = "Glider Mantle: Duration";
             public const int Glider_Mantle_Duration_sortIndex = 500;
@@ -1111,6 +1310,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Glider_Mantle_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Glider_Mantle_Duration_offset { get; private set; }
 
             protected float Glider_Mantle_Mount_Multiplier_raw;
             public const string Glider_Mantle_Mount_Multiplier_displayName = "Glider Mantle: Mount Multiplier";
@@ -1127,6 +1329,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Glider_Mantle_Mount_Multiplier_offset { get; private set; }
+
             protected float Evasion_Mantle_Cooldown_raw;
             public const string Evasion_Mantle_Cooldown_displayName = "Evasion Mantle: Cooldown";
             public const int Evasion_Mantle_Cooldown_sortIndex = 600;
@@ -1141,6 +1346,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Evasion_Mantle_Cooldown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Evasion_Mantle_Cooldown_offset { get; private set; }
 
             protected float Evasion_Mantle_Duration_raw;
             public const string Evasion_Mantle_Duration_displayName = "Evasion Mantle: Duration";
@@ -1157,6 +1365,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Evasion_Mantle_Duration_offset { get; private set; }
+
             protected float Evasion_Mantle_Attack_Boost_Duration_raw;
             public const string Evasion_Mantle_Attack_Boost_Duration_displayName = "Evasion Mantle: Attack Boost Duration";
             public const int Evasion_Mantle_Attack_Boost_Duration_sortIndex = 700;
@@ -1171,6 +1382,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Evasion_Mantle_Attack_Boost_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Evasion_Mantle_Attack_Boost_Duration_offset { get; private set; }
 
             protected float Evasion_Mantle_Evasion_Multiplier_raw;
             public const string Evasion_Mantle_Evasion_Multiplier_displayName = "Evasion Mantle: Evasion Multiplier";
@@ -1187,6 +1401,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Evasion_Mantle_Evasion_Multiplier_offset { get; private set; }
+
             protected float Evasion_Mantle_Unk1_raw;
             public const string Evasion_Mantle_Unk1_displayName = "Evasion Mantle: Unk1";
             public const int Evasion_Mantle_Unk1_sortIndex = 800;
@@ -1201,6 +1418,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Evasion_Mantle_Unk1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Evasion_Mantle_Unk1_offset { get; private set; }
 
             protected byte Evasion_Mantle_Unk2_raw;
             public const string Evasion_Mantle_Unk2_displayName = "Evasion Mantle: Unk2";
@@ -1217,6 +1437,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Evasion_Mantle_Unk2_offset { get; private set; }
+
             protected ushort Evasion_Mantle_Unk3_raw;
             public const string Evasion_Mantle_Unk3_displayName = "Evasion Mantle: Unk3";
             public const int Evasion_Mantle_Unk3_sortIndex = 900;
@@ -1231,6 +1454,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Evasion_Mantle_Unk3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Evasion_Mantle_Unk3_offset { get; private set; }
 
             protected ushort Evasion_Mantle_Unk4_raw;
             public const string Evasion_Mantle_Unk4_displayName = "Evasion Mantle: Unk4";
@@ -1247,6 +1473,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Evasion_Mantle_Unk4_offset { get; private set; }
+
             protected float Evasion_Mantle_Unk5_raw;
             public const string Evasion_Mantle_Unk5_displayName = "Evasion Mantle: Unk5";
             public const int Evasion_Mantle_Unk5_sortIndex = 1000;
@@ -1261,6 +1490,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Evasion_Mantle_Unk5));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Evasion_Mantle_Unk5_offset { get; private set; }
 
             protected ushort Evasion_Mantle_Unk6_raw;
             public const string Evasion_Mantle_Unk6_displayName = "Evasion Mantle: Unk6";
@@ -1277,6 +1509,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Evasion_Mantle_Unk6_offset { get; private set; }
+
             protected float Impact_Mantle_Cooldown_raw;
             public const string Impact_Mantle_Cooldown_displayName = "Impact Mantle: Cooldown";
             public const int Impact_Mantle_Cooldown_sortIndex = 1100;
@@ -1291,6 +1526,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Impact_Mantle_Cooldown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Cooldown_offset { get; private set; }
 
             protected float Impact_Mantle_Duration_raw;
             public const string Impact_Mantle_Duration_displayName = "Impact Mantle: Duration";
@@ -1307,6 +1545,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Duration_offset { get; private set; }
+
             protected float Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus_raw;
             public const string Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus_displayName = "Impact Mantle: Motion Value Needed for Light Attack Stun Bonus";
             public const int Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus_sortIndex = 1200;
@@ -1321,6 +1562,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus_offset { get; private set; }
 
             protected float Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus_raw;
             public const string Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus_displayName = "Impact Mantle: Motion Value Needed for Heavy Attack Stun Bonus";
@@ -1337,6 +1581,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus_offset { get; private set; }
+
             protected float Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus_raw;
             public const string Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus_displayName = "Impact Mantle: Motion Value Needed for Extreme Attack Stun Bonus";
             public const int Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus_sortIndex = 1300;
@@ -1351,6 +1598,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus_offset { get; private set; }
 
             protected float Impact_Mantle_Weak_Attack_Stun_Bonus_raw;
             public const string Impact_Mantle_Weak_Attack_Stun_Bonus_displayName = "Impact Mantle: Weak Attack Stun Bonus";
@@ -1367,6 +1617,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Weak_Attack_Stun_Bonus_offset { get; private set; }
+
             protected float Impact_Mantle_Light_Attack_Stun_Bonus_raw;
             public const string Impact_Mantle_Light_Attack_Stun_Bonus_displayName = "Impact Mantle: Light Attack Stun Bonus";
             public const int Impact_Mantle_Light_Attack_Stun_Bonus_sortIndex = 1400;
@@ -1381,6 +1634,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Impact_Mantle_Light_Attack_Stun_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Light_Attack_Stun_Bonus_offset { get; private set; }
 
             protected float Impact_Mantle_Heavy_Attack_Stun_Bonus_raw;
             public const string Impact_Mantle_Heavy_Attack_Stun_Bonus_displayName = "Impact Mantle: Heavy Attack Stun Bonus";
@@ -1397,6 +1653,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Heavy_Attack_Stun_Bonus_offset { get; private set; }
+
             protected float Impact_Mantle_Extreme_Attack_Stun_Bonus_raw;
             public const string Impact_Mantle_Extreme_Attack_Stun_Bonus_displayName = "Impact Mantle: Extreme Attack Stun Bonus";
             public const int Impact_Mantle_Extreme_Attack_Stun_Bonus_sortIndex = 1500;
@@ -1411,6 +1670,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Impact_Mantle_Extreme_Attack_Stun_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Extreme_Attack_Stun_Bonus_offset { get; private set; }
 
             protected float Impact_Mantle_Existing_Stun_Multiplier_raw;
             public const string Impact_Mantle_Existing_Stun_Multiplier_displayName = "Impact Mantle: Existing Stun Multiplier";
@@ -1427,6 +1689,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Existing_Stun_Multiplier_offset { get; private set; }
+
             protected float Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus_raw;
             public const string Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Motion Value Needed for Light Attack Exhaust Bonus";
             public const int Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus_sortIndex = 1600;
@@ -1441,6 +1706,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus_offset { get; private set; }
 
             protected float Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus_raw;
             public const string Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Motion Value Needed for Heavy Attack Exhaust Bonus";
@@ -1457,6 +1725,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus_offset { get; private set; }
+
             protected float Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus_raw;
             public const string Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Motion Value Needed for Extreme Attack Exhaust Bonus";
             public const int Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus_sortIndex = 1700;
@@ -1471,6 +1742,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus_offset { get; private set; }
 
             protected float Impact_Mantle_Weak_Attack_Exhaust_Bonus_raw;
             public const string Impact_Mantle_Weak_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Weak Attack Exhaust Bonus";
@@ -1487,6 +1761,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Weak_Attack_Exhaust_Bonus_offset { get; private set; }
+
             protected float Impact_Mantle_Light_Attack_Exhaust_Bonus_raw;
             public const string Impact_Mantle_Light_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Light Attack Exhaust Bonus";
             public const int Impact_Mantle_Light_Attack_Exhaust_Bonus_sortIndex = 1800;
@@ -1501,6 +1778,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Impact_Mantle_Light_Attack_Exhaust_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Light_Attack_Exhaust_Bonus_offset { get; private set; }
 
             protected float Impact_Mantle_Heavy_Attack_Exhaust_Bonus_raw;
             public const string Impact_Mantle_Heavy_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Heavy Attack Exhaust Bonus";
@@ -1517,6 +1797,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Heavy_Attack_Exhaust_Bonus_offset { get; private set; }
+
             protected float Impact_Mantle_Extreme_Attack_Exhaust_Bonus_raw;
             public const string Impact_Mantle_Extreme_Attack_Exhaust_Bonus_displayName = "Impact Mantle: Extreme Attack Exhaust Bonus";
             public const int Impact_Mantle_Extreme_Attack_Exhaust_Bonus_sortIndex = 1900;
@@ -1531,6 +1814,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Impact_Mantle_Extreme_Attack_Exhaust_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Extreme_Attack_Exhaust_Bonus_offset { get; private set; }
 
             protected float Impact_Mantle_Existing_Exhaust_Multiplier_raw;
             public const string Impact_Mantle_Existing_Exhaust_Multiplier_displayName = "Impact Mantle: Existing Exhaust Multiplier";
@@ -1547,6 +1833,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Impact_Mantle_Existing_Exhaust_Multiplier_offset { get; private set; }
+
             protected float Apothecary_Mantle_Cooldown_raw;
             public const string Apothecary_Mantle_Cooldown_displayName = "Apothecary Mantle: Cooldown";
             public const int Apothecary_Mantle_Cooldown_sortIndex = 2000;
@@ -1561,6 +1850,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Apothecary_Mantle_Cooldown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Apothecary_Mantle_Cooldown_offset { get; private set; }
 
             protected float Apothecary_Mantle_Duration_raw;
             public const string Apothecary_Mantle_Duration_displayName = "Apothecary Mantle: Duration";
@@ -1577,6 +1869,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Apothecary_Mantle_Duration_offset { get; private set; }
+
             protected float Apothecary_Mantle_Status_Multiplier_Poison_raw;
             public const string Apothecary_Mantle_Status_Multiplier_Poison_displayName = "Apothecary Mantle: Status Multiplier: Poison";
             public const int Apothecary_Mantle_Status_Multiplier_Poison_sortIndex = 2100;
@@ -1591,6 +1886,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Apothecary_Mantle_Status_Multiplier_Poison));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Apothecary_Mantle_Status_Multiplier_Poison_offset { get; private set; }
 
             protected float Apothecary_Mantle_Status_Multiplier_Para_raw;
             public const string Apothecary_Mantle_Status_Multiplier_Para_displayName = "Apothecary Mantle: Status Multiplier: Para";
@@ -1607,6 +1905,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Apothecary_Mantle_Status_Multiplier_Para_offset { get; private set; }
+
             protected float Apothecary_Mantle_Status_Multiplier_Sleep_raw;
             public const string Apothecary_Mantle_Status_Multiplier_Sleep_displayName = "Apothecary Mantle: Status Multiplier: Sleep";
             public const int Apothecary_Mantle_Status_Multiplier_Sleep_sortIndex = 2200;
@@ -1621,6 +1922,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Apothecary_Mantle_Status_Multiplier_Sleep));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Apothecary_Mantle_Status_Multiplier_Sleep_offset { get; private set; }
 
             protected float Apothecary_Mantle_Status_Multiplier_Blast_raw;
             public const string Apothecary_Mantle_Status_Multiplier_Blast_displayName = "Apothecary Mantle: Status Multiplier: Blast";
@@ -1637,6 +1941,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Apothecary_Mantle_Status_Multiplier_Blast_offset { get; private set; }
+
             protected float Immunity_Mantle_Cooldown_raw;
             public const string Immunity_Mantle_Cooldown_displayName = "Immunity Mantle: Cooldown";
             public const int Immunity_Mantle_Cooldown_sortIndex = 2300;
@@ -1651,6 +1958,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Immunity_Mantle_Cooldown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Immunity_Mantle_Cooldown_offset { get; private set; }
 
             protected float Immunity_Mantle_Duration_raw;
             public const string Immunity_Mantle_Duration_displayName = "Immunity Mantle: Duration";
@@ -1667,6 +1977,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Immunity_Mantle_Duration_offset { get; private set; }
+
             protected float Affinity_Booster_Cooldown_raw;
             public const string Affinity_Booster_Cooldown_displayName = "Affinity Booster: Cooldown";
             public const int Affinity_Booster_Cooldown_sortIndex = 2400;
@@ -1681,6 +1994,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Affinity_Booster_Cooldown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Affinity_Booster_Cooldown_offset { get; private set; }
 
             protected float Affinity_Booster_Duration_raw;
             public const string Affinity_Booster_Duration_displayName = "Affinity Booster: Duration";
@@ -1697,6 +2013,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Affinity_Booster_Duration_offset { get; private set; }
+
             protected float Affinity_Booster_Buff_Duration_raw;
             public const string Affinity_Booster_Buff_Duration_displayName = "Affinity Booster: Buff Duration";
             public const int Affinity_Booster_Buff_Duration_sortIndex = 2500;
@@ -1711,6 +2030,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Affinity_Booster_Buff_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Affinity_Booster_Buff_Duration_offset { get; private set; }
 
             protected int Affinity_Booster_Buff_Affinity_raw;
             public const string Affinity_Booster_Buff_Affinity_displayName = "Affinity Booster: Buff Affinity";
@@ -1727,6 +2049,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Affinity_Booster_Buff_Affinity_offset { get; private set; }
+
             protected float Bandit_Mantle_Cooldown_raw;
             public const string Bandit_Mantle_Cooldown_displayName = "Bandit Mantle: Cooldown";
             public const int Bandit_Mantle_Cooldown_sortIndex = 2600;
@@ -1741,6 +2066,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bandit_Mantle_Cooldown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bandit_Mantle_Cooldown_offset { get; private set; }
 
             protected float Bandit_Mantle_Duration_raw;
             public const string Bandit_Mantle_Duration_displayName = "Bandit Mantle: Duration";
@@ -1757,6 +2085,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bandit_Mantle_Duration_offset { get; private set; }
+
             protected float Bandit_Mantle_Hits_to_Drop_Shiny_raw;
             public const string Bandit_Mantle_Hits_to_Drop_Shiny_displayName = "Bandit Mantle: Hits to Drop Shiny";
             public const int Bandit_Mantle_Hits_to_Drop_Shiny_sortIndex = 2700;
@@ -1771,6 +2102,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bandit_Mantle_Hits_to_Drop_Shiny));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bandit_Mantle_Hits_to_Drop_Shiny_offset { get; private set; }
 
             protected sbyte Bandit_Mantle_Unk1_raw;
             public const string Bandit_Mantle_Unk1_displayName = "Bandit Mantle: Unk1";
@@ -1787,6 +2121,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bandit_Mantle_Unk1_offset { get; private set; }
+
             protected sbyte Bandit_Mantle_Unk2_raw;
             public const string Bandit_Mantle_Unk2_displayName = "Bandit Mantle: Unk2";
             public const int Bandit_Mantle_Unk2_sortIndex = 2800;
@@ -1801,6 +2138,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bandit_Mantle_Unk2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bandit_Mantle_Unk2_offset { get; private set; }
 
             protected sbyte Bandit_Mantle_Unk3_raw;
             public const string Bandit_Mantle_Unk3_displayName = "Bandit Mantle: Unk3";
@@ -1817,6 +2157,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bandit_Mantle_Unk3_offset { get; private set; }
+
             protected sbyte Bandit_Mantle_Unk4_raw;
             public const string Bandit_Mantle_Unk4_displayName = "Bandit Mantle: Unk4";
             public const int Bandit_Mantle_Unk4_sortIndex = 2900;
@@ -1831,6 +2174,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bandit_Mantle_Unk4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bandit_Mantle_Unk4_offset { get; private set; }
 
             protected sbyte Bandit_Mantle_Unk5_raw;
             public const string Bandit_Mantle_Unk5_displayName = "Bandit Mantle: Unk5";
@@ -1847,6 +2193,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bandit_Mantle_Unk5_offset { get; private set; }
+
             protected sbyte Bandit_Mantle_Unk6_raw;
             public const string Bandit_Mantle_Unk6_displayName = "Bandit Mantle: Unk6";
             public const int Bandit_Mantle_Unk6_sortIndex = 3000;
@@ -1861,6 +2210,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bandit_Mantle_Unk6));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bandit_Mantle_Unk6_offset { get; private set; }
 
             protected sbyte Bandit_Mantle_Unk7_raw;
             public const string Bandit_Mantle_Unk7_displayName = "Bandit Mantle: Unk7";
@@ -1877,6 +2229,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bandit_Mantle_Unk7_offset { get; private set; }
+
             protected sbyte Bandit_Mantle_Unk8_raw;
             public const string Bandit_Mantle_Unk8_displayName = "Bandit Mantle: Unk8";
             public const int Bandit_Mantle_Unk8_sortIndex = 3100;
@@ -1891,6 +2246,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bandit_Mantle_Unk8));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bandit_Mantle_Unk8_offset { get; private set; }
 
             protected float Assassin_s_Hood_Cooldown_raw;
             public const string Assassin_s_Hood_Cooldown_displayName = "Assassin's Hood: Cooldown";
@@ -1907,6 +2265,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Cooldown_offset { get; private set; }
+
             protected float Assassin_s_Hood_Duration_raw;
             public const string Assassin_s_Hood_Duration_displayName = "Assassin's Hood: Duration";
             public const int Assassin_s_Hood_Duration_sortIndex = 3200;
@@ -1921,6 +2282,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Assassin_s_Hood_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Duration_offset { get; private set; }
 
             protected float Assassin_s_Hood_Sneak_Attack_Multiplier_raw;
             public const string Assassin_s_Hood_Sneak_Attack_Multiplier_displayName = "Assassin's Hood: Sneak Attack Multiplier";
@@ -1937,6 +2301,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Sneak_Attack_Multiplier_offset { get; private set; }
+
             protected float Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping__raw;
             public const string Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping__displayName = "Assassin's Hood: Sneak Attack Multiplier (Sleeping)";
             public const int Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping__sortIndex = 3300;
@@ -1951,6 +2318,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping__offset { get; private set; }
 
             protected float Assassin_s_Hood_Unk1_raw;
             public const string Assassin_s_Hood_Unk1_displayName = "Assassin's Hood: Unk1";
@@ -1967,6 +2337,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk1_offset { get; private set; }
+
             protected float Assassin_s_Hood_Speed_Multiplier_1_raw;
             public const string Assassin_s_Hood_Speed_Multiplier_1_displayName = "Assassin's Hood: Speed Multiplier 1";
             public const int Assassin_s_Hood_Speed_Multiplier_1_sortIndex = 3400;
@@ -1981,6 +2354,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Assassin_s_Hood_Speed_Multiplier_1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Speed_Multiplier_1_offset { get; private set; }
 
             protected float Assassin_s_Hood_Speed_Multiplier_2_raw;
             public const string Assassin_s_Hood_Speed_Multiplier_2_displayName = "Assassin's Hood: Speed Multiplier 2";
@@ -1997,6 +2373,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Speed_Multiplier_2_offset { get; private set; }
+
             protected float Assassin_s_Hood_Speed_Multiplier_3_raw;
             public const string Assassin_s_Hood_Speed_Multiplier_3_displayName = "Assassin's Hood: Speed Multiplier 3";
             public const int Assassin_s_Hood_Speed_Multiplier_3_sortIndex = 3500;
@@ -2011,6 +2390,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Assassin_s_Hood_Speed_Multiplier_3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Speed_Multiplier_3_offset { get; private set; }
 
             protected float Assassin_s_Hood_Speed_Multiplier_4_raw;
             public const string Assassin_s_Hood_Speed_Multiplier_4_displayName = "Assassin's Hood: Speed Multiplier 4";
@@ -2027,6 +2409,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Speed_Multiplier_4_offset { get; private set; }
+
             protected float Assassin_s_Hood_Unk2_raw;
             public const string Assassin_s_Hood_Unk2_displayName = "Assassin's Hood: Unk2";
             public const int Assassin_s_Hood_Unk2_sortIndex = 3600;
@@ -2041,6 +2426,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Assassin_s_Hood_Unk2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk2_offset { get; private set; }
 
             protected float Assassin_s_Hood_Unk3_raw;
             public const string Assassin_s_Hood_Unk3_displayName = "Assassin's Hood: Unk3";
@@ -2057,6 +2445,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk3_offset { get; private set; }
+
             protected float Assassin_s_Hood_Unk4_raw;
             public const string Assassin_s_Hood_Unk4_displayName = "Assassin's Hood: Unk4";
             public const int Assassin_s_Hood_Unk4_sortIndex = 3700;
@@ -2071,6 +2462,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Assassin_s_Hood_Unk4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk4_offset { get; private set; }
 
             protected float Assassin_s_Hood_Unk5_raw;
             public const string Assassin_s_Hood_Unk5_displayName = "Assassin's Hood: Unk5";
@@ -2087,6 +2481,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk5_offset { get; private set; }
+
             protected float Assassin_s_Hood_Unk6_raw;
             public const string Assassin_s_Hood_Unk6_displayName = "Assassin's Hood: Unk6";
             public const int Assassin_s_Hood_Unk6_sortIndex = 3800;
@@ -2101,6 +2498,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Assassin_s_Hood_Unk6));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk6_offset { get; private set; }
 
             protected float Assassin_s_Hood_Unk7_raw;
             public const string Assassin_s_Hood_Unk7_displayName = "Assassin's Hood: Unk7";
@@ -2117,6 +2517,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk7_offset { get; private set; }
+
             protected float Assassin_s_Hood_Unk8_raw;
             public const string Assassin_s_Hood_Unk8_displayName = "Assassin's Hood: Unk8";
             public const int Assassin_s_Hood_Unk8_sortIndex = 3900;
@@ -2131,6 +2534,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Assassin_s_Hood_Unk8));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk8_offset { get; private set; }
 
             protected float Assassin_s_Hood_Unk9_raw;
             public const string Assassin_s_Hood_Unk9_displayName = "Assassin's Hood: Unk9";
@@ -2147,6 +2553,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk9_offset { get; private set; }
+
             protected float Assassin_s_Hood_Unk10_raw;
             public const string Assassin_s_Hood_Unk10_displayName = "Assassin's Hood: Unk10";
             public const int Assassin_s_Hood_Unk10_sortIndex = 4000;
@@ -2161,6 +2570,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Assassin_s_Hood_Unk10));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk10_offset { get; private set; }
 
             protected float Assassin_s_Hood_Unk11_raw;
             public const string Assassin_s_Hood_Unk11_displayName = "Assassin's Hood: Unk11";
@@ -2177,6 +2589,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk11_offset { get; private set; }
+
             protected float Assassin_s_Hood_Unk12_raw;
             public const string Assassin_s_Hood_Unk12_displayName = "Assassin's Hood: Unk12";
             public const int Assassin_s_Hood_Unk12_sortIndex = 4100;
@@ -2191,6 +2606,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Assassin_s_Hood_Unk12));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk12_offset { get; private set; }
 
             protected float Assassin_s_Hood_Unk13_raw;
             public const string Assassin_s_Hood_Unk13_displayName = "Assassin's Hood: Unk13";
@@ -2207,6 +2625,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk13_offset { get; private set; }
+
             protected float Assassin_s_Hood_Unk14_raw;
             public const string Assassin_s_Hood_Unk14_displayName = "Assassin's Hood: Unk14";
             public const int Assassin_s_Hood_Unk14_sortIndex = 4200;
@@ -2221,6 +2642,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Assassin_s_Hood_Unk14));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk14_offset { get; private set; }
 
             protected float Assassin_s_Hood_Unk15_raw;
             public const string Assassin_s_Hood_Unk15_displayName = "Assassin's Hood: Unk15";
@@ -2237,6 +2661,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk15_offset { get; private set; }
+
             protected float Assassin_s_Hood_Unk16_raw;
             public const string Assassin_s_Hood_Unk16_displayName = "Assassin's Hood: Unk16";
             public const int Assassin_s_Hood_Unk16_sortIndex = 4300;
@@ -2252,6 +2679,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Assassin_s_Hood_Unk16_offset { get; private set; }
+
             public const int lastSortIndex = 4350;
 
             public static ObservableMhwStructCollection<Mantle_Params_3_> LoadData(BinaryReader reader) {
@@ -2266,91 +2696,177 @@ namespace MHW_Editor.Structs.PlData {
             public static Mantle_Params_3_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Mantle_Params_3_();
                 data.Index = i;
+                data.Dragonproof_Mantle_Dragon_Damage_Multiplier_offset = reader.BaseStream.Position;
                 data.Dragonproof_Mantle_Dragon_Damage_Multiplier_raw = reader.ReadSingle();
+                data.Cleanser_Booster_Cooldown_offset = reader.BaseStream.Position;
                 data.Cleanser_Booster_Cooldown_raw = reader.ReadSingle();
+                data.Cleanser_Booster_Duration_offset = reader.BaseStream.Position;
                 data.Cleanser_Booster_Duration_raw = reader.ReadSingle();
+                data.Cleanser_Booster_Upgraded_Duration_offset = reader.BaseStream.Position;
                 data.Cleanser_Booster_Upgraded_Duration_raw = reader.ReadSingle();
+                data.Cleanser_Booster_Unk1_offset = reader.BaseStream.Position;
                 data.Cleanser_Booster_Unk1_raw = reader.ReadSingle();
+                data.Cleanser_Booster_Unk2_offset = reader.BaseStream.Position;
                 data.Cleanser_Booster_Unk2_raw = reader.ReadSingle();
+                data.Cleanser_Booster_Unk3_offset = reader.BaseStream.Position;
                 data.Cleanser_Booster_Unk3_raw = reader.ReadSingle();
+                data.Cleanser_Booster_Unk4_offset = reader.BaseStream.Position;
                 data.Cleanser_Booster_Unk4_raw = reader.ReadSingle();
+                data.Glider_Mantle_Cooldown_offset = reader.BaseStream.Position;
                 data.Glider_Mantle_Cooldown_raw = reader.ReadSingle();
+                data.Glider_Mantle_Duration_offset = reader.BaseStream.Position;
                 data.Glider_Mantle_Duration_raw = reader.ReadSingle();
+                data.Glider_Mantle_Mount_Multiplier_offset = reader.BaseStream.Position;
                 data.Glider_Mantle_Mount_Multiplier_raw = reader.ReadSingle();
+                data.Evasion_Mantle_Cooldown_offset = reader.BaseStream.Position;
                 data.Evasion_Mantle_Cooldown_raw = reader.ReadSingle();
+                data.Evasion_Mantle_Duration_offset = reader.BaseStream.Position;
                 data.Evasion_Mantle_Duration_raw = reader.ReadSingle();
+                data.Evasion_Mantle_Attack_Boost_Duration_offset = reader.BaseStream.Position;
                 data.Evasion_Mantle_Attack_Boost_Duration_raw = reader.ReadSingle();
+                data.Evasion_Mantle_Evasion_Multiplier_offset = reader.BaseStream.Position;
                 data.Evasion_Mantle_Evasion_Multiplier_raw = reader.ReadSingle();
+                data.Evasion_Mantle_Unk1_offset = reader.BaseStream.Position;
                 data.Evasion_Mantle_Unk1_raw = reader.ReadSingle();
+                data.Evasion_Mantle_Unk2_offset = reader.BaseStream.Position;
                 data.Evasion_Mantle_Unk2_raw = reader.ReadByte();
+                data.Evasion_Mantle_Unk3_offset = reader.BaseStream.Position;
                 data.Evasion_Mantle_Unk3_raw = reader.ReadUInt16();
+                data.Evasion_Mantle_Unk4_offset = reader.BaseStream.Position;
                 data.Evasion_Mantle_Unk4_raw = reader.ReadUInt16();
+                data.Evasion_Mantle_Unk5_offset = reader.BaseStream.Position;
                 data.Evasion_Mantle_Unk5_raw = reader.ReadSingle();
+                data.Evasion_Mantle_Unk6_offset = reader.BaseStream.Position;
                 data.Evasion_Mantle_Unk6_raw = reader.ReadUInt16();
+                data.Impact_Mantle_Cooldown_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Cooldown_raw = reader.ReadSingle();
+                data.Impact_Mantle_Duration_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Duration_raw = reader.ReadSingle();
+                data.Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Weak_Attack_Stun_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Weak_Attack_Stun_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Light_Attack_Stun_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Light_Attack_Stun_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Heavy_Attack_Stun_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Heavy_Attack_Stun_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Extreme_Attack_Stun_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Extreme_Attack_Stun_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Existing_Stun_Multiplier_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Existing_Stun_Multiplier_raw = reader.ReadSingle();
+                data.Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Weak_Attack_Exhaust_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Weak_Attack_Exhaust_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Light_Attack_Exhaust_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Light_Attack_Exhaust_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Heavy_Attack_Exhaust_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Heavy_Attack_Exhaust_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Extreme_Attack_Exhaust_Bonus_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Extreme_Attack_Exhaust_Bonus_raw = reader.ReadSingle();
+                data.Impact_Mantle_Existing_Exhaust_Multiplier_offset = reader.BaseStream.Position;
                 data.Impact_Mantle_Existing_Exhaust_Multiplier_raw = reader.ReadSingle();
+                data.Apothecary_Mantle_Cooldown_offset = reader.BaseStream.Position;
                 data.Apothecary_Mantle_Cooldown_raw = reader.ReadSingle();
+                data.Apothecary_Mantle_Duration_offset = reader.BaseStream.Position;
                 data.Apothecary_Mantle_Duration_raw = reader.ReadSingle();
+                data.Apothecary_Mantle_Status_Multiplier_Poison_offset = reader.BaseStream.Position;
                 data.Apothecary_Mantle_Status_Multiplier_Poison_raw = reader.ReadSingle();
+                data.Apothecary_Mantle_Status_Multiplier_Para_offset = reader.BaseStream.Position;
                 data.Apothecary_Mantle_Status_Multiplier_Para_raw = reader.ReadSingle();
+                data.Apothecary_Mantle_Status_Multiplier_Sleep_offset = reader.BaseStream.Position;
                 data.Apothecary_Mantle_Status_Multiplier_Sleep_raw = reader.ReadSingle();
+                data.Apothecary_Mantle_Status_Multiplier_Blast_offset = reader.BaseStream.Position;
                 data.Apothecary_Mantle_Status_Multiplier_Blast_raw = reader.ReadSingle();
+                data.Immunity_Mantle_Cooldown_offset = reader.BaseStream.Position;
                 data.Immunity_Mantle_Cooldown_raw = reader.ReadSingle();
+                data.Immunity_Mantle_Duration_offset = reader.BaseStream.Position;
                 data.Immunity_Mantle_Duration_raw = reader.ReadSingle();
+                data.Affinity_Booster_Cooldown_offset = reader.BaseStream.Position;
                 data.Affinity_Booster_Cooldown_raw = reader.ReadSingle();
+                data.Affinity_Booster_Duration_offset = reader.BaseStream.Position;
                 data.Affinity_Booster_Duration_raw = reader.ReadSingle();
+                data.Affinity_Booster_Buff_Duration_offset = reader.BaseStream.Position;
                 data.Affinity_Booster_Buff_Duration_raw = reader.ReadSingle();
+                data.Affinity_Booster_Buff_Affinity_offset = reader.BaseStream.Position;
                 data.Affinity_Booster_Buff_Affinity_raw = reader.ReadInt32();
+                data.Bandit_Mantle_Cooldown_offset = reader.BaseStream.Position;
                 data.Bandit_Mantle_Cooldown_raw = reader.ReadSingle();
+                data.Bandit_Mantle_Duration_offset = reader.BaseStream.Position;
                 data.Bandit_Mantle_Duration_raw = reader.ReadSingle();
+                data.Bandit_Mantle_Hits_to_Drop_Shiny_offset = reader.BaseStream.Position;
                 data.Bandit_Mantle_Hits_to_Drop_Shiny_raw = reader.ReadSingle();
+                data.Bandit_Mantle_Unk1_offset = reader.BaseStream.Position;
                 data.Bandit_Mantle_Unk1_raw = reader.ReadSByte();
+                data.Bandit_Mantle_Unk2_offset = reader.BaseStream.Position;
                 data.Bandit_Mantle_Unk2_raw = reader.ReadSByte();
+                data.Bandit_Mantle_Unk3_offset = reader.BaseStream.Position;
                 data.Bandit_Mantle_Unk3_raw = reader.ReadSByte();
+                data.Bandit_Mantle_Unk4_offset = reader.BaseStream.Position;
                 data.Bandit_Mantle_Unk4_raw = reader.ReadSByte();
+                data.Bandit_Mantle_Unk5_offset = reader.BaseStream.Position;
                 data.Bandit_Mantle_Unk5_raw = reader.ReadSByte();
+                data.Bandit_Mantle_Unk6_offset = reader.BaseStream.Position;
                 data.Bandit_Mantle_Unk6_raw = reader.ReadSByte();
+                data.Bandit_Mantle_Unk7_offset = reader.BaseStream.Position;
                 data.Bandit_Mantle_Unk7_raw = reader.ReadSByte();
+                data.Bandit_Mantle_Unk8_offset = reader.BaseStream.Position;
                 data.Bandit_Mantle_Unk8_raw = reader.ReadSByte();
+                data.Assassin_s_Hood_Cooldown_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Cooldown_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Duration_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Duration_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Sneak_Attack_Multiplier_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Sneak_Attack_Multiplier_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping__offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping__raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk1_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk1_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Speed_Multiplier_1_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Speed_Multiplier_1_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Speed_Multiplier_2_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Speed_Multiplier_2_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Speed_Multiplier_3_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Speed_Multiplier_3_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Speed_Multiplier_4_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Speed_Multiplier_4_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk2_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk2_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk3_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk3_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk4_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk4_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk5_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk5_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk6_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk6_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk7_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk7_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk8_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk8_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk9_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk9_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk10_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk10_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk11_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk11_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk12_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk12_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk13_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk13_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk14_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk14_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk15_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk15_raw = reader.ReadSingle();
+                data.Assassin_s_Hood_Unk16_offset = reader.BaseStream.Position;
                 data.Assassin_s_Hood_Unk16_raw = reader.ReadSingle();
                 return data;
             }
@@ -2446,92 +2962,92 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Dragonproof Mantle: Dragon Damage Multiplier", "Dragonproof_Mantle_Dragon_Damage_Multiplier"),
-                    new MultiStructItemCustomView(this, "Cleanser Booster: Cooldown", "Cleanser_Booster_Cooldown"),
-                    new MultiStructItemCustomView(this, "Cleanser Booster: Duration", "Cleanser_Booster_Duration"),
-                    new MultiStructItemCustomView(this, "Cleanser Booster: Upgraded Duration", "Cleanser_Booster_Upgraded_Duration"),
-                    new MultiStructItemCustomView(this, "Cleanser Booster: Unk1", "Cleanser_Booster_Unk1"),
-                    new MultiStructItemCustomView(this, "Cleanser Booster: Unk2", "Cleanser_Booster_Unk2"),
-                    new MultiStructItemCustomView(this, "Cleanser Booster: Unk3", "Cleanser_Booster_Unk3"),
-                    new MultiStructItemCustomView(this, "Cleanser Booster: Unk4", "Cleanser_Booster_Unk4"),
-                    new MultiStructItemCustomView(this, "Glider Mantle: Cooldown", "Glider_Mantle_Cooldown"),
-                    new MultiStructItemCustomView(this, "Glider Mantle: Duration", "Glider_Mantle_Duration"),
-                    new MultiStructItemCustomView(this, "Glider Mantle: Mount Multiplier", "Glider_Mantle_Mount_Multiplier"),
-                    new MultiStructItemCustomView(this, "Evasion Mantle: Cooldown", "Evasion_Mantle_Cooldown"),
-                    new MultiStructItemCustomView(this, "Evasion Mantle: Duration", "Evasion_Mantle_Duration"),
-                    new MultiStructItemCustomView(this, "Evasion Mantle: Attack Boost Duration", "Evasion_Mantle_Attack_Boost_Duration"),
-                    new MultiStructItemCustomView(this, "Evasion Mantle: Evasion Multiplier", "Evasion_Mantle_Evasion_Multiplier"),
-                    new MultiStructItemCustomView(this, "Evasion Mantle: Unk1", "Evasion_Mantle_Unk1"),
-                    new MultiStructItemCustomView(this, "Evasion Mantle: Unk2", "Evasion_Mantle_Unk2"),
-                    new MultiStructItemCustomView(this, "Evasion Mantle: Unk3", "Evasion_Mantle_Unk3"),
-                    new MultiStructItemCustomView(this, "Evasion Mantle: Unk4", "Evasion_Mantle_Unk4"),
-                    new MultiStructItemCustomView(this, "Evasion Mantle: Unk5", "Evasion_Mantle_Unk5"),
-                    new MultiStructItemCustomView(this, "Evasion Mantle: Unk6", "Evasion_Mantle_Unk6"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Cooldown", "Impact_Mantle_Cooldown"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Duration", "Impact_Mantle_Duration"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Motion Value Needed for Light Attack Stun Bonus", "Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Motion Value Needed for Heavy Attack Stun Bonus", "Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Motion Value Needed for Extreme Attack Stun Bonus", "Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Weak Attack Stun Bonus", "Impact_Mantle_Weak_Attack_Stun_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Light Attack Stun Bonus", "Impact_Mantle_Light_Attack_Stun_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Heavy Attack Stun Bonus", "Impact_Mantle_Heavy_Attack_Stun_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Extreme Attack Stun Bonus", "Impact_Mantle_Extreme_Attack_Stun_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Existing Stun Multiplier", "Impact_Mantle_Existing_Stun_Multiplier"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Motion Value Needed for Light Attack Exhaust Bonus", "Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Motion Value Needed for Heavy Attack Exhaust Bonus", "Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Motion Value Needed for Extreme Attack Exhaust Bonus", "Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Weak Attack Exhaust Bonus", "Impact_Mantle_Weak_Attack_Exhaust_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Light Attack Exhaust Bonus", "Impact_Mantle_Light_Attack_Exhaust_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Heavy Attack Exhaust Bonus", "Impact_Mantle_Heavy_Attack_Exhaust_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Extreme Attack Exhaust Bonus", "Impact_Mantle_Extreme_Attack_Exhaust_Bonus"),
-                    new MultiStructItemCustomView(this, "Impact Mantle: Existing Exhaust Multiplier", "Impact_Mantle_Existing_Exhaust_Multiplier"),
-                    new MultiStructItemCustomView(this, "Apothecary Mantle: Cooldown", "Apothecary_Mantle_Cooldown"),
-                    new MultiStructItemCustomView(this, "Apothecary Mantle: Duration", "Apothecary_Mantle_Duration"),
-                    new MultiStructItemCustomView(this, "Apothecary Mantle: Status Multiplier: Poison", "Apothecary_Mantle_Status_Multiplier_Poison"),
-                    new MultiStructItemCustomView(this, "Apothecary Mantle: Status Multiplier: Para", "Apothecary_Mantle_Status_Multiplier_Para"),
-                    new MultiStructItemCustomView(this, "Apothecary Mantle: Status Multiplier: Sleep", "Apothecary_Mantle_Status_Multiplier_Sleep"),
-                    new MultiStructItemCustomView(this, "Apothecary Mantle: Status Multiplier: Blast", "Apothecary_Mantle_Status_Multiplier_Blast"),
-                    new MultiStructItemCustomView(this, "Immunity Mantle: Cooldown", "Immunity_Mantle_Cooldown"),
-                    new MultiStructItemCustomView(this, "Immunity Mantle: Duration", "Immunity_Mantle_Duration"),
-                    new MultiStructItemCustomView(this, "Affinity Booster: Cooldown", "Affinity_Booster_Cooldown"),
-                    new MultiStructItemCustomView(this, "Affinity Booster: Duration", "Affinity_Booster_Duration"),
-                    new MultiStructItemCustomView(this, "Affinity Booster: Buff Duration", "Affinity_Booster_Buff_Duration"),
-                    new MultiStructItemCustomView(this, "Affinity Booster: Buff Affinity", "Affinity_Booster_Buff_Affinity"),
-                    new MultiStructItemCustomView(this, "Bandit Mantle: Cooldown", "Bandit_Mantle_Cooldown"),
-                    new MultiStructItemCustomView(this, "Bandit Mantle: Duration", "Bandit_Mantle_Duration"),
-                    new MultiStructItemCustomView(this, "Bandit Mantle: Hits to Drop Shiny", "Bandit_Mantle_Hits_to_Drop_Shiny"),
-                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk1", "Bandit_Mantle_Unk1"),
-                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk2", "Bandit_Mantle_Unk2"),
-                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk3", "Bandit_Mantle_Unk3"),
-                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk4", "Bandit_Mantle_Unk4"),
-                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk5", "Bandit_Mantle_Unk5"),
-                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk6", "Bandit_Mantle_Unk6"),
-                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk7", "Bandit_Mantle_Unk7"),
-                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk8", "Bandit_Mantle_Unk8"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Cooldown", "Assassin_s_Hood_Cooldown"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Duration", "Assassin_s_Hood_Duration"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Sneak Attack Multiplier", "Assassin_s_Hood_Sneak_Attack_Multiplier"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Sneak Attack Multiplier (Sleeping)", "Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping_"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk1", "Assassin_s_Hood_Unk1"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Speed Multiplier 1", "Assassin_s_Hood_Speed_Multiplier_1"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Speed Multiplier 2", "Assassin_s_Hood_Speed_Multiplier_2"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Speed Multiplier 3", "Assassin_s_Hood_Speed_Multiplier_3"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Speed Multiplier 4", "Assassin_s_Hood_Speed_Multiplier_4"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk2", "Assassin_s_Hood_Unk2"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk3", "Assassin_s_Hood_Unk3"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk4", "Assassin_s_Hood_Unk4"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk5", "Assassin_s_Hood_Unk5"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk6", "Assassin_s_Hood_Unk6"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk7", "Assassin_s_Hood_Unk7"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk8", "Assassin_s_Hood_Unk8"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk9", "Assassin_s_Hood_Unk9"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk10", "Assassin_s_Hood_Unk10"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk11", "Assassin_s_Hood_Unk11"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk12", "Assassin_s_Hood_Unk12"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk13", "Assassin_s_Hood_Unk13"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk14", "Assassin_s_Hood_Unk14"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk15", "Assassin_s_Hood_Unk15"),
-                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk16", "Assassin_s_Hood_Unk16"),
+                    new MultiStructItemCustomView(this, "Dragonproof Mantle: Dragon Damage Multiplier", "Dragonproof_Mantle_Dragon_Damage_Multiplier", "Dragonproof_Mantle_Dragon_Damage_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Cleanser Booster: Cooldown", "Cleanser_Booster_Cooldown", "Cleanser_Booster_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Cleanser Booster: Duration", "Cleanser_Booster_Duration", "Cleanser_Booster_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Cleanser Booster: Upgraded Duration", "Cleanser_Booster_Upgraded_Duration", "Cleanser_Booster_Upgraded_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Cleanser Booster: Unk1", "Cleanser_Booster_Unk1", "Cleanser_Booster_Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Cleanser Booster: Unk2", "Cleanser_Booster_Unk2", "Cleanser_Booster_Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Cleanser Booster: Unk3", "Cleanser_Booster_Unk3", "Cleanser_Booster_Unk3_offset"),
+                    new MultiStructItemCustomView(this, "Cleanser Booster: Unk4", "Cleanser_Booster_Unk4", "Cleanser_Booster_Unk4_offset"),
+                    new MultiStructItemCustomView(this, "Glider Mantle: Cooldown", "Glider_Mantle_Cooldown", "Glider_Mantle_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Glider Mantle: Duration", "Glider_Mantle_Duration", "Glider_Mantle_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Glider Mantle: Mount Multiplier", "Glider_Mantle_Mount_Multiplier", "Glider_Mantle_Mount_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Evasion Mantle: Cooldown", "Evasion_Mantle_Cooldown", "Evasion_Mantle_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Evasion Mantle: Duration", "Evasion_Mantle_Duration", "Evasion_Mantle_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Evasion Mantle: Attack Boost Duration", "Evasion_Mantle_Attack_Boost_Duration", "Evasion_Mantle_Attack_Boost_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Evasion Mantle: Evasion Multiplier", "Evasion_Mantle_Evasion_Multiplier", "Evasion_Mantle_Evasion_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Evasion Mantle: Unk1", "Evasion_Mantle_Unk1", "Evasion_Mantle_Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Evasion Mantle: Unk2", "Evasion_Mantle_Unk2", "Evasion_Mantle_Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Evasion Mantle: Unk3", "Evasion_Mantle_Unk3", "Evasion_Mantle_Unk3_offset"),
+                    new MultiStructItemCustomView(this, "Evasion Mantle: Unk4", "Evasion_Mantle_Unk4", "Evasion_Mantle_Unk4_offset"),
+                    new MultiStructItemCustomView(this, "Evasion Mantle: Unk5", "Evasion_Mantle_Unk5", "Evasion_Mantle_Unk5_offset"),
+                    new MultiStructItemCustomView(this, "Evasion Mantle: Unk6", "Evasion_Mantle_Unk6", "Evasion_Mantle_Unk6_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Cooldown", "Impact_Mantle_Cooldown", "Impact_Mantle_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Duration", "Impact_Mantle_Duration", "Impact_Mantle_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Motion Value Needed for Light Attack Stun Bonus", "Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus", "Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Stun_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Motion Value Needed for Heavy Attack Stun Bonus", "Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus", "Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Stun_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Motion Value Needed for Extreme Attack Stun Bonus", "Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus", "Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Stun_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Weak Attack Stun Bonus", "Impact_Mantle_Weak_Attack_Stun_Bonus", "Impact_Mantle_Weak_Attack_Stun_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Light Attack Stun Bonus", "Impact_Mantle_Light_Attack_Stun_Bonus", "Impact_Mantle_Light_Attack_Stun_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Heavy Attack Stun Bonus", "Impact_Mantle_Heavy_Attack_Stun_Bonus", "Impact_Mantle_Heavy_Attack_Stun_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Extreme Attack Stun Bonus", "Impact_Mantle_Extreme_Attack_Stun_Bonus", "Impact_Mantle_Extreme_Attack_Stun_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Existing Stun Multiplier", "Impact_Mantle_Existing_Stun_Multiplier", "Impact_Mantle_Existing_Stun_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Motion Value Needed for Light Attack Exhaust Bonus", "Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus", "Impact_Mantle_Motion_Value_Needed_for_Light_Attack_Exhaust_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Motion Value Needed for Heavy Attack Exhaust Bonus", "Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus", "Impact_Mantle_Motion_Value_Needed_for_Heavy_Attack_Exhaust_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Motion Value Needed for Extreme Attack Exhaust Bonus", "Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus", "Impact_Mantle_Motion_Value_Needed_for_Extreme_Attack_Exhaust_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Weak Attack Exhaust Bonus", "Impact_Mantle_Weak_Attack_Exhaust_Bonus", "Impact_Mantle_Weak_Attack_Exhaust_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Light Attack Exhaust Bonus", "Impact_Mantle_Light_Attack_Exhaust_Bonus", "Impact_Mantle_Light_Attack_Exhaust_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Heavy Attack Exhaust Bonus", "Impact_Mantle_Heavy_Attack_Exhaust_Bonus", "Impact_Mantle_Heavy_Attack_Exhaust_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Extreme Attack Exhaust Bonus", "Impact_Mantle_Extreme_Attack_Exhaust_Bonus", "Impact_Mantle_Extreme_Attack_Exhaust_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Impact Mantle: Existing Exhaust Multiplier", "Impact_Mantle_Existing_Exhaust_Multiplier", "Impact_Mantle_Existing_Exhaust_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Apothecary Mantle: Cooldown", "Apothecary_Mantle_Cooldown", "Apothecary_Mantle_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Apothecary Mantle: Duration", "Apothecary_Mantle_Duration", "Apothecary_Mantle_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Apothecary Mantle: Status Multiplier: Poison", "Apothecary_Mantle_Status_Multiplier_Poison", "Apothecary_Mantle_Status_Multiplier_Poison_offset"),
+                    new MultiStructItemCustomView(this, "Apothecary Mantle: Status Multiplier: Para", "Apothecary_Mantle_Status_Multiplier_Para", "Apothecary_Mantle_Status_Multiplier_Para_offset"),
+                    new MultiStructItemCustomView(this, "Apothecary Mantle: Status Multiplier: Sleep", "Apothecary_Mantle_Status_Multiplier_Sleep", "Apothecary_Mantle_Status_Multiplier_Sleep_offset"),
+                    new MultiStructItemCustomView(this, "Apothecary Mantle: Status Multiplier: Blast", "Apothecary_Mantle_Status_Multiplier_Blast", "Apothecary_Mantle_Status_Multiplier_Blast_offset"),
+                    new MultiStructItemCustomView(this, "Immunity Mantle: Cooldown", "Immunity_Mantle_Cooldown", "Immunity_Mantle_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Immunity Mantle: Duration", "Immunity_Mantle_Duration", "Immunity_Mantle_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Affinity Booster: Cooldown", "Affinity_Booster_Cooldown", "Affinity_Booster_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Affinity Booster: Duration", "Affinity_Booster_Duration", "Affinity_Booster_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Affinity Booster: Buff Duration", "Affinity_Booster_Buff_Duration", "Affinity_Booster_Buff_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Affinity Booster: Buff Affinity", "Affinity_Booster_Buff_Affinity", "Affinity_Booster_Buff_Affinity_offset"),
+                    new MultiStructItemCustomView(this, "Bandit Mantle: Cooldown", "Bandit_Mantle_Cooldown", "Bandit_Mantle_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Bandit Mantle: Duration", "Bandit_Mantle_Duration", "Bandit_Mantle_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Bandit Mantle: Hits to Drop Shiny", "Bandit_Mantle_Hits_to_Drop_Shiny", "Bandit_Mantle_Hits_to_Drop_Shiny_offset"),
+                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk1", "Bandit_Mantle_Unk1", "Bandit_Mantle_Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk2", "Bandit_Mantle_Unk2", "Bandit_Mantle_Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk3", "Bandit_Mantle_Unk3", "Bandit_Mantle_Unk3_offset"),
+                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk4", "Bandit_Mantle_Unk4", "Bandit_Mantle_Unk4_offset"),
+                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk5", "Bandit_Mantle_Unk5", "Bandit_Mantle_Unk5_offset"),
+                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk6", "Bandit_Mantle_Unk6", "Bandit_Mantle_Unk6_offset"),
+                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk7", "Bandit_Mantle_Unk7", "Bandit_Mantle_Unk7_offset"),
+                    new MultiStructItemCustomView(this, "Bandit Mantle: Unk8", "Bandit_Mantle_Unk8", "Bandit_Mantle_Unk8_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Cooldown", "Assassin_s_Hood_Cooldown", "Assassin_s_Hood_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Duration", "Assassin_s_Hood_Duration", "Assassin_s_Hood_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Sneak Attack Multiplier", "Assassin_s_Hood_Sneak_Attack_Multiplier", "Assassin_s_Hood_Sneak_Attack_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Sneak Attack Multiplier (Sleeping)", "Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping_", "Assassin_s_Hood_Sneak_Attack_Multiplier_Sleeping__offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk1", "Assassin_s_Hood_Unk1", "Assassin_s_Hood_Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Speed Multiplier 1", "Assassin_s_Hood_Speed_Multiplier_1", "Assassin_s_Hood_Speed_Multiplier_1_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Speed Multiplier 2", "Assassin_s_Hood_Speed_Multiplier_2", "Assassin_s_Hood_Speed_Multiplier_2_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Speed Multiplier 3", "Assassin_s_Hood_Speed_Multiplier_3", "Assassin_s_Hood_Speed_Multiplier_3_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Speed Multiplier 4", "Assassin_s_Hood_Speed_Multiplier_4", "Assassin_s_Hood_Speed_Multiplier_4_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk2", "Assassin_s_Hood_Unk2", "Assassin_s_Hood_Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk3", "Assassin_s_Hood_Unk3", "Assassin_s_Hood_Unk3_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk4", "Assassin_s_Hood_Unk4", "Assassin_s_Hood_Unk4_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk5", "Assassin_s_Hood_Unk5", "Assassin_s_Hood_Unk5_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk6", "Assassin_s_Hood_Unk6", "Assassin_s_Hood_Unk6_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk7", "Assassin_s_Hood_Unk7", "Assassin_s_Hood_Unk7_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk8", "Assassin_s_Hood_Unk8", "Assassin_s_Hood_Unk8_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk9", "Assassin_s_Hood_Unk9", "Assassin_s_Hood_Unk9_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk10", "Assassin_s_Hood_Unk10", "Assassin_s_Hood_Unk10_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk11", "Assassin_s_Hood_Unk11", "Assassin_s_Hood_Unk11_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk12", "Assassin_s_Hood_Unk12", "Assassin_s_Hood_Unk12_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk13", "Assassin_s_Hood_Unk13", "Assassin_s_Hood_Unk13_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk14", "Assassin_s_Hood_Unk14", "Assassin_s_Hood_Unk14_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk15", "Assassin_s_Hood_Unk15", "Assassin_s_Hood_Unk15_offset"),
+                    new MultiStructItemCustomView(this, "Assassin's Hood: Unk16", "Assassin_s_Hood_Unk16", "Assassin_s_Hood_Unk16_offset"),
                 };
             }
         }

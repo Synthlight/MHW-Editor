@@ -32,7 +32,7 @@ namespace Kulve_Crafter {
             File.Copy(SOURCE_FILE_EQ_CUS_BASE, TARGET_FILE_EQ_CUS_BASE, true);
 
             var instance = EqCus.LoadData(TARGET_FILE_EQ_CUS_BASE);
-            var items    = instance.GetStructList();
+            var items    = instance.GetSingleStructList();
 
             foreach (WeaponType weaponType in Enum.GetValues(typeof(WeaponType))) {
                 var           i       = (ushort) items.Count;
@@ -66,7 +66,7 @@ namespace Kulve_Crafter {
             File.Copy(SOURCE_FILE_EQ_CRT_BASE, TARGET_FILE_EQ_CRT_BASE, true);
 
             var instance = EqCrt.LoadData(TARGET_FILE_EQ_CRT_BASE);
-            var items    = instance.GetStructList();
+            var items    = instance.GetSingleStructList();
 
             foreach (WeaponType weaponType in Enum.GetValues(typeof(WeaponType))) {
                 foreach (var kvp in DataHelper.weaponIndexNameLookup[weaponType]["eng"]) {

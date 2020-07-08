@@ -37,6 +37,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Weapon_offset { get; private set; }
+
             protected uint Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
             public const int Unk_1_sortIndex = 100;
@@ -52,6 +55,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_1_offset { get; private set; }
+
             public const int lastSortIndex = 150;
 
             public static ObservableMhwStructCollection<W07p_Params_1_Shared_> LoadData(BinaryReader reader) {
@@ -66,7 +72,9 @@ namespace MHW_Editor.Structs.Weapons {
             public static W07p_Params_1_Shared_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W07p_Params_1_Shared_();
                 data.Index = i;
+                data.Weapon_offset = reader.BaseStream.Position;
                 data.Weapon_raw = reader.ReadChars(4);
+                data.Unk_1_offset = reader.BaseStream.Position;
                 data.Unk_1_raw = reader.ReadUInt32();
                 return data;
             }
@@ -78,8 +86,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Weapon", "Weapon"),
-                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
+                    new MultiStructItemCustomView(this, "Weapon", "Weapon", "Weapon_offset"),
+                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1", "Unk_1_offset"),
                 };
             }
         }
@@ -213,6 +221,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_2_offset { get; private set; }
+
             protected float Unk_3_raw;
             public const string Unk_3_displayName = "Unk 3";
             public const int Unk_3_sortIndex = 100;
@@ -227,6 +238,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_3_offset { get; private set; }
 
             protected float Unk_4_raw;
             public const string Unk_4_displayName = "Unk 4";
@@ -243,6 +257,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_4_offset { get; private set; }
+
             protected float Unk_5_raw;
             public const string Unk_5_displayName = "Unk 5";
             public const int Unk_5_sortIndex = 200;
@@ -257,6 +274,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_5));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_5_offset { get; private set; }
 
             protected float Unk_6_raw;
             public const string Unk_6_displayName = "Unk 6";
@@ -273,6 +293,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_6_offset { get; private set; }
+
             protected float Unk_7_raw;
             public const string Unk_7_displayName = "Unk 7";
             public const int Unk_7_sortIndex = 300;
@@ -287,6 +310,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_7));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_7_offset { get; private set; }
 
             protected float Unk_8_raw;
             public const string Unk_8_displayName = "Unk 8";
@@ -303,6 +329,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_8_offset { get; private set; }
+
             protected float Unk_9_raw;
             public const string Unk_9_displayName = "Unk 9";
             public const int Unk_9_sortIndex = 400;
@@ -317,6 +346,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_9));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_9_offset { get; private set; }
 
             protected float Unk_10_raw;
             public const string Unk_10_displayName = "Unk 10";
@@ -333,6 +365,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_10_offset { get; private set; }
+
             protected float Unk_11_raw;
             public const string Unk_11_displayName = "Unk 11";
             public const int Unk_11_sortIndex = 500;
@@ -347,6 +382,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_11));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_11_offset { get; private set; }
 
             protected float Unk_12_raw;
             public const string Unk_12_displayName = "Unk 12";
@@ -363,6 +401,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_12_offset { get; private set; }
+
             protected float Unk_13_raw;
             public const string Unk_13_displayName = "Unk 13";
             public const int Unk_13_sortIndex = 600;
@@ -377,6 +418,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_13));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_13_offset { get; private set; }
 
             protected float Unk_14_raw;
             public const string Unk_14_displayName = "Unk 14";
@@ -393,6 +437,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_14_offset { get; private set; }
+
             protected float Unk_15_raw;
             public const string Unk_15_displayName = "Unk 15";
             public const int Unk_15_sortIndex = 700;
@@ -407,6 +454,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_15));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_15_offset { get; private set; }
 
             protected float Unk_16_raw;
             public const string Unk_16_displayName = "Unk 16";
@@ -423,6 +473,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_16_offset { get; private set; }
+
             protected float Unk_17_raw;
             public const string Unk_17_displayName = "Unk 17";
             public const int Unk_17_sortIndex = 800;
@@ -437,6 +490,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_17));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_17_offset { get; private set; }
 
             protected byte Sharpness_Consumed_Melee_Only__raw;
             public const string Sharpness_Consumed_Melee_Only__displayName = "Sharpness Consumed (Melee Only)";
@@ -453,6 +509,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Sharpness_Consumed_Melee_Only__offset { get; private set; }
+
             protected byte Guard_Knockback_Sharpness_Usage_Small_raw;
             public const string Guard_Knockback_Sharpness_Usage_Small_displayName = "Guard Knockback Sharpness Usage: Small";
             public const int Guard_Knockback_Sharpness_Usage_Small_sortIndex = 900;
@@ -467,6 +526,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Small));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Guard_Knockback_Sharpness_Usage_Small_offset { get; private set; }
 
             protected byte Guard_Knockback_Sharpness_Usage_Medium_raw;
             public const string Guard_Knockback_Sharpness_Usage_Medium_displayName = "Guard Knockback Sharpness Usage: Medium";
@@ -483,6 +545,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Guard_Knockback_Sharpness_Usage_Medium_offset { get; private set; }
+
             protected byte Guard_Knockback_Sharpness_Usage_Large_raw;
             public const string Guard_Knockback_Sharpness_Usage_Large_displayName = "Guard Knockback Sharpness Usage: Large";
             public const int Guard_Knockback_Sharpness_Usage_Large_sortIndex = 1000;
@@ -497,6 +562,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Large));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Guard_Knockback_Sharpness_Usage_Large_offset { get; private set; }
 
             protected float Weapon_Sweet_spot_raw;
             public const string Weapon_Sweet_spot_displayName = "Weapon Sweet-spot";
@@ -513,6 +581,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Weapon_Sweet_spot_offset { get; private set; }
+
             protected float Unk_23_raw;
             public const string Unk_23_displayName = "Unk 23";
             public const int Unk_23_sortIndex = 1100;
@@ -527,6 +598,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_23));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_23_offset { get; private set; }
 
             protected float Unk_24_raw;
             public const string Unk_24_displayName = "Unk 24";
@@ -543,6 +617,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_24_offset { get; private set; }
+
             protected float Elderseal_Modifier__raw;
             public const string Elderseal_Modifier__displayName = "Elderseal Modifier?";
             public const int Elderseal_Modifier__sortIndex = 1200;
@@ -557,6 +634,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Elderseal_Modifier_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Elderseal_Modifier__offset { get; private set; }
 
             protected byte Unk_26_raw;
             public const string Unk_26_displayName = "Unk 26";
@@ -573,6 +653,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_26_offset { get; private set; }
+
             protected float Unk_27_raw;
             public const string Unk_27_displayName = "Unk 27";
             public const int Unk_27_sortIndex = 1300;
@@ -588,6 +671,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_27_offset { get; private set; }
+
             public const int lastSortIndex = 1350;
 
             public static ObservableMhwStructCollection<W07p_Params_2_Shared_> LoadData(BinaryReader reader) {
@@ -602,31 +688,57 @@ namespace MHW_Editor.Structs.Weapons {
             public static W07p_Params_2_Shared_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W07p_Params_2_Shared_();
                 data.Index = i;
+                data.Unk_2_offset = reader.BaseStream.Position;
                 data.Unk_2_raw = reader.ReadSingle();
+                data.Unk_3_offset = reader.BaseStream.Position;
                 data.Unk_3_raw = reader.ReadSingle();
+                data.Unk_4_offset = reader.BaseStream.Position;
                 data.Unk_4_raw = reader.ReadSingle();
+                data.Unk_5_offset = reader.BaseStream.Position;
                 data.Unk_5_raw = reader.ReadSingle();
+                data.Unk_6_offset = reader.BaseStream.Position;
                 data.Unk_6_raw = reader.ReadSingle();
+                data.Unk_7_offset = reader.BaseStream.Position;
                 data.Unk_7_raw = reader.ReadSingle();
+                data.Unk_8_offset = reader.BaseStream.Position;
                 data.Unk_8_raw = reader.ReadSingle();
+                data.Unk_9_offset = reader.BaseStream.Position;
                 data.Unk_9_raw = reader.ReadSingle();
+                data.Unk_10_offset = reader.BaseStream.Position;
                 data.Unk_10_raw = reader.ReadSingle();
+                data.Unk_11_offset = reader.BaseStream.Position;
                 data.Unk_11_raw = reader.ReadSingle();
+                data.Unk_12_offset = reader.BaseStream.Position;
                 data.Unk_12_raw = reader.ReadSingle();
+                data.Unk_13_offset = reader.BaseStream.Position;
                 data.Unk_13_raw = reader.ReadSingle();
+                data.Unk_14_offset = reader.BaseStream.Position;
                 data.Unk_14_raw = reader.ReadSingle();
+                data.Unk_15_offset = reader.BaseStream.Position;
                 data.Unk_15_raw = reader.ReadSingle();
+                data.Unk_16_offset = reader.BaseStream.Position;
                 data.Unk_16_raw = reader.ReadSingle();
+                data.Unk_17_offset = reader.BaseStream.Position;
                 data.Unk_17_raw = reader.ReadSingle();
+                data.Sharpness_Consumed_Melee_Only__offset = reader.BaseStream.Position;
                 data.Sharpness_Consumed_Melee_Only__raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Small_offset = reader.BaseStream.Position;
                 data.Guard_Knockback_Sharpness_Usage_Small_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Medium_offset = reader.BaseStream.Position;
                 data.Guard_Knockback_Sharpness_Usage_Medium_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Large_offset = reader.BaseStream.Position;
                 data.Guard_Knockback_Sharpness_Usage_Large_raw = reader.ReadByte();
+                data.Weapon_Sweet_spot_offset = reader.BaseStream.Position;
                 data.Weapon_Sweet_spot_raw = reader.ReadSingle();
+                data.Unk_23_offset = reader.BaseStream.Position;
                 data.Unk_23_raw = reader.ReadSingle();
+                data.Unk_24_offset = reader.BaseStream.Position;
                 data.Unk_24_raw = reader.ReadSingle();
+                data.Elderseal_Modifier__offset = reader.BaseStream.Position;
                 data.Elderseal_Modifier__raw = reader.ReadSingle();
+                data.Unk_26_offset = reader.BaseStream.Position;
                 data.Unk_26_raw = reader.ReadByte();
+                data.Unk_27_offset = reader.BaseStream.Position;
                 data.Unk_27_raw = reader.ReadSingle();
                 return data;
             }
@@ -662,32 +774,32 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2"),
-                    new MultiStructItemCustomView(this, "Unk 3", "Unk_3"),
-                    new MultiStructItemCustomView(this, "Unk 4", "Unk_4"),
-                    new MultiStructItemCustomView(this, "Unk 5", "Unk_5"),
-                    new MultiStructItemCustomView(this, "Unk 6", "Unk_6"),
-                    new MultiStructItemCustomView(this, "Unk 7", "Unk_7"),
-                    new MultiStructItemCustomView(this, "Unk 8", "Unk_8"),
-                    new MultiStructItemCustomView(this, "Unk 9", "Unk_9"),
-                    new MultiStructItemCustomView(this, "Unk 10", "Unk_10"),
-                    new MultiStructItemCustomView(this, "Unk 11", "Unk_11"),
-                    new MultiStructItemCustomView(this, "Unk 12", "Unk_12"),
-                    new MultiStructItemCustomView(this, "Unk 13", "Unk_13"),
-                    new MultiStructItemCustomView(this, "Unk 14", "Unk_14"),
-                    new MultiStructItemCustomView(this, "Unk 15", "Unk_15"),
-                    new MultiStructItemCustomView(this, "Unk 16", "Unk_16"),
-                    new MultiStructItemCustomView(this, "Unk 17", "Unk_17"),
-                    new MultiStructItemCustomView(this, "Sharpness Consumed (Melee Only)", "Sharpness_Consumed_Melee_Only_"),
-                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Small", "Guard_Knockback_Sharpness_Usage_Small"),
-                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Medium", "Guard_Knockback_Sharpness_Usage_Medium"),
-                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Large", "Guard_Knockback_Sharpness_Usage_Large"),
-                    new MultiStructItemCustomView(this, "Weapon Sweet-spot", "Weapon_Sweet_spot"),
-                    new MultiStructItemCustomView(this, "Unk 23", "Unk_23"),
-                    new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),
-                    new MultiStructItemCustomView(this, "Elderseal Modifier?", "Elderseal_Modifier_"),
-                    new MultiStructItemCustomView(this, "Unk 26", "Unk_26"),
-                    new MultiStructItemCustomView(this, "Unk 27", "Unk_27"),
+                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2", "Unk_2_offset"),
+                    new MultiStructItemCustomView(this, "Unk 3", "Unk_3", "Unk_3_offset"),
+                    new MultiStructItemCustomView(this, "Unk 4", "Unk_4", "Unk_4_offset"),
+                    new MultiStructItemCustomView(this, "Unk 5", "Unk_5", "Unk_5_offset"),
+                    new MultiStructItemCustomView(this, "Unk 6", "Unk_6", "Unk_6_offset"),
+                    new MultiStructItemCustomView(this, "Unk 7", "Unk_7", "Unk_7_offset"),
+                    new MultiStructItemCustomView(this, "Unk 8", "Unk_8", "Unk_8_offset"),
+                    new MultiStructItemCustomView(this, "Unk 9", "Unk_9", "Unk_9_offset"),
+                    new MultiStructItemCustomView(this, "Unk 10", "Unk_10", "Unk_10_offset"),
+                    new MultiStructItemCustomView(this, "Unk 11", "Unk_11", "Unk_11_offset"),
+                    new MultiStructItemCustomView(this, "Unk 12", "Unk_12", "Unk_12_offset"),
+                    new MultiStructItemCustomView(this, "Unk 13", "Unk_13", "Unk_13_offset"),
+                    new MultiStructItemCustomView(this, "Unk 14", "Unk_14", "Unk_14_offset"),
+                    new MultiStructItemCustomView(this, "Unk 15", "Unk_15", "Unk_15_offset"),
+                    new MultiStructItemCustomView(this, "Unk 16", "Unk_16", "Unk_16_offset"),
+                    new MultiStructItemCustomView(this, "Unk 17", "Unk_17", "Unk_17_offset"),
+                    new MultiStructItemCustomView(this, "Sharpness Consumed (Melee Only)", "Sharpness_Consumed_Melee_Only_", "Sharpness_Consumed_Melee_Only__offset"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Small", "Guard_Knockback_Sharpness_Usage_Small", "Guard_Knockback_Sharpness_Usage_Small_offset"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Medium", "Guard_Knockback_Sharpness_Usage_Medium", "Guard_Knockback_Sharpness_Usage_Medium_offset"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Large", "Guard_Knockback_Sharpness_Usage_Large", "Guard_Knockback_Sharpness_Usage_Large_offset"),
+                    new MultiStructItemCustomView(this, "Weapon Sweet-spot", "Weapon_Sweet_spot", "Weapon_Sweet_spot_offset"),
+                    new MultiStructItemCustomView(this, "Unk 23", "Unk_23", "Unk_23_offset"),
+                    new MultiStructItemCustomView(this, "Unk 24", "Unk_24", "Unk_24_offset"),
+                    new MultiStructItemCustomView(this, "Elderseal Modifier?", "Elderseal_Modifier_", "Elderseal_Modifier__offset"),
+                    new MultiStructItemCustomView(this, "Unk 26", "Unk_26", "Unk_26_offset"),
+                    new MultiStructItemCustomView(this, "Unk 27", "Unk_27", "Unk_27_offset"),
                 };
             }
         }
@@ -804,6 +916,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_28_offset { get; private set; }
+
             protected float Unk_29_raw;
             public const string Unk_29_displayName = "Unk 29";
             public const int Unk_29_sortIndex = 100;
@@ -818,6 +933,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_29));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_29_offset { get; private set; }
 
             protected float Unk_30_raw;
             public const string Unk_30_displayName = "Unk 30";
@@ -834,6 +952,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_30_offset { get; private set; }
+
             protected float Unk_31_raw;
             public const string Unk_31_displayName = "Unk 31";
             public const int Unk_31_sortIndex = 200;
@@ -848,6 +969,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_31));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_31_offset { get; private set; }
 
             protected float Unk_32_raw;
             public const string Unk_32_displayName = "Unk 32";
@@ -864,6 +988,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_32_offset { get; private set; }
+
             protected float Unk_33_raw;
             public const string Unk_33_displayName = "Unk 33";
             public const int Unk_33_sortIndex = 300;
@@ -878,6 +1005,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_33));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_33_offset { get; private set; }
 
             protected float Unk_34_raw;
             public const string Unk_34_displayName = "Unk 34";
@@ -894,6 +1024,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_34_offset { get; private set; }
+
             protected float Unk_35_raw;
             public const string Unk_35_displayName = "Unk 35";
             public const int Unk_35_sortIndex = 400;
@@ -908,6 +1041,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_35));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_35_offset { get; private set; }
 
             protected float Unk_36_raw;
             public const string Unk_36_displayName = "Unk 36";
@@ -924,6 +1060,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_36_offset { get; private set; }
+
             protected float Unk_37_raw;
             public const string Unk_37_displayName = "Unk 37";
             public const int Unk_37_sortIndex = 500;
@@ -938,6 +1077,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_37));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_37_offset { get; private set; }
 
             protected float Unk_38_raw;
             public const string Unk_38_displayName = "Unk 38";
@@ -954,6 +1096,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_38_offset { get; private set; }
+
             protected float Unk_39_raw;
             public const string Unk_39_displayName = "Unk 39";
             public const int Unk_39_sortIndex = 600;
@@ -968,6 +1113,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_39));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_39_offset { get; private set; }
 
             protected float Unk_40_raw;
             public const string Unk_40_displayName = "Unk 40";
@@ -984,6 +1132,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_40_offset { get; private set; }
+
             protected float Unk_41_raw;
             public const string Unk_41_displayName = "Unk 41";
             public const int Unk_41_sortIndex = 700;
@@ -998,6 +1149,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_41));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_41_offset { get; private set; }
 
             protected float Unk_42_raw;
             public const string Unk_42_displayName = "Unk 42";
@@ -1014,6 +1168,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_42_offset { get; private set; }
+
             protected float Unk_43_raw;
             public const string Unk_43_displayName = "Unk 43";
             public const int Unk_43_sortIndex = 800;
@@ -1028,6 +1185,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_43));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_43_offset { get; private set; }
 
             protected float Unk_44_raw;
             public const string Unk_44_displayName = "Unk 44";
@@ -1044,6 +1204,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_44_offset { get; private set; }
+
             protected float Unk_45_raw;
             public const string Unk_45_displayName = "Unk 45";
             public const int Unk_45_sortIndex = 900;
@@ -1058,6 +1221,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_45));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_45_offset { get; private set; }
 
             protected float Unk_46_raw;
             public const string Unk_46_displayName = "Unk 46";
@@ -1074,6 +1240,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_46_offset { get; private set; }
+
             protected float Unk_47_raw;
             public const string Unk_47_displayName = "Unk 47";
             public const int Unk_47_sortIndex = 1000;
@@ -1088,6 +1257,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_47));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_47_offset { get; private set; }
 
             protected float Unk_48_raw;
             public const string Unk_48_displayName = "Unk 48";
@@ -1104,6 +1276,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_48_offset { get; private set; }
+
             protected uint Unk_49_raw;
             public const string Unk_49_displayName = "Unk 49";
             public const int Unk_49_sortIndex = 1100;
@@ -1118,6 +1293,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_49));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_49_offset { get; private set; }
 
             protected uint Unk_50_raw;
             public const string Unk_50_displayName = "Unk 50";
@@ -1134,6 +1312,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_50_offset { get; private set; }
+
             protected float Unk_51_raw;
             public const string Unk_51_displayName = "Unk 51";
             public const int Unk_51_sortIndex = 1200;
@@ -1148,6 +1329,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_51));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_51_offset { get; private set; }
 
             protected float Unk_52_raw;
             public const string Unk_52_displayName = "Unk 52";
@@ -1164,6 +1348,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_52_offset { get; private set; }
+
             protected float Unk_53_raw;
             public const string Unk_53_displayName = "Unk 53";
             public const int Unk_53_sortIndex = 1300;
@@ -1178,6 +1365,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_53));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_53_offset { get; private set; }
 
             protected float Unk_54_raw;
             public const string Unk_54_displayName = "Unk 54";
@@ -1194,6 +1384,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_54_offset { get; private set; }
+
             protected float Unk_55_raw;
             public const string Unk_55_displayName = "Unk 55";
             public const int Unk_55_sortIndex = 1400;
@@ -1208,6 +1401,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_55));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_55_offset { get; private set; }
 
             protected float Unk_56_raw;
             public const string Unk_56_displayName = "Unk 56";
@@ -1224,6 +1420,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_56_offset { get; private set; }
+
             protected float Unk_57_raw;
             public const string Unk_57_displayName = "Unk 57";
             public const int Unk_57_sortIndex = 1500;
@@ -1238,6 +1437,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_57));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_57_offset { get; private set; }
 
             protected float Unk_58_raw;
             public const string Unk_58_displayName = "Unk 58";
@@ -1254,6 +1456,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_58_offset { get; private set; }
+
             protected float Unk_59_raw;
             public const string Unk_59_displayName = "Unk 59";
             public const int Unk_59_sortIndex = 1600;
@@ -1268,6 +1473,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_59));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_59_offset { get; private set; }
 
             protected float Unk_60_raw;
             public const string Unk_60_displayName = "Unk 60";
@@ -1284,6 +1492,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_60_offset { get; private set; }
+
             protected float Unk_61_raw;
             public const string Unk_61_displayName = "Unk 61";
             public const int Unk_61_sortIndex = 1700;
@@ -1298,6 +1509,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_61));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_61_offset { get; private set; }
 
             protected float Unk_62_raw;
             public const string Unk_62_displayName = "Unk 62";
@@ -1314,6 +1528,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_62_offset { get; private set; }
+
             protected float Unk_63_raw;
             public const string Unk_63_displayName = "Unk 63";
             public const int Unk_63_sortIndex = 1800;
@@ -1328,6 +1545,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_63));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_63_offset { get; private set; }
 
             protected float Unk_64_raw;
             public const string Unk_64_displayName = "Unk 64";
@@ -1344,6 +1564,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_64_offset { get; private set; }
+
             protected float Unk_65_raw;
             public const string Unk_65_displayName = "Unk 65";
             public const int Unk_65_sortIndex = 1900;
@@ -1358,6 +1581,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_65));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_65_offset { get; private set; }
 
             protected float Unk_66_raw;
             public const string Unk_66_displayName = "Unk 66";
@@ -1374,6 +1600,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_66_offset { get; private set; }
+
             protected float Unk_67_raw;
             public const string Unk_67_displayName = "Unk 67";
             public const int Unk_67_sortIndex = 2000;
@@ -1388,6 +1617,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_67));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_67_offset { get; private set; }
 
             protected float Unk_68_raw;
             public const string Unk_68_displayName = "Unk 68";
@@ -1404,6 +1636,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_68_offset { get; private set; }
+
             protected float Unk_69_raw;
             public const string Unk_69_displayName = "Unk 69";
             public const int Unk_69_sortIndex = 2100;
@@ -1418,6 +1653,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_69));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_69_offset { get; private set; }
 
             protected float Unk_70_raw;
             public const string Unk_70_displayName = "Unk 70";
@@ -1434,6 +1672,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_70_offset { get; private set; }
+
             protected float Unk_71_raw;
             public const string Unk_71_displayName = "Unk 71";
             public const int Unk_71_sortIndex = 2200;
@@ -1448,6 +1689,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_71));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_71_offset { get; private set; }
 
             protected byte Unk_72_raw;
             public const string Unk_72_displayName = "Unk 72";
@@ -1464,6 +1708,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_72_offset { get; private set; }
+
             protected uint Unk_73_raw;
             public const string Unk_73_displayName = "Unk 73";
             public const int Unk_73_sortIndex = 2300;
@@ -1478,6 +1725,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_73));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_73_offset { get; private set; }
 
             protected float Unk_74_raw;
             public const string Unk_74_displayName = "Unk 74";
@@ -1494,6 +1744,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_74_offset { get; private set; }
+
             protected float Unk_75_raw;
             public const string Unk_75_displayName = "Unk 75";
             public const int Unk_75_sortIndex = 2400;
@@ -1508,6 +1761,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_75));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_75_offset { get; private set; }
 
             protected float Unk_76_raw;
             public const string Unk_76_displayName = "Unk 76";
@@ -1524,6 +1780,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_76_offset { get; private set; }
+
             public const int lastSortIndex = 2500;
 
             public static ObservableMhwStructCollection<W07p_Params_3_Shared_> LoadData(BinaryReader reader) {
@@ -1538,54 +1797,103 @@ namespace MHW_Editor.Structs.Weapons {
             public static W07p_Params_3_Shared_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W07p_Params_3_Shared_();
                 data.Index = i;
+                data.Unk_28_offset = reader.BaseStream.Position;
                 data.Unk_28_raw = reader.ReadSingle();
+                data.Unk_29_offset = reader.BaseStream.Position;
                 data.Unk_29_raw = reader.ReadSingle();
+                data.Unk_30_offset = reader.BaseStream.Position;
                 data.Unk_30_raw = reader.ReadSingle();
+                data.Unk_31_offset = reader.BaseStream.Position;
                 data.Unk_31_raw = reader.ReadSingle();
+                data.Unk_32_offset = reader.BaseStream.Position;
                 data.Unk_32_raw = reader.ReadSingle();
+                data.Unk_33_offset = reader.BaseStream.Position;
                 data.Unk_33_raw = reader.ReadSingle();
+                data.Unk_34_offset = reader.BaseStream.Position;
                 data.Unk_34_raw = reader.ReadSingle();
+                data.Unk_35_offset = reader.BaseStream.Position;
                 data.Unk_35_raw = reader.ReadSingle();
+                data.Unk_36_offset = reader.BaseStream.Position;
                 data.Unk_36_raw = reader.ReadSingle();
+                data.Unk_37_offset = reader.BaseStream.Position;
                 data.Unk_37_raw = reader.ReadSingle();
+                data.Unk_38_offset = reader.BaseStream.Position;
                 data.Unk_38_raw = reader.ReadSingle();
+                data.Unk_39_offset = reader.BaseStream.Position;
                 data.Unk_39_raw = reader.ReadSingle();
+                data.Unk_40_offset = reader.BaseStream.Position;
                 data.Unk_40_raw = reader.ReadSingle();
+                data.Unk_41_offset = reader.BaseStream.Position;
                 data.Unk_41_raw = reader.ReadSingle();
+                data.Unk_42_offset = reader.BaseStream.Position;
                 data.Unk_42_raw = reader.ReadSingle();
+                data.Unk_43_offset = reader.BaseStream.Position;
                 data.Unk_43_raw = reader.ReadSingle();
+                data.Unk_44_offset = reader.BaseStream.Position;
                 data.Unk_44_raw = reader.ReadSingle();
+                data.Unk_45_offset = reader.BaseStream.Position;
                 data.Unk_45_raw = reader.ReadSingle();
+                data.Unk_46_offset = reader.BaseStream.Position;
                 data.Unk_46_raw = reader.ReadSingle();
+                data.Unk_47_offset = reader.BaseStream.Position;
                 data.Unk_47_raw = reader.ReadSingle();
+                data.Unk_48_offset = reader.BaseStream.Position;
                 data.Unk_48_raw = reader.ReadSingle();
+                data.Unk_49_offset = reader.BaseStream.Position;
                 data.Unk_49_raw = reader.ReadUInt32();
+                data.Unk_50_offset = reader.BaseStream.Position;
                 data.Unk_50_raw = reader.ReadUInt32();
+                data.Unk_51_offset = reader.BaseStream.Position;
                 data.Unk_51_raw = reader.ReadSingle();
+                data.Unk_52_offset = reader.BaseStream.Position;
                 data.Unk_52_raw = reader.ReadSingle();
+                data.Unk_53_offset = reader.BaseStream.Position;
                 data.Unk_53_raw = reader.ReadSingle();
+                data.Unk_54_offset = reader.BaseStream.Position;
                 data.Unk_54_raw = reader.ReadSingle();
+                data.Unk_55_offset = reader.BaseStream.Position;
                 data.Unk_55_raw = reader.ReadSingle();
+                data.Unk_56_offset = reader.BaseStream.Position;
                 data.Unk_56_raw = reader.ReadSingle();
+                data.Unk_57_offset = reader.BaseStream.Position;
                 data.Unk_57_raw = reader.ReadSingle();
+                data.Unk_58_offset = reader.BaseStream.Position;
                 data.Unk_58_raw = reader.ReadSingle();
+                data.Unk_59_offset = reader.BaseStream.Position;
                 data.Unk_59_raw = reader.ReadSingle();
+                data.Unk_60_offset = reader.BaseStream.Position;
                 data.Unk_60_raw = reader.ReadSingle();
+                data.Unk_61_offset = reader.BaseStream.Position;
                 data.Unk_61_raw = reader.ReadSingle();
+                data.Unk_62_offset = reader.BaseStream.Position;
                 data.Unk_62_raw = reader.ReadSingle();
+                data.Unk_63_offset = reader.BaseStream.Position;
                 data.Unk_63_raw = reader.ReadSingle();
+                data.Unk_64_offset = reader.BaseStream.Position;
                 data.Unk_64_raw = reader.ReadSingle();
+                data.Unk_65_offset = reader.BaseStream.Position;
                 data.Unk_65_raw = reader.ReadSingle();
+                data.Unk_66_offset = reader.BaseStream.Position;
                 data.Unk_66_raw = reader.ReadSingle();
+                data.Unk_67_offset = reader.BaseStream.Position;
                 data.Unk_67_raw = reader.ReadSingle();
+                data.Unk_68_offset = reader.BaseStream.Position;
                 data.Unk_68_raw = reader.ReadSingle();
+                data.Unk_69_offset = reader.BaseStream.Position;
                 data.Unk_69_raw = reader.ReadSingle();
+                data.Unk_70_offset = reader.BaseStream.Position;
                 data.Unk_70_raw = reader.ReadSingle();
+                data.Unk_71_offset = reader.BaseStream.Position;
                 data.Unk_71_raw = reader.ReadSingle();
+                data.Unk_72_offset = reader.BaseStream.Position;
                 data.Unk_72_raw = reader.ReadByte();
+                data.Unk_73_offset = reader.BaseStream.Position;
                 data.Unk_73_raw = reader.ReadUInt32();
+                data.Unk_74_offset = reader.BaseStream.Position;
                 data.Unk_74_raw = reader.ReadSingle();
+                data.Unk_75_offset = reader.BaseStream.Position;
                 data.Unk_75_raw = reader.ReadSingle();
+                data.Unk_76_offset = reader.BaseStream.Position;
                 data.Unk_76_raw = reader.ReadSingle();
                 return data;
             }
@@ -1644,55 +1952,55 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 28", "Unk_28"),
-                    new MultiStructItemCustomView(this, "Unk 29", "Unk_29"),
-                    new MultiStructItemCustomView(this, "Unk 30", "Unk_30"),
-                    new MultiStructItemCustomView(this, "Unk 31", "Unk_31"),
-                    new MultiStructItemCustomView(this, "Unk 32", "Unk_32"),
-                    new MultiStructItemCustomView(this, "Unk 33", "Unk_33"),
-                    new MultiStructItemCustomView(this, "Unk 34", "Unk_34"),
-                    new MultiStructItemCustomView(this, "Unk 35", "Unk_35"),
-                    new MultiStructItemCustomView(this, "Unk 36", "Unk_36"),
-                    new MultiStructItemCustomView(this, "Unk 37", "Unk_37"),
-                    new MultiStructItemCustomView(this, "Unk 38", "Unk_38"),
-                    new MultiStructItemCustomView(this, "Unk 39", "Unk_39"),
-                    new MultiStructItemCustomView(this, "Unk 40", "Unk_40"),
-                    new MultiStructItemCustomView(this, "Unk 41", "Unk_41"),
-                    new MultiStructItemCustomView(this, "Unk 42", "Unk_42"),
-                    new MultiStructItemCustomView(this, "Unk 43", "Unk_43"),
-                    new MultiStructItemCustomView(this, "Unk 44", "Unk_44"),
-                    new MultiStructItemCustomView(this, "Unk 45", "Unk_45"),
-                    new MultiStructItemCustomView(this, "Unk 46", "Unk_46"),
-                    new MultiStructItemCustomView(this, "Unk 47", "Unk_47"),
-                    new MultiStructItemCustomView(this, "Unk 48", "Unk_48"),
-                    new MultiStructItemCustomView(this, "Unk 49", "Unk_49"),
-                    new MultiStructItemCustomView(this, "Unk 50", "Unk_50"),
-                    new MultiStructItemCustomView(this, "Unk 51", "Unk_51"),
-                    new MultiStructItemCustomView(this, "Unk 52", "Unk_52"),
-                    new MultiStructItemCustomView(this, "Unk 53", "Unk_53"),
-                    new MultiStructItemCustomView(this, "Unk 54", "Unk_54"),
-                    new MultiStructItemCustomView(this, "Unk 55", "Unk_55"),
-                    new MultiStructItemCustomView(this, "Unk 56", "Unk_56"),
-                    new MultiStructItemCustomView(this, "Unk 57", "Unk_57"),
-                    new MultiStructItemCustomView(this, "Unk 58", "Unk_58"),
-                    new MultiStructItemCustomView(this, "Unk 59", "Unk_59"),
-                    new MultiStructItemCustomView(this, "Unk 60", "Unk_60"),
-                    new MultiStructItemCustomView(this, "Unk 61", "Unk_61"),
-                    new MultiStructItemCustomView(this, "Unk 62", "Unk_62"),
-                    new MultiStructItemCustomView(this, "Unk 63", "Unk_63"),
-                    new MultiStructItemCustomView(this, "Unk 64", "Unk_64"),
-                    new MultiStructItemCustomView(this, "Unk 65", "Unk_65"),
-                    new MultiStructItemCustomView(this, "Unk 66", "Unk_66"),
-                    new MultiStructItemCustomView(this, "Unk 67", "Unk_67"),
-                    new MultiStructItemCustomView(this, "Unk 68", "Unk_68"),
-                    new MultiStructItemCustomView(this, "Unk 69", "Unk_69"),
-                    new MultiStructItemCustomView(this, "Unk 70", "Unk_70"),
-                    new MultiStructItemCustomView(this, "Unk 71", "Unk_71"),
-                    new MultiStructItemCustomView(this, "Unk 72", "Unk_72"),
-                    new MultiStructItemCustomView(this, "Unk 73", "Unk_73"),
-                    new MultiStructItemCustomView(this, "Unk 74", "Unk_74"),
-                    new MultiStructItemCustomView(this, "Unk 75", "Unk_75"),
-                    new MultiStructItemCustomView(this, "Unk 76", "Unk_76"),
+                    new MultiStructItemCustomView(this, "Unk 28", "Unk_28", "Unk_28_offset"),
+                    new MultiStructItemCustomView(this, "Unk 29", "Unk_29", "Unk_29_offset"),
+                    new MultiStructItemCustomView(this, "Unk 30", "Unk_30", "Unk_30_offset"),
+                    new MultiStructItemCustomView(this, "Unk 31", "Unk_31", "Unk_31_offset"),
+                    new MultiStructItemCustomView(this, "Unk 32", "Unk_32", "Unk_32_offset"),
+                    new MultiStructItemCustomView(this, "Unk 33", "Unk_33", "Unk_33_offset"),
+                    new MultiStructItemCustomView(this, "Unk 34", "Unk_34", "Unk_34_offset"),
+                    new MultiStructItemCustomView(this, "Unk 35", "Unk_35", "Unk_35_offset"),
+                    new MultiStructItemCustomView(this, "Unk 36", "Unk_36", "Unk_36_offset"),
+                    new MultiStructItemCustomView(this, "Unk 37", "Unk_37", "Unk_37_offset"),
+                    new MultiStructItemCustomView(this, "Unk 38", "Unk_38", "Unk_38_offset"),
+                    new MultiStructItemCustomView(this, "Unk 39", "Unk_39", "Unk_39_offset"),
+                    new MultiStructItemCustomView(this, "Unk 40", "Unk_40", "Unk_40_offset"),
+                    new MultiStructItemCustomView(this, "Unk 41", "Unk_41", "Unk_41_offset"),
+                    new MultiStructItemCustomView(this, "Unk 42", "Unk_42", "Unk_42_offset"),
+                    new MultiStructItemCustomView(this, "Unk 43", "Unk_43", "Unk_43_offset"),
+                    new MultiStructItemCustomView(this, "Unk 44", "Unk_44", "Unk_44_offset"),
+                    new MultiStructItemCustomView(this, "Unk 45", "Unk_45", "Unk_45_offset"),
+                    new MultiStructItemCustomView(this, "Unk 46", "Unk_46", "Unk_46_offset"),
+                    new MultiStructItemCustomView(this, "Unk 47", "Unk_47", "Unk_47_offset"),
+                    new MultiStructItemCustomView(this, "Unk 48", "Unk_48", "Unk_48_offset"),
+                    new MultiStructItemCustomView(this, "Unk 49", "Unk_49", "Unk_49_offset"),
+                    new MultiStructItemCustomView(this, "Unk 50", "Unk_50", "Unk_50_offset"),
+                    new MultiStructItemCustomView(this, "Unk 51", "Unk_51", "Unk_51_offset"),
+                    new MultiStructItemCustomView(this, "Unk 52", "Unk_52", "Unk_52_offset"),
+                    new MultiStructItemCustomView(this, "Unk 53", "Unk_53", "Unk_53_offset"),
+                    new MultiStructItemCustomView(this, "Unk 54", "Unk_54", "Unk_54_offset"),
+                    new MultiStructItemCustomView(this, "Unk 55", "Unk_55", "Unk_55_offset"),
+                    new MultiStructItemCustomView(this, "Unk 56", "Unk_56", "Unk_56_offset"),
+                    new MultiStructItemCustomView(this, "Unk 57", "Unk_57", "Unk_57_offset"),
+                    new MultiStructItemCustomView(this, "Unk 58", "Unk_58", "Unk_58_offset"),
+                    new MultiStructItemCustomView(this, "Unk 59", "Unk_59", "Unk_59_offset"),
+                    new MultiStructItemCustomView(this, "Unk 60", "Unk_60", "Unk_60_offset"),
+                    new MultiStructItemCustomView(this, "Unk 61", "Unk_61", "Unk_61_offset"),
+                    new MultiStructItemCustomView(this, "Unk 62", "Unk_62", "Unk_62_offset"),
+                    new MultiStructItemCustomView(this, "Unk 63", "Unk_63", "Unk_63_offset"),
+                    new MultiStructItemCustomView(this, "Unk 64", "Unk_64", "Unk_64_offset"),
+                    new MultiStructItemCustomView(this, "Unk 65", "Unk_65", "Unk_65_offset"),
+                    new MultiStructItemCustomView(this, "Unk 66", "Unk_66", "Unk_66_offset"),
+                    new MultiStructItemCustomView(this, "Unk 67", "Unk_67", "Unk_67_offset"),
+                    new MultiStructItemCustomView(this, "Unk 68", "Unk_68", "Unk_68_offset"),
+                    new MultiStructItemCustomView(this, "Unk 69", "Unk_69", "Unk_69_offset"),
+                    new MultiStructItemCustomView(this, "Unk 70", "Unk_70", "Unk_70_offset"),
+                    new MultiStructItemCustomView(this, "Unk 71", "Unk_71", "Unk_71_offset"),
+                    new MultiStructItemCustomView(this, "Unk 72", "Unk_72", "Unk_72_offset"),
+                    new MultiStructItemCustomView(this, "Unk 73", "Unk_73", "Unk_73_offset"),
+                    new MultiStructItemCustomView(this, "Unk 74", "Unk_74", "Unk_74_offset"),
+                    new MultiStructItemCustomView(this, "Unk 75", "Unk_75", "Unk_75_offset"),
+                    new MultiStructItemCustomView(this, "Unk 76", "Unk_76", "Unk_76_offset"),
                 };
             }
         }
@@ -1996,6 +2304,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_77_offset { get; private set; }
+
             protected int Unk_78_raw;
             public const string Unk_78_displayName = "Unk 78";
             public const int Unk_78_sortIndex = 100;
@@ -2010,6 +2321,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_78));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_78_offset { get; private set; }
 
             protected float Unk_79_raw;
             public const string Unk_79_displayName = "Unk 79";
@@ -2026,6 +2340,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_79_offset { get; private set; }
+
             protected float Unk_80_raw;
             public const string Unk_80_displayName = "Unk 80";
             public const int Unk_80_sortIndex = 200;
@@ -2040,6 +2357,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_80));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_80_offset { get; private set; }
 
             protected float Unk_81_raw;
             public const string Unk_81_displayName = "Unk 81";
@@ -2056,6 +2376,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_81_offset { get; private set; }
+
             protected float Unk_82_raw;
             public const string Unk_82_displayName = "Unk 82";
             public const int Unk_82_sortIndex = 300;
@@ -2070,6 +2393,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_82));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_82_offset { get; private set; }
 
             protected float Unk_83_raw;
             public const string Unk_83_displayName = "Unk 83";
@@ -2086,6 +2412,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_83_offset { get; private set; }
+
             protected float Unk_84_raw;
             public const string Unk_84_displayName = "Unk 84";
             public const int Unk_84_sortIndex = 400;
@@ -2100,6 +2429,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_84));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_84_offset { get; private set; }
 
             protected float Unk_85_raw;
             public const string Unk_85_displayName = "Unk 85";
@@ -2116,6 +2448,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_85_offset { get; private set; }
+
             protected float Unk_86_raw;
             public const string Unk_86_displayName = "Unk 86";
             public const int Unk_86_sortIndex = 500;
@@ -2130,6 +2465,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_86));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_86_offset { get; private set; }
 
             protected float Unk_87_raw;
             public const string Unk_87_displayName = "Unk 87";
@@ -2146,6 +2484,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_87_offset { get; private set; }
+
             protected float Unk_88_raw;
             public const string Unk_88_displayName = "Unk 88";
             public const int Unk_88_sortIndex = 600;
@@ -2160,6 +2501,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_88));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_88_offset { get; private set; }
 
             protected float Unk_89_raw;
             public const string Unk_89_displayName = "Unk 89";
@@ -2176,6 +2520,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_89_offset { get; private set; }
+
             protected float Unk_90_raw;
             public const string Unk_90_displayName = "Unk 90";
             public const int Unk_90_sortIndex = 700;
@@ -2191,6 +2538,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_90_offset { get; private set; }
+
             public const int lastSortIndex = 750;
 
             public static ObservableMhwStructCollection<W07p_Params_4_Shared_> LoadData(BinaryReader reader) {
@@ -2205,19 +2555,33 @@ namespace MHW_Editor.Structs.Weapons {
             public static W07p_Params_4_Shared_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W07p_Params_4_Shared_();
                 data.Index = i;
+                data.Unk_77_offset = reader.BaseStream.Position;
                 data.Unk_77_raw = reader.ReadByte();
+                data.Unk_78_offset = reader.BaseStream.Position;
                 data.Unk_78_raw = reader.ReadInt32();
+                data.Unk_79_offset = reader.BaseStream.Position;
                 data.Unk_79_raw = reader.ReadSingle();
+                data.Unk_80_offset = reader.BaseStream.Position;
                 data.Unk_80_raw = reader.ReadSingle();
+                data.Unk_81_offset = reader.BaseStream.Position;
                 data.Unk_81_raw = reader.ReadSingle();
+                data.Unk_82_offset = reader.BaseStream.Position;
                 data.Unk_82_raw = reader.ReadSingle();
+                data.Unk_83_offset = reader.BaseStream.Position;
                 data.Unk_83_raw = reader.ReadSingle();
+                data.Unk_84_offset = reader.BaseStream.Position;
                 data.Unk_84_raw = reader.ReadSingle();
+                data.Unk_85_offset = reader.BaseStream.Position;
                 data.Unk_85_raw = reader.ReadSingle();
+                data.Unk_86_offset = reader.BaseStream.Position;
                 data.Unk_86_raw = reader.ReadSingle();
+                data.Unk_87_offset = reader.BaseStream.Position;
                 data.Unk_87_raw = reader.ReadSingle();
+                data.Unk_88_offset = reader.BaseStream.Position;
                 data.Unk_88_raw = reader.ReadSingle();
+                data.Unk_89_offset = reader.BaseStream.Position;
                 data.Unk_89_raw = reader.ReadSingle();
+                data.Unk_90_offset = reader.BaseStream.Position;
                 data.Unk_90_raw = reader.ReadSingle();
                 return data;
             }
@@ -2241,20 +2605,20 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 77", "Unk_77"),
-                    new MultiStructItemCustomView(this, "Unk 78", "Unk_78"),
-                    new MultiStructItemCustomView(this, "Unk 79", "Unk_79"),
-                    new MultiStructItemCustomView(this, "Unk 80", "Unk_80"),
-                    new MultiStructItemCustomView(this, "Unk 81", "Unk_81"),
-                    new MultiStructItemCustomView(this, "Unk 82", "Unk_82"),
-                    new MultiStructItemCustomView(this, "Unk 83", "Unk_83"),
-                    new MultiStructItemCustomView(this, "Unk 84", "Unk_84"),
-                    new MultiStructItemCustomView(this, "Unk 85", "Unk_85"),
-                    new MultiStructItemCustomView(this, "Unk 86", "Unk_86"),
-                    new MultiStructItemCustomView(this, "Unk 87", "Unk_87"),
-                    new MultiStructItemCustomView(this, "Unk 88", "Unk_88"),
-                    new MultiStructItemCustomView(this, "Unk 89", "Unk_89"),
-                    new MultiStructItemCustomView(this, "Unk 90", "Unk_90"),
+                    new MultiStructItemCustomView(this, "Unk 77", "Unk_77", "Unk_77_offset"),
+                    new MultiStructItemCustomView(this, "Unk 78", "Unk_78", "Unk_78_offset"),
+                    new MultiStructItemCustomView(this, "Unk 79", "Unk_79", "Unk_79_offset"),
+                    new MultiStructItemCustomView(this, "Unk 80", "Unk_80", "Unk_80_offset"),
+                    new MultiStructItemCustomView(this, "Unk 81", "Unk_81", "Unk_81_offset"),
+                    new MultiStructItemCustomView(this, "Unk 82", "Unk_82", "Unk_82_offset"),
+                    new MultiStructItemCustomView(this, "Unk 83", "Unk_83", "Unk_83_offset"),
+                    new MultiStructItemCustomView(this, "Unk 84", "Unk_84", "Unk_84_offset"),
+                    new MultiStructItemCustomView(this, "Unk 85", "Unk_85", "Unk_85_offset"),
+                    new MultiStructItemCustomView(this, "Unk 86", "Unk_86", "Unk_86_offset"),
+                    new MultiStructItemCustomView(this, "Unk 87", "Unk_87", "Unk_87_offset"),
+                    new MultiStructItemCustomView(this, "Unk 88", "Unk_88", "Unk_88_offset"),
+                    new MultiStructItemCustomView(this, "Unk 89", "Unk_89", "Unk_89_offset"),
+                    new MultiStructItemCustomView(this, "Unk 90", "Unk_90", "Unk_90_offset"),
                 };
             }
         }
@@ -2278,6 +2642,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Normal_Shell_offset { get; private set; }
+
             protected uint Wide_Shell_raw;
             public const string Wide_Shell_displayName = "Wide Shell";
             public const int Wide_Shell_sortIndex = 100;
@@ -2292,6 +2659,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Wide_Shell));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wide_Shell_offset { get; private set; }
 
             protected uint Long_Shell_raw;
             public const string Long_Shell_displayName = "Long Shell";
@@ -2308,6 +2678,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Long_Shell_offset { get; private set; }
+
             protected float Shelling_Charge_Delay_Seconds__raw;
             public const string Shelling_Charge_Delay_Seconds__displayName = "Shelling Charge Delay (Seconds)";
             public const int Shelling_Charge_Delay_Seconds__sortIndex = 200;
@@ -2322,6 +2695,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Shelling_Charge_Delay_Seconds_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Shelling_Charge_Delay_Seconds__offset { get; private set; }
 
             protected float Shelling_Charge_Recoil_Distance_Multiplier_raw;
             public const string Shelling_Charge_Recoil_Distance_Multiplier_displayName = "Shelling Charge Recoil Distance Multiplier";
@@ -2338,6 +2714,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Shelling_Charge_Recoil_Distance_Multiplier_offset { get; private set; }
+
             protected float Wyvernfire_Charging_Time_Seconds__raw;
             public const string Wyvernfire_Charging_Time_Seconds__displayName = "Wyvernfire Charging Time (Seconds)";
             public const int Wyvernfire_Charging_Time_Seconds__sortIndex = 300;
@@ -2352,6 +2731,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Wyvernfire_Charging_Time_Seconds_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wyvernfire_Charging_Time_Seconds__offset { get; private set; }
 
             protected float Wyvernfire_Cooldown_Time_Seconds__raw;
             public const string Wyvernfire_Cooldown_Time_Seconds__displayName = "Wyvernfire Cooldown Time (Seconds)";
@@ -2368,6 +2750,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wyvernfire_Cooldown_Time_Seconds__offset { get; private set; }
+
             protected float Unk_98_raw;
             public const string Unk_98_displayName = "Unk 98";
             public const int Unk_98_sortIndex = 400;
@@ -2382,6 +2767,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_98));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_98_offset { get; private set; }
 
             protected float Unk_99_raw;
             public const string Unk_99_displayName = "Unk 99";
@@ -2398,6 +2786,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_99_offset { get; private set; }
+
             protected float Unk_100_raw;
             public const string Unk_100_displayName = "Unk 100";
             public const int Unk_100_sortIndex = 500;
@@ -2412,6 +2803,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_100));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_100_offset { get; private set; }
 
             protected uint Shelling_Count_for_Shelling_N_Times_Wyrmstake_e_g_2_Shelling_Twice_Then_Wyrmstake__raw;
             public const string Shelling_Count_for_Shelling_N_Times_Wyrmstake_e_g_2_Shelling_Twice_Then_Wyrmstake__displayName = "Shelling Count for [Shelling (N Times) -> Wyrmstake] (e.g. 2: Shelling (Twice), Then Wyrmstake)";
@@ -2428,6 +2822,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Shelling_Count_for_Shelling_N_Times_Wyrmstake_e_g_2_Shelling_Twice_Then_Wyrmstake__offset { get; private set; }
+
             protected float Unk_102_raw;
             public const string Unk_102_displayName = "Unk 102";
             public const int Unk_102_sortIndex = 600;
@@ -2442,6 +2839,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_102));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_102_offset { get; private set; }
 
             protected float Unk_103_raw;
             public const string Unk_103_displayName = "Unk 103";
@@ -2458,6 +2858,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_103_offset { get; private set; }
+
             protected float Unk_104_raw;
             public const string Unk_104_displayName = "Unk 104";
             public const int Unk_104_sortIndex = 700;
@@ -2472,6 +2875,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_104));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_104_offset { get; private set; }
 
             protected float Unk_105_raw;
             public const string Unk_105_displayName = "Unk 105";
@@ -2488,6 +2894,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_105_offset { get; private set; }
+
             protected float Unk_106_raw;
             public const string Unk_106_displayName = "Unk 106";
             public const int Unk_106_sortIndex = 800;
@@ -2502,6 +2911,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_106));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_106_offset { get; private set; }
 
             protected float Unk_107_raw;
             public const string Unk_107_displayName = "Unk 107";
@@ -2518,6 +2930,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_107_offset { get; private set; }
+
             protected float Fullburst_Rounds_per_Second_0_05_1200RPM__raw;
             public const string Fullburst_Rounds_per_Second_0_05_1200RPM__displayName = "Fullburst Rounds per Second (0.05 = 1200RPM)";
             public const int Fullburst_Rounds_per_Second_0_05_1200RPM__sortIndex = 900;
@@ -2532,6 +2947,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Fullburst_Rounds_per_Second_0_05_1200RPM_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Fullburst_Rounds_per_Second_0_05_1200RPM__offset { get; private set; }
 
             protected float Unk_109_raw;
             public const string Unk_109_displayName = "Unk 109";
@@ -2548,6 +2966,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_109_offset { get; private set; }
+
             protected float Unk_110_raw;
             public const string Unk_110_displayName = "Unk 110";
             public const int Unk_110_sortIndex = 1000;
@@ -2562,6 +2983,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_110));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_110_offset { get; private set; }
 
             protected float Unk_111_raw;
             public const string Unk_111_displayName = "Unk 111";
@@ -2578,6 +3002,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_111_offset { get; private set; }
+
             protected float Unk_112_raw;
             public const string Unk_112_displayName = "Unk 112";
             public const int Unk_112_sortIndex = 1100;
@@ -2592,6 +3019,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_112));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_112_offset { get; private set; }
 
             protected float Unk_113_raw;
             public const string Unk_113_displayName = "Unk 113";
@@ -2608,6 +3038,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_113_offset { get; private set; }
+
             public const int lastSortIndex = 1200;
 
             public static ObservableMhwStructCollection<W07p_Params_5_Shelling_Params> LoadData(BinaryReader reader) {
@@ -2622,28 +3055,51 @@ namespace MHW_Editor.Structs.Weapons {
             public static W07p_Params_5_Shelling_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new W07p_Params_5_Shelling_Params();
                 data.Index = i;
+                data.Normal_Shell_offset = reader.BaseStream.Position;
                 data.Normal_Shell_raw = reader.ReadUInt32();
+                data.Wide_Shell_offset = reader.BaseStream.Position;
                 data.Wide_Shell_raw = reader.ReadUInt32();
+                data.Long_Shell_offset = reader.BaseStream.Position;
                 data.Long_Shell_raw = reader.ReadUInt32();
+                data.Shelling_Charge_Delay_Seconds__offset = reader.BaseStream.Position;
                 data.Shelling_Charge_Delay_Seconds__raw = reader.ReadSingle();
+                data.Shelling_Charge_Recoil_Distance_Multiplier_offset = reader.BaseStream.Position;
                 data.Shelling_Charge_Recoil_Distance_Multiplier_raw = reader.ReadSingle();
+                data.Wyvernfire_Charging_Time_Seconds__offset = reader.BaseStream.Position;
                 data.Wyvernfire_Charging_Time_Seconds__raw = reader.ReadSingle();
+                data.Wyvernfire_Cooldown_Time_Seconds__offset = reader.BaseStream.Position;
                 data.Wyvernfire_Cooldown_Time_Seconds__raw = reader.ReadSingle();
+                data.Unk_98_offset = reader.BaseStream.Position;
                 data.Unk_98_raw = reader.ReadSingle();
+                data.Unk_99_offset = reader.BaseStream.Position;
                 data.Unk_99_raw = reader.ReadSingle();
+                data.Unk_100_offset = reader.BaseStream.Position;
                 data.Unk_100_raw = reader.ReadSingle();
+                data.Shelling_Count_for_Shelling_N_Times_Wyrmstake_e_g_2_Shelling_Twice_Then_Wyrmstake__offset = reader.BaseStream.Position;
                 data.Shelling_Count_for_Shelling_N_Times_Wyrmstake_e_g_2_Shelling_Twice_Then_Wyrmstake__raw = reader.ReadUInt32();
+                data.Unk_102_offset = reader.BaseStream.Position;
                 data.Unk_102_raw = reader.ReadSingle();
+                data.Unk_103_offset = reader.BaseStream.Position;
                 data.Unk_103_raw = reader.ReadSingle();
+                data.Unk_104_offset = reader.BaseStream.Position;
                 data.Unk_104_raw = reader.ReadSingle();
+                data.Unk_105_offset = reader.BaseStream.Position;
                 data.Unk_105_raw = reader.ReadSingle();
+                data.Unk_106_offset = reader.BaseStream.Position;
                 data.Unk_106_raw = reader.ReadSingle();
+                data.Unk_107_offset = reader.BaseStream.Position;
                 data.Unk_107_raw = reader.ReadSingle();
+                data.Fullburst_Rounds_per_Second_0_05_1200RPM__offset = reader.BaseStream.Position;
                 data.Fullburst_Rounds_per_Second_0_05_1200RPM__raw = reader.ReadSingle();
+                data.Unk_109_offset = reader.BaseStream.Position;
                 data.Unk_109_raw = reader.ReadSingle();
+                data.Unk_110_offset = reader.BaseStream.Position;
                 data.Unk_110_raw = reader.ReadSingle();
+                data.Unk_111_offset = reader.BaseStream.Position;
                 data.Unk_111_raw = reader.ReadSingle();
+                data.Unk_112_offset = reader.BaseStream.Position;
                 data.Unk_112_raw = reader.ReadSingle();
+                data.Unk_113_offset = reader.BaseStream.Position;
                 data.Unk_113_raw = reader.ReadSingle();
                 return data;
             }
@@ -2676,29 +3132,29 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Normal Shell", "Normal_Shell"),
-                    new MultiStructItemCustomView(this, "Wide Shell", "Wide_Shell"),
-                    new MultiStructItemCustomView(this, "Long Shell", "Long_Shell"),
-                    new MultiStructItemCustomView(this, "Shelling Charge Delay (Seconds)", "Shelling_Charge_Delay_Seconds_"),
-                    new MultiStructItemCustomView(this, "Shelling Charge Recoil Distance Multiplier", "Shelling_Charge_Recoil_Distance_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wyvernfire Charging Time (Seconds)", "Wyvernfire_Charging_Time_Seconds_"),
-                    new MultiStructItemCustomView(this, "Wyvernfire Cooldown Time (Seconds)", "Wyvernfire_Cooldown_Time_Seconds_"),
-                    new MultiStructItemCustomView(this, "Unk 98", "Unk_98"),
-                    new MultiStructItemCustomView(this, "Unk 99", "Unk_99"),
-                    new MultiStructItemCustomView(this, "Unk 100", "Unk_100"),
-                    new MultiStructItemCustomView(this, "Shelling Count for [Shelling (N Times) -> Wyrmstake] (e.g. 2: Shelling (Twice), Then Wyrmstake)", "Shelling_Count_for_Shelling_N_Times_Wyrmstake_e_g_2_Shelling_Twice_Then_Wyrmstake_"),
-                    new MultiStructItemCustomView(this, "Unk 102", "Unk_102"),
-                    new MultiStructItemCustomView(this, "Unk 103", "Unk_103"),
-                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104"),
-                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105"),
-                    new MultiStructItemCustomView(this, "Unk 106", "Unk_106"),
-                    new MultiStructItemCustomView(this, "Unk 107", "Unk_107"),
-                    new MultiStructItemCustomView(this, "Fullburst Rounds per Second (0.05 = 1200RPM)", "Fullburst_Rounds_per_Second_0_05_1200RPM_"),
-                    new MultiStructItemCustomView(this, "Unk 109", "Unk_109"),
-                    new MultiStructItemCustomView(this, "Unk 110", "Unk_110"),
-                    new MultiStructItemCustomView(this, "Unk 111", "Unk_111"),
-                    new MultiStructItemCustomView(this, "Unk 112", "Unk_112"),
-                    new MultiStructItemCustomView(this, "Unk 113", "Unk_113"),
+                    new MultiStructItemCustomView(this, "Normal Shell", "Normal_Shell", "Normal_Shell_offset"),
+                    new MultiStructItemCustomView(this, "Wide Shell", "Wide_Shell", "Wide_Shell_offset"),
+                    new MultiStructItemCustomView(this, "Long Shell", "Long_Shell", "Long_Shell_offset"),
+                    new MultiStructItemCustomView(this, "Shelling Charge Delay (Seconds)", "Shelling_Charge_Delay_Seconds_", "Shelling_Charge_Delay_Seconds__offset"),
+                    new MultiStructItemCustomView(this, "Shelling Charge Recoil Distance Multiplier", "Shelling_Charge_Recoil_Distance_Multiplier", "Shelling_Charge_Recoil_Distance_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernfire Charging Time (Seconds)", "Wyvernfire_Charging_Time_Seconds_", "Wyvernfire_Charging_Time_Seconds__offset"),
+                    new MultiStructItemCustomView(this, "Wyvernfire Cooldown Time (Seconds)", "Wyvernfire_Cooldown_Time_Seconds_", "Wyvernfire_Cooldown_Time_Seconds__offset"),
+                    new MultiStructItemCustomView(this, "Unk 98", "Unk_98", "Unk_98_offset"),
+                    new MultiStructItemCustomView(this, "Unk 99", "Unk_99", "Unk_99_offset"),
+                    new MultiStructItemCustomView(this, "Unk 100", "Unk_100", "Unk_100_offset"),
+                    new MultiStructItemCustomView(this, "Shelling Count for [Shelling (N Times) -> Wyrmstake] (e.g. 2: Shelling (Twice), Then Wyrmstake)", "Shelling_Count_for_Shelling_N_Times_Wyrmstake_e_g_2_Shelling_Twice_Then_Wyrmstake_", "Shelling_Count_for_Shelling_N_Times_Wyrmstake_e_g_2_Shelling_Twice_Then_Wyrmstake__offset"),
+                    new MultiStructItemCustomView(this, "Unk 102", "Unk_102", "Unk_102_offset"),
+                    new MultiStructItemCustomView(this, "Unk 103", "Unk_103", "Unk_103_offset"),
+                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104", "Unk_104_offset"),
+                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105", "Unk_105_offset"),
+                    new MultiStructItemCustomView(this, "Unk 106", "Unk_106", "Unk_106_offset"),
+                    new MultiStructItemCustomView(this, "Unk 107", "Unk_107", "Unk_107_offset"),
+                    new MultiStructItemCustomView(this, "Fullburst Rounds per Second (0.05 = 1200RPM)", "Fullburst_Rounds_per_Second_0_05_1200RPM_", "Fullburst_Rounds_per_Second_0_05_1200RPM__offset"),
+                    new MultiStructItemCustomView(this, "Unk 109", "Unk_109", "Unk_109_offset"),
+                    new MultiStructItemCustomView(this, "Unk 110", "Unk_110", "Unk_110_offset"),
+                    new MultiStructItemCustomView(this, "Unk 111", "Unk_111", "Unk_111_offset"),
+                    new MultiStructItemCustomView(this, "Unk 112", "Unk_112", "Unk_112_offset"),
+                    new MultiStructItemCustomView(this, "Unk 113", "Unk_113", "Unk_113_offset"),
                 };
             }
         }
@@ -2726,6 +3182,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Shell_Damage_1_offset { get; private set; }
+
                 protected float Shell_Damage_2_raw;
                 public const string Shell_Damage_2_displayName = "Shell Damage 2";
                 public const int Shell_Damage_2_sortIndex = 100;
@@ -2740,6 +3199,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Shell_Damage_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Shell_Damage_2_offset { get; private set; }
 
                 protected float Shell_Damage_3_raw;
                 public const string Shell_Damage_3_displayName = "Shell Damage 3";
@@ -2756,6 +3218,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Shell_Damage_3_offset { get; private set; }
+
                 protected float Shell_Damage_4_raw;
                 public const string Shell_Damage_4_displayName = "Shell Damage 4";
                 public const int Shell_Damage_4_sortIndex = 200;
@@ -2770,6 +3235,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Shell_Damage_4));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Shell_Damage_4_offset { get; private set; }
 
                 protected float Shell_Damage_5_raw;
                 public const string Shell_Damage_5_displayName = "Shell Damage 5";
@@ -2786,6 +3254,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Shell_Damage_5_offset { get; private set; }
+
                 protected float Shell_Damage_6_raw;
                 public const string Shell_Damage_6_displayName = "Shell Damage 6";
                 public const int Shell_Damage_6_sortIndex = 300;
@@ -2800,6 +3271,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Shell_Damage_6));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Shell_Damage_6_offset { get; private set; }
 
                 protected float Shell_Damage_7_raw;
                 public const string Shell_Damage_7_displayName = "Shell Damage 7";
@@ -2816,6 +3290,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Shell_Damage_7_offset { get; private set; }
+
                 public const int lastSortIndex = 400;
 
                 public static ObservableMhwStructCollection<Shell_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
@@ -2830,12 +3307,19 @@ namespace MHW_Editor.Structs.Weapons {
                 public static Shell_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
                     var data = new Shell_Damage();
                     data.Index = i;
+                    data.Shell_Damage_1_offset = reader.BaseStream.Position;
                     data.Shell_Damage_1_raw = reader.ReadSingle();
+                    data.Shell_Damage_2_offset = reader.BaseStream.Position;
                     data.Shell_Damage_2_raw = reader.ReadSingle();
+                    data.Shell_Damage_3_offset = reader.BaseStream.Position;
                     data.Shell_Damage_3_raw = reader.ReadSingle();
+                    data.Shell_Damage_4_offset = reader.BaseStream.Position;
                     data.Shell_Damage_4_raw = reader.ReadSingle();
+                    data.Shell_Damage_5_offset = reader.BaseStream.Position;
                     data.Shell_Damage_5_raw = reader.ReadSingle();
+                    data.Shell_Damage_6_offset = reader.BaseStream.Position;
                     data.Shell_Damage_6_raw = reader.ReadSingle();
+                    data.Shell_Damage_7_offset = reader.BaseStream.Position;
                     data.Shell_Damage_7_raw = reader.ReadSingle();
                     return data;
                 }
@@ -2852,13 +3336,13 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Shell Damage 1", "Shell_Damage_1"),
-                        new MultiStructItemCustomView(this, "Shell Damage 2", "Shell_Damage_2"),
-                        new MultiStructItemCustomView(this, "Shell Damage 3", "Shell_Damage_3"),
-                        new MultiStructItemCustomView(this, "Shell Damage 4", "Shell_Damage_4"),
-                        new MultiStructItemCustomView(this, "Shell Damage 5", "Shell_Damage_5"),
-                        new MultiStructItemCustomView(this, "Shell Damage 6", "Shell_Damage_6"),
-                        new MultiStructItemCustomView(this, "Shell Damage 7", "Shell_Damage_7"),
+                        new MultiStructItemCustomView(this, "Shell Damage 1", "Shell_Damage_1", "Shell_Damage_1_offset"),
+                        new MultiStructItemCustomView(this, "Shell Damage 2", "Shell_Damage_2", "Shell_Damage_2_offset"),
+                        new MultiStructItemCustomView(this, "Shell Damage 3", "Shell_Damage_3", "Shell_Damage_3_offset"),
+                        new MultiStructItemCustomView(this, "Shell Damage 4", "Shell_Damage_4", "Shell_Damage_4_offset"),
+                        new MultiStructItemCustomView(this, "Shell Damage 5", "Shell_Damage_5", "Shell_Damage_5_offset"),
+                        new MultiStructItemCustomView(this, "Shell Damage 6", "Shell_Damage_6", "Shell_Damage_6_offset"),
+                        new MultiStructItemCustomView(this, "Shell Damage 7", "Shell_Damage_7", "Shell_Damage_7_offset"),
                     };
                 }
             }
@@ -2888,6 +3372,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Shell_Fire_Damage_1_offset { get; private set; }
+
                 protected float Shell_Fire_Damage_2_raw;
                 public const string Shell_Fire_Damage_2_displayName = "Shell Fire Damage 2";
                 public const int Shell_Fire_Damage_2_sortIndex = 100;
@@ -2902,6 +3389,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Shell_Fire_Damage_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Shell_Fire_Damage_2_offset { get; private set; }
 
                 protected float Shell_Fire_Damage_3_raw;
                 public const string Shell_Fire_Damage_3_displayName = "Shell Fire Damage 3";
@@ -2918,6 +3408,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Shell_Fire_Damage_3_offset { get; private set; }
+
                 protected float Shell_Fire_Damage_4_raw;
                 public const string Shell_Fire_Damage_4_displayName = "Shell Fire Damage 4";
                 public const int Shell_Fire_Damage_4_sortIndex = 200;
@@ -2932,6 +3425,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Shell_Fire_Damage_4));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Shell_Fire_Damage_4_offset { get; private set; }
 
                 protected float Shell_Fire_Damage_5_raw;
                 public const string Shell_Fire_Damage_5_displayName = "Shell Fire Damage 5";
@@ -2948,6 +3444,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Shell_Fire_Damage_5_offset { get; private set; }
+
                 protected float Shell_Fire_Damage_6_raw;
                 public const string Shell_Fire_Damage_6_displayName = "Shell Fire Damage 6";
                 public const int Shell_Fire_Damage_6_sortIndex = 300;
@@ -2962,6 +3461,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Shell_Fire_Damage_6));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Shell_Fire_Damage_6_offset { get; private set; }
 
                 protected float Shell_Fire_Damage_7_raw;
                 public const string Shell_Fire_Damage_7_displayName = "Shell Fire Damage 7";
@@ -2978,6 +3480,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Shell_Fire_Damage_7_offset { get; private set; }
+
                 public const int lastSortIndex = 400;
 
                 public static ObservableMhwStructCollection<Shell_Fire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
@@ -2992,12 +3497,19 @@ namespace MHW_Editor.Structs.Weapons {
                 public static Shell_Fire_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
                     var data = new Shell_Fire_Damage();
                     data.Index = i;
+                    data.Shell_Fire_Damage_1_offset = reader.BaseStream.Position;
                     data.Shell_Fire_Damage_1_raw = reader.ReadSingle();
+                    data.Shell_Fire_Damage_2_offset = reader.BaseStream.Position;
                     data.Shell_Fire_Damage_2_raw = reader.ReadSingle();
+                    data.Shell_Fire_Damage_3_offset = reader.BaseStream.Position;
                     data.Shell_Fire_Damage_3_raw = reader.ReadSingle();
+                    data.Shell_Fire_Damage_4_offset = reader.BaseStream.Position;
                     data.Shell_Fire_Damage_4_raw = reader.ReadSingle();
+                    data.Shell_Fire_Damage_5_offset = reader.BaseStream.Position;
                     data.Shell_Fire_Damage_5_raw = reader.ReadSingle();
+                    data.Shell_Fire_Damage_6_offset = reader.BaseStream.Position;
                     data.Shell_Fire_Damage_6_raw = reader.ReadSingle();
+                    data.Shell_Fire_Damage_7_offset = reader.BaseStream.Position;
                     data.Shell_Fire_Damage_7_raw = reader.ReadSingle();
                     return data;
                 }
@@ -3014,13 +3526,13 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Shell Fire Damage 1", "Shell_Fire_Damage_1"),
-                        new MultiStructItemCustomView(this, "Shell Fire Damage 2", "Shell_Fire_Damage_2"),
-                        new MultiStructItemCustomView(this, "Shell Fire Damage 3", "Shell_Fire_Damage_3"),
-                        new MultiStructItemCustomView(this, "Shell Fire Damage 4", "Shell_Fire_Damage_4"),
-                        new MultiStructItemCustomView(this, "Shell Fire Damage 5", "Shell_Fire_Damage_5"),
-                        new MultiStructItemCustomView(this, "Shell Fire Damage 6", "Shell_Fire_Damage_6"),
-                        new MultiStructItemCustomView(this, "Shell Fire Damage 7", "Shell_Fire_Damage_7"),
+                        new MultiStructItemCustomView(this, "Shell Fire Damage 1", "Shell_Fire_Damage_1", "Shell_Fire_Damage_1_offset"),
+                        new MultiStructItemCustomView(this, "Shell Fire Damage 2", "Shell_Fire_Damage_2", "Shell_Fire_Damage_2_offset"),
+                        new MultiStructItemCustomView(this, "Shell Fire Damage 3", "Shell_Fire_Damage_3", "Shell_Fire_Damage_3_offset"),
+                        new MultiStructItemCustomView(this, "Shell Fire Damage 4", "Shell_Fire_Damage_4", "Shell_Fire_Damage_4_offset"),
+                        new MultiStructItemCustomView(this, "Shell Fire Damage 5", "Shell_Fire_Damage_5", "Shell_Fire_Damage_5_offset"),
+                        new MultiStructItemCustomView(this, "Shell Fire Damage 6", "Shell_Fire_Damage_6", "Shell_Fire_Damage_6_offset"),
+                        new MultiStructItemCustomView(this, "Shell Fire Damage 7", "Shell_Fire_Damage_7", "Shell_Fire_Damage_7_offset"),
                     };
                 }
             }
@@ -3095,6 +3607,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyvernfire_Damage_1_offset { get; private set; }
+
                 protected float Wyvernfire_Damage_2_raw;
                 public const string Wyvernfire_Damage_2_displayName = "Wyvernfire Damage 2";
                 public const int Wyvernfire_Damage_2_sortIndex = 100;
@@ -3109,6 +3624,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyvernfire_Damage_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyvernfire_Damage_2_offset { get; private set; }
 
                 protected float Wyvernfire_Damage_3_raw;
                 public const string Wyvernfire_Damage_3_displayName = "Wyvernfire Damage 3";
@@ -3125,6 +3643,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyvernfire_Damage_3_offset { get; private set; }
+
                 protected float Wyvernfire_Damage_4_raw;
                 public const string Wyvernfire_Damage_4_displayName = "Wyvernfire Damage 4";
                 public const int Wyvernfire_Damage_4_sortIndex = 200;
@@ -3139,6 +3660,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyvernfire_Damage_4));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyvernfire_Damage_4_offset { get; private set; }
 
                 protected float Wyvernfire_Damage_5_raw;
                 public const string Wyvernfire_Damage_5_displayName = "Wyvernfire Damage 5";
@@ -3155,6 +3679,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyvernfire_Damage_5_offset { get; private set; }
+
                 protected float Wyvernfire_Damage_6_raw;
                 public const string Wyvernfire_Damage_6_displayName = "Wyvernfire Damage 6";
                 public const int Wyvernfire_Damage_6_sortIndex = 300;
@@ -3169,6 +3696,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyvernfire_Damage_6));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyvernfire_Damage_6_offset { get; private set; }
 
                 protected float Wyvernfire_Damage_7_raw;
                 public const string Wyvernfire_Damage_7_displayName = "Wyvernfire Damage 7";
@@ -3185,6 +3715,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyvernfire_Damage_7_offset { get; private set; }
+
                 public const int lastSortIndex = 400;
 
                 public static ObservableMhwStructCollection<Wyvernfire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
@@ -3199,12 +3732,19 @@ namespace MHW_Editor.Structs.Weapons {
                 public static Wyvernfire_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
                     var data = new Wyvernfire_Damage();
                     data.Index = i;
+                    data.Wyvernfire_Damage_1_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Damage_1_raw = reader.ReadSingle();
+                    data.Wyvernfire_Damage_2_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Damage_2_raw = reader.ReadSingle();
+                    data.Wyvernfire_Damage_3_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Damage_3_raw = reader.ReadSingle();
+                    data.Wyvernfire_Damage_4_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Damage_4_raw = reader.ReadSingle();
+                    data.Wyvernfire_Damage_5_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Damage_5_raw = reader.ReadSingle();
+                    data.Wyvernfire_Damage_6_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Damage_6_raw = reader.ReadSingle();
+                    data.Wyvernfire_Damage_7_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Damage_7_raw = reader.ReadSingle();
                     return data;
                 }
@@ -3221,13 +3761,13 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Wyvernfire Damage 1", "Wyvernfire_Damage_1"),
-                        new MultiStructItemCustomView(this, "Wyvernfire Damage 2", "Wyvernfire_Damage_2"),
-                        new MultiStructItemCustomView(this, "Wyvernfire Damage 3", "Wyvernfire_Damage_3"),
-                        new MultiStructItemCustomView(this, "Wyvernfire Damage 4", "Wyvernfire_Damage_4"),
-                        new MultiStructItemCustomView(this, "Wyvernfire Damage 5", "Wyvernfire_Damage_5"),
-                        new MultiStructItemCustomView(this, "Wyvernfire Damage 6", "Wyvernfire_Damage_6"),
-                        new MultiStructItemCustomView(this, "Wyvernfire Damage 7", "Wyvernfire_Damage_7"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Damage 1", "Wyvernfire_Damage_1", "Wyvernfire_Damage_1_offset"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Damage 2", "Wyvernfire_Damage_2", "Wyvernfire_Damage_2_offset"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Damage 3", "Wyvernfire_Damage_3", "Wyvernfire_Damage_3_offset"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Damage 4", "Wyvernfire_Damage_4", "Wyvernfire_Damage_4_offset"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Damage 5", "Wyvernfire_Damage_5", "Wyvernfire_Damage_5_offset"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Damage 6", "Wyvernfire_Damage_6", "Wyvernfire_Damage_6_offset"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Damage 7", "Wyvernfire_Damage_7", "Wyvernfire_Damage_7_offset"),
                     };
                 }
             }
@@ -3257,6 +3797,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyvernfire_Fire_Damage_1_offset { get; private set; }
+
                 protected float Wyvernfire_Fire_Damage_2_raw;
                 public const string Wyvernfire_Fire_Damage_2_displayName = "Wyvernfire Fire Damage 2";
                 public const int Wyvernfire_Fire_Damage_2_sortIndex = 100;
@@ -3271,6 +3814,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyvernfire_Fire_Damage_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyvernfire_Fire_Damage_2_offset { get; private set; }
 
                 protected float Wyvernfire_Fire_Damage_3_raw;
                 public const string Wyvernfire_Fire_Damage_3_displayName = "Wyvernfire Fire Damage 3";
@@ -3287,6 +3833,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyvernfire_Fire_Damage_3_offset { get; private set; }
+
                 protected float Wyvernfire_Fire_Damage_4_raw;
                 public const string Wyvernfire_Fire_Damage_4_displayName = "Wyvernfire Fire Damage 4";
                 public const int Wyvernfire_Fire_Damage_4_sortIndex = 200;
@@ -3301,6 +3850,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyvernfire_Fire_Damage_4));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyvernfire_Fire_Damage_4_offset { get; private set; }
 
                 protected float Wyvernfire_Fire_Damage_5_raw;
                 public const string Wyvernfire_Fire_Damage_5_displayName = "Wyvernfire Fire Damage 5";
@@ -3317,6 +3869,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyvernfire_Fire_Damage_5_offset { get; private set; }
+
                 protected float Wyvernfire_Fire_Damage_6_raw;
                 public const string Wyvernfire_Fire_Damage_6_displayName = "Wyvernfire Fire Damage 6";
                 public const int Wyvernfire_Fire_Damage_6_sortIndex = 300;
@@ -3331,6 +3886,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyvernfire_Fire_Damage_6));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyvernfire_Fire_Damage_6_offset { get; private set; }
 
                 protected float Wyvernfire_Fire_Damage_7_raw;
                 public const string Wyvernfire_Fire_Damage_7_displayName = "Wyvernfire Fire Damage 7";
@@ -3347,6 +3905,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyvernfire_Fire_Damage_7_offset { get; private set; }
+
                 public const int lastSortIndex = 400;
 
                 public static ObservableMhwStructCollection<Wyvernfire_Fire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
@@ -3361,12 +3922,19 @@ namespace MHW_Editor.Structs.Weapons {
                 public static Wyvernfire_Fire_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
                     var data = new Wyvernfire_Fire_Damage();
                     data.Index = i;
+                    data.Wyvernfire_Fire_Damage_1_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Fire_Damage_1_raw = reader.ReadSingle();
+                    data.Wyvernfire_Fire_Damage_2_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Fire_Damage_2_raw = reader.ReadSingle();
+                    data.Wyvernfire_Fire_Damage_3_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Fire_Damage_3_raw = reader.ReadSingle();
+                    data.Wyvernfire_Fire_Damage_4_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Fire_Damage_4_raw = reader.ReadSingle();
+                    data.Wyvernfire_Fire_Damage_5_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Fire_Damage_5_raw = reader.ReadSingle();
+                    data.Wyvernfire_Fire_Damage_6_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Fire_Damage_6_raw = reader.ReadSingle();
+                    data.Wyvernfire_Fire_Damage_7_offset = reader.BaseStream.Position;
                     data.Wyvernfire_Fire_Damage_7_raw = reader.ReadSingle();
                     return data;
                 }
@@ -3383,13 +3951,13 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 1", "Wyvernfire_Fire_Damage_1"),
-                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 2", "Wyvernfire_Fire_Damage_2"),
-                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 3", "Wyvernfire_Fire_Damage_3"),
-                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 4", "Wyvernfire_Fire_Damage_4"),
-                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 5", "Wyvernfire_Fire_Damage_5"),
-                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 6", "Wyvernfire_Fire_Damage_6"),
-                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 7", "Wyvernfire_Fire_Damage_7"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 1", "Wyvernfire_Fire_Damage_1", "Wyvernfire_Fire_Damage_1_offset"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 2", "Wyvernfire_Fire_Damage_2", "Wyvernfire_Fire_Damage_2_offset"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 3", "Wyvernfire_Fire_Damage_3", "Wyvernfire_Fire_Damage_3_offset"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 4", "Wyvernfire_Fire_Damage_4", "Wyvernfire_Fire_Damage_4_offset"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 5", "Wyvernfire_Fire_Damage_5", "Wyvernfire_Fire_Damage_5_offset"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 6", "Wyvernfire_Fire_Damage_6", "Wyvernfire_Fire_Damage_6_offset"),
+                        new MultiStructItemCustomView(this, "Wyvernfire Fire Damage 7", "Wyvernfire_Fire_Damage_7", "Wyvernfire_Fire_Damage_7_offset"),
                     };
                 }
             }
@@ -3419,6 +3987,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Tick_Raw_Damage_1_offset { get; private set; }
+
                 protected float Wyrmstake_Tick_Raw_Damage_2_raw;
                 public const string Wyrmstake_Tick_Raw_Damage_2_displayName = "Wyrmstake Tick Raw Damage 2";
                 public const int Wyrmstake_Tick_Raw_Damage_2_sortIndex = 100;
@@ -3433,6 +4004,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyrmstake_Tick_Raw_Damage_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyrmstake_Tick_Raw_Damage_2_offset { get; private set; }
 
                 protected float Wyrmstake_Tick_Raw_Damage_3_raw;
                 public const string Wyrmstake_Tick_Raw_Damage_3_displayName = "Wyrmstake Tick Raw Damage 3";
@@ -3449,6 +4023,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Tick_Raw_Damage_3_offset { get; private set; }
+
                 protected float Wyrmstake_Tick_Raw_Damage_4_raw;
                 public const string Wyrmstake_Tick_Raw_Damage_4_displayName = "Wyrmstake Tick Raw Damage 4";
                 public const int Wyrmstake_Tick_Raw_Damage_4_sortIndex = 200;
@@ -3463,6 +4040,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyrmstake_Tick_Raw_Damage_4));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyrmstake_Tick_Raw_Damage_4_offset { get; private set; }
 
                 protected float Wyrmstake_Tick_Raw_Damage_5_raw;
                 public const string Wyrmstake_Tick_Raw_Damage_5_displayName = "Wyrmstake Tick Raw Damage 5";
@@ -3479,6 +4059,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Tick_Raw_Damage_5_offset { get; private set; }
+
                 protected float Wyrmstake_Tick_Raw_Damage_6_raw;
                 public const string Wyrmstake_Tick_Raw_Damage_6_displayName = "Wyrmstake Tick Raw Damage 6";
                 public const int Wyrmstake_Tick_Raw_Damage_6_sortIndex = 300;
@@ -3493,6 +4076,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyrmstake_Tick_Raw_Damage_6));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyrmstake_Tick_Raw_Damage_6_offset { get; private set; }
 
                 protected float Wyrmstake_Tick_Raw_Damage_7_raw;
                 public const string Wyrmstake_Tick_Raw_Damage_7_displayName = "Wyrmstake Tick Raw Damage 7";
@@ -3509,6 +4095,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Tick_Raw_Damage_7_offset { get; private set; }
+
                 public const int lastSortIndex = 400;
 
                 public static ObservableMhwStructCollection<Wyrmstake_Tick_Raw_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
@@ -3523,12 +4112,19 @@ namespace MHW_Editor.Structs.Weapons {
                 public static Wyrmstake_Tick_Raw_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
                     var data = new Wyrmstake_Tick_Raw_Damage();
                     data.Index = i;
+                    data.Wyrmstake_Tick_Raw_Damage_1_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Tick_Raw_Damage_1_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_2_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Tick_Raw_Damage_2_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_3_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Tick_Raw_Damage_3_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_4_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Tick_Raw_Damage_4_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_5_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Tick_Raw_Damage_5_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_6_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Tick_Raw_Damage_6_raw = reader.ReadSingle();
+                    data.Wyrmstake_Tick_Raw_Damage_7_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Tick_Raw_Damage_7_raw = reader.ReadSingle();
                     return data;
                 }
@@ -3545,13 +4141,13 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 1", "Wyrmstake_Tick_Raw_Damage_1"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 2", "Wyrmstake_Tick_Raw_Damage_2"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 3", "Wyrmstake_Tick_Raw_Damage_3"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 4", "Wyrmstake_Tick_Raw_Damage_4"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 5", "Wyrmstake_Tick_Raw_Damage_5"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 6", "Wyrmstake_Tick_Raw_Damage_6"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 7", "Wyrmstake_Tick_Raw_Damage_7"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 1", "Wyrmstake_Tick_Raw_Damage_1", "Wyrmstake_Tick_Raw_Damage_1_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 2", "Wyrmstake_Tick_Raw_Damage_2", "Wyrmstake_Tick_Raw_Damage_2_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 3", "Wyrmstake_Tick_Raw_Damage_3", "Wyrmstake_Tick_Raw_Damage_3_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 4", "Wyrmstake_Tick_Raw_Damage_4", "Wyrmstake_Tick_Raw_Damage_4_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 5", "Wyrmstake_Tick_Raw_Damage_5", "Wyrmstake_Tick_Raw_Damage_5_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 6", "Wyrmstake_Tick_Raw_Damage_6", "Wyrmstake_Tick_Raw_Damage_6_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Tick Raw Damage 7", "Wyrmstake_Tick_Raw_Damage_7", "Wyrmstake_Tick_Raw_Damage_7_offset"),
                     };
                 }
             }
@@ -3581,6 +4177,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fixed_Blast_Damage_1_offset { get; private set; }
+
                 protected float Wyrmstake_Fixed_Blast_Damage_2_raw;
                 public const string Wyrmstake_Fixed_Blast_Damage_2_displayName = "Wyrmstake Fixed Blast Damage 2";
                 public const int Wyrmstake_Fixed_Blast_Damage_2_sortIndex = 100;
@@ -3595,6 +4194,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyrmstake_Fixed_Blast_Damage_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fixed_Blast_Damage_2_offset { get; private set; }
 
                 protected float Wyrmstake_Fixed_Blast_Damage_3_raw;
                 public const string Wyrmstake_Fixed_Blast_Damage_3_displayName = "Wyrmstake Fixed Blast Damage 3";
@@ -3611,6 +4213,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fixed_Blast_Damage_3_offset { get; private set; }
+
                 protected float Wyrmstake_Fixed_Blast_Damage_4_raw;
                 public const string Wyrmstake_Fixed_Blast_Damage_4_displayName = "Wyrmstake Fixed Blast Damage 4";
                 public const int Wyrmstake_Fixed_Blast_Damage_4_sortIndex = 200;
@@ -3625,6 +4230,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyrmstake_Fixed_Blast_Damage_4));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fixed_Blast_Damage_4_offset { get; private set; }
 
                 protected float Wyrmstake_Fixed_Blast_Damage_5_raw;
                 public const string Wyrmstake_Fixed_Blast_Damage_5_displayName = "Wyrmstake Fixed Blast Damage 5";
@@ -3641,6 +4249,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fixed_Blast_Damage_5_offset { get; private set; }
+
                 protected float Wyrmstake_Fixed_Blast_Damage_6_raw;
                 public const string Wyrmstake_Fixed_Blast_Damage_6_displayName = "Wyrmstake Fixed Blast Damage 6";
                 public const int Wyrmstake_Fixed_Blast_Damage_6_sortIndex = 300;
@@ -3655,6 +4266,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyrmstake_Fixed_Blast_Damage_6));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fixed_Blast_Damage_6_offset { get; private set; }
 
                 protected float Wyrmstake_Fixed_Blast_Damage_7_raw;
                 public const string Wyrmstake_Fixed_Blast_Damage_7_displayName = "Wyrmstake Fixed Blast Damage 7";
@@ -3671,6 +4285,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fixed_Blast_Damage_7_offset { get; private set; }
+
                 public const int lastSortIndex = 400;
 
                 public static ObservableMhwStructCollection<Wyrmstake_Fixed_Blast_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
@@ -3685,12 +4302,19 @@ namespace MHW_Editor.Structs.Weapons {
                 public static Wyrmstake_Fixed_Blast_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
                     var data = new Wyrmstake_Fixed_Blast_Damage();
                     data.Index = i;
+                    data.Wyrmstake_Fixed_Blast_Damage_1_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fixed_Blast_Damage_1_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_2_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fixed_Blast_Damage_2_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_3_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fixed_Blast_Damage_3_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_4_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fixed_Blast_Damage_4_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_5_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fixed_Blast_Damage_5_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_6_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fixed_Blast_Damage_6_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fixed_Blast_Damage_7_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fixed_Blast_Damage_7_raw = reader.ReadSingle();
                     return data;
                 }
@@ -3707,13 +4331,13 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 1", "Wyrmstake_Fixed_Blast_Damage_1"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 2", "Wyrmstake_Fixed_Blast_Damage_2"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 3", "Wyrmstake_Fixed_Blast_Damage_3"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 4", "Wyrmstake_Fixed_Blast_Damage_4"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 5", "Wyrmstake_Fixed_Blast_Damage_5"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 6", "Wyrmstake_Fixed_Blast_Damage_6"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 7", "Wyrmstake_Fixed_Blast_Damage_7"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 1", "Wyrmstake_Fixed_Blast_Damage_1", "Wyrmstake_Fixed_Blast_Damage_1_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 2", "Wyrmstake_Fixed_Blast_Damage_2", "Wyrmstake_Fixed_Blast_Damage_2_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 3", "Wyrmstake_Fixed_Blast_Damage_3", "Wyrmstake_Fixed_Blast_Damage_3_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 4", "Wyrmstake_Fixed_Blast_Damage_4", "Wyrmstake_Fixed_Blast_Damage_4_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 5", "Wyrmstake_Fixed_Blast_Damage_5", "Wyrmstake_Fixed_Blast_Damage_5_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 6", "Wyrmstake_Fixed_Blast_Damage_6", "Wyrmstake_Fixed_Blast_Damage_6_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fixed Blast Damage 7", "Wyrmstake_Fixed_Blast_Damage_7", "Wyrmstake_Fixed_Blast_Damage_7_offset"),
                     };
                 }
             }
@@ -3743,6 +4367,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fire_Damage_1_offset { get; private set; }
+
                 protected float Wyrmstake_Fire_Damage_2_raw;
                 public const string Wyrmstake_Fire_Damage_2_displayName = "Wyrmstake Fire Damage 2";
                 public const int Wyrmstake_Fire_Damage_2_sortIndex = 100;
@@ -3757,6 +4384,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyrmstake_Fire_Damage_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fire_Damage_2_offset { get; private set; }
 
                 protected float Wyrmstake_Fire_Damage_3_raw;
                 public const string Wyrmstake_Fire_Damage_3_displayName = "Wyrmstake Fire Damage 3";
@@ -3773,6 +4403,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fire_Damage_3_offset { get; private set; }
+
                 protected float Wyrmstake_Fire_Damage_4_raw;
                 public const string Wyrmstake_Fire_Damage_4_displayName = "Wyrmstake Fire Damage 4";
                 public const int Wyrmstake_Fire_Damage_4_sortIndex = 200;
@@ -3787,6 +4420,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyrmstake_Fire_Damage_4));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fire_Damage_4_offset { get; private set; }
 
                 protected float Wyrmstake_Fire_Damage_5_raw;
                 public const string Wyrmstake_Fire_Damage_5_displayName = "Wyrmstake Fire Damage 5";
@@ -3803,6 +4439,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fire_Damage_5_offset { get; private set; }
+
                 protected float Wyrmstake_Fire_Damage_6_raw;
                 public const string Wyrmstake_Fire_Damage_6_displayName = "Wyrmstake Fire Damage 6";
                 public const int Wyrmstake_Fire_Damage_6_sortIndex = 300;
@@ -3817,6 +4456,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyrmstake_Fire_Damage_6));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fire_Damage_6_offset { get; private set; }
 
                 protected float Wyrmstake_Fire_Damage_7_raw;
                 public const string Wyrmstake_Fire_Damage_7_displayName = "Wyrmstake Fire Damage 7";
@@ -3833,6 +4475,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Fire_Damage_7_offset { get; private set; }
+
                 public const int lastSortIndex = 400;
 
                 public static ObservableMhwStructCollection<Wyrmstake_Fire_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
@@ -3847,12 +4492,19 @@ namespace MHW_Editor.Structs.Weapons {
                 public static Wyrmstake_Fire_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
                     var data = new Wyrmstake_Fire_Damage();
                     data.Index = i;
+                    data.Wyrmstake_Fire_Damage_1_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fire_Damage_1_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_2_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fire_Damage_2_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_3_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fire_Damage_3_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_4_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fire_Damage_4_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_5_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fire_Damage_5_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_6_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fire_Damage_6_raw = reader.ReadSingle();
+                    data.Wyrmstake_Fire_Damage_7_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Fire_Damage_7_raw = reader.ReadSingle();
                     return data;
                 }
@@ -3869,13 +4521,13 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 1", "Wyrmstake_Fire_Damage_1"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 2", "Wyrmstake_Fire_Damage_2"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 3", "Wyrmstake_Fire_Damage_3"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 4", "Wyrmstake_Fire_Damage_4"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 5", "Wyrmstake_Fire_Damage_5"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 6", "Wyrmstake_Fire_Damage_6"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 7", "Wyrmstake_Fire_Damage_7"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 1", "Wyrmstake_Fire_Damage_1", "Wyrmstake_Fire_Damage_1_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 2", "Wyrmstake_Fire_Damage_2", "Wyrmstake_Fire_Damage_2_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 3", "Wyrmstake_Fire_Damage_3", "Wyrmstake_Fire_Damage_3_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 4", "Wyrmstake_Fire_Damage_4", "Wyrmstake_Fire_Damage_4_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 5", "Wyrmstake_Fire_Damage_5", "Wyrmstake_Fire_Damage_5_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 6", "Wyrmstake_Fire_Damage_6", "Wyrmstake_Fire_Damage_6_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Fire Damage 7", "Wyrmstake_Fire_Damage_7", "Wyrmstake_Fire_Damage_7_offset"),
                     };
                 }
             }
@@ -3905,6 +4557,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Add_Damage_1_offset { get; private set; }
+
                 protected float Wyrmstake_Add_Damage_2_raw;
                 public const string Wyrmstake_Add_Damage_2_displayName = "Wyrmstake Add Damage 2";
                 public const int Wyrmstake_Add_Damage_2_sortIndex = 100;
@@ -3919,6 +4574,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyrmstake_Add_Damage_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyrmstake_Add_Damage_2_offset { get; private set; }
 
                 protected float Wyrmstake_Add_Damage_3_raw;
                 public const string Wyrmstake_Add_Damage_3_displayName = "Wyrmstake Add Damage 3";
@@ -3935,6 +4593,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Add_Damage_3_offset { get; private set; }
+
                 protected float Wyrmstake_Add_Damage_4_raw;
                 public const string Wyrmstake_Add_Damage_4_displayName = "Wyrmstake Add Damage 4";
                 public const int Wyrmstake_Add_Damage_4_sortIndex = 200;
@@ -3949,6 +4610,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyrmstake_Add_Damage_4));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyrmstake_Add_Damage_4_offset { get; private set; }
 
                 protected float Wyrmstake_Add_Damage_5_raw;
                 public const string Wyrmstake_Add_Damage_5_displayName = "Wyrmstake Add Damage 5";
@@ -3965,6 +4629,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Add_Damage_5_offset { get; private set; }
+
                 protected float Wyrmstake_Add_Damage_6_raw;
                 public const string Wyrmstake_Add_Damage_6_displayName = "Wyrmstake Add Damage 6";
                 public const int Wyrmstake_Add_Damage_6_sortIndex = 300;
@@ -3979,6 +4646,9 @@ namespace MHW_Editor.Structs.Weapons {
                         OnPropertyChanged(nameof(Wyrmstake_Add_Damage_6));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Wyrmstake_Add_Damage_6_offset { get; private set; }
 
                 protected float Wyrmstake_Add_Damage_7_raw;
                 public const string Wyrmstake_Add_Damage_7_displayName = "Wyrmstake Add Damage 7";
@@ -3995,6 +4665,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Wyrmstake_Add_Damage_7_offset { get; private set; }
+
                 public const int lastSortIndex = 400;
 
                 public static ObservableMhwStructCollection<Wyrmstake_Add_Damage> LoadData(BinaryReader reader, Shell_Ammo_Params parent) {
@@ -4009,12 +4682,19 @@ namespace MHW_Editor.Structs.Weapons {
                 public static Wyrmstake_Add_Damage LoadData(BinaryReader reader, ulong i, Shell_Ammo_Params parent) {
                     var data = new Wyrmstake_Add_Damage();
                     data.Index = i;
+                    data.Wyrmstake_Add_Damage_1_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Add_Damage_1_raw = reader.ReadSingle();
+                    data.Wyrmstake_Add_Damage_2_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Add_Damage_2_raw = reader.ReadSingle();
+                    data.Wyrmstake_Add_Damage_3_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Add_Damage_3_raw = reader.ReadSingle();
+                    data.Wyrmstake_Add_Damage_4_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Add_Damage_4_raw = reader.ReadSingle();
+                    data.Wyrmstake_Add_Damage_5_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Add_Damage_5_raw = reader.ReadSingle();
+                    data.Wyrmstake_Add_Damage_6_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Add_Damage_6_raw = reader.ReadSingle();
+                    data.Wyrmstake_Add_Damage_7_offset = reader.BaseStream.Position;
                     data.Wyrmstake_Add_Damage_7_raw = reader.ReadSingle();
                     return data;
                 }
@@ -4031,13 +4711,13 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 1", "Wyrmstake_Add_Damage_1"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 2", "Wyrmstake_Add_Damage_2"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 3", "Wyrmstake_Add_Damage_3"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 4", "Wyrmstake_Add_Damage_4"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 5", "Wyrmstake_Add_Damage_5"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 6", "Wyrmstake_Add_Damage_6"),
-                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 7", "Wyrmstake_Add_Damage_7"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 1", "Wyrmstake_Add_Damage_1", "Wyrmstake_Add_Damage_1_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 2", "Wyrmstake_Add_Damage_2", "Wyrmstake_Add_Damage_2_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 3", "Wyrmstake_Add_Damage_3", "Wyrmstake_Add_Damage_3_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 4", "Wyrmstake_Add_Damage_4", "Wyrmstake_Add_Damage_4_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 5", "Wyrmstake_Add_Damage_5", "Wyrmstake_Add_Damage_5_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 6", "Wyrmstake_Add_Damage_6", "Wyrmstake_Add_Damage_6_offset"),
+                        new MultiStructItemCustomView(this, "Wyrmstake Add Damage 7", "Wyrmstake_Add_Damage_7", "Wyrmstake_Add_Damage_7_offset"),
                     };
                 }
             }
@@ -4126,6 +4806,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Yellow_Gauge_Debuff_offset { get; private set; }
+
             public const int lastSortIndex = 100;
 
             public static ObservableMhwStructCollection<W07p_Params_6_Shelling_Params> LoadData(BinaryReader reader) {
@@ -4140,6 +4823,7 @@ namespace MHW_Editor.Structs.Weapons {
             public static W07p_Params_6_Shelling_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new W07p_Params_6_Shelling_Params();
                 data.Index = i;
+                data.Yellow_Gauge_Debuff_offset = reader.BaseStream.Position;
                 data.Yellow_Gauge_Debuff_raw = reader.ReadSingle();
                 return data;
             }
@@ -4150,7 +4834,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Yellow Gauge Debuff", "Yellow_Gauge_Debuff"),
+                    new MultiStructItemCustomView(this, "Yellow Gauge Debuff", "Yellow_Gauge_Debuff", "Yellow_Gauge_Debuff_offset"),
                 };
             }
         }
@@ -4301,6 +4985,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_292_offset { get; private set; }
+
             protected float Unk_293_raw;
             public const string Unk_293_displayName = "Unk 293";
             public const int Unk_293_sortIndex = 100;
@@ -4316,6 +5003,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_293_offset { get; private set; }
+
             public const int lastSortIndex = 150;
 
             public static ObservableMhwStructCollection<W07p_Params_7_> LoadData(BinaryReader reader) {
@@ -4330,7 +5020,9 @@ namespace MHW_Editor.Structs.Weapons {
             public static W07p_Params_7_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W07p_Params_7_();
                 data.Index = i;
+                data.Unk_292_offset = reader.BaseStream.Position;
                 data.Unk_292_raw = reader.ReadSingle();
+                data.Unk_293_offset = reader.BaseStream.Position;
                 data.Unk_293_raw = reader.ReadSingle();
                 return data;
             }
@@ -4342,8 +5034,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 292", "Unk_292"),
-                    new MultiStructItemCustomView(this, "Unk 293", "Unk_293"),
+                    new MultiStructItemCustomView(this, "Unk 292", "Unk_292", "Unk_292_offset"),
+                    new MultiStructItemCustomView(this, "Unk 293", "Unk_293", "Unk_293_offset"),
                 };
             }
         }
@@ -4477,6 +5169,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_294_offset { get; private set; }
+
             protected float Unk_295_raw;
             public const string Unk_295_displayName = "Unk 295";
             public const int Unk_295_sortIndex = 100;
@@ -4491,6 +5186,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_295));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_295_offset { get; private set; }
 
             protected float Unk_296_raw;
             public const string Unk_296_displayName = "Unk 296";
@@ -4507,6 +5205,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_296_offset { get; private set; }
+
             protected float Unk_297_raw;
             public const string Unk_297_displayName = "Unk 297";
             public const int Unk_297_sortIndex = 200;
@@ -4521,6 +5222,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_297));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_297_offset { get; private set; }
 
             protected float Unk_298_raw;
             public const string Unk_298_displayName = "Unk 298";
@@ -4537,6 +5241,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_298_offset { get; private set; }
+
             protected float Unk_299_raw;
             public const string Unk_299_displayName = "Unk 299";
             public const int Unk_299_sortIndex = 300;
@@ -4551,6 +5258,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_299));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_299_offset { get; private set; }
 
             protected float Unk_300_raw;
             public const string Unk_300_displayName = "Unk 300";
@@ -4567,6 +5277,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_300_offset { get; private set; }
+
             protected float Unk_301_raw;
             public const string Unk_301_displayName = "Unk 301";
             public const int Unk_301_sortIndex = 400;
@@ -4581,6 +5294,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_301));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_301_offset { get; private set; }
 
             protected float Unk_302_raw;
             public const string Unk_302_displayName = "Unk 302";
@@ -4597,6 +5313,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_302_offset { get; private set; }
+
             protected float Unk_303_raw;
             public const string Unk_303_displayName = "Unk 303";
             public const int Unk_303_sortIndex = 500;
@@ -4612,6 +5331,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_303_offset { get; private set; }
+
             public const int lastSortIndex = 550;
 
             public static ObservableMhwStructCollection<W07p_Params_8_> LoadData(BinaryReader reader) {
@@ -4626,15 +5348,25 @@ namespace MHW_Editor.Structs.Weapons {
             public static W07p_Params_8_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W07p_Params_8_();
                 data.Index = i;
+                data.Unk_294_offset = reader.BaseStream.Position;
                 data.Unk_294_raw = reader.ReadSingle();
+                data.Unk_295_offset = reader.BaseStream.Position;
                 data.Unk_295_raw = reader.ReadSingle();
+                data.Unk_296_offset = reader.BaseStream.Position;
                 data.Unk_296_raw = reader.ReadSingle();
+                data.Unk_297_offset = reader.BaseStream.Position;
                 data.Unk_297_raw = reader.ReadSingle();
+                data.Unk_298_offset = reader.BaseStream.Position;
                 data.Unk_298_raw = reader.ReadSingle();
+                data.Unk_299_offset = reader.BaseStream.Position;
                 data.Unk_299_raw = reader.ReadSingle();
+                data.Unk_300_offset = reader.BaseStream.Position;
                 data.Unk_300_raw = reader.ReadSingle();
+                data.Unk_301_offset = reader.BaseStream.Position;
                 data.Unk_301_raw = reader.ReadSingle();
+                data.Unk_302_offset = reader.BaseStream.Position;
                 data.Unk_302_raw = reader.ReadSingle();
+                data.Unk_303_offset = reader.BaseStream.Position;
                 data.Unk_303_raw = reader.ReadSingle();
                 return data;
             }
@@ -4654,16 +5386,16 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 294", "Unk_294"),
-                    new MultiStructItemCustomView(this, "Unk 295", "Unk_295"),
-                    new MultiStructItemCustomView(this, "Unk 296", "Unk_296"),
-                    new MultiStructItemCustomView(this, "Unk 297", "Unk_297"),
-                    new MultiStructItemCustomView(this, "Unk 298", "Unk_298"),
-                    new MultiStructItemCustomView(this, "Unk 299", "Unk_299"),
-                    new MultiStructItemCustomView(this, "Unk 300", "Unk_300"),
-                    new MultiStructItemCustomView(this, "Unk 301", "Unk_301"),
-                    new MultiStructItemCustomView(this, "Unk 302", "Unk_302"),
-                    new MultiStructItemCustomView(this, "Unk 303", "Unk_303"),
+                    new MultiStructItemCustomView(this, "Unk 294", "Unk_294", "Unk_294_offset"),
+                    new MultiStructItemCustomView(this, "Unk 295", "Unk_295", "Unk_295_offset"),
+                    new MultiStructItemCustomView(this, "Unk 296", "Unk_296", "Unk_296_offset"),
+                    new MultiStructItemCustomView(this, "Unk 297", "Unk_297", "Unk_297_offset"),
+                    new MultiStructItemCustomView(this, "Unk 298", "Unk_298", "Unk_298_offset"),
+                    new MultiStructItemCustomView(this, "Unk 299", "Unk_299", "Unk_299_offset"),
+                    new MultiStructItemCustomView(this, "Unk 300", "Unk_300", "Unk_300_offset"),
+                    new MultiStructItemCustomView(this, "Unk 301", "Unk_301", "Unk_301_offset"),
+                    new MultiStructItemCustomView(this, "Unk 302", "Unk_302", "Unk_302_offset"),
+                    new MultiStructItemCustomView(this, "Unk 303", "Unk_303", "Unk_303_offset"),
                 };
             }
         }
@@ -4797,6 +5529,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_304_offset { get; private set; }
+
             protected float Unk_305_raw;
             public const string Unk_305_displayName = "Unk 305";
             public const int Unk_305_sortIndex = 100;
@@ -4811,6 +5546,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_305));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_305_offset { get; private set; }
 
             protected float Unk_306_raw;
             public const string Unk_306_displayName = "Unk 306";
@@ -4827,6 +5565,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_306_offset { get; private set; }
+
             protected float Unk_307_raw;
             public const string Unk_307_displayName = "Unk 307";
             public const int Unk_307_sortIndex = 200;
@@ -4841,6 +5582,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_307));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_307_offset { get; private set; }
 
             protected float Unk_308_raw;
             public const string Unk_308_displayName = "Unk 308";
@@ -4857,6 +5601,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_308_offset { get; private set; }
+
             protected float Unk_309_raw;
             public const string Unk_309_displayName = "Unk 309";
             public const int Unk_309_sortIndex = 300;
@@ -4871,6 +5618,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_309));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_309_offset { get; private set; }
 
             protected float Unk_310_raw;
             public const string Unk_310_displayName = "Unk 310";
@@ -4887,6 +5637,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_310_offset { get; private set; }
+
             protected float Unk_311_raw;
             public const string Unk_311_displayName = "Unk 311";
             public const int Unk_311_sortIndex = 400;
@@ -4901,6 +5654,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_311));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_311_offset { get; private set; }
 
             protected float Unk_312_raw;
             public const string Unk_312_displayName = "Unk 312";
@@ -4917,6 +5673,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_312_offset { get; private set; }
+
             protected float Unk_313_raw;
             public const string Unk_313_displayName = "Unk 313";
             public const int Unk_313_sortIndex = 500;
@@ -4931,6 +5690,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_313));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_313_offset { get; private set; }
 
             protected float Unk_314_raw;
             public const string Unk_314_displayName = "Unk 314";
@@ -4947,6 +5709,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_314_offset { get; private set; }
+
             protected float Unk_315_raw;
             public const string Unk_315_displayName = "Unk 315";
             public const int Unk_315_sortIndex = 600;
@@ -4961,6 +5726,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_315));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_315_offset { get; private set; }
 
             protected float Unk_316_raw;
             public const string Unk_316_displayName = "Unk 316";
@@ -4977,6 +5745,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_316_offset { get; private set; }
+
             protected float Unk_317_raw;
             public const string Unk_317_displayName = "Unk 317";
             public const int Unk_317_sortIndex = 700;
@@ -4991,6 +5762,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_317));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_317_offset { get; private set; }
 
             protected float Unk_318_raw;
             public const string Unk_318_displayName = "Unk 318";
@@ -5007,6 +5781,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_318_offset { get; private set; }
+
             protected float Unk_319_raw;
             public const string Unk_319_displayName = "Unk 319";
             public const int Unk_319_sortIndex = 800;
@@ -5021,6 +5798,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_319));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_319_offset { get; private set; }
 
             protected float Unk_320_raw;
             public const string Unk_320_displayName = "Unk 320";
@@ -5037,6 +5817,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_320_offset { get; private set; }
+
             protected float Unk_321_raw;
             public const string Unk_321_displayName = "Unk 321";
             public const int Unk_321_sortIndex = 900;
@@ -5051,6 +5834,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_321));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_321_offset { get; private set; }
 
             protected float Unk_322_raw;
             public const string Unk_322_displayName = "Unk 322";
@@ -5067,6 +5853,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_322_offset { get; private set; }
+
             protected float Full_burst_Damage_Multiplier_raw;
             public const string Full_burst_Damage_Multiplier_displayName = "Full-burst Damage Multiplier";
             public const int Full_burst_Damage_Multiplier_sortIndex = 1000;
@@ -5081,6 +5870,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Full_burst_Damage_Multiplier));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Full_burst_Damage_Multiplier_offset { get; private set; }
 
             protected float Charge_Shell_Damage_Multiplier_raw;
             public const string Charge_Shell_Damage_Multiplier_displayName = "Charge Shell Damage Multiplier";
@@ -5097,6 +5889,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Charge_Shell_Damage_Multiplier_offset { get; private set; }
+
             protected float Wyvernfire_Damage_Multiplier_raw;
             public const string Wyvernfire_Damage_Multiplier_displayName = "Wyvernfire Damage Multiplier";
             public const int Wyvernfire_Damage_Multiplier_sortIndex = 1100;
@@ -5111,6 +5906,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Wyvernfire_Damage_Multiplier));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wyvernfire_Damage_Multiplier_offset { get; private set; }
 
             protected float Wyrmstake_Explosion_Damage_Multiplier_raw;
             public const string Wyrmstake_Explosion_Damage_Multiplier_displayName = "Wyrmstake Explosion Damage Multiplier";
@@ -5127,6 +5925,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wyrmstake_Explosion_Damage_Multiplier_offset { get; private set; }
+
             protected float Ally_Attack_Trigger_Explosion_raw;
             public const string Ally_Attack_Trigger_Explosion_displayName = "Ally Attack Trigger Explosion";
             public const int Ally_Attack_Trigger_Explosion_sortIndex = 1200;
@@ -5142,6 +5943,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Ally_Attack_Trigger_Explosion_offset { get; private set; }
+
             public const int lastSortIndex = 1250;
 
             public static ObservableMhwStructCollection<W07p_Params_9_Wyrmstake_Blast_Params> LoadData(BinaryReader reader) {
@@ -5156,29 +5960,53 @@ namespace MHW_Editor.Structs.Weapons {
             public static W07p_Params_9_Wyrmstake_Blast_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new W07p_Params_9_Wyrmstake_Blast_Params();
                 data.Index = i;
+                data.Unk_304_offset = reader.BaseStream.Position;
                 data.Unk_304_raw = reader.ReadSingle();
+                data.Unk_305_offset = reader.BaseStream.Position;
                 data.Unk_305_raw = reader.ReadSingle();
+                data.Unk_306_offset = reader.BaseStream.Position;
                 data.Unk_306_raw = reader.ReadSingle();
+                data.Unk_307_offset = reader.BaseStream.Position;
                 data.Unk_307_raw = reader.ReadSingle();
+                data.Unk_308_offset = reader.BaseStream.Position;
                 data.Unk_308_raw = reader.ReadSingle();
+                data.Unk_309_offset = reader.BaseStream.Position;
                 data.Unk_309_raw = reader.ReadSingle();
+                data.Unk_310_offset = reader.BaseStream.Position;
                 data.Unk_310_raw = reader.ReadSingle();
+                data.Unk_311_offset = reader.BaseStream.Position;
                 data.Unk_311_raw = reader.ReadSingle();
+                data.Unk_312_offset = reader.BaseStream.Position;
                 data.Unk_312_raw = reader.ReadSingle();
+                data.Unk_313_offset = reader.BaseStream.Position;
                 data.Unk_313_raw = reader.ReadSingle();
+                data.Unk_314_offset = reader.BaseStream.Position;
                 data.Unk_314_raw = reader.ReadSingle();
+                data.Unk_315_offset = reader.BaseStream.Position;
                 data.Unk_315_raw = reader.ReadSingle();
+                data.Unk_316_offset = reader.BaseStream.Position;
                 data.Unk_316_raw = reader.ReadSingle();
+                data.Unk_317_offset = reader.BaseStream.Position;
                 data.Unk_317_raw = reader.ReadSingle();
+                data.Unk_318_offset = reader.BaseStream.Position;
                 data.Unk_318_raw = reader.ReadSingle();
+                data.Unk_319_offset = reader.BaseStream.Position;
                 data.Unk_319_raw = reader.ReadSingle();
+                data.Unk_320_offset = reader.BaseStream.Position;
                 data.Unk_320_raw = reader.ReadSingle();
+                data.Unk_321_offset = reader.BaseStream.Position;
                 data.Unk_321_raw = reader.ReadSingle();
+                data.Unk_322_offset = reader.BaseStream.Position;
                 data.Unk_322_raw = reader.ReadSingle();
+                data.Full_burst_Damage_Multiplier_offset = reader.BaseStream.Position;
                 data.Full_burst_Damage_Multiplier_raw = reader.ReadSingle();
+                data.Charge_Shell_Damage_Multiplier_offset = reader.BaseStream.Position;
                 data.Charge_Shell_Damage_Multiplier_raw = reader.ReadSingle();
+                data.Wyvernfire_Damage_Multiplier_offset = reader.BaseStream.Position;
                 data.Wyvernfire_Damage_Multiplier_raw = reader.ReadSingle();
+                data.Wyrmstake_Explosion_Damage_Multiplier_offset = reader.BaseStream.Position;
                 data.Wyrmstake_Explosion_Damage_Multiplier_raw = reader.ReadSingle();
+                data.Ally_Attack_Trigger_Explosion_offset = reader.BaseStream.Position;
                 data.Ally_Attack_Trigger_Explosion_raw = reader.ReadSingle();
                 return data;
             }
@@ -5212,30 +6040,30 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 304", "Unk_304"),
-                    new MultiStructItemCustomView(this, "Unk 305", "Unk_305"),
-                    new MultiStructItemCustomView(this, "Unk 306", "Unk_306"),
-                    new MultiStructItemCustomView(this, "Unk 307", "Unk_307"),
-                    new MultiStructItemCustomView(this, "Unk 308", "Unk_308"),
-                    new MultiStructItemCustomView(this, "Unk 309", "Unk_309"),
-                    new MultiStructItemCustomView(this, "Unk 310", "Unk_310"),
-                    new MultiStructItemCustomView(this, "Unk 311", "Unk_311"),
-                    new MultiStructItemCustomView(this, "Unk 312", "Unk_312"),
-                    new MultiStructItemCustomView(this, "Unk 313", "Unk_313"),
-                    new MultiStructItemCustomView(this, "Unk 314", "Unk_314"),
-                    new MultiStructItemCustomView(this, "Unk 315", "Unk_315"),
-                    new MultiStructItemCustomView(this, "Unk 316", "Unk_316"),
-                    new MultiStructItemCustomView(this, "Unk 317", "Unk_317"),
-                    new MultiStructItemCustomView(this, "Unk 318", "Unk_318"),
-                    new MultiStructItemCustomView(this, "Unk 319", "Unk_319"),
-                    new MultiStructItemCustomView(this, "Unk 320", "Unk_320"),
-                    new MultiStructItemCustomView(this, "Unk 321", "Unk_321"),
-                    new MultiStructItemCustomView(this, "Unk 322", "Unk_322"),
-                    new MultiStructItemCustomView(this, "Full-burst Damage Multiplier", "Full_burst_Damage_Multiplier"),
-                    new MultiStructItemCustomView(this, "Charge Shell Damage Multiplier", "Charge_Shell_Damage_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wyvernfire Damage Multiplier", "Wyvernfire_Damage_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wyrmstake Explosion Damage Multiplier", "Wyrmstake_Explosion_Damage_Multiplier"),
-                    new MultiStructItemCustomView(this, "Ally Attack Trigger Explosion", "Ally_Attack_Trigger_Explosion"),
+                    new MultiStructItemCustomView(this, "Unk 304", "Unk_304", "Unk_304_offset"),
+                    new MultiStructItemCustomView(this, "Unk 305", "Unk_305", "Unk_305_offset"),
+                    new MultiStructItemCustomView(this, "Unk 306", "Unk_306", "Unk_306_offset"),
+                    new MultiStructItemCustomView(this, "Unk 307", "Unk_307", "Unk_307_offset"),
+                    new MultiStructItemCustomView(this, "Unk 308", "Unk_308", "Unk_308_offset"),
+                    new MultiStructItemCustomView(this, "Unk 309", "Unk_309", "Unk_309_offset"),
+                    new MultiStructItemCustomView(this, "Unk 310", "Unk_310", "Unk_310_offset"),
+                    new MultiStructItemCustomView(this, "Unk 311", "Unk_311", "Unk_311_offset"),
+                    new MultiStructItemCustomView(this, "Unk 312", "Unk_312", "Unk_312_offset"),
+                    new MultiStructItemCustomView(this, "Unk 313", "Unk_313", "Unk_313_offset"),
+                    new MultiStructItemCustomView(this, "Unk 314", "Unk_314", "Unk_314_offset"),
+                    new MultiStructItemCustomView(this, "Unk 315", "Unk_315", "Unk_315_offset"),
+                    new MultiStructItemCustomView(this, "Unk 316", "Unk_316", "Unk_316_offset"),
+                    new MultiStructItemCustomView(this, "Unk 317", "Unk_317", "Unk_317_offset"),
+                    new MultiStructItemCustomView(this, "Unk 318", "Unk_318", "Unk_318_offset"),
+                    new MultiStructItemCustomView(this, "Unk 319", "Unk_319", "Unk_319_offset"),
+                    new MultiStructItemCustomView(this, "Unk 320", "Unk_320", "Unk_320_offset"),
+                    new MultiStructItemCustomView(this, "Unk 321", "Unk_321", "Unk_321_offset"),
+                    new MultiStructItemCustomView(this, "Unk 322", "Unk_322", "Unk_322_offset"),
+                    new MultiStructItemCustomView(this, "Full-burst Damage Multiplier", "Full_burst_Damage_Multiplier", "Full_burst_Damage_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Charge Shell Damage Multiplier", "Charge_Shell_Damage_Multiplier", "Charge_Shell_Damage_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernfire Damage Multiplier", "Wyvernfire_Damage_Multiplier", "Wyvernfire_Damage_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wyrmstake Explosion Damage Multiplier", "Wyrmstake_Explosion_Damage_Multiplier", "Wyrmstake_Explosion_Damage_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Ally Attack Trigger Explosion", "Ally_Attack_Trigger_Explosion", "Ally_Attack_Trigger_Explosion_offset"),
                 };
             }
         }
@@ -5318,6 +6146,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_342_offset { get; private set; }
+
             protected float Unk_343_raw;
             public const string Unk_343_displayName = "Unk 343";
             public const int Unk_343_sortIndex = 100;
@@ -5332,6 +6163,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_343));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_343_offset { get; private set; }
 
             protected float Unk_344_raw;
             public const string Unk_344_displayName = "Unk 344";
@@ -5348,6 +6182,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_344_offset { get; private set; }
+
             public const int lastSortIndex = 200;
 
             public static ObservableMhwStructCollection<W07p_Params_11_Wyrmstake_Blast_Params> LoadData(BinaryReader reader) {
@@ -5362,8 +6199,11 @@ namespace MHW_Editor.Structs.Weapons {
             public static W07p_Params_11_Wyrmstake_Blast_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new W07p_Params_11_Wyrmstake_Blast_Params();
                 data.Index = i;
+                data.Unk_342_offset = reader.BaseStream.Position;
                 data.Unk_342_raw = reader.ReadSingle();
+                data.Unk_343_offset = reader.BaseStream.Position;
                 data.Unk_343_raw = reader.ReadSingle();
+                data.Unk_344_offset = reader.BaseStream.Position;
                 data.Unk_344_raw = reader.ReadSingle();
                 return data;
             }
@@ -5376,9 +6216,9 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 342", "Unk_342"),
-                    new MultiStructItemCustomView(this, "Unk 343", "Unk_343"),
-                    new MultiStructItemCustomView(this, "Unk 344", "Unk_344"),
+                    new MultiStructItemCustomView(this, "Unk 342", "Unk_342", "Unk_342_offset"),
+                    new MultiStructItemCustomView(this, "Unk 343", "Unk_343", "Unk_343_offset"),
+                    new MultiStructItemCustomView(this, "Unk 344", "Unk_344", "Unk_344_offset"),
                 };
             }
         }
@@ -5512,6 +6352,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Shelling_Multiplier_offset { get; private set; }
+
             protected float Unk_346_raw;
             public const string Unk_346_displayName = "Unk 346";
             public const int Unk_346_sortIndex = 100;
@@ -5526,6 +6369,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_346));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_346_offset { get; private set; }
 
             protected float Unk_347_raw;
             public const string Unk_347_displayName = "Unk 347";
@@ -5542,6 +6388,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_347_offset { get; private set; }
+
             public const int lastSortIndex = 200;
 
             public static ObservableMhwStructCollection<W07p_Params_12_> LoadData(BinaryReader reader) {
@@ -5556,8 +6405,11 @@ namespace MHW_Editor.Structs.Weapons {
             public static W07p_Params_12_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W07p_Params_12_();
                 data.Index = i;
+                data.Shelling_Multiplier_offset = reader.BaseStream.Position;
                 data.Shelling_Multiplier_raw = reader.ReadSingle();
+                data.Unk_346_offset = reader.BaseStream.Position;
                 data.Unk_346_raw = reader.ReadSingle();
+                data.Unk_347_offset = reader.BaseStream.Position;
                 data.Unk_347_raw = reader.ReadSingle();
                 return data;
             }
@@ -5570,9 +6422,9 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Shelling Multiplier", "Shelling_Multiplier"),
-                    new MultiStructItemCustomView(this, "Unk 346", "Unk_346"),
-                    new MultiStructItemCustomView(this, "Unk 347", "Unk_347"),
+                    new MultiStructItemCustomView(this, "Shelling Multiplier", "Shelling_Multiplier", "Shelling_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Unk 346", "Unk_346", "Unk_346_offset"),
+                    new MultiStructItemCustomView(this, "Unk 347", "Unk_347", "Unk_347_offset"),
                 };
             }
         }

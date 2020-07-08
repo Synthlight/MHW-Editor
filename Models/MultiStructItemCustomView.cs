@@ -13,10 +13,11 @@ namespace MHW_Editor.Models {
         private readonly string                                    name;
         private readonly MethodInfo                                getMethod;
         private readonly MethodInfo                                setMethod;
+        private readonly MethodInfo                                offsetGetMethod;
         private readonly Type                                      propertyType;
         private readonly bool                                      isReadOnly;
 
-        public MultiStructItemCustomView(IHasCustomView<MultiStructItemCustomView> parent, string name, string propertyName) {
+        public MultiStructItemCustomView(IHasCustomView<MultiStructItemCustomView> parent, string name, string propertyName, string offsetPropName) {
             this.parent = parent;
             this.name   = name;
 
@@ -28,6 +29,11 @@ namespace MHW_Editor.Models {
             setMethod    = property.GetSetMethod();
 
             isReadOnly = (IsReadOnlyAttribute) property.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
+
+            property = parent.GetType().GetProperty(offsetPropName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+            Debug.Assert(property != null, nameof(property) + " != null");
+
+            offsetGetMethod = property.GetGetMethod();
         }
 
         [SortOrder(0)]
@@ -84,5 +90,9 @@ namespace MHW_Editor.Models {
                 };
             }
         }
+
+        [SortOrder(75)]
+        [DisplayName("Offset")]
+        public long Offset => (long) offsetGetMethod.Invoke(parent, null);
     }
 }

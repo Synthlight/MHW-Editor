@@ -97,6 +97,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Gravity_offset { get; private set; }
+
             protected float Gravity_Speed_Rate_raw;
             public const string Gravity_Speed_Rate_displayName = "Gravity Speed Rate";
             public const int Gravity_Speed_Rate_sortIndex = 100;
@@ -111,6 +114,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Gravity_Speed_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Gravity_Speed_Rate_offset { get; private set; }
 
             protected float Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
@@ -127,6 +133,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_1_offset { get; private set; }
+
             protected float Unk_2_raw;
             public const string Unk_2_displayName = "Unk 2";
             public const int Unk_2_sortIndex = 200;
@@ -141,6 +150,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_2_offset { get; private set; }
 
             protected float Unk_3_raw;
             public const string Unk_3_displayName = "Unk 3";
@@ -157,6 +169,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_3_offset { get; private set; }
+
             protected float Unk_4_raw;
             public const string Unk_4_displayName = "Unk 4";
             public const int Unk_4_sortIndex = 300;
@@ -171,6 +186,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_4_offset { get; private set; }
 
             protected float Unk_5_raw;
             public const string Unk_5_displayName = "Unk 5";
@@ -187,6 +205,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_5_offset { get; private set; }
+
             protected float Unk_6_raw;
             public const string Unk_6_displayName = "Unk 6";
             public const int Unk_6_sortIndex = 400;
@@ -201,6 +222,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_6));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_6_offset { get; private set; }
 
             protected float Unk_7_raw;
             public const string Unk_7_displayName = "Unk 7";
@@ -217,6 +241,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_7_offset { get; private set; }
+
             protected float Unk_8_raw;
             public const string Unk_8_displayName = "Unk 8";
             public const int Unk_8_sortIndex = 500;
@@ -231,6 +258,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_8));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_8_offset { get; private set; }
 
             protected float Unk_9_raw;
             public const string Unk_9_displayName = "Unk 9";
@@ -247,6 +277,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_9_offset { get; private set; }
+
             protected float Unk_10_raw;
             public const string Unk_10_displayName = "Unk 10";
             public const int Unk_10_sortIndex = 600;
@@ -261,6 +294,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_10));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_10_offset { get; private set; }
 
             protected float Unk_11_raw;
             public const string Unk_11_displayName = "Unk 11";
@@ -277,6 +313,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_11_offset { get; private set; }
+
             protected float Unk_12_raw;
             public const string Unk_12_displayName = "Unk 12";
             public const int Unk_12_sortIndex = 700;
@@ -291,6 +330,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_12));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_12_offset { get; private set; }
 
             protected float Unk_13_raw;
             public const string Unk_13_displayName = "Unk 13";
@@ -307,6 +349,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_13_offset { get; private set; }
+
             protected float Unk_14_raw;
             public const string Unk_14_displayName = "Unk 14";
             public const int Unk_14_sortIndex = 800;
@@ -321,6 +366,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_14));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_14_offset { get; private set; }
 
             protected float Unk_15_raw;
             public const string Unk_15_displayName = "Unk 15";
@@ -337,6 +385,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_15_offset { get; private set; }
+
             protected float Unk_16_raw;
             public const string Unk_16_displayName = "Unk 16";
             public const int Unk_16_sortIndex = 900;
@@ -351,6 +402,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_16));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_16_offset { get; private set; }
 
             protected float Unk_17_raw;
             public const string Unk_17_displayName = "Unk 17";
@@ -367,6 +421,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_17_offset { get; private set; }
+
             protected float Unk_18_raw;
             public const string Unk_18_displayName = "Unk 18";
             public const int Unk_18_sortIndex = 1000;
@@ -381,6 +438,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_18));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_18_offset { get; private set; }
 
             protected float Unk_19_raw;
             public const string Unk_19_displayName = "Unk 19";
@@ -397,6 +457,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_19_offset { get; private set; }
+
             protected float Unk_20_raw;
             public const string Unk_20_displayName = "Unk 20";
             public const int Unk_20_sortIndex = 1100;
@@ -411,6 +474,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_20));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_20_offset { get; private set; }
 
             protected float Unk_21_raw;
             public const string Unk_21_displayName = "Unk 21";
@@ -427,6 +493,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_21_offset { get; private set; }
+
             protected float Unk_22_raw;
             public const string Unk_22_displayName = "Unk 22";
             public const int Unk_22_sortIndex = 1200;
@@ -441,6 +510,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_22));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_22_offset { get; private set; }
 
             protected float Unk_23_raw;
             public const string Unk_23_displayName = "Unk 23";
@@ -457,6 +529,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_23_offset { get; private set; }
+
             protected float Unk_24_raw;
             public const string Unk_24_displayName = "Unk 24";
             public const int Unk_24_sortIndex = 1300;
@@ -471,6 +546,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_24));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_24_offset { get; private set; }
 
             protected float Unk_25_raw;
             public const string Unk_25_displayName = "Unk 25";
@@ -487,6 +565,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_25_offset { get; private set; }
+
             protected float Unk_26_raw;
             public const string Unk_26_displayName = "Unk 26";
             public const int Unk_26_sortIndex = 1400;
@@ -501,6 +582,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_26));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_26_offset { get; private set; }
 
             protected float Unk_27_raw;
             public const string Unk_27_displayName = "Unk 27";
@@ -517,6 +601,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_27_offset { get; private set; }
+
             protected float Unk_28_raw;
             public const string Unk_28_displayName = "Unk 28";
             public const int Unk_28_sortIndex = 1500;
@@ -531,6 +618,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_28));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_28_offset { get; private set; }
 
             protected float Unk_29_raw;
             public const string Unk_29_displayName = "Unk 29";
@@ -547,6 +637,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_29_offset { get; private set; }
+
             protected float Unk_30_raw;
             public const string Unk_30_displayName = "Unk 30";
             public const int Unk_30_sortIndex = 1600;
@@ -561,6 +654,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_30));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_30_offset { get; private set; }
 
             protected float Unk_31_raw;
             public const string Unk_31_displayName = "Unk 31";
@@ -577,6 +673,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_31_offset { get; private set; }
+
             protected float Unk_32_raw;
             public const string Unk_32_displayName = "Unk 32";
             public const int Unk_32_sortIndex = 1700;
@@ -591,6 +690,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_32));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_32_offset { get; private set; }
 
             protected float Unk_33_raw;
             public const string Unk_33_displayName = "Unk 33";
@@ -607,6 +709,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_33_offset { get; private set; }
+
             protected float Unk_34_raw;
             public const string Unk_34_displayName = "Unk 34";
             public const int Unk_34_sortIndex = 1800;
@@ -621,6 +726,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_34));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_34_offset { get; private set; }
 
             protected uint Unk_35_raw;
             public const string Unk_35_displayName = "Unk 35";
@@ -637,6 +745,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_35_offset { get; private set; }
+
             protected uint Unk_36_raw;
             public const string Unk_36_displayName = "Unk 36";
             public const int Unk_36_sortIndex = 1900;
@@ -651,6 +762,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_36));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_36_offset { get; private set; }
 
             protected float Unk_37_raw;
             public const string Unk_37_displayName = "Unk 37";
@@ -667,6 +781,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_37_offset { get; private set; }
+
             protected float Unk_38_raw;
             public const string Unk_38_displayName = "Unk 38";
             public const int Unk_38_sortIndex = 2000;
@@ -681,6 +798,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_38));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_38_offset { get; private set; }
 
             protected float Unk_39_raw;
             public const string Unk_39_displayName = "Unk 39";
@@ -697,6 +817,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_39_offset { get; private set; }
+
             protected float Unk_40_raw;
             public const string Unk_40_displayName = "Unk 40";
             public const int Unk_40_sortIndex = 2100;
@@ -711,6 +834,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_40));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_40_offset { get; private set; }
 
             protected float Unk_41_raw;
             public const string Unk_41_displayName = "Unk 41";
@@ -727,6 +853,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_41_offset { get; private set; }
+
             protected float Unk_42_raw;
             public const string Unk_42_displayName = "Unk 42";
             public const int Unk_42_sortIndex = 2200;
@@ -741,6 +870,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_42));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_42_offset { get; private set; }
 
             protected float Unk_43_raw;
             public const string Unk_43_displayName = "Unk 43";
@@ -757,6 +889,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_43_offset { get; private set; }
+
             protected float Unk_44_raw;
             public const string Unk_44_displayName = "Unk 44";
             public const int Unk_44_sortIndex = 2300;
@@ -771,6 +906,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_44));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_44_offset { get; private set; }
 
             protected float Unk_45_raw;
             public const string Unk_45_displayName = "Unk 45";
@@ -787,6 +925,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_45_offset { get; private set; }
+
             protected float Unk_46_raw;
             public const string Unk_46_displayName = "Unk 46";
             public const int Unk_46_sortIndex = 2400;
@@ -801,6 +942,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_46));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_46_offset { get; private set; }
 
             protected float Unk_47_raw;
             public const string Unk_47_displayName = "Unk 47";
@@ -817,6 +961,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_47_offset { get; private set; }
+
             protected float Unk_48_raw;
             public const string Unk_48_displayName = "Unk 48";
             public const int Unk_48_sortIndex = 2500;
@@ -831,6 +978,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_48));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_48_offset { get; private set; }
 
             protected float Unk_49_raw;
             public const string Unk_49_displayName = "Unk 49";
@@ -847,6 +997,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_49_offset { get; private set; }
+
             protected float Unk_50_raw;
             public const string Unk_50_displayName = "Unk 50";
             public const int Unk_50_sortIndex = 2600;
@@ -861,6 +1014,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_50));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_50_offset { get; private set; }
 
             protected float Unk_51_raw;
             public const string Unk_51_displayName = "Unk 51";
@@ -877,6 +1033,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_51_offset { get; private set; }
+
             protected float Unk_52_raw;
             public const string Unk_52_displayName = "Unk 52";
             public const int Unk_52_sortIndex = 2700;
@@ -891,6 +1050,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_52));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_52_offset { get; private set; }
 
             protected float Unk_53_raw;
             public const string Unk_53_displayName = "Unk 53";
@@ -907,6 +1069,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_53_offset { get; private set; }
+
             protected float Unk_54_raw;
             public const string Unk_54_displayName = "Unk 54";
             public const int Unk_54_sortIndex = 2800;
@@ -921,6 +1086,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_54));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_54_offset { get; private set; }
 
             protected float Unk_55_raw;
             public const string Unk_55_displayName = "Unk 55";
@@ -937,6 +1105,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_55_offset { get; private set; }
+
             public const int lastSortIndex = 2900;
 
             public static ObservableMhwStructCollection<Player_Params_1_> LoadData(BinaryReader reader) {
@@ -951,62 +1122,119 @@ namespace MHW_Editor.Structs.PlData {
             public static Player_Params_1_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Player_Params_1_();
                 data.Index = i;
+                data.Gravity_offset = reader.BaseStream.Position;
                 data.Gravity_raw = reader.ReadSingle();
+                data.Gravity_Speed_Rate_offset = reader.BaseStream.Position;
                 data.Gravity_Speed_Rate_raw = reader.ReadSingle();
+                data.Unk_1_offset = reader.BaseStream.Position;
                 data.Unk_1_raw = reader.ReadSingle();
+                data.Unk_2_offset = reader.BaseStream.Position;
                 data.Unk_2_raw = reader.ReadSingle();
+                data.Unk_3_offset = reader.BaseStream.Position;
                 data.Unk_3_raw = reader.ReadSingle();
+                data.Unk_4_offset = reader.BaseStream.Position;
                 data.Unk_4_raw = reader.ReadSingle();
+                data.Unk_5_offset = reader.BaseStream.Position;
                 data.Unk_5_raw = reader.ReadSingle();
+                data.Unk_6_offset = reader.BaseStream.Position;
                 data.Unk_6_raw = reader.ReadSingle();
+                data.Unk_7_offset = reader.BaseStream.Position;
                 data.Unk_7_raw = reader.ReadSingle();
+                data.Unk_8_offset = reader.BaseStream.Position;
                 data.Unk_8_raw = reader.ReadSingle();
+                data.Unk_9_offset = reader.BaseStream.Position;
                 data.Unk_9_raw = reader.ReadSingle();
+                data.Unk_10_offset = reader.BaseStream.Position;
                 data.Unk_10_raw = reader.ReadSingle();
+                data.Unk_11_offset = reader.BaseStream.Position;
                 data.Unk_11_raw = reader.ReadSingle();
+                data.Unk_12_offset = reader.BaseStream.Position;
                 data.Unk_12_raw = reader.ReadSingle();
+                data.Unk_13_offset = reader.BaseStream.Position;
                 data.Unk_13_raw = reader.ReadSingle();
+                data.Unk_14_offset = reader.BaseStream.Position;
                 data.Unk_14_raw = reader.ReadSingle();
+                data.Unk_15_offset = reader.BaseStream.Position;
                 data.Unk_15_raw = reader.ReadSingle();
+                data.Unk_16_offset = reader.BaseStream.Position;
                 data.Unk_16_raw = reader.ReadSingle();
+                data.Unk_17_offset = reader.BaseStream.Position;
                 data.Unk_17_raw = reader.ReadSingle();
+                data.Unk_18_offset = reader.BaseStream.Position;
                 data.Unk_18_raw = reader.ReadSingle();
+                data.Unk_19_offset = reader.BaseStream.Position;
                 data.Unk_19_raw = reader.ReadSingle();
+                data.Unk_20_offset = reader.BaseStream.Position;
                 data.Unk_20_raw = reader.ReadSingle();
+                data.Unk_21_offset = reader.BaseStream.Position;
                 data.Unk_21_raw = reader.ReadSingle();
+                data.Unk_22_offset = reader.BaseStream.Position;
                 data.Unk_22_raw = reader.ReadSingle();
+                data.Unk_23_offset = reader.BaseStream.Position;
                 data.Unk_23_raw = reader.ReadSingle();
+                data.Unk_24_offset = reader.BaseStream.Position;
                 data.Unk_24_raw = reader.ReadSingle();
+                data.Unk_25_offset = reader.BaseStream.Position;
                 data.Unk_25_raw = reader.ReadSingle();
+                data.Unk_26_offset = reader.BaseStream.Position;
                 data.Unk_26_raw = reader.ReadSingle();
+                data.Unk_27_offset = reader.BaseStream.Position;
                 data.Unk_27_raw = reader.ReadSingle();
+                data.Unk_28_offset = reader.BaseStream.Position;
                 data.Unk_28_raw = reader.ReadSingle();
+                data.Unk_29_offset = reader.BaseStream.Position;
                 data.Unk_29_raw = reader.ReadSingle();
+                data.Unk_30_offset = reader.BaseStream.Position;
                 data.Unk_30_raw = reader.ReadSingle();
+                data.Unk_31_offset = reader.BaseStream.Position;
                 data.Unk_31_raw = reader.ReadSingle();
+                data.Unk_32_offset = reader.BaseStream.Position;
                 data.Unk_32_raw = reader.ReadSingle();
+                data.Unk_33_offset = reader.BaseStream.Position;
                 data.Unk_33_raw = reader.ReadSingle();
+                data.Unk_34_offset = reader.BaseStream.Position;
                 data.Unk_34_raw = reader.ReadSingle();
+                data.Unk_35_offset = reader.BaseStream.Position;
                 data.Unk_35_raw = reader.ReadUInt32();
+                data.Unk_36_offset = reader.BaseStream.Position;
                 data.Unk_36_raw = reader.ReadUInt32();
+                data.Unk_37_offset = reader.BaseStream.Position;
                 data.Unk_37_raw = reader.ReadSingle();
+                data.Unk_38_offset = reader.BaseStream.Position;
                 data.Unk_38_raw = reader.ReadSingle();
+                data.Unk_39_offset = reader.BaseStream.Position;
                 data.Unk_39_raw = reader.ReadSingle();
+                data.Unk_40_offset = reader.BaseStream.Position;
                 data.Unk_40_raw = reader.ReadSingle();
+                data.Unk_41_offset = reader.BaseStream.Position;
                 data.Unk_41_raw = reader.ReadSingle();
+                data.Unk_42_offset = reader.BaseStream.Position;
                 data.Unk_42_raw = reader.ReadSingle();
+                data.Unk_43_offset = reader.BaseStream.Position;
                 data.Unk_43_raw = reader.ReadSingle();
+                data.Unk_44_offset = reader.BaseStream.Position;
                 data.Unk_44_raw = reader.ReadSingle();
+                data.Unk_45_offset = reader.BaseStream.Position;
                 data.Unk_45_raw = reader.ReadSingle();
+                data.Unk_46_offset = reader.BaseStream.Position;
                 data.Unk_46_raw = reader.ReadSingle();
+                data.Unk_47_offset = reader.BaseStream.Position;
                 data.Unk_47_raw = reader.ReadSingle();
+                data.Unk_48_offset = reader.BaseStream.Position;
                 data.Unk_48_raw = reader.ReadSingle();
+                data.Unk_49_offset = reader.BaseStream.Position;
                 data.Unk_49_raw = reader.ReadSingle();
+                data.Unk_50_offset = reader.BaseStream.Position;
                 data.Unk_50_raw = reader.ReadSingle();
+                data.Unk_51_offset = reader.BaseStream.Position;
                 data.Unk_51_raw = reader.ReadSingle();
+                data.Unk_52_offset = reader.BaseStream.Position;
                 data.Unk_52_raw = reader.ReadSingle();
+                data.Unk_53_offset = reader.BaseStream.Position;
                 data.Unk_53_raw = reader.ReadSingle();
+                data.Unk_54_offset = reader.BaseStream.Position;
                 data.Unk_54_raw = reader.ReadSingle();
+                data.Unk_55_offset = reader.BaseStream.Position;
                 data.Unk_55_raw = reader.ReadSingle();
                 return data;
             }
@@ -1073,63 +1301,63 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Gravity", "Gravity"),
-                    new MultiStructItemCustomView(this, "Gravity Speed Rate", "Gravity_Speed_Rate"),
-                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
-                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2"),
-                    new MultiStructItemCustomView(this, "Unk 3", "Unk_3"),
-                    new MultiStructItemCustomView(this, "Unk 4", "Unk_4"),
-                    new MultiStructItemCustomView(this, "Unk 5", "Unk_5"),
-                    new MultiStructItemCustomView(this, "Unk 6", "Unk_6"),
-                    new MultiStructItemCustomView(this, "Unk 7", "Unk_7"),
-                    new MultiStructItemCustomView(this, "Unk 8", "Unk_8"),
-                    new MultiStructItemCustomView(this, "Unk 9", "Unk_9"),
-                    new MultiStructItemCustomView(this, "Unk 10", "Unk_10"),
-                    new MultiStructItemCustomView(this, "Unk 11", "Unk_11"),
-                    new MultiStructItemCustomView(this, "Unk 12", "Unk_12"),
-                    new MultiStructItemCustomView(this, "Unk 13", "Unk_13"),
-                    new MultiStructItemCustomView(this, "Unk 14", "Unk_14"),
-                    new MultiStructItemCustomView(this, "Unk 15", "Unk_15"),
-                    new MultiStructItemCustomView(this, "Unk 16", "Unk_16"),
-                    new MultiStructItemCustomView(this, "Unk 17", "Unk_17"),
-                    new MultiStructItemCustomView(this, "Unk 18", "Unk_18"),
-                    new MultiStructItemCustomView(this, "Unk 19", "Unk_19"),
-                    new MultiStructItemCustomView(this, "Unk 20", "Unk_20"),
-                    new MultiStructItemCustomView(this, "Unk 21", "Unk_21"),
-                    new MultiStructItemCustomView(this, "Unk 22", "Unk_22"),
-                    new MultiStructItemCustomView(this, "Unk 23", "Unk_23"),
-                    new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),
-                    new MultiStructItemCustomView(this, "Unk 25", "Unk_25"),
-                    new MultiStructItemCustomView(this, "Unk 26", "Unk_26"),
-                    new MultiStructItemCustomView(this, "Unk 27", "Unk_27"),
-                    new MultiStructItemCustomView(this, "Unk 28", "Unk_28"),
-                    new MultiStructItemCustomView(this, "Unk 29", "Unk_29"),
-                    new MultiStructItemCustomView(this, "Unk 30", "Unk_30"),
-                    new MultiStructItemCustomView(this, "Unk 31", "Unk_31"),
-                    new MultiStructItemCustomView(this, "Unk 32", "Unk_32"),
-                    new MultiStructItemCustomView(this, "Unk 33", "Unk_33"),
-                    new MultiStructItemCustomView(this, "Unk 34", "Unk_34"),
-                    new MultiStructItemCustomView(this, "Unk 35", "Unk_35"),
-                    new MultiStructItemCustomView(this, "Unk 36", "Unk_36"),
-                    new MultiStructItemCustomView(this, "Unk 37", "Unk_37"),
-                    new MultiStructItemCustomView(this, "Unk 38", "Unk_38"),
-                    new MultiStructItemCustomView(this, "Unk 39", "Unk_39"),
-                    new MultiStructItemCustomView(this, "Unk 40", "Unk_40"),
-                    new MultiStructItemCustomView(this, "Unk 41", "Unk_41"),
-                    new MultiStructItemCustomView(this, "Unk 42", "Unk_42"),
-                    new MultiStructItemCustomView(this, "Unk 43", "Unk_43"),
-                    new MultiStructItemCustomView(this, "Unk 44", "Unk_44"),
-                    new MultiStructItemCustomView(this, "Unk 45", "Unk_45"),
-                    new MultiStructItemCustomView(this, "Unk 46", "Unk_46"),
-                    new MultiStructItemCustomView(this, "Unk 47", "Unk_47"),
-                    new MultiStructItemCustomView(this, "Unk 48", "Unk_48"),
-                    new MultiStructItemCustomView(this, "Unk 49", "Unk_49"),
-                    new MultiStructItemCustomView(this, "Unk 50", "Unk_50"),
-                    new MultiStructItemCustomView(this, "Unk 51", "Unk_51"),
-                    new MultiStructItemCustomView(this, "Unk 52", "Unk_52"),
-                    new MultiStructItemCustomView(this, "Unk 53", "Unk_53"),
-                    new MultiStructItemCustomView(this, "Unk 54", "Unk_54"),
-                    new MultiStructItemCustomView(this, "Unk 55", "Unk_55"),
+                    new MultiStructItemCustomView(this, "Gravity", "Gravity", "Gravity_offset"),
+                    new MultiStructItemCustomView(this, "Gravity Speed Rate", "Gravity_Speed_Rate", "Gravity_Speed_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1", "Unk_1_offset"),
+                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2", "Unk_2_offset"),
+                    new MultiStructItemCustomView(this, "Unk 3", "Unk_3", "Unk_3_offset"),
+                    new MultiStructItemCustomView(this, "Unk 4", "Unk_4", "Unk_4_offset"),
+                    new MultiStructItemCustomView(this, "Unk 5", "Unk_5", "Unk_5_offset"),
+                    new MultiStructItemCustomView(this, "Unk 6", "Unk_6", "Unk_6_offset"),
+                    new MultiStructItemCustomView(this, "Unk 7", "Unk_7", "Unk_7_offset"),
+                    new MultiStructItemCustomView(this, "Unk 8", "Unk_8", "Unk_8_offset"),
+                    new MultiStructItemCustomView(this, "Unk 9", "Unk_9", "Unk_9_offset"),
+                    new MultiStructItemCustomView(this, "Unk 10", "Unk_10", "Unk_10_offset"),
+                    new MultiStructItemCustomView(this, "Unk 11", "Unk_11", "Unk_11_offset"),
+                    new MultiStructItemCustomView(this, "Unk 12", "Unk_12", "Unk_12_offset"),
+                    new MultiStructItemCustomView(this, "Unk 13", "Unk_13", "Unk_13_offset"),
+                    new MultiStructItemCustomView(this, "Unk 14", "Unk_14", "Unk_14_offset"),
+                    new MultiStructItemCustomView(this, "Unk 15", "Unk_15", "Unk_15_offset"),
+                    new MultiStructItemCustomView(this, "Unk 16", "Unk_16", "Unk_16_offset"),
+                    new MultiStructItemCustomView(this, "Unk 17", "Unk_17", "Unk_17_offset"),
+                    new MultiStructItemCustomView(this, "Unk 18", "Unk_18", "Unk_18_offset"),
+                    new MultiStructItemCustomView(this, "Unk 19", "Unk_19", "Unk_19_offset"),
+                    new MultiStructItemCustomView(this, "Unk 20", "Unk_20", "Unk_20_offset"),
+                    new MultiStructItemCustomView(this, "Unk 21", "Unk_21", "Unk_21_offset"),
+                    new MultiStructItemCustomView(this, "Unk 22", "Unk_22", "Unk_22_offset"),
+                    new MultiStructItemCustomView(this, "Unk 23", "Unk_23", "Unk_23_offset"),
+                    new MultiStructItemCustomView(this, "Unk 24", "Unk_24", "Unk_24_offset"),
+                    new MultiStructItemCustomView(this, "Unk 25", "Unk_25", "Unk_25_offset"),
+                    new MultiStructItemCustomView(this, "Unk 26", "Unk_26", "Unk_26_offset"),
+                    new MultiStructItemCustomView(this, "Unk 27", "Unk_27", "Unk_27_offset"),
+                    new MultiStructItemCustomView(this, "Unk 28", "Unk_28", "Unk_28_offset"),
+                    new MultiStructItemCustomView(this, "Unk 29", "Unk_29", "Unk_29_offset"),
+                    new MultiStructItemCustomView(this, "Unk 30", "Unk_30", "Unk_30_offset"),
+                    new MultiStructItemCustomView(this, "Unk 31", "Unk_31", "Unk_31_offset"),
+                    new MultiStructItemCustomView(this, "Unk 32", "Unk_32", "Unk_32_offset"),
+                    new MultiStructItemCustomView(this, "Unk 33", "Unk_33", "Unk_33_offset"),
+                    new MultiStructItemCustomView(this, "Unk 34", "Unk_34", "Unk_34_offset"),
+                    new MultiStructItemCustomView(this, "Unk 35", "Unk_35", "Unk_35_offset"),
+                    new MultiStructItemCustomView(this, "Unk 36", "Unk_36", "Unk_36_offset"),
+                    new MultiStructItemCustomView(this, "Unk 37", "Unk_37", "Unk_37_offset"),
+                    new MultiStructItemCustomView(this, "Unk 38", "Unk_38", "Unk_38_offset"),
+                    new MultiStructItemCustomView(this, "Unk 39", "Unk_39", "Unk_39_offset"),
+                    new MultiStructItemCustomView(this, "Unk 40", "Unk_40", "Unk_40_offset"),
+                    new MultiStructItemCustomView(this, "Unk 41", "Unk_41", "Unk_41_offset"),
+                    new MultiStructItemCustomView(this, "Unk 42", "Unk_42", "Unk_42_offset"),
+                    new MultiStructItemCustomView(this, "Unk 43", "Unk_43", "Unk_43_offset"),
+                    new MultiStructItemCustomView(this, "Unk 44", "Unk_44", "Unk_44_offset"),
+                    new MultiStructItemCustomView(this, "Unk 45", "Unk_45", "Unk_45_offset"),
+                    new MultiStructItemCustomView(this, "Unk 46", "Unk_46", "Unk_46_offset"),
+                    new MultiStructItemCustomView(this, "Unk 47", "Unk_47", "Unk_47_offset"),
+                    new MultiStructItemCustomView(this, "Unk 48", "Unk_48", "Unk_48_offset"),
+                    new MultiStructItemCustomView(this, "Unk 49", "Unk_49", "Unk_49_offset"),
+                    new MultiStructItemCustomView(this, "Unk 50", "Unk_50", "Unk_50_offset"),
+                    new MultiStructItemCustomView(this, "Unk 51", "Unk_51", "Unk_51_offset"),
+                    new MultiStructItemCustomView(this, "Unk 52", "Unk_52", "Unk_52_offset"),
+                    new MultiStructItemCustomView(this, "Unk 53", "Unk_53", "Unk_53_offset"),
+                    new MultiStructItemCustomView(this, "Unk 54", "Unk_54", "Unk_54_offset"),
+                    new MultiStructItemCustomView(this, "Unk 55", "Unk_55", "Unk_55_offset"),
                 };
             }
         }
@@ -1263,6 +1491,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_56_offset { get; private set; }
+
             protected uint Unk_57_raw;
             public const string Unk_57_displayName = "Unk 57";
             public const int Unk_57_sortIndex = 100;
@@ -1277,6 +1508,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_57));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_57_offset { get; private set; }
 
             protected uint Unk_58_raw;
             public const string Unk_58_displayName = "Unk 58";
@@ -1293,6 +1527,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_58_offset { get; private set; }
+
             protected float Unk_59_raw;
             public const string Unk_59_displayName = "Unk 59";
             public const int Unk_59_sortIndex = 200;
@@ -1307,6 +1544,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_59));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_59_offset { get; private set; }
 
             protected float Unk_60_raw;
             public const string Unk_60_displayName = "Unk 60";
@@ -1323,6 +1563,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_60_offset { get; private set; }
+
             protected float Unk_61_raw;
             public const string Unk_61_displayName = "Unk 61";
             public const int Unk_61_sortIndex = 300;
@@ -1337,6 +1580,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_61));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_61_offset { get; private set; }
 
             protected float Unk_62_raw;
             public const string Unk_62_displayName = "Unk 62";
@@ -1353,6 +1599,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_62_offset { get; private set; }
+
             protected float Unk_63_raw;
             public const string Unk_63_displayName = "Unk 63";
             public const int Unk_63_sortIndex = 400;
@@ -1367,6 +1616,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_63));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_63_offset { get; private set; }
 
             protected float Unk_64_raw;
             public const string Unk_64_displayName = "Unk 64";
@@ -1383,6 +1635,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_64_offset { get; private set; }
+
             protected float Unk_65_raw;
             public const string Unk_65_displayName = "Unk 65";
             public const int Unk_65_sortIndex = 500;
@@ -1397,6 +1652,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_65));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_65_offset { get; private set; }
 
             protected float Health_Initial_Value_raw;
             public const string Health_Initial_Value_displayName = "Health Initial Value";
@@ -1413,6 +1671,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Health_Initial_Value_offset { get; private set; }
+
             protected float Health_Max_Value_raw;
             public const string Health_Max_Value_displayName = "Health Max Value";
             public const int Health_Max_Value_sortIndex = 600;
@@ -1427,6 +1688,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Health_Max_Value));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Health_Max_Value_offset { get; private set; }
 
             protected float Health_Damage_Recovery_Rate_raw;
             public const string Health_Damage_Recovery_Rate_displayName = "Health Damage Recovery Rate";
@@ -1443,6 +1707,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Health_Damage_Recovery_Rate_offset { get; private set; }
+
             protected float Health_Damage_Recovery_Wait_Time_raw;
             public const string Health_Damage_Recovery_Wait_Time_displayName = "Health Damage Recovery Wait Time";
             public const int Health_Damage_Recovery_Wait_Time_sortIndex = 700;
@@ -1457,6 +1724,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Health_Damage_Recovery_Wait_Time));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Health_Damage_Recovery_Wait_Time_offset { get; private set; }
 
             protected float Health_Damage_Recovery_Interval_raw;
             public const string Health_Damage_Recovery_Interval_displayName = "Health Damage Recovery Interval";
@@ -1473,6 +1743,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Health_Damage_Recovery_Interval_offset { get; private set; }
+
             protected float Health_Damage_Recovery_Value_raw;
             public const string Health_Damage_Recovery_Value_displayName = "Health Damage Recovery Value";
             public const int Health_Damage_Recovery_Value_sortIndex = 800;
@@ -1487,6 +1760,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Health_Damage_Recovery_Value));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Health_Damage_Recovery_Value_offset { get; private set; }
 
             protected float Stamina_Initial_Value_raw;
             public const string Stamina_Initial_Value_displayName = "Stamina Initial Value";
@@ -1503,6 +1779,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Initial_Value_offset { get; private set; }
+
             protected float Stamina_Max_Value_raw;
             public const string Stamina_Max_Value_displayName = "Stamina Max Value";
             public const int Stamina_Max_Value_sortIndex = 900;
@@ -1517,6 +1796,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Max_Value));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Max_Value_offset { get; private set; }
 
             protected float Stamina_Min_Value_raw;
             public const string Stamina_Min_Value_displayName = "Stamina Min Value";
@@ -1533,6 +1815,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Min_Value_offset { get; private set; }
+
             protected float Stamina_Tired_Value_raw;
             public const string Stamina_Tired_Value_displayName = "Stamina Tired Value";
             public const int Stamina_Tired_Value_sortIndex = 1000;
@@ -1547,6 +1832,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Tired_Value));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Tired_Value_offset { get; private set; }
 
             protected float Stamina_Auto_Recover_raw;
             public const string Stamina_Auto_Recover_displayName = "Stamina Auto Recover";
@@ -1563,6 +1851,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Auto_Recover_offset { get; private set; }
+
             protected float Stamina_Auto_Max_Reduce_raw;
             public const string Stamina_Auto_Max_Reduce_displayName = "Stamina Auto Max Reduce";
             public const int Stamina_Auto_Max_Reduce_sortIndex = 1100;
@@ -1577,6 +1868,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Auto_Max_Reduce));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Auto_Max_Reduce_offset { get; private set; }
 
             protected float Stamina_Auto_Max_Reduce_Time_raw;
             public const string Stamina_Auto_Max_Reduce_Time_displayName = "Stamina Auto Max Reduce Time";
@@ -1593,6 +1887,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Auto_Max_Reduce_Time_offset { get; private set; }
+
             protected float Stamina_IB_Unknown_raw;
             public const string Stamina_IB_Unknown_displayName = "Stamina IB Unknown";
             public const int Stamina_IB_Unknown_sortIndex = 1200;
@@ -1607,6 +1904,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_IB_Unknown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_IB_Unknown_offset { get; private set; }
 
             protected float Stamina_Escape_Dash_Rate_raw;
             public const string Stamina_Escape_Dash_Rate_displayName = "Stamina Escape Dash Rate";
@@ -1623,6 +1923,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Escape_Dash_Rate_offset { get; private set; }
+
             protected float Stamina_Out_of_Battle_Rate_raw;
             public const string Stamina_Out_of_Battle_Rate_displayName = "Stamina Out of Battle Rate";
             public const int Stamina_Out_of_Battle_Rate_sortIndex = 1300;
@@ -1637,6 +1940,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Out_of_Battle_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Out_of_Battle_Rate_offset { get; private set; }
 
             protected float Stamina_Reduce_Rate_Limit_Trigger_raw;
             public const string Stamina_Reduce_Rate_Limit_Trigger_displayName = "Stamina Reduce Rate Limit Trigger";
@@ -1653,6 +1959,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Reduce_Rate_Limit_Trigger_offset { get; private set; }
+
             protected float Stamina_Reduce_Rate_Limit_Time_raw;
             public const string Stamina_Reduce_Rate_Limit_Time_displayName = "Stamina Reduce Rate Limit Time";
             public const int Stamina_Reduce_Rate_Limit_Time_sortIndex = 1400;
@@ -1667,6 +1976,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Reduce_Rate_Limit_Time));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Reduce_Rate_Limit_Time_offset { get; private set; }
 
             protected float Stamina_Mount_Endurance_Rate_raw;
             public const string Stamina_Mount_Endurance_Rate_displayName = "Stamina Mount Endurance Rate";
@@ -1683,6 +1995,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Mount_Endurance_Rate_offset { get; private set; }
+
             protected float Stamina_Consumption_Dodge_raw;
             public const string Stamina_Consumption_Dodge_displayName = "Stamina Consumption: Dodge";
             public const int Stamina_Consumption_Dodge_sortIndex = 1500;
@@ -1697,6 +2012,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Consumption_Dodge));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Dodge_offset { get; private set; }
 
             protected float Stamina_Consumption_LS_Counter_raw;
             public const string Stamina_Consumption_LS_Counter_displayName = "Stamina Consumption: LS Counter";
@@ -1713,6 +2031,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_LS_Counter_offset { get; private set; }
+
             protected float Stamina_Consumption_SA_Wild_Swing_raw;
             public const string Stamina_Consumption_SA_Wild_Swing_displayName = "Stamina Consumption: SA Wild Swing";
             public const int Stamina_Consumption_SA_Wild_Swing_sortIndex = 1600;
@@ -1727,6 +2048,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Consumption_SA_Wild_Swing));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_SA_Wild_Swing_offset { get; private set; }
 
             protected float Stamina_Consumption_Unk1_raw;
             public const string Stamina_Consumption_Unk1_displayName = "Stamina Consumption: Unk1";
@@ -1743,6 +2067,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Unk1_offset { get; private set; }
+
             protected float Stamina_Consumption_Unk2_raw;
             public const string Stamina_Consumption_Unk2_displayName = "Stamina Consumption: Unk2";
             public const int Stamina_Consumption_Unk2_sortIndex = 1700;
@@ -1757,6 +2084,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Consumption_Unk2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Unk2_offset { get; private set; }
 
             protected float Stamina_Consumption_Unk3_raw;
             public const string Stamina_Consumption_Unk3_displayName = "Stamina Consumption: Unk3";
@@ -1773,6 +2103,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Unk3_offset { get; private set; }
+
             protected float Stamina_Consumption_Bow_Shoot_raw;
             public const string Stamina_Consumption_Bow_Shoot_displayName = "Stamina Consumption: Bow Shoot";
             public const int Stamina_Consumption_Bow_Shoot_sortIndex = 1800;
@@ -1787,6 +2120,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Consumption_Bow_Shoot));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Bow_Shoot_offset { get; private set; }
 
             protected float Stamina_Consumption_Unk4_raw;
             public const string Stamina_Consumption_Unk4_displayName = "Stamina Consumption: Unk4";
@@ -1803,6 +2139,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Unk4_offset { get; private set; }
+
             protected float Stamina_Consumption_Unk5_raw;
             public const string Stamina_Consumption_Unk5_displayName = "Stamina Consumption: Unk5";
             public const int Stamina_Consumption_Unk5_sortIndex = 1900;
@@ -1817,6 +2156,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Consumption_Unk5));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Unk5_offset { get; private set; }
 
             protected float Stamina_Consumption_Unk6_raw;
             public const string Stamina_Consumption_Unk6_displayName = "Stamina Consumption: Unk6";
@@ -1833,6 +2175,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Unk6_offset { get; private set; }
+
             protected float Stamina_Consumption_Bow_Charge_Step_raw;
             public const string Stamina_Consumption_Bow_Charge_Step_displayName = "Stamina Consumption: Bow Charge Step";
             public const int Stamina_Consumption_Bow_Charge_Step_sortIndex = 2000;
@@ -1847,6 +2192,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Consumption_Bow_Charge_Step));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Bow_Charge_Step_offset { get; private set; }
 
             protected float Stamina_Consumption_Unk7_raw;
             public const string Stamina_Consumption_Unk7_displayName = "Stamina Consumption: Unk7";
@@ -1863,6 +2211,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Unk7_offset { get; private set; }
+
             protected float Stamina_Consumption_Claw_Attack_1_raw;
             public const string Stamina_Consumption_Claw_Attack_1_displayName = "Stamina Consumption: Claw Attack 1";
             public const int Stamina_Consumption_Claw_Attack_1_sortIndex = 2100;
@@ -1877,6 +2228,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Consumption_Claw_Attack_1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Claw_Attack_1_offset { get; private set; }
 
             protected float Stamina_Consumption_Claw_Attack_2_raw;
             public const string Stamina_Consumption_Claw_Attack_2_displayName = "Stamina Consumption: Claw Attack 2";
@@ -1893,6 +2247,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Claw_Attack_2_offset { get; private set; }
+
             protected float Stamina_Consumption_Claw_Attack_3_raw;
             public const string Stamina_Consumption_Claw_Attack_3_displayName = "Stamina Consumption: Claw Attack 3";
             public const int Stamina_Consumption_Claw_Attack_3_sortIndex = 2200;
@@ -1907,6 +2264,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Consumption_Claw_Attack_3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Claw_Attack_3_offset { get; private set; }
 
             protected float Stamina_Consumption_Claw_Attack_4_raw;
             public const string Stamina_Consumption_Claw_Attack_4_displayName = "Stamina Consumption: Claw Attack 4";
@@ -1923,6 +2283,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Claw_Attack_4_offset { get; private set; }
+
             protected float Stamina_Consumption_Unk8_raw;
             public const string Stamina_Consumption_Unk8_displayName = "Stamina Consumption: Unk8";
             public const int Stamina_Consumption_Unk8_sortIndex = 2300;
@@ -1937,6 +2300,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Consumption_Unk8));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Unk8_offset { get; private set; }
 
             protected float Stamina_Consumption_Unk9_raw;
             public const string Stamina_Consumption_Unk9_displayName = "Stamina Consumption: Unk9";
@@ -1953,6 +2319,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Consumption_Unk9_offset { get; private set; }
+
             protected float Stamina_Time_Reduce_mCore_Unk1_raw;
             public const string Stamina_Time_Reduce_mCore_Unk1_displayName = "Stamina Time Reduce mCore: Unk1";
             public const int Stamina_Time_Reduce_mCore_Unk1_sortIndex = 2400;
@@ -1967,6 +2336,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk1_offset { get; private set; }
 
             protected float Stamina_Time_Reduce_mCore_Unk2_raw;
             public const string Stamina_Time_Reduce_mCore_Unk2_displayName = "Stamina Time Reduce mCore: Unk2";
@@ -1983,6 +2355,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk2_offset { get; private set; }
+
             protected float Stamina_Time_Reduce_mCore_Unk3_raw;
             public const string Stamina_Time_Reduce_mCore_Unk3_displayName = "Stamina Time Reduce mCore: Unk3";
             public const int Stamina_Time_Reduce_mCore_Unk3_sortIndex = 2500;
@@ -1997,6 +2372,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk3_offset { get; private set; }
 
             protected float Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain_raw;
             public const string Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain_displayName = "Stamina Time Reduce mCore: Hammer/Bow Charge Drain";
@@ -2013,6 +2391,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain_offset { get; private set; }
+
             protected float Stamina_Time_Reduce_mCore_Unk4_raw;
             public const string Stamina_Time_Reduce_mCore_Unk4_displayName = "Stamina Time Reduce mCore: Unk4";
             public const int Stamina_Time_Reduce_mCore_Unk4_sortIndex = 2600;
@@ -2027,6 +2408,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk4_offset { get; private set; }
 
             protected float Stamina_Time_Reduce_mCore_Unk5_raw;
             public const string Stamina_Time_Reduce_mCore_Unk5_displayName = "Stamina Time Reduce mCore: Unk5";
@@ -2043,6 +2427,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk5_offset { get; private set; }
+
             protected float Stamina_Time_Reduce_mCore_Unk6_raw;
             public const string Stamina_Time_Reduce_mCore_Unk6_displayName = "Stamina Time Reduce mCore: Unk6";
             public const int Stamina_Time_Reduce_mCore_Unk6_sortIndex = 2700;
@@ -2057,6 +2444,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk6));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk6_offset { get; private set; }
 
             protected float Stamina_Time_Reduce_mCore_Unk7_raw;
             public const string Stamina_Time_Reduce_mCore_Unk7_displayName = "Stamina Time Reduce mCore: Unk7";
@@ -2073,6 +2463,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk7_offset { get; private set; }
+
             protected float Stamina_Time_Reduce_mCore_Lance_s_Power_Guard_raw;
             public const string Stamina_Time_Reduce_mCore_Lance_s_Power_Guard_displayName = "Stamina Time Reduce mCore: Lance's Power Guard";
             public const int Stamina_Time_Reduce_mCore_Lance_s_Power_Guard_sortIndex = 2800;
@@ -2087,6 +2480,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Lance_s_Power_Guard));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Lance_s_Power_Guard_offset { get; private set; }
 
             protected float Stamina_Time_Reduce_mCore_Unk8_raw;
             public const string Stamina_Time_Reduce_mCore_Unk8_displayName = "Stamina Time Reduce mCore: Unk8";
@@ -2103,6 +2499,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk8_offset { get; private set; }
+
             protected float Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled__raw;
             public const string Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled__displayName = "Stamina Time Reduce mCore: Clutch Drain (Whilst Grappled)";
             public const int Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled__sortIndex = 2900;
@@ -2117,6 +2516,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled__offset { get; private set; }
 
             protected float Stamina_Time_Reduce_mCore_Clutch_Counter_raw;
             public const string Stamina_Time_Reduce_mCore_Clutch_Counter_displayName = "Stamina Time Reduce mCore: Clutch-Counter";
@@ -2133,6 +2535,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Clutch_Counter_offset { get; private set; }
+
             protected float Stamina_Time_Reduce_mCore_Unk9_raw;
             public const string Stamina_Time_Reduce_mCore_Unk9_displayName = "Stamina Time Reduce mCore: Unk9";
             public const int Stamina_Time_Reduce_mCore_Unk9_sortIndex = 3000;
@@ -2147,6 +2552,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk9));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk9_offset { get; private set; }
 
             protected float Stamina_Time_Reduce_mCore_Unk10_raw;
             public const string Stamina_Time_Reduce_mCore_Unk10_displayName = "Stamina Time Reduce mCore: Unk10";
@@ -2163,6 +2571,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk10_offset { get; private set; }
+
             protected float Stamina_Time_Reduce_mCore_Unk11_raw;
             public const string Stamina_Time_Reduce_mCore_Unk11_displayName = "Stamina Time Reduce mCore: Unk11";
             public const int Stamina_Time_Reduce_mCore_Unk11_sortIndex = 3100;
@@ -2177,6 +2588,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk11));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk11_offset { get; private set; }
 
             protected float Stamina_Time_Reduce_mCore_Unk12_raw;
             public const string Stamina_Time_Reduce_mCore_Unk12_displayName = "Stamina Time Reduce mCore: Unk12";
@@ -2193,6 +2607,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk12_offset { get; private set; }
+
             protected float Stamina_Time_Reduce_mCore_Unk13_raw;
             public const string Stamina_Time_Reduce_mCore_Unk13_displayName = "Stamina Time Reduce mCore: Unk13";
             public const int Stamina_Time_Reduce_mCore_Unk13_sortIndex = 3200;
@@ -2207,6 +2624,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Time_Reduce_mCore_Unk13));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk13_offset { get; private set; }
 
             protected float Stamina_Time_Reduce_mCore_Unk14_raw;
             public const string Stamina_Time_Reduce_mCore_Unk14_displayName = "Stamina Time Reduce mCore: Unk14";
@@ -2223,6 +2643,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stamina_Time_Reduce_mCore_Unk14_offset { get; private set; }
+
             protected float Mount_Reduce_Stamina_mCore_Unk1_raw;
             public const string Mount_Reduce_Stamina_mCore_Unk1_displayName = "Mount Reduce Stamina mCore: Unk1";
             public const int Mount_Reduce_Stamina_mCore_Unk1_sortIndex = 3300;
@@ -2237,6 +2660,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Mount_Reduce_Stamina_mCore_Unk1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Mount_Reduce_Stamina_mCore_Unk1_offset { get; private set; }
 
             protected float Mount_Reduce_Stamina_mCore_Unk2_raw;
             public const string Mount_Reduce_Stamina_mCore_Unk2_displayName = "Mount Reduce Stamina mCore: Unk2";
@@ -2253,6 +2679,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Mount_Reduce_Stamina_mCore_Unk2_offset { get; private set; }
+
             protected float Mount_Life_Reduce_Stamina_mCore_Unk1_raw;
             public const string Mount_Life_Reduce_Stamina_mCore_Unk1_displayName = "Mount Life Reduce Stamina mCore: Unk1";
             public const int Mount_Life_Reduce_Stamina_mCore_Unk1_sortIndex = 3400;
@@ -2267,6 +2696,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Mount_Life_Reduce_Stamina_mCore_Unk1));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Mount_Life_Reduce_Stamina_mCore_Unk1_offset { get; private set; }
 
             protected float Mount_Life_Reduce_Stamina_mCore_Unk2_raw;
             public const string Mount_Life_Reduce_Stamina_mCore_Unk2_displayName = "Mount Life Reduce Stamina mCore: Unk2";
@@ -2283,6 +2715,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Mount_Life_Reduce_Stamina_mCore_Unk2_offset { get; private set; }
+
             protected float Mount_Life_Reduce_Stamina_mCore_Unk3_raw;
             public const string Mount_Life_Reduce_Stamina_mCore_Unk3_displayName = "Mount Life Reduce Stamina mCore: Unk3";
             public const int Mount_Life_Reduce_Stamina_mCore_Unk3_sortIndex = 3500;
@@ -2297,6 +2732,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Mount_Life_Reduce_Stamina_mCore_Unk3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Mount_Life_Reduce_Stamina_mCore_Unk3_offset { get; private set; }
 
             protected float Mount_Life_Reduce_Stamina_mCore_Unk4_raw;
             public const string Mount_Life_Reduce_Stamina_mCore_Unk4_displayName = "Mount Life Reduce Stamina mCore: Unk4";
@@ -2313,6 +2751,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Mount_Life_Reduce_Stamina_mCore_Unk4_offset { get; private set; }
+
             protected float Unk_66_raw;
             public const string Unk_66_displayName = "Unk 66";
             public const int Unk_66_sortIndex = 3600;
@@ -2327,6 +2768,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_66));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_66_offset { get; private set; }
 
             protected float Unk_67_raw;
             public const string Unk_67_displayName = "Unk 67";
@@ -2343,6 +2787,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_67_offset { get; private set; }
+
             protected float Unk_68_raw;
             public const string Unk_68_displayName = "Unk 68";
             public const int Unk_68_sortIndex = 3700;
@@ -2357,6 +2804,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_68));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_68_offset { get; private set; }
 
             protected float Explosive_HR_Fixed_Attack_Rate_raw;
             public const string Explosive_HR_Fixed_Attack_Rate_displayName = "Explosive HR Fixed Attack Rate";
@@ -2373,6 +2823,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Explosive_HR_Fixed_Attack_Rate_offset { get; private set; }
+
             protected float Explosive_MR_Fixed_Attack_Rate_raw;
             public const string Explosive_MR_Fixed_Attack_Rate_displayName = "Explosive MR Fixed Attack Rate";
             public const int Explosive_MR_Fixed_Attack_Rate_sortIndex = 3800;
@@ -2387,6 +2840,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Explosive_MR_Fixed_Attack_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Explosive_MR_Fixed_Attack_Rate_offset { get; private set; }
 
             protected float Critical_Attack_Rate_raw;
             public const string Critical_Attack_Rate_displayName = "Critical Attack Rate";
@@ -2403,6 +2859,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Critical_Attack_Rate_offset { get; private set; }
+
             protected float Bad_Critical_Attack_Rate_raw;
             public const string Bad_Critical_Attack_Rate_displayName = "Bad Critical Attack Rate";
             public const int Bad_Critical_Attack_Rate_sortIndex = 3900;
@@ -2417,6 +2876,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Bad_Critical_Attack_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Bad_Critical_Attack_Rate_offset { get; private set; }
 
             protected byte Sharpness_Recoil_Reduction__raw;
             public const string Sharpness_Recoil_Reduction__displayName = "Sharpness Recoil Reduction %";
@@ -2433,6 +2895,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Sharpness_Recoil_Reduction__offset { get; private set; }
+
             protected byte Sharpness_Recoil_Reduction_Value_raw;
             public const string Sharpness_Recoil_Reduction_Value_displayName = "Sharpness Recoil Reduction Value";
             public const int Sharpness_Recoil_Reduction_Value_sortIndex = 4000;
@@ -2447,6 +2912,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Sharpness_Recoil_Reduction_Value));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Sharpness_Recoil_Reduction_Value_offset { get; private set; }
 
             protected float Unk_69_raw;
             public const string Unk_69_displayName = "Unk 69";
@@ -2463,6 +2931,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_69_offset { get; private set; }
+
             protected float Unk_70_raw;
             public const string Unk_70_displayName = "Unk 70";
             public const int Unk_70_sortIndex = 4100;
@@ -2477,6 +2948,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_70));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_70_offset { get; private set; }
 
             protected float Unk_71_raw;
             public const string Unk_71_displayName = "Unk 71";
@@ -2493,6 +2967,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_71_offset { get; private set; }
+
             protected float Unk_72_raw;
             public const string Unk_72_displayName = "Unk 72";
             public const int Unk_72_sortIndex = 4200;
@@ -2507,6 +2984,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_72));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_72_offset { get; private set; }
 
             protected uint Unk_73_raw;
             public const string Unk_73_displayName = "Unk 73";
@@ -2523,6 +3003,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_73_offset { get; private set; }
+
             protected float Physical_Attack_Rate_Limit_raw;
             public const string Physical_Attack_Rate_Limit_displayName = "Physical Attack Rate Limit";
             public const int Physical_Attack_Rate_Limit_sortIndex = 4300;
@@ -2537,6 +3020,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Physical_Attack_Rate_Limit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Physical_Attack_Rate_Limit_offset { get; private set; }
 
             protected float Elemental_Attack_Rate_Limit_raw;
             public const string Elemental_Attack_Rate_Limit_displayName = "Elemental Attack Rate Limit";
@@ -2553,6 +3039,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Elemental_Attack_Rate_Limit_offset { get; private set; }
+
             protected float Condition_Elemental_Attack_Flat_Limit_raw;
             public const string Condition_Elemental_Attack_Flat_Limit_displayName = "Condition Elemental Attack Flat Limit";
             public const int Condition_Elemental_Attack_Flat_Limit_sortIndex = 4400;
@@ -2567,6 +3056,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Condition_Elemental_Attack_Flat_Limit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Condition_Elemental_Attack_Flat_Limit_offset { get; private set; }
 
             protected float Bowgun_Elemental_Attack_Rate_Limit_raw;
             public const string Bowgun_Elemental_Attack_Rate_Limit_displayName = "Bowgun Elemental Attack Rate Limit";
@@ -2583,6 +3075,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Bowgun_Elemental_Attack_Rate_Limit_offset { get; private set; }
+
             protected float Condition_Attack_Rate_Limit_raw;
             public const string Condition_Attack_Rate_Limit_displayName = "Condition Attack Rate Limit";
             public const int Condition_Attack_Rate_Limit_sortIndex = 4500;
@@ -2597,6 +3092,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Condition_Attack_Rate_Limit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Condition_Attack_Rate_Limit_offset { get; private set; }
 
             protected float Stun_Attack_Rate_Limit_raw;
             public const string Stun_Attack_Rate_Limit_displayName = "Stun Attack Rate Limit";
@@ -2613,6 +3111,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Stun_Attack_Rate_Limit_offset { get; private set; }
+
             protected float Stamina_Attack_Rate_Limit_raw;
             public const string Stamina_Attack_Rate_Limit_displayName = "Stamina Attack Rate Limit";
             public const int Stamina_Attack_Rate_Limit_sortIndex = 4600;
@@ -2627,6 +3128,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Stamina_Attack_Rate_Limit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Stamina_Attack_Rate_Limit_offset { get; private set; }
 
             protected float Mount_Attack_Rate_Limit_raw;
             public const string Mount_Attack_Rate_Limit_displayName = "Mount Attack Rate Limit";
@@ -2643,6 +3147,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Mount_Attack_Rate_Limit_offset { get; private set; }
+
             protected float Super_Armor_Stun_Damage_Rate_raw;
             public const string Super_Armor_Stun_Damage_Rate_displayName = "Super Armor Stun Damage Rate";
             public const int Super_Armor_Stun_Damage_Rate_sortIndex = 4700;
@@ -2657,6 +3164,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Super_Armor_Stun_Damage_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Super_Armor_Stun_Damage_Rate_offset { get; private set; }
 
             protected float Hyper_Armor_Damage_Rate_raw;
             public const string Hyper_Armor_Damage_Rate_displayName = "Hyper Armor Damage Rate";
@@ -2673,6 +3183,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Hyper_Armor_Damage_Rate_offset { get; private set; }
+
             protected float Hyper_Armor_Stun_Damage_Rate_raw;
             public const string Hyper_Armor_Stun_Damage_Rate_displayName = "Hyper Armor Stun Damage Rate";
             public const int Hyper_Armor_Stun_Damage_Rate_sortIndex = 4800;
@@ -2687,6 +3200,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Hyper_Armor_Stun_Damage_Rate));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Hyper_Armor_Stun_Damage_Rate_offset { get; private set; }
 
             protected float Gunner_Defense_Rate_raw;
             public const string Gunner_Defense_Rate_displayName = "Gunner Defense Rate";
@@ -2703,6 +3219,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Gunner_Defense_Rate_offset { get; private set; }
+
             protected byte Gunner_Elemental_Resistance_Bonus_raw;
             public const string Gunner_Elemental_Resistance_Bonus_displayName = "Gunner Elemental Resistance Bonus";
             public const int Gunner_Elemental_Resistance_Bonus_sortIndex = 4900;
@@ -2717,6 +3236,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Gunner_Elemental_Resistance_Bonus));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Gunner_Elemental_Resistance_Bonus_offset { get; private set; }
 
             protected float Lava_Damage_Interval_Time_raw;
             public const string Lava_Damage_Interval_Time_displayName = "Lava Damage Interval Time";
@@ -2733,6 +3255,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Lava_Damage_Interval_Time_offset { get; private set; }
+
             protected float Lava_Damage_Damage_raw;
             public const string Lava_Damage_Damage_displayName = "Lava Damage Damage";
             public const int Lava_Damage_Damage_sortIndex = 5000;
@@ -2747,6 +3272,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Lava_Damage_Damage));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Lava_Damage_Damage_offset { get; private set; }
 
             protected float Acid_Damage_Interval_Time_raw;
             public const string Acid_Damage_Interval_Time_displayName = "Acid Damage Interval Time";
@@ -2763,6 +3291,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Acid_Damage_Interval_Time_offset { get; private set; }
+
             protected float Acid_Damage_Damage_raw;
             public const string Acid_Damage_Damage_displayName = "Acid Damage Damage";
             public const int Acid_Damage_Damage_sortIndex = 5100;
@@ -2778,6 +3309,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Acid_Damage_Damage_offset { get; private set; }
+
             public const int lastSortIndex = 5150;
 
             public static ObservableMhwStructCollection<Player_Params_3_> LoadData(BinaryReader reader) {
@@ -2792,107 +3326,209 @@ namespace MHW_Editor.Structs.PlData {
             public static Player_Params_3_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Player_Params_3_();
                 data.Index = i;
+                data.Unk_56_offset = reader.BaseStream.Position;
                 data.Unk_56_raw = reader.ReadSingle();
+                data.Unk_57_offset = reader.BaseStream.Position;
                 data.Unk_57_raw = reader.ReadUInt32();
+                data.Unk_58_offset = reader.BaseStream.Position;
                 data.Unk_58_raw = reader.ReadUInt32();
+                data.Unk_59_offset = reader.BaseStream.Position;
                 data.Unk_59_raw = reader.ReadSingle();
+                data.Unk_60_offset = reader.BaseStream.Position;
                 data.Unk_60_raw = reader.ReadSingle();
+                data.Unk_61_offset = reader.BaseStream.Position;
                 data.Unk_61_raw = reader.ReadSingle();
+                data.Unk_62_offset = reader.BaseStream.Position;
                 data.Unk_62_raw = reader.ReadSingle();
+                data.Unk_63_offset = reader.BaseStream.Position;
                 data.Unk_63_raw = reader.ReadSingle();
+                data.Unk_64_offset = reader.BaseStream.Position;
                 data.Unk_64_raw = reader.ReadSingle();
+                data.Unk_65_offset = reader.BaseStream.Position;
                 data.Unk_65_raw = reader.ReadSingle();
+                data.Health_Initial_Value_offset = reader.BaseStream.Position;
                 data.Health_Initial_Value_raw = reader.ReadSingle();
+                data.Health_Max_Value_offset = reader.BaseStream.Position;
                 data.Health_Max_Value_raw = reader.ReadSingle();
+                data.Health_Damage_Recovery_Rate_offset = reader.BaseStream.Position;
                 data.Health_Damage_Recovery_Rate_raw = reader.ReadSingle();
+                data.Health_Damage_Recovery_Wait_Time_offset = reader.BaseStream.Position;
                 data.Health_Damage_Recovery_Wait_Time_raw = reader.ReadSingle();
+                data.Health_Damage_Recovery_Interval_offset = reader.BaseStream.Position;
                 data.Health_Damage_Recovery_Interval_raw = reader.ReadSingle();
+                data.Health_Damage_Recovery_Value_offset = reader.BaseStream.Position;
                 data.Health_Damage_Recovery_Value_raw = reader.ReadSingle();
+                data.Stamina_Initial_Value_offset = reader.BaseStream.Position;
                 data.Stamina_Initial_Value_raw = reader.ReadSingle();
+                data.Stamina_Max_Value_offset = reader.BaseStream.Position;
                 data.Stamina_Max_Value_raw = reader.ReadSingle();
+                data.Stamina_Min_Value_offset = reader.BaseStream.Position;
                 data.Stamina_Min_Value_raw = reader.ReadSingle();
+                data.Stamina_Tired_Value_offset = reader.BaseStream.Position;
                 data.Stamina_Tired_Value_raw = reader.ReadSingle();
+                data.Stamina_Auto_Recover_offset = reader.BaseStream.Position;
                 data.Stamina_Auto_Recover_raw = reader.ReadSingle();
+                data.Stamina_Auto_Max_Reduce_offset = reader.BaseStream.Position;
                 data.Stamina_Auto_Max_Reduce_raw = reader.ReadSingle();
+                data.Stamina_Auto_Max_Reduce_Time_offset = reader.BaseStream.Position;
                 data.Stamina_Auto_Max_Reduce_Time_raw = reader.ReadSingle();
+                data.Stamina_IB_Unknown_offset = reader.BaseStream.Position;
                 data.Stamina_IB_Unknown_raw = reader.ReadSingle();
+                data.Stamina_Escape_Dash_Rate_offset = reader.BaseStream.Position;
                 data.Stamina_Escape_Dash_Rate_raw = reader.ReadSingle();
+                data.Stamina_Out_of_Battle_Rate_offset = reader.BaseStream.Position;
                 data.Stamina_Out_of_Battle_Rate_raw = reader.ReadSingle();
+                data.Stamina_Reduce_Rate_Limit_Trigger_offset = reader.BaseStream.Position;
                 data.Stamina_Reduce_Rate_Limit_Trigger_raw = reader.ReadSingle();
+                data.Stamina_Reduce_Rate_Limit_Time_offset = reader.BaseStream.Position;
                 data.Stamina_Reduce_Rate_Limit_Time_raw = reader.ReadSingle();
+                data.Stamina_Mount_Endurance_Rate_offset = reader.BaseStream.Position;
                 data.Stamina_Mount_Endurance_Rate_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Dodge_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Dodge_raw = reader.ReadSingle();
+                data.Stamina_Consumption_LS_Counter_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_LS_Counter_raw = reader.ReadSingle();
+                data.Stamina_Consumption_SA_Wild_Swing_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_SA_Wild_Swing_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Unk1_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Unk1_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Unk2_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Unk2_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Unk3_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Unk3_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Bow_Shoot_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Bow_Shoot_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Unk4_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Unk4_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Unk5_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Unk5_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Unk6_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Unk6_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Bow_Charge_Step_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Bow_Charge_Step_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Unk7_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Unk7_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Claw_Attack_1_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Claw_Attack_1_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Claw_Attack_2_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Claw_Attack_2_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Claw_Attack_3_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Claw_Attack_3_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Claw_Attack_4_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Claw_Attack_4_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Unk8_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Unk8_raw = reader.ReadSingle();
+                data.Stamina_Consumption_Unk9_offset = reader.BaseStream.Position;
                 data.Stamina_Consumption_Unk9_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk1_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk1_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk2_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk2_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk3_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk3_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk4_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk4_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk5_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk5_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk6_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk6_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk7_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk7_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Lance_s_Power_Guard_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Lance_s_Power_Guard_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk8_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk8_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled__offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled__raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Clutch_Counter_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Clutch_Counter_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk9_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk9_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk10_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk10_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk11_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk11_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk12_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk12_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk13_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk13_raw = reader.ReadSingle();
+                data.Stamina_Time_Reduce_mCore_Unk14_offset = reader.BaseStream.Position;
                 data.Stamina_Time_Reduce_mCore_Unk14_raw = reader.ReadSingle();
+                data.Mount_Reduce_Stamina_mCore_Unk1_offset = reader.BaseStream.Position;
                 data.Mount_Reduce_Stamina_mCore_Unk1_raw = reader.ReadSingle();
+                data.Mount_Reduce_Stamina_mCore_Unk2_offset = reader.BaseStream.Position;
                 data.Mount_Reduce_Stamina_mCore_Unk2_raw = reader.ReadSingle();
+                data.Mount_Life_Reduce_Stamina_mCore_Unk1_offset = reader.BaseStream.Position;
                 data.Mount_Life_Reduce_Stamina_mCore_Unk1_raw = reader.ReadSingle();
+                data.Mount_Life_Reduce_Stamina_mCore_Unk2_offset = reader.BaseStream.Position;
                 data.Mount_Life_Reduce_Stamina_mCore_Unk2_raw = reader.ReadSingle();
+                data.Mount_Life_Reduce_Stamina_mCore_Unk3_offset = reader.BaseStream.Position;
                 data.Mount_Life_Reduce_Stamina_mCore_Unk3_raw = reader.ReadSingle();
+                data.Mount_Life_Reduce_Stamina_mCore_Unk4_offset = reader.BaseStream.Position;
                 data.Mount_Life_Reduce_Stamina_mCore_Unk4_raw = reader.ReadSingle();
+                data.Unk_66_offset = reader.BaseStream.Position;
                 data.Unk_66_raw = reader.ReadSingle();
+                data.Unk_67_offset = reader.BaseStream.Position;
                 data.Unk_67_raw = reader.ReadSingle();
+                data.Unk_68_offset = reader.BaseStream.Position;
                 data.Unk_68_raw = reader.ReadSingle();
+                data.Explosive_HR_Fixed_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Explosive_HR_Fixed_Attack_Rate_raw = reader.ReadSingle();
+                data.Explosive_MR_Fixed_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Explosive_MR_Fixed_Attack_Rate_raw = reader.ReadSingle();
+                data.Critical_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Critical_Attack_Rate_raw = reader.ReadSingle();
+                data.Bad_Critical_Attack_Rate_offset = reader.BaseStream.Position;
                 data.Bad_Critical_Attack_Rate_raw = reader.ReadSingle();
+                data.Sharpness_Recoil_Reduction__offset = reader.BaseStream.Position;
                 data.Sharpness_Recoil_Reduction__raw = reader.ReadByte();
+                data.Sharpness_Recoil_Reduction_Value_offset = reader.BaseStream.Position;
                 data.Sharpness_Recoil_Reduction_Value_raw = reader.ReadByte();
+                data.Unk_69_offset = reader.BaseStream.Position;
                 data.Unk_69_raw = reader.ReadSingle();
+                data.Unk_70_offset = reader.BaseStream.Position;
                 data.Unk_70_raw = reader.ReadSingle();
+                data.Unk_71_offset = reader.BaseStream.Position;
                 data.Unk_71_raw = reader.ReadSingle();
+                data.Unk_72_offset = reader.BaseStream.Position;
                 data.Unk_72_raw = reader.ReadSingle();
+                data.Unk_73_offset = reader.BaseStream.Position;
                 data.Unk_73_raw = reader.ReadUInt32();
+                data.Physical_Attack_Rate_Limit_offset = reader.BaseStream.Position;
                 data.Physical_Attack_Rate_Limit_raw = reader.ReadSingle();
+                data.Elemental_Attack_Rate_Limit_offset = reader.BaseStream.Position;
                 data.Elemental_Attack_Rate_Limit_raw = reader.ReadSingle();
+                data.Condition_Elemental_Attack_Flat_Limit_offset = reader.BaseStream.Position;
                 data.Condition_Elemental_Attack_Flat_Limit_raw = reader.ReadSingle();
+                data.Bowgun_Elemental_Attack_Rate_Limit_offset = reader.BaseStream.Position;
                 data.Bowgun_Elemental_Attack_Rate_Limit_raw = reader.ReadSingle();
+                data.Condition_Attack_Rate_Limit_offset = reader.BaseStream.Position;
                 data.Condition_Attack_Rate_Limit_raw = reader.ReadSingle();
+                data.Stun_Attack_Rate_Limit_offset = reader.BaseStream.Position;
                 data.Stun_Attack_Rate_Limit_raw = reader.ReadSingle();
+                data.Stamina_Attack_Rate_Limit_offset = reader.BaseStream.Position;
                 data.Stamina_Attack_Rate_Limit_raw = reader.ReadSingle();
+                data.Mount_Attack_Rate_Limit_offset = reader.BaseStream.Position;
                 data.Mount_Attack_Rate_Limit_raw = reader.ReadSingle();
+                data.Super_Armor_Stun_Damage_Rate_offset = reader.BaseStream.Position;
                 data.Super_Armor_Stun_Damage_Rate_raw = reader.ReadSingle();
+                data.Hyper_Armor_Damage_Rate_offset = reader.BaseStream.Position;
                 data.Hyper_Armor_Damage_Rate_raw = reader.ReadSingle();
+                data.Hyper_Armor_Stun_Damage_Rate_offset = reader.BaseStream.Position;
                 data.Hyper_Armor_Stun_Damage_Rate_raw = reader.ReadSingle();
+                data.Gunner_Defense_Rate_offset = reader.BaseStream.Position;
                 data.Gunner_Defense_Rate_raw = reader.ReadSingle();
+                data.Gunner_Elemental_Resistance_Bonus_offset = reader.BaseStream.Position;
                 data.Gunner_Elemental_Resistance_Bonus_raw = reader.ReadByte();
+                data.Lava_Damage_Interval_Time_offset = reader.BaseStream.Position;
                 data.Lava_Damage_Interval_Time_raw = reader.ReadSingle();
+                data.Lava_Damage_Damage_offset = reader.BaseStream.Position;
                 data.Lava_Damage_Damage_raw = reader.ReadSingle();
+                data.Acid_Damage_Interval_Time_offset = reader.BaseStream.Position;
                 data.Acid_Damage_Interval_Time_raw = reader.ReadSingle();
+                data.Acid_Damage_Damage_offset = reader.BaseStream.Position;
                 data.Acid_Damage_Damage_raw = reader.ReadSingle();
                 return data;
             }
@@ -3004,108 +3640,108 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 56", "Unk_56"),
-                    new MultiStructItemCustomView(this, "Unk 57", "Unk_57"),
-                    new MultiStructItemCustomView(this, "Unk 58", "Unk_58"),
-                    new MultiStructItemCustomView(this, "Unk 59", "Unk_59"),
-                    new MultiStructItemCustomView(this, "Unk 60", "Unk_60"),
-                    new MultiStructItemCustomView(this, "Unk 61", "Unk_61"),
-                    new MultiStructItemCustomView(this, "Unk 62", "Unk_62"),
-                    new MultiStructItemCustomView(this, "Unk 63", "Unk_63"),
-                    new MultiStructItemCustomView(this, "Unk 64", "Unk_64"),
-                    new MultiStructItemCustomView(this, "Unk 65", "Unk_65"),
-                    new MultiStructItemCustomView(this, "Health Initial Value", "Health_Initial_Value"),
-                    new MultiStructItemCustomView(this, "Health Max Value", "Health_Max_Value"),
-                    new MultiStructItemCustomView(this, "Health Damage Recovery Rate", "Health_Damage_Recovery_Rate"),
-                    new MultiStructItemCustomView(this, "Health Damage Recovery Wait Time", "Health_Damage_Recovery_Wait_Time"),
-                    new MultiStructItemCustomView(this, "Health Damage Recovery Interval", "Health_Damage_Recovery_Interval"),
-                    new MultiStructItemCustomView(this, "Health Damage Recovery Value", "Health_Damage_Recovery_Value"),
-                    new MultiStructItemCustomView(this, "Stamina Initial Value", "Stamina_Initial_Value"),
-                    new MultiStructItemCustomView(this, "Stamina Max Value", "Stamina_Max_Value"),
-                    new MultiStructItemCustomView(this, "Stamina Min Value", "Stamina_Min_Value"),
-                    new MultiStructItemCustomView(this, "Stamina Tired Value", "Stamina_Tired_Value"),
-                    new MultiStructItemCustomView(this, "Stamina Auto Recover", "Stamina_Auto_Recover"),
-                    new MultiStructItemCustomView(this, "Stamina Auto Max Reduce", "Stamina_Auto_Max_Reduce"),
-                    new MultiStructItemCustomView(this, "Stamina Auto Max Reduce Time", "Stamina_Auto_Max_Reduce_Time"),
-                    new MultiStructItemCustomView(this, "Stamina IB Unknown", "Stamina_IB_Unknown"),
-                    new MultiStructItemCustomView(this, "Stamina Escape Dash Rate", "Stamina_Escape_Dash_Rate"),
-                    new MultiStructItemCustomView(this, "Stamina Out of Battle Rate", "Stamina_Out_of_Battle_Rate"),
-                    new MultiStructItemCustomView(this, "Stamina Reduce Rate Limit Trigger", "Stamina_Reduce_Rate_Limit_Trigger"),
-                    new MultiStructItemCustomView(this, "Stamina Reduce Rate Limit Time", "Stamina_Reduce_Rate_Limit_Time"),
-                    new MultiStructItemCustomView(this, "Stamina Mount Endurance Rate", "Stamina_Mount_Endurance_Rate"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Dodge", "Stamina_Consumption_Dodge"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: LS Counter", "Stamina_Consumption_LS_Counter"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: SA Wild Swing", "Stamina_Consumption_SA_Wild_Swing"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk1", "Stamina_Consumption_Unk1"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk2", "Stamina_Consumption_Unk2"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk3", "Stamina_Consumption_Unk3"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Bow Shoot", "Stamina_Consumption_Bow_Shoot"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk4", "Stamina_Consumption_Unk4"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk5", "Stamina_Consumption_Unk5"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk6", "Stamina_Consumption_Unk6"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Bow Charge Step", "Stamina_Consumption_Bow_Charge_Step"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk7", "Stamina_Consumption_Unk7"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Claw Attack 1", "Stamina_Consumption_Claw_Attack_1"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Claw Attack 2", "Stamina_Consumption_Claw_Attack_2"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Claw Attack 3", "Stamina_Consumption_Claw_Attack_3"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Claw Attack 4", "Stamina_Consumption_Claw_Attack_4"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk8", "Stamina_Consumption_Unk8"),
-                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk9", "Stamina_Consumption_Unk9"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk1", "Stamina_Time_Reduce_mCore_Unk1"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk2", "Stamina_Time_Reduce_mCore_Unk2"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk3", "Stamina_Time_Reduce_mCore_Unk3"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Hammer/Bow Charge Drain", "Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk4", "Stamina_Time_Reduce_mCore_Unk4"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk5", "Stamina_Time_Reduce_mCore_Unk5"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk6", "Stamina_Time_Reduce_mCore_Unk6"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk7", "Stamina_Time_Reduce_mCore_Unk7"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Lance's Power Guard", "Stamina_Time_Reduce_mCore_Lance_s_Power_Guard"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk8", "Stamina_Time_Reduce_mCore_Unk8"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Clutch Drain (Whilst Grappled)", "Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled_"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Clutch-Counter", "Stamina_Time_Reduce_mCore_Clutch_Counter"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk9", "Stamina_Time_Reduce_mCore_Unk9"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk10", "Stamina_Time_Reduce_mCore_Unk10"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk11", "Stamina_Time_Reduce_mCore_Unk11"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk12", "Stamina_Time_Reduce_mCore_Unk12"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk13", "Stamina_Time_Reduce_mCore_Unk13"),
-                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk14", "Stamina_Time_Reduce_mCore_Unk14"),
-                    new MultiStructItemCustomView(this, "Mount Reduce Stamina mCore: Unk1", "Mount_Reduce_Stamina_mCore_Unk1"),
-                    new MultiStructItemCustomView(this, "Mount Reduce Stamina mCore: Unk2", "Mount_Reduce_Stamina_mCore_Unk2"),
-                    new MultiStructItemCustomView(this, "Mount Life Reduce Stamina mCore: Unk1", "Mount_Life_Reduce_Stamina_mCore_Unk1"),
-                    new MultiStructItemCustomView(this, "Mount Life Reduce Stamina mCore: Unk2", "Mount_Life_Reduce_Stamina_mCore_Unk2"),
-                    new MultiStructItemCustomView(this, "Mount Life Reduce Stamina mCore: Unk3", "Mount_Life_Reduce_Stamina_mCore_Unk3"),
-                    new MultiStructItemCustomView(this, "Mount Life Reduce Stamina mCore: Unk4", "Mount_Life_Reduce_Stamina_mCore_Unk4"),
-                    new MultiStructItemCustomView(this, "Unk 66", "Unk_66"),
-                    new MultiStructItemCustomView(this, "Unk 67", "Unk_67"),
-                    new MultiStructItemCustomView(this, "Unk 68", "Unk_68"),
-                    new MultiStructItemCustomView(this, "Explosive HR Fixed Attack Rate", "Explosive_HR_Fixed_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Explosive MR Fixed Attack Rate", "Explosive_MR_Fixed_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Critical Attack Rate", "Critical_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Bad Critical Attack Rate", "Bad_Critical_Attack_Rate"),
-                    new MultiStructItemCustomView(this, "Sharpness Recoil Reduction %", "Sharpness_Recoil_Reduction_"),
-                    new MultiStructItemCustomView(this, "Sharpness Recoil Reduction Value", "Sharpness_Recoil_Reduction_Value"),
-                    new MultiStructItemCustomView(this, "Unk 69", "Unk_69"),
-                    new MultiStructItemCustomView(this, "Unk 70", "Unk_70"),
-                    new MultiStructItemCustomView(this, "Unk 71", "Unk_71"),
-                    new MultiStructItemCustomView(this, "Unk 72", "Unk_72"),
-                    new MultiStructItemCustomView(this, "Unk 73", "Unk_73"),
-                    new MultiStructItemCustomView(this, "Physical Attack Rate Limit", "Physical_Attack_Rate_Limit"),
-                    new MultiStructItemCustomView(this, "Elemental Attack Rate Limit", "Elemental_Attack_Rate_Limit"),
-                    new MultiStructItemCustomView(this, "Condition Elemental Attack Flat Limit", "Condition_Elemental_Attack_Flat_Limit"),
-                    new MultiStructItemCustomView(this, "Bowgun Elemental Attack Rate Limit", "Bowgun_Elemental_Attack_Rate_Limit"),
-                    new MultiStructItemCustomView(this, "Condition Attack Rate Limit", "Condition_Attack_Rate_Limit"),
-                    new MultiStructItemCustomView(this, "Stun Attack Rate Limit", "Stun_Attack_Rate_Limit"),
-                    new MultiStructItemCustomView(this, "Stamina Attack Rate Limit", "Stamina_Attack_Rate_Limit"),
-                    new MultiStructItemCustomView(this, "Mount Attack Rate Limit", "Mount_Attack_Rate_Limit"),
-                    new MultiStructItemCustomView(this, "Super Armor Stun Damage Rate", "Super_Armor_Stun_Damage_Rate"),
-                    new MultiStructItemCustomView(this, "Hyper Armor Damage Rate", "Hyper_Armor_Damage_Rate"),
-                    new MultiStructItemCustomView(this, "Hyper Armor Stun Damage Rate", "Hyper_Armor_Stun_Damage_Rate"),
-                    new MultiStructItemCustomView(this, "Gunner Defense Rate", "Gunner_Defense_Rate"),
-                    new MultiStructItemCustomView(this, "Gunner Elemental Resistance Bonus", "Gunner_Elemental_Resistance_Bonus"),
-                    new MultiStructItemCustomView(this, "Lava Damage Interval Time", "Lava_Damage_Interval_Time"),
-                    new MultiStructItemCustomView(this, "Lava Damage Damage", "Lava_Damage_Damage"),
-                    new MultiStructItemCustomView(this, "Acid Damage Interval Time", "Acid_Damage_Interval_Time"),
-                    new MultiStructItemCustomView(this, "Acid Damage Damage", "Acid_Damage_Damage"),
+                    new MultiStructItemCustomView(this, "Unk 56", "Unk_56", "Unk_56_offset"),
+                    new MultiStructItemCustomView(this, "Unk 57", "Unk_57", "Unk_57_offset"),
+                    new MultiStructItemCustomView(this, "Unk 58", "Unk_58", "Unk_58_offset"),
+                    new MultiStructItemCustomView(this, "Unk 59", "Unk_59", "Unk_59_offset"),
+                    new MultiStructItemCustomView(this, "Unk 60", "Unk_60", "Unk_60_offset"),
+                    new MultiStructItemCustomView(this, "Unk 61", "Unk_61", "Unk_61_offset"),
+                    new MultiStructItemCustomView(this, "Unk 62", "Unk_62", "Unk_62_offset"),
+                    new MultiStructItemCustomView(this, "Unk 63", "Unk_63", "Unk_63_offset"),
+                    new MultiStructItemCustomView(this, "Unk 64", "Unk_64", "Unk_64_offset"),
+                    new MultiStructItemCustomView(this, "Unk 65", "Unk_65", "Unk_65_offset"),
+                    new MultiStructItemCustomView(this, "Health Initial Value", "Health_Initial_Value", "Health_Initial_Value_offset"),
+                    new MultiStructItemCustomView(this, "Health Max Value", "Health_Max_Value", "Health_Max_Value_offset"),
+                    new MultiStructItemCustomView(this, "Health Damage Recovery Rate", "Health_Damage_Recovery_Rate", "Health_Damage_Recovery_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Health Damage Recovery Wait Time", "Health_Damage_Recovery_Wait_Time", "Health_Damage_Recovery_Wait_Time_offset"),
+                    new MultiStructItemCustomView(this, "Health Damage Recovery Interval", "Health_Damage_Recovery_Interval", "Health_Damage_Recovery_Interval_offset"),
+                    new MultiStructItemCustomView(this, "Health Damage Recovery Value", "Health_Damage_Recovery_Value", "Health_Damage_Recovery_Value_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Initial Value", "Stamina_Initial_Value", "Stamina_Initial_Value_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Max Value", "Stamina_Max_Value", "Stamina_Max_Value_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Min Value", "Stamina_Min_Value", "Stamina_Min_Value_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Tired Value", "Stamina_Tired_Value", "Stamina_Tired_Value_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Auto Recover", "Stamina_Auto_Recover", "Stamina_Auto_Recover_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Auto Max Reduce", "Stamina_Auto_Max_Reduce", "Stamina_Auto_Max_Reduce_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Auto Max Reduce Time", "Stamina_Auto_Max_Reduce_Time", "Stamina_Auto_Max_Reduce_Time_offset"),
+                    new MultiStructItemCustomView(this, "Stamina IB Unknown", "Stamina_IB_Unknown", "Stamina_IB_Unknown_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Escape Dash Rate", "Stamina_Escape_Dash_Rate", "Stamina_Escape_Dash_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Out of Battle Rate", "Stamina_Out_of_Battle_Rate", "Stamina_Out_of_Battle_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Reduce Rate Limit Trigger", "Stamina_Reduce_Rate_Limit_Trigger", "Stamina_Reduce_Rate_Limit_Trigger_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Reduce Rate Limit Time", "Stamina_Reduce_Rate_Limit_Time", "Stamina_Reduce_Rate_Limit_Time_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Mount Endurance Rate", "Stamina_Mount_Endurance_Rate", "Stamina_Mount_Endurance_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Dodge", "Stamina_Consumption_Dodge", "Stamina_Consumption_Dodge_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: LS Counter", "Stamina_Consumption_LS_Counter", "Stamina_Consumption_LS_Counter_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: SA Wild Swing", "Stamina_Consumption_SA_Wild_Swing", "Stamina_Consumption_SA_Wild_Swing_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk1", "Stamina_Consumption_Unk1", "Stamina_Consumption_Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk2", "Stamina_Consumption_Unk2", "Stamina_Consumption_Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk3", "Stamina_Consumption_Unk3", "Stamina_Consumption_Unk3_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Bow Shoot", "Stamina_Consumption_Bow_Shoot", "Stamina_Consumption_Bow_Shoot_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk4", "Stamina_Consumption_Unk4", "Stamina_Consumption_Unk4_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk5", "Stamina_Consumption_Unk5", "Stamina_Consumption_Unk5_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk6", "Stamina_Consumption_Unk6", "Stamina_Consumption_Unk6_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Bow Charge Step", "Stamina_Consumption_Bow_Charge_Step", "Stamina_Consumption_Bow_Charge_Step_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk7", "Stamina_Consumption_Unk7", "Stamina_Consumption_Unk7_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Claw Attack 1", "Stamina_Consumption_Claw_Attack_1", "Stamina_Consumption_Claw_Attack_1_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Claw Attack 2", "Stamina_Consumption_Claw_Attack_2", "Stamina_Consumption_Claw_Attack_2_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Claw Attack 3", "Stamina_Consumption_Claw_Attack_3", "Stamina_Consumption_Claw_Attack_3_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Claw Attack 4", "Stamina_Consumption_Claw_Attack_4", "Stamina_Consumption_Claw_Attack_4_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk8", "Stamina_Consumption_Unk8", "Stamina_Consumption_Unk8_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Consumption: Unk9", "Stamina_Consumption_Unk9", "Stamina_Consumption_Unk9_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk1", "Stamina_Time_Reduce_mCore_Unk1", "Stamina_Time_Reduce_mCore_Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk2", "Stamina_Time_Reduce_mCore_Unk2", "Stamina_Time_Reduce_mCore_Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk3", "Stamina_Time_Reduce_mCore_Unk3", "Stamina_Time_Reduce_mCore_Unk3_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Hammer/Bow Charge Drain", "Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain", "Stamina_Time_Reduce_mCore_Hammer_Bow_Charge_Drain_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk4", "Stamina_Time_Reduce_mCore_Unk4", "Stamina_Time_Reduce_mCore_Unk4_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk5", "Stamina_Time_Reduce_mCore_Unk5", "Stamina_Time_Reduce_mCore_Unk5_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk6", "Stamina_Time_Reduce_mCore_Unk6", "Stamina_Time_Reduce_mCore_Unk6_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk7", "Stamina_Time_Reduce_mCore_Unk7", "Stamina_Time_Reduce_mCore_Unk7_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Lance's Power Guard", "Stamina_Time_Reduce_mCore_Lance_s_Power_Guard", "Stamina_Time_Reduce_mCore_Lance_s_Power_Guard_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk8", "Stamina_Time_Reduce_mCore_Unk8", "Stamina_Time_Reduce_mCore_Unk8_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Clutch Drain (Whilst Grappled)", "Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled_", "Stamina_Time_Reduce_mCore_Clutch_Drain_Whilst_Grappled__offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Clutch-Counter", "Stamina_Time_Reduce_mCore_Clutch_Counter", "Stamina_Time_Reduce_mCore_Clutch_Counter_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk9", "Stamina_Time_Reduce_mCore_Unk9", "Stamina_Time_Reduce_mCore_Unk9_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk10", "Stamina_Time_Reduce_mCore_Unk10", "Stamina_Time_Reduce_mCore_Unk10_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk11", "Stamina_Time_Reduce_mCore_Unk11", "Stamina_Time_Reduce_mCore_Unk11_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk12", "Stamina_Time_Reduce_mCore_Unk12", "Stamina_Time_Reduce_mCore_Unk12_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk13", "Stamina_Time_Reduce_mCore_Unk13", "Stamina_Time_Reduce_mCore_Unk13_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Time Reduce mCore: Unk14", "Stamina_Time_Reduce_mCore_Unk14", "Stamina_Time_Reduce_mCore_Unk14_offset"),
+                    new MultiStructItemCustomView(this, "Mount Reduce Stamina mCore: Unk1", "Mount_Reduce_Stamina_mCore_Unk1", "Mount_Reduce_Stamina_mCore_Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Mount Reduce Stamina mCore: Unk2", "Mount_Reduce_Stamina_mCore_Unk2", "Mount_Reduce_Stamina_mCore_Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Mount Life Reduce Stamina mCore: Unk1", "Mount_Life_Reduce_Stamina_mCore_Unk1", "Mount_Life_Reduce_Stamina_mCore_Unk1_offset"),
+                    new MultiStructItemCustomView(this, "Mount Life Reduce Stamina mCore: Unk2", "Mount_Life_Reduce_Stamina_mCore_Unk2", "Mount_Life_Reduce_Stamina_mCore_Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Mount Life Reduce Stamina mCore: Unk3", "Mount_Life_Reduce_Stamina_mCore_Unk3", "Mount_Life_Reduce_Stamina_mCore_Unk3_offset"),
+                    new MultiStructItemCustomView(this, "Mount Life Reduce Stamina mCore: Unk4", "Mount_Life_Reduce_Stamina_mCore_Unk4", "Mount_Life_Reduce_Stamina_mCore_Unk4_offset"),
+                    new MultiStructItemCustomView(this, "Unk 66", "Unk_66", "Unk_66_offset"),
+                    new MultiStructItemCustomView(this, "Unk 67", "Unk_67", "Unk_67_offset"),
+                    new MultiStructItemCustomView(this, "Unk 68", "Unk_68", "Unk_68_offset"),
+                    new MultiStructItemCustomView(this, "Explosive HR Fixed Attack Rate", "Explosive_HR_Fixed_Attack_Rate", "Explosive_HR_Fixed_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Explosive MR Fixed Attack Rate", "Explosive_MR_Fixed_Attack_Rate", "Explosive_MR_Fixed_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Critical Attack Rate", "Critical_Attack_Rate", "Critical_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Bad Critical Attack Rate", "Bad_Critical_Attack_Rate", "Bad_Critical_Attack_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Sharpness Recoil Reduction %", "Sharpness_Recoil_Reduction_", "Sharpness_Recoil_Reduction__offset"),
+                    new MultiStructItemCustomView(this, "Sharpness Recoil Reduction Value", "Sharpness_Recoil_Reduction_Value", "Sharpness_Recoil_Reduction_Value_offset"),
+                    new MultiStructItemCustomView(this, "Unk 69", "Unk_69", "Unk_69_offset"),
+                    new MultiStructItemCustomView(this, "Unk 70", "Unk_70", "Unk_70_offset"),
+                    new MultiStructItemCustomView(this, "Unk 71", "Unk_71", "Unk_71_offset"),
+                    new MultiStructItemCustomView(this, "Unk 72", "Unk_72", "Unk_72_offset"),
+                    new MultiStructItemCustomView(this, "Unk 73", "Unk_73", "Unk_73_offset"),
+                    new MultiStructItemCustomView(this, "Physical Attack Rate Limit", "Physical_Attack_Rate_Limit", "Physical_Attack_Rate_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Elemental Attack Rate Limit", "Elemental_Attack_Rate_Limit", "Elemental_Attack_Rate_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Condition Elemental Attack Flat Limit", "Condition_Elemental_Attack_Flat_Limit", "Condition_Elemental_Attack_Flat_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Bowgun Elemental Attack Rate Limit", "Bowgun_Elemental_Attack_Rate_Limit", "Bowgun_Elemental_Attack_Rate_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Condition Attack Rate Limit", "Condition_Attack_Rate_Limit", "Condition_Attack_Rate_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Stun Attack Rate Limit", "Stun_Attack_Rate_Limit", "Stun_Attack_Rate_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Stamina Attack Rate Limit", "Stamina_Attack_Rate_Limit", "Stamina_Attack_Rate_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Mount Attack Rate Limit", "Mount_Attack_Rate_Limit", "Mount_Attack_Rate_Limit_offset"),
+                    new MultiStructItemCustomView(this, "Super Armor Stun Damage Rate", "Super_Armor_Stun_Damage_Rate", "Super_Armor_Stun_Damage_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Hyper Armor Damage Rate", "Hyper_Armor_Damage_Rate", "Hyper_Armor_Damage_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Hyper Armor Stun Damage Rate", "Hyper_Armor_Stun_Damage_Rate", "Hyper_Armor_Stun_Damage_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Gunner Defense Rate", "Gunner_Defense_Rate", "Gunner_Defense_Rate_offset"),
+                    new MultiStructItemCustomView(this, "Gunner Elemental Resistance Bonus", "Gunner_Elemental_Resistance_Bonus", "Gunner_Elemental_Resistance_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Lava Damage Interval Time", "Lava_Damage_Interval_Time", "Lava_Damage_Interval_Time_offset"),
+                    new MultiStructItemCustomView(this, "Lava Damage Damage", "Lava_Damage_Damage", "Lava_Damage_Damage_offset"),
+                    new MultiStructItemCustomView(this, "Acid Damage Interval Time", "Acid_Damage_Interval_Time", "Acid_Damage_Interval_Time_offset"),
+                    new MultiStructItemCustomView(this, "Acid Damage Damage", "Acid_Damage_Damage", "Acid_Damage_Damage_offset"),
                 };
             }
         }
@@ -3173,6 +3809,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_74_offset { get; private set; }
+
             protected float Unk_75_raw;
             public const string Unk_75_displayName = "Unk 75";
             public const int Unk_75_sortIndex = 100;
@@ -3187,6 +3826,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_75));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_75_offset { get; private set; }
 
             protected float Walk_Turn_Tilt_Bow__raw;
             public const string Walk_Turn_Tilt_Bow__displayName = "Walk Turn Tilt (Bow)";
@@ -3203,6 +3845,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Walk_Turn_Tilt_Bow__offset { get; private set; }
+
             protected float Unk_76_raw;
             public const string Unk_76_displayName = "Unk 76";
             public const int Unk_76_sortIndex = 200;
@@ -3217,6 +3862,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_76));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_76_offset { get; private set; }
 
             protected float Unk_77_raw;
             public const string Unk_77_displayName = "Unk 77";
@@ -3233,6 +3881,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_77_offset { get; private set; }
+
             protected float Unk_78_raw;
             public const string Unk_78_displayName = "Unk 78";
             public const int Unk_78_sortIndex = 300;
@@ -3247,6 +3898,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_78));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_78_offset { get; private set; }
 
             protected float Run_Turn_Tilt_Bow__raw;
             public const string Run_Turn_Tilt_Bow__displayName = "Run Turn Tilt (Bow)";
@@ -3263,6 +3917,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Run_Turn_Tilt_Bow__offset { get; private set; }
+
             protected float Run_Turn_Tilt_Head_Bow__raw;
             public const string Run_Turn_Tilt_Head_Bow__displayName = "Run Turn Tilt Head (Bow)";
             public const int Run_Turn_Tilt_Head_Bow__sortIndex = 400;
@@ -3277,6 +3934,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Run_Turn_Tilt_Head_Bow_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Run_Turn_Tilt_Head_Bow__offset { get; private set; }
 
             protected float Unk_79_raw;
             public const string Unk_79_displayName = "Unk 79";
@@ -3293,6 +3953,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_79_offset { get; private set; }
+
             protected float Unk_80_raw;
             public const string Unk_80_displayName = "Unk 80";
             public const int Unk_80_sortIndex = 500;
@@ -3307,6 +3970,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_80));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_80_offset { get; private set; }
 
             protected float Unk_81_raw;
             public const string Unk_81_displayName = "Unk 81";
@@ -3323,6 +3989,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_81_offset { get; private set; }
+
             protected float Unk_82_raw;
             public const string Unk_82_displayName = "Unk 82";
             public const int Unk_82_sortIndex = 600;
@@ -3337,6 +4006,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_82));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_82_offset { get; private set; }
 
             protected float Unk_83_raw;
             public const string Unk_83_displayName = "Unk 83";
@@ -3353,6 +4025,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_83_offset { get; private set; }
+
             protected float Unk_84_raw;
             public const string Unk_84_displayName = "Unk 84";
             public const int Unk_84_sortIndex = 700;
@@ -3367,6 +4042,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_84));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_84_offset { get; private set; }
 
             protected float Unk_85_raw;
             public const string Unk_85_displayName = "Unk 85";
@@ -3383,6 +4061,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_85_offset { get; private set; }
+
             protected float Unk_86_raw;
             public const string Unk_86_displayName = "Unk 86";
             public const int Unk_86_sortIndex = 800;
@@ -3397,6 +4078,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_86));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_86_offset { get; private set; }
 
             protected float Unk_87_raw;
             public const string Unk_87_displayName = "Unk 87";
@@ -3413,6 +4097,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_87_offset { get; private set; }
+
             protected float Unk_88_raw;
             public const string Unk_88_displayName = "Unk 88";
             public const int Unk_88_sortIndex = 900;
@@ -3427,6 +4114,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_88));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_88_offset { get; private set; }
 
             protected float Unk_89_raw;
             public const string Unk_89_displayName = "Unk 89";
@@ -3443,6 +4133,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_89_offset { get; private set; }
+
             protected float Unk_90_raw;
             public const string Unk_90_displayName = "Unk 90";
             public const int Unk_90_sortIndex = 1000;
@@ -3457,6 +4150,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_90));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_90_offset { get; private set; }
 
             protected float Unk_91_raw;
             public const string Unk_91_displayName = "Unk 91";
@@ -3473,6 +4169,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_91_offset { get; private set; }
+
             protected float Unk_92_raw;
             public const string Unk_92_displayName = "Unk 92";
             public const int Unk_92_sortIndex = 1100;
@@ -3487,6 +4186,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_92));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_92_offset { get; private set; }
 
             protected float Unk_93_raw;
             public const string Unk_93_displayName = "Unk 93";
@@ -3503,6 +4205,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_93_offset { get; private set; }
+
             protected float Unk_94_raw;
             public const string Unk_94_displayName = "Unk 94";
             public const int Unk_94_sortIndex = 1200;
@@ -3517,6 +4222,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_94));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_94_offset { get; private set; }
 
             protected float Unk_95_raw;
             public const string Unk_95_displayName = "Unk 95";
@@ -3533,6 +4241,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_95_offset { get; private set; }
+
             protected float Unk_96_raw;
             public const string Unk_96_displayName = "Unk 96";
             public const int Unk_96_sortIndex = 1300;
@@ -3547,6 +4258,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_96));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_96_offset { get; private set; }
 
             protected float Unk_97_raw;
             public const string Unk_97_displayName = "Unk 97";
@@ -3563,6 +4277,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_97_offset { get; private set; }
+
             protected float Unk_98_raw;
             public const string Unk_98_displayName = "Unk 98";
             public const int Unk_98_sortIndex = 1400;
@@ -3577,6 +4294,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_98));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_98_offset { get; private set; }
 
             protected float Unk_99_raw;
             public const string Unk_99_displayName = "Unk 99";
@@ -3593,6 +4313,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_99_offset { get; private set; }
+
             protected float Unk_100_raw;
             public const string Unk_100_displayName = "Unk 100";
             public const int Unk_100_sortIndex = 1500;
@@ -3607,6 +4330,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_100));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_100_offset { get; private set; }
 
             protected float Unk_101_raw;
             public const string Unk_101_displayName = "Unk 101";
@@ -3623,6 +4349,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_101_offset { get; private set; }
+
             protected float Unk_102_raw;
             public const string Unk_102_displayName = "Unk 102";
             public const int Unk_102_sortIndex = 1600;
@@ -3637,6 +4366,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_102));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_102_offset { get; private set; }
 
             protected float Unk_103_raw;
             public const string Unk_103_displayName = "Unk 103";
@@ -3653,6 +4385,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_103_offset { get; private set; }
+
             protected float Unk_104_raw;
             public const string Unk_104_displayName = "Unk 104";
             public const int Unk_104_sortIndex = 1700;
@@ -3667,6 +4402,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_104));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_104_offset { get; private set; }
 
             protected float Unk_105_raw;
             public const string Unk_105_displayName = "Unk 105";
@@ -3683,6 +4421,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_105_offset { get; private set; }
+
             protected float Unk_106_raw;
             public const string Unk_106_displayName = "Unk 106";
             public const int Unk_106_sortIndex = 1800;
@@ -3697,6 +4438,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_106));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_106_offset { get; private set; }
 
             protected float Unk_107_raw;
             public const string Unk_107_displayName = "Unk 107";
@@ -3713,6 +4457,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_107_offset { get; private set; }
+
             protected float Unk_108_raw;
             public const string Unk_108_displayName = "Unk 108";
             public const int Unk_108_sortIndex = 1900;
@@ -3727,6 +4474,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_108));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_108_offset { get; private set; }
 
             protected float Unk_109_raw;
             public const string Unk_109_displayName = "Unk 109";
@@ -3743,6 +4493,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_109_offset { get; private set; }
+
             protected float Unk_110_raw;
             public const string Unk_110_displayName = "Unk 110";
             public const int Unk_110_sortIndex = 2000;
@@ -3757,6 +4510,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_110));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_110_offset { get; private set; }
 
             protected byte Unk_111_raw;
             public const string Unk_111_displayName = "Unk 111";
@@ -3773,6 +4529,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_111_offset { get; private set; }
+
             protected byte Unk_112_raw;
             public const string Unk_112_displayName = "Unk 112";
             public const int Unk_112_sortIndex = 2100;
@@ -3787,6 +4546,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_112));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_112_offset { get; private set; }
 
             protected byte Unk_113_raw;
             public const string Unk_113_displayName = "Unk 113";
@@ -3803,6 +4565,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_113_offset { get; private set; }
+
             protected byte Unk_114_raw;
             public const string Unk_114_displayName = "Unk 114";
             public const int Unk_114_sortIndex = 2200;
@@ -3817,6 +4582,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_114));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_114_offset { get; private set; }
 
             protected byte Unk_115_raw;
             public const string Unk_115_displayName = "Unk 115";
@@ -3833,6 +4601,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_115_offset { get; private set; }
+
             protected byte Unk_116_raw;
             public const string Unk_116_displayName = "Unk 116";
             public const int Unk_116_sortIndex = 2300;
@@ -3847,6 +4618,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_116));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_116_offset { get; private set; }
 
             protected byte Unk_117_raw;
             public const string Unk_117_displayName = "Unk 117";
@@ -3863,6 +4637,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_117_offset { get; private set; }
+
             protected byte Unk_118_raw;
             public const string Unk_118_displayName = "Unk 118";
             public const int Unk_118_sortIndex = 2400;
@@ -3877,6 +4654,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_118));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_118_offset { get; private set; }
 
             protected byte Unk_119_raw;
             public const string Unk_119_displayName = "Unk 119";
@@ -3893,6 +4673,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_119_offset { get; private set; }
+
             protected byte Unk_120_raw;
             public const string Unk_120_displayName = "Unk 120";
             public const int Unk_120_sortIndex = 2500;
@@ -3907,6 +4690,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_120));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_120_offset { get; private set; }
 
             protected float Walk_Turn_Speed_raw;
             public const string Walk_Turn_Speed_displayName = "Walk Turn Speed";
@@ -3923,6 +4709,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Walk_Turn_Speed_offset { get; private set; }
+
             protected float Walk_Turn_Speed_Room__raw;
             public const string Walk_Turn_Speed_Room__displayName = "Walk Turn Speed (Room)";
             public const int Walk_Turn_Speed_Room__sortIndex = 2600;
@@ -3937,6 +4726,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Walk_Turn_Speed_Room_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Walk_Turn_Speed_Room__offset { get; private set; }
 
             protected float Walk_Stop_Margin_Time_raw;
             public const string Walk_Stop_Margin_Time_displayName = "Walk Stop Margin Time";
@@ -3953,6 +4745,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Walk_Stop_Margin_Time_offset { get; private set; }
+
             protected float Female_Motion_Start_Time_raw;
             public const string Female_Motion_Start_Time_displayName = "Female Motion Start Time";
             public const int Female_Motion_Start_Time_sortIndex = 2700;
@@ -3967,6 +4762,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Female_Motion_Start_Time));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Female_Motion_Start_Time_offset { get; private set; }
 
             protected float Unk_121_raw;
             public const string Unk_121_displayName = "Unk 121";
@@ -3983,6 +4781,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_121_offset { get; private set; }
+
             protected float Unk_122_raw;
             public const string Unk_122_displayName = "Unk 122";
             public const int Unk_122_sortIndex = 2800;
@@ -3997,6 +4798,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_122));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_122_offset { get; private set; }
 
             protected float Walk_Motion_Speed_Room__raw;
             public const string Walk_Motion_Speed_Room__displayName = "Walk Motion Speed (Room)";
@@ -4013,6 +4817,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Walk_Motion_Speed_Room__offset { get; private set; }
+
             protected float Walk_Motion_Speed_raw;
             public const string Walk_Motion_Speed_displayName = "Walk Motion Speed";
             public const int Walk_Motion_Speed_sortIndex = 2900;
@@ -4027,6 +4834,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Walk_Motion_Speed));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Walk_Motion_Speed_offset { get; private set; }
 
             protected float Run_Stop_Margin_Time_raw;
             public const string Run_Stop_Margin_Time_displayName = "Run Stop Margin Time";
@@ -4043,6 +4853,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Run_Stop_Margin_Time_offset { get; private set; }
+
             protected float Run_Turn_Speed_raw;
             public const string Run_Turn_Speed_displayName = "Run Turn Speed";
             public const int Run_Turn_Speed_sortIndex = 3000;
@@ -4057,6 +4870,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Run_Turn_Speed));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Run_Turn_Speed_offset { get; private set; }
 
             protected float Run_Turn_Lever_Angle_raw;
             public const string Run_Turn_Lever_Angle_displayName = "Run Turn Lever Angle";
@@ -4073,6 +4889,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Run_Turn_Lever_Angle_offset { get; private set; }
+
             protected float Run_Female_Motion_Start_Time_raw;
             public const string Run_Female_Motion_Start_Time_displayName = "Run Female Motion Start Time";
             public const int Run_Female_Motion_Start_Time_sortIndex = 3100;
@@ -4087,6 +4906,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Run_Female_Motion_Start_Time));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Run_Female_Motion_Start_Time_offset { get; private set; }
 
             protected float Unk_123_raw;
             public const string Unk_123_displayName = "Unk 123";
@@ -4103,6 +4925,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_123_offset { get; private set; }
+
             protected float Unk_124_raw;
             public const string Unk_124_displayName = "Unk 124";
             public const int Unk_124_sortIndex = 3200;
@@ -4117,6 +4942,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_124));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_124_offset { get; private set; }
 
             protected float Run_Motion_Speed_Room__raw;
             public const string Run_Motion_Speed_Room__displayName = "Run Motion Speed (Room)";
@@ -4133,6 +4961,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Run_Motion_Speed_Room__offset { get; private set; }
+
             protected float Run_Motion_Speed_raw;
             public const string Run_Motion_Speed_displayName = "Run Motion Speed";
             public const int Run_Motion_Speed_sortIndex = 3300;
@@ -4147,6 +4978,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Run_Motion_Speed));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Run_Motion_Speed_offset { get; private set; }
 
             protected float Dash_Turn_Speed_raw;
             public const string Dash_Turn_Speed_displayName = "Dash Turn Speed";
@@ -4163,6 +4997,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Dash_Turn_Speed_offset { get; private set; }
+
             protected float Dash_Motion_Speed_raw;
             public const string Dash_Motion_Speed_displayName = "Dash Motion Speed";
             public const int Dash_Motion_Speed_sortIndex = 3400;
@@ -4177,6 +5014,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Dash_Motion_Speed));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Dash_Motion_Speed_offset { get; private set; }
 
             protected float Unk_125_raw;
             public const string Unk_125_displayName = "Unk 125";
@@ -4193,6 +5033,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_125_offset { get; private set; }
+
             protected float Unk_126_raw;
             public const string Unk_126_displayName = "Unk 126";
             public const int Unk_126_sortIndex = 3500;
@@ -4207,6 +5050,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_126));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_126_offset { get; private set; }
 
             protected float Unk_127_raw;
             public const string Unk_127_displayName = "Unk 127";
@@ -4223,6 +5069,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_127_offset { get; private set; }
+
             protected float Unk_128_raw;
             public const string Unk_128_displayName = "Unk 128";
             public const int Unk_128_sortIndex = 3600;
@@ -4237,6 +5086,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_128));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_128_offset { get; private set; }
 
             protected float Unk_129_raw;
             public const string Unk_129_displayName = "Unk 129";
@@ -4253,6 +5105,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_129_offset { get; private set; }
+
             protected float Unk_130_raw;
             public const string Unk_130_displayName = "Unk 130";
             public const int Unk_130_sortIndex = 3700;
@@ -4267,6 +5122,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_130));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_130_offset { get; private set; }
 
             protected float Unk_131_raw;
             public const string Unk_131_displayName = "Unk 131";
@@ -4283,6 +5141,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_131_offset { get; private set; }
+
             protected float Unk_132_raw;
             public const string Unk_132_displayName = "Unk 132";
             public const int Unk_132_sortIndex = 3800;
@@ -4297,6 +5158,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_132));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_132_offset { get; private set; }
 
             protected float Unk_133_raw;
             public const string Unk_133_displayName = "Unk 133";
@@ -4313,6 +5177,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_133_offset { get; private set; }
+
             protected float Unk_134_raw;
             public const string Unk_134_displayName = "Unk 134";
             public const int Unk_134_sortIndex = 3900;
@@ -4327,6 +5194,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_134));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_134_offset { get; private set; }
 
             protected float Unk_135_raw;
             public const string Unk_135_displayName = "Unk 135";
@@ -4343,6 +5213,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_135_offset { get; private set; }
+
             protected float Unk_136_raw;
             public const string Unk_136_displayName = "Unk 136";
             public const int Unk_136_sortIndex = 4000;
@@ -4357,6 +5230,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_136));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_136_offset { get; private set; }
 
             protected float Unk_137_raw;
             public const string Unk_137_displayName = "Unk 137";
@@ -4373,6 +5249,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_137_offset { get; private set; }
+
             protected float Unk_138_raw;
             public const string Unk_138_displayName = "Unk 138";
             public const int Unk_138_sortIndex = 4100;
@@ -4387,6 +5266,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_138));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_138_offset { get; private set; }
 
             protected float Unk_139_raw;
             public const string Unk_139_displayName = "Unk 139";
@@ -4403,6 +5285,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_139_offset { get; private set; }
+
             protected float Unk_140_raw;
             public const string Unk_140_displayName = "Unk 140";
             public const int Unk_140_sortIndex = 4200;
@@ -4417,6 +5302,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_140));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_140_offset { get; private set; }
 
             protected float Unk_141_raw;
             public const string Unk_141_displayName = "Unk 141";
@@ -4433,6 +5321,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_141_offset { get; private set; }
+
             protected float Unk_142_raw;
             public const string Unk_142_displayName = "Unk 142";
             public const int Unk_142_sortIndex = 4300;
@@ -4447,6 +5338,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_142));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_142_offset { get; private set; }
 
             protected float Escape_Run_From_Monster_Speed_Multiplier_raw;
             public const string Escape_Run_From_Monster_Speed_Multiplier_displayName = "Escape (Run) From Monster Speed Multiplier";
@@ -4463,6 +5357,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Escape_Run_From_Monster_Speed_Multiplier_offset { get; private set; }
+
             protected float Unk_144_raw;
             public const string Unk_144_displayName = "Unk 144";
             public const int Unk_144_sortIndex = 4400;
@@ -4477,6 +5374,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_144));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_144_offset { get; private set; }
 
             protected float Unk_145_raw;
             public const string Unk_145_displayName = "Unk 145";
@@ -4493,6 +5393,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_145_offset { get; private set; }
+
             protected float Unk_146_raw;
             public const string Unk_146_displayName = "Unk 146";
             public const int Unk_146_sortIndex = 4500;
@@ -4507,6 +5410,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_146));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_146_offset { get; private set; }
 
             protected float Unk_147_raw;
             public const string Unk_147_displayName = "Unk 147";
@@ -4523,6 +5429,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_147_offset { get; private set; }
+
             protected float Unk_148_raw;
             public const string Unk_148_displayName = "Unk 148";
             public const int Unk_148_sortIndex = 4600;
@@ -4537,6 +5446,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_148));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_148_offset { get; private set; }
 
             protected float Unk_149_raw;
             public const string Unk_149_displayName = "Unk 149";
@@ -4553,6 +5465,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_149_offset { get; private set; }
+
             protected float Unk_150_raw;
             public const string Unk_150_displayName = "Unk 150";
             public const int Unk_150_sortIndex = 4700;
@@ -4567,6 +5482,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_150));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_150_offset { get; private set; }
 
             protected float Unk_151_raw;
             public const string Unk_151_displayName = "Unk 151";
@@ -4583,6 +5501,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_151_offset { get; private set; }
+
             protected float Unk_152_raw;
             public const string Unk_152_displayName = "Unk 152";
             public const int Unk_152_sortIndex = 4800;
@@ -4597,6 +5518,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_152));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_152_offset { get; private set; }
 
             protected float Unk_153_raw;
             public const string Unk_153_displayName = "Unk 153";
@@ -4613,6 +5537,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_153_offset { get; private set; }
+
             protected float Unk_154_raw;
             public const string Unk_154_displayName = "Unk 154";
             public const int Unk_154_sortIndex = 4900;
@@ -4627,6 +5554,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_154));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_154_offset { get; private set; }
 
             protected float Unk_155_raw;
             public const string Unk_155_displayName = "Unk 155";
@@ -4643,6 +5573,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_155_offset { get; private set; }
+
             protected float Unk_156_raw;
             public const string Unk_156_displayName = "Unk 156";
             public const int Unk_156_sortIndex = 5000;
@@ -4657,6 +5590,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk_156));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_156_offset { get; private set; }
 
             protected float Unk_157_raw;
             public const string Unk_157_displayName = "Unk 157";
@@ -4673,6 +5609,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_157_offset { get; private set; }
+
             public const int lastSortIndex = 5100;
 
             public static ObservableMhwStructCollection<Player_Params_4_> LoadData(BinaryReader reader) {
@@ -4687,106 +5626,207 @@ namespace MHW_Editor.Structs.PlData {
             public static Player_Params_4_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Player_Params_4_();
                 data.Index = i;
+                data.Unk_74_offset = reader.BaseStream.Position;
                 data.Unk_74_raw = reader.ReadSingle();
+                data.Unk_75_offset = reader.BaseStream.Position;
                 data.Unk_75_raw = reader.ReadSingle();
+                data.Walk_Turn_Tilt_Bow__offset = reader.BaseStream.Position;
                 data.Walk_Turn_Tilt_Bow__raw = reader.ReadSingle();
+                data.Unk_76_offset = reader.BaseStream.Position;
                 data.Unk_76_raw = reader.ReadSingle();
+                data.Unk_77_offset = reader.BaseStream.Position;
                 data.Unk_77_raw = reader.ReadSingle();
+                data.Unk_78_offset = reader.BaseStream.Position;
                 data.Unk_78_raw = reader.ReadSingle();
+                data.Run_Turn_Tilt_Bow__offset = reader.BaseStream.Position;
                 data.Run_Turn_Tilt_Bow__raw = reader.ReadSingle();
+                data.Run_Turn_Tilt_Head_Bow__offset = reader.BaseStream.Position;
                 data.Run_Turn_Tilt_Head_Bow__raw = reader.ReadSingle();
+                data.Unk_79_offset = reader.BaseStream.Position;
                 data.Unk_79_raw = reader.ReadSingle();
+                data.Unk_80_offset = reader.BaseStream.Position;
                 data.Unk_80_raw = reader.ReadSingle();
+                data.Unk_81_offset = reader.BaseStream.Position;
                 data.Unk_81_raw = reader.ReadSingle();
+                data.Unk_82_offset = reader.BaseStream.Position;
                 data.Unk_82_raw = reader.ReadSingle();
+                data.Unk_83_offset = reader.BaseStream.Position;
                 data.Unk_83_raw = reader.ReadSingle();
+                data.Unk_84_offset = reader.BaseStream.Position;
                 data.Unk_84_raw = reader.ReadSingle();
+                data.Unk_85_offset = reader.BaseStream.Position;
                 data.Unk_85_raw = reader.ReadSingle();
+                data.Unk_86_offset = reader.BaseStream.Position;
                 data.Unk_86_raw = reader.ReadSingle();
+                data.Unk_87_offset = reader.BaseStream.Position;
                 data.Unk_87_raw = reader.ReadSingle();
+                data.Unk_88_offset = reader.BaseStream.Position;
                 data.Unk_88_raw = reader.ReadSingle();
+                data.Unk_89_offset = reader.BaseStream.Position;
                 data.Unk_89_raw = reader.ReadSingle();
+                data.Unk_90_offset = reader.BaseStream.Position;
                 data.Unk_90_raw = reader.ReadSingle();
+                data.Unk_91_offset = reader.BaseStream.Position;
                 data.Unk_91_raw = reader.ReadSingle();
+                data.Unk_92_offset = reader.BaseStream.Position;
                 data.Unk_92_raw = reader.ReadSingle();
+                data.Unk_93_offset = reader.BaseStream.Position;
                 data.Unk_93_raw = reader.ReadSingle();
+                data.Unk_94_offset = reader.BaseStream.Position;
                 data.Unk_94_raw = reader.ReadSingle();
+                data.Unk_95_offset = reader.BaseStream.Position;
                 data.Unk_95_raw = reader.ReadSingle();
+                data.Unk_96_offset = reader.BaseStream.Position;
                 data.Unk_96_raw = reader.ReadSingle();
+                data.Unk_97_offset = reader.BaseStream.Position;
                 data.Unk_97_raw = reader.ReadSingle();
+                data.Unk_98_offset = reader.BaseStream.Position;
                 data.Unk_98_raw = reader.ReadSingle();
+                data.Unk_99_offset = reader.BaseStream.Position;
                 data.Unk_99_raw = reader.ReadSingle();
+                data.Unk_100_offset = reader.BaseStream.Position;
                 data.Unk_100_raw = reader.ReadSingle();
+                data.Unk_101_offset = reader.BaseStream.Position;
                 data.Unk_101_raw = reader.ReadSingle();
+                data.Unk_102_offset = reader.BaseStream.Position;
                 data.Unk_102_raw = reader.ReadSingle();
+                data.Unk_103_offset = reader.BaseStream.Position;
                 data.Unk_103_raw = reader.ReadSingle();
+                data.Unk_104_offset = reader.BaseStream.Position;
                 data.Unk_104_raw = reader.ReadSingle();
+                data.Unk_105_offset = reader.BaseStream.Position;
                 data.Unk_105_raw = reader.ReadSingle();
+                data.Unk_106_offset = reader.BaseStream.Position;
                 data.Unk_106_raw = reader.ReadSingle();
+                data.Unk_107_offset = reader.BaseStream.Position;
                 data.Unk_107_raw = reader.ReadSingle();
+                data.Unk_108_offset = reader.BaseStream.Position;
                 data.Unk_108_raw = reader.ReadSingle();
+                data.Unk_109_offset = reader.BaseStream.Position;
                 data.Unk_109_raw = reader.ReadSingle();
+                data.Unk_110_offset = reader.BaseStream.Position;
                 data.Unk_110_raw = reader.ReadSingle();
+                data.Unk_111_offset = reader.BaseStream.Position;
                 data.Unk_111_raw = reader.ReadByte();
+                data.Unk_112_offset = reader.BaseStream.Position;
                 data.Unk_112_raw = reader.ReadByte();
+                data.Unk_113_offset = reader.BaseStream.Position;
                 data.Unk_113_raw = reader.ReadByte();
+                data.Unk_114_offset = reader.BaseStream.Position;
                 data.Unk_114_raw = reader.ReadByte();
+                data.Unk_115_offset = reader.BaseStream.Position;
                 data.Unk_115_raw = reader.ReadByte();
+                data.Unk_116_offset = reader.BaseStream.Position;
                 data.Unk_116_raw = reader.ReadByte();
+                data.Unk_117_offset = reader.BaseStream.Position;
                 data.Unk_117_raw = reader.ReadByte();
+                data.Unk_118_offset = reader.BaseStream.Position;
                 data.Unk_118_raw = reader.ReadByte();
+                data.Unk_119_offset = reader.BaseStream.Position;
                 data.Unk_119_raw = reader.ReadByte();
+                data.Unk_120_offset = reader.BaseStream.Position;
                 data.Unk_120_raw = reader.ReadByte();
+                data.Walk_Turn_Speed_offset = reader.BaseStream.Position;
                 data.Walk_Turn_Speed_raw = reader.ReadSingle();
+                data.Walk_Turn_Speed_Room__offset = reader.BaseStream.Position;
                 data.Walk_Turn_Speed_Room__raw = reader.ReadSingle();
+                data.Walk_Stop_Margin_Time_offset = reader.BaseStream.Position;
                 data.Walk_Stop_Margin_Time_raw = reader.ReadSingle();
+                data.Female_Motion_Start_Time_offset = reader.BaseStream.Position;
                 data.Female_Motion_Start_Time_raw = reader.ReadSingle();
+                data.Unk_121_offset = reader.BaseStream.Position;
                 data.Unk_121_raw = reader.ReadSingle();
+                data.Unk_122_offset = reader.BaseStream.Position;
                 data.Unk_122_raw = reader.ReadSingle();
+                data.Walk_Motion_Speed_Room__offset = reader.BaseStream.Position;
                 data.Walk_Motion_Speed_Room__raw = reader.ReadSingle();
+                data.Walk_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Walk_Motion_Speed_raw = reader.ReadSingle();
+                data.Run_Stop_Margin_Time_offset = reader.BaseStream.Position;
                 data.Run_Stop_Margin_Time_raw = reader.ReadSingle();
+                data.Run_Turn_Speed_offset = reader.BaseStream.Position;
                 data.Run_Turn_Speed_raw = reader.ReadSingle();
+                data.Run_Turn_Lever_Angle_offset = reader.BaseStream.Position;
                 data.Run_Turn_Lever_Angle_raw = reader.ReadSingle();
+                data.Run_Female_Motion_Start_Time_offset = reader.BaseStream.Position;
                 data.Run_Female_Motion_Start_Time_raw = reader.ReadSingle();
+                data.Unk_123_offset = reader.BaseStream.Position;
                 data.Unk_123_raw = reader.ReadSingle();
+                data.Unk_124_offset = reader.BaseStream.Position;
                 data.Unk_124_raw = reader.ReadSingle();
+                data.Run_Motion_Speed_Room__offset = reader.BaseStream.Position;
                 data.Run_Motion_Speed_Room__raw = reader.ReadSingle();
+                data.Run_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Run_Motion_Speed_raw = reader.ReadSingle();
+                data.Dash_Turn_Speed_offset = reader.BaseStream.Position;
                 data.Dash_Turn_Speed_raw = reader.ReadSingle();
+                data.Dash_Motion_Speed_offset = reader.BaseStream.Position;
                 data.Dash_Motion_Speed_raw = reader.ReadSingle();
+                data.Unk_125_offset = reader.BaseStream.Position;
                 data.Unk_125_raw = reader.ReadSingle();
+                data.Unk_126_offset = reader.BaseStream.Position;
                 data.Unk_126_raw = reader.ReadSingle();
+                data.Unk_127_offset = reader.BaseStream.Position;
                 data.Unk_127_raw = reader.ReadSingle();
+                data.Unk_128_offset = reader.BaseStream.Position;
                 data.Unk_128_raw = reader.ReadSingle();
+                data.Unk_129_offset = reader.BaseStream.Position;
                 data.Unk_129_raw = reader.ReadSingle();
+                data.Unk_130_offset = reader.BaseStream.Position;
                 data.Unk_130_raw = reader.ReadSingle();
+                data.Unk_131_offset = reader.BaseStream.Position;
                 data.Unk_131_raw = reader.ReadSingle();
+                data.Unk_132_offset = reader.BaseStream.Position;
                 data.Unk_132_raw = reader.ReadSingle();
+                data.Unk_133_offset = reader.BaseStream.Position;
                 data.Unk_133_raw = reader.ReadSingle();
+                data.Unk_134_offset = reader.BaseStream.Position;
                 data.Unk_134_raw = reader.ReadSingle();
+                data.Unk_135_offset = reader.BaseStream.Position;
                 data.Unk_135_raw = reader.ReadSingle();
+                data.Unk_136_offset = reader.BaseStream.Position;
                 data.Unk_136_raw = reader.ReadSingle();
+                data.Unk_137_offset = reader.BaseStream.Position;
                 data.Unk_137_raw = reader.ReadSingle();
+                data.Unk_138_offset = reader.BaseStream.Position;
                 data.Unk_138_raw = reader.ReadSingle();
+                data.Unk_139_offset = reader.BaseStream.Position;
                 data.Unk_139_raw = reader.ReadSingle();
+                data.Unk_140_offset = reader.BaseStream.Position;
                 data.Unk_140_raw = reader.ReadSingle();
+                data.Unk_141_offset = reader.BaseStream.Position;
                 data.Unk_141_raw = reader.ReadSingle();
+                data.Unk_142_offset = reader.BaseStream.Position;
                 data.Unk_142_raw = reader.ReadSingle();
+                data.Escape_Run_From_Monster_Speed_Multiplier_offset = reader.BaseStream.Position;
                 data.Escape_Run_From_Monster_Speed_Multiplier_raw = reader.ReadSingle();
+                data.Unk_144_offset = reader.BaseStream.Position;
                 data.Unk_144_raw = reader.ReadSingle();
+                data.Unk_145_offset = reader.BaseStream.Position;
                 data.Unk_145_raw = reader.ReadSingle();
+                data.Unk_146_offset = reader.BaseStream.Position;
                 data.Unk_146_raw = reader.ReadSingle();
+                data.Unk_147_offset = reader.BaseStream.Position;
                 data.Unk_147_raw = reader.ReadSingle();
+                data.Unk_148_offset = reader.BaseStream.Position;
                 data.Unk_148_raw = reader.ReadSingle();
+                data.Unk_149_offset = reader.BaseStream.Position;
                 data.Unk_149_raw = reader.ReadSingle();
+                data.Unk_150_offset = reader.BaseStream.Position;
                 data.Unk_150_raw = reader.ReadSingle();
+                data.Unk_151_offset = reader.BaseStream.Position;
                 data.Unk_151_raw = reader.ReadSingle();
+                data.Unk_152_offset = reader.BaseStream.Position;
                 data.Unk_152_raw = reader.ReadSingle();
+                data.Unk_153_offset = reader.BaseStream.Position;
                 data.Unk_153_raw = reader.ReadSingle();
+                data.Unk_154_offset = reader.BaseStream.Position;
                 data.Unk_154_raw = reader.ReadSingle();
+                data.Unk_155_offset = reader.BaseStream.Position;
                 data.Unk_155_raw = reader.ReadSingle();
+                data.Unk_156_offset = reader.BaseStream.Position;
                 data.Unk_156_raw = reader.ReadSingle();
+                data.Unk_157_offset = reader.BaseStream.Position;
                 data.Unk_157_raw = reader.ReadSingle();
                 return data;
             }
@@ -4897,107 +5937,107 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 74", "Unk_74"),
-                    new MultiStructItemCustomView(this, "Unk 75", "Unk_75"),
-                    new MultiStructItemCustomView(this, "Walk Turn Tilt (Bow)", "Walk_Turn_Tilt_Bow_"),
-                    new MultiStructItemCustomView(this, "Unk 76", "Unk_76"),
-                    new MultiStructItemCustomView(this, "Unk 77", "Unk_77"),
-                    new MultiStructItemCustomView(this, "Unk 78", "Unk_78"),
-                    new MultiStructItemCustomView(this, "Run Turn Tilt (Bow)", "Run_Turn_Tilt_Bow_"),
-                    new MultiStructItemCustomView(this, "Run Turn Tilt Head (Bow)", "Run_Turn_Tilt_Head_Bow_"),
-                    new MultiStructItemCustomView(this, "Unk 79", "Unk_79"),
-                    new MultiStructItemCustomView(this, "Unk 80", "Unk_80"),
-                    new MultiStructItemCustomView(this, "Unk 81", "Unk_81"),
-                    new MultiStructItemCustomView(this, "Unk 82", "Unk_82"),
-                    new MultiStructItemCustomView(this, "Unk 83", "Unk_83"),
-                    new MultiStructItemCustomView(this, "Unk 84", "Unk_84"),
-                    new MultiStructItemCustomView(this, "Unk 85", "Unk_85"),
-                    new MultiStructItemCustomView(this, "Unk 86", "Unk_86"),
-                    new MultiStructItemCustomView(this, "Unk 87", "Unk_87"),
-                    new MultiStructItemCustomView(this, "Unk 88", "Unk_88"),
-                    new MultiStructItemCustomView(this, "Unk 89", "Unk_89"),
-                    new MultiStructItemCustomView(this, "Unk 90", "Unk_90"),
-                    new MultiStructItemCustomView(this, "Unk 91", "Unk_91"),
-                    new MultiStructItemCustomView(this, "Unk 92", "Unk_92"),
-                    new MultiStructItemCustomView(this, "Unk 93", "Unk_93"),
-                    new MultiStructItemCustomView(this, "Unk 94", "Unk_94"),
-                    new MultiStructItemCustomView(this, "Unk 95", "Unk_95"),
-                    new MultiStructItemCustomView(this, "Unk 96", "Unk_96"),
-                    new MultiStructItemCustomView(this, "Unk 97", "Unk_97"),
-                    new MultiStructItemCustomView(this, "Unk 98", "Unk_98"),
-                    new MultiStructItemCustomView(this, "Unk 99", "Unk_99"),
-                    new MultiStructItemCustomView(this, "Unk 100", "Unk_100"),
-                    new MultiStructItemCustomView(this, "Unk 101", "Unk_101"),
-                    new MultiStructItemCustomView(this, "Unk 102", "Unk_102"),
-                    new MultiStructItemCustomView(this, "Unk 103", "Unk_103"),
-                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104"),
-                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105"),
-                    new MultiStructItemCustomView(this, "Unk 106", "Unk_106"),
-                    new MultiStructItemCustomView(this, "Unk 107", "Unk_107"),
-                    new MultiStructItemCustomView(this, "Unk 108", "Unk_108"),
-                    new MultiStructItemCustomView(this, "Unk 109", "Unk_109"),
-                    new MultiStructItemCustomView(this, "Unk 110", "Unk_110"),
-                    new MultiStructItemCustomView(this, "Unk 111", "Unk_111"),
-                    new MultiStructItemCustomView(this, "Unk 112", "Unk_112"),
-                    new MultiStructItemCustomView(this, "Unk 113", "Unk_113"),
-                    new MultiStructItemCustomView(this, "Unk 114", "Unk_114"),
-                    new MultiStructItemCustomView(this, "Unk 115", "Unk_115"),
-                    new MultiStructItemCustomView(this, "Unk 116", "Unk_116"),
-                    new MultiStructItemCustomView(this, "Unk 117", "Unk_117"),
-                    new MultiStructItemCustomView(this, "Unk 118", "Unk_118"),
-                    new MultiStructItemCustomView(this, "Unk 119", "Unk_119"),
-                    new MultiStructItemCustomView(this, "Unk 120", "Unk_120"),
-                    new MultiStructItemCustomView(this, "Walk Turn Speed", "Walk_Turn_Speed"),
-                    new MultiStructItemCustomView(this, "Walk Turn Speed (Room)", "Walk_Turn_Speed_Room_"),
-                    new MultiStructItemCustomView(this, "Walk Stop Margin Time", "Walk_Stop_Margin_Time"),
-                    new MultiStructItemCustomView(this, "Female Motion Start Time", "Female_Motion_Start_Time"),
-                    new MultiStructItemCustomView(this, "Unk 121", "Unk_121"),
-                    new MultiStructItemCustomView(this, "Unk 122", "Unk_122"),
-                    new MultiStructItemCustomView(this, "Walk Motion Speed (Room)", "Walk_Motion_Speed_Room_"),
-                    new MultiStructItemCustomView(this, "Walk Motion Speed", "Walk_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Run Stop Margin Time", "Run_Stop_Margin_Time"),
-                    new MultiStructItemCustomView(this, "Run Turn Speed", "Run_Turn_Speed"),
-                    new MultiStructItemCustomView(this, "Run Turn Lever Angle", "Run_Turn_Lever_Angle"),
-                    new MultiStructItemCustomView(this, "Run Female Motion Start Time", "Run_Female_Motion_Start_Time"),
-                    new MultiStructItemCustomView(this, "Unk 123", "Unk_123"),
-                    new MultiStructItemCustomView(this, "Unk 124", "Unk_124"),
-                    new MultiStructItemCustomView(this, "Run Motion Speed (Room)", "Run_Motion_Speed_Room_"),
-                    new MultiStructItemCustomView(this, "Run Motion Speed", "Run_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Dash Turn Speed", "Dash_Turn_Speed"),
-                    new MultiStructItemCustomView(this, "Dash Motion Speed", "Dash_Motion_Speed"),
-                    new MultiStructItemCustomView(this, "Unk 125", "Unk_125"),
-                    new MultiStructItemCustomView(this, "Unk 126", "Unk_126"),
-                    new MultiStructItemCustomView(this, "Unk 127", "Unk_127"),
-                    new MultiStructItemCustomView(this, "Unk 128", "Unk_128"),
-                    new MultiStructItemCustomView(this, "Unk 129", "Unk_129"),
-                    new MultiStructItemCustomView(this, "Unk 130", "Unk_130"),
-                    new MultiStructItemCustomView(this, "Unk 131", "Unk_131"),
-                    new MultiStructItemCustomView(this, "Unk 132", "Unk_132"),
-                    new MultiStructItemCustomView(this, "Unk 133", "Unk_133"),
-                    new MultiStructItemCustomView(this, "Unk 134", "Unk_134"),
-                    new MultiStructItemCustomView(this, "Unk 135", "Unk_135"),
-                    new MultiStructItemCustomView(this, "Unk 136", "Unk_136"),
-                    new MultiStructItemCustomView(this, "Unk 137", "Unk_137"),
-                    new MultiStructItemCustomView(this, "Unk 138", "Unk_138"),
-                    new MultiStructItemCustomView(this, "Unk 139", "Unk_139"),
-                    new MultiStructItemCustomView(this, "Unk 140", "Unk_140"),
-                    new MultiStructItemCustomView(this, "Unk 141", "Unk_141"),
-                    new MultiStructItemCustomView(this, "Unk 142", "Unk_142"),
-                    new MultiStructItemCustomView(this, "Escape (Run) From Monster Speed Multiplier", "Escape_Run_From_Monster_Speed_Multiplier"),
-                    new MultiStructItemCustomView(this, "Unk 144", "Unk_144"),
-                    new MultiStructItemCustomView(this, "Unk 145", "Unk_145"),
-                    new MultiStructItemCustomView(this, "Unk 146", "Unk_146"),
-                    new MultiStructItemCustomView(this, "Unk 147", "Unk_147"),
-                    new MultiStructItemCustomView(this, "Unk 148", "Unk_148"),
-                    new MultiStructItemCustomView(this, "Unk 149", "Unk_149"),
-                    new MultiStructItemCustomView(this, "Unk 150", "Unk_150"),
-                    new MultiStructItemCustomView(this, "Unk 151", "Unk_151"),
-                    new MultiStructItemCustomView(this, "Unk 152", "Unk_152"),
-                    new MultiStructItemCustomView(this, "Unk 153", "Unk_153"),
-                    new MultiStructItemCustomView(this, "Unk 154", "Unk_154"),
-                    new MultiStructItemCustomView(this, "Unk 155", "Unk_155"),
-                    new MultiStructItemCustomView(this, "Unk 156", "Unk_156"),
-                    new MultiStructItemCustomView(this, "Unk 157", "Unk_157"),
+                    new MultiStructItemCustomView(this, "Unk 74", "Unk_74", "Unk_74_offset"),
+                    new MultiStructItemCustomView(this, "Unk 75", "Unk_75", "Unk_75_offset"),
+                    new MultiStructItemCustomView(this, "Walk Turn Tilt (Bow)", "Walk_Turn_Tilt_Bow_", "Walk_Turn_Tilt_Bow__offset"),
+                    new MultiStructItemCustomView(this, "Unk 76", "Unk_76", "Unk_76_offset"),
+                    new MultiStructItemCustomView(this, "Unk 77", "Unk_77", "Unk_77_offset"),
+                    new MultiStructItemCustomView(this, "Unk 78", "Unk_78", "Unk_78_offset"),
+                    new MultiStructItemCustomView(this, "Run Turn Tilt (Bow)", "Run_Turn_Tilt_Bow_", "Run_Turn_Tilt_Bow__offset"),
+                    new MultiStructItemCustomView(this, "Run Turn Tilt Head (Bow)", "Run_Turn_Tilt_Head_Bow_", "Run_Turn_Tilt_Head_Bow__offset"),
+                    new MultiStructItemCustomView(this, "Unk 79", "Unk_79", "Unk_79_offset"),
+                    new MultiStructItemCustomView(this, "Unk 80", "Unk_80", "Unk_80_offset"),
+                    new MultiStructItemCustomView(this, "Unk 81", "Unk_81", "Unk_81_offset"),
+                    new MultiStructItemCustomView(this, "Unk 82", "Unk_82", "Unk_82_offset"),
+                    new MultiStructItemCustomView(this, "Unk 83", "Unk_83", "Unk_83_offset"),
+                    new MultiStructItemCustomView(this, "Unk 84", "Unk_84", "Unk_84_offset"),
+                    new MultiStructItemCustomView(this, "Unk 85", "Unk_85", "Unk_85_offset"),
+                    new MultiStructItemCustomView(this, "Unk 86", "Unk_86", "Unk_86_offset"),
+                    new MultiStructItemCustomView(this, "Unk 87", "Unk_87", "Unk_87_offset"),
+                    new MultiStructItemCustomView(this, "Unk 88", "Unk_88", "Unk_88_offset"),
+                    new MultiStructItemCustomView(this, "Unk 89", "Unk_89", "Unk_89_offset"),
+                    new MultiStructItemCustomView(this, "Unk 90", "Unk_90", "Unk_90_offset"),
+                    new MultiStructItemCustomView(this, "Unk 91", "Unk_91", "Unk_91_offset"),
+                    new MultiStructItemCustomView(this, "Unk 92", "Unk_92", "Unk_92_offset"),
+                    new MultiStructItemCustomView(this, "Unk 93", "Unk_93", "Unk_93_offset"),
+                    new MultiStructItemCustomView(this, "Unk 94", "Unk_94", "Unk_94_offset"),
+                    new MultiStructItemCustomView(this, "Unk 95", "Unk_95", "Unk_95_offset"),
+                    new MultiStructItemCustomView(this, "Unk 96", "Unk_96", "Unk_96_offset"),
+                    new MultiStructItemCustomView(this, "Unk 97", "Unk_97", "Unk_97_offset"),
+                    new MultiStructItemCustomView(this, "Unk 98", "Unk_98", "Unk_98_offset"),
+                    new MultiStructItemCustomView(this, "Unk 99", "Unk_99", "Unk_99_offset"),
+                    new MultiStructItemCustomView(this, "Unk 100", "Unk_100", "Unk_100_offset"),
+                    new MultiStructItemCustomView(this, "Unk 101", "Unk_101", "Unk_101_offset"),
+                    new MultiStructItemCustomView(this, "Unk 102", "Unk_102", "Unk_102_offset"),
+                    new MultiStructItemCustomView(this, "Unk 103", "Unk_103", "Unk_103_offset"),
+                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104", "Unk_104_offset"),
+                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105", "Unk_105_offset"),
+                    new MultiStructItemCustomView(this, "Unk 106", "Unk_106", "Unk_106_offset"),
+                    new MultiStructItemCustomView(this, "Unk 107", "Unk_107", "Unk_107_offset"),
+                    new MultiStructItemCustomView(this, "Unk 108", "Unk_108", "Unk_108_offset"),
+                    new MultiStructItemCustomView(this, "Unk 109", "Unk_109", "Unk_109_offset"),
+                    new MultiStructItemCustomView(this, "Unk 110", "Unk_110", "Unk_110_offset"),
+                    new MultiStructItemCustomView(this, "Unk 111", "Unk_111", "Unk_111_offset"),
+                    new MultiStructItemCustomView(this, "Unk 112", "Unk_112", "Unk_112_offset"),
+                    new MultiStructItemCustomView(this, "Unk 113", "Unk_113", "Unk_113_offset"),
+                    new MultiStructItemCustomView(this, "Unk 114", "Unk_114", "Unk_114_offset"),
+                    new MultiStructItemCustomView(this, "Unk 115", "Unk_115", "Unk_115_offset"),
+                    new MultiStructItemCustomView(this, "Unk 116", "Unk_116", "Unk_116_offset"),
+                    new MultiStructItemCustomView(this, "Unk 117", "Unk_117", "Unk_117_offset"),
+                    new MultiStructItemCustomView(this, "Unk 118", "Unk_118", "Unk_118_offset"),
+                    new MultiStructItemCustomView(this, "Unk 119", "Unk_119", "Unk_119_offset"),
+                    new MultiStructItemCustomView(this, "Unk 120", "Unk_120", "Unk_120_offset"),
+                    new MultiStructItemCustomView(this, "Walk Turn Speed", "Walk_Turn_Speed", "Walk_Turn_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Walk Turn Speed (Room)", "Walk_Turn_Speed_Room_", "Walk_Turn_Speed_Room__offset"),
+                    new MultiStructItemCustomView(this, "Walk Stop Margin Time", "Walk_Stop_Margin_Time", "Walk_Stop_Margin_Time_offset"),
+                    new MultiStructItemCustomView(this, "Female Motion Start Time", "Female_Motion_Start_Time", "Female_Motion_Start_Time_offset"),
+                    new MultiStructItemCustomView(this, "Unk 121", "Unk_121", "Unk_121_offset"),
+                    new MultiStructItemCustomView(this, "Unk 122", "Unk_122", "Unk_122_offset"),
+                    new MultiStructItemCustomView(this, "Walk Motion Speed (Room)", "Walk_Motion_Speed_Room_", "Walk_Motion_Speed_Room__offset"),
+                    new MultiStructItemCustomView(this, "Walk Motion Speed", "Walk_Motion_Speed", "Walk_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Run Stop Margin Time", "Run_Stop_Margin_Time", "Run_Stop_Margin_Time_offset"),
+                    new MultiStructItemCustomView(this, "Run Turn Speed", "Run_Turn_Speed", "Run_Turn_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Run Turn Lever Angle", "Run_Turn_Lever_Angle", "Run_Turn_Lever_Angle_offset"),
+                    new MultiStructItemCustomView(this, "Run Female Motion Start Time", "Run_Female_Motion_Start_Time", "Run_Female_Motion_Start_Time_offset"),
+                    new MultiStructItemCustomView(this, "Unk 123", "Unk_123", "Unk_123_offset"),
+                    new MultiStructItemCustomView(this, "Unk 124", "Unk_124", "Unk_124_offset"),
+                    new MultiStructItemCustomView(this, "Run Motion Speed (Room)", "Run_Motion_Speed_Room_", "Run_Motion_Speed_Room__offset"),
+                    new MultiStructItemCustomView(this, "Run Motion Speed", "Run_Motion_Speed", "Run_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Dash Turn Speed", "Dash_Turn_Speed", "Dash_Turn_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Dash Motion Speed", "Dash_Motion_Speed", "Dash_Motion_Speed_offset"),
+                    new MultiStructItemCustomView(this, "Unk 125", "Unk_125", "Unk_125_offset"),
+                    new MultiStructItemCustomView(this, "Unk 126", "Unk_126", "Unk_126_offset"),
+                    new MultiStructItemCustomView(this, "Unk 127", "Unk_127", "Unk_127_offset"),
+                    new MultiStructItemCustomView(this, "Unk 128", "Unk_128", "Unk_128_offset"),
+                    new MultiStructItemCustomView(this, "Unk 129", "Unk_129", "Unk_129_offset"),
+                    new MultiStructItemCustomView(this, "Unk 130", "Unk_130", "Unk_130_offset"),
+                    new MultiStructItemCustomView(this, "Unk 131", "Unk_131", "Unk_131_offset"),
+                    new MultiStructItemCustomView(this, "Unk 132", "Unk_132", "Unk_132_offset"),
+                    new MultiStructItemCustomView(this, "Unk 133", "Unk_133", "Unk_133_offset"),
+                    new MultiStructItemCustomView(this, "Unk 134", "Unk_134", "Unk_134_offset"),
+                    new MultiStructItemCustomView(this, "Unk 135", "Unk_135", "Unk_135_offset"),
+                    new MultiStructItemCustomView(this, "Unk 136", "Unk_136", "Unk_136_offset"),
+                    new MultiStructItemCustomView(this, "Unk 137", "Unk_137", "Unk_137_offset"),
+                    new MultiStructItemCustomView(this, "Unk 138", "Unk_138", "Unk_138_offset"),
+                    new MultiStructItemCustomView(this, "Unk 139", "Unk_139", "Unk_139_offset"),
+                    new MultiStructItemCustomView(this, "Unk 140", "Unk_140", "Unk_140_offset"),
+                    new MultiStructItemCustomView(this, "Unk 141", "Unk_141", "Unk_141_offset"),
+                    new MultiStructItemCustomView(this, "Unk 142", "Unk_142", "Unk_142_offset"),
+                    new MultiStructItemCustomView(this, "Escape (Run) From Monster Speed Multiplier", "Escape_Run_From_Monster_Speed_Multiplier", "Escape_Run_From_Monster_Speed_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Unk 144", "Unk_144", "Unk_144_offset"),
+                    new MultiStructItemCustomView(this, "Unk 145", "Unk_145", "Unk_145_offset"),
+                    new MultiStructItemCustomView(this, "Unk 146", "Unk_146", "Unk_146_offset"),
+                    new MultiStructItemCustomView(this, "Unk 147", "Unk_147", "Unk_147_offset"),
+                    new MultiStructItemCustomView(this, "Unk 148", "Unk_148", "Unk_148_offset"),
+                    new MultiStructItemCustomView(this, "Unk 149", "Unk_149", "Unk_149_offset"),
+                    new MultiStructItemCustomView(this, "Unk 150", "Unk_150", "Unk_150_offset"),
+                    new MultiStructItemCustomView(this, "Unk 151", "Unk_151", "Unk_151_offset"),
+                    new MultiStructItemCustomView(this, "Unk 152", "Unk_152", "Unk_152_offset"),
+                    new MultiStructItemCustomView(this, "Unk 153", "Unk_153", "Unk_153_offset"),
+                    new MultiStructItemCustomView(this, "Unk 154", "Unk_154", "Unk_154_offset"),
+                    new MultiStructItemCustomView(this, "Unk 155", "Unk_155", "Unk_155_offset"),
+                    new MultiStructItemCustomView(this, "Unk 156", "Unk_156", "Unk_156_offset"),
+                    new MultiStructItemCustomView(this, "Unk 157", "Unk_157", "Unk_157_offset"),
                 };
             }
         }
@@ -5318,6 +6358,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Attack_Bonus_1__offset { get; private set; }
+
             protected byte Wp_HR_Augment_Attack_Bonus_2__raw;
             public const string Wp_HR_Augment_Attack_Bonus_2__displayName = "Wp HR Augment Attack Bonus (2)";
             public const int Wp_HR_Augment_Attack_Bonus_2__sortIndex = 100;
@@ -5332,6 +6375,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_HR_Augment_Attack_Bonus_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Attack_Bonus_2__offset { get; private set; }
 
             protected byte Wp_HR_Augment_Attack_Bonus_3__raw;
             public const string Wp_HR_Augment_Attack_Bonus_3__displayName = "Wp HR Augment Attack Bonus (3)";
@@ -5348,6 +6394,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Attack_Bonus_3__offset { get; private set; }
+
             protected byte Wp_HR_Augment_Critical_Bonus_1__raw;
             public const string Wp_HR_Augment_Critical_Bonus_1__displayName = "Wp HR Augment Critical Bonus (1)";
             public const int Wp_HR_Augment_Critical_Bonus_1__sortIndex = 200;
@@ -5362,6 +6411,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_HR_Augment_Critical_Bonus_1_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Critical_Bonus_1__offset { get; private set; }
 
             protected byte Wp_HR_Augment_Critical_Bonus_2__raw;
             public const string Wp_HR_Augment_Critical_Bonus_2__displayName = "Wp HR Augment Critical Bonus (2)";
@@ -5378,6 +6430,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Critical_Bonus_2__offset { get; private set; }
+
             protected byte Wp_HR_Augment_Critical_Bonus_3__raw;
             public const string Wp_HR_Augment_Critical_Bonus_3__displayName = "Wp HR Augment Critical Bonus (3)";
             public const int Wp_HR_Augment_Critical_Bonus_3__sortIndex = 300;
@@ -5392,6 +6447,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_HR_Augment_Critical_Bonus_3_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Critical_Bonus_3__offset { get; private set; }
 
             protected byte Wp_HR_Augment_Defense_Bonus_1__raw;
             public const string Wp_HR_Augment_Defense_Bonus_1__displayName = "Wp HR Augment Defense Bonus (1)";
@@ -5408,6 +6466,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Defense_Bonus_1__offset { get; private set; }
+
             protected byte Wp_HR_Augment_Defense_Bonus_2__raw;
             public const string Wp_HR_Augment_Defense_Bonus_2__displayName = "Wp HR Augment Defense Bonus (2)";
             public const int Wp_HR_Augment_Defense_Bonus_2__sortIndex = 400;
@@ -5422,6 +6483,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Bonus_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Defense_Bonus_2__offset { get; private set; }
 
             protected byte Wp_HR_Augment_Defense_Bonus_3__raw;
             public const string Wp_HR_Augment_Defense_Bonus_3__displayName = "Wp HR Augment Defense Bonus (3)";
@@ -5438,6 +6502,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Defense_Bonus_3__offset { get; private set; }
+
             protected byte Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__raw;
             public const string Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__displayName = "Wp HR Augment Defense: Divine Blessing Chance (1)";
             public const int Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__sortIndex = 500;
@@ -5452,6 +6519,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_1_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__offset { get; private set; }
 
             protected byte Wp_HR_Augment_Defense_Divine_Blessing_Chance_2__raw;
             public const string Wp_HR_Augment_Defense_Divine_Blessing_Chance_2__displayName = "Wp HR Augment Defense: Divine Blessing Chance (2)";
@@ -5468,6 +6538,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Defense_Divine_Blessing_Chance_2__offset { get; private set; }
+
             protected byte Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__raw;
             public const string Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__displayName = "Wp HR Augment Defense: Divine Blessing Chance (3)";
             public const int Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__sortIndex = 600;
@@ -5482,6 +6555,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Chance_3_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__offset { get; private set; }
 
             protected float Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1__raw;
             public const string Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1__displayName = "Wp HR Augment Defense: Divine Blessing Reduction (1)";
@@ -5498,6 +6574,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1__offset { get; private set; }
+
             protected float Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__raw;
             public const string Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__displayName = "Wp HR Augment Defense: Divine Blessing Reduction (2)";
             public const int Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__sortIndex = 700;
@@ -5512,6 +6591,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__offset { get; private set; }
 
             protected float Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3__raw;
             public const string Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3__displayName = "Wp HR Augment Defense: Divine Blessing Reduction (3)";
@@ -5528,6 +6610,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3__offset { get; private set; }
+
             protected float Wp_HR_Augment_Defense_Heal_Damage_Rate_1__raw;
             public const string Wp_HR_Augment_Defense_Heal_Damage_Rate_1__displayName = "Wp HR Augment Defense Heal Damage Rate (1)";
             public const int Wp_HR_Augment_Defense_Heal_Damage_Rate_1__sortIndex = 800;
@@ -5542,6 +6627,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Heal_Damage_Rate_1_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Defense_Heal_Damage_Rate_1__offset { get; private set; }
 
             protected float Wp_HR_Augment_Defense_Heal_Damage_Rate_2__raw;
             public const string Wp_HR_Augment_Defense_Heal_Damage_Rate_2__displayName = "Wp HR Augment Defense Heal Damage Rate (2)";
@@ -5558,6 +6646,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Defense_Heal_Damage_Rate_2__offset { get; private set; }
+
             protected float Wp_HR_Augment_Defense_Heal_Damage_Rate_3__raw;
             public const string Wp_HR_Augment_Defense_Heal_Damage_Rate_3__displayName = "Wp HR Augment Defense Heal Damage Rate (3)";
             public const int Wp_HR_Augment_Defense_Heal_Damage_Rate_3__sortIndex = 900;
@@ -5572,6 +6663,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_HR_Augment_Defense_Heal_Damage_Rate_3_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Defense_Heal_Damage_Rate_3__offset { get; private set; }
 
             protected float Wp_HR_Augment_IB_Unk_raw;
             public const string Wp_HR_Augment_IB_Unk_displayName = "Wp HR Augment IB Unk";
@@ -5588,6 +6682,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_IB_Unk_offset { get; private set; }
+
             protected float Wp_HR_Augment_Lifesteal_Cooldown_raw;
             public const string Wp_HR_Augment_Lifesteal_Cooldown_displayName = "Wp HR Augment Lifesteal Cooldown";
             public const int Wp_HR_Augment_Lifesteal_Cooldown_sortIndex = 1000;
@@ -5602,6 +6699,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_HR_Augment_Lifesteal_Cooldown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_HR_Augment_Lifesteal_Cooldown_offset { get; private set; }
 
             protected byte Wp_MR_Augment_Attack_Bonus_1__raw;
             public const string Wp_MR_Augment_Attack_Bonus_1__displayName = "Wp MR Augment Attack Bonus (1)";
@@ -5618,6 +6718,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Attack_Bonus_1__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Attack_Bonus_2__raw;
             public const string Wp_MR_Augment_Attack_Bonus_2__displayName = "Wp MR Augment Attack Bonus (2)";
             public const int Wp_MR_Augment_Attack_Bonus_2__sortIndex = 1100;
@@ -5632,6 +6735,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Attack_Bonus_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Attack_Bonus_2__offset { get; private set; }
 
             protected byte Wp_MR_Augment_Attack_Bonus_3__raw;
             public const string Wp_MR_Augment_Attack_Bonus_3__displayName = "Wp MR Augment Attack Bonus (3)";
@@ -5648,6 +6754,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Attack_Bonus_3__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Attack_Bonus_4__raw;
             public const string Wp_MR_Augment_Attack_Bonus_4__displayName = "Wp MR Augment Attack Bonus (4)";
             public const int Wp_MR_Augment_Attack_Bonus_4__sortIndex = 1200;
@@ -5662,6 +6771,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Attack_Bonus_4_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Attack_Bonus_4__offset { get; private set; }
 
             protected byte Wp_MR_Augment_Critical_Bonus_1__raw;
             public const string Wp_MR_Augment_Critical_Bonus_1__displayName = "Wp MR Augment Critical Bonus (1)";
@@ -5678,6 +6790,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Critical_Bonus_1__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Critical_Bonus_2__raw;
             public const string Wp_MR_Augment_Critical_Bonus_2__displayName = "Wp MR Augment Critical Bonus (2)";
             public const int Wp_MR_Augment_Critical_Bonus_2__sortIndex = 1300;
@@ -5692,6 +6807,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Critical_Bonus_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Critical_Bonus_2__offset { get; private set; }
 
             protected byte Wp_MR_Augment_Critical_Bonus_3__raw;
             public const string Wp_MR_Augment_Critical_Bonus_3__displayName = "Wp MR Augment Critical Bonus (3)";
@@ -5708,6 +6826,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Critical_Bonus_3__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Critical_Bonus_4__raw;
             public const string Wp_MR_Augment_Critical_Bonus_4__displayName = "Wp MR Augment Critical Bonus (4)";
             public const int Wp_MR_Augment_Critical_Bonus_4__sortIndex = 1400;
@@ -5722,6 +6843,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Critical_Bonus_4_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Critical_Bonus_4__offset { get; private set; }
 
             protected byte Wp_MR_Augment_Defense_Bonus_1__raw;
             public const string Wp_MR_Augment_Defense_Bonus_1__displayName = "Wp MR Augment Defense Bonus (1)";
@@ -5738,6 +6862,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Defense_Bonus_1__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Defense_Bonus_2__raw;
             public const string Wp_MR_Augment_Defense_Bonus_2__displayName = "Wp MR Augment Defense Bonus (2)";
             public const int Wp_MR_Augment_Defense_Bonus_2__sortIndex = 1500;
@@ -5752,6 +6879,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Bonus_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Defense_Bonus_2__offset { get; private set; }
 
             protected byte Wp_MR_Augment_Defense_Bonus_3__raw;
             public const string Wp_MR_Augment_Defense_Bonus_3__displayName = "Wp MR Augment Defense Bonus (3)";
@@ -5768,6 +6898,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Defense_Bonus_3__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Defense_Bonus_4__raw;
             public const string Wp_MR_Augment_Defense_Bonus_4__displayName = "Wp MR Augment Defense Bonus (4)";
             public const int Wp_MR_Augment_Defense_Bonus_4__sortIndex = 1600;
@@ -5782,6 +6915,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Bonus_4_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Defense_Bonus_4__offset { get; private set; }
 
             protected byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_1__raw;
             public const string Wp_MR_Augment_Defense_Divine_Blessing_Chance_1__displayName = "Wp MR Augment Defense: Divine Blessing Chance (1)";
@@ -5798,6 +6934,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Defense_Divine_Blessing_Chance_1__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__raw;
             public const string Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__displayName = "Wp MR Augment Defense: Divine Blessing Chance (2)";
             public const int Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__sortIndex = 1700;
@@ -5812,6 +6951,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__offset { get; private set; }
 
             protected byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_3__raw;
             public const string Wp_MR_Augment_Defense_Divine_Blessing_Chance_3__displayName = "Wp MR Augment Defense: Divine Blessing Chance (3)";
@@ -5828,6 +6970,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Defense_Divine_Blessing_Chance_3__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__raw;
             public const string Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__displayName = "Wp MR Augment Defense: Divine Blessing Chance (4)";
             public const int Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__sortIndex = 1800;
@@ -5842,6 +6987,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Chance_4_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__offset { get; private set; }
 
             protected float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1__raw;
             public const string Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1__displayName = "Wp MR Augment Defense: Divine Blessing Reduction (1)";
@@ -5858,6 +7006,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1__offset { get; private set; }
+
             protected float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__raw;
             public const string Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__displayName = "Wp MR Augment Defense: Divine Blessing Reduction (2)";
             public const int Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__sortIndex = 1900;
@@ -5872,6 +7023,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__offset { get; private set; }
 
             protected float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3__raw;
             public const string Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3__displayName = "Wp MR Augment Defense: Divine Blessing Reduction (3)";
@@ -5888,6 +7042,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3__offset { get; private set; }
+
             protected float Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__raw;
             public const string Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__displayName = "Wp MR Augment Defense: Divine Blessing Reduction (4)";
             public const int Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__sortIndex = 2000;
@@ -5902,6 +7059,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__offset { get; private set; }
 
             protected float Wp_MR_Augment_Health_Percent_1__raw;
             public const string Wp_MR_Augment_Health_Percent_1__displayName = "Wp MR Augment Health Percent (1)";
@@ -5918,6 +7078,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Health_Percent_1__offset { get; private set; }
+
             protected float Wp_MR_Augment_Health_Percent_2__raw;
             public const string Wp_MR_Augment_Health_Percent_2__displayName = "Wp MR Augment Health Percent (2)";
             public const int Wp_MR_Augment_Health_Percent_2__sortIndex = 2100;
@@ -5932,6 +7095,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Health_Percent_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Health_Percent_2__offset { get; private set; }
 
             protected float Wp_MR_Augment_Health_Percent_3__raw;
             public const string Wp_MR_Augment_Health_Percent_3__displayName = "Wp MR Augment Health Percent (3)";
@@ -5948,6 +7114,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Health_Percent_3__offset { get; private set; }
+
             protected float Wp_MR_Augment_Health_Percent_4__raw;
             public const string Wp_MR_Augment_Health_Percent_4__displayName = "Wp MR Augment Health Percent (4)";
             public const int Wp_MR_Augment_Health_Percent_4__sortIndex = 2200;
@@ -5962,6 +7131,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Health_Percent_4_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Health_Percent_4__offset { get; private set; }
 
             protected float WP_MR_Wyrmstake_Blast_Health_Regen_raw;
             public const string WP_MR_Wyrmstake_Blast_Health_Regen_displayName = "WP MR Wyrmstake Blast Health Regen";
@@ -5978,6 +7150,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long WP_MR_Wyrmstake_Blast_Health_Regen_offset { get; private set; }
+
             protected float Wp_MR_Augment_Lifesteal_Cooldown_raw;
             public const string Wp_MR_Augment_Lifesteal_Cooldown_displayName = "Wp MR Augment Lifesteal Cooldown";
             public const int Wp_MR_Augment_Lifesteal_Cooldown_sortIndex = 2300;
@@ -5992,6 +7167,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Lifesteal_Cooldown));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Lifesteal_Cooldown_offset { get; private set; }
 
             protected byte Wp_MR_Augment_Element_1__raw;
             public const string Wp_MR_Augment_Element_1__displayName = "Wp MR Augment Element (1)";
@@ -6008,6 +7186,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Element_1__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Element_2__raw;
             public const string Wp_MR_Augment_Element_2__displayName = "Wp MR Augment Element (2)";
             public const int Wp_MR_Augment_Element_2__sortIndex = 2400;
@@ -6022,6 +7203,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Element_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Element_2__offset { get; private set; }
 
             protected byte Wp_MR_Augment_Element_3__raw;
             public const string Wp_MR_Augment_Element_3__displayName = "Wp MR Augment Element (3)";
@@ -6038,6 +7222,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Element_3__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Element_4__raw;
             public const string Wp_MR_Augment_Element_4__displayName = "Wp MR Augment Element (4)";
             public const int Wp_MR_Augment_Element_4__sortIndex = 2500;
@@ -6052,6 +7239,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Element_4_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Element_4__offset { get; private set; }
 
             protected byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__raw;
             public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (1)";
@@ -6068,6 +7258,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__raw;
             public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (2)";
             public const int Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__sortIndex = 2600;
@@ -6082,6 +7275,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__offset { get; private set; }
 
             protected byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3__raw;
             public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (3)";
@@ -6098,6 +7294,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__raw;
             public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (4)";
             public const int Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__sortIndex = 2700;
@@ -6112,6 +7311,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__offset { get; private set; }
 
             protected byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1__raw;
             public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (1)";
@@ -6128,6 +7330,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__raw;
             public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (2)";
             public const int Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__sortIndex = 2800;
@@ -6142,6 +7347,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__offset { get; private set; }
 
             protected byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3__raw;
             public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (3)";
@@ -6158,6 +7366,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3__offset { get; private set; }
+
             protected byte Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__raw;
             public const string Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__displayName = "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (4)";
             public const int Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__sortIndex = 2900;
@@ -6172,6 +7383,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__offset { get; private set; }
 
             protected float Wp_MR_Augment_Great_Sword_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_Great_Sword_Elemental_Multiplier_displayName = "Wp MR Augment Great Sword Elemental Multiplier";
@@ -6188,6 +7402,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Great_Sword_Elemental_Multiplier_offset { get; private set; }
+
             protected float Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_displayName = "Wp MR Augment Sword & Shield Elemental Multiplier";
             public const int Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_sortIndex = 3000;
@@ -6202,6 +7419,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Sword_Shield_Elemental_Multiplier));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_offset { get; private set; }
 
             protected float Wp_MR_Augment_Dual_Blades_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_Dual_Blades_Elemental_Multiplier_displayName = "Wp MR Augment Dual Blades Elemental Multiplier";
@@ -6218,6 +7438,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Dual_Blades_Elemental_Multiplier_offset { get; private set; }
+
             protected float Wp_MR_Augment_Long_Sword_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_Long_Sword_Elemental_Multiplier_displayName = "Wp MR Augment Long Sword Elemental Multiplier";
             public const int Wp_MR_Augment_Long_Sword_Elemental_Multiplier_sortIndex = 3100;
@@ -6232,6 +7455,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Long_Sword_Elemental_Multiplier));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Long_Sword_Elemental_Multiplier_offset { get; private set; }
 
             protected float Wp_MR_Augment_Hammer_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_Hammer_Elemental_Multiplier_displayName = "Wp MR Augment Hammer Elemental Multiplier";
@@ -6248,6 +7474,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Hammer_Elemental_Multiplier_offset { get; private set; }
+
             protected float Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_displayName = "Wp MR Augment Hunting Horn Elemental Multiplier";
             public const int Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_sortIndex = 3200;
@@ -6262,6 +7491,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_offset { get; private set; }
 
             protected float Wp_MR_Augment_Lance_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_Lance_Elemental_Multiplier_displayName = "Wp MR Augment Lance Elemental Multiplier";
@@ -6278,6 +7510,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Lance_Elemental_Multiplier_offset { get; private set; }
+
             protected float Wp_MR_Augment_Gunlance_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_Gunlance_Elemental_Multiplier_displayName = "Wp MR Augment Gunlance Elemental Multiplier";
             public const int Wp_MR_Augment_Gunlance_Elemental_Multiplier_sortIndex = 3300;
@@ -6292,6 +7527,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Gunlance_Elemental_Multiplier));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Gunlance_Elemental_Multiplier_offset { get; private set; }
 
             protected float Wp_MR_Augment_Switch_Axe_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_Switch_Axe_Elemental_Multiplier_displayName = "Wp MR Augment Switch Axe Elemental Multiplier";
@@ -6308,6 +7546,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Switch_Axe_Elemental_Multiplier_offset { get; private set; }
+
             protected float Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_displayName = "Wp MR Augment Charge Blade Elemental Multiplier";
             public const int Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_sortIndex = 3400;
@@ -6322,6 +7563,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Charge_Blade_Elemental_Multiplier));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_offset { get; private set; }
 
             protected float Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier_displayName = "Wp MR Augment Insect Glaive Elemental Multiplier";
@@ -6338,6 +7582,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier_offset { get; private set; }
+
             protected float Wp_MR_Augment_Bow_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_Bow_Elemental_Multiplier_displayName = "Wp MR Augment Bow Elemental Multiplier";
             public const int Wp_MR_Augment_Bow_Elemental_Multiplier_sortIndex = 3500;
@@ -6352,6 +7599,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Bow_Elemental_Multiplier));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bow_Elemental_Multiplier_offset { get; private set; }
 
             protected float Wp_MR_Augment_HBG_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_HBG_Elemental_Multiplier_displayName = "Wp MR Augment HBG Elemental Multiplier";
@@ -6368,6 +7618,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_HBG_Elemental_Multiplier_offset { get; private set; }
+
             protected float Wp_MR_Augment_LBG_Elemental_Multiplier_raw;
             public const string Wp_MR_Augment_LBG_Elemental_Multiplier_displayName = "Wp MR Augment LBG Elemental Multiplier";
             public const int Wp_MR_Augment_LBG_Elemental_Multiplier_sortIndex = 3600;
@@ -6382,6 +7635,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_LBG_Elemental_Multiplier));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_LBG_Elemental_Multiplier_offset { get; private set; }
 
             protected float Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__raw;
             public const string Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__displayName = "Wp MR Augment Bow Coating Status Multiplier (1)";
@@ -6398,6 +7654,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__offset { get; private set; }
+
             protected float Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__raw;
             public const string Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__displayName = "Wp MR Augment Bow Coating Status Multiplier (2)";
             public const int Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__sortIndex = 3700;
@@ -6412,6 +7671,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Wp_MR_Augment_Bow_Coating_Status_Multiplier_2_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__offset { get; private set; }
 
             protected float Wp_MR_Augment_Bow_Coating_Status_Multiplier_3__raw;
             public const string Wp_MR_Augment_Bow_Coating_Status_Multiplier_3__displayName = "Wp MR Augment Bow Coating Status Multiplier (3)";
@@ -6428,6 +7690,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bow_Coating_Status_Multiplier_3__offset { get; private set; }
+
             protected float Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__raw;
             public const string Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__displayName = "Wp MR Augment Bow Coating Status Multiplier (4)";
             public const int Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__sortIndex = 3800;
@@ -6443,6 +7708,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__offset { get; private set; }
+
             public const int lastSortIndex = 3850;
 
             public static ObservableMhwStructCollection<Player_Params_7_HR_MR_Augment_Params> LoadData(BinaryReader reader) {
@@ -6457,81 +7725,157 @@ namespace MHW_Editor.Structs.PlData {
             public static Player_Params_7_HR_MR_Augment_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new Player_Params_7_HR_MR_Augment_Params();
                 data.Index = i;
+                data.Wp_HR_Augment_Attack_Bonus_1__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Attack_Bonus_1__raw = reader.ReadByte();
+                data.Wp_HR_Augment_Attack_Bonus_2__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Attack_Bonus_2__raw = reader.ReadByte();
+                data.Wp_HR_Augment_Attack_Bonus_3__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Attack_Bonus_3__raw = reader.ReadByte();
+                data.Wp_HR_Augment_Critical_Bonus_1__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Critical_Bonus_1__raw = reader.ReadByte();
+                data.Wp_HR_Augment_Critical_Bonus_2__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Critical_Bonus_2__raw = reader.ReadByte();
+                data.Wp_HR_Augment_Critical_Bonus_3__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Critical_Bonus_3__raw = reader.ReadByte();
+                data.Wp_HR_Augment_Defense_Bonus_1__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Defense_Bonus_1__raw = reader.ReadByte();
+                data.Wp_HR_Augment_Defense_Bonus_2__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Defense_Bonus_2__raw = reader.ReadByte();
+                data.Wp_HR_Augment_Defense_Bonus_3__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Defense_Bonus_3__raw = reader.ReadByte();
+                data.Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__raw = reader.ReadByte();
+                data.Wp_HR_Augment_Defense_Divine_Blessing_Chance_2__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Defense_Divine_Blessing_Chance_2__raw = reader.ReadByte();
+                data.Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__raw = reader.ReadByte();
+                data.Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1__raw = reader.ReadSingle();
+                data.Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__raw = reader.ReadSingle();
+                data.Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3__raw = reader.ReadSingle();
+                data.Wp_HR_Augment_Defense_Heal_Damage_Rate_1__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Defense_Heal_Damage_Rate_1__raw = reader.ReadSingle();
+                data.Wp_HR_Augment_Defense_Heal_Damage_Rate_2__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Defense_Heal_Damage_Rate_2__raw = reader.ReadSingle();
+                data.Wp_HR_Augment_Defense_Heal_Damage_Rate_3__offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Defense_Heal_Damage_Rate_3__raw = reader.ReadSingle();
+                data.Wp_HR_Augment_IB_Unk_offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_IB_Unk_raw = reader.ReadSingle();
+                data.Wp_HR_Augment_Lifesteal_Cooldown_offset = reader.BaseStream.Position;
                 data.Wp_HR_Augment_Lifesteal_Cooldown_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Attack_Bonus_1__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Attack_Bonus_1__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Attack_Bonus_2__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Attack_Bonus_2__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Attack_Bonus_3__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Attack_Bonus_3__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Attack_Bonus_4__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Attack_Bonus_4__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Critical_Bonus_1__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Critical_Bonus_1__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Critical_Bonus_2__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Critical_Bonus_2__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Critical_Bonus_3__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Critical_Bonus_3__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Critical_Bonus_4__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Critical_Bonus_4__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Defense_Bonus_1__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Defense_Bonus_1__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Defense_Bonus_2__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Defense_Bonus_2__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Defense_Bonus_3__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Defense_Bonus_3__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Defense_Bonus_4__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Defense_Bonus_4__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Defense_Divine_Blessing_Chance_1__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Defense_Divine_Blessing_Chance_1__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Defense_Divine_Blessing_Chance_3__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Defense_Divine_Blessing_Chance_3__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1__raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3__raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Health_Percent_1__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Health_Percent_1__raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Health_Percent_2__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Health_Percent_2__raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Health_Percent_3__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Health_Percent_3__raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Health_Percent_4__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Health_Percent_4__raw = reader.ReadSingle();
+                data.WP_MR_Wyrmstake_Blast_Health_Regen_offset = reader.BaseStream.Position;
                 data.WP_MR_Wyrmstake_Blast_Health_Regen_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Lifesteal_Cooldown_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Lifesteal_Cooldown_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Element_1__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Element_1__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Element_2__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Element_2__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Element_3__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Element_3__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Element_4__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Element_4__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__raw = reader.ReadByte();
+                data.Wp_MR_Augment_Great_Sword_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Great_Sword_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Dual_Blades_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Dual_Blades_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Long_Sword_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Long_Sword_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Hammer_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Hammer_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Lance_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Lance_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Gunlance_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Gunlance_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Switch_Axe_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Switch_Axe_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Bow_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bow_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_HBG_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_HBG_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_LBG_Elemental_Multiplier_offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_LBG_Elemental_Multiplier_raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Bow_Coating_Status_Multiplier_3__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bow_Coating_Status_Multiplier_3__raw = reader.ReadSingle();
+                data.Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__offset = reader.BaseStream.Position;
                 data.Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__raw = reader.ReadSingle();
                 return data;
             }
@@ -6617,82 +7961,82 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Wp HR Augment Attack Bonus (1)", "Wp_HR_Augment_Attack_Bonus_1_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Attack Bonus (2)", "Wp_HR_Augment_Attack_Bonus_2_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Attack Bonus (3)", "Wp_HR_Augment_Attack_Bonus_3_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Critical Bonus (1)", "Wp_HR_Augment_Critical_Bonus_1_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Critical Bonus (2)", "Wp_HR_Augment_Critical_Bonus_2_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Critical Bonus (3)", "Wp_HR_Augment_Critical_Bonus_3_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Defense Bonus (1)", "Wp_HR_Augment_Defense_Bonus_1_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Defense Bonus (2)", "Wp_HR_Augment_Defense_Bonus_2_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Defense Bonus (3)", "Wp_HR_Augment_Defense_Bonus_3_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Defense: Divine Blessing Chance (1)", "Wp_HR_Augment_Defense_Divine_Blessing_Chance_1_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Defense: Divine Blessing Chance (2)", "Wp_HR_Augment_Defense_Divine_Blessing_Chance_2_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Defense: Divine Blessing Chance (3)", "Wp_HR_Augment_Defense_Divine_Blessing_Chance_3_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Defense: Divine Blessing Reduction (1)", "Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Defense: Divine Blessing Reduction (2)", "Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Defense: Divine Blessing Reduction (3)", "Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Defense Heal Damage Rate (1)", "Wp_HR_Augment_Defense_Heal_Damage_Rate_1_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Defense Heal Damage Rate (2)", "Wp_HR_Augment_Defense_Heal_Damage_Rate_2_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Defense Heal Damage Rate (3)", "Wp_HR_Augment_Defense_Heal_Damage_Rate_3_"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment IB Unk", "Wp_HR_Augment_IB_Unk"),
-                    new MultiStructItemCustomView(this, "Wp HR Augment Lifesteal Cooldown", "Wp_HR_Augment_Lifesteal_Cooldown"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Attack Bonus (1)", "Wp_MR_Augment_Attack_Bonus_1_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Attack Bonus (2)", "Wp_MR_Augment_Attack_Bonus_2_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Attack Bonus (3)", "Wp_MR_Augment_Attack_Bonus_3_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Attack Bonus (4)", "Wp_MR_Augment_Attack_Bonus_4_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Critical Bonus (1)", "Wp_MR_Augment_Critical_Bonus_1_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Critical Bonus (2)", "Wp_MR_Augment_Critical_Bonus_2_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Critical Bonus (3)", "Wp_MR_Augment_Critical_Bonus_3_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Critical Bonus (4)", "Wp_MR_Augment_Critical_Bonus_4_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Defense Bonus (1)", "Wp_MR_Augment_Defense_Bonus_1_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Defense Bonus (2)", "Wp_MR_Augment_Defense_Bonus_2_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Defense Bonus (3)", "Wp_MR_Augment_Defense_Bonus_3_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Defense Bonus (4)", "Wp_MR_Augment_Defense_Bonus_4_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Chance (1)", "Wp_MR_Augment_Defense_Divine_Blessing_Chance_1_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Chance (2)", "Wp_MR_Augment_Defense_Divine_Blessing_Chance_2_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Chance (3)", "Wp_MR_Augment_Defense_Divine_Blessing_Chance_3_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Chance (4)", "Wp_MR_Augment_Defense_Divine_Blessing_Chance_4_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Reduction (1)", "Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Reduction (2)", "Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Reduction (3)", "Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Reduction (4)", "Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Health Percent (1)", "Wp_MR_Augment_Health_Percent_1_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Health Percent (2)", "Wp_MR_Augment_Health_Percent_2_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Health Percent (3)", "Wp_MR_Augment_Health_Percent_3_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Health Percent (4)", "Wp_MR_Augment_Health_Percent_4_"),
-                    new MultiStructItemCustomView(this, "WP MR Wyrmstake Blast Health Regen", "WP_MR_Wyrmstake_Blast_Health_Regen"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Lifesteal Cooldown", "Wp_MR_Augment_Lifesteal_Cooldown"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Element (1)", "Wp_MR_Augment_Element_1_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Element (2)", "Wp_MR_Augment_Element_2_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Element (3)", "Wp_MR_Augment_Element_3_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Element (4)", "Wp_MR_Augment_Element_4_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (1)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (2)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (3)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (4)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (1)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (2)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (3)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (4)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Great Sword Elemental Multiplier", "Wp_MR_Augment_Great_Sword_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Sword & Shield Elemental Multiplier", "Wp_MR_Augment_Sword_Shield_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Dual Blades Elemental Multiplier", "Wp_MR_Augment_Dual_Blades_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Long Sword Elemental Multiplier", "Wp_MR_Augment_Long_Sword_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Hammer Elemental Multiplier", "Wp_MR_Augment_Hammer_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Hunting Horn Elemental Multiplier", "Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Lance Elemental Multiplier", "Wp_MR_Augment_Lance_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Gunlance Elemental Multiplier", "Wp_MR_Augment_Gunlance_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Switch Axe Elemental Multiplier", "Wp_MR_Augment_Switch_Axe_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Charge Blade Elemental Multiplier", "Wp_MR_Augment_Charge_Blade_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Insect Glaive Elemental Multiplier", "Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bow Elemental Multiplier", "Wp_MR_Augment_Bow_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment HBG Elemental Multiplier", "Wp_MR_Augment_HBG_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment LBG Elemental Multiplier", "Wp_MR_Augment_LBG_Elemental_Multiplier"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bow Coating Status Multiplier (1)", "Wp_MR_Augment_Bow_Coating_Status_Multiplier_1_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bow Coating Status Multiplier (2)", "Wp_MR_Augment_Bow_Coating_Status_Multiplier_2_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bow Coating Status Multiplier (3)", "Wp_MR_Augment_Bow_Coating_Status_Multiplier_3_"),
-                    new MultiStructItemCustomView(this, "Wp MR Augment Bow Coating Status Multiplier (4)", "Wp_MR_Augment_Bow_Coating_Status_Multiplier_4_"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Attack Bonus (1)", "Wp_HR_Augment_Attack_Bonus_1_", "Wp_HR_Augment_Attack_Bonus_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Attack Bonus (2)", "Wp_HR_Augment_Attack_Bonus_2_", "Wp_HR_Augment_Attack_Bonus_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Attack Bonus (3)", "Wp_HR_Augment_Attack_Bonus_3_", "Wp_HR_Augment_Attack_Bonus_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Critical Bonus (1)", "Wp_HR_Augment_Critical_Bonus_1_", "Wp_HR_Augment_Critical_Bonus_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Critical Bonus (2)", "Wp_HR_Augment_Critical_Bonus_2_", "Wp_HR_Augment_Critical_Bonus_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Critical Bonus (3)", "Wp_HR_Augment_Critical_Bonus_3_", "Wp_HR_Augment_Critical_Bonus_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Defense Bonus (1)", "Wp_HR_Augment_Defense_Bonus_1_", "Wp_HR_Augment_Defense_Bonus_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Defense Bonus (2)", "Wp_HR_Augment_Defense_Bonus_2_", "Wp_HR_Augment_Defense_Bonus_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Defense Bonus (3)", "Wp_HR_Augment_Defense_Bonus_3_", "Wp_HR_Augment_Defense_Bonus_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Defense: Divine Blessing Chance (1)", "Wp_HR_Augment_Defense_Divine_Blessing_Chance_1_", "Wp_HR_Augment_Defense_Divine_Blessing_Chance_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Defense: Divine Blessing Chance (2)", "Wp_HR_Augment_Defense_Divine_Blessing_Chance_2_", "Wp_HR_Augment_Defense_Divine_Blessing_Chance_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Defense: Divine Blessing Chance (3)", "Wp_HR_Augment_Defense_Divine_Blessing_Chance_3_", "Wp_HR_Augment_Defense_Divine_Blessing_Chance_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Defense: Divine Blessing Reduction (1)", "Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1_", "Wp_HR_Augment_Defense_Divine_Blessing_Reduction_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Defense: Divine Blessing Reduction (2)", "Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2_", "Wp_HR_Augment_Defense_Divine_Blessing_Reduction_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Defense: Divine Blessing Reduction (3)", "Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3_", "Wp_HR_Augment_Defense_Divine_Blessing_Reduction_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Defense Heal Damage Rate (1)", "Wp_HR_Augment_Defense_Heal_Damage_Rate_1_", "Wp_HR_Augment_Defense_Heal_Damage_Rate_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Defense Heal Damage Rate (2)", "Wp_HR_Augment_Defense_Heal_Damage_Rate_2_", "Wp_HR_Augment_Defense_Heal_Damage_Rate_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Defense Heal Damage Rate (3)", "Wp_HR_Augment_Defense_Heal_Damage_Rate_3_", "Wp_HR_Augment_Defense_Heal_Damage_Rate_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment IB Unk", "Wp_HR_Augment_IB_Unk", "Wp_HR_Augment_IB_Unk_offset"),
+                    new MultiStructItemCustomView(this, "Wp HR Augment Lifesteal Cooldown", "Wp_HR_Augment_Lifesteal_Cooldown", "Wp_HR_Augment_Lifesteal_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Attack Bonus (1)", "Wp_MR_Augment_Attack_Bonus_1_", "Wp_MR_Augment_Attack_Bonus_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Attack Bonus (2)", "Wp_MR_Augment_Attack_Bonus_2_", "Wp_MR_Augment_Attack_Bonus_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Attack Bonus (3)", "Wp_MR_Augment_Attack_Bonus_3_", "Wp_MR_Augment_Attack_Bonus_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Attack Bonus (4)", "Wp_MR_Augment_Attack_Bonus_4_", "Wp_MR_Augment_Attack_Bonus_4__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Critical Bonus (1)", "Wp_MR_Augment_Critical_Bonus_1_", "Wp_MR_Augment_Critical_Bonus_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Critical Bonus (2)", "Wp_MR_Augment_Critical_Bonus_2_", "Wp_MR_Augment_Critical_Bonus_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Critical Bonus (3)", "Wp_MR_Augment_Critical_Bonus_3_", "Wp_MR_Augment_Critical_Bonus_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Critical Bonus (4)", "Wp_MR_Augment_Critical_Bonus_4_", "Wp_MR_Augment_Critical_Bonus_4__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Defense Bonus (1)", "Wp_MR_Augment_Defense_Bonus_1_", "Wp_MR_Augment_Defense_Bonus_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Defense Bonus (2)", "Wp_MR_Augment_Defense_Bonus_2_", "Wp_MR_Augment_Defense_Bonus_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Defense Bonus (3)", "Wp_MR_Augment_Defense_Bonus_3_", "Wp_MR_Augment_Defense_Bonus_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Defense Bonus (4)", "Wp_MR_Augment_Defense_Bonus_4_", "Wp_MR_Augment_Defense_Bonus_4__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Chance (1)", "Wp_MR_Augment_Defense_Divine_Blessing_Chance_1_", "Wp_MR_Augment_Defense_Divine_Blessing_Chance_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Chance (2)", "Wp_MR_Augment_Defense_Divine_Blessing_Chance_2_", "Wp_MR_Augment_Defense_Divine_Blessing_Chance_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Chance (3)", "Wp_MR_Augment_Defense_Divine_Blessing_Chance_3_", "Wp_MR_Augment_Defense_Divine_Blessing_Chance_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Chance (4)", "Wp_MR_Augment_Defense_Divine_Blessing_Chance_4_", "Wp_MR_Augment_Defense_Divine_Blessing_Chance_4__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Reduction (1)", "Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1_", "Wp_MR_Augment_Defense_Divine_Blessing_Reduction_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Reduction (2)", "Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2_", "Wp_MR_Augment_Defense_Divine_Blessing_Reduction_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Reduction (3)", "Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3_", "Wp_MR_Augment_Defense_Divine_Blessing_Reduction_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Defense: Divine Blessing Reduction (4)", "Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4_", "Wp_MR_Augment_Defense_Divine_Blessing_Reduction_4__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Health Percent (1)", "Wp_MR_Augment_Health_Percent_1_", "Wp_MR_Augment_Health_Percent_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Health Percent (2)", "Wp_MR_Augment_Health_Percent_2_", "Wp_MR_Augment_Health_Percent_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Health Percent (3)", "Wp_MR_Augment_Health_Percent_3_", "Wp_MR_Augment_Health_Percent_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Health Percent (4)", "Wp_MR_Augment_Health_Percent_4_", "Wp_MR_Augment_Health_Percent_4__offset"),
+                    new MultiStructItemCustomView(this, "WP MR Wyrmstake Blast Health Regen", "WP_MR_Wyrmstake_Blast_Health_Regen", "WP_MR_Wyrmstake_Blast_Health_Regen_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Lifesteal Cooldown", "Wp_MR_Augment_Lifesteal_Cooldown", "Wp_MR_Augment_Lifesteal_Cooldown_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Element (1)", "Wp_MR_Augment_Element_1_", "Wp_MR_Augment_Element_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Element (2)", "Wp_MR_Augment_Element_2_", "Wp_MR_Augment_Element_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Element (3)", "Wp_MR_Augment_Element_3_", "Wp_MR_Augment_Element_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Element (4)", "Wp_MR_Augment_Element_4_", "Wp_MR_Augment_Element_4__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (1)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1_", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (2)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2_", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (3)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3_", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Element Bonus (4)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4_", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Element_Bonus_4__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (1)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1_", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (2)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2_", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (3)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3_", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bowgun Element/Status: Ammo Status Bonus (4)", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4_", "Wp_MR_Augment_Bowgun_Element_Status_Ammo_Status_Bonus_4__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Great Sword Elemental Multiplier", "Wp_MR_Augment_Great_Sword_Elemental_Multiplier", "Wp_MR_Augment_Great_Sword_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Sword & Shield Elemental Multiplier", "Wp_MR_Augment_Sword_Shield_Elemental_Multiplier", "Wp_MR_Augment_Sword_Shield_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Dual Blades Elemental Multiplier", "Wp_MR_Augment_Dual_Blades_Elemental_Multiplier", "Wp_MR_Augment_Dual_Blades_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Long Sword Elemental Multiplier", "Wp_MR_Augment_Long_Sword_Elemental_Multiplier", "Wp_MR_Augment_Long_Sword_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Hammer Elemental Multiplier", "Wp_MR_Augment_Hammer_Elemental_Multiplier", "Wp_MR_Augment_Hammer_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Hunting Horn Elemental Multiplier", "Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier", "Wp_MR_Augment_Hunting_Horn_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Lance Elemental Multiplier", "Wp_MR_Augment_Lance_Elemental_Multiplier", "Wp_MR_Augment_Lance_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Gunlance Elemental Multiplier", "Wp_MR_Augment_Gunlance_Elemental_Multiplier", "Wp_MR_Augment_Gunlance_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Switch Axe Elemental Multiplier", "Wp_MR_Augment_Switch_Axe_Elemental_Multiplier", "Wp_MR_Augment_Switch_Axe_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Charge Blade Elemental Multiplier", "Wp_MR_Augment_Charge_Blade_Elemental_Multiplier", "Wp_MR_Augment_Charge_Blade_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Insect Glaive Elemental Multiplier", "Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier", "Wp_MR_Augment_Insect_Glaive_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bow Elemental Multiplier", "Wp_MR_Augment_Bow_Elemental_Multiplier", "Wp_MR_Augment_Bow_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment HBG Elemental Multiplier", "Wp_MR_Augment_HBG_Elemental_Multiplier", "Wp_MR_Augment_HBG_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment LBG Elemental Multiplier", "Wp_MR_Augment_LBG_Elemental_Multiplier", "Wp_MR_Augment_LBG_Elemental_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bow Coating Status Multiplier (1)", "Wp_MR_Augment_Bow_Coating_Status_Multiplier_1_", "Wp_MR_Augment_Bow_Coating_Status_Multiplier_1__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bow Coating Status Multiplier (2)", "Wp_MR_Augment_Bow_Coating_Status_Multiplier_2_", "Wp_MR_Augment_Bow_Coating_Status_Multiplier_2__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bow Coating Status Multiplier (3)", "Wp_MR_Augment_Bow_Coating_Status_Multiplier_3_", "Wp_MR_Augment_Bow_Coating_Status_Multiplier_3__offset"),
+                    new MultiStructItemCustomView(this, "Wp MR Augment Bow Coating Status Multiplier (4)", "Wp_MR_Augment_Bow_Coating_Status_Multiplier_4_", "Wp_MR_Augment_Bow_Coating_Status_Multiplier_4__offset"),
                 };
             }
         }
@@ -6793,6 +8137,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Stone_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Redpit_raw;
             public const string Max_Slinger_Capacity_Redpit_displayName = "Max Slinger Capacity: Redpit";
             public const int Max_Slinger_Capacity_Redpit_sortIndex = 100;
@@ -6807,6 +8154,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Redpit));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Redpit_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Brightmoss_raw;
             public const string Max_Slinger_Capacity_Brightmoss_displayName = "Max Slinger Capacity: Brightmoss";
@@ -6823,6 +8173,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Brightmoss_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Scatternut_raw;
             public const string Max_Slinger_Capacity_Scatternut_displayName = "Max Slinger Capacity: Scatternut";
             public const int Max_Slinger_Capacity_Scatternut_sortIndex = 200;
@@ -6837,6 +8190,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Scatternut));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Scatternut_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Unk_1_raw;
             public const string Max_Slinger_Capacity_Unk_1_displayName = "Max Slinger Capacity: Unk 1";
@@ -6853,6 +8209,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_1_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Unk_2_raw;
             public const string Max_Slinger_Capacity_Unk_2_displayName = "Max Slinger Capacity: Unk 2";
             public const int Max_Slinger_Capacity_Unk_2_sortIndex = 300;
@@ -6867,6 +8226,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_2_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Unk_3_raw;
             public const string Max_Slinger_Capacity_Unk_3_displayName = "Max Slinger Capacity: Unk 3";
@@ -6883,6 +8245,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_3_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Unk_4_raw;
             public const string Max_Slinger_Capacity_Unk_4_displayName = "Max Slinger Capacity: Unk 4";
             public const int Max_Slinger_Capacity_Unk_4_sortIndex = 400;
@@ -6897,6 +8262,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_4_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Unk_5_raw;
             public const string Max_Slinger_Capacity_Unk_5_displayName = "Max Slinger Capacity: Unk 5";
@@ -6913,6 +8281,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_5_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Torch_Pod_raw;
             public const string Max_Slinger_Capacity_Torch_Pod_displayName = "Max Slinger Capacity: Torch Pod";
             public const int Max_Slinger_Capacity_Torch_Pod_sortIndex = 500;
@@ -6927,6 +8298,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Torch_Pod));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Torch_Pod_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Unk_6_raw;
             public const string Max_Slinger_Capacity_Unk_6_displayName = "Max Slinger Capacity: Unk 6";
@@ -6943,6 +8317,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_6_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Unk_7_raw;
             public const string Max_Slinger_Capacity_Unk_7_displayName = "Max Slinger Capacity: Unk 7";
             public const int Max_Slinger_Capacity_Unk_7_sortIndex = 600;
@@ -6957,6 +8334,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_7));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_7_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Unk_8_raw;
             public const string Max_Slinger_Capacity_Unk_8_displayName = "Max Slinger Capacity: Unk 8";
@@ -6973,6 +8353,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_8_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Unk_9_raw;
             public const string Max_Slinger_Capacity_Unk_9_displayName = "Max Slinger Capacity: Unk 9";
             public const int Max_Slinger_Capacity_Unk_9_sortIndex = 700;
@@ -6987,6 +8370,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_9));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_9_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Bomb_Pod_raw;
             public const string Max_Slinger_Capacity_Bomb_Pod_displayName = "Max Slinger Capacity: Bomb Pod";
@@ -7003,6 +8389,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Bomb_Pod_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Piercing_Pod_raw;
             public const string Max_Slinger_Capacity_Piercing_Pod_displayName = "Max Slinger Capacity: Piercing Pod";
             public const int Max_Slinger_Capacity_Piercing_Pod_sortIndex = 800;
@@ -7017,6 +8406,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Piercing_Pod));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Piercing_Pod_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Slinger_Thorn_raw;
             public const string Max_Slinger_Capacity_Slinger_Thorn_displayName = "Max Slinger Capacity: Slinger Thorn";
@@ -7033,6 +8425,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Slinger_Thorn_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Dragon_Pod_raw;
             public const string Max_Slinger_Capacity_Dragon_Pod_displayName = "Max Slinger Capacity: Dragon Pod";
             public const int Max_Slinger_Capacity_Dragon_Pod_sortIndex = 900;
@@ -7047,6 +8442,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Dragon_Pod));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Dragon_Pod_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Unk_10_raw;
             public const string Max_Slinger_Capacity_Unk_10_displayName = "Max Slinger Capacity: Unk 10";
@@ -7063,6 +8461,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_10_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Unk_11_raw;
             public const string Max_Slinger_Capacity_Unk_11_displayName = "Max Slinger Capacity: Unk 11";
             public const int Max_Slinger_Capacity_Unk_11_sortIndex = 1000;
@@ -7077,6 +8478,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_11));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_11_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Unk_12_raw;
             public const string Max_Slinger_Capacity_Unk_12_displayName = "Max Slinger Capacity: Unk 12";
@@ -7093,6 +8497,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_12_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Unk_13_raw;
             public const string Max_Slinger_Capacity_Unk_13_displayName = "Max Slinger Capacity: Unk 13";
             public const int Max_Slinger_Capacity_Unk_13_sortIndex = 1100;
@@ -7107,6 +8514,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_13));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_13_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Unk_14_raw;
             public const string Max_Slinger_Capacity_Unk_14_displayName = "Max Slinger Capacity: Unk 14";
@@ -7123,6 +8533,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_14_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Unk_15_raw;
             public const string Max_Slinger_Capacity_Unk_15_displayName = "Max Slinger Capacity: Unk 15";
             public const int Max_Slinger_Capacity_Unk_15_sortIndex = 1200;
@@ -7137,6 +8550,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_15));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_15_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Unk_16_raw;
             public const string Max_Slinger_Capacity_Unk_16_displayName = "Max Slinger Capacity: Unk 16";
@@ -7153,6 +8569,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_16_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Unk_17_raw;
             public const string Max_Slinger_Capacity_Unk_17_displayName = "Max Slinger Capacity: Unk 17";
             public const int Max_Slinger_Capacity_Unk_17_sortIndex = 1300;
@@ -7167,6 +8586,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_17));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_17_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Crystalburst_raw;
             public const string Max_Slinger_Capacity_Crystalburst_displayName = "Max Slinger Capacity: Crystalburst";
@@ -7183,6 +8605,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Crystalburst_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Puddle_Pod_raw;
             public const string Max_Slinger_Capacity_Puddle_Pod_displayName = "Max Slinger Capacity: Puddle Pod";
             public const int Max_Slinger_Capacity_Puddle_Pod_sortIndex = 1400;
@@ -7197,6 +8622,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Puddle_Pod));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Puddle_Pod_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Unk_18_raw;
             public const string Max_Slinger_Capacity_Unk_18_displayName = "Max Slinger Capacity: Unk 18";
@@ -7213,6 +8641,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_18_offset { get; private set; }
+
             protected byte Max_Slinger_Capacity_Unk_19_raw;
             public const string Max_Slinger_Capacity_Unk_19_displayName = "Max Slinger Capacity: Unk 19";
             public const int Max_Slinger_Capacity_Unk_19_sortIndex = 1500;
@@ -7227,6 +8658,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Max_Slinger_Capacity_Unk_19));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_19_offset { get; private set; }
 
             protected byte Max_Slinger_Capacity_Unk_20_raw;
             public const string Max_Slinger_Capacity_Unk_20_displayName = "Max Slinger Capacity: Unk 20";
@@ -7243,6 +8677,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Max_Slinger_Capacity_Unk_20_offset { get; private set; }
+
             public const int lastSortIndex = 1600;
 
             public static ObservableMhwStructCollection<Player_Params_8_Slinger_Params> LoadData(BinaryReader reader) {
@@ -7257,36 +8694,67 @@ namespace MHW_Editor.Structs.PlData {
             public static Player_Params_8_Slinger_Params LoadData(BinaryReader reader, ulong i) {
                 var data = new Player_Params_8_Slinger_Params();
                 data.Index = i;
+                data.Max_Slinger_Capacity_Stone_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Stone_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Redpit_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Redpit_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Brightmoss_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Brightmoss_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Scatternut_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Scatternut_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_1_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_1_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_2_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_2_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_3_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_3_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_4_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_4_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_5_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_5_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Torch_Pod_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Torch_Pod_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_6_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_6_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_7_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_7_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_8_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_8_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_9_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_9_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Bomb_Pod_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Bomb_Pod_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Piercing_Pod_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Piercing_Pod_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Slinger_Thorn_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Slinger_Thorn_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Dragon_Pod_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Dragon_Pod_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_10_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_10_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_11_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_11_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_12_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_12_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_13_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_13_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_14_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_14_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_15_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_15_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_16_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_16_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_17_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_17_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Crystalburst_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Crystalburst_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Puddle_Pod_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Puddle_Pod_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_18_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_18_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_19_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_19_raw = reader.ReadByte();
+                data.Max_Slinger_Capacity_Unk_20_offset = reader.BaseStream.Position;
                 data.Max_Slinger_Capacity_Unk_20_raw = reader.ReadByte();
                 return data;
             }
@@ -7327,37 +8795,37 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Stone", "Max_Slinger_Capacity_Stone"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Redpit", "Max_Slinger_Capacity_Redpit"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Brightmoss", "Max_Slinger_Capacity_Brightmoss"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Scatternut", "Max_Slinger_Capacity_Scatternut"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 1", "Max_Slinger_Capacity_Unk_1"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 2", "Max_Slinger_Capacity_Unk_2"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 3", "Max_Slinger_Capacity_Unk_3"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 4", "Max_Slinger_Capacity_Unk_4"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 5", "Max_Slinger_Capacity_Unk_5"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Torch Pod", "Max_Slinger_Capacity_Torch_Pod"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 6", "Max_Slinger_Capacity_Unk_6"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 7", "Max_Slinger_Capacity_Unk_7"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 8", "Max_Slinger_Capacity_Unk_8"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 9", "Max_Slinger_Capacity_Unk_9"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Bomb Pod", "Max_Slinger_Capacity_Bomb_Pod"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Piercing Pod", "Max_Slinger_Capacity_Piercing_Pod"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Slinger Thorn", "Max_Slinger_Capacity_Slinger_Thorn"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Dragon Pod", "Max_Slinger_Capacity_Dragon_Pod"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 10", "Max_Slinger_Capacity_Unk_10"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 11", "Max_Slinger_Capacity_Unk_11"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 12", "Max_Slinger_Capacity_Unk_12"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 13", "Max_Slinger_Capacity_Unk_13"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 14", "Max_Slinger_Capacity_Unk_14"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 15", "Max_Slinger_Capacity_Unk_15"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 16", "Max_Slinger_Capacity_Unk_16"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 17", "Max_Slinger_Capacity_Unk_17"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Crystalburst", "Max_Slinger_Capacity_Crystalburst"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Puddle Pod", "Max_Slinger_Capacity_Puddle_Pod"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 18", "Max_Slinger_Capacity_Unk_18"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 19", "Max_Slinger_Capacity_Unk_19"),
-                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 20", "Max_Slinger_Capacity_Unk_20"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Stone", "Max_Slinger_Capacity_Stone", "Max_Slinger_Capacity_Stone_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Redpit", "Max_Slinger_Capacity_Redpit", "Max_Slinger_Capacity_Redpit_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Brightmoss", "Max_Slinger_Capacity_Brightmoss", "Max_Slinger_Capacity_Brightmoss_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Scatternut", "Max_Slinger_Capacity_Scatternut", "Max_Slinger_Capacity_Scatternut_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 1", "Max_Slinger_Capacity_Unk_1", "Max_Slinger_Capacity_Unk_1_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 2", "Max_Slinger_Capacity_Unk_2", "Max_Slinger_Capacity_Unk_2_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 3", "Max_Slinger_Capacity_Unk_3", "Max_Slinger_Capacity_Unk_3_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 4", "Max_Slinger_Capacity_Unk_4", "Max_Slinger_Capacity_Unk_4_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 5", "Max_Slinger_Capacity_Unk_5", "Max_Slinger_Capacity_Unk_5_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Torch Pod", "Max_Slinger_Capacity_Torch_Pod", "Max_Slinger_Capacity_Torch_Pod_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 6", "Max_Slinger_Capacity_Unk_6", "Max_Slinger_Capacity_Unk_6_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 7", "Max_Slinger_Capacity_Unk_7", "Max_Slinger_Capacity_Unk_7_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 8", "Max_Slinger_Capacity_Unk_8", "Max_Slinger_Capacity_Unk_8_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 9", "Max_Slinger_Capacity_Unk_9", "Max_Slinger_Capacity_Unk_9_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Bomb Pod", "Max_Slinger_Capacity_Bomb_Pod", "Max_Slinger_Capacity_Bomb_Pod_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Piercing Pod", "Max_Slinger_Capacity_Piercing_Pod", "Max_Slinger_Capacity_Piercing_Pod_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Slinger Thorn", "Max_Slinger_Capacity_Slinger_Thorn", "Max_Slinger_Capacity_Slinger_Thorn_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Dragon Pod", "Max_Slinger_Capacity_Dragon_Pod", "Max_Slinger_Capacity_Dragon_Pod_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 10", "Max_Slinger_Capacity_Unk_10", "Max_Slinger_Capacity_Unk_10_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 11", "Max_Slinger_Capacity_Unk_11", "Max_Slinger_Capacity_Unk_11_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 12", "Max_Slinger_Capacity_Unk_12", "Max_Slinger_Capacity_Unk_12_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 13", "Max_Slinger_Capacity_Unk_13", "Max_Slinger_Capacity_Unk_13_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 14", "Max_Slinger_Capacity_Unk_14", "Max_Slinger_Capacity_Unk_14_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 15", "Max_Slinger_Capacity_Unk_15", "Max_Slinger_Capacity_Unk_15_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 16", "Max_Slinger_Capacity_Unk_16", "Max_Slinger_Capacity_Unk_16_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 17", "Max_Slinger_Capacity_Unk_17", "Max_Slinger_Capacity_Unk_17_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Crystalburst", "Max_Slinger_Capacity_Crystalburst", "Max_Slinger_Capacity_Crystalburst_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Puddle Pod", "Max_Slinger_Capacity_Puddle_Pod", "Max_Slinger_Capacity_Puddle_Pod_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 18", "Max_Slinger_Capacity_Unk_18", "Max_Slinger_Capacity_Unk_18_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 19", "Max_Slinger_Capacity_Unk_19", "Max_Slinger_Capacity_Unk_19_offset"),
+                    new MultiStructItemCustomView(this, "Max Slinger Capacity: Unk 20", "Max_Slinger_Capacity_Unk_20", "Max_Slinger_Capacity_Unk_20_offset"),
                 };
             }
         }

@@ -270,6 +270,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Normal_offset { get; private set; }
+
                 protected int Part_Id_LR_HR1_Wounded_raw;
                 public const string Part_Id_LR_HR1_Wounded_displayName = "Part Id LR/HR1 Wounded";
                 public const int Part_Id_LR_HR1_Wounded_sortIndex = 100;
@@ -284,6 +287,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Wounded));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Wounded_offset { get; private set; }
 
                 protected int Part_Id_LR_HR1_Special_Phase_1_raw;
                 public const string Part_Id_LR_HR1_Special_Phase_1_displayName = "Part Id LR/HR1 Special Phase 1";
@@ -300,6 +306,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Special_Phase_1_offset { get; private set; }
+
                 protected int Part_Id_LR_HR1_Special_Phase_2_raw;
                 public const string Part_Id_LR_HR1_Special_Phase_2_displayName = "Part Id LR/HR1 Special Phase 2";
                 public const int Part_Id_LR_HR1_Special_Phase_2_sortIndex = 200;
@@ -314,6 +323,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Special_Phase_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Special_Phase_2_offset { get; private set; }
 
                 protected int Part_Id_LR_HR1_Special_Phase_3_raw;
                 public const string Part_Id_LR_HR1_Special_Phase_3_displayName = "Part Id LR/HR1 Special Phase 3";
@@ -330,6 +342,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Special_Phase_3_offset { get; private set; }
+
                 protected int Part_Id_MR1_Normal_raw;
                 public const string Part_Id_MR1_Normal_displayName = "Part Id MR1 Normal";
                 public const int Part_Id_MR1_Normal_sortIndex = 300;
@@ -344,6 +359,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR1_Normal));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Normal_offset { get; private set; }
 
                 protected int Part_Id_MR1_Wounded_raw;
                 public const string Part_Id_MR1_Wounded_displayName = "Part Id MR1 Wounded";
@@ -360,6 +378,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Wounded_offset { get; private set; }
+
                 protected int Part_Id_MR1_Special_Phase_1_raw;
                 public const string Part_Id_MR1_Special_Phase_1_displayName = "Part Id MR1 Special Phase 1";
                 public const int Part_Id_MR1_Special_Phase_1_sortIndex = 400;
@@ -374,6 +395,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_1));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Special_Phase_1_offset { get; private set; }
 
                 protected int Part_Id_MR1_Special_Phase_2_raw;
                 public const string Part_Id_MR1_Special_Phase_2_displayName = "Part Id MR1 Special Phase 2";
@@ -390,6 +414,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Special_Phase_2_offset { get; private set; }
+
                 protected int Part_Id_MR1_Special_Phase_3_raw;
                 public const string Part_Id_MR1_Special_Phase_3_displayName = "Part Id MR1 Special Phase 3";
                 public const int Part_Id_MR1_Special_Phase_3_sortIndex = 500;
@@ -404,6 +431,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_3));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Special_Phase_3_offset { get; private set; }
 
                 protected uint unk9_raw;
                 public const string unk9_displayName = "unk9";
@@ -420,6 +450,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long unk9_offset { get; private set; }
+
                 protected uint unk10_raw;
                 public const string unk10_displayName = "unk10";
                 public const int unk10_sortIndex = 600;
@@ -434,6 +467,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(unk10));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long unk10_offset { get; private set; }
 
                 protected uint unk11_raw;
                 public const string unk11_displayName = "unk11";
@@ -450,6 +486,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long unk11_offset { get; private set; }
+
                 protected byte unk12_raw;
                 public const string unk12_displayName = "unk12";
                 public const int unk12_sortIndex = 700;
@@ -464,6 +503,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(unk12));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long unk12_offset { get; private set; }
 
                 protected byte unk13_raw;
                 public const string unk13_displayName = "unk13";
@@ -480,6 +522,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long unk13_offset { get; private set; }
+
                 public const int lastSortIndex = 800;
 
                 public static ObservableMhwStructCollection<Parts1> LoadData(BinaryReader reader, Flinches parent) {
@@ -494,20 +539,35 @@ namespace MHW_Editor.Structs.Monsters {
                 public static Parts1 LoadData(BinaryReader reader, ulong i, Flinches parent) {
                     var data = new Parts1();
                     data.Index = i;
+                    data.Part_Id_LR_HR1_Normal_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Normal_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR1_Wounded_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Wounded_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR1_Special_Phase_1_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Special_Phase_1_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR1_Special_Phase_2_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Special_Phase_2_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR1_Special_Phase_3_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Special_Phase_3_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Normal_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Normal_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Wounded_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Wounded_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Special_Phase_1_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Special_Phase_1_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Special_Phase_2_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Special_Phase_2_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Special_Phase_3_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Special_Phase_3_raw = reader.ReadInt32();
+                    data.unk9_offset = reader.BaseStream.Position;
                     data.unk9_raw = reader.ReadUInt32();
+                    data.unk10_offset = reader.BaseStream.Position;
                     data.unk10_raw = reader.ReadUInt32();
+                    data.unk11_offset = reader.BaseStream.Position;
                     data.unk11_raw = reader.ReadUInt32();
+                    data.unk12_offset = reader.BaseStream.Position;
                     data.unk12_raw = reader.ReadByte();
+                    data.unk13_offset = reader.BaseStream.Position;
                     data.unk13_raw = reader.ReadByte();
                     return data;
                 }
@@ -532,21 +592,21 @@ namespace MHW_Editor.Structs.Monsters {
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Normal", "Part_Id_LR_HR1_Normal"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Wounded", "Part_Id_LR_HR1_Wounded"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 1", "Part_Id_LR_HR1_Special_Phase_1"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 2", "Part_Id_LR_HR1_Special_Phase_2"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 3", "Part_Id_LR_HR1_Special_Phase_3"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Normal", "Part_Id_MR1_Normal"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Wounded", "Part_Id_MR1_Wounded"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 1", "Part_Id_MR1_Special_Phase_1"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 2", "Part_Id_MR1_Special_Phase_2"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 3", "Part_Id_MR1_Special_Phase_3"),
-                        new MultiStructItemCustomView(this, "unk9", "unk9"),
-                        new MultiStructItemCustomView(this, "unk10", "unk10"),
-                        new MultiStructItemCustomView(this, "unk11", "unk11"),
-                        new MultiStructItemCustomView(this, "unk12", "unk12"),
-                        new MultiStructItemCustomView(this, "unk13", "unk13"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Normal", "Part_Id_LR_HR1_Normal", "Part_Id_LR_HR1_Normal_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Wounded", "Part_Id_LR_HR1_Wounded", "Part_Id_LR_HR1_Wounded_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 1", "Part_Id_LR_HR1_Special_Phase_1", "Part_Id_LR_HR1_Special_Phase_1_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 2", "Part_Id_LR_HR1_Special_Phase_2", "Part_Id_LR_HR1_Special_Phase_2_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 3", "Part_Id_LR_HR1_Special_Phase_3", "Part_Id_LR_HR1_Special_Phase_3_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Normal", "Part_Id_MR1_Normal", "Part_Id_MR1_Normal_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Wounded", "Part_Id_MR1_Wounded", "Part_Id_MR1_Wounded_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 1", "Part_Id_MR1_Special_Phase_1", "Part_Id_MR1_Special_Phase_1_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 2", "Part_Id_MR1_Special_Phase_2", "Part_Id_MR1_Special_Phase_2_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 3", "Part_Id_MR1_Special_Phase_3", "Part_Id_MR1_Special_Phase_3_offset"),
+                        new MultiStructItemCustomView(this, "unk9", "unk9", "unk9_offset"),
+                        new MultiStructItemCustomView(this, "unk10", "unk10", "unk10_offset"),
+                        new MultiStructItemCustomView(this, "unk11", "unk11", "unk11_offset"),
+                        new MultiStructItemCustomView(this, "unk12", "unk12", "unk12_offset"),
+                        new MultiStructItemCustomView(this, "unk13", "unk13", "unk13_offset"),
                     };
                 }
             }
@@ -576,6 +636,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Normal_offset { get; private set; }
+
                 protected int Part_Id_LR_HR1_Wounded_raw;
                 public const string Part_Id_LR_HR1_Wounded_displayName = "Part Id LR/HR1 Wounded";
                 public const int Part_Id_LR_HR1_Wounded_sortIndex = 100;
@@ -590,6 +653,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Wounded));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Wounded_offset { get; private set; }
 
                 protected int Part_Id_LR_HR1_Special_Phase_1_raw;
                 public const string Part_Id_LR_HR1_Special_Phase_1_displayName = "Part Id LR/HR1 Special Phase 1";
@@ -606,6 +672,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Special_Phase_1_offset { get; private set; }
+
                 protected int Part_Id_LR_HR1_Special_Phase_2_raw;
                 public const string Part_Id_LR_HR1_Special_Phase_2_displayName = "Part Id LR/HR1 Special Phase 2";
                 public const int Part_Id_LR_HR1_Special_Phase_2_sortIndex = 200;
@@ -620,6 +689,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Special_Phase_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Special_Phase_2_offset { get; private set; }
 
                 protected int Part_Id_LR_HR1_Special_Phase_3_raw;
                 public const string Part_Id_LR_HR1_Special_Phase_3_displayName = "Part Id LR/HR1 Special Phase 3";
@@ -636,6 +708,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Special_Phase_3_offset { get; private set; }
+
                 protected int Part_Id_MR1_Normal_raw;
                 public const string Part_Id_MR1_Normal_displayName = "Part Id MR1 Normal";
                 public const int Part_Id_MR1_Normal_sortIndex = 300;
@@ -650,6 +725,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR1_Normal));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Normal_offset { get; private set; }
 
                 protected int Part_Id_MR1_Wounded_raw;
                 public const string Part_Id_MR1_Wounded_displayName = "Part Id MR1 Wounded";
@@ -666,6 +744,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Wounded_offset { get; private set; }
+
                 protected int Part_Id_MR1_Special_Phase_1_raw;
                 public const string Part_Id_MR1_Special_Phase_1_displayName = "Part Id MR1 Special Phase 1";
                 public const int Part_Id_MR1_Special_Phase_1_sortIndex = 400;
@@ -680,6 +761,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_1));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Special_Phase_1_offset { get; private set; }
 
                 protected int Part_Id_MR1_Special_Phase_2_raw;
                 public const string Part_Id_MR1_Special_Phase_2_displayName = "Part Id MR1 Special Phase 2";
@@ -696,6 +780,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Special_Phase_2_offset { get; private set; }
+
                 protected int Part_Id_MR1_Special_Phase_3_raw;
                 public const string Part_Id_MR1_Special_Phase_3_displayName = "Part Id MR1 Special Phase 3";
                 public const int Part_Id_MR1_Special_Phase_3_sortIndex = 500;
@@ -710,6 +797,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_3));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Special_Phase_3_offset { get; private set; }
 
                 protected int Part_Id_LR_HR2_Normal_raw;
                 public const string Part_Id_LR_HR2_Normal_displayName = "Part Id LR/HR2 Normal";
@@ -726,6 +816,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR2_Normal_offset { get; private set; }
+
                 protected int Part_Id_LR_HR2_Wounded_raw;
                 public const string Part_Id_LR_HR2_Wounded_displayName = "Part Id LR/HR2 Wounded";
                 public const int Part_Id_LR_HR2_Wounded_sortIndex = 600;
@@ -740,6 +833,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Wounded));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR2_Wounded_offset { get; private set; }
 
                 protected int Part_Id_LR_HR2_Special_Phase_1_raw;
                 public const string Part_Id_LR_HR2_Special_Phase_1_displayName = "Part Id LR/HR2 Special Phase 1";
@@ -756,6 +852,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR2_Special_Phase_1_offset { get; private set; }
+
                 protected int Part_Id_LR_HR2_Special_Phase_2_raw;
                 public const string Part_Id_LR_HR2_Special_Phase_2_displayName = "Part Id LR/HR2 Special Phase 2";
                 public const int Part_Id_LR_HR2_Special_Phase_2_sortIndex = 700;
@@ -770,6 +869,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Special_Phase_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR2_Special_Phase_2_offset { get; private set; }
 
                 protected int Part_Id_LR_HR2_Special_Phase_3_raw;
                 public const string Part_Id_LR_HR2_Special_Phase_3_displayName = "Part Id LR/HR2 Special Phase 3";
@@ -786,6 +888,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR2_Special_Phase_3_offset { get; private set; }
+
                 protected int Part_Id_MR2_Normal_raw;
                 public const string Part_Id_MR2_Normal_displayName = "Part Id MR2 Normal";
                 public const int Part_Id_MR2_Normal_sortIndex = 800;
@@ -800,6 +905,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR2_Normal));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR2_Normal_offset { get; private set; }
 
                 protected int Part_Id_MR2_Wounded_raw;
                 public const string Part_Id_MR2_Wounded_displayName = "Part Id MR2 Wounded";
@@ -816,6 +924,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_MR2_Wounded_offset { get; private set; }
+
                 protected int Part_Id_MR2_Special_Phase_1_raw;
                 public const string Part_Id_MR2_Special_Phase_1_displayName = "Part Id MR2 Special Phase 1";
                 public const int Part_Id_MR2_Special_Phase_1_sortIndex = 900;
@@ -830,6 +941,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR2_Special_Phase_1));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR2_Special_Phase_1_offset { get; private set; }
 
                 protected int Part_Id_MR2_Special_Phase_2_raw;
                 public const string Part_Id_MR2_Special_Phase_2_displayName = "Part Id MR2 Special Phase 2";
@@ -846,6 +960,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_MR2_Special_Phase_2_offset { get; private set; }
+
                 protected int Part_Id_MR2_Special_Phase_3_raw;
                 public const string Part_Id_MR2_Special_Phase_3_displayName = "Part Id MR2 Special Phase 3";
                 public const int Part_Id_MR2_Special_Phase_3_sortIndex = 1000;
@@ -860,6 +977,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR2_Special_Phase_3));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR2_Special_Phase_3_offset { get; private set; }
 
                 protected uint unk19_raw;
                 public const string unk19_displayName = "unk19";
@@ -876,6 +996,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long unk19_offset { get; private set; }
+
                 protected uint unk20_raw;
                 public const string unk20_displayName = "unk20";
                 public const int unk20_sortIndex = 1100;
@@ -890,6 +1013,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(unk20));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long unk20_offset { get; private set; }
 
                 protected uint unk21_raw;
                 public const string unk21_displayName = "unk21";
@@ -906,6 +1032,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long unk21_offset { get; private set; }
+
                 protected byte unk22_raw;
                 public const string unk22_displayName = "unk22";
                 public const int unk22_sortIndex = 1200;
@@ -920,6 +1049,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(unk22));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long unk22_offset { get; private set; }
 
                 protected byte unk23_raw;
                 public const string unk23_displayName = "unk23";
@@ -936,6 +1068,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long unk23_offset { get; private set; }
+
                 public const int lastSortIndex = 1300;
 
                 public static ObservableMhwStructCollection<Parts2> LoadData(BinaryReader reader, Flinches parent) {
@@ -950,30 +1085,55 @@ namespace MHW_Editor.Structs.Monsters {
                 public static Parts2 LoadData(BinaryReader reader, ulong i, Flinches parent) {
                     var data = new Parts2();
                     data.Index = i;
+                    data.Part_Id_LR_HR1_Normal_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Normal_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR1_Wounded_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Wounded_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR1_Special_Phase_1_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Special_Phase_1_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR1_Special_Phase_2_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Special_Phase_2_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR1_Special_Phase_3_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Special_Phase_3_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Normal_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Normal_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Wounded_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Wounded_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Special_Phase_1_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Special_Phase_1_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Special_Phase_2_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Special_Phase_2_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Special_Phase_3_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Special_Phase_3_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR2_Normal_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR2_Normal_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR2_Wounded_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR2_Wounded_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR2_Special_Phase_1_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR2_Special_Phase_1_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR2_Special_Phase_2_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR2_Special_Phase_2_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR2_Special_Phase_3_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR2_Special_Phase_3_raw = reader.ReadInt32();
+                    data.Part_Id_MR2_Normal_offset = reader.BaseStream.Position;
                     data.Part_Id_MR2_Normal_raw = reader.ReadInt32();
+                    data.Part_Id_MR2_Wounded_offset = reader.BaseStream.Position;
                     data.Part_Id_MR2_Wounded_raw = reader.ReadInt32();
+                    data.Part_Id_MR2_Special_Phase_1_offset = reader.BaseStream.Position;
                     data.Part_Id_MR2_Special_Phase_1_raw = reader.ReadInt32();
+                    data.Part_Id_MR2_Special_Phase_2_offset = reader.BaseStream.Position;
                     data.Part_Id_MR2_Special_Phase_2_raw = reader.ReadInt32();
+                    data.Part_Id_MR2_Special_Phase_3_offset = reader.BaseStream.Position;
                     data.Part_Id_MR2_Special_Phase_3_raw = reader.ReadInt32();
+                    data.unk19_offset = reader.BaseStream.Position;
                     data.unk19_raw = reader.ReadUInt32();
+                    data.unk20_offset = reader.BaseStream.Position;
                     data.unk20_raw = reader.ReadUInt32();
+                    data.unk21_offset = reader.BaseStream.Position;
                     data.unk21_raw = reader.ReadUInt32();
+                    data.unk22_offset = reader.BaseStream.Position;
                     data.unk22_raw = reader.ReadByte();
+                    data.unk23_offset = reader.BaseStream.Position;
                     data.unk23_raw = reader.ReadByte();
                     return data;
                 }
@@ -1008,31 +1168,31 @@ namespace MHW_Editor.Structs.Monsters {
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Normal", "Part_Id_LR_HR1_Normal"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Wounded", "Part_Id_LR_HR1_Wounded"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 1", "Part_Id_LR_HR1_Special_Phase_1"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 2", "Part_Id_LR_HR1_Special_Phase_2"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 3", "Part_Id_LR_HR1_Special_Phase_3"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Normal", "Part_Id_MR1_Normal"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Wounded", "Part_Id_MR1_Wounded"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 1", "Part_Id_MR1_Special_Phase_1"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 2", "Part_Id_MR1_Special_Phase_2"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 3", "Part_Id_MR1_Special_Phase_3"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Normal", "Part_Id_LR_HR2_Normal"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Wounded", "Part_Id_LR_HR2_Wounded"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Special Phase 1", "Part_Id_LR_HR2_Special_Phase_1"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Special Phase 2", "Part_Id_LR_HR2_Special_Phase_2"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Special Phase 3", "Part_Id_LR_HR2_Special_Phase_3"),
-                        new MultiStructItemCustomView(this, "Part Id MR2 Normal", "Part_Id_MR2_Normal"),
-                        new MultiStructItemCustomView(this, "Part Id MR2 Wounded", "Part_Id_MR2_Wounded"),
-                        new MultiStructItemCustomView(this, "Part Id MR2 Special Phase 1", "Part_Id_MR2_Special_Phase_1"),
-                        new MultiStructItemCustomView(this, "Part Id MR2 Special Phase 2", "Part_Id_MR2_Special_Phase_2"),
-                        new MultiStructItemCustomView(this, "Part Id MR2 Special Phase 3", "Part_Id_MR2_Special_Phase_3"),
-                        new MultiStructItemCustomView(this, "unk19", "unk19"),
-                        new MultiStructItemCustomView(this, "unk20", "unk20"),
-                        new MultiStructItemCustomView(this, "unk21", "unk21"),
-                        new MultiStructItemCustomView(this, "unk22", "unk22"),
-                        new MultiStructItemCustomView(this, "unk23", "unk23"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Normal", "Part_Id_LR_HR1_Normal", "Part_Id_LR_HR1_Normal_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Wounded", "Part_Id_LR_HR1_Wounded", "Part_Id_LR_HR1_Wounded_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 1", "Part_Id_LR_HR1_Special_Phase_1", "Part_Id_LR_HR1_Special_Phase_1_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 2", "Part_Id_LR_HR1_Special_Phase_2", "Part_Id_LR_HR1_Special_Phase_2_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 3", "Part_Id_LR_HR1_Special_Phase_3", "Part_Id_LR_HR1_Special_Phase_3_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Normal", "Part_Id_MR1_Normal", "Part_Id_MR1_Normal_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Wounded", "Part_Id_MR1_Wounded", "Part_Id_MR1_Wounded_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 1", "Part_Id_MR1_Special_Phase_1", "Part_Id_MR1_Special_Phase_1_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 2", "Part_Id_MR1_Special_Phase_2", "Part_Id_MR1_Special_Phase_2_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 3", "Part_Id_MR1_Special_Phase_3", "Part_Id_MR1_Special_Phase_3_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Normal", "Part_Id_LR_HR2_Normal", "Part_Id_LR_HR2_Normal_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Wounded", "Part_Id_LR_HR2_Wounded", "Part_Id_LR_HR2_Wounded_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Special Phase 1", "Part_Id_LR_HR2_Special_Phase_1", "Part_Id_LR_HR2_Special_Phase_1_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Special Phase 2", "Part_Id_LR_HR2_Special_Phase_2", "Part_Id_LR_HR2_Special_Phase_2_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Special Phase 3", "Part_Id_LR_HR2_Special_Phase_3", "Part_Id_LR_HR2_Special_Phase_3_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR2 Normal", "Part_Id_MR2_Normal", "Part_Id_MR2_Normal_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR2 Wounded", "Part_Id_MR2_Wounded", "Part_Id_MR2_Wounded_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR2 Special Phase 1", "Part_Id_MR2_Special_Phase_1", "Part_Id_MR2_Special_Phase_1_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR2 Special Phase 2", "Part_Id_MR2_Special_Phase_2", "Part_Id_MR2_Special_Phase_2_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR2 Special Phase 3", "Part_Id_MR2_Special_Phase_3", "Part_Id_MR2_Special_Phase_3_offset"),
+                        new MultiStructItemCustomView(this, "unk19", "unk19", "unk19_offset"),
+                        new MultiStructItemCustomView(this, "unk20", "unk20", "unk20_offset"),
+                        new MultiStructItemCustomView(this, "unk21", "unk21", "unk21_offset"),
+                        new MultiStructItemCustomView(this, "unk22", "unk22", "unk22_offset"),
+                        new MultiStructItemCustomView(this, "unk23", "unk23", "unk23_offset"),
                     };
                 }
             }
@@ -1062,6 +1222,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Normal_offset { get; private set; }
+
                 protected int Part_Id_LR_HR1_Wounded_raw;
                 public const string Part_Id_LR_HR1_Wounded_displayName = "Part Id LR/HR1 Wounded";
                 public const int Part_Id_LR_HR1_Wounded_sortIndex = 100;
@@ -1076,6 +1239,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Wounded));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Wounded_offset { get; private set; }
 
                 protected int Part_Id_LR_HR1_Special_Phase_1_raw;
                 public const string Part_Id_LR_HR1_Special_Phase_1_displayName = "Part Id LR/HR1 Special Phase 1";
@@ -1092,6 +1258,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Special_Phase_1_offset { get; private set; }
+
                 protected int Part_Id_LR_HR1_Special_Phase_2_raw;
                 public const string Part_Id_LR_HR1_Special_Phase_2_displayName = "Part Id LR/HR1 Special Phase 2";
                 public const int Part_Id_LR_HR1_Special_Phase_2_sortIndex = 200;
@@ -1106,6 +1275,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_LR_HR1_Special_Phase_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Special_Phase_2_offset { get; private set; }
 
                 protected int Part_Id_LR_HR1_Special_Phase_3_raw;
                 public const string Part_Id_LR_HR1_Special_Phase_3_displayName = "Part Id LR/HR1 Special Phase 3";
@@ -1122,6 +1294,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR1_Special_Phase_3_offset { get; private set; }
+
                 protected int Part_Id_MR1_Normal_raw;
                 public const string Part_Id_MR1_Normal_displayName = "Part Id MR1 Normal";
                 public const int Part_Id_MR1_Normal_sortIndex = 300;
@@ -1136,6 +1311,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR1_Normal));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Normal_offset { get; private set; }
 
                 protected int Part_Id_MR1_Wounded_raw;
                 public const string Part_Id_MR1_Wounded_displayName = "Part Id MR1 Wounded";
@@ -1152,6 +1330,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Wounded_offset { get; private set; }
+
                 protected int Part_Id_MR1_Special_Phase_1_raw;
                 public const string Part_Id_MR1_Special_Phase_1_displayName = "Part Id MR1 Special Phase 1";
                 public const int Part_Id_MR1_Special_Phase_1_sortIndex = 400;
@@ -1166,6 +1347,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_1));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Special_Phase_1_offset { get; private set; }
 
                 protected int Part_Id_MR1_Special_Phase_2_raw;
                 public const string Part_Id_MR1_Special_Phase_2_displayName = "Part Id MR1 Special Phase 2";
@@ -1182,6 +1366,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Special_Phase_2_offset { get; private set; }
+
                 protected int Part_Id_MR1_Special_Phase_3_raw;
                 public const string Part_Id_MR1_Special_Phase_3_displayName = "Part Id MR1 Special Phase 3";
                 public const int Part_Id_MR1_Special_Phase_3_sortIndex = 500;
@@ -1196,6 +1383,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR1_Special_Phase_3));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR1_Special_Phase_3_offset { get; private set; }
 
                 protected int Part_Id_LR_HR2_Normal_raw;
                 public const string Part_Id_LR_HR2_Normal_displayName = "Part Id LR/HR2 Normal";
@@ -1212,6 +1402,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR2_Normal_offset { get; private set; }
+
                 protected int Part_Id_LR_HR2_Wounded_raw;
                 public const string Part_Id_LR_HR2_Wounded_displayName = "Part Id LR/HR2 Wounded";
                 public const int Part_Id_LR_HR2_Wounded_sortIndex = 600;
@@ -1226,6 +1419,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Wounded));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR2_Wounded_offset { get; private set; }
 
                 protected int Part_Id_LR_HR2_Special_Phase_1_raw;
                 public const string Part_Id_LR_HR2_Special_Phase_1_displayName = "Part Id LR/HR2 Special Phase 1";
@@ -1242,6 +1438,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR2_Special_Phase_1_offset { get; private set; }
+
                 protected int Part_Id_LR_HR2_Special_Phase_2_raw;
                 public const string Part_Id_LR_HR2_Special_Phase_2_displayName = "Part Id LR/HR2 Special Phase 2";
                 public const int Part_Id_LR_HR2_Special_Phase_2_sortIndex = 700;
@@ -1256,6 +1455,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_LR_HR2_Special_Phase_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR2_Special_Phase_2_offset { get; private set; }
 
                 protected int Part_Id_LR_HR2_Special_Phase_3_raw;
                 public const string Part_Id_LR_HR2_Special_Phase_3_displayName = "Part Id LR/HR2 Special Phase 3";
@@ -1272,6 +1474,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR2_Special_Phase_3_offset { get; private set; }
+
                 protected int Part_Id_MR2_Normal_raw;
                 public const string Part_Id_MR2_Normal_displayName = "Part Id MR2 Normal";
                 public const int Part_Id_MR2_Normal_sortIndex = 800;
@@ -1286,6 +1491,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR2_Normal));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR2_Normal_offset { get; private set; }
 
                 protected int Part_Id_MR2_Wounded_raw;
                 public const string Part_Id_MR2_Wounded_displayName = "Part Id MR2 Wounded";
@@ -1302,6 +1510,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_MR2_Wounded_offset { get; private set; }
+
                 protected int Part_Id_MR2_Special_Phase_1_raw;
                 public const string Part_Id_MR2_Special_Phase_1_displayName = "Part Id MR2 Special Phase 1";
                 public const int Part_Id_MR2_Special_Phase_1_sortIndex = 900;
@@ -1316,6 +1527,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR2_Special_Phase_1));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR2_Special_Phase_1_offset { get; private set; }
 
                 protected int Part_Id_MR2_Special_Phase_2_raw;
                 public const string Part_Id_MR2_Special_Phase_2_displayName = "Part Id MR2 Special Phase 2";
@@ -1332,6 +1546,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_MR2_Special_Phase_2_offset { get; private set; }
+
                 protected int Part_Id_MR2_Special_Phase_3_raw;
                 public const string Part_Id_MR2_Special_Phase_3_displayName = "Part Id MR2 Special Phase 3";
                 public const int Part_Id_MR2_Special_Phase_3_sortIndex = 1000;
@@ -1346,6 +1563,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR2_Special_Phase_3));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR2_Special_Phase_3_offset { get; private set; }
 
                 protected int Part_Id_LR_HR3_Normal_raw;
                 public const string Part_Id_LR_HR3_Normal_displayName = "Part Id LR/HR3 Normal";
@@ -1362,6 +1582,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR3_Normal_offset { get; private set; }
+
                 protected int Part_Id_LR_HR3_Wounded_raw;
                 public const string Part_Id_LR_HR3_Wounded_displayName = "Part Id LR/HR3 Wounded";
                 public const int Part_Id_LR_HR3_Wounded_sortIndex = 1100;
@@ -1376,6 +1599,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_LR_HR3_Wounded));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR3_Wounded_offset { get; private set; }
 
                 protected int Part_Id_LR_HR3_Special_Phase_1_raw;
                 public const string Part_Id_LR_HR3_Special_Phase_1_displayName = "Part Id LR/HR3 Special Phase 1";
@@ -1392,6 +1618,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR3_Special_Phase_1_offset { get; private set; }
+
                 protected int Part_Id_LR_HR3_Special_Phase_2_raw;
                 public const string Part_Id_LR_HR3_Special_Phase_2_displayName = "Part Id LR/HR3 Special Phase 2";
                 public const int Part_Id_LR_HR3_Special_Phase_2_sortIndex = 1200;
@@ -1406,6 +1635,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_LR_HR3_Special_Phase_2));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR3_Special_Phase_2_offset { get; private set; }
 
                 protected int Part_Id_LR_HR3_Special_Phase_3_raw;
                 public const string Part_Id_LR_HR3_Special_Phase_3_displayName = "Part Id LR/HR3 Special Phase 3";
@@ -1422,6 +1654,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_LR_HR3_Special_Phase_3_offset { get; private set; }
+
                 protected int Part_Id_MR3_Normal_raw;
                 public const string Part_Id_MR3_Normal_displayName = "Part Id MR3 Normal";
                 public const int Part_Id_MR3_Normal_sortIndex = 1300;
@@ -1436,6 +1671,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR3_Normal));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR3_Normal_offset { get; private set; }
 
                 protected int Part_Id_MR3_Wounded_raw;
                 public const string Part_Id_MR3_Wounded_displayName = "Part Id MR3 Wounded";
@@ -1452,6 +1690,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_MR3_Wounded_offset { get; private set; }
+
                 protected int Part_Id_MR3_Special_Phase_1_raw;
                 public const string Part_Id_MR3_Special_Phase_1_displayName = "Part Id MR3 Special Phase 1";
                 public const int Part_Id_MR3_Special_Phase_1_sortIndex = 1400;
@@ -1466,6 +1707,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR3_Special_Phase_1));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR3_Special_Phase_1_offset { get; private set; }
 
                 protected int Part_Id_MR3_Special_Phase_2_raw;
                 public const string Part_Id_MR3_Special_Phase_2_displayName = "Part Id MR3 Special Phase 2";
@@ -1482,6 +1726,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long Part_Id_MR3_Special_Phase_2_offset { get; private set; }
+
                 protected int Part_Id_MR3_Special_Phase_3_raw;
                 public const string Part_Id_MR3_Special_Phase_3_displayName = "Part Id MR3 Special Phase 3";
                 public const int Part_Id_MR3_Special_Phase_3_sortIndex = 1500;
@@ -1496,6 +1743,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(Part_Id_MR3_Special_Phase_3));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long Part_Id_MR3_Special_Phase_3_offset { get; private set; }
 
                 protected uint unk29_raw;
                 public const string unk29_displayName = "unk29";
@@ -1512,6 +1762,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long unk29_offset { get; private set; }
+
                 protected uint unk30_raw;
                 public const string unk30_displayName = "unk30";
                 public const int unk30_sortIndex = 1600;
@@ -1526,6 +1779,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(unk30));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long unk30_offset { get; private set; }
 
                 protected uint unk31_raw;
                 public const string unk31_displayName = "unk31";
@@ -1542,6 +1798,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long unk31_offset { get; private set; }
+
                 protected byte unk32_raw;
                 public const string unk32_displayName = "unk32";
                 public const int unk32_sortIndex = 1700;
@@ -1556,6 +1815,9 @@ namespace MHW_Editor.Structs.Monsters {
                         OnPropertyChanged(nameof(unk32));
                     }
                 }
+
+                [DisplayName("Offset")]
+                public long unk32_offset { get; private set; }
 
                 protected byte unk33_raw;
                 public const string unk33_displayName = "unk33";
@@ -1572,6 +1834,9 @@ namespace MHW_Editor.Structs.Monsters {
                     }
                 }
 
+                [DisplayName("Offset")]
+                public long unk33_offset { get; private set; }
+
                 public const int lastSortIndex = 1800;
 
                 public static ObservableMhwStructCollection<Parts3> LoadData(BinaryReader reader, Flinches parent) {
@@ -1586,40 +1851,75 @@ namespace MHW_Editor.Structs.Monsters {
                 public static Parts3 LoadData(BinaryReader reader, ulong i, Flinches parent) {
                     var data = new Parts3();
                     data.Index = i;
+                    data.Part_Id_LR_HR1_Normal_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Normal_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR1_Wounded_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Wounded_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR1_Special_Phase_1_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Special_Phase_1_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR1_Special_Phase_2_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Special_Phase_2_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR1_Special_Phase_3_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR1_Special_Phase_3_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Normal_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Normal_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Wounded_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Wounded_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Special_Phase_1_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Special_Phase_1_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Special_Phase_2_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Special_Phase_2_raw = reader.ReadInt32();
+                    data.Part_Id_MR1_Special_Phase_3_offset = reader.BaseStream.Position;
                     data.Part_Id_MR1_Special_Phase_3_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR2_Normal_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR2_Normal_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR2_Wounded_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR2_Wounded_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR2_Special_Phase_1_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR2_Special_Phase_1_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR2_Special_Phase_2_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR2_Special_Phase_2_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR2_Special_Phase_3_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR2_Special_Phase_3_raw = reader.ReadInt32();
+                    data.Part_Id_MR2_Normal_offset = reader.BaseStream.Position;
                     data.Part_Id_MR2_Normal_raw = reader.ReadInt32();
+                    data.Part_Id_MR2_Wounded_offset = reader.BaseStream.Position;
                     data.Part_Id_MR2_Wounded_raw = reader.ReadInt32();
+                    data.Part_Id_MR2_Special_Phase_1_offset = reader.BaseStream.Position;
                     data.Part_Id_MR2_Special_Phase_1_raw = reader.ReadInt32();
+                    data.Part_Id_MR2_Special_Phase_2_offset = reader.BaseStream.Position;
                     data.Part_Id_MR2_Special_Phase_2_raw = reader.ReadInt32();
+                    data.Part_Id_MR2_Special_Phase_3_offset = reader.BaseStream.Position;
                     data.Part_Id_MR2_Special_Phase_3_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR3_Normal_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR3_Normal_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR3_Wounded_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR3_Wounded_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR3_Special_Phase_1_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR3_Special_Phase_1_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR3_Special_Phase_2_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR3_Special_Phase_2_raw = reader.ReadInt32();
+                    data.Part_Id_LR_HR3_Special_Phase_3_offset = reader.BaseStream.Position;
                     data.Part_Id_LR_HR3_Special_Phase_3_raw = reader.ReadInt32();
+                    data.Part_Id_MR3_Normal_offset = reader.BaseStream.Position;
                     data.Part_Id_MR3_Normal_raw = reader.ReadInt32();
+                    data.Part_Id_MR3_Wounded_offset = reader.BaseStream.Position;
                     data.Part_Id_MR3_Wounded_raw = reader.ReadInt32();
+                    data.Part_Id_MR3_Special_Phase_1_offset = reader.BaseStream.Position;
                     data.Part_Id_MR3_Special_Phase_1_raw = reader.ReadInt32();
+                    data.Part_Id_MR3_Special_Phase_2_offset = reader.BaseStream.Position;
                     data.Part_Id_MR3_Special_Phase_2_raw = reader.ReadInt32();
+                    data.Part_Id_MR3_Special_Phase_3_offset = reader.BaseStream.Position;
                     data.Part_Id_MR3_Special_Phase_3_raw = reader.ReadInt32();
+                    data.unk29_offset = reader.BaseStream.Position;
                     data.unk29_raw = reader.ReadUInt32();
+                    data.unk30_offset = reader.BaseStream.Position;
                     data.unk30_raw = reader.ReadUInt32();
+                    data.unk31_offset = reader.BaseStream.Position;
                     data.unk31_raw = reader.ReadUInt32();
+                    data.unk32_offset = reader.BaseStream.Position;
                     data.unk32_raw = reader.ReadByte();
+                    data.unk33_offset = reader.BaseStream.Position;
                     data.unk33_raw = reader.ReadByte();
                     return data;
                 }
@@ -1664,41 +1964,41 @@ namespace MHW_Editor.Structs.Monsters {
 
                 public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                     return new ObservableCollection<MultiStructItemCustomView> {
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Normal", "Part_Id_LR_HR1_Normal"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Wounded", "Part_Id_LR_HR1_Wounded"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 1", "Part_Id_LR_HR1_Special_Phase_1"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 2", "Part_Id_LR_HR1_Special_Phase_2"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 3", "Part_Id_LR_HR1_Special_Phase_3"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Normal", "Part_Id_MR1_Normal"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Wounded", "Part_Id_MR1_Wounded"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 1", "Part_Id_MR1_Special_Phase_1"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 2", "Part_Id_MR1_Special_Phase_2"),
-                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 3", "Part_Id_MR1_Special_Phase_3"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Normal", "Part_Id_LR_HR2_Normal"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Wounded", "Part_Id_LR_HR2_Wounded"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Special Phase 1", "Part_Id_LR_HR2_Special_Phase_1"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Special Phase 2", "Part_Id_LR_HR2_Special_Phase_2"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Special Phase 3", "Part_Id_LR_HR2_Special_Phase_3"),
-                        new MultiStructItemCustomView(this, "Part Id MR2 Normal", "Part_Id_MR2_Normal"),
-                        new MultiStructItemCustomView(this, "Part Id MR2 Wounded", "Part_Id_MR2_Wounded"),
-                        new MultiStructItemCustomView(this, "Part Id MR2 Special Phase 1", "Part_Id_MR2_Special_Phase_1"),
-                        new MultiStructItemCustomView(this, "Part Id MR2 Special Phase 2", "Part_Id_MR2_Special_Phase_2"),
-                        new MultiStructItemCustomView(this, "Part Id MR2 Special Phase 3", "Part_Id_MR2_Special_Phase_3"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR3 Normal", "Part_Id_LR_HR3_Normal"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR3 Wounded", "Part_Id_LR_HR3_Wounded"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR3 Special Phase 1", "Part_Id_LR_HR3_Special_Phase_1"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR3 Special Phase 2", "Part_Id_LR_HR3_Special_Phase_2"),
-                        new MultiStructItemCustomView(this, "Part Id LR/HR3 Special Phase 3", "Part_Id_LR_HR3_Special_Phase_3"),
-                        new MultiStructItemCustomView(this, "Part Id MR3 Normal", "Part_Id_MR3_Normal"),
-                        new MultiStructItemCustomView(this, "Part Id MR3 Wounded", "Part_Id_MR3_Wounded"),
-                        new MultiStructItemCustomView(this, "Part Id MR3 Special Phase 1", "Part_Id_MR3_Special_Phase_1"),
-                        new MultiStructItemCustomView(this, "Part Id MR3 Special Phase 2", "Part_Id_MR3_Special_Phase_2"),
-                        new MultiStructItemCustomView(this, "Part Id MR3 Special Phase 3", "Part_Id_MR3_Special_Phase_3"),
-                        new MultiStructItemCustomView(this, "unk29", "unk29"),
-                        new MultiStructItemCustomView(this, "unk30", "unk30"),
-                        new MultiStructItemCustomView(this, "unk31", "unk31"),
-                        new MultiStructItemCustomView(this, "unk32", "unk32"),
-                        new MultiStructItemCustomView(this, "unk33", "unk33"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Normal", "Part_Id_LR_HR1_Normal", "Part_Id_LR_HR1_Normal_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Wounded", "Part_Id_LR_HR1_Wounded", "Part_Id_LR_HR1_Wounded_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 1", "Part_Id_LR_HR1_Special_Phase_1", "Part_Id_LR_HR1_Special_Phase_1_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 2", "Part_Id_LR_HR1_Special_Phase_2", "Part_Id_LR_HR1_Special_Phase_2_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR1 Special Phase 3", "Part_Id_LR_HR1_Special_Phase_3", "Part_Id_LR_HR1_Special_Phase_3_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Normal", "Part_Id_MR1_Normal", "Part_Id_MR1_Normal_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Wounded", "Part_Id_MR1_Wounded", "Part_Id_MR1_Wounded_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 1", "Part_Id_MR1_Special_Phase_1", "Part_Id_MR1_Special_Phase_1_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 2", "Part_Id_MR1_Special_Phase_2", "Part_Id_MR1_Special_Phase_2_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR1 Special Phase 3", "Part_Id_MR1_Special_Phase_3", "Part_Id_MR1_Special_Phase_3_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Normal", "Part_Id_LR_HR2_Normal", "Part_Id_LR_HR2_Normal_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Wounded", "Part_Id_LR_HR2_Wounded", "Part_Id_LR_HR2_Wounded_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Special Phase 1", "Part_Id_LR_HR2_Special_Phase_1", "Part_Id_LR_HR2_Special_Phase_1_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Special Phase 2", "Part_Id_LR_HR2_Special_Phase_2", "Part_Id_LR_HR2_Special_Phase_2_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR2 Special Phase 3", "Part_Id_LR_HR2_Special_Phase_3", "Part_Id_LR_HR2_Special_Phase_3_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR2 Normal", "Part_Id_MR2_Normal", "Part_Id_MR2_Normal_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR2 Wounded", "Part_Id_MR2_Wounded", "Part_Id_MR2_Wounded_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR2 Special Phase 1", "Part_Id_MR2_Special_Phase_1", "Part_Id_MR2_Special_Phase_1_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR2 Special Phase 2", "Part_Id_MR2_Special_Phase_2", "Part_Id_MR2_Special_Phase_2_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR2 Special Phase 3", "Part_Id_MR2_Special_Phase_3", "Part_Id_MR2_Special_Phase_3_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR3 Normal", "Part_Id_LR_HR3_Normal", "Part_Id_LR_HR3_Normal_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR3 Wounded", "Part_Id_LR_HR3_Wounded", "Part_Id_LR_HR3_Wounded_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR3 Special Phase 1", "Part_Id_LR_HR3_Special_Phase_1", "Part_Id_LR_HR3_Special_Phase_1_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR3 Special Phase 2", "Part_Id_LR_HR3_Special_Phase_2", "Part_Id_LR_HR3_Special_Phase_2_offset"),
+                        new MultiStructItemCustomView(this, "Part Id LR/HR3 Special Phase 3", "Part_Id_LR_HR3_Special_Phase_3", "Part_Id_LR_HR3_Special_Phase_3_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR3 Normal", "Part_Id_MR3_Normal", "Part_Id_MR3_Normal_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR3 Wounded", "Part_Id_MR3_Wounded", "Part_Id_MR3_Wounded_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR3 Special Phase 1", "Part_Id_MR3_Special_Phase_1", "Part_Id_MR3_Special_Phase_1_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR3 Special Phase 2", "Part_Id_MR3_Special_Phase_2", "Part_Id_MR3_Special_Phase_2_offset"),
+                        new MultiStructItemCustomView(this, "Part Id MR3 Special Phase 3", "Part_Id_MR3_Special_Phase_3", "Part_Id_MR3_Special_Phase_3_offset"),
+                        new MultiStructItemCustomView(this, "unk29", "unk29", "unk29_offset"),
+                        new MultiStructItemCustomView(this, "unk30", "unk30", "unk30_offset"),
+                        new MultiStructItemCustomView(this, "unk31", "unk31", "unk31_offset"),
+                        new MultiStructItemCustomView(this, "unk32", "unk32", "unk32_offset"),
+                        new MultiStructItemCustomView(this, "unk33", "unk33", "unk33_offset"),
                     };
                 }
             }
@@ -2497,6 +2797,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long unk1_offset { get; private set; }
+
             protected uint unk2_raw;
             public const string unk2_displayName = "unk2";
             public const int unk2_sortIndex = 100;
@@ -2512,6 +2815,9 @@ namespace MHW_Editor.Structs.Monsters {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long unk2_offset { get; private set; }
+
             public const int lastSortIndex = 150;
 
             public static ObservableMhwStructCollection<Unknown> LoadData(BinaryReader reader) {
@@ -2526,7 +2832,9 @@ namespace MHW_Editor.Structs.Monsters {
             public static Unknown LoadData(BinaryReader reader, ulong i) {
                 var data = new Unknown();
                 data.Index = i;
+                data.unk1_offset = reader.BaseStream.Position;
                 data.unk1_raw = reader.ReadUInt32();
+                data.unk2_offset = reader.BaseStream.Position;
                 data.unk2_raw = reader.ReadUInt32();
                 return data;
             }
@@ -2538,8 +2846,8 @@ namespace MHW_Editor.Structs.Monsters {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "unk1", "unk1"),
-                    new MultiStructItemCustomView(this, "unk2", "unk2"),
+                    new MultiStructItemCustomView(this, "unk1", "unk1", "unk1_offset"),
+                    new MultiStructItemCustomView(this, "unk2", "unk2", "unk2_offset"),
                 };
             }
         }

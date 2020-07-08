@@ -97,6 +97,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Powder_Radius_offset { get; private set; }
+
             protected uint Potion_Power_raw;
             public const string Potion_Power_displayName = "Potion Power";
             public const int Potion_Power_sortIndex = 100;
@@ -111,6 +114,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Potion_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Potion_Power_offset { get; private set; }
 
             protected float Unk2_raw;
             public const string Unk2_displayName = "Unk2";
@@ -127,6 +133,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk2_offset { get; private set; }
+
             protected float Unk3_raw;
             public const string Unk3_displayName = "Unk3";
             public const int Unk3_sortIndex = 200;
@@ -141,6 +150,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk3_offset { get; private set; }
 
             protected float Unk4_raw;
             public const string Unk4_displayName = "Unk4";
@@ -157,6 +169,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk4_offset { get; private set; }
+
             protected uint Mega_Potion_Power_raw;
             public const string Mega_Potion_Power_displayName = "Mega Potion Power";
             public const int Mega_Potion_Power_sortIndex = 300;
@@ -171,6 +186,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Mega_Potion_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Mega_Potion_Power_offset { get; private set; }
 
             protected float Unk5_raw;
             public const string Unk5_displayName = "Unk5";
@@ -187,6 +205,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk5_offset { get; private set; }
+
             protected float Unk6_raw;
             public const string Unk6_displayName = "Unk6";
             public const int Unk6_sortIndex = 400;
@@ -201,6 +222,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk6));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk6_offset { get; private set; }
 
             protected float Unk7_raw;
             public const string Unk7_displayName = "Unk7";
@@ -217,6 +241,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk7_offset { get; private set; }
+
             protected byte Nutrients_Power_raw;
             public const string Nutrients_Power_displayName = "Nutrients Power";
             public const int Nutrients_Power_sortIndex = 500;
@@ -231,6 +258,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Nutrients_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Nutrients_Power_offset { get; private set; }
 
             protected byte Mega_Nutrients_Power_raw;
             public const string Mega_Nutrients_Power_displayName = "Mega Nutrients Power";
@@ -247,6 +277,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Mega_Nutrients_Power_offset { get; private set; }
+
             protected byte Unk9_raw;
             public const string Unk9_displayName = "Unk9";
             public const int Unk9_sortIndex = 600;
@@ -261,6 +294,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk9));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk9_offset { get; private set; }
 
             protected float Mega_Dash_Juice_Stamina_Power_raw;
             public const string Mega_Dash_Juice_Stamina_Power_displayName = "Mega Dash Juice Stamina Power";
@@ -277,6 +313,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Mega_Dash_Juice_Stamina_Power_offset { get; private set; }
+
             protected float Dash_Juice_Stamina_Power_raw;
             public const string Dash_Juice_Stamina_Power_displayName = "Dash Juice Stamina Power";
             public const int Dash_Juice_Stamina_Power_sortIndex = 700;
@@ -291,6 +330,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Dash_Juice_Stamina_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Dash_Juice_Stamina_Power_offset { get; private set; }
 
             protected ushort Both_Dash_Juice_Duration_raw;
             public const string Both_Dash_Juice_Duration_displayName = "Both Dash Juice Duration";
@@ -307,6 +349,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Both_Dash_Juice_Duration_offset { get; private set; }
+
             protected byte Both_Dash_Juice_Power_raw;
             public const string Both_Dash_Juice_Power_displayName = "Both Dash Juice Power";
             public const int Both_Dash_Juice_Power_sortIndex = 800;
@@ -321,6 +366,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Both_Dash_Juice_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Both_Dash_Juice_Power_offset { get; private set; }
 
             protected float Immunizer_Power_raw;
             public const string Immunizer_Power_displayName = "Immunizer Power";
@@ -337,6 +385,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Immunizer_Power_offset { get; private set; }
+
             protected ushort Immunizer_Duration_raw;
             public const string Immunizer_Duration_displayName = "Immunizer Duration";
             public const int Immunizer_Duration_sortIndex = 900;
@@ -351,6 +402,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Immunizer_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Immunizer_Duration_offset { get; private set; }
 
             protected float Astera_Jerky_Power_raw;
             public const string Astera_Jerky_Power_displayName = "Astera Jerky Power";
@@ -367,6 +421,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Astera_Jerky_Power_offset { get; private set; }
+
             protected ushort Astera_Jerky_Duration_raw;
             public const string Astera_Jerky_Duration_displayName = "Astera Jerky Duration";
             public const int Astera_Jerky_Duration_sortIndex = 1000;
@@ -381,6 +438,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Astera_Jerky_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Astera_Jerky_Duration_offset { get; private set; }
 
             protected ushort Herbal_Medicine_Power_raw;
             public const string Herbal_Medicine_Power_displayName = "Herbal Medicine Power";
@@ -397,6 +457,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Herbal_Medicine_Power_offset { get; private set; }
+
             protected uint Sushifish_Scale_Power_raw;
             public const string Sushifish_Scale_Power_displayName = "Sushifish Scale Power";
             public const int Sushifish_Scale_Power_sortIndex = 1100;
@@ -411,6 +474,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Sushifish_Scale_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Sushifish_Scale_Power_offset { get; private set; }
 
             protected uint Great_Sushifish_Scale_Power_raw;
             public const string Great_Sushifish_Scale_Power_displayName = "Great Sushifish Scale Power";
@@ -427,6 +493,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Great_Sushifish_Scale_Power_offset { get; private set; }
+
             protected float Great_Sushifish_Scale_Duration_raw;
             public const string Great_Sushifish_Scale_Duration_displayName = "Great Sushifish Scale Duration";
             public const int Great_Sushifish_Scale_Duration_sortIndex = 1200;
@@ -441,6 +510,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Great_Sushifish_Scale_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Great_Sushifish_Scale_Duration_offset { get; private set; }
 
             protected ushort Cool_Drink_Duration_raw;
             public const string Cool_Drink_Duration_displayName = "Cool Drink Duration";
@@ -457,6 +529,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Cool_Drink_Duration_offset { get; private set; }
+
             protected ushort Hot_Drink_Duration_raw;
             public const string Hot_Drink_Duration_displayName = "Hot Drink Duration";
             public const int Hot_Drink_Duration_sortIndex = 1300;
@@ -471,6 +546,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Hot_Drink_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Hot_Drink_Duration_offset { get; private set; }
 
             protected ushort Might_Seed_Duration_raw;
             public const string Might_Seed_Duration_displayName = "Might Seed Duration";
@@ -487,6 +565,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Might_Seed_Duration_offset { get; private set; }
+
             protected ushort Might_Seed_Power_raw;
             public const string Might_Seed_Power_displayName = "Might Seed Power";
             public const int Might_Seed_Power_sortIndex = 1400;
@@ -501,6 +582,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Might_Seed_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Might_Seed_Power_offset { get; private set; }
 
             protected ushort Might_Pill_Duration_raw;
             public const string Might_Pill_Duration_displayName = "Might Pill Duration";
@@ -517,6 +601,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Might_Pill_Duration_offset { get; private set; }
+
             protected ushort Might_Pill_Power_raw;
             public const string Might_Pill_Power_displayName = "Might Pill Power";
             public const int Might_Pill_Power_sortIndex = 1500;
@@ -531,6 +618,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Might_Pill_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Might_Pill_Power_offset { get; private set; }
 
             protected ushort Adamant_Seed_Duration_raw;
             public const string Adamant_Seed_Duration_displayName = "Adamant Seed Duration";
@@ -547,6 +637,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Adamant_Seed_Duration_offset { get; private set; }
+
             protected ushort Adamant_Seed_Power_raw;
             public const string Adamant_Seed_Power_displayName = "Adamant Seed Power";
             public const int Adamant_Seed_Power_sortIndex = 1600;
@@ -561,6 +654,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Adamant_Seed_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Adamant_Seed_Power_offset { get; private set; }
 
             protected ushort Adamant_Pill_Duration_raw;
             public const string Adamant_Pill_Duration_displayName = "Adamant Pill Duration";
@@ -577,6 +673,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Adamant_Pill_Duration_offset { get; private set; }
+
             protected float Adamant_Pill_Power_raw;
             public const string Adamant_Pill_Power_displayName = "Adamant Pill Power";
             public const int Adamant_Pill_Power_sortIndex = 1700;
@@ -591,6 +690,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Adamant_Pill_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Adamant_Pill_Power_offset { get; private set; }
 
             protected byte Demondrug_Power_raw;
             public const string Demondrug_Power_displayName = "Demondrug Power";
@@ -607,6 +709,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Demondrug_Power_offset { get; private set; }
+
             protected byte Mega_Demondrug_Power_raw;
             public const string Mega_Demondrug_Power_displayName = "Mega Demondrug Power";
             public const int Mega_Demondrug_Power_sortIndex = 1800;
@@ -621,6 +726,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Mega_Demondrug_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Mega_Demondrug_Power_offset { get; private set; }
 
             protected byte Armorskin_Power_raw;
             public const string Armorskin_Power_displayName = "Armorskin Power";
@@ -637,6 +745,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Armorskin_Power_offset { get; private set; }
+
             protected byte Mega_Armorskin_Power_raw;
             public const string Mega_Armorskin_Power_displayName = "Mega Armorskin Power";
             public const int Mega_Armorskin_Power_sortIndex = 1900;
@@ -651,6 +762,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Mega_Armorskin_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Mega_Armorskin_Power_offset { get; private set; }
 
             protected ushort Unk16_raw;
             public const string Unk16_displayName = "Unk16";
@@ -667,6 +781,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk16_offset { get; private set; }
+
             protected ushort Lifepowder_Power_raw;
             public const string Lifepowder_Power_displayName = "Lifepowder Power";
             public const int Lifepowder_Power_sortIndex = 2000;
@@ -681,6 +798,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Lifepowder_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Lifepowder_Power_offset { get; private set; }
 
             protected ushort Dust_of_Life_Power_raw;
             public const string Dust_of_Life_Power_displayName = "Dust of Life Power";
@@ -697,6 +817,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Dust_of_Life_Power_offset { get; private set; }
+
             protected ushort Herbal_Powder_Power_raw;
             public const string Herbal_Powder_Power_displayName = "Herbal Powder Power";
             public const int Herbal_Powder_Power_sortIndex = 2100;
@@ -711,6 +834,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Herbal_Powder_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Herbal_Powder_Power_offset { get; private set; }
 
             protected ushort Demon_Powder_Power_raw;
             public const string Demon_Powder_Power_displayName = "Demon Powder Power";
@@ -727,6 +853,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Demon_Powder_Power_offset { get; private set; }
+
             protected ushort Demon_Powder_Duration_raw;
             public const string Demon_Powder_Duration_displayName = "Demon Powder Duration";
             public const int Demon_Powder_Duration_sortIndex = 2200;
@@ -741,6 +870,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Demon_Powder_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Demon_Powder_Duration_offset { get; private set; }
 
             protected ushort Hardshell_Powder_Power_raw;
             public const string Hardshell_Powder_Power_displayName = "Hardshell Powder Power";
@@ -757,6 +889,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Hardshell_Powder_Power_offset { get; private set; }
+
             protected ushort Hardshell_Powder_Duration_raw;
             public const string Hardshell_Powder_Duration_displayName = "Hardshell Powder Duration";
             public const int Hardshell_Powder_Duration_sortIndex = 2300;
@@ -771,6 +906,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Hardshell_Powder_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Hardshell_Powder_Duration_offset { get; private set; }
 
             protected ushort Demon_Ammo_Power_raw;
             public const string Demon_Ammo_Power_displayName = "Demon Ammo Power";
@@ -787,6 +925,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Demon_Ammo_Power_offset { get; private set; }
+
             protected ushort Demon_Ammo_Duration_raw;
             public const string Demon_Ammo_Duration_displayName = "Demon Ammo Duration";
             public const int Demon_Ammo_Duration_sortIndex = 2400;
@@ -801,6 +942,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Demon_Ammo_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Demon_Ammo_Duration_offset { get; private set; }
 
             protected ushort Armor_Ammo_Power_raw;
             public const string Armor_Ammo_Power_displayName = "Armor Ammo Power";
@@ -817,6 +961,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Armor_Ammo_Power_offset { get; private set; }
+
             protected ushort Armor_Ammo_Duration_raw;
             public const string Armor_Ammo_Duration_displayName = "Armor Ammo Duration";
             public const int Armor_Ammo_Duration_sortIndex = 2500;
@@ -831,6 +978,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Armor_Ammo_Duration));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Armor_Ammo_Duration_offset { get; private set; }
 
             protected ushort Ration_Power_raw;
             public const string Ration_Power_displayName = "Ration Power";
@@ -847,6 +997,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Ration_Power_offset { get; private set; }
+
             protected uint Well_Done_Steak_Multiplier_raw;
             public const string Well_Done_Steak_Multiplier_displayName = "Well Done Steak Multiplier";
             public const int Well_Done_Steak_Multiplier_sortIndex = 2600;
@@ -861,6 +1014,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Well_Done_Steak_Multiplier));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Well_Done_Steak_Multiplier_offset { get; private set; }
 
             protected float Well_Done_Steak_Stamina_Bonus_raw;
             public const string Well_Done_Steak_Stamina_Bonus_displayName = "Well Done Steak Stamina Bonus";
@@ -877,6 +1033,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Well_Done_Steak_Stamina_Bonus_offset { get; private set; }
+
             protected float Unk23_raw;
             public const string Unk23_displayName = "Unk23";
             public const int Unk23_sortIndex = 2700;
@@ -891,6 +1050,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk23));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk23_offset { get; private set; }
 
             protected float Unk24_raw;
             public const string Unk24_displayName = "Unk24";
@@ -907,6 +1069,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk24_offset { get; private set; }
+
             protected ushort Burnt_Meat_Stamina_Recovery_raw;
             public const string Burnt_Meat_Stamina_Recovery_displayName = "Burnt Meat Stamina Recovery";
             public const int Burnt_Meat_Stamina_Recovery_sortIndex = 2800;
@@ -921,6 +1086,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Burnt_Meat_Stamina_Recovery));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Burnt_Meat_Stamina_Recovery_offset { get; private set; }
 
             protected short Unk26_raw;
             public const string Unk26_displayName = "Unk26";
@@ -937,6 +1105,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk26_offset { get; private set; }
+
             protected byte Unk27_raw;
             public const string Unk27_displayName = "Unk27";
             public const int Unk27_sortIndex = 2900;
@@ -951,6 +1122,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk27));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk27_offset { get; private set; }
 
             protected float Unk28_raw;
             public const string Unk28_displayName = "Unk28";
@@ -967,6 +1141,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk28_offset { get; private set; }
+
             protected float Unk29_raw;
             public const string Unk29_displayName = "Unk29";
             public const int Unk29_sortIndex = 3000;
@@ -981,6 +1158,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk29));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk29_offset { get; private set; }
 
             protected float Unk30_raw;
             public const string Unk30_displayName = "Unk30";
@@ -997,6 +1177,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk30_offset { get; private set; }
+
             protected float Unk31_raw;
             public const string Unk31_displayName = "Unk31";
             public const int Unk31_sortIndex = 3100;
@@ -1011,6 +1194,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk31));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk31_offset { get; private set; }
 
             protected float Unk32_raw;
             public const string Unk32_displayName = "Unk32";
@@ -1027,6 +1213,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk32_offset { get; private set; }
+
             protected float Unk33_raw;
             public const string Unk33_displayName = "Unk33";
             public const int Unk33_sortIndex = 3200;
@@ -1041,6 +1230,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk33));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk33_offset { get; private set; }
 
             protected float Unk34_raw;
             public const string Unk34_displayName = "Unk34";
@@ -1057,6 +1249,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk34_offset { get; private set; }
+
             protected float Unk35_raw;
             public const string Unk35_displayName = "Unk35";
             public const int Unk35_sortIndex = 3300;
@@ -1071,6 +1266,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk35));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk35_offset { get; private set; }
 
             protected float Unk36_raw;
             public const string Unk36_displayName = "Unk36";
@@ -1087,6 +1285,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk36_offset { get; private set; }
+
             protected float Unk37_raw;
             public const string Unk37_displayName = "Unk37";
             public const int Unk37_sortIndex = 3400;
@@ -1101,6 +1302,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk37));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk37_offset { get; private set; }
 
             protected float Unk38_raw;
             public const string Unk38_displayName = "Unk38";
@@ -1117,6 +1321,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk38_offset { get; private set; }
+
             protected uint Whetstone_Sharpness_Restored_raw;
             public const string Whetstone_Sharpness_Restored_displayName = "Whetstone Sharpness Restored";
             public const int Whetstone_Sharpness_Restored_sortIndex = 3500;
@@ -1131,6 +1338,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Whetstone_Sharpness_Restored));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Whetstone_Sharpness_Restored_offset { get; private set; }
 
             protected uint Whetstone_Cycles_raw;
             public const string Whetstone_Cycles_displayName = "Whetstone Cycles";
@@ -1147,6 +1357,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Whetstone_Cycles_offset { get; private set; }
+
             protected uint Whetfish_Scale_Sharpness_Restored_raw;
             public const string Whetfish_Scale_Sharpness_Restored_displayName = "Whetfish Scale Sharpness Restored";
             public const int Whetfish_Scale_Sharpness_Restored_sortIndex = 3600;
@@ -1161,6 +1374,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Whetfish_Scale_Sharpness_Restored));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Whetfish_Scale_Sharpness_Restored_offset { get; private set; }
 
             protected byte Whetfish_Scale_Cycles_raw;
             public const string Whetfish_Scale_Cycles_displayName = "Whetfish Scale Cycles";
@@ -1177,6 +1393,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Whetfish_Scale_Cycles_offset { get; private set; }
+
             protected byte Whetfish_Scale_Plus_Cycles_raw;
             public const string Whetfish_Scale_Plus_Cycles_displayName = "Whetfish Scale Plus Cycles";
             public const int Whetfish_Scale_Plus_Cycles_sortIndex = 3700;
@@ -1191,6 +1410,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Whetfish_Scale_Plus_Cycles));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Whetfish_Scale_Plus_Cycles_offset { get; private set; }
 
             protected byte Whetfish_Scale_Consume__raw;
             public const string Whetfish_Scale_Consume__displayName = "Whetfish Scale Consume %";
@@ -1207,6 +1429,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Whetfish_Scale_Consume__offset { get; private set; }
+
             protected byte Powertalon_Power_raw;
             public const string Powertalon_Power_displayName = "Powertalon Power";
             public const int Powertalon_Power_sortIndex = 3800;
@@ -1221,6 +1446,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Powertalon_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Powertalon_Power_offset { get; private set; }
 
             protected byte Powercharm_Power_raw;
             public const string Powercharm_Power_displayName = "Powercharm Power";
@@ -1237,6 +1465,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Powercharm_Power_offset { get; private set; }
+
             protected byte Armortalon_Power_raw;
             public const string Armortalon_Power_displayName = "Armortalon Power";
             public const int Armortalon_Power_sortIndex = 3900;
@@ -1251,6 +1482,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Armortalon_Power));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Armortalon_Power_offset { get; private set; }
 
             protected byte Armorcharm_Power_raw;
             public const string Armorcharm_Power_displayName = "Armorcharm Power";
@@ -1267,6 +1501,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Armorcharm_Power_offset { get; private set; }
+
             protected byte Unk49_raw;
             public const string Unk49_displayName = "Unk49";
             public const int Unk49_sortIndex = 4000;
@@ -1281,6 +1518,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk49));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk49_offset { get; private set; }
 
             protected float Unk50_raw;
             public const string Unk50_displayName = "Unk50";
@@ -1297,6 +1537,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk50_offset { get; private set; }
+
             protected float Unk51_raw;
             public const string Unk51_displayName = "Unk51";
             public const int Unk51_sortIndex = 4100;
@@ -1311,6 +1554,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk51));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk51_offset { get; private set; }
 
             protected float Unk52_raw;
             public const string Unk52_displayName = "Unk52";
@@ -1327,6 +1573,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk52_offset { get; private set; }
+
             protected float Unk53_raw;
             public const string Unk53_displayName = "Unk53";
             public const int Unk53_sortIndex = 4200;
@@ -1341,6 +1590,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk53));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk53_offset { get; private set; }
 
             protected float Unk54_raw;
             public const string Unk54_displayName = "Unk54";
@@ -1357,6 +1609,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk54_offset { get; private set; }
+
             protected float Unk55_raw;
             public const string Unk55_displayName = "Unk55";
             public const int Unk55_sortIndex = 4300;
@@ -1371,6 +1626,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk55));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk55_offset { get; private set; }
 
             protected float Unk56_raw;
             public const string Unk56_displayName = "Unk56";
@@ -1387,6 +1645,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk56_offset { get; private set; }
+
             protected float Unk57_raw;
             public const string Unk57_displayName = "Unk57";
             public const int Unk57_sortIndex = 4400;
@@ -1401,6 +1662,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk57));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk57_offset { get; private set; }
 
             protected float Unk58_raw;
             public const string Unk58_displayName = "Unk58";
@@ -1417,6 +1681,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk58_offset { get; private set; }
+
             protected float Unk59_raw;
             public const string Unk59_displayName = "Unk59";
             public const int Unk59_sortIndex = 4500;
@@ -1431,6 +1698,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk59));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk59_offset { get; private set; }
 
             protected float Unk60_raw;
             public const string Unk60_displayName = "Unk60";
@@ -1447,6 +1717,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk60_offset { get; private set; }
+
             protected float Unk61_raw;
             public const string Unk61_displayName = "Unk61";
             public const int Unk61_sortIndex = 4600;
@@ -1461,6 +1734,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk61));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk61_offset { get; private set; }
 
             protected float Unk62_raw;
             public const string Unk62_displayName = "Unk62";
@@ -1477,6 +1753,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk62_offset { get; private set; }
+
             protected float Unk63_raw;
             public const string Unk63_displayName = "Unk63";
             public const int Unk63_sortIndex = 4700;
@@ -1491,6 +1770,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk63));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk63_offset { get; private set; }
 
             protected float Unk64_raw;
             public const string Unk64_displayName = "Unk64";
@@ -1507,6 +1789,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk64_offset { get; private set; }
+
             protected float Unk65_raw;
             public const string Unk65_displayName = "Unk65";
             public const int Unk65_sortIndex = 4800;
@@ -1521,6 +1806,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk65));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk65_offset { get; private set; }
 
             protected float Unk66_raw;
             public const string Unk66_displayName = "Unk66";
@@ -1537,6 +1825,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk66_offset { get; private set; }
+
             protected float Unk67_raw;
             public const string Unk67_displayName = "Unk67";
             public const int Unk67_sortIndex = 4900;
@@ -1551,6 +1842,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk67));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk67_offset { get; private set; }
 
             protected float Unk68_raw;
             public const string Unk68_displayName = "Unk68";
@@ -1567,6 +1861,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk68_offset { get; private set; }
+
             protected float Unk69_raw;
             public const string Unk69_displayName = "Unk69";
             public const int Unk69_sortIndex = 5000;
@@ -1581,6 +1878,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk69));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk69_offset { get; private set; }
 
             protected float Unk70_raw;
             public const string Unk70_displayName = "Unk70";
@@ -1597,6 +1897,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk70_offset { get; private set; }
+
             protected float Unk71_raw;
             public const string Unk71_displayName = "Unk71";
             public const int Unk71_sortIndex = 5100;
@@ -1611,6 +1914,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk71));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk71_offset { get; private set; }
 
             protected float Unk72_raw;
             public const string Unk72_displayName = "Unk72";
@@ -1627,6 +1933,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk72_offset { get; private set; }
+
             protected float Unk73_raw;
             public const string Unk73_displayName = "Unk73";
             public const int Unk73_sortIndex = 5200;
@@ -1641,6 +1950,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk73));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk73_offset { get; private set; }
 
             protected float Unk74_raw;
             public const string Unk74_displayName = "Unk74";
@@ -1657,6 +1969,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk74_offset { get; private set; }
+
             protected float Unk75_raw;
             public const string Unk75_displayName = "Unk75";
             public const int Unk75_sortIndex = 5300;
@@ -1671,6 +1986,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk75));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk75_offset { get; private set; }
 
             protected float Unk76_raw;
             public const string Unk76_displayName = "Unk76";
@@ -1687,6 +2005,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk76_offset { get; private set; }
+
             protected float Unk77_raw;
             public const string Unk77_displayName = "Unk77";
             public const int Unk77_sortIndex = 5400;
@@ -1701,6 +2022,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk77));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk77_offset { get; private set; }
 
             protected float Unk78_raw;
             public const string Unk78_displayName = "Unk78";
@@ -1717,6 +2041,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk78_offset { get; private set; }
+
             protected float Unk79_raw;
             public const string Unk79_displayName = "Unk79";
             public const int Unk79_sortIndex = 5500;
@@ -1731,6 +2058,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk79));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk79_offset { get; private set; }
 
             protected float Unk80_raw;
             public const string Unk80_displayName = "Unk80";
@@ -1747,6 +2077,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk80_offset { get; private set; }
+
             protected float Unk81_raw;
             public const string Unk81_displayName = "Unk81";
             public const int Unk81_sortIndex = 5600;
@@ -1761,6 +2094,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk81));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk81_offset { get; private set; }
 
             protected float Unk82_raw;
             public const string Unk82_displayName = "Unk82";
@@ -1777,6 +2113,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk82_offset { get; private set; }
+
             protected float Unk83_raw;
             public const string Unk83_displayName = "Unk83";
             public const int Unk83_sortIndex = 5700;
@@ -1791,6 +2130,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk83));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk83_offset { get; private set; }
 
             protected float Unk84_raw;
             public const string Unk84_displayName = "Unk84";
@@ -1807,6 +2149,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk84_offset { get; private set; }
+
             protected float Unk85_raw;
             public const string Unk85_displayName = "Unk85";
             public const int Unk85_sortIndex = 5800;
@@ -1821,6 +2166,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk85));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk85_offset { get; private set; }
 
             protected float Unk86_raw;
             public const string Unk86_displayName = "Unk86";
@@ -1837,6 +2185,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk86_offset { get; private set; }
+
             protected float Unk87_raw;
             public const string Unk87_displayName = "Unk87";
             public const int Unk87_sortIndex = 5900;
@@ -1851,6 +2202,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk87));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk87_offset { get; private set; }
 
             protected float Unk88_raw;
             public const string Unk88_displayName = "Unk88";
@@ -1867,6 +2221,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk88_offset { get; private set; }
+
             protected float Unk89_raw;
             public const string Unk89_displayName = "Unk89";
             public const int Unk89_sortIndex = 6000;
@@ -1881,6 +2238,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk89));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk89_offset { get; private set; }
 
             protected float Unk90_raw;
             public const string Unk90_displayName = "Unk90";
@@ -1897,6 +2257,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk90_offset { get; private set; }
+
             protected float Unk91_raw;
             public const string Unk91_displayName = "Unk91";
             public const int Unk91_sortIndex = 6100;
@@ -1911,6 +2274,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk91));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk91_offset { get; private set; }
 
             protected float Unk92_raw;
             public const string Unk92_displayName = "Unk92";
@@ -1927,6 +2293,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk92_offset { get; private set; }
+
             protected float Unk93_raw;
             public const string Unk93_displayName = "Unk93";
             public const int Unk93_sortIndex = 6200;
@@ -1941,6 +2310,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk93));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk93_offset { get; private set; }
 
             protected float Unk94_raw;
             public const string Unk94_displayName = "Unk94";
@@ -1957,6 +2329,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk94_offset { get; private set; }
+
             protected float Unk95_raw;
             public const string Unk95_displayName = "Unk95";
             public const int Unk95_sortIndex = 6300;
@@ -1971,6 +2346,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk95));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk95_offset { get; private set; }
 
             protected float Unk96_raw;
             public const string Unk96_displayName = "Unk96";
@@ -1987,6 +2365,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk96_offset { get; private set; }
+
             protected float Unk97_raw;
             public const string Unk97_displayName = "Unk97";
             public const int Unk97_sortIndex = 6400;
@@ -2001,6 +2382,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk97));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk97_offset { get; private set; }
 
             protected float Unk98_raw;
             public const string Unk98_displayName = "Unk98";
@@ -2017,6 +2401,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk98_offset { get; private set; }
+
             protected float Unk99_raw;
             public const string Unk99_displayName = "Unk99";
             public const int Unk99_sortIndex = 6500;
@@ -2031,6 +2418,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk99));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk99_offset { get; private set; }
 
             protected float Unk100_raw;
             public const string Unk100_displayName = "Unk100";
@@ -2047,6 +2437,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk100_offset { get; private set; }
+
             protected float Unk101_raw;
             public const string Unk101_displayName = "Unk101";
             public const int Unk101_sortIndex = 6600;
@@ -2061,6 +2454,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk101));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk101_offset { get; private set; }
 
             protected float Unk102_raw;
             public const string Unk102_displayName = "Unk102";
@@ -2077,6 +2473,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk102_offset { get; private set; }
+
             protected float Unk103_raw;
             public const string Unk103_displayName = "Unk103";
             public const int Unk103_sortIndex = 6700;
@@ -2091,6 +2490,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk103));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk103_offset { get; private set; }
 
             protected float Unk104_raw;
             public const string Unk104_displayName = "Unk104";
@@ -2107,6 +2509,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk104_offset { get; private set; }
+
             protected float Unk105_raw;
             public const string Unk105_displayName = "Unk105";
             public const int Unk105_sortIndex = 6800;
@@ -2121,6 +2526,9 @@ namespace MHW_Editor.Structs.PlData {
                     OnPropertyChanged(nameof(Unk105));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk105_offset { get; private set; }
 
             protected byte Deathcream_Fishing_rumble_starts_here__raw;
             public const string Deathcream_Fishing_rumble_starts_here__displayName = "Deathcream: Fishing rumble starts here.";
@@ -2137,6 +2545,9 @@ namespace MHW_Editor.Structs.PlData {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Deathcream_Fishing_rumble_starts_here__offset { get; private set; }
+
             public const int lastSortIndex = 6900;
 
             public static ObservableMhwStructCollection<Item_Params_1_> LoadData(BinaryReader reader) {
@@ -2151,142 +2562,279 @@ namespace MHW_Editor.Structs.PlData {
             public static Item_Params_1_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Item_Params_1_();
                 data.Index = i;
+                data.Powder_Radius_offset = reader.BaseStream.Position;
                 data.Powder_Radius_raw = reader.ReadSingle();
+                data.Potion_Power_offset = reader.BaseStream.Position;
                 data.Potion_Power_raw = reader.ReadUInt32();
+                data.Unk2_offset = reader.BaseStream.Position;
                 data.Unk2_raw = reader.ReadSingle();
+                data.Unk3_offset = reader.BaseStream.Position;
                 data.Unk3_raw = reader.ReadSingle();
+                data.Unk4_offset = reader.BaseStream.Position;
                 data.Unk4_raw = reader.ReadSingle();
+                data.Mega_Potion_Power_offset = reader.BaseStream.Position;
                 data.Mega_Potion_Power_raw = reader.ReadUInt32();
+                data.Unk5_offset = reader.BaseStream.Position;
                 data.Unk5_raw = reader.ReadSingle();
+                data.Unk6_offset = reader.BaseStream.Position;
                 data.Unk6_raw = reader.ReadSingle();
+                data.Unk7_offset = reader.BaseStream.Position;
                 data.Unk7_raw = reader.ReadSingle();
+                data.Nutrients_Power_offset = reader.BaseStream.Position;
                 data.Nutrients_Power_raw = reader.ReadByte();
+                data.Mega_Nutrients_Power_offset = reader.BaseStream.Position;
                 data.Mega_Nutrients_Power_raw = reader.ReadByte();
+                data.Unk9_offset = reader.BaseStream.Position;
                 data.Unk9_raw = reader.ReadByte();
+                data.Mega_Dash_Juice_Stamina_Power_offset = reader.BaseStream.Position;
                 data.Mega_Dash_Juice_Stamina_Power_raw = reader.ReadSingle();
+                data.Dash_Juice_Stamina_Power_offset = reader.BaseStream.Position;
                 data.Dash_Juice_Stamina_Power_raw = reader.ReadSingle();
+                data.Both_Dash_Juice_Duration_offset = reader.BaseStream.Position;
                 data.Both_Dash_Juice_Duration_raw = reader.ReadUInt16();
+                data.Both_Dash_Juice_Power_offset = reader.BaseStream.Position;
                 data.Both_Dash_Juice_Power_raw = reader.ReadByte();
+                data.Immunizer_Power_offset = reader.BaseStream.Position;
                 data.Immunizer_Power_raw = reader.ReadSingle();
+                data.Immunizer_Duration_offset = reader.BaseStream.Position;
                 data.Immunizer_Duration_raw = reader.ReadUInt16();
+                data.Astera_Jerky_Power_offset = reader.BaseStream.Position;
                 data.Astera_Jerky_Power_raw = reader.ReadSingle();
+                data.Astera_Jerky_Duration_offset = reader.BaseStream.Position;
                 data.Astera_Jerky_Duration_raw = reader.ReadUInt16();
+                data.Herbal_Medicine_Power_offset = reader.BaseStream.Position;
                 data.Herbal_Medicine_Power_raw = reader.ReadUInt16();
+                data.Sushifish_Scale_Power_offset = reader.BaseStream.Position;
                 data.Sushifish_Scale_Power_raw = reader.ReadUInt32();
+                data.Great_Sushifish_Scale_Power_offset = reader.BaseStream.Position;
                 data.Great_Sushifish_Scale_Power_raw = reader.ReadUInt32();
+                data.Great_Sushifish_Scale_Duration_offset = reader.BaseStream.Position;
                 data.Great_Sushifish_Scale_Duration_raw = reader.ReadSingle();
+                data.Cool_Drink_Duration_offset = reader.BaseStream.Position;
                 data.Cool_Drink_Duration_raw = reader.ReadUInt16();
+                data.Hot_Drink_Duration_offset = reader.BaseStream.Position;
                 data.Hot_Drink_Duration_raw = reader.ReadUInt16();
+                data.Might_Seed_Duration_offset = reader.BaseStream.Position;
                 data.Might_Seed_Duration_raw = reader.ReadUInt16();
+                data.Might_Seed_Power_offset = reader.BaseStream.Position;
                 data.Might_Seed_Power_raw = reader.ReadUInt16();
+                data.Might_Pill_Duration_offset = reader.BaseStream.Position;
                 data.Might_Pill_Duration_raw = reader.ReadUInt16();
+                data.Might_Pill_Power_offset = reader.BaseStream.Position;
                 data.Might_Pill_Power_raw = reader.ReadUInt16();
+                data.Adamant_Seed_Duration_offset = reader.BaseStream.Position;
                 data.Adamant_Seed_Duration_raw = reader.ReadUInt16();
+                data.Adamant_Seed_Power_offset = reader.BaseStream.Position;
                 data.Adamant_Seed_Power_raw = reader.ReadUInt16();
+                data.Adamant_Pill_Duration_offset = reader.BaseStream.Position;
                 data.Adamant_Pill_Duration_raw = reader.ReadUInt16();
+                data.Adamant_Pill_Power_offset = reader.BaseStream.Position;
                 data.Adamant_Pill_Power_raw = reader.ReadSingle();
+                data.Demondrug_Power_offset = reader.BaseStream.Position;
                 data.Demondrug_Power_raw = reader.ReadByte();
+                data.Mega_Demondrug_Power_offset = reader.BaseStream.Position;
                 data.Mega_Demondrug_Power_raw = reader.ReadByte();
+                data.Armorskin_Power_offset = reader.BaseStream.Position;
                 data.Armorskin_Power_raw = reader.ReadByte();
+                data.Mega_Armorskin_Power_offset = reader.BaseStream.Position;
                 data.Mega_Armorskin_Power_raw = reader.ReadByte();
+                data.Unk16_offset = reader.BaseStream.Position;
                 data.Unk16_raw = reader.ReadUInt16();
+                data.Lifepowder_Power_offset = reader.BaseStream.Position;
                 data.Lifepowder_Power_raw = reader.ReadUInt16();
+                data.Dust_of_Life_Power_offset = reader.BaseStream.Position;
                 data.Dust_of_Life_Power_raw = reader.ReadUInt16();
+                data.Herbal_Powder_Power_offset = reader.BaseStream.Position;
                 data.Herbal_Powder_Power_raw = reader.ReadUInt16();
+                data.Demon_Powder_Power_offset = reader.BaseStream.Position;
                 data.Demon_Powder_Power_raw = reader.ReadUInt16();
+                data.Demon_Powder_Duration_offset = reader.BaseStream.Position;
                 data.Demon_Powder_Duration_raw = reader.ReadUInt16();
+                data.Hardshell_Powder_Power_offset = reader.BaseStream.Position;
                 data.Hardshell_Powder_Power_raw = reader.ReadUInt16();
+                data.Hardshell_Powder_Duration_offset = reader.BaseStream.Position;
                 data.Hardshell_Powder_Duration_raw = reader.ReadUInt16();
+                data.Demon_Ammo_Power_offset = reader.BaseStream.Position;
                 data.Demon_Ammo_Power_raw = reader.ReadUInt16();
+                data.Demon_Ammo_Duration_offset = reader.BaseStream.Position;
                 data.Demon_Ammo_Duration_raw = reader.ReadUInt16();
+                data.Armor_Ammo_Power_offset = reader.BaseStream.Position;
                 data.Armor_Ammo_Power_raw = reader.ReadUInt16();
+                data.Armor_Ammo_Duration_offset = reader.BaseStream.Position;
                 data.Armor_Ammo_Duration_raw = reader.ReadUInt16();
+                data.Ration_Power_offset = reader.BaseStream.Position;
                 data.Ration_Power_raw = reader.ReadUInt16();
+                data.Well_Done_Steak_Multiplier_offset = reader.BaseStream.Position;
                 data.Well_Done_Steak_Multiplier_raw = reader.ReadUInt32();
+                data.Well_Done_Steak_Stamina_Bonus_offset = reader.BaseStream.Position;
                 data.Well_Done_Steak_Stamina_Bonus_raw = reader.ReadSingle();
+                data.Unk23_offset = reader.BaseStream.Position;
                 data.Unk23_raw = reader.ReadSingle();
+                data.Unk24_offset = reader.BaseStream.Position;
                 data.Unk24_raw = reader.ReadSingle();
+                data.Burnt_Meat_Stamina_Recovery_offset = reader.BaseStream.Position;
                 data.Burnt_Meat_Stamina_Recovery_raw = reader.ReadUInt16();
+                data.Unk26_offset = reader.BaseStream.Position;
                 data.Unk26_raw = reader.ReadInt16();
+                data.Unk27_offset = reader.BaseStream.Position;
                 data.Unk27_raw = reader.ReadByte();
+                data.Unk28_offset = reader.BaseStream.Position;
                 data.Unk28_raw = reader.ReadSingle();
+                data.Unk29_offset = reader.BaseStream.Position;
                 data.Unk29_raw = reader.ReadSingle();
+                data.Unk30_offset = reader.BaseStream.Position;
                 data.Unk30_raw = reader.ReadSingle();
+                data.Unk31_offset = reader.BaseStream.Position;
                 data.Unk31_raw = reader.ReadSingle();
+                data.Unk32_offset = reader.BaseStream.Position;
                 data.Unk32_raw = reader.ReadSingle();
+                data.Unk33_offset = reader.BaseStream.Position;
                 data.Unk33_raw = reader.ReadSingle();
+                data.Unk34_offset = reader.BaseStream.Position;
                 data.Unk34_raw = reader.ReadSingle();
+                data.Unk35_offset = reader.BaseStream.Position;
                 data.Unk35_raw = reader.ReadSingle();
+                data.Unk36_offset = reader.BaseStream.Position;
                 data.Unk36_raw = reader.ReadSingle();
+                data.Unk37_offset = reader.BaseStream.Position;
                 data.Unk37_raw = reader.ReadSingle();
+                data.Unk38_offset = reader.BaseStream.Position;
                 data.Unk38_raw = reader.ReadSingle();
+                data.Whetstone_Sharpness_Restored_offset = reader.BaseStream.Position;
                 data.Whetstone_Sharpness_Restored_raw = reader.ReadUInt32();
+                data.Whetstone_Cycles_offset = reader.BaseStream.Position;
                 data.Whetstone_Cycles_raw = reader.ReadUInt32();
+                data.Whetfish_Scale_Sharpness_Restored_offset = reader.BaseStream.Position;
                 data.Whetfish_Scale_Sharpness_Restored_raw = reader.ReadUInt32();
+                data.Whetfish_Scale_Cycles_offset = reader.BaseStream.Position;
                 data.Whetfish_Scale_Cycles_raw = reader.ReadByte();
+                data.Whetfish_Scale_Plus_Cycles_offset = reader.BaseStream.Position;
                 data.Whetfish_Scale_Plus_Cycles_raw = reader.ReadByte();
+                data.Whetfish_Scale_Consume__offset = reader.BaseStream.Position;
                 data.Whetfish_Scale_Consume__raw = reader.ReadByte();
+                data.Powertalon_Power_offset = reader.BaseStream.Position;
                 data.Powertalon_Power_raw = reader.ReadByte();
+                data.Powercharm_Power_offset = reader.BaseStream.Position;
                 data.Powercharm_Power_raw = reader.ReadByte();
+                data.Armortalon_Power_offset = reader.BaseStream.Position;
                 data.Armortalon_Power_raw = reader.ReadByte();
+                data.Armorcharm_Power_offset = reader.BaseStream.Position;
                 data.Armorcharm_Power_raw = reader.ReadByte();
+                data.Unk49_offset = reader.BaseStream.Position;
                 data.Unk49_raw = reader.ReadByte();
+                data.Unk50_offset = reader.BaseStream.Position;
                 data.Unk50_raw = reader.ReadSingle();
+                data.Unk51_offset = reader.BaseStream.Position;
                 data.Unk51_raw = reader.ReadSingle();
+                data.Unk52_offset = reader.BaseStream.Position;
                 data.Unk52_raw = reader.ReadSingle();
+                data.Unk53_offset = reader.BaseStream.Position;
                 data.Unk53_raw = reader.ReadSingle();
+                data.Unk54_offset = reader.BaseStream.Position;
                 data.Unk54_raw = reader.ReadSingle();
+                data.Unk55_offset = reader.BaseStream.Position;
                 data.Unk55_raw = reader.ReadSingle();
+                data.Unk56_offset = reader.BaseStream.Position;
                 data.Unk56_raw = reader.ReadSingle();
+                data.Unk57_offset = reader.BaseStream.Position;
                 data.Unk57_raw = reader.ReadSingle();
+                data.Unk58_offset = reader.BaseStream.Position;
                 data.Unk58_raw = reader.ReadSingle();
+                data.Unk59_offset = reader.BaseStream.Position;
                 data.Unk59_raw = reader.ReadSingle();
+                data.Unk60_offset = reader.BaseStream.Position;
                 data.Unk60_raw = reader.ReadSingle();
+                data.Unk61_offset = reader.BaseStream.Position;
                 data.Unk61_raw = reader.ReadSingle();
+                data.Unk62_offset = reader.BaseStream.Position;
                 data.Unk62_raw = reader.ReadSingle();
+                data.Unk63_offset = reader.BaseStream.Position;
                 data.Unk63_raw = reader.ReadSingle();
+                data.Unk64_offset = reader.BaseStream.Position;
                 data.Unk64_raw = reader.ReadSingle();
+                data.Unk65_offset = reader.BaseStream.Position;
                 data.Unk65_raw = reader.ReadSingle();
+                data.Unk66_offset = reader.BaseStream.Position;
                 data.Unk66_raw = reader.ReadSingle();
+                data.Unk67_offset = reader.BaseStream.Position;
                 data.Unk67_raw = reader.ReadSingle();
+                data.Unk68_offset = reader.BaseStream.Position;
                 data.Unk68_raw = reader.ReadSingle();
+                data.Unk69_offset = reader.BaseStream.Position;
                 data.Unk69_raw = reader.ReadSingle();
+                data.Unk70_offset = reader.BaseStream.Position;
                 data.Unk70_raw = reader.ReadSingle();
+                data.Unk71_offset = reader.BaseStream.Position;
                 data.Unk71_raw = reader.ReadSingle();
+                data.Unk72_offset = reader.BaseStream.Position;
                 data.Unk72_raw = reader.ReadSingle();
+                data.Unk73_offset = reader.BaseStream.Position;
                 data.Unk73_raw = reader.ReadSingle();
+                data.Unk74_offset = reader.BaseStream.Position;
                 data.Unk74_raw = reader.ReadSingle();
+                data.Unk75_offset = reader.BaseStream.Position;
                 data.Unk75_raw = reader.ReadSingle();
+                data.Unk76_offset = reader.BaseStream.Position;
                 data.Unk76_raw = reader.ReadSingle();
+                data.Unk77_offset = reader.BaseStream.Position;
                 data.Unk77_raw = reader.ReadSingle();
+                data.Unk78_offset = reader.BaseStream.Position;
                 data.Unk78_raw = reader.ReadSingle();
+                data.Unk79_offset = reader.BaseStream.Position;
                 data.Unk79_raw = reader.ReadSingle();
+                data.Unk80_offset = reader.BaseStream.Position;
                 data.Unk80_raw = reader.ReadSingle();
+                data.Unk81_offset = reader.BaseStream.Position;
                 data.Unk81_raw = reader.ReadSingle();
+                data.Unk82_offset = reader.BaseStream.Position;
                 data.Unk82_raw = reader.ReadSingle();
+                data.Unk83_offset = reader.BaseStream.Position;
                 data.Unk83_raw = reader.ReadSingle();
+                data.Unk84_offset = reader.BaseStream.Position;
                 data.Unk84_raw = reader.ReadSingle();
+                data.Unk85_offset = reader.BaseStream.Position;
                 data.Unk85_raw = reader.ReadSingle();
+                data.Unk86_offset = reader.BaseStream.Position;
                 data.Unk86_raw = reader.ReadSingle();
+                data.Unk87_offset = reader.BaseStream.Position;
                 data.Unk87_raw = reader.ReadSingle();
+                data.Unk88_offset = reader.BaseStream.Position;
                 data.Unk88_raw = reader.ReadSingle();
+                data.Unk89_offset = reader.BaseStream.Position;
                 data.Unk89_raw = reader.ReadSingle();
+                data.Unk90_offset = reader.BaseStream.Position;
                 data.Unk90_raw = reader.ReadSingle();
+                data.Unk91_offset = reader.BaseStream.Position;
                 data.Unk91_raw = reader.ReadSingle();
+                data.Unk92_offset = reader.BaseStream.Position;
                 data.Unk92_raw = reader.ReadSingle();
+                data.Unk93_offset = reader.BaseStream.Position;
                 data.Unk93_raw = reader.ReadSingle();
+                data.Unk94_offset = reader.BaseStream.Position;
                 data.Unk94_raw = reader.ReadSingle();
+                data.Unk95_offset = reader.BaseStream.Position;
                 data.Unk95_raw = reader.ReadSingle();
+                data.Unk96_offset = reader.BaseStream.Position;
                 data.Unk96_raw = reader.ReadSingle();
+                data.Unk97_offset = reader.BaseStream.Position;
                 data.Unk97_raw = reader.ReadSingle();
+                data.Unk98_offset = reader.BaseStream.Position;
                 data.Unk98_raw = reader.ReadSingle();
+                data.Unk99_offset = reader.BaseStream.Position;
                 data.Unk99_raw = reader.ReadSingle();
+                data.Unk100_offset = reader.BaseStream.Position;
                 data.Unk100_raw = reader.ReadSingle();
+                data.Unk101_offset = reader.BaseStream.Position;
                 data.Unk101_raw = reader.ReadSingle();
+                data.Unk102_offset = reader.BaseStream.Position;
                 data.Unk102_raw = reader.ReadSingle();
+                data.Unk103_offset = reader.BaseStream.Position;
                 data.Unk103_raw = reader.ReadSingle();
+                data.Unk104_offset = reader.BaseStream.Position;
                 data.Unk104_raw = reader.ReadSingle();
+                data.Unk105_offset = reader.BaseStream.Position;
                 data.Unk105_raw = reader.ReadSingle();
+                data.Deathcream_Fishing_rumble_starts_here__offset = reader.BaseStream.Position;
                 data.Deathcream_Fishing_rumble_starts_here__raw = reader.ReadByte();
                 return data;
             }
@@ -2433,143 +2981,143 @@ namespace MHW_Editor.Structs.PlData {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Powder Radius", "Powder_Radius"),
-                    new MultiStructItemCustomView(this, "Potion Power", "Potion_Power"),
-                    new MultiStructItemCustomView(this, "Unk2", "Unk2"),
-                    new MultiStructItemCustomView(this, "Unk3", "Unk3"),
-                    new MultiStructItemCustomView(this, "Unk4", "Unk4"),
-                    new MultiStructItemCustomView(this, "Mega Potion Power", "Mega_Potion_Power"),
-                    new MultiStructItemCustomView(this, "Unk5", "Unk5"),
-                    new MultiStructItemCustomView(this, "Unk6", "Unk6"),
-                    new MultiStructItemCustomView(this, "Unk7", "Unk7"),
-                    new MultiStructItemCustomView(this, "Nutrients Power", "Nutrients_Power"),
-                    new MultiStructItemCustomView(this, "Mega Nutrients Power", "Mega_Nutrients_Power"),
-                    new MultiStructItemCustomView(this, "Unk9", "Unk9"),
-                    new MultiStructItemCustomView(this, "Mega Dash Juice Stamina Power", "Mega_Dash_Juice_Stamina_Power"),
-                    new MultiStructItemCustomView(this, "Dash Juice Stamina Power", "Dash_Juice_Stamina_Power"),
-                    new MultiStructItemCustomView(this, "Both Dash Juice Duration", "Both_Dash_Juice_Duration"),
-                    new MultiStructItemCustomView(this, "Both Dash Juice Power", "Both_Dash_Juice_Power"),
-                    new MultiStructItemCustomView(this, "Immunizer Power", "Immunizer_Power"),
-                    new MultiStructItemCustomView(this, "Immunizer Duration", "Immunizer_Duration"),
-                    new MultiStructItemCustomView(this, "Astera Jerky Power", "Astera_Jerky_Power"),
-                    new MultiStructItemCustomView(this, "Astera Jerky Duration", "Astera_Jerky_Duration"),
-                    new MultiStructItemCustomView(this, "Herbal Medicine Power", "Herbal_Medicine_Power"),
-                    new MultiStructItemCustomView(this, "Sushifish Scale Power", "Sushifish_Scale_Power"),
-                    new MultiStructItemCustomView(this, "Great Sushifish Scale Power", "Great_Sushifish_Scale_Power"),
-                    new MultiStructItemCustomView(this, "Great Sushifish Scale Duration", "Great_Sushifish_Scale_Duration"),
-                    new MultiStructItemCustomView(this, "Cool Drink Duration", "Cool_Drink_Duration"),
-                    new MultiStructItemCustomView(this, "Hot Drink Duration", "Hot_Drink_Duration"),
-                    new MultiStructItemCustomView(this, "Might Seed Duration", "Might_Seed_Duration"),
-                    new MultiStructItemCustomView(this, "Might Seed Power", "Might_Seed_Power"),
-                    new MultiStructItemCustomView(this, "Might Pill Duration", "Might_Pill_Duration"),
-                    new MultiStructItemCustomView(this, "Might Pill Power", "Might_Pill_Power"),
-                    new MultiStructItemCustomView(this, "Adamant Seed Duration", "Adamant_Seed_Duration"),
-                    new MultiStructItemCustomView(this, "Adamant Seed Power", "Adamant_Seed_Power"),
-                    new MultiStructItemCustomView(this, "Adamant Pill Duration", "Adamant_Pill_Duration"),
-                    new MultiStructItemCustomView(this, "Adamant Pill Power", "Adamant_Pill_Power"),
-                    new MultiStructItemCustomView(this, "Demondrug Power", "Demondrug_Power"),
-                    new MultiStructItemCustomView(this, "Mega Demondrug Power", "Mega_Demondrug_Power"),
-                    new MultiStructItemCustomView(this, "Armorskin Power", "Armorskin_Power"),
-                    new MultiStructItemCustomView(this, "Mega Armorskin Power", "Mega_Armorskin_Power"),
-                    new MultiStructItemCustomView(this, "Unk16", "Unk16"),
-                    new MultiStructItemCustomView(this, "Lifepowder Power", "Lifepowder_Power"),
-                    new MultiStructItemCustomView(this, "Dust of Life Power", "Dust_of_Life_Power"),
-                    new MultiStructItemCustomView(this, "Herbal Powder Power", "Herbal_Powder_Power"),
-                    new MultiStructItemCustomView(this, "Demon Powder Power", "Demon_Powder_Power"),
-                    new MultiStructItemCustomView(this, "Demon Powder Duration", "Demon_Powder_Duration"),
-                    new MultiStructItemCustomView(this, "Hardshell Powder Power", "Hardshell_Powder_Power"),
-                    new MultiStructItemCustomView(this, "Hardshell Powder Duration", "Hardshell_Powder_Duration"),
-                    new MultiStructItemCustomView(this, "Demon Ammo Power", "Demon_Ammo_Power"),
-                    new MultiStructItemCustomView(this, "Demon Ammo Duration", "Demon_Ammo_Duration"),
-                    new MultiStructItemCustomView(this, "Armor Ammo Power", "Armor_Ammo_Power"),
-                    new MultiStructItemCustomView(this, "Armor Ammo Duration", "Armor_Ammo_Duration"),
-                    new MultiStructItemCustomView(this, "Ration Power", "Ration_Power"),
-                    new MultiStructItemCustomView(this, "Well Done Steak Multiplier", "Well_Done_Steak_Multiplier"),
-                    new MultiStructItemCustomView(this, "Well Done Steak Stamina Bonus", "Well_Done_Steak_Stamina_Bonus"),
-                    new MultiStructItemCustomView(this, "Unk23", "Unk23"),
-                    new MultiStructItemCustomView(this, "Unk24", "Unk24"),
-                    new MultiStructItemCustomView(this, "Burnt Meat Stamina Recovery", "Burnt_Meat_Stamina_Recovery"),
-                    new MultiStructItemCustomView(this, "Unk26", "Unk26"),
-                    new MultiStructItemCustomView(this, "Unk27", "Unk27"),
-                    new MultiStructItemCustomView(this, "Unk28", "Unk28"),
-                    new MultiStructItemCustomView(this, "Unk29", "Unk29"),
-                    new MultiStructItemCustomView(this, "Unk30", "Unk30"),
-                    new MultiStructItemCustomView(this, "Unk31", "Unk31"),
-                    new MultiStructItemCustomView(this, "Unk32", "Unk32"),
-                    new MultiStructItemCustomView(this, "Unk33", "Unk33"),
-                    new MultiStructItemCustomView(this, "Unk34", "Unk34"),
-                    new MultiStructItemCustomView(this, "Unk35", "Unk35"),
-                    new MultiStructItemCustomView(this, "Unk36", "Unk36"),
-                    new MultiStructItemCustomView(this, "Unk37", "Unk37"),
-                    new MultiStructItemCustomView(this, "Unk38", "Unk38"),
-                    new MultiStructItemCustomView(this, "Whetstone Sharpness Restored", "Whetstone_Sharpness_Restored"),
-                    new MultiStructItemCustomView(this, "Whetstone Cycles", "Whetstone_Cycles"),
-                    new MultiStructItemCustomView(this, "Whetfish Scale Sharpness Restored", "Whetfish_Scale_Sharpness_Restored"),
-                    new MultiStructItemCustomView(this, "Whetfish Scale Cycles", "Whetfish_Scale_Cycles"),
-                    new MultiStructItemCustomView(this, "Whetfish Scale Plus Cycles", "Whetfish_Scale_Plus_Cycles"),
-                    new MultiStructItemCustomView(this, "Whetfish Scale Consume %", "Whetfish_Scale_Consume_"),
-                    new MultiStructItemCustomView(this, "Powertalon Power", "Powertalon_Power"),
-                    new MultiStructItemCustomView(this, "Powercharm Power", "Powercharm_Power"),
-                    new MultiStructItemCustomView(this, "Armortalon Power", "Armortalon_Power"),
-                    new MultiStructItemCustomView(this, "Armorcharm Power", "Armorcharm_Power"),
-                    new MultiStructItemCustomView(this, "Unk49", "Unk49"),
-                    new MultiStructItemCustomView(this, "Unk50", "Unk50"),
-                    new MultiStructItemCustomView(this, "Unk51", "Unk51"),
-                    new MultiStructItemCustomView(this, "Unk52", "Unk52"),
-                    new MultiStructItemCustomView(this, "Unk53", "Unk53"),
-                    new MultiStructItemCustomView(this, "Unk54", "Unk54"),
-                    new MultiStructItemCustomView(this, "Unk55", "Unk55"),
-                    new MultiStructItemCustomView(this, "Unk56", "Unk56"),
-                    new MultiStructItemCustomView(this, "Unk57", "Unk57"),
-                    new MultiStructItemCustomView(this, "Unk58", "Unk58"),
-                    new MultiStructItemCustomView(this, "Unk59", "Unk59"),
-                    new MultiStructItemCustomView(this, "Unk60", "Unk60"),
-                    new MultiStructItemCustomView(this, "Unk61", "Unk61"),
-                    new MultiStructItemCustomView(this, "Unk62", "Unk62"),
-                    new MultiStructItemCustomView(this, "Unk63", "Unk63"),
-                    new MultiStructItemCustomView(this, "Unk64", "Unk64"),
-                    new MultiStructItemCustomView(this, "Unk65", "Unk65"),
-                    new MultiStructItemCustomView(this, "Unk66", "Unk66"),
-                    new MultiStructItemCustomView(this, "Unk67", "Unk67"),
-                    new MultiStructItemCustomView(this, "Unk68", "Unk68"),
-                    new MultiStructItemCustomView(this, "Unk69", "Unk69"),
-                    new MultiStructItemCustomView(this, "Unk70", "Unk70"),
-                    new MultiStructItemCustomView(this, "Unk71", "Unk71"),
-                    new MultiStructItemCustomView(this, "Unk72", "Unk72"),
-                    new MultiStructItemCustomView(this, "Unk73", "Unk73"),
-                    new MultiStructItemCustomView(this, "Unk74", "Unk74"),
-                    new MultiStructItemCustomView(this, "Unk75", "Unk75"),
-                    new MultiStructItemCustomView(this, "Unk76", "Unk76"),
-                    new MultiStructItemCustomView(this, "Unk77", "Unk77"),
-                    new MultiStructItemCustomView(this, "Unk78", "Unk78"),
-                    new MultiStructItemCustomView(this, "Unk79", "Unk79"),
-                    new MultiStructItemCustomView(this, "Unk80", "Unk80"),
-                    new MultiStructItemCustomView(this, "Unk81", "Unk81"),
-                    new MultiStructItemCustomView(this, "Unk82", "Unk82"),
-                    new MultiStructItemCustomView(this, "Unk83", "Unk83"),
-                    new MultiStructItemCustomView(this, "Unk84", "Unk84"),
-                    new MultiStructItemCustomView(this, "Unk85", "Unk85"),
-                    new MultiStructItemCustomView(this, "Unk86", "Unk86"),
-                    new MultiStructItemCustomView(this, "Unk87", "Unk87"),
-                    new MultiStructItemCustomView(this, "Unk88", "Unk88"),
-                    new MultiStructItemCustomView(this, "Unk89", "Unk89"),
-                    new MultiStructItemCustomView(this, "Unk90", "Unk90"),
-                    new MultiStructItemCustomView(this, "Unk91", "Unk91"),
-                    new MultiStructItemCustomView(this, "Unk92", "Unk92"),
-                    new MultiStructItemCustomView(this, "Unk93", "Unk93"),
-                    new MultiStructItemCustomView(this, "Unk94", "Unk94"),
-                    new MultiStructItemCustomView(this, "Unk95", "Unk95"),
-                    new MultiStructItemCustomView(this, "Unk96", "Unk96"),
-                    new MultiStructItemCustomView(this, "Unk97", "Unk97"),
-                    new MultiStructItemCustomView(this, "Unk98", "Unk98"),
-                    new MultiStructItemCustomView(this, "Unk99", "Unk99"),
-                    new MultiStructItemCustomView(this, "Unk100", "Unk100"),
-                    new MultiStructItemCustomView(this, "Unk101", "Unk101"),
-                    new MultiStructItemCustomView(this, "Unk102", "Unk102"),
-                    new MultiStructItemCustomView(this, "Unk103", "Unk103"),
-                    new MultiStructItemCustomView(this, "Unk104", "Unk104"),
-                    new MultiStructItemCustomView(this, "Unk105", "Unk105"),
-                    new MultiStructItemCustomView(this, "Deathcream: Fishing rumble starts here.", "Deathcream_Fishing_rumble_starts_here_"),
+                    new MultiStructItemCustomView(this, "Powder Radius", "Powder_Radius", "Powder_Radius_offset"),
+                    new MultiStructItemCustomView(this, "Potion Power", "Potion_Power", "Potion_Power_offset"),
+                    new MultiStructItemCustomView(this, "Unk2", "Unk2", "Unk2_offset"),
+                    new MultiStructItemCustomView(this, "Unk3", "Unk3", "Unk3_offset"),
+                    new MultiStructItemCustomView(this, "Unk4", "Unk4", "Unk4_offset"),
+                    new MultiStructItemCustomView(this, "Mega Potion Power", "Mega_Potion_Power", "Mega_Potion_Power_offset"),
+                    new MultiStructItemCustomView(this, "Unk5", "Unk5", "Unk5_offset"),
+                    new MultiStructItemCustomView(this, "Unk6", "Unk6", "Unk6_offset"),
+                    new MultiStructItemCustomView(this, "Unk7", "Unk7", "Unk7_offset"),
+                    new MultiStructItemCustomView(this, "Nutrients Power", "Nutrients_Power", "Nutrients_Power_offset"),
+                    new MultiStructItemCustomView(this, "Mega Nutrients Power", "Mega_Nutrients_Power", "Mega_Nutrients_Power_offset"),
+                    new MultiStructItemCustomView(this, "Unk9", "Unk9", "Unk9_offset"),
+                    new MultiStructItemCustomView(this, "Mega Dash Juice Stamina Power", "Mega_Dash_Juice_Stamina_Power", "Mega_Dash_Juice_Stamina_Power_offset"),
+                    new MultiStructItemCustomView(this, "Dash Juice Stamina Power", "Dash_Juice_Stamina_Power", "Dash_Juice_Stamina_Power_offset"),
+                    new MultiStructItemCustomView(this, "Both Dash Juice Duration", "Both_Dash_Juice_Duration", "Both_Dash_Juice_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Both Dash Juice Power", "Both_Dash_Juice_Power", "Both_Dash_Juice_Power_offset"),
+                    new MultiStructItemCustomView(this, "Immunizer Power", "Immunizer_Power", "Immunizer_Power_offset"),
+                    new MultiStructItemCustomView(this, "Immunizer Duration", "Immunizer_Duration", "Immunizer_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Astera Jerky Power", "Astera_Jerky_Power", "Astera_Jerky_Power_offset"),
+                    new MultiStructItemCustomView(this, "Astera Jerky Duration", "Astera_Jerky_Duration", "Astera_Jerky_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Herbal Medicine Power", "Herbal_Medicine_Power", "Herbal_Medicine_Power_offset"),
+                    new MultiStructItemCustomView(this, "Sushifish Scale Power", "Sushifish_Scale_Power", "Sushifish_Scale_Power_offset"),
+                    new MultiStructItemCustomView(this, "Great Sushifish Scale Power", "Great_Sushifish_Scale_Power", "Great_Sushifish_Scale_Power_offset"),
+                    new MultiStructItemCustomView(this, "Great Sushifish Scale Duration", "Great_Sushifish_Scale_Duration", "Great_Sushifish_Scale_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Cool Drink Duration", "Cool_Drink_Duration", "Cool_Drink_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Hot Drink Duration", "Hot_Drink_Duration", "Hot_Drink_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Might Seed Duration", "Might_Seed_Duration", "Might_Seed_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Might Seed Power", "Might_Seed_Power", "Might_Seed_Power_offset"),
+                    new MultiStructItemCustomView(this, "Might Pill Duration", "Might_Pill_Duration", "Might_Pill_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Might Pill Power", "Might_Pill_Power", "Might_Pill_Power_offset"),
+                    new MultiStructItemCustomView(this, "Adamant Seed Duration", "Adamant_Seed_Duration", "Adamant_Seed_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Adamant Seed Power", "Adamant_Seed_Power", "Adamant_Seed_Power_offset"),
+                    new MultiStructItemCustomView(this, "Adamant Pill Duration", "Adamant_Pill_Duration", "Adamant_Pill_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Adamant Pill Power", "Adamant_Pill_Power", "Adamant_Pill_Power_offset"),
+                    new MultiStructItemCustomView(this, "Demondrug Power", "Demondrug_Power", "Demondrug_Power_offset"),
+                    new MultiStructItemCustomView(this, "Mega Demondrug Power", "Mega_Demondrug_Power", "Mega_Demondrug_Power_offset"),
+                    new MultiStructItemCustomView(this, "Armorskin Power", "Armorskin_Power", "Armorskin_Power_offset"),
+                    new MultiStructItemCustomView(this, "Mega Armorskin Power", "Mega_Armorskin_Power", "Mega_Armorskin_Power_offset"),
+                    new MultiStructItemCustomView(this, "Unk16", "Unk16", "Unk16_offset"),
+                    new MultiStructItemCustomView(this, "Lifepowder Power", "Lifepowder_Power", "Lifepowder_Power_offset"),
+                    new MultiStructItemCustomView(this, "Dust of Life Power", "Dust_of_Life_Power", "Dust_of_Life_Power_offset"),
+                    new MultiStructItemCustomView(this, "Herbal Powder Power", "Herbal_Powder_Power", "Herbal_Powder_Power_offset"),
+                    new MultiStructItemCustomView(this, "Demon Powder Power", "Demon_Powder_Power", "Demon_Powder_Power_offset"),
+                    new MultiStructItemCustomView(this, "Demon Powder Duration", "Demon_Powder_Duration", "Demon_Powder_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Hardshell Powder Power", "Hardshell_Powder_Power", "Hardshell_Powder_Power_offset"),
+                    new MultiStructItemCustomView(this, "Hardshell Powder Duration", "Hardshell_Powder_Duration", "Hardshell_Powder_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Demon Ammo Power", "Demon_Ammo_Power", "Demon_Ammo_Power_offset"),
+                    new MultiStructItemCustomView(this, "Demon Ammo Duration", "Demon_Ammo_Duration", "Demon_Ammo_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Armor Ammo Power", "Armor_Ammo_Power", "Armor_Ammo_Power_offset"),
+                    new MultiStructItemCustomView(this, "Armor Ammo Duration", "Armor_Ammo_Duration", "Armor_Ammo_Duration_offset"),
+                    new MultiStructItemCustomView(this, "Ration Power", "Ration_Power", "Ration_Power_offset"),
+                    new MultiStructItemCustomView(this, "Well Done Steak Multiplier", "Well_Done_Steak_Multiplier", "Well_Done_Steak_Multiplier_offset"),
+                    new MultiStructItemCustomView(this, "Well Done Steak Stamina Bonus", "Well_Done_Steak_Stamina_Bonus", "Well_Done_Steak_Stamina_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Unk23", "Unk23", "Unk23_offset"),
+                    new MultiStructItemCustomView(this, "Unk24", "Unk24", "Unk24_offset"),
+                    new MultiStructItemCustomView(this, "Burnt Meat Stamina Recovery", "Burnt_Meat_Stamina_Recovery", "Burnt_Meat_Stamina_Recovery_offset"),
+                    new MultiStructItemCustomView(this, "Unk26", "Unk26", "Unk26_offset"),
+                    new MultiStructItemCustomView(this, "Unk27", "Unk27", "Unk27_offset"),
+                    new MultiStructItemCustomView(this, "Unk28", "Unk28", "Unk28_offset"),
+                    new MultiStructItemCustomView(this, "Unk29", "Unk29", "Unk29_offset"),
+                    new MultiStructItemCustomView(this, "Unk30", "Unk30", "Unk30_offset"),
+                    new MultiStructItemCustomView(this, "Unk31", "Unk31", "Unk31_offset"),
+                    new MultiStructItemCustomView(this, "Unk32", "Unk32", "Unk32_offset"),
+                    new MultiStructItemCustomView(this, "Unk33", "Unk33", "Unk33_offset"),
+                    new MultiStructItemCustomView(this, "Unk34", "Unk34", "Unk34_offset"),
+                    new MultiStructItemCustomView(this, "Unk35", "Unk35", "Unk35_offset"),
+                    new MultiStructItemCustomView(this, "Unk36", "Unk36", "Unk36_offset"),
+                    new MultiStructItemCustomView(this, "Unk37", "Unk37", "Unk37_offset"),
+                    new MultiStructItemCustomView(this, "Unk38", "Unk38", "Unk38_offset"),
+                    new MultiStructItemCustomView(this, "Whetstone Sharpness Restored", "Whetstone_Sharpness_Restored", "Whetstone_Sharpness_Restored_offset"),
+                    new MultiStructItemCustomView(this, "Whetstone Cycles", "Whetstone_Cycles", "Whetstone_Cycles_offset"),
+                    new MultiStructItemCustomView(this, "Whetfish Scale Sharpness Restored", "Whetfish_Scale_Sharpness_Restored", "Whetfish_Scale_Sharpness_Restored_offset"),
+                    new MultiStructItemCustomView(this, "Whetfish Scale Cycles", "Whetfish_Scale_Cycles", "Whetfish_Scale_Cycles_offset"),
+                    new MultiStructItemCustomView(this, "Whetfish Scale Plus Cycles", "Whetfish_Scale_Plus_Cycles", "Whetfish_Scale_Plus_Cycles_offset"),
+                    new MultiStructItemCustomView(this, "Whetfish Scale Consume %", "Whetfish_Scale_Consume_", "Whetfish_Scale_Consume__offset"),
+                    new MultiStructItemCustomView(this, "Powertalon Power", "Powertalon_Power", "Powertalon_Power_offset"),
+                    new MultiStructItemCustomView(this, "Powercharm Power", "Powercharm_Power", "Powercharm_Power_offset"),
+                    new MultiStructItemCustomView(this, "Armortalon Power", "Armortalon_Power", "Armortalon_Power_offset"),
+                    new MultiStructItemCustomView(this, "Armorcharm Power", "Armorcharm_Power", "Armorcharm_Power_offset"),
+                    new MultiStructItemCustomView(this, "Unk49", "Unk49", "Unk49_offset"),
+                    new MultiStructItemCustomView(this, "Unk50", "Unk50", "Unk50_offset"),
+                    new MultiStructItemCustomView(this, "Unk51", "Unk51", "Unk51_offset"),
+                    new MultiStructItemCustomView(this, "Unk52", "Unk52", "Unk52_offset"),
+                    new MultiStructItemCustomView(this, "Unk53", "Unk53", "Unk53_offset"),
+                    new MultiStructItemCustomView(this, "Unk54", "Unk54", "Unk54_offset"),
+                    new MultiStructItemCustomView(this, "Unk55", "Unk55", "Unk55_offset"),
+                    new MultiStructItemCustomView(this, "Unk56", "Unk56", "Unk56_offset"),
+                    new MultiStructItemCustomView(this, "Unk57", "Unk57", "Unk57_offset"),
+                    new MultiStructItemCustomView(this, "Unk58", "Unk58", "Unk58_offset"),
+                    new MultiStructItemCustomView(this, "Unk59", "Unk59", "Unk59_offset"),
+                    new MultiStructItemCustomView(this, "Unk60", "Unk60", "Unk60_offset"),
+                    new MultiStructItemCustomView(this, "Unk61", "Unk61", "Unk61_offset"),
+                    new MultiStructItemCustomView(this, "Unk62", "Unk62", "Unk62_offset"),
+                    new MultiStructItemCustomView(this, "Unk63", "Unk63", "Unk63_offset"),
+                    new MultiStructItemCustomView(this, "Unk64", "Unk64", "Unk64_offset"),
+                    new MultiStructItemCustomView(this, "Unk65", "Unk65", "Unk65_offset"),
+                    new MultiStructItemCustomView(this, "Unk66", "Unk66", "Unk66_offset"),
+                    new MultiStructItemCustomView(this, "Unk67", "Unk67", "Unk67_offset"),
+                    new MultiStructItemCustomView(this, "Unk68", "Unk68", "Unk68_offset"),
+                    new MultiStructItemCustomView(this, "Unk69", "Unk69", "Unk69_offset"),
+                    new MultiStructItemCustomView(this, "Unk70", "Unk70", "Unk70_offset"),
+                    new MultiStructItemCustomView(this, "Unk71", "Unk71", "Unk71_offset"),
+                    new MultiStructItemCustomView(this, "Unk72", "Unk72", "Unk72_offset"),
+                    new MultiStructItemCustomView(this, "Unk73", "Unk73", "Unk73_offset"),
+                    new MultiStructItemCustomView(this, "Unk74", "Unk74", "Unk74_offset"),
+                    new MultiStructItemCustomView(this, "Unk75", "Unk75", "Unk75_offset"),
+                    new MultiStructItemCustomView(this, "Unk76", "Unk76", "Unk76_offset"),
+                    new MultiStructItemCustomView(this, "Unk77", "Unk77", "Unk77_offset"),
+                    new MultiStructItemCustomView(this, "Unk78", "Unk78", "Unk78_offset"),
+                    new MultiStructItemCustomView(this, "Unk79", "Unk79", "Unk79_offset"),
+                    new MultiStructItemCustomView(this, "Unk80", "Unk80", "Unk80_offset"),
+                    new MultiStructItemCustomView(this, "Unk81", "Unk81", "Unk81_offset"),
+                    new MultiStructItemCustomView(this, "Unk82", "Unk82", "Unk82_offset"),
+                    new MultiStructItemCustomView(this, "Unk83", "Unk83", "Unk83_offset"),
+                    new MultiStructItemCustomView(this, "Unk84", "Unk84", "Unk84_offset"),
+                    new MultiStructItemCustomView(this, "Unk85", "Unk85", "Unk85_offset"),
+                    new MultiStructItemCustomView(this, "Unk86", "Unk86", "Unk86_offset"),
+                    new MultiStructItemCustomView(this, "Unk87", "Unk87", "Unk87_offset"),
+                    new MultiStructItemCustomView(this, "Unk88", "Unk88", "Unk88_offset"),
+                    new MultiStructItemCustomView(this, "Unk89", "Unk89", "Unk89_offset"),
+                    new MultiStructItemCustomView(this, "Unk90", "Unk90", "Unk90_offset"),
+                    new MultiStructItemCustomView(this, "Unk91", "Unk91", "Unk91_offset"),
+                    new MultiStructItemCustomView(this, "Unk92", "Unk92", "Unk92_offset"),
+                    new MultiStructItemCustomView(this, "Unk93", "Unk93", "Unk93_offset"),
+                    new MultiStructItemCustomView(this, "Unk94", "Unk94", "Unk94_offset"),
+                    new MultiStructItemCustomView(this, "Unk95", "Unk95", "Unk95_offset"),
+                    new MultiStructItemCustomView(this, "Unk96", "Unk96", "Unk96_offset"),
+                    new MultiStructItemCustomView(this, "Unk97", "Unk97", "Unk97_offset"),
+                    new MultiStructItemCustomView(this, "Unk98", "Unk98", "Unk98_offset"),
+                    new MultiStructItemCustomView(this, "Unk99", "Unk99", "Unk99_offset"),
+                    new MultiStructItemCustomView(this, "Unk100", "Unk100", "Unk100_offset"),
+                    new MultiStructItemCustomView(this, "Unk101", "Unk101", "Unk101_offset"),
+                    new MultiStructItemCustomView(this, "Unk102", "Unk102", "Unk102_offset"),
+                    new MultiStructItemCustomView(this, "Unk103", "Unk103", "Unk103_offset"),
+                    new MultiStructItemCustomView(this, "Unk104", "Unk104", "Unk104_offset"),
+                    new MultiStructItemCustomView(this, "Unk105", "Unk105", "Unk105_offset"),
+                    new MultiStructItemCustomView(this, "Deathcream: Fishing rumble starts here.", "Deathcream_Fishing_rumble_starts_here_", "Deathcream_Fishing_rumble_starts_here__offset"),
                 };
             }
         }

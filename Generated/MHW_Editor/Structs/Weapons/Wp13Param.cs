@@ -37,6 +37,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Weapon_offset { get; private set; }
+
             protected uint Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
             public const int Unk_1_sortIndex = 100;
@@ -52,6 +55,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_1_offset { get; private set; }
+
             public const int lastSortIndex = 150;
 
             public static ObservableMhwStructCollection<W13p_Params_1_Shared_> LoadData(BinaryReader reader) {
@@ -66,7 +72,9 @@ namespace MHW_Editor.Structs.Weapons {
             public static W13p_Params_1_Shared_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_1_Shared_();
                 data.Index = i;
+                data.Weapon_offset = reader.BaseStream.Position;
                 data.Weapon_raw = reader.ReadChars(4);
+                data.Unk_1_offset = reader.BaseStream.Position;
                 data.Unk_1_raw = reader.ReadUInt32();
                 return data;
             }
@@ -78,8 +86,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Weapon", "Weapon"),
-                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1"),
+                    new MultiStructItemCustomView(this, "Weapon", "Weapon", "Weapon_offset"),
+                    new MultiStructItemCustomView(this, "Unk 1", "Unk_1", "Unk_1_offset"),
                 };
             }
         }
@@ -213,6 +221,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_2_offset { get; private set; }
+
             protected float Unk_3_raw;
             public const string Unk_3_displayName = "Unk 3";
             public const int Unk_3_sortIndex = 100;
@@ -227,6 +238,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_3));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_3_offset { get; private set; }
 
             protected float Unk_4_raw;
             public const string Unk_4_displayName = "Unk 4";
@@ -243,6 +257,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_4_offset { get; private set; }
+
             protected float Unk_5_raw;
             public const string Unk_5_displayName = "Unk 5";
             public const int Unk_5_sortIndex = 200;
@@ -257,6 +274,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_5));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_5_offset { get; private set; }
 
             protected float Unk_6_raw;
             public const string Unk_6_displayName = "Unk 6";
@@ -273,6 +293,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_6_offset { get; private set; }
+
             protected float Unk_7_raw;
             public const string Unk_7_displayName = "Unk 7";
             public const int Unk_7_sortIndex = 300;
@@ -287,6 +310,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_7));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_7_offset { get; private set; }
 
             protected float Unk_8_raw;
             public const string Unk_8_displayName = "Unk 8";
@@ -303,6 +329,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_8_offset { get; private set; }
+
             protected float Unk_9_raw;
             public const string Unk_9_displayName = "Unk 9";
             public const int Unk_9_sortIndex = 400;
@@ -317,6 +346,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_9));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_9_offset { get; private set; }
 
             protected float Unk_10_raw;
             public const string Unk_10_displayName = "Unk 10";
@@ -333,6 +365,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_10_offset { get; private set; }
+
             protected float Unk_11_raw;
             public const string Unk_11_displayName = "Unk 11";
             public const int Unk_11_sortIndex = 500;
@@ -347,6 +382,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_11));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_11_offset { get; private set; }
 
             protected float Unk_12_raw;
             public const string Unk_12_displayName = "Unk 12";
@@ -363,6 +401,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_12_offset { get; private set; }
+
             protected float Unk_13_raw;
             public const string Unk_13_displayName = "Unk 13";
             public const int Unk_13_sortIndex = 600;
@@ -377,6 +418,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_13));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_13_offset { get; private set; }
 
             protected float Unk_14_raw;
             public const string Unk_14_displayName = "Unk 14";
@@ -393,6 +437,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_14_offset { get; private set; }
+
             protected float Unk_15_raw;
             public const string Unk_15_displayName = "Unk 15";
             public const int Unk_15_sortIndex = 700;
@@ -407,6 +454,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_15));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_15_offset { get; private set; }
 
             protected float Unk_16_raw;
             public const string Unk_16_displayName = "Unk 16";
@@ -423,6 +473,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_16_offset { get; private set; }
+
             protected float Unk_17_raw;
             public const string Unk_17_displayName = "Unk 17";
             public const int Unk_17_sortIndex = 800;
@@ -437,6 +490,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_17));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_17_offset { get; private set; }
 
             protected byte Sharpness_Consumed_Melee_Only__raw;
             public const string Sharpness_Consumed_Melee_Only__displayName = "Sharpness Consumed (Melee Only)";
@@ -453,6 +509,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Sharpness_Consumed_Melee_Only__offset { get; private set; }
+
             protected byte Guard_Knockback_Sharpness_Usage_Small_raw;
             public const string Guard_Knockback_Sharpness_Usage_Small_displayName = "Guard Knockback Sharpness Usage: Small";
             public const int Guard_Knockback_Sharpness_Usage_Small_sortIndex = 900;
@@ -467,6 +526,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Small));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Guard_Knockback_Sharpness_Usage_Small_offset { get; private set; }
 
             protected byte Guard_Knockback_Sharpness_Usage_Medium_raw;
             public const string Guard_Knockback_Sharpness_Usage_Medium_displayName = "Guard Knockback Sharpness Usage: Medium";
@@ -483,6 +545,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Guard_Knockback_Sharpness_Usage_Medium_offset { get; private set; }
+
             protected byte Guard_Knockback_Sharpness_Usage_Large_raw;
             public const string Guard_Knockback_Sharpness_Usage_Large_displayName = "Guard Knockback Sharpness Usage: Large";
             public const int Guard_Knockback_Sharpness_Usage_Large_sortIndex = 1000;
@@ -497,6 +562,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Guard_Knockback_Sharpness_Usage_Large));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Guard_Knockback_Sharpness_Usage_Large_offset { get; private set; }
 
             protected float Weapon_Sweet_spot_raw;
             public const string Weapon_Sweet_spot_displayName = "Weapon Sweet-spot";
@@ -513,6 +581,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Weapon_Sweet_spot_offset { get; private set; }
+
             protected float Unk_23_raw;
             public const string Unk_23_displayName = "Unk 23";
             public const int Unk_23_sortIndex = 1100;
@@ -527,6 +598,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_23));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_23_offset { get; private set; }
 
             protected float Unk_24_raw;
             public const string Unk_24_displayName = "Unk 24";
@@ -543,6 +617,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_24_offset { get; private set; }
+
             protected float Elderseal_Modifier__raw;
             public const string Elderseal_Modifier__displayName = "Elderseal Modifier?";
             public const int Elderseal_Modifier__sortIndex = 1200;
@@ -557,6 +634,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Elderseal_Modifier_));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Elderseal_Modifier__offset { get; private set; }
 
             protected byte Unk_26_raw;
             public const string Unk_26_displayName = "Unk 26";
@@ -573,6 +653,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_26_offset { get; private set; }
+
             protected float Unk_27_raw;
             public const string Unk_27_displayName = "Unk 27";
             public const int Unk_27_sortIndex = 1300;
@@ -588,6 +671,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_27_offset { get; private set; }
+
             public const int lastSortIndex = 1350;
 
             public static ObservableMhwStructCollection<W13p_Params_2_Shared_> LoadData(BinaryReader reader) {
@@ -602,31 +688,57 @@ namespace MHW_Editor.Structs.Weapons {
             public static W13p_Params_2_Shared_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_2_Shared_();
                 data.Index = i;
+                data.Unk_2_offset = reader.BaseStream.Position;
                 data.Unk_2_raw = reader.ReadSingle();
+                data.Unk_3_offset = reader.BaseStream.Position;
                 data.Unk_3_raw = reader.ReadSingle();
+                data.Unk_4_offset = reader.BaseStream.Position;
                 data.Unk_4_raw = reader.ReadSingle();
+                data.Unk_5_offset = reader.BaseStream.Position;
                 data.Unk_5_raw = reader.ReadSingle();
+                data.Unk_6_offset = reader.BaseStream.Position;
                 data.Unk_6_raw = reader.ReadSingle();
+                data.Unk_7_offset = reader.BaseStream.Position;
                 data.Unk_7_raw = reader.ReadSingle();
+                data.Unk_8_offset = reader.BaseStream.Position;
                 data.Unk_8_raw = reader.ReadSingle();
+                data.Unk_9_offset = reader.BaseStream.Position;
                 data.Unk_9_raw = reader.ReadSingle();
+                data.Unk_10_offset = reader.BaseStream.Position;
                 data.Unk_10_raw = reader.ReadSingle();
+                data.Unk_11_offset = reader.BaseStream.Position;
                 data.Unk_11_raw = reader.ReadSingle();
+                data.Unk_12_offset = reader.BaseStream.Position;
                 data.Unk_12_raw = reader.ReadSingle();
+                data.Unk_13_offset = reader.BaseStream.Position;
                 data.Unk_13_raw = reader.ReadSingle();
+                data.Unk_14_offset = reader.BaseStream.Position;
                 data.Unk_14_raw = reader.ReadSingle();
+                data.Unk_15_offset = reader.BaseStream.Position;
                 data.Unk_15_raw = reader.ReadSingle();
+                data.Unk_16_offset = reader.BaseStream.Position;
                 data.Unk_16_raw = reader.ReadSingle();
+                data.Unk_17_offset = reader.BaseStream.Position;
                 data.Unk_17_raw = reader.ReadSingle();
+                data.Sharpness_Consumed_Melee_Only__offset = reader.BaseStream.Position;
                 data.Sharpness_Consumed_Melee_Only__raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Small_offset = reader.BaseStream.Position;
                 data.Guard_Knockback_Sharpness_Usage_Small_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Medium_offset = reader.BaseStream.Position;
                 data.Guard_Knockback_Sharpness_Usage_Medium_raw = reader.ReadByte();
+                data.Guard_Knockback_Sharpness_Usage_Large_offset = reader.BaseStream.Position;
                 data.Guard_Knockback_Sharpness_Usage_Large_raw = reader.ReadByte();
+                data.Weapon_Sweet_spot_offset = reader.BaseStream.Position;
                 data.Weapon_Sweet_spot_raw = reader.ReadSingle();
+                data.Unk_23_offset = reader.BaseStream.Position;
                 data.Unk_23_raw = reader.ReadSingle();
+                data.Unk_24_offset = reader.BaseStream.Position;
                 data.Unk_24_raw = reader.ReadSingle();
+                data.Elderseal_Modifier__offset = reader.BaseStream.Position;
                 data.Elderseal_Modifier__raw = reader.ReadSingle();
+                data.Unk_26_offset = reader.BaseStream.Position;
                 data.Unk_26_raw = reader.ReadByte();
+                data.Unk_27_offset = reader.BaseStream.Position;
                 data.Unk_27_raw = reader.ReadSingle();
                 return data;
             }
@@ -662,32 +774,32 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2"),
-                    new MultiStructItemCustomView(this, "Unk 3", "Unk_3"),
-                    new MultiStructItemCustomView(this, "Unk 4", "Unk_4"),
-                    new MultiStructItemCustomView(this, "Unk 5", "Unk_5"),
-                    new MultiStructItemCustomView(this, "Unk 6", "Unk_6"),
-                    new MultiStructItemCustomView(this, "Unk 7", "Unk_7"),
-                    new MultiStructItemCustomView(this, "Unk 8", "Unk_8"),
-                    new MultiStructItemCustomView(this, "Unk 9", "Unk_9"),
-                    new MultiStructItemCustomView(this, "Unk 10", "Unk_10"),
-                    new MultiStructItemCustomView(this, "Unk 11", "Unk_11"),
-                    new MultiStructItemCustomView(this, "Unk 12", "Unk_12"),
-                    new MultiStructItemCustomView(this, "Unk 13", "Unk_13"),
-                    new MultiStructItemCustomView(this, "Unk 14", "Unk_14"),
-                    new MultiStructItemCustomView(this, "Unk 15", "Unk_15"),
-                    new MultiStructItemCustomView(this, "Unk 16", "Unk_16"),
-                    new MultiStructItemCustomView(this, "Unk 17", "Unk_17"),
-                    new MultiStructItemCustomView(this, "Sharpness Consumed (Melee Only)", "Sharpness_Consumed_Melee_Only_"),
-                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Small", "Guard_Knockback_Sharpness_Usage_Small"),
-                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Medium", "Guard_Knockback_Sharpness_Usage_Medium"),
-                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Large", "Guard_Knockback_Sharpness_Usage_Large"),
-                    new MultiStructItemCustomView(this, "Weapon Sweet-spot", "Weapon_Sweet_spot"),
-                    new MultiStructItemCustomView(this, "Unk 23", "Unk_23"),
-                    new MultiStructItemCustomView(this, "Unk 24", "Unk_24"),
-                    new MultiStructItemCustomView(this, "Elderseal Modifier?", "Elderseal_Modifier_"),
-                    new MultiStructItemCustomView(this, "Unk 26", "Unk_26"),
-                    new MultiStructItemCustomView(this, "Unk 27", "Unk_27"),
+                    new MultiStructItemCustomView(this, "Unk 2", "Unk_2", "Unk_2_offset"),
+                    new MultiStructItemCustomView(this, "Unk 3", "Unk_3", "Unk_3_offset"),
+                    new MultiStructItemCustomView(this, "Unk 4", "Unk_4", "Unk_4_offset"),
+                    new MultiStructItemCustomView(this, "Unk 5", "Unk_5", "Unk_5_offset"),
+                    new MultiStructItemCustomView(this, "Unk 6", "Unk_6", "Unk_6_offset"),
+                    new MultiStructItemCustomView(this, "Unk 7", "Unk_7", "Unk_7_offset"),
+                    new MultiStructItemCustomView(this, "Unk 8", "Unk_8", "Unk_8_offset"),
+                    new MultiStructItemCustomView(this, "Unk 9", "Unk_9", "Unk_9_offset"),
+                    new MultiStructItemCustomView(this, "Unk 10", "Unk_10", "Unk_10_offset"),
+                    new MultiStructItemCustomView(this, "Unk 11", "Unk_11", "Unk_11_offset"),
+                    new MultiStructItemCustomView(this, "Unk 12", "Unk_12", "Unk_12_offset"),
+                    new MultiStructItemCustomView(this, "Unk 13", "Unk_13", "Unk_13_offset"),
+                    new MultiStructItemCustomView(this, "Unk 14", "Unk_14", "Unk_14_offset"),
+                    new MultiStructItemCustomView(this, "Unk 15", "Unk_15", "Unk_15_offset"),
+                    new MultiStructItemCustomView(this, "Unk 16", "Unk_16", "Unk_16_offset"),
+                    new MultiStructItemCustomView(this, "Unk 17", "Unk_17", "Unk_17_offset"),
+                    new MultiStructItemCustomView(this, "Sharpness Consumed (Melee Only)", "Sharpness_Consumed_Melee_Only_", "Sharpness_Consumed_Melee_Only__offset"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Small", "Guard_Knockback_Sharpness_Usage_Small", "Guard_Knockback_Sharpness_Usage_Small_offset"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Medium", "Guard_Knockback_Sharpness_Usage_Medium", "Guard_Knockback_Sharpness_Usage_Medium_offset"),
+                    new MultiStructItemCustomView(this, "Guard Knockback Sharpness Usage: Large", "Guard_Knockback_Sharpness_Usage_Large", "Guard_Knockback_Sharpness_Usage_Large_offset"),
+                    new MultiStructItemCustomView(this, "Weapon Sweet-spot", "Weapon_Sweet_spot", "Weapon_Sweet_spot_offset"),
+                    new MultiStructItemCustomView(this, "Unk 23", "Unk_23", "Unk_23_offset"),
+                    new MultiStructItemCustomView(this, "Unk 24", "Unk_24", "Unk_24_offset"),
+                    new MultiStructItemCustomView(this, "Elderseal Modifier?", "Elderseal_Modifier_", "Elderseal_Modifier__offset"),
+                    new MultiStructItemCustomView(this, "Unk 26", "Unk_26", "Unk_26_offset"),
+                    new MultiStructItemCustomView(this, "Unk 27", "Unk_27", "Unk_27_offset"),
                 };
             }
         }
@@ -804,6 +916,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_28_offset { get; private set; }
+
             protected float Unk_29_raw;
             public const string Unk_29_displayName = "Unk 29";
             public const int Unk_29_sortIndex = 100;
@@ -818,6 +933,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_29));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_29_offset { get; private set; }
 
             protected float Unk_30_raw;
             public const string Unk_30_displayName = "Unk 30";
@@ -834,6 +952,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_30_offset { get; private set; }
+
             protected float Unk_31_raw;
             public const string Unk_31_displayName = "Unk 31";
             public const int Unk_31_sortIndex = 200;
@@ -848,6 +969,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_31));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_31_offset { get; private set; }
 
             protected float Unk_32_raw;
             public const string Unk_32_displayName = "Unk 32";
@@ -864,6 +988,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_32_offset { get; private set; }
+
             protected float Unk_33_raw;
             public const string Unk_33_displayName = "Unk 33";
             public const int Unk_33_sortIndex = 300;
@@ -878,6 +1005,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_33));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_33_offset { get; private set; }
 
             protected float Unk_34_raw;
             public const string Unk_34_displayName = "Unk 34";
@@ -894,6 +1024,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_34_offset { get; private set; }
+
             protected float Unk_35_raw;
             public const string Unk_35_displayName = "Unk 35";
             public const int Unk_35_sortIndex = 400;
@@ -908,6 +1041,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_35));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_35_offset { get; private set; }
 
             protected float Unk_36_raw;
             public const string Unk_36_displayName = "Unk 36";
@@ -924,6 +1060,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_36_offset { get; private set; }
+
             protected float Unk_37_raw;
             public const string Unk_37_displayName = "Unk 37";
             public const int Unk_37_sortIndex = 500;
@@ -938,6 +1077,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_37));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_37_offset { get; private set; }
 
             protected float Unk_38_raw;
             public const string Unk_38_displayName = "Unk 38";
@@ -954,6 +1096,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_38_offset { get; private set; }
+
             protected float Unk_39_raw;
             public const string Unk_39_displayName = "Unk 39";
             public const int Unk_39_sortIndex = 600;
@@ -968,6 +1113,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_39));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_39_offset { get; private set; }
 
             protected float Unk_40_raw;
             public const string Unk_40_displayName = "Unk 40";
@@ -984,6 +1132,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_40_offset { get; private set; }
+
             protected float Unk_41_raw;
             public const string Unk_41_displayName = "Unk 41";
             public const int Unk_41_sortIndex = 700;
@@ -998,6 +1149,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_41));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_41_offset { get; private set; }
 
             protected float Unk_42_raw;
             public const string Unk_42_displayName = "Unk 42";
@@ -1014,6 +1168,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_42_offset { get; private set; }
+
             protected float Unk_43_raw;
             public const string Unk_43_displayName = "Unk 43";
             public const int Unk_43_sortIndex = 800;
@@ -1028,6 +1185,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_43));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_43_offset { get; private set; }
 
             protected float Unk_44_raw;
             public const string Unk_44_displayName = "Unk 44";
@@ -1044,6 +1204,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_44_offset { get; private set; }
+
             protected float Unk_45_raw;
             public const string Unk_45_displayName = "Unk 45";
             public const int Unk_45_sortIndex = 900;
@@ -1058,6 +1221,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_45));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_45_offset { get; private set; }
 
             protected float Unk_46_raw;
             public const string Unk_46_displayName = "Unk 46";
@@ -1074,6 +1240,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_46_offset { get; private set; }
+
             protected float Unk_47_raw;
             public const string Unk_47_displayName = "Unk 47";
             public const int Unk_47_sortIndex = 1000;
@@ -1088,6 +1257,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_47));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_47_offset { get; private set; }
 
             protected float Unk_48_raw;
             public const string Unk_48_displayName = "Unk 48";
@@ -1104,6 +1276,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_48_offset { get; private set; }
+
             protected uint Unk_49_raw;
             public const string Unk_49_displayName = "Unk 49";
             public const int Unk_49_sortIndex = 1100;
@@ -1118,6 +1293,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_49));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_49_offset { get; private set; }
 
             protected uint Unk_50_raw;
             public const string Unk_50_displayName = "Unk 50";
@@ -1134,6 +1312,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_50_offset { get; private set; }
+
             protected float Unk_51_raw;
             public const string Unk_51_displayName = "Unk 51";
             public const int Unk_51_sortIndex = 1200;
@@ -1148,6 +1329,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_51));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_51_offset { get; private set; }
 
             protected float Unk_52_raw;
             public const string Unk_52_displayName = "Unk 52";
@@ -1164,6 +1348,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_52_offset { get; private set; }
+
             protected float Unk_53_raw;
             public const string Unk_53_displayName = "Unk 53";
             public const int Unk_53_sortIndex = 1300;
@@ -1178,6 +1365,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_53));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_53_offset { get; private set; }
 
             protected float Unk_54_raw;
             public const string Unk_54_displayName = "Unk 54";
@@ -1194,6 +1384,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_54_offset { get; private set; }
+
             protected float Unk_55_raw;
             public const string Unk_55_displayName = "Unk 55";
             public const int Unk_55_sortIndex = 1400;
@@ -1208,6 +1401,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_55));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_55_offset { get; private set; }
 
             protected float Unk_56_raw;
             public const string Unk_56_displayName = "Unk 56";
@@ -1224,6 +1420,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_56_offset { get; private set; }
+
             protected float Unk_57_raw;
             public const string Unk_57_displayName = "Unk 57";
             public const int Unk_57_sortIndex = 1500;
@@ -1238,6 +1437,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_57));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_57_offset { get; private set; }
 
             protected float Unk_58_raw;
             public const string Unk_58_displayName = "Unk 58";
@@ -1254,6 +1456,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_58_offset { get; private set; }
+
             protected float Unk_59_raw;
             public const string Unk_59_displayName = "Unk 59";
             public const int Unk_59_sortIndex = 1600;
@@ -1268,6 +1473,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_59));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_59_offset { get; private set; }
 
             protected float Unk_60_raw;
             public const string Unk_60_displayName = "Unk 60";
@@ -1284,6 +1492,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_60_offset { get; private set; }
+
             protected float Unk_61_raw;
             public const string Unk_61_displayName = "Unk 61";
             public const int Unk_61_sortIndex = 1700;
@@ -1298,6 +1509,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_61));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_61_offset { get; private set; }
 
             protected float Unk_62_raw;
             public const string Unk_62_displayName = "Unk 62";
@@ -1314,6 +1528,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_62_offset { get; private set; }
+
             protected float Unk_63_raw;
             public const string Unk_63_displayName = "Unk 63";
             public const int Unk_63_sortIndex = 1800;
@@ -1328,6 +1545,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_63));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_63_offset { get; private set; }
 
             protected float Unk_64_raw;
             public const string Unk_64_displayName = "Unk 64";
@@ -1344,6 +1564,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_64_offset { get; private set; }
+
             protected float Unk_65_raw;
             public const string Unk_65_displayName = "Unk 65";
             public const int Unk_65_sortIndex = 1900;
@@ -1358,6 +1581,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_65));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_65_offset { get; private set; }
 
             protected float Unk_66_raw;
             public const string Unk_66_displayName = "Unk 66";
@@ -1374,6 +1600,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_66_offset { get; private set; }
+
             protected float Unk_67_raw;
             public const string Unk_67_displayName = "Unk 67";
             public const int Unk_67_sortIndex = 2000;
@@ -1388,6 +1617,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_67));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_67_offset { get; private set; }
 
             protected float Unk_68_raw;
             public const string Unk_68_displayName = "Unk 68";
@@ -1404,6 +1636,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_68_offset { get; private set; }
+
             protected float Unk_69_raw;
             public const string Unk_69_displayName = "Unk 69";
             public const int Unk_69_sortIndex = 2100;
@@ -1418,6 +1653,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_69));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_69_offset { get; private set; }
 
             protected float Unk_70_raw;
             public const string Unk_70_displayName = "Unk 70";
@@ -1434,6 +1672,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_70_offset { get; private set; }
+
             protected float Unk_71_raw;
             public const string Unk_71_displayName = "Unk 71";
             public const int Unk_71_sortIndex = 2200;
@@ -1448,6 +1689,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_71));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_71_offset { get; private set; }
 
             protected byte Unk_72_raw;
             public const string Unk_72_displayName = "Unk 72";
@@ -1464,6 +1708,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_72_offset { get; private set; }
+
             protected uint Unk_73_raw;
             public const string Unk_73_displayName = "Unk 73";
             public const int Unk_73_sortIndex = 2300;
@@ -1478,6 +1725,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_73));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_73_offset { get; private set; }
 
             protected float Unk_74_raw;
             public const string Unk_74_displayName = "Unk 74";
@@ -1494,6 +1744,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_74_offset { get; private set; }
+
             protected float Unk_75_raw;
             public const string Unk_75_displayName = "Unk 75";
             public const int Unk_75_sortIndex = 2400;
@@ -1508,6 +1761,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_75));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_75_offset { get; private set; }
 
             protected float Unk_76_raw;
             public const string Unk_76_displayName = "Unk 76";
@@ -1524,6 +1780,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_76_offset { get; private set; }
+
             public const int lastSortIndex = 2500;
 
             public static ObservableMhwStructCollection<W13p_Params_3_Shared_> LoadData(BinaryReader reader) {
@@ -1538,54 +1797,103 @@ namespace MHW_Editor.Structs.Weapons {
             public static W13p_Params_3_Shared_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_3_Shared_();
                 data.Index = i;
+                data.Unk_28_offset = reader.BaseStream.Position;
                 data.Unk_28_raw = reader.ReadSingle();
+                data.Unk_29_offset = reader.BaseStream.Position;
                 data.Unk_29_raw = reader.ReadSingle();
+                data.Unk_30_offset = reader.BaseStream.Position;
                 data.Unk_30_raw = reader.ReadSingle();
+                data.Unk_31_offset = reader.BaseStream.Position;
                 data.Unk_31_raw = reader.ReadSingle();
+                data.Unk_32_offset = reader.BaseStream.Position;
                 data.Unk_32_raw = reader.ReadSingle();
+                data.Unk_33_offset = reader.BaseStream.Position;
                 data.Unk_33_raw = reader.ReadSingle();
+                data.Unk_34_offset = reader.BaseStream.Position;
                 data.Unk_34_raw = reader.ReadSingle();
+                data.Unk_35_offset = reader.BaseStream.Position;
                 data.Unk_35_raw = reader.ReadSingle();
+                data.Unk_36_offset = reader.BaseStream.Position;
                 data.Unk_36_raw = reader.ReadSingle();
+                data.Unk_37_offset = reader.BaseStream.Position;
                 data.Unk_37_raw = reader.ReadSingle();
+                data.Unk_38_offset = reader.BaseStream.Position;
                 data.Unk_38_raw = reader.ReadSingle();
+                data.Unk_39_offset = reader.BaseStream.Position;
                 data.Unk_39_raw = reader.ReadSingle();
+                data.Unk_40_offset = reader.BaseStream.Position;
                 data.Unk_40_raw = reader.ReadSingle();
+                data.Unk_41_offset = reader.BaseStream.Position;
                 data.Unk_41_raw = reader.ReadSingle();
+                data.Unk_42_offset = reader.BaseStream.Position;
                 data.Unk_42_raw = reader.ReadSingle();
+                data.Unk_43_offset = reader.BaseStream.Position;
                 data.Unk_43_raw = reader.ReadSingle();
+                data.Unk_44_offset = reader.BaseStream.Position;
                 data.Unk_44_raw = reader.ReadSingle();
+                data.Unk_45_offset = reader.BaseStream.Position;
                 data.Unk_45_raw = reader.ReadSingle();
+                data.Unk_46_offset = reader.BaseStream.Position;
                 data.Unk_46_raw = reader.ReadSingle();
+                data.Unk_47_offset = reader.BaseStream.Position;
                 data.Unk_47_raw = reader.ReadSingle();
+                data.Unk_48_offset = reader.BaseStream.Position;
                 data.Unk_48_raw = reader.ReadSingle();
+                data.Unk_49_offset = reader.BaseStream.Position;
                 data.Unk_49_raw = reader.ReadUInt32();
+                data.Unk_50_offset = reader.BaseStream.Position;
                 data.Unk_50_raw = reader.ReadUInt32();
+                data.Unk_51_offset = reader.BaseStream.Position;
                 data.Unk_51_raw = reader.ReadSingle();
+                data.Unk_52_offset = reader.BaseStream.Position;
                 data.Unk_52_raw = reader.ReadSingle();
+                data.Unk_53_offset = reader.BaseStream.Position;
                 data.Unk_53_raw = reader.ReadSingle();
+                data.Unk_54_offset = reader.BaseStream.Position;
                 data.Unk_54_raw = reader.ReadSingle();
+                data.Unk_55_offset = reader.BaseStream.Position;
                 data.Unk_55_raw = reader.ReadSingle();
+                data.Unk_56_offset = reader.BaseStream.Position;
                 data.Unk_56_raw = reader.ReadSingle();
+                data.Unk_57_offset = reader.BaseStream.Position;
                 data.Unk_57_raw = reader.ReadSingle();
+                data.Unk_58_offset = reader.BaseStream.Position;
                 data.Unk_58_raw = reader.ReadSingle();
+                data.Unk_59_offset = reader.BaseStream.Position;
                 data.Unk_59_raw = reader.ReadSingle();
+                data.Unk_60_offset = reader.BaseStream.Position;
                 data.Unk_60_raw = reader.ReadSingle();
+                data.Unk_61_offset = reader.BaseStream.Position;
                 data.Unk_61_raw = reader.ReadSingle();
+                data.Unk_62_offset = reader.BaseStream.Position;
                 data.Unk_62_raw = reader.ReadSingle();
+                data.Unk_63_offset = reader.BaseStream.Position;
                 data.Unk_63_raw = reader.ReadSingle();
+                data.Unk_64_offset = reader.BaseStream.Position;
                 data.Unk_64_raw = reader.ReadSingle();
+                data.Unk_65_offset = reader.BaseStream.Position;
                 data.Unk_65_raw = reader.ReadSingle();
+                data.Unk_66_offset = reader.BaseStream.Position;
                 data.Unk_66_raw = reader.ReadSingle();
+                data.Unk_67_offset = reader.BaseStream.Position;
                 data.Unk_67_raw = reader.ReadSingle();
+                data.Unk_68_offset = reader.BaseStream.Position;
                 data.Unk_68_raw = reader.ReadSingle();
+                data.Unk_69_offset = reader.BaseStream.Position;
                 data.Unk_69_raw = reader.ReadSingle();
+                data.Unk_70_offset = reader.BaseStream.Position;
                 data.Unk_70_raw = reader.ReadSingle();
+                data.Unk_71_offset = reader.BaseStream.Position;
                 data.Unk_71_raw = reader.ReadSingle();
+                data.Unk_72_offset = reader.BaseStream.Position;
                 data.Unk_72_raw = reader.ReadByte();
+                data.Unk_73_offset = reader.BaseStream.Position;
                 data.Unk_73_raw = reader.ReadUInt32();
+                data.Unk_74_offset = reader.BaseStream.Position;
                 data.Unk_74_raw = reader.ReadSingle();
+                data.Unk_75_offset = reader.BaseStream.Position;
                 data.Unk_75_raw = reader.ReadSingle();
+                data.Unk_76_offset = reader.BaseStream.Position;
                 data.Unk_76_raw = reader.ReadSingle();
                 return data;
             }
@@ -1644,55 +1952,55 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 28", "Unk_28"),
-                    new MultiStructItemCustomView(this, "Unk 29", "Unk_29"),
-                    new MultiStructItemCustomView(this, "Unk 30", "Unk_30"),
-                    new MultiStructItemCustomView(this, "Unk 31", "Unk_31"),
-                    new MultiStructItemCustomView(this, "Unk 32", "Unk_32"),
-                    new MultiStructItemCustomView(this, "Unk 33", "Unk_33"),
-                    new MultiStructItemCustomView(this, "Unk 34", "Unk_34"),
-                    new MultiStructItemCustomView(this, "Unk 35", "Unk_35"),
-                    new MultiStructItemCustomView(this, "Unk 36", "Unk_36"),
-                    new MultiStructItemCustomView(this, "Unk 37", "Unk_37"),
-                    new MultiStructItemCustomView(this, "Unk 38", "Unk_38"),
-                    new MultiStructItemCustomView(this, "Unk 39", "Unk_39"),
-                    new MultiStructItemCustomView(this, "Unk 40", "Unk_40"),
-                    new MultiStructItemCustomView(this, "Unk 41", "Unk_41"),
-                    new MultiStructItemCustomView(this, "Unk 42", "Unk_42"),
-                    new MultiStructItemCustomView(this, "Unk 43", "Unk_43"),
-                    new MultiStructItemCustomView(this, "Unk 44", "Unk_44"),
-                    new MultiStructItemCustomView(this, "Unk 45", "Unk_45"),
-                    new MultiStructItemCustomView(this, "Unk 46", "Unk_46"),
-                    new MultiStructItemCustomView(this, "Unk 47", "Unk_47"),
-                    new MultiStructItemCustomView(this, "Unk 48", "Unk_48"),
-                    new MultiStructItemCustomView(this, "Unk 49", "Unk_49"),
-                    new MultiStructItemCustomView(this, "Unk 50", "Unk_50"),
-                    new MultiStructItemCustomView(this, "Unk 51", "Unk_51"),
-                    new MultiStructItemCustomView(this, "Unk 52", "Unk_52"),
-                    new MultiStructItemCustomView(this, "Unk 53", "Unk_53"),
-                    new MultiStructItemCustomView(this, "Unk 54", "Unk_54"),
-                    new MultiStructItemCustomView(this, "Unk 55", "Unk_55"),
-                    new MultiStructItemCustomView(this, "Unk 56", "Unk_56"),
-                    new MultiStructItemCustomView(this, "Unk 57", "Unk_57"),
-                    new MultiStructItemCustomView(this, "Unk 58", "Unk_58"),
-                    new MultiStructItemCustomView(this, "Unk 59", "Unk_59"),
-                    new MultiStructItemCustomView(this, "Unk 60", "Unk_60"),
-                    new MultiStructItemCustomView(this, "Unk 61", "Unk_61"),
-                    new MultiStructItemCustomView(this, "Unk 62", "Unk_62"),
-                    new MultiStructItemCustomView(this, "Unk 63", "Unk_63"),
-                    new MultiStructItemCustomView(this, "Unk 64", "Unk_64"),
-                    new MultiStructItemCustomView(this, "Unk 65", "Unk_65"),
-                    new MultiStructItemCustomView(this, "Unk 66", "Unk_66"),
-                    new MultiStructItemCustomView(this, "Unk 67", "Unk_67"),
-                    new MultiStructItemCustomView(this, "Unk 68", "Unk_68"),
-                    new MultiStructItemCustomView(this, "Unk 69", "Unk_69"),
-                    new MultiStructItemCustomView(this, "Unk 70", "Unk_70"),
-                    new MultiStructItemCustomView(this, "Unk 71", "Unk_71"),
-                    new MultiStructItemCustomView(this, "Unk 72", "Unk_72"),
-                    new MultiStructItemCustomView(this, "Unk 73", "Unk_73"),
-                    new MultiStructItemCustomView(this, "Unk 74", "Unk_74"),
-                    new MultiStructItemCustomView(this, "Unk 75", "Unk_75"),
-                    new MultiStructItemCustomView(this, "Unk 76", "Unk_76"),
+                    new MultiStructItemCustomView(this, "Unk 28", "Unk_28", "Unk_28_offset"),
+                    new MultiStructItemCustomView(this, "Unk 29", "Unk_29", "Unk_29_offset"),
+                    new MultiStructItemCustomView(this, "Unk 30", "Unk_30", "Unk_30_offset"),
+                    new MultiStructItemCustomView(this, "Unk 31", "Unk_31", "Unk_31_offset"),
+                    new MultiStructItemCustomView(this, "Unk 32", "Unk_32", "Unk_32_offset"),
+                    new MultiStructItemCustomView(this, "Unk 33", "Unk_33", "Unk_33_offset"),
+                    new MultiStructItemCustomView(this, "Unk 34", "Unk_34", "Unk_34_offset"),
+                    new MultiStructItemCustomView(this, "Unk 35", "Unk_35", "Unk_35_offset"),
+                    new MultiStructItemCustomView(this, "Unk 36", "Unk_36", "Unk_36_offset"),
+                    new MultiStructItemCustomView(this, "Unk 37", "Unk_37", "Unk_37_offset"),
+                    new MultiStructItemCustomView(this, "Unk 38", "Unk_38", "Unk_38_offset"),
+                    new MultiStructItemCustomView(this, "Unk 39", "Unk_39", "Unk_39_offset"),
+                    new MultiStructItemCustomView(this, "Unk 40", "Unk_40", "Unk_40_offset"),
+                    new MultiStructItemCustomView(this, "Unk 41", "Unk_41", "Unk_41_offset"),
+                    new MultiStructItemCustomView(this, "Unk 42", "Unk_42", "Unk_42_offset"),
+                    new MultiStructItemCustomView(this, "Unk 43", "Unk_43", "Unk_43_offset"),
+                    new MultiStructItemCustomView(this, "Unk 44", "Unk_44", "Unk_44_offset"),
+                    new MultiStructItemCustomView(this, "Unk 45", "Unk_45", "Unk_45_offset"),
+                    new MultiStructItemCustomView(this, "Unk 46", "Unk_46", "Unk_46_offset"),
+                    new MultiStructItemCustomView(this, "Unk 47", "Unk_47", "Unk_47_offset"),
+                    new MultiStructItemCustomView(this, "Unk 48", "Unk_48", "Unk_48_offset"),
+                    new MultiStructItemCustomView(this, "Unk 49", "Unk_49", "Unk_49_offset"),
+                    new MultiStructItemCustomView(this, "Unk 50", "Unk_50", "Unk_50_offset"),
+                    new MultiStructItemCustomView(this, "Unk 51", "Unk_51", "Unk_51_offset"),
+                    new MultiStructItemCustomView(this, "Unk 52", "Unk_52", "Unk_52_offset"),
+                    new MultiStructItemCustomView(this, "Unk 53", "Unk_53", "Unk_53_offset"),
+                    new MultiStructItemCustomView(this, "Unk 54", "Unk_54", "Unk_54_offset"),
+                    new MultiStructItemCustomView(this, "Unk 55", "Unk_55", "Unk_55_offset"),
+                    new MultiStructItemCustomView(this, "Unk 56", "Unk_56", "Unk_56_offset"),
+                    new MultiStructItemCustomView(this, "Unk 57", "Unk_57", "Unk_57_offset"),
+                    new MultiStructItemCustomView(this, "Unk 58", "Unk_58", "Unk_58_offset"),
+                    new MultiStructItemCustomView(this, "Unk 59", "Unk_59", "Unk_59_offset"),
+                    new MultiStructItemCustomView(this, "Unk 60", "Unk_60", "Unk_60_offset"),
+                    new MultiStructItemCustomView(this, "Unk 61", "Unk_61", "Unk_61_offset"),
+                    new MultiStructItemCustomView(this, "Unk 62", "Unk_62", "Unk_62_offset"),
+                    new MultiStructItemCustomView(this, "Unk 63", "Unk_63", "Unk_63_offset"),
+                    new MultiStructItemCustomView(this, "Unk 64", "Unk_64", "Unk_64_offset"),
+                    new MultiStructItemCustomView(this, "Unk 65", "Unk_65", "Unk_65_offset"),
+                    new MultiStructItemCustomView(this, "Unk 66", "Unk_66", "Unk_66_offset"),
+                    new MultiStructItemCustomView(this, "Unk 67", "Unk_67", "Unk_67_offset"),
+                    new MultiStructItemCustomView(this, "Unk 68", "Unk_68", "Unk_68_offset"),
+                    new MultiStructItemCustomView(this, "Unk 69", "Unk_69", "Unk_69_offset"),
+                    new MultiStructItemCustomView(this, "Unk 70", "Unk_70", "Unk_70_offset"),
+                    new MultiStructItemCustomView(this, "Unk 71", "Unk_71", "Unk_71_offset"),
+                    new MultiStructItemCustomView(this, "Unk 72", "Unk_72", "Unk_72_offset"),
+                    new MultiStructItemCustomView(this, "Unk 73", "Unk_73", "Unk_73_offset"),
+                    new MultiStructItemCustomView(this, "Unk 74", "Unk_74", "Unk_74_offset"),
+                    new MultiStructItemCustomView(this, "Unk 75", "Unk_75", "Unk_75_offset"),
+                    new MultiStructItemCustomView(this, "Unk 76", "Unk_76", "Unk_76_offset"),
                 };
             }
         }
@@ -1996,6 +2304,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_77_offset { get; private set; }
+
             protected int Unk_78_raw;
             public const string Unk_78_displayName = "Unk 78";
             public const int Unk_78_sortIndex = 100;
@@ -2010,6 +2321,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_78));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_78_offset { get; private set; }
 
             protected float Unk_79_raw;
             public const string Unk_79_displayName = "Unk 79";
@@ -2026,6 +2340,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_79_offset { get; private set; }
+
             protected float Unk_80_raw;
             public const string Unk_80_displayName = "Unk 80";
             public const int Unk_80_sortIndex = 200;
@@ -2040,6 +2357,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_80));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_80_offset { get; private set; }
 
             protected float Unk_81_raw;
             public const string Unk_81_displayName = "Unk 81";
@@ -2056,6 +2376,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_81_offset { get; private set; }
+
             protected float Unk_82_raw;
             public const string Unk_82_displayName = "Unk 82";
             public const int Unk_82_sortIndex = 300;
@@ -2070,6 +2393,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_82));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_82_offset { get; private set; }
 
             protected float Unk_83_raw;
             public const string Unk_83_displayName = "Unk 83";
@@ -2086,6 +2412,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_83_offset { get; private set; }
+
             protected float Unk_84_raw;
             public const string Unk_84_displayName = "Unk 84";
             public const int Unk_84_sortIndex = 400;
@@ -2100,6 +2429,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_84));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_84_offset { get; private set; }
 
             protected float Unk_85_raw;
             public const string Unk_85_displayName = "Unk 85";
@@ -2116,6 +2448,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_85_offset { get; private set; }
+
             protected float Unk_86_raw;
             public const string Unk_86_displayName = "Unk 86";
             public const int Unk_86_sortIndex = 500;
@@ -2130,6 +2465,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_86));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_86_offset { get; private set; }
 
             protected float Unk_87_raw;
             public const string Unk_87_displayName = "Unk 87";
@@ -2146,6 +2484,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_87_offset { get; private set; }
+
             protected float Unk_88_raw;
             public const string Unk_88_displayName = "Unk 88";
             public const int Unk_88_sortIndex = 600;
@@ -2160,6 +2501,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_88));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_88_offset { get; private set; }
 
             protected float Unk_89_raw;
             public const string Unk_89_displayName = "Unk 89";
@@ -2176,6 +2520,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_89_offset { get; private set; }
+
             protected float Unk_90_raw;
             public const string Unk_90_displayName = "Unk 90";
             public const int Unk_90_sortIndex = 700;
@@ -2191,6 +2538,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_90_offset { get; private set; }
+
             public const int lastSortIndex = 750;
 
             public static ObservableMhwStructCollection<W13p_Params_4_Shared_> LoadData(BinaryReader reader) {
@@ -2205,19 +2555,33 @@ namespace MHW_Editor.Structs.Weapons {
             public static W13p_Params_4_Shared_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_4_Shared_();
                 data.Index = i;
+                data.Unk_77_offset = reader.BaseStream.Position;
                 data.Unk_77_raw = reader.ReadByte();
+                data.Unk_78_offset = reader.BaseStream.Position;
                 data.Unk_78_raw = reader.ReadInt32();
+                data.Unk_79_offset = reader.BaseStream.Position;
                 data.Unk_79_raw = reader.ReadSingle();
+                data.Unk_80_offset = reader.BaseStream.Position;
                 data.Unk_80_raw = reader.ReadSingle();
+                data.Unk_81_offset = reader.BaseStream.Position;
                 data.Unk_81_raw = reader.ReadSingle();
+                data.Unk_82_offset = reader.BaseStream.Position;
                 data.Unk_82_raw = reader.ReadSingle();
+                data.Unk_83_offset = reader.BaseStream.Position;
                 data.Unk_83_raw = reader.ReadSingle();
+                data.Unk_84_offset = reader.BaseStream.Position;
                 data.Unk_84_raw = reader.ReadSingle();
+                data.Unk_85_offset = reader.BaseStream.Position;
                 data.Unk_85_raw = reader.ReadSingle();
+                data.Unk_86_offset = reader.BaseStream.Position;
                 data.Unk_86_raw = reader.ReadSingle();
+                data.Unk_87_offset = reader.BaseStream.Position;
                 data.Unk_87_raw = reader.ReadSingle();
+                data.Unk_88_offset = reader.BaseStream.Position;
                 data.Unk_88_raw = reader.ReadSingle();
+                data.Unk_89_offset = reader.BaseStream.Position;
                 data.Unk_89_raw = reader.ReadSingle();
+                data.Unk_90_offset = reader.BaseStream.Position;
                 data.Unk_90_raw = reader.ReadSingle();
                 return data;
             }
@@ -2241,20 +2605,20 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 77", "Unk_77"),
-                    new MultiStructItemCustomView(this, "Unk 78", "Unk_78"),
-                    new MultiStructItemCustomView(this, "Unk 79", "Unk_79"),
-                    new MultiStructItemCustomView(this, "Unk 80", "Unk_80"),
-                    new MultiStructItemCustomView(this, "Unk 81", "Unk_81"),
-                    new MultiStructItemCustomView(this, "Unk 82", "Unk_82"),
-                    new MultiStructItemCustomView(this, "Unk 83", "Unk_83"),
-                    new MultiStructItemCustomView(this, "Unk 84", "Unk_84"),
-                    new MultiStructItemCustomView(this, "Unk 85", "Unk_85"),
-                    new MultiStructItemCustomView(this, "Unk 86", "Unk_86"),
-                    new MultiStructItemCustomView(this, "Unk 87", "Unk_87"),
-                    new MultiStructItemCustomView(this, "Unk 88", "Unk_88"),
-                    new MultiStructItemCustomView(this, "Unk 89", "Unk_89"),
-                    new MultiStructItemCustomView(this, "Unk 90", "Unk_90"),
+                    new MultiStructItemCustomView(this, "Unk 77", "Unk_77", "Unk_77_offset"),
+                    new MultiStructItemCustomView(this, "Unk 78", "Unk_78", "Unk_78_offset"),
+                    new MultiStructItemCustomView(this, "Unk 79", "Unk_79", "Unk_79_offset"),
+                    new MultiStructItemCustomView(this, "Unk 80", "Unk_80", "Unk_80_offset"),
+                    new MultiStructItemCustomView(this, "Unk 81", "Unk_81", "Unk_81_offset"),
+                    new MultiStructItemCustomView(this, "Unk 82", "Unk_82", "Unk_82_offset"),
+                    new MultiStructItemCustomView(this, "Unk 83", "Unk_83", "Unk_83_offset"),
+                    new MultiStructItemCustomView(this, "Unk 84", "Unk_84", "Unk_84_offset"),
+                    new MultiStructItemCustomView(this, "Unk 85", "Unk_85", "Unk_85_offset"),
+                    new MultiStructItemCustomView(this, "Unk 86", "Unk_86", "Unk_86_offset"),
+                    new MultiStructItemCustomView(this, "Unk 87", "Unk_87", "Unk_87_offset"),
+                    new MultiStructItemCustomView(this, "Unk 88", "Unk_88", "Unk_88_offset"),
+                    new MultiStructItemCustomView(this, "Unk 89", "Unk_89", "Unk_89_offset"),
+                    new MultiStructItemCustomView(this, "Unk 90", "Unk_90", "Unk_90_offset"),
                 };
             }
         }
@@ -2278,6 +2642,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_91_offset { get; private set; }
+
             protected float Unk_92_raw;
             public const string Unk_92_displayName = "Unk 92";
             public const int Unk_92_sortIndex = 100;
@@ -2292,6 +2659,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_92));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_92_offset { get; private set; }
 
             protected float Unk_93_raw;
             public const string Unk_93_displayName = "Unk 93";
@@ -2308,6 +2678,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_93_offset { get; private set; }
+
             protected float Unk_94_raw;
             public const string Unk_94_displayName = "Unk 94";
             public const int Unk_94_sortIndex = 200;
@@ -2322,6 +2695,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_94));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_94_offset { get; private set; }
 
             protected float Unk_95_raw;
             public const string Unk_95_displayName = "Unk 95";
@@ -2338,6 +2714,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_95_offset { get; private set; }
+
             protected float Unk_96_raw;
             public const string Unk_96_displayName = "Unk 96";
             public const int Unk_96_sortIndex = 300;
@@ -2352,6 +2731,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_96));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_96_offset { get; private set; }
 
             protected float Unk_97_raw;
             public const string Unk_97_displayName = "Unk 97";
@@ -2368,6 +2750,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_97_offset { get; private set; }
+
             protected float Unk_98_raw;
             public const string Unk_98_displayName = "Unk 98";
             public const int Unk_98_sortIndex = 400;
@@ -2382,6 +2767,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_98));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_98_offset { get; private set; }
 
             protected float Unk_99_raw;
             public const string Unk_99_displayName = "Unk 99";
@@ -2398,6 +2786,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_99_offset { get; private set; }
+
             protected uint Unk_100_raw;
             public const string Unk_100_displayName = "Unk 100";
             public const int Unk_100_sortIndex = 500;
@@ -2412,6 +2803,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_100));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_100_offset { get; private set; }
 
             protected float Unk_101_raw;
             public const string Unk_101_displayName = "Unk 101";
@@ -2428,6 +2822,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_101_offset { get; private set; }
+
             protected uint Unk_102_raw;
             public const string Unk_102_displayName = "Unk 102";
             public const int Unk_102_sortIndex = 600;
@@ -2442,6 +2839,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_102));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_102_offset { get; private set; }
 
             protected float Unk_103_raw;
             public const string Unk_103_displayName = "Unk 103";
@@ -2458,6 +2858,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_103_offset { get; private set; }
+
             protected uint Unk_104_raw;
             public const string Unk_104_displayName = "Unk 104";
             public const int Unk_104_sortIndex = 700;
@@ -2472,6 +2875,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_104));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_104_offset { get; private set; }
 
             protected float Unk_105_raw;
             public const string Unk_105_displayName = "Unk 105";
@@ -2488,6 +2894,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_105_offset { get; private set; }
+
             protected uint Unk_106_raw;
             public const string Unk_106_displayName = "Unk 106";
             public const int Unk_106_sortIndex = 800;
@@ -2502,6 +2911,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_106));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_106_offset { get; private set; }
 
             protected float Unk_107_raw;
             public const string Unk_107_displayName = "Unk 107";
@@ -2518,6 +2930,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_107_offset { get; private set; }
+
             protected float Unk_108_raw;
             public const string Unk_108_displayName = "Unk 108";
             public const int Unk_108_sortIndex = 900;
@@ -2532,6 +2947,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_108));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_108_offset { get; private set; }
 
             protected float Unk_109_raw;
             public const string Unk_109_displayName = "Unk 109";
@@ -2548,6 +2966,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_109_offset { get; private set; }
+
             protected float Unk_110_raw;
             public const string Unk_110_displayName = "Unk 110";
             public const int Unk_110_sortIndex = 1000;
@@ -2562,6 +2983,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_110));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_110_offset { get; private set; }
 
             protected float Unk_111_raw;
             public const string Unk_111_displayName = "Unk 111";
@@ -2578,6 +3002,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_111_offset { get; private set; }
+
             protected float Unk_112_raw;
             public const string Unk_112_displayName = "Unk 112";
             public const int Unk_112_sortIndex = 1100;
@@ -2592,6 +3019,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_112));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_112_offset { get; private set; }
 
             protected float Unk_113_raw;
             public const string Unk_113_displayName = "Unk 113";
@@ -2608,6 +3038,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_113_offset { get; private set; }
+
             protected float Unk_114_raw;
             public const string Unk_114_displayName = "Unk 114";
             public const int Unk_114_sortIndex = 1200;
@@ -2622,6 +3055,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_114));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_114_offset { get; private set; }
 
             protected float Unk_115_raw;
             public const string Unk_115_displayName = "Unk 115";
@@ -2638,6 +3074,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_115_offset { get; private set; }
+
             protected float Unk_116_raw;
             public const string Unk_116_displayName = "Unk 116";
             public const int Unk_116_sortIndex = 1300;
@@ -2652,6 +3091,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_116));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_116_offset { get; private set; }
 
             protected float Unk_117_raw;
             public const string Unk_117_displayName = "Unk 117";
@@ -2668,6 +3110,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_117_offset { get; private set; }
+
             protected float Unk_118_raw;
             public const string Unk_118_displayName = "Unk 118";
             public const int Unk_118_sortIndex = 1400;
@@ -2682,6 +3127,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_118));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_118_offset { get; private set; }
 
             protected float Unk_119_raw;
             public const string Unk_119_displayName = "Unk 119";
@@ -2698,6 +3146,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_119_offset { get; private set; }
+
             protected float Unk_120_raw;
             public const string Unk_120_displayName = "Unk 120";
             public const int Unk_120_sortIndex = 1500;
@@ -2712,6 +3163,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_120));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_120_offset { get; private set; }
 
             protected float Unk_121_raw;
             public const string Unk_121_displayName = "Unk 121";
@@ -2728,6 +3182,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_121_offset { get; private set; }
+
             protected float Unk_122_raw;
             public const string Unk_122_displayName = "Unk 122";
             public const int Unk_122_sortIndex = 1600;
@@ -2742,6 +3199,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_122));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_122_offset { get; private set; }
 
             protected float Unk_123_raw;
             public const string Unk_123_displayName = "Unk 123";
@@ -2758,6 +3218,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_123_offset { get; private set; }
+
             protected float Unk_124_raw;
             public const string Unk_124_displayName = "Unk 124";
             public const int Unk_124_sortIndex = 1700;
@@ -2772,6 +3235,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_124));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_124_offset { get; private set; }
 
             protected float Unk_125_raw;
             public const string Unk_125_displayName = "Unk 125";
@@ -2788,6 +3254,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_125_offset { get; private set; }
+
             protected float Unk_126_raw;
             public const string Unk_126_displayName = "Unk 126";
             public const int Unk_126_sortIndex = 1800;
@@ -2802,6 +3271,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_126));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_126_offset { get; private set; }
 
             protected float Unk_127_raw;
             public const string Unk_127_displayName = "Unk 127";
@@ -2818,6 +3290,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_127_offset { get; private set; }
+
             protected float Unk_128_raw;
             public const string Unk_128_displayName = "Unk 128";
             public const int Unk_128_sortIndex = 1900;
@@ -2832,6 +3307,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_128));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_128_offset { get; private set; }
 
             protected float Unk_129_raw;
             public const string Unk_129_displayName = "Unk 129";
@@ -2848,6 +3326,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_129_offset { get; private set; }
+
             protected float Unk_130_raw;
             public const string Unk_130_displayName = "Unk 130";
             public const int Unk_130_sortIndex = 2000;
@@ -2862,6 +3343,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_130));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_130_offset { get; private set; }
 
             protected float Unk_131_raw;
             public const string Unk_131_displayName = "Unk 131";
@@ -2878,6 +3362,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_131_offset { get; private set; }
+
             protected float Unk_132_raw;
             public const string Unk_132_displayName = "Unk 132";
             public const int Unk_132_sortIndex = 2100;
@@ -2892,6 +3379,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_132));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_132_offset { get; private set; }
 
             protected float Unk_133_raw;
             public const string Unk_133_displayName = "Unk 133";
@@ -2908,6 +3398,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_133_offset { get; private set; }
+
             protected float Unk_134_raw;
             public const string Unk_134_displayName = "Unk 134";
             public const int Unk_134_sortIndex = 2200;
@@ -2922,6 +3415,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_134));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_134_offset { get; private set; }
 
             protected float Unk_135_raw;
             public const string Unk_135_displayName = "Unk 135";
@@ -2938,6 +3434,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_135_offset { get; private set; }
+
             protected float Unk_136_raw;
             public const string Unk_136_displayName = "Unk 136";
             public const int Unk_136_sortIndex = 2300;
@@ -2952,6 +3451,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_136));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_136_offset { get; private set; }
 
             protected float Unk_137_raw;
             public const string Unk_137_displayName = "Unk 137";
@@ -2968,6 +3470,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_137_offset { get; private set; }
+
             protected float Unk_138_raw;
             public const string Unk_138_displayName = "Unk 138";
             public const int Unk_138_sortIndex = 2400;
@@ -2982,6 +3487,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_138));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_138_offset { get; private set; }
 
             protected float Unk_139_raw;
             public const string Unk_139_displayName = "Unk 139";
@@ -2998,6 +3506,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_139_offset { get; private set; }
+
             protected float Unk_140_raw;
             public const string Unk_140_displayName = "Unk 140";
             public const int Unk_140_sortIndex = 2500;
@@ -3012,6 +3523,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_140));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_140_offset { get; private set; }
 
             protected float Unk_141_raw;
             public const string Unk_141_displayName = "Unk 141";
@@ -3028,6 +3542,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_141_offset { get; private set; }
+
             protected float Unk_142_raw;
             public const string Unk_142_displayName = "Unk 142";
             public const int Unk_142_sortIndex = 2600;
@@ -3042,6 +3559,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_142));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_142_offset { get; private set; }
 
             protected float Unk_143_raw;
             public const string Unk_143_displayName = "Unk 143";
@@ -3058,6 +3578,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_143_offset { get; private set; }
+
             protected float Unk_144_raw;
             public const string Unk_144_displayName = "Unk 144";
             public const int Unk_144_sortIndex = 2700;
@@ -3072,6 +3595,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_144));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_144_offset { get; private set; }
 
             protected float Unk_145_raw;
             public const string Unk_145_displayName = "Unk 145";
@@ -3088,6 +3614,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_145_offset { get; private set; }
+
             protected float Unk_146_raw;
             public const string Unk_146_displayName = "Unk 146";
             public const int Unk_146_sortIndex = 2800;
@@ -3102,6 +3631,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_146));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_146_offset { get; private set; }
 
             protected float Unk_147_raw;
             public const string Unk_147_displayName = "Unk 147";
@@ -3118,6 +3650,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_147_offset { get; private set; }
+
             protected float Unk_148_raw;
             public const string Unk_148_displayName = "Unk 148";
             public const int Unk_148_sortIndex = 2900;
@@ -3132,6 +3667,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_148));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_148_offset { get; private set; }
 
             protected float Unk_149_raw;
             public const string Unk_149_displayName = "Unk 149";
@@ -3148,6 +3686,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_149_offset { get; private set; }
+
             protected float Unk_150_raw;
             public const string Unk_150_displayName = "Unk 150";
             public const int Unk_150_sortIndex = 3000;
@@ -3162,6 +3703,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_150));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_150_offset { get; private set; }
 
             protected float Unk_151_raw;
             public const string Unk_151_displayName = "Unk 151";
@@ -3178,6 +3722,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_151_offset { get; private set; }
+
             protected float Unk_152_raw;
             public const string Unk_152_displayName = "Unk 152";
             public const int Unk_152_sortIndex = 3100;
@@ -3192,6 +3739,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_152));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_152_offset { get; private set; }
 
             protected float Unk_153_raw;
             public const string Unk_153_displayName = "Unk 153";
@@ -3208,6 +3758,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_153_offset { get; private set; }
+
             protected float Unk_154_raw;
             public const string Unk_154_displayName = "Unk 154";
             public const int Unk_154_sortIndex = 3200;
@@ -3222,6 +3775,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_154));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_154_offset { get; private set; }
 
             protected float Unk_155_raw;
             public const string Unk_155_displayName = "Unk 155";
@@ -3238,6 +3794,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_155_offset { get; private set; }
+
             protected float Unk_156_raw;
             public const string Unk_156_displayName = "Unk 156";
             public const int Unk_156_sortIndex = 3300;
@@ -3252,6 +3811,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_156));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_156_offset { get; private set; }
 
             protected float Unk_157_raw;
             public const string Unk_157_displayName = "Unk 157";
@@ -3268,6 +3830,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_157_offset { get; private set; }
+
             protected float Unk_158_raw;
             public const string Unk_158_displayName = "Unk 158";
             public const int Unk_158_sortIndex = 3400;
@@ -3282,6 +3847,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_158));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_158_offset { get; private set; }
 
             protected float Unk_159_raw;
             public const string Unk_159_displayName = "Unk 159";
@@ -3298,6 +3866,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_159_offset { get; private set; }
+
             protected float Unk_160_raw;
             public const string Unk_160_displayName = "Unk 160";
             public const int Unk_160_sortIndex = 3500;
@@ -3312,6 +3883,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_160));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_160_offset { get; private set; }
 
             protected float Unk_161_raw;
             public const string Unk_161_displayName = "Unk 161";
@@ -3328,6 +3902,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_161_offset { get; private set; }
+
             protected float Unk_162_raw;
             public const string Unk_162_displayName = "Unk 162";
             public const int Unk_162_sortIndex = 3600;
@@ -3342,6 +3919,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_162));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_162_offset { get; private set; }
 
             protected float Unk_163_raw;
             public const string Unk_163_displayName = "Unk 163";
@@ -3358,6 +3938,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_163_offset { get; private set; }
+
             protected float Unk_164_raw;
             public const string Unk_164_displayName = "Unk 164";
             public const int Unk_164_sortIndex = 3700;
@@ -3372,6 +3955,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_164));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_164_offset { get; private set; }
 
             protected float Unk_165_raw;
             public const string Unk_165_displayName = "Unk 165";
@@ -3388,6 +3974,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_165_offset { get; private set; }
+
             protected float Unk_166_raw;
             public const string Unk_166_displayName = "Unk 166";
             public const int Unk_166_sortIndex = 3800;
@@ -3402,6 +3991,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_166));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_166_offset { get; private set; }
 
             protected float Unk_167_raw;
             public const string Unk_167_displayName = "Unk 167";
@@ -3418,6 +4010,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_167_offset { get; private set; }
+
             protected float Unk_168_raw;
             public const string Unk_168_displayName = "Unk 168";
             public const int Unk_168_sortIndex = 3900;
@@ -3432,6 +4027,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_168));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_168_offset { get; private set; }
 
             protected float Unk_169_raw;
             public const string Unk_169_displayName = "Unk 169";
@@ -3448,6 +4046,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_169_offset { get; private set; }
+
             protected float Unk_170_raw;
             public const string Unk_170_displayName = "Unk 170";
             public const int Unk_170_sortIndex = 4000;
@@ -3462,6 +4063,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_170));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_170_offset { get; private set; }
 
             protected float Unk_171_raw;
             public const string Unk_171_displayName = "Unk 171";
@@ -3478,6 +4082,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_171_offset { get; private set; }
+
             protected float Unk_172_raw;
             public const string Unk_172_displayName = "Unk 172";
             public const int Unk_172_sortIndex = 4100;
@@ -3492,6 +4099,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_172));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_172_offset { get; private set; }
 
             protected float Unk_173_raw;
             public const string Unk_173_displayName = "Unk 173";
@@ -3508,6 +4118,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_173_offset { get; private set; }
+
             protected byte Unk_174_raw;
             public const string Unk_174_displayName = "Unk 174";
             public const int Unk_174_sortIndex = 4200;
@@ -3522,6 +4135,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_174));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_174_offset { get; private set; }
 
             protected byte Unk_175_raw;
             public const string Unk_175_displayName = "Unk 175";
@@ -3538,6 +4154,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_175_offset { get; private set; }
+
             protected byte Unk_176_raw;
             public const string Unk_176_displayName = "Unk 176";
             public const int Unk_176_sortIndex = 4300;
@@ -3552,6 +4171,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_176));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_176_offset { get; private set; }
 
             protected byte Unk_177_raw;
             public const string Unk_177_displayName = "Unk 177";
@@ -3568,6 +4190,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_177_offset { get; private set; }
+
             protected ushort Unk_178_raw;
             public const string Unk_178_displayName = "Unk 178";
             public const int Unk_178_sortIndex = 4400;
@@ -3582,6 +4207,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_178));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_178_offset { get; private set; }
 
             protected ushort Unk_179_raw;
             public const string Unk_179_displayName = "Unk 179";
@@ -3598,6 +4226,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_179_offset { get; private set; }
+
             protected ushort Unk_180_raw;
             public const string Unk_180_displayName = "Unk 180";
             public const int Unk_180_sortIndex = 4500;
@@ -3612,6 +4243,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_180));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_180_offset { get; private set; }
 
             protected ushort Unk_181_raw;
             public const string Unk_181_displayName = "Unk 181";
@@ -3628,6 +4262,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_181_offset { get; private set; }
+
             protected ushort Unk_182_raw;
             public const string Unk_182_displayName = "Unk 182";
             public const int Unk_182_sortIndex = 4600;
@@ -3642,6 +4279,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_182));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_182_offset { get; private set; }
 
             protected ushort Unk_183_raw;
             public const string Unk_183_displayName = "Unk 183";
@@ -3658,6 +4298,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_183_offset { get; private set; }
+
             protected ushort Unk_184_raw;
             public const string Unk_184_displayName = "Unk 184";
             public const int Unk_184_sortIndex = 4700;
@@ -3672,6 +4315,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_184));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_184_offset { get; private set; }
 
             protected ushort Unk_185_raw;
             public const string Unk_185_displayName = "Unk 185";
@@ -3688,6 +4334,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_185_offset { get; private set; }
+
             protected ushort Unk_186_raw;
             public const string Unk_186_displayName = "Unk 186";
             public const int Unk_186_sortIndex = 4800;
@@ -3702,6 +4351,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_186));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_186_offset { get; private set; }
 
             protected ushort Unk_187_raw;
             public const string Unk_187_displayName = "Unk 187";
@@ -3718,6 +4370,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_187_offset { get; private set; }
+
             protected byte Unk_188_raw;
             public const string Unk_188_displayName = "Unk 188";
             public const int Unk_188_sortIndex = 4900;
@@ -3732,6 +4387,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_188));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_188_offset { get; private set; }
 
             protected byte Unk_189_raw;
             public const string Unk_189_displayName = "Unk 189";
@@ -3748,6 +4406,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_189_offset { get; private set; }
+
             protected byte Unk_190_raw;
             public const string Unk_190_displayName = "Unk 190";
             public const int Unk_190_sortIndex = 5000;
@@ -3762,6 +4423,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_190));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_190_offset { get; private set; }
 
             protected byte Unk_191_raw;
             public const string Unk_191_displayName = "Unk 191";
@@ -3778,6 +4442,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_191_offset { get; private set; }
+
             protected ushort Unk_192_raw;
             public const string Unk_192_displayName = "Unk 192";
             public const int Unk_192_sortIndex = 5100;
@@ -3792,6 +4459,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_192));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_192_offset { get; private set; }
 
             protected ushort Unk_193_raw;
             public const string Unk_193_displayName = "Unk 193";
@@ -3808,6 +4478,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_193_offset { get; private set; }
+
             protected ushort Unk_194_raw;
             public const string Unk_194_displayName = "Unk 194";
             public const int Unk_194_sortIndex = 5200;
@@ -3822,6 +4495,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_194));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_194_offset { get; private set; }
 
             protected ushort Unk_195_raw;
             public const string Unk_195_displayName = "Unk 195";
@@ -3838,6 +4514,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_195_offset { get; private set; }
+
             protected ushort Unk_196_raw;
             public const string Unk_196_displayName = "Unk 196";
             public const int Unk_196_sortIndex = 5300;
@@ -3852,6 +4531,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_196));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_196_offset { get; private set; }
 
             protected ushort Unk_197_raw;
             public const string Unk_197_displayName = "Unk 197";
@@ -3868,6 +4550,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_197_offset { get; private set; }
+
             protected ushort Unk_198_raw;
             public const string Unk_198_displayName = "Unk 198";
             public const int Unk_198_sortIndex = 5400;
@@ -3882,6 +4567,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_198));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_198_offset { get; private set; }
 
             protected ushort Unk_199_raw;
             public const string Unk_199_displayName = "Unk 199";
@@ -3898,6 +4586,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_199_offset { get; private set; }
+
             protected ushort Unk_200_raw;
             public const string Unk_200_displayName = "Unk 200";
             public const int Unk_200_sortIndex = 5500;
@@ -3912,6 +4603,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_200));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_200_offset { get; private set; }
 
             protected ushort Unk_201_raw;
             public const string Unk_201_displayName = "Unk 201";
@@ -3928,6 +4622,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_201_offset { get; private set; }
+
             protected ushort Unk_202_raw;
             public const string Unk_202_displayName = "Unk 202";
             public const int Unk_202_sortIndex = 5600;
@@ -3942,6 +4639,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_202));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_202_offset { get; private set; }
 
             protected ushort Unk_203_raw;
             public const string Unk_203_displayName = "Unk 203";
@@ -3958,6 +4658,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_203_offset { get; private set; }
+
             protected ushort Unk_204_raw;
             public const string Unk_204_displayName = "Unk 204";
             public const int Unk_204_sortIndex = 5700;
@@ -3972,6 +4675,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_204));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_204_offset { get; private set; }
 
             protected ushort Unk_205_raw;
             public const string Unk_205_displayName = "Unk 205";
@@ -3988,6 +4694,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_205_offset { get; private set; }
+
             protected ushort Unk_206_raw;
             public const string Unk_206_displayName = "Unk 206";
             public const int Unk_206_sortIndex = 5800;
@@ -4002,6 +4711,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_206));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_206_offset { get; private set; }
 
             protected ushort Unk_207_raw;
             public const string Unk_207_displayName = "Unk 207";
@@ -4018,6 +4730,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_207_offset { get; private set; }
+
             protected ushort Unk_208_raw;
             public const string Unk_208_displayName = "Unk 208";
             public const int Unk_208_sortIndex = 5900;
@@ -4032,6 +4747,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_208));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_208_offset { get; private set; }
 
             protected ushort Unk_209_raw;
             public const string Unk_209_displayName = "Unk 209";
@@ -4048,6 +4766,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_209_offset { get; private set; }
+
             protected ushort Unk_210_raw;
             public const string Unk_210_displayName = "Unk 210";
             public const int Unk_210_sortIndex = 6000;
@@ -4062,6 +4783,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_210));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_210_offset { get; private set; }
 
             protected ushort Unk_211_raw;
             public const string Unk_211_displayName = "Unk 211";
@@ -4078,6 +4802,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_211_offset { get; private set; }
+
             protected byte Unk_212_raw;
             public const string Unk_212_displayName = "Unk 212";
             public const int Unk_212_sortIndex = 6100;
@@ -4092,6 +4819,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_212));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_212_offset { get; private set; }
 
             protected ushort Unk_213_raw;
             public const string Unk_213_displayName = "Unk 213";
@@ -4108,6 +4838,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_213_offset { get; private set; }
+
             protected ushort Unk_214_raw;
             public const string Unk_214_displayName = "Unk 214";
             public const int Unk_214_sortIndex = 6200;
@@ -4122,6 +4855,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_214));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_214_offset { get; private set; }
 
             protected float Unk_215_raw;
             public const string Unk_215_displayName = "Unk 215";
@@ -4138,6 +4874,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_215_offset { get; private set; }
+
             protected ushort Unk_216_raw;
             public const string Unk_216_displayName = "Unk 216";
             public const int Unk_216_sortIndex = 6300;
@@ -4152,6 +4891,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_216));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_216_offset { get; private set; }
 
             protected float Unk_217_raw;
             public const string Unk_217_displayName = "Unk 217";
@@ -4168,6 +4910,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_217_offset { get; private set; }
+
             protected float Unk_218_raw;
             public const string Unk_218_displayName = "Unk 218";
             public const int Unk_218_sortIndex = 6400;
@@ -4182,6 +4927,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_218));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_218_offset { get; private set; }
 
             protected float Unk_219_raw;
             public const string Unk_219_displayName = "Unk 219";
@@ -4198,6 +4946,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_219_offset { get; private set; }
+
             protected float Unk_220_raw;
             public const string Unk_220_displayName = "Unk 220";
             public const int Unk_220_sortIndex = 6500;
@@ -4212,6 +4963,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_220));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_220_offset { get; private set; }
 
             protected float Unk_221_raw;
             public const string Unk_221_displayName = "Unk 221";
@@ -4228,6 +4982,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_221_offset { get; private set; }
+
             protected float Unk_222_raw;
             public const string Unk_222_displayName = "Unk 222";
             public const int Unk_222_sortIndex = 6600;
@@ -4242,6 +4999,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_222));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_222_offset { get; private set; }
 
             protected float Unk_223_raw;
             public const string Unk_223_displayName = "Unk 223";
@@ -4258,6 +5018,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_223_offset { get; private set; }
+
             protected float Unk_224_raw;
             public const string Unk_224_displayName = "Unk 224";
             public const int Unk_224_sortIndex = 6700;
@@ -4272,6 +5035,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_224));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_224_offset { get; private set; }
 
             protected float Unk_225_raw;
             public const string Unk_225_displayName = "Unk 225";
@@ -4288,6 +5054,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_225_offset { get; private set; }
+
             protected float Unk_226_raw;
             public const string Unk_226_displayName = "Unk 226";
             public const int Unk_226_sortIndex = 6800;
@@ -4302,6 +5071,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_226));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_226_offset { get; private set; }
 
             protected float Unk_227_raw;
             public const string Unk_227_displayName = "Unk 227";
@@ -4318,6 +5090,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_227_offset { get; private set; }
+
             protected float Unk_228_raw;
             public const string Unk_228_displayName = "Unk 228";
             public const int Unk_228_sortIndex = 6900;
@@ -4332,6 +5107,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_228));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_228_offset { get; private set; }
 
             protected float Unk_229_raw;
             public const string Unk_229_displayName = "Unk 229";
@@ -4348,6 +5126,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_229_offset { get; private set; }
+
             protected float Unk_230_raw;
             public const string Unk_230_displayName = "Unk 230";
             public const int Unk_230_sortIndex = 7000;
@@ -4362,6 +5143,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_230));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_230_offset { get; private set; }
 
             protected byte Unk_231_raw;
             public const string Unk_231_displayName = "Unk 231";
@@ -4378,6 +5162,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_231_offset { get; private set; }
+
             protected float Unk_232_raw;
             public const string Unk_232_displayName = "Unk 232";
             public const int Unk_232_sortIndex = 7100;
@@ -4392,6 +5179,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_232));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_232_offset { get; private set; }
 
             protected byte Unk_233_raw;
             public const string Unk_233_displayName = "Unk 233";
@@ -4408,6 +5198,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_233_offset { get; private set; }
+
             protected byte Unk_234_raw;
             public const string Unk_234_displayName = "Unk 234";
             public const int Unk_234_sortIndex = 7200;
@@ -4422,6 +5215,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_234));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_234_offset { get; private set; }
 
             protected byte Unk_235_raw;
             public const string Unk_235_displayName = "Unk 235";
@@ -4438,6 +5234,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_235_offset { get; private set; }
+
             protected float Unk_236_raw;
             public const string Unk_236_displayName = "Unk 236";
             public const int Unk_236_sortIndex = 7300;
@@ -4452,6 +5251,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_236));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_236_offset { get; private set; }
 
             protected float Unk_237_raw;
             public const string Unk_237_displayName = "Unk 237";
@@ -4468,6 +5270,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_237_offset { get; private set; }
+
             protected uint Unk_238_raw;
             public const string Unk_238_displayName = "Unk 238";
             public const int Unk_238_sortIndex = 7400;
@@ -4482,6 +5287,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_238));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_238_offset { get; private set; }
 
             protected short Unk_239_raw;
             public const string Unk_239_displayName = "Unk 239";
@@ -4498,6 +5306,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_239_offset { get; private set; }
+
             public const int lastSortIndex = 7500;
 
             public static ObservableMhwStructCollection<W13p_Params_5_> LoadData(BinaryReader reader) {
@@ -4512,154 +5323,303 @@ namespace MHW_Editor.Structs.Weapons {
             public static W13p_Params_5_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_5_();
                 data.Index = i;
+                data.Unk_91_offset = reader.BaseStream.Position;
                 data.Unk_91_raw = reader.ReadSingle();
+                data.Unk_92_offset = reader.BaseStream.Position;
                 data.Unk_92_raw = reader.ReadSingle();
+                data.Unk_93_offset = reader.BaseStream.Position;
                 data.Unk_93_raw = reader.ReadSingle();
+                data.Unk_94_offset = reader.BaseStream.Position;
                 data.Unk_94_raw = reader.ReadSingle();
+                data.Unk_95_offset = reader.BaseStream.Position;
                 data.Unk_95_raw = reader.ReadSingle();
+                data.Unk_96_offset = reader.BaseStream.Position;
                 data.Unk_96_raw = reader.ReadSingle();
+                data.Unk_97_offset = reader.BaseStream.Position;
                 data.Unk_97_raw = reader.ReadSingle();
+                data.Unk_98_offset = reader.BaseStream.Position;
                 data.Unk_98_raw = reader.ReadSingle();
+                data.Unk_99_offset = reader.BaseStream.Position;
                 data.Unk_99_raw = reader.ReadSingle();
+                data.Unk_100_offset = reader.BaseStream.Position;
                 data.Unk_100_raw = reader.ReadUInt32();
+                data.Unk_101_offset = reader.BaseStream.Position;
                 data.Unk_101_raw = reader.ReadSingle();
+                data.Unk_102_offset = reader.BaseStream.Position;
                 data.Unk_102_raw = reader.ReadUInt32();
+                data.Unk_103_offset = reader.BaseStream.Position;
                 data.Unk_103_raw = reader.ReadSingle();
+                data.Unk_104_offset = reader.BaseStream.Position;
                 data.Unk_104_raw = reader.ReadUInt32();
+                data.Unk_105_offset = reader.BaseStream.Position;
                 data.Unk_105_raw = reader.ReadSingle();
+                data.Unk_106_offset = reader.BaseStream.Position;
                 data.Unk_106_raw = reader.ReadUInt32();
+                data.Unk_107_offset = reader.BaseStream.Position;
                 data.Unk_107_raw = reader.ReadSingle();
+                data.Unk_108_offset = reader.BaseStream.Position;
                 data.Unk_108_raw = reader.ReadSingle();
+                data.Unk_109_offset = reader.BaseStream.Position;
                 data.Unk_109_raw = reader.ReadSingle();
+                data.Unk_110_offset = reader.BaseStream.Position;
                 data.Unk_110_raw = reader.ReadSingle();
+                data.Unk_111_offset = reader.BaseStream.Position;
                 data.Unk_111_raw = reader.ReadSingle();
+                data.Unk_112_offset = reader.BaseStream.Position;
                 data.Unk_112_raw = reader.ReadSingle();
+                data.Unk_113_offset = reader.BaseStream.Position;
                 data.Unk_113_raw = reader.ReadSingle();
+                data.Unk_114_offset = reader.BaseStream.Position;
                 data.Unk_114_raw = reader.ReadSingle();
+                data.Unk_115_offset = reader.BaseStream.Position;
                 data.Unk_115_raw = reader.ReadSingle();
+                data.Unk_116_offset = reader.BaseStream.Position;
                 data.Unk_116_raw = reader.ReadSingle();
+                data.Unk_117_offset = reader.BaseStream.Position;
                 data.Unk_117_raw = reader.ReadSingle();
+                data.Unk_118_offset = reader.BaseStream.Position;
                 data.Unk_118_raw = reader.ReadSingle();
+                data.Unk_119_offset = reader.BaseStream.Position;
                 data.Unk_119_raw = reader.ReadSingle();
+                data.Unk_120_offset = reader.BaseStream.Position;
                 data.Unk_120_raw = reader.ReadSingle();
+                data.Unk_121_offset = reader.BaseStream.Position;
                 data.Unk_121_raw = reader.ReadSingle();
+                data.Unk_122_offset = reader.BaseStream.Position;
                 data.Unk_122_raw = reader.ReadSingle();
+                data.Unk_123_offset = reader.BaseStream.Position;
                 data.Unk_123_raw = reader.ReadSingle();
+                data.Unk_124_offset = reader.BaseStream.Position;
                 data.Unk_124_raw = reader.ReadSingle();
+                data.Unk_125_offset = reader.BaseStream.Position;
                 data.Unk_125_raw = reader.ReadSingle();
+                data.Unk_126_offset = reader.BaseStream.Position;
                 data.Unk_126_raw = reader.ReadSingle();
+                data.Unk_127_offset = reader.BaseStream.Position;
                 data.Unk_127_raw = reader.ReadSingle();
+                data.Unk_128_offset = reader.BaseStream.Position;
                 data.Unk_128_raw = reader.ReadSingle();
+                data.Unk_129_offset = reader.BaseStream.Position;
                 data.Unk_129_raw = reader.ReadSingle();
+                data.Unk_130_offset = reader.BaseStream.Position;
                 data.Unk_130_raw = reader.ReadSingle();
+                data.Unk_131_offset = reader.BaseStream.Position;
                 data.Unk_131_raw = reader.ReadSingle();
+                data.Unk_132_offset = reader.BaseStream.Position;
                 data.Unk_132_raw = reader.ReadSingle();
+                data.Unk_133_offset = reader.BaseStream.Position;
                 data.Unk_133_raw = reader.ReadSingle();
+                data.Unk_134_offset = reader.BaseStream.Position;
                 data.Unk_134_raw = reader.ReadSingle();
+                data.Unk_135_offset = reader.BaseStream.Position;
                 data.Unk_135_raw = reader.ReadSingle();
+                data.Unk_136_offset = reader.BaseStream.Position;
                 data.Unk_136_raw = reader.ReadSingle();
+                data.Unk_137_offset = reader.BaseStream.Position;
                 data.Unk_137_raw = reader.ReadSingle();
+                data.Unk_138_offset = reader.BaseStream.Position;
                 data.Unk_138_raw = reader.ReadSingle();
+                data.Unk_139_offset = reader.BaseStream.Position;
                 data.Unk_139_raw = reader.ReadSingle();
+                data.Unk_140_offset = reader.BaseStream.Position;
                 data.Unk_140_raw = reader.ReadSingle();
+                data.Unk_141_offset = reader.BaseStream.Position;
                 data.Unk_141_raw = reader.ReadSingle();
+                data.Unk_142_offset = reader.BaseStream.Position;
                 data.Unk_142_raw = reader.ReadSingle();
+                data.Unk_143_offset = reader.BaseStream.Position;
                 data.Unk_143_raw = reader.ReadSingle();
+                data.Unk_144_offset = reader.BaseStream.Position;
                 data.Unk_144_raw = reader.ReadSingle();
+                data.Unk_145_offset = reader.BaseStream.Position;
                 data.Unk_145_raw = reader.ReadSingle();
+                data.Unk_146_offset = reader.BaseStream.Position;
                 data.Unk_146_raw = reader.ReadSingle();
+                data.Unk_147_offset = reader.BaseStream.Position;
                 data.Unk_147_raw = reader.ReadSingle();
+                data.Unk_148_offset = reader.BaseStream.Position;
                 data.Unk_148_raw = reader.ReadSingle();
+                data.Unk_149_offset = reader.BaseStream.Position;
                 data.Unk_149_raw = reader.ReadSingle();
+                data.Unk_150_offset = reader.BaseStream.Position;
                 data.Unk_150_raw = reader.ReadSingle();
+                data.Unk_151_offset = reader.BaseStream.Position;
                 data.Unk_151_raw = reader.ReadSingle();
+                data.Unk_152_offset = reader.BaseStream.Position;
                 data.Unk_152_raw = reader.ReadSingle();
+                data.Unk_153_offset = reader.BaseStream.Position;
                 data.Unk_153_raw = reader.ReadSingle();
+                data.Unk_154_offset = reader.BaseStream.Position;
                 data.Unk_154_raw = reader.ReadSingle();
+                data.Unk_155_offset = reader.BaseStream.Position;
                 data.Unk_155_raw = reader.ReadSingle();
+                data.Unk_156_offset = reader.BaseStream.Position;
                 data.Unk_156_raw = reader.ReadSingle();
+                data.Unk_157_offset = reader.BaseStream.Position;
                 data.Unk_157_raw = reader.ReadSingle();
+                data.Unk_158_offset = reader.BaseStream.Position;
                 data.Unk_158_raw = reader.ReadSingle();
+                data.Unk_159_offset = reader.BaseStream.Position;
                 data.Unk_159_raw = reader.ReadSingle();
+                data.Unk_160_offset = reader.BaseStream.Position;
                 data.Unk_160_raw = reader.ReadSingle();
+                data.Unk_161_offset = reader.BaseStream.Position;
                 data.Unk_161_raw = reader.ReadSingle();
+                data.Unk_162_offset = reader.BaseStream.Position;
                 data.Unk_162_raw = reader.ReadSingle();
+                data.Unk_163_offset = reader.BaseStream.Position;
                 data.Unk_163_raw = reader.ReadSingle();
+                data.Unk_164_offset = reader.BaseStream.Position;
                 data.Unk_164_raw = reader.ReadSingle();
+                data.Unk_165_offset = reader.BaseStream.Position;
                 data.Unk_165_raw = reader.ReadSingle();
+                data.Unk_166_offset = reader.BaseStream.Position;
                 data.Unk_166_raw = reader.ReadSingle();
+                data.Unk_167_offset = reader.BaseStream.Position;
                 data.Unk_167_raw = reader.ReadSingle();
+                data.Unk_168_offset = reader.BaseStream.Position;
                 data.Unk_168_raw = reader.ReadSingle();
+                data.Unk_169_offset = reader.BaseStream.Position;
                 data.Unk_169_raw = reader.ReadSingle();
+                data.Unk_170_offset = reader.BaseStream.Position;
                 data.Unk_170_raw = reader.ReadSingle();
+                data.Unk_171_offset = reader.BaseStream.Position;
                 data.Unk_171_raw = reader.ReadSingle();
+                data.Unk_172_offset = reader.BaseStream.Position;
                 data.Unk_172_raw = reader.ReadSingle();
+                data.Unk_173_offset = reader.BaseStream.Position;
                 data.Unk_173_raw = reader.ReadSingle();
+                data.Unk_174_offset = reader.BaseStream.Position;
                 data.Unk_174_raw = reader.ReadByte();
+                data.Unk_175_offset = reader.BaseStream.Position;
                 data.Unk_175_raw = reader.ReadByte();
+                data.Unk_176_offset = reader.BaseStream.Position;
                 data.Unk_176_raw = reader.ReadByte();
+                data.Unk_177_offset = reader.BaseStream.Position;
                 data.Unk_177_raw = reader.ReadByte();
+                data.Unk_178_offset = reader.BaseStream.Position;
                 data.Unk_178_raw = reader.ReadUInt16();
+                data.Unk_179_offset = reader.BaseStream.Position;
                 data.Unk_179_raw = reader.ReadUInt16();
+                data.Unk_180_offset = reader.BaseStream.Position;
                 data.Unk_180_raw = reader.ReadUInt16();
+                data.Unk_181_offset = reader.BaseStream.Position;
                 data.Unk_181_raw = reader.ReadUInt16();
+                data.Unk_182_offset = reader.BaseStream.Position;
                 data.Unk_182_raw = reader.ReadUInt16();
+                data.Unk_183_offset = reader.BaseStream.Position;
                 data.Unk_183_raw = reader.ReadUInt16();
+                data.Unk_184_offset = reader.BaseStream.Position;
                 data.Unk_184_raw = reader.ReadUInt16();
+                data.Unk_185_offset = reader.BaseStream.Position;
                 data.Unk_185_raw = reader.ReadUInt16();
+                data.Unk_186_offset = reader.BaseStream.Position;
                 data.Unk_186_raw = reader.ReadUInt16();
+                data.Unk_187_offset = reader.BaseStream.Position;
                 data.Unk_187_raw = reader.ReadUInt16();
+                data.Unk_188_offset = reader.BaseStream.Position;
                 data.Unk_188_raw = reader.ReadByte();
+                data.Unk_189_offset = reader.BaseStream.Position;
                 data.Unk_189_raw = reader.ReadByte();
+                data.Unk_190_offset = reader.BaseStream.Position;
                 data.Unk_190_raw = reader.ReadByte();
+                data.Unk_191_offset = reader.BaseStream.Position;
                 data.Unk_191_raw = reader.ReadByte();
+                data.Unk_192_offset = reader.BaseStream.Position;
                 data.Unk_192_raw = reader.ReadUInt16();
+                data.Unk_193_offset = reader.BaseStream.Position;
                 data.Unk_193_raw = reader.ReadUInt16();
+                data.Unk_194_offset = reader.BaseStream.Position;
                 data.Unk_194_raw = reader.ReadUInt16();
+                data.Unk_195_offset = reader.BaseStream.Position;
                 data.Unk_195_raw = reader.ReadUInt16();
+                data.Unk_196_offset = reader.BaseStream.Position;
                 data.Unk_196_raw = reader.ReadUInt16();
+                data.Unk_197_offset = reader.BaseStream.Position;
                 data.Unk_197_raw = reader.ReadUInt16();
+                data.Unk_198_offset = reader.BaseStream.Position;
                 data.Unk_198_raw = reader.ReadUInt16();
+                data.Unk_199_offset = reader.BaseStream.Position;
                 data.Unk_199_raw = reader.ReadUInt16();
+                data.Unk_200_offset = reader.BaseStream.Position;
                 data.Unk_200_raw = reader.ReadUInt16();
+                data.Unk_201_offset = reader.BaseStream.Position;
                 data.Unk_201_raw = reader.ReadUInt16();
+                data.Unk_202_offset = reader.BaseStream.Position;
                 data.Unk_202_raw = reader.ReadUInt16();
+                data.Unk_203_offset = reader.BaseStream.Position;
                 data.Unk_203_raw = reader.ReadUInt16();
+                data.Unk_204_offset = reader.BaseStream.Position;
                 data.Unk_204_raw = reader.ReadUInt16();
+                data.Unk_205_offset = reader.BaseStream.Position;
                 data.Unk_205_raw = reader.ReadUInt16();
+                data.Unk_206_offset = reader.BaseStream.Position;
                 data.Unk_206_raw = reader.ReadUInt16();
+                data.Unk_207_offset = reader.BaseStream.Position;
                 data.Unk_207_raw = reader.ReadUInt16();
+                data.Unk_208_offset = reader.BaseStream.Position;
                 data.Unk_208_raw = reader.ReadUInt16();
+                data.Unk_209_offset = reader.BaseStream.Position;
                 data.Unk_209_raw = reader.ReadUInt16();
+                data.Unk_210_offset = reader.BaseStream.Position;
                 data.Unk_210_raw = reader.ReadUInt16();
+                data.Unk_211_offset = reader.BaseStream.Position;
                 data.Unk_211_raw = reader.ReadUInt16();
+                data.Unk_212_offset = reader.BaseStream.Position;
                 data.Unk_212_raw = reader.ReadByte();
+                data.Unk_213_offset = reader.BaseStream.Position;
                 data.Unk_213_raw = reader.ReadUInt16();
+                data.Unk_214_offset = reader.BaseStream.Position;
                 data.Unk_214_raw = reader.ReadUInt16();
+                data.Unk_215_offset = reader.BaseStream.Position;
                 data.Unk_215_raw = reader.ReadSingle();
+                data.Unk_216_offset = reader.BaseStream.Position;
                 data.Unk_216_raw = reader.ReadUInt16();
+                data.Unk_217_offset = reader.BaseStream.Position;
                 data.Unk_217_raw = reader.ReadSingle();
+                data.Unk_218_offset = reader.BaseStream.Position;
                 data.Unk_218_raw = reader.ReadSingle();
+                data.Unk_219_offset = reader.BaseStream.Position;
                 data.Unk_219_raw = reader.ReadSingle();
+                data.Unk_220_offset = reader.BaseStream.Position;
                 data.Unk_220_raw = reader.ReadSingle();
+                data.Unk_221_offset = reader.BaseStream.Position;
                 data.Unk_221_raw = reader.ReadSingle();
+                data.Unk_222_offset = reader.BaseStream.Position;
                 data.Unk_222_raw = reader.ReadSingle();
+                data.Unk_223_offset = reader.BaseStream.Position;
                 data.Unk_223_raw = reader.ReadSingle();
+                data.Unk_224_offset = reader.BaseStream.Position;
                 data.Unk_224_raw = reader.ReadSingle();
+                data.Unk_225_offset = reader.BaseStream.Position;
                 data.Unk_225_raw = reader.ReadSingle();
+                data.Unk_226_offset = reader.BaseStream.Position;
                 data.Unk_226_raw = reader.ReadSingle();
+                data.Unk_227_offset = reader.BaseStream.Position;
                 data.Unk_227_raw = reader.ReadSingle();
+                data.Unk_228_offset = reader.BaseStream.Position;
                 data.Unk_228_raw = reader.ReadSingle();
+                data.Unk_229_offset = reader.BaseStream.Position;
                 data.Unk_229_raw = reader.ReadSingle();
+                data.Unk_230_offset = reader.BaseStream.Position;
                 data.Unk_230_raw = reader.ReadSingle();
+                data.Unk_231_offset = reader.BaseStream.Position;
                 data.Unk_231_raw = reader.ReadByte();
+                data.Unk_232_offset = reader.BaseStream.Position;
                 data.Unk_232_raw = reader.ReadSingle();
+                data.Unk_233_offset = reader.BaseStream.Position;
                 data.Unk_233_raw = reader.ReadByte();
+                data.Unk_234_offset = reader.BaseStream.Position;
                 data.Unk_234_raw = reader.ReadByte();
+                data.Unk_235_offset = reader.BaseStream.Position;
                 data.Unk_235_raw = reader.ReadByte();
+                data.Unk_236_offset = reader.BaseStream.Position;
                 data.Unk_236_raw = reader.ReadSingle();
+                data.Unk_237_offset = reader.BaseStream.Position;
                 data.Unk_237_raw = reader.ReadSingle();
+                data.Unk_238_offset = reader.BaseStream.Position;
                 data.Unk_238_raw = reader.ReadUInt32();
+                data.Unk_239_offset = reader.BaseStream.Position;
                 data.Unk_239_raw = reader.ReadInt16();
                 return data;
             }
@@ -4818,155 +5778,155 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 91", "Unk_91"),
-                    new MultiStructItemCustomView(this, "Unk 92", "Unk_92"),
-                    new MultiStructItemCustomView(this, "Unk 93", "Unk_93"),
-                    new MultiStructItemCustomView(this, "Unk 94", "Unk_94"),
-                    new MultiStructItemCustomView(this, "Unk 95", "Unk_95"),
-                    new MultiStructItemCustomView(this, "Unk 96", "Unk_96"),
-                    new MultiStructItemCustomView(this, "Unk 97", "Unk_97"),
-                    new MultiStructItemCustomView(this, "Unk 98", "Unk_98"),
-                    new MultiStructItemCustomView(this, "Unk 99", "Unk_99"),
-                    new MultiStructItemCustomView(this, "Unk 100", "Unk_100"),
-                    new MultiStructItemCustomView(this, "Unk 101", "Unk_101"),
-                    new MultiStructItemCustomView(this, "Unk 102", "Unk_102"),
-                    new MultiStructItemCustomView(this, "Unk 103", "Unk_103"),
-                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104"),
-                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105"),
-                    new MultiStructItemCustomView(this, "Unk 106", "Unk_106"),
-                    new MultiStructItemCustomView(this, "Unk 107", "Unk_107"),
-                    new MultiStructItemCustomView(this, "Unk 108", "Unk_108"),
-                    new MultiStructItemCustomView(this, "Unk 109", "Unk_109"),
-                    new MultiStructItemCustomView(this, "Unk 110", "Unk_110"),
-                    new MultiStructItemCustomView(this, "Unk 111", "Unk_111"),
-                    new MultiStructItemCustomView(this, "Unk 112", "Unk_112"),
-                    new MultiStructItemCustomView(this, "Unk 113", "Unk_113"),
-                    new MultiStructItemCustomView(this, "Unk 114", "Unk_114"),
-                    new MultiStructItemCustomView(this, "Unk 115", "Unk_115"),
-                    new MultiStructItemCustomView(this, "Unk 116", "Unk_116"),
-                    new MultiStructItemCustomView(this, "Unk 117", "Unk_117"),
-                    new MultiStructItemCustomView(this, "Unk 118", "Unk_118"),
-                    new MultiStructItemCustomView(this, "Unk 119", "Unk_119"),
-                    new MultiStructItemCustomView(this, "Unk 120", "Unk_120"),
-                    new MultiStructItemCustomView(this, "Unk 121", "Unk_121"),
-                    new MultiStructItemCustomView(this, "Unk 122", "Unk_122"),
-                    new MultiStructItemCustomView(this, "Unk 123", "Unk_123"),
-                    new MultiStructItemCustomView(this, "Unk 124", "Unk_124"),
-                    new MultiStructItemCustomView(this, "Unk 125", "Unk_125"),
-                    new MultiStructItemCustomView(this, "Unk 126", "Unk_126"),
-                    new MultiStructItemCustomView(this, "Unk 127", "Unk_127"),
-                    new MultiStructItemCustomView(this, "Unk 128", "Unk_128"),
-                    new MultiStructItemCustomView(this, "Unk 129", "Unk_129"),
-                    new MultiStructItemCustomView(this, "Unk 130", "Unk_130"),
-                    new MultiStructItemCustomView(this, "Unk 131", "Unk_131"),
-                    new MultiStructItemCustomView(this, "Unk 132", "Unk_132"),
-                    new MultiStructItemCustomView(this, "Unk 133", "Unk_133"),
-                    new MultiStructItemCustomView(this, "Unk 134", "Unk_134"),
-                    new MultiStructItemCustomView(this, "Unk 135", "Unk_135"),
-                    new MultiStructItemCustomView(this, "Unk 136", "Unk_136"),
-                    new MultiStructItemCustomView(this, "Unk 137", "Unk_137"),
-                    new MultiStructItemCustomView(this, "Unk 138", "Unk_138"),
-                    new MultiStructItemCustomView(this, "Unk 139", "Unk_139"),
-                    new MultiStructItemCustomView(this, "Unk 140", "Unk_140"),
-                    new MultiStructItemCustomView(this, "Unk 141", "Unk_141"),
-                    new MultiStructItemCustomView(this, "Unk 142", "Unk_142"),
-                    new MultiStructItemCustomView(this, "Unk 143", "Unk_143"),
-                    new MultiStructItemCustomView(this, "Unk 144", "Unk_144"),
-                    new MultiStructItemCustomView(this, "Unk 145", "Unk_145"),
-                    new MultiStructItemCustomView(this, "Unk 146", "Unk_146"),
-                    new MultiStructItemCustomView(this, "Unk 147", "Unk_147"),
-                    new MultiStructItemCustomView(this, "Unk 148", "Unk_148"),
-                    new MultiStructItemCustomView(this, "Unk 149", "Unk_149"),
-                    new MultiStructItemCustomView(this, "Unk 150", "Unk_150"),
-                    new MultiStructItemCustomView(this, "Unk 151", "Unk_151"),
-                    new MultiStructItemCustomView(this, "Unk 152", "Unk_152"),
-                    new MultiStructItemCustomView(this, "Unk 153", "Unk_153"),
-                    new MultiStructItemCustomView(this, "Unk 154", "Unk_154"),
-                    new MultiStructItemCustomView(this, "Unk 155", "Unk_155"),
-                    new MultiStructItemCustomView(this, "Unk 156", "Unk_156"),
-                    new MultiStructItemCustomView(this, "Unk 157", "Unk_157"),
-                    new MultiStructItemCustomView(this, "Unk 158", "Unk_158"),
-                    new MultiStructItemCustomView(this, "Unk 159", "Unk_159"),
-                    new MultiStructItemCustomView(this, "Unk 160", "Unk_160"),
-                    new MultiStructItemCustomView(this, "Unk 161", "Unk_161"),
-                    new MultiStructItemCustomView(this, "Unk 162", "Unk_162"),
-                    new MultiStructItemCustomView(this, "Unk 163", "Unk_163"),
-                    new MultiStructItemCustomView(this, "Unk 164", "Unk_164"),
-                    new MultiStructItemCustomView(this, "Unk 165", "Unk_165"),
-                    new MultiStructItemCustomView(this, "Unk 166", "Unk_166"),
-                    new MultiStructItemCustomView(this, "Unk 167", "Unk_167"),
-                    new MultiStructItemCustomView(this, "Unk 168", "Unk_168"),
-                    new MultiStructItemCustomView(this, "Unk 169", "Unk_169"),
-                    new MultiStructItemCustomView(this, "Unk 170", "Unk_170"),
-                    new MultiStructItemCustomView(this, "Unk 171", "Unk_171"),
-                    new MultiStructItemCustomView(this, "Unk 172", "Unk_172"),
-                    new MultiStructItemCustomView(this, "Unk 173", "Unk_173"),
-                    new MultiStructItemCustomView(this, "Unk 174", "Unk_174"),
-                    new MultiStructItemCustomView(this, "Unk 175", "Unk_175"),
-                    new MultiStructItemCustomView(this, "Unk 176", "Unk_176"),
-                    new MultiStructItemCustomView(this, "Unk 177", "Unk_177"),
-                    new MultiStructItemCustomView(this, "Unk 178", "Unk_178"),
-                    new MultiStructItemCustomView(this, "Unk 179", "Unk_179"),
-                    new MultiStructItemCustomView(this, "Unk 180", "Unk_180"),
-                    new MultiStructItemCustomView(this, "Unk 181", "Unk_181"),
-                    new MultiStructItemCustomView(this, "Unk 182", "Unk_182"),
-                    new MultiStructItemCustomView(this, "Unk 183", "Unk_183"),
-                    new MultiStructItemCustomView(this, "Unk 184", "Unk_184"),
-                    new MultiStructItemCustomView(this, "Unk 185", "Unk_185"),
-                    new MultiStructItemCustomView(this, "Unk 186", "Unk_186"),
-                    new MultiStructItemCustomView(this, "Unk 187", "Unk_187"),
-                    new MultiStructItemCustomView(this, "Unk 188", "Unk_188"),
-                    new MultiStructItemCustomView(this, "Unk 189", "Unk_189"),
-                    new MultiStructItemCustomView(this, "Unk 190", "Unk_190"),
-                    new MultiStructItemCustomView(this, "Unk 191", "Unk_191"),
-                    new MultiStructItemCustomView(this, "Unk 192", "Unk_192"),
-                    new MultiStructItemCustomView(this, "Unk 193", "Unk_193"),
-                    new MultiStructItemCustomView(this, "Unk 194", "Unk_194"),
-                    new MultiStructItemCustomView(this, "Unk 195", "Unk_195"),
-                    new MultiStructItemCustomView(this, "Unk 196", "Unk_196"),
-                    new MultiStructItemCustomView(this, "Unk 197", "Unk_197"),
-                    new MultiStructItemCustomView(this, "Unk 198", "Unk_198"),
-                    new MultiStructItemCustomView(this, "Unk 199", "Unk_199"),
-                    new MultiStructItemCustomView(this, "Unk 200", "Unk_200"),
-                    new MultiStructItemCustomView(this, "Unk 201", "Unk_201"),
-                    new MultiStructItemCustomView(this, "Unk 202", "Unk_202"),
-                    new MultiStructItemCustomView(this, "Unk 203", "Unk_203"),
-                    new MultiStructItemCustomView(this, "Unk 204", "Unk_204"),
-                    new MultiStructItemCustomView(this, "Unk 205", "Unk_205"),
-                    new MultiStructItemCustomView(this, "Unk 206", "Unk_206"),
-                    new MultiStructItemCustomView(this, "Unk 207", "Unk_207"),
-                    new MultiStructItemCustomView(this, "Unk 208", "Unk_208"),
-                    new MultiStructItemCustomView(this, "Unk 209", "Unk_209"),
-                    new MultiStructItemCustomView(this, "Unk 210", "Unk_210"),
-                    new MultiStructItemCustomView(this, "Unk 211", "Unk_211"),
-                    new MultiStructItemCustomView(this, "Unk 212", "Unk_212"),
-                    new MultiStructItemCustomView(this, "Unk 213", "Unk_213"),
-                    new MultiStructItemCustomView(this, "Unk 214", "Unk_214"),
-                    new MultiStructItemCustomView(this, "Unk 215", "Unk_215"),
-                    new MultiStructItemCustomView(this, "Unk 216", "Unk_216"),
-                    new MultiStructItemCustomView(this, "Unk 217", "Unk_217"),
-                    new MultiStructItemCustomView(this, "Unk 218", "Unk_218"),
-                    new MultiStructItemCustomView(this, "Unk 219", "Unk_219"),
-                    new MultiStructItemCustomView(this, "Unk 220", "Unk_220"),
-                    new MultiStructItemCustomView(this, "Unk 221", "Unk_221"),
-                    new MultiStructItemCustomView(this, "Unk 222", "Unk_222"),
-                    new MultiStructItemCustomView(this, "Unk 223", "Unk_223"),
-                    new MultiStructItemCustomView(this, "Unk 224", "Unk_224"),
-                    new MultiStructItemCustomView(this, "Unk 225", "Unk_225"),
-                    new MultiStructItemCustomView(this, "Unk 226", "Unk_226"),
-                    new MultiStructItemCustomView(this, "Unk 227", "Unk_227"),
-                    new MultiStructItemCustomView(this, "Unk 228", "Unk_228"),
-                    new MultiStructItemCustomView(this, "Unk 229", "Unk_229"),
-                    new MultiStructItemCustomView(this, "Unk 230", "Unk_230"),
-                    new MultiStructItemCustomView(this, "Unk 231", "Unk_231"),
-                    new MultiStructItemCustomView(this, "Unk 232", "Unk_232"),
-                    new MultiStructItemCustomView(this, "Unk 233", "Unk_233"),
-                    new MultiStructItemCustomView(this, "Unk 234", "Unk_234"),
-                    new MultiStructItemCustomView(this, "Unk 235", "Unk_235"),
-                    new MultiStructItemCustomView(this, "Unk 236", "Unk_236"),
-                    new MultiStructItemCustomView(this, "Unk 237", "Unk_237"),
-                    new MultiStructItemCustomView(this, "Unk 238", "Unk_238"),
-                    new MultiStructItemCustomView(this, "Unk 239", "Unk_239"),
+                    new MultiStructItemCustomView(this, "Unk 91", "Unk_91", "Unk_91_offset"),
+                    new MultiStructItemCustomView(this, "Unk 92", "Unk_92", "Unk_92_offset"),
+                    new MultiStructItemCustomView(this, "Unk 93", "Unk_93", "Unk_93_offset"),
+                    new MultiStructItemCustomView(this, "Unk 94", "Unk_94", "Unk_94_offset"),
+                    new MultiStructItemCustomView(this, "Unk 95", "Unk_95", "Unk_95_offset"),
+                    new MultiStructItemCustomView(this, "Unk 96", "Unk_96", "Unk_96_offset"),
+                    new MultiStructItemCustomView(this, "Unk 97", "Unk_97", "Unk_97_offset"),
+                    new MultiStructItemCustomView(this, "Unk 98", "Unk_98", "Unk_98_offset"),
+                    new MultiStructItemCustomView(this, "Unk 99", "Unk_99", "Unk_99_offset"),
+                    new MultiStructItemCustomView(this, "Unk 100", "Unk_100", "Unk_100_offset"),
+                    new MultiStructItemCustomView(this, "Unk 101", "Unk_101", "Unk_101_offset"),
+                    new MultiStructItemCustomView(this, "Unk 102", "Unk_102", "Unk_102_offset"),
+                    new MultiStructItemCustomView(this, "Unk 103", "Unk_103", "Unk_103_offset"),
+                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104", "Unk_104_offset"),
+                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105", "Unk_105_offset"),
+                    new MultiStructItemCustomView(this, "Unk 106", "Unk_106", "Unk_106_offset"),
+                    new MultiStructItemCustomView(this, "Unk 107", "Unk_107", "Unk_107_offset"),
+                    new MultiStructItemCustomView(this, "Unk 108", "Unk_108", "Unk_108_offset"),
+                    new MultiStructItemCustomView(this, "Unk 109", "Unk_109", "Unk_109_offset"),
+                    new MultiStructItemCustomView(this, "Unk 110", "Unk_110", "Unk_110_offset"),
+                    new MultiStructItemCustomView(this, "Unk 111", "Unk_111", "Unk_111_offset"),
+                    new MultiStructItemCustomView(this, "Unk 112", "Unk_112", "Unk_112_offset"),
+                    new MultiStructItemCustomView(this, "Unk 113", "Unk_113", "Unk_113_offset"),
+                    new MultiStructItemCustomView(this, "Unk 114", "Unk_114", "Unk_114_offset"),
+                    new MultiStructItemCustomView(this, "Unk 115", "Unk_115", "Unk_115_offset"),
+                    new MultiStructItemCustomView(this, "Unk 116", "Unk_116", "Unk_116_offset"),
+                    new MultiStructItemCustomView(this, "Unk 117", "Unk_117", "Unk_117_offset"),
+                    new MultiStructItemCustomView(this, "Unk 118", "Unk_118", "Unk_118_offset"),
+                    new MultiStructItemCustomView(this, "Unk 119", "Unk_119", "Unk_119_offset"),
+                    new MultiStructItemCustomView(this, "Unk 120", "Unk_120", "Unk_120_offset"),
+                    new MultiStructItemCustomView(this, "Unk 121", "Unk_121", "Unk_121_offset"),
+                    new MultiStructItemCustomView(this, "Unk 122", "Unk_122", "Unk_122_offset"),
+                    new MultiStructItemCustomView(this, "Unk 123", "Unk_123", "Unk_123_offset"),
+                    new MultiStructItemCustomView(this, "Unk 124", "Unk_124", "Unk_124_offset"),
+                    new MultiStructItemCustomView(this, "Unk 125", "Unk_125", "Unk_125_offset"),
+                    new MultiStructItemCustomView(this, "Unk 126", "Unk_126", "Unk_126_offset"),
+                    new MultiStructItemCustomView(this, "Unk 127", "Unk_127", "Unk_127_offset"),
+                    new MultiStructItemCustomView(this, "Unk 128", "Unk_128", "Unk_128_offset"),
+                    new MultiStructItemCustomView(this, "Unk 129", "Unk_129", "Unk_129_offset"),
+                    new MultiStructItemCustomView(this, "Unk 130", "Unk_130", "Unk_130_offset"),
+                    new MultiStructItemCustomView(this, "Unk 131", "Unk_131", "Unk_131_offset"),
+                    new MultiStructItemCustomView(this, "Unk 132", "Unk_132", "Unk_132_offset"),
+                    new MultiStructItemCustomView(this, "Unk 133", "Unk_133", "Unk_133_offset"),
+                    new MultiStructItemCustomView(this, "Unk 134", "Unk_134", "Unk_134_offset"),
+                    new MultiStructItemCustomView(this, "Unk 135", "Unk_135", "Unk_135_offset"),
+                    new MultiStructItemCustomView(this, "Unk 136", "Unk_136", "Unk_136_offset"),
+                    new MultiStructItemCustomView(this, "Unk 137", "Unk_137", "Unk_137_offset"),
+                    new MultiStructItemCustomView(this, "Unk 138", "Unk_138", "Unk_138_offset"),
+                    new MultiStructItemCustomView(this, "Unk 139", "Unk_139", "Unk_139_offset"),
+                    new MultiStructItemCustomView(this, "Unk 140", "Unk_140", "Unk_140_offset"),
+                    new MultiStructItemCustomView(this, "Unk 141", "Unk_141", "Unk_141_offset"),
+                    new MultiStructItemCustomView(this, "Unk 142", "Unk_142", "Unk_142_offset"),
+                    new MultiStructItemCustomView(this, "Unk 143", "Unk_143", "Unk_143_offset"),
+                    new MultiStructItemCustomView(this, "Unk 144", "Unk_144", "Unk_144_offset"),
+                    new MultiStructItemCustomView(this, "Unk 145", "Unk_145", "Unk_145_offset"),
+                    new MultiStructItemCustomView(this, "Unk 146", "Unk_146", "Unk_146_offset"),
+                    new MultiStructItemCustomView(this, "Unk 147", "Unk_147", "Unk_147_offset"),
+                    new MultiStructItemCustomView(this, "Unk 148", "Unk_148", "Unk_148_offset"),
+                    new MultiStructItemCustomView(this, "Unk 149", "Unk_149", "Unk_149_offset"),
+                    new MultiStructItemCustomView(this, "Unk 150", "Unk_150", "Unk_150_offset"),
+                    new MultiStructItemCustomView(this, "Unk 151", "Unk_151", "Unk_151_offset"),
+                    new MultiStructItemCustomView(this, "Unk 152", "Unk_152", "Unk_152_offset"),
+                    new MultiStructItemCustomView(this, "Unk 153", "Unk_153", "Unk_153_offset"),
+                    new MultiStructItemCustomView(this, "Unk 154", "Unk_154", "Unk_154_offset"),
+                    new MultiStructItemCustomView(this, "Unk 155", "Unk_155", "Unk_155_offset"),
+                    new MultiStructItemCustomView(this, "Unk 156", "Unk_156", "Unk_156_offset"),
+                    new MultiStructItemCustomView(this, "Unk 157", "Unk_157", "Unk_157_offset"),
+                    new MultiStructItemCustomView(this, "Unk 158", "Unk_158", "Unk_158_offset"),
+                    new MultiStructItemCustomView(this, "Unk 159", "Unk_159", "Unk_159_offset"),
+                    new MultiStructItemCustomView(this, "Unk 160", "Unk_160", "Unk_160_offset"),
+                    new MultiStructItemCustomView(this, "Unk 161", "Unk_161", "Unk_161_offset"),
+                    new MultiStructItemCustomView(this, "Unk 162", "Unk_162", "Unk_162_offset"),
+                    new MultiStructItemCustomView(this, "Unk 163", "Unk_163", "Unk_163_offset"),
+                    new MultiStructItemCustomView(this, "Unk 164", "Unk_164", "Unk_164_offset"),
+                    new MultiStructItemCustomView(this, "Unk 165", "Unk_165", "Unk_165_offset"),
+                    new MultiStructItemCustomView(this, "Unk 166", "Unk_166", "Unk_166_offset"),
+                    new MultiStructItemCustomView(this, "Unk 167", "Unk_167", "Unk_167_offset"),
+                    new MultiStructItemCustomView(this, "Unk 168", "Unk_168", "Unk_168_offset"),
+                    new MultiStructItemCustomView(this, "Unk 169", "Unk_169", "Unk_169_offset"),
+                    new MultiStructItemCustomView(this, "Unk 170", "Unk_170", "Unk_170_offset"),
+                    new MultiStructItemCustomView(this, "Unk 171", "Unk_171", "Unk_171_offset"),
+                    new MultiStructItemCustomView(this, "Unk 172", "Unk_172", "Unk_172_offset"),
+                    new MultiStructItemCustomView(this, "Unk 173", "Unk_173", "Unk_173_offset"),
+                    new MultiStructItemCustomView(this, "Unk 174", "Unk_174", "Unk_174_offset"),
+                    new MultiStructItemCustomView(this, "Unk 175", "Unk_175", "Unk_175_offset"),
+                    new MultiStructItemCustomView(this, "Unk 176", "Unk_176", "Unk_176_offset"),
+                    new MultiStructItemCustomView(this, "Unk 177", "Unk_177", "Unk_177_offset"),
+                    new MultiStructItemCustomView(this, "Unk 178", "Unk_178", "Unk_178_offset"),
+                    new MultiStructItemCustomView(this, "Unk 179", "Unk_179", "Unk_179_offset"),
+                    new MultiStructItemCustomView(this, "Unk 180", "Unk_180", "Unk_180_offset"),
+                    new MultiStructItemCustomView(this, "Unk 181", "Unk_181", "Unk_181_offset"),
+                    new MultiStructItemCustomView(this, "Unk 182", "Unk_182", "Unk_182_offset"),
+                    new MultiStructItemCustomView(this, "Unk 183", "Unk_183", "Unk_183_offset"),
+                    new MultiStructItemCustomView(this, "Unk 184", "Unk_184", "Unk_184_offset"),
+                    new MultiStructItemCustomView(this, "Unk 185", "Unk_185", "Unk_185_offset"),
+                    new MultiStructItemCustomView(this, "Unk 186", "Unk_186", "Unk_186_offset"),
+                    new MultiStructItemCustomView(this, "Unk 187", "Unk_187", "Unk_187_offset"),
+                    new MultiStructItemCustomView(this, "Unk 188", "Unk_188", "Unk_188_offset"),
+                    new MultiStructItemCustomView(this, "Unk 189", "Unk_189", "Unk_189_offset"),
+                    new MultiStructItemCustomView(this, "Unk 190", "Unk_190", "Unk_190_offset"),
+                    new MultiStructItemCustomView(this, "Unk 191", "Unk_191", "Unk_191_offset"),
+                    new MultiStructItemCustomView(this, "Unk 192", "Unk_192", "Unk_192_offset"),
+                    new MultiStructItemCustomView(this, "Unk 193", "Unk_193", "Unk_193_offset"),
+                    new MultiStructItemCustomView(this, "Unk 194", "Unk_194", "Unk_194_offset"),
+                    new MultiStructItemCustomView(this, "Unk 195", "Unk_195", "Unk_195_offset"),
+                    new MultiStructItemCustomView(this, "Unk 196", "Unk_196", "Unk_196_offset"),
+                    new MultiStructItemCustomView(this, "Unk 197", "Unk_197", "Unk_197_offset"),
+                    new MultiStructItemCustomView(this, "Unk 198", "Unk_198", "Unk_198_offset"),
+                    new MultiStructItemCustomView(this, "Unk 199", "Unk_199", "Unk_199_offset"),
+                    new MultiStructItemCustomView(this, "Unk 200", "Unk_200", "Unk_200_offset"),
+                    new MultiStructItemCustomView(this, "Unk 201", "Unk_201", "Unk_201_offset"),
+                    new MultiStructItemCustomView(this, "Unk 202", "Unk_202", "Unk_202_offset"),
+                    new MultiStructItemCustomView(this, "Unk 203", "Unk_203", "Unk_203_offset"),
+                    new MultiStructItemCustomView(this, "Unk 204", "Unk_204", "Unk_204_offset"),
+                    new MultiStructItemCustomView(this, "Unk 205", "Unk_205", "Unk_205_offset"),
+                    new MultiStructItemCustomView(this, "Unk 206", "Unk_206", "Unk_206_offset"),
+                    new MultiStructItemCustomView(this, "Unk 207", "Unk_207", "Unk_207_offset"),
+                    new MultiStructItemCustomView(this, "Unk 208", "Unk_208", "Unk_208_offset"),
+                    new MultiStructItemCustomView(this, "Unk 209", "Unk_209", "Unk_209_offset"),
+                    new MultiStructItemCustomView(this, "Unk 210", "Unk_210", "Unk_210_offset"),
+                    new MultiStructItemCustomView(this, "Unk 211", "Unk_211", "Unk_211_offset"),
+                    new MultiStructItemCustomView(this, "Unk 212", "Unk_212", "Unk_212_offset"),
+                    new MultiStructItemCustomView(this, "Unk 213", "Unk_213", "Unk_213_offset"),
+                    new MultiStructItemCustomView(this, "Unk 214", "Unk_214", "Unk_214_offset"),
+                    new MultiStructItemCustomView(this, "Unk 215", "Unk_215", "Unk_215_offset"),
+                    new MultiStructItemCustomView(this, "Unk 216", "Unk_216", "Unk_216_offset"),
+                    new MultiStructItemCustomView(this, "Unk 217", "Unk_217", "Unk_217_offset"),
+                    new MultiStructItemCustomView(this, "Unk 218", "Unk_218", "Unk_218_offset"),
+                    new MultiStructItemCustomView(this, "Unk 219", "Unk_219", "Unk_219_offset"),
+                    new MultiStructItemCustomView(this, "Unk 220", "Unk_220", "Unk_220_offset"),
+                    new MultiStructItemCustomView(this, "Unk 221", "Unk_221", "Unk_221_offset"),
+                    new MultiStructItemCustomView(this, "Unk 222", "Unk_222", "Unk_222_offset"),
+                    new MultiStructItemCustomView(this, "Unk 223", "Unk_223", "Unk_223_offset"),
+                    new MultiStructItemCustomView(this, "Unk 224", "Unk_224", "Unk_224_offset"),
+                    new MultiStructItemCustomView(this, "Unk 225", "Unk_225", "Unk_225_offset"),
+                    new MultiStructItemCustomView(this, "Unk 226", "Unk_226", "Unk_226_offset"),
+                    new MultiStructItemCustomView(this, "Unk 227", "Unk_227", "Unk_227_offset"),
+                    new MultiStructItemCustomView(this, "Unk 228", "Unk_228", "Unk_228_offset"),
+                    new MultiStructItemCustomView(this, "Unk 229", "Unk_229", "Unk_229_offset"),
+                    new MultiStructItemCustomView(this, "Unk 230", "Unk_230", "Unk_230_offset"),
+                    new MultiStructItemCustomView(this, "Unk 231", "Unk_231", "Unk_231_offset"),
+                    new MultiStructItemCustomView(this, "Unk 232", "Unk_232", "Unk_232_offset"),
+                    new MultiStructItemCustomView(this, "Unk 233", "Unk_233", "Unk_233_offset"),
+                    new MultiStructItemCustomView(this, "Unk 234", "Unk_234", "Unk_234_offset"),
+                    new MultiStructItemCustomView(this, "Unk 235", "Unk_235", "Unk_235_offset"),
+                    new MultiStructItemCustomView(this, "Unk 236", "Unk_236", "Unk_236_offset"),
+                    new MultiStructItemCustomView(this, "Unk 237", "Unk_237", "Unk_237_offset"),
+                    new MultiStructItemCustomView(this, "Unk 238", "Unk_238", "Unk_238_offset"),
+                    new MultiStructItemCustomView(this, "Unk 239", "Unk_239", "Unk_239_offset"),
                 };
             }
         }
@@ -5227,6 +6187,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_240_offset { get; private set; }
+
             protected float Unk_241_raw;
             public const string Unk_241_displayName = "Unk 241";
             public const int Unk_241_sortIndex = 100;
@@ -5241,6 +6204,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_241));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_241_offset { get; private set; }
 
             protected float Unk_242_raw;
             public const string Unk_242_displayName = "Unk 242";
@@ -5257,6 +6223,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_242_offset { get; private set; }
+
             protected float Unk_243_raw;
             public const string Unk_243_displayName = "Unk 243";
             public const int Unk_243_sortIndex = 200;
@@ -5271,6 +6240,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_243));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_243_offset { get; private set; }
 
             protected float Unk_244_raw;
             public const string Unk_244_displayName = "Unk 244";
@@ -5287,6 +6259,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_244_offset { get; private set; }
+
             protected float Unk_245_raw;
             public const string Unk_245_displayName = "Unk 245";
             public const int Unk_245_sortIndex = 300;
@@ -5301,6 +6276,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_245));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_245_offset { get; private set; }
 
             protected float Unk_246_raw;
             public const string Unk_246_displayName = "Unk 246";
@@ -5317,6 +6295,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_246_offset { get; private set; }
+
             protected float Unk_247_raw;
             public const string Unk_247_displayName = "Unk 247";
             public const int Unk_247_sortIndex = 400;
@@ -5331,6 +6312,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_247));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_247_offset { get; private set; }
 
             protected float Unk_248_raw;
             public const string Unk_248_displayName = "Unk 248";
@@ -5347,6 +6331,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_248_offset { get; private set; }
+
             protected float Unk_249_raw;
             public const string Unk_249_displayName = "Unk 249";
             public const int Unk_249_sortIndex = 500;
@@ -5361,6 +6348,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_249));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_249_offset { get; private set; }
 
             protected float Unk_250_raw;
             public const string Unk_250_displayName = "Unk 250";
@@ -5377,6 +6367,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_250_offset { get; private set; }
+
             protected float Unk_251_raw;
             public const string Unk_251_displayName = "Unk 251";
             public const int Unk_251_sortIndex = 600;
@@ -5391,6 +6384,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_251));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_251_offset { get; private set; }
 
             protected float Unk_252_raw;
             public const string Unk_252_displayName = "Unk 252";
@@ -5407,6 +6403,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_252_offset { get; private set; }
+
             protected float Unk_253_raw;
             public const string Unk_253_displayName = "Unk 253";
             public const int Unk_253_sortIndex = 700;
@@ -5421,6 +6420,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_253));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_253_offset { get; private set; }
 
             protected float Unk_254_raw;
             public const string Unk_254_displayName = "Unk 254";
@@ -5437,6 +6439,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_254_offset { get; private set; }
+
             protected float Unk_255_raw;
             public const string Unk_255_displayName = "Unk 255";
             public const int Unk_255_sortIndex = 800;
@@ -5451,6 +6456,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_255));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_255_offset { get; private set; }
 
             protected float Unk_256_raw;
             public const string Unk_256_displayName = "Unk 256";
@@ -5467,6 +6475,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_256_offset { get; private set; }
+
             protected float Unk_257_raw;
             public const string Unk_257_displayName = "Unk 257";
             public const int Unk_257_sortIndex = 900;
@@ -5481,6 +6492,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_257));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_257_offset { get; private set; }
 
             protected float Unk_258_raw;
             public const string Unk_258_displayName = "Unk 258";
@@ -5497,6 +6511,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_258_offset { get; private set; }
+
             protected float Unk_259_raw;
             public const string Unk_259_displayName = "Unk 259";
             public const int Unk_259_sortIndex = 1000;
@@ -5511,6 +6528,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_259));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_259_offset { get; private set; }
 
             protected float Unk_260_raw;
             public const string Unk_260_displayName = "Unk 260";
@@ -5527,6 +6547,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_260_offset { get; private set; }
+
             protected float Unk_261_raw;
             public const string Unk_261_displayName = "Unk 261";
             public const int Unk_261_sortIndex = 1100;
@@ -5541,6 +6564,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_261));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_261_offset { get; private set; }
 
             protected float Unk_262_raw;
             public const string Unk_262_displayName = "Unk 262";
@@ -5557,6 +6583,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_262_offset { get; private set; }
+
             protected float Unk_263_raw;
             public const string Unk_263_displayName = "Unk 263";
             public const int Unk_263_sortIndex = 1200;
@@ -5571,6 +6600,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_263));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_263_offset { get; private set; }
 
             protected float Unk_264_raw;
             public const string Unk_264_displayName = "Unk 264";
@@ -5587,6 +6619,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_264_offset { get; private set; }
+
             protected float Unk_265_raw;
             public const string Unk_265_displayName = "Unk 265";
             public const int Unk_265_sortIndex = 1300;
@@ -5601,6 +6636,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_265));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_265_offset { get; private set; }
 
             protected float Unk_266_raw;
             public const string Unk_266_displayName = "Unk 266";
@@ -5617,6 +6655,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_266_offset { get; private set; }
+
             protected float Unk_267_raw;
             public const string Unk_267_displayName = "Unk 267";
             public const int Unk_267_sortIndex = 1400;
@@ -5631,6 +6672,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_267));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_267_offset { get; private set; }
 
             protected float Unk_268_raw;
             public const string Unk_268_displayName = "Unk 268";
@@ -5647,6 +6691,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_268_offset { get; private set; }
+
             protected float Unk_269_raw;
             public const string Unk_269_displayName = "Unk 269";
             public const int Unk_269_sortIndex = 1500;
@@ -5661,6 +6708,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_269));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_269_offset { get; private set; }
 
             protected float Unk_270_raw;
             public const string Unk_270_displayName = "Unk 270";
@@ -5677,6 +6727,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_270_offset { get; private set; }
+
             protected float Unk_271_raw;
             public const string Unk_271_displayName = "Unk 271";
             public const int Unk_271_sortIndex = 1600;
@@ -5691,6 +6744,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_271));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_271_offset { get; private set; }
 
             protected float Unk_272_raw;
             public const string Unk_272_displayName = "Unk 272";
@@ -5707,6 +6763,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_272_offset { get; private set; }
+
             protected float Unk_273_raw;
             public const string Unk_273_displayName = "Unk 273";
             public const int Unk_273_sortIndex = 1700;
@@ -5721,6 +6780,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_273));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_273_offset { get; private set; }
 
             protected float Close_range_Up_active_range_1_raw;
             public const string Close_range_Up_active_range_1_displayName = "Close range Up active range 1";
@@ -5737,6 +6799,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Close_range_Up_active_range_1_offset { get; private set; }
+
             protected float Close_range_Up_active_range_2_raw;
             public const string Close_range_Up_active_range_2_displayName = "Close range Up active range 2";
             public const int Close_range_Up_active_range_2_sortIndex = 1800;
@@ -5751,6 +6816,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Close_range_Up_active_range_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Close_range_Up_active_range_2_offset { get; private set; }
 
             protected float Close_range_Up_active_range_3_raw;
             public const string Close_range_Up_active_range_3_displayName = "Close range Up active range 3";
@@ -5767,6 +6835,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Close_range_Up_active_range_3_offset { get; private set; }
+
             protected float Close_range_Up_active_range_4_raw;
             public const string Close_range_Up_active_range_4_displayName = "Close range Up active range 4";
             public const int Close_range_Up_active_range_4_sortIndex = 1900;
@@ -5781,6 +6852,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Close_range_Up_active_range_4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Close_range_Up_active_range_4_offset { get; private set; }
 
             protected float Close_range_Up_Modifier_1_raw;
             public const string Close_range_Up_Modifier_1_displayName = "Close range Up Modifier 1";
@@ -5797,6 +6871,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Close_range_Up_Modifier_1_offset { get; private set; }
+
             protected float Close_range_Up_Modifier_2_raw;
             public const string Close_range_Up_Modifier_2_displayName = "Close range Up Modifier 2";
             public const int Close_range_Up_Modifier_2_sortIndex = 2000;
@@ -5811,6 +6888,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Close_range_Up_Modifier_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Close_range_Up_Modifier_2_offset { get; private set; }
 
             protected float Close_range_Up_Modifier_3_raw;
             public const string Close_range_Up_Modifier_3_displayName = "Close range Up Modifier 3";
@@ -5827,6 +6907,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Close_range_Up_Modifier_3_offset { get; private set; }
+
             protected float Close_range_Up_Modifier_4_raw;
             public const string Close_range_Up_Modifier_4_displayName = "Close range Up Modifier 4";
             public const int Close_range_Up_Modifier_4_sortIndex = 2100;
@@ -5841,6 +6924,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Close_range_Up_Modifier_4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Close_range_Up_Modifier_4_offset { get; private set; }
 
             protected float Ranged_Attack_Up_active_distance_1_raw;
             public const string Ranged_Attack_Up_active_distance_1_displayName = "Ranged Attack Up active distance 1";
@@ -5857,6 +6943,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Ranged_Attack_Up_active_distance_1_offset { get; private set; }
+
             protected float Ranged_Attack_Up_active_distance_2_raw;
             public const string Ranged_Attack_Up_active_distance_2_displayName = "Ranged Attack Up active distance 2";
             public const int Ranged_Attack_Up_active_distance_2_sortIndex = 2200;
@@ -5871,6 +6960,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Ranged_Attack_Up_active_distance_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Ranged_Attack_Up_active_distance_2_offset { get; private set; }
 
             protected float Ranged_Attack_Up_active_distance_3_raw;
             public const string Ranged_Attack_Up_active_distance_3_displayName = "Ranged Attack Up active distance 3";
@@ -5887,6 +6979,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Ranged_Attack_Up_active_distance_3_offset { get; private set; }
+
             protected float Ranged_Attack_Up_active_distance_4_raw;
             public const string Ranged_Attack_Up_active_distance_4_displayName = "Ranged Attack Up active distance 4";
             public const int Ranged_Attack_Up_active_distance_4_sortIndex = 2300;
@@ -5901,6 +6996,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Ranged_Attack_Up_active_distance_4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Ranged_Attack_Up_active_distance_4_offset { get; private set; }
 
             protected float Ranged_Attack_Up_Modifier_1_raw;
             public const string Ranged_Attack_Up_Modifier_1_displayName = "Ranged Attack Up Modifier 1";
@@ -5917,6 +7015,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Ranged_Attack_Up_Modifier_1_offset { get; private set; }
+
             protected float Ranged_Attack_Up_Modifier_2_raw;
             public const string Ranged_Attack_Up_Modifier_2_displayName = "Ranged Attack Up Modifier 2";
             public const int Ranged_Attack_Up_Modifier_2_sortIndex = 2400;
@@ -5931,6 +7032,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Ranged_Attack_Up_Modifier_2));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Ranged_Attack_Up_Modifier_2_offset { get; private set; }
 
             protected float Ranged_Attack_Up_Modifier_3_raw;
             public const string Ranged_Attack_Up_Modifier_3_displayName = "Ranged Attack Up Modifier 3";
@@ -5947,6 +7051,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Ranged_Attack_Up_Modifier_3_offset { get; private set; }
+
             protected float Ranged_Attack_Up_Modifier_4_raw;
             public const string Ranged_Attack_Up_Modifier_4_displayName = "Ranged Attack Up Modifier 4";
             public const int Ranged_Attack_Up_Modifier_4_sortIndex = 2500;
@@ -5961,6 +7068,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Ranged_Attack_Up_Modifier_4));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Ranged_Attack_Up_Modifier_4_offset { get; private set; }
 
             protected float Guard_Angle_Both_Sides__raw;
             public const string Guard_Angle_Both_Sides__displayName = "Guard Angle (Both Sides)";
@@ -5977,6 +7087,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Guard_Angle_Both_Sides__offset { get; private set; }
+
             public const int lastSortIndex = 2600;
 
             public static ObservableMhwStructCollection<W13p_Params_6_> LoadData(BinaryReader reader) {
@@ -5991,56 +7104,107 @@ namespace MHW_Editor.Structs.Weapons {
             public static W13p_Params_6_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_6_();
                 data.Index = i;
+                data.Unk_240_offset = reader.BaseStream.Position;
                 data.Unk_240_raw = reader.ReadSingle();
+                data.Unk_241_offset = reader.BaseStream.Position;
                 data.Unk_241_raw = reader.ReadSingle();
+                data.Unk_242_offset = reader.BaseStream.Position;
                 data.Unk_242_raw = reader.ReadSingle();
+                data.Unk_243_offset = reader.BaseStream.Position;
                 data.Unk_243_raw = reader.ReadSingle();
+                data.Unk_244_offset = reader.BaseStream.Position;
                 data.Unk_244_raw = reader.ReadSingle();
+                data.Unk_245_offset = reader.BaseStream.Position;
                 data.Unk_245_raw = reader.ReadSingle();
+                data.Unk_246_offset = reader.BaseStream.Position;
                 data.Unk_246_raw = reader.ReadSingle();
+                data.Unk_247_offset = reader.BaseStream.Position;
                 data.Unk_247_raw = reader.ReadSingle();
+                data.Unk_248_offset = reader.BaseStream.Position;
                 data.Unk_248_raw = reader.ReadSingle();
+                data.Unk_249_offset = reader.BaseStream.Position;
                 data.Unk_249_raw = reader.ReadSingle();
+                data.Unk_250_offset = reader.BaseStream.Position;
                 data.Unk_250_raw = reader.ReadSingle();
+                data.Unk_251_offset = reader.BaseStream.Position;
                 data.Unk_251_raw = reader.ReadSingle();
+                data.Unk_252_offset = reader.BaseStream.Position;
                 data.Unk_252_raw = reader.ReadSingle();
+                data.Unk_253_offset = reader.BaseStream.Position;
                 data.Unk_253_raw = reader.ReadSingle();
+                data.Unk_254_offset = reader.BaseStream.Position;
                 data.Unk_254_raw = reader.ReadSingle();
+                data.Unk_255_offset = reader.BaseStream.Position;
                 data.Unk_255_raw = reader.ReadSingle();
+                data.Unk_256_offset = reader.BaseStream.Position;
                 data.Unk_256_raw = reader.ReadSingle();
+                data.Unk_257_offset = reader.BaseStream.Position;
                 data.Unk_257_raw = reader.ReadSingle();
+                data.Unk_258_offset = reader.BaseStream.Position;
                 data.Unk_258_raw = reader.ReadSingle();
+                data.Unk_259_offset = reader.BaseStream.Position;
                 data.Unk_259_raw = reader.ReadSingle();
+                data.Unk_260_offset = reader.BaseStream.Position;
                 data.Unk_260_raw = reader.ReadSingle();
+                data.Unk_261_offset = reader.BaseStream.Position;
                 data.Unk_261_raw = reader.ReadSingle();
+                data.Unk_262_offset = reader.BaseStream.Position;
                 data.Unk_262_raw = reader.ReadSingle();
+                data.Unk_263_offset = reader.BaseStream.Position;
                 data.Unk_263_raw = reader.ReadSingle();
+                data.Unk_264_offset = reader.BaseStream.Position;
                 data.Unk_264_raw = reader.ReadSingle();
+                data.Unk_265_offset = reader.BaseStream.Position;
                 data.Unk_265_raw = reader.ReadSingle();
+                data.Unk_266_offset = reader.BaseStream.Position;
                 data.Unk_266_raw = reader.ReadSingle();
+                data.Unk_267_offset = reader.BaseStream.Position;
                 data.Unk_267_raw = reader.ReadSingle();
+                data.Unk_268_offset = reader.BaseStream.Position;
                 data.Unk_268_raw = reader.ReadSingle();
+                data.Unk_269_offset = reader.BaseStream.Position;
                 data.Unk_269_raw = reader.ReadSingle();
+                data.Unk_270_offset = reader.BaseStream.Position;
                 data.Unk_270_raw = reader.ReadSingle();
+                data.Unk_271_offset = reader.BaseStream.Position;
                 data.Unk_271_raw = reader.ReadSingle();
+                data.Unk_272_offset = reader.BaseStream.Position;
                 data.Unk_272_raw = reader.ReadSingle();
+                data.Unk_273_offset = reader.BaseStream.Position;
                 data.Unk_273_raw = reader.ReadSingle();
+                data.Close_range_Up_active_range_1_offset = reader.BaseStream.Position;
                 data.Close_range_Up_active_range_1_raw = reader.ReadSingle();
+                data.Close_range_Up_active_range_2_offset = reader.BaseStream.Position;
                 data.Close_range_Up_active_range_2_raw = reader.ReadSingle();
+                data.Close_range_Up_active_range_3_offset = reader.BaseStream.Position;
                 data.Close_range_Up_active_range_3_raw = reader.ReadSingle();
+                data.Close_range_Up_active_range_4_offset = reader.BaseStream.Position;
                 data.Close_range_Up_active_range_4_raw = reader.ReadSingle();
+                data.Close_range_Up_Modifier_1_offset = reader.BaseStream.Position;
                 data.Close_range_Up_Modifier_1_raw = reader.ReadSingle();
+                data.Close_range_Up_Modifier_2_offset = reader.BaseStream.Position;
                 data.Close_range_Up_Modifier_2_raw = reader.ReadSingle();
+                data.Close_range_Up_Modifier_3_offset = reader.BaseStream.Position;
                 data.Close_range_Up_Modifier_3_raw = reader.ReadSingle();
+                data.Close_range_Up_Modifier_4_offset = reader.BaseStream.Position;
                 data.Close_range_Up_Modifier_4_raw = reader.ReadSingle();
+                data.Ranged_Attack_Up_active_distance_1_offset = reader.BaseStream.Position;
                 data.Ranged_Attack_Up_active_distance_1_raw = reader.ReadSingle();
+                data.Ranged_Attack_Up_active_distance_2_offset = reader.BaseStream.Position;
                 data.Ranged_Attack_Up_active_distance_2_raw = reader.ReadSingle();
+                data.Ranged_Attack_Up_active_distance_3_offset = reader.BaseStream.Position;
                 data.Ranged_Attack_Up_active_distance_3_raw = reader.ReadSingle();
+                data.Ranged_Attack_Up_active_distance_4_offset = reader.BaseStream.Position;
                 data.Ranged_Attack_Up_active_distance_4_raw = reader.ReadSingle();
+                data.Ranged_Attack_Up_Modifier_1_offset = reader.BaseStream.Position;
                 data.Ranged_Attack_Up_Modifier_1_raw = reader.ReadSingle();
+                data.Ranged_Attack_Up_Modifier_2_offset = reader.BaseStream.Position;
                 data.Ranged_Attack_Up_Modifier_2_raw = reader.ReadSingle();
+                data.Ranged_Attack_Up_Modifier_3_offset = reader.BaseStream.Position;
                 data.Ranged_Attack_Up_Modifier_3_raw = reader.ReadSingle();
+                data.Ranged_Attack_Up_Modifier_4_offset = reader.BaseStream.Position;
                 data.Ranged_Attack_Up_Modifier_4_raw = reader.ReadSingle();
+                data.Guard_Angle_Both_Sides__offset = reader.BaseStream.Position;
                 data.Guard_Angle_Both_Sides__raw = reader.ReadSingle();
                 return data;
             }
@@ -6101,57 +7265,57 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 240", "Unk_240"),
-                    new MultiStructItemCustomView(this, "Unk 241", "Unk_241"),
-                    new MultiStructItemCustomView(this, "Unk 242", "Unk_242"),
-                    new MultiStructItemCustomView(this, "Unk 243", "Unk_243"),
-                    new MultiStructItemCustomView(this, "Unk 244", "Unk_244"),
-                    new MultiStructItemCustomView(this, "Unk 245", "Unk_245"),
-                    new MultiStructItemCustomView(this, "Unk 246", "Unk_246"),
-                    new MultiStructItemCustomView(this, "Unk 247", "Unk_247"),
-                    new MultiStructItemCustomView(this, "Unk 248", "Unk_248"),
-                    new MultiStructItemCustomView(this, "Unk 249", "Unk_249"),
-                    new MultiStructItemCustomView(this, "Unk 250", "Unk_250"),
-                    new MultiStructItemCustomView(this, "Unk 251", "Unk_251"),
-                    new MultiStructItemCustomView(this, "Unk 252", "Unk_252"),
-                    new MultiStructItemCustomView(this, "Unk 253", "Unk_253"),
-                    new MultiStructItemCustomView(this, "Unk 254", "Unk_254"),
-                    new MultiStructItemCustomView(this, "Unk 255", "Unk_255"),
-                    new MultiStructItemCustomView(this, "Unk 256", "Unk_256"),
-                    new MultiStructItemCustomView(this, "Unk 257", "Unk_257"),
-                    new MultiStructItemCustomView(this, "Unk 258", "Unk_258"),
-                    new MultiStructItemCustomView(this, "Unk 259", "Unk_259"),
-                    new MultiStructItemCustomView(this, "Unk 260", "Unk_260"),
-                    new MultiStructItemCustomView(this, "Unk 261", "Unk_261"),
-                    new MultiStructItemCustomView(this, "Unk 262", "Unk_262"),
-                    new MultiStructItemCustomView(this, "Unk 263", "Unk_263"),
-                    new MultiStructItemCustomView(this, "Unk 264", "Unk_264"),
-                    new MultiStructItemCustomView(this, "Unk 265", "Unk_265"),
-                    new MultiStructItemCustomView(this, "Unk 266", "Unk_266"),
-                    new MultiStructItemCustomView(this, "Unk 267", "Unk_267"),
-                    new MultiStructItemCustomView(this, "Unk 268", "Unk_268"),
-                    new MultiStructItemCustomView(this, "Unk 269", "Unk_269"),
-                    new MultiStructItemCustomView(this, "Unk 270", "Unk_270"),
-                    new MultiStructItemCustomView(this, "Unk 271", "Unk_271"),
-                    new MultiStructItemCustomView(this, "Unk 272", "Unk_272"),
-                    new MultiStructItemCustomView(this, "Unk 273", "Unk_273"),
-                    new MultiStructItemCustomView(this, "Close range Up active range 1", "Close_range_Up_active_range_1"),
-                    new MultiStructItemCustomView(this, "Close range Up active range 2", "Close_range_Up_active_range_2"),
-                    new MultiStructItemCustomView(this, "Close range Up active range 3", "Close_range_Up_active_range_3"),
-                    new MultiStructItemCustomView(this, "Close range Up active range 4", "Close_range_Up_active_range_4"),
-                    new MultiStructItemCustomView(this, "Close range Up Modifier 1", "Close_range_Up_Modifier_1"),
-                    new MultiStructItemCustomView(this, "Close range Up Modifier 2", "Close_range_Up_Modifier_2"),
-                    new MultiStructItemCustomView(this, "Close range Up Modifier 3", "Close_range_Up_Modifier_3"),
-                    new MultiStructItemCustomView(this, "Close range Up Modifier 4", "Close_range_Up_Modifier_4"),
-                    new MultiStructItemCustomView(this, "Ranged Attack Up active distance 1", "Ranged_Attack_Up_active_distance_1"),
-                    new MultiStructItemCustomView(this, "Ranged Attack Up active distance 2", "Ranged_Attack_Up_active_distance_2"),
-                    new MultiStructItemCustomView(this, "Ranged Attack Up active distance 3", "Ranged_Attack_Up_active_distance_3"),
-                    new MultiStructItemCustomView(this, "Ranged Attack Up active distance 4", "Ranged_Attack_Up_active_distance_4"),
-                    new MultiStructItemCustomView(this, "Ranged Attack Up Modifier 1", "Ranged_Attack_Up_Modifier_1"),
-                    new MultiStructItemCustomView(this, "Ranged Attack Up Modifier 2", "Ranged_Attack_Up_Modifier_2"),
-                    new MultiStructItemCustomView(this, "Ranged Attack Up Modifier 3", "Ranged_Attack_Up_Modifier_3"),
-                    new MultiStructItemCustomView(this, "Ranged Attack Up Modifier 4", "Ranged_Attack_Up_Modifier_4"),
-                    new MultiStructItemCustomView(this, "Guard Angle (Both Sides)", "Guard_Angle_Both_Sides_"),
+                    new MultiStructItemCustomView(this, "Unk 240", "Unk_240", "Unk_240_offset"),
+                    new MultiStructItemCustomView(this, "Unk 241", "Unk_241", "Unk_241_offset"),
+                    new MultiStructItemCustomView(this, "Unk 242", "Unk_242", "Unk_242_offset"),
+                    new MultiStructItemCustomView(this, "Unk 243", "Unk_243", "Unk_243_offset"),
+                    new MultiStructItemCustomView(this, "Unk 244", "Unk_244", "Unk_244_offset"),
+                    new MultiStructItemCustomView(this, "Unk 245", "Unk_245", "Unk_245_offset"),
+                    new MultiStructItemCustomView(this, "Unk 246", "Unk_246", "Unk_246_offset"),
+                    new MultiStructItemCustomView(this, "Unk 247", "Unk_247", "Unk_247_offset"),
+                    new MultiStructItemCustomView(this, "Unk 248", "Unk_248", "Unk_248_offset"),
+                    new MultiStructItemCustomView(this, "Unk 249", "Unk_249", "Unk_249_offset"),
+                    new MultiStructItemCustomView(this, "Unk 250", "Unk_250", "Unk_250_offset"),
+                    new MultiStructItemCustomView(this, "Unk 251", "Unk_251", "Unk_251_offset"),
+                    new MultiStructItemCustomView(this, "Unk 252", "Unk_252", "Unk_252_offset"),
+                    new MultiStructItemCustomView(this, "Unk 253", "Unk_253", "Unk_253_offset"),
+                    new MultiStructItemCustomView(this, "Unk 254", "Unk_254", "Unk_254_offset"),
+                    new MultiStructItemCustomView(this, "Unk 255", "Unk_255", "Unk_255_offset"),
+                    new MultiStructItemCustomView(this, "Unk 256", "Unk_256", "Unk_256_offset"),
+                    new MultiStructItemCustomView(this, "Unk 257", "Unk_257", "Unk_257_offset"),
+                    new MultiStructItemCustomView(this, "Unk 258", "Unk_258", "Unk_258_offset"),
+                    new MultiStructItemCustomView(this, "Unk 259", "Unk_259", "Unk_259_offset"),
+                    new MultiStructItemCustomView(this, "Unk 260", "Unk_260", "Unk_260_offset"),
+                    new MultiStructItemCustomView(this, "Unk 261", "Unk_261", "Unk_261_offset"),
+                    new MultiStructItemCustomView(this, "Unk 262", "Unk_262", "Unk_262_offset"),
+                    new MultiStructItemCustomView(this, "Unk 263", "Unk_263", "Unk_263_offset"),
+                    new MultiStructItemCustomView(this, "Unk 264", "Unk_264", "Unk_264_offset"),
+                    new MultiStructItemCustomView(this, "Unk 265", "Unk_265", "Unk_265_offset"),
+                    new MultiStructItemCustomView(this, "Unk 266", "Unk_266", "Unk_266_offset"),
+                    new MultiStructItemCustomView(this, "Unk 267", "Unk_267", "Unk_267_offset"),
+                    new MultiStructItemCustomView(this, "Unk 268", "Unk_268", "Unk_268_offset"),
+                    new MultiStructItemCustomView(this, "Unk 269", "Unk_269", "Unk_269_offset"),
+                    new MultiStructItemCustomView(this, "Unk 270", "Unk_270", "Unk_270_offset"),
+                    new MultiStructItemCustomView(this, "Unk 271", "Unk_271", "Unk_271_offset"),
+                    new MultiStructItemCustomView(this, "Unk 272", "Unk_272", "Unk_272_offset"),
+                    new MultiStructItemCustomView(this, "Unk 273", "Unk_273", "Unk_273_offset"),
+                    new MultiStructItemCustomView(this, "Close range Up active range 1", "Close_range_Up_active_range_1", "Close_range_Up_active_range_1_offset"),
+                    new MultiStructItemCustomView(this, "Close range Up active range 2", "Close_range_Up_active_range_2", "Close_range_Up_active_range_2_offset"),
+                    new MultiStructItemCustomView(this, "Close range Up active range 3", "Close_range_Up_active_range_3", "Close_range_Up_active_range_3_offset"),
+                    new MultiStructItemCustomView(this, "Close range Up active range 4", "Close_range_Up_active_range_4", "Close_range_Up_active_range_4_offset"),
+                    new MultiStructItemCustomView(this, "Close range Up Modifier 1", "Close_range_Up_Modifier_1", "Close_range_Up_Modifier_1_offset"),
+                    new MultiStructItemCustomView(this, "Close range Up Modifier 2", "Close_range_Up_Modifier_2", "Close_range_Up_Modifier_2_offset"),
+                    new MultiStructItemCustomView(this, "Close range Up Modifier 3", "Close_range_Up_Modifier_3", "Close_range_Up_Modifier_3_offset"),
+                    new MultiStructItemCustomView(this, "Close range Up Modifier 4", "Close_range_Up_Modifier_4", "Close_range_Up_Modifier_4_offset"),
+                    new MultiStructItemCustomView(this, "Ranged Attack Up active distance 1", "Ranged_Attack_Up_active_distance_1", "Ranged_Attack_Up_active_distance_1_offset"),
+                    new MultiStructItemCustomView(this, "Ranged Attack Up active distance 2", "Ranged_Attack_Up_active_distance_2", "Ranged_Attack_Up_active_distance_2_offset"),
+                    new MultiStructItemCustomView(this, "Ranged Attack Up active distance 3", "Ranged_Attack_Up_active_distance_3", "Ranged_Attack_Up_active_distance_3_offset"),
+                    new MultiStructItemCustomView(this, "Ranged Attack Up active distance 4", "Ranged_Attack_Up_active_distance_4", "Ranged_Attack_Up_active_distance_4_offset"),
+                    new MultiStructItemCustomView(this, "Ranged Attack Up Modifier 1", "Ranged_Attack_Up_Modifier_1", "Ranged_Attack_Up_Modifier_1_offset"),
+                    new MultiStructItemCustomView(this, "Ranged Attack Up Modifier 2", "Ranged_Attack_Up_Modifier_2", "Ranged_Attack_Up_Modifier_2_offset"),
+                    new MultiStructItemCustomView(this, "Ranged Attack Up Modifier 3", "Ranged_Attack_Up_Modifier_3", "Ranged_Attack_Up_Modifier_3_offset"),
+                    new MultiStructItemCustomView(this, "Ranged Attack Up Modifier 4", "Ranged_Attack_Up_Modifier_4", "Ranged_Attack_Up_Modifier_4_offset"),
+                    new MultiStructItemCustomView(this, "Guard Angle (Both Sides)", "Guard_Angle_Both_Sides_", "Guard_Angle_Both_Sides__offset"),
                 };
             }
         }
@@ -6301,6 +7465,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_274_offset { get; private set; }
+
             protected float Unk_275_raw;
             public const string Unk_275_displayName = "Unk 275";
             public const int Unk_275_sortIndex = 100;
@@ -6315,6 +7482,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_275));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_275_offset { get; private set; }
 
             protected float Unk_276_raw;
             public const string Unk_276_displayName = "Unk 276";
@@ -6331,6 +7501,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_276_offset { get; private set; }
+
             protected float Unk_277_raw;
             public const string Unk_277_displayName = "Unk 277";
             public const int Unk_277_sortIndex = 200;
@@ -6345,6 +7518,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_277));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_277_offset { get; private set; }
 
             protected float Unk_278_raw;
             public const string Unk_278_displayName = "Unk 278";
@@ -6361,6 +7537,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_278_offset { get; private set; }
+
             protected float Unk_279_raw;
             public const string Unk_279_displayName = "Unk 279";
             public const int Unk_279_sortIndex = 300;
@@ -6375,6 +7554,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_279));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_279_offset { get; private set; }
 
             protected float Unk_280_raw;
             public const string Unk_280_displayName = "Unk 280";
@@ -6391,6 +7573,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_280_offset { get; private set; }
+
             protected float Unk_281_raw;
             public const string Unk_281_displayName = "Unk 281";
             public const int Unk_281_sortIndex = 400;
@@ -6405,6 +7590,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_281));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_281_offset { get; private set; }
 
             protected float Unk_282_raw;
             public const string Unk_282_displayName = "Unk 282";
@@ -6421,6 +7609,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_282_offset { get; private set; }
+
             protected float Unk_283_raw;
             public const string Unk_283_displayName = "Unk 283";
             public const int Unk_283_sortIndex = 500;
@@ -6436,6 +7627,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_283_offset { get; private set; }
+
             public const int lastSortIndex = 550;
 
             public static ObservableMhwStructCollection<W13p_Params_7_> LoadData(BinaryReader reader) {
@@ -6450,15 +7644,25 @@ namespace MHW_Editor.Structs.Weapons {
             public static W13p_Params_7_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_7_();
                 data.Index = i;
+                data.Unk_274_offset = reader.BaseStream.Position;
                 data.Unk_274_raw = reader.ReadSingle();
+                data.Unk_275_offset = reader.BaseStream.Position;
                 data.Unk_275_raw = reader.ReadSingle();
+                data.Unk_276_offset = reader.BaseStream.Position;
                 data.Unk_276_raw = reader.ReadSingle();
+                data.Unk_277_offset = reader.BaseStream.Position;
                 data.Unk_277_raw = reader.ReadSingle();
+                data.Unk_278_offset = reader.BaseStream.Position;
                 data.Unk_278_raw = reader.ReadSingle();
+                data.Unk_279_offset = reader.BaseStream.Position;
                 data.Unk_279_raw = reader.ReadSingle();
+                data.Unk_280_offset = reader.BaseStream.Position;
                 data.Unk_280_raw = reader.ReadSingle();
+                data.Unk_281_offset = reader.BaseStream.Position;
                 data.Unk_281_raw = reader.ReadSingle();
+                data.Unk_282_offset = reader.BaseStream.Position;
                 data.Unk_282_raw = reader.ReadSingle();
+                data.Unk_283_offset = reader.BaseStream.Position;
                 data.Unk_283_raw = reader.ReadSingle();
                 return data;
             }
@@ -6478,16 +7682,16 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 274", "Unk_274"),
-                    new MultiStructItemCustomView(this, "Unk 275", "Unk_275"),
-                    new MultiStructItemCustomView(this, "Unk 276", "Unk_276"),
-                    new MultiStructItemCustomView(this, "Unk 277", "Unk_277"),
-                    new MultiStructItemCustomView(this, "Unk 278", "Unk_278"),
-                    new MultiStructItemCustomView(this, "Unk 279", "Unk_279"),
-                    new MultiStructItemCustomView(this, "Unk 280", "Unk_280"),
-                    new MultiStructItemCustomView(this, "Unk 281", "Unk_281"),
-                    new MultiStructItemCustomView(this, "Unk 282", "Unk_282"),
-                    new MultiStructItemCustomView(this, "Unk 283", "Unk_283"),
+                    new MultiStructItemCustomView(this, "Unk 274", "Unk_274", "Unk_274_offset"),
+                    new MultiStructItemCustomView(this, "Unk 275", "Unk_275", "Unk_275_offset"),
+                    new MultiStructItemCustomView(this, "Unk 276", "Unk_276", "Unk_276_offset"),
+                    new MultiStructItemCustomView(this, "Unk 277", "Unk_277", "Unk_277_offset"),
+                    new MultiStructItemCustomView(this, "Unk 278", "Unk_278", "Unk_278_offset"),
+                    new MultiStructItemCustomView(this, "Unk 279", "Unk_279", "Unk_279_offset"),
+                    new MultiStructItemCustomView(this, "Unk 280", "Unk_280", "Unk_280_offset"),
+                    new MultiStructItemCustomView(this, "Unk 281", "Unk_281", "Unk_281_offset"),
+                    new MultiStructItemCustomView(this, "Unk 282", "Unk_282", "Unk_282_offset"),
+                    new MultiStructItemCustomView(this, "Unk 283", "Unk_283", "Unk_283_offset"),
                 };
             }
         }
@@ -6604,6 +7808,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_284_offset { get; private set; }
+
             protected ushort Unk_285_raw;
             public const string Unk_285_displayName = "Unk 285";
             public const int Unk_285_sortIndex = 100;
@@ -6618,6 +7825,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_285));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_285_offset { get; private set; }
 
             protected ushort Unk_286_raw;
             public const string Unk_286_displayName = "Unk 286";
@@ -6634,6 +7844,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_286_offset { get; private set; }
+
             protected ushort Unk_287_raw;
             public const string Unk_287_displayName = "Unk 287";
             public const int Unk_287_sortIndex = 200;
@@ -6648,6 +7861,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_287));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_287_offset { get; private set; }
 
             protected ushort Unk_288_raw;
             public const string Unk_288_displayName = "Unk 288";
@@ -6664,6 +7880,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_288_offset { get; private set; }
+
             protected ushort Unk_289_raw;
             public const string Unk_289_displayName = "Unk 289";
             public const int Unk_289_sortIndex = 300;
@@ -6678,6 +7897,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_289));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_289_offset { get; private set; }
 
             protected short Unk_290_raw;
             public const string Unk_290_displayName = "Unk 290";
@@ -6694,6 +7916,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_290_offset { get; private set; }
+
             protected short Unk_291_raw;
             public const string Unk_291_displayName = "Unk 291";
             public const int Unk_291_sortIndex = 400;
@@ -6708,6 +7933,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_291));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_291_offset { get; private set; }
 
             protected ushort Unk_292_raw;
             public const string Unk_292_displayName = "Unk 292";
@@ -6724,6 +7952,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_292_offset { get; private set; }
+
             protected ushort Unk_293_raw;
             public const string Unk_293_displayName = "Unk 293";
             public const int Unk_293_sortIndex = 500;
@@ -6738,6 +7969,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_293));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_293_offset { get; private set; }
 
             protected ushort Unk_294_raw;
             public const string Unk_294_displayName = "Unk 294";
@@ -6754,6 +7988,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_294_offset { get; private set; }
+
             protected ushort Unk_295_raw;
             public const string Unk_295_displayName = "Unk 295";
             public const int Unk_295_sortIndex = 600;
@@ -6768,6 +8005,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_295));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_295_offset { get; private set; }
 
             protected ushort Unk_296_raw;
             public const string Unk_296_displayName = "Unk 296";
@@ -6784,6 +8024,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_296_offset { get; private set; }
+
             protected ushort Unk_297_raw;
             public const string Unk_297_displayName = "Unk 297";
             public const int Unk_297_sortIndex = 700;
@@ -6798,6 +8041,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_297));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_297_offset { get; private set; }
 
             protected short Unk_298_raw;
             public const string Unk_298_displayName = "Unk 298";
@@ -6814,6 +8060,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_298_offset { get; private set; }
+
             protected short Unk_299_raw;
             public const string Unk_299_displayName = "Unk 299";
             public const int Unk_299_sortIndex = 800;
@@ -6828,6 +8077,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_299));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_299_offset { get; private set; }
 
             protected ushort Unk_300_raw;
             public const string Unk_300_displayName = "Unk 300";
@@ -6844,6 +8096,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_300_offset { get; private set; }
+
             protected ushort Unk_301_raw;
             public const string Unk_301_displayName = "Unk 301";
             public const int Unk_301_sortIndex = 900;
@@ -6858,6 +8113,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_301));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_301_offset { get; private set; }
 
             protected ushort Unk_302_raw;
             public const string Unk_302_displayName = "Unk 302";
@@ -6874,6 +8132,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_302_offset { get; private set; }
+
             protected ushort Unk_303_raw;
             public const string Unk_303_displayName = "Unk 303";
             public const int Unk_303_sortIndex = 1000;
@@ -6888,6 +8149,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_303));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_303_offset { get; private set; }
 
             protected short Unk_304_raw;
             public const string Unk_304_displayName = "Unk 304";
@@ -6904,6 +8168,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_304_offset { get; private set; }
+
             protected short Unk_305_raw;
             public const string Unk_305_displayName = "Unk 305";
             public const int Unk_305_sortIndex = 1100;
@@ -6918,6 +8185,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_305));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_305_offset { get; private set; }
 
             protected short Unk_306_raw;
             public const string Unk_306_displayName = "Unk 306";
@@ -6934,6 +8204,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_306_offset { get; private set; }
+
             protected short Unk_307_raw;
             public const string Unk_307_displayName = "Unk 307";
             public const int Unk_307_sortIndex = 1200;
@@ -6948,6 +8221,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_307));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_307_offset { get; private set; }
 
             protected ushort Unk_308_raw;
             public const string Unk_308_displayName = "Unk 308";
@@ -6964,6 +8240,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_308_offset { get; private set; }
+
             protected ushort Unk_309_raw;
             public const string Unk_309_displayName = "Unk 309";
             public const int Unk_309_sortIndex = 1300;
@@ -6978,6 +8257,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_309));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_309_offset { get; private set; }
 
             protected ushort Unk_310_raw;
             public const string Unk_310_displayName = "Unk 310";
@@ -6994,6 +8276,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_310_offset { get; private set; }
+
             protected ushort Unk_311_raw;
             public const string Unk_311_displayName = "Unk 311";
             public const int Unk_311_sortIndex = 1400;
@@ -7008,6 +8293,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_311));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_311_offset { get; private set; }
 
             protected ushort Unk_312_raw;
             public const string Unk_312_displayName = "Unk 312";
@@ -7024,6 +8312,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_312_offset { get; private set; }
+
             protected ushort Unk_313_raw;
             public const string Unk_313_displayName = "Unk 313";
             public const int Unk_313_sortIndex = 1500;
@@ -7038,6 +8329,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_313));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_313_offset { get; private set; }
 
             protected ushort Unk_314_raw;
             public const string Unk_314_displayName = "Unk 314";
@@ -7054,6 +8348,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_314_offset { get; private set; }
+
             protected ushort Unk_315_raw;
             public const string Unk_315_displayName = "Unk 315";
             public const int Unk_315_sortIndex = 1600;
@@ -7068,6 +8365,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_315));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_315_offset { get; private set; }
 
             protected float Unk_316_raw;
             public const string Unk_316_displayName = "Unk 316";
@@ -7084,6 +8384,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_316_offset { get; private set; }
+
             protected float Unk_317_raw;
             public const string Unk_317_displayName = "Unk 317";
             public const int Unk_317_sortIndex = 1700;
@@ -7098,6 +8401,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_317));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_317_offset { get; private set; }
 
             protected float Unk_318_raw;
             public const string Unk_318_displayName = "Unk 318";
@@ -7114,6 +8420,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_318_offset { get; private set; }
+
             protected float Unk_319_raw;
             public const string Unk_319_displayName = "Unk 319";
             public const int Unk_319_sortIndex = 1800;
@@ -7128,6 +8437,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_319));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_319_offset { get; private set; }
 
             protected float Unk_320_raw;
             public const string Unk_320_displayName = "Unk 320";
@@ -7144,6 +8456,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_320_offset { get; private set; }
+
             protected float Unk_321_raw;
             public const string Unk_321_displayName = "Unk 321";
             public const int Unk_321_sortIndex = 1900;
@@ -7158,6 +8473,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_321));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_321_offset { get; private set; }
 
             protected float Unk_322_raw;
             public const string Unk_322_displayName = "Unk 322";
@@ -7174,6 +8492,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_322_offset { get; private set; }
+
             protected float Unk_323_raw;
             public const string Unk_323_displayName = "Unk 323";
             public const int Unk_323_sortIndex = 2000;
@@ -7188,6 +8509,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_323));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_323_offset { get; private set; }
 
             protected byte Unk_324_raw;
             public const string Unk_324_displayName = "Unk 324";
@@ -7204,6 +8528,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_324_offset { get; private set; }
+
             protected byte Unk_325_raw;
             public const string Unk_325_displayName = "Unk 325";
             public const int Unk_325_sortIndex = 2100;
@@ -7218,6 +8545,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_325));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_325_offset { get; private set; }
 
             protected byte Unk_326_raw;
             public const string Unk_326_displayName = "Unk 326";
@@ -7234,6 +8564,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_326_offset { get; private set; }
+
             protected byte Unk_327_raw;
             public const string Unk_327_displayName = "Unk 327";
             public const int Unk_327_sortIndex = 2200;
@@ -7248,6 +8581,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_327));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_327_offset { get; private set; }
 
             protected byte Unk_328_raw;
             public const string Unk_328_displayName = "Unk 328";
@@ -7264,6 +8600,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_328_offset { get; private set; }
+
             protected ushort Unk_329_raw;
             public const string Unk_329_displayName = "Unk 329";
             public const int Unk_329_sortIndex = 2300;
@@ -7278,6 +8617,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_329));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_329_offset { get; private set; }
 
             protected float Unk_330_raw;
             public const string Unk_330_displayName = "Unk 330";
@@ -7294,6 +8636,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_330_offset { get; private set; }
+
             protected byte Unk_331_raw;
             public const string Unk_331_displayName = "Unk 331";
             public const int Unk_331_sortIndex = 2400;
@@ -7308,6 +8653,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_331));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_331_offset { get; private set; }
 
             protected float Unk_332_raw;
             public const string Unk_332_displayName = "Unk 332";
@@ -7324,6 +8672,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_332_offset { get; private set; }
+
             protected float Unk_333_raw;
             public const string Unk_333_displayName = "Unk 333";
             public const int Unk_333_sortIndex = 2500;
@@ -7338,6 +8689,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_333));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_333_offset { get; private set; }
 
             protected float Unk_334_raw;
             public const string Unk_334_displayName = "Unk 334";
@@ -7354,6 +8708,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_334_offset { get; private set; }
+
             protected float Unk_335_raw;
             public const string Unk_335_displayName = "Unk 335";
             public const int Unk_335_sortIndex = 2600;
@@ -7368,6 +8725,9 @@ namespace MHW_Editor.Structs.Weapons {
                     OnPropertyChanged(nameof(Unk_335));
                 }
             }
+
+            [DisplayName("Offset")]
+            public long Unk_335_offset { get; private set; }
 
             protected float Unk_336_raw;
             public const string Unk_336_displayName = "Unk 336";
@@ -7384,6 +8744,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
+            [DisplayName("Offset")]
+            public long Unk_336_offset { get; private set; }
+
             public const int lastSortIndex = 2700;
 
             public static ObservableMhwStructCollection<W13p_Params_8_> LoadData(BinaryReader reader) {
@@ -7398,58 +8761,111 @@ namespace MHW_Editor.Structs.Weapons {
             public static W13p_Params_8_ LoadData(BinaryReader reader, ulong i) {
                 var data = new W13p_Params_8_();
                 data.Index = i;
+                data.Unk_284_offset = reader.BaseStream.Position;
                 data.Unk_284_raw = reader.ReadUInt16();
+                data.Unk_285_offset = reader.BaseStream.Position;
                 data.Unk_285_raw = reader.ReadUInt16();
+                data.Unk_286_offset = reader.BaseStream.Position;
                 data.Unk_286_raw = reader.ReadUInt16();
+                data.Unk_287_offset = reader.BaseStream.Position;
                 data.Unk_287_raw = reader.ReadUInt16();
+                data.Unk_288_offset = reader.BaseStream.Position;
                 data.Unk_288_raw = reader.ReadUInt16();
+                data.Unk_289_offset = reader.BaseStream.Position;
                 data.Unk_289_raw = reader.ReadUInt16();
+                data.Unk_290_offset = reader.BaseStream.Position;
                 data.Unk_290_raw = reader.ReadInt16();
+                data.Unk_291_offset = reader.BaseStream.Position;
                 data.Unk_291_raw = reader.ReadInt16();
+                data.Unk_292_offset = reader.BaseStream.Position;
                 data.Unk_292_raw = reader.ReadUInt16();
+                data.Unk_293_offset = reader.BaseStream.Position;
                 data.Unk_293_raw = reader.ReadUInt16();
+                data.Unk_294_offset = reader.BaseStream.Position;
                 data.Unk_294_raw = reader.ReadUInt16();
+                data.Unk_295_offset = reader.BaseStream.Position;
                 data.Unk_295_raw = reader.ReadUInt16();
+                data.Unk_296_offset = reader.BaseStream.Position;
                 data.Unk_296_raw = reader.ReadUInt16();
+                data.Unk_297_offset = reader.BaseStream.Position;
                 data.Unk_297_raw = reader.ReadUInt16();
+                data.Unk_298_offset = reader.BaseStream.Position;
                 data.Unk_298_raw = reader.ReadInt16();
+                data.Unk_299_offset = reader.BaseStream.Position;
                 data.Unk_299_raw = reader.ReadInt16();
+                data.Unk_300_offset = reader.BaseStream.Position;
                 data.Unk_300_raw = reader.ReadUInt16();
+                data.Unk_301_offset = reader.BaseStream.Position;
                 data.Unk_301_raw = reader.ReadUInt16();
+                data.Unk_302_offset = reader.BaseStream.Position;
                 data.Unk_302_raw = reader.ReadUInt16();
+                data.Unk_303_offset = reader.BaseStream.Position;
                 data.Unk_303_raw = reader.ReadUInt16();
+                data.Unk_304_offset = reader.BaseStream.Position;
                 data.Unk_304_raw = reader.ReadInt16();
+                data.Unk_305_offset = reader.BaseStream.Position;
                 data.Unk_305_raw = reader.ReadInt16();
+                data.Unk_306_offset = reader.BaseStream.Position;
                 data.Unk_306_raw = reader.ReadInt16();
+                data.Unk_307_offset = reader.BaseStream.Position;
                 data.Unk_307_raw = reader.ReadInt16();
+                data.Unk_308_offset = reader.BaseStream.Position;
                 data.Unk_308_raw = reader.ReadUInt16();
+                data.Unk_309_offset = reader.BaseStream.Position;
                 data.Unk_309_raw = reader.ReadUInt16();
+                data.Unk_310_offset = reader.BaseStream.Position;
                 data.Unk_310_raw = reader.ReadUInt16();
+                data.Unk_311_offset = reader.BaseStream.Position;
                 data.Unk_311_raw = reader.ReadUInt16();
+                data.Unk_312_offset = reader.BaseStream.Position;
                 data.Unk_312_raw = reader.ReadUInt16();
+                data.Unk_313_offset = reader.BaseStream.Position;
                 data.Unk_313_raw = reader.ReadUInt16();
+                data.Unk_314_offset = reader.BaseStream.Position;
                 data.Unk_314_raw = reader.ReadUInt16();
+                data.Unk_315_offset = reader.BaseStream.Position;
                 data.Unk_315_raw = reader.ReadUInt16();
+                data.Unk_316_offset = reader.BaseStream.Position;
                 data.Unk_316_raw = reader.ReadSingle();
+                data.Unk_317_offset = reader.BaseStream.Position;
                 data.Unk_317_raw = reader.ReadSingle();
+                data.Unk_318_offset = reader.BaseStream.Position;
                 data.Unk_318_raw = reader.ReadSingle();
+                data.Unk_319_offset = reader.BaseStream.Position;
                 data.Unk_319_raw = reader.ReadSingle();
+                data.Unk_320_offset = reader.BaseStream.Position;
                 data.Unk_320_raw = reader.ReadSingle();
+                data.Unk_321_offset = reader.BaseStream.Position;
                 data.Unk_321_raw = reader.ReadSingle();
+                data.Unk_322_offset = reader.BaseStream.Position;
                 data.Unk_322_raw = reader.ReadSingle();
+                data.Unk_323_offset = reader.BaseStream.Position;
                 data.Unk_323_raw = reader.ReadSingle();
+                data.Unk_324_offset = reader.BaseStream.Position;
                 data.Unk_324_raw = reader.ReadByte();
+                data.Unk_325_offset = reader.BaseStream.Position;
                 data.Unk_325_raw = reader.ReadByte();
+                data.Unk_326_offset = reader.BaseStream.Position;
                 data.Unk_326_raw = reader.ReadByte();
+                data.Unk_327_offset = reader.BaseStream.Position;
                 data.Unk_327_raw = reader.ReadByte();
+                data.Unk_328_offset = reader.BaseStream.Position;
                 data.Unk_328_raw = reader.ReadByte();
+                data.Unk_329_offset = reader.BaseStream.Position;
                 data.Unk_329_raw = reader.ReadUInt16();
+                data.Unk_330_offset = reader.BaseStream.Position;
                 data.Unk_330_raw = reader.ReadSingle();
+                data.Unk_331_offset = reader.BaseStream.Position;
                 data.Unk_331_raw = reader.ReadByte();
+                data.Unk_332_offset = reader.BaseStream.Position;
                 data.Unk_332_raw = reader.ReadSingle();
+                data.Unk_333_offset = reader.BaseStream.Position;
                 data.Unk_333_raw = reader.ReadSingle();
+                data.Unk_334_offset = reader.BaseStream.Position;
                 data.Unk_334_raw = reader.ReadSingle();
+                data.Unk_335_offset = reader.BaseStream.Position;
                 data.Unk_335_raw = reader.ReadSingle();
+                data.Unk_336_offset = reader.BaseStream.Position;
                 data.Unk_336_raw = reader.ReadSingle();
                 return data;
             }
@@ -7512,59 +8928,59 @@ namespace MHW_Editor.Structs.Weapons {
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 284", "Unk_284"),
-                    new MultiStructItemCustomView(this, "Unk 285", "Unk_285"),
-                    new MultiStructItemCustomView(this, "Unk 286", "Unk_286"),
-                    new MultiStructItemCustomView(this, "Unk 287", "Unk_287"),
-                    new MultiStructItemCustomView(this, "Unk 288", "Unk_288"),
-                    new MultiStructItemCustomView(this, "Unk 289", "Unk_289"),
-                    new MultiStructItemCustomView(this, "Unk 290", "Unk_290"),
-                    new MultiStructItemCustomView(this, "Unk 291", "Unk_291"),
-                    new MultiStructItemCustomView(this, "Unk 292", "Unk_292"),
-                    new MultiStructItemCustomView(this, "Unk 293", "Unk_293"),
-                    new MultiStructItemCustomView(this, "Unk 294", "Unk_294"),
-                    new MultiStructItemCustomView(this, "Unk 295", "Unk_295"),
-                    new MultiStructItemCustomView(this, "Unk 296", "Unk_296"),
-                    new MultiStructItemCustomView(this, "Unk 297", "Unk_297"),
-                    new MultiStructItemCustomView(this, "Unk 298", "Unk_298"),
-                    new MultiStructItemCustomView(this, "Unk 299", "Unk_299"),
-                    new MultiStructItemCustomView(this, "Unk 300", "Unk_300"),
-                    new MultiStructItemCustomView(this, "Unk 301", "Unk_301"),
-                    new MultiStructItemCustomView(this, "Unk 302", "Unk_302"),
-                    new MultiStructItemCustomView(this, "Unk 303", "Unk_303"),
-                    new MultiStructItemCustomView(this, "Unk 304", "Unk_304"),
-                    new MultiStructItemCustomView(this, "Unk 305", "Unk_305"),
-                    new MultiStructItemCustomView(this, "Unk 306", "Unk_306"),
-                    new MultiStructItemCustomView(this, "Unk 307", "Unk_307"),
-                    new MultiStructItemCustomView(this, "Unk 308", "Unk_308"),
-                    new MultiStructItemCustomView(this, "Unk 309", "Unk_309"),
-                    new MultiStructItemCustomView(this, "Unk 310", "Unk_310"),
-                    new MultiStructItemCustomView(this, "Unk 311", "Unk_311"),
-                    new MultiStructItemCustomView(this, "Unk 312", "Unk_312"),
-                    new MultiStructItemCustomView(this, "Unk 313", "Unk_313"),
-                    new MultiStructItemCustomView(this, "Unk 314", "Unk_314"),
-                    new MultiStructItemCustomView(this, "Unk 315", "Unk_315"),
-                    new MultiStructItemCustomView(this, "Unk 316", "Unk_316"),
-                    new MultiStructItemCustomView(this, "Unk 317", "Unk_317"),
-                    new MultiStructItemCustomView(this, "Unk 318", "Unk_318"),
-                    new MultiStructItemCustomView(this, "Unk 319", "Unk_319"),
-                    new MultiStructItemCustomView(this, "Unk 320", "Unk_320"),
-                    new MultiStructItemCustomView(this, "Unk 321", "Unk_321"),
-                    new MultiStructItemCustomView(this, "Unk 322", "Unk_322"),
-                    new MultiStructItemCustomView(this, "Unk 323", "Unk_323"),
-                    new MultiStructItemCustomView(this, "Unk 324", "Unk_324"),
-                    new MultiStructItemCustomView(this, "Unk 325", "Unk_325"),
-                    new MultiStructItemCustomView(this, "Unk 326", "Unk_326"),
-                    new MultiStructItemCustomView(this, "Unk 327", "Unk_327"),
-                    new MultiStructItemCustomView(this, "Unk 328", "Unk_328"),
-                    new MultiStructItemCustomView(this, "Unk 329", "Unk_329"),
-                    new MultiStructItemCustomView(this, "Unk 330", "Unk_330"),
-                    new MultiStructItemCustomView(this, "Unk 331", "Unk_331"),
-                    new MultiStructItemCustomView(this, "Unk 332", "Unk_332"),
-                    new MultiStructItemCustomView(this, "Unk 333", "Unk_333"),
-                    new MultiStructItemCustomView(this, "Unk 334", "Unk_334"),
-                    new MultiStructItemCustomView(this, "Unk 335", "Unk_335"),
-                    new MultiStructItemCustomView(this, "Unk 336", "Unk_336"),
+                    new MultiStructItemCustomView(this, "Unk 284", "Unk_284", "Unk_284_offset"),
+                    new MultiStructItemCustomView(this, "Unk 285", "Unk_285", "Unk_285_offset"),
+                    new MultiStructItemCustomView(this, "Unk 286", "Unk_286", "Unk_286_offset"),
+                    new MultiStructItemCustomView(this, "Unk 287", "Unk_287", "Unk_287_offset"),
+                    new MultiStructItemCustomView(this, "Unk 288", "Unk_288", "Unk_288_offset"),
+                    new MultiStructItemCustomView(this, "Unk 289", "Unk_289", "Unk_289_offset"),
+                    new MultiStructItemCustomView(this, "Unk 290", "Unk_290", "Unk_290_offset"),
+                    new MultiStructItemCustomView(this, "Unk 291", "Unk_291", "Unk_291_offset"),
+                    new MultiStructItemCustomView(this, "Unk 292", "Unk_292", "Unk_292_offset"),
+                    new MultiStructItemCustomView(this, "Unk 293", "Unk_293", "Unk_293_offset"),
+                    new MultiStructItemCustomView(this, "Unk 294", "Unk_294", "Unk_294_offset"),
+                    new MultiStructItemCustomView(this, "Unk 295", "Unk_295", "Unk_295_offset"),
+                    new MultiStructItemCustomView(this, "Unk 296", "Unk_296", "Unk_296_offset"),
+                    new MultiStructItemCustomView(this, "Unk 297", "Unk_297", "Unk_297_offset"),
+                    new MultiStructItemCustomView(this, "Unk 298", "Unk_298", "Unk_298_offset"),
+                    new MultiStructItemCustomView(this, "Unk 299", "Unk_299", "Unk_299_offset"),
+                    new MultiStructItemCustomView(this, "Unk 300", "Unk_300", "Unk_300_offset"),
+                    new MultiStructItemCustomView(this, "Unk 301", "Unk_301", "Unk_301_offset"),
+                    new MultiStructItemCustomView(this, "Unk 302", "Unk_302", "Unk_302_offset"),
+                    new MultiStructItemCustomView(this, "Unk 303", "Unk_303", "Unk_303_offset"),
+                    new MultiStructItemCustomView(this, "Unk 304", "Unk_304", "Unk_304_offset"),
+                    new MultiStructItemCustomView(this, "Unk 305", "Unk_305", "Unk_305_offset"),
+                    new MultiStructItemCustomView(this, "Unk 306", "Unk_306", "Unk_306_offset"),
+                    new MultiStructItemCustomView(this, "Unk 307", "Unk_307", "Unk_307_offset"),
+                    new MultiStructItemCustomView(this, "Unk 308", "Unk_308", "Unk_308_offset"),
+                    new MultiStructItemCustomView(this, "Unk 309", "Unk_309", "Unk_309_offset"),
+                    new MultiStructItemCustomView(this, "Unk 310", "Unk_310", "Unk_310_offset"),
+                    new MultiStructItemCustomView(this, "Unk 311", "Unk_311", "Unk_311_offset"),
+                    new MultiStructItemCustomView(this, "Unk 312", "Unk_312", "Unk_312_offset"),
+                    new MultiStructItemCustomView(this, "Unk 313", "Unk_313", "Unk_313_offset"),
+                    new MultiStructItemCustomView(this, "Unk 314", "Unk_314", "Unk_314_offset"),
+                    new MultiStructItemCustomView(this, "Unk 315", "Unk_315", "Unk_315_offset"),
+                    new MultiStructItemCustomView(this, "Unk 316", "Unk_316", "Unk_316_offset"),
+                    new MultiStructItemCustomView(this, "Unk 317", "Unk_317", "Unk_317_offset"),
+                    new MultiStructItemCustomView(this, "Unk 318", "Unk_318", "Unk_318_offset"),
+                    new MultiStructItemCustomView(this, "Unk 319", "Unk_319", "Unk_319_offset"),
+                    new MultiStructItemCustomView(this, "Unk 320", "Unk_320", "Unk_320_offset"),
+                    new MultiStructItemCustomView(this, "Unk 321", "Unk_321", "Unk_321_offset"),
+                    new MultiStructItemCustomView(this, "Unk 322", "Unk_322", "Unk_322_offset"),
+                    new MultiStructItemCustomView(this, "Unk 323", "Unk_323", "Unk_323_offset"),
+                    new MultiStructItemCustomView(this, "Unk 324", "Unk_324", "Unk_324_offset"),
+                    new MultiStructItemCustomView(this, "Unk 325", "Unk_325", "Unk_325_offset"),
+                    new MultiStructItemCustomView(this, "Unk 326", "Unk_326", "Unk_326_offset"),
+                    new MultiStructItemCustomView(this, "Unk 327", "Unk_327", "Unk_327_offset"),
+                    new MultiStructItemCustomView(this, "Unk 328", "Unk_328", "Unk_328_offset"),
+                    new MultiStructItemCustomView(this, "Unk 329", "Unk_329", "Unk_329_offset"),
+                    new MultiStructItemCustomView(this, "Unk 330", "Unk_330", "Unk_330_offset"),
+                    new MultiStructItemCustomView(this, "Unk 331", "Unk_331", "Unk_331_offset"),
+                    new MultiStructItemCustomView(this, "Unk 332", "Unk_332", "Unk_332_offset"),
+                    new MultiStructItemCustomView(this, "Unk 333", "Unk_333", "Unk_333_offset"),
+                    new MultiStructItemCustomView(this, "Unk 334", "Unk_334", "Unk_334_offset"),
+                    new MultiStructItemCustomView(this, "Unk 335", "Unk_335", "Unk_335_offset"),
+                    new MultiStructItemCustomView(this, "Unk 336", "Unk_336", "Unk_336_offset"),
                 };
             }
         }
