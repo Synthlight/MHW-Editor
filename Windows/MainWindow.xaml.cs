@@ -646,9 +646,10 @@ namespace MHW_Editor.Windows {
 
         private string GetSaveTarget() {
             var sfdResult = new SaveFileDialog {
-                Filter       = $"JSON|*{Path.GetExtension(targetFile)}.json",
-                FileName     = $"{Path.GetFileNameWithoutExtension(targetFile)}",
-                AddExtension = true
+                Filter           = $"JSON|*{Path.GetExtension(targetFile)}.json",
+                FileName         = $"{Path.GetFileNameWithoutExtension(targetFile)}",
+                InitialDirectory = Path.GetDirectoryName(targetFile ?? string.Empty) ?? string.Empty,
+                AddExtension     = true
             };
             return sfdResult.ShowDialog() == true ? sfdResult.FileName : null;
         }
