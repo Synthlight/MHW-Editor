@@ -39,7 +39,7 @@ namespace MHW_Editor.Windows {
         private const bool ENABLE_CHEAT_BUTTONS = false;
         public const bool SHOW_RAW_BYTES = false;
 #endif
-        public const  string CURRENT_GAME_VERSION = "13.5X.XX";
+        public const  string CURRENT_GAME_VERSION = "14.0X.XX";
         private const string TITLE                = "MHW Editor";
         public const  double FONT_SIZE            = 20;
 

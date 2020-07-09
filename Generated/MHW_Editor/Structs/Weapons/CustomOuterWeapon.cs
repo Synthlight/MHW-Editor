@@ -205,12 +205,12 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected ushort Unk8_raw;
+            protected short Unk8_raw;
             public const string Unk8_displayName = "Unk8";
             public const int Unk8_sortIndex = 400;
             [SortOrder(Unk8_sortIndex)]
             [DisplayName(Unk8_displayName)]
-            public virtual ushort Unk8 {
+            public virtual short Unk8 {
                 get => Unk8_raw;
                 set {
                     if (Unk8_raw == value) return;
@@ -220,12 +220,12 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected uint Unk9_raw;
+            protected short Unk9_raw;
             public const string Unk9_displayName = "Unk9";
             public const int Unk9_sortIndex = 450;
             [SortOrder(Unk9_sortIndex)]
             [DisplayName(Unk9_displayName)]
-            public virtual uint Unk9 {
+            public virtual short Unk9 {
                 get => Unk9_raw;
                 set {
                     if (Unk9_raw == value) return;
@@ -235,12 +235,12 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected byte Unk10_raw;
+            protected short Unk10_raw;
             public const string Unk10_displayName = "Unk10";
             public const int Unk10_sortIndex = 500;
             [SortOrder(Unk10_sortIndex)]
             [DisplayName(Unk10_displayName)]
-            public virtual byte Unk10 {
+            public virtual short Unk10 {
                 get => Unk10_raw;
                 set {
                     if (Unk10_raw == value) return;
@@ -250,7 +250,37 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            public const int lastSortIndex = 550;
+            protected uint Unk11_raw;
+            public const string Unk11_displayName = "Unk11";
+            public const int Unk11_sortIndex = 550;
+            [SortOrder(Unk11_sortIndex)]
+            [DisplayName(Unk11_displayName)]
+            public virtual uint Unk11 {
+                get => Unk11_raw;
+                set {
+                    if (Unk11_raw == value) return;
+                    Unk11_raw = value;
+                    ChangedItems.Add(nameof(Unk11));
+                    OnPropertyChanged(nameof(Unk11));
+                }
+            }
+
+            protected byte Unk12_raw;
+            public const string Unk12_displayName = "Unk12";
+            public const int Unk12_sortIndex = 600;
+            [SortOrder(Unk12_sortIndex)]
+            [DisplayName(Unk12_displayName)]
+            public virtual byte Unk12 {
+                get => Unk12_raw;
+                set {
+                    if (Unk12_raw == value) return;
+                    Unk12_raw = value;
+                    ChangedItems.Add(nameof(Unk12));
+                    OnPropertyChanged(nameof(Unk12));
+                }
+            }
+
+            public const int lastSortIndex = 650;
 
             public static ObservableMhwStructCollection<Entries> LoadData(BinaryReader reader, ObservableMhwStructCollection<Header> lastStruct) {
                 var list = new ObservableMhwStructCollection<Entries>();
@@ -272,9 +302,11 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk5_raw = reader.ReadInt32();
                 data.Unk6_raw = reader.ReadInt32();
                 data.Unk7_raw = reader.ReadInt32();
-                data.Unk8_raw = reader.ReadUInt16();
-                data.Unk9_raw = reader.ReadUInt32();
-                data.Unk10_raw = reader.ReadByte();
+                data.Unk8_raw = reader.ReadInt16();
+                data.Unk9_raw = reader.ReadInt16();
+                data.Unk10_raw = reader.ReadInt16();
+                data.Unk11_raw = reader.ReadUInt32();
+                data.Unk12_raw = reader.ReadByte();
                 return data;
             }
 
@@ -289,6 +321,8 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk8_raw);
                 writer.Write(Unk9_raw);
                 writer.Write(Unk10_raw);
+                writer.Write(Unk11_raw);
+                writer.Write(Unk12_raw);
             }
         }
 

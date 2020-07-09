@@ -195,8 +195,11 @@ namespace MHW_Editor.Skills {
         public const ushort Joyful_Blessing = 212;
         public const ushort Appreciation_Blessing = 213;
         public const ushort Full_Bloom_Blessing = 214;
+        public const ushort Sizzling_Blessing = 215;
         public const ushort Rajang_Will = 217;
         public const ushort Brachydios_Will = 218;
         public const ushort Kulve_Taroth_Essence = 219;
+        public const ushort Frostfang_Absolute_Art = 220;
+        public const ushort Alatreon_Divinity = 221;
     }
 }

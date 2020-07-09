@@ -17,9 +17,11 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Unk5", typeof(int)),
                     new MhwMultiStructData.Entry("Unk6", typeof(int)),
                     new MhwMultiStructData.Entry("Unk7", typeof(int)),
-                    new MhwMultiStructData.Entry("Unk8", typeof(ushort)),
-                    new MhwMultiStructData.Entry("Unk9", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk10", typeof(byte))
+                    new MhwMultiStructData.Entry("Unk8", typeof(short)),
+                    new MhwMultiStructData.Entry("Unk9", typeof(short)),
+                    new MhwMultiStructData.Entry("Unk10", typeof(short)),
+                    new MhwMultiStructData.Entry("Unk11", typeof(uint)),
+                    new MhwMultiStructData.Entry("Unk12", typeof(byte))
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 

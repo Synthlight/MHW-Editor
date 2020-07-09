@@ -23,9 +23,11 @@ typedef struct {
     int Unk5<name="Unk5 (int)">;
     int Unk6<name="Unk6 (int)">;
     int Unk7<name="Unk7 (int)">;
-    ushort Unk8<name="Unk8 (ushort)">;
-    uint Unk9<name="Unk9 (uint)">;
-    ubyte Unk10<name="Unk10 (ubyte)">;
+    short Unk8<name="Unk8 (short)">;
+    short Unk9<name="Unk9 (short)">;
+    short Unk10<name="Unk10 (short)">;
+    uint Unk11<name="Unk11 (uint)">;
+    ubyte Unk12<name="Unk12 (ubyte)">;
 } Entries;
 
 Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

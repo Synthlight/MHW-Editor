@@ -16,6 +16,8 @@ namespace MHW_Generator.Skills {
                     new MhwMultiStructData.Entry("Unlock Skill 2", typeof(uint), dataSourceType: DataSourceType.SkillDat),
                     new MhwMultiStructData.Entry("Unlock Skill 3", typeof(uint), dataSourceType: DataSourceType.SkillDat),
                     new MhwMultiStructData.Entry("Unlock Skill 4", typeof(uint), dataSourceType: DataSourceType.SkillDat),
+                    new MhwMultiStructData.Entry("Unlock Skill 5", typeof(uint), dataSourceType: DataSourceType.SkillDat),
+                    new MhwMultiStructData.Entry("Unlock Skill 6", typeof(uint), dataSourceType: DataSourceType.SkillDat),
                     new MhwMultiStructData.Entry("Param 5", typeof(ushort)),
                     new MhwMultiStructData.Entry("Param 6", typeof(ushort)),
                     new MhwMultiStructData.Entry("Param 7", typeof(ushort)),

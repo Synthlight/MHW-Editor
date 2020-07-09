@@ -20,6 +20,7 @@ namespace Obsolete_Detector {
         private static readonly DateTime CHUNK_2    = new DateTime(2020, 3, 11);
         private static readonly DateTime CHUNK_3    = new DateTime(2020, 4, 8);
         private static readonly DateTime CHUNK_4    = new DateTime(2020, 4, 22);
+        private static readonly DateTime CHUNK_5    = new DateTime(2020, 6, 9);
 
         public static readonly Dictionary<string, Dictionary<string, List<string>>> BAD_FILE_HASH_MAP;
         public static readonly Dictionary<string, string>                           GOOD_CHUNK_MAP;
@@ -129,6 +130,7 @@ namespace Obsolete_Detector {
                 case "chunkG2": return CHUNK_2;
                 case "chunkG3": return CHUNK_3;
                 case "chunkG4": return CHUNK_4;
+                case "chunkG5": return CHUNK_5;
                 default: throw new Exception($"No date for: {chunk}");
             }
         }

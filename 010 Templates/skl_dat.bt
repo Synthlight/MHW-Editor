@@ -22,6 +22,8 @@ typedef struct {
     uint Unlock_Skill_2<name="Unlock Skill 2 (uint)">;
     uint Unlock_Skill_3<name="Unlock Skill 3 (uint)">;
     uint Unlock_Skill_4<name="Unlock Skill 4 (uint)">;
+    uint Unlock_Skill_5<name="Unlock Skill 5 (uint)">;
+    uint Unlock_Skill_6<name="Unlock Skill 6 (uint)">;
     ushort Param_5<name="Param 5 (ushort)">;
     ushort Param_6<name="Param 6 (ushort)">;
     ushort Param_7<name="Param 7 (ushort)">;

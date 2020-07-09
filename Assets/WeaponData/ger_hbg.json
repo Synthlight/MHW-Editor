@@ -290,9 +290,9 @@
   "288": "Jeder Schuss dieses Schweren Bogen-\r\ngewehrs resultiert in einer Schock-\r\nwelle, die selbst Donner übertönt.",
   "289": "Dämonenfürst-Bestiensprenger",
   "290": "Die Wut in diesem Schweren Bogen-\r\ngewehr aus Zorniger-Rajang-Teilen\r\nlässt jedes Opfer sofort verglühen.",
-  "291": "Unavailable",
-  "292": "Unavailable",
-  "293": "Unavailable",
+  "291": "Chaosflügel",
+  "292": "Ein schwarzes Schweres Bogengewehr,\r\naus Wut und Chaos geboren. Unbe-\r\nkannte Energie umspielt den Lauf.",
+  "293": "Albaaufschlag",
   "294": "Seelenfeuergebrüll \"Lunastra\"",
   "295": "Seelenfeuergebrüll \"Nergigante\"",
   "296": "Seelenfeuergebrüll \"Xeno'jiiva\"",
@@ -301,8 +301,8 @@
   "299": "Palast-Gewehr",
   "300": "An Gildenritter für herausragende\r\nLeistungen vergeben. Der erhabene\r\nGlanz ist ein Quell wahren Stolzes.",
   "301": "Rajang-Zerstörer",
-  "302": "Unavailable",
-  "303": "Unavailable",
+  "302": "Letzter Guerilla",
+  "303": "Ein Schweres Bogengewehr aus Frost-\r\nhauer-Barioth, umhüllt von scharfer\r\nKälte. Zeichen des Wärter der Weite.",
   "304": "Unavailable",
   "305": "Unavailable",
   "306": "Unavailable",
@@ -451,6 +451,5 @@
   "449": "Unavailable",
   "450": "Unavailable",
   "451": "Unavailable",
-  "452": "Unavailable",
-  "453": "Unavailable"
+  "452": "Unavailable"
 }

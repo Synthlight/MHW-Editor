@@ -312,9 +312,9 @@
   "310": "Die Contenance dieses majestä-\r\ntischen Rajang-Hammers wird durch\r\ndas Herz des Trägers bestimmt.",
   "311": "Dämonenfürst-Hammer",
   "312": "Ein Hammer, der dem Zornigen Rajang\r\nnachempfunden wurde, dem\r\ndämonischen König des Landes.",
-  "313": "Unavailable",
-  "314": "Unavailable",
-  "315": "Unavailable",
+  "313": "Alatreon-Hammer",
+  "314": "Dieser Alatreon-Hammer leuchtet\r\nso betörend, dass die Schwachen\r\nihre Nerven und Seelen verlieren.",
+  "315": "Alatreon-Metamorph",
   "316": "Seelenfeuerferse \"Lunastra\"",
   "317": "Seelenfeuerferse \"Nergigante\"",
   "318": "Seelenfeuerferse \"Xeno'jiiva\"",
@@ -334,8 +334,8 @@
   "332": "Schwarzflügel-Todesschlag I",
   "333": "Dieser Hammer ist so mächtig, als\r\nhätte der Geist eines Yian Garuga\r\nvon ihm Besitz ergriffen.",
   "334": "Schwarzflügel-Todesschlag II",
-  "335": "Unavailable",
-  "336": "Unavailable",
+  "335": "Polaris-Schlag",
+  "336": "Ein silberner Hammer aus Frosthauer-\r\nBarioth, umhüllt von scharfer Kälte.\r\nZeichen des Wärter der Weite.",
   "337": "Unavailable",
   "338": "Unavailable",
   "339": "Unavailable",
@@ -441,6 +441,5 @@
   "439": "Unavailable",
   "440": "Unavailable",
   "441": "Unavailable",
-  "442": "Unavailable",
-  "443": "Unavailable"
+  "442": "Unavailable"
 }

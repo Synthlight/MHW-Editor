@@ -200,6 +200,8 @@ namespace MHW_Editor {
             "Unlock_Skill_2_button",
             "Unlock_Skill_3_button",
             "Unlock_Skill_4_button",
+            "Unlock_Skill_5_button",
+            "Unlock_Skill_6_button",
             "Water_Rec_Amnt_button",
             "Water_Rel_Spd_button",
             "Weapon_Id_button",
@@ -356,6 +358,8 @@ namespace MHW_Editor {
                 "Unlock_Skill_2",
                 "Unlock_Skill_3",
                 "Unlock_Skill_4",
+                "Unlock_Skill_5",
+                "Unlock_Skill_6",
             }},
             {typeof(MHW_Editor.Structs.Monsters.MonsterDamageAttributes.Monster_Damage_Attributes_1_), new List<string> {
                 "Monster_Id",

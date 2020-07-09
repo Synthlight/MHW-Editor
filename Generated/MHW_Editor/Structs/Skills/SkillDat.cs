@@ -221,9 +221,53 @@ namespace MHW_Editor.Structs.Skills {
             [CustomSorter(typeof(ButtonSorter))]
             public string Unlock_Skill_4_button => MainWindow.skillDatLookup[MainWindow.locale].TryGet(Unlock_Skill_4).ToStringWithId(Unlock_Skill_4);
 
+            protected uint Unlock_Skill_5_raw;
+            public const string Unlock_Skill_5_displayName = "Unlock Skill 5";
+            public const int Unlock_Skill_5_sortIndex = 350;
+            [SortOrder(Unlock_Skill_5_sortIndex)]
+            [DisplayName(Unlock_Skill_5_displayName)]
+            [DataSource(DataSourceType.SkillDat)]
+            public virtual uint Unlock_Skill_5 {
+                get => Unlock_Skill_5_raw;
+                set {
+                    if (Unlock_Skill_5_raw == value) return;
+                    Unlock_Skill_5_raw = value;
+                    ChangedItems.Add(nameof(Unlock_Skill_5));
+                    OnPropertyChanged(nameof(Unlock_Skill_5));
+                    OnPropertyChanged(nameof(Unlock_Skill_5_button));
+                }
+            }
+
+            [SortOrder(Unlock_Skill_5_sortIndex)]
+            [DisplayName(Unlock_Skill_5_displayName)]
+            [CustomSorter(typeof(ButtonSorter))]
+            public string Unlock_Skill_5_button => MainWindow.skillDatLookup[MainWindow.locale].TryGet(Unlock_Skill_5).ToStringWithId(Unlock_Skill_5);
+
+            protected uint Unlock_Skill_6_raw;
+            public const string Unlock_Skill_6_displayName = "Unlock Skill 6";
+            public const int Unlock_Skill_6_sortIndex = 400;
+            [SortOrder(Unlock_Skill_6_sortIndex)]
+            [DisplayName(Unlock_Skill_6_displayName)]
+            [DataSource(DataSourceType.SkillDat)]
+            public virtual uint Unlock_Skill_6 {
+                get => Unlock_Skill_6_raw;
+                set {
+                    if (Unlock_Skill_6_raw == value) return;
+                    Unlock_Skill_6_raw = value;
+                    ChangedItems.Add(nameof(Unlock_Skill_6));
+                    OnPropertyChanged(nameof(Unlock_Skill_6));
+                    OnPropertyChanged(nameof(Unlock_Skill_6_button));
+                }
+            }
+
+            [SortOrder(Unlock_Skill_6_sortIndex)]
+            [DisplayName(Unlock_Skill_6_displayName)]
+            [CustomSorter(typeof(ButtonSorter))]
+            public string Unlock_Skill_6_button => MainWindow.skillDatLookup[MainWindow.locale].TryGet(Unlock_Skill_6).ToStringWithId(Unlock_Skill_6);
+
             protected ushort Param_5_raw;
             public const string Param_5_displayName = "Param 5";
-            public const int Param_5_sortIndex = 350;
+            public const int Param_5_sortIndex = 450;
             [SortOrder(Param_5_sortIndex)]
             [DisplayName(Param_5_displayName)]
             public virtual ushort Param_5 {
@@ -238,7 +282,7 @@ namespace MHW_Editor.Structs.Skills {
 
             protected ushort Param_6_raw;
             public const string Param_6_displayName = "Param 6";
-            public const int Param_6_sortIndex = 400;
+            public const int Param_6_sortIndex = 500;
             [SortOrder(Param_6_sortIndex)]
             [DisplayName(Param_6_displayName)]
             public virtual ushort Param_6 {
@@ -253,7 +297,7 @@ namespace MHW_Editor.Structs.Skills {
 
             protected ushort Param_7_raw;
             public const string Param_7_displayName = "Param 7";
-            public const int Param_7_sortIndex = 450;
+            public const int Param_7_sortIndex = 550;
             [SortOrder(Param_7_sortIndex)]
             [DisplayName(Param_7_displayName)]
             public virtual ushort Param_7 {
@@ -268,7 +312,7 @@ namespace MHW_Editor.Structs.Skills {
 
             protected ushort Param_8_raw;
             public const string Param_8_displayName = "Param 8";
-            public const int Param_8_sortIndex = 500;
+            public const int Param_8_sortIndex = 600;
             [SortOrder(Param_8_sortIndex)]
             [DisplayName(Param_8_displayName)]
             public virtual ushort Param_8 {
@@ -281,7 +325,7 @@ namespace MHW_Editor.Structs.Skills {
                 }
             }
 
-            public const int lastSortIndex = 550;
+            public const int lastSortIndex = 650;
 
             public static ObservableMhwStructCollection<Entries> LoadData(BinaryReader reader, ObservableMhwStructCollection<Header> lastStruct) {
                 var list = new ObservableMhwStructCollection<Entries>();
@@ -302,6 +346,8 @@ namespace MHW_Editor.Structs.Skills {
                 data.Unlock_Skill_2_raw = reader.ReadUInt32();
                 data.Unlock_Skill_3_raw = reader.ReadUInt32();
                 data.Unlock_Skill_4_raw = reader.ReadUInt32();
+                data.Unlock_Skill_5_raw = reader.ReadUInt32();
+                data.Unlock_Skill_6_raw = reader.ReadUInt32();
                 data.Param_5_raw = reader.ReadUInt16();
                 data.Param_6_raw = reader.ReadUInt16();
                 data.Param_7_raw = reader.ReadUInt16();
@@ -316,6 +362,8 @@ namespace MHW_Editor.Structs.Skills {
                 writer.Write(Unlock_Skill_2_raw);
                 writer.Write(Unlock_Skill_3_raw);
                 writer.Write(Unlock_Skill_4_raw);
+                writer.Write(Unlock_Skill_5_raw);
+                writer.Write(Unlock_Skill_6_raw);
                 writer.Write(Param_5_raw);
                 writer.Write(Param_6_raw);
                 writer.Write(Param_7_raw);

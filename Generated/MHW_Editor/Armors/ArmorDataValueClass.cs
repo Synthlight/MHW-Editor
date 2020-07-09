@@ -265,7 +265,9 @@ namespace MHW_Editor.Armors {
         public const ushort Vespoid_Layered_Helm = 295;
         public const ushort Hornetaur_Layered_Helm = 296;
         public const ushort Acrobat_Earrings_a_plus = 297;
+        public const ushort Goldspring_Layered_Head = 298;
         public const ushort Shamos_Layered_Head = 299;
+        public const ushort Faux_Kelbi_Layered_Head = 300;
         public const ushort Ingot_Helm_a_plus = 301;
         public const ushort Ingot_Helm_b_plus = 302;
         public const ushort Barioth_Helm_a_plus = 303;
@@ -362,6 +364,8 @@ namespace MHW_Editor.Armors {
         public const ushort Brachydium_Helm_b_plus = 406;
         public const ushort Safi_Crested_Crown_a_plus = 407;
         public const ushort Safi_Crested_Crown_b_plus = 408;
+        public const ushort Escadora_Wisdom_a_plus = 409;
+        public const ushort Escadora_Wisdom_b_plus = 410;
         public const ushort Wyverian_Ears_a_plus = 412;
         public const ushort Empress_Crown_a_plus = 415;
         public const ushort Empress_Crown_b_plus = 416;
@@ -374,10 +378,12 @@ namespace MHW_Editor.Armors {
         public const ushort Astral_Veil_a_plus = 427;
         public const ushort Radobaan_bLayered_Helm = 428;
         public const ushort Layered_Rose_Head = 429;
+        public const ushort Passionate_Layered_Head = 430;
         public const ushort Oolong_Layered_Head = 432;
         public const ushort Astral_Layered_Head = 433;
         public const ushort High_Metal_Layered_Helm = 434;
         public const ushort Thermae_Layered_Wrap = 435;
+        public const ushort Hare_Band_Layered_Armor = 436;
         public const ushort Downy_Crake_Layered_Head = 437;
         public const ushort Pearlspring_a_plus = 438;
         public const ushort Rex_Roar_Helm_a_plus = 440;
@@ -385,6 +391,8 @@ namespace MHW_Editor.Armors {
         public const ushort Guardian_Helm_a_plus = 442;
         public const ushort Yukumo_Layered_Kasa = 443;
         public const ushort Tentacle_Cowl_y_plus = 446;
+        public const ushort Frostfang_Helm_a_plus = 450;
+        public const ushort Frostfang_Helm_b_plus = 451;
         public const ushort Leon_s_Head_a_plus = 456;
         public const ushort Claire_s_Head_a_plus = 457;
         public const ushort Gastodon_Layered_Head = 460;
@@ -782,12 +790,15 @@ namespace MHW_Editor.Armors {
         public const ushort Brachydium_Mail_b_plus = 1032;
         public const ushort Safi_Crested_Chest_a_plus = 1033;
         public const ushort Safi_Crested_Chest_b_plus = 1034;
+        public const ushort Escadora_Soul_a_plus = 1035;
+        public const ushort Escadora_Soul_b_plus = 1036;
         public const ushort Empress_Mail_a_plus = 1037;
         public const ushort Empress_Mail_b_plus = 1038;
         public const ushort Kulve_Taroth_s_Ire_a_plus = 1039;
         public const ushort Kulve_Taroth_s_Ire_b_plus = 1040;
         public const ushort Rose_Jacket_a_plus = 1041;
         public const ushort Lumu_Layered_Chest = 1042;
+        public const ushort Passionate_Body_a_plus = 1043;
         public const ushort Rathian_aLayered_Chest = 1044;
         public const ushort Rathian_bLayered_Chest = 1046;
         public const ushort Oolong_Vest_a_plus = 1047;
@@ -795,6 +806,7 @@ namespace MHW_Editor.Armors {
         public const ushort Astral_Cloth_a_plus = 1049;
         public const ushort Radobaan_bLayered_Chest = 1050;
         public const ushort Layered_Rose_Chest = 1051;
+        public const ushort Passionate_Layered_Chest = 1052;
         public const ushort Oolong_Layered_Chest = 1054;
         public const ushort Astral_Layered_Chest = 1055;
         public const ushort High_Metal_Layered_Chest = 1056;
@@ -805,6 +817,8 @@ namespace MHW_Editor.Armors {
         public const ushort Guardian_Suit_a_plus = 1061;
         public const ushort Yukumo_Layered_Dogi = 1062;
         public const ushort Tentacle_Cloak_y_plus = 1065;
+        public const ushort Frostfang_Mail_a_plus = 1069;
+        public const ushort Frostfang_Mail_b_plus = 1070;
         public const ushort Leon_s_Body_a_plus = 1075;
         public const ushort Claire_s_Body_a_plus = 1076;
         public const ushort Barnos_Layered_Chest = 1079;
@@ -863,6 +877,8 @@ namespace MHW_Editor.Armors {
         public const ushort Kulve_yLayered_Chest = 1134;
         public const ushort Artian_Layered_Chest = 1163;
         public const ushort Black_Belt_Layered_Chest = 1197;
+        public const ushort Innerwear_aLayered_Body = 1256;
+        public const ushort Innerwear_bLayered_Body = 1257;
         public const ushort Leather_Gloves = 1284;
         public const ushort Chainmail_Gloves = 1285;
         public const ushort Hunter_s_Vambraces = 1286;
@@ -1181,10 +1197,13 @@ namespace MHW_Editor.Armors {
         public const ushort Golden_Kote_b_plus = 1645;
         public const ushort Brachydium_Braces_a_plus = 1648;
         public const ushort Brachydium_Braces_b_plus = 1649;
+        public const ushort Escadora_Armguards_a_plus = 1652;
+        public const ushort Escadora_Armguards_b_plus = 1653;
         public const ushort Empress_Vambraces_a_plus = 1654;
         public const ushort Empress_Vambraces_b_plus = 1655;
         public const ushort Rose_Arms_a_plus = 1658;
         public const ushort Lumu_Layered_Arms = 1659;
+        public const ushort Passionate_Arms_a_plus = 1660;
         public const ushort Rathian_aLayered_Arms = 1661;
         public const ushort Rathian_bLayered_Arms = 1663;
         public const ushort Oolong_Sleeves_a_plus = 1664;
@@ -1192,6 +1211,7 @@ namespace MHW_Editor.Armors {
         public const ushort Astral_Scarf_a_plus = 1666;
         public const ushort Radobaan_bLayered_Arms = 1667;
         public const ushort Layered_Rose_Arms = 1668;
+        public const ushort Passionate_Layered_Arms = 1669;
         public const ushort Oolong_Layered_Arms = 1671;
         public const ushort Astral_Layered_Arms = 1672;
         public const ushort High_Metal_Layered_Arms = 1673;
@@ -1259,6 +1279,8 @@ namespace MHW_Editor.Armors {
         public const ushort Kulve_yLayered_Arms = 1750;
         public const ushort Artian_Layered_Arms = 1778;
         public const ushort Black_Belt_Layered_Arms = 1812;
+        public const ushort Innerwear_aLayered_Arms = 1871;
+        public const ushort Innerwear_bLayered_Arms = 1872;
         public const ushort Leather_Belt = 1899;
         public const ushort Chainmail_Belt = 1900;
         public const ushort Hunter_s_Coil = 1901;
@@ -1589,10 +1611,13 @@ namespace MHW_Editor.Armors {
         public const ushort Brachydium_Faulds_b_plus = 2258;
         public const ushort Safi_Crested_Belt_a_plus = 2259;
         public const ushort Safi_Crested_Belt_b_plus = 2260;
+        public const ushort Escadora_Might_a_plus = 2261;
+        public const ushort Escadora_Might_b_plus = 2262;
         public const ushort Empress_Coil_a_plus = 2263;
         public const ushort Empress_Coil_b_plus = 2264;
         public const ushort Rose_Belt_a_plus = 2267;
         public const ushort Lumu_Layered_Torso = 2268;
+        public const ushort Passionate_Belt_a_plus = 2269;
         public const ushort Rathian_aLayered_Torso = 2270;
         public const ushort Rathian_bLayered_Torso = 2272;
         public const ushort Oolong_Waist_a_plus = 2273;
@@ -1600,6 +1625,7 @@ namespace MHW_Editor.Armors {
         public const ushort Astral_Skirt_a_plus = 2275;
         public const ushort Radobaan_bLayered_Torso = 2276;
         public const ushort Layered_Rose_Torso = 2277;
+        public const ushort Passionate_Layered_Torso = 2278;
         public const ushort Oolong_Layered_Torso = 2280;
         public const ushort Astral_Layered_Torso = 2281;
         public const ushort High_Metal_Layered_Torso = 2282;
@@ -1610,6 +1636,8 @@ namespace MHW_Editor.Armors {
         public const ushort Guardian_Coil_a_plus = 2287;
         public const ushort Yukumo_Layered_Obi = 2288;
         public const ushort Tentacle_Coil_y_plus = 2291;
+        public const ushort Frostfang_Coil_a_plus = 2295;
+        public const ushort Frostfang_Coil_b_plus = 2296;
         public const ushort Leon_s_Torso_a_plus = 2301;
         public const ushort Claire_s_Torso_a_plus = 2302;
         public const ushort Dodogama_Layered_Torso = 2305;
@@ -1667,6 +1695,8 @@ namespace MHW_Editor.Armors {
         public const ushort Kulve_yLayered_Torso = 2359;
         public const ushort Artian_Layered_Torso = 2387;
         public const ushort Black_Belt_Layered_Torso = 2421;
+        public const ushort Innerwear_aLayered_Torso = 2480;
+        public const ushort Innerwear_bLayered_Torso = 2481;
         public const ushort Leather_Trousers = 2508;
         public const ushort Chainmail_Trousers = 2509;
         public const ushort Hunter_s_Greaves = 2510;
@@ -1992,6 +2022,8 @@ namespace MHW_Editor.Armors {
         public const ushort Brachydium_Greaves_b_plus = 2873;
         public const ushort Safi_Crested_Boots_a_plus = 2874;
         public const ushort Safi_Crested_Boots_b_plus = 2875;
+        public const ushort Escadora_Sheath_a_plus = 2876;
+        public const ushort Escadora_Sheath_b_plus = 2877;
         public const ushort Empress_Greaves_a_plus = 2878;
         public const ushort Empress_Greaves_b_plus = 2879;
         public const ushort Rose_Boots_a_plus = 2882;
@@ -2003,6 +2035,7 @@ namespace MHW_Editor.Armors {
         public const ushort Astral_Tights_a_plus = 2890;
         public const ushort Radobaan_bLayered_Legs = 2891;
         public const ushort Layered_Rose_Legs = 2892;
+        public const ushort Passionate_Layered_Legs = 2893;
         public const ushort Oolong_Layered_Legs = 2895;
         public const ushort Astral_Layered_Legs = 2896;
         public const ushort High_Metal_Layered_Legs = 2897;
@@ -2013,6 +2046,8 @@ namespace MHW_Editor.Armors {
         public const ushort Guardian_Boots_a_plus = 2902;
         public const ushort Yukumo_Layered_Hakama = 2903;
         public const ushort Tentacle_Greaves_y_plus = 2906;
+        public const ushort Frostfang_Greaves_a_plus = 2910;
+        public const ushort Frostfang_Greaves_b_plus = 2911;
         public const ushort Leon_s_Legs_a_plus = 2916;
         public const ushort Claire_s_Legs_a_plus = 2917;
         public const ushort Dodogama_Layered_Legs = 2920;
@@ -2070,6 +2105,8 @@ namespace MHW_Editor.Armors {
         public const ushort Kulve_yLayered_Legs = 2974;
         public const ushort Artian_Layered_Legs = 3002;
         public const ushort Black_Belt_Layered_Legs = 3036;
+        public const ushort Innerwear_aLayered_Legs = 3095;
+        public const ushort Innerwear_bLayered_Legs = 3096;
         public const ushort Fair_Wind_Charm = 3123;
         public const ushort Poison_Charm_I = 3128;
         public const ushort Poison_Charm_II = 3129;
@@ -2330,8 +2367,10 @@ namespace MHW_Editor.Armors {
         public const ushort Evasion_Charm_V = 3403;
         public const ushort Wyrmsbane_Charm_IV = 3404;
         public const ushort Wyrmsbane_Charm_V = 3405;
+        public const ushort Draw_Charm_III = 3406;
         public const ushort Marathon_Charm_III = 3407;
         public const ushort Fitness_Charm_IV = 3408;
+        public const ushort Fitness_Charm_V = 3409;
         public const ushort Surge_Charm_III = 3410;
         public const ushort Leaping_Charm_III = 3411;
         public const ushort Mushroom_Charm_III = 3412;
@@ -2360,6 +2399,7 @@ namespace MHW_Editor.Armors {
         public const ushort Invigorate_Charm_III = 3439;
         public const ushort Phoenix_Charm_I = 3440;
         public const ushort Phoenix_Charm_II = 3441;
+        public const ushort Phoenix_Charm_III = 3442;
         public const ushort Guardian_Charm_I = 3443;
         public const ushort Guardian_Charm_II = 3444;
         public const ushort Guardian_Charm_III = 3445;
