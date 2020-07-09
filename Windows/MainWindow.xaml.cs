@@ -367,7 +367,8 @@ namespace MHW_Editor.Windows {
 
                 btn_slot_cheat.Visibility = targetFileType.Is(typeof(Armor),
                                                               typeof(ASkill),
-                                                              typeof(IWeapon))
+                                                              typeof(Melee),
+                                                              typeof(Ranged))
                                                           .VisibleIfTrue();
 
                 btn_skill_level_cheat.Visibility = targetFileType.Is(typeof(Armor),
@@ -383,14 +384,18 @@ namespace MHW_Editor.Windows {
                                                               typeof(EqCrt),
                                                               typeof(EqCus),
                                                               typeof(Item),
-                                                              typeof(IWeapon),
+                                                              typeof(LimitBreakMaterialBase),
+                                                              typeof(LimitBreakMaterialSkill),
+                                                              typeof(Melee),
                                                               typeof(NewLimitBreak),
                                                               typeof(NewLimitBreakR),
+                                                              typeof(Ranged),
                                                               typeof(RodInsect))
                                                           .VisibleIfTrue();
 
-                btn_damage_cheat.Visibility = targetFileType.Is(typeof(IWeapon),
-                                                                typeof(OtomoWeaponDat))
+                btn_damage_cheat.Visibility = targetFileType.Is(typeof(Melee),
+                                                                typeof(OtomoWeaponDat),
+                                                                typeof(Ranged))
                                                             .VisibleIfTrue();
 
                 btn_enable_all_coatings_cheat.Visibility = targetFileType.Is(typeof(BottleTable)).VisibleIfTrue();

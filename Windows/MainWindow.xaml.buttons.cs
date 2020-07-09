@@ -179,7 +179,8 @@ namespace MHW_Editor.Windows {
 
             if (!targetFileType.Is(typeof(Armor),
                                    typeof(ASkill),
-                                   typeof(IWeapon))) {
+                                   typeof(Melee),
+                                   typeof(Ranged))) {
                 return;
             }
 
@@ -209,7 +210,7 @@ namespace MHW_Editor.Windows {
 
             if (!targetFileType.Is(typeof(Armor))) return;
 
-            foreach (Armor.Entries item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
+            foreach (var item in fileData.GetAllEnumerableOfType<Armor.Entries>()) {
                 if (item.Set_Skill_1_Level > 0) item.Set_Skill_1_Level = 5;
             }
         }
@@ -249,9 +250,12 @@ namespace MHW_Editor.Windows {
                                    typeof(EqCrt),
                                    typeof(EqCus),
                                    typeof(Item),
-                                   typeof(IWeapon),
+                                   typeof(LimitBreakMaterialBase),
+                                   typeof(LimitBreakMaterialSkill),
+                                   typeof(Melee),
                                    typeof(NewLimitBreak),
                                    typeof(NewLimitBreakR),
+                                   typeof(Ranged),
                                    typeof(RodInsect))) {
                 return;
             }
@@ -321,6 +325,16 @@ namespace MHW_Editor.Windows {
                         if (recipe.Mat_4_Count > 0) recipe.Mat_4_Count = 1;
                         break;
                     }
+                    case LimitBreakMaterialBase.Entries entries: {
+                        if (entries.Cost > 0) entries.Cost             = 1;
+                        if (entries.Item_1_Cnt > 0) entries.Item_1_Cnt = 1;
+                        if (entries.Item_2_Cnt > 0) entries.Item_2_Cnt = 1;
+                        break;
+                    }
+                    case LimitBreakMaterialSkill.Entries entries: {
+                        if (entries.Item_1_Cnt > 0) entries.Item_1_Cnt = 1;
+                        break;
+                    }
                 }
             }
         }
@@ -328,8 +342,9 @@ namespace MHW_Editor.Windows {
         private void Btn_damage_cheat_Click(object sender, RoutedEventArgs e) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
-            if (!targetFileType.Is(typeof(IWeapon),
-                                   typeof(OtomoWeaponDat))) {
+            if (!targetFileType.Is(typeof(Melee),
+                                   typeof(OtomoWeaponDat),
+                                   typeof(Ranged))) {
                 return;
             }
 
@@ -353,7 +368,7 @@ namespace MHW_Editor.Windows {
 
             if (!targetFileType.Is(typeof(BottleTable))) return;
 
-            foreach (BottleTable.Entries item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
+            foreach (var item in fileData.GetAllEnumerableOfType<BottleTable.Entries>()) {
                 item.Close_Range = CoatingType.Plus;
                 item.Power       = CoatingType.Plus;
                 item.Paralysis   = CoatingType.Plus;
@@ -396,11 +411,13 @@ namespace MHW_Editor.Windows {
 
             if (!targetFileType.Is(typeof(SkillDat))) return;
 
-            foreach (SkillDat.Entries item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
+            foreach (var item in fileData.GetAllEnumerableOfType<SkillDat.Entries>()) {
                 item.Unlock_Skill_1 = 0;
                 item.Unlock_Skill_2 = 0;
                 item.Unlock_Skill_3 = 0;
                 item.Unlock_Skill_4 = 0;
+                item.Unlock_Skill_5 = 0;
+                item.Unlock_Skill_6 = 0;
             }
         }
 
@@ -412,7 +429,7 @@ namespace MHW_Editor.Windows {
             const int reloadSpeed  = 17;
             const int recoilAmount = 29;
 
-            foreach (ShellTable.Entries item in fileData.GetAllEnumerableOfType<IMhwStructItem>()) {
+            foreach (var item in fileData.GetAllEnumerableOfType<ShellTable.Entries>()) {
                 item.Normal_1_Rel_Spd  = reloadSpeed;
                 item.Normal_1_Rec_Amnt = recoilAmount;
                 item.Normal_2_Rel_Spd  = reloadSpeed;
