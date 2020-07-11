@@ -22,20 +22,22 @@ namespace Obsolete_Detector {
         private static readonly DateTime CHUNK_4    = new DateTime(2020, 4, 22);
         private static readonly DateTime CHUNK_5    = new DateTime(2020, 6, 9);
 
-        public static readonly Dictionary<string, Dictionary<string, List<string>>> BAD_FILE_HASH_MAP;
-        public static readonly Dictionary<string, string>                           GOOD_CHUNK_MAP;
-        public static readonly Dictionary<string, string>                           FILE_PATH_MAP;
-        public static readonly Dictionary<string, ulong>                            FILE_SIZE_MAP;
+        public static readonly Dictionary<string, string> GOOD_CHUNK_MAP;
 
         static MainWindow() {
-            BAD_FILE_HASH_MAP = LoadDict<string, Dictionary<string, List<string>>>(EditorAssets.BadHashMap);
-            GOOD_CHUNK_MAP    = LoadDict<string, string>(EditorAssets.GoodChunkMap);
-            FILE_PATH_MAP     = LoadDict<string, string>(EditorAssets.FilePathMap);
-            FILE_SIZE_MAP     = LoadDict<string, ulong>(EditorAssets.FileSizeMap);
+            GOOD_CHUNK_MAP = LoadDict<string, string>(EditorAssets.GoodChunkMap);
         }
 
         public MainWindow() {
             InitializeComponent();
+            main_text.Text = "This detects mods that are outdated for the current version of MHW.\n" +
+                             $"Currently designed for {Global.CURRENT_GAME_VERSION}. If you have a newer version of MHW, please update this program.\n" +
+                             "Click anywhere on the text here to go to the mod page.\n" +
+                             "\n" +
+                             "This isn't perfect. It may miss something obsolete, it may have false positives. YMMV\n" +
+                             "If you still have a blackscreen after, test without mods by renaming nativePC to anything else.\n" +
+                             "\n" +
+                             "Select MHW install folder and press scan to begin.";
         }
 
         private void NexusLink_OnMouseUp(object sender, MouseButtonEventArgs e) {

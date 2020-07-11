@@ -39,9 +39,8 @@ namespace MHW_Editor.Windows {
         private const bool ENABLE_CHEAT_BUTTONS = false;
         public const bool SHOW_RAW_BYTES = false;
 #endif
-        public const  string CURRENT_GAME_VERSION = "14.0X.XX";
-        private const string TITLE                = "MHW Editor";
-        public const  double FONT_SIZE            = 20;
+        private const string TITLE     = "MHW Editor";
+        public const  double FONT_SIZE = 20;
 
         public static LangMap skillDatLookup = new LangMap();
 
@@ -323,7 +322,7 @@ namespace MHW_Editor.Windows {
             // Length check as a fallback.
             if (targetFileLength == properLength) return;
 
-            MessageBox.Show($"The file size of {fileName} does not match the known file size in v{MainWindow.CURRENT_GAME_VERSION}.\r\n" +
+            MessageBox.Show($"The file size of {fileName} does not match the known file size in v{Global.CURRENT_GAME_VERSION}.\r\n" +
                             $"Expected: {properLength}\r\n" +
                             $"Found: {targetFileLength}\r\n" +
                             "Please make sure you've extracted the file from the highest numbered chunk that contains it.", "File Size Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);

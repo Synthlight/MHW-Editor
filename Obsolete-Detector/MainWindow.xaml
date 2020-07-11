@@ -23,17 +23,9 @@
         <Label Grid.Row="0"
                Grid.Column="0"
                Grid.ColumnSpan="2">
-            <TextBlock MouseUp="NexusLink_OnMouseUp"
-                       TextWrapping="Wrap">
-                This detects mods that are outdated for the current version of MHW.<LineBreak/>
-                Currently designed for 13.0X.XX. If you have a newer version of MHW, please update this program.<LineBreak/>
-                Click anywhere on the text here to go to the mod page.<LineBreak/>
-                <LineBreak/>
-                This isn't perfect. It may miss something obsolete, it may have false positives. YMMV<LineBreak/>
-                If you still have a blackscreen after, test without mods by renaming nativePC to anything else.<LineBreak/>
-                <LineBreak/>
-                Select MHW install folder and press scan to begin.
-            </TextBlock>
+            <TextBlock Name="main_text"
+                       MouseUp="NexusLink_OnMouseUp"
+                       TextWrapping="Wrap"/>
         </Label>
         <TextBox Name="txt_path"
                  Grid.Row="1"
