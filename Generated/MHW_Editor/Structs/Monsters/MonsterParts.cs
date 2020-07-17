@@ -156,7 +156,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Flinches : MhwStructItem, IWriteData {
+        public partial class Flinches : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Flinches";
 
@@ -2010,6 +2010,24 @@ namespace MHW_Editor.Structs.Monsters {
             protected virtual ObservableCollection<Parts3> Parts3_raw { get; set; }
 
             public const int lastSortIndex = 500;
+
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(Parts1).Is(typeof(F)) || typeof(Parts1).IsGeneric(typeof(F))) {
+                    foreach (var item in Parts1_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Parts2).Is(typeof(F)) || typeof(Parts2).IsGeneric(typeof(F))) {
+                    foreach (var item in Parts2_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Parts3).Is(typeof(F)) || typeof(Parts3).IsGeneric(typeof(F))) {
+                    foreach (var item in Parts3_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+            }
 
             public static ObservableMhwStructCollection<Flinches> LoadData(BinaryReader reader, ObservableMhwStructCollection<Monster_Parts> lastStruct) {
                 var list = new ObservableMhwStructCollection<Flinches>();

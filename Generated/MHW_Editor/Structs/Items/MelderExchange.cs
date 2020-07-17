@@ -96,7 +96,7 @@ namespace MHW_Editor.Structs.Items {
             }
         }
 
-        public partial class Item_Box : MhwStructItem, IWriteData {
+        public partial class Item_Box : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Item Box";
             public const bool IsAddingAllowed = true;
@@ -192,6 +192,14 @@ namespace MHW_Editor.Structs.Items {
             public virtual ObservableCollection<Items> Items_raw { get; protected set; }
 
             public const int lastSortIndex = 200;
+
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(Items).Is(typeof(F)) || typeof(Items).IsGeneric(typeof(F))) {
+                    foreach (var item in Items_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+            }
 
             public static ObservableMhwStructCollection<Item_Box> LoadData(BinaryReader reader, ObservableMhwStructCollection<Melder_Exchange> lastStruct) {
                 var list = new ObservableMhwStructCollection<Item_Box>();

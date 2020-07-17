@@ -96,7 +96,7 @@ namespace MHW_Editor.Structs.Misc {
             }
         }
 
-        public partial class Default : MhwStructItem, IWriteData {
+        public partial class Default : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Default";
             public const bool IsAddingAllowed = true;
@@ -391,6 +391,14 @@ namespace MHW_Editor.Structs.Misc {
             }
 
             public const int lastSortIndex = 400;
+
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(Unk_Array).Is(typeof(F)) || typeof(Unk_Array).IsGeneric(typeof(F))) {
+                    foreach (var item in Unk_4_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+            }
 
             public static ObservableMhwStructCollection<Default> LoadData(BinaryReader reader, ObservableMhwStructCollection<Motion_Blend_Data_1_> lastStruct) {
                 var list = new ObservableMhwStructCollection<Default>();

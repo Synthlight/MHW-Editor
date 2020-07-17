@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.IO;
 using System.Windows.Controls;
 using MHW_Editor.Assets;
 using MHW_Editor.Controls.Models;

@@ -76,7 +76,19 @@ namespace MHW_Editor.Models {
         }
 
         public override IEnumerable<E> GetEnumerable<E>() {
-            return list.Cast<E>();
+            return list.Cast<E>().SelectMany(GetEnumerable);
+        }
+
+        private IEnumerable<E> GetEnumerable<E>(E item) {
+            yield return item;
+
+            if (item is IHasChildren itemWithChildren) {
+                foreach (var innerItem in itemWithChildren.GetAllEnumerableChildrenOfType<E>()) {
+                    foreach (var enumerableItem in GetEnumerable(innerItem)) {
+                        yield return enumerableItem;
+                    }
+                }
+            }
         }
 
         public override object First() {

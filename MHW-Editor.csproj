@@ -192,6 +192,7 @@
     <Compile Include="Generated\MHW_Editor\Structs\Weapons\Wp11Param.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Weapons\Wp12Param.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Weapons\Wp13Param.cs" />
+    <Compile Include="Models\IHasChildren.cs" />
     <Compile Include="Models\IWriteDataInner.cs" />
     <Compile Include="Models\IWriteData.cs" />
     <Compile Include="Models\MhwSingleStructFile.cs" />

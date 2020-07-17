@@ -6262,7 +6262,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skipping_Ahead_1_ : MhwStructItem, IWriteData {
+        public partial class Skipping_Ahead_1_ : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Skipping Ahead (1)";
 
@@ -6315,6 +6315,14 @@ namespace MHW_Editor.Structs.PlData {
             public virtual ObservableCollection<Raw_Bytes_1_> Raw_Bytes_raw { get; protected set; }
 
             public const int lastSortIndex = 100;
+
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(Raw_Bytes_1_).Is(typeof(F)) || typeof(Raw_Bytes_1_).IsGeneric(typeof(F))) {
+                    foreach (var item in Raw_Bytes_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+            }
 
             public static ObservableMhwStructCollection<Skipping_Ahead_1_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Skipping_Ahead_1_>();
@@ -8041,7 +8049,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skipping_Ahead_2_ : MhwStructItem, IWriteData {
+        public partial class Skipping_Ahead_2_ : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Skipping Ahead (2)";
 
@@ -8094,6 +8102,14 @@ namespace MHW_Editor.Structs.PlData {
             public virtual ObservableCollection<Raw_Bytes_2_> Raw_Bytes_raw { get; protected set; }
 
             public const int lastSortIndex = 100;
+
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(Raw_Bytes_2_).Is(typeof(F)) || typeof(Raw_Bytes_2_).IsGeneric(typeof(F))) {
+                    foreach (var item in Raw_Bytes_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+            }
 
             public static ObservableMhwStructCollection<Skipping_Ahead_2_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Skipping_Ahead_2_>();
@@ -8830,7 +8846,7 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class The_Rest : MhwStructItem, IWriteData {
+        public partial class The_Rest : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "The Rest";
 
@@ -8868,6 +8884,14 @@ namespace MHW_Editor.Structs.PlData {
             public virtual ObservableCollection<End_Junk> The_rest_of_the_file_as_bytes__raw { get; protected set; }
 
             public const int lastSortIndex = 100;
+
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(End_Junk).Is(typeof(F)) || typeof(End_Junk).IsGeneric(typeof(F))) {
+                    foreach (var item in The_rest_of_the_file_as_bytes__raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+            }
 
             public static ObservableMhwStructCollection<The_Rest> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<The_Rest>();

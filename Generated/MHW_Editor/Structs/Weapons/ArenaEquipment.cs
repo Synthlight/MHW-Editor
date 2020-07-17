@@ -96,7 +96,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Entries : MhwStructItem, IWriteData {
+        public partial class Entries : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
             public const bool IsAddingAllowed = true;
@@ -732,6 +732,44 @@ namespace MHW_Editor.Structs.Weapons {
             public virtual ObservableCollection<Ammo> Ammo_raw { get; protected set; }
 
             public const int lastSortIndex = 950;
+
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(Custom_Mods).Is(typeof(F)) || typeof(Custom_Mods).IsGeneric(typeof(F))) {
+                    foreach (var item in Custom_Mods_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Armors).Is(typeof(F)) || typeof(Armors).IsGeneric(typeof(F))) {
+                    foreach (var item in Armors_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Mantles).Is(typeof(F)) || typeof(Mantles).IsGeneric(typeof(F))) {
+                    foreach (var item in Mantles_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Armor_Level).Is(typeof(F)) || typeof(Armor_Level).IsGeneric(typeof(F))) {
+                    foreach (var item in Armor_Level_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Decorations).Is(typeof(F)) || typeof(Decorations).IsGeneric(typeof(F))) {
+                    foreach (var item in Decorations_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Items).Is(typeof(F)) || typeof(Items).IsGeneric(typeof(F))) {
+                    foreach (var item in Items_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Ammo).Is(typeof(F)) || typeof(Ammo).IsGeneric(typeof(F))) {
+                    foreach (var item in Ammo_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+            }
 
             public static ObservableMhwStructCollection<Entries> LoadData(BinaryReader reader, ObservableMhwStructCollection<Aeq> lastStruct) {
                 var list = new ObservableMhwStructCollection<Entries>();

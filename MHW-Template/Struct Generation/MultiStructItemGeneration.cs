@@ -1,5 +1,6 @@
 ﻿using System;
 using System.CodeDom;
+using System.Linq;
 using System.Text.RegularExpressions;
 using Microsoft.CSharp;
 
@@ -17,13 +18,17 @@ namespace MHW_Template.Struct_Generation {
         }
 
         private static void GenerateInnerClass(MultiStructItemTemplateBase template, MhwMultiStructData.StructData @struct, MhwMultiStructData.StructData parent = null, uint indentation = 0) {
-            var sortIndex  = SORT_INDEX_STEP;
-            var name       = @struct.SafeName;
-            var interfaces = "MhwStructItem";
+            var sortIndex   = SORT_INDEX_STEP;
+            var name        = @struct.SafeName;
+            var interfaces  = "MhwStructItem";
+            var hasChildren = @struct.entries.Any(entry => entry.HasSubStruct);
 
             if (@struct.showVertically) interfaces += ", IHasCustomView<MultiStructItemCustomView>";
+
             if (parent == null) interfaces += ", IWriteData";
             else interfaces                += $", IWriteDataInner<{parent.SafeName}>";
+
+            if (hasChildren) interfaces += ", IHasChildren";
 
             template.WriteLine("");
             template.WriteLine(indentation, $"        public partial class {name} : {interfaces} {{");
@@ -81,6 +86,8 @@ namespace MHW_Template.Struct_Generation {
 
             template.WriteLine("");
             template.WriteLine(indentation, $"            public const int lastSortIndex = {sortIndex};");
+
+            if (hasChildren) InnerEnumerateChildren(template, indentation, @struct, parent);
 
             InnerLoadData(template, indentation, @struct, parent);
             InnerWriteData(template, indentation, @struct, parent);
@@ -289,6 +296,25 @@ namespace MHW_Template.Struct_Generation {
                     template.WriteLine(indentation, "                }");
                 } else {
                     template.WriteLine(indentation, $"                {condition}writer.Write({entryName});");
+                }
+            }
+
+            template.WriteLine(indentation, "            }");
+        }
+
+        private static void InnerEnumerateChildren(MultiStructItemTemplateBase template, uint indentation, MhwMultiStructData.StructData @struct, MhwMultiStructData.StructData parent = null) {
+            template.WriteLine("");
+            template.WriteLine(indentation, "            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {");
+
+            foreach (var entry in @struct.entries) {
+                if (entry.HasSubStruct) {
+                    var subStructSafeName = entry.subStruct.SafeName;
+
+                    template.WriteLine(indentation, $"                if (typeof({subStructSafeName}).Is(typeof(F)) || typeof({subStructSafeName}).IsGeneric(typeof(F))) {{");
+                    template.WriteLine(indentation, $"                    foreach (var item in {entry.SafeName}_raw.Cast<F>()) {{");
+                    template.WriteLine(indentation, "                        yield return item;");
+                    template.WriteLine(indentation, "                    }");
+                    template.WriteLine(indentation, "                }");
                 }
             }
 

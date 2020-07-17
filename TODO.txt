@@ -1,6 +1,7 @@
 - Grid Ctrl+V.
 - Save file as.
 - Fix highlighted row being recycled in the list.
+- Fix json for structs 2+ levels deep.
 
 
 renkian:
@@ -12,3 +13,8 @@ This unk make me confuse if edit it value > 1 it can slow down helm breaker may 
 But if you lower value than it default you can make it hit faster and can hit more than helm breaker hit limit depend how low you edit
 (149 > 150 hit appear before red line 150 > 149 hit appear after red line)
 dunno if unk 149 effect like pierce ammo effect but affect by monster height
+
+
+GraillLord:
+w03p (LS)
+Unk 133 => iai movespeed (increases the value makes the skill faster)

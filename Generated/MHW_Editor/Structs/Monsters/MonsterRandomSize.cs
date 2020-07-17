@@ -265,7 +265,7 @@ namespace MHW_Editor.Structs.Monsters {
             }
         }
 
-        public partial class Crown_Tables : MhwStructItem, IWriteData {
+        public partial class Crown_Tables : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Crown Tables";
             public const bool IsAddingAllowed = true;
@@ -356,6 +356,14 @@ namespace MHW_Editor.Structs.Monsters {
             public virtual ObservableCollection<Crown_Sizes> Crown_Sizes_raw { get; protected set; }
 
             public const int lastSortIndex = 150;
+
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(Crown_Sizes).Is(typeof(F)) || typeof(Crown_Sizes).IsGeneric(typeof(F))) {
+                    foreach (var item in Crown_Sizes_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+            }
 
             public static ObservableMhwStructCollection<Crown_Tables> LoadData(BinaryReader reader, ObservableMhwStructCollection<Crown_Table_Count> lastStruct) {
                 var list = new ObservableMhwStructCollection<Crown_Tables>();

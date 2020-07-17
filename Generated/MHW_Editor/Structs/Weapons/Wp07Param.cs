@@ -3159,7 +3159,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Shell_Ammo_Params : MhwStructItem, IWriteData {
+        public partial class Shell_Ammo_Params : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 3;
             public const string GridName = "Shell/Ammo Params";
 
@@ -4729,6 +4729,49 @@ namespace MHW_Editor.Structs.Weapons {
             public virtual ObservableCollection<Wyrmstake_Add_Damage> Wyrmstake_Add_Damage_raw { get; protected set; }
 
             public const int lastSortIndex = 600;
+
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(Shell_Damage).Is(typeof(F)) || typeof(Shell_Damage).IsGeneric(typeof(F))) {
+                    foreach (var item in Shell_Damage_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Shell_Fire_Damage).Is(typeof(F)) || typeof(Shell_Fire_Damage).IsGeneric(typeof(F))) {
+                    foreach (var item in Shell_Fire_Damage_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Wyvernfire_Damage).Is(typeof(F)) || typeof(Wyvernfire_Damage).IsGeneric(typeof(F))) {
+                    foreach (var item in Wyvernfire_Damage_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Wyvernfire_Fire_Damage).Is(typeof(F)) || typeof(Wyvernfire_Fire_Damage).IsGeneric(typeof(F))) {
+                    foreach (var item in Wyvernfire_Fire_Damage_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Wyrmstake_Tick_Raw_Damage).Is(typeof(F)) || typeof(Wyrmstake_Tick_Raw_Damage).IsGeneric(typeof(F))) {
+                    foreach (var item in Wyrmstake_Tick_Raw_Damage_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Wyrmstake_Fixed_Blast_Damage).Is(typeof(F)) || typeof(Wyrmstake_Fixed_Blast_Damage).IsGeneric(typeof(F))) {
+                    foreach (var item in Wyrmstake_Fixed_Blast_Damage_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Wyrmstake_Fire_Damage).Is(typeof(F)) || typeof(Wyrmstake_Fire_Damage).IsGeneric(typeof(F))) {
+                    foreach (var item in Wyrmstake_Fire_Damage_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Wyrmstake_Add_Damage).Is(typeof(F)) || typeof(Wyrmstake_Add_Damage).IsGeneric(typeof(F))) {
+                    foreach (var item in Wyrmstake_Add_Damage_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+            }
 
             public static ObservableMhwStructCollection<Shell_Ammo_Params> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Shell_Ammo_Params>();

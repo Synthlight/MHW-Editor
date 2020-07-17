@@ -297,7 +297,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class CLND : MhwStructItem, IWriteData {
+        public partial class CLND : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "CLND";
 
@@ -396,7 +396,7 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            public partial class CLGMs : MhwStructItem, IWriteDataInner<CLND> {
+            public partial class CLGMs : MhwStructItem, IWriteDataInner<CLND>, IHasChildren {
                 public const ulong FixedSizeCount = 0;
                 public const string GridName = "CLGMs";
 
@@ -1171,6 +1171,14 @@ namespace MHW_Editor.Structs.Weapons {
 
                 public const int lastSortIndex = 1300;
 
+                public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                    if (typeof(CLGM_Inner).Is(typeof(F)) || typeof(CLGM_Inner).IsGeneric(typeof(F))) {
+                        foreach (var item in CLGM_Inner_raw.Cast<F>()) {
+                            yield return item;
+                        }
+                    }
+                }
+
                 public static ObservableMhwStructCollection<CLGMs> LoadData(BinaryReader reader, CLND parent) {
                     var list = new ObservableMhwStructCollection<CLGMs>();
                     var count = (ulong) parent.Clgm_Count;
@@ -1296,6 +1304,14 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 550;
 
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(CLGMs).Is(typeof(F)) || typeof(CLGMs).IsGeneric(typeof(F))) {
+                    foreach (var item in CLGMs_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+            }
+
             public static ObservableMhwStructCollection<CLND> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<CLND>();
                 var count = 1UL;
@@ -1338,7 +1354,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Moves : MhwStructItem, IWriteData {
+        public partial class Moves : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Moves";
 
@@ -5067,6 +5083,29 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 500;
 
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(Atk0).Is(typeof(F)) || typeof(Atk0).IsGeneric(typeof(F))) {
+                    foreach (var item in Atk0_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Atk1).Is(typeof(F)) || typeof(Atk1).IsGeneric(typeof(F))) {
+                    foreach (var item in Atk1_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Atk2).Is(typeof(F)) || typeof(Atk2).IsGeneric(typeof(F))) {
+                    foreach (var item in Atk2_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Atk3).Is(typeof(F)) || typeof(Atk3).IsGeneric(typeof(F))) {
+                    foreach (var item in Atk3_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+            }
+
             public static ObservableMhwStructCollection<Moves> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Moves>();
                 var count = 1UL;
@@ -5120,7 +5159,7 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class OAP : MhwStructItem, IWriteData {
+        public partial class OAP : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "OAP";
 
@@ -5222,6 +5261,14 @@ namespace MHW_Editor.Structs.Weapons {
             public virtual ObservableCollection<End_Junk> The_rest_of_the_file_as_bytes__raw { get; protected set; }
 
             public const int lastSortIndex = 300;
+
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(End_Junk).Is(typeof(F)) || typeof(End_Junk).IsGeneric(typeof(F))) {
+                    foreach (var item in The_rest_of_the_file_as_bytes__raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+            }
 
             public static ObservableMhwStructCollection<OAP> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<OAP>();
