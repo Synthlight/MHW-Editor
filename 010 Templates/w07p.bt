@@ -43,8 +43,8 @@ float Weapon_Sweet_spot<name="Weapon Sweet-spot (float)">;
 float Unk_23<name="Unk 23 (float)">;
 float Unk_24<name="Unk 24 (float)">;
 float Elderseal_Modifier_<name="Elderseal Modifier? (float)">;
-ubyte Unk_26<name="Unk 26 (ubyte)">;
-float Unk_27<name="Unk 27 (float)">;
+ubyte Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo_<name="Limit Until The Tic Damage Decreases 1shot (e.g. Pierce / Slice Ammo) (ubyte)">;
+float Decreases_Tic_Damage_Over_The_Limit<name="Decreases Tic Damage Over The Limit (float)">;
 
 // Guard Angles (Shared)
 typedef struct {

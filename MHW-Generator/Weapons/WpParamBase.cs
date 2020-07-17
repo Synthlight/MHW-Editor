@@ -71,14 +71,14 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {unkIndex += 6}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry("Elderseal Modifier?", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(byte)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                    new MhwMultiStructData.Entry("Limit Until The Tic Damage Decreases 1shot (e.g. Pierce / Slice Ammo)", typeof(byte)),
+                    new MhwMultiStructData.Entry("Decreases Tic Damage Over The Limit", typeof(float))
                 }, 1, showVertically: true),
 
                 new MhwMultiStructData.StructData("Guard Angles (Shared)", guardAngles, 2),
 
                 new MhwMultiStructData.StructData($"W{wpNum}p Params ({++paramIndex}, Shared)", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 4}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),

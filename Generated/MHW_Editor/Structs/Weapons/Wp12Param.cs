@@ -638,41 +638,41 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Elderseal_Modifier__offset { get; private set; }
 
-            protected byte Unk_26_raw;
-            public const string Unk_26_displayName = "Unk 26";
-            public const int Unk_26_sortIndex = 1250;
-            [SortOrder(Unk_26_sortIndex)]
-            [DisplayName(Unk_26_displayName)]
-            public virtual byte Unk_26 {
-                get => Unk_26_raw;
+            protected byte Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__raw;
+            public const string Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__displayName = "Limit Until The Tic Damage Decreases 1shot (e.g. Pierce / Slice Ammo)";
+            public const int Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__sortIndex = 1250;
+            [SortOrder(Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__sortIndex)]
+            [DisplayName(Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__displayName)]
+            public virtual byte Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo_ {
+                get => Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__raw;
                 set {
-                    if (Unk_26_raw == value) return;
-                    Unk_26_raw = value;
-                    ChangedItems.Add(nameof(Unk_26));
-                    OnPropertyChanged(nameof(Unk_26));
+                    if (Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__raw == value) return;
+                    Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__raw = value;
+                    ChangedItems.Add(nameof(Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo_));
+                    OnPropertyChanged(nameof(Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_26_offset { get; private set; }
+            public long Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__offset { get; private set; }
 
-            protected float Unk_27_raw;
-            public const string Unk_27_displayName = "Unk 27";
-            public const int Unk_27_sortIndex = 1300;
-            [SortOrder(Unk_27_sortIndex)]
-            [DisplayName(Unk_27_displayName)]
-            public virtual float Unk_27 {
-                get => Unk_27_raw;
+            protected float Decreases_Tic_Damage_Over_The_Limit_raw;
+            public const string Decreases_Tic_Damage_Over_The_Limit_displayName = "Decreases Tic Damage Over The Limit";
+            public const int Decreases_Tic_Damage_Over_The_Limit_sortIndex = 1300;
+            [SortOrder(Decreases_Tic_Damage_Over_The_Limit_sortIndex)]
+            [DisplayName(Decreases_Tic_Damage_Over_The_Limit_displayName)]
+            public virtual float Decreases_Tic_Damage_Over_The_Limit {
+                get => Decreases_Tic_Damage_Over_The_Limit_raw;
                 set {
-                    if (Unk_27_raw == value) return;
-                    Unk_27_raw = value;
-                    ChangedItems.Add(nameof(Unk_27));
-                    OnPropertyChanged(nameof(Unk_27));
+                    if (Decreases_Tic_Damage_Over_The_Limit_raw == value) return;
+                    Decreases_Tic_Damage_Over_The_Limit_raw = value;
+                    ChangedItems.Add(nameof(Decreases_Tic_Damage_Over_The_Limit));
+                    OnPropertyChanged(nameof(Decreases_Tic_Damage_Over_The_Limit));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_27_offset { get; private set; }
+            public long Decreases_Tic_Damage_Over_The_Limit_offset { get; private set; }
 
             public const int lastSortIndex = 1350;
 
@@ -736,10 +736,10 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_24_raw = reader.ReadSingle();
                 data.Elderseal_Modifier__offset = reader.BaseStream.Position;
                 data.Elderseal_Modifier__raw = reader.ReadSingle();
-                data.Unk_26_offset = reader.BaseStream.Position;
-                data.Unk_26_raw = reader.ReadByte();
-                data.Unk_27_offset = reader.BaseStream.Position;
-                data.Unk_27_raw = reader.ReadSingle();
+                data.Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__offset = reader.BaseStream.Position;
+                data.Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__raw = reader.ReadByte();
+                data.Decreases_Tic_Damage_Over_The_Limit_offset = reader.BaseStream.Position;
+                data.Decreases_Tic_Damage_Over_The_Limit_raw = reader.ReadSingle();
                 return data;
             }
 
@@ -768,8 +768,8 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_23_raw);
                 writer.Write(Unk_24_raw);
                 writer.Write(Elderseal_Modifier__raw);
-                writer.Write(Unk_26_raw);
-                writer.Write(Unk_27_raw);
+                writer.Write(Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__raw);
+                writer.Write(Decreases_Tic_Damage_Over_The_Limit_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
@@ -798,8 +798,8 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 23", "Unk_23", "Unk_23_offset"),
                     new MultiStructItemCustomView(this, "Unk 24", "Unk_24", "Unk_24_offset"),
                     new MultiStructItemCustomView(this, "Elderseal Modifier?", "Elderseal_Modifier_", "Elderseal_Modifier__offset"),
-                    new MultiStructItemCustomView(this, "Unk 26", "Unk_26", "Unk_26_offset"),
-                    new MultiStructItemCustomView(this, "Unk 27", "Unk_27", "Unk_27_offset"),
+                    new MultiStructItemCustomView(this, "Limit Until The Tic Damage Decreases 1shot (e.g. Pierce / Slice Ammo)", "Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo_", "Limit_Until_The_Tic_Damage_Decreases_1shot_e_g_Pierce_Slice_Ammo__offset"),
+                    new MultiStructItemCustomView(this, "Decreases Tic Damage Over The Limit", "Decreases_Tic_Damage_Over_The_Limit", "Decreases_Tic_Damage_Over_The_Limit_offset"),
                 };
             }
         }
