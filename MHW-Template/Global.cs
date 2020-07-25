@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace MHW_Template {
     [SuppressMessage("ReSharper", "StringLiteralTypo")]
     public static class Global {
-        public const string CURRENT_GAME_VERSION = "14.0X.XX";
+        public const string CURRENT_GAME_VERSION = "14.01.XX";
         public static readonly Dictionary<string, string> LANGUAGE_NAME_LOOKUP = new Dictionary<string, string> {
             {"ara", "العربية"},
             {"chS", "简体中文"},
@@ -139,7 +139,7 @@ namespace MHW_Template {
             "*.wep_wsl",
             "*.wp_dat",
             "*.wp_dat_g",
-            // Special cases. Leave at the end so they';re obscured from the UI.
+            // Special cases. Leave at the end so they're obscured from the UI.
             "Block_26.bin"
         };
         public const string ASSETS_ROOT        = @"..\..\..\Assets";
