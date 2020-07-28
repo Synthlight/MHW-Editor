@@ -2356,12 +2356,12 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Projectile_Model_Lifespan_offset { get; private set; }
 
-            protected uint Projectile_Distance_Range_raw;
+            protected int Projectile_Distance_Range_raw;
             public const string Projectile_Distance_Range_displayName = "Projectile: Distance Range";
             public const int Projectile_Distance_Range_sortIndex = 200;
             [SortOrder(Projectile_Distance_Range_sortIndex)]
             [DisplayName(Projectile_Distance_Range_displayName)]
-            public virtual uint Projectile_Distance_Range {
+            public virtual int Projectile_Distance_Range {
                 get => Projectile_Distance_Range_raw;
                 set {
                     if (Projectile_Distance_Range_raw == value) return;
@@ -3007,7 +3007,7 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Projectile_Model_Lifespan_offset = reader.BaseStream.Position;
                 data.Projectile_Model_Lifespan_raw = reader.ReadSingle();
                 data.Projectile_Distance_Range_offset = reader.BaseStream.Position;
-                data.Projectile_Distance_Range_raw = reader.ReadUInt32();
+                data.Projectile_Distance_Range_raw = reader.ReadInt32();
                 data.Unk_35_offset = reader.BaseStream.Position;
                 data.Unk_35_raw = reader.ReadByte();
                 data.Unk_36_offset = reader.BaseStream.Position;

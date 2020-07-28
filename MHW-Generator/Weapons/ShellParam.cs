@@ -131,7 +131,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Header", typeof(uint)),
                     new MhwMultiStructData.Entry("Projectile: Entity Collider", typeof(uint)),
                     new MhwMultiStructData.Entry("Projectile: Model Lifespan", typeof(float)),
-                    new MhwMultiStructData.Entry("Projectile: Distance Range", typeof(uint)),
+                    new MhwMultiStructData.Entry("Projectile: Distance Range", typeof(int)),
                     new MhwMultiStructData.Entry($"Unk {++i}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++i}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++i}", typeof(byte)),
