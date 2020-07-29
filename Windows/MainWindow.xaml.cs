@@ -640,8 +640,9 @@ namespace MHW_Editor.Windows {
 
         private string GetOpenTarget(string filter) {
             var ofdResult = new OpenFileDialog {
-                Filter      = filter,
-                Multiselect = false
+                Filter           = filter,
+                Multiselect      = false,
+                InitialDirectory = targetFile == null ? string.Empty : Path.GetDirectoryName(targetFile) ?? string.Empty
             };
             ofdResult.ShowDialog();
 
@@ -652,7 +653,7 @@ namespace MHW_Editor.Windows {
             var sfdResult = new SaveFileDialog {
                 Filter           = $"JSON|*{Path.GetExtension(targetFile)}.json",
                 FileName         = $"{Path.GetFileNameWithoutExtension(targetFile)}",
-                InitialDirectory = Path.GetDirectoryName(targetFile ?? string.Empty) ?? string.Empty,
+                InitialDirectory = targetFile == null ? string.Empty : Path.GetDirectoryName(targetFile) ?? string.Empty,
                 AddExtension     = true
             };
             return sfdResult.ShowDialog() == true ? sfdResult.FileName : null;
