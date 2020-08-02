@@ -55,6 +55,7 @@ namespace MHW_Editor {
             "QuestReward",
             "QuestRewardCustomView",
             "Ranged",
+            "RoomAnimal",
             "RoomFurniture",
             "SafiItemGradeLottery",
             "SafiItemLottery",
@@ -448,6 +449,9 @@ namespace MHW_Editor {
                 "Item_Id",
             }},
             {typeof(MHW_Editor.Structs.Items.QuestReward.QuestRewardCustomView), new List<string> {
+                "Item_Id",
+            }},
+            {typeof(MHW_Editor.Structs.Items.RoomAnimal.Entries), new List<string> {
                 "Item_Id",
             }},
             {typeof(MHW_Editor.Structs.Items.RoomFurniture.Entries), new List<string> {

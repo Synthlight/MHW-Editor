@@ -19,7 +19,7 @@ typedef struct {
     uint Id<name="Id (uint)">;
     ubyte Unk1<name="Unk1 (ubyte)">;
     ubyte Unk2<name="Unk2 (ubyte)">;
-    ubyte Unk3<name="Unk3 (ubyte)">;
+    ubyte Model_Id<name="Model Id (ubyte)">;
     ubyte Unk4<name="Unk4 (ubyte)">;
     ubyte Unk5<name="Unk5 (ubyte)">;
     ushort Unk6<name="Unk6 (ushort)">;

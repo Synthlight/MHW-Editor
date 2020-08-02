@@ -12,7 +12,7 @@ namespace MHW_Generator.Armors {
                     new MhwMultiStructData.Entry("Id", typeof(uint), true),
                     new MhwMultiStructData.Entry("Unk1", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk2", typeof(byte)),
-                    new MhwMultiStructData.Entry("Unk3", typeof(byte)),
+                    new MhwMultiStructData.Entry("Model Id", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk4", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk5", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk6", typeof(ushort)),

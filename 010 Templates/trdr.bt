@@ -26,7 +26,7 @@ typedef struct {
     uint Unk8<name="Unk8 (uint)">;
     uint Unk9<name="Unk9 (uint)">;
     uint Unk10<name="Unk10 (uint)">;
-    uint Unk11<name="Unk11 (uint)">;
+    uint Quantity<name="Quantity (uint)">;
     uint Unk12<name="Unk12 (uint)">;
     uint Unk13<name="Unk13 (uint)">;
     uint Unk14<name="Unk14 (uint)">;

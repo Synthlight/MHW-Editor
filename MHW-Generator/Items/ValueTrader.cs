@@ -20,7 +20,7 @@ namespace MHW_Generator.Items {
                     new MhwMultiStructData.Entry("Unk8", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk9", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk10", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk11", typeof(uint)),
+                    new MhwMultiStructData.Entry("Quantity", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk12", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk13", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk14", typeof(uint))

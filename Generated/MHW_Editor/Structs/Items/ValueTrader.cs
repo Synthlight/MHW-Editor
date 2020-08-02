@@ -257,18 +257,18 @@ namespace MHW_Editor.Structs.Items {
                 }
             }
 
-            protected uint Unk11_raw;
-            public const string Unk11_displayName = "Unk11";
-            public const int Unk11_sortIndex = 550;
-            [SortOrder(Unk11_sortIndex)]
-            [DisplayName(Unk11_displayName)]
-            public virtual uint Unk11 {
-                get => Unk11_raw;
+            protected uint Quantity_raw;
+            public const string Quantity_displayName = "Quantity";
+            public const int Quantity_sortIndex = 550;
+            [SortOrder(Quantity_sortIndex)]
+            [DisplayName(Quantity_displayName)]
+            public virtual uint Quantity {
+                get => Quantity_raw;
                 set {
-                    if (Unk11_raw == value) return;
-                    Unk11_raw = value;
-                    ChangedItems.Add(nameof(Unk11));
-                    OnPropertyChanged(nameof(Unk11));
+                    if (Quantity_raw == value) return;
+                    Quantity_raw = value;
+                    ChangedItems.Add(nameof(Quantity));
+                    OnPropertyChanged(nameof(Quantity));
                 }
             }
 
@@ -342,7 +342,7 @@ namespace MHW_Editor.Structs.Items {
                 data.Unk8_raw = reader.ReadUInt32();
                 data.Unk9_raw = reader.ReadUInt32();
                 data.Unk10_raw = reader.ReadUInt32();
-                data.Unk11_raw = reader.ReadUInt32();
+                data.Quantity_raw = reader.ReadUInt32();
                 data.Unk12_raw = reader.ReadUInt32();
                 data.Unk13_raw = reader.ReadUInt32();
                 data.Unk14_raw = reader.ReadUInt32();
@@ -360,7 +360,7 @@ namespace MHW_Editor.Structs.Items {
                 writer.Write(Unk8_raw);
                 writer.Write(Unk9_raw);
                 writer.Write(Unk10_raw);
-                writer.Write(Unk11_raw);
+                writer.Write(Quantity_raw);
                 writer.Write(Unk12_raw);
                 writer.Write(Unk13_raw);
                 writer.Write(Unk14_raw);

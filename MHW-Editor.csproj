@@ -116,6 +116,7 @@
     <Compile Include="Generated\MHW_Editor\Structs\Items\PlantFertilizer.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Items\PlantItem.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Items\QuestReward.cs" />
+    <Compile Include="Generated\MHW_Editor\Structs\Items\RoomAnimal.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Items\RoomFurniture.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Items\SafiItemGradeLottery.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Items\SafiItemLottery.cs" />
@@ -221,6 +222,7 @@
     <Compile Include="Controls\MhwDataGrid.xaml.cs">
       <DependentUpon>MhwDataGrid.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Structs\Items\RoomAnimal.cs" />
     <Compile Include="Structs\Monsters\MonsterCommonParam.cs" />
     <Compile Include="Util\EncryptionHelper.cs" />
     <Compile Include="Windows\FindFileInChunk.xaml.cs">
