@@ -147,18 +147,18 @@ namespace MHW_Editor.Structs.Armors {
                 }
             }
 
-            protected byte Unk3_raw;
-            public const string Unk3_displayName = "Unk3";
-            public const int Unk3_sortIndex = 200;
-            [SortOrder(Unk3_sortIndex)]
-            [DisplayName(Unk3_displayName)]
-            public virtual byte Unk3 {
-                get => Unk3_raw;
+            protected byte Model_Id_raw;
+            public const string Model_Id_displayName = "Model Id";
+            public const int Model_Id_sortIndex = 200;
+            [SortOrder(Model_Id_sortIndex)]
+            [DisplayName(Model_Id_displayName)]
+            public virtual byte Model_Id {
+                get => Model_Id_raw;
                 set {
-                    if (Unk3_raw == value) return;
-                    Unk3_raw = value;
-                    ChangedItems.Add(nameof(Unk3));
-                    OnPropertyChanged(nameof(Unk3));
+                    if (Model_Id_raw == value) return;
+                    Model_Id_raw = value;
+                    ChangedItems.Add(nameof(Model_Id));
+                    OnPropertyChanged(nameof(Model_Id));
                 }
             }
 
@@ -330,7 +330,7 @@ namespace MHW_Editor.Structs.Armors {
                 data.Id_raw = reader.ReadUInt32();
                 data.Unk1_raw = reader.ReadByte();
                 data.Unk2_raw = reader.ReadByte();
-                data.Unk3_raw = reader.ReadByte();
+                data.Model_Id_raw = reader.ReadByte();
                 data.Unk4_raw = reader.ReadByte();
                 data.Unk5_raw = reader.ReadByte();
                 data.Unk6_raw = reader.ReadUInt16();
@@ -348,7 +348,7 @@ namespace MHW_Editor.Structs.Armors {
                 writer.Write(Id_raw);
                 writer.Write(Unk1_raw);
                 writer.Write(Unk2_raw);
-                writer.Write(Unk3_raw);
+                writer.Write(Model_Id_raw);
                 writer.Write(Unk4_raw);
                 writer.Write(Unk5_raw);
                 writer.Write(Unk6_raw);
