@@ -37,7 +37,10 @@ namespace MHW_Editor.Windows {
         private void Btn_save_as_json_Click(object sender, RoutedEventArgs e) {
             SaveJson(false);
         }
-
+        private void Btn_export_as_json_Click(object sender, RoutedEventArgs e)
+        {
+            ExportJson();
+        }
         private void Btn_save_as_json_merge_Click(object sender, RoutedEventArgs e) {
             SaveJson(true);
         }
