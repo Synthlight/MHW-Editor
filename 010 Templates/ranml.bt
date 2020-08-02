@@ -1,0 +1,77 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.ranml
+//  Category: MHW-Editor
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Magic_1<name="Magic 1 (uint)">;
+    ushort Magic_2<name="Magic 2 (ushort)">;
+    ushort Entry_Count<name="Entry Count (ushort)">;
+    ubyte Unk_1<name="Unk 1 (ubyte)">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    ubyte Display_Multiplier<name="Display Multiplier (ubyte)">;
+    uint Item_Id<name="Item Id (uint)">;
+    ubyte Slot_1<name="Slot 1 (ubyte)">;
+    ubyte Slot_2<name="Slot 2 (ubyte)">;
+    ubyte Slot_3<name="Slot 3 (ubyte)">;
+    ubyte Slot_4<name="Slot 4 (ubyte)">;
+    ubyte Slot_5<name="Slot 5 (ubyte)">;
+    ubyte Slot_6<name="Slot 6 (ubyte)">;
+    ubyte Slot_7<name="Slot 7 (ubyte)">;
+    ubyte Slot_8<name="Slot 8 (ubyte)">;
+    ubyte Slot_9<name="Slot 9 (ubyte)">;
+    ubyte Slot_10<name="Slot 10 (ubyte)">;
+    ubyte Slot_11<name="Slot 11 (ubyte)">;
+    ubyte Slot_12<name="Slot 12 (ubyte)">;
+    ubyte Slot_13<name="Slot 13 (ubyte)">;
+    ubyte Slot_14<name="Slot 14 (ubyte)">;
+    ubyte Slot_15<name="Slot 15 (ubyte)">;
+    ubyte Slot_16<name="Slot 16 (ubyte)">;
+    ubyte Slot_17<name="Slot 17 (ubyte)">;
+    ubyte Slot_18<name="Slot 18 (ubyte)">;
+    ubyte Slot_19<name="Slot 19 (ubyte)">;
+    ubyte Slot_20<name="Slot 20 (ubyte)">;
+    ubyte Slot_21<name="Slot 21 (ubyte)">;
+    ubyte Slot_22<name="Slot 22 (ubyte)">;
+    ubyte Slot_23<name="Slot 23 (ubyte)">;
+    ubyte Slot_24<name="Slot 24 (ubyte)">;
+    ubyte Slot_25<name="Slot 25 (ubyte)">;
+    ubyte Slot_26<name="Slot 26 (ubyte)">;
+    ubyte Slot_27<name="Slot 27 (ubyte)">;
+    ubyte Slot_28<name="Slot 28 (ubyte)">;
+    ubyte Slot_29<name="Slot 29 (ubyte)">;
+    ubyte Slot_30<name="Slot 30 (ubyte)">;
+    ubyte Slot_31<name="Slot 31 (ubyte)">;
+    ubyte Slot_32<name="Slot 32 (ubyte)">;
+    ubyte Slot_33<name="Slot 33 (ubyte)">;
+    ubyte Slot_34<name="Slot 34 (ubyte)">;
+    ubyte Slot_35<name="Slot 35 (ubyte)">;
+    ubyte Slot_36<name="Slot 36 (ubyte)">;
+    ubyte Slot_37<name="Slot 37 (ubyte)">;
+    ubyte Slot_38<name="Slot 38 (ubyte)">;
+    ubyte Slot_39<name="Slot 39 (ubyte)">;
+    ubyte Slot_40<name="Slot 40 (ubyte)">;
+    ubyte Slot_41<name="Slot 41 (ubyte)">;
+    ubyte Slot_42<name="Slot 42 (ubyte)">;
+    ubyte Slot_43<name="Slot 43 (ubyte)">;
+    ubyte Slot_44<name="Slot 44 (ubyte)">;
+    ubyte Slot_45<name="Slot 45 (ubyte)">;
+    ubyte Slot_46<name="Slot 46 (ubyte)">;
+    ubyte Slot_47<name="Slot 47 (ubyte)">;
+    ubyte Slot_48<name="Slot 48 (ubyte)">;
+    ubyte Slot_49<name="Slot 49 (ubyte)">;
+    ubyte Slot_50<name="Slot 50 (ubyte)">;
+    ubyte Slot_51<name="Slot 51 (ubyte)">;
+    ubyte Slot_52<name="Slot 52 (ubyte)">;
+    ubyte Slot_53<name="Slot 53 (ubyte)">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

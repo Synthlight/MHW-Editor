@@ -53,6 +53,7 @@
     <Compile Include="Items\Bounty.cs" />
     <Compile Include="Items\EqCrt.cs" />
     <Compile Include="Items\EqCus.cs" />
+    <Compile Include="Items\RoomAnimal.cs" />
     <Compile Include="Items\Item.cs" />
     <Compile Include="Items\ItemDelivery.cs" />
     <Compile Include="Items\ItemList.cs" />

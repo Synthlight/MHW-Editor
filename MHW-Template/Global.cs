@@ -99,6 +99,7 @@ namespace MHW_Template {
             "*.plit",
             "*.plp",
             "*.plsp",
+            "*.ranml",
             "*.ransz",
             "*.rem",
             "*.rfur",

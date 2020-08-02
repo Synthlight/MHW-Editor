@@ -726,6 +726,7 @@ namespace MHW_Editor.Windows {
             if (fileName.EndsWith(".plp")) return typeof(PlPlayerParam);
             if (fileName.EndsWith(".plsp")) return typeof(PlSkillParam);
             if (fileName.EndsWith(".rod_inse")) return typeof(RodInsect);
+            if (fileName.EndsWith(".ranml")) return typeof(RoomAnimal);
             if (fileName.EndsWith(".ransz")) return typeof(AnimalSize);
             if (fileName.EndsWith(".rem")) return typeof(QuestReward);
             if (fileName.EndsWith(".rfur")) return typeof(RoomFurniture);
