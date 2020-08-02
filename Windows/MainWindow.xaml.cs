@@ -94,11 +94,31 @@ namespace MHW_Editor.Windows {
             }
         }
 
-        public bool SingleClickToEditMode { get; set; } = true;
+        public bool SingleClickToEditMode { get; set; } = false;
 
         public MainWindow() {
             var args = Environment.GetCommandLineArgs();
+            
+            if (args.Length > 1)
+            {
+                foreach (var arg in args.Skip(1).ToArray())
+                {
+                    if (arg.Length == 0)
+                        return;
 
+                    string iPath = Path.GetDirectoryName(arg);
+                    string iFileName = Path.GetFileNameWithoutExtension(arg);
+                    string oPath = Path.Combine(iPath, "_Json");
+                    string oFileName = iFileName + ".json";
+                    System.IO.Directory.CreateDirectory(oPath);
+                    string target = Path.Combine(oPath, oFileName);
+                    BatchLoad(arg);
+                    ExportJson(target);
+                }
+                System.Environment.Exit(0);
+            }
+
+            /*
             if (args.Length >= 2) {
                 if (args.ContainsIgnoreCase("-unlock")) {
                     unlockFields = true;
@@ -137,6 +157,7 @@ namespace MHW_Editor.Windows {
                 Close();
                 return;
             }
+            */
 
             InitializeComponent();
             Title = TITLE;
@@ -148,7 +169,7 @@ namespace MHW_Editor.Windows {
 
             UpdateCheck.Run(this);
 
-            TryLoad(args);
+            // TryLoad(args);
         }
 
         private async void TryLoad(string[] args) {
@@ -217,6 +238,55 @@ namespace MHW_Editor.Windows {
 
             if (grids.Count > 0) {
                 panel.UpdateLayout();
+            }
+        }
+        private void BatchLoad(string file)
+        {
+            try
+            {
+                var target = file;
+                if (string.IsNullOrEmpty(target)) return;
+
+                targetFile = target;
+                targetFileType = GetFileType(targetFile);
+                Title = Path.GetFileName(targetFile);
+
+                Debug.Assert(targetFile != null, nameof(targetFile) + " != null");
+
+                GC.Collect();
+
+                BatchLoadTarget();
+            }
+            catch (Exception e) when (!Debugger.IsAttached)
+            {
+                ShowError(e, "Load Error");
+            }
+        }
+        private void BatchLoadTarget()
+        {
+            CheckHashAndSize(targetFile);
+
+            var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+            Debug.Assert(loadData != null, nameof(loadData) + " != null");
+            fileData = (IMhwMultiStructFile)loadData.Invoke(null, new object[] { targetFile });
+
+            switch (fileData)
+            {
+                case Collision col:
+                    col.Init(targetFile);
+                    break;
+                case GcData gcData:
+                    gcData.Init(targetFile);
+                    break;
+                case Melee melee:
+                    melee.Init(targetFile);
+                    break;
+                case Ranged ranged:
+                    ranged.Init(targetFile);
+                    break;
+                case SkillDat skillDat:
+                    FillSkillDatDictionary(skillDat.GetSingleStructList());
+                    break;
             }
         }
 
@@ -533,11 +603,78 @@ namespace MHW_Editor.Windows {
             }
         }
 
+        private void ExportJson(string oFile = null)
+        {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            try
+            {
+                var fileName = Path.GetFileName(targetFile);
+
+                JsonChanges changesToSave = null;
+
+                changesToSave.targetFile = fileName;
+
+                changesToSave.changesV3 ??= new Dictionary<string, Dictionary<string, Dictionary<string, object>>>();
+
+                // For all entries in all structs as a single enumerable.
+                foreach (var item in fileData.GetAllEnumerableOfType<IJsonItem>())
+                {
+                    var itemUniqueId = item.UniqueId;
+                    var itemType = item.GetType();
+                    var structTypeName = itemType.Name;
+                    var changed = item.ChangedItems;
+
+                    if (!changesToSave.changesV3.ContainsKey(structTypeName))
+                    {
+                        changesToSave.changesV3[structTypeName] = new Dictionary<string, Dictionary<string, object>>();
+                    }
+
+                    if (!changesToSave.changesV3[structTypeName].ContainsKey(itemUniqueId))
+                    {
+                        changesToSave.changesV3[structTypeName][itemUniqueId] = new Dictionary<string, object>();
+                    }
+
+                    foreach (var changedItem in changed)
+                    {
+                        // ReSharper disable once PossibleNullReferenceException
+                        var value = itemType.GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
+                        changesToSave.changesV3[structTypeName][itemUniqueId][changedItem] = value;
+                    }
+                }
+
+                // Removes empty entries.
+                CleanDictionary(changesToSave.changesV3);
+
+                if (changesToSave.changesV3.Any())
+                {
+                    // Get file after checking for what to save else we show a dialog even if there are no changes.
+                    var target = GetSaveTarget();
+                    if (string.IsNullOrEmpty(target)) return;
+
+                    var json = JsonConvert.SerializeObject(changesToSave, Formatting.Indented);
+                    if (oFile == null)
+                    {
+                        File.WriteAllText(target, json);
+                    }
+                    else
+                    {
+                        File.WriteAllText(oFile, json);
+                    }
+                }
+            }
+            catch (Exception e) when (!Debugger.IsAttached)
+            {
+                ShowError(e, "Save Error");
+            }
+
+        }
+
         private async void SaveJson(bool mergeWithTarget) {
             if (string.IsNullOrEmpty(targetFile)) return;
 
             try {
-                var         fileName      = Path.GetFileName(targetFile);
+                var fileName = Path.GetFileName(targetFile);
                 JsonChanges changesToSave = null;
 
                 if (mergeWithTarget) {
@@ -568,6 +705,7 @@ namespace MHW_Editor.Windows {
                     var itemType       = item.GetType();
                     var structTypeName = itemType.Name;
                     var changed        = item.ChangedItems;
+
                     if (changed.Count == 0) continue;
 
                     if (!changesToSave.changesV3.ContainsKey(structTypeName)) {
