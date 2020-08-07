@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
@@ -493,15 +494,16 @@ namespace MHW_Editor.Windows {
                     var itemUniqueId   = item.UniqueId;
                     var itemType       = item.GetType();
                     var structTypeName = itemType.Name;
+                    var wildJson       = CreateWildcardRegex(itemUniqueId);
 
                     // For each struct we have changes for.
                     if (changesToLoad.changesV3.ContainsKey(structTypeName)) {
                         foreach (var x in changesToLoad.changesV3[structTypeName]) {
-                            var uniqueId = x.Key;
-                            var changes  = x.Value;
+                            var jsonUniqueId = x.Key;
+                            var changes      = x.Value;
 
                             // If the uniqueId computation matches, or wildcard.
-                            if (uniqueId == itemUniqueId || uniqueId == "*") {
+                            if (jsonUniqueId == itemUniqueId || jsonUniqueId == "*" || Regex.IsMatch(jsonUniqueId, wildJson)) {
                                 // For each change.
                                 foreach (var change in changes) {
                                     var targetField  = change.Key;
@@ -534,6 +536,15 @@ namespace MHW_Editor.Windows {
             } catch (Exception e) when (!Debugger.IsAttached) {
                 ShowError(e, "Load Error");
             }
+        }
+
+        private string CreateWildcardRegex(string uniqueId) {
+            if (!uniqueId.Contains('|')) return "*";
+            var split = uniqueId.Split('|');
+            for (var i = 0; i < split.Length; i++) {
+                split[i] = $@"({split[i]}|\*)";
+            }
+            return $"^{string.Join(@"\|", split)}$";
         }
 
         private async void SaveJson(bool mergeWithTarget) {
