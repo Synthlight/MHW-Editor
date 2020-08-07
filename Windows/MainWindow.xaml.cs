@@ -503,7 +503,7 @@ namespace MHW_Editor.Windows {
                             var changes      = x.Value;
 
                             // If the uniqueId computation matches, or wildcard.
-                            if (jsonUniqueId == itemUniqueId || jsonUniqueId == "*" || Regex.IsMatch(jsonUniqueId, wildJson)) {
+                            if (jsonUniqueId == itemUniqueId || jsonUniqueId == "*" || wildJson != null && (Regex.IsMatch(jsonUniqueId, wildJson))) {
                                 // For each change.
                                 foreach (var change in changes) {
                                     var targetField  = change.Key;
@@ -538,8 +538,9 @@ namespace MHW_Editor.Windows {
             }
         }
 
+        [CanBeNull]
         private string CreateWildcardRegex(string uniqueId) {
-            if (!uniqueId.Contains('|')) return "*";
+            if (!uniqueId.Contains('|')) return null;
             var split = uniqueId.Split('|');
             for (var i = 0; i < split.Length; i++) {
                 split[i] = $@"({split[i]}|\*)";
