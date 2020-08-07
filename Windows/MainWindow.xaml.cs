@@ -153,9 +153,12 @@ namespace MHW_Editor.Windows {
 
         private async void TryLoad(string[] args) {
             if (args.Length >= 2) {
+                var file = args.Last();
+                if (file.StartsWith("-")) return;
+
                 // Tiny delay so the UI is visible to the user before we load.
                 await Task.Delay(10);
-                Load(args[1]);
+                Load(file);
             }
         }
 
