@@ -30,6 +30,7 @@ using MHW_Editor.Util;
 using MHW_Template;
 using Microsoft.Win32;
 using Newtonsoft.Json;
+using Org.BouncyCastle.Asn1.X509;
 
 namespace MHW_Editor.Windows {
     public partial class MainWindow {
@@ -45,6 +46,8 @@ namespace MHW_Editor.Windows {
         public static LangMap skillDatLookup = new LangMap();
 
         [CanBeNull] private CancellationTokenSource savedTimer;
+
+        public static string file_name = "none";
 
         public         string              targetFile     { get; private set; }
         public         Type                targetFileType { get; private set; }
@@ -107,7 +110,7 @@ namespace MHW_Editor.Windows {
                         return;
 
                     string iPath = Path.GetDirectoryName(arg);
-                    string iFileName = Path.GetFileNameWithoutExtension(arg);
+                    string iFileName = Path.GetFileName(arg).Replace(".", "_");
                     string oPath = Path.Combine(iPath, "_Json");
                     string oFileName = iFileName + ".json";
                     System.IO.Directory.CreateDirectory(oPath);
@@ -240,6 +243,25 @@ namespace MHW_Editor.Windows {
                 panel.UpdateLayout();
             }
         }
+        private void ExportJson(string oFile = null)
+        {
+            if (string.IsNullOrEmpty(targetFile)) return;
+
+            file_name = Path.GetFileName(oFile);
+
+            var json = JsonConvert.SerializeObject(fileData, Formatting.Indented);
+            if (oFile == null)
+            {
+                var target = GetSaveTarget();
+                if (string.IsNullOrEmpty(target)) return;
+                File.WriteAllText(target, json);
+            }
+            else
+            {
+                File.WriteAllText(oFile, json);
+            }
+        }
+
         private void BatchLoad(string file)
         {
             try
@@ -322,7 +344,7 @@ namespace MHW_Editor.Windows {
 
             var loadData = targetFileType.GetMethod("LoadData", BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy);
             Debug.Assert(loadData != null, nameof(loadData) + " != null");
-            fileData = (IMhwMultiStructFile) loadData.Invoke(null, new object[] {targetFile});
+            fileData = (IMhwMultiStructFile)loadData.Invoke(null, new object[] {targetFile});
 
             switch (fileData) {
                 case Collision col:
@@ -603,72 +625,6 @@ namespace MHW_Editor.Windows {
             }
         }
 
-        private void ExportJson(string oFile = null)
-        {
-            if (string.IsNullOrEmpty(targetFile)) return;
-
-            try
-            {
-                var fileName = Path.GetFileName(targetFile);
-
-                JsonChanges changesToSave = null;
-
-                changesToSave.targetFile = fileName;
-
-                changesToSave.changesV3 ??= new Dictionary<string, Dictionary<string, Dictionary<string, object>>>();
-
-                // For all entries in all structs as a single enumerable.
-                foreach (var item in fileData.GetAllEnumerableOfType<IJsonItem>())
-                {
-                    var itemUniqueId = item.UniqueId;
-                    var itemType = item.GetType();
-                    var structTypeName = itemType.Name;
-                    var changed = item.ChangedItems;
-
-                    if (!changesToSave.changesV3.ContainsKey(structTypeName))
-                    {
-                        changesToSave.changesV3[structTypeName] = new Dictionary<string, Dictionary<string, object>>();
-                    }
-
-                    if (!changesToSave.changesV3[structTypeName].ContainsKey(itemUniqueId))
-                    {
-                        changesToSave.changesV3[structTypeName][itemUniqueId] = new Dictionary<string, object>();
-                    }
-
-                    foreach (var changedItem in changed)
-                    {
-                        // ReSharper disable once PossibleNullReferenceException
-                        var value = itemType.GetProperty(changedItem, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).GetValue(item);
-                        changesToSave.changesV3[structTypeName][itemUniqueId][changedItem] = value;
-                    }
-                }
-
-                // Removes empty entries.
-                CleanDictionary(changesToSave.changesV3);
-
-                if (changesToSave.changesV3.Any())
-                {
-                    // Get file after checking for what to save else we show a dialog even if there are no changes.
-                    var target = GetSaveTarget();
-                    if (string.IsNullOrEmpty(target)) return;
-
-                    var json = JsonConvert.SerializeObject(changesToSave, Formatting.Indented);
-                    if (oFile == null)
-                    {
-                        File.WriteAllText(target, json);
-                    }
-                    else
-                    {
-                        File.WriteAllText(oFile, json);
-                    }
-                }
-            }
-            catch (Exception e) when (!Debugger.IsAttached)
-            {
-                ShowError(e, "Save Error");
-            }
-
-        }
 
         private async void SaveJson(bool mergeWithTarget) {
             if (string.IsNullOrEmpty(targetFile)) return;

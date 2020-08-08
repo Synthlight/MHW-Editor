@@ -32,7 +32,19 @@ namespace MHW_Editor.Structs.Items {
             [SortOrder(Equipment_Index_Raw_sortIndex)]
             [DisplayName("Equipment Index")]
             [CustomSorter(typeof(ButtonSorter))]
-            public string Equipment_Index_Armor_button => DataHelper.armorIndexNameLookup[Equipment_Category_Armor][MainWindow.locale].TryGet(Equipment_Index_Armor).ToStringWithId(Equipment_Index_Armor);
+            public string Equipment_Index_Armor_button {
+                get
+                {
+                    if (!MainWindow.file_name.StartsWith("armor"))
+                    {
+                        return string.Empty;
+                    }
+                    else
+                    {
+                        return DataHelper.armorIndexNameLookup[Equipment_Category_Armor][MainWindow.locale].TryGet(Equipment_Index_Armor).ToStringWithId(Equipment_Index_Armor);
+                    }
+                }
+            }
 
             public ArmorType GetArmorType() {
                 return Equipment_Category_Armor;
@@ -96,7 +108,19 @@ namespace MHW_Editor.Structs.Items {
             [SortOrder(Equipment_Index_Raw_sortIndex)]
             [DisplayName("Equipment Index")]
             [CustomSorter(typeof(ButtonSorter))]
-            public string Equipment_Index_Weapon_button => DataHelper.weaponIndexNameLookup[Equipment_Category_Weapon][MainWindow.locale].TryGet(Equipment_Index_Weapon).ToStringWithId(Equipment_Index_Weapon);
+            public string Equipment_Index_Weapon_button {
+                get
+                {
+                    if (!MainWindow.file_name.StartsWith("weapon"))
+                    {
+                        return string.Empty;
+                    }
+                    else
+                    {
+                        return DataHelper.weaponIndexNameLookup[Equipment_Category_Weapon][MainWindow.locale].TryGet(Equipment_Index_Weapon).ToStringWithId(Equipment_Index_Weapon);
+                    }
+                }
+            }
 
             public WeaponType GetWeaponType() {
                 return Equipment_Category_Weapon;
