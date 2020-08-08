@@ -564,6 +564,18 @@ namespace MHW_Editor.Windows {
             }
         }
 
+        [CanBeNull]
+        private string CreateWildcardRegex(string uniqueId)
+        {
+            if (!uniqueId.Contains('|')) return null;
+            var split = uniqueId.Split('|');
+            for (var i = 0; i < split.Length; i++)
+            {
+                split[i] = $@"({split[i]}|\*)";
+            }
+            return $"^{string.Join(@"\|", split)}$";
+        }
+
         private void LoadJson() {
             if (string.IsNullOrEmpty(targetFile)) return;
 
