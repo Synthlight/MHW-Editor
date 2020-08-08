@@ -20,7 +20,7 @@ namespace MHW_Generator.Items {
                     new MhwMultiStructData.Entry("Unk2", typeof(uint)),
                     new MhwMultiStructData.Entry("Category", typeof(uint), enumReturn: typeof(ItemCategory)),
                     new MhwMultiStructData.Entry("Can Auto-Craft", typeof(byte), enumReturn: typeof(bool))
-                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}", canAddRows: true)
             };
 
             return new MultiStruct("Items", "ItemMake", new MhwMultiStructData(structs, "imk"));
