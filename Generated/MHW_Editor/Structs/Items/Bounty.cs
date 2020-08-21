@@ -319,24 +319,9 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_1_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_1).ToStringWithId(Item_Id_1);
 
-            protected uint Item_Id_1_Cnt_raw;
-            public const string Item_Id_1_Cnt_displayName = "Item Id 1 Cnt";
-            public const int Item_Id_1_Cnt_sortIndex = 750;
-            [SortOrder(Item_Id_1_Cnt_sortIndex)]
-            [DisplayName(Item_Id_1_Cnt_displayName)]
-            public virtual uint Item_Id_1_Cnt {
-                get => Item_Id_1_Cnt_raw;
-                set {
-                    if (Item_Id_1_Cnt_raw == value) return;
-                    Item_Id_1_Cnt_raw = value;
-                    ChangedItems.Add(nameof(Item_Id_1_Cnt));
-                    OnPropertyChanged(nameof(Item_Id_1_Cnt));
-                }
-            }
-
             protected uint Item_Id_2_raw;
             public const string Item_Id_2_displayName = "Item Id 2";
-            public const int Item_Id_2_sortIndex = 800;
+            public const int Item_Id_2_sortIndex = 750;
             [SortOrder(Item_Id_2_sortIndex)]
             [DisplayName(Item_Id_2_displayName)]
             [DataSource(DataSourceType.Items)]
@@ -356,24 +341,9 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_2_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_2).ToStringWithId(Item_Id_2);
 
-            protected uint Item_Id_2_Cnt_raw;
-            public const string Item_Id_2_Cnt_displayName = "Item Id 2 Cnt";
-            public const int Item_Id_2_Cnt_sortIndex = 850;
-            [SortOrder(Item_Id_2_Cnt_sortIndex)]
-            [DisplayName(Item_Id_2_Cnt_displayName)]
-            public virtual uint Item_Id_2_Cnt {
-                get => Item_Id_2_Cnt_raw;
-                set {
-                    if (Item_Id_2_Cnt_raw == value) return;
-                    Item_Id_2_Cnt_raw = value;
-                    ChangedItems.Add(nameof(Item_Id_2_Cnt));
-                    OnPropertyChanged(nameof(Item_Id_2_Cnt));
-                }
-            }
-
             protected uint Item_Id_3_raw;
             public const string Item_Id_3_displayName = "Item Id 3";
-            public const int Item_Id_3_sortIndex = 900;
+            public const int Item_Id_3_sortIndex = 800;
             [SortOrder(Item_Id_3_sortIndex)]
             [DisplayName(Item_Id_3_displayName)]
             [DataSource(DataSourceType.Items)]
@@ -392,6 +362,36 @@ namespace MHW_Editor.Structs.Items {
             [DisplayName(Item_Id_3_displayName)]
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_3_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id_3).ToStringWithId(Item_Id_3);
+
+            protected uint Item_Id_1_Cnt_raw;
+            public const string Item_Id_1_Cnt_displayName = "Item Id 1 Cnt";
+            public const int Item_Id_1_Cnt_sortIndex = 850;
+            [SortOrder(Item_Id_1_Cnt_sortIndex)]
+            [DisplayName(Item_Id_1_Cnt_displayName)]
+            public virtual uint Item_Id_1_Cnt {
+                get => Item_Id_1_Cnt_raw;
+                set {
+                    if (Item_Id_1_Cnt_raw == value) return;
+                    Item_Id_1_Cnt_raw = value;
+                    ChangedItems.Add(nameof(Item_Id_1_Cnt));
+                    OnPropertyChanged(nameof(Item_Id_1_Cnt));
+                }
+            }
+
+            protected uint Item_Id_2_Cnt_raw;
+            public const string Item_Id_2_Cnt_displayName = "Item Id 2 Cnt";
+            public const int Item_Id_2_Cnt_sortIndex = 900;
+            [SortOrder(Item_Id_2_Cnt_sortIndex)]
+            [DisplayName(Item_Id_2_Cnt_displayName)]
+            public virtual uint Item_Id_2_Cnt {
+                get => Item_Id_2_Cnt_raw;
+                set {
+                    if (Item_Id_2_Cnt_raw == value) return;
+                    Item_Id_2_Cnt_raw = value;
+                    ChangedItems.Add(nameof(Item_Id_2_Cnt));
+                    OnPropertyChanged(nameof(Item_Id_2_Cnt));
+                }
+            }
 
             protected uint Item_Id_3_Cnt_raw;
             public const string Item_Id_3_Cnt_displayName = "Item Id 3 Cnt";
@@ -452,10 +452,10 @@ namespace MHW_Editor.Structs.Items {
                 data.Map_raw = reader.ReadUInt32();
                 data.Target_Count_raw = reader.ReadUInt32();
                 data.Item_Id_1_raw = reader.ReadUInt32();
-                data.Item_Id_1_Cnt_raw = reader.ReadUInt32();
                 data.Item_Id_2_raw = reader.ReadUInt32();
-                data.Item_Id_2_Cnt_raw = reader.ReadUInt32();
                 data.Item_Id_3_raw = reader.ReadUInt32();
+                data.Item_Id_1_Cnt_raw = reader.ReadUInt32();
+                data.Item_Id_2_Cnt_raw = reader.ReadUInt32();
                 data.Item_Id_3_Cnt_raw = reader.ReadUInt32();
                 data.Research_Points_raw = reader.ReadUInt32();
                 return data;
@@ -476,10 +476,10 @@ namespace MHW_Editor.Structs.Items {
                 writer.Write(Map_raw);
                 writer.Write(Target_Count_raw);
                 writer.Write(Item_Id_1_raw);
-                writer.Write(Item_Id_1_Cnt_raw);
                 writer.Write(Item_Id_2_raw);
-                writer.Write(Item_Id_2_Cnt_raw);
                 writer.Write(Item_Id_3_raw);
+                writer.Write(Item_Id_1_Cnt_raw);
+                writer.Write(Item_Id_2_Cnt_raw);
                 writer.Write(Item_Id_3_Cnt_raw);
                 writer.Write(Research_Points_raw);
             }

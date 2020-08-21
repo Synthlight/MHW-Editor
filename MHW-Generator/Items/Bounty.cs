@@ -25,10 +25,10 @@ namespace MHW_Generator.Items {
                     new MhwMultiStructData.Entry("Map", typeof(uint), enumReturn: typeof(Location)),
                     new MhwMultiStructData.Entry("Target Count", typeof(uint)),
                     new MhwMultiStructData.Entry("Item Id 1", typeof(uint), dataSourceType: DataSourceType.Items),
-                    new MhwMultiStructData.Entry("Item Id 1 Cnt", typeof(uint)),
                     new MhwMultiStructData.Entry("Item Id 2", typeof(uint), dataSourceType: DataSourceType.Items),
-                    new MhwMultiStructData.Entry("Item Id 2 Cnt", typeof(uint)),
                     new MhwMultiStructData.Entry("Item Id 3", typeof(uint), dataSourceType: DataSourceType.Items),
+                    new MhwMultiStructData.Entry("Item Id 1 Cnt", typeof(uint)),
+                    new MhwMultiStructData.Entry("Item Id 2 Cnt", typeof(uint)),
                     new MhwMultiStructData.Entry("Item Id 3 Cnt", typeof(uint)),
                     new MhwMultiStructData.Entry("Research Points", typeof(uint))
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")

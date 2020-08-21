@@ -30,10 +30,10 @@ typedef struct {
     uint Map<name="Map (uint)">;
     uint Target_Count<name="Target Count (uint)">;
     uint Item_Id_1<name="Item Id 1 (uint)">;
-    uint Item_Id_1_Cnt<name="Item Id 1 Cnt (uint)">;
     uint Item_Id_2<name="Item Id 2 (uint)">;
-    uint Item_Id_2_Cnt<name="Item Id 2 Cnt (uint)">;
     uint Item_Id_3<name="Item Id 3 (uint)">;
+    uint Item_Id_1_Cnt<name="Item Id 1 Cnt (uint)">;
+    uint Item_Id_2_Cnt<name="Item Id 2 Cnt (uint)">;
     uint Item_Id_3_Cnt<name="Item Id 3 Cnt (uint)">;
     uint Research_Points<name="Research Points (uint)">;
 } Entries;
