@@ -193,13 +193,13 @@ typedef struct {
         float Unk_13<name="Unk 13 (float)">;
         float Unk_14<name="Unk 14 (float)">;
         ubyte Unk_15<name="Unk 15 (ubyte)">;
-        float Hit_Lag_Speed_Multiplier_a_<name="Hit Lag Speed Multiplier (a) (float)">;
         float Unk_16<name="Unk 16 (float)">;
+        float Hit_Lag_Speed_Multiplier_a_<name="Hit Lag Speed Multiplier (a) (float)">;
         float Hit_Lag_a_<name="Hit Lag (a) (float)">;
         float Unk_17<name="Unk 17 (float)">;
         float Unk_18<name="Unk 18 (float)">;
-        float Hit_Lag_Speed_Multiplier_b_<name="Hit Lag Speed Multiplier (b) (float)">;
         float Unk_19<name="Unk 19 (float)">;
+        float Hit_Lag_Speed_Multiplier_b_<name="Hit Lag Speed Multiplier (b) (float)">;
         float Hit_Lag_b_<name="Hit Lag (b) (float)">;
         float Unk_20<name="Unk 20 (float)">;
         float Unk_21<name="Unk 21 (float)">;

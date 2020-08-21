@@ -2675,24 +2675,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
-                protected float Hit_Lag_Speed_Multiplier_a__raw;
-                public const string Hit_Lag_Speed_Multiplier_a__displayName = "Hit Lag Speed Multiplier (a)";
-                public const int Hit_Lag_Speed_Multiplier_a__sortIndex = 1450;
-                [SortOrder(Hit_Lag_Speed_Multiplier_a__sortIndex)]
-                [DisplayName(Hit_Lag_Speed_Multiplier_a__displayName)]
-                public virtual float Hit_Lag_Speed_Multiplier_a_ {
-                    get => Hit_Lag_Speed_Multiplier_a__raw;
-                    set {
-                        if (Hit_Lag_Speed_Multiplier_a__raw == value) return;
-                        Hit_Lag_Speed_Multiplier_a__raw = value;
-                        ChangedItems.Add(nameof(Hit_Lag_Speed_Multiplier_a_));
-                        OnPropertyChanged(nameof(Hit_Lag_Speed_Multiplier_a_));
-                    }
-                }
-
                 protected float Unk_16_raw;
                 public const string Unk_16_displayName = "Unk 16";
-                public const int Unk_16_sortIndex = 1500;
+                public const int Unk_16_sortIndex = 1450;
                 [SortOrder(Unk_16_sortIndex)]
                 [DisplayName(Unk_16_displayName)]
                 public virtual float Unk_16 {
@@ -2702,6 +2687,21 @@ namespace MHW_Editor.Structs.Weapons {
                         Unk_16_raw = value;
                         ChangedItems.Add(nameof(Unk_16));
                         OnPropertyChanged(nameof(Unk_16));
+                    }
+                }
+
+                protected float Hit_Lag_Speed_Multiplier_a__raw;
+                public const string Hit_Lag_Speed_Multiplier_a__displayName = "Hit Lag Speed Multiplier (a)";
+                public const int Hit_Lag_Speed_Multiplier_a__sortIndex = 1500;
+                [SortOrder(Hit_Lag_Speed_Multiplier_a__sortIndex)]
+                [DisplayName(Hit_Lag_Speed_Multiplier_a__displayName)]
+                public virtual float Hit_Lag_Speed_Multiplier_a_ {
+                    get => Hit_Lag_Speed_Multiplier_a__raw;
+                    set {
+                        if (Hit_Lag_Speed_Multiplier_a__raw == value) return;
+                        Hit_Lag_Speed_Multiplier_a__raw = value;
+                        ChangedItems.Add(nameof(Hit_Lag_Speed_Multiplier_a_));
+                        OnPropertyChanged(nameof(Hit_Lag_Speed_Multiplier_a_));
                     }
                 }
 
@@ -2750,24 +2750,9 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
-                protected float Hit_Lag_Speed_Multiplier_b__raw;
-                public const string Hit_Lag_Speed_Multiplier_b__displayName = "Hit Lag Speed Multiplier (b)";
-                public const int Hit_Lag_Speed_Multiplier_b__sortIndex = 1700;
-                [SortOrder(Hit_Lag_Speed_Multiplier_b__sortIndex)]
-                [DisplayName(Hit_Lag_Speed_Multiplier_b__displayName)]
-                public virtual float Hit_Lag_Speed_Multiplier_b_ {
-                    get => Hit_Lag_Speed_Multiplier_b__raw;
-                    set {
-                        if (Hit_Lag_Speed_Multiplier_b__raw == value) return;
-                        Hit_Lag_Speed_Multiplier_b__raw = value;
-                        ChangedItems.Add(nameof(Hit_Lag_Speed_Multiplier_b_));
-                        OnPropertyChanged(nameof(Hit_Lag_Speed_Multiplier_b_));
-                    }
-                }
-
                 protected float Unk_19_raw;
                 public const string Unk_19_displayName = "Unk 19";
-                public const int Unk_19_sortIndex = 1750;
+                public const int Unk_19_sortIndex = 1700;
                 [SortOrder(Unk_19_sortIndex)]
                 [DisplayName(Unk_19_displayName)]
                 public virtual float Unk_19 {
@@ -2777,6 +2762,21 @@ namespace MHW_Editor.Structs.Weapons {
                         Unk_19_raw = value;
                         ChangedItems.Add(nameof(Unk_19));
                         OnPropertyChanged(nameof(Unk_19));
+                    }
+                }
+
+                protected float Hit_Lag_Speed_Multiplier_b__raw;
+                public const string Hit_Lag_Speed_Multiplier_b__displayName = "Hit Lag Speed Multiplier (b)";
+                public const int Hit_Lag_Speed_Multiplier_b__sortIndex = 1750;
+                [SortOrder(Hit_Lag_Speed_Multiplier_b__sortIndex)]
+                [DisplayName(Hit_Lag_Speed_Multiplier_b__displayName)]
+                public virtual float Hit_Lag_Speed_Multiplier_b_ {
+                    get => Hit_Lag_Speed_Multiplier_b__raw;
+                    set {
+                        if (Hit_Lag_Speed_Multiplier_b__raw == value) return;
+                        Hit_Lag_Speed_Multiplier_b__raw = value;
+                        ChangedItems.Add(nameof(Hit_Lag_Speed_Multiplier_b_));
+                        OnPropertyChanged(nameof(Hit_Lag_Speed_Multiplier_b_));
                     }
                 }
 
@@ -3197,13 +3197,13 @@ namespace MHW_Editor.Structs.Weapons {
                     data.Unk_13_raw = reader.ReadSingle();
                     data.Unk_14_raw = reader.ReadSingle();
                     data.Unk_15_raw = reader.ReadByte();
-                    data.Hit_Lag_Speed_Multiplier_a__raw = reader.ReadSingle();
                     data.Unk_16_raw = reader.ReadSingle();
+                    data.Hit_Lag_Speed_Multiplier_a__raw = reader.ReadSingle();
                     data.Hit_Lag_a__raw = reader.ReadSingle();
                     data.Unk_17_raw = reader.ReadSingle();
                     data.Unk_18_raw = reader.ReadSingle();
-                    data.Hit_Lag_Speed_Multiplier_b__raw = reader.ReadSingle();
                     data.Unk_19_raw = reader.ReadSingle();
+                    data.Hit_Lag_Speed_Multiplier_b__raw = reader.ReadSingle();
                     data.Hit_Lag_b__raw = reader.ReadSingle();
                     data.Unk_20_raw = reader.ReadSingle();
                     data.Unk_21_raw = reader.ReadSingle();
@@ -3261,13 +3261,13 @@ namespace MHW_Editor.Structs.Weapons {
                     writer.Write(Unk_13_raw);
                     writer.Write(Unk_14_raw);
                     writer.Write(Unk_15_raw);
-                    writer.Write(Hit_Lag_Speed_Multiplier_a__raw);
                     writer.Write(Unk_16_raw);
+                    writer.Write(Hit_Lag_Speed_Multiplier_a__raw);
                     writer.Write(Hit_Lag_a__raw);
                     writer.Write(Unk_17_raw);
                     writer.Write(Unk_18_raw);
-                    writer.Write(Hit_Lag_Speed_Multiplier_b__raw);
                     writer.Write(Unk_19_raw);
+                    writer.Write(Hit_Lag_Speed_Multiplier_b__raw);
                     writer.Write(Hit_Lag_b__raw);
                     writer.Write(Unk_20_raw);
                     writer.Write(Unk_21_raw);
