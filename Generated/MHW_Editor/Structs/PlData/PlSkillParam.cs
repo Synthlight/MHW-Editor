@@ -8323,27 +8323,9 @@ namespace MHW_Editor.Structs.PlData {
             [DisplayName("Offset")]
             public long Feline_Defense_S__offset { get; private set; }
 
-            protected float Feline_Defense_S_Damage_Rate_raw;
-            public const string Feline_Defense_S_Damage_Rate_displayName = "Feline Defense S: Damage Rate";
-            public const int Feline_Defense_S_Damage_Rate_sortIndex = 1250;
-            [SortOrder(Feline_Defense_S_Damage_Rate_sortIndex)]
-            [DisplayName(Feline_Defense_S_Damage_Rate_displayName)]
-            public virtual float Feline_Defense_S_Damage_Rate {
-                get => Feline_Defense_S_Damage_Rate_raw;
-                set {
-                    if (Feline_Defense_S_Damage_Rate_raw == value) return;
-                    Feline_Defense_S_Damage_Rate_raw = value;
-                    ChangedItems.Add(nameof(Feline_Defense_S_Damage_Rate));
-                    OnPropertyChanged(nameof(Feline_Defense_S_Damage_Rate));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Feline_Defense_S_Damage_Rate_offset { get; private set; }
-
             protected byte Feline_Defense_L__raw;
             public const string Feline_Defense_L__displayName = "Feline Defense L: %";
-            public const int Feline_Defense_L__sortIndex = 1300;
+            public const int Feline_Defense_L__sortIndex = 1250;
             [SortOrder(Feline_Defense_L__sortIndex)]
             [DisplayName(Feline_Defense_L__displayName)]
             public virtual byte Feline_Defense_L_ {
@@ -8358,6 +8340,24 @@ namespace MHW_Editor.Structs.PlData {
 
             [DisplayName("Offset")]
             public long Feline_Defense_L__offset { get; private set; }
+
+            protected float Feline_Defense_S_Damage_Rate_raw;
+            public const string Feline_Defense_S_Damage_Rate_displayName = "Feline Defense S: Damage Rate";
+            public const int Feline_Defense_S_Damage_Rate_sortIndex = 1300;
+            [SortOrder(Feline_Defense_S_Damage_Rate_sortIndex)]
+            [DisplayName(Feline_Defense_S_Damage_Rate_displayName)]
+            public virtual float Feline_Defense_S_Damage_Rate {
+                get => Feline_Defense_S_Damage_Rate_raw;
+                set {
+                    if (Feline_Defense_S_Damage_Rate_raw == value) return;
+                    Feline_Defense_S_Damage_Rate_raw = value;
+                    ChangedItems.Add(nameof(Feline_Defense_S_Damage_Rate));
+                    OnPropertyChanged(nameof(Feline_Defense_S_Damage_Rate));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Feline_Defense_S_Damage_Rate_offset { get; private set; }
 
             protected float Feline_Defense_L_Damage_Rate_raw;
             public const string Feline_Defense_L_Damage_Rate_displayName = "Feline Defense L: Damage Rate";
@@ -9105,10 +9105,10 @@ namespace MHW_Editor.Structs.PlData {
                 data.Feline_Special_Attack_Capture_Attack_Rate_raw = reader.ReadSingle();
                 data.Feline_Defense_S__offset = reader.BaseStream.Position;
                 data.Feline_Defense_S__raw = reader.ReadByte();
-                data.Feline_Defense_S_Damage_Rate_offset = reader.BaseStream.Position;
-                data.Feline_Defense_S_Damage_Rate_raw = reader.ReadSingle();
                 data.Feline_Defense_L__offset = reader.BaseStream.Position;
                 data.Feline_Defense_L__raw = reader.ReadByte();
+                data.Feline_Defense_S_Damage_Rate_offset = reader.BaseStream.Position;
+                data.Feline_Defense_S_Damage_Rate_raw = reader.ReadSingle();
                 data.Feline_Defense_L_Damage_Rate_offset = reader.BaseStream.Position;
                 data.Feline_Defense_L_Damage_Rate_raw = reader.ReadSingle();
                 data.Feline_Harvest_Cooldown_Multiplier_offset = reader.BaseStream.Position;
@@ -9213,8 +9213,8 @@ namespace MHW_Editor.Structs.PlData {
                 writer.Write(Feline_Special_Attack_Condition_Attack_Bonus_raw);
                 writer.Write(Feline_Special_Attack_Capture_Attack_Rate_raw);
                 writer.Write(Feline_Defense_S__raw);
-                writer.Write(Feline_Defense_S_Damage_Rate_raw);
                 writer.Write(Feline_Defense_L__raw);
+                writer.Write(Feline_Defense_S_Damage_Rate_raw);
                 writer.Write(Feline_Defense_L_Damage_Rate_raw);
                 writer.Write(Feline_Harvest_Cooldown_Multiplier_raw);
                 writer.Write(Feline_Sharpshooter_Shell_Attack_Rate_raw);
@@ -9281,8 +9281,8 @@ namespace MHW_Editor.Structs.PlData {
                     new MultiStructItemCustomView(this, "Feline Special Attack: Condition Attack Bonus", "Feline_Special_Attack_Condition_Attack_Bonus", "Feline_Special_Attack_Condition_Attack_Bonus_offset"),
                     new MultiStructItemCustomView(this, "Feline Special Attack: Capture Attack Rate", "Feline_Special_Attack_Capture_Attack_Rate", "Feline_Special_Attack_Capture_Attack_Rate_offset"),
                     new MultiStructItemCustomView(this, "Feline Defense S: %", "Feline_Defense_S_", "Feline_Defense_S__offset"),
-                    new MultiStructItemCustomView(this, "Feline Defense S: Damage Rate", "Feline_Defense_S_Damage_Rate", "Feline_Defense_S_Damage_Rate_offset"),
                     new MultiStructItemCustomView(this, "Feline Defense L: %", "Feline_Defense_L_", "Feline_Defense_L__offset"),
+                    new MultiStructItemCustomView(this, "Feline Defense S: Damage Rate", "Feline_Defense_S_Damage_Rate", "Feline_Defense_S_Damage_Rate_offset"),
                     new MultiStructItemCustomView(this, "Feline Defense L: Damage Rate", "Feline_Defense_L_Damage_Rate", "Feline_Defense_L_Damage_Rate_offset"),
                     new MultiStructItemCustomView(this, "Feline Harvest: Cooldown Multiplier", "Feline_Harvest_Cooldown_Multiplier", "Feline_Harvest_Cooldown_Multiplier_offset"),
                     new MultiStructItemCustomView(this, "Feline Sharpshooter: Shell Attack Rate", "Feline_Sharpshooter_Shell_Attack_Rate", "Feline_Sharpshooter_Shell_Attack_Rate_offset"),

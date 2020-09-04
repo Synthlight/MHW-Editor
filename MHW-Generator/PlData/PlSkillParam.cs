@@ -432,8 +432,8 @@ namespace MHW_Generator.PlData {
                     new MhwMultiStructData.Entry("Feline Special Attack: Capture Attack Rate", typeof(float)),
 
                     new MhwMultiStructData.Entry("Feline Defense S: %", typeof(byte)),
-                    new MhwMultiStructData.Entry("Feline Defense S: Damage Rate", typeof(float)),
                     new MhwMultiStructData.Entry("Feline Defense L: %", typeof(byte)),
+                    new MhwMultiStructData.Entry("Feline Defense S: Damage Rate", typeof(float)),
                     new MhwMultiStructData.Entry("Feline Defense L: Damage Rate", typeof(float)),
 
                     new MhwMultiStructData.Entry("Feline Harvest: Cooldown Multiplier", typeof(float)),
