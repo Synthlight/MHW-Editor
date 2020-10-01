@@ -320,8 +320,8 @@
   "318": "Schwert eines wahren Kriegers.\r\nSo höllisch, dass es Feinde\r\nverschwinden lässt.",
   "319": "Vollkommenes Katana",
   "320": "Ein Wilder-Dämonjho-Langschwert\r\ndas Beute und Besitzer verwirrt,\r\nnur um seinen Blutdurst zu stillen.",
-  "321": "HARDUMMY",
-  "322": "HARDUMMY",
+  "321": "Azurstern \"Drachentanz\"+",
+  "322": "Ein Langschwert, das mit dem Licht\r\neines Azursterns glänzt. Der Beweis\r\ndeiner Hoffnungen und Träume.",
   "323": "Dämonen-Hellebarde",
   "324": "Dieses Rajang-Langschwert wurde\r\nnach den mystischen Lehren eines\r\nMönchs aus dem Osten gestaltet.",
   "325": "Dämonenfürst-Hellebarde",
@@ -343,9 +343,9 @@
   "341": "Große Dämonen-Hellebarde",
   "342": "Adularia-Schneide",
   "343": "Ein silbernes Langschwert aus Frost-\r\nhauer-Barioth, umhüllt von scharfer\r\nKälte. Zeichen des Wärter der Weite.",
-  "344": "Unavailable",
-  "345": "Unavailable",
-  "346": "Unavailable",
+  "344": "Fatalis-Sichel",
+  "345": "Dieses Fatalis-Langschwert kann\r\nSeelen ernten und Körpern\r\nunvorstellbare Wunden zufügen.",
+  "346": "Legendäre Fatalis-Sichel",
   "347": "Unavailable",
   "348": "Unavailable",
   "349": "Königlicher Kapitänsdegen",
@@ -450,6 +450,5 @@
   "448": "Unavailable",
   "449": "Unavailable",
   "450": "Unavailable",
-  "451": "Unavailable",
-  "452": "Unavailable"
+  "451": "Unavailable"
 }

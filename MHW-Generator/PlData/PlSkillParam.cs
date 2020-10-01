@@ -379,6 +379,27 @@ namespace MHW_Generator.PlData {
                 new MhwMultiStructData.Entry("Set(5) Status Limit", typeof(float))
             });
 
+            ushort fatalisUnk = 0;
+
+            structs.AddRange(new List<MhwMultiStructData.StructData> {
+                new MhwMultiStructData.StructData($"Skill Params ({++paramsIndex})", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Fatalis Unk {++fatalisUnk}", typeof(float)),
+                }, 1, showVertically: true)
+            });
+
             var foodEffectsEntries = new List<MhwMultiStructData.Entry>();
             for (var s = 0; s < 6; s++) {
                 foodEffectsEntries.Add(new MhwMultiStructData.Entry($"Food Effect: Life Up {s + 1}", typeof(ushort)));

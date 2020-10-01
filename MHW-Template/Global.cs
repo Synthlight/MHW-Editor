@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace MHW_Template {
     [SuppressMessage("ReSharper", "StringLiteralTypo")]
     public static class Global {
-        public const string CURRENT_GAME_VERSION = "14.01.XX";
+        public const string CURRENT_GAME_VERSION = "15.0X.XX";
         public static readonly Dictionary<string, string> LANGUAGE_NAME_LOOKUP = new Dictionary<string, string> {
             {"ara", "العربية"},
             {"chS", "简体中文"},

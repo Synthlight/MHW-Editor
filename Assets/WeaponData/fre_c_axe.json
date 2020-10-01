@@ -307,9 +307,9 @@
   "305": "Unavailable",
   "306": "Croc de loup furieux",
   "307": "Volto-hache Barioth crocgivre.\r\nUne arme dégageant un froid extrême.\r\nLe symbole du gardien du Gel éternel.",
-  "308": "Unavailable",
-  "309": "Unavailable",
-  "310": "Unavailable",
+  "308": "Chargeur Fatalis",
+  "309": "Volto-hache Fatalis.\r\nLe symbole de ceux qui ont\r\nchassé le dragon noir.",
+  "310": "Chargeur ultime Fatalis",
   "311": "Aigle noir",
   "312": "Une volto-hache d'or et d'azur, tel\r\nun chevalier étincelant dans la\r\nnuit. Ses attaques s'abattent dans\r\nune danse assourdissante.",
   "313": "Aigle foudroyant noir",
@@ -434,6 +434,5 @@
   "432": "Unavailable",
   "433": "Unavailable",
   "434": "Unavailable",
-  "435": "Unavailable",
-  "436": "Unavailable"
+  "435": "Unavailable"
 }

@@ -144,7 +144,7 @@ namespace MHW_Editor.Structs.Items {
             }
 
             public partial class Items : MhwStructItem, IWriteDataInner<Item_Box> {
-                public const ulong FixedSizeCount = 215;
+                public const ulong FixedSizeCount = 239;
                 public const string GridName = "Items";
 
                 protected ushort Unk_raw;
@@ -166,7 +166,7 @@ namespace MHW_Editor.Structs.Items {
 
                 public static ObservableMhwStructCollection<Items> LoadData(BinaryReader reader, Item_Box parent) {
                     var list = new ObservableMhwStructCollection<Items>();
-                    var count = 215UL;
+                    var count = 239UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
                     }

@@ -19,7 +19,7 @@ namespace MHW_Generator.Items {
 
                     new MhwMultiStructData.Entry("Items", typeof(void), subStruct: new MhwMultiStructData.StructData("Items", new List<MhwMultiStructData.Entry> {
                         new MhwMultiStructData.Entry("Unk", typeof(ushort))
-                    }, 215))
+                    }, 239))
                 }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, entryCount))
             };
 

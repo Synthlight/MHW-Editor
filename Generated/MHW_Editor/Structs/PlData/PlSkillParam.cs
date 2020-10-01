@@ -7395,6 +7395,344 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
+        public partial class Skill_Params_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
+            public const ulong FixedSizeCount = 1;
+            public const string GridName = "Skill Params (8)";
+
+            protected float Fatalis_Unk_1_raw;
+            public const string Fatalis_Unk_1_displayName = "Fatalis Unk 1";
+            public const int Fatalis_Unk_1_sortIndex = 50;
+            [SortOrder(Fatalis_Unk_1_sortIndex)]
+            [DisplayName(Fatalis_Unk_1_displayName)]
+            public virtual float Fatalis_Unk_1 {
+                get => Fatalis_Unk_1_raw;
+                set {
+                    if (Fatalis_Unk_1_raw == value) return;
+                    Fatalis_Unk_1_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_1));
+                    OnPropertyChanged(nameof(Fatalis_Unk_1));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_1_offset { get; private set; }
+
+            protected float Fatalis_Unk_2_raw;
+            public const string Fatalis_Unk_2_displayName = "Fatalis Unk 2";
+            public const int Fatalis_Unk_2_sortIndex = 100;
+            [SortOrder(Fatalis_Unk_2_sortIndex)]
+            [DisplayName(Fatalis_Unk_2_displayName)]
+            public virtual float Fatalis_Unk_2 {
+                get => Fatalis_Unk_2_raw;
+                set {
+                    if (Fatalis_Unk_2_raw == value) return;
+                    Fatalis_Unk_2_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_2));
+                    OnPropertyChanged(nameof(Fatalis_Unk_2));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_2_offset { get; private set; }
+
+            protected float Fatalis_Unk_3_raw;
+            public const string Fatalis_Unk_3_displayName = "Fatalis Unk 3";
+            public const int Fatalis_Unk_3_sortIndex = 150;
+            [SortOrder(Fatalis_Unk_3_sortIndex)]
+            [DisplayName(Fatalis_Unk_3_displayName)]
+            public virtual float Fatalis_Unk_3 {
+                get => Fatalis_Unk_3_raw;
+                set {
+                    if (Fatalis_Unk_3_raw == value) return;
+                    Fatalis_Unk_3_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_3));
+                    OnPropertyChanged(nameof(Fatalis_Unk_3));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_3_offset { get; private set; }
+
+            protected float Fatalis_Unk_4_raw;
+            public const string Fatalis_Unk_4_displayName = "Fatalis Unk 4";
+            public const int Fatalis_Unk_4_sortIndex = 200;
+            [SortOrder(Fatalis_Unk_4_sortIndex)]
+            [DisplayName(Fatalis_Unk_4_displayName)]
+            public virtual float Fatalis_Unk_4 {
+                get => Fatalis_Unk_4_raw;
+                set {
+                    if (Fatalis_Unk_4_raw == value) return;
+                    Fatalis_Unk_4_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_4));
+                    OnPropertyChanged(nameof(Fatalis_Unk_4));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_4_offset { get; private set; }
+
+            protected float Fatalis_Unk_5_raw;
+            public const string Fatalis_Unk_5_displayName = "Fatalis Unk 5";
+            public const int Fatalis_Unk_5_sortIndex = 250;
+            [SortOrder(Fatalis_Unk_5_sortIndex)]
+            [DisplayName(Fatalis_Unk_5_displayName)]
+            public virtual float Fatalis_Unk_5 {
+                get => Fatalis_Unk_5_raw;
+                set {
+                    if (Fatalis_Unk_5_raw == value) return;
+                    Fatalis_Unk_5_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_5));
+                    OnPropertyChanged(nameof(Fatalis_Unk_5));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_5_offset { get; private set; }
+
+            protected float Fatalis_Unk_6_raw;
+            public const string Fatalis_Unk_6_displayName = "Fatalis Unk 6";
+            public const int Fatalis_Unk_6_sortIndex = 300;
+            [SortOrder(Fatalis_Unk_6_sortIndex)]
+            [DisplayName(Fatalis_Unk_6_displayName)]
+            public virtual float Fatalis_Unk_6 {
+                get => Fatalis_Unk_6_raw;
+                set {
+                    if (Fatalis_Unk_6_raw == value) return;
+                    Fatalis_Unk_6_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_6));
+                    OnPropertyChanged(nameof(Fatalis_Unk_6));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_6_offset { get; private set; }
+
+            protected float Fatalis_Unk_7_raw;
+            public const string Fatalis_Unk_7_displayName = "Fatalis Unk 7";
+            public const int Fatalis_Unk_7_sortIndex = 350;
+            [SortOrder(Fatalis_Unk_7_sortIndex)]
+            [DisplayName(Fatalis_Unk_7_displayName)]
+            public virtual float Fatalis_Unk_7 {
+                get => Fatalis_Unk_7_raw;
+                set {
+                    if (Fatalis_Unk_7_raw == value) return;
+                    Fatalis_Unk_7_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_7));
+                    OnPropertyChanged(nameof(Fatalis_Unk_7));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_7_offset { get; private set; }
+
+            protected float Fatalis_Unk_8_raw;
+            public const string Fatalis_Unk_8_displayName = "Fatalis Unk 8";
+            public const int Fatalis_Unk_8_sortIndex = 400;
+            [SortOrder(Fatalis_Unk_8_sortIndex)]
+            [DisplayName(Fatalis_Unk_8_displayName)]
+            public virtual float Fatalis_Unk_8 {
+                get => Fatalis_Unk_8_raw;
+                set {
+                    if (Fatalis_Unk_8_raw == value) return;
+                    Fatalis_Unk_8_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_8));
+                    OnPropertyChanged(nameof(Fatalis_Unk_8));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_8_offset { get; private set; }
+
+            protected float Fatalis_Unk_9_raw;
+            public const string Fatalis_Unk_9_displayName = "Fatalis Unk 9";
+            public const int Fatalis_Unk_9_sortIndex = 450;
+            [SortOrder(Fatalis_Unk_9_sortIndex)]
+            [DisplayName(Fatalis_Unk_9_displayName)]
+            public virtual float Fatalis_Unk_9 {
+                get => Fatalis_Unk_9_raw;
+                set {
+                    if (Fatalis_Unk_9_raw == value) return;
+                    Fatalis_Unk_9_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_9));
+                    OnPropertyChanged(nameof(Fatalis_Unk_9));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_9_offset { get; private set; }
+
+            protected float Fatalis_Unk_10_raw;
+            public const string Fatalis_Unk_10_displayName = "Fatalis Unk 10";
+            public const int Fatalis_Unk_10_sortIndex = 500;
+            [SortOrder(Fatalis_Unk_10_sortIndex)]
+            [DisplayName(Fatalis_Unk_10_displayName)]
+            public virtual float Fatalis_Unk_10 {
+                get => Fatalis_Unk_10_raw;
+                set {
+                    if (Fatalis_Unk_10_raw == value) return;
+                    Fatalis_Unk_10_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_10));
+                    OnPropertyChanged(nameof(Fatalis_Unk_10));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_10_offset { get; private set; }
+
+            protected float Fatalis_Unk_11_raw;
+            public const string Fatalis_Unk_11_displayName = "Fatalis Unk 11";
+            public const int Fatalis_Unk_11_sortIndex = 550;
+            [SortOrder(Fatalis_Unk_11_sortIndex)]
+            [DisplayName(Fatalis_Unk_11_displayName)]
+            public virtual float Fatalis_Unk_11 {
+                get => Fatalis_Unk_11_raw;
+                set {
+                    if (Fatalis_Unk_11_raw == value) return;
+                    Fatalis_Unk_11_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_11));
+                    OnPropertyChanged(nameof(Fatalis_Unk_11));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_11_offset { get; private set; }
+
+            protected float Fatalis_Unk_12_raw;
+            public const string Fatalis_Unk_12_displayName = "Fatalis Unk 12";
+            public const int Fatalis_Unk_12_sortIndex = 600;
+            [SortOrder(Fatalis_Unk_12_sortIndex)]
+            [DisplayName(Fatalis_Unk_12_displayName)]
+            public virtual float Fatalis_Unk_12 {
+                get => Fatalis_Unk_12_raw;
+                set {
+                    if (Fatalis_Unk_12_raw == value) return;
+                    Fatalis_Unk_12_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_12));
+                    OnPropertyChanged(nameof(Fatalis_Unk_12));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_12_offset { get; private set; }
+
+            protected float Fatalis_Unk_13_raw;
+            public const string Fatalis_Unk_13_displayName = "Fatalis Unk 13";
+            public const int Fatalis_Unk_13_sortIndex = 650;
+            [SortOrder(Fatalis_Unk_13_sortIndex)]
+            [DisplayName(Fatalis_Unk_13_displayName)]
+            public virtual float Fatalis_Unk_13 {
+                get => Fatalis_Unk_13_raw;
+                set {
+                    if (Fatalis_Unk_13_raw == value) return;
+                    Fatalis_Unk_13_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_13));
+                    OnPropertyChanged(nameof(Fatalis_Unk_13));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_13_offset { get; private set; }
+
+            protected float Fatalis_Unk_14_raw;
+            public const string Fatalis_Unk_14_displayName = "Fatalis Unk 14";
+            public const int Fatalis_Unk_14_sortIndex = 700;
+            [SortOrder(Fatalis_Unk_14_sortIndex)]
+            [DisplayName(Fatalis_Unk_14_displayName)]
+            public virtual float Fatalis_Unk_14 {
+                get => Fatalis_Unk_14_raw;
+                set {
+                    if (Fatalis_Unk_14_raw == value) return;
+                    Fatalis_Unk_14_raw = value;
+                    ChangedItems.Add(nameof(Fatalis_Unk_14));
+                    OnPropertyChanged(nameof(Fatalis_Unk_14));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Fatalis_Unk_14_offset { get; private set; }
+
+            public const int lastSortIndex = 750;
+
+            public static ObservableMhwStructCollection<Skill_Params_8_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skill_Params_8_>();
+                var count = 1UL;
+                for (ulong i = 0; i < count; i++) {
+                    list.Add(LoadData(reader, i));
+                }
+                return list;
+            }
+
+            public static Skill_Params_8_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Skill_Params_8_();
+                data.Index = i;
+                data.Fatalis_Unk_1_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_1_raw = reader.ReadSingle();
+                data.Fatalis_Unk_2_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_2_raw = reader.ReadSingle();
+                data.Fatalis_Unk_3_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_3_raw = reader.ReadSingle();
+                data.Fatalis_Unk_4_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_4_raw = reader.ReadSingle();
+                data.Fatalis_Unk_5_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_5_raw = reader.ReadSingle();
+                data.Fatalis_Unk_6_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_6_raw = reader.ReadSingle();
+                data.Fatalis_Unk_7_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_7_raw = reader.ReadSingle();
+                data.Fatalis_Unk_8_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_8_raw = reader.ReadSingle();
+                data.Fatalis_Unk_9_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_9_raw = reader.ReadSingle();
+                data.Fatalis_Unk_10_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_10_raw = reader.ReadSingle();
+                data.Fatalis_Unk_11_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_11_raw = reader.ReadSingle();
+                data.Fatalis_Unk_12_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_12_raw = reader.ReadSingle();
+                data.Fatalis_Unk_13_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_13_raw = reader.ReadSingle();
+                data.Fatalis_Unk_14_offset = reader.BaseStream.Position;
+                data.Fatalis_Unk_14_raw = reader.ReadSingle();
+                return data;
+            }
+
+            public void WriteData(BinaryWriter writer) {
+                writer.Write(Fatalis_Unk_1_raw);
+                writer.Write(Fatalis_Unk_2_raw);
+                writer.Write(Fatalis_Unk_3_raw);
+                writer.Write(Fatalis_Unk_4_raw);
+                writer.Write(Fatalis_Unk_5_raw);
+                writer.Write(Fatalis_Unk_6_raw);
+                writer.Write(Fatalis_Unk_7_raw);
+                writer.Write(Fatalis_Unk_8_raw);
+                writer.Write(Fatalis_Unk_9_raw);
+                writer.Write(Fatalis_Unk_10_raw);
+                writer.Write(Fatalis_Unk_11_raw);
+                writer.Write(Fatalis_Unk_12_raw);
+                writer.Write(Fatalis_Unk_13_raw);
+                writer.Write(Fatalis_Unk_14_raw);
+            }
+
+            public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
+                return new ObservableCollection<MultiStructItemCustomView> {
+                    new MultiStructItemCustomView(this, "Fatalis Unk 1", "Fatalis_Unk_1", "Fatalis_Unk_1_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 2", "Fatalis_Unk_2", "Fatalis_Unk_2_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 3", "Fatalis_Unk_3", "Fatalis_Unk_3_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 4", "Fatalis_Unk_4", "Fatalis_Unk_4_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 5", "Fatalis_Unk_5", "Fatalis_Unk_5_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 6", "Fatalis_Unk_6", "Fatalis_Unk_6_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 7", "Fatalis_Unk_7", "Fatalis_Unk_7_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 8", "Fatalis_Unk_8", "Fatalis_Unk_8_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 9", "Fatalis_Unk_9", "Fatalis_Unk_9_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 10", "Fatalis_Unk_10", "Fatalis_Unk_10_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 11", "Fatalis_Unk_11", "Fatalis_Unk_11_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 12", "Fatalis_Unk_12", "Fatalis_Unk_12_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 13", "Fatalis_Unk_13", "Fatalis_Unk_13_offset"),
+                    new MultiStructItemCustomView(this, "Fatalis Unk 14", "Fatalis_Unk_14", "Fatalis_Unk_14_offset"),
+                };
+            }
+        }
+
         public partial class Food_Effects : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Food Effects";
@@ -9325,9 +9663,9 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skill_Params_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
+        public partial class Skill_Params_9_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "Skill Params (8)";
+            public const string GridName = "Skill Params (9)";
 
             protected float Music_Skill_Bless_Random_Rate_raw;
             public const string Music_Skill_Bless_Random_Rate_displayName = "Music Skill: Bless: Random Rate";
@@ -9871,8 +10209,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 1550;
 
-            public static ObservableMhwStructCollection<Skill_Params_8_> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Skill_Params_8_>();
+            public static ObservableMhwStructCollection<Skill_Params_9_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skill_Params_9_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -9880,8 +10218,8 @@ namespace MHW_Editor.Structs.PlData {
                 return list;
             }
 
-            public static Skill_Params_8_ LoadData(BinaryReader reader, ulong i) {
-                var data = new Skill_Params_8_();
+            public static Skill_Params_9_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Skill_Params_9_();
                 data.Index = i;
                 data.Music_Skill_Bless_Random_Rate_offset = reader.BaseStream.Position;
                 data.Music_Skill_Bless_Random_Rate_raw = reader.ReadSingle();
@@ -10060,12 +10398,14 @@ namespace MHW_Editor.Structs.PlData {
             data.AddLast(Frostcraft_2__);
             var Skill_Params_7__ = new MhwStructDataContainer<Skill_Params_7_>(Skill_Params_7_.LoadData(reader), typeof(Skill_Params_7_));
             data.AddLast(Skill_Params_7__);
+            var Skill_Params_8__ = new MhwStructDataContainer<Skill_Params_8_>(Skill_Params_8_.LoadData(reader), typeof(Skill_Params_8_));
+            data.AddLast(Skill_Params_8__);
             var Food_Effects_ = new MhwStructDataContainer<Food_Effects>(Food_Effects.LoadData(reader), typeof(Food_Effects));
             data.AddLast(Food_Effects_);
             var Feline_Skill_ = new MhwStructDataContainer<Feline_Skill>(Feline_Skill.LoadData(reader), typeof(Feline_Skill));
             data.AddLast(Feline_Skill_);
-            var Skill_Params_8__ = new MhwStructDataContainer<Skill_Params_8_>(Skill_Params_8_.LoadData(reader), typeof(Skill_Params_8_));
-            data.AddLast(Skill_Params_8__);
+            var Skill_Params_9__ = new MhwStructDataContainer<Skill_Params_9_>(Skill_Params_9_.LoadData(reader), typeof(Skill_Params_9_));
+            data.AddLast(Skill_Params_9__);
         }
     }
 }

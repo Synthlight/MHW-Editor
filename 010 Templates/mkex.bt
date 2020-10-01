@@ -24,7 +24,7 @@ typedef struct {
         ushort Unk<name="Unk (ushort)">;
     } Items;
 
-    Items Items_[215]<optimize=false, name="Items">;
+    Items Items_[239]<optimize=false, name="Items">;
 } Item_Box;
 
 Item_Box Item_Box_[Melder_Exchange_.Entry_Count]<optimize=false, name="Item Box">;
