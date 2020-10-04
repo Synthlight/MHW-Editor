@@ -117,7 +117,7 @@ namespace MHW_Editor.Windows {
                                 armor.Skill_3       = SkillDataValueClass.Mind_s_Eye_Ballistics;
                                 armor.Skill_3_Level = 10;
                                 break;
-                            case ArmorDataValueClass.Critical_Charm_II:
+                            case ArmorDataValueClass.Critical_Charm_III:
                                 armor.Skill_1       = SkillDataValueClass.Non_elemental_Boost;
                                 armor.Skill_1_Level = 10;
                                 armor.Skill_2       = SkillDataValueClass.Power_Prolonger;

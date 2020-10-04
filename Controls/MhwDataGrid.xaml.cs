@@ -100,7 +100,7 @@ namespace MHW_Editor.Controls {
                 // This will set the merged check on all those filters so all we have to do layer is update the filter text, then refresh.
                 ((ListCollectionView) ItemsSource).Filter = groupFilter.MergedFilters;
 
-                if (mainWindow.targetFileType.Is(typeof(DecoGradeLottery), typeof(DecoLottery), typeof(KulveGradeLottery), typeof(SafiItemGradeLottery))) {
+                if (mainWindow.targetFileType.Is(typeof(DecoGradeLottery), typeof(DecoLottery), typeof(ItemLottery), typeof(KulveGradeLottery), typeof(SafiItemGradeLottery))) {
                     CalculatePercents();
                 }
             }
@@ -366,7 +366,7 @@ namespace MHW_Editor.Controls {
             try {
                 var obj = ((FrameworkElement) sender).DataContext;
                 if (obj.ToString() == "{DataGrid.NewItemPlaceholder}") return;
-                Items.Remove((T) obj);
+                items.Remove((T) obj);
             } catch (Exception err) when (!Debugger.IsAttached) {
                 MainWindow.ShowError(err, "Error Occurred");
             }
@@ -611,6 +611,14 @@ namespace MHW_Editor.Controls {
                     item.Grade_3_percent = item.Grade_3 > 0f ? (float) item.Grade_3 / total : 0f;
                     item.Grade_4_percent = item.Grade_4 > 0f ? (float) item.Grade_4 / total : 0f;
                     item.Grade_5_percent = item.Grade_5 > 0f ? (float) item.Grade_5 / total : 0f;
+                }
+            } else if (typeof(T).Is(typeof(ItemLottery.InnerItem))) {
+                var total = items.Select(item => (ItemLottery.InnerItem) (object) item)
+                                 .Aggregate(0u, (current, item) => current + item.itemWeight);
+
+                foreach (var item in items) {
+                    var x = (ItemLottery.InnerItem) (object) item;
+                    x.itemWeight_percent = x.itemWeight > 0f ? (float) x.itemWeight / total : 0f;
                 }
             }
         }

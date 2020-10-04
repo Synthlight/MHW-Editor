@@ -96,641 +96,233 @@ namespace MHW_Editor.Structs.Items {
             }
         }
 
-        public partial class Entries : MhwStructItem, IWriteData {
+        public partial class Entries : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
 
-            protected ushort Item_1_Id_raw;
-            public const string Item_1_Id_displayName = "Item 1 Id";
-            [SortOrder(Item_1_Id_sortIndex)]
-            [DisplayName(Item_1_Id_displayName)]
-            [DataSource(DataSourceType.Items)]
-            public virtual ushort Item_1_Id {
-                get => Item_1_Id_raw;
-                set {
-                    if (Item_1_Id_raw == value) return;
-                    Item_1_Id_raw = value;
-                    ChangedItems.Add(nameof(Item_1_Id));
-                    OnPropertyChanged(nameof(Item_1_Id));
-                    OnPropertyChanged(nameof(Item_1_Id_button));
+            public partial class Items : MhwStructItem, IWriteDataInner<Entries> {
+                public const ulong FixedSizeCount = 10;
+                public const string GridName = "Items";
+
+                protected ushort Item_Id_raw;
+                public const string Item_Id_displayName = "Item Id";
+                public const int Item_Id_sortIndex = 50;
+                [SortOrder(Item_Id_sortIndex)]
+                [DisplayName(Item_Id_displayName)]
+                [DataSource(DataSourceType.Items)]
+                public virtual ushort Item_Id {
+                    get => Item_Id_raw;
+                    set {
+                        if (Item_Id_raw == value) return;
+                        Item_Id_raw = value;
+                        ChangedItems.Add(nameof(Item_Id));
+                        OnPropertyChanged(nameof(Item_Id));
+                        OnPropertyChanged(nameof(Item_Id_button));
+                    }
+                }
+
+                [SortOrder(Item_Id_sortIndex)]
+                [DisplayName(Item_Id_displayName)]
+                [CustomSorter(typeof(ButtonSorter))]
+                public string Item_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id).ToStringWithId(Item_Id);
+
+                public const int lastSortIndex = 100;
+
+                public static ObservableMhwStructCollection<Items> LoadData(BinaryReader reader, Entries parent) {
+                    var list = new ObservableMhwStructCollection<Items>();
+                    var count = 10UL;
+                    for (ulong i = 0; i < count; i++) {
+                        list.Add(LoadData(reader, i, parent));
+                    }
+                    return list;
+                }
+
+                public static Items LoadData(BinaryReader reader, ulong i, Entries parent) {
+                    var data = new Items();
+                    data.Index = i;
+                    data.Item_Id_raw = reader.ReadUInt16();
+                    return data;
+                }
+
+                public void WriteData(BinaryWriter writer, Entries parent) {
+                    writer.Write(Item_Id_raw);
                 }
             }
 
-            [SortOrder(Item_1_Id_sortIndex)]
-            [DisplayName(Item_1_Id_displayName)]
-            [CustomSorter(typeof(ButtonSorter))]
-            public string Item_1_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_1_Id).ToStringWithId(Item_1_Id);
+            public const string Items_displayName = "Items";
+            public const int Items_sortIndex = 50;
+            [SortOrder(Items_sortIndex)]
+            [DisplayName(Items_displayName)]
+            public virtual ObservableCollection<Items> Items_raw { get; protected set; }
 
-            protected ushort Item_2_Id_raw;
-            public const string Item_2_Id_displayName = "Item 2 Id";
-            [SortOrder(Item_2_Id_sortIndex)]
-            [DisplayName(Item_2_Id_displayName)]
-            [DataSource(DataSourceType.Items)]
-            public virtual ushort Item_2_Id {
-                get => Item_2_Id_raw;
-                set {
-                    if (Item_2_Id_raw == value) return;
-                    Item_2_Id_raw = value;
-                    ChangedItems.Add(nameof(Item_2_Id));
-                    OnPropertyChanged(nameof(Item_2_Id));
-                    OnPropertyChanged(nameof(Item_2_Id_button));
+            public partial class Counts : MhwStructItem, IWriteDataInner<Entries> {
+                public const ulong FixedSizeCount = 10;
+                public const string GridName = "Counts";
+
+                protected byte Item_Count_raw;
+                public const string Item_Count_displayName = "Item Count";
+                public const int Item_Count_sortIndex = 50;
+                [SortOrder(Item_Count_sortIndex)]
+                [DisplayName(Item_Count_displayName)]
+                public virtual byte Item_Count {
+                    get => Item_Count_raw;
+                    set {
+                        if (Item_Count_raw == value) return;
+                        Item_Count_raw = value;
+                        ChangedItems.Add(nameof(Item_Count));
+                        OnPropertyChanged(nameof(Item_Count));
+                    }
+                }
+
+                public const int lastSortIndex = 100;
+
+                public static ObservableMhwStructCollection<Counts> LoadData(BinaryReader reader, Entries parent) {
+                    var list = new ObservableMhwStructCollection<Counts>();
+                    var count = 10UL;
+                    for (ulong i = 0; i < count; i++) {
+                        list.Add(LoadData(reader, i, parent));
+                    }
+                    return list;
+                }
+
+                public static Counts LoadData(BinaryReader reader, ulong i, Entries parent) {
+                    var data = new Counts();
+                    data.Index = i;
+                    data.Item_Count_raw = reader.ReadByte();
+                    return data;
+                }
+
+                public void WriteData(BinaryWriter writer, Entries parent) {
+                    writer.Write(Item_Count_raw);
                 }
             }
 
-            [SortOrder(Item_2_Id_sortIndex)]
-            [DisplayName(Item_2_Id_displayName)]
-            [CustomSorter(typeof(ButtonSorter))]
-            public string Item_2_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_2_Id).ToStringWithId(Item_2_Id);
+            public const string Counts_displayName = "Counts";
+            public const int Counts_sortIndex = 100;
+            [SortOrder(Counts_sortIndex)]
+            [DisplayName(Counts_displayName)]
+            public virtual ObservableCollection<Counts> Counts_raw { get; protected set; }
 
-            protected ushort Item_3_Id_raw;
-            public const string Item_3_Id_displayName = "Item 3 Id";
-            [SortOrder(Item_3_Id_sortIndex)]
-            [DisplayName(Item_3_Id_displayName)]
-            [DataSource(DataSourceType.Items)]
-            public virtual ushort Item_3_Id {
-                get => Item_3_Id_raw;
-                set {
-                    if (Item_3_Id_raw == value) return;
-                    Item_3_Id_raw = value;
-                    ChangedItems.Add(nameof(Item_3_Id));
-                    OnPropertyChanged(nameof(Item_3_Id));
-                    OnPropertyChanged(nameof(Item_3_Id_button));
+            public partial class Percents : MhwStructItem, IWriteDataInner<Entries> {
+                public const ulong FixedSizeCount = 10;
+                public const string GridName = "Percents";
+
+                protected byte Item_Weight_raw;
+                public const string Item_Weight_displayName = "Item Weight";
+                public const int Item_Weight_sortIndex = 50;
+                [SortOrder(Item_Weight_sortIndex)]
+                [DisplayName(Item_Weight_displayName)]
+                public virtual byte Item_Weight {
+                    get => Item_Weight_raw;
+                    set {
+                        if (Item_Weight_raw == value) return;
+                        Item_Weight_raw = value;
+                        ChangedItems.Add(nameof(Item_Weight));
+                        OnPropertyChanged(nameof(Item_Weight));
+                    }
+                }
+
+                public const int lastSortIndex = 100;
+
+                public static ObservableMhwStructCollection<Percents> LoadData(BinaryReader reader, Entries parent) {
+                    var list = new ObservableMhwStructCollection<Percents>();
+                    var count = 10UL;
+                    for (ulong i = 0; i < count; i++) {
+                        list.Add(LoadData(reader, i, parent));
+                    }
+                    return list;
+                }
+
+                public static Percents LoadData(BinaryReader reader, ulong i, Entries parent) {
+                    var data = new Percents();
+                    data.Index = i;
+                    data.Item_Weight_raw = reader.ReadByte();
+                    return data;
+                }
+
+                public void WriteData(BinaryWriter writer, Entries parent) {
+                    writer.Write(Item_Weight_raw);
                 }
             }
 
-            [SortOrder(Item_3_Id_sortIndex)]
-            [DisplayName(Item_3_Id_displayName)]
-            [CustomSorter(typeof(ButtonSorter))]
-            public string Item_3_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_3_Id).ToStringWithId(Item_3_Id);
+            public const string Percents_displayName = "Percents";
+            public const int Percents_sortIndex = 150;
+            [SortOrder(Percents_sortIndex)]
+            [DisplayName(Percents_displayName)]
+            public virtual ObservableCollection<Percents> Percents_raw { get; protected set; }
 
-            protected ushort Item_4_Id_raw;
-            public const string Item_4_Id_displayName = "Item 4 Id";
-            [SortOrder(Item_4_Id_sortIndex)]
-            [DisplayName(Item_4_Id_displayName)]
-            [DataSource(DataSourceType.Items)]
-            public virtual ushort Item_4_Id {
-                get => Item_4_Id_raw;
-                set {
-                    if (Item_4_Id_raw == value) return;
-                    Item_4_Id_raw = value;
-                    ChangedItems.Add(nameof(Item_4_Id));
-                    OnPropertyChanged(nameof(Item_4_Id));
-                    OnPropertyChanged(nameof(Item_4_Id_button));
+            public partial class Carve_Animations : MhwStructItem, IWriteDataInner<Entries> {
+                public const ulong FixedSizeCount = 10;
+                public const string GridName = "Carve Animations";
+
+                protected byte Item_Carve_Animation_raw;
+                public const string Item_Carve_Animation_displayName = "Item Carve Animation";
+                public const int Item_Carve_Animation_sortIndex = 50;
+                [SortOrder(Item_Carve_Animation_sortIndex)]
+                [DisplayName(Item_Carve_Animation_displayName)]
+                public virtual MHW_Template.Items.CarveAnimation Item_Carve_Animation {
+                    get => (MHW_Template.Items.CarveAnimation) Item_Carve_Animation_raw;
+                    set {
+                        if ((MHW_Template.Items.CarveAnimation) Item_Carve_Animation_raw == value) return;
+                        Item_Carve_Animation_raw = (byte) value;
+                        ChangedItems.Add(nameof(Item_Carve_Animation));
+                        OnPropertyChanged(nameof(Item_Carve_Animation));
+                    }
+                }
+
+                public const int lastSortIndex = 100;
+
+                public static ObservableMhwStructCollection<Carve_Animations> LoadData(BinaryReader reader, Entries parent) {
+                    var list = new ObservableMhwStructCollection<Carve_Animations>();
+                    var count = 10UL;
+                    for (ulong i = 0; i < count; i++) {
+                        list.Add(LoadData(reader, i, parent));
+                    }
+                    return list;
+                }
+
+                public static Carve_Animations LoadData(BinaryReader reader, ulong i, Entries parent) {
+                    var data = new Carve_Animations();
+                    data.Index = i;
+                    data.Item_Carve_Animation_raw = reader.ReadByte();
+                    return data;
+                }
+
+                public void WriteData(BinaryWriter writer, Entries parent) {
+                    writer.Write(Item_Carve_Animation_raw);
                 }
             }
 
-            [SortOrder(Item_4_Id_sortIndex)]
-            [DisplayName(Item_4_Id_displayName)]
-            [CustomSorter(typeof(ButtonSorter))]
-            public string Item_4_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_4_Id).ToStringWithId(Item_4_Id);
+            public const string Carve_Animations_displayName = "Carve Animations";
+            public const int Carve_Animations_sortIndex = 200;
+            [SortOrder(Carve_Animations_sortIndex)]
+            [DisplayName(Carve_Animations_displayName)]
+            public virtual ObservableCollection<Carve_Animations> Carve_Animations_raw { get; protected set; }
 
-            protected ushort Item_5_Id_raw;
-            public const string Item_5_Id_displayName = "Item 5 Id";
-            [SortOrder(Item_5_Id_sortIndex)]
-            [DisplayName(Item_5_Id_displayName)]
-            [DataSource(DataSourceType.Items)]
-            public virtual ushort Item_5_Id {
-                get => Item_5_Id_raw;
-                set {
-                    if (Item_5_Id_raw == value) return;
-                    Item_5_Id_raw = value;
-                    ChangedItems.Add(nameof(Item_5_Id));
-                    OnPropertyChanged(nameof(Item_5_Id));
-                    OnPropertyChanged(nameof(Item_5_Id_button));
+            public const int lastSortIndex = 250;
+
+            public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
+                if (typeof(Items).Is(typeof(F)) || typeof(Items).IsGeneric(typeof(F))) {
+                    foreach (var item in Items_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Counts).Is(typeof(F)) || typeof(Counts).IsGeneric(typeof(F))) {
+                    foreach (var item in Counts_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Percents).Is(typeof(F)) || typeof(Percents).IsGeneric(typeof(F))) {
+                    foreach (var item in Percents_raw.Cast<F>()) {
+                        yield return item;
+                    }
+                }
+                if (typeof(Carve_Animations).Is(typeof(F)) || typeof(Carve_Animations).IsGeneric(typeof(F))) {
+                    foreach (var item in Carve_Animations_raw.Cast<F>()) {
+                        yield return item;
+                    }
                 }
             }
-
-            [SortOrder(Item_5_Id_sortIndex)]
-            [DisplayName(Item_5_Id_displayName)]
-            [CustomSorter(typeof(ButtonSorter))]
-            public string Item_5_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_5_Id).ToStringWithId(Item_5_Id);
-
-            protected ushort Item_6_Id_raw;
-            public const string Item_6_Id_displayName = "Item 6 Id";
-            [SortOrder(Item_6_Id_sortIndex)]
-            [DisplayName(Item_6_Id_displayName)]
-            [DataSource(DataSourceType.Items)]
-            public virtual ushort Item_6_Id {
-                get => Item_6_Id_raw;
-                set {
-                    if (Item_6_Id_raw == value) return;
-                    Item_6_Id_raw = value;
-                    ChangedItems.Add(nameof(Item_6_Id));
-                    OnPropertyChanged(nameof(Item_6_Id));
-                    OnPropertyChanged(nameof(Item_6_Id_button));
-                }
-            }
-
-            [SortOrder(Item_6_Id_sortIndex)]
-            [DisplayName(Item_6_Id_displayName)]
-            [CustomSorter(typeof(ButtonSorter))]
-            public string Item_6_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_6_Id).ToStringWithId(Item_6_Id);
-
-            protected ushort Item_7_Id_raw;
-            public const string Item_7_Id_displayName = "Item 7 Id";
-            [SortOrder(Item_7_Id_sortIndex)]
-            [DisplayName(Item_7_Id_displayName)]
-            [DataSource(DataSourceType.Items)]
-            public virtual ushort Item_7_Id {
-                get => Item_7_Id_raw;
-                set {
-                    if (Item_7_Id_raw == value) return;
-                    Item_7_Id_raw = value;
-                    ChangedItems.Add(nameof(Item_7_Id));
-                    OnPropertyChanged(nameof(Item_7_Id));
-                    OnPropertyChanged(nameof(Item_7_Id_button));
-                }
-            }
-
-            [SortOrder(Item_7_Id_sortIndex)]
-            [DisplayName(Item_7_Id_displayName)]
-            [CustomSorter(typeof(ButtonSorter))]
-            public string Item_7_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_7_Id).ToStringWithId(Item_7_Id);
-
-            protected ushort Item_8_Id_raw;
-            public const string Item_8_Id_displayName = "Item 8 Id";
-            [SortOrder(Item_8_Id_sortIndex)]
-            [DisplayName(Item_8_Id_displayName)]
-            [DataSource(DataSourceType.Items)]
-            public virtual ushort Item_8_Id {
-                get => Item_8_Id_raw;
-                set {
-                    if (Item_8_Id_raw == value) return;
-                    Item_8_Id_raw = value;
-                    ChangedItems.Add(nameof(Item_8_Id));
-                    OnPropertyChanged(nameof(Item_8_Id));
-                    OnPropertyChanged(nameof(Item_8_Id_button));
-                }
-            }
-
-            [SortOrder(Item_8_Id_sortIndex)]
-            [DisplayName(Item_8_Id_displayName)]
-            [CustomSorter(typeof(ButtonSorter))]
-            public string Item_8_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_8_Id).ToStringWithId(Item_8_Id);
-
-            protected ushort Item_9_Id_raw;
-            public const string Item_9_Id_displayName = "Item 9 Id";
-            [SortOrder(Item_9_Id_sortIndex)]
-            [DisplayName(Item_9_Id_displayName)]
-            [DataSource(DataSourceType.Items)]
-            public virtual ushort Item_9_Id {
-                get => Item_9_Id_raw;
-                set {
-                    if (Item_9_Id_raw == value) return;
-                    Item_9_Id_raw = value;
-                    ChangedItems.Add(nameof(Item_9_Id));
-                    OnPropertyChanged(nameof(Item_9_Id));
-                    OnPropertyChanged(nameof(Item_9_Id_button));
-                }
-            }
-
-            [SortOrder(Item_9_Id_sortIndex)]
-            [DisplayName(Item_9_Id_displayName)]
-            [CustomSorter(typeof(ButtonSorter))]
-            public string Item_9_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_9_Id).ToStringWithId(Item_9_Id);
-
-            protected ushort Item_10_Id_raw;
-            public const string Item_10_Id_displayName = "Item 10 Id";
-            [SortOrder(Item_10_Id_sortIndex)]
-            [DisplayName(Item_10_Id_displayName)]
-            [DataSource(DataSourceType.Items)]
-            public virtual ushort Item_10_Id {
-                get => Item_10_Id_raw;
-                set {
-                    if (Item_10_Id_raw == value) return;
-                    Item_10_Id_raw = value;
-                    ChangedItems.Add(nameof(Item_10_Id));
-                    OnPropertyChanged(nameof(Item_10_Id));
-                    OnPropertyChanged(nameof(Item_10_Id_button));
-                }
-            }
-
-            [SortOrder(Item_10_Id_sortIndex)]
-            [DisplayName(Item_10_Id_displayName)]
-            [CustomSorter(typeof(ButtonSorter))]
-            public string Item_10_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_10_Id).ToStringWithId(Item_10_Id);
-
-            protected byte Item_1_Count_raw;
-            public const string Item_1_Count_displayName = "Item 1 Count";
-            [SortOrder(Item_1_Count_sortIndex)]
-            [DisplayName(Item_1_Count_displayName)]
-            public virtual byte Item_1_Count {
-                get => Item_1_Count_raw;
-                set {
-                    if (Item_1_Count_raw == value) return;
-                    Item_1_Count_raw = value;
-                    ChangedItems.Add(nameof(Item_1_Count));
-                    OnPropertyChanged(nameof(Item_1_Count));
-                }
-            }
-
-            protected byte Item_2_Count_raw;
-            public const string Item_2_Count_displayName = "Item 2 Count";
-            [SortOrder(Item_2_Count_sortIndex)]
-            [DisplayName(Item_2_Count_displayName)]
-            public virtual byte Item_2_Count {
-                get => Item_2_Count_raw;
-                set {
-                    if (Item_2_Count_raw == value) return;
-                    Item_2_Count_raw = value;
-                    ChangedItems.Add(nameof(Item_2_Count));
-                    OnPropertyChanged(nameof(Item_2_Count));
-                }
-            }
-
-            protected byte Item_3_Count_raw;
-            public const string Item_3_Count_displayName = "Item 3 Count";
-            [SortOrder(Item_3_Count_sortIndex)]
-            [DisplayName(Item_3_Count_displayName)]
-            public virtual byte Item_3_Count {
-                get => Item_3_Count_raw;
-                set {
-                    if (Item_3_Count_raw == value) return;
-                    Item_3_Count_raw = value;
-                    ChangedItems.Add(nameof(Item_3_Count));
-                    OnPropertyChanged(nameof(Item_3_Count));
-                }
-            }
-
-            protected byte Item_4_Count_raw;
-            public const string Item_4_Count_displayName = "Item 4 Count";
-            [SortOrder(Item_4_Count_sortIndex)]
-            [DisplayName(Item_4_Count_displayName)]
-            public virtual byte Item_4_Count {
-                get => Item_4_Count_raw;
-                set {
-                    if (Item_4_Count_raw == value) return;
-                    Item_4_Count_raw = value;
-                    ChangedItems.Add(nameof(Item_4_Count));
-                    OnPropertyChanged(nameof(Item_4_Count));
-                }
-            }
-
-            protected byte Item_5_Count_raw;
-            public const string Item_5_Count_displayName = "Item 5 Count";
-            [SortOrder(Item_5_Count_sortIndex)]
-            [DisplayName(Item_5_Count_displayName)]
-            public virtual byte Item_5_Count {
-                get => Item_5_Count_raw;
-                set {
-                    if (Item_5_Count_raw == value) return;
-                    Item_5_Count_raw = value;
-                    ChangedItems.Add(nameof(Item_5_Count));
-                    OnPropertyChanged(nameof(Item_5_Count));
-                }
-            }
-
-            protected byte Item_6_Count_raw;
-            public const string Item_6_Count_displayName = "Item 6 Count";
-            [SortOrder(Item_6_Count_sortIndex)]
-            [DisplayName(Item_6_Count_displayName)]
-            public virtual byte Item_6_Count {
-                get => Item_6_Count_raw;
-                set {
-                    if (Item_6_Count_raw == value) return;
-                    Item_6_Count_raw = value;
-                    ChangedItems.Add(nameof(Item_6_Count));
-                    OnPropertyChanged(nameof(Item_6_Count));
-                }
-            }
-
-            protected byte Item_7_Count_raw;
-            public const string Item_7_Count_displayName = "Item 7 Count";
-            [SortOrder(Item_7_Count_sortIndex)]
-            [DisplayName(Item_7_Count_displayName)]
-            public virtual byte Item_7_Count {
-                get => Item_7_Count_raw;
-                set {
-                    if (Item_7_Count_raw == value) return;
-                    Item_7_Count_raw = value;
-                    ChangedItems.Add(nameof(Item_7_Count));
-                    OnPropertyChanged(nameof(Item_7_Count));
-                }
-            }
-
-            protected byte Item_8_Count_raw;
-            public const string Item_8_Count_displayName = "Item 8 Count";
-            [SortOrder(Item_8_Count_sortIndex)]
-            [DisplayName(Item_8_Count_displayName)]
-            public virtual byte Item_8_Count {
-                get => Item_8_Count_raw;
-                set {
-                    if (Item_8_Count_raw == value) return;
-                    Item_8_Count_raw = value;
-                    ChangedItems.Add(nameof(Item_8_Count));
-                    OnPropertyChanged(nameof(Item_8_Count));
-                }
-            }
-
-            protected byte Item_9_Count_raw;
-            public const string Item_9_Count_displayName = "Item 9 Count";
-            [SortOrder(Item_9_Count_sortIndex)]
-            [DisplayName(Item_9_Count_displayName)]
-            public virtual byte Item_9_Count {
-                get => Item_9_Count_raw;
-                set {
-                    if (Item_9_Count_raw == value) return;
-                    Item_9_Count_raw = value;
-                    ChangedItems.Add(nameof(Item_9_Count));
-                    OnPropertyChanged(nameof(Item_9_Count));
-                }
-            }
-
-            protected byte Item_10_Count_raw;
-            public const string Item_10_Count_displayName = "Item 10 Count";
-            [SortOrder(Item_10_Count_sortIndex)]
-            [DisplayName(Item_10_Count_displayName)]
-            public virtual byte Item_10_Count {
-                get => Item_10_Count_raw;
-                set {
-                    if (Item_10_Count_raw == value) return;
-                    Item_10_Count_raw = value;
-                    ChangedItems.Add(nameof(Item_10_Count));
-                    OnPropertyChanged(nameof(Item_10_Count));
-                }
-            }
-
-            protected byte Item_1__raw;
-            public const string Item_1__displayName = "Item 1 %";
-            [SortOrder(Item_1__sortIndex)]
-            [DisplayName(Item_1__displayName)]
-            public virtual byte Item_1_ {
-                get => Item_1__raw;
-                set {
-                    if (Item_1__raw == value.Clamp((byte) 0, (byte) 100)) return;
-                    Item_1__raw = value.Clamp((byte) 0, (byte) 100);
-                    ChangedItems.Add(nameof(Item_1_));
-                    OnPropertyChanged(nameof(Item_1_));
-                }
-            }
-
-            protected byte Item_2__raw;
-            public const string Item_2__displayName = "Item 2 %";
-            [SortOrder(Item_2__sortIndex)]
-            [DisplayName(Item_2__displayName)]
-            public virtual byte Item_2_ {
-                get => Item_2__raw;
-                set {
-                    if (Item_2__raw == value.Clamp((byte) 0, (byte) 100)) return;
-                    Item_2__raw = value.Clamp((byte) 0, (byte) 100);
-                    ChangedItems.Add(nameof(Item_2_));
-                    OnPropertyChanged(nameof(Item_2_));
-                }
-            }
-
-            protected byte Item_3__raw;
-            public const string Item_3__displayName = "Item 3 %";
-            [SortOrder(Item_3__sortIndex)]
-            [DisplayName(Item_3__displayName)]
-            public virtual byte Item_3_ {
-                get => Item_3__raw;
-                set {
-                    if (Item_3__raw == value.Clamp((byte) 0, (byte) 100)) return;
-                    Item_3__raw = value.Clamp((byte) 0, (byte) 100);
-                    ChangedItems.Add(nameof(Item_3_));
-                    OnPropertyChanged(nameof(Item_3_));
-                }
-            }
-
-            protected byte Item_4__raw;
-            public const string Item_4__displayName = "Item 4 %";
-            [SortOrder(Item_4__sortIndex)]
-            [DisplayName(Item_4__displayName)]
-            public virtual byte Item_4_ {
-                get => Item_4__raw;
-                set {
-                    if (Item_4__raw == value.Clamp((byte) 0, (byte) 100)) return;
-                    Item_4__raw = value.Clamp((byte) 0, (byte) 100);
-                    ChangedItems.Add(nameof(Item_4_));
-                    OnPropertyChanged(nameof(Item_4_));
-                }
-            }
-
-            protected byte Item_5__raw;
-            public const string Item_5__displayName = "Item 5 %";
-            [SortOrder(Item_5__sortIndex)]
-            [DisplayName(Item_5__displayName)]
-            public virtual byte Item_5_ {
-                get => Item_5__raw;
-                set {
-                    if (Item_5__raw == value.Clamp((byte) 0, (byte) 100)) return;
-                    Item_5__raw = value.Clamp((byte) 0, (byte) 100);
-                    ChangedItems.Add(nameof(Item_5_));
-                    OnPropertyChanged(nameof(Item_5_));
-                }
-            }
-
-            protected byte Item_6__raw;
-            public const string Item_6__displayName = "Item 6 %";
-            [SortOrder(Item_6__sortIndex)]
-            [DisplayName(Item_6__displayName)]
-            public virtual byte Item_6_ {
-                get => Item_6__raw;
-                set {
-                    if (Item_6__raw == value.Clamp((byte) 0, (byte) 100)) return;
-                    Item_6__raw = value.Clamp((byte) 0, (byte) 100);
-                    ChangedItems.Add(nameof(Item_6_));
-                    OnPropertyChanged(nameof(Item_6_));
-                }
-            }
-
-            protected byte Item_7__raw;
-            public const string Item_7__displayName = "Item 7 %";
-            [SortOrder(Item_7__sortIndex)]
-            [DisplayName(Item_7__displayName)]
-            public virtual byte Item_7_ {
-                get => Item_7__raw;
-                set {
-                    if (Item_7__raw == value.Clamp((byte) 0, (byte) 100)) return;
-                    Item_7__raw = value.Clamp((byte) 0, (byte) 100);
-                    ChangedItems.Add(nameof(Item_7_));
-                    OnPropertyChanged(nameof(Item_7_));
-                }
-            }
-
-            protected byte Item_8__raw;
-            public const string Item_8__displayName = "Item 8 %";
-            [SortOrder(Item_8__sortIndex)]
-            [DisplayName(Item_8__displayName)]
-            public virtual byte Item_8_ {
-                get => Item_8__raw;
-                set {
-                    if (Item_8__raw == value.Clamp((byte) 0, (byte) 100)) return;
-                    Item_8__raw = value.Clamp((byte) 0, (byte) 100);
-                    ChangedItems.Add(nameof(Item_8_));
-                    OnPropertyChanged(nameof(Item_8_));
-                }
-            }
-
-            protected byte Item_9__raw;
-            public const string Item_9__displayName = "Item 9 %";
-            [SortOrder(Item_9__sortIndex)]
-            [DisplayName(Item_9__displayName)]
-            public virtual byte Item_9_ {
-                get => Item_9__raw;
-                set {
-                    if (Item_9__raw == value.Clamp((byte) 0, (byte) 100)) return;
-                    Item_9__raw = value.Clamp((byte) 0, (byte) 100);
-                    ChangedItems.Add(nameof(Item_9_));
-                    OnPropertyChanged(nameof(Item_9_));
-                }
-            }
-
-            protected byte Item_10__raw;
-            public const string Item_10__displayName = "Item 10 %";
-            [SortOrder(Item_10__sortIndex)]
-            [DisplayName(Item_10__displayName)]
-            public virtual byte Item_10_ {
-                get => Item_10__raw;
-                set {
-                    if (Item_10__raw == value.Clamp((byte) 0, (byte) 100)) return;
-                    Item_10__raw = value.Clamp((byte) 0, (byte) 100);
-                    ChangedItems.Add(nameof(Item_10_));
-                    OnPropertyChanged(nameof(Item_10_));
-                }
-            }
-
-            protected byte Item_1_Carve_Animation_raw;
-            public const string Item_1_Carve_Animation_displayName = "Item 1 Carve Animation";
-            [SortOrder(Item_1_Carve_Animation_sortIndex)]
-            [DisplayName(Item_1_Carve_Animation_displayName)]
-            public virtual MHW_Template.Items.CarveAnimation Item_1_Carve_Animation {
-                get => (MHW_Template.Items.CarveAnimation) Item_1_Carve_Animation_raw;
-                set {
-                    if ((MHW_Template.Items.CarveAnimation) Item_1_Carve_Animation_raw == value) return;
-                    Item_1_Carve_Animation_raw = (byte) value;
-                    ChangedItems.Add(nameof(Item_1_Carve_Animation));
-                    OnPropertyChanged(nameof(Item_1_Carve_Animation));
-                }
-            }
-
-            protected byte Item_2_Carve_Animation_raw;
-            public const string Item_2_Carve_Animation_displayName = "Item 2 Carve Animation";
-            [SortOrder(Item_2_Carve_Animation_sortIndex)]
-            [DisplayName(Item_2_Carve_Animation_displayName)]
-            public virtual MHW_Template.Items.CarveAnimation Item_2_Carve_Animation {
-                get => (MHW_Template.Items.CarveAnimation) Item_2_Carve_Animation_raw;
-                set {
-                    if ((MHW_Template.Items.CarveAnimation) Item_2_Carve_Animation_raw == value) return;
-                    Item_2_Carve_Animation_raw = (byte) value;
-                    ChangedItems.Add(nameof(Item_2_Carve_Animation));
-                    OnPropertyChanged(nameof(Item_2_Carve_Animation));
-                }
-            }
-
-            protected byte Item_3_Carve_Animation_raw;
-            public const string Item_3_Carve_Animation_displayName = "Item 3 Carve Animation";
-            [SortOrder(Item_3_Carve_Animation_sortIndex)]
-            [DisplayName(Item_3_Carve_Animation_displayName)]
-            public virtual MHW_Template.Items.CarveAnimation Item_3_Carve_Animation {
-                get => (MHW_Template.Items.CarveAnimation) Item_3_Carve_Animation_raw;
-                set {
-                    if ((MHW_Template.Items.CarveAnimation) Item_3_Carve_Animation_raw == value) return;
-                    Item_3_Carve_Animation_raw = (byte) value;
-                    ChangedItems.Add(nameof(Item_3_Carve_Animation));
-                    OnPropertyChanged(nameof(Item_3_Carve_Animation));
-                }
-            }
-
-            protected byte Item_4_Carve_Animation_raw;
-            public const string Item_4_Carve_Animation_displayName = "Item 4 Carve Animation";
-            [SortOrder(Item_4_Carve_Animation_sortIndex)]
-            [DisplayName(Item_4_Carve_Animation_displayName)]
-            public virtual MHW_Template.Items.CarveAnimation Item_4_Carve_Animation {
-                get => (MHW_Template.Items.CarveAnimation) Item_4_Carve_Animation_raw;
-                set {
-                    if ((MHW_Template.Items.CarveAnimation) Item_4_Carve_Animation_raw == value) return;
-                    Item_4_Carve_Animation_raw = (byte) value;
-                    ChangedItems.Add(nameof(Item_4_Carve_Animation));
-                    OnPropertyChanged(nameof(Item_4_Carve_Animation));
-                }
-            }
-
-            protected byte Item_5_Carve_Animation_raw;
-            public const string Item_5_Carve_Animation_displayName = "Item 5 Carve Animation";
-            [SortOrder(Item_5_Carve_Animation_sortIndex)]
-            [DisplayName(Item_5_Carve_Animation_displayName)]
-            public virtual MHW_Template.Items.CarveAnimation Item_5_Carve_Animation {
-                get => (MHW_Template.Items.CarveAnimation) Item_5_Carve_Animation_raw;
-                set {
-                    if ((MHW_Template.Items.CarveAnimation) Item_5_Carve_Animation_raw == value) return;
-                    Item_5_Carve_Animation_raw = (byte) value;
-                    ChangedItems.Add(nameof(Item_5_Carve_Animation));
-                    OnPropertyChanged(nameof(Item_5_Carve_Animation));
-                }
-            }
-
-            protected byte Item_6_Carve_Animation_raw;
-            public const string Item_6_Carve_Animation_displayName = "Item 6 Carve Animation";
-            [SortOrder(Item_6_Carve_Animation_sortIndex)]
-            [DisplayName(Item_6_Carve_Animation_displayName)]
-            public virtual MHW_Template.Items.CarveAnimation Item_6_Carve_Animation {
-                get => (MHW_Template.Items.CarveAnimation) Item_6_Carve_Animation_raw;
-                set {
-                    if ((MHW_Template.Items.CarveAnimation) Item_6_Carve_Animation_raw == value) return;
-                    Item_6_Carve_Animation_raw = (byte) value;
-                    ChangedItems.Add(nameof(Item_6_Carve_Animation));
-                    OnPropertyChanged(nameof(Item_6_Carve_Animation));
-                }
-            }
-
-            protected byte Item_7_Carve_Animation_raw;
-            public const string Item_7_Carve_Animation_displayName = "Item 7 Carve Animation";
-            [SortOrder(Item_7_Carve_Animation_sortIndex)]
-            [DisplayName(Item_7_Carve_Animation_displayName)]
-            public virtual MHW_Template.Items.CarveAnimation Item_7_Carve_Animation {
-                get => (MHW_Template.Items.CarveAnimation) Item_7_Carve_Animation_raw;
-                set {
-                    if ((MHW_Template.Items.CarveAnimation) Item_7_Carve_Animation_raw == value) return;
-                    Item_7_Carve_Animation_raw = (byte) value;
-                    ChangedItems.Add(nameof(Item_7_Carve_Animation));
-                    OnPropertyChanged(nameof(Item_7_Carve_Animation));
-                }
-            }
-
-            protected byte Item_8_Carve_Animation_raw;
-            public const string Item_8_Carve_Animation_displayName = "Item 8 Carve Animation";
-            [SortOrder(Item_8_Carve_Animation_sortIndex)]
-            [DisplayName(Item_8_Carve_Animation_displayName)]
-            public virtual MHW_Template.Items.CarveAnimation Item_8_Carve_Animation {
-                get => (MHW_Template.Items.CarveAnimation) Item_8_Carve_Animation_raw;
-                set {
-                    if ((MHW_Template.Items.CarveAnimation) Item_8_Carve_Animation_raw == value) return;
-                    Item_8_Carve_Animation_raw = (byte) value;
-                    ChangedItems.Add(nameof(Item_8_Carve_Animation));
-                    OnPropertyChanged(nameof(Item_8_Carve_Animation));
-                }
-            }
-
-            protected byte Item_9_Carve_Animation_raw;
-            public const string Item_9_Carve_Animation_displayName = "Item 9 Carve Animation";
-            [SortOrder(Item_9_Carve_Animation_sortIndex)]
-            [DisplayName(Item_9_Carve_Animation_displayName)]
-            public virtual MHW_Template.Items.CarveAnimation Item_9_Carve_Animation {
-                get => (MHW_Template.Items.CarveAnimation) Item_9_Carve_Animation_raw;
-                set {
-                    if ((MHW_Template.Items.CarveAnimation) Item_9_Carve_Animation_raw == value) return;
-                    Item_9_Carve_Animation_raw = (byte) value;
-                    ChangedItems.Add(nameof(Item_9_Carve_Animation));
-                    OnPropertyChanged(nameof(Item_9_Carve_Animation));
-                }
-            }
-
-            protected byte Item_10_Carve_Animation_raw;
-            public const string Item_10_Carve_Animation_displayName = "Item 10 Carve Animation";
-            [SortOrder(Item_10_Carve_Animation_sortIndex)]
-            [DisplayName(Item_10_Carve_Animation_displayName)]
-            public virtual MHW_Template.Items.CarveAnimation Item_10_Carve_Animation {
-                get => (MHW_Template.Items.CarveAnimation) Item_10_Carve_Animation_raw;
-                set {
-                    if ((MHW_Template.Items.CarveAnimation) Item_10_Carve_Animation_raw == value) return;
-                    Item_10_Carve_Animation_raw = (byte) value;
-                    ChangedItems.Add(nameof(Item_10_Carve_Animation));
-                    OnPropertyChanged(nameof(Item_10_Carve_Animation));
-                }
-            }
-
-            public const int lastSortIndex = 2050;
 
             public static ObservableMhwStructCollection<Entries> LoadData(BinaryReader reader, ObservableMhwStructCollection<Header> lastStruct) {
                 var list = new ObservableMhwStructCollection<Entries>();
@@ -745,90 +337,26 @@ namespace MHW_Editor.Structs.Items {
             public static Entries LoadData(BinaryReader reader, ulong i) {
                 var data = new Entries();
                 data.Index = i;
-                data.Item_1_Id_raw = reader.ReadUInt16();
-                data.Item_2_Id_raw = reader.ReadUInt16();
-                data.Item_3_Id_raw = reader.ReadUInt16();
-                data.Item_4_Id_raw = reader.ReadUInt16();
-                data.Item_5_Id_raw = reader.ReadUInt16();
-                data.Item_6_Id_raw = reader.ReadUInt16();
-                data.Item_7_Id_raw = reader.ReadUInt16();
-                data.Item_8_Id_raw = reader.ReadUInt16();
-                data.Item_9_Id_raw = reader.ReadUInt16();
-                data.Item_10_Id_raw = reader.ReadUInt16();
-                data.Item_1_Count_raw = reader.ReadByte();
-                data.Item_2_Count_raw = reader.ReadByte();
-                data.Item_3_Count_raw = reader.ReadByte();
-                data.Item_4_Count_raw = reader.ReadByte();
-                data.Item_5_Count_raw = reader.ReadByte();
-                data.Item_6_Count_raw = reader.ReadByte();
-                data.Item_7_Count_raw = reader.ReadByte();
-                data.Item_8_Count_raw = reader.ReadByte();
-                data.Item_9_Count_raw = reader.ReadByte();
-                data.Item_10_Count_raw = reader.ReadByte();
-                data.Item_1__raw = reader.ReadByte();
-                data.Item_2__raw = reader.ReadByte();
-                data.Item_3__raw = reader.ReadByte();
-                data.Item_4__raw = reader.ReadByte();
-                data.Item_5__raw = reader.ReadByte();
-                data.Item_6__raw = reader.ReadByte();
-                data.Item_7__raw = reader.ReadByte();
-                data.Item_8__raw = reader.ReadByte();
-                data.Item_9__raw = reader.ReadByte();
-                data.Item_10__raw = reader.ReadByte();
-                data.Item_1_Carve_Animation_raw = reader.ReadByte();
-                data.Item_2_Carve_Animation_raw = reader.ReadByte();
-                data.Item_3_Carve_Animation_raw = reader.ReadByte();
-                data.Item_4_Carve_Animation_raw = reader.ReadByte();
-                data.Item_5_Carve_Animation_raw = reader.ReadByte();
-                data.Item_6_Carve_Animation_raw = reader.ReadByte();
-                data.Item_7_Carve_Animation_raw = reader.ReadByte();
-                data.Item_8_Carve_Animation_raw = reader.ReadByte();
-                data.Item_9_Carve_Animation_raw = reader.ReadByte();
-                data.Item_10_Carve_Animation_raw = reader.ReadByte();
+                data.Items_raw = Items.LoadData(reader, data);
+                data.Counts_raw = Counts.LoadData(reader, data);
+                data.Percents_raw = Percents.LoadData(reader, data);
+                data.Carve_Animations_raw = Carve_Animations.LoadData(reader, data);
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Item_1_Id_raw);
-                writer.Write(Item_2_Id_raw);
-                writer.Write(Item_3_Id_raw);
-                writer.Write(Item_4_Id_raw);
-                writer.Write(Item_5_Id_raw);
-                writer.Write(Item_6_Id_raw);
-                writer.Write(Item_7_Id_raw);
-                writer.Write(Item_8_Id_raw);
-                writer.Write(Item_9_Id_raw);
-                writer.Write(Item_10_Id_raw);
-                writer.Write(Item_1_Count_raw);
-                writer.Write(Item_2_Count_raw);
-                writer.Write(Item_3_Count_raw);
-                writer.Write(Item_4_Count_raw);
-                writer.Write(Item_5_Count_raw);
-                writer.Write(Item_6_Count_raw);
-                writer.Write(Item_7_Count_raw);
-                writer.Write(Item_8_Count_raw);
-                writer.Write(Item_9_Count_raw);
-                writer.Write(Item_10_Count_raw);
-                writer.Write(Item_1__raw);
-                writer.Write(Item_2__raw);
-                writer.Write(Item_3__raw);
-                writer.Write(Item_4__raw);
-                writer.Write(Item_5__raw);
-                writer.Write(Item_6__raw);
-                writer.Write(Item_7__raw);
-                writer.Write(Item_8__raw);
-                writer.Write(Item_9__raw);
-                writer.Write(Item_10__raw);
-                writer.Write(Item_1_Carve_Animation_raw);
-                writer.Write(Item_2_Carve_Animation_raw);
-                writer.Write(Item_3_Carve_Animation_raw);
-                writer.Write(Item_4_Carve_Animation_raw);
-                writer.Write(Item_5_Carve_Animation_raw);
-                writer.Write(Item_6_Carve_Animation_raw);
-                writer.Write(Item_7_Carve_Animation_raw);
-                writer.Write(Item_8_Carve_Animation_raw);
-                writer.Write(Item_9_Carve_Animation_raw);
-                writer.Write(Item_10_Carve_Animation_raw);
+                foreach (var obj in Items_raw) {
+                    obj.WriteData(writer, this);
+                }
+                foreach (var obj in Counts_raw) {
+                    obj.WriteData(writer, this);
+                }
+                foreach (var obj in Percents_raw) {
+                    obj.WriteData(writer, this);
+                }
+                foreach (var obj in Carve_Animations_raw) {
+                    obj.WriteData(writer, this);
+                }
             }
         }
 

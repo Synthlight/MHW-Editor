@@ -24,6 +24,7 @@ namespace MHW_Editor {
             "Gem",
             "GunnerReload",
             "GunnerShoot",
+            "InnerItem",
             "Item_Box",
             "ItemDelivery",
             "ItemList",
@@ -108,15 +109,7 @@ namespace MHW_Editor {
             "Hidden_Skill_button",
             "Id_button",
             "Item_1_Id_button",
-            "Item_10_Id_button",
             "Item_2_Id_button",
-            "Item_3_Id_button",
-            "Item_4_Id_button",
-            "Item_5_Id_button",
-            "Item_6_Id_button",
-            "Item_7_Id_button",
-            "Item_8_Id_button",
-            "Item_9_Id_button",
             "Item_button",
             "Item_Id_1_button",
             "Item_Id_2_button",
@@ -413,17 +406,8 @@ namespace MHW_Editor {
             {typeof(MHW_Editor.Structs.Items.ItemList.Entries), new List<string> {
                 "Item_Id",
             }},
-            {typeof(MHW_Editor.Structs.Items.ItemLottery.Entries), new List<string> {
-                "Item_1_Id",
-                "Item_2_Id",
-                "Item_3_Id",
-                "Item_4_Id",
-                "Item_5_Id",
-                "Item_6_Id",
-                "Item_7_Id",
-                "Item_8_Id",
-                "Item_9_Id",
-                "Item_10_Id",
+            {typeof(MHW_Editor.Structs.Items.ItemLottery.InnerItem), new List<string> {
+                "itemId",
             }},
             {typeof(MHW_Editor.Structs.Items.ItemMake.Entries), new List<string> {
                 "Mat_1_Id",
@@ -530,6 +514,9 @@ namespace MHW_Editor {
             }},
             {typeof(MHW_Editor.Structs.Weapons.ArenaEquipment.Entries.Ammo), new List<string> {
                 "Ammo_Id",
+            }},
+            {typeof(MHW_Editor.Structs.Items.ItemLottery.Entries.Items), new List<string> {
+                "Item_Id",
             }},
             {typeof(MHW_Editor.Structs.Items.MelderExchange.Item_Box.Items), new List<string> {
                 "Item_Id",

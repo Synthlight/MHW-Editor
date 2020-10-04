@@ -16,7 +16,7 @@ namespace MHW_Generator.Items {
                     new MhwMultiStructData.Entry("Item Count", typeof(byte))
                 }, 10)),
                 new MhwMultiStructData.Entry("Percents".Out(out var percentsName), typeof(void), subStruct: new MhwMultiStructData.StructData(percentsName, new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Item %", typeof(byte), valueString: "value.Clamp((byte) 0, (byte) 100)")
+                    new MhwMultiStructData.Entry("Item Weight", typeof(byte))
                 }, 10)),
                 new MhwMultiStructData.Entry("Carve Animations".Out(out var carveName), typeof(void), subStruct: new MhwMultiStructData.StructData(carveName, new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Item Carve Animation", typeof(byte), enumReturn: typeof(CarveAnimation))
@@ -31,7 +31,7 @@ namespace MHW_Generator.Items {
                 flatLongView.Add(new MhwMultiStructData.Entry($"Item {i + 1} Count", typeof(byte), overrideSortIndex: true));
             }
             for (var i = 0; i < 10; i++) {
-                flatLongView.Add(new MhwMultiStructData.Entry($"Item {i + 1} %", typeof(byte), valueString: "value.Clamp((byte) 0, (byte) 100)", overrideSortIndex: true));
+                flatLongView.Add(new MhwMultiStructData.Entry($"Item {i + 1}", typeof(byte), overrideSortIndex: true));
             }
             for (var i = 0; i < 10; i++) {
                 flatLongView.Add(new MhwMultiStructData.Entry($"Item {i + 1} Carve Animation", typeof(byte), enumReturn: typeof(CarveAnimation), overrideSortIndex: true));
@@ -40,7 +40,7 @@ namespace MHW_Generator.Items {
             var structs = new List<MhwMultiStructData.StructData> {
                 CreateSingleStructBase(out var header, out var itemCount),
 
-                new MhwMultiStructData.StructData("Entries", flatLongView, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
+                new MhwMultiStructData.StructData("Entries", subArrayView, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 
             return new MultiStruct("Items", "ItemLottery", new MhwMultiStructData(structs, "itlot", EncryptionKeys.FILE_EXT_KEY_LOOKUP[".itlot"]));
