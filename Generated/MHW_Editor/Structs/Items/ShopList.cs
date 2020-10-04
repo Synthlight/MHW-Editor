@@ -158,18 +158,18 @@ namespace MHW_Editor.Structs.Items {
                 }
             }
 
-            protected ushort Unk_raw;
-            public const string Unk_displayName = "Unk";
-            public const int Unk_sortIndex = 200;
-            [SortOrder(Unk_sortIndex)]
-            [DisplayName(Unk_displayName)]
-            public virtual ushort Unk {
-                get => Unk_raw;
+            protected ushort Sort_Order_raw;
+            public const string Sort_Order_displayName = "Sort Order";
+            public const int Sort_Order_sortIndex = 200;
+            [SortOrder(Sort_Order_sortIndex)]
+            [DisplayName(Sort_Order_displayName)]
+            public virtual ushort Sort_Order {
+                get => Sort_Order_raw;
                 set {
-                    if (Unk_raw == value) return;
-                    Unk_raw = value;
-                    ChangedItems.Add(nameof(Unk));
-                    OnPropertyChanged(nameof(Unk));
+                    if (Sort_Order_raw == value) return;
+                    Sort_Order_raw = value;
+                    ChangedItems.Add(nameof(Sort_Order));
+                    OnPropertyChanged(nameof(Sort_Order));
                 }
             }
 
@@ -191,7 +191,7 @@ namespace MHW_Editor.Structs.Items {
                 data.Index_raw = reader.ReadUInt32();
                 data.Item_Id_raw = reader.ReadUInt32();
                 data.Story_Unlock_raw = reader.ReadUInt32();
-                data.Unk_raw = reader.ReadUInt16();
+                data.Sort_Order_raw = reader.ReadUInt16();
                 return data;
             }
 
@@ -199,7 +199,7 @@ namespace MHW_Editor.Structs.Items {
                 writer.Write(Index_raw);
                 writer.Write(Item_Id_raw);
                 writer.Write(Story_Unlock_raw);
-                writer.Write(Unk_raw);
+                writer.Write(Sort_Order_raw);
             }
         }
 

@@ -17,7 +17,7 @@ namespace MHW_Generator.Items {
                     new MhwMultiStructData.Entry("Index", typeof(uint)),
                     new MhwMultiStructData.Entry("Item Id", typeof(uint), dataSourceType: DataSourceType.Items),
                     new MhwMultiStructData.Entry("Story Unlock", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk", typeof(ushort))
+                    new MhwMultiStructData.Entry("Sort Order", typeof(ushort))
                 }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };
 

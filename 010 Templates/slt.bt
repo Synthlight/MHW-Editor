@@ -19,7 +19,7 @@ typedef struct {
     uint Index<name="Index (uint)">;
     uint Item_Id<name="Item Id (uint)">;
     uint Story_Unlock<name="Story Unlock (uint)">;
-    ushort Unk<name="Unk (ushort)">;
+    ushort Sort_Order<name="Sort Order (ushort)">;
 } Entries;
 
 Entries Entries_[Shop_List_.Item_Count]<optimize=false, name="Entries">;
