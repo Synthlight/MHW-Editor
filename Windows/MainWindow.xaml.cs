@@ -271,6 +271,9 @@ namespace MHW_Editor.Windows {
                 case Ranged ranged:
                     ranged.Init(targetFile);
                     break;
+                case ItemLottery itemLottery:
+                    itemLottery.Init(targetFile);
+                    break;
                 case SkillDat skillDat:
                     FillSkillDatDictionary(skillDat.GetSingleStructList());
                     break;
