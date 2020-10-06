@@ -701,6 +701,7 @@ namespace MHW_Editor.Windows {
             if (fileName.EndsWith(".dtt_dif")) return typeof(MonsterDifficulty);
             if (fileName.EndsWith(".dtt_eda")) return typeof(MonsterDamageAttributes);
             if (fileName.EndsWith(".dtt_epg")) return typeof(MonsterParts);
+            if (fileName.EndsWith(".dtt_msf")) return typeof(MonsterSoften);
             if (fileName.EndsWith(".dtt_rsz")) return typeof(MonsterRandomSize);
             if (fileName.EndsWith(".dtt_sta")) return typeof(MonsterStamina);
             if (fileName.EndsWith(".ecp")) return typeof(MonsterCommonParam);

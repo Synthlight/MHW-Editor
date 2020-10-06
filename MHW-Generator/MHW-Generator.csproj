@@ -93,6 +93,7 @@
     <Compile Include="Monsters\MonsterEnrage.cs" />
     <Compile Include="Monsters\MonsterRandomSize.cs" />
     <Compile Include="Monsters\MonsterStamina.cs" />
+    <Compile Include="Monsters\MonsterSoften.cs" />
     <Compile Include="Monsters\SmallMonsterSizeParams.cs" />
     <Compile Include="PlData\PlItemParam.cs" />
     <Compile Include="PlData\PlMantleParam.cs" />

@@ -140,6 +140,7 @@
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\MonsterEnrage.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\MonsterParts.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\MonsterRandomSize.cs" />
+    <Compile Include="Generated\MHW_Editor\Structs\Monsters\MonsterSoften.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\MonsterStamina.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Monsters\SmallMonsterSizeParams.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\PlData\PlItemParam.cs" />
@@ -223,6 +224,7 @@
     </Compile>
     <Compile Include="Structs\Items\RoomAnimal.cs" />
     <Compile Include="Structs\Monsters\MonsterCommonParam.cs" />
+    <Compile Include="Structs\Monsters\MonsterSoften.cs" />
     <Compile Include="Util\EncryptionHelper.cs" />
     <Compile Include="Windows\FindFileInChunk.xaml.cs">
       <DependentUpon>FindFileInChunk.xaml</DependentUpon>
