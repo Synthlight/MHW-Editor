@@ -28,7 +28,8 @@
     </DataGrid.Resources>
     <DataGrid.ColumnHeaderStyle>
         <Style TargetType="DataGridColumnHeader">
-            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment"
+                    Value="Stretch"/>
         </Style>
     </DataGrid.ColumnHeaderStyle>
 </DataGrid>

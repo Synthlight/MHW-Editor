@@ -6210,12 +6210,13 @@ namespace MHW_Editor.Structs.Weapons {
             public const ulong FixedSizeCount = 7;
             public const string GridName = "Unk Arr 6";
 
-            protected uint Function_Pointer_raw;
+            protected ulong Function_Pointer_raw;
             public const string Function_Pointer_displayName = "Function Pointer";
             public const int Function_Pointer_sortIndex = 50;
             [SortOrder(Function_Pointer_sortIndex)]
             [DisplayName(Function_Pointer_displayName)]
-            public virtual uint Function_Pointer {
+            [ShowAsHex]
+            public virtual ulong Function_Pointer {
                 get => Function_Pointer_raw;
                 set {
                     if (Function_Pointer_raw == value) return;
@@ -6225,24 +6226,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected uint Unk_2_raw;
-            public const string Unk_2_displayName = "Unk 2";
-            public const int Unk_2_sortIndex = 100;
-            [SortOrder(Unk_2_sortIndex)]
-            [DisplayName(Unk_2_displayName)]
-            public virtual uint Unk_2 {
-                get => Unk_2_raw;
-                set {
-                    if (Unk_2_raw == value) return;
-                    Unk_2_raw = value;
-                    ChangedItems.Add(nameof(Unk_2));
-                    OnPropertyChanged(nameof(Unk_2));
-                }
-            }
-
             protected float Unk_3_raw;
             public const string Unk_3_displayName = "Unk 3";
-            public const int Unk_3_sortIndex = 150;
+            public const int Unk_3_sortIndex = 100;
             [SortOrder(Unk_3_sortIndex)]
             [DisplayName(Unk_3_displayName)]
             public virtual float Unk_3 {
@@ -6257,7 +6243,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             protected float Unk_4_raw;
             public const string Unk_4_displayName = "Unk 4";
-            public const int Unk_4_sortIndex = 200;
+            public const int Unk_4_sortIndex = 150;
             [SortOrder(Unk_4_sortIndex)]
             [DisplayName(Unk_4_displayName)]
             public virtual float Unk_4 {
@@ -6270,7 +6256,7 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            public const int lastSortIndex = 250;
+            public const int lastSortIndex = 200;
 
             public static ObservableMhwStructCollection<Unk_Arr_6> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Unk_Arr_6>();
@@ -6284,8 +6270,7 @@ namespace MHW_Editor.Structs.Weapons {
             public static Unk_Arr_6 LoadData(BinaryReader reader, ulong i) {
                 var data = new Unk_Arr_6();
                 data.Index = i;
-                data.Function_Pointer_raw = reader.ReadUInt32();
-                data.Unk_2_raw = reader.ReadUInt32();
+                data.Function_Pointer_raw = reader.ReadUInt64();
                 data.Unk_3_raw = reader.ReadSingle();
                 data.Unk_4_raw = reader.ReadSingle();
                 return data;
@@ -6293,7 +6278,6 @@ namespace MHW_Editor.Structs.Weapons {
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Function_Pointer_raw);
-                writer.Write(Unk_2_raw);
                 writer.Write(Unk_3_raw);
                 writer.Write(Unk_4_raw);
             }

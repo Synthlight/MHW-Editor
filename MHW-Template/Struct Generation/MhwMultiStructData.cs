@@ -69,6 +69,7 @@ namespace MHW_Template.Struct_Generation {
             public readonly string          condition; // Condition to read/write.
             public readonly StructData      subStruct;
             public readonly bool            overrideSortIndex;
+            public readonly bool            showAsHex;
 
             public Entry(string          name, Type type, bool readOnly = false,
                          Type            enumReturn             = null,
@@ -82,7 +83,8 @@ namespace MHW_Template.Struct_Generation {
                          bool            isNullTerminatedString = false,
                          string          condition              = null,
                          StructData      subStruct              = null,
-                         bool            overrideSortIndex      = false) {
+                         bool            overrideSortIndex      = false,
+                         bool            showAsHex              = false) {
                 this.name                   = name;
                 this.type                   = type;
                 this.readOnly               = readOnly;
@@ -98,6 +100,7 @@ namespace MHW_Template.Struct_Generation {
                 this.condition              = condition;
                 this.subStruct              = subStruct;
                 this.overrideSortIndex      = overrideSortIndex;
+                this.showAsHex              = showAsHex;
             }
 
             public string SafeName     => Regex.Replace(name.Replace("+", "Plus"), @"[^\w\d]+", "_");

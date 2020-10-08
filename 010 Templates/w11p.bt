@@ -349,8 +349,7 @@ uint Number_of_Arrows_Shot<name="Number of Arrows Shot (uint)">;
 
 // Unk Arr 6
 typedef struct {
-    uint Function_Pointer<name="Function Pointer (uint)">;
-    uint Unk_2<name="Unk 2 (uint)">;
+    ulong Function_Pointer<name="Function Pointer (ulong)">;
     float Unk_3<name="Unk 3 (float)">;
     float Unk_4<name="Unk 4 (float)">;
 } Unk_Arr_6;

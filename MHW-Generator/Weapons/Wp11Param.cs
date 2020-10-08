@@ -181,8 +181,7 @@ namespace MHW_Generator.Weapons {
                 }, 1, showVertically: true),
 
                 new MhwMultiStructData.StructData($"Unk Arr {++arrayIndex}", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Function Pointer", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk 2", typeof(uint)),
+                    new MhwMultiStructData.Entry("Function Pointer", typeof(ulong), showAsHex: true),
                     new MhwMultiStructData.Entry("Unk 3", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 4", typeof(float))
                 }, 7),

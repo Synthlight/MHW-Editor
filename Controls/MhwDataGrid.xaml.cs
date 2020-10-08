@@ -223,6 +223,7 @@ namespace MHW_Editor.Controls {
             var           customSorterType = ((CustomSorterAttribute) propertyInfo?.GetCustomAttribute(typeof(CustomSorterAttribute), true))?.customSorterType;
             var           isReadOnly       = (IsReadOnlyAttribute) propertyInfo?.GetCustomAttribute(typeof(IsReadOnlyAttribute), true) != null;
             var           isList           = (IsListAttribute) propertyInfo?.GetCustomAttribute(typeof(IsListAttribute), true) != null;
+            var           showAsHex        = (ShowAsHexAttribute) propertyInfo?.GetCustomAttribute(typeof(ShowAsHexAttribute), true) != null;
             ICustomSorter customSorter     = null;
 
             if (displayName != null) {
@@ -259,6 +260,10 @@ namespace MHW_Editor.Controls {
 
             if (isReadOnly) {
                 e.Column.IsReadOnly = !mainWindow.unlockFields;
+            }
+
+            if (showAsHex) {
+                (e.Column as DataGridTextColumn).Binding.StringFormat = "0x{0:X}";
             }
 
             e.Column.HeaderTemplate = CreateHeader(e.Column.Header, e.PropertyName);

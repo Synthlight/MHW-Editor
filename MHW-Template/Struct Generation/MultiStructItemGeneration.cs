@@ -144,6 +144,10 @@ namespace MHW_Template.Struct_Generation {
                 template.WriteLine(indentation, "            [IsReadOnly]");
             }
 
+            if (entry.showAsHex) {
+                template.WriteLine(indentation, "            [ShowAsHex]");
+            }
+
             template.WriteLine(indentation, $"            {accessLevel} {returnString} {propName} {{");
 
             if (returnString == "bool") {
