@@ -145,8 +145,8 @@ float Unk_90<name="Unk 90 (float)">;
 uint Unk_91<name="Unk 91 (uint)">;
 float Unk_92<name="Unk 92 (float)">;
 float Unk_93<name="Unk 93 (float)">;
-float Unk_94<name="Unk 94 (float)">;
-float Unk_95<name="Unk 95 (float)">;
+float Charge_Time_lvl_2<name="Charge Time lvl 2 (float)">;
+float Charge_Time_lvl_3<name="Charge Time lvl 3 (float)">;
 float Unk_96<name="Unk 96 (float)">;
 float Unk_97<name="Unk 97 (float)">;
 
@@ -205,8 +205,8 @@ typedef struct {
 
 Action_Param_3 Action_Param_3_<name="Action Param 3">;
 
-float Unk_107<name="Unk 107 (float)">;
-float Unk_108<name="Unk 108 (float)">;
+float Power_Charge_Damage_Multiplier<name="Power Charge: Damage Multiplier (float)">;
+float Power_Charge_Stun_Buildup_Multiplier<name="Power Charge: Stun Buildup Multiplier (float)">;
 float Unk_109<name="Unk 109 (float)">;
 float Unk_110<name="Unk 110 (float)">;
 float Unk_111<name="Unk 111 (float)">;

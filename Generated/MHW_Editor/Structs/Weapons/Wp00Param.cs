@@ -2623,9 +2623,9 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class Unk_Arr_3 : MhwStructItem, IWriteData {
+        public partial class Charge_Times : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 5;
-            public const string GridName = "Unk Arr 3";
+            public const string GridName = "Charge Times";
 
             protected float Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
@@ -2642,55 +2642,55 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected float Unk_2_raw;
-            public const string Unk_2_displayName = "Unk 2";
-            public const int Unk_2_sortIndex = 100;
-            [SortOrder(Unk_2_sortIndex)]
-            [DisplayName(Unk_2_displayName)]
-            public virtual float Unk_2 {
-                get => Unk_2_raw;
+            protected float Charge_lvl_1_raw;
+            public const string Charge_lvl_1_displayName = "Charge lvl 1";
+            public const int Charge_lvl_1_sortIndex = 100;
+            [SortOrder(Charge_lvl_1_sortIndex)]
+            [DisplayName(Charge_lvl_1_displayName)]
+            public virtual float Charge_lvl_1 {
+                get => Charge_lvl_1_raw;
                 set {
-                    if (Unk_2_raw == value) return;
-                    Unk_2_raw = value;
-                    ChangedItems.Add(nameof(Unk_2));
-                    OnPropertyChanged(nameof(Unk_2));
+                    if (Charge_lvl_1_raw == value) return;
+                    Charge_lvl_1_raw = value;
+                    ChangedItems.Add(nameof(Charge_lvl_1));
+                    OnPropertyChanged(nameof(Charge_lvl_1));
                 }
             }
 
-            protected float Unk_3_raw;
-            public const string Unk_3_displayName = "Unk 3";
-            public const int Unk_3_sortIndex = 150;
-            [SortOrder(Unk_3_sortIndex)]
-            [DisplayName(Unk_3_displayName)]
-            public virtual float Unk_3 {
-                get => Unk_3_raw;
+            protected float Charge_lvl_2_raw;
+            public const string Charge_lvl_2_displayName = "Charge lvl 2";
+            public const int Charge_lvl_2_sortIndex = 150;
+            [SortOrder(Charge_lvl_2_sortIndex)]
+            [DisplayName(Charge_lvl_2_displayName)]
+            public virtual float Charge_lvl_2 {
+                get => Charge_lvl_2_raw;
                 set {
-                    if (Unk_3_raw == value) return;
-                    Unk_3_raw = value;
-                    ChangedItems.Add(nameof(Unk_3));
-                    OnPropertyChanged(nameof(Unk_3));
+                    if (Charge_lvl_2_raw == value) return;
+                    Charge_lvl_2_raw = value;
+                    ChangedItems.Add(nameof(Charge_lvl_2));
+                    OnPropertyChanged(nameof(Charge_lvl_2));
                 }
             }
 
-            protected float Unk_4_raw;
-            public const string Unk_4_displayName = "Unk 4";
-            public const int Unk_4_sortIndex = 200;
-            [SortOrder(Unk_4_sortIndex)]
-            [DisplayName(Unk_4_displayName)]
-            public virtual float Unk_4 {
-                get => Unk_4_raw;
+            protected float Charge_lvl_3_raw;
+            public const string Charge_lvl_3_displayName = "Charge lvl 3";
+            public const int Charge_lvl_3_sortIndex = 200;
+            [SortOrder(Charge_lvl_3_sortIndex)]
+            [DisplayName(Charge_lvl_3_displayName)]
+            public virtual float Charge_lvl_3 {
+                get => Charge_lvl_3_raw;
                 set {
-                    if (Unk_4_raw == value) return;
-                    Unk_4_raw = value;
-                    ChangedItems.Add(nameof(Unk_4));
-                    OnPropertyChanged(nameof(Unk_4));
+                    if (Charge_lvl_3_raw == value) return;
+                    Charge_lvl_3_raw = value;
+                    ChangedItems.Add(nameof(Charge_lvl_3));
+                    OnPropertyChanged(nameof(Charge_lvl_3));
                 }
             }
 
             public const int lastSortIndex = 250;
 
-            public static ObservableMhwStructCollection<Unk_Arr_3> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Unk_Arr_3>();
+            public static ObservableMhwStructCollection<Charge_Times> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Charge_Times>();
                 var count = 5UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -2698,21 +2698,21 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static Unk_Arr_3 LoadData(BinaryReader reader, ulong i) {
-                var data = new Unk_Arr_3();
+            public static Charge_Times LoadData(BinaryReader reader, ulong i) {
+                var data = new Charge_Times();
                 data.Index = i;
                 data.Unk_1_raw = reader.ReadSingle();
-                data.Unk_2_raw = reader.ReadSingle();
-                data.Unk_3_raw = reader.ReadSingle();
-                data.Unk_4_raw = reader.ReadSingle();
+                data.Charge_lvl_1_raw = reader.ReadSingle();
+                data.Charge_lvl_2_raw = reader.ReadSingle();
+                data.Charge_lvl_3_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Unk_1_raw);
-                writer.Write(Unk_2_raw);
-                writer.Write(Unk_3_raw);
-                writer.Write(Unk_4_raw);
+                writer.Write(Charge_lvl_1_raw);
+                writer.Write(Charge_lvl_2_raw);
+                writer.Write(Charge_lvl_3_raw);
             }
         }
 
@@ -4494,8 +4494,8 @@ namespace MHW_Editor.Structs.Weapons {
             data.AddLast(Unk_Arr_2_Shared__);
             var W00p_Params_4_Shared__ = new MhwStructDataContainer<W00p_Params_4_Shared_>(W00p_Params_4_Shared_.LoadData(reader), typeof(W00p_Params_4_Shared_));
             data.AddLast(W00p_Params_4_Shared__);
-            var Unk_Arr_3_ = new MhwStructDataContainer<Unk_Arr_3>(Unk_Arr_3.LoadData(reader), typeof(Unk_Arr_3));
-            data.AddLast(Unk_Arr_3_);
+            var Charge_Times_ = new MhwStructDataContainer<Charge_Times>(Charge_Times.LoadData(reader), typeof(Charge_Times));
+            data.AddLast(Charge_Times_);
             var W00p_Params_5__ = new MhwStructDataContainer<W00p_Params_5_>(W00p_Params_5_.LoadData(reader), typeof(W00p_Params_5_));
             data.AddLast(W00p_Params_5__);
             var Event_Pad_Vib_ = new MhwStructDataContainer<Event_Pad_Vib>(Event_Pad_Vib.LoadData(reader), typeof(Event_Pad_Vib));

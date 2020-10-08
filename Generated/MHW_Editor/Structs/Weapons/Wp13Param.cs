@@ -2771,149 +2771,149 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_98_offset { get; private set; }
 
-            protected float Unk_99_raw;
-            public const string Unk_99_displayName = "Unk 99";
-            public const int Unk_99_sortIndex = 450;
-            [SortOrder(Unk_99_sortIndex)]
-            [DisplayName(Unk_99_displayName)]
-            public virtual float Unk_99 {
-                get => Unk_99_raw;
+            protected float Delay_Between_Shots_Rapid_Fire_Plus1_raw;
+            public const string Delay_Between_Shots_Rapid_Fire_Plus1_displayName = "Delay Between Shots: Rapid Fire +1";
+            public const int Delay_Between_Shots_Rapid_Fire_Plus1_sortIndex = 450;
+            [SortOrder(Delay_Between_Shots_Rapid_Fire_Plus1_sortIndex)]
+            [DisplayName(Delay_Between_Shots_Rapid_Fire_Plus1_displayName)]
+            public virtual float Delay_Between_Shots_Rapid_Fire_Plus1 {
+                get => Delay_Between_Shots_Rapid_Fire_Plus1_raw;
                 set {
-                    if (Unk_99_raw == value) return;
-                    Unk_99_raw = value;
-                    ChangedItems.Add(nameof(Unk_99));
-                    OnPropertyChanged(nameof(Unk_99));
+                    if (Delay_Between_Shots_Rapid_Fire_Plus1_raw == value) return;
+                    Delay_Between_Shots_Rapid_Fire_Plus1_raw = value;
+                    ChangedItems.Add(nameof(Delay_Between_Shots_Rapid_Fire_Plus1));
+                    OnPropertyChanged(nameof(Delay_Between_Shots_Rapid_Fire_Plus1));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_99_offset { get; private set; }
+            public long Delay_Between_Shots_Rapid_Fire_Plus1_offset { get; private set; }
 
-            protected uint Unk_100_raw;
-            public const string Unk_100_displayName = "Unk 100";
-            public const int Unk_100_sortIndex = 500;
-            [SortOrder(Unk_100_sortIndex)]
-            [DisplayName(Unk_100_displayName)]
-            public virtual uint Unk_100 {
-                get => Unk_100_raw;
+            protected uint Extra_Bullets_Rapid_Fire_Plus1_raw;
+            public const string Extra_Bullets_Rapid_Fire_Plus1_displayName = "Extra Bullets: Rapid Fire +1";
+            public const int Extra_Bullets_Rapid_Fire_Plus1_sortIndex = 500;
+            [SortOrder(Extra_Bullets_Rapid_Fire_Plus1_sortIndex)]
+            [DisplayName(Extra_Bullets_Rapid_Fire_Plus1_displayName)]
+            public virtual uint Extra_Bullets_Rapid_Fire_Plus1 {
+                get => Extra_Bullets_Rapid_Fire_Plus1_raw;
                 set {
-                    if (Unk_100_raw == value) return;
-                    Unk_100_raw = value;
-                    ChangedItems.Add(nameof(Unk_100));
-                    OnPropertyChanged(nameof(Unk_100));
+                    if (Extra_Bullets_Rapid_Fire_Plus1_raw == value) return;
+                    Extra_Bullets_Rapid_Fire_Plus1_raw = value;
+                    ChangedItems.Add(nameof(Extra_Bullets_Rapid_Fire_Plus1));
+                    OnPropertyChanged(nameof(Extra_Bullets_Rapid_Fire_Plus1));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_100_offset { get; private set; }
+            public long Extra_Bullets_Rapid_Fire_Plus1_offset { get; private set; }
 
-            protected float Unk_101_raw;
-            public const string Unk_101_displayName = "Unk 101";
-            public const int Unk_101_sortIndex = 550;
-            [SortOrder(Unk_101_sortIndex)]
-            [DisplayName(Unk_101_displayName)]
-            public virtual float Unk_101 {
-                get => Unk_101_raw;
+            protected float Delay_Between_Shots_Rapid_Fire_Plus2_raw;
+            public const string Delay_Between_Shots_Rapid_Fire_Plus2_displayName = "Delay Between Shots: Rapid Fire +2";
+            public const int Delay_Between_Shots_Rapid_Fire_Plus2_sortIndex = 550;
+            [SortOrder(Delay_Between_Shots_Rapid_Fire_Plus2_sortIndex)]
+            [DisplayName(Delay_Between_Shots_Rapid_Fire_Plus2_displayName)]
+            public virtual float Delay_Between_Shots_Rapid_Fire_Plus2 {
+                get => Delay_Between_Shots_Rapid_Fire_Plus2_raw;
                 set {
-                    if (Unk_101_raw == value) return;
-                    Unk_101_raw = value;
-                    ChangedItems.Add(nameof(Unk_101));
-                    OnPropertyChanged(nameof(Unk_101));
+                    if (Delay_Between_Shots_Rapid_Fire_Plus2_raw == value) return;
+                    Delay_Between_Shots_Rapid_Fire_Plus2_raw = value;
+                    ChangedItems.Add(nameof(Delay_Between_Shots_Rapid_Fire_Plus2));
+                    OnPropertyChanged(nameof(Delay_Between_Shots_Rapid_Fire_Plus2));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_101_offset { get; private set; }
+            public long Delay_Between_Shots_Rapid_Fire_Plus2_offset { get; private set; }
 
-            protected uint Unk_102_raw;
-            public const string Unk_102_displayName = "Unk 102";
-            public const int Unk_102_sortIndex = 600;
-            [SortOrder(Unk_102_sortIndex)]
-            [DisplayName(Unk_102_displayName)]
-            public virtual uint Unk_102 {
-                get => Unk_102_raw;
+            protected uint Extra_Bullets_Rapid_Fire_Plus2_raw;
+            public const string Extra_Bullets_Rapid_Fire_Plus2_displayName = "Extra Bullets: Rapid Fire +2";
+            public const int Extra_Bullets_Rapid_Fire_Plus2_sortIndex = 600;
+            [SortOrder(Extra_Bullets_Rapid_Fire_Plus2_sortIndex)]
+            [DisplayName(Extra_Bullets_Rapid_Fire_Plus2_displayName)]
+            public virtual uint Extra_Bullets_Rapid_Fire_Plus2 {
+                get => Extra_Bullets_Rapid_Fire_Plus2_raw;
                 set {
-                    if (Unk_102_raw == value) return;
-                    Unk_102_raw = value;
-                    ChangedItems.Add(nameof(Unk_102));
-                    OnPropertyChanged(nameof(Unk_102));
+                    if (Extra_Bullets_Rapid_Fire_Plus2_raw == value) return;
+                    Extra_Bullets_Rapid_Fire_Plus2_raw = value;
+                    ChangedItems.Add(nameof(Extra_Bullets_Rapid_Fire_Plus2));
+                    OnPropertyChanged(nameof(Extra_Bullets_Rapid_Fire_Plus2));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_102_offset { get; private set; }
+            public long Extra_Bullets_Rapid_Fire_Plus2_offset { get; private set; }
 
-            protected float Unk_103_raw;
-            public const string Unk_103_displayName = "Unk 103";
-            public const int Unk_103_sortIndex = 650;
-            [SortOrder(Unk_103_sortIndex)]
-            [DisplayName(Unk_103_displayName)]
-            public virtual float Unk_103 {
-                get => Unk_103_raw;
+            protected float Delay_Between_Shots_Rapid_Fire_Plus3_raw;
+            public const string Delay_Between_Shots_Rapid_Fire_Plus3_displayName = "Delay Between Shots: Rapid Fire +3";
+            public const int Delay_Between_Shots_Rapid_Fire_Plus3_sortIndex = 650;
+            [SortOrder(Delay_Between_Shots_Rapid_Fire_Plus3_sortIndex)]
+            [DisplayName(Delay_Between_Shots_Rapid_Fire_Plus3_displayName)]
+            public virtual float Delay_Between_Shots_Rapid_Fire_Plus3 {
+                get => Delay_Between_Shots_Rapid_Fire_Plus3_raw;
                 set {
-                    if (Unk_103_raw == value) return;
-                    Unk_103_raw = value;
-                    ChangedItems.Add(nameof(Unk_103));
-                    OnPropertyChanged(nameof(Unk_103));
+                    if (Delay_Between_Shots_Rapid_Fire_Plus3_raw == value) return;
+                    Delay_Between_Shots_Rapid_Fire_Plus3_raw = value;
+                    ChangedItems.Add(nameof(Delay_Between_Shots_Rapid_Fire_Plus3));
+                    OnPropertyChanged(nameof(Delay_Between_Shots_Rapid_Fire_Plus3));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_103_offset { get; private set; }
+            public long Delay_Between_Shots_Rapid_Fire_Plus3_offset { get; private set; }
 
-            protected uint Unk_104_raw;
-            public const string Unk_104_displayName = "Unk 104";
-            public const int Unk_104_sortIndex = 700;
-            [SortOrder(Unk_104_sortIndex)]
-            [DisplayName(Unk_104_displayName)]
-            public virtual uint Unk_104 {
-                get => Unk_104_raw;
+            protected uint Extra_Bullets_Rapid_Fire_Plus3_raw;
+            public const string Extra_Bullets_Rapid_Fire_Plus3_displayName = "Extra Bullets: Rapid Fire +3";
+            public const int Extra_Bullets_Rapid_Fire_Plus3_sortIndex = 700;
+            [SortOrder(Extra_Bullets_Rapid_Fire_Plus3_sortIndex)]
+            [DisplayName(Extra_Bullets_Rapid_Fire_Plus3_displayName)]
+            public virtual uint Extra_Bullets_Rapid_Fire_Plus3 {
+                get => Extra_Bullets_Rapid_Fire_Plus3_raw;
                 set {
-                    if (Unk_104_raw == value) return;
-                    Unk_104_raw = value;
-                    ChangedItems.Add(nameof(Unk_104));
-                    OnPropertyChanged(nameof(Unk_104));
+                    if (Extra_Bullets_Rapid_Fire_Plus3_raw == value) return;
+                    Extra_Bullets_Rapid_Fire_Plus3_raw = value;
+                    ChangedItems.Add(nameof(Extra_Bullets_Rapid_Fire_Plus3));
+                    OnPropertyChanged(nameof(Extra_Bullets_Rapid_Fire_Plus3));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_104_offset { get; private set; }
+            public long Extra_Bullets_Rapid_Fire_Plus3_offset { get; private set; }
 
-            protected float Unk_105_raw;
-            public const string Unk_105_displayName = "Unk 105";
-            public const int Unk_105_sortIndex = 750;
-            [SortOrder(Unk_105_sortIndex)]
-            [DisplayName(Unk_105_displayName)]
-            public virtual float Unk_105 {
-                get => Unk_105_raw;
+            protected float Delay_Between_Shots_Rapid_Fire_Plus4_raw;
+            public const string Delay_Between_Shots_Rapid_Fire_Plus4_displayName = "Delay Between Shots: Rapid Fire +4";
+            public const int Delay_Between_Shots_Rapid_Fire_Plus4_sortIndex = 750;
+            [SortOrder(Delay_Between_Shots_Rapid_Fire_Plus4_sortIndex)]
+            [DisplayName(Delay_Between_Shots_Rapid_Fire_Plus4_displayName)]
+            public virtual float Delay_Between_Shots_Rapid_Fire_Plus4 {
+                get => Delay_Between_Shots_Rapid_Fire_Plus4_raw;
                 set {
-                    if (Unk_105_raw == value) return;
-                    Unk_105_raw = value;
-                    ChangedItems.Add(nameof(Unk_105));
-                    OnPropertyChanged(nameof(Unk_105));
+                    if (Delay_Between_Shots_Rapid_Fire_Plus4_raw == value) return;
+                    Delay_Between_Shots_Rapid_Fire_Plus4_raw = value;
+                    ChangedItems.Add(nameof(Delay_Between_Shots_Rapid_Fire_Plus4));
+                    OnPropertyChanged(nameof(Delay_Between_Shots_Rapid_Fire_Plus4));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_105_offset { get; private set; }
+            public long Delay_Between_Shots_Rapid_Fire_Plus4_offset { get; private set; }
 
-            protected uint Unk_106_raw;
-            public const string Unk_106_displayName = "Unk 106";
-            public const int Unk_106_sortIndex = 800;
-            [SortOrder(Unk_106_sortIndex)]
-            [DisplayName(Unk_106_displayName)]
-            public virtual uint Unk_106 {
-                get => Unk_106_raw;
+            protected uint Extra_Bullets_Rapid_Fire_Plus4_raw;
+            public const string Extra_Bullets_Rapid_Fire_Plus4_displayName = "Extra Bullets: Rapid Fire +4";
+            public const int Extra_Bullets_Rapid_Fire_Plus4_sortIndex = 800;
+            [SortOrder(Extra_Bullets_Rapid_Fire_Plus4_sortIndex)]
+            [DisplayName(Extra_Bullets_Rapid_Fire_Plus4_displayName)]
+            public virtual uint Extra_Bullets_Rapid_Fire_Plus4 {
+                get => Extra_Bullets_Rapid_Fire_Plus4_raw;
                 set {
-                    if (Unk_106_raw == value) return;
-                    Unk_106_raw = value;
-                    ChangedItems.Add(nameof(Unk_106));
-                    OnPropertyChanged(nameof(Unk_106));
+                    if (Extra_Bullets_Rapid_Fire_Plus4_raw == value) return;
+                    Extra_Bullets_Rapid_Fire_Plus4_raw = value;
+                    ChangedItems.Add(nameof(Extra_Bullets_Rapid_Fire_Plus4));
+                    OnPropertyChanged(nameof(Extra_Bullets_Rapid_Fire_Plus4));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_106_offset { get; private set; }
+            public long Extra_Bullets_Rapid_Fire_Plus4_offset { get; private set; }
 
             protected float Unk_107_raw;
             public const string Unk_107_displayName = "Unk 107";
@@ -3581,23 +3581,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_143_offset { get; private set; }
 
-            protected float Unk_144_raw;
-            public const string Unk_144_displayName = "Unk 144";
-            public const int Unk_144_sortIndex = 2700;
-            [SortOrder(Unk_144_sortIndex)]
-            [DisplayName(Unk_144_displayName)]
-            public virtual float Unk_144 {
-                get => Unk_144_raw;
+            protected float Rapid_Fire_Extra_Round_Damage_Multiplier_raw;
+            public const string Rapid_Fire_Extra_Round_Damage_Multiplier_displayName = "Rapid Fire Extra Round Damage Multiplier";
+            public const int Rapid_Fire_Extra_Round_Damage_Multiplier_sortIndex = 2700;
+            [SortOrder(Rapid_Fire_Extra_Round_Damage_Multiplier_sortIndex)]
+            [DisplayName(Rapid_Fire_Extra_Round_Damage_Multiplier_displayName)]
+            public virtual float Rapid_Fire_Extra_Round_Damage_Multiplier {
+                get => Rapid_Fire_Extra_Round_Damage_Multiplier_raw;
                 set {
-                    if (Unk_144_raw == value) return;
-                    Unk_144_raw = value;
-                    ChangedItems.Add(nameof(Unk_144));
-                    OnPropertyChanged(nameof(Unk_144));
+                    if (Rapid_Fire_Extra_Round_Damage_Multiplier_raw == value) return;
+                    Rapid_Fire_Extra_Round_Damage_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Rapid_Fire_Extra_Round_Damage_Multiplier));
+                    OnPropertyChanged(nameof(Rapid_Fire_Extra_Round_Damage_Multiplier));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_144_offset { get; private set; }
+            public long Rapid_Fire_Extra_Round_Damage_Multiplier_offset { get; private set; }
 
             protected float Unk_145_raw;
             public const string Unk_145_displayName = "Unk 145";
@@ -4013,41 +4013,41 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_167_offset { get; private set; }
 
-            protected float Unk_168_raw;
-            public const string Unk_168_displayName = "Unk 168";
-            public const int Unk_168_sortIndex = 3900;
-            [SortOrder(Unk_168_sortIndex)]
-            [DisplayName(Unk_168_displayName)]
-            public virtual float Unk_168 {
-                get => Unk_168_raw;
+            protected float Wyvernheart_Ammo_Cap_raw;
+            public const string Wyvernheart_Ammo_Cap_displayName = "Wyvernheart Ammo Cap";
+            public const int Wyvernheart_Ammo_Cap_sortIndex = 3900;
+            [SortOrder(Wyvernheart_Ammo_Cap_sortIndex)]
+            [DisplayName(Wyvernheart_Ammo_Cap_displayName)]
+            public virtual float Wyvernheart_Ammo_Cap {
+                get => Wyvernheart_Ammo_Cap_raw;
                 set {
-                    if (Unk_168_raw == value) return;
-                    Unk_168_raw = value;
-                    ChangedItems.Add(nameof(Unk_168));
-                    OnPropertyChanged(nameof(Unk_168));
+                    if (Wyvernheart_Ammo_Cap_raw == value) return;
+                    Wyvernheart_Ammo_Cap_raw = value;
+                    ChangedItems.Add(nameof(Wyvernheart_Ammo_Cap));
+                    OnPropertyChanged(nameof(Wyvernheart_Ammo_Cap));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_168_offset { get; private set; }
+            public long Wyvernheart_Ammo_Cap_offset { get; private set; }
 
-            protected float Unk_169_raw;
-            public const string Unk_169_displayName = "Unk 169";
-            public const int Unk_169_sortIndex = 3950;
-            [SortOrder(Unk_169_sortIndex)]
-            [DisplayName(Unk_169_displayName)]
-            public virtual float Unk_169 {
-                get => Unk_169_raw;
+            protected float Delay_Between_Shots_raw;
+            public const string Delay_Between_Shots_displayName = "Delay Between Shots";
+            public const int Delay_Between_Shots_sortIndex = 3950;
+            [SortOrder(Delay_Between_Shots_sortIndex)]
+            [DisplayName(Delay_Between_Shots_displayName)]
+            public virtual float Delay_Between_Shots {
+                get => Delay_Between_Shots_raw;
                 set {
-                    if (Unk_169_raw == value) return;
-                    Unk_169_raw = value;
-                    ChangedItems.Add(nameof(Unk_169));
-                    OnPropertyChanged(nameof(Unk_169));
+                    if (Delay_Between_Shots_raw == value) return;
+                    Delay_Between_Shots_raw = value;
+                    ChangedItems.Add(nameof(Delay_Between_Shots));
+                    OnPropertyChanged(nameof(Delay_Between_Shots));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_169_offset { get; private set; }
+            public long Delay_Between_Shots_offset { get; private set; }
 
             protected float Unk_170_raw;
             public const string Unk_170_displayName = "Unk 170";
@@ -4067,23 +4067,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_170_offset { get; private set; }
 
-            protected float Unk_171_raw;
-            public const string Unk_171_displayName = "Unk 171";
-            public const int Unk_171_sortIndex = 4050;
-            [SortOrder(Unk_171_sortIndex)]
-            [DisplayName(Unk_171_displayName)]
-            public virtual float Unk_171 {
-                get => Unk_171_raw;
+            protected float Wyvernheart_Ammo_Recharge_raw;
+            public const string Wyvernheart_Ammo_Recharge_displayName = "Wyvernheart Ammo Recharge";
+            public const int Wyvernheart_Ammo_Recharge_sortIndex = 4050;
+            [SortOrder(Wyvernheart_Ammo_Recharge_sortIndex)]
+            [DisplayName(Wyvernheart_Ammo_Recharge_displayName)]
+            public virtual float Wyvernheart_Ammo_Recharge {
+                get => Wyvernheart_Ammo_Recharge_raw;
                 set {
-                    if (Unk_171_raw == value) return;
-                    Unk_171_raw = value;
-                    ChangedItems.Add(nameof(Unk_171));
-                    OnPropertyChanged(nameof(Unk_171));
+                    if (Wyvernheart_Ammo_Recharge_raw == value) return;
+                    Wyvernheart_Ammo_Recharge_raw = value;
+                    ChangedItems.Add(nameof(Wyvernheart_Ammo_Recharge));
+                    OnPropertyChanged(nameof(Wyvernheart_Ammo_Recharge));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_171_offset { get; private set; }
+            public long Wyvernheart_Ammo_Recharge_offset { get; private set; }
 
             protected float Unk_172_raw;
             public const string Unk_172_displayName = "Unk 172";
@@ -4175,203 +4175,203 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_176_offset { get; private set; }
 
-            protected byte Unk_177_raw;
-            public const string Unk_177_displayName = "Unk 177";
-            public const int Unk_177_sortIndex = 4350;
-            [SortOrder(Unk_177_sortIndex)]
-            [DisplayName(Unk_177_displayName)]
-            public virtual byte Unk_177 {
-                get => Unk_177_raw;
+            protected byte Wyvernheart_Hit_Count_for_Damage_Bonus_raw;
+            public const string Wyvernheart_Hit_Count_for_Damage_Bonus_displayName = "Wyvernheart Hit Count for Damage Bonus";
+            public const int Wyvernheart_Hit_Count_for_Damage_Bonus_sortIndex = 4350;
+            [SortOrder(Wyvernheart_Hit_Count_for_Damage_Bonus_sortIndex)]
+            [DisplayName(Wyvernheart_Hit_Count_for_Damage_Bonus_displayName)]
+            public virtual byte Wyvernheart_Hit_Count_for_Damage_Bonus {
+                get => Wyvernheart_Hit_Count_for_Damage_Bonus_raw;
                 set {
-                    if (Unk_177_raw == value) return;
-                    Unk_177_raw = value;
-                    ChangedItems.Add(nameof(Unk_177));
-                    OnPropertyChanged(nameof(Unk_177));
+                    if (Wyvernheart_Hit_Count_for_Damage_Bonus_raw == value) return;
+                    Wyvernheart_Hit_Count_for_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(Wyvernheart_Hit_Count_for_Damage_Bonus));
+                    OnPropertyChanged(nameof(Wyvernheart_Hit_Count_for_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_177_offset { get; private set; }
+            public long Wyvernheart_Hit_Count_for_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_178_raw;
-            public const string Unk_178_displayName = "Unk 178";
-            public const int Unk_178_sortIndex = 4400;
-            [SortOrder(Unk_178_sortIndex)]
-            [DisplayName(Unk_178_displayName)]
-            public virtual ushort Unk_178 {
-                get => Unk_178_raw;
+            protected ushort Hit_for_1st_Damage_Bonus_raw;
+            public const string Hit_for_1st_Damage_Bonus_displayName = "Hit for 1st Damage Bonus";
+            public const int Hit_for_1st_Damage_Bonus_sortIndex = 4400;
+            [SortOrder(Hit_for_1st_Damage_Bonus_sortIndex)]
+            [DisplayName(Hit_for_1st_Damage_Bonus_displayName)]
+            public virtual ushort Hit_for_1st_Damage_Bonus {
+                get => Hit_for_1st_Damage_Bonus_raw;
                 set {
-                    if (Unk_178_raw == value) return;
-                    Unk_178_raw = value;
-                    ChangedItems.Add(nameof(Unk_178));
-                    OnPropertyChanged(nameof(Unk_178));
+                    if (Hit_for_1st_Damage_Bonus_raw == value) return;
+                    Hit_for_1st_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(Hit_for_1st_Damage_Bonus));
+                    OnPropertyChanged(nameof(Hit_for_1st_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_178_offset { get; private set; }
+            public long Hit_for_1st_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_179_raw;
-            public const string Unk_179_displayName = "Unk 179";
-            public const int Unk_179_sortIndex = 4450;
-            [SortOrder(Unk_179_sortIndex)]
-            [DisplayName(Unk_179_displayName)]
-            public virtual ushort Unk_179 {
-                get => Unk_179_raw;
+            protected ushort _1st_Damage_Bonus_raw;
+            public const string _1st_Damage_Bonus_displayName = "(1st) Damage Bonus";
+            public const int _1st_Damage_Bonus_sortIndex = 4450;
+            [SortOrder(_1st_Damage_Bonus_sortIndex)]
+            [DisplayName(_1st_Damage_Bonus_displayName)]
+            public virtual ushort _1st_Damage_Bonus {
+                get => _1st_Damage_Bonus_raw;
                 set {
-                    if (Unk_179_raw == value) return;
-                    Unk_179_raw = value;
-                    ChangedItems.Add(nameof(Unk_179));
-                    OnPropertyChanged(nameof(Unk_179));
+                    if (_1st_Damage_Bonus_raw == value) return;
+                    _1st_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_1st_Damage_Bonus));
+                    OnPropertyChanged(nameof(_1st_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_179_offset { get; private set; }
+            public long _1st_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_180_raw;
-            public const string Unk_180_displayName = "Unk 180";
-            public const int Unk_180_sortIndex = 4500;
-            [SortOrder(Unk_180_sortIndex)]
-            [DisplayName(Unk_180_displayName)]
-            public virtual ushort Unk_180 {
-                get => Unk_180_raw;
+            protected ushort Hit_for_2nd_Damage_Bonus_raw;
+            public const string Hit_for_2nd_Damage_Bonus_displayName = "Hit for 2nd Damage Bonus";
+            public const int Hit_for_2nd_Damage_Bonus_sortIndex = 4500;
+            [SortOrder(Hit_for_2nd_Damage_Bonus_sortIndex)]
+            [DisplayName(Hit_for_2nd_Damage_Bonus_displayName)]
+            public virtual ushort Hit_for_2nd_Damage_Bonus {
+                get => Hit_for_2nd_Damage_Bonus_raw;
                 set {
-                    if (Unk_180_raw == value) return;
-                    Unk_180_raw = value;
-                    ChangedItems.Add(nameof(Unk_180));
-                    OnPropertyChanged(nameof(Unk_180));
+                    if (Hit_for_2nd_Damage_Bonus_raw == value) return;
+                    Hit_for_2nd_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(Hit_for_2nd_Damage_Bonus));
+                    OnPropertyChanged(nameof(Hit_for_2nd_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_180_offset { get; private set; }
+            public long Hit_for_2nd_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_181_raw;
-            public const string Unk_181_displayName = "Unk 181";
-            public const int Unk_181_sortIndex = 4550;
-            [SortOrder(Unk_181_sortIndex)]
-            [DisplayName(Unk_181_displayName)]
-            public virtual ushort Unk_181 {
-                get => Unk_181_raw;
+            protected ushort _2nd_Damage_Bonus_raw;
+            public const string _2nd_Damage_Bonus_displayName = "(2nd) Damage Bonus";
+            public const int _2nd_Damage_Bonus_sortIndex = 4550;
+            [SortOrder(_2nd_Damage_Bonus_sortIndex)]
+            [DisplayName(_2nd_Damage_Bonus_displayName)]
+            public virtual ushort _2nd_Damage_Bonus {
+                get => _2nd_Damage_Bonus_raw;
                 set {
-                    if (Unk_181_raw == value) return;
-                    Unk_181_raw = value;
-                    ChangedItems.Add(nameof(Unk_181));
-                    OnPropertyChanged(nameof(Unk_181));
+                    if (_2nd_Damage_Bonus_raw == value) return;
+                    _2nd_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_2nd_Damage_Bonus));
+                    OnPropertyChanged(nameof(_2nd_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_181_offset { get; private set; }
+            public long _2nd_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_182_raw;
-            public const string Unk_182_displayName = "Unk 182";
-            public const int Unk_182_sortIndex = 4600;
-            [SortOrder(Unk_182_sortIndex)]
-            [DisplayName(Unk_182_displayName)]
-            public virtual ushort Unk_182 {
-                get => Unk_182_raw;
+            protected ushort Hit_for_3rd_Damage_Bonus_raw;
+            public const string Hit_for_3rd_Damage_Bonus_displayName = "Hit for 3rd Damage Bonus";
+            public const int Hit_for_3rd_Damage_Bonus_sortIndex = 4600;
+            [SortOrder(Hit_for_3rd_Damage_Bonus_sortIndex)]
+            [DisplayName(Hit_for_3rd_Damage_Bonus_displayName)]
+            public virtual ushort Hit_for_3rd_Damage_Bonus {
+                get => Hit_for_3rd_Damage_Bonus_raw;
                 set {
-                    if (Unk_182_raw == value) return;
-                    Unk_182_raw = value;
-                    ChangedItems.Add(nameof(Unk_182));
-                    OnPropertyChanged(nameof(Unk_182));
+                    if (Hit_for_3rd_Damage_Bonus_raw == value) return;
+                    Hit_for_3rd_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(Hit_for_3rd_Damage_Bonus));
+                    OnPropertyChanged(nameof(Hit_for_3rd_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_182_offset { get; private set; }
+            public long Hit_for_3rd_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_183_raw;
-            public const string Unk_183_displayName = "Unk 183";
-            public const int Unk_183_sortIndex = 4650;
-            [SortOrder(Unk_183_sortIndex)]
-            [DisplayName(Unk_183_displayName)]
-            public virtual ushort Unk_183 {
-                get => Unk_183_raw;
+            protected ushort _3rd_Damage_Bonus_raw;
+            public const string _3rd_Damage_Bonus_displayName = "(3rd) Damage Bonus";
+            public const int _3rd_Damage_Bonus_sortIndex = 4650;
+            [SortOrder(_3rd_Damage_Bonus_sortIndex)]
+            [DisplayName(_3rd_Damage_Bonus_displayName)]
+            public virtual ushort _3rd_Damage_Bonus {
+                get => _3rd_Damage_Bonus_raw;
                 set {
-                    if (Unk_183_raw == value) return;
-                    Unk_183_raw = value;
-                    ChangedItems.Add(nameof(Unk_183));
-                    OnPropertyChanged(nameof(Unk_183));
+                    if (_3rd_Damage_Bonus_raw == value) return;
+                    _3rd_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_3rd_Damage_Bonus));
+                    OnPropertyChanged(nameof(_3rd_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_183_offset { get; private set; }
+            public long _3rd_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_184_raw;
-            public const string Unk_184_displayName = "Unk 184";
-            public const int Unk_184_sortIndex = 4700;
-            [SortOrder(Unk_184_sortIndex)]
-            [DisplayName(Unk_184_displayName)]
-            public virtual ushort Unk_184 {
-                get => Unk_184_raw;
+            protected ushort Hit_for_4th_Damage_Bonus_raw;
+            public const string Hit_for_4th_Damage_Bonus_displayName = "Hit for 4th Damage Bonus";
+            public const int Hit_for_4th_Damage_Bonus_sortIndex = 4700;
+            [SortOrder(Hit_for_4th_Damage_Bonus_sortIndex)]
+            [DisplayName(Hit_for_4th_Damage_Bonus_displayName)]
+            public virtual ushort Hit_for_4th_Damage_Bonus {
+                get => Hit_for_4th_Damage_Bonus_raw;
                 set {
-                    if (Unk_184_raw == value) return;
-                    Unk_184_raw = value;
-                    ChangedItems.Add(nameof(Unk_184));
-                    OnPropertyChanged(nameof(Unk_184));
+                    if (Hit_for_4th_Damage_Bonus_raw == value) return;
+                    Hit_for_4th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(Hit_for_4th_Damage_Bonus));
+                    OnPropertyChanged(nameof(Hit_for_4th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_184_offset { get; private set; }
+            public long Hit_for_4th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_185_raw;
-            public const string Unk_185_displayName = "Unk 185";
-            public const int Unk_185_sortIndex = 4750;
-            [SortOrder(Unk_185_sortIndex)]
-            [DisplayName(Unk_185_displayName)]
-            public virtual ushort Unk_185 {
-                get => Unk_185_raw;
+            protected ushort _4th_Damage_Bonus_raw;
+            public const string _4th_Damage_Bonus_displayName = "(4th) Damage Bonus";
+            public const int _4th_Damage_Bonus_sortIndex = 4750;
+            [SortOrder(_4th_Damage_Bonus_sortIndex)]
+            [DisplayName(_4th_Damage_Bonus_displayName)]
+            public virtual ushort _4th_Damage_Bonus {
+                get => _4th_Damage_Bonus_raw;
                 set {
-                    if (Unk_185_raw == value) return;
-                    Unk_185_raw = value;
-                    ChangedItems.Add(nameof(Unk_185));
-                    OnPropertyChanged(nameof(Unk_185));
+                    if (_4th_Damage_Bonus_raw == value) return;
+                    _4th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_4th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_4th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_185_offset { get; private set; }
+            public long _4th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_186_raw;
-            public const string Unk_186_displayName = "Unk 186";
-            public const int Unk_186_sortIndex = 4800;
-            [SortOrder(Unk_186_sortIndex)]
-            [DisplayName(Unk_186_displayName)]
-            public virtual ushort Unk_186 {
-                get => Unk_186_raw;
+            protected ushort Hit_for_5th_Damage_Bonus_raw;
+            public const string Hit_for_5th_Damage_Bonus_displayName = "Hit for 5th Damage Bonus";
+            public const int Hit_for_5th_Damage_Bonus_sortIndex = 4800;
+            [SortOrder(Hit_for_5th_Damage_Bonus_sortIndex)]
+            [DisplayName(Hit_for_5th_Damage_Bonus_displayName)]
+            public virtual ushort Hit_for_5th_Damage_Bonus {
+                get => Hit_for_5th_Damage_Bonus_raw;
                 set {
-                    if (Unk_186_raw == value) return;
-                    Unk_186_raw = value;
-                    ChangedItems.Add(nameof(Unk_186));
-                    OnPropertyChanged(nameof(Unk_186));
+                    if (Hit_for_5th_Damage_Bonus_raw == value) return;
+                    Hit_for_5th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(Hit_for_5th_Damage_Bonus));
+                    OnPropertyChanged(nameof(Hit_for_5th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_186_offset { get; private set; }
+            public long Hit_for_5th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_187_raw;
-            public const string Unk_187_displayName = "Unk 187";
-            public const int Unk_187_sortIndex = 4850;
-            [SortOrder(Unk_187_sortIndex)]
-            [DisplayName(Unk_187_displayName)]
-            public virtual ushort Unk_187 {
-                get => Unk_187_raw;
+            protected ushort _5th_Damage_Bonus_raw;
+            public const string _5th_Damage_Bonus_displayName = "(5th) Damage Bonus";
+            public const int _5th_Damage_Bonus_sortIndex = 4850;
+            [SortOrder(_5th_Damage_Bonus_sortIndex)]
+            [DisplayName(_5th_Damage_Bonus_displayName)]
+            public virtual ushort _5th_Damage_Bonus {
+                get => _5th_Damage_Bonus_raw;
                 set {
-                    if (Unk_187_raw == value) return;
-                    Unk_187_raw = value;
-                    ChangedItems.Add(nameof(Unk_187));
-                    OnPropertyChanged(nameof(Unk_187));
+                    if (_5th_Damage_Bonus_raw == value) return;
+                    _5th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_5th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_5th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_187_offset { get; private set; }
+            public long _5th_Damage_Bonus_offset { get; private set; }
 
             protected byte Unk_188_raw;
             public const string Unk_188_displayName = "Unk 188";
@@ -4427,383 +4427,383 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_190_offset { get; private set; }
 
-            protected byte Unk_191_raw;
-            public const string Unk_191_displayName = "Unk 191";
-            public const int Unk_191_sortIndex = 5050;
-            [SortOrder(Unk_191_sortIndex)]
-            [DisplayName(Unk_191_displayName)]
-            public virtual byte Unk_191 {
-                get => Unk_191_raw;
+            protected byte Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_raw;
+            public const string Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_displayName = "Wyvernheart Mod Hit Count for Damage Bonus";
+            public const int Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_sortIndex = 5050;
+            [SortOrder(Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_sortIndex)]
+            [DisplayName(Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_displayName)]
+            public virtual byte Wyvernheart_Mod_Hit_Count_for_Damage_Bonus {
+                get => Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_raw;
                 set {
-                    if (Unk_191_raw == value) return;
-                    Unk_191_raw = value;
-                    ChangedItems.Add(nameof(Unk_191));
-                    OnPropertyChanged(nameof(Unk_191));
+                    if (Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_raw == value) return;
+                    Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(Wyvernheart_Mod_Hit_Count_for_Damage_Bonus));
+                    OnPropertyChanged(nameof(Wyvernheart_Mod_Hit_Count_for_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_191_offset { get; private set; }
+            public long Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_192_raw;
-            public const string Unk_192_displayName = "Unk 192";
-            public const int Unk_192_sortIndex = 5100;
-            [SortOrder(Unk_192_sortIndex)]
-            [DisplayName(Unk_192_displayName)]
-            public virtual ushort Unk_192 {
-                get => Unk_192_raw;
+            protected ushort _Mod_Hit_for_1st_Damage_Bonus_raw;
+            public const string _Mod_Hit_for_1st_Damage_Bonus_displayName = "(Mod) Hit for 1st Damage Bonus";
+            public const int _Mod_Hit_for_1st_Damage_Bonus_sortIndex = 5100;
+            [SortOrder(_Mod_Hit_for_1st_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_Hit_for_1st_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_Hit_for_1st_Damage_Bonus {
+                get => _Mod_Hit_for_1st_Damage_Bonus_raw;
                 set {
-                    if (Unk_192_raw == value) return;
-                    Unk_192_raw = value;
-                    ChangedItems.Add(nameof(Unk_192));
-                    OnPropertyChanged(nameof(Unk_192));
+                    if (_Mod_Hit_for_1st_Damage_Bonus_raw == value) return;
+                    _Mod_Hit_for_1st_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_Hit_for_1st_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_Hit_for_1st_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_192_offset { get; private set; }
+            public long _Mod_Hit_for_1st_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_193_raw;
-            public const string Unk_193_displayName = "Unk 193";
-            public const int Unk_193_sortIndex = 5150;
-            [SortOrder(Unk_193_sortIndex)]
-            [DisplayName(Unk_193_displayName)]
-            public virtual ushort Unk_193 {
-                get => Unk_193_raw;
+            protected ushort _Mod_1st_Damage_Bonus_raw;
+            public const string _Mod_1st_Damage_Bonus_displayName = "(Mod, 1st) Damage Bonus";
+            public const int _Mod_1st_Damage_Bonus_sortIndex = 5150;
+            [SortOrder(_Mod_1st_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_1st_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_1st_Damage_Bonus {
+                get => _Mod_1st_Damage_Bonus_raw;
                 set {
-                    if (Unk_193_raw == value) return;
-                    Unk_193_raw = value;
-                    ChangedItems.Add(nameof(Unk_193));
-                    OnPropertyChanged(nameof(Unk_193));
+                    if (_Mod_1st_Damage_Bonus_raw == value) return;
+                    _Mod_1st_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_1st_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_1st_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_193_offset { get; private set; }
+            public long _Mod_1st_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_194_raw;
-            public const string Unk_194_displayName = "Unk 194";
-            public const int Unk_194_sortIndex = 5200;
-            [SortOrder(Unk_194_sortIndex)]
-            [DisplayName(Unk_194_displayName)]
-            public virtual ushort Unk_194 {
-                get => Unk_194_raw;
+            protected ushort _Mod_Hit_for_2nd_Damage_Bonus_raw;
+            public const string _Mod_Hit_for_2nd_Damage_Bonus_displayName = "(Mod) Hit for 2nd Damage Bonus";
+            public const int _Mod_Hit_for_2nd_Damage_Bonus_sortIndex = 5200;
+            [SortOrder(_Mod_Hit_for_2nd_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_Hit_for_2nd_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_Hit_for_2nd_Damage_Bonus {
+                get => _Mod_Hit_for_2nd_Damage_Bonus_raw;
                 set {
-                    if (Unk_194_raw == value) return;
-                    Unk_194_raw = value;
-                    ChangedItems.Add(nameof(Unk_194));
-                    OnPropertyChanged(nameof(Unk_194));
+                    if (_Mod_Hit_for_2nd_Damage_Bonus_raw == value) return;
+                    _Mod_Hit_for_2nd_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_Hit_for_2nd_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_Hit_for_2nd_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_194_offset { get; private set; }
+            public long _Mod_Hit_for_2nd_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_195_raw;
-            public const string Unk_195_displayName = "Unk 195";
-            public const int Unk_195_sortIndex = 5250;
-            [SortOrder(Unk_195_sortIndex)]
-            [DisplayName(Unk_195_displayName)]
-            public virtual ushort Unk_195 {
-                get => Unk_195_raw;
+            protected ushort _Mod_2nd_Damage_Bonus_raw;
+            public const string _Mod_2nd_Damage_Bonus_displayName = "(Mod, 2nd) Damage Bonus";
+            public const int _Mod_2nd_Damage_Bonus_sortIndex = 5250;
+            [SortOrder(_Mod_2nd_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_2nd_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_2nd_Damage_Bonus {
+                get => _Mod_2nd_Damage_Bonus_raw;
                 set {
-                    if (Unk_195_raw == value) return;
-                    Unk_195_raw = value;
-                    ChangedItems.Add(nameof(Unk_195));
-                    OnPropertyChanged(nameof(Unk_195));
+                    if (_Mod_2nd_Damage_Bonus_raw == value) return;
+                    _Mod_2nd_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_2nd_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_2nd_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_195_offset { get; private set; }
+            public long _Mod_2nd_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_196_raw;
-            public const string Unk_196_displayName = "Unk 196";
-            public const int Unk_196_sortIndex = 5300;
-            [SortOrder(Unk_196_sortIndex)]
-            [DisplayName(Unk_196_displayName)]
-            public virtual ushort Unk_196 {
-                get => Unk_196_raw;
+            protected ushort _Mod_Hit_for_3rd_Damage_Bonus_raw;
+            public const string _Mod_Hit_for_3rd_Damage_Bonus_displayName = "(Mod) Hit for 3rd Damage Bonus";
+            public const int _Mod_Hit_for_3rd_Damage_Bonus_sortIndex = 5300;
+            [SortOrder(_Mod_Hit_for_3rd_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_Hit_for_3rd_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_Hit_for_3rd_Damage_Bonus {
+                get => _Mod_Hit_for_3rd_Damage_Bonus_raw;
                 set {
-                    if (Unk_196_raw == value) return;
-                    Unk_196_raw = value;
-                    ChangedItems.Add(nameof(Unk_196));
-                    OnPropertyChanged(nameof(Unk_196));
+                    if (_Mod_Hit_for_3rd_Damage_Bonus_raw == value) return;
+                    _Mod_Hit_for_3rd_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_Hit_for_3rd_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_Hit_for_3rd_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_196_offset { get; private set; }
+            public long _Mod_Hit_for_3rd_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_197_raw;
-            public const string Unk_197_displayName = "Unk 197";
-            public const int Unk_197_sortIndex = 5350;
-            [SortOrder(Unk_197_sortIndex)]
-            [DisplayName(Unk_197_displayName)]
-            public virtual ushort Unk_197 {
-                get => Unk_197_raw;
+            protected ushort _Mod_3rd_Damage_Bonus_raw;
+            public const string _Mod_3rd_Damage_Bonus_displayName = "(Mod, 3rd) Damage Bonus";
+            public const int _Mod_3rd_Damage_Bonus_sortIndex = 5350;
+            [SortOrder(_Mod_3rd_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_3rd_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_3rd_Damage_Bonus {
+                get => _Mod_3rd_Damage_Bonus_raw;
                 set {
-                    if (Unk_197_raw == value) return;
-                    Unk_197_raw = value;
-                    ChangedItems.Add(nameof(Unk_197));
-                    OnPropertyChanged(nameof(Unk_197));
+                    if (_Mod_3rd_Damage_Bonus_raw == value) return;
+                    _Mod_3rd_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_3rd_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_3rd_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_197_offset { get; private set; }
+            public long _Mod_3rd_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_198_raw;
-            public const string Unk_198_displayName = "Unk 198";
-            public const int Unk_198_sortIndex = 5400;
-            [SortOrder(Unk_198_sortIndex)]
-            [DisplayName(Unk_198_displayName)]
-            public virtual ushort Unk_198 {
-                get => Unk_198_raw;
+            protected ushort _Mod_Hit_for_4th_Damage_Bonus_raw;
+            public const string _Mod_Hit_for_4th_Damage_Bonus_displayName = "(Mod) Hit for 4th Damage Bonus";
+            public const int _Mod_Hit_for_4th_Damage_Bonus_sortIndex = 5400;
+            [SortOrder(_Mod_Hit_for_4th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_Hit_for_4th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_Hit_for_4th_Damage_Bonus {
+                get => _Mod_Hit_for_4th_Damage_Bonus_raw;
                 set {
-                    if (Unk_198_raw == value) return;
-                    Unk_198_raw = value;
-                    ChangedItems.Add(nameof(Unk_198));
-                    OnPropertyChanged(nameof(Unk_198));
+                    if (_Mod_Hit_for_4th_Damage_Bonus_raw == value) return;
+                    _Mod_Hit_for_4th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_Hit_for_4th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_Hit_for_4th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_198_offset { get; private set; }
+            public long _Mod_Hit_for_4th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_199_raw;
-            public const string Unk_199_displayName = "Unk 199";
-            public const int Unk_199_sortIndex = 5450;
-            [SortOrder(Unk_199_sortIndex)]
-            [DisplayName(Unk_199_displayName)]
-            public virtual ushort Unk_199 {
-                get => Unk_199_raw;
+            protected ushort _Mod_4th_Damage_Bonus_raw;
+            public const string _Mod_4th_Damage_Bonus_displayName = "(Mod, 4th) Damage Bonus";
+            public const int _Mod_4th_Damage_Bonus_sortIndex = 5450;
+            [SortOrder(_Mod_4th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_4th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_4th_Damage_Bonus {
+                get => _Mod_4th_Damage_Bonus_raw;
                 set {
-                    if (Unk_199_raw == value) return;
-                    Unk_199_raw = value;
-                    ChangedItems.Add(nameof(Unk_199));
-                    OnPropertyChanged(nameof(Unk_199));
+                    if (_Mod_4th_Damage_Bonus_raw == value) return;
+                    _Mod_4th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_4th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_4th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_199_offset { get; private set; }
+            public long _Mod_4th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_200_raw;
-            public const string Unk_200_displayName = "Unk 200";
-            public const int Unk_200_sortIndex = 5500;
-            [SortOrder(Unk_200_sortIndex)]
-            [DisplayName(Unk_200_displayName)]
-            public virtual ushort Unk_200 {
-                get => Unk_200_raw;
+            protected ushort _Mod_Hit_for_5th_Damage_Bonus_raw;
+            public const string _Mod_Hit_for_5th_Damage_Bonus_displayName = "(Mod) Hit for 5th Damage Bonus";
+            public const int _Mod_Hit_for_5th_Damage_Bonus_sortIndex = 5500;
+            [SortOrder(_Mod_Hit_for_5th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_Hit_for_5th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_Hit_for_5th_Damage_Bonus {
+                get => _Mod_Hit_for_5th_Damage_Bonus_raw;
                 set {
-                    if (Unk_200_raw == value) return;
-                    Unk_200_raw = value;
-                    ChangedItems.Add(nameof(Unk_200));
-                    OnPropertyChanged(nameof(Unk_200));
+                    if (_Mod_Hit_for_5th_Damage_Bonus_raw == value) return;
+                    _Mod_Hit_for_5th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_Hit_for_5th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_Hit_for_5th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_200_offset { get; private set; }
+            public long _Mod_Hit_for_5th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_201_raw;
-            public const string Unk_201_displayName = "Unk 201";
-            public const int Unk_201_sortIndex = 5550;
-            [SortOrder(Unk_201_sortIndex)]
-            [DisplayName(Unk_201_displayName)]
-            public virtual ushort Unk_201 {
-                get => Unk_201_raw;
+            protected ushort _Mod_5th_Damage_Bonus_raw;
+            public const string _Mod_5th_Damage_Bonus_displayName = "(Mod, 5th) Damage Bonus";
+            public const int _Mod_5th_Damage_Bonus_sortIndex = 5550;
+            [SortOrder(_Mod_5th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_5th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_5th_Damage_Bonus {
+                get => _Mod_5th_Damage_Bonus_raw;
                 set {
-                    if (Unk_201_raw == value) return;
-                    Unk_201_raw = value;
-                    ChangedItems.Add(nameof(Unk_201));
-                    OnPropertyChanged(nameof(Unk_201));
+                    if (_Mod_5th_Damage_Bonus_raw == value) return;
+                    _Mod_5th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_5th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_5th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_201_offset { get; private set; }
+            public long _Mod_5th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_202_raw;
-            public const string Unk_202_displayName = "Unk 202";
-            public const int Unk_202_sortIndex = 5600;
-            [SortOrder(Unk_202_sortIndex)]
-            [DisplayName(Unk_202_displayName)]
-            public virtual ushort Unk_202 {
-                get => Unk_202_raw;
+            protected ushort _Mod_Hit_for_6th_Damage_Bonus_raw;
+            public const string _Mod_Hit_for_6th_Damage_Bonus_displayName = "(Mod) Hit for 6th Damage Bonus";
+            public const int _Mod_Hit_for_6th_Damage_Bonus_sortIndex = 5600;
+            [SortOrder(_Mod_Hit_for_6th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_Hit_for_6th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_Hit_for_6th_Damage_Bonus {
+                get => _Mod_Hit_for_6th_Damage_Bonus_raw;
                 set {
-                    if (Unk_202_raw == value) return;
-                    Unk_202_raw = value;
-                    ChangedItems.Add(nameof(Unk_202));
-                    OnPropertyChanged(nameof(Unk_202));
+                    if (_Mod_Hit_for_6th_Damage_Bonus_raw == value) return;
+                    _Mod_Hit_for_6th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_Hit_for_6th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_Hit_for_6th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_202_offset { get; private set; }
+            public long _Mod_Hit_for_6th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_203_raw;
-            public const string Unk_203_displayName = "Unk 203";
-            public const int Unk_203_sortIndex = 5650;
-            [SortOrder(Unk_203_sortIndex)]
-            [DisplayName(Unk_203_displayName)]
-            public virtual ushort Unk_203 {
-                get => Unk_203_raw;
+            protected ushort _Mod_6th_Damage_Bonus_raw;
+            public const string _Mod_6th_Damage_Bonus_displayName = "(Mod, 6th) Damage Bonus";
+            public const int _Mod_6th_Damage_Bonus_sortIndex = 5650;
+            [SortOrder(_Mod_6th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_6th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_6th_Damage_Bonus {
+                get => _Mod_6th_Damage_Bonus_raw;
                 set {
-                    if (Unk_203_raw == value) return;
-                    Unk_203_raw = value;
-                    ChangedItems.Add(nameof(Unk_203));
-                    OnPropertyChanged(nameof(Unk_203));
+                    if (_Mod_6th_Damage_Bonus_raw == value) return;
+                    _Mod_6th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_6th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_6th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_203_offset { get; private set; }
+            public long _Mod_6th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_204_raw;
-            public const string Unk_204_displayName = "Unk 204";
-            public const int Unk_204_sortIndex = 5700;
-            [SortOrder(Unk_204_sortIndex)]
-            [DisplayName(Unk_204_displayName)]
-            public virtual ushort Unk_204 {
-                get => Unk_204_raw;
+            protected ushort _Mod_Hit_for_7th_Damage_Bonus_raw;
+            public const string _Mod_Hit_for_7th_Damage_Bonus_displayName = "(Mod) Hit for 7th Damage Bonus";
+            public const int _Mod_Hit_for_7th_Damage_Bonus_sortIndex = 5700;
+            [SortOrder(_Mod_Hit_for_7th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_Hit_for_7th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_Hit_for_7th_Damage_Bonus {
+                get => _Mod_Hit_for_7th_Damage_Bonus_raw;
                 set {
-                    if (Unk_204_raw == value) return;
-                    Unk_204_raw = value;
-                    ChangedItems.Add(nameof(Unk_204));
-                    OnPropertyChanged(nameof(Unk_204));
+                    if (_Mod_Hit_for_7th_Damage_Bonus_raw == value) return;
+                    _Mod_Hit_for_7th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_Hit_for_7th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_Hit_for_7th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_204_offset { get; private set; }
+            public long _Mod_Hit_for_7th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_205_raw;
-            public const string Unk_205_displayName = "Unk 205";
-            public const int Unk_205_sortIndex = 5750;
-            [SortOrder(Unk_205_sortIndex)]
-            [DisplayName(Unk_205_displayName)]
-            public virtual ushort Unk_205 {
-                get => Unk_205_raw;
+            protected ushort _Mod_7th_Damage_Bonus_raw;
+            public const string _Mod_7th_Damage_Bonus_displayName = "(Mod, 7th) Damage Bonus";
+            public const int _Mod_7th_Damage_Bonus_sortIndex = 5750;
+            [SortOrder(_Mod_7th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_7th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_7th_Damage_Bonus {
+                get => _Mod_7th_Damage_Bonus_raw;
                 set {
-                    if (Unk_205_raw == value) return;
-                    Unk_205_raw = value;
-                    ChangedItems.Add(nameof(Unk_205));
-                    OnPropertyChanged(nameof(Unk_205));
+                    if (_Mod_7th_Damage_Bonus_raw == value) return;
+                    _Mod_7th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_7th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_7th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_205_offset { get; private set; }
+            public long _Mod_7th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_206_raw;
-            public const string Unk_206_displayName = "Unk 206";
-            public const int Unk_206_sortIndex = 5800;
-            [SortOrder(Unk_206_sortIndex)]
-            [DisplayName(Unk_206_displayName)]
-            public virtual ushort Unk_206 {
-                get => Unk_206_raw;
+            protected ushort _Mod_Hit_for_8th_Damage_Bonus_raw;
+            public const string _Mod_Hit_for_8th_Damage_Bonus_displayName = "(Mod) Hit for 8th Damage Bonus";
+            public const int _Mod_Hit_for_8th_Damage_Bonus_sortIndex = 5800;
+            [SortOrder(_Mod_Hit_for_8th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_Hit_for_8th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_Hit_for_8th_Damage_Bonus {
+                get => _Mod_Hit_for_8th_Damage_Bonus_raw;
                 set {
-                    if (Unk_206_raw == value) return;
-                    Unk_206_raw = value;
-                    ChangedItems.Add(nameof(Unk_206));
-                    OnPropertyChanged(nameof(Unk_206));
+                    if (_Mod_Hit_for_8th_Damage_Bonus_raw == value) return;
+                    _Mod_Hit_for_8th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_Hit_for_8th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_Hit_for_8th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_206_offset { get; private set; }
+            public long _Mod_Hit_for_8th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_207_raw;
-            public const string Unk_207_displayName = "Unk 207";
-            public const int Unk_207_sortIndex = 5850;
-            [SortOrder(Unk_207_sortIndex)]
-            [DisplayName(Unk_207_displayName)]
-            public virtual ushort Unk_207 {
-                get => Unk_207_raw;
+            protected ushort _Mod_8th_Damage_Bonus_raw;
+            public const string _Mod_8th_Damage_Bonus_displayName = "(Mod, 8th) Damage Bonus";
+            public const int _Mod_8th_Damage_Bonus_sortIndex = 5850;
+            [SortOrder(_Mod_8th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_8th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_8th_Damage_Bonus {
+                get => _Mod_8th_Damage_Bonus_raw;
                 set {
-                    if (Unk_207_raw == value) return;
-                    Unk_207_raw = value;
-                    ChangedItems.Add(nameof(Unk_207));
-                    OnPropertyChanged(nameof(Unk_207));
+                    if (_Mod_8th_Damage_Bonus_raw == value) return;
+                    _Mod_8th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_8th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_8th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_207_offset { get; private set; }
+            public long _Mod_8th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_208_raw;
-            public const string Unk_208_displayName = "Unk 208";
-            public const int Unk_208_sortIndex = 5900;
-            [SortOrder(Unk_208_sortIndex)]
-            [DisplayName(Unk_208_displayName)]
-            public virtual ushort Unk_208 {
-                get => Unk_208_raw;
+            protected ushort _Mod_Hit_for_9th_Damage_Bonus_raw;
+            public const string _Mod_Hit_for_9th_Damage_Bonus_displayName = "(Mod) Hit for 9th Damage Bonus";
+            public const int _Mod_Hit_for_9th_Damage_Bonus_sortIndex = 5900;
+            [SortOrder(_Mod_Hit_for_9th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_Hit_for_9th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_Hit_for_9th_Damage_Bonus {
+                get => _Mod_Hit_for_9th_Damage_Bonus_raw;
                 set {
-                    if (Unk_208_raw == value) return;
-                    Unk_208_raw = value;
-                    ChangedItems.Add(nameof(Unk_208));
-                    OnPropertyChanged(nameof(Unk_208));
+                    if (_Mod_Hit_for_9th_Damage_Bonus_raw == value) return;
+                    _Mod_Hit_for_9th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_Hit_for_9th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_Hit_for_9th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_208_offset { get; private set; }
+            public long _Mod_Hit_for_9th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_209_raw;
-            public const string Unk_209_displayName = "Unk 209";
-            public const int Unk_209_sortIndex = 5950;
-            [SortOrder(Unk_209_sortIndex)]
-            [DisplayName(Unk_209_displayName)]
-            public virtual ushort Unk_209 {
-                get => Unk_209_raw;
+            protected ushort _Mod_9th_Damage_Bonus_raw;
+            public const string _Mod_9th_Damage_Bonus_displayName = "(Mod, 9th) Damage Bonus";
+            public const int _Mod_9th_Damage_Bonus_sortIndex = 5950;
+            [SortOrder(_Mod_9th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_9th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_9th_Damage_Bonus {
+                get => _Mod_9th_Damage_Bonus_raw;
                 set {
-                    if (Unk_209_raw == value) return;
-                    Unk_209_raw = value;
-                    ChangedItems.Add(nameof(Unk_209));
-                    OnPropertyChanged(nameof(Unk_209));
+                    if (_Mod_9th_Damage_Bonus_raw == value) return;
+                    _Mod_9th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_9th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_9th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_209_offset { get; private set; }
+            public long _Mod_9th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_210_raw;
-            public const string Unk_210_displayName = "Unk 210";
-            public const int Unk_210_sortIndex = 6000;
-            [SortOrder(Unk_210_sortIndex)]
-            [DisplayName(Unk_210_displayName)]
-            public virtual ushort Unk_210 {
-                get => Unk_210_raw;
+            protected ushort _Mod_Hit_for_10th_Damage_Bonus_raw;
+            public const string _Mod_Hit_for_10th_Damage_Bonus_displayName = "(Mod) Hit for 10th Damage Bonus";
+            public const int _Mod_Hit_for_10th_Damage_Bonus_sortIndex = 6000;
+            [SortOrder(_Mod_Hit_for_10th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_Hit_for_10th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_Hit_for_10th_Damage_Bonus {
+                get => _Mod_Hit_for_10th_Damage_Bonus_raw;
                 set {
-                    if (Unk_210_raw == value) return;
-                    Unk_210_raw = value;
-                    ChangedItems.Add(nameof(Unk_210));
-                    OnPropertyChanged(nameof(Unk_210));
+                    if (_Mod_Hit_for_10th_Damage_Bonus_raw == value) return;
+                    _Mod_Hit_for_10th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_Hit_for_10th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_Hit_for_10th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_210_offset { get; private set; }
+            public long _Mod_Hit_for_10th_Damage_Bonus_offset { get; private set; }
 
-            protected ushort Unk_211_raw;
-            public const string Unk_211_displayName = "Unk 211";
-            public const int Unk_211_sortIndex = 6050;
-            [SortOrder(Unk_211_sortIndex)]
-            [DisplayName(Unk_211_displayName)]
-            public virtual ushort Unk_211 {
-                get => Unk_211_raw;
+            protected ushort _Mod_10th_Damage_Bonus_raw;
+            public const string _Mod_10th_Damage_Bonus_displayName = "(Mod, 10th) Damage Bonus";
+            public const int _Mod_10th_Damage_Bonus_sortIndex = 6050;
+            [SortOrder(_Mod_10th_Damage_Bonus_sortIndex)]
+            [DisplayName(_Mod_10th_Damage_Bonus_displayName)]
+            public virtual ushort _Mod_10th_Damage_Bonus {
+                get => _Mod_10th_Damage_Bonus_raw;
                 set {
-                    if (Unk_211_raw == value) return;
-                    Unk_211_raw = value;
-                    ChangedItems.Add(nameof(Unk_211));
-                    OnPropertyChanged(nameof(Unk_211));
+                    if (_Mod_10th_Damage_Bonus_raw == value) return;
+                    _Mod_10th_Damage_Bonus_raw = value;
+                    ChangedItems.Add(nameof(_Mod_10th_Damage_Bonus));
+                    OnPropertyChanged(nameof(_Mod_10th_Damage_Bonus));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_211_offset { get; private set; }
+            public long _Mod_10th_Damage_Bonus_offset { get; private set; }
 
             protected byte Unk_212_raw;
             public const string Unk_212_displayName = "Unk 212";
@@ -5165,23 +5165,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_231_offset { get; private set; }
 
-            protected float Unk_232_raw;
-            public const string Unk_232_displayName = "Unk 232";
-            public const int Unk_232_sortIndex = 7100;
-            [SortOrder(Unk_232_sortIndex)]
-            [DisplayName(Unk_232_displayName)]
-            public virtual float Unk_232 {
-                get => Unk_232_raw;
+            protected float Wyrmsnipe_Cooldown_raw;
+            public const string Wyrmsnipe_Cooldown_displayName = "Wyrmsnipe Cooldown";
+            public const int Wyrmsnipe_Cooldown_sortIndex = 7100;
+            [SortOrder(Wyrmsnipe_Cooldown_sortIndex)]
+            [DisplayName(Wyrmsnipe_Cooldown_displayName)]
+            public virtual float Wyrmsnipe_Cooldown {
+                get => Wyrmsnipe_Cooldown_raw;
                 set {
-                    if (Unk_232_raw == value) return;
-                    Unk_232_raw = value;
-                    ChangedItems.Add(nameof(Unk_232));
-                    OnPropertyChanged(nameof(Unk_232));
+                    if (Wyrmsnipe_Cooldown_raw == value) return;
+                    Wyrmsnipe_Cooldown_raw = value;
+                    ChangedItems.Add(nameof(Wyrmsnipe_Cooldown));
+                    OnPropertyChanged(nameof(Wyrmsnipe_Cooldown));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_232_offset { get; private set; }
+            public long Wyrmsnipe_Cooldown_offset { get; private set; }
 
             protected byte Unk_233_raw;
             public const string Unk_233_displayName = "Unk 233";
@@ -5339,22 +5339,22 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_97_raw = reader.ReadSingle();
                 data.Unk_98_offset = reader.BaseStream.Position;
                 data.Unk_98_raw = reader.ReadSingle();
-                data.Unk_99_offset = reader.BaseStream.Position;
-                data.Unk_99_raw = reader.ReadSingle();
-                data.Unk_100_offset = reader.BaseStream.Position;
-                data.Unk_100_raw = reader.ReadUInt32();
-                data.Unk_101_offset = reader.BaseStream.Position;
-                data.Unk_101_raw = reader.ReadSingle();
-                data.Unk_102_offset = reader.BaseStream.Position;
-                data.Unk_102_raw = reader.ReadUInt32();
-                data.Unk_103_offset = reader.BaseStream.Position;
-                data.Unk_103_raw = reader.ReadSingle();
-                data.Unk_104_offset = reader.BaseStream.Position;
-                data.Unk_104_raw = reader.ReadUInt32();
-                data.Unk_105_offset = reader.BaseStream.Position;
-                data.Unk_105_raw = reader.ReadSingle();
-                data.Unk_106_offset = reader.BaseStream.Position;
-                data.Unk_106_raw = reader.ReadUInt32();
+                data.Delay_Between_Shots_Rapid_Fire_Plus1_offset = reader.BaseStream.Position;
+                data.Delay_Between_Shots_Rapid_Fire_Plus1_raw = reader.ReadSingle();
+                data.Extra_Bullets_Rapid_Fire_Plus1_offset = reader.BaseStream.Position;
+                data.Extra_Bullets_Rapid_Fire_Plus1_raw = reader.ReadUInt32();
+                data.Delay_Between_Shots_Rapid_Fire_Plus2_offset = reader.BaseStream.Position;
+                data.Delay_Between_Shots_Rapid_Fire_Plus2_raw = reader.ReadSingle();
+                data.Extra_Bullets_Rapid_Fire_Plus2_offset = reader.BaseStream.Position;
+                data.Extra_Bullets_Rapid_Fire_Plus2_raw = reader.ReadUInt32();
+                data.Delay_Between_Shots_Rapid_Fire_Plus3_offset = reader.BaseStream.Position;
+                data.Delay_Between_Shots_Rapid_Fire_Plus3_raw = reader.ReadSingle();
+                data.Extra_Bullets_Rapid_Fire_Plus3_offset = reader.BaseStream.Position;
+                data.Extra_Bullets_Rapid_Fire_Plus3_raw = reader.ReadUInt32();
+                data.Delay_Between_Shots_Rapid_Fire_Plus4_offset = reader.BaseStream.Position;
+                data.Delay_Between_Shots_Rapid_Fire_Plus4_raw = reader.ReadSingle();
+                data.Extra_Bullets_Rapid_Fire_Plus4_offset = reader.BaseStream.Position;
+                data.Extra_Bullets_Rapid_Fire_Plus4_raw = reader.ReadUInt32();
                 data.Unk_107_offset = reader.BaseStream.Position;
                 data.Unk_107_raw = reader.ReadSingle();
                 data.Unk_108_offset = reader.BaseStream.Position;
@@ -5429,8 +5429,8 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_142_raw = reader.ReadSingle();
                 data.Unk_143_offset = reader.BaseStream.Position;
                 data.Unk_143_raw = reader.ReadSingle();
-                data.Unk_144_offset = reader.BaseStream.Position;
-                data.Unk_144_raw = reader.ReadSingle();
+                data.Rapid_Fire_Extra_Round_Damage_Multiplier_offset = reader.BaseStream.Position;
+                data.Rapid_Fire_Extra_Round_Damage_Multiplier_raw = reader.ReadSingle();
                 data.Unk_145_offset = reader.BaseStream.Position;
                 data.Unk_145_raw = reader.ReadSingle();
                 data.Unk_146_offset = reader.BaseStream.Position;
@@ -5477,14 +5477,14 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_166_raw = reader.ReadSingle();
                 data.Unk_167_offset = reader.BaseStream.Position;
                 data.Unk_167_raw = reader.ReadSingle();
-                data.Unk_168_offset = reader.BaseStream.Position;
-                data.Unk_168_raw = reader.ReadSingle();
-                data.Unk_169_offset = reader.BaseStream.Position;
-                data.Unk_169_raw = reader.ReadSingle();
+                data.Wyvernheart_Ammo_Cap_offset = reader.BaseStream.Position;
+                data.Wyvernheart_Ammo_Cap_raw = reader.ReadSingle();
+                data.Delay_Between_Shots_offset = reader.BaseStream.Position;
+                data.Delay_Between_Shots_raw = reader.ReadSingle();
                 data.Unk_170_offset = reader.BaseStream.Position;
                 data.Unk_170_raw = reader.ReadSingle();
-                data.Unk_171_offset = reader.BaseStream.Position;
-                data.Unk_171_raw = reader.ReadSingle();
+                data.Wyvernheart_Ammo_Recharge_offset = reader.BaseStream.Position;
+                data.Wyvernheart_Ammo_Recharge_raw = reader.ReadSingle();
                 data.Unk_172_offset = reader.BaseStream.Position;
                 data.Unk_172_raw = reader.ReadSingle();
                 data.Unk_173_offset = reader.BaseStream.Position;
@@ -5495,76 +5495,76 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_175_raw = reader.ReadByte();
                 data.Unk_176_offset = reader.BaseStream.Position;
                 data.Unk_176_raw = reader.ReadByte();
-                data.Unk_177_offset = reader.BaseStream.Position;
-                data.Unk_177_raw = reader.ReadByte();
-                data.Unk_178_offset = reader.BaseStream.Position;
-                data.Unk_178_raw = reader.ReadUInt16();
-                data.Unk_179_offset = reader.BaseStream.Position;
-                data.Unk_179_raw = reader.ReadUInt16();
-                data.Unk_180_offset = reader.BaseStream.Position;
-                data.Unk_180_raw = reader.ReadUInt16();
-                data.Unk_181_offset = reader.BaseStream.Position;
-                data.Unk_181_raw = reader.ReadUInt16();
-                data.Unk_182_offset = reader.BaseStream.Position;
-                data.Unk_182_raw = reader.ReadUInt16();
-                data.Unk_183_offset = reader.BaseStream.Position;
-                data.Unk_183_raw = reader.ReadUInt16();
-                data.Unk_184_offset = reader.BaseStream.Position;
-                data.Unk_184_raw = reader.ReadUInt16();
-                data.Unk_185_offset = reader.BaseStream.Position;
-                data.Unk_185_raw = reader.ReadUInt16();
-                data.Unk_186_offset = reader.BaseStream.Position;
-                data.Unk_186_raw = reader.ReadUInt16();
-                data.Unk_187_offset = reader.BaseStream.Position;
-                data.Unk_187_raw = reader.ReadUInt16();
+                data.Wyvernheart_Hit_Count_for_Damage_Bonus_offset = reader.BaseStream.Position;
+                data.Wyvernheart_Hit_Count_for_Damage_Bonus_raw = reader.ReadByte();
+                data.Hit_for_1st_Damage_Bonus_offset = reader.BaseStream.Position;
+                data.Hit_for_1st_Damage_Bonus_raw = reader.ReadUInt16();
+                data._1st_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._1st_Damage_Bonus_raw = reader.ReadUInt16();
+                data.Hit_for_2nd_Damage_Bonus_offset = reader.BaseStream.Position;
+                data.Hit_for_2nd_Damage_Bonus_raw = reader.ReadUInt16();
+                data._2nd_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._2nd_Damage_Bonus_raw = reader.ReadUInt16();
+                data.Hit_for_3rd_Damage_Bonus_offset = reader.BaseStream.Position;
+                data.Hit_for_3rd_Damage_Bonus_raw = reader.ReadUInt16();
+                data._3rd_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._3rd_Damage_Bonus_raw = reader.ReadUInt16();
+                data.Hit_for_4th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data.Hit_for_4th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._4th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._4th_Damage_Bonus_raw = reader.ReadUInt16();
+                data.Hit_for_5th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data.Hit_for_5th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._5th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._5th_Damage_Bonus_raw = reader.ReadUInt16();
                 data.Unk_188_offset = reader.BaseStream.Position;
                 data.Unk_188_raw = reader.ReadByte();
                 data.Unk_189_offset = reader.BaseStream.Position;
                 data.Unk_189_raw = reader.ReadByte();
                 data.Unk_190_offset = reader.BaseStream.Position;
                 data.Unk_190_raw = reader.ReadByte();
-                data.Unk_191_offset = reader.BaseStream.Position;
-                data.Unk_191_raw = reader.ReadByte();
-                data.Unk_192_offset = reader.BaseStream.Position;
-                data.Unk_192_raw = reader.ReadUInt16();
-                data.Unk_193_offset = reader.BaseStream.Position;
-                data.Unk_193_raw = reader.ReadUInt16();
-                data.Unk_194_offset = reader.BaseStream.Position;
-                data.Unk_194_raw = reader.ReadUInt16();
-                data.Unk_195_offset = reader.BaseStream.Position;
-                data.Unk_195_raw = reader.ReadUInt16();
-                data.Unk_196_offset = reader.BaseStream.Position;
-                data.Unk_196_raw = reader.ReadUInt16();
-                data.Unk_197_offset = reader.BaseStream.Position;
-                data.Unk_197_raw = reader.ReadUInt16();
-                data.Unk_198_offset = reader.BaseStream.Position;
-                data.Unk_198_raw = reader.ReadUInt16();
-                data.Unk_199_offset = reader.BaseStream.Position;
-                data.Unk_199_raw = reader.ReadUInt16();
-                data.Unk_200_offset = reader.BaseStream.Position;
-                data.Unk_200_raw = reader.ReadUInt16();
-                data.Unk_201_offset = reader.BaseStream.Position;
-                data.Unk_201_raw = reader.ReadUInt16();
-                data.Unk_202_offset = reader.BaseStream.Position;
-                data.Unk_202_raw = reader.ReadUInt16();
-                data.Unk_203_offset = reader.BaseStream.Position;
-                data.Unk_203_raw = reader.ReadUInt16();
-                data.Unk_204_offset = reader.BaseStream.Position;
-                data.Unk_204_raw = reader.ReadUInt16();
-                data.Unk_205_offset = reader.BaseStream.Position;
-                data.Unk_205_raw = reader.ReadUInt16();
-                data.Unk_206_offset = reader.BaseStream.Position;
-                data.Unk_206_raw = reader.ReadUInt16();
-                data.Unk_207_offset = reader.BaseStream.Position;
-                data.Unk_207_raw = reader.ReadUInt16();
-                data.Unk_208_offset = reader.BaseStream.Position;
-                data.Unk_208_raw = reader.ReadUInt16();
-                data.Unk_209_offset = reader.BaseStream.Position;
-                data.Unk_209_raw = reader.ReadUInt16();
-                data.Unk_210_offset = reader.BaseStream.Position;
-                data.Unk_210_raw = reader.ReadUInt16();
-                data.Unk_211_offset = reader.BaseStream.Position;
-                data.Unk_211_raw = reader.ReadUInt16();
+                data.Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_offset = reader.BaseStream.Position;
+                data.Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_raw = reader.ReadByte();
+                data._Mod_Hit_for_1st_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_Hit_for_1st_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_1st_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_1st_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_Hit_for_2nd_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_Hit_for_2nd_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_2nd_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_2nd_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_Hit_for_3rd_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_Hit_for_3rd_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_3rd_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_3rd_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_Hit_for_4th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_Hit_for_4th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_4th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_4th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_Hit_for_5th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_Hit_for_5th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_5th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_5th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_Hit_for_6th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_Hit_for_6th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_6th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_6th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_Hit_for_7th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_Hit_for_7th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_7th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_7th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_Hit_for_8th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_Hit_for_8th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_8th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_8th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_Hit_for_9th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_Hit_for_9th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_9th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_9th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_Hit_for_10th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_Hit_for_10th_Damage_Bonus_raw = reader.ReadUInt16();
+                data._Mod_10th_Damage_Bonus_offset = reader.BaseStream.Position;
+                data._Mod_10th_Damage_Bonus_raw = reader.ReadUInt16();
                 data.Unk_212_offset = reader.BaseStream.Position;
                 data.Unk_212_raw = reader.ReadByte();
                 data.Unk_213_offset = reader.BaseStream.Position;
@@ -5605,8 +5605,8 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_230_raw = reader.ReadSingle();
                 data.Unk_231_offset = reader.BaseStream.Position;
                 data.Unk_231_raw = reader.ReadByte();
-                data.Unk_232_offset = reader.BaseStream.Position;
-                data.Unk_232_raw = reader.ReadSingle();
+                data.Wyrmsnipe_Cooldown_offset = reader.BaseStream.Position;
+                data.Wyrmsnipe_Cooldown_raw = reader.ReadSingle();
                 data.Unk_233_offset = reader.BaseStream.Position;
                 data.Unk_233_raw = reader.ReadByte();
                 data.Unk_234_offset = reader.BaseStream.Position;
@@ -5633,14 +5633,14 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_96_raw);
                 writer.Write(Unk_97_raw);
                 writer.Write(Unk_98_raw);
-                writer.Write(Unk_99_raw);
-                writer.Write(Unk_100_raw);
-                writer.Write(Unk_101_raw);
-                writer.Write(Unk_102_raw);
-                writer.Write(Unk_103_raw);
-                writer.Write(Unk_104_raw);
-                writer.Write(Unk_105_raw);
-                writer.Write(Unk_106_raw);
+                writer.Write(Delay_Between_Shots_Rapid_Fire_Plus1_raw);
+                writer.Write(Extra_Bullets_Rapid_Fire_Plus1_raw);
+                writer.Write(Delay_Between_Shots_Rapid_Fire_Plus2_raw);
+                writer.Write(Extra_Bullets_Rapid_Fire_Plus2_raw);
+                writer.Write(Delay_Between_Shots_Rapid_Fire_Plus3_raw);
+                writer.Write(Extra_Bullets_Rapid_Fire_Plus3_raw);
+                writer.Write(Delay_Between_Shots_Rapid_Fire_Plus4_raw);
+                writer.Write(Extra_Bullets_Rapid_Fire_Plus4_raw);
                 writer.Write(Unk_107_raw);
                 writer.Write(Unk_108_raw);
                 writer.Write(Unk_109_raw);
@@ -5678,7 +5678,7 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_141_raw);
                 writer.Write(Unk_142_raw);
                 writer.Write(Unk_143_raw);
-                writer.Write(Unk_144_raw);
+                writer.Write(Rapid_Fire_Extra_Round_Damage_Multiplier_raw);
                 writer.Write(Unk_145_raw);
                 writer.Write(Unk_146_raw);
                 writer.Write(Unk_147_raw);
@@ -5702,50 +5702,50 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_165_raw);
                 writer.Write(Unk_166_raw);
                 writer.Write(Unk_167_raw);
-                writer.Write(Unk_168_raw);
-                writer.Write(Unk_169_raw);
+                writer.Write(Wyvernheart_Ammo_Cap_raw);
+                writer.Write(Delay_Between_Shots_raw);
                 writer.Write(Unk_170_raw);
-                writer.Write(Unk_171_raw);
+                writer.Write(Wyvernheart_Ammo_Recharge_raw);
                 writer.Write(Unk_172_raw);
                 writer.Write(Unk_173_raw);
                 writer.Write(Unk_174_raw);
                 writer.Write(Unk_175_raw);
                 writer.Write(Unk_176_raw);
-                writer.Write(Unk_177_raw);
-                writer.Write(Unk_178_raw);
-                writer.Write(Unk_179_raw);
-                writer.Write(Unk_180_raw);
-                writer.Write(Unk_181_raw);
-                writer.Write(Unk_182_raw);
-                writer.Write(Unk_183_raw);
-                writer.Write(Unk_184_raw);
-                writer.Write(Unk_185_raw);
-                writer.Write(Unk_186_raw);
-                writer.Write(Unk_187_raw);
+                writer.Write(Wyvernheart_Hit_Count_for_Damage_Bonus_raw);
+                writer.Write(Hit_for_1st_Damage_Bonus_raw);
+                writer.Write(_1st_Damage_Bonus_raw);
+                writer.Write(Hit_for_2nd_Damage_Bonus_raw);
+                writer.Write(_2nd_Damage_Bonus_raw);
+                writer.Write(Hit_for_3rd_Damage_Bonus_raw);
+                writer.Write(_3rd_Damage_Bonus_raw);
+                writer.Write(Hit_for_4th_Damage_Bonus_raw);
+                writer.Write(_4th_Damage_Bonus_raw);
+                writer.Write(Hit_for_5th_Damage_Bonus_raw);
+                writer.Write(_5th_Damage_Bonus_raw);
                 writer.Write(Unk_188_raw);
                 writer.Write(Unk_189_raw);
                 writer.Write(Unk_190_raw);
-                writer.Write(Unk_191_raw);
-                writer.Write(Unk_192_raw);
-                writer.Write(Unk_193_raw);
-                writer.Write(Unk_194_raw);
-                writer.Write(Unk_195_raw);
-                writer.Write(Unk_196_raw);
-                writer.Write(Unk_197_raw);
-                writer.Write(Unk_198_raw);
-                writer.Write(Unk_199_raw);
-                writer.Write(Unk_200_raw);
-                writer.Write(Unk_201_raw);
-                writer.Write(Unk_202_raw);
-                writer.Write(Unk_203_raw);
-                writer.Write(Unk_204_raw);
-                writer.Write(Unk_205_raw);
-                writer.Write(Unk_206_raw);
-                writer.Write(Unk_207_raw);
-                writer.Write(Unk_208_raw);
-                writer.Write(Unk_209_raw);
-                writer.Write(Unk_210_raw);
-                writer.Write(Unk_211_raw);
+                writer.Write(Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_raw);
+                writer.Write(_Mod_Hit_for_1st_Damage_Bonus_raw);
+                writer.Write(_Mod_1st_Damage_Bonus_raw);
+                writer.Write(_Mod_Hit_for_2nd_Damage_Bonus_raw);
+                writer.Write(_Mod_2nd_Damage_Bonus_raw);
+                writer.Write(_Mod_Hit_for_3rd_Damage_Bonus_raw);
+                writer.Write(_Mod_3rd_Damage_Bonus_raw);
+                writer.Write(_Mod_Hit_for_4th_Damage_Bonus_raw);
+                writer.Write(_Mod_4th_Damage_Bonus_raw);
+                writer.Write(_Mod_Hit_for_5th_Damage_Bonus_raw);
+                writer.Write(_Mod_5th_Damage_Bonus_raw);
+                writer.Write(_Mod_Hit_for_6th_Damage_Bonus_raw);
+                writer.Write(_Mod_6th_Damage_Bonus_raw);
+                writer.Write(_Mod_Hit_for_7th_Damage_Bonus_raw);
+                writer.Write(_Mod_7th_Damage_Bonus_raw);
+                writer.Write(_Mod_Hit_for_8th_Damage_Bonus_raw);
+                writer.Write(_Mod_8th_Damage_Bonus_raw);
+                writer.Write(_Mod_Hit_for_9th_Damage_Bonus_raw);
+                writer.Write(_Mod_9th_Damage_Bonus_raw);
+                writer.Write(_Mod_Hit_for_10th_Damage_Bonus_raw);
+                writer.Write(_Mod_10th_Damage_Bonus_raw);
                 writer.Write(Unk_212_raw);
                 writer.Write(Unk_213_raw);
                 writer.Write(Unk_214_raw);
@@ -5766,7 +5766,7 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_229_raw);
                 writer.Write(Unk_230_raw);
                 writer.Write(Unk_231_raw);
-                writer.Write(Unk_232_raw);
+                writer.Write(Wyrmsnipe_Cooldown_raw);
                 writer.Write(Unk_233_raw);
                 writer.Write(Unk_234_raw);
                 writer.Write(Unk_235_raw);
@@ -5786,14 +5786,14 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 96", "Unk_96", "Unk_96_offset"),
                     new MultiStructItemCustomView(this, "Unk 97", "Unk_97", "Unk_97_offset"),
                     new MultiStructItemCustomView(this, "Unk 98", "Unk_98", "Unk_98_offset"),
-                    new MultiStructItemCustomView(this, "Unk 99", "Unk_99", "Unk_99_offset"),
-                    new MultiStructItemCustomView(this, "Unk 100", "Unk_100", "Unk_100_offset"),
-                    new MultiStructItemCustomView(this, "Unk 101", "Unk_101", "Unk_101_offset"),
-                    new MultiStructItemCustomView(this, "Unk 102", "Unk_102", "Unk_102_offset"),
-                    new MultiStructItemCustomView(this, "Unk 103", "Unk_103", "Unk_103_offset"),
-                    new MultiStructItemCustomView(this, "Unk 104", "Unk_104", "Unk_104_offset"),
-                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105", "Unk_105_offset"),
-                    new MultiStructItemCustomView(this, "Unk 106", "Unk_106", "Unk_106_offset"),
+                    new MultiStructItemCustomView(this, "Delay Between Shots: Rapid Fire +1", "Delay_Between_Shots_Rapid_Fire_Plus1", "Delay_Between_Shots_Rapid_Fire_Plus1_offset"),
+                    new MultiStructItemCustomView(this, "Extra Bullets: Rapid Fire +1", "Extra_Bullets_Rapid_Fire_Plus1", "Extra_Bullets_Rapid_Fire_Plus1_offset"),
+                    new MultiStructItemCustomView(this, "Delay Between Shots: Rapid Fire +2", "Delay_Between_Shots_Rapid_Fire_Plus2", "Delay_Between_Shots_Rapid_Fire_Plus2_offset"),
+                    new MultiStructItemCustomView(this, "Extra Bullets: Rapid Fire +2", "Extra_Bullets_Rapid_Fire_Plus2", "Extra_Bullets_Rapid_Fire_Plus2_offset"),
+                    new MultiStructItemCustomView(this, "Delay Between Shots: Rapid Fire +3", "Delay_Between_Shots_Rapid_Fire_Plus3", "Delay_Between_Shots_Rapid_Fire_Plus3_offset"),
+                    new MultiStructItemCustomView(this, "Extra Bullets: Rapid Fire +3", "Extra_Bullets_Rapid_Fire_Plus3", "Extra_Bullets_Rapid_Fire_Plus3_offset"),
+                    new MultiStructItemCustomView(this, "Delay Between Shots: Rapid Fire +4", "Delay_Between_Shots_Rapid_Fire_Plus4", "Delay_Between_Shots_Rapid_Fire_Plus4_offset"),
+                    new MultiStructItemCustomView(this, "Extra Bullets: Rapid Fire +4", "Extra_Bullets_Rapid_Fire_Plus4", "Extra_Bullets_Rapid_Fire_Plus4_offset"),
                     new MultiStructItemCustomView(this, "Unk 107", "Unk_107", "Unk_107_offset"),
                     new MultiStructItemCustomView(this, "Unk 108", "Unk_108", "Unk_108_offset"),
                     new MultiStructItemCustomView(this, "Unk 109", "Unk_109", "Unk_109_offset"),
@@ -5831,7 +5831,7 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 141", "Unk_141", "Unk_141_offset"),
                     new MultiStructItemCustomView(this, "Unk 142", "Unk_142", "Unk_142_offset"),
                     new MultiStructItemCustomView(this, "Unk 143", "Unk_143", "Unk_143_offset"),
-                    new MultiStructItemCustomView(this, "Unk 144", "Unk_144", "Unk_144_offset"),
+                    new MultiStructItemCustomView(this, "Rapid Fire Extra Round Damage Multiplier", "Rapid_Fire_Extra_Round_Damage_Multiplier", "Rapid_Fire_Extra_Round_Damage_Multiplier_offset"),
                     new MultiStructItemCustomView(this, "Unk 145", "Unk_145", "Unk_145_offset"),
                     new MultiStructItemCustomView(this, "Unk 146", "Unk_146", "Unk_146_offset"),
                     new MultiStructItemCustomView(this, "Unk 147", "Unk_147", "Unk_147_offset"),
@@ -5855,50 +5855,50 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 165", "Unk_165", "Unk_165_offset"),
                     new MultiStructItemCustomView(this, "Unk 166", "Unk_166", "Unk_166_offset"),
                     new MultiStructItemCustomView(this, "Unk 167", "Unk_167", "Unk_167_offset"),
-                    new MultiStructItemCustomView(this, "Unk 168", "Unk_168", "Unk_168_offset"),
-                    new MultiStructItemCustomView(this, "Unk 169", "Unk_169", "Unk_169_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernheart Ammo Cap", "Wyvernheart_Ammo_Cap", "Wyvernheart_Ammo_Cap_offset"),
+                    new MultiStructItemCustomView(this, "Delay Between Shots", "Delay_Between_Shots", "Delay_Between_Shots_offset"),
                     new MultiStructItemCustomView(this, "Unk 170", "Unk_170", "Unk_170_offset"),
-                    new MultiStructItemCustomView(this, "Unk 171", "Unk_171", "Unk_171_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernheart Ammo Recharge", "Wyvernheart_Ammo_Recharge", "Wyvernheart_Ammo_Recharge_offset"),
                     new MultiStructItemCustomView(this, "Unk 172", "Unk_172", "Unk_172_offset"),
                     new MultiStructItemCustomView(this, "Unk 173", "Unk_173", "Unk_173_offset"),
                     new MultiStructItemCustomView(this, "Unk 174", "Unk_174", "Unk_174_offset"),
                     new MultiStructItemCustomView(this, "Unk 175", "Unk_175", "Unk_175_offset"),
                     new MultiStructItemCustomView(this, "Unk 176", "Unk_176", "Unk_176_offset"),
-                    new MultiStructItemCustomView(this, "Unk 177", "Unk_177", "Unk_177_offset"),
-                    new MultiStructItemCustomView(this, "Unk 178", "Unk_178", "Unk_178_offset"),
-                    new MultiStructItemCustomView(this, "Unk 179", "Unk_179", "Unk_179_offset"),
-                    new MultiStructItemCustomView(this, "Unk 180", "Unk_180", "Unk_180_offset"),
-                    new MultiStructItemCustomView(this, "Unk 181", "Unk_181", "Unk_181_offset"),
-                    new MultiStructItemCustomView(this, "Unk 182", "Unk_182", "Unk_182_offset"),
-                    new MultiStructItemCustomView(this, "Unk 183", "Unk_183", "Unk_183_offset"),
-                    new MultiStructItemCustomView(this, "Unk 184", "Unk_184", "Unk_184_offset"),
-                    new MultiStructItemCustomView(this, "Unk 185", "Unk_185", "Unk_185_offset"),
-                    new MultiStructItemCustomView(this, "Unk 186", "Unk_186", "Unk_186_offset"),
-                    new MultiStructItemCustomView(this, "Unk 187", "Unk_187", "Unk_187_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernheart Hit Count for Damage Bonus", "Wyvernheart_Hit_Count_for_Damage_Bonus", "Wyvernheart_Hit_Count_for_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Hit for 1st Damage Bonus", "Hit_for_1st_Damage_Bonus", "Hit_for_1st_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(1st) Damage Bonus", "_1st_Damage_Bonus", "_1st_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Hit for 2nd Damage Bonus", "Hit_for_2nd_Damage_Bonus", "Hit_for_2nd_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(2nd) Damage Bonus", "_2nd_Damage_Bonus", "_2nd_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Hit for 3rd Damage Bonus", "Hit_for_3rd_Damage_Bonus", "Hit_for_3rd_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(3rd) Damage Bonus", "_3rd_Damage_Bonus", "_3rd_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Hit for 4th Damage Bonus", "Hit_for_4th_Damage_Bonus", "Hit_for_4th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(4th) Damage Bonus", "_4th_Damage_Bonus", "_4th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "Hit for 5th Damage Bonus", "Hit_for_5th_Damage_Bonus", "Hit_for_5th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(5th) Damage Bonus", "_5th_Damage_Bonus", "_5th_Damage_Bonus_offset"),
                     new MultiStructItemCustomView(this, "Unk 188", "Unk_188", "Unk_188_offset"),
                     new MultiStructItemCustomView(this, "Unk 189", "Unk_189", "Unk_189_offset"),
                     new MultiStructItemCustomView(this, "Unk 190", "Unk_190", "Unk_190_offset"),
-                    new MultiStructItemCustomView(this, "Unk 191", "Unk_191", "Unk_191_offset"),
-                    new MultiStructItemCustomView(this, "Unk 192", "Unk_192", "Unk_192_offset"),
-                    new MultiStructItemCustomView(this, "Unk 193", "Unk_193", "Unk_193_offset"),
-                    new MultiStructItemCustomView(this, "Unk 194", "Unk_194", "Unk_194_offset"),
-                    new MultiStructItemCustomView(this, "Unk 195", "Unk_195", "Unk_195_offset"),
-                    new MultiStructItemCustomView(this, "Unk 196", "Unk_196", "Unk_196_offset"),
-                    new MultiStructItemCustomView(this, "Unk 197", "Unk_197", "Unk_197_offset"),
-                    new MultiStructItemCustomView(this, "Unk 198", "Unk_198", "Unk_198_offset"),
-                    new MultiStructItemCustomView(this, "Unk 199", "Unk_199", "Unk_199_offset"),
-                    new MultiStructItemCustomView(this, "Unk 200", "Unk_200", "Unk_200_offset"),
-                    new MultiStructItemCustomView(this, "Unk 201", "Unk_201", "Unk_201_offset"),
-                    new MultiStructItemCustomView(this, "Unk 202", "Unk_202", "Unk_202_offset"),
-                    new MultiStructItemCustomView(this, "Unk 203", "Unk_203", "Unk_203_offset"),
-                    new MultiStructItemCustomView(this, "Unk 204", "Unk_204", "Unk_204_offset"),
-                    new MultiStructItemCustomView(this, "Unk 205", "Unk_205", "Unk_205_offset"),
-                    new MultiStructItemCustomView(this, "Unk 206", "Unk_206", "Unk_206_offset"),
-                    new MultiStructItemCustomView(this, "Unk 207", "Unk_207", "Unk_207_offset"),
-                    new MultiStructItemCustomView(this, "Unk 208", "Unk_208", "Unk_208_offset"),
-                    new MultiStructItemCustomView(this, "Unk 209", "Unk_209", "Unk_209_offset"),
-                    new MultiStructItemCustomView(this, "Unk 210", "Unk_210", "Unk_210_offset"),
-                    new MultiStructItemCustomView(this, "Unk 211", "Unk_211", "Unk_211_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernheart Mod Hit Count for Damage Bonus", "Wyvernheart_Mod_Hit_Count_for_Damage_Bonus", "Wyvernheart_Mod_Hit_Count_for_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod) Hit for 1st Damage Bonus", "_Mod_Hit_for_1st_Damage_Bonus", "_Mod_Hit_for_1st_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod, 1st) Damage Bonus", "_Mod_1st_Damage_Bonus", "_Mod_1st_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod) Hit for 2nd Damage Bonus", "_Mod_Hit_for_2nd_Damage_Bonus", "_Mod_Hit_for_2nd_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod, 2nd) Damage Bonus", "_Mod_2nd_Damage_Bonus", "_Mod_2nd_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod) Hit for 3rd Damage Bonus", "_Mod_Hit_for_3rd_Damage_Bonus", "_Mod_Hit_for_3rd_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod, 3rd) Damage Bonus", "_Mod_3rd_Damage_Bonus", "_Mod_3rd_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod) Hit for 4th Damage Bonus", "_Mod_Hit_for_4th_Damage_Bonus", "_Mod_Hit_for_4th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod, 4th) Damage Bonus", "_Mod_4th_Damage_Bonus", "_Mod_4th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod) Hit for 5th Damage Bonus", "_Mod_Hit_for_5th_Damage_Bonus", "_Mod_Hit_for_5th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod, 5th) Damage Bonus", "_Mod_5th_Damage_Bonus", "_Mod_5th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod) Hit for 6th Damage Bonus", "_Mod_Hit_for_6th_Damage_Bonus", "_Mod_Hit_for_6th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod, 6th) Damage Bonus", "_Mod_6th_Damage_Bonus", "_Mod_6th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod) Hit for 7th Damage Bonus", "_Mod_Hit_for_7th_Damage_Bonus", "_Mod_Hit_for_7th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod, 7th) Damage Bonus", "_Mod_7th_Damage_Bonus", "_Mod_7th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod) Hit for 8th Damage Bonus", "_Mod_Hit_for_8th_Damage_Bonus", "_Mod_Hit_for_8th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod, 8th) Damage Bonus", "_Mod_8th_Damage_Bonus", "_Mod_8th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod) Hit for 9th Damage Bonus", "_Mod_Hit_for_9th_Damage_Bonus", "_Mod_Hit_for_9th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod, 9th) Damage Bonus", "_Mod_9th_Damage_Bonus", "_Mod_9th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod) Hit for 10th Damage Bonus", "_Mod_Hit_for_10th_Damage_Bonus", "_Mod_Hit_for_10th_Damage_Bonus_offset"),
+                    new MultiStructItemCustomView(this, "(Mod, 10th) Damage Bonus", "_Mod_10th_Damage_Bonus", "_Mod_10th_Damage_Bonus_offset"),
                     new MultiStructItemCustomView(this, "Unk 212", "Unk_212", "Unk_212_offset"),
                     new MultiStructItemCustomView(this, "Unk 213", "Unk_213", "Unk_213_offset"),
                     new MultiStructItemCustomView(this, "Unk 214", "Unk_214", "Unk_214_offset"),
@@ -5919,7 +5919,7 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 229", "Unk_229", "Unk_229_offset"),
                     new MultiStructItemCustomView(this, "Unk 230", "Unk_230", "Unk_230_offset"),
                     new MultiStructItemCustomView(this, "Unk 231", "Unk_231", "Unk_231_offset"),
-                    new MultiStructItemCustomView(this, "Unk 232", "Unk_232", "Unk_232_offset"),
+                    new MultiStructItemCustomView(this, "Wyrmsnipe Cooldown", "Wyrmsnipe_Cooldown", "Wyrmsnipe_Cooldown_offset"),
                     new MultiStructItemCustomView(this, "Unk 233", "Unk_233", "Unk_233_offset"),
                     new MultiStructItemCustomView(this, "Unk 234", "Unk_234", "Unk_234_offset"),
                     new MultiStructItemCustomView(this, "Unk 235", "Unk_235", "Unk_235_offset"),
@@ -7811,23 +7811,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_284_offset { get; private set; }
 
-            protected ushort Unk_285_raw;
-            public const string Unk_285_displayName = "Unk 285";
-            public const int Unk_285_sortIndex = 100;
-            [SortOrder(Unk_285_sortIndex)]
-            [DisplayName(Unk_285_displayName)]
-            public virtual ushort Unk_285 {
-                get => Unk_285_raw;
+            protected ushort Wyvernblast_S_Charge_Consumption_raw;
+            public const string Wyvernblast_S_Charge_Consumption_displayName = "Wyvernblast (S) Charge Consumption";
+            public const int Wyvernblast_S_Charge_Consumption_sortIndex = 100;
+            [SortOrder(Wyvernblast_S_Charge_Consumption_sortIndex)]
+            [DisplayName(Wyvernblast_S_Charge_Consumption_displayName)]
+            public virtual ushort Wyvernblast_S_Charge_Consumption {
+                get => Wyvernblast_S_Charge_Consumption_raw;
                 set {
-                    if (Unk_285_raw == value) return;
-                    Unk_285_raw = value;
-                    ChangedItems.Add(nameof(Unk_285));
-                    OnPropertyChanged(nameof(Unk_285));
+                    if (Wyvernblast_S_Charge_Consumption_raw == value) return;
+                    Wyvernblast_S_Charge_Consumption_raw = value;
+                    ChangedItems.Add(nameof(Wyvernblast_S_Charge_Consumption));
+                    OnPropertyChanged(nameof(Wyvernblast_S_Charge_Consumption));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_285_offset { get; private set; }
+            public long Wyvernblast_S_Charge_Consumption_offset { get; private set; }
 
             protected ushort Unk_286_raw;
             public const string Unk_286_displayName = "Unk 286";
@@ -7847,23 +7847,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_286_offset { get; private set; }
 
-            protected ushort Unk_287_raw;
-            public const string Unk_287_displayName = "Unk 287";
-            public const int Unk_287_sortIndex = 200;
-            [SortOrder(Unk_287_sortIndex)]
-            [DisplayName(Unk_287_displayName)]
-            public virtual ushort Unk_287 {
-                get => Unk_287_raw;
+            protected ushort Wyvernblast_M_Charge_Consumption_raw;
+            public const string Wyvernblast_M_Charge_Consumption_displayName = "Wyvernblast (M) Charge Consumption";
+            public const int Wyvernblast_M_Charge_Consumption_sortIndex = 200;
+            [SortOrder(Wyvernblast_M_Charge_Consumption_sortIndex)]
+            [DisplayName(Wyvernblast_M_Charge_Consumption_displayName)]
+            public virtual ushort Wyvernblast_M_Charge_Consumption {
+                get => Wyvernblast_M_Charge_Consumption_raw;
                 set {
-                    if (Unk_287_raw == value) return;
-                    Unk_287_raw = value;
-                    ChangedItems.Add(nameof(Unk_287));
-                    OnPropertyChanged(nameof(Unk_287));
+                    if (Wyvernblast_M_Charge_Consumption_raw == value) return;
+                    Wyvernblast_M_Charge_Consumption_raw = value;
+                    ChangedItems.Add(nameof(Wyvernblast_M_Charge_Consumption));
+                    OnPropertyChanged(nameof(Wyvernblast_M_Charge_Consumption));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_287_offset { get; private set; }
+            public long Wyvernblast_M_Charge_Consumption_offset { get; private set; }
 
             protected ushort Unk_288_raw;
             public const string Unk_288_displayName = "Unk 288";
@@ -7883,23 +7883,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_288_offset { get; private set; }
 
-            protected ushort Unk_289_raw;
-            public const string Unk_289_displayName = "Unk 289";
-            public const int Unk_289_sortIndex = 300;
-            [SortOrder(Unk_289_sortIndex)]
-            [DisplayName(Unk_289_displayName)]
-            public virtual ushort Unk_289 {
-                get => Unk_289_raw;
+            protected ushort Wyvernblast_L_Charge_Consumption_raw;
+            public const string Wyvernblast_L_Charge_Consumption_displayName = "Wyvernblast (L) Charge Consumption";
+            public const int Wyvernblast_L_Charge_Consumption_sortIndex = 300;
+            [SortOrder(Wyvernblast_L_Charge_Consumption_sortIndex)]
+            [DisplayName(Wyvernblast_L_Charge_Consumption_displayName)]
+            public virtual ushort Wyvernblast_L_Charge_Consumption {
+                get => Wyvernblast_L_Charge_Consumption_raw;
                 set {
-                    if (Unk_289_raw == value) return;
-                    Unk_289_raw = value;
-                    ChangedItems.Add(nameof(Unk_289));
-                    OnPropertyChanged(nameof(Unk_289));
+                    if (Wyvernblast_L_Charge_Consumption_raw == value) return;
+                    Wyvernblast_L_Charge_Consumption_raw = value;
+                    ChangedItems.Add(nameof(Wyvernblast_L_Charge_Consumption));
+                    OnPropertyChanged(nameof(Wyvernblast_L_Charge_Consumption));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_289_offset { get; private set; }
+            public long Wyvernblast_L_Charge_Consumption_offset { get; private set; }
 
             protected short Unk_290_raw;
             public const string Unk_290_displayName = "Unk 290";
@@ -8495,23 +8495,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_322_offset { get; private set; }
 
-            protected float Unk_323_raw;
-            public const string Unk_323_displayName = "Unk 323";
-            public const int Unk_323_sortIndex = 2000;
-            [SortOrder(Unk_323_sortIndex)]
-            [DisplayName(Unk_323_displayName)]
-            public virtual float Unk_323 {
-                get => Unk_323_raw;
+            protected float Wyvernblast_Cooldown_raw;
+            public const string Wyvernblast_Cooldown_displayName = "Wyvernblast Cooldown";
+            public const int Wyvernblast_Cooldown_sortIndex = 2000;
+            [SortOrder(Wyvernblast_Cooldown_sortIndex)]
+            [DisplayName(Wyvernblast_Cooldown_displayName)]
+            public virtual float Wyvernblast_Cooldown {
+                get => Wyvernblast_Cooldown_raw;
                 set {
-                    if (Unk_323_raw == value) return;
-                    Unk_323_raw = value;
-                    ChangedItems.Add(nameof(Unk_323));
-                    OnPropertyChanged(nameof(Unk_323));
+                    if (Wyvernblast_Cooldown_raw == value) return;
+                    Wyvernblast_Cooldown_raw = value;
+                    ChangedItems.Add(nameof(Wyvernblast_Cooldown));
+                    OnPropertyChanged(nameof(Wyvernblast_Cooldown));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_323_offset { get; private set; }
+            public long Wyvernblast_Cooldown_offset { get; private set; }
 
             protected byte Unk_324_raw;
             public const string Unk_324_displayName = "Unk 324";
@@ -8763,16 +8763,16 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Index = i;
                 data.Unk_284_offset = reader.BaseStream.Position;
                 data.Unk_284_raw = reader.ReadUInt16();
-                data.Unk_285_offset = reader.BaseStream.Position;
-                data.Unk_285_raw = reader.ReadUInt16();
+                data.Wyvernblast_S_Charge_Consumption_offset = reader.BaseStream.Position;
+                data.Wyvernblast_S_Charge_Consumption_raw = reader.ReadUInt16();
                 data.Unk_286_offset = reader.BaseStream.Position;
                 data.Unk_286_raw = reader.ReadUInt16();
-                data.Unk_287_offset = reader.BaseStream.Position;
-                data.Unk_287_raw = reader.ReadUInt16();
+                data.Wyvernblast_M_Charge_Consumption_offset = reader.BaseStream.Position;
+                data.Wyvernblast_M_Charge_Consumption_raw = reader.ReadUInt16();
                 data.Unk_288_offset = reader.BaseStream.Position;
                 data.Unk_288_raw = reader.ReadUInt16();
-                data.Unk_289_offset = reader.BaseStream.Position;
-                data.Unk_289_raw = reader.ReadUInt16();
+                data.Wyvernblast_L_Charge_Consumption_offset = reader.BaseStream.Position;
+                data.Wyvernblast_L_Charge_Consumption_raw = reader.ReadUInt16();
                 data.Unk_290_offset = reader.BaseStream.Position;
                 data.Unk_290_raw = reader.ReadInt16();
                 data.Unk_291_offset = reader.BaseStream.Position;
@@ -8839,8 +8839,8 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_321_raw = reader.ReadSingle();
                 data.Unk_322_offset = reader.BaseStream.Position;
                 data.Unk_322_raw = reader.ReadSingle();
-                data.Unk_323_offset = reader.BaseStream.Position;
-                data.Unk_323_raw = reader.ReadSingle();
+                data.Wyvernblast_Cooldown_offset = reader.BaseStream.Position;
+                data.Wyvernblast_Cooldown_raw = reader.ReadSingle();
                 data.Unk_324_offset = reader.BaseStream.Position;
                 data.Unk_324_raw = reader.ReadByte();
                 data.Unk_325_offset = reader.BaseStream.Position;
@@ -8872,11 +8872,11 @@ namespace MHW_Editor.Structs.Weapons {
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Unk_284_raw);
-                writer.Write(Unk_285_raw);
+                writer.Write(Wyvernblast_S_Charge_Consumption_raw);
                 writer.Write(Unk_286_raw);
-                writer.Write(Unk_287_raw);
+                writer.Write(Wyvernblast_M_Charge_Consumption_raw);
                 writer.Write(Unk_288_raw);
-                writer.Write(Unk_289_raw);
+                writer.Write(Wyvernblast_L_Charge_Consumption_raw);
                 writer.Write(Unk_290_raw);
                 writer.Write(Unk_291_raw);
                 writer.Write(Unk_292_raw);
@@ -8910,7 +8910,7 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_320_raw);
                 writer.Write(Unk_321_raw);
                 writer.Write(Unk_322_raw);
-                writer.Write(Unk_323_raw);
+                writer.Write(Wyvernblast_Cooldown_raw);
                 writer.Write(Unk_324_raw);
                 writer.Write(Unk_325_raw);
                 writer.Write(Unk_326_raw);
@@ -8929,11 +8929,11 @@ namespace MHW_Editor.Structs.Weapons {
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
                     new MultiStructItemCustomView(this, "Unk 284", "Unk_284", "Unk_284_offset"),
-                    new MultiStructItemCustomView(this, "Unk 285", "Unk_285", "Unk_285_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernblast (S) Charge Consumption", "Wyvernblast_S_Charge_Consumption", "Wyvernblast_S_Charge_Consumption_offset"),
                     new MultiStructItemCustomView(this, "Unk 286", "Unk_286", "Unk_286_offset"),
-                    new MultiStructItemCustomView(this, "Unk 287", "Unk_287", "Unk_287_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernblast (M) Charge Consumption", "Wyvernblast_M_Charge_Consumption", "Wyvernblast_M_Charge_Consumption_offset"),
                     new MultiStructItemCustomView(this, "Unk 288", "Unk_288", "Unk_288_offset"),
-                    new MultiStructItemCustomView(this, "Unk 289", "Unk_289", "Unk_289_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernblast (L) Charge Consumption", "Wyvernblast_L_Charge_Consumption", "Wyvernblast_L_Charge_Consumption_offset"),
                     new MultiStructItemCustomView(this, "Unk 290", "Unk_290", "Unk_290_offset"),
                     new MultiStructItemCustomView(this, "Unk 291", "Unk_291", "Unk_291_offset"),
                     new MultiStructItemCustomView(this, "Unk 292", "Unk_292", "Unk_292_offset"),
@@ -8967,7 +8967,7 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 320", "Unk_320", "Unk_320_offset"),
                     new MultiStructItemCustomView(this, "Unk 321", "Unk_321", "Unk_321_offset"),
                     new MultiStructItemCustomView(this, "Unk 322", "Unk_322", "Unk_322_offset"),
-                    new MultiStructItemCustomView(this, "Unk 323", "Unk_323", "Unk_323_offset"),
+                    new MultiStructItemCustomView(this, "Wyvernblast Cooldown", "Wyvernblast_Cooldown", "Wyvernblast_Cooldown_offset"),
                     new MultiStructItemCustomView(this, "Unk 324", "Unk_324", "Unk_324_offset"),
                     new MultiStructItemCustomView(this, "Unk 325", "Unk_325", "Unk_325_offset"),
                     new MultiStructItemCustomView(this, "Unk 326", "Unk_326", "Unk_326_offset"),
@@ -8985,9 +8985,9 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class HZD_Ammo_Guage_Levels : MhwStructItem, IWriteData {
+        public partial class HZD_Ammo_Gauge_Levels : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 9;
-            public const string GridName = "HZD Ammo Guage Levels";
+            public const string GridName = "HZD Ammo Gauge Levels";
 
             protected float Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
@@ -9111,8 +9111,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 450;
 
-            public static ObservableMhwStructCollection<HZD_Ammo_Guage_Levels> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<HZD_Ammo_Guage_Levels>();
+            public static ObservableMhwStructCollection<HZD_Ammo_Gauge_Levels> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<HZD_Ammo_Gauge_Levels>();
                 var count = 9UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -9120,8 +9120,8 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static HZD_Ammo_Guage_Levels LoadData(BinaryReader reader, ulong i) {
-                var data = new HZD_Ammo_Guage_Levels();
+            public static HZD_Ammo_Gauge_Levels LoadData(BinaryReader reader, ulong i) {
+                var data = new HZD_Ammo_Gauge_Levels();
                 data.Index = i;
                 data.Unk_1_raw = reader.ReadSingle();
                 data.Unk_2_raw = reader.ReadSingle();
@@ -9182,8 +9182,8 @@ namespace MHW_Editor.Structs.Weapons {
             data.AddLast(Unk_Arr_5_);
             var W13p_Params_8__ = new MhwStructDataContainer<W13p_Params_8_>(W13p_Params_8_.LoadData(reader), typeof(W13p_Params_8_));
             data.AddLast(W13p_Params_8__);
-            var HZD_Ammo_Guage_Levels_ = new MhwStructDataContainer<HZD_Ammo_Guage_Levels>(HZD_Ammo_Guage_Levels.LoadData(reader), typeof(HZD_Ammo_Guage_Levels));
-            data.AddLast(HZD_Ammo_Guage_Levels_);
+            var HZD_Ammo_Gauge_Levels_ = new MhwStructDataContainer<HZD_Ammo_Gauge_Levels>(HZD_Ammo_Gauge_Levels.LoadData(reader), typeof(HZD_Ammo_Gauge_Levels));
+            data.AddLast(HZD_Ammo_Gauge_Levels_);
         }
     }
 }

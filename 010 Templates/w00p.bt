@@ -142,15 +142,15 @@ float Unk_88<name="Unk 88 (float)">;
 float Unk_89<name="Unk 89 (float)">;
 float Unk_90<name="Unk 90 (float)">;
 
-// Unk Arr 3
+// Charge Times
 typedef struct {
     float Unk_1<name="Unk 1 (float)">;
-    float Unk_2<name="Unk 2 (float)">;
-    float Unk_3<name="Unk 3 (float)">;
-    float Unk_4<name="Unk 4 (float)">;
-} Unk_Arr_3;
+    float Charge_lvl_1<name="Charge lvl 1 (float)">;
+    float Charge_lvl_2<name="Charge lvl 2 (float)">;
+    float Charge_lvl_3<name="Charge lvl 3 (float)">;
+} Charge_Times;
 
-Unk_Arr_3 Unk_Arr_3_[5]<optimize=false, name="Unk Arr 3">;
+Charge_Times Charge_Times_[5]<optimize=false, name="Charge Times">;
 
 float Unk_91<name="Unk 91 (float)">;
 float Unk_92<name="Unk 92 (float)">;

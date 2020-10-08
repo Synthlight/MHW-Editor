@@ -13,12 +13,12 @@ namespace MHW_Generator.Weapons {
             structs.AddRange(new List<MhwMultiStructData.StructData> {
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(ushort)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(ushort)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(ushort)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(ushort)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(ushort)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(ushort)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(short)),
+                    new MhwMultiStructData.Entry("Wyvernblast (S) Charge Consumption", typeof(ushort)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Wyvernblast (M) Charge Consumption", typeof(ushort)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(ushort)),
+                    new MhwMultiStructData.Entry("Wyvernblast (L) Charge Consumption", typeof(ushort)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(short)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(short)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(ushort)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(ushort)),
@@ -51,8 +51,8 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
+                    new MhwMultiStructData.Entry("Wyvernblast Cooldown", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(byte)),
@@ -67,7 +67,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),
 
-                new MhwMultiStructData.StructData("HZD Ammo Guage Levels", new List<MhwMultiStructData.Entry> {
+                new MhwMultiStructData.StructData("HZD Ammo Gauge Levels", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Unk 1", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 2", typeof(float)),
                     new MhwMultiStructData.Entry("Unk 3", typeof(float)),
