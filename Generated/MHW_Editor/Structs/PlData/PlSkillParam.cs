@@ -7395,266 +7395,266 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skill_Params_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
+        public partial class Clutch_Claw_Boost : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "Skill Params (8)";
+            public const string GridName = "Clutch Claw Boost";
 
-            protected float Fatalis_Unk_1_raw;
-            public const string Fatalis_Unk_1_displayName = "Fatalis Unk 1";
-            public const int Fatalis_Unk_1_sortIndex = 50;
-            [SortOrder(Fatalis_Unk_1_sortIndex)]
-            [DisplayName(Fatalis_Unk_1_displayName)]
-            public virtual float Fatalis_Unk_1 {
-                get => Fatalis_Unk_1_raw;
+            protected float Tenderizing_Damage_Multiplier_Great_Sword_raw;
+            public const string Tenderizing_Damage_Multiplier_Great_Sword_displayName = "Tenderizing Damage % Multiplier: Great Sword";
+            public const int Tenderizing_Damage_Multiplier_Great_Sword_sortIndex = 50;
+            [SortOrder(Tenderizing_Damage_Multiplier_Great_Sword_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_Great_Sword_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_Great_Sword {
+                get => Tenderizing_Damage_Multiplier_Great_Sword_raw;
                 set {
-                    if (Fatalis_Unk_1_raw == value) return;
-                    Fatalis_Unk_1_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_1));
-                    OnPropertyChanged(nameof(Fatalis_Unk_1));
+                    if (Tenderizing_Damage_Multiplier_Great_Sword_raw == value) return;
+                    Tenderizing_Damage_Multiplier_Great_Sword_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_Great_Sword));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_Great_Sword));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_1_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_Great_Sword_offset { get; private set; }
 
-            protected float Fatalis_Unk_2_raw;
-            public const string Fatalis_Unk_2_displayName = "Fatalis Unk 2";
-            public const int Fatalis_Unk_2_sortIndex = 100;
-            [SortOrder(Fatalis_Unk_2_sortIndex)]
-            [DisplayName(Fatalis_Unk_2_displayName)]
-            public virtual float Fatalis_Unk_2 {
-                get => Fatalis_Unk_2_raw;
+            protected float Tenderizing_Damage_Multiplier_Sword_Shield_raw;
+            public const string Tenderizing_Damage_Multiplier_Sword_Shield_displayName = "Tenderizing Damage % Multiplier: Sword & Shield";
+            public const int Tenderizing_Damage_Multiplier_Sword_Shield_sortIndex = 100;
+            [SortOrder(Tenderizing_Damage_Multiplier_Sword_Shield_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_Sword_Shield_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_Sword_Shield {
+                get => Tenderizing_Damage_Multiplier_Sword_Shield_raw;
                 set {
-                    if (Fatalis_Unk_2_raw == value) return;
-                    Fatalis_Unk_2_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_2));
-                    OnPropertyChanged(nameof(Fatalis_Unk_2));
+                    if (Tenderizing_Damage_Multiplier_Sword_Shield_raw == value) return;
+                    Tenderizing_Damage_Multiplier_Sword_Shield_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_Sword_Shield));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_Sword_Shield));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_2_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_Sword_Shield_offset { get; private set; }
 
-            protected float Fatalis_Unk_3_raw;
-            public const string Fatalis_Unk_3_displayName = "Fatalis Unk 3";
-            public const int Fatalis_Unk_3_sortIndex = 150;
-            [SortOrder(Fatalis_Unk_3_sortIndex)]
-            [DisplayName(Fatalis_Unk_3_displayName)]
-            public virtual float Fatalis_Unk_3 {
-                get => Fatalis_Unk_3_raw;
+            protected float Tenderizing_Damage_Multiplier_Dual_Blades_raw;
+            public const string Tenderizing_Damage_Multiplier_Dual_Blades_displayName = "Tenderizing Damage % Multiplier: Dual Blades";
+            public const int Tenderizing_Damage_Multiplier_Dual_Blades_sortIndex = 150;
+            [SortOrder(Tenderizing_Damage_Multiplier_Dual_Blades_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_Dual_Blades_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_Dual_Blades {
+                get => Tenderizing_Damage_Multiplier_Dual_Blades_raw;
                 set {
-                    if (Fatalis_Unk_3_raw == value) return;
-                    Fatalis_Unk_3_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_3));
-                    OnPropertyChanged(nameof(Fatalis_Unk_3));
+                    if (Tenderizing_Damage_Multiplier_Dual_Blades_raw == value) return;
+                    Tenderizing_Damage_Multiplier_Dual_Blades_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_Dual_Blades));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_Dual_Blades));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_3_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_Dual_Blades_offset { get; private set; }
 
-            protected float Fatalis_Unk_4_raw;
-            public const string Fatalis_Unk_4_displayName = "Fatalis Unk 4";
-            public const int Fatalis_Unk_4_sortIndex = 200;
-            [SortOrder(Fatalis_Unk_4_sortIndex)]
-            [DisplayName(Fatalis_Unk_4_displayName)]
-            public virtual float Fatalis_Unk_4 {
-                get => Fatalis_Unk_4_raw;
+            protected float Tenderizing_Damage_Multiplier_Long_Sword_raw;
+            public const string Tenderizing_Damage_Multiplier_Long_Sword_displayName = "Tenderizing Damage % Multiplier: Long Sword";
+            public const int Tenderizing_Damage_Multiplier_Long_Sword_sortIndex = 200;
+            [SortOrder(Tenderizing_Damage_Multiplier_Long_Sword_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_Long_Sword_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_Long_Sword {
+                get => Tenderizing_Damage_Multiplier_Long_Sword_raw;
                 set {
-                    if (Fatalis_Unk_4_raw == value) return;
-                    Fatalis_Unk_4_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_4));
-                    OnPropertyChanged(nameof(Fatalis_Unk_4));
+                    if (Tenderizing_Damage_Multiplier_Long_Sword_raw == value) return;
+                    Tenderizing_Damage_Multiplier_Long_Sword_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_Long_Sword));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_Long_Sword));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_4_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_Long_Sword_offset { get; private set; }
 
-            protected float Fatalis_Unk_5_raw;
-            public const string Fatalis_Unk_5_displayName = "Fatalis Unk 5";
-            public const int Fatalis_Unk_5_sortIndex = 250;
-            [SortOrder(Fatalis_Unk_5_sortIndex)]
-            [DisplayName(Fatalis_Unk_5_displayName)]
-            public virtual float Fatalis_Unk_5 {
-                get => Fatalis_Unk_5_raw;
+            protected float Tenderizing_Damage_Multiplier_Hammer_raw;
+            public const string Tenderizing_Damage_Multiplier_Hammer_displayName = "Tenderizing Damage % Multiplier: Hammer";
+            public const int Tenderizing_Damage_Multiplier_Hammer_sortIndex = 250;
+            [SortOrder(Tenderizing_Damage_Multiplier_Hammer_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_Hammer_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_Hammer {
+                get => Tenderizing_Damage_Multiplier_Hammer_raw;
                 set {
-                    if (Fatalis_Unk_5_raw == value) return;
-                    Fatalis_Unk_5_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_5));
-                    OnPropertyChanged(nameof(Fatalis_Unk_5));
+                    if (Tenderizing_Damage_Multiplier_Hammer_raw == value) return;
+                    Tenderizing_Damage_Multiplier_Hammer_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_Hammer));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_Hammer));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_5_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_Hammer_offset { get; private set; }
 
-            protected float Fatalis_Unk_6_raw;
-            public const string Fatalis_Unk_6_displayName = "Fatalis Unk 6";
-            public const int Fatalis_Unk_6_sortIndex = 300;
-            [SortOrder(Fatalis_Unk_6_sortIndex)]
-            [DisplayName(Fatalis_Unk_6_displayName)]
-            public virtual float Fatalis_Unk_6 {
-                get => Fatalis_Unk_6_raw;
+            protected float Tenderizing_Damage_Multiplier_Hunting_Horn_raw;
+            public const string Tenderizing_Damage_Multiplier_Hunting_Horn_displayName = "Tenderizing Damage % Multiplier: Hunting Horn";
+            public const int Tenderizing_Damage_Multiplier_Hunting_Horn_sortIndex = 300;
+            [SortOrder(Tenderizing_Damage_Multiplier_Hunting_Horn_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_Hunting_Horn_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_Hunting_Horn {
+                get => Tenderizing_Damage_Multiplier_Hunting_Horn_raw;
                 set {
-                    if (Fatalis_Unk_6_raw == value) return;
-                    Fatalis_Unk_6_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_6));
-                    OnPropertyChanged(nameof(Fatalis_Unk_6));
+                    if (Tenderizing_Damage_Multiplier_Hunting_Horn_raw == value) return;
+                    Tenderizing_Damage_Multiplier_Hunting_Horn_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_Hunting_Horn));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_Hunting_Horn));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_6_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_Hunting_Horn_offset { get; private set; }
 
-            protected float Fatalis_Unk_7_raw;
-            public const string Fatalis_Unk_7_displayName = "Fatalis Unk 7";
-            public const int Fatalis_Unk_7_sortIndex = 350;
-            [SortOrder(Fatalis_Unk_7_sortIndex)]
-            [DisplayName(Fatalis_Unk_7_displayName)]
-            public virtual float Fatalis_Unk_7 {
-                get => Fatalis_Unk_7_raw;
+            protected float Tenderizing_Damage_Multiplier_Lance_raw;
+            public const string Tenderizing_Damage_Multiplier_Lance_displayName = "Tenderizing Damage % Multiplier: Lance";
+            public const int Tenderizing_Damage_Multiplier_Lance_sortIndex = 350;
+            [SortOrder(Tenderizing_Damage_Multiplier_Lance_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_Lance_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_Lance {
+                get => Tenderizing_Damage_Multiplier_Lance_raw;
                 set {
-                    if (Fatalis_Unk_7_raw == value) return;
-                    Fatalis_Unk_7_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_7));
-                    OnPropertyChanged(nameof(Fatalis_Unk_7));
+                    if (Tenderizing_Damage_Multiplier_Lance_raw == value) return;
+                    Tenderizing_Damage_Multiplier_Lance_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_Lance));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_Lance));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_7_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_Lance_offset { get; private set; }
 
-            protected float Fatalis_Unk_8_raw;
-            public const string Fatalis_Unk_8_displayName = "Fatalis Unk 8";
-            public const int Fatalis_Unk_8_sortIndex = 400;
-            [SortOrder(Fatalis_Unk_8_sortIndex)]
-            [DisplayName(Fatalis_Unk_8_displayName)]
-            public virtual float Fatalis_Unk_8 {
-                get => Fatalis_Unk_8_raw;
+            protected float Tenderizing_Damage_Multiplier_Gunlance_raw;
+            public const string Tenderizing_Damage_Multiplier_Gunlance_displayName = "Tenderizing Damage % Multiplier: Gunlance";
+            public const int Tenderizing_Damage_Multiplier_Gunlance_sortIndex = 400;
+            [SortOrder(Tenderizing_Damage_Multiplier_Gunlance_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_Gunlance_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_Gunlance {
+                get => Tenderizing_Damage_Multiplier_Gunlance_raw;
                 set {
-                    if (Fatalis_Unk_8_raw == value) return;
-                    Fatalis_Unk_8_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_8));
-                    OnPropertyChanged(nameof(Fatalis_Unk_8));
+                    if (Tenderizing_Damage_Multiplier_Gunlance_raw == value) return;
+                    Tenderizing_Damage_Multiplier_Gunlance_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_Gunlance));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_Gunlance));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_8_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_Gunlance_offset { get; private set; }
 
-            protected float Fatalis_Unk_9_raw;
-            public const string Fatalis_Unk_9_displayName = "Fatalis Unk 9";
-            public const int Fatalis_Unk_9_sortIndex = 450;
-            [SortOrder(Fatalis_Unk_9_sortIndex)]
-            [DisplayName(Fatalis_Unk_9_displayName)]
-            public virtual float Fatalis_Unk_9 {
-                get => Fatalis_Unk_9_raw;
+            protected float Tenderizing_Damage_Multiplier_Switch_Axe_raw;
+            public const string Tenderizing_Damage_Multiplier_Switch_Axe_displayName = "Tenderizing Damage % Multiplier: Switch Axe";
+            public const int Tenderizing_Damage_Multiplier_Switch_Axe_sortIndex = 450;
+            [SortOrder(Tenderizing_Damage_Multiplier_Switch_Axe_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_Switch_Axe_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_Switch_Axe {
+                get => Tenderizing_Damage_Multiplier_Switch_Axe_raw;
                 set {
-                    if (Fatalis_Unk_9_raw == value) return;
-                    Fatalis_Unk_9_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_9));
-                    OnPropertyChanged(nameof(Fatalis_Unk_9));
+                    if (Tenderizing_Damage_Multiplier_Switch_Axe_raw == value) return;
+                    Tenderizing_Damage_Multiplier_Switch_Axe_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_Switch_Axe));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_Switch_Axe));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_9_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_Switch_Axe_offset { get; private set; }
 
-            protected float Fatalis_Unk_10_raw;
-            public const string Fatalis_Unk_10_displayName = "Fatalis Unk 10";
-            public const int Fatalis_Unk_10_sortIndex = 500;
-            [SortOrder(Fatalis_Unk_10_sortIndex)]
-            [DisplayName(Fatalis_Unk_10_displayName)]
-            public virtual float Fatalis_Unk_10 {
-                get => Fatalis_Unk_10_raw;
+            protected float Tenderizing_Damage_Multiplier_Charge_Blade_raw;
+            public const string Tenderizing_Damage_Multiplier_Charge_Blade_displayName = "Tenderizing Damage % Multiplier: Charge Blade";
+            public const int Tenderizing_Damage_Multiplier_Charge_Blade_sortIndex = 500;
+            [SortOrder(Tenderizing_Damage_Multiplier_Charge_Blade_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_Charge_Blade_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_Charge_Blade {
+                get => Tenderizing_Damage_Multiplier_Charge_Blade_raw;
                 set {
-                    if (Fatalis_Unk_10_raw == value) return;
-                    Fatalis_Unk_10_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_10));
-                    OnPropertyChanged(nameof(Fatalis_Unk_10));
+                    if (Tenderizing_Damage_Multiplier_Charge_Blade_raw == value) return;
+                    Tenderizing_Damage_Multiplier_Charge_Blade_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_Charge_Blade));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_Charge_Blade));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_10_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_Charge_Blade_offset { get; private set; }
 
-            protected float Fatalis_Unk_11_raw;
-            public const string Fatalis_Unk_11_displayName = "Fatalis Unk 11";
-            public const int Fatalis_Unk_11_sortIndex = 550;
-            [SortOrder(Fatalis_Unk_11_sortIndex)]
-            [DisplayName(Fatalis_Unk_11_displayName)]
-            public virtual float Fatalis_Unk_11 {
-                get => Fatalis_Unk_11_raw;
+            protected float Tenderizing_Damage_Multiplier_Insect_Glaive_raw;
+            public const string Tenderizing_Damage_Multiplier_Insect_Glaive_displayName = "Tenderizing Damage % Multiplier: Insect Glaive";
+            public const int Tenderizing_Damage_Multiplier_Insect_Glaive_sortIndex = 550;
+            [SortOrder(Tenderizing_Damage_Multiplier_Insect_Glaive_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_Insect_Glaive_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_Insect_Glaive {
+                get => Tenderizing_Damage_Multiplier_Insect_Glaive_raw;
                 set {
-                    if (Fatalis_Unk_11_raw == value) return;
-                    Fatalis_Unk_11_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_11));
-                    OnPropertyChanged(nameof(Fatalis_Unk_11));
+                    if (Tenderizing_Damage_Multiplier_Insect_Glaive_raw == value) return;
+                    Tenderizing_Damage_Multiplier_Insect_Glaive_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_Insect_Glaive));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_Insect_Glaive));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_11_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_Insect_Glaive_offset { get; private set; }
 
-            protected float Fatalis_Unk_12_raw;
-            public const string Fatalis_Unk_12_displayName = "Fatalis Unk 12";
-            public const int Fatalis_Unk_12_sortIndex = 600;
-            [SortOrder(Fatalis_Unk_12_sortIndex)]
-            [DisplayName(Fatalis_Unk_12_displayName)]
-            public virtual float Fatalis_Unk_12 {
-                get => Fatalis_Unk_12_raw;
+            protected float Tenderizing_Damage_Multiplier_Bow_raw;
+            public const string Tenderizing_Damage_Multiplier_Bow_displayName = "Tenderizing Damage % Multiplier: Bow";
+            public const int Tenderizing_Damage_Multiplier_Bow_sortIndex = 600;
+            [SortOrder(Tenderizing_Damage_Multiplier_Bow_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_Bow_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_Bow {
+                get => Tenderizing_Damage_Multiplier_Bow_raw;
                 set {
-                    if (Fatalis_Unk_12_raw == value) return;
-                    Fatalis_Unk_12_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_12));
-                    OnPropertyChanged(nameof(Fatalis_Unk_12));
+                    if (Tenderizing_Damage_Multiplier_Bow_raw == value) return;
+                    Tenderizing_Damage_Multiplier_Bow_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_Bow));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_Bow));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_12_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_Bow_offset { get; private set; }
 
-            protected float Fatalis_Unk_13_raw;
-            public const string Fatalis_Unk_13_displayName = "Fatalis Unk 13";
-            public const int Fatalis_Unk_13_sortIndex = 650;
-            [SortOrder(Fatalis_Unk_13_sortIndex)]
-            [DisplayName(Fatalis_Unk_13_displayName)]
-            public virtual float Fatalis_Unk_13 {
-                get => Fatalis_Unk_13_raw;
+            protected float Tenderizing_Damage_Multiplier_HBG_raw;
+            public const string Tenderizing_Damage_Multiplier_HBG_displayName = "Tenderizing Damage % Multiplier: HBG";
+            public const int Tenderizing_Damage_Multiplier_HBG_sortIndex = 650;
+            [SortOrder(Tenderizing_Damage_Multiplier_HBG_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_HBG_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_HBG {
+                get => Tenderizing_Damage_Multiplier_HBG_raw;
                 set {
-                    if (Fatalis_Unk_13_raw == value) return;
-                    Fatalis_Unk_13_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_13));
-                    OnPropertyChanged(nameof(Fatalis_Unk_13));
+                    if (Tenderizing_Damage_Multiplier_HBG_raw == value) return;
+                    Tenderizing_Damage_Multiplier_HBG_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_HBG));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_HBG));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_13_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_HBG_offset { get; private set; }
 
-            protected float Fatalis_Unk_14_raw;
-            public const string Fatalis_Unk_14_displayName = "Fatalis Unk 14";
-            public const int Fatalis_Unk_14_sortIndex = 700;
-            [SortOrder(Fatalis_Unk_14_sortIndex)]
-            [DisplayName(Fatalis_Unk_14_displayName)]
-            public virtual float Fatalis_Unk_14 {
-                get => Fatalis_Unk_14_raw;
+            protected float Tenderizing_Damage_Multiplier_LBG_raw;
+            public const string Tenderizing_Damage_Multiplier_LBG_displayName = "Tenderizing Damage % Multiplier: LBG";
+            public const int Tenderizing_Damage_Multiplier_LBG_sortIndex = 700;
+            [SortOrder(Tenderizing_Damage_Multiplier_LBG_sortIndex)]
+            [DisplayName(Tenderizing_Damage_Multiplier_LBG_displayName)]
+            public virtual float Tenderizing_Damage_Multiplier_LBG {
+                get => Tenderizing_Damage_Multiplier_LBG_raw;
                 set {
-                    if (Fatalis_Unk_14_raw == value) return;
-                    Fatalis_Unk_14_raw = value;
-                    ChangedItems.Add(nameof(Fatalis_Unk_14));
-                    OnPropertyChanged(nameof(Fatalis_Unk_14));
+                    if (Tenderizing_Damage_Multiplier_LBG_raw == value) return;
+                    Tenderizing_Damage_Multiplier_LBG_raw = value;
+                    ChangedItems.Add(nameof(Tenderizing_Damage_Multiplier_LBG));
+                    OnPropertyChanged(nameof(Tenderizing_Damage_Multiplier_LBG));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Fatalis_Unk_14_offset { get; private set; }
+            public long Tenderizing_Damage_Multiplier_LBG_offset { get; private set; }
 
             public const int lastSortIndex = 750;
 
-            public static ObservableMhwStructCollection<Skill_Params_8_> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Skill_Params_8_>();
+            public static ObservableMhwStructCollection<Clutch_Claw_Boost> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Clutch_Claw_Boost>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -7662,73 +7662,73 @@ namespace MHW_Editor.Structs.PlData {
                 return list;
             }
 
-            public static Skill_Params_8_ LoadData(BinaryReader reader, ulong i) {
-                var data = new Skill_Params_8_();
+            public static Clutch_Claw_Boost LoadData(BinaryReader reader, ulong i) {
+                var data = new Clutch_Claw_Boost();
                 data.Index = i;
-                data.Fatalis_Unk_1_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_1_raw = reader.ReadSingle();
-                data.Fatalis_Unk_2_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_2_raw = reader.ReadSingle();
-                data.Fatalis_Unk_3_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_3_raw = reader.ReadSingle();
-                data.Fatalis_Unk_4_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_4_raw = reader.ReadSingle();
-                data.Fatalis_Unk_5_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_5_raw = reader.ReadSingle();
-                data.Fatalis_Unk_6_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_6_raw = reader.ReadSingle();
-                data.Fatalis_Unk_7_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_7_raw = reader.ReadSingle();
-                data.Fatalis_Unk_8_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_8_raw = reader.ReadSingle();
-                data.Fatalis_Unk_9_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_9_raw = reader.ReadSingle();
-                data.Fatalis_Unk_10_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_10_raw = reader.ReadSingle();
-                data.Fatalis_Unk_11_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_11_raw = reader.ReadSingle();
-                data.Fatalis_Unk_12_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_12_raw = reader.ReadSingle();
-                data.Fatalis_Unk_13_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_13_raw = reader.ReadSingle();
-                data.Fatalis_Unk_14_offset = reader.BaseStream.Position;
-                data.Fatalis_Unk_14_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_Great_Sword_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_Great_Sword_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_Sword_Shield_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_Sword_Shield_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_Dual_Blades_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_Dual_Blades_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_Long_Sword_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_Long_Sword_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_Hammer_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_Hammer_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_Hunting_Horn_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_Hunting_Horn_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_Lance_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_Lance_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_Gunlance_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_Gunlance_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_Switch_Axe_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_Switch_Axe_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_Charge_Blade_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_Charge_Blade_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_Insect_Glaive_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_Insect_Glaive_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_Bow_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_Bow_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_HBG_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_HBG_raw = reader.ReadSingle();
+                data.Tenderizing_Damage_Multiplier_LBG_offset = reader.BaseStream.Position;
+                data.Tenderizing_Damage_Multiplier_LBG_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Fatalis_Unk_1_raw);
-                writer.Write(Fatalis_Unk_2_raw);
-                writer.Write(Fatalis_Unk_3_raw);
-                writer.Write(Fatalis_Unk_4_raw);
-                writer.Write(Fatalis_Unk_5_raw);
-                writer.Write(Fatalis_Unk_6_raw);
-                writer.Write(Fatalis_Unk_7_raw);
-                writer.Write(Fatalis_Unk_8_raw);
-                writer.Write(Fatalis_Unk_9_raw);
-                writer.Write(Fatalis_Unk_10_raw);
-                writer.Write(Fatalis_Unk_11_raw);
-                writer.Write(Fatalis_Unk_12_raw);
-                writer.Write(Fatalis_Unk_13_raw);
-                writer.Write(Fatalis_Unk_14_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_Great_Sword_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_Sword_Shield_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_Dual_Blades_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_Long_Sword_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_Hammer_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_Hunting_Horn_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_Lance_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_Gunlance_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_Switch_Axe_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_Charge_Blade_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_Insect_Glaive_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_Bow_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_HBG_raw);
+                writer.Write(Tenderizing_Damage_Multiplier_LBG_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Fatalis Unk 1", "Fatalis_Unk_1", "Fatalis_Unk_1_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 2", "Fatalis_Unk_2", "Fatalis_Unk_2_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 3", "Fatalis_Unk_3", "Fatalis_Unk_3_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 4", "Fatalis_Unk_4", "Fatalis_Unk_4_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 5", "Fatalis_Unk_5", "Fatalis_Unk_5_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 6", "Fatalis_Unk_6", "Fatalis_Unk_6_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 7", "Fatalis_Unk_7", "Fatalis_Unk_7_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 8", "Fatalis_Unk_8", "Fatalis_Unk_8_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 9", "Fatalis_Unk_9", "Fatalis_Unk_9_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 10", "Fatalis_Unk_10", "Fatalis_Unk_10_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 11", "Fatalis_Unk_11", "Fatalis_Unk_11_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 12", "Fatalis_Unk_12", "Fatalis_Unk_12_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 13", "Fatalis_Unk_13", "Fatalis_Unk_13_offset"),
-                    new MultiStructItemCustomView(this, "Fatalis Unk 14", "Fatalis_Unk_14", "Fatalis_Unk_14_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: Great Sword", "Tenderizing_Damage_Multiplier_Great_Sword", "Tenderizing_Damage_Multiplier_Great_Sword_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: Sword & Shield", "Tenderizing_Damage_Multiplier_Sword_Shield", "Tenderizing_Damage_Multiplier_Sword_Shield_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: Dual Blades", "Tenderizing_Damage_Multiplier_Dual_Blades", "Tenderizing_Damage_Multiplier_Dual_Blades_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: Long Sword", "Tenderizing_Damage_Multiplier_Long_Sword", "Tenderizing_Damage_Multiplier_Long_Sword_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: Hammer", "Tenderizing_Damage_Multiplier_Hammer", "Tenderizing_Damage_Multiplier_Hammer_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: Hunting Horn", "Tenderizing_Damage_Multiplier_Hunting_Horn", "Tenderizing_Damage_Multiplier_Hunting_Horn_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: Lance", "Tenderizing_Damage_Multiplier_Lance", "Tenderizing_Damage_Multiplier_Lance_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: Gunlance", "Tenderizing_Damage_Multiplier_Gunlance", "Tenderizing_Damage_Multiplier_Gunlance_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: Switch Axe", "Tenderizing_Damage_Multiplier_Switch_Axe", "Tenderizing_Damage_Multiplier_Switch_Axe_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: Charge Blade", "Tenderizing_Damage_Multiplier_Charge_Blade", "Tenderizing_Damage_Multiplier_Charge_Blade_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: Insect Glaive", "Tenderizing_Damage_Multiplier_Insect_Glaive", "Tenderizing_Damage_Multiplier_Insect_Glaive_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: Bow", "Tenderizing_Damage_Multiplier_Bow", "Tenderizing_Damage_Multiplier_Bow_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: HBG", "Tenderizing_Damage_Multiplier_HBG", "Tenderizing_Damage_Multiplier_HBG_offset"),
+                    new MultiStructItemCustomView(this, "Tenderizing Damage % Multiplier: LBG", "Tenderizing_Damage_Multiplier_LBG", "Tenderizing_Damage_Multiplier_LBG_offset"),
                 };
             }
         }
@@ -9663,9 +9663,9 @@ namespace MHW_Editor.Structs.PlData {
             }
         }
 
-        public partial class Skill_Params_9_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
+        public partial class Skill_Params_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "Skill Params (9)";
+            public const string GridName = "Skill Params (8)";
 
             protected float Music_Skill_Bless_Random_Rate_raw;
             public const string Music_Skill_Bless_Random_Rate_displayName = "Music Skill: Bless: Random Rate";
@@ -10209,8 +10209,8 @@ namespace MHW_Editor.Structs.PlData {
 
             public const int lastSortIndex = 1550;
 
-            public static ObservableMhwStructCollection<Skill_Params_9_> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Skill_Params_9_>();
+            public static ObservableMhwStructCollection<Skill_Params_8_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Skill_Params_8_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -10218,8 +10218,8 @@ namespace MHW_Editor.Structs.PlData {
                 return list;
             }
 
-            public static Skill_Params_9_ LoadData(BinaryReader reader, ulong i) {
-                var data = new Skill_Params_9_();
+            public static Skill_Params_8_ LoadData(BinaryReader reader, ulong i) {
+                var data = new Skill_Params_8_();
                 data.Index = i;
                 data.Music_Skill_Bless_Random_Rate_offset = reader.BaseStream.Position;
                 data.Music_Skill_Bless_Random_Rate_raw = reader.ReadSingle();
@@ -10398,14 +10398,14 @@ namespace MHW_Editor.Structs.PlData {
             data.AddLast(Frostcraft_2__);
             var Skill_Params_7__ = new MhwStructDataContainer<Skill_Params_7_>(Skill_Params_7_.LoadData(reader), typeof(Skill_Params_7_));
             data.AddLast(Skill_Params_7__);
-            var Skill_Params_8__ = new MhwStructDataContainer<Skill_Params_8_>(Skill_Params_8_.LoadData(reader), typeof(Skill_Params_8_));
-            data.AddLast(Skill_Params_8__);
+            var Clutch_Claw_Boost_ = new MhwStructDataContainer<Clutch_Claw_Boost>(Clutch_Claw_Boost.LoadData(reader), typeof(Clutch_Claw_Boost));
+            data.AddLast(Clutch_Claw_Boost_);
             var Food_Effects_ = new MhwStructDataContainer<Food_Effects>(Food_Effects.LoadData(reader), typeof(Food_Effects));
             data.AddLast(Food_Effects_);
             var Feline_Skill_ = new MhwStructDataContainer<Feline_Skill>(Feline_Skill.LoadData(reader), typeof(Feline_Skill));
             data.AddLast(Feline_Skill_);
-            var Skill_Params_9__ = new MhwStructDataContainer<Skill_Params_9_>(Skill_Params_9_.LoadData(reader), typeof(Skill_Params_9_));
-            data.AddLast(Skill_Params_9__);
+            var Skill_Params_8__ = new MhwStructDataContainer<Skill_Params_8_>(Skill_Params_8_.LoadData(reader), typeof(Skill_Params_8_));
+            data.AddLast(Skill_Params_8__);
         }
     }
 }
