@@ -6210,27 +6210,27 @@ namespace MHW_Editor.Structs.Weapons {
             public const ulong FixedSizeCount = 7;
             public const string GridName = "Unk Arr 6";
 
-            protected byte Unk_1_raw;
-            public const string Unk_1_displayName = "Unk 1";
-            public const int Unk_1_sortIndex = 50;
-            [SortOrder(Unk_1_sortIndex)]
-            [DisplayName(Unk_1_displayName)]
-            public virtual byte Unk_1 {
-                get => Unk_1_raw;
+            protected uint Function_Pointer_raw;
+            public const string Function_Pointer_displayName = "Function Pointer";
+            public const int Function_Pointer_sortIndex = 50;
+            [SortOrder(Function_Pointer_sortIndex)]
+            [DisplayName(Function_Pointer_displayName)]
+            public virtual uint Function_Pointer {
+                get => Function_Pointer_raw;
                 set {
-                    if (Unk_1_raw == value) return;
-                    Unk_1_raw = value;
-                    ChangedItems.Add(nameof(Unk_1));
-                    OnPropertyChanged(nameof(Unk_1));
+                    if (Function_Pointer_raw == value) return;
+                    Function_Pointer_raw = value;
+                    ChangedItems.Add(nameof(Function_Pointer));
+                    OnPropertyChanged(nameof(Function_Pointer));
                 }
             }
 
-            protected byte Unk_2_raw;
+            protected uint Unk_2_raw;
             public const string Unk_2_displayName = "Unk 2";
             public const int Unk_2_sortIndex = 100;
             [SortOrder(Unk_2_sortIndex)]
             [DisplayName(Unk_2_displayName)]
-            public virtual byte Unk_2 {
+            public virtual uint Unk_2 {
                 get => Unk_2_raw;
                 set {
                     if (Unk_2_raw == value) return;
@@ -6240,12 +6240,12 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected byte Unk_3_raw;
+            protected float Unk_3_raw;
             public const string Unk_3_displayName = "Unk 3";
             public const int Unk_3_sortIndex = 150;
             [SortOrder(Unk_3_sortIndex)]
             [DisplayName(Unk_3_displayName)]
-            public virtual byte Unk_3 {
+            public virtual float Unk_3 {
                 get => Unk_3_raw;
                 set {
                     if (Unk_3_raw == value) return;
@@ -6255,12 +6255,12 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected byte Unk_4_raw;
+            protected float Unk_4_raw;
             public const string Unk_4_displayName = "Unk 4";
             public const int Unk_4_sortIndex = 200;
             [SortOrder(Unk_4_sortIndex)]
             [DisplayName(Unk_4_displayName)]
-            public virtual byte Unk_4 {
+            public virtual float Unk_4 {
                 get => Unk_4_raw;
                 set {
                     if (Unk_4_raw == value) return;
@@ -6270,52 +6270,7 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected uint Unk_5_raw;
-            public const string Unk_5_displayName = "Unk 5";
-            public const int Unk_5_sortIndex = 250;
-            [SortOrder(Unk_5_sortIndex)]
-            [DisplayName(Unk_5_displayName)]
-            public virtual uint Unk_5 {
-                get => Unk_5_raw;
-                set {
-                    if (Unk_5_raw == value) return;
-                    Unk_5_raw = value;
-                    ChangedItems.Add(nameof(Unk_5));
-                    OnPropertyChanged(nameof(Unk_5));
-                }
-            }
-
-            protected float Unk_6_raw;
-            public const string Unk_6_displayName = "Unk 6";
-            public const int Unk_6_sortIndex = 300;
-            [SortOrder(Unk_6_sortIndex)]
-            [DisplayName(Unk_6_displayName)]
-            public virtual float Unk_6 {
-                get => Unk_6_raw;
-                set {
-                    if (Unk_6_raw == value) return;
-                    Unk_6_raw = value;
-                    ChangedItems.Add(nameof(Unk_6));
-                    OnPropertyChanged(nameof(Unk_6));
-                }
-            }
-
-            protected float Unk_7_raw;
-            public const string Unk_7_displayName = "Unk 7";
-            public const int Unk_7_sortIndex = 350;
-            [SortOrder(Unk_7_sortIndex)]
-            [DisplayName(Unk_7_displayName)]
-            public virtual float Unk_7 {
-                get => Unk_7_raw;
-                set {
-                    if (Unk_7_raw == value) return;
-                    Unk_7_raw = value;
-                    ChangedItems.Add(nameof(Unk_7));
-                    OnPropertyChanged(nameof(Unk_7));
-                }
-            }
-
-            public const int lastSortIndex = 400;
+            public const int lastSortIndex = 250;
 
             public static ObservableMhwStructCollection<Unk_Arr_6> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Unk_Arr_6>();
@@ -6329,24 +6284,18 @@ namespace MHW_Editor.Structs.Weapons {
             public static Unk_Arr_6 LoadData(BinaryReader reader, ulong i) {
                 var data = new Unk_Arr_6();
                 data.Index = i;
-                data.Unk_1_raw = reader.ReadByte();
-                data.Unk_2_raw = reader.ReadByte();
-                data.Unk_3_raw = reader.ReadByte();
-                data.Unk_4_raw = reader.ReadByte();
-                data.Unk_5_raw = reader.ReadUInt32();
-                data.Unk_6_raw = reader.ReadSingle();
-                data.Unk_7_raw = reader.ReadSingle();
+                data.Function_Pointer_raw = reader.ReadUInt32();
+                data.Unk_2_raw = reader.ReadUInt32();
+                data.Unk_3_raw = reader.ReadSingle();
+                data.Unk_4_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_1_raw);
+                writer.Write(Function_Pointer_raw);
                 writer.Write(Unk_2_raw);
                 writer.Write(Unk_3_raw);
                 writer.Write(Unk_4_raw);
-                writer.Write(Unk_5_raw);
-                writer.Write(Unk_6_raw);
-                writer.Write(Unk_7_raw);
             }
         }
 

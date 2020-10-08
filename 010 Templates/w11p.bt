@@ -349,13 +349,10 @@ uint Number_of_Arrows_Shot<name="Number of Arrows Shot (uint)">;
 
 // Unk Arr 6
 typedef struct {
-    ubyte Unk_1<name="Unk 1 (ubyte)">;
-    ubyte Unk_2<name="Unk 2 (ubyte)">;
-    ubyte Unk_3<name="Unk 3 (ubyte)">;
-    ubyte Unk_4<name="Unk 4 (ubyte)">;
-    uint Unk_5<name="Unk 5 (uint)">;
-    float Unk_6<name="Unk 6 (float)">;
-    float Unk_7<name="Unk 7 (float)">;
+    uint Function_Pointer<name="Function Pointer (uint)">;
+    uint Unk_2<name="Unk 2 (uint)">;
+    float Unk_3<name="Unk 3 (float)">;
+    float Unk_4<name="Unk 4 (float)">;
 } Unk_Arr_6;
 
 Unk_Arr_6 Unk_Arr_6_[7]<optimize=false, name="Unk Arr 6">;
