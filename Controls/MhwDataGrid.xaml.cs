@@ -312,10 +312,17 @@ namespace MHW_Editor.Controls {
             try {
                 var headerFilter = (HeaderFilter) e.OriginalSource;
                 var grid         = ((DependencyObject) e.OriginalSource).GetParent<MhwDataGridGeneric<T>>();
+                var listColView  = (ListCollectionView) grid.ItemsSource;
+
                 grid.groupFilter.SetFilterValue(headerFilter.PropertyName, headerFilter.FilterText);
 
-                var listColView = (ListCollectionView) grid.ItemsSource;
-                listColView.Refresh();
+                // If we're editing, Refresh() throws InvalidOperationException. Try to commit the edit.
+                grid.CommitEdit(DataGridEditingUnit.Row, true);
+
+                try {
+                    listColView.Refresh();
+                } catch (InvalidOperationException) {
+                }
             } catch (Exception err) when (!Debugger.IsAttached) {
                 MainWindow.ShowError(err, "Error Occurred");
             }
