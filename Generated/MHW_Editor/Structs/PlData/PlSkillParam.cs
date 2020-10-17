@@ -936,23 +936,23 @@ namespace MHW_Editor.Structs.PlData {
             [DisplayName("Offset")]
             public long Unk3_offset { get; private set; }
 
-            protected float Unk4_raw;
-            public const string Unk4_displayName = "Unk4";
-            public const int Unk4_sortIndex = 200;
-            [SortOrder(Unk4_sortIndex)]
-            [DisplayName(Unk4_displayName)]
-            public virtual float Unk4 {
-                get => Unk4_raw;
+            protected float Master_Mounter_Mount_Multiplier_raw;
+            public const string Master_Mounter_Mount_Multiplier_displayName = "Master Mounter: Mount Multiplier";
+            public const int Master_Mounter_Mount_Multiplier_sortIndex = 200;
+            [SortOrder(Master_Mounter_Mount_Multiplier_sortIndex)]
+            [DisplayName(Master_Mounter_Mount_Multiplier_displayName)]
+            public virtual float Master_Mounter_Mount_Multiplier {
+                get => Master_Mounter_Mount_Multiplier_raw;
                 set {
-                    if (Unk4_raw == value) return;
-                    Unk4_raw = value;
-                    ChangedItems.Add(nameof(Unk4));
-                    OnPropertyChanged(nameof(Unk4));
+                    if (Master_Mounter_Mount_Multiplier_raw == value) return;
+                    Master_Mounter_Mount_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Master_Mounter_Mount_Multiplier));
+                    OnPropertyChanged(nameof(Master_Mounter_Mount_Multiplier));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk4_offset { get; private set; }
+            public long Master_Mounter_Mount_Multiplier_offset { get; private set; }
 
             protected float Unk5_raw;
             public const string Unk5_displayName = "Unk5";
@@ -1226,8 +1226,8 @@ namespace MHW_Editor.Structs.PlData {
                 data.Unk2_raw = reader.ReadSingle();
                 data.Unk3_offset = reader.BaseStream.Position;
                 data.Unk3_raw = reader.ReadSingle();
-                data.Unk4_offset = reader.BaseStream.Position;
-                data.Unk4_raw = reader.ReadSingle();
+                data.Master_Mounter_Mount_Multiplier_offset = reader.BaseStream.Position;
+                data.Master_Mounter_Mount_Multiplier_raw = reader.ReadSingle();
                 data.Unk5_offset = reader.BaseStream.Position;
                 data.Unk5_raw = reader.ReadSingle();
                 data.Unk6_offset = reader.BaseStream.Position;
@@ -1263,7 +1263,7 @@ namespace MHW_Editor.Structs.PlData {
                 writer.Write(Unk1_raw);
                 writer.Write(Unk2_raw);
                 writer.Write(Unk3_raw);
-                writer.Write(Unk4_raw);
+                writer.Write(Master_Mounter_Mount_Multiplier_raw);
                 writer.Write(Unk5_raw);
                 writer.Write(Unk6_raw);
                 writer.Write(Unk7_raw);
@@ -1285,7 +1285,7 @@ namespace MHW_Editor.Structs.PlData {
                     new MultiStructItemCustomView(this, "Unk1", "Unk1", "Unk1_offset"),
                     new MultiStructItemCustomView(this, "Unk2", "Unk2", "Unk2_offset"),
                     new MultiStructItemCustomView(this, "Unk3", "Unk3", "Unk3_offset"),
-                    new MultiStructItemCustomView(this, "Unk4", "Unk4", "Unk4_offset"),
+                    new MultiStructItemCustomView(this, "Master Mounter: Mount Multiplier", "Master_Mounter_Mount_Multiplier", "Master_Mounter_Mount_Multiplier_offset"),
                     new MultiStructItemCustomView(this, "Unk5", "Unk5", "Unk5_offset"),
                     new MultiStructItemCustomView(this, "Unk6", "Unk6", "Unk6_offset"),
                     new MultiStructItemCustomView(this, "Unk7", "Unk7", "Unk7_offset"),

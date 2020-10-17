@@ -58,7 +58,7 @@ Wide_Range Wide_Range_[2]<optimize=false, name="Wide Range">;
 float Unk1<name="Unk1 (float)">;
 float Unk2<name="Unk2 (float)">;
 float Unk3<name="Unk3 (float)">;
-float Unk4<name="Unk4 (float)">;
+float Master_Mounter_Mount_Multiplier<name="Master Mounter: Mount Multiplier (float)">;
 float Unk5<name="Unk5 (float)">;
 float Unk6<name="Unk6 (float)">;
 float Unk7<name="Unk7 (float)">;
