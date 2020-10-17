@@ -100,6 +100,12 @@ namespace MHW_Editor.Structs.Items {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
             public override string UniqueId => $"{Item}";
+            public const bool IsAddingAllowed = true;
+
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
 
             protected uint Cultivation_category_raw;
             public const string Cultivation_category_displayName = "Cultivation category";

@@ -21,7 +21,7 @@ namespace MHW_Generator.Items {
                     new MhwMultiStructData.Entry("Amount (Base)", typeof(uint)),
                     new MhwMultiStructData.Entry("Amount (+1)", typeof(uint)),
                     new MhwMultiStructData.Entry("Amount (+2)", typeof(uint))
-                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Item}")
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Item}", canAddRows: true)
             };
 
             return new MultiStruct("Items", "PlantItem", new MhwMultiStructData(structs, "plit"));
