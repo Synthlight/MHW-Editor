@@ -255,6 +255,8 @@ namespace MHW_Editor.Windows {
                                    typeof(Melee),
                                    typeof(NewLimitBreak),
                                    typeof(NewLimitBreakR),
+                                   typeof(OtomoArmorDat),
+                                   typeof(OtomoWeaponDat),
                                    typeof(Ranged),
                                    typeof(RodInsect))) {
                 return;
@@ -333,6 +335,14 @@ namespace MHW_Editor.Windows {
                     }
                     case LimitBreakMaterialSkill.Entries entries: {
                         if (entries.Item_1_Cnt > 0) entries.Item_1_Cnt = 1;
+                        break;
+                    }
+                    case OtomoArmorDat.Entries entries: {
+                        if (entries.Cost > 0) entries.Cost = 1;
+                        break;
+                    }
+                    case OtomoWeaponDat.Entries entries: {
+                        if (entries.Cost > 0) entries.Cost = 1;
                         break;
                     }
                 }

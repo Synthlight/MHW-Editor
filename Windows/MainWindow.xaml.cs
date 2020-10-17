@@ -395,6 +395,8 @@ namespace MHW_Editor.Windows {
                                                               typeof(Melee),
                                                               typeof(NewLimitBreak),
                                                               typeof(NewLimitBreakR),
+                                                              typeof(OtomoArmorDat),
+                                                              typeof(OtomoWeaponDat),
                                                               typeof(Ranged),
                                                               typeof(RodInsect))
                                                           .VisibleIfTrue();
