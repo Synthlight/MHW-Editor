@@ -472,23 +472,23 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_23_offset { get; private set; }
 
-            protected uint Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__raw;
-            public const string Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__displayName = "Claw: Max Swings To Tenderize (Claw goes up in increments of 20 per swing, 5 swings = 100 = tenderize)";
-            public const int Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__sortIndex = 1300;
-            [SortOrder(Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__sortIndex)]
-            [DisplayName(Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__displayName)]
-            public virtual uint Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize_ {
-                get => Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__raw;
+            protected uint Tender_Duration_Fatalis__raw;
+            public const string Tender_Duration_Fatalis__displayName = "Tender Duration (Fatalis)";
+            public const int Tender_Duration_Fatalis__sortIndex = 1300;
+            [SortOrder(Tender_Duration_Fatalis__sortIndex)]
+            [DisplayName(Tender_Duration_Fatalis__displayName)]
+            public virtual uint Tender_Duration_Fatalis_ {
+                get => Tender_Duration_Fatalis__raw;
                 set {
-                    if (Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__raw == value) return;
-                    Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__raw = value;
-                    ChangedItems.Add(nameof(Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize_));
-                    OnPropertyChanged(nameof(Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize_));
+                    if (Tender_Duration_Fatalis__raw == value) return;
+                    Tender_Duration_Fatalis__raw = value;
+                    ChangedItems.Add(nameof(Tender_Duration_Fatalis_));
+                    OnPropertyChanged(nameof(Tender_Duration_Fatalis_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__offset { get; private set; }
+            public long Tender_Duration_Fatalis__offset { get; private set; }
 
             protected int Unk_24_raw;
             public const string Unk_24_displayName = "Unk 24";
@@ -526,9 +526,27 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_25_offset { get; private set; }
 
+            protected uint Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__raw;
+            public const string Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__displayName = "Claw: Max Swings To Tenderize (Claw goes up in increments of 20 per swing, 5 swings = 100 = tenderize)";
+            public const int Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__sortIndex = 1450;
+            [SortOrder(Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__sortIndex)]
+            [DisplayName(Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__displayName)]
+            public virtual uint Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize_ {
+                get => Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__raw;
+                set {
+                    if (Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__raw == value) return;
+                    Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__raw = value;
+                    ChangedItems.Add(nameof(Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize_));
+                    OnPropertyChanged(nameof(Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize_));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__offset { get; private set; }
+
             protected uint Unk_26_raw;
             public const string Unk_26_displayName = "Unk 26";
-            public const int Unk_26_sortIndex = 1450;
+            public const int Unk_26_sortIndex = 1500;
             [SortOrder(Unk_26_sortIndex)]
             [DisplayName(Unk_26_displayName)]
             public virtual uint Unk_26 {
@@ -546,7 +564,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_27_raw;
             public const string Unk_27_displayName = "Unk 27";
-            public const int Unk_27_sortIndex = 1500;
+            public const int Unk_27_sortIndex = 1550;
             [SortOrder(Unk_27_sortIndex)]
             [DisplayName(Unk_27_displayName)]
             public virtual uint Unk_27 {
@@ -564,7 +582,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_28_raw;
             public const string Unk_28_displayName = "Unk 28";
-            public const int Unk_28_sortIndex = 1550;
+            public const int Unk_28_sortIndex = 1600;
             [SortOrder(Unk_28_sortIndex)]
             [DisplayName(Unk_28_displayName)]
             public virtual uint Unk_28 {
@@ -580,12 +598,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_28_offset { get; private set; }
 
-            protected uint Unk_29_raw;
+            protected float Unk_29_raw;
             public const string Unk_29_displayName = "Unk 29";
-            public const int Unk_29_sortIndex = 1600;
+            public const int Unk_29_sortIndex = 1650;
             [SortOrder(Unk_29_sortIndex)]
             [DisplayName(Unk_29_displayName)]
-            public virtual uint Unk_29 {
+            public virtual float Unk_29 {
                 get => Unk_29_raw;
                 set {
                     if (Unk_29_raw == value) return;
@@ -597,24 +615,6 @@ namespace MHW_Editor.Structs.Monsters {
 
             [DisplayName("Offset")]
             public long Unk_29_offset { get; private set; }
-
-            protected float Unk_30_raw;
-            public const string Unk_30_displayName = "Unk 30";
-            public const int Unk_30_sortIndex = 1650;
-            [SortOrder(Unk_30_sortIndex)]
-            [DisplayName(Unk_30_displayName)]
-            public virtual float Unk_30 {
-                get => Unk_30_raw;
-                set {
-                    if (Unk_30_raw == value) return;
-                    Unk_30_raw = value;
-                    ChangedItems.Add(nameof(Unk_30));
-                    OnPropertyChanged(nameof(Unk_30));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_30_offset { get; private set; }
 
             public const int lastSortIndex = 1700;
 
@@ -680,12 +680,14 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_22_raw = reader.ReadInt32();
                 data.Unk_23_offset = reader.BaseStream.Position;
                 data.Unk_23_raw = reader.ReadUInt32();
-                data.Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__offset = reader.BaseStream.Position;
-                data.Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__raw = reader.ReadUInt32();
+                data.Tender_Duration_Fatalis__offset = reader.BaseStream.Position;
+                data.Tender_Duration_Fatalis__raw = reader.ReadUInt32();
                 data.Unk_24_offset = reader.BaseStream.Position;
                 data.Unk_24_raw = reader.ReadInt32();
                 data.Unk_25_offset = reader.BaseStream.Position;
                 data.Unk_25_raw = reader.ReadUInt32();
+                data.Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__offset = reader.BaseStream.Position;
+                data.Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__raw = reader.ReadUInt32();
                 data.Unk_26_offset = reader.BaseStream.Position;
                 data.Unk_26_raw = reader.ReadUInt32();
                 data.Unk_27_offset = reader.BaseStream.Position;
@@ -693,9 +695,7 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_28_offset = reader.BaseStream.Position;
                 data.Unk_28_raw = reader.ReadUInt32();
                 data.Unk_29_offset = reader.BaseStream.Position;
-                data.Unk_29_raw = reader.ReadUInt32();
-                data.Unk_30_offset = reader.BaseStream.Position;
-                data.Unk_30_raw = reader.ReadSingle();
+                data.Unk_29_raw = reader.ReadSingle();
                 return data;
             }
 
@@ -725,14 +725,14 @@ namespace MHW_Editor.Structs.Monsters {
                 writer.Write(Unk_21_raw);
                 writer.Write(Unk_22_raw);
                 writer.Write(Unk_23_raw);
-                writer.Write(Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__raw);
+                writer.Write(Tender_Duration_Fatalis__raw);
                 writer.Write(Unk_24_raw);
                 writer.Write(Unk_25_raw);
+                writer.Write(Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__raw);
                 writer.Write(Unk_26_raw);
                 writer.Write(Unk_27_raw);
                 writer.Write(Unk_28_raw);
                 writer.Write(Unk_29_raw);
-                writer.Write(Unk_30_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
@@ -762,14 +762,14 @@ namespace MHW_Editor.Structs.Monsters {
                     new MultiStructItemCustomView(this, "Unk 21", "Unk_21", "Unk_21_offset"),
                     new MultiStructItemCustomView(this, "Unk 22", "Unk_22", "Unk_22_offset"),
                     new MultiStructItemCustomView(this, "Unk 23", "Unk_23", "Unk_23_offset"),
-                    new MultiStructItemCustomView(this, "Claw: Max Swings To Tenderize (Claw goes up in increments of 20 per swing, 5 swings = 100 = tenderize)", "Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize_", "Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__offset"),
+                    new MultiStructItemCustomView(this, "Tender Duration (Fatalis)", "Tender_Duration_Fatalis_", "Tender_Duration_Fatalis__offset"),
                     new MultiStructItemCustomView(this, "Unk 24", "Unk_24", "Unk_24_offset"),
                     new MultiStructItemCustomView(this, "Unk 25", "Unk_25", "Unk_25_offset"),
+                    new MultiStructItemCustomView(this, "Claw: Max Swings To Tenderize (Claw goes up in increments of 20 per swing, 5 swings = 100 = tenderize)", "Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize_", "Claw_Max_Swings_To_Tenderize_Claw_goes_up_in_increments_of_20_per_swing_5_swings_100_tenderize__offset"),
                     new MultiStructItemCustomView(this, "Unk 26", "Unk_26", "Unk_26_offset"),
                     new MultiStructItemCustomView(this, "Unk 27", "Unk_27", "Unk_27_offset"),
                     new MultiStructItemCustomView(this, "Unk 28", "Unk_28", "Unk_28_offset"),
                     new MultiStructItemCustomView(this, "Unk 29", "Unk_29", "Unk_29_offset"),
-                    new MultiStructItemCustomView(this, "Unk 30", "Unk_30", "Unk_30_offset"),
                 };
             }
         }
