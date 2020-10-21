@@ -5881,23 +5881,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_321_offset { get; private set; }
 
-            protected float Unk_322_raw;
-            public const string Unk_322_displayName = "Unk 322";
-            public const int Unk_322_sortIndex = 950;
-            [SortOrder(Unk_322_sortIndex)]
-            [DisplayName(Unk_322_displayName)]
-            public virtual float Unk_322 {
-                get => Unk_322_raw;
+            protected float Uncharged_Shelling_Shots_Damage_Multiplier_raw;
+            public const string Uncharged_Shelling_Shots_Damage_Multiplier_displayName = "Uncharged Shelling Shots Damage Multiplier";
+            public const int Uncharged_Shelling_Shots_Damage_Multiplier_sortIndex = 950;
+            [SortOrder(Uncharged_Shelling_Shots_Damage_Multiplier_sortIndex)]
+            [DisplayName(Uncharged_Shelling_Shots_Damage_Multiplier_displayName)]
+            public virtual float Uncharged_Shelling_Shots_Damage_Multiplier {
+                get => Uncharged_Shelling_Shots_Damage_Multiplier_raw;
                 set {
-                    if (Unk_322_raw == value) return;
-                    Unk_322_raw = value;
-                    ChangedItems.Add(nameof(Unk_322));
-                    OnPropertyChanged(nameof(Unk_322));
+                    if (Uncharged_Shelling_Shots_Damage_Multiplier_raw == value) return;
+                    Uncharged_Shelling_Shots_Damage_Multiplier_raw = value;
+                    ChangedItems.Add(nameof(Uncharged_Shelling_Shots_Damage_Multiplier));
+                    OnPropertyChanged(nameof(Uncharged_Shelling_Shots_Damage_Multiplier));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_322_offset { get; private set; }
+            public long Uncharged_Shelling_Shots_Damage_Multiplier_offset { get; private set; }
 
             protected float Full_burst_Damage_Multiplier_raw;
             public const string Full_burst_Damage_Multiplier_displayName = "Full-burst Damage Multiplier";
@@ -6039,8 +6039,8 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_320_raw = reader.ReadSingle();
                 data.Unk_321_offset = reader.BaseStream.Position;
                 data.Unk_321_raw = reader.ReadSingle();
-                data.Unk_322_offset = reader.BaseStream.Position;
-                data.Unk_322_raw = reader.ReadSingle();
+                data.Uncharged_Shelling_Shots_Damage_Multiplier_offset = reader.BaseStream.Position;
+                data.Uncharged_Shelling_Shots_Damage_Multiplier_raw = reader.ReadSingle();
                 data.Full_burst_Damage_Multiplier_offset = reader.BaseStream.Position;
                 data.Full_burst_Damage_Multiplier_raw = reader.ReadSingle();
                 data.Charge_Shell_Damage_Multiplier_offset = reader.BaseStream.Position;
@@ -6073,7 +6073,7 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_319_raw);
                 writer.Write(Unk_320_raw);
                 writer.Write(Unk_321_raw);
-                writer.Write(Unk_322_raw);
+                writer.Write(Uncharged_Shelling_Shots_Damage_Multiplier_raw);
                 writer.Write(Full_burst_Damage_Multiplier_raw);
                 writer.Write(Charge_Shell_Damage_Multiplier_raw);
                 writer.Write(Wyvernfire_Damage_Multiplier_raw);
@@ -6101,7 +6101,7 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 319", "Unk_319", "Unk_319_offset"),
                     new MultiStructItemCustomView(this, "Unk 320", "Unk_320", "Unk_320_offset"),
                     new MultiStructItemCustomView(this, "Unk 321", "Unk_321", "Unk_321_offset"),
-                    new MultiStructItemCustomView(this, "Unk 322", "Unk_322", "Unk_322_offset"),
+                    new MultiStructItemCustomView(this, "Uncharged Shelling Shots Damage Multiplier", "Uncharged_Shelling_Shots_Damage_Multiplier", "Uncharged_Shelling_Shots_Damage_Multiplier_offset"),
                     new MultiStructItemCustomView(this, "Full-burst Damage Multiplier", "Full_burst_Damage_Multiplier", "Full_burst_Damage_Multiplier_offset"),
                     new MultiStructItemCustomView(this, "Charge Shell Damage Multiplier", "Charge_Shell_Damage_Multiplier", "Charge_Shell_Damage_Multiplier_offset"),
                     new MultiStructItemCustomView(this, "Wyvernfire Damage Multiplier", "Wyvernfire_Damage_Multiplier", "Wyvernfire_Damage_Multiplier_offset"),

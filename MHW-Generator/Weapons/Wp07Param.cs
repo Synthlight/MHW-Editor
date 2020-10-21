@@ -116,7 +116,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Uncharged Shelling Shots Damage Multiplier", typeof(float)),
                     new MhwMultiStructData.Entry("Full-burst Damage Multiplier", typeof(float)),
                     new MhwMultiStructData.Entry("Charge Shell Damage Multiplier", typeof(float)),
                     new MhwMultiStructData.Entry("Wyvernfire Damage Multiplier", typeof(float)),
@@ -130,7 +130,7 @@ namespace MHW_Generator.Weapons {
                 }, 7),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex}) - Wyrmstake Blast Params", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 20}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 21}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
                 }, 1, showVertically: true),
