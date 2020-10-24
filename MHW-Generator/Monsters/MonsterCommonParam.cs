@@ -167,6 +167,7 @@ namespace MHW_Generator.Monsters {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex} (Added in chunkG6)", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),

@@ -2905,23 +2905,23 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_117_offset { get; private set; }
 
-            protected uint Unk_118_raw;
-            public const string Unk_118_displayName = "Unk 118";
-            public const int Unk_118_sortIndex = 1700;
-            [SortOrder(Unk_118_sortIndex)]
-            [DisplayName(Unk_118_displayName)]
-            public virtual uint Unk_118 {
-                get => Unk_118_raw;
+            protected float Unk_118_Added_in_chunkG6__raw;
+            public const string Unk_118_Added_in_chunkG6__displayName = "Unk 118 (Added in chunkG6)";
+            public const int Unk_118_Added_in_chunkG6__sortIndex = 1700;
+            [SortOrder(Unk_118_Added_in_chunkG6__sortIndex)]
+            [DisplayName(Unk_118_Added_in_chunkG6__displayName)]
+            public virtual float Unk_118_Added_in_chunkG6_ {
+                get => Unk_118_Added_in_chunkG6__raw;
                 set {
-                    if (Unk_118_raw == value) return;
-                    Unk_118_raw = value;
-                    ChangedItems.Add(nameof(Unk_118));
-                    OnPropertyChanged(nameof(Unk_118));
+                    if (Unk_118_Added_in_chunkG6__raw == value) return;
+                    Unk_118_Added_in_chunkG6__raw = value;
+                    ChangedItems.Add(nameof(Unk_118_Added_in_chunkG6_));
+                    OnPropertyChanged(nameof(Unk_118_Added_in_chunkG6_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_118_offset { get; private set; }
+            public long Unk_118_Added_in_chunkG6__offset { get; private set; }
 
             protected uint Unk_119_raw;
             public const string Unk_119_displayName = "Unk 119";
@@ -2959,12 +2959,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_120_offset { get; private set; }
 
-            protected float Unk_121_raw;
+            protected uint Unk_121_raw;
             public const string Unk_121_displayName = "Unk 121";
             public const int Unk_121_sortIndex = 1850;
             [SortOrder(Unk_121_sortIndex)]
             [DisplayName(Unk_121_displayName)]
-            public virtual float Unk_121 {
+            public virtual uint Unk_121 {
                 get => Unk_121_raw;
                 set {
                     if (Unk_121_raw == value) return;
@@ -3157,12 +3157,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_131_offset { get; private set; }
 
-            protected uint Unk_132_raw;
+            protected float Unk_132_raw;
             public const string Unk_132_displayName = "Unk 132";
             public const int Unk_132_sortIndex = 2400;
             [SortOrder(Unk_132_sortIndex)]
             [DisplayName(Unk_132_displayName)]
-            public virtual uint Unk_132 {
+            public virtual float Unk_132 {
                 get => Unk_132_raw;
                 set {
                     if (Unk_132_raw == value) return;
@@ -3193,12 +3193,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_133_offset { get; private set; }
 
-            protected float Unk_134_raw;
+            protected uint Unk_134_raw;
             public const string Unk_134_displayName = "Unk 134";
             public const int Unk_134_sortIndex = 2500;
             [SortOrder(Unk_134_sortIndex)]
             [DisplayName(Unk_134_displayName)]
-            public virtual float Unk_134 {
+            public virtual uint Unk_134 {
                 get => Unk_134_raw;
                 set {
                     if (Unk_134_raw == value) return;
@@ -3211,12 +3211,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_134_offset { get; private set; }
 
-            protected uint Unk_135_raw;
+            protected float Unk_135_raw;
             public const string Unk_135_displayName = "Unk 135";
             public const int Unk_135_sortIndex = 2550;
             [SortOrder(Unk_135_sortIndex)]
             [DisplayName(Unk_135_displayName)]
-            public virtual uint Unk_135 {
+            public virtual float Unk_135 {
                 get => Unk_135_raw;
                 set {
                     if (Unk_135_raw == value) return;
@@ -3229,12 +3229,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_135_offset { get; private set; }
 
-            protected float Unk_136_raw;
+            protected uint Unk_136_raw;
             public const string Unk_136_displayName = "Unk 136";
             public const int Unk_136_sortIndex = 2600;
             [SortOrder(Unk_136_sortIndex)]
             [DisplayName(Unk_136_displayName)]
-            public virtual float Unk_136 {
+            public virtual uint Unk_136 {
                 get => Unk_136_raw;
                 set {
                     if (Unk_136_raw == value) return;
@@ -3247,12 +3247,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_136_offset { get; private set; }
 
-            protected uint Unk_137_raw;
+            protected float Unk_137_raw;
             public const string Unk_137_displayName = "Unk 137";
             public const int Unk_137_sortIndex = 2650;
             [SortOrder(Unk_137_sortIndex)]
             [DisplayName(Unk_137_displayName)]
-            public virtual uint Unk_137 {
+            public virtual float Unk_137 {
                 get => Unk_137_raw;
                 set {
                     if (Unk_137_raw == value) return;
@@ -3265,12 +3265,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_137_offset { get; private set; }
 
-            protected float Unk_138_raw;
+            protected uint Unk_138_raw;
             public const string Unk_138_displayName = "Unk 138";
             public const int Unk_138_sortIndex = 2700;
             [SortOrder(Unk_138_sortIndex)]
             [DisplayName(Unk_138_displayName)]
-            public virtual float Unk_138 {
+            public virtual uint Unk_138 {
                 get => Unk_138_raw;
                 set {
                     if (Unk_138_raw == value) return;
@@ -3571,12 +3571,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_154_offset { get; private set; }
 
-            protected int Unk_155_raw;
+            protected float Unk_155_raw;
             public const string Unk_155_displayName = "Unk 155";
             public const int Unk_155_sortIndex = 3550;
             [SortOrder(Unk_155_sortIndex)]
             [DisplayName(Unk_155_displayName)]
-            public virtual int Unk_155 {
+            public virtual float Unk_155 {
                 get => Unk_155_raw;
                 set {
                     if (Unk_155_raw == value) return;
@@ -3589,12 +3589,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_155_offset { get; private set; }
 
-            protected float Unk_156_raw;
+            protected int Unk_156_raw;
             public const string Unk_156_displayName = "Unk 156";
             public const int Unk_156_sortIndex = 3600;
             [SortOrder(Unk_156_sortIndex)]
             [DisplayName(Unk_156_displayName)]
-            public virtual float Unk_156 {
+            public virtual int Unk_156 {
                 get => Unk_156_raw;
                 set {
                     if (Unk_156_raw == value) return;
@@ -3625,7 +3625,25 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_157_offset { get; private set; }
 
-            public const int lastSortIndex = 3700;
+            protected float Unk_158_raw;
+            public const string Unk_158_displayName = "Unk 158";
+            public const int Unk_158_sortIndex = 3700;
+            [SortOrder(Unk_158_sortIndex)]
+            [DisplayName(Unk_158_displayName)]
+            public virtual float Unk_158 {
+                get => Unk_158_raw;
+                set {
+                    if (Unk_158_raw == value) return;
+                    Unk_158_raw = value;
+                    ChangedItems.Add(nameof(Unk_158));
+                    OnPropertyChanged(nameof(Unk_158));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Unk_158_offset { get; private set; }
+
+            public const int lastSortIndex = 3750;
 
             public static ObservableMhwStructCollection<Monster_Common_Params_4_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Common_Params_4_>();
@@ -3705,14 +3723,14 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_116_raw = reader.ReadSingle();
                 data.Unk_117_offset = reader.BaseStream.Position;
                 data.Unk_117_raw = reader.ReadSingle();
-                data.Unk_118_offset = reader.BaseStream.Position;
-                data.Unk_118_raw = reader.ReadUInt32();
+                data.Unk_118_Added_in_chunkG6__offset = reader.BaseStream.Position;
+                data.Unk_118_Added_in_chunkG6__raw = reader.ReadSingle();
                 data.Unk_119_offset = reader.BaseStream.Position;
                 data.Unk_119_raw = reader.ReadUInt32();
                 data.Unk_120_offset = reader.BaseStream.Position;
                 data.Unk_120_raw = reader.ReadUInt32();
                 data.Unk_121_offset = reader.BaseStream.Position;
-                data.Unk_121_raw = reader.ReadSingle();
+                data.Unk_121_raw = reader.ReadUInt32();
                 data.Unk_122_offset = reader.BaseStream.Position;
                 data.Unk_122_raw = reader.ReadSingle();
                 data.Unk_123_offset = reader.BaseStream.Position;
@@ -3734,19 +3752,19 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_131_offset = reader.BaseStream.Position;
                 data.Unk_131_raw = reader.ReadSingle();
                 data.Unk_132_offset = reader.BaseStream.Position;
-                data.Unk_132_raw = reader.ReadUInt32();
+                data.Unk_132_raw = reader.ReadSingle();
                 data.Unk_133_offset = reader.BaseStream.Position;
                 data.Unk_133_raw = reader.ReadUInt32();
                 data.Unk_134_offset = reader.BaseStream.Position;
-                data.Unk_134_raw = reader.ReadSingle();
+                data.Unk_134_raw = reader.ReadUInt32();
                 data.Unk_135_offset = reader.BaseStream.Position;
-                data.Unk_135_raw = reader.ReadUInt32();
+                data.Unk_135_raw = reader.ReadSingle();
                 data.Unk_136_offset = reader.BaseStream.Position;
-                data.Unk_136_raw = reader.ReadSingle();
+                data.Unk_136_raw = reader.ReadUInt32();
                 data.Unk_137_offset = reader.BaseStream.Position;
-                data.Unk_137_raw = reader.ReadUInt32();
+                data.Unk_137_raw = reader.ReadSingle();
                 data.Unk_138_offset = reader.BaseStream.Position;
-                data.Unk_138_raw = reader.ReadSingle();
+                data.Unk_138_raw = reader.ReadUInt32();
                 data.Unk_139_offset = reader.BaseStream.Position;
                 data.Unk_139_raw = reader.ReadSingle();
                 data.Unk_140_offset = reader.BaseStream.Position;
@@ -3780,11 +3798,13 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_154_offset = reader.BaseStream.Position;
                 data.Unk_154_raw = reader.ReadSingle();
                 data.Unk_155_offset = reader.BaseStream.Position;
-                data.Unk_155_raw = reader.ReadInt32();
+                data.Unk_155_raw = reader.ReadSingle();
                 data.Unk_156_offset = reader.BaseStream.Position;
-                data.Unk_156_raw = reader.ReadSingle();
+                data.Unk_156_raw = reader.ReadInt32();
                 data.Unk_157_offset = reader.BaseStream.Position;
                 data.Unk_157_raw = reader.ReadSingle();
+                data.Unk_158_offset = reader.BaseStream.Position;
+                data.Unk_158_raw = reader.ReadSingle();
                 return data;
             }
 
@@ -3822,7 +3842,7 @@ namespace MHW_Editor.Structs.Monsters {
                 writer.Write(Unk_115_raw);
                 writer.Write(Unk_116_raw);
                 writer.Write(Unk_117_raw);
-                writer.Write(Unk_118_raw);
+                writer.Write(Unk_118_Added_in_chunkG6__raw);
                 writer.Write(Unk_119_raw);
                 writer.Write(Unk_120_raw);
                 writer.Write(Unk_121_raw);
@@ -3862,6 +3882,7 @@ namespace MHW_Editor.Structs.Monsters {
                 writer.Write(Unk_155_raw);
                 writer.Write(Unk_156_raw);
                 writer.Write(Unk_157_raw);
+                writer.Write(Unk_158_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
@@ -3899,7 +3920,7 @@ namespace MHW_Editor.Structs.Monsters {
                     new MultiStructItemCustomView(this, "Unk 115", "Unk_115", "Unk_115_offset"),
                     new MultiStructItemCustomView(this, "Unk 116", "Unk_116", "Unk_116_offset"),
                     new MultiStructItemCustomView(this, "Unk 117", "Unk_117", "Unk_117_offset"),
-                    new MultiStructItemCustomView(this, "Unk 118", "Unk_118", "Unk_118_offset"),
+                    new MultiStructItemCustomView(this, "Unk 118 (Added in chunkG6)", "Unk_118_Added_in_chunkG6_", "Unk_118_Added_in_chunkG6__offset"),
                     new MultiStructItemCustomView(this, "Unk 119", "Unk_119", "Unk_119_offset"),
                     new MultiStructItemCustomView(this, "Unk 120", "Unk_120", "Unk_120_offset"),
                     new MultiStructItemCustomView(this, "Unk 121", "Unk_121", "Unk_121_offset"),
@@ -3939,6 +3960,7 @@ namespace MHW_Editor.Structs.Monsters {
                     new MultiStructItemCustomView(this, "Unk 155", "Unk_155", "Unk_155_offset"),
                     new MultiStructItemCustomView(this, "Unk 156", "Unk_156", "Unk_156_offset"),
                     new MultiStructItemCustomView(this, "Unk 157", "Unk_157", "Unk_157_offset"),
+                    new MultiStructItemCustomView(this, "Unk 158", "Unk_158", "Unk_158_offset"),
                 };
             }
         }
@@ -3965,30 +3987,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Header_offset { get; private set; }
 
-            protected float Unk_158_raw;
-            public const string Unk_158_displayName = "Unk 158";
-            public const int Unk_158_sortIndex = 100;
-            [SortOrder(Unk_158_sortIndex)]
-            [DisplayName(Unk_158_displayName)]
-            public virtual float Unk_158 {
-                get => Unk_158_raw;
-                set {
-                    if (Unk_158_raw == value) return;
-                    Unk_158_raw = value;
-                    ChangedItems.Add(nameof(Unk_158));
-                    OnPropertyChanged(nameof(Unk_158));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_158_offset { get; private set; }
-
-            protected byte Unk_159_raw;
+            protected float Unk_159_raw;
             public const string Unk_159_displayName = "Unk 159";
-            public const int Unk_159_sortIndex = 150;
+            public const int Unk_159_sortIndex = 100;
             [SortOrder(Unk_159_sortIndex)]
             [DisplayName(Unk_159_displayName)]
-            public virtual byte Unk_159 {
+            public virtual float Unk_159 {
                 get => Unk_159_raw;
                 set {
                     if (Unk_159_raw == value) return;
@@ -4001,12 +4005,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_159_offset { get; private set; }
 
-            protected float Unk_160_raw;
+            protected byte Unk_160_raw;
             public const string Unk_160_displayName = "Unk 160";
-            public const int Unk_160_sortIndex = 200;
+            public const int Unk_160_sortIndex = 150;
             [SortOrder(Unk_160_sortIndex)]
             [DisplayName(Unk_160_displayName)]
-            public virtual float Unk_160 {
+            public virtual byte Unk_160 {
                 get => Unk_160_raw;
                 set {
                     if (Unk_160_raw == value) return;
@@ -4021,7 +4025,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_161_raw;
             public const string Unk_161_displayName = "Unk 161";
-            public const int Unk_161_sortIndex = 250;
+            public const int Unk_161_sortIndex = 200;
             [SortOrder(Unk_161_sortIndex)]
             [DisplayName(Unk_161_displayName)]
             public virtual float Unk_161 {
@@ -4039,7 +4043,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_162_raw;
             public const string Unk_162_displayName = "Unk 162";
-            public const int Unk_162_sortIndex = 300;
+            public const int Unk_162_sortIndex = 250;
             [SortOrder(Unk_162_sortIndex)]
             [DisplayName(Unk_162_displayName)]
             public virtual float Unk_162 {
@@ -4055,12 +4059,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_162_offset { get; private set; }
 
-            protected uint Unk_163_raw;
+            protected float Unk_163_raw;
             public const string Unk_163_displayName = "Unk 163";
-            public const int Unk_163_sortIndex = 350;
+            public const int Unk_163_sortIndex = 300;
             [SortOrder(Unk_163_sortIndex)]
             [DisplayName(Unk_163_displayName)]
-            public virtual uint Unk_163 {
+            public virtual float Unk_163 {
                 get => Unk_163_raw;
                 set {
                     if (Unk_163_raw == value) return;
@@ -4073,12 +4077,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_163_offset { get; private set; }
 
-            protected float Unk_164_raw;
+            protected uint Unk_164_raw;
             public const string Unk_164_displayName = "Unk 164";
-            public const int Unk_164_sortIndex = 400;
+            public const int Unk_164_sortIndex = 350;
             [SortOrder(Unk_164_sortIndex)]
             [DisplayName(Unk_164_displayName)]
-            public virtual float Unk_164 {
+            public virtual uint Unk_164 {
                 get => Unk_164_raw;
                 set {
                     if (Unk_164_raw == value) return;
@@ -4093,7 +4097,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_165_raw;
             public const string Unk_165_displayName = "Unk 165";
-            public const int Unk_165_sortIndex = 450;
+            public const int Unk_165_sortIndex = 400;
             [SortOrder(Unk_165_sortIndex)]
             [DisplayName(Unk_165_displayName)]
             public virtual float Unk_165 {
@@ -4111,7 +4115,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_166_raw;
             public const string Unk_166_displayName = "Unk 166";
-            public const int Unk_166_sortIndex = 500;
+            public const int Unk_166_sortIndex = 450;
             [SortOrder(Unk_166_sortIndex)]
             [DisplayName(Unk_166_displayName)]
             public virtual float Unk_166 {
@@ -4129,7 +4133,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_167_raw;
             public const string Unk_167_displayName = "Unk 167";
-            public const int Unk_167_sortIndex = 550;
+            public const int Unk_167_sortIndex = 500;
             [SortOrder(Unk_167_sortIndex)]
             [DisplayName(Unk_167_displayName)]
             public virtual float Unk_167 {
@@ -4147,7 +4151,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_168_raw;
             public const string Unk_168_displayName = "Unk 168";
-            public const int Unk_168_sortIndex = 600;
+            public const int Unk_168_sortIndex = 550;
             [SortOrder(Unk_168_sortIndex)]
             [DisplayName(Unk_168_displayName)]
             public virtual float Unk_168 {
@@ -4165,7 +4169,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_169_raw;
             public const string Unk_169_displayName = "Unk 169";
-            public const int Unk_169_sortIndex = 650;
+            public const int Unk_169_sortIndex = 600;
             [SortOrder(Unk_169_sortIndex)]
             [DisplayName(Unk_169_displayName)]
             public virtual float Unk_169 {
@@ -4183,7 +4187,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_170_raw;
             public const string Unk_170_displayName = "Unk 170";
-            public const int Unk_170_sortIndex = 700;
+            public const int Unk_170_sortIndex = 650;
             [SortOrder(Unk_170_sortIndex)]
             [DisplayName(Unk_170_displayName)]
             public virtual float Unk_170 {
@@ -4201,7 +4205,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_171_raw;
             public const string Unk_171_displayName = "Unk 171";
-            public const int Unk_171_sortIndex = 750;
+            public const int Unk_171_sortIndex = 700;
             [SortOrder(Unk_171_sortIndex)]
             [DisplayName(Unk_171_displayName)]
             public virtual float Unk_171 {
@@ -4219,7 +4223,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_172_raw;
             public const string Unk_172_displayName = "Unk 172";
-            public const int Unk_172_sortIndex = 800;
+            public const int Unk_172_sortIndex = 750;
             [SortOrder(Unk_172_sortIndex)]
             [DisplayName(Unk_172_displayName)]
             public virtual float Unk_172 {
@@ -4237,7 +4241,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_173_raw;
             public const string Unk_173_displayName = "Unk 173";
-            public const int Unk_173_sortIndex = 850;
+            public const int Unk_173_sortIndex = 800;
             [SortOrder(Unk_173_sortIndex)]
             [DisplayName(Unk_173_displayName)]
             public virtual float Unk_173 {
@@ -4255,7 +4259,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_174_raw;
             public const string Unk_174_displayName = "Unk 174";
-            public const int Unk_174_sortIndex = 900;
+            public const int Unk_174_sortIndex = 850;
             [SortOrder(Unk_174_sortIndex)]
             [DisplayName(Unk_174_displayName)]
             public virtual float Unk_174 {
@@ -4273,7 +4277,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_175_raw;
             public const string Unk_175_displayName = "Unk 175";
-            public const int Unk_175_sortIndex = 950;
+            public const int Unk_175_sortIndex = 900;
             [SortOrder(Unk_175_sortIndex)]
             [DisplayName(Unk_175_displayName)]
             public virtual float Unk_175 {
@@ -4291,7 +4295,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_176_raw;
             public const string Unk_176_displayName = "Unk 176";
-            public const int Unk_176_sortIndex = 1000;
+            public const int Unk_176_sortIndex = 950;
             [SortOrder(Unk_176_sortIndex)]
             [DisplayName(Unk_176_displayName)]
             public virtual float Unk_176 {
@@ -4309,7 +4313,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_177_raw;
             public const string Unk_177_displayName = "Unk 177";
-            public const int Unk_177_sortIndex = 1050;
+            public const int Unk_177_sortIndex = 1000;
             [SortOrder(Unk_177_sortIndex)]
             [DisplayName(Unk_177_displayName)]
             public virtual float Unk_177 {
@@ -4327,7 +4331,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_178_raw;
             public const string Unk_178_displayName = "Unk 178";
-            public const int Unk_178_sortIndex = 1100;
+            public const int Unk_178_sortIndex = 1050;
             [SortOrder(Unk_178_sortIndex)]
             [DisplayName(Unk_178_displayName)]
             public virtual float Unk_178 {
@@ -4345,7 +4349,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_179_raw;
             public const string Unk_179_displayName = "Unk 179";
-            public const int Unk_179_sortIndex = 1150;
+            public const int Unk_179_sortIndex = 1100;
             [SortOrder(Unk_179_sortIndex)]
             [DisplayName(Unk_179_displayName)]
             public virtual float Unk_179 {
@@ -4360,6 +4364,24 @@ namespace MHW_Editor.Structs.Monsters {
 
             [DisplayName("Offset")]
             public long Unk_179_offset { get; private set; }
+
+            protected float Unk_180_raw;
+            public const string Unk_180_displayName = "Unk 180";
+            public const int Unk_180_sortIndex = 1150;
+            [SortOrder(Unk_180_sortIndex)]
+            [DisplayName(Unk_180_displayName)]
+            public virtual float Unk_180 {
+                get => Unk_180_raw;
+                set {
+                    if (Unk_180_raw == value) return;
+                    Unk_180_raw = value;
+                    ChangedItems.Add(nameof(Unk_180));
+                    OnPropertyChanged(nameof(Unk_180));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Unk_180_offset { get; private set; }
 
             public const int lastSortIndex = 1200;
 
@@ -4377,20 +4399,18 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Index = i;
                 data.Header_offset = reader.BaseStream.Position;
                 data.Header_raw = reader.ReadUInt32();
-                data.Unk_158_offset = reader.BaseStream.Position;
-                data.Unk_158_raw = reader.ReadSingle();
                 data.Unk_159_offset = reader.BaseStream.Position;
-                data.Unk_159_raw = reader.ReadByte();
+                data.Unk_159_raw = reader.ReadSingle();
                 data.Unk_160_offset = reader.BaseStream.Position;
-                data.Unk_160_raw = reader.ReadSingle();
+                data.Unk_160_raw = reader.ReadByte();
                 data.Unk_161_offset = reader.BaseStream.Position;
                 data.Unk_161_raw = reader.ReadSingle();
                 data.Unk_162_offset = reader.BaseStream.Position;
                 data.Unk_162_raw = reader.ReadSingle();
                 data.Unk_163_offset = reader.BaseStream.Position;
-                data.Unk_163_raw = reader.ReadUInt32();
+                data.Unk_163_raw = reader.ReadSingle();
                 data.Unk_164_offset = reader.BaseStream.Position;
-                data.Unk_164_raw = reader.ReadSingle();
+                data.Unk_164_raw = reader.ReadUInt32();
                 data.Unk_165_offset = reader.BaseStream.Position;
                 data.Unk_165_raw = reader.ReadSingle();
                 data.Unk_166_offset = reader.BaseStream.Position;
@@ -4421,12 +4441,13 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_178_raw = reader.ReadSingle();
                 data.Unk_179_offset = reader.BaseStream.Position;
                 data.Unk_179_raw = reader.ReadSingle();
+                data.Unk_180_offset = reader.BaseStream.Position;
+                data.Unk_180_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Header_raw);
-                writer.Write(Unk_158_raw);
                 writer.Write(Unk_159_raw);
                 writer.Write(Unk_160_raw);
                 writer.Write(Unk_161_raw);
@@ -4448,12 +4469,12 @@ namespace MHW_Editor.Structs.Monsters {
                 writer.Write(Unk_177_raw);
                 writer.Write(Unk_178_raw);
                 writer.Write(Unk_179_raw);
+                writer.Write(Unk_180_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
                     new MultiStructItemCustomView(this, "Header", "Header", "Header_offset"),
-                    new MultiStructItemCustomView(this, "Unk 158", "Unk_158", "Unk_158_offset"),
                     new MultiStructItemCustomView(this, "Unk 159", "Unk_159", "Unk_159_offset"),
                     new MultiStructItemCustomView(this, "Unk 160", "Unk_160", "Unk_160_offset"),
                     new MultiStructItemCustomView(this, "Unk 161", "Unk_161", "Unk_161_offset"),
@@ -4475,6 +4496,7 @@ namespace MHW_Editor.Structs.Monsters {
                     new MultiStructItemCustomView(this, "Unk 177", "Unk_177", "Unk_177_offset"),
                     new MultiStructItemCustomView(this, "Unk 178", "Unk_178", "Unk_178_offset"),
                     new MultiStructItemCustomView(this, "Unk 179", "Unk_179", "Unk_179_offset"),
+                    new MultiStructItemCustomView(this, "Unk 180", "Unk_180", "Unk_180_offset"),
                 };
             }
         }
@@ -4542,30 +4564,12 @@ namespace MHW_Editor.Structs.Monsters {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Common Params (6)";
 
-            protected uint Unk_180_raw;
-            public const string Unk_180_displayName = "Unk 180";
-            public const int Unk_180_sortIndex = 50;
-            [SortOrder(Unk_180_sortIndex)]
-            [DisplayName(Unk_180_displayName)]
-            public virtual uint Unk_180 {
-                get => Unk_180_raw;
-                set {
-                    if (Unk_180_raw == value) return;
-                    Unk_180_raw = value;
-                    ChangedItems.Add(nameof(Unk_180));
-                    OnPropertyChanged(nameof(Unk_180));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_180_offset { get; private set; }
-
-            protected float Unk_181_raw;
+            protected uint Unk_181_raw;
             public const string Unk_181_displayName = "Unk 181";
-            public const int Unk_181_sortIndex = 100;
+            public const int Unk_181_sortIndex = 50;
             [SortOrder(Unk_181_sortIndex)]
             [DisplayName(Unk_181_displayName)]
-            public virtual float Unk_181 {
+            public virtual uint Unk_181 {
                 get => Unk_181_raw;
                 set {
                     if (Unk_181_raw == value) return;
@@ -4580,7 +4584,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_182_raw;
             public const string Unk_182_displayName = "Unk 182";
-            public const int Unk_182_sortIndex = 150;
+            public const int Unk_182_sortIndex = 100;
             [SortOrder(Unk_182_sortIndex)]
             [DisplayName(Unk_182_displayName)]
             public virtual float Unk_182 {
@@ -4596,12 +4600,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_182_offset { get; private set; }
 
-            protected int Unk_183_raw;
+            protected float Unk_183_raw;
             public const string Unk_183_displayName = "Unk 183";
-            public const int Unk_183_sortIndex = 200;
+            public const int Unk_183_sortIndex = 150;
             [SortOrder(Unk_183_sortIndex)]
             [DisplayName(Unk_183_displayName)]
-            public virtual int Unk_183 {
+            public virtual float Unk_183 {
                 get => Unk_183_raw;
                 set {
                     if (Unk_183_raw == value) return;
@@ -4616,7 +4620,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected int Unk_184_raw;
             public const string Unk_184_displayName = "Unk 184";
-            public const int Unk_184_sortIndex = 250;
+            public const int Unk_184_sortIndex = 200;
             [SortOrder(Unk_184_sortIndex)]
             [DisplayName(Unk_184_displayName)]
             public virtual int Unk_184 {
@@ -4632,12 +4636,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_184_offset { get; private set; }
 
-            protected float Unk_185_raw;
+            protected int Unk_185_raw;
             public const string Unk_185_displayName = "Unk 185";
-            public const int Unk_185_sortIndex = 300;
+            public const int Unk_185_sortIndex = 250;
             [SortOrder(Unk_185_sortIndex)]
             [DisplayName(Unk_185_displayName)]
-            public virtual float Unk_185 {
+            public virtual int Unk_185 {
                 get => Unk_185_raw;
                 set {
                     if (Unk_185_raw == value) return;
@@ -4652,7 +4656,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_186_raw;
             public const string Unk_186_displayName = "Unk 186";
-            public const int Unk_186_sortIndex = 350;
+            public const int Unk_186_sortIndex = 300;
             [SortOrder(Unk_186_sortIndex)]
             [DisplayName(Unk_186_displayName)]
             public virtual float Unk_186 {
@@ -4668,12 +4672,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_186_offset { get; private set; }
 
-            protected uint Unk_187_raw;
+            protected float Unk_187_raw;
             public const string Unk_187_displayName = "Unk 187";
-            public const int Unk_187_sortIndex = 400;
+            public const int Unk_187_sortIndex = 350;
             [SortOrder(Unk_187_sortIndex)]
             [DisplayName(Unk_187_displayName)]
-            public virtual uint Unk_187 {
+            public virtual float Unk_187 {
                 get => Unk_187_raw;
                 set {
                     if (Unk_187_raw == value) return;
@@ -4686,12 +4690,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_187_offset { get; private set; }
 
-            protected float Unk_188_raw;
+            protected uint Unk_188_raw;
             public const string Unk_188_displayName = "Unk 188";
-            public const int Unk_188_sortIndex = 450;
+            public const int Unk_188_sortIndex = 400;
             [SortOrder(Unk_188_sortIndex)]
             [DisplayName(Unk_188_displayName)]
-            public virtual float Unk_188 {
+            public virtual uint Unk_188 {
                 get => Unk_188_raw;
                 set {
                     if (Unk_188_raw == value) return;
@@ -4706,7 +4710,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_189_raw;
             public const string Unk_189_displayName = "Unk 189";
-            public const int Unk_189_sortIndex = 500;
+            public const int Unk_189_sortIndex = 450;
             [SortOrder(Unk_189_sortIndex)]
             [DisplayName(Unk_189_displayName)]
             public virtual float Unk_189 {
@@ -4724,7 +4728,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_190_raw;
             public const string Unk_190_displayName = "Unk 190";
-            public const int Unk_190_sortIndex = 550;
+            public const int Unk_190_sortIndex = 500;
             [SortOrder(Unk_190_sortIndex)]
             [DisplayName(Unk_190_displayName)]
             public virtual float Unk_190 {
@@ -4742,7 +4746,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_191_raw;
             public const string Unk_191_displayName = "Unk 191";
-            public const int Unk_191_sortIndex = 600;
+            public const int Unk_191_sortIndex = 550;
             [SortOrder(Unk_191_sortIndex)]
             [DisplayName(Unk_191_displayName)]
             public virtual float Unk_191 {
@@ -4760,7 +4764,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_192_raw;
             public const string Unk_192_displayName = "Unk 192";
-            public const int Unk_192_sortIndex = 650;
+            public const int Unk_192_sortIndex = 600;
             [SortOrder(Unk_192_sortIndex)]
             [DisplayName(Unk_192_displayName)]
             public virtual float Unk_192 {
@@ -4778,7 +4782,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_193_raw;
             public const string Unk_193_displayName = "Unk 193";
-            public const int Unk_193_sortIndex = 700;
+            public const int Unk_193_sortIndex = 650;
             [SortOrder(Unk_193_sortIndex)]
             [DisplayName(Unk_193_displayName)]
             public virtual float Unk_193 {
@@ -4796,7 +4800,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_194_raw;
             public const string Unk_194_displayName = "Unk 194";
-            public const int Unk_194_sortIndex = 750;
+            public const int Unk_194_sortIndex = 700;
             [SortOrder(Unk_194_sortIndex)]
             [DisplayName(Unk_194_displayName)]
             public virtual float Unk_194 {
@@ -4814,7 +4818,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_195_raw;
             public const string Unk_195_displayName = "Unk 195";
-            public const int Unk_195_sortIndex = 800;
+            public const int Unk_195_sortIndex = 750;
             [SortOrder(Unk_195_sortIndex)]
             [DisplayName(Unk_195_displayName)]
             public virtual float Unk_195 {
@@ -4832,7 +4836,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_196_raw;
             public const string Unk_196_displayName = "Unk 196";
-            public const int Unk_196_sortIndex = 850;
+            public const int Unk_196_sortIndex = 800;
             [SortOrder(Unk_196_sortIndex)]
             [DisplayName(Unk_196_displayName)]
             public virtual float Unk_196 {
@@ -4850,7 +4854,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_197_raw;
             public const string Unk_197_displayName = "Unk 197";
-            public const int Unk_197_sortIndex = 900;
+            public const int Unk_197_sortIndex = 850;
             [SortOrder(Unk_197_sortIndex)]
             [DisplayName(Unk_197_displayName)]
             public virtual float Unk_197 {
@@ -4866,6 +4870,24 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_197_offset { get; private set; }
 
+            protected float Unk_198_raw;
+            public const string Unk_198_displayName = "Unk 198";
+            public const int Unk_198_sortIndex = 900;
+            [SortOrder(Unk_198_sortIndex)]
+            [DisplayName(Unk_198_displayName)]
+            public virtual float Unk_198 {
+                get => Unk_198_raw;
+                set {
+                    if (Unk_198_raw == value) return;
+                    Unk_198_raw = value;
+                    ChangedItems.Add(nameof(Unk_198));
+                    OnPropertyChanged(nameof(Unk_198));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Unk_198_offset { get; private set; }
+
             public const int lastSortIndex = 950;
 
             public static ObservableMhwStructCollection<Monster_Common_Params_6_> LoadData(BinaryReader reader) {
@@ -4880,24 +4902,22 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Common_Params_6_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Common_Params_6_();
                 data.Index = i;
-                data.Unk_180_offset = reader.BaseStream.Position;
-                data.Unk_180_raw = reader.ReadUInt32();
                 data.Unk_181_offset = reader.BaseStream.Position;
-                data.Unk_181_raw = reader.ReadSingle();
+                data.Unk_181_raw = reader.ReadUInt32();
                 data.Unk_182_offset = reader.BaseStream.Position;
                 data.Unk_182_raw = reader.ReadSingle();
                 data.Unk_183_offset = reader.BaseStream.Position;
-                data.Unk_183_raw = reader.ReadInt32();
+                data.Unk_183_raw = reader.ReadSingle();
                 data.Unk_184_offset = reader.BaseStream.Position;
                 data.Unk_184_raw = reader.ReadInt32();
                 data.Unk_185_offset = reader.BaseStream.Position;
-                data.Unk_185_raw = reader.ReadSingle();
+                data.Unk_185_raw = reader.ReadInt32();
                 data.Unk_186_offset = reader.BaseStream.Position;
                 data.Unk_186_raw = reader.ReadSingle();
                 data.Unk_187_offset = reader.BaseStream.Position;
-                data.Unk_187_raw = reader.ReadUInt32();
+                data.Unk_187_raw = reader.ReadSingle();
                 data.Unk_188_offset = reader.BaseStream.Position;
-                data.Unk_188_raw = reader.ReadSingle();
+                data.Unk_188_raw = reader.ReadUInt32();
                 data.Unk_189_offset = reader.BaseStream.Position;
                 data.Unk_189_raw = reader.ReadSingle();
                 data.Unk_190_offset = reader.BaseStream.Position;
@@ -4916,11 +4936,12 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_196_raw = reader.ReadSingle();
                 data.Unk_197_offset = reader.BaseStream.Position;
                 data.Unk_197_raw = reader.ReadSingle();
+                data.Unk_198_offset = reader.BaseStream.Position;
+                data.Unk_198_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_180_raw);
                 writer.Write(Unk_181_raw);
                 writer.Write(Unk_182_raw);
                 writer.Write(Unk_183_raw);
@@ -4938,11 +4959,11 @@ namespace MHW_Editor.Structs.Monsters {
                 writer.Write(Unk_195_raw);
                 writer.Write(Unk_196_raw);
                 writer.Write(Unk_197_raw);
+                writer.Write(Unk_198_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 180", "Unk_180", "Unk_180_offset"),
                     new MultiStructItemCustomView(this, "Unk 181", "Unk_181", "Unk_181_offset"),
                     new MultiStructItemCustomView(this, "Unk 182", "Unk_182", "Unk_182_offset"),
                     new MultiStructItemCustomView(this, "Unk 183", "Unk_183", "Unk_183_offset"),
@@ -4960,6 +4981,7 @@ namespace MHW_Editor.Structs.Monsters {
                     new MultiStructItemCustomView(this, "Unk 195", "Unk_195", "Unk_195_offset"),
                     new MultiStructItemCustomView(this, "Unk 196", "Unk_196", "Unk_196_offset"),
                     new MultiStructItemCustomView(this, "Unk 197", "Unk_197", "Unk_197_offset"),
+                    new MultiStructItemCustomView(this, "Unk 198", "Unk_198", "Unk_198_offset"),
                 };
             }
         }
@@ -5027,23 +5049,23 @@ namespace MHW_Editor.Structs.Monsters {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Common Params (7)";
 
-            protected uint Unk_198_raw;
-            public const string Unk_198_displayName = "Unk 198";
-            public const int Unk_198_sortIndex = 50;
-            [SortOrder(Unk_198_sortIndex)]
-            [DisplayName(Unk_198_displayName)]
-            public virtual uint Unk_198 {
-                get => Unk_198_raw;
+            protected uint Unk_199_raw;
+            public const string Unk_199_displayName = "Unk 199";
+            public const int Unk_199_sortIndex = 50;
+            [SortOrder(Unk_199_sortIndex)]
+            [DisplayName(Unk_199_displayName)]
+            public virtual uint Unk_199 {
+                get => Unk_199_raw;
                 set {
-                    if (Unk_198_raw == value) return;
-                    Unk_198_raw = value;
-                    ChangedItems.Add(nameof(Unk_198));
-                    OnPropertyChanged(nameof(Unk_198));
+                    if (Unk_199_raw == value) return;
+                    Unk_199_raw = value;
+                    ChangedItems.Add(nameof(Unk_199));
+                    OnPropertyChanged(nameof(Unk_199));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_198_offset { get; private set; }
+            public long Unk_199_offset { get; private set; }
 
             protected uint Unk_Arr_4_Count_raw;
             public const string Unk_Arr_4_Count_displayName = "Unk Arr 4 Count";
@@ -5077,21 +5099,21 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Common_Params_7_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Common_Params_7_();
                 data.Index = i;
-                data.Unk_198_offset = reader.BaseStream.Position;
-                data.Unk_198_raw = reader.ReadUInt32();
+                data.Unk_199_offset = reader.BaseStream.Position;
+                data.Unk_199_raw = reader.ReadUInt32();
                 data.Unk_Arr_4_Count_offset = reader.BaseStream.Position;
                 data.Unk_Arr_4_Count_raw = reader.ReadUInt32();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_198_raw);
+                writer.Write(Unk_199_raw);
                 writer.Write(Unk_Arr_4_Count_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 198", "Unk_198", "Unk_198_offset"),
+                    new MultiStructItemCustomView(this, "Unk 199", "Unk_199", "Unk_199_offset"),
                     new MultiStructItemCustomView(this, "Unk Arr 4 Count", "Unk_Arr_4_Count", "Unk_Arr_4_Count_offset"),
                 };
             }
@@ -5167,27 +5189,9 @@ namespace MHW_Editor.Structs.Monsters {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Common Params (8)";
 
-            protected uint Unk_199_raw;
-            public const string Unk_199_displayName = "Unk 199";
-            public const int Unk_199_sortIndex = 50;
-            [SortOrder(Unk_199_sortIndex)]
-            [DisplayName(Unk_199_displayName)]
-            public virtual uint Unk_199 {
-                get => Unk_199_raw;
-                set {
-                    if (Unk_199_raw == value) return;
-                    Unk_199_raw = value;
-                    ChangedItems.Add(nameof(Unk_199));
-                    OnPropertyChanged(nameof(Unk_199));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_199_offset { get; private set; }
-
             protected uint Unk_200_raw;
             public const string Unk_200_displayName = "Unk 200";
-            public const int Unk_200_sortIndex = 100;
+            public const int Unk_200_sortIndex = 50;
             [SortOrder(Unk_200_sortIndex)]
             [DisplayName(Unk_200_displayName)]
             public virtual uint Unk_200 {
@@ -5205,7 +5209,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_201_raw;
             public const string Unk_201_displayName = "Unk 201";
-            public const int Unk_201_sortIndex = 150;
+            public const int Unk_201_sortIndex = 100;
             [SortOrder(Unk_201_sortIndex)]
             [DisplayName(Unk_201_displayName)]
             public virtual uint Unk_201 {
@@ -5223,7 +5227,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_202_raw;
             public const string Unk_202_displayName = "Unk 202";
-            public const int Unk_202_sortIndex = 200;
+            public const int Unk_202_sortIndex = 150;
             [SortOrder(Unk_202_sortIndex)]
             [DisplayName(Unk_202_displayName)]
             public virtual uint Unk_202 {
@@ -5241,7 +5245,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_203_raw;
             public const string Unk_203_displayName = "Unk 203";
-            public const int Unk_203_sortIndex = 250;
+            public const int Unk_203_sortIndex = 200;
             [SortOrder(Unk_203_sortIndex)]
             [DisplayName(Unk_203_displayName)]
             public virtual uint Unk_203 {
@@ -5259,7 +5263,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_204_raw;
             public const string Unk_204_displayName = "Unk 204";
-            public const int Unk_204_sortIndex = 300;
+            public const int Unk_204_sortIndex = 250;
             [SortOrder(Unk_204_sortIndex)]
             [DisplayName(Unk_204_displayName)]
             public virtual uint Unk_204 {
@@ -5277,7 +5281,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_205_raw;
             public const string Unk_205_displayName = "Unk 205";
-            public const int Unk_205_sortIndex = 350;
+            public const int Unk_205_sortIndex = 300;
             [SortOrder(Unk_205_sortIndex)]
             [DisplayName(Unk_205_displayName)]
             public virtual uint Unk_205 {
@@ -5295,7 +5299,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_206_raw;
             public const string Unk_206_displayName = "Unk 206";
-            public const int Unk_206_sortIndex = 400;
+            public const int Unk_206_sortIndex = 350;
             [SortOrder(Unk_206_sortIndex)]
             [DisplayName(Unk_206_displayName)]
             public virtual uint Unk_206 {
@@ -5311,6 +5315,24 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_206_offset { get; private set; }
 
+            protected uint Unk_207_raw;
+            public const string Unk_207_displayName = "Unk 207";
+            public const int Unk_207_sortIndex = 400;
+            [SortOrder(Unk_207_sortIndex)]
+            [DisplayName(Unk_207_displayName)]
+            public virtual uint Unk_207 {
+                get => Unk_207_raw;
+                set {
+                    if (Unk_207_raw == value) return;
+                    Unk_207_raw = value;
+                    ChangedItems.Add(nameof(Unk_207));
+                    OnPropertyChanged(nameof(Unk_207));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Unk_207_offset { get; private set; }
+
             public const int lastSortIndex = 450;
 
             public static ObservableMhwStructCollection<Monster_Common_Params_8_> LoadData(BinaryReader reader) {
@@ -5325,8 +5347,6 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Common_Params_8_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Common_Params_8_();
                 data.Index = i;
-                data.Unk_199_offset = reader.BaseStream.Position;
-                data.Unk_199_raw = reader.ReadUInt32();
                 data.Unk_200_offset = reader.BaseStream.Position;
                 data.Unk_200_raw = reader.ReadUInt32();
                 data.Unk_201_offset = reader.BaseStream.Position;
@@ -5341,11 +5361,12 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_205_raw = reader.ReadUInt32();
                 data.Unk_206_offset = reader.BaseStream.Position;
                 data.Unk_206_raw = reader.ReadUInt32();
+                data.Unk_207_offset = reader.BaseStream.Position;
+                data.Unk_207_raw = reader.ReadUInt32();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_199_raw);
                 writer.Write(Unk_200_raw);
                 writer.Write(Unk_201_raw);
                 writer.Write(Unk_202_raw);
@@ -5353,11 +5374,11 @@ namespace MHW_Editor.Structs.Monsters {
                 writer.Write(Unk_204_raw);
                 writer.Write(Unk_205_raw);
                 writer.Write(Unk_206_raw);
+                writer.Write(Unk_207_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 199", "Unk_199", "Unk_199_offset"),
                     new MultiStructItemCustomView(this, "Unk 200", "Unk_200", "Unk_200_offset"),
                     new MultiStructItemCustomView(this, "Unk 201", "Unk_201", "Unk_201_offset"),
                     new MultiStructItemCustomView(this, "Unk 202", "Unk_202", "Unk_202_offset"),
@@ -5365,6 +5386,7 @@ namespace MHW_Editor.Structs.Monsters {
                     new MultiStructItemCustomView(this, "Unk 204", "Unk_204", "Unk_204_offset"),
                     new MultiStructItemCustomView(this, "Unk 205", "Unk_205", "Unk_205_offset"),
                     new MultiStructItemCustomView(this, "Unk 206", "Unk_206", "Unk_206_offset"),
+                    new MultiStructItemCustomView(this, "Unk 207", "Unk_207", "Unk_207_offset"),
                 };
             }
         }
@@ -5391,27 +5413,9 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Header_offset { get; private set; }
 
-            protected uint Unk_207_raw;
-            public const string Unk_207_displayName = "Unk 207";
-            public const int Unk_207_sortIndex = 100;
-            [SortOrder(Unk_207_sortIndex)]
-            [DisplayName(Unk_207_displayName)]
-            public virtual uint Unk_207 {
-                get => Unk_207_raw;
-                set {
-                    if (Unk_207_raw == value) return;
-                    Unk_207_raw = value;
-                    ChangedItems.Add(nameof(Unk_207));
-                    OnPropertyChanged(nameof(Unk_207));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_207_offset { get; private set; }
-
             protected uint Unk_208_raw;
             public const string Unk_208_displayName = "Unk 208";
-            public const int Unk_208_sortIndex = 150;
+            public const int Unk_208_sortIndex = 100;
             [SortOrder(Unk_208_sortIndex)]
             [DisplayName(Unk_208_displayName)]
             public virtual uint Unk_208 {
@@ -5429,7 +5433,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_209_raw;
             public const string Unk_209_displayName = "Unk 209";
-            public const int Unk_209_sortIndex = 200;
+            public const int Unk_209_sortIndex = 150;
             [SortOrder(Unk_209_sortIndex)]
             [DisplayName(Unk_209_displayName)]
             public virtual uint Unk_209 {
@@ -5447,7 +5451,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_210_raw;
             public const string Unk_210_displayName = "Unk 210";
-            public const int Unk_210_sortIndex = 250;
+            public const int Unk_210_sortIndex = 200;
             [SortOrder(Unk_210_sortIndex)]
             [DisplayName(Unk_210_displayName)]
             public virtual uint Unk_210 {
@@ -5465,7 +5469,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_211_raw;
             public const string Unk_211_displayName = "Unk 211";
-            public const int Unk_211_sortIndex = 300;
+            public const int Unk_211_sortIndex = 250;
             [SortOrder(Unk_211_sortIndex)]
             [DisplayName(Unk_211_displayName)]
             public virtual uint Unk_211 {
@@ -5483,7 +5487,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_212_raw;
             public const string Unk_212_displayName = "Unk 212";
-            public const int Unk_212_sortIndex = 350;
+            public const int Unk_212_sortIndex = 300;
             [SortOrder(Unk_212_sortIndex)]
             [DisplayName(Unk_212_displayName)]
             public virtual uint Unk_212 {
@@ -5501,7 +5505,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_213_raw;
             public const string Unk_213_displayName = "Unk 213";
-            public const int Unk_213_sortIndex = 400;
+            public const int Unk_213_sortIndex = 350;
             [SortOrder(Unk_213_sortIndex)]
             [DisplayName(Unk_213_displayName)]
             public virtual uint Unk_213 {
@@ -5519,7 +5523,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_214_raw;
             public const string Unk_214_displayName = "Unk 214";
-            public const int Unk_214_sortIndex = 450;
+            public const int Unk_214_sortIndex = 400;
             [SortOrder(Unk_214_sortIndex)]
             [DisplayName(Unk_214_displayName)]
             public virtual uint Unk_214 {
@@ -5537,7 +5541,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_215_raw;
             public const string Unk_215_displayName = "Unk 215";
-            public const int Unk_215_sortIndex = 500;
+            public const int Unk_215_sortIndex = 450;
             [SortOrder(Unk_215_sortIndex)]
             [DisplayName(Unk_215_displayName)]
             public virtual uint Unk_215 {
@@ -5555,7 +5559,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_216_raw;
             public const string Unk_216_displayName = "Unk 216";
-            public const int Unk_216_sortIndex = 550;
+            public const int Unk_216_sortIndex = 500;
             [SortOrder(Unk_216_sortIndex)]
             [DisplayName(Unk_216_displayName)]
             public virtual uint Unk_216 {
@@ -5573,7 +5577,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_217_raw;
             public const string Unk_217_displayName = "Unk 217";
-            public const int Unk_217_sortIndex = 600;
+            public const int Unk_217_sortIndex = 550;
             [SortOrder(Unk_217_sortIndex)]
             [DisplayName(Unk_217_displayName)]
             public virtual uint Unk_217 {
@@ -5591,7 +5595,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_218_raw;
             public const string Unk_218_displayName = "Unk 218";
-            public const int Unk_218_sortIndex = 650;
+            public const int Unk_218_sortIndex = 600;
             [SortOrder(Unk_218_sortIndex)]
             [DisplayName(Unk_218_displayName)]
             public virtual uint Unk_218 {
@@ -5609,7 +5613,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_219_raw;
             public const string Unk_219_displayName = "Unk 219";
-            public const int Unk_219_sortIndex = 700;
+            public const int Unk_219_sortIndex = 650;
             [SortOrder(Unk_219_sortIndex)]
             [DisplayName(Unk_219_displayName)]
             public virtual uint Unk_219 {
@@ -5627,7 +5631,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_220_raw;
             public const string Unk_220_displayName = "Unk 220";
-            public const int Unk_220_sortIndex = 750;
+            public const int Unk_220_sortIndex = 700;
             [SortOrder(Unk_220_sortIndex)]
             [DisplayName(Unk_220_displayName)]
             public virtual uint Unk_220 {
@@ -5645,7 +5649,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_221_raw;
             public const string Unk_221_displayName = "Unk 221";
-            public const int Unk_221_sortIndex = 800;
+            public const int Unk_221_sortIndex = 750;
             [SortOrder(Unk_221_sortIndex)]
             [DisplayName(Unk_221_displayName)]
             public virtual uint Unk_221 {
@@ -5663,7 +5667,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_222_raw;
             public const string Unk_222_displayName = "Unk 222";
-            public const int Unk_222_sortIndex = 850;
+            public const int Unk_222_sortIndex = 800;
             [SortOrder(Unk_222_sortIndex)]
             [DisplayName(Unk_222_displayName)]
             public virtual uint Unk_222 {
@@ -5681,7 +5685,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_223_raw;
             public const string Unk_223_displayName = "Unk 223";
-            public const int Unk_223_sortIndex = 900;
+            public const int Unk_223_sortIndex = 850;
             [SortOrder(Unk_223_sortIndex)]
             [DisplayName(Unk_223_displayName)]
             public virtual uint Unk_223 {
@@ -5699,7 +5703,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_224_raw;
             public const string Unk_224_displayName = "Unk 224";
-            public const int Unk_224_sortIndex = 950;
+            public const int Unk_224_sortIndex = 900;
             [SortOrder(Unk_224_sortIndex)]
             [DisplayName(Unk_224_displayName)]
             public virtual uint Unk_224 {
@@ -5717,7 +5721,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_225_raw;
             public const string Unk_225_displayName = "Unk 225";
-            public const int Unk_225_sortIndex = 1000;
+            public const int Unk_225_sortIndex = 950;
             [SortOrder(Unk_225_sortIndex)]
             [DisplayName(Unk_225_displayName)]
             public virtual uint Unk_225 {
@@ -5735,7 +5739,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_226_raw;
             public const string Unk_226_displayName = "Unk 226";
-            public const int Unk_226_sortIndex = 1050;
+            public const int Unk_226_sortIndex = 1000;
             [SortOrder(Unk_226_sortIndex)]
             [DisplayName(Unk_226_displayName)]
             public virtual uint Unk_226 {
@@ -5753,7 +5757,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_227_raw;
             public const string Unk_227_displayName = "Unk 227";
-            public const int Unk_227_sortIndex = 1100;
+            public const int Unk_227_sortIndex = 1050;
             [SortOrder(Unk_227_sortIndex)]
             [DisplayName(Unk_227_displayName)]
             public virtual uint Unk_227 {
@@ -5771,7 +5775,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_228_raw;
             public const string Unk_228_displayName = "Unk 228";
-            public const int Unk_228_sortIndex = 1150;
+            public const int Unk_228_sortIndex = 1100;
             [SortOrder(Unk_228_sortIndex)]
             [DisplayName(Unk_228_displayName)]
             public virtual uint Unk_228 {
@@ -5789,7 +5793,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_229_raw;
             public const string Unk_229_displayName = "Unk 229";
-            public const int Unk_229_sortIndex = 1200;
+            public const int Unk_229_sortIndex = 1150;
             [SortOrder(Unk_229_sortIndex)]
             [DisplayName(Unk_229_displayName)]
             public virtual uint Unk_229 {
@@ -5807,7 +5811,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_230_raw;
             public const string Unk_230_displayName = "Unk 230";
-            public const int Unk_230_sortIndex = 1250;
+            public const int Unk_230_sortIndex = 1200;
             [SortOrder(Unk_230_sortIndex)]
             [DisplayName(Unk_230_displayName)]
             public virtual uint Unk_230 {
@@ -5825,7 +5829,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_231_raw;
             public const string Unk_231_displayName = "Unk 231";
-            public const int Unk_231_sortIndex = 1300;
+            public const int Unk_231_sortIndex = 1250;
             [SortOrder(Unk_231_sortIndex)]
             [DisplayName(Unk_231_displayName)]
             public virtual uint Unk_231 {
@@ -5843,7 +5847,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_232_raw;
             public const string Unk_232_displayName = "Unk 232";
-            public const int Unk_232_sortIndex = 1350;
+            public const int Unk_232_sortIndex = 1300;
             [SortOrder(Unk_232_sortIndex)]
             [DisplayName(Unk_232_displayName)]
             public virtual uint Unk_232 {
@@ -5861,7 +5865,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_233_raw;
             public const string Unk_233_displayName = "Unk 233";
-            public const int Unk_233_sortIndex = 1400;
+            public const int Unk_233_sortIndex = 1350;
             [SortOrder(Unk_233_sortIndex)]
             [DisplayName(Unk_233_displayName)]
             public virtual uint Unk_233 {
@@ -5879,7 +5883,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_234_raw;
             public const string Unk_234_displayName = "Unk 234";
-            public const int Unk_234_sortIndex = 1450;
+            public const int Unk_234_sortIndex = 1400;
             [SortOrder(Unk_234_sortIndex)]
             [DisplayName(Unk_234_displayName)]
             public virtual uint Unk_234 {
@@ -5897,7 +5901,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_235_raw;
             public const string Unk_235_displayName = "Unk 235";
-            public const int Unk_235_sortIndex = 1500;
+            public const int Unk_235_sortIndex = 1450;
             [SortOrder(Unk_235_sortIndex)]
             [DisplayName(Unk_235_displayName)]
             public virtual uint Unk_235 {
@@ -5915,7 +5919,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_236_raw;
             public const string Unk_236_displayName = "Unk 236";
-            public const int Unk_236_sortIndex = 1550;
+            public const int Unk_236_sortIndex = 1500;
             [SortOrder(Unk_236_sortIndex)]
             [DisplayName(Unk_236_displayName)]
             public virtual uint Unk_236 {
@@ -5933,7 +5937,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_237_raw;
             public const string Unk_237_displayName = "Unk 237";
-            public const int Unk_237_sortIndex = 1600;
+            public const int Unk_237_sortIndex = 1550;
             [SortOrder(Unk_237_sortIndex)]
             [DisplayName(Unk_237_displayName)]
             public virtual uint Unk_237 {
@@ -5951,7 +5955,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_238_raw;
             public const string Unk_238_displayName = "Unk 238";
-            public const int Unk_238_sortIndex = 1650;
+            public const int Unk_238_sortIndex = 1600;
             [SortOrder(Unk_238_sortIndex)]
             [DisplayName(Unk_238_displayName)]
             public virtual uint Unk_238 {
@@ -5969,7 +5973,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_239_raw;
             public const string Unk_239_displayName = "Unk 239";
-            public const int Unk_239_sortIndex = 1700;
+            public const int Unk_239_sortIndex = 1650;
             [SortOrder(Unk_239_sortIndex)]
             [DisplayName(Unk_239_displayName)]
             public virtual uint Unk_239 {
@@ -5987,7 +5991,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_240_raw;
             public const string Unk_240_displayName = "Unk 240";
-            public const int Unk_240_sortIndex = 1750;
+            public const int Unk_240_sortIndex = 1700;
             [SortOrder(Unk_240_sortIndex)]
             [DisplayName(Unk_240_displayName)]
             public virtual uint Unk_240 {
@@ -6005,7 +6009,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_241_raw;
             public const string Unk_241_displayName = "Unk 241";
-            public const int Unk_241_sortIndex = 1800;
+            public const int Unk_241_sortIndex = 1750;
             [SortOrder(Unk_241_sortIndex)]
             [DisplayName(Unk_241_displayName)]
             public virtual uint Unk_241 {
@@ -6023,7 +6027,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_242_raw;
             public const string Unk_242_displayName = "Unk 242";
-            public const int Unk_242_sortIndex = 1850;
+            public const int Unk_242_sortIndex = 1800;
             [SortOrder(Unk_242_sortIndex)]
             [DisplayName(Unk_242_displayName)]
             public virtual uint Unk_242 {
@@ -6041,7 +6045,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_243_raw;
             public const string Unk_243_displayName = "Unk 243";
-            public const int Unk_243_sortIndex = 1900;
+            public const int Unk_243_sortIndex = 1850;
             [SortOrder(Unk_243_sortIndex)]
             [DisplayName(Unk_243_displayName)]
             public virtual uint Unk_243 {
@@ -6059,7 +6063,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_244_raw;
             public const string Unk_244_displayName = "Unk 244";
-            public const int Unk_244_sortIndex = 1950;
+            public const int Unk_244_sortIndex = 1900;
             [SortOrder(Unk_244_sortIndex)]
             [DisplayName(Unk_244_displayName)]
             public virtual uint Unk_244 {
@@ -6077,7 +6081,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_245_raw;
             public const string Unk_245_displayName = "Unk 245";
-            public const int Unk_245_sortIndex = 2000;
+            public const int Unk_245_sortIndex = 1950;
             [SortOrder(Unk_245_sortIndex)]
             [DisplayName(Unk_245_displayName)]
             public virtual uint Unk_245 {
@@ -6095,7 +6099,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_246_raw;
             public const string Unk_246_displayName = "Unk 246";
-            public const int Unk_246_sortIndex = 2050;
+            public const int Unk_246_sortIndex = 2000;
             [SortOrder(Unk_246_sortIndex)]
             [DisplayName(Unk_246_displayName)]
             public virtual uint Unk_246 {
@@ -6113,7 +6117,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_247_raw;
             public const string Unk_247_displayName = "Unk 247";
-            public const int Unk_247_sortIndex = 2100;
+            public const int Unk_247_sortIndex = 2050;
             [SortOrder(Unk_247_sortIndex)]
             [DisplayName(Unk_247_displayName)]
             public virtual uint Unk_247 {
@@ -6131,7 +6135,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_248_raw;
             public const string Unk_248_displayName = "Unk 248";
-            public const int Unk_248_sortIndex = 2150;
+            public const int Unk_248_sortIndex = 2100;
             [SortOrder(Unk_248_sortIndex)]
             [DisplayName(Unk_248_displayName)]
             public virtual uint Unk_248 {
@@ -6149,7 +6153,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_249_raw;
             public const string Unk_249_displayName = "Unk 249";
-            public const int Unk_249_sortIndex = 2200;
+            public const int Unk_249_sortIndex = 2150;
             [SortOrder(Unk_249_sortIndex)]
             [DisplayName(Unk_249_displayName)]
             public virtual uint Unk_249 {
@@ -6167,7 +6171,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_250_raw;
             public const string Unk_250_displayName = "Unk 250";
-            public const int Unk_250_sortIndex = 2250;
+            public const int Unk_250_sortIndex = 2200;
             [SortOrder(Unk_250_sortIndex)]
             [DisplayName(Unk_250_displayName)]
             public virtual uint Unk_250 {
@@ -6185,7 +6189,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_251_raw;
             public const string Unk_251_displayName = "Unk 251";
-            public const int Unk_251_sortIndex = 2300;
+            public const int Unk_251_sortIndex = 2250;
             [SortOrder(Unk_251_sortIndex)]
             [DisplayName(Unk_251_displayName)]
             public virtual uint Unk_251 {
@@ -6203,7 +6207,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_252_raw;
             public const string Unk_252_displayName = "Unk 252";
-            public const int Unk_252_sortIndex = 2350;
+            public const int Unk_252_sortIndex = 2300;
             [SortOrder(Unk_252_sortIndex)]
             [DisplayName(Unk_252_displayName)]
             public virtual uint Unk_252 {
@@ -6221,7 +6225,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_253_raw;
             public const string Unk_253_displayName = "Unk 253";
-            public const int Unk_253_sortIndex = 2400;
+            public const int Unk_253_sortIndex = 2350;
             [SortOrder(Unk_253_sortIndex)]
             [DisplayName(Unk_253_displayName)]
             public virtual uint Unk_253 {
@@ -6239,7 +6243,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_254_raw;
             public const string Unk_254_displayName = "Unk 254";
-            public const int Unk_254_sortIndex = 2450;
+            public const int Unk_254_sortIndex = 2400;
             [SortOrder(Unk_254_sortIndex)]
             [DisplayName(Unk_254_displayName)]
             public virtual uint Unk_254 {
@@ -6257,7 +6261,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_255_raw;
             public const string Unk_255_displayName = "Unk 255";
-            public const int Unk_255_sortIndex = 2500;
+            public const int Unk_255_sortIndex = 2450;
             [SortOrder(Unk_255_sortIndex)]
             [DisplayName(Unk_255_displayName)]
             public virtual uint Unk_255 {
@@ -6275,7 +6279,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_256_raw;
             public const string Unk_256_displayName = "Unk 256";
-            public const int Unk_256_sortIndex = 2550;
+            public const int Unk_256_sortIndex = 2500;
             [SortOrder(Unk_256_sortIndex)]
             [DisplayName(Unk_256_displayName)]
             public virtual uint Unk_256 {
@@ -6293,7 +6297,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_257_raw;
             public const string Unk_257_displayName = "Unk 257";
-            public const int Unk_257_sortIndex = 2600;
+            public const int Unk_257_sortIndex = 2550;
             [SortOrder(Unk_257_sortIndex)]
             [DisplayName(Unk_257_displayName)]
             public virtual uint Unk_257 {
@@ -6311,7 +6315,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_258_raw;
             public const string Unk_258_displayName = "Unk 258";
-            public const int Unk_258_sortIndex = 2650;
+            public const int Unk_258_sortIndex = 2600;
             [SortOrder(Unk_258_sortIndex)]
             [DisplayName(Unk_258_displayName)]
             public virtual uint Unk_258 {
@@ -6329,7 +6333,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_259_raw;
             public const string Unk_259_displayName = "Unk 259";
-            public const int Unk_259_sortIndex = 2700;
+            public const int Unk_259_sortIndex = 2650;
             [SortOrder(Unk_259_sortIndex)]
             [DisplayName(Unk_259_displayName)]
             public virtual uint Unk_259 {
@@ -6347,7 +6351,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_260_raw;
             public const string Unk_260_displayName = "Unk 260";
-            public const int Unk_260_sortIndex = 2750;
+            public const int Unk_260_sortIndex = 2700;
             [SortOrder(Unk_260_sortIndex)]
             [DisplayName(Unk_260_displayName)]
             public virtual uint Unk_260 {
@@ -6365,7 +6369,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_261_raw;
             public const string Unk_261_displayName = "Unk 261";
-            public const int Unk_261_sortIndex = 2800;
+            public const int Unk_261_sortIndex = 2750;
             [SortOrder(Unk_261_sortIndex)]
             [DisplayName(Unk_261_displayName)]
             public virtual uint Unk_261 {
@@ -6383,7 +6387,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_262_raw;
             public const string Unk_262_displayName = "Unk 262";
-            public const int Unk_262_sortIndex = 2850;
+            public const int Unk_262_sortIndex = 2800;
             [SortOrder(Unk_262_sortIndex)]
             [DisplayName(Unk_262_displayName)]
             public virtual uint Unk_262 {
@@ -6401,7 +6405,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_263_raw;
             public const string Unk_263_displayName = "Unk 263";
-            public const int Unk_263_sortIndex = 2900;
+            public const int Unk_263_sortIndex = 2850;
             [SortOrder(Unk_263_sortIndex)]
             [DisplayName(Unk_263_displayName)]
             public virtual uint Unk_263 {
@@ -6419,7 +6423,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_264_raw;
             public const string Unk_264_displayName = "Unk 264";
-            public const int Unk_264_sortIndex = 2950;
+            public const int Unk_264_sortIndex = 2900;
             [SortOrder(Unk_264_sortIndex)]
             [DisplayName(Unk_264_displayName)]
             public virtual uint Unk_264 {
@@ -6437,7 +6441,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_265_raw;
             public const string Unk_265_displayName = "Unk 265";
-            public const int Unk_265_sortIndex = 3000;
+            public const int Unk_265_sortIndex = 2950;
             [SortOrder(Unk_265_sortIndex)]
             [DisplayName(Unk_265_displayName)]
             public virtual uint Unk_265 {
@@ -6455,7 +6459,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_266_raw;
             public const string Unk_266_displayName = "Unk 266";
-            public const int Unk_266_sortIndex = 3050;
+            public const int Unk_266_sortIndex = 3000;
             [SortOrder(Unk_266_sortIndex)]
             [DisplayName(Unk_266_displayName)]
             public virtual uint Unk_266 {
@@ -6473,7 +6477,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_267_raw;
             public const string Unk_267_displayName = "Unk 267";
-            public const int Unk_267_sortIndex = 3100;
+            public const int Unk_267_sortIndex = 3050;
             [SortOrder(Unk_267_sortIndex)]
             [DisplayName(Unk_267_displayName)]
             public virtual uint Unk_267 {
@@ -6491,7 +6495,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_268_raw;
             public const string Unk_268_displayName = "Unk 268";
-            public const int Unk_268_sortIndex = 3150;
+            public const int Unk_268_sortIndex = 3100;
             [SortOrder(Unk_268_sortIndex)]
             [DisplayName(Unk_268_displayName)]
             public virtual uint Unk_268 {
@@ -6509,7 +6513,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_269_raw;
             public const string Unk_269_displayName = "Unk 269";
-            public const int Unk_269_sortIndex = 3200;
+            public const int Unk_269_sortIndex = 3150;
             [SortOrder(Unk_269_sortIndex)]
             [DisplayName(Unk_269_displayName)]
             public virtual uint Unk_269 {
@@ -6527,7 +6531,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_270_raw;
             public const string Unk_270_displayName = "Unk 270";
-            public const int Unk_270_sortIndex = 3250;
+            public const int Unk_270_sortIndex = 3200;
             [SortOrder(Unk_270_sortIndex)]
             [DisplayName(Unk_270_displayName)]
             public virtual uint Unk_270 {
@@ -6545,7 +6549,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_271_raw;
             public const string Unk_271_displayName = "Unk 271";
-            public const int Unk_271_sortIndex = 3300;
+            public const int Unk_271_sortIndex = 3250;
             [SortOrder(Unk_271_sortIndex)]
             [DisplayName(Unk_271_displayName)]
             public virtual uint Unk_271 {
@@ -6561,12 +6565,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_271_offset { get; private set; }
 
-            protected float Unk_272_raw;
+            protected uint Unk_272_raw;
             public const string Unk_272_displayName = "Unk 272";
-            public const int Unk_272_sortIndex = 3350;
+            public const int Unk_272_sortIndex = 3300;
             [SortOrder(Unk_272_sortIndex)]
             [DisplayName(Unk_272_displayName)]
-            public virtual float Unk_272 {
+            public virtual uint Unk_272 {
                 get => Unk_272_raw;
                 set {
                     if (Unk_272_raw == value) return;
@@ -6579,12 +6583,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_272_offset { get; private set; }
 
-            protected uint Unk_273_raw;
+            protected float Unk_273_raw;
             public const string Unk_273_displayName = "Unk 273";
-            public const int Unk_273_sortIndex = 3400;
+            public const int Unk_273_sortIndex = 3350;
             [SortOrder(Unk_273_sortIndex)]
             [DisplayName(Unk_273_displayName)]
-            public virtual uint Unk_273 {
+            public virtual float Unk_273 {
                 get => Unk_273_raw;
                 set {
                     if (Unk_273_raw == value) return;
@@ -6599,7 +6603,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_274_raw;
             public const string Unk_274_displayName = "Unk 274";
-            public const int Unk_274_sortIndex = 3450;
+            public const int Unk_274_sortIndex = 3400;
             [SortOrder(Unk_274_sortIndex)]
             [DisplayName(Unk_274_displayName)]
             public virtual uint Unk_274 {
@@ -6614,6 +6618,24 @@ namespace MHW_Editor.Structs.Monsters {
 
             [DisplayName("Offset")]
             public long Unk_274_offset { get; private set; }
+
+            protected uint Unk_275_raw;
+            public const string Unk_275_displayName = "Unk 275";
+            public const int Unk_275_sortIndex = 3450;
+            [SortOrder(Unk_275_sortIndex)]
+            [DisplayName(Unk_275_displayName)]
+            public virtual uint Unk_275 {
+                get => Unk_275_raw;
+                set {
+                    if (Unk_275_raw == value) return;
+                    Unk_275_raw = value;
+                    ChangedItems.Add(nameof(Unk_275));
+                    OnPropertyChanged(nameof(Unk_275));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Unk_275_offset { get; private set; }
 
             public const int lastSortIndex = 3500;
 
@@ -6631,8 +6653,6 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Index = i;
                 data.Header_offset = reader.BaseStream.Position;
                 data.Header_raw = reader.ReadUInt32();
-                data.Unk_207_offset = reader.BaseStream.Position;
-                data.Unk_207_raw = reader.ReadUInt32();
                 data.Unk_208_offset = reader.BaseStream.Position;
                 data.Unk_208_raw = reader.ReadUInt32();
                 data.Unk_209_offset = reader.BaseStream.Position;
@@ -6762,17 +6782,18 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_271_offset = reader.BaseStream.Position;
                 data.Unk_271_raw = reader.ReadUInt32();
                 data.Unk_272_offset = reader.BaseStream.Position;
-                data.Unk_272_raw = reader.ReadSingle();
+                data.Unk_272_raw = reader.ReadUInt32();
                 data.Unk_273_offset = reader.BaseStream.Position;
-                data.Unk_273_raw = reader.ReadUInt32();
+                data.Unk_273_raw = reader.ReadSingle();
                 data.Unk_274_offset = reader.BaseStream.Position;
                 data.Unk_274_raw = reader.ReadUInt32();
+                data.Unk_275_offset = reader.BaseStream.Position;
+                data.Unk_275_raw = reader.ReadUInt32();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Header_raw);
-                writer.Write(Unk_207_raw);
                 writer.Write(Unk_208_raw);
                 writer.Write(Unk_209_raw);
                 writer.Write(Unk_210_raw);
@@ -6840,12 +6861,12 @@ namespace MHW_Editor.Structs.Monsters {
                 writer.Write(Unk_272_raw);
                 writer.Write(Unk_273_raw);
                 writer.Write(Unk_274_raw);
+                writer.Write(Unk_275_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
                     new MultiStructItemCustomView(this, "Header", "Header", "Header_offset"),
-                    new MultiStructItemCustomView(this, "Unk 207", "Unk_207", "Unk_207_offset"),
                     new MultiStructItemCustomView(this, "Unk 208", "Unk_208", "Unk_208_offset"),
                     new MultiStructItemCustomView(this, "Unk 209", "Unk_209", "Unk_209_offset"),
                     new MultiStructItemCustomView(this, "Unk 210", "Unk_210", "Unk_210_offset"),
@@ -6913,6 +6934,7 @@ namespace MHW_Editor.Structs.Monsters {
                     new MultiStructItemCustomView(this, "Unk 272", "Unk_272", "Unk_272_offset"),
                     new MultiStructItemCustomView(this, "Unk 273", "Unk_273", "Unk_273_offset"),
                     new MultiStructItemCustomView(this, "Unk 274", "Unk_274", "Unk_274_offset"),
+                    new MultiStructItemCustomView(this, "Unk 275", "Unk_275", "Unk_275_offset"),
                 };
             }
         }
@@ -6959,30 +6981,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Shell_offset { get; private set; }
 
-            protected float Unk_275_raw;
-            public const string Unk_275_displayName = "Unk 275";
-            public const int Unk_275_sortIndex = 150;
-            [SortOrder(Unk_275_sortIndex)]
-            [DisplayName(Unk_275_displayName)]
-            public virtual float Unk_275 {
-                get => Unk_275_raw;
-                set {
-                    if (Unk_275_raw == value) return;
-                    Unk_275_raw = value;
-                    ChangedItems.Add(nameof(Unk_275));
-                    OnPropertyChanged(nameof(Unk_275));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_275_offset { get; private set; }
-
-            protected int Unk_276_raw;
+            protected float Unk_276_raw;
             public const string Unk_276_displayName = "Unk 276";
-            public const int Unk_276_sortIndex = 200;
+            public const int Unk_276_sortIndex = 150;
             [SortOrder(Unk_276_sortIndex)]
             [DisplayName(Unk_276_displayName)]
-            public virtual int Unk_276 {
+            public virtual float Unk_276 {
                 get => Unk_276_raw;
                 set {
                     if (Unk_276_raw == value) return;
@@ -6995,12 +6999,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_276_offset { get; private set; }
 
-            protected float Unk_277_raw;
+            protected int Unk_277_raw;
             public const string Unk_277_displayName = "Unk 277";
-            public const int Unk_277_sortIndex = 250;
+            public const int Unk_277_sortIndex = 200;
             [SortOrder(Unk_277_sortIndex)]
             [DisplayName(Unk_277_displayName)]
-            public virtual float Unk_277 {
+            public virtual int Unk_277 {
                 get => Unk_277_raw;
                 set {
                     if (Unk_277_raw == value) return;
@@ -7015,7 +7019,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_278_raw;
             public const string Unk_278_displayName = "Unk 278";
-            public const int Unk_278_sortIndex = 300;
+            public const int Unk_278_sortIndex = 250;
             [SortOrder(Unk_278_sortIndex)]
             [DisplayName(Unk_278_displayName)]
             public virtual float Unk_278 {
@@ -7033,7 +7037,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_279_raw;
             public const string Unk_279_displayName = "Unk 279";
-            public const int Unk_279_sortIndex = 350;
+            public const int Unk_279_sortIndex = 300;
             [SortOrder(Unk_279_sortIndex)]
             [DisplayName(Unk_279_displayName)]
             public virtual float Unk_279 {
@@ -7051,7 +7055,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_280_raw;
             public const string Unk_280_displayName = "Unk 280";
-            public const int Unk_280_sortIndex = 400;
+            public const int Unk_280_sortIndex = 350;
             [SortOrder(Unk_280_sortIndex)]
             [DisplayName(Unk_280_displayName)]
             public virtual float Unk_280 {
@@ -7069,7 +7073,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_281_raw;
             public const string Unk_281_displayName = "Unk 281";
-            public const int Unk_281_sortIndex = 450;
+            public const int Unk_281_sortIndex = 400;
             [SortOrder(Unk_281_sortIndex)]
             [DisplayName(Unk_281_displayName)]
             public virtual float Unk_281 {
@@ -7087,7 +7091,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_282_raw;
             public const string Unk_282_displayName = "Unk 282";
-            public const int Unk_282_sortIndex = 500;
+            public const int Unk_282_sortIndex = 450;
             [SortOrder(Unk_282_sortIndex)]
             [DisplayName(Unk_282_displayName)]
             public virtual float Unk_282 {
@@ -7105,7 +7109,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_283_raw;
             public const string Unk_283_displayName = "Unk 283";
-            public const int Unk_283_sortIndex = 550;
+            public const int Unk_283_sortIndex = 500;
             [SortOrder(Unk_283_sortIndex)]
             [DisplayName(Unk_283_displayName)]
             public virtual float Unk_283 {
@@ -7123,7 +7127,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_284_raw;
             public const string Unk_284_displayName = "Unk 284";
-            public const int Unk_284_sortIndex = 600;
+            public const int Unk_284_sortIndex = 550;
             [SortOrder(Unk_284_sortIndex)]
             [DisplayName(Unk_284_displayName)]
             public virtual float Unk_284 {
@@ -7141,7 +7145,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_285_raw;
             public const string Unk_285_displayName = "Unk 285";
-            public const int Unk_285_sortIndex = 650;
+            public const int Unk_285_sortIndex = 600;
             [SortOrder(Unk_285_sortIndex)]
             [DisplayName(Unk_285_displayName)]
             public virtual float Unk_285 {
@@ -7159,7 +7163,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_286_raw;
             public const string Unk_286_displayName = "Unk 286";
-            public const int Unk_286_sortIndex = 700;
+            public const int Unk_286_sortIndex = 650;
             [SortOrder(Unk_286_sortIndex)]
             [DisplayName(Unk_286_displayName)]
             public virtual float Unk_286 {
@@ -7177,7 +7181,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_287_raw;
             public const string Unk_287_displayName = "Unk 287";
-            public const int Unk_287_sortIndex = 750;
+            public const int Unk_287_sortIndex = 700;
             [SortOrder(Unk_287_sortIndex)]
             [DisplayName(Unk_287_displayName)]
             public virtual float Unk_287 {
@@ -7195,7 +7199,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_288_raw;
             public const string Unk_288_displayName = "Unk 288";
-            public const int Unk_288_sortIndex = 800;
+            public const int Unk_288_sortIndex = 750;
             [SortOrder(Unk_288_sortIndex)]
             [DisplayName(Unk_288_displayName)]
             public virtual float Unk_288 {
@@ -7213,7 +7217,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_289_raw;
             public const string Unk_289_displayName = "Unk 289";
-            public const int Unk_289_sortIndex = 850;
+            public const int Unk_289_sortIndex = 800;
             [SortOrder(Unk_289_sortIndex)]
             [DisplayName(Unk_289_displayName)]
             public virtual float Unk_289 {
@@ -7231,7 +7235,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_290_raw;
             public const string Unk_290_displayName = "Unk 290";
-            public const int Unk_290_sortIndex = 900;
+            public const int Unk_290_sortIndex = 850;
             [SortOrder(Unk_290_sortIndex)]
             [DisplayName(Unk_290_displayName)]
             public virtual float Unk_290 {
@@ -7249,7 +7253,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_291_raw;
             public const string Unk_291_displayName = "Unk 291";
-            public const int Unk_291_sortIndex = 950;
+            public const int Unk_291_sortIndex = 900;
             [SortOrder(Unk_291_sortIndex)]
             [DisplayName(Unk_291_displayName)]
             public virtual float Unk_291 {
@@ -7267,7 +7271,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_292_raw;
             public const string Unk_292_displayName = "Unk 292";
-            public const int Unk_292_sortIndex = 1000;
+            public const int Unk_292_sortIndex = 950;
             [SortOrder(Unk_292_sortIndex)]
             [DisplayName(Unk_292_displayName)]
             public virtual float Unk_292 {
@@ -7285,7 +7289,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_293_raw;
             public const string Unk_293_displayName = "Unk 293";
-            public const int Unk_293_sortIndex = 1050;
+            public const int Unk_293_sortIndex = 1000;
             [SortOrder(Unk_293_sortIndex)]
             [DisplayName(Unk_293_displayName)]
             public virtual float Unk_293 {
@@ -7303,7 +7307,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_294_raw;
             public const string Unk_294_displayName = "Unk 294";
-            public const int Unk_294_sortIndex = 1100;
+            public const int Unk_294_sortIndex = 1050;
             [SortOrder(Unk_294_sortIndex)]
             [DisplayName(Unk_294_displayName)]
             public virtual float Unk_294 {
@@ -7321,7 +7325,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_295_raw;
             public const string Unk_295_displayName = "Unk 295";
-            public const int Unk_295_sortIndex = 1150;
+            public const int Unk_295_sortIndex = 1100;
             [SortOrder(Unk_295_sortIndex)]
             [DisplayName(Unk_295_displayName)]
             public virtual float Unk_295 {
@@ -7339,7 +7343,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_296_raw;
             public const string Unk_296_displayName = "Unk 296";
-            public const int Unk_296_sortIndex = 1200;
+            public const int Unk_296_sortIndex = 1150;
             [SortOrder(Unk_296_sortIndex)]
             [DisplayName(Unk_296_displayName)]
             public virtual float Unk_296 {
@@ -7357,7 +7361,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_297_raw;
             public const string Unk_297_displayName = "Unk 297";
-            public const int Unk_297_sortIndex = 1250;
+            public const int Unk_297_sortIndex = 1200;
             [SortOrder(Unk_297_sortIndex)]
             [DisplayName(Unk_297_displayName)]
             public virtual float Unk_297 {
@@ -7375,7 +7379,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_298_raw;
             public const string Unk_298_displayName = "Unk 298";
-            public const int Unk_298_sortIndex = 1300;
+            public const int Unk_298_sortIndex = 1250;
             [SortOrder(Unk_298_sortIndex)]
             [DisplayName(Unk_298_displayName)]
             public virtual float Unk_298 {
@@ -7393,7 +7397,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_299_raw;
             public const string Unk_299_displayName = "Unk 299";
-            public const int Unk_299_sortIndex = 1350;
+            public const int Unk_299_sortIndex = 1300;
             [SortOrder(Unk_299_sortIndex)]
             [DisplayName(Unk_299_displayName)]
             public virtual float Unk_299 {
@@ -7411,7 +7415,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_300_raw;
             public const string Unk_300_displayName = "Unk 300";
-            public const int Unk_300_sortIndex = 1400;
+            public const int Unk_300_sortIndex = 1350;
             [SortOrder(Unk_300_sortIndex)]
             [DisplayName(Unk_300_displayName)]
             public virtual float Unk_300 {
@@ -7429,7 +7433,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_301_raw;
             public const string Unk_301_displayName = "Unk 301";
-            public const int Unk_301_sortIndex = 1450;
+            public const int Unk_301_sortIndex = 1400;
             [SortOrder(Unk_301_sortIndex)]
             [DisplayName(Unk_301_displayName)]
             public virtual float Unk_301 {
@@ -7447,7 +7451,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_302_raw;
             public const string Unk_302_displayName = "Unk 302";
-            public const int Unk_302_sortIndex = 1500;
+            public const int Unk_302_sortIndex = 1450;
             [SortOrder(Unk_302_sortIndex)]
             [DisplayName(Unk_302_displayName)]
             public virtual float Unk_302 {
@@ -7465,7 +7469,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_303_raw;
             public const string Unk_303_displayName = "Unk 303";
-            public const int Unk_303_sortIndex = 1550;
+            public const int Unk_303_sortIndex = 1500;
             [SortOrder(Unk_303_sortIndex)]
             [DisplayName(Unk_303_displayName)]
             public virtual float Unk_303 {
@@ -7483,7 +7487,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_304_raw;
             public const string Unk_304_displayName = "Unk 304";
-            public const int Unk_304_sortIndex = 1600;
+            public const int Unk_304_sortIndex = 1550;
             [SortOrder(Unk_304_sortIndex)]
             [DisplayName(Unk_304_displayName)]
             public virtual float Unk_304 {
@@ -7501,7 +7505,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_305_raw;
             public const string Unk_305_displayName = "Unk 305";
-            public const int Unk_305_sortIndex = 1650;
+            public const int Unk_305_sortIndex = 1600;
             [SortOrder(Unk_305_sortIndex)]
             [DisplayName(Unk_305_displayName)]
             public virtual float Unk_305 {
@@ -7519,7 +7523,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_306_raw;
             public const string Unk_306_displayName = "Unk 306";
-            public const int Unk_306_sortIndex = 1700;
+            public const int Unk_306_sortIndex = 1650;
             [SortOrder(Unk_306_sortIndex)]
             [DisplayName(Unk_306_displayName)]
             public virtual float Unk_306 {
@@ -7537,7 +7541,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_307_raw;
             public const string Unk_307_displayName = "Unk 307";
-            public const int Unk_307_sortIndex = 1750;
+            public const int Unk_307_sortIndex = 1700;
             [SortOrder(Unk_307_sortIndex)]
             [DisplayName(Unk_307_displayName)]
             public virtual float Unk_307 {
@@ -7555,7 +7559,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_308_raw;
             public const string Unk_308_displayName = "Unk 308";
-            public const int Unk_308_sortIndex = 1800;
+            public const int Unk_308_sortIndex = 1750;
             [SortOrder(Unk_308_sortIndex)]
             [DisplayName(Unk_308_displayName)]
             public virtual float Unk_308 {
@@ -7573,7 +7577,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_309_raw;
             public const string Unk_309_displayName = "Unk 309";
-            public const int Unk_309_sortIndex = 1850;
+            public const int Unk_309_sortIndex = 1800;
             [SortOrder(Unk_309_sortIndex)]
             [DisplayName(Unk_309_displayName)]
             public virtual float Unk_309 {
@@ -7591,7 +7595,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_310_raw;
             public const string Unk_310_displayName = "Unk 310";
-            public const int Unk_310_sortIndex = 1900;
+            public const int Unk_310_sortIndex = 1850;
             [SortOrder(Unk_310_sortIndex)]
             [DisplayName(Unk_310_displayName)]
             public virtual float Unk_310 {
@@ -7609,7 +7613,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_311_raw;
             public const string Unk_311_displayName = "Unk 311";
-            public const int Unk_311_sortIndex = 1950;
+            public const int Unk_311_sortIndex = 1900;
             [SortOrder(Unk_311_sortIndex)]
             [DisplayName(Unk_311_displayName)]
             public virtual float Unk_311 {
@@ -7627,7 +7631,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_312_raw;
             public const string Unk_312_displayName = "Unk 312";
-            public const int Unk_312_sortIndex = 2000;
+            public const int Unk_312_sortIndex = 1950;
             [SortOrder(Unk_312_sortIndex)]
             [DisplayName(Unk_312_displayName)]
             public virtual float Unk_312 {
@@ -7645,7 +7649,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_313_raw;
             public const string Unk_313_displayName = "Unk 313";
-            public const int Unk_313_sortIndex = 2050;
+            public const int Unk_313_sortIndex = 2000;
             [SortOrder(Unk_313_sortIndex)]
             [DisplayName(Unk_313_displayName)]
             public virtual float Unk_313 {
@@ -7663,7 +7667,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_314_raw;
             public const string Unk_314_displayName = "Unk 314";
-            public const int Unk_314_sortIndex = 2100;
+            public const int Unk_314_sortIndex = 2050;
             [SortOrder(Unk_314_sortIndex)]
             [DisplayName(Unk_314_displayName)]
             public virtual float Unk_314 {
@@ -7681,7 +7685,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_315_raw;
             public const string Unk_315_displayName = "Unk 315";
-            public const int Unk_315_sortIndex = 2150;
+            public const int Unk_315_sortIndex = 2100;
             [SortOrder(Unk_315_sortIndex)]
             [DisplayName(Unk_315_displayName)]
             public virtual float Unk_315 {
@@ -7699,7 +7703,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_316_raw;
             public const string Unk_316_displayName = "Unk 316";
-            public const int Unk_316_sortIndex = 2200;
+            public const int Unk_316_sortIndex = 2150;
             [SortOrder(Unk_316_sortIndex)]
             [DisplayName(Unk_316_displayName)]
             public virtual float Unk_316 {
@@ -7717,7 +7721,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_317_raw;
             public const string Unk_317_displayName = "Unk 317";
-            public const int Unk_317_sortIndex = 2250;
+            public const int Unk_317_sortIndex = 2200;
             [SortOrder(Unk_317_sortIndex)]
             [DisplayName(Unk_317_displayName)]
             public virtual float Unk_317 {
@@ -7735,7 +7739,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_318_raw;
             public const string Unk_318_displayName = "Unk 318";
-            public const int Unk_318_sortIndex = 2300;
+            public const int Unk_318_sortIndex = 2250;
             [SortOrder(Unk_318_sortIndex)]
             [DisplayName(Unk_318_displayName)]
             public virtual float Unk_318 {
@@ -7753,7 +7757,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_319_raw;
             public const string Unk_319_displayName = "Unk 319";
-            public const int Unk_319_sortIndex = 2350;
+            public const int Unk_319_sortIndex = 2300;
             [SortOrder(Unk_319_sortIndex)]
             [DisplayName(Unk_319_displayName)]
             public virtual float Unk_319 {
@@ -7771,7 +7775,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_320_raw;
             public const string Unk_320_displayName = "Unk 320";
-            public const int Unk_320_sortIndex = 2400;
+            public const int Unk_320_sortIndex = 2350;
             [SortOrder(Unk_320_sortIndex)]
             [DisplayName(Unk_320_displayName)]
             public virtual float Unk_320 {
@@ -7789,7 +7793,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_321_raw;
             public const string Unk_321_displayName = "Unk 321";
-            public const int Unk_321_sortIndex = 2450;
+            public const int Unk_321_sortIndex = 2400;
             [SortOrder(Unk_321_sortIndex)]
             [DisplayName(Unk_321_displayName)]
             public virtual float Unk_321 {
@@ -7807,7 +7811,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_322_raw;
             public const string Unk_322_displayName = "Unk 322";
-            public const int Unk_322_sortIndex = 2500;
+            public const int Unk_322_sortIndex = 2450;
             [SortOrder(Unk_322_sortIndex)]
             [DisplayName(Unk_322_displayName)]
             public virtual float Unk_322 {
@@ -7825,7 +7829,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_323_raw;
             public const string Unk_323_displayName = "Unk 323";
-            public const int Unk_323_sortIndex = 2550;
+            public const int Unk_323_sortIndex = 2500;
             [SortOrder(Unk_323_sortIndex)]
             [DisplayName(Unk_323_displayName)]
             public virtual float Unk_323 {
@@ -7843,7 +7847,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_324_raw;
             public const string Unk_324_displayName = "Unk 324";
-            public const int Unk_324_sortIndex = 2600;
+            public const int Unk_324_sortIndex = 2550;
             [SortOrder(Unk_324_sortIndex)]
             [DisplayName(Unk_324_displayName)]
             public virtual float Unk_324 {
@@ -7861,7 +7865,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_325_raw;
             public const string Unk_325_displayName = "Unk 325";
-            public const int Unk_325_sortIndex = 2650;
+            public const int Unk_325_sortIndex = 2600;
             [SortOrder(Unk_325_sortIndex)]
             [DisplayName(Unk_325_displayName)]
             public virtual float Unk_325 {
@@ -7879,7 +7883,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_326_raw;
             public const string Unk_326_displayName = "Unk 326";
-            public const int Unk_326_sortIndex = 2700;
+            public const int Unk_326_sortIndex = 2650;
             [SortOrder(Unk_326_sortIndex)]
             [DisplayName(Unk_326_displayName)]
             public virtual float Unk_326 {
@@ -7897,7 +7901,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_327_raw;
             public const string Unk_327_displayName = "Unk 327";
-            public const int Unk_327_sortIndex = 2750;
+            public const int Unk_327_sortIndex = 2700;
             [SortOrder(Unk_327_sortIndex)]
             [DisplayName(Unk_327_displayName)]
             public virtual float Unk_327 {
@@ -7915,7 +7919,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_328_raw;
             public const string Unk_328_displayName = "Unk 328";
-            public const int Unk_328_sortIndex = 2800;
+            public const int Unk_328_sortIndex = 2750;
             [SortOrder(Unk_328_sortIndex)]
             [DisplayName(Unk_328_displayName)]
             public virtual float Unk_328 {
@@ -7933,7 +7937,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_329_raw;
             public const string Unk_329_displayName = "Unk 329";
-            public const int Unk_329_sortIndex = 2850;
+            public const int Unk_329_sortIndex = 2800;
             [SortOrder(Unk_329_sortIndex)]
             [DisplayName(Unk_329_displayName)]
             public virtual float Unk_329 {
@@ -7949,12 +7953,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_329_offset { get; private set; }
 
-            protected uint Unk_330_raw;
+            protected float Unk_330_raw;
             public const string Unk_330_displayName = "Unk 330";
-            public const int Unk_330_sortIndex = 2900;
+            public const int Unk_330_sortIndex = 2850;
             [SortOrder(Unk_330_sortIndex)]
             [DisplayName(Unk_330_displayName)]
-            public virtual uint Unk_330 {
+            public virtual float Unk_330 {
                 get => Unk_330_raw;
                 set {
                     if (Unk_330_raw == value) return;
@@ -7969,7 +7973,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_331_raw;
             public const string Unk_331_displayName = "Unk 331";
-            public const int Unk_331_sortIndex = 2950;
+            public const int Unk_331_sortIndex = 2900;
             [SortOrder(Unk_331_sortIndex)]
             [DisplayName(Unk_331_displayName)]
             public virtual uint Unk_331 {
@@ -7985,12 +7989,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_331_offset { get; private set; }
 
-            protected float Unk_332_raw;
+            protected uint Unk_332_raw;
             public const string Unk_332_displayName = "Unk 332";
-            public const int Unk_332_sortIndex = 3000;
+            public const int Unk_332_sortIndex = 2950;
             [SortOrder(Unk_332_sortIndex)]
             [DisplayName(Unk_332_displayName)]
-            public virtual float Unk_332 {
+            public virtual uint Unk_332 {
                 get => Unk_332_raw;
                 set {
                     if (Unk_332_raw == value) return;
@@ -8005,7 +8009,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_333_raw;
             public const string Unk_333_displayName = "Unk 333";
-            public const int Unk_333_sortIndex = 3050;
+            public const int Unk_333_sortIndex = 3000;
             [SortOrder(Unk_333_sortIndex)]
             [DisplayName(Unk_333_displayName)]
             public virtual float Unk_333 {
@@ -8023,7 +8027,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_334_raw;
             public const string Unk_334_displayName = "Unk 334";
-            public const int Unk_334_sortIndex = 3100;
+            public const int Unk_334_sortIndex = 3050;
             [SortOrder(Unk_334_sortIndex)]
             [DisplayName(Unk_334_displayName)]
             public virtual float Unk_334 {
@@ -8041,7 +8045,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_335_raw;
             public const string Unk_335_displayName = "Unk 335";
-            public const int Unk_335_sortIndex = 3150;
+            public const int Unk_335_sortIndex = 3100;
             [SortOrder(Unk_335_sortIndex)]
             [DisplayName(Unk_335_displayName)]
             public virtual float Unk_335 {
@@ -8059,7 +8063,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_336_raw;
             public const string Unk_336_displayName = "Unk 336";
-            public const int Unk_336_sortIndex = 3200;
+            public const int Unk_336_sortIndex = 3150;
             [SortOrder(Unk_336_sortIndex)]
             [DisplayName(Unk_336_displayName)]
             public virtual float Unk_336 {
@@ -8077,7 +8081,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_337_raw;
             public const string Unk_337_displayName = "Unk 337";
-            public const int Unk_337_sortIndex = 3250;
+            public const int Unk_337_sortIndex = 3200;
             [SortOrder(Unk_337_sortIndex)]
             [DisplayName(Unk_337_displayName)]
             public virtual float Unk_337 {
@@ -8095,7 +8099,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_338_raw;
             public const string Unk_338_displayName = "Unk 338";
-            public const int Unk_338_sortIndex = 3300;
+            public const int Unk_338_sortIndex = 3250;
             [SortOrder(Unk_338_sortIndex)]
             [DisplayName(Unk_338_displayName)]
             public virtual float Unk_338 {
@@ -8113,7 +8117,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_339_raw;
             public const string Unk_339_displayName = "Unk 339";
-            public const int Unk_339_sortIndex = 3350;
+            public const int Unk_339_sortIndex = 3300;
             [SortOrder(Unk_339_sortIndex)]
             [DisplayName(Unk_339_displayName)]
             public virtual float Unk_339 {
@@ -8131,7 +8135,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_340_raw;
             public const string Unk_340_displayName = "Unk 340";
-            public const int Unk_340_sortIndex = 3400;
+            public const int Unk_340_sortIndex = 3350;
             [SortOrder(Unk_340_sortIndex)]
             [DisplayName(Unk_340_displayName)]
             public virtual float Unk_340 {
@@ -8149,7 +8153,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_341_raw;
             public const string Unk_341_displayName = "Unk 341";
-            public const int Unk_341_sortIndex = 3450;
+            public const int Unk_341_sortIndex = 3400;
             [SortOrder(Unk_341_sortIndex)]
             [DisplayName(Unk_341_displayName)]
             public virtual float Unk_341 {
@@ -8167,7 +8171,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_342_raw;
             public const string Unk_342_displayName = "Unk 342";
-            public const int Unk_342_sortIndex = 3500;
+            public const int Unk_342_sortIndex = 3450;
             [SortOrder(Unk_342_sortIndex)]
             [DisplayName(Unk_342_displayName)]
             public virtual float Unk_342 {
@@ -8185,7 +8189,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_343_raw;
             public const string Unk_343_displayName = "Unk 343";
-            public const int Unk_343_sortIndex = 3550;
+            public const int Unk_343_sortIndex = 3500;
             [SortOrder(Unk_343_sortIndex)]
             [DisplayName(Unk_343_displayName)]
             public virtual float Unk_343 {
@@ -8203,7 +8207,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_344_raw;
             public const string Unk_344_displayName = "Unk 344";
-            public const int Unk_344_sortIndex = 3600;
+            public const int Unk_344_sortIndex = 3550;
             [SortOrder(Unk_344_sortIndex)]
             [DisplayName(Unk_344_displayName)]
             public virtual float Unk_344 {
@@ -8221,7 +8225,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_345_raw;
             public const string Unk_345_displayName = "Unk 345";
-            public const int Unk_345_sortIndex = 3650;
+            public const int Unk_345_sortIndex = 3600;
             [SortOrder(Unk_345_sortIndex)]
             [DisplayName(Unk_345_displayName)]
             public virtual float Unk_345 {
@@ -8239,7 +8243,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_346_raw;
             public const string Unk_346_displayName = "Unk 346";
-            public const int Unk_346_sortIndex = 3700;
+            public const int Unk_346_sortIndex = 3650;
             [SortOrder(Unk_346_sortIndex)]
             [DisplayName(Unk_346_displayName)]
             public virtual float Unk_346 {
@@ -8257,7 +8261,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_347_raw;
             public const string Unk_347_displayName = "Unk 347";
-            public const int Unk_347_sortIndex = 3750;
+            public const int Unk_347_sortIndex = 3700;
             [SortOrder(Unk_347_sortIndex)]
             [DisplayName(Unk_347_displayName)]
             public virtual float Unk_347 {
@@ -8275,7 +8279,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_348_raw;
             public const string Unk_348_displayName = "Unk 348";
-            public const int Unk_348_sortIndex = 3800;
+            public const int Unk_348_sortIndex = 3750;
             [SortOrder(Unk_348_sortIndex)]
             [DisplayName(Unk_348_displayName)]
             public virtual float Unk_348 {
@@ -8293,7 +8297,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_349_raw;
             public const string Unk_349_displayName = "Unk 349";
-            public const int Unk_349_sortIndex = 3850;
+            public const int Unk_349_sortIndex = 3800;
             [SortOrder(Unk_349_sortIndex)]
             [DisplayName(Unk_349_displayName)]
             public virtual float Unk_349 {
@@ -8311,7 +8315,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_350_raw;
             public const string Unk_350_displayName = "Unk 350";
-            public const int Unk_350_sortIndex = 3900;
+            public const int Unk_350_sortIndex = 3850;
             [SortOrder(Unk_350_sortIndex)]
             [DisplayName(Unk_350_displayName)]
             public virtual float Unk_350 {
@@ -8329,7 +8333,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_351_raw;
             public const string Unk_351_displayName = "Unk 351";
-            public const int Unk_351_sortIndex = 3950;
+            public const int Unk_351_sortIndex = 3900;
             [SortOrder(Unk_351_sortIndex)]
             [DisplayName(Unk_351_displayName)]
             public virtual float Unk_351 {
@@ -8347,7 +8351,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_352_raw;
             public const string Unk_352_displayName = "Unk 352";
-            public const int Unk_352_sortIndex = 4000;
+            public const int Unk_352_sortIndex = 3950;
             [SortOrder(Unk_352_sortIndex)]
             [DisplayName(Unk_352_displayName)]
             public virtual float Unk_352 {
@@ -8365,7 +8369,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_353_raw;
             public const string Unk_353_displayName = "Unk 353";
-            public const int Unk_353_sortIndex = 4050;
+            public const int Unk_353_sortIndex = 4000;
             [SortOrder(Unk_353_sortIndex)]
             [DisplayName(Unk_353_displayName)]
             public virtual float Unk_353 {
@@ -8383,7 +8387,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_354_raw;
             public const string Unk_354_displayName = "Unk 354";
-            public const int Unk_354_sortIndex = 4100;
+            public const int Unk_354_sortIndex = 4050;
             [SortOrder(Unk_354_sortIndex)]
             [DisplayName(Unk_354_displayName)]
             public virtual float Unk_354 {
@@ -8401,7 +8405,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_355_raw;
             public const string Unk_355_displayName = "Unk 355";
-            public const int Unk_355_sortIndex = 4150;
+            public const int Unk_355_sortIndex = 4100;
             [SortOrder(Unk_355_sortIndex)]
             [DisplayName(Unk_355_displayName)]
             public virtual float Unk_355 {
@@ -8419,7 +8423,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_356_raw;
             public const string Unk_356_displayName = "Unk 356";
-            public const int Unk_356_sortIndex = 4200;
+            public const int Unk_356_sortIndex = 4150;
             [SortOrder(Unk_356_sortIndex)]
             [DisplayName(Unk_356_displayName)]
             public virtual float Unk_356 {
@@ -8437,7 +8441,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_357_raw;
             public const string Unk_357_displayName = "Unk 357";
-            public const int Unk_357_sortIndex = 4250;
+            public const int Unk_357_sortIndex = 4200;
             [SortOrder(Unk_357_sortIndex)]
             [DisplayName(Unk_357_displayName)]
             public virtual float Unk_357 {
@@ -8455,7 +8459,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_358_raw;
             public const string Unk_358_displayName = "Unk 358";
-            public const int Unk_358_sortIndex = 4300;
+            public const int Unk_358_sortIndex = 4250;
             [SortOrder(Unk_358_sortIndex)]
             [DisplayName(Unk_358_displayName)]
             public virtual float Unk_358 {
@@ -8473,7 +8477,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_359_raw;
             public const string Unk_359_displayName = "Unk 359";
-            public const int Unk_359_sortIndex = 4350;
+            public const int Unk_359_sortIndex = 4300;
             [SortOrder(Unk_359_sortIndex)]
             [DisplayName(Unk_359_displayName)]
             public virtual float Unk_359 {
@@ -8491,7 +8495,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_360_raw;
             public const string Unk_360_displayName = "Unk 360";
-            public const int Unk_360_sortIndex = 4400;
+            public const int Unk_360_sortIndex = 4350;
             [SortOrder(Unk_360_sortIndex)]
             [DisplayName(Unk_360_displayName)]
             public virtual float Unk_360 {
@@ -8509,7 +8513,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_361_raw;
             public const string Unk_361_displayName = "Unk 361";
-            public const int Unk_361_sortIndex = 4450;
+            public const int Unk_361_sortIndex = 4400;
             [SortOrder(Unk_361_sortIndex)]
             [DisplayName(Unk_361_displayName)]
             public virtual float Unk_361 {
@@ -8527,7 +8531,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_362_raw;
             public const string Unk_362_displayName = "Unk 362";
-            public const int Unk_362_sortIndex = 4500;
+            public const int Unk_362_sortIndex = 4450;
             [SortOrder(Unk_362_sortIndex)]
             [DisplayName(Unk_362_displayName)]
             public virtual float Unk_362 {
@@ -8545,7 +8549,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_363_raw;
             public const string Unk_363_displayName = "Unk 363";
-            public const int Unk_363_sortIndex = 4550;
+            public const int Unk_363_sortIndex = 4500;
             [SortOrder(Unk_363_sortIndex)]
             [DisplayName(Unk_363_displayName)]
             public virtual float Unk_363 {
@@ -8563,7 +8567,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_364_raw;
             public const string Unk_364_displayName = "Unk 364";
-            public const int Unk_364_sortIndex = 4600;
+            public const int Unk_364_sortIndex = 4550;
             [SortOrder(Unk_364_sortIndex)]
             [DisplayName(Unk_364_displayName)]
             public virtual float Unk_364 {
@@ -8581,7 +8585,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_365_raw;
             public const string Unk_365_displayName = "Unk 365";
-            public const int Unk_365_sortIndex = 4650;
+            public const int Unk_365_sortIndex = 4600;
             [SortOrder(Unk_365_sortIndex)]
             [DisplayName(Unk_365_displayName)]
             public virtual float Unk_365 {
@@ -8599,7 +8603,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_366_raw;
             public const string Unk_366_displayName = "Unk 366";
-            public const int Unk_366_sortIndex = 4700;
+            public const int Unk_366_sortIndex = 4650;
             [SortOrder(Unk_366_sortIndex)]
             [DisplayName(Unk_366_displayName)]
             public virtual float Unk_366 {
@@ -8617,7 +8621,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_367_raw;
             public const string Unk_367_displayName = "Unk 367";
-            public const int Unk_367_sortIndex = 4750;
+            public const int Unk_367_sortIndex = 4700;
             [SortOrder(Unk_367_sortIndex)]
             [DisplayName(Unk_367_displayName)]
             public virtual float Unk_367 {
@@ -8635,7 +8639,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_368_raw;
             public const string Unk_368_displayName = "Unk 368";
-            public const int Unk_368_sortIndex = 4800;
+            public const int Unk_368_sortIndex = 4750;
             [SortOrder(Unk_368_sortIndex)]
             [DisplayName(Unk_368_displayName)]
             public virtual float Unk_368 {
@@ -8653,7 +8657,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_369_raw;
             public const string Unk_369_displayName = "Unk 369";
-            public const int Unk_369_sortIndex = 4850;
+            public const int Unk_369_sortIndex = 4800;
             [SortOrder(Unk_369_sortIndex)]
             [DisplayName(Unk_369_displayName)]
             public virtual float Unk_369 {
@@ -8671,7 +8675,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_370_raw;
             public const string Unk_370_displayName = "Unk 370";
-            public const int Unk_370_sortIndex = 4900;
+            public const int Unk_370_sortIndex = 4850;
             [SortOrder(Unk_370_sortIndex)]
             [DisplayName(Unk_370_displayName)]
             public virtual float Unk_370 {
@@ -8689,7 +8693,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_371_raw;
             public const string Unk_371_displayName = "Unk 371";
-            public const int Unk_371_sortIndex = 4950;
+            public const int Unk_371_sortIndex = 4900;
             [SortOrder(Unk_371_sortIndex)]
             [DisplayName(Unk_371_displayName)]
             public virtual float Unk_371 {
@@ -8707,7 +8711,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_372_raw;
             public const string Unk_372_displayName = "Unk 372";
-            public const int Unk_372_sortIndex = 5000;
+            public const int Unk_372_sortIndex = 4950;
             [SortOrder(Unk_372_sortIndex)]
             [DisplayName(Unk_372_displayName)]
             public virtual float Unk_372 {
@@ -8725,7 +8729,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_373_raw;
             public const string Unk_373_displayName = "Unk 373";
-            public const int Unk_373_sortIndex = 5050;
+            public const int Unk_373_sortIndex = 5000;
             [SortOrder(Unk_373_sortIndex)]
             [DisplayName(Unk_373_displayName)]
             public virtual float Unk_373 {
@@ -8743,7 +8747,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_374_raw;
             public const string Unk_374_displayName = "Unk 374";
-            public const int Unk_374_sortIndex = 5100;
+            public const int Unk_374_sortIndex = 5050;
             [SortOrder(Unk_374_sortIndex)]
             [DisplayName(Unk_374_displayName)]
             public virtual float Unk_374 {
@@ -8761,7 +8765,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_375_raw;
             public const string Unk_375_displayName = "Unk 375";
-            public const int Unk_375_sortIndex = 5150;
+            public const int Unk_375_sortIndex = 5100;
             [SortOrder(Unk_375_sortIndex)]
             [DisplayName(Unk_375_displayName)]
             public virtual float Unk_375 {
@@ -8779,7 +8783,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_376_raw;
             public const string Unk_376_displayName = "Unk 376";
-            public const int Unk_376_sortIndex = 5200;
+            public const int Unk_376_sortIndex = 5150;
             [SortOrder(Unk_376_sortIndex)]
             [DisplayName(Unk_376_displayName)]
             public virtual float Unk_376 {
@@ -8797,7 +8801,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_377_raw;
             public const string Unk_377_displayName = "Unk 377";
-            public const int Unk_377_sortIndex = 5250;
+            public const int Unk_377_sortIndex = 5200;
             [SortOrder(Unk_377_sortIndex)]
             [DisplayName(Unk_377_displayName)]
             public virtual float Unk_377 {
@@ -8815,7 +8819,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_378_raw;
             public const string Unk_378_displayName = "Unk 378";
-            public const int Unk_378_sortIndex = 5300;
+            public const int Unk_378_sortIndex = 5250;
             [SortOrder(Unk_378_sortIndex)]
             [DisplayName(Unk_378_displayName)]
             public virtual float Unk_378 {
@@ -8833,7 +8837,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_379_raw;
             public const string Unk_379_displayName = "Unk 379";
-            public const int Unk_379_sortIndex = 5350;
+            public const int Unk_379_sortIndex = 5300;
             [SortOrder(Unk_379_sortIndex)]
             [DisplayName(Unk_379_displayName)]
             public virtual float Unk_379 {
@@ -8851,7 +8855,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_380_raw;
             public const string Unk_380_displayName = "Unk 380";
-            public const int Unk_380_sortIndex = 5400;
+            public const int Unk_380_sortIndex = 5350;
             [SortOrder(Unk_380_sortIndex)]
             [DisplayName(Unk_380_displayName)]
             public virtual float Unk_380 {
@@ -8869,7 +8873,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_381_raw;
             public const string Unk_381_displayName = "Unk 381";
-            public const int Unk_381_sortIndex = 5450;
+            public const int Unk_381_sortIndex = 5400;
             [SortOrder(Unk_381_sortIndex)]
             [DisplayName(Unk_381_displayName)]
             public virtual float Unk_381 {
@@ -8887,7 +8891,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_382_raw;
             public const string Unk_382_displayName = "Unk 382";
-            public const int Unk_382_sortIndex = 5500;
+            public const int Unk_382_sortIndex = 5450;
             [SortOrder(Unk_382_sortIndex)]
             [DisplayName(Unk_382_displayName)]
             public virtual float Unk_382 {
@@ -8905,7 +8909,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_383_raw;
             public const string Unk_383_displayName = "Unk 383";
-            public const int Unk_383_sortIndex = 5550;
+            public const int Unk_383_sortIndex = 5500;
             [SortOrder(Unk_383_sortIndex)]
             [DisplayName(Unk_383_displayName)]
             public virtual float Unk_383 {
@@ -8923,7 +8927,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_384_raw;
             public const string Unk_384_displayName = "Unk 384";
-            public const int Unk_384_sortIndex = 5600;
+            public const int Unk_384_sortIndex = 5550;
             [SortOrder(Unk_384_sortIndex)]
             [DisplayName(Unk_384_displayName)]
             public virtual float Unk_384 {
@@ -8939,12 +8943,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_384_offset { get; private set; }
 
-            protected uint Unk_385_raw;
+            protected float Unk_385_raw;
             public const string Unk_385_displayName = "Unk 385";
-            public const int Unk_385_sortIndex = 5650;
+            public const int Unk_385_sortIndex = 5600;
             [SortOrder(Unk_385_sortIndex)]
             [DisplayName(Unk_385_displayName)]
-            public virtual uint Unk_385 {
+            public virtual float Unk_385 {
                 get => Unk_385_raw;
                 set {
                     if (Unk_385_raw == value) return;
@@ -8957,12 +8961,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_385_offset { get; private set; }
 
-            protected float Unk_386_raw;
+            protected uint Unk_386_raw;
             public const string Unk_386_displayName = "Unk 386";
-            public const int Unk_386_sortIndex = 5700;
+            public const int Unk_386_sortIndex = 5650;
             [SortOrder(Unk_386_sortIndex)]
             [DisplayName(Unk_386_displayName)]
-            public virtual float Unk_386 {
+            public virtual uint Unk_386 {
                 get => Unk_386_raw;
                 set {
                     if (Unk_386_raw == value) return;
@@ -8977,7 +8981,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_387_raw;
             public const string Unk_387_displayName = "Unk 387";
-            public const int Unk_387_sortIndex = 5750;
+            public const int Unk_387_sortIndex = 5700;
             [SortOrder(Unk_387_sortIndex)]
             [DisplayName(Unk_387_displayName)]
             public virtual float Unk_387 {
@@ -8995,7 +8999,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_388_raw;
             public const string Unk_388_displayName = "Unk 388";
-            public const int Unk_388_sortIndex = 5800;
+            public const int Unk_388_sortIndex = 5750;
             [SortOrder(Unk_388_sortIndex)]
             [DisplayName(Unk_388_displayName)]
             public virtual float Unk_388 {
@@ -9013,7 +9017,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_389_raw;
             public const string Unk_389_displayName = "Unk 389";
-            public const int Unk_389_sortIndex = 5850;
+            public const int Unk_389_sortIndex = 5800;
             [SortOrder(Unk_389_sortIndex)]
             [DisplayName(Unk_389_displayName)]
             public virtual float Unk_389 {
@@ -9031,7 +9035,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_390_raw;
             public const string Unk_390_displayName = "Unk 390";
-            public const int Unk_390_sortIndex = 5900;
+            public const int Unk_390_sortIndex = 5850;
             [SortOrder(Unk_390_sortIndex)]
             [DisplayName(Unk_390_displayName)]
             public virtual float Unk_390 {
@@ -9049,7 +9053,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_391_raw;
             public const string Unk_391_displayName = "Unk 391";
-            public const int Unk_391_sortIndex = 5950;
+            public const int Unk_391_sortIndex = 5900;
             [SortOrder(Unk_391_sortIndex)]
             [DisplayName(Unk_391_displayName)]
             public virtual float Unk_391 {
@@ -9067,7 +9071,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_392_raw;
             public const string Unk_392_displayName = "Unk 392";
-            public const int Unk_392_sortIndex = 6000;
+            public const int Unk_392_sortIndex = 5950;
             [SortOrder(Unk_392_sortIndex)]
             [DisplayName(Unk_392_displayName)]
             public virtual float Unk_392 {
@@ -9085,7 +9089,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_393_raw;
             public const string Unk_393_displayName = "Unk 393";
-            public const int Unk_393_sortIndex = 6050;
+            public const int Unk_393_sortIndex = 6000;
             [SortOrder(Unk_393_sortIndex)]
             [DisplayName(Unk_393_displayName)]
             public virtual float Unk_393 {
@@ -9103,7 +9107,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_394_raw;
             public const string Unk_394_displayName = "Unk 394";
-            public const int Unk_394_sortIndex = 6100;
+            public const int Unk_394_sortIndex = 6050;
             [SortOrder(Unk_394_sortIndex)]
             [DisplayName(Unk_394_displayName)]
             public virtual float Unk_394 {
@@ -9121,7 +9125,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_395_raw;
             public const string Unk_395_displayName = "Unk 395";
-            public const int Unk_395_sortIndex = 6150;
+            public const int Unk_395_sortIndex = 6100;
             [SortOrder(Unk_395_sortIndex)]
             [DisplayName(Unk_395_displayName)]
             public virtual float Unk_395 {
@@ -9139,7 +9143,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_396_raw;
             public const string Unk_396_displayName = "Unk 396";
-            public const int Unk_396_sortIndex = 6200;
+            public const int Unk_396_sortIndex = 6150;
             [SortOrder(Unk_396_sortIndex)]
             [DisplayName(Unk_396_displayName)]
             public virtual float Unk_396 {
@@ -9157,7 +9161,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_397_raw;
             public const string Unk_397_displayName = "Unk 397";
-            public const int Unk_397_sortIndex = 6250;
+            public const int Unk_397_sortIndex = 6200;
             [SortOrder(Unk_397_sortIndex)]
             [DisplayName(Unk_397_displayName)]
             public virtual float Unk_397 {
@@ -9175,7 +9179,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_398_raw;
             public const string Unk_398_displayName = "Unk 398";
-            public const int Unk_398_sortIndex = 6300;
+            public const int Unk_398_sortIndex = 6250;
             [SortOrder(Unk_398_sortIndex)]
             [DisplayName(Unk_398_displayName)]
             public virtual float Unk_398 {
@@ -9193,7 +9197,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_399_raw;
             public const string Unk_399_displayName = "Unk 399";
-            public const int Unk_399_sortIndex = 6350;
+            public const int Unk_399_sortIndex = 6300;
             [SortOrder(Unk_399_sortIndex)]
             [DisplayName(Unk_399_displayName)]
             public virtual float Unk_399 {
@@ -9211,7 +9215,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_400_raw;
             public const string Unk_400_displayName = "Unk 400";
-            public const int Unk_400_sortIndex = 6400;
+            public const int Unk_400_sortIndex = 6350;
             [SortOrder(Unk_400_sortIndex)]
             [DisplayName(Unk_400_displayName)]
             public virtual float Unk_400 {
@@ -9229,7 +9233,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_401_raw;
             public const string Unk_401_displayName = "Unk 401";
-            public const int Unk_401_sortIndex = 6450;
+            public const int Unk_401_sortIndex = 6400;
             [SortOrder(Unk_401_sortIndex)]
             [DisplayName(Unk_401_displayName)]
             public virtual float Unk_401 {
@@ -9247,7 +9251,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_402_raw;
             public const string Unk_402_displayName = "Unk 402";
-            public const int Unk_402_sortIndex = 6500;
+            public const int Unk_402_sortIndex = 6450;
             [SortOrder(Unk_402_sortIndex)]
             [DisplayName(Unk_402_displayName)]
             public virtual float Unk_402 {
@@ -9265,7 +9269,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_403_raw;
             public const string Unk_403_displayName = "Unk 403";
-            public const int Unk_403_sortIndex = 6550;
+            public const int Unk_403_sortIndex = 6500;
             [SortOrder(Unk_403_sortIndex)]
             [DisplayName(Unk_403_displayName)]
             public virtual float Unk_403 {
@@ -9283,7 +9287,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_404_raw;
             public const string Unk_404_displayName = "Unk 404";
-            public const int Unk_404_sortIndex = 6600;
+            public const int Unk_404_sortIndex = 6550;
             [SortOrder(Unk_404_sortIndex)]
             [DisplayName(Unk_404_displayName)]
             public virtual float Unk_404 {
@@ -9301,7 +9305,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_405_raw;
             public const string Unk_405_displayName = "Unk 405";
-            public const int Unk_405_sortIndex = 6650;
+            public const int Unk_405_sortIndex = 6600;
             [SortOrder(Unk_405_sortIndex)]
             [DisplayName(Unk_405_displayName)]
             public virtual float Unk_405 {
@@ -9319,7 +9323,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_406_raw;
             public const string Unk_406_displayName = "Unk 406";
-            public const int Unk_406_sortIndex = 6700;
+            public const int Unk_406_sortIndex = 6650;
             [SortOrder(Unk_406_sortIndex)]
             [DisplayName(Unk_406_displayName)]
             public virtual float Unk_406 {
@@ -9337,7 +9341,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_407_raw;
             public const string Unk_407_displayName = "Unk 407";
-            public const int Unk_407_sortIndex = 6750;
+            public const int Unk_407_sortIndex = 6700;
             [SortOrder(Unk_407_sortIndex)]
             [DisplayName(Unk_407_displayName)]
             public virtual float Unk_407 {
@@ -9355,7 +9359,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_408_raw;
             public const string Unk_408_displayName = "Unk 408";
-            public const int Unk_408_sortIndex = 6800;
+            public const int Unk_408_sortIndex = 6750;
             [SortOrder(Unk_408_sortIndex)]
             [DisplayName(Unk_408_displayName)]
             public virtual float Unk_408 {
@@ -9373,7 +9377,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_409_raw;
             public const string Unk_409_displayName = "Unk 409";
-            public const int Unk_409_sortIndex = 6850;
+            public const int Unk_409_sortIndex = 6800;
             [SortOrder(Unk_409_sortIndex)]
             [DisplayName(Unk_409_displayName)]
             public virtual float Unk_409 {
@@ -9391,7 +9395,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_410_raw;
             public const string Unk_410_displayName = "Unk 410";
-            public const int Unk_410_sortIndex = 6900;
+            public const int Unk_410_sortIndex = 6850;
             [SortOrder(Unk_410_sortIndex)]
             [DisplayName(Unk_410_displayName)]
             public virtual float Unk_410 {
@@ -9409,7 +9413,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_411_raw;
             public const string Unk_411_displayName = "Unk 411";
-            public const int Unk_411_sortIndex = 6950;
+            public const int Unk_411_sortIndex = 6900;
             [SortOrder(Unk_411_sortIndex)]
             [DisplayName(Unk_411_displayName)]
             public virtual float Unk_411 {
@@ -9427,7 +9431,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_412_raw;
             public const string Unk_412_displayName = "Unk 412";
-            public const int Unk_412_sortIndex = 7000;
+            public const int Unk_412_sortIndex = 6950;
             [SortOrder(Unk_412_sortIndex)]
             [DisplayName(Unk_412_displayName)]
             public virtual float Unk_412 {
@@ -9445,7 +9449,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_413_raw;
             public const string Unk_413_displayName = "Unk 413";
-            public const int Unk_413_sortIndex = 7050;
+            public const int Unk_413_sortIndex = 7000;
             [SortOrder(Unk_413_sortIndex)]
             [DisplayName(Unk_413_displayName)]
             public virtual float Unk_413 {
@@ -9463,7 +9467,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_414_raw;
             public const string Unk_414_displayName = "Unk 414";
-            public const int Unk_414_sortIndex = 7100;
+            public const int Unk_414_sortIndex = 7050;
             [SortOrder(Unk_414_sortIndex)]
             [DisplayName(Unk_414_displayName)]
             public virtual float Unk_414 {
@@ -9481,7 +9485,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_415_raw;
             public const string Unk_415_displayName = "Unk 415";
-            public const int Unk_415_sortIndex = 7150;
+            public const int Unk_415_sortIndex = 7100;
             [SortOrder(Unk_415_sortIndex)]
             [DisplayName(Unk_415_displayName)]
             public virtual float Unk_415 {
@@ -9499,7 +9503,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_416_raw;
             public const string Unk_416_displayName = "Unk 416";
-            public const int Unk_416_sortIndex = 7200;
+            public const int Unk_416_sortIndex = 7150;
             [SortOrder(Unk_416_sortIndex)]
             [DisplayName(Unk_416_displayName)]
             public virtual float Unk_416 {
@@ -9517,7 +9521,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_417_raw;
             public const string Unk_417_displayName = "Unk 417";
-            public const int Unk_417_sortIndex = 7250;
+            public const int Unk_417_sortIndex = 7200;
             [SortOrder(Unk_417_sortIndex)]
             [DisplayName(Unk_417_displayName)]
             public virtual float Unk_417 {
@@ -9535,7 +9539,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_418_raw;
             public const string Unk_418_displayName = "Unk 418";
-            public const int Unk_418_sortIndex = 7300;
+            public const int Unk_418_sortIndex = 7250;
             [SortOrder(Unk_418_sortIndex)]
             [DisplayName(Unk_418_displayName)]
             public virtual float Unk_418 {
@@ -9553,7 +9557,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_419_raw;
             public const string Unk_419_displayName = "Unk 419";
-            public const int Unk_419_sortIndex = 7350;
+            public const int Unk_419_sortIndex = 7300;
             [SortOrder(Unk_419_sortIndex)]
             [DisplayName(Unk_419_displayName)]
             public virtual float Unk_419 {
@@ -9571,7 +9575,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_420_raw;
             public const string Unk_420_displayName = "Unk 420";
-            public const int Unk_420_sortIndex = 7400;
+            public const int Unk_420_sortIndex = 7350;
             [SortOrder(Unk_420_sortIndex)]
             [DisplayName(Unk_420_displayName)]
             public virtual float Unk_420 {
@@ -9589,7 +9593,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_421_raw;
             public const string Unk_421_displayName = "Unk 421";
-            public const int Unk_421_sortIndex = 7450;
+            public const int Unk_421_sortIndex = 7400;
             [SortOrder(Unk_421_sortIndex)]
             [DisplayName(Unk_421_displayName)]
             public virtual float Unk_421 {
@@ -9607,7 +9611,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_422_raw;
             public const string Unk_422_displayName = "Unk 422";
-            public const int Unk_422_sortIndex = 7500;
+            public const int Unk_422_sortIndex = 7450;
             [SortOrder(Unk_422_sortIndex)]
             [DisplayName(Unk_422_displayName)]
             public virtual float Unk_422 {
@@ -9625,7 +9629,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_423_raw;
             public const string Unk_423_displayName = "Unk 423";
-            public const int Unk_423_sortIndex = 7550;
+            public const int Unk_423_sortIndex = 7500;
             [SortOrder(Unk_423_sortIndex)]
             [DisplayName(Unk_423_displayName)]
             public virtual float Unk_423 {
@@ -9643,7 +9647,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_424_raw;
             public const string Unk_424_displayName = "Unk 424";
-            public const int Unk_424_sortIndex = 7600;
+            public const int Unk_424_sortIndex = 7550;
             [SortOrder(Unk_424_sortIndex)]
             [DisplayName(Unk_424_displayName)]
             public virtual float Unk_424 {
@@ -9661,7 +9665,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_425_raw;
             public const string Unk_425_displayName = "Unk 425";
-            public const int Unk_425_sortIndex = 7650;
+            public const int Unk_425_sortIndex = 7600;
             [SortOrder(Unk_425_sortIndex)]
             [DisplayName(Unk_425_displayName)]
             public virtual float Unk_425 {
@@ -9679,7 +9683,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_426_raw;
             public const string Unk_426_displayName = "Unk 426";
-            public const int Unk_426_sortIndex = 7700;
+            public const int Unk_426_sortIndex = 7650;
             [SortOrder(Unk_426_sortIndex)]
             [DisplayName(Unk_426_displayName)]
             public virtual float Unk_426 {
@@ -9697,7 +9701,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_427_raw;
             public const string Unk_427_displayName = "Unk 427";
-            public const int Unk_427_sortIndex = 7750;
+            public const int Unk_427_sortIndex = 7700;
             [SortOrder(Unk_427_sortIndex)]
             [DisplayName(Unk_427_displayName)]
             public virtual float Unk_427 {
@@ -9715,7 +9719,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_428_raw;
             public const string Unk_428_displayName = "Unk 428";
-            public const int Unk_428_sortIndex = 7800;
+            public const int Unk_428_sortIndex = 7750;
             [SortOrder(Unk_428_sortIndex)]
             [DisplayName(Unk_428_displayName)]
             public virtual float Unk_428 {
@@ -9733,7 +9737,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_429_raw;
             public const string Unk_429_displayName = "Unk 429";
-            public const int Unk_429_sortIndex = 7850;
+            public const int Unk_429_sortIndex = 7800;
             [SortOrder(Unk_429_sortIndex)]
             [DisplayName(Unk_429_displayName)]
             public virtual float Unk_429 {
@@ -9751,7 +9755,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_430_raw;
             public const string Unk_430_displayName = "Unk 430";
-            public const int Unk_430_sortIndex = 7900;
+            public const int Unk_430_sortIndex = 7850;
             [SortOrder(Unk_430_sortIndex)]
             [DisplayName(Unk_430_displayName)]
             public virtual float Unk_430 {
@@ -9769,7 +9773,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_431_raw;
             public const string Unk_431_displayName = "Unk 431";
-            public const int Unk_431_sortIndex = 7950;
+            public const int Unk_431_sortIndex = 7900;
             [SortOrder(Unk_431_sortIndex)]
             [DisplayName(Unk_431_displayName)]
             public virtual float Unk_431 {
@@ -9787,7 +9791,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_432_raw;
             public const string Unk_432_displayName = "Unk 432";
-            public const int Unk_432_sortIndex = 8000;
+            public const int Unk_432_sortIndex = 7950;
             [SortOrder(Unk_432_sortIndex)]
             [DisplayName(Unk_432_displayName)]
             public virtual float Unk_432 {
@@ -9805,7 +9809,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_433_raw;
             public const string Unk_433_displayName = "Unk 433";
-            public const int Unk_433_sortIndex = 8050;
+            public const int Unk_433_sortIndex = 8000;
             [SortOrder(Unk_433_sortIndex)]
             [DisplayName(Unk_433_displayName)]
             public virtual float Unk_433 {
@@ -9823,7 +9827,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_434_raw;
             public const string Unk_434_displayName = "Unk 434";
-            public const int Unk_434_sortIndex = 8100;
+            public const int Unk_434_sortIndex = 8050;
             [SortOrder(Unk_434_sortIndex)]
             [DisplayName(Unk_434_displayName)]
             public virtual float Unk_434 {
@@ -9841,7 +9845,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_435_raw;
             public const string Unk_435_displayName = "Unk 435";
-            public const int Unk_435_sortIndex = 8150;
+            public const int Unk_435_sortIndex = 8100;
             [SortOrder(Unk_435_sortIndex)]
             [DisplayName(Unk_435_displayName)]
             public virtual float Unk_435 {
@@ -9859,7 +9863,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_436_raw;
             public const string Unk_436_displayName = "Unk 436";
-            public const int Unk_436_sortIndex = 8200;
+            public const int Unk_436_sortIndex = 8150;
             [SortOrder(Unk_436_sortIndex)]
             [DisplayName(Unk_436_displayName)]
             public virtual float Unk_436 {
@@ -9877,7 +9881,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_437_raw;
             public const string Unk_437_displayName = "Unk 437";
-            public const int Unk_437_sortIndex = 8250;
+            public const int Unk_437_sortIndex = 8200;
             [SortOrder(Unk_437_sortIndex)]
             [DisplayName(Unk_437_displayName)]
             public virtual float Unk_437 {
@@ -9895,7 +9899,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_438_raw;
             public const string Unk_438_displayName = "Unk 438";
-            public const int Unk_438_sortIndex = 8300;
+            public const int Unk_438_sortIndex = 8250;
             [SortOrder(Unk_438_sortIndex)]
             [DisplayName(Unk_438_displayName)]
             public virtual float Unk_438 {
@@ -9911,12 +9915,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_438_offset { get; private set; }
 
-            protected uint Unk_439_raw;
+            protected float Unk_439_raw;
             public const string Unk_439_displayName = "Unk 439";
-            public const int Unk_439_sortIndex = 8350;
+            public const int Unk_439_sortIndex = 8300;
             [SortOrder(Unk_439_sortIndex)]
             [DisplayName(Unk_439_displayName)]
-            public virtual uint Unk_439 {
+            public virtual float Unk_439 {
                 get => Unk_439_raw;
                 set {
                     if (Unk_439_raw == value) return;
@@ -9929,12 +9933,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_439_offset { get; private set; }
 
-            protected float Unk_440_raw;
+            protected uint Unk_440_raw;
             public const string Unk_440_displayName = "Unk 440";
-            public const int Unk_440_sortIndex = 8400;
+            public const int Unk_440_sortIndex = 8350;
             [SortOrder(Unk_440_sortIndex)]
             [DisplayName(Unk_440_displayName)]
-            public virtual float Unk_440 {
+            public virtual uint Unk_440 {
                 get => Unk_440_raw;
                 set {
                     if (Unk_440_raw == value) return;
@@ -9949,7 +9953,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_441_raw;
             public const string Unk_441_displayName = "Unk 441";
-            public const int Unk_441_sortIndex = 8450;
+            public const int Unk_441_sortIndex = 8400;
             [SortOrder(Unk_441_sortIndex)]
             [DisplayName(Unk_441_displayName)]
             public virtual float Unk_441 {
@@ -9967,7 +9971,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_442_raw;
             public const string Unk_442_displayName = "Unk 442";
-            public const int Unk_442_sortIndex = 8500;
+            public const int Unk_442_sortIndex = 8450;
             [SortOrder(Unk_442_sortIndex)]
             [DisplayName(Unk_442_displayName)]
             public virtual float Unk_442 {
@@ -9985,7 +9989,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_443_raw;
             public const string Unk_443_displayName = "Unk 443";
-            public const int Unk_443_sortIndex = 8550;
+            public const int Unk_443_sortIndex = 8500;
             [SortOrder(Unk_443_sortIndex)]
             [DisplayName(Unk_443_displayName)]
             public virtual float Unk_443 {
@@ -10003,7 +10007,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_444_raw;
             public const string Unk_444_displayName = "Unk 444";
-            public const int Unk_444_sortIndex = 8600;
+            public const int Unk_444_sortIndex = 8550;
             [SortOrder(Unk_444_sortIndex)]
             [DisplayName(Unk_444_displayName)]
             public virtual float Unk_444 {
@@ -10021,7 +10025,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_445_raw;
             public const string Unk_445_displayName = "Unk 445";
-            public const int Unk_445_sortIndex = 8650;
+            public const int Unk_445_sortIndex = 8600;
             [SortOrder(Unk_445_sortIndex)]
             [DisplayName(Unk_445_displayName)]
             public virtual float Unk_445 {
@@ -10039,7 +10043,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_446_raw;
             public const string Unk_446_displayName = "Unk 446";
-            public const int Unk_446_sortIndex = 8700;
+            public const int Unk_446_sortIndex = 8650;
             [SortOrder(Unk_446_sortIndex)]
             [DisplayName(Unk_446_displayName)]
             public virtual float Unk_446 {
@@ -10057,7 +10061,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_447_raw;
             public const string Unk_447_displayName = "Unk 447";
-            public const int Unk_447_sortIndex = 8750;
+            public const int Unk_447_sortIndex = 8700;
             [SortOrder(Unk_447_sortIndex)]
             [DisplayName(Unk_447_displayName)]
             public virtual float Unk_447 {
@@ -10075,7 +10079,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_448_raw;
             public const string Unk_448_displayName = "Unk 448";
-            public const int Unk_448_sortIndex = 8800;
+            public const int Unk_448_sortIndex = 8750;
             [SortOrder(Unk_448_sortIndex)]
             [DisplayName(Unk_448_displayName)]
             public virtual float Unk_448 {
@@ -10093,7 +10097,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_449_raw;
             public const string Unk_449_displayName = "Unk 449";
-            public const int Unk_449_sortIndex = 8850;
+            public const int Unk_449_sortIndex = 8800;
             [SortOrder(Unk_449_sortIndex)]
             [DisplayName(Unk_449_displayName)]
             public virtual float Unk_449 {
@@ -10111,7 +10115,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_450_raw;
             public const string Unk_450_displayName = "Unk 450";
-            public const int Unk_450_sortIndex = 8900;
+            public const int Unk_450_sortIndex = 8850;
             [SortOrder(Unk_450_sortIndex)]
             [DisplayName(Unk_450_displayName)]
             public virtual float Unk_450 {
@@ -10129,7 +10133,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_451_raw;
             public const string Unk_451_displayName = "Unk 451";
-            public const int Unk_451_sortIndex = 8950;
+            public const int Unk_451_sortIndex = 8900;
             [SortOrder(Unk_451_sortIndex)]
             [DisplayName(Unk_451_displayName)]
             public virtual float Unk_451 {
@@ -10147,7 +10151,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_452_raw;
             public const string Unk_452_displayName = "Unk 452";
-            public const int Unk_452_sortIndex = 9000;
+            public const int Unk_452_sortIndex = 8950;
             [SortOrder(Unk_452_sortIndex)]
             [DisplayName(Unk_452_displayName)]
             public virtual float Unk_452 {
@@ -10165,7 +10169,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_453_raw;
             public const string Unk_453_displayName = "Unk 453";
-            public const int Unk_453_sortIndex = 9050;
+            public const int Unk_453_sortIndex = 9000;
             [SortOrder(Unk_453_sortIndex)]
             [DisplayName(Unk_453_displayName)]
             public virtual float Unk_453 {
@@ -10183,7 +10187,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_454_raw;
             public const string Unk_454_displayName = "Unk 454";
-            public const int Unk_454_sortIndex = 9100;
+            public const int Unk_454_sortIndex = 9050;
             [SortOrder(Unk_454_sortIndex)]
             [DisplayName(Unk_454_displayName)]
             public virtual float Unk_454 {
@@ -10201,7 +10205,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_455_raw;
             public const string Unk_455_displayName = "Unk 455";
-            public const int Unk_455_sortIndex = 9150;
+            public const int Unk_455_sortIndex = 9100;
             [SortOrder(Unk_455_sortIndex)]
             [DisplayName(Unk_455_displayName)]
             public virtual float Unk_455 {
@@ -10219,7 +10223,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_456_raw;
             public const string Unk_456_displayName = "Unk 456";
-            public const int Unk_456_sortIndex = 9200;
+            public const int Unk_456_sortIndex = 9150;
             [SortOrder(Unk_456_sortIndex)]
             [DisplayName(Unk_456_displayName)]
             public virtual float Unk_456 {
@@ -10237,7 +10241,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_457_raw;
             public const string Unk_457_displayName = "Unk 457";
-            public const int Unk_457_sortIndex = 9250;
+            public const int Unk_457_sortIndex = 9200;
             [SortOrder(Unk_457_sortIndex)]
             [DisplayName(Unk_457_displayName)]
             public virtual float Unk_457 {
@@ -10255,7 +10259,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_458_raw;
             public const string Unk_458_displayName = "Unk 458";
-            public const int Unk_458_sortIndex = 9300;
+            public const int Unk_458_sortIndex = 9250;
             [SortOrder(Unk_458_sortIndex)]
             [DisplayName(Unk_458_displayName)]
             public virtual float Unk_458 {
@@ -10273,7 +10277,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_459_raw;
             public const string Unk_459_displayName = "Unk 459";
-            public const int Unk_459_sortIndex = 9350;
+            public const int Unk_459_sortIndex = 9300;
             [SortOrder(Unk_459_sortIndex)]
             [DisplayName(Unk_459_displayName)]
             public virtual float Unk_459 {
@@ -10291,7 +10295,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_460_raw;
             public const string Unk_460_displayName = "Unk 460";
-            public const int Unk_460_sortIndex = 9400;
+            public const int Unk_460_sortIndex = 9350;
             [SortOrder(Unk_460_sortIndex)]
             [DisplayName(Unk_460_displayName)]
             public virtual float Unk_460 {
@@ -10309,7 +10313,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_461_raw;
             public const string Unk_461_displayName = "Unk 461";
-            public const int Unk_461_sortIndex = 9450;
+            public const int Unk_461_sortIndex = 9400;
             [SortOrder(Unk_461_sortIndex)]
             [DisplayName(Unk_461_displayName)]
             public virtual float Unk_461 {
@@ -10327,7 +10331,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_462_raw;
             public const string Unk_462_displayName = "Unk 462";
-            public const int Unk_462_sortIndex = 9500;
+            public const int Unk_462_sortIndex = 9450;
             [SortOrder(Unk_462_sortIndex)]
             [DisplayName(Unk_462_displayName)]
             public virtual float Unk_462 {
@@ -10345,7 +10349,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_463_raw;
             public const string Unk_463_displayName = "Unk 463";
-            public const int Unk_463_sortIndex = 9550;
+            public const int Unk_463_sortIndex = 9500;
             [SortOrder(Unk_463_sortIndex)]
             [DisplayName(Unk_463_displayName)]
             public virtual float Unk_463 {
@@ -10363,7 +10367,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_464_raw;
             public const string Unk_464_displayName = "Unk 464";
-            public const int Unk_464_sortIndex = 9600;
+            public const int Unk_464_sortIndex = 9550;
             [SortOrder(Unk_464_sortIndex)]
             [DisplayName(Unk_464_displayName)]
             public virtual float Unk_464 {
@@ -10381,7 +10385,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_465_raw;
             public const string Unk_465_displayName = "Unk 465";
-            public const int Unk_465_sortIndex = 9650;
+            public const int Unk_465_sortIndex = 9600;
             [SortOrder(Unk_465_sortIndex)]
             [DisplayName(Unk_465_displayName)]
             public virtual float Unk_465 {
@@ -10399,7 +10403,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_466_raw;
             public const string Unk_466_displayName = "Unk 466";
-            public const int Unk_466_sortIndex = 9700;
+            public const int Unk_466_sortIndex = 9650;
             [SortOrder(Unk_466_sortIndex)]
             [DisplayName(Unk_466_displayName)]
             public virtual float Unk_466 {
@@ -10417,7 +10421,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_467_raw;
             public const string Unk_467_displayName = "Unk 467";
-            public const int Unk_467_sortIndex = 9750;
+            public const int Unk_467_sortIndex = 9700;
             [SortOrder(Unk_467_sortIndex)]
             [DisplayName(Unk_467_displayName)]
             public virtual float Unk_467 {
@@ -10435,7 +10439,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_468_raw;
             public const string Unk_468_displayName = "Unk 468";
-            public const int Unk_468_sortIndex = 9800;
+            public const int Unk_468_sortIndex = 9750;
             [SortOrder(Unk_468_sortIndex)]
             [DisplayName(Unk_468_displayName)]
             public virtual float Unk_468 {
@@ -10453,7 +10457,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_469_raw;
             public const string Unk_469_displayName = "Unk 469";
-            public const int Unk_469_sortIndex = 9850;
+            public const int Unk_469_sortIndex = 9800;
             [SortOrder(Unk_469_sortIndex)]
             [DisplayName(Unk_469_displayName)]
             public virtual float Unk_469 {
@@ -10471,7 +10475,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_470_raw;
             public const string Unk_470_displayName = "Unk 470";
-            public const int Unk_470_sortIndex = 9900;
+            public const int Unk_470_sortIndex = 9850;
             [SortOrder(Unk_470_sortIndex)]
             [DisplayName(Unk_470_displayName)]
             public virtual float Unk_470 {
@@ -10489,7 +10493,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_471_raw;
             public const string Unk_471_displayName = "Unk 471";
-            public const int Unk_471_sortIndex = 9950;
+            public const int Unk_471_sortIndex = 9900;
             [SortOrder(Unk_471_sortIndex)]
             [DisplayName(Unk_471_displayName)]
             public virtual float Unk_471 {
@@ -10507,7 +10511,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_472_raw;
             public const string Unk_472_displayName = "Unk 472";
-            public const int Unk_472_sortIndex = 10000;
+            public const int Unk_472_sortIndex = 9950;
             [SortOrder(Unk_472_sortIndex)]
             [DisplayName(Unk_472_displayName)]
             public virtual float Unk_472 {
@@ -10525,7 +10529,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_473_raw;
             public const string Unk_473_displayName = "Unk 473";
-            public const int Unk_473_sortIndex = 10050;
+            public const int Unk_473_sortIndex = 10000;
             [SortOrder(Unk_473_sortIndex)]
             [DisplayName(Unk_473_displayName)]
             public virtual float Unk_473 {
@@ -10543,7 +10547,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_474_raw;
             public const string Unk_474_displayName = "Unk 474";
-            public const int Unk_474_sortIndex = 10100;
+            public const int Unk_474_sortIndex = 10050;
             [SortOrder(Unk_474_sortIndex)]
             [DisplayName(Unk_474_displayName)]
             public virtual float Unk_474 {
@@ -10561,7 +10565,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_475_raw;
             public const string Unk_475_displayName = "Unk 475";
-            public const int Unk_475_sortIndex = 10150;
+            public const int Unk_475_sortIndex = 10100;
             [SortOrder(Unk_475_sortIndex)]
             [DisplayName(Unk_475_displayName)]
             public virtual float Unk_475 {
@@ -10579,7 +10583,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_476_raw;
             public const string Unk_476_displayName = "Unk 476";
-            public const int Unk_476_sortIndex = 10200;
+            public const int Unk_476_sortIndex = 10150;
             [SortOrder(Unk_476_sortIndex)]
             [DisplayName(Unk_476_displayName)]
             public virtual float Unk_476 {
@@ -10597,7 +10601,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_477_raw;
             public const string Unk_477_displayName = "Unk 477";
-            public const int Unk_477_sortIndex = 10250;
+            public const int Unk_477_sortIndex = 10200;
             [SortOrder(Unk_477_sortIndex)]
             [DisplayName(Unk_477_displayName)]
             public virtual float Unk_477 {
@@ -10615,7 +10619,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_478_raw;
             public const string Unk_478_displayName = "Unk 478";
-            public const int Unk_478_sortIndex = 10300;
+            public const int Unk_478_sortIndex = 10250;
             [SortOrder(Unk_478_sortIndex)]
             [DisplayName(Unk_478_displayName)]
             public virtual float Unk_478 {
@@ -10633,7 +10637,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_479_raw;
             public const string Unk_479_displayName = "Unk 479";
-            public const int Unk_479_sortIndex = 10350;
+            public const int Unk_479_sortIndex = 10300;
             [SortOrder(Unk_479_sortIndex)]
             [DisplayName(Unk_479_displayName)]
             public virtual float Unk_479 {
@@ -10651,7 +10655,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_480_raw;
             public const string Unk_480_displayName = "Unk 480";
-            public const int Unk_480_sortIndex = 10400;
+            public const int Unk_480_sortIndex = 10350;
             [SortOrder(Unk_480_sortIndex)]
             [DisplayName(Unk_480_displayName)]
             public virtual float Unk_480 {
@@ -10669,7 +10673,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_481_raw;
             public const string Unk_481_displayName = "Unk 481";
-            public const int Unk_481_sortIndex = 10450;
+            public const int Unk_481_sortIndex = 10400;
             [SortOrder(Unk_481_sortIndex)]
             [DisplayName(Unk_481_displayName)]
             public virtual float Unk_481 {
@@ -10687,7 +10691,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_482_raw;
             public const string Unk_482_displayName = "Unk 482";
-            public const int Unk_482_sortIndex = 10500;
+            public const int Unk_482_sortIndex = 10450;
             [SortOrder(Unk_482_sortIndex)]
             [DisplayName(Unk_482_displayName)]
             public virtual float Unk_482 {
@@ -10705,7 +10709,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_483_raw;
             public const string Unk_483_displayName = "Unk 483";
-            public const int Unk_483_sortIndex = 10550;
+            public const int Unk_483_sortIndex = 10500;
             [SortOrder(Unk_483_sortIndex)]
             [DisplayName(Unk_483_displayName)]
             public virtual float Unk_483 {
@@ -10723,7 +10727,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_484_raw;
             public const string Unk_484_displayName = "Unk 484";
-            public const int Unk_484_sortIndex = 10600;
+            public const int Unk_484_sortIndex = 10550;
             [SortOrder(Unk_484_sortIndex)]
             [DisplayName(Unk_484_displayName)]
             public virtual float Unk_484 {
@@ -10741,7 +10745,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_485_raw;
             public const string Unk_485_displayName = "Unk 485";
-            public const int Unk_485_sortIndex = 10650;
+            public const int Unk_485_sortIndex = 10600;
             [SortOrder(Unk_485_sortIndex)]
             [DisplayName(Unk_485_displayName)]
             public virtual float Unk_485 {
@@ -10759,7 +10763,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_486_raw;
             public const string Unk_486_displayName = "Unk 486";
-            public const int Unk_486_sortIndex = 10700;
+            public const int Unk_486_sortIndex = 10650;
             [SortOrder(Unk_486_sortIndex)]
             [DisplayName(Unk_486_displayName)]
             public virtual float Unk_486 {
@@ -10777,7 +10781,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_487_raw;
             public const string Unk_487_displayName = "Unk 487";
-            public const int Unk_487_sortIndex = 10750;
+            public const int Unk_487_sortIndex = 10700;
             [SortOrder(Unk_487_sortIndex)]
             [DisplayName(Unk_487_displayName)]
             public virtual float Unk_487 {
@@ -10795,7 +10799,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_488_raw;
             public const string Unk_488_displayName = "Unk 488";
-            public const int Unk_488_sortIndex = 10800;
+            public const int Unk_488_sortIndex = 10750;
             [SortOrder(Unk_488_sortIndex)]
             [DisplayName(Unk_488_displayName)]
             public virtual float Unk_488 {
@@ -10813,7 +10817,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_489_raw;
             public const string Unk_489_displayName = "Unk 489";
-            public const int Unk_489_sortIndex = 10850;
+            public const int Unk_489_sortIndex = 10800;
             [SortOrder(Unk_489_sortIndex)]
             [DisplayName(Unk_489_displayName)]
             public virtual float Unk_489 {
@@ -10831,7 +10835,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_490_raw;
             public const string Unk_490_displayName = "Unk 490";
-            public const int Unk_490_sortIndex = 10900;
+            public const int Unk_490_sortIndex = 10850;
             [SortOrder(Unk_490_sortIndex)]
             [DisplayName(Unk_490_displayName)]
             public virtual float Unk_490 {
@@ -10849,7 +10853,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_491_raw;
             public const string Unk_491_displayName = "Unk 491";
-            public const int Unk_491_sortIndex = 10950;
+            public const int Unk_491_sortIndex = 10900;
             [SortOrder(Unk_491_sortIndex)]
             [DisplayName(Unk_491_displayName)]
             public virtual float Unk_491 {
@@ -10867,7 +10871,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_492_raw;
             public const string Unk_492_displayName = "Unk 492";
-            public const int Unk_492_sortIndex = 11000;
+            public const int Unk_492_sortIndex = 10950;
             [SortOrder(Unk_492_sortIndex)]
             [DisplayName(Unk_492_displayName)]
             public virtual float Unk_492 {
@@ -10883,12 +10887,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_492_offset { get; private set; }
 
-            protected int Unk_493_raw;
+            protected float Unk_493_raw;
             public const string Unk_493_displayName = "Unk 493";
-            public const int Unk_493_sortIndex = 11050;
+            public const int Unk_493_sortIndex = 11000;
             [SortOrder(Unk_493_sortIndex)]
             [DisplayName(Unk_493_displayName)]
-            public virtual int Unk_493 {
+            public virtual float Unk_493 {
                 get => Unk_493_raw;
                 set {
                     if (Unk_493_raw == value) return;
@@ -10900,6 +10904,24 @@ namespace MHW_Editor.Structs.Monsters {
 
             [DisplayName("Offset")]
             public long Unk_493_offset { get; private set; }
+
+            protected int Unk_494_raw;
+            public const string Unk_494_displayName = "Unk 494";
+            public const int Unk_494_sortIndex = 11050;
+            [SortOrder(Unk_494_sortIndex)]
+            [DisplayName(Unk_494_displayName)]
+            public virtual int Unk_494 {
+                get => Unk_494_raw;
+                set {
+                    if (Unk_494_raw == value) return;
+                    Unk_494_raw = value;
+                    ChangedItems.Add(nameof(Unk_494));
+                    OnPropertyChanged(nameof(Unk_494));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Unk_494_offset { get; private set; }
 
             public const int lastSortIndex = 11100;
 
@@ -10919,12 +10941,10 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Shell_Header_raw = reader.ReadUInt32();
                 data.Shell_offset = reader.BaseStream.Position;
                 data.Shell_raw = reader.ReadNullTermString();
-                data.Unk_275_offset = reader.BaseStream.Position;
-                data.Unk_275_raw = reader.ReadSingle();
                 data.Unk_276_offset = reader.BaseStream.Position;
-                data.Unk_276_raw = reader.ReadInt32();
+                data.Unk_276_raw = reader.ReadSingle();
                 data.Unk_277_offset = reader.BaseStream.Position;
-                data.Unk_277_raw = reader.ReadSingle();
+                data.Unk_277_raw = reader.ReadInt32();
                 data.Unk_278_offset = reader.BaseStream.Position;
                 data.Unk_278_raw = reader.ReadSingle();
                 data.Unk_279_offset = reader.BaseStream.Position;
@@ -11030,11 +11050,11 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_329_offset = reader.BaseStream.Position;
                 data.Unk_329_raw = reader.ReadSingle();
                 data.Unk_330_offset = reader.BaseStream.Position;
-                data.Unk_330_raw = reader.ReadUInt32();
+                data.Unk_330_raw = reader.ReadSingle();
                 data.Unk_331_offset = reader.BaseStream.Position;
                 data.Unk_331_raw = reader.ReadUInt32();
                 data.Unk_332_offset = reader.BaseStream.Position;
-                data.Unk_332_raw = reader.ReadSingle();
+                data.Unk_332_raw = reader.ReadUInt32();
                 data.Unk_333_offset = reader.BaseStream.Position;
                 data.Unk_333_raw = reader.ReadSingle();
                 data.Unk_334_offset = reader.BaseStream.Position;
@@ -11140,9 +11160,9 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_384_offset = reader.BaseStream.Position;
                 data.Unk_384_raw = reader.ReadSingle();
                 data.Unk_385_offset = reader.BaseStream.Position;
-                data.Unk_385_raw = reader.ReadUInt32();
+                data.Unk_385_raw = reader.ReadSingle();
                 data.Unk_386_offset = reader.BaseStream.Position;
-                data.Unk_386_raw = reader.ReadSingle();
+                data.Unk_386_raw = reader.ReadUInt32();
                 data.Unk_387_offset = reader.BaseStream.Position;
                 data.Unk_387_raw = reader.ReadSingle();
                 data.Unk_388_offset = reader.BaseStream.Position;
@@ -11248,9 +11268,9 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_438_offset = reader.BaseStream.Position;
                 data.Unk_438_raw = reader.ReadSingle();
                 data.Unk_439_offset = reader.BaseStream.Position;
-                data.Unk_439_raw = reader.ReadUInt32();
+                data.Unk_439_raw = reader.ReadSingle();
                 data.Unk_440_offset = reader.BaseStream.Position;
-                data.Unk_440_raw = reader.ReadSingle();
+                data.Unk_440_raw = reader.ReadUInt32();
                 data.Unk_441_offset = reader.BaseStream.Position;
                 data.Unk_441_raw = reader.ReadSingle();
                 data.Unk_442_offset = reader.BaseStream.Position;
@@ -11356,14 +11376,15 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_492_offset = reader.BaseStream.Position;
                 data.Unk_492_raw = reader.ReadSingle();
                 data.Unk_493_offset = reader.BaseStream.Position;
-                data.Unk_493_raw = reader.ReadInt32();
+                data.Unk_493_raw = reader.ReadSingle();
+                data.Unk_494_offset = reader.BaseStream.Position;
+                data.Unk_494_raw = reader.ReadInt32();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Shell_Header_raw);
                 writer.Write(Shell_raw.ToNullTermCharArray());
-                writer.Write(Unk_275_raw);
                 writer.Write(Unk_276_raw);
                 writer.Write(Unk_277_raw);
                 writer.Write(Unk_278_raw);
@@ -11582,13 +11603,13 @@ namespace MHW_Editor.Structs.Monsters {
                 writer.Write(Unk_491_raw);
                 writer.Write(Unk_492_raw);
                 writer.Write(Unk_493_raw);
+                writer.Write(Unk_494_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
                     new MultiStructItemCustomView(this, "Shell Header", "Shell_Header", "Shell_Header_offset"),
                     new MultiStructItemCustomView(this, "Shell", "Shell", "Shell_offset"),
-                    new MultiStructItemCustomView(this, "Unk 275", "Unk_275", "Unk_275_offset"),
                     new MultiStructItemCustomView(this, "Unk 276", "Unk_276", "Unk_276_offset"),
                     new MultiStructItemCustomView(this, "Unk 277", "Unk_277", "Unk_277_offset"),
                     new MultiStructItemCustomView(this, "Unk 278", "Unk_278", "Unk_278_offset"),
@@ -11807,6 +11828,7 @@ namespace MHW_Editor.Structs.Monsters {
                     new MultiStructItemCustomView(this, "Unk 491", "Unk_491", "Unk_491_offset"),
                     new MultiStructItemCustomView(this, "Unk 492", "Unk_492", "Unk_492_offset"),
                     new MultiStructItemCustomView(this, "Unk 493", "Unk_493", "Unk_493_offset"),
+                    new MultiStructItemCustomView(this, "Unk 494", "Unk_494", "Unk_494_offset"),
                 };
             }
         }
@@ -11833,23 +11855,23 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Header_offset { get; private set; }
 
-            protected float Unk_494_raw;
-            public const string Unk_494_displayName = "Unk 494";
-            public const int Unk_494_sortIndex = 100;
-            [SortOrder(Unk_494_sortIndex)]
-            [DisplayName(Unk_494_displayName)]
-            public virtual float Unk_494 {
-                get => Unk_494_raw;
+            protected float Unk_495_raw;
+            public const string Unk_495_displayName = "Unk 495";
+            public const int Unk_495_sortIndex = 100;
+            [SortOrder(Unk_495_sortIndex)]
+            [DisplayName(Unk_495_displayName)]
+            public virtual float Unk_495 {
+                get => Unk_495_raw;
                 set {
-                    if (Unk_494_raw == value) return;
-                    Unk_494_raw = value;
-                    ChangedItems.Add(nameof(Unk_494));
-                    OnPropertyChanged(nameof(Unk_494));
+                    if (Unk_495_raw == value) return;
+                    Unk_495_raw = value;
+                    ChangedItems.Add(nameof(Unk_495));
+                    OnPropertyChanged(nameof(Unk_495));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_494_offset { get; private set; }
+            public long Unk_495_offset { get; private set; }
 
             protected uint Unk_Arr_5_Count_raw;
             public const string Unk_Arr_5_Count_displayName = "Unk Arr 5 Count";
@@ -11885,8 +11907,8 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Index = i;
                 data.Header_offset = reader.BaseStream.Position;
                 data.Header_raw = reader.ReadUInt32();
-                data.Unk_494_offset = reader.BaseStream.Position;
-                data.Unk_494_raw = reader.ReadSingle();
+                data.Unk_495_offset = reader.BaseStream.Position;
+                data.Unk_495_raw = reader.ReadSingle();
                 data.Unk_Arr_5_Count_offset = reader.BaseStream.Position;
                 data.Unk_Arr_5_Count_raw = reader.ReadUInt32();
                 return data;
@@ -11894,14 +11916,14 @@ namespace MHW_Editor.Structs.Monsters {
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Header_raw);
-                writer.Write(Unk_494_raw);
+                writer.Write(Unk_495_raw);
                 writer.Write(Unk_Arr_5_Count_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
                     new MultiStructItemCustomView(this, "Header", "Header", "Header_offset"),
-                    new MultiStructItemCustomView(this, "Unk 494", "Unk_494", "Unk_494_offset"),
+                    new MultiStructItemCustomView(this, "Unk 495", "Unk_495", "Unk_495_offset"),
                     new MultiStructItemCustomView(this, "Unk Arr 5 Count", "Unk_Arr_5_Count", "Unk_Arr_5_Count_offset"),
                 };
             }
@@ -11994,30 +12016,12 @@ namespace MHW_Editor.Structs.Monsters {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Common Params (12)";
 
-            protected float Unk_495_raw;
-            public const string Unk_495_displayName = "Unk 495";
-            public const int Unk_495_sortIndex = 50;
-            [SortOrder(Unk_495_sortIndex)]
-            [DisplayName(Unk_495_displayName)]
-            public virtual float Unk_495 {
-                get => Unk_495_raw;
-                set {
-                    if (Unk_495_raw == value) return;
-                    Unk_495_raw = value;
-                    ChangedItems.Add(nameof(Unk_495));
-                    OnPropertyChanged(nameof(Unk_495));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_495_offset { get; private set; }
-
-            protected uint Unk_496_raw;
+            protected float Unk_496_raw;
             public const string Unk_496_displayName = "Unk 496";
-            public const int Unk_496_sortIndex = 100;
+            public const int Unk_496_sortIndex = 50;
             [SortOrder(Unk_496_sortIndex)]
             [DisplayName(Unk_496_displayName)]
-            public virtual uint Unk_496 {
+            public virtual float Unk_496 {
                 get => Unk_496_raw;
                 set {
                     if (Unk_496_raw == value) return;
@@ -12029,6 +12033,24 @@ namespace MHW_Editor.Structs.Monsters {
 
             [DisplayName("Offset")]
             public long Unk_496_offset { get; private set; }
+
+            protected uint Unk_497_raw;
+            public const string Unk_497_displayName = "Unk 497";
+            public const int Unk_497_sortIndex = 100;
+            [SortOrder(Unk_497_sortIndex)]
+            [DisplayName(Unk_497_displayName)]
+            public virtual uint Unk_497 {
+                get => Unk_497_raw;
+                set {
+                    if (Unk_497_raw == value) return;
+                    Unk_497_raw = value;
+                    ChangedItems.Add(nameof(Unk_497));
+                    OnPropertyChanged(nameof(Unk_497));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Unk_497_offset { get; private set; }
 
             protected uint Unk_Arr_6_Count_raw;
             public const string Unk_Arr_6_Count_displayName = "Unk Arr 6 Count";
@@ -12062,25 +12084,25 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Common_Params_12_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Common_Params_12_();
                 data.Index = i;
-                data.Unk_495_offset = reader.BaseStream.Position;
-                data.Unk_495_raw = reader.ReadSingle();
                 data.Unk_496_offset = reader.BaseStream.Position;
-                data.Unk_496_raw = reader.ReadUInt32();
+                data.Unk_496_raw = reader.ReadSingle();
+                data.Unk_497_offset = reader.BaseStream.Position;
+                data.Unk_497_raw = reader.ReadUInt32();
                 data.Unk_Arr_6_Count_offset = reader.BaseStream.Position;
                 data.Unk_Arr_6_Count_raw = reader.ReadUInt32();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_495_raw);
                 writer.Write(Unk_496_raw);
+                writer.Write(Unk_497_raw);
                 writer.Write(Unk_Arr_6_Count_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 495", "Unk_495", "Unk_495_offset"),
                     new MultiStructItemCustomView(this, "Unk 496", "Unk_496", "Unk_496_offset"),
+                    new MultiStructItemCustomView(this, "Unk 497", "Unk_497", "Unk_497_offset"),
                     new MultiStructItemCustomView(this, "Unk Arr 6 Count", "Unk_Arr_6_Count", "Unk_Arr_6_Count_offset"),
                 };
             }
@@ -12156,27 +12178,9 @@ namespace MHW_Editor.Structs.Monsters {
             public const ulong FixedSizeCount = 1;
             public const string GridName = "Monster Common Params (13)";
 
-            protected uint Unk_497_raw;
-            public const string Unk_497_displayName = "Unk 497";
-            public const int Unk_497_sortIndex = 50;
-            [SortOrder(Unk_497_sortIndex)]
-            [DisplayName(Unk_497_displayName)]
-            public virtual uint Unk_497 {
-                get => Unk_497_raw;
-                set {
-                    if (Unk_497_raw == value) return;
-                    Unk_497_raw = value;
-                    ChangedItems.Add(nameof(Unk_497));
-                    OnPropertyChanged(nameof(Unk_497));
-                }
-            }
-
-            [DisplayName("Offset")]
-            public long Unk_497_offset { get; private set; }
-
             protected uint Unk_498_raw;
             public const string Unk_498_displayName = "Unk 498";
-            public const int Unk_498_sortIndex = 100;
+            public const int Unk_498_sortIndex = 50;
             [SortOrder(Unk_498_sortIndex)]
             [DisplayName(Unk_498_displayName)]
             public virtual uint Unk_498 {
@@ -12192,12 +12196,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_498_offset { get; private set; }
 
-            protected float Unk_499_raw;
+            protected uint Unk_499_raw;
             public const string Unk_499_displayName = "Unk 499";
-            public const int Unk_499_sortIndex = 150;
+            public const int Unk_499_sortIndex = 100;
             [SortOrder(Unk_499_sortIndex)]
             [DisplayName(Unk_499_displayName)]
-            public virtual float Unk_499 {
+            public virtual uint Unk_499 {
                 get => Unk_499_raw;
                 set {
                     if (Unk_499_raw == value) return;
@@ -12210,12 +12214,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_499_offset { get; private set; }
 
-            protected uint Unk_500_raw;
+            protected float Unk_500_raw;
             public const string Unk_500_displayName = "Unk 500";
-            public const int Unk_500_sortIndex = 200;
+            public const int Unk_500_sortIndex = 150;
             [SortOrder(Unk_500_sortIndex)]
             [DisplayName(Unk_500_displayName)]
-            public virtual uint Unk_500 {
+            public virtual float Unk_500 {
                 get => Unk_500_raw;
                 set {
                     if (Unk_500_raw == value) return;
@@ -12230,7 +12234,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_501_raw;
             public const string Unk_501_displayName = "Unk 501";
-            public const int Unk_501_sortIndex = 250;
+            public const int Unk_501_sortIndex = 200;
             [SortOrder(Unk_501_sortIndex)]
             [DisplayName(Unk_501_displayName)]
             public virtual uint Unk_501 {
@@ -12246,12 +12250,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_501_offset { get; private set; }
 
-            protected int Unk_502_raw;
+            protected uint Unk_502_raw;
             public const string Unk_502_displayName = "Unk 502";
-            public const int Unk_502_sortIndex = 300;
+            public const int Unk_502_sortIndex = 250;
             [SortOrder(Unk_502_sortIndex)]
             [DisplayName(Unk_502_displayName)]
-            public virtual int Unk_502 {
+            public virtual uint Unk_502 {
                 get => Unk_502_raw;
                 set {
                     if (Unk_502_raw == value) return;
@@ -12264,12 +12268,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_502_offset { get; private set; }
 
-            protected uint Unk_503_raw;
+            protected int Unk_503_raw;
             public const string Unk_503_displayName = "Unk 503";
-            public const int Unk_503_sortIndex = 350;
+            public const int Unk_503_sortIndex = 300;
             [SortOrder(Unk_503_sortIndex)]
             [DisplayName(Unk_503_displayName)]
-            public virtual uint Unk_503 {
+            public virtual int Unk_503 {
                 get => Unk_503_raw;
                 set {
                     if (Unk_503_raw == value) return;
@@ -12284,7 +12288,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_504_raw;
             public const string Unk_504_displayName = "Unk 504";
-            public const int Unk_504_sortIndex = 400;
+            public const int Unk_504_sortIndex = 350;
             [SortOrder(Unk_504_sortIndex)]
             [DisplayName(Unk_504_displayName)]
             public virtual uint Unk_504 {
@@ -12302,7 +12306,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_505_raw;
             public const string Unk_505_displayName = "Unk 505";
-            public const int Unk_505_sortIndex = 450;
+            public const int Unk_505_sortIndex = 400;
             [SortOrder(Unk_505_sortIndex)]
             [DisplayName(Unk_505_displayName)]
             public virtual uint Unk_505 {
@@ -12320,7 +12324,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_506_raw;
             public const string Unk_506_displayName = "Unk 506";
-            public const int Unk_506_sortIndex = 500;
+            public const int Unk_506_sortIndex = 450;
             [SortOrder(Unk_506_sortIndex)]
             [DisplayName(Unk_506_displayName)]
             public virtual uint Unk_506 {
@@ -12338,7 +12342,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_507_raw;
             public const string Unk_507_displayName = "Unk 507";
-            public const int Unk_507_sortIndex = 550;
+            public const int Unk_507_sortIndex = 500;
             [SortOrder(Unk_507_sortIndex)]
             [DisplayName(Unk_507_displayName)]
             public virtual uint Unk_507 {
@@ -12356,7 +12360,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_508_raw;
             public const string Unk_508_displayName = "Unk 508";
-            public const int Unk_508_sortIndex = 600;
+            public const int Unk_508_sortIndex = 550;
             [SortOrder(Unk_508_sortIndex)]
             [DisplayName(Unk_508_displayName)]
             public virtual uint Unk_508 {
@@ -12372,12 +12376,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_508_offset { get; private set; }
 
-            protected float Unk_509_raw;
+            protected uint Unk_509_raw;
             public const string Unk_509_displayName = "Unk 509";
-            public const int Unk_509_sortIndex = 650;
+            public const int Unk_509_sortIndex = 600;
             [SortOrder(Unk_509_sortIndex)]
             [DisplayName(Unk_509_displayName)]
-            public virtual float Unk_509 {
+            public virtual uint Unk_509 {
                 get => Unk_509_raw;
                 set {
                     if (Unk_509_raw == value) return;
@@ -12390,12 +12394,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_509_offset { get; private set; }
 
-            protected uint Unk_510_raw;
+            protected float Unk_510_raw;
             public const string Unk_510_displayName = "Unk 510";
-            public const int Unk_510_sortIndex = 700;
+            public const int Unk_510_sortIndex = 650;
             [SortOrder(Unk_510_sortIndex)]
             [DisplayName(Unk_510_displayName)]
-            public virtual uint Unk_510 {
+            public virtual float Unk_510 {
                 get => Unk_510_raw;
                 set {
                     if (Unk_510_raw == value) return;
@@ -12410,7 +12414,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_511_raw;
             public const string Unk_511_displayName = "Unk 511";
-            public const int Unk_511_sortIndex = 750;
+            public const int Unk_511_sortIndex = 700;
             [SortOrder(Unk_511_sortIndex)]
             [DisplayName(Unk_511_displayName)]
             public virtual uint Unk_511 {
@@ -12426,12 +12430,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_511_offset { get; private set; }
 
-            protected float Unk_512_raw;
+            protected uint Unk_512_raw;
             public const string Unk_512_displayName = "Unk 512";
-            public const int Unk_512_sortIndex = 800;
+            public const int Unk_512_sortIndex = 750;
             [SortOrder(Unk_512_sortIndex)]
             [DisplayName(Unk_512_displayName)]
-            public virtual float Unk_512 {
+            public virtual uint Unk_512 {
                 get => Unk_512_raw;
                 set {
                     if (Unk_512_raw == value) return;
@@ -12444,12 +12448,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_512_offset { get; private set; }
 
-            protected uint Unk_513_raw;
+            protected float Unk_513_raw;
             public const string Unk_513_displayName = "Unk 513";
-            public const int Unk_513_sortIndex = 850;
+            public const int Unk_513_sortIndex = 800;
             [SortOrder(Unk_513_sortIndex)]
             [DisplayName(Unk_513_displayName)]
-            public virtual uint Unk_513 {
+            public virtual float Unk_513 {
                 get => Unk_513_raw;
                 set {
                     if (Unk_513_raw == value) return;
@@ -12464,7 +12468,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_514_raw;
             public const string Unk_514_displayName = "Unk 514";
-            public const int Unk_514_sortIndex = 900;
+            public const int Unk_514_sortIndex = 850;
             [SortOrder(Unk_514_sortIndex)]
             [DisplayName(Unk_514_displayName)]
             public virtual uint Unk_514 {
@@ -12482,7 +12486,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_515_raw;
             public const string Unk_515_displayName = "Unk 515";
-            public const int Unk_515_sortIndex = 950;
+            public const int Unk_515_sortIndex = 900;
             [SortOrder(Unk_515_sortIndex)]
             [DisplayName(Unk_515_displayName)]
             public virtual uint Unk_515 {
@@ -12498,12 +12502,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_515_offset { get; private set; }
 
-            protected int Unk_516_raw;
+            protected uint Unk_516_raw;
             public const string Unk_516_displayName = "Unk 516";
-            public const int Unk_516_sortIndex = 1000;
+            public const int Unk_516_sortIndex = 950;
             [SortOrder(Unk_516_sortIndex)]
             [DisplayName(Unk_516_displayName)]
-            public virtual int Unk_516 {
+            public virtual uint Unk_516 {
                 get => Unk_516_raw;
                 set {
                     if (Unk_516_raw == value) return;
@@ -12516,12 +12520,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_516_offset { get; private set; }
 
-            protected uint Unk_517_raw;
+            protected int Unk_517_raw;
             public const string Unk_517_displayName = "Unk 517";
-            public const int Unk_517_sortIndex = 1050;
+            public const int Unk_517_sortIndex = 1000;
             [SortOrder(Unk_517_sortIndex)]
             [DisplayName(Unk_517_displayName)]
-            public virtual uint Unk_517 {
+            public virtual int Unk_517 {
                 get => Unk_517_raw;
                 set {
                     if (Unk_517_raw == value) return;
@@ -12536,7 +12540,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_518_raw;
             public const string Unk_518_displayName = "Unk 518";
-            public const int Unk_518_sortIndex = 1100;
+            public const int Unk_518_sortIndex = 1050;
             [SortOrder(Unk_518_sortIndex)]
             [DisplayName(Unk_518_displayName)]
             public virtual uint Unk_518 {
@@ -12554,7 +12558,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_519_raw;
             public const string Unk_519_displayName = "Unk 519";
-            public const int Unk_519_sortIndex = 1150;
+            public const int Unk_519_sortIndex = 1100;
             [SortOrder(Unk_519_sortIndex)]
             [DisplayName(Unk_519_displayName)]
             public virtual uint Unk_519 {
@@ -12572,7 +12576,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_520_raw;
             public const string Unk_520_displayName = "Unk 520";
-            public const int Unk_520_sortIndex = 1200;
+            public const int Unk_520_sortIndex = 1150;
             [SortOrder(Unk_520_sortIndex)]
             [DisplayName(Unk_520_displayName)]
             public virtual uint Unk_520 {
@@ -12590,7 +12594,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_521_raw;
             public const string Unk_521_displayName = "Unk 521";
-            public const int Unk_521_sortIndex = 1250;
+            public const int Unk_521_sortIndex = 1200;
             [SortOrder(Unk_521_sortIndex)]
             [DisplayName(Unk_521_displayName)]
             public virtual uint Unk_521 {
@@ -12608,7 +12612,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_522_raw;
             public const string Unk_522_displayName = "Unk 522";
-            public const int Unk_522_sortIndex = 1300;
+            public const int Unk_522_sortIndex = 1250;
             [SortOrder(Unk_522_sortIndex)]
             [DisplayName(Unk_522_displayName)]
             public virtual uint Unk_522 {
@@ -12624,12 +12628,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_522_offset { get; private set; }
 
-            protected float Unk_523_raw;
+            protected uint Unk_523_raw;
             public const string Unk_523_displayName = "Unk 523";
-            public const int Unk_523_sortIndex = 1350;
+            public const int Unk_523_sortIndex = 1300;
             [SortOrder(Unk_523_sortIndex)]
             [DisplayName(Unk_523_displayName)]
-            public virtual float Unk_523 {
+            public virtual uint Unk_523 {
                 get => Unk_523_raw;
                 set {
                     if (Unk_523_raw == value) return;
@@ -12642,12 +12646,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_523_offset { get; private set; }
 
-            protected uint Unk_524_raw;
+            protected float Unk_524_raw;
             public const string Unk_524_displayName = "Unk 524";
-            public const int Unk_524_sortIndex = 1400;
+            public const int Unk_524_sortIndex = 1350;
             [SortOrder(Unk_524_sortIndex)]
             [DisplayName(Unk_524_displayName)]
-            public virtual uint Unk_524 {
+            public virtual float Unk_524 {
                 get => Unk_524_raw;
                 set {
                     if (Unk_524_raw == value) return;
@@ -12662,7 +12666,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected uint Unk_525_raw;
             public const string Unk_525_displayName = "Unk 525";
-            public const int Unk_525_sortIndex = 1450;
+            public const int Unk_525_sortIndex = 1400;
             [SortOrder(Unk_525_sortIndex)]
             [DisplayName(Unk_525_displayName)]
             public virtual uint Unk_525 {
@@ -12678,12 +12682,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_525_offset { get; private set; }
 
-            protected float Unk_526_raw;
+            protected uint Unk_526_raw;
             public const string Unk_526_displayName = "Unk 526";
-            public const int Unk_526_sortIndex = 1500;
+            public const int Unk_526_sortIndex = 1450;
             [SortOrder(Unk_526_sortIndex)]
             [DisplayName(Unk_526_displayName)]
-            public virtual float Unk_526 {
+            public virtual uint Unk_526 {
                 get => Unk_526_raw;
                 set {
                     if (Unk_526_raw == value) return;
@@ -12696,12 +12700,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_526_offset { get; private set; }
 
-            protected uint Unk_527_raw;
+            protected float Unk_527_raw;
             public const string Unk_527_displayName = "Unk 527";
-            public const int Unk_527_sortIndex = 1550;
+            public const int Unk_527_sortIndex = 1500;
             [SortOrder(Unk_527_sortIndex)]
             [DisplayName(Unk_527_displayName)]
-            public virtual uint Unk_527 {
+            public virtual float Unk_527 {
                 get => Unk_527_raw;
                 set {
                     if (Unk_527_raw == value) return;
@@ -12714,12 +12718,12 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_527_offset { get; private set; }
 
-            protected float Unk_528_raw;
+            protected uint Unk_528_raw;
             public const string Unk_528_displayName = "Unk 528";
-            public const int Unk_528_sortIndex = 1600;
+            public const int Unk_528_sortIndex = 1550;
             [SortOrder(Unk_528_sortIndex)]
             [DisplayName(Unk_528_displayName)]
-            public virtual float Unk_528 {
+            public virtual uint Unk_528 {
                 get => Unk_528_raw;
                 set {
                     if (Unk_528_raw == value) return;
@@ -12734,7 +12738,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_529_raw;
             public const string Unk_529_displayName = "Unk 529";
-            public const int Unk_529_sortIndex = 1650;
+            public const int Unk_529_sortIndex = 1600;
             [SortOrder(Unk_529_sortIndex)]
             [DisplayName(Unk_529_displayName)]
             public virtual float Unk_529 {
@@ -12752,7 +12756,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_530_raw;
             public const string Unk_530_displayName = "Unk 530";
-            public const int Unk_530_sortIndex = 1700;
+            public const int Unk_530_sortIndex = 1650;
             [SortOrder(Unk_530_sortIndex)]
             [DisplayName(Unk_530_displayName)]
             public virtual float Unk_530 {
@@ -12770,7 +12774,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_531_raw;
             public const string Unk_531_displayName = "Unk 531";
-            public const int Unk_531_sortIndex = 1750;
+            public const int Unk_531_sortIndex = 1700;
             [SortOrder(Unk_531_sortIndex)]
             [DisplayName(Unk_531_displayName)]
             public virtual float Unk_531 {
@@ -12788,7 +12792,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             protected float Unk_532_raw;
             public const string Unk_532_displayName = "Unk 532";
-            public const int Unk_532_sortIndex = 1800;
+            public const int Unk_532_sortIndex = 1750;
             [SortOrder(Unk_532_sortIndex)]
             [DisplayName(Unk_532_displayName)]
             public virtual float Unk_532 {
@@ -12804,6 +12808,24 @@ namespace MHW_Editor.Structs.Monsters {
             [DisplayName("Offset")]
             public long Unk_532_offset { get; private set; }
 
+            protected float Unk_533_raw;
+            public const string Unk_533_displayName = "Unk 533";
+            public const int Unk_533_sortIndex = 1800;
+            [SortOrder(Unk_533_sortIndex)]
+            [DisplayName(Unk_533_displayName)]
+            public virtual float Unk_533 {
+                get => Unk_533_raw;
+                set {
+                    if (Unk_533_raw == value) return;
+                    Unk_533_raw = value;
+                    ChangedItems.Add(nameof(Unk_533));
+                    OnPropertyChanged(nameof(Unk_533));
+                }
+            }
+
+            [DisplayName("Offset")]
+            public long Unk_533_offset { get; private set; }
+
             public const int lastSortIndex = 1850;
 
             public static ObservableMhwStructCollection<Monster_Common_Params_13_> LoadData(BinaryReader reader) {
@@ -12818,20 +12840,18 @@ namespace MHW_Editor.Structs.Monsters {
             public static Monster_Common_Params_13_ LoadData(BinaryReader reader, ulong i) {
                 var data = new Monster_Common_Params_13_();
                 data.Index = i;
-                data.Unk_497_offset = reader.BaseStream.Position;
-                data.Unk_497_raw = reader.ReadUInt32();
                 data.Unk_498_offset = reader.BaseStream.Position;
                 data.Unk_498_raw = reader.ReadUInt32();
                 data.Unk_499_offset = reader.BaseStream.Position;
-                data.Unk_499_raw = reader.ReadSingle();
+                data.Unk_499_raw = reader.ReadUInt32();
                 data.Unk_500_offset = reader.BaseStream.Position;
-                data.Unk_500_raw = reader.ReadUInt32();
+                data.Unk_500_raw = reader.ReadSingle();
                 data.Unk_501_offset = reader.BaseStream.Position;
                 data.Unk_501_raw = reader.ReadUInt32();
                 data.Unk_502_offset = reader.BaseStream.Position;
-                data.Unk_502_raw = reader.ReadInt32();
+                data.Unk_502_raw = reader.ReadUInt32();
                 data.Unk_503_offset = reader.BaseStream.Position;
-                data.Unk_503_raw = reader.ReadUInt32();
+                data.Unk_503_raw = reader.ReadInt32();
                 data.Unk_504_offset = reader.BaseStream.Position;
                 data.Unk_504_raw = reader.ReadUInt32();
                 data.Unk_505_offset = reader.BaseStream.Position;
@@ -12843,23 +12863,23 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_508_offset = reader.BaseStream.Position;
                 data.Unk_508_raw = reader.ReadUInt32();
                 data.Unk_509_offset = reader.BaseStream.Position;
-                data.Unk_509_raw = reader.ReadSingle();
+                data.Unk_509_raw = reader.ReadUInt32();
                 data.Unk_510_offset = reader.BaseStream.Position;
-                data.Unk_510_raw = reader.ReadUInt32();
+                data.Unk_510_raw = reader.ReadSingle();
                 data.Unk_511_offset = reader.BaseStream.Position;
                 data.Unk_511_raw = reader.ReadUInt32();
                 data.Unk_512_offset = reader.BaseStream.Position;
-                data.Unk_512_raw = reader.ReadSingle();
+                data.Unk_512_raw = reader.ReadUInt32();
                 data.Unk_513_offset = reader.BaseStream.Position;
-                data.Unk_513_raw = reader.ReadUInt32();
+                data.Unk_513_raw = reader.ReadSingle();
                 data.Unk_514_offset = reader.BaseStream.Position;
                 data.Unk_514_raw = reader.ReadUInt32();
                 data.Unk_515_offset = reader.BaseStream.Position;
                 data.Unk_515_raw = reader.ReadUInt32();
                 data.Unk_516_offset = reader.BaseStream.Position;
-                data.Unk_516_raw = reader.ReadInt32();
+                data.Unk_516_raw = reader.ReadUInt32();
                 data.Unk_517_offset = reader.BaseStream.Position;
-                data.Unk_517_raw = reader.ReadUInt32();
+                data.Unk_517_raw = reader.ReadInt32();
                 data.Unk_518_offset = reader.BaseStream.Position;
                 data.Unk_518_raw = reader.ReadUInt32();
                 data.Unk_519_offset = reader.BaseStream.Position;
@@ -12871,17 +12891,17 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_522_offset = reader.BaseStream.Position;
                 data.Unk_522_raw = reader.ReadUInt32();
                 data.Unk_523_offset = reader.BaseStream.Position;
-                data.Unk_523_raw = reader.ReadSingle();
+                data.Unk_523_raw = reader.ReadUInt32();
                 data.Unk_524_offset = reader.BaseStream.Position;
-                data.Unk_524_raw = reader.ReadUInt32();
+                data.Unk_524_raw = reader.ReadSingle();
                 data.Unk_525_offset = reader.BaseStream.Position;
                 data.Unk_525_raw = reader.ReadUInt32();
                 data.Unk_526_offset = reader.BaseStream.Position;
-                data.Unk_526_raw = reader.ReadSingle();
+                data.Unk_526_raw = reader.ReadUInt32();
                 data.Unk_527_offset = reader.BaseStream.Position;
-                data.Unk_527_raw = reader.ReadUInt32();
+                data.Unk_527_raw = reader.ReadSingle();
                 data.Unk_528_offset = reader.BaseStream.Position;
-                data.Unk_528_raw = reader.ReadSingle();
+                data.Unk_528_raw = reader.ReadUInt32();
                 data.Unk_529_offset = reader.BaseStream.Position;
                 data.Unk_529_raw = reader.ReadSingle();
                 data.Unk_530_offset = reader.BaseStream.Position;
@@ -12890,11 +12910,12 @@ namespace MHW_Editor.Structs.Monsters {
                 data.Unk_531_raw = reader.ReadSingle();
                 data.Unk_532_offset = reader.BaseStream.Position;
                 data.Unk_532_raw = reader.ReadSingle();
+                data.Unk_533_offset = reader.BaseStream.Position;
+                data.Unk_533_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_497_raw);
                 writer.Write(Unk_498_raw);
                 writer.Write(Unk_499_raw);
                 writer.Write(Unk_500_raw);
@@ -12930,11 +12951,11 @@ namespace MHW_Editor.Structs.Monsters {
                 writer.Write(Unk_530_raw);
                 writer.Write(Unk_531_raw);
                 writer.Write(Unk_532_raw);
+                writer.Write(Unk_533_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 497", "Unk_497", "Unk_497_offset"),
                     new MultiStructItemCustomView(this, "Unk 498", "Unk_498", "Unk_498_offset"),
                     new MultiStructItemCustomView(this, "Unk 499", "Unk_499", "Unk_499_offset"),
                     new MultiStructItemCustomView(this, "Unk 500", "Unk_500", "Unk_500_offset"),
@@ -12970,6 +12991,7 @@ namespace MHW_Editor.Structs.Monsters {
                     new MultiStructItemCustomView(this, "Unk 530", "Unk_530", "Unk_530_offset"),
                     new MultiStructItemCustomView(this, "Unk 531", "Unk_531", "Unk_531_offset"),
                     new MultiStructItemCustomView(this, "Unk 532", "Unk_532", "Unk_532_offset"),
+                    new MultiStructItemCustomView(this, "Unk 533", "Unk_533", "Unk_533_offset"),
                 };
             }
         }

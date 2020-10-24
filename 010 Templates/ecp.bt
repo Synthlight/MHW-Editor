@@ -165,10 +165,10 @@ float Unk_114<name="Unk 114 (float)">;
 float Unk_115<name="Unk 115 (float)">;
 float Unk_116<name="Unk 116 (float)">;
 float Unk_117<name="Unk 117 (float)">;
-uint Unk_118<name="Unk 118 (uint)">;
+float Unk_118_Added_in_chunkG6_<name="Unk 118 (Added in chunkG6) (float)">;
 uint Unk_119<name="Unk 119 (uint)">;
 uint Unk_120<name="Unk 120 (uint)">;
-float Unk_121<name="Unk 121 (float)">;
+uint Unk_121<name="Unk 121 (uint)">;
 float Unk_122<name="Unk 122 (float)">;
 float Unk_123<name="Unk 123 (float)">;
 float Unk_124<name="Unk 124 (float)">;
@@ -179,13 +179,13 @@ float Unk_128<name="Unk 128 (float)">;
 float Unk_129<name="Unk 129 (float)">;
 float Unk_130<name="Unk 130 (float)">;
 float Unk_131<name="Unk 131 (float)">;
-uint Unk_132<name="Unk 132 (uint)">;
+float Unk_132<name="Unk 132 (float)">;
 uint Unk_133<name="Unk 133 (uint)">;
-float Unk_134<name="Unk 134 (float)">;
-uint Unk_135<name="Unk 135 (uint)">;
-float Unk_136<name="Unk 136 (float)">;
-uint Unk_137<name="Unk 137 (uint)">;
-float Unk_138<name="Unk 138 (float)">;
+uint Unk_134<name="Unk 134 (uint)">;
+float Unk_135<name="Unk 135 (float)">;
+uint Unk_136<name="Unk 136 (uint)">;
+float Unk_137<name="Unk 137 (float)">;
+uint Unk_138<name="Unk 138 (uint)">;
 float Unk_139<name="Unk 139 (float)">;
 float Unk_140<name="Unk 140 (float)">;
 float Unk_141<name="Unk 141 (float)">;
@@ -202,18 +202,18 @@ float Unk_151<name="Unk 151 (float)">;
 float Unk_152<name="Unk 152 (float)">;
 float Unk_153<name="Unk 153 (float)">;
 float Unk_154<name="Unk 154 (float)">;
-int Unk_155<name="Unk 155 (int)">;
-float Unk_156<name="Unk 156 (float)">;
+float Unk_155<name="Unk 155 (float)">;
+int Unk_156<name="Unk 156 (int)">;
 float Unk_157<name="Unk 157 (float)">;
+float Unk_158<name="Unk 158 (float)">;
 
 uint Header<name="Header (uint)">;
-float Unk_158<name="Unk 158 (float)">;
-ubyte Unk_159<name="Unk 159 (ubyte)">;
-float Unk_160<name="Unk 160 (float)">;
+float Unk_159<name="Unk 159 (float)">;
+ubyte Unk_160<name="Unk 160 (ubyte)">;
 float Unk_161<name="Unk 161 (float)">;
 float Unk_162<name="Unk 162 (float)">;
-uint Unk_163<name="Unk 163 (uint)">;
-float Unk_164<name="Unk 164 (float)">;
+float Unk_163<name="Unk 163 (float)">;
+uint Unk_164<name="Unk 164 (uint)">;
 float Unk_165<name="Unk 165 (float)">;
 float Unk_166<name="Unk 166 (float)">;
 float Unk_167<name="Unk 167 (float)">;
@@ -229,6 +229,7 @@ float Unk_176<name="Unk 176 (float)">;
 float Unk_177<name="Unk 177 (float)">;
 float Unk_178<name="Unk 178 (float)">;
 float Unk_179<name="Unk 179 (float)">;
+float Unk_180<name="Unk 180 (float)">;
 
 // Unk Arr 2
 typedef struct {
@@ -238,15 +239,14 @@ typedef struct {
 
 Unk_Arr_2 Unk_Arr_2_[44]<optimize=false, name="Unk Arr 2">;
 
-uint Unk_180<name="Unk 180 (uint)">;
-float Unk_181<name="Unk 181 (float)">;
+uint Unk_181<name="Unk 181 (uint)">;
 float Unk_182<name="Unk 182 (float)">;
-int Unk_183<name="Unk 183 (int)">;
+float Unk_183<name="Unk 183 (float)">;
 int Unk_184<name="Unk 184 (int)">;
-float Unk_185<name="Unk 185 (float)">;
+int Unk_185<name="Unk 185 (int)">;
 float Unk_186<name="Unk 186 (float)">;
-uint Unk_187<name="Unk 187 (uint)">;
-float Unk_188<name="Unk 188 (float)">;
+float Unk_187<name="Unk 187 (float)">;
+uint Unk_188<name="Unk 188 (uint)">;
 float Unk_189<name="Unk 189 (float)">;
 float Unk_190<name="Unk 190 (float)">;
 float Unk_191<name="Unk 191 (float)">;
@@ -256,6 +256,7 @@ float Unk_194<name="Unk 194 (float)">;
 float Unk_195<name="Unk 195 (float)">;
 float Unk_196<name="Unk 196 (float)">;
 float Unk_197<name="Unk 197 (float)">;
+float Unk_198<name="Unk 198 (float)">;
 
 // Unk Arr 3
 typedef struct {
@@ -265,7 +266,7 @@ typedef struct {
 
 Unk_Arr_3 Unk_Arr_3_[8]<optimize=false, name="Unk Arr 3">;
 
-uint Unk_198<name="Unk 198 (uint)">;
+uint Unk_199<name="Unk 199 (uint)">;
 uint Unk_Arr_4_Count<name="Unk Arr 4 Count (uint)">;
 
 // Unk Arr 4
@@ -276,7 +277,6 @@ typedef struct {
 
 Unk_Arr_4 Unk_Arr_4_[Unk_Arr_4_Count]<optimize=false, name="Unk Arr 4">;
 
-uint Unk_199<name="Unk 199 (uint)">;
 uint Unk_200<name="Unk 200 (uint)">;
 uint Unk_201<name="Unk 201 (uint)">;
 uint Unk_202<name="Unk 202 (uint)">;
@@ -284,9 +284,9 @@ uint Unk_203<name="Unk 203 (uint)">;
 uint Unk_204<name="Unk 204 (uint)">;
 uint Unk_205<name="Unk 205 (uint)">;
 uint Unk_206<name="Unk 206 (uint)">;
+uint Unk_207<name="Unk 207 (uint)">;
 
 uint Header<name="Header (uint)">;
-uint Unk_207<name="Unk 207 (uint)">;
 uint Unk_208<name="Unk 208 (uint)">;
 uint Unk_209<name="Unk 209 (uint)">;
 uint Unk_210<name="Unk 210 (uint)">;
@@ -351,15 +351,15 @@ uint Unk_268<name="Unk 268 (uint)">;
 uint Unk_269<name="Unk 269 (uint)">;
 uint Unk_270<name="Unk 270 (uint)">;
 uint Unk_271<name="Unk 271 (uint)">;
-float Unk_272<name="Unk 272 (float)">;
-uint Unk_273<name="Unk 273 (uint)">;
+uint Unk_272<name="Unk 272 (uint)">;
+float Unk_273<name="Unk 273 (float)">;
 uint Unk_274<name="Unk 274 (uint)">;
+uint Unk_275<name="Unk 275 (uint)">;
 
 uint Shell_Header<name="Shell Header (uint)">;
 string Shell<name="Shell (string)">;
-float Unk_275<name="Unk 275 (float)">;
-int Unk_276<name="Unk 276 (int)">;
-float Unk_277<name="Unk 277 (float)">;
+float Unk_276<name="Unk 276 (float)">;
+int Unk_277<name="Unk 277 (int)">;
 float Unk_278<name="Unk 278 (float)">;
 float Unk_279<name="Unk 279 (float)">;
 float Unk_280<name="Unk 280 (float)">;
@@ -412,9 +412,9 @@ float Unk_326<name="Unk 326 (float)">;
 float Unk_327<name="Unk 327 (float)">;
 float Unk_328<name="Unk 328 (float)">;
 float Unk_329<name="Unk 329 (float)">;
-uint Unk_330<name="Unk 330 (uint)">;
+float Unk_330<name="Unk 330 (float)">;
 uint Unk_331<name="Unk 331 (uint)">;
-float Unk_332<name="Unk 332 (float)">;
+uint Unk_332<name="Unk 332 (uint)">;
 float Unk_333<name="Unk 333 (float)">;
 float Unk_334<name="Unk 334 (float)">;
 float Unk_335<name="Unk 335 (float)">;
@@ -467,8 +467,8 @@ float Unk_381<name="Unk 381 (float)">;
 float Unk_382<name="Unk 382 (float)">;
 float Unk_383<name="Unk 383 (float)">;
 float Unk_384<name="Unk 384 (float)">;
-uint Unk_385<name="Unk 385 (uint)">;
-float Unk_386<name="Unk 386 (float)">;
+float Unk_385<name="Unk 385 (float)">;
+uint Unk_386<name="Unk 386 (uint)">;
 float Unk_387<name="Unk 387 (float)">;
 float Unk_388<name="Unk 388 (float)">;
 float Unk_389<name="Unk 389 (float)">;
@@ -521,8 +521,8 @@ float Unk_435<name="Unk 435 (float)">;
 float Unk_436<name="Unk 436 (float)">;
 float Unk_437<name="Unk 437 (float)">;
 float Unk_438<name="Unk 438 (float)">;
-uint Unk_439<name="Unk 439 (uint)">;
-float Unk_440<name="Unk 440 (float)">;
+float Unk_439<name="Unk 439 (float)">;
+uint Unk_440<name="Unk 440 (uint)">;
 float Unk_441<name="Unk 441 (float)">;
 float Unk_442<name="Unk 442 (float)">;
 float Unk_443<name="Unk 443 (float)">;
@@ -575,10 +575,11 @@ float Unk_489<name="Unk 489 (float)">;
 float Unk_490<name="Unk 490 (float)">;
 float Unk_491<name="Unk 491 (float)">;
 float Unk_492<name="Unk 492 (float)">;
-int Unk_493<name="Unk 493 (int)">;
+float Unk_493<name="Unk 493 (float)">;
+int Unk_494<name="Unk 494 (int)">;
 
 uint Header<name="Header (uint)">;
-float Unk_494<name="Unk 494 (float)">;
+float Unk_495<name="Unk 495 (float)">;
 uint Unk_Arr_5_Count<name="Unk Arr 5 Count (uint)">;
 
 // Unk Arr 5
@@ -590,8 +591,8 @@ typedef struct {
 
 Unk_Arr_5 Unk_Arr_5_[Unk_Arr_5_Count]<optimize=false, name="Unk Arr 5">;
 
-float Unk_495<name="Unk 495 (float)">;
-uint Unk_496<name="Unk 496 (uint)">;
+float Unk_496<name="Unk 496 (float)">;
+uint Unk_497<name="Unk 497 (uint)">;
 uint Unk_Arr_6_Count<name="Unk Arr 6 Count (uint)">;
 
 // Unk Arr 6
@@ -602,39 +603,39 @@ typedef struct {
 
 Unk_Arr_6 Unk_Arr_6_[Unk_Arr_6_Count]<optimize=false, name="Unk Arr 6">;
 
-uint Unk_497<name="Unk 497 (uint)">;
 uint Unk_498<name="Unk 498 (uint)">;
-float Unk_499<name="Unk 499 (float)">;
-uint Unk_500<name="Unk 500 (uint)">;
+uint Unk_499<name="Unk 499 (uint)">;
+float Unk_500<name="Unk 500 (float)">;
 uint Unk_501<name="Unk 501 (uint)">;
-int Unk_502<name="Unk 502 (int)">;
-uint Unk_503<name="Unk 503 (uint)">;
+uint Unk_502<name="Unk 502 (uint)">;
+int Unk_503<name="Unk 503 (int)">;
 uint Unk_504<name="Unk 504 (uint)">;
 uint Unk_505<name="Unk 505 (uint)">;
 uint Unk_506<name="Unk 506 (uint)">;
 uint Unk_507<name="Unk 507 (uint)">;
 uint Unk_508<name="Unk 508 (uint)">;
-float Unk_509<name="Unk 509 (float)">;
-uint Unk_510<name="Unk 510 (uint)">;
+uint Unk_509<name="Unk 509 (uint)">;
+float Unk_510<name="Unk 510 (float)">;
 uint Unk_511<name="Unk 511 (uint)">;
-float Unk_512<name="Unk 512 (float)">;
-uint Unk_513<name="Unk 513 (uint)">;
+uint Unk_512<name="Unk 512 (uint)">;
+float Unk_513<name="Unk 513 (float)">;
 uint Unk_514<name="Unk 514 (uint)">;
 uint Unk_515<name="Unk 515 (uint)">;
-int Unk_516<name="Unk 516 (int)">;
-uint Unk_517<name="Unk 517 (uint)">;
+uint Unk_516<name="Unk 516 (uint)">;
+int Unk_517<name="Unk 517 (int)">;
 uint Unk_518<name="Unk 518 (uint)">;
 uint Unk_519<name="Unk 519 (uint)">;
 uint Unk_520<name="Unk 520 (uint)">;
 uint Unk_521<name="Unk 521 (uint)">;
 uint Unk_522<name="Unk 522 (uint)">;
-float Unk_523<name="Unk 523 (float)">;
-uint Unk_524<name="Unk 524 (uint)">;
+uint Unk_523<name="Unk 523 (uint)">;
+float Unk_524<name="Unk 524 (float)">;
 uint Unk_525<name="Unk 525 (uint)">;
-float Unk_526<name="Unk 526 (float)">;
-uint Unk_527<name="Unk 527 (uint)">;
-float Unk_528<name="Unk 528 (float)">;
+uint Unk_526<name="Unk 526 (uint)">;
+float Unk_527<name="Unk 527 (float)">;
+uint Unk_528<name="Unk 528 (uint)">;
 float Unk_529<name="Unk 529 (float)">;
 float Unk_530<name="Unk 530 (float)">;
 float Unk_531<name="Unk 531 (float)">;
 float Unk_532<name="Unk 532 (float)">;
+float Unk_533<name="Unk 533 (float)">;
