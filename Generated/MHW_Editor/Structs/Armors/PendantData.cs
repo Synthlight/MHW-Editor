@@ -99,21 +99,21 @@ namespace MHW_Editor.Structs.Armors {
         public partial class Entries : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
-            public override string UniqueId => $"{Id}";
+            public override string UniqueId => $"{Index}";
 
-            protected uint Id_raw;
-            public const string Id_displayName = "Id";
-            public const int Id_sortIndex = 50;
-            [SortOrder(Id_sortIndex)]
-            [DisplayName(Id_displayName)]
+            protected uint Index_raw;
+            public const string Index_displayName = "Index";
+            public const int Index_sortIndex = 50;
+            [SortOrder(Index_sortIndex)]
+            [DisplayName(Index_displayName)]
             [IsReadOnly]
-            public virtual uint Id {
-                get => Id_raw;
+            public override ulong Index {
+                get => (ulong) Index_raw;
                 set {
-                    if (Id_raw == value) return;
-                    Id_raw = value;
-                    ChangedItems.Add(nameof(Id));
-                    OnPropertyChanged(nameof(Id));
+                    if ((ulong) Index_raw == value) return;
+                    Index_raw = (uint) value;
+                    ChangedItems.Add(nameof(Index));
+                    OnPropertyChanged(nameof(Index));
                 }
             }
 
@@ -327,7 +327,7 @@ namespace MHW_Editor.Structs.Armors {
             public static Entries LoadData(BinaryReader reader, ulong i) {
                 var data = new Entries();
                 data.Index = i;
-                data.Id_raw = reader.ReadUInt32();
+                data.Index_raw = reader.ReadUInt32();
                 data.Unk1_raw = reader.ReadByte();
                 data.Unk2_raw = reader.ReadByte();
                 data.Model_Id_raw = reader.ReadByte();
@@ -345,7 +345,7 @@ namespace MHW_Editor.Structs.Armors {
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Id_raw);
+                writer.Write(Index_raw);
                 writer.Write(Unk1_raw);
                 writer.Write(Unk2_raw);
                 writer.Write(Model_Id_raw);

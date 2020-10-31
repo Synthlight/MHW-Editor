@@ -9,7 +9,7 @@ namespace MHW_Generator.Armors {
                 CreateSingleStructBase(out var header, out var itemCount),
 
                 new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry("Id", typeof(uint), true),
+                    new MhwMultiStructData.Entry("Index", typeof(uint), true),
                     new MhwMultiStructData.Entry("Unk1", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk2", typeof(byte)),
                     new MhwMultiStructData.Entry("Model Id", typeof(byte)),
@@ -23,7 +23,7 @@ namespace MHW_Generator.Armors {
                     new MhwMultiStructData.Entry("Story Unlock", typeof(int)),
                     new MhwMultiStructData.Entry("Unk10", typeof(ushort)),
                     new MhwMultiStructData.Entry("Unk11", typeof(ushort))
-                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Id}")
+                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Index}")
             };
 
             return new MultiStruct("Armors", "PendantData", new MhwMultiStructData(structs, "ch_dat"));
