@@ -281,18 +281,18 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected uint Unk_raw;
-            public const string Unk_displayName = "Unk";
-            public const int Unk_sortIndex = 650;
-            [SortOrder(Unk_sortIndex)]
-            [DisplayName(Unk_displayName)]
-            public virtual uint Unk {
-                get => Unk_raw;
+            protected uint Model_Id_raw;
+            public const string Model_Id_displayName = "Model Id";
+            public const int Model_Id_sortIndex = 650;
+            [SortOrder(Model_Id_sortIndex)]
+            [DisplayName(Model_Id_displayName)]
+            public virtual uint Model_Id {
+                get => Model_Id_raw;
                 set {
-                    if (Unk_raw == value) return;
-                    Unk_raw = value;
-                    ChangedItems.Add(nameof(Unk));
-                    OnPropertyChanged(nameof(Unk));
+                    if (Model_Id_raw == value) return;
+                    Model_Id_raw = value;
+                    ChangedItems.Add(nameof(Model_Id));
+                    OnPropertyChanged(nameof(Model_Id));
                 }
             }
 
@@ -399,7 +399,7 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Elderseal_raw = reader.ReadByte();
                 data.Rarity_raw = reader.ReadByte();
                 data.Order_raw = reader.ReadUInt16();
-                data.Unk_raw = reader.ReadUInt32();
+                data.Model_Id_raw = reader.ReadUInt32();
                 data.Cost_raw = reader.ReadUInt32();
                 data.Unknown_byte_1_raw = reader.ReadByte();
                 data.Id_raw = reader.ReadUInt16();
@@ -421,7 +421,7 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Elderseal_raw);
                 writer.Write(Rarity_raw);
                 writer.Write(Order_raw);
-                writer.Write(Unk_raw);
+                writer.Write(Model_Id_raw);
                 writer.Write(Cost_raw);
                 writer.Write(Unknown_byte_1_raw);
                 writer.Write(Id_raw);

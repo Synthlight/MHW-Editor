@@ -1,7 +1,7 @@
 //------------------------------------------------
 //--- 010 Editor v10.0 Binary Template
 //   Authors: Many. See MHW Editor Cretits.
-// File Mask: *.owp_dat
+// File Mask: *.oam_dat
 //  Category: MHW-Editor
 //------------------------------------------------
 
@@ -18,20 +18,21 @@ Header Header_<name="Header">;
 typedef struct {
     uint Index<name="Index (uint)">;
     ushort Set_Id<name="Set Id (ushort)">;
-    ubyte Element<name="Element (ubyte)">;
-    ushort Attack_Type<name="Attack Type (ushort)">;
-    ushort Melee_Damage<name="Melee Damage (ushort)">;
-    ushort Ranged_Damage<name="Ranged Damage (ushort)">;
-    ushort Elemental_Damage<name="Elemental Damage (ushort)">;
-    short Affinity<name="Affinity (short)">;
-    ushort Defense<name="Defense (ushort)">;
-    ubyte Elderseal<name="Elderseal (ubyte)">;
+    ubyte Equip_Slot<name="Equip Slot (ubyte)">;
+    ubyte Is_Full_Set<name="Is Full Set (ubyte)">;
+    uint Defense<name="Defense (uint)">;
     ubyte Rarity<name="Rarity (ubyte)">;
     ushort Order<name="Order (ushort)">;
     uint Model_Id<name="Model Id (uint)">;
     uint Cost<name="Cost (uint)">;
-    ubyte Unknown_byte_1<name="Unknown (byte) 1 (ubyte)">;
-    ushort Id<name="Id (ushort)">;
+    uint Variant<name="Variant (uint)">;
+    byte Fire_Res<name="Fire Res (byte)">;
+    byte Water_Res<name="Water Res (byte)">;
+    byte Ice_Res<name="Ice Res (byte)">;
+    byte Thunder_Res<name="Thunder Res (byte)">;
+    byte Dragon_Res<name="Dragon Res (byte)">;
+    uint Unk<name="Unk (uint)">;
+    ushort Set_Group<name="Set Group (ushort)">;
     ushort GMD_Name_Index<name="GMD Name Index (ushort)">;
     ushort GMD_Description_Index<name="GMD Description Index (ushort)">;
 } Entries;

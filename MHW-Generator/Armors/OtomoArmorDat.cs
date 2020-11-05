@@ -5,7 +5,7 @@ using MHW_Template.Struct_Generation;
 
 namespace MHW_Generator.Armors {
     public class OtomoArmorDat : SingleStructBase, IMultiStruct {
-        public MultiStruct Generate() { // .owp_dat
+        public MultiStruct Generate() { // .oam_dat
             var structs = new List<MhwMultiStructData.StructData> {
                 CreateSingleStructBase(out var header, out var itemCount),
 
@@ -32,7 +32,7 @@ namespace MHW_Generator.Armors {
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Set_Id}|{Variant}|{Equip_Slot}")
             };
 
-            return new MultiStruct("Armors", "OtomoArmorDat", new MhwMultiStructData(structs, "owp_dat"));
+            return new MultiStruct("Armors", "OtomoArmorDat", new MhwMultiStructData(structs, "oam_dat"));
         }
     }
 }

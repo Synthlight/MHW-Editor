@@ -23,7 +23,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Elderseal", typeof(byte)),
                     new MhwMultiStructData.Entry("Rarity", typeof(byte)),
                     new MhwMultiStructData.Entry("Order", typeof(ushort)),
-                    new MhwMultiStructData.Entry("Unk", typeof(uint)),
+                    new MhwMultiStructData.Entry("Model Id", typeof(uint)),
                     new MhwMultiStructData.Entry("Cost", typeof(uint)),
                     new MhwMultiStructData.Entry("Unknown (byte) 1", typeof(byte)),
                     new MhwMultiStructData.Entry("Id", typeof(ushort), overrideSortIndex: true),
