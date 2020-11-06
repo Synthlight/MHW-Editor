@@ -153,27 +153,27 @@ typedef struct {
 
 Action_Param_1 Action_Param_1_[6]<optimize=false, name="Action Param 1">;
 
-float Unk_91<name="Unk 91 (float)">;
+float Charge_Dash_lvl_1_Initial_Speed_Multiplier<name="Charge Dash lvl 1 Initial Speed Multiplier (float)">;
 float Charge_Dash_lvl_2_Charge_Time<name="Charge Dash lvl 2 Charge Time (float)">;
 float Charge_Dash_lvl_2_Speed_Multiplier<name="Charge Dash lvl 2 Speed Multiplier (float)">;
-float Unk_94<name="Unk 94 (float)">;
-float Unk_95<name="Unk 95 (float)">;
+float Charge_Dash_lvl_1_Running_Animation_Loop_Speed_Multiplier<name="Charge Dash lvl 1 Running Animation Loop Speed Multiplier (float)">;
+float Charge_Dash_lvl_2_Running_Animation_Loop_Speed_Multiplier<name="Charge Dash lvl 2 Running Animation Loop Speed Multiplier (float)">;
 float Charge_Dash_lvl_3_Charge_Time<name="Charge Dash lvl 3 Charge Time (float)">;
 float Charge_Dash_lvl_3_Speed_Multiplier<name="Charge Dash lvl 3 Speed Multiplier (float)">;
-float Unk_98<name="Unk 98 (float)">;
+float Charge_Dash_lvl_3_Running_Animation_Loop_Speed_Multiplier<name="Charge Dash lvl 3 Running Animation Loop Speed Multiplier (float)">;
 float Unk_99<name="Unk 99 (float)">;
 float Unk_100<name="Unk 100 (float)">;
-float Unk_101<name="Unk 101 (float)">;
+float Charge_Dash_Turn_Rate_Lower_is_Faster_<name="Charge Dash Turn Rate (Lower is Faster) (float)">;
 float Unk_102<name="Unk 102 (float)">;
 float Unk_103<name="Unk 103 (float)">;
-float Unk_104<name="Unk 104 (float)">;
+float Charge_Dash_Wall_Bounce_Deflection_Angle_0_Prevents_Deflection_<name="Charge Dash Wall Bounce Deflection Angle (0 Prevents Deflection) (float)">;
 float Charge_Dash_lvl_2_Damage_Multiplier<name="Charge Dash lvl 2 Damage Multiplier (float)">;
 float Charge_Dash_lvl_3_Damage_Multiplier<name="Charge Dash lvl 3 Damage Multiplier (float)">;
 float Unk_107<name="Unk 107 (float)">;
 float Unk_108<name="Unk 108 (float)">;
 uint Unk_109<name="Unk 109 (uint)">;
 uint Unk_110<name="Unk 110 (uint)">;
-float Unk_111<name="Unk 111 (float)">;
+float Charge_Dash_Speed_Multiplier_While_Gliding_Down_Slopes<name="Charge Dash Speed Multiplier While Gliding Down Slopes (float)">;
 float Unk_112<name="Unk 112 (float)">;
 float Unk_113<name="Unk 113 (float)">;
 float Unk_114<name="Unk 114 (float)">;
@@ -188,7 +188,7 @@ float Unk_122<name="Unk 122 (float)">;
 float Unk_123<name="Unk 123 (float)">;
 float Unk_124<name="Unk 124 (float)">;
 float Unk_125<name="Unk 125 (float)">;
-float Unk_126<name="Unk 126 (float)">;
+float Time_for_Guard_Up_to_Come_Up_When_Using_Power_Guard<name="Time for Guard Up to Come Up, When Using Power Guard (float)">;
 
 // Action Param 2
 typedef struct {
