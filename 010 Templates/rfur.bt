@@ -18,8 +18,8 @@ Header Header_<name="Header">;
 typedef struct {
     uint Item_Id<name="Item Id (uint)">;
     uint Unk1<name="Unk1 (uint)">;
-    uint Unk2<name="Unk2 (uint)">;
-    uint Unk3<name="Unk3 (uint)">;
+    uint Model_Id<name="Model Id (uint)">;
+    uint Model_Sub_Id<name="Model Sub Id (uint)">;
     ubyte Unk4<name="Unk4 (ubyte)">;
     ubyte Unk5<name="Unk5 (ubyte)">;
     ubyte Unk6<name="Unk6 (ubyte)">;
@@ -35,7 +35,7 @@ typedef struct {
     uint Unk16<name="Unk16 (uint)">;
     ushort Unk17<name="Unk17 (ushort)">;
     ushort Unk18<name="Unk18 (ushort)">;
-    uint Unk19<name="Unk19 (uint)">;
+    uint Story_Progression<name="Story Progression (uint)">;
     uint Unk21<name="Unk21 (uint)">;
 } Entries;
 

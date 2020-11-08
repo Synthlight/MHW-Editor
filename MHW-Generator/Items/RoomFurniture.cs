@@ -12,8 +12,8 @@ namespace MHW_Generator.Items {
                 new MhwMultiStructData.StructData("Entries", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Item Id", typeof(uint), dataSourceType: DataSourceType.Items),
                     new MhwMultiStructData.Entry("Unk1", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk2", typeof(uint)),
-                    new MhwMultiStructData.Entry("Unk3", typeof(uint)),
+                    new MhwMultiStructData.Entry("Model Id", typeof(uint)),
+                    new MhwMultiStructData.Entry("Model Sub Id", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk4", typeof(byte), enumReturn: typeof(bool)),
                     new MhwMultiStructData.Entry("Unk5", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk6", typeof(byte), enumReturn: typeof(bool)),
@@ -29,7 +29,7 @@ namespace MHW_Generator.Items {
                     new MhwMultiStructData.Entry("Unk16", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk17", typeof(ushort)),
                     new MhwMultiStructData.Entry("Unk18", typeof(ushort)),
-                    new MhwMultiStructData.Entry("Unk19", typeof(uint)),
+                    new MhwMultiStructData.Entry("Story Progression", typeof(uint)),
                     new MhwMultiStructData.Entry("Unk21", typeof(uint))
                 }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount))
             };

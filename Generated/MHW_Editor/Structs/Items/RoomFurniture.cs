@@ -137,33 +137,33 @@ namespace MHW_Editor.Structs.Items {
                 }
             }
 
-            protected uint Unk2_raw;
-            public const string Unk2_displayName = "Unk2";
-            public const int Unk2_sortIndex = 150;
-            [SortOrder(Unk2_sortIndex)]
-            [DisplayName(Unk2_displayName)]
-            public virtual uint Unk2 {
-                get => Unk2_raw;
+            protected uint Model_Id_raw;
+            public const string Model_Id_displayName = "Model Id";
+            public const int Model_Id_sortIndex = 150;
+            [SortOrder(Model_Id_sortIndex)]
+            [DisplayName(Model_Id_displayName)]
+            public virtual uint Model_Id {
+                get => Model_Id_raw;
                 set {
-                    if (Unk2_raw == value) return;
-                    Unk2_raw = value;
-                    ChangedItems.Add(nameof(Unk2));
-                    OnPropertyChanged(nameof(Unk2));
+                    if (Model_Id_raw == value) return;
+                    Model_Id_raw = value;
+                    ChangedItems.Add(nameof(Model_Id));
+                    OnPropertyChanged(nameof(Model_Id));
                 }
             }
 
-            protected uint Unk3_raw;
-            public const string Unk3_displayName = "Unk3";
-            public const int Unk3_sortIndex = 200;
-            [SortOrder(Unk3_sortIndex)]
-            [DisplayName(Unk3_displayName)]
-            public virtual uint Unk3 {
-                get => Unk3_raw;
+            protected uint Model_Sub_Id_raw;
+            public const string Model_Sub_Id_displayName = "Model Sub Id";
+            public const int Model_Sub_Id_sortIndex = 200;
+            [SortOrder(Model_Sub_Id_sortIndex)]
+            [DisplayName(Model_Sub_Id_displayName)]
+            public virtual uint Model_Sub_Id {
+                get => Model_Sub_Id_raw;
                 set {
-                    if (Unk3_raw == value) return;
-                    Unk3_raw = value;
-                    ChangedItems.Add(nameof(Unk3));
-                    OnPropertyChanged(nameof(Unk3));
+                    if (Model_Sub_Id_raw == value) return;
+                    Model_Sub_Id_raw = value;
+                    ChangedItems.Add(nameof(Model_Sub_Id));
+                    OnPropertyChanged(nameof(Model_Sub_Id));
                 }
             }
 
@@ -392,18 +392,18 @@ namespace MHW_Editor.Structs.Items {
                 }
             }
 
-            protected uint Unk19_raw;
-            public const string Unk19_displayName = "Unk19";
-            public const int Unk19_sortIndex = 1000;
-            [SortOrder(Unk19_sortIndex)]
-            [DisplayName(Unk19_displayName)]
-            public virtual uint Unk19 {
-                get => Unk19_raw;
+            protected uint Story_Progression_raw;
+            public const string Story_Progression_displayName = "Story Progression";
+            public const int Story_Progression_sortIndex = 1000;
+            [SortOrder(Story_Progression_sortIndex)]
+            [DisplayName(Story_Progression_displayName)]
+            public virtual uint Story_Progression {
+                get => Story_Progression_raw;
                 set {
-                    if (Unk19_raw == value) return;
-                    Unk19_raw = value;
-                    ChangedItems.Add(nameof(Unk19));
-                    OnPropertyChanged(nameof(Unk19));
+                    if (Story_Progression_raw == value) return;
+                    Story_Progression_raw = value;
+                    ChangedItems.Add(nameof(Story_Progression));
+                    OnPropertyChanged(nameof(Story_Progression));
                 }
             }
 
@@ -439,8 +439,8 @@ namespace MHW_Editor.Structs.Items {
                 data.Index = i;
                 data.Item_Id_raw = reader.ReadUInt32();
                 data.Unk1_raw = reader.ReadUInt32();
-                data.Unk2_raw = reader.ReadUInt32();
-                data.Unk3_raw = reader.ReadUInt32();
+                data.Model_Id_raw = reader.ReadUInt32();
+                data.Model_Sub_Id_raw = reader.ReadUInt32();
                 data.Unk4_raw = reader.ReadByte();
                 data.Unk5_raw = reader.ReadByte();
                 data.Unk6_raw = reader.ReadByte();
@@ -456,7 +456,7 @@ namespace MHW_Editor.Structs.Items {
                 data.Unk16_raw = reader.ReadUInt32();
                 data.Unk17_raw = reader.ReadUInt16();
                 data.Unk18_raw = reader.ReadUInt16();
-                data.Unk19_raw = reader.ReadUInt32();
+                data.Story_Progression_raw = reader.ReadUInt32();
                 data.Unk21_raw = reader.ReadUInt32();
                 return data;
             }
@@ -464,8 +464,8 @@ namespace MHW_Editor.Structs.Items {
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Item_Id_raw);
                 writer.Write(Unk1_raw);
-                writer.Write(Unk2_raw);
-                writer.Write(Unk3_raw);
+                writer.Write(Model_Id_raw);
+                writer.Write(Model_Sub_Id_raw);
                 writer.Write(Unk4_raw);
                 writer.Write(Unk5_raw);
                 writer.Write(Unk6_raw);
@@ -481,7 +481,7 @@ namespace MHW_Editor.Structs.Items {
                 writer.Write(Unk16_raw);
                 writer.Write(Unk17_raw);
                 writer.Write(Unk18_raw);
-                writer.Write(Unk19_raw);
+                writer.Write(Story_Progression_raw);
                 writer.Write(Unk21_raw);
             }
         }
