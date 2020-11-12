@@ -61,8 +61,7 @@ namespace MHW_Editor.Structs.Items {
             [CustomSorter(typeof(ButtonSorter))]
             public string Item_Id_button => DataHelper.itemNames[MainWindow.locale].TryGet(Item_Id).ToStringWithId(Item_Id);
 
-            public const int Item_Count_sortIndex = 100;
-            [SortOrder(Item_Count_sortIndex)]
+            [SortOrder(100)]
             [DisplayName(Counts.Item_Count_displayName)]
             public byte Item_Count {
                 get => itemCountEntry.Item_Count;
@@ -73,8 +72,7 @@ namespace MHW_Editor.Structs.Items {
                 }
             }
 
-            public const int Item_Weight_sortIndex = 150;
-            [SortOrder(Item_Weight_sortIndex)]
+            [SortOrder(150)]
             [DisplayName(Weights.Item_Weight_displayName)]
             public byte Item_Weight {
                 get => itemWeightEntry.Item_Weight;
@@ -82,6 +80,17 @@ namespace MHW_Editor.Structs.Items {
                     if (itemWeightEntry.Item_Weight == value) return;
                     itemWeightEntry.Item_Weight = value;
                     OnPropertyChanged(nameof(Item_Weight));
+                }
+            }
+
+            private float itemWeightPercent;
+            [SortOrder(200)]
+            [DisplayName(Weights.Item_Weight_displayName + "%")]
+            public float Item_Weight_percent {
+                get => itemWeightPercent;
+                set {
+                    itemWeightPercent = value.Clamp(0f, 100f);
+                    OnPropertyChanged(nameof(Item_Weight_percent));
                 }
             }
         }

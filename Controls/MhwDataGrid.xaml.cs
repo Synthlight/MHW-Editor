@@ -100,7 +100,12 @@ namespace MHW_Editor.Controls {
                 // This will set the merged check on all those filters so all we have to do layer is update the filter text, then refresh.
                 ((ListCollectionView) ItemsSource).Filter = groupFilter.MergedFilters;
 
-                if (mainWindow.targetFileType.Is(typeof(DecoGradeLottery), typeof(DecoLottery), typeof(ItemLottery), typeof(KulveGradeLottery), typeof(SafiItemGradeLottery))) {
+                if (mainWindow.targetFileType.Is(typeof(DecoGradeLottery),
+                                                 typeof(DecoLottery),
+                                                 typeof(ItemLottery),
+                                                 typeof(KulveGradeLottery),
+                                                 typeof(QuestReward),
+                                                 typeof(SafiItemGradeLottery))) {
                     CalculatePercents();
                 }
             }
@@ -631,6 +636,14 @@ namespace MHW_Editor.Controls {
                 foreach (var item in items) {
                     var x = (ItemLottery.InnerItem) (object) item;
                     x.itemWeight_percent = x.itemWeight > 0f ? (float) x.itemWeight / total : 0f;
+                }
+            } else if (typeof(T).Is(typeof(QuestReward.QuestRewardCustomView))) {
+                var total = items.Select(item => (QuestReward.QuestRewardCustomView) (object) item)
+                                 .Aggregate(0u, (current, item) => current + item.Item_Weight);
+
+                foreach (var item in items) {
+                    var x = (QuestReward.QuestRewardCustomView) (object) item;
+                    x.Item_Weight_percent = x.Item_Weight > 0f ? (float) x.Item_Weight / total : 0f;
                 }
             }
         }
