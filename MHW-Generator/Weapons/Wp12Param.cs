@@ -243,18 +243,20 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Large", typeof(byte))
             }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(countHolder, count)));
 
-            structs.Add(new MhwMultiStructData.StructData($"W{wpNum}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
+            structs.Add(new MhwMultiStructData.StructData($"W{wpNum}p Params (Special Scope Params)", new List<MhwMultiStructData.Entry> {
+                new MhwMultiStructData.Entry("Special Scope: FoV Multiplier (From Base 3rd Person FoV)", typeof(float)),
+                new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
                 new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                 new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                 new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                 new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                 new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                 new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                new MhwMultiStructData.Entry("Special Scope: Zoom Ratio When Focusing 1", typeof(float)),
+                new MhwMultiStructData.Entry("Special Scope: Zoom Ratio When Focusing 2", typeof(float))
             }, 1, showVertically: true));
+
+            unkIndex += 2;
 
             structs.Add(new MhwMultiStructData.StructData($"Unk Arr {++arrayIndex}", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Unk 1", typeof(float)),

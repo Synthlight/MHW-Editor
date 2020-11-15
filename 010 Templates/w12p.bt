@@ -383,7 +383,7 @@ typedef struct {
 
 Shield_Mods Shield_Mods_[Number_of_Shield_Mods_Struct_.Number_of_Shield_Mods]<optimize=false, name="Shield Mods">;
 
-float Unk_274<name="Unk 274 (float)">;
+float Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV_<name="Special Scope: FoV Multiplier (From Base 3rd Person FoV) (float)">;
 float Unk_275<name="Unk 275 (float)">;
 float Unk_276<name="Unk 276 (float)">;
 float Unk_277<name="Unk 277 (float)">;
@@ -391,8 +391,8 @@ float Unk_278<name="Unk 278 (float)">;
 float Unk_279<name="Unk 279 (float)">;
 float Unk_280<name="Unk 280 (float)">;
 float Unk_281<name="Unk 281 (float)">;
-float Unk_282<name="Unk 282 (float)">;
-float Unk_283<name="Unk 283 (float)">;
+float Special_Scope_Zoom_Ratio_When_Focusing_1<name="Special Scope: Zoom Ratio When Focusing 1 (float)">;
+float Special_Scope_Zoom_Ratio_When_Focusing_2<name="Special Scope: Zoom Ratio When Focusing 2 (float)">;
 
 // Unk Arr 5
 typedef struct {

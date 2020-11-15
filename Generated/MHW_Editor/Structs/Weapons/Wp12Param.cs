@@ -7446,27 +7446,27 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W12p_Params_7_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
+        public partial class W12p_Params_Special_Scope_Params_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "W12p Params (7)";
+            public const string GridName = "W12p Params (Special Scope Params)";
 
-            protected float Unk_274_raw;
-            public const string Unk_274_displayName = "Unk 274";
-            public const int Unk_274_sortIndex = 50;
-            [SortOrder(Unk_274_sortIndex)]
-            [DisplayName(Unk_274_displayName)]
-            public virtual float Unk_274 {
-                get => Unk_274_raw;
+            protected float Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__raw;
+            public const string Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__displayName = "Special Scope: FoV Multiplier (From Base 3rd Person FoV)";
+            public const int Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__sortIndex = 50;
+            [SortOrder(Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__sortIndex)]
+            [DisplayName(Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__displayName)]
+            public virtual float Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV_ {
+                get => Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__raw;
                 set {
-                    if (Unk_274_raw == value) return;
-                    Unk_274_raw = value;
-                    ChangedItems.Add(nameof(Unk_274));
-                    OnPropertyChanged(nameof(Unk_274));
+                    if (Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__raw == value) return;
+                    Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__raw = value;
+                    ChangedItems.Add(nameof(Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV_));
+                    OnPropertyChanged(nameof(Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_274_offset { get; private set; }
+            public long Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__offset { get; private set; }
 
             protected float Unk_275_raw;
             public const string Unk_275_displayName = "Unk 275";
@@ -7594,46 +7594,46 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_281_offset { get; private set; }
 
-            protected float Unk_282_raw;
-            public const string Unk_282_displayName = "Unk 282";
-            public const int Unk_282_sortIndex = 450;
-            [SortOrder(Unk_282_sortIndex)]
-            [DisplayName(Unk_282_displayName)]
-            public virtual float Unk_282 {
-                get => Unk_282_raw;
+            protected float Special_Scope_Zoom_Ratio_When_Focusing_1_raw;
+            public const string Special_Scope_Zoom_Ratio_When_Focusing_1_displayName = "Special Scope: Zoom Ratio When Focusing 1";
+            public const int Special_Scope_Zoom_Ratio_When_Focusing_1_sortIndex = 450;
+            [SortOrder(Special_Scope_Zoom_Ratio_When_Focusing_1_sortIndex)]
+            [DisplayName(Special_Scope_Zoom_Ratio_When_Focusing_1_displayName)]
+            public virtual float Special_Scope_Zoom_Ratio_When_Focusing_1 {
+                get => Special_Scope_Zoom_Ratio_When_Focusing_1_raw;
                 set {
-                    if (Unk_282_raw == value) return;
-                    Unk_282_raw = value;
-                    ChangedItems.Add(nameof(Unk_282));
-                    OnPropertyChanged(nameof(Unk_282));
+                    if (Special_Scope_Zoom_Ratio_When_Focusing_1_raw == value) return;
+                    Special_Scope_Zoom_Ratio_When_Focusing_1_raw = value;
+                    ChangedItems.Add(nameof(Special_Scope_Zoom_Ratio_When_Focusing_1));
+                    OnPropertyChanged(nameof(Special_Scope_Zoom_Ratio_When_Focusing_1));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_282_offset { get; private set; }
+            public long Special_Scope_Zoom_Ratio_When_Focusing_1_offset { get; private set; }
 
-            protected float Unk_283_raw;
-            public const string Unk_283_displayName = "Unk 283";
-            public const int Unk_283_sortIndex = 500;
-            [SortOrder(Unk_283_sortIndex)]
-            [DisplayName(Unk_283_displayName)]
-            public virtual float Unk_283 {
-                get => Unk_283_raw;
+            protected float Special_Scope_Zoom_Ratio_When_Focusing_2_raw;
+            public const string Special_Scope_Zoom_Ratio_When_Focusing_2_displayName = "Special Scope: Zoom Ratio When Focusing 2";
+            public const int Special_Scope_Zoom_Ratio_When_Focusing_2_sortIndex = 500;
+            [SortOrder(Special_Scope_Zoom_Ratio_When_Focusing_2_sortIndex)]
+            [DisplayName(Special_Scope_Zoom_Ratio_When_Focusing_2_displayName)]
+            public virtual float Special_Scope_Zoom_Ratio_When_Focusing_2 {
+                get => Special_Scope_Zoom_Ratio_When_Focusing_2_raw;
                 set {
-                    if (Unk_283_raw == value) return;
-                    Unk_283_raw = value;
-                    ChangedItems.Add(nameof(Unk_283));
-                    OnPropertyChanged(nameof(Unk_283));
+                    if (Special_Scope_Zoom_Ratio_When_Focusing_2_raw == value) return;
+                    Special_Scope_Zoom_Ratio_When_Focusing_2_raw = value;
+                    ChangedItems.Add(nameof(Special_Scope_Zoom_Ratio_When_Focusing_2));
+                    OnPropertyChanged(nameof(Special_Scope_Zoom_Ratio_When_Focusing_2));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_283_offset { get; private set; }
+            public long Special_Scope_Zoom_Ratio_When_Focusing_2_offset { get; private set; }
 
             public const int lastSortIndex = 550;
 
-            public static ObservableMhwStructCollection<W12p_Params_7_> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<W12p_Params_7_>();
+            public static ObservableMhwStructCollection<W12p_Params_Special_Scope_Params_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W12p_Params_Special_Scope_Params_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -7641,11 +7641,11 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static W12p_Params_7_ LoadData(BinaryReader reader, ulong i) {
-                var data = new W12p_Params_7_();
+            public static W12p_Params_Special_Scope_Params_ LoadData(BinaryReader reader, ulong i) {
+                var data = new W12p_Params_Special_Scope_Params_();
                 data.Index = i;
-                data.Unk_274_offset = reader.BaseStream.Position;
-                data.Unk_274_raw = reader.ReadSingle();
+                data.Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__offset = reader.BaseStream.Position;
+                data.Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__raw = reader.ReadSingle();
                 data.Unk_275_offset = reader.BaseStream.Position;
                 data.Unk_275_raw = reader.ReadSingle();
                 data.Unk_276_offset = reader.BaseStream.Position;
@@ -7660,15 +7660,15 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_280_raw = reader.ReadSingle();
                 data.Unk_281_offset = reader.BaseStream.Position;
                 data.Unk_281_raw = reader.ReadSingle();
-                data.Unk_282_offset = reader.BaseStream.Position;
-                data.Unk_282_raw = reader.ReadSingle();
-                data.Unk_283_offset = reader.BaseStream.Position;
-                data.Unk_283_raw = reader.ReadSingle();
+                data.Special_Scope_Zoom_Ratio_When_Focusing_1_offset = reader.BaseStream.Position;
+                data.Special_Scope_Zoom_Ratio_When_Focusing_1_raw = reader.ReadSingle();
+                data.Special_Scope_Zoom_Ratio_When_Focusing_2_offset = reader.BaseStream.Position;
+                data.Special_Scope_Zoom_Ratio_When_Focusing_2_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_274_raw);
+                writer.Write(Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__raw);
                 writer.Write(Unk_275_raw);
                 writer.Write(Unk_276_raw);
                 writer.Write(Unk_277_raw);
@@ -7676,13 +7676,13 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_279_raw);
                 writer.Write(Unk_280_raw);
                 writer.Write(Unk_281_raw);
-                writer.Write(Unk_282_raw);
-                writer.Write(Unk_283_raw);
+                writer.Write(Special_Scope_Zoom_Ratio_When_Focusing_1_raw);
+                writer.Write(Special_Scope_Zoom_Ratio_When_Focusing_2_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 274", "Unk_274", "Unk_274_offset"),
+                    new MultiStructItemCustomView(this, "Special Scope: FoV Multiplier (From Base 3rd Person FoV)", "Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV_", "Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV__offset"),
                     new MultiStructItemCustomView(this, "Unk 275", "Unk_275", "Unk_275_offset"),
                     new MultiStructItemCustomView(this, "Unk 276", "Unk_276", "Unk_276_offset"),
                     new MultiStructItemCustomView(this, "Unk 277", "Unk_277", "Unk_277_offset"),
@@ -7690,8 +7690,8 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 279", "Unk_279", "Unk_279_offset"),
                     new MultiStructItemCustomView(this, "Unk 280", "Unk_280", "Unk_280_offset"),
                     new MultiStructItemCustomView(this, "Unk 281", "Unk_281", "Unk_281_offset"),
-                    new MultiStructItemCustomView(this, "Unk 282", "Unk_282", "Unk_282_offset"),
-                    new MultiStructItemCustomView(this, "Unk 283", "Unk_283", "Unk_283_offset"),
+                    new MultiStructItemCustomView(this, "Special Scope: Zoom Ratio When Focusing 1", "Special_Scope_Zoom_Ratio_When_Focusing_1", "Special_Scope_Zoom_Ratio_When_Focusing_1_offset"),
+                    new MultiStructItemCustomView(this, "Special Scope: Zoom Ratio When Focusing 2", "Special_Scope_Zoom_Ratio_When_Focusing_2", "Special_Scope_Zoom_Ratio_When_Focusing_2_offset"),
                 };
             }
         }
@@ -7789,9 +7789,9 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W12p_Params_8_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
+        public partial class W12p_Params_7_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "W12p Params (8)";
+            public const string GridName = "W12p Params (7)";
 
             protected float Unk_284_raw;
             public const string Unk_284_displayName = "Unk 284";
@@ -7903,8 +7903,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 350;
 
-            public static ObservableMhwStructCollection<W12p_Params_8_> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<W12p_Params_8_>();
+            public static ObservableMhwStructCollection<W12p_Params_7_> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<W12p_Params_7_>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -7912,8 +7912,8 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static W12p_Params_8_ LoadData(BinaryReader reader, ulong i) {
-                var data = new W12p_Params_8_();
+            public static W12p_Params_7_ LoadData(BinaryReader reader, ulong i) {
+                var data = new W12p_Params_7_();
                 data.Index = i;
                 data.Unk_284_offset = reader.BaseStream.Position;
                 data.Unk_284_raw = reader.ReadSingle();
@@ -7981,12 +7981,12 @@ namespace MHW_Editor.Structs.Weapons {
             var Shield_Mods_ = new MhwStructDataContainer<Shield_Mods, Number_of_Shield_Mods_Struct>(Shield_Mods.LoadData(reader, Number_of_Shield_Mods_Struct_.list), typeof(Shield_Mods));
             Shield_Mods_.SetCountTargetToUpdate(Number_of_Shield_Mods_Struct_, -1, "Number_of_Shield_Mods");
             data.AddLast(Shield_Mods_);
-            var W12p_Params_7__ = new MhwStructDataContainer<W12p_Params_7_>(W12p_Params_7_.LoadData(reader), typeof(W12p_Params_7_));
-            data.AddLast(W12p_Params_7__);
+            var W12p_Params_Special_Scope_Params__ = new MhwStructDataContainer<W12p_Params_Special_Scope_Params_>(W12p_Params_Special_Scope_Params_.LoadData(reader), typeof(W12p_Params_Special_Scope_Params_));
+            data.AddLast(W12p_Params_Special_Scope_Params__);
             var Unk_Arr_5_ = new MhwStructDataContainer<Unk_Arr_5>(Unk_Arr_5.LoadData(reader), typeof(Unk_Arr_5));
             data.AddLast(Unk_Arr_5_);
-            var W12p_Params_8__ = new MhwStructDataContainer<W12p_Params_8_>(W12p_Params_8_.LoadData(reader), typeof(W12p_Params_8_));
-            data.AddLast(W12p_Params_8__);
+            var W12p_Params_7__ = new MhwStructDataContainer<W12p_Params_7_>(W12p_Params_7_.LoadData(reader), typeof(W12p_Params_7_));
+            data.AddLast(W12p_Params_7__);
         }
     }
 }
