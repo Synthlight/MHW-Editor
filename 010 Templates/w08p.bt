@@ -160,10 +160,10 @@ Action_Param_1 Action_Param_1_[2]<optimize=false, name="Action Param 1">;
 
 uint Unk_95<name="Unk 95 (uint)">;
 float Unk_96<name="Unk 96 (float)">;
-uint Unk_97<name="Unk 97 (uint)">;
-float Unk_98<name="Unk 98 (float)">;
-float Unk_99<name="Unk 99 (float)">;
-float Unk_100<name="Unk 100 (float)">;
+uint How_Many_Wildswings_It_Takes_Before_It_Powers_Up<name="How Many Wildswings It Takes Before It Powers Up (uint)">;
+float Wildswing_Damage_Multiplier_When_Powered_Up_<name="Wildswing Damage Multiplier (When Powered Up) (float)">;
+float Overhead_Slash_Sword_Mode_Angle<name="Overhead Slash (Sword Mode) Angle (float)">;
+float Overhead_Slash_Sword_Mode_Forward_Distance<name="Overhead Slash (Sword Mode) Forward Distance (float)">;
 float Unk_101<name="Unk 101 (float)">;
 float Power_Phial_Damage_Multiplier_Sword_Mode_<name="Power Phial Damage Multiplier (Sword Mode) (float)">;
 float Element_Phial_Damage_Multiplier_Sword_Mode_<name="Element Phial Damage Multiplier (Sword Mode) (float)">;

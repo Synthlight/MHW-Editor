@@ -22,13 +22,13 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 2),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)), // 95
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("How Many Wildswings It Takes Before It Powers Up", typeof(uint)),
+                    new MhwMultiStructData.Entry("Wildswing Damage Multiplier (When Powered Up)", typeof(float)),
+                    new MhwMultiStructData.Entry("Overhead Slash (Sword Mode) Angle", typeof(float)),
+                    new MhwMultiStructData.Entry("Overhead Slash (Sword Mode) Forward Distance", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 5}", typeof(float)),
                     new MhwMultiStructData.Entry("Power Phial Damage Multiplier (Sword Mode)", typeof(float)),
                     new MhwMultiStructData.Entry("Element Phial Damage Multiplier (Sword Mode)", typeof(float)),
                     new MhwMultiStructData.Entry("Stun Buildup (Exhaust Phial)", typeof(float)),
