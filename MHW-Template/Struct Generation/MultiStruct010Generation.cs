@@ -37,6 +37,8 @@ namespace MHW_Template.Struct_Generation {
                 var typeString                        = COMPILER.GetTypeOutput(new CodeTypeReference(entry.type));
                 if (typeString == "byte") typeString  = "ubyte";
                 if (typeString == "sbyte") typeString = "byte";
+                if (typeString == "long") typeString = "uint64";
+                if (typeString == "ulong") typeString = "int64";
 
                 if (entry.arrayCount > -1) propName += $"[{entry.arrayCount}]<optimize=false, name=\"{entry.name}\">";
                 else propName                       += $"<name=\"{entry.name} ({typeString})\">";
