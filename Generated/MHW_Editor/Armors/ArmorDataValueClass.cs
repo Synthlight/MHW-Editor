@@ -497,6 +497,9 @@ namespace MHW_Editor.Armors {
         public const ushort Kulve_b_plus_Layered_Head = 630;
         public const ushort Pearlspring_Layered_Head = 634;
         public const ushort Azure_Age_Layered_Head = 635;
+        public const ushort Artemis_Head_a_plus = 641;
+        public const ushort Artemis_Layered_Head = 642;
+        public const ushort Artemis_s_Face_a_plus = 643;
         public const ushort Leather_Mail = 667;
         public const ushort Chainmail_Vest = 668;
         public const ushort Hunter_s_Mail = 669;
@@ -950,6 +953,9 @@ namespace MHW_Editor.Armors {
         public const ushort Azure_Age_Layered_Chest = 1249;
         public const ushort Innerwear_aLayered_Body = 1256;
         public const ushort Innerwear_bLayered_Body = 1257;
+        public const ushort Artemis_Mail_a_plus = 1258;
+        public const ushort Artemis_Layered_Chest = 1259;
+        public const ushort Artemis_s_Body_a_plus = 1260;
         public const ushort Leather_Gloves = 1284;
         public const ushort Chainmail_Gloves = 1285;
         public const ushort Hunter_s_Vambraces = 1286;
@@ -1391,6 +1397,9 @@ namespace MHW_Editor.Armors {
         public const ushort Azure_Age_Layered_Arms = 1864;
         public const ushort Innerwear_aLayered_Arms = 1871;
         public const ushort Innerwear_bLayered_Arms = 1872;
+        public const ushort Artemis_Guards_a_plus = 1873;
+        public const ushort Artemis_Layered_Arms = 1874;
+        public const ushort Artemis_s_Arms_a_plus = 1875;
         public const ushort Leather_Belt = 1899;
         public const ushort Chainmail_Belt = 1900;
         public const ushort Hunter_s_Coil = 1901;
@@ -1832,6 +1841,9 @@ namespace MHW_Editor.Armors {
         public const ushort Azure_Age_Layered_Torso = 2473;
         public const ushort Innerwear_aLayered_Torso = 2480;
         public const ushort Innerwear_bLayered_Torso = 2481;
+        public const ushort Artemis_Coil_a_plus = 2482;
+        public const ushort Artemis_Layered_Torso = 2483;
+        public const ushort Artemis_s_Waist_a_plus = 2484;
         public const ushort Leather_Trousers = 2508;
         public const ushort Chainmail_Trousers = 2509;
         public const ushort Hunter_s_Greaves = 2510;
@@ -2282,6 +2294,9 @@ namespace MHW_Editor.Armors {
         public const ushort Azure_Age_Layered_Legs = 3088;
         public const ushort Innerwear_aLayered_Legs = 3095;
         public const ushort Innerwear_bLayered_Legs = 3096;
+        public const ushort Artemis_Greaves_a_plus = 3097;
+        public const ushort Artemis_Layered_Legs = 3098;
+        public const ushort Artemis_s_Legs_a_plus = 3099;
         public const ushort Fair_Wind_Charm = 3123;
         public const ushort Poison_Charm_I = 3128;
         public const ushort Poison_Charm_II = 3129;

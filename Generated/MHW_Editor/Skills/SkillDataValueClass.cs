@@ -204,5 +204,6 @@ namespace MHW_Editor.Skills {
         public const ushort Alatreon_Divinity = 221;
         public const ushort Fatalis_Legend = 222;
         public const ushort Clutch_Claw_Boost = 223; // Clutch claw weapon attacks wound monsters easier, and have a better chance of dropping slinger ammo.
+        public const ushort New_World = 224;
     }
 }
