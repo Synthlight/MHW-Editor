@@ -57,7 +57,7 @@ namespace MHW_Editor.Structs.PlData {
 
             public static ObservableMhwStructCollection<Header> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Header>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2552,7 +2552,7 @@ namespace MHW_Editor.Structs.PlData {
 
             public static ObservableMhwStructCollection<Item_Params_1_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Item_Params_1_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -3171,7 +3171,7 @@ namespace MHW_Editor.Structs.PlData {
 
             public static ObservableMhwStructCollection<The_Rest> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<The_Rest>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }

@@ -73,7 +73,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Random_Sizes> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Random_Sizes>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -246,7 +246,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Crown_Table_Count> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Crown_Table_Count>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -328,7 +328,7 @@ namespace MHW_Editor.Structs.Monsters {
 
                 public static ObservableMhwStructCollection<Crown_Sizes> LoadData(BinaryReader reader, Crown_Tables parent) {
                     var list = new ObservableMhwStructCollection<Crown_Sizes>();
-                    var count = 38UL;
+                    const ulong count = 38UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
                     }

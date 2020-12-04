@@ -1017,7 +1017,7 @@ namespace MHW_Editor.Structs.PlData {
 
             public static ObservableMhwStructCollection<Scoutfly_Params_1_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Scoutfly_Params_1_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -1327,7 +1327,7 @@ namespace MHW_Editor.Structs.PlData {
 
             public static ObservableMhwStructCollection<Unknown_Arr_1_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Unknown_Arr_1_>();
-                var count = 12UL;
+                const ulong count = 12UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2296,7 +2296,7 @@ namespace MHW_Editor.Structs.PlData {
 
             public static ObservableMhwStructCollection<Scoutfly_Params_2_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Scoutfly_Params_2_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2834,7 +2834,7 @@ namespace MHW_Editor.Structs.PlData {
 
             public static ObservableMhwStructCollection<Unknown_Arr_2_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Unknown_Arr_2_>();
-                var count = 10UL;
+                const ulong count = 10UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -5203,7 +5203,7 @@ namespace MHW_Editor.Structs.PlData {
 
             public static ObservableMhwStructCollection<Scoutfly_Params_3_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Scoutfly_Params_3_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }

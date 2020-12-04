@@ -26,6 +26,7 @@ namespace MHW_Template.Struct_Generation {
             public readonly bool        customSaveLoad;
             public readonly string      uniqueIdFormula;
             public readonly string      description;
+            public readonly bool        customCount; // If not 010 link, and we need to calculate the count in code, set to true.
 
             public StructData(string      name,
                               List<Entry> entries,
@@ -36,7 +37,8 @@ namespace MHW_Template.Struct_Generation {
                               ArrayLink   _010Link        = null,
                               bool        customSaveLoad  = false,
                               string      uniqueIdFormula = null,
-                              string      description     = null) {
+                              string      description     = null,
+                              bool        customCount     = false) {
                 this.name            = name;
                 this.entries         = entries;
                 this.fixedSizeCount  = fixedSizeCount;
@@ -47,6 +49,7 @@ namespace MHW_Template.Struct_Generation {
                 this.customSaveLoad  = customSaveLoad;
                 this.uniqueIdFormula = uniqueIdFormula;
                 this.description     = description;
+                this.customCount     = customCount;
             }
 
             public string SafeName   => Regex.Replace(name.Replace("+", "Plus"), @"[^\w\d]+", "_");

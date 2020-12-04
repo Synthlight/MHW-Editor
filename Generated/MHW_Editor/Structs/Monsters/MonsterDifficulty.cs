@@ -57,7 +57,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Difficulty> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Difficulty>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -221,7 +221,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Solo_Stats> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Solo_Stats>();
-                var count = 1000UL;
+                const ulong count = 1000UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -399,7 +399,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Multi_Stats> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Multi_Stats>();
-                var count = 1000UL;
+                const ulong count = 1000UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -554,7 +554,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Unknown> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Unknown>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }

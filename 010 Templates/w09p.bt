@@ -285,98 +285,28 @@ typedef struct {
 
 Impact_SAED_Coordinates Impact_SAED_Coordinates_[21]<optimize=false, name="Impact SAED Coordinates">;
 
-// W09p Params (11)
-float Unk_147<name="Unk 147 (float)">;
-
-// Unk Arr 5
+// Elemental SAED Spawn Interval/Coords
 typedef struct {
-    float Unk_1<name="Unk 1 (float)">;
-    float Unk_2<name="Unk 2 (float)">;
-    float Unk_3<name="Unk 3 (float)">;
-    float Unk_4<name="Unk 4 (float)">;
-} Unk_Arr_5;
 
-Unk_Arr_5 Unk_Arr_5_<name="Unk Arr 5">;
+    // Spawn Intervals
+    typedef struct {
+        float Spawn_Interval<name="Spawn Interval (float)">;
+    } Spawn_Intervals;
 
-// W09p Params (12)
-float Unk_148<name="Unk 148 (float)">;
-float Unk_149<name="Unk 149 (float)">;
+    Spawn_Intervals Spawn_Intervals_<name="Spawn Intervals">;
 
-// Unk Arr 6
-typedef struct {
-    float Unk_1<name="Unk 1 (float)">;
-    float Unk_2<name="Unk 2 (float)">;
-    float Unk_3<name="Unk 3 (float)">;
-    float Unk_4<name="Unk 4 (float)">;
-} Unk_Arr_6;
+    // Coordinates
+    typedef struct {
+        float Unk_1<name="Unk 1 (float)">;
+        float Unk_2<name="Unk 2 (float)">;
+        float Unk_3<name="Unk 3 (float)">;
+        float Unk_4<name="Unk 4 (float)">;
+    } Coordinates;
 
-Unk_Arr_6 Unk_Arr_6_[2]<optimize=false, name="Unk Arr 6">;
+    Coordinates Coordinates_<name="Coordinates">;
+} Elemental_SAED_Spawn_Interval_Coords;
 
-// W09p Params (13)
-float Unk_150<name="Unk 150 (float)">;
-float Unk_151<name="Unk 151 (float)">;
-float Unk_152<name="Unk 152 (float)">;
-
-// Unk Arr 7
-typedef struct {
-    float Unk_1<name="Unk 1 (float)">;
-    float Unk_2<name="Unk 2 (float)">;
-    float Unk_3<name="Unk 3 (float)">;
-    float Unk_4<name="Unk 4 (float)">;
-} Unk_Arr_7;
-
-Unk_Arr_7 Unk_Arr_7_[3]<optimize=false, name="Unk Arr 7">;
-
-// W09p Params (14)
-float Unk_153<name="Unk 153 (float)">;
-float Unk_154<name="Unk 154 (float)">;
-float Unk_155<name="Unk 155 (float)">;
-float Unk_156<name="Unk 156 (float)">;
-
-// Unk Arr 8
-typedef struct {
-    float Unk_1<name="Unk 1 (float)">;
-    float Unk_2<name="Unk 2 (float)">;
-    float Unk_3<name="Unk 3 (float)">;
-    float Unk_4<name="Unk 4 (float)">;
-} Unk_Arr_8;
-
-Unk_Arr_8 Unk_Arr_8_[4]<optimize=false, name="Unk Arr 8">;
-
-// W09p Params (15)
-float Unk_157<name="Unk 157 (float)">;
-float Unk_158<name="Unk 158 (float)">;
-float Unk_159<name="Unk 159 (float)">;
-float Unk_160<name="Unk 160 (float)">;
-float Unk_161<name="Unk 161 (float)">;
-
-// Unk Arr 9
-typedef struct {
-    float Unk_1<name="Unk 1 (float)">;
-    float Unk_2<name="Unk 2 (float)">;
-    float Unk_3<name="Unk 3 (float)">;
-    float Unk_4<name="Unk 4 (float)">;
-} Unk_Arr_9;
-
-Unk_Arr_9 Unk_Arr_9_[5]<optimize=false, name="Unk Arr 9">;
-
-// W09p Params (16)
-float Unk_162<name="Unk 162 (float)">;
-float Unk_163<name="Unk 163 (float)">;
-float Unk_164<name="Unk 164 (float)">;
-float Unk_165<name="Unk 165 (float)">;
-float Unk_166<name="Unk 166 (float)">;
-float Unk_167<name="Unk 167 (float)">;
-
-// Unk Arr 10
-typedef struct {
-    float Unk_1<name="Unk 1 (float)">;
-    float Unk_2<name="Unk 2 (float)">;
-    float Unk_3<name="Unk 3 (float)">;
-    float Unk_4<name="Unk 4 (float)">;
-} Unk_Arr_10;
-
-Unk_Arr_10 Unk_Arr_10_[6]<optimize=false, name="Unk Arr 10">;
+Elemental_SAED_Spawn_Interval_Coords Elemental_SAED_Spawn_Interval_Coords_[6]<optimize=false, name="Elemental SAED Spawn Interval/Coords">;
 
 // W09p Params (17)
 float Unk_168<name="Unk 168 (float)">;

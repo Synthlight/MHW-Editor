@@ -356,7 +356,12 @@ namespace MHW_Template.Struct_Generation {
                     template.WriteLine(indentation, $"                var count = (ulong) countTarget.{linkEntry.SafeName};");
                 }
             } else {
-                template.WriteLine(indentation, $"                var count = {@struct.fixedSizeCount}UL;");
+                // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
+                if (@struct.customCount) {
+                    template.WriteLine(indentation, "                ulong count = GetLoadCount(reader, parent);");
+                } else {
+                    template.WriteLine(indentation, $"                const ulong count = {@struct.fixedSizeCount}UL;");
+                }
             }
 
             template.WriteLine(indentation, "                for (ulong i = 0; i < count; i++) {");

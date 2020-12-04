@@ -620,7 +620,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Soften_Params> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Soften_Params>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }

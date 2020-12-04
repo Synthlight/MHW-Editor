@@ -62,7 +62,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_1_Shared_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_1_Shared_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -175,7 +175,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<Unk_Arr_1_Shared_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Unk_Arr_1_Shared_>();
-                var count = 20UL;
+                const ulong count = 20UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -678,7 +678,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_2_Shared_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_2_Shared_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -872,7 +872,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<Guard_Angles_Shared_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Guard_Angles_Shared_>();
-                var count = 2UL;
+                const ulong count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -1787,7 +1787,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_3_Shared_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_3_Shared_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2238,7 +2238,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<Unk_Arr_2_Shared_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Unk_Arr_2_Shared_>();
-                var count = 8UL;
+                const ulong count = 8UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2653,7 +2653,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_4_Shared_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_4_Shared_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2961,7 +2961,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_5_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_5_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -3110,7 +3110,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<Action_Param_Relate_Vault_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Action_Param_Relate_Vault_>();
-                var count = 16UL;
+                const ulong count = 16UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -3199,7 +3199,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_6_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_6_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -3316,7 +3316,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<Action_Param_Relate_Vault_Dance_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Action_Param_Relate_Vault_Dance_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -3387,7 +3387,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_7_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_7_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -3500,7 +3500,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<Action_Param_Relate_Mid_air_Evade_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Action_Param_Relate_Mid_air_Evade_>();
-                var count = 9UL;
+                const ulong count = 9UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -3571,7 +3571,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_8_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_8_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -3684,7 +3684,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<Action_Param_Relate_Jumping_Attacks_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Action_Param_Relate_Jumping_Attacks_>();
-                var count = 22UL;
+                const ulong count = 22UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -3791,7 +3791,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_9_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_9_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -3912,7 +3912,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_>();
-                var count = 4UL;
+                const ulong count = 4UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -4703,7 +4703,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_10_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_10_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -5201,7 +5201,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<Kinsect_Stats> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Kinsect_Stats>();
-                var count = 9UL;
+                const ulong count = 9UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -5734,7 +5734,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_11_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_11_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -5928,7 +5928,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<Unk_Arr_4_All_sint8_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Unk_Arr_4_All_sint8_>();
-                var count = 14UL;
+                const ulong count = 14UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -6051,7 +6051,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_12_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_12_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -6281,7 +6281,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<Unk_Arr_5_All_sint8_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Unk_Arr_5_All_sint8_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -6420,7 +6420,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<W10p_Params_13_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<W10p_Params_13_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -6545,7 +6545,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public static ObservableMhwStructCollection<Action_Param_Relate_Clutch_Attack_Finish_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Action_Param_Relate_Clutch_Attack_Finish_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }

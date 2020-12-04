@@ -127,7 +127,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Parts> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Parts>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -529,7 +529,7 @@ namespace MHW_Editor.Structs.Monsters {
 
                 public static ObservableMhwStructCollection<Parts1> LoadData(BinaryReader reader, Flinches parent) {
                     var list = new ObservableMhwStructCollection<Parts1>();
-                    var count = 1UL;
+                    const ulong count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
                     }
@@ -1075,7 +1075,7 @@ namespace MHW_Editor.Structs.Monsters {
 
                 public static ObservableMhwStructCollection<Parts2> LoadData(BinaryReader reader, Flinches parent) {
                     var list = new ObservableMhwStructCollection<Parts2>();
-                    var count = 1UL;
+                    const ulong count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
                     }
@@ -1841,7 +1841,7 @@ namespace MHW_Editor.Structs.Monsters {
 
                 public static ObservableMhwStructCollection<Parts3> LoadData(BinaryReader reader, Flinches parent) {
                     var list = new ObservableMhwStructCollection<Parts3>();
-                    var count = 1UL;
+                    const ulong count = 1UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
                     }
@@ -2101,7 +2101,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Hitzone_Header> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Hitzone_Header>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2358,7 +2358,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Sever_Header> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Sever_Header>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2564,7 +2564,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Unk_Header> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Unk_Header>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2840,7 +2840,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Unknown> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Unknown>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }

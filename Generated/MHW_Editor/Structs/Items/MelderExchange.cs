@@ -73,7 +73,7 @@ namespace MHW_Editor.Structs.Items {
 
             public static ObservableMhwStructCollection<Melder_Exchange> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Melder_Exchange>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -166,7 +166,7 @@ namespace MHW_Editor.Structs.Items {
 
                 public static ObservableMhwStructCollection<Items> LoadData(BinaryReader reader, Item_Box parent) {
                     var list = new ObservableMhwStructCollection<Items>();
-                    var count = 239UL;
+                    const ulong count = 239UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
                     }

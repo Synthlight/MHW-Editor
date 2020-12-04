@@ -73,7 +73,7 @@ namespace MHW_Editor.Structs.Items {
 
             public static ObservableMhwStructCollection<Header> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Header>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -130,7 +130,7 @@ namespace MHW_Editor.Structs.Items {
 
                 public static ObservableMhwStructCollection<Items> LoadData(BinaryReader reader, Entries parent) {
                     var list = new ObservableMhwStructCollection<Items>();
-                    var count = 10UL;
+                    const ulong count = 10UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
                     }
@@ -178,7 +178,7 @@ namespace MHW_Editor.Structs.Items {
 
                 public static ObservableMhwStructCollection<Counts> LoadData(BinaryReader reader, Entries parent) {
                     var list = new ObservableMhwStructCollection<Counts>();
-                    var count = 10UL;
+                    const ulong count = 10UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
                     }
@@ -226,7 +226,7 @@ namespace MHW_Editor.Structs.Items {
 
                 public static ObservableMhwStructCollection<Percents> LoadData(BinaryReader reader, Entries parent) {
                     var list = new ObservableMhwStructCollection<Percents>();
-                    var count = 10UL;
+                    const ulong count = 10UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
                     }
@@ -274,7 +274,7 @@ namespace MHW_Editor.Structs.Items {
 
                 public static ObservableMhwStructCollection<Carve_Animations> LoadData(BinaryReader reader, Entries parent) {
                     var list = new ObservableMhwStructCollection<Carve_Animations>();
-                    var count = 10UL;
+                    const ulong count = 10UL;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
                     }

@@ -96,7 +96,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_1_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_1_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -249,7 +249,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Poison> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Poison>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -326,7 +326,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_2_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_2_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -484,7 +484,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Sleep_Paralysis_Stun_Exhaustion> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Sleep_Paralysis_Stun_Exhaustion>();
-                var count = 4UL;
+                const ulong count = 4UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -561,7 +561,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_3_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_3_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -719,7 +719,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Mount_Blastblight> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Mount_Blastblight>();
-                var count = 2UL;
+                const ulong count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -778,7 +778,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_4_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_4_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -932,7 +932,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Capture> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Capture>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -1009,7 +1009,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_5_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_5_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -1167,7 +1167,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Dizziness_LR_HR> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Dizziness_LR_HR>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -1226,7 +1226,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_6_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_6_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -1380,7 +1380,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Dizziness_MR> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Dizziness_MR>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -1565,7 +1565,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_7_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_7_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -1747,7 +1747,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Mount_Knock_Down> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Mount_Knock_Down>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -1806,7 +1806,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_8_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_8_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -1960,7 +1960,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Dung> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Dung>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2037,7 +2037,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_9_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_9_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2195,7 +2195,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk>();
-                var count = 4UL;
+                const ulong count = 4UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2272,7 +2272,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_10_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_10_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2430,7 +2430,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Dragonseal> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Dragonseal>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2489,7 +2489,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Damage_Attributes_11_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Damage_Attributes_11_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2643,7 +2643,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Unk> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Unk>();
-                var count = 2UL;
+                const ulong count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2729,7 +2729,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Unk_Array> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Unk_Array>();
-                var count = 6UL;
+                const ulong count = 6UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2880,7 +2880,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Concussion> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Concussion>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -2996,7 +2996,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Rage_Build_Up> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Rage_Build_Up>();
-                var count = 2UL;
+                const ulong count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -3151,7 +3151,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Status_Buildup_Clagger> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Status_Buildup_Clagger>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }

@@ -88,7 +88,7 @@ namespace MHW_Editor.Structs.Items {
 
             public static ObservableMhwStructCollection<Supply_Data> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Supply_Data>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -158,7 +158,7 @@ namespace MHW_Editor.Structs.Items {
 
             public static ObservableMhwStructCollection<Item_Box> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Item_Box>();
-                var count = 24UL;
+                const ulong count = 24UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -202,7 +202,7 @@ namespace MHW_Editor.Structs.Items {
 
             public static ObservableMhwStructCollection<Item_Box_Scaling> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Item_Box_Scaling>();
-                var count = 3UL;
+                const ulong count = 3UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -266,7 +266,7 @@ namespace MHW_Editor.Structs.Items {
 
             public static ObservableMhwStructCollection<Ammo_Box> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Ammo_Box>();
-                var count = 16UL;
+                const ulong count = 16UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -310,7 +310,7 @@ namespace MHW_Editor.Structs.Items {
 
             public static ObservableMhwStructCollection<Ammo_Box_Scaling> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Ammo_Box_Scaling>();
-                var count = 3UL;
+                const ulong count = 3UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }

@@ -73,7 +73,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Claw_Grab> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Claw_Grab>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -479,7 +479,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Claw_Chance_Params> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Claw_Chance_Params>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }

@@ -96,7 +96,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Monster_Rage> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Monster_Rage>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -369,7 +369,7 @@ namespace MHW_Editor.Structs.Monsters {
 
             public static ObservableMhwStructCollection<Rage_Stats> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Rage_Stats>();
-                var count = 2UL;
+                const ulong count = 2UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }

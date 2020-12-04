@@ -73,7 +73,7 @@ namespace MHW_Editor.Structs.Misc {
 
             public static ObservableMhwStructCollection<Motion_Blend_Data_1_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Motion_Blend_Data_1_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
@@ -460,7 +460,7 @@ namespace MHW_Editor.Structs.Misc {
 
             public static ObservableMhwStructCollection<Motion_Blend_Data_2_> LoadData(BinaryReader reader) {
                 var list = new ObservableMhwStructCollection<Motion_Blend_Data_2_>();
-                var count = 1UL;
+                const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
                 }
