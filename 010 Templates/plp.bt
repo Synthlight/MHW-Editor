@@ -13,6 +13,7 @@ typedef struct {
 
 Header Header_<name="Header">;
 
+// Player Params (1)
 float Gravity<name="Gravity (float)">;
 float Gravity_Speed_Rate<name="Gravity Speed Rate (float)">;
 float Unk_1<name="Unk 1 (float)">;
@@ -82,6 +83,7 @@ typedef struct {
 
 Player_Params_2_Unk_Array_1_ Player_Params_2_Unk_Array_1__[12]<optimize=false, name="Player Params (2) - Unk Array (1)">;
 
+// Player Params (3)
 float Unk_56<name="Unk 56 (float)">;
 uint Unk_57<name="Unk 57 (uint)">;
 uint Unk_58<name="Unk 58 (uint)">;
@@ -192,6 +194,7 @@ typedef struct {
 
 CD_Block_1_ CD_Block_1__[4]<optimize=false, name="CD Block (1)">;
 
+// Player Params (4)
 float Unk_74<name="Unk 74 (float)">;
 float Unk_75<name="Unk 75 (float)">;
 float Walk_Turn_Tilt_Bow_<name="Walk Turn Tilt (Bow) (float)">;
@@ -329,6 +332,7 @@ typedef struct {
 
 Skipping_Ahead_1_ Skipping_Ahead_1__<name="Skipping Ahead (1)">;
 
+// Player Params (7) - HR/MR Augment Params
 ubyte Wp_HR_Augment_Attack_Bonus_1_<name="Wp HR Augment Attack Bonus (1) (ubyte)">;
 ubyte Wp_HR_Augment_Attack_Bonus_2_<name="Wp HR Augment Attack Bonus (2) (ubyte)">;
 ubyte Wp_HR_Augment_Attack_Bonus_3_<name="Wp HR Augment Attack Bonus (3) (ubyte)">;
@@ -419,6 +423,7 @@ typedef struct {
 
 Skipping_Ahead_2_ Skipping_Ahead_2__<name="Skipping Ahead (2)">;
 
+// Player Params (8) - Slinger Params
 ubyte Max_Slinger_Capacity_Stone<name="Max Slinger Capacity: Stone (ubyte)">;
 ubyte Max_Slinger_Capacity_Redpit<name="Max Slinger Capacity: Redpit (ubyte)">;
 ubyte Max_Slinger_Capacity_Brightmoss<name="Max Slinger Capacity: Brightmoss (ubyte)">;

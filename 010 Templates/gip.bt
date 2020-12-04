@@ -5,6 +5,7 @@
 //  Category: MHW-Editor
 //------------------------------------------------
 
+// Scoutfly Params (1)
 uint Magic_1<name="Magic 1 (uint)">;
 char GIP[4]<optimize=false, name="GIP">;
 uint Unk_1<name="Unk 1 (uint)">;
@@ -71,6 +72,7 @@ typedef struct {
 
 Unknown_Arr_1_ Unknown_Arr_1__[12]<optimize=false, name="Unknown Arr (1)">;
 
+// Scoutfly Params (2)
 float Unk_54<name="Unk 54 (float)">;
 float Unk_55<name="Unk 55 (float)">;
 float Unk_56<name="Unk 56 (float)">;
@@ -150,6 +152,7 @@ typedef struct {
 
 Unknown_Arr_2_ Unknown_Arr_2__[10]<optimize=false, name="Unknown Arr (2)">;
 
+// Scoutfly Params (3)
 uint Unk_106<name="Unk 106 (uint)">;
 uint Unk_107<name="Unk 107 (uint)">;
 uint Unk_108<name="Unk 108 (uint)">;

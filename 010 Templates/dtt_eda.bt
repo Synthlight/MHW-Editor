@@ -29,6 +29,7 @@ typedef struct {
 
 Status_Buildup_Poison Status_Buildup_Poison_<name="Status Buildup: Poison">;
 
+// Monster Damage Attributes (2)
 uint Poison_Damage<name="Poison Damage (uint)">;
 float Poison_Interval<name="Poison Interval (float)">;
 
@@ -46,6 +47,7 @@ typedef struct {
 
 Status_Buildup_Sleep_Paralysis_Stun_Exhaustion Status_Buildup_Sleep_Paralysis_Stun_Exhaustion_[4]<optimize=false, name="Status Buildup: Sleep/Paralysis/Stun/Exhaustion">;
 
+// Monster Damage Attributes (3)
 uint Unk_1<name="Unk 1 (uint)">;
 float Exhaustion_Damage<name="Exhaustion Damage (float)">;
 
@@ -63,6 +65,7 @@ typedef struct {
 
 Status_Buildup_Mount_Blastblight Status_Buildup_Mount_Blastblight_[2]<optimize=false, name="Status Buildup: Mount/Blastblight">;
 
+// Monster Damage Attributes (4)
 uint Blastblight_Damage<name="Blastblight Damage (uint)">;
 
 // Status Buildup: Capture
@@ -79,6 +82,7 @@ typedef struct {
 
 Status_Buildup_Capture Status_Buildup_Capture_<name="Status Buildup: Capture">;
 
+// Monster Damage Attributes (5)
 uint Capture_LR_HR<name="Capture LR/HR (uint)">;
 uint Capture_MR<name="Capture MR (uint)">;
 
@@ -96,6 +100,7 @@ typedef struct {
 
 Status_Buildup_Dizziness_LR_HR Status_Buildup_Dizziness_LR_HR_<name="Status Buildup: Dizziness LR/HR">;
 
+// Monster Damage Attributes (6)
 uint Unk_1<name="Unk 1 (uint)">;
 
 // Status Buildup: Dizziness MR
@@ -112,6 +117,7 @@ typedef struct {
 
 Status_Buildup_Dizziness_MR Status_Buildup_Dizziness_MR_<name="Status Buildup: Dizziness MR">;
 
+// Monster Damage Attributes (7)
 float Dizziness_MR_Buildup<name="Dizziness MR Buildup (float)">;
 float Dizziness_MR_Max_Cap<name="Dizziness MR Max Cap (float)">;
 float Unk_1<name="Unk 1 (float)">;
@@ -135,6 +141,7 @@ typedef struct {
 
 Status_Buildup_Mount_Knock_Down Status_Buildup_Mount_Knock_Down_<name="Status Buildup: Mount Knock Down">;
 
+// Monster Damage Attributes (8)
 uint Mount_Knock_Down_Damage<name="Mount Knock Down Damage (uint)">;
 
 // Status Buildup: Dung
@@ -151,6 +158,7 @@ typedef struct {
 
 Status_Buildup_Dung Status_Buildup_Dung_<name="Status Buildup: Dung">;
 
+// Monster Damage Attributes (9)
 uint Unk_1<name="Unk 1 (uint)">;
 float Unk_2<name="Unk 2 (float)">;
 
@@ -168,6 +176,7 @@ typedef struct {
 
 Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk Status_Buildup_Shock_Trap_Pitfall_Trap_Ivy_Trap_Unk_[4]<optimize=false, name="Status Buildup: Shock Trap/Pitfall Trap/Ivy Trap/Unk">;
 
+// Monster Damage Attributes (10)
 uint Unk_1<name="Unk 1 (uint)">;
 float Unk_2<name="Unk 2 (float)">;
 
@@ -185,6 +194,7 @@ typedef struct {
 
 Status_Buildup_Dragonseal Status_Buildup_Dragonseal_<name="Status Buildup: Dragonseal">;
 
+// Monster Damage Attributes (11)
 uint Dragonseal_Aura<name="Dragonseal Aura (uint)">;
 
 // Status Buildup: Unk

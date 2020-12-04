@@ -13,6 +13,7 @@ typedef struct {
 
 Header Header_<name="Header">;
 
+// Item Params (1)
 float Powder_Radius<name="Powder Radius (float)">;
 uint Potion_Power<name="Potion Power (uint)">;
 float Unk2<name="Unk2 (float)">;

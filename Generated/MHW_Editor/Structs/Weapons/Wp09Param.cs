@@ -2831,113 +2831,113 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_94_offset { get; private set; }
 
-            protected float Unk_95_raw;
-            public const string Unk_95_displayName = "Unk 95";
-            public const int Unk_95_sortIndex = 250;
-            [SortOrder(Unk_95_sortIndex)]
-            [DisplayName(Unk_95_displayName)]
-            public virtual float Unk_95 {
-                get => Unk_95_raw;
+            protected float All_Sword_Phial_Damage_Interval_raw;
+            public const string All_Sword_Phial_Damage_Interval_displayName = "All Sword Phial Damage Interval";
+            public const int All_Sword_Phial_Damage_Interval_sortIndex = 250;
+            [SortOrder(All_Sword_Phial_Damage_Interval_sortIndex)]
+            [DisplayName(All_Sword_Phial_Damage_Interval_displayName)]
+            public virtual float All_Sword_Phial_Damage_Interval {
+                get => All_Sword_Phial_Damage_Interval_raw;
                 set {
-                    if (Unk_95_raw == value) return;
-                    Unk_95_raw = value;
-                    ChangedItems.Add(nameof(Unk_95));
-                    OnPropertyChanged(nameof(Unk_95));
+                    if (All_Sword_Phial_Damage_Interval_raw == value) return;
+                    All_Sword_Phial_Damage_Interval_raw = value;
+                    ChangedItems.Add(nameof(All_Sword_Phial_Damage_Interval));
+                    OnPropertyChanged(nameof(All_Sword_Phial_Damage_Interval));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_95_offset { get; private set; }
+            public long All_Sword_Phial_Damage_Interval_offset { get; private set; }
 
-            protected float Unk_96_raw;
-            public const string Unk_96_displayName = "Unk 96";
-            public const int Unk_96_sortIndex = 300;
-            [SortOrder(Unk_96_sortIndex)]
-            [DisplayName(Unk_96_displayName)]
-            public virtual float Unk_96 {
-                get => Unk_96_raw;
+            protected float Shield_Thrust_Phial_Damage_Interval_raw;
+            public const string Shield_Thrust_Phial_Damage_Interval_displayName = "Shield Thrust Phial Damage Interval";
+            public const int Shield_Thrust_Phial_Damage_Interval_sortIndex = 300;
+            [SortOrder(Shield_Thrust_Phial_Damage_Interval_sortIndex)]
+            [DisplayName(Shield_Thrust_Phial_Damage_Interval_displayName)]
+            public virtual float Shield_Thrust_Phial_Damage_Interval {
+                get => Shield_Thrust_Phial_Damage_Interval_raw;
                 set {
-                    if (Unk_96_raw == value) return;
-                    Unk_96_raw = value;
-                    ChangedItems.Add(nameof(Unk_96));
-                    OnPropertyChanged(nameof(Unk_96));
+                    if (Shield_Thrust_Phial_Damage_Interval_raw == value) return;
+                    Shield_Thrust_Phial_Damage_Interval_raw = value;
+                    ChangedItems.Add(nameof(Shield_Thrust_Phial_Damage_Interval));
+                    OnPropertyChanged(nameof(Shield_Thrust_Phial_Damage_Interval));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_96_offset { get; private set; }
+            public long Shield_Thrust_Phial_Damage_Interval_offset { get; private set; }
 
-            protected float Unk_97_raw;
-            public const string Unk_97_displayName = "Unk 97";
-            public const int Unk_97_sortIndex = 350;
-            [SortOrder(Unk_97_sortIndex)]
-            [DisplayName(Unk_97_displayName)]
-            public virtual float Unk_97 {
-                get => Unk_97_raw;
+            protected float Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__raw;
+            public const string Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__displayName = "Axe Elemental Discharge 1 / Rushing Element Discharge 1 Phial Damage Interval (Same Move Just Different Input)";
+            public const int Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__sortIndex = 350;
+            [SortOrder(Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__sortIndex)]
+            [DisplayName(Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__displayName)]
+            public virtual float Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input_ {
+                get => Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__raw;
                 set {
-                    if (Unk_97_raw == value) return;
-                    Unk_97_raw = value;
-                    ChangedItems.Add(nameof(Unk_97));
-                    OnPropertyChanged(nameof(Unk_97));
+                    if (Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__raw == value) return;
+                    Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__raw = value;
+                    ChangedItems.Add(nameof(Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input_));
+                    OnPropertyChanged(nameof(Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_97_offset { get; private set; }
+            public long Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__offset { get; private set; }
 
-            protected float Unk_98_raw;
-            public const string Unk_98_displayName = "Unk 98";
-            public const int Unk_98_sortIndex = 400;
-            [SortOrder(Unk_98_sortIndex)]
-            [DisplayName(Unk_98_displayName)]
-            public virtual float Unk_98 {
-                get => Unk_98_raw;
+            protected float Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_raw;
+            public const string Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_displayName = "Axe Elemental Discharge 2 First Hit Phial Damage Interval";
+            public const int Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_sortIndex = 400;
+            [SortOrder(Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_sortIndex)]
+            [DisplayName(Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_displayName)]
+            public virtual float Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval {
+                get => Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_raw;
                 set {
-                    if (Unk_98_raw == value) return;
-                    Unk_98_raw = value;
-                    ChangedItems.Add(nameof(Unk_98));
-                    OnPropertyChanged(nameof(Unk_98));
+                    if (Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_raw == value) return;
+                    Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_raw = value;
+                    ChangedItems.Add(nameof(Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval));
+                    OnPropertyChanged(nameof(Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_98_offset { get; private set; }
+            public long Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_offset { get; private set; }
 
-            protected float Unk_99_raw;
-            public const string Unk_99_displayName = "Unk 99";
-            public const int Unk_99_sortIndex = 450;
-            [SortOrder(Unk_99_sortIndex)]
-            [DisplayName(Unk_99_displayName)]
-            public virtual float Unk_99 {
-                get => Unk_99_raw;
+            protected float Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_raw;
+            public const string Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_displayName = "Axe Elemental Discharge 2 Second Hit Phial Damage Interval";
+            public const int Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_sortIndex = 450;
+            [SortOrder(Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_sortIndex)]
+            [DisplayName(Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_displayName)]
+            public virtual float Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval {
+                get => Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_raw;
                 set {
-                    if (Unk_99_raw == value) return;
-                    Unk_99_raw = value;
-                    ChangedItems.Add(nameof(Unk_99));
-                    OnPropertyChanged(nameof(Unk_99));
+                    if (Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_raw == value) return;
+                    Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_raw = value;
+                    ChangedItems.Add(nameof(Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval));
+                    OnPropertyChanged(nameof(Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_99_offset { get; private set; }
+            public long Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_offset { get; private set; }
 
-            protected float Unk_100_raw;
-            public const string Unk_100_displayName = "Unk 100";
-            public const int Unk_100_sortIndex = 500;
-            [SortOrder(Unk_100_sortIndex)]
-            [DisplayName(Unk_100_displayName)]
-            public virtual float Unk_100 {
-                get => Unk_100_raw;
+            protected float AED_Phial_Damage_Interval_raw;
+            public const string AED_Phial_Damage_Interval_displayName = "AED Phial Damage Interval";
+            public const int AED_Phial_Damage_Interval_sortIndex = 500;
+            [SortOrder(AED_Phial_Damage_Interval_sortIndex)]
+            [DisplayName(AED_Phial_Damage_Interval_displayName)]
+            public virtual float AED_Phial_Damage_Interval {
+                get => AED_Phial_Damage_Interval_raw;
                 set {
-                    if (Unk_100_raw == value) return;
-                    Unk_100_raw = value;
-                    ChangedItems.Add(nameof(Unk_100));
-                    OnPropertyChanged(nameof(Unk_100));
+                    if (AED_Phial_Damage_Interval_raw == value) return;
+                    AED_Phial_Damage_Interval_raw = value;
+                    ChangedItems.Add(nameof(AED_Phial_Damage_Interval));
+                    OnPropertyChanged(nameof(AED_Phial_Damage_Interval));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_100_offset { get; private set; }
+            public long AED_Phial_Damage_Interval_offset { get; private set; }
 
             protected byte Charge_to_Reach_Yellow_Phial_raw;
             public const string Charge_to_Reach_Yellow_Phial_displayName = "Charge to Reach Yellow Phial";
@@ -3047,23 +3047,23 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Overcharged_Phial_offset { get; private set; }
 
-            protected byte Unk_107_raw;
-            public const string Unk_107_displayName = "Unk 107";
-            public const int Unk_107_sortIndex = 850;
-            [SortOrder(Unk_107_sortIndex)]
-            [DisplayName(Unk_107_displayName)]
-            public virtual byte Unk_107 {
-                get => Unk_107_raw;
+            protected byte Phial_Charge_Limit_raw;
+            public const string Phial_Charge_Limit_displayName = "Phial Charge Limit";
+            public const int Phial_Charge_Limit_sortIndex = 850;
+            [SortOrder(Phial_Charge_Limit_sortIndex)]
+            [DisplayName(Phial_Charge_Limit_displayName)]
+            public virtual byte Phial_Charge_Limit {
+                get => Phial_Charge_Limit_raw;
                 set {
-                    if (Unk_107_raw == value) return;
-                    Unk_107_raw = value;
-                    ChangedItems.Add(nameof(Unk_107));
-                    OnPropertyChanged(nameof(Unk_107));
+                    if (Phial_Charge_Limit_raw == value) return;
+                    Phial_Charge_Limit_raw = value;
+                    ChangedItems.Add(nameof(Phial_Charge_Limit));
+                    OnPropertyChanged(nameof(Phial_Charge_Limit));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_107_offset { get; private set; }
+            public long Phial_Charge_Limit_offset { get; private set; }
 
             protected float Axe_Mode_Damage_Multiplier_raw;
             public const string Axe_Mode_Damage_Multiplier_displayName = "Axe Mode Damage Multiplier";
@@ -3209,41 +3209,41 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Shield_Charge_Guard_Threshold_Bonus_offset { get; private set; }
 
-            protected float Unk_116_raw;
-            public const string Unk_116_displayName = "Unk 116";
-            public const int Unk_116_sortIndex = 1300;
-            [SortOrder(Unk_116_sortIndex)]
-            [DisplayName(Unk_116_displayName)]
-            public virtual float Unk_116 {
-                get => Unk_116_raw;
+            protected float Charged_Shield_Warning_Duration_When_About_to_End_raw;
+            public const string Charged_Shield_Warning_Duration_When_About_to_End_displayName = "Charged Shield Warning Duration When About to End";
+            public const int Charged_Shield_Warning_Duration_When_About_to_End_sortIndex = 1300;
+            [SortOrder(Charged_Shield_Warning_Duration_When_About_to_End_sortIndex)]
+            [DisplayName(Charged_Shield_Warning_Duration_When_About_to_End_displayName)]
+            public virtual float Charged_Shield_Warning_Duration_When_About_to_End {
+                get => Charged_Shield_Warning_Duration_When_About_to_End_raw;
                 set {
-                    if (Unk_116_raw == value) return;
-                    Unk_116_raw = value;
-                    ChangedItems.Add(nameof(Unk_116));
-                    OnPropertyChanged(nameof(Unk_116));
+                    if (Charged_Shield_Warning_Duration_When_About_to_End_raw == value) return;
+                    Charged_Shield_Warning_Duration_When_About_to_End_raw = value;
+                    ChangedItems.Add(nameof(Charged_Shield_Warning_Duration_When_About_to_End));
+                    OnPropertyChanged(nameof(Charged_Shield_Warning_Duration_When_About_to_End));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_116_offset { get; private set; }
+            public long Charged_Shield_Warning_Duration_When_About_to_End_offset { get; private set; }
 
-            protected float Unk_117_raw;
-            public const string Unk_117_displayName = "Unk 117";
-            public const int Unk_117_sortIndex = 1350;
-            [SortOrder(Unk_117_sortIndex)]
-            [DisplayName(Unk_117_displayName)]
-            public virtual float Unk_117 {
-                get => Unk_117_raw;
+            protected float Charged_Sword_Warning_Duration_When_About_to_End_raw;
+            public const string Charged_Sword_Warning_Duration_When_About_to_End_displayName = "Charged Sword Warning Duration When About to End";
+            public const int Charged_Sword_Warning_Duration_When_About_to_End_sortIndex = 1350;
+            [SortOrder(Charged_Sword_Warning_Duration_When_About_to_End_sortIndex)]
+            [DisplayName(Charged_Sword_Warning_Duration_When_About_to_End_displayName)]
+            public virtual float Charged_Sword_Warning_Duration_When_About_to_End {
+                get => Charged_Sword_Warning_Duration_When_About_to_End_raw;
                 set {
-                    if (Unk_117_raw == value) return;
-                    Unk_117_raw = value;
-                    ChangedItems.Add(nameof(Unk_117));
-                    OnPropertyChanged(nameof(Unk_117));
+                    if (Charged_Sword_Warning_Duration_When_About_to_End_raw == value) return;
+                    Charged_Sword_Warning_Duration_When_About_to_End_raw = value;
+                    ChangedItems.Add(nameof(Charged_Sword_Warning_Duration_When_About_to_End));
+                    OnPropertyChanged(nameof(Charged_Sword_Warning_Duration_When_About_to_End));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_117_offset { get; private set; }
+            public long Charged_Sword_Warning_Duration_When_About_to_End_offset { get; private set; }
 
             protected float Sword_Charge_Duration_raw;
             public const string Sword_Charge_Duration_displayName = "Sword Charge Duration";
@@ -3357,18 +3357,18 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_93_raw = reader.ReadSingle();
                 data.Unk_94_offset = reader.BaseStream.Position;
                 data.Unk_94_raw = reader.ReadSingle();
-                data.Unk_95_offset = reader.BaseStream.Position;
-                data.Unk_95_raw = reader.ReadSingle();
-                data.Unk_96_offset = reader.BaseStream.Position;
-                data.Unk_96_raw = reader.ReadSingle();
-                data.Unk_97_offset = reader.BaseStream.Position;
-                data.Unk_97_raw = reader.ReadSingle();
-                data.Unk_98_offset = reader.BaseStream.Position;
-                data.Unk_98_raw = reader.ReadSingle();
-                data.Unk_99_offset = reader.BaseStream.Position;
-                data.Unk_99_raw = reader.ReadSingle();
-                data.Unk_100_offset = reader.BaseStream.Position;
-                data.Unk_100_raw = reader.ReadSingle();
+                data.All_Sword_Phial_Damage_Interval_offset = reader.BaseStream.Position;
+                data.All_Sword_Phial_Damage_Interval_raw = reader.ReadSingle();
+                data.Shield_Thrust_Phial_Damage_Interval_offset = reader.BaseStream.Position;
+                data.Shield_Thrust_Phial_Damage_Interval_raw = reader.ReadSingle();
+                data.Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__offset = reader.BaseStream.Position;
+                data.Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__raw = reader.ReadSingle();
+                data.Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_offset = reader.BaseStream.Position;
+                data.Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_raw = reader.ReadSingle();
+                data.Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_offset = reader.BaseStream.Position;
+                data.Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_raw = reader.ReadSingle();
+                data.AED_Phial_Damage_Interval_offset = reader.BaseStream.Position;
+                data.AED_Phial_Damage_Interval_raw = reader.ReadSingle();
                 data.Charge_to_Reach_Yellow_Phial_offset = reader.BaseStream.Position;
                 data.Charge_to_Reach_Yellow_Phial_raw = reader.ReadByte();
                 data.Charge_to_Reach_Red_Phial_offset = reader.BaseStream.Position;
@@ -3381,8 +3381,8 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Charge_Gained_When_Blocking_a_Large_Knock_back_raw = reader.ReadByte();
                 data.Overcharged_Phial_offset = reader.BaseStream.Position;
                 data.Overcharged_Phial_raw = reader.ReadByte();
-                data.Unk_107_offset = reader.BaseStream.Position;
-                data.Unk_107_raw = reader.ReadByte();
+                data.Phial_Charge_Limit_offset = reader.BaseStream.Position;
+                data.Phial_Charge_Limit_raw = reader.ReadByte();
                 data.Axe_Mode_Damage_Multiplier_offset = reader.BaseStream.Position;
                 data.Axe_Mode_Damage_Multiplier_raw = reader.ReadSingle();
                 data.Guard_Point_Sharpness_Cost_Multiplier_offset = reader.BaseStream.Position;
@@ -3399,10 +3399,10 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Phial_Duration_raw = reader.ReadSingle();
                 data.Shield_Charge_Guard_Threshold_Bonus_offset = reader.BaseStream.Position;
                 data.Shield_Charge_Guard_Threshold_Bonus_raw = reader.ReadByte();
-                data.Unk_116_offset = reader.BaseStream.Position;
-                data.Unk_116_raw = reader.ReadSingle();
-                data.Unk_117_offset = reader.BaseStream.Position;
-                data.Unk_117_raw = reader.ReadSingle();
+                data.Charged_Shield_Warning_Duration_When_About_to_End_offset = reader.BaseStream.Position;
+                data.Charged_Shield_Warning_Duration_When_About_to_End_raw = reader.ReadSingle();
+                data.Charged_Sword_Warning_Duration_When_About_to_End_offset = reader.BaseStream.Position;
+                data.Charged_Sword_Warning_Duration_When_About_to_End_raw = reader.ReadSingle();
                 data.Sword_Charge_Duration_offset = reader.BaseStream.Position;
                 data.Sword_Charge_Duration_raw = reader.ReadSingle();
                 data.Unk_119_offset = reader.BaseStream.Position;
@@ -3421,19 +3421,19 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Unk_92_raw);
                 writer.Write(Unk_93_raw);
                 writer.Write(Unk_94_raw);
-                writer.Write(Unk_95_raw);
-                writer.Write(Unk_96_raw);
-                writer.Write(Unk_97_raw);
-                writer.Write(Unk_98_raw);
-                writer.Write(Unk_99_raw);
-                writer.Write(Unk_100_raw);
+                writer.Write(All_Sword_Phial_Damage_Interval_raw);
+                writer.Write(Shield_Thrust_Phial_Damage_Interval_raw);
+                writer.Write(Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__raw);
+                writer.Write(Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_raw);
+                writer.Write(Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_raw);
+                writer.Write(AED_Phial_Damage_Interval_raw);
                 writer.Write(Charge_to_Reach_Yellow_Phial_raw);
                 writer.Write(Charge_to_Reach_Red_Phial_raw);
                 writer.Write(Charge_Gained_When_Blocking_a_Small_Knock_back_raw);
                 writer.Write(Charge_Gained_When_Blocking_a_Medium_Knock_back_raw);
                 writer.Write(Charge_Gained_When_Blocking_a_Large_Knock_back_raw);
                 writer.Write(Overcharged_Phial_raw);
-                writer.Write(Unk_107_raw);
+                writer.Write(Phial_Charge_Limit_raw);
                 writer.Write(Axe_Mode_Damage_Multiplier_raw);
                 writer.Write(Guard_Point_Sharpness_Cost_Multiplier_raw);
                 writer.Write(Impact_Phial_Damage_Multiplier_Not_for_SAED__raw);
@@ -3442,8 +3442,8 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Elemental_Phial_Damage_Multiplier_Not_for_SAED__raw);
                 writer.Write(Phial_Duration_raw);
                 writer.Write(Shield_Charge_Guard_Threshold_Bonus_raw);
-                writer.Write(Unk_116_raw);
-                writer.Write(Unk_117_raw);
+                writer.Write(Charged_Shield_Warning_Duration_When_About_to_End_raw);
+                writer.Write(Charged_Sword_Warning_Duration_When_About_to_End_raw);
                 writer.Write(Sword_Charge_Duration_raw);
                 writer.Write(Unk_119_raw);
                 writer.Write(Unk_120_raw);
@@ -3457,19 +3457,19 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Unk 92", "Unk_92", "Unk_92_offset"),
                     new MultiStructItemCustomView(this, "Unk 93", "Unk_93", "Unk_93_offset"),
                     new MultiStructItemCustomView(this, "Unk 94", "Unk_94", "Unk_94_offset"),
-                    new MultiStructItemCustomView(this, "Unk 95", "Unk_95", "Unk_95_offset"),
-                    new MultiStructItemCustomView(this, "Unk 96", "Unk_96", "Unk_96_offset"),
-                    new MultiStructItemCustomView(this, "Unk 97", "Unk_97", "Unk_97_offset"),
-                    new MultiStructItemCustomView(this, "Unk 98", "Unk_98", "Unk_98_offset"),
-                    new MultiStructItemCustomView(this, "Unk 99", "Unk_99", "Unk_99_offset"),
-                    new MultiStructItemCustomView(this, "Unk 100", "Unk_100", "Unk_100_offset"),
+                    new MultiStructItemCustomView(this, "All Sword Phial Damage Interval", "All_Sword_Phial_Damage_Interval", "All_Sword_Phial_Damage_Interval_offset"),
+                    new MultiStructItemCustomView(this, "Shield Thrust Phial Damage Interval", "Shield_Thrust_Phial_Damage_Interval", "Shield_Thrust_Phial_Damage_Interval_offset"),
+                    new MultiStructItemCustomView(this, "Axe Elemental Discharge 1 / Rushing Element Discharge 1 Phial Damage Interval (Same Move Just Different Input)", "Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input_", "Axe_Elemental_Discharge_1_Rushing_Element_Discharge_1_Phial_Damage_Interval_Same_Move_Just_Different_Input__offset"),
+                    new MultiStructItemCustomView(this, "Axe Elemental Discharge 2 First Hit Phial Damage Interval", "Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval", "Axe_Elemental_Discharge_2_First_Hit_Phial_Damage_Interval_offset"),
+                    new MultiStructItemCustomView(this, "Axe Elemental Discharge 2 Second Hit Phial Damage Interval", "Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval", "Axe_Elemental_Discharge_2_Second_Hit_Phial_Damage_Interval_offset"),
+                    new MultiStructItemCustomView(this, "AED Phial Damage Interval", "AED_Phial_Damage_Interval", "AED_Phial_Damage_Interval_offset"),
                     new MultiStructItemCustomView(this, "Charge to Reach Yellow Phial", "Charge_to_Reach_Yellow_Phial", "Charge_to_Reach_Yellow_Phial_offset"),
                     new MultiStructItemCustomView(this, "Charge to Reach Red Phial", "Charge_to_Reach_Red_Phial", "Charge_to_Reach_Red_Phial_offset"),
                     new MultiStructItemCustomView(this, "Charge Gained When Blocking a Small Knock-back", "Charge_Gained_When_Blocking_a_Small_Knock_back", "Charge_Gained_When_Blocking_a_Small_Knock_back_offset"),
                     new MultiStructItemCustomView(this, "Charge Gained When Blocking a Medium Knock-back", "Charge_Gained_When_Blocking_a_Medium_Knock_back", "Charge_Gained_When_Blocking_a_Medium_Knock_back_offset"),
                     new MultiStructItemCustomView(this, "Charge Gained When Blocking a Large Knock-back", "Charge_Gained_When_Blocking_a_Large_Knock_back", "Charge_Gained_When_Blocking_a_Large_Knock_back_offset"),
                     new MultiStructItemCustomView(this, "Overcharged Phial", "Overcharged_Phial", "Overcharged_Phial_offset"),
-                    new MultiStructItemCustomView(this, "Unk 107", "Unk_107", "Unk_107_offset"),
+                    new MultiStructItemCustomView(this, "Phial Charge Limit", "Phial_Charge_Limit", "Phial_Charge_Limit_offset"),
                     new MultiStructItemCustomView(this, "Axe Mode Damage Multiplier", "Axe_Mode_Damage_Multiplier", "Axe_Mode_Damage_Multiplier_offset"),
                     new MultiStructItemCustomView(this, "Guard Point Sharpness Cost Multiplier", "Guard_Point_Sharpness_Cost_Multiplier", "Guard_Point_Sharpness_Cost_Multiplier_offset"),
                     new MultiStructItemCustomView(this, "Impact Phial Damage Multiplier (Not for SAED)", "Impact_Phial_Damage_Multiplier_Not_for_SAED_", "Impact_Phial_Damage_Multiplier_Not_for_SAED__offset"),
@@ -3478,8 +3478,8 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Elemental Phial Damage Multiplier (Not for SAED)", "Elemental_Phial_Damage_Multiplier_Not_for_SAED_", "Elemental_Phial_Damage_Multiplier_Not_for_SAED__offset"),
                     new MultiStructItemCustomView(this, "Phial Duration", "Phial_Duration", "Phial_Duration_offset"),
                     new MultiStructItemCustomView(this, "Shield Charge Guard Threshold Bonus", "Shield_Charge_Guard_Threshold_Bonus", "Shield_Charge_Guard_Threshold_Bonus_offset"),
-                    new MultiStructItemCustomView(this, "Unk 116", "Unk_116", "Unk_116_offset"),
-                    new MultiStructItemCustomView(this, "Unk 117", "Unk_117", "Unk_117_offset"),
+                    new MultiStructItemCustomView(this, "Charged Shield Warning Duration When About to End", "Charged_Shield_Warning_Duration_When_About_to_End", "Charged_Shield_Warning_Duration_When_About_to_End_offset"),
+                    new MultiStructItemCustomView(this, "Charged Sword Warning Duration When About to End", "Charged_Sword_Warning_Duration_When_About_to_End", "Charged_Sword_Warning_Duration_When_About_to_End_offset"),
                     new MultiStructItemCustomView(this, "Sword Charge Duration", "Sword_Charge_Duration", "Sword_Charge_Duration_offset"),
                     new MultiStructItemCustomView(this, "Unk 119", "Unk_119", "Unk_119_offset"),
                     new MultiStructItemCustomView(this, "Unk 120", "Unk_120", "Unk_120_offset"),
@@ -4555,122 +4555,122 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class W09p_Params_10_ : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
+        public partial class Impact_SAED_Phial_Spawn_Interval : MhwStructItem, IHasCustomView<MultiStructItemCustomView>, IWriteData {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "W09p Params (10)";
+            public const string GridName = "Impact SAED Phial Spawn Interval";
 
-            protected float Unk_141_raw;
-            public const string Unk_141_displayName = "Unk 141";
-            public const int Unk_141_sortIndex = 50;
-            [SortOrder(Unk_141_sortIndex)]
-            [DisplayName(Unk_141_displayName)]
-            public virtual float Unk_141 {
-                get => Unk_141_raw;
+            protected float Phial_1_raw;
+            public const string Phial_1_displayName = "Phial 1";
+            public const int Phial_1_sortIndex = 50;
+            [SortOrder(Phial_1_sortIndex)]
+            [DisplayName(Phial_1_displayName)]
+            public virtual float Phial_1 {
+                get => Phial_1_raw;
                 set {
-                    if (Unk_141_raw == value) return;
-                    Unk_141_raw = value;
-                    ChangedItems.Add(nameof(Unk_141));
-                    OnPropertyChanged(nameof(Unk_141));
+                    if (Phial_1_raw == value) return;
+                    Phial_1_raw = value;
+                    ChangedItems.Add(nameof(Phial_1));
+                    OnPropertyChanged(nameof(Phial_1));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_141_offset { get; private set; }
+            public long Phial_1_offset { get; private set; }
 
-            protected float Unk_142_raw;
-            public const string Unk_142_displayName = "Unk 142";
-            public const int Unk_142_sortIndex = 100;
-            [SortOrder(Unk_142_sortIndex)]
-            [DisplayName(Unk_142_displayName)]
-            public virtual float Unk_142 {
-                get => Unk_142_raw;
+            protected float Phial_2_raw;
+            public const string Phial_2_displayName = "Phial 2";
+            public const int Phial_2_sortIndex = 100;
+            [SortOrder(Phial_2_sortIndex)]
+            [DisplayName(Phial_2_displayName)]
+            public virtual float Phial_2 {
+                get => Phial_2_raw;
                 set {
-                    if (Unk_142_raw == value) return;
-                    Unk_142_raw = value;
-                    ChangedItems.Add(nameof(Unk_142));
-                    OnPropertyChanged(nameof(Unk_142));
+                    if (Phial_2_raw == value) return;
+                    Phial_2_raw = value;
+                    ChangedItems.Add(nameof(Phial_2));
+                    OnPropertyChanged(nameof(Phial_2));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_142_offset { get; private set; }
+            public long Phial_2_offset { get; private set; }
 
-            protected float Unk_143_raw;
-            public const string Unk_143_displayName = "Unk 143";
-            public const int Unk_143_sortIndex = 150;
-            [SortOrder(Unk_143_sortIndex)]
-            [DisplayName(Unk_143_displayName)]
-            public virtual float Unk_143 {
-                get => Unk_143_raw;
+            protected float Phial_3_raw;
+            public const string Phial_3_displayName = "Phial 3";
+            public const int Phial_3_sortIndex = 150;
+            [SortOrder(Phial_3_sortIndex)]
+            [DisplayName(Phial_3_displayName)]
+            public virtual float Phial_3 {
+                get => Phial_3_raw;
                 set {
-                    if (Unk_143_raw == value) return;
-                    Unk_143_raw = value;
-                    ChangedItems.Add(nameof(Unk_143));
-                    OnPropertyChanged(nameof(Unk_143));
+                    if (Phial_3_raw == value) return;
+                    Phial_3_raw = value;
+                    ChangedItems.Add(nameof(Phial_3));
+                    OnPropertyChanged(nameof(Phial_3));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_143_offset { get; private set; }
+            public long Phial_3_offset { get; private set; }
 
-            protected float Unk_144_raw;
-            public const string Unk_144_displayName = "Unk 144";
-            public const int Unk_144_sortIndex = 200;
-            [SortOrder(Unk_144_sortIndex)]
-            [DisplayName(Unk_144_displayName)]
-            public virtual float Unk_144 {
-                get => Unk_144_raw;
+            protected float Phial_4_raw;
+            public const string Phial_4_displayName = "Phial 4";
+            public const int Phial_4_sortIndex = 200;
+            [SortOrder(Phial_4_sortIndex)]
+            [DisplayName(Phial_4_displayName)]
+            public virtual float Phial_4 {
+                get => Phial_4_raw;
                 set {
-                    if (Unk_144_raw == value) return;
-                    Unk_144_raw = value;
-                    ChangedItems.Add(nameof(Unk_144));
-                    OnPropertyChanged(nameof(Unk_144));
+                    if (Phial_4_raw == value) return;
+                    Phial_4_raw = value;
+                    ChangedItems.Add(nameof(Phial_4));
+                    OnPropertyChanged(nameof(Phial_4));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_144_offset { get; private set; }
+            public long Phial_4_offset { get; private set; }
 
-            protected float Unk_145_raw;
-            public const string Unk_145_displayName = "Unk 145";
-            public const int Unk_145_sortIndex = 250;
-            [SortOrder(Unk_145_sortIndex)]
-            [DisplayName(Unk_145_displayName)]
-            public virtual float Unk_145 {
-                get => Unk_145_raw;
+            protected float Phial_5_raw;
+            public const string Phial_5_displayName = "Phial 5";
+            public const int Phial_5_sortIndex = 250;
+            [SortOrder(Phial_5_sortIndex)]
+            [DisplayName(Phial_5_displayName)]
+            public virtual float Phial_5 {
+                get => Phial_5_raw;
                 set {
-                    if (Unk_145_raw == value) return;
-                    Unk_145_raw = value;
-                    ChangedItems.Add(nameof(Unk_145));
-                    OnPropertyChanged(nameof(Unk_145));
+                    if (Phial_5_raw == value) return;
+                    Phial_5_raw = value;
+                    ChangedItems.Add(nameof(Phial_5));
+                    OnPropertyChanged(nameof(Phial_5));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_145_offset { get; private set; }
+            public long Phial_5_offset { get; private set; }
 
-            protected float Unk_146_raw;
-            public const string Unk_146_displayName = "Unk 146";
-            public const int Unk_146_sortIndex = 300;
-            [SortOrder(Unk_146_sortIndex)]
-            [DisplayName(Unk_146_displayName)]
-            public virtual float Unk_146 {
-                get => Unk_146_raw;
+            protected float Phial_6_raw;
+            public const string Phial_6_displayName = "Phial 6";
+            public const int Phial_6_sortIndex = 300;
+            [SortOrder(Phial_6_sortIndex)]
+            [DisplayName(Phial_6_displayName)]
+            public virtual float Phial_6 {
+                get => Phial_6_raw;
                 set {
-                    if (Unk_146_raw == value) return;
-                    Unk_146_raw = value;
-                    ChangedItems.Add(nameof(Unk_146));
-                    OnPropertyChanged(nameof(Unk_146));
+                    if (Phial_6_raw == value) return;
+                    Phial_6_raw = value;
+                    ChangedItems.Add(nameof(Phial_6));
+                    OnPropertyChanged(nameof(Phial_6));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_146_offset { get; private set; }
+            public long Phial_6_offset { get; private set; }
 
             public const int lastSortIndex = 350;
 
-            public static ObservableMhwStructCollection<W09p_Params_10_> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<W09p_Params_10_>();
+            public static ObservableMhwStructCollection<Impact_SAED_Phial_Spawn_Interval> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Impact_SAED_Phial_Spawn_Interval>();
                 var count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4678,48 +4678,48 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static W09p_Params_10_ LoadData(BinaryReader reader, ulong i) {
-                var data = new W09p_Params_10_();
+            public static Impact_SAED_Phial_Spawn_Interval LoadData(BinaryReader reader, ulong i) {
+                var data = new Impact_SAED_Phial_Spawn_Interval();
                 data.Index = i;
-                data.Unk_141_offset = reader.BaseStream.Position;
-                data.Unk_141_raw = reader.ReadSingle();
-                data.Unk_142_offset = reader.BaseStream.Position;
-                data.Unk_142_raw = reader.ReadSingle();
-                data.Unk_143_offset = reader.BaseStream.Position;
-                data.Unk_143_raw = reader.ReadSingle();
-                data.Unk_144_offset = reader.BaseStream.Position;
-                data.Unk_144_raw = reader.ReadSingle();
-                data.Unk_145_offset = reader.BaseStream.Position;
-                data.Unk_145_raw = reader.ReadSingle();
-                data.Unk_146_offset = reader.BaseStream.Position;
-                data.Unk_146_raw = reader.ReadSingle();
+                data.Phial_1_offset = reader.BaseStream.Position;
+                data.Phial_1_raw = reader.ReadSingle();
+                data.Phial_2_offset = reader.BaseStream.Position;
+                data.Phial_2_raw = reader.ReadSingle();
+                data.Phial_3_offset = reader.BaseStream.Position;
+                data.Phial_3_raw = reader.ReadSingle();
+                data.Phial_4_offset = reader.BaseStream.Position;
+                data.Phial_4_raw = reader.ReadSingle();
+                data.Phial_5_offset = reader.BaseStream.Position;
+                data.Phial_5_raw = reader.ReadSingle();
+                data.Phial_6_offset = reader.BaseStream.Position;
+                data.Phial_6_raw = reader.ReadSingle();
                 return data;
             }
 
             public void WriteData(BinaryWriter writer) {
-                writer.Write(Unk_141_raw);
-                writer.Write(Unk_142_raw);
-                writer.Write(Unk_143_raw);
-                writer.Write(Unk_144_raw);
-                writer.Write(Unk_145_raw);
-                writer.Write(Unk_146_raw);
+                writer.Write(Phial_1_raw);
+                writer.Write(Phial_2_raw);
+                writer.Write(Phial_3_raw);
+                writer.Write(Phial_4_raw);
+                writer.Write(Phial_5_raw);
+                writer.Write(Phial_6_raw);
             }
 
             public ObservableCollection<MultiStructItemCustomView> GetCustomView() {
                 return new ObservableCollection<MultiStructItemCustomView> {
-                    new MultiStructItemCustomView(this, "Unk 141", "Unk_141", "Unk_141_offset"),
-                    new MultiStructItemCustomView(this, "Unk 142", "Unk_142", "Unk_142_offset"),
-                    new MultiStructItemCustomView(this, "Unk 143", "Unk_143", "Unk_143_offset"),
-                    new MultiStructItemCustomView(this, "Unk 144", "Unk_144", "Unk_144_offset"),
-                    new MultiStructItemCustomView(this, "Unk 145", "Unk_145", "Unk_145_offset"),
-                    new MultiStructItemCustomView(this, "Unk 146", "Unk_146", "Unk_146_offset"),
+                    new MultiStructItemCustomView(this, "Phial 1", "Phial_1", "Phial_1_offset"),
+                    new MultiStructItemCustomView(this, "Phial 2", "Phial_2", "Phial_2_offset"),
+                    new MultiStructItemCustomView(this, "Phial 3", "Phial_3", "Phial_3_offset"),
+                    new MultiStructItemCustomView(this, "Phial 4", "Phial_4", "Phial_4_offset"),
+                    new MultiStructItemCustomView(this, "Phial 5", "Phial_5", "Phial_5_offset"),
+                    new MultiStructItemCustomView(this, "Phial 6", "Phial_6", "Phial_6_offset"),
                 };
             }
         }
 
-        public partial class Unk_Arr_4 : MhwStructItem, IWriteData {
+        public partial class Impact_SAED_Coordinates : MhwStructItem, IWriteData {
             public const ulong FixedSizeCount = 21;
-            public const string GridName = "Unk Arr 4";
+            public const string GridName = "Impact SAED Coordinates";
 
             protected float Unk_1_raw;
             public const string Unk_1_displayName = "Unk 1";
@@ -4783,8 +4783,8 @@ namespace MHW_Editor.Structs.Weapons {
 
             public const int lastSortIndex = 250;
 
-            public static ObservableMhwStructCollection<Unk_Arr_4> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<Unk_Arr_4>();
+            public static ObservableMhwStructCollection<Impact_SAED_Coordinates> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Impact_SAED_Coordinates>();
                 var count = 21UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -4792,8 +4792,8 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static Unk_Arr_4 LoadData(BinaryReader reader, ulong i) {
-                var data = new Unk_Arr_4();
+            public static Impact_SAED_Coordinates LoadData(BinaryReader reader, ulong i) {
+                var data = new Impact_SAED_Coordinates();
                 data.Index = i;
                 data.Unk_1_raw = reader.ReadSingle();
                 data.Unk_2_raw = reader.ReadSingle();
@@ -6811,10 +6811,10 @@ namespace MHW_Editor.Structs.Weapons {
             data.AddLast(W09p_Params_9__);
             var Action_Param_4_ = new MhwStructDataContainer<Action_Param_4>(Action_Param_4.LoadData(reader), typeof(Action_Param_4));
             data.AddLast(Action_Param_4_);
-            var W09p_Params_10__ = new MhwStructDataContainer<W09p_Params_10_>(W09p_Params_10_.LoadData(reader), typeof(W09p_Params_10_));
-            data.AddLast(W09p_Params_10__);
-            var Unk_Arr_4_ = new MhwStructDataContainer<Unk_Arr_4>(Unk_Arr_4.LoadData(reader), typeof(Unk_Arr_4));
-            data.AddLast(Unk_Arr_4_);
+            var Impact_SAED_Phial_Spawn_Interval_ = new MhwStructDataContainer<Impact_SAED_Phial_Spawn_Interval>(Impact_SAED_Phial_Spawn_Interval.LoadData(reader), typeof(Impact_SAED_Phial_Spawn_Interval));
+            data.AddLast(Impact_SAED_Phial_Spawn_Interval_);
+            var Impact_SAED_Coordinates_ = new MhwStructDataContainer<Impact_SAED_Coordinates>(Impact_SAED_Coordinates.LoadData(reader), typeof(Impact_SAED_Coordinates));
+            data.AddLast(Impact_SAED_Coordinates_);
             var W09p_Params_11__ = new MhwStructDataContainer<W09p_Params_11_>(W09p_Params_11_.LoadData(reader), typeof(W09p_Params_11_));
             data.AddLast(W09p_Params_11__);
             var Unk_Arr_5_ = new MhwStructDataContainer<Unk_Arr_5>(Unk_Arr_5.LoadData(reader), typeof(Unk_Arr_5));

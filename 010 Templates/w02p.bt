@@ -5,6 +5,7 @@
 //  Category: MHW-Editor
 //------------------------------------------------
 
+// W02p Params (1, Shared)
 char Weapon[4]<optimize=false, name="Weapon">;
 uint Unk_1<name="Unk 1 (uint)">;
 
@@ -19,6 +20,7 @@ typedef struct {
 
 Unk_Arr_1_Shared_ Unk_Arr_1_Shared__[20]<optimize=false, name="Unk Arr 1 (Shared)">;
 
+// W02p Params (2, Shared)
 float Unk_2<name="Unk 2 (float)">;
 float Unk_3<name="Unk 3 (float)">;
 float Unk_4<name="Unk 4 (float)">;
@@ -56,6 +58,7 @@ typedef struct {
 
 Guard_Angles_Shared_ Guard_Angles_Shared__[2]<optimize=false, name="Guard Angles (Shared)">;
 
+// W02p Params (3, Shared)
 float Unk_28<name="Unk 28 (float)">;
 float Unk_29<name="Unk 29 (float)">;
 float Unk_30<name="Unk 30 (float)">;
@@ -127,6 +130,7 @@ typedef struct {
 
 Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false, name="Unk Arr 2 (Shared)">;
 
+// W02p Params (4, Shared)
 ubyte Unk_77<name="Unk 77 (ubyte)">;
 int Unk_78<name="Unk 78 (int)">;
 float Unk_79<name="Unk 79 (float)">;
@@ -148,6 +152,7 @@ float Unk_15_10_4<name="Unk (15.10) 4 (float)">;
 float Unk_15_10_5<name="Unk (15.10) 5 (float)">;
 float Unk_15_10_6<name="Unk (15.10) 6 (float)">;
 
+// W02p Params (5)
 uint DB_Sharpness_Consumed_Every_N_Hits<name="DB Sharpness: Consumed Every N Hits (uint)">;
 float Unk_92<name="Unk 92 (float)">;
 float Unk_93<name="Unk 93 (float)">;
@@ -180,6 +185,7 @@ typedef struct {
 
 Action_Param_1 Action_Param_1_[2]<optimize=false, name="Action Param 1">;
 
+// W02p Params (6)
 float Unk_111<name="Unk 111 (float)">;
 float Unk_112<name="Unk 112 (float)">;
 float Unk_113<name="Unk 113 (float)">;
@@ -196,6 +202,7 @@ typedef struct {
 
 Action_Param_2 Action_Param_2_[2]<optimize=false, name="Action Param 2">;
 
+// W02p Params (7) - Heavenly Blade Dance Effect Params
 float Unk_115<name="Unk 115 (float)">;
 uint Number_of_Hits_to_Trigger_1st_Damage_Reduction<name="Number of Hits to Trigger 1st Damage Reduction (uint)">;
 uint Number_of_Hits_to_Trigger_2nd_Damage_Reduction<name="Number of Hits to Trigger 2nd Damage Reduction (uint)">;
@@ -223,6 +230,7 @@ typedef struct {
 
 Action_Param_3 Action_Param_3_[4]<optimize=false, name="Action Param 3">;
 
+// W02p Params (8)
 float Unk_130<name="Unk 130 (float)">;
 float Unk_131<name="Unk 131 (float)">;
 float Unk_132<name="Unk 132 (float)">;
@@ -241,6 +249,7 @@ typedef struct {
 
 Action_Param_4 Action_Param_4_[2]<optimize=false, name="Action Param 4">;
 
+// W02p Params (9)
 float Unk_136<name="Unk 136 (float)">;
 float Unk_137<name="Unk 137 (float)">;
 float Unk_138<name="Unk 138 (float)">;

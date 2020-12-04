@@ -5,6 +5,7 @@
 //  Category: MHW-Editor
 //------------------------------------------------
 
+// W07p Params (1, Shared)
 char Weapon[4]<optimize=false, name="Weapon">;
 uint Unk_1<name="Unk 1 (uint)">;
 
@@ -19,6 +20,7 @@ typedef struct {
 
 Unk_Arr_1_Shared_ Unk_Arr_1_Shared__[20]<optimize=false, name="Unk Arr 1 (Shared)">;
 
+// W07p Params (2, Shared)
 float Unk_2<name="Unk 2 (float)">;
 float Unk_3<name="Unk 3 (float)">;
 float Unk_4<name="Unk 4 (float)">;
@@ -56,6 +58,7 @@ typedef struct {
 
 Guard_Angles_Shared_ Guard_Angles_Shared__[2]<optimize=false, name="Guard Angles (Shared)">;
 
+// W07p Params (3, Shared)
 float Unk_28<name="Unk 28 (float)">;
 float Unk_29<name="Unk 29 (float)">;
 float Unk_30<name="Unk 30 (float)">;
@@ -127,6 +130,7 @@ typedef struct {
 
 Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false, name="Unk Arr 2 (Shared)">;
 
+// W07p Params (4, Shared)
 ubyte Unk_77<name="Unk 77 (ubyte)">;
 int Unk_78<name="Unk 78 (int)">;
 float Unk_79<name="Unk 79 (float)">;
@@ -148,6 +152,7 @@ float Unk_15_10_4<name="Unk (15.10) 4 (float)">;
 float Unk_15_10_5<name="Unk (15.10) 5 (float)">;
 float Unk_15_10_6<name="Unk (15.10) 6 (float)">;
 
+// W07p Params (5) - Shelling Params
 uint Normal_Shell<name="Normal Shell (uint)">;
 uint Wide_Shell<name="Wide Shell (uint)">;
 uint Long_Shell<name="Long Shell (uint)">;
@@ -285,6 +290,7 @@ typedef struct {
 
 Shell_Ammo_Params Shell_Ammo_Params_[3]<optimize=false, name="Shell/Ammo Params">;
 
+// W07p Params (6) - Shelling Params
 float Yellow_Gauge_Debuff<name="Yellow Gauge Debuff (float)">;
 
 // Shelling Sharpness Usage
@@ -299,6 +305,7 @@ typedef struct {
 
 Shelling_Sharpness_Usage Shelling_Sharpness_Usage_[3]<optimize=false, name="Shelling Sharpness Usage">;
 
+// W07p Params (7)
 float Unk_292<name="Unk 292 (float)">;
 float Unk_293<name="Unk 293 (float)">;
 
@@ -313,6 +320,7 @@ typedef struct {
 
 Action_Param_1 Action_Param_1_[10]<optimize=false, name="Action Param 1">;
 
+// W07p Params (8)
 float Unk_294<name="Unk 294 (float)">;
 float Unk_295<name="Unk 295 (float)">;
 float Unk_296<name="Unk 296 (float)">;
@@ -335,6 +343,7 @@ typedef struct {
 
 Action_Param_2 Action_Param_2_<name="Action Param 2">;
 
+// W07p Params (9) - Wyrmstake Blast Params
 float Unk_304<name="Unk 304 (float)">;
 float Unk_305<name="Unk 305 (float)">;
 float Unk_306<name="Unk 306 (float)">;
@@ -368,6 +377,7 @@ typedef struct {
 
 W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod W07p_Params_10_Wyrmstake_Blast_Duration_per_Pod_[7]<optimize=false, name="W07p Params (10) - Wyrmstake Blast Duration per Pod">;
 
+// W07p Params (11) - Wyrmstake Blast Params
 float Unk_342<name="Unk 342 (float)">;
 float Unk_343<name="Unk 343 (float)">;
 float Unk_344<name="Unk 344 (float)">;
@@ -383,4 +393,5 @@ typedef struct {
 
 Action_Param_3 Action_Param_3_<name="Action Param 3">;
 
+// W07p Params (12)
 float Shelling_Multiplier<name="Shelling Multiplier (float)">;

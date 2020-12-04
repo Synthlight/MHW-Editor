@@ -5,6 +5,7 @@
 //  Category: MHW-Editor
 //------------------------------------------------
 
+// Soften Params
 uint Magic<name="Magic (uint)">;
 uint Unk_1<name="Unk 1 (uint)">;
 uint Unk_2<name="Unk 2 (uint)">;

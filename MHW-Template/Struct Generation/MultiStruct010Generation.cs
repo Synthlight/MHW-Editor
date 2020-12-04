@@ -22,6 +22,8 @@ namespace MHW_Template.Struct_Generation {
                 template.WriteLine(indentation, $"// {@struct.name}");
                 template.WriteLine(indentation, "typedef struct {");
                 innerIndentation++;
+            } else if (@struct.showVertically) {
+                template.WriteLine(indentation, $"// {@struct.name}");
             }
 
             foreach (var entry in @struct.entries) {

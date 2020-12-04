@@ -5,6 +5,7 @@
 //  Category: MHW-Editor
 //------------------------------------------------
 
+// W06p Params (1, Shared)
 char Weapon[4]<optimize=false, name="Weapon">;
 uint Unk_1<name="Unk 1 (uint)">;
 
@@ -19,6 +20,7 @@ typedef struct {
 
 Unk_Arr_1_Shared_ Unk_Arr_1_Shared__[20]<optimize=false, name="Unk Arr 1 (Shared)">;
 
+// W06p Params (2, Shared)
 float Unk_2<name="Unk 2 (float)">;
 float Unk_3<name="Unk 3 (float)">;
 float Unk_4<name="Unk 4 (float)">;
@@ -56,6 +58,7 @@ typedef struct {
 
 Guard_Angles_Shared_ Guard_Angles_Shared__[2]<optimize=false, name="Guard Angles (Shared)">;
 
+// W06p Params (3, Shared)
 float Unk_28<name="Unk 28 (float)">;
 float Unk_29<name="Unk 29 (float)">;
 float Unk_30<name="Unk 30 (float)">;
@@ -127,6 +130,7 @@ typedef struct {
 
 Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false, name="Unk Arr 2 (Shared)">;
 
+// W06p Params (4, Shared)
 ubyte Unk_77<name="Unk 77 (ubyte)">;
 int Unk_78<name="Unk 78 (int)">;
 float Unk_79<name="Unk 79 (float)">;
@@ -159,6 +163,7 @@ typedef struct {
 
 Action_Param_1 Action_Param_1_[6]<optimize=false, name="Action Param 1">;
 
+// W06p Params (5)
 float Charge_Dash_lvl_1_Initial_Speed_Multiplier<name="Charge Dash lvl 1 Initial Speed Multiplier (float)">;
 float Charge_Dash_lvl_2_Charge_Time<name="Charge Dash lvl 2 Charge Time (float)">;
 float Charge_Dash_lvl_2_Speed_Multiplier<name="Charge Dash lvl 2 Speed Multiplier (float)">;
@@ -207,6 +212,7 @@ typedef struct {
 
 Action_Param_2 Action_Param_2_<name="Action Param 2">;
 
+// W06p Params (6)
 float Unk_127<name="Unk 127 (float)">;
 float Unk_128<name="Unk 128 (float)">;
 float Unk_129<name="Unk 129 (float)">;

@@ -37,6 +37,7 @@ typedef struct {
 
 Clagger_Params Clagger_Params_[Monster_Claw_Grab_.Number_of_Claggers]<optimize=false, name="Clagger Params">;
 
+// Claw Chance Params
 uint Gimmick_Breaker_Collision_Unique_Id_Small<name="Gimmick Breaker Collision Unique Id Small (uint)">;
 uint Gimmick_Breaker_Collision_Unique_Id_Middle<name="Gimmick Breaker Collision Unique Id Middle (uint)">;
 uint Gimmick_Breaker_Collision_Unique_Id_Large<name="Gimmick Breaker Collision Unique Id Large (uint)">;

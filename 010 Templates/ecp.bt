@@ -28,6 +28,7 @@ typedef struct {
 
 Sharpness_Multipliers Sharpness_Multipliers_[7]<optimize=false, name="Sharpness Multipliers">;
 
+// Monster Common Params (2)
 float Unk_3<name="Unk 3 (float)">;
 float Unk_4<name="Unk 4 (float)">;
 float Unk_5<name="Unk 5 (float)">;
@@ -66,6 +67,7 @@ typedef struct {
 
 Sharpness_HZV_Threshold Sharpness_HZV_Threshold_[4]<optimize=false, name="Sharpness HZV Threshold">;
 
+// Monster Common Params (3)
 float Unk_30<name="Unk 30 (float)">;
 float Unk_31<name="Unk 31 (float)">;
 float Unk_32<name="Unk 32 (float)">;
@@ -132,6 +134,7 @@ typedef struct {
 
 Unk_Arr_1 Unk_Arr_1_[4]<optimize=false, name="Unk Arr 1">;
 
+// Monster Common Params (4)
 float Unk_85<name="Unk 85 (float)">;
 float Unk_86<name="Unk 86 (float)">;
 float Unk_87<name="Unk 87 (float)">;
@@ -207,6 +210,7 @@ int Unk_156<name="Unk 156 (int)">;
 float Unk_157<name="Unk 157 (float)">;
 float Unk_158<name="Unk 158 (float)">;
 
+// Monster Common Params (5)
 uint Header<name="Header (uint)">;
 float Unk_159<name="Unk 159 (float)">;
 ubyte Unk_160<name="Unk 160 (ubyte)">;
@@ -239,6 +243,7 @@ typedef struct {
 
 Unk_Arr_2 Unk_Arr_2_[44]<optimize=false, name="Unk Arr 2">;
 
+// Monster Common Params (6)
 uint Unk_181<name="Unk 181 (uint)">;
 float Unk_182<name="Unk 182 (float)">;
 float Unk_183<name="Unk 183 (float)">;
@@ -266,6 +271,7 @@ typedef struct {
 
 Unk_Arr_3 Unk_Arr_3_[8]<optimize=false, name="Unk Arr 3">;
 
+// Monster Common Params (7)
 uint Unk_199<name="Unk 199 (uint)">;
 uint Unk_Arr_4_Count<name="Unk Arr 4 Count (uint)">;
 
@@ -277,6 +283,7 @@ typedef struct {
 
 Unk_Arr_4 Unk_Arr_4_[Unk_Arr_4_Count]<optimize=false, name="Unk Arr 4">;
 
+// Monster Common Params (8)
 uint Unk_200<name="Unk 200 (uint)">;
 uint Unk_201<name="Unk 201 (uint)">;
 uint Unk_202<name="Unk 202 (uint)">;
@@ -286,6 +293,7 @@ uint Unk_205<name="Unk 205 (uint)">;
 uint Unk_206<name="Unk 206 (uint)">;
 uint Unk_207<name="Unk 207 (uint)">;
 
+// Monster Common Params (9)
 uint Header<name="Header (uint)">;
 uint Unk_208<name="Unk 208 (uint)">;
 uint Unk_209<name="Unk 209 (uint)">;
@@ -356,6 +364,7 @@ float Unk_273<name="Unk 273 (float)">;
 uint Unk_274<name="Unk 274 (uint)">;
 uint Unk_275<name="Unk 275 (uint)">;
 
+// Monster Common Params (10)
 uint Shell_Header<name="Shell Header (uint)">;
 string Shell<name="Shell (string)">;
 float Unk_276<name="Unk 276 (float)">;
@@ -578,6 +587,7 @@ float Unk_492<name="Unk 492 (float)">;
 float Unk_493<name="Unk 493 (float)">;
 int Unk_494<name="Unk 494 (int)">;
 
+// Monster Common Params (11)
 uint Header<name="Header (uint)">;
 float Unk_495<name="Unk 495 (float)">;
 uint Unk_Arr_5_Count<name="Unk Arr 5 Count (uint)">;
@@ -591,6 +601,7 @@ typedef struct {
 
 Unk_Arr_5 Unk_Arr_5_[Unk_Arr_5_Count]<optimize=false, name="Unk Arr 5">;
 
+// Monster Common Params (12)
 float Unk_496<name="Unk 496 (float)">;
 uint Unk_497<name="Unk 497 (uint)">;
 uint Unk_Arr_6_Count<name="Unk Arr 6 Count (uint)">;
@@ -603,6 +614,7 @@ typedef struct {
 
 Unk_Arr_6 Unk_Arr_6_[Unk_Arr_6_Count]<optimize=false, name="Unk Arr 6">;
 
+// Monster Common Params (13)
 uint Unk_498<name="Unk 498 (uint)">;
 uint Unk_499<name="Unk 499 (uint)">;
 float Unk_500<name="Unk 500 (float)">;

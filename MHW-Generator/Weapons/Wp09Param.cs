@@ -20,23 +20,23 @@ namespace MHW_Generator.Weapons {
 
             structs.AddRange(new List<MhwMultiStructData.StructData> {
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)), // 91
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("All Sword Phial Damage Interval", typeof(float)),
+                    new MhwMultiStructData.Entry("Shield Thrust Phial Damage Interval", typeof(float)),
+                    new MhwMultiStructData.Entry("Axe Elemental Discharge 1 / Rushing Element Discharge 1 Phial Damage Interval (Same Move Just Different Input)", typeof(float)),
+                    new MhwMultiStructData.Entry("Axe Elemental Discharge 2 First Hit Phial Damage Interval", typeof(float)),
+                    new MhwMultiStructData.Entry("Axe Elemental Discharge 2 Second Hit Phial Damage Interval", typeof(float)),
+                    new MhwMultiStructData.Entry("AED Phial Damage Interval", typeof(float)),
                     new MhwMultiStructData.Entry("Charge to Reach Yellow Phial", typeof(byte)),
                     new MhwMultiStructData.Entry("Charge to Reach Red Phial", typeof(byte)),
                     new MhwMultiStructData.Entry("Charge Gained When Blocking a Small Knock-back", typeof(byte)),
                     new MhwMultiStructData.Entry("Charge Gained When Blocking a Medium Knock-back", typeof(byte)),
                     new MhwMultiStructData.Entry("Charge Gained When Blocking a Large Knock-back", typeof(byte)),
                     new MhwMultiStructData.Entry("Overcharged Phial", typeof(byte)),
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 7}", typeof(byte)),
+                    new MhwMultiStructData.Entry("Phial Charge Limit", typeof(byte)),
                     new MhwMultiStructData.Entry("Axe Mode Damage Multiplier", typeof(float)),
                     new MhwMultiStructData.Entry("Guard Point Sharpness Cost Multiplier", typeof(float)),
                     new MhwMultiStructData.Entry("Impact Phial Damage Multiplier (Not for SAED)", typeof(float)),
@@ -45,10 +45,10 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Elemental Phial Damage Multiplier (Not for SAED)", typeof(float)),
                     new MhwMultiStructData.Entry("Phial Duration", typeof(float)),
                     new MhwMultiStructData.Entry("Shield Charge Guard Threshold Bonus", typeof(byte)),
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 9}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Charged Shield Warning Duration When About to End", typeof(float)),
+                    new MhwMultiStructData.Entry("Charged Sword Warning Duration When About to End", typeof(float)),
                     new MhwMultiStructData.Entry("Sword Charge Duration", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 25}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
@@ -100,22 +100,22 @@ namespace MHW_Generator.Weapons {
 
                 new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1),
 
-                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                new MhwMultiStructData.StructData("Impact SAED Phial Spawn Interval", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Phial 1", typeof(float)),
+                    new MhwMultiStructData.Entry("Phial 2", typeof(float)),
+                    new MhwMultiStructData.Entry("Phial 3", typeof(float)),
+                    new MhwMultiStructData.Entry("Phial 4", typeof(float)),
+                    new MhwMultiStructData.Entry("Phial 5", typeof(float)),
+                    new MhwMultiStructData.Entry("Phial 6", typeof(float))
                 }, 1, showVertically: true),
 
-                new MhwMultiStructData.StructData($"Unk Arr {++arrayIndex}", unkCbArr, 21),
+                new MhwMultiStructData.StructData("Impact SAED Coordinates", unkCbArr, 21),
 
-                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                new MhwMultiStructData.StructData($"W{N}p Params ({paramIndex += 2})", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry($"Unk {unkIndex += 7}", typeof(float))
                 }, 1, showVertically: true),
 
-                new MhwMultiStructData.StructData($"Unk Arr {++arrayIndex}", unkCbArr, 1),
+                new MhwMultiStructData.StructData($"Unk Arr {arrayIndex += 2}", unkCbArr, 1),
 
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),

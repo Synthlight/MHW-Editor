@@ -13,6 +13,7 @@ typedef struct {
 
 Header Header_<name="Header">;
 
+// Mantle Params (1)
 float Unk_1<name="Unk 1 (float)">;
 float Unk_2<name="Unk 2 (float)">;
 float Unk_3<name="Unk 3 (float)">;
@@ -66,6 +67,7 @@ typedef struct {
 
 Mantle_Params_2_ Mantle_Params_2__[5]<optimize=false, name="Mantle Params (2)">;
 
+// Mantle Params (3)
 float Dragonproof_Mantle_Dragon_Damage_Multiplier<name="Dragonproof Mantle: Dragon Damage Multiplier (float)">;
 float Cleanser_Booster_Cooldown<name="Cleanser Booster: Cooldown (float)">;
 float Cleanser_Booster_Duration<name="Cleanser Booster: Duration (float)">;

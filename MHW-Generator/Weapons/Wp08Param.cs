@@ -13,7 +13,7 @@ namespace MHW_Generator.Weapons {
 
             structs.AddRange(new List<MhwMultiStructData.StructData> {
                 new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)), // 91
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(uint)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))

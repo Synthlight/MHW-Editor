@@ -5,6 +5,7 @@
 //  Category: MHW-Editor
 //------------------------------------------------
 
+// W13p Params (1, Shared)
 char Weapon[4]<optimize=false, name="Weapon">;
 uint Unk_1<name="Unk 1 (uint)">;
 
@@ -19,6 +20,7 @@ typedef struct {
 
 Unk_Arr_1_Shared_ Unk_Arr_1_Shared__[20]<optimize=false, name="Unk Arr 1 (Shared)">;
 
+// W13p Params (2, Shared)
 float Unk_2<name="Unk 2 (float)">;
 float Unk_3<name="Unk 3 (float)">;
 float Unk_4<name="Unk 4 (float)">;
@@ -56,6 +58,7 @@ typedef struct {
 
 Guard_Angles_Shared_ Guard_Angles_Shared__[2]<optimize=false, name="Guard Angles (Shared)">;
 
+// W13p Params (3, Shared)
 float Unk_28<name="Unk 28 (float)">;
 float Unk_29<name="Unk 29 (float)">;
 float Unk_30<name="Unk 30 (float)">;
@@ -127,6 +130,7 @@ typedef struct {
 
 Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false, name="Unk Arr 2 (Shared)">;
 
+// W13p Params (4, Shared)
 ubyte Unk_77<name="Unk 77 (ubyte)">;
 int Unk_78<name="Unk 78 (int)">;
 float Unk_79<name="Unk 79 (float)">;
@@ -148,6 +152,7 @@ float Unk_15_10_4<name="Unk (15.10) 4 (float)">;
 float Unk_15_10_5<name="Unk (15.10) 5 (float)">;
 float Unk_15_10_6<name="Unk (15.10) 6 (float)">;
 
+// W13p Params (5)
 float Unk_91<name="Unk 91 (float)">;
 float Unk_92<name="Unk 92 (float)">;
 float Unk_93<name="Unk 93 (float)">;
@@ -321,6 +326,7 @@ typedef struct {
 
 Unk_Arr_4 Unk_Arr_4_[4]<optimize=false, name="Unk Arr 4">;
 
+// W13p Params (6)
 float Unk_240<name="Unk 240 (float)">;
 float Unk_241<name="Unk 241 (float)">;
 float Unk_242<name="Unk 242 (float)">;
@@ -389,6 +395,7 @@ typedef struct {
 
 Shield_Mods Shield_Mods_[Number_of_Shield_Mods_Struct_.Number_of_Shield_Mods]<optimize=false, name="Shield Mods">;
 
+// W13p Params (Special Scope Params)
 float Special_Scope_FoV_Multiplier_From_Base_3rd_Person_FoV_<name="Special Scope: FoV Multiplier (From Base 3rd Person FoV) (float)">;
 float Unk_275<name="Unk 275 (float)">;
 float Unk_276<name="Unk 276 (float)">;
@@ -410,6 +417,7 @@ typedef struct {
 
 Unk_Arr_5 Unk_Arr_5_[50]<optimize=false, name="Unk Arr 5">;
 
+// W13p Params (7)
 ushort Unk_284<name="Unk 284 (ushort)">;
 ushort Wyvernblast_S_Charge_Consumption<name="Wyvernblast (S) Charge Consumption (ushort)">;
 ushort Unk_286<name="Unk 286 (ushort)">;

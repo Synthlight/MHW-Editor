@@ -13,6 +13,7 @@ typedef struct {
 
 Header Header_<name="Header">;
 
+// Skill Params (1)
 float Speed_Eating_1_Drink_Motion_Speed<name="Speed Eating 1 Drink Motion Speed (float)">;
 float Speed_Eating_2_Drink_Motion_Speed<name="Speed Eating 2 Drink Motion Speed (float)">;
 float Speed_Eating_3_Drink_Motion_Speed<name="Speed Eating 3 Drink Motion Speed (float)">;
@@ -55,6 +56,7 @@ typedef struct {
 
 Wide_Range Wide_Range_[2]<optimize=false, name="Wide Range">;
 
+// Skill Params (2)
 float Unk1<name="Unk1 (float)">;
 float Unk2<name="Unk2 (float)">;
 float Unk3<name="Unk3 (float)">;
@@ -156,6 +158,7 @@ typedef struct {
 
 Critical_Condition_Multipliers Critical_Condition_Multipliers_[2]<optimize=false, name="Critical Condition Multipliers">;
 
+// Skill Params (3)
 ushort Bludgeoner_Red_Sharpness_Attack_Bonus_BG_Melee_<name="Bludgeoner: Red Sharpness Attack Bonus (& BG Melee) (ushort)">;
 ushort Bludgeoner_Orange_Sharpness_Attack_Bonus<name="Bludgeoner: Orange Sharpness Attack Bonus (ushort)">;
 ushort Bludgeoner_Yellow_Sharpness_Attack_Bonus<name="Bludgeoner: Yellow Sharpness Attack Bonus (ushort)">;
@@ -180,6 +183,7 @@ typedef struct {
 
 Artillery Artillery_[9]<optimize=false, name="Artillery">;
 
+// Skill Params (4)
 float Heavy_Artillery_Ballista_Attack_Rate_1<name="Heavy Artillery: Ballista Attack Rate 1 (float)">;
 float Heavy_Artillery_Ballista_Attack_Rate_2<name="Heavy Artillery: Ballista Attack Rate 2 (float)">;
 float Heavy_Artillery_Cannon_Attack_Rate_1<name="Heavy Artillery: Cannon Attack Rate 1 (float)">;
@@ -217,6 +221,7 @@ typedef struct {
 
 Power_Prolonger Power_Prolonger_[5]<optimize=false, name="Power Prolonger">;
 
+// Skill Params (5)
 float Health_Auto_Recover_Interval<name="Health Auto Recover Interval (float)">;
 ubyte Health_Auto_Recover_Value<name="Health Auto Recover Value (ubyte)">;
 ubyte Hasten_Recovery_Great_Sword_Recovery_Health<name="Hasten Recovery: (Great Sword) Recovery Health (ubyte)">;
@@ -251,6 +256,7 @@ typedef struct {
 
 Slinger_Up Slinger_Up_[31]<optimize=false, name="Slinger Up">;
 
+// Skill Params (6)
 float Master_Fisher_Add_Hook_Time<name="Master Fisher: Add Hook Time (float)">;
 float Master_Fisher_Big_Fish_Catch_Rate<name="Master Fisher: Big Fish Catch Rate (float)">;
 float Adrenaline_Stamina_Rate<name="Adrenaline: Stamina Rate (float)">;
@@ -293,6 +299,7 @@ typedef struct {
 
 Frostcraft_1_ Frostcraft_1__[14]<optimize=false, name="Frostcraft (1)">;
 
+// Frostcraft (2)
 ubyte Unk33<name="Unk33 (ubyte)">;
 ubyte Unk34<name="Unk34 (ubyte)">;
 ubyte Unk35<name="Unk35 (ubyte)">;
@@ -319,6 +326,7 @@ ubyte Frostcraft_HBG_Wyvernsnipe_Claw_Consumption_per_Hit<name="Frostcraft: HBG:
 ubyte Frostcraft_LBG_Wyvernblast_Consumption_per_Hit<name="Frostcraft: LBG: (Wyvernblast) Consumption per Hit (ubyte)">;
 ubyte Frostcraft_LBG_Wyvernblast_Claw_Consumption_per_Hit<name="Frostcraft: LBG: (Wyvernblast Claw) Consumption per Hit (ubyte)">;
 
+// Skill Params (7)
 ubyte Unk_Safi_1<name="Unk Safi 1 (ubyte)">;
 float Unk36<name="Unk36 (float)">;
 float Unk37<name="Unk37 (float)">;
@@ -419,6 +427,7 @@ float Set_5_Bowgun_Elemental_Limit<name="Set(5) Bowgun Elemental Limit (float)">
 float Set_3_Status_Limit<name="Set(3) Status Limit (float)">;
 float Set_5_Status_Limit<name="Set(5) Status Limit (float)">;
 
+// Clutch Claw Boost
 float Tenderizing_Damage_Multiplier_Great_Sword<name="Tenderizing Damage % Multiplier: Great Sword (float)">;
 float Tenderizing_Damage_Multiplier_Sword_Shield<name="Tenderizing Damage % Multiplier: Sword & Shield (float)">;
 float Tenderizing_Damage_Multiplier_Dual_Blades<name="Tenderizing Damage % Multiplier: Dual Blades (float)">;
@@ -434,6 +443,7 @@ float Tenderizing_Damage_Multiplier_Bow<name="Tenderizing Damage % Multiplier: B
 float Tenderizing_Damage_Multiplier_HBG<name="Tenderizing Damage % Multiplier: HBG (float)">;
 float Tenderizing_Damage_Multiplier_LBG<name="Tenderizing Damage % Multiplier: LBG (float)">;
 
+// Food Effects
 ushort Food_Effect_Life_Up_1<name="Food Effect: Life Up 1 (ushort)">;
 ushort Food_Effect_Life_Up_2<name="Food Effect: Life Up 2 (ushort)">;
 ushort Food_Effect_Life_Up_3<name="Food Effect: Life Up 3 (ushort)">;
@@ -456,6 +466,7 @@ ushort Food_Effect_All_Resistances_Up_2<name="Food Effect: All Resistances Up 2 
 ushort Food_Effect_All_Resistances_Up_3<name="Food Effect: All Resistances Up 3 (ushort)">;
 ushort Food_Effect_All_Resistances_Up_4<name="Food Effect: All Resistances Up 4 (ushort)">;
 
+// Feline Skill
 ubyte Feline_Polisher_1<name="Feline Polisher: % 1 (ubyte)">;
 ubyte Feline_Polisher_2<name="Feline Polisher: % 2 (ubyte)">;
 ubyte Feline_Polisher_3<name="Feline Polisher: % 3 (ubyte)">;
@@ -521,6 +532,7 @@ float Feline_Recoil_Attack_Multiplier_4<name="Feline Recoil: Attack Multiplier 4
 float Feline_Recoil_Attack_Multiplier_5<name="Feline Recoil: Attack Multiplier 5 (float)">;
 float Feline_Tailor<name="Feline Tailor (float)">;
 
+// Skill Params (8)
 float Music_Skill_Bless_Random_Rate<name="Music Skill: Bless: Random Rate (float)">;
 float Music_Skill_Bless_Damage_Cut_Rate<name="Music Skill: Bless: Damage Cut Rate (float)">;
 float Music_Skill_Extend_Time<name="Music Skill: Extend: Time (float)">;

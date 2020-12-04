@@ -191,5 +191,6 @@ typedef struct {
 
 Unknowns Unknowns_[Unk_Header_.Unk_Count]<optimize=false, name="Unknowns">;
 
+// Unknown
 uint unk1<name="unk1 (uint)">;
 uint unk2<name="unk2 (uint)">;

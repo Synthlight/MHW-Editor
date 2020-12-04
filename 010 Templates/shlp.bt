@@ -22,6 +22,7 @@ typedef struct {
 
 Assets Assets_[25]<optimize=false, name="Assets">;
 
+// Shlp (1)
 uint Projectile_Body_EPV_Index<name="Projectile Body: EPV Index (uint)">;
 uint Projectile_Body_EPV_Element_<name="Projectile Body: EPV Element # (uint)">;
 uint Muzzle_EPV_Index<name="Muzzle: EPV Index (uint)">;
@@ -59,6 +60,7 @@ typedef struct {
 
 Child_Shell_Params Child_Shell_Params_[Number_of_Linked_Shell_Params_Holder_.Number_of_Linked_Shell_Params]<optimize=false, name="Child Shell Params">;
 
+// EPV
 uint Ground_Hit_EPV_Index<name="Ground Hit: EPV Index (uint)">;
 uint Ground_Hit_EPV_Element_<name="Ground Hit: EPV Element # (uint)">;
 uint Wall_Hit_EPV_Index<name="Wall Hit: EPV Index (uint)">;
@@ -102,6 +104,7 @@ uint Unk_32<name="Unk 32 (uint)">;
 uint Unk_33<name="Unk 33 (uint)">;
 uint Unk_34<name="Unk 34 (uint)">;
 
+// Sound
 uint Wwise_Container_Header<name="Wwise Container Header (uint)">;
 if (Wwise_Container_Header != 0) { string Wwise_Container<name="Wwise Container (string)">; }
 int Sound_Shoot_Header<name="Sound: Shoot Header (int)">;
@@ -129,6 +132,7 @@ int Sound_Custom_2<name="Sound: Custom 2 (int)">;
 int Sound_Custom_Header_3<name="Sound: Custom Header 3 (int)">;
 int Sound_Custom_3<name="Sound: Custom 3 (int)">;
 
+// Shlp (2)
 uint Header<name="Header (uint)">;
 uint Projectile_Entity_Collider<name="Projectile: Entity Collider (uint)">;
 float Projectile_Model_Lifespan<name="Projectile: Model Lifespan (float)">;

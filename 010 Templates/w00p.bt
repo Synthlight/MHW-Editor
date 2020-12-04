@@ -5,6 +5,7 @@
 //  Category: MHW-Editor
 //------------------------------------------------
 
+// W00p Params (1, Shared)
 char Weapon[4]<optimize=false, name="Weapon">;
 uint Unk_1<name="Unk 1 (uint)">;
 
@@ -19,6 +20,7 @@ typedef struct {
 
 Unk_Arr_1_Shared_ Unk_Arr_1_Shared__[20]<optimize=false, name="Unk Arr 1 (Shared)">;
 
+// W00p Params (2, Shared)
 float Unk_2<name="Unk 2 (float)">;
 float Unk_3<name="Unk 3 (float)">;
 float Unk_4<name="Unk 4 (float)">;
@@ -56,6 +58,7 @@ typedef struct {
 
 Guard_Angles_Shared_ Guard_Angles_Shared__[2]<optimize=false, name="Guard Angles (Shared)">;
 
+// W00p Params (3, Shared)
 float Unk_28<name="Unk 28 (float)">;
 float Unk_29<name="Unk 29 (float)">;
 float Unk_30<name="Unk 30 (float)">;
@@ -127,6 +130,7 @@ typedef struct {
 
 Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false, name="Unk Arr 2 (Shared)">;
 
+// W00p Params (4, Shared)
 ubyte Unk_77<name="Unk 77 (ubyte)">;
 int Unk_78<name="Unk 78 (int)">;
 float Unk_79<name="Unk 79 (float)">;
@@ -158,6 +162,7 @@ typedef struct {
 
 Charge_Times Charge_Times_[5]<optimize=false, name="Charge Times">;
 
+// W00p Params (5)
 float Unk_91<name="Unk 91 (float)">;
 float Unk_92<name="Unk 92 (float)">;
 float Unk_93<name="Unk 93 (float)">;
@@ -195,6 +200,7 @@ typedef struct {
 
 Unk_Arr_4 Unk_Arr_4_[8]<optimize=false, name="Unk Arr 4">;
 
+// W00p Params (6)
 float Unk_106<name="Unk 106 (float)">;
 float Unk_107<name="Unk 107 (float)">;
 
@@ -209,6 +215,7 @@ typedef struct {
 
 Action_Param_1 Action_Param_1_[2]<optimize=false, name="Action Param 1">;
 
+// W00p Params (7)
 float Unk_108<name="Unk 108 (float)">;
 float Unk_109<name="Unk 109 (float)">;
 float Unk_110<name="Unk 110 (float)">;
@@ -240,6 +247,7 @@ typedef struct {
 
 Action_Param_2 Action_Param_2_[7]<optimize=false, name="Action Param 2">;
 
+// W00p Params (8)
 float Unk_127<name="Unk 127 (float)">;
 float Unk_128<name="Unk 128 (float)">;
 uint Unk_129<name="Unk 129 (uint)">;
@@ -258,6 +266,7 @@ typedef struct {
 
 Action_Param_3 Action_Param_3_[2]<optimize=false, name="Action Param 3">;
 
+// W00p Params (9)
 float Unk_133<name="Unk 133 (float)">;
 float Unk_134<name="Unk 134 (float)">;
 float Unk_135<name="Unk 135 (float)">;

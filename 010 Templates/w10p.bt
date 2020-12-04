@@ -5,6 +5,7 @@
 //  Category: MHW-Editor
 //------------------------------------------------
 
+// W10p Params (1, Shared)
 char Weapon[4]<optimize=false, name="Weapon">;
 uint Unk_1<name="Unk 1 (uint)">;
 
@@ -19,6 +20,7 @@ typedef struct {
 
 Unk_Arr_1_Shared_ Unk_Arr_1_Shared__[20]<optimize=false, name="Unk Arr 1 (Shared)">;
 
+// W10p Params (2, Shared)
 float Unk_2<name="Unk 2 (float)">;
 float Unk_3<name="Unk 3 (float)">;
 float Unk_4<name="Unk 4 (float)">;
@@ -56,6 +58,7 @@ typedef struct {
 
 Guard_Angles_Shared_ Guard_Angles_Shared__[2]<optimize=false, name="Guard Angles (Shared)">;
 
+// W10p Params (3, Shared)
 float Unk_28<name="Unk 28 (float)">;
 float Unk_29<name="Unk 29 (float)">;
 float Unk_30<name="Unk 30 (float)">;
@@ -127,6 +130,7 @@ typedef struct {
 
 Unk_Arr_2_Shared_ Unk_Arr_2_Shared__[8]<optimize=false, name="Unk Arr 2 (Shared)">;
 
+// W10p Params (4, Shared)
 ubyte Unk_77<name="Unk 77 (ubyte)">;
 int Unk_78<name="Unk 78 (int)">;
 float Unk_79<name="Unk 79 (float)">;
@@ -148,6 +152,7 @@ float Unk_15_10_4<name="Unk (15.10) 4 (float)">;
 float Unk_15_10_5<name="Unk (15.10) 5 (float)">;
 float Unk_15_10_6<name="Unk (15.10) 6 (float)">;
 
+// W10p Params (5)
 float Red_Extract_Duration<name="Red Extract Duration (float)">;
 float White_Extract_Duration<name="White Extract Duration (float)">;
 float Orange_Extract_Duration<name="Orange Extract Duration (float)">;
@@ -171,6 +176,7 @@ typedef struct {
 
 Action_Param_Relate_Vault_ Action_Param_Relate_Vault__[16]<optimize=false, name="Action Param (Relate Vault)">;
 
+// W10p Params (6)
 float Unk_98<name="Unk 98 (float)">;
 float Unk_99<name="Unk 99 (float)">;
 float Unk_100<name="Unk 100 (float)">;
@@ -186,6 +192,7 @@ typedef struct {
 
 Action_Param_Relate_Vault_Dance_ Action_Param_Relate_Vault_Dance__<name="Action Param (Relate Vault Dance)">;
 
+// W10p Params (7)
 uint Jumping_Advancing_Slashes_Repeat_Limit_Count_Can_vault_dance_N_times_per_jump_<name="Jumping Advancing Slashes Repeat Limit Count (Can vault dance N times per jump.) (uint)">;
 float Unk_102<name="Unk 102 (float)">;
 
@@ -200,6 +207,7 @@ typedef struct {
 
 Action_Param_Relate_Mid_air_Evade_ Action_Param_Relate_Mid_air_Evade__[9]<optimize=false, name="Action Param (Relate Mid-air Evade)">;
 
+// W10p Params (8)
 float Unk_103<name="Unk 103 (float)">;
 float Unk_104<name="Unk 104 (float)">;
 
@@ -214,6 +222,7 @@ typedef struct {
 
 Action_Param_Relate_Jumping_Attacks_ Action_Param_Relate_Jumping_Attacks__[22]<optimize=false, name="Action Param (Relate Jumping Attacks)">;
 
+// W10p Params (9)
 float Unk_105<name="Unk 105 (float)">;
 float Unk_106<name="Unk 106 (float)">;
 float Unk_107<name="Unk 107 (float)">;
@@ -230,6 +239,7 @@ typedef struct {
 
 Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not_ Action_Param_Relate_Wall_Vault_Wall_Opposite_Vault_White_Extract_or_Not__[4]<optimize=false, name="Action Param (Relate Wall Vault, Wall Opposite Vault, White Extract or Not)">;
 
+// W10p Params (10)
 float Unk_109<name="Unk 109 (float)">;
 float Unk_110<name="Unk 110 (float)">;
 float Sever_Boost<name="Sever Boost (float)">;
@@ -299,6 +309,7 @@ typedef struct {
 
 Kinsect_Stats Kinsect_Stats_[9]<optimize=false, name="Kinsect Stats">;
 
+// W10p Params (11)
 float Unk_151<name="Unk 151 (float)">;
 float Unk_152<name="Unk 152 (float)">;
 float Unk_153<name="Unk 153 (float)">;
@@ -336,6 +347,7 @@ typedef struct {
 
 Unk_Arr_4_All_sint8_ Unk_Arr_4_All_sint8__[14]<optimize=false, name="Unk Arr 4 (All sint8)">;
 
+// W10p Params (12)
 float Unk_177<name="Unk 177 (float)">;
 float Unk_178<name="Unk 178 (float)">;
 float Unk_179<name="Unk 179 (float)">;
@@ -360,6 +372,7 @@ typedef struct {
 
 Unk_Arr_5_All_sint8_ Unk_Arr_5_All_sint8__<name="Unk Arr 5 (All sint8)">;
 
+// W10p Params (13)
 float Unk_182<name="Unk 182 (float)">;
 float Descending_Thrust_Kinsect_Following_Speed_Multiplier<name="Descending Thrust Kinsect Following Speed Multiplier (float)">;
 float Unk_184<name="Unk 184 (float)">;
