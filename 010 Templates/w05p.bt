@@ -141,6 +141,12 @@ float Unk_87<name="Unk 87 (float)">;
 float Unk_88<name="Unk 88 (float)">;
 float Unk_89<name="Unk 89 (float)">;
 float Unk_90<name="Unk 90 (float)">;
+float Unk_15_10_1<name="Unk (15.10) 1 (float)">;
+float Unk_15_10_2<name="Unk (15.10) 2 (float)">;
+float Unk_15_10_3<name="Unk (15.10) 3 (float)">;
+float Unk_15_10_4<name="Unk (15.10) 4 (float)">;
+float Unk_15_10_5<name="Unk (15.10) 5 (float)">;
+float Unk_15_10_6<name="Unk (15.10) 6 (float)">;
 
 float Unk_91<name="Unk 91 (float)">;
 float Unk_92<name="Unk 92 (float)">;
@@ -200,5 +206,3 @@ typedef struct {
 Action_Param_3 Action_Param_3_<name="Action Param 3">;
 
 float Deflected_Attack_Prevention_Self_Buff_Multiplier<name="Deflected Attack Prevention Self Buff Multiplier (float)">;
-float Unk_113<name="Unk 113 (float)">;
-float Unk_114<name="Unk 114 (float)">;

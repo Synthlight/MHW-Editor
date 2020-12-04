@@ -95,11 +95,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Helmbreaker Red Line Delay", typeof(float))
                 }, 1, showVertically: true, description:"For Helmbreaker Hit Delay, some situations, like low or unstable fps, may cause less than 7 hits if the hit delays are <= 0."),
 
-                new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1),
-
-                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 7}", typeof(float))
-                }, 1, showVertically: true)
+                new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1)
             });
 
             return new MultiStruct("Weapons", $"Wp{N}Param", new MhwMultiStructData(structs, $"w{N}p", EncryptionKeys.FILE_EXT_KEY_LOOKUP[$".w{N}p"]));

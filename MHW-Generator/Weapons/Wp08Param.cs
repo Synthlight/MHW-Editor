@@ -106,13 +106,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Power Axe Duration", typeof(float))
                 }, 1, showVertically: true),
 
-                new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1),
-
-                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 2}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
-                }, 1, showVertically: true)
+                new MhwMultiStructData.StructData($"Action Param {++actionParamIndex}", actionParam, 1)
             });
 
             return new MultiStruct("Weapons", $"Wp{N}Param", new MhwMultiStructData(structs, $"w{N}p", EncryptionKeys.FILE_EXT_KEY_LOOKUP[$".w{N}p"]));

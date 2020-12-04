@@ -194,11 +194,7 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Descending Thrust Kinsect Following Coordinate Z Offset", typeof(float))
                 }, 1, showVertically: true),
 
-                new MhwMultiStructData.StructData("Action Param (Relate Clutch Attack Finish)", actionParam, 1),
-
-                new MhwMultiStructData.StructData($"W{N}p Params ({++paramIndex})", new List<MhwMultiStructData.Entry> {
-                    new MhwMultiStructData.Entry($"Unk {unkIndex += 3}", typeof(float))
-                }, 1, showVertically: true)
+                new MhwMultiStructData.StructData("Action Param (Relate Clutch Attack Finish)", actionParam, 1)
             });
 
             return new MultiStruct("Weapons", $"Wp{N}Param", new MhwMultiStructData(structs, $"w{N}p", EncryptionKeys.FILE_EXT_KEY_LOOKUP[$".w{N}p"]));

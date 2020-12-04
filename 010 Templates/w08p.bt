@@ -141,6 +141,12 @@ float Unk_87<name="Unk 87 (float)">;
 float Unk_88<name="Unk 88 (float)">;
 float Unk_89<name="Unk 89 (float)">;
 float Unk_90<name="Unk 90 (float)">;
+float Unk_15_10_1<name="Unk (15.10) 1 (float)">;
+float Unk_15_10_2<name="Unk (15.10) 2 (float)">;
+float Unk_15_10_3<name="Unk (15.10) 3 (float)">;
+float Unk_15_10_4<name="Unk (15.10) 4 (float)">;
+float Unk_15_10_5<name="Unk (15.10) 5 (float)">;
+float Unk_15_10_6<name="Unk (15.10) 6 (float)">;
 
 uint Unk_91<name="Unk 91 (uint)">;
 uint Unk_92<name="Unk 92 (uint)">;
@@ -258,7 +264,3 @@ typedef struct {
 } Action_Param_3;
 
 Action_Param_3 Action_Param_3_<name="Action Param 3">;
-
-float Unk_172<name="Unk 172 (float)">;
-float Unk_173<name="Unk 173 (float)">;
-float Unk_174<name="Unk 174 (float)">;

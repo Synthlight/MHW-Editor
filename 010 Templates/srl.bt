@@ -19,7 +19,7 @@ typedef struct {
     int Type<name="Type (int)">;
     uint Item_Id<name="Item Id (uint)">;
     uint Quantity<name="Quantity (uint)">;
-    ulong Chance_<name="Chance % (ulong)">;
+    int64 Chance_<name="Chance % (int64)">;
     uint Rarity<name="Rarity (uint)">;
 } Entries;
 

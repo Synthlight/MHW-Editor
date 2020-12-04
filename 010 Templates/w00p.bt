@@ -141,6 +141,12 @@ float Unk_87<name="Unk 87 (float)">;
 float Unk_88<name="Unk 88 (float)">;
 float Unk_89<name="Unk 89 (float)">;
 float Unk_90<name="Unk 90 (float)">;
+float Unk_15_10_1<name="Unk (15.10) 1 (float)">;
+float Unk_15_10_2<name="Unk (15.10) 2 (float)">;
+float Unk_15_10_3<name="Unk (15.10) 3 (float)">;
+float Unk_15_10_4<name="Unk (15.10) 4 (float)">;
+float Unk_15_10_5<name="Unk (15.10) 5 (float)">;
+float Unk_15_10_6<name="Unk (15.10) 6 (float)">;
 
 // Charge Times
 typedef struct {
@@ -257,5 +263,3 @@ float Unk_134<name="Unk 134 (float)">;
 float Unk_135<name="Unk 135 (float)">;
 float Unk_136<name="Unk 136 (float)">;
 float Unk_137<name="Unk 137 (float)">;
-float Unk_138<name="Unk 138 (float)">;
-float Unk_139<name="Unk 139 (float)">;

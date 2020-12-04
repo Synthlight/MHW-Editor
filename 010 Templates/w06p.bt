@@ -141,6 +141,12 @@ float Unk_87<name="Unk 87 (float)">;
 float Unk_88<name="Unk 88 (float)">;
 float Unk_89<name="Unk 89 (float)">;
 float Unk_90<name="Unk 90 (float)">;
+float Unk_15_10_1<name="Unk (15.10) 1 (float)">;
+float Unk_15_10_2<name="Unk (15.10) 2 (float)">;
+float Unk_15_10_3<name="Unk (15.10) 3 (float)">;
+float Unk_15_10_4<name="Unk (15.10) 4 (float)">;
+float Unk_15_10_5<name="Unk (15.10) 5 (float)">;
+float Unk_15_10_6<name="Unk (15.10) 6 (float)">;
 
 // Action Param 1
 typedef struct {
@@ -240,7 +246,3 @@ typedef struct {
 } Guard_Angles_Lance_;
 
 Guard_Angles_Lance_ Guard_Angles_Lance__<name="Guard Angles (Lance)">;
-
-float Unk_145<name="Unk 145 (float)">;
-float Unk_146<name="Unk 146 (float)">;
-float Unk_147<name="Unk 147 (float)">;

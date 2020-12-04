@@ -161,7 +161,13 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
                     new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
-                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float))
+                    new MhwMultiStructData.Entry($"Unk {++unkIndex}", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk (15.10) 1", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk (15.10) 2", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk (15.10) 3", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk (15.10) 4", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk (15.10) 5", typeof(float)),
+                    new MhwMultiStructData.Entry("Unk (15.10) 6", typeof(float))
                 }, 1, showVertically: true)
             };
 
