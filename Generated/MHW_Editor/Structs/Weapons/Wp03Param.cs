@@ -2795,95 +2795,95 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Spirit_Gauge_Decay_offset { get; private set; }
 
-            protected float Unk_93_raw;
-            public const string Unk_93_displayName = "Unk 93";
-            public const int Unk_93_sortIndex = 150;
-            [SortOrder(Unk_93_sortIndex)]
-            [DisplayName(Unk_93_displayName)]
-            public virtual float Unk_93 {
-                get => Unk_93_raw;
+            protected float Spirit_Blade_1_Cost_raw;
+            public const string Spirit_Blade_1_Cost_displayName = "Spirit Blade 1 Cost";
+            public const int Spirit_Blade_1_Cost_sortIndex = 150;
+            [SortOrder(Spirit_Blade_1_Cost_sortIndex)]
+            [DisplayName(Spirit_Blade_1_Cost_displayName)]
+            public virtual float Spirit_Blade_1_Cost {
+                get => Spirit_Blade_1_Cost_raw;
                 set {
-                    if (Unk_93_raw == value) return;
-                    Unk_93_raw = value;
-                    ChangedItems.Add(nameof(Unk_93));
-                    OnPropertyChanged(nameof(Unk_93));
+                    if (Spirit_Blade_1_Cost_raw == value) return;
+                    Spirit_Blade_1_Cost_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Blade_1_Cost));
+                    OnPropertyChanged(nameof(Spirit_Blade_1_Cost));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_93_offset { get; private set; }
+            public long Spirit_Blade_1_Cost_offset { get; private set; }
 
-            protected float Unk_94_raw;
-            public const string Unk_94_displayName = "Unk 94";
-            public const int Unk_94_sortIndex = 200;
-            [SortOrder(Unk_94_sortIndex)]
-            [DisplayName(Unk_94_displayName)]
-            public virtual float Unk_94 {
-                get => Unk_94_raw;
+            protected float Spirit_Blade_2_Cost_raw;
+            public const string Spirit_Blade_2_Cost_displayName = "Spirit Blade 2 Cost";
+            public const int Spirit_Blade_2_Cost_sortIndex = 200;
+            [SortOrder(Spirit_Blade_2_Cost_sortIndex)]
+            [DisplayName(Spirit_Blade_2_Cost_displayName)]
+            public virtual float Spirit_Blade_2_Cost {
+                get => Spirit_Blade_2_Cost_raw;
                 set {
-                    if (Unk_94_raw == value) return;
-                    Unk_94_raw = value;
-                    ChangedItems.Add(nameof(Unk_94));
-                    OnPropertyChanged(nameof(Unk_94));
+                    if (Spirit_Blade_2_Cost_raw == value) return;
+                    Spirit_Blade_2_Cost_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Blade_2_Cost));
+                    OnPropertyChanged(nameof(Spirit_Blade_2_Cost));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_94_offset { get; private set; }
+            public long Spirit_Blade_2_Cost_offset { get; private set; }
 
-            protected float Unk_95_raw;
-            public const string Unk_95_displayName = "Unk 95";
-            public const int Unk_95_sortIndex = 250;
-            [SortOrder(Unk_95_sortIndex)]
-            [DisplayName(Unk_95_displayName)]
-            public virtual float Unk_95 {
-                get => Unk_95_raw;
+            protected float Spirit_Blade_3_Cost_raw;
+            public const string Spirit_Blade_3_Cost_displayName = "Spirit Blade 3 Cost";
+            public const int Spirit_Blade_3_Cost_sortIndex = 250;
+            [SortOrder(Spirit_Blade_3_Cost_sortIndex)]
+            [DisplayName(Spirit_Blade_3_Cost_displayName)]
+            public virtual float Spirit_Blade_3_Cost {
+                get => Spirit_Blade_3_Cost_raw;
                 set {
-                    if (Unk_95_raw == value) return;
-                    Unk_95_raw = value;
-                    ChangedItems.Add(nameof(Unk_95));
-                    OnPropertyChanged(nameof(Unk_95));
+                    if (Spirit_Blade_3_Cost_raw == value) return;
+                    Spirit_Blade_3_Cost_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Blade_3_Cost));
+                    OnPropertyChanged(nameof(Spirit_Blade_3_Cost));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_95_offset { get; private set; }
+            public long Spirit_Blade_3_Cost_offset { get; private set; }
 
-            protected float Unk_96_raw;
-            public const string Unk_96_displayName = "Unk 96";
-            public const int Unk_96_sortIndex = 300;
-            [SortOrder(Unk_96_sortIndex)]
-            [DisplayName(Unk_96_displayName)]
-            public virtual float Unk_96 {
-                get => Unk_96_raw;
+            protected float Spirit_Round_Slash_Cost_raw;
+            public const string Spirit_Round_Slash_Cost_displayName = "Spirit Round Slash Cost";
+            public const int Spirit_Round_Slash_Cost_sortIndex = 300;
+            [SortOrder(Spirit_Round_Slash_Cost_sortIndex)]
+            [DisplayName(Spirit_Round_Slash_Cost_displayName)]
+            public virtual float Spirit_Round_Slash_Cost {
+                get => Spirit_Round_Slash_Cost_raw;
                 set {
-                    if (Unk_96_raw == value) return;
-                    Unk_96_raw = value;
-                    ChangedItems.Add(nameof(Unk_96));
-                    OnPropertyChanged(nameof(Unk_96));
+                    if (Spirit_Round_Slash_Cost_raw == value) return;
+                    Spirit_Round_Slash_Cost_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Round_Slash_Cost));
+                    OnPropertyChanged(nameof(Spirit_Round_Slash_Cost));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_96_offset { get; private set; }
+            public long Spirit_Round_Slash_Cost_offset { get; private set; }
 
-            protected float Unk_97_raw;
-            public const string Unk_97_displayName = "Unk 97";
-            public const int Unk_97_sortIndex = 350;
-            [SortOrder(Unk_97_sortIndex)]
-            [DisplayName(Unk_97_displayName)]
-            public virtual float Unk_97 {
-                get => Unk_97_raw;
+            protected float Spirit_Jumping_Slash_Cost_raw;
+            public const string Spirit_Jumping_Slash_Cost_displayName = "Spirit Jumping Slash Cost";
+            public const int Spirit_Jumping_Slash_Cost_sortIndex = 350;
+            [SortOrder(Spirit_Jumping_Slash_Cost_sortIndex)]
+            [DisplayName(Spirit_Jumping_Slash_Cost_displayName)]
+            public virtual float Spirit_Jumping_Slash_Cost {
+                get => Spirit_Jumping_Slash_Cost_raw;
                 set {
-                    if (Unk_97_raw == value) return;
-                    Unk_97_raw = value;
-                    ChangedItems.Add(nameof(Unk_97));
-                    OnPropertyChanged(nameof(Unk_97));
+                    if (Spirit_Jumping_Slash_Cost_raw == value) return;
+                    Spirit_Jumping_Slash_Cost_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Jumping_Slash_Cost));
+                    OnPropertyChanged(nameof(Spirit_Jumping_Slash_Cost));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_97_offset { get; private set; }
+            public long Spirit_Jumping_Slash_Cost_offset { get; private set; }
 
             protected float Unk_98_raw;
             public const string Unk_98_displayName = "Unk 98";
@@ -3011,149 +3011,149 @@ namespace MHW_Editor.Structs.Weapons {
             [DisplayName("Offset")]
             public long Unk_104_offset { get; private set; }
 
-            protected float Unk_105_raw;
-            public const string Unk_105_displayName = "Unk 105";
-            public const int Unk_105_sortIndex = 750;
-            [SortOrder(Unk_105_sortIndex)]
-            [DisplayName(Unk_105_displayName)]
-            public virtual float Unk_105 {
-                get => Unk_105_raw;
+            protected float Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__raw;
+            public const string Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__displayName = "Spirit Regeneration Duration After Helm Breaker (In Seconds)";
+            public const int Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__sortIndex = 750;
+            [SortOrder(Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__sortIndex)]
+            [DisplayName(Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__displayName)]
+            public virtual float Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds_ {
+                get => Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__raw;
                 set {
-                    if (Unk_105_raw == value) return;
-                    Unk_105_raw = value;
-                    ChangedItems.Add(nameof(Unk_105));
-                    OnPropertyChanged(nameof(Unk_105));
+                    if (Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__raw == value) return;
+                    Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds_));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds_));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_105_offset { get; private set; }
+            public long Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__offset { get; private set; }
 
-            protected float Unk_106_raw;
-            public const string Unk_106_displayName = "Unk 106";
-            public const int Unk_106_sortIndex = 800;
-            [SortOrder(Unk_106_sortIndex)]
-            [DisplayName(Unk_106_displayName)]
-            public virtual float Unk_106 {
-                get => Unk_106_raw;
+            protected float Spirit_Regeneration_After_Something_Unk_1_raw;
+            public const string Spirit_Regeneration_After_Something_Unk_1_displayName = "Spirit Regeneration After Something, Unk 1";
+            public const int Spirit_Regeneration_After_Something_Unk_1_sortIndex = 800;
+            [SortOrder(Spirit_Regeneration_After_Something_Unk_1_sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Something_Unk_1_displayName)]
+            public virtual float Spirit_Regeneration_After_Something_Unk_1 {
+                get => Spirit_Regeneration_After_Something_Unk_1_raw;
                 set {
-                    if (Unk_106_raw == value) return;
-                    Unk_106_raw = value;
-                    ChangedItems.Add(nameof(Unk_106));
-                    OnPropertyChanged(nameof(Unk_106));
+                    if (Spirit_Regeneration_After_Something_Unk_1_raw == value) return;
+                    Spirit_Regeneration_After_Something_Unk_1_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_1));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_1));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_106_offset { get; private set; }
+            public long Spirit_Regeneration_After_Something_Unk_1_offset { get; private set; }
 
-            protected float Unk_107_raw;
-            public const string Unk_107_displayName = "Unk 107";
-            public const int Unk_107_sortIndex = 850;
-            [SortOrder(Unk_107_sortIndex)]
-            [DisplayName(Unk_107_displayName)]
-            public virtual float Unk_107 {
-                get => Unk_107_raw;
+            protected float Spirit_Regeneration_After_Something_Unk_2_raw;
+            public const string Spirit_Regeneration_After_Something_Unk_2_displayName = "Spirit Regeneration After Something, Unk 2";
+            public const int Spirit_Regeneration_After_Something_Unk_2_sortIndex = 850;
+            [SortOrder(Spirit_Regeneration_After_Something_Unk_2_sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Something_Unk_2_displayName)]
+            public virtual float Spirit_Regeneration_After_Something_Unk_2 {
+                get => Spirit_Regeneration_After_Something_Unk_2_raw;
                 set {
-                    if (Unk_107_raw == value) return;
-                    Unk_107_raw = value;
-                    ChangedItems.Add(nameof(Unk_107));
-                    OnPropertyChanged(nameof(Unk_107));
+                    if (Spirit_Regeneration_After_Something_Unk_2_raw == value) return;
+                    Spirit_Regeneration_After_Something_Unk_2_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_2));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_2));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_107_offset { get; private set; }
+            public long Spirit_Regeneration_After_Something_Unk_2_offset { get; private set; }
 
-            protected float Unk_108_raw;
-            public const string Unk_108_displayName = "Unk 108";
-            public const int Unk_108_sortIndex = 900;
-            [SortOrder(Unk_108_sortIndex)]
-            [DisplayName(Unk_108_displayName)]
-            public virtual float Unk_108 {
-                get => Unk_108_raw;
+            protected float Spirit_Regeneration_After_Something_Unk_3_raw;
+            public const string Spirit_Regeneration_After_Something_Unk_3_displayName = "Spirit Regeneration After Something, Unk 3";
+            public const int Spirit_Regeneration_After_Something_Unk_3_sortIndex = 900;
+            [SortOrder(Spirit_Regeneration_After_Something_Unk_3_sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Something_Unk_3_displayName)]
+            public virtual float Spirit_Regeneration_After_Something_Unk_3 {
+                get => Spirit_Regeneration_After_Something_Unk_3_raw;
                 set {
-                    if (Unk_108_raw == value) return;
-                    Unk_108_raw = value;
-                    ChangedItems.Add(nameof(Unk_108));
-                    OnPropertyChanged(nameof(Unk_108));
+                    if (Spirit_Regeneration_After_Something_Unk_3_raw == value) return;
+                    Spirit_Regeneration_After_Something_Unk_3_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_3));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_3));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_108_offset { get; private set; }
+            public long Spirit_Regeneration_After_Something_Unk_3_offset { get; private set; }
 
-            protected float Unk_109_raw;
-            public const string Unk_109_displayName = "Unk 109";
-            public const int Unk_109_sortIndex = 950;
-            [SortOrder(Unk_109_sortIndex)]
-            [DisplayName(Unk_109_displayName)]
-            public virtual float Unk_109 {
-                get => Unk_109_raw;
+            protected float Spirit_Regeneration_After_Something_Unk_4_raw;
+            public const string Spirit_Regeneration_After_Something_Unk_4_displayName = "Spirit Regeneration After Something, Unk 4";
+            public const int Spirit_Regeneration_After_Something_Unk_4_sortIndex = 950;
+            [SortOrder(Spirit_Regeneration_After_Something_Unk_4_sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Something_Unk_4_displayName)]
+            public virtual float Spirit_Regeneration_After_Something_Unk_4 {
+                get => Spirit_Regeneration_After_Something_Unk_4_raw;
                 set {
-                    if (Unk_109_raw == value) return;
-                    Unk_109_raw = value;
-                    ChangedItems.Add(nameof(Unk_109));
-                    OnPropertyChanged(nameof(Unk_109));
+                    if (Spirit_Regeneration_After_Something_Unk_4_raw == value) return;
+                    Spirit_Regeneration_After_Something_Unk_4_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_4));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_4));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_109_offset { get; private set; }
+            public long Spirit_Regeneration_After_Something_Unk_4_offset { get; private set; }
 
-            protected float Unk_110_raw;
-            public const string Unk_110_displayName = "Unk 110";
-            public const int Unk_110_sortIndex = 1000;
-            [SortOrder(Unk_110_sortIndex)]
-            [DisplayName(Unk_110_displayName)]
-            public virtual float Unk_110 {
-                get => Unk_110_raw;
+            protected float Spirit_Regeneration_After_Something_Unk_5_raw;
+            public const string Spirit_Regeneration_After_Something_Unk_5_displayName = "Spirit Regeneration After Something, Unk 5";
+            public const int Spirit_Regeneration_After_Something_Unk_5_sortIndex = 1000;
+            [SortOrder(Spirit_Regeneration_After_Something_Unk_5_sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Something_Unk_5_displayName)]
+            public virtual float Spirit_Regeneration_After_Something_Unk_5 {
+                get => Spirit_Regeneration_After_Something_Unk_5_raw;
                 set {
-                    if (Unk_110_raw == value) return;
-                    Unk_110_raw = value;
-                    ChangedItems.Add(nameof(Unk_110));
-                    OnPropertyChanged(nameof(Unk_110));
+                    if (Spirit_Regeneration_After_Something_Unk_5_raw == value) return;
+                    Spirit_Regeneration_After_Something_Unk_5_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_5));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_5));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_110_offset { get; private set; }
+            public long Spirit_Regeneration_After_Something_Unk_5_offset { get; private set; }
 
-            protected float Unk_111_raw;
-            public const string Unk_111_displayName = "Unk 111";
-            public const int Unk_111_sortIndex = 1050;
-            [SortOrder(Unk_111_sortIndex)]
-            [DisplayName(Unk_111_displayName)]
-            public virtual float Unk_111 {
-                get => Unk_111_raw;
+            protected float Spirit_Regeneration_After_Something_Unk_6_raw;
+            public const string Spirit_Regeneration_After_Something_Unk_6_displayName = "Spirit Regeneration After Something, Unk 6";
+            public const int Spirit_Regeneration_After_Something_Unk_6_sortIndex = 1050;
+            [SortOrder(Spirit_Regeneration_After_Something_Unk_6_sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Something_Unk_6_displayName)]
+            public virtual float Spirit_Regeneration_After_Something_Unk_6 {
+                get => Spirit_Regeneration_After_Something_Unk_6_raw;
                 set {
-                    if (Unk_111_raw == value) return;
-                    Unk_111_raw = value;
-                    ChangedItems.Add(nameof(Unk_111));
-                    OnPropertyChanged(nameof(Unk_111));
+                    if (Spirit_Regeneration_After_Something_Unk_6_raw == value) return;
+                    Spirit_Regeneration_After_Something_Unk_6_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_6));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_6));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_111_offset { get; private set; }
+            public long Spirit_Regeneration_After_Something_Unk_6_offset { get; private set; }
 
-            protected float Unk_112_raw;
-            public const string Unk_112_displayName = "Unk 112";
-            public const int Unk_112_sortIndex = 1100;
-            [SortOrder(Unk_112_sortIndex)]
-            [DisplayName(Unk_112_displayName)]
-            public virtual float Unk_112 {
-                get => Unk_112_raw;
+            protected float Spirit_Regeneration_After_Something_Unk_7_raw;
+            public const string Spirit_Regeneration_After_Something_Unk_7_displayName = "Spirit Regeneration After Something, Unk 7";
+            public const int Spirit_Regeneration_After_Something_Unk_7_sortIndex = 1100;
+            [SortOrder(Spirit_Regeneration_After_Something_Unk_7_sortIndex)]
+            [DisplayName(Spirit_Regeneration_After_Something_Unk_7_displayName)]
+            public virtual float Spirit_Regeneration_After_Something_Unk_7 {
+                get => Spirit_Regeneration_After_Something_Unk_7_raw;
                 set {
-                    if (Unk_112_raw == value) return;
-                    Unk_112_raw = value;
-                    ChangedItems.Add(nameof(Unk_112));
-                    OnPropertyChanged(nameof(Unk_112));
+                    if (Spirit_Regeneration_After_Something_Unk_7_raw == value) return;
+                    Spirit_Regeneration_After_Something_Unk_7_raw = value;
+                    ChangedItems.Add(nameof(Spirit_Regeneration_After_Something_Unk_7));
+                    OnPropertyChanged(nameof(Spirit_Regeneration_After_Something_Unk_7));
                 }
             }
 
             [DisplayName("Offset")]
-            public long Unk_112_offset { get; private set; }
+            public long Spirit_Regeneration_After_Something_Unk_7_offset { get; private set; }
 
             protected float Gauge_Duration_White_raw;
             public const string Gauge_Duration_White_displayName = "Gauge Duration: White";
@@ -3623,16 +3623,16 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_91_raw = reader.ReadSingle();
                 data.Spirit_Gauge_Decay_offset = reader.BaseStream.Position;
                 data.Spirit_Gauge_Decay_raw = reader.ReadSingle();
-                data.Unk_93_offset = reader.BaseStream.Position;
-                data.Unk_93_raw = reader.ReadSingle();
-                data.Unk_94_offset = reader.BaseStream.Position;
-                data.Unk_94_raw = reader.ReadSingle();
-                data.Unk_95_offset = reader.BaseStream.Position;
-                data.Unk_95_raw = reader.ReadSingle();
-                data.Unk_96_offset = reader.BaseStream.Position;
-                data.Unk_96_raw = reader.ReadSingle();
-                data.Unk_97_offset = reader.BaseStream.Position;
-                data.Unk_97_raw = reader.ReadSingle();
+                data.Spirit_Blade_1_Cost_offset = reader.BaseStream.Position;
+                data.Spirit_Blade_1_Cost_raw = reader.ReadSingle();
+                data.Spirit_Blade_2_Cost_offset = reader.BaseStream.Position;
+                data.Spirit_Blade_2_Cost_raw = reader.ReadSingle();
+                data.Spirit_Blade_3_Cost_offset = reader.BaseStream.Position;
+                data.Spirit_Blade_3_Cost_raw = reader.ReadSingle();
+                data.Spirit_Round_Slash_Cost_offset = reader.BaseStream.Position;
+                data.Spirit_Round_Slash_Cost_raw = reader.ReadSingle();
+                data.Spirit_Jumping_Slash_Cost_offset = reader.BaseStream.Position;
+                data.Spirit_Jumping_Slash_Cost_raw = reader.ReadSingle();
                 data.Unk_98_offset = reader.BaseStream.Position;
                 data.Unk_98_raw = reader.ReadSingle();
                 data.Unk_99_offset = reader.BaseStream.Position;
@@ -3647,22 +3647,22 @@ namespace MHW_Editor.Structs.Weapons {
                 data.Unk_103_raw = reader.ReadSingle();
                 data.Unk_104_offset = reader.BaseStream.Position;
                 data.Unk_104_raw = reader.ReadSingle();
-                data.Unk_105_offset = reader.BaseStream.Position;
-                data.Unk_105_raw = reader.ReadSingle();
-                data.Unk_106_offset = reader.BaseStream.Position;
-                data.Unk_106_raw = reader.ReadSingle();
-                data.Unk_107_offset = reader.BaseStream.Position;
-                data.Unk_107_raw = reader.ReadSingle();
-                data.Unk_108_offset = reader.BaseStream.Position;
-                data.Unk_108_raw = reader.ReadSingle();
-                data.Unk_109_offset = reader.BaseStream.Position;
-                data.Unk_109_raw = reader.ReadSingle();
-                data.Unk_110_offset = reader.BaseStream.Position;
-                data.Unk_110_raw = reader.ReadSingle();
-                data.Unk_111_offset = reader.BaseStream.Position;
-                data.Unk_111_raw = reader.ReadSingle();
-                data.Unk_112_offset = reader.BaseStream.Position;
-                data.Unk_112_raw = reader.ReadSingle();
+                data.Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Something_Unk_1_offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Something_Unk_1_raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Something_Unk_2_offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Something_Unk_2_raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Something_Unk_3_offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Something_Unk_3_raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Something_Unk_4_offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Something_Unk_4_raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Something_Unk_5_offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Something_Unk_5_raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Something_Unk_6_offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Something_Unk_6_raw = reader.ReadSingle();
+                data.Spirit_Regeneration_After_Something_Unk_7_offset = reader.BaseStream.Position;
+                data.Spirit_Regeneration_After_Something_Unk_7_raw = reader.ReadSingle();
                 data.Gauge_Duration_White_offset = reader.BaseStream.Position;
                 data.Gauge_Duration_White_raw = reader.ReadSingle();
                 data.Gauge_Duration_Yellow_offset = reader.BaseStream.Position;
@@ -3719,11 +3719,11 @@ namespace MHW_Editor.Structs.Weapons {
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Unk_91_raw);
                 writer.Write(Spirit_Gauge_Decay_raw);
-                writer.Write(Unk_93_raw);
-                writer.Write(Unk_94_raw);
-                writer.Write(Unk_95_raw);
-                writer.Write(Unk_96_raw);
-                writer.Write(Unk_97_raw);
+                writer.Write(Spirit_Blade_1_Cost_raw);
+                writer.Write(Spirit_Blade_2_Cost_raw);
+                writer.Write(Spirit_Blade_3_Cost_raw);
+                writer.Write(Spirit_Round_Slash_Cost_raw);
+                writer.Write(Spirit_Jumping_Slash_Cost_raw);
                 writer.Write(Unk_98_raw);
                 writer.Write(Unk_99_raw);
                 writer.Write(Unk_100_raw);
@@ -3731,14 +3731,14 @@ namespace MHW_Editor.Structs.Weapons {
                 writer.Write(Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_raw);
                 writer.Write(Unk_103_raw);
                 writer.Write(Unk_104_raw);
-                writer.Write(Unk_105_raw);
-                writer.Write(Unk_106_raw);
-                writer.Write(Unk_107_raw);
-                writer.Write(Unk_108_raw);
-                writer.Write(Unk_109_raw);
-                writer.Write(Unk_110_raw);
-                writer.Write(Unk_111_raw);
-                writer.Write(Unk_112_raw);
+                writer.Write(Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__raw);
+                writer.Write(Spirit_Regeneration_After_Something_Unk_1_raw);
+                writer.Write(Spirit_Regeneration_After_Something_Unk_2_raw);
+                writer.Write(Spirit_Regeneration_After_Something_Unk_3_raw);
+                writer.Write(Spirit_Regeneration_After_Something_Unk_4_raw);
+                writer.Write(Spirit_Regeneration_After_Something_Unk_5_raw);
+                writer.Write(Spirit_Regeneration_After_Something_Unk_6_raw);
+                writer.Write(Spirit_Regeneration_After_Something_Unk_7_raw);
                 writer.Write(Gauge_Duration_White_raw);
                 writer.Write(Gauge_Duration_Yellow_raw);
                 writer.Write(Gauge_Duration_Red_raw);
@@ -3770,11 +3770,11 @@ namespace MHW_Editor.Structs.Weapons {
                 return new ObservableCollection<MultiStructItemCustomView> {
                     new MultiStructItemCustomView(this, "Unk 91", "Unk_91", "Unk_91_offset"),
                     new MultiStructItemCustomView(this, "Spirit Gauge Decay", "Spirit_Gauge_Decay", "Spirit_Gauge_Decay_offset"),
-                    new MultiStructItemCustomView(this, "Unk 93", "Unk_93", "Unk_93_offset"),
-                    new MultiStructItemCustomView(this, "Unk 94", "Unk_94", "Unk_94_offset"),
-                    new MultiStructItemCustomView(this, "Unk 95", "Unk_95", "Unk_95_offset"),
-                    new MultiStructItemCustomView(this, "Unk 96", "Unk_96", "Unk_96_offset"),
-                    new MultiStructItemCustomView(this, "Unk 97", "Unk_97", "Unk_97_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Blade 1 Cost", "Spirit_Blade_1_Cost", "Spirit_Blade_1_Cost_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Blade 2 Cost", "Spirit_Blade_2_Cost", "Spirit_Blade_2_Cost_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Blade 3 Cost", "Spirit_Blade_3_Cost", "Spirit_Blade_3_Cost_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Round Slash Cost", "Spirit_Round_Slash_Cost", "Spirit_Round_Slash_Cost_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Jumping Slash Cost", "Spirit_Jumping_Slash_Cost", "Spirit_Jumping_Slash_Cost_offset"),
                     new MultiStructItemCustomView(this, "Unk 98", "Unk_98", "Unk_98_offset"),
                     new MultiStructItemCustomView(this, "Unk 99", "Unk_99", "Unk_99_offset"),
                     new MultiStructItemCustomView(this, "Unk 100", "Unk_100", "Unk_100_offset"),
@@ -3782,14 +3782,14 @@ namespace MHW_Editor.Structs.Weapons {
                     new MultiStructItemCustomView(this, "Gauge Required to Active Foresight That Gives 45 I-Frames", "Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames", "Gauge_Required_to_Active_Foresight_That_Gives_45_I_Frames_offset"),
                     new MultiStructItemCustomView(this, "Unk 103", "Unk_103", "Unk_103_offset"),
                     new MultiStructItemCustomView(this, "Unk 104", "Unk_104", "Unk_104_offset"),
-                    new MultiStructItemCustomView(this, "Unk 105", "Unk_105", "Unk_105_offset"),
-                    new MultiStructItemCustomView(this, "Unk 106", "Unk_106", "Unk_106_offset"),
-                    new MultiStructItemCustomView(this, "Unk 107", "Unk_107", "Unk_107_offset"),
-                    new MultiStructItemCustomView(this, "Unk 108", "Unk_108", "Unk_108_offset"),
-                    new MultiStructItemCustomView(this, "Unk 109", "Unk_109", "Unk_109_offset"),
-                    new MultiStructItemCustomView(this, "Unk 110", "Unk_110", "Unk_110_offset"),
-                    new MultiStructItemCustomView(this, "Unk 111", "Unk_111", "Unk_111_offset"),
-                    new MultiStructItemCustomView(this, "Unk 112", "Unk_112", "Unk_112_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration Duration After Helm Breaker (In Seconds)", "Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds_", "Spirit_Regeneration_Duration_After_Helm_Breaker_In_Seconds__offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 1", "Spirit_Regeneration_After_Something_Unk_1", "Spirit_Regeneration_After_Something_Unk_1_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 2", "Spirit_Regeneration_After_Something_Unk_2", "Spirit_Regeneration_After_Something_Unk_2_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 3", "Spirit_Regeneration_After_Something_Unk_3", "Spirit_Regeneration_After_Something_Unk_3_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 4", "Spirit_Regeneration_After_Something_Unk_4", "Spirit_Regeneration_After_Something_Unk_4_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 5", "Spirit_Regeneration_After_Something_Unk_5", "Spirit_Regeneration_After_Something_Unk_5_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 6", "Spirit_Regeneration_After_Something_Unk_6", "Spirit_Regeneration_After_Something_Unk_6_offset"),
+                    new MultiStructItemCustomView(this, "Spirit Regeneration After Something, Unk 7", "Spirit_Regeneration_After_Something_Unk_7", "Spirit_Regeneration_After_Something_Unk_7_offset"),
                     new MultiStructItemCustomView(this, "Gauge Duration: White", "Gauge_Duration_White", "Gauge_Duration_White_offset"),
                     new MultiStructItemCustomView(this, "Gauge Duration: Yellow", "Gauge_Duration_Yellow", "Gauge_Duration_Yellow_offset"),
                     new MultiStructItemCustomView(this, "Gauge Duration: Red", "Gauge_Duration_Red", "Gauge_Duration_Red_offset"),
