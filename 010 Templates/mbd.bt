@@ -10,13 +10,13 @@ typedef struct {
     uint Magic_1<name="Magic 1 (uint)">;
     uint Magic_2<name="Magic 2 (uint)">;
     uint Entry_Count<name="Entry Count (uint)">;
+    uint Unk_1<name="Unk 1 (uint)">;
 } Motion_Blend_Data_1_;
 
 Motion_Blend_Data_1_ Motion_Blend_Data_1__<name="Motion Blend Data (1)">;
 
 // Default
 typedef struct {
-    uint Unk_1<name="Unk 1 (uint)">;
     uint lmt_Offset_Index<name="lmt Offset Index (uint)">;
     uint Num_of_Values<name="Num of Values (uint)">;
     uint Unk_2<name="Unk 2 (uint)">;
@@ -25,25 +25,19 @@ typedef struct {
     // Unk Array
     typedef struct {
         string Unk_1<name="Unk 1 (string)">;
-        uint Unk_2<name="Unk 2 (uint)">;
-        uint Unk_3<name="Unk 3 (uint)">;
-        uint Unk_4<name="Unk 4 (uint)">;
-        uint Unk_5<name="Unk 5 (uint)">;
+        float Unk_2<name="Unk 2 (float)">;
+        uint Animation_Start_Frame<name="Animation Start Frame (uint)">;
+        uint Interpolation<name="Interpolation (uint)">;
+        uint Overlap_Blending<name="Overlap Blending (uint)">;
         float Unk_6<name="Unk 6 (float)">;
-        uint Unk_7<name="Unk 7 (uint)">;
+        uint Interpolation_Modifier_<name="Interpolation Modifier? (uint)">;
         int Unk_8<name="Unk 8 (int)">;
-        uint Unk_9<name="Unk 9 (uint)">;
+        uint Animation_Id<name="Animation Id (uint)">;
     } Unk_Array;
 
     Unk_Array Unk_Array_[Num_of_Values]<optimize=false, name="Unk Array">;
     uint Unk_5<name="Unk 5 (uint)">;
+    uint Unk_6<name="Unk 6 (uint)">;
 } Default;
 
 Default Default_[Motion_Blend_Data_1__.Entry_Count]<optimize=false, name="Default">;
-
-// Motion Blend Data (2)
-typedef struct {
-    uint End<name="End (uint)">;
-} Motion_Blend_Data_2_;
-
-Motion_Blend_Data_2_ Motion_Blend_Data_2__<name="Motion Blend Data (2)">;
