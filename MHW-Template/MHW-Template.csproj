@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Armors\Opst2Flags.cs" />
+    <Compile Include="Armors\Opst1Flags.cs" />
     <Compile Include="Armors\PalicoEquipType.cs" />
     <Compile Include="Armors\CharmType.cs" />
     <Compile Include="Armors\ArmorType.cs" />

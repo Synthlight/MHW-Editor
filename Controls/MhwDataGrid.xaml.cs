@@ -17,6 +17,7 @@ using MHW_Editor.Assets;
 using MHW_Editor.Controls.Models;
 using MHW_Editor.Json;
 using MHW_Editor.Models;
+using MHW_Editor.Structs.Armors;
 using MHW_Editor.Structs.Gems;
 using MHW_Editor.Structs.Items;
 using MHW_Editor.Structs.Skills;
@@ -71,6 +72,7 @@ namespace MHW_Editor.Controls {
         private             GroupFilter                      groupFilter;
         [CanBeNull] private DataGridRow                      coloredRow;
         private             bool                             isManualEditCommit;
+        private             bool                             shadeThisColumn;
 
         public MainWindow mainWindow;
 
@@ -175,6 +177,10 @@ namespace MHW_Editor.Controls {
                 e.Cancel = true;
             }
 
+            if (mainWindow.targetFileType.Is(typeof(Opst)) && Opst.ShouldCancel(e.PropertyName, mainWindow)) {
+                e.Cancel = true;
+            }
+
             if (e.Cancel) return;
 
             // Create 'X' button for delete column.
@@ -230,6 +236,10 @@ namespace MHW_Editor.Controls {
             var           isList           = (IsListAttribute) propertyInfo?.GetCustomAttribute(typeof(IsListAttribute), true) != null;
             var           showAsHex        = (ShowAsHexAttribute) propertyInfo?.GetCustomAttribute(typeof(ShowAsHexAttribute), true) != null;
             ICustomSorter customSorter     = null;
+
+            if (e.PropertyName == "Index" && mainWindow.targetFileType.Is(typeof(Opst))) {
+                displayName = "Model Id";
+            }
 
             if (displayName != null) {
                 if (displayName == "") { // Use empty DisplayName as a way to hide columns.
@@ -294,6 +304,14 @@ namespace MHW_Editor.Controls {
                 columns.Sort((c1, c2) => c1.sortOrder.CompareTo(c2.sortOrder));
                 for (var i = 0; i < columns.Count; i++) {
                     columns[i].column.DisplayIndex = i;
+
+                    if (shadeThisColumn) {
+                        columns[i].column.CellStyle = new Style(typeof(DataGridCell));
+                        columns[i].column.CellStyle.Setters.Add(new Setter(BackgroundProperty, new SolidColorBrush(Color.FromRgb(230, 230, 230))));
+                        shadeThisColumn = !shadeThisColumn;
+                    } else {
+                        shadeThisColumn = !shadeThisColumn;
+                    }
                 }
 
                 var hasCustomView = typeof(T).IsGeneric(typeof(IHasCustomView<>));

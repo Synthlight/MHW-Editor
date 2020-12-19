@@ -1,0 +1,26 @@
+//------------------------------------------------
+//--- 010 Editor v10.0 Binary Template
+//   Authors: Many. See MHW Editor Cretits.
+// File Mask: *.opst
+//  Category: MHW-Editor
+//------------------------------------------------
+
+// Header
+typedef struct {
+    uint Iceborne_Identifier<name="Iceborne Identifier (uint)">;
+    uint Magic<name="Magic (uint)">;
+    uint Entry_Count<name="Entry Count (uint)">;
+} Header;
+
+Header Header_<name="Header">;
+
+// Entries
+typedef struct {
+    ubyte Bit_Flags_1_Raw<name="Bit Flags 1 Raw (ubyte)">;
+    ubyte Bit_Flags_2_Raw<name="Bit Flags 2 Raw (ubyte)">;
+    ubyte Bit_Flags_3<name="Bit Flags 3 (ubyte)">;
+    ubyte Bit_Flags_4<name="Bit Flags 4 (ubyte)">;
+    ubyte Bit_Flags_5<name="Bit Flags 5 (ubyte)">;
+} Entries;
+
+Entries Entries_[Header_.Entry_Count]<optimize=false, name="Entries">;

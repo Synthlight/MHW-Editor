@@ -43,6 +43,7 @@
     <Compile Include="Armors\Armor.cs" />
     <Compile Include="Armors\ASkill.cs" />
     <Compile Include="Armors\OtomoArmorDat.cs" />
+    <Compile Include="Armors\Opst.cs" />
     <Compile Include="Armors\PendantData.cs" />
     <Compile Include="Gems\DecoGradeLottery.cs" />
     <Compile Include="Gems\DecoLottery.cs" />

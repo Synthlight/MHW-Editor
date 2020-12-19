@@ -63,7 +63,9 @@ namespace MHW_Editor.Windows {
                     item.OnPropertyChanged("Name",
                                            nameof(SkillDat.Entries.Description),
                                            nameof(SkillDat.Entries.Name_And_Id),
-                                           nameof(MusicSkill.Entries.Song_And_Id));
+                                           nameof(MusicSkill.Entries.Song_And_Id),
+                                           nameof(Opst.Entries.ArmorBodyName),
+                                           nameof(Opst.Entries.ArmorHeadName));
 
                     item.OnPropertyChanged(ButtonTypeInfo.BUTTON_NAMES);
                 }
@@ -739,6 +741,7 @@ namespace MHW_Editor.Windows {
             if (fileName.EndsWith(".new_lb")) return typeof(NewLimitBreak);
             if (fileName.EndsWith(".new_lbr")) return typeof(NewLimitBreakR);
             if (fileName.EndsWith(".odr")) return typeof(Bounty);
+            if (fileName.EndsWith(".opst")) return typeof(Opst);
             if (fileName.EndsWith(".oam_dat")) return typeof(OtomoArmorDat);
             if (fileName.EndsWith(".owp_dat")) return typeof(OtomoWeaponDat);
             if (fileName.EndsWith(".plfe")) return typeof(PlantFertilizer);

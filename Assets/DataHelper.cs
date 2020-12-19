@@ -51,6 +51,8 @@ namespace MHW_Editor.Assets {
         public static readonly LangMapNeg                         armorFileIndexNegNameLookup;
         public static readonly Dictionary<WeaponType, LangMap>    weaponIdNameLookup;
         public static readonly Dictionary<WeaponType, LangMap>    weaponIndexNameLookup;
+        public static readonly LangMap                            palicoArmorBodyLookupByModelId;
+        public static readonly LangMap                            palicoArmorHeadLookupByModelId;
         public static readonly Dictionary<EquipmentType, LangMap> equipmentIdNameLookup = new Dictionary<EquipmentType, LangMap>();
         public static readonly List<uint>                         gemItemIds;
 
@@ -68,12 +70,14 @@ namespace MHW_Editor.Assets {
             collisionTranslationsData = LoadDict<string, Dictionary<int, NameDescPair>>(EditorAssets.CollisionTranslationsData);
             translations              = LoadDict<string, Dictionary<string, string>>(EditorAssets.Translations);
 
-            armorIdNameLookup           = LoadDict<ArmorType, LangMap>(EditorAssets.ArmorNameLookupById);
-            armorIndexNameLookup        = LoadDict<ArmorType, LangMap>(EditorAssets.ArmorNameLookupByIndex);
-            armorIndexNegNameLookup     = LoadDict<ArmorType, LangMapNeg>(EditorAssets.ArmorNameLookupByIndex);
-            armorFileIndexNegNameLookup = Load<LangMapNeg>(EditorAssets.ArmorNameLookupByFileIndex);
-            weaponIdNameLookup          = LoadDict<WeaponType, LangMap>(EditorAssets.WeaponNameLookupById);
-            weaponIndexNameLookup       = LoadDict<WeaponType, LangMap>(EditorAssets.WeaponNameLookupByIndex);
+            armorIdNameLookup              = LoadDict<ArmorType, LangMap>(EditorAssets.ArmorNameLookupById);
+            armorIndexNameLookup           = LoadDict<ArmorType, LangMap>(EditorAssets.ArmorNameLookupByIndex);
+            armorIndexNegNameLookup        = LoadDict<ArmorType, LangMapNeg>(EditorAssets.ArmorNameLookupByIndex);
+            armorFileIndexNegNameLookup    = Load<LangMapNeg>(EditorAssets.ArmorNameLookupByFileIndex);
+            weaponIdNameLookup             = LoadDict<WeaponType, LangMap>(EditorAssets.WeaponNameLookupById);
+            weaponIndexNameLookup          = LoadDict<WeaponType, LangMap>(EditorAssets.WeaponNameLookupByIndex);
+            palicoArmorBodyLookupByModelId = Load<LangMap>(EditorAssets.PalicoArmorBodyLookupByModelId);
+            palicoArmorHeadLookupByModelId = Load<LangMap>(EditorAssets.PalicoArmorHeadLookupByModelId);
 
             MergeEquipmentIdLookups();
 

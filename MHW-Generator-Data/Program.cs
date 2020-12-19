@@ -49,6 +49,8 @@ namespace MHW_Generator_Data {
             File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\WeaponNameLookupById.json", JsonConvert.SerializeObject(WeaponReader.GetAllWeapons(IndexOrId.Id), Formatting.Indented));
             File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\WeaponNameLookupByIndex.json", JsonConvert.SerializeObject(WeaponReader.GetAllWeapons(IndexOrId.Index), Formatting.Indented));
             File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\GemItemIds.json", JsonConvert.SerializeObject(ItemReader.GetGemIds(), Formatting.Indented));
+            File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\PalicoArmorHeadLookupByModelId.json", JsonConvert.SerializeObject(PalicoArmorReader.GetPalicoArmorsByModelId(HeadOrBody.Head), Formatting.Indented));
+            File.WriteAllText($@"{Global.ASSETS_ROOT}\EditorData\PalicoArmorBodyLookupByModelId.json", JsonConvert.SerializeObject(PalicoArmorReader.GetPalicoArmorsByModelId(HeadOrBody.Body), Formatting.Indented));
         }
 
         private static void GenButtonLocalizationAndIdList() {

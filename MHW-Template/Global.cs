@@ -93,6 +93,7 @@ namespace MHW_Template {
             "*.new_lb",
             "*.new_lbr",
             "*.odr",
+            "*.opst",
             "*.owp_dat",
             "*.oam_dat",
             "*.plfe",

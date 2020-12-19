@@ -93,6 +93,7 @@
     <Compile Include="Generated\MHW_Editor\Skills\SkillDataValueClass.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Armors\Armor.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Armors\ASkill.cs" />
+    <Compile Include="Generated\MHW_Editor\Structs\Armors\Opst.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Armors\OtomoArmorDat.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Armors\PendantData.cs" />
     <Compile Include="Generated\MHW_Editor\Structs\Gems\DecoGradeLottery.cs" />
@@ -200,6 +201,7 @@
     <Compile Include="Models\IWriteData.cs" />
     <Compile Include="Models\MhwSingleStructFile.cs" />
     <Compile Include="Structs\Armors\Armor.cs" />
+    <Compile Include="Structs\Armors\Opst.cs" />
     <Compile Include="Structs\Armors\PendantData.cs" />
     <Compile Include="Structs\Armors\OtomoArmorDat.cs" />
     <Compile Include="Assets\Assets.Designer.cs">
@@ -507,6 +509,8 @@
     <None Include="Assets\EditorData\FileSizeMap.json" />
     <None Include="Assets\EditorData\GemItemIds.json" />
     <None Include="Assets\EditorData\GoodChunkMap.json" />
+    <None Include="Assets\EditorData\PalicoArmorBodyLookupByModelId.json" />
+    <None Include="Assets\EditorData\PalicoArmorHeadLookupByModelId.json" />
     <None Include="Assets\EditorData\Translations.json" />
     <None Include="Assets\EditorData\WeaponNameLookupById.json" />
     <None Include="Assets\EditorData\WeaponNameLookupByIndex.json" />
