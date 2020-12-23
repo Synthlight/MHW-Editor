@@ -33,7 +33,7 @@ namespace MHW_Generator.Items {
                     new MhwMultiStructData.Entry("Unk 2", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk 3", typeof(byte)),
                     new MhwMultiStructData.Entry("Unk 4", typeof(byte))
-                }, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Equipment_Category_Raw}|{Equipment_Index_Raw}")
+                }, canAddRows: true, _010Link: new MhwMultiStructData.ArrayLink(header, itemCount), uniqueIdFormula: "{Equipment_Category_Raw}|{Equipment_Index_Raw}")
             };
 
             return new MultiStruct("Items", "EqCus", new MhwMultiStructData(structs, "eq_cus"));

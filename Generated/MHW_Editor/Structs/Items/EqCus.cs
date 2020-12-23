@@ -100,6 +100,12 @@ namespace MHW_Editor.Structs.Items {
             public const ulong FixedSizeCount = 0;
             public const string GridName = "Entries";
             public override string UniqueId => $"{Equipment_Category_Raw}|{Equipment_Index_Raw}";
+            public const bool IsAddingAllowed = true;
+
+            [SortOrder(-1)]
+            [IsReadOnly]
+            [DisplayName("X")]
+            public string Delete => "X";
 
             protected byte Equipment_Category_Raw_raw;
             public const string Equipment_Category_Raw_displayName = "Equipment Category Raw";
