@@ -14,7 +14,7 @@ namespace MHW_Editor.Structs.Weapons {
             foreach (var name in nameList) {
                 name.Init(targetFile);
 
-                var clgm = GetClgm(name.CLGM_Id);
+                var clgm = GetClgm(name.Collider_Geomtry_Param_Id);
                 if (clgm != null) {
                     name.LinkedClgm.Add(clgm);
                 }
@@ -27,9 +27,9 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        private CLND.CLGMs GetClgm(int clgmId) {
-            var clnd = GetStructList<CLND>().FirstOrDefault();
-            return clnd?.CLGMs_raw?.FirstOrDefault(clgm => (int) clgm.Index == clgmId);
+        private Collider_Node_Param.Collider_Geomtry_Params GetClgm(int clgmId) {
+            var clnd = GetStructList<Collider_Node_Param>().FirstOrDefault();
+            return clnd?.Collider_Geomtry_Params_raw?.FirstOrDefault(clgm => (int) clgm.Index == clgmId);
         }
 
         private object GetMove(int moveId) {
@@ -89,9 +89,9 @@ namespace MHW_Editor.Structs.Weapons {
             [SortOrder(40)]
             public string TranslatedName { get; private set; }
 
-            [SortOrder(CLGM_Id_sortIndex + 1)]
-            [DisplayName("Linked CLGM")]
-            public ObservableCollection<CLND.CLGMs> LinkedClgm { get; } = new ObservableCollection<CLND.CLGMs>();
+            [SortOrder(Collider_Geomtry_Param_Id_sortIndex + 1)]
+            [DisplayName("Linked Collider Geomtry Params")]
+            public ObservableCollection<Collider_Node_Param.Collider_Geomtry_Params> LinkedClgm { get; } = new ObservableCollection<Collider_Node_Param.Collider_Geomtry_Params>();
 
             [SortOrder(Move_Id_sortIndex + 1)]
             [DisplayName("Linked Move")]

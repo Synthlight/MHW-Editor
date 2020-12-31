@@ -169,19 +169,19 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected int CLGM_Id_raw;
-            public const string CLGM_Id_displayName = "CLGM Id";
-            public const int CLGM_Id_sortIndex = 100;
-            [SortOrder(CLGM_Id_sortIndex)]
-            [DisplayName(CLGM_Id_displayName)]
+            protected int Collider_Geomtry_Param_Id_raw;
+            public const string Collider_Geomtry_Param_Id_displayName = "Collider Geomtry Param Id";
+            public const int Collider_Geomtry_Param_Id_sortIndex = 100;
+            [SortOrder(Collider_Geomtry_Param_Id_sortIndex)]
+            [DisplayName(Collider_Geomtry_Param_Id_displayName)]
             [IsReadOnly]
-            public virtual int CLGM_Id {
-                get => CLGM_Id_raw;
+            public virtual int Collider_Geomtry_Param_Id {
+                get => Collider_Geomtry_Param_Id_raw;
                 set {
-                    if (CLGM_Id_raw == value) return;
-                    CLGM_Id_raw = value;
-                    ChangedItems.Add(nameof(CLGM_Id));
-                    OnPropertyChanged(nameof(CLGM_Id));
+                    if (Collider_Geomtry_Param_Id_raw == value) return;
+                    Collider_Geomtry_Param_Id_raw = value;
+                    ChangedItems.Add(nameof(Collider_Geomtry_Param_Id));
+                    OnPropertyChanged(nameof(Collider_Geomtry_Param_Id));
                 }
             }
 
@@ -277,7 +277,7 @@ namespace MHW_Editor.Structs.Weapons {
                 var data = new Names();
                 data.Index = i;
                 data.Name_raw = reader.ReadNullTermString();
-                data.CLGM_Id_raw = reader.ReadInt32();
+                data.Collider_Geomtry_Param_Id_raw = reader.ReadInt32();
                 data.Move_Id_raw = reader.ReadInt32();
                 data.Unk_1_raw = reader.ReadInt32();
                 data.Unk_2_raw = reader.ReadUInt16();
@@ -288,7 +288,7 @@ namespace MHW_Editor.Structs.Weapons {
 
             public void WriteData(BinaryWriter writer) {
                 writer.Write(Name_raw.ToNullTermCharArray());
-                writer.Write(CLGM_Id_raw);
+                writer.Write(Collider_Geomtry_Param_Id_raw);
                 writer.Write(Move_Id_raw);
                 writer.Write(Unk_1_raw);
                 writer.Write(Unk_2_raw);
@@ -297,9 +297,9 @@ namespace MHW_Editor.Structs.Weapons {
             }
         }
 
-        public partial class CLND : MhwStructItem, IWriteData, IHasChildren {
+        public partial class Collider_Node_Param : MhwStructItem, IWriteData, IHasChildren {
             public const ulong FixedSizeCount = 1;
-            public const string GridName = "CLND";
+            public const string GridName = "Collider Node Param";
 
             protected uint Magic_1_raw;
             public const string Magic_1_displayName = "Magic 1";
@@ -349,35 +349,35 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            protected uint Clgm_Count_raw;
-            public const string Clgm_Count_displayName = "Clgm Count";
-            public const int Clgm_Count_sortIndex = 200;
-            [SortOrder(Clgm_Count_sortIndex)]
-            [DisplayName(Clgm_Count_displayName)]
+            protected uint Collider_Geomtry_Param_Count_raw;
+            public const string Collider_Geomtry_Param_Count_displayName = "Collider Geomtry Param Count";
+            public const int Collider_Geomtry_Param_Count_sortIndex = 200;
+            [SortOrder(Collider_Geomtry_Param_Count_sortIndex)]
+            [DisplayName(Collider_Geomtry_Param_Count_displayName)]
             [IsReadOnly]
-            public virtual uint Clgm_Count {
-                get => Clgm_Count_raw;
+            public virtual uint Collider_Geomtry_Param_Count {
+                get => Collider_Geomtry_Param_Count_raw;
                 set {
-                    if (Clgm_Count_raw == value) return;
-                    Clgm_Count_raw = value;
-                    ChangedItems.Add(nameof(Clgm_Count));
-                    OnPropertyChanged(nameof(Clgm_Count));
+                    if (Collider_Geomtry_Param_Count_raw == value) return;
+                    Collider_Geomtry_Param_Count_raw = value;
+                    ChangedItems.Add(nameof(Collider_Geomtry_Param_Count));
+                    OnPropertyChanged(nameof(Collider_Geomtry_Param_Count));
                 }
             }
 
-            protected uint Clgm_Type_raw;
-            public const string Clgm_Type_displayName = "Clgm Type";
-            public const int Clgm_Type_sortIndex = 250;
-            [SortOrder(Clgm_Type_sortIndex)]
-            [DisplayName(Clgm_Type_displayName)]
+            protected uint Collider_Geomtry_Param_Type_raw;
+            public const string Collider_Geomtry_Param_Type_displayName = "Collider Geomtry Param Type";
+            public const int Collider_Geomtry_Param_Type_sortIndex = 250;
+            [SortOrder(Collider_Geomtry_Param_Type_sortIndex)]
+            [DisplayName(Collider_Geomtry_Param_Type_displayName)]
             [IsReadOnly]
-            public virtual uint Clgm_Type {
-                get => Clgm_Type_raw;
+            public virtual uint Collider_Geomtry_Param_Type {
+                get => Collider_Geomtry_Param_Type_raw;
                 set {
-                    if (Clgm_Type_raw == value) return;
-                    Clgm_Type_raw = value;
-                    ChangedItems.Add(nameof(Clgm_Type));
-                    OnPropertyChanged(nameof(Clgm_Type));
+                    if (Collider_Geomtry_Param_Type_raw == value) return;
+                    Collider_Geomtry_Param_Type_raw = value;
+                    ChangedItems.Add(nameof(Collider_Geomtry_Param_Type));
+                    OnPropertyChanged(nameof(Collider_Geomtry_Param_Type));
                 }
             }
 
@@ -396,9 +396,9 @@ namespace MHW_Editor.Structs.Weapons {
                 }
             }
 
-            public partial class CLGMs : MhwStructItem, IWriteDataInner<CLND>, IHasChildren {
+            public partial class Collider_Geomtry_Params : MhwStructItem, IWriteDataInner<Collider_Node_Param>, IHasChildren {
                 public const ulong FixedSizeCount = 0;
-                public const string GridName = "CLGMs";
+                public const string GridName = "Collider Geomtry Params";
 
                 protected uint Magic_1_raw;
                 public const string Magic_1_displayName = "Magic 1";
@@ -448,25 +448,25 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
-                protected uint Clgm_Inner_Count_raw;
-                public const string Clgm_Inner_Count_displayName = "Clgm Inner Count";
-                public const int Clgm_Inner_Count_sortIndex = 200;
-                [SortOrder(Clgm_Inner_Count_sortIndex)]
-                [DisplayName(Clgm_Inner_Count_displayName)]
+                protected uint Collider_Geomtry_Param_Inner_Count_raw;
+                public const string Collider_Geomtry_Param_Inner_Count_displayName = "Collider Geomtry Param Inner Count";
+                public const int Collider_Geomtry_Param_Inner_Count_sortIndex = 200;
+                [SortOrder(Collider_Geomtry_Param_Inner_Count_sortIndex)]
+                [DisplayName(Collider_Geomtry_Param_Inner_Count_displayName)]
                 [IsReadOnly]
-                public virtual uint Clgm_Inner_Count {
-                    get => Clgm_Inner_Count_raw;
+                public virtual uint Collider_Geomtry_Param_Inner_Count {
+                    get => Collider_Geomtry_Param_Inner_Count_raw;
                     set {
-                        if (Clgm_Inner_Count_raw == value) return;
-                        Clgm_Inner_Count_raw = value;
-                        ChangedItems.Add(nameof(Clgm_Inner_Count));
-                        OnPropertyChanged(nameof(Clgm_Inner_Count));
+                        if (Collider_Geomtry_Param_Inner_Count_raw == value) return;
+                        Collider_Geomtry_Param_Inner_Count_raw = value;
+                        ChangedItems.Add(nameof(Collider_Geomtry_Param_Inner_Count));
+                        OnPropertyChanged(nameof(Collider_Geomtry_Param_Inner_Count));
                     }
                 }
 
-                public partial class CLGM_Inner : MhwStructItem, IWriteDataInner<CLGMs> {
+                public partial class Collider_Geomtry_Param_Inner : MhwStructItem, IWriteDataInner<Collider_Geomtry_Params> {
                     public const ulong FixedSizeCount = 0;
-                    public const string GridName = "CLGM Inner";
+                    public const string GridName = "Collider Geomtry Param Inner";
 
                     protected byte Unk_1_raw;
                     public const string Unk_1_displayName = "Unk 1";
@@ -800,17 +800,17 @@ namespace MHW_Editor.Structs.Weapons {
 
                     public const int lastSortIndex = 1150;
 
-                    public static ObservableMhwStructCollection<CLGM_Inner> LoadData(BinaryReader reader, CLGMs parent) {
-                        var list = new ObservableMhwStructCollection<CLGM_Inner>();
-                        var count = (ulong) parent.Clgm_Inner_Count;
+                    public static ObservableMhwStructCollection<Collider_Geomtry_Param_Inner> LoadData(BinaryReader reader, Collider_Geomtry_Params parent) {
+                        var list = new ObservableMhwStructCollection<Collider_Geomtry_Param_Inner>();
+                        var count = (ulong) parent.Collider_Geomtry_Param_Inner_Count;
                         for (ulong i = 0; i < count; i++) {
                             list.Add(LoadData(reader, i, parent));
                         }
                         return list;
                     }
 
-                    public static CLGM_Inner LoadData(BinaryReader reader, ulong i, CLGMs parent) {
-                        var data = new CLGM_Inner();
+                    public static Collider_Geomtry_Param_Inner LoadData(BinaryReader reader, ulong i, Collider_Geomtry_Params parent) {
+                        var data = new Collider_Geomtry_Param_Inner();
                         data.Index = i;
                         data.Unk_1_raw = reader.ReadByte();
                         data.Unk_2_raw = reader.ReadByte();
@@ -837,7 +837,7 @@ namespace MHW_Editor.Structs.Weapons {
                         return data;
                     }
 
-                    public void WriteData(BinaryWriter writer, CLGMs parent) {
+                    public void WriteData(BinaryWriter writer, Collider_Geomtry_Params parent) {
                         writer.Write(Unk_1_raw);
                         writer.Write(Unk_2_raw);
                         writer.Write(Attack_Range_raw);
@@ -863,11 +863,11 @@ namespace MHW_Editor.Structs.Weapons {
                     }
                 }
 
-                public const string CLGM_Inner_displayName = "CLGM Inner";
-                public const int CLGM_Inner_sortIndex = 250;
-                [SortOrder(CLGM_Inner_sortIndex)]
-                [DisplayName(CLGM_Inner_displayName)]
-                public virtual ObservableCollection<CLGM_Inner> CLGM_Inner_raw { get; protected set; }
+                public const string Collider_Geomtry_Param_Inner_displayName = "Collider Geomtry Param Inner";
+                public const int Collider_Geomtry_Param_Inner_sortIndex = 250;
+                [SortOrder(Collider_Geomtry_Param_Inner_sortIndex)]
+                [DisplayName(Collider_Geomtry_Param_Inner_displayName)]
+                public virtual ObservableCollection<Collider_Geomtry_Param_Inner> Collider_Geomtry_Param_Inner_raw { get; protected set; }
 
                 protected uint Unk_1_raw;
                 public const string Unk_1_displayName = "Unk 1";
@@ -1172,30 +1172,30 @@ namespace MHW_Editor.Structs.Weapons {
                 public const int lastSortIndex = 1300;
 
                 public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
-                    if (typeof(CLGM_Inner).Is(typeof(F)) || typeof(CLGM_Inner).IsGeneric(typeof(F))) {
-                        foreach (var item in CLGM_Inner_raw.Cast<F>()) {
+                    if (typeof(Collider_Geomtry_Param_Inner).Is(typeof(F)) || typeof(Collider_Geomtry_Param_Inner).IsGeneric(typeof(F))) {
+                        foreach (var item in Collider_Geomtry_Param_Inner_raw.Cast<F>()) {
                             yield return item;
                         }
                     }
                 }
 
-                public static ObservableMhwStructCollection<CLGMs> LoadData(BinaryReader reader, CLND parent) {
-                    var list = new ObservableMhwStructCollection<CLGMs>();
-                    var count = (ulong) parent.Clgm_Count;
+                public static ObservableMhwStructCollection<Collider_Geomtry_Params> LoadData(BinaryReader reader, Collider_Node_Param parent) {
+                    var list = new ObservableMhwStructCollection<Collider_Geomtry_Params>();
+                    var count = (ulong) parent.Collider_Geomtry_Param_Count;
                     for (ulong i = 0; i < count; i++) {
                         list.Add(LoadData(reader, i, parent));
                     }
                     return list;
                 }
 
-                public static CLGMs LoadData(BinaryReader reader, ulong i, CLND parent) {
-                    var data = new CLGMs();
+                public static Collider_Geomtry_Params LoadData(BinaryReader reader, ulong i, Collider_Node_Param parent) {
+                    var data = new Collider_Geomtry_Params();
                     data.Index = i;
                     data.Magic_1_raw = reader.ReadUInt32();
                     data.Name_raw = reader.ReadChars(4);
                     data.Magic_2_raw = reader.ReadUInt32();
-                    data.Clgm_Inner_Count_raw = reader.ReadUInt32();
-                    data.CLGM_Inner_raw = CLGM_Inner.LoadData(reader, data);
+                    data.Collider_Geomtry_Param_Inner_Count_raw = reader.ReadUInt32();
+                    data.Collider_Geomtry_Param_Inner_raw = Collider_Geomtry_Param_Inner.LoadData(reader, data);
                     data.Unk_1_raw = reader.ReadUInt32();
                     data.Attack_Range_if_Unk_1_1__raw = reader.ReadUInt32();
                     data.Unk_2_raw = reader.ReadByte();
@@ -1207,25 +1207,25 @@ namespace MHW_Editor.Structs.Weapons {
                     data.Unk_8_raw = reader.ReadInt16();
                     data.Unk_9_raw = reader.ReadUInt16();
                     data.Unk_10_raw = reader.ReadUInt16();
-                    if (parent.Clgm_Type_raw == 2) data.Unk_11_raw = reader.ReadInt32();
-                    if (parent.Clgm_Type_raw == 2) data.Unk_12_raw = reader.ReadInt32();
-                    if (parent.Clgm_Type_raw == 2) data.Unk_13_raw = reader.ReadInt32();
-                    if (parent.Clgm_Type_raw == 2) data.Unk_14_raw = reader.ReadInt32();
-                    if (parent.Clgm_Type_raw == 2) data.Unk_15_raw = reader.ReadInt32();
-                    if (parent.Clgm_Type_raw == 2) data.Unk_16_raw = reader.ReadInt32();
-                    if (parent.Clgm_Type_raw == 2) data.Unk_17_raw = reader.ReadInt32();
-                    if (parent.Clgm_Type_raw == 2) data.Unk_18_raw = reader.ReadInt32();
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) data.Unk_11_raw = reader.ReadInt32();
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) data.Unk_12_raw = reader.ReadInt32();
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) data.Unk_13_raw = reader.ReadInt32();
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) data.Unk_14_raw = reader.ReadInt32();
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) data.Unk_15_raw = reader.ReadInt32();
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) data.Unk_16_raw = reader.ReadInt32();
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) data.Unk_17_raw = reader.ReadInt32();
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) data.Unk_18_raw = reader.ReadInt32();
                     data.Unk_19_raw = reader.ReadByte();
                     return data;
                 }
 
-                public void WriteData(BinaryWriter writer, CLND parent) {
-                    Clgm_Inner_Count = (uint) CLGM_Inner_raw.Count;
+                public void WriteData(BinaryWriter writer, Collider_Node_Param parent) {
+                    Collider_Geomtry_Param_Inner_Count = (uint) Collider_Geomtry_Param_Inner_raw.Count;
                     writer.Write(Magic_1_raw);
                     writer.Write(Name_raw);
                     writer.Write(Magic_2_raw);
-                    writer.Write(Clgm_Inner_Count_raw);
-                    foreach (var obj in CLGM_Inner_raw) {
+                    writer.Write(Collider_Geomtry_Param_Inner_Count_raw);
+                    foreach (var obj in Collider_Geomtry_Param_Inner_raw) {
                         obj.WriteData(writer, this);
                     }
                     writer.Write(Unk_1_raw);
@@ -1239,23 +1239,23 @@ namespace MHW_Editor.Structs.Weapons {
                     writer.Write(Unk_8_raw);
                     writer.Write(Unk_9_raw);
                     writer.Write(Unk_10_raw);
-                    if (parent.Clgm_Type_raw == 2) writer.Write(Unk_11_raw);
-                    if (parent.Clgm_Type_raw == 2) writer.Write(Unk_12_raw);
-                    if (parent.Clgm_Type_raw == 2) writer.Write(Unk_13_raw);
-                    if (parent.Clgm_Type_raw == 2) writer.Write(Unk_14_raw);
-                    if (parent.Clgm_Type_raw == 2) writer.Write(Unk_15_raw);
-                    if (parent.Clgm_Type_raw == 2) writer.Write(Unk_16_raw);
-                    if (parent.Clgm_Type_raw == 2) writer.Write(Unk_17_raw);
-                    if (parent.Clgm_Type_raw == 2) writer.Write(Unk_18_raw);
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) writer.Write(Unk_11_raw);
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) writer.Write(Unk_12_raw);
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) writer.Write(Unk_13_raw);
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) writer.Write(Unk_14_raw);
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) writer.Write(Unk_15_raw);
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) writer.Write(Unk_16_raw);
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) writer.Write(Unk_17_raw);
+                    if (parent.Collider_Geomtry_Param_Type_raw == 2) writer.Write(Unk_18_raw);
                     writer.Write(Unk_19_raw);
                 }
             }
 
-            public const string CLGMs_displayName = "CLGMs";
-            public const int CLGMs_sortIndex = 350;
-            [SortOrder(CLGMs_sortIndex)]
-            [DisplayName(CLGMs_displayName)]
-            public virtual ObservableCollection<CLGMs> CLGMs_raw { get; protected set; }
+            public const string Collider_Geomtry_Params_displayName = "Collider Geomtry Params";
+            public const int Collider_Geomtry_Params_sortIndex = 350;
+            [SortOrder(Collider_Geomtry_Params_sortIndex)]
+            [DisplayName(Collider_Geomtry_Params_displayName)]
+            public virtual ObservableCollection<Collider_Geomtry_Params> Collider_Geomtry_Params_raw { get; protected set; }
 
             protected byte Unk_2_raw;
             public const string Unk_2_displayName = "Unk 2";
@@ -1305,15 +1305,15 @@ namespace MHW_Editor.Structs.Weapons {
             public const int lastSortIndex = 550;
 
             public IEnumerable<F> GetAllEnumerableChildrenOfType<F>() {
-                if (typeof(CLGMs).Is(typeof(F)) || typeof(CLGMs).IsGeneric(typeof(F))) {
-                    foreach (var item in CLGMs_raw.Cast<F>()) {
+                if (typeof(Collider_Geomtry_Params).Is(typeof(F)) || typeof(Collider_Geomtry_Params).IsGeneric(typeof(F))) {
+                    foreach (var item in Collider_Geomtry_Params_raw.Cast<F>()) {
                         yield return item;
                     }
                 }
             }
 
-            public static ObservableMhwStructCollection<CLND> LoadData(BinaryReader reader) {
-                var list = new ObservableMhwStructCollection<CLND>();
+            public static ObservableMhwStructCollection<Collider_Node_Param> LoadData(BinaryReader reader) {
+                var list = new ObservableMhwStructCollection<Collider_Node_Param>();
                 const ulong count = 1UL;
                 for (ulong i = 0; i < count; i++) {
                     list.Add(LoadData(reader, i));
@@ -1321,16 +1321,16 @@ namespace MHW_Editor.Structs.Weapons {
                 return list;
             }
 
-            public static CLND LoadData(BinaryReader reader, ulong i) {
-                var data = new CLND();
+            public static Collider_Node_Param LoadData(BinaryReader reader, ulong i) {
+                var data = new Collider_Node_Param();
                 data.Index = i;
                 data.Magic_1_raw = reader.ReadUInt32();
                 data.Name_raw = reader.ReadChars(4);
                 data.Magic_2_raw = reader.ReadUInt32();
-                data.Clgm_Count_raw = reader.ReadUInt32();
-                data.Clgm_Type_raw = reader.ReadUInt32();
+                data.Collider_Geomtry_Param_Count_raw = reader.ReadUInt32();
+                data.Collider_Geomtry_Param_Type_raw = reader.ReadUInt32();
                 data.Unk_1_raw = reader.ReadByte();
-                data.CLGMs_raw = CLGMs.LoadData(reader, data);
+                data.Collider_Geomtry_Params_raw = Collider_Geomtry_Params.LoadData(reader, data);
                 data.Unk_2_raw = reader.ReadByte();
                 data.Unk_3_raw = reader.ReadByte();
                 data.Unk_4_raw = reader.ReadByte();
@@ -1338,14 +1338,14 @@ namespace MHW_Editor.Structs.Weapons {
             }
 
             public void WriteData(BinaryWriter writer) {
-                Clgm_Count = (uint) CLGMs_raw.Count;
+                Collider_Geomtry_Param_Count = (uint) Collider_Geomtry_Params_raw.Count;
                 writer.Write(Magic_1_raw);
                 writer.Write(Name_raw);
                 writer.Write(Magic_2_raw);
-                writer.Write(Clgm_Count_raw);
-                writer.Write(Clgm_Type_raw);
+                writer.Write(Collider_Geomtry_Param_Count_raw);
+                writer.Write(Collider_Geomtry_Param_Type_raw);
                 writer.Write(Unk_1_raw);
-                foreach (var obj in CLGMs_raw) {
+                foreach (var obj in Collider_Geomtry_Params_raw) {
                     obj.WriteData(writer, this);
                 }
                 writer.Write(Unk_2_raw);
@@ -5309,8 +5309,8 @@ namespace MHW_Editor.Structs.Weapons {
             var Names_ = new MhwStructDataContainer<Names, Collisions>(Names.LoadData(reader, Collisions_.list), typeof(Names));
             Names_.SetCountTargetToUpdate(Collisions_, -1, "Name_Count");
             data.AddLast(Names_);
-            var CLND_ = new MhwStructDataContainer<CLND>(CLND.LoadData(reader), typeof(CLND));
-            data.AddLast(CLND_);
+            var Collider_Node_Param_ = new MhwStructDataContainer<Collider_Node_Param>(Collider_Node_Param.LoadData(reader), typeof(Collider_Node_Param));
+            data.AddLast(Collider_Node_Param_);
             var Moves_ = new MhwStructDataContainer<Moves>(Moves.LoadData(reader), typeof(Moves));
             data.AddLast(Moves_);
             var OAP_ = new MhwStructDataContainer<OAP>(OAP.LoadData(reader), typeof(OAP));

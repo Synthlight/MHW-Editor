@@ -16,7 +16,7 @@ namespace MHW_Generator.Weapons {
 
             var names = new MhwMultiStructData.StructData("Names", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Name", typeof(string), isNullTerminatedString: true, accessLevel: "protected"),
-                new MhwMultiStructData.Entry("CLGM Id", typeof(int), true),
+                new MhwMultiStructData.Entry("Collider Geomtry Param Id", typeof(int), true),
                 new MhwMultiStructData.Entry("Move Id", typeof(int), true),
                 new MhwMultiStructData.Entry("Unk 1", typeof(int)),
                 new MhwMultiStructData.Entry("Unk 2", typeof(ushort)),
@@ -24,21 +24,21 @@ namespace MHW_Generator.Weapons {
                 new MhwMultiStructData.Entry("Unk 4", typeof(uint))
             }, _010Link: new MhwMultiStructData.ArrayLink(header, nameCount));
 
-            var clnd = new MhwMultiStructData.StructData("CLND", new List<MhwMultiStructData.Entry> {
+            var clnd = new MhwMultiStructData.StructData("Collider Node Param", new List<MhwMultiStructData.Entry> {
                 new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
                 new MhwMultiStructData.Entry("Name", typeof(char), true, typeof(string), arrayCount: 4),
                 new MhwMultiStructData.Entry("Magic 2", typeof(uint), true),
-                new MhwMultiStructData.Entry("Clgm Count", typeof(uint), true).Out(out var clgmCount),
-                new MhwMultiStructData.Entry("Clgm Type", typeof(uint), true),
+                new MhwMultiStructData.Entry("Collider Geomtry Param Count", typeof(uint), true).Out(out var clgmCount),
+                new MhwMultiStructData.Entry("Collider Geomtry Param Type", typeof(uint), true),
                 new MhwMultiStructData.Entry("Unk 1", typeof(byte)),
 
-                new MhwMultiStructData.Entry("CLGMs", typeof(void), subStruct: new MhwMultiStructData.StructData("CLGMs", new List<MhwMultiStructData.Entry> {
+                new MhwMultiStructData.Entry("Collider Geomtry Params", typeof(void), subStruct: new MhwMultiStructData.StructData("Collider Geomtry Params", new List<MhwMultiStructData.Entry> {
                     new MhwMultiStructData.Entry("Magic 1", typeof(uint), true),
                     new MhwMultiStructData.Entry("Name", typeof(char), true, typeof(string), arrayCount: 4),
                     new MhwMultiStructData.Entry("Magic 2", typeof(uint), true),
-                    new MhwMultiStructData.Entry("Clgm Inner Count", typeof(uint), true).Out(out var clgmInnerCount),
+                    new MhwMultiStructData.Entry("Collider Geomtry Param Inner Count", typeof(uint), true).Out(out var clgmInnerCount),
 
-                    new MhwMultiStructData.Entry("CLGM Inner", typeof(void), subStruct: new MhwMultiStructData.StructData("CLGM Inner", new List<MhwMultiStructData.Entry> {
+                    new MhwMultiStructData.Entry("Collider Geomtry Param Inner", typeof(void), subStruct: new MhwMultiStructData.StructData("Collider Geomtry Param Inner", new List<MhwMultiStructData.Entry> {
                         new MhwMultiStructData.Entry("Unk 1", typeof(byte)),
                         new MhwMultiStructData.Entry("Unk 2", typeof(byte)),
                         new MhwMultiStructData.Entry("Attack Range", typeof(float)),
@@ -75,14 +75,14 @@ namespace MHW_Generator.Weapons {
                     new MhwMultiStructData.Entry("Unk 9", typeof(ushort)),
                     new MhwMultiStructData.Entry("Unk 10", typeof(ushort)),
 
-                    new MhwMultiStructData.Entry("Unk 11", typeof(int), condition: "if (parent.Clgm_Type_raw == 2)"),
-                    new MhwMultiStructData.Entry("Unk 12", typeof(int), condition: "if (parent.Clgm_Type_raw == 2)"),
-                    new MhwMultiStructData.Entry("Unk 13", typeof(int), condition: "if (parent.Clgm_Type_raw == 2)"),
-                    new MhwMultiStructData.Entry("Unk 14", typeof(int), condition: "if (parent.Clgm_Type_raw == 2)"),
-                    new MhwMultiStructData.Entry("Unk 15", typeof(int), condition: "if (parent.Clgm_Type_raw == 2)"),
-                    new MhwMultiStructData.Entry("Unk 16", typeof(int), condition: "if (parent.Clgm_Type_raw == 2)"),
-                    new MhwMultiStructData.Entry("Unk 17", typeof(int), condition: "if (parent.Clgm_Type_raw == 2)"),
-                    new MhwMultiStructData.Entry("Unk 18", typeof(int), condition: "if (parent.Clgm_Type_raw == 2)"),
+                    new MhwMultiStructData.Entry("Unk 11", typeof(int), condition: "if (parent.Collider_Geomtry_Param_Type_raw == 2)"),
+                    new MhwMultiStructData.Entry("Unk 12", typeof(int), condition: "if (parent.Collider_Geomtry_Param_Type_raw == 2)"),
+                    new MhwMultiStructData.Entry("Unk 13", typeof(int), condition: "if (parent.Collider_Geomtry_Param_Type_raw == 2)"),
+                    new MhwMultiStructData.Entry("Unk 14", typeof(int), condition: "if (parent.Collider_Geomtry_Param_Type_raw == 2)"),
+                    new MhwMultiStructData.Entry("Unk 15", typeof(int), condition: "if (parent.Collider_Geomtry_Param_Type_raw == 2)"),
+                    new MhwMultiStructData.Entry("Unk 16", typeof(int), condition: "if (parent.Collider_Geomtry_Param_Type_raw == 2)"),
+                    new MhwMultiStructData.Entry("Unk 17", typeof(int), condition: "if (parent.Collider_Geomtry_Param_Type_raw == 2)"),
+                    new MhwMultiStructData.Entry("Unk 18", typeof(int), condition: "if (parent.Collider_Geomtry_Param_Type_raw == 2)"),
 
                     new MhwMultiStructData.Entry("Unk 19", typeof(byte))
                 }, _010Link: new MhwMultiStructData.ArrayLink(null, clgmCount))),

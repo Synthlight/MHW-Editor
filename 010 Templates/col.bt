@@ -20,7 +20,7 @@ Collisions Collisions_<name="Collisions">;
 // Names
 typedef struct {
     string Name<name="Name (string)">;
-    int CLGM_Id<name="CLGM Id (int)">;
+    int Collider_Geomtry_Param_Id<name="Collider Geomtry Param Id (int)">;
     int Move_Id<name="Move Id (int)">;
     int Unk_1<name="Unk 1 (int)">;
     ushort Unk_2<name="Unk 2 (ushort)">;
@@ -30,23 +30,23 @@ typedef struct {
 
 Names Names_[Collisions_.Name_Count]<optimize=false, name="Names">;
 
-// CLND
+// Collider Node Param
 typedef struct {
     uint Magic_1<name="Magic 1 (uint)">;
     char Name[4]<optimize=false, name="Name">;
     uint Magic_2<name="Magic 2 (uint)">;
-    uint Clgm_Count<name="Clgm Count (uint)">;
-    uint Clgm_Type<name="Clgm Type (uint)">;
+    uint Collider_Geomtry_Param_Count<name="Collider Geomtry Param Count (uint)">;
+    uint Collider_Geomtry_Param_Type<name="Collider Geomtry Param Type (uint)">;
     ubyte Unk_1<name="Unk 1 (ubyte)">;
 
-    // CLGMs
+    // Collider Geomtry Params
     typedef struct {
         uint Magic_1<name="Magic 1 (uint)">;
         char Name[4]<optimize=false, name="Name">;
         uint Magic_2<name="Magic 2 (uint)">;
-        uint Clgm_Inner_Count<name="Clgm Inner Count (uint)">;
+        uint Collider_Geomtry_Param_Inner_Count<name="Collider Geomtry Param Inner Count (uint)">;
 
-        // CLGM Inner
+        // Collider Geomtry Param Inner
         typedef struct {
             ubyte Unk_1<name="Unk 1 (ubyte)">;
             ubyte Unk_2<name="Unk 2 (ubyte)">;
@@ -70,9 +70,9 @@ typedef struct {
             float Unk_20<name="Unk 20 (float)">;
             float Unk_21<name="Unk 21 (float)">;
             ushort Unk_22<name="Unk 22 (ushort)">;
-        } CLGM_Inner;
+        } Collider_Geomtry_Param_Inner;
 
-        CLGM_Inner CLGM_Inner_[Clgm_Inner_Count]<optimize=false, name="CLGM Inner">;
+        Collider_Geomtry_Param_Inner Collider_Geomtry_Param_Inner_[Collider_Geomtry_Param_Inner_Count]<optimize=false, name="Collider Geomtry Param Inner">;
         uint Unk_1<name="Unk 1 (uint)">;
         uint Attack_Range_if_Unk_1_1_<name="Attack Range (if 'Unk 1' == 1) (uint)">;
         ubyte Unk_2<name="Unk 2 (ubyte)">;
@@ -84,24 +84,24 @@ typedef struct {
         short Unk_8<name="Unk 8 (short)">;
         ushort Unk_9<name="Unk 9 (ushort)">;
         ushort Unk_10<name="Unk 10 (ushort)">;
-        if (Clgm_Type == 2) { int Unk_11<name="Unk 11 (int)">; }
-        if (Clgm_Type == 2) { int Unk_12<name="Unk 12 (int)">; }
-        if (Clgm_Type == 2) { int Unk_13<name="Unk 13 (int)">; }
-        if (Clgm_Type == 2) { int Unk_14<name="Unk 14 (int)">; }
-        if (Clgm_Type == 2) { int Unk_15<name="Unk 15 (int)">; }
-        if (Clgm_Type == 2) { int Unk_16<name="Unk 16 (int)">; }
-        if (Clgm_Type == 2) { int Unk_17<name="Unk 17 (int)">; }
-        if (Clgm_Type == 2) { int Unk_18<name="Unk 18 (int)">; }
+        if (Collider_Geomtry_Param_Type == 2) { int Unk_11<name="Unk 11 (int)">; }
+        if (Collider_Geomtry_Param_Type == 2) { int Unk_12<name="Unk 12 (int)">; }
+        if (Collider_Geomtry_Param_Type == 2) { int Unk_13<name="Unk 13 (int)">; }
+        if (Collider_Geomtry_Param_Type == 2) { int Unk_14<name="Unk 14 (int)">; }
+        if (Collider_Geomtry_Param_Type == 2) { int Unk_15<name="Unk 15 (int)">; }
+        if (Collider_Geomtry_Param_Type == 2) { int Unk_16<name="Unk 16 (int)">; }
+        if (Collider_Geomtry_Param_Type == 2) { int Unk_17<name="Unk 17 (int)">; }
+        if (Collider_Geomtry_Param_Type == 2) { int Unk_18<name="Unk 18 (int)">; }
         ubyte Unk_19<name="Unk 19 (ubyte)">;
-    } CLGMs;
+    } Collider_Geomtry_Params;
 
-    CLGMs CLGMs_[Clgm_Count]<optimize=false, name="CLGMs">;
+    Collider_Geomtry_Params Collider_Geomtry_Params_[Collider_Geomtry_Param_Count]<optimize=false, name="Collider Geomtry Params">;
     ubyte Unk_2<name="Unk 2 (ubyte)">;
     ubyte Unk_3<name="Unk 3 (ubyte)">;
     ubyte Unk_4<name="Unk 4 (ubyte)">;
-} CLND;
+} Collider_Node_Param;
 
-CLND CLND_<name="CLND">;
+Collider_Node_Param Collider_Node_Param_<name="Collider Node Param">;
 
 // Moves
 typedef struct {
