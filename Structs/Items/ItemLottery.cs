@@ -123,18 +123,17 @@ namespace MHW_Editor.Structs.Items {
         }
 
         public sealed class ItemPools : MhwStructItem {
-            private string targetFile;
-            private bool   isEmItLot;
+            private bool isMonster;
+            private bool isStage109_2;
 
             public ItemPools(ulong index, ObservableCollection<InnerItem> innerItems) {
                 Index           = index;
                 this.innerItems = innerItems;
             }
 
-            [SuppressMessage("ReSharper", "ParameterHidesMember")]
             public ItemPools Init(string targetFile) {
-                this.targetFile = targetFile;
-                isEmItLot       = new Regex(@"em\d\d\d").Match(targetFile).Success;
+                isMonster    = new Regex(@"em\d\d\d").Match(targetFile).Success;
+                isStage109_2 = new Regex(@"st109_2").Match(targetFile).Success;
                 return this;
             }
 
@@ -142,45 +141,115 @@ namespace MHW_Editor.Structs.Items {
             [SortOrder(0)]
             public string name {
                 get {
-                    if (!isEmItLot) return "Unknown";
-                    return Index switch {
-                        0 => "(LR) Carve/Cap",
-                        1 => "(LR) Tail Carve",
-                        2 => "(LR) Dropped",
-                        3 => "(LR) Tracks",
-                        4 => "(HR) Carve/Cap",
-                        5 => "(HR) Tail Carve",
-                        6 => "(HR) Dropped",
-                        7 => "(HR) Tracks",
-                        8 => "(LR) Bandit Mantle",
-                        9 => "(HR) Bandit Mantle",
-                        10 => "(LR) Plunderblade",
-                        11 => "(HR) Plunderblade",
-                        12 => "(LR) Gathered By Palico",
-                        13 => "(HR) Gathered By Palico",
-                        14 => "Bones",
-                        15 => "Bones",
-                        16 => "Bones",
-                        17 => "Bones",
-                        18 => "Bones",
-                        19 => "Bones",
-                        20 => "(LR) Tracks 2",
-                        21 => "(HR) Tracks 2",
-                        22 => "(MR) Tracks",
-                        23 => "(MR) Carve/Cap",
-                        24 => "(MR) Tail Carve",
-                        25 => "(MR) Dropped",
-                        26 => "(MR) Bones",
-                        27 => "(MR) Bandit Mantle",
-                        28 => "(MR) Plunderblade",
-                        29 => "(MR) Gathered By Palico",
-                        30 => "(MR) Bones 2",
-                        31 => "(MR) Guiding Lands (Low)",
-                        32 => "(MR) Guiding Lands (Mid)",
-                        33 => "(MR) Guiding Lands (High)",
-                        34 => "(MR) Guiding Lands (Tempered)",
-                        _ => "Unknown"
-                    };
+                    if (isMonster)
+                        return Index switch {
+                            0 => "(LR) Carve/Cap",
+                            1 => "(LR) Tail Carve",
+                            2 => "(LR) Dropped",
+                            3 => "(LR) Tracks",
+                            4 => "(HR) Carve/Cap",
+                            5 => "(HR) Tail Carve",
+                            6 => "(HR) Dropped",
+                            7 => "(HR) Tracks",
+                            8 => "(LR) Bandit Mantle",
+                            9 => "(HR) Bandit Mantle",
+                            10 => "(LR) Plunderblade",
+                            11 => "(HR) Plunderblade",
+                            12 => "(LR) Gathered By Palico",
+                            13 => "(HR) Gathered By Palico",
+                            14 => "Bones",
+                            15 => "Bones",
+                            16 => "Bones",
+                            17 => "Bones",
+                            18 => "Bones",
+                            19 => "Bones",
+                            20 => "(LR) Tracks 2",
+                            21 => "(HR) Tracks 2",
+                            22 => "(MR) Tracks",
+                            23 => "(MR) Carve/Cap",
+                            24 => "(MR) Tail Carve",
+                            25 => "(MR) Dropped",
+                            26 => "(MR) Bones",
+                            27 => "(MR) Bandit Mantle",
+                            28 => "(MR) Plunderblade",
+                            29 => "(MR) Gathered By Palico",
+                            30 => "(MR) Bones 2",
+                            31 => "(MR) Guiding Lands (Low)",
+                            32 => "(MR) Guiding Lands (Mid)",
+                            33 => "(MR) Guiding Lands (High)",
+                            34 => "(MR) Guiding Lands (Tempered)",
+                            _ => "Unknown"
+                        };
+
+                    // ReSharper disable once ConvertIfStatementToReturnStatement
+                    if (isStage109_2) {
+                        return Index switch {
+                            16 => "MR Armor Sphere Ore",
+                            17 => "GL Forest Ore 1",
+                            18 => "GL Forest Ore 2",
+                            19 => "GL Forest Ore 3",
+                            20 => "GL Forest Ore 4",
+                            21 => "GL Forest Ore Big",
+                            22 => "GL Desert Ore 1",
+                            23 => "GL Desert Ore 2",
+                            24 => "GL Desert Ore 3",
+                            25 => "GL Desert Ore 4",
+                            26 => "GL Desert Ore Big",
+                            27 => "GL Coral Ore 1",
+                            28 => "GL Coral Ore 2",
+                            29 => "GL Coral Ore 3",
+                            30 => "GL Coral Ore 4",
+                            31 => "GL Coral Ore Giant",
+                            32 => "GL Rot Ore 1",
+                            33 => "GL Rot Ore 2",
+                            34 => "GL Rot Ore 3",
+                            35 => "GL Rot Ore 4",
+                            36 => "GL Rot Ore Big",
+                            37 => "GL Volc Ore 1",
+                            38 => "GL Volc Ore 2",
+                            39 => "GL Volc Ore 3",
+                            40 => "GL Volc Ore 4",
+                            41 => "GL Volc Ore Big",
+                            42 => "GL Frost Ore 1",
+                            43 => "GL Frost Ore 2",
+                            44 => "GL Frost Ore 3",
+                            45 => "GL Frost Ore 4",
+                            46 => "GL Frost Ore Big",
+                            47 => "GL Forest Bone 1",
+                            48 => "GL Forest Bone 2",
+                            49 => "GL Forest Bone 3",
+                            50 => "GL Forest Bone 4",
+                            51 => "GL Forest Bone Big",
+                            52 => "GL Desert Bone 1",
+                            53 => "GL Desert Bone 2",
+                            54 => "GL Desert Bone 3",
+                            55 => "GL Desert Bone 4",
+                            56 => "GL Desert Bone Big",
+                            57 => "GL Coral Bone 1",
+                            58 => "GL Coral Bone 2",
+                            59 => "GL Coral Bone 3",
+                            60 => "GL Coral Bone 4",
+                            61 => "GL Coral Bone Giant",
+                            62 => "GL Rot Bone 1",
+                            63 => "GL Rot Bone 2",
+                            64 => "GL Rot Bone 3",
+                            65 => "GL Rot Bone 4",
+                            66 => "GL Rot Bone Big",
+                            67 => "GL Volc Bone 1",
+                            68 => "GL Volc Bone 2",
+                            69 => "GL Volc Bone 3",
+                            70 => "GL Volc Bone 4",
+                            71 => "GL Volc Bone Big",
+                            72 => "GL Frost Bone 1",
+                            73 => "GL Frost Bone 2",
+                            74 => "GL Frost Bone 3",
+                            75 => "GL Frost Bone 4",
+                            76 => "GL Frost Bone Big",
+                            _ => "Unknown"
+                        };
+                    }
+
+                    return "Unknown";
                 }
             }
 
